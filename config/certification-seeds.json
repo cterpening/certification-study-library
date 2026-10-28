@@ -212,6 +212,27 @@
       "catalog_url": "https://education.oracle.com/midtier/html/OUCollectionsProducts/pillar.html",
       "selection": "Five current English 2026 Oracle University professional paths selected September 4, 2026: OCI Architect, Developer, DevOps, Networking, and Observability. The current Networking path and exam identify 2026 while one path-description sentence still names 2025; that inconsistency is retained as a verification warning.",
       "last_verified": "2026-09-04"
+    },
+    {
+      "id": "ibm-bob-v2-current",
+      "vendor_id": "ibm",
+      "catalog_url": "https://www.ibm.com/training/certification/ibm-certified-bob-v2-developer-associate-C9010800",
+      "selection": "IBM Bob v2 Developer Associate added October 28, 2026 from the live C9010800 credential and C3000-006 public exam API. This adds one credential to the six IBM anchors checked September 4; it does not reverify the whole IBM catalog.",
+      "last_verified": "2026-10-28"
+    },
+    {
+      "id": "microsoft-october-discovery-2026",
+      "vendor_id": "microsoft",
+      "catalog_url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-devops-engineer-expert/",
+      "selection": "Targeted October 28, 2026 identity triage of public Microsoft credential/exam pages after a catalog delta. Research-only entries; no published guide, complete objective review, prerequisite equivalence or replacement is inferred.",
+      "last_verified": "2026-10-28"
+    },
+    {
+      "id": "microsoft-office-october-discovery-2026",
+      "vendor_id": "microsoft-office",
+      "catalog_url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-for-operational-management-associate/",
+      "selection": "Targeted October 28, 2026 identity triage of public Microsoft credential/exam pages after a catalog delta. Research-only entries; no published guide, complete objective review, prerequisite equivalence or replacement is inferred.",
+      "last_verified": "2026-10-28"
     }
   ],
   "certifications": [
@@ -281,7 +302,7 @@
         "Microsoft Certified: Agentic AI Business Solutions Architect"
       ],
       "lifecycle": {
-        "checked_on": "2026-09-30",
+        "checked_on": "2026-10-28",
         "blueprint_updates": [
           {
             "effective_on": "2026-07-22",
@@ -292,9 +313,14 @@
             "effective_on": "2026-10-14",
             "language": "en",
             "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100"
+          },
+          {
+            "effective_on": "2026-11-16",
+            "language": "en",
+            "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100"
           }
         ],
-        "notes": "The July 22 English baseline is preserved in the repository objective snapshot and September 27 deep review. Microsoft now displays the October 14 outline and announces that future effective date. The credential title adds Expert; the exam code remains AB-100 and the exam title can omit Expert. The former credential title is retained as an LMS query alias. The exact rename effective date and initial release date are not confirmed. Conflicting prerequisite lists remain documented in the guide; more research is needed on the next pass."
+        "notes": "Observed October 28: official page displays 2026-11-16 English scope. It is future on the check date; preserve the accepted historical teaching snapshot until a complete objective reconciliation. Earlier dated observations remain historical."
       },
       "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect/",
       "status": "active",
@@ -316,14 +342,15 @@
       "status": "active",
       "source_id": "microsoft-azure-current",
       "lifecycle": {
-        "checked_on": "2026-09-30",
+        "checked_on": "2026-10-28",
         "blueprint_updates": [
           {
             "effective_on": "2026-10-14",
             "language": "en",
             "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-900"
           }
-        ]
+        ],
+        "notes": "October28 detailed refresh accepts the current English outline; earlier effective-date notices remain historical. No later English revision announced on checked canonical pages."
       }
     },
     {
@@ -350,7 +377,18 @@
       "title": "Microsoft Certified: Azure AI Cloud Developer Associate",
       "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-cloud-developer-associate/",
       "status": "active",
-      "source_id": "microsoft-azure-current"
+      "source_id": "microsoft-azure-current",
+      "lifecycle": {
+        "checked_on": "2026-10-28",
+        "notes": "October28 detailed refresh accepts the current English outline; earlier effective-date notices remain historical. Official data-domain weights still disagree; current source gate blocked.",
+        "blueprint_updates": [
+          {
+            "effective_on": "2026-10-07",
+            "language": "en",
+            "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-200"
+          }
+        ]
+      }
     },
     {
       "vendor_id": "microsoft",
@@ -363,10 +401,21 @@
     {
       "vendor_id": "microsoft",
       "exam_code": "AI-500",
-      "title": "Microsoft Certified: Multi-Agent AI Solutions Expert (beta)",
+      "title": "Microsoft Certified: Multi-Agent AI Solutions Expert",
       "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/multi-agent-ai-solutions-expert/",
-      "status": "beta",
-      "source_id": "microsoft-azure-current"
+      "status": "active",
+      "source_id": "microsoft-azure-current",
+      "aliases": [
+        "Microsoft Certified: Multi-Agent AI Solutions Expert (beta)"
+      ],
+      "lifecycle": {
+        "checked_on": "2026-10-28",
+        "notes": "Current official exam and credential headings omit beta; course/exam pages list AI-500T00. Recorded as active on observed-page evidence, without inventing a GA date. English; no official Practice Assessment listed.",
+        "source_urls": [
+          "https://learn.microsoft.com/en-us/credentials/certifications/exams/ai-500/",
+          "https://learn.microsoft.com/en-us/credentials/certifications/multi-agent-ai-solutions-expert/"
+        ]
+      }
     },
     {
       "vendor_id": "microsoft",
@@ -499,42 +548,46 @@
       "exam_code": "AZ-800",
       "title": "Microsoft Certified: Windows Server Hybrid Administrator Associate",
       "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/windows-server-hybrid-administrator/",
-      "status": "retirement-announced",
+      "status": "retired",
       "retirement_date": "2026-09-30",
       "replacement_exam_code": "AZ-802",
       "replacement_official_url": "https://learn.microsoft.com/en-us/credentials/certifications/windows-server-administrator-associate/",
       "source_id": "microsoft-azure-current",
       "lifecycle": {
-        "checked_on": "2026-09-30",
+        "checked_on": "2026-10-28",
         "blueprint_updates": [
           {
             "effective_on": "2026-01-21",
             "language": "en",
             "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-800"
           }
-        ]
-      }
+        ],
+        "notes": "Microsoft study guide explicitly states the exam was retired September 30, 2026 at 5 PM CST; rechecked October 28. Accepted teaching snapshot remains archived; AZ-802 is the current preparation route. Historical technical gaps remain unresolved."
+      },
+      "retirement_source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-800"
     },
     {
       "vendor_id": "microsoft",
       "exam_code": "AZ-801",
       "title": "Microsoft Certified: Windows Server Hybrid Administrator Associate",
       "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/windows-server-hybrid-administrator/",
-      "status": "retirement-announced",
+      "status": "retired",
       "retirement_date": "2026-09-30",
       "replacement_exam_code": "AZ-802",
       "replacement_official_url": "https://learn.microsoft.com/en-us/credentials/certifications/windows-server-administrator-associate/",
       "source_id": "microsoft-azure-current",
       "lifecycle": {
-        "checked_on": "2026-09-30",
+        "checked_on": "2026-10-28",
         "blueprint_updates": [
           {
             "effective_on": "2025-10-06",
             "language": "en",
             "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-801"
           }
-        ]
-      }
+        ],
+        "notes": "Microsoft study guide explicitly states the exam was retired September 30, 2026 at 5 PM CST; rechecked October 28. Accepted teaching snapshot remains archived; AZ-802 is the current preparation route. Historical technical gaps remain unresolved."
+      },
+      "retirement_source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-801"
     },
     {
       "vendor_id": "microsoft",
@@ -583,20 +636,24 @@
     {
       "vendor_id": "microsoft",
       "exam_code": "DP-420",
-      "title": "Microsoft Certified: Azure Cosmos DB Developer Specialty",
+      "title": "Microsoft Certified: Azure Cosmos DB AI Developer Associate",
       "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-cosmos-db-developer-specialty/",
       "status": "active",
       "source_id": "microsoft-azure-current",
       "lifecycle": {
-        "checked_on": "2026-09-30",
+        "checked_on": "2026-10-28",
         "blueprint_updates": [
           {
             "effective_on": "2026-10-06",
             "language": "en",
             "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-420"
           }
-        ]
-      }
+        ],
+        "notes": "The credential page explicitly confirms the name/level change took effect October 6, 2026; the study guide still uses future wording. The exam code remains DP-420. Current teaching coverage requires reconciliation with the October outline."
+      },
+      "aliases": [
+        "Microsoft Certified: Azure Cosmos DB Developer Specialty"
+      ]
     },
     {
       "vendor_id": "microsoft",
@@ -857,14 +914,15 @@
       "status": "active",
       "source_id": "microsoft-published-outside-azure",
       "lifecycle": {
-        "checked_on": "2026-09-30",
+        "checked_on": "2026-10-28",
         "blueprint_updates": [
           {
             "effective_on": "2026-10-29",
             "language": "en",
             "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-721"
           }
-        ]
+        ],
+        "notes": "Observed October 28: official page displays 2026-10-29 English scope. It is future on the check date; preserve the accepted historical teaching snapshot until a complete objective reconciliation. Earlier dated observations remain historical."
       }
     },
     {
@@ -940,18 +998,23 @@
       "exam_code": "PL-400",
       "title": "Microsoft Certified: Power Platform Developer Associate",
       "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate/",
-      "status": "active",
+      "status": "retirement-announced",
       "source_id": "microsoft-published-outside-azure",
       "lifecycle": {
-        "checked_on": "2026-09-30",
+        "checked_on": "2026-10-28",
         "blueprint_updates": [
           {
             "effective_on": "2026-10-16",
             "language": "en",
             "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-400"
           }
-        ]
-      }
+        ],
+        "notes": "Registration closed October 16; previously registered candidates may test through October 30. AB-400 is available for new registration. This exam transition is separate from PL-400T00 courseware retirement. An AB-400 guide is not yet published in this library."
+      },
+      "retirement_date": "2026-10-30",
+      "retirement_source_url": "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate/",
+      "replacement_official_url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-400/",
+      "replacement_exam_code": "AB-400"
     },
     {
       "vendor_id": "microsoft",
@@ -969,14 +1032,15 @@
       "status": "active",
       "source_id": "microsoft-published-outside-azure",
       "lifecycle": {
-        "checked_on": "2026-09-30",
+        "checked_on": "2026-10-28",
         "blueprint_updates": [
           {
             "effective_on": "2026-10-20",
             "language": "en",
             "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-730"
           }
-        ]
+        ],
+        "notes": "October28 detailed refresh accepts the current English outline; earlier effective-date notices remain historical. No later English revision announced on checked canonical pages."
       }
     },
     {
@@ -2396,6 +2460,22 @@
       "source_id": "ibm-selected-current"
     },
     {
+      "vendor_id": "ibm",
+      "exam_code": "C3000-006",
+      "title": "IBM Certified Bob v2 Developer - Associate",
+      "official_url": "https://www.ibm.com/training/certification/ibm-certified-bob-v2-developer-associate-C9010800",
+      "status": "active",
+      "source_id": "ibm-bob-v2-current",
+      "lifecycle": {
+        "checked_on": "2026-10-28",
+        "source_urls": [
+          "https://www.ibm.com/training/credentials/getExam/C3000-006",
+          "https://www.ibm.com/training/certification/ibm-certified-bob-v2-developer-associate-C9010800"
+        ],
+        "notes": "Live exam and credential; public exam record last modified October 21, 2026. No prerequisite exam, withdrawal or replacement listed. A client support notice is not an exam lifecycle change."
+      }
+    },
+    {
       "vendor_id": "oracle",
       "exam_code": "1Z0-830",
       "title": "Oracle Certified Professional: Java SE 21 Developer",
@@ -2490,6 +2570,71 @@
       "official_url": "https://mylearn.oracle.com/ou/learning-path/become-an-oracle-cloud-infrastructure-observability-professional-2026/162237",
       "status": "active",
       "source_id": "oracle-oci-advanced-2026"
+    },
+    {
+      "vendor_id": "microsoft",
+      "exam_code": "AZ-401",
+      "title": "Microsoft Certified: Agentic DevOps Engineer Expert (beta)",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-devops-engineer-expert/",
+      "status": "beta",
+      "source_id": "microsoft-october-discovery-2026",
+      "lifecycle": {
+        "checked_on": "2026-10-28",
+        "source_urls": [
+          "https://learn.microsoft.com/en-us/credentials/certifications/agentic-devops-engineer-expert/",
+          "https://learn.microsoft.com/en-us/credentials/certifications/exams/az-401/",
+          "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401"
+        ],
+        "notes": "Credential and exam headings explicitly beta and both include delayed beta scoring notices; exam lists English and retirement none. Research-only: complete guide/source review pending. Credential assessed-domain list repeats AB-100 plan/design/deploy AI business solutions. Dedicated AZ-401 exam and blueprint instead show five DevOps domains; use dedicated blueprint for scope. Exam related-certification summary repeats generic AI-first solution-architect prose. Formal prerequisite requirements not established by this bounded identity check."
+      }
+    },
+    {
+      "vendor_id": "microsoft",
+      "exam_code": "AB-330",
+      "title": "Microsoft Certified: Supply Chain Management AI Consultant Associate (beta)",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/supply-chain-management-ai-consultant-associate/",
+      "status": "beta",
+      "source_id": "microsoft-october-discovery-2026",
+      "lifecycle": {
+        "checked_on": "2026-10-28",
+        "source_urls": [
+          "https://learn.microsoft.com/en-us/credentials/certifications/supply-chain-management-ai-consultant-associate/",
+          "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-330"
+        ],
+        "notes": "Credential heading explicitly beta and body names beta exam AB-330 with delayed-scoring notice. English; 100-minute assessment shown; no current training/practice assessment. Research-only: complete guide/source review pending. Published beta page is present now; earlier anticipated November beta timing must not override current explicit beta status. New credential identity does not establish retirement or automatic replacement of MB-330. Formal prerequisite requirements not established by this bounded identity check."
+      }
+    },
+    {
+      "vendor_id": "microsoft",
+      "exam_code": "AB-400",
+      "title": "Microsoft Certified: Power Platform Developer Associate",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-400/",
+      "status": "active",
+      "source_id": "microsoft-october-discovery-2026",
+      "lifecycle": {
+        "checked_on": "2026-10-28",
+        "source_urls": [
+          "https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-400/",
+          "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-400"
+        ],
+        "notes": "Official exam page explicitly makes AB-400 available October16, 2026 and registration available today; English, retirement none. Official PL-400 transition notice corroborates new registration exclusively AB-400. Research-only: complete guide/source review pending. PL-400 existing registrants can still test through October30; new AB-400 identity is not evidence PL-400 was already retired October28. AB-400 blueprint is already registered as ab-400-transition-blueprint, but there is no published AB-400 guide. Formal prerequisite requirements not established by this bounded identity check."
+      }
+    },
+    {
+      "vendor_id": "microsoft-office",
+      "exam_code": "MO-240",
+      "title": "Microsoft Office Specialist: Excel for Operational Management Associate",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-for-operational-management-associate/",
+      "status": "active",
+      "source_id": "microsoft-office-october-discovery-2026",
+      "lifecycle": {
+        "checked_on": "2026-10-28",
+        "source_urls": [
+          "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-for-operational-management-associate/",
+          "https://arch-center.azureedge.net/Credentials/mos-excel-for-operational-management-od.pdf"
+        ],
+        "notes": "Current credential offers Certiport scheduling, lists English and links an MO-240 skills outline; no beta label observed. This is current-label/scheduling evidence, not an established launch date. Research-only: complete guide/source review pending. Current credential displays renewal frequency 60 months. Record as current page observation and VERIFY CURRENT; do not extrapolate to other MOS credentials. Exam code is visible in the credential PDF link label; PDF itself emphasizes role-based performance tasks and does not print MO-240 in its title. Formal prerequisite requirements not established by this bounded identity check."
+      }
     }
   ]
 }

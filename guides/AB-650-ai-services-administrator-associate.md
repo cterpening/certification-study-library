@@ -6,18 +6,30 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: review-required
-last_verified: 2026-09-28
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
 upcoming_change_checked: 2026-09-28
 ---
 
 # AB-650 Microsoft 365 and AI Services Administrator Associate Study Guide
 
+> **REFRESH IN PROGRESS — REVIEW REQUIRED (October 28, 2026).** Selected lifecycle, technical and source evidence was checked today. The dated complete review below remains historical; a complete guide/source reconciliation and independent human review remain pending.
+
 > **Independent AI-assisted resource — DEEP REVIEW COMPLETED WITH AN OPEN DOCUMENTATION GAP; HUMAN REVIEW PENDING.** The September 28, 2026 [deep review](../docs/research/2026-09-28-ab-650-deep-review.md) maps all 58 published objectives. Microsoft’s two-year Backup recovery window is not fully explained by its restore-frequency tables. Six worked examples are synthetic; tenant labs were not executed. See the [coverage record](../docs/SOURCE-VALIDATION.md#ab-650-coverage-record) and authoritative [blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-650).
 
 **Current baseline:** Beta blueprint page last updated July 27, 2026; Microsoft does not state a separate “skills measured as of” date on the page.<br>
 **Upcoming blueprint change:** No dated change is announced, but beta content can change before general availability. Recheck the official page before studying or scheduling.<br>
 **Official source:** [AB-650 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-650)
+
+## October 28 implementation notes
+
+**Confirmed — VERIFY CURRENT (October 28, 2026).** Shortening selected offboarding items from 90 to seven days requires two approvals from approvers aged at least two days. With exactly two configured approvers, the requestor can count; with three or more, two other approvers must approve. A request expires after 30 days without quorum. This governs faster permanent deletion, not ordinary restore authorization or every Backup action. Undo is possible before purge; purge is irreversible. [What's new in Microsoft 365 Backup](https://learn.microsoft.com/en-us/microsoft-365/backup/backup-whats-new?view=o365-worldwide) · [Offboarding in Microsoft 365 Backup](https://learn.microsoft.com/en-us/microsoft-365/backup/backup-offboarding?view=o365-worldwide)
+
+**Confirmed — VERIFY CURRENT (October 28, 2026).** Backup Activity Logs show policy/restore operations, including failures and partial success, and support filtered CSV export. Their retention is a fixed 365 days; read-only operations are omitted. Workload-admin visibility follows role scope. Use these logs for troubleshooting and Microsoft Purview Audit for the compliance audit record; an empty operational view does not prove no one accessed the service. [What's new in Microsoft 365 Backup](https://learn.microsoft.com/en-us/microsoft-365/backup/backup-whats-new?view=o365-worldwide) · [Privacy, security, and compliance in Microsoft 365 Backup](https://learn.microsoft.com/en-us/microsoft-365/backup/backup-privacy-security?view=o365-worldwide)
+
+**Confirmed — VERIFY CURRENT (October 28, 2026).** A spending policy that includes a user and selects Cowork grants access, even with a tiny credit limit. Remove the user from every Cowork-selecting policy to deny access. Discoverability and allowed model families are separate controls: disabling Anthropic does not deny Cowork when another model remains. The old All Agents Cowork entry no longer controls access. Inspect effective policies rather than treating a budget or model toggle as an access block. [Manage Copilot Cowork for your organization](https://learn.microsoft.com/en-us/copilot/cowork/cowork-admin-governance)
+
+These are bounded operational updates, not a completed objective rebaseline. Product and tenant exercises were not run. Earlier unresolved support and documentation gaps remain.
 
 ## How to use this guide
 
@@ -38,7 +50,7 @@ Do not solve a data-access problem only at the AI surface. Copilot and agents ca
 
 The [Agent 365 GA announcement](https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/) confirms the control plane's product-level status, while explicitly leaving individual integrations and capabilities on their own release schedules. Use the [Microsoft 365 Copilot release notes](https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes) to detect changes in agent submission, connectors, administration, and rollout; then verify the specific implementation page and tenant before acting.
 
-The September 23 Copilot release entry includes a dedicated license-request page; rollout can differ within a tenant. A release announcement does not establish an individual user’s entitlement. The beta exam remains English-only, with no Practice Assessment and no separately announced objectives-effective date. The retrieved [exam page](https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-650/) lists no current instructor-led course; no fixed exam duration was verified.
+The September 23 Copilot release entry includes a dedicated license-request page; rollout can differ within a tenant. A release announcement does not establish an individual user’s entitlement. The beta exam remains English-only, with no Practice Assessment and no separately announced objectives-effective date. The retrieved [exam page](https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-650/) still lists no current instructor-led course, while the direct AB-650T00 page now exists and announces November 13 availability. The listing conflict is preserved; no delivered class or fixed exam duration was verified.
 
 This is a status clarification, not a blueprint revision. Keep preview, Frontier, licensing, cloud, and role limitations attached to the individual feature. Independent administrator explanations such as the John Savill resource listed later are useful corroboration, but current Microsoft documentation controls exact portal behavior.
 
@@ -469,6 +481,16 @@ Tabletop overlapping spending scopes, hidden discovery, disabled Anthropic, a pr
 ---
 
 ## Places to learn
+
+### October 28 learning-resource check
+
+Additional options and access updates; choose relevant resources rather than consuming every route. New course availability, class delivery and licensing are **VERIFY CURRENT**. Published days describe instructor-led scope, not measured self-study time.
+
+| Resource | Access | Estimated time |
+|---|---|---|
+| [AB-650T00: Administer Microsoft 365 and AI services](https://learn.microsoft.com/en-us/training/courses/ab-650t00) | Public outline; instructor-led class/provider access may be paid | **3 published days**; exact page currently says available **November 13, 2026**; indexed October 30 date conflicts; delivery unverified |
+| [Manage and secure Microsoft 365 AI services](https://learn.microsoft.com/en-us/training/paths/manage-secure-microsoft-365-ai-services/) — access recheck | Public reading; current outline assumes an E5 tenant and prefers E7/Frontier Suite for some exercises; VERIFY CURRENT licensing | About **one study day**, editorial plan for seven modules; exact runtime not verified in direct view and setup/labs need extra time |
+
 
 This is not a complete list, and it is not meant to be consumed in full. Pick one primary route that fits how you learn, build labs around weak objectives, and use assessments to diagnose gaps. Recheck dates and coverage because AB-650 and several Agent 365 features are beta or rapidly changing.
 

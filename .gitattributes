@@ -1,0 +1,4 @@
+# Review records hash objective snapshots as bytes; preserve LF on every platform.
+data/objective-snapshots/*-official-objectives.txt text eol=lf
+# Archived snapshots preserve the exact bytes referenced by historical reviews.
+data/objective-snapshots/archive/*.txt -text

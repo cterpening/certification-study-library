@@ -6,6 +6,7 @@ from hashlib import sha256
 import json
 from pathlib import Path
 import sys
+import tempfile
 import unittest
 from unittest.mock import patch
 
@@ -251,6 +252,19 @@ class RepositoryValidationTests(unittest.TestCase):
 
     def test_generated_site_source_tree_is_not_revalidated_as_repository_content(self) -> None:
         self.assertIn(".site-build", validator.IGNORED_MARKDOWN_DIRS)
+
+    def test_maintenance_backups_are_not_validated_as_public_markdown(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            scratch = root / ".maintenance" / "run" / "before-repairs"
+            scratch.mkdir(parents=True)
+            (scratch / "README.md").write_text("[Old link](missing.md)", encoding="utf-8")
+            (root / "README.md").write_text("[Public link](missing.md)", encoding="utf-8")
+            errors = []
+            with patch.object(validator, "ROOT", root):
+                validator.validate_markdown(errors)
+            self.assertEqual(1, len(errors))
+            self.assertIn("Broken local link in README.md", errors[0])
 
     def test_parses_required_guide_front_matter(self) -> None:
         text = """---
@@ -618,6 +632,45 @@ review_status: ai-generated-draft
                 errors = []
                 validator.validate_ai_audits(data, exams, reviews, errors)
                 self.assertEqual([], errors)
+
+    def test_legacy_audit_uses_earliest_preserved_review_after_later_block(self) -> None:
+        data, exams, earliest = self.audit_validation_fixture()
+        earliest.update(reviewed_on="2026-09-27", outcome="passed")
+        current = dict(earliest, reviewed_on="2026-10-28", outcome="blocked")
+        exams["GH-900"]["blueprint_last_checked"] = "2026-10-28"
+        for reviews in ([earliest, current], [current, earliest]):
+            with self.subTest(order=[r["reviewed_on"] for r in reviews]):
+                errors = []
+                validator.validate_ai_audits(data, exams, reviews, errors)
+                self.assertEqual([], errors)
+
+    def test_legacy_audit_does_not_use_later_pass_over_earliest_block(self) -> None:
+        data, exams, earliest = self.audit_validation_fixture()
+        earliest.update(reviewed_on="2026-09-27", outcome="blocked")
+        current = dict(earliest, reviewed_on="2026-10-28", outcome="passed")
+        exams["GH-900"]["blueprint_last_checked"] = "2026-10-28"
+        errors = []
+        validator.validate_ai_audits(data, exams, [current, earliest], errors)
+        self.assertEqual(1, len(errors))
+        self.assertIn("cannot pass with a blocked", errors[0])
+
+    def test_historical_audit_survives_archival_without_new_current_review(self) -> None:
+        data, exams, historical = self.audit_validation_fixture()
+        historical.update(reviewed_on="2026-09-27", outcome="passed")
+        exams["GH-900"].update(blueprint_last_checked="2026-10-28", status="retired")
+        errors = []
+        validator.validate_ai_audits(data, exams, [historical], errors)
+        self.assertEqual([], errors)
+
+    def test_new_audit_requires_current_review_even_with_old_preserved_pass(self) -> None:
+        data, exams, historical = self.audit_validation_fixture()
+        historical.update(reviewed_on="2026-09-27", outcome="passed")
+        exams["GH-900"]["blueprint_last_checked"] = "2026-10-28"
+        data["batches"][0]["results"][0]["audited_on"] = "2026-10-29"
+        errors = []
+        validator.validate_ai_audits(data, exams, [historical], errors)
+        self.assertEqual(1, len(errors))
+        self.assertIn("lacks a current source-validation record", errors[0])
 
     def test_historical_audit_cannot_use_later_pass_to_hide_blocked_review(self) -> None:
         data, exams, historical, current = self.historical_audit_fixture()

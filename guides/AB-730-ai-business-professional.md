@@ -5,20 +5,23 @@ official_blueprint: https://learn.microsoft.com/en-us/credentials/certifications
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: source-validated
-last_verified: 2026-09-27
-upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-27
+review_status: review-required
+last_verified: 2026-10-28
+upcoming_change_status: none-announced
+upcoming_change_checked: 2026-10-28
 ---
 
 # AB-730 AI Business Professional Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The complete guide and current public sources were reviewed September 27, 2026. All 41 published October objectives are mapped in the [deep-review record](../docs/research/2026-09-27-ab-730-deep-review.md); the accepted July 22 baseline remains separately dated. It may still contain errors or become outdated. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-730-coverage-record). The [official AB-730 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-730) is authoritative.
 
-**Current baseline:** Skills measured as of July 22, 2026.<br>
-**Upcoming blueprint change (checked September 27, 2026):** The English blueprint changes October 20, 2026. The revision introduces a fourth domain for agents, rebalances domain weights, and adds Copilot Cowork and Work IQ. Use the dated preparation supplement below for an appointment on or after the change. The current baseline below remains dated separately. See the [official revision](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-730).<br>
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 refresh maps all 41 detailed objectives in the October 20, 2026 English outline. See the [current deep-review evidence](../docs/research/2026-10-28-microsoft-wave1-deep-review.md#ab-730) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-730-coverage-record). Microsoft's [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-730) is authoritative. Live product labs and human review remain pending; public-source review does not guarantee correctness.
+
+**Current English baseline:** Skills measured as of October 20, 2026. The former July 22 snapshot is preserved with the historical reviews.<br>
+**Blueprint status (checked October 28, 2026):** The October 20 date has passed. The four-domain outline below is current English scope; no later revision is announced on the checked study guide. Localized exams can lag English updates, so verify the outline for your appointment language.<br>
 **Lifecycle:** The [AI Business Professional credential](https://learn.microsoft.com/en-us/credentials/certifications/ai-business-professional/) and 45-minute exam are active; the credential page currently lists 13 languages. Recheck the revision date for your exam language.<br>
 **Official source:** [AB-730 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-730)
+
+> **Source-review blockers — October 28:** Current objective coverage is reconciled, but Microsoft documentation disagrees about connector writes, scheduling prerequisites, meeting capture and Cowork model-control scope. The bounded guidance below cites the more specific contracts and preserves the conflicting statements. The source gate remains blocked pending resolution; tenant behavior and the agent-history filter still need verification.
 
 ## How to use this guide
 
@@ -36,18 +39,18 @@ Practice with realistic, nonsensitive material in Word, Excel, PowerPoint, Outlo
 
 > **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
 
-## Preparation supplement for October 20, 2026
+## Current scope and learning route
 
-**Future scope, checked September 27:** Keep the July map below for earlier appointments. The [October blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-730) has four domains:
+The [October 20 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-730) has four current domains. Use these weights to plan study; product announcements do not add objectives:
 
-| October study area (paraphrased) | Weight | Preparation focus |
+| Current study area (paraphrased) | Weight | Learning focus |
 |---|---:|---|
 | Generative AI foundations | 25–30% | Permission-aware context, responsible use, choosing chat or delegated work |
 | Copilot prompts and chats | 20–25% | Model choice, prompt refinement, memory/instructions, chat and notebook management |
 | Business content and collaboration | 20–25% | Connectors, Work IQ, cross-app output, visualizations, meeting preparation and recap |
 | Business outcomes with agents | 20–25% | Prebuilt/custom-agent choices, Cowork skills, task supervision and scheduling |
 
-The earlier custom-agent construction group is removed. The choice between prebuilt and custom remains, while the new domain requires applying agents, filtering their chats, and supervising Cowork. Sections 2–4 cover the added model, notebook, connector, visual, meeting, skill, and automation objectives. Keep the older agent-construction exercise for the July baseline and optional practical context.
+The earlier custom-agent construction group is removed. The choice between prebuilt and custom remains, while the new domain requires applying agents, filtering their chats, and supervising Cowork. Sections 2–4 cover the added model, notebook, connector, visual, meeting, skill, and automation objectives. The retained custom-agent construction exercise is **Related item:** optional practical depth, not a replacement for selecting and applying prebuilt agents in the current outline.
 
 ### Context, delegation, and checking the result
 
@@ -68,8 +71,9 @@ Readiness: explain why a fluent answer may still lack evidence; justify chat ver
 | Published domain | Weight | Central question |
 |---|---:|---|
 | Understand generative AI fundamentals | 25–30% | Can you select an appropriate Copilot experience and use it responsibly with permitted context? |
-| Manage prompts and conversations by using AI | 35–40% | Can you create reusable prompts, manage conversations, and configure a focused agent? |
-| Draft and analyze business content by using AI | 25–30% | Can you create, transform, analyze, and collaborate on content while retaining human accountability? |
+| Manage prompts and chats by using Microsoft 365 Copilot | 20–25% | Can you select a model, refine reusable prompts, manage memory/instructions, chats and notebooks? |
+| Manage business content and collaboration by using Microsoft 365 Copilot | 20–25% | Can you use authorized context, connectors, apps and meeting tools to produce verified business content? |
+| Drive business outcomes by using agents | 20–25% | Can you select and apply agents, supervise Cowork skills, and manage recurring work? |
 
 ---
 
@@ -126,11 +130,17 @@ A chat responds inside a conversation. An agent has a more durable purpose, inst
 
 ### Connect work context without assuming complete access
 
-[Copilot connectors](https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/overview) bring external systems into the context available to Copilot. Synced connectors index content; federated connectors fetch it live without building that index. Both depend on source permissions and organizational configuration. A live fetch still might omit a source or return incomplete data. As checked September 27, federated connectors are read-only; write actions are announced for early October, not established support for every connector today.
+[Copilot connectors](https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/overview) bring external systems into the context available to Copilot. Synced connectors index content; federated connectors fetch it live without building that index. Both depend on source permissions and organizational configuration. A live fetch still might omit a source or return incomplete data.
+
+**VERIFY CURRENT — October 28 documentation discrepancy:** The general overview still calls federation read-only and describes writes as forthcoming. The [dedicated federated-connector reference](https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/federated-connectors-overview) now documents create/update/delete tools where the connector and Copilot experience support them; **Researcher remains read-only**. A source connection is not approval for every action. Inspect the individual tool, source identity, parameters and destination. Its approval can cover one call, the conversation, or future calls until reset; those permissions are tool-specific. Confirm actual availability and existing consent before using a write-capable connector.
 
 For a missing customer ticket, [check the source directly](https://support.microsoft.com/en-us/microsoft-365-copilot/understand-copilot-connectors), your access, connector enablement/authentication, query scope, and indexing delay when applicable. Record a missing source as a limitation. Do not turn “no ticket found” into “the customer has no problems.” Name account, time period and system, request citations, and reconcile conflicting records with their owners.
 
-Work IQ supplies business context; it is not permission to see every record. Its API billing is separate from the included experience described for licensed Copilot users. Do not infer entitlement from a button or an API announcement. New Dynamics 365/Power Platform grounding has a September 30 preview start and staged October rollout; see the dated blog exercise below.
+Work IQ supplies business context; it is not permission to see every record. Its API billing is separate from the included experience described for licensed Copilot users. Do not infer entitlement from a button or an API announcement. The September article's September 30 preview start and staged October rollout are historical announcements, not confirmation of availability in your environment; see the dated blog exercise below.
+
+#### Worked example: derive a business conclusion across sources
+
+A synthetic renewal brief has three permitted sources: a signed contract for 90,000, an older presentation proposing 120,000, and a support system containing an unresolved migration issue. Work IQ and connectors can help join this context, but they do not decide which commercial promise is authoritative. Ask for a table of claim, source, date, contradiction and owner. Use the signed amount for the contractual fact, keep the proposal as history, and ask the account owner how the unresolved issue changes renewal risk. If support access is missing, report that gap; do not conclude that the customer has no open issues. Deliver a cited draft with questions for the owner, rather than updating the account or emailing a commitment.
 
 ### Apply responsible AI and data protection
 
@@ -159,7 +169,7 @@ Sensitivity labels, DLP, permissions, and organizational policy can restrict whi
 
 ---
 
-## 2. Manage prompts and conversations by using AI
+## 2. Manage prompts and chats by using Microsoft 365 Copilot
 
 ### Create a prompt with a testable contract
 
@@ -184,13 +194,17 @@ The [Copilot model selector](https://learn.microsoft.com/en-us/microsoft-365/cop
 
 [Researcher model choice](https://support.microsoft.com/en-us/office/use-model-choice-in-the-researcher-agent) has its own conditions: Claude needs administrator enablement, and the newer Auto/Model Council experiences require Frontier access. A second model's agreement is not independent confirmation when both use the same faulty source. Check citations and resolve disagreements in the source material. In [Excel](https://support.microsoft.com/en-us/excel/copilot/copilot-in-excel-tips), model choice is session-specific and editing can change the workbook directly; use a disposable copy and review changes/version history.
 
+**Context engineering** means curating the evidence: project, people, dates, source versions, permitted systems and intended audience. Prompt engineering defines the request; context engineering makes its evidence relevant and available. Use the same curated sources when comparing models so a different answer can be investigated rather than mistaken for independent confirmation.
+
+**VERIFY CURRENT:** [Cowork model selection](https://learn.microsoft.com/en-us/copilot/cowork/cowork-models) is separate from Chat's selector. Auto chooses from enabled options; device model preferences and effort choices can persist. Higher effort can consume more credits and time without adding source access or proving correctness. Its model/access pages describe tenant-wide Anthropic controls, while the newer [admin-governance page](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-admin-governance) describes user/group scoping. Preserve that documentation conflict and check the applicable setting with the administrator; do not assume one universal control scope or freeze a model list.
+
 ### Save, schedule, and share prompts safely
 
 Save a prompt when the task repeats and the prompt is worth curating. Give it a meaningful title and remove case-specific sensitive content. Retest it with different representative inputs. Schedule a prompt only when the source availability, timing, recipient, review step, and output destination are appropriate for unattended recurrence. A scheduled prompt that generates a weekly report still needs ownership and exception handling.
 
 Share a prompt when colleagues can legitimately use its instructions and sources. Explain prerequisites, expected references, limitations, and verification. Sharing the words of a prompt does not necessarily share source access, licensing, or identical context; recipients can receive different results. Avoid embedding secrets, personal data, customer details, or inaccessible file paths.
 
-[Copilot Chat scheduled prompts](https://support.microsoft.com/en-us/microsoft-365-copilot/schedule-your-most-used-copilot-prompts) require an eligible Copilot license and enabled Optional connected experiences. The current limit is ten; scheduling is supported in Chat, Teams and Outlook. Inspect run count, time, notification and resulting chat; turn off or delete the recurrence when finished. Cowork has a separate automation surface and currently allows 25 scheduled prompts. These limits are experience-specific and should be rechecked.
+[Copilot Chat scheduled prompts](https://support.microsoft.com/en-us/microsoft-365-copilot/schedule-your-most-used-copilot-prompts) require an eligible license and the applicable organizational controls. **VERIFY CURRENT — documentation discrepancy:** that user-help page still names Optional connected experiences, while the [administrator reference](https://learn.microsoft.com/en-us/microsoft-365/copilot/scheduled-prompts) names **Connected Experiences** since August 2026. Check the documented admin control and the actual runtime; hiding scheduling does not necessarily cancel existing schedules. The user help lists ten schedules, while Cowork has a separate automation surface listing 25. Inspect each recurrence, run history, permissions and timezone; disable the test definition when finished. These are experience-specific limits, not a universal Copilot quota.
 
 ### Manage conversation history and notebooks
 
@@ -214,7 +228,9 @@ Alice's notebook contains a public team plan and a synthetic compensation worksh
 
 A temporary chat avoids using/updating personalization and is absent from visible history, but organizational retention can still apply. This is not a way around records policy. Keep durable formatting preferences separate from changing facts such as this month's target or a customer's approval status.
 
-### Select, create, configure, and share an agent
+### Related item: create and configure a custom agent
+
+The current blueprint requires choosing prebuilt versus custom agents, not the former standalone custom-agent construction group. This optional exercise helps explain that choice.
 
 Search the Agent Store before building. An existing agent is preferable when its publisher, task, knowledge, capabilities, permissions, and support fit. Create a new agent when the task is distinct, repeated, and bounded enough to justify tailored behavior.
 
@@ -231,7 +247,7 @@ Test expected, vague, incomplete, sensitive, out-of-scope, conflicting-source, a
 
 ---
 
-## 3. Draft and analyze business content by using AI
+## 3. Manage business content and collaboration by using Microsoft 365 Copilot
 
 ### Draft a new document from a prompt
 
@@ -284,7 +300,7 @@ Copilot Pages turns a response into an editable shared workspace. Use it to refi
 | Facilitator | Shared live notes, agenda tracking and meeting-chat assistance | License, meeting type, organizer/presenter controls, and participant visibility |
 | Intelligent recap | Review notes, tasks and supported recording markers afterward | Transcript/recording, language, license and permissions determine available features |
 
-[Real-time catch-up](https://support.microsoft.com/en-us/teams/copilot/catch-up-on-meetings-with-microsoft-365-copilot-in-teams) can work in the “Only during” mode without saved transcription. To ask afterward about spoken discussion, a transcript is needed; chat-only context is different. “Off” disables meeting Copilot/recording/transcription, but does not mean the separate chat has vanished. Protected meetings can also block exporting responses.
+[Real-time catch-up](https://support.microsoft.com/en-us/teams/copilot/catch-up-on-meetings-with-microsoft-365-copilot-in-teams) can work in the “Only during” mode without saved transcription. Its help describes transcript-based access to spoken discussion afterward; chat-only context is different. **VERIFY CURRENT — meeting-memory exception:** the [recap reference](https://support.microsoft.com/en-us/teams/meetings/recap-in-microsoft-teams) separately documents AI-generated meeting memory in **Teams TAP preview**, subject to organizational settings. Copilot/Facilitator can use that memory without a saved transcript. Check whether the citation identifies memory or transcript; memory is not a verbatim record. Deleting a transcript or recording does not itself delete meeting memory. The recap-deletion operation is broader, permanent and not a learner cleanup shortcut. Do not infer that this preview is available in every tenant. Protected meetings can also restrict exporting responses.
 
 [Facilitator](https://support.microsoft.com/en-us/teams/copilot/facilitator-in-microsoft-teams-meetings) requires a Copilot license to add/enable it; internal participants can see shared updates. The scheduled online-meeting route excludes channel meetings, instant meetings and calls; the documented mobile in-person capture is a separate experience. Its Loop notes are editable, so they are not an immutable transcript. Task management by @mention is currently public preview. Automatically captured tasks require accepting sync; directly requested tasks can sync to Planner. Check task owners and dates before treating them as commitments.
 
@@ -292,7 +308,7 @@ Copilot Pages turns a response into an editable shared workspace. Use it to refi
 
 #### Worked example: incomplete capture is incomplete evidence
 
-A synthetic 40-minute meeting starts at 10:00, but transcription starts at 10:20. Its transcript covers only the last 20 minutes. A recap that finds no budget decision cannot establish that no decision happened in the first half. Record the coverage gap, ask the owner to confirm the decision against an approved record, and distinguish that confirmation from the generated recap.
+A synthetic 40-minute meeting starts at 10:00, but transcription starts at 10:20. That transcript covers only the last 20 minutes. A conclusion based only on it cannot establish that no budget decision happened in the first half. If preview meeting memory is cited, identify its separate capture and generated-evidence limitations rather than assuming the transcript defines its entire scope. Record the coverage gap, ask the owner to confirm the decision against an approved record, and distinguish that confirmation from the generated recap.
 
 Memory and instruction settings are covered in Section 2. Avoid assuming the same personalization or chat-deletion controls exist in every app: Excel's current help does not offer individual conversation deletion.
 
@@ -300,9 +316,11 @@ Memory and instruction settings are covered in Section 2. Avoid assuming the sam
 
 ---
 
-## 4. Apply agents and supervise Cowork — October preparation
+## 4. Drive business outcomes by using agents
 
 ### Select an agent and return to its work
+
+For a supplier-research brief, open an approved Researcher agent from the agents experience available to you in Microsoft 365 Copilot, select permitted sources, and ask for a cited comparison with missing evidence listed. For a task started inside an app, check the particular agent's supported channel before selecting it; an agent available in chat is not automatically available in every app. Confirm its identity and source scope, run a small draft task, inspect the result, then reopen that agent's chat to refine it. If it is absent, ask the administrator to check deployment/access rather than substituting an unapproved agent.
 
 Choose a prebuilt agent when its approved task and data scope fit; choose a custom agent when repeatable requirements need different instructions or sources. Researcher fits cited synthesis; Analyst fits deeper data exploration; neither replaces verification. Apply the agent from a supported Copilot surface and confirm its name, publisher and available sources. [Agent availability](https://learn.microsoft.com/en-us/microsoft-365/copilot/agent-essentials/m365-agents-admin-guide) depends on organizational deployment, access and supported channels.
 
@@ -348,7 +366,7 @@ A project manager references approved project files and meeting notes. A saved p
 
 Researcher gathers approved internal case studies and current public client/industry sources. A prompt separates sourced facts, assumptions, and proposed language. The team creates a Word draft, uses a Copilot Page to collaborate, then builds a PowerPoint deck. Every claim, image right, price, capability, and commitment receives owner approval. Restricted internal references do not move into the client deliverable.
 
-### Scenario C: Reusable policy assistant
+### Scenario C: Related item — reusable policy assistant
 
 The HR team first checks Agent Store, then creates a bounded agent from a template because no approved agent fits. Knowledge contains current employee-facing policies, not confidential cases. Instructions cite the policy, state uncertainty, refuse personal determinations, and route exceptions to HR. Suggested prompts cover common questions. Tests include obsolete policy, conflicting sources, prompt injection, sensitive requests, and two user personas. Sharing starts with a pilot team.
 
@@ -361,13 +379,15 @@ The HR team first checks Agent Store, then creates a bounded agent from a templa
 3. **Prompt clinic:** Write and compare at least 12 prompts using goal, context, sources, and expectations; keep evidence of why revisions improved the result.
 4. **Prompt lifecycle:** Save, rename, share with a test colleague, and—if available—schedule a nonsensitive prompt; document differences in access, context, results, and controls.
 5. **Conversation/notebook:** Continue and restart the same task, rename and find chats, test deletion behavior, and curate selected work into a notebook without stale sources.
-6. **Agent pilot:** Compare Agent Store options, create from a template, configure instructions/knowledge/capabilities/suggested prompts, test adversarial cases, and share narrowly.
+6. **Related item — custom-agent pilot:** Compare Agent Store options, create from a template, configure instructions/knowledge/capabilities/suggested prompts, test adversarial cases, and share narrowly.
 7. **Cross-app workflow:** Move a validated analysis from Excel through a Word brief and PowerPoint deck, tracking source, permissions, labels, figures, and human approvals.
 8. **Meeting/collaboration:** Use a synthetic meeting transcript to create decisions and actions, verify attribution, publish a sanitized Copilot Page, and review memory/instruction effects. Compare private catch-up, Facilitator notes and recap; retain an explicit missing-transcript example.
 9. **Context and sharing audit:** Use synthetic files you own and permitted test accounts. Compare notebook reference scope and sharing before/after, a missing connector source, and the gross-versus-net chart example. Record source timestamps, recipients, observed access and corrected calculations; remove the test share afterward.
 10. **Supervised delegation:** In an enabled test environment, use a built-in skill for a draft brief, then compare a narrowly scoped custom skill in a new session. Inspect single-action/session approval options without sending to real recipients; verify in-place file edits and recovery on a disposable copy. Run one test schedule, inspect its result and permissions, and disable it. Locate the agent's prior chat/filter where available. If access is unavailable, submit a tabletop plan with the limitation rather than claiming execution.
 
-Use synthetic or approved nonsensitive data. Save prompts, expected outcomes, sources, output, errors, corrections, decisions, and what a human had to add.
+11. **Current-scope evidence worksheet:** Use the renewal example to record source authority, date, contradiction and a permission gap. Compare a read-only Researcher connector with a supported write tool and its existing approval scope. For a hypothetical Teams TAP meeting, distinguish transcript citations from meeting-memory citations and explain why deleting a transcript does not prove all generated meeting artifacts are gone. Record unavailable product access as tabletop work.
+
+Use synthetic or approved nonsensitive data. Save prompts, expected outcomes, sources, output, errors, corrections, decisions, and what a human had to add. All eleven product labs remain unexecuted in this refresh.
 
 ---
 
@@ -418,6 +438,11 @@ Use synthetic or approved nonsensitive data. Save prompts, expected outcomes, so
 43. Why might Cowork take a later action without displaying a new approval?
 44. What must be checked before retrying or stopping delegated work?
 
+45. How should a renewal recommendation handle a signed contract, an older proposal and a missing support source?
+46. Can a federated connector always be treated as read-only, or always require a fresh approval?
+47. Does deleting a Teams transcript prove Copilot cannot answer from meeting memory?
+48. Does an agent available in Copilot chat necessarily work inside every Microsoft 365 app?
+
 ### Answer checkpoints
 
 1. Fluency reflects plausible generation; corroborating evidence establishes the claim.
@@ -464,41 +489,17 @@ Use synthetic or approved nonsensitive data. Save prompts, expected outcomes, so
 42. Instructions, data access, a package of capabilities, and a timing/trigger definition respectively.
 43. A session-wide approval or separately preauthorized automation may already cover it.
 44. Check completed actions, file versions, pending permissions, schedules and duplicates; cancel is not rollback.
-
----
-
-## Places to learn
-
-This is a selective starting set, not a complete list and not a requirement to consume everything. Pick the explanation, hands-on practice, and assessment style that works for you, and map each resource to the blueprint effective for your appointment. Current public listings were checked September 27; this is not a review of paid lessons or assessment questions.
-
-| Resource | Access | Estimated time |
-|---|---|---:|
-| Official self-paced path | Free | Now 4 modules; prior 4h31 estimate is not verified for this revision |
-| AB-730T00-A instructor-led course | Paid or partner-sponsored | 1 day |
-| Microsoft Practice Assessment | Free | 45–75 minutes per attempt plus review |
-| Microsoft exam-prep video | Free | Public page retrieved; runtime/video content not independently reviewed |
-| Pluralsight AB-730 path | Paid | 3 rounded hours / 2 courses (3h01 summed); path still in production |
-| O'Reilly AB-730 Crash Course | Paid | About 3 hours of agenda plus breaks/exercises |
-| MeasureUp AB-730 | Paid | 110 questions; allow 5–8 hours across remediation |
-| Udemy Scott Duffy practice | Paid | Earlier 100-question listing; current retrieval blocked |
-| Partner Skilling Hub | Partner-restricted | Event-specific; verify signed-in start/end times |
-
-- **Primary route:** [Microsoft Learn AB-730T00](https://learn.microsoft.com/en-us/training/courses/ab-730t00) and the linked [Enhance business workflows with AI path](https://learn.microsoft.com/en-us/training/paths/transform-business-workflows-with-ai/). It now lists four modules: content, data/visuals, meetings/collaboration, and Cowork. It is no longer the earlier six-module listing; use the full course and objective map to identify remaining fundamentals and prompt-management needs.
-- **Readiness:** [free official Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/ai-business-professional/practice/assessment?assessment-type=practice&assessmentId=650120434&practice-assessment-type=certification) and [official AB-730 prep video](https://www.youtube.com/live/T_Y3GTEb8pY). Use the assessment diagnostically; investigate every miss in first-party documentation.
-- **Structured subscription path:** [Pluralsight AB-730](https://www.pluralsight.com/paths/ab-730-ai-business-professional) now lists Vlad Catrinescu's 1h16 fundamentals course (August 22) and 1h45 prompt/conversation course (September 11), plus a practice exam. The path remains in production and its three-domain description does not establish complete October coverage.
-- **Live guided preparation:** [O'Reilly AB-730 Crash Course](https://www.oreilly.com/live-events/microsoft-ai-business-professional-ab-730-crash-course/0642572353940/0642572353933/) by Renaldi Gondosubroto has a 180-minute teaching/exercise agenda plus breaks. It still describes three domains and custom-agent construction; verify October coverage, the actual event date and local start/end time before enrolling.
-- **Paid assessment:** [MeasureUp AB-730](https://www.measureup.com/microsoft-ab-730-ai-business-professional-practice-test.html), 110 questions released June 2026. Its generic overview text incorrectly mentions Azure AI workloads, while its detailed mapping follows the earlier three-domain AB-730 scope. Neither establishes coverage of the new October agent domain; verify revision coverage before purchase.
-- **Previously listed additional assessment:** [Udemy AB-730 practice by Scott Duffy and Jordi Koenderink](https://www.udemy.com/course/ab730-tests/), previously listed 100 questions and an August 2026 update mapped to July 22. Current retrieval was blocked; treat those as historical observations and recheck before buying.
-- **Partner-restricted learning:** [Partner Skilling Hub](https://www.skilling-hub.com/en-US); sign in to confirm current AB-730 delivery, exact start/end times, seats, and prerequisites.
-
-No exact Whizlabs AB-730 product was independently verified in the earlier September 1 catalog review; this deep review did not establish a new product listing. Avoid unusually large banks, “real questions,” pass guarantees, or content that claims to mirror live questions. A small set of original scenarios plus hands-on Copilot use is more useful than memorizing hundreds of unsupported answers.
+45. Identify authoritative current facts, preserve the conflict and missing evidence, ask the accountable owner, and produce a cited draft without inventing a commitment.
+46. No. Supported tools can modify source data, while Researcher remains read-only. Conversation or persistent tool approval can already cover a later action.
+47. No. The documented Teams TAP preview can retain separate AI-generated memory under organizational settings; inspect the cited artifact and relevant lifecycle controls.
+48. No. Verify that agent's supported channel, tenant deployment and user access; availability on one surface does not establish another.
 
 ---
 
 ## Useful blog reading with an exercise
 
 - [Introducing Copilot Home, Code and Autopilot](https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/) — Jared Spataro, September 25, 2026. Classify a lookup, a delegated brief and recurring work by required context, actions and supervision. The article announces staged Frontier/private previews; it does not establish that Home, Code or Autopilot is available in your tenant or add those product names to AB-730's objectives.
-- [Work IQ business and workplace intelligence](https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/09/25/work-iq-business-and-workplace-intelligence-in-the-flow-of-work/) — James Oleinik, September 25, 2026. Draw a renewal-evidence table linking opportunity, unresolved case, contract and customer message; identify the missing source or approval that would change the recommendation. The described business-app preview starts September 30 and rolls through October, with Finance/Operations planned for late October. Use a tabletop exercise until your environment has the supported feature.
+- [Work IQ business and workplace intelligence](https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/09/25/work-iq-business-and-workplace-intelligence-in-the-flow-of-work/) — James Oleinik, September 25, 2026. Draw a renewal-evidence table linking opportunity, unresolved case, contract and customer message; identify the missing source or approval that would change the recommendation. The article described a September 30 preview start, October rollout and planned late-October Finance/Operations support. These dated announcements do not verify delivery or current tenant availability. Use a tabletop exercise until your environment has the supported feature.
 
 Both public article texts were read. Marketing performance claims, videos, customer deployments and preview access were not independently validated. Use their scenarios to ask better questions, then verify feature behavior in current product documentation.
 
@@ -510,11 +511,42 @@ Both public article texts were read. Marketing performance claims, videos, custo
 - [ ] I can identify fabrication, injection, over-reliance, oversharing, bias, privacy/copyright, and stale-context risk and choose verification.
 - [ ] I can create, iterate, save, schedule, share, and retire a prompt with goal, context, sources, expectations, owner, and test evidence.
 - [ ] I can manage chat history and curate a notebook without carrying irrelevant or sensitive context forward.
-- [ ] I can choose Agent Store or a custom template agent, then configure knowledge, settings, suggestions, tests, sharing, and escalation.
+- [ ] I can justify using a prebuilt agent or a custom agent, apply a prebuilt agent to a business task, and find its prior chats; custom construction is optional related practice.
 - [ ] I can draft and transform documents, create management summaries, and validate Researcher and Analyst results.
 - [ ] I can move insight across Microsoft 365 apps without losing provenance, permissions, labels, meaning, or approval.
 - [ ] I can use meetings, Pages, memory, and instructions while preserving participant, audience, and human-accountability boundaries.
 - [ ] I can explain connector freshness, model selection, notebook sharing, meeting capture and Cowork approval/retry boundaries.
-- [ ] For October preparation, I can apply a prebuilt agent, find its chats, choose a skill, supervise a delegated task and manage its schedule.
-- [ ] I completed the three scenarios, ten labs, and 44 original checks without using exam dumps, or recorded unavailable environment steps honestly.
+- [ ] I can apply a prebuilt agent, find its chats, choose a skill, supervise a delegated task and manage its schedule for the current four-domain outline.
+- [ ] I completed the three scenarios, eleven labs, and 48 original checks without using exam dumps, or recorded unavailable environment steps honestly.
 - [ ] I rechecked the official blueprint, Practice Assessment, credential lifecycle, and product availability immediately before scheduling.
+
+---
+
+## Places to learn
+
+This is a selective starting set, not a complete list and not a requirement to consume everything. Pick the explanation, hands-on practice, and assessment style that works for you, and map each resource to the blueprint effective for your appointment. Selected public course/path listings were rechecked October 28; unchanged older observations remain dated below. Public landing-page access does not establish access to paid lessons or assessment questions.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| Official self-paced path | Free public reading; product practice needs eligible access | 4 modules; about 4–6 hours including notes (editorial estimate; no directly verified total) |
+| Focused Work IQ foundations module | Free public reading | About 25–40 minutes for reading and a context worksheet (editorial estimate) |
+| Focused Cowork module | Free public reading; eligible product access for practice | About 1–2 hours for selected units and a supervision worksheet (editorial estimate) |
+| AB-730T00-A instructor-led course | Paid or partner-sponsored | 1 day |
+| Microsoft Practice Assessment | Free | 45–75 minutes per attempt plus review |
+| Microsoft exam-prep video | Free | Public page retrieved; runtime/video content not independently reviewed |
+| Pluralsight AB-730 path | Paid | 4 rounded hours / 3 courses (4h26 summed); path still in production |
+| O'Reilly AB-730 Crash Course | Paid | About 3 hours of agenda plus breaks/exercises |
+| MeasureUp AB-730 | Paid | 110 questions; allow 5–8 hours across remediation |
+| Udemy Scott Duffy practice | Paid | 100 questions advertised; about 3–6 hours for attempts/remediation (editorial estimate); paid questions uninspected |
+| Partner Skilling Hub | Partner-restricted | Event-specific; verify signed-in start/end times |
+
+- **Primary route:** [Microsoft Learn AB-730T00](https://learn.microsoft.com/en-us/training/courses/ab-730t00) and the linked [Enhance business workflows with AI path](https://learn.microsoft.com/en-us/training/paths/transform-business-workflows-with-ai/). It now lists four modules: content, data/visuals, meetings/collaboration, and Cowork. It is no longer the earlier six-module listing; use the full course and objective map to identify remaining fundamentals and prompt-management needs.
+- **Targeted current-scope reading:** [Get ready to work with Microsoft Copilot](https://learn.microsoft.com/en-us/training/modules/get-ready-work-microsoft-365-copilot/) introduces Work IQ, protection and prompting. [Get more done with Copilot Cowork](https://learn.microsoft.com/en-us/training/modules/delegate-work-copilot-cowork/) has ten units; selected how-it-works, guardrails and a 15-minute exercise entry were inspected. Use synthetic data and a plan/progress/result worksheet. The course's simple approval description must be read alongside product documentation on existing session approvals and preauthorization; the module is not proof that every action prompts again. No exercise launcher or tenant task was run.
+- **Readiness:** [free official Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/ai-business-professional/practice/assessment?assessment-type=practice&assessmentId=650120434&practice-assessment-type=certification) and [official AB-730 prep video](https://www.youtube.com/live/T_Y3GTEb8pY). Use the assessment diagnostically; investigate every miss in first-party documentation.
+- **Structured subscription path:** [Pluralsight AB-730](https://www.pluralsight.com/paths/ab-730-ai-business-professional) now lists three courses totaling 4h26: 1h16 fundamentals (August 22), 1h45 prompts/conversations (September 11) and 1h25 business-content training (October 6), plus a practice exam. The path remains in production and its three-domain description does not establish complete October 20 coverage.
+- **Live guided preparation:** [O'Reilly AB-730 Crash Course](https://www.oreilly.com/live-events/microsoft-ai-business-professional-ab-730-crash-course/0642572353940/0642572353933/) by Renaldi Gondosubroto has a 180-minute teaching/exercise agenda plus breaks. It still describes three domains and custom-agent construction; verify October coverage, the actual event date and local start/end time before enrolling.
+- **Paid assessment:** [MeasureUp AB-730](https://www.measureup.com/microsoft-ab-730-ai-business-professional-practice-test.html), 110 questions released June 2026. Its generic overview text incorrectly mentions Azure AI workloads, while its detailed mapping follows the earlier three-domain AB-730 scope. Neither establishes coverage of the new October agent domain; verify revision coverage before purchase.
+- **Additional assessment listing:** [Udemy AB-730 practice by Scott Duffy and Jordi Koenderink](https://www.udemy.com/course/ab730-tests/), public listing rechecked October 28 advertises 100 questions in four sets and an August 2026 update mapped to July 22. September automation was blocked; current browser-readable metadata does not establish October 20 coverage, question originality or paid-content quality. Recheck before buying.
+- **Partner-restricted learning:** [Partner Skilling Hub](https://www.skilling-hub.com/en-US); sign in to confirm current AB-730 delivery, exact start/end times, seats, and prerequisites.
+
+No exact Whizlabs AB-730 product was independently verified in the earlier September 1 catalog review; this deep review did not establish a new product listing. Avoid unusually large banks, “real questions,” pass guarantees, or content that claims to mirror live questions. A small set of original scenarios plus hands-on Copilot use is more useful than memorizing hundreds of unsupported answers.

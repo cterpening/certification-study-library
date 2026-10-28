@@ -13,6 +13,8 @@ upcoming_change_checked: 2026-09-28
 
 # SC-300 Microsoft Identity and Access Administrator Study Guide
 
+> **REFRESH IN PROGRESS — REVIEW REQUIRED (October 28, 2026).** The official objective page differs from the accepted teaching baseline. Detailed coverage reconciliation is pending; use the linked official blueprint for current scope. Saved objective snapshots and historical full-review dates remain unchanged.
+
 > **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; OFFICIAL WEIGHTING CONFLICT OPEN; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 28, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sc-300-coverage-record). The [official SC-300 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-300) is authoritative.
 
 **Current baseline:** Skills measured as of April 27, 2026; official study-guide page last updated March 27, 2026.<br>
@@ -21,6 +23,8 @@ upcoming_change_checked: 2026-09-28
 **Published weighting discrepancy:** The study guide's “Skills at a glance” assigns authentication and access management 25–30%, while its detailed heading says 20–25%. This guide uses 25–30% for planning because it is the summary-table value, but the Microsoft page remains the source of truth. **VERIFY CURRENT** before allocating study time.<br>
 **Localized exams:** Microsoft says localized versions normally follow the English update by approximately eight weeks; verify your language version before scheduling.<br>
 **Official source:** [SC-300 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-300)
+
+> **Official blueprint conflict — October 28, 2026:** The October 28 official page disagrees internally: authentication/access is 25–30% at a glance and 20–25% in the detailed heading. Preserve the conflict and verify with Microsoft; do not silently choose a weight.
 
 ## How to use this guide
 

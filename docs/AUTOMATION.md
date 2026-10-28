@@ -55,6 +55,48 @@ the distinction between a matching extraction and a completed technical review.
 See the [September 27 repository review](research/2026-09-27-repository-maintenance.md)
 for the first combined evidence ledger, current updates, and remaining limitations.
 
+## Subagent refresh workflow
+
+The repository's [agent instructions](../AGENTS.md) request delegation for substantial
+refreshes. Start with the deterministic maintenance evidence, then use one coordinator
+and up to three research subagents within the session's concurrency limit:
+
+| Role | Research scope | Required output |
+|---|---|---|
+| Exam researcher | Official objectives, credential identity, eligibility and lifecycle | Opened canonical evidence, dates and current/future scope differences |
+| Technical researcher | Product docs, releases, weak claims and unresolved findings | Confirmed behavior, contradictions, proposed bounded corrections and remaining gaps |
+| Learning-resource researcher | Specific tutorials, workshops, code, courses and videos | Objective fit, catalog matches, access, time basis, strengths and caveats |
+| Coordinator | Evidence reconciliation, shared edits and validation | Accepted changes, preserved limitations, source/health records and accurate review receipts |
+
+Research workers do not edit shared files. Assign separate scratch paths and require
+exact source URLs, observation dates, affected exams and proposed actions. Reuse
+existing catalog entries; do not count rediscovered URLs as new resources. First-party
+freshness results and evaluated supplementary learning resources retain their separate
+authority and workflow boundaries. Keep normal packets around ten guides, at most twelve.
+
+Keep the existing maintenance runner's automated channels sequential. For a targeted
+vendor pass, use the objective monitor's selected exams or a scoped catalog, discovery
+`--only` selectors, and a scoped source catalog; record the selection explicitly.
+Do not present scoped reports as a complete whole-library run or replace unselected
+health/snapshot evidence. A generated work packet is pending research, not completion.
+
+After applying changes, give a separate fresh-context agent a read-only review packet:
+the complete affected guides and current hashes, accepted/candidate objectives, current
+diff, exact source evidence and the [audit rubric](AI-AUDIT.md). Supply facts and artifacts
+rather than the editing conversation. The reviewer reports findings and does not repair
+its own review targets. The coordinator resolves material findings and reruns appropriate
+checks. A workflow/diff review alone is not a completed full semantic audit.
+
+Record the reviewed scope and remaining work in a dated research report. Preserve
+historical full-review dates unless the complete review requirements were satisfied.
+Keep product execution, offline checks, AI review and human review separate. For small
+corrections, or when delegation is unavailable, proceed with one agent and disclose the
+actual review method. Publication and delivery follow the user's requested scope.
+
+Example request: “Refresh the Microsoft/Azure guides using an exam researcher, a technical
+researcher and a learning-resource researcher. Keep shared edits with the coordinator,
+then use a fresh-context reviewer. Report completed coverage and remaining work.”
+
 ## Certification discovery inventory
 
 `config/certification-seeds.json` records the official catalog URL, explicit
@@ -416,8 +458,10 @@ ID and date, pointing to the archive; give the new review its own dated ID. Vali
 binds historical audits to the latest retained source review on or before their
 audit date. An audit after a replacement review must use that review's baseline.
 Historical link counts retain their original evidence instead of adopting today's
-guide links. Older catalogs without a preserved dated review can use the current
-review only when the snapshot path and hash still match.
+guide links. Legacy gaps without a contemporaneous source review bind to the earliest
+retained review with the required exact snapshot path and hash; this preserves the
+ledger without establishing missing contemporaneous evidence. New audits still need
+a current source review, as described in [AI-audit binding rules](AI-AUDIT.md#content-binding-and-rubric-versions).
 Record the before/after hashes, reason for acceptance and any
 source-path migration in the review evidence. PL-300's September 27 deep-review
 record demonstrates this for editorial-only changes. Future-dated objectives must

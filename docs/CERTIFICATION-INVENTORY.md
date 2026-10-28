@@ -16,6 +16,13 @@ have a seed, but research-only seeds are allowed and expected.
 
 ## Current coverage baseline
 
+The [IBM Bob v2 Developer Associate intake](research/2026-10-28-ibm-bob-certification-intake.md)
+adds live exam C3000-006 / credential C9010800 as checked October 28, 2026.
+It joins the existing six IBM guides; this targeted addition does not reverify
+those older entries or the full IBM catalog. The guide maps all 52 public
+objectives and preserves the official preparation PDF's unresolved general
+marketplace-browser question. Product labs and independent human review remain pending.
+
 The Azure and HashiCorp baseline was verified on August 31, 2026. The broader
 Microsoft catalog expansion was rechecked on September 1, 2026 and is being
 published one source-validated guide at a time.

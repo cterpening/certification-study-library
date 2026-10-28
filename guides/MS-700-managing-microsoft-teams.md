@@ -13,6 +13,8 @@ upcoming_change_checked: 2026-09-28
 
 # MS-700 Managing Microsoft Teams Study Guide
 
+> **REFRESH IN PROGRESS — REVIEW REQUIRED (October 28, 2026).** The official objective page differs from the accepted teaching baseline. Detailed coverage reconciliation is pending; use the linked official blueprint for current scope. Saved objective snapshots and historical full-review dates remain unchanged.
+
 > **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The September 28, 2026 deep review read the whole guide and mapped all 97 published October objectives while preserving the July 29 accepted baseline. A private-channel Workflows documentation conflict remains open; human review and tenant execution are pending. It may still contain errors or become outdated. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ms-700-coverage-record). The [official MS-700 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-700) is authoritative.
 
 **Current baseline:** Skills measured as of July 29, 2026<br>

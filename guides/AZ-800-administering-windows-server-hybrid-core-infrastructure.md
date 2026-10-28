@@ -5,25 +5,33 @@ official_blueprint: https://learn.microsoft.com/en-us/credentials/certifications
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: review-required
-last_verified: 2026-09-27
-upcoming_change_status: retirement-announced
-upcoming_change_checked: 2026-09-27
+review_status: retired
+last_verified: 2026-10-28
+upcoming_change_status: none-announced
+upcoming_change_checked: 2026-10-28
 ---
 
 # AZ-800 Administering Windows Server Hybrid Core Infrastructure Study Guide
 
-> **RETIREMENT ANNOUNCED:** Microsoft will retire AZ-800 on **September 30, 2026, at 5:00 PM Central Standard Time**. AZ-801 retires at the same time. After that transition, [AZ-802](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802) will remain the available exam path for the [Windows Server Administrator Associate certification](https://learn.microsoft.com/en-us/credentials/certifications/windows-server-administrator-associate/). New learners should normally prepare for AZ-802; use this guide when you are already committed to taking AZ-800 before retirement or need the underlying infrastructure knowledge.
+> **RETIRED — verified October 28, 2026.** Microsoft explicitly confirms that AZ-800 retired September 30, 2026, at 5:00 PM Central Standard Time. Use [AZ-802](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802) for current exam preparation. This guide preserves historical objectives and useful technical foundations; it is not an available booking route. Earlier technical evidence gaps and unexecuted labs remain.
 
 > **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The full guide, detailed objective mapping, citations and learning examples were reviewed on September 27, 2026. SSH Direct support evidence and conflicting Entra Conditional Access guidance remain unresolved; this is not a clean source-validation pass. See the [deep-review findings](../docs/research/2026-09-27-az-800-deep-review.md) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-800-coverage-record). The [official AZ-800 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-800) is authoritative.
 
 **Current baseline:** Skills measured as of January 21, 2026<br>
-**Upcoming blueprint change:** No later blueprint revision is shown, but the exam itself has an announced retirement.<br>
-**Certification lifecycle:** AZ-800 and AZ-801 retire September 30, 2026, at 5:00 PM Central Standard Time. Microsoft identifies AZ-802 as the remaining replacement path; passing one old exam does not imply automatic transition credit, so verify your credential status and scheduling plan on the official page.<br>
-**Course lifecycle:** Microsoft course AZ-800T00-A also retires September 30, 2026 and is replaced by AZ-802T00-A.<br>
+**Upcoming blueprint change:** None tracked for the retired exam; the accepted objective snapshot is archived.<br>
+**Certification lifecycle:** AZ-800 and AZ-801 are retired. New learners should use AZ-802; no automatic transition credit or individual credential status is inferred.<br>
+**Course lifecycle:** The AZ-800T00/AZ-801T00 courseware retired September 30, 2026; Microsoft identifies AZ-802T00 as successor training.<br>
 **Official sources:** [AZ-800 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-800) · [exam page](https://learn.microsoft.com/en-us/credentials/certifications/exams/az-800/) · [retirement list](https://learn.microsoft.com/en-us/credentials/support/retired-certification-exams) · [replacement credential](https://learn.microsoft.com/en-us/credentials/certifications/windows-server-administrator-associate/)
 
 > **Living-guide watch — September 7, 2026:** Use [Windows Server release health](https://learn.microsoft.com/en-us/windows/release-health/) for servicing and known-issue decisions and [What's new in Windows Server 2025](https://learn.microsoft.com/en-us/windows-server/get-started/whats-new-windows-server-2025) as a feature-generation cross-check; neither changes the January 2026 exam blueprint by itself. SSH Direct remains a documented evidence gap rather than a reason to omit the objective. Microsoft confirms the Hyper-V/VSOCK transport and Microsoft-owned lab code demonstrates one older Debian composition. Ubuntu, Red Hat-family, SUSE/openSUSE, Oracle Linux, systemd, libvirt, Microsoft Press, and expert sources add useful version-specific evidence, cataloged in the [dated evidence review](../docs/SSH-DIRECT-EVIDENCE.md). They do **not** establish a universal support matrix. Learn the bounded model, record the distribution/version gaps, and validate only in an authorized disposable lab.
+
+## October 28 implementation notes
+
+**Related item:** **Confirmed — VERIFY CURRENT (October 28, 2026).** On applicable Windows 11/Server 2025 systems with Credential Guard disabled, October 13 updates make an absent BlockNtlmv1SSO value enforce blocking of NTLMv1-derived SSO credentials. Check Wi-Fi/Ethernet/VPN MS-CHAPv2 dependencies and NTLM Operational events 4024/4025. An absent key no longer means audit-only, and manual credential entry may still work. Migrate toward supported certificate authentication; any temporary audit exception needs a scoped owner and removal date. [Windows message center](https://learn.microsoft.com/en-us/windows/release-health/windows-message-center) · [Manage NTLMv1 changes and prevent network authentication issues in Windows](https://support.microsoft.com/en-us/servicing/os/windows/docs/2025/08/upcoming-changes-to-ntlmv1-in-windows-11-version-24h2-and-windows-server-2025)
+
+**Related item:** **Confirmed — VERIFY CURRENT (October 28, 2026).** Server 2025 quick machine recovery can use connected WinRE to seek Windows Update remediations for widespread boot failures. Cloud remediation is disabled by default on Server 2025/enterprise-managed devices; inspect policy and recovery-network connectivity. Current guidance supports wired or WPA/WPA2 password networks and Server 2025 GPO configuration. It is best effort, not a backup restore. The documented simulated test mode is limited to eligible Windows Insider client devices; do not assume that mode is supported on a server lab. [Windows message center](https://learn.microsoft.com/en-us/windows/release-health/windows-message-center) · [Quick machine recovery](https://learn.microsoft.com/en-us/windows/configuration/quick-machine-recovery/?tabs=csp)
+
+These are bounded operational updates, not a completed objective rebaseline. Product and tenant exercises were not run. Earlier unresolved support and documentation gaps remain.
 
 ## How to use this guide
 
@@ -1015,18 +1023,27 @@ Start with a tabletop worksheet: list the initiating identity, target identity, 
 - [ ] I can compare SMB Multichannel/Direct/encryption/compression/QUIC.
 - [ ] I can choose Storage Spaces/S2D, Storage Replica, deduplication, QoS, NTFS/ReFS and iSCSI by layer.
 - [ ] I completed at least one identity, one networking and one data-path failure-injection lab.
-- [ ] I verified my exam date against the September 30, 2026 retirement and considered AZ-802.
+- [ ] I understand that AZ-800 retired September 30, 2026, and use AZ-802's current objectives when pursuing certification.
 
 ---
 
 ## Places to learn
 
-This is **not a complete list**, and it is not a recommendation to consume everything. Pick the resources and formats that fit you. Because AZ-800 retires September 30, 2026, compare the time remaining with the broader value of studying AZ-802. Use the official January 21, 2026 objectives as the AZ-800 coverage checklist. Estimated times include reasonable note-taking or practice where stated and should be rechecked before purchase. Older material can teach durable Windows Server concepts, but reconcile product names, versions and deprecated capabilities with current documentation.
+### October 28 learning-resource check
+
+Additional options and access updates; choose relevant resources rather than consuming every route. New course availability, class delivery and licensing are **VERIFY CURRENT**. Published days describe instructor-led scope, not measured self-study time.
+
+| Resource | Access | Estimated time |
+|---|---|---|
+| [AZ-802T00 successor Windows Server course](https://learn.microsoft.com/en-us/training/courses/az-802t00) | Public outline; class and labs may be paid | **5 published days**; current preparation route following AZ-800/AZ-801 courseware retirement; compare AZ-802 objectives |
+
+
+This is **not a complete list**, and it is not a recommendation to consume everything. Pick the resources and formats that fit you. AZ-800 is retired; use its material for technical foundations and choose AZ-802 for a current exam path. Use the official January 21, 2026 objectives as the AZ-800 coverage checklist. Estimated times include reasonable note-taking or practice where stated and should be rechecked before purchase. Older material can teach durable Windows Server concepts, but reconcile product names, versions and deprecated capabilities with current documentation.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
 | [Official AZ-800 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-800) | Free; authoritative AZ-800 scope and retirement notice | 45–75 min initially; 10–15 min before exam |
-| [AZ-802 replacement blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802) | Free; compare before committing to the retiring two-exam route | 60–90 min for a scope diff |
+| [AZ-802 replacement blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802) | Free; compare for the current single-exam path | 60–90 min for a scope diff |
 | [Microsoft Learn AZ-800 exam/training collection](https://learn.microsoft.com/en-us/credentials/certifications/exams/az-800/) | Free self-paced paths; official instructor-led AZ-800T00 duration is 4 days | Plan 35–55 hr self-paced with labs, or 4 instructor-led days plus review |
 | [Microsoft free AZ-800 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/exams/az-800/practice/assessment?assessment-type=practice&assessmentId=67) | Free; use explanations for remediation, not question memorization | 45–90 min per attempt; plan 3–5 hr with remediation |
 | [Official MicrosoftLearning AZ-800 lab instructions](https://microsoftlearning.github.io/AZ-800-Administering-Windows-Server-Hybrid-Core-Infrastructure/) | Free public hands-on course labs; Azure/VM costs may apply | Plan 15–25 hr including setup, evidence and cleanup |
@@ -1042,7 +1059,7 @@ This is **not a complete list**, and it is not a recommendation to consume every
 
 #### Experienced Windows Server administrator route
 
-1. Decide AZ-800 versus AZ-802 from the retirement date and credential page.
+1. Use AZ-802 for a current certification route; use this retired AZ-800 guide selectively for technical foundations.
 2. Diff the January 2026 blueprint against your production experience; do not assume on-premises depth covers Azure identity, Arc, Files or Private Resolver.
 3. Complete Labs 2, 4, 6 and 8, then inject one identity, DNS and sync failure.
 4. Use practice assessment results to select current Microsoft documentation, not to memorize answer wording.

@@ -6,23 +6,26 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: review-required
-last_verified: 2026-09-28
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-28
+upcoming_change_checked: 2026-10-28
 ---
 
 # AI-200 Developing AI Cloud Solutions on Azure Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 28, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ai-200-coverage-record). The [official AI-200 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-200) is authoritative.
 
-**Current baseline:** The official page was last updated May 5, 2026; it does not publish a separate “skills measured as of” date.<br>
-**Upcoming blueprint change:** None announced as of September 28, 2026.<br>
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 refresh maps all 27 detailed objectives in the October 7, 2026 English outline. See the [current deep-review evidence](../docs/research/2026-10-28-microsoft-wave1-deep-review.md#ai-200) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ai-200-coverage-record). Microsoft's [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-200) is authoritative. Live product labs and human review remain pending; public-source review does not guarantee correctness.
+
+**Current English baseline:** Skills measured as of October 7, 2026. All 27 detailed objectives remain present; the added audience/date framing and inconsistent weight change are recorded in the accepted snapshot. The former May 5 teaching snapshot is archived.<br>
+**Upcoming blueprint change:** No later revision announced on the official study guide checked October 28, 2026; localized exam updates may lag English.<br>
 **Lifecycle status:** Active; no retirement or replacement was announced on the official pages checked.<br>
 **Exam page:** [Azure AI Cloud Developer Associate](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-cloud-developer-associate/) · 120-minute assessment · 13 languages on the page checked; course-language availability is separate.<br>
 **Official course:** [AI-200T00 Develop AI cloud solutions on Azure](https://learn.microsoft.com/en-us/training/courses/ai-200t00) · five instructor-led days; 12 course languages.<br>
-**Practice:** Microsoft says a Practice Assessment is not currently available and is normally added within eight weeks after an exam becomes generally available. Recheck the credential page; use the [exam sandbox](https://aka.ms/examdemo) only for interface familiarity.
+**Practice (checked October 28, 2026):** The [official study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-200) advertises a Practice Assessment through AI Skills Navigator with sign-in. The assessment itself was not opened or tested. The September 28 observation of unavailability is historical. Use the [exam sandbox](https://aka.ms/examdemo) for interface familiarity.
 
-**September 28 deep review:** All 27 detailed objectives were mapped across nine groups; the accepted blueprint is unchanged. This guide now includes six worked examples, ten labs and 48 explained answers. The [review report](../docs/research/2026-09-28-ai-200-deep-review.md) records sources and validation. A narrow Managed Redis documentation conflict remains: the creation guide prohibits later clustering changes, while the REST contract permits a change from `NoCluster`. Confirm that conversion path before planning it. No infrastructure lab was executed.
+**October 28 deep review:** All 27 detailed objectives in nine groups were remapped to the current guide. The [review report](../docs/research/2026-10-28-microsoft-wave1-deep-review.md#ai-200) preserves the unresolved official domain-weight conflict and Managed Redis conversion-document conflict. The [September 28 review](../docs/research/2026-09-28-ai-200-deep-review.md) remains historical; its offline results are not new Azure execution. No infrastructure lab was executed in this refresh.
+
+> **Official blueprint conflict — October 28, 2026:** The October 7 official page disagrees internally: data management is 30–35% at a glance and 25–30% in the detailed heading. Preserve the conflict and verify with Microsoft; do not silently choose a weight.
 
 ## How to use this guide
 
@@ -45,7 +48,7 @@ Use Python for SDK exercises and keep IaC/manifests/configuration in source cont
 | Published domain | Weight | Production question |
 |---|---:|---|
 | Develop containerized solutions on Azure | 20–25% | Can you build an immutable image and run, scale, revise and diagnose it on the appropriate Azure host? |
-| Develop AI solutions by using Azure data management services | 25–30% | Can you choose and implement Cosmos DB, PostgreSQL/pgvector or Managed Redis from data, vector and latency requirements? |
+| Develop AI solutions by using Azure data management services | **30–35% at a glance; 25–30% detailed heading — official conflict** | Can you choose and implement Cosmos DB, PostgreSQL/pgvector or Managed Redis from data, vector and latency requirements? |
 | Connect to and consume Azure services | 20–25% | Can you build idempotent asynchronous flows with Service Bus, Event Grid and Functions? |
 | Secure, monitor, troubleshoot Azure solutions | 20–25% | Can the workload use passwordless secrets/config and produce end-to-end OpenTelemetry/KQL evidence? |
 
@@ -243,7 +246,9 @@ Use [Container Apps logs and monitoring](https://learn.microsoft.com/en-us/azure
 
 ---
 
-## 3. Develop AI solutions with Azure data management services (25–30%)
+## 3. Develop AI solutions with Azure data management services
+
+**VERIFY CURRENT — official weight conflict:** The October 7 outline lists 30–35% at a glance and 25–30% on this domain's detailed heading. Study all twelve data-service objectives; do not treat either percentage as an independently confirmed correction.
 
 ### Choose source of truth, retrieval store and cache separately
 
@@ -289,6 +294,8 @@ Store source ID/version/hash, chunk text/metadata, embedding model/version/dimen
 Cosmos vector distance queries consume RU and return a similarity/distance ordering according to the chosen metric/index. Test exact versus approximate options, candidate count, partition/filter selectivity, recall against labeled questions, p95 latency and RU. Avoid treating a raw score as universal confidence.
 
 Current Cosmos choices include `flat` (up to **505 dimensions**) and `quantizedFlat`/`diskANN` (up to **4,096**). The latter two need at least **1,000 vectors** to use their vector index; smaller populations fall back to a full scan. Quantized flat search still scans vectors with quantization loss; it is not the same algorithm as DiskANN. Current policy supports adding/removing vector paths; changing an existing configuration requires dropping/re-adding that path. Test rebuild, availability, recall and RU rather than assuming all policy edits are free.
+
+**VERIFY CURRENT — reproducibility:** The [current Cosmos vector documentation](https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/vector-search) explains that DiskANN result ordering can vary against unchanged data because replicas build approximate indexes independently. Record query/model/source versions and the authorization predicate; compare allowed-result recall, RU and latency against an appropriate exact test path. A small ordering change alone does not establish stale data or cross-tenant access. The 505-dimension `flat` limit means it is not a same-configuration baseline for a 1,536-dimension embedding.
 
 > **Related item:** Embeddings inherit the sensitivity and retention duties of their source. A vector is not anonymized simply because humans cannot read it directly.
 
@@ -447,7 +454,7 @@ This syntax-valid illustration shows durable success followed by settlement. `pr
 
 Broker duplicate detection is tier/window scoped: Standard/Premium support it, Basic does not. The default history is ten minutes, configurable from twenty seconds to seven days. With partitioning, uniqueness is `MessageId + PartitionKey`; scheduled messages participate too. An accepted duplicate can be discarded by the broker, and expiry of the history does not erase business-side idempotency requirements. [Duplicate detection](https://learn.microsoft.com/en-us/azure/service-bus-messaging/duplicate-detection)
 
-**September 30, 2026 deadline:** the legacy `WindowsAzure.ServiceBus`, `Microsoft.Azure.ServiceBus` and `com.microsoft.azure.servicebus` libraries retire from support; SBMP protocol support ends. Modern Python `azure-servicebus` is not one of those retired libraries. Inventory actual package/protocol usage rather than treating every Service Bus client as affected.
+**Deadline passed — September 30, 2026:** the legacy `WindowsAzure.ServiceBus`, `Microsoft.Azure.ServiceBus` and `com.microsoft.azure.servicebus` libraries retired from support; SBMP protocol support ended. Modern Python `azure-servicebus` is not one of those retired libraries. Inventory actual package/protocol usage rather than treating every Service Bus client as affected.
 
 #### Operate the dead-letter queue
 
@@ -503,7 +510,7 @@ Function keys are not a complete end-user authorization architecture. Use App Se
 
 Deploy with a repeatable package or container and compatible Python/runtime/extension versions. Configure plan, storage, identity, networking, app settings, telemetry and slots where supported. Use [deployment technologies](https://learn.microsoft.com/en-us/azure/azure-functions/functions-deployment-technologies) and [Functions best practices](https://learn.microsoft.com/en-us/azure/azure-functions/functions-best-practices).
 
-**Hosting deadlines and limits:** use the [current Functions plan/runtime table](https://learn.microsoft.com/en-us/azure/azure-functions/functions-scale). Flex Consumption is the recommended new serverless hosting option where supported. **Functions runtime 3.x on Linux Consumption stops running after September 30, 2026**; the separate retirement of the **Linux Consumption plan is September 30, 2028**. An HTTP-triggered response is limited to **230 seconds**, even if the function execution timeout is longer. Return an accepted operation ID and expose authenticated status/result for long work. Flex scale is per function or supported trigger group, with regional memory quota; a high instance ceiling is not proof of database or model capacity.
+**Hosting deadlines and limits:** use the [current Functions plan/runtime table](https://learn.microsoft.com/en-us/azure/azure-functions/functions-scale). Flex Consumption is the recommended new serverless hosting option where supported. **Functions runtime 3.x on Linux Consumption reached its September 30, 2026 stop-running deadline**; the separate retirement of the **Linux Consumption plan is September 30, 2028**. An HTTP-triggered response is limited to **230 seconds**, even if the function execution timeout is longer. Return an accepted operation ID and expose authenticated status/result for long work. Flex scale is per function or supported trigger group, with regional memory quota; a high instance ceiling is not proof of database or model capacity.
 
 > **Related item:** Durable Functions can orchestrate long-running stateful workflows, but it is supporting knowledge rather than an explicit AI-200 objective. Its orchestrator determinism and replay model differ from an ordinary function.
 
@@ -571,6 +578,8 @@ Record safe attributes:
 - cache hit/miss, queue/backlog age and end-to-end duration.
 
 Avoid prompt/document/secret/PII bodies by default. Configure sampling so errors and critical async flows remain diagnosable; understand head versus tail sampling and cross-service consistency. Metrics need stable, low-cardinality dimensions. Logs need structured fields and trace IDs.
+
+**VERIFY CURRENT — distribution choice:** The [current sampling guidance](https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-sampling) recommends **Microsoft OpenTelemetry Distro** for new Python, .NET and Node.js applications exporting to Azure Monitor. Existing Azure Monitor OpenTelemetry Distro deployments need not migrate solely for that naming change; Java follows its documented distribution. Verify the installed package/version and language-specific sampler/log behavior. Preserve the trace/metric/log distinctions instead of copying one language's defaults to every runtime.
 
 ### Query telemetry with KQL
 
@@ -829,6 +838,10 @@ These are original prompts, not recalled exam questions. Answer with requirement
 47. Why is publishing a new Key Vault version insufficient to revoke the old credential immediately?
 48. Why do 100 sampled telemetry rows represent 910 requests in example 6?
 
+49. Do two differently ordered DiskANN result sets prove that source data or authorization changed?
+50. Can an API-supported NoCluster conversion install a missing RediSearch module after creation?
+
+
 ### Answer explanations
 
 1. Choose App Service for a managed web API; Container Apps for revision/event-scaled containers; AKS for Kubernetes/GPU/platform control; Functions for supported event/HTTP code. Justify networking, identity, scale and operational ownership.
@@ -880,12 +893,14 @@ These are original prompts, not recalled exam questions. Answer with requirement
 47. Consumer reference/SDK caches have independent refresh and pinned versions remain pinned. Example 5 can leave a 23h50 failure window; verify adoption before revoking the old credential.
 48. Each retained row represents its sampling weight: `90 × 10 + 10 = 910`. Weighted failures are about 1.10%; raw sample counts and missing traces cannot be treated as full-population evidence.
 
+49. No. Independently built approximate indexes can differ by replica. Keep query/model/source versions and authorization fixed; evaluate recall, freshness, latency and RU separately.
+50. No. Policy conversion and module installation are different capabilities; the documented create-time module requirement still applies, and the support conflict remains unresolved.
 
 ---
 
 ## 9. Final readiness checklist
 
-- [ ] I can map every May 5, 2026 objective to a section, lab and evidence artifact.
+- [ ] I can map all 27 October 7, 2026 detailed objectives to a section, lab and evidence artifact, and explain the unresolved official data-domain weight discrepancy.
 - [ ] I can build, version, store, authenticate, scan and run immutable images with ACR/Tasks.
 - [ ] I can configure and troubleshoot App Service custom containers and runtime settings/secrets.
 - [ ] I can deploy Container Apps environments/apps/revisions, traffic and KEDA scaling.
@@ -915,19 +930,31 @@ This is **not a complete list**, and it is not a recommendation to consume every
 | [Official AI-200 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-200) | Public | 30–60 min | Authoritative objectives, weights and lifecycle |
 | [AI-200T00 Microsoft Learn course](https://learn.microsoft.com/en-us/training/courses/ai-200t00) | Public self-study; paid instructor option | 5 instructor-led days; self-study budget 25–40 hours plus labs (editorial estimate) | 12 course languages; current extracted page does not expose a verifiable path/runtime total |
 | [Azure Architecture Center AI architecture](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/) | Public | 4–12 hours selectively (estimate) | Production tradeoffs, reliability and service composition |
-| [Microsoft Azure samples](https://github.com/Azure-Samples) | Public | 8–20 hours selectively (estimate) | Current SDK and deployable examples; verify maintenance and security before reuse |
+| [RAG on PostgreSQL sample](https://github.com/Azure-Samples/rag-postgres-openai-python) | Public MIT repository; Azure deployment may cost | About 3–6 hours for selected reading and a design worksheet (editorial estimate); deployment adds time | Specific Python/PostgreSQL RAG implementation; inspect identity, versions, costs and cleanup before reuse; no deployment verified |
 | [Microsoft exam sandbox](https://aka.ms/examdemo) | Public | 20–30 min | Interface familiarity; no technical questions |
 
-Microsoft's credential page explicitly said no AI-200 Practice Assessment was available on September 28, 2026. Recheck rather than substituting an assessment for a different exam.
+### Target the data-service objectives
+
+| Resource | Access | Estimated time and scope |
+|---|---|---|
+| [Develop AI solutions with Azure Cosmos DB for NoSQL](https://learn.microsoft.com/en-us/training/paths/develop-ai-solutions-azure-cosmos-db/) | Free public reading; Azure exercise requirements separate | About 3–5 hours for three modules and notes (editorial estimate); SDK/data operations, indexing and vector search |
+| [Develop AI solutions with Azure Database for PostgreSQL](https://learn.microsoft.com/en-us/training/paths/develop-ai-solutions-azure-database-postgresql/) | Free public reading; database access for execution | About 4–6 hours for three modules and query-plan notes (editorial estimate); relational data, vectors and tuning |
+| [Enhance AI solutions with Azure Managed Redis](https://learn.microsoft.com/en-us/training/paths/enhance-ai-solutions-azure-managed-redis/) | Free public reading; service costs and module prerequisites separate | About 2–3 hours for selected data/vector modules (editorial estimate); its Streams/pub-sub module is **Related item:** adjacent context, not a Service Bus substitute |
+| [Managed Redis vector-search overview](https://learn.microsoft.com/en-us/azure/redis/overview-vector-similarity) | Public product documentation | About 20–40 minutes for reading and a configuration table (editorial estimate); verify exact module/client/index requirements |
+| [Managed Redis semantic-cache tutorial](https://learn.microsoft.com/en-us/azure/redis/tutorial-semantic-cache) | Public reading; product execution may cost | About 45–90 minutes for reading and a cache-boundary worksheet (editorial estimate); add tenant, source/model version, threshold and TTL tests |
+
+Path descriptions and selected module pages were inspected, not every lesson or exercise. Use the PostgreSQL repository's README, retrieval flow and monitoring notes to trace source → query → authorized retrieval → response → telemetry. Add your own negative cases for stale source versions, wrong-tenant access and absent documents. The MIT license permits reuse under its terms; it does not establish production security or current dependency compatibility. No repository deployment, load test or cloud exercise was executed. These resources do not resolve the official domain-weight or Redis conversion-document conflicts.
+
+Microsoft's credential page explicitly said no AI-200 Practice Assessment was available on September 28, 2026. That observation is historical: on October 28 the [official study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-200) advertises one through AI Skills Navigator with sign-in. Actual assessment launch and content were not verified; do not substitute an assessment for a different exam.
 
 ### Courses and video
 
 | Resource | Access | Estimated time | Best use and freshness note |
 |---|---|---:|---|
-| [O'Reilly Azure AI Cloud Developer Associate AI-200 Crash Course](https://www.oreilly.com/live-events/azure-ai-cloud-developer-associate-ai-200-crash-course/0642572385149/0642572385132/) | Paid subscription/live event | 4-hour event window; agenda totals 240 min before separately listed breaks; October 1, 2026 | Blueprint-wide live review with Reza Salehi; upcoming after this guide's validation date, so verify schedule/recording |
-| [Udemy AI-200 Complete Course by Luke Ginn](https://www.udemy.com/course/ai-200-azure-ai-cloud-developer-associate-complete-course/) | Paid; price varies | 21h19 / 55 lectures / 13 sections (indexed outline) | Updated August 2026, broad hands-on coverage; includes adjacent agent content, so map to blueprint |
-| [Udemy AI-200 Exam Prep by Kuljot Singh Bakshi](https://www.udemy.com/course/azure-ai-cloud-developer/) | Paid; price varies | 18h5 / 135 lectures / 15 sections (indexed outline) | Updated June 2026, objective-oriented demos and labs |
-| [Udemy AI-200 course by Scott Duffy](https://www.udemy.com/course/ai200-azure/) | Paid; price varies | 3h54 / 29 lectures / 11 sections (indexed outline) | Concise overview updated May 2026; supplement with implementation labs |
+| [O'Reilly Azure AI Cloud Developer Associate AI-200 Crash Course](https://www.oreilly.com/live-events/azure-ai-cloud-developer-associate-ai-200-crash-course/0642572385149/0642572385132/) | Paid subscription/live event | 4-hour event window; agenda totals 240 min before separately listed breaks; October 1, 2026 | Historical October 1 event listing with Reza Salehi; delivery and recording access were not verified |
+| [Udemy AI-200 Complete Course by Luke Ginn](https://www.udemy.com/course/ai-200-azure-ai-cloud-developer-associate-complete-course/) | Paid; price varies | 21h43 / 56 lectures / 13 sections (public listing) | Updated October 2026, broad advertised hands-on coverage; includes adjacent agent content, so map to blueprint |
+| [Udemy AI-200 Exam Prep by Kuljot Singh Bakshi](https://www.udemy.com/course/azure-ai-cloud-developer/) | Paid; price varies | 18h5 / 135 lectures / 16 sections (public listing) | Updated September 2026; advertised objective-oriented demos and labs |
+| [Udemy AI-200 course by Scott Duffy](https://www.udemy.com/course/ai200-azure/) | Paid; price varies | 3h54 / 30 lectures / 11 sections (public listing) | Concise overview updated May 2026; supplement with implementation labs |
 | [Microsoft Reactor YouTube](https://www.youtube.com/@MicrosoftReactor) | Public | 3–10 hours selectively (estimate) | Search current Container Apps, Cosmos vector, PostgreSQL/pgvector, Redis, eventing and observability sessions |
 | [John Savill Azure Master Class repository](https://github.com/johnthebrit/AzureMasterClass) | Public | 3–8 hours selectively (estimate) | Broad Azure platform/network/identity architecture and whiteboards; not a complete AI-200 path and may predate current vector/Managed Redis objectives |
 
@@ -937,7 +964,7 @@ A bounded September 28 search did not identify a dedicated current AI-200 Plural
 
 | Resource | Access | Estimated time | Best use and caution |
 |---|---|---:|---|
-| [AI-200 Practice Assessment status on credential page](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-cloud-developer-associate/) | Public status; assessment unavailable when checked | Recheck in 1–2 min | Use the official assessment first if Microsoft later publishes it |
+| [AI-200 Practice Assessment listing on official study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-200) | Public listing; AI Skills Navigator sign-in; assessment not opened | Recheck in 1–2 min; assessment duration unverified | Current October 28 listing supersedes the historical September unavailability observation |
 | [Udemy AI-200 practice tests by Scott Duffy](https://www.udemy.com/course/ai200-tests/) | Paid; price varies | Four 25-question tests plus explanation review; 3–6 hours (estimate) | New third-party practice; verify explanations against current Microsoft docs and reject live-question claims |
 | [Whizlabs AI-200 catalog](https://www.whizlabs.com/microsoft-azure-ai-cloud-developer-associate/) | Paid product; public title shell | Duration/question count unverified | Listing found; inspect current syllabus/sample explanations before selecting |
 | This guide's ten labs | Azure access; costs vary | 28–50 hours for cloud work plus 2–4 hours for offline artifacts (estimates) | End-to-end build, failure, identity, replay, observability and recovery proof |
@@ -945,16 +972,16 @@ A bounded September 28 search did not identify a dedicated current AI-200 Plural
 
 The [Whizlabs AI-200 catalog page](https://www.whizlabs.com/microsoft-azure-ai-cloud-developer-associate/) now exists, correcting the previous missing-product note. It exposed only a title shell; question count, lessons, labs and coverage remain unverified. A bounded search did not identify a dedicated MeasureUp product; recheck rather than treating this as proof of absence.
 
-Direct access to all four Udemy listings was blocked; the displayed metadata above comes from indexed public outlines checked September 28. Paid content, coverage, question originality and claimed exam difficulty were not evaluated. Scott Duffy's practice listing shows four 25-question sets, updated August 2026, but its claimed August 28 exam update is not corroborated by the official May 5 baseline. Luke Ginn's indexed outline still labels some walkthroughs as forthcoming. O'Reilly's event is future; attendance/recording was not verified. The older Learn total of nine paths/32h4 was not reproduced from the current page and is no longer presented as current.
+September 28 direct automation was blocked for all four Udemy listings. Their public landing bodies were readable in the October 28 browser review, supporting the updated counts/dates above; automated blocked results remain separate. Paid lessons, assessment content, question originality, practical accuracy and difficulty were not evaluated. The practice listing still advertises four 25-question sets and an August update; its claimed August exam revision is not official evidence for the current October 7 outline. O'Reilly's earlier October 1 event listing is historical; current exact delivery dates, attendance and recording access remain unverified. The earlier nine-path/32h4 Learn total is not presented as a newly verified runtime.
 
 ### A practical study sequence
 
-1. Map the official blueprint to one deployable architecture and record the currently unavailable Practice Assessment.
+1. Map the current official blueprint to one deployable architecture and check the advertised Practice Assessment's access requirements.
 2. Complete the Microsoft Learn paths or one current structured course; do not stack passive courses.
 3. Build Labs 1–3 until container deployment, identity, rollout, scaling and diagnosis are routine.
 4. Build Labs 4–6 and compare Cosmos, PostgreSQL and Redis using the same corpus/SLO evidence.
 5. Build Labs 7–8 and prove duplicate, retry, DLQ, rotation, distributed trace, KQL and reconciliation behavior; complete Labs 9–10 as review artifacts.
-6. If an official Practice Assessment appears, use it once as a diagnostic; remediate by objective and lab.
+6. If you can access the advertised official Practice Assessment, use it once as a diagnostic; remediate by objective and lab.
 7. Recheck the blueprint, credential page, SDK/service limits, vector/index support, course schedule and Azure Managed Redis transition immediately before the exam.
 
 ---

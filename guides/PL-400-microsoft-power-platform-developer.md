@@ -5,18 +5,20 @@ official_blueprint: https://learn.microsoft.com/en-us/credentials/certifications
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: source-validated
-last_verified: 2026-09-27
+review_status: review-required
+last_verified: 2026-10-28
 upcoming_change_status: retirement-announced
-upcoming_change_checked: 2026-09-27
+upcoming_change_checked: 2026-10-28
 ---
 
 # PL-400 Microsoft Power Platform Developer Study Guide
 
+> **REFRESH IN PROGRESS — REVIEW REQUIRED (October 28, 2026).** The official objective page differs from the accepted teaching baseline. Detailed coverage reconciliation is pending; use the linked official blueprint for current scope. Saved objective snapshots and historical full-review dates remain unchanged.
+
 > **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The complete guide, retained March 19 baseline and 88 published October replacement objectives were reviewed on September 27, 2026. See the [deep-review report](../docs/research/2026-09-27-pl-400-deep-review.md). It may still contain errors or become outdated. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#pl-400-coverage-record). The [official PL-400 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-400) is authoritative.
 
 **Current baseline:** Skills measured as of March 19, 2026<br>
-**Upcoming exam transition (rechecked September 27, 2026):** AB-400 begins October 16, 2026. PL-400 registration closes October 16; previously registered candidates can take PL-400 through October 30. See the [official transition notice](https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate/) and [AB-400 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-400). The live PL-400 study-guide URL now displays October 16 replacement scope; that does not change the accepted March baseline early. Sections 1–6 retain PL-400 preparation, while Section 7 and the transition map identify additional AB-400 work.<br>
+**Exam transition — VERIFY CURRENT (October 28, 2026):** PL-400 registration closed October 16. Existing registrations can still schedule/take PL-400 through October 30. AB-400 is available for new registrations. The [credential notice](https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate/) and [AB-400 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-400) define the transition. This guide retains its historical March PL-400 teaching baseline and is not a completed AB-400 guide. The October replacement outline is no longer future solely because the earlier review occurred in September.<br>
 **Official source:** [PL-400 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-400)
 
 ## How to use this guide
@@ -48,7 +50,7 @@ The [AB-400 blueprint](https://learn.microsoft.com/en-us/credentials/certificati
 | Extending the platform | 35–40% | Reuse plug-ins, automation and service boundaries; study agent integration and current platform extension points |
 | Integrations | 10–15% | Reuse identity, API, event and synchronization reasoning; recheck the complete replacement objective list |
 
-Original design exercise: extend a customer-service solution with an assistant that proposes a case update. Identify the component allowed to suggest text and the component responsible for validating and committing a record change. Specify authorization, schema checks, idempotency, timeout handling and audit evidence; exercise a duplicate request and a rejected update. Explain why plausible generated text cannot substitute for transaction validation. Map the resulting design to the future blueprint before treating this PL-400 guide as sufficient AB-400 preparation.
+Original design exercise: extend a customer-service solution with an assistant that proposes a case update. Identify the component allowed to suggest text and the component responsible for validating and committing a record change. Specify authorization, schema checks, idempotency, timeout handling and audit evidence; exercise a duplicate request and a rejected update. Explain why plausible generated text cannot substitute for transaction validation. Map the resulting design to the AB-400 blueprint before treating this PL-400 guide as sufficient AB-400 preparation.
 
 ## Objective map
 
@@ -444,6 +446,15 @@ In a disposable environment or tabletop, design a code app with Dataverse data, 
 44. **Does disabling a CSP directive with an empty list deny all sources?** No; it omits that directive. Inspect fallback policy and test actual enforcement.
 
 ## Places to learn
+
+### October 28 learning-resource check
+
+Additional options and access updates; choose relevant resources rather than consuming every route. New course availability, class delivery and licensing are **VERIFY CURRENT**. Published days describe instructor-led scope, not measured self-study time.
+
+| Resource | Access | Estimated time |
+|---|---|---|
+| [AB-400T00 successor training](https://learn.microsoft.com/en-us/training/courses/ab-400t00) | Public outline; class/provider access may be paid | **3 published days**; adjacent AB-400 preparation after PL-400T00 courseware retirement on October 30; not proof of identical exam coverage |
+
 
 This is a curated starting point, **not a complete list**, and it is not meant to be consumed in full. Choose one current primary path, implement the ten labs or equivalent work, and use other resources only to close measured gaps. Reconcile every resource with the March 19, 2026 blueprint; older courses can still teach fundamentals but may use prior weights, deprecated tooling, or objectives that have moved.
 

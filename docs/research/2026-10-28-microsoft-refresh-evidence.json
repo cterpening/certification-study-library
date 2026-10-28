@@ -1,0 +1,3050 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-10-28",
+  "scope": {
+    "vendor_ids": [
+      "microsoft",
+      "microsoft-office"
+    ],
+    "guide_count": 55,
+    "first_wave": [
+      "AZ-800",
+      "AZ-801",
+      "MS-102",
+      "AB-210",
+      "AB-650",
+      "AI-500",
+      "PL-400",
+      "AB-100",
+      "AB-900",
+      "MD-102"
+    ],
+    "source_health_scope": "2520 registered sources in the pre-repair scoped catalog; new sources checked separately"
+  },
+  "review_method": {
+    "researchers": [
+      "exam/lifecycle",
+      "technical",
+      "learning resources"
+    ],
+    "research_fork": "fresh contexts without editing conversation",
+    "coordinator_owns_shared_edits": true,
+    "independent_review": "bounded-review-complete; reported repairs verified; no remaining open findings within inspected scope",
+    "human_review": false,
+    "live_labs_executed": false
+  },
+  "monitor_summary": {
+    "changed": 26,
+    "unchanged": 29,
+    "objective_text_changes": 20,
+    "errors": [],
+    "accepted_snapshot_changes": false
+  },
+  "new_source_ids": [
+    "ms-refresh-backup-offboarding",
+    "ms-refresh-backup-security",
+    "ms-refresh-cowork-admin",
+    "ms-refresh-windows-message",
+    "ms-refresh-ntlm-hardening",
+    "ms-refresh-quick-recovery",
+    "ms-refresh-azure-ilr",
+    "ms-refresh-content-safety-release",
+    "ms-refresh-intune-baselines",
+    "ab-650-official-course",
+    "ab-400-official-course",
+    "md-102-official-foundation-lab"
+  ],
+  "new_source_link_evidence": {
+    "checked": 12,
+    "reachable": 12,
+    "blocked": 0,
+    "missing_or_error": 0
+  },
+  "technical_findings": [
+    {
+      "id": "TECH-01-backup-approval",
+      "affected_exams": [
+        "MS-102",
+        "AB-650"
+      ],
+      "sources": [
+        "backup-release",
+        "backup-offboarding"
+      ],
+      "confidence": "Confirmed by current first-party procedure; implementation not run",
+      "action": "apply-bounded-note",
+      "guide_locations": {
+        "MS-102": "Section 1, Worked example 1, after offboarding/append-only explanation (around lines 112-114)",
+        "AB-650": "Backup scope, recovery points and connectivity evidence (after recovery-window paragraph)"
+      },
+      "observation": "October 1 product procedure adds request-specific approval to shorten selected offboarding items' grace period from 90 to seven days. This is distinct from the existing 30-day grace period for shortening a recovery window.",
+      "proposed_wording": "Confirmed; VERIFY CURRENT — October 28: Shortening selected offboarding items from 90 to seven days requires two approvals from approvers aged at least two days. With exactly two configured approvers, the requestor can count; with three or more, two other approvers must approve. A request expires after 30 days without quorum. This governs faster permanent deletion, not ordinary restore authorization or every Backup action. Undo is possible before purge; purge is irreversible.",
+      "objective_fit": "Backup administration/security; no change to published exam scope.",
+      "remaining_gap": "No tenant approval, role or purge behavior tested. Preserve second-year cadence gap."
+    },
+    {
+      "id": "TECH-02-backup-operational-logs",
+      "affected_exams": [
+        "MS-102",
+        "AB-650"
+      ],
+      "sources": [
+        "backup-release",
+        "backup-security"
+      ],
+      "confidence": "Confirmed by current first-party procedure; implementation not run",
+      "action": "apply-bounded-note",
+      "guide_locations": {
+        "MS-102": "Section 1 Backup operational evidence, near offboarding paragraph",
+        "AB-650": "Backup scope, recovery points and connectivity evidence"
+      },
+      "observation": "October 13 Activity Logs supply operational policy/restore event visibility; they must be distinguished from compliance Audit.",
+      "proposed_wording": "Confirmed; VERIFY CURRENT — October 28: Backup Activity Logs show policy/restore operations, including failures and partial success, and support filtered CSV export. Their retention is a fixed 365 days; read-only operations are omitted. Workload-admin visibility follows role scope. Use these logs for troubleshooting and Microsoft Purview Audit for the compliance audit record; an empty operational view does not prove no one accessed the service.",
+      "objective_fit": "Backup administration, reporting and evidence.",
+      "remaining_gap": "No export or comparison with tenant Purview records performed."
+    },
+    {
+      "id": "TECH-03-cowork-access",
+      "affected_exams": [
+        "AB-650"
+      ],
+      "sources": [
+        "cowork-admin"
+      ],
+      "confidence": "Confirmed by October 27 first-party administration article",
+      "action": "apply-bounded-note-and-canonical-source-alias",
+      "guide_locations": {
+        "AB-650": "Copilot controls/Cowork administration paragraph (around line 197)"
+      },
+      "observation": "New canonical /en-us/copilot path and explicit spending-policy access contract sharpen the existing general billing-controls note.",
+      "proposed_wording": "Confirmed; VERIFY CURRENT — October 28: A spending policy that includes a user and selects Cowork grants access, even with a tiny credit limit. Remove the user from every Cowork-selecting policy to deny access. Discoverability and allowed model families are separate controls: disabling Anthropic does not deny Cowork when another model remains. The old All Agents Cowork entry no longer controls access. Inspect effective policies rather than treating a budget or model toggle as an access block.",
+      "objective_fit": "Configure Copilot settings, spending controls and safe access management.",
+      "remaining_gap": "Tenant policy precedence and actual access not tested. Existing automated-task identity/approval caveat remains correct."
+    },
+    {
+      "id": "TECH-04-ntlm-sso-hardening",
+      "affected_exams": [
+        "AZ-800",
+        "AZ-801",
+        "MD-102"
+      ],
+      "sources": [
+        "windows-message",
+        "ntlm-hardening"
+      ],
+      "confidence": "Confirmed by current Microsoft Support implementation article",
+      "action": "apply-bounded-related-item",
+      "guide_locations": {
+        "AZ-800": "Authentication/network troubleshooting or VPN/NPS discussion",
+        "AZ-801": "Credential protection/authentication troubleshooting",
+        "MD-102": "Update design across platforms or authentication/device troubleshooting"
+      },
+      "observation": "October 13 security updates change absent BlockNtlmv1SSO behavior from audit to enforcement on applicable systems with Credential Guard disabled. This can break MS-CHAPv2 SSO, without meaning every NTLM or manual-auth path stopped.",
+      "proposed_wording": "Related item; Confirmed; VERIFY CURRENT — October 28: On applicable Windows 11/Server 2025 systems with Credential Guard disabled, October 13 updates make an absent BlockNtlmv1SSO value enforce blocking of NTLMv1-derived SSO credentials. Check Wi-Fi/Ethernet/VPN MS-CHAPv2 dependencies and NTLM Operational events 4024/4025. An absent key no longer means audit-only, and manual credential entry may still work. Migrate toward supported certificate authentication; any temporary audit exception needs a scoped owner and removal date.",
+      "objective_fit": "Authentication, network access, security hardening and update troubleshooting; adjacent dated implementation context rather than extra exam objective.",
+      "remaining_gap": "No device policy, registry modification, network request or authentication flow executed. Check exact OS/build and policy state before applying this model."
+    },
+    {
+      "id": "TECH-05-server-quick-recovery",
+      "affected_exams": [
+        "AZ-801",
+        "AZ-800"
+      ],
+      "sources": [
+        "windows-message",
+        "quick-recovery"
+      ],
+      "confidence": "Confirmed by current product article and October 19 channel entry",
+      "action": "apply-bounded-related-item",
+      "guide_locations": {
+        "AZ-801": "Monitor/troubleshoot startup failures or disaster-recovery mechanisms",
+        "AZ-800": "Windows Server operating-system/recovery operations; optional brief cross-reference"
+      },
+      "observation": "Quick machine recovery extends to Server 2025 with October security updates; new feature does not replace backups or guarantee a boot fix.",
+      "proposed_wording": "Related item; Confirmed; VERIFY CURRENT — October 28: Server 2025 quick machine recovery can use connected WinRE to seek Windows Update remediations for widespread boot failures. Cloud remediation is disabled by default on Server 2025/enterprise-managed devices; inspect policy and recovery-network connectivity. Current guidance supports wired or WPA/WPA2 password networks and Server 2025 GPO configuration. It is best effort, not a backup restore. The documented simulated test mode is limited to eligible Windows Insider client devices; do not assume that mode is supported on a server lab.",
+      "objective_fit": "Startup/recovery troubleshooting and operational depth, not a new blueprint mandate.",
+      "remaining_gap": "No server boot, WinRE, GPO, remediation approval or test mode executed."
+    },
+    {
+      "id": "TECH-06-azure-ilr-disk-support",
+      "affected_exams": [
+        "AZ-801"
+      ],
+      "sources": [
+        "azure-backup-release",
+        "azure-ilr"
+      ],
+      "confidence": "Confirmed by October 22 product procedure",
+      "action": "apply-bounded-note",
+      "guide_locations": {
+        "AZ-801": "Implement disaster recovery, restore Azure VMs/files, after mechanism selection or VM-restore options"
+      },
+      "observation": "October releases broaden item-level recovery to Premium SSD v2/Ultra, while retaining encrypted-VM file-recovery exclusion and recovery-host requirements.",
+      "proposed_wording": "Confirmed; VERIFY CURRENT — October 28: Azure VM item-level recovery now includes Premium SSD v2 and Ultra disks with 512-byte or 4-KB logical sectors, including supported mixed-disk VMs. Select a compatible recovery machine; encrypted-VM file recovery remains unsupported. The generated elevated recovery session mounts a read-only point and expires after 12 hours; unmount promptly when finished. Whole-VM/disk restore and selective file recovery have different prerequisites and are not interchangeable guarantees.",
+      "objective_fit": "Azure Backup recovery choice and validation.",
+      "remaining_gap": "No script generation, mount, file copy, cleanup, sector-size or encryption combination tested."
+    },
+    {
+      "id": "TECH-07-content-safety-regression",
+      "affected_exams": [
+        "AI-500"
+      ],
+      "sources": [
+        "content-safety-release"
+      ],
+      "confidence": "Confirmed published staged-rollout notice; no measured efficacy claim",
+      "action": "apply-bounded-note",
+      "guide_locations": {
+        "AI-500": "Security/responsible AI, content safety and evaluation regression gates"
+      },
+      "observation": "October classifier/Prompt Shields update is initially available in Spain Central and can change classifications or blocking across regions during rollout; it explicitly excludes several other safeguards.",
+      "proposed_wording": "Confirmed; VERIFY CURRENT — October 28: The October Content Safety update changes text-harm classification and Prompt Shields detection, initially in Spain Central with staged expansion. Reevaluate representative multilingual benign and hostile cases and record region, filter configuration and outcomes; behavior may temporarily differ across regions. This release does not update PII detection, task adherence, network egress, Spotlighting, blocklists, protected-material or image-safety controls. A classifier refresh does not prove that all reported failures are fixed or that tool authorization is enforced.",
+      "objective_fit": "Safety controls, evaluation and ongoing operation; supplementary operational depth.",
+      "remaining_gap": "No canary deployment or regression suite run. Regional completion and actual filtering remain current-verification items."
+    },
+    {
+      "id": "TECH-08-intune-baseline-release",
+      "affected_exams": [
+        "MD-102"
+      ],
+      "sources": [
+        "intune-release",
+        "intune-baselines"
+      ],
+      "confidence": "Confirmed by release feed and baseline-version procedure",
+      "action": "apply-bounded-note",
+      "guide_locations": {
+        "MD-102": "Endpoint security policy stack/security baselines (around line 236), plus dated living-guide watch"
+      },
+      "observation": "October 5 feed announces 26H2 baseline; older existing profiles do not automatically upgrade. The detailed procedure distinguishes newer side-by-side instances from old-format behavior.",
+      "proposed_wording": "Confirmed; VERIFY CURRENT — October 28: Intune's Windows 11 26H2 security baseline is available; existing profiles do not automatically adopt it. For May 2023-or-later profiles, updating creates a new instance with a keep/discard-customizations choice; review settings and assign/test deliberately before retiring the old assignment. Do not assume the copy is deployed or every planned 26H2 setting is included. The October release excludes Configure NetBIOS settings pending supported in-market availability.",
+      "objective_fit": "Endpoint security baselines, assignment, update/change management.",
+      "remaining_gap": "No profile update, assignment or resultant-setting verification performed. Earlier-format baseline exceptions remain in the procedure."
+    },
+    {
+      "id": "TECH-09-harness-feature-contract",
+      "affected_exams": [
+        "AB-100"
+      ],
+      "sources": [
+        "harness"
+      ],
+      "confidence": "Confirmed current capability table; preview features remain separately labeled",
+      "action": "optional-bounded-note",
+      "guide_locations": {
+        "AB-100": "Choose the runtime first, around line 451; Environment design around line 776"
+      },
+      "observation": "October 20 comparison makes supported ALM and non-transferability explicit, while selected knowledge/auth/channel differences remain material to architecture.",
+      "proposed_wording": "Confirmed; VERIFY CURRENT — October 28: Current GitHub Copilot harness agents support solutions/ALM, but existing agents cannot be transferred between standard and GitHub Copilot harnesses. Recheck capability fit before migration: the table still excludes Azure AI Search knowledge, manual/custom authentication and several publication channels for the GitHub Copilot harness. The harness is Copilot Studio technology; its name does not mean agent customer data is processed by the GitHub Copilot service.",
+      "objective_fit": "Platform/runtime selection and deployment architecture.",
+      "remaining_gap": "Does not establish the custom SharePoint metadata-filter schema as a public API, or prove migration/ALM behavior in a tenant. Existing CAT blog boundary must remain."
+    }
+  ],
+  "retained_gaps": [
+    {
+      "id": "TECH-N01",
+      "affected_exams": [
+        "MS-102",
+        "AB-650"
+      ],
+      "sources": [
+        "backup-overview"
+      ],
+      "confidence": "Confirmed documentation mismatch; not confirmed service limitation",
+      "recommendation": "Retain open second-year cadence caveat. Recovery windows include two years, while recovery-point rows still stop at 52 weeks. Reopening the overview did not close the September gap; do not promote either guide to a clean complete source-validation state from these additions."
+    },
+    {
+      "id": "TECH-N02",
+      "affected_exams": [
+        "AB-210"
+      ],
+      "sources": [
+        "sales-knowledge",
+        "close-config",
+        "close-manage"
+      ],
+      "confidence": "Confirmed current official-source contradictions",
+      "recommendation": "Retain both contradictions, optionally date the recheck October 28. Custom-fields section still denies support immediately before instructions to add them. Close setup still says in-flight records continue, while management says in-process records stop. Preserve a controlled pending-run/outbound-behavior validation boundary, including during retirement; do not infer containment."
+    },
+    {
+      "id": "TECH-N03",
+      "affected_exams": [
+        "AZ-800"
+      ],
+      "sources": [
+        "vm-signin"
+      ],
+      "confidence": "Confirmed current official-source contradiction",
+      "recommendation": "Retain Conditional Access conflict. Current article excludes CA for Windows Server Entra-join extension while elsewhere describing enforcement on Server VMs. Its narrow device-configuration caveat does not eliminate the broader conflicting sentence. Do not silently select permissive wording."
+    },
+    {
+      "id": "TECH-N04",
+      "affected_exams": [
+        "AZ-800"
+      ],
+      "sources": [],
+      "confidence": "Bounded negative discovery only",
+      "recommendation": "Searches for site:learn.microsoft.com SSH Direct hvc and SSH Direct Windows Server 2025 2026 returned exam-objective material, not a dedicated current implementation/support matrix. No new end-to-end official SSH Direct contract found. Retain provisional model and historical artifact/version gaps; absence of a search result is not proof feature is unsupported."
+    },
+    {
+      "id": "TECH-N05",
+      "affected_exams": [
+        "AZ-801"
+      ],
+      "sources": [
+        "map-retirement"
+      ],
+      "confidence": "Confirmed current first-party scope",
+      "recommendation": "Existing Map/Dependency Agent retirement distinction remains correct: June 30, 2028 retirement; AMA-based performance monitoring unaffected; historical data follows workspace retention. No wording repair needed from this recheck."
+    },
+    {
+      "id": "TECH-N06",
+      "affected_exams": [
+        "PL-400"
+      ],
+      "sources": [
+        "functions",
+        "roadmap"
+      ],
+      "confidence": "Confirmed current preview label; roadmap item status not independently verified",
+      "recommendation": "Keep server-side Dataverse functions preview/production caveat. Current page still warns preview is not for production. Canonical AI at Work roadmap opened, but no specific PL-400-related item was semantically assessed; do not claim complete release-channel coverage or widen exam scope from roadmap."
+    },
+    {
+      "id": "TECH-N07",
+      "affected_exams": [
+        "AI-500"
+      ],
+      "sources": [
+        "hosted-migration",
+        "classic-migration",
+        "router-release"
+      ],
+      "confidence": "Confirmed published contracts, no runtime reproduction",
+      "recommendation": "Existing hosted-agent/Responses migration boundaries remain supported. Router pool changed in October; preserve generic version/region/compatibility verification instead of memorizing model counts. Session affinity and detailed routing metadata remain separately preview. No migration or benchmark was executed."
+    },
+    {
+      "id": "TECH-N08",
+      "affected_exams": [
+        "AB-900"
+      ],
+      "sources": [
+        "scheduled-prompts",
+        "copilot-release"
+      ],
+      "confidence": "Confirmed scheduled-prompt behavior; release feed is announcement evidence",
+      "recommendation": "Existing disable-connected-experiences caveat remains essential: old schedules can continue. Current article still distinguishes legacy Power Automate prompts. October 27 feed announces MCP connector administration; use as a dated discovery/rollout reminder only unless the matching product procedure is reviewed. Roadmap item 501585 was not independently recovered from roadmap text; no estimated date/status claim recommended."
+    },
+    {
+      "id": "TECH-N09",
+      "affected_exams": [
+        "MS-102"
+      ],
+      "sources": [
+        "connect-versions"
+      ],
+      "confidence": "Confirmed support table, no service-state observation",
+      "recommendation": "Change any still-future October 23 2.5.79.0 end-of-support wording to a passed-date note, retaining newest supported version and April 7, 2027 app-authentication requirement as separate checks. Do not say every old installation stopped syncing on its support date."
+    },
+    {
+      "id": "TECH-N10",
+      "affected_exams": [
+        "AB-650"
+      ],
+      "sources": [
+        "risk-policy"
+      ],
+      "confidence": "Confirmed published October 1 date; tenant enforcement unobserved",
+      "recommendation": "October 1 date has passed, but source still uses future-tense notice. Say the published retirement date has passed and verify actual legacy-policy state; preserve current migration sequence. Avoid claiming live tenant shutdown was observed."
+    },
+    {
+      "id": "TECH-N11",
+      "affected_exams": [
+        "MD-102"
+      ],
+      "sources": [
+        "intune-release",
+        "intune-ime"
+      ],
+      "confidence": "Confirmed release-feed and procedure distinctions",
+      "recommendation": "September 28 feed entries are no longer future relative to October 28; update dated watch wording with staged-rollout caveat. Faster Win32 notifications/after-ESP checks do not imply instant installation or remove independent normal IME polling, prerequisites, detection and telemetry."
+    }
+  ],
+  "learning_resources": [
+    {
+      "title": "Course AB-650T00-A: Administer Microsoft 365 and AI services",
+      "url": "https://learn.microsoft.com/en-us/training/courses/ab-650t00",
+      "affected_exams": [
+        "AB-650",
+        "MS-102"
+      ],
+      "catalog_match": null,
+      "recommendation": "promote",
+      "duration": {
+        "value": "3 days",
+        "kind": "publisher course duration",
+        "basis": "Exact opened course page At a glance"
+      },
+      "access": "Public description and linked learning material; instructor-led delivery normally booked with a provider and may be paid. This does not promise a free class or lab tenant.",
+      "limits": "Overview/syllabus only; no instructor-led occurrence, lab supply or complete lesson accuracy established. Agent identity and registry behavior must be corroborated with product documentation.",
+      "currentness": "Exact opened page states availability 11/13/2026. Search-index excerpts still state 10/30/2026. Both are future relative to this research date; do not claim the course has already launched. Retirement catalog lists MS-102T00 retirement 11/30/2026 with AB-650T00 as replacement course."
+    },
+    {
+      "title": "Course AB-400T00-A: Extend Microsoft Power Platform Solutions with code and AI",
+      "url": "https://learn.microsoft.com/en-us/training/courses/ab-400t00",
+      "affected_exams": [
+        "PL-400"
+      ],
+      "catalog_match": null,
+      "recommendation": "promote",
+      "duration": {
+        "value": "3 days",
+        "kind": "publisher course duration",
+        "basis": "Exact opened page At a glance"
+      },
+      "access": "Public outline; instructor-led delivery may be paid. Course is explicitly aimed at AB-400, so label it a successor/adjacent training route in PL-400.",
+      "limits": "No complete AB-400/PL-400 objective comparison, individual lesson audit or delivery confirmation. Working knowledge includes JavaScript/TypeScript/JSON/Power Fx, C#/Python/HTML/YAML, REST, Azure, Foundry and Copilot Studio.",
+      "currentness": "Retirement catalog lists PL-400T00 retirement 10/30/2026 and replacement AB-400T00. Opened AB-400 page has an English advanced three-day course, code apps, Foundry and Copilot Studio integration."
+    },
+    {
+      "title": "Course AZ-802T00-A: Administer Windows Server",
+      "url": "https://learn.microsoft.com/en-us/training/courses/az-802t00",
+      "affected_exams": [
+        "AZ-800",
+        "AZ-801"
+      ],
+      "catalog_match": "az-802-official-course",
+      "recommendation": "promote",
+      "duration": {
+        "value": "5 days",
+        "kind": "publisher course duration",
+        "basis": "Exact opened course page"
+      },
+      "access": "Public outline; a provider class and lab environment may incur cost.",
+      "limits": "The successor course is not evidence that old exams have identical scope. Individual lessons/labs not reviewed.",
+      "currentness": "Course retirement catalog lists AZ-800T00 and AZ-801T00 courseware retirement 09/30/2026 with this replacement. Exact current page lists Windows Admin Center, PowerShell, Azure Arc, Azure Monitor, Azure Update Manager and Defender for Cloud."
+    },
+    {
+      "title": "Course AB-900T00-A: Introduction to Microsoft 365 and AI administration",
+      "url": "https://learn.microsoft.com/en-us/training/courses/ab-900t00",
+      "affected_exams": [
+        "AB-900"
+      ],
+      "catalog_match": "microsoft-ab-900-course",
+      "recommendation": "promote",
+      "duration": {
+        "value": "1 day",
+        "kind": "publisher course duration",
+        "basis": "Exact course page At a glance; does not imply self-study runtime"
+      },
+      "access": "Public outline and linked modules; instructor-led attendance is a separate booking.",
+      "limits": "No per-unit review or completeness claim for the October AB-900 blueprint. Dynamic page hides per-path duration values in the direct representation.",
+      "currentness": "Current exact page title is Introduction to Microsoft 365 and AI administration; existing source title is Microsoft 365 Copilot and Agent Administration Fundamentals. Page describes beginning technical IT professionals and novice administrators."
+    },
+    {
+      "title": "Course AI-500T00-A: Design and implement multi-agent AI solutions",
+      "url": "https://learn.microsoft.com/en-us/training/courses/ai-500t00",
+      "affected_exams": [
+        "AI-500"
+      ],
+      "catalog_match": "ai-500-course",
+      "recommendation": "promote",
+      "duration": {
+        "value": "4 days",
+        "kind": "publisher course duration",
+        "basis": "Exact opened course page"
+      },
+      "access": "Public syllabus; a specific class occurrence and hosted lab entitlement were not verified.",
+      "limits": "Absence of a future-availability notice does not prove a particular class has run or can be booked. No lab or lesson completion.",
+      "currentness": "Current page has no September 30 future-availability notice in its overview. Existing source notes preserve a September 28 observation of September 30 availability; retain that history but add today's observation. Exam page now links this course."
+    },
+    {
+      "title": "AI Agents for Beginners — selected multi-agent and production lessons",
+      "url": "https://github.com/microsoft/ai-agents-for-beginners",
+      "affected_exams": [
+        "AI-500",
+        "AB-100"
+      ],
+      "catalog_match": "ab100-ai-agents-beginners",
+      "recommendation": "promote",
+      "duration": {
+        "value": "2–3 hours for selected reading plus an original design/measurement worksheet",
+        "kind": "editorial estimate",
+        "basis": "Two approximately 16 KB lessons plus scenario work; excludes notebook setup, execution and linked videos"
+      },
+      "access": "Reading needs no account; running examples may need GitHub/account/model or cloud resources and charges. No notebook executed.",
+      "limits": "Beginner explanations are not a production architecture guarantee. Lesson 8's general fault-tolerance/scalability advantages are conditional, and its generic multi-agent patterns are not a product-supported orchestration list. Lesson 10 includes an illustrative pass block, not proof of complete instrumentation. Preserve earlier catalog caveats on lesson 6. Notebook dependencies and all third-party links unreviewed.",
+      "currentness": "Current README advertises 18 lessons and lesson 10 explicitly discusses Microsoft Agent Framework/OpenTelemetry. No reliable per-lesson last-update date exposed by rendered GitHub pages; no claim of a pinned dependency audit."
+    },
+    {
+      "title": "Lab 01: Foundation — Identity, enrollment, and Autopilot",
+      "url": "https://github.com/MicrosoftLearning/MD-102T00-Microsoft-365-Endpoint-Administrator/blob/main/Instructions/Labs/Lab01-Foundation.md",
+      "affected_exams": [
+        "MD-102"
+      ],
+      "catalog_match": null,
+      "recommendation": "promote",
+      "duration": {
+        "value": "90 minutes plus environment preparation",
+        "kind": "publisher estimate plus explicit setup caveat",
+        "basis": "Lab front matter and Lab Duration section both say 90 minutes; preparation is an additional unmeasured dependency"
+      },
+      "access": "Public instructions do not include a free lab tenant. Lab assumes a prepared Contoso Microsoft 365 tenant, global-administrator lab credentials, four named VMs, existing users/licenses and internet access. Later labs require Intune Suite. MicrosoftLearning GitHub navigation support is limited to MCTs teaching the course, but the repository itself is public.",
+      "limits": "Only lab scenario, setup, relevant enrollment/RBAC sections and summary evaluated; not an exhaustive technical audit of all 1180 file lines. Trial duration/quantity/no-payment wording is volatile and was not verified against the current offer. Never copy the fictitious lab organization details into a real tenant. Directory rendering failed for the Labs folder, but the exact lab file opened successfully.",
+      "currentness": "Current public lab uses Entra terminology, Windows 11, Intune RBAC/scope tags and distinct enrollment profiles. Repo README describes frequent lab updates. Exact commit date was not exposed in rendered pages; no assertion of complete October 27 exam coverage."
+    },
+    {
+      "title": "Manage and secure Microsoft 365 AI services",
+      "url": "https://learn.microsoft.com/en-us/training/paths/manage-secure-microsoft-365-ai-services/",
+      "affected_exams": [
+        "AB-650"
+      ],
+      "catalog_match": "ab-650-path-ai-services",
+      "recommendation": "promote",
+      "duration": {
+        "value": "Keep approximately one study day and allow extra setup/lab time",
+        "kind": "editorial planning estimate; numerical publisher runtime not verified in direct render",
+        "basis": "Seven module descriptions and prerequisite-dependent exercises. Existing source notes say 8h27; indexed search now says 8h38, but direct path/module representations omit numeric runtimes. Do not silently replace the old exact number with the search excerpt."
+      },
+      "access": "Reading public; exact path prerequisite states Microsoft 365 E5 tenant, with E7 (Frontier Suite) preferred for Agent 365/Entra Suite lab licensing. Treat current licensing and availability as VERIFY CURRENT. Tenant/lab entitlement is not included simply because the training text is free.",
+      "limits": "Read path and module outline, not every lesson or exercise. Course prerequisites and licensing claims need product corroboration; no E5/E7 tenant tested.",
+      "currentness": "Exact current path contains a ten-unit Entra Agent ID module with separate Entra owner versus registry ownership, sponsor transfer workflows and Conditional Access. This is substantive current training discovery, not proof of every technical behavior described."
+    }
+  ],
+  "exams": [
+    {
+      "exam_code": "AI-103",
+      "guide_path": "guides/AI-103-developing-ai-apps-and-agents-on-azure.md",
+      "catalog_status_before": "active",
+      "catalog_status_after": "active",
+      "review_status_after": "source-validated",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "unchanged",
+      "objective_text_changed": false,
+      "live_skills_versions": [
+        "Skills measured as of April 16, 2026"
+      ],
+      "current_guide_sha256": "fb6157742114bdb27457bd6084afb1b23f3d6eac02bb9f1878ae05f69d321706",
+      "accepted_objective_sha256": "3fbf0ebd6b3d5e591d7354de47f8d87baaea121330a209e9104045447ac70f63",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-103",
+          "title": "Study guide for Exam AI-103: Developing AI Apps and Agents on Azure",
+          "state": "inspected",
+          "skills_headings": [
+            "Skills measured as of April 16, 2026"
+          ]
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-apps-and-agents-developer-associate/",
+          "title": "Microsoft Certified: Azure AI Apps and Agents Developer Associate",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "AB-100",
+      "guide_path": "guides/AB-100-agentic-ai-business-solutions-architect.md",
+      "catalog_status_before": "active",
+      "catalog_status_after": "active",
+      "review_status_after": "review-required",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "changed",
+      "objective_text_changed": true,
+      "live_skills_versions": [
+        "Skills measured as of November 16, 2026"
+      ],
+      "current_guide_sha256": "cea199f4b8e1e0f253582764cbd84d4a35fa3aac1f0c7b9b4614b22813a8b809",
+      "accepted_objective_sha256": "3736af21c41a6a8c785e5461d4ba25424a9e6b2205a3c10ae1d18589e16a61e2",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100",
+          "title": "Study guide for Exam AB-100: Agentic AI Business Solutions Architect",
+          "state": "inspected",
+          "skills_headings": [
+            "Skills measured as of November 16, 2026"
+          ]
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect/",
+          "title": "Microsoft Certified: Agentic AI Business Solutions Architect Expert",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "AZ-900",
+      "guide_path": "guides/AZ-900-microsoft-azure-fundamentals.md",
+      "catalog_status_before": "active",
+      "catalog_status_after": "active",
+      "review_status_after": "source-validated",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "unchanged",
+      "objective_text_changed": false,
+      "live_skills_versions": [
+        "Skills measured as of July 20, 2026"
+      ],
+      "current_guide_sha256": "f390616206b6788988d00e6f337bc339bef40778295fac471855c09e3869c3fd",
+      "accepted_objective_sha256": "8b4c89d325b3ce339eb881aa2dc4b251888e6d7a07d6351d81bcc2123b1c4449",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900",
+          "title": "Study guide for Exam AZ-900: Microsoft Azure Fundamentals",
+          "state": "inspected",
+          "skills_headings": [
+            "Skills measured as of July 20, 2026"
+          ]
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/",
+          "title": "Microsoft Certified: Azure Fundamentals",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "DP-900",
+      "guide_path": "guides/DP-900-microsoft-azure-data-fundamentals.md",
+      "catalog_status_before": "active",
+      "catalog_status_after": "active",
+      "review_status_after": "source-validated",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "unchanged",
+      "objective_text_changed": false,
+      "live_skills_versions": [
+        "Skills measured as of July 21, 2026"
+      ],
+      "current_guide_sha256": "3ab634df7d0d9db86be9f2d23da1014ac5ef05e6b701d7a5e494202774474a6e",
+      "accepted_objective_sha256": "7cef780d1a9e8e88b587fba89acb994985c4aedbd491710e814686ce5dc6559f",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-900",
+          "title": "Study guide for Exam DP-900: Microsoft Azure Data Fundamentals",
+          "state": "inspected",
+          "skills_headings": [
+            "Skills measured as of July 21, 2026"
+          ]
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-data-fundamentals/",
+          "title": "Microsoft Certified: Azure Data Fundamentals",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "PL-900",
+      "guide_path": "guides/PL-900-microsoft-power-platform-fundamentals.md",
+      "catalog_status_before": "active",
+      "catalog_status_after": "active",
+      "review_status_after": "source-validated",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "unchanged",
+      "objective_text_changed": false,
+      "live_skills_versions": [
+        "Skills measured as of July 24, 2026"
+      ],
+      "current_guide_sha256": "60180df612865c9cba379ffa3e6dfae25b7a6e84ce9ec0ef6481f77b9fbf31a5",
+      "accepted_objective_sha256": "959c63326efa3e74735cd2abc1cb28246d816506296b218428802240f9f99bd0",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-900",
+          "title": "Study guide for Exam PL-900: Microsoft Power Platform Fundamentals",
+          "state": "inspected",
+          "skills_headings": [
+            "Skills measured as of July 24, 2026"
+          ]
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-fundamentals/",
+          "title": "Microsoft Certified: Power Platform Fundamentals",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "SC-900",
+      "guide_path": "guides/SC-900-microsoft-security-compliance-identity-fundamentals.md",
+      "catalog_status_before": "active",
+      "catalog_status_after": "active",
+      "review_status_after": "review-required",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "changed",
+      "objective_text_changed": true,
+      "live_skills_versions": [
+        "Skills measured as of October 21, 2026"
+      ],
+      "current_guide_sha256": "1d76e9d219abf07492eaf7212e361f0ef97655db91f8092f7f21573799bc34c0",
+      "accepted_objective_sha256": "e2869853685f48f936c2833bda16c5065a629346c7f5d1c9cd5aa91f9d1a3b91",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900",
+          "title": "Study guide for Exam SC-900: Microsoft Security, Compliance, and Identity Fundamentals",
+          "state": "inspected",
+          "skills_headings": [
+            "Skills measured as of October 21, 2026"
+          ]
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/security-compliance-and-identity-fundamentals/",
+          "title": "Microsoft Certified: Security, Compliance, and Identity Fundamentals",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "AB-900",
+      "guide_path": "guides/AB-900-microsoft-365-copilot-agent-administration-fundamentals.md",
+      "catalog_status_before": "active",
+      "catalog_status_after": "active",
+      "review_status_after": "review-required",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "changed",
+      "objective_text_changed": true,
+      "live_skills_versions": [
+        "Skills measured as of October 14, 2026"
+      ],
+      "current_guide_sha256": "1267f5dcdddb8bd224e5220f59a229064eaf07234203f5623dfda3ef2cdd4517",
+      "accepted_objective_sha256": "8e38035a94d260856ff5c08899492597046213510e057128edd89d775d363b90",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-900",
+          "title": "Study guide for Exam AB-900: Microsoft 365 Copilot and Agent Administration Fundamentals",
+          "state": "inspected",
+          "skills_headings": [
+            "Skills measured as of October 14, 2026"
+          ]
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/copilot-and-agent-administration-fundamentals/",
+          "title": "Microsoft 365 Certified: Copilot and Agent Administration Fundamentals",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "AI-901",
+      "guide_path": "guides/AI-901-microsoft-azure-ai-fundamentals.md",
+      "catalog_status_before": "active",
+      "catalog_status_after": "active",
+      "review_status_after": "source-validated",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "unchanged",
+      "objective_text_changed": false,
+      "live_skills_versions": [
+        "Skills measured as of April 15, 2026"
+      ],
+      "current_guide_sha256": "15e19f3c7196a1011bb4f6eeb70595bf7a472354de842d5bba4f58dc859a14a0",
+      "accepted_objective_sha256": "8b1c05a7a2258d69e43d47d75c0adeae2a5a7660e12e4d46627014d1ff9bedd1",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-901",
+          "title": "Study guide for Exam AI-901: Microsoft Azure AI Fundamentals",
+          "state": "inspected",
+          "skills_headings": [
+            "Skills measured as of April 15, 2026"
+          ]
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/",
+          "title": "Microsoft Certified: Azure AI Fundamentals",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "AZ-104",
+      "guide_path": "guides/AZ-104-microsoft-azure-administrator.md",
+      "catalog_status_before": "active",
+      "catalog_status_after": "active",
+      "review_status_after": "source-validated",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "unchanged",
+      "objective_text_changed": false,
+      "live_skills_versions": [
+        "Skills measured as of April 17, 2026"
+      ],
+      "current_guide_sha256": "71c1ac653621e80e1a3262a1ce36d7162de548542ce1070d07968659b8b5abd2",
+      "accepted_objective_sha256": "7d2330fbafdd4981b54e6aa8f9ba371f0bbad1edf521fa8d2fa591e2bf8d2ae1",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104",
+          "title": "Study guide for Exam AZ-104: Microsoft Azure Administrator",
+          "state": "inspected",
+          "skills_headings": [
+            "Skills measured as of April 17, 2026"
+          ]
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/",
+          "title": "Microsoft Certified: Azure Administrator Associate",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "AZ-305",
+      "guide_path": "guides/AZ-305-designing-microsoft-azure-infrastructure-solutions.md",
+      "catalog_status_before": "active",
+      "catalog_status_after": "active",
+      "review_status_after": "source-validated",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "unchanged",
+      "objective_text_changed": false,
+      "live_skills_versions": [
+        "Skills measured as of April 17, 2026"
+      ],
+      "current_guide_sha256": "b1f6f924605d862556e950676cc2c7ab19a94a95e1fd4a62640a88605ff65214",
+      "accepted_objective_sha256": "7e5e8671b6ba67938e71f71261f92e0d9798f27ec94f79c75e3ea6310f917df2",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-305",
+          "title": "Study guide for Exam AZ-305: Designing Microsoft Azure Infrastructure Solutions",
+          "state": "inspected",
+          "skills_headings": [
+            "Skills measured as of April 17, 2026"
+          ]
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-solutions-architect/",
+          "title": "Microsoft Certified: Azure Solutions Architect Expert",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "AZ-700",
+      "guide_path": "guides/AZ-700-designing-implementing-azure-networking-solutions.md",
+      "catalog_status_before": "active",
+      "catalog_status_after": "active",
+      "review_status_after": "source-validated",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "unchanged",
+      "objective_text_changed": false,
+      "live_skills_versions": [
+        "Skills measured as of July 27, 2026"
+      ],
+      "current_guide_sha256": "8b0ec1bd6b8d7a696ee565dca9896ea0456391124dfb0dd802f39ad4170fc236",
+      "accepted_objective_sha256": "949dcb2d1b4bbde19b6f41b69fdf59cf33b52391d4b8010e2a46d6a0c94a98dd",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-700",
+          "title": "Study guide for Exam AZ-700: Designing and Implementing Microsoft Azure Networking Solutions",
+          "state": "inspected",
+          "skills_headings": [
+            "Skills measured as of July 27, 2026"
+          ]
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-network-engineer-associate/",
+          "title": "Microsoft Certified: Azure Network Engineer Associate",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "AZ-120",
+      "guide_path": "guides/AZ-120-planning-administering-azure-sap-workloads.md",
+      "catalog_status_before": "active",
+      "catalog_status_after": "active",
+      "review_status_after": "review-required",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "unchanged",
+      "objective_text_changed": false,
+      "live_skills_versions": [
+        "Skills measured as of April 17, 2026"
+      ],
+      "current_guide_sha256": "2ff79da9817625ce10e5daf341982f5606ed3a13d6ab48a6f77600019def9b4a",
+      "accepted_objective_sha256": "9ef2824a901a8ba33075de4315d56f6bd0c7e9b5887028f27c16e6645e6eb3ff",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-120",
+          "title": "Study guide for Exam AZ-120: Planning and Administering Azure for SAP Workloads",
+          "state": "inspected",
+          "skills_headings": [
+            "Skills measured as of April 17, 2026"
+          ]
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-for-sap-workloads-specialty/",
+          "title": "Microsoft Certified: Azure for SAP Workloads Specialty",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "AZ-140",
+      "guide_path": "guides/AZ-140-configuring-operating-azure-virtual-desktop.md",
+      "catalog_status_before": "active",
+      "catalog_status_after": "active",
+      "review_status_after": "source-validated",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "unchanged",
+      "objective_text_changed": false,
+      "live_skills_versions": [
+        "Skills measured as of July 20, 2026"
+      ],
+      "current_guide_sha256": "9ecabe2cc51fc705025e7dc3d96829931fb8003046ba991a48ad91473569e337",
+      "accepted_objective_sha256": "d40f010042124a6e28c81a7f783b6127e3b7ebf7bb99d9b3ddfccdd40dcede84",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-140",
+          "title": "Study guide for Exam AZ-140: Configuring and Operating Microsoft Azure Virtual Desktop",
+          "state": "inspected",
+          "skills_headings": [
+            "Skills measured as of July 20, 2026"
+          ]
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-virtual-desktop-specialty/",
+          "title": "Microsoft Certified: Azure Virtual Desktop Specialty",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "AZ-400",
+      "guide_path": "guides/AZ-400-designing-implementing-microsoft-devops-solutions.md",
+      "catalog_status_before": "active",
+      "catalog_status_after": "active",
+      "review_status_after": "source-validated",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "unchanged",
+      "objective_text_changed": false,
+      "live_skills_versions": [
+        "Skills measured as of July 27, 2026"
+      ],
+      "current_guide_sha256": "a048de1216925f464e3a8658fc1aaec6d5833d47e835c452813248b213e37fd4",
+      "accepted_objective_sha256": "2daece89f2a2ef131293e7299b41532985afbe955aed913bb86dc42bb8650460",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-400",
+          "title": "Study guide for Exam AZ-400: Designing and Implementing Microsoft DevOps Solutions",
+          "state": "inspected",
+          "skills_headings": [
+            "Skills measured as of July 27, 2026"
+          ]
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/devops-engineer/",
+          "title": "Microsoft Certified: DevOps Engineer Expert",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "AZ-800",
+      "guide_path": "guides/AZ-800-administering-windows-server-hybrid-core-infrastructure.md",
+      "catalog_status_before": "changing",
+      "catalog_status_after": "retired",
+      "review_status_after": "retired",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "changed",
+      "objective_text_changed": false,
+      "live_skills_versions": [
+        "Skills measured as of January 21, 2026"
+      ],
+      "current_guide_sha256": "b32450aeed3e511fdca4d9fb8b11d7c719358b6026dcd89155e4cd11f824b99f",
+      "accepted_objective_sha256": "03c6f4e0c73f383ada8c4ddf43a91fa28ec513a732b40abae0a38b1b6ac4f7bc",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-800",
+          "title": "Study guide for Exam AZ-800: Administering Windows Server Hybrid Core Infrastructure",
+          "state": "inspected",
+          "skills_headings": [
+            "Skills measured as of January 21, 2026"
+          ]
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/windows-server-hybrid-administrator/",
+          "title": "Microsoft Certified: Windows Server Administrator Associate",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "AZ-801",
+      "guide_path": "guides/AZ-801-configuring-windows-server-hybrid-advanced-services.md",
+      "catalog_status_before": "changing",
+      "catalog_status_after": "retired",
+      "review_status_after": "retired",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "changed",
+      "objective_text_changed": false,
+      "live_skills_versions": [
+        "Skills measured as of October 6, 2025"
+      ],
+      "current_guide_sha256": "0703d1da7132ad3495266e8208727540bde0fa288407608dcdfa1fb3b601deb6",
+      "accepted_objective_sha256": "c279fe648d4e3a6c67df9e119c95335e042937b93b83ffbf6a07d7f0ce51a76f",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-801",
+          "title": "Study guide for Exam AZ-801: Configuring Windows Server Hybrid Advanced Services",
+          "state": "inspected",
+          "skills_headings": [
+            "Skills measured as of October 6, 2025"
+          ]
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/windows-server-hybrid-administrator/",
+          "title": "Microsoft Certified: Windows Server Administrator Associate",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "AZ-802",
+      "guide_path": "guides/AZ-802-administering-windows-server.md",
+      "catalog_status_before": "active",
+      "catalog_status_after": "active",
+      "review_status_after": "review-required",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "changed",
+      "objective_text_changed": false,
+      "live_skills_versions": [
+        "Skills measured (official page last updated 2026-10-19; no skills effective date published)"
+      ],
+      "current_guide_sha256": "d28dc0f282e9fec60cc0fbc0c03908dc38a7a78c8107f2aab42623b5737f2464",
+      "accepted_objective_sha256": "ec584efe0ea08ae5ad6bbcef992c1b4a4e6b18826193ece06a76114757c8f65d",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802",
+          "title": "Study guide for Exam AZ-802: Administering Windows Server",
+          "state": "inspected",
+          "skills_headings": [
+            "Skills measured"
+          ]
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/windows-server-administrator-associate/",
+          "title": "Microsoft Certified: Windows Server Administrator Associate",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "DP-300",
+      "guide_path": "guides/DP-300-administering-microsoft-azure-sql-solutions.md",
+      "catalog_status_before": "active",
+      "catalog_status_after": "active",
+      "review_status_after": "review-required",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "changed",
+      "objective_text_changed": true,
+      "live_skills_versions": [
+        "Skills measured as of October 27, 2026"
+      ],
+      "current_guide_sha256": "065ed60b29bbd2f267a7720aa7e49ab439d106d612dbb25d503d96feb64515d4",
+      "accepted_objective_sha256": "08cba3368c07be28f4abeea90be94256a0cd0fc247ed53f2561fd340c0df3e4b",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300",
+          "title": "Study guide for Exam DP-300: Administering Microsoft Azure SQL Solutions",
+          "state": "inspected",
+          "skills_headings": [
+            "Skills measured as of October 27, 2026"
+          ]
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-database-administrator-associate/",
+          "title": "Microsoft Certified: Azure Database Administrator Associate",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "DP-420",
+      "guide_path": "guides/DP-420-designing-and-implementing-cloud-native-applications-using-microsoft-azure-cosmos-db.md",
+      "catalog_status_before": "active",
+      "catalog_status_after": "active",
+      "review_status_after": "review-required",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "changed",
+      "objective_text_changed": true,
+      "live_skills_versions": [
+        "Skills measured as of October 6, 2026"
+      ],
+      "current_guide_sha256": "7494e1a8bd331bcb62a9cd4701c383bb32496d9d5bbfce710972af696347e53b",
+      "accepted_objective_sha256": "7966ceca9589ef574018cacb35f5bcd02a55b148a34107310b5e7c9e1e52de7a",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-420",
+          "title": "Study Guide for Exam DP-420: Building AI Applications with Azure Cosmos DB",
+          "state": "inspected",
+          "skills_headings": [
+            "Skills measured as of October 6, 2026"
+          ]
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-cosmos-db-developer-specialty/",
+          "title": "Microsoft Certified: Azure Cosmos DB AI Developer Associate",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "DP-750",
+      "guide_path": "guides/DP-750-implementing-data-engineering-solutions-using-azure-databricks.md",
+      "catalog_status_before": "active",
+      "catalog_status_after": "active",
+      "review_status_after": "review-required",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "changed",
+      "objective_text_changed": true,
+      "live_skills_versions": [
+        "Skills measured as of October 19, 2026"
+      ],
+      "current_guide_sha256": "dd3f611324dd93e61b5bc023f88db2bbb8e9e006a20d4d818960c4f62c97fe6d",
+      "accepted_objective_sha256": "eba786118a9e5129571b0a9505b8849bd82f3cdf84e2da759d735f354f27fb84",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-750",
+          "title": "Study Guide for Exam DP-750: Implementing Data Engineering Solutions Using Azure Databricks",
+          "state": "inspected",
+          "skills_headings": [
+            "Skills measured as of October 19, 2026"
+          ]
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/implementing-data-engineering-solutions-using-azure-databricks/",
+          "title": "Microsoft Certified: Azure Databricks Data Engineer Associate",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "DP-600",
+      "guide_path": "guides/DP-600-implementing-analytics-solutions-microsoft-fabric.md",
+      "catalog_status_before": "active",
+      "catalog_status_after": "active",
+      "review_status_after": "review-required",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "changed",
+      "objective_text_changed": true,
+      "live_skills_versions": [
+        "Skills measured as of October 19, 2026"
+      ],
+      "current_guide_sha256": "49098f811ce39e0e10c533e826c533d2aa743e4f1e43f7b0022e2739224ccf0a",
+      "accepted_objective_sha256": "2b7d8452085a3503eaa3c72d3b5afd25ccb6dd2b42177e876d4c5d373051e3ec",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-600",
+          "title": "Study guide for Exam DP-600: Implementing Analytics Solutions Using Microsoft Fabric",
+          "state": "inspected",
+          "skills_headings": [
+            "Skills measured as of October 19, 2026"
+          ]
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-analytics-engineer-associate/",
+          "title": "Microsoft Certified: Fabric Analytics Engineer Associate",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "DP-800",
+      "guide_path": "guides/DP-800-developing-ai-enabled-database-solutions.md",
+      "catalog_status_before": "active",
+      "catalog_status_after": "active",
+      "review_status_after": "review-required",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "changed",
+      "objective_text_changed": true,
+      "live_skills_versions": [
+        "Skills measured as of October 19, 2026"
+      ],
+      "current_guide_sha256": "572b60c987f405d24ddebc7dc67dc2a5a4e98a99cb8641e0d4b4aca091b9faf6",
+      "accepted_objective_sha256": "5302e42b10e2f414caa1fba1ef4e641ecfb85b44d87bb39635b5caea2ac79e7f",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-800",
+          "title": "Study Guide for Exam DP-800: Developing AI-Enabled Database Solutions",
+          "state": "inspected",
+          "skills_headings": [
+            "Skills measured as of October 19, 2026"
+          ]
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/developing-ai-enabled-database-solutions/",
+          "title": "Microsoft Certified: SQL AI Developer Associate",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "AI-200",
+      "guide_path": "guides/AI-200-developing-ai-cloud-solutions-on-azure.md",
+      "catalog_status_before": "active",
+      "catalog_status_after": "active",
+      "review_status_after": "review-required",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "changed",
+      "objective_text_changed": true,
+      "live_skills_versions": [
+        "Skills measured as of October 7, 2026"
+      ],
+      "current_guide_sha256": "9c27726d1d25a82de7419ace697ec48854989f791ccac8649ed1d3905b64f01d",
+      "accepted_objective_sha256": "3dc5dfbae796cc5345c92061d04d0e671d5ebc7252ac057038ca61b8b8a6e464",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-200",
+          "title": "Study guide for Exam AI-200: Developing AI Cloud Solutions on Azure",
+          "state": "inspected",
+          "skills_headings": [
+            "Skills measured as of October 7, 2026"
+          ]
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-cloud-developer-associate/",
+          "title": "Microsoft Certified: Azure AI Cloud Developer Associate",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "AI-300",
+      "guide_path": "guides/AI-300-operationalizing-machine-learning-generative-ai-solutions.md",
+      "catalog_status_before": "active",
+      "catalog_status_after": "active",
+      "review_status_after": "source-validated",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "changed",
+      "objective_text_changed": false,
+      "live_skills_versions": [
+        "Skills measured (official page last updated 2026-10-15; no skills effective date published)"
+      ],
+      "current_guide_sha256": "4179a4db9e85b855814f317d8d198965d3225df1f44f751a69e868e658811efe",
+      "accepted_objective_sha256": "79d7fabcf253e7ac5f5f7629397075867d22c48045c2483c9d03e1b217215f41",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-300",
+          "title": "Study guide for Exam AI-300: Operationalizing Machine Learning and Generative AI Solutions",
+          "state": "inspected",
+          "skills_headings": [
+            "Skills measured"
+          ]
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/operationalizing-machine-learning-and-generative-ai-solutions/",
+          "title": "Microsoft Certified: Machine Learning Operations Engineer Associate",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "AI-500",
+      "guide_path": "guides/AI-500-designing-implementing-multi-agent-ai-solutions.md",
+      "catalog_status_before": "beta",
+      "catalog_status_after": "active",
+      "review_status_after": "review-required",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "unchanged",
+      "objective_text_changed": false,
+      "live_skills_versions": [
+        "Skills measured (official page last updated 2026-07-16; no skills effective date published)"
+      ],
+      "current_guide_sha256": "ec362f9caebe568c783fc5c144c7d2aa2d96ef93b650f5517fcc8c4ae0f1af80",
+      "accepted_objective_sha256": "498ed5ca3e5f1ac958dedea4b84cb33a34a8ff0f5aa239540fd7283bc41360e8",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-500",
+          "title": "Study guide for Exam AI-500: Designing and Implementing Multi-Agent AI Solutions",
+          "state": "inspected",
+          "skills_headings": [
+            "Skills measured"
+          ]
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/multi-agent-ai-solutions-expert/",
+          "title": "Microsoft Certified: Multi-Agent AI Solutions Expert",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "AB-620",
+      "guide_path": "guides/AB-620-designing-building-integrated-ai-agent-solutions.md",
+      "catalog_status_before": "active",
+      "catalog_status_after": "active",
+      "review_status_after": "source-validated",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "changed",
+      "objective_text_changed": false,
+      "live_skills_versions": [
+        "Skills measured (official page last updated 2026-10-16; no skills effective date published)"
+      ],
+      "current_guide_sha256": "a472fb43a5e6fc6a582a4be801ce62e8ab729eaeb165683edc4bb9bfbba25a65",
+      "accepted_objective_sha256": "8b9f6ca0601cf631a000763ce7a0cca802a0177c66d7a4e3cc29d84d52188dfc",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-620",
+          "title": "Study guide for Exam AB-620: Designing and Building Integrated AI Agent Solutions in Copilot Studio",
+          "state": "inspected",
+          "skills_headings": [
+            "Skills measured"
+          ]
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/ai-agent-builder-associate/",
+          "title": "Microsoft Certified: AI Agent Builder Associate",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "SC-100",
+      "guide_path": "guides/SC-100-microsoft-cybersecurity-architect.md",
+      "catalog_status_before": "active",
+      "catalog_status_after": "active",
+      "review_status_after": "review-required",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "changed",
+      "objective_text_changed": true,
+      "live_skills_versions": [
+        "Skills measured as of October 21, 2026"
+      ],
+      "current_guide_sha256": "6a15647d47ba40a3b213e072616003e1a30adde4d3e2e4916cd6eeb267e9696b",
+      "accepted_objective_sha256": "342b0f01a93d8047a5dbc4ecc9d9529b94191d6cab60c99af7307251aaee6099",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-100",
+          "title": "Study guide for Exam SC-100: Microsoft Cybersecurity Architect",
+          "state": "inspected",
+          "skills_headings": [
+            "Skills measured as of October 21, 2026"
+          ]
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/cybersecurity-architect-expert/",
+          "title": "Microsoft Certified: Cybersecurity Architect Expert",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "SC-200",
+      "guide_path": "guides/SC-200-microsoft-security-operations-analyst.md",
+      "catalog_status_before": "active",
+      "catalog_status_after": "active",
+      "review_status_after": "review-required",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "changed",
+      "objective_text_changed": true,
+      "live_skills_versions": [
+        "Skills measured as of October 21, 2026"
+      ],
+      "current_guide_sha256": "215177cff13dc0da8775df14bc517d408866d10e82d06888efcb04d1303fd399",
+      "accepted_objective_sha256": "c64e8b14b67c6cd01b9ec4df39441c9d83971c5e2db87010561edbb07eda656e",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200",
+          "title": "Study guide for Exam SC-200: Microsoft Security Operations Analyst",
+          "state": "inspected",
+          "skills_headings": [
+            "Skills measured as of October 21, 2026"
+          ]
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/security-operations-analyst/",
+          "title": "Microsoft Certified: Security Operations Analyst Associate",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "SC-300",
+      "guide_path": "guides/SC-300-microsoft-identity-access-administrator.md",
+      "catalog_status_before": "active",
+      "catalog_status_after": "active",
+      "review_status_after": "review-required",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "changed",
+      "objective_text_changed": true,
+      "live_skills_versions": [
+        "Skills measured as of October 28, 2026"
+      ],
+      "current_guide_sha256": "bdbefd13973e7fa01a27ed6f3fcc6e5f5e5fab2a8c46852fe3cb11b04221ecfb",
+      "accepted_objective_sha256": "242f9f0cedd16af9ee78aa8d389ab62fcba2a925f7b86070d44f94d5f98c624b",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-300",
+          "title": "Study guide for Exam SC-300: Microsoft Identity and Access Administrator",
+          "state": "inspected",
+          "skills_headings": [
+            "Skills measured as of October 28, 2026"
+          ]
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/identity-and-access-administrator/",
+          "title": "Microsoft Certified: Identity and Access Administrator Associate",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "SC-500",
+      "guide_path": "guides/SC-500-microsoft-cloud-ai-security-engineer.md",
+      "catalog_status_before": "active",
+      "catalog_status_after": "active",
+      "review_status_after": "source-validated",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "unchanged",
+      "objective_text_changed": false,
+      "live_skills_versions": [
+        "Skills measured (official page last updated 2026-05-13; no skills effective date published)"
+      ],
+      "current_guide_sha256": "dd9b0133a6cae3fc6ce9bb3df39de6ac7e298a56c86d83b5bfeadf72eb1d67e4",
+      "accepted_objective_sha256": "9f832db799678f547b3272c902e5529c77077e2cd4272326cf8ad94ef50cf7c6",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-500",
+          "title": "Study guide for Exam SC-500: Implementing End-to-End Security Controls for Cloud and AI Workloads",
+          "state": "inspected",
+          "skills_headings": [
+            "Skills measured"
+          ]
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/cloud-and-ai-security-engineer-associate/",
+          "title": "Microsoft Certified: Cloud and AI Security Engineer Associate",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "SC-401",
+      "guide_path": "guides/SC-401-administering-information-security-microsoft-365.md",
+      "catalog_status_before": "active",
+      "catalog_status_after": "active",
+      "review_status_after": "review-required",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "changed",
+      "objective_text_changed": true,
+      "live_skills_versions": [
+        "Skills measured as of October 28, 2026"
+      ],
+      "current_guide_sha256": "75397fc154f912b2ae5e9b4bb2958049a3125b6feb4e85b9dd304d2b186e9c42",
+      "accepted_objective_sha256": "5ca7d97c4a3ab4854779d477e20c4c2f6fc0b3ddeb987c6b63b8211127f51e85",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-401",
+          "title": "Study guide for Exam SC-401: Administering Information Security in Microsoft 365",
+          "state": "inspected",
+          "skills_headings": [
+            "Skills measured as of October 28, 2026"
+          ]
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/information-security-administrator/",
+          "title": "Microsoft Certified: Information Security Administrator Associate",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "MS-102",
+      "guide_path": "guides/MS-102-microsoft-365-administrator.md",
+      "catalog_status_before": "changing",
+      "catalog_status_after": "changing",
+      "review_status_after": "review-required",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "unchanged",
+      "objective_text_changed": false,
+      "live_skills_versions": [
+        "Skills measured as of April 28, 2026"
+      ],
+      "current_guide_sha256": "5a3823b062cb0c00372014c6e2dbfc7764d5614db3a67688efe8c2a2ab8a2536",
+      "accepted_objective_sha256": "97ce6b34e98fb43947409e8b7997f3de72e6cae7a62102dfdea849bfb177c92a",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-102",
+          "title": "Study guide for Exam MS-102: Microsoft 365 Administrator",
+          "state": "inspected",
+          "skills_headings": [
+            "Skills measured as of April 28, 2026"
+          ]
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/m365-administrator-expert/",
+          "title": "Microsoft 365 Certified: Administrator Expert",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "AB-650",
+      "guide_path": "guides/AB-650-ai-services-administrator-associate.md",
+      "catalog_status_before": "beta",
+      "catalog_status_after": "beta",
+      "review_status_after": "review-required",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "unchanged",
+      "objective_text_changed": false,
+      "live_skills_versions": [
+        "Skills measured (official page last updated 2026-07-27; no skills effective date published)"
+      ],
+      "current_guide_sha256": "450bf5aa602ee58913305c33beaeb19e058522cce1e2fb79afc7bfeb3312b55d",
+      "accepted_objective_sha256": "e70d10682f078cb6887f7dde679f56661e63dfeabb221779f6b0ff4ab08bdf1a",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-650",
+          "title": "Study guide for Exam AB-650: Administering Microsoft 365 and AI Services",
+          "state": "inspected",
+          "skills_headings": [
+            "Skills measured"
+          ]
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/ai-services-administrator-associate/",
+          "title": "Microsoft 365 Certified:  Microsoft 365 and AI Services Administrator Associate (beta)",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "MD-102",
+      "guide_path": "guides/MD-102-managing-securing-microsoft-365-endpoints-intune.md",
+      "catalog_status_before": "active",
+      "catalog_status_after": "active",
+      "review_status_after": "review-required",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "changed",
+      "objective_text_changed": true,
+      "live_skills_versions": [
+        "Skills measured as of October 27, 2026"
+      ],
+      "current_guide_sha256": "ec5738f0393f04d7513fda43cb0472c85208714791cef9561d1fa644610d968a",
+      "accepted_objective_sha256": "ba90e464c3a81deac207962ffe32e88c3ac6b0d966c33ba77572bb3d83910009",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/md-102",
+          "title": "Study guide for Exam MD-102: Managing and Securing Microsoft 365 Endpoints by using Intune",
+          "state": "inspected",
+          "skills_headings": [
+            "Skills measured as of October 27, 2026"
+          ]
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/modern-desktop/",
+          "title": "Microsoft 365 Certified: Endpoint Administrator Associate",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "MS-700",
+      "guide_path": "guides/MS-700-managing-microsoft-teams.md",
+      "catalog_status_before": "active",
+      "catalog_status_after": "active",
+      "review_status_after": "review-required",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "changed",
+      "objective_text_changed": true,
+      "live_skills_versions": [
+        "Skills measured as of October 27, 2026"
+      ],
+      "current_guide_sha256": "048b756c738945a616a6b955e8e9345485ca40aeb46beadb99fb466bdc06d44a",
+      "accepted_objective_sha256": "7b8312756006b9ee0f6b8e5fdb134797ef97c6ed27f664d0f518b8007cd03061",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-700",
+          "title": "Study guide for Exam MS-700: Managing Microsoft Teams",
+          "state": "inspected",
+          "skills_headings": [
+            "Skills measured as of October 27, 2026"
+          ]
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/m365-teams-administrator-associate/",
+          "title": "Microsoft 365 Certified: Teams Administrator Associate",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "MS-721",
+      "guide_path": "guides/MS-721-collaboration-communications-systems-engineer.md",
+      "catalog_status_before": "active",
+      "catalog_status_after": "active",
+      "review_status_after": "review-required",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "changed",
+      "objective_text_changed": true,
+      "live_skills_versions": [
+        "Skills measured as of October 29, 2026"
+      ],
+      "current_guide_sha256": "f351575d2e50bb966c21d8e6ad83dbd6a7e100c81509f765eb46f71d6a428b7f",
+      "accepted_objective_sha256": "5167d7ad28df0c595db0836af19c921bc647da376dd96d029dbdf9f60555c5b0",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-721",
+          "title": "Study guide for Exam MS-721: Collaboration Communications Systems Engineer",
+          "state": "inspected",
+          "skills_headings": [
+            "Skills measured as of October 29, 2026"
+          ]
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/m365-collaboration-communications-systems-engineer/",
+          "title": "Microsoft 365 Certified: Collaboration Communications Systems Engineer Associate",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "DP-700",
+      "guide_path": "guides/DP-700-implementing-data-engineering-solutions-microsoft-fabric.md",
+      "catalog_status_before": "active",
+      "catalog_status_after": "active",
+      "review_status_after": "review-required",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "changed",
+      "objective_text_changed": true,
+      "live_skills_versions": [
+        "Skills measured as of October 19, 2026"
+      ],
+      "current_guide_sha256": "a144c4e76fa45b34d93a97d5cf845bebdda1fc0398e53edcddc2f1c9dc0cea47",
+      "accepted_objective_sha256": "b250753e6f60be9e2a9625e9849d575999dc56fc6afe43788a85ce43db5e25a8",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-700",
+          "title": "Study Guide for Exam DP-700: Implementing Data Engineering Solutions Using Microsoft Fabric",
+          "state": "inspected",
+          "skills_headings": [
+            "Skills measured as of October 19, 2026"
+          ]
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-data-engineer-associate/",
+          "title": "Microsoft Certified: Fabric Data Engineer Associate",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "PL-300",
+      "guide_path": "guides/PL-300-microsoft-power-bi-data-analyst.md",
+      "catalog_status_before": "active",
+      "catalog_status_after": "active",
+      "review_status_after": "source-validated",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "unchanged",
+      "objective_text_changed": false,
+      "live_skills_versions": [
+        "Skills measured as of April 20, 2026"
+      ],
+      "current_guide_sha256": "b6d4a0f04fd84f156294799c1c07eec99e61b438c121737cfee4c1c33655c5bc",
+      "accepted_objective_sha256": "c1c6a25ab5e6285ba4cce3603f6e2624f482ff1d6f237d68e6fa79da93d9e8d9",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300",
+          "title": "Study guide for Exam PL-300: Microsoft Power BI Data Analyst",
+          "state": "inspected",
+          "skills_headings": [
+            "Skills measured as of April 20, 2026"
+          ]
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/data-analyst-associate/",
+          "title": "Microsoft Certified: Power BI Data Analyst Associate",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "PL-400",
+      "guide_path": "guides/PL-400-microsoft-power-platform-developer.md",
+      "catalog_status_before": "active",
+      "catalog_status_after": "changing",
+      "review_status_after": "review-required",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "changed",
+      "objective_text_changed": true,
+      "live_skills_versions": [
+        "Skills measured as of October 16, 2026"
+      ],
+      "current_guide_sha256": "fc2245581a0f3ae0e94b51d36e836b6c2c5762941daf5a2eb083387340f300e3",
+      "accepted_objective_sha256": "4867995d075161ae07190d54a25c84872deb9efc388a7629743ee6bc49b8f468",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-400",
+          "title": "Study guide for Exam PL-400: Microsoft Power Platform Developer",
+          "state": "inspected",
+          "skills_headings": [
+            "Skills measured as of October 16, 2026"
+          ]
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate/",
+          "title": "Microsoft Certified: Power Platform Developer Associate",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "AB-410",
+      "guide_path": "guides/AB-410-building-intelligent-applications.md",
+      "catalog_status_before": "active",
+      "catalog_status_after": "active",
+      "review_status_after": "review-required",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "changed",
+      "objective_text_changed": false,
+      "live_skills_versions": [
+        "Skills measured (official page last updated 2026-10-16; no skills effective date published)"
+      ],
+      "current_guide_sha256": "6a3af28d56aace7d2c64f396d9376de1d83c44b38d503b3a7a593d03425e1e0e",
+      "accepted_objective_sha256": "390c1040388541915573525f59b9f2f28753f65d0a3a50e9221dd7ab11c68142",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-410",
+          "title": "Study guide for Exam AB-410: Building Intelligent Applications",
+          "state": "inspected",
+          "skills_headings": [
+            "Skills measured"
+          ]
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/intelligent-applications-builder-associate/",
+          "title": "Microsoft Certified: Intelligent Applications Builder Associate",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "AB-730",
+      "guide_path": "guides/AB-730-ai-business-professional.md",
+      "catalog_status_before": "active",
+      "catalog_status_after": "active",
+      "review_status_after": "review-required",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "changed",
+      "objective_text_changed": true,
+      "live_skills_versions": [
+        "Skills measured as of October 20, 2026"
+      ],
+      "current_guide_sha256": "c9f308835b4dd5dc4f1cee15ea506c0931de9ffc27613240d8dc176c7ba4755a",
+      "accepted_objective_sha256": "5387c1978cda745a51ab645fb402bb8080729bcf6461c63a1eac464492e71a55",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-730",
+          "title": "Study guide for Exam AB-730: AI Business Professional",
+          "state": "inspected",
+          "skills_headings": [
+            "Skills measured as of October 20, 2026"
+          ]
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/ai-business-professional/",
+          "title": "Microsoft Certified: AI Business Professional",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "AB-731",
+      "guide_path": "guides/AB-731-ai-transformation-leader.md",
+      "catalog_status_before": "active",
+      "catalog_status_after": "active",
+      "review_status_after": "source-validated",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "unchanged",
+      "objective_text_changed": false,
+      "live_skills_versions": [
+        "Skills measured as of July 22, 2026"
+      ],
+      "current_guide_sha256": "cd7e58a6066b5e288ca80648f794dfd3f124de4d383ebd27fe533eb230fa33dc",
+      "accepted_objective_sha256": "dbb6d89a150d8e1ca630380839f190f05e89b2688a862c3987f14a1df48ea7e7",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-731",
+          "title": "Study guide for Exam AB-731: AI Transformation Leader",
+          "state": "inspected",
+          "skills_headings": [
+            "Skills measured as of July 22, 2026"
+          ]
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/ai-transformation-leader/",
+          "title": "Microsoft Certified: AI Transformation Leader",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "AB-210",
+      "guide_path": "guides/AB-210-accelerating-sales-pipelines-ai-dynamics-365.md",
+      "catalog_status_before": "beta",
+      "catalog_status_after": "beta",
+      "review_status_after": "review-required",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "unchanged",
+      "objective_text_changed": false,
+      "live_skills_versions": [
+        "Skills measured (official page last updated 2026-06-18; no skills effective date published)"
+      ],
+      "current_guide_sha256": "e666ce5f85d97391a2caee589f7f59c8be512479fc545513e1aac45fb446671f",
+      "accepted_objective_sha256": "2595badf528595419ed8da12bf5aed577d899ee8772123a0b1e40d1c2eac0f83",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-210",
+          "title": "Study guide for Exam AB-210: Accelerating Sales Pipelines with AI in Dynamics 365",
+          "state": "inspected",
+          "skills_headings": [
+            "Skills measured"
+          ]
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-sales-ai-consultant-associate/",
+          "title": "Microsoft Certified: Dynamics 365 Sales AI Consultant Associate",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "AB-250",
+      "guide_path": "guides/AB-250-transforming-contact-center-experiences-ai-dynamics-365.md",
+      "catalog_status_before": "active",
+      "catalog_status_after": "active",
+      "review_status_after": "review-required",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "unchanged",
+      "objective_text_changed": false,
+      "live_skills_versions": [
+        "Skills measured (official page last updated 2026-05-15; no skills effective date published)"
+      ],
+      "current_guide_sha256": "ecee8b47d8f7920425965d57834283e0bcbe52afdf7eca4ba7c9645f35855762",
+      "accepted_objective_sha256": "852f325868be15013f6b67d2fe5e0152744d4e1d8c1f86a82874b2eecaca5e11",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-250",
+          "title": "Study guide for Exam AB-250: Transforming Contact Center Experiences with AI in Dynamics 365",
+          "state": "inspected",
+          "skills_headings": [
+            "Skills measured"
+          ]
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-contact-center-ai-engineer-associate/",
+          "title": "Microsoft Certified: Dynamics 365 Contact Center AI Engineer Associate",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "MB-230",
+      "guide_path": "guides/MB-230-microsoft-dynamics-365-customer-service-functional-consultant.md",
+      "catalog_status_before": "active",
+      "catalog_status_after": "active",
+      "review_status_after": "source-validated",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "unchanged",
+      "objective_text_changed": false,
+      "live_skills_versions": [
+        "Skills measured as of March 11, 2026"
+      ],
+      "current_guide_sha256": "fc595c40de2aa905feb11a2e68914673f7443ab59204b5c7658c29f1b21daae2",
+      "accepted_objective_sha256": "e5925c65c9de7fad2e0d1d921564490a83ce02092b95ad95382775abd6352b38",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-230",
+          "title": "Study guide for Exam MB-230: Microsoft Dynamics 365 Customer Service Functional Consultant",
+          "state": "inspected",
+          "skills_headings": [
+            "Skills measured as of March 11, 2026"
+          ]
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-customer-service-v3/",
+          "title": "Microsoft Certified: Dynamics 365 Customer Service Functional Consultant Associate",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "MB-310",
+      "guide_path": "guides/MB-310-microsoft-dynamics-365-finance-functional-consultant.md",
+      "catalog_status_before": "active",
+      "catalog_status_after": "active",
+      "review_status_after": "source-validated",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "unchanged",
+      "objective_text_changed": false,
+      "live_skills_versions": [
+        "Skills measured as of August 14, 2026"
+      ],
+      "current_guide_sha256": "ecba021e209cf66f5221a50c341c490f30dd92ab8579ff4d95b61216ddb47f48",
+      "accepted_objective_sha256": "d5bbe85cad214566f2ba0cc7b266af0ff612664ba199a5c8ed948e28474d2284",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-310",
+          "title": "Study guide for Exam MB-310: Microsoft Dynamics 365 Finance Functional Consultant",
+          "state": "inspected",
+          "skills_headings": [
+            "Skills measured as of August 14, 2026"
+          ]
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-financials/",
+          "title": "Microsoft Certified: Dynamics 365 Finance Functional Consultant Associate",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "MB-330",
+      "guide_path": "guides/MB-330-microsoft-dynamics-365-supply-chain-management-functional-consultant.md",
+      "catalog_status_before": "active",
+      "catalog_status_after": "active",
+      "review_status_after": "review-required",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "changed",
+      "objective_text_changed": true,
+      "live_skills_versions": [
+        "Skills measured as of October 21, 2026"
+      ],
+      "current_guide_sha256": "2741537e84737f0cb31a372d1d760bd94e3fb527505c990cb111ecdfecf4b2bd",
+      "accepted_objective_sha256": "d2256ab65b1fb5846cf0bcd68e769a0ce0cf7e64ad9ccfc709d5f9ba7866427a",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-330",
+          "title": "Study guide for Exam MB-330: Microsoft Dynamics 365 Supply Chain Management Functional Consultant",
+          "state": "inspected",
+          "skills_headings": [
+            "Skills measured as of October 21, 2026"
+          ]
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-supply-chain-management/",
+          "title": "Microsoft Certified: Dynamics 365 Supply Chain Management Functional Consultant Associate",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "MB-500",
+      "guide_path": "guides/MB-500-microsoft-dynamics-365-finance-operations-apps-developer.md",
+      "catalog_status_before": "active",
+      "catalog_status_after": "active",
+      "review_status_after": "source-validated",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "unchanged",
+      "objective_text_changed": false,
+      "live_skills_versions": [
+        "Skills measured as of January 30, 2026"
+      ],
+      "current_guide_sha256": "823c2995491919379df843836a8675e38691f6933484515be1abc50365248d80",
+      "accepted_objective_sha256": "30b2b8913d63724b60099adcd9090a67bf818e3b0b42e7e57382a5ab240134cd",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-500",
+          "title": "Study guide for Exam MB-500: Microsoft Dynamics 365: Finance and Operations Apps Developer",
+          "state": "inspected",
+          "skills_headings": [
+            "Skills measured as of January 30, 2026"
+          ]
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-finance-and-operations-apps-developer-associate/",
+          "title": "Microsoft Certified: Dynamics 365: Finance and Operations Apps Developer Associate",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "MB-800",
+      "guide_path": "guides/MB-800-microsoft-dynamics-365-business-central-functional-consultant.md",
+      "catalog_status_before": "active",
+      "catalog_status_after": "active",
+      "review_status_after": "source-validated",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "unchanged",
+      "objective_text_changed": false,
+      "live_skills_versions": [
+        "Skills measured as of June 30, 2026"
+      ],
+      "current_guide_sha256": "2031a157af330803a99956115b1a9f2402d1cd6c122bc2d74773a959b5370583",
+      "accepted_objective_sha256": "36a7035403d51e3f1558e097e03f5cd4da0949d205420aeb46a8bd2b4ff30a9d",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-800",
+          "title": "Study guide for Exam MB-800: Microsoft Dynamics 365 Business Central Functional Consultant",
+          "state": "inspected",
+          "skills_headings": [
+            "Skills measured as of June 30, 2026"
+          ]
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-functional-consultant-associate/",
+          "title": "Microsoft Certified: Dynamics 365 Business Central Functional Consultant Associate",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "MB-820",
+      "guide_path": "guides/MB-820-microsoft-dynamics-365-business-central-developer.md",
+      "catalog_status_before": "active",
+      "catalog_status_after": "active",
+      "review_status_after": "source-validated",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "unchanged",
+      "objective_text_changed": false,
+      "live_skills_versions": [
+        "Skills measured as of June 10, 2025"
+      ],
+      "current_guide_sha256": "2e6fe4344ecc6c46b33b04960cdb8f597932f536acd7b6b5ec76cba89cb84b2b",
+      "accepted_objective_sha256": "1e1a344d7da21661343df954d830f847f10aa2e3742893e8fab5381666dca108",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-820",
+          "title": "Study guide for Exam MB-820: Microsoft Dynamics 365 Business Central Developer",
+          "state": "inspected",
+          "skills_headings": [
+            "Skills measured as of June 10, 2025"
+          ]
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-developer-associate/",
+          "title": "Microsoft Certified: Dynamics 365 Business Central Developer Associate",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "MO-110",
+      "guide_path": "guides/MO-110-microsoft-word-microsoft-365-apps.md",
+      "catalog_status_before": "active",
+      "catalog_status_after": "active",
+      "review_status_after": "source-validated",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "unchanged",
+      "objective_text_changed": false,
+      "live_skills_versions": [
+        "Microsoft Office Specialist: Word Associate (Microsoft 365 Apps) - Certifications | Microsoft Learn",
+        "You will have 50 minutes to complete this assessment.",
+        "Retirement date: none listed"
+      ],
+      "current_guide_sha256": "e8b97fec80ccc4f0e0b492e24bcd9269bd3e4a65ca0e7d75c0562ec14065fbfd",
+      "accepted_objective_sha256": "c5016d0c2a76187324de57865fcad9858aa02d49353a61ffc479e64430ee233a",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-associate-m365-apps/",
+          "title": "Microsoft Office Specialist: Word Associate (Microsoft 365 Apps)",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "MO-210",
+      "guide_path": "guides/MO-210-microsoft-excel-microsoft-365-apps.md",
+      "catalog_status_before": "active",
+      "catalog_status_after": "active",
+      "review_status_after": "source-validated",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "unchanged",
+      "objective_text_changed": false,
+      "live_skills_versions": [
+        "Microsoft Office Specialist: Excel Associate (Microsoft 365 Apps) - Certifications | Microsoft Learn",
+        "You will have 50 minutes to complete this assessment.",
+        "Retirement date: none listed"
+      ],
+      "current_guide_sha256": "af6574c07de8553a0bae64f215a15507a8ea58b3ee04450a57bf5b2557c6156f",
+      "accepted_objective_sha256": "71db2aebfc9e02978f17b80207c9b0bd180775ad9c8486050965a27a5fadc0d7",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-associate-m365-apps/",
+          "title": "Microsoft Office Specialist: Excel Associate (Microsoft 365 Apps)",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "MO-310",
+      "guide_path": "guides/MO-310-microsoft-powerpoint-microsoft-365-apps.md",
+      "catalog_status_before": "active",
+      "catalog_status_after": "active",
+      "review_status_after": "source-validated",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "unchanged",
+      "objective_text_changed": false,
+      "live_skills_versions": [
+        "Microsoft Office Specialist: PowerPoint Associate (Microsoft 365 Apps) - Certifications | Microsoft Learn",
+        "You will have 50 minutes to complete this assessment.",
+        "Retirement date: none listed"
+      ],
+      "current_guide_sha256": "48458a4732bf6c055fcc269d15847e88e7fa23ec2afac9d2736c5b0d48cf5d8d",
+      "accepted_objective_sha256": "9ce732345e113b5587ccd794bdfa12dfbb2e95feda7c178566a8132c2f015570",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-powerpoint-associate-m365-apps/",
+          "title": "Microsoft Office Specialist: PowerPoint Associate (Microsoft 365 Apps)",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "MO-111",
+      "guide_path": "guides/MO-111-microsoft-word-expert-microsoft-365-apps.md",
+      "catalog_status_before": "active",
+      "catalog_status_after": "active",
+      "review_status_after": "source-validated",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "unchanged",
+      "objective_text_changed": false,
+      "live_skills_versions": [
+        "Microsoft Office Specialist: Word Expert (Microsoft 365 Apps) - Certifications | Microsoft Learn",
+        "You will have 50 minutes to complete this assessment.",
+        "Retirement date: none listed"
+      ],
+      "current_guide_sha256": "5bb107960c4abed991e8ceb7f462fb9231c6bcb7d56f33e787bbbe873e88b7ca",
+      "accepted_objective_sha256": "0db958488191b514b8598df0288463d19a4cc9b1f7fa81b3855850e6945c8fbc",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-expert-m365-apps/",
+          "title": "Microsoft Office Specialist: Word Expert (Microsoft 365 Apps)",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    },
+    {
+      "exam_code": "MO-211",
+      "guide_path": "guides/MO-211-microsoft-excel-expert.md",
+      "catalog_status_before": "active",
+      "catalog_status_after": "active",
+      "review_status_after": "source-validated",
+      "last_complete_review_preserved": true,
+      "objective_monitor": "unchanged",
+      "objective_text_changed": false,
+      "live_skills_versions": [
+        "Microsoft Office Specialist: Excel Expert (Microsoft 365 Apps) - Certifications | Microsoft Learn",
+        "You will have 50 minutes to complete this assessment.",
+        "Retirement date: none listed"
+      ],
+      "current_guide_sha256": "7a1301b8c12ef8b58de1852d7a4dec28c5bb5ea8f5aea5468d0cc5ed20da057e",
+      "accepted_objective_sha256": "174e46cb264079c29287f88c0b16eafdeac46dfb7f746bb6323aeec315944e34",
+      "opened_official_pages": [
+        {
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-expert-m365-apps/",
+          "title": "Microsoft Office Specialist: Excel Expert (Microsoft 365 Apps)",
+          "state": "inspected",
+          "skills_headings": []
+        }
+      ]
+    }
+  ],
+  "discovery_identity_triage": [
+    {
+      "signal": "agentic-ai-business-professional",
+      "vendor_id": "github",
+      "credential_title": "GitHub Certified: Agentic AI Business Professional (beta)",
+      "exam_code": "GH-700",
+      "exam_title": "Enhancing Operational Efficiency with Agentic AI",
+      "status": "beta",
+      "status_basis": "Credential heading explicitly beta; delayed beta scoring notice. Vendor is positively GitHub: page explicitly says Microsoft provides the exam while GitHub maintains exam and certification.",
+      "prerequisites": {
+        "formal_credential_requirement": "Not specified on inspected credential or blueprint; do not infer no requirement.",
+        "recommended_experience": "Generative AI use; producing business output; managing projects/products/processes and business decisions; GitHub features, versioning, Copilot surfaces, agents and security. Deep coding experience is not required by audience description."
+      },
+      "anomalies": [
+        "Beta notice incorrectly names GitHub Agentic AI Developer although page title is Business Professional.",
+        "Practice assessment link is labeled Microsoft Certified AI Business Professional, which is a different credential. Do not treat that link as a verified GH-700-specific assessment."
+      ],
+      "recommended_action": "Research-only GitHub seed GH-700, beta, exact credential title; catalog grouping under Microsoft is delivery/catalog provenance, not credential vendor. No full guide claim.",
+      "checked_on": "2026-10-28",
+      "confidence": "high for visible credential vendor, exam code and explicit beta labels; active labels as bounded stated basis",
+      "opened_sources": [
+        {
+          "requested_url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-professional/",
+          "checked_on": "2026-10-28",
+          "opened_url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-professional/",
+          "http_status": 200,
+          "visible_title": "GitHub Certified: Agentic AI Business Professional (beta)",
+          "inspection_method": "Canonical page opened through web tool and HTTP main title rechecked.",
+          "approved_source_matches": []
+        },
+        {
+          "requested_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-700",
+          "checked_on": "2026-10-28",
+          "opened_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-700",
+          "http_status": 200,
+          "visible_title": "Study guide for Exam GH-700: Enhancing Operational Efficiency with Agentic AI",
+          "inspection_method": "Canonical page opened through web tool and HTTP main title rechecked.",
+          "approved_source_matches": []
+        }
+      ],
+      "existing_seed_matches": []
+    },
+    {
+      "signal": "agentic-devops-engineer-expert",
+      "vendor_id": "microsoft",
+      "credential_title": "Microsoft Certified: Agentic DevOps Engineer Expert (beta)",
+      "exam_code": "AZ-401",
+      "exam_title": "Designing and Implementing Microsoft Agentic DevOps Solutions",
+      "status": "beta",
+      "status_basis": "Credential and exam headings explicitly beta and both include delayed beta scoring notices; exam lists English and retirement none.",
+      "prerequisites": {
+        "formal_credential_requirement": "No required prerequisite certification is identified on inspected credential, exam or blueprint; do not inherit AZ-400 prerequisites from its related role/name.",
+        "recommended_experience": "Strong Microsoft administration or development skills; practical YAML, KQL, Bicep; implementations using both Azure DevOps and GitHub with their AI tools."
+      },
+      "anomalies": [
+        "Credential assessed-domain list repeats AB-100 plan/design/deploy AI business solutions. Dedicated AZ-401 exam and blueprint instead show five DevOps domains; use dedicated blueprint for scope.",
+        "Exam related-certification summary repeats generic AI-first solution-architect prose."
+      ],
+      "recommended_action": "Research-only Microsoft seed AZ-401 beta. Keep credential-page template anomalies visible; do not infer AZ-400 retirement/replacement or prerequisites.",
+      "checked_on": "2026-10-28",
+      "confidence": "high for visible credential vendor, exam code and explicit beta labels; active labels as bounded stated basis",
+      "opened_sources": [
+        {
+          "requested_url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-devops-engineer-expert/",
+          "checked_on": "2026-10-28",
+          "opened_url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-devops-engineer-expert/",
+          "http_status": 200,
+          "visible_title": "Microsoft Certified: Agentic DevOps Engineer Expert (beta)",
+          "inspection_method": "Canonical page opened through web tool and HTTP main title rechecked.",
+          "approved_source_matches": []
+        },
+        {
+          "requested_url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/az-401/",
+          "checked_on": "2026-10-28",
+          "opened_url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/az-401/",
+          "http_status": 200,
+          "visible_title": "Exam AZ-401: Designing and Implementing Microsoft Agentic DevOps Solutions (beta)",
+          "inspection_method": "Canonical page opened through web tool and HTTP main title rechecked.",
+          "approved_source_matches": []
+        },
+        {
+          "requested_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401",
+          "checked_on": "2026-10-28",
+          "opened_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401",
+          "http_status": 200,
+          "visible_title": "Study guide for Exam AZ-401: Designing and Implementing Microsoft Agentic DevOps Solutions",
+          "inspection_method": "Canonical page opened through web tool and HTTP main title rechecked.",
+          "approved_source_matches": []
+        }
+      ],
+      "existing_seed_matches": []
+    },
+    {
+      "signal": "mos-excel-for-operational-management-associate",
+      "vendor_id": "microsoft-office",
+      "credential_title": "Microsoft Office Specialist: Excel for Operational Management Associate",
+      "exam_code": "MO-240",
+      "exam_title": "Excel for Operational Management (Microsoft 365 Apps)",
+      "status": "active",
+      "status_basis": "Current credential offers Certiport scheduling, lists English and links an MO-240 skills outline; no beta label observed. This is current-label/scheduling evidence, not an established launch date.",
+      "prerequisites": {
+        "formal_credential_requirement": "Not specified on inspected credential or linked objective PDF; do not assert prerequisite certification.",
+        "recommended_experience": "Approximately 150 hours of Excel and operational-management instruction/hands-on experience, described as candidate preparation rather than mandatory awarded credential."
+      },
+      "anomalies": [
+        "Current credential displays renewal frequency 60 months. Record as current page observation and VERIFY CURRENT; do not extrapolate to other MOS credentials.",
+        "Exam code is visible in the credential PDF link label; PDF itself emphasizes role-based performance tasks and does not print MO-240 in its title."
+      ],
+      "recommended_action": "Research-only Microsoft Office seed MO-240 active, with current-label basis. Separate from MO-210 Excel Associate and MO-211 Expert; no replacement inference.",
+      "checked_on": "2026-10-28",
+      "confidence": "high for visible credential vendor, exam code and explicit beta labels; active labels as bounded stated basis",
+      "opened_sources": [
+        {
+          "requested_url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-for-operational-management-associate/",
+          "checked_on": "2026-10-28",
+          "opened_url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-for-operational-management-associate/",
+          "http_status": 200,
+          "visible_title": "Microsoft Office Specialist: Excel for Operational Management Associate",
+          "inspection_method": "Canonical page opened through web tool and HTTP main title rechecked.",
+          "approved_source_matches": []
+        },
+        {
+          "requested_url": "https://arch-center.azureedge.net/Credentials/mos-excel-for-operational-management-od.pdf",
+          "checked_on": "2026-10-28",
+          "opened_url": "https://arch-center.azureedge.net/Credentials/mos-excel-for-operational-management-od.pdf",
+          "http_status": 200,
+          "visible_title": "Excel for Operational Management (Microsoft 365 Apps)",
+          "inspection_method": "PDF opened through web tool; two pages of extracted outline inspected.",
+          "approved_source_matches": []
+        }
+      ],
+      "existing_seed_matches": []
+    },
+    {
+      "signal": "supply-chain-management-ai-consultant-associate",
+      "vendor_id": "microsoft",
+      "credential_title": "Microsoft Certified: Supply Chain Management AI Consultant Associate (beta)",
+      "exam_code": "AB-330",
+      "exam_title": "Implementing AI-Powered Supply Chain Operations with Dynamics 365 Supply Chain Management",
+      "status": "beta",
+      "status_basis": "Credential heading explicitly beta and body names beta exam AB-330 with delayed-scoring notice. English; 100-minute assessment shown; no current training/practice assessment.",
+      "prerequisites": {
+        "formal_credential_requirement": "Not specified on inspected credential or blueprint; do not infer existing MB-330 requirement.",
+        "recommended_experience": "Hands-on end-to-end Dynamics 365 Supply Chain Management and AI implementation; customer requirements, process dependencies, reliable configurations and cross-role implementation."
+      },
+      "anomalies": [
+        "Published beta page is present now; earlier anticipated November beta timing must not override current explicit beta status.",
+        "New credential identity does not establish retirement or automatic replacement of MB-330."
+      ],
+      "recommended_action": "Research-only Microsoft seed AB-330 beta. Leave MB-330 active unless its own canonical lifecycle evidence changes.",
+      "checked_on": "2026-10-28",
+      "confidence": "high for visible credential vendor, exam code and explicit beta labels; active labels as bounded stated basis",
+      "opened_sources": [
+        {
+          "requested_url": "https://learn.microsoft.com/en-us/credentials/certifications/supply-chain-management-ai-consultant-associate/",
+          "checked_on": "2026-10-28",
+          "opened_url": "https://learn.microsoft.com/en-us/credentials/certifications/supply-chain-management-ai-consultant-associate/",
+          "http_status": 200,
+          "visible_title": "Microsoft Certified: Supply Chain Management AI Consultant Associate (beta)",
+          "inspection_method": "Canonical page opened through web tool and HTTP main title rechecked.",
+          "approved_source_matches": []
+        },
+        {
+          "requested_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-330",
+          "checked_on": "2026-10-28",
+          "opened_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-330",
+          "http_status": 200,
+          "visible_title": "Study guide for Exam AB-330: Implementing AI-Powered Supply Chain Operations with Dynamics 365 Supply Chain Management",
+          "inspection_method": "Canonical page opened through web tool and HTTP main title rechecked.",
+          "approved_source_matches": []
+        }
+      ],
+      "existing_seed_matches": []
+    },
+    {
+      "signal": "PL-400 successor follow-up",
+      "vendor_id": "microsoft",
+      "credential_title": "Microsoft Certified: Power Platform Developer Associate",
+      "exam_code": "AB-400",
+      "exam_title": "Extending Microsoft Power Platform Solutions with Code and AI",
+      "status": "active",
+      "status_basis": "Official exam page explicitly makes AB-400 available October16, 2026 and registration available today; English, retirement none. Official PL-400 transition notice corroborates new registration exclusively AB-400.",
+      "prerequisites": {
+        "formal_credential_requirement": "No separate prerequisite certification identified in inspected exam/credential material.",
+        "recommended_experience": "Power Platform services, JavaScript/TypeScript/JSON/Power Fx, C#/Python/HTML/YAML, REST, Azure, Microsoft Foundry and Copilot Studio."
+      },
+      "anomalies": [
+        "PL-400 existing registrants can still test through October30; new AB-400 identity is not evidence PL-400 was already retired October28.",
+        "AB-400 blueprint is already registered as ab-400-transition-blueprint, but there is no published AB-400 guide."
+      ],
+      "recommended_action": "Research-only Microsoft seed AB-400 active, linked to existing Power Platform Developer Associate credential. No new full guide or source-validation claim; guide publication requires separate objective mapping and review.",
+      "checked_on": "2026-10-28",
+      "confidence": "high for visible credential vendor, exam code and explicit beta labels; active labels as bounded stated basis",
+      "opened_sources": [
+        {
+          "requested_url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-400/",
+          "checked_on": "2026-10-28",
+          "opened_url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-400/",
+          "http_status": 200,
+          "visible_title": "Exam AB-400: Extending Microsoft Power Platform Solutions with Code and AI",
+          "inspection_method": "Canonical page opened through web tool and HTTP main title rechecked.",
+          "approved_source_matches": []
+        },
+        {
+          "requested_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-400",
+          "checked_on": "2026-10-28",
+          "opened_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-400",
+          "http_status": 200,
+          "visible_title": "Study guide for Exam AB-400: Extending Microsoft Power Platform Solutions with Code and AI",
+          "inspection_method": "Canonical page opened through web tool and HTTP main title rechecked.",
+          "approved_source_matches": [
+            "ab-400-transition-blueprint"
+          ]
+        }
+      ],
+      "existing_seed_matches": []
+    }
+  ],
+  "research_only_seeds_added": [
+    "AZ-401",
+    "AB-330",
+    "AB-400",
+    "MO-240"
+  ],
+  "source_health_summary": {
+    "total": 2520,
+    "ok": 2408,
+    "blocked": 109,
+    "broken": 3,
+    "changed": 115,
+    "stale": 0,
+    "baseline_missing": false,
+    "needs_review": true
+  },
+  "source_health_failures": [
+    {
+      "id": "az-ssh-direct-centos-stream9-hv-sock-package",
+      "url": "https://rpmfind.net/linux/RPM/centos-stream/9/baseos/x86_64/kernel-modules-core-5.14.0-704.el9.x86_64.html",
+      "checked_at": "2026-10-28T15:25:53+00:00",
+      "status": "missing",
+      "http_status": 404,
+      "final_url": "https://rpmfind.net/linux/RPM/centos-stream/9/baseos/x86_64/kernel-modules-core-5.14.0-704.el9.x86_64.html",
+      "content_type": "",
+      "page_title": "",
+      "canonical_url": "",
+      "duration_signals": [],
+      "signal_fingerprint": "",
+      "error": "Not Found"
+    },
+    {
+      "id": "pluralsight-pl-900",
+      "url": "https://www.pluralsight.com/paths/microsoft-power-platform-fundamentals-pl-900",
+      "checked_at": "2026-10-28T15:20:23+00:00",
+      "status": "missing",
+      "http_status": 404,
+      "final_url": "https://www.pluralsight.com/paths/microsoft-power-platform-fundamentals-pl-900",
+      "content_type": "",
+      "page_title": "",
+      "canonical_url": "",
+      "duration_signals": [],
+      "signal_fingerprint": "",
+      "error": "Not Found"
+    },
+    {
+      "id": "skilling-hub-levelup-ai-103",
+      "url": "https://www.skilling-hub.com/en-US/listing/o::levelup::2394396",
+      "checked_at": "2026-10-28T15:20:29+00:00",
+      "status": "error",
+      "http_status": null,
+      "final_url": "https://www.skilling-hub.com/en-US/listing/o::levelup::2394396",
+      "content_type": "",
+      "page_title": "",
+      "canonical_url": "",
+      "duration_signals": [],
+      "signal_fingerprint": "",
+      "error": "<urlopen error [Errno 11001] getaddrinfo failed>"
+    }
+  ],
+  "independent_review": {
+    "schema_version": 1,
+    "checked_on": "2026-10-28",
+    "timezone": "America/New_York",
+    "reviewer": {
+      "kind": "ai-agent",
+      "independence": "fresh-context",
+      "read_only": true,
+      "editing_conversation_used": false,
+      "human_review": false,
+      "live_product_or_lab_execution": false
+    },
+    "review_kind": "bounded diff/evidence review; not a complete semantic audit or a new deep-review receipt",
+    "verdict": "bounded-review-complete; reported repairs verified; no remaining open findings within inspected scope",
+    "scope": {
+      "first_packet": [
+        "AZ-800",
+        "AZ-801",
+        "MS-102",
+        "AB-210",
+        "AB-650",
+        "AI-500",
+        "PL-400",
+        "AB-100",
+        "AB-900",
+        "MD-102"
+      ],
+      "additional_header_title_notice_packet": [
+        "AB-730",
+        "AI-200",
+        "DP-300",
+        "DP-420",
+        "DP-600",
+        "DP-700",
+        "DP-750",
+        "DP-800",
+        "MB-330",
+        "MS-700",
+        "MS-721",
+        "SC-100",
+        "SC-200",
+        "SC-300",
+        "SC-401",
+        "SC-900"
+      ],
+      "methods": [
+        "Compared current guide edits with before-repairs copies and inspected surrounding sections, metadata, source/lifecycle statements, learning sections and targeted lifecycle terms.",
+        "Inspected all additional packet headers/notices and title/catalog consistency; did not audit full objective coverage.",
+        "Read AGENTS.md, CONTRIBUTING.md, docs/AI-AUDIT.md, CONTENT-POLICY.md, SOURCE-QUALITY.md and GUIDE-QUALITY-STANDARD.md; examined workflow diffs and evidence ledgers.",
+        "Compared historical source-review rows by ID and exact value; checked guide hashes and accepted-objective hashes against evidence.",
+        "Inspected validator diff and new/existing focused unit tests; ran focused test module.",
+        "Read neutral researcher evidence relevant to applied changes and inspected research-only seed/candidate additions."
+      ],
+      "excluded_earlier_work": "Existing IBM Bob additions are not attributed to this Microsoft refresh."
+    },
+    "binding": {
+      "guides": [
+        {
+          "exam_code": "AZ-800",
+          "guide_path": "guides/AZ-800-administering-windows-server-hybrid-core-infrastructure.md",
+          "guide_content_sha256": "b32450aeed3e511fdca4d9fb8b11d7c719358b6026dcd89155e4cd11f824b99f",
+          "accepted_objective_sha256": "03c6f4e0c73f383ada8c4ddf43a91fa28ec513a732b40abae0a38b1b6ac4f7bc"
+        },
+        {
+          "exam_code": "AZ-801",
+          "guide_path": "guides/AZ-801-configuring-windows-server-hybrid-advanced-services.md",
+          "guide_content_sha256": "0703d1da7132ad3495266e8208727540bde0fa288407608dcdfa1fb3b601deb6",
+          "accepted_objective_sha256": "c279fe648d4e3a6c67df9e119c95335e042937b93b83ffbf6a07d7f0ce51a76f"
+        },
+        {
+          "exam_code": "MS-102",
+          "guide_path": "guides/MS-102-microsoft-365-administrator.md",
+          "guide_content_sha256": "5a3823b062cb0c00372014c6e2dbfc7764d5614db3a67688efe8c2a2ab8a2536",
+          "accepted_objective_sha256": "97ce6b34e98fb43947409e8b7997f3de72e6cae7a62102dfdea849bfb177c92a"
+        },
+        {
+          "exam_code": "AB-210",
+          "guide_path": "guides/AB-210-accelerating-sales-pipelines-ai-dynamics-365.md",
+          "guide_content_sha256": "e666ce5f85d97391a2caee589f7f59c8be512479fc545513e1aac45fb446671f",
+          "accepted_objective_sha256": "2595badf528595419ed8da12bf5aed577d899ee8772123a0b1e40d1c2eac0f83"
+        },
+        {
+          "exam_code": "AB-650",
+          "guide_path": "guides/AB-650-ai-services-administrator-associate.md",
+          "guide_content_sha256": "450bf5aa602ee58913305c33beaeb19e058522cce1e2fb79afc7bfeb3312b55d",
+          "accepted_objective_sha256": "e70d10682f078cb6887f7dde679f56661e63dfeabb221779f6b0ff4ab08bdf1a"
+        },
+        {
+          "exam_code": "AI-500",
+          "guide_path": "guides/AI-500-designing-implementing-multi-agent-ai-solutions.md",
+          "guide_content_sha256": "ec362f9caebe568c783fc5c144c7d2aa2d96ef93b650f5517fcc8c4ae0f1af80",
+          "accepted_objective_sha256": "498ed5ca3e5f1ac958dedea4b84cb33a34a8ff0f5aa239540fd7283bc41360e8"
+        },
+        {
+          "exam_code": "PL-400",
+          "guide_path": "guides/PL-400-microsoft-power-platform-developer.md",
+          "guide_content_sha256": "fc2245581a0f3ae0e94b51d36e836b6c2c5762941daf5a2eb083387340f300e3",
+          "accepted_objective_sha256": "4867995d075161ae07190d54a25c84872deb9efc388a7629743ee6bc49b8f468"
+        },
+        {
+          "exam_code": "AB-100",
+          "guide_path": "guides/AB-100-agentic-ai-business-solutions-architect.md",
+          "guide_content_sha256": "cea199f4b8e1e0f253582764cbd84d4a35fa3aac1f0c7b9b4614b22813a8b809",
+          "accepted_objective_sha256": "3736af21c41a6a8c785e5461d4ba25424a9e6b2205a3c10ae1d18589e16a61e2"
+        },
+        {
+          "exam_code": "AB-900",
+          "guide_path": "guides/AB-900-microsoft-365-copilot-agent-administration-fundamentals.md",
+          "guide_content_sha256": "1267f5dcdddb8bd224e5220f59a229064eaf07234203f5623dfda3ef2cdd4517",
+          "accepted_objective_sha256": "8e38035a94d260856ff5c08899492597046213510e057128edd89d775d363b90"
+        },
+        {
+          "exam_code": "MD-102",
+          "guide_path": "guides/MD-102-managing-securing-microsoft-365-endpoints-intune.md",
+          "guide_content_sha256": "ec5738f0393f04d7513fda43cb0472c85208714791cef9561d1fa644610d968a",
+          "accepted_objective_sha256": "ba90e464c3a81deac207962ffe32e88c3ac6b0d966c33ba77572bb3d83910009"
+        },
+        {
+          "exam_code": "AB-730",
+          "guide_path": "guides/AB-730-ai-business-professional.md",
+          "guide_content_sha256": "c9f308835b4dd5dc4f1cee15ea506c0931de9ffc27613240d8dc176c7ba4755a",
+          "accepted_objective_sha256": "5387c1978cda745a51ab645fb402bb8080729bcf6461c63a1eac464492e71a55"
+        },
+        {
+          "exam_code": "AI-200",
+          "guide_path": "guides/AI-200-developing-ai-cloud-solutions-on-azure.md",
+          "guide_content_sha256": "9c27726d1d25a82de7419ace697ec48854989f791ccac8649ed1d3905b64f01d",
+          "accepted_objective_sha256": "3dc5dfbae796cc5345c92061d04d0e671d5ebc7252ac057038ca61b8b8a6e464"
+        },
+        {
+          "exam_code": "DP-300",
+          "guide_path": "guides/DP-300-administering-microsoft-azure-sql-solutions.md",
+          "guide_content_sha256": "065ed60b29bbd2f267a7720aa7e49ab439d106d612dbb25d503d96feb64515d4",
+          "accepted_objective_sha256": "08cba3368c07be28f4abeea90be94256a0cd0fc247ed53f2561fd340c0df3e4b"
+        },
+        {
+          "exam_code": "DP-420",
+          "guide_path": "guides/DP-420-designing-and-implementing-cloud-native-applications-using-microsoft-azure-cosmos-db.md",
+          "guide_content_sha256": "7494e1a8bd331bcb62a9cd4701c383bb32496d9d5bbfce710972af696347e53b",
+          "accepted_objective_sha256": "7966ceca9589ef574018cacb35f5bcd02a55b148a34107310b5e7c9e1e52de7a"
+        },
+        {
+          "exam_code": "DP-600",
+          "guide_path": "guides/DP-600-implementing-analytics-solutions-microsoft-fabric.md",
+          "guide_content_sha256": "49098f811ce39e0e10c533e826c533d2aa743e4f1e43f7b0022e2739224ccf0a",
+          "accepted_objective_sha256": "2b7d8452085a3503eaa3c72d3b5afd25ccb6dd2b42177e876d4c5d373051e3ec"
+        },
+        {
+          "exam_code": "DP-700",
+          "guide_path": "guides/DP-700-implementing-data-engineering-solutions-microsoft-fabric.md",
+          "guide_content_sha256": "a144c4e76fa45b34d93a97d5cf845bebdda1fc0398e53edcddc2f1c9dc0cea47",
+          "accepted_objective_sha256": "b250753e6f60be9e2a9625e9849d575999dc56fc6afe43788a85ce43db5e25a8"
+        },
+        {
+          "exam_code": "DP-750",
+          "guide_path": "guides/DP-750-implementing-data-engineering-solutions-using-azure-databricks.md",
+          "guide_content_sha256": "dd3f611324dd93e61b5bc023f88db2bbb8e9e006a20d4d818960c4f62c97fe6d",
+          "accepted_objective_sha256": "eba786118a9e5129571b0a9505b8849bd82f3cdf84e2da759d735f354f27fb84"
+        },
+        {
+          "exam_code": "DP-800",
+          "guide_path": "guides/DP-800-developing-ai-enabled-database-solutions.md",
+          "guide_content_sha256": "572b60c987f405d24ddebc7dc67dc2a5a4e98a99cb8641e0d4b4aca091b9faf6",
+          "accepted_objective_sha256": "5302e42b10e2f414caa1fba1ef4e641ecfb85b44d87bb39635b5caea2ac79e7f"
+        },
+        {
+          "exam_code": "MB-330",
+          "guide_path": "guides/MB-330-microsoft-dynamics-365-supply-chain-management-functional-consultant.md",
+          "guide_content_sha256": "2741537e84737f0cb31a372d1d760bd94e3fb527505c990cb111ecdfecf4b2bd",
+          "accepted_objective_sha256": "d2256ab65b1fb5846cf0bcd68e769a0ce0cf7e64ad9ccfc709d5f9ba7866427a"
+        },
+        {
+          "exam_code": "MS-700",
+          "guide_path": "guides/MS-700-managing-microsoft-teams.md",
+          "guide_content_sha256": "048b756c738945a616a6b955e8e9345485ca40aeb46beadb99fb466bdc06d44a",
+          "accepted_objective_sha256": "7b8312756006b9ee0f6b8e5fdb134797ef97c6ed27f664d0f518b8007cd03061"
+        },
+        {
+          "exam_code": "MS-721",
+          "guide_path": "guides/MS-721-collaboration-communications-systems-engineer.md",
+          "guide_content_sha256": "f351575d2e50bb966c21d8e6ad83dbd6a7e100c81509f765eb46f71d6a428b7f",
+          "accepted_objective_sha256": "5167d7ad28df0c595db0836af19c921bc647da376dd96d029dbdf9f60555c5b0"
+        },
+        {
+          "exam_code": "SC-100",
+          "guide_path": "guides/SC-100-microsoft-cybersecurity-architect.md",
+          "guide_content_sha256": "6a15647d47ba40a3b213e072616003e1a30adde4d3e2e4916cd6eeb267e9696b",
+          "accepted_objective_sha256": "342b0f01a93d8047a5dbc4ecc9d9529b94191d6cab60c99af7307251aaee6099"
+        },
+        {
+          "exam_code": "SC-200",
+          "guide_path": "guides/SC-200-microsoft-security-operations-analyst.md",
+          "guide_content_sha256": "215177cff13dc0da8775df14bc517d408866d10e82d06888efcb04d1303fd399",
+          "accepted_objective_sha256": "c64e8b14b67c6cd01b9ec4df39441c9d83971c5e2db87010561edbb07eda656e"
+        },
+        {
+          "exam_code": "SC-300",
+          "guide_path": "guides/SC-300-microsoft-identity-access-administrator.md",
+          "guide_content_sha256": "bdbefd13973e7fa01a27ed6f3fcc6e5f5e5fab2a8c46852fe3cb11b04221ecfb",
+          "accepted_objective_sha256": "242f9f0cedd16af9ee78aa8d389ab62fcba2a925f7b86070d44f94d5f98c624b"
+        },
+        {
+          "exam_code": "SC-401",
+          "guide_path": "guides/SC-401-administering-information-security-microsoft-365.md",
+          "guide_content_sha256": "75397fc154f912b2ae5e9b4bb2958049a3125b6feb4e85b9dd304d2b186e9c42",
+          "accepted_objective_sha256": "5ca7d97c4a3ab4854779d477e20c4c2f6fc0b3ddeb987c6b63b8211127f51e85"
+        },
+        {
+          "exam_code": "SC-900",
+          "guide_path": "guides/SC-900-microsoft-security-compliance-identity-fundamentals.md",
+          "guide_content_sha256": "1d76e9d219abf07492eaf7212e361f0ef97655db91f8092f7f21573799bc34c0",
+          "accepted_objective_sha256": "e2869853685f48f936c2833bda16c5065a629346c7f5d1c9cd5aa91f9d1a3b91"
+        }
+      ],
+      "guide_hash_normalization": "UTF-8 complete text after CRLF/CR normalization to LF",
+      "objective_hashes": "raw bytes",
+      "rubric": "docs/AI-AUDIT.md rubric 2 used as bounded review guidance; completed ten-check audit not claimed",
+      "reviewed_files": [
+        {
+          "path": "scripts\\validate_repository.py",
+          "normalized_utf8_sha256": "7d8801e0b235895123d3675f7a025c590735954af6abf581eaabfc972760615d"
+        },
+        {
+          "path": "tests\\test_validate_repository.py",
+          "normalized_utf8_sha256": "01bdcc9063524f6c0a5af291a624711fd9e0c4d31ac0e63246a540cbcfe57c36"
+        },
+        {
+          "path": "docs\\AI-AUDIT.md",
+          "normalized_utf8_sha256": "278cf31babc4ddb4bcb2414e3a9d0a9d900a7584bd34f64fa48addec09d56fb6"
+        },
+        {
+          "path": "docs\\AUTOMATION.md",
+          "normalized_utf8_sha256": "16b9f93ea2ba8b92ca00c732ce3c3c23eece8de88cca56888046ac6b1477c454"
+        }
+      ]
+    },
+    "preservation_checks": {
+      "all_55_evidence_guide_hashes_matched": true,
+      "all_55_evidence_objective_hashes_matched_existing_accepted_files": true,
+      "historical_source_review_rows_changed_or_lost": [],
+      "tracked_objective_snapshot_deep_review_or_ai_audit_changes": []
+    },
+    "validator_review": {
+      "result": "No material weakening found in inspected change. Historical fallback uses earliest retained source review only when no review existed on/before audit; hashes/path/outcome still bind. Audits on/after blueprint check require a current source-validation record. Scratch exclusion test still rejects an equivalent broken link in public README.",
+      "test_command": "python -m unittest discover -s tests -p test_validate_repository.py -q",
+      "tests_run": 42,
+      "result_test": "passed",
+      "elapsed_seconds": 52.839,
+      "limits": "Focused unit module only; no duplicate maintenance collector or full site build run by reviewer."
+    },
+    "positive_observations": [
+      "Primary study guides explicitly corroborate AZ-800/AZ-801 retirement.",
+      "AI-500 active observation is clearly separated from an unestablished exact GA date and class delivery.",
+      "PL-400 registration/test windows and AB-400 training versus exam transition are distinguished.",
+      "New Backup approval/logging, Cowork, NTLM, recovery, Content Safety, Intune and harness notes match inspected first-party contracts with scoped limitations.",
+      "Three new learning sources distinguish public instructions/outline from tenant or paid class access, and publisher duration from editorial study estimates.",
+      "Four research-only seeds preserve unknown formal prerequisites, template anomalies, current-label status basis and absence of complete guide review; GH-700 is queued outside Microsoft guide scope.",
+      "No new full deep-review completion, human review or product execution claim observed in the refresh report.",
+      "Opened AI-200/SC-300 primary objectives corroborate the internal weight conflicts; AB-100 current page displays the explicitly future November 16 outline."
+    ],
+    "opened_primary_urls": [
+      "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-800",
+      "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-801",
+      "https://learn.microsoft.com/en-us/credentials/certifications/exams/ai-500/",
+      "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate/",
+      "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-offboarding?view=o365-worldwide",
+      "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-privacy-security?view=o365-worldwide",
+      "https://learn.microsoft.com/en-us/azure/ai-services/content-safety/whats-new",
+      "https://learn.microsoft.com/en-us/windows/configuration/quick-machine-recovery/?tabs=csp",
+      "https://learn.microsoft.com/en-us/copilot/cowork/cowork-admin-governance",
+      "https://learn.microsoft.com/en-us/azure/backup/backup-azure-restore-files-from-vm",
+      "https://learn.microsoft.com/en-us/intune/device-security/security-baselines/configure-baselines",
+      "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/overview",
+      "https://learn.microsoft.com/en-us/intune/whats-new/",
+      "https://support.microsoft.com/en-us/servicing/os/windows/docs/2025/08/upcoming-changes-to-ntlmv1-in-windows-11-version-24h2-and-windows-server-2025",
+      "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-721",
+      "https://learn.microsoft.com/en-us/credentials/certifications/azure-cosmos-db-developer-specialty/",
+      "https://learn.microsoft.com/en-us/credentials/certifications/d365-sales-ai-consultant-associate/",
+      "https://learn.microsoft.com/en-us/training/courses/ab-650t00",
+      "https://learn.microsoft.com/en-us/training/courses/ab-400t00",
+      "https://github.com/MicrosoftLearning/MD-102T00-Microsoft-365-Endpoint-Administrator/blob/main/Instructions/Labs/Lab01-Foundation.md",
+      "https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-210/",
+      "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-200",
+      "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-300",
+      "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100"
+    ],
+    "findings": [
+      {
+        "id": "MSREF-REVIEW-01",
+        "severity": "medium",
+        "check": "technical_coherence",
+        "status": "resolved",
+        "affected_exams": [
+          "AB-210"
+        ],
+        "location": {
+          "file": "guides/AB-210-accelerating-sales-pipelines-ai-dynamics-365.md",
+          "line": 431
+        },
+        "evidence": "The October 28 lifecycle update at line 20 says the credential advertises a Practice Assessment on AI Skills Navigator, but Places to learn still states that Microsoft says no Practice Assessment is currently available. The directly opened credential page simultaneously retains beta/delayed-score wording and advertises the assessment; beta is not evidence that the assessment is absent.",
+        "source_urls": [
+          "https://learn.microsoft.com/en-us/credentials/certifications/d365-sales-ai-consultant-associate/"
+        ],
+        "recommendation": "Make the old unavailability sentence explicitly historical as of September 28, and repeat the current advertised/sign-in-required observation with the existing limitation that the assessment itself was not opened.",
+        "further_confirmation_needed": "No additional source confirmation is needed for this wording repair; actual assessment launch/content remains unverified.",
+        "resolution": {
+          "disposition_owner": "coordinator",
+          "repair_performed_by": "coordinator in a separate shared-file change after the read-only finding",
+          "reviewer_changed_shared_targets": false,
+          "verified_on": "2026-10-28",
+          "verification": "Re-read line 20 and Places to learn line 431. The latter now dates September unavailability as historical, describes October advertised sign-in availability and says the assessment was not opened/tested. The exam URL redirects to the corroborated credential page."
+        }
+      },
+      {
+        "id": "MSREF-REVIEW-02",
+        "severity": "medium",
+        "check": "volatility_and_lifecycle",
+        "status": "resolved",
+        "affected_exams": [
+          "DP-420",
+          "DP-750",
+          "DP-800"
+        ],
+        "location": {
+          "file": "guides/DP-420-designing-and-implementing-cloud-native-applications-using-microsoft-azure-cosmos-db.md",
+          "line": 21
+        },
+        "additional_locations": [
+          {
+            "file": "guides/DP-420-designing-and-implementing-cloud-native-applications-using-microsoft-azure-cosmos-db.md",
+            "line": 22
+          },
+          {
+            "file": "guides/DP-420-designing-and-implementing-cloud-native-applications-using-microsoft-azure-cosmos-db.md",
+            "line": 23
+          },
+          {
+            "file": "guides/DP-750-implementing-data-engineering-solutions-using-azure-databricks.md",
+            "line": 20
+          },
+          {
+            "file": "guides/DP-800-developing-ai-enabled-database-solutions.md",
+            "line": 20
+          }
+        ],
+        "evidence": "DP-420 now has the current AI Applications title and renamed inventory row, but its status block still calls October 6 scope a published future blueprint, says the credential becomes AI Developer Associate on October 6, and labels the current linked page Developer Specialty. The credential page explicitly says the change went into effect October 6. DP-750 and DP-800 similarly call October 19 scope future until its effective date. Preserving older teaching snapshots does not make those dates future on October 28; the generic review-required notice leaves contradictory temporal claims in place.",
+        "source_urls": [
+          "https://learn.microsoft.com/en-us/credentials/certifications/azure-cosmos-db-developer-specialty/",
+          "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-750",
+          "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-800"
+        ],
+        "recommendation": "Identify older snapshots as accepted teaching baselines pending reconciliation, update passed-date/future language and current DP-420 credential label/level, and explicitly retain the former name as history. Do not replace snapshots or imply a completed objective rebaseline.",
+        "further_confirmation_needed": "Use the already captured current effective dates; full objective reconciliation remains separate work.",
+        "resolution": {
+          "disposition_owner": "coordinator",
+          "repair_performed_by": "coordinator in a separate shared-file change after the read-only finding",
+          "reviewer_changed_shared_targets": false,
+          "verified_on": "2026-10-28",
+          "verification": "Re-read DP-420 lines 20-23 and DP-750/DP-800 lines 20-21. October effective dates are now stated as passed, teaching baselines are accepted/historical pending reconciliation, and current DP-420 name/level is explicit."
+        }
+      },
+      {
+        "id": "MSREF-REVIEW-03",
+        "severity": "low",
+        "check": "volatility_and_lifecycle",
+        "status": "resolved",
+        "affected_exams": [
+          "MD-102"
+        ],
+        "location": {
+          "file": "guides/MD-102-managing-securing-microsoft-365-endpoints-intune.md",
+          "line": 57
+        },
+        "evidence": "The guide now has an October 28 observation date and current October implementation notes, while its watch paragraph still tells the reader to treat week-of-September-28 entries as upcoming relative to this review date. The section heading is dated September 27, so the underlying observation can remain historical, but the active instruction is easy to misread. TECH-N11 in neutral technical evidence already recommends correcting this.",
+        "source_urls": [
+          "https://learn.microsoft.com/en-us/intune/whats-new/"
+        ],
+        "recommendation": "Label that sentence an explicit September observation or say the week has passed while rollout/tenant availability still requires verification.",
+        "further_confirmation_needed": "No tenant rollout confirmation is required for the temporal wording correction.",
+        "resolution": {
+          "disposition_owner": "coordinator",
+          "repair_performed_by": "coordinator in a separate shared-file change after the read-only finding",
+          "reviewer_changed_shared_targets": false,
+          "verified_on": "2026-10-28",
+          "verification": "Re-read MD-102 line 57 and its surrounding watch section. September timing is now explicitly historical and actual rollout remains unverified."
+        }
+      },
+      {
+        "id": "MSREF-REVIEW-04",
+        "severity": "low",
+        "check": "volatility_and_lifecycle",
+        "status": "resolved",
+        "affected_exams": [
+          "MS-721"
+        ],
+        "location": {
+          "file": "guides/MS-721-collaboration-communications-systems-engineer.md",
+          "line": 21
+        },
+        "evidence": "Front matter now says scheduled and the October 28 notice correctly identifies an October 29 future outline, but the directly following Upcoming blueprint change line still says none announced as of September 28. It is dated historical evidence, yet it occupies the current status slot and was not superseded explicitly.",
+        "source_urls": [
+          "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-721"
+        ],
+        "recommendation": "Replace the current status line with the October 29 announcement observed October 28; retain April teaching baseline and pending reconciliation.",
+        "further_confirmation_needed": "No further confirmation needed for the announcement; do not infer the future outline is already effective.",
+        "resolution": {
+          "disposition_owner": "coordinator",
+          "repair_performed_by": "coordinator in a separate shared-file change after the read-only finding",
+          "reviewer_changed_shared_targets": false,
+          "verified_on": "2026-10-28",
+          "verification": "Re-read MS-721 lines 20-21. April is an accepted teaching baseline, October 29 is explicitly future on October 28, and the former no-change observation is historical."
+        }
+      },
+      {
+        "id": "MSREF-REVIEW-05",
+        "severity": "low",
+        "check": "volatility_and_lifecycle",
+        "status": "resolved",
+        "affected_exams": [
+          "AZ-801",
+          "AZ-800"
+        ],
+        "location": {
+          "file": "guides/AZ-801-configuring-windows-server-hybrid-advanced-services.md",
+          "line": 1360
+        },
+        "additional_locations": [
+          {
+            "file": "guides/AZ-801-configuring-windows-server-hybrid-advanced-services.md",
+            "line": 1368
+          },
+          {
+            "file": "guides/AZ-800-administering-windows-server-hybrid-core-infrastructure.md",
+            "line": 1026
+          }
+        ],
+        "evidence": "The new prominent retired headers are correct. AZ-801 nevertheless retains a Final review before the retirement date section and Schedule conservatively booking instructions ending with a conditional recommendation to switch to AZ-802 if the path is no longer realistic. AZ-800 has an exam-date/retirement readiness checkbox. These booking instructions should be marked historical or redirected now that the exams have definitively retired.",
+        "source_urls": [
+          "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-800",
+          "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-801"
+        ],
+        "recommendation": "Mark pre-retirement booking advice historical and point current exam-readiness actions to AZ-802. Preserve technical study content and unresolved gaps.",
+        "further_confirmation_needed": "No further confirmation needed; both primary study guides explicitly state retired.",
+        "resolution": {
+          "disposition_owner": "coordinator",
+          "repair_performed_by": "coordinator in a separate shared-file change after the read-only finding",
+          "reviewer_changed_shared_targets": false,
+          "verified_on": "2026-10-28",
+          "verification": "Re-read AZ-801 final checklist/retirement paragraph and AZ-800 readiness checkbox. Booking advice no longer offers the retired exam route; current certification preparation points to AZ-802."
+        }
+      },
+      {
+        "id": "MSREF-REVIEW-06",
+        "severity": "medium",
+        "check": "volatility_and_lifecycle",
+        "status": "resolved",
+        "affected_exams": [
+          "AI-200"
+        ],
+        "location": {
+          "file": "guides/AI-200-developing-ai-cloud-solutions-on-azure.md",
+          "line": 25
+        },
+        "additional_locations": [
+          {
+            "file": "guides/AI-200-developing-ai-cloud-solutions-on-azure.md",
+            "line": 925
+          },
+          {
+            "file": "guides/AI-200-developing-ai-cloud-solutions-on-azure.md",
+            "line": 944
+          },
+          {
+            "file": "guides/AI-200-developing-ai-cloud-solutions-on-azure.md",
+            "line": 956
+          },
+          {
+            "file": "guides/AI-200-developing-ai-cloud-solutions-on-azure.md",
+            "line": 961
+          }
+        ],
+        "evidence": "During primary corroboration of the weighting conflict, the live AI-200 study guide advertised Practice Assessment availability through AI Skills Navigator with sign-in, while the guide header, assessment section, learning row and study sequence continued to describe the assessment as unavailable.",
+        "source_urls": [
+          "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-200"
+        ],
+        "recommendation": "Preserve September unavailability as historical; consistently describe the current advertised listing and sign-in requirement, without claiming the assessment was opened or tested.",
+        "further_confirmation_needed": "Assessment launch/content remains unverified; no further confirmation required to correct listing metadata.",
+        "resolution": {
+          "disposition_owner": "coordinator",
+          "repair_performed_by": "coordinator in a separate shared-file change after the read-only finding",
+          "reviewer_changed_shared_targets": false,
+          "verified_on": "2026-10-28",
+          "verification": "Re-read AI-200 header, assessment section, resource table and study sequence. They now consistently distinguish historical unavailability, current advertised listing and unverified assessment launch/content."
+        }
+      },
+      {
+        "id": "MSREF-REVIEW-07",
+        "severity": "medium",
+        "check": "review_evidence_accuracy",
+        "status": "resolved",
+        "affected_exams": [
+          "AZ-800",
+          "AZ-801",
+          "MS-102",
+          "AB-210",
+          "AB-650",
+          "AI-500",
+          "PL-400",
+          "AB-100",
+          "AB-900",
+          "MD-102",
+          "AB-730",
+          "AI-200",
+          "DP-300",
+          "DP-420",
+          "DP-600",
+          "DP-700",
+          "DP-750",
+          "DP-800",
+          "MB-330",
+          "MS-700",
+          "MS-721",
+          "SC-100",
+          "SC-200",
+          "SC-300",
+          "SC-401",
+          "SC-900"
+        ],
+        "location": {
+          "file": "docs/AI-AUDIT.md",
+          "line": 225
+        },
+        "evidence": "The touched audit policy document still called 220 guide-bound results current and said no source-ready guide remained audit-due, although the October 28 guide edits changed their bindings. Preserved earlier passing results are historical for changed guides; this bounded review cannot renew their semantic audits.",
+        "source_urls": [],
+        "recommendation": "Date the earlier coverage assertion as pre-refresh history and explicitly say changed October 28 bindings require new full semantic audits after applicable gates. Do not claim that the diff/evidence review satisfies those audits.",
+        "further_confirmation_needed": "No recomputed current audit count is required if the text clearly reports a dated historical observation.",
+        "resolution": {
+          "disposition_owner": "coordinator",
+          "repair_performed_by": "coordinator in a separate shared-file change after the read-only finding",
+          "reviewer_changed_shared_targets": false,
+          "verified_on": "2026-10-28",
+          "verification": "Re-read docs/AI-AUDIT.md lines 225-227. The 220-guide statement is now explicitly pre-refresh history and changed bindings require new full semantic audits; this diff/evidence review does not fulfill them."
+        }
+      }
+    ],
+    "summary": {
+      "open_medium": 0,
+      "open_low": 0,
+      "open_high": 0,
+      "open_critical": 0,
+      "resolved_by_coordinator_and_rechecked": 7,
+      "original_medium": 4,
+      "original_low": 3
+    },
+    "uninspected_scope": [
+      "Complete semantic reread of all ten first-packet guide bodies and every cited source; this pass inspected changed text and selected surrounding/related teaching content, not every claim, scenario, answer or lab.",
+      "Full objective-by-objective reconciliation of the twenty changed-objective guides, current/candidate blueprint acceptance, and the remaining 29 unchanged guides.",
+      "All 2520 source-health bodies and the reported 109 blocked/three failed source issues; health reachability is not claim verification.",
+      "Every discovery page and complete source/licensing text beyond the selected opened primary references; seed inspection relied additionally on neutral researcher evidence.",
+      "Any tenant/device/VM/cloud/model/SDK execution, paid course/assessment content, authenticated launches, videos, booking or human review."
+    ],
+    "further_confirmation_needed": "None for the seven bounded wording/evidence repairs after recheck. Complete objective/source reconciliations, new full semantic audits, actual assessment access and product/lab execution remain separate uncompleted work; final deterministic repository/site validation is coordinator-owned.",
+    "repair_recheck": {
+      "completed_on": "2026-10-28",
+      "method": "Separate read-only recheck after coordinator repairs; retained original findings and original guide bindings rather than deleting history.",
+      "all_55_final_guide_hashes_match_ledger": true,
+      "all_55_exact_accepted_objective_hashes_match_ledger": true,
+      "full_semantic_audits_completed": 0
+    }
+  },
+  "validation": {
+    "unit_tests": {
+      "passed": 193,
+      "command": "python -m unittest discover -s tests -v"
+    },
+    "reviewer_focused_tests": {
+      "passed": 42
+    },
+    "repository_validation": "passed after consistency repairs",
+    "strict_site_build": "passed during initial repair wave; final build and generated-site validation follow assembled report",
+    "content_completion": "Initial repair wave only; full objective reconciliation and semantic audits pending"
+  }
+}

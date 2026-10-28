@@ -308,13 +308,14 @@ This is a curated starting point, not a complete list, and it is not meant to be
 
 | Resource | Access | Estimated time | Best use and caveat |
 |---|---|---:|---|
-| [Microsoft Learn — AB-900 course](https://learn.microsoft.com/en-us/training/courses/ab-900t00) | Free self-study; instructor-led options vary | 1 day (official course) | Current objective-aligned foundation for Microsoft 365, Purview, Copilot, and agent administration |
+| [AB-900T00: Introduction to Microsoft 365 and AI administration](https://learn.microsoft.com/en-us/training/courses/ab-900t00) | Free self-study; instructor-led options vary | 1 day (official course) | Current objective-aligned foundation for Microsoft 365, Purview, Copilot, and agent administration |
 | [Microsoft — AB-900 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/copilot-and-agent-administration-fundamentals/practice/assessment?assessment-type=practice&assessmentId=428463062&practice-assessment-type=certification) | Free Microsoft account | About 1–2 hours for an attempt and review | Repeatable official readiness check with rationales and learning links; use after learning and verify fast-changing details in current Microsoft documentation |
-| [Microsoft Learn AB-900 learning material](https://learn.microsoft.com/en-us/credentials/certifications/copilot-and-agent-administration-fundamentals/) | Free | About 10–14 hours | Official scope anchor; add tenant exploration where authorized |
+| [Explore Microsoft 365 administration](https://learn.microsoft.com/en-us/training/paths/explore-microsoft-365-administration/) | Free public reading; licensed tenant needed for product practice | About 3–5 hours for three modules and control-map notes (editorial estimate) | Core service objects, security and Purview governance; current product documentation governs exact controls |
+| [Explore Microsoft 365 Copilot and agent administration](https://learn.microsoft.com/en-us/training/paths/explore-microsoft-365-copilot-agent-administration/) | Free public reading; product entitlements vary | About 3–5 hours for three modules and notes (editorial estimate) | Capabilities/licensing, Copilot administration and agent lifecycle; practice adds time |
 | [Pluralsight — AB-900 path and practice exam](https://www.pluralsight.com/paths/microsoft-365-copilot-and-agent-administration-fundamentals-ab-900) | Subscription; practice access depends on plan/library | 9 hours plus about 2–4 hours for assessment and review | Three-course path published June–July 2026 by Vlad Catrinescu; public path explicitly includes a practice exam |
-| [O'Reilly — Microsoft 365 Copilot and Agent Administration Fundamentals](https://www.oreilly.com/library/view/microsoft-365-copilot/9781807306519/) | Subscription | About 7 hours 22 minutes | Steve Miles, July 2026, 278 pages; broad book treatment aligned to the new credential |
-| [O'Reilly — AB-900 Certification Course](https://www.oreilly.com/videos/ab-900-certification/9781807788490/) | Subscription | About 4 hours | Pavel Hrabec video course; useful compact review, then practice admin decisions |
-| [Udemy — AB-900 by John Christopher](https://www.udemy.com/course/ab-900-copilot-agent-administration-fundamentals-course/) | Purchase or subscription | About 11 hours | Course shown as updated August 2026; inspect previews, hands-on tenant needs, and current objective mapping |
+| [O'Reilly — Microsoft 365 Copilot and Agent Administration Fundamentals](https://www.oreilly.com/library/view/microsoft-365-copilot/9781807306519/) | Subscription | 7 hours 22 minutes (platform reading estimate) | Steve Miles, July 2026, 278 pages; broad book treatment aligned to the new credential |
+| [O'Reilly — AB-900 Certification Course](https://www.oreilly.com/videos/ab-900-certification/9781807788490/) | Subscription | 4 hours 18 minutes | Pavel Hrabec, March 2026 video course; useful compact review, then practice admin decisions |
+| [Udemy — AB-900 by John Christopher](https://www.udemy.com/course/ab-900-copilot-agent-administration-fundamentals-course/) | Purchase or subscription | 11 hours 7 minutes | October 2026 public listing: 14 sections / 88 lectures; inspect previews, hands-on tenant needs, and current objective mapping |
 | [Microsoft Mechanics](https://www.youtube.com/@MSFTMechanics) | Free | Select 2–4 hours by gap | Official product demos for Microsoft 365 Copilot, agents, identity, and governance; not a single exam course |
 | [MeasureUp — AB-900 practice test](https://www.measureup.com/microsoft-ab-900-microsoft-365-copilot-agent-administration-fundamentals-practice-test.html) | Paid test or subscription; free demo available | About 4–8 hours for simulation and review | Tier 6 assessment with 115 questions, released April 2026; verify fast-changing Copilot administration details against current Microsoft Learn |
 | [Whizlabs — AB-900 course and practice tests](https://www.whizlabs.com/ab-900-microsoft-365-copilot-and-agent-administration/) | Paid course or subscription | About 3–6 hours for assessment and review; instructional time not published | Whizlabs identifies a mixed course/practice offering, but its public product page does not expose a reliable item count or total runtime; pair it with explanatory official learning |
@@ -325,7 +326,7 @@ Whizlabs identifies its AB-900 listing as a course and practice-test offering, b
 
 [Agent management updates in the Copilot Control System](https://techcommunity.microsoft.com/blog/microsoftmechanicsblog/agent-management-updates-in-the-copilot-control-system/4414790), **Microsoft Mechanics, posted by Zachary-Cavanell, May 19, 2025; presented by Jeremy Chapman**. Estimate 15–25 minutes for the public article/transcript and a control map. It connects discovery, usage, deployment, billing and investigation. Its older navigation and message-based billing terminology must be reconciled with current Agent 365 and Copilot Credits documentation. Exercise: identify the separate evidence needed to approve an agent, authorize a tool and stop metered use. The article and transcript were read; the video was not played and tenant steps were not executed.
 
-The three O'Reilly/Udemy pages were access-blocked on September 27; retained durations are historical catalog observations. Public practice-assessment navigation was reachable, but no signed-in assessment session was completed. Recheck October wording and current feature support when selecting resources.
+The three O'Reilly/Udemy pages were automation-blocked on September 27. Their selected public listing bodies were readable in the October 28 browser review, supporting the updated metadata above; this does not erase blocked automated observations or establish access to lessons. Public practice-assessment navigation was reachable, but no signed-in assessment session was completed. Use the current October 14 objective wording and verify feature support when selecting resources.
 
 ### AI-901 — Microsoft Azure AI Fundamentals
 
@@ -454,12 +455,21 @@ No exact Pluralsight AB-100 certification path was verified during the August 31
 
 Resource details from the [AI-500 guide](../guides/AI-500-designing-implementing-multi-agent-ai-solutions.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
+#### October 28 learning-resource check
+
+Additional options and access updates; choose relevant resources rather than consuming every route. New course availability, class delivery and licensing are **VERIFY CURRENT**. Published days describe instructor-led scope, not measured self-study time.
+
+| Resource | Access | Estimated time |
+|---|---|---|
+| [Microsoft AI Agents for Beginners: selected lessons 8 and 10](https://github.com/microsoft/ai-agents-for-beginners) | Public reading; model/cloud execution may require accounts or charges | About **2–3 hours**, editorial estimate for two lessons and an original handoff/trace/quality worksheet; excludes notebooks and videos |
+
+
 This is a curated starting point, not a complete list. Do **not** try to consume everything. Pick the explanation style, labs, and assessment signals that close your gaps; keep the current official blueprint beside every third-party resource.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
 | Four official Microsoft Learn paths | Public | 17 modules; allow 14–20 hours as a planning estimate |
-| AI-500T00-A instructor-led course | Provider/schedule dependent | 4 days; available September 30, 2026 |
+| AI-500T00-A instructor-led course | Provider/schedule dependent | 4 published days; current outline listed; class availability unverified |
 | O'Reilly *Agentic AI with Microsoft Foundry* | Paid subscription | Earlier 8h 43m estimate; current listing access-blocked |
 | O'Reilly *Hands-On Microsoft Foundry* | Paid subscription/event | About 4 instructional hours plus breaks per listed occurrence |
 | Pluralsight *Building Intelligent Applications* | Paid subscription | 1 hour 2 minutes |
@@ -474,7 +484,7 @@ This is a curated starting point, not a complete list. Do **not** try to consume
 - [Build production-grade multi-agent capabilities in Microsoft Foundry](https://learn.microsoft.com/en-us/training/paths/aaai-2-build-production-grade-multi-agent-capabilities-microsoft-foundry/) — four modules; the previously recorded 3h 48m total was not exposed in this fetch.
 - [Deploy and govern agentic AI solutions on Azure](https://learn.microsoft.com/en-us/training/paths/aaai-3-deploy-govern-agentic-ai-solutions-azure/) — four modules; the previously recorded 3h 14m total was not exposed in this fetch.
 - [Monitor, evaluate, and operate multi-agent AI solutions](https://learn.microsoft.com/en-us/training/paths/aaai-4-monitor-evaluate-operate-multi-agent-ai-solutions-azure/) — five modules; Microsoft does not currently publish usable combined duration values, so allow about 4–6 hours plus lab time as a library planning estimate.
-- [AI-500T00-A Designing and implementing multi-agent AI solutions](https://learn.microsoft.com/en-us/training/courses/ai-500t00) — four instructor-led days, listed as available September 30, 2026. This future course date is separate from the already-live beta exam.
+- [AI-500T00-A Designing and implementing multi-agent AI solutions](https://learn.microsoft.com/en-us/training/courses/ai-500t00) — four published instructor-led days, linked from the current exam page. The earlier September availability notice is historical; class delivery was not verified.
 
 The current paths expose **4 + 4 + 4 + 5 = 17 modules**. The former first-three total of 10h 23m is historical, not a current verified runtime. Allow roughly 14–20 hours for path study and 16–30 hours for the ten labs as editorial planning estimates; adapt to your prerequisites and cloud access.
 
@@ -485,7 +495,7 @@ The current paths expose **4 + 4 + 4 + 5 = 17 modules**. The former first-three 
 - [Building Intelligent Applications with Microsoft Foundry](https://www.pluralsight.com/courses/microsoft-foundry-building-intelligent-applications) — Pluralsight, Clint Bonnett, 1h 02m, published February 13, 2026; public syllabus inspected, paid lessons not viewed. A short current-platform introduction to RAG, agents/workflows, evaluation, and guardrails; it is not a complete AI-500 path.
 - [Microsoft Foundry samples](https://github.com/azure-ai-foundry/foundry-samples) — free official sample repository. Select examples that match the current SDK generation and a lab objective; examples can change faster than conceptual documentation.
 
-No complete, current AI-500-specific Pluralsight path, Whizlabs course, MeasureUp practice test, or official Microsoft Practice Assessment was verified on September 28, 2026. These bounded public searches do not prove absence. Recheck after the course date and beta transition.
+No complete, current AI-500-specific Pluralsight path, Whizlabs course, MeasureUp practice test, or official Microsoft Practice Assessment was verified on September 28, 2026. These bounded public searches do not prove absence. Recheck current official availability; historical course/beta observations do not establish today’s delivery.
 
 #### Optional assessment supplement
 
@@ -810,6 +820,16 @@ No exact current Whizlabs MS-102 product page was established; none is inferred 
 
 Resource details from the [AB-650 guide](../guides/AB-650-ai-services-administrator-associate.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
+#### October 28 learning-resource check
+
+Additional options and access updates; choose relevant resources rather than consuming every route. New course availability, class delivery and licensing are **VERIFY CURRENT**. Published days describe instructor-led scope, not measured self-study time.
+
+| Resource | Access | Estimated time |
+|---|---|---|
+| [AB-650T00: Administer Microsoft 365 and AI services](https://learn.microsoft.com/en-us/training/courses/ab-650t00) | Public outline; instructor-led class/provider access may be paid | **3 published days**; exact page currently says available **November 13, 2026**; indexed October 30 date conflicts; delivery unverified |
+| [Manage and secure Microsoft 365 AI services](https://learn.microsoft.com/en-us/training/paths/manage-secure-microsoft-365-ai-services/) — access recheck | Public reading; current outline assumes an E5 tenant and prefers E7/Frontier Suite for some exercises; VERIFY CURRENT licensing | About **one study day**, editorial plan for seven modules; exact runtime not verified in direct view and setup/labs need extra time |
+
+
 This is not a complete list, and it is not meant to be consumed in full. Pick one primary route that fits how you learn, build labs around weak objectives, and use assessments to diagnose gaps. Recheck dates and coverage because AB-650 and several Agent 365 features are beta or rapidly changing.
 
 #### Official primary route
@@ -854,6 +874,15 @@ Targeted searches did not verify an exact current Pluralsight, O’Reilly, Whizl
 ### MD-102 — Endpoint Administrator Associate
 
 Resource details from the [MD-102 guide](../guides/MD-102-managing-securing-microsoft-365-endpoints-intune.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+#### October 28 learning-resource check
+
+Additional options and access updates; choose relevant resources rather than consuming every route. New course availability, class delivery and licensing are **VERIFY CURRENT**. Published days describe instructor-led scope, not measured self-study time.
+
+| Resource | Access | Estimated time |
+|---|---|---|
+| [Official MD-102 Foundation lab](https://github.com/MicrosoftLearning/MD-102T00-Microsoft-365-Endpoint-Administrator/blob/main/Instructions/Labs/Lab01-Foundation.md) | Public instructions; prepared disposable tenant, licenses and four VMs required; no hosted lab included | **90 published minutes plus unmeasured setup**; identity, enrollment, Autopilot and RBAC practice; not executed or audited against every October objective |
+
 
 This is a curated starting point, **not a complete list**. It is not meant to be consumed in full. Choose one current primary route, build a real lab, and use assessment results plus the July 2026 blueprint to select supplements. Older MD-102 courses may omit Intune Suite, device preparation changes, automation/reporting, and Security Copilot agents.
 
@@ -1046,6 +1075,15 @@ The attributed Microsoft Q&A timeline update above is operational reading for mi
 
 Resource details from the [PL-400 guide](../guides/PL-400-microsoft-power-platform-developer.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
+#### October 28 learning-resource check
+
+Additional options and access updates; choose relevant resources rather than consuming every route. New course availability, class delivery and licensing are **VERIFY CURRENT**. Published days describe instructor-led scope, not measured self-study time.
+
+| Resource | Access | Estimated time |
+|---|---|---|
+| [AB-400T00 successor training](https://learn.microsoft.com/en-us/training/courses/ab-400t00) | Public outline; class/provider access may be paid | **3 published days**; adjacent AB-400 preparation after PL-400T00 courseware retirement on October 30; not proof of identical exam coverage |
+
+
 This is a curated starting point, **not a complete list**, and it is not meant to be consumed in full. Choose one current primary path, implement the ten labs or equivalent work, and use other resources only to close measured gaps. Reconcile every resource with the March 19, 2026 blueprint; older courses can still teach fundamentals but may use prior weights, deprecated tooling, or objectives that have moved.
 
 The nine self-paced paths recorded during the September 1 review cover advanced canvas apps, expressions/Dataverse flows, developer foundations, client scripting/commands, PCF, Dataverse extension, Azure integration, custom connectors, and ALM. Their recorded durations totaled about **25 hours**; the September 27 public course shell reconfirms five days of instructor-led delivery but does not independently reverify that path-duration sum. Allow **50–90 hours** with coding, tenant setup, failure testing, and notes.
@@ -1113,26 +1151,29 @@ Only those selected article sections were reviewed for these exercises. Other pr
 
 Resource details from the [AB-730 guide](../guides/AB-730-ai-business-professional.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is a selective starting set, not a complete list and not a requirement to consume everything. Pick the explanation, hands-on practice, and assessment style that works for you, and map each resource to the blueprint effective for your appointment. Current public listings were checked September 27; this is not a review of paid lessons or assessment questions.
+This is a selective starting set, not a complete list and not a requirement to consume everything. Pick the explanation, hands-on practice, and assessment style that works for you, and map each resource to the blueprint effective for your appointment. Selected public course/path listings were rechecked October 28; unchanged older observations remain dated below. Public landing-page access does not establish access to paid lessons or assessment questions.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
-| Official self-paced path | Free | Now 4 modules; prior 4h31 estimate is not verified for this revision |
+| Official self-paced path | Free public reading; product practice needs eligible access | 4 modules; about 4–6 hours including notes (editorial estimate; no directly verified total) |
+| Focused Work IQ foundations module | Free public reading | About 25–40 minutes for reading and a context worksheet (editorial estimate) |
+| Focused Cowork module | Free public reading; eligible product access for practice | About 1–2 hours for selected units and a supervision worksheet (editorial estimate) |
 | AB-730T00-A instructor-led course | Paid or partner-sponsored | 1 day |
 | Microsoft Practice Assessment | Free | 45–75 minutes per attempt plus review |
 | Microsoft exam-prep video | Free | Public page retrieved; runtime/video content not independently reviewed |
-| Pluralsight AB-730 path | Paid | 3 rounded hours / 2 courses (3h01 summed); path still in production |
+| Pluralsight AB-730 path | Paid | 4 rounded hours / 3 courses (4h26 summed); path still in production |
 | O'Reilly AB-730 Crash Course | Paid | About 3 hours of agenda plus breaks/exercises |
 | MeasureUp AB-730 | Paid | 110 questions; allow 5–8 hours across remediation |
-| Udemy Scott Duffy practice | Paid | Earlier 100-question listing; current retrieval blocked |
+| Udemy Scott Duffy practice | Paid | 100 questions advertised; about 3–6 hours for attempts/remediation (editorial estimate); paid questions uninspected |
 | Partner Skilling Hub | Partner-restricted | Event-specific; verify signed-in start/end times |
 
 - **Primary route:** [Microsoft Learn AB-730T00](https://learn.microsoft.com/en-us/training/courses/ab-730t00) and the linked [Enhance business workflows with AI path](https://learn.microsoft.com/en-us/training/paths/transform-business-workflows-with-ai/). It now lists four modules: content, data/visuals, meetings/collaboration, and Cowork. It is no longer the earlier six-module listing; use the full course and objective map to identify remaining fundamentals and prompt-management needs.
+- **Targeted current-scope reading:** [Get ready to work with Microsoft Copilot](https://learn.microsoft.com/en-us/training/modules/get-ready-work-microsoft-365-copilot/) introduces Work IQ, protection and prompting. [Get more done with Copilot Cowork](https://learn.microsoft.com/en-us/training/modules/delegate-work-copilot-cowork/) has ten units; selected how-it-works, guardrails and a 15-minute exercise entry were inspected. Use synthetic data and a plan/progress/result worksheet. The course's simple approval description must be read alongside product documentation on existing session approvals and preauthorization; the module is not proof that every action prompts again. No exercise launcher or tenant task was run.
 - **Readiness:** [free official Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/ai-business-professional/practice/assessment?assessment-type=practice&assessmentId=650120434&practice-assessment-type=certification) and [official AB-730 prep video](https://www.youtube.com/live/T_Y3GTEb8pY). Use the assessment diagnostically; investigate every miss in first-party documentation.
-- **Structured subscription path:** [Pluralsight AB-730](https://www.pluralsight.com/paths/ab-730-ai-business-professional) now lists Vlad Catrinescu's 1h16 fundamentals course (August 22) and 1h45 prompt/conversation course (September 11), plus a practice exam. The path remains in production and its three-domain description does not establish complete October coverage.
+- **Structured subscription path:** [Pluralsight AB-730](https://www.pluralsight.com/paths/ab-730-ai-business-professional) now lists three courses totaling 4h26: 1h16 fundamentals (August 22), 1h45 prompts/conversations (September 11) and 1h25 business-content training (October 6), plus a practice exam. The path remains in production and its three-domain description does not establish complete October 20 coverage.
 - **Live guided preparation:** [O'Reilly AB-730 Crash Course](https://www.oreilly.com/live-events/microsoft-ai-business-professional-ab-730-crash-course/0642572353940/0642572353933/) by Renaldi Gondosubroto has a 180-minute teaching/exercise agenda plus breaks. It still describes three domains and custom-agent construction; verify October coverage, the actual event date and local start/end time before enrolling.
 - **Paid assessment:** [MeasureUp AB-730](https://www.measureup.com/microsoft-ab-730-ai-business-professional-practice-test.html), 110 questions released June 2026. Its generic overview text incorrectly mentions Azure AI workloads, while its detailed mapping follows the earlier three-domain AB-730 scope. Neither establishes coverage of the new October agent domain; verify revision coverage before purchase.
-- **Previously listed additional assessment:** [Udemy AB-730 practice by Scott Duffy and Jordi Koenderink](https://www.udemy.com/course/ab730-tests/), previously listed 100 questions and an August 2026 update mapped to July 22. Current retrieval was blocked; treat those as historical observations and recheck before buying.
+- **Additional assessment listing:** [Udemy AB-730 practice by Scott Duffy and Jordi Koenderink](https://www.udemy.com/course/ab730-tests/), public listing rechecked October 28 advertises 100 questions in four sets and an August 2026 update mapped to July 22. September automation was blocked; current browser-readable metadata does not establish October 20 coverage, question originality or paid-content quality. Recheck before buying.
 - **Partner-restricted learning:** [Partner Skilling Hub](https://www.skilling-hub.com/en-US); sign in to confirm current AB-730 delivery, exact start/end times, seats, and prerequisites.
 
 No exact Whizlabs AB-730 product was independently verified in the earlier September 1 catalog review; this deep review did not establish a new product listing. Avoid unusually large banks, “real questions,” pass guarantees, or content that claims to mirror live questions. A small set of original scenarios plus hands-on Copilot use is more useful than memorizing hundreds of unsupported answers.
@@ -1182,7 +1223,7 @@ This is not a complete list and is not meant to be consumed in full. Choose one 
 | [Udemy AB-210 by Hamdy Khaled](https://www.udemy.com/course/ab-210-dynamics-365-sales-ai-consultant-2026/) | Paid; price varies | Previously listed 4 hours 54 minutes; page access-blocked September 28 |
 | [Partner Skilling Hub](https://www.skilling-hub.com/en-US) | Partner login required | Verify current session start/end time after sign-in |
 
-The four official paths previously listed **12 hours 3 minutes** in total; their currently fetched path pages expose 13 modules (3 + 3 + 4 + 3) without those durations, so treat that time as historical. Allow roughly **30–50 hours** with tenant configuration and labs; this is a planning estimate, not an executed-study measurement. The three-day course currently lists seven languages. Both Udemy pages were access-blocked, so current runtime, content quality and assessment originality were not reverified; retain them as candidates to evaluate before purchase. Microsoft says the Practice Assessment is not currently available for this beta exam. No exact current AB-210 path from Pluralsight, O'Reilly, MeasureUp or Whizlabs was independently verified in the September 28 search. The Partner Skilling Hub returned a login shell, not a verified current AB-210 session. Several marketplaces advertise hundreds or thousands of questions or “valid” material; those were deliberately excluded. Reject recalled live questions, pass guarantees and unsupported banks.
+The four official paths previously listed **12 hours 3 minutes** in total; their currently fetched path pages expose 13 modules (3 + 3 + 4 + 3) without those durations, so treat that time as historical. Allow roughly **30–50 hours** with tenant configuration and labs; this is a planning estimate, not an executed-study measurement. The three-day course currently lists seven languages. Both Udemy pages were access-blocked, so current runtime, content quality and assessment originality were not reverified; retain them as candidates to evaluate before purchase. The September 28 observation that the Practice Assessment was unavailable is historical: the October 28 exam-page listing advertises it through AI Skills Navigator with sign-in. The assessment itself was not opened or tested. No exact current AB-210 path from Pluralsight, O'Reilly, MeasureUp or Whizlabs was independently verified in the September 28 search. The Partner Skilling Hub returned a login shell, not a verified current AB-210 session. Several marketplaces advertise hundreds or thousands of questions or “valid” material; those were deliberately excluded. Reject recalled live questions, pass guarantees and unsupported banks.
 
 ### AB-250 — Transforming Contact Center Experiences with AI in Dynamics 365
 
@@ -1378,12 +1419,21 @@ The eight official paths expose **54 module placements** (7/8/11/10/3/6/5/4). Cu
 
 Resource details from the [AZ-800 guide](../guides/AZ-800-administering-windows-server-hybrid-core-infrastructure.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is **not a complete list**, and it is not a recommendation to consume everything. Pick the resources and formats that fit you. Because AZ-800 retires September 30, 2026, compare the time remaining with the broader value of studying AZ-802. Use the official January 21, 2026 objectives as the AZ-800 coverage checklist. Estimated times include reasonable note-taking or practice where stated and should be rechecked before purchase. Older material can teach durable Windows Server concepts, but reconcile product names, versions and deprecated capabilities with current documentation.
+#### October 28 learning-resource check
+
+Additional options and access updates; choose relevant resources rather than consuming every route. New course availability, class delivery and licensing are **VERIFY CURRENT**. Published days describe instructor-led scope, not measured self-study time.
+
+| Resource | Access | Estimated time |
+|---|---|---|
+| [AZ-802T00 successor Windows Server course](https://learn.microsoft.com/en-us/training/courses/az-802t00) | Public outline; class and labs may be paid | **5 published days**; current preparation route following AZ-800/AZ-801 courseware retirement; compare AZ-802 objectives |
+
+
+This is **not a complete list**, and it is not a recommendation to consume everything. Pick the resources and formats that fit you. AZ-800 is retired; use its material for technical foundations and choose AZ-802 for a current exam path. Use the official January 21, 2026 objectives as the AZ-800 coverage checklist. Estimated times include reasonable note-taking or practice where stated and should be rechecked before purchase. Older material can teach durable Windows Server concepts, but reconcile product names, versions and deprecated capabilities with current documentation.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
 | [Official AZ-800 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-800) | Free; authoritative AZ-800 scope and retirement notice | 45–75 min initially; 10–15 min before exam |
-| [AZ-802 replacement blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802) | Free; compare before committing to the retiring two-exam route | 60–90 min for a scope diff |
+| [AZ-802 replacement blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802) | Free; compare for the current single-exam path | 60–90 min for a scope diff |
 | [Microsoft Learn AZ-800 exam/training collection](https://learn.microsoft.com/en-us/credentials/certifications/exams/az-800/) | Free self-paced paths; official instructor-led AZ-800T00 duration is 4 days | Plan 35–55 hr self-paced with labs, or 4 instructor-led days plus review |
 | [Microsoft free AZ-800 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/exams/az-800/practice/assessment?assessment-type=practice&assessmentId=67) | Free; use explanations for remediation, not question memorization | 45–90 min per attempt; plan 3–5 hr with remediation |
 | [Official MicrosoftLearning AZ-800 lab instructions](https://microsoftlearning.github.io/AZ-800-Administering-Windows-Server-Hybrid-Core-Infrastructure/) | Free public hands-on course labs; Azure/VM costs may apply | Plan 15–25 hr including setup, evidence and cleanup |
@@ -1399,7 +1449,7 @@ This is **not a complete list**, and it is not a recommendation to consume every
 
 ##### Experienced Windows Server administrator route
 
-1. Decide AZ-800 versus AZ-802 from the retirement date and credential page.
+1. Use AZ-802 for a current certification route; use this retired AZ-800 guide selectively for technical foundations.
 2. Diff the January 2026 blueprint against your production experience; do not assume on-premises depth covers Azure identity, Arc, Files or Private Resolver.
 3. Complete Labs 2, 4, 6 and 8, then inject one identity, DNS and sync failure.
 4. Use practice assessment results to select current Microsoft documentation, not to memorize answer wording.
@@ -1429,6 +1479,15 @@ This guide is an independent synthesis of public sources. It does not reproduce 
 ### AZ-801 — Configuring Windows Server Hybrid Advanced Services
 
 Resource details from the [AZ-801 guide](../guides/AZ-801-configuring-windows-server-hybrid-advanced-services.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+#### October 28 learning-resource check
+
+Additional options and access updates; choose relevant resources rather than consuming every route. New course availability, class delivery and licensing are **VERIFY CURRENT**. Published days describe instructor-led scope, not measured self-study time.
+
+| Resource | Access | Estimated time |
+|---|---|---|
+| [AZ-802T00 successor Windows Server course](https://learn.microsoft.com/en-us/training/courses/az-802t00) | Public outline; class and labs may be paid | **5 published days**; current preparation route following AZ-800/AZ-801 courseware retirement; compare AZ-802 objectives |
+
 
 This is **not a complete list**, and it is not meant to be consumed end to end. Pick the combination that fits your experience, access, learning style, available time, and weak objectives. A productive plan is often one primary course or book, the official blueprint/documentation, hands-on labs, and one legitimate practice assessment used diagnostically.
 
@@ -1487,7 +1546,7 @@ Practice products should be used to expose weak domains and reasoning errors, no
 3. Complete labs 1–3, 6, and 8: 25–40 hours.
 4. Use practice assessments to drive another 8–15 hours of documentation and lab remediation.
 
-##### Final review before the retirement date
+##### Historical final-review checklist
 
 1. Recheck the official study guide, exam page, retirement page, and AZ-802 replacement route.
 2. Rebuild the five-domain objective map from memory and mark weak subobjectives.
@@ -1495,7 +1554,7 @@ Practice products should be used to expose weak domains and reasoning errors, no
 4. Rerun two failure/recovery labs and explain the evidence aloud.
 5. Use one legitimate practice assessment, investigate every uncertain answer, and stop memorizing question wording.
 
-Schedule conservatively: Microsoft gives an exact **September 30, 2026, 5:00 PM Central Standard Time** retirement. Availability of test centers, online slots, rescheduling, accommodations, results, and prerequisite exam completion can add lead time. If that path is no longer realistic, use [AZ-802](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802) rather than rushing an expiring exam.
+AZ-801 retired on **September 30, 2026, at 5:00 PM Central Standard Time**. This checklist remains for historical study and technical remediation; use [AZ-802](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802) for the current certification route and rebuild the objective map for that exam.
 
 ### AZ-802 — Administering Windows Server
 
@@ -1868,19 +1927,31 @@ This is **not a complete list**, and it is not a recommendation to consume every
 | [Official AI-200 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-200) | Public | 30–60 min | Authoritative objectives, weights and lifecycle |
 | [AI-200T00 Microsoft Learn course](https://learn.microsoft.com/en-us/training/courses/ai-200t00) | Public self-study; paid instructor option | 5 instructor-led days; self-study budget 25–40 hours plus labs (editorial estimate) | 12 course languages; current extracted page does not expose a verifiable path/runtime total |
 | [Azure Architecture Center AI architecture](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/) | Public | 4–12 hours selectively (estimate) | Production tradeoffs, reliability and service composition |
-| [Microsoft Azure samples](https://github.com/Azure-Samples) | Public | 8–20 hours selectively (estimate) | Current SDK and deployable examples; verify maintenance and security before reuse |
+| [RAG on PostgreSQL sample](https://github.com/Azure-Samples/rag-postgres-openai-python) | Public MIT repository; Azure deployment may cost | About 3–6 hours for selected reading and a design worksheet (editorial estimate); deployment adds time | Specific Python/PostgreSQL RAG implementation; inspect identity, versions, costs and cleanup before reuse; no deployment verified |
 | [Microsoft exam sandbox](https://aka.ms/examdemo) | Public | 20–30 min | Interface familiarity; no technical questions |
 
-Microsoft's credential page explicitly said no AI-200 Practice Assessment was available on September 28, 2026. Recheck rather than substituting an assessment for a different exam.
+#### Target the data-service objectives
+
+| Resource | Access | Estimated time and scope |
+|---|---|---|
+| [Develop AI solutions with Azure Cosmos DB for NoSQL](https://learn.microsoft.com/en-us/training/paths/develop-ai-solutions-azure-cosmos-db/) | Free public reading; Azure exercise requirements separate | About 3–5 hours for three modules and notes (editorial estimate); SDK/data operations, indexing and vector search |
+| [Develop AI solutions with Azure Database for PostgreSQL](https://learn.microsoft.com/en-us/training/paths/develop-ai-solutions-azure-database-postgresql/) | Free public reading; database access for execution | About 4–6 hours for three modules and query-plan notes (editorial estimate); relational data, vectors and tuning |
+| [Enhance AI solutions with Azure Managed Redis](https://learn.microsoft.com/en-us/training/paths/enhance-ai-solutions-azure-managed-redis/) | Free public reading; service costs and module prerequisites separate | About 2–3 hours for selected data/vector modules (editorial estimate); its Streams/pub-sub module is **Related item:** adjacent context, not a Service Bus substitute |
+| [Managed Redis vector-search overview](https://learn.microsoft.com/en-us/azure/redis/overview-vector-similarity) | Public product documentation | About 20–40 minutes for reading and a configuration table (editorial estimate); verify exact module/client/index requirements |
+| [Managed Redis semantic-cache tutorial](https://learn.microsoft.com/en-us/azure/redis/tutorial-semantic-cache) | Public reading; product execution may cost | About 45–90 minutes for reading and a cache-boundary worksheet (editorial estimate); add tenant, source/model version, threshold and TTL tests |
+
+Path descriptions and selected module pages were inspected, not every lesson or exercise. Use the PostgreSQL repository's README, retrieval flow and monitoring notes to trace source → query → authorized retrieval → response → telemetry. Add your own negative cases for stale source versions, wrong-tenant access and absent documents. The MIT license permits reuse under its terms; it does not establish production security or current dependency compatibility. No repository deployment, load test or cloud exercise was executed. These resources do not resolve the official domain-weight or Redis conversion-document conflicts.
+
+Microsoft's credential page explicitly said no AI-200 Practice Assessment was available on September 28, 2026. That observation is historical: on October 28 the [official study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-200) advertises one through AI Skills Navigator with sign-in. Actual assessment launch and content were not verified; do not substitute an assessment for a different exam.
 
 #### Courses and video
 
 | Resource | Access | Estimated time | Best use and freshness note |
 |---|---|---:|---|
-| [O'Reilly Azure AI Cloud Developer Associate AI-200 Crash Course](https://www.oreilly.com/live-events/azure-ai-cloud-developer-associate-ai-200-crash-course/0642572385149/0642572385132/) | Paid subscription/live event | 4-hour event window; agenda totals 240 min before separately listed breaks; October 1, 2026 | Blueprint-wide live review with Reza Salehi; upcoming after this guide's validation date, so verify schedule/recording |
-| [Udemy AI-200 Complete Course by Luke Ginn](https://www.udemy.com/course/ai-200-azure-ai-cloud-developer-associate-complete-course/) | Paid; price varies | 21h19 / 55 lectures / 13 sections (indexed outline) | Updated August 2026, broad hands-on coverage; includes adjacent agent content, so map to blueprint |
-| [Udemy AI-200 Exam Prep by Kuljot Singh Bakshi](https://www.udemy.com/course/azure-ai-cloud-developer/) | Paid; price varies | 18h5 / 135 lectures / 15 sections (indexed outline) | Updated June 2026, objective-oriented demos and labs |
-| [Udemy AI-200 course by Scott Duffy](https://www.udemy.com/course/ai200-azure/) | Paid; price varies | 3h54 / 29 lectures / 11 sections (indexed outline) | Concise overview updated May 2026; supplement with implementation labs |
+| [O'Reilly Azure AI Cloud Developer Associate AI-200 Crash Course](https://www.oreilly.com/live-events/azure-ai-cloud-developer-associate-ai-200-crash-course/0642572385149/0642572385132/) | Paid subscription/live event | 4-hour event window; agenda totals 240 min before separately listed breaks; October 1, 2026 | Historical October 1 event listing with Reza Salehi; delivery and recording access were not verified |
+| [Udemy AI-200 Complete Course by Luke Ginn](https://www.udemy.com/course/ai-200-azure-ai-cloud-developer-associate-complete-course/) | Paid; price varies | 21h43 / 56 lectures / 13 sections (public listing) | Updated October 2026, broad advertised hands-on coverage; includes adjacent agent content, so map to blueprint |
+| [Udemy AI-200 Exam Prep by Kuljot Singh Bakshi](https://www.udemy.com/course/azure-ai-cloud-developer/) | Paid; price varies | 18h5 / 135 lectures / 16 sections (public listing) | Updated September 2026; advertised objective-oriented demos and labs |
+| [Udemy AI-200 course by Scott Duffy](https://www.udemy.com/course/ai200-azure/) | Paid; price varies | 3h54 / 30 lectures / 11 sections (public listing) | Concise overview updated May 2026; supplement with implementation labs |
 | [Microsoft Reactor YouTube](https://www.youtube.com/@MicrosoftReactor) | Public | 3–10 hours selectively (estimate) | Search current Container Apps, Cosmos vector, PostgreSQL/pgvector, Redis, eventing and observability sessions |
 | [John Savill Azure Master Class repository](https://github.com/johnthebrit/AzureMasterClass) | Public | 3–8 hours selectively (estimate) | Broad Azure platform/network/identity architecture and whiteboards; not a complete AI-200 path and may predate current vector/Managed Redis objectives |
 
@@ -1890,7 +1961,7 @@ A bounded September 28 search did not identify a dedicated current AI-200 Plural
 
 | Resource | Access | Estimated time | Best use and caution |
 |---|---|---:|---|
-| [AI-200 Practice Assessment status on credential page](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-cloud-developer-associate/) | Public status; assessment unavailable when checked | Recheck in 1–2 min | Use the official assessment first if Microsoft later publishes it |
+| [AI-200 Practice Assessment listing on official study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-200) | Public listing; AI Skills Navigator sign-in; assessment not opened | Recheck in 1–2 min; assessment duration unverified | Current October 28 listing supersedes the historical September unavailability observation |
 | [Udemy AI-200 practice tests by Scott Duffy](https://www.udemy.com/course/ai200-tests/) | Paid; price varies | Four 25-question tests plus explanation review; 3–6 hours (estimate) | New third-party practice; verify explanations against current Microsoft docs and reject live-question claims |
 | [Whizlabs AI-200 catalog](https://www.whizlabs.com/microsoft-azure-ai-cloud-developer-associate/) | Paid product; public title shell | Duration/question count unverified | Listing found; inspect current syllabus/sample explanations before selecting |
 | This guide's ten labs | Azure access; costs vary | 28–50 hours for cloud work plus 2–4 hours for offline artifacts (estimates) | End-to-end build, failure, identity, replay, observability and recovery proof |
@@ -1898,16 +1969,16 @@ A bounded September 28 search did not identify a dedicated current AI-200 Plural
 
 The [Whizlabs AI-200 catalog page](https://www.whizlabs.com/microsoft-azure-ai-cloud-developer-associate/) now exists, correcting the previous missing-product note. It exposed only a title shell; question count, lessons, labs and coverage remain unverified. A bounded search did not identify a dedicated MeasureUp product; recheck rather than treating this as proof of absence.
 
-Direct access to all four Udemy listings was blocked; the displayed metadata above comes from indexed public outlines checked September 28. Paid content, coverage, question originality and claimed exam difficulty were not evaluated. Scott Duffy's practice listing shows four 25-question sets, updated August 2026, but its claimed August 28 exam update is not corroborated by the official May 5 baseline. Luke Ginn's indexed outline still labels some walkthroughs as forthcoming. O'Reilly's event is future; attendance/recording was not verified. The older Learn total of nine paths/32h4 was not reproduced from the current page and is no longer presented as current.
+September 28 direct automation was blocked for all four Udemy listings. Their public landing bodies were readable in the October 28 browser review, supporting the updated counts/dates above; automated blocked results remain separate. Paid lessons, assessment content, question originality, practical accuracy and difficulty were not evaluated. The practice listing still advertises four 25-question sets and an August update; its claimed August exam revision is not official evidence for the current October 7 outline. O'Reilly's earlier October 1 event listing is historical; current exact delivery dates, attendance and recording access remain unverified. The earlier nine-path/32h4 Learn total is not presented as a newly verified runtime.
 
 #### A practical study sequence
 
-1. Map the official blueprint to one deployable architecture and record the currently unavailable Practice Assessment.
+1. Map the current official blueprint to one deployable architecture and check the advertised Practice Assessment's access requirements.
 2. Complete the Microsoft Learn paths or one current structured course; do not stack passive courses.
 3. Build Labs 1–3 until container deployment, identity, rollout, scaling and diagnosis are routine.
 4. Build Labs 4–6 and compare Cosmos, PostgreSQL and Redis using the same corpus/SLO evidence.
 5. Build Labs 7–8 and prove duplicate, retry, DLQ, rotation, distributed trace, KQL and reconciliation behavior; complete Labs 9–10 as review artifacts.
-6. If an official Practice Assessment appears, use it once as a diagnostic; remediate by objective and lab.
+6. If you can access the advertised official Practice Assessment, use it once as a diagnostic; remediate by objective and lab.
 7. Recheck the blueprint, credential page, SDK/service limits, vector/index support, course schedule and Azure Managed Redis transition immediately before the exam.
 
 ---
@@ -3979,6 +4050,41 @@ This is not a complete list, and it is not meant to be consumed end to end. Choo
 | [Boss of the SOC](https://bots.splunk.com/) | Public availability varies | 12–30 hr selected | Defensive investigation practice, not exam content |
 | [MITRE ATT&CK](https://attack.mitre.org/) | Free | 8–20 hr targeted | Knowledge/coverage framework; not proof a detection works |
 | Synthetic ES/SOAR detection portfolio | Product lab/trial/partner access may be required | 35–70 hr | Applied evidence with destructive actions mocked |
+
+### C3000-006 — IBM Certified Bob v2 Developer - Associate
+
+Resource details from the [C3000-006 guide](../guides/C3000-006-ibm-bob-v2-developer-associate.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a curated starting point, not a complete list or a requirement to consume every resource. Times are **author estimates** based on reading scope and proposed practice unless explicitly stated otherwise; they are not IBM-published runtimes. **VERIFY CURRENT:** access, versions, downloads and plan entitlements can change.
+
+| Resource | Access | Estimated time |
+|---|---|---|
+| [Official certification page, study PDF and sample test](https://www.ibm.com/training/certification/ibm-certified-bob-v2-developer-associate-C9010800) | Public preparation links; exam/assessment booking separate | About **1–2 hours** for the 24-page study guide and objective mapping; sample-test time not measured |
+| [Official machine-readable exam objectives](https://www.ibm.com/training/credentials/getExam/C3000-006) | Public | About **20–30 minutes** to check the six domains and 52 objectives |
+| [Bob IDE docs](https://bob.ibm.com/docs/ide) and [Bob Shell docs](https://bob.ibm.com/docs/shell) | Public docs; execution needs Bob access | About **3–5 hours** of selected reading across features, configuration, account and security topics |
+| [Prompting tutorial](https://bob.ibm.com/docs/ide/tutorials/write-effective-prompts) and [project initialization tutorial](https://bob.ibm.com/docs/ide/tutorials/start-a-project) | Public docs; Bob access for practice | About **1–2 hours** to read, apply and compare prompts in a toy project |
+| [Build AI agents with Bob and watsonx Orchestrate](https://developer.ibm.com/tutorials/build-agents-mcp-tools-watsonx-orchestrate-using-bob/) | Public tutorial; Bob and Orchestrate environment required, terms may involve cost | About **2–4 hours** for setup, MCP-tool tests and deployment practice; optional and not runtime-validated here |
+| [Meet Bob: external-audience workshop](https://ibm.github.io/intro-bob-workshop/lab-6/) | Public materials; Bob access for exercises | **60 minutes**, published guided agenda; separate **30-minute** presentation; prompts, skill setup and role-based practice |
+| [IBM Bob Level 3 labs](https://ibm.github.io/bob-l3/) | Public courseware; Bob access; some linked setup routes are employee/partner-specific | About **4–6 hours**, estimated for four modules: assistance, delegation, customization and context/Shell/MCP; verify older setup and trial claims |
+| [Galaxium Travels application](https://github.com/IBM/galaxium-travels) | Public repository; local runtimes needed | About **1–2 hours** for setup and code/test inspection; reuse it for several labs rather than adding this time repeatedly; choose the tutorial's branch |
+| [IBM Bob demo collection](https://github.com/IBM/bob-demo) | Public Apache-2.0 examples; Bob and demo-specific tooling | About **30–90 minutes per selected demo**, editorial estimate; older five-mode terminology and sample defects require repair, and maintenance is disclaimed |
+| [Create and use skills](https://bob.ibm.com/docs/ide/tutorials/use-skills) | Public tutorial; Bob and demo code | About **45–60 minutes** to build a changelog skill and compare explicit/automatic activation; supports Concepts and Configuration |
+| [Generate architecture diagrams](https://bob.ibm.com/docs/ide/tutorials/generate-architecture-diagrams) | Public tutorial; Bob, Git and demo code | About **45–90 minutes** to inspect a repository, generate a diagram and compare it with the code; supports planning and code understanding |
+| [Build MCP servers with Bob](https://bob.ibm.com/docs/ide/tutorials/mcp-server-integration) | Public tutorial; Bob and Node.js | About **1–2 hours before repairs**, estimated for planning and a local tool; example helper code is incomplete and prose/code contracts differ; see caveats below |
+| [Actor-critic secure-code workflow](https://bob.ibm.com/docs/ide/tutorials/generate-secure-code) | Public tutorial; Bob and specified demo branch | About **1–2 hours** to inspect paired skills and compare generated/reviewed changes; supports security practice, not compliance certification |
+| [Getting the Most Out of Bob](https://bob.ibm.com/blog/getting-the-most-out-of-bob/) | Public first-party article | About **20–30 minutes** of reading plus optional **30–60 minutes** of applying its planning/context/verification cycle |
+| [Monolith modernization with reusable skills](https://developer.ibm.com/tutorials/ai-assisted-app-mod-workflow/) | Public tutorial; Bob, Neo4j, MinIO and additional tools | About **4–8 hours**, estimated setup and practice; advanced optional depth across skills, MCP and modernization, not a required exam stack |
+| Eight original labs in this guide | Disposable repository; account/plan requirements vary | About **8–12 hours** to produce and review the requested evidence; product execution remains pending |
+
+#### Additional-source review — October 28, 2026
+
+The ten additional resources above extend the initial documentation set with courses and examples. **VERIFY CURRENT:** these are reading/practice options, and none was executed in this review. The Level 3 setup contains older trial/registration details; use current account terms and installation docs. Galaxium Travels `main` may already contain features an older exercise asks you to add. The demo collection retains older five-mode names; its introductory skill example also has front-matter and script-path defects. Prefer the current skills tutorial when learning the actual file format.
+
+The MCP tutorial's prose asks for `search_papers` with default 5/max 20 results; its code instead names `search_arxiv` and uses default 10/max 50, with XML/formatting helpers omitted. Reconcile and test a contract before treating it as runnable code. The security tutorial is a workflow exercise: instructions and a reviewing model cannot guarantee compliance, and a user-supplied identity header alone does not authenticate a caller. Keep independent tests, scanners and human review.
+
+These supplemental materials do not resolve the general marketplace-browser gap. A PR-review video linked by IBM was inaccessible through the reader and remains in the source-candidate inbox pending content and runtime review.
+
+Avoid sources selling recalled or “actual” exam questions and guaranteed passes. Use public objectives, official preparation and independently written practice to identify understanding gaps.
 
 ## AWS
 

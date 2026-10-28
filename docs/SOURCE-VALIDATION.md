@@ -19,7 +19,7 @@ An AI agent may perform the sources-and-objectives gate so the library can scale
 
 Passing this workflow changes the public label to **Sources + objectives checked — human review pending**. It never produces **Community reviewed**, and it never represents vendor approval, practitioner endorsement, or a guarantee of correctness. Readers should report questionable material and use the current official blueprint as the final authority.
 
-## Current guides that passed this gate
+## Guide source-gate records
 
 | Exam | Reviewed | Blueprint snapshot | External-link evidence | Result |
 |---|---|---|---|---|
@@ -34,7 +34,7 @@ Passing this workflow changes the public label to **Sources + objectives checked
 | DP-900 | August 31, 2026 | July 21, 2026 objectives; unchanged during review | 39 registered links: 38 reachable, 1 access-blocked, 0 missing/error | Passed |
 | PL-900 | August 31, 2026 | July 24, 2026 objectives; unchanged during review | 41 registered links: 39 reachable, 2 access-blocked, 0 missing/error | Passed |
 | SC-900 | August 31, 2026 | July 28, 2026 objectives; unchanged during review | 49 registered links: 47 reachable, 2 access-blocked, 0 missing/error | Passed |
-| AB-900 | September 5, 2026 | July 22, 2026 objectives; unchanged during repair revalidation | 37 registered links: 34 reachable, 3 access-blocked, 0 missing/error | Passed |
+| AB-900 | October 28, 2026 | October 14 current English outline; July bytes archived | 57 registered links: 54 reachable, 3 access-blocked, 0 missing/error | Passed; human/product execution pending |
 | AB-650 | September 5, 2026 | July 27, 2026 beta objectives; unchanged during repair revalidation | 26 registered links: 26 reachable, 0 access-blocked, 0 missing/error | Passed |
 | MD-102 | September 5, 2026 | July 24, 2026 objectives; unchanged during repair revalidation | 40 registered links: 37 reachable, 3 access-blocked, 0 missing/error | Passed |
 | AI-901 | August 31, 2026 | April 15, 2026 objectives; unchanged during review | 26 registered links: 23 reachable, 3 access-blocked, 0 missing/error | Passed |
@@ -51,7 +51,7 @@ Passing this workflow changes the public label to **Sources + objectives checked
 | PL-300 | September 1, 2026 | April 20, 2026 objectives; unchanged during review | 25 registered links: 22 reachable, 3 access-blocked, 0 missing/error | Passed |
 | PL-400 | September 1, 2026 | March 19, 2026 objectives; unchanged during review | 19 registered links: 18 reachable, 1 access-blocked, 0 missing/error | Passed |
 | AB-410 | September 1, 2026 | Official guide last updated May 15, 2026; no separate effective date; unchanged during review | 18 registered links: 17 reachable, 1 access-blocked, 0 missing/error | Passed |
-| AB-730 | September 1, 2026 | July 22, 2026 objectives; unchanged during review | 11 registered links: 10 reachable, 1 access-blocked, 0 missing/error | Passed |
+| AB-730 | October 28, 2026 | October 20 current English outline; July bytes archived | 40 registered links: 40 reachable, 0 access-blocked, 0 missing/error | Blocked: product-documentation conflicts remain |
 | AB-731 | September 1, 2026 | July 22, 2026 objectives; unchanged during review | 12 registered links: 10 reachable, 2 access-blocked, 0 missing/error | Passed |
 | AB-210 | September 1, 2026 | Official guide last updated June 18, 2026; beta; no separate effective date | 12 registered links: 10 reachable, 2 access-blocked, 0 missing/error | Passed |
 | AB-250 | September 1, 2026 | Official guide last updated May 15, 2026; no separate effective date | 11 registered links: 11 reachable, 0 missing/error | Passed |
@@ -122,6 +122,10 @@ The September 28 [deep review](research/2026-09-28-ab-731-deep-review.md) maps 3
 The review maps every July 22, 2026 subobjective to a business outcome, AI/ML/automation choice, model/adaptation decision, grounding/data/security contract, Microsoft capability, build/buy/extend boundary, responsible-AI control, operating owner, adoption mechanism, economic model or pilot decision. Three integrated scenarios, eight labs and 36 original checks cover generation versus ML and automation; pretrained and fine-tuned models; prompting, RAG, data readiness, ML lifecycle and secure AI; tokens, ROI and opportunity scoring; Copilot Chat/apps, Researcher, Analyst, Copilot Studio and Graph; Microsoft Foundry, Foundry Tools, Vision and Azure AI Search; model choice; responsible-AI principles; AI council, adoption team, champions and workload owners; adoption barriers; licensing/consumption models; and outcome, quality, adoption, risk and cost evidence. All 12 cited URLs are cataloged: ten were reachable and two Udemy pages were automation-blocked; none was missing or broken. The guide records the active 45-minute exam, 4 hours 44 minutes of official learning, one-day course, free Practice Assessment, official prep session, current Pluralsight and Udemy choices, partner learning, current-versus-older Foundry terminology, and no independently verified exact O'Reilly, MeasureUp or Whizlabs product. Volatile product, licensing, consumption and availability details are marked **VERIFY CURRENT**. No upcoming blueprint change or retirement was announced. Blueprint SHA-256: `ac86a35a21c860a8739b3d37f09e90288270e7343af24bf5dcc67729685c48c2`.
 
 ## AB-730 coverage record
+
+The October 28 [detailed refresh](research/2026-10-28-microsoft-wave1-deep-review.md#ab-730) maps all 41 current October 20 objectives to the four-domain guide. Eleven previously shallow topics across this batch were expanded, including Work IQ evidence synthesis and applying agents. AB-730 now contains eleven proposed labs and 48 answered checks. Its 40 cited URLs are registered and reachable, but the source gate remains **blocked** by documented connector, scheduling, meeting-memory and model-control discrepancies. Product execution and human review remain pending. The current ledger records exact mappings and snapshot/archive hashes.
+
+### Historical baseline and earlier review
 
 The September 27 [deep review](research/2026-09-27-ab-730-deep-review.md) maps 41 detailed objectives. Whole guide read and all 41 October objectives in eight groups mapped; July 22 baseline retained. Add explicit model, connector, notebook, meeting and Cowork preparation; four worked examples, two labs, 44 answers and two qualified Microsoft blog exercises. Correct four-module Learn path and two-course Pluralsight listings; qualify stale paid-course scope. Eight synthetic arithmetic/set assertions passed; no Microsoft 365 tenant, agent, meeting or automation execution. Three rollout checkpoints added; human review pending. Current guide citations: 35 registered, 34 reachable, 1 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
 
@@ -387,6 +391,10 @@ The review expanded the control-map premise into repeatable asset, actor, threat
 
 ## AB-900 coverage record
 
+The October 28 [detailed refresh](research/2026-10-28-microsoft-wave1-deep-review.md#ab-900) maps all 53 current October 14 objectives. Nine shallow administration treatments now include explicit procedures/decisions, current references, an eighth worksheet and 18 answered checks. The current source gate **passed**: 57 registered links, 54 reachable, three automation-blocked and none missing/error. External shared-channel restriction exceptions, service-principal boundaries and BYO MCP support remain scoped. No tenant, billing, license, permissions, search/hold/export or MCP lab was executed; human review remains pending.
+
+### Historical baseline and earlier review
+
 The September 27 [deep review](research/2026-09-27-ab-900-deep-review.md) maps 53 detailed objectives. Complete guide read and all 53 published October objectives in ten groups mapped. Preserve July baseline and expected future-page hash difference. Add four worked examples, a seventh verification lab, answers to eight existing questions, six new answers and one qualified blog/transcript reading. Clarify permission intersections, agent/file revocation, scheduled-prompt lifecycle, fixed environment DLP, PAYG alerts, pending versions and MCP support. No tenant or infrastructure execution; human review pending. Current guide citations: 42 registered, 39 reachable, 3 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
 
 | Published objective group | Guide coverage |
@@ -587,6 +595,10 @@ The September 27 [deep review](research/2026-09-27-dp-800-deep-review.md) maps 7
 The review maps every March 12, 2026 subobjective to a requirement, platform decision, implementation boundary, evidence artifact, failure action, or recovery path. Three integrated scenarios, eight labs, and 36 original knowledge checks cover relational/JSON/specialized design, modern T-SQL, AI-assisted tools and MCP, layered security, concurrency, plans and Query Store, database projects and deployment controls, Data API builder, monitoring, change processing, external models, embedding lifecycle, ENN/ANN/vector indexes, hybrid retrieval, RRF, and secure grounded generation. All 86 cited URLs are cataloged: 84 were reachable, while O'Reilly and Udemy returned access-blocked HTTP 403; none was missing or broken. The guide labels fast-changing platform, compatibility, JSON/regex/fuzzy/vector and preview boundaries, uses current Microsoft Foundry naming while identifying older names, and records the August 15, 2026 CES Event Hubs AMQP-to-Kafka transition. No upcoming blueprint change or exam retirement was announced. The official blueprint snapshot SHA-256 is `5302e42b10e2f414caa1fba1ef4e641ecfb85b44d87bb39635b5caea2ac79e7f`.
 
 ## AI-200 coverage record
+
+The October 28 [detailed refresh](research/2026-10-28-microsoft-wave1-deep-review.md#ai-200) remaps all 27 current October 7 tasks, accepts the actual page snapshot, and preserves its internal 30–35% versus 25–30% data-weight conflict. The Managed Redis conversion discrepancy also remains open, so the current source gate stays **blocked**. Ten labs remain unexecuted in this refresh; 50 original answered checks and exact data-service learning routes support study. Current citations:81 registered,78 reachable,three automation-blocked,none missing/error. Earlier offline assertions below are historical, not new cloud execution.
+
+### Historical baseline and earlier review
 
 The September 28 [deep review](research/2026-09-28-ai-200-deep-review.md) maps 27 detailed objectives. Whole guide and 27 unchanged objectives mapped across nine groups. Add six worked examples, ten labs, 48 explained checks and a Redis engineering blog worksheet; correct identity, data, retry, lifecycle, rotation, sampling and catalog boundaries. Twenty-six offline assertions, five Python syntax checks and one YAML parse passed; only the local reducer executed. Managed Redis conversion-document conflict remains open. No infrastructure/SDK/paid-content execution; independent human review pending. Current guide citations: 75 registered, 71 reachable, 4 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
 
@@ -3135,6 +3147,16 @@ The current learning-path title and embedded exam identify 2026, while one path-
 - Link evidence: 2 unique external guide URLs; 2 reachable, 0 blocked, 0 missing/broken
 
 The review requires correct signal semantics, missing-data treatment, bounded automation, raw-versus-derived evidence, cross-signal correlation, privacy, cardinality, cost, and monitor-the-monitoring practice without inferring unpublished exam details. Blueprint SHA-256: `b4fb087297786f8a3917dc0af3463d680f6e9717d3afe18a70c90265df56482c`.
+
+## C3000-006 coverage record
+
+- Reviewed October 28, 2026 against the live IBM Bob v2 Developer Associate exam API and official 24-page preparation PDF.
+- All 52 objectives across six weighted domains map to named guide sections; eight proposed product labs and 16 independently written answered checks support practice.
+- Link evidence: 47 exact registered public IBM URLs after supplemental discovery; all 47 returned HTTP 200, zero blocked, missing or error responses. Ten added workshop/course/example/tutorial resources carry access, time and version caveats; one throttled video remains queued.
+- The official PDF explicitly leaves general marketplace-browser availability unconfirmed. The guide preserves that gap, the current MCP standalone-SSE removal discrepancy, and client-dependent task-budget validation requirements.
+- Product execution and independent human review remain pending. This source/objective gate does not claim that the marketplace gap is resolved or that the proposed labs passed.
+
+See the [dated intake and individual objective mappings](research/2026-10-28-ibm-bob-certification-intake.md). Blueprint SHA-256: `d4573e943742dfca30eb28ace0a1953957e412b90b8c4165c315cf9e617db5e3`.
 
 ## Revalidation triggers
 

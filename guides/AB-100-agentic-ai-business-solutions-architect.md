@@ -5,25 +5,33 @@ official_blueprint: https://learn.microsoft.com/en-us/credentials/certifications
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: source-validated
-last_verified: 2026-09-27
+review_status: review-required
+last_verified: 2026-10-28
 upcoming_change_status: scheduled
 upcoming_change_checked: 2026-09-27
 ---
 
 # AB-100 Agentic AI Business Solutions Architect Study Guide
 
+> **REFRESH IN PROGRESS — REVIEW REQUIRED (October 28, 2026).** The official objective page differs from the accepted teaching baseline. Detailed coverage reconciliation is pending; use the linked official blueprint for current scope. Saved objective snapshots and historical full-review dates remain unchanged. The displayed November 16 outline is future scope; do not treat it as effective on October 28.
+
 > **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The complete guide, objective coverage, selected implementation claims, exercises, and citations were reviewed on September 27, 2026. Exercises were reviewed as architecture/tabletop work; no tenant deployments or paid course contents were tested. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-100-coverage-record) and [deep-review findings](../docs/research/2026-09-27-ab-100-deep-review.md). The [official AB-100 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100) is authoritative.
 
 **Current baseline:** Skills measured as of July 22, 2026<br>
-**Upcoming blueprint change (checked September 27, 2026):** The English revision is effective October 14, 2026. A complete comparison with the saved July outline found the same objective groups and weights; two bullets add “Microsoft” before Foundry Tools and one capitalizes “Service.” The public page now displays the October outline. The July snapshot remains the historical baseline; these editorial changes do not establish a new domain. Localized updates can follow a different schedule; check the [exam page](https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-100/) for your appointment.<br>
+**Upcoming blueprint change — VERIFY CURRENT (October 28, 2026):** The exam and credential pages now announce November 16, 2026, and the study guide displays that future outline. Its change log includes reweighted plan/design/deploy areas and changed strategy, agent and ALM wording. The earlier October 14 editorial comparison is historical and does not establish November coverage. The July teaching snapshot remains accepted pending full reconciliation; localized timing can differ.<br>
 **Official source:** [AB-100 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100)
 
 > **Credential name checked September 27, 2026:** Microsoft now lists **Agentic AI Business Solutions Architect Expert**. The exam code remains AB-100. Passing the exam and earning the credential are separate: the existing associate-certification prerequisite still needs to be satisfied. Check the [current credential page](https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect/) for accepted prerequisites; a name change does not establish a new exam.
 
 > **Official-page conflict (rechecked October 4, 2026):** The exam page includes MB-280 and PL-200 in its prerequisite list; the credential page omits them. Both also contain an unrelated information-protection exam summary. Use the dedicated study guide for scope and confirm an ambiguous prerequisite with Microsoft Credentials support before relying on it. The course and learning path have separate entry requirements; completing them does not satisfy the associate-credential requirement.
 
-**Bounded maintenance pilot - October 4, 2026:** The prerequisite discrepancy remains open and Microsoft still announces October 14 as the English revision date. The July baseline and September 27 full-review date remain unchanged. This follow-up adds grounding and governance practice, evaluated supplementary resources, and a fresh offline lab run. Use it to learn the concepts, practice architecture decisions, and prepare for the certification. Tenant testing and independent human review were not performed; these are evidence limits and useful future checks, not automatic barriers to using supported material for study. See the [pilot evidence and source decisions](../docs/research/2026-10-04-ab-100-maintenance-pilot.md).
+**Historical bounded maintenance pilot — October 4, 2026:** At that time the prerequisite discrepancy remained open and Microsoft announced October 14. That date observation is superseded by the October 28 notice above. The July baseline and September 27 full-review date remain unchanged. This follow-up adds grounding and governance practice, evaluated supplementary resources, and a fresh offline lab run. Use it to learn the concepts, practice architecture decisions, and prepare for the certification. Tenant testing and independent human review were not performed; these are evidence limits and useful future checks, not automatic barriers to using supported material for study. See the [pilot evidence and source decisions](../docs/research/2026-10-04-ab-100-maintenance-pilot.md).
+
+## October 28 implementation notes
+
+**Confirmed — VERIFY CURRENT (October 28, 2026).** Current GitHub Copilot harness agents support solutions/ALM, but existing agents cannot be transferred between standard and GitHub Copilot harnesses. Recheck capability fit before migration: the table still excludes Azure AI Search knowledge, manual/custom authentication and several publication channels for the GitHub Copilot harness. The harness is Copilot Studio technology; its name does not mean agent customer data is processed by the GitHub Copilot service. [Agents powered by the GitHub Copilot Harness overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/overview)
+
+These are bounded operational updates, not a completed objective rebaseline. Product and tenant exercises were not run. Earlier unresolved support and documentation gaps remain.
 
 ## How to use this guide
 

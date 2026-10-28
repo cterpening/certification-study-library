@@ -138,7 +138,7 @@ GUIDE_METADATA = {
     "upcoming_change_status",
     "upcoming_change_checked",
 }
-IGNORED_MARKDOWN_DIRS = {".git", ".site-build", ".venv", "site", "__pycache__"}
+IGNORED_MARKDOWN_DIRS = {".git", ".maintenance", ".site-build", ".venv", "site", "__pycache__"}
 IGNORED_MARKDOWN_FILES = {Path("docs/initialChat.md")}
 CERTIFICATION_LIST_PATH = ROOT / "CERTIFICATIONS.txt"
 CERTIFICATION_LIST_COLUMNS = (
@@ -1176,24 +1176,38 @@ def validate_ai_audits(
                 continue
             result_code = str(result.get("exam_code"))
             current_review = current_review_by_code.get(result_code)
-            if current_review is None:
-                errors.append(
-                    f"{label}/{result_code} lacks a current source-validation record"
-                )
-                continue
-            # Use the latest preserved source review as of the audit. Older
-            # catalogs retained only a current review, so retain that fallback
-            # when no dated historical record exists; hashes must still match.
-            dated_reviews = [
+            source_reviews = [
                 review for review in review_rows
                 if isinstance(review, dict)
                 and review.get("exam_code") == result_code
                 and review.get("review_type") == "source-validation"
                 and valid_date(review.get("reviewed_on"))
-                and valid_date(result.get("audited_on"))
-                and review["reviewed_on"] <= result["audited_on"]
             ]
-            bound_review = max(dated_reviews, key=lambda row: row["reviewed_on"]) if dated_reviews else current_review
+            audited_on = result.get("audited_on")
+            checked_on = exam_by_code.get(result_code, {}).get("blueprint_last_checked")
+            dated_reviews = [
+                review for review in source_reviews
+                if valid_date(audited_on) and review["reviewed_on"] <= audited_on
+            ]
+            # Prefer evidence that existed at the audit date. Legacy catalogs
+            # overwrote older source reviews: bind that gap to the earliest
+            # retained record, not a later refresh's outcome. Exact paths and
+            # hashes still have to match; this does not renew the old audit.
+            bound_review = (
+                max(dated_reviews, key=lambda row: row["reviewed_on"])
+                if dated_reviews else
+                min(source_reviews, key=lambda row: row["reviewed_on"])
+                if source_reviews else None
+            )
+            needs_current_review = (
+                not valid_date(audited_on) or not valid_date(checked_on)
+                or audited_on >= checked_on
+            )
+            if bound_review is None or (needs_current_review and current_review is None):
+                errors.append(
+                    f"{label}/{result_code} lacks a current source-validation record"
+                )
+                continue
             if (
                 result.get("verdict") in {"pass", "pass-with-notes"}
                 and bound_review.get("outcome") != "passed"

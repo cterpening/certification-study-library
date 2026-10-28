@@ -24,11 +24,12 @@
       "authority_class": 3,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-10-04",
+      "last_checked": "2026-10-28",
       "supported_exams": [
-        "AB-100"
+        "AB-100",
+        "AI-500"
       ],
-      "notes": "MIT license inspected. Reviewed README and lessons 6 (trustworthy agents) and 10 (production observability/evaluation), October 4, 2026; no separate lesson publication/update date displayed. About 2-3 hours for selected reading and an original design worksheet, estimated from two lessons plus analysis; notebook execution adds time. Deploy/security, monitoring and testing. SDK samples need version/account/model review. Lesson 6 inline poem-approval demo solicits approval after generation and does not enforce a consequential tool boundary. No linked video or notebook executed."
+      "notes": "MIT license inspected. Reviewed README and lessons 6 (trustworthy agents) and 10 (production observability/evaluation), October 4, 2026; no separate lesson publication/update date displayed. About 2-3 hours for selected reading and an original design worksheet, estimated from two lessons plus analysis; notebook execution adds time. Deploy/security, monitoring and testing. SDK samples need version/account/model review. Lesson 6 inline poem-approval demo solicits approval after generation and does not enforce a consequential tool boundary. No linked video or notebook executed. October 28 refresh: Lesson 8 offers a concrete refund/customer-support decomposition assignment; lesson 10 distinguishes traces/spans, online/offline evaluation, latency and cost. MIT license file inspected: Microsoft Corporation copyright. Limits: Beginner explanations are not a production architecture guarantee. Lesson 8's general fault-tolerance/scalability advantages are conditional, and its generic multi-agent patterns are not a product-supported orchestration list. Lesson 10 includes an illustrative pass block, not proof of complete instrumentation. Preserve earlier catalog caveats on lesson 6. Notebook dependencies and all third-party links unreviewed. Currentness: Current README advertises 18 lessons and lesson 10 explicitly discusses Microsoft Agent Framework/OpenTelemetry. No reliable per-lesson last-update date exposed by rendered GitHub pages; no claim of a pinned dependency audit. Access: Reading needs no account; running examples may need GitHub/account/model or cloud resources and charges. No notebook executed. Time basis: Two approximately 16 KB lessons plus scenario work; excludes notebook setup, execution and linked videos"
     },
     {
       "id": "ab100-responsible-ai-report-2026",
@@ -23279,12 +23280,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AI-200",
         "AZ-104"
       ],
-      "notes": "September 28 AI-200 deep review: Selected permissions-mode, repository/catalog role, future-default and task source identity sections read. No CLI/role/task changes; full migration commands not audited. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution. September 28 AZ-104 deep review: Selected current permission-mode, migration and role replacement sections read; large command examples not audited/run. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AI-200 deep review: Selected permissions-mode, repository/catalog role, future-default and task source identity sections read. No CLI/role/task changes; full migration commands not audited. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution. September 28 AZ-104 deep review: Selected current permission-mode, migration and role replacement sections read; large command examples not audited/run. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution. October 28 wave1 evidence: Inspected mode effects, built-in roles, catalog, default future status and task source-identity section. Current guide mode-specific roles and caller/source identity supported; commands not executed. No live product execution."
     },
     {
       "id": "ai200-sidecars",
@@ -23294,11 +23295,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AI-200"
       ],
-      "notes": "September 28 AI-200 deep review: Selected main configuration/target-port/legacy-setting sections read; no sitecontainer API or app modification. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AI-200 deep review: Selected main configuration/target-port/legacy-setting sections read; no sitecontainer API or app modification. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution. October 28 wave1 evidence: Inspected conversion/config model, sitecontainers and legacy settings. WEBSITES_PORT/legacy registry app settings do not configure sidecar model. No conversion performed. No live product execution."
     },
     {
       "id": "ai200-kv-reference",
@@ -23308,11 +23309,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AI-200"
       ],
-      "notes": "September 28 AI-200 deep review: Selected rotation/cache, forced refresh, pinned-version and slot-setting sections read; full network/setup walkthrough not executed. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AI-200 deep review: Selected rotation/cache, forced refresh, pinned-version and slot-setting sections read; full network/setup walkthrough not executed. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution. October 28 wave1 evidence: Inspected rotation/source-reference section. Versionless24h cache/refetch, config restart/force refresh and version pinning retained. No rotation tested. No live product execution."
     },
     {
       "id": "ai200-feed-read",
@@ -23322,11 +23323,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AI-200"
       ],
-      "notes": "September 28 AI-200 deep review: Main push/pull, Functions and checkpoint/error sections read; retry claim qualified by trigger troubleshooting and current retry policy article. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AI-200 deep review: Main push/pull, Functions and checkpoint/error sections read; retry claim qualified by trigger troubleshooting and current retry policy article. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution. October 28 wave1 evidence: Inspected supported SDK tables and push/pull responsibility. .NET/Java processor supported, Python not processor SDK. Pull checkpoints/recovery ownership explicit. No live product execution."
     },
     {
       "id": "ai200-feed-python",
@@ -23336,11 +23337,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AI-200"
       ],
-      "notes": "September 28 AI-200 deep review: Unsupported-feature list including change-feed processor read. Long SDK examples and complete API not audited or run. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AI-200 deep review: Unsupported-feature list including change-feed processor read. Long SDK examples and complete API not audited or run. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution. October 28 wave1 evidence: Inspected unsupported features only. ChangeFeedProcessor remains unsupported. No SDK/API behavior run. No live product execution."
     },
     {
       "id": "ai200-pgvector",
@@ -23350,11 +23351,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AI-200"
       ],
-      "notes": "September 28 AI-200 deep review: Selected filtering, iterative scan, version 0.8.0, tenant partitioning and result-shortfall sections read. No extension install, SQL or benchmark execution. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AI-200 deep review: Selected filtering, iterative scan, version 0.8.0, tenant partitioning and result-shortfall sections read. No extension install, SQL or benchmark execution. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution. October 28 wave1 evidence: Inspected README filtering/iterative-scan section. Approximate filters after ANN scan, iterative expansion from0.8.0 and bounded limits supported. Installed Azure extension not checked. No live product execution."
     },
     {
       "id": "ai200-redis-cluster",
@@ -23364,11 +23365,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AI-200"
       ],
-      "notes": "September 28 AI-200 deep review: Selected clustering, RediSearch, ports and size/geo-replication constraints read; no database conversion or network test. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AI-200 deep review: Selected clustering, RediSearch, ports and size/geo-replication constraints read; no database conversion or network test. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution. October 28 wave1 evidence: Inspected clustering policies/ports/module/NoCluster-size/geo restrictions. Enterprise required RediSearch; OSS shard ports discovered not hardcoded. NoCluster conversion contradiction remains. No live product execution."
     },
     {
       "id": "ai200-bus-lock",
@@ -23378,12 +23379,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AI-200",
         "AZ-305"
       ],
-      "notes": "September 28 AI-200 deep review: Selected lock loss, settlement, duration and redelivery sections read. DLQ enablement wording corrected using dedicated DLQ article; no broker execution. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution. September 28 AZ-305 deep review: Selected lifecycle paragraph read: September 30 SDK retirement versus SBMP end of usability; complete settlement reference not newly audited. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AI-200 deep review: Selected lock loss, settlement, duration and redelivery sections read. DLQ enablement wording corrected using dedicated DLQ article; no broker execution. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution. September 28 AZ-305 deep review: Selected lifecycle paragraph read: September 30 SDK retirement versus SBMP end of usability; complete settlement reference not newly audited. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution. October 28 wave1 evidence: Read complete current locks/settlement body. Durable processing can precede failed settlement; lock loss volatile. Still falsely implies DLQ requires enablement relative to dedicated DLQ contract. Old retirement banner no longer in inspected current body. No live product execution."
     },
     {
       "id": "ai200-bus-dedup",
@@ -23393,11 +23394,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AI-200"
       ],
-      "notes": "September 28 AI-200 deep review: Main dedup tier/window/identity/partition/scheduled-message and legacy library/SBMP deadline sections read. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AI-200 deep review: Main dedup tier/window/identity/partition/scheduled-message and legacy library/SBMP deadline sections read. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution. October 28 wave1 evidence: Inspected tiers, MessageID/PartitionKey, scheduled and window sections. Existing guide Standard/Premium20sec–7days/default10min scoped contract supported. No delivery tests. No live product execution."
     },
     {
       "id": "ai200-function-scale",
@@ -23407,12 +23408,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AI-200",
         "AZ-305"
       ],
-      "notes": "September 28 AI-200 deep review: Selected hosting recommendation, Linux v3/plan deadlines, HTTP response limit and Flex group/quota sections read; full table not exhaustively benchmarked or deployed. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution. September 28 AZ-305 deep review: Selected HTTP response timeout, execution/scale-in footnotes and Linux Consumption v3/hosting retirement notes read; full tier/region support matrix not audited. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AI-200 deep review: Selected hosting recommendation, Linux v3/plan deadlines, HTTP response limit and Flex group/quota sections read; full table not exhaustively benchmarked or deployed. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution. September 28 AZ-305 deep review: Selected HTTP response timeout, execution/scale-in footnotes and Linux Consumption v3/hosting retirement notes read; full tier/region support matrix not audited. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution. October 28 wave1 evidence: Inspected plans, elapsed2026 runtime stop,2028 LinuxConsumption retirement, HTTP230seconds and Flex scaling/quota. Existing distinctions supported; change future tense to elapsed. No live product execution."
     },
     {
       "id": "ai200-config-refresh",
@@ -23422,11 +23423,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AI-200"
       ],
-      "notes": "September 28 AI-200 deep review: Selected sentinel update order, explicit refresh call and interval behavior read; no provider/session execution. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AI-200 deep review: Selected sentinel update order, explicit refresh call and interval behavior read; no provider/session execution. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution. October 28 wave1 evidence: Inspected console and sentinel setup/sample. Explicitconfig.refresh(), interval gating and update sentinel last supported. No provider executed. No live product execution."
     },
     {
       "id": "ai200-sampling",
@@ -23436,12 +23437,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AI-200",
         "AZ-400"
       ],
-      "notes": "September 28 AI-200 deep review: Main sampling/signals, metric exclusion, fixed/rate-limited behavior and itemCount guidance read; no exporter or telemetry query run. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution. September 28 AZ-400 deep review: Main OpenTelemetry sampling purpose, language/version defaults, fixed/rate-limited types, custom sampler and unsampled metrics sections read; SDK not executed. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AI-200 deep review: Main sampling/signals, metric exclusion, fixed/rate-limited behavior and itemCount guidance read; no exporter or telemetry query run. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution. September 28 AZ-400 deep review: Main OpenTelemetry sampling purpose, language/version defaults, fixed/rate-limited types, custom sampler and unsampled metrics sections read; SDK not executed. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution. October 28 wave1 evidence: Read current sampling article. New MicrosoftOpenTelemetryDistro recommended for new Python/.NET/Node apps, existingAzureMonitorDistro no change, Java remainsAzureMonitor. Metrics not sampled; optional log filtering language-specific. Defaultrate limiting not universal across old/new distros. No live product execution."
     },
     {
       "id": "ai200-redis-blog",
@@ -23465,11 +23466,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AI-200"
       ],
-      "notes": "September 28 AI-200 deep review: Main creation/module/clustering/NoEviction requirements read; conflict with API conversion exception retained as blocker. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AI-200 deep review: Main creation/module/clustering/NoEviction requirements read; conflict with API conversion exception retained as blocker. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution. October 28 wave1 evidence: Inspected creation Advanced/module/clustering Important notes. Module immutable at creation; Enterprise plus NoEviction for RediSearch; blanket clustering immutability conflicts with API exception. No live product execution."
     },
     {
       "id": "ai200-redis-update",
@@ -23479,11 +23480,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AI-200"
       ],
-      "notes": "September 28 AI-200 deep review: Selected clustering-policy and creation-only module contract read; NoCluster exception conflicts with quickstart blanket wording. Long SDK examples not audited/run. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AI-200 deep review: Selected clustering-policy and creation-only module contract read; NoCluster exception conflicts with quickstart blanket wording. Long SDK examples not audited/run. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution. October 28 wave1 evidence: Inspected API2025-07-01 request properties and named NoCluster conversion example. CurrentNoCluster can update; OSS/Enterprise cannot without deletion. Modules create-only. API example does not prove deployed service supports all paths/regions/geo modes. No live product execution."
     },
     {
       "id": "ai200-functions-retry",
@@ -23493,11 +23494,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AI-200"
       ],
-      "notes": "September 28 AI-200 deep review: Selected trigger matrix, policy behavior, Python support and maximum-retry limitations read. No trigger/SDK/runtime execution. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AI-200 deep review: Selected trigger matrix, policy behavior, Python support and maximum-retry limitations read. No trigger/SDK/runtime execution. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution. October 28 wave1 evidence: Inspected retry-source table, function policy, supported triggers and Python compatibility. Cosmos function-level retry supported for v1/v2; do not copy EventHub checkpoint guarantee to Cosmos. No live product execution."
     },
     {
       "id": "ai200-trigger-errors",
@@ -23507,11 +23508,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AI-200"
       ],
-      "notes": "September 28 AI-200 deep review: Repeated/missing-change and failed-batch/retry-policy sections read; full diagnostics walkthrough not run. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AI-200 deep review: Repeated/missing-change and failed-batch/retry-policy sections read; full diagnostics walkthrough not run. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution. October 28 wave1 evidence: Inspected repeated/missing change troubleshooting and failure defaults. Application unhandled exception does not automatically retry by default; durable failed item/reconciliation remains necessary. No live product execution."
     },
     {
       "id": "ai200-lock-error",
@@ -26443,12 +26444,12 @@
       "authority_class": 2,
       "source_type": "release-notes",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "MS-102",
         "AB-650"
       ],
-      "notes": "September 28 MS-102 deep review: Current capability, FAQ and notice feed read; specific restore instructions supersede old overview coming-soon and April blog in-place roadmap. Launch dates not inferred from older announcement. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 AB-650 deep review: Public change ledger read, including September recovery-window, preview workload and GA granular-restore entries. No customer launch verified in a tenant. See docs/research/2026-09-28-ab-650-deep-review.md No live infrastructure execution."
+      "notes": "September 28 MS-102 deep review: Current capability, FAQ and notice feed read; specific restore instructions supersede old overview coming-soon and April blog in-place roadmap. Launch dates not inferred from older announcement. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 AB-650 deep review: Public change ledger read, including September recovery-window, preview workload and GA granular-restore entries. No customer launch verified in a tenant. See docs/research/2026-09-28-ab-650-deep-review.md No live infrastructure execution. October 28 refresh: Opened first-party evidence October 28, 2026. Inspected scope: October activity logs/critical action approval and September recovery windows/granular restore. Product execution not performed; date/version, role, preview and configuration limitations remain. Supports TECH-01-backup-approval. October 28 refresh: Opened first-party evidence October 28, 2026. Inspected scope: October activity logs/critical action approval and September recovery windows/granular restore. Product execution not performed; date/version, role, preview and configuration limitations remain. Supports TECH-02-backup-operational-logs."
     },
     {
       "id": "ms102-backup-policy",
@@ -27922,11 +27923,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-27",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AB-730"
       ],
-      "notes": "September 27 AB-730 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-ab-730-deep-review.md No live infrastructure execution."
+      "notes": "September 27 AB-730 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-ab-730-deep-review.md No live infrastructure execution. October 28 wave1 evidence: Read full current Customize article. Preferences/plugins/skills separate; trusted skill import, new-session test, source filters and Re-share supported. Skill instructions are behavior, not new source/action permission. No live product execution."
     },
     {
       "id": "ab730-cowork-browser",
@@ -27936,11 +27937,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-27",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AB-730"
       ],
-      "notes": "September 27 AB-730 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-ab-730-deep-review.md No live infrastructure execution."
+      "notes": "September 27 AB-730 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-ab-730-deep-review.md No live infrastructure execution. October 28 wave1 evidence: Inspected requirements, support table, device/session identity and handoff sections. Edge/device user sessions, tenant enablement, no desktop/mobile browser-task support remain. Credential/session tokens stay on device. This does not establish permission for consequential submissions. No live product execution."
     },
     {
       "id": "ab730-history",
@@ -27950,11 +27951,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-27",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AB-730"
       ],
-      "notes": "September 27 AB-730 deep review: Public history guide documents revisit, rename, notebook and delete controls plus 30-day inference deletion behavior. It does not establish a universal agent-filter location; the October objective is covered as a rollout-qualified practice task without invented menus. See docs/research/2026-09-27-ab-730-deep-review.md No live infrastructure execution."
+      "notes": "September 27 AB-730 deep review: Public history guide documents revisit, rename, notebook and delete controls plus 30-day inference deletion behavior. It does not establish a universal agent-filter location; the October objective is covered as a rollout-qualified practice task without invented menus. See docs/research/2026-09-27-ab-730-deep-review.md No live infrastructure execution. October 28 wave1 evidence: Read complete short history article. Chats/revisit/rename/notebook/delete documented. Thirty-day inferred-memory deletion/re-enable behavior documented. No universal agent-filter UI procedure found; bounded official-site search did not resolve location. No live product execution."
     },
     {
       "id": "ab730-cowork-card",
@@ -27964,11 +27965,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-27",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AB-730"
       ],
-      "notes": "September 27 AB-730 deep review: Targeted capability, limitation and approval sections reviewed. Its warning that custom skills are not Microsoft-validated is kept alongside operating-guide automated evaluation, without equating evaluation with certification or verified business correctness. See docs/research/2026-09-27-ab-730-deep-review.md No live infrastructure execution."
+      "notes": "September 27 AB-730 deep review: Targeted capability, limitation and approval sections reviewed. Its warning that custom skills are not Microsoft-validated is kept alongside operating-guide automated evaluation, without equating evaluation with certification or verified business correctness. See docs/research/2026-09-27-ab-730-deep-review.md No live infrastructure execution. October 28 wave1 evidence: Inspected definitions, scope, model/training, limitations, evaluation and mitigation sections. User skills not Microsoft-validated; protected/cloud-file limitations and human checking supported. Anthropic-only model description is incomplete relative to current model/admin pages; approval overview is less nuanced than session/automation controls. No live product execution."
     },
     {
       "id": "ab730-cowork-admin",
@@ -27978,12 +27979,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
-        "AB-730",
-        "AB-650"
+        "AB-650",
+        "AB-730"
       ],
-      "notes": "September 27 AB-730 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-ab-730-deep-review.md No live infrastructure execution. September 28 AB-650 deep review: Current access migration, models, automated task approval, browser and governance sections read. No billing policy, plugin, task or tenant setting changed. See docs/research/2026-09-28-ab-650-deep-review.md No live infrastructure execution."
+      "notes": "September 27 AB-730 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-ab-730-deep-review.md No live infrastructure execution. September 28 AB-650 deep review: Current access migration, models, automated task approval, browser and governance sections read. No billing policy, plugin, task or tenant setting changed. See docs/research/2026-09-28-ab-650-deep-review.md No live infrastructure execution. October 28 wave1 evidence: Read full current admin page. Spending policy selecting Cowork grants access; agent entry obsolete for access, discoverability and provider-model controls distinct. Automation creator identity, default approval and possible preauthorization supported. Anthropic group-scope statement conflicts with dedicated access/model pages. No live product execution."
     },
     {
       "id": "ab730-cowork-faq",
@@ -27993,11 +27994,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-27",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AB-730"
       ],
-      "notes": "September 27 AB-730 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-ab-730-deep-review.md No live infrastructure execution."
+      "notes": "September 27 AB-730 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-ab-730-deep-review.md No live infrastructure execution. October 28 wave1 evidence: Inspected fit, skills, pause/cancel, model/effort, task/filter/schedule and file sections. Existing guide mostly consistent; exact model inventory and admin-disable summary should not override dedicated current access/model pages. No live product execution."
     },
     {
       "id": "ab730-connectors",
@@ -28007,11 +28008,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-27",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AB-730"
       ],
-      "notes": "September 27 AB-730 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-ab-730-deep-review.md No live infrastructure execution."
+      "notes": "September 27 AB-730 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-ab-730-deep-review.md No live infrastructure execution. October 28 wave1 evidence: Inspected connector architecture and types. Synced indexing vs federated live data and user/source permission supported. General page still has read-only/future-early-October-write statements that conflict with dedicated current federated guide. No live product execution."
     },
     {
       "id": "ab730-connectors-user",
@@ -28021,11 +28022,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-27",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AB-730"
       ],
-      "notes": "September 27 AB-730 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-ab-730-deep-review.md No live infrastructure execution."
+      "notes": "September 27 AB-730 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-ab-730-deep-review.md No live infrastructure execution. October 28 wave1 evidence: Fetched metadata only; no current semantic claim. No live product execution."
     },
     {
       "id": "ab730-notebook-references",
@@ -28035,11 +28036,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-27",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AB-730"
       ],
-      "notes": "September 27 AB-730 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-ab-730-deep-review.md No live infrastructure execution."
+      "notes": "September 27 AB-730 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-ab-730-deep-review.md No live infrastructure execution. October 28 wave1 evidence: Inspected reference count/scope and sharing sections. Up to first 300/50 grounding distinctions and sharing linked files remain supported. Not a guarantee every referenced item influenced result; no live sharing test. No live product execution."
     },
     {
       "id": "ab730-facilitator",
@@ -28049,11 +28050,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-27",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AB-730"
       ],
-      "notes": "September 27 AB-730 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-ab-730-deep-review.md No live infrastructure execution."
+      "notes": "September 27 AB-730 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-ab-730-deep-review.md No live infrastructure execution. October 28 wave1 evidence: Inspected license, internal participant visibility, meeting-type/mobile distinction, shared notes and task preview/Planner sync. Existing description supported. No meeting executed. No live product execution."
     },
     {
       "id": "ab730-catchup",
@@ -28063,11 +28064,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-27",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AB-730"
       ],
-      "notes": "September 27 AB-730 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-ab-730-deep-review.md No live infrastructure execution."
+      "notes": "September 27 AB-730 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-ab-730-deep-review.md No live infrastructure execution. October 28 wave1 evidence: Inspected all meeting-setting/capture/post-meeting sections. Only-during speech data, private chat and chat-only Off behavior supported. Absolute transcript-afterward statement needs Teams TAP memory exception from recap article. No live product execution."
     },
     {
       "id": "ab730-recap",
@@ -28077,11 +28078,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-27",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AB-730"
       ],
-      "notes": "September 27 AB-730 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-ab-730-deep-review.md No live infrastructure execution."
+      "notes": "September 27 AB-730 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-ab-730-deep-review.md No live infrastructure execution. October 28 wave1 evidence: Inspected desktop recap license, sharing, summary/capture, markers and full Meeting memory/Delete recap sections. Teams TAP preview memory can support later answers after transcript deletion/noncreation; citations identify memory. Separate transcript deletion does not remove it; recap deletion irreversible. Keep capture and audience limits. No live product execution."
     },
     {
       "id": "ab730-schedule",
@@ -28091,11 +28092,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-27",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AB-730"
       ],
-      "notes": "September 27 AB-730 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-ab-730-deep-review.md No live infrastructure execution."
+      "notes": "September 27 AB-730 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-ab-730-deep-review.md No live infrastructure execution. October 28 wave1 evidence: Read complete user-help scheduling procedure. Ten schedules; run time/count, notifications and management documented. Optional connected experiences prerequisite conflicts with admin page effective-August Connected Experiences rule. No live product execution."
     },
     {
       "id": "ab730-memory",
@@ -28105,11 +28106,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-27",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AB-730"
       ],
-      "notes": "September 27 AB-730 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-ab-730-deep-review.md No live infrastructure execution."
+      "notes": "September 27 AB-730 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-ab-730-deep-review.md No live infrastructure execution. October 28 wave1 evidence: Inspected saved details, history/work inference, instructions and temporary-chat distinctions. Work insights plan-dependent; no live retention/deletion test. No live product execution."
     },
     {
       "id": "ab730-instructions",
@@ -28119,11 +28120,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-27",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AB-730"
       ],
-      "notes": "September 27 AB-730 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-ab-730-deep-review.md No live infrastructure execution."
+      "notes": "September 27 AB-730 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-ab-730-deep-review.md No live infrastructure execution. October 28 wave1 evidence: Fetched metadata only after guide inspection; current detailed instructions help not separately reread. No independent refresh claim for every UI step. No live product execution."
     },
     {
       "id": "ab730-models",
@@ -28133,11 +28134,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-27",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AB-730"
       ],
-      "notes": "September 27 AB-730 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-ab-730-deep-review.md No live infrastructure execution."
+      "notes": "September 27 AB-730 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-ab-730-deep-review.md No live infrastructure execution. October 28 wave1 evidence: Inspected current overview license/grounding, model-selection and controls sections. Auto/Quick response/Think deeper remain. New Basic/Premium terminology and app/URL; automatic work grounding differs from explicitly supplied context. Work IQ on/off and provider scope require current controls. No live product execution."
     },
     {
       "id": "ab730-researcher-models",
@@ -28147,12 +28148,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AB-730",
         "AB-731"
       ],
-      "notes": "September 27 AB-730 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-ab-730-deep-review.md No live infrastructure execution. September 28 AB-731 deep review: Critique, Model Council and individual model sections read. No report generated or model quality compared. See docs/research/2026-09-28-ab-731-deep-review.md No live infrastructure execution."
+      "notes": "September 27 AB-730 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-ab-730-deep-review.md No live infrastructure execution. September 28 AB-731 deep review: Critique, Model Council and individual model sections read. No report generated or model quality compared. See docs/research/2026-09-28-ab-731-deep-review.md No live infrastructure execution. October 28 wave1 evidence: Inspected licensed desktop/web support, Anthropic enablement, Critique and Frontier Auto/Model Council conditions. Agreement between outputs still requires source verification. No live product execution."
     },
     {
       "id": "ab730-excel",
@@ -28162,11 +28163,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-27",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AB-730"
       ],
-      "notes": "September 27 AB-730 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-ab-730-deep-review.md No live infrastructure execution."
+      "notes": "September 27 AB-730 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-ab-730-deep-review.md No live infrastructure execution. October 28 wave1 evidence: Inspected session-only model selection, direct workbook edits/history and lack of individual chat deletion. Supports disposable-copy/undo/version-history guidance. No live product execution."
     },
     {
       "id": "ab730-agents-admin",
@@ -29812,11 +29813,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-27",
+      "last_checked": "2026-10-28",
       "supported_exams": [
+        "AB-730",
         "AB-900"
       ],
-      "notes": "September 27 AB-900 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-ab-900-deep-review.md No live infrastructure execution."
+      "notes": "September 27 AB-900 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-ab-900-deep-review.md No live infrastructure execution. October 28 wave1 evidence: Read full admin scheduling article. Connected Experiences effective August 2026; UI disablement leaves existing schedules until finish and past sessions. Legacy Power Automate flow runtime separate. Conflicting user-help prerequisite retained. No live product execution."
     },
     {
       "id": "ab900-scheduled-environment",
@@ -29826,11 +29828,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-27",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AB-900"
       ],
-      "notes": "September 27 AB-900 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-ab-900-deep-review.md No live infrastructure execution."
+      "notes": "September 27 AB-900 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-ab-900-deep-review.md No live infrastructure execution. October 28 wave1 evidence: Inspected environment lifecycle, permissions, fixed DLP and FAQs. Tenant/environment DLP exceptions, no general maker rights and recreation supported. No live product execution."
     },
     {
       "id": "ab900-mechanics-agent-blog",
@@ -30052,8 +30054,8 @@
       "access_model": "public",
       "last_checked": "2026-09-28",
       "supported_exams": [
-        "DP-420",
-        "AI-200"
+        "AI-200",
+        "DP-420"
       ],
       "notes": "September 27 DP-420 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-420-deep-review.md No live infrastructure execution. September 28 AI-200 deep review: Selected latest/all-versions behavior, deletion/retention, SDK support and account enablement sections read; flattened language table cross-checked against processor/Python references. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
@@ -30167,11 +30169,11 @@
       "authority_class": 2,
       "source_type": "release-notes",
       "access_model": "public",
-      "last_checked": "2026-09-27",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AZ-801"
       ],
-      "notes": "September 27 AZ-801 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-az-801-deep-review.md No live infrastructure execution."
+      "notes": "September 27 AZ-801 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-az-801-deep-review.md No live infrastructure execution. October 28 refresh: Opened first-party evidence October 28, 2026. Inspected scope: October ILR expansion and cross-tenant preview; did not evaluate complete cross-tenant configuration. Product execution not performed; date/version, role, preview and configuration limitations remain. Supports TECH-06-azure-ilr-disk-support."
     },
     {
       "id": "az801-immutable-vault",
@@ -30820,11 +30822,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-27",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AB-730"
       ],
-      "notes": "Official evidence reviewed September 27, 2026; bounded lifecycle or future-scope supplement. Historical full-guide review date is preserved."
+      "notes": "Official evidence reviewed September 27, 2026; bounded lifecycle or future-scope supplement. Historical full-guide review date is preserved. October 28 wave1 evidence: Fetched current overview; full current overview body not independently re-read after existing guide inspection. Do not use fetch alone to renew its specific GA/personal-account claims. No live product execution."
     },
     {
       "id": "ab-730-cowork-use",
@@ -30834,11 +30836,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-27",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AB-730"
       ],
-      "notes": "Official evidence reviewed September 27, 2026; bounded lifecycle or future-scope supplement. Historical full-guide review date is preserved."
+      "notes": "Official evidence reviewed September 27, 2026; bounded lifecycle or future-scope supplement. Historical full-guide review date is preserved. October 28 wave1 evidence: Inspected task start, work/progress, approval, files, side panel, session controls, skills/custom skills/evaluation, scheduling/event task sections. Session recipient-scoped approval, existing-file edits, incomplete step visibility, new-session skill loading, 25 schedules and distinct run/definition state supported. Some file/archive limits disagree with Customize; avoid teaching peripheral fixed limits. No live product execution."
     },
     {
       "id": "ab-730-work-iq",
@@ -30848,12 +30850,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AB-730",
         "AB-731"
       ],
-      "notes": "Official evidence reviewed September 27, 2026; bounded lifecycle or future-scope supplement. Historical full-guide review date is preserved. September 28 AB-731 deep review: Overview and API/billing/governance scope read. Usage-based API separate from Copilot user license; no Work IQ invocation. See docs/research/2026-09-28-ab-731-deep-review.md No live infrastructure execution."
+      "notes": "Official evidence reviewed September 27, 2026; bounded lifecycle or future-scope supplement. Historical full-guide review date is preserved. September 28 AB-731 deep review: Overview and API/billing/governance scope read. Usage-based API separate from Copilot user license; no Work IQ invocation. See docs/research/2026-09-28-ab-731-deep-review.md No live infrastructure execution. October 28 wave1 evidence: Read complete short overview. Permission-aware organizational/business context; user-scoped action authorization and distinct usage-based API offering. Developer protocol details are adjacent context rather than user exam implementation requirements. No live product execution."
     },
     {
       "id": "comptia-security-v7-current",
@@ -31966,15 +31968,17 @@
     },
     {
       "id": "microsoft-ab-900-course",
-      "title": "Microsoft 365 Copilot and Agent Administration Fundamentals",
+      "title": "Course AB-900T00-A: Introduction to Microsoft 365 and AI administration",
       "url": "https://learn.microsoft.com/en-us/training/courses/ab-900t00",
       "publisher": "Microsoft",
       "authority_class": 3,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AB-900"],
-      "notes": "Official one-day course."
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AB-900"
+      ],
+      "notes": "Official one-day course. October 28 refresh: Useful beginner sequence before the more advanced AB-650 agent-identity material; official exact course. Limits: No per-unit review or completeness claim for the October AB-900 blueprint. Dynamic page hides per-path duration values in the direct representation. Currentness: Current exact page title is Introduction to Microsoft 365 and AI administration; existing source title is Microsoft 365 Copilot and Agent Administration Fundamentals. Page describes beginning technical IT professionals and novice administrators. Access: Public outline and linked modules; instructor-led attendance is a separate booking. Time basis: Exact course page At a glance; does not imply self-study runtime"
     },
     {
       "id": "microsoft-ai-901-course",
@@ -32073,9 +32077,11 @@
       "authority_class": 4,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AB-900"],
-      "notes": "Nine-hour path with courses published June-July 2026 and a Pluralsight practice exam; allow about two to four additional hours for an attempt and explanation review."
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AB-900"
+      ],
+      "notes": "Nine-hour path with courses published June-July 2026 and a Pluralsight practice exam; allow about two to four additional hours for an attempt and explanation review. October 28 public resource review: 8h50 sum,rounds9Hours;June17 3h44,June30 2h41,July30 2h25. Landing-page/selected-unit evidence only; paid lessons and assessment content uninspected."
     },
     {
       "id": "oreilly-az-900-video",
@@ -32139,9 +32145,11 @@
       "authority_class": 4,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AB-900"],
-      "notes": "July 2026 book; provider reading estimate is seven hours, 22 minutes."
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AB-900"
+      ],
+      "notes": "July 2026 book; provider reading estimate is seven hours, 22 minutes. October 28 public resource review: 7h22 platform reading estimate,not video runtime. Landing-page/selected-unit evidence only; paid lessons and assessment content uninspected."
     },
     {
       "id": "oreilly-ab-900-video",
@@ -32151,9 +32159,11 @@
       "authority_class": 4,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AB-900"],
-      "notes": "Approximately four-hour video course."
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AB-900"
+      ],
+      "notes": "Approximately four-hour video course. October 28 public resource review: 4h18 published runtime. Landing-page/selected-unit evidence only; paid lessons and assessment content uninspected."
     },
     {
       "id": "oreilly-ai-901-video",
@@ -32231,9 +32241,11 @@
       "authority_class": 4,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AB-900"],
-      "notes": "About 11 hours; shown as updated August 2026."
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AB-900"
+      ],
+      "notes": "About 11 hours; shown as updated August 2026. October 28 public resource review: 11h7 published total;labs/simulations add time. Landing-page/selected-unit evidence only; paid lessons and assessment content uninspected."
     },
     {
       "id": "udemy-ai-901-christopher-nett",
@@ -32448,16 +32460,16 @@
       "access_model": "public",
       "last_checked": "2026-09-28",
       "supported_exams": [
-        "AZ-900",
-        "PL-900",
-        "SC-900",
+        "AB-100",
         "AB-900",
         "AI-901",
-        "AB-100",
+        "AZ-900",
         "MD-102",
         "MS-102",
         "MS-700",
-        "MS-721"
+        "MS-721",
+        "PL-900",
+        "SC-900"
       ],
       "notes": "Official demonstrations selected by objective; the channel is not an end-to-end certification course. September 27 MD-102 deep review: Channel shell only; no video transcript from the channel retrieved. Specific selected article transcript separately reviewed. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public channel shell only; underlying videos not inspected. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 MS-700 deep review: Channel shell only; videos and current exam coverage not reviewed. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Public channel shell only; videos and complete current MS-721 coverage unreviewed. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution. September 28 AI-901 deep review: 182-character channel shell; no videos inspected. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution. September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution. September 28 PL-900 deep review: Availability fetched; no full-page semantic review claimed unless a reading boundary is explicitly recorded below. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
@@ -32471,24 +32483,24 @@
       "access_model": "public",
       "last_checked": "2026-09-28",
       "supported_exams": [
-        "GH-900",
-        "GH-200",
-        "GH-300",
-        "AZ-900",
-        "AI-901",
-        "AI-103",
         "AB-100",
-        "AZ-801",
-        "AZ-802",
-        "DP-300",
-        "DP-800",
+        "AI-103",
         "AI-200",
         "AI-300",
-        "SC-500",
+        "AI-901",
+        "AZ-801",
+        "AZ-802",
+        "AZ-900",
+        "DP-300",
+        "DP-800",
+        "GH-200",
+        "GH-300",
+        "GH-900",
         "MD-102",
         "MS-102",
         "MS-700",
-        "MS-721"
+        "MS-721",
+        "SC-500"
       ],
       "notes": "Official workshops and live-session recordings selected by objective. The channel is a discovery source for GitHub, Azure, Microsoft Foundry, agents, and adjacent developer topics, not an end-to-end certification path. Monitor new uploads through the channel feed: https://www.youtube.com/feeds/videos.xml?channel_id=UCkm6luGCS3hD25jcEhvRMIA September 27 MD-102 deep review: Channel shell only; event/video content unverified. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public channel shell only; event/course content unverified. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 MS-700 deep review: Channel shell only; videos, playlists and current exam coverage not reviewed. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Public channel shell only; videos and complete current MS-721 coverage unreviewed. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution. September 28 AI-200 deep review: Channel shell/discovery source only; no video content or complete exam coverage reviewed. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution. September 28 AI-300 deep review: Channel shell/discovery reference only; videos and complete exam coverage not reviewed. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution. September 28 AI-901 deep review: 180-character shell; discovery reference only. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution. September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution. September 28 SC-500 deep review: 180-character channel shell; no current SC500-specific path verified. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
@@ -35464,8 +35476,8 @@
       "access_model": "public",
       "last_checked": "2026-09-28",
       "supported_exams": [
-        "AZ-900",
         "AB-900",
+        "AZ-900",
         "SC-900"
       ],
       "notes": "September 27 SC-900 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution. September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
@@ -35525,8 +35537,8 @@
       "access_model": "public",
       "last_checked": "2026-09-28",
       "supported_exams": [
-        "AZ-900",
-        "AB-900"
+        "AB-900",
+        "AZ-900"
       ],
       "notes": "Purview product packaging, portals, and feature availability are volatile. September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
@@ -35782,9 +35794,9 @@
       "access_model": "public",
       "last_checked": "2026-09-28",
       "supported_exams": [
-        "DP-900",
+        "AI-200",
         "DP-420",
-        "AI-200"
+        "DP-900"
       ],
       "notes": "API mappings, throughput implications, and multi-region constraints are volatile. September 28 AI-200 deep review: Retained context reference fetched; no exhaustive reread of this whole reference or linked procedures in this pass. Applied changes are supported by separately identified targeted sources. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution. September 28 DP-900 deep review: Selected consistency definitions, read scope and session-token sections read; full regional/API restrictions not audited. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
     },
@@ -36644,9 +36656,9 @@
       "access_model": "public",
       "last_checked": "2026-09-28",
       "supported_exams": [
-        "SC-900",
         "AB-900",
-        "MS-102"
+        "MS-102",
+        "SC-900"
       ],
       "notes": "September 28 MS-102 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution."
     },
@@ -36659,7 +36671,10 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "last_checked": "2026-08-31",
-      "supported_exams": ["SC-900", "AB-900"],
+      "supported_exams": [
+        "AB-900",
+        "SC-900"
+      ],
       "notes": "Integrated products, portal experiences, licensing, and response capabilities are volatile."
     },
     {
@@ -36746,9 +36761,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["SC-900"],
-      "notes": "Supported methods and authentication capabilities are volatile."
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AB-900",
+        "SC-900"
+      ],
+      "notes": "Supported methods and authentication capabilities are volatile. October 28 wave1 evidence: Inspected methods matrix and phishing-resistant guidance. Password, MFA and method support differ; passkeys/FIDO2, WHfB and CBA supported for phishing-resistant scenarios. Registration, enabled policy and CA strength enforcement are separate. No live product execution."
     },
     {
       "id": "microsoft-purview-docs-sc900",
@@ -36759,7 +36777,11 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "last_checked": "2026-08-31",
-      "supported_exams": ["SC-900", "AB-900", "SC-401"]
+      "supported_exams": [
+        "AB-900",
+        "SC-401",
+        "SC-900"
+      ]
     },
     {
       "id": "microsoft-purview-audit-overview-sc900",
@@ -36781,8 +36803,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["SC-900"]
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AB-900",
+        "SC-900"
+      ],
+      "notes": " October 28 wave1 evidence: Inspected assessments, responsibility, score and improvement action sections. Assign customer actions and evidence; score not legal certification. No live product execution."
     },
     {
       "id": "microsoft-purview-data-classification-overview-sc900",
@@ -36805,9 +36831,9 @@
       "access_model": "public",
       "last_checked": "2026-09-28",
       "supported_exams": [
-        "SC-900",
         "AB-900",
-        "MS-102"
+        "MS-102",
+        "SC-900"
       ],
       "notes": "Supported locations, actions, licensing, and policy capabilities are volatile. September 28 MS-102 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution."
     },
@@ -37353,9 +37379,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AB-900"],
-      "notes": "Request states, activation, publication, audience scoping, roles, and approval workflows are volatile."
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AB-900"
+      ],
+      "notes": "Request states, activation, publication, audience scoping, roles, and approval workflows are volatile. October 28 wave1 evidence: Inspected pending-review/update/activation and request-access sections. Previous approved version remains pending update. Distinguish custom publication approval from the specific Microsoft-built user-request-access workflow; do not overgeneralize a restriction from one section. No live product execution."
     },
     {
       "id": "microsoft-365-agent-tools-admin-ab900",
@@ -37365,9 +37393,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AB-900"],
-      "notes": "Tool registry, MCP registration, request states, consent, roles, and policy behavior are volatile."
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AB-900"
+      ],
+      "notes": "Tool registry, MCP registration, request states, consent, roles, and policy behavior are volatile. October 28 wave1 evidence: Read complete current tools overview. Old URL redirects; overview no longer supplies full BYO support matrix. Use dedicated BYO article for existing guide exclusions. Tool inventory not runtime downstream permission. No live product execution."
     },
     {
       "id": "microsoft-365-copilot-docs-ab900",
@@ -37390,8 +37420,8 @@
       "access_model": "public",
       "last_checked": "2026-09-28",
       "supported_exams": [
-        "AB-900",
-        "AB-731"
+        "AB-731",
+        "AB-900"
       ],
       "notes": "Controls, models, sources, limits, file support, availability, and reporting are volatile. September 28 AB-731 deep review: Selected citations, web control, mobile and model-choice sections read. Broad residency language scoped with detailed EDP page; no claim to all FAQ/reporting accuracy. See docs/research/2026-09-28-ab-731-deep-review.md No live infrastructure execution."
     },
@@ -37403,9 +37433,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AB-900"],
-      "notes": "Architecture, models, grounding, features, and data-processing details are volatile."
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AB-900"
+      ],
+      "notes": "Architecture, models, grounding, features, and data-processing details are volatile. October 28 wave1 evidence: Opened old architecture URL; redirects to current Copilot overview. Do not infer the old detailed architecture page remains at that destination. Use privacy/data-protection sources for precise claims. No live product execution."
     },
     {
       "id": "microsoft-365-copilot-data-protection-architecture-ab900",
@@ -37415,9 +37447,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AB-900"],
-      "notes": "Sensitivity-label behavior, discovery controls, interaction storage, auditing, and supported experiences are volatile."
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AB-900"
+      ],
+      "notes": "Sensitivity-label behavior, discovery controls, interaction storage, auditing, and supported experiences are volatile. October 28 wave1 evidence: Inspected complete short architecture body. Encrypted labeled rights, some label limitations, SharePoint source discovery and Microsoft365 interaction/Purview records; avoid applying broad supports-all-files claims to Cowork. No live product execution."
     },
     {
       "id": "microsoft-365-copilot-overview-ab900",
@@ -37451,9 +37485,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AB-900"],
-      "notes": "Eligible services, meters, credits, roles, Azure prerequisites, budgets, limits, and billing surfaces are volatile."
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AB-900"
+      ],
+      "notes": "Eligible services, meters, credits, roles, Azure prerequisites, budgets, limits, and billing surfaces are volatile. October 28 wave1 evidence: Inspected setup/prerequisites, budget and disablement. Alert-only budget and up-to-two-hour disablement for active agents remain. Distinguish this budget from usage-based Cowork limit system. No live product execution."
     },
     {
       "id": "microsoft-purview-dspm-current-ab900",
@@ -37499,9 +37535,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AB-900"],
-      "notes": "Licensing, supported site types, group limits, delegation, Copilot/search effects, and rollout behavior are volatile."
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AB-900"
+      ],
+      "notes": "Licensing, supported site types, group limits, delegation, Copilot/search effects, and rollout behavior are volatile. October 28 wave1 evidence: Inspected permissions, channel sites and sharing behavior. Both ordinary permission and control-group membership for in-scope internal case. Separate private/shared channel policies. External shared-channel participants not evaluated by resource-tenant RAC group; their channel/site permissions remain. No live product execution."
     },
     {
       "id": "terraform-professional-blueprint",
@@ -42144,9 +42182,13 @@
       "authority_class": 2,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-802"],
-      "notes": "Current official five-day course page; the credential page still showed no training at validation time."
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AZ-802",
+        "AZ-800",
+        "AZ-801"
+      ],
+      "notes": "Current official five-day course page; the credential page still showed no training at validation time. October 28 refresh: Current official route through common server infrastructure and advanced administration areas after the older courseware retirement. Limits: The successor course is not evidence that old exams have identical scope. Individual lessons/labs not reviewed. Currentness: Course retirement catalog lists AZ-800T00 and AZ-801T00 courseware retirement 09/30/2026 with this replacement. Exact current page lists Windows Admin Center, PowerShell, Azure Arc, Azure Monitor, Azure Update Manager and Defender for Cloud. Access: Public outline; a provider class and lab environment may incur cost. Time basis: Exact opened course page"
     }
     ,
     {
@@ -43167,10 +43209,10 @@
       "access_model": "public",
       "last_checked": "2026-09-28",
       "supported_exams": [
+        "AI-200",
         "DP-420",
         "DP-750",
-        "DP-800",
-        "AI-200"
+        "DP-800"
       ],
       "notes": "September 28 AI-200 deep review: Public interface landing fetched; no assessment or exam questions inspected. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
@@ -43500,8 +43542,8 @@
       "access_model": "public",
       "last_checked": "2026-09-28",
       "supported_exams": [
-        "DP-420",
-        "AI-200"
+        "AI-200",
+        "DP-420"
       ],
       "notes": "September 28 AI-200 deep review: Retained context reference fetched; no exhaustive reread of this whole reference or linked procedures in this pass. Applied changes are supported by separately identified targeted sources. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
@@ -43606,8 +43648,8 @@
       "access_model": "public",
       "last_checked": "2026-09-28",
       "supported_exams": [
-        "DP-420",
-        "AI-200"
+        "AI-200",
+        "DP-420"
       ],
       "notes": "September 28 AI-200 deep review: Selected processor language support, leases, delivery and error contract read; full code examples not executed. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
@@ -45836,11 +45878,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AI-200"
       ],
-      "notes": "September 28 AI-200 deep review: Selected cluster prerequisite, pod label, ServiceAccount annotation and restart sections read; full SDK and preview-identity-binding matrix not audited. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AI-200 deep review: Selected cluster prerequisite, pod label, ServiceAccount annotation and restart sections read; full SDK and preview-identity-binding matrix not audited. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution. October 28 wave1 evidence: Inspected prerequisites, ServiceAccount/pod label and restart guidance. Automatic clusters preconfigure OIDC/workload identity; Standard setup required. Pod label/client-id/federation prerequisites retained. No live product execution."
     },
     {
       "id": "ai-200-container-apps-logs-and-monitoring",
@@ -45892,11 +45934,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AI-200"
       ],
-      "notes": "September 28 AI-200 deep review: Selected dimensions, indexing threshold, policy changes and DiskANN/quantization sections read; no vector database execution. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AI-200 deep review: Selected dimensions, indexing threshold, policy changes and DiskANN/quantization sections read; no vector database execution. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution. October 28 wave1 evidence: Inspected index types/dimensions/thresholds/policy edits/ANN determinism/current limits. Existing limits supported; current doc explains replica-index-induced variation on unchanged data. Propose bounded quality/reproducibility example. No live product execution."
     },
     {
       "id": "ai-200-connect-with-python",
@@ -46005,12 +46047,12 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AI-200",
         "AZ-305"
       ],
-      "notes": "September 28 AI-200 deep review: Selected lifecycle, deadlines, clustering and migration sections read. Prior April 1 new-customer cutoff not supported by current page and removed. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution. September 28 AZ-305 deep review: Both tier families retirement/disablement dates and Enterprise compatibility sections read. No automatic state migration or disputed NoCluster limits asserted. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AI-200 deep review: Selected lifecycle, deadlines, clustering and migration sections read. Prior April 1 new-customer cutoff not supported by current page and removed. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution. September 28 AZ-305 deep review: Both tier families retirement/disablement dates and Enterprise compatibility sections read. No automatic state migration or disputed NoCluster limits asserted. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution. October 28 wave1 evidence: Inspected both SKU retirement FAQ groups. Enterprise/Flash March31,2027 and Basic/Standard/Premium Sept30,2028 retained; no previous April1,2026 new-customer cutoff substantiation. No live product execution."
     },
     {
       "id": "ai-200-vector-search-concepts",
@@ -46063,11 +46105,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AI-200"
       ],
-      "notes": "September 28 AI-200 deep review: Selected implicit-subqueue, TTL, expiry and delivery-count sections read; replay procedures not executed. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AI-200 deep review: Selected implicit-subqueue, TTL, expiry and delivery-count sections read; replay procedures not executed. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution. October 28 wave1 evidence: Inspected lifecycle/TTL/settlement/causes sections. Implicit subqueue, no normal TTL/auto cleanup, settle before receiver close. Supports guide correction against generic locks page. No live product execution."
     },
     {
       "id": "ai-200-event-grid-concepts",
@@ -46105,11 +46147,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AI-200"
       ],
-      "notes": "September 28 AI-200 deep review: Selected Basic push endpoint timeout, destination response-code table, retry/TTL and dead-letter sections read; other delivery modes not inferred. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AI-200 deep review: Selected Basic push endpoint timeout, destination response-code table, retry/TTL and dead-letter sections read; other delivery modes not inferred. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution. October 28 wave1 evidence: Inspected destination error table, response timeout, retry TTL/attempts and dead-letter. 30seconds/default30/1440 and nonretry differences supported for documented push context. No universal namespace/pull inference. No live product execution."
     },
     {
       "id": "ai-200-functions-python-developer-guide",
@@ -46287,11 +46329,11 @@
       "authority_class": 3,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AI-200"
       ],
-      "notes": "September 28 AI-200 deep review: Public outline/instructor/agenda and embedded event metadata read: October 1 12:00–16:00 UTC, PT4H; agenda adds to 240 minutes before listed breaks. Future delivery/recording unverified. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AI-200 deep review: Public outline/instructor/agenda and embedded event metadata read: October 1 12:00–16:00 UTC, PT4H; agenda adds to 240 minutes before listed breaks. Future delivery/recording unverified. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution. October 28 public resource review: Existing240minagenda before separately listedbreaks. Currentexacteventdate not exposed. Landing-page/selected-unit evidence only; paid lessons and assessment content uninspected."
     },
     {
       "id": "ai-200-udemy-ai-200-complete-course-by-luke-ginn",
@@ -46301,11 +46343,11 @@
       "authority_class": 4,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AI-200"
       ],
-      "notes": "September 28 AI-200 deep review: Direct blocked; indexed public outline: August 2026, 13 sections, 55 lectures, 21h19. Some walkthroughs forthcoming; paid lessons/coverage unverified. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AI-200 deep review: Direct blocked; indexed public outline: August 2026, 13 sections, 55 lectures, 21h19. Some walkthroughs forthcoming; paid lessons/coverage unverified. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution. October 28 public resource review: 21h43 published runtime. Landing-page/selected-unit evidence only; paid lessons and assessment content uninspected."
     },
     {
       "id": "ai-200-udemy-ai-200-exam-prep-by-kuljot-singh-bakshi",
@@ -46315,11 +46357,11 @@
       "authority_class": 4,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AI-200"
       ],
-      "notes": "September 28 AI-200 deep review: Direct blocked; indexed public outline: June 2026, 15 sections, 135 lectures, 18h5. Paid lessons/coverage unverified. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AI-200 deep review: Direct blocked; indexed public outline: June 2026, 15 sections, 135 lectures, 18h5. Paid lessons/coverage unverified. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution. October 28 public resource review: 18h5 published runtime. Landing-page/selected-unit evidence only; paid lessons and assessment content uninspected."
     },
     {
       "id": "ai-200-udemy-ai-200-course-by-scott-duffy",
@@ -46329,11 +46371,11 @@
       "authority_class": 4,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AI-200"
       ],
-      "notes": "September 28 AI-200 deep review: Direct blocked; indexed public outline: May 2026, 11 sections, 29 lectures, 3h54. Paid lessons/coverage unverified. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AI-200 deep review: Direct blocked; indexed public outline: May 2026, 11 sections, 29 lectures, 3h54. Paid lessons/coverage unverified. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution. October 28 public resource review: 3h54 published runtime. Landing-page/selected-unit evidence only; paid lessons and assessment content uninspected."
     },
     {
       "id": "ai-200-john-savill-azure-master-class-repository",
@@ -46358,11 +46400,11 @@
       "authority_class": 4,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AI-200"
       ],
-      "notes": "September 28 AI-200 deep review: Direct blocked; indexed August 2026 listing has four 25-question sets. Claimed August 28 exam update uncorroborated by official baseline; question originality, answers and difficulty unverified. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AI-200 deep review: Direct blocked; indexed August 2026 listing has four 25-question sets. Claimed August 28 exam update uncorroborated by official baseline; question originality, answers and difficulty unverified. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution. October 28 public resource review: 100questions,four25-question sets;about3–6hours editorial attempt+remediation budget. Landing-page/selected-unit evidence only; paid lessons and assessment content uninspected."
     },
     {
       "id": "ai-300-blueprint",
@@ -46916,17 +46958,17 @@
     },
     {
       "id": "ai-500-course",
-      "title": "AI-500T00 Designing and implementing multi-agent AI solutions",
+      "title": "Course AI-500T00-A: Design and implement multi-agent AI solutions",
       "url": "https://learn.microsoft.com/en-us/training/courses/ai-500t00",
       "publisher": "Microsoft",
       "authority_class": 2,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AI-500"
       ],
-      "notes": "September 28 AI-500 deep review: Public course page read: English, four days, listed availability September 30. No instructor-led event attended or booked. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AI-500 deep review: Public course page read: English, four days, listed availability September 30. No instructor-led event attended or booked. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution. October 28 refresh: Exact official course route supported by both current course and exam pages. Limits: Absence of a future-availability notice does not prove a particular class has run or can be booked. No lab or lesson completion. Currentness: Current page has no September 30 future-availability notice in its overview. Existing source notes preserve a September 28 observation of September 30 availability; retain that history but add today's observation. Exam page now links this course. Access: Public syllabus; a specific class occurrence and hosted lab entitlement were not verified. Time basis: Exact opened course page"
     },
     {
       "id": "ai-500-learn-architect-path",
@@ -48179,8 +48221,12 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["SC-200"]
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AB-900",
+        "SC-200"
+      ],
+      "notes": " October 28 wave1 evidence: Inspected audit purpose, before-search/access and search-filter sections. UTC/actor/activity/workload search versus content search. Retention/coverage/ingestion require scope; no actual audit query. No live product execution."
     },
     {
       "id": "sc-200-graph-activity-logs",
@@ -48613,12 +48659,13 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
-        "SC-300",
-        "MS-102"
+        "AB-900",
+        "MS-102",
+        "SC-300"
       ],
-      "notes": "Authentication methods policy, legacy MFA/SSPR policy coexistence, targeting, and migration. September 28 MS-102 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution."
+      "notes": "Authentication methods policy, legacy MFA/SSPR policy coexistence, targeting, and migration. September 28 MS-102 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. October 28 wave1 evidence: Inspected method policy/management and migration sections. Reuse catalog association, not duplicate source. No full authentication deployment or recovery workflow validated. No live product execution."
     },
     {
       "id": "sc-300-temporary-access-pass",
@@ -48826,9 +48873,12 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["SC-300"],
-      "notes": "Recommendation-based posture percentage, improvement actions, roles, applicability and limitations."
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AB-900",
+        "SC-300"
+      ],
+      "notes": "Recommendation-based posture percentage, improvement actions, roles, applicability and limitations. October 28 wave1 evidence: Read recommendation, scoring, interpretation and FAQ sections. Alignment score, partial actions, NotScored and no breach-probability guarantee. Some administrative role wording differs within page; avoid fixed role claim in proposal. No live product execution."
     },
     {
       "id": "sc-300-learn-identity-management",
@@ -50306,9 +50356,11 @@
       "authority_class": 1,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["AB-650"],
-      "notes": "Official AB-650 path; listed duration 8 hours 27 minutes."
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AB-650"
+      ],
+      "notes": "Official AB-650 path; listed duration 8 hours 27 minutes. October 28 refresh: Improves the weak agent-administration route using already-registered training, especially identity/ownership distinctions and curation/monitoring sequence. Limits: Read path and module outline, not every lesson or exercise. Course prerequisites and licensing claims need product corroboration; no E5/E7 tenant tested. Currentness: Exact current path contains a ten-unit Entra Agent ID module with separate Entra owner versus registry ownership, sponsor transfer workflows and Conditional Access. This is substantive current training discovery, not proof of every technical behavior described. Access: Reading public; exact path prerequisite states Microsoft 365 E5 tenant, with E7 (Frontier Suite) preferred for Agent 365/Entra Suite lab licensing. Treat current licensing and availability as VERIFY CURRENT. Tenant/lab entitlement is not included simply because the training text is free. Time basis: Seven module descriptions and prerequisite-dependent exercises. Existing source notes say 8h27; indexed search now says 8h38, but direct path/module representations omit numeric runtimes. Do not silently replace the old exact number with the search excerpt."
     },
     {
       "id": "ab-650-john-savill-youtube",
@@ -51325,7 +51377,18 @@
       "id": "ab-730-practice", "title": "AB-730 Practice Assessment", "url": "https://learn.microsoft.com/en-us/credentials/certifications/ai-business-professional/practice/assessment?assessment-type=practice&assessmentId=650120434&practice-assessment-type=certification", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "independent-assessment", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["AB-730"], "notes": "Free official readiness assessment linked from the credential page."
     },
     {
-      "id": "ab-730-course", "title": "AB-730T00-A Transform business workflows with generative AI", "url": "https://learn.microsoft.com/en-us/training/courses/ab-730t00", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["AB-730"], "notes": "One-day official instructor-led course linked to the self-paced path."
+      "id": "ab-730-course",
+      "title": "AB-730T00-A Transform business workflows with generative AI",
+      "url": "https://learn.microsoft.com/en-us/training/courses/ab-730t00",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AB-730"
+      ],
+      "notes": "One-day official instructor-led course linked to the self-paced path. October 28 public resource review: Published instructor-led duration 1 day; self-study runtime not exposed Landing-page/selected-unit evidence only; paid lessons and assessment content uninspected."
     },
     {
       "id": "ab-730-learn-path",
@@ -51335,11 +51398,11 @@
       "authority_class": 1,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-09-27",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AB-730"
       ],
-      "notes": "September 27 public listing now has four modules: content, data/visuals, meetings/collaboration and Cowork. The September 1 six-module/4h31 observation was historical and no longer describes this page. Current total duration and individual module completion were not independently established. September 27 AB-730 deep review: Public landing metadata reviewed; modules were not completed and no current total duration independently established. See docs/research/2026-09-27-ab-730-deep-review.md No live infrastructure execution."
+      "notes": "September 27 public listing now has four modules: content, data/visuals, meetings/collaboration and Cowork. The September 1 six-module/4h31 observation was historical and no longer describes this page. Current total duration and individual module completion were not independently established. September 27 AB-730 deep review: Public landing metadata reviewed; modules were not completed and no current total duration independently established. See docs/research/2026-09-27-ab-730-deep-review.md No live infrastructure execution. October 28 public resource review: About 4–6 hours editorial estimate from four modules plus short original task review; current direct extraction omits durations. Search index displays4h30. Landing-page/selected-unit evidence only; paid lessons and assessment content uninspected."
     },
     {
       "id": "ab-730-exam-prep-video", "title": "Prepare for Microsoft Certification Exam AB-730", "url": "https://www.youtube.com/live/T_Y3GTEb8pY", "publisher": "Microsoft", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["AB-730"], "notes": "Official exam-preparation video linked directly from the credential page; verify current runtime and blueprint alignment."
@@ -51352,14 +51415,25 @@
       "authority_class": 3,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-09-27",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AB-730"
       ],
-      "notes": "September 27 listing shows two courses totaling 3h01 (path rounded to 3 hours): Vlad Catrinescu fundamentals 1h16 August 22, 2026, and prompt/conversation course 1h45 September 11, 2026. Path remains in production and still describes three domains; no paid lessons reviewed. September 27 AB-730 deep review: Public listing only; no paid lessons or practice exam completed. Earlier path inventory corrected and remaining October coverage gap explicit. See docs/research/2026-09-27-ab-730-deep-review.md No live infrastructure execution."
+      "notes": "September 27 listing shows two courses totaling 3h01 (path rounded to 3 hours): Vlad Catrinescu fundamentals 1h16 August 22, 2026, and prompt/conversation course 1h45 September 11, 2026. Path remains in production and still describes three domains; no paid lessons reviewed. September 27 AB-730 deep review: Public listing only; no paid lessons or practice exam completed. Earlier path inventory corrected and remaining October coverage gap explicit. See docs/research/2026-09-27-ab-730-deep-review.md No live infrastructure execution. October 28 public resource review: 4h26 summed video duration; path rounds4Hours;review/practice adds time. Landing-page/selected-unit evidence only; paid lessons and assessment content uninspected."
     },
     {
-      "id": "ab-730-oreilly-crash-course", "title": "Microsoft AI Business Professional AB-730 Crash Course", "url": "https://www.oreilly.com/live-events/microsoft-ai-business-professional-ab-730-crash-course/0642572353940/0642572353933/", "publisher": "O'Reilly", "authority_class": 3, "source_type": "third-party-training", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["AB-730"], "notes": "Current guided event with about three hours of published domain instruction and exercises plus breaks; verify the live date and local start/end times."
+      "id": "ab-730-oreilly-crash-course",
+      "title": "Microsoft AI Business Professional AB-730 Crash Course",
+      "url": "https://www.oreilly.com/live-events/microsoft-ai-business-professional-ab-730-crash-course/0642572353940/0642572353933/",
+      "publisher": "O'Reilly",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AB-730"
+      ],
+      "notes": "Current guided event with about three hours of published domain instruction and exercises plus breaks; verify the live date and local start/end times. October 28 public resource review: Existing180minagenda beforebreaks retained;publicoutline still3domains. Landing-page/selected-unit evidence only; paid lessons and assessment content uninspected."
     },
     {
       "id": "ab-730-measureup",
@@ -51376,7 +51450,18 @@
       "notes": "September 27 public listing still shows 110 questions released June 2026. Its generic Azure-AI description conflicts with the credential, while detailed objectives follow earlier three-domain AB-730 scope; October completeness is not established. No paid questions reviewed. September 27 AB-730 deep review: Public catalog only; no question content reviewed. Separate generic Azure-AI description mismatch from the older AB-730 detailed mapping. See docs/research/2026-09-27-ab-730-deep-review.md No live infrastructure execution."
     },
     {
-      "id": "ab-730-udemy-duffy", "title": "AB-730 AI Business Professional Practice Tests", "url": "https://www.udemy.com/course/ab730-tests/", "publisher": "Udemy / Scott Duffy and Jordi Koenderink", "authority_class": 3, "source_type": "independent-assessment", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["AB-730"], "notes": "100 original questions across four tests, updated August 2026 and explicitly mapped to the July 22 blueprint; use explanations as leads and verify first-party sources."
+      "id": "ab-730-udemy-duffy",
+      "title": "AB-730 AI Business Professional Practice Tests",
+      "url": "https://www.udemy.com/course/ab730-tests/",
+      "publisher": "Udemy / Scott Duffy and Jordi Koenderink",
+      "authority_class": 3,
+      "source_type": "independent-assessment",
+      "access_model": "paid",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AB-730"
+      ],
+      "notes": "100 original questions across four tests, updated August 2026 and explicitly mapped to the July 22 blueprint; use explanations as leads and verify first-party sources. October 28 public resource review: 100questions,four25-question sets;about3–6hours editorial timedattempt+explanationreview budget. Landing-page/selected-unit evidence only; paid lessons and assessment content uninspected."
     },
     {
       "id": "ab-731-blueprint",
@@ -52828,7 +52913,19 @@
       "notes": "July 2026 public event listing covering objective areas and preparation resources; verify recording/registration availability and duration. September 28 MB-820 deep review: 23-character shell only; no current event/recording availability established. See docs/research/2026-09-28-mb-820-deep-review.md No live infrastructure execution."
     },
     {
-      "id": "mb-820-partner-skilling-hub", "title": "Microsoft Partner Skilling Hub", "url": "https://www.skilling-hub.com/en-US", "publisher": "Microsoft Partner Skilling Hub", "authority_class": 2, "source_type": "official-training", "access_model": "partner-restricted", "last_checked": "2026-09-01", "supported_exams": ["MB-820"], "notes": "Eligible-partner sign-in required to verify exact event start/end times and availability; use five-day course only as a planning estimate."
+      "id": "mb-820-partner-skilling-hub",
+      "title": "Microsoft Partner Skilling Hub",
+      "url": "https://www.skilling-hub.com/en-US",
+      "publisher": "Microsoft Partner Skilling Hub",
+      "authority_class": 2,
+      "source_type": "official-training",
+      "access_model": "partner-restricted",
+      "last_checked": "2026-09-01",
+      "supported_exams": [
+        "AB-730",
+        "MB-820"
+      ],
+      "notes": "Eligible-partner sign-in required to verify exact event start/end times and availability; use five-day course only as a planning estimate."
     },
     {
       "id": "openai-certificate-courses-announcement", "title": "OpenAI certificate courses announcement", "url": "https://openai.com/index/openai-certificate-courses/", "publisher": "OpenAI", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": [], "notes": "Program announcement establishing the formal AI Foundations certification, partner pilots, Coursera/ETS/Credly roles, and progression toward a broader OpenAI Certification. It does not publish a stable exam code, weighted objectives, score, practice assessment, or renewal terms."
@@ -66288,9 +66385,9 @@
       "last_checked": "2026-09-28",
       "supported_exams": [
         "AB-900",
+        "MS-102",
         "SC-401",
-        "SC-900",
-        "MS-102"
+        "SC-900"
       ],
       "notes": "September 27 SC-401 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-401-deep-review.md No live infrastructure execution. September 27 SC-900 deep review: Overview and role/encryption/scope sections read. List/content roles separate; privileged content access can supersede ordinary local item permissions. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Role, tab/list/content and AU sections reviewed, including content/name access overriding item permissions. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution."
     },
@@ -66313,8 +66410,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-05",
-      "supported_exams": ["AB-900"]
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AB-900"
+      ],
+      "notes": " October 28 wave1 evidence: Inspected governance policy, roles/access, files/folders and updates sections. Separate agent/file grants; new policy not retrospective revocation; prior file knowledge may require reshare. No tenant action. No live product execution."
     },
     {
       "id": "windows-azure-network-adapter",
@@ -66862,14 +66962,14 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AB-100",
         "AB-410",
         "AB-620",
         "PL-900"
       ],
-      "notes": "Current capabilities and boundaries for the GitHub Copilot Harness authoring experience. September 28 AB-410 deep review: Current overview read: cannot transfer standard/GitHub harness agents, usage-based actions and service/data boundary. No building/testing/evaluation charges incurred. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution. September 28 AB-620 deep review: Current overview read in same-day preceding review and refreshed here. No transfer across standard/GitHub; billing and separate service boundaries retained. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution. September 28 PL-900 deep review: Availability fetched; no full-page semantic review claimed unless a reading boundary is explicitly recorded below. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
+      "notes": "Current capabilities and boundaries for the GitHub Copilot Harness authoring experience. September 28 AB-410 deep review: Current overview read: cannot transfer standard/GitHub harness agents, usage-based actions and service/data boundary. No building/testing/evaluation charges incurred. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution. September 28 AB-620 deep review: Current overview read in same-day preceding review and refreshed here. No transfer across standard/GitHub; billing and separate service boundaries retained. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution. September 28 PL-900 deep review: Availability fetched; no full-page semantic review claimed unless a reading boundary is explicitly recorded below. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution. October 28 refresh: Opened first-party evidence October 28, 2026. Inspected scope: Feature comparison, usage-based billing, nontransferability, service/data-processing distinction, ALM and preview-specific controls. Product execution not performed; date/version, role, preview and configuration limitations remain. Supports TECH-09-harness-feature-contract."
     },
     {
       "id": "md102-intune-whats-new",
@@ -66879,9 +66979,11 @@
       "authority_class": 2,
       "source_type": "release-notes",
       "access_model": "public",
-      "last_checked": "2026-09-07",
-      "supported_exams": ["MD-102"],
-      "notes": "Weekly service feed for staged Intune changes, including the Advanced capabilities label formerly known as Microsoft Intune Suite."
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MD-102"
+      ],
+      "notes": "Weekly service feed for staged Intune changes, including the Advanced capabilities label formerly known as Microsoft Intune Suite. October 28 refresh: Opened first-party evidence October 28, 2026. Inspected scope: Latest entries plus September 28 Win32 delivery and baseline changes; older agent transition passage inspected but not treated as a new deadline. Product execution not performed; date/version, role, preview and configuration limitations remain. Supports TECH-08-intune-baseline-release."
     },
     {
       "id": "power-platform-important-changes",
@@ -66925,9 +67027,14 @@
       "authority_class": 2,
       "source_type": "release-notes",
       "access_model": "public",
-      "last_checked": "2026-09-07",
-      "supported_exams": ["AB-100", "AB-650", "AB-900", "MS-102"],
-      "notes": "Recurring volatility feed for Copilot, Agent Builder, connectors, administration, and rollout."
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AB-100",
+        "AB-650",
+        "AB-900",
+        "MS-102"
+      ],
+      "notes": "Recurring volatility feed for Copilot, Agent Builder, connectors, administration, and rollout. October 28 wave1 evidence: Inspected introductory gradual deployment and October27 top entries plus targeted scheduling/license searches. New Notebook web references and usage metrics; no exhaustive release-note audit and no feature GA inference across all tenants. No live product execution."
     },
     {
       "id": "ms102-entra-connect-version-history",
@@ -67742,6 +67849,1134 @@
         "PL-400"
       ],
       "notes": "Public replacement blueprint effective October 16, 2026, cited for the PL-400 transition. AB-400 is not yet a published guide in this library; existing PL-400 objective coverage is not an AB-400 audit."
+    },
+    {
+      "id": "ibm-bob-v2-release",
+      "title": "Bob V2: Faster, better, smarter",
+      "url": "https://bob.ibm.com/blog/bob-v2-release-announcement/",
+      "publisher": "IBM",
+      "authority_class": 2,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "C3000-006"
+      ],
+      "notes": "First-party release announcement supporting agent, harness and client roles. Historical release details do not override current product docs."
+    },
+    {
+      "id": "ibm-bob-ide",
+      "title": "Welcome to IBM Bob",
+      "url": "https://bob.ibm.com/docs/ide",
+      "publisher": "IBM",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "C3000-006"
+      ],
+      "notes": "First-party IBM Bob documentation inspected October 28, 2026 for the guide. Product behavior, file paths, UI, approvals, entitlements and configuration are version-sensitive; product execution not performed."
+    },
+    {
+      "id": "ibm-bob-ide-account-api-keys",
+      "title": "API keys",
+      "url": "https://bob.ibm.com/docs/ide/account/api-keys",
+      "publisher": "IBM",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "C3000-006"
+      ],
+      "notes": "First-party IBM Bob documentation inspected October 28, 2026 for the guide. Product behavior, file paths, UI, approvals, entitlements and configuration are version-sensitive; product execution not performed."
+    },
+    {
+      "id": "ibm-bob-ide-account-bobcoins",
+      "title": "Bobcoins",
+      "url": "https://bob.ibm.com/docs/ide/account/bobcoins",
+      "publisher": "IBM",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "C3000-006"
+      ],
+      "notes": "First-party IBM Bob documentation inspected October 28, 2026 for the guide. Product behavior, file paths, UI, approvals, entitlements and configuration are version-sensitive; product execution not performed."
+    },
+    {
+      "id": "ibm-bob-ide-configuration-bobignore",
+      "title": "Ignoring files",
+      "url": "https://bob.ibm.com/docs/ide/configuration/bobignore",
+      "publisher": "IBM",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "C3000-006"
+      ],
+      "notes": "First-party IBM Bob documentation inspected October 28, 2026 for the guide. Product behavior, file paths, UI, approvals, entitlements and configuration are version-sensitive; product execution not performed."
+    },
+    {
+      "id": "ibm-bob-ide-configuration-custom-modes",
+      "title": "Custom modes",
+      "url": "https://bob.ibm.com/docs/ide/configuration/custom-modes",
+      "publisher": "IBM",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "C3000-006"
+      ],
+      "notes": "First-party IBM Bob documentation inspected October 28, 2026 for the guide. Product behavior, file paths, UI, approvals, entitlements and configuration are version-sensitive; product execution not performed."
+    },
+    {
+      "id": "ibm-bob-ide-configuration-lifecycle-hooks",
+      "title": "Lifecycle hooks",
+      "url": "https://bob.ibm.com/docs/ide/configuration/lifecycle-hooks",
+      "publisher": "IBM",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "C3000-006"
+      ],
+      "notes": "First-party IBM Bob documentation inspected October 28, 2026 for the guide. Product behavior, file paths, UI, approvals, entitlements and configuration are version-sensitive; product execution not performed."
+    },
+    {
+      "id": "ibm-bob-ide-configuration-mcp-mcp-in-bob",
+      "title": "Using MCP in Bob",
+      "url": "https://bob.ibm.com/docs/ide/configuration/mcp/mcp-in-bob",
+      "publisher": "IBM",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "C3000-006"
+      ],
+      "notes": "First-party IBM Bob documentation inspected October 28, 2026 for the guide. Product behavior, file paths, UI, approvals, entitlements and configuration are version-sensitive; product execution not performed."
+    },
+    {
+      "id": "ibm-bob-ide-configuration-mcp-server-transports",
+      "title": "MCP server transports",
+      "url": "https://bob.ibm.com/docs/ide/configuration/mcp/server-transports",
+      "publisher": "IBM",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "C3000-006"
+      ],
+      "notes": "First-party IBM Bob documentation inspected October 28, 2026 for the guide. Product behavior, file paths, UI, approvals, entitlements and configuration are version-sensitive; product execution not performed. Introductory three-transport list conflicts with the detailed SSE transport (removed) section; guide follows the specific current removal notice and preserves the discrepancy."
+    },
+    {
+      "id": "ibm-bob-ide-configuration-rules",
+      "title": "Custom rules",
+      "url": "https://bob.ibm.com/docs/ide/configuration/rules",
+      "publisher": "IBM",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "C3000-006"
+      ],
+      "notes": "First-party IBM Bob documentation inspected October 28, 2026 for the guide. Product behavior, file paths, UI, approvals, entitlements and configuration are version-sensitive; product execution not performed."
+    },
+    {
+      "id": "ibm-bob-ide-core-concepts-context-poisoning",
+      "title": "Context poisoning",
+      "url": "https://bob.ibm.com/docs/ide/core-concepts/context-poisoning",
+      "publisher": "IBM",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "C3000-006"
+      ],
+      "notes": "First-party IBM Bob documentation inspected October 28, 2026 for the guide. Product behavior, file paths, UI, approvals, entitlements and configuration are version-sensitive; product execution not performed."
+    },
+    {
+      "id": "ibm-bob-ide-core-concepts-context-window-management",
+      "title": "Context window management",
+      "url": "https://bob.ibm.com/docs/ide/core-concepts/context-window-management",
+      "publisher": "IBM",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "C3000-006"
+      ],
+      "notes": "First-party IBM Bob documentation inspected October 28, 2026 for the guide. Product behavior, file paths, UI, approvals, entitlements and configuration are version-sensitive; product execution not performed."
+    },
+    {
+      "id": "ibm-bob-ide-core-concepts-tools",
+      "title": "Tools",
+      "url": "https://bob.ibm.com/docs/ide/core-concepts/tools",
+      "publisher": "IBM",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "C3000-006"
+      ],
+      "notes": "First-party IBM Bob documentation inspected October 28, 2026 for the guide. Product behavior, file paths, UI, approvals, entitlements and configuration are version-sensitive; product execution not performed."
+    },
+    {
+      "id": "ibm-bob-ide-enterprise-enterprise-index",
+      "title": "Plan overview",
+      "url": "https://bob.ibm.com/docs/ide/enterprise/enterprise-index",
+      "publisher": "IBM",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "C3000-006"
+      ],
+      "notes": "First-party IBM Bob documentation inspected October 28, 2026 for the guide. Product behavior, file paths, UI, approvals, entitlements and configuration are version-sensitive; product execution not performed."
+    },
+    {
+      "id": "ibm-bob-ide-enterprise-on-premises-overview",
+      "title": "Overview",
+      "url": "https://bob.ibm.com/docs/ide/enterprise/on-premises/overview",
+      "publisher": "IBM",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "C3000-006"
+      ],
+      "notes": "First-party IBM Bob documentation inspected October 28, 2026 for the guide. Product behavior, file paths, UI, approvals, entitlements and configuration are version-sensitive; product execution not performed."
+    },
+    {
+      "id": "ibm-bob-ide-features-auto-approving-actions",
+      "title": "Auto-approve",
+      "url": "https://bob.ibm.com/docs/ide/features/auto-approving-actions",
+      "publisher": "IBM",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "C3000-006"
+      ],
+      "notes": "First-party IBM Bob documentation inspected October 28, 2026 for the guide. Product behavior, file paths, UI, approvals, entitlements and configuration are version-sensitive; product execution not performed."
+    },
+    {
+      "id": "ibm-bob-ide-features-bobalytics",
+      "title": "Bobalytics",
+      "url": "https://bob.ibm.com/docs/ide/features/bobalytics",
+      "publisher": "IBM",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "C3000-006"
+      ],
+      "notes": "First-party IBM Bob documentation inspected October 28, 2026 for the guide. Product behavior, file paths, UI, approvals, entitlements and configuration are version-sensitive; product execution not performed."
+    },
+    {
+      "id": "ibm-bob-ide-features-code-actions",
+      "title": "Code actions",
+      "url": "https://bob.ibm.com/docs/ide/features/code-actions",
+      "publisher": "IBM",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "C3000-006"
+      ],
+      "notes": "First-party IBM Bob documentation inspected October 28, 2026 for the guide. Product behavior, file paths, UI, approvals, entitlements and configuration are version-sensitive; product execution not performed."
+    },
+    {
+      "id": "ibm-bob-ide-features-code-reviews",
+      "title": "Code reviews",
+      "url": "https://bob.ibm.com/docs/ide/features/code-reviews",
+      "publisher": "IBM",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "C3000-006"
+      ],
+      "notes": "First-party IBM Bob documentation inspected October 28, 2026 for the guide. Product behavior, file paths, UI, approvals, entitlements and configuration are version-sensitive; product execution not performed."
+    },
+    {
+      "id": "ibm-bob-ide-features-context-mentions",
+      "title": "Context mentions",
+      "url": "https://bob.ibm.com/docs/ide/features/context-mentions",
+      "publisher": "IBM",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "C3000-006"
+      ],
+      "notes": "First-party IBM Bob documentation inspected October 28, 2026 for the guide. Product behavior, file paths, UI, approvals, entitlements and configuration are version-sensitive; product execution not performed."
+    },
+    {
+      "id": "ibm-bob-ide-features-literate-coding",
+      "title": "Literate coding",
+      "url": "https://bob.ibm.com/docs/ide/features/literate-coding",
+      "publisher": "IBM",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "C3000-006"
+      ],
+      "notes": "First-party IBM Bob documentation inspected October 28, 2026 for the guide. Product behavior, file paths, UI, approvals, entitlements and configuration are version-sensitive; product execution not performed."
+    },
+    {
+      "id": "ibm-bob-ide-features-modes",
+      "title": "Modes",
+      "url": "https://bob.ibm.com/docs/ide/features/modes",
+      "publisher": "IBM",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "C3000-006"
+      ],
+      "notes": "First-party IBM Bob documentation inspected October 28, 2026 for the guide. Product behavior, file paths, UI, approvals, entitlements and configuration are version-sensitive; product execution not performed."
+    },
+    {
+      "id": "ibm-bob-ide-features-pull-requests",
+      "title": "Pull requests",
+      "url": "https://bob.ibm.com/docs/ide/features/pull-requests",
+      "publisher": "IBM",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "C3000-006"
+      ],
+      "notes": "First-party IBM Bob documentation inspected October 28, 2026 for the guide. Product behavior, file paths, UI, approvals, entitlements and configuration are version-sensitive; product execution not performed."
+    },
+    {
+      "id": "ibm-bob-ide-features-rollback",
+      "title": "Rollback",
+      "url": "https://bob.ibm.com/docs/ide/features/rollback",
+      "publisher": "IBM",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "C3000-006"
+      ],
+      "notes": "First-party IBM Bob documentation inspected October 28, 2026 for the guide. Product behavior, file paths, UI, approvals, entitlements and configuration are version-sensitive; product execution not performed."
+    },
+    {
+      "id": "ibm-bob-ide-features-skills",
+      "title": "Skills",
+      "url": "https://bob.ibm.com/docs/ide/features/skills",
+      "publisher": "IBM",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "C3000-006"
+      ],
+      "notes": "First-party IBM Bob documentation inspected October 28, 2026 for the guide. Product behavior, file paths, UI, approvals, entitlements and configuration are version-sensitive; product execution not performed."
+    },
+    {
+      "id": "ibm-bob-ide-features-subagents",
+      "title": "Subagents",
+      "url": "https://bob.ibm.com/docs/ide/features/subagents",
+      "publisher": "IBM",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "C3000-006"
+      ],
+      "notes": "First-party IBM Bob documentation inspected October 28, 2026 for the guide. Product behavior, file paths, UI, approvals, entitlements and configuration are version-sensitive; product execution not performed."
+    },
+    {
+      "id": "ibm-bob-ide-getting-started-install",
+      "title": "Installing",
+      "url": "https://bob.ibm.com/docs/ide/getting-started/install",
+      "publisher": "IBM",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "C3000-006"
+      ],
+      "notes": "First-party IBM Bob documentation inspected October 28, 2026 for the guide. Product behavior, file paths, UI, approvals, entitlements and configuration are version-sensitive; product execution not performed."
+    },
+    {
+      "id": "ibm-bob-ide-premium-packages-pkg-index",
+      "title": "Overview",
+      "url": "https://bob.ibm.com/docs/ide/premium-packages/pkg-index",
+      "publisher": "IBM",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "C3000-006"
+      ],
+      "notes": "First-party IBM Bob documentation inspected October 28, 2026 for the guide. Product behavior, file paths, UI, approvals, entitlements and configuration are version-sensitive; product execution not performed."
+    },
+    {
+      "id": "ibm-bob-ide-security-group-policies",
+      "title": "Group policies",
+      "url": "https://bob.ibm.com/docs/ide/security/group-policies",
+      "publisher": "IBM",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "C3000-006"
+      ],
+      "notes": "First-party IBM Bob documentation inspected October 28, 2026 for the guide. Product behavior, file paths, UI, approvals, entitlements and configuration are version-sensitive; product execution not performed."
+    },
+    {
+      "id": "ibm-bob-ide-tutorials-start-a-project",
+      "title": "Start a project with /init and AGENTS.md",
+      "url": "https://bob.ibm.com/docs/ide/tutorials/start-a-project",
+      "publisher": "IBM",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "C3000-006"
+      ],
+      "notes": "First-party IBM Bob documentation inspected October 28, 2026 for the guide. Product behavior, file paths, UI, approvals, entitlements and configuration are version-sensitive; product execution not performed."
+    },
+    {
+      "id": "ibm-bob-ide-tutorials-write-effective-prompts",
+      "title": "Write effective prompts for Bob",
+      "url": "https://bob.ibm.com/docs/ide/tutorials/write-effective-prompts",
+      "publisher": "IBM",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "C3000-006"
+      ],
+      "notes": "First-party IBM Bob documentation inspected October 28, 2026 for the guide. Product behavior, file paths, UI, approvals, entitlements and configuration are version-sensitive; product execution not performed."
+    },
+    {
+      "id": "ibm-bob-shell",
+      "title": "Welcome to Bob Shell",
+      "url": "https://bob.ibm.com/docs/shell",
+      "publisher": "IBM",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "C3000-006"
+      ],
+      "notes": "First-party IBM Bob documentation inspected October 28, 2026 for the guide. Product behavior, file paths, UI, approvals, entitlements and configuration are version-sensitive; product execution not performed."
+    },
+    {
+      "id": "ibm-bob-shell-interactive",
+      "title": "Starting an interactive Bob Shell session",
+      "url": "https://bob.ibm.com/docs/shell/getting-started/start-bobshell-interactive",
+      "publisher": "IBM",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "C3000-006"
+      ],
+      "notes": "Current interactive Shell syntax and approval workflow; version-sensitive, not executed."
+    },
+    {
+      "id": "ibm-bob-shell-non-interactive",
+      "title": "Starting a non-interactive Bob Shell session",
+      "url": "https://bob.ibm.com/docs/shell/getting-started/start-bobshell-non-interactive",
+      "publisher": "IBM",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "C3000-006"
+      ],
+      "notes": "Current automation authentication, output formats, max-cost and max-turns options; units and runtime enforcement require installed-client validation."
+    },
+    {
+      "id": "ibm-bob-agent-mcp-tutorial",
+      "title": "Build AI agents with IBM Bob and watsonx Orchestrate",
+      "url": "https://developer.ibm.com/tutorials/build-agents-mcp-tools-watsonx-orchestrate-using-bob/",
+      "publisher": "IBM",
+      "authority_class": 3,
+      "source_type": "hands-on-lab",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "C3000-006"
+      ],
+      "notes": "Public IBM Developer tutorial for optional agent and MCP practice; Bob and Orchestrate services are separate prerequisites. Content read; tutorial not executed; time estimate is editorial."
+    },
+    {
+      "id": "ibm-bob-v2-certification",
+      "title": "IBM Certified Bob v2 Developer - Associate",
+      "url": "https://www.ibm.com/training/certification/ibm-certified-bob-v2-developer-associate-C9010800",
+      "publisher": "IBM",
+      "authority_class": 1,
+      "source_type": "credential-page",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "C3000-006"
+      ],
+      "notes": "Public credential and access route for official preparation. The 24-page study PDF was downloaded through its generated expiring URL and read on October 28, 2026; it is not republished. Sample-test link verified as present, questions not copied or used to author checks. PDF explicitly leaves general marketplace-browser availability unconfirmed; task budget UI is not established."
+    },
+    {
+      "id": "c3000-006-blueprint",
+      "title": "C3000-006 IBM Bob v2 Developer Associate exam record",
+      "url": "https://www.ibm.com/training/credentials/getExam/C3000-006",
+      "publisher": "IBM",
+      "authority_class": 1,
+      "source_type": "exam-blueprint",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "C3000-006"
+      ],
+      "notes": "Live exam metadata and all 52 objectives across six weighted domains; only the public assessment contract and objectives are retained in snapshots."
+    },
+    {
+      "id": "ibm-bob-external-workshop",
+      "title": "IBM Bob workshop: Meet Bob — Agentic AI in Action",
+      "url": "https://ibm.github.io/intro-bob-workshop/lab-6/",
+      "publisher": "IBM",
+      "authority_class": 3,
+      "source_type": "hands-on-lab",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "C3000-006"
+      ],
+      "notes": "Public IBM workshop for an external mixed audience. Agenda publishes 60 minutes of exercises following a separate 30-minute presentation. Prompt iteration, role-based tasks, workspace skill setup and review. Bob access required for execution. Repository Apache-2.0 license inspected; link and original summary only, no materials copied."
+    },
+    {
+      "id": "ibm-bob-level-3-labs",
+      "title": "IBM Bob Level 3",
+      "url": "https://ibm.github.io/bob-l3/",
+      "publisher": "IBM",
+      "authority_class": 3,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "C3000-006"
+      ],
+      "notes": "Public IBM four-module course: Assist, Delegate, Tailor, Scale & Extend, using Galaxium Travels. Introduction and setup inspected; full curriculum not executed. Some setup links are employee/partner-specific, trial allocations and install language are older; use current Bob account and installation documentation. Estimated 4–6 hours is editorial. Public reading does not guarantee entitlement to every linked setup resource."
+    },
+    {
+      "id": "ibm-bob-galaxium-travels",
+      "title": "Galaxium Travels example application",
+      "url": "https://github.com/IBM/galaxium-travels",
+      "publisher": "IBM",
+      "authority_class": 5,
+      "source_type": "hands-on-lab",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "C3000-006"
+      ],
+      "notes": "IBM-owned demo repository, inspected through public README. Multi-service Python, React and Java application with REST/MCP interfaces and test instructions. Optional practice substrate for code understanding, testing and configuration; not a production architecture recommendation. Current main includes features that older lab exercises ask learners to add: select the tutorial branch and compare code first. No code copied or executed; runtime and deployment prerequisites must be rechecked."
+    },
+    {
+      "id": "ibm-bob-demo-examples",
+      "title": "IBM Bob demo examples",
+      "url": "https://github.com/IBM/bob-demo",
+      "publisher": "IBM",
+      "authority_class": 5,
+      "source_type": "hands-on-lab",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "C3000-006"
+      ],
+      "notes": "IBM-owned sample repository with DevOps, modernization, modes and skills demos; Apache-2.0 LICENSE inspected. Root README retains five older mode names and explicitly disclaims ongoing maintenance. The skills example uses Advanced mode, four-hyphen front matter and an inconsistent script path. Use as optional ideas and repair against current product documentation, not copy-ready instructions. No sample code copied or executed."
+    },
+    {
+      "id": "ibm-bob-create-skills-tutorial",
+      "title": "Create and use skills",
+      "url": "https://bob.ibm.com/docs/ide/tutorials/use-skills",
+      "publisher": "IBM",
+      "authority_class": 3,
+      "source_type": "hands-on-lab",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "C3000-006"
+      ],
+      "notes": "Current first-party tutorial creates a changelog skill, exercises explicit and automatic activation, and inspects project/global skill locations. Public materials; Bob and Galaxium Travels required for practice. Estimated 45–60 minutes includes reading and two activation attempts, not a published runtime. Tutorial not executed."
+    },
+    {
+      "id": "ibm-bob-architecture-diagrams-tutorial",
+      "title": "Generate architecture diagrams",
+      "url": "https://bob.ibm.com/docs/ide/tutorials/generate-architecture-diagrams",
+      "publisher": "IBM",
+      "authority_class": 3,
+      "source_type": "hands-on-lab",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "C3000-006"
+      ],
+      "notes": "First-party walkthrough for codebase inspection and architecture diagrams using Galaxium Travels. Useful for planning and evidence review. Bob, Git and suitable demo branch required; diagrams must be checked against actual code. Editorial 45–90 minute reading/practice estimate; not executed."
+    },
+    {
+      "id": "ibm-bob-mcp-server-tutorial",
+      "title": "Build MCP servers with IBM Bob",
+      "url": "https://bob.ibm.com/docs/ide/tutorials/mcp-server-integration",
+      "publisher": "IBM",
+      "authority_class": 3,
+      "source_type": "hands-on-lab",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "C3000-006"
+      ],
+      "notes": "First-party TypeScript/Node STDIO arXiv MCP tutorial covering planning, schema, registration and testing. Important limitations: prose requests search_papers with default 5/max 20, while example implements search_arxiv with default 10/max 50; formatting/XML helper implementations are omitted; Python virtual-environment steps are incidental to the TypeScript build. Treat as design practice requiring repair, not a complete runnable server. No API behavior or SDK compatibility validated. Editorial 1–2 hour estimate before repair."
+    },
+    {
+      "id": "ibm-bob-actor-critic-tutorial",
+      "title": "Generate secure code with an actor-critic workflow",
+      "url": "https://bob.ibm.com/docs/ide/tutorials/generate-secure-code",
+      "publisher": "IBM",
+      "authority_class": 3,
+      "source_type": "hands-on-lab",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "C3000-006"
+      ],
+      "notes": "First-party workflow using security rules and separate generating/reviewing skills/subagents on a tutorial branch. Optional security practice, not proof of NIST/OWASP compliance. Broad claims that prose rules prevent all violations are not adopted. Its X-User-Email example requires trusted identity enforcement; a caller-supplied header alone is not authentication. Preserve tests, scanners and human review. Editorial 1–2 hour estimate; not executed."
+    },
+    {
+      "id": "ibm-bob-getting-most-out",
+      "title": "Getting the Most Out of Bob",
+      "url": "https://bob.ibm.com/blog/getting-the-most-out-of-bob/",
+      "publisher": "IBM",
+      "authority_class": 3,
+      "source_type": "official-guidance",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "C3000-006"
+      ],
+      "notes": "First-party workflow article on exploration, planning, implementation, verification and context management, read October 28. Used for practical learning sequence, not fixed context limits, exact cost laws or automatic correctness claims. Editorial 20–30 minute reading estimate plus optional 30–60 minute exercise."
+    },
+    {
+      "id": "ibm-bob-monolith-modernization",
+      "title": "Modernize monolithic applications with AI-assisted workflows",
+      "url": "https://developer.ibm.com/tutorials/ai-assisted-app-mod-workflow/",
+      "publisher": "IBM",
+      "authority_class": 3,
+      "source_type": "hands-on-lab",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "C3000-006"
+      ],
+      "notes": "IBM Developer tutorial by Aditya Sengupta using reusable skills, MCP, Neo4j, MinIO and specification-driven artifacts for brownfield modernization. Advanced adjacent practice, not all required certification scope. Public tutorial inspected, stack not installed or run. Pinned dependency and tool names require independent verification. Editorial 4–8 hour setup-and-practice estimate, not provider runtime or production-readiness assurance."
+    },
+    {
+      "id": "ms-refresh-backup-offboarding",
+      "title": "Offboarding in Microsoft 365 Backup",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-offboarding?view=o365-worldwide",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MS-102",
+        "AB-650"
+      ],
+      "notes": "Opened first-party evidence October 28, 2026. Inspected scope: Critical action approval, quorum, approver aging, eligible roles, undo and permanent-purge boundary. Product execution not performed; date/version, role, preview and configuration limitations remain. Supports TECH-01-backup-approval."
+    },
+    {
+      "id": "ms-refresh-backup-security",
+      "title": "Privacy, security, and compliance in Microsoft 365 Backup",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-privacy-security?view=o365-worldwide",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MS-102",
+        "AB-650"
+      ],
+      "notes": "Opened first-party evidence October 28, 2026. Inspected scope: Activity logs section; reached from Backup release-feed Activity logs link. Product execution not performed; date/version, role, preview and configuration limitations remain. Supports TECH-02-backup-operational-logs."
+    },
+    {
+      "id": "ms-refresh-cowork-admin",
+      "title": "Manage Copilot Cowork for your organization",
+      "url": "https://learn.microsoft.com/en-us/copilot/cowork/cowork-admin-governance",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AB-650"
+      ],
+      "notes": "Opened first-party evidence October 28, 2026. Inspected scope: Access via spending policy, deprecated agent-entry controls, distinct model controls, automated-task approval and user identity. Product execution not performed; date/version, role, preview and configuration limitations remain. Supports TECH-03-cowork-access."
+    },
+    {
+      "id": "ms-refresh-windows-message",
+      "title": "Windows message center",
+      "url": "https://learn.microsoft.com/en-us/windows/release-health/windows-message-center",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AZ-800",
+        "AZ-801",
+        "MD-102"
+      ],
+      "notes": "Opened first-party evidence October 28, 2026. Inspected scope: Server 2025 quick machine recovery, NTLMv1-derived SSO enforcement and Server 2022 support transition; other announcements not fully audited. Product execution not performed; date/version, role, preview and configuration limitations remain. Supports TECH-04-ntlm-sso-hardening. October 28 refresh: Opened first-party evidence October 28, 2026. Inspected scope: Server 2025 quick machine recovery, NTLMv1-derived SSO enforcement and Server 2022 support transition; other announcements not fully audited. Product execution not performed; date/version, role, preview and configuration limitations remain. Supports TECH-05-server-quick-recovery."
+    },
+    {
+      "id": "ms-refresh-ntlm-hardening",
+      "title": "Manage NTLMv1 changes and prevent network authentication issues in Windows",
+      "url": "https://support.microsoft.com/en-us/servicing/os/windows/docs/2025/08/upcoming-changes-to-ntlmv1-in-windows-11-version-24h2-and-windows-server-2025",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AZ-800",
+        "AZ-801",
+        "MD-102"
+      ],
+      "notes": "Opened first-party evidence October 28, 2026. Inspected scope: Credential Guard-disabled/absent registry-value condition, MS-CHAPv2 SSO scope, audit/block events, temporary exception and manual-credential limitation. Product execution not performed; date/version, role, preview and configuration limitations remain. Supports TECH-04-ntlm-sso-hardening."
+    },
+    {
+      "id": "ms-refresh-quick-recovery",
+      "title": "Quick machine recovery",
+      "url": "https://learn.microsoft.com/en-us/windows/configuration/quick-machine-recovery/?tabs=csp",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AZ-801",
+        "AZ-800"
+      ],
+      "notes": "Opened first-party evidence October 28, 2026. Inspected scope: Server 2025 applicability; cloud-remediation defaults; supported networking; GPO availability; test mode and separate Autopatch approval. Product execution not performed; date/version, role, preview and configuration limitations remain. Supports TECH-05-server-quick-recovery."
+    },
+    {
+      "id": "ms-refresh-azure-ilr",
+      "title": "Recover files from Azure virtual machine backup",
+      "url": "https://learn.microsoft.com/en-us/azure/backup/backup-azure-restore-files-from-vm",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AZ-801"
+      ],
+      "notes": "Opened first-party evidence October 28, 2026. Inspected scope: Premium SSD v2/Ultra sector sizes, compatible recovery machine, encrypted-VM exclusion, read-only session and 12-hour expiry. Product execution not performed; date/version, role, preview and configuration limitations remain. Supports TECH-06-azure-ilr-disk-support."
+    },
+    {
+      "id": "ms-refresh-content-safety-release",
+      "title": "What's new in Azure AI Content Safety",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/content-safety/whats-new",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AI-500"
+      ],
+      "notes": "Opened first-party evidence October 28, 2026. Inspected scope: Text classification/Prompt Shields update, Spain Central initial canary region, staged rollout, excluded capabilities and regression-testing action. Product execution not performed; date/version, role, preview and configuration limitations remain. Supports TECH-07-content-safety-regression."
+    },
+    {
+      "id": "ms-refresh-intune-baselines",
+      "title": "Configure security baseline policies in Microsoft Intune",
+      "url": "https://learn.microsoft.com/en-us/intune/device-security/security-baselines/configure-baselines",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MD-102"
+      ],
+      "notes": "Opened first-party evidence October 28, 2026. Inspected scope: May 2023-or-later baseline-version update behavior, customization choices, assignment separation and older-format exception. Product execution not performed; date/version, role, preview and configuration limitations remain. Supports TECH-08-intune-baseline-release."
+    },
+    {
+      "id": "ab-650-official-course",
+      "title": "Course AB-650T00-A: Administer Microsoft 365 and AI services",
+      "url": "https://learn.microsoft.com/en-us/training/courses/ab-650t00",
+      "publisher": "Microsoft",
+      "authority_class": 3,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AB-650",
+        "MS-102"
+      ],
+      "notes": "Specific Microsoft 365/Copilot/Agent 365 administrative curriculum and an exact current successor training route; stronger than a generic training homepage or inaccessible practice-test listing. Limits: Overview/syllabus only; no instructor-led occurrence, lab supply or complete lesson accuracy established. Agent identity and registry behavior must be corroborated with product documentation. Currentness: Exact opened page states availability 11/13/2026. Search-index excerpts still state 10/30/2026. Both are future relative to this research date; do not claim the course has already launched. Retirement catalog lists MS-102T00 retirement 11/30/2026 with AB-650T00 as replacement course. Access: Public description and linked learning material; instructor-led delivery normally booked with a provider and may be paid. This does not promise a free class or lab tenant. Time basis: Exact opened course page At a glance"
+    },
+    {
+      "id": "ab-400-official-course",
+      "title": "Course AB-400T00-A: Extend Microsoft Power Platform Solutions with code and AI",
+      "url": "https://learn.microsoft.com/en-us/training/courses/ab-400t00",
+      "publisher": "Microsoft",
+      "authority_class": 3,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "PL-400"
+      ],
+      "notes": "Concrete official replacement training destination including code apps and AI extensibility; explains why older PL-400 course links may disappear. Limits: No complete AB-400/PL-400 objective comparison, individual lesson audit or delivery confirmation. Working knowledge includes JavaScript/TypeScript/JSON/Power Fx, C#/Python/HTML/YAML, REST, Azure, Foundry and Copilot Studio. Currentness: Retirement catalog lists PL-400T00 retirement 10/30/2026 and replacement AB-400T00. Opened AB-400 page has an English advanced three-day course, code apps, Foundry and Copilot Studio integration. Access: Public outline; instructor-led delivery may be paid. Course is explicitly aimed at AB-400, so label it a successor/adjacent training route in PL-400. Time basis: Exact opened page At a glance"
+    },
+    {
+      "id": "md-102-official-foundation-lab",
+      "title": "Lab 01: Foundation — Identity, enrollment, and Autopilot",
+      "url": "https://github.com/MicrosoftLearning/MD-102T00-Microsoft-365-Endpoint-Administrator/blob/main/Instructions/Labs/Lab01-Foundation.md",
+      "publisher": "Microsoft",
+      "authority_class": 3,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MD-102"
+      ],
+      "notes": "More concrete than a generic GitHub author page: measurable identity/enrollment/Autopilot outputs and an explicit lab prerequisite chain. Repository LICENSE inspected: MIT, copyright 2019 Sidney Andrews. Limits: Only lab scenario, setup, relevant enrollment/RBAC sections and summary evaluated; not an exhaustive technical audit of all 1180 file lines. Trial duration/quantity/no-payment wording is volatile and was not verified against the current offer. Never copy the fictitious lab organization details into a real tenant. Directory rendering failed for the Labs folder, but the exact lab file opened successfully. Currentness: Current public lab uses Entra terminology, Windows 11, Intune RBAC/scope tags and distinct enrollment profiles. Repo README describes frequent lab updates. Exact commit date was not exposed in rendered pages; no assertion of complete October 27 exam coverage. Access: Public instructions do not include a free lab tenant. Lab assumes a prepared Contoso Microsoft 365 tenant, global-administrator lab credentials, four named VMs, existing users/licenses and internet access. Later labs require Intune Suite. MicrosoftLearning GitHub navigation support is limited to MCTs teaching the course, but the repository itself is public. Time basis: Lab front matter and Lab Duration section both say 90 minutes; preparation is an additional unmeasured dependency"
+    },
+    {
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AB-900"
+      ],
+      "notes": "Inspected admin surface table and release-preference procedure. Settings owns domain/org/release settings; exact route is UI-sensitive. No org setting changed. October 28 wave1 evidence: Inspected admin surface table and release-preference procedure. Settings owns domain/org/release settings; exact route is UI-sensitive. No org setting changed. No live product execution.",
+      "id": "microsoft-admin-overview",
+      "title": "Microsoft 365 admin center - Overview - Microsoft 365 admin | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/admin/admin-overview/admin-center-overview"
+    },
+    {
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AB-900"
+      ],
+      "notes": "Inspected object definitions, service principal types, relationship and multitenant example. Local service principal versus home definition; managed identities/legacy principals need not have app object. Existing explanation accurate with this bounded exception. October 28 wave1 evidence: Inspected object definitions, service principal types, relationship and multitenant example. Local service principal versus home definition; managed identities/legacy principals need not have app object. Existing explanation accurate with this bounded exception. No live product execution.",
+      "id": "microsoft-entra-app-objects",
+      "title": "Apps & service principals in Microsoft Entra ID - Microsoft identity platform | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/entra/identity-platform/app-objects-and-service-principals"
+    },
+    {
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AB-900"
+      ],
+      "notes": "Inspected preview supported-client matrix, register/review/govern/use sections. Copilot Studio/VSCode/ClaudeCode/GitHubCopilotCLI supported; Foundry/declarative excluded in this particular gateway flow. No registration/invocation or CLI evaluation executed. October 28 wave1 evidence: Inspected preview supported-client matrix, register/review/govern/use sections. Copilot Studio/VSCode/ClaudeCode/GitHubCopilotCLI supported; Foundry/declarative excluded in this particular gateway flow. No registration/invocation or CLI evaluation executed. No live product execution. October 28 wave1 evidence: Exact developer URL opened and redirected to same admin article bytes. Treat as same evidence, not a second independent source. No live product execution.",
+      "id": "microsoft-byo-mcp",
+      "title": "Bring your own (BYO) MCP server in Microsoft 365 admin center | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/microsoft-agent-365/admin/manage-byo-mcp-server"
+    },
+    {
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AB-900"
+      ],
+      "notes": "Inspected prerequisites, Billing licenses/Active users routes, services and ErrorsIssues. License/UserAdministrator, inventory/usage location/service conflict checks. Downstream rights independent. October 28 wave1 evidence: Inspected prerequisites, Billing licenses/Active users routes, services and ErrorsIssues. License/UserAdministrator, inventory/usage location/service conflict checks. Downstream rights independent. No live product execution.",
+      "id": "microsoft-assign-license",
+      "title": "Assign or unassign licenses for users in the Microsoft 365 admin center - Microsoft 365 admin | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/entra/fundamentals/license-users-groups"
+    },
+    {
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AB-900"
+      ],
+      "notes": "Inspected case/ContentSearch, search/statistics/sample/export and hold concepts. Current ContentSearch dedicated case; classic retired. Detailed query authoring procedure not reviewed and should not be invented. October 28 wave1 evidence: Inspected case/ContentSearch, search/statistics/sample/export and hold concepts. Current ContentSearch dedicated case; classic retired. Detailed query authoring procedure not reviewed and should not be invented. No live product execution.",
+      "id": "microsoft-ediscovery-components",
+      "title": "Learn about eDiscovery features and components | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/purview/edisc-features-components"
+    },
+    {
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AB-900"
+      ],
+      "notes": "Inspected prerequisites, domain verification and email cutover boundary. Verify ownership distinct from service DNS; mailbox readiness before MX change. Do not change production DNS for a study lab. October 28 wave1 evidence: Inspected prerequisites, domain verification and email cutover boundary. Verify ownership distinct from service DNS; mailbox readiness before MX change. Do not change production DNS for a study lab. No live product execution.",
+      "id": "microsoft-add-domain",
+      "title": "Add a Custom Domain to Microsoft 365 - Microsoft 365 admin | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/admin/setup/add-domain/"
+    },
+    {
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AB-900"
+      ],
+      "notes": "Inspected intro/log distinctions and logged activity. Changes to directory objects are audit evidence, sign-in results separate. No tenant query. October 28 wave1 evidence: Inspected intro/log distinctions and logged activity. Changes to directory objects are audit evidence, sign-in results separate. No tenant query. No live product execution.",
+      "id": "microsoft-entra-audit",
+      "title": "Learn about the audit logs in Microsoft Entra ID - Microsoft Entra ID | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/monitoring-health/concept-audit-logs"
+    },
+    {
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AB-900"
+      ],
+      "notes": "Inspected dashboard purpose/access/content-view permissions, standard investigation and preview AI alternatives. Standard alert/event triage, owner/status and separate preview support. October 28 wave1 evidence: Inspected dashboard purpose/access/content-view permissions, standard investigation and preview AI alternatives. Standard alert/event triage, owner/status and separate preview support. No live product execution.",
+      "id": "microsoft-dlp-alerts",
+      "title": "Get started with the DLP Alerts dashboard | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/purview/dlp-alerts-dashboard-get-started"
+    },
+    {
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AB-900"
+      ],
+      "notes": "Inspected modern-site guidance/default levels/groups, inheritance and Limited Access. Owners FullControl/Members Edit/Visitors Read are defaults; Contribute versus Edit and item-specific LimitedAccess distinctions. Group-connected sites use associated M365 group. October 28 wave1 evidence: Inspected modern-site guidance/default levels/groups, inheritance and Limited Access. Owners FullControl/Members Edit/Visitors Read are defaults; Contribute versus Edit and item-specific LimitedAccess distinctions. Group-connected sites use associated M365 group. No live product execution.",
+      "id": "microsoft-sharepoint-permissions",
+      "title": "Understanding permission levels in SharePoint - SharePoint in Microsoft 365 | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/sharepoint/understanding-permission-levels"
+    },
+    {
+      "id": "ab900-copilot-administration-path",
+      "title": "Explore Microsoft 365 Copilot and agent administration",
+      "url": "https://learn.microsoft.com/en-us/training/paths/explore-microsoft-365-copilot-agent-administration/",
+      "publisher": "Microsoft",
+      "authority_class": 3,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AB-900"
+      ],
+      "notes": "Three-module path on capabilities/licensing, Copilot administration and agent administration. Publication/update date and complete runtime absent in direct extraction; index lists 74, 55 and 70 minutes (3h19). About 3–5 hours for reading and notes, editorial estimate; tenant work adds time. Path and agent-administration module overview inspected. Fits PAYG, usage/adoption, prompt governance, agent creation/access/approval/lifecycle. No paid content, assessment or tenant execution. Public reading free; feature practice requires current licenses/roles. Link and original synthesis only. October 28 public resource review: About3–5hours editorial estimate from three modules with notes; index lists74+55+70minutes=3h19. Landing-page/selected-unit evidence only; paid lessons and assessment content uninspected."
+    },
+    {
+      "id": "ab900-administration-path",
+      "title": "Explore Microsoft 365 administration",
+      "url": "https://learn.microsoft.com/en-us/training/paths/explore-microsoft-365-administration/",
+      "publisher": "Microsoft",
+      "authority_class": 3,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AB-900"
+      ],
+      "notes": "Three-module path covering security foundations, core service/admin objects and data protection/governance. Publication/update date and complete duration not exposed in direct extraction. About 3–5 hours for reading and control-map notes, editorial estimate based on three modules; tenant practice adds time. Path overview and selected Purview, eDiscovery and SharePoint governance units read. Current product documentation remains authority for exact Explorer roles, DSPM experience, access and licensing. No assessment or tenant execution; link and original synthesis only. October 28 public resource review: About3–5hours editorial estimate from three modules plus control-map notes; tenant practice adds time. Landing-page/selected-unit evidence only; paid lessons and assessment content uninspected."
+    },
+    {
+      "id": "ai200-rag-postgres-sample",
+      "title": "RAG on PostgreSQL",
+      "url": "https://github.com/Azure-Samples/rag-postgres-openai-python",
+      "publisher": "Microsoft / Azure-Samples",
+      "authority_class": 5,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "MIT license inspected, Microsoft Corporation copyright. README and RAG-flow, monitoring and load-testing documents inspected. Python/FastAPI, Container Apps, PostgreSQL pgvector plus full-text RRF, managed identity and logs. About 3–6 hours for selected reading and an original implementation evidence worksheet, editorial estimate; deployment/load testing adds time/cost. Rendered repository shows 520 commits but no reliable latest commit date; not a pinned dependency audit. No code, deployment or test executed. No production security or tenant-isolation guarantee; require original negative tests and cleanup. Not complete AI-200 coverage. October 28 public resource review: About3–6hours editorial estimate for selected README,RAG flow,monitoring and original evidence worksheet;deployment/load tests add time. Landing-page/selected-unit evidence only; paid lessons and assessment content uninspected."
+    },
+    {
+      "id": "ai200-redis-vector-overview",
+      "title": "What are vector embeddings and vector search in Azure Managed Redis?",
+      "url": "https://learn.microsoft.com/en-us/azure/redis/overview-vector-similarity",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "Article updated August 18, 2026; selected provisioning, support/tier and vector capability sections read. About 20–40 minutes for reading and a configuration table, editorial estimate. Supports RediSearch-at-create, Enterprise clustering, NoEviction, supported in-memory tiers, FLAT/HNSW and hash/JSON vector storage. More specific than the existing generic overview fragment. Does not resolve the earlier NoCluster conversion contradiction; do not infer a migration procedure. No cache, module or vector query executed. Link and original synthesis only. October 28 public resource review: About20–40min editorial reading+configuration table. Landing-page/selected-unit evidence only; paid lessons and assessment content uninspected."
+    },
+    {
+      "id": "ai200-redis-semantic-cache-tutorial",
+      "title": "Tutorial: Use Azure Managed Redis as a semantic cache",
+      "url": "https://learn.microsoft.com/en-us/azure/redis/tutorial-semantic-cache",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "Article updated September 16, 2026. Selected public pattern, prerequisites, partition/version/TTL/threshold and validation sections read. About 45–90 minutes for reading and an original cache-boundary worksheet, editorial estimate; implementation adds time/cost. Distinguishes application RedisVL from API Management gateway caching; semantic caching is an application/gateway pattern, not a separate managed feature. Useful depth for Redis caching/vector objectives; APIM is related context. No commands or resources executed. Link and original synthesis only. October 28 public resource review: About45–90min editorial reading+cache-boundary worksheet;implementation adds time. Landing-page/selected-unit evidence only; paid lessons and assessment content uninspected."
+    },
+    {
+      "id": "ai200-redis-learning-path",
+      "title": "Enhance AI solutions with Azure Managed Redis",
+      "url": "https://learn.microsoft.com/en-us/training/paths/enhance-ai-solutions-azure-managed-redis/",
+      "publisher": "Microsoft",
+      "authority_class": 3,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "Three modules cover data operations, event messaging and vector storage. Prioritize data operations and vector storage for explicit AI-200 Redis objectives; Streams/pubsub are Related item depth. About 2–3 hours for these two modules, editorial estimate; index lists 1h01 plus 1h20, full path 3h42. Direct extraction omits totals. Vector module and 40-minute exercise entry inspected: Azure subscription, Python 3.12+, Azure CLI/redisenterprise extension required. Launcher, code, assessment and Azure resources not executed. Dates not displayed; public reading free, cloud use may cost. Link and original synthesis only. October 28 public resource review: About2–3hours editorial estimate for data+vector modules; index publishes1h01+1h20=2h21,full3-module path3h42. Landing-page/selected-unit evidence only; paid lessons and assessment content uninspected."
+    },
+    {
+      "id": "ai200-cosmos-learning-path",
+      "title": "Develop AI solutions with Azure Cosmos DB for NoSQL",
+      "url": "https://learn.microsoft.com/en-us/training/paths/develop-ai-solutions-azure-cosmos-db/",
+      "publisher": "Microsoft",
+      "authority_class": 3,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "Three modules: SDK/query foundation, vector search/change-feed refresh, query/index/consistency/RU optimization. Publication/update date and runtime absent in direct extraction; index displays 4h12. About 3–5 hours for module reading and notes, editorial estimate; exercises/cloud work add time/cost. Path and vector-module overview inspected; no code or exercise executed. Preserve product-documentation distinction between .NET/Java processor library and Python Functions/pull readers. Public reading free. No dump signals observed in reviewed public material; link and original synthesis only. October 28 public resource review: About3–5hours editorial estimate from three modules plus notes; index displays4h12. Azure/exercise work adds time. Landing-page/selected-unit evidence only; paid lessons and assessment content uninspected."
+    },
+    {
+      "id": "ai200-postgres-learning-path",
+      "title": "Develop AI solutions with Azure Database for PostgreSQL",
+      "url": "https://learn.microsoft.com/en-us/training/paths/develop-ai-solutions-azure-database-postgresql/",
+      "publisher": "Microsoft",
+      "authority_class": 3,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "Three-module path: schema/SQL/Python/Entra foundation, pgvector/RAG retrieval, configuration/index/data layout/scale/connection optimization. Publication/update date and runtime absent in direct extraction; index displays 4h54. About 4–6 hours for reading and query-plan notes, editorial estimate from three modules; implementation/load testing adds time/cost. Path overview evaluated, not all unit bodies. No extension installation, SQL, assessment or cloud lab run. Current first-party service and extension documentation remains behavioral authority. Link and original synthesis only. October 28 public resource review: About4–6hours editorial estimate from three modules plus query-plan notes; index displays4h54. Load testing adds time. Landing-page/selected-unit evidence only; paid lessons and assessment content uninspected."
+    },
+    {
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AB-730"
+      ],
+      "notes": "Read complete current article. Auto uses enabled models; device selection and effort can persist; effort trades quality/speed/credits. Provider/residency/retention notes exist. Page says tenant-wide Anthropic setting while later admin guidance says group-scoped; keep discrepancy. October 28 wave1 evidence: Read complete current article. Auto uses enabled models; device selection and effort can persist; effort trades quality/speed/credits. Provider/residency/retention notes exist. Page says tenant-wide Anthropic setting while later admin guidance says group-scoped; keep discrepancy. No live product execution.",
+      "id": "microsoft-cowork-models",
+      "title": "Choose a model for Copilot Cowork | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/copilot/cowork/cowork-models"
+    },
+    {
+      "id": "ab730-cowork-training",
+      "title": "Get more done with Copilot Cowork",
+      "url": "https://learn.microsoft.com/en-us/training/modules/delegate-work-copilot-cowork/",
+      "publisher": "Microsoft",
+      "authority_class": 3,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AB-730"
+      ],
+      "notes": "Ten-unit module; publication/update date and total runtime not displayed in direct extraction. Opened overview, how-it-works (10 minutes), guardrails (6 minutes) and first-task exercise entry (15 minutes). About 1–2 hours for selected reading and an original supervision worksheet, editorial estimate. Fits choosing Chat/agents/Cowork, skills, plans/progress/results and limitations. Guardrails' approval summary must be qualified with product documentation on existing session consent and preauthorization. Text inspected; videos, assessment, exercise launcher and tenant work not executed. Link/original synthesis only; public reading free, product practice needs eligible access. October 28 public resource review: About1–2hours editorial estimate from10units and15-minute exercise; no total in direct extraction. How-it-works10min,guardrails6min,exercise15min published. Landing-page/selected-unit evidence only; paid lessons and assessment content uninspected."
+    },
+    {
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AB-730"
+      ],
+      "notes": "Inspected introductory behavior, supported experiences, approval/security, availability and control sections. Connector-provided create/update/delete tools can act with user permission/approval. Researcher remains read-only. Admin connector-tool-view UI is Coming soon, so do not prescribe it as universal. October 28 wave1 evidence: Inspected introductory behavior, supported experiences, approval/security, availability and control sections. Connector-provided create/update/delete tools can act with user permission/approval. Researcher remains read-only. Admin connector-tool-view UI is Coming soon, so do not prescribe it as universal. No live product execution.",
+      "id": "microsoft-federated-connectors",
+      "title": "Federated connectors overview - Microsoft 365 Copilot connectors | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/federated-connectors-overview"
+    },
+    {
+      "id": "ab730-get-ready-copilot",
+      "title": "Get ready to work with Microsoft Copilot",
+      "url": "https://learn.microsoft.com/en-us/training/modules/get-ready-work-microsoft-365-copilot/",
+      "publisher": "Microsoft",
+      "authority_class": 3,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AB-730"
+      ],
+      "notes": "Six-unit module; publication/update date not displayed in opened page. Public overview and Work IQ unit read. About 25–40 minutes for reading and an original context/prompt worksheet (editorial estimate); search index displays 22 minutes and opened context unit publishes 5 minutes. Fits Work IQ, work/web grounding, data protection and four-element prompting. No video, assessment or tenant step executed. Link and original synthesis only; no training content copied. Public reading is free; feature practice needs eligible access. Current product documentation remains the behavioral authority. October 28 public resource review: About 25–40 minutes editorial reading+worksheet estimate; index displays22min; opened WorkIQ unit publishes5min. Landing-page/selected-unit evidence only; paid lessons and assessment content uninspected."
     }
   ]
 }

@@ -2494,7 +2494,7 @@
       "review_type": "source-validation",
       "reviewed_on": "2026-09-27",
       "outcome": "passed",
-      "blueprint_snapshot_path": "data/objective-snapshots/ab-900-official-objectives.txt",
+      "blueprint_snapshot_path": "data/objective-snapshots/archive/ab-900-8e38035a94d260856ff5c08899492597046213510e057128edd89d775d363b90.txt",
       "blueprint_snapshot_sha256": "8e38035a94d260856ff5c08899492597046213510e057128edd89d775d363b90",
       "objective_coverage": [
         {
@@ -3611,7 +3611,7 @@
       "review_type": "source-validation",
       "reviewed_on": "2026-09-28",
       "outcome": "blocked",
-      "blueprint_snapshot_path": "data/objective-snapshots/ai-200-official-objectives.txt",
+      "blueprint_snapshot_path": "data/objective-snapshots/archive/ai-200-3dc5dfbae796cc5345c92061d04d0e671d5ebc7252ac057038ca61b8b8a6e464.txt",
       "blueprint_snapshot_sha256": "3dc5dfbae796cc5345c92061d04d0e671d5ebc7252ac057038ca61b8b8a6e464",
       "objective_coverage": [
         {
@@ -4691,7 +4691,7 @@
       "review_type": "source-validation",
       "reviewed_on": "2026-09-27",
       "outcome": "passed",
-      "blueprint_snapshot_path": "data/objective-snapshots/ab-730-official-objectives.txt",
+      "blueprint_snapshot_path": "data/objective-snapshots/archive/ab-730-5387c1978cda745a51ab645fb402bb8080729bcf6461c63a1eac464492e71a55.txt",
       "blueprint_snapshot_sha256": "5387c1978cda745a51ab645fb402bb8080729bcf6461c63a1eac464492e71a55",
       "objective_coverage": [
         {
@@ -18029,7 +18029,7 @@
       "review_type": "source-validation",
       "reviewed_on": "2026-08-31",
       "outcome": "passed",
-      "blueprint_snapshot_path": "data/objective-snapshots/ai-200-official-objectives.txt",
+      "blueprint_snapshot_path": "data/objective-snapshots/archive/ai-200-3dc5dfbae796cc5345c92061d04d0e671d5ebc7252ac057038ca61b8b8a6e464.txt",
       "blueprint_snapshot_sha256": "3dc5dfbae796cc5345c92061d04d0e671d5ebc7252ac057038ca61b8b8a6e464",
       "objective_coverage": [
         {
@@ -19120,6 +19120,935 @@
         "missing_or_error": 0
       },
       "notes": "Every objective on the official page last updated May 13, 2026 is mapped to an identity, authorization, data, network, compute, posture, monitoring, evidence, failure, or recovery decision. Three integrated scenarios, eight independent labs, and 36 original checks cover PIM/Conditional Access/app and workload identity; Key Vault; Policy/compliance/RBAC/Backup/IaC; Storage/SQL/networking; SharePoint, Copilot Studio, Entra Agent ID, AI Gateway, Defender for AI Services, Foundry guardrails, and the Data and AI dashboard; servers/VMs/Arc; containers and application platforms; Defender posture/multicloud/EASM; Sentinel collection/automation/retention/Purview; and Security Copilot. All 51 cited URLs are cataloged: 49 were reachable and the O'Reilly legacy video and one Udemy course returned access-blocked HTTP 403; none was missing or broken. The guide verifies the active exam, 120-minute duration, absent Practice Assessment, August 31, 2026 AZ-500 retirement, 30 hours 8 minutes of current official Learn paths, and the MIT-licensed Tim Warner companion. It labels AZ-500-only resources as incomplete legacy foundations and marks AI, Agent ID, Gateway, Defender plan, disk-encryption, Sentinel portal, and Security Copilot transitions for re-verification. No upcoming blueprint change or SC-500 retirement was announced."
+    },
+    {
+      "id": "c3000-006-2026-10-28-source-validation",
+      "exam_code": "C3000-006",
+      "guide_path": "guides/C3000-006-ibm-bob-v2-developer-associate.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/c3000-006-official-objectives.txt",
+      "blueprint_snapshot_sha256": "d4573e943742dfca30eb28ace0a1953957e412b90b8c4165c315cf9e617db5e3",
+      "objective_coverage": [
+        {
+          "objective_group": "Concepts: Write effective prompts",
+          "guide_sections": [
+            "Effective prompts and project initialization",
+            "Hands-on labs",
+            "Original scenario checks with answers"
+          ]
+        },
+        {
+          "objective_group": "Concepts: Initiate a project (AGENTS.md)",
+          "guide_sections": [
+            "Effective prompts and project initialization",
+            "Hands-on labs",
+            "Original scenario checks with answers"
+          ]
+        },
+        {
+          "objective_group": "Concepts: Why use an MCP server",
+          "guide_sections": [
+            "MCP and skill structure",
+            "Hands-on labs",
+            "Original scenario checks with answers"
+          ]
+        },
+        {
+          "objective_group": "Concepts: Define and Illustrate the structure of  Bob Skills",
+          "guide_sections": [
+            "MCP and skill structure",
+            "Hands-on labs",
+            "Original scenario checks with answers"
+          ]
+        },
+        {
+          "objective_group": "Bob Core Features: Use Bob file's system to read, create and modify project files",
+          "guide_sections": [
+            "Files, tools, and default modes",
+            "Hands-on labs",
+            "Original scenario checks with answers"
+          ]
+        },
+        {
+          "objective_group": "Bob Core Features: Highlight the purpose of the IBM Premium Packages",
+          "guide_sections": [
+            "Premium packages and SDLC work",
+            "Hands-on labs",
+            "Original scenario checks with answers"
+          ]
+        },
+        {
+          "objective_group": "Bob Core Features: Define the role of bobignore",
+          "guide_sections": [
+            "Ignore files and project boundaries",
+            "Hands-on labs",
+            "Original scenario checks with answers"
+          ]
+        },
+        {
+          "objective_group": "Bob Core Features: Define and differentiate between the 3 default Bob modes",
+          "guide_sections": [
+            "Files, tools, and default modes",
+            "Hands-on labs",
+            "Original scenario checks with answers"
+          ]
+        },
+        {
+          "objective_group": "Bob Core Features: How Bob selects LLM models",
+          "guide_sections": [
+            "Architecture, model routing, and deployment",
+            "Hands-on labs",
+            "Original scenario checks with answers"
+          ]
+        },
+        {
+          "objective_group": "Bob Core Features: Use Bob shell to perform AI-Assisted activities from the command line",
+          "guide_sections": [
+            "Bob Shell and code functions",
+            "Hands-on labs",
+            "Original scenario checks with answers"
+          ]
+        },
+        {
+          "objective_group": "Bob Core Features: Define the component of Bob architecture",
+          "guide_sections": [
+            "Architecture, model routing, and deployment",
+            "Hands-on labs",
+            "Original scenario checks with answers"
+          ]
+        },
+        {
+          "objective_group": "Bob Core Features: Explain IBM Bob as AI Development partner across the SDLC",
+          "guide_sections": [
+            "Premium packages and SDLC work",
+            "Hands-on labs",
+            "Original scenario checks with answers"
+          ]
+        },
+        {
+          "objective_group": "Bob Core Features: Describe Bob hybrid deployment capabilities",
+          "guide_sections": [
+            "Architecture, model routing, and deployment",
+            "Hands-on labs",
+            "Original scenario checks with answers"
+          ]
+        },
+        {
+          "objective_group": "Bob Core Features: Monitor Bob usage, activities, and Bobcoin consumption using Bobalytics",
+          "guide_sections": [
+            "Bobalytics and Enterprise administration",
+            "Hands-on labs",
+            "Original scenario checks with answers"
+          ]
+        },
+        {
+          "objective_group": "Bob Core Features: Explain how Bob optimize tokens consumption (intelligent routing)",
+          "guide_sections": [
+            "Architecture, model routing, and deployment",
+            "Hands-on labs",
+            "Original scenario checks with answers"
+          ]
+        },
+        {
+          "objective_group": "Bob Core Features: Identify different ways of using Code Functions",
+          "guide_sections": [
+            "Bob Shell and code functions",
+            "Hands-on labs",
+            "Original scenario checks with answers"
+          ]
+        },
+        {
+          "objective_group": "Bob Core Features: Integrate Bob with external tools and services through MCP and supported  integrations",
+          "guide_sections": [
+            "MCP deployment and tool development",
+            "Hands-on labs",
+            "Original scenario checks with answers"
+          ]
+        },
+        {
+          "objective_group": "Bob Core Features: Identify what components fill the context window",
+          "guide_sections": [
+            "Context, rules, and usage",
+            "Hands-on labs",
+            "Original scenario checks with answers"
+          ]
+        },
+        {
+          "objective_group": "Bob Core Features: Standardize Bob behavior with Rules",
+          "guide_sections": [
+            "Context, rules, and usage",
+            "Hands-on labs",
+            "Original scenario checks with answers"
+          ]
+        },
+        {
+          "objective_group": "Bob Use Cases: Create, inspect, and refine a solution architecture and implementation plan before coding",
+          "guide_sections": [
+            "Plan, implement, debug, and modernize",
+            "Hands-on labs",
+            "Original scenario checks with answers"
+          ]
+        },
+        {
+          "objective_group": "Bob Use Cases: Use literate code to create code from comments",
+          "guide_sections": [
+            "Plan, implement, debug, and modernize",
+            "Hands-on labs",
+            "Original scenario checks with answers"
+          ]
+        },
+        {
+          "objective_group": "Bob Use Cases: Apply Bob core SDLC capabilities to understand, generate, modify, document, and automate development workflows",
+          "guide_sections": [
+            "Plan, implement, debug, and modernize",
+            "Hands-on labs",
+            "Original scenario checks with answers"
+          ]
+        },
+        {
+          "objective_group": "Bob Use Cases: Distinguish when to use Modes, Skills, Rules, Hooks, and AGENTS.md",
+          "guide_sections": [
+            "Choose the right customization",
+            "Hands-on labs",
+            "Original scenario checks with answers"
+          ]
+        },
+        {
+          "objective_group": "Bob Use Cases: Evaluate when to use Bob Shell versus Bob IDE",
+          "guide_sections": [
+            "Bob Shell and code functions",
+            "Hands-on labs",
+            "Original scenario checks with answers"
+          ]
+        },
+        {
+          "objective_group": "Bob Use Cases: Evaluate when Bob should work alone versus with specialized tools or external applications",
+          "guide_sections": [
+            "Specialized tools, agents, and delegated work",
+            "Hands-on labs",
+            "Original scenario checks with answers"
+          ]
+        },
+        {
+          "objective_group": "Bob Use Cases: Use subagents and subtasks to divide complex development work into focused parallel workstreams",
+          "guide_sections": [
+            "Specialized tools, agents, and delegated work",
+            "Hands-on labs",
+            "Original scenario checks with answers"
+          ]
+        },
+        {
+          "objective_group": "Bob Use Cases: Modernize applications using Bob",
+          "guide_sections": [
+            "Plan, implement, debug, and modernize",
+            "Hands-on labs",
+            "Original scenario checks with answers"
+          ]
+        },
+        {
+          "objective_group": "Bob Use Cases: Build AI agents using Bob",
+          "guide_sections": [
+            "Specialized tools, agents, and delegated work",
+            "Hands-on labs",
+            "Original scenario checks with answers"
+          ]
+        },
+        {
+          "objective_group": "Bob Use Cases: Debug application problems and correct code defects with Bob debugging and documenting code",
+          "guide_sections": [
+            "Plan, implement, debug, and modernize",
+            "Hands-on labs",
+            "Original scenario checks with answers"
+          ]
+        },
+        {
+          "objective_group": "Bob Use Cases: Utilize Code Review and Bob Findings",
+          "guide_sections": [
+            "Code review and Bob Findings",
+            "Hands-on labs",
+            "Original scenario checks with answers"
+          ]
+        },
+        {
+          "objective_group": "Bob Configuration: Familiarize self with tools: Read, command, subtask, MCP",
+          "guide_sections": [
+            "Tool groups, task limits, mentions, and extensions",
+            "Hands-on labs",
+            "Original scenario checks with answers"
+          ]
+        },
+        {
+          "objective_group": "Bob Configuration: Configure task limits for Bob coins",
+          "guide_sections": [
+            "Tool groups, task limits, mentions, and extensions",
+            "Hands-on labs",
+            "Original scenario checks with answers"
+          ]
+        },
+        {
+          "objective_group": "Bob Configuration: Utilize context mentions @ file",
+          "guide_sections": [
+            "Tool groups, task limits, mentions, and extensions",
+            "Hands-on labs",
+            "Original scenario checks with answers"
+          ]
+        },
+        {
+          "objective_group": "Bob Configuration: Download extensions from marketplace",
+          "guide_sections": [
+            "Tool groups, task limits, mentions, and extensions",
+            "Hands-on labs",
+            "Original scenario checks with answers"
+          ]
+        },
+        {
+          "objective_group": "Bob Configuration: Distinguish between local and remote MCP server deployment / transport options",
+          "guide_sections": [
+            "MCP deployment and tool development",
+            "Hands-on labs",
+            "Original scenario checks with answers"
+          ]
+        },
+        {
+          "objective_group": "Bob Configuration: Develop and add MCP tools to environment",
+          "guide_sections": [
+            "MCP deployment and tool development",
+            "Hands-on labs",
+            "Original scenario checks with answers"
+          ]
+        },
+        {
+          "objective_group": "Bob Configuration: Create a custom Bob Modes",
+          "guide_sections": [
+            "Custom modes, skills, and rules",
+            "Hands-on labs",
+            "Original scenario checks with answers"
+          ]
+        },
+        {
+          "objective_group": "Bob Configuration: Develop Bob skills",
+          "guide_sections": [
+            "Custom modes, skills, and rules",
+            "Hands-on labs",
+            "Original scenario checks with answers"
+          ]
+        },
+        {
+          "objective_group": "Bob Configuration: Create custom Bob rules global vs project",
+          "guide_sections": [
+            "Custom modes, skills, and rules",
+            "Hands-on labs",
+            "Original scenario checks with answers"
+          ]
+        },
+        {
+          "objective_group": "Bob Configuration: Generate pull requests and PR descriptions directly from your IDE",
+          "guide_sections": [
+            "Pull requests",
+            "Hands-on labs",
+            "Original scenario checks with answers"
+          ]
+        },
+        {
+          "objective_group": "Bob Accounts: Administer Bobalytics",
+          "guide_sections": [
+            "Bobalytics and Enterprise administration",
+            "Hands-on labs",
+            "Original scenario checks with answers"
+          ]
+        },
+        {
+          "objective_group": "Bob Accounts: Authenticate with API",
+          "guide_sections": [
+            "API authentication",
+            "Hands-on labs",
+            "Original scenario checks with answers"
+          ]
+        },
+        {
+          "objective_group": "Bob Accounts: Determine the features of enterprise plan",
+          "guide_sections": [
+            "Bobalytics and Enterprise administration",
+            "Hands-on labs",
+            "Original scenario checks with answers"
+          ]
+        },
+        {
+          "objective_group": "Bob Accounts: Define Bob Coins",
+          "guide_sections": [
+            "Bobcoins, tokens, and spending controls",
+            "Hands-on labs",
+            "Original scenario checks with answers"
+          ]
+        },
+        {
+          "objective_group": "Bob Accounts: Understand Token Usage for Prompting",
+          "guide_sections": [
+            "Bobcoins, tokens, and spending controls",
+            "Hands-on labs",
+            "Original scenario checks with answers"
+          ]
+        },
+        {
+          "objective_group": "Bob Security: Modify mode permissions in a context/task",
+          "guide_sections": [
+            "Permissions and approval scope",
+            "Hands-on labs",
+            "Original scenario checks with answers"
+          ]
+        },
+        {
+          "objective_group": "Bob Security: Reduce content poisoning",
+          "guide_sections": [
+            "Context poisoning and secure development",
+            "Hands-on labs",
+            "Original scenario checks with answers"
+          ]
+        },
+        {
+          "objective_group": "Bob Security: Identify and enable correct Permissions restrictions for projects",
+          "guide_sections": [
+            "Permissions and approval scope",
+            "Hands-on labs",
+            "Original scenario checks with answers"
+          ]
+        },
+        {
+          "objective_group": "Bob Security: Produce .bobignore file",
+          "guide_sections": [
+            "Ignore files and project boundaries",
+            "Hands-on labs",
+            "Original scenario checks with answers"
+          ]
+        },
+        {
+          "objective_group": "Bob Security: Apply correct permissions and understand approval workflows",
+          "guide_sections": [
+            "Permissions and approval scope",
+            "Hands-on labs",
+            "Original scenario checks with answers"
+          ]
+        },
+        {
+          "objective_group": "Bob Security: List the best security practices and capabilities for developing with Bob",
+          "guide_sections": [
+            "Context poisoning and secure development",
+            "Hands-on labs",
+            "Original scenario checks with answers"
+          ]
+        },
+        {
+          "objective_group": "Bob Security: Rollback changes",
+          "guide_sections": [
+            "Rollback and recovery",
+            "Hands-on labs",
+            "Original scenario checks with answers"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 47,
+        "reachable": 47,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "AI-assisted source/objective gate, not independent human or product-runtime validation. All 52 public objectives mapped to named sections; eight proposed labs and 16 original answered checks. Initial 37 exact cited URLs returned HTTP 200; a supplemental source-discovery pass added ten evaluated resources, all HTTP 200, for 47 total current guide links. The 24-page official preparation PDF was read through an expiring download, not republished. General marketplace-browser support remains explicitly unverified in that PDF and is labeled More research needed in the guide. Task-budget UI/enforcement and product execution remain unverified. Current transport docs remove standalone HTTP+SSE despite an introductory three-transport list. IDE 2.0.1 support ends October 31, 2026, not an exam retirement. See docs/research/2026-10-28-ibm-bob-certification-intake.md. Supplemental sources include courseware, workshop, example applications and tutorials; version, incomplete-code and security-example caveats are adjacent in Places to learn. One throttled video remains queued without content or runtime claims. No product exercises executed."
+    },
+    {
+      "id": "ab-100-2026-10-28-targeted-refresh-source-review",
+      "exam_code": "AB-100",
+      "guide_path": "guides/AB-100-agentic-ai-business-solutions-architect.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "blocked",
+      "blueprint_snapshot_path": "data/objective-snapshots/ab-100-official-objectives.txt",
+      "blueprint_snapshot_sha256": "3736af21c41a6a8c785e5461d4ba25424a9e6b2205a3c10ae1d18589e16a61e2",
+      "objective_coverage": [
+        {
+          "objective_group": "Targeted lifecycle, product and source refresh; complete current objective reconciliation pending",
+          "guide_sections": [
+            "October 28 implementation notes",
+            "Places to learn"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": false,
+        "material_claims_sourced": false,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 81,
+        "reachable": 76,
+        "access_blocked": 5,
+        "missing_or_error": 0
+      },
+      "notes": "Bounded October 28 refresh, not a complete source-validation pass or deep review. The accepted historical objective snapshot is preserved. New linked claims have source evidence, but the complete guide and current official scope have not passed all source/objective checks. Complete historical review receipts remain unchanged; unexecuted labs and unresolved documentation conflicts remain. See docs/research/2026-10-28-microsoft-refresh.md."
+    },
+    {
+      "id": "ab-650-2026-10-28-targeted-refresh-source-review",
+      "exam_code": "AB-650",
+      "guide_path": "guides/AB-650-ai-services-administrator-associate.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "blocked",
+      "blueprint_snapshot_path": "data/objective-snapshots/ab-650-official-objectives.txt",
+      "blueprint_snapshot_sha256": "e70d10682f078cb6887f7dde679f56661e63dfeabb221779f6b0ff4ab08bdf1a",
+      "objective_coverage": [
+        {
+          "objective_group": "Targeted lifecycle, product and source refresh; complete current objective reconciliation pending",
+          "guide_sections": [
+            "October 28 implementation notes",
+            "Places to learn",
+            "October 28 learning-resource check"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": false,
+        "material_claims_sourced": false,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 52,
+        "reachable": 50,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Bounded October 28 refresh, not a complete source-validation pass or deep review. The accepted historical objective snapshot is preserved. New linked claims have source evidence, but the complete guide and current official scope have not passed all source/objective checks. Complete historical review receipts remain unchanged; unexecuted labs and unresolved documentation conflicts remain. See docs/research/2026-10-28-microsoft-refresh.md."
+    },
+    {
+      "id": "ai-500-2026-10-28-targeted-refresh-source-review",
+      "exam_code": "AI-500",
+      "guide_path": "guides/AI-500-designing-implementing-multi-agent-ai-solutions.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "blocked",
+      "blueprint_snapshot_path": "data/objective-snapshots/ai-500-official-objectives.txt",
+      "blueprint_snapshot_sha256": "498ed5ca3e5f1ac958dedea4b84cb33a34a8ff0f5aa239540fd7283bc41360e8",
+      "objective_coverage": [
+        {
+          "objective_group": "Targeted lifecycle, product and source refresh; complete current objective reconciliation pending",
+          "guide_sections": [
+            "October 28 implementation notes",
+            "Places to learn",
+            "October 28 learning-resource check"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": false,
+        "material_claims_sourced": false,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 42,
+        "reachable": 40,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Bounded October 28 refresh, not a complete source-validation pass or deep review. The accepted historical objective snapshot is preserved. New linked claims have source evidence, but the complete guide and current official scope have not passed all source/objective checks. Complete historical review receipts remain unchanged; unexecuted labs and unresolved documentation conflicts remain. See docs/research/2026-10-28-microsoft-refresh.md."
+    },
+    {
+      "id": "md-102-2026-10-28-targeted-refresh-source-review",
+      "exam_code": "MD-102",
+      "guide_path": "guides/MD-102-managing-securing-microsoft-365-endpoints-intune.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "blocked",
+      "blueprint_snapshot_path": "data/objective-snapshots/md-102-official-objectives.txt",
+      "blueprint_snapshot_sha256": "ba90e464c3a81deac207962ffe32e88c3ac6b0d966c33ba77572bb3d83910009",
+      "objective_coverage": [
+        {
+          "objective_group": "Targeted lifecycle, product and source refresh; complete current objective reconciliation pending",
+          "guide_sections": [
+            "October 28 implementation notes",
+            "Places to learn",
+            "October 28 learning-resource check"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": false,
+        "material_claims_sourced": false,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 63,
+        "reachable": 60,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "Bounded October 28 refresh, not a complete source-validation pass or deep review. The accepted historical objective snapshot is preserved. New linked claims have source evidence, but the complete guide and current official scope have not passed all source/objective checks. Complete historical review receipts remain unchanged; unexecuted labs and unresolved documentation conflicts remain. See docs/research/2026-10-28-microsoft-refresh.md."
+    },
+    {
+      "id": "ms-102-2026-10-28-targeted-refresh-source-review",
+      "exam_code": "MS-102",
+      "guide_path": "guides/MS-102-microsoft-365-administrator.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "blocked",
+      "blueprint_snapshot_path": "data/objective-snapshots/ms-102-official-objectives.txt",
+      "blueprint_snapshot_sha256": "97ce6b34e98fb43947409e8b7997f3de72e6cae7a62102dfdea849bfb177c92a",
+      "objective_coverage": [
+        {
+          "objective_group": "Targeted lifecycle, product and source refresh; complete current objective reconciliation pending",
+          "guide_sections": [
+            "October 28 implementation notes",
+            "Places to learn"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": false,
+        "material_claims_sourced": false,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 81,
+        "reachable": 78,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "Bounded October 28 refresh, not a complete source-validation pass or deep review. The accepted historical objective snapshot is preserved. New linked claims have source evidence, but the complete guide and current official scope have not passed all source/objective checks. Complete historical review receipts remain unchanged; unexecuted labs and unresolved documentation conflicts remain. See docs/research/2026-10-28-microsoft-refresh.md."
+    },
+    {
+      "id": "pl-400-2026-10-28-targeted-refresh-source-review",
+      "exam_code": "PL-400",
+      "guide_path": "guides/PL-400-microsoft-power-platform-developer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "blocked",
+      "blueprint_snapshot_path": "data/objective-snapshots/pl-400-official-objectives.txt",
+      "blueprint_snapshot_sha256": "4867995d075161ae07190d54a25c84872deb9efc388a7629743ee6bc49b8f468",
+      "objective_coverage": [
+        {
+          "objective_group": "Targeted lifecycle, product and source refresh; complete current objective reconciliation pending",
+          "guide_sections": [
+            "AB-400 transition map for October 16, 2026",
+            "Places to learn",
+            "October 28 learning-resource check"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": false,
+        "material_claims_sourced": false,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 48,
+        "reachable": 47,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "Bounded October 28 refresh, not a complete source-validation pass or deep review. The accepted historical objective snapshot is preserved. New linked claims have source evidence, but the complete guide and current official scope have not passed all source/objective checks. Complete historical review receipts remain unchanged; unexecuted labs and unresolved documentation conflicts remain. See docs/research/2026-10-28-microsoft-refresh.md."
+    },
+    {
+      "id": "ab-730-2026-10-28-wave1-source-validation",
+      "exam_code": "AB-730",
+      "guide_path": "guides/AB-730-ai-business-professional.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "blocked",
+      "blueprint_snapshot_path": "data/objective-snapshots/ab-730-official-objectives.txt",
+      "blueprint_snapshot_sha256": "2511f7222a02bef9fe9fd9ca6014393ce425720ecdc1a717cd7d27c907f13db4",
+      "objective_coverage": [
+        {
+          "objective_group": "Current detailed objective group 1.1",
+          "guide_sections": [
+            "Understand context and organizational protection",
+            "Distinguish chat, agents, Researcher, Analyst, pages, and notebooks"
+          ]
+        },
+        {
+          "objective_group": "Current detailed objective group 1.2",
+          "guide_sections": [
+            "Apply responsible AI and data protection",
+            "Understand context and organizational protection"
+          ]
+        },
+        {
+          "objective_group": "Current detailed objective group 2.1",
+          "guide_sections": [
+            "Create a prompt with a testable contract",
+            "Save, schedule, and share prompts safely",
+            "Separate memory, history and instructions"
+          ]
+        },
+        {
+          "objective_group": "Current detailed objective group 2.2",
+          "guide_sections": [
+            "Manage conversation history and notebooks"
+          ]
+        },
+        {
+          "objective_group": "Current detailed objective group 3.1",
+          "guide_sections": [
+            "Connect work context without assuming complete access",
+            "Context, delegation, and checking the result",
+            "Generate visuals that answer the business question",
+            "Move data and insights across Microsoft 365 apps",
+            "Draft a new document from a prompt"
+          ]
+        },
+        {
+          "objective_group": "Current detailed objective group 3.2",
+          "guide_sections": [
+            "Use Copilot for meetings and collaboration",
+            "Distinguish the three meeting experiences",
+            "Move data and insights across Microsoft 365 apps"
+          ]
+        },
+        {
+          "objective_group": "Current detailed objective group 4.1",
+          "guide_sections": [
+            "Distinguish chat, agents, Researcher, Analyst, pages, and notebooks",
+            "Select an agent and return to its work",
+            "Related item: create and configure a custom agent"
+          ]
+        },
+        {
+          "objective_group": "Current detailed objective group 4.2",
+          "guide_sections": [
+            "Context, delegation, and checking the result",
+            "Choose a skill, then supervise the deliverable",
+            "Understand the approval you give",
+            "Manage recurring work and access"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 40,
+        "reachable": 40,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "Whole-guide team research; 41 detailed current-English objectives mapped. Source gate remains blocked by documented source contradictions despite bounded current teaching. See docs/research/2026-10-28-microsoft-wave1-deep-review.md and ADLC_Docs/operations/2026-10-28-microsoft-wave1-deep-review.json. Public reading is not product execution; no paid assessment content inspected."
+    },
+    {
+      "id": "ab-900-2026-10-28-wave1-source-validation",
+      "exam_code": "AB-900",
+      "guide_path": "guides/AB-900-microsoft-365-copilot-agent-administration-fundamentals.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/ab-900-official-objectives.txt",
+      "blueprint_snapshot_sha256": "018108511a1adc2906066d50ff9d8a3459e702b1b61f4e973653d6d75ed591ba",
+      "objective_coverage": [
+        {
+          "objective_group": "Current detailed objective group 1.1",
+          "guide_sections": [
+            "Tenant, subscriptions, users, and groups",
+            "Exchange Online, SharePoint, and Teams"
+          ]
+        },
+        {
+          "objective_group": "Current detailed objective group 1.2",
+          "guide_sections": [
+            "Zero Trust and authorization",
+            "3. Threat protection in Microsoft 365"
+          ]
+        },
+        {
+          "objective_group": "Current detailed objective group 1.3",
+          "guide_sections": [
+            "Zero Trust and authorization",
+            "Tenant, subscriptions, users, and groups",
+            "Sign-in troubleshooting",
+            "Interpret identity posture and choose the right activity log",
+            "App registrations, Enterprise applications and consent"
+          ]
+        },
+        {
+          "objective_group": "Current detailed objective group 2.1",
+          "guide_sections": [
+            "4. Microsoft Purview data protection and governance",
+            "Discover and classify data",
+            "Retention, records, and investigations"
+          ]
+        },
+        {
+          "objective_group": "Current detailed objective group 2.2",
+          "guide_sections": [
+            "Grounding and data access",
+            "Responsible AI and security"
+          ]
+        },
+        {
+          "objective_group": "Current detailed objective group 2.3",
+          "guide_sections": [
+            "Retention, records, and investigations",
+            "Discover and classify data",
+            "Data Loss Prevention",
+            "Data Security Posture Management for AI"
+          ]
+        },
+        {
+          "objective_group": "Current detailed objective group 2.4",
+          "guide_sections": [
+            "Oversharing controls"
+          ]
+        },
+        {
+          "objective_group": "Current detailed objective group 3.1",
+          "guide_sections": [
+            "Copilot capabilities and feature control",
+            "Licensing and consumption",
+            "Agent lifecycle"
+          ]
+        },
+        {
+          "objective_group": "Current detailed objective group 3.2",
+          "guide_sections": [
+            "Licensing and consumption",
+            "Copilot capabilities and feature control"
+          ]
+        },
+        {
+          "objective_group": "Current detailed objective group 3.3",
+          "guide_sections": [
+            "Agent lifecycle"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 57,
+        "reachable": 54,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "Whole-guide team research; 53 detailed current-English objectives mapped. Current sources/objectives gate passed; human and live product review pending. See docs/research/2026-10-28-microsoft-wave1-deep-review.md and ADLC_Docs/operations/2026-10-28-microsoft-wave1-deep-review.json. Public reading is not product execution; no paid assessment content inspected."
+    },
+    {
+      "id": "ai-200-2026-10-28-wave1-source-validation",
+      "exam_code": "AI-200",
+      "guide_path": "guides/AI-200-developing-ai-cloud-solutions-on-azure.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "blocked",
+      "blueprint_snapshot_path": "data/objective-snapshots/ai-200-official-objectives.txt",
+      "blueprint_snapshot_sha256": "ea26ee8b8e99899874fadfd3c728a6cfef05684ef79d5e8c2373ef87a3cf0213",
+      "objective_coverage": [
+        {
+          "objective_group": "Current detailed objective group 1.1",
+          "guide_sections": [
+            "Build an image as an immutable supply-chain artifact",
+            "Build and run with ACR Tasks",
+            "Deploy a custom container to App Service"
+          ]
+        },
+        {
+          "objective_group": "Current detailed objective group 1.2",
+          "guide_sections": [
+            "Deploy and revise Azure Container Apps",
+            "Scale with KEDA",
+            "Deploy and manage AKS with manifests",
+            "Troubleshoot Container Apps and AKS end to end"
+          ]
+        },
+        {
+          "objective_group": "Current detailed objective group 2.1",
+          "guide_sections": [
+            "Implement Cosmos DB for NoSQL access",
+            "Partition, indexing and consistency",
+            "Store embeddings and run Cosmos DB vector search",
+            "Process changes with the Cosmos DB change feed"
+          ]
+        },
+        {
+          "objective_group": "Current detailed objective group 2.2",
+          "guide_sections": [
+            "Implement PostgreSQL and pgvector",
+            "Store and index vectors with pgvector",
+            "Size compute, memory, storage and connections"
+          ]
+        },
+        {
+          "objective_group": "Current detailed objective group 2.3",
+          "guide_sections": [
+            "Integrate Azure Managed Redis",
+            "Match clustering, modules and client"
+          ]
+        },
+        {
+          "objective_group": "Current detailed objective group 3.1",
+          "guide_sections": [
+            "Queue back-end work with Service Bus",
+            "Implement Event Grid workflows"
+          ]
+        },
+        {
+          "objective_group": "Current detailed objective group 3.2",
+          "guide_sections": [
+            "Build serverless APIs and workers with Azure Functions",
+            "Trigger and binding semantics"
+          ]
+        },
+        {
+          "objective_group": "Current detailed objective group 4.1",
+          "guide_sections": [
+            "Retrieve and rotate secrets with Key Vault",
+            "Centralize nonsecret configuration with App Configuration"
+          ]
+        },
+        {
+          "objective_group": "Current detailed objective group 4.2",
+          "guide_sections": [
+            "Instrument with OpenTelemetry",
+            "Query telemetry with KQL"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 81,
+        "reachable": 78,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "Whole-guide team research; 27 detailed current-English objectives mapped. Source gate remains blocked by documented source contradictions despite bounded current teaching. See docs/research/2026-10-28-microsoft-wave1-deep-review.md and ADLC_Docs/operations/2026-10-28-microsoft-wave1-deep-review.json. Public reading is not product execution; no paid assessment content inspected."
     }
   ]
 }

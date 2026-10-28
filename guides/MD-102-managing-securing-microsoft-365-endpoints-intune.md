@@ -5,13 +5,15 @@ official_blueprint: https://learn.microsoft.com/en-us/credentials/certifications
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: source-validated
-last_verified: 2026-09-27
+review_status: review-required
+last_verified: 2026-10-28
 upcoming_change_status: scheduled
 upcoming_change_checked: 2026-09-27
 ---
 
 # MD-102 Managing and Securing Microsoft 365 Endpoints by Using Intune Study Guide
+
+> **REFRESH IN PROGRESS — REVIEW REQUIRED (October 28, 2026).** The official objective page differs from the accepted teaching baseline. Detailed coverage reconciliation is pending; use the linked official blueprint for current scope. Saved objective snapshots and historical full-review dates remain unchanged.
 
 > **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide was checked against the July 24, 2026 objectives and cited public sources on September 27, 2026. The [deep review](../docs/research/2026-09-27-md-102-deep-review.md) individually maps 83 October objectives; live labs and independent human review remain pending. It may still contain errors or become outdated. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#md-102-coverage-record). The [official MD-102 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/md-102) is authoritative.
 
@@ -20,6 +22,14 @@ upcoming_change_checked: 2026-09-27
 **Exam:** 100 minutes; seven exam languages; annual certification renewal. The official instructor-led course is five days.
 
 **Official source:** [MD-102 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/md-102)
+
+## October 28 implementation notes
+
+**Related item:** **Confirmed — VERIFY CURRENT (October 28, 2026).** On applicable Windows 11/Server 2025 systems with Credential Guard disabled, October 13 updates make an absent BlockNtlmv1SSO value enforce blocking of NTLMv1-derived SSO credentials. Check Wi-Fi/Ethernet/VPN MS-CHAPv2 dependencies and NTLM Operational events 4024/4025. An absent key no longer means audit-only, and manual credential entry may still work. Migrate toward supported certificate authentication; any temporary audit exception needs a scoped owner and removal date. [Windows message center](https://learn.microsoft.com/en-us/windows/release-health/windows-message-center) · [Manage NTLMv1 changes and prevent network authentication issues in Windows](https://support.microsoft.com/en-us/servicing/os/windows/docs/2025/08/upcoming-changes-to-ntlmv1-in-windows-11-version-24h2-and-windows-server-2025)
+
+**Confirmed — VERIFY CURRENT (October 28, 2026).** Intune's Windows 11 26H2 security baseline is available; existing profiles do not automatically adopt it. For May 2023-or-later profiles, updating creates a new instance with a keep/discard-customizations choice; review settings and assign/test deliberately before retiring the old assignment. Do not assume the copy is deployed or every planned 26H2 setting is included. The October release excludes Configure NetBIOS settings pending supported in-market availability. [What's new in Microsoft Intune](https://learn.microsoft.com/en-us/intune/whats-new/) · [Configure security baseline policies in Microsoft Intune](https://learn.microsoft.com/en-us/intune/device-security/security-baselines/configure-baselines)
+
+These are bounded operational updates, not a completed objective rebaseline. Product and tenant exercises were not run. Earlier unresolved support and documentation gaps remain.
 
 ## How to use this guide
 
@@ -44,7 +54,7 @@ Use [What's new in Microsoft Intune](https://learn.microsoft.com/en-us/intune/wh
 
 The [Agent 365 GA announcement](https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/) supplies adjacent control-plane context; it does not prove that every Security Copilot or Intune agent feature is GA. Independent endpoint training in Places to learn is useful for alternate demonstrations, with the weekly feed deciding volatile names and behavior.
 
-The feed already contains a **week of September 28** section. Treat those entries as upcoming relative to this review date and verify rollout in the tenant; do not backdate their availability. September 21 deployment plans are public preview in their detailed documentation. Faster Windows compliance evaluation announced September 14 does not make every exported report real-time.
+The September review observed a **week of September 28** feed section before its rollout week. That timing observation is historical as of October 28; verify actual feature rollout and preview status in current documentation and the tenant. The September 21 deployment-plan observation was public preview at that review. Faster Windows compliance evaluation announced September 14 does not make every exported report real-time.
 
 ## Objective map
 
@@ -529,6 +539,15 @@ Build a backup/restore matrix for version, join, account, policy and OOBE/first-
 
 
 ## Places to learn
+
+### October 28 learning-resource check
+
+Additional options and access updates; choose relevant resources rather than consuming every route. New course availability, class delivery and licensing are **VERIFY CURRENT**. Published days describe instructor-led scope, not measured self-study time.
+
+| Resource | Access | Estimated time |
+|---|---|---|
+| [Official MD-102 Foundation lab](https://github.com/MicrosoftLearning/MD-102T00-Microsoft-365-Endpoint-Administrator/blob/main/Instructions/Labs/Lab01-Foundation.md) | Public instructions; prepared disposable tenant, licenses and four VMs required; no hosted lab included | **90 published minutes plus unmeasured setup**; identity, enrollment, Autopilot and RBAC practice; not executed or audited against every October objective |
+
 
 This is a curated starting point, **not a complete list**. It is not meant to be consumed in full. Choose one current primary route, build a real lab, and use assessment results plus the July 2026 blueprint to select supplements. Older MD-102 courses may omit Intune Suite, device preparation changes, automation/reporting, and Security Copilot agents.
 

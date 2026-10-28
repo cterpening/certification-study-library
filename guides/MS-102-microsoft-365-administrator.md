@@ -6,12 +6,14 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: review-required
-last_verified: 2026-09-28
+last_verified: 2026-10-28
 upcoming_change_status: retirement-announced
 upcoming_change_checked: 2026-09-28
 ---
 
 # MS-102 Microsoft 365 Administrator Study Guide
+
+> **REFRESH IN PROGRESS — REVIEW REQUIRED (October 28, 2026).** Selected lifecycle, technical and source evidence was checked today. The dated complete review below remains historical; a complete guide/source reconciliation and independent human review remain pending.
 
 > **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; ONE BACKUP DOCUMENTATION GAP OPEN; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 28, 2026; second-year Backup recovery-point cadence remains unverified. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ms-102-coverage-record). The [official MS-102 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-102) is authoritative.
 
@@ -21,6 +23,14 @@ upcoming_change_checked: 2026-09-28
 **Upcoming blueprint change:** Retirement is announced; no separate pre-retirement objective revision is announced.<br>
 **Practice Assessment:** A free Microsoft Practice Assessment is available.<br>
 **Official source:** [MS-102 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-102)
+
+## October 28 implementation notes
+
+**Confirmed — VERIFY CURRENT (October 28, 2026).** Shortening selected offboarding items from 90 to seven days requires two approvals from approvers aged at least two days. With exactly two configured approvers, the requestor can count; with three or more, two other approvers must approve. A request expires after 30 days without quorum. This governs faster permanent deletion, not ordinary restore authorization or every Backup action. Undo is possible before purge; purge is irreversible. [What's new in Microsoft 365 Backup](https://learn.microsoft.com/en-us/microsoft-365/backup/backup-whats-new?view=o365-worldwide) · [Offboarding in Microsoft 365 Backup](https://learn.microsoft.com/en-us/microsoft-365/backup/backup-offboarding?view=o365-worldwide)
+
+**Confirmed — VERIFY CURRENT (October 28, 2026).** Backup Activity Logs show policy/restore operations, including failures and partial success, and support filtered CSV export. Their retention is a fixed 365 days; read-only operations are omitted. Workload-admin visibility follows role scope. Use these logs for troubleshooting and Microsoft Purview Audit for the compliance audit record; an empty operational view does not prove no one accessed the service. [What's new in Microsoft 365 Backup](https://learn.microsoft.com/en-us/microsoft-365/backup/backup-whats-new?view=o365-worldwide) · [Privacy, security, and compliance in Microsoft 365 Backup](https://learn.microsoft.com/en-us/microsoft-365/backup/backup-privacy-security?view=o365-worldwide)
+
+These are bounded operational updates, not a completed objective rebaseline. Product and tenant exercises were not run. Earlier unresolved support and documentation gaps remain.
 
 ## How to use this guide
 

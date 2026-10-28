@@ -5,18 +5,20 @@ official_blueprint: https://learn.microsoft.com/en-us/credentials/certifications
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: source-validated
+review_status: review-required
 last_verified: 2026-09-28
-upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-28
+upcoming_change_status: scheduled
+upcoming_change_checked: 2026-10-28
 ---
 
 # MS-721 Collaboration Communications Systems Engineer Study Guide
 
+> **REFRESH IN PROGRESS — REVIEW REQUIRED (October 28, 2026).** The official objective page differs from the accepted teaching baseline. Detailed coverage reconciliation is pending; use the linked official blueprint for current scope. Saved objective snapshots and historical full-review dates remain unchanged. The displayed October 29 outline is future scope on October 28.
+
 > **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide was checked against the April 28, 2026 objectives and cited public sources on September 28, 2026. The whole-guide deep review mapped 173 objectives in 19 groups; live infrastructure and independent human review remain pending. It may still contain errors or become outdated. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ms-721-coverage-record). The [official MS-721 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-721) is authoritative.
 
-**Current baseline:** Skills measured as of April 28, 2026<br>
-**Upcoming blueprint change:** None announced on the official study guide as of September 28, 2026.<br>
+**Accepted teaching baseline:** Skills measured as of April 28, 2026; current coverage reconciliation is pending.<br>
+**Upcoming blueprint change (checked October 28, 2026):** The official study guide displays an October 29 outline. That outline is future scope today; the September 28 observation of no announced change is historical.<br>
 **Official source:** [MS-721 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-721)
 
 The [deep-review report](../docs/research/2026-09-28-ms-721-deep-review.md) records the evidence and limits. The current credential lists 100 minutes; practice vendors’ question counts are not promises about the exam.

@@ -5,20 +5,22 @@ official_blueprint: https://learn.microsoft.com/en-us/credentials/certifications
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: source-validated
+review_status: review-required
 last_verified: 2026-09-27
 upcoming_change_status: scheduled
 upcoming_change_checked: 2026-09-27
 ---
 
-# DP-420 Designing and Implementing Cloud-Native Applications Using Microsoft Azure Cosmos DB Study Guide
+# DP-420 Building AI Applications with Azure Cosmos DB Study Guide
+
+> **REFRESH IN PROGRESS — REVIEW REQUIRED (October 28, 2026).** The official objective page differs from the accepted teaching baseline. Detailed coverage reconciliation is pending; use the linked official blueprint for current scope. Saved objective snapshots and historical full-review dates remain unchanged.
 
 > **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The complete guide and the 56 published October objectives were reviewed September 27, 2026. The July baseline remains in place until the announced change; October preparation is separated below. See the [deep-review findings](../docs/research/2026-09-27-dp-420-deep-review.md) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-420-coverage-record). The [official DP-420 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-420) is authoritative.
 
-**Current baseline:** Skills measured as of July 21, 2026.<br>
-**Upcoming blueprint change (checked September 27, 2026):** The English exam changes October 6, 2026. The [published future blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-420) adds AI retrieval, agent memory, and other changes. This guide retains the July 21 baseline; the transition material below prepares for October. The live study-guide page now displays October objectives, while the credential page still describes the current exam.<br>
-**Lifecycle status:** Active. On October 6, 2026, the credential becomes **Azure Cosmos DB AI Developer Associate**; DP-420 remains the exam code. See the [official credential notice](https://learn.microsoft.com/en-us/credentials/certifications/azure-cosmos-db-developer-specialty/).<br>
-**Exam page:** [Azure Cosmos DB Developer Specialty](https://learn.microsoft.com/en-us/credentials/certifications/azure-cosmos-db-developer-specialty/) · 100-minute assessment · annual renewal for the earned specialty certification.<br>
+**Accepted teaching baseline:** Skills measured as of July 21, 2026; current coverage reconciliation is pending.<br>
+**Blueprint transition (checked October 28, 2026):** The October 6 effective date has passed. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-420) adds AI retrieval, agent memory, and other changes. This guide retains the July 21 teaching baseline and separate transition material; it does not yet establish complete coverage of the October objectives. The study-guide page still uses future-tense transition wording, while the credential page confirms the name change.<br>
+**Lifecycle status:** Active. The credential changed to **Azure Cosmos DB AI Developer Associate** on October 6, 2026; DP-420 remains the exam code. See the [official credential notice](https://learn.microsoft.com/en-us/credentials/certifications/azure-cosmos-db-developer-specialty/).<br>
+**Exam page:** [Azure Cosmos DB AI Developer Associate](https://learn.microsoft.com/en-us/credentials/certifications/azure-cosmos-db-developer-specialty/) · 100-minute assessment · annual renewal.<br>
 **Official course:** [DP-420T00 Design and implement cloud-native applications with Microsoft Azure Cosmos DB](https://learn.microsoft.com/en-us/training/courses/dp-420t00) · four instructor-led days.<br>
 **Practice:** A free Microsoft Practice Assessment is linked from the credential and study-guide pages.
 

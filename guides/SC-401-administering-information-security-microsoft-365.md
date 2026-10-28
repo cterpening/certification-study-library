@@ -13,6 +13,8 @@ upcoming_change_checked: 2026-09-27
 
 # SC-401 Administering Information Security in Microsoft 365 Study Guide
 
+> **REFRESH IN PROGRESS — REVIEW REQUIRED (October 28, 2026).** The official objective page differs from the accepted teaching baseline. Detailed coverage reconciliation is pending; use the linked official blueprint for current scope. Saved objective snapshots and historical full-review dates remain unchanged.
+
 > **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The complete guide and all 65 published October objectives were reviewed on September 27, 2026; the conflicting official revision dates remain unresolved. See the [deep-review report](../docs/research/2026-09-27-sc-401-deep-review.md). Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sc-401-coverage-record). The [official SC-401 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-401) is authoritative.
 
 **Current baseline:** Skills measured as of July 28, 2026.<br>

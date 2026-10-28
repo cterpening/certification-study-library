@@ -13,6 +13,8 @@ upcoming_change_checked: 2026-09-27
 
 # SC-200 Microsoft Security Operations Analyst Study Guide
 
+> **REFRESH IN PROGRESS — REVIEW REQUIRED (October 28, 2026).** The official objective page differs from the accepted teaching baseline. Detailed coverage reconciliation is pending; use the linked official blueprint for current scope. Saved objective snapshots and historical full-review dates remain unchanged.
+
 > **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; TWO PRODUCT-DOCUMENTATION CONFLICTS OPEN; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 27, 2026; all 54 October objectives were separately mapped while retaining the accepted July baseline. Sentinel Continuous eligibility and lake-tier hunting access still need clarification. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sc-200-coverage-record). The [official SC-200 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200) is authoritative.
 
 **Current baseline:** Skills measured as of July 28, 2026; accepted objective snapshot retained; the current live page also presents October preparation.<br>

@@ -6,17 +6,18 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-27
-upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-27
+last_verified: 2026-10-28
+upcoming_change_status: none-announced
+upcoming_change_checked: 2026-10-28
 ---
 
 # AB-900 Microsoft 365 Copilot and Agent Administration Fundamentals Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The complete guide and all 53 published October objectives were reviewed September 27, 2026. The July baseline remains in place until the announced revision. See the [deep-review findings](../docs/research/2026-09-27-ab-900-deep-review.md) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-900-coverage-record). The [official AB-900 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-900) is authoritative.
 
-**Current baseline:** Skills measured as of July 22, 2026<br>
-**Upcoming blueprint change:** The live study-guide page now displays the October 14, 2026 revision, including Enterprise applications wording. Domain weights remain unchanged. Checked September 27, 2026. This guide retains the July baseline; Section 2 already distinguishes app registrations from tenant service principals for the October wording.<br>
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 refresh maps all 53 detailed objectives in the October 14, 2026 English outline. See the [current deep-review evidence](../docs/research/2026-10-28-microsoft-wave1-deep-review.md#ab-900) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-900-coverage-record). Microsoft's [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-900) is authoritative. Live product labs and human review remain pending; public-source review does not guarantee correctness.
+
+**Current English baseline:** Skills measured as of October 14, 2026. The former July 22 snapshot is preserved with the historical reviews.<br>
+**Blueprint status (checked October 28, 2026):** October 14 is now effective English scope. The revision changes Enterprise applications terminology without changing the three domain weights. No later revision is announced on the checked study guide; verify localized appointment scope separately.<br>
 **Official source:** [AB-900 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-900)
 
 ## How to use this guide
@@ -75,6 +76,8 @@ Trace feature access as **subscription → assigned license → enabled service 
 
 The Microsoft 365 admin center provides broad tenant and service administration. Specialized admin centers expose deeper controls for Exchange, SharePoint, Teams, Microsoft Entra, Microsoft Defender, Microsoft Purview, Power Platform, and other workloads.
 
+**VERIFY CURRENT — organization configuration:** In the [Microsoft 365 admin center](https://learn.microsoft.com/en-us/microsoft-365/admin/admin-overview/admin-center-overview), distinguish **Settings → Domains** from **Org settings/Organization profile**. Domains expose verified names and setup state; organization settings govern tenant preferences and service/release settings. [Domain verification](https://learn.microsoft.com/en-us/microsoft-365/admin/setup/add-domain/) establishes ownership, not correct mail routing. Before a hypothetical MX cutover, identify prepared users/mailboxes, DNS owner, expected mail-flow impact and rollback; inspect settings read-only during study.
+
 ### Exchange Online, SharePoint, and Teams
 
 Exchange Online manages mailboxes, mail flow, recipients, and related policies. Distribution groups distribute email; Microsoft 365 groups also underpin shared resources such as a group mailbox/calendar and can connect collaboration experiences.
@@ -84,6 +87,8 @@ SharePoint organizes content into sites, libraries, folders, files, lists, and p
 Teams organizes collaboration into teams and channels. Standard channels are broadly available to team members; private and shared channels have distinct membership and site behavior. Teams policies control capabilities such as meetings, messaging, apps, and agents under the current service model. **VERIFY CURRENT:** policy names and admin surfaces.
 
 > **Related item:** Collaboration membership and content permission are related but not always identical. Private/shared channels and linked SharePoint sites can create access boundaries that must be reviewed at the actual resource, not inferred only from the Teams UI.
+
+The [default SharePoint groups and permission levels](https://learn.microsoft.com/en-us/sharepoint/understanding-permission-levels) distinguish **Owners / Full Control**, **Members / Edit**, and **Visitors / Read**. Contribute permits item/document changes without Edit's list-management rights. Limited Access supports navigation to an individually shared item; it does not mean a person may read the whole site. Group-connected sites use the associated Microsoft 365 group's membership, and customized permissions or broken inheritance can change effective access. A reader needing one approved document does not need Owners rights; inspect that file's actual inheritance and grants.
 
 #### Follow a collaboration object
 
@@ -112,6 +117,8 @@ Use least-privileged roles and separate everyday accounts from highly privileged
 
 An access decision has several gates: authenticate the identity, evaluate Conditional Access signals and controls, authorize the workload/resource action, then record and govern continued access. SSO improves the session experience but is not another authorization grant. PIM can make a privileged role eligible and time-bound; it does not remove the need for approval context, audit, or incident response.
 
+**Authentication-method decisions:** A password supplies a knowledge factor; MFA requires additional independent evidence. One-time codes and phishing-resistant methods offer different protection. The [Entra methods overview](https://learn.microsoft.com/en-us/entra/identity/authentication/overview-authentication) and [method-management guidance](https://learn.microsoft.com/en-us/entra/identity/authentication/concept-authentication-methods-manage) distinguish allowed methods, user registration and enforcement. Passkeys/FIDO2, Windows Hello for Business and supported certificate authentication can meet phishing-resistant requirements. Registering an ordinary code-based method does not satisfy a phishing-resistant Conditional Access strength or grant workload permission. Inspect the actual sign-in requirement and registered methods rather than weakening a tenant-wide policy.
+
 ### Sign-in troubleshooting
 
 Use evidence in this order; Microsoft documents the [sign-in log details](https://learn.microsoft.com/en-us/entra/identity/monitoring-health/concept-sign-in-log-activity-details) and a [Conditional Access troubleshooting process](https://learn.microsoft.com/en-us/entra/identity/conditional-access/troubleshoot-conditional-access):
@@ -129,11 +136,23 @@ Risky users and risky sign-ins are detections, not final verdicts. Identity Secu
 
 The same symptom can have different owners. “Copilot will not open” might be an unassigned license/service plan, blocked sign-in, Conditional Access failure, disabled Copilot feature, unsupported client, or missing data permission. Start with time, user, app/resource, correlation ID, and actual error; then identify the failed gate. Do not infer a licensing problem from HTTP 403 or an MFA problem from a generic access-denied page.
 
-### Applications and consent
+#### Interpret identity posture and choose the right activity log
+
+[Identity Secure Score](https://learn.microsoft.com/en-us/entra/identity/monitoring-health/concept-identity-secure-score) measures alignment with applicable identity recommendations. A change from 60% to 70% is not a ten-point reduction in breach probability. Inspect the recommendation, affected users/settings, prerequisites, implementation guidance and evidence; prioritize relevant risk reduction and document any accepted risk or compensating control. Score movement alone does not establish compliance or absence of compromise.
+
+| Investigation question | Starting evidence | What it does not establish |
+|---|---|---|
+| Who changed a directory group, user or application? | [Entra audit logs](https://learn.microsoft.com/en-us/entra/identity/monitoring-health/concept-audit-logs) | That the same actor successfully signed in to every workload |
+| Why did authentication or Conditional Access fail? | Entra sign-in log and policy detail | The complete history of directory configuration changes |
+| Who performed a supported file/mail/admin action across Microsoft 365? | [Microsoft Purview Audit](https://learn.microsoft.com/en-us/purview/audit-search) | That every possible operation was captured or is still retained |
+
+Filter time in UTC, actor, operation, target and workload; retain result/correlation details and check ingestion and retention coverage before claiming an event did not occur. A membership change, failed sign-in and file share require different records.
+
+### App registrations, Enterprise applications and consent
 
 Enterprise applications/service principals represent applications in a tenant. Delegated permissions act on behalf of a signed-in user within both the app's grant and the user's access. Application permissions allow app-only access granted to the workload. Admin consent can approve broad access and must be governed.
 
-An app registration is the global application definition in its home tenant; an enterprise application/service principal is the local representation used for tenant assignment, consent, SSO, and Conditional Access integration. One application definition can have service principals in multiple tenants. For exam scenarios, ask whether the administrator is defining the application, configuring its tenant instance, or reviewing its granted permission.
+An [app registration](https://learn.microsoft.com/en-us/entra/identity-platform/app-objects-and-service-principals) defines the application in its home tenant; an Enterprise application/service principal is its local representation for tenant assignment, consent, SSO and access integration. A vendor application can have service principals in several customer tenants without each customer registering a new application definition. Managed-identity service principals are an exception to the one-definition mental model: they have no associated application object. For exam scenarios, ask whether the administrator is defining the application, configuring its tenant instance, or reviewing its granted permission.
 
 OAuth app consent and agent tools can create powerful routes to organizational data. Review publisher, requested scopes, credential lifecycle, owners, usage, data destination, and revocation path. Microsoft Defender capabilities can help discover and investigate risky OAuth applications.
 
@@ -187,15 +206,23 @@ Sensitivity labels classify content and can apply protection such as encryption,
 
 Start in simulation or test mode. Tune false positives, user justification, business exceptions, and response ownership. DLP is not a replacement for least-privilege access; it addresses risky data use after access exists.
 
+#### Triage a DLP alert
+
+Use the [Purview DLP alerts dashboard](https://learn.microsoft.com/en-us/purview/dlp-alerts-dashboard-get-started) to inspect the policy/rule, actor, item, location, time, sensitive-data match and actual action. Assign an owner, preserve context, validate whether the match reflects a business risk, then choose authorized remediation and track recurrence. A blocked synthetic external share and an audited but allowed share are different outcomes; the existence of an alert alone does not prove prevention, malicious intent or data loss. Content-preview rights are restricted separately. **VERIFY CURRENT:** portal navigation, alert capabilities, roles and preview agents.
+
 ### Retention, records, and investigations
 
 Retention policies and labels keep or delete content according to lifecycle rules. Records Management adds record declaration, disposition review, file-plan, and stronger controls. Audit searches supported activities. eDiscovery supports legal/investigation workflows for custodians, holds, collection, review, and export under applicable capabilities.
 
 Insider Risk Management correlates configured indicators into privacy-aware risk workflows. Communication Compliance identifies policy matches in supported communications for reviewer workflows. These systems should use role separation, privacy controls, justified policy scope, and auditable investigation.
 
+**Content search** is a named task within the current [Purview eDiscovery experience](https://learn.microsoft.com/en-us/purview/edisc-features-components), including its dedicated Content search case; do not follow retired classic standalone navigation. For an authorized investigation, define the question, permitted mail/file locations, people, dates and terms, then inspect statistics and a sample before refining the search. Query results differ from activity-audit records. Running a search does not itself put content on hold or authorize an export. **VERIFY CURRENT:** roles, case scope, licensing and current search UI.
+
+In [Compliance Manager](https://learn.microsoft.com/en-us/purview/compliance-manager), choose the relevant assessment, distinguish Microsoft-managed from customer-managed responsibilities, and assign improvement actions to owners with implementation/testing evidence and status. For a synthetic retention requirement, completion of a Microsoft-managed service action does not prove that the customer's tenant policy is configured and tested. Its completion score is a prioritization tool, separate from Identity Secure Score and any legal compliance finding.
+
 ### Data Security Posture Management for AI
 
-[Data Security Posture Management](https://learn.microsoft.com/en-us/purview/data-security-posture-management-learn-about) helps organize data-security objectives, discover AI/data activity, assess oversharing, apply protections, investigate risk, and track posture under current Microsoft Purview capabilities. The July 2026 blueprint uses the name **DSPM for AI**; Microsoft documentation now distinguishes newer DSPM experiences from [DSPM for AI (classic)](https://learn.microsoft.com/en-us/purview/dspm-for-ai). **VERIFY CURRENT:** portal naming, classic/current experience, supported AI apps, automatic assessments, policies, licensing, and data availability.
+[Data Security Posture Management](https://learn.microsoft.com/en-us/purview/data-security-posture-management-learn-about) helps organize data-security objectives, discover AI/data activity, assess oversharing, apply protections, investigate risk, and track posture under current Microsoft Purview capabilities. The October 14, 2026 blueprint uses the name **DSPM for AI**; Microsoft documentation now distinguishes newer DSPM experiences from [DSPM for AI (classic)](https://learn.microsoft.com/en-us/purview/dspm-for-ai). **VERIFY CURRENT:** portal naming, classic/current experience, supported AI apps, automatic assessments, policies, licensing, and data availability.
 
 > **Related item:** AI increases the value of good permissions hygiene because natural-language retrieval can make broadly accessible content easier to find and synthesize. The root problem is often pre-existing oversharing, not a model “breaking” permissions.
 
@@ -263,7 +290,7 @@ Use an oversharing remediation loop:
 
 > **Related item:** Restricted Content Discovery affects discovery in supported search/Copilot scenarios and is useful as temporary containment; restricted access control changes whether an out-of-group user can access the site/content. Know whether the requirement is “do not surface during review” or “deny access.”
 
-**Worked example — two gates for restricted site access:** Ana has file permission and belongs to an allowed restriction group; Ben has file permission but is outside that group; Cy belongs to the group but has no file permission. Ana passes both gates, Ben fails the restriction, and Cy still needs an ordinary permission grant. Group inclusion does not create file permission. Current guidance also requires separate restriction configuration for a team's private/shared channel sites; restricting the parent team site does not cover them automatically.
+**Worked example — two gates for restricted site access:** Ana has file permission and belongs to an allowed restriction group; Ben has file permission but is outside that group; Cy belongs to the group but has no file permission. For these internal resource-tenant users, Ana passes both gates, Ben fails the restriction, and Cy still needs an ordinary permission grant. Group inclusion does not create file permission. Configure private/shared channel sites separately; parent-team site restrictions do not propagate to them. **VERIFY CURRENT — external shared-channel exception:** the [current restriction reference](https://learn.microsoft.com/en-us/sharepoint/restricted-access-control) says external participants from another tenant are not evaluated against that resource-tenant restriction group. Their channel/site permissions still govern access. Do not use removing an external participant from the restriction group as revocation evidence; review the actual channel and source grants.
 
 ---
 
@@ -286,6 +313,10 @@ The [Copilot pay-as-you-go setup](https://learn.microsoft.com/en-us/microsoft-36
 **Worked example — alert threshold versus spending cap:** A fictional billing policy has a $100 budget and records $120 of usage. The $20 overrun is compatible with an alert-only budget; it is not evidence that a hard cap malfunctioned. Record the notification owner, response time, disabling control and actual post-change usage. These figures illustrate arithmetic, not product pricing or a promise about reporting latency.
 
 Separate four decisions: a base Microsoft 365 license supplies workload access; a Microsoft 365 Copilot user license supplies eligible per-user Copilot capabilities; pay-as-you-go enables eligible metered scenarios; an agent can also consume capacity or require its own prerequisites. Never infer data permission from any of these entitlements.
+
+#### Assign entitlement and verify the next gate
+
+Follow the [license-assignment procedure](https://learn.microsoft.com/en-us/entra/fundamentals/license-users-groups) with an appropriate administrative role: select the eligible user in **Users → Active users → Licenses and Apps**, or assign through **Billing → Licenses**. Confirm available capacity, usage location, required base entitlement and service plans; save and inspect assignment state/errors. For group assignment, verify effective user state rather than treating membership as completed processing. Test eligible Copilot access after propagation, then independently check agent and source permissions. A successful license assignment cannot repair a blocked sign-in or an inaccessible file. **VERIFY CURRENT:** role, entitlement, navigation and propagation. Tabletop this sequence without a licensed disposable tenant.
 
 ### Copilot capabilities and feature control
 
@@ -356,7 +387,7 @@ A tool description helps the model select and call a capability. It does not enf
 
 [Agent tool administration](https://learn.microsoft.com/en-us/microsoft-365/admin/manage/manage-tools-for-agent) can include registry and request/approval controls for supported tools such as MCP servers. Tool approval and agent approval answer different questions: a tool may be allowed in the tenant while a particular agent should not receive it, and an approved agent still needs narrow downstream authorization.
 
-**Current support boundary:** The BYO remote MCP flow in that guidance remains preview and lists supported client surfaces. It currently excludes Microsoft 365 declarative agents and Foundry from that specific flow. Do not infer compatibility with every agent merely from successful registry approval; check the exact client, authentication method and invocation evidence. No MCP server was registered or invoked for this review.
+**Current support boundary:** The [dedicated BYO remote MCP flow](https://learn.microsoft.com/en-us/microsoft-agent-365/admin/manage-byo-mcp-server) remains preview and lists supported client surfaces. It currently excludes Microsoft 365 declarative agents and Foundry from that specific flow. Do not infer compatibility with every agent merely from successful registry approval; check the exact client, authentication method and invocation evidence. No MCP server was registered or invoked for this review.
 
 ---
 
@@ -430,6 +461,10 @@ Complete a worksheet for the four worked examples: the restricted-site permissio
 
 Use synthetic identities and data. Without a licensed disposable tenant, mark the worksheet as tabletop only. In an authorized tenant, capture before/after permission and schedule state, lower-privileged results, audit/usage evidence and cleanup. A missing icon, accepted policy change or budget email does not alone establish the intended outcome. Do not enable paid consumption solely to demonstrate an alert.
 
+### Lab 8: Objective evidence and administration worksheet
+
+Use synthetic actors and a read-only/tabletop tenant map. Record a domain-verification versus mail-routing decision; choose Owners/Members/Visitors for three access needs; distinguish authentication-method enablement, registration and enforcement; and select the log for a group change, failed sign-in and file share. Compare Identity Secure Score with a Compliance Manager improvement action. Triage a synthetic DLP match and define a scoped mail/file Content search without assuming it creates a hold. Finally trace Copilot capacity → user assignment → service plan → sign-in → feature access → agent/file authorization. Retain the reason, expected evidence, missing roles/licenses and cleanup for each step. No DNS, license, permission, billing, hold or content-export change is required for this worksheet.
+
 ---
 
 ## 9. Knowledge checks and distinctions
@@ -462,6 +497,12 @@ Use synthetic identities and data. Without a licensed disposable tenant, mark th
 12. **Does disabling connected experiences cancel existing scheduled prompts?** No. Current guidance says existing schedules can continue; inventory and manage the actual schedule and verify runs.
 13. **Does rejecting an agent update remove the approved version?** No. Users can continue using the previous version; containment is a separate action.
 14. **Can ordinary environment DLP policy govern the scheduled-prompts Microsoft 365 environment?** No. This special environment has its own fixed policy; do not apply an ordinary maker-environment assumption.
+
+15. **Does a verified domain prove inbound mail works?** No. Verify DNS/mail-routing and prepared mailboxes separately.
+16. **Does Limited Access imply site-wide Read?** No. It can permit navigation to an individually shared item.
+17. **Does a ten-point Identity Secure Score rise prove a ten-point drop in breach probability?** No. Explain the recommendation/configuration change and assess risk independently.
+18. **Does running Content search preserve the content under a hold?** No. Search, preservation, role authorization and any export are separate decisions.
+
 
 | Contrast | Remember |
 |---|---|
@@ -515,13 +556,14 @@ This is a curated starting point, not a complete list, and it is not meant to be
 
 | Resource | Access | Estimated time | Best use and caveat |
 |---|---|---:|---|
-| [Microsoft Learn — AB-900 course](https://learn.microsoft.com/en-us/training/courses/ab-900t00) | Free self-study; instructor-led options vary | 1 day (official course) | Current objective-aligned foundation for Microsoft 365, Purview, Copilot, and agent administration |
+| [AB-900T00: Introduction to Microsoft 365 and AI administration](https://learn.microsoft.com/en-us/training/courses/ab-900t00) | Free self-study; instructor-led options vary | 1 day (official course) | Current objective-aligned foundation for Microsoft 365, Purview, Copilot, and agent administration |
 | [Microsoft — AB-900 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/copilot-and-agent-administration-fundamentals/practice/assessment?assessment-type=practice&assessmentId=428463062&practice-assessment-type=certification) | Free Microsoft account | About 1–2 hours for an attempt and review | Repeatable official readiness check with rationales and learning links; use after learning and verify fast-changing details in current Microsoft documentation |
-| [Microsoft Learn AB-900 learning material](https://learn.microsoft.com/en-us/credentials/certifications/copilot-and-agent-administration-fundamentals/) | Free | About 10–14 hours | Official scope anchor; add tenant exploration where authorized |
+| [Explore Microsoft 365 administration](https://learn.microsoft.com/en-us/training/paths/explore-microsoft-365-administration/) | Free public reading; licensed tenant needed for product practice | About 3–5 hours for three modules and control-map notes (editorial estimate) | Core service objects, security and Purview governance; current product documentation governs exact controls |
+| [Explore Microsoft 365 Copilot and agent administration](https://learn.microsoft.com/en-us/training/paths/explore-microsoft-365-copilot-agent-administration/) | Free public reading; product entitlements vary | About 3–5 hours for three modules and notes (editorial estimate) | Capabilities/licensing, Copilot administration and agent lifecycle; practice adds time |
 | [Pluralsight — AB-900 path and practice exam](https://www.pluralsight.com/paths/microsoft-365-copilot-and-agent-administration-fundamentals-ab-900) | Subscription; practice access depends on plan/library | 9 hours plus about 2–4 hours for assessment and review | Three-course path published June–July 2026 by Vlad Catrinescu; public path explicitly includes a practice exam |
-| [O'Reilly — Microsoft 365 Copilot and Agent Administration Fundamentals](https://www.oreilly.com/library/view/microsoft-365-copilot/9781807306519/) | Subscription | About 7 hours 22 minutes | Steve Miles, July 2026, 278 pages; broad book treatment aligned to the new credential |
-| [O'Reilly — AB-900 Certification Course](https://www.oreilly.com/videos/ab-900-certification/9781807788490/) | Subscription | About 4 hours | Pavel Hrabec video course; useful compact review, then practice admin decisions |
-| [Udemy — AB-900 by John Christopher](https://www.udemy.com/course/ab-900-copilot-agent-administration-fundamentals-course/) | Purchase or subscription | About 11 hours | Course shown as updated August 2026; inspect previews, hands-on tenant needs, and current objective mapping |
+| [O'Reilly — Microsoft 365 Copilot and Agent Administration Fundamentals](https://www.oreilly.com/library/view/microsoft-365-copilot/9781807306519/) | Subscription | 7 hours 22 minutes (platform reading estimate) | Steve Miles, July 2026, 278 pages; broad book treatment aligned to the new credential |
+| [O'Reilly — AB-900 Certification Course](https://www.oreilly.com/videos/ab-900-certification/9781807788490/) | Subscription | 4 hours 18 minutes | Pavel Hrabec, March 2026 video course; useful compact review, then practice admin decisions |
+| [Udemy — AB-900 by John Christopher](https://www.udemy.com/course/ab-900-copilot-agent-administration-fundamentals-course/) | Purchase or subscription | 11 hours 7 minutes | October 2026 public listing: 14 sections / 88 lectures; inspect previews, hands-on tenant needs, and current objective mapping |
 | [Microsoft Mechanics](https://www.youtube.com/@MSFTMechanics) | Free | Select 2–4 hours by gap | Official product demos for Microsoft 365 Copilot, agents, identity, and governance; not a single exam course |
 | [MeasureUp — AB-900 practice test](https://www.measureup.com/microsoft-ab-900-microsoft-365-copilot-agent-administration-fundamentals-practice-test.html) | Paid test or subscription; free demo available | About 4–8 hours for simulation and review | Tier 6 assessment with 115 questions, released April 2026; verify fast-changing Copilot administration details against current Microsoft Learn |
 | [Whizlabs — AB-900 course and practice tests](https://www.whizlabs.com/ab-900-microsoft-365-copilot-and-agent-administration/) | Paid course or subscription | About 3–6 hours for assessment and review; instructional time not published | Whizlabs identifies a mixed course/practice offering, but its public product page does not expose a reliable item count or total runtime; pair it with explanatory official learning |
@@ -532,4 +574,4 @@ Whizlabs identifies its AB-900 listing as a course and practice-test offering, b
 
 [Agent management updates in the Copilot Control System](https://techcommunity.microsoft.com/blog/microsoftmechanicsblog/agent-management-updates-in-the-copilot-control-system/4414790), **Microsoft Mechanics, posted by Zachary-Cavanell, May 19, 2025; presented by Jeremy Chapman**. Estimate 15–25 minutes for the public article/transcript and a control map. It connects discovery, usage, deployment, billing and investigation. Its older navigation and message-based billing terminology must be reconciled with current Agent 365 and Copilot Credits documentation. Exercise: identify the separate evidence needed to approve an agent, authorize a tool and stop metered use. The article and transcript were read; the video was not played and tenant steps were not executed.
 
-The three O'Reilly/Udemy pages were access-blocked on September 27; retained durations are historical catalog observations. Public practice-assessment navigation was reachable, but no signed-in assessment session was completed. Recheck October wording and current feature support when selecting resources.
+The three O'Reilly/Udemy pages were automation-blocked on September 27. Their selected public listing bodies were readable in the October 28 browser review, supporting the updated metadata above; this does not erase blocked automated observations or establish access to lessons. Public practice-assessment navigation was reachable, but no signed-in assessment session was completed. Use the current October 14 objective wording and verify feature support when selecting resources.

@@ -5,7 +5,7 @@ official_blueprint: https://learn.microsoft.com/en-us/credentials/certifications
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: source-validated
+review_status: review-required
 last_verified: 2026-09-27
 upcoming_change_status: scheduled
 upcoming_change_checked: 2026-09-27
@@ -13,10 +13,12 @@ upcoming_change_checked: 2026-09-27
 
 # DP-800 Developing AI-Enabled Database Solutions Study Guide
 
+> **REFRESH IN PROGRESS — REVIEW REQUIRED (October 28, 2026).** The official objective page differs from the accepted teaching baseline. Detailed coverage reconciliation is pending; use the linked official blueprint for current scope. Saved objective snapshots and historical full-review dates remain unchanged.
+
 > **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 27, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-800-coverage-record). The [official DP-800 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-800) is authoritative.
 
-**Current baseline:** Skills measured as of March 12, 2026; the accepted snapshot records the March 11 page update. The newly fetched October version remains separate preparation until its effective date.<br>
-**Upcoming blueprint change (checked September 27, 2026):** The English blueprint changes October 19, 2026. The fetched revision uses ANN versus KNN and updates columnstore/Copilot wording. **CES remains explicitly listed** in the data-change objective on the September 18 version of the page; this corrects the earlier removal note. Domain weights are unchanged. Distinguish revised search terminology from the earlier ENN wording. The current baseline below remains dated separately. See the [official revision](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-800).<br>
+**Accepted teaching baseline:** Skills measured as of March 12, 2026; the accepted snapshot records the March 11 page update. Reconciliation with the October objectives is pending.<br>
+**Blueprint transition (checked October 28, 2026):** The October 19 English blueprint effective date has passed. The fetched revision uses ANN versus KNN and updates columnstore/Copilot wording. **CES remains explicitly listed** in the data-change objective on the September 18 version of the page; this corrects the earlier removal note. Domain weights are unchanged. Distinguish revised search terminology from the earlier ENN wording. The older teaching baseline below remains dated separately. See the [official revision](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-800).<br>
 **Lifecycle status:** Active; no retirement or replacement was announced on the official pages checked.<br>
 **Exam page:** [Microsoft Certified: SQL AI Developer Associate](https://learn.microsoft.com/en-us/credentials/certifications/developing-ai-enabled-database-solutions/) · 120-minute assessment · ten listed languages: English, Japanese, Simplified and Traditional Chinese, Korean, German, French, Italian, Brazilian Portuguese and Spanish. Check language-specific revision timing when booking.<br>
 **Official course:** [DP-800T00 Develop AI-enabled database solutions](https://learn.microsoft.com/en-us/training/courses/dp-800t00) · three instructor-led days.<br>
