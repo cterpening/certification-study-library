@@ -5,21 +5,19 @@ official_blueprint: https://learn.microsoft.com/en-us/credentials/certifications
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: review-required
-last_verified: 2026-09-27
-upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-27
+review_status: source-validated
+last_verified: 2026-10-28
+upcoming_change_status: none-announced
+upcoming_change_checked: 2026-10-28
 ---
 
 # SC-401 Administering Information Security in Microsoft 365 Study Guide
 
-> **REFRESH IN PROGRESS — REVIEW REQUIRED (October 28, 2026).** The official objective page differs from the accepted teaching baseline. Detailed coverage reconciliation is pending; use the linked official blueprint for current scope. Saved objective snapshots and historical full-review dates remain unchanged.
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-02.md#sc-401) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sc-401-coverage-record). Source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-401) is authoritative.
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The complete guide and all 65 published October objectives were reviewed on September 27, 2026; the conflicting official revision dates remain unresolved. See the [deep-review report](../docs/research/2026-09-27-sc-401-deep-review.md). Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sc-401-coverage-record). The [official SC-401 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-401) is authoritative.
-
-**Current baseline:** Skills measured as of July 28, 2026.<br>
+**Current baseline:** Skills measured as of October 28, 2026.<br>
 **Exam state:** Active; the credential page lists no retirement date.<br>
-**Upcoming blueprint change:** A revision is announced, but Microsoft currently gives conflicting dates: the study guide and change log say October 28, 2026, while the certification overview says October 14. The change concerns sensitivity labels for containers and Power BI items; domain weights remain unchanged. Rechecked September 27, 2026. Confirm the applicable date with Microsoft before an October appointment; this guide still uses the July baseline.<br>
+**Blueprint reconciliation (October 28, 2026):** The October 28, 2026 English outline is the accepted current scope. The revision distinguishes labels for Teams/Groups/SharePoint containers from labels for Power BI items. An earlier review treated the credential page’s October 14 metadata update as a conflicting scope date. The current credential page does not make a separate October 14 effective-scope announcement; the study-guide heading states October 28. Keep page-update metadata and objective-effective dates distinct. No new weighting is inferred. Historical objective bytes and dated reviews are preserved. Recheck localized appointment timing separately.<br>
 **Practice Assessment:** [Free official assessment](https://learn.microsoft.com/en-us/credentials/certifications/information-security-administrator/practice/assessment?assessment-type=practice&assessmentId=1801497482&practice-assessment-type=certification).<br>
 **Official source:** [SC-401 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-401)
 
@@ -110,6 +108,20 @@ Microsoft Defender for Cloud Apps can inspect supported cloud-app files and appl
 
 > **Related item:** Labels and DLP answer different questions. A label describes and may protect an item; DLP evaluates content, context, location, identity, device, and attempted action. Use both when classification must travel with data and risky movement must be controlled.
 
+#### Worked delegation — author, read and apply
+
+**Original example — proposed; service/tenant execution not performed.**
+
+For a pilot, create a Purview role group containing Sensitivity Label Administrator for the policy author and another containing Sensitivity Label Reader for a read-only reviewer. Test authoring and denied modification in separate sessions. These administrative permissions configure labels and publishing policies; they are not prerequisites for ordinary users to apply labels made available in their supported apps. A reviewer who reads label definitions does not thereby gain permission to view every labeled file.
+
+Where administrative units are used, confirm the administrator's permitted units and the publishing-policy scope separately. Publishing an engineer label to one unit should not silently become a tenant-wide rollout. **VERIFY CURRENT:** supported role groups, administrative-unit behavior and tenant label scheme.
+
+**Question:** Must every employee applying a sensitivity label receive Sensitivity Label Administrator?
+
+**Answer:** No. Administrative authoring permission and end-user label availability/application are different boundaries.
+
+[Get started with sensitivity labels](https://learn.microsoft.com/en-us/purview/get-started-with-sensitivity-labels)
+
 ### Worked example — A Power BI label is not an access-removal operation
 
 A report receives a Confidential label. An existing workspace viewer can still open it: assigning the label alone did not remove that viewer. In the service, protected labels can restrict changing or removing the label; content access requires examining item/workspace permissions and any separately configured protection policies. In Power BI Desktop, a protected PBIX file has a different encryption and usage-rights boundary.
@@ -125,6 +137,20 @@ The Information Protection scanner extends discovery, classification, labeling, 
 Message Encryption protects supported mail using rights-management and transport/policy integration. Design who can decrypt, whether forwarding/printing/copying is allowed, external-recipient authentication, branding, transport rules, label integration, revocation, expiry, and journaling/eDiscovery needs. Advanced Message Encryption adds supported expiry/revocation and branding capabilities under qualifying licensing; verify which messages and recipient experiences support each action. Encryption controls use after delivery but does not correct a message sent to the wrong authorized recipient.
 
 > **Related item:** Encryption, DLP, retention, and eDiscovery can all apply to one message. Test the full lifecycle—send, external access, forward attempt, audit, search, hold/retention, revoke, expire, and recover—instead of validating each feature alone.
+
+#### Worked file operation — label and verify an allowed recipient
+
+**Original example — proposed; service/tenant execution not performed.**
+
+On a supported disposable Windows client with the current Information Protection client, publish a synthetic label to the test user and select a harmless file in File Explorer. Use the Information Protection file labeler to apply that label and its configured protection. Reinspect the label, open the file using an explicitly permitted identity, and test a different identity with no grant. Record file type, label, protection and recipient outcome separately; a visible label name alone does not establish encryption.
+
+Use the viewer for supported protected-file viewing and the PowerShell module for approved bulk operations. The scanner is a repository workflow. These components have different purposes, and the client is not an Office add-in. **VERIFY CURRENT:** architecture support and file-type behavior; ARM64 supports viewer/file labeler but not scanner/PowerShell in current guidance. Remove disposable protected files and test grants after the exercise.
+
+**Question:** Does successful File Explorer labeling prove every recipient can open the file?
+
+**Answer:** No. Check the applied protection and recipient identity, rights, client/file support and actual allowed/denied result.
+
+[Extend sensitivity labeling on Windows](https://learn.microsoft.com/en-us/purview/information-protection-client)
 
 ## 2. Implement data loss prevention and retention
 
@@ -149,6 +175,12 @@ Endpoint DLP requires eligible licensing, supported operating systems, device on
 Advanced endpoint rules can evaluate activities such as copy to removable media or network share, print, clipboard, RDP, Bluetooth, and upload to restricted cloud/service domains, subject to platform support. Configure audit, warn, block with override, or block according to risk. Include file path, application, browser, domain, device/user group, classifier/label, and exclusion logic. Test supported and unsupported clients: a browser extension or onboarded-device dependency can create a blind spot that a portal policy alone does not reveal.
 
 Just-in-time (JIT) protection handles supported egress while classification completes. JIT scope determines the initial block/audit behavior. The **fallback action** instead determines what happens if classification fails. An Allow fallback does not disable initial JIT blocking. Allow at least an hour for JIT settings, including disablement, to reach clients. Check current platform/client prerequisites in the [JIT deployment guide](https://learn.microsoft.com/en-us/purview/endpoint-dlp-get-started-jit).
+
+**Confirmed — VERIFY CURRENT (October 28, 2026):** [FTP/SFTP transfer protection](https://learn.microsoft.com/en-us/purview/endpoint-dlp-ftp-sftp-short) is now available for onboarded, managed Windows devices. Scope the DLP policy to Devices, select the FTP/SFTP activity and pilot Audit only before enforcement. Block, Block with override and Allow are documented actions. Inspect Activity Explorer’s transfer event with user, device, file, policy and outcome; do not infer macOS or unmanaged-device coverage. Optional full-file evidence saves a content copy and needs a separate access/retention decision.
+
+**Proposed practice extension — not executed:** Lab 6: add a benign synthetic file transfer to an authorized test FTP/SFTP destination on a disposable managed Windows device, first audit then approved block/override; otherwise tabletop expected event. Record unsupported clients and do not enable full-file collection merely for the exercise.
+
+**Answer checkpoint:** Does selecting Devices prove all FTP/SFTP transfers from any platform are covered? No; verify managed Windows onboarding, scope, rule and actual Activity Explorer outcome.
 
 ### Worked example — Initial protection and failure fallback
 
@@ -216,7 +248,7 @@ Microsoft 365 Copilot user-grounded retrieval can surface content the user can a
 
 Purview controls can classify and label files/emails, apply DLP to supported Microsoft 365 and endpoint interactions, detect risky AI-site use, preserve/search AI activity, and provide investigation signals. Workload controls in SharePoint, Teams, Exchange, OneDrive, Power Platform, Copilot Studio, and agent administration govern what can be reached or shared. Confirm the exact workload and license: “protected by Purview” is not a universal statement across every model, prompt, agent, connector, browser, or third-party AI service.
 
-Microsoft's current documentation distinguishes the newer [Data Security Posture Management](https://learn.microsoft.com/en-us/purview/data-security-posture-management-learn-about) experience from DSPM and DSPM for AI **classic**. The July 2026 objective still says “DSPM for AI.” **VERIFY CURRENT** portal names, roles, prerequisites, default policies, supported AI applications/agents, assessments, and reports before practicing.
+Microsoft's current documentation distinguishes the newer [Data Security Posture Management](https://learn.microsoft.com/en-us/purview/data-security-posture-management-learn-about) experience from DSPM and DSPM for AI **classic**. The current October 2026 objective still says “DSPM for AI.” **VERIFY CURRENT** portal names, roles, prerequisites, default policies, supported AI applications/agents, assessments, and reports before practicing.
 
 For DSPM, establish Purview permissions, classification/labels, audit/activity collection, relevant DLP and insider-risk foundations, supported workload onboarding, and optional Security Copilot prerequisites. Separate Data Security Viewer and administrative duties where supported. Review discovered sensitive data, oversharing, risky AI interaction, policy coverage, recommendations, assessments, alerts, and remediation; validate a recommendation before automating it.
 
@@ -324,34 +356,9 @@ Use synthetic records to reproduce the classification arithmetic, label a test P
 41. **Does today’s longer audit-retention policy extend yesterday’s ingested record?** No; the existing record retains the lifetime assigned at ingestion.
 42. **Does the new network integration protect every user and upload?** No; check identity, supported provider/activity/protocol, content-size limits and app coverage; B2B guests are excluded.
 
-## Places to learn
-
-This is a curated starting set, **not a complete list** and not a recommendation to consume everything. Pick the formats that work for you, map them to the July 28, 2026 blueprint, and spend substantial time in a safe tenant. Durations are provider-listed runtimes where public; lab and reading times are planning estimates and access can change.
-
-| Resource | Access | Estimated time | Best use / freshness note |
-|---|---|---:|---|
-| [Official SC-401 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-401) | Free | 30–45 min | Authoritative objective and change-log checklist; July 28, 2026 baseline. |
-| Six official SC-401 Learn paths: [Information Protection](https://learn.microsoft.com/en-us/training/paths/purview-implement-information-protection/), [DLP](https://learn.microsoft.com/en-us/training/paths/purview-implement-manage-dlp/), [retention](https://learn.microsoft.com/en-us/training/paths/purview-implement-retention/), [Insider Risk](https://learn.microsoft.com/en-us/training/paths/purview-implement-insider-risk-management/), [Audit/search](https://learn.microsoft.com/en-us/training/paths/purview-audit-search/), and [AI](https://learn.microsoft.com/en-us/training/paths/purview-protect-ai/) | Free | 20h45 listed; allow 28–40h with exercises | Best current first-party sequence; repeat weak modules rather than racing the XP total. |
-| [SC-401T00-A official course](https://learn.microsoft.com/en-us/training/courses/sc-401t00) | Paid instructor-led / free self-study links | 4 days | Structured current course and lab discussion; delivery varies by training partner. |
-| [Official Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/information-security-administrator/practice/assessment?assessment-type=practice&assessmentId=1801497482&practice-assessment-type=certification) and exam sandbox | Free | 45–75 min per attempt plus review | Use diagnostically; research every weak answer in current documentation. |
-| Official [Exam Readiness Zone videos](https://learn.microsoft.com/en-us/shows/exam-readiness-zone/?terms=SC-401) | Free | About 1–2h; verify playlist | Orientation and blueprint review; confirm that each video reflects July 2026. |
-| [John Christopher SC-401 course](https://www.udemy.com/course/sc-400-course-microsoft-information-protection-administrator/) | Paid | 8h26 video; allow 14–20h with simulations | Hands-on demonstrations and browser simulations; updated February 2026, so reconcile the July AI/audit changes. |
-| [John Christopher SC-401 overview on YouTube](https://www.youtube.com/watch?v=CqYs-KtJoeQ) | Free | About 20 min; verify current runtime | Course orientation/sample teaching, not a complete July 2026 study path. This is not John Savill; no current Savill SC-401 end-to-end course was independently verified. |
-| [MeasureUp SC-401 practice test](https://www.measureup.com/microsoft-sc-401-practice-test.html) | Paid; demo available | 146 questions; allow 6–10h across attempts/review | Independent assessment released September 2025; its listed objectives mostly match, but reconcile July 2026 changes and verify explanations. |
-| [Microsoft Partner Skilling Hub](https://www.skilling-hub.com/en-US) | Microsoft partner login required | Schedule-dependent; allow the listed start/end time plus labs | Search SC-401, Purview, information security, and security workshops after sign-in; public pages did not expose a stable SC-401 listing or duration. |
-| Microsoft Purview [documentation hub](https://learn.microsoft.com/en-us/purview/) | Free | Ongoing reference; 8–15h focused reading | Use for current prerequisites, supported locations, roles, licensing, limits, and portal changes. |
-
-No current exam-specific Pluralsight, O'Reilly, or Whizlabs learning page with sufficiently stable public metadata was independently verified on September 1, 2026. That is a discovery gap, not a claim that those libraries contain no relevant Purview content. Search them by the exact exam code and compare the publication/update date and syllabus against all three current domains before purchasing.
-
-### Qualified blog reading — Turn an oversharing finding into evidence
-
-[From Oversharing to Enforcement](https://techcommunity.microsoft.com/blog/microsoft-purview-blog/from-oversharing-to-enforcement-a-practical-guide-to-ai-data-security-with-micro/4513727), **George Smyrlis, Microsoft Purview Blog, April 23, 2026**. Allow 20–30 minutes for the article and an original exercise: select one synthetic overshared site, assign a data owner, propose one permission correction and one supported DLP control, then specify positive and negative verification cases and audit evidence.
-
-The discover, remediate, prevent and monitor sequence is useful for Scenario 3. Recheck preview, tenant, role and workload support in current DSPM/network documentation. Broad article claims about automated remediation or complete auditing do not prove that every agent, third-party app or route is covered. The public article was reviewed; its tenant workflow was not executed.
-
 ## Final readiness checklist
 
-- [ ] I can map every July 28, 2026 subobjective to a section, lab, and current first-party source.
+- [ ] I can map every October 28, 2026 subobjective to a section, lab, and current first-party source.
 - [ ] I can select and test built-in/custom SIT, fingerprint, EDM, trainable classifier, and OCR without conflating them.
 - [ ] I can distinguish item/container labels, protection, publishing, auto-labeling, and Cloud Apps application.
 - [ ] I can design scanner and encrypted-mail workflows with licensing, identity, evidence, failure, and recovery.
@@ -362,8 +369,41 @@ The discover, remediate, prevent and monitor sequence is useful for Scenario 3. 
 - [ ] I can secure Microsoft and third-party AI use and distinguish current DSPM from classic experiences.
 - [ ] I have completed the official assessment and independently researched every uncertain answer.
 - [ ] I can distinguish JIT scope from failure fallback, compute retention end dates, and verify Power BI and network enforcement boundaries.
-- [ ] I rechecked Microsoft’s conflicting October revision dates, licenses, portals, and **VERIFY CURRENT** items shortly before the exam.
+- [ ] I distinguished credential-page update metadata from the current October 28 objective-effective date, and rechecked licenses, portals and **VERIFY CURRENT** items before the exam.
 
 ---
 
 All knowledge checks and scenarios above are original study material, not recalled exam content. Product and exam names belong to their respective owners.
+
+## Places to learn
+
+This is a curated starting set, **not a complete list** and not a recommendation to consume everything. Pick the formats that work for you, map them to the October 28, 2026 blueprint, and spend substantial time in a safe tenant. Durations are provider-listed runtimes where public; lab and reading times are planning estimates and access can change.
+
+### October 28 learning route and evidence task
+
+Use the [current four-day Microsoft course, Protect sensitive information with Microsoft Purview in the AI era](https://learn.microsoft.com/en-us/training/courses/sc-401t00), as the primary route. Its six selected path outlines now list **27 modules (9/5/2/5/2/4)**; fresh runtimes were not exposed, so the earlier 20h45 is historical metadata. Complete classification, protection, DLP and retention before the [four-module AI path](https://learn.microsoft.com/en-us/training/paths/purview-protect-ai/), whose prerequisites expect that foundation. John Christopher’s [optional SC-401 course](https://www.udemy.com/course/sc-400-course-microsoft-information-protection-administrator/) now lists **8h27, 91 lectures, 12 sections and an October 2026 update**; that supersedes its earlier February/8h26 listing, without verifying paid lessons or simulations.
+
+**Original worksheet (about 35–50 minutes, editorial estimate):** For a synthetic document used by an employee, external collaborator and AI workflow, create separate rows for classification, resource permission, protected action, retention and investigation. Record the attempted operation, expected allow/deny/preserve result, role, policy version, evidence source and unavailable capability.
+
+**Answer checkpoint:** A label, a blocked action, retained content and an audit event answer different questions. Missing evidence must stay a gap; completing a course or browser simulation does not establish that all workload routes were tested.
+
+| Resource | Access | Estimated time | Best use / freshness note |
+|---|---|---:|---|
+| [Official SC-401 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-401) | Free | 30–45 min | Authoritative objective and change-log checklist; current October 28, 2026 outline. |
+| Six official SC-401 Learn paths: [Information Protection](https://learn.microsoft.com/en-us/training/paths/purview-implement-information-protection/), [DLP](https://learn.microsoft.com/en-us/training/paths/purview-implement-manage-dlp/), [retention](https://learn.microsoft.com/en-us/training/paths/purview-implement-retention/), [Insider Risk](https://learn.microsoft.com/en-us/training/paths/purview-implement-insider-risk-management/), [Audit/search](https://learn.microsoft.com/en-us/training/paths/purview-audit-search/), and [AI](https://learn.microsoft.com/en-us/training/paths/purview-protect-ai/) | Free | Historical 20h45; current 27 modules without exposed runtime; allow an estimated 28–40h with exercises | Best current first-party sequence; repeat weak modules rather than racing the XP total. |
+| [SC-401T00-A official course](https://learn.microsoft.com/en-us/training/courses/sc-401t00) | Paid instructor-led / free self-study links | 4 days | Structured current course and lab discussion; delivery varies by training partner. |
+| [Official Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/information-security-administrator/practice/assessment?assessment-type=practice&assessmentId=1801497482&practice-assessment-type=certification) and exam sandbox | Free | 45–75 min per attempt plus review | Use diagnostically; research every weak answer in current documentation. |
+| Official [Exam Readiness Zone videos](https://learn.microsoft.com/en-us/shows/exam-readiness-zone/?terms=SC-401) | Free | About 1–2h; verify playlist | Orientation and blueprint review; confirm that each video reflects the current October 2026 outline. |
+| [John Christopher SC-401 course](https://www.udemy.com/course/sc-400-course-microsoft-information-protection-administrator/) | Paid | 8h27 listed video; allow an estimated 14–20h with exercises | Public listing now updated October 2026, 91 lectures/12 sections; paid lessons/simulations and current-objective completeness unverified. |
+| [John Christopher SC-401 overview on YouTube](https://www.youtube.com/watch?v=CqYs-KtJoeQ) | Free | About 20 min; verify current runtime | Course orientation/sample teaching, not a complete July 2026 study path. This is not John Savill; no current Savill SC-401 end-to-end course was independently verified. |
+| [MeasureUp SC-401 practice test](https://www.measureup.com/microsoft-sc-401-practice-test.html) | Paid; demo available | 146 questions; allow 6–10h across attempts/review | Independent assessment released September 2025; its listed objectives mostly match, but reconcile current October 2026 changes and verify explanations. |
+| [Microsoft Partner Skilling Hub](https://www.skilling-hub.com/en-US) | Microsoft partner login required | Schedule-dependent; allow the listed start/end time plus labs | Search SC-401, Purview, information security, and security workshops after sign-in; public pages did not expose a stable SC-401 listing or duration. |
+| Microsoft Purview [documentation hub](https://learn.microsoft.com/en-us/purview/) | Free | Ongoing reference; 8–15h focused reading | Use for current prerequisites, supported locations, roles, licensing, limits, and portal changes. |
+
+No current exam-specific Pluralsight, O'Reilly, or Whizlabs learning page with sufficiently stable public metadata was independently verified on September 1, 2026. That is a discovery gap, not a claim that those libraries contain no relevant Purview content. Search them by the exact exam code and compare the publication/update date and syllabus against all three current domains before purchasing.
+
+### Qualified blog reading — Turn an oversharing finding into evidence
+
+[From Oversharing to Enforcement](https://techcommunity.microsoft.com/blog/microsoft-purview-blog/from-oversharing-to-enforcement-a-practical-guide-to-ai-data-security-with-micro/4513727), **George Smyrlis, Microsoft Purview Blog, April 23, 2026**. Allow 20–30 minutes for the article and an original exercise: select one synthetic overshared site, assign a data owner, propose one permission correction and one supported DLP control, then specify positive and negative verification cases and audit evidence.
+
+The discover, remediate, prevent and monitor sequence is useful for Scenario 3. Recheck preview, tenant, role and workload support in current DSPM/network documentation. Broad article claims about automated remediation or complete auditing do not prove that every agent, third-party app or route is covered. The public article was reviewed; its tenant workflow was not executed.

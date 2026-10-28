@@ -23,6 +23,13 @@ Passing this workflow changes the public label to **Sources + objectives checked
 
 | Exam | Reviewed | Blueprint snapshot | External-link evidence | Result |
 |---|---|---|---|---|
+| MB-330 | October 28, 2026 | Current detailed outline reconciled; see group-02 report | 51 registered links: 50 reachable, 1 access-blocked, 0 missing/error | Passed; human/product review pending |
+| MS-721 | October 28, 2026 | Current detailed outline reconciled; see group-02 report | 84 registered links: 83 reachable, 1 access-blocked, 0 missing/error | Passed; human/product review pending |
+| MS-700 | October 28, 2026 | Current detailed outline reconciled; see group-02 report | 48 registered links: 44 reachable, 4 access-blocked, 0 missing/error | Blocked: current source gap retained |
+| SC-401 | October 28, 2026 | Current detailed outline reconciled; see group-02 report | 38 registered links: 37 reachable, 1 access-blocked, 0 missing/error | Passed; human/product review pending |
+| SC-300 | October 28, 2026 | Current detailed outline reconciled; see group-02 report | 72 registered links: 69 reachable, 3 access-blocked, 0 missing/error | Blocked: current source gap retained |
+| SC-100 | October 28, 2026 | Current detailed outline reconciled; see group-02 report | 57 registered links: 54 reachable, 3 access-blocked, 0 missing/error | Blocked: current source gap retained |
+| DP-800 | October 28, 2026 | Current detailed outline reconciled; see group-02 report | 97 registered links: 95 reachable, 2 access-blocked, 0 missing/error | Blocked: current source gap retained |
 | DP-700 | October 28, 2026 | Current detailed outline reconciled; see group-01 report | 53 registered links: 50 reachable, 3 access-blocked, 0 missing/error | Passed; human/product review pending |
 | MS-102 | October 28, 2026 | Current detailed outline reconciled; see group-01 report | 82 registered links: 79 reachable, 3 access-blocked, 0 missing/error | Blocked: current source gap retained |
 | AI-500 | October 28, 2026 | Current detailed outline reconciled; see group-01 report | 42 registered links: 40 reachable, 2 access-blocked, 0 missing/error | Passed; human/product review pending |
@@ -40,10 +47,10 @@ Passing this workflow changes the public label to **Sources + objectives checked
 | AZ-900 | August 31, 2026 | July 20, 2026 objectives; unchanged during review | 49 registered links: 48 reachable, 1 access-blocked, 0 missing/error | Passed |
 | DP-900 | August 31, 2026 | July 21, 2026 objectives; unchanged during review | 39 registered links: 38 reachable, 1 access-blocked, 0 missing/error | Passed |
 | PL-900 | August 31, 2026 | July 24, 2026 objectives; unchanged during review | 41 registered links: 39 reachable, 2 access-blocked, 0 missing/error | Passed |
-| SC-900 | August 31, 2026 | July 28, 2026 objectives; unchanged during review | 49 registered links: 47 reachable, 2 access-blocked, 0 missing/error | Passed |
+| SC-900 | October 28, 2026 | Current detailed outline reconciled; see group-02 report | 67 registered links: 65 reachable, 2 access-blocked, 0 missing/error | Blocked: current source gap retained |
 | AB-900 | October 28, 2026 | October 14 current English outline; July bytes archived | 57 registered links: 54 reachable, 3 access-blocked, 0 missing/error | Passed; human/product execution pending |
 | AB-650 | October 28, 2026 | Current detailed outline reconciled; see group-01 report | 56 registered links: 54 reachable, 2 access-blocked, 0 missing/error | Blocked: current source gap retained |
-| MD-102 | September 5, 2026 | July 24, 2026 objectives; unchanged during repair revalidation | 40 registered links: 37 reachable, 3 access-blocked, 0 missing/error | Passed |
+| MD-102 | October 28, 2026 | Current detailed outline reconciled; see group-02 report | 68 registered links: 65 reachable, 3 access-blocked, 0 missing/error | Blocked: current source gap retained |
 | AI-901 | August 31, 2026 | April 15, 2026 objectives; unchanged during review | 26 registered links: 23 reachable, 3 access-blocked, 0 missing/error | Passed |
 | Terraform Associate (004) | August 31, 2026 | Terraform 1.12 objectives; unchanged during review | 33 registered links: 31 reachable, 2 access-blocked, 0 missing/error | Passed |
 | Terraform Authoring and Operations Advanced | September 6, 2026 | Six-domain AWS-provider objective map; Professional-to-Advanced rename applied; Azure-provider version announced for late 2026 | 21 registered links: 21 reachable, 0 access-blocked, 0 missing/error | Passed |
@@ -54,7 +61,7 @@ Passing this workflow changes the public label to **Sources + objectives checked
 | AZ-700 | September 5, 2026 | July 27, 2026 objectives; unchanged during repair revalidation | 28 registered links: 25 reachable, 3 access-blocked, 0 missing/error | Passed |
 | AZ-120 | August 31, 2026 | April 17, 2026 objectives; unchanged during review | 27 registered links: 25 reachable, 2 access-blocked, 0 missing/error | Passed |
 | AZ-140 | August 31, 2026 | July 20, 2026 objectives; unchanged during review | 27 registered links: 24 reachable, 3 access-blocked, 0 missing/error | Passed |
-| SC-200 | September 1, 2026 | July 28, 2026 objectives; unchanged during review | 48 registered links: 46 reachable, 2 access-blocked, 0 missing/error | Passed |
+| SC-200 | October 28, 2026 | Current detailed outline reconciled; see group-02 report | 61 registered links: 59 reachable, 2 access-blocked, 0 missing/error | Blocked: current source gap retained |
 | PL-300 | September 1, 2026 | April 20, 2026 objectives; unchanged during review | 25 registered links: 22 reachable, 3 access-blocked, 0 missing/error | Passed |
 | PL-400 | October 28, 2026 | Current detailed outline reconciled; see group-01 report | 57 registered links: 56 reachable, 1 access-blocked, 0 missing/error | Passed; human/product review pending |
 | AB-410 | September 1, 2026 | Official guide last updated May 15, 2026; no separate effective date; unchanged during review | 18 registered links: 17 reachable, 1 access-blocked, 0 missing/error | Passed |
@@ -401,6 +408,8 @@ The review expanded the guide into a requirement-to-solution method covering out
 
 ## SC-900 coverage record
 
+The October 28 [group-02 refresh](research/2026-10-28-microsoft-refresh-group-02.md#sc-900) maps 58 current detailed objectives. Current link evidence is 67 registered, 65 reachable, 2 automation-blocked and 0 missing/error. The current source gate remains blocked by the documented source conflicts. Earlier dates, counts and accepted scope below describe historical reviews.
+
 The September 27 [deep review](research/2026-09-27-sc-900-deep-review.md) maps 58 detailed objectives. Whole guide read; 58 October objectives in 14 groups individually mapped while retaining July 28 baseline. Add four worked examples, two labs, and answers for all six old plus twelve new checks (18 total). Clarify workload identities, human/software policy, access-review application, segmentation/NSG flows, label publication, retention and threat-intelligence evidence. Add two qualified passkey blog exercises, current product/lifecycle notes and five checkpoints. Eight offline checks passed; no tenant execution; human review pending. Current guide citations: 66 registered, 64 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
 
 | Published objective group | Guide coverage |
@@ -613,6 +622,8 @@ The review maps every March 11, 2026 subobjective to an environment, governance,
 
 ## DP-800 coverage record
 
+The October 28 [group-02 refresh](research/2026-10-28-microsoft-refresh-group-02.md#dp-800) maps 73 current detailed objectives. Current link evidence is 97 registered, 95 reachable, 2 automation-blocked and 0 missing/error. The current source gate remains blocked by the documented source conflicts. Earlier dates, counts and accepted scope below describe historical reviews.
+
 The September 27 [deep review](research/2026-09-27-dp-800-deep-review.md) maps 73 detailed objectives. Whole guide read and all 73 October objectives in eleven groups mapped; March 12 baseline retained. Correct stale CES-removal and English-only statements, RLS update protection, embedding-model scope and DAB 2.0 identity defaults. Add five worked examples, two labs, 44 answers and two qualified Microsoft blog exercises. Clarify change retention/retries, embedding version guards, vector retrieval/evaluation and Fabric mirroring boundaries. Ten synthetic assertions and one JSON parse passed; no SQL, DAB or Azure execution. Three research checkpoints added; human review pending. Current guide citations: 94 registered, 92 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
 
 | Official objective group | Guide coverage |
@@ -683,6 +694,8 @@ The review maps every subobjective on the official page last updated April 21, 2
 
 ## SC-100 coverage record
 
+The October 28 [group-02 refresh](research/2026-10-28-microsoft-refresh-group-02.md#sc-100) maps 81 current detailed objectives. Current link evidence is 57 registered, 54 reachable, 3 automation-blocked and 0 missing/error. The current source gate remains blocked by the documented source conflicts. Earlier dates, counts and accepted scope below describe historical reviews.
+
 The September 27 [deep review](research/2026-09-27-sc-100-deep-review.md) maps 81 detailed objectives. Whole guide read and 81 October objectives in 14 groups individually mapped; July 28 baseline retained. Correct current prerequisite and agent-policy targets; add five worked examples, two labs, eight new answers (44 total) and two qualified Microsoft blog exercises. Clarify recovery, Sentinel, Key Vault, CSPM/CIEM, policy, network, Copilot and storage boundaries. Thirteen offline arithmetic/set checks passed; no tenant or infrastructure lab execution. Five lifecycle checkpoints added; human review pending. Current guide citations: 56 registered, 53 reachable, 3 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
 
 | Official objective group | Guide coverage |
@@ -696,6 +709,8 @@ The review maps every July 28, 2026 subobjective to a strategy, control boundary
 
 ## SC-200 coverage record
 
+The October 28 [group-02 refresh](research/2026-10-28-microsoft-refresh-group-02.md#sc-200) maps 54 current detailed objectives. Current link evidence is 61 registered, 59 reachable, 2 automation-blocked and 0 missing/error. The current source gate remains blocked by the documented source conflicts. Earlier dates, counts and accepted scope below describe historical reviews.
+
 The September 27 [deep review](research/2026-09-27-sc-200-deep-review.md) maps 54 detailed objectives. Whole guide read; 54 October objectives in nine groups individually mapped while retaining July 28 baseline. Add five worked examples, two labs, eight answers (44 total) and two qualified Microsoft blog exercises. Update September Sentinel onboarding/history/Fabric limits, collection budgets, event identity, automation mapping, ingestion latency, TI versions, Graph/MCP/live-response boundaries and resource metadata. Twelve offline checks passed; no tenant or KQL execution. Two Microsoft documentation conflicts remain open; three follow-up checkpoints added; human review pending. Current guide citations: 60 registered, 58 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
 
 | Official objective group | Guide coverage |
@@ -707,6 +722,8 @@ The September 27 [deep review](research/2026-09-27-sc-200-deep-review.md) maps 5
 The review maps every July 28, 2026 subobjective to a configuration boundary, operating decision, query or investigation path, evidence artifact, failure action, or recovery proof. Three integrated scenarios, eight independent labs, and 36 original checks cover Defender XDR notifications/tuning, Endpoint settings/ASR/device groups/custom data collection, AIR and attack disruption, Sentinel automation, roles, tiers/retention, workbooks and SOC optimization, multisource AMA/DCR/WEF/Syslog/CEF ingestion, diagnostics, indicators/custom tables, Defender and Sentinel detection engineering, cross-domain response, Endpoint actions, Purview/Audit/eDiscovery/Graph evidence, KQL, Advanced Hunting, threat analytics, Sentinel Graph, data-lake jobs/summaries, notebooks, Security Copilot, agentic investigation, and Sentinel MCP. All 48 cited URLs are cataloged: 46 were reachable and the O'Reilly and Udemy pages returned access-blocked HTTP 403; none was missing or broken. The guide marks older secondary resources as foundations, verifies the active credential and free Practice Assessment, records 43 hours 12 minutes of current Microsoft Learn paths, and calls out the March 31, 2027 Sentinel Azure-portal support end. No upcoming blueprint change or exam retirement was announced. Blueprint SHA-256: `c64e8b14b67c6cd01b9ec4df39441c9d83971c5e2db87010561edbb07eda656e`.
 
 ## SC-300 coverage record
+
+The October 28 [group-02 refresh](research/2026-10-28-microsoft-refresh-group-02.md#sc-300) maps 98 current detailed objectives. Current link evidence is 72 registered, 69 reachable, 3 automation-blocked and 0 missing/error. The current source gate remains blocked by the documented source conflicts. Earlier dates, counts and accepted scope below describe historical reviews.
 
 The September 28 [deep review](research/2026-09-28-sc-300-deep-review.md) maps 98 detailed objectives. Whole guide read; 98 April objectives in 16 groups mapped, accepted baseline unchanged. Official authentication-domain weight conflict remains open. Add five examples, two labs (ten total), answers to 36 existing checks plus 12 new answered checks (48 total), two qualified blog tasks and six follow-ups. Expand restricted roles, hybrid maintenance, CBA/Kerberos, baseline scopes/risk/workload CA, GSA, managed-identity caching, review removal/PIM timing, file migration and retained evidence. Ten offline checks passed; no tenant or KQL execution; human review pending. Current guide citations: 69 registered, 66 reachable, 3 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
 
@@ -763,6 +780,8 @@ The September 5 repair adds distinct Entra Agent ID lifecycle and blueprint hand
 
 ## MD-102 coverage record
 
+The October 28 [group-02 refresh](research/2026-10-28-microsoft-refresh-group-02.md#md-102) maps 83 current detailed objectives. Current link evidence is 68 registered, 65 reachable, 3 automation-blocked and 0 missing/error. The current source gate remains blocked by the documented source conflicts. Earlier dates, counts and accepted scope below describe historical reviews.
+
 The September 27 [deep review](research/2026-09-27-md-102-deep-review.md) maps 83 detailed objectives. Whole guide read; 83 October objectives in 13 groups individually mapped while retaining July 24 baseline. Add five worked examples, two labs and eight answers (ten labs/47 answered checks total), two qualified blog readings and five dated follow-ups. Correct legacy app-grant guidance and expand deployment rollback, backup/restore, live versus inventory queries, hotpatch, remediation and agent lifecycle/identity. Catalog metadata is qualified and September 28 entries remain upcoming. Ten offline checks passed; no tenant/device execution; human review pending. Current guide citations: 59 registered, 56 reachable, 3 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
 
 | Official objective group | Guide coverage |
@@ -777,6 +796,8 @@ The September 5 repair adds source-aware alert paths for compliance drift, enrol
 
 ## MS-700 coverage record
 
+The October 28 [group-02 refresh](research/2026-10-28-microsoft-refresh-group-02.md#ms-700) maps 97 current detailed objectives. Current link evidence is 48 registered, 44 reachable, 4 automation-blocked and 0 missing/error. The current source gate remains blocked by the documented source conflicts. Earlier dates, counts and accepted scope below describe historical reviews.
+
 The September 28 [deep review](research/2026-09-28-ms-700-deep-review.md) maps 97 detailed objectives. Whole guide read; all 97 published October objectives in twelve groups mapped while July accepted baseline remains unchanged. Add five worked examples, two labs (ten total), eight answered checks (44 total), two bounded blog readings and five follow-ups. Refresh network/QoS, policy/federation/app access, device/VDI, events/Copilot, voice funding/callback and telemetry. Private-channel Workflows support conflict remains open. Ten offline checks passed; no tenant, network, media, flow or PSTN execution; human review pending. Current guide citations: 45 registered, 41 reachable, 4 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
 
 | Official objective group | Guide coverage |
@@ -789,6 +810,8 @@ The September 28 [deep review](research/2026-09-28-ms-700-deep-review.md) maps 9
 The review maps every July 29, 2026 subobjective to a Teams/Microsoft 365 object, entitlement, role, identity, policy, media/network, data, application, call flow, evidence, failure, or recovery decision. Three integrated scenarios, eight independent labs, and 36 original checks cover network capacity/ports/QoS/readiness; roles, Defender/Purview/Conditional Access; group/team/data lifecycle and policy assignment; external access/guests/shared channels/B2B direct connect/MTO; Teams Rooms/devices/VDI; teams/templates/frontline/channels/messaging/apps; meetings/appointments/webinars/town halls/Copilot; Teams Phone numbers/resource accounts/auto attendants/queues; usage/alerts/CQD/Call Analytics; and client/sign-in/media/meeting/AI troubleshooting. All 21 cited URLs are cataloged: 17 were reachable and two O'Reilly plus two Udemy pages were automation-blocked; none was missing or broken. The guide records 19 hours 1 minute of Learn paths, the four-day course, free Practice Assessment, and freshness gaps in commercial resources. MTO, Copilot/AI, meeting controls, device, VDI and troubleshooting behavior is marked **VERIFY CURRENT**. Blueprint SHA-256: `7b8312756006b9ee0f6b8e5fdb134797ef97c6ed27f664d0f518b8007cd03061`.
 
 ## MS-721 coverage record
+
+The October 28 [group-02 refresh](research/2026-10-28-microsoft-refresh-group-02.md#ms-721) maps 173 current detailed objectives. Current link evidence is 84 registered, 83 reachable, 1 automation-blocked and 0 missing/error. The current source gate passed after independent platform-tab and linked-funding checks; human and product validation remain pending. Earlier dates, counts and accepted scope below describe historical reviews.
 
 The September 28 [deep review](research/2026-09-28-ms-721-deep-review.md) maps 173 detailed objectives. Whole guide read; all 173 unchanged April objectives in nineteen groups mapped. Add six worked examples, two labs (ten total), twelve answered checks (48 total), two bounded blog readings and five follow-ups plus existing shared VDI/event dates. Expand Shared Calling/SMS, routing/SBA/emergency/media, events/voice funding, Android portal/AOSP, interop, XML and desk association. Fourteen offline checks passed; no tenant, carrier, emergency, device or network execution. Historical catalog metadata qualified; human review pending. Current guide citations: 52 registered, 51 reachable, 1 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
 
@@ -833,6 +856,8 @@ The review maps every July 21, 2026 subobjective to a configuration, identity/ac
 
 ## SC-401 coverage record
 
+The October 28 [group-02 refresh](research/2026-10-28-microsoft-refresh-group-02.md#sc-401) maps 65 current detailed objectives. Current link evidence is 38 registered, 37 reachable, 1 automation-blocked and 0 missing/error. The current source gate passed; human and product validation remain pending. Earlier dates, counts and accepted scope below describe historical reviews.
+
 The September 27 [deep review](research/2026-09-27-sc-401-deep-review.md) maps 65 detailed objectives. Whole guide read and all 65 published October objectives in nine groups mapped. Preserve July baseline and unresolved October 28 versus October 14 official date conflict. Correct Data Explorer and JIT boundaries; add Power BI, audit retention, network DLP and priority-cleanup context, four worked examples, a ninth lab, six additional answers and one qualified Purview blog. Four arithmetic assertions checked offline; no tenant execution. Human review pending. Current guide citations: 35 registered, 34 reachable, 1 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
 
 | Official objective group | Guide coverage |
@@ -871,6 +896,8 @@ The September 28 [deep review](research/2026-09-28-mb-310-deep-review.md) maps 9
 The review maps every August 14, 2026 subobjective to an accounting object, configuration, source document, subledger/voucher/ledger effect, control, reconciliation, evidence, failure, or recovery decision. Three integrated scenarios, eight independent labs, and 36 original checks cover chart/dimensions/structures/tags/defaulting; ledgers/currencies/revaluation/layers/allocations; journals/Excel/batch/reversal/intercompany; cash/bank/payment/reconciliation/forecast/netting; close/consolidation/elimination/settlement/tax; AR/credit/collections/subscription billing/deferrals; AP/matching/payments/expenses; all three budgeting capabilities; and fixed-asset books/depreciation/acquisition/transfer/disposal. All 15 cited URLs are cataloged: 14 were reachable and the Udemy page was automation-blocked; none was missing or broken. The guide records 48 hours 30 minutes of selected official paths, the four-day course, official public labs, free Practice Assessment, and explicit August 2026 gaps in older commercial resources. Cost management is marked removed and asset leasing adjacent. Blueprint SHA-256: `f843902addfd9a29b5d0cfa9ae537ecc5a2afef4ca2b402013f08ed26d5e94d7`.
 
 ## MB-330 coverage record
+
+The October 28 [group-02 refresh](research/2026-10-28-microsoft-refresh-group-02.md#mb-330) maps 101 current detailed objectives. Current link evidence is 51 registered, 50 reachable, 1 automation-blocked and 0 missing/error. The current source gate passed; human and product validation remain pending. Earlier dates, counts and accepted scope below describe historical reviews.
 
 The September 27 [deep review](research/2026-09-27-mb-330-deep-review.md) maps 101 detailed objectives. Whole guide read and 101 October objectives in 17 groups individually mapped; June 20 baseline retained. Add four worked examples, two labs, 44 answers and two qualified Microsoft blog exercises. Clarify reservation/unit, quality, asset, consignment, landed-cost, mobile and Planning Optimization behavior; qualify stale catalog claims and historical durations. Ten synthetic arithmetic assertions passed; no Dynamics environment or mobile execution. Three checkpoints and roadmap research guidance updated; human review pending. Current guide citations: 48 registered, 47 reachable, 1 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
 

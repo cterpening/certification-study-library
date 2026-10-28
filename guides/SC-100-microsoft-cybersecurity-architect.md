@@ -6,20 +6,18 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: review-required
-last_verified: 2026-09-27
-upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-27
+last_verified: 2026-10-28
+upcoming_change_status: none-announced
+upcoming_change_checked: 2026-10-28
 ---
 
 # SC-100 Microsoft Cybersecurity Architect Study Guide
 
-> **REFRESH IN PROGRESS — REVIEW REQUIRED (October 28, 2026).** The official objective page differs from the accepted teaching baseline. Detailed coverage reconciliation is pending; use the linked official blueprint for current scope. Saved objective snapshots and historical full-review dates remain unchanged.
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-02.md#sc-100) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sc-100-coverage-record). Source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-100) is authoritative.
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 27, 2026; all 81 published October objectives were separately mapped while retaining the accepted July baseline; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sc-100-coverage-record). The [official SC-100 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-100) is authoritative.
-
-**Current baseline:** Skills measured as of July 28, 2026; accepted objective snapshot retained; current live page presents October preparation.<br>
+**Current baseline:** Skills measured as of October 21, 2026.<br>
 **Exam state:** Active; the official exam page lists no retirement date.<br>
-**Upcoming blueprint change (checked September 27, 2026):** The English blueprint changes October 21, 2026. The revision expands SOAR as security orchestration, automation, and response and uses Microsoft 365 Copilot naming. Domain weights are unchanged. The current baseline below remains dated separately. See the [official revision](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-100).<br>
+**Blueprint reconciliation (October 28, 2026):** The October 21, 2026 English outline is the accepted current scope. The revision expands SOAR as security orchestration, automation, and response and uses Microsoft 365 Copilot naming. Domain weights are unchanged. Historical objective bytes and dated reviews are preserved. Recheck localized appointment timing separately.<br>
 **Localized exams:** Microsoft says localized versions normally follow the English update by approximately eight weeks; verify the language version before scheduling.<br>
 **Official source:** [SC-100 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-100)
 
@@ -307,9 +305,19 @@ For hybrid/multicloud architecture:
 
 Secure Score is a prioritization and measurement input. It can change as assets, recommendations, weighting, and product logic change. Pair it with business criticality, exploitability, exposure, threat intelligence, compliance, cost, and operational feasibility.
 
+**Decision check — enabled plan versus usable scanner:** A lower-privileged operator enables Defender CSPM, yet attack-path views lack vulnerability evidence. The [enablement guide](https://learn.microsoft.com/en-us/azure/defender-for-cloud/tutorial-enable-cspm-plan) explains that Subscription Owner enablement is required for the agentless scanner/all capabilities. Inspect plan components and onboarding permissions before concluding there are no vulnerabilities. A plan toggle alone is insufficient evidence.
+
+**Proposed practice extension — not executed:** Extend Lab 6 traceability matrix with plan enabled, scanner component enabled, required authority and observed asset evidence. A paper matrix is sufficient if subscription privileges are unavailable.
+
+**Answer checkpoint:** Does Defender CSPM On prove agentless vulnerability scanning was activated? No; verify Owner-dependent enablement and component state.
+
 ### Account for current posture and entitlement changes
 
-The [Defender for Cloud release notes](https://learn.microsoft.com/en-us/azure/defender-for-cloud/release-notes) announce that **new Azure subscriptions require opt-in to Foundational CSPM from October 27, 2026**. It remains free; existing Azure configuration and AWS/GCP are unaffected. Add explicit onboarding verification to landing-zone acceptance criteria. Individual recommendations now replace legacy grouped findings, and automation should use the current identifiers/schema. The grouped vulnerability-assessment coverage recommendation is scheduled for retirement December 14, 2026.
+**VERIFY CURRENT — October 28 documentation gap:** Earlier reviewed Microsoft guidance announced October 27 opt-in for new Azure subscriptions. The current [release notes](https://learn.microsoft.com/en-us/azure/defender-for-cloud/release-notes) no longer include that notice, and the former opt-in page redirects to the [CSPM overview](https://learn.microsoft.com/en-us/azure/defender-for-cloud/concept-cloud-security-posture-management). This does not establish cancellation. Verify each subscription’s enabled plan and assessed coverage; keep the default-change claim **Unconfirmed — validation needed** pending current first-party clarification. Individual recommendations replace legacy grouped findings; the release notes still schedule the grouped vulnerability-assessment coverage recommendation’s retirement for December 14, 2026.
+
+**Proposed practice extension — not executed:** Lab 6: add observed plan state and capability coverage; distinguish old announcement evidence from current UI/API observation. No paid plan is enabled by this research.
+
+**Answer checkpoint:** Can disappearance of an announcement prove its planned default change was canceled? No; preserve dated evidence and verify actual plan/coverage before relying on any default.
 
 Current [CIEM guidance](https://learn.microsoft.com/en-us/azure/defender-for-cloud/enable-permissions-management) retains overprovisioned-identity recommendations, but since August 6 AWS/GCP findings no longer supply the detailed unused-action list. Obtain the required usage evidence from the provider's native tools before deciding to remove a permission. A missing field is not proof that no permission is unused.
 
@@ -644,7 +652,7 @@ These are original study questions, not recalled exam content.
 38. **Does updating the Key Vault management API migrate an existing vault to RBAC?** No. New-vault defaults and existing-vault access-model changes are separate; the February 2027 retirement concerns older management APIs.
 39. **Does a retained backup remain immutable for its entire retention?** Not necessarily. Time-based immutability can expire earlier; identify the vault type, configured duration, lock state and recovery requirement.
 40. **Can a Sentinel incident-update trigger prove every intermediate state change?** No. Batched delivery can contain only the latest update; use an appropriate evidence source and account for latency.
-41. **Does new-subscription Foundational CSPM remain automatic after October 27, 2026?** The announced change requires opt-in for new Azure subscriptions; existing Azure and AWS/GCP behavior is outside that change.
+41. **Does an old opt-in announcement establish the current new-subscription default?** No. The current English sources omit the earlier notice; retain its dated evidence and verify plan enablement and assessed coverage rather than infer either implementation or cancellation.
 42. **Does missing CIEM unused-action detail mean all permissions are needed?** No. AWS/GCP detail was removed; consult provider-native usage evidence and business requirements.
 43. **Can a clean malware tag approve a later overwritten blob?** No. Tags are mutable, and the result must match the content version; hold errors, unscanned and changed content pending validation.
 44. **Does removing a leaked secret from a public issue revoke it?** No. Revoke/rotate the credential and investigate use and downstream credentials; copies and issue history can remain.
@@ -653,7 +661,15 @@ These are original study questions, not recalled exam content.
 
 ## Places to learn
 
-This is a curated starting point, not a complete list. Do **not** try to consume every resource. Pick a primary path that fits how you learn, use documentation and labs for weak areas, and use assessments to decide what to revisit. Verify every course against the July 28, 2026 blueprint—especially AI security, Entra Agent ID, Exposure Management, Copilot, and current SSE objectives.
+This is a curated starting point, not a complete list. Do **not** try to consume every resource. Pick a primary path that fits how you learn, use documentation and labs for weak areas, and use assessments to decide what to revisit. Verify every course against the October 21, 2026 blueprint—especially AI security, Entra Agent ID, Exposure Management, Copilot, and current SSE objectives.
+
+### October 28 learning route and evidence task
+
+Choose the [four-day Microsoft course](https://learn.microsoft.com/en-us/training/courses/sc-100t00) or the four selected Learn paths (**19 modules**) as one primary route. Use the interactive cases in the [operations/identity/compliance path](https://learn.microsoft.com/en-us/training/paths/sc-100-design-operations-identity-compliance-capabilities/) to write decisions before reading further explanations. The [official labs README](https://github.com/MicrosoftLearning/SC-100-Microsoft-Cybersecurity-Architect) explicitly expects a preconfigured M365 E5 tenant and separate Azure subscription; public instructions do not provide either. The course’s older AZ-500 attendance recommendation must not decide the current credential prerequisite. Existing official and specialist resources are adequate; another passive course is optional.
+
+**Original worksheet (about 35–50 minutes, editorial estimate):** A service has a 120-minute recovery target. Model dependent phases of 85 minutes to restore, 50 to validate and 10 to restore routing. Assign each phase an owner, independent recovery identity and success/failure evidence. Compare a sequential design with a proposed parallel design and document the actual dependency permitting any overlap.
+
+**Answer checkpoint:** Sequential recovery takes 145 minutes and misses the target by 25. Merely drawing parallel boxes does not remove dependencies or prove a tested 120-minute outcome. Treat the figures as an original planning exercise, not observed product performance.
 
 ### Time-planning summary
 
@@ -689,7 +705,7 @@ This is a curated starting point, not a complete list. Do **not** try to consume
 
 ### Video, books, and structured courses
 
-- [John Savill SC-100 Study Cram](https://www.youtube.com/watch?v=2Qu5gQjNQh4) — previously cataloged 2022 architecture review; current page returned a shell, so runtime/content were not reverified. It predates the July 2026 blueprint; supplement rather than use as a complete course.
+- [John Savill SC-100 Study Cram](https://www.youtube.com/watch?v=2Qu5gQjNQh4) — previously cataloged 2022 architecture review; current page returned a shell, so runtime/content were not reverified. It predates the current October 2026 blueprint; supplement rather than use as a complete course.
 - [Pluralsight Microsoft Cybersecurity Architect (SC-100)](https://www.pluralsight.com/paths/microsoft-cybersecurity-architect-sc-100) — four Tim Warner courses totaling 4h58, rounded to five path hours, plus a practice exam. The courses date from December 2024–January 2025, so build a current-objective gap list.
 - [O'Reilly Exam Ref SC-100](https://www.oreilly.com/library/view/exam-ref-sc-100/9780137997299/) by Yuri Diogenes, Sarah Young, Mark Simos, and Gladys Rodriguez — earlier catalog observation: 352 pages/10h37, February 2023. Current access was blocked; contents and current availability were not verified.
 - [O'Reilly Microsoft Cybersecurity Architect — SC-100 Exam Prep](https://www.oreilly.com/videos/microsoft-cybersecurity-architect/9781805128816/) with Anand Rao Nednur — earlier catalog observation: 13h03, April 2023. Current access was blocked; compare current availability and scope before purchase.

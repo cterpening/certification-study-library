@@ -6,19 +6,17 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: review-required
-last_verified: 2026-09-28
-upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-28
+last_verified: 2026-10-28
+upcoming_change_status: none-announced
+upcoming_change_checked: 2026-10-28
 ---
 
 # MS-700 Managing Microsoft Teams Study Guide
 
-> **REFRESH IN PROGRESS — REVIEW REQUIRED (October 28, 2026).** The official objective page differs from the accepted teaching baseline. Detailed coverage reconciliation is pending; use the linked official blueprint for current scope. Saved objective snapshots and historical full-review dates remain unchanged.
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-02.md#ms-700) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ms-700-coverage-record). Source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-700) is authoritative.
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The September 28, 2026 deep review read the whole guide and mapped all 97 published October objectives while preserving the July 29 accepted baseline. A private-channel Workflows documentation conflict remains open; human review and tenant execution are pending. It may still contain errors or become outdated. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ms-700-coverage-record). The [official MS-700 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-700) is authoritative.
-
-**Current baseline:** Skills measured as of July 29, 2026<br>
-**Upcoming blueprint change (checked September 28, 2026):** The English blueprint changes October 27, 2026. The revision uses Teams Network planner, Teams Advisor, and Teams admin center terminology. Domain weights are unchanged; these naming changes do not establish a new exam domain. The current baseline below remains dated separately. See the [official revision](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-700).<br>
+**Current baseline:** Skills measured as of October 27, 2026.<br>
+**Blueprint reconciliation (October 28, 2026):** The October 27, 2026 English outline is the accepted current scope. The revision uses Teams Network planner, Teams Advisor and Teams admin center naming. These changes do not create a new weighted domain. Historical objective bytes and dated reviews are preserved. Recheck localized appointment timing separately.<br>
 The [deep-review report](../docs/research/2026-09-28-ms-700-deep-review.md) records the evidence and limitations. The credential page lists **100 minutes** and seven exam languages; do not use a practice vendor’s question count as a promise about the exam.
 
 **Official source:** [MS-700 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-700)
@@ -181,6 +179,20 @@ Legacy Office 365 connector webhooks reached their final disablement rollout May
 
 > **Related item:** A Teams app can be allowed by Teams policy yet fail because Entra consent, license, Conditional Access, resource permission or downstream service is missing.
 
+#### Worked app acquisition and store change
+
+**Original example — proposed; service/tenant execution not performed.**
+
+For a hypothetical paid app, record approved publisher/permissions, business owner, subscription plan, required seats and billing owner. In Teams apps > Manage apps, inspect Plans and pricing; after an authorized purchase, complete the publisher's subscription setup and assign the app licenses to the intended users/team. Compare purchased seats, assigned licenses, app availability and Entra consent separately. A Purchased label does not prove that a user is licensed, allowed or correctly consented. Tabletop checkout; no payment is required for this exercise.
+
+For a harmless store pilot, use Teams apps > Customize store to preview an approved logo, contrasting background and organization-name color, then compare the Built for your org display in a test client. Preserve the previous theme for recovery. Branding does not change app permissions, consent, availability or commercial licensing. **VERIFY CURRENT:** purchase roles, billing model, asset constraints and client propagation.
+
+**Question:** Does buying 20 seats make an app available to every employee?
+
+**Answer:** No. Publisher activation, license assignment, effective Teams availability and consent must each be verified.
+
+[Purchase third-party Microsoft Teams apps and manage subscriptions and licenses](https://learn.microsoft.com/en-us/microsoftteams/purchase-third-party-apps) · [Customize your organization's app store in Microsoft Teams](https://learn.microsoft.com/en-us/MicrosoftTeams/customize-your-app-store)
+
 ---
 
 ## 3. Manage meetings and calling
@@ -260,6 +272,20 @@ For poor media:
 
 Copilot/AI troubleshooting adds license/service plan, meeting policy/option, transcript/recording, supported client/language, source permission, Purview control and feature rollout. A missing transcript is not fixed by granting broad SharePoint access. Use the Copilot decision table above and record tenant/cloud availability before changing access.
 
+#### Worked diagnostic choice — calendar versus sign-in
+
+**Original example — proposed; service/tenant execution not performed.**
+
+When the calendar tab is missing but Teams sign-in succeeds, choose the Teams Calendar Tab self-help diagnostic to examine the Teams backend-to-Exchange-mailbox dependency. For an actual login failure choose Teams sign in instead. Record affected work account, tenant, time, cloud and diagnostic result, then compare it with sign-in and workload evidence before changing policy.
+
+These Remote Connectivity Analyzer diagnostics report known issues and guidance; they cannot make tenant changes themselves. Their result does not replace reproducing the user symptom after a correction. **VERIFY CURRENT:** supported scenarios and access model; the published Remote Connectivity Analyzer page excludes GCC and GCC High. Use an authorized test identity and avoid submitting unnecessary personal data.
+
+**Question:** Which diagnostic fits a missing Calendar tab after successful sign-in?
+
+**Answer:** Teams Calendar Tab, because it tests the backend Exchange mailbox connection; retain sign-in evidence rather than assuming the two failures are identical.
+
+[Self-help diagnostics for Microsoft Teams administrators and end users](https://learn.microsoft.com/en-us/connectivity-analyzer/microsoft-teams/self-help-diagnostics-for-microsoft-teams)
+
 ---
 
 ## Integrated scenarios
@@ -322,7 +348,9 @@ Build a before/after audience matrix using example 3. Design a nonproduction Wor
 
 ### Lab 10 — VDI and room authentication transition
 
-Inventory endpoint OS, provider/plugin, Teams build and actual optimization status; identify the Windows WebRTC cohort before October 1. Tabletop a room’s initial sign-in, reauthentication, reprovisioning and retirement with narrowly scoped device-code exceptions. Do not infer successful passwordless migration from a blog announcement. **Evidence:** support dates, actual media path, account type, access-policy evaluation, recovery owner and pilot results.
+Inventory endpoint OS, provider/plugin, Teams build and actual optimization status. For the specified Windows WebRTC cohort, October 1, 2026 is now past: record whether the supported replacement is active, and distinguish the April 1, 2027 end of availability from the earlier end of support. Tabletop a room’s initial sign-in, reauthentication, reprovisioning and retirement with narrowly scoped device-code exceptions. Do not infer successful passwordless migration from a blog announcement. **Evidence:** support dates, actual media path, account type, access-policy evaluation, recovery owner and pilot results.
+
+**Answer checkpoint:** Does a legacy optimization still working after October 1 establish support? No; functioning, vendor support and eventual availability are separate.
 
 ---
 
@@ -378,9 +406,28 @@ Inventory endpoint OS, provider/plugin, Teams build and actual optimization stat
 
 ---
 
+## Final readiness checklist
+
+- I can map each objective to its owning Teams/Microsoft 365 object, role, policy, evidence and recovery.
+- I can calculate and validate network/media readiness and use CQD versus Call Analytics correctly.
+- I can govern team/group/data lifecycle, external/guest/shared-channel/MTO collaboration and device clients.
+- I can manage teams, channels, chats, apps and extensibility without confusing Teams policy with Entra/resource authorization.
+- I can select and configure meeting/event and Teams Phone objects, policies, licenses and call flows.
+- I can troubleshoot client, sign-in, media, meeting and Copilot issues without erasing evidence or weakening policy broadly.
+- I completed or tabletop-tested all ten labs and can prove positive and negative outcomes.
+- I passed an independent readiness check without relying on recalled live-exam content.
+
 ## Places to learn
 
-This is a curated starting point, **not a complete list**, and it is not meant to be consumed in full. Choose one primary path, practice in a tenant, and select supplements from measured gaps. Reconcile all older resources with the July 29, 2026 blueprint, especially MTO, Copilot/AI troubleshooting, current events, policies and external collaboration.
+This is a curated starting point, **not a complete list**, and it is not meant to be consumed in full. Choose one primary path, practice in a tenant, and select supplements from measured gaps. Reconcile all older resources with the October 27, 2026 blueprint, especially MTO, Copilot/AI troubleshooting, current events, policies and external collaboration.
+
+### October 28 learning route and evidence task
+
+Use the [four-day Microsoft course](https://learn.microsoft.com/en-us/training/courses/ms-700t00) and its four selected paths (**20 modules**) for the primary route, then choose one tenant case across governance, external access, apps and a meeting/call. John Christopher’s [MS-700 Training & Lab Simulations](https://www.udemy.com/course/microsoft-teams-examlabpractice/) is now publicly accessible and lists **11h56, 120 lectures, 16 sections, updated October 2026**. This replaces the earlier blocked-page observation for that listing only; paid lessons and simulations remain unreviewed. Choose it as an alternative explanation style rather than adding it automatically to the full official route.
+
+**Original worksheet (about 35–50 minutes, editorial estimate):** For an approved collaboration app, trace publisher review → effective audience → installation → consent → resource access. Specify a negative case at each boundary, who owns remediation, and what evidence distinguishes a policy restriction from a resource-permission failure.
+
+**Answer checkpoint:** A pinned app, an allowed publisher and a successful consent decision are separate evidence. Accept the workflow only after a permitted persona succeeds and an out-of-scope persona fails. The worksheet can be completed without installing a real third-party app.
 
 The four official paths are [get started](https://learn.microsoft.com/en-us/training/paths/get-started-managing-microsoft-teams/) (3h36), [prepare the environment](https://learn.microsoft.com/en-us/training/paths/prepare-environment-for-microsoft-teams-deployment/) (3h20), [manage chat/teams/channels/apps](https://learn.microsoft.com/en-us/training/paths/manage-chat-teams-channels-apps-microsoft-teams/) (3h02), and [manage meetings/calling](https://learn.microsoft.com/en-us/training/paths/manage-meetings-calling-microsoft-teams/) (9h03), a historical total of **19 hours 1 minute** from the earlier review. Current pages list **20 modules (4/4/3/9)** but do not expose those runtimes in the retrieved text; treat the old times as planning estimates, not freshly verified durations.
 
@@ -393,7 +440,7 @@ The four official paths are [get started](https://learn.microsoft.com/en-us/trai
 | [Pluralsight MS-700 path](https://www.pluralsight.com/paths/managing-microsoft-teams) | Paid | Five public course listings total 18h58 (path rounds to 19h); 2022/2024 dates require current-doc supplements |
 | [O'Reilly/Packt MS-700 Third Edition](https://www.oreilly.com/library/view/ms-700-managing-microsoft/9781835883945/) by Nate Chamberlain and Peter Rising | Paid | Historical 10h41 / 502 pages, August 2024; page blocked on recheck, current edition/content unverified |
 | [O'Reilly/ACI MS-700 video](https://www.oreilly.com/videos/managing-microsoft-teams/9781836643135/) with Adam Gordon | Paid | Historical 31h03, August 2024; page blocked on recheck, current content unverified |
-| [Udemy MS-700 with labs](https://www.udemy.com/course/microsoft-teams-examlabpractice/) by John Christopher | Paid | Page blocked; historical February 2026 update and runtime unverified now; allow 20–35 hours with practice |
+| [Udemy MS-700 with labs](https://www.udemy.com/course/microsoft-teams-examlabpractice/) by John Christopher | Paid | Public listing: 11h56, 120 lectures/16 sections, updated October 2026; allow an estimated 20–35 hours with practice; paid lessons/simulations and completeness unverified |
 | [MeasureUp MS-700](https://www.measureup.com/microsoft-practice-test-ms-700-managing-microsoft-teams.html) | Paid | 155 questions (69/36/31/19), September 2025 update verified from public listing; paid questions and July/October completeness unreviewed; allow 6–10 hours |
 | [Udemy current-blueprint practice](https://www.udemy.com/course/ms-700-practice-tests-teams-administrator-2026/) by Dean Ellerby | Paid | Page blocked; historical 360-question/August 2026 claims and originality unverified; allow 10–16 hours with source review |
 | [Microsoft Mechanics](https://www.youtube.com/@MSFTMechanics), [Microsoft Reactor](https://www.youtube.com/@MicrosoftReactor), and [John Savill](https://www.youtube.com/@NTFAQGuy) | Public | 2–10 hours selectively; no complete current MS-700 playlist was confirmed |
@@ -409,14 +456,3 @@ Public page retrieval does not establish access to course lessons or practice qu
 | [What’s new in Teams, July 2026](https://techcommunity.microsoft.com/blog/microsoftteamsblog/what%E2%80%99s-new-in-microsoft-teams--july-2026/4542510) — Kerry Perez Heffernan, July 31 | Highlights app/agent request handling and Windows Rooms passwordless support. Announcement scope must be checked against the deployed device/cloud. | Trace request → approval → audience → consent → working app; separately write a room migration acceptance/recovery checklist. Neither demo execution nor fleet-wide feature availability was verified. |
 
 Start with Microsoft's free Practice Assessment. Add paid questions only for a different explanation style or measured gap; reject any provider claiming recalled live questions.
-
-## Final readiness checklist
-
-- I can map each objective to its owning Teams/Microsoft 365 object, role, policy, evidence and recovery.
-- I can calculate and validate network/media readiness and use CQD versus Call Analytics correctly.
-- I can govern team/group/data lifecycle, external/guest/shared-channel/MTO collaboration and device clients.
-- I can manage teams, channels, chats, apps and extensibility without confusing Teams policy with Entra/resource authorization.
-- I can select and configure meeting/event and Teams Phone objects, policies, licenses and call flows.
-- I can troubleshoot client, sign-in, media, meeting and Copilot issues without erasing evidence or weakening policy broadly.
-- I completed or tabletop-tested all ten labs and can prove positive and negative outcomes.
-- I passed an independent readiness check without relying on recalled live-exam content.

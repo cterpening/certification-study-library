@@ -5,22 +5,20 @@ official_blueprint: https://learn.microsoft.com/en-us/credentials/certifications
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: review-required
-last_verified: 2026-09-27
-upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-27
+review_status: source-validated
+last_verified: 2026-10-28
+upcoming_change_status: none-announced
+upcoming_change_checked: 2026-10-28
 ---
 
 # MB-330 Microsoft Dynamics 365 Supply Chain Management Functional Consultant Study Guide
 
-> **REFRESH IN PROGRESS — REVIEW REQUIRED (October 28, 2026).** The official objective page differs from the accepted teaching baseline. Detailed coverage reconciliation is pending; use the linked official blueprint for current scope. Saved objective snapshots and historical full-review dates remain unchanged.
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-02.md#mb-330) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mb-330-coverage-record). Source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-330) is authoritative.
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide was checked against the June 20, 2025 official objective baseline and cited public sources on September 27, 2026; all 101 October objectives were separately mapped without accepting the future baseline early. It may still contain errors or become outdated. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mb-330-coverage-record). The [official MB-330 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-330) is authoritative.
-
-**Current baseline:** Skills measured as of June 20, 2025.<br>
-**Upcoming blueprint change (checked September 27, 2026):** The English blueprint changes October 21, 2026. Minor revisions cover inventory activities, landed costs, sales features, warehouse processes and master-plan execution. Domain weights are unchanged. The revised plan-management objective explicitly names Planning Optimization. Use the [official change log](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-330) for the revised wording; the map below preserves the June baseline.<br>
+**Current baseline:** Skills measured as of October 21, 2026.<br>
+**Blueprint reconciliation (October 28, 2026):** The October 21, 2026 English outline is the accepted current scope. The current exact outline is mapped to the teaching, including Planning Optimization. The earlier June snapshot used condensed manual wording; a larger extracted bullet count does not by itself prove every bullet is a newly added capability. Domain weights remain unchanged. Historical objective bytes and dated reviews are preserved. Recheck localized appointment timing separately.<br>
 **Lifecycle:** The [Dynamics 365 Supply Chain Management Functional Consultant Associate credential](https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-supply-chain-management/) is active. The exam is 100 minutes, offered in English and Japanese, has no announced retirement date, and offers a free Practice Assessment.<br>
-**Freshness note:** The guide retains the June 2025 baseline for appointments before the October revision. Recheck product documentation for Planning Optimization, Warehouse Management mobile app, Copilot and other fast-moving behavior.<br>
+**Freshness note:** The current October 21 outline governs preparation; June 2025 scope and earlier appointment guidance are historical. Recheck current Planning Optimization, warehouse mobile, Copilot and product-specific behavior independently of the exam-date change.<br>
 **Official source:** [MB-330 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-330)
 
 ## How to use this guide
@@ -121,6 +119,12 @@ Design trigger timing carefully: before receipt, after registration or at anothe
 
 [Quarantine orders](https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/quarantine-orders) are a separate flow. For WMS-enabled warehouses, their supported processing is limited to sales returns. Do not prescribe the basic quarantine-order purchase flow for every advanced warehouse. In the basic flow, reporting a quarantine order as finished releases the inventory, while ending it performs the return movement; these are different states.
 
+**Worked example — every third starts with the first:** Receive six equal license plates under an Order-scoped WMS-only association, Full license plate sampling, `Per nth license plate = 3`, and one shared count. The [sampling examples](https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/quality-management-for-warehouses-processes) select **LP1 and LP4**, rather than LP3 and LP6. Changing scope or Break count by item can change where the count resets. Record sampling work separately from the hold on the rest of the receipt.
+
+**Proposed practice extension — not executed:** Extend quality Lab 3 or receipt Lab 9 with six paper license plates, first/fourth prediction, then actual work if available. Repeat with a changed scope/count-reset setting and record expected/observed work.
+
+**Answer checkpoint:** With every-third full-license-plate sampling and one continuous count, which of six plates go to quality? LP1 and LP4; explain the starting point and reset scope.
+
 ### Configure and operate asset maintenance
 
 An asset type supplies defaults; an asset is the maintained equipment. Functional locations form the install/location hierarchy. Lifecycle models and states control valid transitions for assets, functional locations, requests and work orders. Work-order settings define types, jobs, stages, priorities and related behavior.
@@ -130,6 +134,20 @@ Maintenance requests capture reported need and can become work orders. Maintenan
 > **Related item:** Finance fixed assets track capitalization and depreciation; Supply Chain Asset Management operates equipment maintenance. An equipment record can relate to financial accounting, but the two asset models answer different questions.
 
 A [work order](https://learn.microsoft.com/en-us/dynamics365/supply-chain/asset-management/overview/objects-and-work-orders) can contain jobs for multiple assets. A maintenance-calendar entry is not itself an executed work order. Automatic work-order generation from a [maintenance plan](https://learn.microsoft.com/en-us/dynamics365/supply-chain/asset-management/preventive-and-reactive-maintenance/schedule-maintenance-plans) requires both the plan-line auto-create setting and the scheduling dialog's **Auto create if specified on the line** setting. Capture generated entries, jobs and consumed inventory separately. Changing the asset-type/manufacturer/model criteria of a functional-location maintenance plan removes its related schedule entries; reschedule and review the new scope. Updating asset-type defaults does not automatically update every existing asset.
+
+#### Worked asset loan — maintenance and return are separate
+
+**Original example — proposed; service/tenant execution not performed.**
+
+A customer sends pump P1 for repair and needs temporary pump L1. On the maintenance request, select Send loan asset, choose an available asset of the same asset type whose lifecycle state permits lending, and record its expected return date. The loan updates L1 to the configured on-loan state. Keep P1's repair/work order separate from L1's loan record.
+
+When L1 returns, register Return asset loan with the actual return date/time. Refresh active loans and verify that L1 has left that list and the retained loan record is marked ended. Closing P1's work order does not itself establish the temporary pump's return. **VERIFY CURRENT:** menu labels and configured lifecycle names; InStorage and OnLoan are examples, not universal custom-state identifiers.
+
+**Question:** Does completing P1’s repair prove loan asset L1 was returned?
+
+**Answer:** No. Register and verify the asset-loan return separately, retaining actual return time and the ended loan record.
+
+[Asset loans](https://learn.microsoft.com/en-us/dynamics365/supply-chain/asset-management/manage-maintenance-requests/asset-loan)
 
 ---
 
@@ -216,6 +234,20 @@ For [freight reconciliation](https://learn.microsoft.com/en-us/dynamics365/suppl
 Coverage groups supply shared rules; item coverage overrides them by item and dimension. Understand requirement, period and min/max patterns, order modifiers, vendor/lead time and calendars. Master plans define horizon and included demand/supply. **Positive days** control the interval in which existing supply can cover later demand; **negative days** contribute to tolerance for supply arriving after demand. Time fences limit how far actions, firming, capacity or messages operate.
 
 Action messages recommend advancing, postponing, increasing, decreasing or canceling supply. Delay calculates lateness through the supply chain. Safety margins add time at receipt/issue/reorder boundaries. Period templates group recommendations. Safety-stock journals help calculate/propose minimum levels from history; review seasonality and service policy before applying.
+
+#### Worked planning buckets and safety-stock proposal
+
+**Original example — proposed; service/tenant execution not performed.**
+
+In Supply schedule, select the intended plan/product/location and a period template, then compare daily versus weekly display buckets. The template controls how supply and demand are grouped for viewing; changing visible buckets is not a change to the item's coverage code or replenishment rule. For a synthetic week with opening 40, supply 30 and demand 50, expected closing inventory is 20, assuming all orders occur. Drill through to the underlying orders before acting on the aggregate.
+
+For safety stock, create a journal name, generate lines for a small synthetic item/dimension set and a justified historical interval, calculate the proposal, and review or override it before posting. Suppose existing minimum is 20 and the reviewed proposal is 35: posting updates item coverage to 35; it does not itself receive 15 units or establish a firm purchase order. Rerun the intended plan and inspect pegging/planned supply. Preserve history, unusual adjustments, service policy and valuation impact; historical issues include more than customer sales. **VERIFY CURRENT:** calculation options, coverage dimensions and workflow permissions.
+
+**Question:** Does posting a safety-stock proposal from 20 to 35 increase physical on-hand by 15?
+
+**Answer:** No. It updates the minimum in item coverage; planning and reviewed supply execution must follow.
+
+[Supply schedule](https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/supply-schedule) · [Use the safety stock journal to update minimum coverage for items](https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/safety-stock-journal)
 
 ### Interpret and firm a plan
 
@@ -370,9 +402,32 @@ These ten labs require an appropriate nonproduction environment and permissions.
 
 ---
 
+## Final readiness checklist
+
+- [ ] I can configure/release products, dimensions, reservation/unit behavior, prices and costs and trace their effects.
+- [ ] I can reconcile inventory journals/orders, close/adjustment, blocking, quality and asset-maintenance consumption.
+- [ ] I can run procurement, landed-cost and sales/intercompany lifecycles with workflow and exception evidence.
+- [ ] I can trace order release through shipment/load/wave/work/location/mobile/container/label and recovery.
+- [ ] I can configure transport carriers/routes/rates/appointments and reconcile freight.
+- [ ] I can configure coverage/plans/days/messages/fences/margins, diagnose results and firm appropriate supply.
+- [ ] I completed all three scenarios and ten labs with failure-path evidence.
+- [ ] I rechecked the current blueprint, lifecycle, Practice Assessment and fast-moving product docs before scheduling.
+
+## Source notes
+
+The June 20, 2025 snapshot is historical; the current October 21 outline is accepted after full mapping. Earlier future-scope work is preserved in the [deep-review record](../docs/research/2026-09-27-mb-330-deep-review.md). Microsoft Learn paths, product docs and MIT-licensed course labs support behavior but may include adjacent content or UI drift. Commercial assessment/training is optional and never defines scope. All questions here are original and conceptual; no exam dumps or recalled items were used.
+
 ## Places to learn
 
 This is not a complete list and is not meant to be consumed in full. Choose one primary route, build complete product-to-plan and order-to-warehouse journeys, and add another resource only for a measured gap.
+
+### October 28 learning route and evidence task
+
+Follow the [five-day MB-330 course](https://learn.microsoft.com/en-us/training/courses/mb-330t00) with one purchase-to-receipt case before branching into the existing asset, landed-cost, transportation and planning paths. The eight selected path outlines contain **35 module placements**, including repeated Asset Management foundation content; that is not 35 unique required exam modules. Their current public bodies do not expose a fresh combined runtime, so keep 50h07 as dated historical planning metadata. The existing [lab repository](https://github.com/MicrosoftLearning/MB-330-Microsoft-Dynamics-365-Supply-Chain-Management) remains a public course companion; it does not include a hosted Dynamics environment.
+
+**Original worksheet (about 40–60 minutes, editorial estimate):** Trace a synthetic late purchase-order line through expected receipt, quality decision, warehouse work and downstream demand. At each handoff record document ID, unit/dimension context, owner, observed state, exception and next confirming record. Model a lost handheld response without replaying a transaction.
+
+**Answer checkpoint:** A screen timeout is an unknown result until the authoritative transaction/work record is checked. A plan or a calendar entry alone does not prove that physical work or a new supply commitment was created. This is a tabletop unless an authorized nonproduction environment is available.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
@@ -400,18 +455,3 @@ The September 1 durations sum to **50 hours 7 minutes** across eight paths; this
 - **Michael Fruergaard Pontoppidan and Denis Conway, February 16, 2024 — [warehouse mobile interaction improvements](https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2024/02/16/optimizing-warehouse-management-unveiling-the-power-of-d365-warehouse-mobile-app-version-2-1-23/).** Use this historical article to design a scanner, text-size, back-navigation and shift-handoff test matrix. Cross-check its authentication advice and app version against the current FAQ, release notes and support policy above; do not deploy 2.1.23 or restore device-code flow merely because the article describes it. Allow 30–45 minutes for analysis, plus environment-dependent test time.
 
 Only the relevant public article text was reviewed; linked videos, claimed customer benefits and preview deployment were not tested. Add a blog when it teaches a specific decision, failure case or exercise backed by current product documentation, rather than adding another general link.
-
-## Final readiness checklist
-
-- [ ] I can configure/release products, dimensions, reservation/unit behavior, prices and costs and trace their effects.
-- [ ] I can reconcile inventory journals/orders, close/adjustment, blocking, quality and asset-maintenance consumption.
-- [ ] I can run procurement, landed-cost and sales/intercompany lifecycles with workflow and exception evidence.
-- [ ] I can trace order release through shipment/load/wave/work/location/mobile/container/label and recovery.
-- [ ] I can configure transport carriers/routes/rates/appointments and reconcile freight.
-- [ ] I can configure coverage/plans/days/messages/fences/margins, diagnose results and firm appropriate supply.
-- [ ] I completed all three scenarios and ten labs with failure-path evidence.
-- [ ] I rechecked the current blueprint, lifecycle, Practice Assessment and fast-moving product docs before scheduling.
-
-## Source notes
-
-The accepted June 20, 2025 baseline remains the reference for earlier appointments; all 101 published October 21 objectives were separately mapped in the [deep-review record](../docs/research/2026-09-27-mb-330-deep-review.md). Microsoft Learn paths, product docs and MIT-licensed course labs support behavior but may include adjacent content or UI drift. Commercial assessment/training is optional and never defines scope. All questions here are original and conceptual; no exam dumps or recalled items were used.

@@ -275,6 +275,14 @@ Resource details from the [SC-900 guide](../guides/SC-900-microsoft-security-com
 
 This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Pick the formats that fit you. Published runtimes are distinguished from suggested study allocations and earlier metadata. Labs, note-taking, review and independent practice add time; no paid course or signed-in assessment was completed in this review.
 
+#### October 28 learning route and evidence task
+
+Begin with the [one-day Microsoft introductory course](https://learn.microsoft.com/en-us/training/courses/sc-900t00), then use this guide’s control map and tabletop labs before taking an assessment. Choose one additional explanation style only for a measured gap: the [Christopher Wojahn/Microsoft Press course](https://www.linkedin.com/learning/microsoft-security-compliance-and-identity-fundamentals-sc-900-cert-prep-by-microsoft-press) still lists **3h32, released June 11, 2024**; the [Vlad Catrinescu Pluralsight path](https://www.pluralsight.com/paths/microsoft-security-compliance-and-identity-fundamentals-sc-900) still totals **8h45** of 2023–2024 lessons. Their public metadata was rechecked, while paid lessons and current-blueprint completeness were not. Existing resources are adequate; no tenant purchase is required for the tabletop route.
+
+**Original worksheet (about 25–35 minutes, editorial estimate):** For a confidential file shared with a contractor, assign six separate questions to an evidence owner: who authenticated, who may open it, which risky action is restricted, which copy must remain, what activity was recorded and who can investigate. Add a failed-access case and a deletion request.
+
+**Answer checkpoint:** Select controls from the question and evidence boundary. Encryption, access control, DLP, retention and investigation cannot be substituted for one another simply because each is a security feature.
+
 | Resource | Access | Estimated time | Best use and caveat |
 |---|---|---:|---|
 | [Microsoft Learn — SC-900 course](https://learn.microsoft.com/en-us/training/courses/sc-900t00) | Free self-study; instructor-led options vary | 1 day (official course) | Current objective-aligned foundation across identity, security, and compliance |
@@ -567,7 +575,15 @@ Avoid products that promise leaked, “actual,” or memorized exam questions. O
 
 Resource details from the [SC-100 guide](../guides/SC-100-microsoft-cybersecurity-architect.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is a curated starting point, not a complete list. Do **not** try to consume every resource. Pick a primary path that fits how you learn, use documentation and labs for weak areas, and use assessments to decide what to revisit. Verify every course against the July 28, 2026 blueprint—especially AI security, Entra Agent ID, Exposure Management, Copilot, and current SSE objectives.
+This is a curated starting point, not a complete list. Do **not** try to consume every resource. Pick a primary path that fits how you learn, use documentation and labs for weak areas, and use assessments to decide what to revisit. Verify every course against the October 21, 2026 blueprint—especially AI security, Entra Agent ID, Exposure Management, Copilot, and current SSE objectives.
+
+#### October 28 learning route and evidence task
+
+Choose the [four-day Microsoft course](https://learn.microsoft.com/en-us/training/courses/sc-100t00) or the four selected Learn paths (**19 modules**) as one primary route. Use the interactive cases in the [operations/identity/compliance path](https://learn.microsoft.com/en-us/training/paths/sc-100-design-operations-identity-compliance-capabilities/) to write decisions before reading further explanations. The [official labs README](https://github.com/MicrosoftLearning/SC-100-Microsoft-Cybersecurity-Architect) explicitly expects a preconfigured M365 E5 tenant and separate Azure subscription; public instructions do not provide either. The course’s older AZ-500 attendance recommendation must not decide the current credential prerequisite. Existing official and specialist resources are adequate; another passive course is optional.
+
+**Original worksheet (about 35–50 minutes, editorial estimate):** A service has a 120-minute recovery target. Model dependent phases of 85 minutes to restore, 50 to validate and 10 to restore routing. Assign each phase an owner, independent recovery identity and success/failure evidence. Compare a sequential design with a proposed parallel design and document the actual dependency permitting any overlap.
+
+**Answer checkpoint:** Sequential recovery takes 145 minutes and misses the target by 25. Merely drawing parallel boxes does not remove dependencies or prove a tested 120-minute outcome. Treat the figures as an original planning exercise, not observed product performance.
 
 #### Time-planning summary
 
@@ -603,7 +619,7 @@ This is a curated starting point, not a complete list. Do **not** try to consume
 
 #### Video, books, and structured courses
 
-- [John Savill SC-100 Study Cram](https://www.youtube.com/watch?v=2Qu5gQjNQh4) — previously cataloged 2022 architecture review; current page returned a shell, so runtime/content were not reverified. It predates the July 2026 blueprint; supplement rather than use as a complete course.
+- [John Savill SC-100 Study Cram](https://www.youtube.com/watch?v=2Qu5gQjNQh4) — previously cataloged 2022 architecture review; current page returned a shell, so runtime/content were not reverified. It predates the current October 2026 blueprint; supplement rather than use as a complete course.
 - [Pluralsight Microsoft Cybersecurity Architect (SC-100)](https://www.pluralsight.com/paths/microsoft-cybersecurity-architect-sc-100) — four Tim Warner courses totaling 4h58, rounded to five path hours, plus a practice exam. The courses date from December 2024–January 2025, so build a current-objective gap list.
 - [O'Reilly Exam Ref SC-100](https://www.oreilly.com/library/view/exam-ref-sc-100/9780137997299/) by Yuri Diogenes, Sarah Young, Mark Simos, and Gladys Rodriguez — earlier catalog observation: 352 pages/10h37, February 2023. Current access was blocked; contents and current availability were not verified.
 - [O'Reilly Microsoft Cybersecurity Architect — SC-100 Exam Prep](https://www.oreilly.com/videos/microsoft-cybersecurity-architect/9781805128816/) with Anand Rao Nednur — earlier catalog observation: 13h03, April 2023. Current access was blocked; compare current availability and scope before purchase.
@@ -633,7 +649,15 @@ Avoid sites selling “real questions,” dumps, guarantees based on recalled ex
 
 Resource details from the [SC-200 guide](../guides/SC-200-microsoft-security-operations-analyst.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is a curated starting point, not a complete list. Do **not** try to consume every resource. Pick a primary path that fits how you learn, use documentation and labs for weak areas, and use assessments to decide what to revisit. Verify every course against the July 28, 2026 blueprint—especially data-lake tiers/jobs, Sentinel Graph, agentic investigation, embedded Security Copilot, and Sentinel MCP Server.
+This is a curated starting point, not a complete list. Do **not** try to consume every resource. Pick a primary path that fits how you learn, use documentation and labs for weak areas, and use assessments to decide what to revisit. Verify every course against the October 21, 2026 blueprint—especially data-lake tiers/jobs, Sentinel Graph, agentic investigation, embedded Security Copilot, and Sentinel MCP Server.
+
+#### October 28 learning route and evidence task
+
+The [current four-day Microsoft course](https://learn.microsoft.com/en-us/training/courses/sc-200t00) and ten selected path outlines still provide **59 module placements**. Begin with [KQL](https://learn.microsoft.com/en-us/training/paths/sc-200-utilize-kql-for-azure-sentinel/), then workspace/ingestion, product investigations, detections and hunting; use Security Copilot after you can inspect its underlying evidence. This is a suggested learning order, not a replacement blueprint. The [course lab README](https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst) is a written companion, with separate training materials and preparation requirements; no hosted environment or full fresh runtime was established. Existing resources are sufficient for this route.
+
+**Original worksheet (about 30–45 minutes, editorial estimate):** Inventory twelve expected log producers. Supply synthetic timely records for nine and none for three. Build a freshness worksheet with producer ID, source time, arrival time, expected cadence, last-seen age and triage owner; include the three absent producers in the denominator.
+
+**Answer checkpoint:** Nine timely arrivals out of nine returned records do not establish twelve healthy producers. Mark the three silent sources unresolved and distinguish missing telemetry from a negative security finding. No connector, KQL job or response action was executed for this exercise.
 
 #### Time-planning summary
 
@@ -655,7 +679,7 @@ This is a curated starting point, not a complete list. Do **not** try to consume
 
 #### Official Microsoft resources
 
-- [SC-200 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200) — accepted July 28 baseline, published October 21 revision and change log.
+- [SC-200 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200) — current accepted October 21 outline and change log; July bytes archived.
 - [Security Operations Analyst Associate credential](https://learn.microsoft.com/en-us/credentials/certifications/security-operations-analyst/) — status, renewal, 100-minute exam, free Practice Assessment, sandbox, and prep-video entry point.
 - [SC-200T00-A course](https://learn.microsoft.com/en-us/training/courses/sc-200t00) — four instructor-led days and the current self-directed syllabus.
 - [Mitigate threats using Defender XDR](https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-microsoft-365-defender/) — earlier 6 hours 6 minutes duration is historical; inspect current modules.
@@ -706,6 +730,14 @@ Resource details from the [SC-300 guide](../guides/SC-300-microsoft-identity-acc
 
 This is a curated list, not a complete list. Do **not** try to consume every resource. Pick the format that works for you, use the official blueprint and documentation to resolve disagreements, and spend substantial time practicing. Commercial durations and catalogs can change; estimates below are planning aids, not promises.
 
+#### October 28 learning route and evidence task
+
+Use the [four-day SC-300 course](https://learn.microsoft.com/en-us/training/courses/sc-300t00) with the four selected paths: identity, authentication/access, app integration and governance (**18 modules**). The current [authentication/access outline](https://learn.microsoft.com/en-us/training/paths/implement-authentication-access-management-solution/) includes Global Secure Access and mentions agent identities in its Conditional Access description; detailed targeting and availability still require current product documentation. Four selected path pages do not prove every dynamic course-syllabus entry has been enumerated. Existing paths, labs and evaluated specialist readings are adequate; the historical 15h11 remains a planning observation because fresh aggregate runtimes were not exposed.
+
+**Original worksheet (about 35–50 minutes, editorial estimate):** Follow one synthetic contractor from request and approval through app assignment, sign-in, review denial, applied change and resource retest. Give every transition an authoritative object/system, timestamp, owner and evidence. Add an independent assignment path that survives the first removal.
+
+**Answer checkpoint:** A completed review and an applied membership change are intermediate evidence. Verify the destination and every independent grant before declaring access removed; retain an explicit untested result when you lack a licensed test tenant.
+
 #### Two blog readings with practical tasks
 
 | Reading | Learning task | Limits |
@@ -725,7 +757,7 @@ Four Learn paths list **18 modules**. Earlier path times below total **15h11** b
 | [SC-300T00 instructor-led course](https://learn.microsoft.com/en-us/training/courses/sc-300t00) | Paid/partner delivery | 4 days listed |
 | [MicrosoftLearning SC-300 labs](https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator) | Public (MIT) | 12–24 hours selectively; tenant/license setup extra |
 | [Official Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/identity-and-access-administrator/practice/assessment?assessment-type=practice&assessmentId=60) and exam sandbox from the credential page | Public | 1–2 hours per assessment/review cycle |
-| [Exam Readiness Zone: workload identities (part 3)](https://learn.microsoft.com/en-us/shows/exam-readiness-zone/preparing-for-sc-300-plan-and-implement-workload-identities) and linked series | Public | Historical estimate: about two hours/four parts, February 2024; part 3 landing page only, videos unreviewed; reconcile April objectives |
+| [Exam Readiness Zone: workload identities (part 3)](https://learn.microsoft.com/en-us/shows/exam-readiness-zone/preparing-for-sc-300-plan-and-implement-workload-identities) and linked series | Public | Historical estimate: about two hours/four parts, February 2024; part 3 landing page only, videos unreviewed; reconcile the current October 28 objectives |
 | [Pluralsight SC-300 path](https://www.pluralsight.com/paths/microsoft-certified-identity-and-access-administrator-associate-sc-300) | Paid/trial | 10h20 across four public listings, Nov 2025–Apr 2026 (path rounds to ten hours); in-production notice remains. Paid lessons/practice and full current coverage unverified |
 | [O'Reilly/Packt SC-300 Exam Guide, Second Edition](https://www.oreilly.com/library/view/microsoft-identity-and/9781836200390/) | Paid | Historical 13h03 / 594 pages, March 2025; page blocked. Current edition/content unverified |
 | [O'Reilly SC-300 crash course with Razi Rais](https://www.oreilly.com/live-events/exam-sc-300-microsoft-identity-and-access-administrator-crash-course/0636920056976/0636920056975/) | Paid | Public agenda totals three hours; older Azure AD terminology. Event availability and paid session unverified |
@@ -743,18 +775,26 @@ Avoid any provider claiming actual/live/leaked exam questions. Use legitimate pr
 
 Resource details from the [SC-401 guide](../guides/SC-401-administering-information-security-microsoft-365.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is a curated starting set, **not a complete list** and not a recommendation to consume everything. Pick the formats that work for you, map them to the July 28, 2026 blueprint, and spend substantial time in a safe tenant. Durations are provider-listed runtimes where public; lab and reading times are planning estimates and access can change.
+This is a curated starting set, **not a complete list** and not a recommendation to consume everything. Pick the formats that work for you, map them to the October 28, 2026 blueprint, and spend substantial time in a safe tenant. Durations are provider-listed runtimes where public; lab and reading times are planning estimates and access can change.
+
+#### October 28 learning route and evidence task
+
+Use the [current four-day Microsoft course, Protect sensitive information with Microsoft Purview in the AI era](https://learn.microsoft.com/en-us/training/courses/sc-401t00), as the primary route. Its six selected path outlines now list **27 modules (9/5/2/5/2/4)**; fresh runtimes were not exposed, so the earlier 20h45 is historical metadata. Complete classification, protection, DLP and retention before the [four-module AI path](https://learn.microsoft.com/en-us/training/paths/purview-protect-ai/), whose prerequisites expect that foundation. John Christopher’s [optional SC-401 course](https://www.udemy.com/course/sc-400-course-microsoft-information-protection-administrator/) now lists **8h27, 91 lectures, 12 sections and an October 2026 update**; that supersedes its earlier February/8h26 listing, without verifying paid lessons or simulations.
+
+**Original worksheet (about 35–50 minutes, editorial estimate):** For a synthetic document used by an employee, external collaborator and AI workflow, create separate rows for classification, resource permission, protected action, retention and investigation. Record the attempted operation, expected allow/deny/preserve result, role, policy version, evidence source and unavailable capability.
+
+**Answer checkpoint:** A label, a blocked action, retained content and an audit event answer different questions. Missing evidence must stay a gap; completing a course or browser simulation does not establish that all workload routes were tested.
 
 | Resource | Access | Estimated time | Best use / freshness note |
 |---|---|---:|---|
-| [Official SC-401 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-401) | Free | 30–45 min | Authoritative objective and change-log checklist; July 28, 2026 baseline. |
-| Six official SC-401 Learn paths: [Information Protection](https://learn.microsoft.com/en-us/training/paths/purview-implement-information-protection/), [DLP](https://learn.microsoft.com/en-us/training/paths/purview-implement-manage-dlp/), [retention](https://learn.microsoft.com/en-us/training/paths/purview-implement-retention/), [Insider Risk](https://learn.microsoft.com/en-us/training/paths/purview-implement-insider-risk-management/), [Audit/search](https://learn.microsoft.com/en-us/training/paths/purview-audit-search/), and [AI](https://learn.microsoft.com/en-us/training/paths/purview-protect-ai/) | Free | 20h45 listed; allow 28–40h with exercises | Best current first-party sequence; repeat weak modules rather than racing the XP total. |
+| [Official SC-401 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-401) | Free | 30–45 min | Authoritative objective and change-log checklist; current October 28, 2026 outline. |
+| Six official SC-401 Learn paths: [Information Protection](https://learn.microsoft.com/en-us/training/paths/purview-implement-information-protection/), [DLP](https://learn.microsoft.com/en-us/training/paths/purview-implement-manage-dlp/), [retention](https://learn.microsoft.com/en-us/training/paths/purview-implement-retention/), [Insider Risk](https://learn.microsoft.com/en-us/training/paths/purview-implement-insider-risk-management/), [Audit/search](https://learn.microsoft.com/en-us/training/paths/purview-audit-search/), and [AI](https://learn.microsoft.com/en-us/training/paths/purview-protect-ai/) | Free | Historical 20h45; current 27 modules without exposed runtime; allow an estimated 28–40h with exercises | Best current first-party sequence; repeat weak modules rather than racing the XP total. |
 | [SC-401T00-A official course](https://learn.microsoft.com/en-us/training/courses/sc-401t00) | Paid instructor-led / free self-study links | 4 days | Structured current course and lab discussion; delivery varies by training partner. |
 | [Official Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/information-security-administrator/practice/assessment?assessment-type=practice&assessmentId=1801497482&practice-assessment-type=certification) and exam sandbox | Free | 45–75 min per attempt plus review | Use diagnostically; research every weak answer in current documentation. |
-| Official [Exam Readiness Zone videos](https://learn.microsoft.com/en-us/shows/exam-readiness-zone/?terms=SC-401) | Free | About 1–2h; verify playlist | Orientation and blueprint review; confirm that each video reflects July 2026. |
-| [John Christopher SC-401 course](https://www.udemy.com/course/sc-400-course-microsoft-information-protection-administrator/) | Paid | 8h26 video; allow 14–20h with simulations | Hands-on demonstrations and browser simulations; updated February 2026, so reconcile the July AI/audit changes. |
+| Official [Exam Readiness Zone videos](https://learn.microsoft.com/en-us/shows/exam-readiness-zone/?terms=SC-401) | Free | About 1–2h; verify playlist | Orientation and blueprint review; confirm that each video reflects the current October 2026 outline. |
+| [John Christopher SC-401 course](https://www.udemy.com/course/sc-400-course-microsoft-information-protection-administrator/) | Paid | 8h27 listed video; allow an estimated 14–20h with exercises | Public listing now updated October 2026, 91 lectures/12 sections; paid lessons/simulations and current-objective completeness unverified. |
 | [John Christopher SC-401 overview on YouTube](https://www.youtube.com/watch?v=CqYs-KtJoeQ) | Free | About 20 min; verify current runtime | Course orientation/sample teaching, not a complete July 2026 study path. This is not John Savill; no current Savill SC-401 end-to-end course was independently verified. |
-| [MeasureUp SC-401 practice test](https://www.measureup.com/microsoft-sc-401-practice-test.html) | Paid; demo available | 146 questions; allow 6–10h across attempts/review | Independent assessment released September 2025; its listed objectives mostly match, but reconcile July 2026 changes and verify explanations. |
+| [MeasureUp SC-401 practice test](https://www.measureup.com/microsoft-sc-401-practice-test.html) | Paid; demo available | 146 questions; allow 6–10h across attempts/review | Independent assessment released September 2025; its listed objectives mostly match, but reconcile current October 2026 changes and verify explanations. |
 | [Microsoft Partner Skilling Hub](https://www.skilling-hub.com/en-US) | Microsoft partner login required | Schedule-dependent; allow the listed start/end time plus labs | Search SC-401, Purview, information security, and security workshops after sign-in; public pages did not expose a stable SC-401 listing or duration. |
 | Microsoft Purview [documentation hub](https://learn.microsoft.com/en-us/purview/) | Free | Ongoing reference; 8–15h focused reading | Use for current prerequisites, supported locations, roles, licensing, limits, and portal changes. |
 
@@ -909,6 +949,14 @@ Targeted searches did not verify an exact current Pluralsight, O’Reilly, Whizl
 
 Resource details from the [MD-102 guide](../guides/MD-102-managing-securing-microsoft-365-endpoints-intune.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
+#### October 28 learning route and evidence task
+
+Use [MD-102T00](https://learn.microsoft.com/en-us/training/courses/md-102t00) as the primary route: identity/enrollment first, then policy and applications, protection, operations and premium/cloud-desktop gaps. Its eight selected paths still list **34 modules**, and the course still lists five instructor-led days; the earlier 29h46 remains historical runtime metadata. Before attempting the [Foundation lab](https://github.com/MicrosoftLearning/MD-102T00-Microsoft-365-Endpoint-Administrator/blob/main/Instructions/Labs/Lab01-Foundation.md), budget for its prepared tenant, seeded licensed users and four VMs. The 90-minute lab estimate excludes unmeasured setup; trial availability and eligibility are **VERIFY CURRENT**. Only its prerequisites and initial user/group exercise were read in this pass.
+
+**Original worksheet (about 30–45 minutes, editorial estimate):** Choose a harmless app assignment from your learning route and record separately the intended cohort, resolved targets, check-in time, detection evidence, effective policy and tested user result. Add a device that never checked in and one that reports an installation failure.
+
+**Answer checkpoint:** Assignment success is not installation evidence, and a missing device is an observation gap rather than a successful outcome. A browser simulation can rehearse the workflow while tenant/device execution remains untested.
+
 #### October 28 learning-resource check
 
 Additional options and access updates; choose relevant resources rather than consuming every route. New course availability, class delivery and licensing are **VERIFY CURRENT**. Published days describe instructor-led scope, not measured self-study time.
@@ -918,7 +966,7 @@ Additional options and access updates; choose relevant resources rather than con
 | [Official MD-102 Foundation lab](https://github.com/MicrosoftLearning/MD-102T00-Microsoft-365-Endpoint-Administrator/blob/main/Instructions/Labs/Lab01-Foundation.md) | Public instructions; prepared disposable tenant, licenses and four VMs required; no hosted lab included | **90 published minutes plus unmeasured setup**; identity, enrollment, Autopilot and RBAC practice; not executed or audited against every October objective |
 
 
-This is a curated starting point, **not a complete list**. It is not meant to be consumed in full. Choose one current primary route, build a real lab, and use assessment results plus the July 2026 blueprint to select supplements. Older MD-102 courses may omit Intune Suite, device preparation changes, automation/reporting, and Security Copilot agents.
+This is a curated starting point, **not a complete list**. It is not meant to be consumed in full. Choose one current primary route, build a real lab, and use assessment results plus the current October 27, 2026 blueprint to select supplements. Older MD-102 courses may omit Intune Suite, device preparation changes, automation/reporting, and Security Copilot agents.
 
 The eight official paths currently list **34 modules**. The earlier **29 hours 46 minutes** and per-path times below are historical metadata; current pages did not expose runtimes in this retrieval. Budget separately for labs and review.
 
@@ -947,13 +995,21 @@ No exact current Whizlabs or MeasureUp MD-102 product page was independently ver
 | [Windows App Management in Microsoft Intune](https://techcommunity.microsoft.com/blog/microsoftmechanicsblog/windows-app-management-in-microsoft-intune/4515194), Zachary Cavanell, Microsoft Mechanics, April 27, 2026; demonstration by Nicole Zhao | Budget 20–30 minutes to read the public transcript and sketch inventory → package → assignment → installation → update evidence. Identify where a mutable payload can affect an earlier ring. | Article/transcript reviewed, video and tenant not tested. Its private-preview deployment label is historical; current detailed docs say public preview. The separate automatic-update and deployment demonstrations do not establish that those options can be combined. |
 | [Windows settings backup becoming a new resilience baseline](https://techcommunity.microsoft.com/blog/windows-itpro-blog/windows-settings-backup-becoming-a-new-resilience-baseline/4530757), Miranda Leschke, Windows IT Pro Blog, July 6, 2026 | Budget 20–30 minutes for a Not Configured/Enabled/Disabled backup-policy table and a separate restore column. Add OS, geography/cloud and file-protection checks. | Main article reviewed, linked video not watched. Default-on is scoped to eligible 26H2 behavior; explicit policy is honored, restore stays separate, and DMA/sovereign restrictions matter. Do not infer every tenant/device already received it. |
 
-Public catalogs and official modules were inspected; paid lessons/questions were not accessed. O'Reilly and both Udemy pages were blocked. Channel/partner responses were shells or profile metadata, and the direct Practice Assessment did not expose question content. Use dated resource metadata to plan study, not as proof of complete current coverage. The existing Agent 365 announcement remains adjacent context, not an Intune-agent availability matrix.
+Public catalogs and official modules were inspected; paid lessons/questions were not accessed. O'Reilly and both Udemy pages were blocked in the earlier review; this learning-resource pass did not recheck those three exact listings. Channel/partner responses were shells or profile metadata, and the direct Practice Assessment did not expose question content. Use dated resource metadata to plan study, not as proof of complete current coverage. The existing Agent 365 announcement remains adjacent context, not an Intune-agent availability matrix.
 
 ### MS-700 — Teams Administrator Associate
 
 Resource details from the [MS-700 guide](../guides/MS-700-managing-microsoft-teams.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is a curated starting point, **not a complete list**, and it is not meant to be consumed in full. Choose one primary path, practice in a tenant, and select supplements from measured gaps. Reconcile all older resources with the July 29, 2026 blueprint, especially MTO, Copilot/AI troubleshooting, current events, policies and external collaboration.
+This is a curated starting point, **not a complete list**, and it is not meant to be consumed in full. Choose one primary path, practice in a tenant, and select supplements from measured gaps. Reconcile all older resources with the October 27, 2026 blueprint, especially MTO, Copilot/AI troubleshooting, current events, policies and external collaboration.
+
+#### October 28 learning route and evidence task
+
+Use the [four-day Microsoft course](https://learn.microsoft.com/en-us/training/courses/ms-700t00) and its four selected paths (**20 modules**) for the primary route, then choose one tenant case across governance, external access, apps and a meeting/call. John Christopher’s [MS-700 Training & Lab Simulations](https://www.udemy.com/course/microsoft-teams-examlabpractice/) is now publicly accessible and lists **11h56, 120 lectures, 16 sections, updated October 2026**. This replaces the earlier blocked-page observation for that listing only; paid lessons and simulations remain unreviewed. Choose it as an alternative explanation style rather than adding it automatically to the full official route.
+
+**Original worksheet (about 35–50 minutes, editorial estimate):** For an approved collaboration app, trace publisher review → effective audience → installation → consent → resource access. Specify a negative case at each boundary, who owns remediation, and what evidence distinguishes a policy restriction from a resource-permission failure.
+
+**Answer checkpoint:** A pinned app, an allowed publisher and a successful consent decision are separate evidence. Accept the workflow only after a permitted persona succeeds and an out-of-scope persona fails. The worksheet can be completed without installing a real third-party app.
 
 The four official paths are [get started](https://learn.microsoft.com/en-us/training/paths/get-started-managing-microsoft-teams/) (3h36), [prepare the environment](https://learn.microsoft.com/en-us/training/paths/prepare-environment-for-microsoft-teams-deployment/) (3h20), [manage chat/teams/channels/apps](https://learn.microsoft.com/en-us/training/paths/manage-chat-teams-channels-apps-microsoft-teams/) (3h02), and [manage meetings/calling](https://learn.microsoft.com/en-us/training/paths/manage-meetings-calling-microsoft-teams/) (9h03), a historical total of **19 hours 1 minute** from the earlier review. Current pages list **20 modules (4/4/3/9)** but do not expose those runtimes in the retrieved text; treat the old times as planning estimates, not freshly verified durations.
 
@@ -966,7 +1022,7 @@ The four official paths are [get started](https://learn.microsoft.com/en-us/trai
 | [Pluralsight MS-700 path](https://www.pluralsight.com/paths/managing-microsoft-teams) | Paid | Five public course listings total 18h58 (path rounds to 19h); 2022/2024 dates require current-doc supplements |
 | [O'Reilly/Packt MS-700 Third Edition](https://www.oreilly.com/library/view/ms-700-managing-microsoft/9781835883945/) by Nate Chamberlain and Peter Rising | Paid | Historical 10h41 / 502 pages, August 2024; page blocked on recheck, current edition/content unverified |
 | [O'Reilly/ACI MS-700 video](https://www.oreilly.com/videos/managing-microsoft-teams/9781836643135/) with Adam Gordon | Paid | Historical 31h03, August 2024; page blocked on recheck, current content unverified |
-| [Udemy MS-700 with labs](https://www.udemy.com/course/microsoft-teams-examlabpractice/) by John Christopher | Paid | Page blocked; historical February 2026 update and runtime unverified now; allow 20–35 hours with practice |
+| [Udemy MS-700 with labs](https://www.udemy.com/course/microsoft-teams-examlabpractice/) by John Christopher | Paid | Public listing: 11h56, 120 lectures/16 sections, updated October 2026; allow an estimated 20–35 hours with practice; paid lessons/simulations and completeness unverified |
 | [MeasureUp MS-700](https://www.measureup.com/microsoft-practice-test-ms-700-managing-microsoft-teams.html) | Paid | 155 questions (69/36/31/19), September 2025 update verified from public listing; paid questions and July/October completeness unreviewed; allow 6–10 hours |
 | [Udemy current-blueprint practice](https://www.udemy.com/course/ms-700-practice-tests-teams-administrator-2026/) by Dean Ellerby | Paid | Page blocked; historical 360-question/August 2026 claims and originality unverified; allow 10–16 hours with source review |
 | [Microsoft Mechanics](https://www.youtube.com/@MSFTMechanics), [Microsoft Reactor](https://www.youtube.com/@MicrosoftReactor), and [John Savill](https://www.youtube.com/@NTFAQGuy) | Public | 2–10 hours selectively; no complete current MS-700 playlist was confirmed |
@@ -987,7 +1043,15 @@ Start with Microsoft's free Practice Assessment. Add paid questions only for a d
 
 Resource details from the [MS-721 guide](../guides/MS-721-collaboration-communications-systems-engineer.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is a curated starting point, **not a complete list**, and it is not meant to be consumed in full. Choose one primary route, build a lab/topology, and add resources only for measured gaps. Reconcile every older source with the April 28, 2026 blueprint, especially Shared Calling, SMS, Queues app, Copilot, current events, Android enrollment/MDEP, flexible workspaces and room/device features.
+This is a curated starting point, **not a complete list**, and it is not meant to be consumed in full. Choose one primary route, build a lab/topology, and add resources only for measured gaps. Reconcile every older source with the retained April 28, 2026 outline and separately compare the future October 29 outline, especially Shared Calling, SMS, Queues app, Copilot, current events, Android enrollment/MDEP, flexible workspaces and room/device features.
+
+#### October 28 learning route and evidence task
+
+Start with the [five-day Microsoft course](https://learn.microsoft.com/en-us/training/courses/ms-721t00) and its two selected paths (**15 modules, 7/8**); choose voice or room investigations from actual weak areas. As of this review on **October 28, 2026**, the [October 29 outline](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-721) is still a future exam baseline. A course update or a five-day duration does not establish exam-transition timing. The existing [Tom Arbuthnot/Marius Nilsen interop briefing](https://empowering.cloud/microsoft-teams-rooms-cloud-video-interop-vs-direct-guest-join-vs-cross-platform-meetings-via-sip/) is useful specialist context: its **2 min** page label describes the synopsis, while video chapters extend past 15 minutes; the full video runtime was not verified or watched.
+
+**Original worksheet (about 30–45 minutes, editorial estimate):** Draw an external SIP endpoint joining your Teams meeting and a Teams Room joining an external meeting. For each direction record endpoint/platform, provider/plan, join method, lobby expectation, required content/peripheral behavior, owner and one failure test. Mark any May 2026 rollout statement for a current support check.
+
+**Answer checkpoint:** Similar meeting names do not establish the same direction, entitlement or feature set. An advertised interop capability needs a direction-specific acceptance test; reading the synopsis is not successful interoperability execution.
 
 The two official paths are [plan and design Teams collaboration communications systems](https://learn.microsoft.com/en-us/training/paths/plan-configure-teams-voice/) (6h38) and [manage Teams collaboration communications systems](https://learn.microsoft.com/en-us/training/paths/manage-teams-voice/) (8h05), a historical total of **14 hours 43 minutes**. Current public pages list **15 modules (7/8)** without those runtimes in retrieved text; use the previous timings only as planning estimates.
 
@@ -1375,6 +1439,14 @@ The five paths list **37 distinct modules** (16 + 8 + 6 + 3 + 4). Their current 
 Resource details from the [MB-330 guide](../guides/MB-330-microsoft-dynamics-365-supply-chain-management-functional-consultant.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
 This is not a complete list and is not meant to be consumed in full. Choose one primary route, build complete product-to-plan and order-to-warehouse journeys, and add another resource only for a measured gap.
+
+#### October 28 learning route and evidence task
+
+Follow the [five-day MB-330 course](https://learn.microsoft.com/en-us/training/courses/mb-330t00) with one purchase-to-receipt case before branching into the existing asset, landed-cost, transportation and planning paths. The eight selected path outlines contain **35 module placements**, including repeated Asset Management foundation content; that is not 35 unique required exam modules. Their current public bodies do not expose a fresh combined runtime, so keep 50h07 as dated historical planning metadata. The existing [lab repository](https://github.com/MicrosoftLearning/MB-330-Microsoft-Dynamics-365-Supply-Chain-Management) remains a public course companion; it does not include a hosted Dynamics environment.
+
+**Original worksheet (about 40–60 minutes, editorial estimate):** Trace a synthetic late purchase-order line through expected receipt, quality decision, warehouse work and downstream demand. At each handoff record document ID, unit/dimension context, owner, observed state, exception and next confirming record. Model a lost handheld response without replaying a transaction.
+
+**Answer checkpoint:** A screen timeout is an unknown result until the authoritative transaction/work record is checked. A plan or a calendar entry alone does not prove that physical work or a new supply commitment was created. This is a tabletop unless an authorized nonproduction environment is available.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
@@ -1943,7 +2015,15 @@ Both public articles were read as supplementary explanations. No linked customer
 
 Resource details from the [DP-800 guide](../guides/DP-800-developing-ai-enabled-database-solutions.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is **not a complete list**, and it is not a recommendation to consume everything. Pick one current primary path, build the labs, and use targeted references or practice for gaps. Times are page-published when available; otherwise they are clearly labeled estimates. Catalogs, access, duration, price and alignment change. DP-800 is new, so several established vendors did not yet have a dedicated full certification path on the pages found; map broader SQL Server 2025 material to the March baseline and separately to October preparation. Avoid dumps or products claiming recalled/live exam questions.
+This is **not a complete list**, and it is not a recommendation to consume everything. Pick one current primary path, build the labs, and use targeted references or practice for gaps. Times are page-published when available; otherwise they are clearly labeled estimates. Catalogs, access, duration, price and alignment change. DP-800 is new, so several established vendors did not yet have a dedicated full certification path on the pages found; map broader SQL Server 2025 material to the current October 19 outline; March-only coverage is historical. Avoid dumps or products claiming recalled/live exam questions.
+
+#### October 28 learning route and evidence task
+
+Use the three paths linked from the [current DP-800 course](https://learn.microsoft.com/en-us/training/courses/dp-800t00) as one sequence: database design, secure delivery, then AI retrieval. Their public outlines still contain **11 modules (4/4/3)**, and the [official exercise index](https://microsoftlearning.github.io/mslearn-sql-developer/) lists eleven matching labs. The three instructor-led days are publisher metadata; the earlier 18h22 self-study total remains historical because fresh path runtimes were not exposed. The existing resource set is sufficient. Rudi Bruchez’s [vector course](https://www.pluralsight.com/courses/sql-server-25-optimize-vector-search) remains 1h19, updated March 30, 2026; its description mentions HNSW while its chapter list names DiskANN, so use current SQL documentation to settle the algorithm and platform assumptions.
+
+**Original worksheet (about 35–50 minutes, editorial estimate):** Choose one object-design exercise, one API/deployment exercise and one retrieval exercise. For each, record platform/build, intended identity, prerequisite, allowed case, denied or stale-data case, expected evidence and cleanup. Add a second-platform column that can explicitly say unsupported or untested.
+
+**Answer checkpoint:** A working vector query on one SQL platform does not prove the API, index or authorization behavior on another. Keep unsupported and unexecuted cases visible instead of marking the whole workflow complete.
 
 #### Start with Microsoft
 

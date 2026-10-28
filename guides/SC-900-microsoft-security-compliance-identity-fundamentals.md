@@ -6,19 +6,17 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: review-required
-last_verified: 2026-09-27
-upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-27
+last_verified: 2026-10-28
+upcoming_change_status: none-announced
+upcoming_change_checked: 2026-10-28
 ---
 
 # SC-900 Microsoft Security, Compliance, and Identity Fundamentals Study Guide
 
-> **REFRESH IN PROGRESS — REVIEW REQUIRED (October 28, 2026).** The official objective page differs from the accepted teaching baseline. Detailed coverage reconciliation is pending; use the linked official blueprint for current scope. Saved objective snapshots and historical full-review dates remain unchanged.
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-02.md#sc-900) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sc-900-coverage-record). Source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900) is authoritative.
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide was checked against the July 28, 2026 objectives and its cited public sources on September 27, 2026; all 58 October objectives were also mapped separately while retaining the accepted July baseline. It may still contain errors or become outdated. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sc-900-coverage-record). The [official SC-900 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900) is authoritative.
-
-**Current baseline:** Skills measured as of July 28, 2026<br>
-**Upcoming blueprint change (checked September 27, 2026):** The English blueprint changes October 21, 2026. The revision names workload identities and Microsoft Threat Intelligence. Domain weights are unchanged. Study the broader identity category; the older agent-ID example alone is insufficient. The current baseline below remains dated separately. See the [official revision](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900).<br>
+**Current baseline:** Skills measured as of October 21, 2026.<br>
+**Blueprint reconciliation (October 28, 2026):** The October 21, 2026 English outline is the accepted current scope. The revised identity objective names workload identities, and the threat-intelligence objective uses Microsoft Threat Intelligence. Study service principals and managed identities as well as agent identities; weights are unchanged. Historical objective bytes and dated reviews are preserved. Recheck localized appointment timing separately.<br>
 **Official source:** [SC-900 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900)
 
 ## How to use this guide
@@ -86,7 +84,7 @@ Compliance is not identical to security, and passing an assessment does not guar
 
 ### Identity concepts
 
-An identity represents a user, workload, device, application, group, or—in the current blueprint—an agent. Authentication proves identity; authorization decides access. An identity provider authenticates identities and issues assertions or tokens. A directory stores identity objects and attributes. Federation establishes trust so one identity system can be used with another relying service.
+An identity represents a user, workload, device, application or group. The current blueprint names workload identities; agent identities are one useful workload example. Authentication proves identity; authorization decides access. An identity provider authenticates identities and issues assertions or tokens. A directory stores identity objects and attributes. Federation establishes trust so one identity system can be used with another relying service.
 
 Microsoft Entra ID is the cloud identity and access service; the [Entra overview](https://learn.microsoft.com/en-us/entra/fundamentals/what-is-entra) places it within the broader Entra family. Windows Server Active Directory Domain Services is an on-premises directory/domain service. Microsoft Entra Domain Services provides managed domain services for Azure workloads. They are related but not interchangeable.
 
@@ -106,7 +104,7 @@ An identity-centered security boundary is useful because an authenticated reques
 | Device identity | Registered, joined, or hybrid-joined device | Endpoint/identity teams |
 | Agent identity | Identity associated with an AI agent/workload | Agent owner plus identity/security governance |
 
-The accepted July blueprint names agent ID; October broadens the identity objective to workload identities. Study the broader category first, then place agent identities within the identity landscape. Microsoft describes [agent identities](https://learn.microsoft.com/en-us/entra/agent-id/what-are-agent-identities) as identities for AI agents, with agent identity blueprints used as reusable lifecycle and governance templates and agent identities representing deployed instances. Do not treat “agent” as merely a human user with a descriptive account name. **VERIFY CURRENT:** Microsoft Entra Agent ID terminology, availability, licensing, portal surfaces, and the exact distinction between an agent identity and other workload identities are evolving.
+The historical July blueprint names agent ID; the current October outline broadens the identity objective to workload identities. Study the broader category first, then place agent identities within the identity landscape. Microsoft describes [agent identities](https://learn.microsoft.com/en-us/entra/agent-id/what-are-agent-identities) as identities for AI agents, with agent identity blueprints used as reusable lifecycle and governance templates and agent identities representing deployed instances. Do not treat “agent” as merely a human user with a descriptive account name. **VERIFY CURRENT:** Microsoft Entra Agent ID terminology, availability, licensing, portal surfaces, and the exact distinction between an agent identity and other workload identities are evolving.
 
 [Workload identities](https://learn.microsoft.com/en-us/entra/workload-id/workload-identities-overview) include application objects, service principals and managed identities. An application object describes an application; a service principal represents its instance in a particular tenant. A managed identity is a special service principal whose credentials the platform manages. A device identity represents hardware/device context, not every program running on it.
 
@@ -226,7 +224,11 @@ Security policies and regulatory-compliance views organize expected controls and
 
 Defender for Cloud can cover Azure and connected multicloud/on-premises resources under configured connectors and Azure Arc/plan prerequisites. Coverage must be verified; portal visibility alone does not prove every workload sends telemetry.
 
-[Current Defender for Cloud release notes](https://learn.microsoft.com/en-us/azure/defender-for-cloud/release-notes) distinguish classic Secure Score from the newer risk-based Cloud Score; always name the score and its assessed population. They also announce that free Foundational CSPM becomes opt-in for **new Azure subscriptions on October 27, 2026**. Existing Azure configuration and AWS/GCP are outside that default change. For a new subscription, verify enablement and coverage before interpreting a blank dashboard as a healthy environment.
+**VERIFY CURRENT:** Name the posture score and its assessed population. Earlier reviewed Microsoft guidance announced October 27 opt-in for new Azure subscriptions, but the current [release notes](https://learn.microsoft.com/en-us/azure/defender-for-cloud/release-notes) omit that notice and the former opt-in page now redirects to the [CSPM overview](https://learn.microsoft.com/en-us/azure/defender-for-cloud/concept-cloud-security-posture-management). The planned default’s implementation is **Unconfirmed — validation needed**; disappearance does not prove cancellation. For any subscription, inspect enabled plans and coverage before interpreting a blank dashboard as healthy.
+
+**Proposed practice extension — not executed:** Labs 3/7: tabletop a subscription with no findings and list plan state, assessment coverage and telemetry needed to distinguish healthy from unassessed.
+
+**Answer checkpoint:** Does a blank posture dashboard prove no risks? No; first establish enabled plan and assessed population.
 
 > **Related item:** Posture management asks whether a system is configured to reduce risk; threat protection asks whether suspicious activity is occurring. Mature programs need both prevention and detection/response.
 
@@ -502,6 +504,14 @@ These are original questions with explanations, not recalled exam content.
 ## Places to learn
 
 This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Pick the formats that fit you. Published runtimes are distinguished from suggested study allocations and earlier metadata. Labs, note-taking, review and independent practice add time; no paid course or signed-in assessment was completed in this review.
+
+### October 28 learning route and evidence task
+
+Begin with the [one-day Microsoft introductory course](https://learn.microsoft.com/en-us/training/courses/sc-900t00), then use this guide’s control map and tabletop labs before taking an assessment. Choose one additional explanation style only for a measured gap: the [Christopher Wojahn/Microsoft Press course](https://www.linkedin.com/learning/microsoft-security-compliance-and-identity-fundamentals-sc-900-cert-prep-by-microsoft-press) still lists **3h32, released June 11, 2024**; the [Vlad Catrinescu Pluralsight path](https://www.pluralsight.com/paths/microsoft-security-compliance-and-identity-fundamentals-sc-900) still totals **8h45** of 2023–2024 lessons. Their public metadata was rechecked, while paid lessons and current-blueprint completeness were not. Existing resources are adequate; no tenant purchase is required for the tabletop route.
+
+**Original worksheet (about 25–35 minutes, editorial estimate):** For a confidential file shared with a contractor, assign six separate questions to an evidence owner: who authenticated, who may open it, which risky action is restricted, which copy must remain, what activity was recorded and who can investigate. Add a failed-access case and a deletion request.
+
+**Answer checkpoint:** Select controls from the question and evidence boundary. Encryption, access control, DLP, retention and investigation cannot be substituted for one another simply because each is a security feature.
 
 | Resource | Access | Estimated time | Best use and caveat |
 |---|---|---:|---|

@@ -7,18 +7,16 @@ generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: review-required
 last_verified: 2026-10-28
-upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-27
+upcoming_change_status: none-announced
+upcoming_change_checked: 2026-10-28
 ---
 
 # MD-102 Managing and Securing Microsoft 365 Endpoints by Using Intune Study Guide
 
-> **REFRESH IN PROGRESS — REVIEW REQUIRED (October 28, 2026).** The official objective page differs from the accepted teaching baseline. Detailed coverage reconciliation is pending; use the linked official blueprint for current scope. Saved objective snapshots and historical full-review dates remain unchanged.
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-02.md#md-102) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#md-102-coverage-record). Source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/md-102) is authoritative.
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide was checked against the July 24, 2026 objectives and cited public sources on September 27, 2026. The [deep review](../docs/research/2026-09-27-md-102-deep-review.md) individually maps 83 October objectives; live labs and independent human review remain pending. It may still contain errors or become outdated. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#md-102-coverage-record). The [official MD-102 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/md-102) is authoritative.
-
-**Current baseline:** Skills measured as of July 24, 2026<br>
-**Upcoming blueprint change (checked September 27, 2026):** The English blueprint changes October 27, 2026. The revision clarifies Android corporate-owned devices with a work profile and uses current Windows Backup, Microsoft Tunnel VPN Gateway, Apple Business Manager, Managed Google Play, and Remediations terminology. It also corrects local-administrator-password wording. Domain weights are unchanged. The current baseline below remains dated separately. See the [official revision](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/md-102).<br>
+**Current baseline:** Skills measured as of October 27, 2026.<br>
+**Blueprint reconciliation (October 28, 2026):** The October 27, 2026 English outline is the accepted current scope. The revision clarifies Android work-profile ownership and current Windows Backup, Microsoft Tunnel VPN Gateway, Microsoft 365 apps, Apple Business Manager, Managed Google Play and Remediations wording. It corrects local-administrator-password terminology; weights are unchanged. Historical objective bytes and dated reviews are preserved. Recheck localized appointment timing separately.<br>
 **Exam:** 100 minutes; seven exam languages; annual certification renewal. The official instructor-led course is five days.
 
 **Official source:** [MD-102 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/md-102)
@@ -29,11 +27,11 @@ upcoming_change_checked: 2026-09-27
 
 **Confirmed — VERIFY CURRENT (October 28, 2026).** Intune's Windows 11 26H2 security baseline is available; existing profiles do not automatically adopt it. For May 2023-or-later profiles, updating creates a new instance with a keep/discard-customizations choice; review settings and assign/test deliberately before retiring the old assignment. Do not assume the copy is deployed or every planned 26H2 setting is included. The October release excludes Configure NetBIOS settings pending supported in-market availability. [What's new in Microsoft Intune](https://learn.microsoft.com/en-us/intune/whats-new/) · [Configure security baseline policies in Microsoft Intune](https://learn.microsoft.com/en-us/intune/device-security/security-baselines/configure-baselines)
 
-These are bounded operational updates, not a completed objective rebaseline. Product and tenant exercises were not run. Earlier unresolved support and documentation gaps remain.
+These dated operational notes supplement the current objective treatment. Product and tenant exercises were not run; unresolved source and support gaps remain stated at the affected topic.
 
 ## How to use this guide
 
-MD-102 tests endpoint operations across Windows, Android, iOS/iPadOS, macOS, specialty devices, and Cloud PCs. The July 2026 blueprint adds substantial Intune Suite, automation, analytics, reporting, and Security Copilot agent depth. Older four-domain material remains useful but is incomplete.
+MD-102 tests endpoint operations across Windows, Android, iOS/iPadOS, macOS, specialty devices, and Cloud PCs. The current October outline retains the substantial July expansion in Intune Suite, automation, analytics, reporting, and Security Copilot agent depth. Older four-domain material remains useful but is incomplete.
 
 For every scenario, trace:
 
@@ -160,7 +158,11 @@ Choose from requirements, not novelty:
 
 Keep the initial required app/policy set small and reliable. A large blocking list turns one app failure into a provisioning failure. Separate day-zero access/security from day-one convenience. Troubleshoot device identity and policy assignment, then device ESP, user ESP, app detection/requirements/dependencies, certificate/network/time and log evidence.
 
-**Device-preparation limits:** The current comparison lists user-driven and automatic modes, Entra join, up to **25 essential apps and ten scripts**, and device-based OOBE configuration. It supports tenant association without requiring classic hardware-hash registration. Its provisioning group requires the **Intune Provisioning Client** owner. Do not apply classic ESP, hybrid join or user-stage assumptions to device preparation. Supported old build numbers in a feature table do not establish that an OS version remains in lifecycle support.
+**Device-preparation limits — VERIFY CURRENT:** The [comparison](https://learn.microsoft.com/en-us/autopilot/device-preparation/compare) lists user-driven/automatic modes, Entra join, 25 essential apps, ten scripts and device-based OOBE. Its lower requirements table still conflicts on installing more than ten apps; the [January 30 release entry](https://learn.microsoft.com/en-us/autopilot/device-preparation/whats-new) explicitly confirms 25 for both modes. Keep deployment-timeout testing. Device preparation needs an Intune Provisioning Client-owned provisioning group. For a classic-registered device, **tenant association selects device preparation; without association the classic profile wins**. Supported old build rows do not prove lifecycle support.
+
+**Proposed practice extension — not executed:** Lab 3: compare registered+associated versus registered+unassociated device designs, document selected flow and avoid deregistering real devices. Record app count, timeout and source-table discrepancy.
+
+**Answer checkpoint:** Does classic Autopilot registration always take precedence? No: current comparison makes tenant association decisive for device preparation.
 
 ### Windows 11 upgrades, Backup/Restore, and Cloud PCs
 
@@ -188,6 +190,29 @@ Android, Apple and macOS expose platform-specific controls and enrollment depend
 
 Assignment filters include or exclude devices at evaluation based on properties, refining a broad group assignment. Enrollment-time grouping can place supported newly enrolled devices into an appropriate group earlier in provisioning. A filter is not a security group and a scope tag is not a target. Test assignment evidence on the device.
 
+#### Worked profile selection — platform, enrollment and result
+
+**Original example — proposed; service/tenant execution not performed.**
+
+Use one synthetic requirement per supported platform and document the exact setting available in the tenant:
+
+| Cohort | Pilot profile decision | Verification |
+|---|---|---|
+| Android dedicated corporate device | Supported Android Enterprise kiosk template and approved app set | One intended app works; escape/unapproved app path fails as designed |
+| Supervised corporate iPad | A supported iOS/iPadOS Wi-Fi or device-restriction template | Enrollment/supervision prerequisite holds; setting-level result matches |
+| Corporate macOS device | A macOS Wi-Fi or supported Settings Catalog configuration | Correct platform payload arrives and a clean connection succeeds |
+| Teams Room, HoloLens or Zebra specialty device | Device-specific supported profile/OEM setting after checking its support matrix | Actual appliance function works; a desktop setting is not presumed applicable |
+
+For each row, create the matching platform/profile type, set one supported value, assign a tiny test group refined by a filter if appropriate, and inspect device and per-setting status. Record Not applicable, Conflict, Error and Pending separately; do not recast them as success. Roll back the test assignment and verify the restored state. This is a design exercise unless the learner records actual device evidence.
+
+**Related item:** custom/imported profile fields can expose embedded secrets to users/apps with profile-read permissions; Base64 is encoding, not protection. Prefer certificate-based access and restrict configuration-read roles.
+
+**Question:** Does a scope tag deploy a profile to the macOS pilot?
+
+**Answer:** No. Assignments and filters select devices; scope tags govern administrator visibility and management.
+
+[Microsoft Intune device configuration profiles](https://learn.microsoft.com/en-us/intune/intune-service/configuration/device-profiles)
+
 ### Intune Suite capabilities
 
 The [Microsoft Intune Suite](https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/intune-add-ons) packages advanced capabilities under applicable licensing. Know the problem each solves:
@@ -202,6 +227,25 @@ The [Microsoft Intune Suite](https://learn.microsoft.com/en-us/intune/intune-ser
 Licensing and availability change. **VERIFY CURRENT:** add-on names, included plans, platform support, role requirements, limits and portal locations.
 
 **Remote Help scope:** [Unattended Windows support](https://learn.microsoft.com/en-us/intune/remote-help/plan) requires a physical, corporate-owned, Intune-managed x64 device with Entra join or hybrid join and a specifically scoped unattended remote-sign-in permission. Windows 365/AVD, BYOD and virtual devices are excluded from that mode even where attended help works. Validate IME, the required AVD agent/bootloader, Remote Desktop and power/network prerequisites. Ordinary full-control permission alone is insufficient; a sleeping device cannot accept the request.
+
+#### Worked advanced-capability workflows
+
+**Original example — proposed; service/tenant execution not performed.**
+
+**VERIFY CURRENT:** licenses, supported platforms and tenant availability precede these disposable pilots.
+
+- **EPM:** deploy an elevation-settings policy that enables EPM, then a narrowly identified elevation rule for a harmless signed utility. Prefer a protected path and user-confirmed or support-approved elevation. Inspect elevation reports and test an altered binary and child process. Permitting all elevated children bypasses their own rule evaluation, including deny rules.
+- **Enterprise App Catalog:** select the exact publisher, architecture, language and version, inspect supplied install/requirements/detection defaults, assign a pilot, and verify detected installation. Catalog packaging is not a grant of the application's commercial rights or an organizational security approval. Review a new version and its supersedence separately.
+- **Cloud PKI:** choose a cloud root/issuing hierarchy or BYOCA design, distribute the required trust chains, configure a SCEP device profile and target the test cohort. Verify issued subject, issuer, EKU, validity and the relying party's trust, then tabletop revocation. Issuing a client certificate does not supply the Wi-Fi/VPN server's TLS certificate.
+- **Android Tunnel for MAM:** establish the existing gateway/site first, then deploy Defender app configuration, Edge app configuration and Edge app protection to the same test-user group. Install required client/broker apps even though the device remains unenrolled. Verify organizational access and work/personal identity switching. MAM Tunnel does not support Always-on VPN; its Edge Strict Tunnel Mode has a different scope from the enrolled-device setting.
+
+For each workflow retain resolved targets, effective setting, user action, log/report, failure case and cleanup. Creation success alone proves neither elevation safety, installed app, trusted certificate nor reachable private resource.
+
+**Question:** Can creating a Cloud PKI issuing CA alone make VPN authentication work?
+
+**Answer:** No. Deploy the client certificate and both sides of the trust chain, configure the VPN/relying party, and test identity, EKU, validity and revocation.
+
+[Creating elevation rules with Endpoint Privilege Management](https://learn.microsoft.com/en-us/intune/epm/create-elevation-rules) · [Add an Enterprise App Catalog App to Microsoft Intune](https://learn.microsoft.com/en-us/intune/intune-service/apps/apps-add-enterprise-app) · [Microsoft Cloud PKI deployment for Microsoft Intune](https://learn.microsoft.com/en-us/intune/cloud-pki/deployment-models) · [Microsoft Tunnel for Mobile Application Management for Android](https://learn.microsoft.com/en-us/intune/intune-service/protect/microsoft-tunnel-mam-android)
 
 ### Remote actions and support evidence
 
@@ -228,6 +272,32 @@ Use device query for near-real-time supported device data with KQL syntax, Intun
 [Single-device query](https://learn.microsoft.com/en-us/intune/advanced-analytics/device-query) contacts a supported corporate Windows device through mandatory Windows Push Notification Services. It requires the appropriate query permission, supported join/management and Advanced Analytics entitlement. Failure to reach the device is not a zero-row statement about its health. KQL is a supported subset, with result truncation and query limits; do not blindly transplant a Sentinel query.
 
 [Multiple-device query](https://learn.microsoft.com/en-us/intune/advanced-analytics/device-query-multiple-devices) examines collected inventory across supported corporate platforms. Windows needs a properties-catalog collection policy. Check inventory age and missing-device coverage before creating an assignment group from results. Tables can contain several components per device: counting CPU or disk rows is not necessarily counting distinct devices.
+
+#### Worked device query — rows are not fleet coverage
+
+**Original example — proposed; service/tenant execution not performed.**
+
+Select one eligible, reachable corporate Windows device and run:
+
+~~~kusto
+OsVersion
+| take 5
+~~~
+
+Then compare:
+
+~~~kusto
+DiskDrive
+| count
+~~~
+
+The first inspects OS-version data on the selected endpoint; the second counts returned disk records. A result of 2 means two disk rows on that device, not two managed devices. Inspect the returned schema before projecting properties and preserve the selected device ID, time and result limits. A WNS/connectivity or permission failure is not a zero-disk result. **VERIFY CURRENT:** supported KQL subset, properties and truncation limits. This read-only example does not trigger a remote action.
+
+**Question:** Does DiskDrive | count returning 2 prove two healthy devices?
+
+**Answer:** No. It counts disk records from one selected device and says nothing about unqueried fleet members.
+
+[Device query](https://learn.microsoft.com/en-us/intune/advanced-analytics/device-query)
 
 ---
 
@@ -345,7 +415,7 @@ PowerShell can call Graph and device-management cmdlets/modules, but module name
 
 ### Security Copilot agents in Intune
 
-The July objectives specifically require investigating threats, analyzing device performance and responding to recommendations from Security Copilot agents in Intune. The [official agent overview](https://learn.microsoft.com/en-us/intune/copilot/agents/) says agents operate within Intune with role-based access and administrator oversight. **VERIFY CURRENT:** available agents, permissions, data access, actions, capacity/licensing, preview/GA status and geography.
+The current October objectives specifically require investigating threats, analyzing device performance and responding to recommendations from Security Copilot agents in Intune. The [official agent overview](https://learn.microsoft.com/en-us/intune/copilot/agents/) says agents operate within Intune with role-based access and administrator oversight. **VERIFY CURRENT:** available agents, permissions, data access, actions, capacity/licensing, preview/GA status and geography.
 
 Treat a recommendation as a hypothesis with evidence:
 
@@ -538,7 +608,28 @@ Build a backup/restore matrix for version, join, account, policy and OOBE/first-
 ---
 
 
+## Final readiness checklist
+
+- I can explain every objective as a target, configuration, effective-state check, failure mode, evidence source and recovery.
+- I can separate device identity, enrollment, ownership, compliance, application protection and resource access.
+- I can enroll and troubleshoot Windows, Android, Apple and macOS using appropriate corporate/BYOD methods.
+- I can choose and operate Autopilot/device preparation, profiles, Intune Suite controls, remote actions and Windows 365.
+- I can deploy endpoint security/update policy with pilots, recovery and cross-platform limitations.
+- I can package, assign, detect, update, protect, configure, selectively wipe and troubleshoot applications.
+- I can automate with Graph/PowerShell safely and evaluate Security Copilot agent recommendations with human accountability.
+- I can build, test, and operate distinct alert paths for enrollment failure, compliance drift, and configuration conflict while accounting for source latency and false positives.
+- I completed or tabletop-tested all ten labs and can prove both allowed and denied outcomes.
+- I passed an independent readiness check without relying on recalled live-exam content.
+
 ## Places to learn
+
+### October 28 learning route and evidence task
+
+Use [MD-102T00](https://learn.microsoft.com/en-us/training/courses/md-102t00) as the primary route: identity/enrollment first, then policy and applications, protection, operations and premium/cloud-desktop gaps. Its eight selected paths still list **34 modules**, and the course still lists five instructor-led days; the earlier 29h46 remains historical runtime metadata. Before attempting the [Foundation lab](https://github.com/MicrosoftLearning/MD-102T00-Microsoft-365-Endpoint-Administrator/blob/main/Instructions/Labs/Lab01-Foundation.md), budget for its prepared tenant, seeded licensed users and four VMs. The 90-minute lab estimate excludes unmeasured setup; trial availability and eligibility are **VERIFY CURRENT**. Only its prerequisites and initial user/group exercise were read in this pass.
+
+**Original worksheet (about 30–45 minutes, editorial estimate):** Choose a harmless app assignment from your learning route and record separately the intended cohort, resolved targets, check-in time, detection evidence, effective policy and tested user result. Add a device that never checked in and one that reports an installation failure.
+
+**Answer checkpoint:** Assignment success is not installation evidence, and a missing device is an observation gap rather than a successful outcome. A browser simulation can rehearse the workflow while tenant/device execution remains untested.
 
 ### October 28 learning-resource check
 
@@ -549,7 +640,7 @@ Additional options and access updates; choose relevant resources rather than con
 | [Official MD-102 Foundation lab](https://github.com/MicrosoftLearning/MD-102T00-Microsoft-365-Endpoint-Administrator/blob/main/Instructions/Labs/Lab01-Foundation.md) | Public instructions; prepared disposable tenant, licenses and four VMs required; no hosted lab included | **90 published minutes plus unmeasured setup**; identity, enrollment, Autopilot and RBAC practice; not executed or audited against every October objective |
 
 
-This is a curated starting point, **not a complete list**. It is not meant to be consumed in full. Choose one current primary route, build a real lab, and use assessment results plus the July 2026 blueprint to select supplements. Older MD-102 courses may omit Intune Suite, device preparation changes, automation/reporting, and Security Copilot agents.
+This is a curated starting point, **not a complete list**. It is not meant to be consumed in full. Choose one current primary route, build a real lab, and use assessment results plus the current October 27, 2026 blueprint to select supplements. Older MD-102 courses may omit Intune Suite, device preparation changes, automation/reporting, and Security Copilot agents.
 
 The eight official paths currently list **34 modules**. The earlier **29 hours 46 minutes** and per-path times below are historical metadata; current pages did not expose runtimes in this retrieval. Budget separately for labs and review.
 
@@ -578,17 +669,4 @@ No exact current Whizlabs or MeasureUp MD-102 product page was independently ver
 | [Windows App Management in Microsoft Intune](https://techcommunity.microsoft.com/blog/microsoftmechanicsblog/windows-app-management-in-microsoft-intune/4515194), Zachary Cavanell, Microsoft Mechanics, April 27, 2026; demonstration by Nicole Zhao | Budget 20–30 minutes to read the public transcript and sketch inventory → package → assignment → installation → update evidence. Identify where a mutable payload can affect an earlier ring. | Article/transcript reviewed, video and tenant not tested. Its private-preview deployment label is historical; current detailed docs say public preview. The separate automatic-update and deployment demonstrations do not establish that those options can be combined. |
 | [Windows settings backup becoming a new resilience baseline](https://techcommunity.microsoft.com/blog/windows-itpro-blog/windows-settings-backup-becoming-a-new-resilience-baseline/4530757), Miranda Leschke, Windows IT Pro Blog, July 6, 2026 | Budget 20–30 minutes for a Not Configured/Enabled/Disabled backup-policy table and a separate restore column. Add OS, geography/cloud and file-protection checks. | Main article reviewed, linked video not watched. Default-on is scoped to eligible 26H2 behavior; explicit policy is honored, restore stays separate, and DMA/sovereign restrictions matter. Do not infer every tenant/device already received it. |
 
-Public catalogs and official modules were inspected; paid lessons/questions were not accessed. O'Reilly and both Udemy pages were blocked. Channel/partner responses were shells or profile metadata, and the direct Practice Assessment did not expose question content. Use dated resource metadata to plan study, not as proof of complete current coverage. The existing Agent 365 announcement remains adjacent context, not an Intune-agent availability matrix.
-
-## Final readiness checklist
-
-- I can explain every objective as a target, configuration, effective-state check, failure mode, evidence source and recovery.
-- I can separate device identity, enrollment, ownership, compliance, application protection and resource access.
-- I can enroll and troubleshoot Windows, Android, Apple and macOS using appropriate corporate/BYOD methods.
-- I can choose and operate Autopilot/device preparation, profiles, Intune Suite controls, remote actions and Windows 365.
-- I can deploy endpoint security/update policy with pilots, recovery and cross-platform limitations.
-- I can package, assign, detect, update, protect, configure, selectively wipe and troubleshoot applications.
-- I can automate with Graph/PowerShell safely and evaluate Security Copilot agent recommendations with human accountability.
-- I can build, test, and operate distinct alert paths for enrollment failure, compliance drift, and configuration conflict while accounting for source latency and false positives.
-- I completed or tabletop-tested all ten labs and can prove both allowed and denied outcomes.
-- I passed an independent readiness check without relying on recalled live-exam content.
+Public catalogs and official modules were inspected; paid lessons/questions were not accessed. O'Reilly and both Udemy pages were blocked in the earlier review; this learning-resource pass did not recheck those three exact listings. Channel/partner responses were shells or profile metadata, and the direct Practice Assessment did not expose question content. Use dated resource metadata to plan study, not as proof of complete current coverage. The existing Agent 365 announcement remains adjacent context, not an Intune-agent availability matrix.

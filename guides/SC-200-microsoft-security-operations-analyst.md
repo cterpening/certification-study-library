@@ -6,20 +6,18 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: review-required
-last_verified: 2026-09-27
-upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-27
+last_verified: 2026-10-28
+upcoming_change_status: none-announced
+upcoming_change_checked: 2026-10-28
 ---
 
 # SC-200 Microsoft Security Operations Analyst Study Guide
 
-> **REFRESH IN PROGRESS — REVIEW REQUIRED (October 28, 2026).** The official objective page differs from the accepted teaching baseline. Detailed coverage reconciliation is pending; use the linked official blueprint for current scope. Saved objective snapshots and historical full-review dates remain unchanged.
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-02.md#sc-200) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sc-200-coverage-record). Source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200) is authoritative.
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; TWO PRODUCT-DOCUMENTATION CONFLICTS OPEN; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 27, 2026; all 54 October objectives were separately mapped while retaining the accepted July baseline. Sentinel Continuous eligibility and lake-tier hunting access still need clarification. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sc-200-coverage-record). The [official SC-200 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200) is authoritative.
-
-**Current baseline:** Skills measured as of July 28, 2026; accepted objective snapshot retained; the current live page also presents October preparation.<br>
+**Current baseline:** Skills measured as of October 21, 2026.<br>
 **Exam state:** Active; the official credential page lists no retirement date.<br>
-**Upcoming blueprint change (checked September 27, 2026):** The English blueprint changes October 21, 2026. The collection objective explicitly names Azure activity logs. Domain weights are unchanged. Keep control-plane activity logs distinct from resource logs and from the connector or policy used to collect them. The current baseline below remains dated separately. See the [official revision](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200).<br>
+**Blueprint reconciliation (October 28, 2026):** The October 21, 2026 English outline is the accepted current scope. The collection objective now explicitly names Azure activity logs. Keep control-plane activity, resource logs and their collection mechanisms distinct. Domain weights are unchanged. Historical objective bytes and dated reviews are preserved. Recheck localized appointment timing separately.<br>
 **Localized exams:** Microsoft says localized versions normally follow the English update by approximately eight weeks; verify your language version before scheduling.<br>
 **Platform transition:** Microsoft says Sentinel in the Azure portal stops being supported after March 31, 2027. Learn the unified Microsoft Defender portal experience and understand where current Azure-portal workflows still differ. **VERIFY CURRENT** before planning a migration.<br>
 **Official source:** [SC-200 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200)
@@ -37,7 +35,7 @@ security question
   -> validation, evidence, tuning, and closure
 ```
 
-Read Sections 1–3, work all three scenarios, complete or tabletop the ten labs, and answer all 44 checks. Keep a current test tenant or Microsoft-provided lab nearby. The July 2026 blueprint includes fast-moving Sentinel platform, graph, data-lake, MCP, Security Copilot, and agentic capabilities, so compare dated Microsoft sources and record unresolved contradictions. This review found conflicting Sentinel NRT and lake-access statements; the relevant sections explain the limits instead of assuming universal tenant support.
+Read Sections 1–3, work all three scenarios, complete or tabletop the ten labs, and answer all 44 checks. Keep a current test tenant or Microsoft-provided lab nearby. The current October outline retains July’s fast-moving Sentinel platform, graph, data-lake, MCP, Security Copilot, and agentic capabilities, so compare dated Microsoft sources and record unresolved contradictions. This review found conflicting Sentinel NRT and lake-access statements; the relevant sections explain the limits instead of assuming universal tenant support.
 
 > **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
 
@@ -188,7 +186,7 @@ Test four planes independently:
 
 #### Understand Analytics, Data lake, XDR, Basic/Auxiliary, and long-term data
 
-The July blueprint explicitly names Analytics, Data lake, and XDR tiers. Think in terms of purpose rather than memorizing one price table:
+The current October blueprint explicitly names Analytics, Data lake, and XDR tiers. Think in terms of purpose rather than memorizing one price table:
 
 - **Analytics tier** supports low-latency, full analytics used by detections, investigations, dashboards, and response.
 - **Sentinel data lake tier** provides economical long-term, high-volume security data for historical investigation, jobs, notebooks, graph, and AI-connected scenarios. It is not a drop-in substitute for every real-time analytic.
@@ -292,6 +290,12 @@ This is an illustrative query for the rule's configured lookback, not a tested t
 
 **Continuous eligibility needs a tenant check:** Defender's custom-detection page lists supported Sentinel tables and requires one supported table, supported operators, no joins/unions/`externaldata`, and no query comments for Continuous (NRT). The unified-hunting known-issues page still says NRT custom detections with Sentinel data are unavailable. These Microsoft pages conflict. Do not promise Sentinel Continuous support; validate the exact table/rule wizard and current documentation or use a supported scheduled route. This remains an open review finding.
 
+**VERIFY CURRENT:** A table appearing in the Continuous eligibility list is insufficient: [only generally available columns support Continuous](https://learn.microsoft.com/en-us/defender-xdr/custom-detection-rules). Record every projected/filtered column as well as table and operators. This extra check does not resolve the separate Sentinel-NRT documentation conflict.
+
+**Proposed practice extension — not executed:** Lab 9: add column GA/preview status to Continuous eligibility matrix; do not treat wizard acceptance as proof a scheduled or Continuous rule emitted an alert.
+
+**Answer checkpoint:** Can a supported Continuous table use every preview column? No; current documentation restricts Continuous to GA columns.
+
 #### Sentinel analytics rule types
 
 - **Scheduled** rules run KQL on a configurable schedule/lookback; handle ingestion delay, thresholds, grouping, suppression, and event-to-alert logic.
@@ -308,6 +312,20 @@ Entity mappings connect alerts to accounts, hosts, IPs, URLs, cloud resources, a
 Map each analytic to ATT&CK tactics/techniques and verify it with safe tests. ATT&CK shows coverage intent, not effectiveness. Measure data health, test pass rate, false-positive/false-negative observations, analyst disposition, and detection-to-containment time.
 
 > **Related item:** Detection-as-code can source-control templates, queries, workbooks, playbooks, and tests. Deployment automation does not remove the need for environment-specific baselines and response ownership.
+
+#### Worked anomaly tuning — compare before promotion
+
+**Original example — proposed; service/tenant execution not performed.**
+
+Choose an available anomaly template whose required source data is actually present. Inspect its parameters, threshold, cadence and version. Duplicate the built-in rule to customize it; the original cannot be edited or deleted. Enable the duplicate in Flighting, change one supported parameter, and compare a representative sample with the original before promoting it to Production.
+
+For a synthetic tuning review, the original generates 40 records, of which an analyst judges 30 benign; the duplicate generates 18, including 12 benign and six worth investigation. Lower volume alone does not prove improvement: check which previously useful cases disappeared and retain a missed-case set. Query Anomalies for the selected rule ID and compare source coverage and time windows. **VERIFY CURRENT:** templates, parameters, training periods and supported sources vary. An anomaly is a deviation requiring investigation, rather than proof of malicious activity.
+
+**Question:** Can the original built-in anomaly be edited to reduce noise?
+
+**Answer:** Create and tune a duplicate in Flighting; compare useful and missed cases before production promotion.
+
+[Work with anomaly detection analytics rules in Microsoft Sentinel](https://learn.microsoft.com/en-us/azure/sentinel/work-with-anomaly-rules)
 
 ## 2. Respond to security incidents
 
@@ -769,7 +787,15 @@ These are original study questions, not recalled exam content.
 
 ## Places to learn
 
-This is a curated starting point, not a complete list. Do **not** try to consume every resource. Pick a primary path that fits how you learn, use documentation and labs for weak areas, and use assessments to decide what to revisit. Verify every course against the July 28, 2026 blueprint—especially data-lake tiers/jobs, Sentinel Graph, agentic investigation, embedded Security Copilot, and Sentinel MCP Server.
+This is a curated starting point, not a complete list. Do **not** try to consume every resource. Pick a primary path that fits how you learn, use documentation and labs for weak areas, and use assessments to decide what to revisit. Verify every course against the October 21, 2026 blueprint—especially data-lake tiers/jobs, Sentinel Graph, agentic investigation, embedded Security Copilot, and Sentinel MCP Server.
+
+### October 28 learning route and evidence task
+
+The [current four-day Microsoft course](https://learn.microsoft.com/en-us/training/courses/sc-200t00) and ten selected path outlines still provide **59 module placements**. Begin with [KQL](https://learn.microsoft.com/en-us/training/paths/sc-200-utilize-kql-for-azure-sentinel/), then workspace/ingestion, product investigations, detections and hunting; use Security Copilot after you can inspect its underlying evidence. This is a suggested learning order, not a replacement blueprint. The [course lab README](https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst) is a written companion, with separate training materials and preparation requirements; no hosted environment or full fresh runtime was established. Existing resources are sufficient for this route.
+
+**Original worksheet (about 30–45 minutes, editorial estimate):** Inventory twelve expected log producers. Supply synthetic timely records for nine and none for three. Build a freshness worksheet with producer ID, source time, arrival time, expected cadence, last-seen age and triage owner; include the three absent producers in the denominator.
+
+**Answer checkpoint:** Nine timely arrivals out of nine returned records do not establish twelve healthy producers. Mark the three silent sources unresolved and distinguish missing telemetry from a negative security finding. No connector, KQL job or response action was executed for this exercise.
 
 ### Time-planning summary
 
@@ -791,7 +817,7 @@ This is a curated starting point, not a complete list. Do **not** try to consume
 
 ### Official Microsoft resources
 
-- [SC-200 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200) — accepted July 28 baseline, published October 21 revision and change log.
+- [SC-200 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200) — current accepted October 21 outline and change log; July bytes archived.
 - [Security Operations Analyst Associate credential](https://learn.microsoft.com/en-us/credentials/certifications/security-operations-analyst/) — status, renewal, 100-minute exam, free Practice Assessment, sandbox, and prep-video entry point.
 - [SC-200T00-A course](https://learn.microsoft.com/en-us/training/courses/sc-200t00) — four instructor-led days and the current self-directed syllabus.
 - [Mitigate threats using Defender XDR](https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-microsoft-365-defender/) — earlier 6 hours 6 minutes duration is historical; inspect current modules.
