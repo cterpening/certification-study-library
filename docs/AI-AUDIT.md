@@ -56,6 +56,10 @@ missing contemporaneous evidence or renew an audit. Audits on or after the curre
 blueprint-check date still require a current source-validation record. See the
 [snapshot acceptance checklist](AUTOMATION.md#review-checklist-for-an-objective-change-pr).
 
+Explicit same-day source-review supersession binds date-applicable audits to the
+unsuperseded review, independently of array order. Superseded passes cannot renew a
+current source gate; the earliest-record legacy fallback retains its original version.
+
 ## Ten required checks
 
 Each result records `passed`, `failed`, `blocked`, or `not-applicable` plus concise evidence for every check.

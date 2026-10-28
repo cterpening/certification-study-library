@@ -4,9 +4,9 @@ As of 2026-10-28; program started 2026-09-27.
 
 Recorded deep reviews in this program, separate from historical source validation, live labs and automated monitoring.
 
-55 guides; 52 have review work or unresolved blockers; 50 are eligible for review now.
+55 guides; 51 have review work or unresolved blockers; 48 are eligible for review now.
 
-Next batch: AB-210, AB-650, MS-102, PL-400, AB-100, AI-500, DP-300, DP-420, DP-600, DP-700.
+Next batch: AB-210, AB-650, MS-102, PL-400, AI-500, DP-300, DP-420, DP-600, DP-700, DP-750.
 
 A reviewed guide can still have unexecuted labs. Blockers stay visible. Recently reviewed guides wait for a later dated event or the review interval; changed guide text returns immediately. Events dated on or before the latest review remain visible in the work packet but do not repeatedly schedule that same review. Set a later review date for an unresolved event that needs another check.
 
@@ -16,7 +16,6 @@ A reviewed guide can still have unexecuted labs. Blockers stay visible. Recently
 | [AB-650](../guides/AB-650-ai-services-administrator-associate.md) | changed-since-review | 2026-09-28 | 2026-10-28 | offline-only |
 | [MS-102](../guides/MS-102-microsoft-365-administrator.md) | changed-since-review | 2026-09-28 | 2026-10-28 | offline-only |
 | [PL-400](../guides/PL-400-microsoft-power-platform-developer.md) | changed-since-review | 2026-09-27 | 2026-10-28 | offline-only |
-| [AB-100](../guides/AB-100-agentic-ai-business-solutions-architect.md) | changed-since-review | 2026-09-27 | 2026-10-28 | offline-only |
 | [AI-500](../guides/AI-500-designing-implementing-multi-agent-ai-solutions.md) | changed-since-review | 2026-09-28 | 2026-10-28 | offline-only |
 | [DP-300](../guides/DP-300-administering-microsoft-azure-sql-solutions.md) | changed-since-review | 2026-09-27 | 2026-10-28 | offline-only |
 | [DP-420](../guides/DP-420-designing-and-implementing-cloud-native-applications-using-microsoft-azure-cosmos-db.md) | changed-since-review | 2026-09-27 | 2026-10-28 | offline-only |
@@ -57,7 +56,7 @@ A reviewed guide can still have unexecuted labs. Blockers stay visible. Recently
 | [AZ-120](../guides/AZ-120-planning-administering-azure-sap-workloads.md) | reviewed-with-blockers | 2026-09-28 | 2026-10-28 | offline-only |
 | [AZ-802](../guides/AZ-802-administering-windows-server.md) | reviewed-with-blockers | 2026-09-27 | 2026-10-28 | offline-only |
 | [AB-730](../guides/AB-730-ai-business-professional.md) | reviewed-with-blockers | 2026-10-28 | 2026-11-01 | not-executed |
-| [AI-103](../guides/AI-103-developing-ai-apps-and-agents-on-azure.md) | review-due | 2026-09-27 | 2026-10-28 | offline-only |
+| [AB-100](../guides/AB-100-agentic-ai-business-solutions-architect.md) | reviewed-with-blockers | 2026-10-28 | 2026-11-16 | not-executed |
 | [MO-110](../guides/MO-110-microsoft-word-microsoft-365-apps.md) | review-due | 2026-09-28 | 2026-10-28 | not-executed |
 | [MO-111](../guides/MO-111-microsoft-word-expert-microsoft-365-apps.md) | review-due | 2026-09-28 | 2026-10-28 | not-executed |
 | [MO-210](../guides/MO-210-microsoft-excel-microsoft-365-apps.md) | review-due | 2026-09-28 | 2026-10-28 | offline-only |
@@ -65,6 +64,7 @@ A reviewed guide can still have unexecuted labs. Blockers stay visible. Recently
 | [MO-310](../guides/MO-310-microsoft-powerpoint-microsoft-365-apps.md) | review-due | 2026-09-28 | 2026-10-28 | offline-only |
 | [AI-200](../guides/AI-200-developing-ai-cloud-solutions-on-azure.md) | reviewed-with-blockers | 2026-10-28 | 2026-11-27 | not-executed |
 | [AB-900](../guides/AB-900-microsoft-365-copilot-agent-administration-fundamentals.md) | reviewed | 2026-10-28 | 2026-11-27 | not-executed |
+| [AI-103](../guides/AI-103-developing-ai-apps-and-agents-on-azure.md) | reviewed | 2026-10-28 | 2026-11-27 | offline-only |
 | [AZ-800](../guides/AZ-800-administering-windows-server-hybrid-core-infrastructure.md) | archived | 2026-09-27 | Archived | offline-only |
 | [AZ-801](../guides/AZ-801-configuring-windows-server-hybrid-advanced-services.md) | archived | 2026-09-27 | Archived | offline-only |
 

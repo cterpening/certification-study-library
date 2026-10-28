@@ -30,6 +30,7 @@
           "guide_path": { "type": "string", "minLength": 1 },
           "review_type": { "enum": ["source-validation", "community-review"] },
           "reviewed_on": { "type": "string", "format": "date" },
+          "supersedes_review_id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
           "outcome": { "enum": ["passed", "blocked"] },
           "blueprint_snapshot_path": { "type": "string", "minLength": 1 },
           "blueprint_snapshot_sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },

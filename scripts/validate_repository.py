@@ -699,6 +699,44 @@ def validate_source_candidates(
                 )
 
 
+def superseded_source_review_ids(reviews: list, errors: list[str]) -> set[str]:
+    """Preserve earlier same-day evidence through explicit, unambiguous lineage."""
+    rows = {
+        row["id"]: row for row in reviews
+        if isinstance(row, dict) and isinstance(row.get("id"), str)
+    }
+    successors: dict[str, str] = {}
+    for row in reviews:
+        if not isinstance(row, dict) or "supersedes_review_id" not in row:
+            continue
+        prior_id = row["supersedes_review_id"]
+        prior = rows.get(prior_id) if isinstance(prior_id, str) else None
+        if (
+            prior is None or prior_id == row.get("id")
+            or prior.get("exam_code") != row.get("exam_code")
+            or prior.get("review_type") != "source-validation"
+            or row.get("review_type") != "source-validation"
+            or not valid_date(row.get("reviewed_on"))
+            or prior.get("reviewed_on") != row.get("reviewed_on")
+        ):
+            errors.append(f"Guide review {row.get('id')} has invalid same-day supersession")
+            continue
+        if prior_id in successors:
+            errors.append(f"Guide review {prior_id} has multiple superseding reviews")
+            continue
+        successors[prior_id] = str(row.get("id"))
+    for start in successors:
+        seen: set[str] = set()
+        current = start
+        while current in successors:
+            if current in seen:
+                errors.append(f"Guide review supersession cycle at {start}")
+                break
+            seen.add(current)
+            current = successors[current]
+    return set(successors)
+
+
 def validate_reviews(
     reviews: object,
     exam_by_code: dict[str, dict[str, object]],
@@ -711,6 +749,7 @@ def validate_reviews(
         errors.append("data/reviews.json must contain a reviews array")
         return
 
+    superseded = superseded_source_review_ids(reviews, errors)
     review_ids: set[str] = set()
     passed_source_reviews: dict[str, list[dict[str, object]]] = {}
     required = {
@@ -831,7 +870,7 @@ def validate_reviews(
                 row.get("status") in {"missing", "error"} for row in health_rows
             ),
         }
-        historical = (
+        historical = review_id in superseded or (
             valid_date(review.get("reviewed_on"))
             and valid_date(exam.get("blueprint_last_checked"))
             and review["reviewed_on"] < exam["blueprint_last_checked"]
@@ -853,6 +892,7 @@ def validate_reviews(
         if (
             review.get("review_type") == "source-validation"
             and review.get("outcome") == "passed"
+            and review_id not in superseded
         ):
             passed_source_reviews.setdefault(str(code), []).append(review)
 
@@ -1072,10 +1112,15 @@ def validate_ai_audits(
         errors.append("data/ai-audits.json must contain a batches array")
         return
     review_rows = reviews if isinstance(reviews, list) else []
+    superseded = {
+        review.get("supersedes_review_id") for review in review_rows
+        if isinstance(review, dict) and isinstance(review.get("supersedes_review_id"), str)
+    }
     current_review_by_code = {
         str(review.get("exam_code")): review
         for review in review_rows
         if isinstance(review, dict)
+        and review.get("id") not in superseded
         and review.get("review_type") == "source-validation"
         and review.get("reviewed_on")
         == exam_by_code.get(str(review.get("exam_code")), {}).get(
@@ -1189,6 +1234,11 @@ def validate_ai_audits(
                 review for review in source_reviews
                 if valid_date(audited_on) and review["reviewed_on"] <= audited_on
             ]
+            dated_superseded = {
+                review.get("supersedes_review_id") for review in dated_reviews
+                if isinstance(review.get("supersedes_review_id"), str)
+            }
+            dated_reviews = [review for review in dated_reviews if review.get("id") not in dated_superseded]
             # Prefer evidence that existed at the audit date. Legacy catalogs
             # overwrote older source reviews: bind that gap to the earliest
             # retained record, not a later refresh's outcome. Exact paths and
@@ -1196,7 +1246,11 @@ def validate_ai_audits(
             bound_review = (
                 max(dated_reviews, key=lambda row: row["reviewed_on"])
                 if dated_reviews else
-                min(source_reviews, key=lambda row: row["reviewed_on"])
+                min(
+                    [row for row in source_reviews if not row.get("supersedes_review_id")]
+                    or source_reviews,
+                    key=lambda row: row["reviewed_on"],
+                )
                 if source_reviews else None
             )
             needs_current_review = (

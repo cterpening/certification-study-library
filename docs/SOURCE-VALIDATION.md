@@ -24,12 +24,12 @@ Passing this workflow changes the public label to **Sources + objectives checked
 | Exam | Reviewed | Blueprint snapshot | External-link evidence | Result |
 |---|---|---|---|---|
 | GH-900 | September 5, 2026 | January 2026 objectives; unchanged during repair revalidation | 69 registered links: 66 reachable, 3 access-blocked, 0 missing/error | Passed |
-| GH-300 | September 27, 2026 | August 7, 2026 objectives; unchanged during deep review | 69 registered links: 67 reachable, 2 access-blocked, 0 missing/error | Passed |
+| GH-300 | October 28, 2026 | August 7 outline unchanged | 78 registered links: 76 reachable, 2 access-blocked, 0 missing/error | Blocked: CLI exclusion documentation conflict |
 | GH-200 | September 5, 2026 | January 2026 objectives; unchanged during repair revalidation | 39 registered links: 38 reachable, 1 access-blocked, 0 missing/error | Passed |
 | GH-500 | September 5, 2026 | July 2026 objectives; unchanged during repair revalidation | 21 registered links: 21 reachable, 0 access-blocked, 0 missing/error | Passed |
 | GH-100 | September 5, 2026 | July 2026 objectives; unchanged during repair revalidation | 30 registered links: 30 reachable, 0 access-blocked, 0 missing/error | Passed |
-| AI-103 | September 27, 2026 | April 16, 2026 objectives; unchanged during deep review | 52 registered links: 50 reachable, 2 access-blocked, 0 missing/error | Passed |
-| AB-100 | September 27, 2026 | July 22 baseline retained; all 74 objectives compared with the October 14 editorial revision | 78 guide links: 73 reachable, 5 access-blocked, 0 missing/error | Passed; prerequisite conflict retained in freshness review |
+| AI-103 | October 28, 2026 | April 16 outline unchanged | 59 registered links: 57 reachable, 2 access-blocked, 0 missing/error | Passed; human/cloud execution pending |
+| AB-100 | October 28, 2026 | July baseline retained; November 16 future outline separately mapped | 84 registered links: 82 reachable, 2 access-blocked, 0 missing/error | Blocked: prerequisite/source conflict retained |
 | AZ-900 | August 31, 2026 | July 20, 2026 objectives; unchanged during review | 49 registered links: 48 reachable, 1 access-blocked, 0 missing/error | Passed |
 | DP-900 | August 31, 2026 | July 21, 2026 objectives; unchanged during review | 39 registered links: 38 reachable, 1 access-blocked, 0 missing/error | Passed |
 | PL-900 | August 31, 2026 | July 24, 2026 objectives; unchanged during review | 41 registered links: 39 reachable, 2 access-blocked, 0 missing/error | Passed |
@@ -247,6 +247,10 @@ The review removed a duplicated GH-300-specific chapter from the GH-900 guide, r
 
 ## GH-300 coverage record
 
+The October 28 [priority-group refresh](research/2026-10-28-ab100-gh300-ai103-refresh.md#gh-300) maps all 41 unchanged August tasks. Adds IDE setup/Chat/troubleshooting, applicable policy/permission/MCP boundaries, eight labs and 16 answered scenarios; preserves the current CLI exclusion documentation conflict as a blocking source issue. Current citations:78 registered,76 reachable,two automation-blocked,none missing/error. The restored MIT notice and current public course companion are rechecked; older June defects are historical. No CLI/IDE/MCP/paid-course execution or human review.
+
+### Historical baseline and earlier review
+
 The September 27 [deep review](research/2026-09-27-gh-300-ai-103-deep-review.md) maps all 41 detailed objectives, adds worked examples and two attributed blog readings, and checks all current guide citations: 69 registered, 67 reachable, 2 access-blocked. The guide now contains 7 labs and 13 answered original checks. The review preserves the accepted objective snapshot, distinguishes HTTP reachability from readable content, and claims no tenant execution, paid-content inspection, independent audit, or human review. The counts and dates in the earlier narrative below describe that earlier review.
 
 | Published objective group | Guide coverage |
@@ -312,6 +316,10 @@ The September 7 expansion maps every bullet in the initial public beta outline t
 
 ## AI-103 coverage record
 
+The October 28 [priority-group refresh](research/2026-10-28-ab100-gh300-ai103-refresh.md#ai-103) maps all 64 unchanged April tasks and passes the bounded source gate. Adds concrete visual-policy, custom-speech, audio-input and structured-output teaching, nine proposed labs and 16 answered checks. Thirteen local draft-validation fixtures passed; that is not model/SDK/cloud/authorization execution. Current citations:59 registered,57 reachable,two automation-blocked,none missing/error. Package/API/region/preview prerequisites and human/product review limits remain explicit.
+
+### Historical baseline and earlier review
+
 The September 27 [deep review](research/2026-09-27-gh-300-ai-103-deep-review.md) maps all 64 detailed objectives, adds worked examples and two attributed blog readings, and checks all current guide citations: 52 registered, 50 reachable, 2 access-blocked. The guide now contains 8 labs and 12 answered original checks. The review preserves the accepted objective snapshot, distinguishes HTTP reachability from readable content, and claims no tenant execution, paid-content inspection, independent audit, or human review. The counts and dates in the earlier narrative below describe that earlier review.
 
 | Published objective group | Guide coverage |
@@ -325,6 +333,10 @@ The September 27 [deep review](research/2026-09-27-gh-300-ai-103-deep-review.md)
 The review retained the guide's architecture and production-operations depth while adding primary Microsoft citations at the decisions they support. The September 5 repair adds a seventh lab and a version-bounded Sora 2 remix workflow, then maps the blueprint's historical single-task/pro-mode terms to the retired Standard/Pro API, current GA analyzers, and preview agentic mode without recommending a retired endpoint. All 44 cited URLs are cataloged: 43 reachable and one access-blocked. The official blueprint snapshot SHA-256 is `3fbf0ebd6b3d5e591d7354de47f8d87baaea121330a209e9104045447ac70f63`.
 
 ## AB-100 coverage record
+
+The October 28 [priority-group refresh](research/2026-10-28-ab100-gh300-ai103-refresh.md#ab-100) maps all 74 accepted July tasks and separately maps the 74 November 16 future tasks without replacing the current snapshot. Adds effective-policy/harness/shared-tool decisions, a fifteenth exercise and 26 answered checks. The source gate remains blocked by unresolved prerequisite/source discrepancies. All 84 citations are registered:82 reachable,two automation-blocked,none missing/error. The new same-day record explicitly supersedes the earlier partial record while preserving its original counts/checks. Product work and human review remain pending.
+
+### Historical baseline and earlier review
 
 
 The October 4 [bounded maintenance pilot](research/2026-10-04-ab-100-maintenance-pilot.md) adds applicability/access evidence, developer/deployer responsibilities, Exercise 14 and two explained checks. Current totals are **14 exercises, 24 checks and 82 registered guide links** (77 reachable, five access-blocked in tracked evidence). Four new links were checked live; other health statuses remain historical. The September 27 full-review date and July baseline are unchanged; the comparison below describes that historical review. Tenant testing and independent human review were not performed; these remain best-effort evidence limits, not automatic study-use blockers. The prerequisite eligibility discrepancy remains unresolved. The CAT implementation example is attributed as blog-documented adjacent learning, while relevance, access and test design directly practice objectives.

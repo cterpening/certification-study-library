@@ -203,6 +203,14 @@ page is a deliberately published snapshot; live workflow artifacts can be newer.
 prepend a new receipt rather than rewriting historical evidence; put the latest same-day
 receipt first. A completed AI content review does not satisfy pending human review.
 
+For two source reviews of the same exam on the same day, append the new record with
+`supersedes_review_id` pointing to its immediate predecessor. Keep the earlier record's
+dates, checks, snapshot, verdict and link counts unchanged. Each reference must name a
+same-day source-validation record for the same exam, with no forks or cycles. Superseded
+records retain internally checked historical evidence and cannot satisfy today's passed
+source gate. Audit binding follows the applicable unsuperseded record as of its date;
+the documented earliest-record legacy fallback remains separate.
+
 GitHub and Microsoft use the public JSON feeds requested by their current catalog
 websites. These are website interfaces, not guaranteed integration APIs. The
 Microsoft adapter checks the returned total, unique identities, and next-page

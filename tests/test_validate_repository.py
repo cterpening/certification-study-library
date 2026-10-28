@@ -732,6 +732,81 @@ review_status: ai-generated-draft
         validator.validate_reviews([historical], exams, {"GH-900": "Updated guide"}, {}, {}, errors)
         self.assertEqual(["Guide review historical-review has invalid historical link evidence"], errors)
 
+    def same_day_review_fixture(self):
+        data, exams, old = self.audit_validation_fixture()
+        old.update(
+            id="old-review", outcome="passed",
+            guide_path=exams["GH-900"]["guide_path"],
+            checks={name: True for name in validator.SOURCE_VALIDATION_CHECKS},
+            objective_coverage=[{"objective_group": "Group", "guide_sections": ["Section"]}],
+            link_evidence={"unique_external_links": 3, "reachable": 2, "access_blocked": 1, "missing_or_error": 0},
+        )
+        new = dict(
+            old, id="new-review", outcome="blocked", supersedes_review_id="old-review",
+            link_evidence={"unique_external_links": 0, "reachable": 0, "access_blocked": 0, "missing_or_error": 0},
+        )
+        return data, exams, old, new
+
+    def test_same_day_supersession_preserves_and_checks_old_counts(self) -> None:
+        _, exams, old, new = self.same_day_review_fixture()
+        errors = []
+        validator.validate_reviews([old, new], exams, {"GH-900": "Updated"}, {}, {}, errors)
+        self.assertEqual([], errors)
+        self.assertEqual(3, old["link_evidence"]["unique_external_links"])
+        old["link_evidence"]["unique_external_links"] = 4
+        errors = []
+        validator.validate_reviews([old, new], exams, {"GH-900": "Updated"}, {}, {}, errors)
+        self.assertIn("Guide review old-review has invalid historical link evidence", errors)
+
+    def test_same_day_block_cannot_reuse_superseded_pass(self) -> None:
+        _, exams, old, new = self.same_day_review_fixture()
+        exams["GH-900"]["review_status"] = "source-validated"
+        errors = []
+        validator.validate_reviews([old, new], exams, {"GH-900": "Updated"}, {}, {}, errors)
+        self.assertEqual(1, len(errors))
+        self.assertIn("without a current passed", errors[0])
+
+    def test_review_supersession_rejects_invalid_references(self) -> None:
+        _, _, old, new = self.same_day_review_fixture()
+        invalid = [
+            dict(new, supersedes_review_id="missing"),
+            dict(new, supersedes_review_id="new-review"),
+            dict(new, exam_code="GH-300"),
+            dict(new, review_type="community-review"),
+            dict(new, reviewed_on="2026-09-06"),
+        ]
+        for row in invalid:
+            with self.subTest(row=row):
+                errors = []
+                validator.superseded_source_review_ids([old, row], errors)
+                self.assertTrue(any("invalid same-day supersession" in e for e in errors))
+
+    def test_review_supersession_rejects_forks_and_cycles(self) -> None:
+        _, _, old, new = self.same_day_review_fixture()
+        errors = []
+        validator.superseded_source_review_ids([old, new, dict(new, id="fork")], errors)
+        self.assertTrue(any("multiple superseding" in e for e in errors))
+        errors = []
+        validator.superseded_source_review_ids([dict(old, supersedes_review_id="new-review"), new], errors)
+        self.assertTrue(any("cycle" in e for e in errors))
+
+    def test_audit_uses_same_day_successor_regardless_of_array_order(self) -> None:
+        data, exams, old, new = self.same_day_review_fixture()
+        for rows in ([old, new], [new, old]):
+            errors = []
+            validator.validate_ai_audits(data, exams, rows, errors)
+            self.assertEqual(1, len(errors))
+            self.assertIn("cannot pass with a blocked", errors[0])
+
+    def test_legacy_audit_keeps_original_earliest_same_day_fallback(self) -> None:
+        data, exams, old, new = self.same_day_review_fixture()
+        old["reviewed_on"] = new["reviewed_on"] = "2026-09-27"
+        exams["GH-900"]["blueprint_last_checked"] = "2026-09-27"
+        for rows in ([old, new], [new, old]):
+            errors = []
+            validator.validate_ai_audits(data, exams, rows, errors)
+            self.assertEqual([], errors)
+
     def test_source_freshness_summary_counts_outcomes_and_dispositions(self) -> None:
         results = [
             {"outcome": "current", "findings": []},
