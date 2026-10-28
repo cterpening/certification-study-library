@@ -25531,6 +25531,1061 @@
         "missing_or_error": 0
       },
       "notes": "Complete immutable-guide reading and final-diff reconciliation by the assigned subset exam researcher; 119 current detailed objectives mapped. Selected technical/resource bodies inspected by role researchers; no full independent semantic audit or human/service verification inferred. Current source conflicts remain blocking. See docs/research/2026-10-28-microsoft-refresh-group-04.md and ADLC_Docs/operations/2026-10-28-microsoft-refresh-group-04.json."
+    },
+    {
+      "id": "ab-410-2026-10-28-remaining-group05-source-validation",
+      "exam_code": "AB-410",
+      "guide_path": "guides/AB-410-building-intelligent-applications.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "blocked",
+      "blueprint_snapshot_path": "data/objective-snapshots/ab-410-official-objectives.txt",
+      "blueprint_snapshot_sha256": "390c1040388541915573525f59b9f2f28753f65d0a3a50e9221dd7ab11c68142",
+      "objective_coverage": [
+        {
+          "objective_group": "Design Microsoft Power Platform solutions by using AI-enabled tools",
+          "guide_sections": [
+            "Start with outcome, process, data, and risk",
+            "Recommend an environment and governance boundary",
+            "Apply a solution and ALM strategy"
+          ]
+        },
+        {
+          "objective_group": "Build data models",
+          "guide_sections": [
+            "Build a Dataverse model from business meaning",
+            "Worked build — request data before app screens",
+            "Distinguish prompt columns, row summaries, and deterministic columns",
+            "Worked build — a triage app and its evidence",
+            "Configure Dataverse security as layered authorization"
+          ]
+        },
+        {
+          "objective_group": "Create model-driven apps",
+          "guide_sections": [
+            "Worked build — a triage app and its evidence",
+            "Build a model-driven app from the data model"
+          ]
+        },
+        {
+          "objective_group": "Create canvas apps",
+          "guide_sections": [
+            "Worked build — data, selection and a verified save",
+            "Build a canvas app that remains usable and correct",
+            "Worked example 2 — A plausible gallery can miss most matches",
+            "Automate from the app and handle failures",
+            "Worked choice — one calculation and one reusable experience",
+            "Reuse formulas and components deliberately",
+            "Create an agent from a canvas app with a controlled boundary"
+          ]
+        },
+        {
+          "objective_group": "Create cloud flows",
+          "guide_sections": [
+            "Choose the cloud-flow trigger and connection model",
+            "Compose reliable flow control and approvals",
+            "Worked example 4 — Separate interactive and business deadlines",
+            "Worked flow — classify a small request batch",
+            "Worked build — one prompt, two callers"
+          ]
+        },
+        {
+          "objective_group": "Create prompts and models in AI Hub",
+          "guide_sections": [
+            "Worked build — one prompt, two callers",
+            "Build a prompt as a governed input-output contract",
+            "Worked build — consume an OCR model through both surfaces"
+          ]
+        },
+        {
+          "objective_group": "Implement business and process logic",
+          "guide_sections": [
+            "Select the correct business-logic surface",
+            "Worked build — a guided triage process",
+            "Worked example 6 — An aggregate can be correct for the wrong instant"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 58,
+        "reachable": 57,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "Complete immutable/final guide reading and detailed objective reconciliation by assigned subset researcher: 48 tasks. Office detailed PDF evidence is separate from accepted coarse adapter snapshot. Selected technical/resource source bodies read with declared scope. Bounded source gate blocked by retained evidence gaps; see docs/research/2026-10-28-microsoft-refresh-group-05.md and ADLC_Docs/operations/2026-10-28-microsoft-refresh-group-05.json. Full rubric2/human/product execution not inferred."
+    },
+    {
+      "id": "az-120-2026-10-28-remaining-group05-source-validation",
+      "exam_code": "AZ-120",
+      "guide_path": "guides/AZ-120-planning-administering-azure-sap-workloads.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "blocked",
+      "blueprint_snapshot_path": "data/objective-snapshots/az-120-official-objectives.txt",
+      "blueprint_snapshot_sha256": "9ef2824a901a8ba33075de4315d56f6bd0c7e9b5887028f27c16e6645e6eb3ff",
+      "objective_coverage": [
+        {
+          "objective_group": "Identify requirements for target infrastructure",
+          "guide_sections": [
+            "Discover and size the source landscape",
+            "Treat supportability as a design constraint",
+            "Quotas, capacity, licensing, support and cost",
+            "Choose the target and migration pattern"
+          ]
+        },
+        {
+          "objective_group": "Design and implement an Azure environment to support SAP workloads",
+          "guide_sections": [
+            "Design the management hierarchy and controls",
+            "Worked control — enforce a boundary without an estate-wide surprise",
+            "Build a migration factory"
+          ]
+        },
+        {
+          "objective_group": "Design and implement integration with SAP RISE",
+          "guide_sections": [
+            "Integrate RISE with SAP",
+            "Worked handoff — customer service to a RISE interface"
+          ]
+        },
+        {
+          "objective_group": "Design and implement a compute solution for SAP workloads",
+          "guide_sections": [
+            "Choose certified compute",
+            "Worked deployment record — the same SID through three approaches"
+          ]
+        },
+        {
+          "objective_group": "Design and implement networking for SAP on Azure virtual machines",
+          "guide_sections": [
+            "Design networking from flows",
+            "Worked network changes — placement and private storage resolution"
+          ]
+        },
+        {
+          "objective_group": "Design and implement a storage solution for SAP on Azure virtual machines",
+          "guide_sections": [
+            "Choose and lay out storage",
+            "Encrypt and protect data",
+            "Worked storage assembly — preserve volume role and access"
+          ]
+        },
+        {
+          "objective_group": "Design and implement a high availability solution for SAP on Azure virtual machines",
+          "guide_sections": [
+            "Keep HA, DR and backup distinct",
+            "Design in-region high availability",
+            "Worked HA change plan — listener, replicas and storage ownership",
+            "Understand fencing and split brain",
+            "Design regional disaster recovery"
+          ]
+        },
+        {
+          "objective_group": "Design and implement a disaster recovery solution for SAP on Azure virtual machines",
+          "guide_sections": [
+            "Design regional disaster recovery",
+            "Backup and restore",
+            "HSR backup: identify the protection model first",
+            "Worked restore plan — recover a copy before overwriting anything",
+            "Recovery test scorecard"
+          ]
+        },
+        {
+          "objective_group": "Optimize performance and costs",
+          "guide_sections": [
+            "Optimize performance and cost",
+            "Observe by layer and business service"
+          ]
+        },
+        {
+          "objective_group": "Monitor and maintain SAP on Azure",
+          "guide_sections": [
+            "Observe by layer and business service",
+            "Operate with Azure Center for SAP solutions",
+            "Backup and restore",
+            "Worked connector setup — scoped discovery before lifecycle action"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 58,
+        "reachable": 56,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Complete immutable/final guide reading and detailed objective reconciliation by assigned subset researcher: 78 tasks. Office detailed PDF evidence is separate from accepted coarse adapter snapshot. Selected technical/resource source bodies read with declared scope. Bounded source gate blocked by retained evidence gaps; see docs/research/2026-10-28-microsoft-refresh-group-05.md and ADLC_Docs/operations/2026-10-28-microsoft-refresh-group-05.json. Full rubric2/human/product execution not inferred."
+    },
+    {
+      "id": "az-802-2026-10-28-remaining-group05-source-validation",
+      "exam_code": "AZ-802",
+      "guide_path": "guides/AZ-802-administering-windows-server.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "blocked",
+      "blueprint_snapshot_path": "data/objective-snapshots/az-802-official-objectives.txt",
+      "blueprint_snapshot_sha256": "ec584efe0ea08ae5ad6bbcef992c1b4a4e6b18826193ece06a76114757c8f65d",
+      "objective_coverage": [
+        {
+          "objective_group": "Deploy and manage AD DS domain controllers",
+          "guide_sections": [
+            "Deploy domain controllers locally and in Azure",
+            "Deploy and secure RODCs",
+            "Manage FSMO roles"
+          ]
+        },
+        {
+          "objective_group": "Configure and manage multi-site, multi-domain, and multi-forest environments",
+          "guide_sections": [
+            "Configure trusts and multiple forests/domains",
+            "Configure sites and replication"
+          ]
+        },
+        {
+          "objective_group": "Create and manage AD DS security principals",
+          "guide_sections": [
+            "Create and manage principals",
+            "Choose service accounts"
+          ]
+        },
+        {
+          "objective_group": "Manage Windows Server by using domain-based Group Policies",
+          "guide_sections": [
+            "Implement Group Policy and Preferences"
+          ]
+        },
+        {
+          "objective_group": "Configure remote management for Windows Server instances in a hybrid environment",
+          "guide_sections": [
+            "Deploy Windows Admin Center",
+            "Configure PowerShell remoting, second hop, and JEA",
+            "Configure SSH and remote desktop"
+          ]
+        },
+        {
+          "objective_group": "Manage Windows Server instances and workloads by using Azure services in a hybrid environment",
+          "guide_sections": [
+            "Connect non-Azure servers through Azure Arc",
+            "Implement device configuration and extensions",
+            "Manage updates and Automation runbooks"
+          ]
+        },
+        {
+          "objective_group": "Manage Hyper-V and guest VM",
+          "guide_sections": [
+            "Configure Hyper-V guests and management paths",
+            "Configure compute, memory, and integration services",
+            "Assign devices and partition GPUs",
+            "Manage checkpoints, availability, disks, and adapters",
+            "Configure Hyper-V switches and Replica"
+          ]
+        },
+        {
+          "objective_group": "Manage Windows Server VMs in Azure",
+          "guide_sections": [
+            "Storage and capacity",
+            "Availability",
+            "Secure management and networking"
+          ]
+        },
+        {
+          "objective_group": "Implement on-premises and hybrid name resolution",
+          "guide_sections": [
+            "Design name resolution from authority outward",
+            "Resolve names across hybrid networks",
+            "Use DNS policies and DNSSEC"
+          ]
+        },
+        {
+          "objective_group": "Manage IP addressing in on-premises and hybrid scenarios",
+          "guide_sections": [
+            "Configure DHCP scopes, reservations, and options",
+            "Troubleshoot IP and DNS",
+            "Implement DHCP high availability"
+          ]
+        },
+        {
+          "objective_group": "Configure and manage Azure Files",
+          "guide_sections": [
+            "Configure Azure Files",
+            "Model file access as layered authorization",
+            "Configure and monitor Azure File Sync",
+            "Migrate DFS or file shares to Azure Files/File Sync"
+          ]
+        },
+        {
+          "objective_group": "Configure and manage Windows Server file shares",
+          "guide_sections": [
+            "Model file access as layered authorization",
+            "Configure Windows file shares, FSRM, and DFS",
+            "Configure SMB over QUIC and SMB settings"
+          ]
+        },
+        {
+          "objective_group": "Configure Windows Server storage",
+          "guide_sections": [
+            "Configure disks, volumes, file systems, and Storage Spaces",
+            "Configure Storage Replica, deduplication, QoS, and iSCSI",
+            "Configure SMB over QUIC and SMB settings",
+            "Protect storage with BitLocker"
+          ]
+        },
+        {
+          "objective_group": "Secure Windows Server operating system",
+          "guide_sections": [
+            "Harden the operating system",
+            "Implement Windows LAPS",
+            "Configure Defender for Servers and Windows Firewall"
+          ]
+        },
+        {
+          "objective_group": "Secure AD DS",
+          "guide_sections": [
+            "Secure AD DS accounts and authentication"
+          ]
+        },
+        {
+          "objective_group": "Monitor by using Windows Server tools and Azure services",
+          "guide_sections": [
+            "Use Performance Monitor and Data Collector Sets",
+            "Use Windows Admin Center, System Insights, and event logs",
+            "Worked monitoring path — from WAC observation to a delivered alert",
+            "Configure Azure Monitor data collection and alerts"
+          ]
+        },
+        {
+          "objective_group": "Troubleshoot Windows Server issues",
+          "guide_sections": [
+            "Troubleshoot connectivity, DNS, Update, and time",
+            "Troubleshoot performance, extensions, encryption, and storage"
+          ]
+        },
+        {
+          "objective_group": "Troubleshoot Active Directory",
+          "guide_sections": [
+            "Recover and troubleshoot AD DS"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 91,
+        "reachable": 86,
+        "access_blocked": 5,
+        "missing_or_error": 0
+      },
+      "notes": "Complete immutable/final guide reading and detailed objective reconciliation by assigned subset researcher: 115 tasks. Office detailed PDF evidence is separate from accepted coarse adapter snapshot. Selected technical/resource source bodies read with declared scope. Bounded source gate blocked by retained evidence gaps; see docs/research/2026-10-28-microsoft-refresh-group-05.md and ADLC_Docs/operations/2026-10-28-microsoft-refresh-group-05.json. Full rubric2/human/product execution not inferred."
+    },
+    {
+      "id": "mo-110-2026-10-28-remaining-group05-source-validation",
+      "exam_code": "MO-110",
+      "guide_path": "guides/MO-110-microsoft-word-microsoft-365-apps.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/mo-110-official-objectives.txt",
+      "blueprint_snapshot_sha256": "c5016d0c2a76187324de57865fcad9858aa02d49353a61ffc479e64430ee233a",
+      "objective_coverage": [
+        {
+          "objective_group": "Navigate within documents",
+          "guide_sections": [
+            "1. Manage documents"
+          ]
+        },
+        {
+          "objective_group": "Format documents",
+          "guide_sections": [
+            "Worked production — prepare two distinct deliverables",
+            "1. Manage documents"
+          ]
+        },
+        {
+          "objective_group": "Save and share documents",
+          "guide_sections": [
+            "Worked production — prepare two distinct deliverables"
+          ]
+        },
+        {
+          "objective_group": "Inspect documents for issues",
+          "guide_sections": [
+            "1. Manage documents",
+            "Worked production — prepare two distinct deliverables"
+          ]
+        },
+        {
+          "objective_group": "Insert text",
+          "guide_sections": [
+            "2. Text, paragraphs, and sections"
+          ]
+        },
+        {
+          "objective_group": "Format text and paragraphs",
+          "guide_sections": [
+            "2. Text, paragraphs, and sections"
+          ]
+        },
+        {
+          "objective_group": "Create and configure document sections",
+          "guide_sections": [
+            "2. Text, paragraphs, and sections",
+            "1. Manage documents"
+          ]
+        },
+        {
+          "objective_group": "Create tables",
+          "guide_sections": [
+            "3. Tables and lists",
+            "Worked build — a table with a predictable shape"
+          ]
+        },
+        {
+          "objective_group": "Modify tables",
+          "guide_sections": [
+            "3. Tables and lists"
+          ]
+        },
+        {
+          "objective_group": "Create and modify lists",
+          "guide_sections": [
+            "3. Tables and lists"
+          ]
+        },
+        {
+          "objective_group": "Create and manage footnotes and endnotes",
+          "guide_sections": [
+            "4. References"
+          ]
+        },
+        {
+          "objective_group": "Create and manage tables of contents",
+          "guide_sections": [
+            "4. References"
+          ]
+        },
+        {
+          "objective_group": "Insert illustrations and text boxes",
+          "guide_sections": [
+            "5. Graphic elements"
+          ]
+        },
+        {
+          "objective_group": "Format illustrations and text boxes",
+          "guide_sections": [
+            "5. Graphic elements"
+          ]
+        },
+        {
+          "objective_group": "Add text to graphic elements",
+          "guide_sections": [
+            "5. Graphic elements"
+          ]
+        },
+        {
+          "objective_group": "Modify graphic elements",
+          "guide_sections": [
+            "5. Graphic elements"
+          ]
+        },
+        {
+          "objective_group": "Add and manage comments",
+          "guide_sections": [
+            "6. Collaboration"
+          ]
+        },
+        {
+          "objective_group": "Manage change tracking",
+          "guide_sections": [
+            "6. Collaboration"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 20,
+        "reachable": 20,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "Complete immutable/final guide reading and detailed objective reconciliation by assigned subset researcher: 70 tasks. Office detailed PDF evidence is separate from accepted coarse adapter snapshot. Selected technical/resource source bodies read with declared scope. Bounded source gate passed; see docs/research/2026-10-28-microsoft-refresh-group-05.md and ADLC_Docs/operations/2026-10-28-microsoft-refresh-group-05.json. Full rubric2/human/product execution not inferred."
+    },
+    {
+      "id": "mo-111-2026-10-28-remaining-group05-source-validation",
+      "exam_code": "MO-111",
+      "guide_path": "guides/MO-111-microsoft-word-expert-microsoft-365-apps.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "blocked",
+      "blueprint_snapshot_path": "data/objective-snapshots/mo-111-official-objectives.txt",
+      "blueprint_snapshot_sha256": "0db958488191b514b8598df0288463d19a4cc9b1f7fa81b3855850e6945c8fbc",
+      "objective_coverage": [
+        {
+          "objective_group": "Manage documents and templates",
+          "guide_sections": [
+            "1. Document options and settings",
+            "Worked examples",
+            "Hands-on labs",
+            "Worked document dependency and protection check",
+            "4. Advanced features"
+          ]
+        },
+        {
+          "objective_group": "Prepare documents for collaboration",
+          "guide_sections": [
+            "Worked document dependency and protection check"
+          ]
+        },
+        {
+          "objective_group": "Use and configure language options",
+          "guide_sections": [
+            "1. Document options and settings",
+            "Worked page repair"
+          ]
+        },
+        {
+          "objective_group": "Find, replace, and paste document content",
+          "guide_sections": [
+            "2. Advanced editing and formatting"
+          ]
+        },
+        {
+          "objective_group": "Configure paragraph layout options",
+          "guide_sections": [
+            "Worked page repair"
+          ]
+        },
+        {
+          "objective_group": "Create and manage paragraph, character, and table styles",
+          "guide_sections": [
+            "2. Advanced editing and formatting",
+            "Worked reusable design pack"
+          ]
+        },
+        {
+          "objective_group": "Create and modify building blocks",
+          "guide_sections": [
+            "Worked reusable design pack"
+          ]
+        },
+        {
+          "objective_group": "Create custom design elements",
+          "guide_sections": [
+            "Worked reusable design pack",
+            "Hands-on labs"
+          ]
+        },
+        {
+          "objective_group": "Create and manage indexes",
+          "guide_sections": [
+            "Worked reusable design pack"
+          ]
+        },
+        {
+          "objective_group": "Create and manage tables of figures",
+          "guide_sections": [
+            "Worked captions and generated lists"
+          ]
+        },
+        {
+          "objective_group": "Create and manage bibliographies",
+          "guide_sections": [
+            "Worked reusable design pack",
+            "Hands-on labs"
+          ]
+        },
+        {
+          "objective_group": "Manage forms, fields, and controls",
+          "guide_sections": [
+            "Worked fields and fillable controls"
+          ]
+        },
+        {
+          "objective_group": "Create and modify macros",
+          "guide_sections": [
+            "4. Advanced features"
+          ]
+        },
+        {
+          "objective_group": "Perform mail merges",
+          "guide_sections": [
+            "4. Advanced features",
+            "Worked examples"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 32,
+        "reachable": 31,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "Complete immutable/final guide reading and detailed objective reconciliation by assigned subset researcher: 47 tasks. Office detailed PDF evidence is separate from accepted coarse adapter snapshot. Selected technical/resource source bodies read with declared scope. Bounded source gate blocked by retained evidence gaps; see docs/research/2026-10-28-microsoft-refresh-group-05.md and ADLC_Docs/operations/2026-10-28-microsoft-refresh-group-05.json. Full rubric2/human/product execution not inferred."
+    },
+    {
+      "id": "mo-210-2026-10-28-remaining-group05-source-validation",
+      "exam_code": "MO-210",
+      "guide_path": "guides/MO-210-microsoft-excel-microsoft-365-apps.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/mo-210-official-objectives.txt",
+      "blueprint_snapshot_sha256": "71db2aebfc9e02978f17b80207c9b0bd180775ad9c8486050965a27a5fadc0d7",
+      "objective_coverage": [
+        {
+          "objective_group": "Import data into workbooks",
+          "guide_sections": [
+            "1. Worksheets and workbooks",
+            "Hands-on labs"
+          ]
+        },
+        {
+          "objective_group": "Navigate within workbooks",
+          "guide_sections": [
+            "Worked navigation and presentation pass",
+            "1. Worksheets and workbooks",
+            "Worked names, structured references and branch checks"
+          ]
+        },
+        {
+          "objective_group": "Format worksheets and workbooks",
+          "guide_sections": [
+            "1. Worksheets and workbooks",
+            "Worked navigation and presentation pass"
+          ]
+        },
+        {
+          "objective_group": "Prepare workbooks for collaboration and distribution",
+          "guide_sections": [
+            "1. Worksheets and workbooks",
+            "Integrated practice scenarios"
+          ]
+        },
+        {
+          "objective_group": "Manipulate data in worksheets",
+          "guide_sections": [
+            "2. Cells and ranges",
+            "Worked navigation and presentation pass",
+            "Worked examples"
+          ]
+        },
+        {
+          "objective_group": "Format cells and ranges",
+          "guide_sections": [
+            "Worked navigation and presentation pass",
+            "2. Cells and ranges"
+          ]
+        },
+        {
+          "objective_group": "Define and reference named ranges",
+          "guide_sections": [
+            "Worked names, structured references and branch checks"
+          ]
+        },
+        {
+          "objective_group": "Summarize data visually",
+          "guide_sections": [
+            "2. Cells and ranges",
+            "Worked built-in conditional rule"
+          ]
+        },
+        {
+          "objective_group": "Create and format tables",
+          "guide_sections": [
+            "Worked names, structured references and branch checks",
+            "3. Tables"
+          ]
+        },
+        {
+          "objective_group": "Modify tables",
+          "guide_sections": [
+            "Worked names, structured references and branch checks",
+            "3. Tables",
+            "Worked examples"
+          ]
+        },
+        {
+          "objective_group": "Filter and sort table data",
+          "guide_sections": [
+            "Worked names, structured references and branch checks",
+            "3. Tables",
+            "Worked examples"
+          ]
+        },
+        {
+          "objective_group": "insert references",
+          "guide_sections": [
+            "4. Formulas and functions",
+            "Worked examples",
+            "Worked names, structured references and branch checks"
+          ]
+        },
+        {
+          "objective_group": "calculate and transform data",
+          "guide_sections": [
+            "Worked names, structured references and branch checks",
+            "4. Formulas and functions",
+            "Worked examples"
+          ]
+        },
+        {
+          "objective_group": "format and modify text",
+          "guide_sections": [
+            "4. Formulas and functions",
+            "Worked examples"
+          ]
+        },
+        {
+          "objective_group": "create charts",
+          "guide_sections": [
+            "5. Charts",
+            "Worked chart revision"
+          ]
+        },
+        {
+          "objective_group": "modify charts",
+          "guide_sections": [
+            "Worked chart revision"
+          ]
+        },
+        {
+          "objective_group": "format charts",
+          "guide_sections": [
+            "Worked chart revision",
+            "5. Charts"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 32,
+        "reachable": 32,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "Complete immutable/final guide reading and detailed objective reconciliation by assigned subset researcher: 65 tasks. Office detailed PDF evidence is separate from accepted coarse adapter snapshot. Selected technical/resource source bodies read with declared scope. Bounded source gate passed; see docs/research/2026-10-28-microsoft-refresh-group-05.md and ADLC_Docs/operations/2026-10-28-microsoft-refresh-group-05.json. Full rubric2/human/product execution not inferred."
+    },
+    {
+      "id": "mo-211-2026-10-28-remaining-group05-source-validation",
+      "exam_code": "MO-211",
+      "guide_path": "guides/MO-211-microsoft-excel-expert.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/mo-211-official-objectives.txt",
+      "blueprint_snapshot_sha256": "174e46cb264079c29287f88c0b16eafdeac46dfb7f746bb6323aeec315944e34",
+      "objective_coverage": [
+        {
+          "objective_group": "Manage workbooks",
+          "guide_sections": [
+            "1. Workbook options and settings"
+          ]
+        },
+        {
+          "objective_group": "Prepare workbooks for collaboration",
+          "guide_sections": [
+            "1. Workbook options and settings"
+          ]
+        },
+        {
+          "objective_group": "Fill cells based on existing data",
+          "guide_sections": [
+            "2. Manage and format data"
+          ]
+        },
+        {
+          "objective_group": "Format and validate data",
+          "guide_sections": [
+            "2. Manage and format data"
+          ]
+        },
+        {
+          "objective_group": "Apply advanced conditional formatting and filtering",
+          "guide_sections": [
+            "2. Manage and format data",
+            "2. Row rules and multiple criteria"
+          ]
+        },
+        {
+          "objective_group": "Perform logical operations in formulas",
+          "guide_sections": [
+            "Logic, criteria and lookup",
+            "Worked logic and legacy lookup checks",
+            "2. Row rules and multiple criteria"
+          ]
+        },
+        {
+          "objective_group": "Look up data by using functions",
+          "guide_sections": [
+            "Logic, criteria and lookup",
+            "Worked logic and legacy lookup checks",
+            "1. Duplicate lookup keys"
+          ]
+        },
+        {
+          "objective_group": "Use advanced date and time functions",
+          "guide_sections": [
+            "Dates, analysis and arrays",
+            "5. Working days"
+          ]
+        },
+        {
+          "objective_group": "Perform data analysis",
+          "guide_sections": [
+            "Dates, analysis and arrays",
+            "Worked consolidation and what-if analysis",
+            "4. Payment periods and a feasibility gate",
+            "3. Filter and sort different projections"
+          ]
+        },
+        {
+          "objective_group": "Troubleshoot formulas",
+          "guide_sections": [
+            "Worked formula diagnosis"
+          ]
+        },
+        {
+          "objective_group": "Create and modify simple macros",
+          "guide_sections": [
+            "Worked formula diagnosis",
+            "1. Workbook options and settings"
+          ]
+        },
+        {
+          "objective_group": "Create and modify advanced charts",
+          "guide_sections": [
+            "Worked advanced-chart workbook",
+            "4. Advanced charts and tables"
+          ]
+        },
+        {
+          "objective_group": "Create and modify PivotTables",
+          "guide_sections": [
+            "Worked advanced-chart workbook",
+            "Worked PivotTable and PivotChart navigation",
+            "6. A plausible Pivot total can be wrong"
+          ]
+        },
+        {
+          "objective_group": "Create and modify PivotCharts",
+          "guide_sections": [
+            "Worked PivotTable and PivotChart navigation"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 32,
+        "reachable": 32,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "Complete immutable/final guide reading and detailed objective reconciliation by assigned subset researcher: 48 tasks. Office detailed PDF evidence is separate from accepted coarse adapter snapshot. Selected technical/resource source bodies read with declared scope. Bounded source gate passed; see docs/research/2026-10-28-microsoft-refresh-group-05.md and ADLC_Docs/operations/2026-10-28-microsoft-refresh-group-05.json. Full rubric2/human/product execution not inferred."
+    },
+    {
+      "id": "mo-310-2026-10-28-remaining-group05-source-validation",
+      "exam_code": "MO-310",
+      "guide_path": "guides/MO-310-microsoft-powerpoint-microsoft-365-apps.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/mo-310-official-objectives.txt",
+      "blueprint_snapshot_sha256": "9ce732345e113b5587ccd794bdfa12dfbb2e95feda7c178566a8132c2f015570",
+      "objective_coverage": [
+        {
+          "objective_group": "Modify slide masters, handout masters, and note masters",
+          "guide_sections": [
+            "1. Presentations, masters and delivery",
+            "Focused source-to-evidence route"
+          ]
+        },
+        {
+          "objective_group": "Change presentation options and views",
+          "guide_sections": [
+            "1. Presentations, masters and delivery"
+          ]
+        },
+        {
+          "objective_group": "Configure print settings for presentations",
+          "guide_sections": [
+            "1. Presentations, masters and delivery",
+            "2. Slides and navigation"
+          ]
+        },
+        {
+          "objective_group": "Configure and present slide shows",
+          "guide_sections": [
+            "1. Presentations, masters and delivery"
+          ]
+        },
+        {
+          "objective_group": "Prepare presentations for collaboration and distribution",
+          "guide_sections": [
+            "1. Presentations, masters and delivery",
+            "4. Tables, charts, diagrams, 3D models and media"
+          ]
+        },
+        {
+          "objective_group": "Insert slides",
+          "guide_sections": [
+            "2. Slides and navigation",
+            "1. Predict the imported outline",
+            "1. Presentations, masters and delivery"
+          ]
+        },
+        {
+          "objective_group": "Modify slides",
+          "guide_sections": [
+            "2. Slides and navigation",
+            "1. Presentations, masters and delivery"
+          ]
+        },
+        {
+          "objective_group": "Order and group slides",
+          "guide_sections": [
+            "2. Slides and navigation",
+            "1. Presentations, masters and delivery",
+            "2. Design a return route"
+          ]
+        },
+        {
+          "objective_group": "Format text",
+          "guide_sections": [
+            "Worked text, shape, screenshot and ink pass"
+          ]
+        },
+        {
+          "objective_group": "Insert links",
+          "guide_sections": [
+            "3. Text, shapes, images and reading order",
+            "2. Slides and navigation",
+            "2. Design a return route"
+          ]
+        },
+        {
+          "objective_group": "Insert and format images",
+          "guide_sections": [
+            "3. Text, shapes, images and reading order",
+            "3. Preserve image proportions",
+            "Worked text, shape, screenshot and ink pass"
+          ]
+        },
+        {
+          "objective_group": "Insert and format graphic elements",
+          "guide_sections": [
+            "Worked text, shape, screenshot and ink pass",
+            "3. Text, shapes, images and reading order",
+            "4. Tables, charts, diagrams, 3D models and media"
+          ]
+        },
+        {
+          "objective_group": "Order, align, and group slide content",
+          "guide_sections": [
+            "3. Text, shapes, images and reading order"
+          ]
+        },
+        {
+          "objective_group": "Insert and format tables",
+          "guide_sections": [
+            "4. Tables, charts, diagrams, 3D models and media"
+          ]
+        },
+        {
+          "objective_group": "Insert and modify charts",
+          "guide_sections": [
+            "4. Tables, charts, diagrams, 3D models and media",
+            "5. Match chart meaning to the data"
+          ]
+        },
+        {
+          "objective_group": "Insert and format SmartArt graphics",
+          "guide_sections": [
+            "4. Tables, charts, diagrams, 3D models and media"
+          ]
+        },
+        {
+          "objective_group": "Insert and modify 3D models",
+          "guide_sections": [
+            "4. Tables, charts, diagrams, 3D models and media"
+          ]
+        },
+        {
+          "objective_group": "Insert and manage media",
+          "guide_sections": [
+            "4. Tables, charts, diagrams, 3D models and media"
+          ]
+        },
+        {
+          "objective_group": "Apply and configure slide transitions",
+          "guide_sections": [
+            "5. Transitions and animations"
+          ]
+        },
+        {
+          "objective_group": "Animate slide content",
+          "guide_sections": [
+            "5. Transitions and animations",
+            "4. Tables, charts, diagrams, 3D models and media",
+            "4. Predict an animation sequence"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 27,
+        "reachable": 27,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "Complete immutable/final guide reading and detailed objective reconciliation by assigned subset researcher: 73 tasks. Office detailed PDF evidence is separate from accepted coarse adapter snapshot. Selected technical/resource source bodies read with declared scope. Bounded source gate passed; see docs/research/2026-10-28-microsoft-refresh-group-05.md and ADLC_Docs/operations/2026-10-28-microsoft-refresh-group-05.json. Full rubric2/human/product execution not inferred."
     }
   ]
 }

@@ -6,18 +6,18 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-28
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-28
+upcoming_change_checked: 2026-10-28
 ---
 
 # MO-110 Microsoft Word Associate (Microsoft 365 Apps) Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide follows the live MO-110 scope checked September 28, 2026. It is unofficial and may contain errors. The [official MO-110 page](https://learn.microsoft.com/en-us/credentials/certifications/mos-word-associate-m365-apps/) is authoritative.
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-05.md#mo-110) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mo-110-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/mos-word-associate-m365-apps/) is authoritative.
 
 **Assessment contract:** 50-minute proctored practical assessment. Microsoft recommends about 150 hours of instruction and hands-on use; that is preparation guidance, not a prerequisite.<br>
 **Current scope:** documents; text, paragraphs, and sections; tables and lists; references; graphics; collaboration.<br>
-**Change watch:** No MO-110 retirement or replacement is listed on the credential page or the [exam retirement list](https://learn.microsoft.com/en-us/credentials/support/retired-certification-exams), checked September 28, 2026. The current [credential-expiration policy](https://learn.microsoft.com/en-us/credentials/support/credential-expiration-policy) specifies five years for MOS; check your own earned credential's dates.<br>
+**Change watch:** No MO-110 retirement or replacement is listed on the credential page or the [exam retirement list](https://learn.microsoft.com/en-us/credentials/support/retired-certification-exams), checked October 28, 2026. The current [credential-expiration policy](https://learn.microsoft.com/en-us/credentials/support/credential-expiration-policy) specifies five years for MOS; check your own earned credential's dates.<br>
 **Review depth:** The [three-page skills outline](https://arch-center.azureedge.net/Learning/Credentials/MO-110_OD_MOS365_Word.pdf) contains 70 detailed tasks. The [review report](../docs/research/2026-09-28-mo-110-deep-review.md) records their mapping, sources and limits. No Word desktop lab was executed during this review.
 
 ## How to use this guide
@@ -51,6 +51,18 @@ A style set coordinates the document's styles; individual style changes affect p
 
 [Document Inspector](https://support.microsoft.com/en-us/office/collab-files/remove-hidden-data-and-personal-information-by-inspecting-documents-presentations-or-workbooks) should run on a delivery copy. Select removal categories deliberately: removing headers can also remove required page numbers. It does not find every visually concealed item, including white-on-white text or an object hidden behind another object. Inspect the visible output too; a clean report is not proof of confidentiality.
 
+### Worked production — prepare two distinct deliverables
+
+Use a local practice copy of a three-page proposal. In Windows desktop Word, choose Layout > Margins and enter the brief's custom margins; set its required paper size/orientation and inspect every section before continuing. In Insert > Header or Footer, choose an editable header, enter the proposal title and add the required document information; inspect section linkage and close header/footer editing. Add a restrained page border through Design > Page Borders and check the preview. [Margins](https://support.microsoft.com/en-us/word/training/change-margins), [header/footer fields](https://support.microsoft.com/en-au/word/add-the-file-name-date-author-or-other-word-document-properties-to-a-header-or-footer) and [border troubleshooting](https://support.microsoft.com/en-us/word/why-aren-t-page-borders-printing) distinguish the settings from their printed result. A printer's minimum margin can clip a border that appears on screen.
+
+Open File > Info and modify the **Title** property to match the brief; distinguish this editable metadata from the file name and automatically maintained statistics. Save, close and reopen to verify it. The [Office properties reference](https://support.microsoft.com/en-US/Office/collab-files/view-or-change-the-properties-for-an-office-file) explains those property classes. Use Save As to preserve an editable `.docx` source and save/export a separate PDF copy. Open the PDF independently and compare headings, page numbers, table breaks and image placement; see [Word's basic file tasks](https://support.microsoft.com/en-us/word/basic-tasks-in-word).
+
+In File > Print, select the intended printer, page range, copy count and markup setting, then preview the selected pages before printing. If the brief requests pages 1 and 3 without review markup, a three-page all-pages preview with comments is the wrong result. [Windows printing guidance](https://support.microsoft.com/en-us/word/print-a-document-in-word) documents page selection and markup separately. A PDF export and a print-job selection are distinct outputs.
+
+Run Review > Check Accessibility. Select a reported item, navigate to the affected object and apply a meaningful correction, such as replacing an unhelpful image description with its purpose in this proposal. Recheck the finding and inspect reading order and contrast yourself; the [Accessibility Checker procedure](https://support.microsoft.com/en-US/Accessibility/office-accessibility/improve-accessibility-with-the-accessibility-checker) is a finding-and-repair workflow, not a certificate of accessibility.
+
+For electronic collaboration, save the authorized test copy to OneDrive, choose Share, name the intended test recipient and select view/edit permissions before creating the link. Verify access as that recipient and check that a viewer cannot edit. Sending an attachment creates another copy; sharing a cloud link points to the shared document. Use the [Windows sharing steps](https://support.microsoft.com/en-us/word/training/share-a-document), with current organizational policy. **VERIFY CURRENT:** UI, cloud permissions and testing-center platform; use synthetic content and authorized test accounts. These are proposed exercises: no Word, print, cloud sharing or email operation was performed for this review.
+
 ## 2. Text, paragraphs, and sections
 
 Use styles for repeated structure. Direct formatting changes one selection; modifying a style changes every paragraph using it. Clear accidental formatting before rebuilding a consistent hierarchy. Know character formatting, paragraph alignment and spacing, indentation, tabs, columns, drop caps, themes, and format copying.
@@ -70,6 +82,10 @@ For lists, distinguish bullets, numbering, and multilevel lists. Continue or res
 Splitting a table creates a separate table; splitting a cell subdivides a cell inside it. Cell margins control the inset between content and its border, while cell spacing separates cells. After merging cells, recheck row structure before sorting. Custom list symbols and number formats should use a consistent definition; changing a list level is different from adding spaces before its text.
 
 For [repeating table headers](https://support.microsoft.com/en-us/word/repeat-table-header-on-subsequent-pages), select rows beginning with the table's first row. Verify in Print Layout or print output. Repetition works across automatic page breaks; a manually inserted page break inside the table prevents the expected repetition. Edit the original header rather than trying to edit its repeated display.
+
+### Worked build — a table with a predictable shape
+
+Insert a blank **three-column, four-row** table: one header row and three inventory records. Use Insert > Table and choose the row/column counts, using the dialog for dimensions beyond the visible grid. Enter headings for Item, Quantity and Location; enter each record in its own row rather than inserting paragraphs to imitate rows. The [table insertion procedure](https://support.microsoft.com/en-gb/word/training/insert-a-table) distinguishes a selected grid from an explicit dimension dialog. Verify twelve cells before any merges, then sort the three data rows by Item with the header identified. Check that every quantity remains with its original item. Save a separate copy before experimenting with merges/splits or text conversion. This is a proposed desktop exercise, not an observed file result.
 
 ## 4. References
 
@@ -161,7 +177,11 @@ Use synthetic text and local practice copies. These are proposed desktop exercis
 
 ## Places to learn
 
-This is a selective learning path, not a complete list of Word resources.
+This is a selective learning path, not a complete list of Word resources or a requirement to consume every item.
+
+### Focused source-to-evidence route
+
+**A report that survives revision — public task reference; about 45–75 minutes.** Use [Update a table of contents](https://support.microsoft.com/en-us/word/update-a-table-of-contents) after building your own three-page report with heading styles and an automatic contents table. Rename a heading and insert a page; compare updating page numbers with updating the entire table. Save the revised `.docx` and a short before/after checklist, then reopen the file. The estimate covers the short article, original document creation and two revisions; it is not publisher runtime. The article lists Microsoft 365 Word on Windows and Mac; use the matching desktop environment and record its build. Web workflow and exam-environment equivalence were not evaluated. No article publication/update date is displayed. Text was inspected October 28, 2026; Word was not executed.
 
 | Resource | Access | Estimated time |
 |---|---|---:|

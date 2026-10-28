@@ -1266,7 +1266,11 @@ The article is useful for understanding tool selection and orchestration. Reconc
 
 Resource details from the [AB-410 guide](../guides/AB-410-building-intelligent-applications.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is a selective starting set, not a complete list and not a prescription to consume everything. Pick the explanation, demonstration, hands-on practice, and assessment style that works for you. Reconcile every exam-labeled resource with the May 15, 2026 official blueprint before investing time or money.
+This is a selective starting set, not a complete list and not a prescription to consume everything. Pick the explanation, demonstration, hands-on practice, and assessment style that works for you. Reconcile every exam-labeled resource with the current official blueprint before investing time or money; the October 16 page update does not publish a new skills-effective date.
+
+#### Focused source-to-evidence route
+
+**Requirements before tooling — public reading; about 45–75 minutes.** Read the [AI-powered solution-design module overview](https://learn.microsoft.com/en-us/training/modules/design-ai-powered-solutions-power-platform/) and its [requirements-to-components unit](https://learn.microsoft.com/en-us/training/modules/design-ai-powered-solutions-power-platform/3-recommend-power-platform-components) (published unit estimate: 7 minutes). For a synthetic repair-request process, produce a one-page matrix of users, data, human decisions, automation and proposed components; justify one step that should remain deterministic. The planning range adds an original worksheet and revision to the short reading, not tenant deployment. Prior canvas-app, flow and Dataverse familiarity is assumed. The module is selective design training, not proof of licensing, rollout or complete blueprint coverage; implementation needs current product documentation. Public text was reviewed October 28, 2026; no account, tenant or paid lesson was used.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
@@ -1286,7 +1290,7 @@ This is a selective starting set, not a complete list and not a prescription to 
 - **Additional paid course/practice bundle — allow 8–20 hours selectively:** [Whizlabs AB-410](https://www.whizlabs.com/microsoft-ab-410-certification-training/). The fetched page returned only a title shell, so duration, counts and coverage remain unverified; verify before purchase.
 - **Partner-restricted learning:** [Partner Skilling Hub](https://www.skilling-hub.com/en-US) may list AB-410-aligned delivery for eligible Microsoft partners. Sign-in is required to confirm the exact current event, start/end times, seat availability, and prerequisites.
 
-Microsoft explicitly says an official AB-410 Practice Assessment is **not currently available**. In bounded September 28, 2026 searches, no exact AB-410 offering from Pluralsight, O'Reilly, or MeasureUp could be independently verified in their public catalogs. Do not infer a product from their coverage of older Power Platform exams, and avoid sites advertising memorized or “real exam” questions. Use the official exam sandbox for interface familiarity and the original checks and labs above for readiness until a reputable current assessment is available.
+**VERIFY CURRENT — checked October 28, 2026:** the [AB-410 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-410) and credential page now direct learners to the Practice Assessment on AI Skills Navigator, with sign-in required. Its public link establishes the announced access path; no signed-in questions, launch, count or performance was inspected. Allow about 1–2 hours for an initial diagnostic attempt and review, an editorial estimate. In bounded September 28, 2026 searches, no exact AB-410 offering from Pluralsight, O'Reilly, or MeasureUp could be independently verified in their public catalogs. Do not infer a product from their coverage of older Power Platform exams, and avoid sites advertising memorized or “real exam” questions. Use the official exam sandbox for interface familiarity and the original checks and labs above for readiness; use the announced official Practice Assessment diagnostically once its exam-specific signed-in access is confirmed.
 
 ---
 
@@ -1756,6 +1760,10 @@ Resource details from the [AZ-802 guide](../guides/AZ-802-administering-windows-
 
 This is **not a complete list**, and it is not meant to be consumed end to end. Pick the resources and formats that work for your experience, access, learning style, and weakest objectives. A strong plan is usually the official blueprint and documentation, one primary structured resource, hands-on practice, and a legitimate assessment used diagnostically—not every course from every vendor.
 
+#### Focused source-to-evidence route
+
+**Monitoring evidence — public instructions; about 60–90 minutes for reading and a tabletop.** Read the [monitoring and troubleshooting lab](https://microsoftlearning.github.io/AZ-802-Windows-Server-Administrator-Associate/Instructions/Labs/LAB_08_Monitoring_and_troubleshooting_Windows_Server.html), which publishes 40 minutes for an already prepared environment. Draft a baseline/load/recovery table naming counters, collection intervals, expected evidence and an event-forwarding check. The longer range allows reading and original analysis; it excludes environment creation. **VERIFY CURRENT:** the [Lab 0 setup page](https://microsoftlearning.github.io/AZ-802-Windows-Server-Administrator-Associate/Instructions/Labs/LAB_00_Set_up_the_AZ-802_lab_environment.html) currently warns that it is under development and must not be used to provision. Use instructions as reading, or execute only in a separately supplied, verified disposable course environment. Record actual observations separately; no scripts or servers were run in this review. This lab does not resolve the SSH Direct support gap.
+
 Provider catalogs and coverage can lag the current AZ-802 blueprint. Estimated times describe content consumption or a reasonable practice session, not total preparation; add note-taking, labs, documentation lookup, spaced review, and remediation. Recheck duration, access, price, publication/update date, and blueprint alignment before purchase.
 
 #### Current AZ-802 resources
@@ -1765,20 +1773,20 @@ Provider catalogs and coverage can lag the current AZ-802 blueprint. Estimated t
 | [Official AZ-802 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802) | Free; authoritative exam scope | 45–75 min to map; 10–15 min before each study cycle | Build the seven-domain checklist and detect objective changes |
 | [Windows Server Administrator Associate page](https://learn.microsoft.com/en-us/credentials/certifications/windows-server-administrator-associate/) | Free; exam delivery, training/practice, and credential status | 15–30 min; recheck before scheduling | Confirm live exam rules and replacement path |
 | [Microsoft AZ-802T00 course](https://learn.microsoft.com/en-us/training/courses/az-802t00) | Course page public; instructor-led access/pricing varies | **5 instructor-led days** plus review/labs | Microsoft's current structured course outline across all seven domains |
-| [MicrosoftLearning AZ-802 labs](https://microsoftlearning.github.io/AZ-802-Windows-Server-Administrator-Associate/) | Free public instructions; infrastructure may cost | Estimate 18–30 hr including setup, evidence, troubleshooting, and cleanup | Guided implementation aligned to the new course |
+| [MicrosoftLearning AZ-802 labs](https://microsoftlearning.github.io/AZ-802-Windows-Server-Administrator-Associate/) | Free public instructions; infrastructure may cost | About 18–30 hr for selected exercises, evidence and troubleshooting in an already supplied environment; editorial budget | Public exercises; Lab 0 is under development and says not to provision with it yet; see the focused route above |
 | [MicrosoftLearning AZ-802 repository](https://github.com/MicrosoftLearning/AZ-802-Windows-Server-Administrator-Associate) | Free; repository states MIT license | 30–60 min to inspect releases/issues plus lab time above | Source, revision history, setup files, and issue context for official labs |
-| [Microsoft practice-assessment catalog](https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications) | Free; **AZ-802 not available at verification time** | Recheck periodically; later allow 1–2 hr per attempt plus remediation | Use once released to expose weak domains, not memorize wording |
+| [Microsoft practice-assessment catalog](https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications) | Free public catalog; current study guide links sign-in-required AI Skills Navigator while credential page says unavailable | Verify the exact access path; allow about 1–2 hr per diagnostic attempt plus remediation | Current access is disputed between official pages; no assessment content or launch inspected |
 | [Udemy AZ-802 & AZ-800 hands-on course](https://www.udemy.com/course/az-800-course-administering-windows-server-hybrid-core-inf/) | Paid; John Christopher; page showed August 2026 update, 25h 38m, 193 lectures | 25h 38m video; plan 35–50 hr with labs and notes | Current commercial course explicitly retitled for AZ-802/AZ-800; map every section to the current blueprint |
 | [Udemy AZ-802 practice tests](https://www.udemy.com/course/az802-tests/) | Paid; Scott Duffy; page showed August 2026 update and four 25-question tests | About 2–4 hr for attempts; 5–10 hr with documentation remediation | Early third-party diagnostic practice; verify explanations against official docs |
 
 #### Selective legacy resources
 
-AZ-800 and AZ-801 retire on September 30, 2026. Their material can still teach durable objectives that moved into AZ-802, but neither old path matches the consolidated blueprint. Use the AZ-802 objective map as a filter: omit old-only migration, clustering/DR, containers, hybrid identity synchronization, and other material unless it supports your wider job learning; add new AZ-802-specific coverage such as SSH Direct, GPU partitioning, current Windows Server 2025 security/storage, and its exact troubleshooting scope.
+AZ-800 and AZ-801 retired on September 30, 2026. Their material can still teach durable objectives that moved into AZ-802, but neither old path matches the consolidated blueprint. Use the AZ-802 objective map as a filter: omit old-only migration, clustering/DR, containers, hybrid identity synchronization, and other material unless it supports your wider job learning; add new AZ-802-specific coverage such as SSH Direct, GPU partitioning, current Windows Server 2025 security/storage, and its exact troubleshooting scope.
 
 | Resource | Access | Estimated time | Reuse boundary |
 |---|---|---:|---|
-| [Microsoft AZ-800 training/course](https://learn.microsoft.com/en-us/training/courses/az-800t00) | Self-directed modules free; instructor-led access varies | 4 instructor-led days; selectively plan 15–30 hr | Reuse AD DS, Group Policy, hybrid server management, Hyper-V/Azure VM, DNS/DHCP, and file-service foundations |
-| [Microsoft AZ-801 training/course](https://learn.microsoft.com/en-us/training/courses/az-801t00) | Self-directed modules free; instructor-led access varies | 4 instructor-led days; selectively plan 8–18 hr | Reuse host/AD security and monitoring/troubleshooting; much HA/DR/migration scope is outside AZ-802 |
+| [Historical AZ-800 course URL](https://learn.microsoft.com/en-us/training/courses/az-800t00) | October 28 check redirects to the general training browser; the specific course outline is unavailable at this URL | Earlier listing: 4 days; not a current verified runtime | Use the current documentation above for AD DS, Group Policy, hybrid server management, VM, network and file-service foundations; this redirect does not establish an available course or its coverage |
+| [Historical AZ-801 course URL](https://learn.microsoft.com/en-us/training/courses/az-801t00) | October 28 check redirects to the general training browser; the specific course outline is unavailable at this URL | Earlier listing: 4 days; not a current verified runtime | Use the current documentation above for security, monitoring and troubleshooting; this redirect does not establish an available course or its coverage |
 | [Pluralsight AZ-800 path](https://www.pluralsight.com/paths/administering-windows-server-hybrid-core-infrastructure-az-800) | Paid; displayed six courses, two labs, practice exam | **17 hr** displayed; plan 22–35 hr with labs/current-doc checks | Broad overlap, but most original videos are older; select by AZ-802 objective |
 | [Pluralsight AZ-801 path](https://www.pluralsight.com/paths/administering-windows-server-hybrid-advanced-services-az-801) | Paid; displayed six courses, one lab, practice exam | **18 hr** displayed; likely 5–10 hr relevant selection | Select security and monitoring only; do not treat its old practice exam as AZ-802 validation |
 | [O'Reilly Exam Ref AZ-800](https://www.oreilly.com/library/view/exam-ref-az-800/9780137729333/cover.xhtml) | Paid subscription; Orin Thomas, 2022 | O'Reilly displayed about 9h 35m; selectively 6–12 hr | Durable identity, management, VM, network, and storage foundation; update terminology/features |
@@ -2283,6 +2291,10 @@ Resource details from the [AZ-120 guide](../guides/AZ-120-planning-administering
 
 This is **not a complete list**, and it is not a recommendation to consume everything. Pick the combination that fits how you learn and use the official April 17, 2026 objective list as the coverage checklist. Time estimates are planning ranges, not vendor promises; pause-and-practice time is included where useful. Verify subscription access, course freshness and exact duration before purchase.
 
+#### Focused source-to-evidence route
+
+**Deployment design without provisioning — public tutorial; about 90–150 minutes.** Read the prerequisites, environment overview, deployment phases and cleanup sections of [Deploy SAP Deployment Automation Framework](https://learn.microsoft.com/en-us/azure/sap/automation/tutorial) (article updated April 13, 2026). Draw the control-plane, workload-zone and system dependencies, then write a prerequisite/cost gate and a reverse-order cleanup checklist. This is an editorial estimate for selected reading and two original artifacts, not a published deployment duration. **VERIFY CURRENT:** actual deployment requires an Azure subscription, suitable permissions/quota and SAP software-download entitlement, and incurs resource costs. Check the pinned release and reconcile sample names before running commands. This reading does not validate HSR backup/failback or SAP support matrices; the guide’s open findings remain. No Azure or SAP environment was deployed.
+
 | Resource | Access | Estimated time |
 |---|---|---:|
 | [Official AZ-120 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-120) | Free; authoritative objectives and update history | 45–75 min initially; 10–15 min before exam |
@@ -2528,7 +2540,11 @@ Practice products should contain independently authored questions and explanatio
 
 Resource details from the [MO-110 guide](../guides/MO-110-microsoft-word-microsoft-365-apps.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is a selective learning path, not a complete list of Word resources.
+This is a selective learning path, not a complete list of Word resources or a requirement to consume every item.
+
+#### Focused source-to-evidence route
+
+**A report that survives revision — public task reference; about 45–75 minutes.** Use [Update a table of contents](https://support.microsoft.com/en-us/word/update-a-table-of-contents) after building your own three-page report with heading styles and an automatic contents table. Rename a heading and insert a page; compare updating page numbers with updating the entire table. Save the revised `.docx` and a short before/after checklist, then reopen the file. The estimate covers the short article, original document creation and two revisions; it is not publisher runtime. The article lists Microsoft 365 Word on Windows and Mac; use the matching desktop environment and record its build. Web workflow and exam-environment equivalence were not evaluated. No article publication/update date is displayed. Text was inspected October 28, 2026; Word was not executed.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
@@ -2543,7 +2559,11 @@ This is a selective learning path, not a complete list of Word resources.
 
 Resource details from the [MO-111 guide](../guides/MO-111-microsoft-word-expert-microsoft-365-apps.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is a selective learning path, not a complete list of Word Expert resources.
+This is a selective learning path, not a complete list of Word Expert resources or a requirement to consume every item.
+
+#### Focused source-to-evidence route
+
+**A merge pack with edge cases — public task references; about 60–90 minutes.** Read [prepare the Excel source](https://support.microsoft.com/en-us/word/prepare-your-excel-data-source-for-a-word-mail-merge), [preview recipients](https://support.microsoft.com/en-us/word/mail-merge-preview-results) and the [mail-merge platform boundary](https://support.microsoft.com/en-us/word/use-mail-merge-for-bulk-email-letters-labels-and-envelopes). Create six synthetic recipients including a leading-zero postal code and a blank optional value. Deliver the source `.xlsx`, main `.docx`, a preview checklist and locally merged letters; do not send mail. Estimate basis: three short references plus original files and recipient-by-recipient inspection. Windows and Mac instructions differ; choose the matching desktop steps. Word for the web preserves existing merge settings but cannot perform or edit the merge. No visible article dates were established. Public text was reviewed October 28, 2026; no merge or paid lesson was executed.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
@@ -2558,7 +2578,11 @@ This is a selective learning path, not a complete list of Word Expert resources.
 
 Resource details from the [MO-210 guide](../guides/MO-210-microsoft-excel-microsoft-365-apps.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is a selective learning path, not a complete list of Excel resources.
+This is a selective learning path, not a complete list of Excel resources or a requirement to consume every item.
+
+#### Focused source-to-evidence route
+
+**Identifiers and trustworthy totals — public task references; about 60–90 minutes.** Read [preserving leading zeros and long identifiers](https://support.microsoft.com/en-us/excel/keeping-leading-zeros-and-large-numbers) and [Excel table totals](https://support.microsoft.com/en-us/excel/get-started/total-the-data-in-an-excel-table). Build an original small sales workbook with text identifiers, a table, a Total Row and a chart. Filter one region and document why its visible total differs from the unfiltered total. Save the `.xlsx` with a raw-input sheet and a reconciliation note; formatting cannot reconstruct source digits already lost. The estimate covers reading, constructing data and two checks, not provider runtime. The totals page has Windows/Mac/web steps; the conversion page has narrower version applicability. **VERIFY CURRENT:** use the applicable desktop instructions for full preparation and record build/platform. No visible article dates were established; Excel was not executed.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
@@ -2573,7 +2597,11 @@ This is a selective learning path, not a complete list of Excel resources.
 
 Resource details from the [MO-211 guide](../guides/MO-211-microsoft-excel-expert.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is a selective learning path, not a complete list of Excel Expert resources. All time estimates below are author suggestions.
+This is a selective learning path, not a complete list of Excel Expert resources or a requirement to consume every item. All time estimates below are author suggestions.
+
+#### Focused source-to-evidence route
+
+**A Pivot report with a reconciliation trail — public task reference; about 60–90 minutes.** Use [Create a PivotChart](https://support.microsoft.com/en-us/excel/get-started/create-a-pivotchart) with your own monthly expense table. Produce a PivotTable, linked chart and category filter; reconcile the displayed values with a manually checked source subtotal. Change one source value, refresh, and retain the saved `.xlsx` plus a change log. This estimate adds original workbook creation and verification to a short article, not a vendor course duration. **VERIFY CURRENT:** Microsoft documents separate Windows, Mac and web routes; Mac and web begin from a PivotTable, and Mac chart-type limits apply. Follow your platform tab rather than copying Windows clicks. This focused chart route does not replace advanced-formula or macro practice. No visible article date was established; text was inspected October 28, 2026 without Excel execution.
 
 Joe McDaid's [Stale Value Formatting announcement](https://techcommunity.microsoft.com/blog/excelblog/stale-value-formatting/3887098), originally published August 8, 2023, explains the calculation-mode problem clearly. Its Windows Beta availability paragraph is historical. Use the current Support reference in section 1 for present behavior and limitations. Read the warning as a prompt to verify calculation, not as ordinary font styling. The article adds useful context; it does not establish an additional exam objective. Its embedded demonstration was not evaluated here.
 
@@ -2581,7 +2609,7 @@ Joe McDaid's [Stale Value Formatting announcement](https://techcommunity.microso
 |---|---|---:|
 | Official credential page and linked detailed outline above | Public | **25 minutes** for scope and logistics |
 | Function and workflow references linked in each section | Public | **3–5 hours**, including small experiments |
-| [Excel help and learning](https://support.microsoft.com/en-us/excel) | Public directory; linked lessons not comprehensively audited | Target gaps as needed |
+| [Excel help and learning](https://support.microsoft.com/en-us/excel) | Public directory; linked lessons not comprehensively audited | About 30–60 min to locate one weak-topic route; estimate for directory browsing and planning, with task practice budgeted separately |
 | Ten labs and six worked examples in this guide | Suitable Excel desktop environment required | **15–22 hours** plus two timed repeats |
 
 Before a timed attempt, explain every named function, recover from a broken formula, reconcile a filtered Pivot total and deliver a correctly protected workbook. Reserve part of the 50-minute practice session for checking the saved result.
@@ -2590,7 +2618,11 @@ Before a timed attempt, explain every named function, recover from a broken form
 
 Resource details from the [MO-310 guide](../guides/MO-310-microsoft-powerpoint-microsoft-365-apps.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is a selective learning path, not a complete list of PowerPoint resources. Times are author suggestions, not provider runtimes or an exam-readiness guarantee.
+This is a selective learning path, not a complete list of PowerPoint resources or a requirement to consume every item. Times are author suggestions, not provider runtimes or an exam-readiness guarantee.
+
+#### Focused source-to-evidence route
+
+**A reusable layout, not repeated manual formatting — public references; about 60–90 minutes.** Read [slide-layout concepts](https://support.microsoft.com/en-us/powerpoint/what-is-a-slide-layout) and [editing layout placeholders](https://support.microsoft.com/en-us/powerpoint/add-edit-or-remove-a-placeholder-on-a-slide-layout). In your own five-slide deck, duplicate a layout, add a picture placeholder and change its prompt text; apply it to two slides, revise it, then reapply it. Deliver the `.pptx` and a checklist distinguishing layout changes from individual-slide edits. Estimate basis: two articles, an original deck and a revision pass. **VERIFY CURRENT:** use the matching Windows or Mac desktop steps; PowerPoint for the web cannot edit layout definitions in Slide Master view. These references do not establish SmartArt preview availability or media support. No visible article dates were established; no PowerPoint operation or embedded video was executed.
 
 | Resource | Access | Estimated time |
 |---|---|---:|

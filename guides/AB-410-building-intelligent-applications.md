@@ -6,18 +6,18 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: review-required
-last_verified: 2026-09-28
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-28
+upcoming_change_checked: 2026-10-28
 ---
 
 # AB-410 Building Intelligent Applications Study Guide
 
-> **Independent AI-assisted resource — DEEP REVIEW COMPLETED; CONNECTOR EVIDENCE GAP; HUMAN REVIEW PENDING.** This guide was checked against the official study guide last updated May 15, 2026 and cited public sources on September 28, 2026. It may still contain errors or become outdated. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-410-coverage-record). The [official AB-410 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-410) is authoritative.
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-05.md#ab-410) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-410-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-410) is authoritative.
 
-**Current baseline:** Official study guide last updated May 15, 2026; Microsoft does not publish a separate skills-effective date on this blueprint.<br>
-**Upcoming blueprint change:** None announced on the official study guide as of September 28, 2026.<br>
-**Lifecycle:** The 120-minute English exam and [Intelligent Applications Builder Associate credential](https://learn.microsoft.com/en-us/credentials/certifications/intelligent-applications-builder-associate/) are active. The adjacent Power Platform Functional Consultant Associate credential [retired August 31, 2026](https://learn.microsoft.com/en-us/credentials/support/credential-retirement); Microsoft's [retired-course catalog](https://learn.microsoft.com/en-us/credentials/certifications/retired-courses) names AB-410T00 as the replacement for the retired PL-200T00 course, not as a one-to-one replacement statement for every PL-200 credential outcome.<br>
+**Current baseline:** Official study guide last updated October 16, 2026; Microsoft does not publish a separate skills-effective date on this blueprint. The 48 detailed objectives match the accepted objective wording.<br>
+**Upcoming blueprint change:** None announced on the official study guide as of October 28, 2026.<br>
+**Lifecycle:** The 120-minute exam, currently listed in 13 languages, and [Intelligent Applications Builder Associate credential](https://learn.microsoft.com/en-us/credentials/certifications/intelligent-applications-builder-associate/) are active. The adjacent Power Platform Functional Consultant Associate credential [retired August 31, 2026](https://learn.microsoft.com/en-us/credentials/support/credential-retirement); Microsoft's [retired-course catalog](https://learn.microsoft.com/en-us/credentials/certifications/retired-courses) names AB-410T00 as the replacement for the retired PL-200T00 course, not as a one-to-one replacement statement for every PL-200 credential outcome.<br>
 **Official source:** [AB-410 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-410)
 
 ## How to use this guide
@@ -38,7 +38,7 @@ Build a small solution in a disposable developer environment. Use both a model-d
 
 ### Living-guide watch — September 28, 2026
 
-The [September 28 deep review](../docs/research/2026-09-28-ab-410-deep-review.md) maps **48 unchanged detailed objectives**. The accepted snapshot's presentation was normalized after comparison; historical evidence bytes remain archived. This guide now has six worked examples, ten labs and 48 answered checks. Validation used offline arithmetic, sets and synthetic records; no tenant, flow, Power Fx runtime, model, deployment or paid lesson was executed.
+The [September 28 deep review](../docs/research/2026-09-28-ab-410-deep-review.md) maps **48 unchanged detailed objectives**. The accepted snapshot's presentation was normalized after comparison; historical evidence bytes remain archived. That September 28 review introduced six worked examples, ten labs and 48 answered checks. Its validation used offline arithmetic, sets and synthetic records. The October 28 worked additions are source-based proposed workflows; no tenant, flow, Power Fx runtime, model, deployment or paid lesson was executed for this refresh.
 
 The prompt-knowledge documentation contains an unresolved SAP support discrepancy: its connector instructions mention SAP, but its limitations list omits it. Treat that path as unverified rather than promising support. Other listed connectors still require their documented execution context and permissions.
 
@@ -90,7 +90,7 @@ An environment separates apps, flows, connections, agents, and usually a Dataver
 - Use production for durable business workloads with operating ownership, security, capacity, backup, and release controls.
 - Treat trial as temporary and expiry-bound.
 - Treat the tenant default environment as broadly accessible personal productivity space, not the automatic home for a critical application.
-- Use Dataverse for Teams only when its Teams-coupled scope and reduced administration/security customization fit.
+- For new Teams-integrated work, choose an appropriate full Dataverse environment and add the app to Teams. **VERIFY CURRENT — October 28, 2026:** the [Power Platform deprecation ledger](https://learn.microsoft.com/en-us/power-platform/important-changes-coming) ends creation of new Dataverse for Teams environments on **November 15, 2026**. Existing environments that remain unupgraded are suspended **September 15, 2027** and decommissioned **October 30, 2027**. Inventory existing apps/data and plan an upgrade or supported move, including capacity and user licensing, before the applicable cutoff.
 
 Recommend the type together with region/data residency, security group, Dataverse requirement, capacity, licensing, DLP, managed-environment rules, backup/recovery, release ring, and maker/admin ownership. Environment roles do not automatically grant Dataverse data access; Dataverse security must be designed separately.
 
@@ -120,6 +120,14 @@ Relationships express cardinality and navigation:
 - review cascade behavior before allowing parent assign, delete, reparent, share, or unshare to affect children.
 
 Use public views for reusable record queries and columns. Use main forms to organize the complete record experience; consider required data, tabs/sections, related data, business process, accessibility, role access, and performance. The app's forms and views do not replace table privileges or row access.
+
+#### Worked build — request data before app screens
+
+In a disposable Dataverse environment, open the data workspace and start a blank **Service Request** table. Choose user/team ownership for requests assigned to staff; add a short-text reference, a choice for triage state and a date/time received column. Add the existing Account table, then create a supported many-to-one lookup from each request to its customer. Save the schema and add three synthetic rows; one customer must relate to two requests. Reopen the table and change its description, rather than creating a second copy when the name is imperfect.
+
+The [table authoring procedure](https://learn.microsoft.com/en-us/power-apps/maker/data-platform/create-edit-entities-portal) distinguishes new and existing objects: removing a new table from this workspace can delete its rows, while removing an existing table from the workspace only removes its diagram representation. **VERIFY CURRENT:** the workspace does not support every column or relationship type, including many-to-many creation. Use the appropriate full table designer for an unsupported change. Extending a customizable standard table differs from creating a new custom table of standard type; preserve the existing table's business meaning and managed restrictions.
+
+Check schema and row access separately: a customizer can author metadata without access to every customer record. Evidence is the saved column types/properties, correct lookup cardinality and actual nonadministrator data access, not the diagram alone.
 
 ### Distinguish prompt columns, row summaries, and deterministic columns
 
@@ -163,6 +171,14 @@ The [current generative-page procedure](https://learn.microsoft.com/en-us/power-
 
 To grant access, share or assign the model-driven app as appropriate and give the user security roles that provide necessary table privileges. Also review form and view role restrictions. Diagnose each layer separately when a user can see the app but cannot open or edit its records.
 
+#### Worked build — a triage app and its evidence
+
+For Service Request, edit a main form to place customer, triage state and received time together. Create a public **Open requests** view with an explicit open-state filter, customer/state/received columns and oldest-received-first sorting. Save and publish the changed components. In the app designer, add the table page and only the intended forms/views; arrange navigation around intake and triage. Save, publish and reopen the released app. These are separate designers within the [model-driven construction workflow](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/model-driven-designers).
+
+Create a system chart with customer as the category and a **count** of request records as the series; choose a column chart, save and publish. Add it and the open-request list to a dashboard and include that dashboard in the app. If a newly published chart is absent, check the app's selected chart assets as well as publication. The [chart procedure](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/create-edit-system-chart) also distinguishes the preview view from a permanently fixed chart filter.
+
+With synthetic records, predict each customer's open count before opening the chart. Test two least-privilege roles: each must see the correct form/view and only its authorized records. A count disagreeing with the prediction calls for checking view filter, aggregate, selected assets and effective record access separately. **VERIFY CURRENT:** designer controls and publication surfaces can change; this is a proposed workflow, not an executed build.
+
 ### Build a canvas app that remains usable and correct
 
 Canvas apps give explicit control over screens, controls, layout, formulas, and data sources. Create from data when that gives a useful starting point, then refactor for business tasks. Use responsive containers and formulas rather than fixed coordinates for every device. Test narrow, wide, landscape, portrait, zoom, keyboard, and screen-reader paths.
@@ -172,6 +188,12 @@ Accessibility work includes semantic labels, logical tab order, visible focus, a
 Performance and correctness meet at delegation. A delegable query executes at the source over the complete set. A nondelegable operation can return a plausible answer from only a local subset. Fix delegation warnings by using supported functions/filters, reshaping the data or query, or explicitly bounding the business set—not by only raising the row limit. Minimize repeated connector calls, large collections, unnecessary controls, startup work, and chatty formulas.
 
 The [delegation overview](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/delegation-overview) documents a default local limit of **500**, configurable to **2,000**. Support depends on the connector and complete expression. Collections can conceal an incomplete source load; a collection's successful local filter does not prove that every source row was retrieved.
+
+#### Worked build — data, selection and a verified save
+
+Create a blank canvas app, add Service Request as a Dataverse data source and place a browse gallery and edit form in responsive containers. Set the gallery's Items to the table, the form's DataSource to that table and its Item to the gallery's selected record. Choose the required fields. A new-request action switches the form to New; a save action submits that form. Put the reset/new-record transition on the form's **OnSuccess**, and put a useful message on **OnFailure**, so a failed submission does not clear the user's input. The [data-to-form/gallery tutorial](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/add-editable-tables) demonstrates these control/data bindings; retain explicit successful-save handling rather than assuming chained actions wait for asynchronous persistence.
+
+Create one synthetic request, select it, change its state and reopen it from the source. Deny a test persona write permission: the expected result is a clear failure and retained input, not a success banner. Repeat with a narrow screen and keyboard. A gallery refresh alone is not proof that a save reached Dataverse.
 
 ### Worked example 2 — A plausible gallery can miss most matches
 
@@ -193,6 +215,12 @@ Variables store state:
 State becomes stale and hard to debug. Use the narrowest scope and a clear update path. Never rely on client variables or hidden controls for authorization.
 
 The [App.Formulas reference](https://learn.microsoft.com/en-us/power-platform/power-fx/reference/object-app) distinguishes immutable definitions that recalculate from stored variables. UDFs add typed parameters/returns; behavior UDFs have explicit side effects. User-defined types can describe records/tables. Keep calculation functions pure where possible and validate data at the boundary. `App.OnError` reports an error after it has occurred; it cannot substitute a value or undo prior effects.
+
+#### Worked choice — one calculation and one reusable experience
+
+Define a named formula for a value derived from existing controls, such as `LineTotal = Value(QuantityInput.Text) * Value(UnitPriceInput.Text);` in App.Formulas, then bind two labels to `LineTotal`. Changing either input should update both consumers without an extra Set call. If several call sites need parameters, define a typed calculation UDF, for example `LineAmount(qty: Number, price: Number): Number = qty * price;`, and call it with explicit numeric values. Validate text-to-number conversion at the input boundary. These illustrate the [named-formula and UDF contract](https://learn.microsoft.com/en-us/power-platform/power-fx/reference/object-app); verify current syntax, type support and feature availability in the target environment.
+
+For a repeated status banner, create a component with explicit label/status inputs, accessible output and an error state. Replace two copied banners with instances; if several apps need the same maintained banner, publish it through a component library and review an update before adopting it in each app. The formula calculates; the component packages an interaction. A shared library does not automatically update every consuming app or authorize data access. Compare a valid value, missing input and invalid number, and record which layer owns each correction. No formula runtime or library deployment was executed for this review.
 
 ### Automate from the app and handle failures
 
@@ -240,6 +268,12 @@ Use scopes to group work and configure run-after behavior for success, failure, 
 
 Test happy path, empty input, malformed data, unauthorized connection, throttling, duplicate event, timeout, partial downstream success, rejection, and support recovery. Use trigger/action inputs and outputs, run history, connection state, and correlation data. Redact or minimize sensitive content in logs.
 
+#### Worked flow — classify a small request batch
+
+Use an instant trigger with a synthetic list of request IDs. For each ID, retrieve the current request row through the authorized connection. A condition routes only open requests to a triage action; the other branch records **skipped — not open**. Map the retrieved row ID and current category explicitly into the action instead of passing the trigger's unvalidated text. Keep processing sequential until independent ordering and duplicate effects have been justified.
+
+Place the retrieve/condition/action path in a try scope, with separate run-after scopes for failure/timeout and final support logging. Persist an operation key before a consequential effect. Test an empty list, one closed row, a denied row and the same operation delivered twice. The expected ledger contains one result per input, preserves a skipped/failed distinction and records no duplicate business effect. A retry must not turn a previously completed item into a second approval. The [flow invocation and branching procedure](https://learn.microsoft.com/en-us/ai-builder/use-a-custom-prompt-in-flow) illustrates action-input mapping and a condition on an explicit approval outcome; the same control discipline applies before generated output can change the record.
+
 ### Worked example 3 — Deduplicate a business operation, not just a row
 
 Five deliveries represent `(request-7, submit-1)` twice, `(request-8, submit-1)` once and `(request-7, submit-2)` twice. There are **three intended operations**, two duplicate deliveries and two distinct request rows. Deduplicating on request ID alone would suppress a legitimate second submission. Use a stable operation/version key and an atomic claim or downstream idempotency contract. A local set demonstration cannot prove concurrency safety or exactly-once external effects.
@@ -274,6 +308,14 @@ Use the current [prompts overview](https://learn.microsoft.com/en-us/ai-builder/
 
 With [JSON output](https://learn.microsoft.com/en-us/ai-builder/process-responses-json-output), testing can change an auto-detected format until it is saved; custom examples stabilize the format, and saving fixes the runtime contract. The generated schema is inspectable but not directly editable. A valid JSON structure still needs business validation for IDs, amounts, allowed categories and authority before any action.
 
+#### Worked build — one prompt, two callers
+
+Create **Request triage draft** from blank or a reviewed template in AI hub's prompt builder. Add a Text input for the request body, write instructions that return a proposed category plus a brief justification, and require an explicit unknown outcome. Supply synthetic ordinary, ambiguous and hostile samples; compare responses with a rubric, revise and save. The [current creation procedure](https://learn.microsoft.com/en-us/microsoft-copilot-studio/create-custom-prompt) still gives Power Apps/Power Automate entry points despite its move into Copilot Studio documentation. That documentation move does not establish that every harness or channel supports the same prompt.
+
+In a canvas app, add the saved prompt through Add data. Call its `.Predict` function with the text-input value, retain the returned record and bind the returned text to a review label. Inspect the actual output shape before binding: [app invocation](https://learn.microsoft.com/en-us/ai-builder/use-a-custom-prompt-in-app) demonstrates a text result, while a configured JSON contract requires its own validated handling. Wrap invocation errors and keep the result as a draft.
+
+In a cloud flow, add **Run a prompt**, select the same saved prompt and map its Text input from the preceding validated action. Pass the returned Text to a review step; branch on the explicit approval outcome and use the accepted text only after approval. [Flow invocation](https://learn.microsoft.com/en-us/ai-builder/use-a-custom-prompt-in-flow) documents these bindings. Test denial, timeout and unsupported category before any record-changing action. **VERIFY CURRENT:** control names, models, capacity and output shape; no invocation was executed here. The separate SAP-knowledge discrepancy above remains unresolved.
+
 ### Use AI models where their task and evidence fit
 
 AI Builder provides prebuilt and custom models for supported tasks such as document processing, prediction, category classification, object detection, or text processing. Select a model based on input/output contract, training-data requirement, language/region, accuracy metric, explainability, latency, cost/capacity, and failure consequence.
@@ -281,6 +323,12 @@ AI Builder provides prebuilt and custom models for supported tasks such as docum
 For a custom model, separate training and representative test data, label consistently, avoid leakage, publish only after meeting a business threshold, and monitor production drift and input changes. For a prebuilt model, validate on your organization's documents and edge cases; “prebuilt” does not mean universally accurate.
 
 In an app or flow, map every model input and output explicitly. Check missing/low-confidence results, create a human-review queue, retain source evidence as allowed, and define retry/fallback. Use a deterministic parser or business rule after the model where possible. Do not silently coerce an uncertain prediction into an authoritative fact.
+
+#### Worked build — consume an OCR model through both surfaces
+
+For a synthetic receipt image, insert the AI Builder text recognizer in a canvas app. Load the image and bind a review label to `TextRecognizer1.FullText`; use `Selected.Text` only when the user intentionally selects a detected line. The [component contract](https://learn.microsoft.com/en-us/ai-builder/prebuilt-text-recognizer-component-in-powerapps) distinguishes full text, line results and selected text. Keep the original image beside editable extracted values; text recognition does not prove that a total, currency or date has been interpreted correctly.
+
+For a flow, start with a file input, add **Recognize text in an image or a PDF document**, and map its Image input to the file's content. Consume the full-document text when the next step needs the complete result; use the pages/lines structure only for deliberate line-by-line processing. The [flow procedure](https://learn.microsoft.com/en-us/ai-builder/flow-text-recognition) documents these distinct outputs. Route unreadable/empty output and business-validation failures to review; do not require a confidence field that a chosen component does not expose. Compare a clean image, blurred image and missing amount. Record expected extraction versus observed values if executed later, plus license/capacity checks and cleanup. No model or paid entitlement was used for this review.
 
 ### Worked example 5 — Coverage and correctness are different measures
 
@@ -309,6 +357,12 @@ Business rules can set values, requirements, visibility, enablement, recommendat
 The [business-rule procedure](https://learn.microsoft.com/en-us/power-apps/maker/data-platform/data-platform-create-business-rule) distinguishes entity/server scope from form scope. Canvas apps need table scope and do not inherit form-only visibility, enablement or recommendations. Editable subgrids are unsupported. Activate and test the rule through each relevant write path; a process stage or hidden control is not a security boundary.
 
 [Formula columns](https://learn.microsoft.com/en-us/power-apps/maker/data-platform/formula-columns) have their own type/function limits, not the entire canvas Power Fx surface. Currency output is unsupported; using currency inputs requires the documented conversions. Compare compatible date behaviors and verify mobile-offline requirements. [Rollups](https://learn.microsoft.com/en-us/power-apps/maker/data-platform/define-rollup-fields) run asynchronously: the initial mass calculation normally waits 12 hours, while incremental jobs have a one-hour default minimum recurrence. Other logic reads the last calculated value. Rollup values use system context, so protect the aggregate column if totals reveal inaccessible rows.
+
+#### Worked build — a guided triage process
+
+Within the solution, create a business process flow for Service Request with **Intake**, **Review** and **Close** stages. Add data steps for customer, category and disposition; mark only the stage-completion requirements as required. Validate, save and activate the definition, include it in the intended app and grant the test roles the needed business-process-flow instance privileges. A saved draft is unavailable to users. The [BPF construction procedure](https://learn.microsoft.com/en-us/power-automate/create-business-process-flow) separates stage/step definition, activation and instance security.
+
+Test a representative user with a missing category, then with a valid category; check whether stage progression matches the brief. Test a read-only observer separately. Avoid using a required two-option Boolean when either Yes or No is a valid completed answer: the documented required Boolean must be Yes. Use a suitable choice for that requirement. A stage guides work; its required steps do not replace API validation, record authorization or the flow that performs an external action. Retain the exported definition and role/test evidence; this is an unexecuted design.
 
 ### Worked example 6 — An aggregate can be correct for the wrong instant
 
@@ -465,9 +519,28 @@ If an answer is only a feature name, deepen it: state the requirement, data, ide
 
 ---
 
+## Final readiness checklist
+
+- [ ] I can map a process to Dataverse, apps, flows, agents, prompts/models, and human decisions without adding AI where deterministic logic is safer.
+- [ ] I can justify environment type, DLP, identities, roles, solution contents, configuration, pipeline, test evidence, and recovery.
+- [ ] I can model tables, columns, relationships, views, forms, security, prompt columns, and row summaries from business meaning.
+- [ ] I can build, share, secure, diagnose, and optimize model-driven and responsive canvas apps.
+- [ ] I can explain named formulas, UDFs, components, variables, collections, delegation, error handling, and Live Monitor.
+- [ ] I can create reliable flows with appropriate triggers, connectors, approvals, control, identity, failure handling, idempotency, and monitoring.
+- [ ] I can build and consume a grounded prompt and AI model with validation, evaluation, human review, and responsible-AI controls.
+- [ ] I can choose among business rules, business process flows, formulas/calculated columns, rollups, cloud flows, prompts, and models.
+- [ ] I completed the three scenarios, ten labs, and 48 answered checks without using exam dumps.
+- [ ] I rechecked the official blueprint, credential page, Practice Assessment availability, and retirement page immediately before scheduling.
+
+---
+
 ## Places to learn
 
-This is a selective starting set, not a complete list and not a prescription to consume everything. Pick the explanation, demonstration, hands-on practice, and assessment style that works for you. Reconcile every exam-labeled resource with the May 15, 2026 official blueprint before investing time or money.
+This is a selective starting set, not a complete list and not a prescription to consume everything. Pick the explanation, demonstration, hands-on practice, and assessment style that works for you. Reconcile every exam-labeled resource with the current official blueprint before investing time or money; the October 16 page update does not publish a new skills-effective date.
+
+### Focused source-to-evidence route
+
+**Requirements before tooling — public reading; about 45–75 minutes.** Read the [AI-powered solution-design module overview](https://learn.microsoft.com/en-us/training/modules/design-ai-powered-solutions-power-platform/) and its [requirements-to-components unit](https://learn.microsoft.com/en-us/training/modules/design-ai-powered-solutions-power-platform/3-recommend-power-platform-components) (published unit estimate: 7 minutes). For a synthetic repair-request process, produce a one-page matrix of users, data, human decisions, automation and proposed components; justify one step that should remain deterministic. The planning range adds an original worksheet and revision to the short reading, not tenant deployment. Prior canvas-app, flow and Dataverse familiarity is assumed. The module is selective design training, not proof of licensing, rollout or complete blueprint coverage; implementation needs current product documentation. Public text was reviewed October 28, 2026; no account, tenant or paid lesson was used.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
@@ -487,7 +560,7 @@ This is a selective starting set, not a complete list and not a prescription to 
 - **Additional paid course/practice bundle — allow 8–20 hours selectively:** [Whizlabs AB-410](https://www.whizlabs.com/microsoft-ab-410-certification-training/). The fetched page returned only a title shell, so duration, counts and coverage remain unverified; verify before purchase.
 - **Partner-restricted learning:** [Partner Skilling Hub](https://www.skilling-hub.com/en-US) may list AB-410-aligned delivery for eligible Microsoft partners. Sign-in is required to confirm the exact current event, start/end times, seat availability, and prerequisites.
 
-Microsoft explicitly says an official AB-410 Practice Assessment is **not currently available**. In bounded September 28, 2026 searches, no exact AB-410 offering from Pluralsight, O'Reilly, or MeasureUp could be independently verified in their public catalogs. Do not infer a product from their coverage of older Power Platform exams, and avoid sites advertising memorized or “real exam” questions. Use the official exam sandbox for interface familiarity and the original checks and labs above for readiness until a reputable current assessment is available.
+**VERIFY CURRENT — checked October 28, 2026:** the [AB-410 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-410) and credential page now direct learners to the Practice Assessment on AI Skills Navigator, with sign-in required. Its public link establishes the announced access path; no signed-in questions, launch, count or performance was inspected. Allow about 1–2 hours for an initial diagnostic attempt and review, an editorial estimate. In bounded September 28, 2026 searches, no exact AB-410 offering from Pluralsight, O'Reilly, or MeasureUp could be independently verified in their public catalogs. Do not infer a product from their coverage of older Power Platform exams, and avoid sites advertising memorized or “real exam” questions. Use the official exam sandbox for interface familiarity and the original checks and labs above for readiness; use the announced official Practice Assessment diagnostically once its exam-specific signed-in access is confirmed.
 
 ---
 
@@ -497,16 +570,3 @@ Microsoft explicitly says an official AB-410 Practice Assessment is **not curren
 - [May Power Platform update](https://www.microsoft.com/en-us/power-platform/blog/2026/05/14/whats-new-in-power-platform-may-2026-feature-update/) — Tiffany Treacy, May 14, 2026. Read the user-defined-type section and compare typed records/functions with unvalidated model JSON. Design valid, missing, wrong-type and forbidden-value cases; a type-correct value can still violate business rules. Allow 30–60 minutes. Check current App.Formulas documentation before implementing the example.
 
 Only those selected article sections were reviewed for these exercises. Other product announcements, linked tools, paid content, videos and performance claims were not reproduced. Blogs supplement the blueprint; their publication dates do not prove tenant rollout.
-
-## Final readiness checklist
-
-- [ ] I can map a process to Dataverse, apps, flows, agents, prompts/models, and human decisions without adding AI where deterministic logic is safer.
-- [ ] I can justify environment type, DLP, identities, roles, solution contents, configuration, pipeline, test evidence, and recovery.
-- [ ] I can model tables, columns, relationships, views, forms, security, prompt columns, and row summaries from business meaning.
-- [ ] I can build, share, secure, diagnose, and optimize model-driven and responsive canvas apps.
-- [ ] I can explain named formulas, UDFs, components, variables, collections, delegation, error handling, and Live Monitor.
-- [ ] I can create reliable flows with appropriate triggers, connectors, approvals, control, identity, failure handling, idempotency, and monitoring.
-- [ ] I can build and consume a grounded prompt and AI model with validation, evaluation, human review, and responsible-AI controls.
-- [ ] I can choose among business rules, business process flows, formulas/calculated columns, rollups, cloud flows, prompts, and models.
-- [ ] I completed the three scenarios, ten labs, and 48 answered checks without using exam dumps.
-- [ ] I rechecked the official blueprint, credential page, Practice Assessment availability, and retirement page immediately before scheduling.

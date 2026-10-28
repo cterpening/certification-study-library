@@ -6,18 +6,18 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: review-required
-last_verified: 2026-09-28
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-28
+upcoming_change_checked: 2026-10-28
 ---
 
 # AZ-120 Planning and Administering Microsoft Azure for SAP Workloads Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 28, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-120-coverage-record). The [official AZ-120 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-120) is authoritative.
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-05.md#az-120) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-120-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-120) is authoritative.
 
 **Current baseline:** Skills measured as of April 17, 2026<br>
-**Upcoming blueprint change:** None announced on the official study guide as of September 28, 2026.<br>
-**Certification lifecycle:** Active; no retirement or replacement is announced on the [official credential page](https://learn.microsoft.com/en-us/credentials/certifications/azure-for-sap-workloads-specialty/) as of September 28, 2026.<br>
+**Upcoming blueprint change:** None announced on the official study guide as of October 28, 2026.<br>
+**Certification lifecycle:** Active; no retirement or replacement is announced on the [official credential page](https://learn.microsoft.com/en-us/credentials/certifications/azure-for-sap-workloads-specialty/) as of October 28, 2026.<br>
 **Official source:** [AZ-120 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-120)
 
 The September 28 [deep review](../docs/research/2026-09-28-az-120-deep-review.md) maps all **78 detailed objectives**. The credential page lists **100 minutes**, seven exam languages and annual renewal. It exposes an exam sandbox, with no Microsoft Practice Assessment shown in this review; an interface demo does not assess SAP knowledge. Human review remains pending. A conflict between two Microsoft HANA backup procedures remains open; see section 4 before using either operational recipe.
@@ -178,6 +178,12 @@ An Azure role does not grant an SAP authorization, and an SAP role does not gran
 
 For SAP applications hosted in Azure, distinguish OS/domain authentication, database authentication, SAP users/roles, and Microsoft Entra integration. For SAP SaaS, the organization normally configures an enterprise application and the vendor-supported SAML or OpenID Connect federation, claim/group mapping, conditional access, certificate rollover, break-glass access, and—when supported—SCIM or another provisioning lifecycle. Test sign-in and deprovisioning; successful federation does not prove that SAP authorizations are correct.
 
+#### Worked control — enforce a boundary without an estate-wide surprise
+
+In a dedicated nonproduction SAP resource group, assign an existing reviewed Azure Policy definition at that resource group's scope. For a required owner tag, supply the tag-name parameter and start with an audit effect where the selected definition supports it. Evaluate one compliant and one deliberately untagged test resource, inspect the compliance reason and repair the missing tag. Then pilot the approved enforcement effect on a disposable resource creation; existing compliance evaluation and prevention of a new request are different observations. Record exclusions or time-bound exemptions with an owner instead of silently widening the assignment. The [policy-assignment quickstart](https://learn.microsoft.com/en-us/azure/governance/policy/assign-policy-portal) provides the assignment, effect and exemption contracts.
+
+Before promotion, inspect inherited initiatives and deny controls at management-group/subscription scopes, including whether deployment identities can create the required network, storage and diagnostic resources. A deployIfNotExists or modify policy needs its documented identity, roles and remediation task; an audit-only finding does not repair an existing resource. Capture assignment ID, scope, parameters, evaluated resources, denied request and approved removal/rollback path. This is an unexecuted change plan, not a compliance attestation.
+
 ### Integrate RISE with SAP
 
 In RISE with SAP on Azure, SAP owns and operates the RISE subscription and its resources; the customer owns its connected Azure estate. The [RISE integration guidance](https://learn.microsoft.com/en-us/azure/sap/workloads/rise-integration) makes that boundary central.
@@ -213,6 +219,14 @@ The [RISE network guidance](https://learn.microsoft.com/en-us/azure/sap/workload
 - [Integrate Azure with SAP RISE managed workloads](https://learn.microsoft.com/en-us/azure/sap/workloads/rise-integration)
 
 ---
+
+#### Worked handoff — customer service to a RISE interface
+
+Suppose a customer-managed integration service must read approved SAP data and archive it to customer-managed storage. First obtain SAP's approved interface, authentication, port, address and licensing terms; do not infer direct database access from VNet connectivity. For a peered design, exchange the exact VNet resource IDs, complete the required cross-tenant permissions and have each owner approve its side. Implement return routes and allowed ports on both sides, then resolve the SAP name from the actual runtime host. The [RISE network procedure](https://learn.microsoft.com/en-us/azure/sap/workloads/rise-integration-network) requires bilateral enablement; a peering status alone does not prove the transaction.
+
+Choose the connector before the runtime: many SAP data connectors need a customer-operated self-hosted integration runtime; some use Azure Integration Runtime and its different public HTTPS path. Install/configure the documented driver/runtime only for that connector, create its connection using an authorized SAP identity and test a bounded read to the archive destination. Re-read the archived object and compare record count/retention/access with the brief; test a denied identity and a blocked network path. [RISE service integration](https://learn.microsoft.com/en-us/azure/sap/workloads/rise-integration-services) distinguishes runtime and on-premises data-gateway paths. A read/copy pipeline is not itself SAP archive deletion, retention approval or proof that every historical record is recoverable.
+
+For SSO, select the documented method for the actual SAP client, exchange federation metadata/certificates with the responsible SAP team, map the intended user and validate both permitted and denied SAP operations. Keep application authorization separate from successful sign-in. For security telemetry, agree which SAP application signals are exposed and prove arrival in the customer's security service. **Confirmed boundary:** the [RISE identity/security guidance](https://learn.microsoft.com/en-us/azure/sap/workloads/rise-integration-security) excludes integration with Azure Monitor for SAP solutions and Azure Center for SAP solutions; customer-side Azure services do not grant access to RISE infrastructure/OS telemetry. **VERIFY CURRENT:** interface, driver, SSO and connector support. This is an original, unexecuted handoff plan.
 
 ## 3. Design and implement infrastructure (25–30%)
 
@@ -259,6 +273,12 @@ The [SAP planning guide](https://learn.microsoft.com/en-us/azure/virtual-machine
 
 [MANA on Linux](https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-linux) requires a supported guest driver as well as compatible host hardware. An enabled Accelerated Networking flag is only one check: verify the PCI device, driver availability, interface binding and increasing virtual-function packet counters. The Microsoft [June 3 MANA/SAP article](https://techcommunity.microsoft.com/blog/sapapplications/mana-support-for-existing-vm-skuswhy-now-is-the-right-time-to-update-linux-on-yo/4524534) explains why an existing VM SKU can encounter newer network hardware. Inventory OS service pack/kernel, SAP support, image lineage and driver readiness before a reboot/redeploy; test a supported update and rollback in a representative nonproduction system. Its temporary legacy-device exception does **not** cover M-series. Do not treat an upstream kernel number as a substitute for distribution and SAP support checks.
 
+#### Worked network changes — placement and private storage resolution
+
+For a latency-sensitive tier that fits the support and availability design, create a proximity placement group in the intended region and attach the supported VM/availability-set deployment to it. For an existing workload, plan the required stop/deallocate and redeploy window before changing placement. Recheck allocation/alignment and representative SAP latency afterward. [PPG guidance](https://learn.microsoft.com/en-us/azure/virtual-machines/co-location) distinguishes a colocation constraint from reserved capacity: an intended SKU combination can still fail allocation. One group cannot provide placement across multiple zones. Retain a capacity fallback instead of removing the zone requirement merely to make allocation succeed.
+
+For a storage **service endpoint**, enable the service on the workload subnet and configure the storage firewall to allow that subnet; confirm the supported service's public name/path and reject an unauthorized subnet. For a **private endpoint**, select the correct storage subresource, approve the connection and create/link its private DNS configuration. From the SAP VM and an intended on-premises client, resolve the normal service name and verify the private destination, route and actual authorized read/write. An endpoint attached to the wrong subresource or a DNS name still returning a public address is not a completed private design. The [SAP planning guide](https://learn.microsoft.com/en-us/azure/sap/workloads/planning-guide) and [SAP storage guidance](https://learn.microsoft.com/en-us/azure/sap/workloads/planning-guide-storage) bound these choices to the particular SAP/storage topology. Record expected and denied flows before changing production networking. These steps were not executed.
+
 ### Choose and lay out storage
 
 Separate capacity, IOPS, throughput, latency, durability, filesystem/protocol, sharing and recovery requirements for:
@@ -279,6 +299,14 @@ The current [HANA VM storage guidance](https://learn.microsoft.com/en-us/azure/s
 The current [HANA storage guidance](https://learn.microsoft.com/en-us/azure/sap/workloads/hana-vm-operations-storage) allows different certified storage types for data and log volumes, including certified NFS/block combinations. The **corresponding volume on each HSR replica must retain the same storage type**. A mixed data/log design within one VM does not justify data on Premium SSD on one replica and Ultra Disk on the other. Check exact supported VM/OS/HANA combinations in the current SAP certification sources; this guide does not certify a proposed SKU.
 
 [Premium SSD v2](https://learn.microsoft.com/en-us/azure/sap/workloads/hana-vm-premium-ssd-v2) separates provisioned capacity, IOPS and throughput within its service limits. The [SAP storage planning guide](https://learn.microsoft.com/en-us/azure/sap/workloads/planning-guide-storage) distinguishes it from Premium SSD v1: do not copy a v1 caching or Write Accelerator recipe onto v2. [Write Accelerator](https://learn.microsoft.com/en-us/azure/virtual-machines/how-to-enable-write-accelerator) targets eligible M-series Premium SSD log/redo disks, not arbitrary VM families or database data volumes. Stripe members, the VM aggregate cap, queueing and backup/savepoint competition all matter. Keep `/hana/shared` performance in the design: an apparently adequate capacity can still hide I/O delays and cluster timeouts. Use the worked storage budget below before proposing more disks.
+
+#### Worked storage assembly — preserve volume role and access
+
+For an eligible M-series/Premium SSD redo-log design, record the exact attached log disks, caching and VM limits before enabling Write Accelerator. Follow the [Write Accelerator procedure](https://learn.microsoft.com/en-us/azure/virtual-machines/how-to-enable-write-accelerator): shut down the database/workload using a standalone disk before the change. For a striped volume, shut down the VM before enabling or disabling every member in the documented separate steps. Use only supported None or ReadOnly disk caching, and keep data disks out of this log-specific change. Verify disk flags, guest mount, database log writes and latency against the baseline; preserve a supported reversal and recovery point. Do not transpose the workflow to Premium SSD v2 or an arbitrary VM family.
+
+For an ANF HANA layout, prepare an eligible NetApp account, manual-QoS capacity pool and delegated subnet. In an application volume group, select SAP HANA, enter the SID and node-memory sizing, choose the first/single-host role, placement, network and key source, then review export policy plus each volume's quota and throughput. The [first-host deployment procedure](https://learn.microsoft.com/en-us/azure/azure-netapp-files/application-volume-group-deploy-first-host) creates the required roles together; inspect the actual exports and mount each role at its approved guest path. Check a permitted SAP host and denied host, persistent mounts and post-restart access. Capacity alone is insufficient when required throughput is wrong.
+
+For Azure Files, first select the **documented SAP shared-files** use case, such as the SLES ASCS/ERS NFS design, rather than assuming it is a HANA data/log substitute. Create the supported storage-account/share/protocol/redundancy combination, restrict networking and configure its private endpoint/DNS. Create the required SAP directories with the specified UID/GID/permissions, mount through the supported client/options and persist mounts as the selected HA design requires. The [SLES NFS-on-Azure-Files procedure](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-suse-nfs-azure-files) is topology-specific. Verify access from every intended node and the denied path before testing failover. **VERIFY CURRENT:** SKU, protocol, EiT, mount options and support; these are unexecuted assembly plans.
 
 ### Encrypt and protect data
 
@@ -328,6 +356,14 @@ Microsoft's [Sapphire 2026 update](https://techcommunity.microsoft.com/blog/sapa
 
 ---
 
+#### Worked deployment record — the same SID through three approaches
+
+For a fictional nonproduction SID, first freeze region, supported VM/image/storage, subnets, identities and quota inputs. In an ARM/Bicep approach, make these typed parameters, connect NICs/disks/VMs with explicit resource dependencies, keep secrets outside the parameter file and run template validation plus a what-if review before an authorized deployment. Inspect deployed resource properties and guest initialization separately; a valid resource template has not installed SAP.
+
+For SDAF, pin the reviewed release and parameter files. Follow the [enterprise deployment sequence](https://learn.microsoft.com/en-us/azure/sap/automation/tutorial): prepare the regional control plane and state/media storage, deploy the workload zone and its network/keys, deploy the SAP-system infrastructure, then run the supported OS/HANA/SAP configuration workflow. Review each plan against the correct state before apply, retain outputs needed by the next tier and verify installation/health before acceptance tests. Keep SAP media access separate from public code. Repeating the same configuration should be reviewed for unintended replacements; state loss is a recovery problem, not a cue to create a duplicate landscape.
+
+For Azure Center for SAP solutions, register the required resource provider, prepare the documented deployment identity/RBAC and select **Create a new SAP system**. Supply the SID, production/nonproduction choice, supported deployment topology, network, sizing and storage configuration; review the resulting plan before creation. The [S/4HANA infrastructure procedure](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/deploy-s4hana) separates infrastructure creation from subsequent SAP software installation. Validate the VIS and actual instances together after installation; registration of an existing SID is another workflow. For all three routes, preserve parameters, change preview, deployment/configuration logs, expected versus observed checks, cost and an approved cleanup/recovery plan. No Azure deployment or SAP install occurred in this review.
+
 ## 4. Design and implement HA and DR (20–25%)
 
 ### Keep HA, DR and backup distinct
@@ -356,6 +392,14 @@ Protect each singleton:
 For SQL Server, distinguish an Always On availability group from a failover cluster instance and use only the SAP-, Microsoft-, OS- and storage-supported pattern. For central-services shared state, storage-level replication is valid only where the chosen SAP/OS architecture documents it; shared managed disks, Azure Files, Azure NetApp Files and replicated local filesystems are not interchangeable.
 
 The [SAP HA architecture guidance](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-high-availability-architecture-scenarios) describes redundancy across application, central-services and database components.
+
+#### Worked HA change plan — listener, replicas and storage ownership
+
+For a supported SQL availability-group design, validate the SQL/Windows/SAP versions and topology first. Prepare domain identities, nodes, cluster/quorum, endpoint ports and protected database recovery material; enable Always On on each SQL instance. Create the availability group, add the intended databases and seed/join the secondary replicas. Select synchronous/asynchronous commit and failover mode from latency and RPO, then configure the supported listener. The [SAP SQL deployment guide](https://learn.microsoft.com/en-us/azure/virtual-machines/workloads/sap/dbms_guide_sqlserver) distinguishes listener choices; the [single-subnet AG tutorial](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-manually-configure-tutorial-single-subnet) is one specific construction, not a universal SAP recipe.
+
+Where that supported single-subnet listener uses a Standard Load Balancer, create its frontend address, add the intended nodes to the backend pool, configure the dedicated health probe and matching listener rule, and allow the actual listener/probe paths in NSGs and host firewalls. Coordinate cluster IP/probe and floating-IP settings with the topology's procedure. Do not copy the same settings to a multi-subnet or DNN design. Verify synchronized/healthy replicas, the probe on the current owner and an SAP database connection **through the listener name**; test planned failover and reconnection in an authorized nonproduction system. A node-local SQL connection bypasses the listener under test.
+
+One documented storage-level pattern is **Windows ASCS/SCS with SIOS DataKeeper Cluster Edition**. Attach the corresponding supported volumes to both WSFC nodes, install the licensed product on both, connect the source and target nodes in its configuration tool and create a mirror for the intended volume. Select **synchronous** replication for this ASCS/SCS pattern, expose the replicated volume as a cluster disk and verify both an active mirroring job and the expected WSFC disk resource/owner. The [infrastructure procedure](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-high-availability-infrastructure-wsfc-shared-disk) and [supported shared-disk choices](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-high-availability-guide-wsfc-shared-disk) separate replicated local disks from Azure shared managed disks. Validate current OS/product/support terms, including SIOS support, before selecting it. Test controlled ownership/failover and resynchronization without allowing an independent second writer. This is not SQL AG's database-native replication or an independent backup. No cluster, listener or replication product was configured, licensed or failed over for this review.
 
 ### Understand fencing and split brain
 
@@ -421,6 +465,12 @@ The [native HSR backup procedure](https://learn.microsoft.com/en-us/azure/backup
 
 For [HANA instance snapshots](https://learn.microsoft.com/en-us/azure/backup/sap-hana-database-instances-backup), distinguish **Standard (GA)** from **Enhanced (preview)**; current HSR snapshot support requires Enhanced. Protect every database with the documented weekly-full-plus-log Backint policy before adding daily instance snapshots. Do not add streaming differential/incremental backups to that specific configuration. A snapshot supplies a baseline; separately backed-up logs still supply replay. HSR snapshots cover the documented data/log volumes, not `/hana/shared`, so include shared files and other dependencies in the wider recovery plan. Verify snapshot permissions on both possible primaries. Preview availability and vault features must be checked for the exact region/configuration, and a successful snapshot job still needs a restore drill.
 
+#### Worked restore plan — recover a copy before overwriting anything
+
+Choose a verified recovery point that meets the requested transaction time and has a continuous replay chain. Select the protected database, choose alternate-location recovery for an isolated copy and enter the target host, instance and restored database name. The target must meet the documented same-region/same-vault and backup-readiness requirements. Check roles, keys, capacity, network and name/collision handling before submission; do not select overwrite merely to bypass an existing name. Inspect the job through completion, check database consistency and run an isolated SAP/business validation. [HANA restore guidance](https://learn.microsoft.com/en-us/azure/backup/sap-hana-database-restore) distinguishes original, alternate and file paths. HSR restores have additional standalone-target restrictions; do not restore directly into an active HSR relationship.
+
+Record the chosen recovery point, actual restored database, elapsed phases and usable last transaction. Compare achieved RPO/RTO with the requirement rather than using job success as acceptance. Remove only the authorized test copy after retaining evidence. For HSR, first resolve the protection-model/FAQ applicability question above; this general isolated-restore workflow does not authorize the disputed secondary stop/resume recipe. No restore was executed here.
+
 ### Recovery test scorecard
 
 | Measure | Evidence |
@@ -467,7 +517,7 @@ The [registration procedure](https://learn.microsoft.com/en-us/azure/sap/center-
 
 For [Azure Monitor for SAP providers](https://learn.microsoft.com/en-us/azure/sap/monitor/providers), record component, authentication, network path, actual arriving data and alert owner. A deployed monitor with zero providers collects no SAP component data. AMS sends its collected data to Azure Monitor Logs; distinguish that pipeline from native Azure platform metrics or separately configured guest telemetry. Test the data and the alert, not just resource existence.
 
-Security monitoring is a separate integration. The [Sentinel SAP deployment guidance](https://learn.microsoft.com/en-us/azure/sentinel/sap/deployment-overview) says the containerized connector retired **September 14, 2026** and its images will be removed **October 14, 2026**. An old running container still forwarding logs does not prove it can be redeployed for DR. Use the supported agentless connector path and validate its SAP Cloud Connector/Integration Suite prerequisites and coverage. This is an operational currency note, not an additional AZ-120 blueprint domain.
+Security monitoring is a separate integration. The [Sentinel SAP deployment guidance](https://learn.microsoft.com/en-us/azure/sentinel/sap/deployment-overview) says the containerized connector retired **September 14, 2026** and its images were scheduled for removal **October 14, 2026**; image removal was not independently observed in this review. An old running container still forwarding logs does not prove it can be redeployed for DR. Use the supported agentless connector path and validate its SAP Cloud Connector/Integration Suite prerequisites and coverage. This is an operational currency note, not an additional AZ-120 blueprint domain.
 
 ### Optimize performance and cost
 
@@ -491,6 +541,12 @@ Archiving and HANA data aging can reduce hot working-set and premium-storage dem
 Start and stop in dependency order. A simplified stop sequence moves from entry points and jobs through application servers and central services to the database; start usually reverses it, with validation gates. Actual sequences depend on the SAP design.
 
 [SAP LaMa’s Azure connector](https://learn.microsoft.com/en-us/azure/sap/workloads/lama-installation) can use an Azure service principal or managed identity to manage permitted resources. Prefer managed identities when supported, constrain RBAC scope, protect against concurrent automation and test storage-tier or VM lifecycle actions.
+
+#### Worked connector setup — scoped discovery before lifecycle action
+
+Confirm the supported SAP LaMa Enterprise Edition/version and adaptive-host prerequisites. If LaMa runs on an eligible Azure VM, enable its approved managed identity and grant the documented resource-group permissions only for the SAP resources it must manage. In LaMa, add a **Microsoft Azure Cloud Adapter** under Infrastructure/Cloud Managers; enter subscription/tenant, endpoint and identity settings, then use **Test Configuration**. The [LaMa connector procedure](https://learn.microsoft.com/en-us/azure/sap/workloads/lama-installation) distinguishes system-assigned, user-assigned and service-principal fields.
+
+Compare discovered resource groups with the intended authorization scope before attempting a lifecycle operation. Leave optional disk-type changes disabled until storage/performance/recovery implications are approved. In a disposable nonproduction system, plan one supported stop/start transaction, checking SAP dependency order, mount state, VM allocation and subsequent health. A successful API connection proves neither SAP consistency nor least privilege. Retain the connector configuration without secrets, test evidence and a removal plan for identity/role assignments when retired; no LaMa or Azure action occurred during this review.
 
 ### Operational failure modes
 
@@ -813,6 +869,10 @@ Answer in your own words before opening the answers.
 ## Places to learn
 
 This is **not a complete list**, and it is not a recommendation to consume everything. Pick the combination that fits how you learn and use the official April 17, 2026 objective list as the coverage checklist. Time estimates are planning ranges, not vendor promises; pause-and-practice time is included where useful. Verify subscription access, course freshness and exact duration before purchase.
+
+### Focused source-to-evidence route
+
+**Deployment design without provisioning — public tutorial; about 90–150 minutes.** Read the prerequisites, environment overview, deployment phases and cleanup sections of [Deploy SAP Deployment Automation Framework](https://learn.microsoft.com/en-us/azure/sap/automation/tutorial) (article updated April 13, 2026). Draw the control-plane, workload-zone and system dependencies, then write a prerequisite/cost gate and a reverse-order cleanup checklist. This is an editorial estimate for selected reading and two original artifacts, not a published deployment duration. **VERIFY CURRENT:** actual deployment requires an Azure subscription, suitable permissions/quota and SAP software-download entitlement, and incurs resource costs. Check the pinned release and reconcile sample names before running commands. This reading does not validate HSR backup/failback or SAP support matrices; the guide’s open findings remain. No Azure or SAP environment was deployed.
 
 | Resource | Access | Estimated time |
 |---|---|---:|

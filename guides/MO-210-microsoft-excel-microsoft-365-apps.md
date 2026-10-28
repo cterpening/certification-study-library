@@ -6,23 +6,25 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-28
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-28
+upcoming_change_checked: 2026-10-28
 ---
 
 # MO-210 Microsoft Excel Associate (Microsoft 365 Apps) Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide follows the live MO-210 scope checked September 28, 2026. It is unofficial and may contain errors. The [official MO-210 page](https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-associate-m365-apps/) is authoritative.
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-05.md#mo-210) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mo-210-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-associate-m365-apps/) is authoritative.
 
 **Assessment contract:** 50-minute proctored practical assessment; about 150 hours of instruction and hands-on use is Microsoft preparation guidance, not a prerequisite.<br>
 **Current scope:** workbooks and worksheets; cells and ranges; tables; formulas and functions; charts.<br>
-**Change watch:** No retirement or replacement is listed on the credential page, checked September 28, 2026. Current [Microsoft policy](https://learn.microsoft.com/en-us/credentials/support/credential-expiration-policy) gives MOS a five-year lifetime; check your earned credential's dates.<br>
+**Change watch:** No retirement or replacement is listed on the credential page, checked October 28, 2026. Current [Microsoft policy](https://learn.microsoft.com/en-us/credentials/support/credential-expiration-policy) gives MOS a five-year lifetime; check your earned credential's dates.<br>
 **Detailed coverage:** The [officially linked PDF](https://arch-center.azureedge.net/Learning/Credentials/microsoft-certified-security-operations-analyst-skills-measured.pdf) currently contains the MO-210 outline despite its misleading filename. All 65 tasks are mapped in the [review report](../docs/research/2026-09-28-mo-210-deep-review.md); the automatic page monitor compares five broad domains. No Excel desktop lab was executed during this review.
 
 ## How to use this guide
 
 Treat each workbook as a small system: inputs, transformation/calculation, presentation, and validation. Work from a requirement, use the intended feature, and verify both displayed results and underlying formulas. Speed without reconciliation produces convincing errors. The credential page currently lists 15 languages and no dedicated Learn training collection. Practice in the desktop Microsoft 365 Apps environment used by your testing center. Study durations below are suggested practice budgets. Formula examples use English names and comma separators; localized installations can display different syntax.
+
+**VERIFY CURRENT — practice platform:** Confirm the testing center's exact delivery/build before scheduling. For Compass Cloud: In-Center, Certiport's October 22, 2026 candidate guide says MOS Live-in-the-App exams run in a Windows VM even when the client is a Mac or Chromebook. This does not establish that every center uses Cloud. Mac and web product practice can teach concepts, but it does not establish parity with the assessed Windows workflow. Keep the platform boundaries beside each task. See [Certiport candidate platform guidance](https://certiport.pearsonvue.com/Support/Install/Compass-Cloud/Test-Candidate/CC_Guide_TestCandidate). The public [MOS Microsoft 365 Apps interface tutorial](https://certiport.pearsonvue.com/Educator-resources/Exam-details/Exam-tutorials/MOS_365Apps_Tutorial.pdf) distinguishes exam controls from ordinary application practice: some commands, including Encrypt with Password, are disabled in the exam environment. Local product exercises below are learning tasks, not a promise of the available exam UI or actual assessment items.
 
 > **About related items:** A `Related item:` callout adds supporting analytical or operational context. It is not a claim that the item appears verbatim in the published objectives.
 
@@ -48,6 +50,14 @@ Customize the Quick Access Toolbar for the required commands. Compare Normal, Pa
 
 [Threaded comments and notes](https://support.microsoft.com/en-us/excel/the-difference-between-threaded-comments-and-notes) are distinct. Comments support replies and resolution; notes are cell annotations without a conversation. Resolving a discussion does not delete the cell data or remove the discussion permanently. Inspect both kinds before distribution.
 
+### Worked navigation and presentation pass
+
+Use a synthetic workbook with a Sales sheet and a Summary sheet. Put a distinctive ID on each; in Find → Options, set **Within: Workbook** and inspect Find All, then compare **Look in: Formulas** with **Values** for a cell whose displayed result differs from its formula. Select a result to navigate. Define a Summary destination and insert a descriptive cell link to that location; follow it, then use Remove Hyperlink and verify that the displayed label remains. See [workbook search settings](https://support.microsoft.com/en-us/excel/get-started/find-or-replace-text-and-numbers-on-a-worksheet) and [Excel link targets and removal](https://support.microsoft.com/en-us/excel/work-with-links-in-excel).
+
+Select C3, use View → Freeze Panes → Freeze Panes, and scroll both directions: rows 1–2 and columns A–B should remain visible. Unfreeze before a different boundary. This differs from Split or New Window. See [active-cell freeze boundary](https://support.microsoft.com/en-gb/excel/get-started/freeze-panes-to-lock-rows-and-columns?nochrome=true).
+
+On a copy, select a long header row, set column widths and row height so the requested text is visible, and use Format Cells → Alignment for wrap, orientation, indentation and horizontal/vertical alignment. Use a built-in cell style for a heading and Format Painter from one correctly formatted cell onto another; inspect the destination's value and formula to ensure only formatting was intended. Merge a title over empty presentation cells, then unmerge and check the surviving value; avoid merging populated data records. Apply a numeric format and compare the formula bar's stored value. Finally use Clear Formats on a selected copy: values/formulas must remain. Compare Clear Contents and Delete Cells on separate disposable copies; Delete shifts surrounding cells. See [clearing formats versus contents and deleting cells](https://support.microsoft.com/en-us/excel/clear-cells-of-contents-or-formats). See [row height and column width](https://support.microsoft.com/en-us/excel/change-the-column-width-and-row-height), [merge data-loss behavior](https://support.microsoft.com/en-us/excel/get-started/merge-and-unmerge-cells-in-excel) and [format-copy workflow](https://support.microsoft.com/en-us/word/use-the-format-painter).
+
 ## 2. Cells and ranges
 
 Paste content, formulas, formats, or values deliberately. Use Fill Series and Flash Fill only after checking the inferred pattern. Insert/delete rows, columns, and cells without shifting the wrong region. Merge only presentation cells; merged data regions interfere with sorting, filtering, and selection.
@@ -60,6 +70,10 @@ Auto Fill extends a pattern or copies formulas; it does not guarantee that a gue
 
 Group worksheets only while applying identical layout/formatting to the selected sheets, then ungroup before sheet-specific edits. Confirm the selected sheet set before changing cells. A cell style, number format and conditional rule affect different layers of presentation; use the conditional-formatting command to remove a rule deliberately. Sparklines place a compact trend inside a cell—verify their source range and scale when comparing them.
 
+### Worked built-in conditional rule
+
+On a disposable Windows desktop sheet, enter **50, 100, 150, 200** in B2:B5 and apply a two-decimal number format. Select B2:B5, choose Home → Conditional Formatting → Highlight Cells Rules → Greater Than, enter **100** and select a highlight format. Expect only **150** and **200** to be highlighted. Change B3 from **100** to **101** while leaving the rule threshold at **100**: three cells should now match. In Manage Rules, confirm the comparison and Applies to range, then delete only this rule and apply the change. Values and two-decimal number formatting should remain. See [built-in rules and rule management](https://support.microsoft.com/en-us/excel/use-conditional-formatting-to-highlight-information-in-excel). Do not use Clear Formats to remove a single conditional rule. These are proposed checks; no Excel run occurred.
+
 Data validation and Flash Fill remain useful supporting workflow practice; they are not separately named in this PDF. Prioritize the listed generation, formatting, naming and visual-summary tasks.
 
 ## 3. Tables
@@ -69,6 +83,14 @@ Create a table with correct headers and range; apply styles, total row, first/la
 Filtering hides nonmatching rows; sorting reorders rows. Multi-level sorts need an explicit priority. Duplicate removal is destructive, so preserve a copy or prove the key first. Subtotals are not the same as a table total row.
 
 The [table Total Row](https://support.microsoft.com/en-us/excel/get-started/total-the-data-in-an-excel-table) uses SUBTOTAL for its standard aggregate choices. Inspect the formula and the effect of a filter before comparing it with an ordinary SUM. The row's position does not itself prove what was counted. After changing the table to a range, check which automatic expansion and structured behavior you have removed. Duplicate removal is supplemental practice, not a separately named MO-210 task.
+
+### Worked names, structured references and branch checks
+
+Put 0.1 in Summary!B2. Select it, use Formulas → Define Name, name it **TaxRate** with workbook scope and inspect **Refers to**. On Sales, reference `=100*(1+TaxRate)` and expect **110**. A worksheet-scoped name must be qualified from another sheet; inspect scope before creating a duplicate name. See [defined-name scope and references](https://support.microsoft.com/en-us/excel/names-in-formulas).
+
+Create a table from headers **Item, Quantity, Price** and rows **A/2/10**, **B/3/20**; confirm My table has headers and name the table **SalesData**. Add an Amount column and enter `=[@Quantity]*[@Price]`; expect **20** and **60**. Outside the table, `=SUM(SalesData[Amount])` should give **80**. Add **C/1/5** and verify the new calculated row and total **85**. `@` refers to the current row; the whole-column reference aggregates all table data rows. Toggle banded rows/first-column emphasis independently of the table style, sort complete records by Item then Quantity, filter one item and inspect the Total Row's population. Convert a copy to a range and inspect converted formulas/removed expansion behavior. See [table creation and structured references](https://support.microsoft.com/en-us/excel/using-structured-references-with-excel-tables).
+
+For the three amounts **20, 60, 5**, SUM is **85**, AVERAGE is **85/3**, MAX is **60** and MIN is **5**. On a separate test sheet, put the first amount in D2 and enter `=IF(D2>=20,"Meets","Below")` in E2, keeping input and result separate. Change only D2 to **19**, **20**, **21** and **0**: E2 should show **Below, Meets, Meets, Below**. Leave the SalesData calculated column intact and confirm its original totals again. The [statistical reference](https://support.microsoft.com/en-us/excel/statistical-functions-reference?ad=us&rs=en-us&ui=en-us) and [IF decision reference](https://support.microsoft.com/en-us/excel/using-if-with-and-or-and-not-functions-in-excel) support the function distinctions; these outputs are proposed expectations, not observed Excel results.
 
 ## 4. Formulas and functions
 
@@ -87,6 +109,10 @@ Text extraction uses positions: LEFT/RIGHT take characters from an edge, MID sta
 Choose a chart for the relationship: columns/bars compare categories, lines show ordered trends, and pie/doughnut charts require very few meaningful parts of a whole. Create charts from the correct rows/columns, switch row/column when needed, add/remove series, and configure titles, legends, axes, labels, gridlines, styles, and placement. Avoid 3-D effects that distort magnitude.
 
 A chart sheet is a separate sheet devoted to a chart, unlike an embedded chart object placed among cells. Know how to add a series, switch categories/series, apply a layout versus a visual style, and provide alt text explaining the chart's purpose. Recheck the data range after new rows arrive; an attractive chart with missing records is still incorrect.
+
+### Worked chart revision
+
+Enter Month/Actual/Plan with Jan **100/120** and Feb **150/140**. Select Month and Actual and insert a clustered column chart. In Chart Design → Select Data, add Plan with its header as the series name and its two values as series values. Check that categories are Jan/Feb and the legend names Actual/Plan; use Switch Row/Column and explain which dimension became a series, then restore the required comparison. Add axis titles and data labels, apply a layout and separately a visual style, and confirm all four values survived. Move Chart → New sheet creates a chart sheet; Object in embeds it in a worksheet. Add alt text explaining the comparison and recheck after changing February Actual to **160**. If the new bar does not change, inspect the series range before styling. See [chart creation and data-series controls](https://support.microsoft.com/en-us/excel/creating-charts-from-start-to-finish) and [chart sheet versus embedded placement](https://support.microsoft.com/en-au/excel/move-or-resize-a-chart).
 
 ### Useful article and its limits
 
@@ -157,7 +183,11 @@ Use synthetic data and preserve inputs. Expected results below are proposed desk
 
 ## Places to learn
 
-This is a selective learning path, not a complete list of Excel resources.
+This is a selective learning path, not a complete list of Excel resources or a requirement to consume every item.
+
+### Focused source-to-evidence route
+
+**Identifiers and trustworthy totals — public task references; about 60–90 minutes.** Read [preserving leading zeros and long identifiers](https://support.microsoft.com/en-us/excel/keeping-leading-zeros-and-large-numbers) and [Excel table totals](https://support.microsoft.com/en-us/excel/get-started/total-the-data-in-an-excel-table). Build an original small sales workbook with text identifiers, a table, a Total Row and a chart. Filter one region and document why its visible total differs from the unfiltered total. Save the `.xlsx` with a raw-input sheet and a reconciliation note; formatting cannot reconstruct source digits already lost. The estimate covers reading, constructing data and two checks, not provider runtime. The totals page has Windows/Mac/web steps; the conversion page has narrower version applicability. **VERIFY CURRENT:** use the applicable desktop instructions for full preparation and record build/platform. No visible article dates were established; Excel was not executed.
 
 | Resource | Access | Estimated time |
 |---|---|---:|

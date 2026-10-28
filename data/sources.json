@@ -18047,11 +18047,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "MO-310"
       ],
-      "notes": "September 28 MO-310 deep review: Complete current Windows compression instructions read,including embedded-subtitle and alternate-audio loss. See docs/research/2026-09-28-mo-310-deep-review.md No live infrastructure execution."
+      "notes": "September 28 MO-310 deep review: Complete current Windows compression instructions read,including embedded-subtitle and alternate-audio loss. See docs/research/2026-09-28-mo-310-deep-review.md No live infrastructure execution. October 28 group-05 selected technical review: Compression is Windows-only in this reference, with embedded subtitles and alternate audio tracks lost. Existing guide preserves the original and calls for playback/accessibility rechecks. Scope: Intro platform limitation and Newer versions tab; Office 2016 tab distinguished in raw HTML. Limits: No PowerPoint export, media compression or assistive technology run."
     },
     {
       "id": "powerpoint-captions",
@@ -18103,11 +18103,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "MO-310"
       ],
-      "notes": "September 28 MO-310 deep review: Complete heading mapping and import guidance read,including saved/closed source and Windows/Mac/Web differences. See docs/research/2026-09-28-mo-310-deep-review.md No live infrastructure execution."
+      "notes": "September 28 MO-310 deep review: Complete heading mapping and import guidance read,including saved/closed source and Windows/Mac/Web differences. See docs/research/2026-09-28-mo-310-deep-review.md No live infrastructure execution. October 28 group-05 selected technical review: Windows accepts DOCX/RTF/TXT; Mac Word outlines require RTF and text files use indentation; web import is unsupported. Heading 1/2 and Normal-style distinctions match current guide. Scope: Raw Newer Windows versions, Newer Mac versions and Web sections, kept separate. Limits: No import executed. Source contains an rft typo in one prose label; do not copy typo as file format."
     },
     {
       "id": "powerpoint-note-headers",
@@ -18215,11 +18215,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "MO-211"
       ],
-      "notes": "September 28 MO-211 deep review: Main desktop calculation sections read:summary defaults,Show Values As,classic sum-based calculated fields and OLAP restrictions. Complete platform instructions not audited. See docs/research/2026-09-28-mo-211-deep-review.md No live infrastructure execution."
+      "notes": "September 28 MO-211 deep review: Main desktop calculation sections read:summary defaults,Show Values As,classic sum-based calculated fields and OLAP restrictions. Complete platform instructions not audited. See docs/research/2026-09-28-mo-211-deep-review.md No live infrastructure execution. October 28 group-05 selected technical review: Classic non-OLAP calculated fields use aggregate source-field sums, differing from row products summed afterward. Numeric Sum versus text Count defaults and OLAP restrictions remain documented. Existing 140 versus 300 example teaches the distinction correctly. Scope: Raw About calculations tab: OLAP/non-OLAP; summary defaults; formulas operate on totals. Windows-or-Mac tab and Web restrictions inspected selectively. Limits: No Pivot engine execution; Data Model measures and calculated items are separate mechanisms."
     },
     {
       "id": "excel-stale-values",
@@ -18229,11 +18229,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "MO-211"
       ],
-      "notes": "September 28 MO-211 deep review: Complete current Support behavior and limitations read,including external values and Data Table dependents not displaying warnings. See docs/research/2026-09-28-mo-211-deep-review.md No live infrastructure execution."
+      "notes": "September 28 MO-211 deep review: Complete current Support behavior and limitations read,including external values and Data Table dependents not displaying warnings. See docs/research/2026-09-28-mo-211-deep-review.md No live infrastructure execution. October 28 group-05 selected technical review: Hiding stale formatting does not recalculate. External-source values and dependents of Data Table cells have warning gaps. Current support page lists Microsoft 365 Windows and Mac, so historical Windows Beta blog wording must not define universal present availability. Existing guide already uses current support evidence. Scope: Whole short article body including limitations. Limits: No build/channel/application verification. Do not promise stale markers for every external dependency."
     },
     {
       "id": "excel-stale-blog",
@@ -18383,11 +18383,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "MO-210"
       ],
-      "notes": "September 28 MO-210 deep review: Main spill behavior, editable anchor, table exclusion and blocked output guidance read; no Excel engine run. See docs/research/2026-09-28-mo-210-deep-review.md No live infrastructure execution."
+      "notes": "September 28 MO-210 deep review: Main spill behavior, editable anchor, table exclusion and blocked output guidance read; no Excel engine run. See docs/research/2026-09-28-mo-210-deep-review.md No live infrastructure execution. October 28 group-05 selected technical review: Spill formulas belong outside tables; only the anchor is edited. Linked arrays require both workbooks open; refreshing after source closure produces REF errors. Existing introductory/expert distinctions remain sound. Scope: Spill behavior and Key points, including table placement, anchor edit, blocked output and cross-workbook limit. Limits: No Excel engine execution; applies-to list alone does not prove every named function on every legacy edition."
     },
     {
       "id": "excel-countblank",
@@ -18481,11 +18481,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "MO-210"
       ],
-      "notes": "September 28 MO-210 deep review: Automatic conversion scope and import-as-text guidance read; custom formats cannot recover lost source information. See docs/research/2026-09-28-mo-210-deep-review.md No live infrastructure execution."
+      "notes": "September 28 MO-210 deep review: Automatic conversion scope and import-as-text guidance read; custom formats cannot recover lost source information. See docs/research/2026-09-28-mo-210-deep-review.md No live infrastructure execution. October 28, 2026 group-05 learning review: Text typing/import and display formats are distinct. Automatic conversion feature has version applicability. Formatting does not restore previously lost input. Read scope: complete substantive instructional body. No product execution, paid content or embedded video reviewed. No reliable publication/update date displayed in the inspected public scope."
     },
     {
       "id": "excel-comments-notes",
@@ -18537,11 +18537,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "MO-210"
       ],
-      "notes": "September 28 MO-210 deep review: Main Total Row workflow and SUBTOTAL formula behavior read; videos not viewed. See docs/research/2026-09-28-mo-210-deep-review.md No live infrastructure execution."
+      "notes": "September 28 MO-210 deep review: Main Total Row workflow and SUBTOTAL formula behavior read; videos not viewed. See docs/research/2026-09-28-mo-210-deep-review.md No live infrastructure execution. October 28, 2026 group-05 learning review: Total Row defaults use SUBTOTAL and there are separate platform steps. Formula-copy caveat read. Video and linked references unreviewed. Read scope: complete Windows/Mac/web instructional bodies. No product execution, paid content or embedded video reviewed. No reliable publication/update date displayed in the inspected public scope."
     },
     {
       "id": "mo111-skills-pdf",
@@ -18593,11 +18593,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "MO-111"
       ],
-      "notes": "September 28 MO-111 deep review: Current Windows import/type preparation and postal-identifier guidance read; no live merge. Do not claim reformatting recovers discarded source digits. See docs/research/2026-09-28-mo-111-deep-review.md No live infrastructure execution."
+      "notes": "September 28 MO-111 deep review: Current Windows import/type preparation and postal-identifier guidance read; no live merge. Do not claim reformatting recovers discarded source digits. See docs/research/2026-09-28-mo-111-deep-review.md No live infrastructure execution. October 28, 2026 group-05 learning review: Type postal identifiers before import; preserve original data. Reformatting already-damaged identifiers is not recovery. Windows and Mac import instructions differ. Read scope: complete Windows and macOS instructional bodies. No product execution, paid content or embedded video reviewed. No reliable publication/update date displayed in the inspected public scope."
     },
     {
       "id": "office-internet-macros",
@@ -18663,11 +18663,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "MO-111"
       ],
-      "notes": "September 28 MO-111 deep review: Main recording, naming, keyboard selection, storage, Organizer copy and web limitation read; no macro or VBA executed. See docs/research/2026-09-28-mo-111-deep-review.md No live infrastructure execution."
+      "notes": "September 28 MO-111 deep review: Main recording, naming, keyboard selection, storage, Organizer copy and web limitation read; no macro or VBA executed. See docs/research/2026-09-28-mo-111-deep-review.md No live infrastructure execution. October 28 group-05 selected technical review: Keyboard selection is recordable; mouse text selection is not. Storage in document/template is separate from execution. Web displays saved results but does not run the desktop macro workflow. Existing guide teaching is adequate. Scope: Windows macro record/run/storage/Organizer and Web limitation; raw platform tab text examined. Limits: No VBA executed; no macro trust settings changed."
     },
     {
       "id": "word-merge-preview",
@@ -18677,11 +18677,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "MO-111"
       ],
-      "notes": "September 28 MO-111 deep review: Complete main instructions read: individual previews, filters and recipient exclusion. See docs/research/2026-09-28-mo-111-deep-review.md No live infrastructure execution."
+      "notes": "September 28 MO-111 deep review: Complete main instructions read: individual previews, filters and recipient exclusion. See docs/research/2026-09-28-mo-111-deep-review.md No live infrastructure execution. October 28, 2026 group-05 learning review: Per-record preview, Find Recipient and recipient exclusion/filter guidance. No actual merge was performed. Read scope: complete short instructional body. No product execution, paid content or embedded video reviewed. No reliable publication/update date displayed in the inspected public scope."
     },
     {
       "id": "mo110-skills-pdf",
@@ -18751,11 +18751,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "MO-110"
       ],
-      "notes": "September 28 MO-110 deep review: Main task guidance read for the bounded guide additions; no desktop execution. See docs/research/2026-09-28-mo-110-deep-review.md No live infrastructure execution."
+      "notes": "September 28 MO-110 deep review: Main task guidance read for the bounded guide additions; no desktop execution. See docs/research/2026-09-28-mo-110-deep-review.md No live infrastructure execution. October 28, 2026 group-05 learning review: Distinct page-number versus entire-table updates; manual TOCs cannot update automatically. Windows/Mac listed; no browser parity inferred. Read scope: complete short instructional body and Applies To. No product execution, paid content or embedded video reviewed. No reliable publication/update date displayed in the inspected public scope."
     },
     {
       "id": "word-track-changes",
@@ -18765,11 +18765,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "MO-110"
       ],
-      "notes": "September 28 MO-110 deep review: Windows recording/display/filtering/acceptance section plus locking restrictions read; mobile/macOS command matrices not exhaustively checked. See docs/research/2026-09-28-mo-110-deep-review.md No live infrastructure execution."
+      "notes": "September 28 MO-110 deep review: Windows recording/display/filtering/acceptance section plus locking restrictions read; mobile/macOS command matrices not exhaustively checked. See docs/research/2026-09-28-mo-110-deep-review.md No live infrastructure execution. October 28 group-05 selected technical review: Turning tracking off retains existing changes. Windows Lock Tracking is password-controlled and distinct from accepting/rejecting revisions. Existing guide instruction matches the Windows tab. Scope: Windows tab recording/off/locking/review sections; raw parent section id tabpanel_1_windows verified; no cross-platform generalization. Limits: No Word application, password or revision operation executed. Platform tab must be retained when quoting UI paths."
     },
     {
       "id": "office-3d-models",
@@ -22369,11 +22369,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AZ-120"
       ],
-      "notes": "September 28 AZ-120 deep review: Selected Premium SSD v2 and volume/replica support guidance read; broad feature matrix not used as a universal current SKU guarantee. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AZ-120 deep review: Selected Premium SSD v2 and volume/replica support guidance read; broad feature matrix not used as a universal current SKU guarantee. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution. October 28 group-05 exam researcher: public source sections used for bounded objective/currency or original worked workflow; see exam-a-research.json exact read scope. No service, Office, SAP, assessment, paid-content or lab execution."
     },
     {
       "id": "az120-premium-v2",
@@ -22397,11 +22397,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AZ-120"
       ],
-      "notes": "September 28 AZ-120 deep review: Selected eligibility and log-versus-data purpose/striped-volume shutdown guidance read; no host setting changed. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AZ-120 deep review: Selected eligibility and log-versus-data purpose/striped-volume shutdown guidance read; no host setting changed. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution. October 28 group-05 exam researcher: public source sections used for bounded objective/currency or original worked workflow; see exam-a-research.json exact read scope. No service, Office, SAP, assessment, paid-content or lab execution."
     },
     {
       "id": "az120-suse-fence",
@@ -22453,11 +22453,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AZ-120"
       ],
-      "notes": "September 28 AZ-120 deep review: Selected HSR manual-secondary and snapshot questions read. Manual stop/resume scope conflicts with native logical HSR guidance; retained as unresolved, not executed. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AZ-120 deep review: Selected HSR manual-secondary and snapshot questions read. Manual stop/resume scope conflicts with native logical HSR guidance; retained as unresolved, not executed. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution. October 28 group-05 selected technical review: FAQ still recommends node-level protection changes around promotion for the connection-lockout scenario. It does not clearly delimit applicability to the native logical HSR protection model. Existing guide warning remains justified. Scope: Backup FAQ subsection on secondary-node Stop protection/resume; surrounding raw body and absence of scenario/platform tab qualifiers inspected. Limits: No HANA deployment, protected-item or restore test. Retain narrower scenario uncertainty rather than asserting every HSR backup is broken."
     },
     {
       "id": "az120-acss-register",
@@ -22523,11 +22523,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AZ-120"
       ],
-      "notes": "September 28 AZ-120 deep review: Entire short main article read: enabled NIC, PCI, driver, interface binding and VF counters. Commands inspected, not executed; linked distro support matrix not exhaustively reviewed. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AZ-120 deep review: Entire short main article read: enabled NIC, PCI, driver, interface binding and VF counters. Commands inspected, not executed; linked distro support matrix not exhaustively reviewed. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution. October 28 group-05 selected technical review: MANA requires guest software plus host hardware. Accelerated Networking enabled is insufficient alone; inspect PCI device, driver binding and packet counters. Existing guide already teaches the operational distinction. Scope: Linux support and status verification steps. Limits: No guest driver, VM SKU or SAP/distribution support certification tested."
     },
     {
       "id": "az120-rise-network",
@@ -22537,11 +22537,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AZ-120"
       ],
-      "notes": "September 28 AZ-120 deep review: Selected ownership, peering/gateway and migration/DNS sections read; full vWAN/firewall scenarios not audited. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AZ-120 deep review: Selected ownership, peering/gateway and migration/DNS sections read; full vWAN/firewall scenarios not audited. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution. October 28 group-05 exam researcher: public source sections used for bounded objective/currency or original worked workflow; see exam-a-research.json exact read scope. No service, Office, SAP, assessment, paid-content or lab execution."
     },
     {
       "id": "az120-zone-blog",
@@ -24101,11 +24101,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AB-410"
       ],
-      "notes": "September 28 AB-410 deep review: Named formulas, typed UDFs/UDTs, side effects and OnError sections read. Other app properties not audited in full; no Power Fx runtime. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AB-410 deep review: Named formulas, typed UDFs/UDTs, side effects and OnError sections read. Other app properties not audited in full; no Power Fx runtime. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution. October 28 group-05 exam researcher: public source sections used for bounded objective/currency or original worked workflow; see exam-a-research.json exact read scope. No service, Office, SAP, assessment, paid-content or lab execution."
     },
     {
       "id": "ab410-error",
@@ -24243,11 +24243,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AB-410"
       ],
-      "notes": "September 28 AB-410 deep review: Full short article read. SAP named in instructions but missing from explicit limitations. Power Automate-only connector, record and relationship caps applied. SAP remains unresolved. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AB-410 deep review: Full short article read. SAP named in instructions but missing from explicit limitations. Power Automate-only connector, record and relationship caps applied. SAP remains unresolved. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution. October 28 group-05 selected technical review: SAP remains in connector instructions and absent from the allowed-data-sources limitations. Flow-only connector context, two relationship levels and bounded retrieval remain explicit. Original AI Builder URL redirects into Copilot Studio. Scope: Add knowledge/filter; Use connectors; Limitations; raw HTML corresponding body sections checked (no platform tabs). Limits: No connector, tenant, prompt or permission test. Do not remove SAP evidence gap."
     },
     {
       "id": "ab410-prompt-json",
@@ -24271,11 +24271,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AB-410"
       ],
-      "notes": "September 28 AB-410 deep review: Run a prompt, inputs and human-review sections read. No Teams message or approval sent; exact UI walkthrough not executed. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AB-410 deep review: Run a prompt, inputs and human-review sections read. No Teams message or approval sent; exact UI walkthrough not executed. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution. October 28 group-05 exam researcher: public source sections used for bounded objective/currency or original worked workflow; see exam-a-research.json exact read scope. No service, Office, SAP, assessment, paid-content or lab execution."
     },
     {
       "id": "ab410-prompt-app",
@@ -24285,11 +24285,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AB-410"
       ],
-      "notes": "September 28 AB-410 deep review: Public Power Fx invocation procedure read. Old GPT-4o-only model wording qualified by current model settings. No formula executed. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AB-410 deep review: Public Power Fx invocation procedure read. Old GPT-4o-only model wording qualified by current model settings. No formula executed. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution. October 28 group-05 exam researcher: public source sections used for bounded objective/currency or original worked workflow; see exam-a-research.json exact read scope. No service, Office, SAP, assessment, paid-content or lab execution."
     },
     {
       "id": "ab410-credits",
@@ -24299,11 +24299,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AB-410"
       ],
-      "notes": "September 28 AB-410 deep review: Detailed November transition calendar and FAQ read. Existing contract terms, no automatic conversion and delayed accounting distinguished. No purchase or billing change. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AB-410 deep review: Detailed November transition calendar and FAQ read. Existing contract terms, no automatic conversion and delayed accounting distinguished. No purchase or billing change. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution. October 28 group-05 selected technical review: The November 1, 2026 credit transition is still upcoming on this research date. Existing contracts retain credits through term end; feature retirement must not be inferred. Existing guide explains contract/context distinction adequately. Scope: Detailed calendar and FAQ on existing entitlements, currency order and exhaustion. Limits: No license purchase, tenant consumption or billing test."
     },
     {
       "id": "ab410-license",
@@ -39162,11 +39162,11 @@
       "authority_class": 2,
       "source_type": "architecture-guidance",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AZ-120"
       ],
-      "notes": "September 28 AZ-120 deep review: Retained contextual reference fetched; complete page and linked implementation procedures not exhaustively reread in this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AZ-120 deep review: Retained contextual reference fetched; complete page and linked implementation procedures not exhaustively reread in this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution. October 28 group-05 exam researcher: public source sections used for bounded objective/currency or original worked workflow; see exam-a-research.json exact read scope. No service, Office, SAP, assessment, paid-content or lab execution."
     },
     {
       "id": "az-120-availability-zones",
@@ -39204,11 +39204,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AZ-120"
       ],
-      "notes": "September 28 AZ-120 deep review: Selected native HSR registration, keys and Enhanced snapshot policy requirements read; complete restore wizard not audited. One support-matrix navigation link points to SQL backup, not used as HANA support evidence. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AZ-120 deep review: Selected native HSR registration, keys and Enhanced snapshot policy requirements read; complete restore wizard not audited. One support-matrix navigation link points to SQL backup, not used as HANA support evidence. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution. October 28 group-05 selected technical review: Native HSR guidance groups both nodes with the same HSR ID/vault and requires matching user-store keys on possible primaries. It describes primary-following backup behavior. Snapshot support is distinct and preview-qualified. Existing explanation should be retained. Scope: Prerequisites; preregistration/hdbuserstore; logical HSR ID; snapshot HSR behavior; standalone-to-HSR scenarios. Selected raw body paragraphs inspected. Limits: No protected item, backup chain or failover observed; cannot resolve FAQ applicability."
     },
     {
       "id": "az-120-monitor-for-sap",
@@ -39246,11 +39246,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AZ-120"
       ],
-      "notes": "September 28 AZ-120 deep review: Retained contextual reference fetched; complete page and linked implementation procedures not exhaustively reread in this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AZ-120 deep review: Retained contextual reference fetched; complete page and linked implementation procedures not exhaustively reread in this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution. October 28 group-05 exam researcher: public source sections used for bounded objective/currency or original worked workflow; see exam-a-research.json exact read scope. No service, Office, SAP, assessment, paid-content or lab execution. October 28, 2026 group-05 learning review: Updated 2026-04-13. Tutorial requires Azure permissions/quota and SAP software entitlement. Cleanup reverses system/zone/control-plane order. Sample naming varies; no deployment validation or HSR-support conclusion. Read scope: intro, prerequisites, environment hierarchy, setup/deployment phase headings, complete cleanup section; intervening command bodies not exhaustively audited. No product execution, paid content or embedded video reviewed. Updated 2026-04-13"
     },
     {
       "id": "az-120-lama-connector",
@@ -39260,11 +39260,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AZ-120"
       ],
-      "notes": "September 28 AZ-120 deep review: Retained contextual reference fetched; complete page and linked implementation procedures not exhaustively reread in this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AZ-120 deep review: Retained contextual reference fetched; complete page and linked implementation procedures not exhaustively reread in this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution. October 28 group-05 exam researcher: public source sections used for bounded objective/currency or original worked workflow; see exam-a-research.json exact read scope. No service, Office, SAP, assessment, paid-content or lab execution."
     },
     {
       "id": "az-120-microsoft-learn-course",
@@ -39274,11 +39274,11 @@
       "authority_class": 3,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AZ-120"
       ],
-      "notes": "Official page lists a three-day instructor-led course and approximately 29 hours of linked self-paced learning paths. September 28 AZ-120 deep review: Full short metadata/overview read: three days, three languages; self-paced syllabus loading, exact runtime not reproduced. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
+      "notes": "Official page lists a three-day instructor-led course and approximately 29 hours of linked self-paced learning paths. September 28 AZ-120 deep review: Full short metadata/overview read: three days, three languages; self-paced syllabus loading, exact runtime not reproduced. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution. October 28, 2026 group-05 learning review: Three instructor-led days and three languages remain visible. No usable self-paced runtime or full module list loaded. Read scope: complete visible short overview/metadata, not loading self-paced syllabus. No product execution, paid content or embedded video reviewed. No reliable publication/update date displayed in the inspected public scope."
     },
     {
       "id": "az-120-microsoft-video-series",
@@ -40309,9 +40309,13 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-800", "AZ-801", "AZ-802"],
-      "notes": "Official transition page states AZ-800 and AZ-801 retire September 30, 2026 and AZ-802 remains the available certification path."
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AZ-800",
+        "AZ-801",
+        "AZ-802"
+      ],
+      "notes": "Official transition page states AZ-800 and AZ-801 retire September 30, 2026 and AZ-802 remains the available certification path. October 28 group-05 exam researcher: public source sections used for bounded objective/currency or original worked workflow; see exam-a-research.json exact read scope. No service, Office, SAP, assessment, paid-content or lab execution."
     },
     {
       "id": "az-800-az-802-replacement-blueprint",
@@ -40321,9 +40325,11 @@
       "authority_class": 1,
       "source_type": "exam-blueprint",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-802"],
-      "notes": "Canonical AZ-802 beta blueprint and authoritative replacement scope; also supports transition decisions from the retiring AZ-800/AZ-801 path."
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AZ-802"
+      ],
+      "notes": "Canonical AZ-802 beta blueprint and authoritative replacement scope; also supports transition decisions from the retiring AZ-800/AZ-801 path. October 28 group-05 exam researcher: public source sections used for bounded objective/currency or original worked workflow; see exam-a-research.json exact read scope. No service, Office, SAP, assessment, paid-content or lab execution."
     },
     {
       "id": "az-800-adds-overview",
@@ -42073,12 +42079,12 @@
       "authority_class": 3,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-08-31",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AZ-801",
         "AZ-802"
       ],
-      "notes": "Official self-directed paths and four-day instructor-led course."
+      "notes": "Official self-directed paths and four-day instructor-led course. October 28 group05 initial health and coordinator reopen: old course URL redirects to the general training browser. Earlier outline/module/runtime observations are historical; no current exact course availability or scope established. AZ802 recommendations label this redirect and point to the current documentation route."
     }
     ,
     {
@@ -42266,9 +42272,11 @@
       "authority_class": 2,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-802"],
-      "notes": "Selective legacy training only; AZ-800 retires September 30, 2026 and does not equal the AZ-802 blueprint."
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AZ-802"
+      ],
+      "notes": "Selective legacy training only; AZ-800 retires September 30, 2026 and does not equal the AZ-802 blueprint. October 28 group05 initial health and coordinator reopen: old course URL redirects to the general training browser. Earlier outline/module/runtime observations are historical; no current exact course availability or scope established. AZ802 recommendations label this redirect and point to the current documentation route."
     }
     ,
     {
@@ -42392,8 +42400,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-802"]
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AZ-802"
+      ],
+      "notes": " October 28 group-05 selected technical review: Current guidance allows multiple GPU partitions per VM, requires supported CPU/IOMMU/driver/guest and homogeneous configuration, distinguishes planned standalone migration from Datacenter clustered unplanned downtime, and uses TCP/IP compression. Guide already preserves these limits. Scope: Overview; requirements; limitations, including multiple partitions and migration transport. Limits: No physical GPU, partition allocation, failover or live migration tested. Hardware list not copied into guide."
     }
     ,
     {
@@ -42417,11 +42428,14 @@
       "title": "AZ-802 official rendered lab instructions",
       "url": "https://microsoftlearning.github.io/AZ-802-Windows-Server-Administrator-Associate/",
       "publisher": "MicrosoftLearning",
-      "authority_class": 2,
+      "authority_class": 3,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-802"]
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AZ-802"
+      ],
+      "notes": " October 28, 2026 group-05 learning review: Setup plus eight labs; monitoring publishes 40 minutes. Index summary is less specific than child Lab 0 warning; training authority is tier 3. Read scope: complete public lab index and listed durations. No product execution, paid content or embedded video reviewed. No reliable publication/update date displayed in the inspected public scope."
     }
     ,
     {
@@ -51786,11 +51800,11 @@
       "authority_class": 1,
       "source_type": "exam-blueprint",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AB-410"
       ],
-      "notes": "Authoritative three-domain blueprint last updated May 15, 2026; it publishes no separate skills-effective date or upcoming change notice. September 28 AB-410 deep review: Full blueprint and 48 detailed bullets read; seven manual mapping groups. All normalized detailed text equals historical snapshot. Audience introduction restored to full source text; old snapshot summarized it. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
+      "notes": "Authoritative three-domain blueprint last updated May 15, 2026; it publishes no separate skills-effective date or upcoming change notice. September 28 AB-410 deep review: Full blueprint and 48 detailed bullets read; seven manual mapping groups. All normalized detailed text equals historical snapshot. Audience introduction restored to full source text; old snapshot summarized it. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution. October 28 group-05 exam researcher: public source sections used for bounded objective/currency or original worked workflow; see exam-a-research.json exact read scope. No service, Office, SAP, assessment, paid-content or lab execution."
     },
     {
       "id": "ab-410-credential",
@@ -51869,14 +51883,14 @@
       "title": "Get started with AI-first solutions in Microsoft Power Platform",
       "url": "https://learn.microsoft.com/en-us/training/paths/design-model-solutions-power-platform/",
       "publisher": "Microsoft Learn",
-      "authority_class": 1,
+      "authority_class": 3,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-09-28",
+      "last_checked": "2026-10-28",
       "supported_exams": [
         "AB-410"
       ],
-      "notes": "One hour 31 minutes across three modules on solution patterns, prompts and Plans. September 28 AB-410 deep review: Full three-module path outline read; present runtime not exposed. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
+      "notes": "One hour 31 minutes across three modules on solution patterns, prompts and Plans. September 28 AB-410 deep review: Full three-module path outline read; present runtime not exposed. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution. October 28, 2026 group-05 learning review: Current path outlines design, prompting and Plans. No reliable whole-path runtime displayed; older catalog timing is historical. Read scope: complete three-module path outline. No product execution, paid content or embedded video reviewed. No reliable publication/update date displayed in the inspected public scope."
     },
     {
       "id": "ab-410-path-dataverse-model",
@@ -53615,6 +53629,7 @@
       "supported_exams": [
         "AB-210",
         "AB-250",
+        "AB-410",
         "AB-650",
         "AB-730",
         "AB-731",
@@ -67702,7 +67717,7 @@
         "AB-620",
         "PL-900"
       ],
-      "notes": "Current capabilities and boundaries for the GitHub Copilot Harness authoring experience. September 28 AB-410 deep review: Current overview read: cannot transfer standard/GitHub harness agents, usage-based actions and service/data boundary. No building/testing/evaluation charges incurred. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution. September 28 AB-620 deep review: Current overview read in same-day preceding review and refreshed here. No transfer across standard/GitHub; billing and separate service boundaries retained. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution. September 28 PL-900 deep review: Availability fetched; no full-page semantic review claimed unless a reading boundary is explicitly recorded below. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution. October 28 refresh: Opened first-party evidence October 28, 2026. Inspected scope: Feature comparison, usage-based billing, nontransferability, service/data-processing distinction, ALM and preview-specific controls. Product execution not performed; date/version, role, preview and configuration limitations remain. Supports TECH-09-harness-feature-contract. October28 priority-group observation: Capability matrix, nontransferability, service/data boundary and ALM; rechecks initial Oct28 finding. Body review: Readable selected article body reviewed through web tool; not merely HTTP/meta. Sign-in banner on Learn did not prevent article access. Product execution unperformed."
+      "notes": "Current capabilities and boundaries for the GitHub Copilot Harness authoring experience. September 28 AB-410 deep review: Current overview read: cannot transfer standard/GitHub harness agents, usage-based actions and service/data boundary. No building/testing/evaluation charges incurred. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution. September 28 AB-620 deep review: Current overview read in same-day preceding review and refreshed here. No transfer across standard/GitHub; billing and separate service boundaries retained. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution. September 28 PL-900 deep review: Availability fetched; no full-page semantic review claimed unless a reading boundary is explicitly recorded below. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution. October 28 refresh: Opened first-party evidence October 28, 2026. Inspected scope: Feature comparison, usage-based billing, nontransferability, service/data-processing distinction, ALM and preview-specific controls. Product execution not performed; date/version, role, preview and configuration limitations remain. Supports TECH-09-harness-feature-contract. October28 priority-group observation: Capability matrix, nontransferability, service/data boundary and ALM; rechecks initial Oct28 finding. Body review: Readable selected article body reviewed through web tool; not merely HTTP/meta. Sign-in banner on Learn did not prevent article access. Product execution unperformed. October 28 group-05 selected technical review: GitHub Copilot harness coexists with standard harness, is a separate authoring/runtime choice, and agents cannot transfer between them. Some natural-language authoring features remain preview. Standard agents remain supported. Existing guide correctly uses this as changing terminology/context. Scope: Introduction; What is the GitHub Copilot harness; Build tab comparison introduction; compatibility. Selected raw extracted paragraphs inspected. Feature matrix not fully audited. Limits: Not GitHub Copilot service or a replacement statement for every standard agent; no agent run or credits measured."
     },
     {
       "id": "md102-intune-whats-new",
@@ -67732,7 +67747,7 @@
         "AB-410",
         "PL-900"
       ],
-      "notes": "Recurring lifecycle ledger for Power Platform and customer-engagement feature deprecations. September 28 AB-410 deep review: Targeted current help-chatbot and mobile-app retirement sections read, plus retained lifecycle index. Full 90k-character historical ledger not audited. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution. September 28 PL-900 deep review: Availability fetched; no full-page semantic review claimed unless a reading boundary is explicitly recorded below. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution. October28 exam-b selected substantive sections reviewed for pl900-teams-lifecycle. No service, compiler, tenant or paid assessment execution."
+      "notes": "Recurring lifecycle ledger for Power Platform and customer-engagement feature deprecations. September 28 AB-410 deep review: Targeted current help-chatbot and mobile-app retirement sections read, plus retained lifecycle index. Full 90k-character historical ledger not audited. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution. September 28 PL-900 deep review: Availability fetched; no full-page semantic review claimed unless a reading boundary is explicitly recorded below. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution. October28 exam-b selected substantive sections reviewed for pl900-teams-lifecycle. No service, compiler, tenant or paid assessment execution. October 28 group-05 exam researcher: public source sections used for bounded objective/currency or original worked workflow; see exam-a-research.json exact read scope. No service, Office, SAP, assessment, paid-content or lab execution. October 28 group-05 selected technical review: Dataverse for Teams creation ends November 15, 2026; existing unupgraded environments suspend September 15, 2027 and decommission October 30, 2027. New work should use full Dataverse; review capacity/licenses before an upgrade. Teams assets outside that environment are unaffected. Scope: Complete Dataverse for Teams deprecation section, including phased timeline, unaffected assets, admin/maker actions and FAQ; raw HTML heading/sibling section inspected. Other ledger sections not comprehensively read. Limits: Lifecycle notice is product evidence, not an exam-objective change. Upgrade not executed."
     },
     {
       "id": "microsoft-agent-365-ga-announcement",
@@ -67993,9 +68008,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-07",
-      "supported_exams": ["AZ-800", "AZ-802"],
-      "notes": "Confirms the non-network Hyper-V socket substrate, Linux AF_VSOCK mapping, host families, LIS dependency, and kernel options; not an SSH Direct support contract."
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AZ-800",
+        "AZ-802"
+      ],
+      "notes": "Confirms the non-network Hyper-V socket substrate, Linux AF_VSOCK mapping, host families, LIS dependency, and kernel options; not an SSH Direct support contract. October 28 group-05 selected technical review: Current Microsoft article documents network-independent Hyper-V sockets and Linux VSOCK prerequisites. It does not supply a current end-to-end hvc/OpenSSH support recipe or distribution compatibility matrix. Existing provisional SSH Direct model remains appropriately qualified. Scope: Supported host/guest; Linux kernel configuration; Hyper-V/VSOCK addressing and service GUID bridge. Limits: Focused Microsoft Learn search returned blueprint mentions, not a dedicated support contract. Not an exhaustive upstream re-investigation; preserve prior broader evidence."
     },
     {
       "id": "az-ssh-direct-mslab",
@@ -74233,6 +74251,1219 @@
         "MB-800"
       ],
       "notes": "Fresh-context reviewer A opened relevant body on October28,2026; selected sections read as recorded in reviewer-a-sources.json. No compilation, product, tenant, API or lesson/lab execution. Original synthesis only."
+    },
+    {
+      "id": "office-mos-tutorial-20261028",
+      "title": "Microsoft Office Specialist (MOS)",
+      "url": "https://certiport.pearsonvue.com/Educator-resources/Exam-details/Exam-tutorials/MOS_365Apps_Tutorial.pdf",
+      "publisher": "Certiport / Pearson VUE",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-111",
+        "MO-210",
+        "MO-211",
+        "MO-310"
+      ],
+      "notes": "October 28, 2026 exam-b research: reviewed text supporting mo-111-platform-boundary; original synthetic expected checks only, no Office execution. Platform/availability boundaries retained."
+    },
+    {
+      "id": "office-cloud-candidate-20261028",
+      "title": "  ",
+      "url": "https://certiport.pearsonvue.com/Support/Install/Compass-Cloud/Test-Candidate/CC_Guide_TestCandidate",
+      "publisher": "Certiport / Pearson VUE",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-111",
+        "MO-210",
+        "MO-211",
+        "MO-310"
+      ],
+      "notes": "October 28, 2026 exam-b research: reviewed text supporting mo-111-platform-boundary; original synthetic expected checks only, no Office execution. Platform/availability boundaries retained."
+    },
+    {
+      "id": "group05-ab410-model-flow",
+      "title": "Use the text recognition prebuilt model in Power Automate",
+      "url": "https://learn.microsoft.com/en-us/ai-builder/flow-text-recognition",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AB-410"
+      ],
+      "notes": "October 28 group-05 exam researcher: inspected the exact public procedural sections recorded in exam-a-research.json; used for an independently authored worked workflow, not a copied vendor exercise. No product/cloud/SAP/Office execution or paid content access."
+    },
+    {
+      "id": "group05-ab410-model-app",
+      "title": "Use the text recognizer component in Power Apps",
+      "url": "https://learn.microsoft.com/en-us/ai-builder/prebuilt-text-recognizer-component-in-powerapps",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AB-410"
+      ],
+      "notes": "October 28 group-05 exam researcher: inspected the exact public procedural sections recorded in exam-a-research.json; used for an independently authored worked workflow, not a copied vendor exercise. No product/cloud/SAP/Office execution or paid content access."
+    },
+    {
+      "id": "office-word-style-set-windows-20261028",
+      "title": "Word 365: Only Show Styles in the Current Document",
+      "url": "https://learn.microsoft.com/en-us/answers/questions/5079026/word-365-only-show-styles-in-the-current-document?forum=msoffice-all&page=4",
+      "publisher": "Anonymous firsthand Windows user; Charles Kenyon and Stefan Blom, Microsoft Q&A volunteer MVPs",
+      "authority_class": 5,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-111"
+      ],
+      "notes": "October 28, 2026 exam-b research: reviewed text supporting word-reusable-design; original synthetic expected checks only, no Office execution. Platform/availability boundaries retained. December 2020 firsthand Windows Word 365 report with named MVP replies, migrated to Microsoft Q&A. Not current official Word product documentation; no paid lessons or exam-content claims. Exact current style-set save UI remains unconfirmed; use only the bounded create/save/new-document/reopen/apply check and do not follow global-template changes. Useful workflow hypothesis, not normative technical authority."
+    },
+    {
+      "id": "group05-sap-anf-create",
+      "title": "Deploy volumes for the first SAP HANA host using application volume group for SAP HANA",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-netapp-files/application-volume-group-deploy-first-host",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "October 28 group-05 exam researcher: inspected the exact public procedural sections recorded in exam-a-research.json; used for an independently authored worked workflow, not a copied vendor exercise. No product/cloud/SAP/Office execution or paid content access."
+    },
+    {
+      "id": "group05-sap-sql-tutorial",
+      "title": "Tutorial: Manually configure an availability group - SQL Server on Azure VMs",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-manually-configure-tutorial-single-subnet",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "October 28 group-05 exam researcher: inspected the exact public procedural sections recorded in exam-a-research.json; used for an independently authored worked workflow, not a copied vendor exercise. No product/cloud/SAP/Office execution or paid content access."
+    },
+    {
+      "id": "group05-sap-hana-restore",
+      "title": "Restore SAP HANA databases on Azure VMs using Azure portal",
+      "url": "https://learn.microsoft.com/en-us/azure/backup/sap-hana-database-restore",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "October 28 group-05 exam researcher: inspected the exact public procedural sections recorded in exam-a-research.json; used for an independently authored worked workflow, not a copied vendor exercise. No product/cloud/SAP/Office execution or paid content access."
+    },
+    {
+      "id": "group05-sap-policy-assignment",
+      "title": "Quickstart: Create a policy assignment to identify non-compliant resources using Azure portal",
+      "url": "https://learn.microsoft.com/en-us/azure/governance/policy/assign-policy-portal",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "October 28 group-05 exam researcher: inspected the exact public procedural sections recorded in exam-a-research.json; used for an independently authored worked workflow, not a copied vendor exercise. No product/cloud/SAP/Office execution or paid content access."
+    },
+    {
+      "id": "group05-sap-acss-deploy",
+      "title": "Deploy S/4HANA infrastructure with Azure Center for SAP solutions",
+      "url": "https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/deploy-s4hana",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "October 28 group-05 exam researcher: inspected the exact public procedural sections recorded in exam-a-research.json; used for an independently authored worked workflow, not a copied vendor exercise. No product/cloud/SAP/Office execution or paid content access."
+    },
+    {
+      "id": "group05-sap-files-create",
+      "title": "High availability for SAP NetWeaver on Azure VMs on SUSE Linux Enterprise Server with NFS on Azure Files",
+      "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-suse-nfs-azure-files",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "October 28 group-05 exam researcher: inspected the exact public procedural sections recorded in exam-a-research.json; used for an independently authored worked workflow, not a copied vendor exercise. No product/cloud/SAP/Office execution or paid content access."
+    },
+    {
+      "id": "group05-sap-planning",
+      "title": "Plan and implement an SAP deployment on Azure",
+      "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/planning-guide",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "October 28 group-05 exam researcher: inspected the exact public procedural sections recorded in exam-a-research.json; used for an independently authored worked workflow, not a copied vendor exercise. No product/cloud/SAP/Office execution or paid content access."
+    },
+    {
+      "id": "group05-sap-rise-security",
+      "title": "Azure identity and security services with SAP RISE",
+      "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/rise-integration-security",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "October 28 group-05 exam researcher: inspected the exact public procedural sections recorded in exam-a-research.json; used for an independently authored worked workflow, not a copied vendor exercise. No product/cloud/SAP/Office execution or paid content access."
+    },
+    {
+      "id": "group05-sap-rise-services",
+      "title": "Integrate Azure services with SAP RISE",
+      "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/rise-integration-services",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "October 28 group-05 exam researcher: inspected the exact public procedural sections recorded in exam-a-research.json; used for an independently authored worked workflow, not a copied vendor exercise. No product/cloud/SAP/Office execution or paid content access."
+    },
+    {
+      "id": "group05-sap-replicated-disk-support",
+      "title": "Cluster an SAP ASCS/SCS instance on a Windows failover cluster by using a shared disk in Azure",
+      "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/sap-high-availability-guide-wsfc-shared-disk",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "October 28 group-05 exam researcher: inspected the exact public procedural sections recorded in exam-a-research.json; used for an independently authored worked workflow, not a copied vendor exercise. No product/cloud/SAP/Office execution or paid content access."
+    },
+    {
+      "id": "group05-sap-storage-replication",
+      "title": "Prepare the Azure infrastructure for SAP HA by using a Windows failover cluster and shared disk for SAP ASCS/SCS",
+      "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/sap-high-availability-infrastructure-wsfc-shared-disk",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "October 28 group-05 exam researcher: inspected the exact public procedural sections recorded in exam-a-research.json; used for an independently authored worked workflow, not a copied vendor exercise. No product/cloud/SAP/Office execution or paid content access."
+    },
+    {
+      "id": "group05-sap-ppg",
+      "title": "Proximity placement groups",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/co-location",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "October 28 group-05 exam researcher: inspected the exact public procedural sections recorded in exam-a-research.json; used for an independently authored worked workflow, not a copied vendor exercise. No product/cloud/SAP/Office execution or paid content access."
+    },
+    {
+      "id": "group05-sap-sql",
+      "title": "SQL Server Azure Virtual Machines DBMS deployment for SAP NetWeaver",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/workloads/sap/dbms_guide_sqlserver",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "October 28 group-05 exam researcher: inspected the exact public procedural sections recorded in exam-a-research.json; used for an independently authored worked workflow, not a copied vendor exercise. No product/cloud/SAP/Office execution or paid content access."
+    },
+    {
+      "id": "group05-ab410-create-prompt",
+      "title": "Create a prompt",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/create-custom-prompt",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AB-410"
+      ],
+      "notes": "October 28 group-05 exam researcher: inspected the exact public procedural sections recorded in exam-a-research.json; used for an independently authored worked workflow, not a copied vendor exercise. No product/cloud/SAP/Office execution or paid content access."
+    },
+    {
+      "id": "group05-ab410-editable-app",
+      "title": "Create an app to edit tables in canvas apps",
+      "url": "https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/add-editable-tables",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AB-410"
+      ],
+      "notes": "October 28 group-05 exam researcher: inspected the exact public procedural sections recorded in exam-a-research.json; used for an independently authored worked workflow, not a copied vendor exercise. No product/cloud/SAP/Office execution or paid content access."
+    },
+    {
+      "id": "group05-ab410-tables",
+      "title": "Create and edit tables using Power Apps",
+      "url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/create-edit-entities-portal",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AB-410"
+      ],
+      "notes": "October 28 group-05 exam researcher: inspected the exact public procedural sections recorded in exam-a-research.json; used for an independently authored worked workflow, not a copied vendor exercise. No product/cloud/SAP/Office execution or paid content access."
+    },
+    {
+      "id": "group05-ab410-charts",
+      "title": "Create or edit a model-driven app system chart",
+      "url": "https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/create-edit-system-chart",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AB-410"
+      ],
+      "notes": "October 28 group-05 exam researcher: inspected the exact public procedural sections recorded in exam-a-research.json; used for an independently authored worked workflow, not a copied vendor exercise. No product/cloud/SAP/Office execution or paid content access."
+    },
+    {
+      "id": "group05-ab410-designers",
+      "title": "Meet the model-driven app designers",
+      "url": "https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/model-driven-designers",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AB-410"
+      ],
+      "notes": "October 28 group-05 exam researcher: inspected the exact public procedural sections recorded in exam-a-research.json; used for an independently authored worked workflow, not a copied vendor exercise. No product/cloud/SAP/Office execution or paid content access."
+    },
+    {
+      "id": "group05-ab410-bpf",
+      "title": "Tutorial: Create a business process flow",
+      "url": "https://learn.microsoft.com/en-us/power-automate/create-business-process-flow",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AB-410"
+      ],
+      "notes": "October 28 group-05 exam researcher: inspected the exact public procedural sections recorded in exam-a-research.json; used for an independently authored worked workflow, not a copied vendor exercise. No product/cloud/SAP/Office execution or paid content access."
+    },
+    {
+      "id": "ab410-ai-solution-design-module",
+      "title": "Design AI-Powered Business Solutions with Microsoft Power Platform",
+      "url": "https://learn.microsoft.com/en-us/training/modules/design-ai-powered-solutions-power-platform/",
+      "publisher": "Microsoft",
+      "authority_class": 3,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AB-410"
+      ],
+      "notes": "October 28, 2026 group-05 learning review: Seven-unit design module assumes canvas-app, cloud-flow and Dataverse familiarity; unit runtime absent in overview. Read scope: module overview, learning objectives, prerequisites and seven-unit outline. No product execution, paid content or embedded video reviewed. No reliable publication/update date displayed in the inspected public scope."
+    },
+    {
+      "id": "ab410-recommend-components-unit",
+      "title": "Recommend Power Platform Components for Business Solutions",
+      "url": "https://learn.microsoft.com/en-us/training/modules/design-ai-powered-solutions-power-platform/3-recommend-power-platform-components",
+      "publisher": "Microsoft",
+      "authority_class": 3,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AB-410"
+      ],
+      "notes": "October 28, 2026 group-05 learning review: Published seven-minute unit supplies a users/data/process/language decision framework. Examples are teaching scenarios, not proof of licensing, extraction accuracy or production readiness. Read scope: complete instructional unit body, four-dimension framework and worked scenarios. No product execution, paid content or embedded video reviewed. No reliable publication/update date displayed in the inspected public scope."
+    },
+    {
+      "id": "group05-wac-alerts",
+      "title": "Monitor servers and configure alerts with Azure Monitor from Windows Admin Center",
+      "url": "https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/azure-monitor",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AZ-802"
+      ],
+      "notes": "October 28 group-05 exam researcher: inspected the exact public procedural sections recorded in exam-a-research.json; used for an independently authored worked workflow, not a copied vendor exercise. No product/cloud/SAP/Office execution or paid content access."
+    },
+    {
+      "id": "az802-lab00-setup",
+      "title": "Lab 0: Set up the Windows Server lab environment",
+      "url": "https://microsoftlearning.github.io/AZ-802-Windows-Server-Administrator-Associate/Instructions/Labs/LAB_00_Set_up_the_AZ-802_lab_environment.html",
+      "publisher": "MicrosoftLearning",
+      "authority_class": 3,
+      "source_type": "hands-on-lab",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AZ-802"
+      ],
+      "notes": "October 28, 2026 group-05 learning review: Under-development warning prohibits using these instructions to provision yet. Baseline is Windows Server 2022; Azure/local alternatives and reset/deletion effects are described. Does not validate Windows Server 2025 tasks. Read scope: complete setup instructions read; no linked setup code inspected or executed. No product execution, paid content or embedded video reviewed. No reliable publication/update date displayed in the inspected public scope."
+    },
+    {
+      "id": "az802-lab08-monitoring",
+      "title": "Lab: Monitoring and troubleshooting Windows Server",
+      "url": "https://microsoftlearning.github.io/AZ-802-Windows-Server-Administrator-Associate/Instructions/Labs/LAB_08_Monitoring_and_troubleshooting_Windows_Server.html",
+      "publisher": "MicrosoftLearning",
+      "authority_class": 3,
+      "source_type": "hands-on-lab",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "AZ-802"
+      ],
+      "notes": "October 28, 2026 group-05 learning review: Publishes 40 minutes after setup; baseline counters, load comparison and collector-initiated event subscription. Lab-only TrustedHosts workaround and stress utility do not become production recommendations. Read scope: complete lab instructions, all three exercises. No product execution, paid content or embedded video reviewed. No reliable publication/update date displayed in the inspected public scope."
+    },
+    {
+      "id": "group05-word-accessibility",
+      "title": "Improve accessibility with the Accessibility Checker",
+      "url": "https://support.microsoft.com/en-US/Accessibility/office-accessibility/improve-accessibility-with-the-accessibility-checker",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-110"
+      ],
+      "notes": "October 28 group-05 exam researcher: inspected the exact public procedural sections recorded in exam-a-research.json; used for an independently authored worked workflow, not a copied vendor exercise. No product/cloud/SAP/Office execution or paid content access."
+    },
+    {
+      "id": "group05-word-properties",
+      "title": "View or change the properties for an Office file",
+      "url": "https://support.microsoft.com/en-US/Office/collab-files/view-or-change-the-properties-for-an-office-file",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-110"
+      ],
+      "notes": "October 28 group-05 exam researcher: inspected the exact public procedural sections recorded in exam-a-research.json; used for an independently authored worked workflow, not a copied vendor exercise. No product/cloud/SAP/Office execution or paid content access."
+    },
+    {
+      "id": "office-excel-movechart-20261028",
+      "title": "Move or resize a chart",
+      "url": "https://support.microsoft.com/en-au/excel/move-or-resize-a-chart",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-210"
+      ],
+      "notes": "October 28, 2026 exam-b research: reviewed text supporting excel-chart-edit; original synthetic expected checks only, no Office execution. Platform/availability boundaries retained."
+    },
+    {
+      "id": "office-excel-goalseek-20261028",
+      "title": "Use Goal Seek to find the result you want by adjusting an input value",
+      "url": "https://support.microsoft.com/en-au/excel/use-goal-seek-to-find-the-result-you-want-by-adjusting-an-input-value",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-211"
+      ],
+      "notes": "October 28, 2026 exam-b research: reviewed text supporting excel-expert-analysis; original synthetic expected checks only, no Office execution. Platform/availability boundaries retained."
+    },
+    {
+      "id": "group05-word-header",
+      "title": "Add the file name, date, author or other Word document properties to a header or footer",
+      "url": "https://support.microsoft.com/en-au/word/add-the-file-name-date-author-or-other-word-document-properties-to-a-header-or-footer",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-110"
+      ],
+      "notes": "October 28 group-05 exam researcher: inspected the exact public procedural sections recorded in exam-a-research.json; used for an independently authored worked workflow, not a copied vendor exercise. No product/cloud/SAP/Office execution or paid content access."
+    },
+    {
+      "id": "office-excel-freeze-20261028",
+      "title": "Freeze panes to lock rows and columns",
+      "url": "https://support.microsoft.com/en-gb/excel/get-started/freeze-panes-to-lock-rows-and-columns?nochrome=true",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-210"
+      ],
+      "notes": "October 28, 2026 exam-b research: reviewed text supporting excel-navigation-and-formatting; original synthetic expected checks only, no Office execution. Platform/availability boundaries retained."
+    },
+    {
+      "id": "office-word-merge-fields-20261028",
+      "title": "Insert mail merge fields",
+      "url": "https://support.microsoft.com/en-gb/word/insert-mail-merge-fields?nochrome=true",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-111"
+      ],
+      "notes": "October 28, 2026 exam-b research: reviewed text supporting word-merge-field-operation; original synthetic expected checks only, no Office execution. Platform/availability boundaries retained."
+    },
+    {
+      "id": "group05-word-table",
+      "title": "Insert a table",
+      "url": "https://support.microsoft.com/en-gb/word/training/insert-a-table",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-110"
+      ],
+      "notes": "October 28 group-05 exam researcher: inspected the exact public procedural sections recorded in exam-a-research.json; used for an independently authored worked workflow, not a copied vendor exercise. No product/cloud/SAP/Office execution or paid content access."
+    },
+    {
+      "id": "office-excel-pivotchart-20261028",
+      "title": "Create a PivotChart",
+      "url": "https://support.microsoft.com/en-us/Excel/get-started/create-a-pivotchart",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-211"
+      ],
+      "notes": "October 28, 2026 exam-b research: reviewed text supporting excel-expert-pivotchart; original synthetic expected checks only, no Office execution. Platform/availability boundaries retained."
+    },
+    {
+      "id": "office-excel-charttypes-20261028",
+      "title": "Available chart types in Office",
+      "url": "https://support.microsoft.com/en-us/excel/available-chart-types-in-office",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-211"
+      ],
+      "notes": "October 28, 2026 exam-b research: reviewed text supporting excel-expert-chart-artifacts; original synthetic expected checks only, no Office execution. Platform/availability boundaries retained."
+    },
+    {
+      "id": "office-excel-size-20261028",
+      "title": "Change the column width and row height",
+      "url": "https://support.microsoft.com/en-us/excel/change-the-column-width-and-row-height",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-210"
+      ],
+      "notes": "October 28, 2026 exam-b research: reviewed text supporting excel-navigation-and-formatting; original synthetic expected checks only, no Office execution. Platform/availability boundaries retained."
+    },
+    {
+      "id": "office-excel-clear-20261028",
+      "title": "Clear cells of contents or formats",
+      "url": "https://support.microsoft.com/en-us/excel/clear-cells-of-contents-or-formats",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-210"
+      ],
+      "notes": "October 28, 2026 exam-b research: reviewed text supporting excel-navigation-and-formatting; original synthetic expected checks only, no Office execution. Platform/availability boundaries retained."
+    },
+    {
+      "id": "office-excel-consolidate-20261028",
+      "title": "Consolidate data in multiple worksheets",
+      "url": "https://support.microsoft.com/en-us/excel/consolidate-data-in-multiple-worksheets",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-211"
+      ],
+      "notes": "October 28, 2026 exam-b research: reviewed text supporting excel-expert-analysis; original synthetic expected checks only, no Office execution. Platform/availability boundaries retained."
+    },
+    {
+      "id": "office-excel-charts-20261028",
+      "title": "Creating charts from start to finish",
+      "url": "https://support.microsoft.com/en-us/excel/creating-charts-from-start-to-finish",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-210",
+        "MO-211"
+      ],
+      "notes": "October 28, 2026 exam-b research: reviewed text supporting excel-chart-edit; original synthetic expected checks only, no Office execution. Platform/availability boundaries retained."
+    },
+    {
+      "id": "office-excel-errors-20261028",
+      "title": "Detect formula errors in Excel",
+      "url": "https://support.microsoft.com/en-us/excel/detect-formula-errors-in-excel",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-211"
+      ],
+      "notes": "October 28, 2026 exam-b research: reviewed text supporting excel-expert-audit; original synthetic expected checks only, no Office execution. Platform/availability boundaries retained."
+    },
+    {
+      "id": "office-excel-trace-20261028",
+      "title": "Display the relationships between formulas and cells",
+      "url": "https://support.microsoft.com/en-us/excel/display-the-relationships-between-formulas-and-cells",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-211"
+      ],
+      "notes": "October 28, 2026 exam-b research: reviewed text supporting excel-expert-audit; original synthetic expected checks only, no Office execution. Platform/availability boundaries retained."
+    },
+    {
+      "id": "office-excel-pivotdetails-20261028",
+      "title": "Expand, collapse, or show details in a PivotTable or PivotChart",
+      "url": "https://support.microsoft.com/en-us/excel/expand-collapse-or-show-details-in-a-pivottable-or-pivotchart",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-211"
+      ],
+      "notes": "October 28, 2026 exam-b research: reviewed text supporting excel-expert-pivotchart; original synthetic expected checks only, no Office execution. Platform/availability boundaries retained."
+    },
+    {
+      "id": "excel-create-pivotchart",
+      "title": "Create a PivotChart",
+      "url": "https://support.microsoft.com/en-us/excel/get-started/create-a-pivotchart",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-211"
+      ],
+      "notes": "October 28, 2026 group-05 learning review: Mac/web create a PivotTable first. Mac lists column, line, pie and radar and excludes treemap/statistical/combo charts. Chart behavior and instructions not executed. Read scope: complete Windows/Mac/web instructional bodies. No product execution, paid content or embedded video reviewed. No reliable publication/update date displayed in the inspected public scope."
+    },
+    {
+      "id": "office-excel-find-20261028",
+      "title": "Find or replace text and numbers on a worksheet",
+      "url": "https://support.microsoft.com/en-us/excel/get-started/find-or-replace-text-and-numbers-on-a-worksheet",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-210"
+      ],
+      "notes": "October 28, 2026 exam-b research: reviewed text supporting excel-navigation-and-formatting; original synthetic expected checks only, no Office execution. Platform/availability boundaries retained."
+    },
+    {
+      "id": "office-excel-merge-20261028",
+      "title": "Merge and unmerge cells in Excel",
+      "url": "https://support.microsoft.com/en-us/excel/get-started/merge-and-unmerge-cells-in-excel",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-210"
+      ],
+      "notes": "October 28, 2026 exam-b research: reviewed text supporting excel-navigation-and-formatting; original synthetic expected checks only, no Office execution. Platform/availability boundaries retained."
+    },
+    {
+      "id": "office-excel-logic-20261028",
+      "title": "Logical functions (reference)",
+      "url": "https://support.microsoft.com/en-us/excel/logical-functions-reference",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-211"
+      ],
+      "notes": "October 28, 2026 exam-b research: reviewed text supporting excel-expert-function-matrix; original synthetic expected checks only, no Office execution. Platform/availability boundaries retained."
+    },
+    {
+      "id": "office-excel-legacylookup-20261028",
+      "title": "Look up values with VLOOKUP, INDEX, or MATCH",
+      "url": "https://support.microsoft.com/en-us/excel/look-up-values-with-vlookup-index-or-match?trk=article-ssr-frontend-pulse_little-text-block",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-211"
+      ],
+      "notes": "October 28, 2026 exam-b research: reviewed text supporting excel-expert-function-matrix; original synthetic expected checks only, no Office execution. Platform/availability boundaries retained."
+    },
+    {
+      "id": "office-excel-names-20261028",
+      "title": "Names in formulas",
+      "url": "https://support.microsoft.com/en-us/excel/names-in-formulas",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-210"
+      ],
+      "notes": "October 28, 2026 exam-b research: reviewed text supporting excel-names-tables-and-formulas; original synthetic expected checks only, no Office execution. Platform/availability boundaries retained."
+    },
+    {
+      "id": "office-excel-statistical-20261028",
+      "title": "Statistical functions (reference)",
+      "url": "https://support.microsoft.com/en-us/excel/statistical-functions-reference?ad=us&rs=en-us&ui=en-us",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-210",
+        "MO-211"
+      ],
+      "notes": "October 28, 2026 exam-b research: reviewed text supporting excel-names-tables-and-formulas; original synthetic expected checks only, no Office execution. Platform/availability boundaries retained."
+    },
+    {
+      "id": "office-excel-scenarios-20261028",
+      "title": "Switch between various sets of values by using scenarios",
+      "url": "https://support.microsoft.com/en-us/excel/switch-between-various-sets-of-values-by-using-scenarios",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-211"
+      ],
+      "notes": "October 28, 2026 exam-b research: reviewed text supporting excel-expert-analysis; original synthetic expected checks only, no Office execution. Platform/availability boundaries retained."
+    },
+    {
+      "id": "office-excel-logic-example-20261028",
+      "title": "Using IF with AND, OR, and NOT functions in Excel",
+      "url": "https://support.microsoft.com/en-us/excel/using-if-with-and-or-and-not-functions-in-excel",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-210",
+        "MO-211"
+      ],
+      "notes": "October 28, 2026 exam-b research: reviewed text supporting excel-names-tables-and-formulas; original synthetic expected checks only, no Office execution. Platform/availability boundaries retained."
+    },
+    {
+      "id": "office-excel-structured-20261028",
+      "title": "Using structured references with Excel tables",
+      "url": "https://support.microsoft.com/en-us/excel/using-structured-references-with-excel-tables",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-210"
+      ],
+      "notes": "October 28, 2026 exam-b research: reviewed text supporting excel-names-tables-and-formulas; original synthetic expected checks only, no Office execution. Platform/availability boundaries retained."
+    },
+    {
+      "id": "office-excel-links-20261028",
+      "title": "Work with links in Excel",
+      "url": "https://support.microsoft.com/en-us/excel/work-with-links-in-excel",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-210"
+      ],
+      "notes": "October 28, 2026 exam-b research: reviewed text supporting excel-navigation-and-formatting; original synthetic expected checks only, no Office execution. Platform/availability boundaries retained."
+    },
+    {
+      "id": "office-word-theme-20261028",
+      "title": "Change a theme and make it the default in Word or Excel",
+      "url": "https://support.microsoft.com/en-us/office/foundations-experiences/change-a-theme-and-make-it-the-default-in-word-or-excel",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-111"
+      ],
+      "notes": "October 28, 2026 exam-b research: reviewed text supporting word-reusable-design; original synthetic expected checks only, no Office execution. Platform/availability boundaries retained."
+    },
+    {
+      "id": "office-ppt-screenshot-20261028",
+      "title": "Insert a screenshot or screen clipping",
+      "url": "https://support.microsoft.com/en-us/office/graphics-visuals/insert-a-screenshot-or-screen-clipping",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-310"
+      ],
+      "notes": "October 28, 2026 exam-b research: reviewed text supporting ppt-object-editing; original synthetic expected checks only, no Office execution. Platform/availability boundaries retained."
+    },
+    {
+      "id": "powerpoint-layout-placeholders",
+      "title": "Add, edit, or remove a placeholder on a slide layout",
+      "url": "https://support.microsoft.com/en-us/powerpoint/add-edit-or-remove-a-placeholder-on-a-slide-layout",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-310"
+      ],
+      "notes": "October 28, 2026 group-05 learning review: Placeholder editing in layout/master view, application in Normal view and reapplying changed layouts. No video, file, theme export or UI procedure executed. Read scope: complete Windows/macOS instructional bodies. No product execution, paid content or embedded video reviewed. No reliable publication/update date displayed in the inspected public scope."
+    },
+    {
+      "id": "office-ppt-shapes-20261028",
+      "title": "Add shapes",
+      "url": "https://support.microsoft.com/en-us/powerpoint/add-shapes?nochrome=true",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-310"
+      ],
+      "notes": "October 28, 2026 exam-b research: reviewed text supporting ppt-object-editing; original synthetic expected checks only, no Office execution. Platform/availability boundaries retained."
+    },
+    {
+      "id": "office-ppt-ink-20261028",
+      "title": "Change handwritten ink to shapes, text, or math in PowerPoint for Microsoft 365",
+      "url": "https://support.microsoft.com/en-us/powerpoint/change-handwritten-ink-to-shapes-text-or-math-in-powerpoint-for-microsoft-365",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-310"
+      ],
+      "notes": "October 28, 2026 exam-b research: reviewed text supporting ppt-object-editing; original synthetic expected checks only, no Office execution. Platform/availability boundaries retained."
+    },
+    {
+      "id": "office-ppt-columns-20261028",
+      "title": "Create columns of text in a text box or shape",
+      "url": "https://support.microsoft.com/en-us/powerpoint/create-columns-of-text-in-a-text-box-or-shape",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-310"
+      ],
+      "notes": "October 28, 2026 exam-b research: reviewed text supporting ppt-object-editing; original synthetic expected checks only, no Office execution. Platform/availability boundaries retained."
+    },
+    {
+      "id": "office-ppt-table-20261028",
+      "title": "Add a table to a slide",
+      "url": "https://support.microsoft.com/en-us/powerpoint/training/add-a-table-to-a-slide",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-310"
+      ],
+      "notes": "October 28, 2026 exam-b research: reviewed text supporting ppt-table-operation; original synthetic expected checks only, no Office execution. Platform/availability boundaries retained."
+    },
+    {
+      "id": "powerpoint-slide-layout",
+      "title": "What is a slide layout?",
+      "url": "https://support.microsoft.com/en-us/powerpoint/what-is-a-slide-layout",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-310"
+      ],
+      "notes": "October 28, 2026 group-05 learning review: Applying a layout differs from defining one; Slide Master customization is unavailable in PowerPoint web. Windows/Mac desktop scope listed. Read scope: complete substantive article body. No product execution, paid content or embedded video reviewed. No reliable publication/update date displayed in the inspected public scope."
+    },
+    {
+      "id": "office-word-caption-20261028",
+      "title": "Add, format, or delete captions in Word",
+      "url": "https://support.microsoft.com/en-us/word/add-format-or-delete-captions-in-word",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-111"
+      ],
+      "notes": "October 28, 2026 exam-b research: reviewed text supporting word-captions-fields-and-controls; original synthetic expected checks only, no Office execution. Platform/availability boundaries retained."
+    },
+    {
+      "id": "office-word-lines-20261028",
+      "title": "Add or remove line numbers",
+      "url": "https://support.microsoft.com/en-us/word/add-or-remove-line-numbers",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-111"
+      ],
+      "notes": "October 28, 2026 exam-b research: reviewed text supporting word-pagination; original synthetic expected checks only, no Office execution. Platform/availability boundaries retained."
+    },
+    {
+      "id": "group05-word-basic",
+      "title": "Basic tasks in Word",
+      "url": "https://support.microsoft.com/en-us/word/basic-tasks-in-word",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-110"
+      ],
+      "notes": "October 28 group-05 exam researcher: inspected the exact public procedural sections recorded in exam-a-research.json; used for an independently authored worked workflow, not a copied vendor exercise. No product/cloud/SAP/Office execution or paid content access."
+    },
+    {
+      "id": "office-word-combine-20261028",
+      "title": "Combine document revisions",
+      "url": "https://support.microsoft.com/en-us/word/combine-document-revisions",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-111"
+      ],
+      "notes": "October 28, 2026 exam-b research: reviewed text supporting word-review-artifact; original synthetic expected checks only, no Office execution. Platform/availability boundaries retained."
+    },
+    {
+      "id": "office-word-compare-20261028",
+      "title": "Compare document differences using the legal blackline option",
+      "url": "https://support.microsoft.com/en-us/word/compare-document-differences-using-the-legal-blackline-option",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-111"
+      ],
+      "notes": "October 28, 2026 exam-b research: reviewed text supporting word-review-artifact; original synthetic expected checks only, no Office execution. Platform/availability boundaries retained."
+    },
+    {
+      "id": "office-word-hyphenation-20261028",
+      "title": "Control hyphenation",
+      "url": "https://support.microsoft.com/en-us/word/control-hyphenation",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-111"
+      ],
+      "notes": "October 28, 2026 exam-b research: reviewed text supporting word-pagination; original synthetic expected checks only, no Office execution. Platform/availability boundaries retained."
+    },
+    {
+      "id": "office-word-form-20261028",
+      "title": "Create a form in Word that users can complete or print",
+      "url": "https://support.microsoft.com/en-us/word/create-a-form-in-word-that-users-can-complete-or-print",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-111"
+      ],
+      "notes": "October 28, 2026 exam-b research: reviewed text supporting word-dependency-and-protection; original synthetic expected checks only, no Office execution. Platform/availability boundaries retained."
+    },
+    {
+      "id": "office-word-styles-20261028",
+      "title": "Customize or create new styles",
+      "url": "https://support.microsoft.com/en-us/word/customize-or-create-new-styles",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-111"
+      ],
+      "notes": "October 28, 2026 exam-b research: reviewed text supporting word-reusable-design; original synthetic expected checks only, no Office execution. Platform/availability boundaries retained."
+    },
+    {
+      "id": "office-word-figures-20261028",
+      "title": "Insert a table of figures",
+      "url": "https://support.microsoft.com/en-us/word/insert-a-table-of-figures",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-111"
+      ],
+      "notes": "October 28, 2026 exam-b research: reviewed text supporting word-captions-fields-and-controls; original synthetic expected checks only, no Office execution. Platform/availability boundaries retained."
+    },
+    {
+      "id": "office-word-link-20261028",
+      "title": "Insert an object in Word or Outlook",
+      "url": "https://support.microsoft.com/en-us/word/insert-an-object-in-word-or-outlook",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-111"
+      ],
+      "notes": "October 28, 2026 exam-b research: reviewed text supporting word-dependency-and-protection; original synthetic expected checks only, no Office execution. Platform/availability boundaries retained."
+    },
+    {
+      "id": "office-word-field-edit-20261028",
+      "title": "Insert, edit, and view fields in Word",
+      "url": "https://support.microsoft.com/en-us/word/insert-edit-and-view-fields-in-word",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-111"
+      ],
+      "notes": "October 28, 2026 exam-b research: reviewed text supporting word-captions-fields-and-controls; original synthetic expected checks only, no Office execution. Platform/availability boundaries retained."
+    },
+    {
+      "id": "office-word-pagination-20261028",
+      "title": "Use Line and Page Breaks settings in Word",
+      "url": "https://support.microsoft.com/en-us/word/line-and-page-breaks",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-111"
+      ],
+      "notes": "October 28, 2026 exam-b research: reviewed text supporting word-pagination; original synthetic expected checks only, no Office execution. Platform/availability boundaries retained."
+    },
+    {
+      "id": "group05-word-print",
+      "title": "Print a document in Word for Windows",
+      "url": "https://support.microsoft.com/en-us/word/print-a-document-in-word",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-110"
+      ],
+      "notes": "October 28 group-05 exam researcher: inspected the exact public procedural sections recorded in exam-a-research.json; used for an independently authored worked workflow, not a copied vendor exercise. No product/cloud/SAP/Office execution or paid content access."
+    },
+    {
+      "id": "office-word-password-20261028",
+      "title": "Protect a Word document with a password",
+      "url": "https://support.microsoft.com/en-us/word/protect-a-word-document-with-a-password",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-111"
+      ],
+      "notes": "October 28, 2026 exam-b research: reviewed text supporting word-dependency-and-protection; original synthetic expected checks only, no Office execution. Platform/availability boundaries retained."
+    },
+    {
+      "id": "group05-word-margins",
+      "title": "Change margins",
+      "url": "https://support.microsoft.com/en-us/word/training/change-margins",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-110"
+      ],
+      "notes": "October 28 group-05 exam researcher: inspected the exact public procedural sections recorded in exam-a-research.json; used for an independently authored worked workflow, not a copied vendor exercise. No product/cloud/SAP/Office execution or paid content access."
+    },
+    {
+      "id": "group05-word-share",
+      "title": "Share a document",
+      "url": "https://support.microsoft.com/en-us/word/training/share-a-document",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-110"
+      ],
+      "notes": "October 28 group-05 exam researcher: inspected the exact public procedural sections recorded in exam-a-research.json; used for an independently authored worked workflow, not a copied vendor exercise. No product/cloud/SAP/Office execution or paid content access."
+    },
+    {
+      "id": "word-mail-merge-platform-boundary",
+      "title": "Use mail merge for bulk email, letters, labels, and envelopes",
+      "url": "https://support.microsoft.com/en-us/word/use-mail-merge-for-bulk-email-letters-labels-and-envelopes",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-111"
+      ],
+      "notes": "October 28, 2026 group-05 learning review: Word web preserves merge settings but cannot edit them or perform merge; desktop required. Local synthetic letters avoid sending real mail. Read scope: complete substantive Windows/macOS/web text; linked procedures/video not opened. No product execution, paid content or embedded video reviewed. No reliable publication/update date displayed in the inspected public scope."
+    },
+    {
+      "id": "office-word-quickparts-20261028",
+      "title": "Use Quick Parts and AutoText in Word and Outlook",
+      "url": "https://support.microsoft.com/en-us/word/use-quick-parts-and-autotext-in-word-and-outlook",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-111"
+      ],
+      "notes": "October 28, 2026 exam-b research: reviewed text supporting word-reusable-design; original synthetic expected checks only, no Office execution. Platform/availability boundaries retained."
+    },
+    {
+      "id": "office-office-formatpainter-20261028",
+      "title": "Use the Format Painter",
+      "url": "https://support.microsoft.com/en-us/word/use-the-format-painter",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-210"
+      ],
+      "notes": "October 28, 2026 exam-b research: reviewed text supporting excel-navigation-and-formatting; original synthetic expected checks only, no Office execution. Platform/availability boundaries retained."
+    },
+    {
+      "id": "group05-word-borders",
+      "title": "Why aren't page borders printing?",
+      "url": "https://support.microsoft.com/en-us/word/why-aren-t-page-borders-printing",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-110"
+      ],
+      "notes": "October 28 group-05 exam researcher: inspected the exact public procedural sections recorded in exam-a-research.json; used for an independently authored worked workflow, not a copied vendor exercise. No product/cloud/SAP/Office execution or paid content access."
+    },
+    {
+      "id": "excel-built-in-conditional-rule-20261028",
+      "title": "Use conditional formatting to highlight information in Excel",
+      "url": "https://support.microsoft.com/en-us/excel/use-conditional-formatting-to-highlight-information-in-excel",
+      "publisher": "Microsoft Support",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "MO-210"
+      ],
+      "notes": "October28 independent-review repair: selected Windows built-in comparison and rule-manager sections read. Synthetic threshold checks remain unexecuted."
     }
   ]
 }

@@ -23,6 +23,12 @@ Passing this workflow changes the public label to **Sources + objectives checked
 
 | Exam | Reviewed | Blueprint snapshot | External-link evidence | Result |
 |---|---|---|---|---|
+| MO-310 | October 28, 2026 | Current detailed outline reconciled; see group-05 report | 27 registered links: 27 reachable, 0 access-blocked, 0 missing/error | Passed; human/product review pending |
+| MO-211 | October 28, 2026 | Current detailed outline reconciled; see group-05 report | 32 registered links: 32 reachable, 0 access-blocked, 0 missing/error | Passed; human/product review pending |
+| MO-210 | October 28, 2026 | Current detailed outline reconciled; see group-05 report | 32 registered links: 32 reachable, 0 access-blocked, 0 missing/error | Passed; human/product review pending |
+| MO-111 | October 28, 2026 | Current detailed outline reconciled; see group-05 report | 32 registered links: 31 reachable, 1 access-blocked, 0 missing/error | Blocked: current source gap retained |
+| MO-110 | October 28, 2026 | Current detailed outline reconciled; see group-05 report | 20 registered links: 20 reachable, 0 access-blocked, 0 missing/error | Passed; human/product review pending |
+| AZ-802 | October 28, 2026 | Current detailed outline reconciled; see group-05 report | 91 registered links: 86 reachable, 5 access-blocked, 0 missing/error | Blocked: current source gap retained |
 | SC-500 | October 28, 2026 | Current detailed outline reconciled; see group-04 report | 66 registered links: 62 reachable, 4 access-blocked, 0 missing/error | Blocked: current source gap retained |
 | MB-820 | October 28, 2026 | Current detailed outline reconciled; see group-04 report | 52 registered links: 51 reachable, 1 access-blocked, 0 missing/error | Passed; human/product review pending |
 | MB-800 | October 28, 2026 | Current detailed outline reconciled; see group-04 report | 56 registered links: 54 reachable, 2 access-blocked, 0 missing/error | Passed; human/product review pending |
@@ -67,12 +73,12 @@ Passing this workflow changes the public label to **Sources + objectives checked
 | AZ-104 | October 28, 2026 | Current detailed outline reconciled; see group-03 report | 67 registered links: 64 reachable, 3 access-blocked, 0 missing/error | Passed; human/product review pending |
 | AZ-305 | October 28, 2026 | Current detailed outline reconciled; see group-03 report | 54 registered links: 51 reachable, 3 access-blocked, 0 missing/error | Passed; human/product review pending |
 | AZ-700 | October 28, 2026 | Current detailed outline reconciled; see group-03 report | 77 registered links: 75 reachable, 2 access-blocked, 0 missing/error | Passed; human/product review pending |
-| AZ-120 | August 31, 2026 | April 17, 2026 objectives; unchanged during review | 27 registered links: 25 reachable, 2 access-blocked, 0 missing/error | Passed |
+| AZ-120 | October 28, 2026 | Current detailed outline reconciled; see group-05 report | 58 registered links: 56 reachable, 2 access-blocked, 0 missing/error | Blocked: current source gap retained |
 | AZ-140 | October 28, 2026 | Current detailed outline reconciled; see group-03 report | 61 registered links: 58 reachable, 3 access-blocked, 0 missing/error | Passed; human/product review pending |
 | SC-200 | October 28, 2026 | Current detailed outline reconciled; see group-02 report | 61 registered links: 59 reachable, 2 access-blocked, 0 missing/error | Blocked: current source gap retained |
 | PL-300 | October 28, 2026 | Current detailed outline reconciled; see group-04 report | 56 registered links: 52 reachable, 4 access-blocked, 0 missing/error | Passed; human/product review pending |
 | PL-400 | October 28, 2026 | Current detailed outline reconciled; see group-01 report | 57 registered links: 56 reachable, 1 access-blocked, 0 missing/error | Passed; human/product review pending |
-| AB-410 | September 1, 2026 | Official guide last updated May 15, 2026; no separate effective date; unchanged during review | 18 registered links: 17 reachable, 1 access-blocked, 0 missing/error | Passed |
+| AB-410 | October 28, 2026 | Current detailed outline reconciled; see group-05 report | 58 registered links: 57 reachable, 1 access-blocked, 0 missing/error | Blocked: current source gap retained |
 | AB-730 | October 28, 2026 | October 20 current English outline; July bytes archived | 40 registered links: 40 reachable, 0 access-blocked, 0 missing/error | Blocked: product-documentation conflicts remain |
 | AB-731 | October 28, 2026 | Current detailed outline reconciled; see group-03 report | 36 registered links: 34 reachable, 2 access-blocked, 0 missing/error | Passed; human/product review pending |
 | AB-210 | October 28, 2026 | Current detailed outline reconciled; see group-01 report | 46 registered links: 44 reachable, 2 access-blocked, 0 missing/error | Blocked: current source gap retained |
@@ -169,6 +175,8 @@ The review maps every July 22, 2026 subobjective to an outcome, experience/conte
 
 ## AB-410 coverage record
 
+The October 28 [group-05 refresh](research/2026-10-28-microsoft-refresh-group-05.md#ab-410) maps 48 detailed current tasks, separately from any coarse Office adapter snapshot. Current links: 57 reachable, 1 access-blocked, zero missing/error. Documented evidence gaps keep the bounded source gate blocked. Human/product validation remains pending. Earlier dates, counts and accepted scope below describe historical reviews.
+
 The September 28 [deep review](research/2026-09-28-ab-410-deep-review.md) maps 48 detailed objectives. Whole guide and all 48 unchanged detailed objectives mapped across seven groups. Add six original worked examples, two labs (ten total), 48 answered checks and two bounded Power Platform blog exercises. Deepen prompt/summary freshness, generated-page ALM, delegation, errors, agent extraction, identity, approvals, credit transition and aggregates. Preserve SAP prompt-knowledge support gap. Eighteen offline assertions passed; no tenant, Power Fx, flow/model/deployment or paid lesson execution; independent human review pending. Current guide citations: 48 registered, 47 reachable, 1 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
 
 | Official objective group | Guide coverage |
@@ -212,6 +220,8 @@ The September 28 [deep review](research/2026-09-28-az-140-deep-review.md) maps 7
 The guide maps every July 20, 2026 objective bullet to an end-to-end connection and state-delivery model, implementation decisions, failure modes, three cross-domain scenarios, eight independent labs, and 24 original knowledge checks. It includes the July-era RDP Multipath, identity/SSO, App Attach, security, Autoscale and recovery concepts and cites 27 exact registered sources: 24 were reachable, while two O'Reilly pages and one Udemy page returned HTTP 403 to the automated checker. The active credential has no announced retirement or blueprint change. The official objective snapshot SHA-256 is `d40f010042124a6e28c81a7f783b6127e3b7ebf7bb99d9b3ddfccdd40dcede84`.
 
 ## AZ-120 coverage record
+
+The October 28 [group-05 refresh](research/2026-10-28-microsoft-refresh-group-05.md#az-120) maps 78 detailed current tasks, separately from any coarse Office adapter snapshot. Current links: 56 reachable, 2 access-blocked, zero missing/error. Documented evidence gaps keep the bounded source gate blocked. Human/product validation remains pending. Earlier dates, counts and accepted scope below describe historical reviews.
 
 The September 28 [deep review](research/2026-09-28-az-120-deep-review.md) maps 78 detailed objectives. Whole guide and 78 unchanged objectives mapped across ten groups. Add seven worked examples, ten labs, 48 explained checks and three bounded Microsoft blog exercises. Refresh HANA storage/backup, MANA, RISE/fencing, VIS/telemetry, SDAF/STAF, Sentinel connector lifecycle and catalog guidance. Twenty-seven offline assertions passed; native HSR versus manual-secondary FAQ applicability remains unresolved. No cloud, SAP, guest commands, failover/restore or paid-content execution; human review pending. Current guide citations: 45 registered, 43 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
 
@@ -590,6 +600,8 @@ The September 27 [deep review](research/2026-09-27-az-801-deep-review.md) maps 1
 The review maps every October 6, 2025 subobjective to requirement, dependency, control, evidence, failure action, and recovery proof. Three integrated scenarios, eight labs, and 24 original knowledge checks cover security, clustering/S2D, backup/replication, server/workload/forest migration, monitoring, and layered troubleshooting. All 87 cited URLs are cataloged: 84 were reachable, while two O'Reilly books and one Udemy page were access-blocked; none was missing or broken. The September 7 pass adds Windows Server release/feature feeds, the Azure Monitor change feed, and the June 30, 2028 VM Insights Map and Dependency Agent retirement boundary while explicitly preserving unaffected AMA-based performance monitoring. The guide distinguishes current AMA/DCR from retired MMA/OMS, records ADMT's deprecated support state, and marks Azure Disk Encryption's September 15, 2028 retirement and encryption-at-host direction. It prominently records AZ-801 retirement on September 30, 2026 at 5:00 PM Central Standard Time, links AZ-802, and discloses the canonical-study-guide versus exam-page weight discrepancy. The official blueprint snapshot SHA-256 is `c279fe648d4e3a6c67df9e119c95335e042937b93b83ffbf6a07d7f0ce51a76f`.
 
 ## AZ-802 coverage record
+
+The October 28 [group-05 refresh](research/2026-10-28-microsoft-refresh-group-05.md#az-802) maps 115 detailed current tasks, separately from any coarse Office adapter snapshot. Current links: 86 reachable, 5 access-blocked, zero missing/error. Documented evidence gaps keep the bounded source gate blocked. Human/product validation remains pending. Earlier dates, counts and accepted scope below describe historical reviews.
 
 The September 27 [deep review](research/2026-09-27-az-802-deep-review.md) maps 115 detailed objectives. Complete guide review maps 115 objectives in 18 groups; adds four worked examples, a ninth evidence lab, six answered checks and two qualified blog readings. Correct second-hop, GPU-P, dMSA, File Sync, SMB and monitoring lifecycle boundaries; remove stale beta language. Preserve unresolved SSH Direct support and public training/practice discrepancies. No infrastructure lab or human review executed. Current guide citations: 88 registered, 83 reachable, 5 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
 
@@ -3024,6 +3036,8 @@ The review maps published scope without inventing unpublished weights or hidden 
 
 ## MO-110 coverage record
 
+The October 28 [group-05 refresh](research/2026-10-28-microsoft-refresh-group-05.md#mo-110) maps 70 detailed current tasks, separately from any coarse Office adapter snapshot. Current links: 20 reachable, 0 access-blocked, zero missing/error. The bounded source gate passed. Human/product validation remains pending. Earlier dates, counts and accepted scope below describe historical reviews.
+
 The September 28 [deep review](research/2026-09-28-mo-110-deep-review.md) maps 70 detailed objectives. Read the entire guide and all 70 PDF tasks in six domains. Add five worked examples, ten proposed desktop labs and 32 answered checks, lifecycle context and a bounded Microsoft article. The six-domain automatic baseline is unchanged. No Office application or exam environment was executed; independent human review remains pending. Current guide citations: 11 registered, 11 reachable, 0 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
 
 - Reviewed: September 4, 2026
@@ -3035,6 +3049,8 @@ The September 28 [deep review](research/2026-09-28-mo-110-deep-review.md) maps 7
 The review validates the 50-minute live practical baseline and maps every published domain to file-production and inspection evidence without inventing unpublished detail. Blueprint SHA-256: `c5016d0c2a76187324de57865fcad9858aa02d49353a61ffc479e64430ee233a`.
 
 ## MO-210 coverage record
+
+The October 28 [group-05 refresh](research/2026-10-28-microsoft-refresh-group-05.md#mo-210) maps 65 detailed current tasks, separately from any coarse Office adapter snapshot. Current links: 32 reachable, 0 access-blocked, zero missing/error. The bounded source gate passed. Human/product validation remains pending. Earlier dates, counts and accepted scope below describe historical reviews.
 
 The September 28 [deep review](research/2026-09-28-mo-210-deep-review.md) maps 65 detailed objectives. Read the entire guide and all 65 PDF tasks; correct the named-function scope and add six examples, ten proposed labs and 32 answered checks. 20 independent Python/Decimal assertions verify expected arithmetic, sets and text outcomes, not Excel engine behavior. Five-domain page baseline unchanged; no desktop execution and human review pending. Current guide citations: 16 registered, 16 reachable, 0 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
 
@@ -3048,6 +3064,8 @@ The review maps the live practical scope to type, reference, table, formula, cha
 
 ## MO-310 coverage record
 
+The October 28 [group-05 refresh](research/2026-10-28-microsoft-refresh-group-05.md#mo-310) maps 73 detailed current tasks, separately from any coarse Office adapter snapshot. Current links: 27 reachable, 0 access-blocked, zero missing/error. The bounded source gate passed. Human/product validation remains pending. Earlier dates, counts and accepted scope below describe historical reviews.
+
 The September 28 [deep review](research/2026-09-28-mo-310-deep-review.md) maps 73 detailed objectives. Read the entire guide and all 73 PDF tasks; add five worked examples, ten proposed labs and 32 answered checks. 12 local assertions check outline counts, geometry, chart arithmetic and a simplified animation timeline only. Teach omitted Zoom, master, recording and 3D tasks; correct media-preservation and reading-order assumptions. No PowerPoint or assistive technology executed; human review pending. Current guide citations: 18 registered, 18 reachable, 0 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
 
 - Reviewed: September 4, 2026
@@ -3060,6 +3078,8 @@ The review maps the live practical scope to reusable layout, precise object, acc
 
 ## MO-111 coverage record
 
+The October 28 [group-05 refresh](research/2026-10-28-microsoft-refresh-group-05.md#mo-111) maps 47 detailed current tasks, separately from any coarse Office adapter snapshot. Current links: 31 reachable, 1 access-blocked, zero missing/error. Documented evidence gaps keep the bounded source gate blocked. Human/product validation remains pending. Earlier dates, counts and accepted scope below describe historical reviews.
+
 The September 28 [deep review](research/2026-09-28-mo-111-deep-review.md) maps 47 detailed objectives. Read the entire Word Expert guide and all 47 PDF tasks. Add five worked examples, nine proposed desktop labs and 32 answered checks covering templates, formatting, field refresh, macro execution boundaries and merge verification. The four-domain automatic baseline is unchanged. No Office application, macro or mail merge was executed; independent human review remains pending. Current guide citations: 13 registered, 13 reachable, 0 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
 
 - Reviewed: September 4, 2026
@@ -3071,6 +3091,8 @@ The September 28 [deep review](research/2026-09-28-mo-111-deep-review.md) maps 4
 The review maps the live expert scope to reusable templates, styles, fields, controls, mail merge, revisions, automation, and audited output. Blueprint SHA-256: `0db958488191b514b8598df0288463d19a4cc9b1f7fa81b3855850e6945c8fbc`.
 
 ## MO-211 coverage record
+
+The October 28 [group-05 refresh](research/2026-10-28-microsoft-refresh-group-05.md#mo-211) maps 48 detailed current tasks, separately from any coarse Office adapter snapshot. Current links: 32 reachable, 0 access-blocked, zero missing/error. The bounded source gate passed. Human/product validation remains pending. Earlier dates, counts and accepted scope below describe historical reviews.
 
 The September 28 [deep review](research/2026-09-28-mo-211-deep-review.md) maps 48 detailed objectives. Read the whole guide and all 48 detailed PDF tasks. Add six examples, ten proposed desktop labs and 32 answered checks; 23 independent local assertions check expected arithmetic, dates, ordering and totals, without Excel execution. Correct named-function coverage and distinguish validation bypass, stale warnings and classic Pivot aggregation. Human review pending. Current guide citations: 16 registered, 16 reachable, 0 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
 
