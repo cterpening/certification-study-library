@@ -6,17 +6,17 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-28
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-28
+upcoming_change_checked: 2026-10-28
 ---
 
 # PL-900 Microsoft Power Platform Fundamentals Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide was checked against the July 24, 2026 objectives and its cited public sources on September 28, 2026. It may still contain errors or become outdated. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#pl-900-coverage-record). The [official PL-900 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-900) is authoritative.
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-04.md#pl-900) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#pl-900-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-900) is authoritative.
 
 **Current baseline:** Skills measured as of July 24, 2026<br>
-**Upcoming blueprint change:** None announced on the official study guide as of September 28, 2026.<br>
+**Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
 **Official source:** [PL-900 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-900)
 
 ## How to use this guide
@@ -139,6 +139,8 @@ An [environment](https://learn.microsoft.com/en-us/power-platform/admin/environm
 
 Environment strategy is a portfolio decision. Define who may create environments, which types exist, how production is distinguished from trial/developer work, capacity and region expectations, DLP scope, owner/support metadata, backup/recovery needs, and retirement rules. Separation reduces accidental coupling but adds deployment and administration work.
 
+> **Related item:** **VERIFY CURRENT — October 28, 2026:** [Dataverse for Teams deprecation](https://learn.microsoft.com/en-us/power-platform/important-changes-coming) ends new-environment creation on **November 15, 2026**. Existing environments not upgraded to full Dataverse are scheduled for suspension on **September 15, 2027** and decommissioning on **October 30, 2027**. Inventory the Microsoft Teams environment type, owners, apps, flows and agents; assess target capacity/licensing before upgrade. This concerns Dataverse for Teams environments, not ordinary Teams chats/files or full-Dataverse apps added to Teams. The dates are future milestones, not proof that a current environment is already unavailable.
+
 ### Security layers
 
 | Layer | Control |
@@ -214,6 +216,12 @@ These are not four names for the same artifact:
 - **Code apps** give developers code-first UI and toolchain control while using supported Power Platform capabilities.
 - **Vibe** is an AI-assisted creation experience that currently centers generated solution/app work; its outputs still need the same architecture, security, testing, and lifecycle review.
 
+### Worked creation path: one model, two app experiences
+
+Describe an equipment request with Employee, Item and Request records. In the documented [Copilot canvas route](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/ai-conversations-create-app), Start with data → Create new data opens the table workspace. Ask for those entities and their relationships, inspect the proposal, then ask for a required request date. Compare the resulting types and lookup direction with your original model before saving/opening the app. The route requires Dataverse access and the appropriate environment role; a generated gallery does not prove ordinary users can access its records.
+
+For a [saved plan](https://learn.microsoft.com/en-us/power-apps/maker/plan-designer/build-solution), create the proposed canvas or model-driven app from its tile. Canvas opens a data-connected app in Studio; model-driven opens the modern designer with its tables. Review screens/formulas in the first and navigation/forms/views in the second, then save, publish and test as the intended user. Reuse an existing app when appropriate, but note that adding it to a plan does not automatically include it in a new solution. **Answer check:** an operations queue over reviewed Dataverse tables can favor the model-driven app while the mobile request screen favors canvas. AI planning, generated app artifacts and publication are separate steps. **VERIFY CURRENT:** entry-point names, feature availability and regional prerequisites. This is a design exercise; no app was generated or published here.
+
 ### Current app-building boundaries
 
 As checked September 28, the Power Apps vibe overview still labels that experience **preview**, excludes the default environment, and lists English with supported regions including the United States, Australia, Asia, and India. Its banner points learners toward app building in Copilot Cowork and Copilot Studio. The [September 10 app-building announcement](https://www.microsoft.com/en-us/copilot/blog/copilot-studio/build-apps-in-copilot-cowork-and-copilot-studio/) describes Cowork access through Frontier and a Copilot Studio public-preview rollout. Treat these as distinct experiences; a new announcement does not make every AI app-building feature generally available.
@@ -269,6 +277,12 @@ Follow an event-driven flow as **trigger event → trigger filters → connectio
 Teams, Outlook, SharePoint, Forms, and Dataverse are common sources and destinations. A form submission can trigger validation, create a Dataverse record, request approval in Teams, send email, and update status. Keep a stable business record rather than treating a chat message as the only audit evidence.
 
 A cloud-flow run has a [30-day duration limit](https://learn.microsoft.com/en-us/power-automate/limits-and-config), including pending approvals. For longer business processes, Microsoft’s [long-running approval pattern](https://learn.microsoft.com/en-us/power-automate/modern-approvals) stores approval state in Dataverse and separates request creation from response handling. A process can last longer than any one run; make cancellation, expired requests, duplicate responses, and escalation explicit.
+
+### Worked automation choices: a document and a desktop draft
+
+For document automation, an instant cloud flow can accept a synthetic file, pass File Content to AI Builder's [Process documents](https://learn.microsoft.com/en-us/ai-builder/form-processing-model-in-flow) action using a trained/published model, and pass extracted values to a review or storage step. Retain both a field's value and confidence score; extracted amounts are strings and need validated conversion before numeric use. A low-confidence or inconsistent total should enter a review branch rather than authorize payment. This is API/cloud document processing even though the input began as a scanned document. **VERIFY CURRENT:** AI Builder capacity, model and file support; do not submit private documents for practice.
+
+For a legacy UI task, [desktop Copilot](https://learn.microsoft.com/en-us/power-automate/desktop-flows/copilot-in-power-automate-for-desktop) can draft a flow or add steps to an existing one. Describe the input file, intended local action and output; review generated action groups and supply missing mandatory inputs. UI/browser work can produce a recorder placeholder that must be replaced with actual recorded or manually authored actions. A design-time error there does not mean a finished browser automation exists. Test on synthetic local data and inspect selectors, error handling and output before connecting any side effect. **VERIFY CURRENT:** natural-language flow creation remains preview and has a narrower region/account matrix than product-question assistance. These exercises were not executed.
 
 ### Reliability and desktop automation
 
@@ -326,6 +340,8 @@ Use topics when deterministic conversational control matters. Use generative ans
 
 Knowledge permission behavior must match the source and channel. The [knowledge-source matrix](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio) distinguishes user-authenticated sources from uploaded documents. In the standard harness, [files uploaded to generative-answer nodes](https://learn.microsoft.com/en-us/microsoft-copilot-studio/nlu-documents) can inform answers for anyone chatting with the agent, regardless of the original file permissions. Upload only material appropriate for that audience; use a suitable authenticated source for restricted content. Test a user with less access than the maker.
 
+**Topic construction check:** in the [standard-harness topic editor](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-create-edit-topics), create a custom equipment-request topic, describe its purpose for generative selection or supply suitable classic trigger phrases, add a Question node that stores the item choice, then a Condition node for supported versus unsupported items. The supported branch can explain the next step or call an authorized draft-request tool; the other branch should clarify or hand off. Save and use test chat to trace both branches, missing input and an attempted unauthorized request. A node's selected path does not grant the downstream operation permission. **VERIFY CURRENT:** orchestration/harness and node support. This is an authoring worksheet, not an executed agent test.
+
 ### Tools and MCP
 
 A tool description and schema tell the model how to call a capability. They do not authorize the business action. The connector/API/flow must validate identity, permissions, arguments, and policy. For side effects, consider preview/confirmation, approval, idempotency, timeout, rollback or compensation, and audit. Microsoft's [agent-tools guidance](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agent-tools) distinguishes integrations including connectors, prompts, REST APIs, agent flows, and MCP.
@@ -339,6 +355,8 @@ MCP is a protocol for exposing tools and context to compatible AI clients. It ex
 Test normal, ambiguous, unsupported, unsafe, and unauthorized scenarios. Publish only to approved channels and confirm the channel's authentication and feature behavior. Monitor containment/resolution, escalation, tool success, latency, feedback, safety, cost, and business outcome. [Agent evaluation](https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-intro) makes test cases repeatable so changes can be compared; evaluation cases should include expected evidence and unacceptable outcomes, not only preferred wording. **VERIFY CURRENT:** harness, scoring methods, automation, profile behavior, language/region support, and preview status.
 
 The current evaluation documentation applies to the **standard harness**, supports repeatable test sets and user profiles, and describes REST/flow automation. GCC has profile and similarity-method restrictions; Fabric data agents are currently excluded. Test chat and repeatable evaluations serve different purposes. Do not infer that an aggregate score proves correct authorization.
+
+**Identity check — VERIFY CURRENT:** [Evaluations run as the signed-in user](https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-intro). To test another user's access, sign in as that authorized test identity; changing a test profile is not proof of impersonation. Current supported agent authentication modes are No authentication and Authenticate with Microsoft; manual authentication is excluded. Response-safety evaluators cover several harmful-content categories, but their scores do not establish correct tool authorization or guarantee safety for every scenario. Keep access-denial tests alongside response-quality tests.
 
 Agent flows also belong to the standard harness. Their control path is rule-based, but an AI action or changing external service can still produce variable results. Converting a solution-aware Power Automate flow to an agent flow changes its billing to Copilot Studio and is currently one-way. Do not use conversion as a casual practice toggle.
 
@@ -517,13 +535,17 @@ These original questions follow the 37 objective bullets; they are not recalled 
 
 This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Pick the formats that fit you. Times are approximate consumption time at normal speed; labs, note-taking, review, and independent practice add time.
 
+### Focused reading and evidence route
+
+Use the [plans FAQ](https://learn.microsoft.com/en-us/power-apps/maker/common/faq-plan-designer) for a requirement-to-artifact worksheet: describe a small service-request process, its roles and permissions, data entities, app surface, automation and agent boundary. Allow about 45–60 minutes for reading and mapping three requirements to proposed components, then identify a missing authorization rule and one generated artifact that would need review. This is an editorial estimate based on the short FAQ and a written component map; no app generation is required. **VERIFY CURRENT:** generated code-app preview features, prerequisites and limits. The complete readable FAQ was inspected despite its generic authorization banner; it does not establish tenant entitlement or the quality of any generated solution. The Power Series directory was unavailable in this pass, so its earlier directory-only caveat remains.
+
 | Resource | Access | Estimated time | Best use and caveat |
 |---|---|---:|---|
 | [Microsoft Learn — PL-900 course](https://learn.microsoft.com/en-us/training/courses/pl-900t00) | Free self-study; instructor-led options vary | 1 day (official course) | Official foundation; the public overview still emphasizes apps, flows, and Power Pages, so use the July 2026 blueprint to check the agent/code/Plan-designer gaps |
 | [Microsoft — PL-900 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/power-platform-fundamentals/practice/assessment?assessment-type=practice&assessmentId=34&practice-assessment-type=certification) | Free Microsoft account | About 1–2 hours for an attempt and review | Repeatable official readiness check with rationales and learning links; start here before buying another assessment |
 | [Microsoft Partner Skilling Hub — LevelUp PL-900](https://www.skilling-hub.com/en-US/listing/o::levelup::2058317) | Partner login required | Current duration not verified | Public fetch returns a shell; confirm eligible-partner access and the current syllabus after sign-in |
 | [Microsoft Learn Power Platform Fundamentals](https://learn.microsoft.com/en-us/credentials/certifications/power-platform-fundamentals/) | Free | Self-paced; current total not published in the fetched overview | Use the credential page to find official preparation and practice; budget lab time separately |
-| [Pluralsight — Power Platform Fundamentals (PL-900) and practice exam](https://www.pluralsight.com/paths/microsoft-power-platform-fundamentals-pl-900) | Subscription; practice access depends on plan/library | 8 hours 56 minutes of listed instruction; budget practice separately | Eight listed courses, dated 2024–2025; practice entitlement must be checked; much of the instruction predates the July 2026 agent/code/Plan-designer changes, so use selectively |
+| [Pluralsight — Introduction to PL-900](https://www.pluralsight.com/courses/intro-microsoft-power-platform-fundamentals-900) | Subscription; public outline inspected only | Published: 24 minutes | Vlad Catrinescu; current landing page says updated October 13, 2026. Orientation and study planning, not a complete current blueprint course. Verify logistics against Microsoft; paid lessons and practice content not inspected |
 | [O'Reilly — Complete PL-900 Masterclass](https://www.oreilly.com/videos/the-complete-masterclass/9781805125044/) | Subscription | Previously listed 16 hours 40 minutes; current listing unverified | Direct access blocked in this review; retain only as an optional older companion, and verify the syllabus before purchase |
 | [Udemy — PL-900 Power Platform Fundamentals](https://www.udemy.com/course/pl-900-microsoft-power-platform-fundamentals-r/) | Purchase or subscription | 11 hours 1 minute (public search listing) | Phillip Burton; public listing shows September 2026, 25 sections/132 lectures. Direct fetch blocked; July-objective coverage was not verified inside the paid course |
 | [LinkedIn Learning — PL-900 Cert Prep by Microsoft Press](https://www.linkedin.com/learning/microsoft-power-platform-fundamentals-pl-900-cert-prep-by-microsoft-press) | Subscription | 6 hours | Craig Zacker course released March 2025; useful for core products but pre-dates the July 2026 agent/code/Plan-designer scope |

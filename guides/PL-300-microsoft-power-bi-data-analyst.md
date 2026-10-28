@@ -6,17 +6,17 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-27
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-27
+upcoming_change_checked: 2026-10-28
 ---
 
 # PL-300 Microsoft Power BI Data Analyst Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The whole guide and all 78 April 20, 2026 objectives were reviewed against current public sources on September 27, 2026. Four worked examples, ten labs and 44 answered checks support practice. No Power BI engine or tenant lab was executed. See the [deep-review report](../docs/research/2026-09-27-pl-300-deep-review.md). It may still contain errors or become outdated. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#pl-300-coverage-record). The [official PL-300 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300) is authoritative.
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-04.md#pl-300) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#pl-300-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300) is authoritative.
 
 **Current baseline:** Skills measured as of April 20, 2026<br>
-**Upcoming blueprint change:** None announced on the official study guide as of September 27, 2026. The fetched text reformats the audience profile and line wrapping; the objective content and weights are unchanged.<br>
+**Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
 **Official source:** [PL-300 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300)
 
 ## How to use this guide
@@ -73,6 +73,8 @@ The April 2026 blueprint explicitly adds Direct Lake to this decision. Do not re
 Data-source settings include location, authentication method, credentials, encryption, privacy levels, and sometimes gateway mapping. Privacy levels help prevent unintended combination across isolation boundaries; they are not a replacement for source authorization. Parameters make server/database/path/date/environment choices reusable. Do not put secrets in ordinary parameters.
 
 For connectors affected by the [ODBC-to-ADBC transition](https://learn.microsoft.com/en-us/power-query/transition-to-adbc), compare effective implementation, data types, credentials, row totals and timings in Desktop and the service. Cloud tenant/workspace settings do not establish the driver used by a gateway. October default enablement and later embedded ODBC removals are planned transitions with separate rechecks, not evidence that every connection has already changed.
+
+**VERIFY CURRENT — test the actual refresh path.** The [ADBC transition guide](https://learn.microsoft.com/en-us/power-query/transition-to-adbc) currently distinguishes cloud refresh from gateway-routed refresh, which retains the bundled ODBC path for these connectors. Tenant/workspace defaults do not rewrite M, and an explicit implementation takes precedence; Dataflows Gen1 needs per-query opt-in. Keep a copy of a critical item, compare row counts/types/timing through its real execution path, and treat the linked `pq-adbc-advisor` notebook as an optional starting diagnostic with coverage and telemetry caveats. No notebook or gateway was run in this review.
 
 > **Related item:** Query folding pushes supported Power Query steps to the source. A folded filter before a large import or DirectQuery operation can radically change performance; one non-folding step can move work to the mashup engine. Inspect the native query/folding indicator and source telemetry rather than assuming.
 
@@ -162,6 +164,20 @@ Visual calculations cannot use relationship-dependent functions such as `USERELA
 
 > **Related item:** A measure belongs to the reusable business semantic layer; a visual calculation belongs to one presentation. If another report, Excel, API, or Copilot consumer needs the same definition, prefer a governed measure.
 
+### Worked creation check: a column and a table
+
+For an Import-only synthetic `Sales` table containing Amount values 100 and 50, select that table and use [New column](https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-calculated-columns) to enter `AmountBand = IF(Sales[Amount] >= 100, "Large", "Small")`. Inspect both rows: the expected labels are Large and Small. Then use [New table](https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-calculated-tables) with `LargeSales = FILTER(Sales, Sales[Amount] >= 100)`. The expected new table contains one row with Amount 100. A column expression needs a scalar for each row; a table expression must return rows. Putting the table-valued `FILTER` expression into New column is the wrong artifact contract. These are original illustrative expressions, not engine-tested results.
+
+Both examples are model artifacts, distinct from a Power Query custom column and from a measure evaluated under a report filter. In this Import example a slicer does not recompute stored column/table rows; refresh after changing the underlying input. Avoid duplicating a large fact table merely for a report filter, and inspect relationships and refresh cost before retaining a derived table. **VERIFY CURRENT:** storage-mode and expression-context support; this worksheet makes no claim about DirectQuery or preview user-context columns.
+
+### Worked calculation build: explicit measure, quick measure and group
+
+For a tiny Import fact table, create explicit `[Sales] = SUM(Sales[Amount])` and `[Average Sale] = AVERAGE(Sales[Amount])` measures. With amounts 100 and 50, the expected values are 150 and 75; distinguish the average transaction from a weighted business rate. Add a contiguous Date table and the correct active relationship before introducing a calendar year-to-date calculation. Check one day, a missing-sales day and a year boundary; a date column with gaps is a different contract from an incomplete fact table.
+
+Use [New quick measure](https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-quick-measures), select a calculation such as running total, supply its base measure and date field, then inspect the generated DAX. Change the visual's date filter and compare the result with a hand calculation. The dialog produces a model measure; it is not evidence that the selected business definition is right.
+
+In Model view, create a [calculation group](https://learn.microsoft.com/en-us/power-bi/transform-model/calculation-groups), enable Discourage implicit measures when prompted, and add a Current item using `SELECTEDMEASURE()`. Add a YTD item that applies the intended date calculation to that selected measure, then put the group's column on a slicer. Compare Sales and Average Sale under each item; decide which measures should be excluded and how format strings/precedence should behave. Calculation items apply to explicit measures, not implicit visual aggregations. **Answer check:** a group apparently doing nothing to a dragged numeric column may be an implicit-measure issue, not a broken relationship. These formulas are illustrative and were not executed in a Power BI engine. **VERIFY CURRENT:** authoring surface and storage-mode limitations.
+
 ### Optimize from evidence
 
 Remove unnecessary rows/columns before loading, use efficient data types, reduce high-cardinality columns and grain when business requirements allow, preserve star-schema filter paths, and avoid broad bidirectional relationships. Do not remove needed detail or preaggregate away valid questions merely to shrink a model.
@@ -190,6 +206,10 @@ Use consistent themes, formats, titles, units, sort order, colors, and whitespac
 
 Copilot can create narrative visuals, suggest or create report-page content, and summarize a semantic model/report. Its quality depends on clear model names/descriptions, curated measures, relationships, data quality, and verified business definitions. Treat generated DAX, visuals, and prose as drafts; validate totals, filters, claims, and sensitive-data exposure. The [current requirements](https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-introduction) include supported paid Fabric F2+ or Power BI Premium P1+ capacity, region and admin settings; a Pro/PPU license alone and trial capacity are insufficient. The report pane is GA, while standalone and app agents remain preview. Verify the selected surface's permissions and capacity route.
 
+**Worked Copilot creation worksheet:** in an eligible workspace with a report over reviewed Sales, Date and Product fields, enter Edit view and open the report [Copilot pane](https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-create-reports). First select Suggest content for this report and compare the suggested topics with the business question. Then request “Create a page showing monthly Sales by Product category, with a Sales total.” Inspect the generated page's fields, aggregation, date grain and filter context against the governed Sales measure; reject an attractive chart that sums a rate or uses the wrong date. Suggestions, generated page and verified business result are distinct artifacts. Save only after checking them. A missing Copilot entry requires checking model selection, tenant settings and supported capacity; it is not resolved merely by buying Pro. Current report-creation restrictions include streaming/live Analysis Services models and models with implicit measures disabled. Recheck the specific current restrictions before practice. Use a separate compatible training model if the preceding calculation-group exercise enabled Discourage implicit measures.
+
+For a [narrative visual](https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-create-narrative), first create the visuals it should summarize. Select Narrative in Visualizations, choose Copilot mode where available, select the intended page/visuals in the narrative dialog and create it. Ask for a concise monthly-sales summary, follow its footnotes to the source visuals and reconcile every numeric claim. After changing a slicer, explicitly refresh the narrative: its prose does not automatically follow the new filter. A summary can only use supported selected visual content; it is not an unrestricted analysis of the model. **VERIFY CURRENT:** capacity, region, supported visuals and UI labels. This is a prompt-and-result review exercise; no Copilot request, report creation or paid capacity use was performed here.
+
 In [Copilot report summaries](https://learn.microsoft.com/en-us/power-bi/explore-reports/copilot-pane-summarize-content), eligible display-only bookmarks can expose hidden visuals to summarization while RLS/OLS remains enforced. The bookmark must have Data cleared and be reachable by a report button or navigator; personal bookmarks are excluded. Hiding a visual is not access control. Follow citations and verify filter scope instead of assuming that a summary uses only the visible canvas.
 
 ### Usability, storytelling, and accessibility
@@ -199,6 +219,12 @@ Bookmarks capture a configured report state and can power navigation/story views
 Sync slicers only where a shared selection improves comprehension; hidden synced slicers can confuse users. Use the Selection pane to name, group, show/hide, and layer objects. Configure exports from the organization's data-loss requirements, not user convenience alone. Personalize visuals allows consumers to change supported fields/visuals within their permissions. Hiding a field or visual is a presentation choice, not a security boundary; enforce sensitive columns/rows through the model and source controls.
 
 Design mobile layouts instead of assuming desktop shrinking. For accessibility, provide logical tab order, descriptive titles/alt text, sufficient contrast, keyboard operation, meaningful labels, and alternatives to color-only meaning; test with a screen reader and keyboard. Accessibility is part of correctness because an insight unavailable to its audience is not effectively delivered.
+
+### Worked navigation: product details and tooltip context
+
+Create a Product Details page and put the product key/name field in its [drillthrough filter well](https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-drillthrough). Add a product label, transaction table and Back button. On a source visual containing that same field, select one product and drill through; verify both the selected identity and totals. For a dedicated navigation button, set its action to Drillthrough and choose the target page, then test its unavailable-selection state. Drillthrough opens a filtered page; drill-down changes hierarchy level inside a visual. If the destination is absent, inspect the source field and target filter before adding another button.
+
+For a [report tooltip](https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-tooltips), create a small page, enable Tooltip in page information, add the relevant tooltip field and a compact measure visual, then associate it with the source visual automatically by field or explicitly in its Tooltip setting. Hover two products and reconcile each result. Tooltips are not interactive, and screen readers cannot read the displayed tooltip content; put essential details on the accessible report or drillthrough page. A visually attractive tooltip is insufficient if users cannot reach required information. **VERIFY CURRENT:** pane locations and mobile support. These are proposed local report exercises, not observed execution.
 
 ### Analyze patterns without overclaiming
 
@@ -364,9 +390,24 @@ Use an appropriate test workspace to compare a visual, export, dashboard alert a
 
 ---
 
+## Final readiness checklist
+
+- I can select and configure a source, credential/privacy boundary, parameter, gateway, and Import/DirectQuery/Direct Lake mode from requirements.
+- I can profile all relevant data, repair types/errors/nulls deliberately, preserve grain, reconcile merges, and configure staging/load behavior.
+- I can build a star schema with correct keys, date roles, cardinality, filter direction, and an auditable bridge where necessary.
+- I can predict DAX context and choose among Power Query, calculated columns/tables, measures, calculation groups, and visual calculations.
+- I can diagnose model/measure/relationship/visual/source performance with measured evidence.
+- I can design a meaningful, interactive, mobile-ready, accessible report and explain the limits of its analysis or AI-generated content.
+- I can publish and distribute through workspaces/apps/items with correct gateway, refresh, endorsement, permissions, labels, and RLS.
+- I can prove source reconciliation, totals, refresh, performance, and allowed/denied user behavior before release.
+
 ## Places to learn
 
 This is a curated starting point, **not a complete list**, and it is not meant to be consumed in full. Choose one primary course or path, build an end-to-end report, and add only resources that close measured gaps. Reconcile every resource with the April 20, 2026 blueprint, especially Direct Lake, calculation groups, DAX query view, Copilot, visual calculations, current usability controls, and workspace/asset changes.
+
+### Focused reading and evidence route
+
+Choose MicrosoftLearning’s [visual-calculations lab](https://microsoftlearning.github.io/PL-300-Microsoft-Power-BI-Data-Analyst/Instructions/Labs/07-create-visual-calculations.html) when Axis, Reset or totals are a measured gap. The publisher estimates 30 minutes. Add about 30–45 minutes for an original evidence sheet that predicts a result before switching rows/columns, changes the hierarchy level, compares a running sum with and without reset, and explains the grand-total result. That added range covers four comparisons and written reasoning, not a promised runtime. Preserve the report and capture the visual grain, sort/filter state and result so another learner can explain it. **VERIFY CURRENT:** Desktop UI and feature availability. The textual lab was read; its PBIX download, visuals and calculations were not executed.
 
 The five official paths retain their **September 1 duration estimates**; September 27 module listings did not independently reverify the total. They are [data-analytics foundations](https://learn.microsoft.com/en-us/training/paths/data-analytics-microsoft/) (1h28), [prepare data](https://learn.microsoft.com/en-us/training/paths/prepare-data-power-bi/) (4h33), [model data](https://learn.microsoft.com/en-us/training/paths/model-power-bi/) (5h50), [effective reports](https://learn.microsoft.com/en-us/training/paths/power-bi-effective/) (5h07), and [manage and secure](https://learn.microsoft.com/en-us/training/paths/manage-secure-power-bi/) (2h54), totaling **19 hours 52 minutes**.
 
@@ -395,14 +436,3 @@ Use practice assessments to locate weak objectives, then return to documentation
 [Marco Russo and Alberto Ferrari — Analyzing the performance impact of visual calculations](https://www.sqlbi.com/articles/analyzing-the-performance-impact-of-visual-calculations/), SQLBI, July 27, 2026. Allow 20–30 minutes plus Lab 10. The authors show why smaller visual result sets can benefit while large combinations of categories can create expensive intermediate rows. Compare equivalent measures and visual calculations at two visual grains, retaining filters, totals and traces. Their timings are experiments on their models, not promised gains for yours. The public article was reviewed; its downloads, paid material, screenshots and benchmarks were not independently executed.
 
 The attributed Microsoft Q&A timeline update above is operational reading for migration planning. Both readings supplement the blueprint; neither is an exam question source.
-
-## Final readiness checklist
-
-- I can select and configure a source, credential/privacy boundary, parameter, gateway, and Import/DirectQuery/Direct Lake mode from requirements.
-- I can profile all relevant data, repair types/errors/nulls deliberately, preserve grain, reconcile merges, and configure staging/load behavior.
-- I can build a star schema with correct keys, date roles, cardinality, filter direction, and an auditable bridge where necessary.
-- I can predict DAX context and choose among Power Query, calculated columns/tables, measures, calculation groups, and visual calculations.
-- I can diagnose model/measure/relationship/visual/source performance with measured evidence.
-- I can design a meaningful, interactive, mobile-ready, accessible report and explain the limits of its analysis or AI-generated content.
-- I can publish and distribute through workspaces/apps/items with correct gateway, refresh, endorsement, permissions, labels, and RLS.
-- I can prove source reconciliation, totals, refresh, performance, and allowed/denied user behavior before release.

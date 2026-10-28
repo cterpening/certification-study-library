@@ -221,6 +221,10 @@ Resource details from the [DP-900 guide](../guides/DP-900-microsoft-azure-data-f
 
 This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Pick the formats that fit you. Times are approximate consumption time at normal speed; labs, note-taking, review, and independent practice add time.
 
+#### Focused reading and evidence route
+
+Read the [warehouse architecture](https://learn.microsoft.com/en-us/training/modules/examine-components-of-modern-data-warehouse/2-describe-warehousing), [ingestion](https://learn.microsoft.com/en-us/training/modules/examine-components-of-modern-data-warehouse/3-data-ingestion-pipelines) and [analytical-store](https://learn.microsoft.com/en-us/training/modules/examine-components-of-modern-data-warehouse/4-analytical-data-stores) units: their published estimates total 16 minutes. Then allow about 30–45 minutes for an original worksheet comparing a daily sales file, a replicated operational database and a live event stream. For each, draw source → ingestion/reference → store → semantic model → report, explain ETL versus ELT and identify freshness, identity and reconciliation checks. This worksheet estimate covers three scenarios and written justification, not deployment. The [Fabric exercise introduction](https://learn.microsoft.com/en-us/training/modules/examine-components-of-modern-data-warehouse/5-exercise-data-analytics-fabric) publishes another 30 minutes and requires a Fabric account/trial; its launched instructions were unavailable in this review. Text units were read; videos and the cloud exercise were not run. **VERIFY CURRENT:** confirm service limits and avoid treating a shortcut as an unconditional no-copy/no-cache guarantee.
+
 | Resource | Access | Estimated time | Best use and caveat |
 |---|---|---:|---|
 | [Microsoft Learn — DP-900 course](https://learn.microsoft.com/en-us/training/courses/dp-900t00) | Free self-study; instructor-led options vary | 1 instructor day; 13 languages | Course now named Introduction to Microsoft Azure Data; use the current study guide for the objective baseline |
@@ -248,13 +252,17 @@ Resource details from the [PL-900 guide](../guides/PL-900-microsoft-power-platfo
 
 This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Pick the formats that fit you. Times are approximate consumption time at normal speed; labs, note-taking, review, and independent practice add time.
 
+#### Focused reading and evidence route
+
+Use the [plans FAQ](https://learn.microsoft.com/en-us/power-apps/maker/common/faq-plan-designer) for a requirement-to-artifact worksheet: describe a small service-request process, its roles and permissions, data entities, app surface, automation and agent boundary. Allow about 45–60 minutes for reading and mapping three requirements to proposed components, then identify a missing authorization rule and one generated artifact that would need review. This is an editorial estimate based on the short FAQ and a written component map; no app generation is required. **VERIFY CURRENT:** generated code-app preview features, prerequisites and limits. The complete readable FAQ was inspected despite its generic authorization banner; it does not establish tenant entitlement or the quality of any generated solution. The Power Series directory was unavailable in this pass, so its earlier directory-only caveat remains.
+
 | Resource | Access | Estimated time | Best use and caveat |
 |---|---|---:|---|
 | [Microsoft Learn — PL-900 course](https://learn.microsoft.com/en-us/training/courses/pl-900t00) | Free self-study; instructor-led options vary | 1 day (official course) | Official foundation; the public overview still emphasizes apps, flows, and Power Pages, so use the July 2026 blueprint to check the agent/code/Plan-designer gaps |
 | [Microsoft — PL-900 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/power-platform-fundamentals/practice/assessment?assessment-type=practice&assessmentId=34&practice-assessment-type=certification) | Free Microsoft account | About 1–2 hours for an attempt and review | Repeatable official readiness check with rationales and learning links; start here before buying another assessment |
 | [Microsoft Partner Skilling Hub — LevelUp PL-900](https://www.skilling-hub.com/en-US/listing/o::levelup::2058317) | Partner login required | Current duration not verified | Public fetch returns a shell; confirm eligible-partner access and the current syllabus after sign-in |
 | [Microsoft Learn Power Platform Fundamentals](https://learn.microsoft.com/en-us/credentials/certifications/power-platform-fundamentals/) | Free | Self-paced; current total not published in the fetched overview | Use the credential page to find official preparation and practice; budget lab time separately |
-| [Pluralsight — Power Platform Fundamentals (PL-900) and practice exam](https://www.pluralsight.com/paths/microsoft-power-platform-fundamentals-pl-900) | Subscription; practice access depends on plan/library | 8 hours 56 minutes of listed instruction; budget practice separately | Eight listed courses, dated 2024–2025; practice entitlement must be checked; much of the instruction predates the July 2026 agent/code/Plan-designer changes, so use selectively |
+| [Pluralsight — Introduction to PL-900](https://www.pluralsight.com/courses/intro-microsoft-power-platform-fundamentals-900) | Subscription; public outline inspected only | Published: 24 minutes | Vlad Catrinescu; current landing page says updated October 13, 2026. Orientation and study planning, not a complete current blueprint course. Verify logistics against Microsoft; paid lessons and practice content not inspected |
 | [O'Reilly — Complete PL-900 Masterclass](https://www.oreilly.com/videos/the-complete-masterclass/9781805125044/) | Subscription | Previously listed 16 hours 40 minutes; current listing unverified | Direct access blocked in this review; retain only as an optional older companion, and verify the syllabus before purchase |
 | [Udemy — PL-900 Power Platform Fundamentals](https://www.udemy.com/course/pl-900-microsoft-power-platform-fundamentals-r/) | Purchase or subscription | 11 hours 1 minute (public search listing) | Phillip Burton; public listing shows September 2026, 25 sections/132 lectures. Direct fetch blocked; July-objective coverage was not verified inside the paid course |
 | [LinkedIn Learning — PL-900 Cert Prep by Microsoft Press](https://www.linkedin.com/learning/microsoft-power-platform-fundamentals-pl-900-cert-prep-by-microsoft-press) | Subscription | 6 hours | Craig Zacker course released March 2025; useful for core products but pre-dates the July 2026 agent/code/Plan-designer scope |
@@ -824,6 +832,10 @@ Resource details from the [SC-500 guide](../guides/SC-500-microsoft-cloud-ai-sec
 
 This is a curated starting point, **not a complete list**. Do not try to consume every item. Pick the format and depth that work for you, use the official blueprint as the coverage checklist, and spend at least as much effort on implementation and negative testing as on passive watching. Provider runtimes and catalogs change; estimates below use public listings checked September 28, 2026 and include notes where exact current duration was unavailable.
 
+#### Focused reading and evidence route
+
+Read [enable protection](https://learn.microsoft.com/en-us/training/modules/enable-protection-copilot-studio-agents/3-enable-protection-microsoft-defender) and [review protection outputs](https://learn.microsoft.com/en-us/training/modules/enable-protection-copilot-studio-agents/4-review-ai-agent-protection-outputs): published estimates total 12 minutes. Then allow about 45–60 minutes for a handoff/evidence worksheet assigning the Defender URL, Power Platform configuration and matching App ID to their owners. Distinguish the proxy app from an agent’s own identity, and predict evidence for a mismatched ID, missing connector, no suspicious activity and a fresh session. Keep inventory, alert flow and hunting results as separate checks; a connected indicator or logged event alone is insufficient proof of prevention. The added range covers four failure cases, not tenant setup. **VERIFY CURRENT:** product prerequisites, UI, query schema and detection behavior; training examples are not guaranteed thresholds. Both unit texts were read; no tenant change or query ran.
+
 The twelve current official paths are [secure Entra access](https://learn.microsoft.com/en-us/training/paths/secure-access-resources-entra/), [Key Vault security](https://learn.microsoft.com/en-us/training/paths/configure-key-vault-security/), [security governance and compliance](https://learn.microsoft.com/en-us/training/paths/security-governance-compliance/), [Storage security](https://learn.microsoft.com/en-us/training/paths/implement-azure-storage-security/), [Azure SQL security](https://learn.microsoft.com/en-us/training/paths/implement-azure-sql-database-security/), [network security controls](https://learn.microsoft.com/en-us/training/paths/implement-network-security-controls-azure/), [AI security](https://learn.microsoft.com/en-us/training/paths/implement-ai-security/), [server and VM security](https://learn.microsoft.com/en-us/training/paths/server-vm-security/), [application-platform security](https://learn.microsoft.com/en-us/training/paths/secure-application-platform-services/), [Defender for Cloud posture](https://learn.microsoft.com/en-us/training/paths/manage-security-posture-defender-cloud/), [Sentinel activity and event collection](https://learn.microsoft.com/en-us/training/paths/implement-activity-event-collection-sentinel/), and [Security Copilot deployment and operation](https://learn.microsoft.com/en-us/training/paths/deploy-operate-security-copilot/). The fetched overviews expose **63 module placements** (3/4/6/4/3/4/9/7/6/6/8/3). Module titles/descriptions were reviewed, not every linked unit. Current runtimes are absent, so the earlier 30h08 sum is withdrawn.
 
 | Resource | Access | Estimated time |
@@ -1169,6 +1181,10 @@ Resource details from the [PL-300 guide](../guides/PL-300-microsoft-power-bi-dat
 
 This is a curated starting point, **not a complete list**, and it is not meant to be consumed in full. Choose one primary course or path, build an end-to-end report, and add only resources that close measured gaps. Reconcile every resource with the April 20, 2026 blueprint, especially Direct Lake, calculation groups, DAX query view, Copilot, visual calculations, current usability controls, and workspace/asset changes.
 
+#### Focused reading and evidence route
+
+Choose MicrosoftLearning’s [visual-calculations lab](https://microsoftlearning.github.io/PL-300-Microsoft-Power-BI-Data-Analyst/Instructions/Labs/07-create-visual-calculations.html) when Axis, Reset or totals are a measured gap. The publisher estimates 30 minutes. Add about 30–45 minutes for an original evidence sheet that predicts a result before switching rows/columns, changes the hierarchy level, compares a running sum with and without reset, and explains the grand-total result. That added range covers four comparisons and written reasoning, not a promised runtime. Preserve the report and capture the visual grain, sort/filter state and result so another learner can explain it. **VERIFY CURRENT:** Desktop UI and feature availability. The textual lab was read; its PBIX download, visuals and calculations were not executed.
+
 The five official paths retain their **September 1 duration estimates**; September 27 module listings did not independently reverify the total. They are [data-analytics foundations](https://learn.microsoft.com/en-us/training/paths/data-analytics-microsoft/) (1h28), [prepare data](https://learn.microsoft.com/en-us/training/paths/prepare-data-power-bi/) (4h33), [model data](https://learn.microsoft.com/en-us/training/paths/model-power-bi/) (5h50), [effective reports](https://learn.microsoft.com/en-us/training/paths/power-bi-effective/) (5h07), and [manage and secure](https://learn.microsoft.com/en-us/training/paths/manage-secure-power-bi/) (2h54), totaling **19 hours 52 minutes**.
 
 | Resource | Access | Estimated time |
@@ -1377,6 +1393,10 @@ Resource details from the [AB-250 guide](../guides/AB-250-transforming-contact-c
 
 This is not a complete list and is not meant to be consumed in full. Choose one primary route, build representative end-to-end journeys, and add another resource only for a measured gap.
 
+#### Focused reading and evidence route
+
+Start the monitor/optimize path with [Enable supervisor controls for live conversations](https://learn.microsoft.com/en-us/training/modules/configure-supervisor-experience-contact-center/2-enable-supervisor-controls), a published five-minute unit. Allow about 45–60 more minutes for a persona/action matrix covering monitor, assign, transfer and force close. For each action, record the needed control, expected visibility and allowed/denied evidence; add a supervisor who can view dashboards but lacks intervention access and an assignment-role conflict. This editorial estimate covers reading and a four-action worksheet, not tenant configuration. Use synthetic conversation descriptions and current product guidance before testing any control. **VERIFY CURRENT:** supported channel/action combinations and role behavior. The complete textual unit was read; no live conversation was monitored, reassigned or closed.
+
 | Resource | Access | Estimated time |
 |---|---|---:|
 | [Official AB-250 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-250) | Free | 1–2 hours to map objectives |
@@ -1389,7 +1409,7 @@ This is not a complete list and is not meant to be consumed in full. Choose one 
 | [LinkedIn Learning AB-250 Cert Prep](https://www.linkedin.com/learning/microsoft-dynamics-365-contact-center-ai-engineer-associate-ab-250-cert-prep/) | Subscription/trial | 4h 38m public runtime, July 27, 2026; Tutorials Dojo; paid lessons not viewed |
 | [Partner Skilling Hub](https://www.skilling-hub.com/en-US) | Partner login required | Verify current session start/end time after sign-in |
 
-The four official paths expose **16 modules (4 + 4 + 5 + 3)**. Their old **11h 40m** duration total is historical; the fetched current outlines do not expose those totals. Allow roughly **40–70 hours** with journey design and ten labs as an editorial planning estimate. The three-day course remains listed; a partner schedule requires sign-in and was not verified. The official credential page does not offer a Practice Assessment. No exact current AB-250 product from Pluralsight, O'Reilly, MeasureUp or Whizlabs was independently verified on September 28, 2026. These bounded catalog searches do not establish market-wide absence. The LinkedIn outline includes broad Azure/AI material, so map lessons to the actual objectives instead of treating the full runtime as exam-specific coverage. Reject recalled live content, “valid questions” and pass guarantees.
+The four official paths expose **16 modules (4 + 4 + 5 + 3)**. Their old **11h 40m** duration total is historical; the fetched current outlines do not expose those totals. Allow roughly **40–70 hours** with journey design and ten labs as an editorial planning estimate. The three-day course remains listed; a partner schedule requires sign-in and was not verified. The official [credential page](https://learn.microsoft.com/en-us/credentials/certifications/d365-contact-center-ai-engineer-associate/) now directs learners to a sign-in-required Practice Assessment on AI Skills Navigator. Allow about 1–2 hours for an initial attempt and explanation review as an editorial estimate; assessment content was not opened. No exact current AB-250 product from Pluralsight, O'Reilly, MeasureUp or Whizlabs was independently verified on September 28, 2026. These bounded catalog searches do not establish market-wide absence. The LinkedIn outline includes broad Azure/AI material, so map lessons to the actual objectives instead of treating the full runtime as exam-specific coverage. Reject recalled live content, “valid questions” and pass guarantees.
 
 #### Useful blogs and focused exercises
 
@@ -1403,6 +1423,10 @@ Both main articles were read; linked videos, integrations, tenant behavior and p
 Resource details from the [MB-230 guide](../guides/MB-230-microsoft-dynamics-365-customer-service-functional-consultant.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
 This is not a complete list and is not meant to be consumed in full. Choose one primary route, build complete case/SLA/routing/workspace journeys, and add another resource only for a measured gap.
+
+#### Focused reading and evidence route
+
+Use [Define SLA items](https://learn.microsoft.com/en-us/training/modules/service-level-agreements/define-service-level-agreement) as a small step beyond the two-module SLA/entitlements path. The unit publishes nine minutes; allow about 45–60 more minutes to design two support tiers with response and resolution KPIs. Record applicability, calendar, pause, success, warning/failure and expected KPI-instance state, then add an overlapping item and a changed applicability field as negative cases. Explain which protected action-flow branch receives your notification rather than editing the predefined branch structure. The added time is an editorial estimate for a four-item matrix and two failure traces. This is a paper design route; tenant execution needs Customer Service access and current product documentation. The complete unit was read, without assessment questions or tenant testing.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
@@ -1430,6 +1454,10 @@ Current catalog inspection covers public path/course metadata and selected outli
 Resource details from the [MB-310 guide](../guides/MB-310-microsoft-dynamics-365-finance-functional-consultant.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
 This is not a complete list and is not meant to be consumed in full. Choose one primary route, build several source-document-to-ledger journeys, and add another resource only for a measured gap.
+
+#### Focused reading and evidence route
+
+Select MicrosoftLearning’s [voucher breakdown lab](https://microsoftlearning.github.io/MB-310-Microsoft-Dynamics-365-Finance/Instructions/Labs/LP3%20Lab%20-%20Breakdown%20of%20voucher.html) for payables-to-ledger reasoning. Allow about 60–90 minutes for reading and an original worksheet that predicts taxable bases, tax by line, offset accounts, balanced totals and the evidence needed before and after posting; this editorial range includes one deliberately wrong tax-group mapping and its correction. The February 10, 2026 change record is visible, but the walkthrough assumes USMF demo records and older dates. Reconcile those prerequisites with your sandbox and current Finance documentation. Exclude its expired-certificate bypass workaround. The public textual procedure was read, not executed; screenshots, journal postings and tax compliance outcomes were not independently verified.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
@@ -1497,6 +1525,10 @@ Resource details from the [MB-500 guide](../guides/MB-500-microsoft-dynamics-365
 
 This is not a complete list and is not meant to be consumed in full. Choose one primary route, build and deploy a secure extension end to end, and add another resource only for a measured gap.
 
+#### Focused reading and evidence route
+
+Read MicrosoftLearning’s [Trace Parser lab](https://microsoftlearning.github.io/MB-500-Microsoft-Dynamics-365-Finance-and-Operations-Apps-Developer/Instructions/Labs/Lab%20-%201%20-%20Work%20with%20trace%20and%20import%20it%20to%20Trace%20Parser.html) to connect a slow business action to call-tree, X++ and SQL evidence. Allow about 60–90 minutes for a capture-plan worksheet: business action, user/session, start/stop boundaries, expensive call versus inclusive duration, candidate query and a repeatable before/after comparison. That editorial estimate covers reading, one diagnostic hypothesis and its falsification; VM/tool setup and execution add time. The February 9, 2026 change record still references a development VM and earlier platform setup. **VERIFY CURRENT:** validate your development topology and tracing prerequisites; exclude certificate bypass and do not apply local manifest edits as generic UDE steps. Use synthetic data if capturing SQL parameters. The complete textual lab was read, with no trace collection or performance claim.
+
 | Resource | Access | Estimated time |
 |---|---|---:|
 | [Official MB-500 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-500) | Free | 1–2 hours to map seven domains/change log |
@@ -1523,6 +1555,10 @@ Resource details from the [MB-800 guide](../guides/MB-800-microsoft-dynamics-365
 
 This is not a complete list and is not meant to be consumed in full. Choose one primary route, build one company from setup through close, and add a second resource only for a measured gap.
 
+#### Focused reading and evidence route
+
+Turn MicrosoftLearning’s [purchase approval workflow lab](https://microsoftlearning.github.io/MB-800-Business-Central-Functional-Consultant/Instructions/Labs/Lab05_Set_up_and_use_a_purchase_approval_workflow.html) into an approval-chain worksheet. Allow about 60–90 minutes to map requester, approver, limit, substitute, event, condition, response, notification and final document state, then predict approve, reject, above-limit and absent-approver outcomes. The range is an editorial estimate for reading and four test traces; tenant configuration takes additional time. **Source discrepancy:** its setup says to leave Approver ID blank, but its check asks each user to have an approver. Resolve the intended chain using current Business Central documentation and your configuration; the sample is not a universal default. The full textual exercise was read; no approval, notification or purchase document was created.
+
 | Resource | Access | Estimated time |
 |---|---|---:|
 | [Official MB-800 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-800) | Free | 1–2 hours to map four domains and June change log |
@@ -1548,6 +1584,10 @@ Resource details from the [MB-820 guide](../guides/MB-820-microsoft-dynamics-365
 
 This is not a complete list and is not meant to be consumed in full. Choose one primary route, build and upgrade one secure extension end to end, and add another resource only for a measured gap.
 
+#### Focused reading and evidence route
+
+Use MicrosoftLearning’s [installation/upgrade lab](https://microsoftlearning.github.io/MB-820-Business-Central-Developer-Certification/Instructions/Labs/LAB_02_Implement_installation_and_upgrade_code_extension.html) as a code-review exercise alongside [Upgrading Extensions](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-upgrading-extensions). **Source defect observed October 28, 2026:** the shown upgrade code declares `UpdateSalespeople()` twice and includes a same-name call; its final expected precondition error refers to a trigger absent from the displayed code. Do not treat the snippet as a validated solution. Allow about 60–90 minutes for an independent design separating tag check, transformation and tag recording, with expected old/new data, fresh-install/new-company behavior and retry evidence. This editorial estimate covers reading and design; compiler and sandbox tests add time. Both texts were inspected within the recorded scope; no AL compilation or upgrade was performed.
+
 | Resource | Access | Estimated time |
 |---|---|---:|
 | [Official MB-820 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-820) | Free | 1–2 hours to map six domains and freshness gaps |
@@ -1560,7 +1600,7 @@ This is not a complete list and is not meant to be consumed in full. Choose one 
 | [Tailor roles and design the UI](https://learn.microsoft.com/en-us/training/paths/tailor-roles-design-ui/) | Free | 5 modules; runtime not shown; 8–15 hours with onboarding/accessibility |
 | [Essential development standards](https://learn.microsoft.com/en-us/training/paths/essential-development-standards/) | Free | 4 modules; runtime not shown; 10–20 hours implementing standard patterns |
 | [MB-820T00-A: Develop solutions with Dynamics 365 Business Central](https://learn.microsoft.com/en-us/training/courses/mb-820t00) | Paid/provider-dependent | 5 days; English |
-| [MicrosoftLearning MB-820 labs](https://github.com/MicrosoftLearning/MB-820-Business-Central-Developer-Certification) | Free; MIT | 12–25 hours; repository title/README retain sample-course artifacts, so use hosted lab index and verify current instructions |
+| [MicrosoftLearning MB-820 labs](https://github.com/MicrosoftLearning/MB-820-Business-Central-Developer-Certification) | Free; MIT | 12–25 hours editorial estimate for selected work; Lab 02 has a defective displayed upgrade sample (see focused route); review and rewrite before execution |
 | [Free MB-820 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-developer-associate/practice/assessment?assessment-type=practice&assessmentId=66154329&practice-assessment-type=certification) | Free | 45–90 minutes plus remediation |
 | [AL developer documentation](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/) | Free | 25–60 hours selected current reference/troubleshooting |
 | [O’Reilly: MB-820 Certification Companion](https://www.oreilly.com/library/view/dynamics-365-business/9798868809262/) | Subscription/trial | 317-page Apress book by Dr. Gomathi S, November 2024; 3h48 platform reading estimate; gap-check current runtime |

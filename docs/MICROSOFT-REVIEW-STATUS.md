@@ -4,34 +4,30 @@ As of 2026-10-28; program started 2026-09-27.
 
 Recorded deep reviews in this program, separate from historical source validation, live labs and automated monitoring.
 
-55 guides; 31 have review work or unresolved blockers; 18 are eligible for review now.
+55 guides; 24 have review work or unresolved blockers; 8 are eligible for review now.
 
-Next batch: DP-900, MB-230, MB-310, MB-500, MB-800, MB-820, PL-300, PL-900, SC-500, AB-250.
+Next batch: AB-410, AZ-120, AZ-802, MO-110, MO-111, MO-210, MO-211, MO-310.
 
 A reviewed guide can still have unexecuted labs. Blockers stay visible. Recently reviewed guides wait for a later dated event or the review interval; changed guide text returns immediately. Events dated on or before the latest review remain visible in the work packet but do not repeatedly schedule that same review. Set a later review date for an unresolved event that needs another check.
 
 | Exam | Deep-review state | Reviewed | Next eligible review | Lab execution |
 |---|---|---|---|---|
 | [MS-102](../guides/MS-102-microsoft-365-administrator.md) | reviewed-with-blockers | 2026-10-28 | 2026-11-01 | not-executed |
-| [DP-900](../guides/DP-900-microsoft-azure-data-fundamentals.md) | review-due | 2026-09-28 | 2026-10-28 | offline-only |
-| [MB-230](../guides/MB-230-microsoft-dynamics-365-customer-service-functional-consultant.md) | review-due | 2026-09-28 | 2026-10-28 | offline-only |
-| [MB-310](../guides/MB-310-microsoft-dynamics-365-finance-functional-consultant.md) | review-due | 2026-09-28 | 2026-10-28 | offline-only |
-| [MB-500](../guides/MB-500-microsoft-dynamics-365-finance-operations-apps-developer.md) | review-due | 2026-09-28 | 2026-10-28 | offline-only |
-| [MB-800](../guides/MB-800-microsoft-dynamics-365-business-central-functional-consultant.md) | review-due | 2026-09-28 | 2026-10-28 | offline-only |
-| [MB-820](../guides/MB-820-microsoft-dynamics-365-business-central-developer.md) | review-due | 2026-09-28 | 2026-10-28 | offline-only |
-| [PL-300](../guides/PL-300-microsoft-power-bi-data-analyst.md) | review-due | 2026-09-27 | 2026-10-28 | offline-only |
-| [PL-900](../guides/PL-900-microsoft-power-platform-fundamentals.md) | review-due | 2026-09-28 | 2026-10-28 | offline-only |
-| [SC-500](../guides/SC-500-microsoft-cloud-ai-security-engineer.md) | review-due | 2026-09-28 | 2026-10-28 | offline-only |
-| [AB-250](../guides/AB-250-transforming-contact-center-experiences-ai-dynamics-365.md) | reviewed-with-blockers | 2026-09-28 | 2026-10-28 | offline-only |
 | [AB-410](../guides/AB-410-building-intelligent-applications.md) | reviewed-with-blockers | 2026-09-28 | 2026-10-28 | offline-only |
 | [AZ-120](../guides/AZ-120-planning-administering-azure-sap-workloads.md) | reviewed-with-blockers | 2026-09-28 | 2026-10-28 | offline-only |
 | [AZ-802](../guides/AZ-802-administering-windows-server.md) | reviewed-with-blockers | 2026-09-27 | 2026-10-28 | offline-only |
+| [AB-250](../guides/AB-250-transforming-contact-center-experiences-ai-dynamics-365.md) | reviewed-with-blockers | 2026-10-28 | 2026-10-30 | not-executed |
 | [AB-730](../guides/AB-730-ai-business-professional.md) | reviewed-with-blockers | 2026-10-28 | 2026-11-01 | not-executed |
 | [MD-102](../guides/MD-102-managing-securing-microsoft-365-endpoints-intune.md) | reviewed-with-blockers | 2026-10-28 | 2026-11-01 | not-executed |
 | [AB-100](../guides/AB-100-agentic-ai-business-solutions-architect.md) | reviewed-with-blockers | 2026-10-28 | 2026-11-16 | not-executed |
 | [MS-721](../guides/MS-721-collaboration-communications-systems-engineer.md) | reviewed | 2026-10-28 | 2026-10-29 | not-executed |
 | [DP-750](../guides/DP-750-implementing-data-engineering-solutions-using-azure-databricks.md) | reviewed | 2026-10-28 | 2026-11-01 | not-executed |
+| [MB-310](../guides/MB-310-microsoft-dynamics-365-finance-functional-consultant.md) | reviewed | 2026-10-28 | 2026-11-16 | not-executed |
 | [MB-330](../guides/MB-330-microsoft-dynamics-365-supply-chain-management-functional-consultant.md) | reviewed | 2026-10-28 | 2026-11-16 | not-executed |
+| [MB-500](../guides/MB-500-microsoft-dynamics-365-finance-operations-apps-developer.md) | reviewed | 2026-10-28 | 2026-11-16 | not-executed |
+| [MB-800](../guides/MB-800-microsoft-dynamics-365-business-central-functional-consultant.md) | reviewed | 2026-10-28 | 2026-11-16 | not-executed |
+| [MB-820](../guides/MB-820-microsoft-dynamics-365-business-central-developer.md) | reviewed | 2026-10-28 | 2026-11-16 | not-executed |
+| [PL-900](../guides/PL-900-microsoft-power-platform-fundamentals.md) | reviewed | 2026-10-28 | 2026-11-16 | not-executed |
 | [AB-210](../guides/AB-210-accelerating-sales-pipelines-ai-dynamics-365.md) | reviewed-with-blockers | 2026-10-28 | 2026-11-27 | not-executed |
 | [AB-650](../guides/AB-650-ai-services-administrator-associate.md) | reviewed-with-blockers | 2026-10-28 | 2026-11-27 | not-executed |
 | [MO-110](../guides/MO-110-microsoft-word-microsoft-365-apps.md) | review-due | 2026-09-28 | 2026-10-28 | not-executed |
@@ -41,10 +37,12 @@ A reviewed guide can still have unexecuted labs. Blockers stay visible. Recently
 | [MO-310](../guides/MO-310-microsoft-powerpoint-microsoft-365-apps.md) | review-due | 2026-09-28 | 2026-10-28 | offline-only |
 | [AI-200](../guides/AI-200-developing-ai-cloud-solutions-on-azure.md) | reviewed-with-blockers | 2026-10-28 | 2026-11-27 | not-executed |
 | [DP-800](../guides/DP-800-developing-ai-enabled-database-solutions.md) | reviewed-with-blockers | 2026-10-28 | 2026-11-27 | not-executed |
+| [MB-230](../guides/MB-230-microsoft-dynamics-365-customer-service-functional-consultant.md) | reviewed-with-blockers | 2026-10-28 | 2026-11-27 | not-executed |
 | [MS-700](../guides/MS-700-managing-microsoft-teams.md) | reviewed-with-blockers | 2026-10-28 | 2026-11-27 | not-executed |
 | [SC-100](../guides/SC-100-microsoft-cybersecurity-architect.md) | reviewed-with-blockers | 2026-10-28 | 2026-11-27 | not-executed |
 | [SC-200](../guides/SC-200-microsoft-security-operations-analyst.md) | reviewed-with-blockers | 2026-10-28 | 2026-11-27 | not-executed |
 | [SC-300](../guides/SC-300-microsoft-identity-access-administrator.md) | reviewed-with-blockers | 2026-10-28 | 2026-11-27 | not-executed |
+| [SC-500](../guides/SC-500-microsoft-cloud-ai-security-engineer.md) | reviewed-with-blockers | 2026-10-28 | 2026-11-27 | not-executed |
 | [SC-900](../guides/SC-900-microsoft-security-compliance-identity-fundamentals.md) | reviewed-with-blockers | 2026-10-28 | 2026-11-27 | not-executed |
 | [PL-400](../guides/PL-400-microsoft-power-platform-developer.md) | reviewed | 2026-10-28 | 2026-11-27 | not-executed |
 | [AB-620](../guides/AB-620-designing-building-integrated-ai-agent-solutions.md) | reviewed | 2026-10-28 | 2026-11-27 | not-executed |
@@ -66,6 +64,8 @@ A reviewed guide can still have unexecuted labs. Blockers stay visible. Recently
 | [DP-420](../guides/DP-420-designing-and-implementing-cloud-native-applications-using-microsoft-azure-cosmos-db.md) | reviewed | 2026-10-28 | 2026-11-27 | not-executed |
 | [DP-600](../guides/DP-600-implementing-analytics-solutions-microsoft-fabric.md) | reviewed | 2026-10-28 | 2026-11-27 | offline-only |
 | [DP-700](../guides/DP-700-implementing-data-engineering-solutions-microsoft-fabric.md) | reviewed | 2026-10-28 | 2026-11-27 | offline-only |
+| [DP-900](../guides/DP-900-microsoft-azure-data-fundamentals.md) | reviewed | 2026-10-28 | 2026-11-27 | not-executed |
+| [PL-300](../guides/PL-300-microsoft-power-bi-data-analyst.md) | reviewed | 2026-10-28 | 2026-11-27 | not-executed |
 | [SC-401](../guides/SC-401-administering-information-security-microsoft-365.md) | reviewed | 2026-10-28 | 2026-11-27 | not-executed |
 
 ## Completion rule

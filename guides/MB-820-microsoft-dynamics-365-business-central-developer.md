@@ -6,17 +6,17 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-28
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-28
+upcoming_change_checked: 2026-10-28
 ---
 
 # MB-820 Microsoft Dynamics 365 Business Central Developer Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Checked against the June 10, 2025 official objective baseline and cited public sources on September 28, 2026. See the [coverage record](../docs/SOURCE-VALIDATION.md#mb-820-coverage-record). The [official MB-820 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-820) is authoritative.
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-04.md#mb-820) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mb-820-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-820) is authoritative.
 
 **Current baseline:** Skills measured as of June 10, 2025.<br>
-**Upcoming blueprint change:** None announced as of September 28, 2026.<br>
+**Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
 **Lifecycle:** The [Business Central Developer Associate credential](https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-developer-associate/) is active, renews every 12 months, and has no announced retirement. The exam is 100 minutes, is offered in seven languages, and has a free Practice Assessment.<br>
 **Freshness warning:** The published objective baseline is more than a year old. The 2025 change log mainly revised environment details and APIs; verify current Business Central runtime, AL extension, AppSource, authentication, testing, telemetry and API guidance before implementing a lab.<br>
 **Official source:** [MB-820 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-820)
@@ -88,6 +88,8 @@ The [platform deprecation register](https://learn.microsoft.com/en-us/dynamics36
 
 These are product changes, not newly added exam objectives. Future release dates are not proof that a particular tenant has been upgraded.
 
+**VERIFY CURRENT — v29 administration tooling:** the [platform deprecation register](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/upgrade/deprecated-features-platform) moves the administration modules to PowerShell 7 script modules with the `Microsoft.BusinessCentral` prefix in the server installation's Admin folder. This concerns on-premises/container administration. Match scripts to the installed version and module names; an older Windows PowerShell script still running does not establish a supported configuration. SaaS PTE deployment keeps its separate Admin Center/API path. The v30 OData boundary remains future as of October 28, 2026.
+
 ## 2. Install, develop and deploy for Business Central
 
 ### Configure the development environment
@@ -134,6 +136,8 @@ A report object defines data items/columns, request page, triggers/functions and
 
 Choose RDLC for precise paginated output, Word for editable business-document layouts and Excel for analytical/tabular output under current support. Use labels/translations and recipient language/region. A document report needs header/line/totals, copy/currency/tax, pagination and empty/large-data tests. Report extensions add to supported datasets/layouts; substitution replaces a report for a registered context and must preserve expected contract. Processing-only reports run logic without rendered output and need progress, locking, retry and telemetry design.
 
+**Worked substitution check:** prefer a report extension when supported dataset/request-page/layout additions meet the requirement. If replacement is needed, subscribe a method to `ReportManagement.OnAfterSubstituteReport`, test the requested `ReportId`, and set the replacement through the `var NewReportId` parameter. Check whether another subscriber already supplied a replacement instead of overwriting it silently. The [substitution procedure](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-substituting-reports) lists the invocation paths that raise the event; use a compatible report contract and test the actual page action/code path. **Answer check:** a replacement that displays manually but fails when called with the original record context is not compatible. No subscriber was compiled or run here. **VERIFY CURRENT:** report signature, calling method and runtime.
+
 ### XMLports and queries
 
 An XMLport defines schema nodes, element/attribute/text/field nodes, direction, format, encoding, namespaces, separators and triggers. Use it when its structured import/export pipeline fits. Validate external input, avoid leaking sensitive fields and make imports restartable. Invoking an XMLport from AL does not remove its transaction and error obligations.
@@ -141,6 +145,14 @@ An XMLport defines schema nodes, element/attribute/text/field nodes, direction, 
 Query objects join data items, select/filter/sort columns and aggregate supported values. Understand join type and cardinality before assuming row counts. Set filters before opening, read results through the query lifecycle and close resources. A query can outperform nested record loops and feed a report/API, but only when keys, selectivity, company scope and result size are controlled.
 
 > **Related item:** XMLports define structured file/data exchange, queries define read models, reports define user output and APIs define service contracts. Similar-looking rows do not make these objects interchangeable.
+
+### Worked object path: import, query and report
+
+For a synthetic compliance register, keep imported staging data separate from posted business records. In an [XMLport](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-xmlport-object), declare the format/direction and a root text element containing a table element. Put record fields in field elements or attributes according to the external schema. Set the table view and linking properties deliberately; call the XMLport from a page action or codeunit, with the chosen import/export direction and request-page behavior. Inspect the exported structure, then reject a missing required identifier in an import test. Parsing a file successfully does not prove that its business records are valid. Keep this worksheet on synthetic staging data and preserve the existing transaction/error rules.
+
+For a [query object](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-query-object), nest the child dataitem beneath its parent, set `DataItemLink` and `SqlJoinType` on the lower item, and select only needed columns. Declare the intended output grain before adding aggregation. In calling AL, set runtime filters, open the query, read each result and close it. A changed join can remove unmatched parents or multiply rows; reconcile the fan-out example before replacing record loops.
+
+Build a [report dataset](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-report-dataset) from dataitems/columns, with child links, request filters and labels. If a query supplies the rows, iterate it into the report's dataset rather than assuming the layout can directly consume an arbitrary query. Design the [report object](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-report-object) in dataset → request page → rendering → code order; bind Word/RDL/Excel layout fields to that dataset. Test a document header with zero, one and several lines, translated labels, request filters and totals. A processing-only report omits rendered output but still needs observable results. **Answer check:** correct layout with duplicated dataset amounts remains incorrect. These are implementation design steps, not compiled or server-tested AL; verify current syntax/runtime before building.
 
 ### Codeunits, events and interfaces
 
@@ -166,6 +178,10 @@ Profiles connect users to Role Centers and page customizations; views package fi
 
 Design for first-run, empty state, error recovery and repeated use. A wizard must validate before commit and avoid partial setup. A checklist item needs a meaningful completion signal, not merely a click.
 
+**Worked checklist registration:** first create a [Guided Experience Item](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/onboarding-checklist) for the setup page or wizard through the `Guided Experience` codeunit façade, such as `InsertManualSetup` or `InsertAssistedSetup`. Then reference that item from a checklist and map its audience through checklist role/user records. A setup page existing in the app does not automatically make it an onboarding task. In a disposable company, test the intended role, a different role, skip/resume and a failed validation; completion must correspond to persisted valid setup. Keep the list focused. The current article separately says Role Center Tour items can only be added by Microsoft even though its façade list includes `InsertTour`; do not infer that the method list grants arbitrary partner tour support. Use supported page teaching tips/help and recheck the exact tour contract. This is a design worksheet, not executed AL.
+
+**Worked profile and view:** define a [profile object](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-profile-object) with a caption, existing RoleCenter and referenced page customizations. Switch the test user's Role Center to that profile before checking its layout; a customization assigned elsewhere will not appear. Page customizations shape layout/actions and cannot add procedures, variables or triggers. Define a named [list-page view](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-views) with a caption, `Filters` on source-table fields and `OrderBy` for the chosen direction. Add the views section after layout/actions; use `SharedLayout = false` when supplying a separate view layout. Check which records survive the filter and how ordinary personalization behaves. **Answer check:** hiding a column or filtering a view does not revoke record access. A view changes presentation/filtering; permission sets remain separate. These are uncompiled design steps; verify object syntax/runtime before implementation.
+
 ### Development standards and data process
 
 Business Central's functional table patterns communicate behavior: setup, master, supplemental/subsidiary, journal, document header/line, ledger entry, detailed entry, register and others. Follow standard field, key, numbering, blocking, posting and navigation conventions so integrations and users encounter predictable semantics.
@@ -184,6 +200,8 @@ Files in cloud scenarios generally flow through streams, temporary blobs and upl
 
 An unhandled error normally aborts the current uncommitted database work; it does not undo earlier commits or remote effects. A caught [try-method error](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-handling-errors-using-try-methods) is different: database writes in that method are not automatically rolled back. Consuming the Boolean return catches the error; calling the same attributed procedure without consuming its return behaves like an ordinary call. Online permits writes inside try methods, while on-premises blocks them by default. Keep recoverable parsing/validation separate from writes.
 
+A less obvious boundary is argument evaluation: the [try-method documentation](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-handling-errors-using-try-methods) evaluates argument expressions inside the try call. A helper that writes a record before returning an argument still performs that write in the try context; the default on-premises write restriction applies there too. Compute write-producing arguments outside the try call only when the resulting transaction boundary is intentional. Moving a write changes error handling; it does not make the whole business operation atomic.
+
 Consuming the Boolean result of [Codeunit.Run](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/methods-auto/codeunit/codeunit-run-method) introduces its own transaction contract: success commits that codeunit's changes, and an existing transaction must be committed before such a call. Do not add that precommit casually to a business operation that must be atomic. [CommitBehavior](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/attributes/devenv-commitbehavior-attribute) affects explicit commits within its scope, not the implicit commit from Codeunit.Run. Use error collection for user-correctable validation findings and preserve actionable error details without secrets.
 
 > **Related item:** Access modifiers limit which AL consumers call code; permission sets limit what a user/code path may access; data classification describes sensitivity. Secure extensions need all three.
@@ -191,6 +209,12 @@ Consuming the Boolean result of [Codeunit.Run](https://learn.microsoft.com/en-us
 ---
 
 For read-heavy loops, [partial records](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-partial-records) select required fields before fetching. Touching an unloaded field triggers another load and can expose a concurrent modification/delete. Passing a partial record by value can cause repeated loads because the original iterator is not updated. Select the fields needed by called code; benchmark reads and writes separately instead of adding `SetLoadFields` everywhere.
+
+### Worked AL reasoning: values, variables and record effects
+
+Trace a procedure before running it: define two `Decimal` inputs for quantity and unit price, a local `Decimal` subtotal and a Boolean validity result. Initialize the subtotal, reject a negative quantity with an `if` branch, calculate quantity times price with an arithmetic expression, and return the result. A caller passing an ordinary value does not receive a mutation to its variable; use a `var` parameter only when changing the caller's value is part of the contract. Local variables belong to the method; object-global variables belong to the object. [AL variables](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-al-variables) have typed initialization and assignment/conversion rules. Text that looks numeric still needs a supported conversion, and overflow remains an error.
+
+Now separate a scalar calculation from record work. A record variable represents a table and current filters/state; set the filter, retrieve the intended record set, then decide whether a field needs `Validate` before `Modify`. A loop that changes persisted records needs a transaction and concurrency decision; it is not equivalent to updating the local subtotal. Predict zero quantity, a negative input, a failed conversion and a missing record, and inspect which state can change in each case. This is an original paper trace, not a compiled AL sample; use the earlier error/commit model when adding persistence.
 
 ## 5. Work with development tools
 
@@ -201,6 +225,8 @@ Install/run the Test Toolkit in an appropriate test environment and know the dif
 Cover happy path, validation, permission, upgrade, localization, concurrency, posting and integration failure. Create data through supported APIs/helpers where possible so tests do not depend on a tenant snapshot. CI should compile with analyzers, run tests, retain results and block incompatible artifacts. Page scripting can accelerate acceptance paths, but it does not replace AL unit/integration tests.
 
 The [testing support matrix](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-testing-application) disallows automated tests in Business Central online production. Online sandboxes support bounded manual verification, with restrictions on long or extensive runs; container-based environments are the documented default for large suites and CI gates. Test pages simulate interaction without displaying the actual client UI. Use a test runner and handlers so unexpected dialogs fail the test, and use `ASSERTERROR` only in test code.
+
+**Worked test structure:** declare a [test codeunit](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-test-codeunits-and-test-methods) with `Subtype = Test` and a method marked `[Test]`. Put synthetic setup, the action under test and explicit assertions in that method; put reusable setup in helper methods and expected UI behavior in correctly attributed handlers. Run through the selected test runner and capture method-level success/failure, not merely that the runner opened. A failing test does not prevent the next test method running. For an intentionally invalid quantity, assert the expected error and inspect permitted durable state using the earlier transaction model. **VERIFY CURRENT:** transaction/isolation settings and toolkit compatibility. Runtime18 `TestHandlers` lifecycle hooks are separately documented as preview; do not confuse them with ordinary UI handler methods or make preview hooks a prerequisite for this baseline exercise. No test app, compiler or container run was performed here.
 
 ### Telemetry and performance
 
@@ -213,6 +239,10 @@ Start performance work with evidence: slow AL/database calls, long-running repor
 ---
 
 Use the supported [custom telemetry destinations](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-instrument-application-for-telemetry): Application Insights for online/on-premises, and Windows event log only on-premises. Define event meaning, correlation and dimensions before writing a signal. Count eventual business outcomes separately from retry attempts; otherwise a healthy recovery mechanism can make an attempt-based chart look like a business failure spike.
+
+**Worked extension-telemetry path:** choose an Application Insights resource and, for a supported current runtime, place its connection string in the extension's `app.json` as `applicationInsightsConnectionString`, then build/publish/install the extension in the approved test scope. The [extension setup procedure](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-application-insights-for-extensions) distinguishes this from environment telemetry and from the legacy instrumentation-key property; do not set both manifest properties. Configuration alone does not establish event delivery.
+
+For a custom milestone, use [`Session.LogMessage`](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-instrument-application-for-telemetry-app-insights) with a stable event ID, message, verbosity, classification, telemetry scope and safe dimensions. `ExtensionPublisher` targets the publisher resource; `All` can also send to the environment resource. Inspect the trace by event ID and extension/environment version, then compare the intended business outcome with retry-attempt counts. Values classified beyond SystemMetadata are not sent to Application Insights; never relabel sensitive values merely to force emission. Check target, scope, classification and on-premises trace threshold when a signal is missing. The System Application's Feature Telemetry module is an alternative for feature events. **VERIFY CURRENT:** runtime, logging/privacy and resource charges. No event was emitted and no extension was compiled or deployed here.
 
 ## 6. Integrate Business Central with other applications
 
@@ -431,31 +461,6 @@ Use synthetic data in an appropriate development/test environment. These tenant 
 
 ---
 
-## Places to learn
-
-This is not a complete list and is not meant to be consumed in full. Choose one primary route, build and upgrade one secure extension end to end, and add another resource only for a measured gap.
-
-| Resource | Access | Estimated time |
-|---|---|---:|
-| [Official MB-820 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-820) | Free | 1–2 hours to map six domains and freshness gaps |
-| [Application development best practices](https://learn.microsoft.com/en-us/training/paths/use-application-development-business-central/) | Free | 7 modules; runtime not shown; 12–20 hours with AppSource/upgrade/test work |
-| [Customization foundation](https://learn.microsoft.com/en-us/training/paths/foundation-customize-business-central/) | Free | 8 modules; runtime not shown; 22–35 hours building/deploying objects |
-| [Build reports](https://learn.microsoft.com/en-us/training/paths/build-reports/) | Free | 11 modules; runtime not shown; 15–25 hours with layouts/data/performance |
-| [AL application foundation](https://learn.microsoft.com/en-us/training/paths/application-foundation-al-language/) | Free | 10 modules; runtime not shown; 20–35 hours coding/testing exercises |
-| [Data management foundation](https://learn.microsoft.com/en-us/training/paths/data-management-foundation-business-central/) | Free | 3 modules; runtime not shown; 8–15 hours with XMLport/query/file builds |
-| [Interface with Business Central](https://learn.microsoft.com/en-us/training/paths/interface-with-business-central/) | Free | 6 modules; runtime not shown; 12–25 hours with resilient API integrations |
-| [Tailor roles and design the UI](https://learn.microsoft.com/en-us/training/paths/tailor-roles-design-ui/) | Free | 5 modules; runtime not shown; 8–15 hours with onboarding/accessibility |
-| [Essential development standards](https://learn.microsoft.com/en-us/training/paths/essential-development-standards/) | Free | 4 modules; runtime not shown; 10–20 hours implementing standard patterns |
-| [MB-820T00-A: Develop solutions with Dynamics 365 Business Central](https://learn.microsoft.com/en-us/training/courses/mb-820t00) | Paid/provider-dependent | 5 days; English |
-| [MicrosoftLearning MB-820 labs](https://github.com/MicrosoftLearning/MB-820-Business-Central-Developer-Certification) | Free; MIT | 12–25 hours; repository title/README retain sample-course artifacts, so use hosted lab index and verify current instructions |
-| [Free MB-820 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-developer-associate/practice/assessment?assessment-type=practice&assessmentId=66154329&practice-assessment-type=certification) | Free | 45–90 minutes plus remediation |
-| [AL developer documentation](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/) | Free | 25–60 hours selected current reference/troubleshooting |
-| [O’Reilly: MB-820 Certification Companion](https://www.oreilly.com/library/view/dynamics-365-business/9798868809262/) | Subscription/trial | 317-page Apress book by Dr. Gomathi S, November 2024; 3h48 platform reading estimate; gap-check current runtime |
-| [Microsoft Community MB-820 awareness session](https://techcommunity.microsoft.com/event/d3f367f5-77c3-4097-92a4-2bf95e15d11c/mb-820-certification-essentials-your-complete-guide-to-becoming-a-business-centr/4537934) | Free registration; event availability varies | About 1–2 hours estimated; verify recording/event access |
-| [Microsoft Partner Skilling Hub](https://www.skilling-hub.com/en-US) | Partner login required | Use the five-day course pattern for planning; signed-in event start/end times control |
-
-The eight official paths expose **54 module placements** (7/8/11/10/3/6/5/4). Current public pages do not expose runtime, so the old 50h07 total is withdrawn. Linked units were not exhaustively read; barcode/control-add-in/Dataverse material can be adjacent to the detailed objective list. Allow roughly **120–200 hours** for a developer new to Business Central to build, test, integrate, upgrade and operate the extension portfolio. No exact current Pluralsight, MeasureUp or Whizlabs MB-820 product was independently verified. Earlier Udemy discovery did not establish a suitable course; this pass did not comprehensively repeat those commercial searches.
-
 ## Useful developer articles
 
 - [Stefano Demiliani: job queues and idempotent external effects](https://demiliani.com/2026/09/01/why-your-business-central-job-queue-needs-idempotent-external-effects-when-integrating-external-systems/) (September 1, 2026) supplies a useful failure scenario. Trace remote success followed by local failure and retry. Use the original local model above; the article's snippets are illustrative and were not compiled, and its broad rollback language must be read alongside current try/commit rules.
@@ -478,3 +483,32 @@ The [Plataan webinar listing](https://app-plataantv-web-prd-euw.azurewebsites.ne
 ## Source notes
 
 The June 10, 2025 study guide defines exam scope. Current Microsoft Learn paths, AL documentation and public course labs support implementation, but their platform/runtime detail may evolve beyond the older blueprint. Commercial sources are optional supplements and do not define objectives. All scenarios, labs and checks here are original; no dumps or recalled questions were used.
+
+## Places to learn
+
+This is not a complete list and is not meant to be consumed in full. Choose one primary route, build and upgrade one secure extension end to end, and add another resource only for a measured gap.
+
+### Focused reading and evidence route
+
+Use MicrosoftLearning’s [installation/upgrade lab](https://microsoftlearning.github.io/MB-820-Business-Central-Developer-Certification/Instructions/Labs/LAB_02_Implement_installation_and_upgrade_code_extension.html) as a code-review exercise alongside [Upgrading Extensions](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-upgrading-extensions). **Source defect observed October 28, 2026:** the shown upgrade code declares `UpdateSalespeople()` twice and includes a same-name call; its final expected precondition error refers to a trigger absent from the displayed code. Do not treat the snippet as a validated solution. Allow about 60–90 minutes for an independent design separating tag check, transformation and tag recording, with expected old/new data, fresh-install/new-company behavior and retry evidence. This editorial estimate covers reading and design; compiler and sandbox tests add time. Both texts were inspected within the recorded scope; no AL compilation or upgrade was performed.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official MB-820 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-820) | Free | 1–2 hours to map six domains and freshness gaps |
+| [Application development best practices](https://learn.microsoft.com/en-us/training/paths/use-application-development-business-central/) | Free | 7 modules; runtime not shown; 12–20 hours with AppSource/upgrade/test work |
+| [Customization foundation](https://learn.microsoft.com/en-us/training/paths/foundation-customize-business-central/) | Free | 8 modules; runtime not shown; 22–35 hours building/deploying objects |
+| [Build reports](https://learn.microsoft.com/en-us/training/paths/build-reports/) | Free | 11 modules; runtime not shown; 15–25 hours with layouts/data/performance |
+| [AL application foundation](https://learn.microsoft.com/en-us/training/paths/application-foundation-al-language/) | Free | 10 modules; runtime not shown; 20–35 hours coding/testing exercises |
+| [Data management foundation](https://learn.microsoft.com/en-us/training/paths/data-management-foundation-business-central/) | Free | 3 modules; runtime not shown; 8–15 hours with XMLport/query/file builds |
+| [Interface with Business Central](https://learn.microsoft.com/en-us/training/paths/interface-with-business-central/) | Free | 6 modules; runtime not shown; 12–25 hours with resilient API integrations |
+| [Tailor roles and design the UI](https://learn.microsoft.com/en-us/training/paths/tailor-roles-design-ui/) | Free | 5 modules; runtime not shown; 8–15 hours with onboarding/accessibility |
+| [Essential development standards](https://learn.microsoft.com/en-us/training/paths/essential-development-standards/) | Free | 4 modules; runtime not shown; 10–20 hours implementing standard patterns |
+| [MB-820T00-A: Develop solutions with Dynamics 365 Business Central](https://learn.microsoft.com/en-us/training/courses/mb-820t00) | Paid/provider-dependent | 5 days; English |
+| [MicrosoftLearning MB-820 labs](https://github.com/MicrosoftLearning/MB-820-Business-Central-Developer-Certification) | Free; MIT | 12–25 hours editorial estimate for selected work; Lab 02 has a defective displayed upgrade sample (see focused route); review and rewrite before execution |
+| [Free MB-820 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-developer-associate/practice/assessment?assessment-type=practice&assessmentId=66154329&practice-assessment-type=certification) | Free | 45–90 minutes plus remediation |
+| [AL developer documentation](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/) | Free | 25–60 hours selected current reference/troubleshooting |
+| [O’Reilly: MB-820 Certification Companion](https://www.oreilly.com/library/view/dynamics-365-business/9798868809262/) | Subscription/trial | 317-page Apress book by Dr. Gomathi S, November 2024; 3h48 platform reading estimate; gap-check current runtime |
+| [Microsoft Community MB-820 awareness session](https://techcommunity.microsoft.com/event/d3f367f5-77c3-4097-92a4-2bf95e15d11c/mb-820-certification-essentials-your-complete-guide-to-becoming-a-business-centr/4537934) | Free registration; event availability varies | About 1–2 hours estimated; verify recording/event access |
+| [Microsoft Partner Skilling Hub](https://www.skilling-hub.com/en-US) | Partner login required | Use the five-day course pattern for planning; signed-in event start/end times control |
+
+The eight official paths expose **54 module placements** (7/8/11/10/3/6/5/4). Current public pages do not expose runtime, so the old 50h07 total is withdrawn. Linked units were not exhaustively read; barcode/control-add-in/Dataverse material can be adjacent to the detailed objective list. Allow roughly **120–200 hours** for a developer new to Business Central to build, test, integrate, upgrade and operate the extension portfolio. No exact current Pluralsight, MeasureUp or Whizlabs MB-820 product was independently verified. Earlier Udemy discovery did not establish a suitable course; this pass did not comprehensively repeat those commercial searches.
