@@ -56622,6 +56622,387 @@
         "no_action_findings": 0,
         "blocked_findings": 0
       }
+    },
+    {
+  "id": "freshness-2026-10-28-nonms-g07",
+  "title": "Fortinet, GitHub, and AWS non-Microsoft refresh group 07",
+  "rubric_version": 1,
+  "created_on": "2026-10-28",
+  "completed_on": "2026-10-28",
+  "status": "completed",
+  "scan_mode": "read-only",
+  "selection_method": "Seventh group of ten from frozen eligible queue after Groups 1–6.",
+  "rubric_path": "docs/SOURCE-FRESHNESS.md",
+  "auditor": {
+    "kind": "ai-agent",
+    "labels": [
+      "refresh-coordinator",
+      "official-source-review"
+    ],
+    "independence": "same-context",
+    "human_review": false
+  },
+  "exam_codes": [
+    "NSE-8",
+    "NSE-I-MSSP-SECURITY",
+    "GH-100",
+    "GH-600",
+    "AIB-C01",
+    "AIF-C01",
+    "AIP-C01",
+    "ANS-C01",
+    "CLF-C02",
+    "DEA-C01"
+  ],
+  "results": [
+    {
+      "exam_code": "NSE-8",
+      "vendor_id": "fortinet",
+      "guide_path": "guides/NSE-8-fortinet-nse-8-cybersecurity-expert.md",
+      "baseline_sha256": "69db13f17e1f81bd5df37aef1fe3795a580e0e58e2b98a122b9a15722d741e5a",
+      "scanned_on": "2026-10-28",
+      "outcome": "current",
+      "checks": {
+        "official_blueprint_and_lifecycle": {
+          "status": "passed",
+          "notes": "Current official credential, lifecycle and objective pages reviewed; current snapshot checked and status/lifecycle changes bounded."
+        },
+        "official_product_documentation": {
+          "status": "passed",
+          "notes": "Current first-party product docs reviewed; version, availability and rollout limits retained."
+        },
+        "official_release_channels": {
+          "status": "passed",
+          "notes": "Dated first-party release channels reviewed; product context kept separate from exam scope."
+        },
+        "catalog_comparison": {
+          "status": "passed",
+          "notes": "New/updated first-party sources were compared with data/sources.json. Scoped source health covered 107 URLs: 100 OK, 7 blocked, zero broken; blocked entries are reported as access limitations."
+        },
+        "contradiction_and_gap_review": {
+          "status": "passed",
+          "notes": "Conflicts and unavailable details remain explicit; no product announcement used to expand exam scope."
+        }
+      },
+      "findings": [],
+      "notes": "Full exam, lifecycle, technical, catalog, and learning-resource discovery is summarized in docs/research/2026-10-28-nonms-refresh-group-02.md. Scoped health: 100 OK, 7 blocked, zero broken among 107 checked URLs. Access blocks and unexecuted lesson/lab access are limits, not claims of content validation."
+    },
+    {
+      "exam_code": "NSE-I-MSSP-SECURITY",
+      "vendor_id": "fortinet",
+      "guide_path": "guides/NSE-I-MSSP-SECURITY-fortinet-industry-mssp-security.md",
+      "baseline_sha256": "dc0afe73238f88c0f108b91a32027e41507b7e19b249422c6302087ece4a790c",
+      "scanned_on": "2026-10-28",
+      "outcome": "blocked",
+      "checks": {
+        "official_blueprint_and_lifecycle": {
+          "status": "blocked",
+          "notes": "No public exam blueprint or availability date; do not present foundation content as objectives."
+        },
+        "official_product_documentation": {
+          "status": "passed",
+          "notes": "Current first-party product docs reviewed; version, availability and rollout limits retained."
+        },
+        "official_release_channels": {
+          "status": "passed",
+          "notes": "Dated first-party release channels reviewed; product context kept separate from exam scope."
+        },
+        "catalog_comparison": {
+          "status": "passed",
+          "notes": "New/updated first-party sources were compared with data/sources.json. Scoped source health covered 107 URLs: 100 OK, 7 blocked, zero broken; blocked entries are reported as access limitations."
+        },
+        "contradiction_and_gap_review": {
+          "status": "passed",
+          "notes": "Conflicts and unavailable details remain explicit; no product announcement used to expand exam scope."
+        }
+      },
+      "findings": [
+        {
+          "id": "g07-mssp-public-blueprint-unavailable",
+          "check": "official_blueprint_and_lifecycle",
+          "category": "documentation-gap",
+          "title": "No public MSSP Security exam objectives or availability date",
+          "url": "https://training.fortinet.com/local/staticpage/view.php?page=nse_industry_mssp_security",
+          "source_type": "exam-blueprint",
+          "affected_exams": [
+            "NSE-I-MSSP-SECURITY"
+          ],
+          "catalog_status": "registered",
+          "confidence": "high",
+          "evidence": "The canonical Fortinet page continues to say Coming soon and publishes no objective list or availability date.",
+          "recommendation": "Keep objective coverage review-required and do not describe the operational foundation as exam scope.",
+          "disposition": "blocked"
+        }
+      ],
+      "notes": "Full exam, lifecycle, technical, catalog, and learning-resource discovery is summarized in docs/research/2026-10-28-nonms-refresh-group-02.md. Scoped health: 100 OK, 7 blocked, zero broken among 107 checked URLs. Access blocks and unexecuted lesson/lab access are limits, not claims of content validation."
+    },
+    {
+      "exam_code": "GH-100",
+      "vendor_id": "github",
+      "guide_path": "guides/GH-100-github-enterprise-administration.md",
+      "baseline_sha256": "beba710aa55af6a4be4c6e6279b187a77d84123853d510cb89d547cbae556e62",
+      "scanned_on": "2026-10-28",
+      "outcome": "current",
+      "checks": {
+        "official_blueprint_and_lifecycle": {
+          "status": "passed",
+          "notes": "Current official credential, lifecycle and objective pages reviewed; current snapshot checked and status/lifecycle changes bounded."
+        },
+        "official_product_documentation": {
+          "status": "passed",
+          "notes": "Current first-party product docs reviewed; version, availability and rollout limits retained."
+        },
+        "official_release_channels": {
+          "status": "passed",
+          "notes": "Dated first-party release channels reviewed; product context kept separate from exam scope."
+        },
+        "catalog_comparison": {
+          "status": "passed",
+          "notes": "Oracle, Microsoft Learn and GitHub credential/learning resources were compared; the current practice-assessment launch links were registered and synchronized."
+        },
+        "contradiction_and_gap_review": {
+          "status": "passed",
+          "notes": "Conflicts and unavailable details remain explicit; no product announcement used to expand exam scope."
+        }
+      },
+      "findings": [],
+      "notes": "See Group 6 report for exact source evidence, snapshot differences and health limits. No live product lab, tenant, API or paid course interior was exercised."
+    },
+    {
+      "exam_code": "GH-600",
+      "vendor_id": "github",
+      "guide_path": "guides/GH-600-developing-agentic-ai-systems.md",
+      "baseline_sha256": "f50efcef1fa65f9656e583d5675056b8cdfbcabdbd1bdf5a883e1807c248d914",
+      "scanned_on": "2026-10-28",
+      "outcome": "current",
+      "checks": {
+        "official_blueprint_and_lifecycle": {
+          "status": "passed",
+          "notes": "Current official credential, lifecycle and objective pages reviewed; current snapshot checked and status/lifecycle changes bounded."
+        },
+        "official_product_documentation": {
+          "status": "passed",
+          "notes": "Current first-party product docs reviewed; version, availability and rollout limits retained."
+        },
+        "official_release_channels": {
+          "status": "passed",
+          "notes": "Dated first-party release channels reviewed; product context kept separate from exam scope."
+        },
+        "catalog_comparison": {
+          "status": "passed",
+          "notes": "Oracle, Microsoft Learn and GitHub credential/learning resources were compared; the current practice-assessment launch links were registered and synchronized."
+        },
+        "contradiction_and_gap_review": {
+          "status": "passed",
+          "notes": "Conflicts and unavailable details remain explicit; no product announcement used to expand exam scope."
+        }
+      },
+      "findings": [],
+      "notes": "See Group 6 report for exact source evidence, snapshot differences and health limits. No live product lab, tenant, API or paid course interior was exercised."
+    },
+    {
+      "exam_code": "AIB-C01",
+      "vendor_id": "aws",
+      "guide_path": "guides/AIB-C01-aws-certified-ai-business-strategist.md",
+      "baseline_sha256": "81f81b317bd749bafd077b828ac70759487d2bd248cc5377d805590320e009a2",
+      "scanned_on": "2026-10-28",
+      "outcome": "current",
+      "checks": {
+        "official_blueprint_and_lifecycle": {
+          "status": "passed",
+          "notes": "Current official credential, lifecycle and objective pages reviewed; current snapshot checked and status/lifecycle changes bounded."
+        },
+        "official_product_documentation": {
+          "status": "passed",
+          "notes": "Current first-party product docs reviewed; version, availability and rollout limits retained."
+        },
+        "official_release_channels": {
+          "status": "passed",
+          "notes": "Dated first-party release channels reviewed; product context kept separate from exam scope."
+        },
+        "catalog_comparison": {
+          "status": "passed",
+          "notes": "The shared certification-update URL was promoted and health checked for C02."
+        },
+        "contradiction_and_gap_review": {
+          "status": "passed",
+          "notes": "Conflicts and unavailable details remain explicit; no product announcement used to expand exam scope."
+        }
+      },
+      "findings": [],
+      "notes": "All queued findings for this guide were applied with explicit evidence and confidence boundaries."
+    },
+    {
+      "exam_code": "AIF-C01",
+      "vendor_id": "aws",
+      "guide_path": "guides/AIF-C01-aws-certified-ai-practitioner.md",
+      "baseline_sha256": "5be78b8a2d688f9103994d445bf407d31a8db55c5e334111341bdd40d776db37",
+      "scanned_on": "2026-10-28",
+      "outcome": "current",
+      "checks": {
+        "official_blueprint_and_lifecycle": {
+          "status": "passed",
+          "notes": "Current official credential, lifecycle and objective pages reviewed; current snapshot checked and status/lifecycle changes bounded."
+        },
+        "official_product_documentation": {
+          "status": "passed",
+          "notes": "Current first-party product docs reviewed; version, availability and rollout limits retained."
+        },
+        "official_release_channels": {
+          "status": "passed",
+          "notes": "Dated first-party release channels reviewed; product context kept separate from exam scope."
+        },
+        "catalog_comparison": {
+          "status": "passed",
+          "notes": "The shared certification-update URL was promoted and health checked for C02."
+        },
+        "contradiction_and_gap_review": {
+          "status": "passed",
+          "notes": "Conflicts and unavailable details remain explicit; no product announcement used to expand exam scope."
+        }
+      },
+      "findings": [],
+      "notes": "All queued findings for this guide were applied with explicit evidence and confidence boundaries."
+    },
+    {
+      "exam_code": "AIP-C01",
+      "vendor_id": "aws",
+      "guide_path": "guides/AIP-C01-aws-certified-generative-ai-developer-professional.md",
+      "baseline_sha256": "18a7a184a6fd4d6d2b83a93681dbd6e6c2f84986758f0cf87a233599dc7471a3",
+      "scanned_on": "2026-10-28",
+      "outcome": "current",
+      "checks": {
+        "official_blueprint_and_lifecycle": {
+          "status": "passed",
+          "notes": "Current official credential, lifecycle and objective pages reviewed; current snapshot checked and status/lifecycle changes bounded."
+        },
+        "official_product_documentation": {
+          "status": "passed",
+          "notes": "Current first-party product docs reviewed; version, availability and rollout limits retained."
+        },
+        "official_release_channels": {
+          "status": "passed",
+          "notes": "Dated first-party release channels reviewed; product context kept separate from exam scope."
+        },
+        "catalog_comparison": {
+          "status": "passed",
+          "notes": "The shared certification-update URL was promoted and health checked for C02."
+        },
+        "contradiction_and_gap_review": {
+          "status": "passed",
+          "notes": "Conflicts and unavailable details remain explicit; no product announcement used to expand exam scope."
+        }
+      },
+      "findings": [],
+      "notes": "All queued findings for this guide were applied with explicit evidence and confidence boundaries."
+    },
+    {
+      "exam_code": "ANS-C01",
+      "vendor_id": "aws",
+      "guide_path": "guides/ANS-C01-aws-certified-advanced-networking-specialty.md",
+      "baseline_sha256": "079082b1fcfe6061c954cd9f96beaa15718654cf9ec3fbd478f75344b9103513",
+      "scanned_on": "2026-10-28",
+      "outcome": "current",
+      "checks": {
+        "official_blueprint_and_lifecycle": {
+          "status": "passed",
+          "notes": "Current official credential, lifecycle and objective pages reviewed; current snapshot checked and status/lifecycle changes bounded."
+        },
+        "official_product_documentation": {
+          "status": "passed",
+          "notes": "Current first-party product docs reviewed; version, availability and rollout limits retained."
+        },
+        "official_release_channels": {
+          "status": "passed",
+          "notes": "Dated first-party release channels reviewed; product context kept separate from exam scope."
+        },
+        "catalog_comparison": {
+          "status": "passed",
+          "notes": "The shared certification-update URL was promoted and health checked for C02."
+        },
+        "contradiction_and_gap_review": {
+          "status": "passed",
+          "notes": "Conflicts and unavailable details remain explicit; no product announcement used to expand exam scope."
+        }
+      },
+      "findings": [],
+      "notes": "All queued findings for this guide were applied with explicit evidence and confidence boundaries."
+    },
+    {
+      "exam_code": "CLF-C02",
+      "vendor_id": "aws",
+      "guide_path": "guides/CLF-C02-aws-certified-cloud-practitioner.md",
+      "baseline_sha256": "2b421d40b0b12e0a2eb6d8ca1cf0c98c2f203a7cee10e456473e0197aa580313",
+      "scanned_on": "2026-10-28",
+      "outcome": "current",
+      "checks": {
+        "official_blueprint_and_lifecycle": {
+          "status": "passed",
+          "notes": "Current official credential, lifecycle and objective pages reviewed; current snapshot checked and status/lifecycle changes bounded."
+        },
+        "official_product_documentation": {
+          "status": "passed",
+          "notes": "Current first-party product docs reviewed; version, availability and rollout limits retained."
+        },
+        "official_release_channels": {
+          "status": "passed",
+          "notes": "Dated first-party release channels reviewed; product context kept separate from exam scope."
+        },
+        "catalog_comparison": {
+          "status": "passed",
+          "notes": "The shared certification-update URL was promoted and health checked for C02."
+        },
+        "contradiction_and_gap_review": {
+          "status": "passed",
+          "notes": "Conflicts and unavailable details remain explicit; no product announcement used to expand exam scope."
+        }
+      },
+      "findings": [],
+      "notes": "All queued findings for this guide were applied with explicit evidence and confidence boundaries."
+    },
+    {
+      "exam_code": "DEA-C01",
+      "vendor_id": "aws",
+      "guide_path": "guides/DEA-C01-aws-certified-data-engineer-associate.md",
+      "baseline_sha256": "97d9a2fcd7080fe9664eb43c6cfc228a2ed84a28441eb2d153c838d2484abbce",
+      "scanned_on": "2026-10-28",
+      "outcome": "current",
+      "checks": {
+        "official_blueprint_and_lifecycle": {
+          "status": "passed",
+          "notes": "Current official credential, lifecycle and objective pages reviewed; current snapshot checked and status/lifecycle changes bounded."
+        },
+        "official_product_documentation": {
+          "status": "passed",
+          "notes": "Current first-party product docs reviewed; version, availability and rollout limits retained."
+        },
+        "official_release_channels": {
+          "status": "passed",
+          "notes": "Dated first-party release channels reviewed; product context kept separate from exam scope."
+        },
+        "catalog_comparison": {
+          "status": "passed",
+          "notes": "The shared certification-update URL was promoted and health checked for C02."
+        },
+        "contradiction_and_gap_review": {
+          "status": "passed",
+          "notes": "Conflicts and unavailable details remain explicit; no product announcement used to expand exam scope."
+        }
+      },
+      "findings": [],
+      "notes": "All queued findings for this guide were applied with explicit evidence and confidence boundaries."
     }
+  ],
+  "summary": {
+    "exam_count": 10,
+    "current": 9,
+    "review_required": 0,
+    "blocked": 1,
+    "queued_findings": 0,
+    "applied_findings": 0,
+    "no_action_findings": 0,
+    "blocked_findings": 1
+  }
+}
 ]
 }

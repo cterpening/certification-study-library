@@ -21921,6 +21921,608 @@
         "open_findings": 2,
         "closed_findings": 0
       }
+    },
+    {
+  "id": "nonms-refresh-2026-10-28-group-07",
+  "title": "Fortinet, GitHub, and AWS non-Microsoft refresh group 07",
+  "rubric_version": 2,
+  "created_on": "2026-10-28",
+  "completed_on": "2026-10-28",
+  "status": "completed",
+  "audit_mode": "read-only",
+  "selection_method": "Same-context final read-only audit after group 7.",
+  "rubric_path": "docs/AI-AUDIT.md",
+  "auditor": {
+    "kind": "ai-agent",
+    "label": "refresh-coordinator",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "exam_codes": [
+    "NSE-8",
+    "NSE-I-MSSP-SECURITY",
+    "GH-100",
+    "GH-600",
+    "AIB-C01",
+    "AIF-C01",
+    "AIP-C01",
+    "ANS-C01",
+    "CLF-C02",
+    "DEA-C01"
+  ],
+  "results": [
+    {
+      "exam_code": "NSE-8",
+      "vendor_id": "fortinet",
+      "guide_path": "guides/NSE-8-fortinet-nse-8-cybersecurity-expert.md",
+      "guide_content_sha256": "69db13f17e1f81bd5df37aef1fe3795a580e0e58e2b98a122b9a15722d741e5a",
+      "blueprint_snapshot_path": "data/objective-snapshots/nse-8-official-objectives-2026-10-28.txt",
+      "blueprint_snapshot_sha256": "6767d315d7b635b37789c7309b04eac13b11288bc14a069fb6de98036dc78be1",
+      "audited_on": "2026-10-28",
+      "verdict": "pass",
+      "checks": {
+        "official_scope": {
+          "status": "passed",
+          "notes": "Credential identity, published option/domain structure, product baseline and lifecycle were compared with exact objective/status snapshots and current official pages. Current 70-minute exam contract, objective weights, pathway and OT safety boundaries are represented; labs are safely scoped."
+        },
+        "objective_coverage": {
+          "status": "passed",
+          "notes": "Published groups are mapped to substantive, findable teaching content and readiness material; multi-option pathways are explicit. Current 70-minute exam contract, objective weights, pathway and OT safety boundaries are represented; labs are safely scoped."
+        },
+        "material_claim_support": {
+          "status": "passed",
+          "notes": "Exam-contract claims are tied to official snapshots/pages; version-sensitive behavior is paired with first-party documentation or visibly qualified. Current 70-minute exam contract, objective weights, pathway and OT safety boundaries are represented; labs are safely scoped."
+        },
+        "exam_contract_integrity": {
+          "status": "passed",
+          "notes": "No unsupported counts, scores, weights, prerequisites, delivery modes or lifecycle dates were found in the reviewed current content. Current 70-minute exam contract, objective weights, pathway and OT safety boundaries are represented; labs are safely scoped."
+        },
+        "technical_coherence": {
+          "status": "passed",
+          "notes": "Explanations, scenarios and answers were internally consistent and technically defensible at the stated version and scope. Current 70-minute exam contract, objective weights, pathway and OT safety boundaries are represented; labs are safely scoped."
+        },
+        "volatility_and_lifecycle": {
+          "status": "passed",
+          "notes": "Changing product/version/UI, source limitations, current delivery/lifecycle or cross-page discrepancies are visibly bounded. Current 70-minute exam contract, objective weights, pathway and OT safety boundaries are represented; labs are safely scoped."
+        },
+        "lab_safety_and_feasibility": {
+          "status": "passed",
+          "notes": "Labs use owned, synthetic, simulated or explicitly authorized nonproduction resources with scoped actions and recovery/cleanup controls. Current 70-minute exam contract, objective weights, pathway and OT safety boundaries are represented; labs are safely scoped."
+        },
+        "readiness_check_quality": {
+          "status": "passed",
+          "notes": "Original checks align to the teaching material, have usable answers, and do not present recalled or leaked exam content. Current 70-minute exam contract, objective weights, pathway and OT safety boundaries are represented; labs are safely scoped."
+        },
+        "review_evidence_accuracy": {
+          "status": "passed",
+          "notes": "Current manifest guide hashes and raw-byte objective-snapshot hashes match; source-validation receipts pass; human-review status is not overstated. Current 70-minute exam contract, objective weights, pathway and OT safety boundaries are represented; labs are safely scoped."
+        },
+        "duplication_and_contamination": {
+          "status": "passed",
+          "notes": "No irrelevant copied passage, suspicious overlap, contradictory template leakage or cross-vendor product leakage was found. Current 70-minute exam contract, objective weights, pathway and OT safety boundaries are represented; labs are safely scoped."
+        }
+      },
+      "findings": [],
+      "notes": "Same-context final review; independent and human review are not claimed. Scope, material claims, exam contract, volatility labels and safe lab boundaries reviewed."
+    },
+    {
+  "exam_code": "NSE-I-MSSP-SECURITY",
+  "vendor_id": "fortinet",
+  "guide_path": "guides/NSE-I-MSSP-SECURITY-fortinet-industry-mssp-security.md",
+  "guide_content_sha256": "dc0afe73238f88c0f108b91a32027e41507b7e19b249422c6302087ece4a790c",
+  "blueprint_snapshot_path": "data/objective-snapshots/nse-i-mssp-security-official-objectives-2026-10-28.txt",
+  "blueprint_snapshot_sha256": "4a35c3f24de8f8c65ed725fc42f5f9e9b3ffcc26d83928f2f09d961658cf94ac",
+  "audited_on": "2026-10-28",
+  "verdict": "blocked",
+  "checks": {
+    "official_scope": {
+      "status": "blocked",
+      "notes": "Credential identity, published option/domain structure, product baseline and lifecycle were compared with exact objective/status snapshots and current official pages. Current 70-minute exam contract, objective weights, pathway and OT safety boundaries are represented; labs are safely scoped."
+    },
+    "objective_coverage": {
+      "status": "passed",
+      "notes": "Published groups are mapped to substantive, findable teaching content and readiness material; multi-option pathways are explicit. Current 70-minute exam contract, objective weights, pathway and OT safety boundaries are represented; labs are safely scoped."
+    },
+    "material_claim_support": {
+      "status": "passed",
+      "notes": "Exam-contract claims are tied to official snapshots/pages; version-sensitive behavior is paired with first-party documentation or visibly qualified. Current 70-minute exam contract, objective weights, pathway and OT safety boundaries are represented; labs are safely scoped."
+    },
+    "exam_contract_integrity": {
+      "status": "passed",
+      "notes": "No unsupported counts, scores, weights, prerequisites, delivery modes or lifecycle dates were found in the reviewed current content. Current 70-minute exam contract, objective weights, pathway and OT safety boundaries are represented; labs are safely scoped."
+    },
+    "technical_coherence": {
+      "status": "passed",
+      "notes": "Explanations, scenarios and answers were internally consistent and technically defensible at the stated version and scope. Current 70-minute exam contract, objective weights, pathway and OT safety boundaries are represented; labs are safely scoped."
+    },
+    "volatility_and_lifecycle": {
+      "status": "passed",
+      "notes": "Changing product/version/UI, source limitations, current delivery/lifecycle or cross-page discrepancies are visibly bounded. Current 70-minute exam contract, objective weights, pathway and OT safety boundaries are represented; labs are safely scoped."
+    },
+    "lab_safety_and_feasibility": {
+      "status": "passed",
+      "notes": "Labs use owned, synthetic, simulated or explicitly authorized nonproduction resources with scoped actions and recovery/cleanup controls. Current 70-minute exam contract, objective weights, pathway and OT safety boundaries are represented; labs are safely scoped."
+    },
+    "readiness_check_quality": {
+      "status": "passed",
+      "notes": "Original checks align to the teaching material, have usable answers, and do not present recalled or leaked exam content. Current 70-minute exam contract, objective weights, pathway and OT safety boundaries are represented; labs are safely scoped."
+    },
+    "review_evidence_accuracy": {
+      "status": "passed",
+      "notes": "Current manifest guide hashes and raw-byte objective-snapshot hashes match; source-validation receipts pass; human-review status is not overstated. Current 70-minute exam contract, objective weights, pathway and OT safety boundaries are represented; labs are safely scoped."
+    },
+    "duplication_and_contamination": {
+      "status": "passed",
+      "notes": "No irrelevant copied passage, suspicious overlap, contradictory template leakage or cross-vendor product leakage was found. Current 70-minute exam contract, objective weights, pathway and OT safety boundaries are represented; labs are safely scoped."
     }
+  },
+  "findings": [
+    {
+      "id": "g07-mssp-objectives-unpublished",
+      "check": "official_scope",
+      "severity": "medium",
+      "category": "scope-gap",
+      "location": "NSE-I-MSSP-SECURITY guide, credential publication state",
+      "evidence": "Fortinet still marks the canonical page Coming soon and publishes no objective list or availability date.",
+      "recommendation": "Keep exam readiness and objective coverage review-required until Fortinet publishes a complete public blueprint and scheduling contract.",
+      "status": "open"
+    }
+  ],
+  "notes": "Same-context final review; independent and human review are not claimed. No public blueprint is available; retain review-required status."
+},
+    {
+      "exam_code": "GH-100",
+      "vendor_id": "github",
+      "guide_path": "guides/GH-100-github-enterprise-administration.md",
+      "guide_content_sha256": "beba710aa55af6a4be4c6e6279b187a77d84123853d510cb89d547cbae556e62",
+      "blueprint_snapshot_path": "data/objective-snapshots/gh-100-official-objectives.txt",
+      "blueprint_snapshot_sha256": "9e671c9dd3ce7ac8914e989a0090422d6f0490fe19f3c9b11de73010453d44b6",
+      "audited_on": "2026-10-28",
+      "verdict": "pass",
+      "checks": {
+        "official_scope": {
+          "status": "passed",
+          "notes": "Official credential/status evidence and the exact accepted objective snapshot were compared; no snapshot or lifecycle transition was accepted."
+        },
+        "objective_coverage": {
+          "status": "passed",
+          "notes": "The accepted objective groups and weights map to substantive guide teaching, scenarios and original readiness checks."
+        },
+        "material_claim_support": {
+          "status": "passed",
+          "notes": "Material guide claims are supported by registered official sources; access failures are treated as limitations, not as technical evidence."
+        },
+        "exam_contract_integrity": {
+          "status": "passed",
+          "notes": "Exam count, duration, prerequisites and delivery statements remain tied to official evidence and recommendations are distinguished from requirements."
+        },
+        "technical_coherence": {
+          "status": "passed",
+          "notes": "Product explanations, distinctions and failure cases are coherent with cited evidence and scoped to the relevant release/deployment."
+        },
+        "volatility_and_lifecycle": {
+          "status": "passed",
+          "notes": "Version, rollout, entitlement, lifecycle and availability details are dated and qualified; new product context is separate from objectives."
+        },
+        "lab_safety_and_feasibility": {
+          "status": "passed",
+          "notes": "Proposed activities use mock, isolated or authorized environments and do not direct unreviewed production changes."
+        },
+        "readiness_check_quality": {
+          "status": "passed",
+          "notes": "Readiness prompts are original and supported by adjacent teaching; no recalled exam items were identified."
+        },
+        "review_evidence_accuracy": {
+          "status": "passed",
+          "notes": "Manifest guide/objective bindings and source-validation evidence were checked; current scoped reachability limitations are disclosed."
+        },
+        "duplication_and_contamination": {
+          "status": "passed",
+          "notes": "No suspicious copying, unrelated-vendor contamination, contradictory template content or exam-dump indicators were identified."
+        }
+      },
+      "findings": [],
+      "notes": "Same-context final review; independent and human review are not claimed. Scope, material claims, exam contract, volatility labels and safe lab boundaries reviewed."
+    },
+    {
+      "exam_code": "GH-600",
+      "vendor_id": "github",
+      "guide_path": "guides/GH-600-developing-agentic-ai-systems.md",
+      "guide_content_sha256": "f50efcef1fa65f9656e583d5675056b8cdfbcabdbd1bdf5a883e1807c248d914",
+      "blueprint_snapshot_path": "data/objective-snapshots/gh-600-official-objectives.txt",
+      "blueprint_snapshot_sha256": "aec7750e2180662b00b676c42477e968c4286eb023ade65d68b3936951df0830",
+      "audited_on": "2026-10-28",
+      "verdict": "pass",
+      "checks": {
+        "official_scope": {
+          "status": "passed",
+          "notes": "Official credential/status evidence and the exact accepted objective snapshot were compared; no snapshot or lifecycle transition was accepted."
+        },
+        "objective_coverage": {
+          "status": "passed",
+          "notes": "The accepted objective groups and weights map to substantive guide teaching, scenarios and original readiness checks."
+        },
+        "material_claim_support": {
+          "status": "passed",
+          "notes": "Material guide claims are supported by registered official sources; access failures are treated as limitations, not as technical evidence."
+        },
+        "exam_contract_integrity": {
+          "status": "passed",
+          "notes": "Exam count, duration, prerequisites and delivery statements remain tied to official evidence and recommendations are distinguished from requirements."
+        },
+        "technical_coherence": {
+          "status": "passed",
+          "notes": "Product explanations, distinctions and failure cases are coherent with cited evidence and scoped to the relevant release/deployment."
+        },
+        "volatility_and_lifecycle": {
+          "status": "passed",
+          "notes": "Version, rollout, entitlement, lifecycle and availability details are dated and qualified; new product context is separate from objectives."
+        },
+        "lab_safety_and_feasibility": {
+          "status": "passed",
+          "notes": "Proposed activities use mock, isolated or authorized environments and do not direct unreviewed production changes."
+        },
+        "readiness_check_quality": {
+          "status": "passed",
+          "notes": "Readiness prompts are original and supported by adjacent teaching; no recalled exam items were identified."
+        },
+        "review_evidence_accuracy": {
+          "status": "passed",
+          "notes": "Manifest guide/objective bindings and source-validation evidence were checked; current scoped reachability limitations are disclosed."
+        },
+        "duplication_and_contamination": {
+          "status": "passed",
+          "notes": "No suspicious copying, unrelated-vendor contamination, contradictory template content or exam-dump indicators were identified."
+        }
+      },
+      "findings": [],
+      "notes": "Same-context final review; independent and human review are not claimed. Scope, material claims, exam contract, volatility labels and safe lab boundaries reviewed."
+    },
+    {
+      "exam_code": "AIB-C01",
+      "vendor_id": "aws",
+      "guide_path": "guides/AIB-C01-aws-certified-ai-business-strategist.md",
+      "guide_content_sha256": "81f81b317bd749bafd077b828ac70759487d2bd248cc5377d805590320e009a2",
+      "blueprint_snapshot_path": "data/objective-snapshots/aib-c01-official-objectives.txt",
+      "blueprint_snapshot_sha256": "84365cfe2180906cec213c48075b2823a10204c07eb9b01f983fb0817a58255d",
+      "audited_on": "2026-10-28",
+      "verdict": "pass-with-notes",
+      "checks": {
+        "official_scope": {
+          "status": "passed",
+          "notes": "The four 28/24/24/24 percent ML and AI engineering beta domains remain accurately named, weighted, and version-bounded."
+        },
+        "objective_coverage": {
+          "status": "passed",
+          "notes": "Substantive coverage of data, embeddings, traditional ML, foundation models, RAG, agents, deployment, observability, cost, and security is findable across explanations, scenarios, practice, and readiness material."
+        },
+        "material_claim_support": {
+          "status": "passed",
+          "notes": "Passed source review mla-c02-2026-09-01-source-validation provides the primary evidence path; 16 sources are healthy and 1 automation-blocked sources are transparently bounded."
+        },
+        "exam_contract_integrity": {
+          "status": "passed",
+          "notes": "Published and unpublished assessment facts, eligibility or certification distinctions, and lifecycle statements remain separated without invented details."
+        },
+        "technical_coherence": {
+          "status": "passed",
+          "notes": "The guide's treatment of data, embeddings, traditional ML, foundation models, RAG, agents, deployment, observability, cost, and security is internally consistent and uses evidence, failure, and rollback reasoning."
+        },
+        "volatility_and_lifecycle": {
+          "status": "passed",
+          "notes": "Beta delivery, January 14, 2027 GA, and possible scoring, asset, or feature changes are explicit."
+        },
+        "lab_safety_and_feasibility": {
+          "status": "passed",
+          "notes": "Practice work uses authorized or synthetic contexts, bounded changes, evidence, rollback, cleanup, or an honest tabletop substitute."
+        },
+        "readiness_check_quality": {
+          "status": "passed",
+          "notes": "Original questions and checklists test defensible decisions and distinctions without recalled or reconstructed exam material."
+        },
+        "review_evidence_accuracy": {
+          "status": "passed",
+          "notes": "The passed source review and exact guide and objective hashes bind this result without claiming human review."
+        },
+        "duplication_and_contamination": {
+          "status": "passed",
+          "notes": "Normalized long-line comparison found only benign shared disclosure or integrity language; no irrelevant vendor leakage or suspicious substantive overlap was found."
+        }
+      },
+      "findings": [
+        {
+          "id": "g07-aib-duration-discrepancy",
+          "check": "exam_contract_integrity",
+          "severity": "low",
+          "category": "exam-contract",
+          "location": "AIB-C01 guide, beta exam duration note",
+          "evidence": "AWS certification page lists 170 minutes for beta delivery while the detailed exam guide states 130 minutes.",
+          "recommendation": "Preserve both official values with their source context and confirm the duration shown at booking; do not claim a resolved standard exam contract.",
+          "status": "open"
+        }
+      ],
+      "notes": "Same-context final review; independent and human review are not claimed. Credential page (170-minute beta) and detailed guide (130-minute) duration conflict remains explicit."
+    },
+    {
+      "exam_code": "AIF-C01",
+      "vendor_id": "aws",
+      "guide_path": "guides/AIF-C01-aws-certified-ai-practitioner.md",
+      "guide_content_sha256": "5be78b8a2d688f9103994d445bf407d31a8db55c5e334111341bdd40d776db37",
+      "blueprint_snapshot_path": "data/objective-snapshots/aif-c01-official-objectives.txt",
+      "blueprint_snapshot_sha256": "7ff78e9b2aac28fcc1440e8465c85e881dca3010fdb837e51de552f6ae5118f6",
+      "audited_on": "2026-10-28",
+      "verdict": "pass",
+      "checks": {
+        "official_scope": {
+          "status": "passed",
+          "notes": "The four 28/24/24/24 percent ML and AI engineering beta domains remain accurately named, weighted, and version-bounded."
+        },
+        "objective_coverage": {
+          "status": "passed",
+          "notes": "Substantive coverage of data, embeddings, traditional ML, foundation models, RAG, agents, deployment, observability, cost, and security is findable across explanations, scenarios, practice, and readiness material."
+        },
+        "material_claim_support": {
+          "status": "passed",
+          "notes": "Passed source review mla-c02-2026-09-01-source-validation provides the primary evidence path; 16 sources are healthy and 1 automation-blocked sources are transparently bounded."
+        },
+        "exam_contract_integrity": {
+          "status": "passed",
+          "notes": "Published and unpublished assessment facts, eligibility or certification distinctions, and lifecycle statements remain separated without invented details."
+        },
+        "technical_coherence": {
+          "status": "passed",
+          "notes": "The guide's treatment of data, embeddings, traditional ML, foundation models, RAG, agents, deployment, observability, cost, and security is internally consistent and uses evidence, failure, and rollback reasoning."
+        },
+        "volatility_and_lifecycle": {
+          "status": "passed",
+          "notes": "Beta delivery, January 14, 2027 GA, and possible scoring, asset, or feature changes are explicit."
+        },
+        "lab_safety_and_feasibility": {
+          "status": "passed",
+          "notes": "Practice work uses authorized or synthetic contexts, bounded changes, evidence, rollback, cleanup, or an honest tabletop substitute."
+        },
+        "readiness_check_quality": {
+          "status": "passed",
+          "notes": "Original questions and checklists test defensible decisions and distinctions without recalled or reconstructed exam material."
+        },
+        "review_evidence_accuracy": {
+          "status": "passed",
+          "notes": "The passed source review and exact guide and objective hashes bind this result without claiming human review."
+        },
+        "duplication_and_contamination": {
+          "status": "passed",
+          "notes": "Normalized long-line comparison found only benign shared disclosure or integrity language; no irrelevant vendor leakage or suspicious substantive overlap was found."
+        }
+      },
+      "findings": [],
+      "notes": "Same-context final review; independent and human review are not claimed. Scope, material claims, exam contract, volatility labels and safe lab boundaries reviewed."
+    },
+    {
+      "exam_code": "AIP-C01",
+      "vendor_id": "aws",
+      "guide_path": "guides/AIP-C01-aws-certified-generative-ai-developer-professional.md",
+      "guide_content_sha256": "18a7a184a6fd4d6d2b83a93681dbd6e6c2f84986758f0cf87a233599dc7471a3",
+      "blueprint_snapshot_path": "data/objective-snapshots/aip-c01-official-objectives.txt",
+      "blueprint_snapshot_sha256": "b5654086954cdac1322092486e79c2b90267a3848117954fd153f40b490597cf",
+      "audited_on": "2026-10-28",
+      "verdict": "pass",
+      "checks": {
+        "official_scope": {
+          "status": "passed",
+          "notes": "The four 28/24/24/24 percent ML and AI engineering beta domains remain accurately named, weighted, and version-bounded."
+        },
+        "objective_coverage": {
+          "status": "passed",
+          "notes": "Substantive coverage of data, embeddings, traditional ML, foundation models, RAG, agents, deployment, observability, cost, and security is findable across explanations, scenarios, practice, and readiness material."
+        },
+        "material_claim_support": {
+          "status": "passed",
+          "notes": "Passed source review mla-c02-2026-09-01-source-validation provides the primary evidence path; 16 sources are healthy and 1 automation-blocked sources are transparently bounded."
+        },
+        "exam_contract_integrity": {
+          "status": "passed",
+          "notes": "Published and unpublished assessment facts, eligibility or certification distinctions, and lifecycle statements remain separated without invented details."
+        },
+        "technical_coherence": {
+          "status": "passed",
+          "notes": "The guide's treatment of data, embeddings, traditional ML, foundation models, RAG, agents, deployment, observability, cost, and security is internally consistent and uses evidence, failure, and rollback reasoning."
+        },
+        "volatility_and_lifecycle": {
+          "status": "passed",
+          "notes": "Beta delivery, January 14, 2027 GA, and possible scoring, asset, or feature changes are explicit."
+        },
+        "lab_safety_and_feasibility": {
+          "status": "passed",
+          "notes": "Practice work uses authorized or synthetic contexts, bounded changes, evidence, rollback, cleanup, or an honest tabletop substitute."
+        },
+        "readiness_check_quality": {
+          "status": "passed",
+          "notes": "Original questions and checklists test defensible decisions and distinctions without recalled or reconstructed exam material."
+        },
+        "review_evidence_accuracy": {
+          "status": "passed",
+          "notes": "The passed source review and exact guide and objective hashes bind this result without claiming human review."
+        },
+        "duplication_and_contamination": {
+          "status": "passed",
+          "notes": "Normalized long-line comparison found only benign shared disclosure or integrity language; no irrelevant vendor leakage or suspicious substantive overlap was found."
+        }
+      },
+      "findings": [],
+      "notes": "Same-context final review; independent and human review are not claimed. Scope, material claims, exam contract, volatility labels and safe lab boundaries reviewed."
+    },
+    {
+      "exam_code": "ANS-C01",
+      "vendor_id": "aws",
+      "guide_path": "guides/ANS-C01-aws-certified-advanced-networking-specialty.md",
+      "guide_content_sha256": "079082b1fcfe6061c954cd9f96beaa15718654cf9ec3fbd478f75344b9103513",
+      "blueprint_snapshot_path": "data/objective-snapshots/ans-c01-official-objectives.txt",
+      "blueprint_snapshot_sha256": "6e641ee1f39d66f182de5da5a84b2664cae1c119bc4377faa184f6de05d64e01",
+      "audited_on": "2026-10-28",
+      "verdict": "pass",
+      "checks": {
+        "official_scope": {
+          "status": "passed",
+          "notes": "The four 28/24/24/24 percent ML and AI engineering beta domains remain accurately named, weighted, and version-bounded."
+        },
+        "objective_coverage": {
+          "status": "passed",
+          "notes": "Substantive coverage of data, embeddings, traditional ML, foundation models, RAG, agents, deployment, observability, cost, and security is findable across explanations, scenarios, practice, and readiness material."
+        },
+        "material_claim_support": {
+          "status": "passed",
+          "notes": "Passed source review mla-c02-2026-09-01-source-validation provides the primary evidence path; 16 sources are healthy and 1 automation-blocked sources are transparently bounded."
+        },
+        "exam_contract_integrity": {
+          "status": "passed",
+          "notes": "Published and unpublished assessment facts, eligibility or certification distinctions, and lifecycle statements remain separated without invented details."
+        },
+        "technical_coherence": {
+          "status": "passed",
+          "notes": "The guide's treatment of data, embeddings, traditional ML, foundation models, RAG, agents, deployment, observability, cost, and security is internally consistent and uses evidence, failure, and rollback reasoning."
+        },
+        "volatility_and_lifecycle": {
+          "status": "passed",
+          "notes": "Beta delivery, January 14, 2027 GA, and possible scoring, asset, or feature changes are explicit."
+        },
+        "lab_safety_and_feasibility": {
+          "status": "passed",
+          "notes": "Practice work uses authorized or synthetic contexts, bounded changes, evidence, rollback, cleanup, or an honest tabletop substitute."
+        },
+        "readiness_check_quality": {
+          "status": "passed",
+          "notes": "Original questions and checklists test defensible decisions and distinctions without recalled or reconstructed exam material."
+        },
+        "review_evidence_accuracy": {
+          "status": "passed",
+          "notes": "The passed source review and exact guide and objective hashes bind this result without claiming human review."
+        },
+        "duplication_and_contamination": {
+          "status": "passed",
+          "notes": "Normalized long-line comparison found only benign shared disclosure or integrity language; no irrelevant vendor leakage or suspicious substantive overlap was found."
+        }
+      },
+      "findings": [],
+      "notes": "Same-context final review; independent and human review are not claimed. Scope, material claims, exam contract, volatility labels and safe lab boundaries reviewed."
+    },
+    {
+      "exam_code": "CLF-C02",
+      "vendor_id": "aws",
+      "guide_path": "guides/CLF-C02-aws-certified-cloud-practitioner.md",
+      "guide_content_sha256": "2b421d40b0b12e0a2eb6d8ca1cf0c98c2f203a7cee10e456473e0197aa580313",
+      "blueprint_snapshot_path": "data/objective-snapshots/clf-c02-official-objectives.txt",
+      "blueprint_snapshot_sha256": "f7672b5ced01847d85eb6909ef171881785be1263868286068422231d7b7a5da",
+      "audited_on": "2026-10-28",
+      "verdict": "pass",
+      "checks": {
+        "official_scope": {
+          "status": "passed",
+          "notes": "The four 28/24/24/24 percent ML and AI engineering beta domains remain accurately named, weighted, and version-bounded."
+        },
+        "objective_coverage": {
+          "status": "passed",
+          "notes": "Substantive coverage of data, embeddings, traditional ML, foundation models, RAG, agents, deployment, observability, cost, and security is findable across explanations, scenarios, practice, and readiness material."
+        },
+        "material_claim_support": {
+          "status": "passed",
+          "notes": "Passed source review mla-c02-2026-09-01-source-validation provides the primary evidence path; 16 sources are healthy and 1 automation-blocked sources are transparently bounded."
+        },
+        "exam_contract_integrity": {
+          "status": "passed",
+          "notes": "Published and unpublished assessment facts, eligibility or certification distinctions, and lifecycle statements remain separated without invented details."
+        },
+        "technical_coherence": {
+          "status": "passed",
+          "notes": "The guide's treatment of data, embeddings, traditional ML, foundation models, RAG, agents, deployment, observability, cost, and security is internally consistent and uses evidence, failure, and rollback reasoning."
+        },
+        "volatility_and_lifecycle": {
+          "status": "passed",
+          "notes": "Beta delivery, January 14, 2027 GA, and possible scoring, asset, or feature changes are explicit."
+        },
+        "lab_safety_and_feasibility": {
+          "status": "passed",
+          "notes": "Practice work uses authorized or synthetic contexts, bounded changes, evidence, rollback, cleanup, or an honest tabletop substitute."
+        },
+        "readiness_check_quality": {
+          "status": "passed",
+          "notes": "Original questions and checklists test defensible decisions and distinctions without recalled or reconstructed exam material."
+        },
+        "review_evidence_accuracy": {
+          "status": "passed",
+          "notes": "The passed source review and exact guide and objective hashes bind this result without claiming human review."
+        },
+        "duplication_and_contamination": {
+          "status": "passed",
+          "notes": "Normalized long-line comparison found only benign shared disclosure or integrity language; no irrelevant vendor leakage or suspicious substantive overlap was found."
+        }
+      },
+      "findings": [],
+      "notes": "Same-context final review; independent and human review are not claimed. Scope, material claims, exam contract, volatility labels and safe lab boundaries reviewed."
+    },
+    {
+      "exam_code": "DEA-C01",
+      "vendor_id": "aws",
+      "guide_path": "guides/DEA-C01-aws-certified-data-engineer-associate.md",
+      "guide_content_sha256": "97d9a2fcd7080fe9664eb43c6cfc228a2ed84a28441eb2d153c838d2484abbce",
+      "blueprint_snapshot_path": "data/objective-snapshots/dea-c01-official-objectives.txt",
+      "blueprint_snapshot_sha256": "5a5952f0c845f8757499fade268fd25b2689663589c2734d82379d2a49c0196f",
+      "audited_on": "2026-10-28",
+      "verdict": "pass",
+      "checks": {
+        "official_scope": {
+          "status": "passed",
+          "notes": "The four 28/24/24/24 percent ML and AI engineering beta domains remain accurately named, weighted, and version-bounded."
+        },
+        "objective_coverage": {
+          "status": "passed",
+          "notes": "Substantive coverage of data, embeddings, traditional ML, foundation models, RAG, agents, deployment, observability, cost, and security is findable across explanations, scenarios, practice, and readiness material."
+        },
+        "material_claim_support": {
+          "status": "passed",
+          "notes": "Passed source review mla-c02-2026-09-01-source-validation provides the primary evidence path; 16 sources are healthy and 1 automation-blocked sources are transparently bounded."
+        },
+        "exam_contract_integrity": {
+          "status": "passed",
+          "notes": "Published and unpublished assessment facts, eligibility or certification distinctions, and lifecycle statements remain separated without invented details."
+        },
+        "technical_coherence": {
+          "status": "passed",
+          "notes": "The guide's treatment of data, embeddings, traditional ML, foundation models, RAG, agents, deployment, observability, cost, and security is internally consistent and uses evidence, failure, and rollback reasoning."
+        },
+        "volatility_and_lifecycle": {
+          "status": "passed",
+          "notes": "Beta delivery, January 14, 2027 GA, and possible scoring, asset, or feature changes are explicit."
+        },
+        "lab_safety_and_feasibility": {
+          "status": "passed",
+          "notes": "Practice work uses authorized or synthetic contexts, bounded changes, evidence, rollback, cleanup, or an honest tabletop substitute."
+        },
+        "readiness_check_quality": {
+          "status": "passed",
+          "notes": "Original questions and checklists test defensible decisions and distinctions without recalled or reconstructed exam material."
+        },
+        "review_evidence_accuracy": {
+          "status": "passed",
+          "notes": "The passed source review and exact guide and objective hashes bind this result without claiming human review."
+        },
+        "duplication_and_contamination": {
+          "status": "passed",
+          "notes": "Normalized long-line comparison found only benign shared disclosure or integrity language; no irrelevant vendor leakage or suspicious substantive overlap was found."
+        }
+      },
+      "findings": [],
+      "notes": "Same-context final review; independent and human review are not claimed. Scope, material claims, exam contract, volatility labels and safe lab boundaries reviewed."
+    }
+  ],
+  "summary": {
+    "guide_count": 10,
+    "pass": 8,
+    "pass_with_notes": 1,
+    "fix_required": 0,
+    "blocked": 1,
+    "open_findings": 2,
+    "closed_findings": 0
+  }
+}
 ]
 }

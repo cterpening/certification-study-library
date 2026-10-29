@@ -6,19 +6,23 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-28
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-28
+upcoming_change_checked: 2026-10-28
 ---
 
 # AIP-C01 AWS Certified Generative AI Developer - Professional Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed on September 28, 2026, including all 98 detailed skills. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#aip-c01-coverage-record). The [official AIP-C01 exam guide](https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/ai-professional-01.html) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed on October 28, 2026, including all 98 detailed skills. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#aip-c01-coverage-record). The [official AIP-C01 exam guide](https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/ai-professional-01.html) is authoritative.
 
 **Current baseline:** Current standard five-domain AIP-C01 AWS Certified Generative AI Developer - Professional guide; 65 scored plus 10 unscored questions<br>
 **Upcoming blueprint change:** None announced on the official exam guide or certification page as of September 28, 2026. See the [deep-review report](../docs/research/2026-09-28-aip-c01-deep-review.md).<br>
 **Important freshness boundary:** AWS announced standard-exam registration in March 2026 and identified March 31 as the final beta day, with the standard scope refreshed for fast-moving services including Amazon Bedrock AgentCore. Use the current `ai-professional-01` guide—not an early beta outline or an unofficial AP1/AIGDP code. Model catalogs, APIs, regions, quotas, pricing, safety features, AgentCore components, Strands, AWS Agent Squad, MCP, and learning products are **VERIFY CURRENT**.<br>
 **Official source:** [AWS Certified Generative AI Developer - Professional exam guide](https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/ai-professional-01.html)
+
+## Current AgentCore context — October 28, 2026
+
+AWS released AgentCore Runtime V2 on September 18 in five named regions and documents `platformVersion=V2` as the opt-in. Its October AgentCore Gateway update adds Bedrock `InvokeModel` and `InvokeModelWithResponseStream` wire-format support for inference targets, translating between Bedrock and OpenAI/Anthropic SDK formats at the aggregate inference endpoint. Treat exact regions, API compatibility, availability, and runtime version as volatile implementation context; the AIP-C01 published five-domain outline remains the exam authority.
 
 ## How to use this guide
 

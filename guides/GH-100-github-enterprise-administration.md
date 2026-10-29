@@ -6,20 +6,20 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-07
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-07
+upcoming_change_checked: 2026-10-28
 ---
 
 # GH-100 GitHub Enterprise Administrator Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#gh-100-coverage-record). The [official GH-100 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-100) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on October 28, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#gh-100-coverage-record). The [official GH-100 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-100) is authoritative.
 
 **Current baseline:** Skills measured as of July 2026<br>
-**Upcoming blueprint change:** None announced on the official study guide as of August 31, 2026.<br>
+**Upcoming blueprint change:** None announced on the official study guide as of October 28, 2026.<br>
 **Official source:** [GH-100 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-100)
 
-## Living-guide watch — September 7, 2026
+## Earlier platform notes — September 7, 2026
 
 **Confirmed enterprise Actions deadlines:** GitHub's [runner enforcement notice](https://github.blog/changelog/2026-06-12-github-actions-minimum-version-enforcement-timeline-for-self-hosted-runners/) sets version 2.329.0 as the registration floor, requires releases within 30 days for job execution, and begins GitHub Enterprise Cloud enforcement September 25, 2026. Its [Node 20 notice](https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/) schedules runtime removal for September 23 and identifies older macOS and ARM32 runner impacts. Govern runner inventory, update reachability, rollout evidence, and exceptions rather than treating a minimum version as permanently sufficient.
 
@@ -30,6 +30,10 @@ upcoming_change_checked: 2026-09-07
 **Concern to recheck:** These operational changes are adjacent to stable GH-100 domains and vary by deployment. Verify current GitHub Enterprise Cloud, data-residency, and GHES behavior and do not infer a blueprint revision from a changelog entry.
 
 > **GHES release check — September 27, 2026:** The [official release ledger](https://docs.github.com/en/enterprise-server@latest/admin/all-releases) lists GHES 3.22 as released September 8, 2026 and 3.17's support closing date as September 22. Use documentation for the installed release when practicing upgrades, backup/restore, availability, runners, and CodeQL. A `latest` documentation link now resolves to 3.22; it does not prove an older appliance supports every documented feature. The GH-100 exam blueprint itself is unchanged in this check.
+
+## Living-guide watch — October 28, 2026
+
+The July 2026 GH-100 blueprint remains current. GitHub's October enterprise roundup adds practical governance context: enterprise administrators can enforce GitHub Advanced Security configurations so organization and repository owners cannot override them; external custom properties can sync repository ownership, lifecycle, service-tier, and compliance metadata as read-only values for filtering and ruleset targeting. GitHub also announced a migration for stateless GitHub App installation tokens; integrations should tolerate longer token values and stop depending on the temporary compatibility header by November 30. These are dated platform updates, not new exam objectives.
 
 ## How to use this guide
 

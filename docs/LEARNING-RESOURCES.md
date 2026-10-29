@@ -170,14 +170,23 @@ The repository's complete MIT license was present and inspected October 28: Copy
 
 ### GH-100 — GitHub Enterprise Administrator
 
-- Official: [Microsoft Learn Part 1](https://learn.microsoft.com/en-us/training/paths/github-administration-products/) and [Part 2](https://learn.microsoft.com/en-us/training/paths/github-admin-2/github-admin-2/)
-- Free official assessment (about 1–2 hours for an attempt and review): [Microsoft GH-100 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/github-administration/practice/assessment?assessment-type=practice&assessmentId=1841205577&practice-assessment-type=certification); Microsoft account required
-- Hands-on support: [GitHub Skills](https://github.com/skills) for repository, Actions, and security exercises; enterprise identity and governance still require a suitable lab or sandbox
-- Structured subscription path: [Pluralsight GitHub Administration](https://www.pluralsight.com/paths/github-administration)
-- Compact subscription course (3 hours 3 minutes): [LinkedIn Learning GitHub Administration Cert Prep](https://www.linkedin.com/learning/github-administration-cert-prep), released September 2025; compare its older-scope and adjacent material with the July 2026 blueprint
-- Assessment supplement (about 4–8 hours for simulation, targeted practice, and review): [MeasureUp GH-100 practice test](https://www.measureup.com/microsoft-gh-100-github-administration-practice-test.html), with 105 questions. The public page's detailed domain list is administration-oriented, but some surrounding marketing copy incorrectly describes Copilot; validate every explanation against the current blueprint and GitHub Docs.
+Resource details from the [GH-100 guide](../guides/GH-100-github-enterprise-administration.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-No current individual Whizlabs, O'Reilly, or instruction-first Udemy GH-100 resource was verified during this review. That is an open catalog gap, not a claim that none exists.
+This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Start with the official paths, then pick the explanations, formats, and practice that work for you and close specific blueprint gaps. Times are approximate consumption time at normal speed; labs, note-taking, review, and independent practice add time.
+
+| Resource | Access | Estimated time | Best use and caveat |
+|---|---|---:|---|
+| [Microsoft Learn — GitHub Administration Part 1](https://learn.microsoft.com/en-us/training/paths/github-administration-products/) and [Part 2](https://learn.microsoft.com/en-us/training/paths/github-admin-2/github-admin-2/) | Free | About 12–16 hours | Official starting point and closest match to the published objectives |
+| [Microsoft — GH-100 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/github-administration/practice/assessment?assessment-type=practice&assessmentId=1841205577&practice-assessment-type=certification) | Free Microsoft account | About 1–2 hours for an attempt and review | Repeatable official readiness check with rationales and learning links; start here before buying another assessment |
+| [GitHub Skills](https://github.com/skills) | Free account | Select 2–5 hours | Repository, Actions, and security practice; enterprise identity and governance still need a suitable lab or sandbox |
+| [Pluralsight — GitHub Administration](https://www.pluralsight.com/paths/github-administration) | Subscription | About 12–18 hours | Structured administration path; compare its module dates and coverage with the July 2026 blueprint |
+| [LinkedIn Learning — GitHub Administration Cert Prep](https://www.linkedin.com/learning/github-administration-cert-prep) | Subscription | 3 hours 3 minutes | Noah Gift course released September 2025; useful compact survey, but it includes older-scope material and needs a July 2026 objective delta |
+| [MeasureUp — GH-100 practice test](https://www.measureup.com/microsoft-gh-100-github-administration-practice-test.html) | Paid test or subscription; free demo available | About 4–8 hours for simulation and review | Tier 6 assessment with 105 questions; its detailed domains are administration-oriented, but some public marketing copy incorrectly describes Copilot, so validate explanations against the current blueprint and GitHub Docs |
+| [GitHub YouTube](https://www.youtube.com/@GitHub) | Free | Select 2–6 hours by gap | Product demonstrations and enterprise sessions; select videos by objective rather than treating the channel as an exam course |
+| [GitHub Enterprise Server documentation](https://docs.github.com/en/enterprise-server@latest/admin) | Free | Select 4–8 hours by GHES gap | Primary source for backup, HA, upgrades, support, and appliance operations |
+| [GitHub Enterprise Importer documentation](https://docs.github.com/en/migrations/using-github-enterprise-importer) | Free | About 2–4 hours | Related migration planning and validation; adjacent rather than named exam scope |
+
+No current individual Whizlabs, O'Reilly, or instruction-first Udemy GH-100 course was verified during the August 31, 2026 review. See the broader [Places to learn catalog](LEARNING-RESOURCES.md) and its selection criteria.
 
 ### GH-500 — GitHub Advanced Security
 
@@ -199,13 +208,20 @@ No current individual Whizlabs, O'Reilly, or instruction-first Udemy GH-500 cour
 
 ### GH-600 — Developing in Agentic AI Systems (beta)
 
-- Official exam authority: [GH-600 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-600) and [beta credential page](https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-developer/)
-- Official course hub: [GH-600T00-A](https://learn.microsoft.com/en-us/training/courses/gh-600t00)
-- Official self-paced training: [Part 1](https://learn.microsoft.com/en-us/training/paths/gh-developing-agentic-systems-1) covers SDLC architecture, tools, MCP, and execution environments; [Part 2](https://learn.microsoft.com/en-us/training/paths/github-agentic-systems-part-two/github-agentic-systems-part-two) covers multi-agent orchestration, memory/state/evaluation, and governance
-- Current product reference: [GitHub agent concepts](https://docs.github.com/en/copilot/concepts/agents), [custom-agent configuration](https://docs.github.com/en/copilot/reference/custom-agents-configuration), [hooks](https://docs.github.com/en/copilot/reference/hooks-reference), and [enterprise agent management](https://docs.github.com/en/copilot/concepts/enterprise/agent-management)
-- Preview hands-on context: [Creating GitHub Agentic Workflows](https://docs.github.com/en/copilot/how-tos/github-agentic-workflows/creating-github-agentic-workflows); treat its syntax and availability as volatile rather than permanent exam scope
+Resource details from the [GH-600 guide](../guides/GH-600-developing-agentic-ai-systems.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-No exact third-party GH-600 course or practice product was promoted during the September 7 review. The exam is in beta, so use the official outline and learning paths as the scope authority, avoid dump-oriented claims, and recheck commercial material after the scored exam and stable blueprint are published.
+This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Start with the current official paths, then use documentation and this guide's labs to close specific gaps. Times are approximate reading or module time; note-taking, setup, repetition, and independent practice add time.
+
+| Resource | Access | Estimated time | Best use and caveat |
+|---|---|---:|---|
+| [Microsoft Learn — Developing in Agentic AI Systems Part 1](https://learn.microsoft.com/en-us/training/paths/gh-developing-agentic-systems-1) | Free; account optional for reading | About 2 hours 45 minutes | Official architecture, SDLC, tool, MCP, and execution-environment sequence |
+| [Microsoft Learn — Developing in Agentic AI Systems Part 2](https://learn.microsoft.com/en-us/training/paths/github-agentic-systems-part-two/github-agentic-systems-part-two) | Free; account optional for reading | About 3 hours 5 minutes | Official multi-agent, memory/state/evaluation, guardrail, and operations sequence |
+| [GH-600 course hub](https://learn.microsoft.com/en-us/training/courses/gh-600t00) | Free syllabus; instructor-led delivery varies | About 30 minutes to map the syllabus; course delivery varies | Use to confirm the current role, prerequisites, and official learning sequence |
+| [GitHub agent concepts](https://docs.github.com/en/copilot/concepts/agents), [custom-agent configuration](https://docs.github.com/en/copilot/reference/custom-agents-configuration), and [hooks reference](https://docs.github.com/en/copilot/reference/hooks-reference) | Free | Select about 3–6 hours by gap | Current product depth; client, plan, preview, syntax, and policy behavior can change |
+| [Creating GitHub Agentic Workflows](https://docs.github.com/en/copilot/how-tos/github-agentic-workflows/creating-github-agentic-workflows) | Free; hands-on use requires supported tools/accounts | About 1–2 hours for reading and a disposable-repository exercise | Useful CI integration practice, but public preview and adjacent to the durable objective rather than permanent syntax authority |
+| This guide's seven labs | Free; some product features need an eligible account | About 7–14 hours | Evidence-first practice; use tabletop substitutes where a licensed or enterprise feature is unavailable |
+
+No exact third-party GH-600 course or practice product was promoted in the September 7 review. That is a current catalog gap, not a claim that none exists. Avoid products centered on “real,” recalled, or leaked questions, and recheck all objective-alignment claims against the official study guide.
 
 ### AZ-900 — Microsoft Azure Fundamentals
 
@@ -5238,6 +5254,60 @@ This is a selective learning path, not a complete list of OCI architecture resou
 | [Official OCI Architect Professional learning path](https://mylearn.oracle.com/ou/learning-path/become-an-oci-architect-professional-2026/163270) | Paid Professional course; Oracle account sign-in | **26+ hours** as published by Oracle University |
 | [OCI best practices and reference architectures](https://docs.oracle.com/en/solutions/oci-best-practices/) | Public | **10–14 hours** targeted study |
 | Eight labs in this guide | Authorized OCI tenancy or paper design | **28–40 hours** plus two timed architecture reviews |
+
+### NSE-8 — Fortinet NSE 8 Cybersecurity Expert
+
+Resource details from the [NSE-8 guide](../guides/NSE-8-fortinet-nse-8-cybersecurity-expert.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list, and it is not a prescription to consume everything. NSE 8 is a practical expert journey: use the official contracts and select current documents and labs for measured gaps. Times are publisher-listed where visible or clearly labeled estimates.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [NSE 8 Cybersecurity Expert](https://training.fortinet.com/local/staticpage/view.php?page=nse_8) | Public | 30–45 min | Credential prerequisites, Core-plus-Elective rule, timing, validity, renewal, availability and policies |
+| [Fortinet certification program catalog](https://www.fortinet.com/training-certification) | Public | 15–30 min | Program pathway and two-year validity context; practical pages remain authoritative for exam scope |
+| [2026 NSE Training Program Update](https://www.fortinet.com/nse-training-update) | Public | 30–60 min | Standard 200-point renewal route, prerequisite status, activity categories/caps and transition rules |
+| [NSE 8 Core Practical](https://training.fortinet.com/local/staticpage/view.php?page=880_core_exam) | Public | 60–90 min | Current weighted Core blueprint, product versions, delivery, price and task contract |
+| [Secure Networking Practical](https://training.fortinet.com/local/staticpage/view.php?page=881_secure_networking_exam) | Public | 45–75 min | December 2026 status watch and exact Secure Networking elective blueprint |
+| [Application Security Practical](https://training.fortinet.com/local/staticpage/view.php?page=882_application_security_exam) | Public | 45–75 min | January 2027 status watch and exact Application Security elective blueprint |
+| [Security Operations Practical](https://training.fortinet.com/local/staticpage/view.php?page=883_security_operations_exam) | Public | 45–75 min | March 2027 status watch and exact Security Operations elective blueprint |
+| [Fortinet Training Institute library](https://training.fortinet.com/local/library/?category=Certification%3AExpert) | Account; Immersion/labs may be gated or paid | 20–40 min selection; 80–160+ hr practice estimate | Locate the current NSE 8 Immersion course and build an elective-aligned lab plan |
+| [FortiOS 7.6 documentation](https://docs.fortinet.com/product/fortigate/7.6) | Public | 30–50 hr selected labs/reference | Core networking, HA, VPN/SD-WAN, NGFW, SASE, authentication, Fabric and troubleshooting |
+| [FortiGate 7.6 SD-WAN deployment for MSSPs](https://docs.fortinet.com/document/fortigate/7.6.0/sd-wan-deployment-for-mssps/705134/introduction) | Public | 3–8 hr selected | Multi-tenant overlay, management and operating context for relevant Secure Networking practice |
+| [FortiManager 7.6 documentation](https://docs.fortinet.com/product/fortimanager/7.6) | Public | 15–25 hr selected labs/reference | Policy/template/install/workspace, VPN/SD-WAN orchestration, HA, scripts, Jinja and APIs |
+| [FortiAnalyzer 7.6 documentation](https://docs.fortinet.com/product/fortianalyzer/7.6) | Public | 12–20 hr selected labs/reference | Logging, HA, views/datasets, incidents, events, handlers, reports and triage |
+| [FortiAuthenticator documentation](https://docs.fortinet.com/product/fortiauthenticator) | Public | 8–16 hr selected labs/reference | Core AAA, SSO, PKI/certificates, HA and troubleshooting; select the 8.0 baseline |
+| [FortiClient EMS 7.4 documentation](https://docs.fortinet.com/product/forticlient/7.4) | Public | 8–16 hr selected labs/reference | Secure Networking endpoint, ZTNA, profiles/tags, protection, quarantine and HA |
+| [FortiWeb 8.0 documentation](https://docs.fortinet.com/product/fortiweb/8.0) | Public | 10–20 hr selected labs/reference | Application elective web/API protection, delivery, HA, learning and troubleshooting |
+| [FortiSandbox 5.2 documentation](https://docs.fortinet.com/product/fortisandbox/5.2) | Public | 8–16 hr selected labs/reference | Versioned application-elective submission, analysis, verdict, integration, HA and outage behavior |
+| [FortiSIEM 7.4 documentation](https://docs.fortinet.com/product/fortisiem/7.4) | Public | 12–24 hr selected labs/reference | Security Operations elective collection, CMDB, parsers, queries, analytics, incidents and HA |
+| [FortiSOAR 7.6 documentation](https://docs.fortinet.com/product/fortisoar/7.6) | Public | 12–24 hr selected labs/reference | Security Operations cases, connectors, playbooks, content, reporting, workspaces and HA |
+| [Fortinet Training Institute policies](https://helpdesk.training.fortinet.com/support/solutions/73000238852) | Public | 45–75 min | Practical delivery, retake, results, security, vouchers, conduct and renewal |
+
+### NSE-I-MSSP-SECURITY — Fortinet Industry Certification in MSSP Security
+
+Resource details from the [NSE-I-MSSP-SECURITY guide](../guides/NSE-I-MSSP-SECURITY-fortinet-industry-mssp-security.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective foundation, not a complete list, not a prescription to consume everything, and not an exam plan until Fortinet publishes a blueprint. Choose the sources that close operational gaps. Times are planning estimates unless publisher-listed.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [Official MSSP Security certification page](https://training.fortinet.com/local/staticpage/view.php?page=nse_industry_mssp_security) | Public | 5 min now; recheck regularly | Canonical status; currently only Coming soon |
+| [Fortinet certification program catalog](https://www.fortinet.com/training-certification) | Public | 15–30 min; recheck before decisions | Credential purpose, prerequisites, proctored-exam requirement, delivery context and two-year validity; not an exam blueprint |
+| [2026 NSE Training Program Update](https://www.fortinet.com/nse-training-update) | Public | 30–60 min; recheck before renewal | Industry-certification prerequisites and bounded recertification route; table layout and availability details remain volatile |
+| [Fortinet MSSP solution overview](https://www.fortinet.com/solutions/service-provider/communications-service-provider/mssp) | Public | 30–60 min | Vendor's managed-service solution context; marketing, not exam objectives |
+| [FortiGate 7.6 SD-WAN deployment for MSSPs](https://docs.fortinet.com/document/fortigate/7.6.0/sd-wan-deployment-for-mssps/705134/introduction) | Public | 3–8 hr selected | Versioned multi-tenant MSSP deployment context; supporting practice only, not published certification scope |
+| [FortiManager 7.6 documentation](https://docs.fortinet.com/product/fortimanager/7.6) | Public | 20–40 hr selected | ADOMs, delegated administration, devices, policies, APIs, HA and operations |
+| [FortiManager 7.6.6 ADOM guidance](https://docs.fortinet.com/document/fortimanager/7.6.6/administration-guide/962634/adoms) | Public | 1–2 hr plus lab | Concrete customer/device/VDOM and administrator-scope model; product evidence, not exam scope |
+| [FortiPortal multi-organization service-provider administrators](https://docs.fortinet.com/document/fortiportal/7.4.0/new-features/811633/multi-organization-service-provider-administrators-7-4-4) | Public | 30–60 min plus lab | Versioned organization/delegation example; verify current FortiPortal release behavior |
+| [FortiAnalyzer 7.6 documentation](https://docs.fortinet.com/product/fortianalyzer/7.6) | Public | 15–30 hr selected | Multi-scope logging, reports, events, storage, APIs and troubleshooting |
+| [FortiSIEM 7.4 documentation](https://docs.fortinet.com/product/fortisiem/7.4) and [FortiSOAR 7.6 documentation](https://docs.fortinet.com/product/fortisoar/7.6) | Public | 25–50 hr selected | Telemetry, detection, incidents, tenant/organization models, connectors and automation |
+| [NIST Cybersecurity Framework 2.0](https://csrc.nist.gov/pubs/cswp/29/the-nist-cybersecurity-framework-csf-20/final) | Public | 6–10 hr selected | Outcome, governance and risk vocabulary for service mapping |
+| [NIST SP 800-61 Rev. 3](https://csrc.nist.gov/pubs/sp/800/61/r3/final) | Public | 5–9 hr selected | Incident-response integration with cybersecurity risk management |
+| [CISA/NSA/FBI and international guidance for MSPs and customers](https://www.cisa.gov/news-events/news/cisa-nsa-fbi-and-international-cyber-authorities-issue-cybersecurity-advisory-protect-managed) | Public | 2–4 hr selected | Shared security, MFA/remote access, logging, incident/recovery, supply-chain and contract practice; vendor-neutral, not exam scope |
+| [Fortinet Training Institute library](https://training.fortinet.com/course/index.php) | Free account; labs/ILT may cost | 15–40 hr selected | Current Fortinet product learning; no MSSP certification-aligned course was publicly identified |
+| [Fortinet YouTube](https://www.youtube.com/@Fortinet) | Free/YouTube | 4–12 hr selected | Official demos and service-provider context; verify behavior in current docs |
+| O'Reilly, Pluralsight, Udemy, LinkedIn Learning, SANS and other managed-SOC/MSSP, SIEM/SOAR, ITIL/SLA, multi-tenancy, API and incident courses | Subscription/purchase may apply | 15–50 hr selected | Transferable foundation only; no current course can be declared aligned without a blueprint |
+| Authorized multi-tenant partner or product lab | Partner, entitlement, or training access may be required | 50–100 hr | Highest-value isolation, onboarding, change, telemetry, incident, resilience, and offboarding practice |
 
 ## AWS
 

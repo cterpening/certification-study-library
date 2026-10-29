@@ -6,9 +6,9 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: review-required
-last_verified: 2026-09-07
-upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-07
+last_verified: 2026-10-28
+upcoming_change_status: none-announced
+upcoming_change_checked: 2026-10-28
 ---
 
 # Fortinet Industry Certification in MSSP Security Study Guide
@@ -22,6 +22,10 @@ upcoming_change_checked: 2026-09-07
 
 > **Blocked-source note and best-effort watch — September 7, 2026:** The missing Fortinet blueprint cannot be replaced by product manuals or independent guidance. They can still make the foundation useful. Fortinet's current [FortiManager ADOM guidance](https://docs.fortinet.com/document/fortimanager/7.6.6/administration-guide/962634/adoms) and [FortiPortal multi-organization administrator note](https://docs.fortinet.com/document/fortiportal/7.4.0/new-features/811633/multi-organization-service-provider-administrators-7-4-4) provide concrete tenant/delegation examples. The multi-agency [CISA guidance for MSPs and customers](https://www.cisa.gov/news-events/news/cisa-nsa-fbi-and-international-cyber-authorities-issue-cybersecurity-advisory-protect-managed) adds shared-responsibility, logging, remote-access, incident/recovery, and supply-chain practices. These sources support labs and operational reasoning only; none supplies an exam objective or weight.
 
+## Current publication-state watch — October 28, 2026
+
+Fortinet's canonical Industry MSSP Security page still displays only **“Coming soon!”**; it has not published objectives or an availability date. Fortinet's broader certification catalog does publish the credential purpose and prerequisite summary (NSE 4, NSE 5 or 6, same-track NSE 7, and a proctored exam), so the overview is a partial contract—not a blueprint. Fortinet says Industry certifications last two years. Its exam-fee page says the Industry exam fee rises from USD 200 to USD 400 on November 2, 2026; verify the live price and do not book based on the broad catalog alone.
+
 ## How to use this guide
 
 Use this page to build transferable managed-security skills while waiting for a real blueprint. Do not use it to estimate coverage or exam readiness. When Fortinet publishes exam objectives and a scheduling/version contract, archive the current evidence, replace the placeholder scope, map every published task, and retain only foundation material that truly supports it.
@@ -32,7 +36,7 @@ Practice in an owned or authorized multi-tenant lab using synthetic customer dat
 
 ## Publication-state map
 
-| Field | Verified state on September 7, 2026 |
+| Field | Verified state on October 28, 2026 |
 |---|---|
 | Certification title | NSE Industry - MSSP Security |
 | Page content | Coming soon! |

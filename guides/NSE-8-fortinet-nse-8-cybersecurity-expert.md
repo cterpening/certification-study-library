@@ -6,22 +6,28 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-06
+last_verified: 2026-10-28
 upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-06
+upcoming_change_checked: 2026-10-28
 ---
 
 # Fortinet NSE 8 Cybersecurity Expert Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live NSE 8 certification page and Core, Secure Networking, Application Security, and Security Operations practical exam pages were checked September 6, 2026. This guide cannot substitute for the live scheduling contract, current product documentation, the NSE 8 Immersion course, or extensive authorized production-equivalent practice.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live NSE 8 certification page and Core, Secure Networking, Application Security, and Security Operations practical exam pages were checked October 28, 2026. This guide cannot substitute for the live scheduling contract, current product documentation, the NSE 8 Immersion course, or extensive authorized production-equivalent practice.
 
 **Current baseline:** NSE 8 is a multi-stage expert credential—not one exam. Candidates need NSE 4 FortiOS, NSE 5 or NSE 6 in any track, and NSE 7 in the same track as that NSE 5/6; then they must pass the Core Practical and one Elective Practical within one year. The credential is active for two years from the second practical.<br>
 **Core contract:** Core Practical is available, onsite at selected Fortinet offices/events, US$800, English, with task count and appointment time communicated per exam. It uses FortiGate 7.6, FortiManager 7.6, FortiAnalyzer 7.6, and FortiAuthenticator 8.0. Task types include hands-on configuration/troubleshooting, drag-and-drop, and multiple choice; selected tasks can receive partial credit.<br>
-**Elective contract:** One elective is required. Secure Networking is expected December 2026; Application Security January 2027; Security Operations March 2027. Each page lists onsite/online ProctorU delivery, US$800, English, and unpublished task count/time. As of September 6, 2026, all three are marked **Coming Soon**, so a new candidate cannot yet complete the new Core-plus-Elective path.<br>
+**Elective contract:** One elective is required. Secure Networking is expected December 2026; Application Security January 2027; Security Operations March 2027. Each page lists onsite/online ProctorU delivery, US$800, English, and unpublished task count/time. As of October 28, 2026, all three are marked **Coming Soon**, so a new candidate cannot yet complete the new Core-plus-Elective path.<br>
 **Retake/results:** Failed practical attempts require 30 days; passed exams cannot be retaken. Fortinet says results/transcript updates may take 30 days.<br>
 **Standard renewal:** Fortinet's [2026 program update](https://www.fortinet.com/nse-training-update) says active NSE 8 holders renew with 200 activity points while the required prerequisite certifications remain active. Eligible activities, caps, timing, and which lower certifications are renewed are policy details to verify live.<br>
 **Upcoming change:** The three elective launches above are scheduled. The transitional NSE 8 Recertification Exam remains available only to eligible existing holders through January 31, 2027; it is not the initial-certification route.<br>
 **Integrity and safety:** Do not use leaked tasks or production changes as practice. Build original labs in owned/authorized environments, protect credentials and evidence, and use change control and rollback.
+
+## Living-guide watch — October 28, 2026
+
+**2026 NSE 8 transition:** The live Fortinet program page now summarizes the current route as active NSE 4, NSE 5 or 6, and NSE 7 in the same track, followed by the Core Practical and one Elective Practical within a year. The credential lasts two years from passing the second practical. The Core and three elective detail pages retain the published domain weights; Fortinet's top-level credential page has become a short program summary, so use the individual exam pages for the technical outline. The three elective modules remain marked Coming Soon on the checked pages, with expected launches in December 2026, January 2027, and March 2027.
+
+**Renewal and appointment caveat:** Current renewal guidance requires 200 points while the NSE 8 certification is active and an active NSE 7. The transitional NSE8_813 renewal exam is restricted to eligible current holders and is scheduled to be offered through January 31, 2027. Fortinet's program FAQ also warns that additional account or training-history information may be required before a Core Practical booking. Confirm eligibility and scheduling directly before planning an exam.
 
 ## How to use this guide
 
@@ -33,7 +39,7 @@ For every lab, capture a concise record: objective, topology, versions/licenses,
 
 ## Credential and blueprint map
 
-| Component | Status on Sept. 6, 2026 | Published domains |
+| Component | Status on Oct. 28, 2026 | Published domains |
 |---|---|---|
 | Prerequisites | Required | NSE 4; NSE 5 or 6; matching-track NSE 7 |
 | Core Practical | Available | Infrastructure 27%; Networking 40%; Authentication 14%; Security Fabric 19% |
@@ -223,7 +229,7 @@ These are original practice prompts, not Fortinet exam tasks.
 | # | Check | Concise answer |
 |---:|---|---|
 | 1 | Is NSE 8 a single exam? | No; prerequisites plus Core Practical and one Elective Practical within one year are required. |
-| 2 | Can the new path be completed today? | Not on Sept. 6, 2026; Core is available but all listed electives are still Coming Soon. |
+| 2 | Can the new path be completed today? | Not on Oct. 28, 2026; Core is available but all listed electives are still Coming Soon. |
 | 3 | Which elective should be chosen? | One aligned with the prerequisite track and role, while respecting the live availability and one-year window. |
 | 4 | What does Core cover most heavily? | Networking at 40%, then Infrastructure 27%, Security Fabric 19%, and Authentication 14%. |
 | 5 | FGCP versus FGSP? | FGCP is a configuration/session cluster; FGSP shares supported sessions between independently configured devices. |
