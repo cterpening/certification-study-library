@@ -6,9 +6,9 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-28
 ---
 
 # ISC2 Certified Cloud Security Professional (CCSP) Study Guide
@@ -23,6 +23,10 @@ upcoming_change_checked: 2026-09-29
 **CURRENT BLUEPRINT:** The [web outline](https://www.isc2.org/certifications/ccsp/ccsp-certification-exam-outline) is canonical. Its [15-page August 2026 PDF](https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/documents/exam-outlines/EXAMS-CCSP-Exam-Outline-English-01-2026-V2.pdf) confirms the six weights and detailed scope. The [June 30 announcement](https://www.isc2.org/insights/2026/06/isc2-ccsp-exam-outline-revised) describes a refresh that is now active, not a future change. Keep the explicit AI/ML objectives 1.6 and 2.9 in the study map.
 
 **VERIFY CURRENT:** The public outline's Chinese-window notice includes an impossible April 31 date; use actual booking availability rather than copying that calendar. The [CAT policy](https://www.isc2.org/certifications/computerized-adaptive-testing) distinguishes unscored pretest items, no answer review and breaks that consume exam time. A course percentage or stopping point is not the scaled exam result. [Experience rules](https://www.isc2.org/certifications/ccsp/ccsp-experience-requirements) allow only one year of the degree/CCSK waiver, not two stacked years; the active CISSP substitution and Associate route are separate.
+
+## Current guide watch — October 28, 2026
+
+The revised CCSP outline took effect August 1, 2026. The six domains are retained with weights 17%, 20%, 17%, 16%, 17%, and 13%. ISC2 revisited domain content and subdomains; this guide is now mapped against the 2026 outline, not the pre-August outline. [ISC2 CCSP outline](https://www.isc2.org/certifications/ccsp/ccsp-certification-exam-outline) and [2026 revision announcement](https://www.isc2.org/insights/2026/06/isc2-ccsp-exam-outline-revised)
 
 ## How to use this guide
 

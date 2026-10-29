@@ -6,19 +6,23 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-28
 ---
 
 # CKAD Certified Kubernetes Application Developer Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 29, 2026. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ckad-coverage-record). The [official CKAD page](https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on October 28, 2026. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ckad-coverage-record). The [official CKAD page](https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/) is authoritative.
 
 **Current baseline:** Kubernetes v1.35 and the five weighted domains on the live CKAD page<br>
 **Lifecycle watch:** Kubernetes [v1.37 was released August 26, 2026](https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/), while the live CKAD page still names v1.35 on September 29. Linux Foundation says alignment follows by approximately 4–8 weeks, so recheck between September 23 and October 21 and immediately before practice or scheduling; this is a watch window, not an announced switch date.<br>
 **Official delivery snapshot:** Online, remotely proctored, performance-based command-line exam; two hours; certification valid for two years; 12-month eligibility, one retake, and two 36-hour Killer.sh simulator activations with 17 questions per attempt listed<br>
 **Prerequisite:** No formal certification prerequisite; the official scope assumes working knowledge of OCI-compliant container images/runtimes, microservice architecture, and Kubernetes resource definitions
+
+## Current guide watch — October 28, 2026
+
+The official page now lists Kubernetes v1.35 as the exam environment; the competency domains remain unchanged. Expect the tested minor version to advance within about 4–8 weeks of a Kubernetes release. Practice the current CLI environment and APIs, while keeping deprecated-API awareness in the published blueprint. [CKAD official exam page](https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/)
 
 ## How to use this guide
 
@@ -482,7 +486,7 @@ Use only disposable or explicitly authorized environments. **All eight complete 
 
 | Resource | Access | Estimated time |
 |---|---|---:|
-| [Official CKAD page](https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/) and [public CNCF v1.35 curriculum](https://github.com/cncf/curriculum/blob/master/CKAD_Curriculum_v1.35.pdf) | Public; exam paid | 3–5 hours mapping/review, plus 8–14 selected simulator hours |
+| [Official CKAD page](https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/) and [public latest CNCF v1.37 curriculum](https://github.com/cncf/curriculum/blob/master/CKAD_Curriculum_v1.37.pdf) | Public; exam paid | 3–5 hours mapping/review, plus 8–14 selected simulator hours |
 | [Kubernetes v1.35 documentation](https://v1-35.docs.kubernetes.io/docs/home/) | Public | 18–30 selected reading/lab hours; use as a reference |
 | [Kubernetes v1.37 release](https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/) | Public release watch; use only to trigger the exam-version recheck | 20–40 minutes |
 | [Ingress NGINX retirement notice](https://kubernetes.io/blog/2025/11/11/ingress-nginx-retirement/) | Public operational warning; distinguishes the controller from the Ingress API | 15–25 minutes |
@@ -495,3 +499,4 @@ Use only disposable or explicitly authorized environments. **All eight complete 
 LFD259 still describes self-managed Linux/cloud or VirtualBox labs; do not infer hosted browser labs from other Linux Foundation courses, and budget for possible cloud charges. Pluralsight includes a September 9, 2026 deployment course and four 2026 labs alongside older courses; its course list has no separately titled networking course, so verify coverage across the actual path. KodeKloud's public outline includes Helm and Ingress but does not visibly list Kustomize, and its stale lab-update history does not establish today's runtime version. Use the official objective map to check those gaps. Paid lessons, labs and mock questions were not accessed. Added practice times are planning estimates.
 
 This is not a complete list and is not meant to be consumed in full. Choose one current route, build one application through every domain, and use official v1.35 objectives/documentation as the gap checklist. The Udemy and KodeKloud entries are the same course family, so choose one access route. Verify older material for current API versions, security contexts, admission, multi-container behavior and release tooling. Avoid recalled tasks and question dumps; this is a performance exam.
+

@@ -6,9 +6,9 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-28
 ---
 
 # Certified Information Systems Auditor (CISA) Study Guide
@@ -25,6 +25,10 @@ upcoming_change_checked: 2026-09-29
 **VERIFY CURRENT — candidate details:** The [version 1.26 candidate guide](https://www.isaca.org/credentialing/-/media/fa494652c5f149289af38cef18328650.ashx) uses a 200–800 scaled score with 450 required to pass; 450/800 is not a raw passing percentage. It allows four attempts in a rolling 12 months, with waits of 30, then 90, then 90 days after failed attempts and a new fee each time. Rescheduling requires at least 48 hours. A single paid six-month eligibility extension is described, subject to its window and cancellation conditions. These public rules do not establish personal eligibility or an available appointment.
 
 **VERIFY CURRENT — policy transition:** The [published CPE policy](https://www.isaca.org/-/media/files/isacadp/project/isaca/certification/general/cpe_policy.pdf), linked from the 2027 announcement, distinguishes activity limits and alignment. Its summary table's 30-hour column is not a cap on all aligned learning; the preceding rule explicitly permits 120 aligned hours. Current maintenance-page recordkeeping says 12 months after a three-year cycle, while the new policy says a minimum of three years. Keep the documents and relevant cycle together and resolve applicability with ISACA before discarding evidence. No account or CPE claim was changed here.
+
+## Current guide watch — October 28, 2026
+
+The official CISA candidate guide continues to identify the outline effective August 2024. No replacement date was announced in the current official sources reviewed. The current five-domain weights and task coverage remain the anchor for this guide. [ISACA CISA exam content outline](https://www.isaca.org/credentialing/cisa/cisa-exam-content-outline)
 
 ## How to use this guide
 

@@ -10403,7 +10403,7 @@
               "check": "official_product_documentation",
               "category": "documentation-gap",
               "title": "Check mode is not an unconditional read-only guarantee",
-              "url": "https://docs.ansible.com/projects/ansible-core/stable-2.21/playbook_guide/playbooks_checkmode.html",
+              "url": "https://docs.ansible.com/projects/ansible-core/devel/playbook_guide/playbooks_checkmode.html",
               "source_type": "product-documentation",
               "affected_exams": [
                 "200-901"
@@ -58274,6 +58274,370 @@
           },
           "findings": [],
           "notes": "Current official exam guide, credential lifecycle, transition and catalog context checked for this exam; dated exam boundary is recorded in the guide."
+        }
+      ],
+      "summary": {
+        "exam_count": 10,
+        "current": 10,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 0,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
+      "id": "freshness-2026-10-28-nonms-g11",
+      "title": "Non-Microsoft certification refresh group 11",
+      "rubric_version": 1,
+      "created_on": "2026-10-28",
+      "completed_on": "2026-10-28",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Eleventh group of ten from the frozen eligible queue after Groups 1–10.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "refresh-coordinator",
+          "official-source-review"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "200-901",
+        "CC",
+        "CCSP",
+        "CISA",
+        "CISM",
+        "CISSP",
+        "CKA",
+        "CKAD",
+        "CKS",
+        "CLA-11-03"
+      ],
+      "results": [
+        {
+          "exam_code": "200-901",
+          "vendor_id": "cisco",
+          "guide_path": "guides/200-901-cisco-certified-network-associate-automation.md",
+          "baseline_sha256": "c462ec10da814d5be7cda29536f77545daf6970ee822830545b44d7775a8812d",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            }
+          },
+          "findings": [],
+          "notes": "Current official issuer outline, transition, current environment and preparation sources reviewed; dated version boundaries are documented."
+        },
+        {
+          "exam_code": "CC",
+          "vendor_id": "isc2",
+          "guide_path": "guides/CC-isc2-certified-in-cybersecurity.md",
+          "baseline_sha256": "35864b576294213266831cc3407bf928f9e66f78d7233c37615daa2c2bb2469a",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            }
+          },
+          "findings": [],
+          "notes": "Current official issuer outline, transition, current environment and preparation sources reviewed; dated version boundaries are documented."
+        },
+        {
+          "exam_code": "CCSP",
+          "vendor_id": "isc2",
+          "guide_path": "guides/CCSP-isc2-certified-cloud-security-professional.md",
+          "baseline_sha256": "2d2e1bb5706e7bdc1f124a0ac5f94f51eb6e3213ac3196bafb723f787f8954a9",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            }
+          },
+          "findings": [],
+          "notes": "Current official issuer outline, transition, current environment and preparation sources reviewed; dated version boundaries are documented."
+        },
+        {
+          "exam_code": "CISA",
+          "vendor_id": "isaca",
+          "guide_path": "guides/CISA-isaca-certified-information-systems-auditor.md",
+          "baseline_sha256": "ab9e0e5af75c65e877b4896964023fea1a4660e8e45fbb4576087ee1fbc2dcc6",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            }
+          },
+          "findings": [],
+          "notes": "Current official issuer outline, transition, current environment and preparation sources reviewed; dated version boundaries are documented."
+        },
+        {
+          "exam_code": "CISM",
+          "vendor_id": "isaca",
+          "guide_path": "guides/CISM-isaca-certified-information-security-manager.md",
+          "baseline_sha256": "664bd5d30fe9987846764e878cf6c146fa31881a5a446721da2d8fcebb15ecc1",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            }
+          },
+          "findings": [],
+          "notes": "Current official issuer outline, transition, current environment and preparation sources reviewed; dated version boundaries are documented."
+        },
+        {
+          "exam_code": "CISSP",
+          "vendor_id": "isc2",
+          "guide_path": "guides/CISSP-isc2-certified-information-systems-security-professional.md",
+          "baseline_sha256": "72ea0862dc3bd630fdf77f01296c98610f4636db523b3cdb2f8596f3c4d3c51b",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            }
+          },
+          "findings": [],
+          "notes": "Current official issuer outline, transition, current environment and preparation sources reviewed; dated version boundaries are documented."
+        },
+        {
+          "exam_code": "CKA",
+          "vendor_id": "linux-foundation",
+          "guide_path": "guides/CKA-certified-kubernetes-administrator.md",
+          "baseline_sha256": "6999b32a95910ea0bf9bc4ffe2f586920e32cbc80e9f8daf12c2e6f5a43274a1",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            }
+          },
+          "findings": [],
+          "notes": "Current official issuer outline, transition, current environment and preparation sources reviewed; dated version boundaries are documented."
+        },
+        {
+          "exam_code": "CKAD",
+          "vendor_id": "linux-foundation",
+          "guide_path": "guides/CKAD-certified-kubernetes-application-developer.md",
+          "baseline_sha256": "a623b65fd3dfb1fb4e03231fe41bffee10d4a239473a0a8e24c1bba56faa2c54",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            }
+          },
+          "findings": [],
+          "notes": "Current official issuer outline, transition, current environment and preparation sources reviewed; dated version boundaries are documented."
+        },
+        {
+          "exam_code": "CKS",
+          "vendor_id": "linux-foundation",
+          "guide_path": "guides/CKS-certified-kubernetes-security-specialist.md",
+          "baseline_sha256": "54b610b6e1fc67762063440d5851ec0928a9c59bc63ac8790b183de201c81d60",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            }
+          },
+          "findings": [],
+          "notes": "Current official issuer outline, transition, current environment and preparation sources reviewed; dated version boundaries are documented."
+        },
+        {
+          "exam_code": "CLA-11-03",
+          "vendor_id": "cpp-institute",
+          "guide_path": "guides/CLA-11-03-c-certified-associate-programmer.md",
+          "baseline_sha256": "9c2a95640087d3ddd7bbfc547796363ed106498635845ba2a3688862164503ff",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            }
+          },
+          "findings": [],
+          "notes": "Current official issuer outline, transition, current environment and preparation sources reviewed; dated version boundaries are documented."
         }
       ],
       "summary": {

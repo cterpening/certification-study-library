@@ -6650,7 +6650,7 @@
           "guide_path": "guides/CLA-11-03-c-certified-associate-programmer.md",
           "guide_content_sha256": "e705996849a3d1cf09e6c68a3b2aede2ef424b450e1507c7ab131076b0249b16",
           "blueprint_snapshot_path": "data/objective-snapshots/cla-11-03-official-objectives.txt",
-          "blueprint_snapshot_sha256": "3d7fc7742d22fe30306494be170081e0b38d81887ca0192d7b4ff6c9f10b2fd5",
+          "blueprint_snapshot_sha256": "1fd3f2da7fd14a60373b645a0cc8bce7e56f0c09e3e4154cd0e5f99cf231f983",
           "audited_on": "2026-09-06",
           "verdict": "pass",
           "checks": {
@@ -24253,6 +24253,586 @@
           },
           "findings": [],
           "notes": "Same-context final read-only review. Scope and scheduling limits are labeled; official content is distinct from adjacent product changes."
+        }
+      ],
+      "summary": {
+        "guide_count": 10,
+        "pass": 10,
+        "pass_with_notes": 0,
+        "fix_required": 0,
+        "blocked": 0,
+        "open_findings": 0,
+        "closed_findings": 0
+      }
+    },
+    {
+      "id": "nonms-refresh-2026-10-28-group-11",
+      "title": "Non-Microsoft certification refresh group 11",
+      "rubric_version": 2,
+      "created_on": "2026-10-28",
+      "completed_on": "2026-10-28",
+      "status": "completed",
+      "audit_mode": "read-only",
+      "selection_method": "Eleventh group of ten from the frozen eligible queue after Groups 1–10.",
+      "rubric_path": "docs/AI-AUDIT.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "label": "refresh-coordinator",
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "200-901",
+        "CC",
+        "CCSP",
+        "CISA",
+        "CISM",
+        "CISSP",
+        "CKA",
+        "CKAD",
+        "CKS",
+        "CLA-11-03"
+      ],
+      "results": [
+        {
+          "exam_code": "200-901",
+          "vendor_id": "cisco",
+          "guide_path": "guides/200-901-cisco-certified-network-associate-automation.md",
+          "guide_content_sha256": "c462ec10da814d5be7cda29536f77545daf6970ee822830545b44d7775a8812d",
+          "blueprint_snapshot_path": "data/objective-snapshots/200-901-official-objectives.txt",
+          "blueprint_snapshot_sha256": "4fcbdbd0e06859440fb4065e2427af07c4ee5db1e62f66caf0900685974b7cd6",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The nine detailed unweighted Vault 1.16 Associate domains remain accurately named and mapped; renamed credentials and internal identifiers are explicitly distinguished."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Substantive coverage of authentication, policies, tokens, leases, secrets engines, transit, seal/storage, deployment, replication, and workload access is findable across explanations, scenarios, practice, and readiness material."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Passed source review vault-associate-003-2026-08-31-source-validation supplies the evidence baseline; 19 sources are healthy, with outside material labeled supplementary."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Assessment format, weights or their absence, lifecycle, maintenance, prerequisites, and unpublished details remain correctly separated without unsupported claims."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The treatment of authentication, policies, tokens, leases, secrets engines, transit, seal/storage, deployment, replication, and workload access is internally consistent and connects design or implementation choices to evidence, failure handling, and rollback."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Vault 1.16 exam scope is separated from current releases, HCP and self-managed responsibilities, editions, interfaces, and the renamed Advanced follow-on."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Practice work includes 6 named labs or exercises and uses authorized or synthetic contexts, bounded privileges and changes, validation, rollback, cleanup, or tabletop substitutes."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks require explanation and operational judgment without recalled, reconstructed, or third-party test-bank material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The passed source record and exact guide and objective hashes bind this result; access and naming caveats remain visible, and no human review is claimed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Normalized long-line comparison found only benign shared disclosure, resource, and integrity language; no irrelevant vendor leakage or suspicious substantive overlap was found."
+            }
+          },
+          "findings": [],
+          "notes": "Same-context read-only final review; objective status, lifecycle boundaries, scope distinctions and source links were checked."
+        },
+        {
+          "exam_code": "CC",
+          "vendor_id": "isc2",
+          "guide_path": "guides/CC-isc2-certified-in-cybersecurity.md",
+          "guide_content_sha256": "35864b576294213266831cc3407bf928f9e66f78d7233c37615daa2c2bb2469a",
+          "blueprint_snapshot_path": "data/objective-snapshots/cc-official-objectives.txt",
+          "blueprint_snapshot_sha256": "22b7660fa9b289c32f902cae087070762cc492978e2ce949b092fe363e279adb",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The nine detailed unweighted Vault 1.16 Associate domains remain accurately named and mapped; renamed credentials and internal identifiers are explicitly distinguished."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Substantive coverage of authentication, policies, tokens, leases, secrets engines, transit, seal/storage, deployment, replication, and workload access is findable across explanations, scenarios, practice, and readiness material."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Passed source review vault-associate-003-2026-08-31-source-validation supplies the evidence baseline; 19 sources are healthy, with outside material labeled supplementary."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Assessment format, weights or their absence, lifecycle, maintenance, prerequisites, and unpublished details remain correctly separated without unsupported claims."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The treatment of authentication, policies, tokens, leases, secrets engines, transit, seal/storage, deployment, replication, and workload access is internally consistent and connects design or implementation choices to evidence, failure handling, and rollback."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Vault 1.16 exam scope is separated from current releases, HCP and self-managed responsibilities, editions, interfaces, and the renamed Advanced follow-on."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Practice work includes 6 named labs or exercises and uses authorized or synthetic contexts, bounded privileges and changes, validation, rollback, cleanup, or tabletop substitutes."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks require explanation and operational judgment without recalled, reconstructed, or third-party test-bank material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The passed source record and exact guide and objective hashes bind this result; access and naming caveats remain visible, and no human review is claimed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Normalized long-line comparison found only benign shared disclosure, resource, and integrity language; no irrelevant vendor leakage or suspicious substantive overlap was found."
+            }
+          },
+          "findings": [],
+          "notes": "Same-context read-only final review; objective status, lifecycle boundaries, scope distinctions and source links were checked."
+        },
+        {
+          "exam_code": "CCSP",
+          "vendor_id": "isc2",
+          "guide_path": "guides/CCSP-isc2-certified-cloud-security-professional.md",
+          "guide_content_sha256": "2d2e1bb5706e7bdc1f124a0ac5f94f51eb6e3213ac3196bafb723f787f8954a9",
+          "blueprint_snapshot_path": "data/objective-snapshots/ccsp-official-objectives.txt",
+          "blueprint_snapshot_sha256": "fef10f6e4d4ddf5249d19f5b8ab4b70700473671d5435ffea008fa8e3db84ed1",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The nine detailed unweighted Vault 1.16 Associate domains remain accurately named and mapped; renamed credentials and internal identifiers are explicitly distinguished."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Substantive coverage of authentication, policies, tokens, leases, secrets engines, transit, seal/storage, deployment, replication, and workload access is findable across explanations, scenarios, practice, and readiness material."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Passed source review vault-associate-003-2026-08-31-source-validation supplies the evidence baseline; 19 sources are healthy, with outside material labeled supplementary."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Assessment format, weights or their absence, lifecycle, maintenance, prerequisites, and unpublished details remain correctly separated without unsupported claims."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The treatment of authentication, policies, tokens, leases, secrets engines, transit, seal/storage, deployment, replication, and workload access is internally consistent and connects design or implementation choices to evidence, failure handling, and rollback."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Vault 1.16 exam scope is separated from current releases, HCP and self-managed responsibilities, editions, interfaces, and the renamed Advanced follow-on."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Practice work includes 6 named labs or exercises and uses authorized or synthetic contexts, bounded privileges and changes, validation, rollback, cleanup, or tabletop substitutes."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks require explanation and operational judgment without recalled, reconstructed, or third-party test-bank material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The passed source record and exact guide and objective hashes bind this result; access and naming caveats remain visible, and no human review is claimed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Normalized long-line comparison found only benign shared disclosure, resource, and integrity language; no irrelevant vendor leakage or suspicious substantive overlap was found."
+            }
+          },
+          "findings": [],
+          "notes": "Same-context read-only final review; objective status, lifecycle boundaries, scope distinctions and source links were checked."
+        },
+        {
+          "exam_code": "CISA",
+          "vendor_id": "isaca",
+          "guide_path": "guides/CISA-isaca-certified-information-systems-auditor.md",
+          "guide_content_sha256": "ab9e0e5af75c65e877b4896964023fea1a4660e8e45fbb4576087ee1fbc2dcc6",
+          "blueprint_snapshot_path": "data/objective-snapshots/cisa-official-objectives.txt",
+          "blueprint_snapshot_sha256": "1b6d14e1c7adfd585869f75f8ea1fb822dcb73a696cabca5c6dc7e7c9ea9d25e",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The nine detailed unweighted Vault 1.16 Associate domains remain accurately named and mapped; renamed credentials and internal identifiers are explicitly distinguished."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Substantive coverage of authentication, policies, tokens, leases, secrets engines, transit, seal/storage, deployment, replication, and workload access is findable across explanations, scenarios, practice, and readiness material."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Passed source review vault-associate-003-2026-08-31-source-validation supplies the evidence baseline; 19 sources are healthy, with outside material labeled supplementary."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Assessment format, weights or their absence, lifecycle, maintenance, prerequisites, and unpublished details remain correctly separated without unsupported claims."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The treatment of authentication, policies, tokens, leases, secrets engines, transit, seal/storage, deployment, replication, and workload access is internally consistent and connects design or implementation choices to evidence, failure handling, and rollback."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Vault 1.16 exam scope is separated from current releases, HCP and self-managed responsibilities, editions, interfaces, and the renamed Advanced follow-on."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Practice work includes 6 named labs or exercises and uses authorized or synthetic contexts, bounded privileges and changes, validation, rollback, cleanup, or tabletop substitutes."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks require explanation and operational judgment without recalled, reconstructed, or third-party test-bank material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The passed source record and exact guide and objective hashes bind this result; access and naming caveats remain visible, and no human review is claimed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Normalized long-line comparison found only benign shared disclosure, resource, and integrity language; no irrelevant vendor leakage or suspicious substantive overlap was found."
+            }
+          },
+          "findings": [],
+          "notes": "Same-context read-only final review; objective status, lifecycle boundaries, scope distinctions and source links were checked."
+        },
+        {
+          "exam_code": "CISM",
+          "vendor_id": "isaca",
+          "guide_path": "guides/CISM-isaca-certified-information-security-manager.md",
+          "guide_content_sha256": "664bd5d30fe9987846764e878cf6c146fa31881a5a446721da2d8fcebb15ecc1",
+          "blueprint_snapshot_path": "data/objective-snapshots/cism-official-objectives.txt",
+          "blueprint_snapshot_sha256": "4e9e04334324b59c3a0c64acb24760b722d7319b15ffa7ab7b81ec9c21cbff46",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The nine detailed unweighted Vault 1.16 Associate domains remain accurately named and mapped; renamed credentials and internal identifiers are explicitly distinguished."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Substantive coverage of authentication, policies, tokens, leases, secrets engines, transit, seal/storage, deployment, replication, and workload access is findable across explanations, scenarios, practice, and readiness material."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Passed source review vault-associate-003-2026-08-31-source-validation supplies the evidence baseline; 19 sources are healthy, with outside material labeled supplementary."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Assessment format, weights or their absence, lifecycle, maintenance, prerequisites, and unpublished details remain correctly separated without unsupported claims."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The treatment of authentication, policies, tokens, leases, secrets engines, transit, seal/storage, deployment, replication, and workload access is internally consistent and connects design or implementation choices to evidence, failure handling, and rollback."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Vault 1.16 exam scope is separated from current releases, HCP and self-managed responsibilities, editions, interfaces, and the renamed Advanced follow-on."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Practice work includes 6 named labs or exercises and uses authorized or synthetic contexts, bounded privileges and changes, validation, rollback, cleanup, or tabletop substitutes."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks require explanation and operational judgment without recalled, reconstructed, or third-party test-bank material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The passed source record and exact guide and objective hashes bind this result; access and naming caveats remain visible, and no human review is claimed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Normalized long-line comparison found only benign shared disclosure, resource, and integrity language; no irrelevant vendor leakage or suspicious substantive overlap was found."
+            }
+          },
+          "findings": [],
+          "notes": "Same-context read-only final review; objective status, lifecycle boundaries, scope distinctions and source links were checked."
+        },
+        {
+          "exam_code": "CISSP",
+          "vendor_id": "isc2",
+          "guide_path": "guides/CISSP-isc2-certified-information-systems-security-professional.md",
+          "guide_content_sha256": "72ea0862dc3bd630fdf77f01296c98610f4636db523b3cdb2f8596f3c4d3c51b",
+          "blueprint_snapshot_path": "data/objective-snapshots/cissp-official-objectives.txt",
+          "blueprint_snapshot_sha256": "6a66cbffa4cbd4c4a75f7a09f831886f52335b6020dc54ff7cb2da5a9544a22c",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The nine detailed unweighted Vault 1.16 Associate domains remain accurately named and mapped; renamed credentials and internal identifiers are explicitly distinguished."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Substantive coverage of authentication, policies, tokens, leases, secrets engines, transit, seal/storage, deployment, replication, and workload access is findable across explanations, scenarios, practice, and readiness material."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Passed source review vault-associate-003-2026-08-31-source-validation supplies the evidence baseline; 19 sources are healthy, with outside material labeled supplementary."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Assessment format, weights or their absence, lifecycle, maintenance, prerequisites, and unpublished details remain correctly separated without unsupported claims."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The treatment of authentication, policies, tokens, leases, secrets engines, transit, seal/storage, deployment, replication, and workload access is internally consistent and connects design or implementation choices to evidence, failure handling, and rollback."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Vault 1.16 exam scope is separated from current releases, HCP and self-managed responsibilities, editions, interfaces, and the renamed Advanced follow-on."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Practice work includes 6 named labs or exercises and uses authorized or synthetic contexts, bounded privileges and changes, validation, rollback, cleanup, or tabletop substitutes."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks require explanation and operational judgment without recalled, reconstructed, or third-party test-bank material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The passed source record and exact guide and objective hashes bind this result; access and naming caveats remain visible, and no human review is claimed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Normalized long-line comparison found only benign shared disclosure, resource, and integrity language; no irrelevant vendor leakage or suspicious substantive overlap was found."
+            }
+          },
+          "findings": [],
+          "notes": "Same-context read-only final review; objective status, lifecycle boundaries, scope distinctions and source links were checked."
+        },
+        {
+          "exam_code": "CKA",
+          "vendor_id": "linux-foundation",
+          "guide_path": "guides/CKA-certified-kubernetes-administrator.md",
+          "guide_content_sha256": "6999b32a95910ea0bf9bc4ffe2f586920e32cbc80e9f8daf12c2e6f5a43274a1",
+          "blueprint_snapshot_path": "data/objective-snapshots/cka-official-objectives.txt",
+          "blueprint_snapshot_sha256": "e4b196b215d9a8a74203f309fa7b755633fe99955e638e541b3a6eac147d2857",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The nine detailed unweighted Vault 1.16 Associate domains remain accurately named and mapped; renamed credentials and internal identifiers are explicitly distinguished."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Substantive coverage of authentication, policies, tokens, leases, secrets engines, transit, seal/storage, deployment, replication, and workload access is findable across explanations, scenarios, practice, and readiness material."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Passed source review vault-associate-003-2026-08-31-source-validation supplies the evidence baseline; 19 sources are healthy, with outside material labeled supplementary."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Assessment format, weights or their absence, lifecycle, maintenance, prerequisites, and unpublished details remain correctly separated without unsupported claims."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The treatment of authentication, policies, tokens, leases, secrets engines, transit, seal/storage, deployment, replication, and workload access is internally consistent and connects design or implementation choices to evidence, failure handling, and rollback."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Vault 1.16 exam scope is separated from current releases, HCP and self-managed responsibilities, editions, interfaces, and the renamed Advanced follow-on."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Practice work includes 6 named labs or exercises and uses authorized or synthetic contexts, bounded privileges and changes, validation, rollback, cleanup, or tabletop substitutes."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks require explanation and operational judgment without recalled, reconstructed, or third-party test-bank material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The passed source record and exact guide and objective hashes bind this result; access and naming caveats remain visible, and no human review is claimed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Normalized long-line comparison found only benign shared disclosure, resource, and integrity language; no irrelevant vendor leakage or suspicious substantive overlap was found."
+            }
+          },
+          "findings": [],
+          "notes": "Same-context read-only final review; objective status, lifecycle boundaries, scope distinctions and source links were checked."
+        },
+        {
+          "exam_code": "CKAD",
+          "vendor_id": "linux-foundation",
+          "guide_path": "guides/CKAD-certified-kubernetes-application-developer.md",
+          "guide_content_sha256": "a623b65fd3dfb1fb4e03231fe41bffee10d4a239473a0a8e24c1bba56faa2c54",
+          "blueprint_snapshot_path": "data/objective-snapshots/ckad-official-objectives.txt",
+          "blueprint_snapshot_sha256": "58b0290b61ba14ad68c02e06bcd2fbec14d23c4e555e69eb67a5615047e02ca1",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The nine detailed unweighted Vault 1.16 Associate domains remain accurately named and mapped; renamed credentials and internal identifiers are explicitly distinguished."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Substantive coverage of authentication, policies, tokens, leases, secrets engines, transit, seal/storage, deployment, replication, and workload access is findable across explanations, scenarios, practice, and readiness material."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Passed source review vault-associate-003-2026-08-31-source-validation supplies the evidence baseline; 19 sources are healthy, with outside material labeled supplementary."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Assessment format, weights or their absence, lifecycle, maintenance, prerequisites, and unpublished details remain correctly separated without unsupported claims."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The treatment of authentication, policies, tokens, leases, secrets engines, transit, seal/storage, deployment, replication, and workload access is internally consistent and connects design or implementation choices to evidence, failure handling, and rollback."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Vault 1.16 exam scope is separated from current releases, HCP and self-managed responsibilities, editions, interfaces, and the renamed Advanced follow-on."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Practice work includes 6 named labs or exercises and uses authorized or synthetic contexts, bounded privileges and changes, validation, rollback, cleanup, or tabletop substitutes."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks require explanation and operational judgment without recalled, reconstructed, or third-party test-bank material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The passed source record and exact guide and objective hashes bind this result; access and naming caveats remain visible, and no human review is claimed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Normalized long-line comparison found only benign shared disclosure, resource, and integrity language; no irrelevant vendor leakage or suspicious substantive overlap was found."
+            }
+          },
+          "findings": [],
+          "notes": "Same-context read-only final review; objective status, lifecycle boundaries, scope distinctions and source links were checked."
+        },
+        {
+          "exam_code": "CKS",
+          "vendor_id": "linux-foundation",
+          "guide_path": "guides/CKS-certified-kubernetes-security-specialist.md",
+          "guide_content_sha256": "54b610b6e1fc67762063440d5851ec0928a9c59bc63ac8790b183de201c81d60",
+          "blueprint_snapshot_path": "data/objective-snapshots/cks-official-objectives.txt",
+          "blueprint_snapshot_sha256": "26ca4b0afc590f0df1dbf0ed60a435ce420efc6ac6d4ae95ec41dac302925c98",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The nine detailed unweighted Vault 1.16 Associate domains remain accurately named and mapped; renamed credentials and internal identifiers are explicitly distinguished."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Substantive coverage of authentication, policies, tokens, leases, secrets engines, transit, seal/storage, deployment, replication, and workload access is findable across explanations, scenarios, practice, and readiness material."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Passed source review vault-associate-003-2026-08-31-source-validation supplies the evidence baseline; 19 sources are healthy, with outside material labeled supplementary."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Assessment format, weights or their absence, lifecycle, maintenance, prerequisites, and unpublished details remain correctly separated without unsupported claims."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The treatment of authentication, policies, tokens, leases, secrets engines, transit, seal/storage, deployment, replication, and workload access is internally consistent and connects design or implementation choices to evidence, failure handling, and rollback."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Vault 1.16 exam scope is separated from current releases, HCP and self-managed responsibilities, editions, interfaces, and the renamed Advanced follow-on."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Practice work includes 6 named labs or exercises and uses authorized or synthetic contexts, bounded privileges and changes, validation, rollback, cleanup, or tabletop substitutes."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks require explanation and operational judgment without recalled, reconstructed, or third-party test-bank material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The passed source record and exact guide and objective hashes bind this result; access and naming caveats remain visible, and no human review is claimed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Normalized long-line comparison found only benign shared disclosure, resource, and integrity language; no irrelevant vendor leakage or suspicious substantive overlap was found."
+            }
+          },
+          "findings": [],
+          "notes": "Same-context read-only final review; objective status, lifecycle boundaries, scope distinctions and source links were checked."
+        },
+        {
+          "exam_code": "CLA-11-03",
+          "vendor_id": "cpp-institute",
+          "guide_path": "guides/CLA-11-03-c-certified-associate-programmer.md",
+          "guide_content_sha256": "9c2a95640087d3ddd7bbfc547796363ed106498635845ba2a3688862164503ff",
+          "blueprint_snapshot_path": "data/objective-snapshots/cla-11-03-official-objectives.txt",
+          "blueprint_snapshot_sha256": "1fd3f2da7fd14a60373b645a0cc8bce7e56f0c09e3e4154cd0e5f99cf231f983",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The nine detailed unweighted Vault 1.16 Associate domains remain accurately named and mapped; renamed credentials and internal identifiers are explicitly distinguished."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Substantive coverage of authentication, policies, tokens, leases, secrets engines, transit, seal/storage, deployment, replication, and workload access is findable across explanations, scenarios, practice, and readiness material."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Passed source review vault-associate-003-2026-08-31-source-validation supplies the evidence baseline; 19 sources are healthy, with outside material labeled supplementary."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Assessment format, weights or their absence, lifecycle, maintenance, prerequisites, and unpublished details remain correctly separated without unsupported claims."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The treatment of authentication, policies, tokens, leases, secrets engines, transit, seal/storage, deployment, replication, and workload access is internally consistent and connects design or implementation choices to evidence, failure handling, and rollback."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Vault 1.16 exam scope is separated from current releases, HCP and self-managed responsibilities, editions, interfaces, and the renamed Advanced follow-on."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Practice work includes 6 named labs or exercises and uses authorized or synthetic contexts, bounded privileges and changes, validation, rollback, cleanup, or tabletop substitutes."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks require explanation and operational judgment without recalled, reconstructed, or third-party test-bank material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The passed source record and exact guide and objective hashes bind this result; access and naming caveats remain visible, and no human review is claimed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Normalized long-line comparison found only benign shared disclosure, resource, and integrity language; no irrelevant vendor leakage or suspicious substantive overlap was found."
+            }
+          },
+          "findings": [],
+          "notes": "Same-context read-only final review; objective status, lifecycle boundaries, scope distinctions and source links were checked."
         }
       ],
       "summary": {

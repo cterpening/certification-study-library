@@ -6,9 +6,9 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-28
 ---
 
 # CCNA Automation (200-901 CCNAAUTO) Study Guide
@@ -22,6 +22,10 @@ upcoming_change_checked: 2026-09-29
 **Credential history:** Cisco renamed DevNet Associate to CCNA Automation on February 3, 2026. Older v1.1 learning material may still use `DEVASC` or “DevNet Associate”; validate its objectives and product names rather than rejecting it solely for the former brand.
 
 The [May 27, 2025 announcement](https://blogs.cisco.com/learning/par-merat-announces-learn-with-cisco) and [August transition explanation](https://blogs.cisco.com/learning/views-from-an-insider-on-the-ccnp-automation-track-autocor-edition) distinguish the Associate rename from the Professional redesign. The current detailed PDF and 2026 training overview establish v1.1 scope; broad portfolio announcements do not add Professional objectives here. The monitor extraction gained leading title/navigation text while its previous exam-content block remained identical; that difference alone does not establish an exam change.
+
+## Current guide watch — October 28, 2026
+
+Cisco now brands 200-901 as CCNA Automation (formerly DevNet Associate); the official v1.1 blueprint remains the measured scope. The monitored exam page removed the explicit v1.0 string from its description, but its objective list did not change. Continue to use the full v1.1 blueprint and refreshed Cisco automation learning path. [Cisco 200-901 exam page](https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccnaauto.html) and [current v1.1 blueprint](https://learningcontent.cisco.com/documents/marketing/exam-topics/200-901-CCNAAUTO_v.1.1.pdf)
 
 ## How to use this guide
 
@@ -203,7 +207,7 @@ NETCONF/RESTCONF output must be related to the YANG model and requested path/fil
 
 Code review should verify intent, scope, readability, tests, secrets/dependencies, error and retry behavior, concurrency, least privilege, blast radius, observability, idempotency and rollback. Review the generated infrastructure diff as well as the source diff.
 
-**PRACTICAL DEPTH — check mode has exceptions.** The [Ansible check/diff guide](https://docs.ansible.com/projects/ansible-core/stable-2.21/playbook_guide/playbooks_checkmode.html) says unsupported modules may do nothing, conditionals based on registered prior results may not produce useful predictions, and a task with `check_mode: false` executes normally even under `--check`. Inspect task behavior before treating a dry run as read-only. Diff output can expose secrets; use appropriate redaction and `diff: false` for sensitive tasks. No Ansible playbook was executed here.
+**PRACTICAL DEPTH — check mode has exceptions.** The [Ansible check/diff guide](https://docs.ansible.com/projects/ansible-core/devel/playbook_guide/playbooks_checkmode.html) says unsupported modules may do nothing, conditionals based on registered prior results may not produce useful predictions, and a task with `check_mode: false` executes normally even under `--check`. Inspect task behavior before treating a dry run as read-only. Diff output can expose secrets; use appropriate redaction and `diff: false` for sensitive tasks. No Ansible playbook was executed here.
 
 ---
 

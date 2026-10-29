@@ -6,9 +6,9 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-28
 ---
 
 # ISC2 Certified Information Systems Security Professional (CISSP) Study Guide
@@ -25,6 +25,10 @@ upcoming_change_checked: 2026-09-29
 **VERIFY CURRENT:** The [May 18, 2026 waiver update](https://www.isc2.org/Insights/2026/05/CISSP-Experiene-Waiver-Updates) says the approved credential list changed April 1, 2026. Check the [current experience list](https://www.isc2.org/certifications/cissp/cissp-experience-requirements), including exact credential names; a degree and credential cannot stack into two waived years. Full-time experience accrues monthly at at least 35 hours/week for four weeks; qualifying part-time work is 20–34 hours/week, with 1,040 hours equated to six months. Document internships on organizational letterhead. These are public rules, not an individual eligibility determination.
 
 The [CAT policy](https://www.isc2.org/certifications/computerized-adaptive-testing) explains unscored items, no answer review and breaks that consume examination time. A training completion percentage, number of items delivered or stopping point does not reveal the scaled exam result.
+
+## Current guide watch — October 28, 2026
+
+ISC2 continues to show the current outline effective April 15, 2024 and has announced that a new outline takes effect April 15, 2027. Detailed future scope is not yet published on the official outline page, so keep the current eight-domain map for exams before that date and recheck the official page before planning for the new version. [ISC2 CISSP outline and transition notice](https://www.isc2.org/certifications/cissp/cissp-certification-exam-outline)
 
 ## How to use this guide
 

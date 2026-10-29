@@ -6,19 +6,23 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-28
 ---
 
 # CKA Certified Kubernetes Administrator Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 29, 2026. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#cka-coverage-record). The [official CKA page](https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on October 28, 2026. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#cka-coverage-record). The [official CKA page](https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/) is authoritative.
 
 **Current baseline:** Kubernetes v1.35 and the five weighted domains on the live CKA page<br>
 **Lifecycle watch:** Kubernetes [v1.37 was released August 26, 2026](https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/), but the official exam page still names v1.35 as of September 29. Linux Foundation says exam alignment follows a new minor release by approximately 4–8 weeks, so recheck between September 23 and October 21 and immediately before practice or scheduling; this is a watch window, not an announced exam-version date.<br>
 **Official delivery snapshot:** Online, remotely proctored, performance-based command-line exam; two hours; certification valid for two years; 12-month eligibility, one retake, and two 36-hour Killer.sh simulator activations listed<br>
 **Prerequisite:** No formal certification prerequisite; practical readiness requires Linux, networking, containers, YAML, and repeated Kubernetes administration under time pressure
+
+## Current guide watch — October 28, 2026
+
+The official Linux Foundation page now lists Kubernetes v1.35 as the exam environment. The competency outline is unchanged; the version tracks the current minor release and is expected to follow new Kubernetes minors within roughly 4–8 weeks. Passing CKS now also reinstates or extends CKA under the CARE program effective June 18, 2026; that is a credential-maintenance route, not an exam prerequisite change. [CKA official exam page](https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/) and [CARE update](https://training.linuxfoundation.org/blog/expanding-care-passing-cks-can-now-extend-your-cka-certification/)
 
 ## How to use this guide
 
@@ -423,7 +427,7 @@ Use disposable infrastructure and only systems you own or are authorized to chan
 
 | Resource | Access | Estimated time |
 |---|---|---:|
-| [Official CKA page](https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/) and [public CNCF v1.35 curriculum](https://github.com/cncf/curriculum/blob/master/CKA_Curriculum_v1.35.pdf) | Public; exam paid | 3–5 hours mapping/review, plus 8–14 selected simulator hours |
+| [Official CKA page](https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/) and [public latest CNCF v1.37 curriculum](https://github.com/cncf/curriculum/blob/master/CKA_Curriculum_v1.37.pdf) | Public; exam paid | 3–5 hours mapping/review, plus 8–14 selected simulator hours |
 | [Kubernetes v1.35 documentation](https://v1-35.docs.kubernetes.io/docs/home/) | Public | 20–35 selected reading/lab hours; use as reference, not a cover-to-cover course |
 | [Kubernetes v1.37 release](https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/) | Public release watch; use only to trigger the exam-version recheck | 20–40 minutes |
 | [Ingress NGINX retirement notice](https://kubernetes.io/blog/2025/11/11/ingress-nginx-retirement/) | Public operational warning; distinguishes the controller from the stable Ingress API | 15–25 minutes |
@@ -436,3 +440,4 @@ Use disposable infrastructure and only systems you own or are authorized to chan
 LFS258 now advertises hosted browser labs; optional self-managed cloud infrastructure may still cost money. Its outline explicitly includes Helm/Kustomize and CRDs, and its overview includes Gateway API. Pluralsight mixes older courses with 2026 additions; path totals alone do not establish every lesson's v1.35 alignment. KodeKloud lists Gateway API, Helm and Kustomize, with a separate September 2025 video update. Public metadata was reviewed; paid lessons, mock questions and provider labs were not accessed. All added independent practice times are planning estimates.
 
 This is not a complete list and is not meant to be consumed in full. Choose one current structured route, use the official v1.35 objectives and documentation as the source of truth, build and break disposable clusters, and use the included simulator late for diagnosis. Check every course against the live CKA version, especially when it still teaches older Ingress-only, pre-Gateway API, pre-current-admission, or outdated kubeadm behavior. Avoid recalled tasks and question dumps; this is a performance exam.
+

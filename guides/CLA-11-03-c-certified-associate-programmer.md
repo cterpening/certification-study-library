@@ -6,9 +6,9 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-28
 ---
 
 # CLA-11-03 C Certified Associate Programmer Study Guide
@@ -21,6 +21,10 @@ upcoming_change_checked: 2026-09-29
 **VERIFY CURRENT — purchase snapshot:** no formal prerequisite; from USD 325 exam or USD 375 exam-plus-retake when checked<br>
 
 The [dated deep-review record](../docs/research/2026-09-29-cla-11-03-deep-review.md) maps all **23 objectives**, grouped 6/7/6/4. Original multi-file examples ran through hosted GCC 15.2 and Clang 20.1 in **C17 mode**, an author practice choice rather than an exam requirement. Both passed 181 loader checks and 53 language checks; selected optimized, configuration and sanitizer runs also passed. No local compiler was installed. Eight broader activities remain proposed.
+
+## Current guide watch — October 28, 2026
+
+The C++ Institute’s current CLA syllabus remains aligned to active exam CLA-11-03, last updated July 24, 2025. Its four blocks and item weights remain 29%, 38%, 25% and 8%; the official text now spells out the task verbs more fully but maps to the same concepts. Exam logistics are 40 questions and 65 minutes. [CLA-11-03 official syllabus and exam details](https://cppinstitute.org/cla)
 
 ## How to use this guide
 
