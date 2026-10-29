@@ -81066,6 +81066,566 @@
         "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
       ],
       "notes": "GKE architecture and managed-cluster boundaries; no cluster execution claimed."
-    }
+    },
+        {
+      "id": "microsoft-az-401-exam",
+      "title": "Exam AZ-401: Designing and Implementing Microsoft Agentic DevOps Solutions",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/az-401/",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-10-29",
+      "supported_exams": [
+        "AZ-401"
+      ],
+      "notes": "Dedicated AZ-401 beta exam page: scope/status/logistics. October 29, 2026 check; unrelated related-certification prose is not exam scope."
+    },
+        {
+      "id": "microsoft-az-401-study-guide",
+      "title": "Study guide for Exam AZ-401",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "exam-blueprint",
+      "access_model": "public",
+      "last_checked": "2026-10-29",
+      "supported_exams": [
+        "AZ-401"
+      ],
+      "notes": "Current AZ-401 objective source; page displays last updated October 13, 2026. Objectives were directly readable in web reader despite authorization notice in one view."
+    },
+    {
+      "id": "microsoft-az-401-credential",
+      "title": "Microsoft Certified: Agentic DevOps Engineer Expert",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-devops-engineer-expert/",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "official-certification-page",
+      "access_model": "public",
+      "last_checked": "2026-10-29",
+      "supported_exams": [
+        "AZ-401"
+      ],
+      "notes": "Credential identity and beta state. The current assessed-domain block repeats unrelated AB-100 objectives; do not use it to define AZ-401 scope."
+    },
+    {
+      "id": "microsoft-azure-devops-mcp-overview",
+      "title": "Azure DevOps MCP Server overview",
+      "url": "https://learn.microsoft.com/en-us/azure/devops/mcp-server/mcp-server-overview?view=azure-devops",
+      "publisher": "Microsoft Learn",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-29",
+      "supported_exams": [
+        "AZ-401"
+      ],
+      "notes": "MCP server connectivity and capability overview; client/tool behavior changes; no execution claimed."
+    },
+    {
+      "id": "microsoft-azure-devops-remote-mcp",
+      "title": "Set up the remote Azure DevOps MCP Server",
+      "url": "https://learn.microsoft.com/en-us/azure/devops/mcp-server/remote-mcp-server?view=azure-devops",
+      "publisher": "Microsoft Learn",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-29",
+      "supported_exams": [
+        "AZ-401"
+      ],
+      "notes": "Remote MCP, Entra OAuth, client support and permission boundaries; VERIFY CURRENT; no server connected."
+    },
+    {
+      "id": "github-copilot-mcp-concepts",
+      "title": "MCP in GitHub Copilot",
+      "url": "https://docs.github.com/en/copilot/concepts/customizations/mcp",
+      "publisher": "GitHub Docs",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-29",
+      "supported_exams": [
+        "AZ-401"
+      ],
+      "notes": "MCP customization/concepts; availability and client behavior depend on current product/plan."
+    },
+    {
+      "id": "microsoft-azure-pipelines-docs",
+      "title": "Azure Pipelines documentation",
+      "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/?view=azure-devops",
+      "publisher": "Microsoft Learn",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-29",
+      "supported_exams": [
+        "AZ-401"
+      ],
+      "notes": "Pipelines, YAML, agents, environments, templates, tests and deployment documentation; no pipeline executed."
+    },
+    {
+      "id": "microsoft-azure-pipeline-approvals",
+      "title": "Approvals and checks",
+      "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/process/approvals?tabs=check-pass&view=azure-devops",
+      "publisher": "Microsoft Learn",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-29",
+      "supported_exams": [
+        "AZ-401"
+      ],
+      "notes": "Protected-resource approvals/checks and owners; UI and availability may change."
+    },
+    {
+      "id": "microsoft-azure-pipeline-resource-permissions",
+      "title": "Pipeline permissions for protected resources",
+      "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/security/resources",
+      "publisher": "Microsoft Learn",
+      "authority_class": 2,
+      "source_type": "security-guidance",
+      "access_model": "public",
+      "last_checked": "2026-10-29",
+      "supported_exams": [
+        "AZ-401"
+      ],
+      "notes": "Azure Pipelines resource authorization and security boundaries."
+    },
+    {
+      "id": "microsoft-azure-pipeline-variables",
+      "title": "Define variables in Azure Pipelines",
+      "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/process/variables?tabs=yaml&view=azure-devops",
+      "publisher": "Microsoft Learn",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-29",
+      "supported_exams": [
+        "AZ-401"
+      ],
+      "notes": "Variable, template and scope guidance; avoid treating variables as a secret store."
+    },
+    {
+      "id": "github-agentic-workflows-tutorial",
+      "title": "Develop agentic workflows in GitHub Actions",
+      "url": "https://docs.github.com/en/actions/tutorials/develop-agentic-workflows-in-github-actions",
+      "publisher": "GitHub Docs",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-29",
+      "supported_exams": [
+        "AZ-401"
+      ],
+      "notes": "Agentic workflow tutorial; generated workflow behavior/stage is volatile. Review generated YAML; no workflow executed."
+    },
+    {
+      "id": "microsoft-azure-pipelines-workload-identity",
+      "title": "Configure workload identity federation for Azure Pipelines",
+      "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/release/configure-workload-identity?view=azure-devops",
+      "publisher": "Microsoft Learn",
+      "authority_class": 2,
+      "source_type": "security-guidance",
+      "access_model": "public",
+      "last_checked": "2026-10-29",
+      "supported_exams": [
+        "AZ-401"
+      ],
+      "notes": "Workload identity/service-connection setup; issuer migration details are volatile and require current verification."
+    },
+    {
+      "id": "microsoft-entra-secretless-auth",
+      "title": "Secretless authentication for Azure resources",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/secretless-authentication",
+      "publisher": "Microsoft Learn",
+      "authority_class": 2,
+      "source_type": "security-guidance",
+      "access_model": "public",
+      "last_checked": "2026-10-29",
+      "supported_exams": [
+        "AZ-401"
+      ],
+      "notes": "Managed identity and workload-federation conceptual boundary; do not assume arbitrary external runners have managed identities."
+    },
+    {
+      "id": "microsoft-azure-pipelines-security",
+      "title": "Azure Pipelines security overview",
+      "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/security/overview?view=azure-devops",
+      "publisher": "Microsoft Learn",
+      "authority_class": 2,
+      "source_type": "security-guidance",
+      "access_model": "public",
+      "last_checked": "2026-10-29",
+      "supported_exams": [
+        "AZ-401"
+      ],
+      "notes": "Pipeline security principles and credential boundaries."
+    },
+    {
+      "id": "microsoft-defender-cloud-devops-security",
+      "title": "Connect a DevOps environment to Defender for Cloud",
+      "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/enable-enhanced-security",
+      "publisher": "Microsoft Learn",
+      "authority_class": 2,
+      "source_type": "security-guidance",
+      "access_model": "public",
+      "last_checked": "2026-10-29",
+      "supported_exams": [
+        "AZ-401"
+      ],
+      "notes": "DevOps security connector setup; supported environments and eligibility may change."
+    },
+    {
+      "id": "github-ghas-ai-coding-agents",
+      "title": "Use GitHub Advanced Security with AI coding agents",
+      "url": "https://docs.github.com/en/code-security/how-tos/use-ghas-with-ai-coding-agents",
+      "publisher": "GitHub Docs",
+      "authority_class": 2,
+      "source_type": "security-guidance",
+      "access_model": "public",
+      "last_checked": "2026-10-29",
+      "supported_exams": [
+        "AZ-401"
+      ],
+      "notes": "Security features for AI coding agents; inspect eligibility and result visibility for the exact workflow."
+    },
+    {
+      "id": "microsoft-azure-observability-agent",
+      "title": "Azure Copilot Observability Agent overview",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/aiops/observability-agent-overview",
+      "publisher": "Microsoft Learn",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-29",
+      "supported_exams": [
+        "AZ-401"
+      ],
+      "notes": "Azure Copilot Observability Agent capabilities and Preview boundaries; regions and modes are volatile."
+    },
+    {
+      "id": "microsoft-azure-observability-governance",
+      "title": "Governance FAQ for Azure Copilot Observability Agent",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/aiops/observability-agent-governance-faq",
+      "publisher": "Microsoft Learn",
+      "authority_class": 2,
+      "source_type": "security-guidance",
+      "access_model": "public",
+      "last_checked": "2026-10-29",
+      "supported_exams": [
+        "AZ-401"
+      ],
+      "notes": "Data/governance limitations for observability agent; verify current privacy and region details."
+    },
+    {
+      "id": "microsoft-azure-observability-best-practices",
+      "title": "Azure Copilot Observability Agent best practices",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/aiops/observability-agent-best-practices",
+      "publisher": "Microsoft Learn",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-29",
+      "supported_exams": [
+        "AZ-401"
+      ],
+      "notes": "Telemetry quality and use guidance; no agent configured or product behavior executed."
+    },
+    {
+      "id": "microsoft-azure-sre-agent-run-modes",
+      "title": "Run modes for Azure SRE Agent",
+      "url": "https://learn.microsoft.com/en-us/azure/sre-agent/run-modes",
+      "publisher": "Microsoft Learn",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-29",
+      "supported_exams": [
+        "AZ-401"
+      ],
+      "notes": "Review and autonomous run-mode distinctions; actual actions remain permission/tool-policy dependent and volatile."
+    },
+    {
+      "id": "microsoft-agentic-devops-module",
+      "title": "Introduction to agentic DevOps using Microsoft tools on Azure",
+      "url": "https://learn.microsoft.com/en-us/training/modules/introduction-agentic-devops-microsoft-tools-azure/",
+      "publisher": "Microsoft Learn",
+      "authority_class": 3,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-10-29",
+      "supported_exams": [
+        "AZ-401"
+      ],
+      "notes": "Seven-unit advanced orientation; no full AZ-401 coverage or vendor-published duration verified."
+    },
+    {
+      "id": "microsoftlearning-mslearn-devops",
+      "title": "DevOps and Platform Engineering exercises",
+      "url": "https://microsoftlearning.github.io/mslearn-devops/",
+      "publisher": "MicrosoftLearning",
+      "authority_class": 3,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-10-29",
+      "supported_exams": [
+        "AZ-401"
+      ],
+      "notes": "Public practical exercise collection; selected exercises, not an AZ-401 course; access/cost vary."
+    },
+    {
+      "id": "microsoftlearning-mslearn-devops-repo",
+      "title": "MicrosoftLearning mslearn-devops repository",
+      "url": "https://github.com/MicrosoftLearning/mslearn-devops",
+      "publisher": "MicrosoftLearning / GitHub",
+      "authority_class": 3,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-10-29",
+      "supported_exams": [
+        "AZ-401"
+      ],
+      "notes": "Public exercise materials; repository showed MIT license on October 29, 2026; no exercise executed."
+    },
+    {
+      "id": "microsoftlearning-agentic-boards-lab",
+      "title": "AI-assisted work item management in Azure Boards",
+      "url": "https://microsoftlearning.github.io/mslearn-devops/Instructions/agentic/01-ai-assisted-azure-boards.html",
+      "publisher": "MicrosoftLearning",
+      "authority_class": 3,
+      "source_type": "hands-on-lab",
+      "access_model": "public",
+      "last_checked": "2026-10-29",
+      "supported_exams": [
+        "AZ-401"
+      ],
+      "notes": "Published ~45-minute lab; requires Azure DevOps/GitHub access and paid Copilot. Use disposable project/repository."
+    },
+    {
+      "id": "microsoftlearning-ado-mcp-lab",
+      "title": "Manage Azure DevOps projects using MCP Server",
+      "url": "https://microsoftlearning.github.io/mslearn-devops/Instructions/agentic/02-manage-ado-using-mcp-server.html",
+      "publisher": "MicrosoftLearning",
+      "authority_class": 3,
+      "source_type": "hands-on-lab",
+      "access_model": "public",
+      "last_checked": "2026-10-29",
+      "supported_exams": [
+        "AZ-401"
+      ],
+      "notes": "Published ~30-minute lab; MCP may mutate work items/run pipelines. Use dummy project and approve narrowly."
+    },
+    {
+      "id": "microsoftlearning-sre-agent-lab",
+      "title": "Optimize Azure reliability using Azure SRE Agent",
+      "url": "https://microsoftlearning.github.io/mslearn-devops/Instructions/agentic/03-optimize-azure-reliability-using-sre-agent.html",
+      "publisher": "MicrosoftLearning",
+      "authority_class": 3,
+      "source_type": "hands-on-lab",
+      "access_model": "public",
+      "last_checked": "2026-10-29",
+      "supported_exams": [
+        "AZ-401"
+      ],
+      "notes": "Published ~45-minute lab; provisions billable Azure resources and requires subscription Contributor access; use budgeted disposable subscription."
+    },
+    {
+      "id": "microsoftlearning-multiagent-iac-lab",
+      "title": "Compose a multi-agent solution for Azure infrastructure",
+      "url": "https://microsoftlearning.github.io/mslearn-devops/Instructions/agentic/06-transition-traditional-ops-using-agent-automation.html",
+      "publisher": "MicrosoftLearning",
+      "authority_class": 3,
+      "source_type": "hands-on-lab",
+      "access_model": "public",
+      "last_checked": "2026-10-29",
+      "supported_exams": [
+        "AZ-401"
+      ],
+      "notes": "Published ~45-minute lab; uses Copilot and billable Azure resources. Review IaC and require human approval; no lab executed."
+    },
+{
+  "id": "microsoft-az401-artifacts-views",
+  "title": "What are feed views?",
+  "url": "https://learn.microsoft.com/en-us/azure/devops/artifacts/concepts/views?view=azure-devops",
+  "publisher": "Microsoft Learn",
+  "authority_class": 1,
+  "source_type": "product-documentation",
+  "access_model": "public",
+  "last_checked": "2026-10-29",
+  "supported_exams": [
+    "AZ-401"
+  ],
+  "notes": "Added for the October 29, 2026 AZ-401 objective-depth review; no product execution."
+},
+{
+  "id": "microsoft-az401-pipeline-coverage",
+  "title": "Review and configure code coverage results in Azure Pipelines",
+  "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/test/codecoverage-for-pullrequests",
+  "publisher": "Microsoft Learn",
+  "authority_class": 1,
+  "source_type": "product-documentation",
+  "access_model": "public",
+  "last_checked": "2026-10-29",
+  "supported_exams": [
+    "AZ-401"
+  ],
+  "notes": "Added for the October 29, 2026 AZ-401 objective-depth review; no product execution."
+},
+{
+  "id": "microsoft-az401-github-integration",
+  "title": "GitHub integration overview",
+  "url": "https://learn.microsoft.com/en-us/azure/devops/cross-service/github-integration?view=azure-devops",
+  "publisher": "Microsoft Learn",
+  "authority_class": 1,
+  "source_type": "product-documentation",
+  "access_model": "public",
+  "last_checked": "2026-10-29",
+  "supported_exams": [
+    "AZ-401"
+  ],
+  "notes": "Added for the October 29, 2026 AZ-401 objective-depth review; no product execution."
+},
+{
+  "id": "microsoft-az401-github-pipelines",
+  "title": "Build GitHub repositories",
+  "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/repos/github?view=azure-devops",
+  "publisher": "Microsoft Learn",
+  "authority_class": 1,
+  "source_type": "product-documentation",
+  "access_model": "public",
+  "last_checked": "2026-10-29",
+  "supported_exams": [
+    "AZ-401"
+  ],
+  "notes": "Added for the October 29, 2026 AZ-401 objective-depth review; no product execution."
+},
+{
+  "id": "microsoft-az401-agent-demands",
+  "title": "pool.demands definition",
+  "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/process/demands?tabs=yaml&view=azure-devops",
+  "publisher": "Microsoft Learn",
+  "authority_class": 1,
+  "source_type": "product-documentation",
+  "access_model": "public",
+  "last_checked": "2026-10-29",
+  "supported_exams": [
+    "AZ-401"
+  ],
+  "notes": "Added for the October 29, 2026 AZ-401 objective-depth review; no product execution."
+},
+{
+  "id": "github-az401-app-auth",
+  "title": "About authentication with a GitHub App",
+  "url": "https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app/about-authentication-with-a-github-app",
+  "publisher": "GitHub Docs",
+  "authority_class": 1,
+  "source_type": "product-documentation",
+  "access_model": "public",
+  "last_checked": "2026-10-29",
+  "supported_exams": [
+    "AZ-401"
+  ],
+  "notes": "Added for the October 29, 2026 AZ-401 objective-depth review; no product execution."
+},
+{
+  "id": "github-az401-token-auth",
+  "title": "Automatic token authentication",
+  "url": "https://docs.github.com/en/actions/security-for-github-actions/security-guides/automatic-token-authentication",
+  "publisher": "GitHub Docs",
+  "authority_class": 1,
+  "source_type": "product-documentation",
+  "access_model": "public",
+  "last_checked": "2026-10-29",
+  "supported_exams": [
+    "AZ-401"
+  ],
+  "notes": "Added for the October 29, 2026 AZ-401 objective-depth review; no product execution."
+},
+{
+  "id": "microsoft-az401-service-connections",
+  "title": "Service connections",
+  "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/library/service-endpoints?view=azure-devops",
+  "publisher": "Microsoft Learn",
+  "authority_class": 1,
+  "source_type": "product-documentation",
+  "access_model": "public",
+  "last_checked": "2026-10-29",
+  "supported_exams": [
+    "AZ-401"
+  ],
+  "notes": "Added for the October 29, 2026 AZ-401 objective-depth review; no product execution."
+},
+{
+  "id": "github-az401-copilot-review",
+  "title": "Configuring code review by GitHub Copilot",
+  "url": "https://docs.github.com/en/copilot/how-tos/copilot-on-github/set-up-copilot/configure-code-review",
+  "publisher": "GitHub Docs",
+  "authority_class": 1,
+  "source_type": "product-documentation",
+  "access_model": "public",
+  "last_checked": "2026-10-29",
+  "supported_exams": [
+    "AZ-401"
+  ],
+  "notes": "Added for the October 29, 2026 AZ-401 objective-depth review; no product execution."
+},
+{
+  "id": "github-az401-repository-graphs",
+  "title": "About repository graphs",
+  "url": "https://docs.github.com/en/repositories/viewing-activity-and-data-for-your-repository/about-repository-graphs",
+  "publisher": "GitHub Docs",
+  "authority_class": 1,
+  "source_type": "product-documentation",
+  "access_model": "public",
+  "last_checked": "2026-10-29",
+  "supported_exams": [
+    "AZ-401"
+  ],
+  "notes": "Added for the October 29, 2026 AZ-401 objective-depth review; no product execution."
+},
+{
+  "id": "github-az401-repository-traffic",
+  "title": "Viewing traffic to a repository",
+  "url": "https://docs.github.com/en/repositories/viewing-activity-and-data-for-your-repository/viewing-traffic-to-a-repository",
+  "publisher": "GitHub Docs",
+  "authority_class": 1,
+  "source_type": "product-documentation",
+  "access_model": "public",
+  "last_checked": "2026-10-29",
+  "supported_exams": [
+    "AZ-401"
+  ],
+  "notes": "Added for the October 29, 2026 AZ-401 objective-depth review; no product execution."
+},
+{
+  "id": "github-az401-agent-sessions",
+  "title": "Managing agent sessions",
+  "url": "https://docs.github.com/en/copilot/how-tos/copilot-on-github/use-copilot-agents/manage-and-track-agents",
+  "publisher": "GitHub Docs",
+  "authority_class": 1,
+  "source_type": "product-documentation",
+  "access_model": "public",
+  "last_checked": "2026-10-29",
+  "supported_exams": [
+    "AZ-401"
+  ],
+  "notes": "Added for the October 29, 2026 AZ-401 objective-depth review; no product execution."
+},
+{
+  "id": "github-az401-copilot-logs",
+  "title": "Viewing logs for GitHub Copilot in your environment",
+  "url": "https://docs.github.com/en/copilot/how-tos/troubleshoot-copilot/view-logs",
+  "publisher": "GitHub Docs",
+  "authority_class": 1,
+  "source_type": "product-documentation",
+  "access_model": "public",
+  "last_checked": "2026-10-29",
+  "supported_exams": [
+    "AZ-401"
+  ],
+  "notes": "Added for the October 29, 2026 AZ-401 objective-depth review; no product execution."
+}
 ]
 }
