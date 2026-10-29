@@ -48,6 +48,7 @@ PUBLIC_DOCUMENTS = (
     "docs/research/2026-09-30-splunk-core-power-user-deep-review.md",
     "docs/research/2026-09-30-splunk-core-user-deep-review.md",
     "docs/CERTIFICATION-LIFECYCLE.md",
+    "docs/CERTIFICATION-INVENTORY.md",
     "docs/research/2026-09-30-pcei-30-01-deep-review.md",
     "docs/research/2026-09-30-pcea-30-01-deep-review.md",
     "docs/research/2026-09-30-pces-30-01-deep-review.md",
@@ -650,6 +651,7 @@ def render_homepage(
     collections: list[dict[str, object]],
     source_count: int,
     vendors: list[dict[str, object]] | None = None,
+    certification_count: int = 0,
 ) -> str:
     grouped: dict[str, list[dict[str, object]]] = defaultdict(list)
     for exam in exams:
@@ -680,6 +682,7 @@ def render_homepage(
     reference_cards = render_partner_reference_cards()
     return (
         template.replace("{{GUIDE_COUNT}}", str(len(exams)))
+        .replace("{{CERTIFICATION_COUNT}}", str(certification_count))
         .replace("{{SOURCE_COUNT}}", str(source_count))
         .replace("{{TRACK_CARDS}}", "\n".join(track_cards))
         .replace("{{REFERENCE_CARDS}}", reference_cards)
@@ -861,6 +864,7 @@ def render_nav(
     lines = [
         "nav:",
         "  - Home: index.md",
+        "  - Certification inventory: certifications/index.md",
         "  - Study guides:",
         "      - Browse all: exams/index.md",
     ]
@@ -908,6 +912,92 @@ def render_nav(
     return "\n".join(lines)
 
 
+def render_certification_inventory(
+    certifications: list[dict[str, object]],
+    exams: list[dict[str, object]],
+    vendors: list[dict[str, object]],
+) -> str:
+    """Render every research-inventory row, with an explicit guide state."""
+
+    guides_by_identity = {
+        (str(exam["vendor_id"]), str(exam["code"])): exam for exam in exams
+    }
+    certifications_by_vendor: dict[str, list[dict[str, object]]] = defaultdict(list)
+    for certification in certifications:
+        certifications_by_vendor[str(certification["vendor_id"])].append(certification)
+
+    vendor_order = {str(vendor["id"]): index for index, vendor in enumerate(vendors)}
+    ordered_vendor_ids = sorted(
+        certifications_by_vendor,
+        key=lambda vendor_id: (
+            vendor_order.get(vendor_id, len(vendor_order)),
+            vendor_name(vendor_id, vendors).casefold(),
+        ),
+    )
+    status_labels = {
+        "active": "Active",
+        "beta": "Beta",
+        "legacy": "Legacy",
+        "retirement-announced": "Retirement announced",
+        "retired": "Retired",
+    }
+    lines = [
+        "# Certification inventory",
+        "",
+        (
+            f"This catalog lists all **{len(certifications)} entries** in the "
+            "repository certification inventory, including credentials without "
+            "a complete study guide."
+        ),
+        "",
+        (
+            "Use the official listing to confirm current status and exam details. "
+            "A published guide is linked where one exists; **Not published** "
+            "means the credential is tracked in our inventory, but no full guide "
+            "is currently available here. Search the page for a credential code, "
+            "title, or provider."
+        ),
+        "",
+        "[Browse the published study guides](../exams/index.md) · [How this inventory is maintained](../docs/CERTIFICATION-INVENTORY.md)",
+        "",
+    ]
+
+    for vendor_id in ordered_vendor_ids:
+        rows = sorted(
+            certifications_by_vendor[vendor_id],
+            key=lambda item: (
+                natural_sort_key(str(item["exam_code"])),
+                str(item["title"]).casefold(),
+            ),
+        )
+        lines.extend(
+            [
+                f"## {vendor_name(vendor_id, vendors)}",
+                "",
+                "| Code | Certification | Status | Official listing | Study guide |",
+                "| --- | --- | --- | --- | --- |",
+            ]
+        )
+        for item in rows:
+            identity = (vendor_id, str(item["exam_code"]))
+            guide = guides_by_identity.get(identity)
+            official_url = str(item["official_url"])
+            status = status_labels.get(str(item["status"]), str(item["status"]))
+            title = str(item["title"]).replace("|", "\\|").replace("\n", " ")
+            guide_path = str(guide["guide_path"]).replace("\\", "/") if guide else ""
+            guide_link = (
+                f"[Open guide](../{guide_path})"
+                if guide
+                else "Not published"
+            )
+            lines.append(
+                f"| {item['exam_code']} | {title} | {status} | "
+                f"[Official listing](<{official_url}>) | {guide_link} |"
+            )
+        lines.append("")
+    return "\n".join(lines).rstrip() + "\n"
+
+
 def prepare_site(root: Path = ROOT, build_dir: Path | None = None) -> dict[str, object]:
     root = root.resolve()
     build_dir = (build_dir or (root / ".site-build")).resolve()
@@ -920,15 +1010,21 @@ def prepare_site(root: Path = ROOT, build_dir: Path | None = None) -> dict[str, 
     docs_dir.mkdir(parents=True)
 
     exams_data = read_json(root / "config/exams.json")
+    seeds_data = read_json(root / "config/certification-seeds.json")
     collections_data = read_json(root / "config/collections.json")
     sources_data = read_json(root / "data/sources.json")
     vendors_data = read_json(root / "data/vendors.json")
     raw_exams = exams_data.get("exams")
+    raw_certifications = seeds_data.get("certifications")
     raw_collections = collections_data.get("collections")
     raw_sources = sources_data.get("sources")
     raw_vendors = vendors_data.get("vendors")
     if not isinstance(raw_exams, list) or not raw_exams:
         raise ValueError("config/exams.json needs a non-empty exams array")
+    if not isinstance(raw_certifications, list) or not raw_certifications:
+        raise ValueError(
+            "config/certification-seeds.json needs a non-empty certifications array"
+        )
     if not isinstance(raw_sources, list):
         raise ValueError("data/sources.json needs a sources array")
     if not isinstance(raw_collections, list) or not raw_collections:
@@ -938,6 +1034,9 @@ def prepare_site(root: Path = ROOT, build_dir: Path | None = None) -> dict[str, 
     exams = [exam for exam in raw_exams if isinstance(exam, dict)]
     if len(exams) != len(raw_exams):
         raise ValueError("Every exam entry must be an object")
+    certifications = [item for item in raw_certifications if isinstance(item, dict)]
+    if len(certifications) != len(raw_certifications):
+        raise ValueError("Every certification seed must be an object")
     collections = [item for item in raw_collections if isinstance(item, dict)]
     if len(collections) != len(raw_collections):
         raise ValueError("Every collection entry must be an object")
@@ -978,7 +1077,8 @@ def prepare_site(root: Path = ROOT, build_dir: Path | None = None) -> dict[str, 
     website_dir = root / "website"
     homepage_template = (website_dir / "home.md.template").read_text(encoding="utf-8")
     homepage = render_homepage(
-        homepage_template, exams, collections, len(raw_sources), vendors
+        homepage_template, exams, collections, len(raw_sources), vendors,
+        certification_count=len(certifications),
     )
     (docs_dir / "index.md").write_text(homepage, encoding="utf-8")
 
@@ -992,6 +1092,13 @@ def prepare_site(root: Path = ROOT, build_dir: Path | None = None) -> dict[str, 
         (catalog_dir / f"{vendor_id}.md").write_text(
             render_vendor_catalog(vendor_record, exams, vendors), encoding="utf-8"
         )
+
+    inventory_dir = docs_dir / "certifications"
+    inventory_dir.mkdir()
+    (inventory_dir / "index.md").write_text(
+        render_certification_inventory(certifications, exams, vendors),
+        encoding="utf-8",
+    )
 
     collections_dir = docs_dir / "collections"
     collections_dir.mkdir()
@@ -1026,6 +1133,7 @@ def prepare_site(root: Path = ROOT, build_dir: Path | None = None) -> dict[str, 
     manifest = {
         "generated_on": date.today().isoformat(),
         "guide_count": len(exams),
+        "certification_count": len(certifications),
         "collection_count": len(collections),
         "source_count": len(raw_sources),
         "published_sources": sorted(published_sources),
@@ -1039,7 +1147,8 @@ def prepare_site(root: Path = ROOT, build_dir: Path | None = None) -> dict[str, 
 def main() -> int:
     manifest = prepare_site()
     print(
-        f"Prepared {manifest['guide_count']} guides and "
+        f"Prepared {manifest['guide_count']} guides across "
+        f"{manifest['certification_count']} certification entries and "
         f"{manifest['source_count']} registered sources in .site-build"
     )
     return 0

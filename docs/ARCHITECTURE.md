@@ -35,7 +35,8 @@ The objective monitor selects an adapter from each provider record. Provider ada
 ## Static website flow
 
 ```text
-config/exams.json + config/collections.json + data/vendors.json + data/sources.json
+config/certification-seeds.json + config/exams.json + config/collections.json
+                         + data/vendors.json + data/sources.json
                               │
 canonical guides + allowlisted project documents
                               ↓
@@ -50,7 +51,7 @@ canonical guides + allowlisted project documents
 
 The preparation step copies only configured guides and the explicit `PUBLIC_DOCUMENTS` allowlist. It does not treat the repository root or the entire `docs/` directory as publishable. This is a security and separation boundary: ignored working notes, private overlays, build reports, and unrelated files cannot enter the site merely because they exist locally.
 
-The vendor catalog drives provider labels, ordering, overview pages, and objective-adapter selection. The exam catalog drives guide cards and navigation; research-only certification seeds do not appear on the site until a complete guide is registered. The collection catalog defines overlapping editorial learning lenses and must never present them as official vendor pathways. Official partner learning journeys are separate allowlisted pages that compose existing guides with public program requirements without creating duplicate certifications or changing guide counts. The source catalog drives the source count. `website/` contains the maintained homepage template, MkDocs configuration template, and visual assets. Generated `.site-build/` and `site/` content is disposable and must not be edited or committed.
+The certification-seed catalog drives the complete site inventory, including status, official listing, and whether a full guide is published. The exam catalog drives the narrower study-guide cards and guide navigation. The collection catalog defines overlapping editorial learning lenses and must never present them as official vendor pathways. Official partner learning journeys are separate allowlisted pages that compose existing guides with public program requirements without creating duplicate certifications or changing guide counts. The source catalog drives the source count. `website/` contains the maintained homepage template, MkDocs configuration template, and visual assets. Generated `.site-build/` and `site/` content is disposable and must not be edited or committed.
 
 ## Public and private separation
 

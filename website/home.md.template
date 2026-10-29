@@ -16,11 +16,13 @@ hide:
   <div class="library-hero__actions">
     <a class="md-button md-button--primary" href="collections/">Explore collections</a>
     <a class="md-button" href="exams/">Browse all guides</a>
+    <a class="md-button" href="certifications/">Browse all certifications</a>
   </div>
 </section>
 
 <section class="trust-strip" aria-label="Library summary">
   <div><strong>{{GUIDE_COUNT}}</strong><span>objective-mapped guides</span></div>
+  <div><strong>{{CERTIFICATION_COUNT}}</strong><span>certifications in the inventory</span></div>
   <div><strong>{{SOURCE_COUNT}}</strong><span>registered public sources</span></div>
   <div><strong>{{GUIDE_COUNT}} of {{GUIDE_COUNT}}</strong><span>published guide blueprints monitored</span></div>
 </section>
@@ -82,4 +84,4 @@ hide:
 !!! warning "Independent and AI-assisted"
     Every study guide is generated or substantially developed with AI. This project is not affiliated with or endorsed by any certification or training provider. A **Sources + objectives checked** state records an AI-assisted quality gate; it does not mean an independent person reviewed the complete guide. Complete human review exists only where a guide is explicitly labeled **Community reviewed**. Always use the linked official blueprint as the final authority.
 
-<p class="build-note">Catalog generated from the repository exam and source registries on {{GENERATED_DATE}}.</p>
+<p class="build-note">Catalog generated from the repository certification, exam, and source registries on {{GENERATED_DATE}}.</p>
