@@ -6,26 +6,32 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-05
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-08-31
+upcoming_change_checked: 2026-10-28
 ---
 
 # GH-500 GitHub Advanced Security Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#gh-500-coverage-record). The [official GH-500 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-500) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on October 28, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#gh-500-coverage-record). The [official GH-500 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-500) is authoritative.
 
 **Current baseline:** Skills measured as of July 2026<br>
-**Upcoming blueprint change:** None announced on the official study guide as of August 31, 2026.<br>
+**Upcoming blueprint change:** None announced on the official study guide as of October 28, 2026.<br>
 **Official source:** [GH-500 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-500)
 
-## Living-guide watch — September 7, 2026
+## Living-guide watch — October 28, 2026
 
 **Confirmed current behavior:** [CodeQL 2.26.4](https://github.blog/changelog/2026-09-03-codeql-2-26-4-improves-github-actions-security-detections/) expands GitHub Actions analysis: `actions/unpinned-tag` now detects mutable references to reusable workflows; actor-field guards count only for event types that populate the checked field; and models-as-data can define `EnvironmentCheck`. GitHub.com code scanning receives new CodeQL versions automatically, while older GHES deployments may require a manual CodeQL upgrade and receive the functionality on a later server release.
 
 **Adjacent least-privilege update:** GitHub's [early-September Actions update](https://github.blog/changelog/2026-09-03-github-actions-early-september-2026-updates/) adds a `vulnerability-alerts: read` permission for `GITHUB_TOKEN`, allowing workflows to read Dependabot alerts without a broader token scope.
 
 **Concern and study decision:** The GH-500 blueprint tests durable analysis, configuration, triage, and governance decisions—not the 2.26.4 release-note inventory. Use these examples to practice immutable workflow pinning, event-aware trust checks, explicit token permissions, query/version rollout, and GHES-versus-cloud availability. Recheck the current CodeQL changelog and platform documentation before operational use.
+
+**Current preview — AI-detected secrets:** On October 28, GitHub announced public preview of push protection for AI-detected secrets. It is off by default, requires both AI-detected secret scanning and push protection, is available for repositories with GitHub Secret Protection or GitHub Advanced Security on github.com, and consumes AI credits when enabled. Do not assume GHES availability or enable it without an owner-approved billing review.
+
+**Upcoming audit-log schema change:** On November 12, 2026, the `business` field in specified secret-scanning audit events changes from enterprise display name to slug. Integrations that match display names should accept both during rollout or use `business_id`. This is dated operational context, separate from the July 2026 exam scope.
+
+**Credential maintenance:** The current credential page says GitHub certifications last two years while recertification transitions to Microsoft; exams expiring before the process is available receive a six-month extension. The practice assessment now launches in AI Skills Navigator and requires sign-in; its contents were not accessed.
 
 ## How to use this guide
 
@@ -741,7 +747,7 @@ This is a curated starting point, not a complete list, and it is not meant to be
 | Resource | Access | Estimated time | Best use and caveat |
 |---|---|---:|---|
 | [Microsoft Learn — GitHub Advanced Security Part 1](https://learn.microsoft.com/en-us/training/paths/github-advanced-security/) and [Part 2](https://learn.microsoft.com/en-us/training/paths/github-advanced-security-2) | Free | About 12–16 hours | Official starting point, including secret, supply-chain, CodeQL, and administration modules |
-| [Microsoft — GH-500 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/github-advanced-security/practice/assessment?assessment-type=practice&assessmentId=590484996&practice-assessment-type=certification) | Free Microsoft account | About 1–2 hours for an attempt and review | Repeatable official readiness check with rationales and learning links; start here before buying another assessment |
+| [AI Skills Navigator — GH-500 Practice Assessment](https://aiskillsnavigator.microsoft.com/credentials/cert-395e3a717f1a76889026d920979c10d0cb4ff7057b3c768f4efece80f217e6b3) | Free; sign-in required | About 1–2 hours for an attempt and review (planning estimate) | Current credential page links this official assessment; its questions and launch session were not accessed |
 | [Microsoft Learn GH-500 video course](https://www.youtube.com/playlist?list=PLahhVEj9XNTcJZjBU671JAiX8St3CV5dA) | Free | About 6–8 hours | Official instructor-led reinforcement for visual learners |
 | GitHub Skills: [Secure repository supply chain](https://github.com/skills/secure-repository-supply-chain) and [Secure Code Game](https://github.com/skills/secure-code-game) | Free account | About 2–4 hours | Practical security exercises; some enterprise controls require an appropriately licensed lab |
 | [Pluralsight — GH-500 GitHub Advanced Security path and practice exam](https://www.pluralsight.com/paths/gh-500-github-advanced-security) | Subscription; practice access depends on plan/library | 13 hours plus about 2–4 hours for assessment/review | Seven-course 2026 path taught by [Timothy Warner](https://www.pluralsight.com/authors/tim-warner); public page explicitly includes a practice exam |

@@ -6,17 +6,17 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-05
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-08-31
+upcoming_change_checked: 2026-10-28
 ---
 
 # GH-900 GitHub Foundations Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#gh-900-coverage-record). The [official GH-900 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-900) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on October 28, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#gh-900-coverage-record). The [official GH-900 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-900) is authoritative.
 
 **Current baseline:** Skills at a glance as of January 2026<br>
-**Upcoming blueprint change:** None announced on the official study guide as of August 31, 2026.<br>
+**Upcoming blueprint change:** None announced on the official study guide as of October 28, 2026.<br>
 **Official source:** [GH-900 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-900)<br>
 **Primary certification alignment:** GitHub Foundations (GH-900)<br>
 **Secondary benefit:** The GitHub platform knowledge assumed by GitHub Copilot (GH-300)
@@ -1425,6 +1425,12 @@ This is GitHub as an engineering system: documentation shapes intent, automation
 
 ---
 
+## Living-guide watch — October 28, 2026
+
+**Credential and assessment access:** Microsoft’s current GitHub Foundations credential page continues to describe GH-900 as a nonrenewing fundamentals certification. Its official practice assessment now launches through AI Skills Navigator and requires sign-in; the assessment questions were not accessed. [GitHub Foundations credential page](https://learn.microsoft.com/en-us/credentials/certifications/github-foundations/).
+
+**Current collaboration feature:** [Stacked pull requests](https://github.blog/changelog/2026-10-06-stacked-pull-requests-generally-available/) became generally available on October 6. Stacked PRs let authors build dependent changes as a sequence of smaller pull requests; understand the base-branch relationship and review/merge order. This is product context, not a change to the published GH-900 objectives.
+
 ## Part 18: Hands-on labs
 
 Do these in a disposable repository. Avoid real credentials and production subscriptions.
@@ -1823,12 +1829,11 @@ This is a curated starting point, not a complete list, and it is not meant to be
 | Resource | Access | Estimated time | Best use and caveat |
 |---|---|---:|---|
 | [Microsoft Learn — GitHub Foundations Part 1](https://learn.microsoft.com/en-us/training/paths/github-foundations/) and [Part 2](https://learn.microsoft.com/en-us/training/paths/github-foundations-2/) | Free | About 12–16 hours | Official starting point and closest match to the January 2026 objectives |
-| [Microsoft — GH-900 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/github-foundations/practice/assessment?assessment-type=practice&assessmentId=954809103&practice-assessment-type=certification) | Free Microsoft account | About 1–2 hours for an attempt and review | Repeatable official readiness check with rationales and learning links; start here before buying another assessment |
+| [AI Skills Navigator — GH-900 Practice Assessment](https://aiskillsnavigator.microsoft.com/credentials/cert-b1ae9b371a2a7f811842dd9ab465ed04b9fd0cfa83870cec1ab58e789554e422) | Free; sign-in required | About 1–2 hours for an attempt and review (planning estimate) | Current credential page links this official assessment; its questions and launch session were not accessed |
 | [Microsoft Learn GH-900 video course](https://www.youtube.com/playlist?list=PLahhVEj9XNTf5iQVK_80RdvTju7ov6RYy) | Free | About 6–8 hours | Official instructor-led reinforcement for visual learners |
 | [Microsoft Reactor — From Git to GitHub Foundations](https://www.youtube.com/watch?v=W86EkkBdquo) | Free | 1 hour | Current first-party orientation covering the path from Git concepts into GitHub; supporting depth rather than an end-to-end GH-900 course |
 | [GitHub Skills — Introduction to GitHub](https://github.com/skills/introduction-to-github) | Free account | About 45–90 minutes | Guided practice with branches, commits, pull requests, and repository interaction |
 | [Pluralsight — GitHub Foundations](https://www.pluralsight.com/paths/github-foundations) | Subscription | 12 hours | Nine-course path; compare course dates with the current blueprint |
-| [LinkedIn Learning — Prepare for GitHub Foundations](https://www.linkedin.com/learning/paths/prepare-for-the-github-foundations-certification) | Subscription | About 10–14 hours | GitHub-partnered path with several formats; component courses predate the 2026 blueprint |
 | [DataCamp — GitHub Foundations](https://www.datacamp.com/certification/github-foundations) | Subscription | About 12–20 hours including exercises | GitHub-partnered interactive track mapped to exam objectives |
 | [Whizlabs — GitHub Foundations practice](https://www.whizlabs.com/github-foundations-certification-course/) | Paid course | About 3–6 hours for 3 quizzes and review | Assessment supplement rather than primary instruction; the provider does not publish a total runtime |
 | [MeasureUp — GH-900 practice test](https://www.measureup.com/microsoft-gh-900-github-foundations-practice-test.html) | Paid test or subscription; free demo available | About 4–8 hours for simulation and review | Tier 6 assessment supplement with 100 questions, explanations, and references; use results to find blueprint gaps rather than memorize items |

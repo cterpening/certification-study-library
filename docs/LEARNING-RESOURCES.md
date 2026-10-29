@@ -81,32 +81,48 @@ Third-party resources are evaluated individually. A trustworthy marketplace can 
 
 ### GH-900 — GitHub Foundations
 
-- Official: [Microsoft Learn Part 1](https://learn.microsoft.com/en-us/training/paths/github-foundations/) and [Part 2](https://learn.microsoft.com/en-us/training/paths/github-foundations-2/)
-- Free official assessment (about 1–2 hours for an attempt and review): [Microsoft GH-900 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/github-foundations/practice/assessment?assessment-type=practice&assessmentId=954809103&practice-assessment-type=certification); Microsoft account required
-- Official video: [Microsoft Learn GH-900 playlist](https://www.youtube.com/playlist?list=PLahhVEj9XNTf5iQVK_80RdvTju7ov6RYy)
-- Official supporting session (1 hour): [Microsoft Reactor — From Git to GitHub Foundations](https://www.youtube.com/watch?v=W86EkkBdquo); useful current orientation, not a replacement for the objective-mapped Learn paths
-- Hands-on: [Introduction to GitHub](https://github.com/skills/introduction-to-github) and the wider [GitHub Skills catalog](https://github.com/skills)
-- Structured subscription path: [Pluralsight GitHub Foundations](https://www.pluralsight.com/paths/github-foundations)
-- Partner path: [LinkedIn Learning — Prepare for the GitHub Foundations Certification](https://www.linkedin.com/learning/paths/prepare-for-the-github-foundations-certification)
-- Interactive partner track: [DataCamp GitHub Foundations](https://www.datacamp.com/certification/github-foundations)
-- Assessment supplement (about 3–6 hours for three quizzes and answer review; provider runtime not published): [Whizlabs GitHub Foundations](https://www.whizlabs.com/github-foundations-certification-course/)
-- Assessment supplement (about 4–8 hours for simulation, targeted practice, and review): [MeasureUp GH-900 practice test](https://www.measureup.com/microsoft-gh-900-github-foundations-practice-test.html), with a 100-question bank and explanations/references
-- Subscription assessment (about 2–4 hours for an attempt and review): [O'Reilly certification prep](https://www.oreilly.com/products/certification-prep.html), whose current public catalog lists a GitHub Foundation interactive practice test
-- Book: [GitHub Foundations Certification Guide on O'Reilly](https://www.oreilly.com/library/view/github-foundations-certification/9781836206057/), published August 2025; cross-check against the January 2026 blueprint
-- Marketplace course (5 hours 42 minutes): [GH-900 exam prep: GitHub Foundations on Udemy](https://www.udemy.com/course/gh-900-exam-prep-github-foundations/), updated November 2025; cross-check against the January 2026 blueprint
+Resource details from the [GH-900 guide](../guides/GH-900-github-foundations.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Start with the official paths, then pick the explanations, formats, and practice that work for you and close specific blueprint gaps. Times are approximate consumption time at normal speed; labs, note-taking, review, and independent practice add time.
+
+| Resource | Access | Estimated time | Best use and caveat |
+|---|---|---:|---|
+| [Microsoft Learn — GitHub Foundations Part 1](https://learn.microsoft.com/en-us/training/paths/github-foundations/) and [Part 2](https://learn.microsoft.com/en-us/training/paths/github-foundations-2/) | Free | About 12–16 hours | Official starting point and closest match to the January 2026 objectives |
+| [AI Skills Navigator — GH-900 Practice Assessment](https://aiskillsnavigator.microsoft.com/credentials/cert-b1ae9b371a2a7f811842dd9ab465ed04b9fd0cfa83870cec1ab58e789554e422) | Free; sign-in required | About 1–2 hours for an attempt and review (planning estimate) | Current credential page links this official assessment; its questions and launch session were not accessed |
+| [Microsoft Learn GH-900 video course](https://www.youtube.com/playlist?list=PLahhVEj9XNTf5iQVK_80RdvTju7ov6RYy) | Free | About 6–8 hours | Official instructor-led reinforcement for visual learners |
+| [Microsoft Reactor — From Git to GitHub Foundations](https://www.youtube.com/watch?v=W86EkkBdquo) | Free | 1 hour | Current first-party orientation covering the path from Git concepts into GitHub; supporting depth rather than an end-to-end GH-900 course |
+| [GitHub Skills — Introduction to GitHub](https://github.com/skills/introduction-to-github) | Free account | About 45–90 minutes | Guided practice with branches, commits, pull requests, and repository interaction |
+| [Pluralsight — GitHub Foundations](https://www.pluralsight.com/paths/github-foundations) | Subscription | 12 hours | Nine-course path; compare course dates with the current blueprint |
+| [DataCamp — GitHub Foundations](https://www.datacamp.com/certification/github-foundations) | Subscription | About 12–20 hours including exercises | GitHub-partnered interactive track mapped to exam objectives |
+| [Whizlabs — GitHub Foundations practice](https://www.whizlabs.com/github-foundations-certification-course/) | Paid course | About 3–6 hours for 3 quizzes and review | Assessment supplement rather than primary instruction; the provider does not publish a total runtime |
+| [MeasureUp — GH-900 practice test](https://www.measureup.com/microsoft-gh-900-github-foundations-practice-test.html) | Paid test or subscription; free demo available | About 4–8 hours for simulation and review | Tier 6 assessment supplement with 100 questions, explanations, and references; use results to find blueprint gaps rather than memorize items |
+| [O'Reilly — GitHub Foundations interactive practice test](https://www.oreilly.com/products/certification-prep.html) | Subscription | About 2–4 hours for an attempt and review | O'Reilly's public certification-prep catalog lists a GitHub Foundation practice test; exact launch details appear after sign-in |
+| [O'Reilly — GitHub Foundations Certification Guide](https://www.oreilly.com/library/view/github-foundations-certification/9781836206057/) | Subscription | About 10–14 hours reading/practice | Book-length treatment published August 2025; fill January 2026 changes from Microsoft Learn |
+| [Udemy — GH-900 exam prep: GitHub Foundations](https://www.udemy.com/course/gh-900-exam-prep-github-foundations/) | Purchase or subscription | 5 hours 42 minutes | Instructional course updated November 2025; evaluate the individual course, not the marketplace name |
+| [freeCodeCamp / Andrew Brown — GitHub Foundations course](https://www.youtube.com/watch?v=Jdc0i7RcBv8) | Free | About 11 hours | Long-form visual course for fundamentals; it targets an older blueprint |
+| [John Savill — DevOps Master Class](https://www.youtube.com/playlist?list=PLlVtbbG169nFr8RzQ4GIxUEznpNR53ERq) and [companion repository](https://github.com/johnthebrit/DevOpsMC) | Free | About 4–6 hours for the two linked parts | Strong supporting explanations, handouts, whiteboards, and examples; start with [Master Git](https://www.youtube.com/watch?v=hQJktcBzJUs) and [Azure DevOps and GitHub](https://www.youtube.com/watch?v=Z9evyML2I6M). It is not an end-to-end GH-900 course, and the repository has no detected license, so link rather than republish its files. |
+
+See the broader [Places to learn catalog](LEARNING-RESOURCES.md) for selection criteria, provider notes, and resources for the other GitHub exams.
 
 ### GH-200 — GitHub Actions
 
-- Official: [Microsoft Learn Part 1](https://learn.microsoft.com/en-us/training/paths/github-actions/) and [Part 2](https://learn.microsoft.com/en-us/training/paths/github-actions-2/)
-- Free official assessment (about 1–2 hours for an attempt and review): [Microsoft GH-200 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/github-actions/practice/assessment?assessment-type=practice&assessmentId=1001&practice-assessment-type=certification); Microsoft account required
-- Official video: [Microsoft Learn GH-200 playlist](https://www.youtube.com/playlist?list=PLahhVEj9XNTd5N_seZDoRXVIn6N1qAp-_)
-- Hands-on: [Test with Actions](https://github.com/skills/test-with-actions), [Reusable workflows](https://github.com/skills/reusable-workflows), and [Workflow artifacts](https://github.com/skills/workflow-artifacts)
-- Structured subscription path: [Pluralsight GitHub Actions](https://www.pluralsight.com/paths/github-actions)
-- Book: [Learning GitHub Actions on O'Reilly](https://www.oreilly.com/library/view/learning-github-actions/9781098131067/), published August 2023; useful for durable concepts, not current exam scope by itself
-- Assessment supplement (about 4–8 hours for simulation, targeted practice, and review): [MeasureUp GH-200 practice test](https://www.measureup.com/microsoft-gh-200-github-actions-practice-test.html), with 126 questions and explanations/references. Its public page also contains copied Copilot-oriented introductory text, so use the current Actions blueprint—not the marketing prose—as the scope check.
-- Subscription assessment (about 2–4 hours for an attempt and review): [O'Reilly certification prep](https://www.oreilly.com/products/certification-prep.html), whose current public catalog lists a GitHub Actions interactive practice test
+Resource details from the [GH-200 guide](../guides/GH-200-github-actions.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-No instruction-first Whizlabs or Udemy GH-200 course is listed yet. Assessment products are listed separately and are not substitutes for explanatory instruction.
+This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Start with the official paths, then pick the explanations, formats, and practice that work for you and close specific blueprint gaps. Times are approximate consumption time at normal speed; labs, note-taking, review, and independent practice add time.
+
+| Resource | Access | Estimated time | Best use and caveat |
+|---|---|---:|---|
+| [Microsoft Learn — GitHub Actions Part 1](https://learn.microsoft.com/en-us/training/paths/github-actions/) and [Part 2](https://learn.microsoft.com/en-us/training/paths/github-actions-2/) | Free | About 12–16 hours | Official starting point, with modules and exercises mapped to the credential |
+| [AI Skills Navigator — GH-200 Practice Assessment](https://aiskillsnavigator.microsoft.com/credentials/cert-38619ddf060902251eff3bb5285fe9c240a8bc7314467860ad9c5f69962602e2) | Free; sign-in required | About 1–2 hours for an attempt and review (planning estimate) | Current credential page links this official assessment; its questions and launch session were not accessed |
+| [Microsoft Learn GH-200 video course](https://www.youtube.com/playlist?list=PLahhVEj9XNTd5N_seZDoRXVIn6N1qAp-_) | Free | About 6–8 hours | Official instructor-led reinforcement for visual learners |
+| GitHub Skills: [Test with Actions](https://github.com/skills/test-with-actions), [Reusable workflows](https://github.com/skills/reusable-workflows), and [Workflow artifacts](https://github.com/skills/workflow-artifacts) | Free account | About 2–4 hours | Real-repository practice with automated feedback |
+| [Pluralsight — GitHub Actions](https://www.pluralsight.com/paths/github-actions) | Subscription | 7 hours | Five-course structured path; verify 2024 course behavior against the January 2026 baseline |
+| [O'Reilly — Learning GitHub Actions](https://www.oreilly.com/library/view/learning-github-actions/9781098131067/) | Subscription | About 8–12 hours reading/practice | Durable workflow and automation depth; published in 2023, so it is not a current exam map by itself |
+| [MeasureUp — GH-200 practice test](https://www.measureup.com/microsoft-gh-200-github-actions-practice-test.html) | Paid test or subscription; free demo available | About 4–8 hours for simulation and review | Tier 6 assessment with 126 questions and explanations; the public page contains copied Copilot-oriented introduction text, so use the official Actions blueprint as the scope check |
+| [O'Reilly — GitHub Actions interactive practice test](https://www.oreilly.com/products/certification-prep.html) | Subscription | About 2–4 hours for an attempt and review | O'Reilly's public certification-prep catalog lists a GitHub Actions practice test; exact launch details appear after sign-in |
+| [John Savill — DevOps Master Class](https://www.youtube.com/playlist?list=PLlVtbbG169nFr8RzQ4GIxUEznpNR53ERq) and [companion repository](https://github.com/johnthebrit/DevOpsMC) | Free | About 2 hours for CI/CD plus artifact review | Strong supporting explanations and workflow examples; [Part 4: CI/CD](https://www.youtube.com/watch?v=nLRHV2sRTe8) demonstrates triggers, runners, actions, environments, approvals, and matrices. It is not an end-to-end GH-200 course, and the repository has no detected license, so link rather than republish its files. |
+
+No instruction-first Whizlabs or Udemy course is listed yet. The MeasureUp assessment above is a gap-detection supplement, not explanatory instruction. See the broader [Places to learn catalog](LEARNING-RESOURCES.md).
 
 ### GH-300 — GitHub Copilot
 
@@ -165,14 +181,21 @@ No current individual Whizlabs, O'Reilly, or instruction-first Udemy GH-100 reso
 
 ### GH-500 — GitHub Advanced Security
 
-- Official: [Microsoft Learn Part 1](https://learn.microsoft.com/en-us/training/paths/github-advanced-security/) and [Part 2](https://learn.microsoft.com/en-us/training/paths/github-advanced-security-2)
-- Free official assessment (about 1–2 hours for an attempt and review): [Microsoft GH-500 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/github-advanced-security/practice/assessment?assessment-type=practice&assessmentId=590484996&practice-assessment-type=certification); Microsoft account required
-- Official video: [Microsoft Learn GH-500 playlist](https://www.youtube.com/playlist?list=PLahhVEj9XNTcJZjBU671JAiX8St3CV5dA)
-- Hands-on: [Secure repository supply chain](https://github.com/skills/secure-repository-supply-chain) and [Secure Code Game](https://github.com/skills/secure-code-game)
-- Structured subscription path and practice exam: [Pluralsight GH-500](https://www.pluralsight.com/paths/gh-500-github-advanced-security), 13 hours of courses plus about 2–4 hours for the practice attempt and review; taught by [Timothy Warner](https://www.pluralsight.com/authors/tim-warner) and updated in 2026
-- Assessment supplement (about 4–8 hours for simulation, targeted practice, and review): [MeasureUp GH-500 practice test](https://www.measureup.com/microsoft-gh-500-github-advanced-security-practice-test.html), with 100 questions. Its detailed domains cover Advanced Security, but the public page contains unrelated Copilot marketing copy; use the official blueprint and GitHub Docs to resolve conflicts.
+Resource details from the [GH-500 guide](../guides/GH-500-github-advanced-security.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-No current individual Whizlabs, O'Reilly, or instruction-first Udemy GH-500 resource was verified during this review.
+This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Start with the official paths, then pick the explanations, formats, and practice that work for you and close specific blueprint gaps. Times are approximate consumption time at normal speed; labs, note-taking, review, and independent practice add time.
+
+| Resource | Access | Estimated time | Best use and caveat |
+|---|---|---:|---|
+| [Microsoft Learn — GitHub Advanced Security Part 1](https://learn.microsoft.com/en-us/training/paths/github-advanced-security/) and [Part 2](https://learn.microsoft.com/en-us/training/paths/github-advanced-security-2) | Free | About 12–16 hours | Official starting point, including secret, supply-chain, CodeQL, and administration modules |
+| [AI Skills Navigator — GH-500 Practice Assessment](https://aiskillsnavigator.microsoft.com/credentials/cert-395e3a717f1a76889026d920979c10d0cb4ff7057b3c768f4efece80f217e6b3) | Free; sign-in required | About 1–2 hours for an attempt and review (planning estimate) | Current credential page links this official assessment; its questions and launch session were not accessed |
+| [Microsoft Learn GH-500 video course](https://www.youtube.com/playlist?list=PLahhVEj9XNTcJZjBU671JAiX8St3CV5dA) | Free | About 6–8 hours | Official instructor-led reinforcement for visual learners |
+| GitHub Skills: [Secure repository supply chain](https://github.com/skills/secure-repository-supply-chain) and [Secure Code Game](https://github.com/skills/secure-code-game) | Free account | About 2–4 hours | Practical security exercises; some enterprise controls require an appropriately licensed lab |
+| [Pluralsight — GH-500 GitHub Advanced Security path and practice exam](https://www.pluralsight.com/paths/gh-500-github-advanced-security) | Subscription; practice access depends on plan/library | 13 hours plus about 2–4 hours for assessment/review | Seven-course 2026 path taught by [Timothy Warner](https://www.pluralsight.com/authors/tim-warner); public page explicitly includes a practice exam |
+| [GitHub Security Lab](https://securitylab.github.com/) | Free | Select 3–8 hours by gap | CodeQL research, queries, and security concepts beyond minimum exam preparation |
+| [MeasureUp — GH-500 practice test](https://www.measureup.com/microsoft-gh-500-github-advanced-security-practice-test.html) | Paid test or subscription; free demo may be available | About 4–8 hours for simulation and review | Tier 6 assessment with 100 questions; the detailed domains cover Advanced Security, but unrelated Copilot copy appears on the public page, so resolve conflicts with the official blueprint and GitHub Docs |
+
+No current individual Whizlabs, O'Reilly, or instruction-first Udemy GH-500 course was verified during the August 31, 2026 review. See the broader [Places to learn catalog](LEARNING-RESOURCES.md).
 
 ### GH-600 — Developing in Agentic AI Systems (beta)
 
@@ -5131,6 +5154,90 @@ This is not a complete list, and it is not meant to be consumed end to end. Choo
 | [Official Metrics User track flowchart](https://www.splunk.com/en_us/pdfs/training/splunk-o11y-cloud-certified-metrics-user-track.pdf) | Free self-paced and selected paid options; account/access may vary | Combined runtime not stated; individual paths vary | Recommended learning sequence, not an exam prerequisite; check current catalog |
 | [Fundamentals of Metrics Monitoring](https://www.splunk.com/en_us/pdfs/training/fundamentals-of-metrics-monitoring-course-description.pdf) and [Visualizing and Alerting](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/visualizing-and-alerting-in-splunk-im-course-description.pdf) | Paid instructor-led/blended training; check current delivery | 6 hours; 4.5-hour instructor-led portion respectively | Optional metric/MTS and dashboard/detector practice; neither covers the whole blueprint |
 | Sandbox tenant plus synthetic Linux/Kubernetes metrics portfolio | Trial/employer/partner access may be needed | 20–40 hr | Applied evidence; never use production secrets/data |
+
+### 1Z0-1109-26 — Oracle Cloud Infrastructure DevOps Professional
+
+Resource details from the [1Z0-1109-26 guide](../guides/1Z0-1109-26-oracle-cloud-infrastructure-devops-professional.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective learning path, not a complete list of OCI DevOps resources.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official OCI DevOps Professional learning path](https://mylearn.oracle.com/ou/learning-path/become-an-oci-devops-professional-2026/162852) | Paid Professional course; Oracle account sign-in | **35+ hours** as published by Oracle University |
+| [A DevOps Engineer's Guide to OCI](https://docs.oracle.com/en-us/iaas/Content/GSG/Reference/getting-started-as-devops.htm) | Public | **10–14 hours** targeted study |
+| Eight labs in this guide | Authorized OCI tenancy or local substitutes | **28–40 hours** plus one timed release-and-recovery exercise |
+
+### 1Z0-1111-26 — Oracle Cloud Infrastructure Observability Professional
+
+Resource details from the [1Z0-1111-26 guide](../guides/1Z0-1111-26-oracle-cloud-infrastructure-observability-professional.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective learning path, not a complete list of OCI observability resources.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official OCI Observability Professional learning path](https://mylearn.oracle.com/ou/learning-path/become-an-oracle-cloud-infrastructure-observability-professional-2026/162237) | Paid Professional course; Oracle account sign-in | **9+ hours** as published by Oracle University |
+| [OCI monitoring and observability guidance](https://docs.oracle.com/en-us/iaas/Content/cloud-adoption-framework/monitoring-and-observability.htm) | Public | **10–14 hours** targeted study |
+| Eight labs in this guide | Authorized OCI tenancy or local substitutes | **24–36 hours** plus two timed incident drills |
+
+### 1Z0-1124-26 — Oracle Cloud Infrastructure Networking Professional
+
+Resource details from the [1Z0-1124-26 guide](../guides/1Z0-1124-26-oracle-cloud-infrastructure-networking-professional.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective learning path, not a complete list of OCI networking resources.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official OCI Networking Professional learning path](https://mylearn.oracle.com/ou/learning-path/become-an-oracle-cloud-infrastructure-networking-professional-2026/163340) | Paid Professional course; Oracle account sign-in | **19+ hours** as published by Oracle University |
+| [OCI Networking documentation](https://docs.oracle.com/en-us/iaas/Content/Network/Concepts/overview.htm) | Public | **12–18 hours** targeted study |
+| Eight labs in this guide | Authorized OCI tenancy or paper design | **28–40 hours** plus two timed troubleshooting drills |
+
+### 1Z0-171 — Oracle AI Database SQL Associate
+
+Resource details from the [1Z0-171 guide](../guides/1Z0-171-oracle-ai-database-sql-associate.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective learning path, not a complete list of Oracle SQL resources.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official Oracle AI Database SQL Associate learning path](https://mylearn.oracle.com/ou/learning-path/earn-the-oracle-ai-database-sql-associate-credential/140075) | Oracle account/subscription may be required | **20+ hours** as published by Oracle University |
+| [Oracle AI Database 26 SQL Language Reference](https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/index.html) | Public | **12–20 hours** targeted reference work |
+| Eight labs in this guide | Disposable Oracle AI Database schema | **28–40 hours** plus timed SQL drills |
+
+### 1Z0-182 — Oracle AI Database Administration Associate
+
+Resource details from the [1Z0-182 guide](../guides/1Z0-182-oracle-ai-database-administration-associate.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective learning path, not a complete list of Oracle database administration resources.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official Oracle AI Database Administration Associate learning path](https://mylearn.oracle.com/ou/learning-path/earn-the-oracle-ai-database-administration-associate-credential/140076) | Oracle account/subscription may be required | **12+ hours** as published by Oracle University |
+| [Oracle AI Database 26 Administrator's Guide](https://docs.oracle.com/en/database/oracle/oracle-database/26/admin/index.html) | Public | **15–25 hours** targeted reference work |
+| Eight labs in this guide | Disposable Oracle AI Database environment | **32–48 hours** plus two recovery/tuning rehearsals |
+
+### 1Z0-830 — Oracle Certified Professional: Java SE 21 Developer
+
+Resource details from the [1Z0-830 guide](../guides/1Z0-830-oracle-java-se-21-developer-professional.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective learning path, not a complete list of Java resources.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official Java SE 21 Developer learning path](https://learn.oracle.com/ols/learning-path/become-a-java-se-21-developer/117252/138845) | Oracle account/subscription may be required for course content | **40+ hours** as published by Oracle University |
+| [Java SE 21 API documentation](https://docs.oracle.com/en/java/javase/21/docs/api/index.html) | Public | **15–25 hours** of targeted API reading while coding |
+| Eight labs in this guide | Local JDK 21 | **24–36 hours** plus two timed reviews |
+
+### 1Z0-997-26 — Oracle Cloud Infrastructure Architect Professional
+
+Resource details from the [1Z0-997-26 guide](../guides/1Z0-997-26-oracle-cloud-infrastructure-architect-professional.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective learning path, not a complete list of OCI architecture resources.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official OCI Architect Professional learning path](https://mylearn.oracle.com/ou/learning-path/become-an-oci-architect-professional-2026/163270) | Paid Professional course; Oracle account sign-in | **26+ hours** as published by Oracle University |
+| [OCI best practices and reference architectures](https://docs.oracle.com/en/solutions/oci-best-practices/) | Public | **10–14 hours** targeted study |
+| Eight labs in this guide | Authorized OCI tenancy or paper design | **28–40 hours** plus two timed architecture reviews |
 
 ## AWS
 

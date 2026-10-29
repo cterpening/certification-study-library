@@ -56068,6 +56068,560 @@
       "no_action_findings": 0,
       "blocked_findings": 0
     }
-  }
+  },
+    {
+      "id": "freshness-2026-10-28-nonms-g06",
+      "title": "Oracle and GitHub non-Microsoft refresh group 06",
+      "rubric_version": 1,
+      "created_on": "2026-10-28",
+      "completed_on": "2026-10-28",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sixth group of ten from the frozen 167-guide eligible non-Microsoft queue after Groups 1–5.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "refresh-coordinator",
+          "official-source-review"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "1Z0-1109-26",
+        "1Z0-1111-26",
+        "1Z0-1124-26",
+        "1Z0-171",
+        "1Z0-182",
+        "1Z0-830",
+        "1Z0-997-26",
+        "GH-200",
+        "GH-500",
+        "GH-900"
+      ],
+      "results": [
+        {
+          "exam_code": "1Z0-1109-26",
+          "vendor_id": "oracle",
+          "guide_path": "guides/1Z0-1109-26-oracle-cloud-infrastructure-devops-professional.md",
+          "baseline_sha256": "95a72b3237da259cd60bb5e2d0a2c8765ee675c1675d491403ef83b294084ff9",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current official exam/credential pages and accepted snapshots checked. OCI path-text changes are bounded; GitHub objectives are unchanged; no lifecycle transition found."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Relevant first-party learning, product and platform pages were reviewed; version, access, licensing and rollout boundaries accompany each volatile note."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Relevant release channels were searched; dated updates are treated as product context, separate from objective coverage."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Oracle, Microsoft Learn and GitHub credential/learning resources were compared; the current practice-assessment launch links were registered and synchronized."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No release note was used to expand exam scope. Oracle title/path naming inconsistencies and the different GitHub certification-renewal policies remain explicit."
+            }
+          },
+          "findings": [
+            {
+              "id": "g06-1z0-1109-26-applied",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "updated-source",
+              "title": "OCI DevOps credential title and learning path",
+              "url": "https://blogs.oracle.com/oracleuniversity/oci-certification-learning-paths-and-exams-2026-updates-now-available",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "1Z0-1109-26"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Public title dropped the calendar year; the current learning path lists 35 hours and the exam is 90 minutes.",
+              "recommendation": "Keep dated product context separate from the official exam contract; recheck current version, access, entitlement and deployment applicability before operational use.",
+              "disposition": "applied",
+              "source_id": "oracle-certification-names-2026",
+              "resolution": "Public title dropped the calendar year; the current learning path lists 35 hours and the exam is 90 minutes."
+            }
+          ],
+          "notes": "See Group 6 report for exact source evidence, snapshot differences and health limits. No live product lab, tenant, API or paid course interior was exercised."
+        },
+        {
+          "exam_code": "1Z0-1111-26",
+          "vendor_id": "oracle",
+          "guide_path": "guides/1Z0-1111-26-oracle-cloud-infrastructure-observability-professional.md",
+          "baseline_sha256": "9c709b695c830749dfda3c1ba50ce88931ddafd0f3b596b2957d0c44cc9b9eb2",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current official exam/credential pages and accepted snapshots checked. OCI path-text changes are bounded; GitHub objectives are unchanged; no lifecycle transition found."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Relevant first-party learning, product and platform pages were reviewed; version, access, licensing and rollout boundaries accompany each volatile note."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Relevant release channels were searched; dated updates are treated as product context, separate from objective coverage."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Oracle, Microsoft Learn and GitHub credential/learning resources were compared; the current practice-assessment launch links were registered and synchronized."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No release note was used to expand exam scope. Oracle title/path naming inconsistencies and the different GitHub certification-renewal policies remain explicit."
+            }
+          },
+          "findings": [
+            {
+              "id": "g06-1z0-1111-26-applied",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "updated-source",
+              "title": "OCI Observability credential title and learning path",
+              "url": "https://blogs.oracle.com/oracleuniversity/oci-certification-learning-paths-and-exams-2026-updates-now-available",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "1Z0-1111-26"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Public title dropped the year; the current path lists 9 hours and the exam is 90 minutes; objectives are unchanged.",
+              "recommendation": "Keep dated product context separate from the official exam contract; recheck current version, access, entitlement and deployment applicability before operational use.",
+              "disposition": "applied",
+              "source_id": "oracle-certification-names-2026",
+              "resolution": "Public title dropped the year; the current path lists 9 hours and the exam is 90 minutes; objectives are unchanged."
+            }
+          ],
+          "notes": "See Group 6 report for exact source evidence, snapshot differences and health limits. No live product lab, tenant, API or paid course interior was exercised."
+        },
+        {
+          "exam_code": "1Z0-1124-26",
+          "vendor_id": "oracle",
+          "guide_path": "guides/1Z0-1124-26-oracle-cloud-infrastructure-networking-professional.md",
+          "baseline_sha256": "9b71962643aa1a4691e2019adbf0af8aea441580718f0e93721805db352472b3",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current official exam/credential pages and accepted snapshots checked. OCI path-text changes are bounded; GitHub objectives are unchanged; no lifecycle transition found."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Relevant first-party learning, product and platform pages were reviewed; version, access, licensing and rollout boundaries accompany each volatile note."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Relevant release channels were searched; dated updates are treated as product context, separate from objective coverage."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Oracle, Microsoft Learn and GitHub credential/learning resources were compared; the current practice-assessment launch links were registered and synchronized."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No release note was used to expand exam scope. Oracle title/path naming inconsistencies and the different GitHub certification-renewal policies remain explicit."
+            }
+          },
+          "findings": [
+            {
+              "id": "g06-1z0-1124-26-applied",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "updated-source",
+              "title": "OCI Networking credential title and release context",
+              "url": "https://blogs.oracle.com/oracleuniversity/oci-certification-learning-paths-and-exams-2026-updates-now-available",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "1Z0-1124-26"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Public title is yearless; 19-hour path and 90-minute exam retained; Oct 1 NAT/DRG and Sep 16 FastConnect updates are dated context.",
+              "recommendation": "Keep dated product context separate from the official exam contract; recheck current version, access, entitlement and deployment applicability before operational use.",
+              "disposition": "applied",
+              "source_id": "oracle-certification-names-2026",
+              "resolution": "Public title is yearless; 19-hour path and 90-minute exam retained; Oct 1 NAT/DRG and Sep 16 FastConnect updates are dated context."
+            }
+          ],
+          "notes": "See Group 6 report for exact source evidence, snapshot differences and health limits. No live product lab, tenant, API or paid course interior was exercised."
+        },
+        {
+          "exam_code": "1Z0-171",
+          "vendor_id": "oracle",
+          "guide_path": "guides/1Z0-171-oracle-ai-database-sql-associate.md",
+          "baseline_sha256": "a35d9e1e045f9589f1f8d3d3be452c1084ec7780c2cf95dc19f01d348926191c",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current official exam/credential pages and accepted snapshots checked. OCI path-text changes are bounded; GitHub objectives are unchanged; no lifecycle transition found."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Relevant first-party learning, product and platform pages were reviewed; version, access, licensing and rollout boundaries accompany each volatile note."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Relevant release channels were searched; dated updates are treated as product context, separate from objective coverage."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Oracle, Microsoft Learn and GitHub credential/learning resources were compared; the current practice-assessment launch links were registered and synchronized."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No release note was used to expand exam scope. Oracle title/path naming inconsistencies and the different GitHub certification-renewal policies remain explicit."
+            }
+          },
+          "findings": [
+            {
+              "id": "g06-1z0-171-applied",
+              "check": "official_product_documentation",
+              "category": "updated-source",
+              "title": "Oracle AI Database 26ai SQL feature context",
+              "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/nfcoa/all-nfg.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "1Z0-171"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Added dated GROUP BY ALL, direct joins in UPDATE/DELETE, INSERT INTO SET and BOOLEAN product context without asserting those features are tested.",
+              "recommendation": "Keep dated product context separate from the official exam contract; recheck current version, access, entitlement and deployment applicability before operational use.",
+              "disposition": "applied",
+              "source_id": "oracle-ai-db-26-new-features",
+              "resolution": "Added dated GROUP BY ALL, direct joins in UPDATE/DELETE, INSERT INTO SET and BOOLEAN product context without asserting those features are tested."
+            }
+          ],
+          "notes": "See Group 6 report for exact source evidence, snapshot differences and health limits. No live product lab, tenant, API or paid course interior was exercised."
+        },
+        {
+          "exam_code": "1Z0-182",
+          "vendor_id": "oracle",
+          "guide_path": "guides/1Z0-182-oracle-ai-database-administration-associate.md",
+          "baseline_sha256": "c86e3c156bf2a7227e3c49c7052b7299a9031af1936980f0d8664928c0e3f0b1",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current official exam/credential pages and accepted snapshots checked. OCI path-text changes are bounded; GitHub objectives are unchanged; no lifecycle transition found."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Relevant first-party learning, product and platform pages were reviewed; version, access, licensing and rollout boundaries accompany each volatile note."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Relevant release channels were searched; dated updates are treated as product context, separate from objective coverage."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Oracle, Microsoft Learn and GitHub credential/learning resources were compared; the current practice-assessment launch links were registered and synchronized."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No release note was used to expand exam scope. Oracle title/path naming inconsistencies and the different GitHub certification-renewal policies remain explicit."
+            }
+          },
+          "findings": [
+            {
+              "id": "g06-1z0-182-applied",
+              "check": "official_product_documentation",
+              "category": "updated-source",
+              "title": "Oracle AI Database 26ai administration context",
+              "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/nfcoa/all-nfg.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "1Z0-182"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Kept SQL Firewall in its Database Vault and license-bound context; no exam-scope expansion claimed.",
+              "recommendation": "Keep dated product context separate from the official exam contract; recheck current version, access, entitlement and deployment applicability before operational use.",
+              "disposition": "applied",
+              "source_id": "oracle-ai-db-26-new-features",
+              "resolution": "Kept SQL Firewall in its Database Vault and license-bound context; no exam-scope expansion claimed."
+            }
+          ],
+          "notes": "See Group 6 report for exact source evidence, snapshot differences and health limits. No live product lab, tenant, API or paid course interior was exercised."
+        },
+        {
+          "exam_code": "1Z0-830",
+          "vendor_id": "oracle",
+          "guide_path": "guides/1Z0-830-oracle-java-se-21-developer-professional.md",
+          "baseline_sha256": "90b4a5bf5595a8db1b3fae27e7c2e05a62677cd5de07d6c19e8fb22fb509b7ee",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current official exam/credential pages and accepted snapshots checked. OCI path-text changes are bounded; GitHub objectives are unchanged; no lifecycle transition found."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Relevant first-party learning, product and platform pages were reviewed; version, access, licensing and rollout boundaries accompany each volatile note."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Relevant release channels were searched; dated updates are treated as product context, separate from objective coverage."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Oracle, Microsoft Learn and GitHub credential/learning resources were compared; the current practice-assessment launch links were registered and synchronized."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No release note was used to expand exam scope. Oracle title/path naming inconsistencies and the different GitHub certification-renewal policies remain explicit."
+            }
+          },
+          "findings": [
+            {
+              "id": "g06-1z0-830-applied",
+              "check": "official_product_documentation",
+              "category": "updated-source",
+              "title": "Java SE 21 learning path and current JDK maintenance",
+              "url": "https://www.oracle.com/java/technologies/javase/21all-relnotes.html",
+              "source_type": "release-notes",
+              "affected_exams": [
+                "1Z0-830"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Added JDK 21.0.13 GA Oct 24 and licensing pointer; official objective bullets did not change.",
+              "recommendation": "Keep dated product context separate from the official exam contract; recheck current version, access, entitlement and deployment applicability before operational use.",
+              "disposition": "applied",
+              "source_id": "oracle-java-21-release-notes",
+              "resolution": "Added JDK 21.0.13 GA Oct 24 and licensing pointer; official objective bullets did not change."
+            }
+          ],
+          "notes": "See Group 6 report for exact source evidence, snapshot differences and health limits. No live product lab, tenant, API or paid course interior was exercised."
+        },
+        {
+          "exam_code": "1Z0-997-26",
+          "vendor_id": "oracle",
+          "guide_path": "guides/1Z0-997-26-oracle-cloud-infrastructure-architect-professional.md",
+          "baseline_sha256": "7b2fe5ae10a4eb8b546c4fac1f650c8147ce98f2d4e89b53cd223ac2473c8af3",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current official exam/credential pages and accepted snapshots checked. OCI path-text changes are bounded; GitHub objectives are unchanged; no lifecycle transition found."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Relevant first-party learning, product and platform pages were reviewed; version, access, licensing and rollout boundaries accompany each volatile note."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Relevant release channels were searched; dated updates are treated as product context, separate from objective coverage."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Oracle, Microsoft Learn and GitHub credential/learning resources were compared; the current practice-assessment launch links were registered and synchronized."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No release note was used to expand exam scope. Oracle title/path naming inconsistencies and the different GitHub certification-renewal policies remain explicit."
+            }
+          },
+          "findings": [
+            {
+              "id": "g06-1z0-997-26-applied",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "updated-source",
+              "title": "OCI Architect title and platform release context",
+              "url": "https://blogs.oracle.com/oracleuniversity/oci-certification-learning-paths-and-exams-2026-updates-now-available",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "1Z0-997-26"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Public title dropped the year; Full Stack Disaster Recovery/PostgreSQL and networking notes are product context outside objectives.",
+              "recommendation": "Keep dated product context separate from the official exam contract; recheck current version, access, entitlement and deployment applicability before operational use.",
+              "disposition": "applied",
+              "source_id": "oracle-certification-names-2026",
+              "resolution": "Public title dropped the year; Full Stack Disaster Recovery/PostgreSQL and networking notes are product context outside objectives."
+            }
+          ],
+          "notes": "See Group 6 report for exact source evidence, snapshot differences and health limits. No live product lab, tenant, API or paid course interior was exercised."
+        },
+        {
+          "exam_code": "GH-200",
+          "vendor_id": "github",
+          "guide_path": "guides/GH-200-github-actions.md",
+          "baseline_sha256": "491fdd8544269aec0d8ee96123fbbdf854649ca542b84e64043c8c2bc2975573",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current official exam/credential pages and accepted snapshots checked. OCI path-text changes are bounded; GitHub objectives are unchanged; no lifecycle transition found."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Relevant first-party learning, product and platform pages were reviewed; version, access, licensing and rollout boundaries accompany each volatile note."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Relevant release channels were searched; dated updates are treated as product context, separate from objective coverage."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Oracle, Microsoft Learn and GitHub credential/learning resources were compared; the current practice-assessment launch links were registered and synchronized."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No release note was used to expand exam scope. Oracle title/path naming inconsistencies and the different GitHub certification-renewal policies remain explicit."
+            }
+          },
+          "findings": [
+            {
+              "id": "g06-gh-200-applied",
+              "check": "official_product_documentation",
+              "category": "updated-source",
+              "title": "GitHub Actions workflow dependency lockfiles",
+              "url": "https://github.blog/changelog/2026-10-28-github-actions-workflow-lockfiles-are-generally-available/",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "GH-200"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Updated the Oct 14 preview to general availability announced Oct 28; supported plans and dependency trust limits are explicit.",
+              "recommendation": "Keep dated product context separate from the official exam contract; recheck current version, access, entitlement and deployment applicability before operational use.",
+              "disposition": "applied",
+              "source_id": "github-actions-lockfiles-2026",
+              "resolution": "Updated the Oct 14 preview to general availability announced Oct 28; supported plans and dependency trust limits are explicit."
+            }
+          ],
+          "notes": "See Group 6 report for exact source evidence, snapshot differences and health limits. No live product lab, tenant, API or paid course interior was exercised."
+        },
+        {
+          "exam_code": "GH-500",
+          "vendor_id": "github",
+          "guide_path": "guides/GH-500-github-advanced-security.md",
+          "baseline_sha256": "e9fb645d51e0c5e9b22acd90946ef5f80066875474e4fe774a9e74c495f1e179",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current official exam/credential pages and accepted snapshots checked. OCI path-text changes are bounded; GitHub objectives are unchanged; no lifecycle transition found."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Relevant first-party learning, product and platform pages were reviewed; version, access, licensing and rollout boundaries accompany each volatile note."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Relevant release channels were searched; dated updates are treated as product context, separate from objective coverage."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Oracle, Microsoft Learn and GitHub credential/learning resources were compared; the current practice-assessment launch links were registered and synchronized."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No release note was used to expand exam scope. Oracle title/path naming inconsistencies and the different GitHub certification-renewal policies remain explicit."
+            }
+          },
+          "findings": [
+            {
+              "id": "g06-gh-500-applied",
+              "check": "official_release_channels",
+              "category": "preview-status",
+              "title": "AI-detected secret push protection and audit-log schema update",
+              "url": "https://github.blog/changelog/2026-10-28-push-protection-beyond-predefined-secret-patterns/",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "GH-500"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Added Oct 28 public preview prerequisites, AI-credit and github.com boundaries, plus the Nov 12 business-field transition.",
+              "recommendation": "Keep dated product context separate from the official exam contract; recheck current version, access, entitlement and deployment applicability before operational use.",
+              "disposition": "applied",
+              "source_id": "github-ai-secret-push-protection-2026",
+              "resolution": "Added Oct 28 public preview prerequisites, AI-credit and github.com boundaries, plus the Nov 12 business-field transition."
+            }
+          ],
+          "notes": "See Group 6 report for exact source evidence, snapshot differences and health limits. No live product lab, tenant, API or paid course interior was exercised."
+        },
+        {
+          "exam_code": "GH-900",
+          "vendor_id": "github",
+          "guide_path": "guides/GH-900-github-foundations.md",
+          "baseline_sha256": "f69063eec5c01a701a10e0e92333c372c61452935af100a9f2b41b34834c183a",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current official exam/credential pages and accepted snapshots checked. OCI path-text changes are bounded; GitHub objectives are unchanged; no lifecycle transition found."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Relevant first-party learning, product and platform pages were reviewed; version, access, licensing and rollout boundaries accompany each volatile note."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Relevant release channels were searched; dated updates are treated as product context, separate from objective coverage."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Oracle, Microsoft Learn and GitHub credential/learning resources were compared; the current practice-assessment launch links were registered and synchronized."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No release note was used to expand exam scope. Oracle title/path naming inconsistencies and the different GitHub certification-renewal policies remain explicit."
+            }
+          },
+          "findings": [
+            {
+              "id": "g06-gh-900-applied",
+              "check": "official_product_documentation",
+              "category": "updated-source",
+              "title": "GitHub Foundations stacked PR and current assessment references",
+              "url": "https://github.blog/changelog/2026-10-06-stacked-pull-requests-generally-available/",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "GH-900"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Added stacked pull requests GA context, current credential and assessment route, and removed the old LinkedIn path after a 404.",
+              "recommendation": "Keep dated product context separate from the official exam contract; recheck current version, access, entitlement and deployment applicability before operational use.",
+              "disposition": "applied",
+              "source_id": "github-stacked-pull-requests-2026",
+              "resolution": "Added stacked pull requests GA context, current credential and assessment route, and removed the old LinkedIn path after a 404."
+            }
+          ],
+          "notes": "See Group 6 report for exact source evidence, snapshot differences and health limits. No live product lab, tenant, API or paid course interior was exercised."
+        }
+      ],
+      "summary": {
+        "exam_count": 10,
+        "current": 10,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 10,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    }
 ]
 }

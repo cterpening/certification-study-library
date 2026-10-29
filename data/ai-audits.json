@@ -21319,6 +21319,608 @@
     "closed_findings": 1
   }
 }
-
+,
+    {
+      "id": "nonms-refresh-2026-10-28-group-06",
+      "title": "Oracle and GitHub non-Microsoft refresh group 06",
+      "rubric_version": 2,
+      "created_on": "2026-10-28",
+      "completed_on": "2026-10-28",
+      "status": "completed",
+      "audit_mode": "read-only",
+      "selection_method": "Same-context final read-only audit after the sixth non-Microsoft refresh group.",
+      "rubric_path": "docs/AI-AUDIT.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "label": "refresh-coordinator",
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "1Z0-1109-26",
+        "1Z0-1111-26",
+        "1Z0-1124-26",
+        "1Z0-171",
+        "1Z0-182",
+        "1Z0-830",
+        "1Z0-997-26",
+        "GH-200",
+        "GH-500",
+        "GH-900"
+      ],
+      "results": [
+        {
+          "exam_code": "1Z0-1109-26",
+          "vendor_id": "oracle",
+          "guide_path": "guides/1Z0-1109-26-oracle-cloud-infrastructure-devops-professional.md",
+          "guide_content_sha256": "6c347d3cdcbc54149bbf3428aba56c80e6ff495498ef6e941ae99501fc2aadc1",
+          "blueprint_snapshot_path": "data/objective-snapshots/1z0-1109-26-official-objectives-2026-10-28.txt",
+          "blueprint_snapshot_sha256": "612091fa8f4d1b3e4ae3308cebefc426376bca96ab30c1904f089fa003ec7334",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "Official credential/status evidence and the exact accepted objective snapshot were compared; no snapshot or lifecycle transition was accepted."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "The accepted objective groups and weights map to substantive guide teaching, scenarios and original readiness checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Material guide claims are supported by registered official sources; access failures are treated as limitations, not as technical evidence."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Exam count, duration, prerequisites and delivery statements remain tied to official evidence and recommendations are distinguished from requirements."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Product explanations, distinctions and failure cases are coherent with cited evidence and scoped to the relevant release/deployment."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Version, rollout, entitlement, lifecycle and availability details are dated and qualified; new product context is separate from objectives."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Proposed activities use mock, isolated or authorized environments and do not direct unreviewed production changes."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Readiness prompts are original and supported by adjacent teaching; no recalled exam items were identified."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Manifest guide/objective bindings and source-validation evidence were checked; current scoped reachability limitations are disclosed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No suspicious copying, unrelated-vendor contamination, contradictory template content or exam-dump indicators were identified."
+            }
+          },
+          "findings": [],
+          "notes": "Same-context read-only review of the complete guide, accepted objective snapshot, source-validation receipt, registered citations and current diff. Versioned product context is dated and separated from exam scope. No human or independent review, exam attempt, or live lab is claimed."
+        },
+        {
+          "exam_code": "1Z0-1111-26",
+          "vendor_id": "oracle",
+          "guide_path": "guides/1Z0-1111-26-oracle-cloud-infrastructure-observability-professional.md",
+          "guide_content_sha256": "aee379707d31f56abe780eee0e8e153c217d3f2ce6917106237d8b4f3fa3e162",
+          "blueprint_snapshot_path": "data/objective-snapshots/1z0-1111-26-official-objectives-2026-10-28.txt",
+          "blueprint_snapshot_sha256": "8a7b952012b87ce70fe579d72120228e2ae5a167c8cedb1a407cbfee15548ccb",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "Official credential/status evidence and the exact accepted objective snapshot were compared; no snapshot or lifecycle transition was accepted."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "The accepted objective groups and weights map to substantive guide teaching, scenarios and original readiness checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Material guide claims are supported by registered official sources; access failures are treated as limitations, not as technical evidence."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Exam count, duration, prerequisites and delivery statements remain tied to official evidence and recommendations are distinguished from requirements."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Product explanations, distinctions and failure cases are coherent with cited evidence and scoped to the relevant release/deployment."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Version, rollout, entitlement, lifecycle and availability details are dated and qualified; new product context is separate from objectives."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Proposed activities use mock, isolated or authorized environments and do not direct unreviewed production changes."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Readiness prompts are original and supported by adjacent teaching; no recalled exam items were identified."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Manifest guide/objective bindings and source-validation evidence were checked; current scoped reachability limitations are disclosed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No suspicious copying, unrelated-vendor contamination, contradictory template content or exam-dump indicators were identified."
+            }
+          },
+          "findings": [],
+          "notes": "Same-context read-only review of the complete guide, accepted objective snapshot, source-validation receipt, registered citations and current diff. Versioned product context is dated and separated from exam scope. No human or independent review, exam attempt, or live lab is claimed."
+        },
+        {
+          "exam_code": "1Z0-1124-26",
+          "vendor_id": "oracle",
+          "guide_path": "guides/1Z0-1124-26-oracle-cloud-infrastructure-networking-professional.md",
+          "guide_content_sha256": "266fa82147ffdc4acc9e4abd34ac9be4f267832455316f79d40eb377376da82c",
+          "blueprint_snapshot_path": "data/objective-snapshots/1z0-1124-26-official-objectives-2026-10-28.txt",
+          "blueprint_snapshot_sha256": "eadc92b5507d0cdf761761716bb0a0a7f2da5ed8e01586a4f66b9f9d8277b324",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "Official credential/status evidence and the exact accepted objective snapshot were compared; no snapshot or lifecycle transition was accepted."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "The accepted objective groups and weights map to substantive guide teaching, scenarios and original readiness checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Material guide claims are supported by registered official sources; access failures are treated as limitations, not as technical evidence."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Exam count, duration, prerequisites and delivery statements remain tied to official evidence and recommendations are distinguished from requirements."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Product explanations, distinctions and failure cases are coherent with cited evidence and scoped to the relevant release/deployment."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Version, rollout, entitlement, lifecycle and availability details are dated and qualified; new product context is separate from objectives."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Proposed activities use mock, isolated or authorized environments and do not direct unreviewed production changes."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Readiness prompts are original and supported by adjacent teaching; no recalled exam items were identified."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Manifest guide/objective bindings and source-validation evidence were checked; current scoped reachability limitations are disclosed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No suspicious copying, unrelated-vendor contamination, contradictory template content or exam-dump indicators were identified."
+            }
+          },
+          "findings": [],
+          "notes": "Same-context read-only review of the complete guide, accepted objective snapshot, source-validation receipt, registered citations and current diff. Versioned product context is dated and separated from exam scope. No human or independent review, exam attempt, or live lab is claimed."
+        },
+        {
+          "exam_code": "1Z0-171",
+          "vendor_id": "oracle",
+          "guide_path": "guides/1Z0-171-oracle-ai-database-sql-associate.md",
+          "guide_content_sha256": "01e243d127af6543f31c9b5448b59520a33082a5636d4ad3ae247715478edb87",
+          "blueprint_snapshot_path": "data/objective-snapshots/1z0-171-official-objectives.txt",
+          "blueprint_snapshot_sha256": "173476c88e31d3b1dc6a17d4b9b14a08cef4001a4cbb338b2f2edfa392e19dd7",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "Official credential/status evidence and the exact accepted objective snapshot were compared; no snapshot or lifecycle transition was accepted."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "The accepted objective groups and weights map to substantive guide teaching, scenarios and original readiness checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Material guide claims are supported by registered official sources; access failures are treated as limitations, not as technical evidence."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Exam count, duration, prerequisites and delivery statements remain tied to official evidence and recommendations are distinguished from requirements."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Product explanations, distinctions and failure cases are coherent with cited evidence and scoped to the relevant release/deployment."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Version, rollout, entitlement, lifecycle and availability details are dated and qualified; new product context is separate from objectives."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Proposed activities use mock, isolated or authorized environments and do not direct unreviewed production changes."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Readiness prompts are original and supported by adjacent teaching; no recalled exam items were identified."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Manifest guide/objective bindings and source-validation evidence were checked; current scoped reachability limitations are disclosed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No suspicious copying, unrelated-vendor contamination, contradictory template content or exam-dump indicators were identified."
+            }
+          },
+          "findings": [],
+          "notes": "Same-context read-only review of the complete guide, accepted objective snapshot, source-validation receipt, registered citations and current diff. Versioned product context is dated and separated from exam scope. No human or independent review, exam attempt, or live lab is claimed."
+        },
+        {
+          "exam_code": "1Z0-182",
+          "vendor_id": "oracle",
+          "guide_path": "guides/1Z0-182-oracle-ai-database-administration-associate.md",
+          "guide_content_sha256": "15278c0bede757800d08a439e326e7ed710aa8490263ce35865e5049437cfb3c",
+          "blueprint_snapshot_path": "data/objective-snapshots/1z0-182-official-objectives.txt",
+          "blueprint_snapshot_sha256": "a845bcc5712adc0f0c6791a142ab1a9158f3ae269e346478d9d5f9bd31bf8a22",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "Official credential/status evidence and the exact accepted objective snapshot were compared; no snapshot or lifecycle transition was accepted."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "The accepted objective groups and weights map to substantive guide teaching, scenarios and original readiness checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Material guide claims are supported by registered official sources; access failures are treated as limitations, not as technical evidence."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Exam count, duration, prerequisites and delivery statements remain tied to official evidence and recommendations are distinguished from requirements."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Product explanations, distinctions and failure cases are coherent with cited evidence and scoped to the relevant release/deployment."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Version, rollout, entitlement, lifecycle and availability details are dated and qualified; new product context is separate from objectives."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Proposed activities use mock, isolated or authorized environments and do not direct unreviewed production changes."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Readiness prompts are original and supported by adjacent teaching; no recalled exam items were identified."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Manifest guide/objective bindings and source-validation evidence were checked; current scoped reachability limitations are disclosed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No suspicious copying, unrelated-vendor contamination, contradictory template content or exam-dump indicators were identified."
+            }
+          },
+          "findings": [],
+          "notes": "Same-context read-only review of the complete guide, accepted objective snapshot, source-validation receipt, registered citations and current diff. Versioned product context is dated and separated from exam scope. No human or independent review, exam attempt, or live lab is claimed."
+        },
+        {
+          "exam_code": "1Z0-830",
+          "vendor_id": "oracle",
+          "guide_path": "guides/1Z0-830-oracle-java-se-21-developer-professional.md",
+          "guide_content_sha256": "7f63b50986718780669904c0832fb6794968e390a913d9a635d754bc66c98b83",
+          "blueprint_snapshot_path": "data/objective-snapshots/1z0-830-official-objectives-2026-10-28.txt",
+          "blueprint_snapshot_sha256": "bd1fd340edd5c2332449ae18f3dbc5e812b996519d91990f19aedd72b3b673a1",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "Official credential/status evidence and the exact accepted objective snapshot were compared; no snapshot or lifecycle transition was accepted."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "The accepted objective groups and weights map to substantive guide teaching, scenarios and original readiness checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Material guide claims are supported by registered official sources; access failures are treated as limitations, not as technical evidence."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Exam count, duration, prerequisites and delivery statements remain tied to official evidence and recommendations are distinguished from requirements."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Product explanations, distinctions and failure cases are coherent with cited evidence and scoped to the relevant release/deployment."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Version, rollout, entitlement, lifecycle and availability details are dated and qualified; new product context is separate from objectives."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Proposed activities use mock, isolated or authorized environments and do not direct unreviewed production changes."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Readiness prompts are original and supported by adjacent teaching; no recalled exam items were identified."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Manifest guide/objective bindings and source-validation evidence were checked; current scoped reachability limitations are disclosed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No suspicious copying, unrelated-vendor contamination, contradictory template content or exam-dump indicators were identified."
+            }
+          },
+          "findings": [],
+          "notes": "Same-context read-only review of the complete guide, accepted objective snapshot, source-validation receipt, registered citations and current diff. Versioned product context is dated and separated from exam scope. No human or independent review, exam attempt, or live lab is claimed."
+        },
+        {
+          "exam_code": "1Z0-997-26",
+          "vendor_id": "oracle",
+          "guide_path": "guides/1Z0-997-26-oracle-cloud-infrastructure-architect-professional.md",
+          "guide_content_sha256": "afcdc18f2356a00e768086f6756d1508bfe4d597018436f06dad1bc1430e6a3b",
+          "blueprint_snapshot_path": "data/objective-snapshots/1z0-997-26-official-objectives-2026-10-28.txt",
+          "blueprint_snapshot_sha256": "b4c394dda5d89f27be21c751719fec56f4dfea024de4c8484f57f7f8f016713b",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "Official credential/status evidence and the exact accepted objective snapshot were compared; no snapshot or lifecycle transition was accepted."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "The accepted objective groups and weights map to substantive guide teaching, scenarios and original readiness checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Material guide claims are supported by registered official sources; access failures are treated as limitations, not as technical evidence."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Exam count, duration, prerequisites and delivery statements remain tied to official evidence and recommendations are distinguished from requirements."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Product explanations, distinctions and failure cases are coherent with cited evidence and scoped to the relevant release/deployment."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Version, rollout, entitlement, lifecycle and availability details are dated and qualified; new product context is separate from objectives."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Proposed activities use mock, isolated or authorized environments and do not direct unreviewed production changes."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Readiness prompts are original and supported by adjacent teaching; no recalled exam items were identified."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Manifest guide/objective bindings and source-validation evidence were checked; current scoped reachability limitations are disclosed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No suspicious copying, unrelated-vendor contamination, contradictory template content or exam-dump indicators were identified."
+            }
+          },
+          "findings": [],
+          "notes": "Same-context read-only review of the complete guide, accepted objective snapshot, source-validation receipt, registered citations and current diff. Versioned product context is dated and separated from exam scope. No human or independent review, exam attempt, or live lab is claimed."
+        },
+        {
+          "exam_code": "GH-200",
+          "vendor_id": "github",
+          "guide_path": "guides/GH-200-github-actions.md",
+          "guide_content_sha256": "f42a292b1589e8e0bc00574c0737af4619bfdcf7542de9e04d3429c2ba94cc5d",
+          "blueprint_snapshot_path": "data/objective-snapshots/gh-200-official-objectives.txt",
+          "blueprint_snapshot_sha256": "b41c6a6832e14bf4b6c222d0b6162cff81e9ef4683480f89e89b3e0406fdf941",
+          "audited_on": "2026-10-28",
+          "verdict": "pass-with-notes",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "Official credential/status evidence and the exact accepted objective snapshot were compared; no snapshot or lifecycle transition was accepted."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "The accepted objective groups and weights map to substantive guide teaching, scenarios and original readiness checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Material guide claims are supported by registered official sources; access failures are treated as limitations, not as technical evidence."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Exam count, duration, prerequisites and delivery statements remain tied to official evidence and recommendations are distinguished from requirements."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Product explanations, distinctions and failure cases are coherent with cited evidence and scoped to the relevant release/deployment."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Version, rollout, entitlement, lifecycle and availability details are dated and qualified; new product context is separate from objectives."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Proposed activities use mock, isolated or authorized environments and do not direct unreviewed production changes."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Readiness prompts are original and supported by adjacent teaching; no recalled exam items were identified."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Manifest guide/objective bindings and source-validation evidence were checked; current scoped reachability limitations are disclosed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No suspicious copying, unrelated-vendor contamination, contradictory template content or exam-dump indicators were identified."
+            }
+          },
+          "findings": [
+            {
+              "id": "g06-gh-200-access-note",
+              "check": "review_evidence_accuracy",
+              "severity": "low",
+              "category": "review-evidence",
+              "location": "Registered external citations",
+              "evidence": "1 guide link(s) are blocked to automated fetching; no material guide claim relies only on the fetch response.",
+              "recommendation": "Retain the access/transport distinction and recheck the source directly before operational use.",
+              "status": "open"
+            }
+          ],
+          "notes": "Same-context read-only review of the complete guide, accepted objective snapshot, source-validation receipt, registered citations and current diff. Versioned product context is dated and separated from exam scope. No human or independent review, exam attempt, or live lab is claimed."
+        },
+        {
+          "exam_code": "GH-500",
+          "vendor_id": "github",
+          "guide_path": "guides/GH-500-github-advanced-security.md",
+          "guide_content_sha256": "a3c80641925a6e835d3ba27362d6c28f02878246f35182a43632dbc2bac237d0",
+          "blueprint_snapshot_path": "data/objective-snapshots/gh-500-official-objectives.txt",
+          "blueprint_snapshot_sha256": "a935dc15cfa929c01d402424f0edc39bb018b4c600ce734bd7cf10e1446ae102",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "Official credential/status evidence and the exact accepted objective snapshot were compared; no snapshot or lifecycle transition was accepted."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "The accepted objective groups and weights map to substantive guide teaching, scenarios and original readiness checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Material guide claims are supported by registered official sources; access failures are treated as limitations, not as technical evidence."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Exam count, duration, prerequisites and delivery statements remain tied to official evidence and recommendations are distinguished from requirements."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Product explanations, distinctions and failure cases are coherent with cited evidence and scoped to the relevant release/deployment."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Version, rollout, entitlement, lifecycle and availability details are dated and qualified; new product context is separate from objectives."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Proposed activities use mock, isolated or authorized environments and do not direct unreviewed production changes."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Readiness prompts are original and supported by adjacent teaching; no recalled exam items were identified."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Manifest guide/objective bindings and source-validation evidence were checked; current scoped reachability limitations are disclosed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No suspicious copying, unrelated-vendor contamination, contradictory template content or exam-dump indicators were identified."
+            }
+          },
+          "findings": [],
+          "notes": "Same-context read-only review of the complete guide, accepted objective snapshot, source-validation receipt, registered citations and current diff. Versioned product context is dated and separated from exam scope. No human or independent review, exam attempt, or live lab is claimed."
+        },
+        {
+          "exam_code": "GH-900",
+          "vendor_id": "github",
+          "guide_path": "guides/GH-900-github-foundations.md",
+          "guide_content_sha256": "e5c186c65964d4665fae500bc4e8c2823db4eb01553c9f2ecaf2cba6fd6c1822",
+          "blueprint_snapshot_path": "data/objective-snapshots/gh-900-official-objectives.txt",
+          "blueprint_snapshot_sha256": "bd1c323a21723f8479a7b79ec41a576044ebe6afbc5bf57715acf431fe90828b",
+          "audited_on": "2026-10-28",
+          "verdict": "pass-with-notes",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "Official credential/status evidence and the exact accepted objective snapshot were compared; no snapshot or lifecycle transition was accepted."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "The accepted objective groups and weights map to substantive guide teaching, scenarios and original readiness checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Material guide claims are supported by registered official sources; access failures are treated as limitations, not as technical evidence."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Exam count, duration, prerequisites and delivery statements remain tied to official evidence and recommendations are distinguished from requirements."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Product explanations, distinctions and failure cases are coherent with cited evidence and scoped to the relevant release/deployment."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Version, rollout, entitlement, lifecycle and availability details are dated and qualified; new product context is separate from objectives."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Proposed activities use mock, isolated or authorized environments and do not direct unreviewed production changes."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Readiness prompts are original and supported by adjacent teaching; no recalled exam items were identified."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Manifest guide/objective bindings and source-validation evidence were checked; current scoped reachability limitations are disclosed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No suspicious copying, unrelated-vendor contamination, contradictory template content or exam-dump indicators were identified."
+            }
+          },
+          "findings": [
+            {
+              "id": "g06-gh-900-access-note",
+              "check": "review_evidence_accuracy",
+              "severity": "low",
+              "category": "review-evidence",
+              "location": "Registered external citations",
+              "evidence": "3 guide link(s) are blocked to automated fetching; no material guide claim relies only on the fetch response.",
+              "recommendation": "Retain the access/transport distinction and recheck the source directly before operational use.",
+              "status": "open"
+            }
+          ],
+          "notes": "Same-context read-only review of the complete guide, accepted objective snapshot, source-validation receipt, registered citations and current diff. Versioned product context is dated and separated from exam scope. No human or independent review, exam attempt, or live lab is claimed."
+        }
+      ],
+      "summary": {
+        "guide_count": 10,
+        "pass": 8,
+        "pass_with_notes": 2,
+        "fix_required": 0,
+        "blocked": 0,
+        "open_findings": 2,
+        "closed_findings": 0
+      }
+    }
 ]
 }

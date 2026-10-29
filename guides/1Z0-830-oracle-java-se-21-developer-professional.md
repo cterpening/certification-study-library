@@ -6,14 +6,14 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-04
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-04
+upcoming_change_checked: 2026-10-28
 ---
 
 # 1Z0-830 Oracle Java SE 21 Developer Professional Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide maps Oracle University's current public Java SE 21 learning-path scope checked September 4, 2026. It is unofficial and may contain errors. The [official Java SE 21 Developer learning path](https://learn.oracle.com/ols/learning-path/become-a-java-se-21-developer/117252/138845) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide maps Oracle University's current public Java SE 21 learning-path scope checked October 28, 2026. It is unofficial and may contain errors. The [official Java SE 21 Developer learning path](https://learn.oracle.com/ols/learning-path/become-a-java-se-21-developer/117252/138845) is authoritative.
 
 **Assessment contract exposed by the current path:** Java SE 21 Developer Professional, exam 1Z0-830, 120 minutes.<br>
 **Published high-level scope:** object-oriented and functional programming; inheritance, encapsulation, polymorphism, and generics; values; program flow and exceptions; streams, arrays, collections, concurrency, parallelism, I/O, and localization; modules, packaging, and deployment.<br>
@@ -99,6 +99,10 @@ The module descriptor can require modules, export packages, open packages for re
 1. **Order processor:** Model immutable records/sealed outcomes, validate patterns, transform orders with streams, localize output, and preserve exception/resource behavior.
 2. **Concurrent file indexer:** Walk files safely, submit blocking tasks with virtual threads, aggregate without races, handle cancellation, and package as a module.
 3. **Plugin service:** Define module service interfaces/providers, load implementations, apply generics and functional processing, and build a minimal runtime image.
+
+## Current product context — separate from exam objectives
+
+> **Related item:** Oracle published JDK 21.0.13.0.3 on October 24, 2026; the update remains conformant to Java SE 21 and carries refreshed time-zone data. Oracle also says the license for Oracle JDK 21 updates 21.0.13 and later differs substantially from earlier updates. Keep the certification scope on Java SE 21 language and APIs; verify the distribution and current license terms separately for real deployments.
 
 ## Hands-on labs
 
