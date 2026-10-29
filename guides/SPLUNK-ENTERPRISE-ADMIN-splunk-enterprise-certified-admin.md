@@ -6,14 +6,14 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-02
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-02
+upcoming_change_checked: 2026-10-28
 ---
 
 # Splunk Enterprise Certified Admin Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live certification page, five-page public blueprint, current Splunk Enterprise documentation, and selected learning resources were checked September 2, 2026. This is original learning material, not an exam dump. Recheck the [certification page](https://www.splunk.com/en_us/training/certification-track/splunk-enterprise-certified-admin.html) and [official blueprint](https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-enterprise-admin.pdf) before scheduling.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live certification page, five-page public blueprint, current Splunk Enterprise documentation, and selected learning resources were checked October 28, 2026. This is original learning material, not an exam dump. Recheck the [certification page](https://www.splunk.com/en_us/training/certification-track/splunk-enterprise-certified-admin.html) and [official blueprint](https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-enterprise-admin.pdf) before scheduling.
 
 **Current baseline:** Admin Basics 5%; License Management 5%; Configuration Files 5%; Indexes 10%; User Management 5%; Authentication 5%; Getting Data In 5%; Distributed Search 10%; Ingest Staging 5%; Configuring Forwarders 5%; Forwarder Management 10%; Monitor Inputs 5%; Network/Scripted Inputs 5%; Agentless Inputs 5%; Fine-Tuning Inputs 5%; Parsing/Data 5%; Raw Data Manipulation 5%.<br>
 **Exam contract:** professional; 56 questions; 60 total minutes including three minutes for the exam agreement.<br>
@@ -113,6 +113,10 @@ Inject a peer connectivity/trust or knowledge-bundle problem. Distinguish search
 
 Compare file monitor, TCP/UDP, script, WMI, and HEC for synthetic sources. Document credentials, reliability, queues, checkpoints, parsing location, failure tests, cost, and ownership. Justify one option per source.
 
+## Current product context — separate from exam objectives
+
+> **Related item:** Splunk Enterprise 10.4.2 has a Universal Forwarder issue where `tcpout useACK=true` can stall; Splunk recommends skipping 10.4.2, and the release notes identify 10.4.3 as the fix. Check the exact component/version and supported upgrade path before acting. [Splunk Enterprise 10.4 release notes](https://help.splunk.com/en/splunk-enterprise/release-notes-and-updates/release-notes/10.4/whats-new/welcome-to-splunk-enterprise-10.4)
+
 ## Hands-on labs
 
 1. Draw a role/topology and trace one event and one search through it.
@@ -194,7 +198,7 @@ This is not a complete list, and it is not meant to be consumed end to end. Pick
 |---|---|---:|---|
 | [Official certification page](https://www.splunk.com/en_us/training/certification-track/splunk-enterprise-certified-admin.html) and [test blueprint](https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-enterprise-admin.pdf) | Free | 45–75 min | Canonical scope/prerequisite; recheck before scheduling |
 | [Splunk Enterprise documentation](https://help.splunk.com/en/splunk-enterprise) | Free | 18–35 hr targeted | Select the version matching the lab/deployment |
-| Official **Splunk Enterprise System Administration** and **Splunk Enterprise Data Administration** learning-path courses | Paid/partner/employer access may apply | About 33 hr structured instruction, plus labs | Blueprint-recommended; verify current schedule and version |
+| [Splunk Enterprise System Administration](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-enterprise-system-administration-course-description.pdf) and [Splunk Enterprise Data Administration](https://www.splunk.com/en_us/pdfs/training/splunk-enterprise-data-administration-course-description.pdf) course descriptions | Paid/partner/employer access may apply | 12 and 18 hours respectively (30 contact hours total); labs/study extra | Blueprint-recommended preparation, not an exam prerequisite; confirm current schedule and version |
 | [Splunk How-To YouTube channel](https://www.youtube.com/@SplunkHowTo) | Free | 4–10 hr selected | Supplement rather than blueprint replacement; verify UI/version age |
 | [Splunk Community](https://community.splunk.com/) | Free | 3–8 hr targeted | Troubleshooting perspectives; validate answers against current official docs |
 | Disposable local or approved sandbox lab | Software/infrastructure terms vary | 25–50 hr | Use synthetic data and snapshot before destructive changes |

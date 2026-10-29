@@ -20617,6 +20617,708 @@
       "open_findings": 3,
       "closed_findings": 0
     }
+  },
+  {
+  "id": "nonms-refresh-2026-10-28-group-05",
+  "title": "Palo Alto, Splunk and IBM guide refresh independent review",
+  "rubric_version": 2,
+  "created_on": "2026-10-28",
+  "completed_on": "2026-10-28",
+  "status": "completed",
+  "audit_mode": "read-only",
+  "selection_method": "Explicit ten-guide verification batch from the final Group 5 handoff manifest.",
+  "rubric_path": "docs/AI-AUDIT.md",
+  "auditor": {
+    "kind": "ai-agent",
+    "label": "codex-independent-semantic-auditor",
+    "independence": "fresh-context",
+    "human_review": false
+  },
+  "exam_codes": [
+    "PANW-XSIAM-ENGINEER",
+    "PANW-XSOAR-ENGINEER",
+    "SPLK-5002",
+    "SPLK-5003",
+    "SPLUNK-CLOUD-ADMIN",
+    "SPLUNK-CORE-CONSULTANT",
+    "SPLUNK-ENTERPRISE-ADMIN",
+    "SPLUNK-ENTERPRISE-ARCHITECT",
+    "SPLUNK-O11Y-METRICS-USER",
+    "C1000-156"
+  ],
+  "results": [
+    {
+      "exam_code": "PANW-XSIAM-ENGINEER",
+      "vendor_id": "palo-alto-networks",
+      "guide_path": "guides/PANW-XSIAM-ENGINEER-palo-alto-networks-xsiam-engineer.md",
+      "guide_content_sha256": "d0efe5333b23bc555f911d53bb66853478c1f21e0b67a6e205fcc4246f089c8e",
+      "blueprint_snapshot_path": "data/objective-snapshots/panw-xsiam-engineer-official-objectives.txt",
+      "blueprint_snapshot_sha256": "01fcfc3a45ecdf45cdd41d9dfa6e33f6d30360991d2be20807fe2d9fcf6130ca",
+      "audited_on": "2026-10-28",
+      "verdict": "pass-with-notes",
+      "checks": {
+        "official_scope": {
+          "status": "passed",
+          "notes": "Official credential/status evidence and the exact accepted objective snapshot were compared; no snapshot or lifecycle transition was accepted."
+        },
+        "objective_coverage": {
+          "status": "passed",
+          "notes": "The accepted objective groups and weights map to substantive guide teaching, scenarios and original readiness checks."
+        },
+        "material_claim_support": {
+          "status": "passed",
+          "notes": "Material guide claims are supported by registered official sources; access failures are treated as limitations, not as technical evidence."
+        },
+        "exam_contract_integrity": {
+          "status": "passed",
+          "notes": "Exam count, duration, prerequisites and delivery statements remain tied to official evidence and recommendations are distinguished from requirements."
+        },
+        "technical_coherence": {
+          "status": "passed",
+          "notes": "Product explanations, distinctions and failure cases are coherent with cited evidence and scoped to the relevant release/deployment."
+        },
+        "volatility_and_lifecycle": {
+          "status": "passed",
+          "notes": "Version, rollout, entitlement, lifecycle and availability details are dated and qualified; new product context is separate from objectives."
+        },
+        "lab_safety_and_feasibility": {
+          "status": "passed",
+          "notes": "Proposed activities use mock, isolated or authorized environments and do not direct unreviewed production changes."
+        },
+        "readiness_check_quality": {
+          "status": "passed",
+          "notes": "Readiness prompts are original and supported by adjacent teaching; no recalled exam items were identified."
+        },
+        "review_evidence_accuracy": {
+          "status": "passed",
+          "notes": "Manifest guide/objective bindings and source-validation evidence were checked; current scoped reachability limitations are disclosed."
+        },
+        "duplication_and_contamination": {
+          "status": "passed",
+          "notes": "No suspicious copying, unrelated-vendor contamination, contradictory template content or exam-dump indicators were identified."
+        }
+      },
+      "findings": [
+        {
+          "id": "g05-panw-xsiam-engineer-source-note",
+          "check": "review_evidence_accuracy",
+          "severity": "low",
+          "category": "review-evidence",
+          "location": "Registered source list and current product-context references",
+          "evidence": "One first-party community destination returned HTTP 403 to automation; this is an access limitation, not evidence the source is dead.",
+          "recommendation": "Retain the access/transport distinction and use a reachable first-party source for any claim affected by the automated response.",
+          "status": "open"
+        }
+      ],
+      "notes": "Scope and coverage are coherent; dated release context is bounded separately from exam scope; one registered community source is automation-blocked. See the bounded fresh-context review report for source-access distinctions and per-guide rationale. No human review or live lab execution is claimed."
+    },
+    {
+      "exam_code": "PANW-XSOAR-ENGINEER",
+      "vendor_id": "palo-alto-networks",
+      "guide_path": "guides/PANW-XSOAR-ENGINEER-palo-alto-networks-xsoar-engineer.md",
+      "guide_content_sha256": "8953ccfec17c0058a71d257e5fe5cb7ce98ce2bed06a194b3f8ce7ff3d1d84eb",
+      "blueprint_snapshot_path": "data/objective-snapshots/panw-xsoar-engineer-official-objectives.txt",
+      "blueprint_snapshot_sha256": "43a17a64086c63ac3a769b6279b2c31cb3eec4e85f69fe62f8f88dae4a8c504c",
+      "audited_on": "2026-10-28",
+      "verdict": "pass-with-notes",
+      "checks": {
+        "official_scope": {
+          "status": "passed",
+          "notes": "Official credential/status evidence and the exact accepted objective snapshot were compared; no snapshot or lifecycle transition was accepted."
+        },
+        "objective_coverage": {
+          "status": "passed",
+          "notes": "The accepted objective groups and weights map to substantive guide teaching, scenarios and original readiness checks."
+        },
+        "material_claim_support": {
+          "status": "passed",
+          "notes": "Material guide claims are supported by registered official sources; access failures are treated as limitations, not as technical evidence."
+        },
+        "exam_contract_integrity": {
+          "status": "passed",
+          "notes": "Exam count, duration, prerequisites and delivery statements remain tied to official evidence and recommendations are distinguished from requirements."
+        },
+        "technical_coherence": {
+          "status": "passed",
+          "notes": "Product explanations, distinctions and failure cases are coherent with cited evidence and scoped to the relevant release/deployment."
+        },
+        "volatility_and_lifecycle": {
+          "status": "passed",
+          "notes": "Version, rollout, entitlement, lifecycle and availability details are dated and qualified; new product context is separate from objectives."
+        },
+        "lab_safety_and_feasibility": {
+          "status": "passed",
+          "notes": "Proposed activities use mock, isolated or authorized environments and do not direct unreviewed production changes."
+        },
+        "readiness_check_quality": {
+          "status": "passed",
+          "notes": "Readiness prompts are original and supported by adjacent teaching; no recalled exam items were identified."
+        },
+        "review_evidence_accuracy": {
+          "status": "passed",
+          "notes": "Manifest guide/objective bindings and source-validation evidence were checked; current scoped reachability limitations are disclosed."
+        },
+        "duplication_and_contamination": {
+          "status": "passed",
+          "notes": "No suspicious copying, unrelated-vendor contamination, contradictory template content or exam-dump indicators were identified."
+        }
+      },
+      "findings": [
+        {
+          "id": "g05-xsoar-001",
+          "check": "material_claim_support",
+          "severity": "medium",
+          "category": "source-mismatch",
+          "location": "Current product context — separate from exam objectives",
+          "evidence": "The earlier May-specific route redirected to HTTP 404. The guide was updated to cite the official current SaaS release index, checked HTTP 200; it lists XSOAR 8.15 GA (2026-07-26) and 8.14 GA (2026-05-03).",
+          "recommendation": "Use the canonical release index and retain deployment/version boundaries.",
+          "status": "resolved",
+          "resolution": "Replaced the former May-page route with the canonical SaaS release index; HTTP 200 recheck and independent review verified the 8.15/8.14 release details."
+        },
+        {
+          "id": "g05-panw-xsoar-engineer-source-note",
+          "check": "review_evidence_accuracy",
+          "severity": "low",
+          "category": "review-evidence",
+          "location": "Registered source list and current product-context references",
+          "evidence": "The former May detail route returned 404; the canonical current release index and documentation index both returned HTTP 200 and the citation finding is resolved.",
+          "recommendation": "Retain the access/transport distinction and use a reachable first-party source for any claim affected by the automated response.",
+          "status": "open"
+        }
+      ],
+      "notes": "The current registered official release index supports 8.15 and 8.14 dates and GA labels; the earlier citation route finding was resolved and verified. See the bounded fresh-context review report for source-access distinctions and per-guide rationale. No human review or live lab execution is claimed."
+    },
+    {
+      "exam_code": "SPLK-5002",
+      "vendor_id": "splunk",
+      "guide_path": "guides/SPLK-5002-splunk-certified-cybersecurity-defense-engineer.md",
+      "guide_content_sha256": "53f3ca3ed26e13b040f79065f841919b39211cd11c8b6bcd0d952c4946862a73",
+      "blueprint_snapshot_path": "data/objective-snapshots/splk-5002-official-objectives.txt",
+      "blueprint_snapshot_sha256": "8c0b091c2e53985d8ccfd27c19ff36fe4379d18e43fcdfb93c04a0847f18c751",
+      "audited_on": "2026-10-28",
+      "verdict": "pass-with-notes",
+      "checks": {
+        "official_scope": {
+          "status": "passed",
+          "notes": "Official credential/status evidence and the exact accepted objective snapshot were compared; no snapshot or lifecycle transition was accepted."
+        },
+        "objective_coverage": {
+          "status": "passed",
+          "notes": "The accepted objective groups and weights map to substantive guide teaching, scenarios and original readiness checks."
+        },
+        "material_claim_support": {
+          "status": "passed",
+          "notes": "Material guide claims are supported by registered official sources; access failures are treated as limitations, not as technical evidence."
+        },
+        "exam_contract_integrity": {
+          "status": "passed",
+          "notes": "Exam count, duration, prerequisites and delivery statements remain tied to official evidence and recommendations are distinguished from requirements."
+        },
+        "technical_coherence": {
+          "status": "passed",
+          "notes": "Product explanations, distinctions and failure cases are coherent with cited evidence and scoped to the relevant release/deployment."
+        },
+        "volatility_and_lifecycle": {
+          "status": "passed",
+          "notes": "Version, rollout, entitlement, lifecycle and availability details are dated and qualified; new product context is separate from objectives."
+        },
+        "lab_safety_and_feasibility": {
+          "status": "passed",
+          "notes": "Proposed activities use mock, isolated or authorized environments and do not direct unreviewed production changes."
+        },
+        "readiness_check_quality": {
+          "status": "passed",
+          "notes": "Readiness prompts are original and supported by adjacent teaching; no recalled exam items were identified."
+        },
+        "review_evidence_accuracy": {
+          "status": "passed",
+          "notes": "Manifest guide/objective bindings and source-validation evidence were checked; current scoped reachability limitations are disclosed."
+        },
+        "duplication_and_contamination": {
+          "status": "passed",
+          "notes": "No suspicious copying, unrelated-vendor contamination, contradictory template content or exam-dump indicators were identified."
+        }
+      },
+      "findings": [
+        {
+          "id": "g05-splk-5002-source-note",
+          "check": "review_evidence_accuracy",
+          "severity": "low",
+          "category": "review-evidence",
+          "location": "Registered source list and current product-context references",
+          "evidence": "Multiple official Splunk Help pages denied automated requests (403); direct research checked the cited release and technical material.",
+          "recommendation": "Retain the access/transport distinction and use a reachable first-party source for any claim affected by the automated response.",
+          "status": "open"
+        }
+      ],
+      "notes": "Objective groups and exam contract align; ES release context distinguishes GA/Controlled Availability and deployment variation; many Help pages block automation. See the bounded fresh-context review report for source-access distinctions and per-guide rationale. No human review or live lab execution is claimed."
+    },
+    {
+      "exam_code": "SPLK-5003",
+      "vendor_id": "splunk",
+      "guide_path": "guides/SPLK-5003-splunk-certified-cybersecurity-defense-architect.md",
+      "guide_content_sha256": "0149845aaae898a0db210633a8ee49ab2b7161a84a2d0d354ba17d381924ba6b",
+      "blueprint_snapshot_path": "data/objective-snapshots/splk-5003-official-objectives.txt",
+      "blueprint_snapshot_sha256": "10121cd48a63fb12ca9073996c56aa52248a86bbcf124729f358798ba7331161",
+      "audited_on": "2026-10-28",
+      "verdict": "pass-with-notes",
+      "checks": {
+        "official_scope": {
+          "status": "passed",
+          "notes": "Official credential/status evidence and the exact accepted objective snapshot were compared; no snapshot or lifecycle transition was accepted."
+        },
+        "objective_coverage": {
+          "status": "passed",
+          "notes": "The accepted objective groups and weights map to substantive guide teaching, scenarios and original readiness checks."
+        },
+        "material_claim_support": {
+          "status": "passed",
+          "notes": "Material guide claims are supported by registered official sources; access failures are treated as limitations, not as technical evidence."
+        },
+        "exam_contract_integrity": {
+          "status": "passed",
+          "notes": "Exam count, duration, prerequisites and delivery statements remain tied to official evidence and recommendations are distinguished from requirements."
+        },
+        "technical_coherence": {
+          "status": "passed",
+          "notes": "Product explanations, distinctions and failure cases are coherent with cited evidence and scoped to the relevant release/deployment."
+        },
+        "volatility_and_lifecycle": {
+          "status": "passed",
+          "notes": "Version, rollout, entitlement, lifecycle and availability details are dated and qualified; new product context is separate from objectives."
+        },
+        "lab_safety_and_feasibility": {
+          "status": "passed",
+          "notes": "Proposed activities use mock, isolated or authorized environments and do not direct unreviewed production changes."
+        },
+        "readiness_check_quality": {
+          "status": "passed",
+          "notes": "Readiness prompts are original and supported by adjacent teaching; no recalled exam items were identified."
+        },
+        "review_evidence_accuracy": {
+          "status": "passed",
+          "notes": "Manifest guide/objective bindings and source-validation evidence were checked; current scoped reachability limitations are disclosed."
+        },
+        "duplication_and_contamination": {
+          "status": "passed",
+          "notes": "No suspicious copying, unrelated-vendor contamination, contradictory template content or exam-dump indicators were identified."
+        }
+      },
+      "findings": [
+        {
+          "id": "g05-splk-5003-source-note",
+          "check": "review_evidence_accuracy",
+          "severity": "low",
+          "category": "review-evidence",
+          "location": "Registered source list and current product-context references",
+          "evidence": "One NTIA SBOM page produced a local TLS certificate-chain error; this does not refute the guide statement.",
+          "recommendation": "Retain the access/transport distinction and use a reachable first-party source for any claim affected by the automated response.",
+          "status": "open"
+        }
+      ],
+      "notes": "Blueprint groups and weights align; architecture context is version-bounded; one NTIA source had a local TLS validation error. See the bounded fresh-context review report for source-access distinctions and per-guide rationale. No human review or live lab execution is claimed."
+    },
+    {
+      "exam_code": "SPLUNK-CLOUD-ADMIN",
+      "vendor_id": "splunk",
+      "guide_path": "guides/SPLUNK-CLOUD-ADMIN-splunk-cloud-certified-admin.md",
+      "guide_content_sha256": "edf238dc9d384467ca0be410fe12c9d5c0df21923b60eddbb6284f521e182625",
+      "blueprint_snapshot_path": "data/objective-snapshots/splunk-cloud-admin-official-objectives.txt",
+      "blueprint_snapshot_sha256": "ef925e6aab94980171d47b8162c03c13e5c3800eabc87783f58807030e2b4955",
+      "audited_on": "2026-10-28",
+      "verdict": "pass-with-notes",
+      "checks": {
+        "official_scope": {
+          "status": "passed",
+          "notes": "Official credential/status evidence and the exact accepted objective snapshot were compared; no snapshot or lifecycle transition was accepted."
+        },
+        "objective_coverage": {
+          "status": "passed",
+          "notes": "The accepted objective groups and weights map to substantive guide teaching, scenarios and original readiness checks."
+        },
+        "material_claim_support": {
+          "status": "passed",
+          "notes": "Material guide claims are supported by registered official sources; access failures are treated as limitations, not as technical evidence."
+        },
+        "exam_contract_integrity": {
+          "status": "passed",
+          "notes": "Exam count, duration, prerequisites and delivery statements remain tied to official evidence and recommendations are distinguished from requirements."
+        },
+        "technical_coherence": {
+          "status": "passed",
+          "notes": "Product explanations, distinctions and failure cases are coherent with cited evidence and scoped to the relevant release/deployment."
+        },
+        "volatility_and_lifecycle": {
+          "status": "passed",
+          "notes": "Version, rollout, entitlement, lifecycle and availability details are dated and qualified; new product context is separate from objectives."
+        },
+        "lab_safety_and_feasibility": {
+          "status": "passed",
+          "notes": "Proposed activities use mock, isolated or authorized environments and do not direct unreviewed production changes."
+        },
+        "readiness_check_quality": {
+          "status": "passed",
+          "notes": "Readiness prompts are original and supported by adjacent teaching; no recalled exam items were identified."
+        },
+        "review_evidence_accuracy": {
+          "status": "passed",
+          "notes": "Manifest guide/objective bindings and source-validation evidence were checked; current scoped reachability limitations are disclosed."
+        },
+        "duplication_and_contamination": {
+          "status": "passed",
+          "notes": "No suspicious copying, unrelated-vendor contamination, contradictory template content or exam-dump indicators were identified."
+        }
+      },
+      "findings": [
+        {
+          "id": "g05-splunk-cloud-admin-source-note",
+          "check": "review_evidence_accuracy",
+          "severity": "low",
+          "category": "review-evidence",
+          "location": "Registered source list and current product-context references",
+          "evidence": "Most Splunk Help pages denied automated requests (403); access limits are recorded and claims are based on reviewed sources.",
+          "recommendation": "Retain the access/transport distinction and use a reachable first-party source for any claim affected by the automated response.",
+          "status": "open"
+        }
+      ],
+      "notes": "Objective weighting and exam contract align; ACS context bounds capabilities by version, role, topology, experience, and region. See the bounded fresh-context review report for source-access distinctions and per-guide rationale. No human review or live lab execution is claimed."
+    },
+    {
+      "exam_code": "SPLUNK-CORE-CONSULTANT",
+      "vendor_id": "splunk",
+      "guide_path": "guides/SPLUNK-CORE-CONSULTANT-splunk-core-certified-consultant.md",
+      "guide_content_sha256": "8a0ec7b5b7c10afa494a3ae3a7bd2c205baa8a9e7c4708f5af48e778d4fb8c74",
+      "blueprint_snapshot_path": "data/objective-snapshots/splunk-core-consultant-official-objectives.txt",
+      "blueprint_snapshot_sha256": "4fe612b351b9c761b9032259a223155b6e4e3c3773d9edd2fac17d5b0731ea73",
+      "audited_on": "2026-10-28",
+      "verdict": "pass-with-notes",
+      "checks": {
+        "official_scope": {
+          "status": "passed",
+          "notes": "Official credential/status evidence and the exact accepted objective snapshot were compared; no snapshot or lifecycle transition was accepted."
+        },
+        "objective_coverage": {
+          "status": "passed",
+          "notes": "The accepted objective groups and weights map to substantive guide teaching, scenarios and original readiness checks."
+        },
+        "material_claim_support": {
+          "status": "passed",
+          "notes": "Material guide claims are supported by registered official sources; access failures are treated as limitations, not as technical evidence."
+        },
+        "exam_contract_integrity": {
+          "status": "passed",
+          "notes": "Exam count, duration, prerequisites and delivery statements remain tied to official evidence and recommendations are distinguished from requirements."
+        },
+        "technical_coherence": {
+          "status": "passed",
+          "notes": "Product explanations, distinctions and failure cases are coherent with cited evidence and scoped to the relevant release/deployment."
+        },
+        "volatility_and_lifecycle": {
+          "status": "passed",
+          "notes": "Version, rollout, entitlement, lifecycle and availability details are dated and qualified; new product context is separate from objectives."
+        },
+        "lab_safety_and_feasibility": {
+          "status": "passed",
+          "notes": "Proposed activities use mock, isolated or authorized environments and do not direct unreviewed production changes."
+        },
+        "readiness_check_quality": {
+          "status": "passed",
+          "notes": "Readiness prompts are original and supported by adjacent teaching; no recalled exam items were identified."
+        },
+        "review_evidence_accuracy": {
+          "status": "passed",
+          "notes": "Manifest guide/objective bindings and source-validation evidence were checked; current scoped reachability limitations are disclosed."
+        },
+        "duplication_and_contamination": {
+          "status": "passed",
+          "notes": "No suspicious copying, unrelated-vendor contamination, contradictory template content or exam-dump indicators were identified."
+        }
+      },
+      "findings": [
+        {
+          "id": "g05-splunk-core-consultant-source-note",
+          "check": "review_evidence_accuracy",
+          "severity": "low",
+          "category": "review-evidence",
+          "location": "Registered source list and current product-context references",
+          "evidence": "Some Splunk Help pages denied automated requests (403); current course-track claims are bounded to official course evidence.",
+          "recommendation": "Retain the access/transport distinction and use a reachable first-party source for any claim affected by the automated response.",
+          "status": "open"
+        }
+      ],
+      "notes": "Blueprint coverage and certification/course eligibility are distinguished; version context does not substitute release notes for upgrade procedure. See the bounded fresh-context review report for source-access distinctions and per-guide rationale. No human review or live lab execution is claimed."
+    },
+    {
+      "exam_code": "SPLUNK-ENTERPRISE-ADMIN",
+      "vendor_id": "splunk",
+      "guide_path": "guides/SPLUNK-ENTERPRISE-ADMIN-splunk-enterprise-certified-admin.md",
+      "guide_content_sha256": "5ff89aad0e6f462a6b6efd2c1ca0b7a184ebc7d98b3184fd34ace2d538d75eaf",
+      "blueprint_snapshot_path": "data/objective-snapshots/splunk-enterprise-admin-official-objectives.txt",
+      "blueprint_snapshot_sha256": "5d446f18d95406a4a21e6b7f3ead1530c6bd7b7faa89719d8ecaa3593c179c5c",
+      "audited_on": "2026-10-28",
+      "verdict": "pass-with-notes",
+      "checks": {
+        "official_scope": {
+          "status": "passed",
+          "notes": "Official credential/status evidence and the exact accepted objective snapshot were compared; no snapshot or lifecycle transition was accepted."
+        },
+        "objective_coverage": {
+          "status": "passed",
+          "notes": "The accepted objective groups and weights map to substantive guide teaching, scenarios and original readiness checks."
+        },
+        "material_claim_support": {
+          "status": "passed",
+          "notes": "Material guide claims are supported by registered official sources; access failures are treated as limitations, not as technical evidence."
+        },
+        "exam_contract_integrity": {
+          "status": "passed",
+          "notes": "Exam count, duration, prerequisites and delivery statements remain tied to official evidence and recommendations are distinguished from requirements."
+        },
+        "technical_coherence": {
+          "status": "passed",
+          "notes": "Product explanations, distinctions and failure cases are coherent with cited evidence and scoped to the relevant release/deployment."
+        },
+        "volatility_and_lifecycle": {
+          "status": "passed",
+          "notes": "Version, rollout, entitlement, lifecycle and availability details are dated and qualified; new product context is separate from objectives."
+        },
+        "lab_safety_and_feasibility": {
+          "status": "passed",
+          "notes": "Proposed activities use mock, isolated or authorized environments and do not direct unreviewed production changes."
+        },
+        "readiness_check_quality": {
+          "status": "passed",
+          "notes": "Readiness prompts are original and supported by adjacent teaching; no recalled exam items were identified."
+        },
+        "review_evidence_accuracy": {
+          "status": "passed",
+          "notes": "Manifest guide/objective bindings and source-validation evidence were checked; current scoped reachability limitations are disclosed."
+        },
+        "duplication_and_contamination": {
+          "status": "passed",
+          "notes": "No suspicious copying, unrelated-vendor contamination, contradictory template content or exam-dump indicators were identified."
+        }
+      },
+      "findings": [
+        {
+          "id": "g05-splunk-enterprise-admin-source-note",
+          "check": "review_evidence_accuracy",
+          "severity": "low",
+          "category": "review-evidence",
+          "location": "Registered source list and current product-context references",
+          "evidence": "Some Splunk Help pages denied automated requests (403); the version-specific note is independently bounded to current release documentation.",
+          "recommendation": "Retain the access/transport distinction and use a reachable first-party source for any claim affected by the automated response.",
+          "status": "open"
+        }
+      ],
+      "notes": "Objective map and exam contract align; the 10.4.2 forwarder warning is version-bounded and points to supported upgrade paths. See the bounded fresh-context review report for source-access distinctions and per-guide rationale. No human review or live lab execution is claimed."
+    },
+    {
+      "exam_code": "SPLUNK-ENTERPRISE-ARCHITECT",
+      "vendor_id": "splunk",
+      "guide_path": "guides/SPLUNK-ENTERPRISE-ARCHITECT-splunk-enterprise-certified-architect.md",
+      "guide_content_sha256": "9d28ab9a8ebdd3ab00f6a616e4c68e4b75d903ca529ce444df50e1829d4e24f2",
+      "blueprint_snapshot_path": "data/objective-snapshots/splunk-enterprise-architect-official-objectives.txt",
+      "blueprint_snapshot_sha256": "0c28e1dbc996a44c1bfad21e83bfcea0bd69645bbee8432a0a93e23262d102f4",
+      "audited_on": "2026-10-28",
+      "verdict": "pass-with-notes",
+      "checks": {
+        "official_scope": {
+          "status": "passed",
+          "notes": "Official credential/status evidence and the exact accepted objective snapshot were compared; no snapshot or lifecycle transition was accepted."
+        },
+        "objective_coverage": {
+          "status": "passed",
+          "notes": "The accepted objective groups and weights map to substantive guide teaching, scenarios and original readiness checks."
+        },
+        "material_claim_support": {
+          "status": "passed",
+          "notes": "Material guide claims are supported by registered official sources; access failures are treated as limitations, not as technical evidence."
+        },
+        "exam_contract_integrity": {
+          "status": "passed",
+          "notes": "Exam count, duration, prerequisites and delivery statements remain tied to official evidence and recommendations are distinguished from requirements."
+        },
+        "technical_coherence": {
+          "status": "passed",
+          "notes": "Product explanations, distinctions and failure cases are coherent with cited evidence and scoped to the relevant release/deployment."
+        },
+        "volatility_and_lifecycle": {
+          "status": "passed",
+          "notes": "Version, rollout, entitlement, lifecycle and availability details are dated and qualified; new product context is separate from objectives."
+        },
+        "lab_safety_and_feasibility": {
+          "status": "passed",
+          "notes": "Proposed activities use mock, isolated or authorized environments and do not direct unreviewed production changes."
+        },
+        "readiness_check_quality": {
+          "status": "passed",
+          "notes": "Readiness prompts are original and supported by adjacent teaching; no recalled exam items were identified."
+        },
+        "review_evidence_accuracy": {
+          "status": "passed",
+          "notes": "Manifest guide/objective bindings and source-validation evidence were checked; current scoped reachability limitations are disclosed."
+        },
+        "duplication_and_contamination": {
+          "status": "passed",
+          "notes": "No suspicious copying, unrelated-vendor contamination, contradictory template content or exam-dump indicators were identified."
+        }
+      },
+      "findings": [
+        {
+          "id": "g05-splunk-enterprise-architect-source-note",
+          "check": "review_evidence_accuracy",
+          "severity": "low",
+          "category": "review-evidence",
+          "location": "Registered source list and current product-context references",
+          "evidence": "Some Splunk Help pages denied automated requests (403); no release claim relies solely on those blocked responses.",
+          "recommendation": "Retain the access/transport distinction and use a reachable first-party source for any claim affected by the automated response.",
+          "status": "open"
+        }
+      ],
+      "notes": "Objective map, prerequisites, and required instruction are explicit; current track wording is distinguished from historical blueprint wording. See the bounded fresh-context review report for source-access distinctions and per-guide rationale. No human review or live lab execution is claimed."
+    },
+    {
+      "exam_code": "SPLUNK-O11Y-METRICS-USER",
+      "vendor_id": "splunk",
+      "guide_path": "guides/SPLUNK-O11Y-METRICS-USER-splunk-o11y-cloud-certified-metrics-user.md",
+      "guide_content_sha256": "11b82613565e997cf2dc0d95e7a1f479548bc3908a6c9e01ce403f03b8042ca0",
+      "blueprint_snapshot_path": "data/objective-snapshots/splunk-o11y-metrics-user-official-objectives.txt",
+      "blueprint_snapshot_sha256": "53592e027c6e076c752a7fdbda7be355bcc4cde7d02c379d87ff5bb0b85faa01",
+      "audited_on": "2026-10-28",
+      "verdict": "pass-with-notes",
+      "checks": {
+        "official_scope": {
+          "status": "passed",
+          "notes": "Official credential/status evidence and the exact accepted objective snapshot were compared; no snapshot or lifecycle transition was accepted."
+        },
+        "objective_coverage": {
+          "status": "passed",
+          "notes": "The accepted objective groups and weights map to substantive guide teaching, scenarios and original readiness checks."
+        },
+        "material_claim_support": {
+          "status": "passed",
+          "notes": "Material guide claims are supported by registered official sources; access failures are treated as limitations, not as technical evidence."
+        },
+        "exam_contract_integrity": {
+          "status": "passed",
+          "notes": "Exam count, duration, prerequisites and delivery statements remain tied to official evidence and recommendations are distinguished from requirements."
+        },
+        "technical_coherence": {
+          "status": "passed",
+          "notes": "Product explanations, distinctions and failure cases are coherent with cited evidence and scoped to the relevant release/deployment."
+        },
+        "volatility_and_lifecycle": {
+          "status": "passed",
+          "notes": "Version, rollout, entitlement, lifecycle and availability details are dated and qualified; new product context is separate from objectives."
+        },
+        "lab_safety_and_feasibility": {
+          "status": "passed",
+          "notes": "Proposed activities use mock, isolated or authorized environments and do not direct unreviewed production changes."
+        },
+        "readiness_check_quality": {
+          "status": "passed",
+          "notes": "Readiness prompts are original and supported by adjacent teaching; no recalled exam items were identified."
+        },
+        "review_evidence_accuracy": {
+          "status": "passed",
+          "notes": "Manifest guide/objective bindings and source-validation evidence were checked; current scoped reachability limitations are disclosed."
+        },
+        "duplication_and_contamination": {
+          "status": "passed",
+          "notes": "No suspicious copying, unrelated-vendor contamination, contradictory template content or exam-dump indicators were identified."
+        }
+      },
+      "findings": [
+        {
+          "id": "g05-splunk-o11y-metrics-user-source-note",
+          "check": "review_evidence_accuracy",
+          "severity": "low",
+          "category": "review-evidence",
+          "location": "Registered source list and current product-context references",
+          "evidence": "Splunk Observability Help pages denied automated requests (403); release behavior is bounded and directly reviewed.",
+          "recommendation": "Retain the access/transport distinction and use a reachable first-party source for any claim affected by the automated response.",
+          "status": "open"
+        }
+      ],
+      "notes": "Objective groups and exam contract align; October behavior and Controlled Availability are bounded and prescribe no production change. See the bounded fresh-context review report for source-access distinctions and per-guide rationale. No human review or live lab execution is claimed."
+    },
+    {
+      "exam_code": "C1000-156",
+      "vendor_id": "ibm",
+      "guide_path": "guides/C1000-156-ibm-security-qradar-siem-administrator.md",
+      "guide_content_sha256": "188faf28251301276b1bebb3ef7f82750ab667a395c6246e3bdb1c99d1bbcb08",
+      "blueprint_snapshot_path": "data/objective-snapshots/c1000-156-official-objectives.txt",
+      "blueprint_snapshot_sha256": "ec021d4137eda41679372d22546464a274d70fc0de757b012c23a0b47582c43a",
+      "audited_on": "2026-10-28",
+      "verdict": "pass-with-notes",
+      "checks": {
+        "official_scope": {
+          "status": "passed",
+          "notes": "Official credential/status evidence and the exact accepted objective snapshot were compared; no snapshot or lifecycle transition was accepted."
+        },
+        "objective_coverage": {
+          "status": "passed",
+          "notes": "The accepted objective groups and weights map to substantive guide teaching, scenarios and original readiness checks."
+        },
+        "material_claim_support": {
+          "status": "passed",
+          "notes": "Material guide claims are supported by registered official sources; access failures are treated as limitations, not as technical evidence."
+        },
+        "exam_contract_integrity": {
+          "status": "passed",
+          "notes": "Exam count, duration, prerequisites and delivery statements remain tied to official evidence and recommendations are distinguished from requirements."
+        },
+        "technical_coherence": {
+          "status": "passed",
+          "notes": "Product explanations, distinctions and failure cases are coherent with cited evidence and scoped to the relevant release/deployment."
+        },
+        "volatility_and_lifecycle": {
+          "status": "passed",
+          "notes": "Version, rollout, entitlement, lifecycle and availability details are dated and qualified; new product context is separate from objectives."
+        },
+        "lab_safety_and_feasibility": {
+          "status": "passed",
+          "notes": "Proposed activities use mock, isolated or authorized environments and do not direct unreviewed production changes."
+        },
+        "readiness_check_quality": {
+          "status": "passed",
+          "notes": "Readiness prompts are original and supported by adjacent teaching; no recalled exam items were identified."
+        },
+        "review_evidence_accuracy": {
+          "status": "passed",
+          "notes": "Manifest guide/objective bindings and source-validation evidence were checked; current scoped reachability limitations are disclosed."
+        },
+        "duplication_and_contamination": {
+          "status": "passed",
+          "notes": "No suspicious copying, unrelated-vendor contamination, contradictory template content or exam-dump indicators were identified."
+        }
+      },
+      "findings": [
+        {
+          "id": "g05-c1000-156-source-note",
+          "check": "review_evidence_accuracy",
+          "severity": "low",
+          "category": "review-evidence",
+          "location": "Registered source list and current product-context references",
+          "evidence": "IBM exam and product documentation endpoints had connection resets during automated checks; other first-party credential and migration sources were reachable.",
+          "recommendation": "Retain the access/transport distinction and use a reachable first-party source for any claim affected by the automated response.",
+          "status": "open"
+        }
+      ],
+      "notes": "Seven objective domains and exam contract align; IBM Auto Update migration note is bounded to checking current endpoints; two sources had transport errors. See the bounded fresh-context review report for source-access distinctions and per-guide rationale. No human review or live lab execution is claimed."
+    }
+  ],
+  "summary": {
+    "guide_count": 10,
+    "pass": 0,
+    "pass_with_notes": 10,
+    "fix_required": 0,
+    "blocked": 0,
+    "open_findings": 10,
+    "closed_findings": 1
   }
+}
+
 ]
 }

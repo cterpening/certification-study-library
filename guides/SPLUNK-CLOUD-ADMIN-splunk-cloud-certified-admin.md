@@ -6,14 +6,14 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-02
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-02
+upcoming_change_checked: 2026-10-28
 ---
 
 # Splunk Cloud Certified Admin Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live certification page, four-page public blueprint, current Splunk Cloud Platform service/admin/data-ingestion documentation, and selected learning resources were checked September 2, 2026. This guide contains original learning material, not exam items. Recheck the [official certification page](https://www.splunk.com/en_us/training/certification-track/splunk-cloud-certified-admin.html) and [test blueprint](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-cloud-admin.pdf) before scheduling.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live certification page, four-page public blueprint, current Splunk Cloud Platform service/admin/data-ingestion documentation, and selected learning resources were checked October 28, 2026. This guide contains original learning material, not exam items. Recheck the [official certification page](https://www.splunk.com/en_us/training/certification-track/splunk-cloud-certified-admin.html) and [test blueprint](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-cloud-admin.pdf) before scheduling.
 
 **Current baseline:** Cloud Overview (5%); Index Management (5%); Authentication/Authorization (5%); Configuration Files (5%); Getting Data in Cloud (15%); Forwarder Management (5%); Monitor Inputs (15%); Network/Other Inputs (10%); Input Fine-tuning (5%); Parsing/Data Preview (10%); Raw Data Manipulation (10%); Apps (5%); Cloud Support (5%). Related topics may appear and the blueprint may change without notice.<br>
 **Exam contract:** professional; 60 multiple-choice questions; 75 total minutes including three minutes for the exam agreement; USD 130 per attempt; Pearson VUE delivery<br>
@@ -146,6 +146,10 @@ Use an approved heavy forwarder for TCP/UDP, a basic script, and Windows input; 
 
 Design an event index and role, document identity mapping, install a compatible private app through the supported tenant path, monitor CMC/index activity, inject a controlled fault, and assemble a redacted Support case with effective configuration and evidence.
 
+## Current product context — separate from exam objectives
+
+> **Related item:** The 10.5.2605 Admin Config Service (ACS) release notes document ACS audit events searchable in `_audit` and other 2026 changes. ACS feature support depends on stack/version, role capabilities, Classic or Victoria experience, architecture and rollout; ACS is not supported for single-instance deployments. Confirm the current compatibility matrix before planning a change. [ACS 10.5.2605 release notes](https://help.splunk.com/en/splunk-cloud-platform/release-notes/10.5.2605/splunk-cloud-platform-release-notes/admin-configuration-service) · [ACS requirements and compatibility](https://help.splunk.com/en/splunk-cloud-platform/administer/admin-config-service-manual/10.5.2605/using-the-admin-config-service-acs--api/admin-config-service-acs-requirements-and-compatibility-matrix)
+
 ## Hands-on labs
 
 1. Cloud-versus-Enterprise responsibility/topology and capability matrix using the current service description.
@@ -266,8 +270,8 @@ This is not a complete list, and it is not meant to be consumed in full. Pick th
 |---|---|---:|---|
 | [Official Cloud Admin blueprint](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-cloud-admin.pdf) | Free canonical scope | 1–2 hr mapping/final review | Domains, prerequisite, contract |
 | [Official Cloud Admin page](https://www.splunk.com/en_us/training/certification-track/splunk-cloud-certified-admin.html) | Free | 20–40 min before booking | Status, delivery, price, prerequisite |
-| [Splunk Cloud Administration](https://www.splunk.com/en_us/training/course-catalog.html) | Paid instructor-led; USD 2,000 in 2024 map, verify current | 18 hr listed plus 15–25 hr lab/review | Net-new admin path |
-| [Transitioning to Splunk Cloud](https://www.splunk.com/en_us/training/course-catalog.html) | Paid; for experienced Enterprise admins; price/schedule vary | 9 hr listed in 2024 map plus targeted labs | Responsibility/topology transition path |
+| [Splunk Cloud Administration course description](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-cloud-administration-course-description.pdf) | Paid instructor-led; current schedule/pricing varies | 18 hours stated in the course description; labs/study extra | Net-new Cloud Admin path; do not combine with Transitioning to Splunk Cloud |
+| [Transitioning to Splunk Cloud course description](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/transitioning-to-splunk-cloud-course-description.pdf) | Paid instructor-led; current schedule/pricing varies | Check current catalog for duration | For experienced Enterprise admins; overlaps the Cloud Administration course, so choose the path that fits your background |
 | [Current Splunk Cloud service details](https://help.splunk.com/en/splunk-cloud-platform/get-started/service-terms-and-policies/10.5.2605/information-about-the-service/splunk-cloud-platform-service-details) | Free authoritative service boundary | 4–8 hr selected full review | Customer/Splunk responsibility and constraints |
 | [Splunk Cloud administration hub](https://help.splunk.com/en/splunk-cloud-platform/administer) | Free | 15–25 hr selected Admin/identity/index/monitoring topics | Current tenant administration |
 | [Admin Config Service manual](https://help.splunk.com/en/splunk-cloud-platform/administer/admin-config-service-manual/9.3.2411/welcome-to-the-admin-config-service-acs/about-the-admin-config-service-acs-api) | Free; compatibility/role requirements apply | 4–8 hr plus safe CLI/API lab | Self-service operations versus Support |

@@ -6,19 +6,19 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-02
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-02
+upcoming_change_checked: 2026-10-28
 ---
 
 # SPLK-5003 Splunk Certified Cybersecurity Defense Architect Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live track page, four-page public blueprint, current primary security/framework documentation, and selected Splunk sources were checked September 2, 2026. This is original defensive learning material, not exam content. Recheck the [certification page](https://www.splunk.com/en_us/training/certification-track/splunk-certified-cybersecurity-defense-architect.html) and [official blueprint](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-cybersecurity-defense-architect.pdf) before scheduling.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live track page, four-page public blueprint, current primary security/framework documentation, and selected Splunk sources were checked October 28, 2026. This is original defensive learning material, not exam content. Recheck the [certification page](https://www.splunk.com/en_us/training/certification-track/splunk-certified-cybersecurity-defense-architect.html) and [official blueprint](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-cybersecurity-defense-architect.pdf) before scheduling.
 
 **Current baseline:** Threat Intelligence 5%; Security Data Management 20%; Incident Response 10%; Automation/Orchestration 10%; DevSecOps/Scale 15%; GRC 10%; Program Effectiveness 15%; Capability Selection/Placement 15%.<br>
 **Exam contract:** expert; 67 questions; 75 total minutes including three minutes for the exam agreement; live page lists USD 130 and Pearson VUE delivery.<br>
 **Prerequisites/experience:** no prerequisite exams. The blueprint says candidates often have 5–7 years of experience with its subject matter; that is an experience profile, not a formal prerequisite.<br>
-**Beta/lifecycle boundary:** an earlier inventory record labeled this credential beta. On September 2, 2026, the live page offered normal scheduling details and the current public blueprint did **not** display a beta label. This guide is therefore publishable, but the catalog should preserve a verification note until its status is reconciled. No retirement/replacement announcement was visible.<br>
+**Beta/lifecycle boundary:** an earlier inventory record labeled this credential beta. On October 28, 2026, the live page offered normal scheduling details and the current public blueprint did **not** display a beta label. This guide is therefore publishable, but the catalog should preserve a verification note until its status is reconciled. No retirement/replacement announcement was visible.<br>
 **Scope boundary:** this architecture credential is vendor-adjacent rather than a single-product configuration exam. Its objectives include Splunk, broader data/security architectures, regulation, DevSecOps, AI/ML, and business governance. Laws and obligations depend on jurisdiction and facts; use qualified legal/privacy/compliance review.
 
 ## How to use this guide
@@ -125,6 +125,10 @@ Design an evidence-grounded assistant that summarizes and proposes containment. 
 
 Create CI/CD templates for data contracts, detections, tests, SBOM, signed artifacts, environment promotion, canary, metrics, exception expiry, and retirement. Demonstrate one change from commit through control validation and recovery.
 
+## Current product context — separate from exam objectives
+
+> **Related item:** Security architecture choices must account for feature availability, edition, deployment and supported platform versions. Splunk Enterprise Security 8.7.2 was generally available as checked; ES 8.8.0 was in Controlled Availability on October 21, 2026, so its capabilities are not a universal baseline. ES 8.x upgrades are one-way; preserve investigation data before an approved migration. [ES 8.7 release notes](https://help.splunk.com/en/splunk-enterprise-security-8/release-notes-and-resources/8.7/splunk-enterprise-security-release-notes/release-notes-for-splunk-enterprise-security) · [ES 8.8 release notes](https://help.splunk.com/en/splunk-enterprise-security-8/release-notes-and-resources/8.8/splunk-enterprise-security-release-notes/release-notes-for-splunk-enterprise-security)
+
 ## Hands-on labs
 
 1. Intelligence requirements/provider scorecard and lifecycle with TTL/provenance.
@@ -165,9 +169,9 @@ This is not a complete list, and it is not meant to be consumed end to end. Choo
 
 | Resource | Access | Estimated time | Best use |
 |---|---|---:|---|
-| [Official certification page](https://www.splunk.com/en_us/training/certification-track/splunk-certified-cybersecurity-defense-architect.html) and [blueprint](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-cybersecurity-defense-architect.pdf) | Free | 60–90 min | Canonical public scope/status check |
+| [Official certification page](https://www.splunk.com/en_us/training/certification-track/splunk-certified-cybersecurity-defense-architect.html), [blueprint](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-cybersecurity-defense-architect.pdf), and [2026 course-track flowchart](https://www.splunk.com/en_us/pdfs/training/splunk-certified-cybersecurity-defense-architect-track-flowchart.pdf) | Free | 60–90 min | Blueprint is canonical; flowchart lists recommended courses, not eligibility prerequisites |
 | [Splunk Enterprise Security](https://help.splunk.com/en/splunk-enterprise-security), [SOAR](https://help.splunk.com/en/splunk-soar), and Enterprise docs | Free | 25–50 hr targeted | Relevant deployed release |
-| Nine blueprint-recommended architect courses plus Analyst/Engineer foundations | Paid/partner/employer access may apply | 35–75 hr estimate | Structured path; verify current duration/version |
+| [2026 architect course-track flowchart](https://www.splunk.com/en_us/pdfs/training/splunk-certified-cybersecurity-defense-architect-track-flowchart.pdf) | Access/cost vary by delivery and learner | Combined runtime not publicly stated | Optional courses that extend Analyst/Engineer preparation; check catalog for current availability |
 | [Splunk Threat Research](https://research.splunk.com/), [Splunk Lantern Security Use Cases](https://lantern.splunk.com/Security_Use_Cases), and [BOTS](https://bots.splunk.com/) | Free/public availability varies | 15–35 hr selected | Adapt and test rather than copy |
 | [NIST Cybersecurity Framework 2.0](https://www.nist.gov/cyberframework) and [NIST SP 800-61](https://csrc.nist.gov/pubs/sp/800/61/r3/final) | Free | 10–20 hr targeted | Primary guidance; not legal advice or a single implementation |
 | [MITRE ATT&CK](https://attack.mitre.org/), [D3FEND](https://d3fend.mitre.org/), and [CISA Secure by Design](https://www.cisa.gov/securebydesign) | Free | 12–30 hr targeted | Public references whose mappings require validation |

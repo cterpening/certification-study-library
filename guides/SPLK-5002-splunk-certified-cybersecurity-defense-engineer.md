@@ -6,14 +6,14 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-02
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-02
+upcoming_change_checked: 2026-10-28
 ---
 
 # SPLK-5002 Splunk Certified Cybersecurity Defense Engineer Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The source-validation baseline is September 2, 2026; the live certification page and complete two-page public blueprint were manually rechecked September 30. Selected Enterprise Security and SOAR documentation was reviewed for the version boundaries below. All twelve proposed product labs remain unexecuted; a worked worksheet is a paper prediction. This contains original defensive learning material, not exam items. Recheck the [certification page](https://www.splunk.com/en_us/training/certification-track/splunk-certified-cybersecurity-defense-engineer.html) and [official blueprint](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-cybersecurity-defense-engineer.pdf) before scheduling.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The source-validation baseline is October 28, 2026; the live certification page and complete two-page public blueprint were manually rechecked September 30. Selected Enterprise Security and SOAR documentation was reviewed for the version boundaries below. All twelve proposed product labs remain unexecuted; a worked worksheet is a paper prediction. This contains original defensive learning material, not exam items. Recheck the [certification page](https://www.splunk.com/en_us/training/certification-track/splunk-certified-cybersecurity-defense-engineer.html) and [official blueprint](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-cybersecurity-defense-engineer.pdf) before scheduling.
 
 **Current baseline:** Data Engineering 10%; Detection Engineering 40%; Security Processes/Programs 20%; Automation/Efficiency 20%; Audit/Reporting 10%.<br>
 **Exam contract:** professional; 60 questions; 75 total minutes including three minutes for the exam agreement.<br>
@@ -121,6 +121,10 @@ Inject schema drift, late events, duplicate forwarding, and enrichment outage. P
 
 Compare ES-native automation with a SOAR playbook for account disablement. Define authorization, dry-run, approval, idempotency, evidence preservation, API failures, rollback/compensation, audit, and kill switch before enabling any action.
 
+## Current product context — separate from exam objectives
+
+> **Related item:** Splunk Enterprise Security 8.7.2 was published as generally available October 23, 2026; 8.8.0 was in Controlled Availability on October 21. Availability and features vary by Essentials/Premier edition, Cloud/on-prem deployment, platform compatibility and enablement. ES 8.x upgrades are one-way; back up investigations before an approved upgrade. Treat 8.8 capabilities as controlled availability, not a universal baseline. [ES 8.7 release notes](https://help.splunk.com/en/splunk-enterprise-security-8/release-notes-and-resources/8.7/splunk-enterprise-security-release-notes/release-notes-for-splunk-enterprise-security) · [ES 8.8 release notes](https://help.splunk.com/en/splunk-enterprise-security-8/release-notes-and-resources/8.8/splunk-enterprise-security-release-notes/release-notes-for-splunk-enterprise-security)
+
 ## Hands-on labs
 
 **Execution status (September 30, 2026):** All twelve are proposed. No Splunk Enterprise, ES, SOAR, CIM validator, search job, case, playbook, dashboard or response action was run for this review. For each lab, keep the product versions and topology, synthetic input, exact search/configuration, expected and observed results, negative case, permissions, and rollback or cleanup evidence. Do not mark a paper prediction as platform output.
@@ -162,11 +166,11 @@ This is not a complete list, and it is not meant to be consumed end to end. Choo
 
 | Resource | Access | Estimated time | Best use |
 |---|---|---:|---|
-| [Official certification page](https://www.splunk.com/en_us/training/certification-track/splunk-certified-cybersecurity-defense-engineer.html) and [blueprint](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-cybersecurity-defense-engineer.pdf) | Free | 45–75 min | Canonical scope/recommendations |
+| [Official certification page](https://www.splunk.com/en_us/training/certification-track/splunk-certified-cybersecurity-defense-engineer.html), [blueprint](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-cybersecurity-defense-engineer.pdf), and [2026 course track](https://www.splunk.com/en_us/pdfs/training/splunk-certified-cybersecurity-defense-engineer-track.pdf) | Free | 45–75 min for exam materials; course runtime varies | Blueprint defines scope; the track is optional preparation, not an exam prerequisite |
 | [Splunk Enterprise Security docs](https://help.splunk.com/en/splunk-enterprise-security) | Free | 20–40 hr targeted | Deployed release and findings/notables terminology |
 | [Splunk SOAR docs](https://help.splunk.com/en/splunk-soar) | Free | 12–25 hr targeted | Cloud/on-prem release and paired-ES behavior |
 | [ES 8.5 detection guidance](https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.5/detections/create-event-based-detections-in-splunk-enterprise-security) and [ES/SOAR compatibility](https://help.splunk.com/en/splunk-enterprise-security-8/release-notes-and-resources/8.6/splunk-enterprise-security-release-notes/compatibility-and-regional-availability) | Free | 2–4 hr selected | Output-type contradiction and version/topology checks; compare with your release |
-| Seven blueprint-recommended official courses, plus Defense Analyst path foundations | Paid/partner/employer access may apply | 25–55 hr estimate | Structured path; verify current durations/releases |
+| [Seven recommended course titles in the 2026 track](https://www.splunk.com/en_us/pdfs/training/splunk-certified-cybersecurity-defense-engineer-track.pdf) | Course access and cost vary; some free self-paced, others paid | Total runtime not publicly stated | Optional preparation; check current course catalog, format and lab availability |
 | [Splunk Threat Research Team](https://research.splunk.com/) | Free | 8–20 hr selected | Adapt, test and govern detections; never copy blindly |
 | [Boss of the SOC](https://bots.splunk.com/) | Public availability varies | 12–30 hr selected | Defensive investigation practice, not exam content |
 | [MITRE ATT&CK](https://attack.mitre.org/) | Free | 8–20 hr targeted | Knowledge/coverage framework; not proof a detection works |

@@ -6,20 +6,20 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-02
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-02
+upcoming_change_checked: 2026-10-28
 ---
 
 # Palo Alto Networks Certified XSOAR Engineer Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live certification page, August 2025 datasheet, July 2025 certification handbook, and current public Cortex XSOAR documentation were checked September 2, 2026. This does not guarantee that every explanation is error-free or remains current. The [official page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-xsoar-engineer) and [datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/xsoar-engineer-datasheet.pdf) are authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live certification page, August 2025 datasheet, July 2025 certification handbook, and current public Cortex XSOAR documentation were checked October 28, 2026. This does not guarantee that every explanation is error-free or remains current. The [official page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-xsoar-engineer) and [datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/xsoar-engineer-datasheet.pdf) are authoritative.
 
 **Current baseline:** planning/installation/maintenance 14%; use-case planning/development 22%; playbook development 30%; incident interactions/reporting 16%; threat intelligence management 18%; August 2025 datasheet<br>
 **Exam contract:** specialist-level English Pearson VUE certification. The current handbook uses an 860 passing score on a 300–1000 scaled range and provisional results. The datasheet does not publish item count, base duration, price, or formal experience duration; verify registration.<br>
 **Experience boundary:** the official prerequisite list expects security-operations/incident-response knowledge; SIEM, EDR, TIP, ticketing and email-security familiarity; REST and integration knowledge; Python plus some JavaScript/PowerShell; parsing/extraction and JSON transformations; automation/orchestration; and MITRE ATT&CK/threat-intelligence relationships. This is an engineering credential, not a no-code overview.<br>
 **Validity and renewal:** two years under the July 2025 handbook, subject to current pathway rules.<br>
-**Upcoming change:** no retirement or dated replacement was found September 2, 2026. XSOAR cloud/on-premises deployment behavior, engines, Marketplace packs, content dependencies, integrations, scripts, context conventions, TIM feeds, and UI are volatile; follow current docs for the deployed version/model.<br>
+**Upcoming change:** no retirement or dated replacement was found October 28, 2026. XSOAR cloud/on-premises deployment behavior, engines, Marketplace packs, content dependencies, integrations, scripts, context conventions, TIM feeds, and UI are volatile; follow current docs for the deployed version/model.<br>
 **Integrity:** actual exam content is confidential. This guide follows the public blueprint and uses original questions, synthetic incidents/indicators, non-destructive commands, and authorized labs only.
 
 ## How to use this guide
@@ -281,6 +281,10 @@ Build endpoint containment sub-playbook with typed entity/reason/duration, valid
 
 A high-volume feed publishes stale shared-cloud IPs. Stop automated enforcement, preserve data, trace source/reliability/duplicate lineage, expire or narrowly exclude validated items, test neighboring malicious cases, correct scoring/TTL and share revocations where authorized.
 
+## Current product context — separate from exam objectives
+
+> **Related item:** Check the deployment model before using version-specific instructions. The vendor maintains separate Cortex XSOAR SaaS and on-prem documentation/release streams. Its SaaS release index lists 8.15 as a July 2026 general availability release, following 8.14 in May; listed highlights include Azure Blob Storage export for incident data and continuous Strata Logging Service authentication. Do not mix cloud and on-prem procedures or assume content-pack compatibility across them. Verify the actual deployment version, availability, tenant conditions, and supported content before a change. [Cortex XSOAR 8 SaaS releases](https://cortex-docs.paloaltonetworks.com/cortex-xsoar-8-saas-releases/cortex-xsoar-8-saas-releases.md) · [Cortex XSOAR documentation](https://cortex-docs.paloaltonetworks.com/cortex-xsoar-docs/)
+
 ## Hands-on labs
 
 1. **Platform plan:** design auth/roles, engines, dev/prod, packs, instances, maintenance and recovery for a fictional SOC; include exact network/secret/owner/test contracts.
@@ -404,8 +408,8 @@ This is a selective starting set, not a complete list and not a prescription to 
 
 - [Official certification page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-xsoar-engineer) and [August 2025 datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/xsoar-engineer-datasheet.pdf) — **45–75 minutes** to annotate; public; canonical scope. The page also links a short official video overview.
 - [Palo Alto Networks Certification Handbook](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf) — **30–45 minutes**; public; verify delivery, score, retakes, validity/renewal, accommodation and rules.
-- [Official Palo Alto Networks digital learning](https://learn.paloaltonetworks.com/learn) — locate the **XSOAR Engineer** learning path; **estimate 25–45 hours** depending on coding/automation experience; login may be required and the public certification link currently resolves to the learning portal rather than a stable deep link.
-- Official instructor-led **Cortex XSOAR: Engineering Security Automation Solutions** — **estimate 4–5 training days plus labs**; commercial/authorized training; explicitly recommended on the certification page, but schedules/duration vary.
+- [Official Palo Alto Networks digital learning](https://learn.paloaltonetworks.com/learn) — locate the **XSOAR Engineer** learning path; free self-paced path; Learning Center sign-in may be required. The public portal does not state total runtime or expose the module list; confirm after sign-in.
+- Official instructor-led **Cortex XSOAR: Engineering Security Automation Solutions** — **4 days** per the official course page; instructor-led with hands-on labs, commercial/authorized-partner delivery. Confirm current schedule and regional access.
 - [Cortex XSOAR documentation](https://docs.paloaltonetworks.com/cortex/cortex-xsoar) — **40–70 hours targeted reading and lab work**; public main documentation, with deployed-version/tenant details possibly gated; canonical product source.
 - [Cortex XSOAR content repository](https://github.com/demisto/content) — **10–25 hours targeted code/content review**; public; licenses can differ by file/package, so follow repository licensing; use patterns as learning examples and validate against current supported content/runtime.
 - [MITRE ATT&CK](https://attack.mitre.org/), [STIX 2.1](https://docs.oasis-open.org/cti/stix/v2.1/stix-v2.1.html), [TAXII 2.1](https://docs.oasis-open.org/cti/taxii/v2.1/taxii-v2.1.html), and [FIRST TLP 2.0](https://www.first.org/tlp/) — **10–18 hours selected**; public; threat/relationship/sharing foundations, not attribution proof.
@@ -413,5 +417,5 @@ This is a selective starting set, not a complete list and not a prescription to 
 - [OWASP API Security Top 10](https://owasp.org/API-Security/) and [NIST SP 800-61 Rev. 3](https://csrc.nist.gov/pubs/sp/800/61/r3/final) — **6–10 hours selected**; public; secure integration/incident-response context.
 - [Palo Alto Networks LIVEcommunity](https://live.paloaltonetworks.com/) and [official YouTube channel](https://www.youtube.com/@PaloAltoNetworks) — **5–12 hours selected XSOAR demos/troubleshooting**; public; corroborate community/older videos with current docs.
 - Authorized XSOAR dev/prod tenant, partner lab or evaluation — **50–90 hours**; tenant/partner access required; use synthetic data and non-production integrations. Highest-value practice for the 30% playbook domain.
-- Adjacent O’Reilly, Pluralsight, Udemy or other SOAR/Python/API/threat-intelligence courses — **12–35 hours selected**; subscription/purchase may apply; no current course specifically aligned to this credential was verified September 2, 2026. Map to blueprint/current docs.
+- Adjacent O’Reilly, Pluralsight, Udemy or other SOAR/Python/API/threat-intelligence courses — **12–35 hours selected**; subscription/purchase may apply; no current course specifically aligned to this credential was verified October 28, 2026. Map to blueprint/current docs.
 - Practice questions, if used — **2–4 hours per timed set plus review**; no current official, MeasureUp or Whizlabs credential-specific practice product was verified. Use authorized, explanation-rich items; avoid dumps and do not treat a single score as readiness.

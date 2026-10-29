@@ -6,14 +6,14 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-04
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-04
+upcoming_change_checked: 2026-10-28
 ---
 
 # C1000-156 IBM Security QRadar SIEM V7.5 Administrator Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide maps the live IBM exam contract checked September 4, 2026. It is unofficial and may contain errors. The [official C1000-156 exam record](https://www.ibm.com/training/credentials/getExam/C1000-156) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide maps the live IBM exam contract checked October 28, 2026. It is unofficial and may contain errors. The [official C1000-156 exam record](https://www.ibm.com/training/credentials/getExam/C1000-156) is authoritative.
 
 **Assessment contract:** 62 questions; 38 required to pass; 90 minutes.<br>
 **Current status:** Live; no replacement or withdrawal notice appeared in the official record when checked.<br>
@@ -88,6 +88,10 @@ For apps, inspect deployment state, App Host/resources, logs, permissions, depen
 2. **Tenant leakage concern:** Trace source-to-domain mapping, profiles/roles, searches/reports/apps, correct scope, and retest with both tenant identities.
 3. **Slow investigations:** Baseline searches, indexes, rule load, data distribution, apps, and user patterns; change one factor and compare end-to-end effects.
 
+## Current product context — separate from exam objectives
+
+> **Related item:** IBM changed the QRadar Auto Update server endpoints in July 2026. An IP-based firewall allowlist can interrupt updates after migration; check IBM’s current required endpoints and the appliance’s connectivity before changing an allowlist. IBM’s public update indexes disagree on the latest 7.5 update level, so this guide does not name a current “latest” fix pack. Follow release notes for the installed version and validate upgrade compatibility before operations. [IBM Auto Update migration notice](https://www.ibm.com/support/pages/node/7278729) · [QRadar Software 101](https://www.ibm.com/community/101/qradar/software/) · [QRadar 101](https://www.ibm.com/community/101/qradar/)
+
 ## Hands-on labs
 
 1. Draw a distributed deployment and produce a backup/restore runbook with validation points.
@@ -121,6 +125,7 @@ This is a selective learning path, not a complete list of QRadar administration 
 
 | Resource | Access | Estimated time |
 |---|---|---:|
-| [Official C1000-156 exam record](https://www.ibm.com/training/credentials/getExam/C1000-156) | Public | **25 minutes** for contract and objectives |
+| [C1000-156 exam record](https://www.ibm.com/training/credentials/getExam/C1000-156) and [IBM Certified Administrator credential page](https://www.ibm.com/training/certification/ibm-certified-administrator-security-qradar-siem-v75-C9004600) | Public | **25 minutes** for contract and objectives; English exam, replacement credential N/A |
+| [QRadar SIEM V7.5 Administration – Exam C1000-156 Preparation Guide (SLA6910)](https://www.ibm.com/training/course/qradar-siem-v75-administration-exam-c1000-156-preparation-guide-SLA6910) | Free Express Learning; IBM/Security Learning Academy sign-in; catalog says “Retiring soon” | **1.5 hours stated**; verify course remains launchable |
 | [IBM QRadar SIEM 7.5 documentation](https://www.ibm.com/docs/en/qsip/7.5) | Public; automation may be blocked | **24–36 hours** for selected administration procedures |
 | Eight labs in this guide | Authorized QRadar lab | **24–36 hours** plus one timed review |

@@ -4323,11 +4323,11 @@ This is not a complete list, and it is not meant to be consumed end to end. Choo
 
 | Resource | Access | Estimated time | Best use |
 |---|---|---:|---|
-| [Official certification page](https://www.splunk.com/en_us/training/certification-track/splunk-certified-cybersecurity-defense-engineer.html) and [blueprint](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-cybersecurity-defense-engineer.pdf) | Free | 45–75 min | Canonical scope/recommendations |
+| [Official certification page](https://www.splunk.com/en_us/training/certification-track/splunk-certified-cybersecurity-defense-engineer.html), [blueprint](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-cybersecurity-defense-engineer.pdf), and [2026 course track](https://www.splunk.com/en_us/pdfs/training/splunk-certified-cybersecurity-defense-engineer-track.pdf) | Free | 45–75 min for exam materials; course runtime varies | Blueprint defines scope; the track is optional preparation, not an exam prerequisite |
 | [Splunk Enterprise Security docs](https://help.splunk.com/en/splunk-enterprise-security) | Free | 20–40 hr targeted | Deployed release and findings/notables terminology |
 | [Splunk SOAR docs](https://help.splunk.com/en/splunk-soar) | Free | 12–25 hr targeted | Cloud/on-prem release and paired-ES behavior |
 | [ES 8.5 detection guidance](https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.5/detections/create-event-based-detections-in-splunk-enterprise-security) and [ES/SOAR compatibility](https://help.splunk.com/en/splunk-enterprise-security-8/release-notes-and-resources/8.6/splunk-enterprise-security-release-notes/compatibility-and-regional-availability) | Free | 2–4 hr selected | Output-type contradiction and version/topology checks; compare with your release |
-| Seven blueprint-recommended official courses, plus Defense Analyst path foundations | Paid/partner/employer access may apply | 25–55 hr estimate | Structured path; verify current durations/releases |
+| [Seven recommended course titles in the 2026 track](https://www.splunk.com/en_us/pdfs/training/splunk-certified-cybersecurity-defense-engineer-track.pdf) | Course access and cost vary; some free self-paced, others paid | Total runtime not publicly stated | Optional preparation; check current course catalog, format and lab availability |
 | [Splunk Threat Research Team](https://research.splunk.com/) | Free | 8–20 hr selected | Adapt, test and govern detections; never copy blindly |
 | [Boss of the SOC](https://bots.splunk.com/) | Public availability varies | 12–30 hr selected | Defensive investigation practice, not exam content |
 | [MITRE ATT&CK](https://attack.mitre.org/) | Free | 8–20 hr targeted | Knowledge/coverage framework; not proof a detection works |
@@ -4975,6 +4975,162 @@ This is not a complete list, and it is not meant to be consumed in full. Start w
 | [O'Reilly Practical Security Automation and Testing](https://www.oreilly.com/library/view/practical-security-automation/9781098143160/) | Paid; vendor-neutral | 10–18 hours selected chapters/labs | Safe automation, APIs, testing, secrets, repeatability |
 
 No current official practice exam, MeasureUp product, or Whizlabs product explicitly aligned to this exact XSIAM Analyst blueprint was verified. Prefer the official course/path and original tenant/synthetic-data labs over unsourced question banks.
+
+### C1000-156 — IBM Certified Administrator - Security QRadar SIEM V7.5
+
+Resource details from the [C1000-156 guide](../guides/C1000-156-ibm-security-qradar-siem-administrator.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective learning path, not a complete list of QRadar administration resources.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [C1000-156 exam record](https://www.ibm.com/training/credentials/getExam/C1000-156) and [IBM Certified Administrator credential page](https://www.ibm.com/training/certification/ibm-certified-administrator-security-qradar-siem-v75-C9004600) | Public | **25 minutes** for contract and objectives; English exam, replacement credential N/A |
+| [QRadar SIEM V7.5 Administration – Exam C1000-156 Preparation Guide (SLA6910)](https://www.ibm.com/training/course/qradar-siem-v75-administration-exam-c1000-156-preparation-guide-SLA6910) | Free Express Learning; IBM/Security Learning Academy sign-in; catalog says “Retiring soon” | **1.5 hours stated**; verify course remains launchable |
+| [IBM QRadar SIEM 7.5 documentation](https://www.ibm.com/docs/en/qsip/7.5) | Public; automation may be blocked | **24–36 hours** for selected administration procedures |
+| Eight labs in this guide | Authorized QRadar lab | **24–36 hours** plus one timed review |
+
+### PANW-XSIAM-ENGINEER — Palo Alto Networks Certified XSIAM Engineer
+
+Resource details from the [PANW-XSIAM-ENGINEER guide](../guides/PANW-XSIAM-ENGINEER-palo-alto-networks-xsiam-engineer.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective starting set, not a complete list and not a prescription to consume everything. Pick and choose the official documentation, structured training, videos, data-engineering references, and labs that close your gaps. Times are planning estimates unless the provider states a duration; access, entitlements, versions and prices can change.
+
+- [Official certification page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-xsiam-engineer) and [August 2025 datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/xsiam-engineer-datasheet.pdf) — **45–75 minutes** to annotate; public; canonical scope.
+- [Palo Alto Networks Certification Handbook](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf) — **30–45 minutes**; public; verify delivery, score, retakes, validity/renewal, accommodation and program rules.
+- [Official Palo Alto Networks digital learning](https://learn.paloaltonetworks.com/learn) — locate the **XSIAM Engineer** learning path; free self-paced path; Learning Center sign-in may be required. The public portal does not state total runtime or expose the module list; confirm after sign-in.
+- Official instructor-led **Cortex XSIAM: Security Operations, Integration, and Automation** — **3 days** per the official course page; instructor-led with labs, commercial/authorized training; explicitly recommended on the certification page. Confirm current partner schedule and delivery.
+- [Cortex XSIAM documentation](https://cortex-docs.paloaltonetworks.com/) — **35–60 hours targeted reading and lab replication**; public main documentation, though tenant access may expose more contextual help; canonical product source.
+- [Cortex XDR documentation](https://docs-cortex.paloaltonetworks.com/r/Cortex-XDR/Cortex-XDR-5.x-Documentation/Detailed-View) and [Cortex XSOAR documentation](https://docs.paloaltonetworks.com/cortex/cortex-xsoar) — **15–30 hours selected**; public; useful for shared agent, XQL, data, incident, integration, Marketplace and playbook concepts; verify XSIAM-specific behavior.
+- [MITRE ATT&CK](https://attack.mitre.org/), [OASIS STIX 2.1](https://docs.oasis-open.org/cti/stix/v2.1/stix-v2.1.html), and [TAXII 2.1](https://docs.oasis-open.org/cti/taxii/v2.1/taxii-v2.1.html) — **8–15 hours targeted**; public; behavior/intelligence vocabulary and interchange, not attribution proof.
+- [JSON specification](https://www.rfc-editor.org/rfc/rfc8259), [XML specification](https://www.w3.org/TR/xml/), and [CEF implementation resources from source vendors](https://www.microfocus.com/documentation/arcsight/arcsight-smartconnectors-8.4/cef-implementation-standard/) — **6–12 hours selected plus parser fixtures**; public/vendor docs; avoid memorizing one product's informal examples.
+- [NIST SP 800-61 Rev. 3](https://csrc.nist.gov/pubs/sp/800/61/r3/final) and [NIST SP 800-92](https://csrc.nist.gov/pubs/sp/800/92/final) — **6–10 hours selected**; public; incident-response and log-management grounding; product workflows remain authoritative for UI behavior.
+- [Palo Alto Networks LIVEcommunity](https://live.paloaltonetworks.com/) and [official YouTube channel](https://www.youtube.com/@PaloAltoNetworks) — **5–12 hours selected XSIAM/data/automation sessions**; public; corroborate community/older videos with current docs.
+- Authorized XSIAM tenant, partner lab, or evaluation — **40–80 hours**; tenant/partner access required; use synthetic feeds/endpoints and non-disruptive integrations. Highest-value preparation for engineering depth.
+- Adjacent O’Reilly, Pluralsight, Udemy, or other SIEM/SOAR/detection-engineering/data-pipeline courses — **12–35 hours selected**; subscription/purchase may apply; no current course aligned to this exact credential was verified October 28, 2026. Map content to the blueprint and current docs.
+- Practice questions, if used — **2–4 hours per timed set plus review**; no current official, MeasureUp, or Whizlabs credential-specific practice product was verified. Use authorized, explanation-rich questions only; avoid dumps and do not treat one score as readiness.
+
+### PANW-XSOAR-ENGINEER — Palo Alto Networks Certified XSOAR Engineer
+
+Resource details from the [PANW-XSOAR-ENGINEER guide](../guides/PANW-XSOAR-ENGINEER-palo-alto-networks-xsoar-engineer.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective starting set, not a complete list and not a prescription to consume everything. Pick and choose official documentation, structured training, secure-development references and labs that close your gaps. Times are planning estimates unless a provider publishes duration; access, model/version, packs and prices can change.
+
+- [Official certification page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-xsoar-engineer) and [August 2025 datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/xsoar-engineer-datasheet.pdf) — **45–75 minutes** to annotate; public; canonical scope. The page also links a short official video overview.
+- [Palo Alto Networks Certification Handbook](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf) — **30–45 minutes**; public; verify delivery, score, retakes, validity/renewal, accommodation and rules.
+- [Official Palo Alto Networks digital learning](https://learn.paloaltonetworks.com/learn) — locate the **XSOAR Engineer** learning path; free self-paced path; Learning Center sign-in may be required. The public portal does not state total runtime or expose the module list; confirm after sign-in.
+- Official instructor-led **Cortex XSOAR: Engineering Security Automation Solutions** — **4 days** per the official course page; instructor-led with hands-on labs, commercial/authorized-partner delivery. Confirm current schedule and regional access.
+- [Cortex XSOAR documentation](https://docs.paloaltonetworks.com/cortex/cortex-xsoar) — **40–70 hours targeted reading and lab work**; public main documentation, with deployed-version/tenant details possibly gated; canonical product source.
+- [Cortex XSOAR content repository](https://github.com/demisto/content) — **10–25 hours targeted code/content review**; public; licenses can differ by file/package, so follow repository licensing; use patterns as learning examples and validate against current supported content/runtime.
+- [MITRE ATT&CK](https://attack.mitre.org/), [STIX 2.1](https://docs.oasis-open.org/cti/stix/v2.1/stix-v2.1.html), [TAXII 2.1](https://docs.oasis-open.org/cti/taxii/v2.1/taxii-v2.1.html), and [FIRST TLP 2.0](https://www.first.org/tlp/) — **10–18 hours selected**; public; threat/relationship/sharing foundations, not attribution proof.
+- [Python documentation](https://docs.python.org/3/), [JavaScript MDN Guide](https://developer.mozilla.org/docs/Web/JavaScript/Guide), and [PowerShell documentation](https://learn.microsoft.com/powershell/) — **15–35 hours selected practice**; public; prioritize data types, JSON, HTTP, errors, testing, input validation and secrets.
+- [OWASP API Security Top 10](https://owasp.org/API-Security/) and [NIST SP 800-61 Rev. 3](https://csrc.nist.gov/pubs/sp/800/61/r3/final) — **6–10 hours selected**; public; secure integration/incident-response context.
+- [Palo Alto Networks LIVEcommunity](https://live.paloaltonetworks.com/) and [official YouTube channel](https://www.youtube.com/@PaloAltoNetworks) — **5–12 hours selected XSOAR demos/troubleshooting**; public; corroborate community/older videos with current docs.
+- Authorized XSOAR dev/prod tenant, partner lab or evaluation — **50–90 hours**; tenant/partner access required; use synthetic data and non-production integrations. Highest-value practice for the 30% playbook domain.
+- Adjacent O’Reilly, Pluralsight, Udemy or other SOAR/Python/API/threat-intelligence courses — **12–35 hours selected**; subscription/purchase may apply; no current course specifically aligned to this credential was verified October 28, 2026. Map to blueprint/current docs.
+- Practice questions, if used — **2–4 hours per timed set plus review**; no current official, MeasureUp or Whizlabs credential-specific practice product was verified. Use authorized, explanation-rich items; avoid dumps and do not treat a single score as readiness.
+
+### SPLK-5003 — Splunk Certified Cybersecurity Defense Architect
+
+Resource details from the [SPLK-5003 guide](../guides/SPLK-5003-splunk-certified-cybersecurity-defense-architect.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list, and it is not meant to be consumed end to end. Choose resources for measured gaps. Times are planning estimates; access, law/framework versions, product releases, and availability change.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [Official certification page](https://www.splunk.com/en_us/training/certification-track/splunk-certified-cybersecurity-defense-architect.html), [blueprint](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-cybersecurity-defense-architect.pdf), and [2026 course-track flowchart](https://www.splunk.com/en_us/pdfs/training/splunk-certified-cybersecurity-defense-architect-track-flowchart.pdf) | Free | 60–90 min | Blueprint is canonical; flowchart lists recommended courses, not eligibility prerequisites |
+| [Splunk Enterprise Security](https://help.splunk.com/en/splunk-enterprise-security), [SOAR](https://help.splunk.com/en/splunk-soar), and Enterprise docs | Free | 25–50 hr targeted | Relevant deployed release |
+| [2026 architect course-track flowchart](https://www.splunk.com/en_us/pdfs/training/splunk-certified-cybersecurity-defense-architect-track-flowchart.pdf) | Access/cost vary by delivery and learner | Combined runtime not publicly stated | Optional courses that extend Analyst/Engineer preparation; check catalog for current availability |
+| [Splunk Threat Research](https://research.splunk.com/), [Splunk Lantern Security Use Cases](https://lantern.splunk.com/Security_Use_Cases), and [BOTS](https://bots.splunk.com/) | Free/public availability varies | 15–35 hr selected | Adapt and test rather than copy |
+| [NIST Cybersecurity Framework 2.0](https://www.nist.gov/cyberframework) and [NIST SP 800-61](https://csrc.nist.gov/pubs/sp/800/61/r3/final) | Free | 10–20 hr targeted | Primary guidance; not legal advice or a single implementation |
+| [MITRE ATT&CK](https://attack.mitre.org/), [D3FEND](https://d3fend.mitre.org/), and [CISA Secure by Design](https://www.cisa.gov/securebydesign) | Free | 12–30 hr targeted | Public references whose mappings require validation |
+| [OpenSSF](https://openssf.org/) and [NTIA SBOM resources](https://www.ntia.gov/page/software-bill-materials) | Free | 8–16 hr targeted | Current formats/tooling and provenance checks |
+| Architecture portfolio/tabletop/pipeline lab | Safe lab plus qualified reviewers | 50–100 hr | Synthetic data, safe actions and governance review |
+
+### SPLUNK-CLOUD-ADMIN — Splunk Cloud Certified Admin
+
+Resource details from the [SPLUNK-CLOUD-ADMIN guide](../guides/SPLUNK-CLOUD-ADMIN-splunk-cloud-certified-admin.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list, and it is not meant to be consumed in full. Pick the official administration course or a documentation-led lab as the primary path. Cloud service behavior changes; verify every third-party explanation against the current service description, Admin/ACS manuals, and your tenant.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [Official Cloud Admin blueprint](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-cloud-admin.pdf) | Free canonical scope | 1–2 hr mapping/final review | Domains, prerequisite, contract |
+| [Official Cloud Admin page](https://www.splunk.com/en_us/training/certification-track/splunk-cloud-certified-admin.html) | Free | 20–40 min before booking | Status, delivery, price, prerequisite |
+| [Splunk Cloud Administration course description](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-cloud-administration-course-description.pdf) | Paid instructor-led; current schedule/pricing varies | 18 hours stated in the course description; labs/study extra | Net-new Cloud Admin path; do not combine with Transitioning to Splunk Cloud |
+| [Transitioning to Splunk Cloud course description](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/transitioning-to-splunk-cloud-course-description.pdf) | Paid instructor-led; current schedule/pricing varies | Check current catalog for duration | For experienced Enterprise admins; overlaps the Cloud Administration course, so choose the path that fits your background |
+| [Current Splunk Cloud service details](https://help.splunk.com/en/splunk-cloud-platform/get-started/service-terms-and-policies/10.5.2605/information-about-the-service/splunk-cloud-platform-service-details) | Free authoritative service boundary | 4–8 hr selected full review | Customer/Splunk responsibility and constraints |
+| [Splunk Cloud administration hub](https://help.splunk.com/en/splunk-cloud-platform/administer) | Free | 15–25 hr selected Admin/identity/index/monitoring topics | Current tenant administration |
+| [Admin Config Service manual](https://help.splunk.com/en/splunk-cloud-platform/administer/admin-config-service-manual/9.3.2411/welcome-to-the-admin-config-service-acs/about-the-admin-config-service-acs-api) | Free; compatibility/role requirements apply | 4–8 hr plus safe CLI/API lab | Self-service operations versus Support |
+| [Splunk Cloud data-ingestion docs](https://help.splunk.com/en/splunk-cloud-platform/get-data-in) | Free | 15–25 hr selected inputs/parsing topics plus lab | Exact ingestion mechanics |
+| [Splunk How-To YouTube](https://www.youtube.com/@SplunkHowTo) | Free official videos | 4–8 hr selected admin/ingest videos plus recreation | Visual supplement, version-check required |
+| [Splunk Lantern](https://lantern.splunk.com/) | Free use cases | 6–12 hr selected Cloud onboarding/troubleshooting articles | Operational patterns |
+| [O'Reilly Splunk Cloud search](https://www.oreilly.com/search/?q=Splunk%20Cloud) | Subscription; version age varies | Select 8–15 hr after publication/version review | Alternate background, never service authority |
+| [Udemy Splunk Cloud Admin search](https://www.udemy.com/courses/search/?q=Splunk%20Cloud%20Admin) | Paid marketplace; catalog/version vary | Select 8–15 hr only after blueprint/lab/provenance check | Optional alternate course |
+
+No exact current MeasureUp, Whizlabs, or Pluralsight Cloud Admin practice product was verified. Reject recalled/live/guaranteed-pass questions and any course that treats customer access to the managed service as identical to self-managed Enterprise.
+
+### SPLUNK-CORE-CONSULTANT — Splunk Core Certified Consultant
+
+Resource details from the [SPLUNK-CORE-CONSULTANT guide](../guides/SPLUNK-CORE-CONSULTANT-splunk-core-certified-consultant.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list, and it is not meant to be consumed end to end. Choose resources for measured gaps. Times are planning estimates; access, price, version, and schedules change.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [Official certification page](https://www.splunk.com/en_us/training/certification-track/splunk-core-certified-consultant.html) and [blueprint](https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-consultant.pdf) | Free | 60–90 min | Canonical scope/prerequisites |
+| [Splunk Enterprise docs](https://help.splunk.com/en/splunk-enterprise) | Free | 35–70 hr targeted | Deployed release and clustering/admin/search manuals |
+| [Core Consultant track flowchart](https://www.splunk.com/en_us/pdfs/training/splunk-core-certified-consultant-track.pdf) and [Core Consultant Labs description](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/core-consultant-labs-course-description.pdf) | Required; paid and access restricted to eligible Enterprise Architects | Combined time not publicly stated; Labs course includes six timed self-paced labs | Required eligibility training; the track defines the exact alternate credential route and authorization |
+| [Splunk Validated Architectures](https://help.splunk.com/en/splunk-enterprise/get-started/splunk-validated-architectures/introduction-to-splunk-validated-architectures/about-splunk-validated-architectures) | Free | 5–10 hr | Verify edition and applicability |
+| [Splunk How-To YouTube channel](https://www.youtube.com/@SplunkHowTo) | Free | 6–15 hr selected | Supplement; verify age/version |
+| Multi-node disposable implementation portfolio | Infrastructure/software terms vary | 60–120 hr | Synthetic data and repeatable rebuilds |
+| [Splunk Community](https://community.splunk.com/) | Free | 5–12 hr targeted | Corroborate with official docs |
+
+### SPLUNK-ENTERPRISE-ADMIN — Splunk Enterprise Certified Admin
+
+Resource details from the [SPLUNK-ENTERPRISE-ADMIN guide](../guides/SPLUNK-ENTERPRISE-ADMIN-splunk-enterprise-certified-admin.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list, and it is not meant to be consumed end to end. Pick the documentation, structured instruction, video, and practice format that addresses your measured gaps. Times are planning estimates, not promises; access, price, release coverage, and availability can change.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [Official certification page](https://www.splunk.com/en_us/training/certification-track/splunk-enterprise-certified-admin.html) and [test blueprint](https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-enterprise-admin.pdf) | Free | 45–75 min | Canonical scope/prerequisite; recheck before scheduling |
+| [Splunk Enterprise documentation](https://help.splunk.com/en/splunk-enterprise) | Free | 18–35 hr targeted | Select the version matching the lab/deployment |
+| [Splunk Enterprise System Administration](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-enterprise-system-administration-course-description.pdf) and [Splunk Enterprise Data Administration](https://www.splunk.com/en_us/pdfs/training/splunk-enterprise-data-administration-course-description.pdf) course descriptions | Paid/partner/employer access may apply | 12 and 18 hours respectively (30 contact hours total); labs/study extra | Blueprint-recommended preparation, not an exam prerequisite; confirm current schedule and version |
+| [Splunk How-To YouTube channel](https://www.youtube.com/@SplunkHowTo) | Free | 4–10 hr selected | Supplement rather than blueprint replacement; verify UI/version age |
+| [Splunk Community](https://community.splunk.com/) | Free | 3–8 hr targeted | Troubleshooting perspectives; validate answers against current official docs |
+| Disposable local or approved sandbox lab | Software/infrastructure terms vary | 25–50 hr | Use synthetic data and snapshot before destructive changes |
+| Pearson VUE/Splunk scheduling and policy pages reached from the certification page | Public policy pages | 20–40 min | Current price, delivery, identification, retake, and renewal details |
+
+### SPLUNK-ENTERPRISE-ARCHITECT — Splunk Enterprise Certified Architect
+
+Resource details from the [SPLUNK-ENTERPRISE-ARCHITECT guide](../guides/SPLUNK-ENTERPRISE-ARCHITECT-splunk-enterprise-certified-architect.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list, and it is not meant to be consumed end to end. Pick resources for measured gaps. Times are planning estimates; access, price, version, and schedules change.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [Official certification page](https://www.splunk.com/en_us/training/certification-track/splunk-enterprise-certified-architect.html) and [blueprint](https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-architect.pdf) | Free | 60–90 min | Canonical prerequisites/scope; recheck before scheduling |
+| [Splunk Enterprise documentation](https://help.splunk.com/en/splunk-enterprise) | Free | 30–60 hr targeted | Deployed release and clustering/admin manuals |
+| [Official Enterprise Architect track flowchart](https://www.splunk.com/en_us/pdfs/training/splunk-enterprise-certified-architect-track.pdf); [Architecting course description](https://www.splunk.com/en_us/pdfs/training/architecting-splunk-enterprise-deployments-course-description.pdf); [Deployment Practical Lab description](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/deployment-practical-lab-course-description.pdf) | Required; paid/partner/employer access | Published duration: Architecting 9 hours; Deployment Practical Lab 24 hours; other required courses vary | Eligibility training; complete every required item and verify authorization; do not infer a total duration from two items |
+| [Splunk Validated Architectures](https://help.splunk.com/en/splunk-enterprise/get-started/splunk-validated-architectures/introduction-to-splunk-validated-architectures/about-splunk-validated-architectures) | Free | 4–8 hr selected | Validate currency and applicability; not a sizing substitute |
+| [Splunk How-To YouTube channel](https://www.youtube.com/@SplunkHowTo) | Free | 5–12 hr selected | Supplement; verify version/UI age |
+| Disposable multi-node lab and failure journal | Infrastructure/software terms vary | 45–90 hr | Synthetic data and automated rebuilds |
+| [Splunk Community](https://community.splunk.com/) | Free | 4–10 hr targeted | Corroborate answers with current official docs |
+
+### SPLUNK-O11Y-METRICS-USER — Splunk O11y Cloud Certified Metrics User
+
+Resource details from the [SPLUNK-O11Y-METRICS-USER guide](../guides/SPLUNK-O11Y-METRICS-USER-splunk-o11y-cloud-certified-metrics-user.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list, and it is not meant to be consumed end to end. Choose resources for measured gaps. Times are planning estimates; access, price, tenant features, and availability change.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [Official certification page](https://www.splunk.com/en_us/training/certification-track/splunk-o11y-cloud-certified-metrics-user.html) and [blueprint](https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-o11y-cloud-metrics-user.pdf) | Free | 45–75 min | Canonical scope |
+| [Splunk Observability Cloud docs](https://help.splunk.com/en/splunk-observability-cloud) | Free | 15–30 hr targeted | Current product behavior; tenant entitlements vary |
+| [OpenTelemetry Collector docs](https://opentelemetry.io/docs/collector/) | Free/open source | 5–10 hr targeted | Collector concepts; use Splunk docs for supported packaging/export |
+| [Official Metrics User track flowchart](https://www.splunk.com/en_us/pdfs/training/splunk-o11y-cloud-certified-metrics-user-track.pdf) | Free self-paced and selected paid options; account/access may vary | Combined runtime not stated; individual paths vary | Recommended learning sequence, not an exam prerequisite; check current catalog |
+| [Fundamentals of Metrics Monitoring](https://www.splunk.com/en_us/pdfs/training/fundamentals-of-metrics-monitoring-course-description.pdf) and [Visualizing and Alerting](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/visualizing-and-alerting-in-splunk-im-course-description.pdf) | Paid instructor-led/blended training; check current delivery | 6 hours; 4.5-hour instructor-led portion respectively | Optional metric/MTS and dashboard/detector practice; neither covers the whole blueprint |
+| Sandbox tenant plus synthetic Linux/Kubernetes metrics portfolio | Trial/employer/partner access may be needed | 20–40 hr | Applied evidence; never use production secrets/data |
 
 ## AWS
 

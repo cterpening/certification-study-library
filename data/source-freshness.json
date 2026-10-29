@@ -55510,5 +55510,564 @@
       "blocked_findings": 0
     }
   }
+,
+  {
+    "id": "freshness-2026-10-28-nonms-g05",
+    "title": "Palo Alto, Splunk and IBM non-Microsoft refresh group 05",
+    "rubric_version": 1,
+    "created_on": "2026-10-28",
+    "completed_on": "2026-10-28",
+    "status": "completed",
+    "scan_mode": "read-only",
+    "selection_method": "Fifth group of ten from the frozen 167-guide eligible non-Microsoft queue after Groups 1–4; next entries ordered by source-validation date, vendor ID and exam code.",
+    "rubric_path": "docs/SOURCE-FRESHNESS.md",
+    "auditor": {
+      "kind": "ai-agent",
+      "labels": [
+        "panw-exam-research",
+        "splunk-exam-research",
+        "ibm-exam-research",
+        "panw-splunk-ibm-technical-research",
+        "panw-splunk-ibm-learning-resources",
+        "refresh-coordinator"
+      ],
+      "independence": "mixed",
+      "human_review": false
+    },
+    "exam_codes": [
+      "PANW-XSIAM-ENGINEER",
+      "PANW-XSOAR-ENGINEER",
+      "SPLK-5002",
+      "SPLK-5003",
+      "SPLUNK-CLOUD-ADMIN",
+      "SPLUNK-CORE-CONSULTANT",
+      "SPLUNK-ENTERPRISE-ADMIN",
+      "SPLUNK-ENTERPRISE-ARCHITECT",
+      "SPLUNK-O11Y-METRICS-USER",
+      "C1000-156"
+    ],
+    "results": [
+      {
+        "exam_code": "PANW-XSIAM-ENGINEER",
+        "vendor_id": "palo-alto-networks",
+        "guide_path": "guides/PANW-XSIAM-ENGINEER-palo-alto-networks-xsiam-engineer.md",
+        "baseline_sha256": "01fcfc3a45ecdf45cdd41d9dfa6e33f6d30360991d2be20807fe2d9fcf6130ca",
+        "scanned_on": "2026-10-28",
+        "outcome": "current",
+        "checks": {
+          "official_blueprint_and_lifecycle": {
+            "status": "passed",
+            "notes": "Current official exam credential page/datasheet checked against its exact accepted snapshot; objectives remain unchanged, no retirement/replacement was announced, and published language/contract variants are documented."
+          },
+          "official_product_documentation": {
+            "status": "passed",
+            "notes": "Relevant current first-party product/technical sources were opened and mapped to existing topics. Version, entitlement, deployment, rollout, and availability limits remain adjacent to each added statement."
+          },
+          "official_release_channels": {
+            "status": "passed",
+            "notes": "Relevant official vendor release channels were searched and current dated updates were added only as practical context, separate from exam scope."
+          },
+          "catalog_comparison": {
+            "status": "passed",
+            "notes": "Exam, release and specific learning resources were compared with the existing catalog; 30 new scoped official sources were registered. Final health sweep: 104 sources, 69 OK, 29 blocked, 6 automated errors/missing (5 transport/TLS errors and one XSOAR SaaS route that was directly opened in the web reader); no guide statement relies solely on a blocked/error result."
+          },
+          "contradiction_and_gap_review": {
+            "status": "passed",
+            "notes": "SPLK-5003 current blueprint agrees at 67/75 despite stale indexed beta text. IBM QRadar public update indexes conflict; the guide records the ambiguity and provides an installed-version recheck path without asserting a latest update level. Browser-opened official XSOAR SaaS content is separately disclosed from the link-checker result."
+          }
+        },
+        "findings": [
+          {
+            "id": "g05-panw-xsiam-engineer-applied",
+            "check": "official_release_channels",
+            "category": "updated-source",
+            "title": "Cortex XSIAM 3.6 and AgentiX 1.4 July 2026 announcement",
+            "url": "https://www.paloaltonetworks.com/blog/security-operations/whats-new-in-cortex-july-2026/",
+            "source_type": "release-notes",
+            "affected_exams": [
+              "PANW-XSIAM-ENGINEER"
+            ],
+            "catalog_status": "registered",
+            "confidence": "high",
+            "evidence": "Added the dated product-context note on XSIAM 3.6/AgentiX 1.4 and XTI; it is explicitly not a new exam objective and keeps tenant/license rollout boundaries.",
+            "recommendation": "Keep the note dated and verify current version, availability, access, entitlement and deployment-specific conditions from the linked first-party source before operational use.",
+            "disposition": "applied",
+            "source_id": "panw-cortex-july-2026-release",
+            "resolution": "Added the dated product-context note on XSIAM 3.6/AgentiX 1.4 and XTI; it is explicitly not a new exam objective and keeps tenant/license rollout boundaries."
+          }
+        ],
+        "notes": "Detailed exam, technical and learning research reports provide exact URLs and per-guide observations. Objective/status snapshots are unchanged. No product lab or course interior was executed."
+      },
+      {
+        "exam_code": "PANW-XSOAR-ENGINEER",
+        "vendor_id": "palo-alto-networks",
+        "guide_path": "guides/PANW-XSOAR-ENGINEER-palo-alto-networks-xsoar-engineer.md",
+        "baseline_sha256": "43a17a64086c63ac3a769b6279b2c31cb3eec4e85f69fe62f8f88dae4a8c504c",
+        "scanned_on": "2026-10-28",
+        "outcome": "current",
+        "checks": {
+          "official_blueprint_and_lifecycle": {
+            "status": "passed",
+            "notes": "Current official exam credential page/datasheet checked against its exact accepted snapshot; objectives remain unchanged, no retirement/replacement was announced, and published language/contract variants are documented."
+          },
+          "official_product_documentation": {
+            "status": "passed",
+            "notes": "Relevant current first-party product/technical sources were opened and mapped to existing topics. Version, entitlement, deployment, rollout, and availability limits remain adjacent to each added statement."
+          },
+          "official_release_channels": {
+            "status": "passed",
+            "notes": "Relevant official vendor release channels were searched and current dated updates were added only as practical context, separate from exam scope."
+          },
+          "catalog_comparison": {
+            "status": "passed",
+            "notes": "Exam, release and specific learning resources were compared with the existing catalog; 30 new scoped official sources were registered. Final health sweep: 104 sources, 69 OK, 29 blocked, 6 automated errors/missing (5 transport/TLS errors and one XSOAR SaaS route that was directly opened in the web reader); no guide statement relies solely on a blocked/error result."
+          },
+          "contradiction_and_gap_review": {
+            "status": "passed",
+            "notes": "SPLK-5003 current blueprint agrees at 67/75 despite stale indexed beta text. IBM QRadar public update indexes conflict; the guide records the ambiguity and provides an installed-version recheck path without asserting a latest update level. Browser-opened official XSOAR SaaS content is separately disclosed from the link-checker result."
+          }
+        },
+        "findings": [
+          {
+  "id": "g05-panw-xsoar-engineer-applied",
+  "check": "official_release_channels",
+  "category": "updated-source",
+  "title": "Current Cortex XSOAR SaaS release index and separate on-prem stream",
+  "url": "https://cortex-docs.paloaltonetworks.com/cortex-xsoar-8-saas-releases/cortex-xsoar-8-saas-releases.md",
+  "source_type": "release-notes",
+  "affected_exams": [
+    "PANW-XSOAR-ENGINEER"
+  ],
+  "catalog_status": "registered",
+  "confidence": "high",
+  "evidence": "Current official SaaS release index lists 8.15 GA on 2026-07-26 and 8.14 GA on 2026-05-03, with highlights for Azure Blob Storage incident export and continuous Strata Logging Service authentication. The canonical XSOAR docs index links separate SaaS and on-prem release channels; the old May route now redirects incorrectly and has been replaced.",
+  "recommendation": "Keep the note dated and verify current version, availability, access, entitlement and deployment-specific conditions from the linked first-party release index before operational use.",
+  "disposition": "applied",
+  "source_id": "panw-xsoar-engineer-release-notes-8-saas",
+  "resolution": "Replaced the old redirected May-page route with the canonical current SaaS release index, added dated 8.15 GA and release-highlight context, preserved SaaS/on-prem separation, and passed an automated source-health recheck."
+}
+        ],
+        "notes": "Detailed exam, technical and learning research reports provide exact URLs and per-guide observations. Objective/status snapshots are unchanged. No product lab or course interior was executed."
+      },
+      {
+        "exam_code": "SPLK-5002",
+        "vendor_id": "splunk",
+        "guide_path": "guides/SPLK-5002-splunk-certified-cybersecurity-defense-engineer.md",
+        "baseline_sha256": "8c0b091c2e53985d8ccfd27c19ff36fe4379d18e43fcdfb93c04a0847f18c751",
+        "scanned_on": "2026-10-28",
+        "outcome": "current",
+        "checks": {
+          "official_blueprint_and_lifecycle": {
+            "status": "passed",
+            "notes": "Current official exam credential page/datasheet checked against its exact accepted snapshot; objectives remain unchanged, no retirement/replacement was announced, and published language/contract variants are documented."
+          },
+          "official_product_documentation": {
+            "status": "passed",
+            "notes": "Relevant current first-party product/technical sources were opened and mapped to existing topics. Version, entitlement, deployment, rollout, and availability limits remain adjacent to each added statement."
+          },
+          "official_release_channels": {
+            "status": "passed",
+            "notes": "Relevant official vendor release channels were searched and current dated updates were added only as practical context, separate from exam scope."
+          },
+          "catalog_comparison": {
+            "status": "passed",
+            "notes": "Exam, release and specific learning resources were compared with the existing catalog; 30 new scoped official sources were registered. Final health sweep: 104 sources, 69 OK, 29 blocked, 6 automated errors/missing (5 transport/TLS errors and one XSOAR SaaS route that was directly opened in the web reader); no guide statement relies solely on a blocked/error result."
+          },
+          "contradiction_and_gap_review": {
+            "status": "passed",
+            "notes": "SPLK-5003 current blueprint agrees at 67/75 despite stale indexed beta text. IBM QRadar public update indexes conflict; the guide records the ambiguity and provides an installed-version recheck path without asserting a latest update level. Browser-opened official XSOAR SaaS content is separately disclosed from the link-checker result."
+          }
+        },
+        "findings": [
+          {
+            "id": "g05-splk-5002-applied",
+            "check": "official_release_channels",
+            "category": "updated-source",
+            "title": "Splunk ES 8.7 GA and ES 8.8 Controlled Availability",
+            "url": "https://help.splunk.com/en/splunk-enterprise-security-8/release-notes-and-resources/8.7/splunk-enterprise-security-release-notes/release-notes-for-splunk-enterprise-security",
+            "source_type": "release-notes",
+            "affected_exams": [
+              "SPLK-5002"
+            ],
+            "catalog_status": "registered",
+            "confidence": "high",
+            "evidence": "Added dated release boundary, edition/deployment compatibility caveats and one-way upgrade backup reminder. ES 8.8 is labeled Controlled Availability, not general availability.",
+            "recommendation": "Keep the note dated and verify current version, availability, access, entitlement and deployment-specific conditions from the linked first-party source before operational use.",
+            "disposition": "applied",
+            "source_id": "splk-5002-es-87-release-notes",
+            "resolution": "Added dated release boundary, edition/deployment compatibility caveats and one-way upgrade backup reminder. ES 8.8 is labeled Controlled Availability, not general availability."
+          }
+        ],
+        "notes": "Detailed exam, technical and learning research reports provide exact URLs and per-guide observations. Objective/status snapshots are unchanged. No product lab or course interior was executed."
+      },
+      {
+        "exam_code": "SPLK-5003",
+        "vendor_id": "splunk",
+        "guide_path": "guides/SPLK-5003-splunk-certified-cybersecurity-defense-architect.md",
+        "baseline_sha256": "10121cd48a63fb12ca9073996c56aa52248a86bbcf124729f358798ba7331161",
+        "scanned_on": "2026-10-28",
+        "outcome": "current",
+        "checks": {
+          "official_blueprint_and_lifecycle": {
+            "status": "passed",
+            "notes": "Current official exam credential page/datasheet checked against its exact accepted snapshot; objectives remain unchanged, no retirement/replacement was announced, and published language/contract variants are documented."
+          },
+          "official_product_documentation": {
+            "status": "passed",
+            "notes": "Relevant current first-party product/technical sources were opened and mapped to existing topics. Version, entitlement, deployment, rollout, and availability limits remain adjacent to each added statement."
+          },
+          "official_release_channels": {
+            "status": "passed",
+            "notes": "Relevant official vendor release channels were searched and current dated updates were added only as practical context, separate from exam scope."
+          },
+          "catalog_comparison": {
+            "status": "passed",
+            "notes": "Exam, release and specific learning resources were compared with the existing catalog; 30 new scoped official sources were registered. Final health sweep: 104 sources, 69 OK, 29 blocked, 6 automated errors/missing (5 transport/TLS errors and one XSOAR SaaS route that was directly opened in the web reader); no guide statement relies solely on a blocked/error result."
+          },
+          "contradiction_and_gap_review": {
+            "status": "passed",
+            "notes": "SPLK-5003 current blueprint agrees at 67/75 despite stale indexed beta text. IBM QRadar public update indexes conflict; the guide records the ambiguity and provides an installed-version recheck path without asserting a latest update level. Browser-opened official XSOAR SaaS content is separately disclosed from the link-checker result."
+          }
+        },
+        "findings": [
+          {
+            "id": "g05-splk-5003-applied",
+            "check": "official_release_channels",
+            "category": "updated-source",
+            "title": "Direct current production blueprint and security-platform release context",
+            "url": "https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-cybersecurity-defense-architect.pdf",
+            "source_type": "release-notes",
+            "affected_exams": [
+              "SPLK-5003"
+            ],
+            "catalog_status": "registered",
+            "confidence": "high",
+            "evidence": "Directly opened blueprint and current credential page agree at 67 questions/75 minutes. Kept cached 120-question beta material historical and added a bounded ES edition/availability note.",
+            "recommendation": "Keep the note dated and verify current version, availability, access, entitlement and deployment-specific conditions from the linked first-party source before operational use.",
+            "disposition": "applied",
+            "source_id": "splk-5003-blueprint",
+            "resolution": "Directly opened blueprint and current credential page agree at 67 questions/75 minutes. Kept cached 120-question beta material historical and added a bounded ES edition/availability note."
+          }
+        ],
+        "notes": "Detailed exam, technical and learning research reports provide exact URLs and per-guide observations. Objective/status snapshots are unchanged. No product lab or course interior was executed."
+      },
+      {
+        "exam_code": "SPLUNK-CLOUD-ADMIN",
+        "vendor_id": "splunk",
+        "guide_path": "guides/SPLUNK-CLOUD-ADMIN-splunk-cloud-certified-admin.md",
+        "baseline_sha256": "ef925e6aab94980171d47b8162c03c13e5c3800eabc87783f58807030e2b4955",
+        "scanned_on": "2026-10-28",
+        "outcome": "current",
+        "checks": {
+          "official_blueprint_and_lifecycle": {
+            "status": "passed",
+            "notes": "Current official exam credential page/datasheet checked against its exact accepted snapshot; objectives remain unchanged, no retirement/replacement was announced, and published language/contract variants are documented."
+          },
+          "official_product_documentation": {
+            "status": "passed",
+            "notes": "Relevant current first-party product/technical sources were opened and mapped to existing topics. Version, entitlement, deployment, rollout, and availability limits remain adjacent to each added statement."
+          },
+          "official_release_channels": {
+            "status": "passed",
+            "notes": "Relevant official vendor release channels were searched and current dated updates were added only as practical context, separate from exam scope."
+          },
+          "catalog_comparison": {
+            "status": "passed",
+            "notes": "Exam, release and specific learning resources were compared with the existing catalog; 30 new scoped official sources were registered. Final health sweep: 104 sources, 69 OK, 29 blocked, 6 automated errors/missing (5 transport/TLS errors and one XSOAR SaaS route that was directly opened in the web reader); no guide statement relies solely on a blocked/error result."
+          },
+          "contradiction_and_gap_review": {
+            "status": "passed",
+            "notes": "SPLK-5003 current blueprint agrees at 67/75 despite stale indexed beta text. IBM QRadar public update indexes conflict; the guide records the ambiguity and provides an installed-version recheck path without asserting a latest update level. Browser-opened official XSOAR SaaS content is separately disclosed from the link-checker result."
+          }
+        },
+        "findings": [
+          {
+            "id": "g05-splunk-cloud-admin-applied",
+            "check": "official_release_channels",
+            "category": "updated-source",
+            "title": "ACS 10.5.2605 release and compatibility boundaries",
+            "url": "https://help.splunk.com/en/splunk-cloud-platform/release-notes/10.5.2605/splunk-cloud-platform-release-notes/admin-configuration-service",
+            "source_type": "release-notes",
+            "affected_exams": [
+              "SPLUNK-CLOUD-ADMIN"
+            ],
+            "catalog_status": "registered",
+            "confidence": "high",
+            "evidence": "Added current ACS release/compatibility context and exact official course-description links; deployment/version/role/experience boundaries remain explicit.",
+            "recommendation": "Keep the note dated and verify current version, availability, access, entitlement and deployment-specific conditions from the linked first-party source before operational use.",
+            "disposition": "applied",
+            "source_id": "splunk-cloud-admin-acs-release-notes-1052605",
+            "resolution": "Added current ACS release/compatibility context and exact official course-description links; deployment/version/role/experience boundaries remain explicit."
+          }
+        ],
+        "notes": "Detailed exam, technical and learning research reports provide exact URLs and per-guide observations. Objective/status snapshots are unchanged. No product lab or course interior was executed."
+      },
+      {
+        "exam_code": "SPLUNK-CORE-CONSULTANT",
+        "vendor_id": "splunk",
+        "guide_path": "guides/SPLUNK-CORE-CONSULTANT-splunk-core-certified-consultant.md",
+        "baseline_sha256": "4fe612b351b9c761b9032259a223155b6e4e3c3773d9edd2fac17d5b0731ea73",
+        "scanned_on": "2026-10-28",
+        "outcome": "current",
+        "checks": {
+          "official_blueprint_and_lifecycle": {
+            "status": "passed",
+            "notes": "Current official exam credential page/datasheet checked against its exact accepted snapshot; objectives remain unchanged, no retirement/replacement was announced, and published language/contract variants are documented."
+          },
+          "official_product_documentation": {
+            "status": "passed",
+            "notes": "Relevant current first-party product/technical sources were opened and mapped to existing topics. Version, entitlement, deployment, rollout, and availability limits remain adjacent to each added statement."
+          },
+          "official_release_channels": {
+            "status": "passed",
+            "notes": "Relevant official vendor release channels were searched and current dated updates were added only as practical context, separate from exam scope."
+          },
+          "catalog_comparison": {
+            "status": "passed",
+            "notes": "Exam, release and specific learning resources were compared with the existing catalog; 30 new scoped official sources were registered. Final health sweep: 104 sources, 69 OK, 29 blocked, 6 automated errors/missing (5 transport/TLS errors and one XSOAR SaaS route that was directly opened in the web reader); no guide statement relies solely on a blocked/error result."
+          },
+          "contradiction_and_gap_review": {
+            "status": "passed",
+            "notes": "SPLK-5003 current blueprint agrees at 67/75 despite stale indexed beta text. IBM QRadar public update indexes conflict; the guide records the ambiguity and provides an installed-version recheck path without asserting a latest update level. Browser-opened official XSOAR SaaS content is separately disclosed from the link-checker result."
+          }
+        },
+        "findings": [
+          {
+            "id": "g05-splunk-core-consultant-applied",
+            "check": "official_release_channels",
+            "category": "updated-source",
+            "title": "Splunk Enterprise 10.4 platform-version boundary",
+            "url": "https://help.splunk.com/en/splunk-enterprise/release-notes-and-updates/release-notes/10.4/whats-new/welcome-to-splunk-enterprise-10.4",
+            "source_type": "release-notes",
+            "affected_exams": [
+              "SPLUNK-CORE-CONSULTANT"
+            ],
+            "catalog_status": "registered",
+            "confidence": "high",
+            "evidence": "Splunk Enterprise 10.4 release notes document version-specific platform behavior and compatibility. The guide also clarifies the Advanced Power User substitution/authorization route from the official Consultant track flowchart; that training metadata update is separate from the product-source finding.",
+            "recommendation": "Keep the note dated and verify current version, availability, access, entitlement and deployment-specific conditions from the linked first-party source before operational use.",
+            "disposition": "applied",
+            "source_id": "splunk-enterprise-104-release-notes",
+            "resolution": "Clarified the 14-course substitution route and required Labs/Services coursework from the current track flowchart; the exception/authorization path is kept distinct."
+          }
+        ],
+        "notes": "Detailed exam, technical and learning research reports provide exact URLs and per-guide observations. Objective/status snapshots are unchanged. No product lab or course interior was executed."
+      },
+      {
+        "exam_code": "SPLUNK-ENTERPRISE-ADMIN",
+        "vendor_id": "splunk",
+        "guide_path": "guides/SPLUNK-ENTERPRISE-ADMIN-splunk-enterprise-certified-admin.md",
+        "baseline_sha256": "5d446f18d95406a4a21e6b7f3ead1530c6bd7b7faa89719d8ecaa3593c179c5c",
+        "scanned_on": "2026-10-28",
+        "outcome": "current",
+        "checks": {
+          "official_blueprint_and_lifecycle": {
+            "status": "passed",
+            "notes": "Current official exam credential page/datasheet checked against its exact accepted snapshot; objectives remain unchanged, no retirement/replacement was announced, and published language/contract variants are documented."
+          },
+          "official_product_documentation": {
+            "status": "passed",
+            "notes": "Relevant current first-party product/technical sources were opened and mapped to existing topics. Version, entitlement, deployment, rollout, and availability limits remain adjacent to each added statement."
+          },
+          "official_release_channels": {
+            "status": "passed",
+            "notes": "Relevant official vendor release channels were searched and current dated updates were added only as practical context, separate from exam scope."
+          },
+          "catalog_comparison": {
+            "status": "passed",
+            "notes": "Exam, release and specific learning resources were compared with the existing catalog; 30 new scoped official sources were registered. Final health sweep: 104 sources, 69 OK, 29 blocked, 6 automated errors/missing (5 transport/TLS errors and one XSOAR SaaS route that was directly opened in the web reader); no guide statement relies solely on a blocked/error result."
+          },
+          "contradiction_and_gap_review": {
+            "status": "passed",
+            "notes": "SPLK-5003 current blueprint agrees at 67/75 despite stale indexed beta text. IBM QRadar public update indexes conflict; the guide records the ambiguity and provides an installed-version recheck path without asserting a latest update level. Browser-opened official XSOAR SaaS content is separately disclosed from the link-checker result."
+          }
+        },
+        "findings": [
+          {
+            "id": "g05-splunk-enterprise-admin-applied",
+            "check": "official_release_channels",
+            "category": "updated-source",
+            "title": "Splunk Enterprise 10.4.2 Universal Forwarder useACK issue and fix",
+            "url": "https://help.splunk.com/en/splunk-enterprise/release-notes-and-updates/release-notes/10.4/whats-new/welcome-to-splunk-enterprise-10.4",
+            "source_type": "release-notes",
+            "affected_exams": [
+              "SPLUNK-ENTERPRISE-ADMIN"
+            ],
+            "catalog_status": "registered",
+            "confidence": "high",
+            "evidence": "Added the version-bounded `tcpout useACK=true` stall warning and 10.4.3 fix; no upgrade procedure or command is prescribed.",
+            "recommendation": "Keep the note dated and verify current version, availability, access, entitlement and deployment-specific conditions from the linked first-party source before operational use.",
+            "disposition": "applied",
+            "source_id": "splunk-enterprise-104-release-notes",
+            "resolution": "Added the version-bounded `tcpout useACK=true` stall warning and 10.4.3 fix; no upgrade procedure or command is prescribed."
+          }
+        ],
+        "notes": "Detailed exam, technical and learning research reports provide exact URLs and per-guide observations. Objective/status snapshots are unchanged. No product lab or course interior was executed."
+      },
+      {
+        "exam_code": "SPLUNK-ENTERPRISE-ARCHITECT",
+        "vendor_id": "splunk",
+        "guide_path": "guides/SPLUNK-ENTERPRISE-ARCHITECT-splunk-enterprise-certified-architect.md",
+        "baseline_sha256": "0c28e1dbc996a44c1bfad21e83bfcea0bd69645bbee8432a0a93e23262d102f4",
+        "scanned_on": "2026-10-28",
+        "outcome": "current",
+        "checks": {
+          "official_blueprint_and_lifecycle": {
+            "status": "passed",
+            "notes": "Current official exam credential page/datasheet checked against its exact accepted snapshot; objectives remain unchanged, no retirement/replacement was announced, and published language/contract variants are documented."
+          },
+          "official_product_documentation": {
+            "status": "passed",
+            "notes": "Relevant current first-party product/technical sources were opened and mapped to existing topics. Version, entitlement, deployment, rollout, and availability limits remain adjacent to each added statement."
+          },
+          "official_release_channels": {
+            "status": "passed",
+            "notes": "Relevant official vendor release channels were searched and current dated updates were added only as practical context, separate from exam scope."
+          },
+          "catalog_comparison": {
+            "status": "passed",
+            "notes": "Exam, release and specific learning resources were compared with the existing catalog; 30 new scoped official sources were registered. Final health sweep: 104 sources, 69 OK, 29 blocked, 6 automated errors/missing (5 transport/TLS errors and one XSOAR SaaS route that was directly opened in the web reader); no guide statement relies solely on a blocked/error result."
+          },
+          "contradiction_and_gap_review": {
+            "status": "passed",
+            "notes": "SPLK-5003 current blueprint agrees at 67/75 despite stale indexed beta text. IBM QRadar public update indexes conflict; the guide records the ambiguity and provides an installed-version recheck path without asserting a latest update level. Browser-opened official XSOAR SaaS content is separately disclosed from the link-checker result."
+          }
+        },
+        "findings": [
+          {
+            "id": "g05-splunk-enterprise-architect-applied",
+            "check": "official_release_channels",
+            "category": "updated-source",
+            "title": "Splunk Enterprise 10.4 version and upgrade constraints",
+            "url": "https://help.splunk.com/en/splunk-enterprise/release-notes-and-updates/release-notes/10.4/whats-new/welcome-to-splunk-enterprise-10.4",
+            "source_type": "release-notes",
+            "affected_exams": [
+              "SPLUNK-ENTERPRISE-ARCHITECT"
+            ],
+            "catalog_status": "registered",
+            "confidence": "high",
+            "evidence": "Splunk Enterprise 10.4 release notes document version-specific configuration, TLS, runtime and access-control changes. The guide also matches required course names/durations to the official Architect track; those training metadata updates are separate from this product-source finding.",
+            "recommendation": "Keep the note dated and verify current version, availability, access, entitlement and deployment-specific conditions from the linked first-party source before operational use.",
+            "disposition": "applied",
+            "source_id": "splunk-enterprise-104-release-notes",
+            "resolution": "Matched the course name to the current track PDF, clarified authorization, and recorded only the published 9-hour course and 24-hour lab durations without inventing an aggregate runtime."
+          }
+        ],
+        "notes": "Detailed exam, technical and learning research reports provide exact URLs and per-guide observations. Objective/status snapshots are unchanged. No product lab or course interior was executed."
+      },
+      {
+        "exam_code": "SPLUNK-O11Y-METRICS-USER",
+        "vendor_id": "splunk",
+        "guide_path": "guides/SPLUNK-O11Y-METRICS-USER-splunk-o11y-cloud-certified-metrics-user.md",
+        "baseline_sha256": "53592e027c6e076c752a7fdbda7be355bcc4cde7d02c379d87ff5bb0b85faa01",
+        "scanned_on": "2026-10-28",
+        "outcome": "current",
+        "checks": {
+          "official_blueprint_and_lifecycle": {
+            "status": "passed",
+            "notes": "Current official exam credential page/datasheet checked against its exact accepted snapshot; objectives remain unchanged, no retirement/replacement was announced, and published language/contract variants are documented."
+          },
+          "official_product_documentation": {
+            "status": "passed",
+            "notes": "Relevant current first-party product/technical sources were opened and mapped to existing topics. Version, entitlement, deployment, rollout, and availability limits remain adjacent to each added statement."
+          },
+          "official_release_channels": {
+            "status": "passed",
+            "notes": "Relevant official vendor release channels were searched and current dated updates were added only as practical context, separate from exam scope."
+          },
+          "catalog_comparison": {
+            "status": "passed",
+            "notes": "Exam, release and specific learning resources were compared with the existing catalog; 30 new scoped official sources were registered. Final health sweep: 104 sources, 69 OK, 29 blocked, 6 automated errors/missing (5 transport/TLS errors and one XSOAR SaaS route that was directly opened in the web reader); no guide statement relies solely on a blocked/error result."
+          },
+          "contradiction_and_gap_review": {
+            "status": "passed",
+            "notes": "SPLK-5003 current blueprint agrees at 67/75 despite stale indexed beta text. IBM QRadar public update indexes conflict; the guide records the ambiguity and provides an installed-version recheck path without asserting a latest update level. Browser-opened official XSOAR SaaS content is separately disclosed from the link-checker result."
+          }
+        },
+        "findings": [
+          {
+            "id": "g05-splunk-o11y-metrics-user-applied",
+            "check": "official_release_channels",
+            "category": "updated-source",
+            "title": "October 2026 metrics and detector behavior changes",
+            "url": "https://help.splunk.com/en/splunk-observability-cloud/release-notes/october-2026",
+            "source_type": "release-notes",
+            "affected_exams": [
+              "SPLUNK-O11Y-METRICS-USER"
+            ],
+            "catalog_status": "registered",
+            "confidence": "high",
+            "evidence": "Added the missing-tag `!=` behavior and Controlled Availability span MetricSet caveat; exact tenant/realm rollout stays explicit.",
+            "recommendation": "Keep the note dated and verify current version, availability, access, entitlement and deployment-specific conditions from the linked first-party source before operational use.",
+            "disposition": "applied",
+            "source_id": "splunk-o11y-metrics-user-release-notes-2026-10",
+            "resolution": "Added the missing-tag `!=` behavior and Controlled Availability span MetricSet caveat; exact tenant/realm rollout stays explicit."
+          }
+        ],
+        "notes": "Detailed exam, technical and learning research reports provide exact URLs and per-guide observations. Objective/status snapshots are unchanged. No product lab or course interior was executed."
+      },
+      {
+        "exam_code": "C1000-156",
+        "vendor_id": "ibm",
+        "guide_path": "guides/C1000-156-ibm-security-qradar-siem-administrator.md",
+        "baseline_sha256": "ec021d4137eda41679372d22546464a274d70fc0de757b012c23a0b47582c43a",
+        "scanned_on": "2026-10-28",
+        "outcome": "current",
+        "checks": {
+          "official_blueprint_and_lifecycle": {
+            "status": "passed",
+            "notes": "Current official exam credential page/datasheet checked against its exact accepted snapshot; objectives remain unchanged, no retirement/replacement was announced, and published language/contract variants are documented."
+          },
+          "official_product_documentation": {
+            "status": "passed",
+            "notes": "Relevant current first-party product/technical sources were opened and mapped to existing topics. Version, entitlement, deployment, rollout, and availability limits remain adjacent to each added statement."
+          },
+          "official_release_channels": {
+            "status": "passed",
+            "notes": "Relevant official vendor release channels were searched and current dated updates were added only as practical context, separate from exam scope."
+          },
+          "catalog_comparison": {
+            "status": "passed",
+            "notes": "Exam, release and specific learning resources were compared with the existing catalog; 30 new scoped official sources were registered. Final health sweep: 104 sources, 69 OK, 29 blocked, 6 automated errors/missing (5 transport/TLS errors and one XSOAR SaaS route that was directly opened in the web reader); no guide statement relies solely on a blocked/error result."
+          },
+          "contradiction_and_gap_review": {
+            "status": "passed",
+            "notes": "SPLK-5003 current blueprint agrees at 67/75 despite stale indexed beta text. IBM QRadar public update indexes conflict; the guide records the ambiguity and provides an installed-version recheck path without asserting a latest update level. Browser-opened official XSOAR SaaS content is separately disclosed from the link-checker result."
+          }
+        },
+        "findings": [
+          {
+            "id": "g05-c1000-156-applied",
+            "check": "official_product_documentation",
+            "category": "updated-source",
+            "title": "QRadar Auto Update endpoint migration and QRadar release-index discrepancy",
+            "url": "https://www.ibm.com/support/pages/node/7278729",
+            "source_type": "official-announcement",
+            "affected_exams": [
+              "C1000-156"
+            ],
+            "catalog_status": "registered",
+            "confidence": "medium",
+            "evidence": "Added the July 2026 Auto Update endpoint/firewall note and the free 1.5-hour SLA6910 resource with sign-in/retiring-soon caveat. Did not assert a latest 7.5 update level because IBM public indexes conflict.",
+            "recommendation": "Keep the note dated and verify current version, availability, access, entitlement and deployment-specific conditions from the linked first-party source before operational use.",
+            "disposition": "applied",
+            "source_id": "ibm-qradar-auto-update-migration-2026",
+            "resolution": "Added the July 2026 Auto Update endpoint/firewall note and the free 1.5-hour SLA6910 resource with sign-in/retiring-soon caveat. Did not assert a latest 7.5 update level because IBM public indexes conflict."
+          }
+        ],
+        "notes": "Detailed exam, technical and learning research reports provide exact URLs and per-guide observations. Objective/status snapshots are unchanged. No product lab or course interior was executed."
+      }
+    ],
+    "summary": {
+      "exam_count": 10,
+      "current": 10,
+      "review_required": 0,
+      "blocked": 0,
+      "queued_findings": 0,
+      "applied_findings": 10,
+      "no_action_findings": 0,
+      "blocked_findings": 0
+    }
+  }
 ]
 }

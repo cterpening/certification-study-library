@@ -1,7 +1,7 @@
 {
   "$schema": "../schemas/source-health.schema.json",
   "schema_version": 1,
-  "generated_on": "2026-10-28",
+  "generated_on": "2026-10-29",
   "sources": [
     {
       "id": "ab100-blog-sharepoint-metadata",
@@ -45376,16 +45376,16 @@
     {
       "id": "c1000-156-blueprint",
       "url": "https://www.ibm.com/training/credentials/getExam/C1000-156",
-      "checked_at": "2026-09-04T14:58:25+00:00",
-      "status": "ok",
-      "http_status": 200,
+      "checked_at": "2026-10-29T01:53:30+00:00",
+      "status": "error",
+      "http_status": null,
       "final_url": "https://www.ibm.com/training/credentials/getExam/C1000-156",
-      "content_type": "application/json; charset=utf-8",
+      "content_type": "",
       "page_title": "",
       "canonical_url": "",
       "duration_signals": [],
       "signal_fingerprint": "",
-      "error": ""
+      "error": "<urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>"
     },
     {
       "id": "c1000-175-blueprint",
@@ -58169,18 +58169,16 @@
     {
       "id": "ibm-qradar-75-docs",
       "url": "https://www.ibm.com/docs/en/qsip/7.5",
-      "checked_at": "2026-09-04T14:58:25+00:00",
-      "status": "ok",
-      "http_status": 200,
-      "final_url": "https://www.ibm.com/docs/en/qsip/7.5.0",
-      "content_type": "text/html; charset=utf-8",
-      "page_title": "SS42VS_7.5 - Bot Index",
-      "canonical_url": "https://www.ibm.com/docs/en/qsip/7.5.0",
-      "duration_signals": [
-        "24 hours"
-      ],
-      "signal_fingerprint": "360dac35683417890ad6cc909543000cfc36b1cc828e9a9c02c1b56576876232",
-      "error": ""
+      "checked_at": "2026-10-29T01:53:31+00:00",
+      "status": "error",
+      "http_status": null,
+      "final_url": "https://www.ibm.com/docs/en/qsip/7.5",
+      "content_type": "",
+      "page_title": "",
+      "canonical_url": "",
+      "duration_signals": [],
+      "signal_fingerprint": "",
+      "error": "<urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>"
     },
     {
       "id": "ibm-watsonx-docs",
@@ -66560,7 +66558,7 @@
     {
       "id": "nist-csf-2",
       "url": "https://www.nist.gov/cyberframework",
-      "checked_at": "2026-10-29T01:30:59+00:00",
+      "checked_at": "2026-10-29T01:53:03+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.nist.gov/cyberframework",
@@ -70450,7 +70448,7 @@
     {
       "id": "panw-certification-handbook",
       "url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf",
-      "checked_at": "2026-10-29T01:31:00+00:00",
+      "checked_at": "2026-10-29T01:53:03+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf",
@@ -70548,7 +70546,7 @@
     {
       "id": "panw-cloud-security-engineer-source-13",
       "url": "https://live.paloaltonetworks.com/",
-      "checked_at": "2026-10-29T01:31:13+00:00",
+      "checked_at": "2026-10-29T01:53:17+00:00",
       "status": "blocked",
       "http_status": 403,
       "final_url": "https://live.paloaltonetworks.com/",
@@ -70884,7 +70882,7 @@
     {
       "id": "panw-cybersecurity-practitioner-source-4",
       "url": "https://docs-cortex.paloaltonetworks.com/r/Cortex-XDR/Cortex-XDR-5.x-Documentation/Detailed-View",
-      "checked_at": "2026-10-29T01:31:11+00:00",
+      "checked_at": "2026-10-29T01:53:17+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://cortex-docs.paloaltonetworks.com/cortex-xdr-5.x/detect-investigate-and-respond-to-threats/investigate-and-respond-to-cases/analyze-and-resolve-cases/analyze-case-details/detailed-view",
@@ -70943,7 +70941,7 @@
     {
       "id": "panw-learning-center",
       "url": "https://learn.paloaltonetworks.com/learn",
-      "checked_at": "2026-10-29T01:30:59+00:00",
+      "checked_at": "2026-10-29T01:53:03+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.paloaltonetworks.com/learn",
@@ -71606,7 +71604,7 @@
     {
       "id": "panw-security-operations-professional-source-1",
       "url": "https://cortex-docs.paloaltonetworks.com/",
-      "checked_at": "2026-10-29T01:31:12+00:00",
+      "checked_at": "2026-10-29T01:53:17+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://cortex-docs.paloaltonetworks.com/",
@@ -71620,7 +71618,7 @@
     {
       "id": "panw-security-operations-professional-source-2",
       "url": "https://docs.paloaltonetworks.com/cortex/cortex-xsoar",
-      "checked_at": "2026-10-29T01:31:12+00:00",
+      "checked_at": "2026-10-29T01:53:17+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://cortex-docs.paloaltonetworks.com/cortex-xsoar-8-saas",
@@ -71832,7 +71830,7 @@
     {
       "id": "panw-xdr-engineer-source-1",
       "url": "https://www.rfc-editor.org/rfc/rfc8259",
-      "checked_at": "2026-10-29T01:31:15+00:00",
+      "checked_at": "2026-10-29T01:53:18+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.rfc-editor.org/info/rfc8259/",
@@ -71846,7 +71844,7 @@
     {
       "id": "panw-xdr-engineer-source-2",
       "url": "https://www.w3.org/TR/xml/",
-      "checked_at": "2026-10-29T01:31:16+00:00",
+      "checked_at": "2026-10-29T01:53:18+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.w3.org/TR/xml/",
@@ -71902,7 +71900,7 @@
     {
       "id": "panw-xsiam-engineer-blueprint",
       "url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/xsiam-engineer-datasheet.pdf",
-      "checked_at": "2026-09-02T21:33:03+00:00",
+      "checked_at": "2026-10-29T01:53:18+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/xsiam-engineer-datasheet.pdf",
@@ -71916,7 +71914,7 @@
     {
       "id": "panw-xsiam-engineer-certification",
       "url": "https://www.paloaltonetworks.com/services/education/palo-alto-networks-xsiam-engineer",
-      "checked_at": "2026-09-02T21:33:03+00:00",
+      "checked_at": "2026-10-29T01:53:18+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.paloaltonetworks.com/services/education/palo-alto-networks-xsiam-engineer",
@@ -71930,7 +71928,7 @@
     {
       "id": "panw-xsiam-engineer-source-1",
       "url": "https://docs.oasis-open.org/cti/stix/v2.1/stix-v2.1.html",
-      "checked_at": "2026-09-02T21:33:03+00:00",
+      "checked_at": "2026-10-29T01:53:29+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.oasis-open.org/cti/stix/v2.1/stix-v2.1.html",
@@ -71938,16 +71936,16 @@
       "page_title": "STIX Version 2.1 Errata 01",
       "canonical_url": "https://docs.oasis-open.org/cti/stix/v2.1/stix-v2.1.html",
       "duration_signals": [
-        "5 minutes",
-        "5 MINUTES"
+        "5 MINUTES",
+        "5 minutes"
       ],
-      "signal_fingerprint": "8ae4ed08ecdf50ad9de6a034d9aa08f4870a3dee4ecc47e9e81f7d68704399ec",
+      "signal_fingerprint": "4cf10e9c2a25149e3f9c4645acf0aaead4092a6b49878aba4474d7b864f3cc24",
       "error": ""
     },
     {
       "id": "panw-xsiam-engineer-source-2",
       "url": "https://docs.oasis-open.org/cti/taxii/v2.1/taxii-v2.1.html",
-      "checked_at": "2026-09-02T21:33:03+00:00",
+      "checked_at": "2026-10-29T01:53:29+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.oasis-open.org/cti/taxii/v2.1/taxii-v2.1.html",
@@ -71963,7 +71961,7 @@
     {
       "id": "panw-xsiam-engineer-source-3",
       "url": "https://www.microfocus.com/documentation/arcsight/arcsight-smartconnectors-8.4/cef-implementation-standard/",
-      "checked_at": "2026-09-02T21:33:03+00:00",
+      "checked_at": "2026-10-29T01:53:29+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.microfocus.com/documentation/arcsight/arcsight-smartconnectors-8.4/cef-implementation-standard/",
@@ -71977,7 +71975,7 @@
     {
       "id": "panw-xsiam-engineer-source-4",
       "url": "https://csrc.nist.gov/pubs/sp/800/92/final",
-      "checked_at": "2026-10-29T01:31:16+00:00",
+      "checked_at": "2026-10-29T01:53:29+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://csrc.nist.gov/pubs/sp/800/92/final",
@@ -71991,7 +71989,7 @@
     {
       "id": "panw-xsoar-engineer-blueprint",
       "url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/xsoar-engineer-datasheet.pdf",
-      "checked_at": "2026-09-02T21:33:20+00:00",
+      "checked_at": "2026-10-29T01:53:29+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/xsoar-engineer-datasheet.pdf",
@@ -72005,7 +72003,7 @@
     {
       "id": "panw-xsoar-engineer-certification",
       "url": "https://www.paloaltonetworks.com/services/education/palo-alto-networks-xsoar-engineer",
-      "checked_at": "2026-09-02T21:33:20+00:00",
+      "checked_at": "2026-10-29T01:53:29+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.paloaltonetworks.com/services/education/palo-alto-networks-xsoar-engineer",
@@ -72019,7 +72017,7 @@
     {
       "id": "panw-xsoar-engineer-source-1",
       "url": "https://github.com/demisto/content",
-      "checked_at": "2026-09-02T21:33:20+00:00",
+      "checked_at": "2026-10-29T01:53:29+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://github.com/demisto/content",
@@ -72033,7 +72031,7 @@
     {
       "id": "panw-xsoar-engineer-source-2",
       "url": "https://www.first.org/tlp/",
-      "checked_at": "2026-09-02T21:33:20+00:00",
+      "checked_at": "2026-10-29T01:53:30+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.first.org/tlp/",
@@ -72047,7 +72045,7 @@
     {
       "id": "panw-xsoar-engineer-source-3",
       "url": "https://developer.mozilla.org/docs/Web/JavaScript/Guide",
-      "checked_at": "2026-09-02T21:33:20+00:00",
+      "checked_at": "2026-10-29T01:53:30+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
@@ -72061,30 +72059,30 @@
     {
       "id": "panw-xsoar-engineer-source-4",
       "url": "https://learn.microsoft.com/powershell/",
-      "checked_at": "2026-09-02T21:33:20+00:00",
-      "status": "ok",
-      "http_status": 200,
-      "final_url": "https://learn.microsoft.com/en-us/powershell/",
-      "content_type": "text/html",
-      "page_title": "PowerShell Documentation - PowerShell",
-      "canonical_url": "https://learn.microsoft.com/en-us/powershell/",
+      "checked_at": "2026-10-29T01:53:30+00:00",
+      "status": "error",
+      "http_status": null,
+      "final_url": "https://learn.microsoft.com/powershell/",
+      "content_type": "",
+      "page_title": "",
+      "canonical_url": "",
       "duration_signals": [],
-      "signal_fingerprint": "0f7f256c1a17418666a518190a99064b246f31f4f2cedc5253a588e05ae25dca",
-      "error": ""
+      "signal_fingerprint": "",
+      "error": "<urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>"
     },
     {
       "id": "panw-xsoar-engineer-source-5",
       "url": "https://owasp.org/API-Security/",
-      "checked_at": "2026-09-02T21:33:20+00:00",
-      "status": "ok",
-      "http_status": 200,
+      "checked_at": "2026-10-29T01:53:30+00:00",
+      "status": "error",
+      "http_status": null,
       "final_url": "https://owasp.org/API-Security/",
-      "content_type": "text/html; charset=utf-8",
-      "page_title": "OWASP API Security Top 10 - OWASP API Security Top 10",
-      "canonical_url": "https://owasp.org/API-Security/",
+      "content_type": "",
+      "page_title": "",
+      "canonical_url": "",
       "duration_signals": [],
-      "signal_fingerprint": "9e339edab2dc96ac7e1df2fbe554cc11b12871df62d7d0d672403c9ab0ead5da",
-      "error": ""
+      "signal_fingerprint": "",
+      "error": "<urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>"
     },
     {
       "id": "paramiko-documentation",
@@ -73768,15 +73766,15 @@
     {
       "id": "python-3-documentation",
       "url": "https://docs.python.org/3/",
-      "checked_at": "2026-09-30T04:40:34+00:00",
+      "checked_at": "2026-10-29T01:53:03+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.python.org/3/",
       "content_type": "text/html",
-      "page_title": "Python 3.14 documentation",
+      "page_title": "Python 3.15 documentation",
       "canonical_url": "https://docs.python.org/3/index.html",
       "duration_signals": [],
-      "signal_fingerprint": "50b9d442c370445bef6759fa6081fdbb19b350ce94cf3dd9c82305f5c39b16d5",
+      "signal_fingerprint": "ac64c83f7caf132f24cebaa4141e7ca7197c8ac51bee9b8453293ace997cbad0",
       "error": ""
     },
     {
@@ -75345,7 +75343,7 @@
     {
       "id": "sc-100-mitre-attack",
       "url": "https://attack.mitre.org/",
-      "checked_at": "2026-10-29T01:30:59+00:00",
+      "checked_at": "2026-10-29T01:53:03+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://attack.mitre.org/",
@@ -78511,7 +78509,7 @@
     {
       "id": "splk-5002-blueprint",
       "url": "https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-cybersecurity-defense-engineer.pdf",
-      "checked_at": "2026-09-30T12:58:27+00:00",
+      "checked_at": "2026-10-29T01:53:16+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-cybersecurity-defense-engineer.pdf",
@@ -78525,7 +78523,7 @@
     {
       "id": "splk-5002-certification",
       "url": "https://www.splunk.com/en_us/training/certification-track/splunk-certified-cybersecurity-defense-engineer.html",
-      "checked_at": "2026-09-30T12:58:27+00:00",
+      "checked_at": "2026-10-29T01:53:16+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.splunk.com/en_us/training/certification-track/splunk-certified-cybersecurity-defense-engineer.html",
@@ -78541,7 +78539,7 @@
     {
       "id": "splk-5002-source-1",
       "url": "https://help.splunk.com/en/splunk-enterprise-security",
-      "checked_at": "2026-09-30T12:58:27+00:00",
+      "checked_at": "2026-10-29T01:53:16+00:00",
       "status": "blocked",
       "http_status": 403,
       "final_url": "https://help.splunk.com/en/splunk-enterprise-security",
@@ -78555,7 +78553,7 @@
     {
       "id": "splk-5002-source-2",
       "url": "https://help.splunk.com/en/splunk-soar",
-      "checked_at": "2026-09-30T12:58:27+00:00",
+      "checked_at": "2026-10-29T01:53:16+00:00",
       "status": "blocked",
       "http_status": 403,
       "final_url": "https://help.splunk.com/en/splunk-soar",
@@ -78569,7 +78567,7 @@
     {
       "id": "splk-5003-blueprint",
       "url": "https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-cybersecurity-defense-architect.pdf",
-      "checked_at": "2026-09-02T21:05:52+00:00",
+      "checked_at": "2026-10-29T01:53:17+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-cybersecurity-defense-architect.pdf",
@@ -78583,7 +78581,7 @@
     {
       "id": "splk-5003-certification",
       "url": "https://www.splunk.com/en_us/training/certification-track/splunk-certified-cybersecurity-defense-architect.html",
-      "checked_at": "2026-09-02T21:05:52+00:00",
+      "checked_at": "2026-10-29T01:53:17+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.splunk.com/en_us/training/certification-track/splunk-certified-cybersecurity-defense-architect.html",
@@ -78599,7 +78597,7 @@
     {
       "id": "splk-5003-source-1",
       "url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
-      "checked_at": "2026-10-29T01:31:10+00:00",
+      "checked_at": "2026-10-29T01:53:16+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
@@ -78613,7 +78611,7 @@
     {
       "id": "splk-5003-source-2",
       "url": "https://d3fend.mitre.org/",
-      "checked_at": "2026-10-29T01:31:11+00:00",
+      "checked_at": "2026-10-29T01:53:16+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://d3fend.mitre.org/",
@@ -78627,7 +78625,7 @@
     {
       "id": "splk-5003-source-4",
       "url": "https://openssf.org/",
-      "checked_at": "2026-09-02T21:05:52+00:00",
+      "checked_at": "2026-10-29T01:53:16+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://openssf.org/",
@@ -78641,7 +78639,7 @@
     {
       "id": "splk-5003-source-5",
       "url": "https://www.cisa.gov/securebydesign",
-      "checked_at": "2026-10-29T00:18:14+00:00",
+      "checked_at": "2026-10-29T01:53:16+00:00",
       "status": "blocked",
       "http_status": 403,
       "final_url": "https://www.cisa.gov/securebydesign",
@@ -78655,16 +78653,16 @@
     {
       "id": "splk-5003-source-6",
       "url": "https://www.ntia.gov/page/software-bill-materials",
-      "checked_at": "2026-09-17T18:43:52+00:00",
-      "status": "ok",
-      "http_status": 200,
+      "checked_at": "2026-10-29T01:53:17+00:00",
+      "status": "error",
+      "http_status": null,
       "final_url": "https://www.ntia.gov/page/software-bill-materials",
-      "content_type": "text/html; charset=utf-8",
-      "page_title": "SOFTWARE BILL OF MATERIALS | National Telecommunications and Information AdministrationLock",
-      "canonical_url": "https://www.ntia.gov/page/software-bill-materials",
+      "content_type": "",
+      "page_title": "",
+      "canonical_url": "",
       "duration_signals": [],
-      "signal_fingerprint": "177495e83288e7613361a4f839ae92a9bed53a1aad770d0dcbbb43b6ad0aef02",
-      "error": ""
+      "signal_fingerprint": "",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>"
     },
     {
       "id": "splunk-advanced-power-user-blueprint",
@@ -78753,7 +78751,7 @@
     {
       "id": "splunk-boss-of-the-soc",
       "url": "https://bots.splunk.com/",
-      "checked_at": "2026-09-30T12:59:03+00:00",
+      "checked_at": "2026-10-29T01:53:03+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://bots.splunk.com/",
@@ -78809,7 +78807,7 @@
     {
       "id": "splunk-cloud-admin-blueprint",
       "url": "https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-cloud-admin.pdf",
-      "checked_at": "2026-09-02T20:57:28+00:00",
+      "checked_at": "2026-10-29T01:53:15+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-cloud-admin.pdf",
@@ -78823,7 +78821,7 @@
     {
       "id": "splunk-cloud-admin-certification",
       "url": "https://www.splunk.com/en_us/training/certification-track/splunk-cloud-certified-admin.html",
-      "checked_at": "2026-09-02T20:57:28+00:00",
+      "checked_at": "2026-10-29T01:53:15+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.splunk.com/en_us/training/certification-track/splunk-cloud-certified-admin.html",
@@ -78839,7 +78837,7 @@
     {
       "id": "splunk-cloud-admin-source-1",
       "url": "https://help.splunk.com/en/splunk-cloud-platform/administer",
-      "checked_at": "2026-09-02T20:57:28+00:00",
+      "checked_at": "2026-10-29T01:53:04+00:00",
       "status": "blocked",
       "http_status": 403,
       "final_url": "https://help.splunk.com/en/splunk-cloud-platform/administer",
@@ -78853,7 +78851,7 @@
     {
       "id": "splunk-cloud-admin-source-2",
       "url": "https://help.splunk.com/en/splunk-cloud-platform/administer/admin-config-service-manual/9.3.2411/welcome-to-the-admin-config-service-acs/about-the-admin-config-service-acs-api",
-      "checked_at": "2026-09-02T20:57:28+00:00",
+      "checked_at": "2026-10-29T01:53:04+00:00",
       "status": "blocked",
       "http_status": 403,
       "final_url": "https://help.splunk.com/en/splunk-cloud-platform/administer/admin-config-service-manual/9.3.2411/welcome-to-the-admin-config-service-acs/about-the-admin-config-service-acs-api",
@@ -78867,7 +78865,7 @@
     {
       "id": "splunk-cloud-admin-source-3",
       "url": "https://help.splunk.com/en/splunk-cloud-platform/administer/admin-manual/10.0.2503/manage-your-indexes-and-data-in-splunk-cloud-platform/manage-splunk-cloud-platform-indexes",
-      "checked_at": "2026-09-02T20:57:28+00:00",
+      "checked_at": "2026-10-29T01:53:05+00:00",
       "status": "blocked",
       "http_status": 403,
       "final_url": "https://help.splunk.com/en/splunk-cloud-platform/administer/admin-manual/10.0.2503/manage-your-indexes-and-data-in-splunk-cloud-platform/manage-splunk-cloud-platform-indexes",
@@ -78881,7 +78879,7 @@
     {
       "id": "splunk-cloud-admin-source-4",
       "url": "https://help.splunk.com/en/splunk-cloud-platform/get-data-in",
-      "checked_at": "2026-09-02T20:57:28+00:00",
+      "checked_at": "2026-10-29T01:53:15+00:00",
       "status": "blocked",
       "http_status": 403,
       "final_url": "https://help.splunk.com/en/splunk-cloud-platform/get-data-in",
@@ -78895,7 +78893,7 @@
     {
       "id": "splunk-cloud-admin-source-5",
       "url": "https://help.splunk.com/en/splunk-cloud-platform/get-started/service-terms-and-policies/10.5.2605/information-about-the-service/splunk-cloud-platform-service-details",
-      "checked_at": "2026-09-02T20:57:28+00:00",
+      "checked_at": "2026-10-29T01:53:15+00:00",
       "status": "blocked",
       "http_status": 403,
       "final_url": "https://help.splunk.com/en/splunk-cloud-platform/get-started/service-terms-and-policies/10.5.2605/information-about-the-service/splunk-cloud-platform-service-details",
@@ -78909,7 +78907,7 @@
     {
       "id": "splunk-cloud-admin-source-6",
       "url": "https://help.splunk.com/splunk-cloud-platform/get-data-in/get-started-getting-data-in/9.2.2406/get-data-from-files-and-directories/monitor-files-and-directories",
-      "checked_at": "2026-09-02T20:57:28+00:00",
+      "checked_at": "2026-10-29T01:53:15+00:00",
       "status": "blocked",
       "http_status": 403,
       "final_url": "https://help.splunk.com/splunk-cloud-platform/get-data-in/get-started-getting-data-in/9.2.2406/get-data-from-files-and-directories/monitor-files-and-directories",
@@ -78923,7 +78921,7 @@
     {
       "id": "splunk-cloud-admin-source-7",
       "url": "https://www.oreilly.com/search/?q=Splunk%20Cloud",
-      "checked_at": "2026-09-02T20:57:28+00:00",
+      "checked_at": "2026-10-29T01:53:15+00:00",
       "status": "blocked",
       "http_status": 403,
       "final_url": "https://www.oreilly.com/search/?q=Splunk%20Cloud",
@@ -78937,7 +78935,7 @@
     {
       "id": "splunk-cloud-admin-source-8",
       "url": "https://www.udemy.com/courses/search/?q=Splunk%20Cloud%20Admin",
-      "checked_at": "2026-09-02T20:57:28+00:00",
+      "checked_at": "2026-10-29T01:53:15+00:00",
       "status": "blocked",
       "http_status": 403,
       "final_url": "https://www.udemy.com/courses/search/?q=Splunk%20Cloud%20Admin",
@@ -78951,7 +78949,7 @@
     {
       "id": "splunk-core-consultant-blueprint",
       "url": "https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-consultant.pdf",
-      "checked_at": "2026-09-02T21:04:30+00:00",
+      "checked_at": "2026-10-29T01:53:15+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-consultant.pdf",
@@ -78965,7 +78963,7 @@
     {
       "id": "splunk-core-consultant-certification",
       "url": "https://www.splunk.com/en_us/training/certification-track/splunk-core-certified-consultant.html",
-      "checked_at": "2026-09-02T21:04:30+00:00",
+      "checked_at": "2026-10-29T01:53:15+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.splunk.com/en_us/training/certification-track/splunk-core-certified-consultant.html",
@@ -79037,7 +79035,7 @@
     {
       "id": "splunk-course-catalog",
       "url": "https://www.splunk.com/en_us/training/course-catalog.html",
-      "checked_at": "2026-09-29T17:46:59+00:00",
+      "checked_at": "2026-10-29T01:53:03+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.splunk.com/en_us/training/course-catalog.html",
@@ -79107,7 +79105,7 @@
     {
       "id": "splunk-enterprise-admin-blueprint",
       "url": "https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-enterprise-admin.pdf",
-      "checked_at": "2026-09-02T20:57:39+00:00",
+      "checked_at": "2026-10-29T01:53:15+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-enterprise-admin.pdf",
@@ -79121,7 +79119,7 @@
     {
       "id": "splunk-enterprise-admin-certification",
       "url": "https://www.splunk.com/en_us/training/certification-track/splunk-enterprise-certified-admin.html",
-      "checked_at": "2026-09-02T20:57:39+00:00",
+      "checked_at": "2026-10-29T01:53:15+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.splunk.com/en_us/training/certification-track/splunk-enterprise-certified-admin.html",
@@ -79137,7 +79135,7 @@
     {
       "id": "splunk-enterprise-admin-source-1",
       "url": "https://community.splunk.com/",
-      "checked_at": "2026-09-02T20:57:39+00:00",
+      "checked_at": "2026-10-29T01:53:15+00:00",
       "status": "blocked",
       "http_status": 403,
       "final_url": "https://community.splunk.com/",
@@ -79151,7 +79149,7 @@
     {
       "id": "splunk-enterprise-admin-source-2",
       "url": "https://help.splunk.com/en/splunk-enterprise",
-      "checked_at": "2026-09-02T20:57:39+00:00",
+      "checked_at": "2026-10-29T01:53:15+00:00",
       "status": "blocked",
       "http_status": 403,
       "final_url": "https://help.splunk.com/en/splunk-enterprise",
@@ -79165,7 +79163,7 @@
     {
       "id": "splunk-enterprise-architect-blueprint",
       "url": "https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-architect.pdf",
-      "checked_at": "2026-09-02T21:02:39+00:00",
+      "checked_at": "2026-10-29T01:53:15+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-architect.pdf",
@@ -79179,7 +79177,7 @@
     {
       "id": "splunk-enterprise-architect-certification",
       "url": "https://www.splunk.com/en_us/training/certification-track/splunk-enterprise-certified-architect.html",
-      "checked_at": "2026-09-02T21:02:39+00:00",
+      "checked_at": "2026-10-29T01:53:15+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.splunk.com/en_us/training/certification-track/splunk-enterprise-certified-architect.html",
@@ -79195,7 +79193,7 @@
     {
       "id": "splunk-enterprise-architect-source-1",
       "url": "https://help.splunk.com/en/splunk-enterprise/get-started/splunk-validated-architectures/introduction-to-splunk-validated-architectures/about-splunk-validated-architectures",
-      "checked_at": "2026-09-02T21:02:39+00:00",
+      "checked_at": "2026-10-29T01:53:15+00:00",
       "status": "blocked",
       "http_status": 403,
       "final_url": "https://help.splunk.com/en/splunk-enterprise/get-started/splunk-validated-architectures/introduction-to-splunk-validated-architectures/about-splunk-validated-architectures",
@@ -79265,7 +79263,7 @@
     {
       "id": "splunk-lantern",
       "url": "https://lantern.splunk.com/",
-      "checked_at": "2026-09-30T12:07:11+00:00",
+      "checked_at": "2026-10-29T01:53:04+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://lantern.splunk.com/",
@@ -79279,7 +79277,7 @@
     {
       "id": "splunk-lantern-security-use-cases",
       "url": "https://lantern.splunk.com/Security_Use_Cases",
-      "checked_at": "2026-09-29T17:47:01+00:00",
+      "checked_at": "2026-10-29T01:53:03+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://lantern.splunk.com/Security_Use_Cases",
@@ -79293,7 +79291,7 @@
     {
       "id": "splunk-o11y-metrics-user-blueprint",
       "url": "https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-o11y-cloud-metrics-user.pdf",
-      "checked_at": "2026-09-02T21:04:41+00:00",
+      "checked_at": "2026-10-29T01:53:16+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-o11y-cloud-metrics-user.pdf",
@@ -79307,7 +79305,7 @@
     {
       "id": "splunk-o11y-metrics-user-certification",
       "url": "https://www.splunk.com/en_us/training/certification-track/splunk-o11y-cloud-certified-metrics-user.html",
-      "checked_at": "2026-09-02T21:04:41+00:00",
+      "checked_at": "2026-10-29T01:53:16+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.splunk.com/en_us/training/certification-track/splunk-o11y-cloud-certified-metrics-user.html",
@@ -79323,7 +79321,7 @@
     {
       "id": "splunk-o11y-metrics-user-source-1",
       "url": "https://help.splunk.com/en/splunk-observability-cloud",
-      "checked_at": "2026-09-02T21:04:41+00:00",
+      "checked_at": "2026-10-29T01:53:16+00:00",
       "status": "blocked",
       "http_status": 403,
       "final_url": "https://help.splunk.com/en/splunk-observability-cloud",
@@ -79337,7 +79335,7 @@
     {
       "id": "splunk-o11y-metrics-user-source-2",
       "url": "https://opentelemetry.io/docs/collector/",
-      "checked_at": "2026-09-02T21:04:41+00:00",
+      "checked_at": "2026-10-29T01:53:16+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://opentelemetry.io/docs/collector/",
@@ -79435,7 +79433,7 @@
     {
       "id": "splunk-security-content",
       "url": "https://research.splunk.com/",
-      "checked_at": "2026-09-30T12:59:03+00:00",
+      "checked_at": "2026-10-29T01:53:03+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://research.splunk.com/",
@@ -81807,7 +81805,7 @@
     {
       "id": "youtube-palo-alto-networks",
       "url": "https://www.youtube.com/@PaloAltoNetworks",
-      "checked_at": "2026-10-29T01:31:10+00:00",
+      "checked_at": "2026-10-29T01:53:03+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.youtube.com/@PaloAltoNetworks",
@@ -81865,7 +81863,7 @@
     {
       "id": "youtube-splunk-how-to",
       "url": "https://www.youtube.com/@SplunkHowTo",
-      "checked_at": "2026-09-30T12:07:10+00:00",
+      "checked_at": "2026-10-29T01:53:03+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.youtube.com/@SplunkHowTo",
@@ -81893,7 +81891,7 @@
     {
       "id": "splk-5002-create-detection-8-5",
       "url": "https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.5/detections/create-event-based-detections-in-splunk-enterprise-security",
-      "checked_at": "2026-09-30T12:58:27+00:00",
+      "checked_at": "2026-10-29T01:53:16+00:00",
       "status": "blocked",
       "http_status": 403,
       "final_url": "https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.5/detections/create-event-based-detections-in-splunk-enterprise-security",
@@ -81907,7 +81905,7 @@
     {
       "id": "splk-5002-detection-overview-8-5",
       "url": "https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.5/detections/use-detections-to-search-for-threats-in-splunk-enterprise-security",
-      "checked_at": "2026-09-30T12:58:27+00:00",
+      "checked_at": "2026-10-29T01:53:16+00:00",
       "status": "blocked",
       "http_status": 403,
       "final_url": "https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.5/detections/use-detections-to-search-for-threats-in-splunk-enterprise-security",
@@ -81921,7 +81919,7 @@
     {
       "id": "splk-5002-es-8-0-limitations",
       "url": "https://help.splunk.com/en/splunk-enterprise-security-8/release-notes-and-resources/8.0/splunk-enterprise-security-release-notes/limitations",
-      "checked_at": "2026-09-30T12:58:27+00:00",
+      "checked_at": "2026-10-29T01:53:16+00:00",
       "status": "blocked",
       "http_status": 403,
       "final_url": "https://help.splunk.com/en/splunk-enterprise-security-8/release-notes-and-resources/8.0/splunk-enterprise-security-release-notes/limitations",
@@ -81935,7 +81933,7 @@
     {
       "id": "splk-5002-es-8-6-compatibility",
       "url": "https://help.splunk.com/en/splunk-enterprise-security-8/release-notes-and-resources/8.6/splunk-enterprise-security-release-notes/compatibility-and-regional-availability",
-      "checked_at": "2026-09-30T12:58:27+00:00",
+      "checked_at": "2026-10-29T01:53:16+00:00",
       "status": "blocked",
       "http_status": 403,
       "final_url": "https://help.splunk.com/en/splunk-enterprise-security-8/release-notes-and-resources/8.6/splunk-enterprise-security-release-notes/compatibility-and-regional-availability",
@@ -81949,7 +81947,7 @@
     {
       "id": "splk-5002-findings-8-4",
       "url": "https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.4/findings/monitor-your-security-operations-center-with-findings-in-splunk-enterprise-security",
-      "checked_at": "2026-09-30T12:58:27+00:00",
+      "checked_at": "2026-10-29T01:53:16+00:00",
       "status": "blocked",
       "http_status": 403,
       "final_url": "https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.4/findings/monitor-your-security-operations-center-with-findings-in-splunk-enterprise-security",
@@ -81963,7 +81961,7 @@
     {
       "id": "splk-5002-risk-modifiers-8-0",
       "url": "https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.0/risk-based-alerting/modifying-risk-using-risk-modifiers-in-splunk-enterprise-security",
-      "checked_at": "2026-09-30T12:58:27+00:00",
+      "checked_at": "2026-10-29T01:53:16+00:00",
       "status": "blocked",
       "http_status": 403,
       "final_url": "https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.0/risk-based-alerting/modifying-risk-using-risk-modifiers-in-splunk-enterprise-security",
@@ -81977,7 +81975,7 @@
     {
       "id": "splk-5002-soar-cloud-playbooks",
       "url": "https://help.splunk.com/en/splunk-soar/soar-cloud/develop-apps/build-playbooks/introduction-to-splunk-soar-playbooks/use-playbooks-to-automate-analyst-workflows-in-splunk-soar-cloud",
-      "checked_at": "2026-09-30T12:58:27+00:00",
+      "checked_at": "2026-10-29T01:53:16+00:00",
       "status": "blocked",
       "http_status": 403,
       "final_url": "https://help.splunk.com/en/splunk-soar/soar-cloud/develop-apps/build-playbooks/introduction-to-splunk-soar-playbooks/use-playbooks-to-automate-analyst-workflows-in-splunk-soar-cloud",
@@ -89452,7 +89450,7 @@
     {
       "id": "panw-cortex-xdr-5x-case-detail",
       "url": "https://docs-cortex.paloaltonetworks.com/r/Cortex-XDR/Cortex-XDR-5.x-Documentation/Detailed-View",
-      "checked_at": "2026-10-29T01:31:28+00:00",
+      "checked_at": "2026-10-29T01:53:49+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://cortex-docs.paloaltonetworks.com/cortex-xdr-5.x/detect-investigate-and-respond-to-threats/investigate-and-respond-to-cases/analyze-and-resolve-cases/analyze-case-details/detailed-view",
@@ -89532,8 +89530,7 @@
       "duration_signals": [],
       "signal_fingerprint": "f488119f52a1ff72ecc5b5a2aa7cbc673529e13ae20fd2177fb39b142a568184",
       "error": ""
-    }
-,
+    },
     {
       "id": "c1000-185-watsonx-dev-tutorial",
       "url": "https://developer.ibm.com/articles/awb-get-started-with-watsonx/",
@@ -90058,8 +90055,7 @@
       "duration_signals": [],
       "signal_fingerprint": "7e8d644c3c07776af5926aaefd5371fea6d3bab7fd62ed85127b1a0239417871",
       "error": ""
-    }
-,
+    },
     {
       "id": "panw-edu-210-firewall-essentials",
       "url": "https://www.paloaltonetworks.com/services/education/edu-210-firewall-essentials-configuration-and-management",
@@ -90297,7 +90293,7 @@
     {
       "id": "panw-cortex-july-2026-release",
       "url": "https://www.paloaltonetworks.com/blog/security-operations/whats-new-in-cortex-july-2026/",
-      "checked_at": "2026-10-29T01:32:09+00:00",
+      "checked_at": "2026-10-29T01:53:49+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.paloaltonetworks.com/blog/security-operations/whats-new-in-cortex-july-2026/",
@@ -90309,6 +90305,412 @@
         "9 minutes"
       ],
       "signal_fingerprint": "b9eb04d91480d7be8f52b19ece8599ed7eccc799afcf9fdbdf111ce0bb5cb258",
+      "error": ""
+    },
+    {
+      "id": "c1000-156-credential-page",
+      "url": "https://www.ibm.com/training/certification/ibm-certified-administrator-security-qradar-siem-v75-C9004600",
+      "checked_at": "2026-10-29T01:54:03+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://www.ibm.com/training/certification/ibm-certified-administrator-security-qradar-siem-v75-C9004600",
+      "content_type": "text/html; charset=utf-8",
+      "page_title": "IBM Certified Administrator - Security QRadar SIEM V7.5 | IBM Training Certification",
+      "canonical_url": "https://www.ibm.com/training/certification/ibm-certified-administrator-security-qradar-siem-v75-C9004600",
+      "duration_signals": [],
+      "signal_fingerprint": "5cb5b3f901b3d2716e15673d623b7435a993374e4eb987ef3ffd5f0e1730285a",
+      "error": ""
+    },
+    {
+      "id": "ibm-c1000-156-prep-sla6910",
+      "url": "https://www.ibm.com/training/course/qradar-siem-v75-administration-exam-c1000-156-preparation-guide-SLA6910",
+      "checked_at": "2026-10-29T01:54:03+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://www.ibm.com/training/course/qradar-siem-v75-administration-exam-c1000-156-preparation-guide-SLA6910",
+      "content_type": "text/html; charset=utf-8",
+      "page_title": "QRadar SIEM V7.5 Administration - Exam C1000-156 Preparation Guide | SLA6910 | IBM Training Course",
+      "canonical_url": "https://www.ibm.com/training/course/qradar-siem-v75-administration-exam-c1000-156-preparation-guide-SLA6910",
+      "duration_signals": [],
+      "signal_fingerprint": "c970a1437c6fcde891b99e72d38775f22f01a65c009bc756b805ca2215682b1d",
+      "error": ""
+    },
+    {
+      "id": "ibm-qradar-101-news",
+      "url": "https://www.ibm.com/community/101/qradar/",
+      "checked_at": "2026-10-29T01:54:03+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://www.ibm.com/community/101/qradar/",
+      "content_type": "text/html; charset=utf-8",
+      "page_title": "QRadar 101",
+      "canonical_url": "https://www.ibm.com/community/101/qradar/",
+      "duration_signals": [],
+      "signal_fingerprint": "535be2fb3efa59fabb9163c73eb7d0b3489069527e5bcb4fc97cda3379e2822d",
+      "error": ""
+    },
+    {
+      "id": "ibm-qradar-auto-update-migration-2026",
+      "url": "https://www.ibm.com/support/pages/node/7278729",
+      "checked_at": "2026-10-29T01:54:03+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://www.ibm.com/support/pages/node/7278729",
+      "content_type": "text/html; charset=UTF-8",
+      "page_title": "Notice: QRadar Auto Update Server Migration 21 Jul 2026",
+      "canonical_url": "https://www.ibm.com/support/pages/notice-qradar-auto-update-server-migration-21-jul-2026",
+      "duration_signals": [],
+      "signal_fingerprint": "c1ec9ff6f7989b752185834bcaa97beae074698d5b79d6e4a5b5b937f536faad",
+      "error": ""
+    },
+    {
+      "id": "ibm-qradar-software-101",
+      "url": "https://www.ibm.com/community/101/qradar/software/",
+      "checked_at": "2026-10-29T01:54:03+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://www.ibm.com/community/101/qradar/software/",
+      "content_type": "text/html; charset=utf-8",
+      "page_title": "Software | QRadar 101",
+      "canonical_url": "https://www.ibm.com/community/101/qradar/software/",
+      "duration_signals": [],
+      "signal_fingerprint": "9338cb9e5147511461097c6efb258531db39b50354c49020bd2eb615bea80b37",
+      "error": ""
+    },
+    {
+      "id": "panw-xsiam-engineer-ilt",
+      "url": "https://www.paloaltonetworks.com/services/education/ilt-xsiam-security-operations-integration-automation",
+      "checked_at": "2026-10-29T01:53:51+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://www.paloaltonetworks.com/services/education/ilt-xsiam-security-operations-integration-automation",
+      "content_type": "text/html;charset=utf-8",
+      "page_title": "Cortex XSIAM: Security Operations, Integration, and Automation",
+      "canonical_url": "https://www.paloaltonetworks.com/services/education/ilt-xsiam-security-operations-integration-automation",
+      "duration_signals": [],
+      "signal_fingerprint": "dcc506985c9fc2beffbc63d11cb4607be28d465ed2e871826aa4a0afa4d6f118",
+      "error": ""
+    },
+    {
+      "id": "panw-xsoar-engineer-ilt",
+      "url": "https://www.paloaltonetworks.com/services/education/ilt-cortex-xsoar-engineering-security-automation-solutions",
+      "checked_at": "2026-10-29T01:54:01+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://www.paloaltonetworks.com/services/education/ilt-cortex-xsoar-engineering-security-automation-solutions",
+      "content_type": "text/html;charset=utf-8",
+      "page_title": "Cortex XSOAR: Engineering Security Automation Solutions",
+      "canonical_url": "https://www.paloaltonetworks.com/services/education/ilt-cortex-xsoar-engineering-security-automation-solutions",
+      "duration_signals": [],
+      "signal_fingerprint": "014983066fa46e3d594e841c92c11342ac11a050bd69431cea0d8e93318a1aa2",
+      "error": ""
+    },
+    {
+      "id": "panw-xsoar-engineer-release-notes-8-saas",
+      "url": "https://cortex-docs.paloaltonetworks.com/cortex-xsoar-8-saas-releases/cortex-xsoar-8-saas-releases.md",
+      "checked_at": "2026-10-29T02:00:44+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://cortex-docs.paloaltonetworks.com/cortex-xsoar-8-saas-releases/cortex-xsoar-8-saas-releases.md",
+      "content_type": "text/markdown; charset=utf-8",
+      "page_title": "",
+      "canonical_url": "",
+      "duration_signals": [],
+      "signal_fingerprint": "",
+      "error": ""
+    },
+    {
+      "id": "splk-5002-course-track-2026",
+      "url": "https://www.splunk.com/en_us/pdfs/training/splunk-certified-cybersecurity-defense-engineer-track.pdf",
+      "checked_at": "2026-10-29T01:54:01+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://www.splunk.com/en_us/pdfs/training/splunk-certified-cybersecurity-defense-engineer-track.pdf",
+      "content_type": "application/pdf",
+      "page_title": "",
+      "canonical_url": "",
+      "duration_signals": [],
+      "signal_fingerprint": "",
+      "error": ""
+    },
+    {
+      "id": "splk-5002-es-87-release-notes",
+      "url": "https://help.splunk.com/en/splunk-enterprise-security-8/release-notes-and-resources/8.7/splunk-enterprise-security-release-notes/release-notes-for-splunk-enterprise-security",
+      "checked_at": "2026-10-29T01:54:01+00:00",
+      "status": "blocked",
+      "http_status": 403,
+      "final_url": "https://help.splunk.com/en/splunk-enterprise-security-8/release-notes-and-resources/8.7/splunk-enterprise-security-release-notes/release-notes-for-splunk-enterprise-security",
+      "content_type": "",
+      "page_title": "",
+      "canonical_url": "",
+      "duration_signals": [],
+      "signal_fingerprint": "",
+      "error": "Forbidden"
+    },
+    {
+      "id": "splk-5002-es-88-release-notes",
+      "url": "https://help.splunk.com/en/splunk-enterprise-security-8/release-notes-and-resources/8.8/splunk-enterprise-security-release-notes/release-notes-for-splunk-enterprise-security",
+      "checked_at": "2026-10-29T01:54:01+00:00",
+      "status": "blocked",
+      "http_status": 403,
+      "final_url": "https://help.splunk.com/en/splunk-enterprise-security-8/release-notes-and-resources/8.8/splunk-enterprise-security-release-notes/release-notes-for-splunk-enterprise-security",
+      "content_type": "",
+      "page_title": "",
+      "canonical_url": "",
+      "duration_signals": [],
+      "signal_fingerprint": "",
+      "error": "Forbidden"
+    },
+    {
+      "id": "splk-5003-course-track-2026",
+      "url": "https://www.splunk.com/en_us/pdfs/training/splunk-certified-cybersecurity-defense-architect-track-flowchart.pdf",
+      "checked_at": "2026-10-29T01:54:01+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://www.splunk.com/en_us/pdfs/training/splunk-certified-cybersecurity-defense-architect-track-flowchart.pdf",
+      "content_type": "application/pdf",
+      "page_title": "",
+      "canonical_url": "",
+      "duration_signals": [],
+      "signal_fingerprint": "",
+      "error": ""
+    },
+    {
+      "id": "splunk-cloud-admin-acs-compatibility-1052605",
+      "url": "https://help.splunk.com/en/splunk-cloud-platform/administer/admin-config-service-manual/10.5.2605/using-the-admin-config-service-acs--api/admin-config-service-acs-requirements-and-compatibility-matrix",
+      "checked_at": "2026-10-29T01:54:01+00:00",
+      "status": "blocked",
+      "http_status": 403,
+      "final_url": "https://help.splunk.com/en/splunk-cloud-platform/administer/admin-config-service-manual/10.5.2605/using-the-admin-config-service-acs--api/admin-config-service-acs-requirements-and-compatibility-matrix",
+      "content_type": "",
+      "page_title": "",
+      "canonical_url": "",
+      "duration_signals": [],
+      "signal_fingerprint": "",
+      "error": "Forbidden"
+    },
+    {
+      "id": "splunk-cloud-admin-acs-release-notes-1052605",
+      "url": "https://help.splunk.com/en/splunk-cloud-platform/release-notes/10.5.2605/splunk-cloud-platform-release-notes/admin-configuration-service",
+      "checked_at": "2026-10-29T01:54:01+00:00",
+      "status": "blocked",
+      "http_status": 403,
+      "final_url": "https://help.splunk.com/en/splunk-cloud-platform/release-notes/10.5.2605/splunk-cloud-platform-release-notes/admin-configuration-service",
+      "content_type": "",
+      "page_title": "",
+      "canonical_url": "",
+      "duration_signals": [],
+      "signal_fingerprint": "",
+      "error": "Forbidden"
+    },
+    {
+      "id": "splunk-cloud-admin-course-description",
+      "url": "https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-cloud-administration-course-description.pdf",
+      "checked_at": "2026-10-29T01:54:01+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://www.splunk.com/en_us/pdfs/training/splunk-cloud-administration-course-description.pdf",
+      "content_type": "application/pdf",
+      "page_title": "",
+      "canonical_url": "",
+      "duration_signals": [],
+      "signal_fingerprint": "",
+      "error": ""
+    },
+    {
+      "id": "splunk-cloud-transition-course-description",
+      "url": "https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/transitioning-to-splunk-cloud-course-description.pdf",
+      "checked_at": "2026-10-29T01:54:01+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://www.splunk.com/en_us/pdfs/training/transitioning-to-splunk-cloud-course-description.pdf",
+      "content_type": "application/pdf",
+      "page_title": "",
+      "canonical_url": "",
+      "duration_signals": [],
+      "signal_fingerprint": "",
+      "error": ""
+    },
+    {
+      "id": "splunk-core-consultant-course-track",
+      "url": "https://www.splunk.com/en_us/pdfs/training/splunk-core-certified-consultant-track.pdf",
+      "checked_at": "2026-10-29T01:54:01+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://www.splunk.com/en_us/pdfs/training/splunk-core-certified-consultant-track.pdf",
+      "content_type": "application/pdf",
+      "page_title": "",
+      "canonical_url": "",
+      "duration_signals": [],
+      "signal_fingerprint": "",
+      "error": ""
+    },
+    {
+      "id": "splunk-core-consultant-labs-course",
+      "url": "https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/core-consultant-labs-course-description.pdf",
+      "checked_at": "2026-10-29T01:54:01+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://www.splunk.com/en_us/pdfs/training/core-consultant-labs-course-description.pdf",
+      "content_type": "application/pdf",
+      "page_title": "",
+      "canonical_url": "",
+      "duration_signals": [],
+      "signal_fingerprint": "",
+      "error": ""
+    },
+    {
+      "id": "splunk-enterprise-104-release-notes",
+      "url": "https://help.splunk.com/en/splunk-enterprise/release-notes-and-updates/release-notes/10.4/whats-new/welcome-to-splunk-enterprise-10.4",
+      "checked_at": "2026-10-29T01:54:01+00:00",
+      "status": "blocked",
+      "http_status": 403,
+      "final_url": "https://help.splunk.com/en/splunk-enterprise/release-notes-and-updates/release-notes/10.4/whats-new/welcome-to-splunk-enterprise-10.4",
+      "content_type": "",
+      "page_title": "",
+      "canonical_url": "",
+      "duration_signals": [],
+      "signal_fingerprint": "",
+      "error": "Forbidden"
+    },
+    {
+      "id": "splunk-enterprise-admin-course-data",
+      "url": "https://www.splunk.com/en_us/pdfs/training/splunk-enterprise-data-administration-course-description.pdf",
+      "checked_at": "2026-10-29T01:54:02+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://www.splunk.com/en_us/pdfs/training/splunk-enterprise-data-administration-course-description.pdf",
+      "content_type": "application/pdf",
+      "page_title": "",
+      "canonical_url": "",
+      "duration_signals": [],
+      "signal_fingerprint": "",
+      "error": ""
+    },
+    {
+      "id": "splunk-enterprise-admin-course-system",
+      "url": "https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-enterprise-system-administration-course-description.pdf",
+      "checked_at": "2026-10-29T01:54:02+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://www.splunk.com/en_us/pdfs/training/splunk-enterprise-system-administration-course-description.pdf",
+      "content_type": "application/pdf",
+      "page_title": "",
+      "canonical_url": "",
+      "duration_signals": [],
+      "signal_fingerprint": "",
+      "error": ""
+    },
+    {
+      "id": "splunk-enterprise-architect-course-architecture",
+      "url": "https://www.splunk.com/en_us/pdfs/training/architecting-splunk-enterprise-deployments-course-description.pdf",
+      "checked_at": "2026-10-29T01:54:02+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://www.splunk.com/en_us/pdfs/training/architecting-splunk-enterprise-deployments-course-description.pdf",
+      "content_type": "application/pdf",
+      "page_title": "",
+      "canonical_url": "",
+      "duration_signals": [],
+      "signal_fingerprint": "",
+      "error": ""
+    },
+    {
+      "id": "splunk-enterprise-architect-course-lab",
+      "url": "https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/deployment-practical-lab-course-description.pdf",
+      "checked_at": "2026-10-29T01:54:02+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://www.splunk.com/en_us/pdfs/training/deployment-practical-lab-course-description.pdf",
+      "content_type": "application/pdf",
+      "page_title": "",
+      "canonical_url": "",
+      "duration_signals": [],
+      "signal_fingerprint": "",
+      "error": ""
+    },
+    {
+      "id": "splunk-enterprise-architect-course-track",
+      "url": "https://www.splunk.com/en_us/pdfs/training/splunk-enterprise-certified-architect-track.pdf",
+      "checked_at": "2026-10-29T01:54:02+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://www.splunk.com/en_us/pdfs/training/splunk-enterprise-certified-architect-track.pdf",
+      "content_type": "application/pdf",
+      "page_title": "",
+      "canonical_url": "",
+      "duration_signals": [],
+      "signal_fingerprint": "",
+      "error": ""
+    },
+    {
+      "id": "splunk-o11y-metrics-user-course-fundamentals",
+      "url": "https://www.splunk.com/en_us/pdfs/training/fundamentals-of-metrics-monitoring-course-description.pdf",
+      "checked_at": "2026-10-29T01:54:02+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://www.splunk.com/en_us/pdfs/training/fundamentals-of-metrics-monitoring-course-description.pdf",
+      "content_type": "application/pdf",
+      "page_title": "",
+      "canonical_url": "",
+      "duration_signals": [],
+      "signal_fingerprint": "",
+      "error": ""
+    },
+    {
+      "id": "splunk-o11y-metrics-user-course-track",
+      "url": "https://www.splunk.com/en_us/pdfs/training/splunk-o11y-cloud-certified-metrics-user-track.pdf",
+      "checked_at": "2026-10-29T01:54:02+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://www.splunk.com/en_us/pdfs/training/splunk-o11y-cloud-certified-metrics-user-track.pdf",
+      "content_type": "application/pdf",
+      "page_title": "",
+      "canonical_url": "",
+      "duration_signals": [],
+      "signal_fingerprint": "",
+      "error": ""
+    },
+    {
+      "id": "splunk-o11y-metrics-user-course-visualizing",
+      "url": "https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/visualizing-and-alerting-in-splunk-im-course-description.pdf",
+      "checked_at": "2026-10-29T01:54:02+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://www.splunk.com/en_us/pdfs/training/visualizing-and-alerting-in-splunk-im-course-description.pdf",
+      "content_type": "application/pdf",
+      "page_title": "",
+      "canonical_url": "",
+      "duration_signals": [],
+      "signal_fingerprint": "",
+      "error": ""
+    },
+    {
+      "id": "splunk-o11y-metrics-user-release-notes-2026-10",
+      "url": "https://help.splunk.com/en/splunk-observability-cloud/release-notes/october-2026",
+      "checked_at": "2026-10-29T01:54:01+00:00",
+      "status": "blocked",
+      "http_status": 403,
+      "final_url": "https://help.splunk.com/en/splunk-observability-cloud/release-notes/october-2026",
+      "content_type": "",
+      "page_title": "",
+      "canonical_url": "",
+      "duration_signals": [],
+      "signal_fingerprint": "",
+      "error": "Forbidden"
+    },
+    {
+      "id": "panw-xsoar-engineer-docs-index",
+      "url": "https://cortex-docs.paloaltonetworks.com/cortex-xsoar-docs/",
+      "checked_at": "2026-10-29T02:00:44+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://cortex-docs.paloaltonetworks.com/cortex-xsoar-docs",
+      "content_type": "text/html; charset=utf-8",
+      "page_title": "Cortex XSOAR Documentation | Cortex Documentation Portal",
+      "canonical_url": "https://cortex-docs.paloaltonetworks.com/cortex-xsoar-docs",
+      "duration_signals": [],
+      "signal_fingerprint": "21abec4dc08cadeb42964f17b0771436aee4b17f024f3cce8118763973e0cf82",
       "error": ""
     }
   ]
