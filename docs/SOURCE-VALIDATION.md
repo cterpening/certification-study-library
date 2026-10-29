@@ -1644,6 +1644,10 @@ The review follows the actual linked `_new.pdf` dated June 1, 2026; a different 
 
 ## GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT coverage record
 
+### October 29, 2026 tool-scope repair
+
+The current official four-page exam guide was reopened and its five domains and 28 named tool-list entries were reconfirmed against the frozen objective snapshot (SHA-256 unchanged: `116a4f1d0a6ee037866c312dc554b8f132248f1cbaddaf837fdce48c0116d454`). The study guide now maps each listed tool to its role, selection decision, failure boundary and learner check; Agent Retrieval (formerly Vector Search 2.0) is explicitly separated from Vector Search 1.0. A new dated source-validation receipt is `google-professional-agentic-architect-2026-10-29-tool-scope-source-validation`. Current evidence covers 49 external guide links: 48 healthy, one automated-fetch timeout, none missing or broken. The timed-out Antigravity Workbench CLI page was opened directly in the browser on October 29; its Preview status and behavior are documented with a **VERIFY CURRENT** boundary. No cloud product behavior was executed. Independent fresh-context audit is recorded in the repair audit batch.
+
 The September 29 [deep review](research/2026-09-29-google-professional-agentic-architect-deep-review.md) maps 31 detailed objectives. Four-page blueprint fully read: 31 considerations under 11 numbered objectives, with 28 tool-list entries mapped separately. Explicitly reviewed and accepted the capability snapshot’s FAQ-pointer addition and initialized missing lifecycle monitoring; post-check unchanged. Added 31 executed local action-control checks, 52 answers, eight proposed labs and current beta/catalog evidence. Live cloud/framework execution and independent human review remain pending. Current guide citations: 26 registered, 26 reachable, 0 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
 
 - Reviewed: September 6, 2026, during the open beta registration window and before multiple-choice testing begins

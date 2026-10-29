@@ -39438,6 +39438,73 @@
         "missing_or_error": 4
       },
       "notes": "Rechecked current official PCEA-30-01 syllabus on October 29, 2026; still ACTIVE, September 2, 2025 update, same six blocks and 46 objectives. Objective snapshot and source validation are unchanged. Link-health counts reconcile to the October 29 global scan; this is a source-health reconciliation only, not the queued full content refresh. See docs/research/2026-10-29-nonms-refresh-group-15.md."
+    },
+    {
+      "id": "google-professional-agentic-architect-2026-10-29-tool-scope-source-validation",
+      "exam_code": "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT",
+      "guide_path": "guides/GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT-professional-agentic-architect.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-29",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/google-professional-agentic-architect-official-objectives.txt",
+      "blueprint_snapshot_sha256": "116a4f1d0a6ee037866c312dc554b8f132248f1cbaddaf837fdce48c0116d454",
+      "objective_coverage": [
+        {
+          "objective_group": "Low-code agents (13%)",
+          "guide_sections": [
+            "1. Low-code agents — about 13%",
+            "Blueprint tool learning map"
+          ]
+        },
+        {
+          "objective_group": "Coding agents (17%)",
+          "guide_sections": [
+            "2. Coding agents — about 17%",
+            "Blueprint tool learning map"
+          ]
+        },
+        {
+          "objective_group": "Custom agents (33%)",
+          "guide_sections": [
+            "3. Custom agents — about 33%",
+            "Blueprint tool learning map"
+          ]
+        },
+        {
+          "objective_group": "Evaluate and deploy (22%)",
+          "guide_sections": [
+            "4. Evaluate and deploy — about 22%",
+            "Blueprint tool learning map"
+          ]
+        },
+        {
+          "objective_group": "Secure and govern (15%)",
+          "guide_sections": [
+            "5. Secure and govern — about 15%",
+            "Blueprint tool learning map"
+          ]
+        },
+        {
+          "objective_group": "28 explicit tool-list entries",
+          "guide_sections": [
+            "Blueprint tool learning map: each name mapped to role, choice, failure boundary and learner check; Vector Search 1.0 distinguished from Agent Retrieval (formerly Vector Search 2.0)."
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 49,
+        "reachable": 48,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "October 29, 2026 repair review: reopened the current four-page official exam PDF and issuer certification page; confirmed the five weighted domains and 28 tool-list entries remain unchanged from the existing objective snapshot. Expanded the guide with individual role, selection, failure-boundary and learner-check mappings for all listed tools. The official Antigravity Workbench CLI page was directly opened and read; local automated fetch timed out, so its source-health state remains blocked and the guide labels the preview volatile. Forty-eight of 49 guide links have healthy automated evidence; one access timeout is reconciled to the successful direct official-page read. No product behavior was executed. Fresh-context independent audit is recorded separately."
     }
 ]
 }

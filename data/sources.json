@@ -57886,7 +57886,7 @@
     {
       "id":"google-pmle-ai-docs","title":"Google Cloud AI and ML documentation","url":"https://cloud.google.com/docs/ai-ml","publisher":"Google Cloud","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"],"notes":"First-party current entry point for AI/ML products, MLOps, gen AI and responsible-AI documentation."
     },
-    {
+        {
       "id": "google-paa-certification",
       "title": "Professional Agentic Architect beta certification",
       "url": "https://cloud.google.com/learn/certification/agentic-architect/",
@@ -57894,13 +57894,13 @@
       "authority_class": 1,
       "source_type": "exam-blueprint",
       "access_model": "public",
-      "last_checked": "2026-10-28",
+      "last_checked": "2026-10-29",
       "supported_exams": [
         "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
       ],
-      "notes": "Complete current public text read: beta open through September30; 3h/$120/~80/English/one-year, two-part assessment. Snapshot difference only adds FAQ pointer; explicit comparison retained before acceptance. September 29 GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT deep review: Complete current public text read: beta open through September30; 3h/$120/~80/English/one-year, two-part assessment. Snapshot difference only adds FAQ pointer; explicit comparison retained before acceptance. See docs/research/2026-09-29-google-professional-agentic-architect-deep-review.md No live infrastructure execution."
+      "notes": "Complete current public text read: beta open through September30; 3h/$120/~80/English/one-year, two-part assessment. Snapshot difference only adds FAQ pointer; explicit comparison retained before acceptance. September 29 GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT deep review: Complete current public text read: beta open through September30; 3h/$120/~80/English/one-year, two-part assessment. Snapshot difference only adds FAQ pointer; explicit comparison retained before acceptance. See docs/research/2026-09-29-google-professional-agentic-architect-deep-review.md No live infrastructure execution. Oct 29, 2026: current public issuer page/PDF opened; five domains and 28-entry tool list reconfirmed without a map change."
     },
-    {
+        {
       "id": "google-paa-exam-guide",
       "title": "Professional Agentic Architect certification exam guide",
       "url": "https://services.google.com/fh/files/misc/professional_agentic_architect_exam_guide_english.pdf",
@@ -57908,11 +57908,11 @@
       "authority_class": 1,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-10-28",
+      "last_checked": "2026-10-29",
       "supported_exams": [
         "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
       ],
-      "notes": "Detailed four-page beta guide with five domains, complete consideration list and explicit in-scope tool catalog; no visible publication date. September 29 GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT deep review: Actual four-page PDF fully read, layout retained;31 considerations under11 headings plus28 separate tool-list entries. No printed publication date inferred. See docs/research/2026-09-29-google-professional-agentic-architect-deep-review.md No live infrastructure execution."
+      "notes": "Detailed four-page beta guide with five domains, complete consideration list and explicit in-scope tool catalog; no visible publication date. September 29 GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT deep review: Actual four-page PDF fully read, layout retained;31 considerations under11 headings plus28 separate tool-list entries. No printed publication date inferred. See docs/research/2026-09-29-google-professional-agentic-architect-deep-review.md No live infrastructure execution. Oct 29, 2026: current public issuer page/PDF opened; five domains and 28-entry tool list reconfirmed without a map change."
     },
     {
       "id": "google-paa-skills-path",
@@ -80800,7 +80800,272 @@
         "SPLUNK-ADVANCED-POWER-USER"
       ],
       "notes": "Current versioned Enterprise reference checked 2026-10-29; guide examples remain proposed and unexecuted."
+    },
+    {
+      "id": "google-paa-agents-overview",
+      "title": "Agents overview",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/agents",
+      "publisher": "Google",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-29",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+      ],
+      "notes": "Current Agent Platform component boundaries across build, scale, govern and optimize; no deployment executed."
+    },
+    {
+      "id": "google-paa-agent-gateway-overview",
+      "title": "Agent Gateway overview",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/gateways/agent-gateway-overview",
+      "publisher": "Google",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-29",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+      ],
+      "notes": "Gateway enforcement model and supported integration boundaries; volatile rollout/features require recheck."
+    },
+    {
+      "id": "google-paa-agent-registry-overview",
+      "title": "Agent Registry overview",
+      "url": "https://docs.cloud.google.com/agent-registry/overview",
+      "publisher": "Google",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-29",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+      ],
+      "notes": "Registry resource types, identity links, registration and discovery boundaries; registration is not an authorization grant."
+    },
+    {
+      "id": "google-paa-auth-manager-overview",
+      "title": "Agent Identity auth manager overview",
+      "url": "https://docs.cloud.google.com/iam/docs/auth-manager-overview",
+      "publisher": "Google",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-29",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+      ],
+      "notes": "Credential vault/authentication broker and ADK outbound credential flow; do not generalize to every gateway deployment path."
+    },
+    {
+      "id": "google-paa-skill-registry-overview",
+      "title": "Skill Registry overview",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/build/skill-registry",
+      "publisher": "Google",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-29",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+      ],
+      "notes": "Skill package and revision lifecycle; page labels product Preview and that status is volatile."
+    },
+    {
+      "id": "google-paa-agent-retrieval-overview",
+      "title": "Agent Retrieval overview",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/build/vector-search-2/overview",
+      "publisher": "Google",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-29",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+      ],
+      "notes": "Agent Retrieval (formerly Vector Search 2.0), collections, data objects and indexes; separate from Vector Search 1.0."
+    },
+    {
+      "id": "google-paa-vector-search-overview",
+      "title": "Vector Search overview",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/build/vector-search/overview",
+      "publisher": "Google",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-29",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+      ],
+      "notes": "Separate Vector Search ANN index/deployment model; compare with Agent Retrieval without treating them as synonyms."
+    },
+    {
+      "id": "google-paa-apps-data-stores",
+      "title": "Gemini Enterprise apps and data stores",
+      "url": "https://docs.cloud.google.com/gemini/enterprise/docs/apps-data-stores",
+      "publisher": "Google",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-29",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+      ],
+      "notes": "App/data-store search configuration; access and source synchronization need explicit validation."
+    },
+    {
+      "id": "google-paa-agent-search-ranking",
+      "title": "About retrieval and ranking in Agent Search",
+      "url": "https://docs.cloud.google.com/generative-ai-app-builder/docs/ranking-overview",
+      "publisher": "Google",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-29",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+      ],
+      "notes": "Agent Search retrieval, ranking, filters and tuning; ranking relevance does not establish authorization or answer grounding."
+    },
+    {
+      "id": "google-paa-rag-engine-overview",
+      "title": "RAG Engine overview",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/build/rag-engine/rag-overview",
+      "publisher": "Google",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-29",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+      ],
+      "notes": "Managed RAG pipeline concepts and scope; region, feature, access, parser and billing limits are volatile."
+    },
+    {
+      "id": "google-paa-agents-cli",
+      "title": "Agents CLI getting started",
+      "url": "https://google.github.io/agents-cli/guide/getting-started/",
+      "publisher": "Google",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-29",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+      ],
+      "notes": "Agent Platform CLI lifecycle and coding-agent integrations; commands/permissions must be inspected before use."
+    },
+    {
+      "id": "google-paa-antigravity-overview",
+      "title": "AI developer tools overview",
+      "url": "https://docs.cloud.google.com/gemini/enterprise/docs/ai-developer-tools-overview",
+      "publisher": "Google",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-29",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+      ],
+      "notes": "Antigravity developer environment context; app, CLI, SDK and hosted runtime are not interchangeable."
+    },
+    {
+      "id": "google-paa-antigravity-workbench",
+      "title": "Use Antigravity CLI in Workbench",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/notebooks/workbench/instances/antigravity-cli",
+      "publisher": "Google",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-29",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+      ],
+      "notes": "Workbench approval/action behavior for Antigravity CLI; environment and launch-stage availability are volatile."
+    },
+    {
+      "id": "google-paa-agent-evaluation",
+      "title": "Agent evaluation overview",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/optimize/evaluation/agent-evaluation",
+      "publisher": "Google",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-29",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+      ],
+      "notes": "Agent evaluation lifecycle and available metrics; evaluation is evidence, not a safety guarantee."
+    },
+    {
+      "id": "google-paa-agent-evaluation-methods",
+      "title": "Evaluate agents",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/optimize/evaluation/evaluate-agents",
+      "publisher": "Google",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-29",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+      ],
+      "notes": "Test cases, trajectory/final response evaluation and analysis; evaluation methods and APIs are volatile."
+    },
+    {
+      "id": "google-paa-agent-observability",
+      "title": "Agent observability overview",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/optimize/observability/overview",
+      "publisher": "Google",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-29",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+      ],
+      "notes": "Agent logs, traces and metrics; instrumentation and privacy-safe attributes remain necessary."
+    },
+    {
+      "id": "google-paa-agent-runtime",
+      "title": "Agent Runtime",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/build/runtime",
+      "publisher": "Google",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-29",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+      ],
+      "notes": "Managed agent runtime and framework contracts; region, framework, session and pricing limits require current check."
+    },
+    {
+      "id": "google-paa-sensitive-data-protection",
+      "title": "Sensitive Data Protection overview",
+      "url": "https://docs.cloud.google.com/sensitive-data-protection/docs/sensitive-data-protection-overview",
+      "publisher": "Google",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-29",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+      ],
+      "notes": "Discovery, inspection and de-identification capabilities; detection does not grant authorization or guarantee complete removal."
+    },
+    {
+      "id": "google-paa-gke-overview",
+      "title": "Google Kubernetes Engine overview",
+      "url": "https://docs.cloud.google.com/kubernetes-engine/docs/concepts/kubernetes-engine-overview",
+      "publisher": "Google",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-10-29",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"
+      ],
+      "notes": "GKE architecture and managed-cluster boundaries; no cluster execution claimed."
     }
-
 ]
 }
