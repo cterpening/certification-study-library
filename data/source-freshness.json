@@ -4,6 +4,866 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-10-29-nonms-g16",
+      "title": "Non-Microsoft certification refresh group 16",
+      "rubric_version": 1,
+      "created_on": "2026-10-29",
+      "completed_on": "2026-10-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Explicit ten-guide batch from the frozen eligible non-Microsoft queue, following Group 15.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex",
+          "three research agents"
+        ],
+        "independence": "mixed",
+        "human_review": false
+      },
+      "exam_codes": [
+        "SY0-701",
+        "XK0-006",
+        "SOL-C01",
+        "SSCP",
+        "SERVICENOW-CSA",
+        "SERVICENOW-CAD",
+        "SPLK-5001",
+        "WDE-40-01",
+        "WDA-41-01",
+        "PCET-30-01"
+      ],
+      "results": [
+        {
+          "exam_code": "SY0-701",
+          "vendor_id": "comptia",
+          "guide_path": "guides/SY0-701-comptia-security-plus.md",
+          "baseline_sha256": "8a5c30bc31c8e84185c7133532ad72951b4b76a6961c2032ff7796e5b49325b9",
+          "scanned_on": "2026-10-29",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "blocked",
+              "notes": "CompTIA's V7/V8 HTML pages could not be read through the public browser reader today. The official objective/status monitor returned the existing V7 snapshot unchanged; a secondary projected launch date is not accepted as a verified issuer announcement."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Relevant current public technical sources were checked; any version-, edition-, tenant-, browser- or entitlement-specific limits are stated beside the guide note."
+            },
+            "official_release_channels": {
+              "status": "blocked",
+              "notes": "CompTIA's V7/V8 HTML pages could not be read through the public browser reader today. The official objective/status monitor returned the existing V7 snapshot unchanged; a secondary projected launch date is not accepted as a verified issuer announcement."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Registered sources, supported exam mappings and existing guide resources were compared with current candidates and the refreshed guide."
+            },
+            "contradiction_and_gap_review": {
+              "status": "blocked",
+              "notes": "CompTIA's V7/V8 HTML pages could not be read through the public browser reader today. The official objective/status monitor returned the existing V7 snapshot unchanged; a secondary projected launch date is not accepted as a verified issuer announcement."
+            }
+          },
+          "findings": [
+            {
+              "id": "sy0-701-nist-sp800-63-4-implementation-hub",
+              "check": "official_product_documentation",
+              "category": "new-source",
+              "title": "NIST SP 800-63-4 implementation resource hub",
+              "url": "https://pages.nist.gov/800-63-4/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SY0-701"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current SP 800-63-4 hub links the A/B/C volumes; FAQ and conformance material remain “Coming Soon.”",
+              "recommendation": "Use only within the stated objective and access boundary; recheck the live official source before scheduling, purchase or product change.",
+              "disposition": "applied",
+              "source_id": "nist-sp800-63-4-implementation-hub",
+              "resolution": "Added the hub as navigation context and preserved the implementation-material caveat."
+            },
+            {
+              "id": "sy0-701-official-blueprint-and-lifecycle-access-blocked",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "CompTIA Security+ V7 certification page could not be re-opened in this pass",
+              "url": "https://www.comptia.org/en-us/certifications/security/v7/",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "SY0-701"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "CompTIA's V7/V8 HTML pages could not be read through the public browser reader today. The official objective/status monitor returned the existing V7 snapshot unchanged; a secondary projected launch date is not accepted as a verified issuer announcement.",
+              "recommendation": "Use the retained accepted snapshot and prior dated issuer evidence; recheck the exact first-party page or PDF before asserting a new transition or lifecycle detail.",
+              "disposition": "blocked"
+            },
+            {
+              "id": "sy0-701-official-release-channels-access-blocked",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "CompTIA Security+ V7 certification page could not be re-opened in this pass",
+              "url": "https://www.comptia.org/en-us/certifications/security/v7/",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "SY0-701"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "CompTIA's V7/V8 HTML pages could not be read through the public browser reader today. The official objective/status monitor returned the existing V7 snapshot unchanged; a secondary projected launch date is not accepted as a verified issuer announcement.",
+              "recommendation": "Use the retained accepted snapshot and prior dated issuer evidence; recheck the exact first-party page or PDF before asserting a new transition or lifecycle detail.",
+              "disposition": "blocked"
+            },
+            {
+              "id": "sy0-701-contradiction-and-gap-review-access-blocked",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "CompTIA Security+ V7 certification page could not be re-opened in this pass",
+              "url": "https://www.comptia.org/en-us/certifications/security/v7/",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "SY0-701"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "CompTIA's V7/V8 HTML pages could not be read through the public browser reader today. The official objective/status monitor returned the existing V7 snapshot unchanged; a secondary projected launch date is not accepted as a verified issuer announcement.",
+              "recommendation": "Use the retained accepted snapshot and prior dated issuer evidence; recheck the exact first-party page or PDF before asserting a new transition or lifecycle detail.",
+              "disposition": "blocked"
+            }
+          ],
+          "notes": "Research, guide changes and access boundaries are documented in docs/research/2026-10-29-nonms-refresh-group-16.md. Objective scopes remain unchanged. Fresh-context AI review is recorded separately; no human review or live product execution is claimed."
+        },
+        {
+          "exam_code": "XK0-006",
+          "vendor_id": "comptia",
+          "guide_path": "guides/XK0-006-comptia-linux-plus.md",
+          "baseline_sha256": "a1ba0d51accb4b0f9c0fac9ac6b4df84062fbd80345784e4764a8af8e551e4a7",
+          "scanned_on": "2026-10-29",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "blocked",
+              "notes": "The official Linux+ HTML page could not be read through the public browser reader today. The existing official objective/status snapshot remains the accepted baseline; no exact retirement or successor date was verified."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Relevant current public technical sources were checked; any version-, edition-, tenant-, browser- or entitlement-specific limits are stated beside the guide note."
+            },
+            "official_release_channels": {
+              "status": "blocked",
+              "notes": "The official Linux+ HTML page could not be read through the public browser reader today. The existing official objective/status snapshot remains the accepted baseline; no exact retirement or successor date was verified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Registered sources, supported exam mappings and existing guide resources were compared with current candidates and the refreshed guide."
+            },
+            "contradiction_and_gap_review": {
+              "status": "blocked",
+              "notes": "The official Linux+ HTML page could not be read through the public browser reader today. The existing official objective/status snapshot remains the accepted baseline; no exact retirement or successor date was verified."
+            }
+          },
+          "findings": [
+            {
+              "id": "xk0-006-linux-kernel-7x-release-archive",
+              "check": "official_product_documentation",
+              "category": "new-source",
+              "title": "Linux kernel 7.x release archive",
+              "url": "https://www.kernel.org/pub/linux/kernel/v7.x/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "XK0-006"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current archive gives a dated upstream 7.x example distinct from distro kernels and backports.",
+              "recommendation": "Use only within the stated objective and access boundary; recheck the live official source before scheduling, purchase or product change.",
+              "disposition": "applied",
+              "source_id": "linux-kernel-7x-release-archive",
+              "resolution": "Added a dated kernel-stream example with distro-support limits."
+            },
+            {
+              "id": "xk0-006-linux-foundation-lfs101",
+              "check": "catalog_comparison",
+              "category": "new-source",
+              "title": "Introduction to Linux (LFS101)",
+              "url": "https://training.linuxfoundation.org/training/introduction-to-linux/",
+              "source_type": "official-training",
+              "affected_exams": [
+                "XK0-006"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Linux Foundation lists a free introductory Linux course; no current provider duration is published on the public page.",
+              "recommendation": "Use only within the stated objective and access boundary; recheck the live official source before scheduling, purchase or product change.",
+              "disposition": "applied",
+              "source_id": "linux-foundation-lfs101",
+              "resolution": "Added as a free foundational route with a clearly labeled author estimate."
+            },
+            {
+              "id": "xk0-006-official-blueprint-and-lifecycle-access-blocked",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "CompTIA Linux+ certification page could not be re-opened in this pass",
+              "url": "https://www.comptia.org/en-us/certifications/linux/",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "XK0-006"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The official Linux+ HTML page could not be read through the public browser reader today. The existing official objective/status snapshot remains the accepted baseline; no exact retirement or successor date was verified.",
+              "recommendation": "Use the retained accepted snapshot and prior dated issuer evidence; recheck the exact first-party page or PDF before asserting a new transition or lifecycle detail.",
+              "disposition": "blocked"
+            },
+            {
+              "id": "xk0-006-official-release-channels-access-blocked",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "CompTIA Linux+ certification page could not be re-opened in this pass",
+              "url": "https://www.comptia.org/en-us/certifications/linux/",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "XK0-006"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The official Linux+ HTML page could not be read through the public browser reader today. The existing official objective/status snapshot remains the accepted baseline; no exact retirement or successor date was verified.",
+              "recommendation": "Use the retained accepted snapshot and prior dated issuer evidence; recheck the exact first-party page or PDF before asserting a new transition or lifecycle detail.",
+              "disposition": "blocked"
+            },
+            {
+              "id": "xk0-006-contradiction-and-gap-review-access-blocked",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "CompTIA Linux+ certification page could not be re-opened in this pass",
+              "url": "https://www.comptia.org/en-us/certifications/linux/",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "XK0-006"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The official Linux+ HTML page could not be read through the public browser reader today. The existing official objective/status snapshot remains the accepted baseline; no exact retirement or successor date was verified.",
+              "recommendation": "Use the retained accepted snapshot and prior dated issuer evidence; recheck the exact first-party page or PDF before asserting a new transition or lifecycle detail.",
+              "disposition": "blocked"
+            }
+          ],
+          "notes": "Research, guide changes and access boundaries are documented in docs/research/2026-10-29-nonms-refresh-group-16.md. Objective scopes remain unchanged. Fresh-context AI review is recorded separately; no human review or live product execution is claimed."
+        },
+        {
+          "exam_code": "SOL-C01",
+          "vendor_id": "snowflake",
+          "guide_path": "guides/SOL-C01-snowpro-associate-platform.md",
+          "baseline_sha256": "5e581e9aafc69a1550a6092c7edd1dfd5f680d33161f8f3ed8c442f295394f2a",
+          "scanned_on": "2026-10-29",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "blocked",
+              "notes": "The official two-page transition FAQ PDF could not be opened in this pass. The May 4 retirement and distinction between the proctored credential and educational badge are retained from the September 29 first-party read; this historical credential is not schedulable."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Relevant current public technical sources were checked; any version-, edition-, tenant-, browser- or entitlement-specific limits are stated beside the guide note."
+            },
+            "official_release_channels": {
+              "status": "blocked",
+              "notes": "The official two-page transition FAQ PDF could not be opened in this pass. The May 4 retirement and distinction between the proctored credential and educational badge are retained from the September 29 first-party read; this historical credential is not schedulable."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Registered sources, supported exam mappings and existing guide resources were compared with current candidates and the refreshed guide."
+            },
+            "contradiction_and_gap_review": {
+              "status": "blocked",
+              "notes": "The official two-page transition FAQ PDF could not be opened in this pass. The May 4 retirement and distinction between the proctored credential and educational badge are retained from the September 29 first-party read; this historical credential is not schedulable."
+            }
+          },
+          "findings": [
+            {
+              "id": "sol-c01-snowflake-restricted-session-scope-agents",
+              "check": "official_product_documentation",
+              "category": "new-source",
+              "title": "Restricted Session Scope for agents (GA)",
+              "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-09-03-restricted-session-scope",
+              "source_type": "release-notes",
+              "affected_exams": [
+                "SOL-C01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Snowflake documents a restricted session privilege ceiling intersecting with invoking-user RBAC.",
+              "recommendation": "Use only within the stated objective and access boundary; recheck the live official source before scheduling, purchase or product change.",
+              "disposition": "applied",
+              "source_id": "snowflake-restricted-session-scope-agents",
+              "resolution": "Added current least-privilege agent context; retired exam identity remains unchanged."
+            },
+            {
+              "id": "sol-c01-snowflake-level-up-first-concepts",
+              "check": "catalog_comparison",
+              "category": "updated-source",
+              "title": "Level Up: First Concepts Series",
+              "url": "https://learn.snowflake.com/en/pages/level-up-track",
+              "source_type": "official-training",
+              "affected_exams": [
+                "SOL-C01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The free track lists nine first-concept modules and an assessment; no total time is published.",
+              "recommendation": "Use only within the stated objective and access boundary; recheck the live official source before scheduling, purchase or product change.",
+              "disposition": "applied",
+              "source_id": "snowflake-level-up-first-concepts",
+              "resolution": "Added as an optional educational track, explicitly not a credential replacement."
+            },
+            {
+              "id": "sol-c01-official-blueprint-and-lifecycle-access-blocked",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "SnowPro Associate: Platform transition FAQ could not be re-opened in this pass",
+              "url": "https://publish-p93462-e887935.adobeaemcloud.com/content/dam/SnowProAssociateCertificationTransitionSnowflakeUniversityPlatformSkillsBadgeFAQs.pdf",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "SOL-C01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The official two-page transition FAQ PDF could not be opened in this pass. The May 4 retirement and distinction between the proctored credential and educational badge are retained from the September 29 first-party read; this historical credential is not schedulable.",
+              "recommendation": "Use the retained accepted snapshot and prior dated issuer evidence; recheck the exact first-party page or PDF before asserting a new transition or lifecycle detail.",
+              "disposition": "blocked"
+            },
+            {
+              "id": "sol-c01-official-release-channels-access-blocked",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "SnowPro Associate: Platform transition FAQ could not be re-opened in this pass",
+              "url": "https://publish-p93462-e887935.adobeaemcloud.com/content/dam/SnowProAssociateCertificationTransitionSnowflakeUniversityPlatformSkillsBadgeFAQs.pdf",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "SOL-C01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The official two-page transition FAQ PDF could not be opened in this pass. The May 4 retirement and distinction between the proctored credential and educational badge are retained from the September 29 first-party read; this historical credential is not schedulable.",
+              "recommendation": "Use the retained accepted snapshot and prior dated issuer evidence; recheck the exact first-party page or PDF before asserting a new transition or lifecycle detail.",
+              "disposition": "blocked"
+            },
+            {
+              "id": "sol-c01-contradiction-and-gap-review-access-blocked",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "SnowPro Associate: Platform transition FAQ could not be re-opened in this pass",
+              "url": "https://publish-p93462-e887935.adobeaemcloud.com/content/dam/SnowProAssociateCertificationTransitionSnowflakeUniversityPlatformSkillsBadgeFAQs.pdf",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "SOL-C01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The official two-page transition FAQ PDF could not be opened in this pass. The May 4 retirement and distinction between the proctored credential and educational badge are retained from the September 29 first-party read; this historical credential is not schedulable.",
+              "recommendation": "Use the retained accepted snapshot and prior dated issuer evidence; recheck the exact first-party page or PDF before asserting a new transition or lifecycle detail.",
+              "disposition": "blocked"
+            }
+          ],
+          "notes": "Research, guide changes and access boundaries are documented in docs/research/2026-10-29-nonms-refresh-group-16.md. Objective scopes remain unchanged. Fresh-context AI review is recorded separately; no human review or live product execution is claimed."
+        },
+        {
+          "exam_code": "SSCP",
+          "vendor_id": "isc2",
+          "guide_path": "guides/SSCP-isc2-systems-security-certified-practitioner.md",
+          "baseline_sha256": "005a1dabe603675cf12e5e71af8c29fd9eb1926c14de1507dce7e38e58232991",
+          "scanned_on": "2026-10-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current official outline/credential sources were checked. No objective-map or lifecycle transition was accepted; dates and current exam terms remain subject to issuer pages."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Relevant current public technical sources were checked; any version-, edition-, tenant-, browser- or entitlement-specific limits are stated beside the guide note."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Relevant official release pages and current provider announcements were checked; volatile product updates are dated and not represented as exam scope."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Registered sources, supported exam mappings and existing guide resources were compared with current candidates and the refreshed guide."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Guide VERIFY CURRENT boundaries and issuer discrepancies were rechecked; remaining conflicts are disclosed in the guide and Group 16 independent review."
+            }
+          },
+          "findings": [
+            {
+              "id": "sscp-isc2-sscp-flashcards",
+              "check": "catalog_comparison",
+              "category": "new-source",
+              "title": "SSCP Flash Cards",
+              "url": "https://cloud.connect.isc2.org/sscp-flashcards",
+              "source_type": "official-training",
+              "affected_exams": [
+                "SSCP"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "ISC2 lists free domain flashcards covering the seven SSCP domains; no duration is published.",
+              "recommendation": "Use only within the stated objective and access boundary; recheck the live official source before scheduling, purchase or product change.",
+              "disposition": "applied",
+              "source_id": "isc2-sscp-flashcards",
+              "resolution": "Added as optional recall practice, not a substitute for experience or labs."
+            },
+            {
+              "id": "sscp-nist-sp800-63-4-implementation-hub",
+              "check": "official_product_documentation",
+              "category": "new-source",
+              "title": "NIST SP 800-63-4 implementation resource hub",
+              "url": "https://pages.nist.gov/800-63-4/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SSCP"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Hub navigation links SP 800-63-4 volumes 63A/B/C; some implementation support content remains forthcoming.",
+              "recommendation": "Use only within the stated objective and access boundary; recheck the live official source before scheduling, purchase or product change.",
+              "disposition": "applied",
+              "source_id": "nist-sp800-63-4-implementation-hub",
+              "resolution": "Added bounded implementation navigation; no exam-map change."
+            }
+          ],
+          "notes": "Research, guide changes and access boundaries are documented in docs/research/2026-10-29-nonms-refresh-group-16.md. Objective scopes remain unchanged. Fresh-context AI review is recorded separately; no human review or live product execution is claimed."
+        },
+        {
+          "exam_code": "SERVICENOW-CSA",
+          "vendor_id": "servicenow",
+          "guide_path": "guides/SERVICENOW-CSA-servicenow-certified-system-administrator.md",
+          "baseline_sha256": "b5b08f833c0c820046eff3875158ded0fbf6559eb6cc952eb063cd89b76b6f35",
+          "scanned_on": "2026-10-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current official outline/credential sources were checked. No objective-map or lifecycle transition was accepted; dates and current exam terms remain subject to issuer pages."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Relevant current public technical sources were checked; any version-, edition-, tenant-, browser- or entitlement-specific limits are stated beside the guide note."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Relevant official release pages and current provider announcements were checked; volatile product updates are dated and not represented as exam scope."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Registered sources, supported exam mappings and existing guide resources were compared with current candidates and the refreshed guide."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Guide VERIFY CURRENT boundaries and issuer discrepancies were rechecked; remaining conflicts are disclosed in the guide and Group 16 independent review."
+            }
+          },
+          "findings": [
+            {
+              "id": "servicenow-csa-servicenow-career-journeys-2026",
+              "check": "catalog_comparison",
+              "category": "new-source",
+              "title": "ServiceNow Career Journeys and Learning Paths",
+              "url": "https://www.servicenow.com/community/s/cgfwn76974/attachments/cgfwn76974/training-certifications-forum/27136/1/Learning%20paths%20-%20ServiceNow.pdf",
+              "source_type": "official-training",
+              "affected_exams": [
+                "SERVICENOW-CSA"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "2026 journey PDF presents an admin route and related courses without public duration/entitlement guarantees.",
+              "recommendation": "Use only within the stated objective and access boundary; recheck the live official source before scheduling, purchase or product change.",
+              "disposition": "applied",
+              "source_id": "servicenow-career-journeys-2026",
+              "resolution": "Added as a route map with account/catalog access caveat."
+            },
+            {
+              "id": "servicenow-csa-servicenow-app-engine-studio-brazil-release-notes",
+              "check": "official_product_documentation",
+              "category": "new-source",
+              "title": "App Engine Studio release notes (Brazil)",
+              "url": "https://www.servicenow.com/docs/r/release-notes/app-engine-studio-rn.html",
+              "source_type": "release-notes",
+              "affected_exams": [
+                "SERVICENOW-CSA"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Brazil release notes say PDF table extraction is deprecated starting in Brazil and point to Build Agent.",
+              "recommendation": "Use only within the stated objective and access boundary; recheck the live official source before scheduling, purchase or product change.",
+              "disposition": "applied",
+              "source_id": "servicenow-app-engine-studio-brazil-release-notes",
+              "resolution": "Added release-specific deprecation context, not exam scope."
+            }
+          ],
+          "notes": "Research, guide changes and access boundaries are documented in docs/research/2026-10-29-nonms-refresh-group-16.md. Objective scopes remain unchanged. Fresh-context AI review is recorded separately; no human review or live product execution is claimed."
+        },
+        {
+          "exam_code": "SERVICENOW-CAD",
+          "vendor_id": "servicenow",
+          "guide_path": "guides/SERVICENOW-CAD-servicenow-certified-application-developer.md",
+          "baseline_sha256": "d3251d76f2e960923d02b5feb33f89dc019c88ea6815ec63560a07bf1b60e6c1",
+          "scanned_on": "2026-10-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current official outline/credential sources were checked. No objective-map or lifecycle transition was accepted; dates and current exam terms remain subject to issuer pages."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Relevant current public technical sources were checked; any version-, edition-, tenant-, browser- or entitlement-specific limits are stated beside the guide note."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Relevant official release pages and current provider announcements were checked; volatile product updates are dated and not represented as exam scope."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Registered sources, supported exam mappings and existing guide resources were compared with current candidates and the refreshed guide."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Guide VERIFY CURRENT boundaries and issuer discrepancies were rechecked; remaining conflicts are disclosed in the guide and Group 16 independent review."
+            }
+          },
+          "findings": [
+            {
+              "id": "servicenow-cad-servicenow-career-journeys-2026",
+              "check": "catalog_comparison",
+              "category": "new-source",
+              "title": "ServiceNow Career Journeys and Learning Paths",
+              "url": "https://www.servicenow.com/community/s/cgfwn76974/attachments/cgfwn76974/training-certifications-forum/27136/1/Learning%20paths%20-%20ServiceNow.pdf",
+              "source_type": "official-training",
+              "affected_exams": [
+                "SERVICENOW-CAD"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "2026 journey PDF lists an Application Developer route without public duration or universal entitlement.",
+              "recommendation": "Use only within the stated objective and access boundary; recheck the live official source before scheduling, purchase or product change.",
+              "disposition": "applied",
+              "source_id": "servicenow-career-journeys-2026",
+              "resolution": "Added as an optional route map."
+            },
+            {
+              "id": "servicenow-cad-servicenow-developing-applications-brazil",
+              "check": "official_product_documentation",
+              "category": "new-source",
+              "title": "Developing your application (Brazil release)",
+              "url": "https://www.servicenow.com/docs/r/application-development/developing-applications.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SERVICENOW-CAD"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Brazil documentation distinguishes Build Agent, Creator Studio, App Engine Studio and ServiceNow Studio.",
+              "recommendation": "Use only within the stated objective and access boundary; recheck the live official source before scheduling, purchase or product change.",
+              "disposition": "applied",
+              "source_id": "servicenow-developing-applications-brazil",
+              "resolution": "Added bounded builder comparison with release/role/entitlement caveat."
+            }
+          ],
+          "notes": "Research, guide changes and access boundaries are documented in docs/research/2026-10-29-nonms-refresh-group-16.md. Objective scopes remain unchanged. Fresh-context AI review is recorded separately; no human review or live product execution is claimed."
+        },
+        {
+          "exam_code": "SPLK-5001",
+          "vendor_id": "splunk",
+          "guide_path": "guides/SPLK-5001-splunk-certified-cybersecurity-defense-analyst.md",
+          "baseline_sha256": "7b033b24ea79620419b9adf487283a8bfb098869ac9142c342c133fa1908e6b9",
+          "scanned_on": "2026-10-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current official outline/credential sources were checked. No objective-map or lifecycle transition was accepted; dates and current exam terms remain subject to issuer pages."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Relevant current public technical sources were checked; any version-, edition-, tenant-, browser- or entitlement-specific limits are stated beside the guide note."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Relevant official release pages and current provider announcements were checked; volatile product updates are dated and not represented as exam scope."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Registered sources, supported exam mappings and existing guide resources were compared with current candidates and the refreshed guide."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Guide VERIFY CURRENT boundaries and issuer discrepancies were rechecked; remaining conflicts are disclosed in the guide and Group 16 independent review."
+            }
+          },
+          "findings": [
+            {
+              "id": "splk-5001-splunk-cda-course-descriptions",
+              "check": "catalog_comparison",
+              "category": "new-source",
+              "title": "Cybersecurity Defense Analyst course description: Cybersecurity Landscape",
+              "url": "https://www.splunk.com/en_us/pdfs/training/cybersecurity-landscape-course-description.pdf",
+              "source_type": "official-training",
+              "affected_exams": [
+                "SPLK-5001"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Official path description names seven courses but supplies no total duration or guaranteed full blueprint coverage.",
+              "recommendation": "Use only within the stated objective and access boundary; recheck the live official source before scheduling, purchase or product change.",
+              "disposition": "applied",
+              "source_id": "splunk-cda-course-descriptions",
+              "resolution": "Added optional course path without inventing time or entitlement."
+            },
+            {
+              "id": "splk-5001-splk-5002-es-87-release-notes",
+              "check": "official_product_documentation",
+              "category": "updated-source",
+              "title": "Splunk Enterprise Security 8.7 Release Notes",
+              "url": "https://help.splunk.com/en/splunk-enterprise-security-8/release-notes-and-resources/8.7/splunk-enterprise-security-release-notes/release-notes-for-splunk-enterprise-security",
+              "source_type": "release-notes",
+              "affected_exams": [
+                "SPLK-5001"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "ES 8.7.2 dated October 23 is bug-fix-only; notes retain edition boundaries and require full backup before one-way 8.x upgrade.",
+              "recommendation": "Use only within the stated objective and access boundary; recheck the live official source before scheduling, purchase or product change.",
+              "disposition": "applied",
+              "source_id": "splk-5002-es-87-release-notes",
+              "resolution": "Expanded source mapping to SPLK-5001 and added version-gated product context."
+            }
+          ],
+          "notes": "Research, guide changes and access boundaries are documented in docs/research/2026-10-29-nonms-refresh-group-16.md. Objective scopes remain unchanged. Fresh-context AI review is recorded separately; no human review or live product execution is claimed."
+        },
+        {
+          "exam_code": "WDE-40-01",
+          "vendor_id": "js-institute",
+          "guide_path": "guides/WDE-40-01-certified-entry-level-web-developer.md",
+          "baseline_sha256": "ee58394c4ab70834698cc54a5e4e0893e505cee6a546e2613809a4675792bc9c",
+          "scanned_on": "2026-10-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current official outline/credential sources were checked. No objective-map or lifecycle transition was accepted; dates and current exam terms remain subject to issuer pages."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Relevant current public technical sources were checked; any version-, edition-, tenant-, browser- or entitlement-specific limits are stated beside the guide note."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Relevant official release pages and current provider announcements were checked; volatile product updates are dated and not represented as exam scope."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Registered sources, supported exam mappings and existing guide resources were compared with current candidates and the refreshed guide."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Guide VERIFY CURRENT boundaries and issuer discrepancies were rechecked; remaining conflicts are disclosed in the guide and Group 16 independent review."
+            }
+          },
+          "findings": [
+            {
+              "id": "wde-40-01-whatwg-html-popover",
+              "check": "official_product_documentation",
+              "category": "new-source",
+              "title": "HTML Living Standard: popover attribute",
+              "url": "https://html.spec.whatwg.org/multipage/popover.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "WDE-40-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current living standard documents auto/hint/manual popovers and invoker behavior.",
+              "recommendation": "Use only within the stated objective and access boundary; recheck the live official source before scheduling, purchase or product change.",
+              "disposition": "applied",
+              "source_id": "whatwg-html-popover",
+              "resolution": "Added as non-objective interaction context with keyboard/focus/browser test boundary."
+            },
+            {
+              "id": "wde-40-01-edube-web-dev-101-html",
+              "check": "catalog_comparison",
+              "category": "new-source",
+              "title": "Web Dev 101: HTML (WD101)",
+              "url": "https://edube.org/study/html-essentials",
+              "source_type": "official-training",
+              "affected_exams": [
+                "WDE-40-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Edube distinguishes free Core from the USD49 Full Course and lists an approximately 25-hour provider estimate.",
+              "recommendation": "Use only within the stated objective and access boundary; recheck the live official source before scheduling, purchase or product change.",
+              "disposition": "applied",
+              "source_id": "edube-web-dev-101-html",
+              "resolution": "Updated the guide route and identified paid entitlements and unchecked course interior."
+            }
+          ],
+          "notes": "Research, guide changes and access boundaries are documented in docs/research/2026-10-29-nonms-refresh-group-16.md. Objective scopes remain unchanged. Fresh-context AI review is recorded separately; no human review or live product execution is claimed."
+        },
+        {
+          "exam_code": "WDA-41-01",
+          "vendor_id": "js-institute",
+          "guide_path": "guides/WDA-41-01-certified-associate-web-developer.md",
+          "baseline_sha256": "45bf81167a272ef8658efa9e5e8efdf0d4a2f7fc683e95d9281fec8b73ca7fff",
+          "scanned_on": "2026-10-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current official outline/credential sources were checked. No objective-map or lifecycle transition was accepted; dates and current exam terms remain subject to issuer pages."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Relevant current public technical sources were checked; any version-, edition-, tenant-, browser- or entitlement-specific limits are stated beside the guide note."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Relevant official release pages and current provider announcements were checked; volatile product updates are dated and not represented as exam scope."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Registered sources, supported exam mappings and existing guide resources were compared with current candidates and the refreshed guide."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Guide VERIFY CURRENT boundaries and issuer discrepancies were rechecked; remaining conflicts are disclosed in the guide and Group 16 independent review."
+            }
+          },
+          "findings": [
+            {
+              "id": "wda-41-01-whatwg-html-popover",
+              "check": "official_product_documentation",
+              "category": "new-source",
+              "title": "HTML Living Standard: popover attribute",
+              "url": "https://html.spec.whatwg.org/multipage/popover.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "WDA-41-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current living standard documents auto/hint/manual popovers and invoker behavior.",
+              "recommendation": "Use only within the stated objective and access boundary; recheck the live official source before scheduling, purchase or product change.",
+              "disposition": "applied",
+              "source_id": "whatwg-html-popover",
+              "resolution": "Added as non-objective HTML interaction context."
+            },
+            {
+              "id": "wda-41-01-edube-web-dev-102-css",
+              "check": "catalog_comparison",
+              "category": "new-source",
+              "title": "Web Dev 102: CSS (WD102)",
+              "url": "https://www.edube.org/study/css-essentials",
+              "source_type": "official-training",
+              "affected_exams": [
+                "WDA-41-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Edube lists free Core, USD49 Full Course, 9 modules/45+ lessons, and a provider-listed 40-hour estimate.",
+              "recommendation": "Use only within the stated objective and access boundary; recheck the live official source before scheduling, purchase or product change.",
+              "disposition": "applied",
+              "source_id": "edube-web-dev-102-css",
+              "resolution": "Updated the route and scoped paid entitlements/interior as unverified."
+            }
+          ],
+          "notes": "Research, guide changes and access boundaries are documented in docs/research/2026-10-29-nonms-refresh-group-16.md. Objective scopes remain unchanged. Fresh-context AI review is recorded separately; no human review or live product execution is claimed."
+        },
+        {
+          "exam_code": "PCET-30-01",
+          "vendor_id": "python-institute",
+          "guide_path": "guides/PCET-30-01-python-certified-entry-level-tester.md",
+          "baseline_sha256": "ab803b564cddcda1ea5f8f2225b8fa70357d3b212b1e10b55bc44334b837bb8d",
+          "scanned_on": "2026-10-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current official outline/credential sources were checked. No objective-map or lifecycle transition was accepted; dates and current exam terms remain subject to issuer pages."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Relevant current public technical sources were checked; any version-, edition-, tenant-, browser- or entitlement-specific limits are stated beside the guide note."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Relevant official release pages and current provider announcements were checked; volatile product updates are dated and not represented as exam scope."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Registered sources, supported exam mappings and existing guide resources were compared with current candidates and the refreshed guide."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Guide VERIFY CURRENT boundaries and issuer discrepancies were rechecked; remaining conflicts are disclosed in the guide and Group 16 independent review."
+            }
+          },
+          "findings": [
+            {
+              "id": "pcet-30-01-pytest-current-changelog",
+              "check": "official_product_documentation",
+              "category": "new-source",
+              "title": "pytest changelog",
+              "url": "https://docs.pytest.org/en/latest/changelog.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PCET-30-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "pytest 9.1.1 changelog documents cache keys outside the cache root being rejected; pytest is optional and outside PCET scope.",
+              "recommendation": "Use only within the stated objective and access boundary; recheck the live official source before scheduling, purchase or product change.",
+              "disposition": "applied",
+              "source_id": "pytest-current-changelog",
+              "resolution": "Added adjacent optional runner context without replacing unittest or changing exam objectives."
+            },
+            {
+              "id": "pcet-30-01-pcet-pt101-course-page",
+              "check": "catalog_comparison",
+              "category": "new-source",
+              "title": "Python for Testing 101 (PT101)",
+              "url": "https://pythoninstitute.org/python-for-testing-101",
+              "source_type": "official-training",
+              "affected_exams": [
+                "PCET-30-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Python Institute PT101 page and catalog expose different time estimates; lesson interior was not accessed.",
+              "recommendation": "Use only within the stated objective and access boundary; recheck the live official source before scheduling, purchase or product change.",
+              "disposition": "applied",
+              "source_id": "pcet-pt101-course-page",
+              "resolution": "Updated resource entry and retained the provider time discrepancy."
+            }
+          ],
+          "notes": "Research, guide changes and access boundaries are documented in docs/research/2026-10-29-nonms-refresh-group-16.md. Objective scopes remain unchanged. Fresh-context AI review is recorded separately; no human review or live product execution is claimed."
+        }
+      ],
+      "summary": {
+        "exam_count": 10,
+        "current": 7,
+        "review_required": 0,
+        "blocked": 3,
+        "queued_findings": 0,
+        "applied_findings": 19,
+        "no_action_findings": 0,
+        "blocked_findings": 9
+      }
+    },
+    {
       "id": "freshness-2026-09-30-splk-5002-deep-review",
       "title": "SPLK-5002 detailed scope and product-boundary review",
       "rubric_version": 1,

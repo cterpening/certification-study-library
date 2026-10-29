@@ -1440,7 +1440,7 @@ The September 29 [deep review](research/2026-09-29-n10-009-deep-review.md) maps 
 
 The review maps every public V9 domain and summary task to an end-to-end packet-walk and evidence model. Three scenarios, eight safe labs and 42 original checks cover OSI/encapsulation, appliances/cloud/traffic, services and subnetting, media/transceivers/topologies, routing/NAT/first hop, VLAN/STP/MTU, wireless and physical deployment, documentation/lifecycle/change/configuration, monitoring, recovery and network services, secure management, identity/segmentation/attacks/hardening, and the complete physical-through-application troubleshooting method. All nine guide URLs are cataloged: seven reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. The estimated-2027 statement is explicitly not represented as an exact retirement date. No proprietary objective PDF, PBQ, course lab or recalled item is used. Blueprint SHA-256: `c567a0adcbbf9a3ad2348be7a8187bbe7650479c142fb14b1b8c583fd64783f3`.
 
-## SY0-701 coverage record
+### SY0-701 coverage record
 
 The September 29 [deep review](research/2026-09-29-sy0-701-deep-review.md) maps 28 detailed objectives. Mapped all 28 numbered objectives in public PDF document 7.0. Added original cryptography and certificate examples with 34 executed checks, zero-trust roles, protocol/identity boundaries, current incident-response and severity context, worked risk/evidence/detection cases, 46 answers and eight proposed full labs. Corrected a stale replacement-exam answer, qualified blocked catalog claims and explicitly accepted duration-only monitor metadata while preserving history. Current guide citations: 28 registered, 26 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
 
@@ -1453,7 +1453,7 @@ The September 29 [deep review](research/2026-09-29-sy0-701-deep-review.md) maps 
 
 The review maps every public V7 domain and summary task into an asset → threat/vulnerability → business risk → layered control → telemetry/response → recovery/governance lifecycle. Three scenarios, eight safe labs and 42 original checks cover controls/CIA/AAA/zero trust/change/cryptography; actors/vectors/vulnerabilities/indicators/mitigation; on-premises/cloud/virtual/container/serverless/IaC/IoT/ICS architecture, infrastructure, data and resilience; baselines/assets/vulnerability management, SIEM/SOAR/EDR/XDR, enterprise controls, IAM/automation/incident/forensics; plus governance/risk/BIA, third parties, compliance/privacy, audits/testing and awareness. All eight guide URLs are cataloged: six reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. The guide records CompTIA's June 11, 2027 English retirement and August 13, 2027 Japanese/Portuguese/Spanish/Thai retirement without inferring a successor. No proprietary objectives, PBQs, course labs, leaked drafts or recalled items are used. Blueprint SHA-256: `9e13564c9c134ca42752f3bc90083f2da3568e7e9e93f9d068a98197fbe19528`.
 
-## XK0-006 coverage record
+### XK0-006 coverage record
 
 The September 29 [deep review](research/2026-09-29-xk0-006-deep-review.md) maps 29 detailed objectives. Mapped all 29 numbered PDF objectives and command-level details. Corrected umask/ACL and shell distinctions, documented older/misnamed outline tools against upstream references, expanded explicit OpenTofu/orchestration and monitoring scope, added original Bash/Python examples with 44 checks and an actual MSYS archive/restore, strengthened 46 answers/eight proposed labs, and accepted duration-only metadata with prior history retained. Native Linux runtime execution remains blocked and deferred. Current guide citations: 29 registered, 27 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
 
@@ -1700,7 +1700,7 @@ The September 29 [deep review](research/2026-09-29-200-901-deep-review.md) maps 
 
 The review maps every detailed v1.1 objective through intent → data/API contract → authentication/authorization → code/configuration → test → review → controlled execution → evidence → rollback. It covers XML/JSON/YAML/Python structures, TDD/methods/patterns/Git; REST/RPC/sync/async/webhooks/auth/HTTP diagnosis/Python requests; Cisco platform/SDK/DevNet-resource selection and YANG/NETCONF/RESTCONF; deployment/container/CI-CD/unit-test/Bash/DevOps/secret/data/web-risk controls; IaC/Ansible/Terraform/NSO/CML/pyATS plus Python/playbook/script/diff/sequence interpretation; and network paths, planes, services, ports, connectivity and application constraints. Three scenarios, eight labs and 46 checks are included. The guide explicitly reconciles the February 2026 DevNet-to-CCNA Automation rename, current first-party version-label mismatch and language-list mismatch. Nine URLs are reachable; O'Reilly and Udemy are automation-blocked; none are broken. No production target, exploit exercise, recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `b741522983500658e43c1a9a0200c142e4a626ff8d0ad8a01859f92d0670c60f`.
 
-## SOL-C01 coverage record
+### SOL-C01 coverage record
 
 The September 29 [deep review](research/2026-09-29-sol-c01-deep-review.md) maps 6 detailed objectives. Preserved six archived public abilities and frozen retired baseline; fully read actual two-page transition FAQ andfour-page trainingdatasheet. Updated currentPlatformcourse4h/30dayaccess,LegacyNotebookmigration,standardCHECKconstraints,COPYreplay/null handling,roleauthorization,cost/sharing andCortexaccess/bundle boundaries. Added45 executedlocalCSV/JSON/SQLitetransaction checks,42answers andeightconcretelabplans. NoSnowflakeaccount orcloudlabexecution;independenthumanreviewpending. Current guide citations: 26 registered, 25 reachable, 1 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
 
@@ -1765,7 +1765,7 @@ The September 29 [deep review](research/2026-09-29-cc-deep-review.md) maps 19 de
 
 The review maps all current domains and detailed topics through asset/business process → threat/vulnerability → likelihood/impact → selected administrative/technical/physical control → implementation owner → observable positive/negative evidence → authorized response/recovery. It covers CIA/AAA/privacy/ethics and risk; GRC/BC/DR/awareness/metrics; complete identity lifecycle and access models; packet/control/segmentation/Zero Trust/cloud responsibility; plus data/assets, event triage/intelligence, evidence-led response and authorized testing. AI examples remain integrated into ordinary security principles rather than treated as an unsourced extra domain. Three scenarios, eight labs and 40 checks are included. Five links are reachable; O'Reilly and Udemy are automation-blocked; none are broken. No recalled/live item, dump, exploit target or copied course content is used. Blueprint SHA-256: `e78550c6ab0a65fb1dbff89436b7e7d72dfc575393ffd439c42929acf180aea4`.
 
-## SSCP coverage record
+### SSCP coverage record
 
 The September 29 [deep review](research/2026-09-29-sscp-deep-review.md) maps 36 detailed objectives. Mapped36 current numbered objectives, preserved prior snapshots/history before accepting an editorial testing-center label change, and reconciled PDF/web and course-version differences. Added11 executed TLS cases,48 answered prompts and8 proposed infrastructure labs. Two commercial catalogs remain blocked; human review and infrastructure execution are pending. Current guide citations: 23 registered, 21 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
 
@@ -1934,7 +1934,7 @@ The September 29 [deep review](research/2026-09-29-mongodb-associate-atlas-admin
 
 The review maps the complete current public 13-skill learning path as the available official learning-path scope through MongoDB operations and query evidence, Atlas topology and sharding, separated control/data-plane identities, layered network/encryption controls, observable performance diagnosis, tested resilience/recovery, and safe UI/CLI/API/IaC administration. Three scenarios, eight safe labs and 40 original checks are included. MongoDB gates the more detailed objective guide behind free enrollment, and its route could not be re-audited on September 7, so a maintainer must still reconcile it; no hidden weights are invented. AWS Prescriptive Guidance adds an explicitly AWS-specific architecture lab, not exam scope or a multi-cloud default. Ten URLs are reachable and three paid pages are automation-blocked; none are broken. No recalled/live item, answer dump or copied course content is used. Public-scope SHA-256: `7aa8a437967e8cbf16e95913b1aeb5854e8acff22fd223793292aa2774d6a273`.
 
-## SERVICENOW-CSA coverage record
+### SERVICENOW-CSA coverage record
 
 The September 29 [deep review](research/2026-09-29-servicenow-csa-deep-review.md) maps 30 detailed objectives. Mapped all30 current canonical subtopics with historical snapshot preservation, answered40 original prompts andexecuted34 localPython/SQLite checks. Addedthreeworkedscenarios/eightproposedlabs, correctedWelcomelink andcatalogboundaries, qualifiedACL/import/BusinessRule/update-setbehavior. Canonicalmainmanuallyverified; ACLwording/releasehistory,assignedmaintenance,liveinstanceandhumanreviewremainpending. Current guide citations: 30 registered, 27 reachable, 3 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
 
@@ -1947,7 +1947,7 @@ The September 29 [deep review](research/2026-09-29-servicenow-csa-deep-review.md
 
 The review maps all six weighted domains through role-aware navigation and record context, supported instance change, collaborative lists/forms/tasks/analytics/notifications, governed knowledge/catalog/flow/Virtual Agent paths, controlled schema/import/CMDB/security design, and testable UI policies, Business Rules, scripting and update-set transport. Three scenarios, eight safe labs and 40 checks are included. Complete indexed KB0011554 text now confirms the snapshot, contract and maintenance boundary despite the simple-client loading shell. A user-authored community checklist is labeled as broad practice context only, not scope or exam-contract authority; its comments and arbitrary flashcard/mock links are excluded. Ten URLs are reachable and two are automation-blocked; none are broken. Only ServiceNow's official MeasureUp product is listed for exam-style questions. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `9a7543abda6dcc1af08f0fba350c382652ed41eac6a2de9599f7c80d223b99e9`.
 
-## SERVICENOW-CAD coverage record
+### SERVICENOW-CAD coverage record
 
 The September 29 [deep review](research/2026-09-29-servicenow-cad-deep-review.md) maps 22 detailed objectives. Mapped all 22 canonical subtopics, aligned stale snapshot/checklist weights while preserving history, answered 40 original prompts and executed 38 local JavaScript checks. Added three worked scenarios and eight proposed instance labs; clarified API/query authorization, pagination, replay, source control and test boundaries. Canonical main manually verified; contradictory ACL prose, live instance work, inaccessible interiors and human review remain pending. Current guide citations: 29 registered, 26 reachable, 3 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
 
@@ -1988,7 +1988,7 @@ The September 29 [deep review](research/2026-09-29-nse-4-fortios-deep-review.md)
 
 The review maps every current 7.6.0 task through management and recoverability, log/HA/resource/failure evidence, FortiGate VM/CNF and FortiSASE boundaries, first-match policy/session/NAT and LDAP/RADIUS/FSSO identity, flow/proxy and certificate/full inspection, web/application/AV/IPS controls, route and SD-WAN decisions, and complete redundant IPsec paths. Three scenarios, eight safe labs and 40 checks are included. The five published ranges are preserved as ranges; no artificial point distribution is invented. The old FCP/FortiGate Administrator wording is kept separate from the live NSE 4 FortiOS credential. Twelve links are reachable and two commercial pages are automation-blocked; none are broken. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `1b33e766a66667a35836c8bdc2632bd72c3489d5d265e3cf4fe52452c72cfc6f`.
 
-## SPLK-5001 coverage record
+### SPLK-5001 coverage record
 
 The September 29 [deep review](research/2026-09-29-splk-5001-deep-review.md) maps 24 detailed objectives. Mapped all 24 public PDF objectives and clarified renewal eligibility, summary completeness, CIM semantics, entity boundaries and version-specific detection outputs. Added 40 answer notes, three worked scenarios, eight proposed activities, 49 executed Python checks and two unexecuted SPL examples. Course-stage names, account/lab access and human review remain pending. Current guide citations: 29 registered, 15 reachable, 14 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
 
@@ -2230,7 +2230,7 @@ No recalled/live item, answer dump or copied course content is used. Blueprint
 SHA-256:
 `00f65a3f8edeefdc02faacdef875af8d2535c1077cc8e932109c3d2709e75628`.
 
-## WDE-40-01 coverage record
+### WDE-40-01 coverage record
 
 The September 29 [deep review](research/2026-09-29-wde-40-01-deep-review.md) maps 40 detailed objectives. Mapped all 40 objectives and improved all 40 answers. Seven exact public code blocks verified, including three complete HTML pages: 54 core and 128 Chrome browser checks, two introductory examples and hash-checked extraction of eleven original assets. Three pages passed Nu validation with zero messages. Corrected form, ARIA/landmark, media, storage and policy boundaries; eight broader labs remain proposed. Current guide citations: 40 registered, 33 reachable, 2 access-blocked, 5 missing/error. Earlier dates/counts below describe the historical review.
 
@@ -2253,7 +2253,7 @@ recalled/live item, answer dump or copied course content is used. Blueprint
 SHA-256:
 `52a8efac1190c7d5b3e863705d0a0b7d4ea88ad72834aff4990051f21a9a7521`.
 
-## WDA-41-01 coverage record
+### WDA-41-01 coverage record
 
 The September 29 [deep review](research/2026-09-29-wda-41-01-deep-review.md) maps 40 detailed objectives. Mapped all 40 objectives and expanded all 40 answers. Fifteen exact public blocks and fourteen original assets verified: 42 CSS workbook checks, 90 Chrome harness checks, five zero-message Nu pages and two CSS3 validator passes. Actual Sass module compilation/source maps, Bootstrap rendering and bounded raw performance entries recorded. Ten broader labs remain proposed; official/access and human-review limits remain. Current guide citations: 46 registered, 36 reachable, 2 access-blocked, 8 missing/error. Earlier dates/counts below describe the historical review.
 
@@ -2420,7 +2420,7 @@ figures and an executive summary. No recalled/live item, answer dump or copied
 course content is used. Blueprint SHA-256:
 `987bb1bd68b7df55fb008bb96de6a3b1b407c1d63c042e35437ab2eadd4532bf`.
 
-## PCET-30-01 coverage record
+### PCET-30-01 coverage record
 
 The September 30 [deep review](research/2026-09-30-pcet-30-01-deep-review.md) maps 22 detailed objectives. Mapped all 22 objectives and expanded 17 answers. Three exact original Python files pass 25 test methods and 55 probe checks per normal/optimized mode: requirements, boundaries, doubles, toy state transitions, actual coverage/mutant evidence, finite refactoring, scripted pdb, assertion removal and isolated logging. Corrected learning entitlements and least-powerful-double guidance; publisher conflicts, inaccessible policy/PDF, absent Pylint/Flake8, ten broader labs and human review remain explicit. Current guide citations: 20 registered, 16 reachable, 1 access-blocked, 3 missing/error. Earlier dates/counts below describe the historical review.
 
@@ -3410,3 +3410,87 @@ Current version transitions, product-context boundaries and unresolved issuer-pa
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
+
+## Group 16 — October 29, 2026
+
+Ten non-Microsoft guides were reviewed against their unchanged official objective snapshots. Current source findings, guide updates and limits are in `docs/research/2026-10-29-nonms-refresh-group-16.md`. These source checks do not claim human review.
+
+### SY0-701 coverage record
+
+- Reviewed: October 29, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official objective map: unchanged accepted snapshot (`data/objective-snapshots/sy0-701-official-objectives.txt`; SHA-256 `152af64f7b23ff8a264ea9aa465c610cc797fcdd6b771d8f7dfe15cdab6b9040`).
+- Objective coverage: 5 mapped groups; current guide coverage retained and checked against the official page/snapshot.
+- Link evidence: 29 unique external URLs; 27 reachable, 2 automation-blocked, 0 missing/error. Browser-reader evidence and unresolved issuer conflicts are recorded in the dated report.
+
+### XK0-006 coverage record
+
+- Reviewed: October 29, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official objective map: unchanged accepted snapshot (`data/objective-snapshots/xk0-006-official-objectives.txt`; SHA-256 `7092fafe78142df3f4be33e42aea257143769cc6268b90a4e1059f994c00496e`).
+- Objective coverage: 5 mapped groups; current guide coverage retained and checked against the official page/snapshot.
+- Link evidence: 31 unique external URLs; 29 reachable, 2 automation-blocked, 0 missing/error. Browser-reader evidence and unresolved issuer conflicts are recorded in the dated report.
+
+### SOL-C01 coverage record
+
+- Reviewed: October 29, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official objective map: unchanged accepted snapshot (`data/objective-snapshots/SOL-C01-official-objectives.txt`; SHA-256 `a930a723415ca1b8dfead2cf60a3d27b6c7eaf3d336fefc301421adee9123d57`).
+- Objective coverage: 6 mapped groups; current guide coverage retained and checked against the official page/snapshot.
+- Link evidence: 29 unique external URLs; 28 reachable, 1 automation-blocked, 0 missing/error. Browser-reader evidence and unresolved issuer conflicts are recorded in the dated report.
+
+### SSCP coverage record
+
+- Reviewed: October 29, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official objective map: unchanged accepted snapshot (`data/objective-snapshots/sscp-official-objectives.txt`; SHA-256 `5b6e5e57f166741802957b515a7ec737606e5d43ca796a3691127de083d0a6d4`).
+- Objective coverage: 7 mapped groups; current guide coverage retained and checked against the official page/snapshot.
+- Link evidence: 25 unique external URLs; 23 reachable, 2 automation-blocked, 0 missing/error. Browser-reader evidence and unresolved issuer conflicts are recorded in the dated report.
+
+### SERVICENOW-CSA coverage record
+
+- Reviewed: October 29, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official objective map: unchanged accepted snapshot (`data/objective-snapshots/servicenow-csa-official-objectives.txt`; SHA-256 `7b94b0c2b2f331a2e878694c8b9aaa6db8e998bfc0424d75dca80e6cdbe1d553`).
+- Objective coverage: 6 mapped groups; current guide coverage retained and checked against the official page/snapshot.
+- Link evidence: 33 unique external URLs; 30 reachable, 3 automation-blocked, 0 missing/error. Browser-reader evidence and unresolved issuer conflicts are recorded in the dated report.
+
+### SERVICENOW-CAD coverage record
+
+- Reviewed: October 29, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official objective map: unchanged accepted snapshot (`data/objective-snapshots/servicenow-cad-official-objectives.txt`; SHA-256 `f71371fc8583ec438fbdde805d2e69d8034607333e1bc033ccc74ae5a261b59a`).
+- Objective coverage: 6 mapped groups; current guide coverage retained and checked against the official page/snapshot.
+- Link evidence: 31 unique external URLs; 28 reachable, 3 automation-blocked, 0 missing/error. Browser-reader evidence and unresolved issuer conflicts are recorded in the dated report.
+
+### SPLK-5001 coverage record
+
+- Reviewed: October 29, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official objective map: unchanged accepted snapshot (`data/objective-snapshots/splk-5001-official-objectives.txt`; SHA-256 `a2bd1aa1350f373525e5d2f66cfc38f7023f6b84cf9275f594421412fbd704f5`).
+- Objective coverage: 6 mapped groups; current guide coverage retained and checked against the official page/snapshot.
+- Link evidence: 31 unique external URLs; 15 reachable, 15 automation-blocked, 1 missing/error. Browser-reader evidence and unresolved issuer conflicts are recorded in the dated report.
+
+### WDE-40-01 coverage record
+
+- Reviewed: October 29, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official objective map: unchanged accepted snapshot (`data/objective-snapshots/wde-40-01-official-objectives.txt`; SHA-256 `52a8efac1190c7d5b3e863705d0a0b7d4ea88ad72834aff4990051f21a9a7521`).
+- Objective coverage: 5 mapped groups; current guide coverage retained and checked against the official page/snapshot.
+- Link evidence: 41 unique external URLs; 37 reachable, 4 automation-blocked, 0 missing/error. Browser-reader evidence and unresolved issuer conflicts are recorded in the dated report.
+
+### WDA-41-01 coverage record
+
+- Reviewed: October 29, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official objective map: unchanged accepted snapshot (`data/objective-snapshots/wda-41-01-official-objectives.txt`; SHA-256 `747cb21a7c881c08b2b1107feb22733528ec25faab300998abb8ac499af07c5d`).
+- Objective coverage: 5 mapped groups; current guide coverage retained and checked against the official page/snapshot.
+- Link evidence: 47 unique external URLs; 39 reachable, 7 automation-blocked, 1 missing/error. Browser-reader evidence and unresolved issuer conflicts are recorded in the dated report.
+
+### PCET-30-01 coverage record
+
+- Reviewed: October 29, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official objective map: unchanged accepted snapshot (`data/objective-snapshots/pcet-30-01-official-objectives.txt`; SHA-256 `2ba098e2104bb457258687cdcd07afcc3a531ab146c27b0022a9bebb5d793aec`).
+- Objective coverage: 4 mapped groups; current guide coverage retained and checked against the official page/snapshot.
+- Link evidence: 21 unique external URLs; 17 reachable, 4 automation-blocked, 0 missing/error. Browser-reader evidence and unresolved issuer conflicts are recorded in the dated report.

@@ -6,14 +6,14 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-29
 upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-29
 ---
 
 # XK0-006 CompTIA Linux+ (V8) Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 29, 2026. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#xk0-006-coverage-record). The [official Linux+ page](https://www.comptia.org/en-us/certifications/linux/) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on October 29, 2026. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#xk0-006-coverage-record). The [official Linux+ page](https://www.comptia.org/en-us/certifications/linux/) is authoritative.
 
 **Current baseline:** Linux+ V8, exam XK0-006; launched July 15, 2025<br>
 **Lifecycle watch:** No exact retirement date is announced. CompTIA says an exam usually retires three years after launch and estimates 2028; verify before scheduling.<br>
@@ -481,6 +481,10 @@ Map older material line by line to V8 and current distributions. Verify current 
 
 > **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
 
+### October 29, 2026 current-source update
+
+The [upstream kernel archive](https://www.kernel.org/pub/linux/kernel/v7.x/) listed mainline 7.3 dated October 18 and stable 7.2.13 dated October 26. These are upstream release examples, not Linux+ objectives or a promise about a distribution’s supported kernel. When investigating a host, record `uname -r`, identify the distribution package/build, then check that vendor’s security advisory and backport status before calling a finding fixed or vulnerable. **Related item:** the Linux Foundation’s free [Introduction to Linux (LFS101)](https://training.linuxfoundation.org/training/introduction-to-linux/) is a broad foundations refresher, not a complete XK0-006 path; the page publishes no duration, so any study time is an author estimate.
+
 ## Places to learn
 
 This is not a complete list and is not meant to be consumed in full. Choose one current XK0-006 path, spend at least as much time operating and breaking/fixing disposable Linux systems as watching, and use one explanation-led assessment for remediation.
@@ -490,6 +494,7 @@ This is not a complete list and is not meant to be consumed in full. Choose one 
 | CompTIA [CertMaster Perform](https://www.comptia.org/en-us/resources/certmaster-training/perform/), [Learn](https://www.comptia.org/en-us/resources/certmaster-training/learn/), Labs, and Practice | Paid official platform; select exact XK0-006 product/bundle | Provider estimates: Perform 30–60h, Learn 25–40h, Practice 10–20h, Labs 15–25h; overlapping options, not additive requirements |
 | [Pluralsight Linux+ path](https://www.pluralsight.com/paths/comptia-linux-xk0-006) | Subscription; 5 courses, 4 labs and practice exam listed; course and lab dates vary | 27 listed hours plus 35–70 suggested additional lab/review hours |
 | [LinkedIn Learning / Total Seminars XK0-006](https://www.linkedin.com/learning/comptia-linux-plus-xk0-006-v8-cert-prep) | Subscription; Total Seminars V8 course released March 18, 2026; 10 quizzes | 15 hours 42 minutes listed plus 35–70 suggested lab/review hours |
+| [Linux Foundation Introduction to Linux (LFS101)](https://training.linuxfoundation.org/training/introduction-to-linux/) | Free foundation course; registration required for lessons; no provider duration published | About 15–25 hours for selected foundations and independent practice (author estimate); not full XK0-006 coverage |
 | [O'Reilly/Sybex Linux+ Study Guide](https://www.oreilly.com/library/view/comptia-linux-study/9781394316328/) | Subscription book; automated catalog access blocked; prior sixth-edition claim not reverified | Suggested 25–45 reading hours plus 35–70 lab/review hours; verify current edition |
 | [Udemy / Jason Dion XK0-006](https://www.udemy.com/course/comptia-linux/) | Paid marketplace course; automated catalog access blocked | Earlier 34h39 runtime not reverified; inspect current syllabus/revision |
 | [MeasureUp XK0-006 CertKit](https://www.measureup.com/xk0-006-comptia-linux-certkit.html) | Paid course bundle, exam simulation and Online Mentor listed; different access periods | Suggested 35–70 selected learning/practice hours; listed e-learning 365 days and practice 60 days from first practice access; verify terms |

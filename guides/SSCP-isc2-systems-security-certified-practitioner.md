@@ -6,14 +6,14 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-29
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-29
 ---
 
 # ISC2 Systems Security Certified Practitioner (SSCP) Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The October 1, 2025 outline, claims, links, credential contract and exam-integrity boundary were checked September 29, 2026. This review maps all 36 numbered objectives and executes 11 local TLS cases; independent human review and infrastructure labs remain pending. See the [coverage record](../docs/SOURCE-VALIDATION.md#sscp-coverage-record).
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The October 1, 2025 outline, claims, links, credential contract and exam-integrity boundary were rechecked October 29, 2026. The 36-objective map and 11 locally executed TLS cases are retained from the September 29 deep review; no infrastructure lab was executed in this refresh. Independent human review remains pending. See the [coverage record](../docs/SOURCE-VALIDATION.md#sscp-coverage-record).
 
 **Current baseline:** The October 1, 2025 SSCP outline is active. The CAT exam is two hours with 100–125 multiple-choice/advanced items, 700/1000 passing, and English, Japanese and Spanish delivery at Pearson testing centers. The public outline now shortens the testing-center label; the dated PDF retains “Pearson VUE.” This is not an objective change.<br>
 **Upcoming change:** No later revision or retirement announcement was present on the checked outline September 29, 2026.<br>
@@ -456,6 +456,10 @@ These are original teaching prompts, not recalled or predicted exam items. Cover
 47. **Is a 70% course assessment result the SSCP passing score?** No. The adaptive course completion requirements are separate from the CAT exam’s scaled 700/1000 passing score and from certification experience requirements.
 48. **Does completing this guide establish certification readiness?** No. Use objective mapping, independent review and demonstrated operation/failure/recovery evidence; complete the official experience/application process separately.
 
+### October 29, 2026 current-source update
+
+The current [SSCP outline](https://www.isc2.org/certifications/sscp/sscp-certification-exam-outline) still uses the October 1, 2025 seven-domain version; no newer outline or retirement notice was found. **Related item:** NIST’s [SP 800-63-4 implementation hub](https://pages.nist.gov/800-63-4/) now links the separate proofing/enrollment (63A), authentication/authenticator (63B), and federation/assertion (63C) volumes. Its overview highlights changes such as syncable authenticators and passkeys, but FAQs and conformance criteria remain marked “Coming Soon”; it is a navigation aid, not proof of conformance. The free [SSCP flash cards](https://cloud.connect.isc2.org/sscp-flashcards) publicly cover all seven domains and offer immediate feedback; use them for recall, not as a substitute for the outline, experience, or practical work.
+
 ## Places to learn
 
 This is not a complete list. Choose a route, map it against the current outline, and use targeted references and practical work for gaps. Catalog observations below were checked September 29, 2026; paid lessons, books and question banks were not accessed. Estimates labeled planning are this guide's suggestions, not provider runtimes or guarantees.
@@ -464,6 +468,7 @@ This is not a complete list. Choose a route, map it against the current outline,
 |---|---|---|
 | [Current SSCP outline](https://www.isc2.org/certifications/sscp/sscp-certification-exam-outline) — canonical 36-objective map and seven weights | Public | Planning: 3–6h mapping and review |
 | [ISC2 self-study resources](https://www.isc2.org/certifications/sscp/sscp-self-study-resources) — official links to outline, adaptive training and study aids | Public hub; some destinations require account/payment | Planning: 1–2h selecting resources; study varies |
+| [SSCP Flash Cards](https://cloud.connect.isc2.org/sscp-flashcards) — free recall practice covering seven domains; form required for access | Public access page; account/form may be required | About 1–3 hours for a first pass and targeted repeat (author estimate); no publisher duration |
 | [Official adaptive training](https://www.isc2.org/training/online-self-paced/sscp-online-self-paced) — public seven-domain description; English course; included textbook/questions are catalog claims only | Paid/account; 90/180-day access begins at purchase | No fixed public runtime verified; earlier 35–50h was a planning estimate |
 | [Pluralsight SSCP path](https://www.pluralsight.com/paths/sscpr-systems-security-certified-practitioner-certification) — eight public course cards dated September–October 2024; conflicting September 2024/November 2021 outline labels require current gap mapping | Paid/trial; public catalog only reviewed | Header 14h; eight listed cards total 13h36m; planning: add 25–40h practical work |
 | [LinkedIn Learning/Cybrary SSCP Cert Prep](https://www.linkedin.com/learning/isc2-systems-security-certified-practitioner-sscp-cert-prep) — August 26, 2025 public listing, seven domains and nine quizzes; current detailed alignment not established | Paid/trial; public contents only reviewed | Header 6h; 30 listed clips total 6h00m59s; planning: add 20–35h practical work |

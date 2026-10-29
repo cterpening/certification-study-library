@@ -6,14 +6,14 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-30
+last_verified: 2026-10-29
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-30
+upcoming_change_checked: 2026-10-29
 ---
 
 # PCET-30-01 Certified Entry-Level Tester with Python Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Deep-reviewed September 30, 2026; exact original Python examples executed with recorded limits. The [official PCET syllabus](https://pythoninstitute.org/pcet-exam-syllabus) is authoritative, subject to the documented code inconsistency below.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Deep-reviewed September 30, 2026; the official syllabus and credential-code mismatch were rechecked October 29. Exact original Python examples were executed in the September review with recorded limits. The [official PCET syllabus](https://pythoninstitute.org/pcet-exam-syllabus) is authoritative, subject to the documented code inconsistency below.
 
 **Current baseline:** PCET-30-01, active; syllabus last updated December 10, 2024<br>
 **Upcoming blueprint change:** none formally announced; the syllabus header/alignment and credential page say `PCET-30-01`, but introductory syllabus prose says `PCET-30-02`, so verify the code before purchase<br>
@@ -886,6 +886,10 @@ The workbook executes components of these labs with original synthetic fixtures.
 - Source evidence contains 21 direct receipts: 16 successful responses, three errors, one blocked book page and one missing Flake8 candidate URL. The current stable Flake8 index was then verified separately. Indexed primary syllabus/exam reading is distinguished from direct network health.
 - Pylint/Flake8 execution, full policy/PDF reading, ten broader labs, independent human content/accessibility review and readiness approval remain pending.
 
+### October 29, 2026 current-source update
+
+The issuer’s syllabus header and alignment still identify active PCET-30-01, but its introductory paragraph and badge image say PCET-30-02; the credential page uses the generic PCET-30-0x label. Preserve the conflict and do not infer that PCET-30-02 is a launched replacement. The official [PT101 course page](https://pythoninstitute.org/python-for-testing-101) lists four modules, 40+ lessons, and a provider estimate of four to five weeks; the separate [Study Resources catalog](https://pythoninstitute.org/study-resources) gives 20–30 hours. Keep both estimates rather than converting one into a guarantee. The page’s duplicated tier comparison does not establish every lab/practice feature’s access tier; the dedicated PCET practice test remains a separate item marked in development. **Related item:** pytest 9.1.1 (June 19, 2026) rejects cache paths escaping its cache root. This optional runner detail complements safe test-workspace handling; PCET’s current examples use `unittest`, and pytest is not an exam requirement.
+
 ## Places to learn
 
 This is not a complete list and is not intended to be consumed in full. Use one testing foundation, write tests for your own Python project, and use practice to find conceptual gaps.
@@ -893,7 +897,7 @@ This is not a complete list and is not intended to be consumed in full. Use one 
 | Resource | Access | Estimated time |
 |---|---|---:|
 | [PCET syllabus](https://pythoninstitute.org/pcet-exam-syllabus) | Public official blueprint; code/heading conflicts recorded | Author planning budget: 2–3 hours to map all 22 objectives |
-| [Python for Testing 101](https://edube.org/study/pt101) | Free Core lessons/module tests; USD 49 Full/Pro adds interactive work, practice assessment and diploma when checked; account required | Provider estimate: four weeks at about one hour/day; provider advertises 38 labs, not independently completed |
+| [Python for Testing 101 (PT101)](https://pythoninstitute.org/python-for-testing-101) | Public course page lists Core/Pro tiers; duplicated tier copy leaves some lab/practice access unclear. No lesson interiors inspected. | Provider page: 4–5 weeks; Study Resources catalog: 20–30 hours. Keep both estimates, which are not a guaranteed duration |
 | [ISTQB Foundation overview](https://www.istqb.org/certifications/certified-tester-foundation-level) | Public overview and syllabus link; CTFL is a broader, different exam; linked PDF not read here | Author planning budget: 8–15 selected hours; no verified course runtime |
 | [Python 3.13 unittest](https://docs.python.org/3.13/library/unittest.html) | Public primary reference; selected contracts reviewed | Author planning budget: 5–10 hours with original coding |
 | [Software Testing, 2nd ed.](https://www.oreilly.com/library/view/software-testing-2nd/9780134698298/) | Prior paid-book lead; page automation-blocked and present access/contents unverified | No verified runtime; optional after checking contents and access |

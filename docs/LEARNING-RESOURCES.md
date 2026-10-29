@@ -2918,11 +2918,11 @@ This is not a complete list and is not meant to be consumed in full. Choose one 
 | [Official exam guide](https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf), [study guide](https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf), and [sample questions](https://forms.gle/soztS7Q74AXBncATA) | Public, first-party | 3–5 hours with objective mapping and answer review |
 | [Google Skills Generative AI Leader path](https://www.skills.google/paths/1951) | Google account; public path confirms five activities and an update about two months earlier | Current durations/access details were not fully exposed; allow 10–14 hours as a study-planning estimate |
 | [Google Cloud Generative AI Leader Professional Certificate on Coursera](https://www.coursera.org/professional-certificates/generative-ai-for-leaders) | Coursera audit/subscription terms vary; first-party Google Cloud courses | Landing page says 8 hours, while five course cards total 20 hours (3/4/4/4/5). Treat these as different estimates; choose time based on activities completed |
-| [Pluralsight Generative AI Leader path](https://www.pluralsight.com/paths/google-cloud-generative-ai-leader-by-pluralsight) | Paid subscription; four courses, one lab and practice exam | Four course durations sum 5h44m plus a 30-minute lab (rounded path total: 6h). Public dates range December 2025–May 2026, with the lab dated August 11, 2026; add 5–10 hours of planned review |
+| [Pluralsight Generative AI Leader path](https://www.pluralsight.com/paths/google-cloud-generative-ai-leader-by-pluralsight) | Paid subscription; four courses, four labs and a practice exam | Course cards total 5h44m; four lab cards total 2h15m (7h59m combined, rounded path total: 8h). Newer labs include model selection (Oct 6) and multimodal triage (Oct 13, 2026); add 5–10 hours of planned review |
 | [O'Reilly — GenAI on Google Cloud](https://www.oreilly.com/library/view/genai-on-google/9798341623842/) | Paid subscription/book; broader and more technical than the exam | Earlier 9h58m estimate **not reverified** because public access was blocked; allow 5–10 hours for selected practice and terminology mapping |
 | [Udemy / in28Minutes Generative AI Leader](https://www.udemy.com/course/google-cloud-certified-generative-ai-leader-certification/) | Paid marketplace course | Earlier 3h51m and August 2026 update **not reverified** because public access was blocked; allow 5–10 hours for exercises/review |
 
-No exact current MeasureUp product was found during this review. The Google-authored Coursera outline lists five courses and practical Gemini, NotebookLM and AI Studio activities; that is public metadata, not evidence of completed provider exercises. Pluralsight's four course titles follow the exam domains, but dates and a lab title alone do not establish full current-product alignment. The sample-form content was not exposed by the fetch, and no paid lessons or assessment questions were read.
+No exact current MeasureUp product was found during this review. The Google-authored Coursera outline lists five courses and practical Gemini, NotebookLM and AI Studio activities; that is public metadata, not evidence of completed provider exercises. Pluralsight's four course titles follow the exam domains, with four current labs listed; the October 13 multimodal triage lab is a new product example, not evidence of exam scope. Titles and dates do not establish full current-product alignment. The sample-form content was not exposed by the fetch, and no paid lessons or assessment questions were read.
 
 For focused technical gaps, use the linked documentation on data handling, access controls, model lifecycle and tool validation. Allow 2–3 additional hours for selected reading and the original worksheet; this is a planning estimate. Google's official sample resource and independently authored exercises can help locate learning gaps. Reject “actual questions,” copied exam material, or guaranteed replicas; use explanation-led assessment to locate a concept or decision gap.
 
@@ -2974,7 +2974,7 @@ This is **not a complete list**, and it is not meant to be consumed in full. Pic
 | [Whizlabs Professional Cloud Architect](https://www.whizlabs.com/google-cloud-certified-professional-cloud-architect/) | Paid; limited free material may vary | Full current catalog not exposed; verify before purchase | Direct fetch returned a title-only shell, so course/lab quantities and current objective alignment were not verified |
 | [Well-Architected Framework](https://cloud.google.com/architecture/framework) and [Architecture Center](https://cloud.google.com/architecture) | Public | 12–30h targeted reading | Production tradeoffs and all six cross-cutting pillars |
 
-A current [Pluralsight PCA path](https://www.pluralsight.com/paths/google-certified-professional-cloud-architect-by-pluralsight) is verified: seven Victor Dantas courses total **7h17m**, with one 30-minute regional-MIG lab, **7h47m** altogether versus the rounded eight-hour header. Core course dates span July–December 2025; the lab is August 6, 2026. Compare current AI/agent/case objectives explicitly; public titles and dates do not establish complete paid-lesson coverage. No verified MeasureUp PCA item is added.
+A current [Pluralsight PCA path](https://www.pluralsight.com/paths/google-certified-professional-cloud-architect-by-pluralsight) lists seven Victor Dantas courses and four labs. The course cards total **7h17m**; the labs total **2h30m** (regional MIG, hybrid zero trust, cost/storage lifecycle, and reliability/rollouts), or **9h47m** versus the rounded 10-hour header. The cost/storage lab is dated October 22, 2026. Compare current AI/agent/case objectives explicitly; public titles and dates do not establish complete paid-lesson coverage. No verified MeasureUp PCA item is added.
 
 #### Current-version gap checklist
 
@@ -3152,6 +3152,8 @@ This is not a complete list. Use the current replacement course and measured pra
 | Resource | Access | Estimated time |
 |---|---|---|
 | [Platform On-Demand Training, OD-SPT](https://learn.snowflake.com/en/courses/OD-SPT/) | Free; public listing links the Platform Assessment/Badge to course completion; curated labs advertised for 30 days | Four hours provider estimated effort; add practice as needed, not a verified assessment duration |
+| [Level Up: First Concepts Series](https://learn.snowflake.com/en/pages/level-up-track) | Free online nine-step learning track; current course listing, no lesson interiors reviewed | No total time published; choose relevant modules and budget practice separately |
+| [Hands-On Essentials Track](https://learn.snowflake.com/en/pages/hands-on-essentials-track/) | Free workshop/badge index across warehousing, collaboration/cost, data apps, lake, engineering, and science | No total time published; use an authorized disposable account and check current compute costs |
 | [Transition FAQ](https://publish-p93462-e887935.adobeaemcloud.com/content/dam/SnowProAssociateCertificationTransitionSnowflakeUniversityPlatformSkillsBadgeFAQs.pdf) | Public; actual two-page PDF fully read | 15–30m study estimate |
 | [Snowflake University catalog](https://learn.snowflake.com/) | Public catalog; course access/enrollment varies | 30–60m planning estimate |
 | [Platform training datasheet](https://www.snowflake.com/wp-content/uploads/2024/12/standard_spt_datasheet.pdf) | Public four-page document, course code 25A24; nine modules and historical function names | Half-day instructor-led description; not the replacement assessment runtime |
@@ -3266,6 +3268,7 @@ This is not a complete list. Choose a route, map it against the current outline,
 |---|---|---|
 | [Current SSCP outline](https://www.isc2.org/certifications/sscp/sscp-certification-exam-outline) — canonical 36-objective map and seven weights | Public | Planning: 3–6h mapping and review |
 | [ISC2 self-study resources](https://www.isc2.org/certifications/sscp/sscp-self-study-resources) — official links to outline, adaptive training and study aids | Public hub; some destinations require account/payment | Planning: 1–2h selecting resources; study varies |
+| [SSCP Flash Cards](https://cloud.connect.isc2.org/sscp-flashcards) — free recall practice covering seven domains; form required for access | Public access page; account/form may be required | About 1–3 hours for a first pass and targeted repeat (author estimate); no publisher duration |
 | [Official adaptive training](https://www.isc2.org/training/online-self-paced/sscp-online-self-paced) — public seven-domain description; English course; included textbook/questions are catalog claims only | Paid/account; 90/180-day access begins at purchase | No fixed public runtime verified; earlier 35–50h was a planning estimate |
 | [Pluralsight SSCP path](https://www.pluralsight.com/paths/sscpr-systems-security-certified-practitioner-certification) — eight public course cards dated September–October 2024; conflicting September 2024/November 2021 outline labels require current gap mapping | Paid/trial; public catalog only reviewed | Header 14h; eight listed cards total 13h36m; planning: add 25–40h practical work |
 | [LinkedIn Learning/Cybrary SSCP Cert Prep](https://www.linkedin.com/learning/isc2-systems-security-certified-practitioner-sscp-cert-prep) — August 26, 2025 public listing, seven domains and nine quizzes; current detailed alignment not established | Paid/trial; public contents only reviewed | Header 6h; 30 listed clips total 6h00m59s; planning: add 20–35h practical work |
@@ -3584,6 +3587,8 @@ This is not a complete list. Choose resources to close demonstrated gaps, and ke
 | Recommended Fundamentals course; current lesson duration unavailable | [ServiceNow Administration Fundamentals](https://learning.servicenow.com/lxp?course_id=fbb6cc4847f5dd505cbdaf44846d436a&id=learning_course_prev) | Account/entitlement | Earlier 3 ILT days not reverified |
 | Earlier Welcome citation is actually a CSA certification-path route | [ServiceNow CSA certification path — earlier mislabelled Welcome link](https://learning.servicenow.com/lxp/en/now-platform/certified-system-administrator?course_id=931d939697d229587f7070871153af8c&id=learning_content_prev) | Account/loading shell | Not verified |
 | Credential navigation; no course interiors | [ServiceNow University Credential Catalog](https://learning.servicenow.com/lxp/en/credentials) | Public shell/account | 10–20 min estimate |
+| 2026 role route map; distinguish 3–6 month exam recommendation from the separate 6+ month career-path guidance | [ServiceNow Career Journeys](https://www.servicenow.com/community/s/cgfwn76974/attachments/cgfwn76974/training-certifications-forum/27136/1/Learning%20paths%20-%20ServiceNow.pdf) | Public PDF; course access/catalog details vary | About 20–30 minutes to map a path; course durations are not shown |
+| Current ServiceNow University content release index; LabX/Studio titles are catalog leads, not verified completions | [Content Releases](https://nowlearning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0010279) | Public listing; linked course shells may require account | About 15–30 minutes to locate a current item; course runtime unknown |
 | Select your instance family; homepage is not a full documentation audit | [ServiceNow Product Documentation](https://www.servicenow.com/docs/) | Public shell/browser docs | 10–20 hr selected study estimate |
 | PDI and learning entry; no instance obtained | [ServiceNow Developer Program](https://developer.servicenow.com/) | Public entry/account | 1–2 hr setup estimate, availability unverified |
 | February 2026 product metadata: 120 questions; no demo/question interiors | [ServiceNow CSA Practice Test](https://www.measureup.com/servicenow-csa-practice-test.html) | Paid; demo advertised, not opened | 2–4 hr study estimate |
@@ -3622,13 +3627,15 @@ This is not a complete list. Select resources for demonstrated gaps. Public land
 
 | Use and reading boundary | Resource | Access | Estimated time |
 |---|---|---|---:|
-| Full fresh unsigned browser main; 22 subtopics and exam contract | [Certified Application Developer Mainline Exam Blueprint](https://learning.servicenow.com/lxp/en/credentials/certified-application-developer-mainline-exam-blueprint?id=kb_article_view&sysparm_article=KB0011498) | Public browser; direct shell | 20–30 min estimate |
+| Full fresh unsigned browser main; 22 subtopics and exam contract | [Certified Application Developer Mainline Exam Blueprint](https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011498) | Public browser; direct shell | 20–30 min estimate |
 | Official path entry; current assignments/duration not visible | [Certified Application Developer Learning Path](https://learning.servicenow.com/lxp/en/now-platform/certified-application-developer?course_id=4c12ba8c87c39ad4a3bc40c5cebb3526&id=learning_content_prev) | Account/loading shell | 30–45 min planning estimate |
 | Earlier three-day ILT anchors not reverified; PDF blocked | [ServiceNow University Technical Training Catalog](https://www.servicenow.com/content/dam/servicenow-assets/public/en-us/doc-type/other-document/technical-training-portfolio.pdf) | HTTP 403 | Earlier 10–20 min reading estimate |
 | Older Washington-labeled course route; interior/duration unavailable | [Scripting in ServiceNow Fundamentals](https://learning.servicenow.com/lxp/en/now-platform/scripting-in-servicenow-fundamentals-on-demand-washington?course_id=f424ca5a87f71e143a3a84c7cebb3509&id=learning_course_prev) | Account/loading shell | Earlier three ILT days not reverified |
 | Find current Application Development Fundamentals assignment | [ServiceNow University Credential Catalog](https://learning.servicenow.com/lxp/en/credentials) | Account/entry shell | Current course duration unverified |
 | Current Welcome recommended by blueprint; no lesson interior | [Welcome to ServiceNow — current recommended course](https://learning.servicenow.com/lxp/en/now-platform/welcome-to-servicenow?course_id=386f3cf847b36a90c00af235126d430c&id=learning_course_prev) | Account/loading shell | Earlier three hours not reverified |
 | Product entry only; specific references below provide technical evidence | [ServiceNow Product Documentation](https://www.servicenow.com/docs/) | Public shell/browser docs | 15–30 hr selected study estimate |
+| 2026 role route map; choose only CAD-relevant scripting, application development, source control, and testing topics | [ServiceNow Career Journeys](https://www.servicenow.com/community/s/cgfwn76974/attachments/cgfwn76974/training-certifications-forum/27136/1/Learning%20paths%20-%20ServiceNow.pdf) | Public PDF; course access/catalog details vary | About 20–30 minutes to map a path; course durations are not shown |
+| Current ServiceNow University release index lists Studio Overview and Application Development Fundamentals as catalog leads | [Content Releases](https://nowlearning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0010279) | Public listing; linked course shells may require account | About 15–30 minutes to locate relevant material; course runtime unknown |
 | PDI/learning entry only; no instance allocated | [ServiceNow Developer Program](https://developer.servicenow.com/) | Public entry/account | 1–2 hr setup plus 20–40 hr labs estimate |
 | Public 120-question March 2026 listing; no demo/question interior | [ServiceNow CAD Practice Test](https://www.measureup.com/servicenow-cad-practice-test.html) | Paid product/public metadata | 3–5 hr study estimate |
 | Official channel title/footer only; no playback | [ServiceNow Developers YouTube Channel](https://www.youtube.com/@servicenowdevprogram) | Public video platform | 3–8 hr selected study estimate |
@@ -3729,6 +3736,7 @@ This is not a complete list, and it is not a prescription to consume everything.
 |---|---|---|---:|
 | Live level, count, duration, price, delivery, preparation and BOTS links | [SPLK-5001 certification page](https://www.splunk.com/en_us/training/certification-track/splunk-certified-cybersecurity-defense-analyst.html) | Public | 15–25 min |
 | Canonical six-domain weights, every objective and official resource names | [SPLK-5001 test blueprint](https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-cybersecurity-defense-analyst.pdf) | Public PDF | 30–60 min initially; repeat |
+| Public description of seven official Cybersecurity Defense Analyst courses; lesson access, total time and full blueprint coverage not published | [Cybersecurity Defense Analyst course descriptions](https://www.splunk.com/en_us/pdfs/training/cybersecurity-landscape-course-description.pdf) | Public PDF; course registration/access varies | No total published; about 20–30 minutes to map the sequence (author estimate), then use the chosen courses’ current catalog times |
 | Official ordered route across cyber foundations, SPL, ES investigation and hunting; select by gaps | [Cybersecurity Defense Analyst track](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-certified-cybersecurity-defense-analyst-track.pdf) | Public PDF; course registration varies | 30–60 hr estimate if completing most courses/labs |
 | Blue Team Academy, Intro to Splunk, ES foundations, data/tools, investigation and threat hunting | [Free Splunk training](https://www.splunk.com/en_us/training/free-courses/overview.html) | Free account | 10–25 hr study estimate; account lessons not reviewed |
 | Planning directory; current result list did not load, so course availability remains unverified | [Splunk course catalog](https://www.splunk.com/en_us/training/course-catalog.html) | Mixed free/paid | 15–30 min planning; course-specific |
@@ -3894,21 +3902,21 @@ This is not a complete list, and it is not meant to be consumed in full. Pick on
 |---|---|---:|
 | [Official JSE exam page and scope](https://jsinstitute.org/jse-certification) | Free official blueprint | 1–2 hours to map and recheck |
 | [JS Institute TestNow policies](https://jsinstitute.org/test-now-testing-policies) | Free official policy | 20–40 minutes before scheduling |
-| [Official JSE-40-01 Practice Test Kit](https://ums.edube.org/products/0-jsi-jse-4001-pt) | Paid official practice; USD 29 when checked | 3–6 hours across attempts and review |
+| [JSE certification page](https://jsinstitute.org/jse-certification) | Free issuer overview lists a $29 practice kit; its direct OpenEDG Store link returned HTTP 404 on October 28, 2026 | Purchase availability and current practice hours are unverified; use the free JavaScript Essentials courses for now |
 | [OpenEDG JavaScript Essentials 1](https://jsinstitute.org/javascript-essentials-1) | Free account; public six-module listing read, lessons not entered | 40 hours listed |
 | [Cisco Networking Academy JavaScript Essentials 1](https://www.netacad.com/courses/javascript-essentials-1) | Free account; only application shell retrieved | About 40 hours is a planning reference from the aligned course; partner duration unverified |
 | [MDN Dynamic Scripting with JavaScript](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting) | Free; module index and selected separate reference pages read | 15–25 hours is an author estimate; DOM/network topics exceed this scope |
 | [Microsoft Beginner's Series to JavaScript](https://learn.microsoft.com/en-us/shows/beginners-series-to-javascript/) | Free Node.js series; current page does not expose episode count/runtime | Prior 51-part claim not reverified; 4–6 hours is an author estimate |
-| [Pluralsight Professional JavaScript path](https://www.pluralsight.com/paths/javascript-2022) | Subscription; current public listing: 28 courses/38 labs/85 hours | Fundamentals 6h08m + Debugging 1h35m = 7h43m; selected guided labs add 3h24m |
+| [Pluralsight Professional JavaScript path](https://www.pluralsight.com/paths/javascript-2022) | Subscription; current public listing: 28 courses/38 labs/84 hours | Fundamentals 6h08m + Debugging 1h35m = 7h43m; selected guided labs add 3h24m |
 | [O'Reilly JavaScript: The Definitive Guide, 7th Edition](https://www.oreilly.com/library/view/javascript-the-definitive/9781491952016/) | Subscription; HTTP 403; prior 21h15m not reverified | Select early language/debugging chapters; 8–12 hours is an author estimate |
 | [Udemy Complete JavaScript Course by Jonas Schmedtmann](https://www.udemy.com/course/the-complete-javascript-course/) | Paid marketplace; HTTP 403; prior 71h10m not reverified | Select fundamentals/debugging; 12–18 hours is an author estimate |
 | [freeCodeCamp Learn JavaScript — Full Course for Beginners](https://www.youtube.com/watch?v=PkZNo7MFNFg) | Free; title/shell only, no playback/transcript review | Prior approximately 3h27m not reverified; add coding time |
 
 **VERIFY CURRENT — source limits:** Canonical exam, course and policy pages were read via the public web reader after direct requests timed out. The objective monitor failed its direct comparison; snapshots were retained after manual review. The exam page has an apparent copy error labeling the associated JSA credential as a Python data-analyst certification; it does not change JSE scope. The policy opening says entry-level exams default to non-proctored delivery, while its later generic delivery paragraph calls online proctoring the global default. Verify the applicable mode before booking. Failed attempts currently have a seven-day retake wait; account and booking screens were not inspected.
 
-The official practice product describes multiple launches but the current captured page gives no exact count. Its 12-month voucher redemption validity is separate from an exam attempt, which the practice-only product does not include. Paid practice questions were not accessed. The [Microsoft supporting repository](https://github.com/microsoft/beginners-intro-javascript-node) was archived June 15, 2026; its README assumes experience with another language and uses Node. That context matters when choosing it as a beginner supplement. Pluralsight metadata came from its headline and selected novice/entry-level listings, not paid lessons; the guided variables/data, scope, and control-flow/collections labs list 100 + 40 + 64 = 204 minutes (3h24m). No lab was entered or video watched. A source landing page is not proof of complete lesson quality or exact exam coverage.
+The issuer advertises a $29 official practice kit, but its linked OpenEDG Store product returned HTTP 404 on October 28, 2026. Availability, voucher validity, and practice access could not be confirmed; use the free JavaScript Essentials courses until the issuer link works. Paid practice questions were not accessed. The [Microsoft supporting repository](https://github.com/microsoft/beginners-intro-javascript-node) was archived June 15, 2026; its README assumes experience with another language and uses Node. That context matters when choosing it as a beginner supplement. Pluralsight metadata came from its headline and selected novice/entry-level listings, not paid lessons; the guided variables/data, scope, and control-flow/collections labs list 100 + 40 + 64 = 204 minutes (3h24m). No lab was entered or video watched. A source landing page is not proof of complete lesson quality or exact exam coverage.
 
-No exact current MeasureUp or Whizlabs JSE-40-01 product was verified. The OpenEDG practice kit explicitly identifies the active version; avoid third-party practice that does not state its blueprint and provenance.
+No exact current MeasureUp or Whizlabs JSE-40-01 product was verified. The indexed OpenEDG practice-kit page names JSE-40-01, but its current link is unavailable; avoid third-party practice that does not state its blueprint and provenance.
 
 ### CLE-10-01 — CLE C Certified Entry-Level Programmer
 
@@ -3985,7 +3993,7 @@ This is not a complete list, and it is not meant to be consumed in full. Pick on
 |---|---|---:|
 | [Official WDE-40-01 syllabus](https://jsinstitute.org/wde-exam-syllabus) | Free canonical objectives and weights | 2–3 hours to map and recheck |
 | [Official WDE certification page](https://jsinstitute.org/wde-certification) | Free version, format, cost, delivery, and policy links | 30–60 minutes before purchase |
-| [OpenEDG Web Dev 101: HTML](https://jsinstitute.org/html-essentials) | Free Core / paid Pro; public prose attributes 45+ labs and a diploma to Pro; six modules and 45+ lessons listed | Provider lists 25 hours; no account lessons audited |
+| [OpenEDG Web Dev 101: HTML (WD101)](https://edube.org/study/html-essentials) | Core is free; Full Course is USD 49 and adds quizzes, interactive work/labs, projects, final assessment, diploma, and a 20% WDE exam discount per the public Edube page | Provider estimate: 5 weeks at 1 hour/day (about 25 hours); lesson interior not reviewed |
 | [Cisco Networking Academy HTML Essentials](https://www.netacad.com/courses/html-essentials) | Partner landing returned only an application shell; account/curriculum details unverified | Author budget about 25 hours; verify actual access |
 | [MDN Learn: Structuring content with HTML](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content) | Free current lessons and challenges | 12–20 hours with project work |
 | [W3C WAI Tutorials](https://www.w3.org/WAI/tutorials/) | Free authoritative accessibility patterns | 6–10 hours for page structure, images, tables, forms, and menus |
@@ -4008,8 +4016,8 @@ Public course/index comparison is not course completion. The official CSS landin
 |---|---|---:|
 | [Official WDA-41-01 syllabus](https://jsinstitute.org/wda-exam-syllabus) | Free canonical objectives and weights | 2–3 hours to map and recheck |
 | [Official WDA certification page](https://jsinstitute.org/wda-certification) | Free version, format, price, delivery, and policy links; duration needs confirmation | 30–60 minutes before purchase |
-| [OpenEDG Web Dev 102: CSS](https://jsinstitute.org/css-essentials) | Public landing lists free Core / USD49 Pro and nine modules; prose places 45+ labs/diploma in Pro; repeated text-only tier lists remain ambiguous | 40 hours listed |
-| [OpenEDG Web Dev 101: HTML](https://jsinstitute.org/html-essentials) | Free core / paid Pro; prerequisite foundation rather than WDA substitute | 25 hours listed if HTML needs rebuilding |
+| [OpenEDG Web Dev 102: CSS (WD102)](https://www.edube.org/study/css-essentials) | Core is free; Full Course is USD 49 and adds interactive work/labs, quizzes, projects/final assessment, diploma, and a 20% WDA exam discount per the public Edube page | Provider estimate: 40 hours; 9 modules and 45+ lessons listed; no lesson interior reviewed |
+| [OpenEDG Web Dev 101: HTML (WD101)](https://edube.org/study/html-essentials) | Optional free Core / paid Full Course; prerequisite foundation rather than WDA substitute | Provider estimate: about 25 hours if HTML needs rebuilding |
 | [Cisco Networking Academy CSS Essentials](https://www.netacad.com/courses/css-essentials) | Partner link returned a 14-character application shell; access, account terms and lesson contents unverified | Author budget: about 40 hours; verify live listing |
 | [MDN Learn CSS](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics) and [CSS layout](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout) | Free current standards-oriented lessons | 20–30 hours with projects |
 | [web.dev Learn CSS](https://web.dev/learn/css/) and [Responsive Design](https://web.dev/learn/design/) | Free modern modules and exercises | 15–25 hours for WDA-relevant portions |
@@ -4189,7 +4197,7 @@ This is not a complete list and is not intended to be consumed in full. Use one 
 | Resource | Access | Estimated time |
 |---|---|---:|
 | [PCET syllabus](https://pythoninstitute.org/pcet-exam-syllabus) | Public official blueprint; code/heading conflicts recorded | Author planning budget: 2–3 hours to map all 22 objectives |
-| [Python for Testing 101](https://edube.org/study/pt101) | Free Core lessons/module tests; USD 49 Full/Pro adds interactive work, practice assessment and diploma when checked; account required | Provider estimate: four weeks at about one hour/day; provider advertises 38 labs, not independently completed |
+| [Python for Testing 101 (PT101)](https://pythoninstitute.org/python-for-testing-101) | Public course page lists Core/Pro tiers; duplicated tier copy leaves some lab/practice access unclear. No lesson interiors inspected. | Provider page: 4–5 weeks; Study Resources catalog: 20–30 hours. Keep both estimates, which are not a guaranteed duration |
 | [ISTQB Foundation overview](https://www.istqb.org/certifications/certified-tester-foundation-level) | Public overview and syllabus link; CTFL is a broader, different exam; linked PDF not read here | Author planning budget: 8–15 selected hours; no verified course runtime |
 | [Python 3.13 unittest](https://docs.python.org/3.13/library/unittest.html) | Public primary reference; selected contracts reviewed | Author planning budget: 5–10 hours with original coding |
 | [Software Testing, 2nd ed.](https://www.oreilly.com/library/view/software-testing-2nd/9780134698298/) | Prior paid-book lead; page automation-blocked and present access/contents unverified | No verified runtime; optional after checking contents and access |
@@ -5309,6 +5317,184 @@ This is a selective foundation, not a complete list, not a prescription to consu
 | O'Reilly, Pluralsight, Udemy, LinkedIn Learning, SANS and other managed-SOC/MSSP, SIEM/SOAR, ITIL/SLA, multi-tenancy, API and incident courses | Subscription/purchase may apply | 15–50 hr selected | Transferable foundation only; no current course can be declared aligned without a blueprint |
 | Authorized multi-tenant partner or product lab | Partner, entitlement, or training access may be required | 50–100 hr | Highest-value isolation, onboarding, change, telemetry, incident, resilience, and offboarding practice |
 
+### NSE-1-CYBERSECURITY — Fortinet NSE 1 in Cybersecurity
+
+Resource details from the [NSE-1-CYBERSECURITY guide](../guides/NSE-1-CYBERSECURITY-fortinet-nse-1-in-cybersecurity.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective starting set, not a complete list and not a prescription to consume everything. Pick and choose what closes your gaps. Times are publisher-listed or labeled estimates; access and content can change.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [NSE 1 certification page](https://training.fortinet.com/local/staticpage/view.php?page=nse_1) | Public | 15–25 min | Current requirement, validity, renewal, and authoritative enrollment route |
+| [Cybersecurity and Cloud Fundamentals](https://training.fortinet.com/local/staticpage/view.php?page=library_cybersecurity-and-cloud-fundamentals) | Free Fortinet account | 11 hr listed | Required official course, published agenda, and online assessment |
+| [Fortinet NSE program](https://training.fortinet.com/local/staticpage/view.php?page=nse) | Public | 20–30 min | Current level structure and progression after July 2026 |
+| [NIST Cybersecurity Framework 2.0](https://www.nist.gov/cyberframework) | Public | 2–4 hr selected | Vendor-neutral Govern, Identify, Protect, Detect, Respond, Recover context |
+| [CISA Secure Our World](https://www.cisa.gov/secure-our-world) | Public | 1–2 hr selected | Practical password, MFA, phishing, and update guidance |
+| [Cloud Security Alliance Security Guidance](https://cloudsecurityalliance.org/research/guidance) | Public | 4–8 hr selected | Cloud responsibility and control context; deeper than the assessment requires |
+| [Fortinet YouTube](https://www.youtube.com/@Fortinet) | Free/YouTube | 2–5 hr selected | Official visual threat, product, and architecture explanations; check dates |
+| [Introduction to Cyber Security Specialization](https://www.coursera.org/specializations/intro-cyber-security) | Audit/subscription varies | About 4 months at 4 hr/week listed | Optional vendor-neutral reinforcement, not Fortinet assessment authority |
+
+### NSE-2-CYBERSECURITY — Fortinet NSE 2 in Cybersecurity
+
+Resource details from the [NSE-2-CYBERSECURITY guide](../guides/NSE-2-CYBERSECURITY-fortinet-nse-2-in-cybersecurity.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective starting set, not a complete list and not a prescription to consume everything. Start with the required course, then pick only the references and labs that address your gaps. Times are publisher-listed or planning estimates.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [NSE 2 certification page](https://training.fortinet.com/local/staticpage/view.php?page=nse_2) | Public | 15–25 min | Current requirement, validity, renewal, and enrollment route |
+| [Introduction to the Next Generation Firewall](https://training.fortinet.com/local/staticpage/view.php?page=library_introduction-to-next-generation-firewall) | Free Fortinet account | 2 hr listed | Required course, exact published agenda, and online exam |
+| [FortiGate/FortiOS 7.6 documentation](https://docs.fortinet.com/product/fortigate/7.6) | Public | 4–10 hr selected | Current product context and diagrams; deeper than NSE 2 configuration scope |
+| [NIST SP 800-41 Rev. 1](https://csrc.nist.gov/pubs/sp/800/41/r1/final) | Public | 3–5 hr selected | Vendor-neutral firewall policy and architecture fundamentals |
+| [NIST SP 800-207 Zero Trust Architecture](https://csrc.nist.gov/pubs/sp/800/207/final) | Public | 3–5 hr selected | Identity, policy enforcement, and zero-trust context |
+| [CISA Secure by Design](https://www.cisa.gov/securebydesign) | Public | 1–3 hr selected | Broader control, default, and product-responsibility thinking |
+| [Fortinet YouTube](https://www.youtube.com/@Fortinet) | Free/YouTube | 2–6 hr selected | Official NGFW, SD-WAN, SASE, and threat explanations; verify version/date |
+| [Network Security and Firewalls path](https://www.pluralsight.com/paths/network-security-and-firewalls) | Paid | 10 hr listed; select modules | Optional vendor-neutral reinforcement, not assessment authority |
+
+### NSE-3-CYBERSECURITY — Fortinet NSE 3 in Cybersecurity
+
+Resource details from the [NSE-3-CYBERSECURITY guide](../guides/NSE-3-CYBERSECURITY-fortinet-nse-3-in-cybersecurity.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective starting set, not a complete list and not a prescription to consume everything. Complete the official course, then pick references or labs that address measured gaps. Times are publisher-listed or planning estimates.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [NSE 3 certification page](https://training.fortinet.com/local/staticpage/view.php?page=nse_3) | Public | 15–25 min | Current course/exam requirement, validity, and renewal |
+| [FortiGate 7.6 Operator](https://training.fortinet.com/local/staticpage/view.php?page=library_fortigate-operator) | Free Fortinet account | 8 hr listed | Required course, simulations, exact agenda, and authorized online exam |
+| [FortiGate/FortiOS 7.6 documentation](https://docs.fortinet.com/product/fortigate/7.6) | Public | 12–25 hr selected | Current administration, reference, release, SD-WAN, ZTNA, and deployment guidance |
+| [Fortinet Training Institute policies](https://helpdesk.training.fortinet.com/support/solutions/73000238852) | Public | 30–60 min | Current account, exam, badge, and program-policy questions |
+| [Fortinet YouTube](https://www.youtube.com/@Fortinet) | Free/YouTube | 3–8 hr selected | Official visual demonstrations and architecture; verify versions |
+| [Fortinet: The Big Picture](https://www.pluralsight.com/courses/fortinet-big-picture) | Paid | 1 hr 24 min listed | Optional product-family context; 2023 content predates the current program |
+| [Network Security and Firewalls path](https://www.pluralsight.com/paths/network-security-and-firewalls) | Paid | 10 hr listed; select modules | Vendor-neutral networking/firewall reinforcement |
+| An entitled FortiGate lab, VM, or authorized sandbox | Entitlement/cost varies | 12–25 hr | Highest-value configuration, observation, failure, rollback, and cleanup practice |
+
+### NSE-5-CLOUD-SECURITY — Fortinet NSE 5 in Cloud Security
+
+Resource details from the [NSE-5-CLOUD-SECURITY guide](../guides/NSE-5-CLOUD-SECURITY-fortinet-nse-5-in-cloud-security.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective starting set, not a complete list and not a prescription to consume everything. Choose one available route, then pick only resources that close its measured gaps. Times are publisher-listed or planning estimates.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [NSE 5 Cloud Security track](https://training.fortinet.com/local/staticpage/view.php?page=nse_5_cloud_security) | Public | 20–30 min | Current prerequisite, eligible routes, validity, and renewal |
+| [FortiWeb 8.0 exam page](https://training.fortinet.com/local/staticpage/view.php?page=fortiweb_administrator_exam) | Public | 30–45 min | Canonical FortiWeb route contract and topics |
+| [FortiWeb 8.0 course](https://training.fortinet.com/local/staticpage/view.php?page=library_fortiweb-administrator) | Free account; labs/ILT may cost | 17–25 hr estimate | Official deployment, WAF/API/bot, delivery, HA, and troubleshooting preparation |
+| [FortiWeb 8.0 documentation](https://docs.fortinet.com/product/fortiweb/8.0) | Public | 20–40 hr selected | Administration, WAF concepts, CLI, and troubleshooting |
+| [FortiAppSec Cloud 26 exam page](https://training.fortinet.com/local/staticpage/view.php?page=fortiappsec_cloud_administrator_exam) | Public | 45–60 min | Canonical weighted route contract and tasks |
+| [FortiAppSec Cloud 26 course](https://training.fortinet.com/local/staticpage/view.php?page=library_fortiappsec-cloud-administrator) | Free account; labs may vary | 10–18 hr estimate | Official SaaS architecture, WAAP/API, bot, GSLB, and analytics instruction |
+| [FortiAppSec Cloud documentation](https://docs.fortinet.com/product/fortiappsec-cloud) | Public; tenant features may require access | 15–30 hr selected | Current user behavior, integrations, and operations |
+| [FortiADC 7.6 course](https://training.fortinet.com/local/staticpage/view.php?page=library_fortiadc-administrator) | Free account; labs/ILT may cost | 17 hr lecture+lab listed | Skills preview only until the standalone NSE 5 exam contract is live |
+| [OWASP Web Security Testing Guide](https://owasp.org/www-project-web-security-testing-guide/) and [API Security Top 10](https://owasp.org/projects/api-security-project) | Public | 12–25 hr selected | Vendor-neutral web/API risk and authorized test context |
+| [Fortinet exam release notices](https://helpdesk.training.fortinet.com/support/solutions/articles/73000659982-nse-exam-release-notices-new-and-discontinued-exams) | Public | 15–20 min | Recent releases and retirements |
+| [Fortinet YouTube](https://www.youtube.com/@Fortinet) | Free/YouTube | 4–10 hr selected | Official application-security demonstrations; verify product/version |
+| Authorized FortiWeb or FortiAppSec tenant/partner lab | Gated/paid entitlement | 30–60 hr for one route | Highest-value deployment, tuning, failure, evidence, rollback, and cleanup practice |
+
+### NSE-5-SASE — Fortinet NSE 5 in SASE
+
+Resource details from the [NSE-5-SASE guide](../guides/NSE-5-SASE-fortinet-nse-5-in-sase.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective starting set, not a complete list and not a prescription to consume everything. Start with the exam page and official courses, then choose documentation and labs that close your gaps. Times are publisher-listed or planning estimates.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [NSE 5 SASE track page](https://training.fortinet.com/local/staticpage/view.php?page=nse_5_sase) | Public | 20–30 min | Prerequisite, credential, renewal, and current exam route |
+| [FortiSASE and SD-WAN Core Administrator exam](https://training.fortinet.com/local/staticpage/view.php?page=fortisase_and_sd-wan_core_administrator_exam) | Public | 45–75 min | Canonical version 26 ranges, tasks, contract, experience, and 7.6 retirement |
+| [FortiSASE 26 Core Administrator course](https://training.fortinet.com/local/staticpage/view.php?page=library_fortisase-core-administrator) | Free account; labs may vary | 8–16 hr estimate | Official SASE provisioning, onboarding, SIA/SSA, endpoint, and analytics instruction |
+| [SD-WAN Core Operations Administrator](https://training.fortinet.com/local/staticpage/view.php?page=library_sd-wan-core-operations-administrator) | Free account; labs/ILT may cost | 12 hr lecture+lab listed | Members, SLA, rules, routing, sessions, and troubleshooting |
+| [FortiSASE documentation](https://docs.fortinet.com/product/fortisase) | Public; automated access may be blocked | 15–30 hr selected | Current administration, architecture, deployment, and reference source |
+| [FortiOS 7.6 documentation](https://docs.fortinet.com/product/fortigate/7.6) | Public | 12–25 hr selected | SD-WAN, routing, sessions, NAT, policies, inspection, and operations |
+| [FortiManager documentation](https://docs.fortinet.com/product/fortimanager/7.6) | Public | 5–12 hr selected | Central management ownership, templates, installation, revision, and troubleshooting |
+| [NIST SP 800-207 Zero Trust Architecture](https://csrc.nist.gov/pubs/sp/800/207/final) | Public | 3–5 hr selected | Vendor-neutral identity/policy/access context; not product authority |
+| [Fortinet exam release notices](https://helpdesk.training.fortinet.com/support/solutions/articles/73000659982-nse-exam-release-notices-new-and-discontinued-exams) | Public | 15–20 min | Current release and last-delivery dates |
+| [Fortinet YouTube](https://www.youtube.com/@Fortinet) | Free/YouTube | 5–12 hr selected | Official SASE/SD-WAN architecture and demonstrations; check version |
+| Authorized FortiSASE partner/tenant and FortiGate/FortiManager lab | Gated/paid entitlement | 30–60 hr | Highest-value end-to-end deployment, failure, analytics, rollback, and cleanup practice |
+
+### NSE-5-SECURE-NETWORKING — Fortinet NSE 5 in Secure Networking
+
+Resource details from the [NSE-5-SECURE-NETWORKING guide](../guides/NSE-5-SECURE-NETWORKING-fortinet-nse-5-in-secure-networking.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective starting set, not a complete list and not a prescription to consume everything. Choose the one exam route you intend to take, then use only resources that close measured gaps. Times are publisher-listed or planning estimates.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [NSE 5 Secure Networking track](https://training.fortinet.com/local/staticpage/view.php?page=nse_5_secure_networking) | Public | 20–30 min | Current prerequisites, eligible routes, validity, and renewal |
+| [FortiSwitch exam page](https://training.fortinet.com/local/staticpage/view.php?page=fortiswitch_administrator_exam) | Public | 30–45 min | Exact 7.6 route contract and published topic checklist |
+| [FortiSwitch 7.6 course](https://training.fortinet.com/local/staticpage/view.php?page=library_fortiswitch-administrator) | Free account; labs may cost | 12–20 hr estimate | Official route instruction and hands-on labs; verify displayed duration |
+| [FortiSwitchOS 7.6.2 release notes](https://docs.fortinet.com/document/fortiswitch/7.6.2/fortiswitchos-administration-guide/35890/what-s-new-in-fortiswitchos-7-6-2) | Public | 15–30 hr selected | FortiLink/standalone, VLAN, STP, security, operations, CLI, and version-specific release details |
+| [Secure Wireless LAN exam page](https://training.fortinet.com/local/staticpage/view.php?page=secure_wireless_lan_administrator_exam) | Public | 30–45 min | Exact current 7.6 route contract and topic checklist |
+| [Secure Wireless LAN course](https://training.fortinet.com/local/staticpage/view.php?page=library_secure-wireless-lan-administrator) | Free account; labs may vary | 10–18 hr estimate | Official FortiAP/controller/FortiEdge Cloud preparation |
+| [FortiAP/FortiWiFi 7.6 documentation](https://docs.fortinet.com/product/fortiap/7.6) | Public | 15–30 hr selected | RF, controller, AP profiles, access, monitoring, and diagnostics |
+| [SD-WAN 7.6 Core Administrator exam](https://training.fortinet.com/local/staticpage/view.php?page=sd-wan_core_administrator_exam) | Public | 30–45 min | Current route contract and three weighted topic groups |
+| [SD-WAN Core Operations course](https://training.fortinet.com/local/staticpage/view.php?page=library_sd-wan-core-operations-administrator) | Free account; labs/ILT may cost | 12 hr lecture+lab listed | Skills preparation for the current SD-WAN route |
+| [FortiOS 7.6 SD-WAN documentation](https://docs.fortinet.com/sdwan) | Public | 10–20 hr selected | Members, SLA, routing, rules, sessions, design, and troubleshooting |
+| [Fortinet exam release notices](https://helpdesk.training.fortinet.com/support/solutions/articles/73000659982-nse-exam-release-notices-new-and-discontinued-exams) | Public | 15–20 min | Releases and last-delivery dates before booking |
+| [Fortinet YouTube](https://www.youtube.com/@Fortinet) | Free/YouTube | 4–10 hr selected | Official switching, wireless, and SD-WAN demonstrations; verify versions |
+| Authorized FortiGate/FortiSwitch/FortiAP or SD-WAN lab | Entitlement/cost varies | 25–50 hr for one route | Required applied configuration, failure, evidence, rollback, and cleanup |
+
+### NSE-5-SECURITY-OPERATIONS — Fortinet NSE 5 in Security Operations
+
+Resource details from the [NSE-5-SECURITY-OPERATIONS guide](../guides/NSE-5-SECURITY-OPERATIONS-fortinet-nse-5-in-security-operations.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective starting set, not a complete list and not a prescription to consume everything. Start with the exam page and official Analyst course, then choose references and labs that close measured gaps. Times are publisher-listed or planning estimates.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [NSE 5 Security Operations track](https://training.fortinet.com/local/staticpage/view.php?page=nse_5_security_operations) | Public | 20–30 min | Current prerequisite, eligible exam, validity, and renewal |
+| [FortiAnalyzer 7.6 Analyst exam](https://training.fortinet.com/local/staticpage/view.php?page=fortianalyzer_analyst_exam) | Public | 30–45 min | Canonical contract, tasks, experience, and official resources |
+| [FortiAnalyzer 7.6 Analyst course](https://training.fortinet.com/local/staticpage/view.php?page=library_fortianalyzer-analyst) | Free account; labs/ILT may cost | 11 hr lecture+lab listed | Official log analysis, events/incidents, FortiAI, reports, and playbooks |
+| [FortiAnalyzer 7.6 Administrator course](https://training.fortinet.com/local/staticpage/view.php?page=library_fortianalyzer-administrator) | Free account; labs/ILT may cost | 7 hr lecture+lab listed | Prerequisite deployment/log health knowledge; not the Analyst blueprint |
+| [FortiAnalyzer 7.6.7 release notes](https://docs.fortinet.com/document/fortianalyzer/7.6.0/new-features/893972/7-6-7) | Public | 20–40 hr selected | Current release deltas, analytics/report updates, and version-specific operational changes |
+| [MITRE ATT&CK](https://attack.mitre.org/) | Public | 4–10 hr selected | Technique-driven hunting and incident context; not product authority |
+| [NIST SP 800-61 Rev. 3](https://csrc.nist.gov/pubs/sp/800/61/r3/final) | Public | 3–6 hr selected | Vendor-neutral incident-response lifecycle and coordination |
+| [Fortinet YouTube](https://www.youtube.com/@Fortinet) | Free/YouTube | 4–10 hr selected | Official SOC, FortiAnalyzer, Fabric, and automation demonstrations; verify version |
+| Authorized FortiAnalyzer/FortiGate tenant, VM, or partner lab | Gated/paid entitlement | 30–60 hr | Highest-value log, detection, investigation, automation, report, and failure practice |
+| Third-party SIEM/SOC analysis courses on O'Reilly, Pluralsight, or Udemy | Paid; selection varies | 10–30 hr selected | Optional SQL, hunting, incident, and automation reinforcement; map back to official 7.6 tasks |
+
+### NSE-6-CLOUD-SECURITY — Fortinet NSE 6 in Cloud Security
+
+Resource details from the [NSE-6-CLOUD-SECURITY guide](../guides/NSE-6-CLOUD-SECURITY-fortinet-nse-6-cloud-security.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective starting set, not a complete list and not a prescription to consume everything. Choose the selected lane's official blueprint, documentation, and hands-on work. Times are planning estimates unless the publisher lists them.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [NSE 6 in Cloud Security](https://training.fortinet.com/local/staticpage/view.php?page=nse_6_cloud_security) | Public | 20–30 min | Canonical requirements, options, availability, renewal and policy summary |
+| [FortiCNAPP Analyst exam](https://training.fortinet.com/local/staticpage/view.php?page=forticnapp_analyst_exam) | Public | 45–75 min | Current weighted FortiCNAPP 26 blueprint and experience guidance |
+| [FortiCNAPP documentation](https://docs.fortinet.com/product/forticnapp) | Public | 25–50 hr selected | Architecture, policies, APIs, query language and current cloud behavior |
+| [FortiMail Administrator exam](https://training.fortinet.com/local/staticpage/view.php?page=fortimail_administrator_exam) | Public | 30–60 min | Current FortiMail 7.4 scope and official learning route |
+| [FortiMail 7.4 documentation](https://docs.fortinet.com/product/fortimail/7.4) | Public | 20–40 hr selected | Deployment, SMTP, policies, filtering, encryption, modes and troubleshooting |
+| [FortiDDoS Administrator exam](https://training.fortinet.com/local/staticpage/view.php?page=fortiddos_administrator_exam) | Public | 45–75 min | Current weighted FortiDDoS 7.2 blueprint |
+| [FortiDDoS 7.2 documentation](https://docs.fortinet.com/product/fortiddos-f/7.2) | Public | 18–35 hr selected | Deployment, baselining, profiles, mitigation, logs and operations |
+| [NSE 6 Cloud Security course library](https://training.fortinet.com/local/library/?category=Certification:NSE_6_Cloud_Security) | Free account; labs/ILT may cost | 15–35 hr per selected lane | Locate current official course; verify title, version and duration after sign-in |
+| [FortiMail WorkSpace exam placeholder](https://training.fortinet.com/local/staticpage/view.php?page=fortimail_workspace_administrator_exam) | Public | 5 min now | Recheck for publication; currently Coming soon |
+| [Fortinet exam policy](https://helpdesk.training.fortinet.com/en/support/solutions/articles/73000672593-exam-policy-recertification) | Public | 20–40 min | Retake, renewal, reuse and timing rules |
+| [Fortinet YouTube](https://www.youtube.com/@Fortinet) | Free/YouTube | 4–10 hr selected | Official demonstrations; reconcile version and product behavior with current docs |
+| AWS, Microsoft Azure, Google Cloud, Kubernetes, SMTP/email-security, and DDoS primary documentation | Public | 15–35 hr selected | Vendor-neutral dependency knowledge; not a replacement for the selected Fortinet blueprint |
+| O'Reilly, Pluralsight, Udemy and other courses on CNAPP, email security, SMTP, or DDoS | Subscription/purchase may apply | 10–30 hr selected | No exact current pathway-aligned third-party course was verified; map concepts and validate with primary sources |
+| Authorized product lab or cloud sandbox | Entitlement/partner/training access and cloud costs may apply | 35–80 hr | Highest-value configuration, evidence, failure, response, and rollback practice |
+
+### NSE-6-SECURE-NETWORKING — Fortinet NSE 6 in Secure Networking
+
+Resource details from the [NSE-6-SECURE-NETWORKING guide](../guides/NSE-6-SECURE-NETWORKING-fortinet-nse-6-secure-networking.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective starting set, not a complete list and not a prescription to consume everything. Pick the option-specific documentation, course, and labs that close measured gaps. Times are planning estimates unless a publisher lists a duration; access and versions can change.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [NSE 6 in Secure Networking](https://training.fortinet.com/local/staticpage/view.php?page=nse_6_secure_networking) | Public | 20–30 min | Canonical requirements, options, availability notes, renewal and exam policy summary |
+| [FortiManager Administrator exam](https://training.fortinet.com/local/staticpage/view.php?page=fortimanager_administrator_exam) | Public | 45–75 min | Current contract, weighted objectives, official resources and sample-question boundary |
+| [FortiManager 7.6 Administrator course](https://training.fortinet.com/course/view.php?id=66101) | Free account; labs/ILT may cost | 15–25 hr estimate plus labs | Official option-aligned instruction; verify displayed duration after sign-in |
+| [FortiManager 7.6 documentation](https://docs.fortinet.com/product/fortimanager/7.6) | Public | 20–40 hr selected | ADOMs, devices, policies, APIs, HA, FortiGuard and troubleshooting |
+| [FortiNAC Administrator exam](https://training.fortinet.com/local/staticpage/view.php?page=fortinac_administrator_exam) | Public | 45–75 min | Current contract, weighted objectives and official source links |
+| [NSE 6 Secure Networking course library](https://training.fortinet.com/local/library/?category=Certification:NSE_6_Secure_Networking) | Free account; labs/ILT may cost | 15–30 hr selected | Find the current FortiNAC course and future option courses; verify duration/version after sign-in |
+| [FortiNAC-F 7.6 documentation](https://docs.fortinet.com/product/fortinac-f/7.6) | Public | 20–40 hr selected | Architecture, deployment, Manager, access, integrations and operations |
+| [FortiVoice Administrator placeholder](https://training.fortinet.com/local/staticpage/view.php?page=fortivoice_administrator_exam) and [FortiVoice 8.0 documentation](https://docs.fortinet.com/product/fortivoice-enterprise/8.0) | Public | 6–12 hr fundamentals | Pre-study only; the exam page still says Coming soon, and product documentation does not establish exam scope |
+| [FortiAnalyzer Administrator placeholder](https://training.fortinet.com/local/staticpage/view.php?page=fortianalyzer_administrator_exam) and [FortiAnalyzer 7.6 docs](https://docs.fortinet.com/product/fortianalyzer/7.6) | Public | 8–16 hr fundamentals | Pre-study only; do not infer unpublished exam objectives |
+| [Fortinet Training Institute exam policy](https://helpdesk.training.fortinet.com/en/support/solutions/articles/73000672593-exam-policy-recertification) | Public | 20–40 min | Retake, reuse, renewal and timing rules |
+| [Fortinet YouTube](https://www.youtube.com/@Fortinet) | Free/YouTube | 3–8 hr selected | Official architecture and feature demonstrations; verify product version in current docs |
+| O'Reilly, Pluralsight, Udemy and other vendor courses on centralized firewall management, NAC, network automation, and troubleshooting | Subscription/purchase may apply | 8–25 hr selected | No current course aligned to this exact post-July-2026 pathway was verified; map concepts to the chosen official blueprint |
+| Authorized FortiManager or FortiNAC lab | Entitlement, VM, partner, or training lab may be required | 30–60 hr | Highest-value configuration, failure, troubleshooting and recovery practice |
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.
@@ -6004,6 +6190,7 @@ This is not a complete list and is not meant to be consumed in full. Given the s
 | [Udemy / Jason Dion SY0-701](https://www.udemy.com/course/securityplus/) | Paid marketplace course; automated catalog access blocked during this review | Earlier 31h11 runtime not reverified; inspect current syllabus and revision |
 | [MeasureUp SY0-701 practice test](https://www.measureup.com/sy0-701-comptia-security-practice-test.html) | Paid explanation-led practice; product-specific listing has 213 questions, December 2023 release | About 10–18 hours across attempts and remediation |
 | [Professor Messer free SY0-701 course](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/sy0-701-comptia-security-plus-course/) | Free 121-video course; optional paid notes/practice | 15 hours 11 minutes plus 25–50 hands-on hours |
+| [NIST SP 800-63-4 implementation hub](https://pages.nist.gov/800-63-4/) | Public overview linking 63A/B/C; FAQ and conformance material still forthcoming | About 1–2 hours selected-reference reading (author estimate); not an exam course |
 
 **VERIFY CURRENT:** Public metadata was checked September 29, 2026; paid course/book interiors, question banks and provider labs were not accessed. Pluralsight includes older course material and newer lab dates, so a recent path/lab date does not re-date every lesson. Extra study-hour ranges are planning suggestions, not provider guarantees. MeasureUp’s product-specific 213-question listing takes precedence over generic FAQ wording about 150 questions. No exact current Whizlabs SY0-701 route was independently verified. Reject “actual questions,” dumps and out-of-scope attack labs. Provider duration, price, bundle, bank, revision and access details are volatile.
 
@@ -6018,6 +6205,7 @@ This is not a complete list and is not meant to be consumed in full. Choose one 
 | CompTIA [CertMaster Perform](https://www.comptia.org/en-us/resources/certmaster-training/perform/), [Learn](https://www.comptia.org/en-us/resources/certmaster-training/learn/), Labs, and Practice | Paid official platform; select exact XK0-006 product/bundle | Provider estimates: Perform 30–60h, Learn 25–40h, Practice 10–20h, Labs 15–25h; overlapping options, not additive requirements |
 | [Pluralsight Linux+ path](https://www.pluralsight.com/paths/comptia-linux-xk0-006) | Subscription; 5 courses, 4 labs and practice exam listed; course and lab dates vary | 27 listed hours plus 35–70 suggested additional lab/review hours |
 | [LinkedIn Learning / Total Seminars XK0-006](https://www.linkedin.com/learning/comptia-linux-plus-xk0-006-v8-cert-prep) | Subscription; Total Seminars V8 course released March 18, 2026; 10 quizzes | 15 hours 42 minutes listed plus 35–70 suggested lab/review hours |
+| [Linux Foundation Introduction to Linux (LFS101)](https://training.linuxfoundation.org/training/introduction-to-linux/) | Free foundation course; registration required for lessons; no provider duration published | About 15–25 hours for selected foundations and independent practice (author estimate); not full XK0-006 coverage |
 | [O'Reilly/Sybex Linux+ Study Guide](https://www.oreilly.com/library/view/comptia-linux-study/9781394316328/) | Subscription book; automated catalog access blocked; prior sixth-edition claim not reverified | Suggested 25–45 reading hours plus 35–70 lab/review hours; verify current edition |
 | [Udemy / Jason Dion XK0-006](https://www.udemy.com/course/comptia-linux/) | Paid marketplace course; automated catalog access blocked | Earlier 34h39 runtime not reverified; inspect current syllabus/revision |
 | [MeasureUp XK0-006 CertKit](https://www.measureup.com/xk0-006-comptia-linux-certkit.html) | Paid course bundle, exam simulation and Online Mentor listed; different access periods | Suggested 35–70 selected learning/practice hours; listed e-learning 365 days and practice 60 days from first practice access; verify terms |

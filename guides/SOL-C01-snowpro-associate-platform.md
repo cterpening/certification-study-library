@@ -6,9 +6,9 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-29
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-29
 ---
 
 # SnowPro Associate: Platform (SOL-C01) Retired Reference
@@ -465,6 +465,10 @@ Explain each answer before uncovering it, then produce the relevant evidence. Th
 
 **Check key:** Ready means you can explain the mechanism and demonstrate it where applicable. Recognizing a term or passing the local exercise does not complete the proposed Snowflake labs.
 
+### October 29, 2026 current-source update
+
+SOL-C01 remains a retired reference; the Platform Skills badge and current Platform On-Demand Training are educational replacements, not a new proctored certification. Snowflake’s September 3 [Restricted Session Scope for agents](https://docs.snowflake.com/en/release-notes/2026/other/2026-09-03-restricted-session-scope) release is useful current least-privilege context: the administrator-set agent scope acts as a privilege ceiling intersecting with the invoking user’s RBAC grants. It does not grant an agent rights the user lacks and applies while an agent is active. This feature is **Related item** product context only; it does not revise the retired exam map. Check current account/session-policy availability before practice.
+
 ## Places to learn
 
 This is not a complete list. Use the current replacement course and measured practice gaps to choose additional resources. Public information was checked September 29, 2026. Study budgets are estimates; public course descriptions do not establish lesson quality or completion.
@@ -472,6 +476,8 @@ This is not a complete list. Use the current replacement course and measured pra
 | Resource | Access | Estimated time |
 |---|---|---|
 | [Platform On-Demand Training, OD-SPT](https://learn.snowflake.com/en/courses/OD-SPT/) | Free; public listing links the Platform Assessment/Badge to course completion; curated labs advertised for 30 days | Four hours provider estimated effort; add practice as needed, not a verified assessment duration |
+| [Level Up: First Concepts Series](https://learn.snowflake.com/en/pages/level-up-track) | Free online nine-step learning track; current course listing, no lesson interiors reviewed | No total time published; choose relevant modules and budget practice separately |
+| [Hands-On Essentials Track](https://learn.snowflake.com/en/pages/hands-on-essentials-track/) | Free workshop/badge index across warehousing, collaboration/cost, data apps, lake, engineering, and science | No total time published; use an authorized disposable account and check current compute costs |
 | [Transition FAQ](https://publish-p93462-e887935.adobeaemcloud.com/content/dam/SnowProAssociateCertificationTransitionSnowflakeUniversityPlatformSkillsBadgeFAQs.pdf) | Public; actual two-page PDF fully read | 15–30m study estimate |
 | [Snowflake University catalog](https://learn.snowflake.com/) | Public catalog; course access/enrollment varies | 30–60m planning estimate |
 | [Platform training datasheet](https://www.snowflake.com/wp-content/uploads/2024/12/standard_spt_datasheet.pdf) | Public four-page document, course code 25A24; nine modules and historical function names | Half-day instructor-led description; not the replacement assessment runtime |

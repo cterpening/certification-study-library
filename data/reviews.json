@@ -3,6 +3,728 @@
   "schema_version": 1,
   "reviews": [
     {
+      "id": "sy0-701-2026-10-29-source-validation",
+      "exam_code": "SY0-701",
+      "guide_path": "guides/SY0-701-comptia-security-plus.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-29",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/sy0-701-official-objectives.txt",
+      "blueprint_snapshot_sha256": "152af64f7b23ff8a264ea9aa465c610cc797fcdd6b771d8f7dfe15cdab6b9040",
+      "objective_coverage": [
+        {
+          "objective_group": "General security concepts (12%)",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–4 and 8"
+          ]
+        },
+        {
+          "objective_group": "Threats, vulnerabilities, and mitigations (22%)",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios 1–2",
+            "Labs 1, 5–7"
+          ]
+        },
+        {
+          "objective_group": "Security architecture (18%)",
+          "guide_sections": [
+            "Section 3",
+            "All integrated scenarios",
+            "Labs 1, 3–4 and 8"
+          ]
+        },
+        {
+          "objective_group": "Security operations (28%)",
+          "guide_sections": [
+            "Section 4",
+            "All integrated scenarios",
+            "Labs 4–7"
+          ]
+        },
+        {
+          "objective_group": "Security program management and oversight (20%)",
+          "guide_sections": [
+            "Section 5",
+            "All integrated scenarios",
+            "Labs 1, 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 29,
+        "reachable": 27,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Group 16 content/source refresh. Objective snapshot unchanged; current official scope was compared against the retained map, and dated issuer/product/learning evidence is recorded in docs/research/2026-10-29-nonms-refresh-group-16.md. Browser-accessible issuer pages with automated fetch failures remain explicitly disclosed; blocked access, paid course interiors, live product environments and human review are not claimed."
+    },
+    {
+      "id": "xk0-006-2026-10-29-source-validation",
+      "exam_code": "XK0-006",
+      "guide_path": "guides/XK0-006-comptia-linux-plus.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-29",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/xk0-006-official-objectives.txt",
+      "blueprint_snapshot_sha256": "7092fafe78142df3f4be33e42aea257143769cc6268b90a4e1059f994c00496e",
+      "objective_coverage": [
+        {
+          "objective_group": "System management (23%)",
+          "guide_sections": [
+            "Section 1",
+            "Integrated scenarios 1–2",
+            "Labs 1–2, 4, 6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Services and user management (20%)",
+          "guide_sections": [
+            "Section 2",
+            "All integrated scenarios",
+            "Labs 1, 3, 6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Security (18%)",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios 2–3",
+            "Labs 4–5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Automation, orchestration, and scripting (17%)",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenario 3",
+            "Labs 6–8"
+          ]
+        },
+        {
+          "objective_group": "Troubleshooting (22%)",
+          "guide_sections": [
+            "Section 5",
+            "All integrated scenarios",
+            "All labs"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 31,
+        "reachable": 29,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Group 16 content/source refresh. Objective snapshot unchanged; current official scope was compared against the retained map, and dated issuer/product/learning evidence is recorded in docs/research/2026-10-29-nonms-refresh-group-16.md. Browser-accessible issuer pages with automated fetch failures remain explicitly disclosed; blocked access, paid course interiors, live product environments and human review are not claimed."
+    },
+    {
+      "id": "sol-c01-2026-10-29-source-validation",
+      "exam_code": "SOL-C01",
+      "guide_path": "guides/SOL-C01-snowpro-associate-platform.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-29",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/SOL-C01-official-objectives.txt",
+      "blueprint_snapshot_sha256": "a930a723415ca1b8dfead2cf60a3d27b6c7eaf3d336fefc301421adee9123d57",
+      "objective_coverage": [
+        {
+          "objective_group": "Set up and navigate the UI and Snowflake Notebooks",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Labs 1–2 and 8"
+          ]
+        },
+        {
+          "objective_group": "Create databases and stages, and use compute",
+          "guide_sections": [
+            "Section 2",
+            "Scenarios 1–2",
+            "Labs 1–3 and 8"
+          ]
+        },
+        {
+          "objective_group": "Load structured, semi-structured and unstructured data",
+          "guide_sections": [
+            "Section 3",
+            "Scenarios 1–2",
+            "Labs 3–4 and 8"
+          ]
+        },
+        {
+          "objective_group": "Understand roles and data access management",
+          "guide_sections": [
+            "Section 4",
+            "All scenarios",
+            "Labs 1 and 5–8"
+          ]
+        },
+        {
+          "objective_group": "Understand and manage account structure",
+          "guide_sections": [
+            "Sections 1 and 5",
+            "All scenarios",
+            "Labs 1, 5–7"
+          ]
+        },
+        {
+          "objective_group": "Use Snowflake Cortex LLM functions",
+          "guide_sections": [
+            "Section 6",
+            "Scenario 3",
+            "Lab 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 29,
+        "reachable": 28,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "Group 16 content/source refresh. Objective snapshot unchanged; current official scope was compared against the retained map, and dated issuer/product/learning evidence is recorded in docs/research/2026-10-29-nonms-refresh-group-16.md. Browser-accessible issuer pages with automated fetch failures remain explicitly disclosed; blocked access, paid course interiors, live product environments and human review are not claimed."
+    },
+    {
+      "id": "sscp-2026-10-29-source-validation",
+      "exam_code": "SSCP",
+      "guide_path": "guides/SSCP-isc2-systems-security-certified-practitioner.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-29",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/sscp-official-objectives.txt",
+      "blueprint_snapshot_sha256": "5b6e5e57f166741802957b515a7ec737606e5d43ca796a3691127de083d0a6d4",
+      "objective_coverage": [
+        {
+          "objective_group": "Security Concepts and Practices (16%)",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Labs 1 and 8"
+          ]
+        },
+        {
+          "objective_group": "Access Controls (15%)",
+          "guide_sections": [
+            "Section 2",
+            "Scenarios 1 and 3",
+            "Labs 2 and 8"
+          ]
+        },
+        {
+          "objective_group": "Risk Identification, Monitoring and Analysis (15%)",
+          "guide_sections": [
+            "Section 3",
+            "Scenarios 2 and 3",
+            "Labs 3–4 and 8"
+          ]
+        },
+        {
+          "objective_group": "Incident Response and Recovery (14%)",
+          "guide_sections": [
+            "Section 4",
+            "Scenario 2",
+            "Labs 5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Cryptography (9%)",
+          "guide_sections": [
+            "Section 5",
+            "Scenario 3",
+            "Labs 6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Network and Communication Security (16%)",
+          "guide_sections": [
+            "Section 6",
+            "Scenarios 1 and 3",
+            "Labs 7–8"
+          ]
+        },
+        {
+          "objective_group": "Systems and Application Security (15%)",
+          "guide_sections": [
+            "Section 7",
+            "Scenarios 2 and 3",
+            "Labs 1, 7 and 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 25,
+        "reachable": 23,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Group 16 content/source refresh. Objective snapshot unchanged; current official scope was compared against the retained map, and dated issuer/product/learning evidence is recorded in docs/research/2026-10-29-nonms-refresh-group-16.md. Browser-accessible issuer pages with automated fetch failures remain explicitly disclosed; blocked access, paid course interiors, live product environments and human review are not claimed."
+    },
+    {
+      "id": "servicenow-csa-2026-10-29-source-validation",
+      "exam_code": "SERVICENOW-CSA",
+      "guide_path": "guides/SERVICENOW-CSA-servicenow-certified-system-administrator.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-29",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/servicenow-csa-official-objectives.txt",
+      "blueprint_snapshot_sha256": "7b94b0c2b2f331a2e878694c8b9aaa6db8e998bfc0424d75dca80e6cdbe1d553",
+      "objective_coverage": [
+        {
+          "objective_group": "Platform Overview and Navigation (7%)",
+          "guide_sections": [
+            "1. Platform Overview and Navigation — 7%",
+            "Hands-on evidence labs",
+            "Readiness checks"
+          ]
+        },
+        {
+          "objective_group": "Instance Configuration (10%)",
+          "guide_sections": [
+            "2. Instance Configuration — 10%",
+            "Hands-on evidence labs",
+            "Readiness checks"
+          ]
+        },
+        {
+          "objective_group": "Configuring Applications for Collaboration (20%)",
+          "guide_sections": [
+            "3. Configuring Applications for Collaboration — 20%",
+            "Hands-on evidence labs",
+            "Readiness checks"
+          ]
+        },
+        {
+          "objective_group": "Self Service & Automation (20%)",
+          "guide_sections": [
+            "4. Self Service and Automation — 20%",
+            "Hands-on evidence labs",
+            "Readiness checks"
+          ]
+        },
+        {
+          "objective_group": "Database Management and Platform Security (30%)",
+          "guide_sections": [
+            "5. Database Management and Platform Security — 30%",
+            "Hands-on evidence labs",
+            "Readiness checks"
+          ]
+        },
+        {
+          "objective_group": "Data Migration and Integration (13%)",
+          "guide_sections": [
+            "6. Data Migration and Integration — 13%",
+            "Hands-on evidence labs",
+            "Readiness checks"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 33,
+        "reachable": 30,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "Group 16 content/source refresh. Objective snapshot unchanged; current official scope was compared against the retained map, and dated issuer/product/learning evidence is recorded in docs/research/2026-10-29-nonms-refresh-group-16.md. Browser-accessible issuer pages with automated fetch failures remain explicitly disclosed; blocked access, paid course interiors, live product environments and human review are not claimed."
+    },
+    {
+      "id": "servicenow-cad-2026-10-29-source-validation",
+      "exam_code": "SERVICENOW-CAD",
+      "guide_path": "guides/SERVICENOW-CAD-servicenow-certified-application-developer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-29",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/servicenow-cad-official-objectives.txt",
+      "blueprint_snapshot_sha256": "f71371fc8583ec438fbdde805d2e69d8034607333e1bc033ccc74ae5a261b59a",
+      "objective_coverage": [
+        {
+          "objective_group": "Designing and Creating an Application (20%)",
+          "guide_sections": [
+            "1. Designing and Creating an Application — 20%",
+            "Hands-on evidence labs",
+            "Readiness checks"
+          ]
+        },
+        {
+          "objective_group": "Application User Interface (20%)",
+          "guide_sections": [
+            "2. Application User Interface — 20%",
+            "Hands-on evidence labs",
+            "Readiness checks"
+          ]
+        },
+        {
+          "objective_group": "Security and Restricting Access (20%)",
+          "guide_sections": [
+            "3. Security and Restricting Access — 20%",
+            "Hands-on evidence labs",
+            "Readiness checks"
+          ]
+        },
+        {
+          "objective_group": "Application Automation (20%)",
+          "guide_sections": [
+            "4. Application Automation — 20%",
+            "Hands-on evidence labs",
+            "Readiness checks"
+          ]
+        },
+        {
+          "objective_group": "Working with External Data (10%)",
+          "guide_sections": [
+            "5. Working with External Data — 10%",
+            "Hands-on evidence labs",
+            "Readiness checks"
+          ]
+        },
+        {
+          "objective_group": "Managing Applications (10%)",
+          "guide_sections": [
+            "6. Managing Applications — 10%",
+            "Hands-on evidence labs",
+            "Readiness checks"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 31,
+        "reachable": 28,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "Group 16 content/source refresh. Objective snapshot unchanged; current official scope was compared against the retained map, and dated issuer/product/learning evidence is recorded in docs/research/2026-10-29-nonms-refresh-group-16.md. Browser-accessible issuer pages with automated fetch failures remain explicitly disclosed; blocked access, paid course interiors, live product environments and human review are not claimed."
+    },
+    {
+      "id": "splk-5001-2026-10-29-source-validation",
+      "exam_code": "SPLK-5001",
+      "guide_path": "guides/SPLK-5001-splunk-certified-cybersecurity-defense-analyst.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-29",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/splk-5001-official-objectives.txt",
+      "blueprint_snapshot_sha256": "a2bd1aa1350f373525e5d2f66cfc38f7023f6b84cf9275f594421412fbd704f5",
+      "objective_coverage": [
+        {
+          "objective_group": "The Cyber Landscape, Frameworks, and Standards (10%)",
+          "guide_sections": [
+            "1. The cyber landscape, frameworks, and standards (10%)",
+            "Worked results for the three scenarios",
+            "Hands-on labs",
+            "Executed offline workbook",
+            "Answer notes"
+          ]
+        },
+        {
+          "objective_group": "Threat and Attack Types, Motivations, and Tactics (20%)",
+          "guide_sections": [
+            "2. Threat and attack types, motivations, and tactics (20%)",
+            "Worked results for the three scenarios",
+            "Hands-on labs",
+            "Executed offline workbook",
+            "Answer notes"
+          ]
+        },
+        {
+          "objective_group": "Defenses, Data Sources, and SIEM Best Practices (20%)",
+          "guide_sections": [
+            "3. Defenses, data sources, and SIEM best practices (20%)",
+            "Worked results for the three scenarios",
+            "Hands-on labs",
+            "Executed offline workbook",
+            "Answer notes"
+          ]
+        },
+        {
+          "objective_group": "Investigation, Event Handling, Correlation, and Risk (20%)",
+          "guide_sections": [
+            "4. Investigation, event handling, correlation, and risk (20%)",
+            "Worked results for the three scenarios",
+            "Hands-on labs",
+            "Executed offline workbook",
+            "Answer notes"
+          ]
+        },
+        {
+          "objective_group": "SPL and Efficient Searching (20%)",
+          "guide_sections": [
+            "5. SPL and efficient searching (20%)",
+            "Worked results for the three scenarios",
+            "Hands-on labs",
+            "Executed offline workbook",
+            "Answer notes"
+          ]
+        },
+        {
+          "objective_group": "Threat Hunting and Remediation (10%)",
+          "guide_sections": [
+            "6. Threat hunting and remediation (10%)",
+            "Worked results for the three scenarios",
+            "Hands-on labs",
+            "Executed offline workbook",
+            "Answer notes"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 31,
+        "reachable": 15,
+        "access_blocked": 15,
+        "missing_or_error": 1
+      },
+      "notes": "Group 16 content/source refresh. Objective snapshot unchanged; current official scope was compared against the retained map, and dated issuer/product/learning evidence is recorded in docs/research/2026-10-29-nonms-refresh-group-16.md. Browser-accessible issuer pages with automated fetch failures remain explicitly disclosed; blocked access, paid course interiors, live product environments and human review are not claimed."
+    },
+    {
+      "id": "wde-40-01-2026-10-29-source-validation",
+      "exam_code": "WDE-40-01",
+      "guide_path": "guides/WDE-40-01-certified-entry-level-web-developer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-29",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/wde-40-01-official-objectives.txt",
+      "blueprint_snapshot_sha256": "52a8efac1190c7d5b3e863705d0a0b7d4ea88ad72834aff4990051f21a9a7521",
+      "objective_coverage": [
+        {
+          "objective_group": "Block 1: HTML Fundamentals — 6 items, 15%",
+          "guide_sections": [
+            "1. HTML fundamentals — 15%",
+            "Executed browser workbook",
+            "Integrated scenarios",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 2: Text Formatting and Structure — 8 items, 20%",
+          "guide_sections": [
+            "2. Text formatting and structure — 20%",
+            "Executed browser workbook",
+            "Integrated scenarios",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 3: Multimedia and Hyperlinks — 8 items, 20%",
+          "guide_sections": [
+            "3. Multimedia and hyperlinks — 20%",
+            "Executed browser workbook",
+            "Integrated scenarios",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 4: Forms and Styling — 10 items, 25%",
+          "guide_sections": [
+            "4. Forms and styling — 25%",
+            "Executed browser workbook",
+            "Integrated scenarios",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 5: Accessibility, Best Practices, and Modern HTML — 8 items, 20%",
+          "guide_sections": [
+            "5. Accessibility, best practices, and modern HTML — 20%",
+            "Executed browser workbook",
+            "Integrated scenarios",
+            "Answer key"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 41,
+        "reachable": 37,
+        "access_blocked": 4,
+        "missing_or_error": 0
+      },
+      "notes": "Group 16 content/source refresh. Objective snapshot unchanged; current official scope was compared against the retained map, and dated issuer/product/learning evidence is recorded in docs/research/2026-10-29-nonms-refresh-group-16.md. Browser-accessible issuer pages with automated fetch failures remain explicitly disclosed; blocked access, paid course interiors, live product environments and human review are not claimed."
+    },
+    {
+      "id": "wda-41-01-2026-10-29-source-validation",
+      "exam_code": "WDA-41-01",
+      "guide_path": "guides/WDA-41-01-certified-associate-web-developer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-29",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/wda-41-01-official-objectives.txt",
+      "blueprint_snapshot_sha256": "747cb21a7c881c08b2b1107feb22733528ec25faab300998abb8ac499af07c5d",
+      "objective_coverage": [
+        {
+          "objective_group": "Block 1: HTML Fundamentals — 10 items, 25%",
+          "guide_sections": [
+            "1. HTML fundamentals — 25%",
+            "Executed browser workbook",
+            "Integrated scenarios",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 2: CSS Fundamentals — 9 items, 22.5%",
+          "guide_sections": [
+            "2. CSS fundamentals — 22.5%",
+            "Executed browser workbook",
+            "Integrated scenarios",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 3: Integrating HTML and CSS — 10 items, 25%",
+          "guide_sections": [
+            "3. Integrating HTML and CSS — 25%",
+            "Executed browser workbook",
+            "Integrated scenarios",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 4: Responsive Web Design and Layout Techniques — 5 items, 12.5%",
+          "guide_sections": [
+            "4. Responsive web design and layout — 12.5%",
+            "Executed browser workbook",
+            "Integrated scenarios",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 5: Accessibility, Usability, and Best Practices — 6 items, 15%",
+          "guide_sections": [
+            "5. Accessibility, usability, and best practices — 15%",
+            "Executed browser workbook",
+            "Integrated scenarios",
+            "Answer key"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 47,
+        "reachable": 39,
+        "access_blocked": 8,
+        "missing_or_error": 0
+      },
+      "notes": "Group 16 content/source refresh. Objective snapshot unchanged; current official scope was compared against the retained map, and dated issuer/product/learning evidence is recorded in docs/research/2026-10-29-nonms-refresh-group-16.md. Browser-accessible issuer pages with automated fetch failures remain explicitly disclosed; blocked access, paid course interiors, live product environments and human review are not claimed."
+    },
+    {
+      "id": "pcet-30-01-2026-10-29-source-validation",
+      "exam_code": "PCET-30-01",
+      "guide_path": "guides/PCET-30-01-python-certified-entry-level-tester.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-29",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/pcet-30-01-official-objectives.txt",
+      "blueprint_snapshot_sha256": "2ba098e2104bb457258687cdcd07afcc3a531ab146c27b0022a9bebb5d793aec",
+      "objective_coverage": [
+        {
+          "objective_group": "Block 1: Core Software Testing Concepts — 6 items, 17.1%",
+          "guide_sections": [
+            "1. Core testing concepts — 17.1%",
+            "Exact original executable workbook",
+            "Answers and reasoning"
+          ]
+        },
+        {
+          "objective_group": "Block 2: Software Testing Types, Levels, and Processes — 8 items, 22.9%",
+          "guide_sections": [
+            "2. Types, levels, processes, and doubles — 22.9%",
+            "Exact original executable workbook",
+            "Answers and reasoning"
+          ]
+        },
+        {
+          "objective_group": "Block 3: Static Analysis, Dynamic Testing, and Code Refactoring — 10 items, 28.6%",
+          "guide_sections": [
+            "3. Static/dynamic testing, coverage, and refactoring — 28.6%",
+            "Exact original executable workbook",
+            "Answers and reasoning"
+          ]
+        },
+        {
+          "objective_group": "Block 4: Debugging, Assertions, and Testing Techniques — 11 items, 31.4%",
+          "guide_sections": [
+            "4. Debugging, assertions, and test techniques — 31.4%",
+            "Exact original executable workbook",
+            "Answers and reasoning"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 21,
+        "reachable": 17,
+        "access_blocked": 4,
+        "missing_or_error": 0
+      },
+      "notes": "Group 16 content/source refresh. Objective snapshot unchanged; current official scope was compared against the retained map, and dated issuer/product/learning evidence is recorded in docs/research/2026-10-29-nonms-refresh-group-16.md. Browser-accessible issuer pages with automated fetch failures remain explicitly disclosed; blocked access, paid course interiors, live product environments and human review are not claimed."
+    },
+    {
       "id": "nse-4-fortios-2026-09-02-source-validation",
       "exam_code": "NSE-4-FORTIOS",
       "guide_path": "guides/NSE-4-FORTIOS-fortinet-nse-4-fortios.md",
