@@ -6,20 +6,20 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-02
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-02
+upcoming_change_checked: 2026-10-28
 ---
 
 # Palo Alto Networks Certified Next-Generation Firewall Engineer Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live certification page, November 2025 datasheet, July 2025 certification handbook, and current public Palo Alto Networks technical documentation were checked September 2, 2026. This does not guarantee that every explanation is error-free or remains current. The [official page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-ngfw-engineer) and [datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/ngfw-engineer-datasheet.pdf) are authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live certification page, November 2025 datasheet, September 2026 certification handbook, and current public Palo Alto Networks technical documentation were checked October 28, 2026. This does not guarantee that every explanation is error-free or remains current. The [official page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-ngfw-engineer) and [datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/ngfw-engineer-datasheet.pdf) are authoritative.
 
 **Current baseline:** PAN-OS networking configuration 40%; PAN-OS device-setting configuration 40%; integration and automation 20%; November 2025 datasheet<br>
 **Exam contract:** specialist-level English Pearson VUE certification. The current handbook uses an 860 passing score on a 300–1000 scaled range and provisional results. The datasheet does not publish item count, base duration, price, or exam-form details; verify registration.<br>
 **Experience boundary:** Palo Alto Networks recommends two to three years in an IT-security role and two years with Palo Alto Networks NGFW solutions. The blueprint expects engineering-level competence across NGFW offerings, TCP/IP/routing, security architecture and automation, with basic Python, PowerShell, and SQL knowledge. Network Security Professional and Network Security Analyst are recommended certifications, not stated prerequisites.<br>
-**Validity and renewal:** two years under the July 2025 handbook, subject to current pathway rules.<br>
-**Upcoming change:** no retirement or dated replacement was found September 2, 2026. PAN-OS releases, cloud-delivered services, supported platforms, cryptography, API schemas, and cloud deployment patterns are volatile; recheck release-specific documentation before the exam.<br>
+**Validity and renewal:** two years from passing. The September 2026 [Certification Handbook](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf) permits higher-level exam recertification to renew active lower-level credentials in the same track; the same passed exam cannot be retaken for 545 days. Failed-attempt waits are 15, 30, then 90 days. Check your credential record and current policy before scheduling.<br>
+**Upcoming change:** no retirement or dated replacement was found October 28, 2026. PAN-OS releases, cloud-delivered services, supported platforms, cryptography, API schemas, and cloud deployment patterns are volatile; recheck release-specific documentation before the exam.<br>
 **Integrity:** actual exam content is confidential. This guide follows the public blueprint and uses original questions, synthetic addresses, and authorized labs only.
 
 ## How to use this guide
@@ -195,6 +195,10 @@ Partition supported interfaces, zones, routers, policies, administrators, and lo
 
 Choose VM-Series, Cloud NGFW, CN-Series, or other supported option from insertion and responsibility requirements. Pin artifacts/provider, protect state/secrets, plan and canary a deployment, verify routing and policy/logging, simulate a failed asynchronous job, and prove rollback. Bring the managed device into the intended Panorama hierarchy only if that architecture is supported and required.
 
+## Current product notes
+
+**Related version note (not a new exam objective):** PAN-OS 12.1 changes several defaults and upgrades have model/release-specific prerequisites; the 12.2 feature set includes cross-version IPv6 DNS proxy and platform-scoped features. Before a lab, record firewall model, target release, Panorama compatibility, content and plugin versions, and the relevant default-behavior/limitations pages. [PAN-OS 12.1 changed defaults](https://docs.paloaltonetworks.com/ngfw/release-notes/12-1/changes-to-default-behavior/changes-to-default-behavior-in-pan-os-12-1) · [PAN-OS 12.2 new features](https://docs.paloaltonetworks.com/ngfw/new-features/by-version/panos/12-2).
+
 ## Hands-on labs
 
 1. **Interface and zone matrix:** implement or model Layer 2, Layer 3, virtual wire, tunnel, AE, and management use cases; predict and verify packet paths and negative policy tests.
@@ -322,10 +326,12 @@ Choose VM-Series, Cloud NGFW, CN-Series, or other supported option from insertio
 
 This is a selective starting set, not a complete list and not a prescription to consume everything. Pick the official documentation, guided training, videos, and labs that close your specific gaps. Times are planning estimates unless the provider publishes a duration; access, titles, versions, and pricing can change.
 
+**Official learning path:** The [current certification page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-ngfw-engineer) links to the Palo Alto Networks Certified Next-Generation Firewall Engineer digital path. Palo Alto Networks describes its digital modules as free and self-paced; Learning Center registration/sign-in is required, and public pages do not state total path runtime. See [Education Services](https://www.paloaltonetworks.com/services/education) and [Learning Center registration guidance](https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA10g000000PLNxCAO&lang=en_US); course access may vary by account/region.
+
+- [Official Palo Alto Networks digital learning](https://learn.paloaltonetworks.com/learn) — locate the **NGFW Engineer** path from the certification page; free and self-paced, but sign-in is required and public pages state no total runtime.
 - [Official certification page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-ngfw-engineer) and [November 2025 datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/ngfw-engineer-datasheet.pdf) — **45–75 minutes** to annotate the complete blueprint; public; canonical scope and recommended-experience source.
 - [Palo Alto Networks Certification Handbook](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf) — **30–45 minutes**; public; verify delivery, scoring, retake, validity, renewal, accommodations, and current program rules.
-- [Official Palo Alto Networks digital learning](https://learn.paloaltonetworks.com/learn) — locate the **NGFW Engineer** learning path; **estimate 15–30 hours** depending on prior experience; account/login may be required and the public certification link currently resolves to the learning portal rather than a stable deep link.
-- Official instructor-led **EDU-210 Firewall Essentials: Configuration and Management** and **Panorama: NGFW Management** — **estimate 4–5 training days total plus labs**; commercial/authorized training access; the certification page explicitly recommends both, but schedule, delivery, prerequisites, and price vary by provider/region.
+- Optional official instructor-led courses: [EDU-210 Firewall Essentials: Configuration and Management](https://www.paloaltonetworks.com/services/education/edu-210-firewall-essentials-configuration-and-management) (5 days) and [Panorama: NGFW Management](https://www.paloaltonetworks.com/services/education/ilt-panorama-ngfw-management) (2 days). Registration is through authorized partners; paid or training-credit access, with local pricing varying.
 - [PAN-OS and NGFW documentation](https://docs.paloaltonetworks.com/pan-os) — **20–40 hours targeted reading and lab replication**; public; prioritize networking, HA, routing, GlobalProtect, VPN, authentication, VSYS, logging, upgrades, certificates/decryption, User-ID, web proxy, and the exact release used in practice.
 - [Advanced Routing documentation](https://docs.paloaltonetworks.com/ngfw/administration/set-up-firewalls/routing-and-interfaces) — **3–6 hours plus labs**; public; check platform/release support and migration differences.
 - [Decryption administration](https://docs.paloaltonetworks.com/network-security/decryption/administration) — **4–8 hours plus PKI labs**; public; use current legal/privacy policy and a non-production CA.

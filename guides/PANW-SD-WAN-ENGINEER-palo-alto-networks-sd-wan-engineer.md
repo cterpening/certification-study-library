@@ -6,20 +6,20 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-02
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-02
+upcoming_change_checked: 2026-10-28
 ---
 
 # Palo Alto Networks Certified SD-WAN Engineer Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live certification page, August 2025 datasheet, July 2025 certification handbook, and current public Prisma SD-WAN/SASE documentation were checked September 2, 2026. This does not guarantee that every explanation is error-free or remains current. The [official page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-sd-wan-engineer) and [datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/sd-wan-engineer-datasheet.pdf) are authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live certification page, August 2025 datasheet, September 2026 certification handbook, and current public Prisma SD-WAN/SASE documentation were checked October 28, 2026. This does not guarantee that every explanation is error-free or remains current. The [official page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-sd-wan-engineer) and [datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/sd-wan-engineer-datasheet.pdf) are authoritative.
 
 **Current baseline:** planning/design 24%; deployment/configuration 24%; operations/monitoring 18%; Unified SASE 14%; troubleshooting 20%; August 2025 datasheet<br>
 **Exam contract:** specialist-level English Pearson VUE certification. The current handbook uses an 860 passing score on a 300–1000 scaled range and provisional results. The datasheet does not publish item count, base duration, price, or a formal experience duration; verify registration.<br>
 **Experience boundary:** the audience is experienced Prisma SD-WAN/SASE and network engineers. The blueprint expects engineering-level Prisma SD-WAN knowledge, TCP/IP and routing, topology, network security, SASE, automation, security architecture, and basic Python, PowerShell, and SQL.<br>
-**Validity and renewal:** two years under the July 2025 handbook, subject to current pathway rules.<br>
-**Upcoming change:** no retirement or dated replacement was found September 2, 2026. ION/controller releases, Strata Cloud Manager workflows, licenses, policy models, SASE integrations, ADEM, analytics, Device-ID, CIE, and copilot behavior are volatile; use the current release selector and tenant help.<br>
+**Validity and renewal:** two years from passing. The September 2026 [Certification Handbook](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf) permits higher-level exam recertification to renew active lower-level credentials in the same track; the same passed exam cannot be retaken for 545 days. Failed-attempt waits are 15, 30, then 90 days. Check your credential record and current policy before scheduling.<br>
+**Upcoming change:** no retirement or dated replacement was found October 28, 2026. ION/controller releases, Strata Cloud Manager workflows, licenses, policy models, SASE integrations, ADEM, analytics, Device-ID, CIE, and copilot behavior are volatile; use the current release selector and tenant help.<br>
 **Integrity:** actual exam content is confidential. This guide follows the public blueprint and uses original questions, synthetic data, and authorized labs only.
 
 ## How to use this guide
@@ -267,6 +267,10 @@ Integrate CIE/User-ID and Prisma Access, then bind narrowly scoped user/group ap
 
 Establish affected sites/users/time and voice SLA; inspect classification, QoS queue/drop, LQM/probe latency/jitter/loss, bandwidth/hotspots, path/performance rule, routing and provider evidence. Pilot a threshold/path/QoS adjustment with raise/clear hysteresis and compare voice-tail metrics plus other application/cost guardrails.
 
+## Current product notes
+
+**Related release example (not a new exam objective):** Prisma SD-WAN 6.8.1 (July/August 2026 documentation) adds PQC options for Standard VPN connections and routing/interface enhancements; behavior depends on ION 6.8.1+ and supported configuration. Use current compatibility/release notes and test route preference and failover before generalizing. [Prisma SD-WAN August 2026 features](https://docs.paloaltonetworks.com/prisma-sd-wan/new-features/by-date/prisma-sd-wan/august-2026).
+
 ## Hands-on labs
 
 1. **Assessment and selection:** inventory three fictional sites and map application/SLA, topology, circuits, capacity, HA, security, licensing, and current supported ION choice with assumptions.
@@ -389,10 +393,12 @@ Establish affected sites/users/time and voice SLA; inspect classification, QoS q
 
 This is a selective starting set, not a complete list and not a prescription to consume everything. Pick and choose the official documentation, structured training, demonstrations, and labs that close your gaps. Times are planning estimates unless the provider states a duration; access, licensing, versions, titles, and prices change.
 
+**Official learning path:** The [current certification page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-sd-wan-engineer) links to the Palo Alto Networks Certified SD-WAN Engineer digital path. Palo Alto Networks describes its digital modules as free and self-paced; Learning Center registration/sign-in is required, and public pages do not state total path runtime. See [Education Services](https://www.paloaltonetworks.com/services/education) and [Learning Center registration guidance](https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA10g000000PLNxCAO&lang=en_US); course access may vary by account/region.
+
+- [Official Palo Alto Networks digital learning](https://learn.paloaltonetworks.com/learn) — locate the **SD-WAN Engineer** path from the certification page; free/self-paced, sign-in required, total runtime not public.
 - [Official certification page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-sd-wan-engineer) and [August 2025 datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/sd-wan-engineer-datasheet.pdf) — **45–75 minutes** to annotate; public; canonical scope.
 - [Palo Alto Networks Certification Handbook](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf) — **30–45 minutes**; public; verify current delivery, score, retakes, validity/renewal, accommodations, and program rules.
-- [Official Palo Alto Networks digital learning](https://learn.paloaltonetworks.com/learn) — locate the **SD-WAN Engineer** learning path; **estimate 15–30 hours** depending on experience; login may be required and the public certification link currently resolves to the learning portal rather than a stable deep link.
-- Official instructor-led **Prisma SD-WAN: Design and Operation** — **estimate 3–5 training days plus labs**; commercial/authorized training; explicitly recommended on the certification page, but schedules and exact duration vary.
+- Optional official instructor-led [Prisma SD-WAN: Design and Operation](https://www.paloaltonetworks.com/services/education/edu-238-prisma-sd-wan-design-and-operation) (5 days, including hands-on lab work). Authorized-partner registration; paid or training-credit access, local pricing varies.
 - [Prisma SD-WAN documentation](https://docs.paloaltonetworks.com/prisma-sd-wan) — **25–45 hours targeted reading and lab repetition**; public; canonical product study source; select the current ION/controller release and cover onboarding, deployment, policy, routing, VRF, monitoring, incidents, and release notes.
 - [Prisma SD-WAN Administrator’s Guide](https://docs.paloaltonetworks.com/prisma-sd-wan/administration) — **12–25 hours targeted**; public; policy ordering/features and UI paths are release-sensitive.
 - [WAN Clarity Reports](https://docs.paloaltonetworks.com/prisma-sd-wan/administration/prisma-sd-wan-clarity-reports) — **2–4 hours plus report review**; public documentation, but report access requires relevant tenant/license.

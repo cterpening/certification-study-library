@@ -6,20 +6,20 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-02
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-02
+upcoming_change_checked: 2026-10-28
 ---
 
 # Palo Alto Networks Certified Network Security Professional Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live certification page, June 2026 datasheet, July 2025 certification handbook, official technical documentation, and selected public learning sources were checked September 2, 2026. This does not guarantee that every explanation is error-free or remains current. The [official certification page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-netsec-professional) and [datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/netsec-professional-datasheet.pdf) are authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live certification page, June 2026 datasheet, September 2026 certification handbook, official technical documentation, and selected public learning sources were checked October 28, 2026. This does not guarantee that every explanation is error-free or remains current. The [official certification page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-netsec-professional) and [datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/netsec-professional-datasheet.pdf) are authoritative.
 
 **Current baseline:** Fundamentals 17%; solution functionality 13%; platform solutions/services/tools 30%; maintenance/configuration 10%; infrastructure/CDSS 17%; connectivity/security 13%; June 2026 datasheet<br>
 **Exam contract:** professional-level English Pearson VUE certification. Under the current handbook, all Palo Alto Networks certification exams use an 860 passing score on a 300–1000 scaled range and provisional results. The datasheet does not publish item count, base duration, or price; verify them in the live registration flow.<br>
 **Experience boundary:** the target audience installs, deploys, operates, or administers the network-security portfolio. The exam requires basic configuration/maintenance knowledge across NGFW, SASE, management, and CDSS products—not merely definitions.<br>
-**Validity and renewal:** two years under the July 2025 handbook, subject to current exam/higher-level same-track recertification rules.<br>
-**Upcoming change:** no retirement or dated replacement was found September 2, 2026. This June 2026 blueprint includes newly volatile NGTS, quantum-security, and AI-security material; verify current docs during study.<br>
+**Validity and renewal:** two years from passing. The September 2026 [Certification Handbook](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf) permits higher-level exam recertification to renew active lower-level credentials in the same track; the same passed exam cannot be retaken for 545 days. Failed-attempt waits are 15, 30, then 90 days. Check your credential record and current policy before scheduling.<br>
+**Upcoming change:** no retirement or dated replacement was found October 28, 2026. This June 2026 blueprint includes newly volatile NGTS, quantum-security, and AI-security material; verify current docs during study.<br>
 **Integrity:** actual exam content is confidential. This guide uses the public blueprint, original checks, isolated labs, and public documentation only.
 
 ## How to use this guide
@@ -181,6 +181,10 @@ Publish an on-prem/private-cloud application to remote users through Prisma Acce
 
 Use NGTS-style inventory to locate certificates/algorithms and plan one hybrid-cryptography pilot. Simultaneously map workforce AI traffic and an internal agent application. Apply access/data/runtime/network controls, stage policies, monitor false positives, and retain human approval for disruptive response.
 
+## Current product notes
+
+**Related product update (not a new exam objective):** Prisma Access 6.2 adds native IPv6 for service connections and remote networks; SAA terminology and private/public app options have changed. Confirm product, protocol, rollout region, Panorama/SCM mode, and entitlement before applying these examples. [Prisma Access 6.2 features](https://docs.paloaltonetworks.com/prisma-access/new-features/by-version/prisma-access/6-2-preferred-innovation) · [PAN-OS 12.1 changed defaults](https://docs.paloaltonetworks.com/ngfw/release-notes/12-1/changes-to-default-behavior/changes-to-default-behavior-in-pan-os-12-1).
+
 ## Hands-on labs
 
 1. **Packet/session walk:** build an isolated routed/NAT path, capture first/subsequent packets, document session state, and map hypothetical App-ID/decryption/profile/log stages.
@@ -295,12 +299,13 @@ Use NGTS-style inventory to locate certificates/algorithms and plan one hybrid-c
 
 This is not a complete list, and it is not a prescription to consume everything. Start with the blueprint and official path, then select documentation and labs for measured gaps. Product pages, UI, licensing, and course versions change; record the version you used.
 
+**Official learning path:** The [current certification page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-netsec-professional) links to the Palo Alto Networks Certified Network Security Professional digital path. Palo Alto Networks describes its digital modules as free and self-paced; Learning Center registration/sign-in is required, and public pages do not state total path runtime. See [Education Services](https://www.paloaltonetworks.com/services/education) and [Learning Center registration guidance](https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA10g000000PLNxCAO&lang=en_US); course access may vary by account/region.
+
 | Resource | Access | Estimated time | Best use |
 |---|---|---:|---|
 | [Network Security Professional certification page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-netsec-professional) | Public | 10–15 minutes | Current credential, official blueprint/path/registration links |
 | [June 2026 datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/netsec-professional-datasheet.pdf) | Public PDF | 60–90 minutes | Canonical six-domain scope and all named product capabilities |
 | [Certification Handbook](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf) | Public PDF | 30–45 minutes | Scoring, ESL, result, retake, validity, renewal, and integrity policy |
-| [Official digital learning](https://learn.paloaltonetworks.com/learn) | Free account/login may be required | 30 minutes planning; modules vary | Follow page-linked Professional learning plan and record current duration/version |
 | [PAN-OS documentation](https://docs.paloaltonetworks.com/pan-os) | Public | 15–30 hours selected topics | Packet flow, policy, NAT, App/User/Device-ID, decryption, profiles, updates, HA, logs |
 | [Strata Cloud Manager documentation](https://docs.paloaltonetworks.com/strata-cloud-manager) | Public | 8–15 hours selected topics | Cloud management, AIOps/BPA, supported products, policy and operations |
 | [Prisma Access documentation](https://docs.paloaltonetworks.com/prisma-access) | Public | 8–15 hours selected topics | Remote-user/network connectivity, policy, operations, and logging |

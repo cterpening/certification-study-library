@@ -59354,15 +59354,18 @@
       "access_model": "public",
       "last_checked": "2026-10-28",
       "supported_exams": [
+        "PANW-CLOUD-SECURITY-PROFESSIONAL",
         "PANW-CYBERSECURITY-APPRENTICE",
         "PANW-CYBERSECURITY-PRACTITIONER",
-        "PANW-CLOUD-SECURITY-PROFESSIONAL",
-        "PANW-NETWORK-SECURITY-PROFESSIONAL",
         "PANW-NETWORK-SECURITY-ANALYST",
+        "PANW-NETWORK-SECURITY-ARCHITECT",
+        "PANW-NETWORK-SECURITY-PROFESSIONAL",
         "PANW-NGFW-ENGINEER",
         "PANW-SD-WAN-ENGINEER",
         "PANW-SECURITY-OPERATIONS-ARCHITECT",
+        "PANW-SECURITY-OPERATIONS-PROFESSIONAL",
         "PANW-SSE-ENGINEER",
+        "PANW-XDR-ANALYST",
         "PANW-XDR-ENGINEER",
         "PANW-XSIAM-ANALYST",
         "PANW-XSIAM-ENGINEER",
@@ -76429,6 +76432,282 @@
         "C1000-175"
       ],
       "notes": "Defines Basic, Enriched, and Advanced inspection levels; configuration-specific details are not implied as exam tasks."
+    }
+  ,
+    {
+      "id": "panw-edu-services",
+      "title": "Education Services",
+      "url": "https://www.paloaltonetworks.com/services/education",
+      "publisher": "Palo Alto Networks",
+      "authority_class": 1,
+      "source_type": "official-guidance",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "PANW-NETWORK-SECURITY-ARCHITECT",
+        "PANW-NETWORK-SECURITY-PROFESSIONAL",
+        "PANW-NGFW-ENGINEER",
+        "PANW-SD-WAN-ENGINEER",
+        "PANW-SECURITY-OPERATIONS-ARCHITECT",
+        "PANW-SECURITY-OPERATIONS-PROFESSIONAL",
+        "PANW-SSE-ENGINEER",
+        "PANW-XDR-ANALYST",
+        "PANW-XDR-ENGINEER",
+        "PANW-XSIAM-ANALYST"
+      ],
+      "notes": "Free self-paced digital learning and authorized instructor-led education information."
+    },
+    {
+      "id": "panw-learning-center-registration",
+      "title": "Learning Center registration guidance",
+      "url": "https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA10g000000PLNxCAO&lang=en_US",
+      "publisher": "Palo Alto Networks",
+      "authority_class": 1,
+      "source_type": "official-guidance",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "PANW-NETWORK-SECURITY-ARCHITECT",
+        "PANW-NETWORK-SECURITY-PROFESSIONAL",
+        "PANW-NGFW-ENGINEER",
+        "PANW-SD-WAN-ENGINEER",
+        "PANW-SECURITY-OPERATIONS-ARCHITECT",
+        "PANW-SECURITY-OPERATIONS-PROFESSIONAL",
+        "PANW-SSE-ENGINEER",
+        "PANW-XDR-ANALYST",
+        "PANW-XDR-ENGINEER",
+        "PANW-XSIAM-ANALYST"
+      ],
+      "notes": "Free online Learning Center training requires registration; account-gated course content not inspected."
+    },
+    {
+      "id": "panw-edu-210-firewall-essentials",
+      "title": "Firewall Essentials: Configuration and Management (EDU-210)",
+      "url": "https://www.paloaltonetworks.com/services/education/edu-210-firewall-essentials-configuration-and-management",
+      "publisher": "Palo Alto Networks",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "paid",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "PANW-NGFW-ENGINEER"
+      ],
+      "notes": "Official course listing states five days; authorized partner/training-credit access, regional pricing varies."
+    },
+    {
+      "id": "panw-ilt-panorama-ngfw-management",
+      "title": "Panorama: NGFW Management",
+      "url": "https://www.paloaltonetworks.com/services/education/ilt-panorama-ngfw-management",
+      "publisher": "Palo Alto Networks",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "paid",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "PANW-NGFW-ENGINEER"
+      ],
+      "notes": "Official course listing states two days; prerequisites and regional/partner access apply."
+    },
+    {
+      "id": "panw-edu-238-prisma-sdwan",
+      "title": "Prisma SD-WAN: Design and Operation (EDU-238)",
+      "url": "https://www.paloaltonetworks.com/services/education/edu-238-prisma-sd-wan-design-and-operation",
+      "publisher": "Palo Alto Networks",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "paid",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "PANW-SD-WAN-ENGINEER"
+      ],
+      "notes": "Official course listing states five days with hands-on exercises; authorized partner/training-credit access."
+    },
+    {
+      "id": "panw-ilt-prisma-access-sse",
+      "title": "Prisma Access SSE: Configuration and Deployment",
+      "url": "https://www.paloaltonetworks.com/services/education/ilt-prisma-access-sse-configuration-and-deployment",
+      "publisher": "Palo Alto Networks",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "paid",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "PANW-SSE-ENGINEER"
+      ],
+      "notes": "Official course listing states four days with hands-on work; partner/training-credit access."
+    },
+    {
+      "id": "panw-ilt-xdr-investigation",
+      "title": "Cortex XDR: Investigation and Analysis",
+      "url": "https://www.paloaltonetworks.com/services/education/ilt-xdr-investigation-analysis",
+      "publisher": "Palo Alto Networks",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "paid",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "PANW-XDR-ANALYST"
+      ],
+      "notes": "Official course listing states two days; account/partner route and prerequisites apply."
+    },
+    {
+      "id": "panw-ilt-xdr-integration",
+      "title": "Cortex XDR: Security Operations and Integration",
+      "url": "https://www.paloaltonetworks.com/services/education/ilt-cortex-xdr-security-operations-integration",
+      "publisher": "Palo Alto Networks",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "paid",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "PANW-XDR-ENGINEER"
+      ],
+      "notes": "Official course listing states three days; authorized partner/training-credit access."
+    },
+    {
+      "id": "panw-panos-121-defaults",
+      "title": "Changes to Default Behavior in PAN-OS 12.1",
+      "url": "https://docs.paloaltonetworks.com/ngfw/release-notes/12-1/changes-to-default-behavior/changes-to-default-behavior-in-pan-os-12-1",
+      "publisher": "Palo Alto Networks",
+      "authority_class": 1,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "PANW-NETWORK-SECURITY-ARCHITECT",
+        "PANW-NETWORK-SECURITY-PROFESSIONAL",
+        "PANW-NGFW-ENGINEER"
+      ],
+      "notes": "Train-specific default/upgrade considerations; check model, target release, content and management compatibility."
+    },
+    {
+      "id": "panw-panos-122-new-features",
+      "title": "New Features in PAN-OS 12.2",
+      "url": "https://docs.paloaltonetworks.com/ngfw/new-features/by-version/panos/12-2",
+      "publisher": "Palo Alto Networks",
+      "authority_class": 1,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "PANW-NETWORK-SECURITY-ARCHITECT",
+        "PANW-NETWORK-SECURITY-PROFESSIONAL",
+        "PANW-NGFW-ENGINEER"
+      ],
+      "notes": "Version/platform-scoped examples; not blanket defaults."
+    },
+    {
+      "id": "panw-scm-october-2026",
+      "title": "New Features in Strata Cloud Manager - October 2026",
+      "url": "https://docs.paloaltonetworks.com/strata-cloud-manager/new-features/by-date/strata-cloud-manager/october-2026",
+      "publisher": "Palo Alto Networks",
+      "authority_class": 1,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "PANW-NGFW-ENGINEER",
+        "PANW-NETWORK-SECURITY-PROFESSIONAL",
+        "PANW-SECURITY-OPERATIONS-ARCHITECT"
+      ],
+      "notes": "October 2026 examples include HA upgrade orchestration and additional AI security role assignment; feature/license availability varies."
+    },
+    {
+      "id": "panw-prisma-access-62-new-features",
+      "title": "New Features in Prisma Access 6.2 Preferred and Innovation",
+      "url": "https://docs.paloaltonetworks.com/prisma-access/new-features/by-version/prisma-access/6-2-preferred-innovation",
+      "publisher": "Palo Alto Networks",
+      "authority_class": 1,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "PANW-NETWORK-SECURITY-ARCHITECT",
+        "PANW-NETWORK-SECURITY-PROFESSIONAL",
+        "PANW-SSE-ENGINEER",
+        "PANW-SD-WAN-ENGINEER"
+      ],
+      "notes": "IPv6, resilience, and agentless-access examples; rollout, tenant mode, region and entitlement boundaries apply."
+    },
+    {
+      "id": "panw-prisma-access-60-saa-notes",
+      "title": "Prisma Access 6.0 addressed issues (SAA naming and licensing note)",
+      "url": "https://docs.paloaltonetworks.com/prisma-access/release-notes/6-0/prisma-access-about/prisma-access-addressed-issues",
+      "publisher": "Palo Alto Networks",
+      "authority_class": 1,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "PANW-NETWORK-SECURITY-ARCHITECT",
+        "PANW-NETWORK-SECURITY-PROFESSIONAL",
+        "PANW-SSE-ENGINEER"
+      ],
+      "notes": "Documents PRA-to-SAA rename and distinct private web-app versus RDP/SSH/VNC entitlement boundaries."
+    },
+    {
+      "id": "panw-prisma-sdwan-aug-2026",
+      "title": "New Features - Prisma SD-WAN - August 2026",
+      "url": "https://docs.paloaltonetworks.com/prisma-sd-wan/new-features/by-date/prisma-sd-wan/august-2026",
+      "publisher": "Palo Alto Networks",
+      "authority_class": 1,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "PANW-SD-WAN-ENGINEER",
+        "PANW-NETWORK-SECURITY-ARCHITECT"
+      ],
+      "notes": "ION 6.8.1+ PQC and route/interface examples; check current compatibility and feature support."
+    },
+    {
+      "id": "panw-cortex-july-2026-release",
+      "title": "What’s New in Cortex (July 2026)",
+      "url": "https://www.paloaltonetworks.com/blog/security-operations/whats-new-in-cortex-july-2026/",
+      "publisher": "Palo Alto Networks",
+      "authority_class": 1,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "PANW-XSIAM-ANALYST",
+        "PANW-SECURITY-OPERATIONS-ARCHITECT",
+        "PANW-SECURITY-OPERATIONS-PROFESSIONAL",
+        "PANW-XDR-ANALYST",
+        "PANW-XDR-ENGINEER"
+      ],
+      "notes": "Official release announcement for XSIAM 3.6/AgentiX 1.4 and XDR 5.2; version-, tenant- and license-dependent examples; not exam-scope evidence."
+    },
+    {
+      "id": "panw-xdr-60-announcement",
+      "title": "Introducing Cortex XDR 6.0: Built for Endpoints. Ready for Agents.",
+      "url": "https://www.paloaltonetworks.com/blog/security-operations/cortex-xdr-6-0/",
+      "publisher": "Palo Alto Networks",
+      "authority_class": 1,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "PANW-XDR-ANALYST",
+        "PANW-XDR-ENGINEER",
+        "PANW-SECURITY-OPERATIONS-PROFESSIONAL"
+      ],
+      "notes": "October 19, 2026 official announcement; do not treat features as generally available without release-note/tenant confirmation."
+    },
+    {
+      "id": "panw-xdr-agent-eol-summary",
+      "title": "Palo Alto Networks End-of-Life Summary",
+      "url": "https://www.paloaltonetworks.com/services/support/end-of-life-announcements/end-of-life-summary",
+      "publisher": "Palo Alto Networks",
+      "authority_class": 1,
+      "source_type": "lifecycle-announcement",
+      "access_model": "public",
+      "last_checked": "2026-10-28",
+      "supported_exams": [
+        "PANW-XDR-ANALYST",
+        "PANW-XDR-ENGINEER"
+      ],
+      "notes": "Current vendor lifecycle table lists Cortex XDR agent branch dates; validate against OS build, edition and exact branch."
     }
   ]
 }

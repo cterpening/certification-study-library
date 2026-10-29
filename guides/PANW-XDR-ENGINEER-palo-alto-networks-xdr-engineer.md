@@ -6,20 +6,20 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-02
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-02
+upcoming_change_checked: 2026-10-28
 ---
 
 # Palo Alto Networks Certified XDR Engineer Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live certification page, August 2025 datasheet, July 2025 certification handbook, and current public Cortex XDR and Cloud Identity Engine documentation were checked September 2, 2026. This does not guarantee that every explanation is error-free or remains current. The [official page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-xdr-engineer) and [datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/xdr-engineer-datasheet.pdf) are authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live certification page, August 2025 datasheet, September 2026 certification handbook, and current public Cortex XDR and Cloud Identity Engine documentation were checked October 28, 2026. This does not guarantee that every explanation is error-free or remains current. The [official page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-xdr-engineer) and [datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/xdr-engineer-datasheet.pdf) are authoritative.
 
 **Current baseline:** planning/installation 14%; agent configuration 22%; ingestion/automation 22%; detection/reporting 22%; maintenance/troubleshooting 20%; August 2025 datasheet<br>
 **Exam contract:** specialist-level English Pearson VUE certification. The current handbook uses an 860 passing score on a 300–1000 scaled range and provisional results. The datasheet does not publish item count, base duration, price, or formal experience duration; verify registration.<br>
 **Experience boundary:** this is an experienced-engineer credential. The official prerequisite list spans security operations, network and endpoint security, SaaS, Python/PowerShell/SQL/RegEx/XQL, data ingestion/parsing/normalization, JSON/XML/CEF, integrations, agents, automation, vulnerability management, data assurance, and MITRE ATT&CK.<br>
-**Validity and renewal:** two years under the July 2025 handbook, subject to current pathway rules.<br>
-**Upcoming change:** no retirement or dated replacement was found September 2, 2026. Cortex XDR SaaS UI, schemas, compute/retention entitlements, agent/collector support, Broker applets/clusters, Cloud Identity Engine integration, content and detection behavior are volatile; use current release and tenant documentation.<br>
+**Validity and renewal:** two years from passing. The September 2026 [Certification Handbook](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf) permits higher-level exam recertification to renew active lower-level credentials in the same track; the same passed exam cannot be retaken for 545 days. Failed-attempt waits are 15, 30, then 90 days. Check your credential record and current policy before scheduling.<br>
+**Upcoming change:** no retirement or dated replacement was found October 28, 2026. Cortex XDR SaaS UI, schemas, compute/retention entitlements, agent/collector support, Broker applets/clusters, Cloud Identity Engine integration, content and detection behavior are volatile; use current release and tenant documentation.<br>
 **Integrity:** actual exam content is confidential. This guide follows the public blueprint and uses original questions, synthetic logs/indicators, safe test detections, and authorized labs only.
 
 ## How to use this guide
@@ -209,6 +209,10 @@ Onboard cloud audit and CIE data, trace known login/group change, parse/model id
 
 After a node update, an applet stops forwarding logs. Compare versions/health, source connection, secrets/TLS, queue and tenant freshness; fail over safely; verify duplicate/loss; roll back or correct; then regression-test all applets, collectors, detection and reporting.
 
+## Current product notes
+
+**Related lifecycle/update note (not a new exam objective):** Cortex XDR agent 9.1 is listed for end of life on November 22, 2026; 9.2/9.3 have later dates in the vendor table. Inventory exact OS build/edition, agent branch, and feature support before deployment. Cortex XDR 6.0 was announced October 19, 2026; treat feature availability as unconfirmed until the current release notes/tenant show it. [Official lifecycle table](https://www.paloaltonetworks.com/services/support/end-of-life-announcements/end-of-life-summary) · [Cortex XDR 6.0 announcement](https://www.paloaltonetworks.com/blog/security-operations/cortex-xdr-6-0/).
+
 ## Hands-on labs
 
 1. **Deployment plan:** inventory synthetic endpoint/data populations and map components, communications, roles, retention/compute, rings, tests and rollback.
@@ -331,10 +335,12 @@ After a node update, an applet stops forwarding logs. Compare versions/health, s
 
 This is a selective starting set, not a complete list and not a prescription to consume everything. Pick and choose official documentation, structured training, data/detection references and labs that close your gaps. Times are planning estimates unless a provider publishes duration; access, entitlements, versions and prices can change.
 
+**Official learning path:** The [current certification page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-xdr-engineer) links to the Palo Alto Networks Certified XDR Engineer digital path. Palo Alto Networks describes its digital modules as free and self-paced; Learning Center registration/sign-in is required, and public pages do not state total path runtime. See [Education Services](https://www.paloaltonetworks.com/services/education) and [Learning Center registration guidance](https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA10g000000PLNxCAO&lang=en_US); course access may vary by account/region.
+
+- [Official Palo Alto Networks digital learning](https://learn.paloaltonetworks.com/learn) — follow the **XDR Engineer** path linked from the certification page; free/self-paced, sign-in required, total runtime not public.
 - [Official certification page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-xdr-engineer) and [August 2025 datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/xdr-engineer-datasheet.pdf) — **45–75 minutes** to annotate; public; canonical scope.
 - [Palo Alto Networks Certification Handbook](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf) — **30–45 minutes**; public; verify current delivery, scoring, retakes, validity/renewal, accommodations and rules.
-- [Official Palo Alto Networks digital learning](https://learn.paloaltonetworks.com/learn) — locate the **XDR Engineer** learning path; **estimate 20–40 hours** depending on experience; login may be required and the public certification link currently resolves to the learning portal rather than a stable deep link.
-- Official instructor-led **Cortex XDR: Security Operations and Integration** — **estimate 4–5 training days plus labs**; commercial/authorized training; explicitly recommended on the certification page, but schedules/duration vary.
+- Optional official instructor-led [Cortex XDR: Security Operations and Integration](https://www.paloaltonetworks.com/services/education/ilt-cortex-xdr-security-operations-integration) (3 days). Authorized-partner registration; paid or training-credit access, local pricing varies.
 - [Cortex XDR documentation](https://docs-cortex.paloaltonetworks.com/r/Cortex-XDR/Cortex-XDR-5.x-Documentation/Detailed-View) — **35–60 hours targeted reading and labs**; public main documentation, with tenant help/entitlement possibly required for current detail; canonical product source.
 - [Cloud Identity Engine overview](https://docs.paloaltonetworks.com/identity/cloud-identity-engine/cloud-identity-engine-overview) — **4–8 hours targeted plus integration tests**; public; verify current XDR integration support and identity formats.
 - [MITRE ATT&CK](https://attack.mitre.org/) and [NIST SP 800-61 Rev. 3](https://csrc.nist.gov/pubs/sp/800/61/r3/final) — **8–14 hours selected**; public; behavior/response context, not product UI or attribution proof.

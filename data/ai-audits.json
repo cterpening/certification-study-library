@@ -20004,5 +20004,619 @@
         "closed_findings": 0
       }
     }
-  ]
+  ,
+  {
+    "id": "nonms-refresh-2026-10-28-group-04",
+    "title": "Palo Alto Networks guide refresh independent review",
+    "rubric_version": 2,
+    "created_on": "2026-10-28",
+    "completed_on": "2026-10-28",
+    "status": "completed",
+    "audit_mode": "read-only",
+    "selection_method": "Explicit ten-guide verification batch from the final Group 4 handoff manifest.",
+    "rubric_path": "docs/AI-AUDIT.md",
+    "auditor": {
+      "kind": "ai-agent",
+      "label": "codex-independent-semantic-auditor",
+      "independence": "fresh-context",
+      "human_review": false
+    },
+    "exam_codes": [
+      "PANW-NETWORK-SECURITY-ARCHITECT",
+      "PANW-NETWORK-SECURITY-PROFESSIONAL",
+      "PANW-NGFW-ENGINEER",
+      "PANW-SD-WAN-ENGINEER",
+      "PANW-SECURITY-OPERATIONS-ARCHITECT",
+      "PANW-SECURITY-OPERATIONS-PROFESSIONAL",
+      "PANW-SSE-ENGINEER",
+      "PANW-XDR-ANALYST",
+      "PANW-XDR-ENGINEER",
+      "PANW-XSIAM-ANALYST"
+    ],
+    "results": [
+      {
+        "exam_code": "PANW-NETWORK-SECURITY-ARCHITECT",
+        "vendor_id": "palo-alto-networks",
+        "guide_path": "guides/PANW-NETWORK-SECURITY-ARCHITECT-palo-alto-networks-network-security-architect.md",
+        "guide_content_sha256": "458887b19c29ca944daec00ec4880c410618e711f9b065124b9595418a9e0bd8",
+        "blueprint_snapshot_path": "data/objective-snapshots/panw-network-security-architect-official-objectives.txt",
+        "blueprint_snapshot_sha256": "28444ec9fc48dbee66d43c27ab1d3c60bc56ab51b323e887152a18b21306eda2",
+        "audited_on": "2026-10-28",
+        "verdict": "pass-with-notes",
+        "checks": {
+          "official_scope": {
+            "status": "passed",
+            "notes": "Current exam identity/status and the exact accepted datasheet snapshot agree; no research report was used to redefine scope."
+          },
+          "objective_coverage": {
+            "status": "passed",
+            "notes": "Every accepted objective domain is mapped to substantive guide teaching and supported by applicable scenarios, labs, and original readiness material."
+          },
+          "material_claim_support": {
+            "status": "passed",
+            "notes": "Material exam and technical claims point to official sources or clearly bounded supplementary context; source reachability alone was not treated as proof."
+          },
+          "exam_contract_integrity": {
+            "status": "passed",
+            "notes": "No unsupported exam item count, duration, price, scoring conversion, or prerequisite was asserted; recommendations remain distinct from formal requirements."
+          },
+          "technical_coherence": {
+            "status": "passed",
+            "notes": "Product distinctions, examples, failure cases, and explanations are coherent with the cited first-party evidence and are appropriately qualified."
+          },
+          "volatility_and_lifecycle": {
+            "status": "passed",
+            "notes": "Version, entitlement, rollout, region, UI, and lifecycle details are dated and bounded; current product notes are explicitly separate from exam scope."
+          },
+          "lab_safety_and_feasibility": {
+            "status": "passed",
+            "notes": "Proposed activities use authorized/synthetic environments and avoid production changes or privileged access as default study steps."
+          },
+          "readiness_check_quality": {
+            "status": "passed",
+            "notes": "Readiness questions are original, supported by adjacent guide material, and do not recall or imply live exam questions."
+          },
+          "review_evidence_accuracy": {
+            "status": "passed",
+            "notes": "Guide and objective hashes match the final manifest and passed source-validation receipt. The current scoped source sweep is 95 checked: 90 OK, 5 blocked, 0 broken; blocked links are not sole support for claims. Supplementary NIST, Google Cloud and PANW documentation is registered and appropriately used as learning/context, but several source records omit this exam from supported_exams and consequently are absent from its audit handoff."
+          },
+          "duplication_and_contamination": {
+            "status": "passed",
+            "notes": "No suspicious copying, unrelated vendor leakage, contradictory template content, or exam-dump indicators were found."
+          }
+        },
+        "findings": [
+          {
+            "id": "f1",
+            "check": "review_evidence_accuracy",
+            "severity": "low",
+            "category": "source-mismatch",
+            "location": "guides/PANW-NETWORK-SECURITY-ARCHITECT-palo-alto-networks-network-security-architect.md — Places to learn and linked framework/product context",
+            "evidence": "The guide links current registered NIST, Google Cloud and Palo Alto Networks materials whose supported_exams arrays omit PANW-NETWORK-SECURITY-ARCHITECT; these remain clearly framed as supplementary learning/context and do not support an unsupported material claim.",
+            "recommendation": "Associate the exact applicable source records with this exam, then regenerate the audit handoff so the cited sources appear in its evidence set.",
+            "status": "open"
+          }
+        ],
+        "notes": "Fresh-context read-only review of the complete guide, objective and status snapshots, latest passed source-validation receipt, registered-source metadata and current diff. No lab execution or human review is claimed. See the independent audit section in docs/research/2026-10-28-nonms-refresh-group-04.md."
+      },
+      {
+        "exam_code": "PANW-NETWORK-SECURITY-PROFESSIONAL",
+        "vendor_id": "palo-alto-networks",
+        "guide_path": "guides/PANW-NETWORK-SECURITY-PROFESSIONAL-palo-alto-networks-network-security-professional.md",
+        "guide_content_sha256": "dc78dcd00958d02f512adcd57700e25bbf4c6bf5d9e9d781d6e1373bc73a1a08",
+        "blueprint_snapshot_path": "data/objective-snapshots/panw-network-security-professional-official-objectives.txt",
+        "blueprint_snapshot_sha256": "682be74c10edf47fb23e61e21cb7544cf34fa962a9926b3b5265758bb66c6483",
+        "audited_on": "2026-10-28",
+        "verdict": "pass",
+        "checks": {
+          "official_scope": {
+            "status": "passed",
+            "notes": "Current exam identity/status and the exact accepted datasheet snapshot agree; no research report was used to redefine scope."
+          },
+          "objective_coverage": {
+            "status": "passed",
+            "notes": "Every accepted objective domain is mapped to substantive guide teaching and supported by applicable scenarios, labs, and original readiness material."
+          },
+          "material_claim_support": {
+            "status": "passed",
+            "notes": "Material exam and technical claims point to official sources or clearly bounded supplementary context; source reachability alone was not treated as proof."
+          },
+          "exam_contract_integrity": {
+            "status": "passed",
+            "notes": "No unsupported exam item count, duration, price, scoring conversion, or prerequisite was asserted; recommendations remain distinct from formal requirements."
+          },
+          "technical_coherence": {
+            "status": "passed",
+            "notes": "Product distinctions, examples, failure cases, and explanations are coherent with the cited first-party evidence and are appropriately qualified."
+          },
+          "volatility_and_lifecycle": {
+            "status": "passed",
+            "notes": "Version, entitlement, rollout, region, UI, and lifecycle details are dated and bounded; current product notes are explicitly separate from exam scope."
+          },
+          "lab_safety_and_feasibility": {
+            "status": "passed",
+            "notes": "Proposed activities use authorized/synthetic environments and avoid production changes or privileged access as default study steps."
+          },
+          "readiness_check_quality": {
+            "status": "passed",
+            "notes": "Readiness questions are original, supported by adjacent guide material, and do not recall or imply live exam questions."
+          },
+          "review_evidence_accuracy": {
+            "status": "passed",
+            "notes": "Guide and objective hashes match the final manifest and passed source-validation receipt. The current scoped source sweep is 95 checked: 90 OK, 5 blocked, 0 broken; blocked links are not sole support for claims."
+          },
+          "duplication_and_contamination": {
+            "status": "passed",
+            "notes": "No suspicious copying, unrelated vendor leakage, contradictory template content, or exam-dump indicators were found."
+          }
+        },
+        "findings": [],
+        "notes": "Fresh-context read-only review of the complete guide, objective and status snapshots, latest passed source-validation receipt, registered-source metadata and current diff. No lab execution or human review is claimed. See the independent audit section in docs/research/2026-10-28-nonms-refresh-group-04.md."
+      },
+      {
+        "exam_code": "PANW-NGFW-ENGINEER",
+        "vendor_id": "palo-alto-networks",
+        "guide_path": "guides/PANW-NGFW-ENGINEER-palo-alto-networks-next-generation-firewall-engineer.md",
+        "guide_content_sha256": "b13991884c1941672af589fd81dc6474c10b73aaf56f53cb02f6e23c5de32a2b",
+        "blueprint_snapshot_path": "data/objective-snapshots/panw-ngfw-engineer-official-objectives.txt",
+        "blueprint_snapshot_sha256": "e6d1470d49b1d63602c5021bf347751e6b64443817cdda1e9700bd4a10486806",
+        "audited_on": "2026-10-28",
+        "verdict": "pass",
+        "checks": {
+          "official_scope": {
+            "status": "passed",
+            "notes": "Current exam identity/status and the exact accepted datasheet snapshot agree; no research report was used to redefine scope."
+          },
+          "objective_coverage": {
+            "status": "passed",
+            "notes": "Every accepted objective domain is mapped to substantive guide teaching and supported by applicable scenarios, labs, and original readiness material."
+          },
+          "material_claim_support": {
+            "status": "passed",
+            "notes": "Material exam and technical claims point to official sources or clearly bounded supplementary context; source reachability alone was not treated as proof."
+          },
+          "exam_contract_integrity": {
+            "status": "passed",
+            "notes": "No unsupported exam item count, duration, price, scoring conversion, or prerequisite was asserted; recommendations remain distinct from formal requirements."
+          },
+          "technical_coherence": {
+            "status": "passed",
+            "notes": "Product distinctions, examples, failure cases, and explanations are coherent with the cited first-party evidence and are appropriately qualified."
+          },
+          "volatility_and_lifecycle": {
+            "status": "passed",
+            "notes": "Version, entitlement, rollout, region, UI, and lifecycle details are dated and bounded; current product notes are explicitly separate from exam scope."
+          },
+          "lab_safety_and_feasibility": {
+            "status": "passed",
+            "notes": "Proposed activities use authorized/synthetic environments and avoid production changes or privileged access as default study steps."
+          },
+          "readiness_check_quality": {
+            "status": "passed",
+            "notes": "Readiness questions are original, supported by adjacent guide material, and do not recall or imply live exam questions."
+          },
+          "review_evidence_accuracy": {
+            "status": "passed",
+            "notes": "Guide and objective hashes match the final manifest and passed source-validation receipt. The current scoped source sweep is 95 checked: 90 OK, 5 blocked, 0 broken; blocked links are not sole support for claims."
+          },
+          "duplication_and_contamination": {
+            "status": "passed",
+            "notes": "No suspicious copying, unrelated vendor leakage, contradictory template content, or exam-dump indicators were found."
+          }
+        },
+        "findings": [],
+        "notes": "Fresh-context read-only review of the complete guide, objective and status snapshots, latest passed source-validation receipt, registered-source metadata and current diff. No lab execution or human review is claimed. See the independent audit section in docs/research/2026-10-28-nonms-refresh-group-04.md."
+      },
+      {
+        "exam_code": "PANW-SD-WAN-ENGINEER",
+        "vendor_id": "palo-alto-networks",
+        "guide_path": "guides/PANW-SD-WAN-ENGINEER-palo-alto-networks-sd-wan-engineer.md",
+        "guide_content_sha256": "70282714ff98410265fd9d42fd8b3e7594223a7f6a8b7a8172ddf309a023a572",
+        "blueprint_snapshot_path": "data/objective-snapshots/panw-sd-wan-engineer-official-objectives.txt",
+        "blueprint_snapshot_sha256": "4975bd40c58863097d6c0a49ff6a56601f4351ce8b0f44c0b6b1e41a5a1bf123",
+        "audited_on": "2026-10-28",
+        "verdict": "pass",
+        "checks": {
+          "official_scope": {
+            "status": "passed",
+            "notes": "Current exam identity/status and the exact accepted datasheet snapshot agree; no research report was used to redefine scope."
+          },
+          "objective_coverage": {
+            "status": "passed",
+            "notes": "Every accepted objective domain is mapped to substantive guide teaching and supported by applicable scenarios, labs, and original readiness material."
+          },
+          "material_claim_support": {
+            "status": "passed",
+            "notes": "Material exam and technical claims point to official sources or clearly bounded supplementary context; source reachability alone was not treated as proof."
+          },
+          "exam_contract_integrity": {
+            "status": "passed",
+            "notes": "No unsupported exam item count, duration, price, scoring conversion, or prerequisite was asserted; recommendations remain distinct from formal requirements."
+          },
+          "technical_coherence": {
+            "status": "passed",
+            "notes": "Product distinctions, examples, failure cases, and explanations are coherent with the cited first-party evidence and are appropriately qualified."
+          },
+          "volatility_and_lifecycle": {
+            "status": "passed",
+            "notes": "Version, entitlement, rollout, region, UI, and lifecycle details are dated and bounded; current product notes are explicitly separate from exam scope."
+          },
+          "lab_safety_and_feasibility": {
+            "status": "passed",
+            "notes": "Proposed activities use authorized/synthetic environments and avoid production changes or privileged access as default study steps."
+          },
+          "readiness_check_quality": {
+            "status": "passed",
+            "notes": "Readiness questions are original, supported by adjacent guide material, and do not recall or imply live exam questions."
+          },
+          "review_evidence_accuracy": {
+            "status": "passed",
+            "notes": "Guide and objective hashes match the final manifest and passed source-validation receipt. The current scoped source sweep is 95 checked: 90 OK, 5 blocked, 0 broken; blocked links are not sole support for claims."
+          },
+          "duplication_and_contamination": {
+            "status": "passed",
+            "notes": "No suspicious copying, unrelated vendor leakage, contradictory template content, or exam-dump indicators were found."
+          }
+        },
+        "findings": [],
+        "notes": "Fresh-context read-only review of the complete guide, objective and status snapshots, latest passed source-validation receipt, registered-source metadata and current diff. No lab execution or human review is claimed. See the independent audit section in docs/research/2026-10-28-nonms-refresh-group-04.md."
+      },
+      {
+        "exam_code": "PANW-SECURITY-OPERATIONS-ARCHITECT",
+        "vendor_id": "palo-alto-networks",
+        "guide_path": "guides/PANW-SECURITY-OPERATIONS-ARCHITECT-palo-alto-networks-security-operations-architect.md",
+        "guide_content_sha256": "954b64e9eb6d5ac8287b8ef8137b55c2e8653a9bc84ec9a64a358f83c896c5a0",
+        "blueprint_snapshot_path": "data/objective-snapshots/panw-security-operations-architect-official-objectives.txt",
+        "blueprint_snapshot_sha256": "1b4c3dc91c145dd25409e6ddef72d2580f6b964f3b1dd6dab4136e728788c4e5",
+        "audited_on": "2026-10-28",
+        "verdict": "pass",
+        "checks": {
+          "official_scope": {
+            "status": "passed",
+            "notes": "Current exam identity/status and the exact accepted datasheet snapshot agree; no research report was used to redefine scope."
+          },
+          "objective_coverage": {
+            "status": "passed",
+            "notes": "Every accepted objective domain is mapped to substantive guide teaching and supported by applicable scenarios, labs, and original readiness material."
+          },
+          "material_claim_support": {
+            "status": "passed",
+            "notes": "Material exam and technical claims point to official sources or clearly bounded supplementary context; source reachability alone was not treated as proof."
+          },
+          "exam_contract_integrity": {
+            "status": "passed",
+            "notes": "No unsupported exam item count, duration, price, scoring conversion, or prerequisite was asserted; recommendations remain distinct from formal requirements."
+          },
+          "technical_coherence": {
+            "status": "passed",
+            "notes": "Product distinctions, examples, failure cases, and explanations are coherent with the cited first-party evidence and are appropriately qualified."
+          },
+          "volatility_and_lifecycle": {
+            "status": "passed",
+            "notes": "Version, entitlement, rollout, region, UI, and lifecycle details are dated and bounded; current product notes are explicitly separate from exam scope."
+          },
+          "lab_safety_and_feasibility": {
+            "status": "passed",
+            "notes": "Proposed activities use authorized/synthetic environments and avoid production changes or privileged access as default study steps."
+          },
+          "readiness_check_quality": {
+            "status": "passed",
+            "notes": "Readiness questions are original, supported by adjacent guide material, and do not recall or imply live exam questions."
+          },
+          "review_evidence_accuracy": {
+            "status": "passed",
+            "notes": "Guide and objective hashes match the final manifest and passed source-validation receipt. The current scoped source sweep is 95 checked: 90 OK, 5 blocked, 0 broken; blocked links are not sole support for claims."
+          },
+          "duplication_and_contamination": {
+            "status": "passed",
+            "notes": "No suspicious copying, unrelated vendor leakage, contradictory template content, or exam-dump indicators were found."
+          }
+        },
+        "findings": [],
+        "notes": "Fresh-context read-only review of the complete guide, objective and status snapshots, latest passed source-validation receipt, registered-source metadata and current diff. No lab execution or human review is claimed. See the independent audit section in docs/research/2026-10-28-nonms-refresh-group-04.md."
+      },
+      {
+        "exam_code": "PANW-SECURITY-OPERATIONS-PROFESSIONAL",
+        "vendor_id": "palo-alto-networks",
+        "guide_path": "guides/PANW-SECURITY-OPERATIONS-PROFESSIONAL-palo-alto-networks-security-operations-professional.md",
+        "guide_content_sha256": "881e4ef07276f43c8d6a2f05d0c652e7d40b7c263fa9fc659dd403199b75ea21",
+        "blueprint_snapshot_path": "data/objective-snapshots/panw-security-operations-professional-official-objectives.txt",
+        "blueprint_snapshot_sha256": "4b118e221e1a6158afc9f749efc6e977b60f8e1a012f89efd5c512cdd2211acd",
+        "audited_on": "2026-10-28",
+        "verdict": "pass-with-notes",
+        "checks": {
+          "official_scope": {
+            "status": "passed",
+            "notes": "Current exam identity/status and the exact accepted datasheet snapshot agree; no research report was used to redefine scope."
+          },
+          "objective_coverage": {
+            "status": "passed",
+            "notes": "Every accepted objective domain is mapped to substantive guide teaching and supported by applicable scenarios, labs, and original readiness material."
+          },
+          "material_claim_support": {
+            "status": "passed",
+            "notes": "Material exam and technical claims point to official sources or clearly bounded supplementary context; source reachability alone was not treated as proof."
+          },
+          "exam_contract_integrity": {
+            "status": "passed",
+            "notes": "No unsupported exam item count, duration, price, scoring conversion, or prerequisite was asserted; recommendations remain distinct from formal requirements."
+          },
+          "technical_coherence": {
+            "status": "passed",
+            "notes": "Product distinctions, examples, failure cases, and explanations are coherent with the cited first-party evidence and are appropriately qualified."
+          },
+          "volatility_and_lifecycle": {
+            "status": "passed",
+            "notes": "Version, entitlement, rollout, region, UI, and lifecycle details are dated and bounded; current product notes are explicitly separate from exam scope."
+          },
+          "lab_safety_and_feasibility": {
+            "status": "passed",
+            "notes": "Proposed activities use authorized/synthetic environments and avoid production changes or privileged access as default study steps."
+          },
+          "readiness_check_quality": {
+            "status": "passed",
+            "notes": "Readiness questions are original, supported by adjacent guide material, and do not recall or imply live exam questions."
+          },
+          "review_evidence_accuracy": {
+            "status": "passed",
+            "notes": "Guide and objective hashes match the final manifest and passed source-validation receipt. The current scoped source sweep is 95 checked: 90 OK, 5 blocked, 0 broken; blocked links are not sole support for claims. Supplementary NIST, Cortex XDR, MITRE ATT&CK, Unit 42 and official video sources are registered and appropriately used, but several source records omit this exam from supported_exams and are absent from its audit handoff."
+          },
+          "duplication_and_contamination": {
+            "status": "passed",
+            "notes": "No suspicious copying, unrelated vendor leakage, contradictory template content, or exam-dump indicators were found."
+          }
+        },
+        "findings": [
+          {
+            "id": "f2",
+            "check": "review_evidence_accuracy",
+            "severity": "low",
+            "category": "source-mismatch",
+            "location": "guides/PANW-SECURITY-OPERATIONS-PROFESSIONAL-palo-alto-networks-security-operations-professional.md — Sections 2 and Places to learn",
+            "evidence": "The guide links registered NIST, Cortex XDR, MITRE ATT&CK, Unit 42 and Palo Alto Networks video sources whose supported_exams arrays omit PANW-SECURITY-OPERATIONS-PROFESSIONAL; the references are supplementary and do not establish exam scope.",
+            "recommendation": "Associate the exact applicable source records with this exam, then regenerate the audit handoff; preserve direct support for the NIST and Cortex summaries.",
+            "status": "open"
+          }
+        ],
+        "notes": "Fresh-context read-only review of the complete guide, objective and status snapshots, latest passed source-validation receipt, registered-source metadata and current diff. No lab execution or human review is claimed. See the independent audit section in docs/research/2026-10-28-nonms-refresh-group-04.md."
+      },
+      {
+        "exam_code": "PANW-SSE-ENGINEER",
+        "vendor_id": "palo-alto-networks",
+        "guide_path": "guides/PANW-SSE-ENGINEER-palo-alto-networks-security-service-edge-engineer.md",
+        "guide_content_sha256": "571b4e5db6342dbe08b2448884d2711b39465eabf5fdce1df9952af426c6438c",
+        "blueprint_snapshot_path": "data/objective-snapshots/panw-sse-engineer-official-objectives.txt",
+        "blueprint_snapshot_sha256": "3bdbefeb8ab8230ee70c124ad888afdde4739714b7f11f5e53d5ee446597e722",
+        "audited_on": "2026-10-28",
+        "verdict": "pass",
+        "checks": {
+          "official_scope": {
+            "status": "passed",
+            "notes": "Current exam identity/status and the exact accepted datasheet snapshot agree; no research report was used to redefine scope."
+          },
+          "objective_coverage": {
+            "status": "passed",
+            "notes": "Every accepted objective domain is mapped to substantive guide teaching and supported by applicable scenarios, labs, and original readiness material."
+          },
+          "material_claim_support": {
+            "status": "passed",
+            "notes": "Material exam and technical claims point to official sources or clearly bounded supplementary context; source reachability alone was not treated as proof."
+          },
+          "exam_contract_integrity": {
+            "status": "passed",
+            "notes": "No unsupported exam item count, duration, price, scoring conversion, or prerequisite was asserted; recommendations remain distinct from formal requirements."
+          },
+          "technical_coherence": {
+            "status": "passed",
+            "notes": "Product distinctions, examples, failure cases, and explanations are coherent with the cited first-party evidence and are appropriately qualified."
+          },
+          "volatility_and_lifecycle": {
+            "status": "passed",
+            "notes": "Version, entitlement, rollout, region, UI, and lifecycle details are dated and bounded; current product notes are explicitly separate from exam scope."
+          },
+          "lab_safety_and_feasibility": {
+            "status": "passed",
+            "notes": "Proposed activities use authorized/synthetic environments and avoid production changes or privileged access as default study steps."
+          },
+          "readiness_check_quality": {
+            "status": "passed",
+            "notes": "Readiness questions are original, supported by adjacent guide material, and do not recall or imply live exam questions."
+          },
+          "review_evidence_accuracy": {
+            "status": "passed",
+            "notes": "Guide and objective hashes match the final manifest and passed source-validation receipt. The current scoped source sweep is 95 checked: 90 OK, 5 blocked, 0 broken; blocked links are not sole support for claims."
+          },
+          "duplication_and_contamination": {
+            "status": "passed",
+            "notes": "No suspicious copying, unrelated vendor leakage, contradictory template content, or exam-dump indicators were found."
+          }
+        },
+        "findings": [],
+        "notes": "Fresh-context read-only review of the complete guide, objective and status snapshots, latest passed source-validation receipt, registered-source metadata and current diff. No lab execution or human review is claimed. See the independent audit section in docs/research/2026-10-28-nonms-refresh-group-04.md."
+      },
+      {
+        "exam_code": "PANW-XDR-ANALYST",
+        "vendor_id": "palo-alto-networks",
+        "guide_path": "guides/PANW-XDR-ANALYST-palo-alto-networks-xdr-analyst.md",
+        "guide_content_sha256": "a545d224b36bcf5f43b19f8ac50a39c9297fe741507a531de5e056d8a816e5eb",
+        "blueprint_snapshot_path": "data/objective-snapshots/panw-xdr-analyst-official-objectives.txt",
+        "blueprint_snapshot_sha256": "3c06e6862b0b7301795c65038b2313ba160aea3d244bef736cb252585ee42f44",
+        "audited_on": "2026-10-28",
+        "verdict": "pass-with-notes",
+        "checks": {
+          "official_scope": {
+            "status": "passed",
+            "notes": "Current exam identity/status and the exact accepted datasheet snapshot agree; no research report was used to redefine scope."
+          },
+          "objective_coverage": {
+            "status": "passed",
+            "notes": "Every accepted objective domain is mapped to substantive guide teaching and supported by applicable scenarios, labs, and original readiness material."
+          },
+          "material_claim_support": {
+            "status": "passed",
+            "notes": "Material exam and technical claims point to official sources or clearly bounded supplementary context; source reachability alone was not treated as proof."
+          },
+          "exam_contract_integrity": {
+            "status": "passed",
+            "notes": "No unsupported exam item count, duration, price, scoring conversion, or prerequisite was asserted; recommendations remain distinct from formal requirements."
+          },
+          "technical_coherence": {
+            "status": "passed",
+            "notes": "Product distinctions, examples, failure cases, and explanations are coherent with the cited first-party evidence and are appropriately qualified."
+          },
+          "volatility_and_lifecycle": {
+            "status": "passed",
+            "notes": "Version, entitlement, rollout, region, UI, and lifecycle details are dated and bounded; current product notes are explicitly separate from exam scope."
+          },
+          "lab_safety_and_feasibility": {
+            "status": "passed",
+            "notes": "Proposed activities use authorized/synthetic environments and avoid production changes or privileged access as default study steps."
+          },
+          "readiness_check_quality": {
+            "status": "passed",
+            "notes": "Readiness questions are original, supported by adjacent guide material, and do not recall or imply live exam questions."
+          },
+          "review_evidence_accuracy": {
+            "status": "passed",
+            "notes": "Guide and objective hashes match the final manifest and passed source-validation receipt. The current scoped source sweep is 95 checked: 90 OK, 5 blocked, 0 broken; blocked links are not sole support for claims. Supplementary NIST, Cortex XDR, MITRE ATT&CK, Unit 42 and official video sources are registered and appropriately used, but several source records omit this exam from supported_exams and are absent from its audit handoff."
+          },
+          "duplication_and_contamination": {
+            "status": "passed",
+            "notes": "No suspicious copying, unrelated vendor leakage, contradictory template content, or exam-dump indicators were found."
+          }
+        },
+        "findings": [
+          {
+            "id": "f3",
+            "check": "review_evidence_accuracy",
+            "severity": "low",
+            "category": "source-mismatch",
+            "location": "guides/PANW-XDR-ANALYST-palo-alto-networks-xdr-analyst.md — Section 2 and Places to learn",
+            "evidence": "The guide links registered NIST, Cortex XDR, MITRE ATT&CK, Unit 42 and Palo Alto Networks video sources whose supported_exams arrays omit PANW-XDR-ANALYST; the guide treats them as supplementary study/current guidance, not scope authority.",
+            "recommendation": "Associate the exact applicable source records with this exam, then regenerate the audit handoff; retain the blocked-access note for the paid O’Reilly source.",
+            "status": "open"
+          }
+        ],
+        "notes": "Fresh-context read-only review of the complete guide, objective and status snapshots, latest passed source-validation receipt, registered-source metadata and current diff. No lab execution or human review is claimed. See the independent audit section in docs/research/2026-10-28-nonms-refresh-group-04.md."
+      },
+      {
+        "exam_code": "PANW-XDR-ENGINEER",
+        "vendor_id": "palo-alto-networks",
+        "guide_path": "guides/PANW-XDR-ENGINEER-palo-alto-networks-xdr-engineer.md",
+        "guide_content_sha256": "31a4253490414cf5fba17757b563f1f082cb2ad30d6b8d95e7e52b6d1515fa58",
+        "blueprint_snapshot_path": "data/objective-snapshots/panw-xdr-engineer-official-objectives.txt",
+        "blueprint_snapshot_sha256": "12d92e0024c93b533cecb01a55b53e8e5c667ec75b2fbbeca2db183b75451a26",
+        "audited_on": "2026-10-28",
+        "verdict": "pass",
+        "checks": {
+          "official_scope": {
+            "status": "passed",
+            "notes": "Current exam identity/status and the exact accepted datasheet snapshot agree; no research report was used to redefine scope."
+          },
+          "objective_coverage": {
+            "status": "passed",
+            "notes": "Every accepted objective domain is mapped to substantive guide teaching and supported by applicable scenarios, labs, and original readiness material."
+          },
+          "material_claim_support": {
+            "status": "passed",
+            "notes": "Material exam and technical claims point to official sources or clearly bounded supplementary context; source reachability alone was not treated as proof."
+          },
+          "exam_contract_integrity": {
+            "status": "passed",
+            "notes": "No unsupported exam item count, duration, price, scoring conversion, or prerequisite was asserted; recommendations remain distinct from formal requirements."
+          },
+          "technical_coherence": {
+            "status": "passed",
+            "notes": "Product distinctions, examples, failure cases, and explanations are coherent with the cited first-party evidence and are appropriately qualified."
+          },
+          "volatility_and_lifecycle": {
+            "status": "passed",
+            "notes": "Version, entitlement, rollout, region, UI, and lifecycle details are dated and bounded; current product notes are explicitly separate from exam scope."
+          },
+          "lab_safety_and_feasibility": {
+            "status": "passed",
+            "notes": "Proposed activities use authorized/synthetic environments and avoid production changes or privileged access as default study steps."
+          },
+          "readiness_check_quality": {
+            "status": "passed",
+            "notes": "Readiness questions are original, supported by adjacent guide material, and do not recall or imply live exam questions."
+          },
+          "review_evidence_accuracy": {
+            "status": "passed",
+            "notes": "Guide and objective hashes match the final manifest and passed source-validation receipt. The current scoped source sweep is 95 checked: 90 OK, 5 blocked, 0 broken; blocked links are not sole support for claims."
+          },
+          "duplication_and_contamination": {
+            "status": "passed",
+            "notes": "No suspicious copying, unrelated vendor leakage, contradictory template content, or exam-dump indicators were found."
+          }
+        },
+        "findings": [],
+        "notes": "Fresh-context read-only review of the complete guide, objective and status snapshots, latest passed source-validation receipt, registered-source metadata and current diff. No lab execution or human review is claimed. See the independent audit section in docs/research/2026-10-28-nonms-refresh-group-04.md."
+      },
+      {
+        "exam_code": "PANW-XSIAM-ANALYST",
+        "vendor_id": "palo-alto-networks",
+        "guide_path": "guides/PANW-XSIAM-ANALYST-palo-alto-networks-xsiam-analyst.md",
+        "guide_content_sha256": "891c32c4870dd426a0f185ed802dae3c25c7170bdd30c550cc599c4d8f66475b",
+        "blueprint_snapshot_path": "data/objective-snapshots/panw-xsiam-analyst-official-objectives.txt",
+        "blueprint_snapshot_sha256": "c1f175c79813c8b994e1a1d61270ef393a4162a9e9b0f674399d5b7969c80137",
+        "audited_on": "2026-10-28",
+        "verdict": "pass",
+        "checks": {
+          "official_scope": {
+            "status": "passed",
+            "notes": "Current exam identity/status and the exact accepted datasheet snapshot agree; no research report was used to redefine scope."
+          },
+          "objective_coverage": {
+            "status": "passed",
+            "notes": "Every accepted objective domain is mapped to substantive guide teaching and supported by applicable scenarios, labs, and original readiness material."
+          },
+          "material_claim_support": {
+            "status": "passed",
+            "notes": "Material exam and technical claims point to official sources or clearly bounded supplementary context; source reachability alone was not treated as proof."
+          },
+          "exam_contract_integrity": {
+            "status": "passed",
+            "notes": "No unsupported exam item count, duration, price, scoring conversion, or prerequisite was asserted; recommendations remain distinct from formal requirements."
+          },
+          "technical_coherence": {
+            "status": "passed",
+            "notes": "Product distinctions, examples, failure cases, and explanations are coherent with the cited first-party evidence and are appropriately qualified."
+          },
+          "volatility_and_lifecycle": {
+            "status": "passed",
+            "notes": "Version, entitlement, rollout, region, UI, and lifecycle details are dated and bounded; current product notes are explicitly separate from exam scope."
+          },
+          "lab_safety_and_feasibility": {
+            "status": "passed",
+            "notes": "Proposed activities use authorized/synthetic environments and avoid production changes or privileged access as default study steps."
+          },
+          "readiness_check_quality": {
+            "status": "passed",
+            "notes": "Readiness questions are original, supported by adjacent guide material, and do not recall or imply live exam questions."
+          },
+          "review_evidence_accuracy": {
+            "status": "passed",
+            "notes": "Guide and objective hashes match the final manifest and passed source-validation receipt. The current scoped source sweep is 95 checked: 90 OK, 5 blocked, 0 broken; blocked links are not sole support for claims."
+          },
+          "duplication_and_contamination": {
+            "status": "passed",
+            "notes": "No suspicious copying, unrelated vendor leakage, contradictory template content, or exam-dump indicators were found."
+          }
+        },
+        "findings": [],
+        "notes": "Fresh-context read-only review of the complete guide, objective and status snapshots, latest passed source-validation receipt, registered-source metadata and current diff. No lab execution or human review is claimed. See the independent audit section in docs/research/2026-10-28-nonms-refresh-group-04.md."
+      }
+    ],
+    "summary": {
+      "guide_count": 10,
+      "pass": 7,
+      "pass_with_notes": 3,
+      "fix_required": 0,
+      "blocked": 0,
+      "open_findings": 3,
+      "closed_findings": 0
+    }
+  }
+]
 }

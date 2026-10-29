@@ -54953,5 +54953,562 @@
         "blocked_findings": 3
       }
     }
-  ]
+  ,
+  {
+    "id": "freshness-2026-10-28-nonms-g04",
+    "title": "Palo Alto Networks non-Microsoft refresh group 04",
+    "rubric_version": 1,
+    "created_on": "2026-10-28",
+    "completed_on": "2026-10-28",
+    "status": "completed",
+    "scan_mode": "read-only",
+    "selection_method": "Fourth ten of the frozen eligible non-Microsoft queue, following the Sep 2 source-validation cohort; sorted by last source-validation date, vendor ID and exam code.",
+    "rubric_path": "docs/SOURCE-FRESHNESS.md",
+    "auditor": {
+      "kind": "ai-agent",
+      "labels": [
+        "panw-exam-research",
+        "panw-technical-research",
+        "panw-learning-resources",
+        "refresh-coordinator"
+      ],
+      "independence": "mixed",
+      "human_review": false
+    },
+    "exam_codes": [
+      "PANW-NETWORK-SECURITY-ARCHITECT",
+      "PANW-NETWORK-SECURITY-PROFESSIONAL",
+      "PANW-NGFW-ENGINEER",
+      "PANW-SD-WAN-ENGINEER",
+      "PANW-SECURITY-OPERATIONS-ARCHITECT",
+      "PANW-SECURITY-OPERATIONS-PROFESSIONAL",
+      "PANW-SSE-ENGINEER",
+      "PANW-XDR-ANALYST",
+      "PANW-XDR-ENGINEER",
+      "PANW-XSIAM-ANALYST"
+    ],
+    "results": [
+      {
+        "exam_code": "PANW-NETWORK-SECURITY-ARCHITECT",
+        "vendor_id": "palo-alto-networks",
+        "guide_path": "guides/PANW-NETWORK-SECURITY-ARCHITECT-palo-alto-networks-network-security-architect.md",
+        "baseline_sha256": "28444ec9fc48dbee66d43c27ab1d3c60bc56ab51b323e887152a18b21306eda2",
+        "scanned_on": "2026-10-28",
+        "outcome": "current",
+        "checks": {
+          "official_blueprint_and_lifecycle": {
+            "status": "passed",
+            "notes": "Current official certification datasheet/profile checked against the exact accepted objective snapshot; active credential, with no retirement, replacement, or locale change found. September 2026 handbook logistics refreshed separately from objective scope."
+          },
+          "official_product_documentation": {
+            "status": "passed",
+            "notes": "Relevant first-party product documentation and versioned release pages were reviewed. Current product details were added as dated related context and explicitly separated from exam objectives; tenant, platform, region, licensing and preview limits remain stated."
+          },
+          "official_release_channels": {
+            "status": "passed",
+            "notes": "Palo Alto Networks release channels were checked for the mapped platform family; newer PAN-OS, Prisma Access/SD-WAN and Cortex updates were added only where relevant, with version and availability caveats."
+          },
+          "catalog_comparison": {
+            "status": "passed",
+            "notes": "Official exam, handbook, learning and product sources were compared with the source catalog. Scoped link sweep: 95 URLs, 90 OK, 5 externally blocked, 0 broken; 17 new reviewed learning/release sources registered."
+          },
+          "contradiction_and_gap_review": {
+            "status": "passed",
+            "notes": "Exam objectives remain unchanged. Current handbook rules replace stale logistics; dynamic PDFs were checked manually against the retained snapshots. Login-gated learning detail and five blocked third-party/regulatory links are disclosed; no material guide claim depends only on a blocked link."
+          }
+        },
+        "findings": [
+          {
+            "id": "panw-sep-2026-handbook-panw-network-security-architect",
+            "check": "official_blueprint_and_lifecycle",
+            "category": "updated-source",
+            "title": "September 2026 certification handbook logistics and validity",
+            "url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf",
+            "source_type": "official-announcement",
+            "affected_exams": [
+              "PANW-NETWORK-SECURITY-ARCHITECT"
+            ],
+            "catalog_status": "registered",
+            "confidence": "high",
+            "evidence": "The current September 2026 handbook was checked against this active credential. It states two-year certification validity, same-track higher-level renewal, 545-day same-exam retake after a pass and 15/30/90-day waits after failed attempts. No retirement, replacement or locale change was found for this credential; the unchanged official datasheet remains the objective baseline.",
+            "recommendation": "Use the current handbook for validity and retake logistics; keep exam objectives bound to the credential datasheet.",
+            "disposition": "applied",
+            "source_id": "panw-certification-handbook",
+            "resolution": "Updated the guide validity/logistics note and handbook edition check date. The current datasheet objectives and accepted snapshot were retained."
+          }
+        ],
+        "notes": "Detailed exam/product/training observations and exact URLs are recorded in the three Group 4 research reports. The guide now contains role-specific learning-resource access/runtime details and the relevant dated product updates; none of these are represented as new exam objectives."
+      },
+      {
+        "exam_code": "PANW-NETWORK-SECURITY-PROFESSIONAL",
+        "vendor_id": "palo-alto-networks",
+        "guide_path": "guides/PANW-NETWORK-SECURITY-PROFESSIONAL-palo-alto-networks-network-security-professional.md",
+        "baseline_sha256": "682be74c10edf47fb23e61e21cb7544cf34fa962a9926b3b5265758bb66c6483",
+        "scanned_on": "2026-10-28",
+        "outcome": "current",
+        "checks": {
+          "official_blueprint_and_lifecycle": {
+            "status": "passed",
+            "notes": "Current official certification datasheet/profile checked against the exact accepted objective snapshot; active credential, with no retirement, replacement, or locale change found. September 2026 handbook logistics refreshed separately from objective scope."
+          },
+          "official_product_documentation": {
+            "status": "passed",
+            "notes": "Relevant first-party product documentation and versioned release pages were reviewed. Current product details were added as dated related context and explicitly separated from exam objectives; tenant, platform, region, licensing and preview limits remain stated."
+          },
+          "official_release_channels": {
+            "status": "passed",
+            "notes": "Palo Alto Networks release channels were checked for the mapped platform family; newer PAN-OS, Prisma Access/SD-WAN and Cortex updates were added only where relevant, with version and availability caveats."
+          },
+          "catalog_comparison": {
+            "status": "passed",
+            "notes": "Official exam, handbook, learning and product sources were compared with the source catalog. Scoped link sweep: 95 URLs, 90 OK, 5 externally blocked, 0 broken; 17 new reviewed learning/release sources registered."
+          },
+          "contradiction_and_gap_review": {
+            "status": "passed",
+            "notes": "Exam objectives remain unchanged. Current handbook rules replace stale logistics; dynamic PDFs were checked manually against the retained snapshots. Login-gated learning detail and five blocked third-party/regulatory links are disclosed; no material guide claim depends only on a blocked link."
+          }
+        },
+        "findings": [
+          {
+            "id": "panw-sep-2026-handbook-panw-network-security-professional",
+            "check": "official_blueprint_and_lifecycle",
+            "category": "updated-source",
+            "title": "September 2026 certification handbook logistics and validity",
+            "url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf",
+            "source_type": "official-announcement",
+            "affected_exams": [
+              "PANW-NETWORK-SECURITY-PROFESSIONAL"
+            ],
+            "catalog_status": "registered",
+            "confidence": "high",
+            "evidence": "The current September 2026 handbook was checked against this active credential. It states two-year certification validity, same-track higher-level renewal, 545-day same-exam retake after a pass and 15/30/90-day waits after failed attempts. No retirement, replacement or locale change was found for this credential; the unchanged official datasheet remains the objective baseline.",
+            "recommendation": "Use the current handbook for validity and retake logistics; keep exam objectives bound to the credential datasheet.",
+            "disposition": "applied",
+            "source_id": "panw-certification-handbook",
+            "resolution": "Updated the guide validity/logistics note and handbook edition check date. The current datasheet objectives and accepted snapshot were retained."
+          }
+        ],
+        "notes": "Detailed exam/product/training observations and exact URLs are recorded in the three Group 4 research reports. The guide now contains role-specific learning-resource access/runtime details and the relevant dated product updates; none of these are represented as new exam objectives."
+      },
+      {
+        "exam_code": "PANW-NGFW-ENGINEER",
+        "vendor_id": "palo-alto-networks",
+        "guide_path": "guides/PANW-NGFW-ENGINEER-palo-alto-networks-next-generation-firewall-engineer.md",
+        "baseline_sha256": "e6d1470d49b1d63602c5021bf347751e6b64443817cdda1e9700bd4a10486806",
+        "scanned_on": "2026-10-28",
+        "outcome": "current",
+        "checks": {
+          "official_blueprint_and_lifecycle": {
+            "status": "passed",
+            "notes": "Current official certification datasheet/profile checked against the exact accepted objective snapshot; active credential, with no retirement, replacement, or locale change found. September 2026 handbook logistics refreshed separately from objective scope."
+          },
+          "official_product_documentation": {
+            "status": "passed",
+            "notes": "Relevant first-party product documentation and versioned release pages were reviewed. Current product details were added as dated related context and explicitly separated from exam objectives; tenant, platform, region, licensing and preview limits remain stated."
+          },
+          "official_release_channels": {
+            "status": "passed",
+            "notes": "Palo Alto Networks release channels were checked for the mapped platform family; newer PAN-OS, Prisma Access/SD-WAN and Cortex updates were added only where relevant, with version and availability caveats."
+          },
+          "catalog_comparison": {
+            "status": "passed",
+            "notes": "Official exam, handbook, learning and product sources were compared with the source catalog. Scoped link sweep: 95 URLs, 90 OK, 5 externally blocked, 0 broken; 17 new reviewed learning/release sources registered."
+          },
+          "contradiction_and_gap_review": {
+            "status": "passed",
+            "notes": "Exam objectives remain unchanged. Current handbook rules replace stale logistics; dynamic PDFs were checked manually against the retained snapshots. Login-gated learning detail and five blocked third-party/regulatory links are disclosed; no material guide claim depends only on a blocked link."
+          }
+        },
+        "findings": [
+          {
+            "id": "panw-sep-2026-handbook-panw-ngfw-engineer",
+            "check": "official_blueprint_and_lifecycle",
+            "category": "updated-source",
+            "title": "September 2026 certification handbook logistics and validity",
+            "url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf",
+            "source_type": "official-announcement",
+            "affected_exams": [
+              "PANW-NGFW-ENGINEER"
+            ],
+            "catalog_status": "registered",
+            "confidence": "high",
+            "evidence": "The current September 2026 handbook was checked against this active credential. It states two-year certification validity, same-track higher-level renewal, 545-day same-exam retake after a pass and 15/30/90-day waits after failed attempts. No retirement, replacement or locale change was found for this credential; the unchanged official datasheet remains the objective baseline.",
+            "recommendation": "Use the current handbook for validity and retake logistics; keep exam objectives bound to the credential datasheet.",
+            "disposition": "applied",
+            "source_id": "panw-certification-handbook",
+            "resolution": "Updated the guide validity/logistics note and handbook edition check date. The current datasheet objectives and accepted snapshot were retained."
+          }
+        ],
+        "notes": "Detailed exam/product/training observations and exact URLs are recorded in the three Group 4 research reports. The guide now contains role-specific learning-resource access/runtime details and the relevant dated product updates; none of these are represented as new exam objectives."
+      },
+      {
+        "exam_code": "PANW-SD-WAN-ENGINEER",
+        "vendor_id": "palo-alto-networks",
+        "guide_path": "guides/PANW-SD-WAN-ENGINEER-palo-alto-networks-sd-wan-engineer.md",
+        "baseline_sha256": "4975bd40c58863097d6c0a49ff6a56601f4351ce8b0f44c0b6b1e41a5a1bf123",
+        "scanned_on": "2026-10-28",
+        "outcome": "current",
+        "checks": {
+          "official_blueprint_and_lifecycle": {
+            "status": "passed",
+            "notes": "Current official certification datasheet/profile checked against the exact accepted objective snapshot; active credential, with no retirement, replacement, or locale change found. September 2026 handbook logistics refreshed separately from objective scope."
+          },
+          "official_product_documentation": {
+            "status": "passed",
+            "notes": "Relevant first-party product documentation and versioned release pages were reviewed. Current product details were added as dated related context and explicitly separated from exam objectives; tenant, platform, region, licensing and preview limits remain stated."
+          },
+          "official_release_channels": {
+            "status": "passed",
+            "notes": "Palo Alto Networks release channels were checked for the mapped platform family; newer PAN-OS, Prisma Access/SD-WAN and Cortex updates were added only where relevant, with version and availability caveats."
+          },
+          "catalog_comparison": {
+            "status": "passed",
+            "notes": "Official exam, handbook, learning and product sources were compared with the source catalog. Scoped link sweep: 95 URLs, 90 OK, 5 externally blocked, 0 broken; 17 new reviewed learning/release sources registered."
+          },
+          "contradiction_and_gap_review": {
+            "status": "passed",
+            "notes": "Exam objectives remain unchanged. Current handbook rules replace stale logistics; dynamic PDFs were checked manually against the retained snapshots. Login-gated learning detail and five blocked third-party/regulatory links are disclosed; no material guide claim depends only on a blocked link."
+          }
+        },
+        "findings": [
+          {
+            "id": "panw-sep-2026-handbook-panw-sd-wan-engineer",
+            "check": "official_blueprint_and_lifecycle",
+            "category": "updated-source",
+            "title": "September 2026 certification handbook logistics and validity",
+            "url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf",
+            "source_type": "official-announcement",
+            "affected_exams": [
+              "PANW-SD-WAN-ENGINEER"
+            ],
+            "catalog_status": "registered",
+            "confidence": "high",
+            "evidence": "The current September 2026 handbook was checked against this active credential. It states two-year certification validity, same-track higher-level renewal, 545-day same-exam retake after a pass and 15/30/90-day waits after failed attempts. No retirement, replacement or locale change was found for this credential; the unchanged official datasheet remains the objective baseline.",
+            "recommendation": "Use the current handbook for validity and retake logistics; keep exam objectives bound to the credential datasheet.",
+            "disposition": "applied",
+            "source_id": "panw-certification-handbook",
+            "resolution": "Updated the guide validity/logistics note and handbook edition check date. The current datasheet objectives and accepted snapshot were retained."
+          }
+        ],
+        "notes": "Detailed exam/product/training observations and exact URLs are recorded in the three Group 4 research reports. The guide now contains role-specific learning-resource access/runtime details and the relevant dated product updates; none of these are represented as new exam objectives."
+      },
+      {
+        "exam_code": "PANW-SECURITY-OPERATIONS-ARCHITECT",
+        "vendor_id": "palo-alto-networks",
+        "guide_path": "guides/PANW-SECURITY-OPERATIONS-ARCHITECT-palo-alto-networks-security-operations-architect.md",
+        "baseline_sha256": "1b4c3dc91c145dd25409e6ddef72d2580f6b964f3b1dd6dab4136e728788c4e5",
+        "scanned_on": "2026-10-28",
+        "outcome": "current",
+        "checks": {
+          "official_blueprint_and_lifecycle": {
+            "status": "passed",
+            "notes": "Current official certification datasheet/profile checked against the exact accepted objective snapshot; active credential, with no retirement, replacement, or locale change found. September 2026 handbook logistics refreshed separately from objective scope."
+          },
+          "official_product_documentation": {
+            "status": "passed",
+            "notes": "Relevant first-party product documentation and versioned release pages were reviewed. Current product details were added as dated related context and explicitly separated from exam objectives; tenant, platform, region, licensing and preview limits remain stated."
+          },
+          "official_release_channels": {
+            "status": "passed",
+            "notes": "Palo Alto Networks release channels were checked for the mapped platform family; newer PAN-OS, Prisma Access/SD-WAN and Cortex updates were added only where relevant, with version and availability caveats."
+          },
+          "catalog_comparison": {
+            "status": "passed",
+            "notes": "Official exam, handbook, learning and product sources were compared with the source catalog. Scoped link sweep: 95 URLs, 90 OK, 5 externally blocked, 0 broken; 17 new reviewed learning/release sources registered."
+          },
+          "contradiction_and_gap_review": {
+            "status": "passed",
+            "notes": "Exam objectives remain unchanged. Current handbook rules replace stale logistics; dynamic PDFs were checked manually against the retained snapshots. Login-gated learning detail and five blocked third-party/regulatory links are disclosed; no material guide claim depends only on a blocked link."
+          }
+        },
+        "findings": [
+          {
+            "id": "panw-sep-2026-handbook-panw-security-operations-architect",
+            "check": "official_blueprint_and_lifecycle",
+            "category": "updated-source",
+            "title": "September 2026 certification handbook logistics and validity",
+            "url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf",
+            "source_type": "official-announcement",
+            "affected_exams": [
+              "PANW-SECURITY-OPERATIONS-ARCHITECT"
+            ],
+            "catalog_status": "registered",
+            "confidence": "high",
+            "evidence": "The current September 2026 handbook was checked against this active credential. It states two-year certification validity, same-track higher-level renewal, 545-day same-exam retake after a pass and 15/30/90-day waits after failed attempts. No retirement, replacement or locale change was found for this credential; the unchanged official datasheet remains the objective baseline.",
+            "recommendation": "Use the current handbook for validity and retake logistics; keep exam objectives bound to the credential datasheet.",
+            "disposition": "applied",
+            "source_id": "panw-certification-handbook",
+            "resolution": "Updated the guide validity/logistics note and handbook edition check date. The current datasheet objectives and accepted snapshot were retained."
+          }
+        ],
+        "notes": "Detailed exam/product/training observations and exact URLs are recorded in the three Group 4 research reports. The guide now contains role-specific learning-resource access/runtime details and the relevant dated product updates; none of these are represented as new exam objectives."
+      },
+      {
+        "exam_code": "PANW-SECURITY-OPERATIONS-PROFESSIONAL",
+        "vendor_id": "palo-alto-networks",
+        "guide_path": "guides/PANW-SECURITY-OPERATIONS-PROFESSIONAL-palo-alto-networks-security-operations-professional.md",
+        "baseline_sha256": "4b118e221e1a6158afc9f749efc6e977b60f8e1a012f89efd5c512cdd2211acd",
+        "scanned_on": "2026-10-28",
+        "outcome": "current",
+        "checks": {
+          "official_blueprint_and_lifecycle": {
+            "status": "passed",
+            "notes": "Current official certification datasheet/profile checked against the exact accepted objective snapshot; active credential, with no retirement, replacement, or locale change found. September 2026 handbook logistics refreshed separately from objective scope."
+          },
+          "official_product_documentation": {
+            "status": "passed",
+            "notes": "Relevant first-party product documentation and versioned release pages were reviewed. Current product details were added as dated related context and explicitly separated from exam objectives; tenant, platform, region, licensing and preview limits remain stated."
+          },
+          "official_release_channels": {
+            "status": "passed",
+            "notes": "Palo Alto Networks release channels were checked for the mapped platform family; newer PAN-OS, Prisma Access/SD-WAN and Cortex updates were added only where relevant, with version and availability caveats."
+          },
+          "catalog_comparison": {
+            "status": "passed",
+            "notes": "Official exam, handbook, learning and product sources were compared with the source catalog. Scoped link sweep: 95 URLs, 90 OK, 5 externally blocked, 0 broken; 17 new reviewed learning/release sources registered."
+          },
+          "contradiction_and_gap_review": {
+            "status": "passed",
+            "notes": "Exam objectives remain unchanged. Current handbook rules replace stale logistics; dynamic PDFs were checked manually against the retained snapshots. Login-gated learning detail and five blocked third-party/regulatory links are disclosed; no material guide claim depends only on a blocked link."
+          }
+        },
+        "findings": [
+          {
+            "id": "panw-sep-2026-handbook-panw-security-operations-professional",
+            "check": "official_blueprint_and_lifecycle",
+            "category": "updated-source",
+            "title": "September 2026 certification handbook logistics and validity",
+            "url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf",
+            "source_type": "official-announcement",
+            "affected_exams": [
+              "PANW-SECURITY-OPERATIONS-PROFESSIONAL"
+            ],
+            "catalog_status": "registered",
+            "confidence": "high",
+            "evidence": "The current September 2026 handbook was checked against this active credential. It states two-year certification validity, same-track higher-level renewal, 545-day same-exam retake after a pass and 15/30/90-day waits after failed attempts. No retirement, replacement or locale change was found for this credential; the unchanged official datasheet remains the objective baseline.",
+            "recommendation": "Use the current handbook for validity and retake logistics; keep exam objectives bound to the credential datasheet.",
+            "disposition": "applied",
+            "source_id": "panw-certification-handbook",
+            "resolution": "Updated the guide validity/logistics note and handbook edition check date. The current datasheet objectives and accepted snapshot were retained."
+          }
+        ],
+        "notes": "Detailed exam/product/training observations and exact URLs are recorded in the three Group 4 research reports. The guide now contains role-specific learning-resource access/runtime details and the relevant dated product updates; none of these are represented as new exam objectives."
+      },
+      {
+        "exam_code": "PANW-SSE-ENGINEER",
+        "vendor_id": "palo-alto-networks",
+        "guide_path": "guides/PANW-SSE-ENGINEER-palo-alto-networks-security-service-edge-engineer.md",
+        "baseline_sha256": "3bdbefeb8ab8230ee70c124ad888afdde4739714b7f11f5e53d5ee446597e722",
+        "scanned_on": "2026-10-28",
+        "outcome": "current",
+        "checks": {
+          "official_blueprint_and_lifecycle": {
+            "status": "passed",
+            "notes": "Current official certification datasheet/profile checked against the exact accepted objective snapshot; active credential, with no retirement, replacement, or locale change found. September 2026 handbook logistics refreshed separately from objective scope."
+          },
+          "official_product_documentation": {
+            "status": "passed",
+            "notes": "Relevant first-party product documentation and versioned release pages were reviewed. Current product details were added as dated related context and explicitly separated from exam objectives; tenant, platform, region, licensing and preview limits remain stated."
+          },
+          "official_release_channels": {
+            "status": "passed",
+            "notes": "Palo Alto Networks release channels were checked for the mapped platform family; newer PAN-OS, Prisma Access/SD-WAN and Cortex updates were added only where relevant, with version and availability caveats."
+          },
+          "catalog_comparison": {
+            "status": "passed",
+            "notes": "Official exam, handbook, learning and product sources were compared with the source catalog. Scoped link sweep: 95 URLs, 90 OK, 5 externally blocked, 0 broken; 17 new reviewed learning/release sources registered."
+          },
+          "contradiction_and_gap_review": {
+            "status": "passed",
+            "notes": "Exam objectives remain unchanged. Current handbook rules replace stale logistics; dynamic PDFs were checked manually against the retained snapshots. Login-gated learning detail and five blocked third-party/regulatory links are disclosed; no material guide claim depends only on a blocked link."
+          }
+        },
+        "findings": [
+          {
+            "id": "panw-sep-2026-handbook-panw-sse-engineer",
+            "check": "official_blueprint_and_lifecycle",
+            "category": "updated-source",
+            "title": "September 2026 certification handbook logistics and validity",
+            "url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf",
+            "source_type": "official-announcement",
+            "affected_exams": [
+              "PANW-SSE-ENGINEER"
+            ],
+            "catalog_status": "registered",
+            "confidence": "high",
+            "evidence": "The current September 2026 handbook was checked against this active credential. It states two-year certification validity, same-track higher-level renewal, 545-day same-exam retake after a pass and 15/30/90-day waits after failed attempts. No retirement, replacement or locale change was found for this credential; the unchanged official datasheet remains the objective baseline.",
+            "recommendation": "Use the current handbook for validity and retake logistics; keep exam objectives bound to the credential datasheet.",
+            "disposition": "applied",
+            "source_id": "panw-certification-handbook",
+            "resolution": "Updated the guide validity/logistics note and handbook edition check date. The current datasheet objectives and accepted snapshot were retained."
+          }
+        ],
+        "notes": "Detailed exam/product/training observations and exact URLs are recorded in the three Group 4 research reports. The guide now contains role-specific learning-resource access/runtime details and the relevant dated product updates; none of these are represented as new exam objectives."
+      },
+      {
+        "exam_code": "PANW-XDR-ANALYST",
+        "vendor_id": "palo-alto-networks",
+        "guide_path": "guides/PANW-XDR-ANALYST-palo-alto-networks-xdr-analyst.md",
+        "baseline_sha256": "3c06e6862b0b7301795c65038b2313ba160aea3d244bef736cb252585ee42f44",
+        "scanned_on": "2026-10-28",
+        "outcome": "current",
+        "checks": {
+          "official_blueprint_and_lifecycle": {
+            "status": "passed",
+            "notes": "Current official certification datasheet/profile checked against the exact accepted objective snapshot; active credential, with no retirement, replacement, or locale change found. September 2026 handbook logistics refreshed separately from objective scope."
+          },
+          "official_product_documentation": {
+            "status": "passed",
+            "notes": "Relevant first-party product documentation and versioned release pages were reviewed. Current product details were added as dated related context and explicitly separated from exam objectives; tenant, platform, region, licensing and preview limits remain stated."
+          },
+          "official_release_channels": {
+            "status": "passed",
+            "notes": "Palo Alto Networks release channels were checked for the mapped platform family; newer PAN-OS, Prisma Access/SD-WAN and Cortex updates were added only where relevant, with version and availability caveats."
+          },
+          "catalog_comparison": {
+            "status": "passed",
+            "notes": "Official exam, handbook, learning and product sources were compared with the source catalog. Scoped link sweep: 95 URLs, 90 OK, 5 externally blocked, 0 broken; 17 new reviewed learning/release sources registered."
+          },
+          "contradiction_and_gap_review": {
+            "status": "passed",
+            "notes": "Exam objectives remain unchanged. Current handbook rules replace stale logistics; dynamic PDFs were checked manually against the retained snapshots. Login-gated learning detail and five blocked third-party/regulatory links are disclosed; no material guide claim depends only on a blocked link."
+          }
+        },
+        "findings": [
+          {
+            "id": "panw-sep-2026-handbook-panw-xdr-analyst",
+            "check": "official_blueprint_and_lifecycle",
+            "category": "updated-source",
+            "title": "September 2026 certification handbook logistics and validity",
+            "url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf",
+            "source_type": "official-announcement",
+            "affected_exams": [
+              "PANW-XDR-ANALYST"
+            ],
+            "catalog_status": "registered",
+            "confidence": "high",
+            "evidence": "The current September 2026 handbook was checked against this active credential. It states two-year certification validity, same-track higher-level renewal, 545-day same-exam retake after a pass and 15/30/90-day waits after failed attempts. No retirement, replacement or locale change was found for this credential; the unchanged official datasheet remains the objective baseline.",
+            "recommendation": "Use the current handbook for validity and retake logistics; keep exam objectives bound to the credential datasheet.",
+            "disposition": "applied",
+            "source_id": "panw-certification-handbook",
+            "resolution": "Updated the guide validity/logistics note and handbook edition check date. The current datasheet objectives and accepted snapshot were retained."
+          }
+        ],
+        "notes": "Detailed exam/product/training observations and exact URLs are recorded in the three Group 4 research reports. The guide now contains role-specific learning-resource access/runtime details and the relevant dated product updates; none of these are represented as new exam objectives."
+      },
+      {
+        "exam_code": "PANW-XDR-ENGINEER",
+        "vendor_id": "palo-alto-networks",
+        "guide_path": "guides/PANW-XDR-ENGINEER-palo-alto-networks-xdr-engineer.md",
+        "baseline_sha256": "12d92e0024c93b533cecb01a55b53e8e5c667ec75b2fbbeca2db183b75451a26",
+        "scanned_on": "2026-10-28",
+        "outcome": "current",
+        "checks": {
+          "official_blueprint_and_lifecycle": {
+            "status": "passed",
+            "notes": "Current official certification datasheet/profile checked against the exact accepted objective snapshot; active credential, with no retirement, replacement, or locale change found. September 2026 handbook logistics refreshed separately from objective scope."
+          },
+          "official_product_documentation": {
+            "status": "passed",
+            "notes": "Relevant first-party product documentation and versioned release pages were reviewed. Current product details were added as dated related context and explicitly separated from exam objectives; tenant, platform, region, licensing and preview limits remain stated."
+          },
+          "official_release_channels": {
+            "status": "passed",
+            "notes": "Palo Alto Networks release channels were checked for the mapped platform family; newer PAN-OS, Prisma Access/SD-WAN and Cortex updates were added only where relevant, with version and availability caveats."
+          },
+          "catalog_comparison": {
+            "status": "passed",
+            "notes": "Official exam, handbook, learning and product sources were compared with the source catalog. Scoped link sweep: 95 URLs, 90 OK, 5 externally blocked, 0 broken; 17 new reviewed learning/release sources registered."
+          },
+          "contradiction_and_gap_review": {
+            "status": "passed",
+            "notes": "Exam objectives remain unchanged. Current handbook rules replace stale logistics; dynamic PDFs were checked manually against the retained snapshots. Login-gated learning detail and five blocked third-party/regulatory links are disclosed; no material guide claim depends only on a blocked link."
+          }
+        },
+        "findings": [
+          {
+            "id": "panw-sep-2026-handbook-panw-xdr-engineer",
+            "check": "official_blueprint_and_lifecycle",
+            "category": "updated-source",
+            "title": "September 2026 certification handbook logistics and validity",
+            "url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf",
+            "source_type": "official-announcement",
+            "affected_exams": [
+              "PANW-XDR-ENGINEER"
+            ],
+            "catalog_status": "registered",
+            "confidence": "high",
+            "evidence": "The current September 2026 handbook was checked against this active credential. It states two-year certification validity, same-track higher-level renewal, 545-day same-exam retake after a pass and 15/30/90-day waits after failed attempts. No retirement, replacement or locale change was found for this credential; the unchanged official datasheet remains the objective baseline.",
+            "recommendation": "Use the current handbook for validity and retake logistics; keep exam objectives bound to the credential datasheet.",
+            "disposition": "applied",
+            "source_id": "panw-certification-handbook",
+            "resolution": "Updated the guide validity/logistics note and handbook edition check date. The current datasheet objectives and accepted snapshot were retained."
+          }
+        ],
+        "notes": "Detailed exam/product/training observations and exact URLs are recorded in the three Group 4 research reports. The guide now contains role-specific learning-resource access/runtime details and the relevant dated product updates; none of these are represented as new exam objectives."
+      },
+      {
+        "exam_code": "PANW-XSIAM-ANALYST",
+        "vendor_id": "palo-alto-networks",
+        "guide_path": "guides/PANW-XSIAM-ANALYST-palo-alto-networks-xsiam-analyst.md",
+        "baseline_sha256": "c1f175c79813c8b994e1a1d61270ef393a4162a9e9b0f674399d5b7969c80137",
+        "scanned_on": "2026-10-28",
+        "outcome": "current",
+        "checks": {
+          "official_blueprint_and_lifecycle": {
+            "status": "passed",
+            "notes": "Current official certification datasheet/profile checked against the exact accepted objective snapshot; active credential, with no retirement, replacement, or locale change found. September 2026 handbook logistics refreshed separately from objective scope."
+          },
+          "official_product_documentation": {
+            "status": "passed",
+            "notes": "Relevant first-party product documentation and versioned release pages were reviewed. Current product details were added as dated related context and explicitly separated from exam objectives; tenant, platform, region, licensing and preview limits remain stated."
+          },
+          "official_release_channels": {
+            "status": "passed",
+            "notes": "Palo Alto Networks release channels were checked for the mapped platform family; newer PAN-OS, Prisma Access/SD-WAN and Cortex updates were added only where relevant, with version and availability caveats."
+          },
+          "catalog_comparison": {
+            "status": "passed",
+            "notes": "Official exam, handbook, learning and product sources were compared with the source catalog. Scoped link sweep: 95 URLs, 90 OK, 5 externally blocked, 0 broken; 17 new reviewed learning/release sources registered."
+          },
+          "contradiction_and_gap_review": {
+            "status": "passed",
+            "notes": "Exam objectives remain unchanged. Current handbook rules replace stale logistics; dynamic PDFs were checked manually against the retained snapshots. Login-gated learning detail and five blocked third-party/regulatory links are disclosed; no material guide claim depends only on a blocked link."
+          }
+        },
+        "findings": [
+          {
+            "id": "panw-sep-2026-handbook-panw-xsiam-analyst",
+            "check": "official_blueprint_and_lifecycle",
+            "category": "updated-source",
+            "title": "September 2026 certification handbook logistics and validity",
+            "url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf",
+            "source_type": "official-announcement",
+            "affected_exams": [
+              "PANW-XSIAM-ANALYST"
+            ],
+            "catalog_status": "registered",
+            "confidence": "high",
+            "evidence": "The current September 2026 handbook was checked against this active credential. It states two-year certification validity, same-track higher-level renewal, 545-day same-exam retake after a pass and 15/30/90-day waits after failed attempts. No retirement, replacement or locale change was found for this credential; the unchanged official datasheet remains the objective baseline.",
+            "recommendation": "Use the current handbook for validity and retake logistics; keep exam objectives bound to the credential datasheet.",
+            "disposition": "applied",
+            "source_id": "panw-certification-handbook",
+            "resolution": "Updated the guide validity/logistics note and handbook edition check date. The current datasheet objectives and accepted snapshot were retained."
+          }
+        ],
+        "notes": "Detailed exam/product/training observations and exact URLs are recorded in the three Group 4 research reports. The guide now contains role-specific learning-resource access/runtime details and the relevant dated product updates; none of these are represented as new exam objectives."
+      }
+    ],
+    "summary": {
+      "exam_count": 10,
+      "current": 10,
+      "review_required": 0,
+      "blocked": 0,
+      "queued_findings": 0,
+      "applied_findings": 10,
+      "no_action_findings": 0,
+      "blocked_findings": 0
+    }
+  }
+]
 }

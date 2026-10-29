@@ -6,20 +6,20 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-02
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-02
+upcoming_change_checked: 2026-10-28
 ---
 
 # Palo Alto Networks Certified XSIAM Analyst Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live certification page, August 2025 datasheet, July 2025 certification handbook, Cortex XSIAM documentation, and public incident/detection sources were checked September 2, 2026. This does not guarantee that every explanation is error-free or remains current. The [official page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-xsiam-analyst) and [datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/XSIAMAnalyst-datasheet.pdf) are authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live certification page, August 2025 datasheet, September 2026 certification handbook, Cortex XSIAM documentation, and public incident/detection sources were checked October 28, 2026. This does not guarantee that every explanation is error-free or remains current. The [official page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-xsiam-analyst) and [datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/XSIAMAnalyst-datasheet.pdf) are authoritative.
 
 **Current baseline:** alert/detection 19%; incident response 20%; automation/playbooks 15%; XQL 14%; endpoint management 12%; threat intelligence/ASM 20%; August 2025 datasheet<br>
 **Exam contract:** specialist-level English Pearson VUE certification. The current handbook uses an 860 passing score on a 300–1000 scaled range and provisional results. The datasheet does not state item count, base duration, price, or formal experience; verify registration.<br>
 **Experience boundary:** job-ready XSIAM analysis: prioritization, investigations, playbooks, XQL, endpoints, intelligence, exposure, reports, and compliance. The official page also recommends the instructor-led Cortex XSIAM for Investigation and Analysis course.<br>
-**Validity and renewal:** two years under the July 2025 handbook, subject to current pathway rules.<br>
-**Upcoming change:** no retirement or dated replacement was found September 2, 2026. XSIAM interface, content, automation, and incident scoring are volatile; verify current documentation.<br>
+**Validity and renewal:** two years from passing. The September 2026 [Certification Handbook](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf) permits higher-level exam recertification to renew active lower-level credentials in the same track; the same passed exam cannot be retaken for 545 days. Failed-attempt waits are 15, 30, then 90 days. Check your credential record and current policy before scheduling.<br>
+**Upcoming change:** no retirement or dated replacement was found October 28, 2026. XSIAM interface, content, automation, and incident scoring are volatile; verify current documentation.<br>
 **Integrity:** actual exam content is confidential. This guide uses the published blueprint, original checks, synthetic data, and public docs only.
 
 ## How to use this guide
@@ -140,6 +140,10 @@ ASM discovers an internet service. Validate ownership and exposure, correlate en
 
 Trace feed source, indicator type/relationship/verdict/expiry and alert source/grouping/stitching. Use XQL to measure prevalence, validate shared services, change verdict/rule carefully, and update playbook error/rate handling without creating a false-negative gap.
 
+## Current product notes
+
+**Related release example (not a new exam objective):** Palo Alto Networks’ July 2026 Cortex update describes XSIAM 3.6 and AgentiX 1.4, including natural-language dashboard creation, Cortex Extended Threat Intel (XTI), and AI-assisted workflows. The same announcement describes XDR 5.2 features and Prisma Browser integration. Treat these as release-specific, tenant/license-dependent examples; follow the exam’s published XSIAM Analyst datasheet and current tenant documentation. [July 2026 Cortex update](https://www.paloaltonetworks.com/blog/security-operations/whats-new-in-cortex-july-2026/).
+
 ## Hands-on labs
 
 1. **Alert-source matrix:** model agent, IOC, BIOC, and correlation alerts with data/logic/evidence/action/test cases.
@@ -254,13 +258,14 @@ Trace feed source, indicator type/relationship/verdict/expiry and alert source/g
 
 This is not a complete list, and it is not meant to be consumed in full. Start with the blueprint and official XSIAM path/course, then use documentation and synthetic investigations for measured gaps. Record tenant/release because XQL schemas, content, and UI evolve.
 
+**Official learning path:** The [current certification page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-xsiam-analyst) links to the Palo Alto Networks Certified XSIAM Analyst digital path. Palo Alto Networks describes its digital modules as free and self-paced; Learning Center registration/sign-in is required, and public pages do not state total path runtime. See [Education Services](https://www.paloaltonetworks.com/services/education) and [Learning Center registration guidance](https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA10g000000PLNxCAO&lang=en_US); course access may vary by account/region.
+
 | Resource | Access | Estimated time | Best use |
 |---|---|---:|---|
 | [XSIAM Analyst certification page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-xsiam-analyst) | Public | 10–15 minutes | Current credential, datasheet, official learning routes, registration |
 | [August 2025 datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/XSIAMAnalyst-datasheet.pdf) | Public PDF | 60–90 minutes | Canonical six-domain weighted blueprint |
 | [Certification Handbook](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf) | Public PDF | 30–45 minutes | Scoring, ESL, results, retakes, validity, renewal, integrity |
-| [Official digital learning](https://learn.paloaltonetworks.com/learn) | Free account/login may be required | 30 minutes planning; modules vary | Follow the certification-page path and record live durations |
-| [Cortex XSIAM: Investigation and Analysis](https://www.paloaltonetworks.com/services/education/ilt-xsiam-investigation-analysis) | Paid instructor-led/authorized partner route | 2 days | Officially recommended hands-on analyst workflow course; duration published on the live course page |
+| [Cortex XSIAM: Investigation and Analysis](https://www.paloaltonetworks.com/services/education/ilt-xsiam-investigation-analysis) | Paid/authorized training partner or training credits; regional price varies | 2 days | Officially recommended hands-on analyst workflow course |
 | [Cortex XSIAM documentation](https://cortex-docs.paloaltonetworks.com/) | Public | 25–40 hours selected topics/labs | Alerts/incidents, playbooks, XQL/XDM, endpoint, TIM/ASM, reports |
 | [MITRE ATT&CK](https://attack.mitre.org/) | Public | 4–8 hours plus mapping labs | Behavior, data sources, mitigations, detection and hunt context |
 | [NIST SP 800-61 Rev. 3](https://csrc.nist.gov/pubs/sp/800/61/r3/final) | Public primary guidance | 3–5 hours | Current incident-response lifecycle and improvement context |
