@@ -6,19 +6,23 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-28
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-28
+upcoming_change_checked: 2026-10-28
 ---
 
 # EX378 Red Hat Certified Specialist in Cloud-native Development Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 28, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ex378-coverage-record). The [official EX378 objectives](https://www.redhat.com/en/services/training/ex378-red-hat-certified-specialist-in-cloud-native-developer-exam) are authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on October 28, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ex378-coverage-record). The [official EX378 objectives](https://www.redhat.com/en/services/training/ex378-red-hat-certified-specialist-in-cloud-native-developer-exam) are authoritative.
 
 **Current baseline:** Red Hat Build of Quarkus 3.8<br>
 **Upcoming blueprint change:** None announced when checked September 28, 2026<br>
 **Important freshness boundary:** Current upstream Quarkus releases use newer extension names and APIs. Build the final practice environment from the Red Hat 3.8 BOM and the dependencies/documentation supplied for the exam; translate newer courses rather than copying them blindly.<br>
 **Official source:** [Red Hat EX378 exam page](https://www.redhat.com/en/services/training/ex378-red-hat-certified-specialist-in-cloud-native-developer-exam)
+
+## Current guide watch — October 28, 2026
+
+- The EX378 page still specifies Red Hat Build of Quarkus 3.8. Upstream Quarkus now lists 3.40 as the latest LTS and 3.33 LTS as another maintained stream, but neither replaces the 3.8 exam baseline. Use 3.8 BOMs and versioned docs for practice, and translate newer examples deliberately. Red Hat's May certification framework maps the unchanged credential into the cloud-native applications specialist path and uses three-year renewal rules. See the [Quarkus release/status index](https://quarkus.io/releases/) and the [Red Hat certification FAQ](https://www.redhat.com/en/services/training-and-certification/faq).
 
 ## How to use this guide
 

@@ -6,14 +6,14 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-28
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-28
+upcoming_change_checked: 2026-10-28
 ---
 
 # EX294 Red Hat Certified Advanced System Administrator in Ansible Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 28, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ex294-coverage-record). The [official EX294 objectives](https://www.redhat.com/en/services/training/ex294-red-hat-certified-engineer-rhce-exam-red-hat-enterprise-linux) are authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on October 28, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ex294-coverage-record). The [official EX294 objectives](https://www.redhat.com/en/services/training/ex294-red-hat-certified-engineer-rhce-exam-red-hat-enterprise-linux) are authoritative.
 
 **Current baseline:** Most-recent-product public EX294 objectives; companion AU294 baseline is RHEL 10, Ansible Core 2.16, and development tools aligned with Ansible Automation Platform 2.6<br>
 **Upcoming blueprint change:** None announced when checked September 28, 2026<br>
@@ -24,6 +24,10 @@ upcoming_change_checked: 2026-09-28
 **CURRENT BLUEPRINT:** The public [version-specific objectives PDF](https://training-lms.redhat.com/public_content/redhat/training/Red%20Hat%20Certification%20Exam%20Objectives%20by%20Version.pdf) contains `EX294V26K`, which matches the current page's 56 tasks in eleven groups. This guide combines related groups into eight teaching sections; Git and VS Code remain explicit objectives. Older PDF versions have different lists.
 
 **VERIFY CURRENT — product versus upstream:** The [AAP lifecycle policy](https://access.redhat.com/support/policy/updates/ansible-automation-platform) identifies core 2.16 as the AAP 2.6 default while also describing other execution-environment streams. A community documentation banner or a newer upstream core release does not by itself determine Red Hat product support or the assigned exam runtime. Record the actual EE image, core/Python versions and installed collections before selecting examples.
+
+## Current guide watch — October 28, 2026
+
+- Red Hat's May 2026 certification framework keeps the exam's content, training recommendation, price, and proctoring unchanged while updating its credential paths and three-year renewal policy. The current EX294 page calls the award Red Hat Certified Advanced System Administrator in Ansible; the FAQ says passing EX294 now grants this standalone credential even without a prior RHCSA. This changes how the result is recognized, not the Linux/Ansible task list. Confirm the exact exam version available at checkout. See the [Red Hat certification FAQ](https://www.redhat.com/en/services/training-and-certification/faq).
 
 ## How to use this guide
 

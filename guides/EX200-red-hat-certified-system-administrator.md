@@ -6,19 +6,23 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-28
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-28
+upcoming_change_checked: 2026-10-28
 ---
 
 # EX200 Red Hat Certified System Administrator Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 28, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ex200-coverage-record). The [official EX200 objectives](https://www.redhat.com/en/services/training/ex200-red-hat-certified-system-administrator-rhcsa-exam) are authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on October 28, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ex200-coverage-record). The [official EX200 objectives](https://www.redhat.com/en/services/training/ex200-red-hat-certified-system-administrator-rhcsa-exam) are authoritative.
 
 **Current baseline:** EX200 based on Red Hat Enterprise Linux 10<br>
 **Upcoming blueprint change:** None announced when checked September 28, 2026<br>
 **Important freshness boundary:** RHEL 9 and older RHCSA material remains useful for durable Linux concepts, but the current public objectives add or emphasize RHEL 10 details such as Flatpak software management and systemd timers. Practice on RHEL 10 and reconcile every objective.<br>
 **Official source:** [Red Hat Certified System Administrator exam (EX200)](https://www.redhat.com/en/services/training/ex200-red-hat-certified-system-administrator-rhcsa-exam)
+
+## Current guide watch — October 28, 2026
+
+- Red Hat's release index lists RHEL 10.2 as the latest minor release. The EX200 exam page still binds the exam to RHEL 10 without naming a minor release; use the current 10.2 documentation to learn product behavior, but do not turn 10.2-only features into new exam objectives. Red Hat's May 2026 framework now maps EX200 into both Enterprise Linux and Ansible paths and uses three-year credential validity; these are credential-path changes, not objective changes. See [RHEL 10.2 release notes](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/10.2_release_notes/index) and the [Red Hat certification FAQ](https://www.redhat.com/en/services/training-and-certification/faq).
 
 ## How to use this guide
 

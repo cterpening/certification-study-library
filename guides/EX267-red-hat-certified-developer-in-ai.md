@@ -6,19 +6,23 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-28
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-28
+upcoming_change_checked: 2026-10-28
 ---
 
 # EX267 Red Hat Certified Developer in AI Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 28, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ex267-coverage-record). The [official EX267 objectives](https://www.redhat.com/en/services/training/ex267-red-hat-certified-developer-in-ai) are authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on October 28, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ex267-coverage-record). The [official EX267 objectives](https://www.redhat.com/en/services/training/ex267-red-hat-certified-developer-in-ai) are authoritative.
 
 **Current baseline:** Red Hat OpenShift AI 3.3 on Red Hat OpenShift Container Platform 4.20<br>
 **Upcoming blueprint change:** None announced when checked September 28, 2026<br>
 **Important freshness boundary:** OpenShift AI evolves quickly. Confirm the versions assigned in the Red Hat learning environment, and translate older 2.x or newer documentation to the 3.3/4.20 baseline before following it.<br>
 **Assessment style:** Performance based; public objective groups are not weighted
+
+## Current guide watch — October 28, 2026
+
+- The official exam page remains based on OpenShift AI 3.3 and OpenShift Container Platform 4.20; objective hash and listed baseline are unchanged. The current 3.3 release notes include grounding/citation support for Llama Stack and Human-in-the-Loop agent behavior, with the latter in Technology Preview. Treat these as dated product context rather than additions to the exam task list. Red Hat's May 2026 framework also confirms the current Developer in AI title and new three-year renewal rules without changing exam content. See [OpenShift AI 3.3 release notes](https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/release_notes/release_notes) and the [Red Hat certification FAQ](https://www.redhat.com/en/services/training-and-certification/faq).
 
 ## How to use this guide
 

@@ -57558,5 +57558,369 @@
         "blocked_findings": 0
       }
     }
-]
+,
+    {
+      "id": "freshness-2026-10-28-nonms-g09",
+      "title": "Non-Microsoft certification refresh group 09",
+      "rubric_version": 1,
+      "created_on": "2026-10-28",
+      "completed_on": "2026-10-28",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Ninth group of ten from the frozen eligible queue after Groups 1–8.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "refresh-coordinator",
+          "official-source-review"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "220-1201",
+        "220-1202",
+        "DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK",
+        "DOP-C02",
+        "DVA-C02",
+        "EX200",
+        "EX267",
+        "EX280",
+        "EX294",
+        "EX378"
+      ],
+      "results": [
+        {
+          "exam_code": "220-1201",
+          "vendor_id": "comptia",
+          "guide_path": "guides/220-1201-comptia-a-plus-core-1.md",
+          "baseline_sha256": "639a88ceea84eb102fdf9a706d8051d766e13bcc375c1ef334b1247d0f0827cb",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            }
+          },
+          "findings": [],
+          "notes": "The real naming discrepancy is resolved without inventing a public exam code or treating the rename as an objective change."
+        },
+        {
+          "exam_code": "220-1202",
+          "vendor_id": "comptia",
+          "guide_path": "guides/220-1202-comptia-a-plus-core-2.md",
+          "baseline_sha256": "0d6bada80b91e94587d277180e4d2fc88acd3f8de677adc587f2dee78b8c8ff4",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            }
+          },
+          "findings": [],
+          "notes": "The real naming discrepancy is resolved without inventing a public exam code or treating the rename as an objective change."
+        },
+        {
+          "exam_code": "DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK",
+          "vendor_id": "databricks",
+          "guide_path": "guides/DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK-databricks-associate-developer-apache-spark.md",
+          "baseline_sha256": "1be16cdd153371733d0f961dea05a6a67a75a8cd4b32881f4e87cd542db39acc",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            }
+          },
+          "findings": [],
+          "notes": "The real naming discrepancy is resolved without inventing a public exam code or treating the rename as an objective change."
+        },
+        {
+          "exam_code": "DOP-C02",
+          "vendor_id": "aws",
+          "guide_path": "guides/DOP-C02-aws-certified-devops-engineer-professional.md",
+          "baseline_sha256": "cedd4177730cdd3870c4b0d7aa0f5b69038dd2ca5d6cd12034926545b21852b6",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            }
+          },
+          "findings": [],
+          "notes": "The real naming discrepancy is resolved without inventing a public exam code or treating the rename as an objective change."
+        },
+        {
+          "exam_code": "DVA-C02",
+          "vendor_id": "aws",
+          "guide_path": "guides/DVA-C02-aws-certified-developer-associate.md",
+          "baseline_sha256": "e1a92dca397e7bd203b99321299762492cfd2b00d2857699559999b8f3b3d3b9",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            }
+          },
+          "findings": [],
+          "notes": "The real naming discrepancy is resolved without inventing a public exam code or treating the rename as an objective change."
+        },
+        {
+          "exam_code": "EX200",
+          "vendor_id": "red-hat",
+          "guide_path": "guides/EX200-red-hat-certified-system-administrator.md",
+          "baseline_sha256": "b117deefdca45e19296c5a789f142298efece49a18a476b801e894e398513b99",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            }
+          },
+          "findings": [],
+          "notes": "The real naming discrepancy is resolved without inventing a public exam code or treating the rename as an objective change."
+        },
+        {
+          "exam_code": "EX267",
+          "vendor_id": "red-hat",
+          "guide_path": "guides/EX267-red-hat-certified-developer-in-ai.md",
+          "baseline_sha256": "0d01a7e5f71692b75bcec7c6fcd0098107bc37e493fdb6beef90f3ca574c009c",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            }
+          },
+          "findings": [],
+          "notes": "The real naming discrepancy is resolved without inventing a public exam code or treating the rename as an objective change."
+        },
+        {
+          "exam_code": "EX280",
+          "vendor_id": "red-hat",
+          "guide_path": "guides/EX280-red-hat-certified-system-administrator-openshift.md",
+          "baseline_sha256": "0246314e4fe6dd6d5dbe7934eb4aea446688e81465b3498330d37854954174fc",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            }
+          },
+          "findings": [],
+          "notes": "The real naming discrepancy is resolved without inventing a public exam code or treating the rename as an objective change."
+        },
+        {
+          "exam_code": "EX294",
+          "vendor_id": "red-hat",
+          "guide_path": "guides/EX294-red-hat-certified-advanced-system-administrator-ansible.md",
+          "baseline_sha256": "1abef3ccb9bcaaa6b30bdc481ac6587dc4a8d4834241a6cefac77854f1ac870d",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            }
+          },
+          "findings": [],
+          "notes": "The real naming discrepancy is resolved without inventing a public exam code or treating the rename as an objective change."
+        },
+        {
+          "exam_code": "EX378",
+          "vendor_id": "red-hat",
+          "guide_path": "guides/EX378-red-hat-certified-specialist-cloud-native-development.md",
+          "baseline_sha256": "d3e0e1e7cf3ff2960c50b0e7e0032d9fc2f9d42655d2750fe192e6d0470d335f",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            }
+          },
+          "findings": [],
+          "notes": "The real naming discrepancy is resolved without inventing a public exam code or treating the rename as an objective change."
+        }
+      ],
+      "summary": {
+        "exam_count": 10,
+        "current": 10,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 0,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    }]
 }
