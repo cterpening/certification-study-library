@@ -6,24 +6,28 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-28
 upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-28
 ---
 
 # Google Cloud Professional Agentic Architect Beta Study Guide
 
-> **Independent AI-assisted resource — BETA; SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Public objectives, citations, links, volatility labels, and exam-integrity compliance were checked September 29, 2026. Registration and the multiple-choice testing window are open through September 30, 2026. See the [coverage record](../docs/SOURCE-VALIDATION.md#google-professional-agentic-architect-coverage-record). The [official beta page](https://cloud.google.com/learn/certification/agentic-architect/), [exam guide](https://services.google.com/fh/files/misc/professional_agentic_architect_exam_guide_english.pdf), and [beta FAQ](https://support.google.com/cloud-certification/answer/18080541?hl=en) are authoritative.
+> **Independent AI-assisted resource — BETA; SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Public objectives, citations, links, volatility labels, and exam-integrity compliance were checked October 28, 2026. Registration and the multiple-choice testing window closed September 30, 2026. See the [coverage record](../docs/SOURCE-VALIDATION.md#google-professional-agentic-architect-coverage-record). The [official beta page](https://cloud.google.com/learn/certification/agentic-architect/), [exam guide](https://services.google.com/fh/files/misc/professional_agentic_architect_exam_guide_english.pdf), and [beta FAQ](https://support.google.com/cloud-certification/answer/18080541?hl=en) are authoritative.
 
-**Current baseline:** Published beta guide with five domains weighted approximately 13%, 17%, 33%, 22%, and 15%; registration open September 3–30, 2026<br>
-**Scheduled change:** Multiple-choice testing runs September 8–30; results are expected in late October; qualifying candidates complete labs from late October through December. Google projects mid-November GA, but that is not a guaranteed launch contract.<br>
+**Current baseline:** Published beta guide with five domains weighted approximately 13%, 17%, 33%, 22%, and 15%; beta registration (September 3–30, 2026) closed<br>
+**Beta/GA status:** The beta exam window ran September 8–30 and is closed. Google expected results in late October; candidates who pass must finish separate labs by December 31, 2026. GA registration is projected for mid-November, not guaranteed.<br>
 **Official source:** [Professional Agentic Architect beta](https://cloud.google.com/learn/certification/agentic-architect/) · [official exam guide](https://services.google.com/fh/files/misc/professional_agentic_architect_exam_guide_english.pdf)
+
+## Refresh check — October 28, 2026
+
+The September beta exam and registration window is closed. Google now describes certification as a two-part assessment: the proctored exam, then separate Google Skills hands-on labs for candidates who pass. Google’s page says lab invitations are sent after results and the required labs must be completed by **December 31, 2026**. It currently projects GA registration for mid-November; verify the page before planning around that estimate. The beta is no longer available to book. [Professional Agentic Architect page](https://cloud.google.com/learn/certification/agentic-architect/) · [beta FAQ](https://support.google.com/cloud-certification/answer/18080541?hl=en).
 
 ## How to use this guide
 
 Agentic systems connect probabilistic models to data, memory and actions. Study every design as: user/business goal → agent responsibility → authorized context → model/retrieval/memory → tool identity and action contract → orchestration → evaluation → deployment/trace → policy/human control → incident/rollback. Prefer the least autonomy that achieves the outcome.
 
-As of September 29, the beta page says the certification has two parts: a Pearson-delivered proctored multiple-choice assessment for concepts/design/standards and hands-on Google Skills labs for execution/coding. The beta listing says three hours, about 80 multiple-choice questions, USD 120 before tax (40% off a stated USD 200 retail price), English, online or onsite, one-year validity, no prerequisite, and recommended three-plus years building cloud solutions including one-plus year building agents on Google Cloud. The [official beta FAQ](https://support.google.com/cloud-certification/answer/18080541?hl=en) says registration closes September 30, multiple-choice testing runs September 8–30, results arrive in late October, and only candidates who pass that part receive the late-October-to-December lab invitation. It estimates less than five hours for the labs and projects mid-November GA. **VERIFY CURRENT:** every date, result message, eligibility step, lab deadline, and GA projection before scheduling.
+As of October 28, the beta page says the certification has two parts: a Pearson-delivered proctored multiple-choice assessment for concepts/design/standards and hands-on Google Skills labs for execution/coding. The beta listing says three hours, about 80 multiple-choice questions, USD 120 before tax (40% off a stated USD 200 retail price), English, online or onsite, one-year validity, no prerequisite, and recommended three-plus years building cloud solutions including one-plus year building agents on Google Cloud. The [official beta FAQ](https://support.google.com/cloud-certification/answer/18080541?hl=en) says registration and multiple-choice testing closed September 30 (testing ran September 8–30), results were expected in late October, and only candidates who pass that part receive the late-October-to-December lab invitation. It estimates less than five hours for the labs and projects mid-November GA. **VERIFY CURRENT:** every date, result message, eligibility step, lab deadline, and GA projection before scheduling.
 
 > **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context. It is supporting knowledge, not a claim that the item appears verbatim in the published objectives.
 
@@ -214,7 +218,7 @@ Coordinator delegates parallel source retrieval and structured analysis, then a 
 
 ## Executed local action-control workbook
 
-**PRACTICAL DEPTH — executed September 29, 2026:** The original standard-library Python program below passed **31 local checks**. It uses actual SQLite transactions to allocate synthetic capacity under a trusted approval record and a current access table. It rejects changed arguments, actor/tenant mismatch, expired approval, stale resource versions, unsupported argument types and excess capacity. An injected interruption after resource/approval updates but before ledger insertion rolls back all three effects; the subsequent retry succeeds once.
+**PRACTICAL DEPTH — executed October 28, 2026:** The original standard-library Python program below passed **31 local checks**. It uses actual SQLite transactions to allocate synthetic capacity under a trusted approval record and a current access table. It rejects changed arguments, actor/tenant mismatch, expired approval, stale resource versions, unsupported argument types and excess capacity. An injected interruption after resource/approval updates but before ledger insertion rolls back all three effects; the subsequent retry succeeds once.
 
 The first valid operation changes tenant A’s capacity from 100 to 80. Replaying its logical request after approval expiry returns its stored result without another allocation, but only after checking current access. Revocation blocks that replay. A fresh approved operation consumes the remaining 80; tenant B remains at 200, with two committed ledger entries and two consumed approvals. A separate trace fixture shows that required calls in order can coexist with a forbidden extra export.
 
@@ -513,7 +517,7 @@ These are original study explanations, not recalled or predicted assessment item
 
 40. **Logging versus Monitoring versus Trace?** Structured events, health/outcome metrics and cross-hop request spans; correlate them.
 
-41. **What are the current beta windows?** Registration and multiple-choice testing close September 30, 2026. The FAQ expects multiple-choice results in late October and gives passing candidates two months for distinct assessment labs once available. Both parts are required; mid-November GA remains a projection.
+41. **What is the current beta status?** Registration and multiple-choice testing closed September 30, 2026. The FAQ expects multiple-choice results in late October and gives passing candidates two months for distinct assessment labs once available. Both parts are required; mid-November GA registration is still a projection.
 
 42. **Agent Designer's current name?** Gemini Enterprise Workflow Builder; retain Agent Designer when mapping the beta blueprint.
 

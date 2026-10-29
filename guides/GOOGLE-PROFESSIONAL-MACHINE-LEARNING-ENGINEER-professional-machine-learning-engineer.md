@@ -6,18 +6,22 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-28
 ---
 
 # Google Cloud Professional Machine Learning Engineer Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Public objectives, citations, links, volatility labels, and exam-integrity compliance were checked September 29, 2026. See the [coverage record](../docs/SOURCE-VALIDATION.md#google-professional-machine-learning-engineer-coverage-record). The [official page](https://cloud.google.com/learn/certification/machine-learning-engineer) and its linked [June 1, 2026 guide](https://services.google.com/fh/files/misc/professional_machine_learning_engineer_exam_guide_english_new.pdf) are authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Public objectives, citations, links, volatility labels, and exam-integrity compliance were checked October 28, 2026. See the [coverage record](../docs/SOURCE-VALIDATION.md#google-professional-machine-learning-engineer-coverage-record). The [official page](https://cloud.google.com/learn/certification/machine-learning-engineer) and its linked [June 1, 2026 guide](https://services.google.com/fh/files/misc/professional_machine_learning_engineer_exam_guide_english_new.pdf) are authoritative.
 
 **Current baseline:** June 1, 2026; six domains weighted approximately 13%, 16%, 21%, 20%, 18%, and 13% (published approximations total 101%)<br>
 **Published transition:** Google says the exam was updated for branding changes and the transition from Vertex AI to Gemini Enterprise Agent Platform. No future effective date is announced.<br>
 **Official source:** [Professional Machine Learning Engineer](https://cloud.google.com/learn/certification/machine-learning-engineer) · [current detailed PDF](https://services.google.com/fh/files/misc/professional_machine_learning_engineer_exam_guide_english_new.pdf)
+
+## Refresh check — October 28, 2026
+
+Google explicitly says the current June 1, 2026 ML Engineer exam reflects the transition from Vertex AI to **Gemini Enterprise Agent Platform**, updates to its data and analytics stack, and a preference for Google Cloud native solutions. The six public abilities and weights are unchanged in the current exam guide. Older Vertex AI names remain useful for legacy documentation, but use Google’s current [name mapping](https://docs.cloud.google.com/gemini-enterprise-agent-platform/vertex-ai-name-changes) and the live exam PDF for present product terminology. [PMLE certification page](https://cloud.google.com/learn/certification/machine-learning-engineer).
 
 ## How to use this guide
 
@@ -190,7 +194,7 @@ Refactor a notebook into package/container/pipeline, version data and dependenci
 
 ## Executed local training and evaluation workbook
 
-**PRACTICAL DEPTH — executed September 29, 2026:** This original Python program actually fits a one-feature logistic classifier by gradient descent on 120 synthetic rows. It fits normalization on training data, selects one of five thresholds on 30 validation rows with fictional cost `FP + 4*FN`, serializes the fitted model/transform/threshold and fingerprints, and only then reports 30 held-out rows. Separate counterexamples demonstrate a subgroup regression and concept drift with identical input distributions. No packages, credentials, network, cloud jobs or files are needed.
+**PRACTICAL DEPTH — executed October 28, 2026:** This original Python program actually fits a one-feature logistic classifier by gradient descent on 120 synthetic rows. It fits normalization on training data, selects one of five thresholds on 30 validation rows with fictional cost `FP + 4*FN`, serializes the fitted model/transform/threshold and fingerprints, and only then reports 30 held-out rows. Separate counterexamples demonstrate a subgroup regression and concept drift with identical input distributions. No packages, credentials, network, cloud jobs or files are needed.
 
 The run completed **36 local checks**. It selected threshold **0.35**, training log loss approximately **0.1934**, validation cost **4**, and held-out cost **2** (13 TP, 15 TN, 2 FP, 0 FN). Held-out accuracy was 28/30. Slice B had only six rows and one positive: its perfect score does not establish adequate support for release. A separate fixture improves aggregate accuracy from 82% to 90% while reducing slice B recall from 100% to zero; the stated slice gate rejects it.
 
@@ -507,7 +511,7 @@ Only public primary documentation and public provider catalog pages were reviewe
 
 ## Places to learn
 
-This is **not a complete list**. Catalog observations below are from September 29, 2026. Durations are provider metadata unless explicitly described as a suggested practice budget. A certificate/path title does not prove complete June 2026 blueprint coverage.
+This is **not a complete list**. Catalog observations below are from October 28, 2026. Durations are provider metadata unless explicitly described as a suggested practice budget. A certificate/path title does not prove complete June 2026 blueprint coverage.
 
 | Resource | Access | Estimated time |
 |---|---|---|

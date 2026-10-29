@@ -6,18 +6,22 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-28
 ---
 
 # Google Cloud Associate Cloud Engineer Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 29, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#google-associate-cloud-engineer-coverage-record). The [official certification page](https://cloud.google.com/learn/certification/cloud-engineer) and its linked [exam guide](https://services.google.com/fh/files/misc/associate_cloud_engineer_exam_guide_english.pdf) are authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on October 28, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#google-associate-cloud-engineer-coverage-record). The [official certification page](https://cloud.google.com/learn/certification/cloud-engineer) and its linked [exam guide](https://services.google.com/fh/files/misc/associate_cloud_engineer_exam_guide_english.pdf) are authoritative.
 
-**Current baseline:** Four domains weighted approximately 20%, 30%, 30%, and 20%; all 94 considerations under 12 numbered objectives in the actual five-page PDF reviewed September 29, 2026<br>
+**Current baseline:** Four domains weighted approximately 20%, 30%, 30%, and 20%; all 94 considerations under 12 numbered objectives in the actual five-page PDF reviewed October 28, 2026<br>
 **Published change notice:** Google says the exam was updated for recent branding changes and directs candidates to the exam guide for the product names used on the exam. No future effective date is announced.<br>
 **Official source:** [Associate Cloud Engineer certification page](https://cloud.google.com/learn/certification/cloud-engineer) · [official detailed exam guide](https://services.google.com/fh/files/misc/associate_cloud_engineer_exam_guide_english.pdf)
+
+## Refresh check — October 28, 2026
+
+Google’s current page still lists the four standard-exam domains and says ACE was updated for recent branding. The English guide remains the scope reference. Google’s Spanish ACE exam has a newer version for appointments on or after September 28, 2026, so Spanish-language candidates should use the [Spanish certification page and linked exam guide](https://cloud.google.com/learn/certification/cloud-engineer/?hl=es-419) and confirm which version they are booking. The page also lists a distinct renewal exam and a Google Skills course/badge renewal route; those are separate from this standard-exam map. [ACE certification page](https://cloud.google.com/learn/certification/cloud-engineer) · [Google Cloud certification hub](https://cloud.google.com/learn/certification).
 
 ## How to use this guide
 
@@ -241,7 +245,7 @@ These eight Google Cloud labs are **proposed, not executed in this review**. Use
 
 ### Offline operations worksheet — executed
 
-Save the following as `ace_operations_workbook.py` and run `python ace_operations_workbook.py`. It uses only Python's standard library and an in-memory SQLite database. The exact code below passed **32 checks** on September 29, 2026, including expected failures.
+Save the following as `ace_operations_workbook.py` and run `python ace_operations_workbook.py`. It uses only Python's standard library and an in-memory SQLite database. The exact code below passed **32 checks** on October 28, 2026, including expected failures.
 
 CIDR checks validate only containment, prefix size and supplied overlap inventory; they do not validate Google's complete range restrictions, routing, IAM or quotas. Capacity arithmetic uses invented counts, not a service simulator. SQLite executes a real local transaction linking a business reservation, deduplication record and outbox row; no message, cloud database, payment or email is sent. The injected exception proves transaction rollback in this process, not machine-crash durability or concurrent distributed processing. An outbox dispatcher and idempotent destination would still need implementation and testing.
 
@@ -460,8 +464,8 @@ These are original concept checks, not recalled exam items. Answer before openin
 
 ## Source and freshness notes
 
-- The live certification page was checked for status, delivery, renewal, high-level capability lines, and its branding-update notice on September 29, 2026.
-- The actual five-page official PDF was extracted in layout mode and mapped through 94 considerations in groups of 16/24/43/11 under 12 numbered objectives on September 29, 2026. It exposes no visible revision date, so this repository records the verification date rather than inventing one.
+- The live certification page was checked for status, delivery, renewal, high-level capability lines, and its branding-update notice on October 28, 2026.
+- The actual five-page official PDF was extracted in layout mode and mapped through 94 considerations in groups of 16/24/43/11 under 12 numbered objectives on October 28, 2026. It exposes no visible revision date, so this repository records the verification date rather than inventing one.
 - The objective monitor hash is unchanged. A previously missing lifecycle snapshot was explicitly established after reviewing the live standard and renewal details; this is baseline initialization, not evidence that the exam just changed.
 - The [April 22, 2026 Google announcement](https://cloud.google.com/blog/products/ai-machine-learning/the-new-gemini-enterprise-one-platform-for-agent-development) provides app/platform naming context; the exam PDF defines the tested names. Marketing descriptions do not replace permission and service documentation.
 - This review executed only the 32-check local worksheet. No Google Cloud CLI was found on PATH, and no cloud project, billing, IAM, network, GKE, database or event runtime was exercised. Independent human review remains pending.
@@ -472,7 +476,7 @@ These are original concept checks, not recalled exam items. Answer before openin
 
 ## Places to learn
 
-This is intentionally **not a complete list**, and it is not a prescription to consume everything. Pick one coherent teaching route, use first-party documentation to close its version gaps, spend substantial time hands-on, and use assessments only to locate weak objectives. Public metadata was checked September 29, 2026. Distinguish card totals from overall schedule estimates; add lab, note, review and troubleshooting time. Paid course interiors and provider labs were not accessed.
+This is intentionally **not a complete list**, and it is not a prescription to consume everything. Pick one coherent teaching route, use first-party documentation to close its version gaps, spend substantial time hands-on, and use assessments only to locate weak objectives. Public metadata was checked October 28, 2026. Distinguish card totals from overall schedule estimates; add lab, note, review and troubleshooting time. Paid course interiors and provider labs were not accessed.
 
 | Resource | Access | Estimated time | Best use / currency note |
 |---|---|---:|---|

@@ -6,18 +6,22 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-28
 ---
 
 # Google Cloud Professional Cloud Security Engineer Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Public objectives, citations, links, volatility labels, and exam-integrity compliance were checked September 29, 2026. See the [coverage record](../docs/SOURCE-VALIDATION.md#google-professional-cloud-security-engineer-coverage-record). The [official certification page](https://cloud.google.com/learn/certification/cloud-security-engineer) and [detailed guide](https://services.google.com/fh/files/misc/professional_cloud_security_engineer_exam_guide_english.pdf) are authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Public objectives, citations, links, volatility labels, and exam-integrity compliance were checked October 28, 2026. See the [coverage record](../docs/SOURCE-VALIDATION.md#google-professional-cloud-security-engineer-coverage-record). The [official certification page](https://cloud.google.com/learn/certification/cloud-security-engineer) and [detailed guide](https://services.google.com/fh/files/misc/professional_cloud_security_engineer_exam_guide_english.pdf) are authoritative.
 
-**CURRENT BLUEPRINT:** Five domains weighted approximately 25%, 22%, 23%, 19%, and 11%; actual four-page PDF read September 29, 2026. The map covers 70 considerations under 14 numbered objectives<br>
-**Upcoming blueprint change:** None announced as of September 29, 2026.<br>
+**CURRENT BLUEPRINT:** Five domains weighted approximately 25%, 22%, 23%, 19%, and 11%; actual four-page PDF read October 28, 2026. The map covers 70 considerations under 14 numbered objectives<br>
+**Upcoming blueprint change:** None announced as of October 28, 2026.<br>
 **Official source:** [Professional Cloud Security Engineer](https://cloud.google.com/learn/certification/cloud-security-engineer) · [official exam guide](https://services.google.com/fh/files/misc/professional_cloud_security_engineer_exam_guide_english.pdf)
+
+## Refresh check — October 28, 2026
+
+The current certification page still lists five areas: access, communications/boundary protection, data protection, operations, and compliance. No new PCSE version or effective date is posted. Google’s certification hub flags broad Next ’26 product updates but directs candidates to each exam’s detailed guide; no unlisted control or product is added here. Eligible holders have separate renewal exam and Google Skills course/badge options. [PCSE certification page](https://cloud.google.com/learn/certification/cloud-security-engineer) · [certification hub](https://cloud.google.com/learn/certification).
 
 ## How to use this guide
 
@@ -456,7 +460,7 @@ module.exports = {run};
 
 ## Places to learn
 
-This is **not a complete list**, and it is not meant to be consumed in full. Pick one route, map it to the five current domains, and use primary docs/labs to close gaps. Public metadata was checked September 29, 2026. Suggested budgets include neither a guarantee of mastery nor measured completion time.
+This is **not a complete list**, and it is not meant to be consumed in full. Pick one route, map it to the five current domains, and use primary docs/labs to close gaps. Public metadata was checked October 28, 2026. Suggested budgets include neither a guarantee of mastery nor measured completion time.
 
 | Resource | Access | Estimated time | Best use / currency note |
 |---|---|---|---|

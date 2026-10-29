@@ -59106,6 +59106,369 @@
         "no_action_findings": 0,
         "blocked_findings": 0
       }
+    },
+    {
+      "id": "freshness-2026-10-28-nonms-g13",
+      "title": "Non-Microsoft refresh group 13 official-source freshness",
+      "rubric_version": 1,
+      "created_on": "2026-10-28",
+      "completed_on": "2026-10-28",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Thirteenth group of ten selected in oldest-first order from the frozen October 28 eligible queue.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "GOOGLE-ASSOCIATE-CLOUD-ENGINEER",
+        "GOOGLE-CLOUD-DIGITAL-LEADER",
+        "GOOGLE-GENERATIVE-AI-LEADER",
+        "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT",
+        "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT",
+        "GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER",
+        "GOOGLE-PROFESSIONAL-DATA-ENGINEER",
+        "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER",
+        "JSA-41-01",
+        "JSE-40-01"
+      ],
+      "results": [
+        {
+          "exam_code": "GOOGLE-ASSOCIATE-CLOUD-ENGINEER",
+          "vendor_id": "google-cloud",
+          "guide_path": "guides/GOOGLE-ASSOCIATE-CLOUD-ENGINEER-associate-cloud-engineer.md",
+          "baseline_sha256": "df1af93f8e370ec86901f16ebe4efabbdf099dc6d2ed4661feaa3e512e8537ed",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Reviewed for the current public evidence and guide context; access limits are described in the group report."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Reviewed for the current public evidence and guide context; access limits are described in the group report."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Reviewed for the current public evidence and guide context; access limits are described in the group report."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Reviewed for the current public evidence and guide context; access limits are described in the group report."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Reviewed for the current public evidence and guide context; access limits are described in the group report."
+            }
+          },
+          "findings": [],
+          "notes": "Current public issuer scope, lifecycle, dated product/learning references, and prior guide claims reviewed. Applied relevant findings in the refreshed guide; see group 13 research report."
+        },
+        {
+          "exam_code": "GOOGLE-CLOUD-DIGITAL-LEADER",
+          "vendor_id": "google-cloud",
+          "guide_path": "guides/GOOGLE-CLOUD-DIGITAL-LEADER-cloud-digital-leader.md",
+          "baseline_sha256": "d1aae5a0f46686b157ff22801ff700c87c45feca0ef4582810db1bc3ef304b6c",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Reviewed for the current public evidence and guide context; access limits are described in the group report."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Reviewed for the current public evidence and guide context; access limits are described in the group report."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Reviewed for the current public evidence and guide context; access limits are described in the group report."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Reviewed for the current public evidence and guide context; access limits are described in the group report."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Reviewed for the current public evidence and guide context; access limits are described in the group report."
+            }
+          },
+          "findings": [],
+          "notes": "Current public issuer scope, lifecycle, dated product/learning references, and prior guide claims reviewed. Applied relevant findings in the refreshed guide; see group 13 research report."
+        },
+        {
+          "exam_code": "GOOGLE-GENERATIVE-AI-LEADER",
+          "vendor_id": "google-cloud",
+          "guide_path": "guides/GOOGLE-GENERATIVE-AI-LEADER-generative-ai-leader.md",
+          "baseline_sha256": "8a82406eddbe697aa96ca90312c5a874152185a2d98f1d55c1df47b267160758",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Reviewed for the current public evidence and guide context; access limits are described in the group report."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Reviewed for the current public evidence and guide context; access limits are described in the group report."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Reviewed for the current public evidence and guide context; access limits are described in the group report."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Reviewed for the current public evidence and guide context; access limits are described in the group report."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Reviewed for the current public evidence and guide context; access limits are described in the group report."
+            }
+          },
+          "findings": [],
+          "notes": "Current public issuer scope, lifecycle, dated product/learning references, and prior guide claims reviewed. Applied relevant findings in the refreshed guide; see group 13 research report."
+        },
+        {
+          "exam_code": "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT",
+          "vendor_id": "google-cloud",
+          "guide_path": "guides/GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT-professional-agentic-architect.md",
+          "baseline_sha256": "abb8f9a25fc880705aba175ad3f4b992feccc6c0fac9873035effc53b38feb83",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Reviewed for the current public evidence and guide context; access limits are described in the group report."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Reviewed for the current public evidence and guide context; access limits are described in the group report."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Reviewed for the current public evidence and guide context; access limits are described in the group report."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Reviewed for the current public evidence and guide context; access limits are described in the group report."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Reviewed for the current public evidence and guide context; access limits are described in the group report."
+            }
+          },
+          "findings": [],
+          "notes": "Current public issuer scope, lifecycle, dated product/learning references, and prior guide claims reviewed. Applied relevant findings in the refreshed guide; see group 13 research report."
+        },
+        {
+          "exam_code": "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT",
+          "vendor_id": "google-cloud",
+          "guide_path": "guides/GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT-professional-cloud-architect.md",
+          "baseline_sha256": "f942870a5c363629fa8fda0df87a3186682a8661276703197af030f385f4978b",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Reviewed for the current public evidence and guide context; access limits are described in the group report."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Reviewed for the current public evidence and guide context; access limits are described in the group report."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Reviewed for the current public evidence and guide context; access limits are described in the group report."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Reviewed for the current public evidence and guide context; access limits are described in the group report."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Reviewed for the current public evidence and guide context; access limits are described in the group report."
+            }
+          },
+          "findings": [],
+          "notes": "Current public issuer scope, lifecycle, dated product/learning references, and prior guide claims reviewed. Applied relevant findings in the refreshed guide; see group 13 research report."
+        },
+        {
+          "exam_code": "GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER",
+          "vendor_id": "google-cloud",
+          "guide_path": "guides/GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER-professional-cloud-security-engineer.md",
+          "baseline_sha256": "141026fdba50688fa4fa7f918416239a40660fe399b0f50497991635bf9cc027",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Reviewed for the current public evidence and guide context; access limits are described in the group report."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Reviewed for the current public evidence and guide context; access limits are described in the group report."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Reviewed for the current public evidence and guide context; access limits are described in the group report."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Reviewed for the current public evidence and guide context; access limits are described in the group report."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Reviewed for the current public evidence and guide context; access limits are described in the group report."
+            }
+          },
+          "findings": [],
+          "notes": "Current public issuer scope, lifecycle, dated product/learning references, and prior guide claims reviewed. Applied relevant findings in the refreshed guide; see group 13 research report."
+        },
+        {
+          "exam_code": "GOOGLE-PROFESSIONAL-DATA-ENGINEER",
+          "vendor_id": "google-cloud",
+          "guide_path": "guides/GOOGLE-PROFESSIONAL-DATA-ENGINEER-professional-data-engineer.md",
+          "baseline_sha256": "ad15f0398be55e2aa8321837c9709d9c4ce49a53e85a576a8c192d8477ff07ab",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Reviewed for the current public evidence and guide context; access limits are described in the group report."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Reviewed for the current public evidence and guide context; access limits are described in the group report."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Reviewed for the current public evidence and guide context; access limits are described in the group report."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Reviewed for the current public evidence and guide context; access limits are described in the group report."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Reviewed for the current public evidence and guide context; access limits are described in the group report."
+            }
+          },
+          "findings": [],
+          "notes": "Current public issuer scope, lifecycle, dated product/learning references, and prior guide claims reviewed. Applied relevant findings in the refreshed guide; see group 13 research report."
+        },
+        {
+          "exam_code": "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER",
+          "vendor_id": "google-cloud",
+          "guide_path": "guides/GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER-professional-machine-learning-engineer.md",
+          "baseline_sha256": "006d9ff383036146dbca8e8a791dc915575fc759c30a9dd2f9f0ac6b733596f9",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Reviewed for the current public evidence and guide context; access limits are described in the group report."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Reviewed for the current public evidence and guide context; access limits are described in the group report."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Reviewed for the current public evidence and guide context; access limits are described in the group report."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Reviewed for the current public evidence and guide context; access limits are described in the group report."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Reviewed for the current public evidence and guide context; access limits are described in the group report."
+            }
+          },
+          "findings": [],
+          "notes": "Current public issuer scope, lifecycle, dated product/learning references, and prior guide claims reviewed. Applied relevant findings in the refreshed guide; see group 13 research report."
+        },
+        {
+          "exam_code": "JSA-41-01",
+          "vendor_id": "js-institute",
+          "guide_path": "guides/JSA-41-01-certified-associate-javascript-programmer.md",
+          "baseline_sha256": "f73e3c593c90869750cd29090d2f4ee4e5bde12a0fdd3cb640a873d6506f824a",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Reviewed for the current public evidence and guide context; access limits are described in the group report."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Reviewed for the current public evidence and guide context; access limits are described in the group report."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Reviewed for the current public evidence and guide context; access limits are described in the group report."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Reviewed for the current public evidence and guide context; access limits are described in the group report."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Reviewed for the current public evidence and guide context; access limits are described in the group report."
+            }
+          },
+          "findings": [],
+          "notes": "Current public issuer scope, lifecycle, dated product/learning references, and prior guide claims reviewed. Applied relevant findings in the refreshed guide; see group 13 research report."
+        },
+        {
+          "exam_code": "JSE-40-01",
+          "vendor_id": "js-institute",
+          "guide_path": "guides/JSE-40-01-certified-entry-level-javascript-programmer.md",
+          "baseline_sha256": "033665dd533b39112c1caea58cd25f3b1eec9d4ac88dfbdfa9bcc9410cea2b65",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Reviewed for the current public evidence and guide context; access limits are described in the group report."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Reviewed for the current public evidence and guide context; access limits are described in the group report."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Reviewed for the current public evidence and guide context; access limits are described in the group report."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Reviewed for the current public evidence and guide context; access limits are described in the group report."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Reviewed for the current public evidence and guide context; access limits are described in the group report."
+            }
+          },
+          "findings": [],
+          "notes": "Current public issuer scope, lifecycle, dated product/learning references, and prior guide claims reviewed. Applied relevant findings in the refreshed guide; see group 13 research report."
+        }
+      ],
+      "summary": {
+        "exam_count": 10,
+        "current": 10,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 0,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
     }
 ]
 }

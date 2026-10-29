@@ -897,7 +897,7 @@
       "review_type": "source-validation",
       "reviewed_on": "2026-09-02",
       "outcome": "passed",
-      "blueprint_snapshot_path": "data/objective-snapshots/google-professional-agentic-architect-2026-09-02-official-objectives.txt",
+      "blueprint_snapshot_path": "data/objective-snapshots/google-professional-agentic-architect-2026-09-02-official-objectives-2026-09-29.txt",
       "blueprint_snapshot_sha256": "eac2f3a291d2910ff1c9cd4968e04b84c9d3cf3d98b685e7b14135aca4804347",
       "objective_coverage": [
         {
@@ -963,7 +963,7 @@
       "review_type": "source-validation",
       "reviewed_on": "2026-09-06",
       "outcome": "passed",
-      "blueprint_snapshot_path": "data/objective-snapshots/google-professional-agentic-architect-2026-09-02-official-objectives.txt",
+      "blueprint_snapshot_path": "data/objective-snapshots/google-professional-agentic-architect-2026-09-02-official-objectives-2026-09-29.txt",
       "blueprint_snapshot_sha256": "eac2f3a291d2910ff1c9cd4968e04b84c9d3cf3d98b685e7b14135aca4804347",
       "objective_coverage": [
         {
@@ -8561,8 +8561,8 @@
       "review_type": "source-validation",
       "reviewed_on": "2026-09-29",
       "outcome": "passed",
-      "blueprint_snapshot_path": "data/objective-snapshots/google-professional-agentic-architect-official-objectives.txt",
-      "blueprint_snapshot_sha256": "aa5ecd4d30563ca83afd658687695bce86b296d9d5712a63ae5669eb67a955e0",
+      "blueprint_snapshot_path": "data/objective-snapshots/google-professional-agentic-architect-2026-09-02-official-objectives-2026-09-29.txt",
+      "blueprint_snapshot_sha256": "eac2f3a291d2910ff1c9cd4968e04b84c9d3cf3d98b685e7b14135aca4804347",
       "objective_coverage": [
         {
           "objective_group": "Building agents using low-code tools (~13%)",
@@ -11309,7 +11309,7 @@
       "review_type": "source-validation",
       "reviewed_on": "2026-09-29",
       "outcome": "passed",
-      "blueprint_snapshot_path": "data/objective-snapshots/jsa-41-01-official-objectives.txt",
+      "blueprint_snapshot_path": "data/objective-snapshots/jsa-41-01-official-objectives-2026-09-29.txt",
       "blueprint_snapshot_sha256": "00f65a3f8edeefdc02faacdef875af8d2535c1077cc8e932109c3d2709e75628",
       "objective_coverage": [
         {
@@ -11429,9 +11429,9 @@
       },
       "link_evidence": {
         "unique_external_links": 40,
-        "reachable": 33,
+        "reachable": 34,
         "access_blocked": 2,
-        "missing_or_error": 5
+        "missing_or_error": 4
       },
       "notes": "Mapped all 40 objectives and improved all 40 answers. Seven exact public code blocks verified, including three complete HTML pages: 54 core and 128 Chrome browser checks, two introductory examples and hash-checked extraction of eleven original assets. Three pages passed Nu validation with zero messages. Corrected form, ARIA/landmark, media, storage and policy boundaries; eight broader labs remain proposed. See docs/research/2026-09-29-wde-40-01-deep-review.md"
     },
@@ -35759,6 +35759,685 @@
         "missing_or_error": 0
       },
       "notes": "October 28 issuer objectives, public lifecycle/status and linked-source availability were checked. Four C/C++ monitors now capture fuller official task wording, with no version or block/weight change detected. Snowflake product-release examples are labeled separately from exam scope. Automated link blocks are recorded separately from confirmed failures."
+    },
+    {
+      "id": "google-associate-cloud-engineer-2026-10-28-source-validation",
+      "exam_code": "GOOGLE-ASSOCIATE-CLOUD-ENGINEER",
+      "guide_path": "guides/GOOGLE-ASSOCIATE-CLOUD-ENGINEER-associate-cloud-engineer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/google-associate-cloud-engineer-official-objectives.txt",
+      "blueprint_snapshot_sha256": "1c26e61d687b69b9e2b0b00e59d537b271eae0647d525dd9d40284ea28c11d74",
+      "objective_coverage": [
+        {
+          "objective_group": "Setting up a cloud solution environment (~20%)",
+          "guide_sections": [
+            "Section 1",
+            "Integrated scenario 2",
+            "Labs 1–3 and 8"
+          ]
+        },
+        {
+          "objective_group": "Planning and implementing a cloud solution (~30%)",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios 1–2",
+            "Labs 3–8"
+          ]
+        },
+        {
+          "objective_group": "Ensuring the successful operation of a cloud solution (~30%)",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios 1 and 3",
+            "Labs 4–8"
+          ]
+        },
+        {
+          "objective_group": "Configuring access and security (~20%)",
+          "guide_sections": [
+            "Section 4",
+            "All integrated scenarios",
+            "Labs 1–3 and 6–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 31,
+        "reachable": 30,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "Current issuer scope/lifecycle, objective snapshot, linked learning references, and relevant dated announcements were checked on 2026-10-28; see the group 13 research report and operations record."
+    },
+    {
+      "id": "google-cloud-digital-leader-2026-10-28-source-validation",
+      "exam_code": "GOOGLE-CLOUD-DIGITAL-LEADER",
+      "guide_path": "guides/GOOGLE-CLOUD-DIGITAL-LEADER-cloud-digital-leader.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/google-cloud-digital-leader-official-objectives.txt",
+      "blueprint_snapshot_sha256": "998892823a5a1a3cf2b508e3145f723c4c9e17181d62f59ec78d2e633f4eca8d",
+      "objective_coverage": [
+        {
+          "objective_group": "Digital Transformation with Google Cloud (~18%)",
+          "guide_sections": [
+            "Section 1",
+            "Integrated scenarios 2–3",
+            "Labs 1–2 and 8"
+          ]
+        },
+        {
+          "objective_group": "Exploring Data Transformation with Google Cloud (~18%)",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenario 1",
+            "Labs 3–4 and 8"
+          ]
+        },
+        {
+          "objective_group": "Innovating with Google Cloud Artificial Intelligence (~18%)",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenario 1",
+            "Labs 5 and 7–8"
+          ]
+        },
+        {
+          "objective_group": "Modernize Infrastructure and Applications with Google Cloud (~18%)",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenario 2",
+            "Labs 2 and 6–8"
+          ]
+        },
+        {
+          "objective_group": "Trust and Security with Google Cloud (~18%)",
+          "guide_sections": [
+            "Section 5",
+            "All integrated scenarios",
+            "Labs 7–8"
+          ]
+        },
+        {
+          "objective_group": "Scaling with Google Cloud Operations (~10%)",
+          "guide_sections": [
+            "Section 6",
+            "All integrated scenarios",
+            "Labs 1 and 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 29,
+        "reachable": 27,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Current issuer scope/lifecycle, objective snapshot, linked learning references, and relevant dated announcements were checked on 2026-10-28; see the group 13 research report and operations record."
+    },
+    {
+      "id": "google-generative-ai-leader-2026-10-28-source-validation",
+      "exam_code": "GOOGLE-GENERATIVE-AI-LEADER",
+      "guide_path": "guides/GOOGLE-GENERATIVE-AI-LEADER-generative-ai-leader.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/google-generative-ai-leader-official-objectives.txt",
+      "blueprint_snapshot_sha256": "d5154002a04c5a259a6d825a4ba3b84dcc9ee0e2fb075a012e510f17f641c324",
+      "objective_coverage": [
+        {
+          "objective_group": "Fundamentals of gen AI (~30%)",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–2 and 7–8"
+          ]
+        },
+        {
+          "objective_group": "Google Cloud's gen AI offerings (~35%)",
+          "guide_sections": [
+            "Section 2",
+            "All integrated scenarios",
+            "Labs 2 and 4–6"
+          ]
+        },
+        {
+          "objective_group": "Techniques to improve gen AI model output (~20%)",
+          "guide_sections": [
+            "Section 3",
+            "All integrated scenarios",
+            "Labs 3–5 and 7–8"
+          ]
+        },
+        {
+          "objective_group": "Business strategies for a successful gen AI solution (~15%)",
+          "guide_sections": [
+            "Section 4",
+            "All integrated scenarios",
+            "Labs 1 and 5–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 30,
+        "reachable": 28,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Current issuer scope/lifecycle, objective snapshot, linked learning references, and relevant dated announcements were checked on 2026-10-28; see the group 13 research report and operations record."
+    },
+    {
+      "id": "google-professional-agentic-architect-2026-10-28-source-validation",
+      "exam_code": "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT",
+      "guide_path": "guides/GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT-professional-agentic-architect.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/google-professional-agentic-architect-official-objectives.txt",
+      "blueprint_snapshot_sha256": "116a4f1d0a6ee037866c312dc554b8f132248f1cbaddaf837fdce48c0116d454",
+      "objective_coverage": [
+        {
+          "objective_group": "Building agents using low-code tools (~13%)",
+          "guide_sections": [
+            "Section 1",
+            "Scenario 1",
+            "Labs 1 and 8"
+          ]
+        },
+        {
+          "objective_group": "Using coding agents for application development (~17%)",
+          "guide_sections": [
+            "Section 2",
+            "Scenario 2",
+            "Labs 2 and 8"
+          ]
+        },
+        {
+          "objective_group": "Developing custom agents (~33%)",
+          "guide_sections": [
+            "Section 3 including the blueprint-named data/model service map",
+            "All scenarios",
+            "Labs 3–5 and 8",
+            "Checks 37–39"
+          ]
+        },
+        {
+          "objective_group": "Evaluating and deploying agentic workflows (~22%)",
+          "guide_sections": [
+            "Section 4 and Google Cloud Observability mapping",
+            "All scenarios",
+            "Labs 5–8",
+            "Checks 39–40"
+          ]
+        },
+        {
+          "objective_group": "Securing and governing agentic workflows (~15%)",
+          "guide_sections": [
+            "Section 5",
+            "All scenarios",
+            "Labs 1–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 26,
+        "reachable": 26,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "Current issuer scope/lifecycle, objective snapshot, linked learning references, and relevant dated announcements were checked on 2026-10-28; see the group 13 research report and operations record."
+    },
+    {
+      "id": "google-professional-cloud-architect-2026-10-28-source-validation",
+      "exam_code": "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT",
+      "guide_path": "guides/GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT-professional-cloud-architect.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/google-professional-cloud-architect-official-objectives.txt",
+      "blueprint_snapshot_sha256": "fceaa0587ed0fa26fcf66a037a2abb7e4103231cccb6ad9052153ca3cb328ec2",
+      "objective_coverage": [
+        {
+          "objective_group": "Designing and planning a cloud solution architecture (~25%)",
+          "guide_sections": [
+            "Section 1",
+            "Official case-study method",
+            "All scenarios and labs"
+          ]
+        },
+        {
+          "objective_group": "Managing and provisioning a cloud solution infrastructure (~17.5%)",
+          "guide_sections": [
+            "Section 2",
+            "Scenarios 1–3",
+            "Labs 2–7"
+          ]
+        },
+        {
+          "objective_group": "Designing for security and compliance (~17.5%)",
+          "guide_sections": [
+            "Section 3",
+            "Scenario 2",
+            "Labs 2, 5–8"
+          ]
+        },
+        {
+          "objective_group": "Analyzing and optimizing technical and business processes (~15%)",
+          "guide_sections": [
+            "Section 4",
+            "Scenarios 1 and 3",
+            "Labs 1, 7–8"
+          ]
+        },
+        {
+          "objective_group": "Managing implementation (~12.5%)",
+          "guide_sections": [
+            "Section 5",
+            "All scenarios",
+            "Labs 3–8"
+          ]
+        },
+        {
+          "objective_group": "Ensuring solution and operations excellence (~12.5%)",
+          "guide_sections": [
+            "Section 6",
+            "All scenarios",
+            "Labs 3–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 32,
+        "reachable": 31,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "Current issuer scope/lifecycle, objective snapshot, linked learning references, and relevant dated announcements were checked on 2026-10-28; see the group 13 research report and operations record."
+    },
+    {
+      "id": "google-professional-cloud-security-engineer-2026-10-28-source-validation",
+      "exam_code": "GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER",
+      "guide_path": "guides/GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER-professional-cloud-security-engineer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/google-professional-cloud-security-engineer-official-objectives.txt",
+      "blueprint_snapshot_sha256": "356877767ac663f5102c9f398ba61909d074668c92d54e0e09584341f5a48166",
+      "objective_coverage": [
+        {
+          "objective_group": "Configuring access (~25%)",
+          "guide_sections": [
+            "Section 1",
+            "Scenarios 1–3",
+            "Labs 1–2 and 8"
+          ]
+        },
+        {
+          "objective_group": "Securing communications and establishing boundary protection (~22%)",
+          "guide_sections": [
+            "Section 2",
+            "All scenarios",
+            "Labs 3–4"
+          ]
+        },
+        {
+          "objective_group": "Ensuring data protection (~23%)",
+          "guide_sections": [
+            "Section 3",
+            "Scenarios 2–3",
+            "Labs 5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Managing operations (~19%)",
+          "guide_sections": [
+            "Section 4",
+            "All scenarios",
+            "Labs 6–8"
+          ]
+        },
+        {
+          "objective_group": "Supporting compliance requirements (~11%)",
+          "guide_sections": [
+            "Section 5",
+            "Scenario 2",
+            "Labs 4–5 and 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 36,
+        "reachable": 35,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "Current issuer scope/lifecycle, objective snapshot, linked learning references, and relevant dated announcements were checked on 2026-10-28; see the group 13 research report and operations record."
+    },
+    {
+      "id": "google-professional-data-engineer-2026-10-28-source-validation",
+      "exam_code": "GOOGLE-PROFESSIONAL-DATA-ENGINEER",
+      "guide_path": "guides/GOOGLE-PROFESSIONAL-DATA-ENGINEER-professional-data-engineer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/google-professional-data-engineer-official-objectives.txt",
+      "blueprint_snapshot_sha256": "d9fc9ddb90e3c6f965fb09311b060710a297ba36f18025518dca3d5154d785bc",
+      "objective_coverage": [
+        {
+          "objective_group": "Designing data processing systems (~22%)",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Labs 1 and 8"
+          ]
+        },
+        {
+          "objective_group": "Ingesting and processing the data (~25%)",
+          "guide_sections": [
+            "Section 2",
+            "Scenarios 1 and 3",
+            "Labs 2, 5–6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Storing the data (~20%)",
+          "guide_sections": [
+            "Section 3",
+            "All scenarios",
+            "Labs 3–4"
+          ]
+        },
+        {
+          "objective_group": "Preparing and using data for analysis (~15%)",
+          "guide_sections": [
+            "Section 4",
+            "Scenarios 2–3",
+            "Labs 3, 5 and 7"
+          ]
+        },
+        {
+          "objective_group": "Maintaining and automating data workloads (~18%)",
+          "guide_sections": [
+            "Section 5",
+            "All scenarios",
+            "Labs 2–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 25,
+        "reachable": 24,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "Current issuer scope/lifecycle, objective snapshot, linked learning references, and relevant dated announcements were checked on 2026-10-28; see the group 13 research report and operations record."
+    },
+    {
+      "id": "google-professional-machine-learning-engineer-2026-10-28-source-validation",
+      "exam_code": "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER",
+      "guide_path": "guides/GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER-professional-machine-learning-engineer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/google-professional-machine-learning-engineer-official-objectives.txt",
+      "blueprint_snapshot_sha256": "14f8953554d4c9762d0ac1fc7b0b4449d624895b2e1c3c9d4670009726c5bd5c",
+      "objective_coverage": [
+        {
+          "objective_group": "Architecting low-code AI solutions (~13%)",
+          "guide_sections": [
+            "Section 1",
+            "Scenarios 1–2",
+            "Labs 1 and 8"
+          ]
+        },
+        {
+          "objective_group": "Collaborating within and across teams to manage data and models (~16%)",
+          "guide_sections": [
+            "Section 2",
+            "All scenarios",
+            "Labs 2–3 and 7–8"
+          ]
+        },
+        {
+          "objective_group": "Scaling prototypes into ML models (~21%)",
+          "guide_sections": [
+            "Section 3",
+            "Scenarios 1 and 3",
+            "Labs 3–5 and 7"
+          ]
+        },
+        {
+          "objective_group": "Serving and scaling models (~20%)",
+          "guide_sections": [
+            "Section 4",
+            "All scenarios",
+            "Labs 5–6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Automating and orchestrating ML pipelines (~18%)",
+          "guide_sections": [
+            "Section 5",
+            "Scenarios 1 and 3",
+            "Labs 3–4 and 7–8"
+          ]
+        },
+        {
+          "objective_group": "Monitoring AI solutions (~13%)",
+          "guide_sections": [
+            "Section 6",
+            "All scenarios",
+            "Labs 6–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 24,
+        "reachable": 23,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "Current issuer scope/lifecycle, objective snapshot, linked learning references, and relevant dated announcements were checked on 2026-10-28; see the group 13 research report and operations record."
+    },
+    {
+      "id": "jsa-41-01-2026-10-28-source-validation",
+      "exam_code": "JSA-41-01",
+      "guide_path": "guides/JSA-41-01-certified-associate-javascript-programmer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/jsa-41-01-official-objectives.txt",
+      "blueprint_snapshot_sha256": "1e5c9dc2e1613250bf36e64705be4635f57b864c5acc99d16b88d1b73e975fc3",
+      "objective_coverage": [
+        {
+          "objective_group": "Block 1: Classless Objects — 11 items, 25%",
+          "guide_sections": [
+            "1. Classless objects — 25%",
+            "Executed core workbook",
+            "Integrated scenarios",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 2: Classes and Class-Based Approach — 7 items, 23%",
+          "guide_sections": [
+            "2. Classes and the class-based approach — 23%",
+            "Executed core workbook",
+            "Integrated scenarios",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 3: Built-in Objects — 12 items, 27%",
+          "guide_sections": [
+            "3. Built-in objects — 27%",
+            "Executed core workbook",
+            "Integrated scenarios",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 4: Advanced Functions — 10 items, 25%",
+          "guide_sections": [
+            "4. Advanced functions — 25%",
+            "Executed core workbook",
+            "Integrated scenarios",
+            "Answer key"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 40,
+        "reachable": 38,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Current issuer scope/lifecycle, objective snapshot, linked learning references, and relevant dated announcements were checked on 2026-10-28; see the group 13 research report and operations record."
+    },
+    {
+      "id": "jse-40-01-2026-10-28-source-validation",
+      "exam_code": "JSE-40-01",
+      "guide_path": "guides/JSE-40-01-certified-entry-level-javascript-programmer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/jse-40-01-official-objectives.txt",
+      "blueprint_snapshot_sha256": "8e693613dc23a1fcc95ab41c1675897253aa341764d5d9127ff7fc48aeb29e46",
+      "objective_coverage": [
+        {
+          "objective_group": "Exam block #1: Introduction to JavaScript and Computer Programming",
+          "guide_sections": [
+            "1. Introduction to JavaScript and computer programming",
+            "Hands-on labs",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Exam block #2: Variable, Data Types, and Type Casting",
+          "guide_sections": [
+            "2. Variables, data types, and type casting",
+            "Executed core workbook",
+            "Integrated scenarios",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Exam block #3: Operators and User Interaction",
+          "guide_sections": [
+            "3. Operators and user interaction",
+            "Executed core workbook",
+            "Integrated scenarios",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Exam block #4: Control Flow – Conditional Execution and Loops",
+          "guide_sections": [
+            "4. Control flow — conditional execution and loops",
+            "Executed core workbook",
+            "Integrated scenarios",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Exam block #5: Functions",
+          "guide_sections": [
+            "5. Functions",
+            "Executed core workbook",
+            "Integrated scenarios",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Exam block #6: Errors, exceptions, debugging, and troubleshooting",
+          "guide_sections": [
+            "6. Errors, exceptions, debugging, and troubleshooting",
+            "Executed core workbook",
+            "Integrated scenarios",
+            "Answer key"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 30,
+        "reachable": 28,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Current issuer scope/lifecycle, objective snapshot, linked learning references, and relevant dated announcements were checked on 2026-10-28; see the group 13 research report and operations record."
     }
 ]
 }

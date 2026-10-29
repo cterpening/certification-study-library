@@ -2930,7 +2930,7 @@ For focused technical gaps, use the linked documentation on data handling, acces
 
 Resource details from the [GOOGLE-ASSOCIATE-CLOUD-ENGINEER guide](../guides/GOOGLE-ASSOCIATE-CLOUD-ENGINEER-associate-cloud-engineer.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is intentionally **not a complete list**, and it is not a prescription to consume everything. Pick one coherent teaching route, use first-party documentation to close its version gaps, spend substantial time hands-on, and use assessments only to locate weak objectives. Public metadata was checked September 29, 2026. Distinguish card totals from overall schedule estimates; add lab, note, review and troubleshooting time. Paid course interiors and provider labs were not accessed.
+This is intentionally **not a complete list**, and it is not a prescription to consume everything. Pick one coherent teaching route, use first-party documentation to close its version gaps, spend substantial time hands-on, and use assessments only to locate weak objectives. Public metadata was checked October 28, 2026. Distinguish card totals from overall schedule estimates; add lab, note, review and troubleshooting time. Paid course interiors and provider labs were not accessed.
 
 | Resource | Access | Estimated time | Best use / currency note |
 |---|---|---:|---|
@@ -2961,7 +2961,7 @@ Before relying on any course or book, confirm that you can map older coverage to
 
 Resource details from the [GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT guide](../guides/GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT-professional-cloud-architect.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is **not a complete list**, and it is not meant to be consumed in full. Pick a coherent route, use the blueprint/case studies as the checklist, and select labs/readings for weak decisions. Public metadata was checked September 29, 2026; paid lessons/labs were not accessed. Separate visible content totals from schedule estimates, then add practice, design, troubleshooting and review time.
+This is **not a complete list**, and it is not meant to be consumed in full. Pick a coherent route, use the blueprint/case studies as the checklist, and select labs/readings for weak decisions. Public metadata was checked October 28, 2026; paid lessons/labs were not accessed. Separate visible content totals from schedule estimates, then add practice, design, troubleshooting and review time.
 
 | Resource | Access | Estimated time | Best use / currency note |
 |---|---|---:|---|
@@ -2984,7 +2984,7 @@ When a resource predates the current guide, independently close: Gemini Enterpri
 
 Resource details from the [GOOGLE-PROFESSIONAL-DATA-ENGINEER guide](../guides/GOOGLE-PROFESSIONAL-DATA-ENGINEER-professional-data-engineer.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is **not a complete list**, and it is not meant to be consumed in full. Select one route, map it to the five standard-exam domains, and use first-party docs/labs for gaps. Public metadata was checked September 29, 2026. Suggested reading/practice budgets are planning estimates, not measured completion times.
+This is **not a complete list**, and it is not meant to be consumed in full. Select one route, map it to the five standard-exam domains, and use first-party docs/labs for gaps. Public metadata was checked October 28, 2026. Suggested reading/practice budgets are planning estimates, not measured completion times.
 
 | Resource | Access | Estimated time | Best use / currency note |
 |---|---|---|---|
@@ -3003,7 +3003,7 @@ No PDE-specific MeasureUp listing was verified in this review. Older routes need
 
 Resource details from the [GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER guide](../guides/GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER-professional-cloud-security-engineer.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is **not a complete list**, and it is not meant to be consumed in full. Pick one route, map it to the five current domains, and use primary docs/labs to close gaps. Public metadata was checked September 29, 2026. Suggested budgets include neither a guarantee of mastery nor measured completion time.
+This is **not a complete list**, and it is not meant to be consumed in full. Pick one route, map it to the five current domains, and use primary docs/labs to close gaps. Public metadata was checked October 28, 2026. Suggested budgets include neither a guarantee of mastery nor measured completion time.
 
 | Resource | Access | Estimated time | Best use / currency note |
 |---|---|---|---|
@@ -3021,7 +3021,7 @@ A current Pluralsight path is now verified, correcting the earlier catalog gap. 
 
 Resource details from the [GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER guide](../guides/GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER-professional-machine-learning-engineer.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is **not a complete list**. Catalog observations below are from September 29, 2026. Durations are provider metadata unless explicitly described as a suggested practice budget. A certificate/path title does not prove complete June 2026 blueprint coverage.
+This is **not a complete list**. Catalog observations below are from October 28, 2026. Durations are provider metadata unless explicitly described as a suggested practice budget. A certificate/path title does not prove complete June 2026 blueprint coverage.
 
 | Resource | Access | Estimated time |
 |---|---|---|

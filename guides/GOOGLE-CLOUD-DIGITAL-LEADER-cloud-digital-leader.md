@@ -6,18 +6,22 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-28
 ---
 
 # Google Cloud Digital Leader Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 29, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#google-cloud-digital-leader-coverage-record). The [official exam guide](https://services.google.com/fh/files/misc/cloud_digital_leader_exam_guide_english.pdf) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on October 28, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#google-cloud-digital-leader-coverage-record). The [official exam guide](https://services.google.com/fh/files/misc/cloud_digital_leader_exam_guide_english.pdf) is authoritative.
 
 **CURRENT BLUEPRINT — current baseline:** Exam guide launched August 12, 2026; six domains weighted 18%, 18%, 18%, 18%, 18%, and 10%<br>
-**Upcoming blueprint change:** None announced after the August 12 version launch as of September 29, 2026.<br>
+**Upcoming blueprint change:** None announced after the August 12 version launch as of October 28, 2026.<br>
 **Official source:** [Cloud Digital Leader certification and delivery page](https://cloud.google.com/learn/certification/cloud-digital-leader) · [August 12, 2026 exam guide](https://services.google.com/fh/files/misc/cloud_digital_leader_exam_guide_english.pdf)
+
+## Refresh check — October 28, 2026
+
+The current page retains six knowledge areas. Its standard exam guide was refreshed August 12, 2026, already reflected in this guide. Google’s certification hub now says exams are being updated to reflect Next ’26 product changes; it does not provide one shared cutover date or imply that every exam received the same scope change. Use the linked CDL guide and page for its actual topics. Eligible holders also have separate renewal-exam and Google Skills course/badge options. [CDL certification page](https://cloud.google.com/learn/certification/cloud-digital-leader) · [certification hub](https://cloud.google.com/learn/certification).
 
 ## How to use this guide
 
