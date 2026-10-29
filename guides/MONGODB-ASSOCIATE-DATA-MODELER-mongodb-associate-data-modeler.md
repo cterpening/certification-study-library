@@ -6,9 +6,9 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-29
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-29
 ---
 
 # MongoDB Associate Data Modeler Study Guide
@@ -555,6 +555,10 @@ These original prompts are learning checks, not recalled exam items. Answer befo
 - Stop using any source that promises recalled live questions, guaranteed passes, or “actual” items.
 - Treat passing as one checkpoint; production modeling still requires peer review, representative tests, security/governance review, and measured operations.
 
+
+## Refresh check — October 29, 2026
+
+The issuer’s Associate Data Modeler learning route remains the outline authority; no new objective set was exposed by the current public course shell. MongoDB’s [August 18 certification-path update](https://www.mongodb.com/company/blog/news/introducing-a-more-connected-flexible-path-to-certifications) aligns the Data Modeler certification route with Skill Badges in data modeling, schema patterns, and schema optimization; completion of the full learning path unlocks a stated 50% exam discount, subject to current issuer terms. Current Atlas and Compass context includes a Shell Syntax Mode for document editing, with MongoDB shell syntax and constructors such as `ObjectId()` and `ISODate()`, and per-user Data Explorer controls for date display time zone, read-only mode, default `maxTimeMS`, and legacy UUID formatting. These interface options change how examples are entered or displayed, not the persisted data model. When modeling dates, validate BSON type, UTC/time-zone assumptions, serialization, and application presentation separately. [MongoDB Atlas changelog](https://www.mongodb.com/docs/atlas/release-notes/changelog/).
 
 ## Places to learn
 

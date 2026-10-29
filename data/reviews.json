@@ -9583,7 +9583,7 @@
       "review_type": "source-validation",
       "reviewed_on": "2026-09-29",
       "outcome": "passed",
-      "blueprint_snapshot_path": "data/objective-snapshots/nca-aiio-official-objectives.txt",
+      "blueprint_snapshot_path": "data/objective-snapshots/nca-aiio-official-objectives-2026-09-29.txt",
       "blueprint_snapshot_sha256": "11cca6a173f82698164dde31c281949bfe89a574be3b6979f77b9968f1746824",
       "objective_coverage": [
         {
@@ -9633,7 +9633,7 @@
       "review_type": "source-validation",
       "reviewed_on": "2026-09-29",
       "outcome": "passed",
-      "blueprint_snapshot_path": "data/objective-snapshots/ncp-aio-official-objectives.txt",
+      "blueprint_snapshot_path": "data/objective-snapshots/ncp-aio-official-objectives-2026-09-29.txt",
       "blueprint_snapshot_sha256": "5ae751ccfd49da6291f68a72d54a31199afb39b9374a3c081d4118be4bb28f9e",
       "objective_coverage": [
         {
@@ -10455,7 +10455,7 @@
       "review_type": "source-validation",
       "reviewed_on": "2026-09-29",
       "outcome": "passed",
-      "blueprint_snapshot_path": "data/objective-snapshots/nse-4-fortios-official-objectives.txt",
+      "blueprint_snapshot_path": "data/objective-snapshots/nse-4-fortios-official-objectives-2026-09-29.txt",
       "blueprint_snapshot_sha256": "ee1dd533cdd57817a80a76efc3ac2e9719aa3e28b9b6603c32d1e7f14f20b29b",
       "objective_coverage": [
         {
@@ -36438,6 +36438,704 @@
         "missing_or_error": 0
       },
       "notes": "Current issuer scope/lifecycle, objective snapshot, linked learning references, and relevant dated announcements were checked on 2026-10-28; see the group 13 research report and operations record."
+    },
+    {
+      "id": "lfca-2026-10-29-source-validation",
+      "exam_code": "LFCA",
+      "guide_path": "guides/LFCA-linux-foundation-certified-it-associate.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-29",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/lfca-official-objectives.txt",
+      "blueprint_snapshot_sha256": "fd4278c4b59fa86cc2c014f67f60263670b72193b2f83354fa3712b0f97a77cf",
+      "objective_coverage": [
+        {
+          "objective_group": "Linux Fundamentals (16%)",
+          "guide_sections": [
+            "Section 1",
+            "Integrated scenarios 1 and 3",
+            "Labs 1–3 and 7"
+          ]
+        },
+        {
+          "objective_group": "System Administration Fundamentals (30%)",
+          "guide_sections": [
+            "Section 2",
+            "All integrated scenarios",
+            "Labs 1–5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Cloud Computing Fundamentals (18%)",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenario 2",
+            "Labs 4, 6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Security Fundamentals (14%)",
+          "guide_sections": [
+            "Section 4",
+            "All integrated scenarios",
+            "Labs 3–8"
+          ]
+        },
+        {
+          "objective_group": "DevOps Fundamentals (12%)",
+          "guide_sections": [
+            "Section 5",
+            "Integrated scenarios 1 and 3",
+            "Labs 3, 7–8"
+          ]
+        },
+        {
+          "objective_group": "IT Project Management Fundamentals (10%)",
+          "guide_sections": [
+            "Section 6",
+            "Integrated scenario 2",
+            "Labs 6–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 24,
+        "reachable": 24,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "Issuer scope/lifecycle, current public learning and product updates, objective snapshot, cited-source health, and refresh changes checked on October 29, 2026. MongoDB course-shell limits and NVIDIA/ Fortinet version distinctions are documented in the Group 14 report."
+    },
+    {
+      "id": "lfcs-2026-10-29-source-validation",
+      "exam_code": "LFCS",
+      "guide_path": "guides/LFCS-linux-foundation-certified-system-administrator.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-29",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/lfcs-official-objectives.txt",
+      "blueprint_snapshot_sha256": "7e81f913990e564ad0238c7842735843375ec30d94f036f88e194dcbfe77cb63",
+      "objective_coverage": [
+        {
+          "objective_group": "Operations Deployment (25%)",
+          "guide_sections": [
+            "Section 1",
+            "Integrated scenarios 2–3",
+            "Labs 1–3 and 8"
+          ]
+        },
+        {
+          "objective_group": "Networking (25%)",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios 1 and 3",
+            "Labs 4–5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Storage (20%)",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenario 2",
+            "Labs 2, 6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Essential Commands (20%)",
+          "guide_sections": [
+            "Section 4",
+            "All integrated scenarios",
+            "Labs 1–2, 5–6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Users and Groups (10%)",
+          "guide_sections": [
+            "Section 5",
+            "Integrated scenario 3",
+            "Labs 3, 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 26,
+        "reachable": 25,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "Issuer scope/lifecycle, current public learning and product updates, objective snapshot, cited-source health, and refresh changes checked on October 29, 2026. MongoDB course-shell limits and NVIDIA/ Fortinet version distinctions are documented in the Group 14 report."
+    },
+    {
+      "id": "mongodb-associate-atlas-administrator-2026-10-29-source-validation",
+      "exam_code": "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR",
+      "guide_path": "guides/MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR-mongodb-associate-atlas-administrator.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-29",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/mongodb-associate-atlas-administrator-official-objectives.txt",
+      "blueprint_snapshot_sha256": "7aa8a437967e8cbf16e95913b1aeb5854e8acff22fd223793292aa2774d6a273",
+      "objective_coverage": [
+        {
+          "objective_group": "MongoDB Overview, CRUD, Data Transformation and Indexing",
+          "guide_sections": [
+            "Section 1",
+            "Scenarios 1–2",
+            "Labs 1 and 6"
+          ]
+        },
+        {
+          "objective_group": "Sharding Strategies and Atlas deployment/scale",
+          "guide_sections": [
+            "Section 2",
+            "Scenarios 1–2",
+            "Lab 2"
+          ]
+        },
+        {
+          "objective_group": "Authentication and Authorization",
+          "guide_sections": [
+            "Section 3",
+            "Scenarios 1 and 3",
+            "Lab 3"
+          ]
+        },
+        {
+          "objective_group": "Networking Security and Encryption at Rest",
+          "guide_sections": [
+            "Section 4",
+            "Scenarios 1 and 3",
+            "Lab 4"
+          ]
+        },
+        {
+          "objective_group": "Monitoring Tooling, Performance Tools and Techniques",
+          "guide_sections": [
+            "Section 5",
+            "Scenarios 1–2",
+            "Labs 5–6"
+          ]
+        },
+        {
+          "objective_group": "Data Resilience and Cluster Reliability",
+          "guide_sections": [
+            "Section 6",
+            "All scenarios",
+            "Lab 7"
+          ]
+        },
+        {
+          "objective_group": "Atlas administration through UI, CLI, API and managed configuration",
+          "guide_sections": [
+            "Section 7",
+            "Scenarios 1 and 3",
+            "Lab 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 32,
+        "reachable": 29,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "Issuer scope/lifecycle, current public learning and product updates, objective snapshot, cited-source health, and refresh changes checked on October 29, 2026. MongoDB course-shell limits and NVIDIA/ Fortinet version distinctions are documented in the Group 14 report."
+    },
+    {
+      "id": "mongodb-associate-data-modeler-2026-10-29-source-validation",
+      "exam_code": "MONGODB-ASSOCIATE-DATA-MODELER",
+      "guide_path": "guides/MONGODB-ASSOCIATE-DATA-MODELER-mongodb-associate-data-modeler.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-29",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/mongodb-associate-data-modeler-official-objectives.txt",
+      "blueprint_snapshot_sha256": "e3b9632a8ab5b80cdb74a5ccd557cdc482917c1aca71f116b804b9fd6f92fd10",
+      "objective_coverage": [
+        {
+          "objective_group": "Requirements Gathering (10%)",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Lab 1"
+          ]
+        },
+        {
+          "objective_group": "Entities (13%)",
+          "guide_sections": [
+            "Section 2",
+            "All scenarios",
+            "Lab 2"
+          ]
+        },
+        {
+          "objective_group": "Relationships (8.5%)",
+          "guide_sections": [
+            "Section 3",
+            "All scenarios",
+            "Lab 2"
+          ]
+        },
+        {
+          "objective_group": "Workload/Usage (10%)",
+          "guide_sections": [
+            "Section 4",
+            "All scenarios",
+            "Labs 1 and 6"
+          ]
+        },
+        {
+          "objective_group": "Data Model Design (28%)",
+          "guide_sections": [
+            "Section 5",
+            "All scenarios",
+            "Labs 3–4"
+          ]
+        },
+        {
+          "objective_group": "Modeling for Technical Requirements (10%)",
+          "guide_sections": [
+            "Section 6",
+            "All scenarios",
+            "Lab 5"
+          ]
+        },
+        {
+          "objective_group": "Indexing (13%)",
+          "guide_sections": [
+            "Section 7",
+            "All scenarios",
+            "Lab 6"
+          ]
+        },
+        {
+          "objective_group": "Monitoring and Evolving Data Models (7.5%)",
+          "guide_sections": [
+            "Section 8",
+            "All scenarios",
+            "Labs 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 32,
+        "reachable": 29,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "Issuer scope/lifecycle, current public learning and product updates, objective snapshot, cited-source health, and refresh changes checked on October 29, 2026. MongoDB course-shell limits and NVIDIA/ Fortinet version distinctions are documented in the Group 14 report."
+    },
+    {
+      "id": "mongodb-associate-developer-2026-10-29-source-validation",
+      "exam_code": "MONGODB-ASSOCIATE-DEVELOPER",
+      "guide_path": "guides/MONGODB-ASSOCIATE-DEVELOPER-mongodb-associate-developer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-29",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/mongodb-associate-developer-official-objectives.txt",
+      "blueprint_snapshot_sha256": "7b8ee2749e9fe5f87fefc15268c82cd74a50ee45e682d1c6c83a552568fc25d6",
+      "objective_coverage": [
+        {
+          "objective_group": "MongoDB Overview and the Document Model (8%)",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Lab 1"
+          ]
+        },
+        {
+          "objective_group": "CRUD (51%)",
+          "guide_sections": [
+            "Section 2",
+            "All scenarios",
+            "Labs 2–4 and 8"
+          ]
+        },
+        {
+          "objective_group": "Indexes (17%)",
+          "guide_sections": [
+            "Section 3",
+            "Scenarios 1 and 3",
+            "Lab 5"
+          ]
+        },
+        {
+          "objective_group": "Data Modeling (4%)",
+          "guide_sections": [
+            "Section 4",
+            "Scenarios 1 and 3",
+            "Lab 6"
+          ]
+        },
+        {
+          "objective_group": "Tools and Tooling (2%)",
+          "guide_sections": [
+            "Section 5",
+            "Scenario 3",
+            "Lab 7"
+          ]
+        },
+        {
+          "objective_group": "Drivers (18%)",
+          "guide_sections": [
+            "Section 6",
+            "Scenarios 1–2",
+            "Labs 1 and 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 31,
+        "reachable": 29,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Issuer scope/lifecycle, current public learning and product updates, objective snapshot, cited-source health, and refresh changes checked on October 29, 2026. MongoDB course-shell limits and NVIDIA/ Fortinet version distinctions are documented in the Group 14 report."
+    },
+    {
+      "id": "n10-009-2026-10-29-source-validation",
+      "exam_code": "N10-009",
+      "guide_path": "guides/N10-009-comptia-network-plus.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-29",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/n10-009-official-objectives.txt",
+      "blueprint_snapshot_sha256": "4adac368c0ccb2f7118d1b3118032de4825bb122f3b678fba28615aa28a72820",
+      "objective_coverage": [
+        {
+          "objective_group": "Networking concepts (23%)",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–2, 4–5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Network implementation (20%)",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios 1 and 3",
+            "Labs 3–5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Network operations (19%)",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios 1–2",
+            "Labs 4, 6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Network security (14%)",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenario 3",
+            "Labs 6–8"
+          ]
+        },
+        {
+          "objective_group": "Network troubleshooting (24%)",
+          "guide_sections": [
+            "Section 5",
+            "All integrated scenarios",
+            "All labs"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 34,
+        "reachable": 31,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "Issuer scope/lifecycle, current public learning and product updates, objective snapshot, cited-source health, and refresh changes checked on October 29, 2026. MongoDB course-shell limits and NVIDIA/ Fortinet version distinctions are documented in the Group 14 report."
+    },
+    {
+      "id": "nca-aiio-2026-10-29-source-validation",
+      "exam_code": "NCA-AIIO",
+      "guide_path": "guides/NCA-AIIO-nvidia-ai-infrastructure-operations-associate.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-29",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/nca-aiio-official-objectives.txt",
+      "blueprint_snapshot_sha256": "99feae0bb9bd6c7ade80eddfb848aaddde0582ee7a739302e65411babb367ed7",
+      "objective_coverage": [
+        {
+          "objective_group": "Essential AI Knowledge (38%)",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Labs 1–2 and 8"
+          ]
+        },
+        {
+          "objective_group": "AI Infrastructure (40%)",
+          "guide_sections": [
+            "Section 2",
+            "All scenarios",
+            "Labs 1–4 and 7–8"
+          ]
+        },
+        {
+          "objective_group": "AI Operations (22%)",
+          "guide_sections": [
+            "Section 3",
+            "All scenarios",
+            "Labs 5–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 19,
+        "reachable": 18,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "Issuer scope/lifecycle, current public learning and product updates, objective snapshot, cited-source health, and refresh changes checked on October 29, 2026. MongoDB course-shell limits and NVIDIA/ Fortinet version distinctions are documented in the Group 14 report."
+    },
+    {
+      "id": "nca-genl-2026-10-29-source-validation",
+      "exam_code": "NCA-GENL",
+      "guide_path": "guides/NCA-GENL-nvidia-generative-ai-llms-associate.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-29",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/nca-genl-official-objectives.txt",
+      "blueprint_snapshot_sha256": "58fd36ca6afda349885c81062a5a802dc3c11fd8b09c1eeb21dc98b5bc4f2b9d",
+      "objective_coverage": [
+        {
+          "objective_group": "Core Machine Learning and AI Knowledge (30%)",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Labs 1–2 and 8"
+          ]
+        },
+        {
+          "objective_group": "Software Development (24%)",
+          "guide_sections": [
+            "Section 2",
+            "Scenarios 1–2",
+            "Labs 3–4 and 7–8"
+          ]
+        },
+        {
+          "objective_group": "Experimentation (22%)",
+          "guide_sections": [
+            "Section 3",
+            "All scenarios",
+            "Labs 4–5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Data Analysis and Visualization (14%)",
+          "guide_sections": [
+            "Section 4",
+            "Scenarios 2–3",
+            "Labs 5–6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Trustworthy AI (10%)",
+          "guide_sections": [
+            "Section 5",
+            "All scenarios",
+            "Labs 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 24,
+        "reachable": 23,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "Issuer scope/lifecycle, current public learning and product updates, objective snapshot, cited-source health, and refresh changes checked on October 29, 2026. MongoDB course-shell limits and NVIDIA/ Fortinet version distinctions are documented in the Group 14 report."
+    },
+    {
+      "id": "ncp-aio-2026-10-29-source-validation",
+      "exam_code": "NCP-AIO",
+      "guide_path": "guides/NCP-AIO-nvidia-ai-operations-professional.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-29",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/ncp-aio-official-objectives.txt",
+      "blueprint_snapshot_sha256": "3d4312635eed1b9a05823d40d95a8a8e75dd8852e7b971bee7a799b301c86abf",
+      "objective_coverage": [
+        {
+          "objective_group": "Install and Deploy (31%)",
+          "guide_sections": [
+            "Section 1 — Installation and Deployment",
+            "BCM, Kubernetes, NGC, storage and DOCA scenarios"
+          ]
+        },
+        {
+          "objective_group": "Administration (23%)",
+          "guide_sections": [
+            "Section 2 — Administration",
+            "Cluster lifecycle and access-control scenarios"
+          ]
+        },
+        {
+          "objective_group": "Workload Management (23%)",
+          "guide_sections": [
+            "Section 3 — Workload Management",
+            "Slurm, Kubernetes, Run:ai and resource-allocation labs"
+          ]
+        },
+        {
+          "objective_group": "Troubleshooting and Optimization (23%)",
+          "guide_sections": [
+            "Section 4 — Troubleshooting and Optimization",
+            "Fault-isolation scenarios and labs"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 25,
+        "reachable": 25,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "Issuer scope/lifecycle, current public learning and product updates, objective snapshot, cited-source health, and refresh changes checked on October 29, 2026. MongoDB course-shell limits and NVIDIA/ Fortinet version distinctions are documented in the Group 14 report."
+    },
+    {
+      "id": "nse-4-fortios-2026-10-29-source-validation",
+      "exam_code": "NSE-4-FORTIOS",
+      "guide_path": "guides/NSE-4-FORTIOS-fortinet-nse-4-fortios.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-29",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/nse-4-fortios-official-objectives.txt",
+      "blueprint_snapshot_sha256": "a1bc779b760e1373ce480549181be9cfcace6b1ab081a3eb5c6832d98160ea5b",
+      "objective_coverage": [
+        {
+          "objective_group": "Deployment and system configuration (20–25%)",
+          "guide_sections": [
+            "1. Deployment and system configuration (20–25%)",
+            "Worked results for the three scenarios",
+            "Hands-on labs",
+            "Executed offline workbook",
+            "Answer notes"
+          ]
+        },
+        {
+          "objective_group": "Firewall policies and authentication (20–25%)",
+          "guide_sections": [
+            "2. Firewall policies and authentication (20–25%)",
+            "Worked results for the three scenarios",
+            "Hands-on labs",
+            "Executed offline workbook",
+            "Answer notes"
+          ]
+        },
+        {
+          "objective_group": "Content inspection (25–30%)",
+          "guide_sections": [
+            "3. Content inspection (25–30%)",
+            "Worked results for the three scenarios",
+            "Hands-on labs",
+            "Executed offline workbook",
+            "Answer notes"
+          ]
+        },
+        {
+          "objective_group": "Routing (10–15%)",
+          "guide_sections": [
+            "4. Routing (10–15%)",
+            "Worked results for the three scenarios",
+            "Hands-on labs",
+            "Executed offline workbook",
+            "Answer notes"
+          ]
+        },
+        {
+          "objective_group": "VPNs (10–15%)",
+          "guide_sections": [
+            "5. VPNs (10–15%)",
+            "Worked results for the three scenarios",
+            "Hands-on labs",
+            "Executed offline workbook",
+            "Answer notes"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 38,
+        "reachable": 35,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "Issuer scope/lifecycle, current public learning and product updates, objective snapshot, cited-source health, and refresh changes checked on October 29, 2026. MongoDB course-shell limits and NVIDIA/ Fortinet version distinctions are documented in the Group 14 report."
     }
 ]
 }

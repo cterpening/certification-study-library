@@ -6,9 +6,9 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-29
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-29
 ---
 
 # MongoDB Associate Developer Study Guide
@@ -542,6 +542,10 @@ These are original explanation prompts, not recalled certification items.
 39. **How do typed allowlists reduce query/operator injection risk?** A scalar field must remain a permitted scalar, not a nested operator object. Constrain keys/types/ranges, construct fixed query operators and add trusted tenant scope separately. Validation and authentication remain different requirements.
 
 40. **Which official pages and selected-language path will you recheck before scheduling?** Recheck the canonical study guide, public exam/program pages, registered-language learning path, relevant server manual and driver release/API documentation. The enrolled objective body, policy interior, live labs and independent human review remain outstanding here.
+
+## Refresh check — October 29, 2026
+
+The current Associate Developer public exam route remains the scope authority. Recent developer-facing Atlas updates include Shell Syntax Mode in Atlas Data Explorer and Compass, which accepts familiar shell literals such as `ObjectId()` and `ISODate()` while the application still works with BSON/EJSON contracts. Atlas Vector Search now stores source fields in its index to avoid unnecessary document fetches (GA); advanced HNSW configuration exposes `maxEdges` and `numEdgeCandidates`, while exact vector-similarity aggregation expressions remain marked public preview in the changelog. Test previews separately from production behavior and measure recall, latency, index cost, and consistency on representative data. Product updates do not expand the certification outline. [MongoDB Atlas changelog](https://www.mongodb.com/docs/atlas/release-notes/changelog/).
 
 ## Places to learn
 

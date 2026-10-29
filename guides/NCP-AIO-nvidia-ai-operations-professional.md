@@ -6,9 +6,9 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-29
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-29
 ---
 
 # NVIDIA-Certified Professional: AI Operations (NCP-AIO) Study Guide
@@ -20,7 +20,7 @@ upcoming_change_checked: 2026-09-29
 **Prerequisite:** NVIDIA recommends two to three years operating data-center infrastructure with NVIDIA hardware and says candidates should be comfortable on live-cluster Linux CLI using Slurm, Kubernetes and Base Command Manager (BCM). This is experience guidance, not a prerequisite credential.<br>
 **Validity:** NVIDIA says the credential is valid for two years and can be renewed by retaking the exam. Verify registration, lab environment and policy before purchase.
 
-**VERIFY CURRENT — conflicting official preparation material:** The [linked seven-page study guide](https://dam-cdn.nvd.orangelogic.com/AssetLink/ub08c12vdc5l53ksln5d4dlpt3346464.pdf) differs from the canonical webpage: its four main sections use 28/20/32/20 weights and 19 numbered topics, including Fleet Command. Its contents also shows a fifth 10% entry without a corresponding body section, producing a 110% contents total. Use the webpage's **31/23/23/23** blueprint below; do not merge the lists or infer a transition date from the PDF's FEB26 mark. The PDF describes section scoring and a performance report that the canonical page does not confirm; the [program FAQ](https://www.nvidia.com/en-us/learn/certification/) says pass/fail without a score. Those details need vendor clarification before relying on them for exam planning.
+**VERIFY CURRENT — conflicting official preparation material:** The [linked seven-page study guide](https://dam-cdn.nvd.orangelogic.com/AssetLink/ub08c12vdc5l53ksln5d4dlpt3346464.pdf) differs from the canonical webpage: its four main sections use 28/20/32/20 weights and 19 numbered topics, including Fleet Command. Its contents also shows a fifth 10% entry without a corresponding body section, producing a 110% contents total. Use the webpage's **31/23/23/23** blueprint below; do not merge the lists or infer a transition date from the PDF's FEB26 mark. The current canonical webpage confirms a 50/50 multiple-choice and performance-based split, three lab challenges, and an overall pass/fail result with a per-section report. The older PDF conflicts on weighting/topic structure and remains separate evidence; follow the current page until NVIDIA resolves the PDF mismatch.
 
 ## How to use this guide
 
@@ -536,6 +536,10 @@ These eight activities are **proposed**, with author-estimated study time. Only 
 - **Ready:** You can administer and diagnose BCM, Slurm, Kubernetes, Run:ai, containers, GPU/fabric and storage in a resettable lab, with verification and rollback.
 - **Review:** You know commands and product names but cannot choose the safest evidence path or complete tasks inside the time budget.
 - **Gap:** You would experiment on production, force state without root cause, or treat a green dashboard/high utilization as proof. Return to the labs and operator loop.
+
+## Refresh check — October 29, 2026
+
+The current NVIDIA exam page describes 30 multiple-choice questions plus three hands-on lab exercises in a single 120-minute session; the multiple-choice and lab sections each contribute 50% to the pass/fail result. It calls for Linux CLI familiarity with Slurm, Kubernetes, and Base Command Manager. The October DGX Spark release adds cloud-init provisioning, Linux 7.0 support, and appliance-oriented support skills; use it as a small-system lifecycle and provisioning case, not as a substitute for the separate cluster operations assessed by this credential. Confirm the cluster release, scheduler, GPU, networking, and storage combination before any live change. [DGX Spark release notes](https://docs.nvidia.com/dgx/dgx-spark/release-notes.html).
 
 ## Places to learn
 

@@ -11401,7 +11401,7 @@
           "vendor_id": "nvidia",
           "guide_path": "guides/NCA-AIIO-nvidia-ai-infrastructure-operations-associate.md",
           "guide_content_sha256": "aeffdd56837b7f26d0f882ab16c659d4d6b00371962fb8467fab9979bc33c923",
-          "blueprint_snapshot_path": "data/objective-snapshots/nca-aiio-official-objectives.txt",
+          "blueprint_snapshot_path": "data/objective-snapshots/nca-aiio-official-objectives-2026-09-29.txt",
           "blueprint_snapshot_sha256": "11cca6a173f82698164dde31c281949bfe89a574be3b6979f77b9968f1746824",
           "audited_on": "2026-09-06",
           "verdict": "pass",
@@ -14745,7 +14745,7 @@
           "vendor_id": "nvidia",
           "guide_path": "guides/NCP-AIO-nvidia-ai-operations-professional.md",
           "guide_content_sha256": "0125818a0d4c848dbe80d0e84406076202aa15df8a66803e4225eb3137d8c3ef",
-          "blueprint_snapshot_path": "data/objective-snapshots/ncp-aio-official-objectives.txt",
+          "blueprint_snapshot_path": "data/objective-snapshots/ncp-aio-official-objectives-2026-09-29.txt",
           "blueprint_snapshot_sha256": "5ae751ccfd49da6291f68a72d54a31199afb39b9374a3c081d4118be4bb28f9e",
           "audited_on": "2026-09-07",
           "verdict": "pass",
@@ -26203,6 +26203,597 @@
         "fix_required": 1,
         "blocked": 0,
         "open_findings": 2,
+        "closed_findings": 0
+      }
+    },
+    {
+      "id": "nonms-refresh-2026-10-29-group-14",
+      "title": "Non-Microsoft certification refresh group 14 guide audit",
+      "rubric_version": 2,
+      "created_on": "2026-10-29",
+      "completed_on": "2026-10-29",
+      "status": "completed",
+      "audit_mode": "read-only",
+      "selection_method": "Same-context audit of the fourteenth non-Microsoft refresh batch after current issuer and product-source review.",
+      "rubric_path": "docs/AI-AUDIT.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "label": "refresh-coordinator",
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "LFCA",
+        "LFCS",
+        "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR",
+        "MONGODB-ASSOCIATE-DATA-MODELER",
+        "MONGODB-ASSOCIATE-DEVELOPER",
+        "N10-009",
+        "NCA-AIIO",
+        "NCA-GENL",
+        "NCP-AIO",
+        "NSE-4-FORTIOS"
+      ],
+      "results": [
+        {
+          "exam_code": "LFCA",
+          "vendor_id": "linux-foundation",
+          "guide_path": "guides/LFCA-linux-foundation-certified-it-associate.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/lfca-official-objectives.txt",
+          "blueprint_snapshot_sha256": "fd4278c4b59fa86cc2c014f67f60263670b72193b2f83354fa3712b0f97a77cf",
+          "audited_on": "2026-10-29",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            }
+          },
+          "findings": [],
+          "notes": "Same-context read-only review of the current refresh and accepted objective evidence. Product changes are dated and separated from scored objectives; no human or independent audit is claimed.",
+          "guide_content_sha256": "cf831cafaac6e0dfb5305c6f1251649ca69eee0e16c0a0c9cecab5296e2693c1"
+        },
+        {
+          "exam_code": "LFCS",
+          "vendor_id": "linux-foundation",
+          "guide_path": "guides/LFCS-linux-foundation-certified-system-administrator.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/lfcs-official-objectives.txt",
+          "blueprint_snapshot_sha256": "7e81f913990e564ad0238c7842735843375ec30d94f036f88e194dcbfe77cb63",
+          "audited_on": "2026-10-29",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            }
+          },
+          "findings": [],
+          "notes": "Same-context read-only review of the current refresh and accepted objective evidence. Product changes are dated and separated from scored objectives; no human or independent audit is claimed.",
+          "guide_content_sha256": "81d423b84805b8bd38ff8c5dbea21adef514f9dd2ddd686fa1029e2ada5f6c02"
+        },
+        {
+          "exam_code": "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR",
+          "vendor_id": "mongodb",
+          "guide_path": "guides/MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR-mongodb-associate-atlas-administrator.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/mongodb-associate-atlas-administrator-official-objectives.txt",
+          "blueprint_snapshot_sha256": "7aa8a437967e8cbf16e95913b1aeb5854e8acff22fd223793292aa2774d6a273",
+          "audited_on": "2026-10-29",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            }
+          },
+          "findings": [],
+          "notes": "Same-context read-only review of the current refresh and accepted objective evidence. Product changes are dated and separated from scored objectives; no human or independent audit is claimed.",
+          "guide_content_sha256": "b16c7e1b671baab48798da1cad8cf246b0cd24d01dcff90336b83de4e78a8be2"
+        },
+        {
+          "exam_code": "MONGODB-ASSOCIATE-DATA-MODELER",
+          "vendor_id": "mongodb",
+          "guide_path": "guides/MONGODB-ASSOCIATE-DATA-MODELER-mongodb-associate-data-modeler.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/mongodb-associate-data-modeler-official-objectives.txt",
+          "blueprint_snapshot_sha256": "e3b9632a8ab5b80cdb74a5ccd557cdc482917c1aca71f116b804b9fd6f92fd10",
+          "audited_on": "2026-10-29",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            }
+          },
+          "findings": [],
+          "notes": "Same-context read-only review of the current refresh and accepted objective evidence. Product changes are dated and separated from scored objectives; no human or independent audit is claimed.",
+          "guide_content_sha256": "006e7508d10ca2306618717b776a440d1f7f41f1e7d6b08c402e210918d3b412"
+        },
+        {
+          "exam_code": "MONGODB-ASSOCIATE-DEVELOPER",
+          "vendor_id": "mongodb",
+          "guide_path": "guides/MONGODB-ASSOCIATE-DEVELOPER-mongodb-associate-developer.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/mongodb-associate-developer-official-objectives.txt",
+          "blueprint_snapshot_sha256": "7b8ee2749e9fe5f87fefc15268c82cd74a50ee45e682d1c6c83a552568fc25d6",
+          "audited_on": "2026-10-29",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            }
+          },
+          "findings": [],
+          "notes": "Same-context read-only review of the current refresh and accepted objective evidence. Product changes are dated and separated from scored objectives; no human or independent audit is claimed.",
+          "guide_content_sha256": "225da0b932e278bffbd1a091d0fb5ed0bca345da9999e828c7cee6055ff4e95c"
+        },
+        {
+          "exam_code": "N10-009",
+          "vendor_id": "comptia",
+          "guide_path": "guides/N10-009-comptia-network-plus.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/n10-009-official-objectives.txt",
+          "blueprint_snapshot_sha256": "4adac368c0ccb2f7118d1b3118032de4825bb122f3b678fba28615aa28a72820",
+          "audited_on": "2026-10-29",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            }
+          },
+          "findings": [],
+          "notes": "Same-context read-only review of the current refresh and accepted objective evidence. Product changes are dated and separated from scored objectives; no human or independent audit is claimed.",
+          "guide_content_sha256": "eac7358067ea8ecd27217fb8b7f79d3d1d25effd88271e010d56d52b8029220c"
+        },
+        {
+          "exam_code": "NCA-AIIO",
+          "vendor_id": "nvidia",
+          "guide_path": "guides/NCA-AIIO-nvidia-ai-infrastructure-operations-associate.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/nca-aiio-official-objectives.txt",
+          "blueprint_snapshot_sha256": "99feae0bb9bd6c7ade80eddfb848aaddde0582ee7a739302e65411babb367ed7",
+          "audited_on": "2026-10-29",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            }
+          },
+          "findings": [],
+          "notes": "Same-context read-only review of the current refresh and accepted objective evidence. Product changes are dated and separated from scored objectives; no human or independent audit is claimed.",
+          "guide_content_sha256": "498e9ea1aa791c4e50fb5ca90a4ace2e568d0137bfde30802ee1e84dd842bf53"
+        },
+        {
+          "exam_code": "NCA-GENL",
+          "vendor_id": "nvidia",
+          "guide_path": "guides/NCA-GENL-nvidia-generative-ai-llms-associate.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/nca-genl-official-objectives.txt",
+          "blueprint_snapshot_sha256": "58fd36ca6afda349885c81062a5a802dc3c11fd8b09c1eeb21dc98b5bc4f2b9d",
+          "audited_on": "2026-10-29",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            }
+          },
+          "findings": [],
+          "notes": "Same-context read-only review of the current refresh and accepted objective evidence. Product changes are dated and separated from scored objectives; no human or independent audit is claimed.",
+          "guide_content_sha256": "e5b285bc9d6a15dddb8da631f206a89d18c6bbcd3b2b73c9a893341c5a22ea33"
+        },
+        {
+          "exam_code": "NCP-AIO",
+          "vendor_id": "nvidia",
+          "guide_path": "guides/NCP-AIO-nvidia-ai-operations-professional.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/ncp-aio-official-objectives.txt",
+          "blueprint_snapshot_sha256": "3d4312635eed1b9a05823d40d95a8a8e75dd8852e7b971bee7a799b301c86abf",
+          "audited_on": "2026-10-29",
+          "verdict": "pass-with-notes",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            }
+          },
+          "findings": [
+            {
+              "id": "ncp-aio-older-pdf-outline-conflict",
+              "check": "official_scope",
+              "severity": "low",
+              "category": "source-mismatch",
+              "location": "NCP-AIO exam-scope note and official preparation sources",
+              "evidence": "The older linked PDF lists 28/20/32/20 weights and differs from the current canonical webpage, which lists 31/23/23/23 and the current topic bullets.",
+              "recommendation": "Continue to follow the canonical current webpage and retain a dated note until NVIDIA reconciles the PDF.",
+              "status": "open"
+            }
+          ],
+          "notes": "The current page was manually reviewed and the guide follows it. An older linked PDF still conflicts on topic weights; the difference is disclosed and remains open. The scraper layout failure is not treated as evidence of a scope change.",
+          "guide_content_sha256": "ae54ecd3eb36feba4f557d28b4ffcb0584c633d5c4170d212aa3c995f3b5bea7"
+        },
+        {
+          "exam_code": "NSE-4-FORTIOS",
+          "vendor_id": "fortinet",
+          "guide_path": "guides/NSE-4-FORTIOS-fortinet-nse-4-fortios.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/nse-4-fortios-official-objectives.txt",
+          "blueprint_snapshot_sha256": "a1bc779b760e1373ce480549181be9cfcace6b1ab081a3eb5c6832d98160ea5b",
+          "audited_on": "2026-10-29",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Current public source, scope boundary and refreshed guide text reviewed; see Group 14 report for access limits."
+            }
+          },
+          "findings": [],
+          "notes": "Same-context read-only review of the current refresh and accepted objective evidence. Product changes are dated and separated from scored objectives; no human or independent audit is claimed.",
+          "guide_content_sha256": "91a96193e6bdb26e28825b2921d276714ef495c671052ff1e1f1d7fda11b780f"
+        }
+      ],
+      "summary": {
+        "guide_count": 10,
+        "pass": 9,
+        "pass_with_notes": 1,
+        "fix_required": 0,
+        "blocked": 0,
+        "open_findings": 1,
         "closed_findings": 0
       }
     }

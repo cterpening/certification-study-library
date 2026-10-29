@@ -59469,6 +59469,560 @@
         "no_action_findings": 0,
         "blocked_findings": 0
       }
+    },
+    {
+      "id": "freshness-2026-10-29-nonms-g14",
+      "title": "Non-Microsoft refresh group 14 official-source freshness",
+      "rubric_version": 1,
+      "created_on": "2026-10-29",
+      "completed_on": "2026-10-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Fourteenth group of ten selected oldest-first from the frozen October 28 non-Microsoft eligible queue.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "refresh-coordinator",
+          "official-source-review"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "LFCA",
+        "LFCS",
+        "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR",
+        "MONGODB-ASSOCIATE-DATA-MODELER",
+        "MONGODB-ASSOCIATE-DEVELOPER",
+        "N10-009",
+        "NCA-AIIO",
+        "NCA-GENL",
+        "NCP-AIO",
+        "NSE-4-FORTIOS"
+      ],
+      "results": [
+        {
+          "exam_code": "LFCA",
+          "vendor_id": "linux-foundation",
+          "guide_path": "guides/LFCA-linux-foundation-certified-it-associate.md",
+          "baseline_sha256": "cf831cafaac6e0dfb5305c6f1251649ca69eee0e16c0a0c9cecab5296e2693c1",
+          "scanned_on": "2026-10-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Official exam pages, objective/status snapshots and applicable lifecycle notices were checked. A manual browser review was used for the current NVIDIA NCP-AIO page; version conflicts remain explicit."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Relevant current official release notes, kernel references, product documentation and deployment constraints were reviewed; dated product examples are separate from scored objectives."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current issuer announcement/release sources were reviewed, including Atlas, NVIDIA, and Fortinet; no unrelated release was treated as exam scope."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Current public issuer learning routes and reference pages were compared; MongoDB public course shells and paid course interiors were not represented as inspected."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Version-specific Fortinet and NCP-AIO source differences, blocked links, preview status, and deployment boundaries are called out in the report and guides."
+            }
+          },
+          "findings": [
+            {
+              "id": "g14-lfca-applied",
+              "check": "official_product_documentation",
+              "category": "updated-source",
+              "title": "Upstream stable kernel maintenance context",
+              "url": "https://www.kernel.org/pub/linux/kernel/v6.x/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "LFCA"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current kernel.org index lists 6.18.59 on October 26 and 6.12.114 on October 21; guide treats these as patch examples outside exam scope.",
+              "recommendation": "Use dated first-party information as current product/learning context, preserve exam version boundaries, and recheck lifecycle or rollout status before deployment or booking.",
+              "disposition": "applied",
+              "source_id": "linux-kernel-stable-releases-2026",
+              "resolution": "Current kernel.org index lists 6.18.59 on October 26 and 6.12.114 on October 21; guide treats these as patch examples outside exam scope."
+            }
+          ],
+          "notes": "See Group 14 report for current official scope, product-context boundaries, source health and access limitations. No paid course interior or live lab was used."
+        },
+        {
+          "exam_code": "LFCS",
+          "vendor_id": "linux-foundation",
+          "guide_path": "guides/LFCS-linux-foundation-certified-system-administrator.md",
+          "baseline_sha256": "81d423b84805b8bd38ff8c5dbea21adef514f9dd2ddd686fa1029e2ada5f6c02",
+          "scanned_on": "2026-10-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Official exam pages, objective/status snapshots and applicable lifecycle notices were checked. A manual browser review was used for the current NVIDIA NCP-AIO page; version conflicts remain explicit."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Relevant current official release notes, kernel references, product documentation and deployment constraints were reviewed; dated product examples are separate from scored objectives."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current issuer announcement/release sources were reviewed, including Atlas, NVIDIA, and Fortinet; no unrelated release was treated as exam scope."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Current public issuer learning routes and reference pages were compared; MongoDB public course shells and paid course interiors were not represented as inspected."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Version-specific Fortinet and NCP-AIO source differences, blocked links, preview status, and deployment boundaries are called out in the report and guides."
+            }
+          },
+          "findings": [
+            {
+              "id": "g14-lfcs-applied",
+              "check": "official_product_documentation",
+              "category": "updated-source",
+              "title": "Kernel update and operational verification context",
+              "url": "https://www.kernel.org/pub/linux/kernel/v6.x/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "LFCS"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current upstream stable releases support package, reboot planning, kernel-log and post-update service-check examples; distribution support remains authoritative.",
+              "recommendation": "Use dated first-party information as current product/learning context, preserve exam version boundaries, and recheck lifecycle or rollout status before deployment or booking.",
+              "disposition": "applied",
+              "source_id": "linux-kernel-stable-releases-2026",
+              "resolution": "Current upstream stable releases support package, reboot planning, kernel-log and post-update service-check examples; distribution support remains authoritative."
+            }
+          ],
+          "notes": "See Group 14 report for current official scope, product-context boundaries, source health and access limitations. No paid course interior or live lab was used."
+        },
+        {
+          "exam_code": "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR",
+          "vendor_id": "mongodb",
+          "guide_path": "guides/MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR-mongodb-associate-atlas-administrator.md",
+          "baseline_sha256": "b16c7e1b671baab48798da1cad8cf246b0cd24d01dcff90336b83de4e78a8be2",
+          "scanned_on": "2026-10-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Official exam pages, objective/status snapshots and applicable lifecycle notices were checked. A manual browser review was used for the current NVIDIA NCP-AIO page; version conflicts remain explicit."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Relevant current official release notes, kernel references, product documentation and deployment constraints were reviewed; dated product examples are separate from scored objectives."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current issuer announcement/release sources were reviewed, including Atlas, NVIDIA, and Fortinet; no unrelated release was treated as exam scope."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Current public issuer learning routes and reference pages were compared; MongoDB public course shells and paid course interiors were not represented as inspected."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Version-specific Fortinet and NCP-AIO source differences, blocked links, preview status, and deployment boundaries are called out in the report and guides."
+            }
+          },
+          "findings": [
+            {
+              "id": "g14-mongodb-associate-atlas-administrator-applied",
+              "check": "official_release_channels",
+              "category": "updated-source",
+              "title": "Atlas administration and log-export lifecycle changes",
+              "url": "https://www.mongodb.com/docs/atlas/release-notes/changelog/",
+              "source_type": "release-notes",
+              "affected_exams": [
+                "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "October UI and federated-user updates, September Intelligent Workload Management GA, and Push-Based Log Export Oct 30 2026 configuration cutoff / Feb 4 2027 EOL were dated in guide.",
+              "recommendation": "Use dated first-party information as current product/learning context, preserve exam version boundaries, and recheck lifecycle or rollout status before deployment or booking.",
+              "disposition": "applied",
+              "source_id": "mongodb-atlas-changelog-oct2026",
+              "resolution": "October UI and federated-user updates, September Intelligent Workload Management GA, and Push-Based Log Export Oct 30 2026 configuration cutoff / Feb 4 2027 EOL were dated in guide."
+            }
+          ],
+          "notes": "See Group 14 report for current official scope, product-context boundaries, source health and access limitations. No paid course interior or live lab was used."
+        },
+        {
+          "exam_code": "MONGODB-ASSOCIATE-DATA-MODELER",
+          "vendor_id": "mongodb",
+          "guide_path": "guides/MONGODB-ASSOCIATE-DATA-MODELER-mongodb-associate-data-modeler.md",
+          "baseline_sha256": "006e7508d10ca2306618717b776a440d1f7f41f1e7d6b08c402e210918d3b412",
+          "scanned_on": "2026-10-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Official exam pages, objective/status snapshots and applicable lifecycle notices were checked. A manual browser review was used for the current NVIDIA NCP-AIO page; version conflicts remain explicit."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Relevant current official release notes, kernel references, product documentation and deployment constraints were reviewed; dated product examples are separate from scored objectives."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current issuer announcement/release sources were reviewed, including Atlas, NVIDIA, and Fortinet; no unrelated release was treated as exam scope."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Current public issuer learning routes and reference pages were compared; MongoDB public course shells and paid course interiors were not represented as inspected."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Version-specific Fortinet and NCP-AIO source differences, blocked links, preview status, and deployment boundaries are called out in the report and guides."
+            }
+          },
+          "findings": [
+            {
+              "id": "g14-mongodb-associate-data-modeler-applied",
+              "check": "catalog_comparison",
+              "category": "updated-source",
+              "title": "Skill Badge learning path and completion discount",
+              "url": "https://www.mongodb.com/company/blog/news/introducing-a-more-connected-flexible-path-to-certifications",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "MONGODB-ASSOCIATE-DATA-MODELER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "August 18 issuer article aligns Data Modeler learning with badges for modeling, schema patterns and optimization and advertises a 50% exam discount on full path completion.",
+              "recommendation": "Use dated first-party information as current product/learning context, preserve exam version boundaries, and recheck lifecycle or rollout status before deployment or booking.",
+              "disposition": "applied",
+              "source_id": "mongodb-certification-path-update-2026",
+              "resolution": "August 18 issuer article aligns Data Modeler learning with badges for modeling, schema patterns and optimization and advertises a 50% exam discount on full path completion."
+            }
+          ],
+          "notes": "See Group 14 report for current official scope, product-context boundaries, source health and access limitations. No paid course interior or live lab was used."
+        },
+        {
+          "exam_code": "MONGODB-ASSOCIATE-DEVELOPER",
+          "vendor_id": "mongodb",
+          "guide_path": "guides/MONGODB-ASSOCIATE-DEVELOPER-mongodb-associate-developer.md",
+          "baseline_sha256": "225da0b932e278bffbd1a091d0fb5ed0bca345da9999e828c7cee6055ff4e95c",
+          "scanned_on": "2026-10-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Official exam pages, objective/status snapshots and applicable lifecycle notices were checked. A manual browser review was used for the current NVIDIA NCP-AIO page; version conflicts remain explicit."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Relevant current official release notes, kernel references, product documentation and deployment constraints were reviewed; dated product examples are separate from scored objectives."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current issuer announcement/release sources were reviewed, including Atlas, NVIDIA, and Fortinet; no unrelated release was treated as exam scope."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Current public issuer learning routes and reference pages were compared; MongoDB public course shells and paid course interiors were not represented as inspected."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Version-specific Fortinet and NCP-AIO source differences, blocked links, preview status, and deployment boundaries are called out in the report and guides."
+            }
+          },
+          "findings": [
+            {
+              "id": "g14-mongodb-associate-developer-applied",
+              "check": "official_product_documentation",
+              "category": "updated-source",
+              "title": "Atlas shell entry and vector-search product context",
+              "url": "https://www.mongodb.com/docs/atlas/release-notes/changelog/",
+              "source_type": "release-notes",
+              "affected_exams": [
+                "MONGODB-ASSOCIATE-DEVELOPER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Shell Syntax Mode, source-field storage GA, HNSW controls and preview similarity expressions are dated and kept outside the exam scope.",
+              "recommendation": "Use dated first-party information as current product/learning context, preserve exam version boundaries, and recheck lifecycle or rollout status before deployment or booking.",
+              "disposition": "applied",
+              "source_id": "mongodb-atlas-changelog-oct2026",
+              "resolution": "Shell Syntax Mode, source-field storage GA, HNSW controls and preview similarity expressions are dated and kept outside the exam scope."
+            }
+          ],
+          "notes": "See Group 14 report for current official scope, product-context boundaries, source health and access limitations. No paid course interior or live lab was used."
+        },
+        {
+          "exam_code": "N10-009",
+          "vendor_id": "comptia",
+          "guide_path": "guides/N10-009-comptia-network-plus.md",
+          "baseline_sha256": "eac7358067ea8ecd27217fb8b7f79d3d1d25effd88271e010d56d52b8029220c",
+          "scanned_on": "2026-10-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Official exam pages, objective/status snapshots and applicable lifecycle notices were checked. A manual browser review was used for the current NVIDIA NCP-AIO page; version conflicts remain explicit."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Relevant current official release notes, kernel references, product documentation and deployment constraints were reviewed; dated product examples are separate from scored objectives."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current issuer announcement/release sources were reviewed, including Atlas, NVIDIA, and Fortinet; no unrelated release was treated as exam scope."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Current public issuer learning routes and reference pages were compared; MongoDB public course shells and paid course interiors were not represented as inspected."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Version-specific Fortinet and NCP-AIO source differences, blocked links, preview status, and deployment boundaries are called out in the report and guides."
+            }
+          },
+          "findings": [
+            {
+              "id": "g14-n10-009-applied",
+              "check": "official_product_documentation",
+              "category": "updated-source",
+              "title": "Wi-Fi 7 multi-link operation current networking example",
+              "url": "https://source.android.com/docs/core/connect/wifi-7",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "N10-009"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current Android implementation reference is used as capability-dependent wireless troubleshooting context, not an asserted objective addition.",
+              "recommendation": "Use dated first-party information as current product/learning context, preserve exam version boundaries, and recheck lifecycle or rollout status before deployment or booking.",
+              "disposition": "applied",
+              "source_id": "android-wifi7-networking-docs",
+              "resolution": "Current Android implementation reference is used as capability-dependent wireless troubleshooting context, not an asserted objective addition."
+            }
+          ],
+          "notes": "See Group 14 report for current official scope, product-context boundaries, source health and access limitations. No paid course interior or live lab was used."
+        },
+        {
+          "exam_code": "NCA-AIIO",
+          "vendor_id": "nvidia",
+          "guide_path": "guides/NCA-AIIO-nvidia-ai-infrastructure-operations-associate.md",
+          "baseline_sha256": "498e9ea1aa791c4e50fb5ca90a4ace2e568d0137bfde30802ee1e84dd842bf53",
+          "scanned_on": "2026-10-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Official exam pages, objective/status snapshots and applicable lifecycle notices were checked. A manual browser review was used for the current NVIDIA NCP-AIO page; version conflicts remain explicit."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Relevant current official release notes, kernel references, product documentation and deployment constraints were reviewed; dated product examples are separate from scored objectives."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current issuer announcement/release sources were reviewed, including Atlas, NVIDIA, and Fortinet; no unrelated release was treated as exam scope."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Current public issuer learning routes and reference pages were compared; MongoDB public course shells and paid course interiors were not represented as inspected."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Version-specific Fortinet and NCP-AIO source differences, blocked links, preview status, and deployment boundaries are called out in the report and guides."
+            }
+          },
+          "findings": [
+            {
+              "id": "g14-nca-aiio-applied",
+              "check": "official_product_documentation",
+              "category": "updated-source",
+              "title": "DGX Spark October software and appliance management context",
+              "url": "https://docs.nvidia.com/dgx/dgx-spark/release-notes.html",
+              "source_type": "release-notes",
+              "affected_exams": [
+                "NCA-AIIO"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "October release includes DGX OS 7.6.0, Linux 7.0 support, cloud-init and late-October workflow skills; Founders Edition boundary is stated.",
+              "recommendation": "Use dated first-party information as current product/learning context, preserve exam version boundaries, and recheck lifecycle or rollout status before deployment or booking.",
+              "disposition": "applied",
+              "source_id": "nvidia-dgx-spark-release-notes-oct2026",
+              "resolution": "October release includes DGX OS 7.6.0, Linux 7.0 support, cloud-init and late-October workflow skills; Founders Edition boundary is stated."
+            }
+          ],
+          "notes": "See Group 14 report for current official scope, product-context boundaries, source health and access limitations. No paid course interior or live lab was used."
+        },
+        {
+          "exam_code": "NCA-GENL",
+          "vendor_id": "nvidia",
+          "guide_path": "guides/NCA-GENL-nvidia-generative-ai-llms-associate.md",
+          "baseline_sha256": "e5b285bc9d6a15dddb8da631f206a89d18c6bbcd3b2b73c9a893341c5a22ea33",
+          "scanned_on": "2026-10-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Official exam pages, objective/status snapshots and applicable lifecycle notices were checked. A manual browser review was used for the current NVIDIA NCP-AIO page; version conflicts remain explicit."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Relevant current official release notes, kernel references, product documentation and deployment constraints were reviewed; dated product examples are separate from scored objectives."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current issuer announcement/release sources were reviewed, including Atlas, NVIDIA, and Fortinet; no unrelated release was treated as exam scope."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Current public issuer learning routes and reference pages were compared; MongoDB public course shells and paid course interiors were not represented as inspected."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Version-specific Fortinet and NCP-AIO source differences, blocked links, preview status, and deployment boundaries are called out in the report and guides."
+            }
+          },
+          "findings": [
+            {
+              "id": "g14-nca-genl-applied",
+              "check": "official_release_channels",
+              "category": "updated-source",
+              "title": "Nemotron 3.5 Super VL and NeMo customization example",
+              "url": "https://developer.nvidia.com/blog/nvidia-nemotron-3-5-super-vl-powers-specialized-agents-with-multimodal-reasoning/",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "NCA-GENL"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "October 15 NVIDIA technical blog and current NeMo documentation provide optional multimodal-model customization context, not exam requirements.",
+              "recommendation": "Use dated first-party information as current product/learning context, preserve exam version boundaries, and recheck lifecycle or rollout status before deployment or booking.",
+              "disposition": "applied",
+              "source_id": "nvidia-nemotron-35-super-vl-oct2026",
+              "resolution": "October 15 NVIDIA technical blog and current NeMo documentation provide optional multimodal-model customization context, not exam requirements."
+            }
+          ],
+          "notes": "See Group 14 report for current official scope, product-context boundaries, source health and access limitations. No paid course interior or live lab was used."
+        },
+        {
+          "exam_code": "NCP-AIO",
+          "vendor_id": "nvidia",
+          "guide_path": "guides/NCP-AIO-nvidia-ai-operations-professional.md",
+          "baseline_sha256": "ae54ecd3eb36feba4f557d28b4ffcb0584c633d5c4170d212aa3c995f3b5bea7",
+          "scanned_on": "2026-10-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Official exam pages, objective/status snapshots and applicable lifecycle notices were checked. A manual browser review was used for the current NVIDIA NCP-AIO page; version conflicts remain explicit."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Relevant current official release notes, kernel references, product documentation and deployment constraints were reviewed; dated product examples are separate from scored objectives."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current issuer announcement/release sources were reviewed, including Atlas, NVIDIA, and Fortinet; no unrelated release was treated as exam scope."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Current public issuer learning routes and reference pages were compared; MongoDB public course shells and paid course interiors were not represented as inspected."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Version-specific Fortinet and NCP-AIO source differences, blocked links, preview status, and deployment boundaries are called out in the report and guides."
+            }
+          },
+          "findings": [
+            {
+              "id": "g14-ncp-aio-applied",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "updated-source",
+              "title": "Current NCP-AIO page and current exam contract",
+              "url": "https://www.nvidia.com/en-us/learn/certification/ai-operations-professional/",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "NCP-AIO"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Manual current page review yielded the 31/23/23/23 outline and 30-question plus three-live-VM-challenge 120-minute contract; the old PDF conflict remains documented.",
+              "recommendation": "Use dated first-party information as current product/learning context, preserve exam version boundaries, and recheck lifecycle or rollout status before deployment or booking.",
+              "disposition": "applied",
+              "source_id": "nvidia-ncp-aio-certification",
+              "resolution": "Manual current page review yielded the 31/23/23/23 outline and 30-question plus three-live-VM-challenge 120-minute contract; the old PDF conflict remains documented."
+            }
+          ],
+          "notes": "See Group 14 report for current official scope, product-context boundaries, source health and access limitations. No paid course interior or live lab was used."
+        },
+        {
+          "exam_code": "NSE-4-FORTIOS",
+          "vendor_id": "fortinet",
+          "guide_path": "guides/NSE-4-FORTIOS-fortinet-nse-4-fortios.md",
+          "baseline_sha256": "91a96193e6bdb26e28825b2921d276714ef495c671052ff1e1f1d7fda11b780f",
+          "scanned_on": "2026-10-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Official exam pages, objective/status snapshots and applicable lifecycle notices were checked. A manual browser review was used for the current NVIDIA NCP-AIO page; version conflicts remain explicit."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Relevant current official release notes, kernel references, product documentation and deployment constraints were reviewed; dated product examples are separate from scored objectives."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current issuer announcement/release sources were reviewed, including Atlas, NVIDIA, and Fortinet; no unrelated release was treated as exam scope."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Current public issuer learning routes and reference pages were compared; MongoDB public course shells and paid course interiors were not represented as inspected."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Version-specific Fortinet and NCP-AIO source differences, blocked links, preview status, and deployment boundaries are called out in the report and guides."
+            }
+          },
+          "findings": [
+            {
+              "id": "g14-nse-4-fortios-applied",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "lifecycle-change",
+              "title": "FortiOS 8.0 Administrator upcoming exam and 7.6 availability",
+              "url": "https://helpdesk.training.fortinet.com/support/solutions/articles/73000659982",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "NSE-4-FORTIOS"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "October 29 exam page still marks 8.0 Coming Soon while 7.6 is Available; 8.0 objective changes and absence of an exact launch/7.6 last-delivery date are recorded.",
+              "recommendation": "Use dated first-party information as current product/learning context, preserve exam version boundaries, and recheck lifecycle or rollout status before deployment or booking.",
+              "disposition": "applied",
+              "source_id": "fortinet-nse-exam-release-notices-2026",
+              "resolution": "October 29 exam page still marks 8.0 Coming Soon while 7.6 is Available; 8.0 objective changes and absence of an exact launch/7.6 last-delivery date are recorded."
+            }
+          ],
+          "notes": "See Group 14 report for current official scope, product-context boundaries, source health and access limitations. No paid course interior or live lab was used."
+        }
+      ],
+      "summary": {
+        "exam_count": 10,
+        "current": 10,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 10,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
     }
 ]
 }

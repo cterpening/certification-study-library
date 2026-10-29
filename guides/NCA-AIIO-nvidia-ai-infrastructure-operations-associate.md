@@ -6,9 +6,9 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-29
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-29
 ---
 
 # NVIDIA-Certified Associate: AI Infrastructure and Operations (NCA-AIIO) Study Guide
@@ -467,6 +467,10 @@ These eight activities are **proposed**, with author-estimated study time. Only 
 - **Ready:** You can connect workload, facility, compute, fabric, storage, software and operations decisions, then identify validation and recovery evidence.
 - **Review:** You recognize product names but cannot trace a bottleneck, compatibility dependency or safe operational response.
 - **Gap:** You guessed hardware sizing, equated utilization with outcome, or would run disruptive commands without authorization. Return to the requirement sheet and labs.
+
+## Refresh check — October 29, 2026
+
+The current NVIDIA page still lists the same 38/40/22 percent blueprint, 50 questions, and 60-minute exam. The page now also links sample questions with a Learning Mode that provides immediate feedback; this is preparation material, not a new blueprint. NVIDIA’s October DGX Spark release lists DGX OS 7.6.0, Linux 7.0 kernel support, cloud-init provisioning, support for 64 GB and 128 GB systems, and late-October DGX Spark Skills for appliance troubleshooting, clustering, maintenance, and escalation. Those release notes apply to the Founders Edition and must not be generalized to partner systems or enterprise cluster procedures. [DGX Spark release notes](https://docs.nvidia.com/dgx/dgx-spark/release-notes.html).
 
 ## Places to learn
 

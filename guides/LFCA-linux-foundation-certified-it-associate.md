@@ -6,9 +6,9 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-29
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-29
 ---
 
 # LFCA Linux Foundation Certified IT Associate Study Guide
@@ -457,6 +457,10 @@ Do not use an older LFCA route without remapping it. The current six domain name
 - Distribution commands, package names, cloud services, security guidance, project practices and license interpretation are verification boundaries. Bash’s GNU-hosted manual timed out during this review; the maintainer-hosted reference and installed runtime supplied the targeted shell evidence.
 - Objective snapshot SHA-256: `fd4278c4b59fa86cc2c014f67f60263670b72193b2f83354fa3712b0f97a77cf`.
 - This guide uses public scope and independently written labs/checks. It does not reproduce proprietary questions or course content.
+
+## Refresh check — October 29, 2026
+
+The official LFCA page and its September 2025 program-change notice were checked again. The six-domain blueprint, 90-minute multiple-choice format, two-year validity, and competencies remain the current published version; no newer exam change or retirement date was posted. The current upstream stable kernel index lists 6.18.59 (October 26) and 6.12.114 (October 21). Use these only as examples for reading release/version and security-maintenance notes: distributions select and backport their own kernels, and upstream version numbers are not an LFCA target. A useful practice loop is identify the running kernel, inspect package/advisory state, read the change record, plan reboot impact, and verify service health after maintenance. [Linux kernel stable releases](https://www.kernel.org/pub/linux/kernel/v6.x/).
 
 ## Places to learn
 

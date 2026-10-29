@@ -6,9 +6,9 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-29
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-29
 ---
 
 # MongoDB Associate Atlas Administrator Study Guide
@@ -539,6 +539,10 @@ These are original learning prompts, not recalled exam items. Answer first, then
 - Stop using any source that promises recalled live items, guaranteed passes, or “actual questions.”
 - Treat certification as a checkpoint; production changes still require peer review, change control, security, backups, tested rollback, and incident ownership.
 
+
+## Refresh check — October 29, 2026
+
+The current Associate Atlas Administrator exam route remains the guide’s scope authority. MongoDB’s [August 18 certification-path update](https://www.mongodb.com/company/blog/news/introducing-a-more-connected-flexible-path-to-certifications) aligns the Atlas Administrator certification path with incremental Skill Badges and states that completing the full path unlocks a 50% certification-exam discount; check the linked issuer terms at enrollment. Recent Atlas operations context includes October Data Explorer settings (per-user time zone display, read-only mode, default `maxTimeMS`, and legacy UUID display) and automatic activation of matching verified-domain SAML invitees. September’s Intelligent Workload Management became generally available for protecting clusters under overload; validate its queueing and workload priorities against actual service objectives rather than assuming it replaces capacity planning. The changelog says Push-Based Log Export stops accepting new configurations on **October 30, 2026** and reaches end of life on **February 4, 2027**; existing deployments need a migration plan to supported external sinks. These are dated product operations examples, not new exam objectives. [MongoDB Atlas changelog](https://www.mongodb.com/docs/atlas/release-notes/changelog/).
 
 ## Places to learn
 
