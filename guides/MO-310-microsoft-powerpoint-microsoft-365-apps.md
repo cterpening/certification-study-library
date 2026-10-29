@@ -6,21 +6,25 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-28
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-28
+upcoming_change_checked: 2026-10-28
 ---
 
 # MO-310 Microsoft PowerPoint Associate (Microsoft 365 Apps) Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The entire guide and detailed skills PDF were reviewed September 28, 2026. The [official credential page](https://learn.microsoft.com/en-us/credentials/certifications/mos-powerpoint-associate-m365-apps/) and [detailed skills outline](https://arch-center.azureedge.net/Learning/Credentials/MO-310_OD_MOS365_PowerPoint-%282%29.pdf) define the exam scope.
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-05.md#mo-310) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mo-310-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/mos-powerpoint-associate-m365-apps/) is authoritative.
 
 **Assessment:** 50 minutes, proctored. Microsoft recommends about 150 hours of instruction and hands-on experience; this is preparation guidance, not a formal prerequisite. The page lists 15 distinct languages (Dutch is duplicated) and no dedicated Learn training collection.<br>
-**Lifecycle:** No retirement or replacement notice found September 28. The credential shows a 60-month renewal frequency; check the [MOS expiration policy](https://learn.microsoft.com/en-us/credentials/support/credential-expiration-policy) for your award date. Expiration of an earned credential and retirement of an exam are separate events.
+**Lifecycle:** No retirement or replacement notice found October 28, 2026. The credential shows a 60-month renewal frequency; check the [MOS expiration policy](https://learn.microsoft.com/en-us/credentials/support/credential-expiration-policy) for your award date. Expiration of an earned credential and retirement of an exam are separate events.
 
 ## How to use this guide
 
 Build a presentation for a defined audience and delivery channel. Work on copies, use layouts and masters for consistency, and check the saved output in Slide Show and its actual export format. Desktop practice is needed for the full scope. The labs below are proposed exercises; no PowerPoint application or screen-reader session was executed for this review.
+
+**Detailed objective source:** The [official MO-310 detailed skills outline](https://arch-center.azureedge.net/Learning/Credentials/MO-310_OD_MOS365_PowerPoint-%282%29.pdf) supplies the individual assessed tasks; the credential page gives the broader domains.
+
+**VERIFY CURRENT — practice platform:** Confirm the testing center's exact delivery/build before scheduling. For Compass Cloud: In-Center, Certiport's October 22, 2026 candidate guide says MOS Live-in-the-App exams run in a Windows VM even when the client is a Mac or Chromebook. This does not establish that every center uses Cloud. Mac and web product practice can teach concepts, but it does not establish parity with the assessed Windows workflow. Keep the platform boundaries beside each task. See [Certiport candidate platform guidance](https://certiport.pearsonvue.com/Support/Install/Compass-Cloud/Test-Candidate/CC_Guide_TestCandidate). The public [MOS Microsoft 365 Apps interface tutorial](https://certiport.pearsonvue.com/Educator-resources/Exam-details/Exam-tutorials/MOS_365Apps_Tutorial.pdf) distinguishes exam controls from ordinary application practice: some commands, including Encrypt with Password, are disabled in the exam environment. Local product exercises below are learning tasks, not a promise of the available exam UI or actual assessment items.
 
 > **About related items:** Captions, export checks and other supporting practices deepen understanding. They do not add separate requirements to the published exam outline.
 
@@ -68,9 +72,21 @@ Show guides/gridlines and use Align/Distribute for precise placement. Choose ali
 
 Use the numbered sequence in the [Reading Order pane](https://support.microsoft.com/en-us/powerpoint/make-slides-easier-to-read-by-using-the-reading-order-pane) to inspect the assistive reading sequence. Do not infer that sequence from the visual layout alone. Add meaningful alt text to informative graphics and mark only genuinely decorative objects as decorative. Review generated descriptions. Reordering can affect overlapping objects; grouping already animated objects can remove their animations. Recheck appearance and motion after an accessibility edit.
 
+### Worked text, shape, screenshot and ink pass
+
+On a blank practice slide insert a rectangle, type **Decision**, then select the shape and apply a built-in Shape Style. Change fill/outline separately and verify that its text remains legible. Select text inside a second shape to adjust font/emphasis; select its paragraphs for bullets/numbering and demote one item to test hierarchy. Selecting the shape border versus a text range changes the target of a formatting operation. See [shape insertion, text, list and style controls](https://support.microsoft.com/en-us/powerpoint/add-shapes?nochrome=true).
+
+Select that text box's border → Format Shape → Text Options → Textbox → Columns, set **2** columns and suitable spacing, then resize the box and check flow/overflow. These text columns differ from table columns; PowerPoint does not supply a column-break command inside this box. See [text-box columns and limits](https://support.microsoft.com/en-us/powerpoint/create-columns-of-text-in-a-text-box-or-shape).
+
+For a harmless synthetic source window, leave it open and non-minimized, return directly to PowerPoint and choose Insert → Screenshot. Compare capturing the full window with Screen Clipping over only its example content. Inspect the inserted picture for unintended surrounding content and crop it deliberately; this is a static image, not an editable copy of the source. Microsoft's [screenshot reference](https://support.microsoft.com/en-us/office/graphics-visuals/insert-a-screenshot-or-screen-clipping) gives separate Mac capture-and-insert steps.
+
+On Draw, choose a pen, add a small ink arrow, select it with the supported ink selection tool and remove only the disposable stroke. In Windows Microsoft 365, optionally use Ink to Shape on a selected simple stroke and compare the converted shape with the original. **Related item:** conversion is extra practice; drawing ink is the named objective. [ink selection and conversion guidance](https://support.microsoft.com/en-us/powerpoint/change-handwritten-ink-to-shapes-text-or-math-in-powerpoint-for-microsoft-365) bounds platform/subscription/connected-experience requirements. Recheck slide appearance and reading order after editing the objects.
+
 ## 4. Tables, charts, diagrams, 3D models and media
 
 Create a table, insert/delete rows and columns, and apply a built-in style while retaining readable headers and values. Use charts for comparisons/trends: enter or edit their underlying data, choose a suitable chart type, and configure series, axes, titles, legend and data labels. Reconcile chart values with the source; formatting cannot repair a wrong series or unit.
+
+For a small reproducible table, insert **3 columns × 3 rows** with headers **Item, Quantity, Status** and two synthetic records. Select a cell and use the table layout commands to insert one row below and one column to the right, fill them with distinct test values, then delete those added rows/columns. Confirm that the original three headers and two records remain associated. Apply a built-in table style and inspect header/body contrast after a theme change. Clearing text in a cell does not remove the table row; selecting the entire row/column before deletion matters. See [table creation and structural edits](https://support.microsoft.com/en-us/powerpoint/training/add-a-table-to-a-slide). These table cells are separate from a two-column text box.
 
 Insert SmartArt for a list, process or hierarchy; add/edit nodes and promote/demote their levels. Convert between a list and SmartArt and check that the original ordering/hierarchy survives. Diagram structure conveys meaning beyond its text. For example, a manager with two direct reports is not the same relationship as a three-step process.
 
@@ -172,7 +188,11 @@ Keep the starting deck, saved result, expected/actual outcome and environment/bu
 
 ## Places to learn
 
-This is a selective learning path, not a complete list of PowerPoint resources. Times are author suggestions, not provider runtimes or an exam-readiness guarantee.
+This is a selective learning path, not a complete list of PowerPoint resources or a requirement to consume every item. Times are author suggestions, not provider runtimes or an exam-readiness guarantee.
+
+### Focused source-to-evidence route
+
+**A reusable layout, not repeated manual formatting — public references; about 60–90 minutes.** Read [slide-layout concepts](https://support.microsoft.com/en-us/powerpoint/what-is-a-slide-layout) and [editing layout placeholders](https://support.microsoft.com/en-us/powerpoint/add-edit-or-remove-a-placeholder-on-a-slide-layout). In your own five-slide deck, duplicate a layout, add a picture placeholder and change its prompt text; apply it to two slides, revise it, then reapply it. Deliver the `.pptx` and a checklist distinguishing layout changes from individual-slide edits. Estimate basis: two articles, an original deck and a revision pass. **VERIFY CURRENT:** use the matching Windows or Mac desktop steps; PowerPoint for the web cannot edit layout definitions in Slide Master view. These references do not establish SmartArt preview availability or media support. No visible article dates were established; no PowerPoint operation or embedded video was executed.
 
 | Resource | Access | Estimated time |
 |---|---|---:|

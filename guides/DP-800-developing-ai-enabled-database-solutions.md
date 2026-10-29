@@ -5,18 +5,18 @@ official_blueprint: https://learn.microsoft.com/en-us/credentials/certifications
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: source-validated
-last_verified: 2026-09-27
-upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-27
+review_status: review-required
+last_verified: 2026-10-28
+upcoming_change_status: none-announced
+upcoming_change_checked: 2026-10-28
 ---
 
 # DP-800 Developing AI-Enabled Database Solutions Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 27, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-800-coverage-record). The [official DP-800 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-800) is authoritative.
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-02.md#dp-800) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-800-coverage-record). Source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-800) is authoritative.
 
-**Current baseline:** Skills measured as of March 12, 2026; the accepted snapshot records the March 11 page update. The newly fetched October version remains separate preparation until its effective date.<br>
-**Upcoming blueprint change (checked September 27, 2026):** The English blueprint changes October 19, 2026. The fetched revision uses ANN versus KNN and updates columnstore/Copilot wording. **CES remains explicitly listed** in the data-change objective on the September 18 version of the page; this corrects the earlier removal note. Domain weights are unchanged. Distinguish revised search terminology from the earlier ENN wording. The current baseline below remains dated separately. See the [official revision](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-800).<br>
+**Current baseline:** Skills measured as of October 19, 2026.<br>
+**Blueprint reconciliation (October 28, 2026):** The October 19, 2026 English outline is the accepted current scope. The revised outline uses columnstore and Copilot naming and ANN versus KNN terminology. CES remains in the general data-change objective but is omitted from the embedding-maintenance-method bullet; these are separate scope observations. Domain weights are unchanged. Historical objective bytes and dated reviews are preserved. Recheck localized appointment timing separately.<br>
 **Lifecycle status:** Active; no retirement or replacement was announced on the official pages checked.<br>
 **Exam page:** [Microsoft Certified: SQL AI Developer Associate](https://learn.microsoft.com/en-us/credentials/certifications/developing-ai-enabled-database-solutions/) · 120-minute assessment · ten listed languages: English, Japanese, Simplified and Traditional Chinese, Korean, German, French, Italian, Brazilian Portuguese and Spanish. Check language-specific revision timing when booking.<br>
 **Official course:** [DP-800T00 Develop AI-enabled database solutions](https://learn.microsoft.com/en-us/training/courses/dp-800t00) · three instructor-led days.<br>
@@ -274,9 +274,49 @@ Current SQL platforms add functions for validation, extraction, replacement, spl
 
 Fuzzy functions such as `EDIT_DISTANCE`, `EDIT_DISTANCE_SIMILARITY` and `JARO_WINKLER_DISTANCE` rank lexical similarity; they do not establish identity. Use [fuzzy string matching](https://learn.microsoft.com/en-us/sql/relational-databases/fuzzy-string-match/overview?view=sql-server-ver17), normalize data, generate a bounded candidate set, set domain-tested thresholds and route uncertain matches for review.
 
-**VERIFY CURRENT:** Fuzzy matching was preview in SQL Server 2025 documentation and did not follow collation semantics as of the checked date. Function availability can differ by deployment target.
+**Confirmed — VERIFY CURRENT (October 28, 2026):** The [fuzzy-matching overview](https://learn.microsoft.com/en-us/sql/relational-databases/fuzzy-string-match/overview?view=sql-server-ver17) now says supported Windows and `BIN`/`BIN2` collations determine comparison behavior, including case/accent sensitivity and linguistic rules. Nonbinary `SQL_*` collations are unsupported; apply a supported Windows collation to the input expressions when broader changes are unsuitable. SQL Server 2025 fuzzy matching remains preview. Keep regex behavior separate and recheck the exact platform/update policy.
+
+**Proposed practice extension — not executed:** Lab 2: record database/argument collation, compare a bounded synthetic case/accent pair under supported Windows collations, and record unsupported SQL_* cases.
+
+**Answer checkpoint:** Does fuzzy comparison ignore the input collation? No: current documentation defines supported Windows/binary collation behavior and excludes nonbinary SQL_* collations.
 
 > **Related item:** Entity resolution is a decision system, not a distance function. Preserve which fields, normalization, algorithm/version, threshold and reviewer produced a match so false merges can be reversed.
+
+#### Worked queries — recursion, structure and approximate names
+
+**Original example — proposed; service/tenant execution not performed.**
+
+**VERIFY CURRENT:** use a supported engine/build and compatibility level; fuzzy functions can require preview enablement. These independent examples use synthetic literals and are not executed results.
+
+~~~sql
+;WITH Levels AS (
+    SELECT 1 AS n
+    UNION ALL
+    SELECT n + 1 FROM Levels WHERE n < 3
+)
+SELECT n FROM Levels ORDER BY n OPTION (MAXRECURSION 3);
+
+SELECT REGEXP_SUBSTR('SKU-42', '[0-9]+') AS Digits,
+       REGEXP_REPLACE('SKU-42', '[0-9]+', 'XX') AS Redacted;
+
+SELECT EDIT_DISTANCE(
+           N'stone' COLLATE Latin1_General_100_CI_AS,
+           N'stove' COLLATE Latin1_General_100_CI_AS) AS Changes,
+       EDIT_DISTANCE_SIMILARITY(
+           N'same' COLLATE Latin1_General_100_CI_AS,
+           N'same' COLLATE Latin1_General_100_CI_AS) AS SameScore,
+       JARO_WINKLER_DISTANCE(
+           N'same' COLLATE Latin1_General_100_CI_AS,
+           N'same' COLLATE Latin1_General_100_CI_AS) AS SameDistance;
+~~~
+
+Predict ordered recursion rows 1, 2, 3; extracted text 42 and SKU-XX; one substitution, identical-string similarity 100 and distance 0. Remove the recursive stop condition only as a paper exercise and explain why a bounded recursion limit matters. A regex match validates a chosen structure; a short edit distance proposes a candidate, without proving two customer records represent one person.
+
+**Question:** Does edit distance 1 authorize merging two customer records?
+
+**Answer:** No. It selects candidates; corroborate identifiers, evaluate false merges, retain provenance and require the appropriate review.
+
+[CTEs](https://learn.microsoft.com/en-us/sql/t-sql/queries/with-common-table-expression-transact-sql?view=sql-server-ver17) · [regular expressions overview](https://learn.microsoft.com/en-us/sql/relational-databases/regular-expressions/overview?view=sql-server-ver17) · [fuzzy string matching](https://learn.microsoft.com/en-us/sql/relational-databases/fuzzy-string-match/overview?view=sql-server-ver17)
 
 ### Use AI-assisted development without outsourcing responsibility
 
@@ -298,6 +338,24 @@ Repository/database instruction files can supply conventions and architecture co
 An MCP server exposes tools/resources to an AI client. The client still acts through a configured identity and its database permissions. Apply least privilege, separate read and write capabilities, confirm impactful actions, restrict network/tool configuration, log calls and assume database metadata/results passed to the model are sensitive.
 
 > **Related item:** Prompt injection can arrive through an instruction file, issue, documentation row or retrieved database content—not only the user's chat message. Treat model output and tool arguments as untrusted until policy and code validate them.
+
+#### Worked configuration — client, model and tool boundaries
+
+**Original example — proposed; service/tenant execution not performed.**
+
+**VERIFY CURRENT:** record client/version, signed-in account, selected model when the client exposes a picker, task mode, enabled tools, server transport and identity. A model selection does not grant database permission.
+
+For GitHub Copilot with MSSQL in VS Code, install the supported SQL/Copilot components, sign in with the entitled account, connect only the disposable database, and choose Ask for explanation or Agent for reviewed tool use. In SSMS, MCP requires Agent mode. Add the approved HTTP endpoint, or a reviewed stdio command, through the Tools picker; authenticate and explicitly enable only the required tools because newly added MCP tools are disabled by default. Use a SQL/DAB endpoint configured by its administrator; a server address alone does not define its permission model.
+
+For Fabric SQL database, scope the Copilot tenant settings to an approved pilot security group, check delegated capacity settings if used, assign the workspace to an eligible enabled capacity and grant the pilot workspace access; then open Copilot in the SQL query editor. Processing-geography and subprocessor settings require an approved organizational decision, not an automatic enable-all lab step. Treat this as a different integrated experience from a general GitHub Copilot chat session. For lakehouse metadata, a supported choice is the local Fabric MCP extension with OneLake tools: authenticate using the approved Azure identity, select the permitted workspace/lakehouse, and request its table definitions. The remote Fabric Core server at https://api.fabric.microsoft.com/v1/mcp/core provides workspace/item management; it is not an interchangeable SQL query endpoint.
+
+Create evidence rows for SQL tool, Fabric SQL assistant and lakehouse discovery. Record actual subject/resource, allowed read, denied unrelated access, returned schema and proposed tool action before approving anything. Disable unused tools and remove test configuration on completion.
+
+**Question:** Does connecting Fabric Core MCP prove the client can run SQL against any lakehouse?
+
+**Answer:** No. Core metadata/management tools, lakehouse OneLake tools and SQL execution have different endpoints, actions and authorization.
+
+[GitHub Copilot SQL overview](https://learn.microsoft.com/en-us/sql/tools/visual-studio-code-extensions/github-copilot/overview?view=sql-server-ver17) · [MCP servers in SSMS](https://learn.microsoft.com/en-us/ssms/github-copilot/mcp-servers) · [Get started with Fabric Core MCP Server](https://learn.microsoft.com/en-us/rest/api/fabric/articles/mcp-servers/core-remote/get-started-core) · [Use the local Fabric MCP server with OneLake](https://learn.microsoft.com/en-us/fabric/onelake/onelake-local-mcp) · [Copilot in Fabric FAQ](https://learn.microsoft.com/en-us/fabric/database/sql/copilot-faq) · [Enable and configure Copilot in Microsoft Fabric](https://learn.microsoft.com/en-us/fabric/fundamentals/copilot-enable-fabric)
 
 ---
 
@@ -487,7 +545,7 @@ Before publish, generate and review the deployment script/report. Block unapprov
 
 Pipeline controls can combine protected branch policy, required build/test/status checks, code owners for sensitive paths, controlled triggers, separation of build and deploy, environment approval, workload-identity authentication, scoped target roles and an immutable artifact. Restrict who can change the pipeline itself. A manual approval without deployment evidence is weaker than a repeatable gate that proves artifact, target, identity, test result and data-loss review.
 
-> **Related item:** A dacpac describes desired schema, not arbitrary data migration logic or every newer object type. Vector indexes, for example, may require a verified post-deployment creation step when current dacpac/bacpac tooling does not support them. Test that step and drift behavior on the exact platform.
+> **Related item:** A dacpac describes desired schema, not arbitrary data migration logic or every newer object type. Vector-index deployment needs version-specific verification: current documentation supports BACPAC with DacFx 170.5.96 or later, while DACPAC wording is inconsistent. Inspect `sys.vector_indexes` after deployment/import and plan an idempotent supported creation step when needed; do not infer index existence from a successful pipeline.
 
 ### Configure and expose Data API builder
 
@@ -577,6 +635,12 @@ For serverless/low-code consumers, inspect [Azure Functions SQL trigger](https:/
 Existing CES AMQP groups have an announced **April 2027** support end; no exact day is supplied. Migration must drain pending changes and coordinate writes while moving tables between groups, otherwise unpublished changes can be missed. Check port 9093, target-specific destination names and supported authentication. Changing the publisher protocol does not itself require consumers to change theirs.
 
 > **Related item:** An event is not “exactly once” because a connector hides retries. Give each business/change event a stable identity, make the sink idempotent, commit progress with output where possible and reconcile source-to-target.
+
+**Confirmed — VERIFY CURRENT:** [CES platform supportability](https://learn.microsoft.com/en-us/sql/relational-databases/track-changes/change-event-streaming/overview?view=sql-server-ver17) still labels CES preview. SQL Server 2025 requires preview configuration; Entra authentication needs CU3 or later plus Azure Arc enablement or Azure VM hosting. Managed Instance requires SQL Server 2025 or Always-up-to-date policy; Fabric SQL database does not currently support CES Entra authentication. The AMQP notice’s generic recreation sentence uses `AzureEventHubs` for every product, while its platform table still lists the older names for SQL Server/Managed Instance. Use the supported target-specific value and preserve this documentation mismatch until clarified.
+
+**Proposed practice extension — not executed:** Labs 7/10: add target/build/update-policy/authentication/destination matrix; record unsupported authentication as a gap, never paste one universal migration script.
+
+**Answer checkpoint:** Does SQL2025 CU3 Entra support prove Fabric CES supports Entra? No; the platform supportability section explicitly separates them.
 
 ---
 
@@ -676,7 +740,7 @@ Choose a mechanism from scale and latency:
 - **Change Tracking:** detect changed keys and read the current content; handle deletes and expired retention window.
 - **CDC:** consume detailed value changes/LSN where historical sequencing matters.
 - **Azure Functions or Logic Apps:** react/poll through managed integration with idempotency and poison handling.
-- **CES:** stream change events where current preview/platform support and semantics meet the need.
+- **Related item:** CES streams change events where current preview/platform support and semantics meet the need. This integration option is outside the October 19 embedding-maintenance bullet.
 - **Microsoft Foundry pipeline/application job:** orchestrate parsing, safety, model call, evaluation and writeback for a richer AI workflow.
 
 Use delete/tombstone processing so deleted or newly restricted text cannot remain retrievable. Re-embed when source hash, chunker, embedding model/version or dimensions change. Blue/green embedding columns/tables let an evaluation approve a new model before switching retrieval and then retiring the old index.
@@ -687,7 +751,11 @@ Use delete/tombstone processing so deleted or newly restricted text cannot remai
 
 ### Store vectors with an explicit contract
 
-The native [`vector` data type](https://learn.microsoft.com/en-us/sql/t-sql/data-types/vector-data-type?view=sql-server-ver17) stores a fixed dimension and base type. The data-type reference lists a maximum of 1,998 dimensions and describes `float16` as preview. The [SQL Server 2025 release notes](https://learn.microsoft.com/en-us/sql/sql-server/sql-server-2025-release-notes?view=sql-server-ver17) separately describe up to 3,996 for half precision. **VERIFY CURRENT:** those pages are not aligned on the general limit; validate the exact base type/build/driver before selecting dimensions above the conservative documented limit. Do not truncate an existing model vector to fit. Native vector storage does not imply that every vector-index feature is supported on that platform.
+**Confirmed — VERIFY CURRENT (October 28, 2026).** The native [`vector` reference](https://learn.microsoft.com/en-us/sql/t-sql/data-types/vector-data-type?view=sql-server-ver17) now separates **1,998 float32** from **3,996 float16** dimensions, resolving the earlier limit disagreement. Half precision is GA in Azure SQL Database, Managed Instance and Fabric SQL database, but remains preview in [SQL Server 2025](https://learn.microsoft.com/en-us/sql/sql-server/sql-server-2025-release-notes?view=sql-server-ver17). Check the Managed Instance update policy, engine/build and driver. A model’s dimensions, precision and distance contract must fit the target; do not truncate vectors or infer index support from storage support.
+
+**Proposed practice extension — not executed:** Extend Lab 8 step 2: record platform/update policy/base type/dimensions/driver and test an invalid-length vector in an authorized disposable database.
+
+**Answer checkpoint:** Can a 3072-dimensional model use the default float32 vector column? No: select a supported half-precision design with quality testing, choose a fitting model, or another supported storage design; do not silently truncate.
 
 Store alongside the vector:
 
@@ -733,7 +801,7 @@ Lower distance versus higher similarity semantics vary by function. Do not sort 
 
 #### Current vector-index constraints
 
-**VERIFY CURRENT:** On September 27, vector index/search documentation still labels the features preview. The latest index version is documented for Azure SQL Database and Fabric SQL database, with staged regional availability; do not transfer those capabilities to SQL Server 2025 or infer Managed Instance indexing from its vector data-type support. DiskANN remains the documented index family. Older formats and syntax are deprecated. Check before using:
+**Confirmed — VERIFY CURRENT (October 28, 2026).** [Vector indexes](https://learn.microsoft.com/en-us/sql/t-sql/statements/create-vector-index-transact-sql?view=sql-server-ver17) and [`VECTOR_SEARCH`](https://learn.microsoft.com/en-us/sql/t-sql/functions/vector-search-transact-sql?view=sql-server-ver17) are GA in Azure SQL Database, Fabric SQL database and Managed Instance with **Always-up-to-date** policy. They remain preview in SQL Server 2025 and Managed Instance with the **SQL Server 2025** update policy. Latest-format support follows the first group. Verify platform, update policy and index version before applying a version-3 example. Check before using:
 
 - current `CREATE VECTOR INDEX` syntax and supported metric/type/dimensions;
 - minimum populated non-null vector count and required primary/clustered index;
@@ -741,9 +809,13 @@ Lower distance versus higher similarity semantics vary by function. Do not sort 
 - partitioning and platform restrictions;
 - current `SELECT TOP (...) WITH APPROXIMATE`/`VECTOR_SEARCH` syntax;
 - rebuild/recreate requirements after format change;
-- dacpac/bacpac exclusion and post-deployment recreation.
+- DacFx version, BACPAC support and observed index creation after schema deployment;
 
-Current version 3 indexes support DML and iterative filtering. They need an integer clustered primary key and at least 100 non-null vectors at creation; indexes cannot be partitioned or included in dacpac/bacpac deployment. Upgrading an older format requires drop/recreation and an availability plan. For the latest version, use `SELECT TOP (N) WITH APPROXIMATE`, omit `TOP_N`, and order by ascending distance only. Base-table columns use the alias inside `TABLE = ...`; the function alias exposes distance. Older-version examples have different behavior.
+Current version-3 indexes support DML and iterative filtering, require at least 100 non-null vectors at creation, and cannot be partitioned. The reference places the integer clustered-primary-key restriction under **earlier** index versions; check the actual target’s prerequisites. BACPAC support starts with **DacFx 170.5.96**. The same reference has inconsistent DACPAC wording: it both excludes deployment and describes schema-only deployments skipping an index below 100 qualifying rows. **More research needed — next pass:** verify this deployment path with the exact DacFx/build. After import or publish, inspect `sys.vector_indexes`; adding rows later does not automatically create a skipped index. Earlier index formats require drop/recreation. Latest queries use `SELECT TOP (N) WITH APPROXIMATE`, omit `TOP_N` and order by ascending distance only.
+
+**Proposed practice extension — not executed:** Lab 8/10: record DacFx/index version; tabletop 80 qualifying rows at schema publish then 120 later; verify index existence explicitly before measuring ANN. Do not execute production drop/recreate.
+
+**Answer checkpoint:** Does a successful schema publication prove ANN exists after adding more rows? No; inspect index metadata and create/re-publish using the supported path. BACPAC support depends on DacFx version.
 
 Build an ENN ground-truth set before tuning ANN. If a selective tenant/category filter is applied after ANN candidate selection, recall can collapse. Prefer supported pre/iterative filtering or search within a properly bounded authorized candidate set, and test worst-case tenants.
 
@@ -907,7 +979,7 @@ Use disposable databases, synthetic data and a budget. Record platform/build/com
 3. Deploy to disposable dev, introduce drift, detect it with schema compare and reconcile the intended state.
 4. Test a destructive column change against realistic data; generate/review script and enforce a data-loss gate.
 5. Publish the same artifact with a non-personal identity to a second environment; record artifact hash and output.
-6. Add an idempotent post-deployment task for a currently unsupported artifact such as a vector index, then prove rerun behavior.
+6. Choose an artifact whose support is verified for the exact DacFx/platform version. For vector indexes, distinguish BACPAC with DacFx 170.5.96+ from the unresolved DACPAC wording, test row-count prerequisites, inspect `sys.vector_indexes`, and prove any required post-deployment creation step is idempotent.
 
 ### Lab 6: Data API builder and observability
 
@@ -1050,15 +1122,15 @@ These are original prompts, not recalled exam questions. Answer each with requir
 39. The default provider ignores JWTs; a configured JWT provider selects one role, and missing 2.0 permission entries inherit. Inspect effective permissions and negative tests.
 40. New matching tables can appear after restart. OBO requires supported Entra/SQL configuration, per-user identity and runtime caching disabled.
 41. The conditional write must affect zero rows; reconcile or queue current source/model work instead of labeling the stale vector current.
-42. No; the optimizer can choose kNN. Current Azure SQL/Fabric version 3 supports iterative filtering and DML, subject to regional/support requirements.
-43. FIXED uses characters and overlap percentages. Float16 is preview and the general type page and SQL Server release notes state different maxima; verify the exact build/base type.
+42. No; the optimizer can choose kNN. The latest index format supports iterative filtering and DML on Azure SQL Database, Fabric SQL database and Managed Instance with Always-up-to-date policy; verify platform/update policy and actual index version.
+43. FIXED uses characters and overlap percentages. The current type page distinguishes float32 up to 1,998 dimensions from float16 up to 3,996. Half precision is GA in the documented Azure SQL/MI/Fabric targets and preview in SQL Server 2025; verify target/update policy and driver.
 44. The documented Functions behavior can ignore that row after repeated failures. Removing a CES table with unpublished changes can lose delivery; monitor, drain and reconcile.
 
 ---
 
 ## 8. Final readiness checklist
 
-- [ ] I can map every March 12, 2026 objective to a section, lab and evidence artifact.
+- [ ] I can map every October 19, 2026 objective to a section, lab and evidence artifact.
 - [ ] I can distinguish Azure SQL Database, Managed Instance, SQL Server 2025 and Fabric SQL database support without assuming parity.
 - [ ] I can design tables, data types, constraints, sequences, partitions and rowstore/columnstore/memory-optimized indexes from workload evidence.
 - [ ] I can select and operate temporal, ledger, graph, external and JSON designs with their boundaries.
@@ -1082,7 +1154,15 @@ These are original prompts, not recalled exam questions. Answer each with requir
 
 ## Places to learn
 
-This is **not a complete list**, and it is not a recommendation to consume everything. Pick one current primary path, build the labs, and use targeted references or practice for gaps. Times are page-published when available; otherwise they are clearly labeled estimates. Catalogs, access, duration, price and alignment change. DP-800 is new, so several established vendors did not yet have a dedicated full certification path on the pages found; map broader SQL Server 2025 material to the March baseline and separately to October preparation. Avoid dumps or products claiming recalled/live exam questions.
+This is **not a complete list**, and it is not a recommendation to consume everything. Pick one current primary path, build the labs, and use targeted references or practice for gaps. Times are page-published when available; otherwise they are clearly labeled estimates. Catalogs, access, duration, price and alignment change. DP-800 is new, so several established vendors did not yet have a dedicated full certification path on the pages found; map broader SQL Server 2025 material to the current October 19 outline; March-only coverage is historical. Avoid dumps or products claiming recalled/live exam questions.
+
+### October 28 learning route and evidence task
+
+Use the three paths linked from the [current DP-800 course](https://learn.microsoft.com/en-us/training/courses/dp-800t00) as one sequence: database design, secure delivery, then AI retrieval. Their public outlines still contain **11 modules (4/4/3)**, and the [official exercise index](https://microsoftlearning.github.io/mslearn-sql-developer/) lists eleven matching labs. The three instructor-led days are publisher metadata; the earlier 18h22 self-study total remains historical because fresh path runtimes were not exposed. The existing resource set is sufficient. Rudi Bruchez’s [vector course](https://www.pluralsight.com/courses/sql-server-25-optimize-vector-search) remains 1h19, updated March 30, 2026; its description mentions HNSW while its chapter list names DiskANN, so use current SQL documentation to settle the algorithm and platform assumptions.
+
+**Original worksheet (about 35–50 minutes, editorial estimate):** Choose one object-design exercise, one API/deployment exercise and one retrieval exercise. For each, record platform/build, intended identity, prerequisite, allowed case, denied or stale-data case, expected evidence and cleanup. Add a second-platform column that can explicitly say unsupported or untested.
+
+**Answer checkpoint:** A working vector query on one SQL platform does not prove the API, index or authorization behavior on another. Keep unsupported and unexecuted cases visible instead of marking the whole workflow complete.
 
 ### Start with Microsoft
 

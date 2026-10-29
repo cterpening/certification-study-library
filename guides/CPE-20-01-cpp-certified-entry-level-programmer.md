@@ -6,19 +6,23 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-28
 ---
 
 # CPE-20-01 C++ Certified Entry-Level Programmer Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked September 29, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#cpe-20-01-coverage-record). The [official CPE page and embedded syllabus](https://cppinstitute.org/cpe) are authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked October 28, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#cpe-20-01-coverage-record). The [official CPE page and embedded syllabus](https://cppinstitute.org/cpe) are authoritative.
 
 **CURRENT BLUEPRINT — current baseline:** CPE-20-01, active; embedded four-block syllabus last updated July 22, 2025<br>
 **VERIFY CURRENT — upcoming blueprint change:** none announced on the official exam or certification-catalog pages when checked<br>
 **VERIFY CURRENT — official delivery snapshot:** 30 questions; 45-minute exam plus approximately 5 minutes for the NDA/tutorial; 70% cumulative passing score; TestNow; English<br>
 **VERIFY CURRENT — credential snapshot:** no formal prerequisite; USD 69 exam or USD 86 exam-plus-retake when checked; current C/C++ Institute certificates are lifetime and retain the completed exam version<br>
+
+## Refresh check — October 28, 2026
+
+**CPE-20-01** remains active, with the four-block syllabus last updated July 22, 2025; the official page shows no replacement notice. Use the current [CPE syllabus](https://cppinstitute.org/cpe) alongside the aligned C++ Essentials 1 course, and keep practice centered on short code-reading and debugging tasks that match the syllabus.
 
 ## How to use this guide
 

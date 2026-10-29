@@ -6,20 +6,24 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-28
-upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-28
+last_verified: 2026-10-28
+upcoming_change_status: none-announced
+upcoming_change_checked: 2026-10-28
 ---
 
 # HashiCorp Certified: Terraform Authoring and Operations Advanced Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed on September 28, 2026 across all 27 detailed objectives; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#terraform-authoring-operations-professional-coverage-record). The [official HashiCorp Advanced exam content list](https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-review) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed on October 28, 2026 across all 27 detailed objectives; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#terraform-authoring-operations-professional-coverage-record). The [official HashiCorp Advanced exam content list](https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-review) is authoritative.
 
 **Current baseline:** Terraform Authoring and Operations Advanced, Terraform 1.6 and AWS-provider exam version; verified September 28, 2026<br>
-**Upcoming blueprint change:** HashiCorp says an Azure-provider exam version is in active development with expected launch in late 2026. Both versions award one Terraform Advanced credential; verify availability before scheduling.<br>
+**Upcoming blueprint change:** None announced. Both AWS and Azure provider exam versions are now available for the same Terraform Advanced credential.<br>
 **Official source:** [Terraform Authoring and Operations Advanced content list](https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-review)
 
 HashiCorp [renamed the credential from Professional to Advanced](https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-update) in fall 2026. Existing Professional holders become Advanced holders automatically, and HashiCorp says the exam content and lab-based format did not change. HashiCorp does not display a short exam code for this credential, so this library retains `TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL` as a stable legacy internal identifier; it is not the current public title.
+
+## Living-guide watch — October 28, 2026
+
+**Credential and exam status:** HashiCorp's Professional-to-Advanced rename is complete. The current Terraform Authoring and Operations Advanced page offers both AWS and Azure provider exam versions for the same credential, tests Terraform 1.6, and retains the six-domain objective list and lab-plus-multiple-choice contract. The previous “Azure version expected late 2026” note is no longer upcoming. HCP Terraform also supports organization-scoped Azure DevOps PATs; migrate integrations before global PAT retirement on December 1, 2026. These are credential and product updates, not evidence of changed lab objectives. See the [current credential page](https://developer.hashicorp.com/certifications/terraform-advanced), [current content list](https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-review), and [HCP Terraform changelog](https://developer.hashicorp.com/terraform/cloud-docs/changelog).
 
 ## How to use this guide
 
@@ -50,7 +54,7 @@ HashiCorp publishes six domains and detailed subobjectives without percentage we
 | 5. Configure and use Terraform providers | Not published | Plugin architecture, aliases, sourcing, upgrades, authentication, and troubleshooting |
 | 6. Collaborate on infrastructure as code using HCP Terraform | Not published | Runs, workspaces, access, dynamic credentials, policy, and governance; multiple-choice only |
 
-The [September 28 review](../docs/research/2026-09-28-terraform-authoring-operations-professional-deep-review.md) maps all 27 subobjectives; accepted snapshots remain unchanged. The [certification page](https://developer.hashicorp.com/certifications/infrastructure-automation) specifies **Terraform 1.6**, even though Associate (004) tests 1.12. Use the correct documentation version for the selected exam environment. Ephemeral values (1.10+), write-only arguments (1.11+) and test-provider mocking (1.7+) are newer practical context, not usable 1.6 syntax.
+The [September 28 review](../docs/research/2026-09-28-terraform-authoring-operations-professional-deep-review.md) maps all 27 subobjectives; accepted snapshots remain unchanged. The [certification page](https://developer.hashicorp.com/certifications/terraform-advanced) specifies **Terraform 1.6**, even though Associate (004) tests 1.12. Use the correct documentation version for the selected exam environment. Ephemeral values (1.10+), write-only arguments (1.11+) and test-provider mocking (1.7+) are newer practical context, not usable 1.6 syntax.
 
 ## Exam operating model
 

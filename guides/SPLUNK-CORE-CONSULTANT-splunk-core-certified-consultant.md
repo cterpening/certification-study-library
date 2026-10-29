@@ -6,19 +6,19 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-02
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-02
+upcoming_change_checked: 2026-10-28
 ---
 
 # Splunk Core Certified Consultant Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live track page, four-page public blueprint, current Splunk Enterprise documentation, and selected resources were checked September 2, 2026. This contains original learning material, not exam items. Recheck the [certification page](https://www.splunk.com/en_us/training/certification-track/splunk-core-certified-consultant.html) and [official blueprint](https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-consultant.pdf) before planning or scheduling.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live track page, four-page public blueprint, current Splunk Enterprise documentation, and selected resources were checked October 28, 2026. This contains original learning material, not exam items. Recheck the [certification page](https://www.splunk.com/en_us/training/certification-track/splunk-core-certified-consultant.html) and [official blueprint](https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-consultant.pdf) before planning or scheduling.
 
 **Current baseline:** Deploying 5%; Monitoring Console 8%; Access/Roles 8%; Data Collection 15%; Indexing 14%; Search 14%; Configuration Management 8%; Indexer Clustering 18%; Search Head Clustering 10%.<br>
 **Exam contract:** expert; 86 questions; 120 total minutes including three minutes for the exam agreement.<br>
-**Required exams:** Core Power User, Core Advanced Power User, Enterprise Admin, and Enterprise Architect.<br>
-**Required instruction/labs:** Indexer Cluster Implementation Lab; Distributed Search Migration Lab; Implementation Fundamentals Lab; Architect Implementation Labs 1–3; Services Core Implementation. Confirm records in the live learning path; these are certification requirements, not optional study suggestions.<br>
+**Required exams:** Core Power User, Enterprise Admin, and Enterprise Architect. Core Advanced Power User is also accepted; Splunk’s current track flowchart permits a substitute path by completing its 14 recommended courses. Confirm the current credential-specific route and request authorization where required.<br>
+**Required instruction/labs:** Core Consultant Labs (Indexer Cluster Implementation, Distributed Search Migration, Implementation Fundamentals, and Architect Implementation Labs 1–3) plus Services Core Implementation. The current flowchart also describes an Architect exception path requiring authorization from certification support. Confirm completion and authorization in the official learning path.<br>
 **Lifecycle:** active; no retirement/replacement announcement was visible. Blueprint topics can change without notice; implementation details must follow documentation for the deployed version and supported topology.<br>
 
 ## How to use this guide
@@ -113,6 +113,10 @@ Trace synthetic loss across source, monitor checkpoint, UF queues, S2S/TLS, pars
 
 Correlate server-class/app rollout with Job Inspector, MC, peer/SHC health, bundles, scheduler, and resource telemetry. Roll back safely, establish root cause, and redesign the canary gate.
 
+## Current product context — separate from exam objectives
+
+> **Related item:** Splunk Enterprise 10.4.4 release notes document version-specific changes to config validation, TLS defaults, runtime requirements and federated-search access. Check supported OS, topology, add-ons and upgrade path in the current administration/upgrade manuals before applying any release procedure. [Splunk Enterprise 10.4 release notes](https://help.splunk.com/en/splunk-enterprise/release-notes-and-updates/release-notes/10.4/whats-new/welcome-to-splunk-enterprise-10.4)
+
 ## Hands-on labs
 
 1. SVA fit/gap and HA-versus-DR requirements matrix.
@@ -155,7 +159,7 @@ This is not a complete list, and it is not meant to be consumed end to end. Choo
 |---|---|---:|---|
 | [Official certification page](https://www.splunk.com/en_us/training/certification-track/splunk-core-certified-consultant.html) and [blueprint](https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-consultant.pdf) | Free | 60–90 min | Canonical scope/prerequisites |
 | [Splunk Enterprise docs](https://help.splunk.com/en/splunk-enterprise) | Free | 35–70 hr targeted | Deployed release and clustering/admin/search manuals |
-| Required five course/lab groups in the official learning path | Paid and often partner/employer-gated | 40–80+ hr | Required learning; verify current delivery/duration |
+| [Core Consultant track flowchart](https://www.splunk.com/en_us/pdfs/training/splunk-core-certified-consultant-track.pdf) and [Core Consultant Labs description](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/core-consultant-labs-course-description.pdf) | Required; paid and access restricted to eligible Enterprise Architects | Combined time not publicly stated; Labs course includes six timed self-paced labs | Required eligibility training; the track defines the exact alternate credential route and authorization |
 | [Splunk Validated Architectures](https://help.splunk.com/en/splunk-enterprise/get-started/splunk-validated-architectures/introduction-to-splunk-validated-architectures/about-splunk-validated-architectures) | Free | 5–10 hr | Verify edition and applicability |
 | [Splunk How-To YouTube channel](https://www.youtube.com/@SplunkHowTo) | Free | 6–15 hr selected | Supplement; verify age/version |
 | Multi-node disposable implementation portfolio | Infrastructure/software terms vary | 60–120 hr | Synthetic data and repeatable rebuilds |

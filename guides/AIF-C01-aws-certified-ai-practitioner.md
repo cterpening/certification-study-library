@@ -6,21 +6,25 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-28
-upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-28
+last_verified: 2026-10-28
+upcoming_change_status: none-announced
+upcoming_change_checked: 2026-10-28
 ---
 
 # AIF-C01 AWS Certified AI Practitioner Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed on September 28, 2026, including all 69 detailed objective bullets. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#aif-c01-coverage-record). The [official AIF-C01 exam guide](https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed on October 28, 2026, including all 69 detailed objective bullets. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#aif-c01-coverage-record). The [official AIF-C01 exam guide](https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html) is authoritative.
 
 **Current baseline:** AIF-C01 revision 1.1 published April 30, 2026; five domains; 50 scored plus 15 unscored questions<br>
-**Upcoming delivery change:** AWS says the Italian and German language versions retire after October 15, 2026. This is a language-specific delivery change; the AIF-C01 blueprint remains the current study baseline. Rechecked September 28, 2026; no additional overall exam retirement was found. See the [deep-review report](../docs/research/2026-09-28-aif-c01-deep-review.md).<br>
+**Upcoming delivery change:** The announced Italian and German language retirement date of October 15, 2026 has passed. This was a language-specific delivery change; the AIF-C01 blueprint remains the current study baseline. No additional overall exam retirement was found in the checked sources. See the [deep-review report](../docs/research/2026-09-28-aif-c01-deep-review.md).<br>
 The [revision history](https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/aif-01-revisions.html) records revision 1.0 on March 26 and 1.1 on April 30. Use the live domain pages for current examples: the history lists Clarify and Amazon Q additions that are not all present in the corresponding current domain/in-scope lists. This wording difference remains recorded for follow-up; it does not establish a new exam code or permission to skip the underlying concepts.
 
 **Important freshness boundary:** The current guide includes agentic AI, MCP, multi-agent patterns, memory, tool use, workflow orchestration, Amazon Quick, Kiro, Strands Agents, and Amazon Bedrock AgentCore. Older courses may cover the original AIF-C01 outline without these additions.<br>
 **Official source:** [AWS Certified AI Practitioner exam guide](https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html)
+
+## Current role boundary — October 28, 2026
+
+AWS now also offers the beta AWS Certified AI Business Strategist (AIB-C01), aimed at business judgment, investment, governance, and scaling adoption; its exam guide says AWS products are context rather than the subject. AIF-C01 remains the foundational AI/ML and generative-AI credential, with the current 1.1 blueprint. Keep the business-strategy and foundational-AI role boundaries clear when recommending a next step. The announced Italian/German AIF-C01 retirement date of October 15 has passed; check the scheduler for language availability, while the English exam and overall credential remain active.
 
 ## How to use this guide
 

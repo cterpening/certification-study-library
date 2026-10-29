@@ -6,14 +6,14 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-04
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-04
+upcoming_change_checked: 2026-10-28
 ---
 
 # 1Z0-1111-26 Oracle Cloud Infrastructure Observability Professional Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide maps Oracle University's public 2026 learning-path scope checked September 4, 2026. It is unofficial and may contain errors. The [official OCI Observability Professional learning path](https://mylearn.oracle.com/ou/learning-path/become-an-oracle-cloud-infrastructure-observability-professional-2026/162237) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide maps Oracle University's public 2026 learning-path scope checked October 28, 2026. It is unofficial and may contain errors. The [official OCI Observability Professional learning path](https://mylearn.oracle.com/ou/learning-path/become-an-oracle-cloud-infrastructure-observability-professional-2026/162237) is authoritative.
 
 **Assessment contract exposed by the current path:** Oracle Cloud Infrastructure Observability Professional, exam 1Z0-1111-26, 90 minutes.<br>
 **Published scope:** Monitoring metrics and alarms; Events rules and automated actions; centralized service, custom, and audit logs; Log Analytics ingestion, enrichment, aggregation, correlation, and visualization; Application Performance Monitoring with distributed tracing, real-user monitoring, and synthetic monitoring.<br>
@@ -91,6 +91,10 @@ Control cost through purposeful collection, cardinality, retention, query design
 2. **Unauthorized network change:** Detect the control-plane action in Audit, correlate resource and flow evidence, route a bounded event response, and preserve an investigation timeline.
 3. **Growing async backlog:** Connect queue age and consumer metrics, application traces, deployment markers, and Log Analytics patterns to distinguish traffic growth, poison messages, throttling, and a bad release.
 
+## Current product context — separate from exam objectives
+
+> **Related item:** Oracle’s 2026 OCI refresh removed calendar years from certification names while keeping exam codes; Oracle states OCI credentials are valid for 24 months and professional-level courses require paid access. For observability, the OCI Monitoring API added dual-stack IPv4/IPv6 endpoints in September 2026. Verify endpoint, SDK, region, and client-network support before adopting IPv6; this release note is product context, not an exam-objective change.
+
 ## Hands-on labs
 
 1. Build a metric dictionary with namespace, dimensions, units, interval, aggregation, owner, and expected failure signature for one service.
@@ -123,6 +127,6 @@ This is a selective learning path, not a complete list of OCI observability reso
 
 | Resource | Access | Estimated time |
 |---|---|---:|
-| [Official OCI Observability Professional learning path](https://mylearn.oracle.com/ou/learning-path/become-an-oracle-cloud-infrastructure-observability-professional-2026/162237) | Oracle account/subscription may be required | **9+ hours** as published by Oracle University |
+| [Official OCI Observability Professional learning path](https://mylearn.oracle.com/ou/learning-path/become-an-oracle-cloud-infrastructure-observability-professional-2026/162237) | Paid Professional course; Oracle account sign-in | **9+ hours** as published by Oracle University |
 | [OCI monitoring and observability guidance](https://docs.oracle.com/en-us/iaas/Content/cloud-adoption-framework/monitoring-and-observability.htm) | Public | **10–14 hours** targeted study |
 | Eight labs in this guide | Authorized OCI tenancy or local substitutes | **24–36 hours** plus two timed incident drills |

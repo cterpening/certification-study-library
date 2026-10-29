@@ -6,18 +6,22 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-28
 ---
 
 # Google Cloud Generative AI Leader Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 29, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#google-generative-ai-leader-coverage-record). The [official certification page](https://cloud.google.com/learn/certification/generative-ai-leader) and its linked [exam guide](https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf) are authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on October 28, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#google-generative-ai-leader-coverage-record). The [official certification page](https://cloud.google.com/learn/certification/generative-ai-leader) and its linked [exam guide](https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf) are authoritative.
 
-**CURRENT BLUEPRINT — current baseline:** Four domains weighted 30%, 35%, 20%, and 15%; current PDF and study workbook checked September 29, 2026<br>
-**Upcoming blueprint change:** None announced as of September 29, 2026.<br>
+**CURRENT BLUEPRINT — current baseline:** Four domains weighted 30%, 35%, 20%, and 15%; current PDF and study workbook checked October 28, 2026<br>
+**Upcoming blueprint change:** None announced as of October 28, 2026.<br>
 **Official source:** [Generative AI Leader certification page](https://cloud.google.com/learn/certification/generative-ai-leader) · [official detailed exam guide](https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf)
+
+## Refresh check — October 28, 2026
+
+The current page still lists four areas: Gen AI fundamentals, Google Cloud offerings, techniques to improve model output, and business strategy. No specific revision or cutover is announced for this exam on its page. Google’s catalog notes wider Next ’26 product updates and says each exam guide is the source for covered products; the guide below already distinguishes current Gemini Enterprise Agent Platform names from older Vertex AI terms. [Certification page](https://cloud.google.com/learn/certification/generative-ai-leader) · [Google Cloud certification hub](https://cloud.google.com/learn/certification).
 
 ## How to use this guide
 
@@ -553,10 +557,10 @@ This is not a complete list and is not meant to be consumed in full. Choose one 
 | [Official exam guide](https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf), [study guide](https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf), and [sample questions](https://forms.gle/soztS7Q74AXBncATA) | Public, first-party | 3–5 hours with objective mapping and answer review |
 | [Google Skills Generative AI Leader path](https://www.skills.google/paths/1951) | Google account; public path confirms five activities and an update about two months earlier | Current durations/access details were not fully exposed; allow 10–14 hours as a study-planning estimate |
 | [Google Cloud Generative AI Leader Professional Certificate on Coursera](https://www.coursera.org/professional-certificates/generative-ai-for-leaders) | Coursera audit/subscription terms vary; first-party Google Cloud courses | Landing page says 8 hours, while five course cards total 20 hours (3/4/4/4/5). Treat these as different estimates; choose time based on activities completed |
-| [Pluralsight Generative AI Leader path](https://www.pluralsight.com/paths/google-cloud-generative-ai-leader-by-pluralsight) | Paid subscription; four courses, one lab and practice exam | Four course durations sum 5h44m plus a 30-minute lab (rounded path total: 6h). Public dates range December 2025–May 2026, with the lab dated August 11, 2026; add 5–10 hours of planned review |
+| [Pluralsight Generative AI Leader path](https://www.pluralsight.com/paths/google-cloud-generative-ai-leader-by-pluralsight) | Paid subscription; four courses, four labs and a practice exam | Course cards total 5h44m; four lab cards total 2h15m (7h59m combined, rounded path total: 8h). Newer labs include model selection (Oct 6) and multimodal triage (Oct 13, 2026); add 5–10 hours of planned review |
 | [O'Reilly — GenAI on Google Cloud](https://www.oreilly.com/library/view/genai-on-google/9798341623842/) | Paid subscription/book; broader and more technical than the exam | Earlier 9h58m estimate **not reverified** because public access was blocked; allow 5–10 hours for selected practice and terminology mapping |
 | [Udemy / in28Minutes Generative AI Leader](https://www.udemy.com/course/google-cloud-certified-generative-ai-leader-certification/) | Paid marketplace course | Earlier 3h51m and August 2026 update **not reverified** because public access was blocked; allow 5–10 hours for exercises/review |
 
-No exact current MeasureUp product was found during this review. The Google-authored Coursera outline lists five courses and practical Gemini, NotebookLM and AI Studio activities; that is public metadata, not evidence of completed provider exercises. Pluralsight's four course titles follow the exam domains, but dates and a lab title alone do not establish full current-product alignment. The sample-form content was not exposed by the fetch, and no paid lessons or assessment questions were read.
+No exact current MeasureUp product was found during this review. The Google-authored Coursera outline lists five courses and practical Gemini, NotebookLM and AI Studio activities; that is public metadata, not evidence of completed provider exercises. Pluralsight's four course titles follow the exam domains, with four current labs listed; the October 13 multimodal triage lab is a new product example, not evidence of exam scope. Titles and dates do not establish full current-product alignment. The sample-form content was not exposed by the fetch, and no paid lessons or assessment questions were read.
 
 For focused technical gaps, use the linked documentation on data handling, access controls, model lifecycle and tool validation. Allow 2–3 additional hours for selected reading and the original worksheet; this is a planning estimate. Google's official sample resource and independently authored exercises can help locate learning gaps. Reject “actual questions,” copied exam material, or guaranteed replicas; use explanation-led assessment to locate a concept or decision gap.

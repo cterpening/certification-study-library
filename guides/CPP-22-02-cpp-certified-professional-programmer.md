@@ -6,19 +6,23 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-28
 ---
 
 # CPP-22-02 C++ Certified Professional Programmer Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, links, lifecycle, and exam-integrity compliance were checked September 29, 2026. This does not guarantee that every explanation is error-free or remains current. The [official CPP page and syllabus](https://cppinstitute.org/cpp) are authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, links, lifecycle, and exam-integrity compliance were checked October 28, 2026. This does not guarantee that every explanation is error-free or remains current. The [official CPP page and syllabus](https://cppinstitute.org/cpp) are authoritative.
 
 **Current baseline:** CPP-22-02, active; nine-block syllabus last updated July 22, 2025<br>
 **Upcoming blueprint change:** none announced on the official exam or certification-catalog pages when checked<br>
 **Official delivery snapshot:** 40 single- and multiple-choice questions, one point each (maximum 40); 65-minute exam plus approximately 10 minutes for the NDA/tutorial; 70% cumulative passing score; Pearson VUE; English<br>
 **Purchase snapshot — VERIFY CURRENT:** canonical exam page says CPA recommended; Pearson and issuer-badge wording requires it (unresolved); from USD 325 exam or USD 375 exam-plus-retake when checked<br>
+
+## Refresh check — October 28, 2026
+
+**CPP-22-02** remains active; the current nine-block syllabus was last updated July 22, 2025, with no replacement announced. The official [CPP syllabus](https://cppinstitute.org/cpp) retains its advanced STL, algorithms, I/O, and templates scope. The issuer currently aligns it to C++ Advanced; use that material with original exercises rather than treating course completion as proof of exam coverage.
 
 ## How to use this guide
 

@@ -6,21 +6,23 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: review-required
-last_verified: 2026-09-28
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-28
+upcoming_change_checked: 2026-10-28
 ---
 
 # SC-300 Microsoft Identity and Access Administrator Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; OFFICIAL WEIGHTING CONFLICT OPEN; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 28, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sc-300-coverage-record). The [official SC-300 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-300) is authoritative.
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-02.md#sc-300) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sc-300-coverage-record). Source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-300) is authoritative.
 
-**Current baseline:** Skills measured as of April 27, 2026; official study-guide page last updated March 27, 2026.<br>
+**Current baseline:** Skills measured as of October 28, 2026.<br>
 **Exam state:** Active; the official credential page lists no retirement date.<br>
-**Upcoming blueprint change:** None announced on the official study guide as of September 28, 2026.<br>
-**Published weighting discrepancy:** The study guide's “Skills at a glance” assigns authentication and access management 25–30%, while its detailed heading says 20–25%. This guide uses 25–30% for planning because it is the summary-table value, but the Microsoft page remains the source of truth. **VERIFY CURRENT** before allocating study time.<br>
+**Blueprint reconciliation (October 28, 2026):** The October 28, 2026 English outline is the accepted current scope. The revision removes OAuth 2.0 tokens from the authentication-method list, uses current Global Secure Access names, and says emergency access accounts. Token/protocol knowledge remains useful foundation. The official authentication/access weighting conflict is retained. Historical objective bytes and dated reviews are preserved. Recheck localized appointment timing separately.<br>
+**Published weighting discrepancy:** The study guide's “Skills at a glance” assigns authentication and access management 25–30%, while its detailed heading says 20–25%. Both published values remain visible; this guide does not choose one as authoritative. **VERIFY CURRENT** before allocating study time.<br>
 **Localized exams:** Microsoft says localized versions normally follow the English update by approximately eight weeks; verify your language version before scheduling.<br>
 **Official source:** [SC-300 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-300)
+
+> **Official blueprint conflict — October 28, 2026:** The October 28 official page disagrees internally: authentication/access is 25–30% at a glance and 20–25% in the detailed heading. Preserve the conflict and verify with Microsoft; do not silently choose a weight.
 
 ## How to use this guide
 
@@ -39,7 +41,7 @@ Read Sections 1–4, work the three integrated scenarios, complete or tabletop a
 
 > **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
 
-The [September 28 deep review](../docs/research/2026-09-28-sc-300-deep-review.md) maps all **98 objectives in 16 groups**. The April baseline remains unchanged. Operational changes below include the September 30 Connect deadline, October 1 legacy risk-policy retirement, November 3 `memberOf` deadline and January 6 Cloud Apps file-policy retirement. These are product lifecycle dates, not invented exam revisions.
+The [September 28 deep review](../docs/research/2026-09-28-sc-300-deep-review.md) maps all **98 objectives in 16 groups**. That September record used the April baseline; this refresh accepts the current October 28 published wording while retaining its weight conflict. Operational changes below include the September 30 Connect deadline, October 1 legacy risk-policy retirement, November 3 `memberOf` deadline and January 6 Cloud Apps file-policy retirement. These are product lifecycle dates, not invented exam revisions.
 
 ## Exam profile and complete objective map
 
@@ -48,11 +50,11 @@ The certification is intermediate and renews every 12 months. The current exam p
 | Official domain | Planning weight | Operating question |
 |---|---:|---|
 | Implement and manage user identities | 20–25% | How are tenant, workforce, device, external, and hybrid identities created, delegated, licensed, synchronized, and removed? |
-| Implement authentication and access management | 25–30%* | How should strong authentication, Conditional Access, risk, sessions, and Global Secure Access combine without locking out the organization? |
+| Implement authentication and access management | 25–30% at a glance / 20–25% detailed — unresolved | How should strong authentication, Conditional Access, risk, sessions, and Global Secure Access combine without locking out the organization? |
 | Plan and implement workload identities | 20–25% | Which nonhuman identity and application-integration pattern gives the required access without unmanaged credentials or excessive consent? |
 | Plan and automate identity governance | 20–25% | How is access requested, approved, time-bounded, reviewed, monitored, and removed? |
 
-\*The detailed heading on the same official page says 20–25%; see the disclosure above.
+The two official values conflict; neither is silently selected as the planning contract.
 
 ### Published objective-to-guide map
 
@@ -62,7 +64,7 @@ The certification is intermediate and renews every 12 months. The current exam p
 | Users, groups, custom security attributes, bulk operations, devices, and licenses | Section 1 | Scenarios 1–2; Labs 1–2 |
 | External collaboration, invitations/accounts, cross-tenant access/synchronization, and external IdPs | Section 1 | Scenario 2; Lab 2 |
 | Connect Sync, Cloud Sync, PHS, PTA, seamless SSO, AD FS migration, and Connect Health | Section 1 | Scenario 1; Lab 3 |
-| CBA, TAP, OAuth 2.0 tokens, Authenticator, passkeys, MFA, SSPR, Windows Hello, session revocation, password protection, and Entra Kerberos | Section 2 | All scenarios; Lab 4 |
+| CBA, TAP, Authenticator, passkeys, MFA, SSPR, Windows Hello, session revocation, password protection, and Entra Kerberos | Section 2 | All scenarios; Lab 4 |
 | Conditional Access assignments/controls/testing/sessions/device restrictions/CAE/authentication context/protected actions/templates | Section 2 | All scenarios; Lab 5 |
 | User/sign-in/workload risk and authentication registration | Section 2 | Scenarios 1 and 3; Labs 4–5 |
 | Global Secure Access client, Private Access, Internet Access, and Microsoft 365 traffic | Section 2 | Scenario 3; Lab 5 |
@@ -92,6 +94,20 @@ Use this selection model:
 | Team manages one Azure resource group | Azure RBAC at resource-group scope | An Entra role grants data-plane access |
 | Rare tenant-wide privileged task | Eligible Entra role through PIM | Permanent Global Administrator |
 | Permission set absent from built-ins | Tested custom Entra role | Custom roles can contain every Microsoft service permission |
+
+#### Worked branding pilot — appearance and authentication
+
+**Original example — proposed; service/tenant execution not performed.**
+
+Use a disposable tenant and the minimum Organizational Branding Administrator role, with eligible licensing. In Entra ID > Custom Branding, record the existing default, choose a harmless banner/logo and background, preview the sign-in layout and submit the scoped test change. Test a fresh tenant work-account sign-in and a personal Microsoft-account path separately: personal-account authentication does not inherit the organization's branding. All elements are optional, so leaving a background unset can retain the destination's default.
+
+Keep a known-good copy and recovery administrator. A footer external URL can display as text rather than an active link; verify the user experience instead of assuming a clickable help channel. **VERIFY CURRENT:** branding paths, asset constraints and licenses. A branded page supplies context; users must still verify the actual sign-in domain and authentication flow.
+
+**Question:** Does a company logo prove a sign-in page is legitimate?
+
+**Answer:** No. Branding is appearance; verify the service URL, intended identity provider and approved authentication flow.
+
+[Configure your company branding](https://learn.microsoft.com/en-us/entra/fundamentals/how-to-customize-branding)
 
 ### Worked example 1: effective permission depends on the object and operation
 
@@ -194,7 +210,7 @@ Understand the methods and their roles:
 - Passkeys/FIDO2 and certificate-based authentication can provide phishing-resistant authentication when correctly configured. Validate attestation/AAGUID or certificate trust, revocation, mapping, and recovery requirements.
 - Microsoft Authenticator supports push/number matching and passwordless phone sign-in; configure context and suspicious-activity reporting deliberately.
 - A Temporary Access Pass (TAP) is a time-limited bootstrap/recovery credential for registering stronger methods. Scope policy and issuance roles, choose one-time versus reusable behavior, verify the user before issuance, and audit use. See the [TAP configuration guide](https://learn.microsoft.com/en-us/entra/identity/authentication/howto-authentication-temporary-access-pass).
-- OAuth 2.0 access/refresh tokens and OpenID Connect ID tokens serve different protocol purposes. An ID token describes authentication to the client; it is not an API access token. Revoking a session does not guarantee immediate rejection of every cached access token; resource support, token lifetime, CAE, and application behavior matter.
+> **Related item:** OAuth 2.0 access/refresh tokens and OpenID Connect ID tokens serve different protocol purposes. This protocol foundation is separate from the October 28 published authentication-method list. An ID token describes authentication to the client; it is not an API access token. Revoking a session does not guarantee immediate rejection of every cached access token; resource support, token lifetime, CAE, and application behavior matter.
 - SMS, voice, and passwords may be needed for transitional populations but are weaker than phishing-resistant methods. Do not count every MFA combination as equivalent assurance.
 
 [Certificate-based authentication](https://learn.microsoft.com/en-us/entra/identity/authentication/concept-certificate-based-authentication) can authenticate directly to Entra without AD FS, but requires your own PKI, trusted issuers, certificate-to-user binding and revocation design. Issuer/policy-OID rules determine single-factor versus multifactor status; a certificate alone does not prove the configured authentication strength was met. The current overview supports one HTTP CRL distribution point per trusted CA, not OCSP/LDAP URLs. Windows web sign-in and Office/browser support are distinct scenarios; test the exact client and recovery path.
@@ -212,6 +228,12 @@ For [Entra Kerberos hybrid access](https://learn.microsoft.com/en-us/entra/ident
 Password protection blocks weak/global/custom terms in cloud password changes and can extend to AD DS using agents. Plan proxy/DC-agent health, audit-to-enforce rollout, custom banned terms, and monitoring. For a suspected compromise, distinguish disabling the account, resetting credentials, revoking sessions, revoking application consent, disabling devices, and confirming/remediating risk; one action rarely covers every token and workload path.
 
 > **Related item:** Authentication strength is a Conditional Access abstraction describing acceptable method combinations. It lets policy express “phishing-resistant” instead of hard-coding one method, but enrollment and recovery still need their own design.
+
+> **Related item:** **VERIFY CURRENT (October 28, 2026).** The [telephony-provider FAQ](https://learn.microsoft.com/en-us/entra/identity/authentication/phone-providers-faq) schedules configuration from October 30, so today this is planning guidance. It does **not** preserve SMS as primary sign-in and currently excludes External ID/Azure AD B2C. Distinguish primary authentication, MFA delivery and SSPR requirements before choosing a migration route.
+
+**Proposed practice extension — not executed:** Lab 4 paper extension: classify populations by primary-sign-in/MFA/recovery dependency and tenant type, then choose phishing-resistant enrollment/recovery or a supported future provider plan. Do not provision provider/cloud resources.
+
+**Answer checkpoint:** Can buying a supported telephony provider preserve primary SMS sign-in? No; current FAQ explicitly excludes that use.
 
 ### Design, test, and troubleshoot Conditional Access
 
@@ -415,6 +437,28 @@ Know the evidence types:
 | Workload identity sign-ins | Which service principal or managed identity requested tokens and from where? |
 
 Configure diagnostic settings to send required Entra log categories to Log Analytics for KQL/alerting, a storage account for cost-effective retention, Event Hubs for streaming to external systems, or a supported partner destination. Destinations serve different uses; choose retention, immutability, latency, access, residency, and cost deliberately. The [Entra diagnostic-log options](https://learn.microsoft.com/en-us/entra/identity/monitoring-health/concept-diagnostic-settings-logs-options) list current categories.
+
+#### Worked KQL — count attempts without inventing coverage
+
+**Original example — proposed; service/tenant execution not performed.**
+
+In a workspace already receiving Entra sign-in diagnostics, start with a bounded question and inspect the schema:
+
+~~~kusto
+SigninLogs
+| where TimeGenerated > ago(1d)
+| summarize Attempts=count(), NonSuccess=countif(ResultType != '0')
+    by UserId
+| order by NonSuccess desc
+~~~
+
+ResultType is a string; nonzero means a nonsuccess result requiring interpretation, not automatically an incorrect password. In synthetic data, one user with three rows, two nonzero, yields Attempts=3 and NonSuccess=2. A user with no ingested row does not appear. Compare expected identities, diagnostic configuration and latest ingestion before treating absence as success. Protect returned identifiers and save the exact time range and query with investigation notes.
+
+**Question:** An identity is absent from the result. Were all its sign-ins successful?
+
+**Answer:** Unknown. The query only sees ingested rows in its window; check export, retention, latency and the expected identity population.
+
+[Azure Monitor SigninLogs schema](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/signinlogs)
 
 ### Worked example 5: a license upgrade cannot recreate expired logs
 
@@ -683,6 +727,14 @@ You are close to ready when you can:
 
 This is a curated list, not a complete list. Do **not** try to consume every resource. Pick the format that works for you, use the official blueprint and documentation to resolve disagreements, and spend substantial time practicing. Commercial durations and catalogs can change; estimates below are planning aids, not promises.
 
+### October 28 learning route and evidence task
+
+Use the [four-day SC-300 course](https://learn.microsoft.com/en-us/training/courses/sc-300t00) with the four selected paths: identity, authentication/access, app integration and governance (**18 modules**). The current [authentication/access outline](https://learn.microsoft.com/en-us/training/paths/implement-authentication-access-management-solution/) includes Global Secure Access and mentions agent identities in its Conditional Access description; detailed targeting and availability still require current product documentation. Four selected path pages do not prove every dynamic course-syllabus entry has been enumerated. Existing paths, labs and evaluated specialist readings are adequate; the historical 15h11 remains a planning observation because fresh aggregate runtimes were not exposed.
+
+**Original worksheet (about 35–50 minutes, editorial estimate):** Follow one synthetic contractor from request and approval through app assignment, sign-in, review denial, applied change and resource retest. Give every transition an authoritative object/system, timestamp, owner and evidence. Add an independent assignment path that survives the first removal.
+
+**Answer checkpoint:** A completed review and an applied membership change are intermediate evidence. Verify the destination and every independent grant before declaring access removed; retain an explicit untested result when you lack a licensed test tenant.
+
 ### Two blog readings with practical tasks
 
 | Reading | Learning task | Limits |
@@ -702,7 +754,7 @@ Four Learn paths list **18 modules**. Earlier path times below total **15h11** b
 | [SC-300T00 instructor-led course](https://learn.microsoft.com/en-us/training/courses/sc-300t00) | Paid/partner delivery | 4 days listed |
 | [MicrosoftLearning SC-300 labs](https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator) | Public (MIT) | 12–24 hours selectively; tenant/license setup extra |
 | [Official Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/identity-and-access-administrator/practice/assessment?assessment-type=practice&assessmentId=60) and exam sandbox from the credential page | Public | 1–2 hours per assessment/review cycle |
-| [Exam Readiness Zone: workload identities (part 3)](https://learn.microsoft.com/en-us/shows/exam-readiness-zone/preparing-for-sc-300-plan-and-implement-workload-identities) and linked series | Public | Historical estimate: about two hours/four parts, February 2024; part 3 landing page only, videos unreviewed; reconcile April objectives |
+| [Exam Readiness Zone: workload identities (part 3)](https://learn.microsoft.com/en-us/shows/exam-readiness-zone/preparing-for-sc-300-plan-and-implement-workload-identities) and linked series | Public | Historical estimate: about two hours/four parts, February 2024; part 3 landing page only, videos unreviewed; reconcile the current October 28 objectives |
 | [Pluralsight SC-300 path](https://www.pluralsight.com/paths/microsoft-certified-identity-and-access-administrator-associate-sc-300) | Paid/trial | 10h20 across four public listings, Nov 2025–Apr 2026 (path rounds to ten hours); in-production notice remains. Paid lessons/practice and full current coverage unverified |
 | [O'Reilly/Packt SC-300 Exam Guide, Second Edition](https://www.oreilly.com/library/view/microsoft-identity-and/9781836200390/) | Paid | Historical 13h03 / 594 pages, March 2025; page blocked. Current edition/content unverified |
 | [O'Reilly SC-300 crash course with Razi Rais](https://www.oreilly.com/live-events/exam-sc-300-microsoft-identity-and-access-administrator-crash-course/0636920056976/0636920056975/) | Paid | Public agenda totals three hours; older Azure AD terminology. Event availability and paid session unverified |

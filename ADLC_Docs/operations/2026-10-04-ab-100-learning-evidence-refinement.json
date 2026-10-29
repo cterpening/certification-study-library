@@ -1,0 +1,122 @@
+{
+  "exam_code": "AB-100",
+  "refined_on": "2026-10-04",
+  "scope": "Learning-evidence disclosure clarification only; no new discovery or testing/review claims",
+  "prior_commit": "4744dad555e7f3df650ec4e91477078381e63e68",
+  "guide_sha256_before": "3267e17d31e00ce5274d02a8e7decd49218edf85ae5ea56fddcdad1c1512b3d4",
+  "guide_sha256_after": "7b985162de651ff25d03a055f6e90ddedf230f65fe4f00ddce8b6b7ac850a389",
+  "historical_records": "Unchanged: September review evidence, deep-review catalog, original pilot ledger and source-validation record.",
+  "source_discovery_candidate_count": 8,
+  "accepted_cat_article": "unchanged",
+  "current_blueprint": "July 22, 2026; unchanged",
+  "future_blueprint": "October 14, 2026; unchanged",
+  "validation": {
+    "status": "passed",
+    "completed_at": "2026-10-04T23:36:12.312877+00:00",
+    "runs": [
+      {
+        "name": "unit-tests",
+        "command": [
+          "python",
+          "-X",
+          "utf8",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-v"
+        ],
+        "exit_code": 0,
+        "log": ".maintenance/ab100-learning-refinement-2026-10-04/unit-tests.log"
+      },
+      {
+        "name": "repository",
+        "command": [
+          "python",
+          "-X",
+          "utf8",
+          "scripts/validate_repository.py"
+        ],
+        "exit_code": 0,
+        "log": ".maintenance/ab100-learning-refinement-2026-10-04/repository.log"
+      },
+      {
+        "name": "learning-drift",
+        "command": [
+          "python",
+          "-X",
+          "utf8",
+          "scripts/sync_learning_resources.py",
+          "--reviewed"
+        ],
+        "exit_code": 0,
+        "log": ".maintenance/ab100-learning-refinement-2026-10-04/learning-drift.log"
+      },
+      {
+        "name": "ab100-learning-drift",
+        "command": [
+          "python",
+          "-X",
+          "utf8",
+          "scripts/sync_learning_resources.py",
+          "--exam-code",
+          "AB-100"
+        ],
+        "exit_code": 0,
+        "log": ".maintenance/ab100-learning-refinement-2026-10-04/ab100-learning-drift.log"
+      },
+      {
+        "name": "site-prepare",
+        "command": [
+          "python",
+          "-X",
+          "utf8",
+          "scripts/prepare_site.py"
+        ],
+        "exit_code": 0,
+        "log": ".maintenance/ab100-learning-refinement-2026-10-04/site-prepare.log"
+      },
+      {
+        "name": "site-build",
+        "command": [
+          "python",
+          "-X",
+          "utf8",
+          "-m",
+          "mkdocs",
+          "build",
+          "--strict",
+          "--config-file",
+          ".site-build/mkdocs.yml"
+        ],
+        "exit_code": 0,
+        "log": ".maintenance/ab100-learning-refinement-2026-10-04/site-build.log"
+      },
+      {
+        "name": "site-validate",
+        "command": [
+          "python",
+          "-X",
+          "utf8",
+          "scripts/validate_site.py"
+        ],
+        "exit_code": 0,
+        "log": ".maintenance/ab100-learning-refinement-2026-10-04/site-validate.log"
+      },
+      {
+        "name": "diff-check",
+        "command": [
+          "git",
+          "diff",
+          "--check"
+        ],
+        "exit_code": 0
+      }
+    ],
+    "tenant_testing": "not-performed",
+    "independent_human_review": "not-performed",
+    "source_discovery": "not-repeated",
+    "repository_unit_tests": 188
+  }
+}

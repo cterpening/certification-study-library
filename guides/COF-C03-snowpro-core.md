@@ -6,21 +6,27 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-28
 ---
 
 # SnowPro Core (COF-C03) Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Reviewed September 29, 2026 against seven public abilities, current primary documentation and public training metadata. The original local workbook below passed 24 checks; eight account labs remain proposed. See the [deep-review evidence](../docs/research/2026-09-29-cof-c03-deep-review.md) and [coverage record](../docs/SOURCE-VALIDATION.md#cof-c03-coverage-record).
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Reviewed October 28, 2026 against seven public abilities, current primary documentation and public training metadata. The original local workbook below passed 24 checks; eight account labs remain proposed. See the [deep-review evidence](../docs/research/2026-09-29-cof-c03-deep-review.md) and [coverage record](../docs/SOURCE-VALIDATION.md#cof-c03-coverage-record).
 
 **Current baseline:** COF-C03 is the active SnowPro Core exam. Snowflake describes it as validation of practical, hands-on experience with the Snowflake AI Data Cloud and recommends six or more months using Snowflake.<br>
-**Upcoming change:** No future exam update or retirement announcement was present on the checked official page September 29, 2026. Product authentication and notebook transitions below are separate from exam lifecycle.<br>
+**Upcoming change:** No future exam update or retirement announcement was present on the checked official page October 28, 2026. Product authentication and notebook transitions below are separate from exam lifecycle.<br>
 **Public scope boundary:** Snowflake's live page publishes seven abilities. Its detailed exam guide is requested through a web form, so this independent public guide does not claim inaccessible subobjectives or copy commercial question-bank interpretations. Recheck the official guide you receive before scheduling.<br>
 **Credential contract:** The live catalog lists Core attempts at USD 175. Current program policy says Snowflake certifications expire after two years, use a 0–1000 scale with 750 passing, and allow several renewal routes. Delivery, price, policy, languages and accommodations can change; confirm them in the certification portal.
 
 The passing score is scaled; it does not mean 75% of questions correct. The [program policies](https://learn.snowflake.com/en/pages/snowpro-policies/) allow renewal through a qualifying certification or eligible instructor-led training before expiry; a full certification retake can renew within six months of expiration. An expired credential is ineligible for the continuing-education route. Failed attempts require a seven-day wait, with four retakes allowed within twelve months. **VERIFY CURRENT:** Read the actual renewal and appointment terms before paying; do not infer an exam duration, question count or domain weights from a course catalog.
+
+## Refresh check — October 28, 2026
+
+Snowflake’s live catalog still lists **COF-C03** and describes seven tested abilities: architecture, account and warehouse management, data movement and transformation, data types, performance, collaboration/protection, and connectivity. The page continues to recommend at least six months of hands-on experience and links the official study guide. The [catalog](https://learn.snowflake.com/en/certifications/) currently flags retirement dates for some other SnowPro exams, but none for Core; confirm the live page before booking.
+
+The current product stream includes a useful new file-ingestion example: CoCo’s continuous Snowpipe setup and one-time COPY INTO file loads became generally available October 27. Use it to compare managed ingestion choices, while keeping the exam ability broad and not treating this release as a newly announced objective. [Release note](https://docs.snowflake.com/en/release-notes/2026/other/2026-10-27-file-loading-coco-ga).
 
 ## How to use this guide
 
@@ -624,7 +630,7 @@ Original study prompts and explanatory answers; these are not exam items.
 
 ## Places to learn
 
-This is not a complete list, and it is not meant to be consumed in full. Public metadata was checked September 29, 2026; paid lessons, assessments and recordings were not accessed. Provider durations below are labeled separately from this guide's optional study budgets. **VERIFY CURRENT:** Confirm content version, access expiry and actual booking availability before purchase.
+This is not a complete list, and it is not meant to be consumed in full. Public metadata was checked October 28, 2026; paid lessons, assessments and recordings were not accessed. Provider durations below are labeled separately from this guide's optional study budgets. **VERIFY CURRENT:** Confirm content version, access expiry and actual booking availability before purchase.
 
 | Resource | Access | Estimated time |
 |---|---|---|

@@ -6,20 +6,20 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-02
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-02
+upcoming_change_checked: 2026-10-28
 ---
 
 # Palo Alto Networks Certified Network Security Architect Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live certification page, October 2025 datasheet, July 2025 certification handbook, and current public Palo Alto Networks/product, cloud-provider, NIST, and regulatory sources were checked September 2, 2026. This does not guarantee every explanation is error-free or remains current. The [official page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-netsec-architect) and [datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/netsec-architect-datasheet.pdf) are authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live certification page, October 2025 datasheet, September 2026 certification handbook, and current public Palo Alto Networks/product, cloud-provider, NIST, and regulatory sources were checked October 28, 2026. This does not guarantee every explanation is error-free or remains current. The [official page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-netsec-architect) and [datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/netsec-architect-datasheet.pdf) are authoritative.
 
 **Current baseline:** Zero Trust 8%; AI security 11%; centralized management/IAM 13%; SSE private apps 11%; mobile users 7%; branch modernization 11%; data security 7%; IoT 11%; public cloud 11%; private cloud 10%; October 2025 datasheet<br>
 **Exam contract:** architect-level English Pearson VUE certification. The current handbook uses an 860 passing score on a 300–1000 scaled range and provisional results. The datasheet does not publish item count, base duration, price, or exam-form details; verify registration.<br>
 **Experience boundary:** Palo Alto Networks recommends at least five years designing, implementing, and troubleshooting security/networking in SASE, branch, private cloud, and public cloud, plus at least two years with Palo Alto Networks architecture. The credential assumes engineering competence across NGFW, Prisma Access and Prisma SD-WAN. SSE Engineer, NGFW Engineer, Network Security Analyst, and SD-WAN Engineer are recommended—not stated prerequisites.<br>
-**Validity and renewal:** two years under the July 2025 handbook, subject to current pathway rules.<br>
-**Upcoming change:** no retirement or dated replacement was found September 2, 2026. AI security, cloud services, hardware/software platforms, management/logging, locations, regulations, encryption and provider architectures change rapidly; date and source every design assumption.<br>
+**Validity and renewal:** two years from passing. The September 2026 [Certification Handbook](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf) permits higher-level exam recertification to renew active lower-level credentials in the same track; the same passed exam cannot be retaken for 545 days. Failed-attempt waits are 15, 30, then 90 days. Check your credential record and current policy before scheduling.<br>
+**Upcoming change:** no retirement or dated replacement was found October 28, 2026. AI security, cloud services, hardware/software platforms, management/logging, locations, regulations, encryption and provider architectures change rapidly; date and source every design assumption.<br>
 **Integrity:** actual exam content is confidential. This guide follows the public blueprint and uses original questions and synthetic architecture exercises only.
 
 ## How to use this guide
@@ -236,6 +236,10 @@ Map training data, model registry, Kubernetes runtime, RAG database, agents/tool
 
 Compare centralized and decentralized inspection across AWS/Azure/GCP/private cloud; reconcile overlapping addresses/identities/policies; select VM-Series versus Cloud NGFW per flow; migrate management/logging; preserve VPN/decryption; design branch/mobile/private-app access and failover; retain source configuration and exit plan.
 
+## Current product notes
+
+**Related product update (not a new exam objective):** Current Prisma Access 6.2 documentation describes native IPv6 for service connections and remote networks and multi-region resilience for Cloud Identity Engine and Enterprise DLP with a U.S.-initial rollout. Secure Agentless Access (SAA, formerly Prisma Remote Access) separates public-app browser isolation from private-app access; verify app protocol, region, tenant management mode, and license before designing availability or cost. [Prisma Access 6.2 features](https://docs.paloaltonetworks.com/prisma-access/new-features/by-version/prisma-access/6-2-preferred-innovation).
+
 ## Hands-on architecture labs
 
 1. **Requirements package:** interview a fictional business and produce measurable security/performance/HA/compliance/operations requirements, assumptions, constraints and traceability.
@@ -358,9 +362,11 @@ Compare centralized and decentralized inspection across AWS/Azure/GCP/private cl
 
 This is a selective starting set, not a complete list and not a prescription to consume everything. Pick official reference architectures, specialist refreshers, primary provider/framework sources and hands-on design reviews that close your gaps. Times are planning estimates unless a provider publishes duration; architecture, regulations, features, access and pricing change.
 
+**Official learning path:** The [current certification page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-netsec-architect) links to the Palo Alto Networks Certified Network Security Architect digital path. Palo Alto Networks describes its digital modules as free and self-paced; Learning Center registration/sign-in is required, and public pages do not state total path runtime. See [Education Services](https://www.paloaltonetworks.com/services/education) and [Learning Center registration guidance](https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA10g000000PLNxCAO&lang=en_US); course access may vary by account/region.
+
+**Official Architect digital learning path linked from the certification page** — the vendor describes free, self-paced modules; the Learning Center requires an account/sign-in and public materials do not state total runtime. The page recommends reviewing relevant Specialist paths. Do not use the earlier 35–60-hour estimate as a published duration.
 - [Official certification page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-netsec-architect) and [October 2025 datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/netsec-architect-datasheet.pdf) — **75–120 minutes** to annotate its ten-domain blueprint; public; canonical scope/experience.
 - [Palo Alto Networks Certification Handbook](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf) — **30–45 minutes**; public; verify delivery, scoring, retakes, validity/renewal, accommodations and rules.
-- Official Architect digital learning path linked from the certification page — **estimate 35–60 hours** depending on specialist mastery; Palo Alto Networks learning login may be required. Follow the live path/module durations because the architect page assumes specialist-level knowledge.
 - [Palo Alto Networks reference architectures](https://www.paloaltonetworks.com/resources/reference-architectures) — **25–50 hours selected design reading**; public; verify publication date, product release and assumptions for every pattern.
 - [PAN-OS/NGFW](https://docs.paloaltonetworks.com/pan-os), [Prisma Access](https://docs.paloaltonetworks.com/prisma-access), [Prisma SD-WAN](https://docs.paloaltonetworks.com/prisma-sd-wan), [Strata Cloud Manager](https://docs.paloaltonetworks.com/strata-cloud-manager), and [Strata Logging Service](https://docs.paloaltonetworks.com/strata-logging-service) — **50–90 hours targeted**; public; current canonical implementation constraints.
 - [Prisma AIRS](https://docs.paloaltonetworks.com/ai-runtime-security), [AI Access Security](https://docs.paloaltonetworks.com/ai-access-security), [SaaS Security](https://docs.paloaltonetworks.com/saas-security), [Enterprise DLP](https://docs.paloaltonetworks.com/enterprise-dlp), and [Device Security](https://docs.paloaltonetworks.com/iot) — **35–60 hours selected**; public; entitlements may be needed for labs.

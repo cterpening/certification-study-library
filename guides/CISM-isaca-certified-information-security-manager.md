@@ -6,9 +6,9 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-28
 upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-28
 ---
 
 # Certified Information Security Manager (CISM) Study Guide
@@ -28,6 +28,10 @@ upcoming_change_checked: 2026-09-29
 **Resource boundary:** The public certification page still advertises a 1,047-item QAE pool. The rendered course listing advertises about 16 hours, six-month access and 20 CPE, while retaining an old-material warning and linking a recommendation labeled 17th edition. The current QAE/manual and recommended-course routes rendered only shells. Do not assume that a generic link, edition label or question count establishes November alignment or an automatic upgrade. Verify the exact product before purchase; paid lessons and questions were not reviewed.
 
 **Integrity:** These are original management-reasoning exercises, not recalled exam questions. The free quiz was fetched but its items were not reviewed or submitted. No account, checkout, purchase or live organizational action occurred.
+
+## Current guide watch — October 28, 2026
+
+A new CISM outline takes effect November 3, 2026. The four domains remain, with weights changing from 17/20/33/30% to 18/20/33/29%. ISACA announces greater emphasis on security strategy and program development and added enterprise architecture and information security architecture content. The public page still displays the pre-change outline before its effective date; ISACA says updated preparation materials are available. Candidates testing on or after November 3 should use those new materials; this guide’s full task map remains the current pre-November 3 outline until the new public task statements are verifiable. [ISACA CISM update announcement](https://www.isaca.org/about-us/newsroom/press-releases/2026/isaca-updates-cism-exam-content-outline-factoring-in-todays-technologies-security-responsibilities) and [current CISM outline page](https://www.isaca.org/credentialing/cism/cism-exam-content-outline)
 
 ## How to use this guide
 

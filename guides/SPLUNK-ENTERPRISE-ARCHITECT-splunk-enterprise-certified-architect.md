@@ -6,19 +6,19 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-02
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-02
+upcoming_change_checked: 2026-10-28
 ---
 
 # Splunk Enterprise Certified Architect Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live certification page, five-page public blueprint, current Splunk Enterprise documentation, and selected resources were checked September 2, 2026. This is original learning material, not an exam dump. Recheck the [certification page](https://www.splunk.com/en_us/training/certification-track/splunk-enterprise-certified-architect.html) and [official blueprint](https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-architect.pdf) before planning or scheduling.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live certification page, five-page public blueprint, current Splunk Enterprise documentation, and selected resources were checked October 28, 2026. This is original learning material, not an exam dump. Recheck the [certification page](https://www.splunk.com/en_us/training/certification-track/splunk-enterprise-certified-architect.html) and [official blueprint](https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-architect.pdf) before planning or scheduling.
 
 **Current baseline:** 20 domains totaling 100%; the largest are Resource Planning and Indexer Cluster Management (7% each), Forwarder/Deployment Best Practices (6%), with most remaining domains at 5%, KV Store 3%, and Introduction 2%.<br>
 **Exam contract:** expert; 85 questions; 90 total minutes including three minutes for the exam agreement.<br>
 **Required exams:** Splunk Core Certified Power User and Splunk Enterprise Certified Admin.<br>
-**Required instruction:** Architecting Splunk Enterprise Deployments; Troubleshooting Splunk Enterprise; Splunk Enterprise Cluster Administration; and Splunk Enterprise Deployment Practical Lab. These are certification prerequisites, not optional recommendations; confirm completion records in the official learning path.<br>
+**Required instruction:** Architecting Splunk Enterprise Deployments; Troubleshooting Splunk Enterprise; Splunk Cluster Administration; and Splunk Enterprise Deployment Practical Lab. The current official track flowchart uses “Splunk Cluster Administration” and requires course/lab completion for exam authorization. Confirm current names and records in the official learning path.<br>
 **Lifecycle:** active; no retirement/replacement announcement was visible. The blueprint retains historical terms such as “license master” and “master app bundles”; current documentation generally uses **license manager** and **manager-node app bundle** terminology. Learn the published objective wording while using the supported terms and commands for your deployed release.<br>
 
 ## How to use this guide
@@ -103,6 +103,10 @@ Validate compatibility and bundles; back up management/KV Store/content; establi
 
 Use Job Inspector, internal logs/indexes, cluster health, bundle status, storage/network telemetry, and effective config to distinguish SPL, peer, bucket, permissions, and resource hypotheses. Make one measured correction and capture prevention.
 
+## Current product context — separate from exam objectives
+
+> **Related item:** Splunk Enterprise 10.4 release notes are a reminder to plan from the exact software version and topology: recent releases change TLS defaults, runtime requirements, config validation and access controls. The 10.4.2 Universal Forwarder `tcpout useACK=true` stall is documented as fixed in 10.4.3. Validate compatibility, backup, cluster health and rollback boundaries against the supported upgrade path; do not treat a release note as an upgrade runbook. [Splunk Enterprise 10.4 release notes](https://help.splunk.com/en/splunk-enterprise/release-notes-and-updates/release-notes/10.4/whats-new/welcome-to-splunk-enterprise-10.4)
+
 ## Hands-on labs
 
 1. Requirements interview and traceability matrix with assumptions/confidence.
@@ -144,7 +148,7 @@ This is not a complete list, and it is not meant to be consumed end to end. Pick
 |---|---|---:|---|
 | [Official certification page](https://www.splunk.com/en_us/training/certification-track/splunk-enterprise-certified-architect.html) and [blueprint](https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-architect.pdf) | Free | 60–90 min | Canonical prerequisites/scope; recheck before scheduling |
 | [Splunk Enterprise documentation](https://help.splunk.com/en/splunk-enterprise) | Free | 30–60 hr targeted | Deployed release and clustering/admin manuals |
-| Required Architecting, Troubleshooting, Cluster Administration courses and Deployment Practical Lab | Paid/partner/employer access | Roughly 35–60 hr total | Required completion; verify current delivery/durations |
+| [Official Enterprise Architect track flowchart](https://www.splunk.com/en_us/pdfs/training/splunk-enterprise-certified-architect-track.pdf); [Architecting course description](https://www.splunk.com/en_us/pdfs/training/architecting-splunk-enterprise-deployments-course-description.pdf); [Deployment Practical Lab description](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/deployment-practical-lab-course-description.pdf) | Required; paid/partner/employer access | Published duration: Architecting 9 hours; Deployment Practical Lab 24 hours; other required courses vary | Eligibility training; complete every required item and verify authorization; do not infer a total duration from two items |
 | [Splunk Validated Architectures](https://help.splunk.com/en/splunk-enterprise/get-started/splunk-validated-architectures/introduction-to-splunk-validated-architectures/about-splunk-validated-architectures) | Free | 4–8 hr selected | Validate currency and applicability; not a sizing substitute |
 | [Splunk How-To YouTube channel](https://www.youtube.com/@SplunkHowTo) | Free | 5–12 hr selected | Supplement; verify version/UI age |
 | Disposable multi-node lab and failure journal | Infrastructure/software terms vary | 45–90 hr | Synthetic data and automated rebuilds |

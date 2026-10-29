@@ -6,18 +6,18 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-02
-upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-02
+last_verified: 2026-10-28
+upcoming_change_status: none-announced
+upcoming_change_checked: 2026-10-28
 ---
 
 # Fortinet NSE 6 in Security Operations Study Guide
 
-> **Independent AI-assisted resource — SOURCES + PUBLIC REQUIREMENTS CHECKED; HUMAN REVIEW PENDING.** The pathway, current detailed option pages, announced placeholders, official documentation, and policy sources were checked September 2, 2026.
+> **Independent AI-assisted resource — SOURCES + PUBLIC REQUIREMENTS CHECKED; HUMAN REVIEW PENDING.** The pathway, current detailed option pages, announced placeholders, official documentation, and policy sources were checked October 28, 2026.
 
-**Current baseline:** This is a certification pathway. Hold active **NSE 4 FortiOS** and pass **one** proctored Security Operations exam within two years: FortiSIEM Analyst, FortiNDR Cloud Analyst, or FortiSOAR Analyst. The certification is active for two years from the second qualifying exam.<br>
+**Current baseline:** This is a certification pathway. Hold active **NSE 4 FortiOS** and pass **one** proctored Security Operations exam within two years: FortiSIEM Analyst, FortiNDR Cloud Analyst, FortiSOAR Analyst, FortiRecon 26 Analyst, or FortiDeceptor 6.2 Administrator. The certification is active for two years from the second qualifying exam.<br>
 **Exam contract:** FortiSIEM 7.4 lists 70 minutes and 35–40 questions; FortiNDR Cloud 26 lists 65 minutes and 30–40 questions; FortiSOAR 7.6 lists 75 minutes and 35–45 questions. Verify the chosen page before booking.<br>
-**Upcoming change:** The pathway says FortiRecon Analyst and FortiDeceptor Administrator will be available in August 2026, but both linked pages still say **Coming soon** on September 2. The September 17 pages identify FortiRecon 26 and FortiDeceptor 6.2 but still say Coming Soon and omit detailed objectives, item counts, and exam times. The older August availability note does not confirm registration.<br>
+**Current route update:** The exam pages and track list FortiRecon 26 Analyst and FortiDeceptor 6.2 Administrator as **Available**. Each page lists 60 minutes, 30–40 questions, and English. FortiRecon covers onboarding, ASM, Brand Protection, Adversary Centric Intelligence, reports, orchestration, and APIs; FortiDeceptor covers system/deception configuration, lures/decoys, incident analysis, strategies, integrations, and troubleshooting. Consult each live page for its detailed tasks.<br>
 **Integrity:** Use public documentation, authorized labs, and original questions. Reject dumps, recalled questions, and “guaranteed match” products.
 
 > **September 17, 2026 contract check:** Current official exam and track pages were inspected; the exam times and prerequisite statements above reflect that check. Historical objective snapshots and full technical-review dates remain unchanged. See the [exam validation report](../docs/research/2026-09-17-exam-validation.md).
@@ -38,8 +38,8 @@ For every detection or automation, document purpose, required data, schema/time,
 | FortiSIEM Analyst | Analytics; rules/subpatterns; incidents/notifications/remediation; ML/UEBA/ZTNA | FortiSIEM 7.4 |
 | FortiNDR Cloud Analyst | Architecture/settings 15–25%; events/queries 25–35%; detection 15–25%; investigations/integrations 20–30% | FortiNDR Cloud 26 |
 | FortiSOAR Analyst | Architecture/data models 20–30%; playbooks 25–35%; incident handling 5–15%; APIs/connectors 15–25%; troubleshooting 15–25% | FortiSOAR 7.6 |
-| FortiRecon Analyst | Pathway says August 2026; exam page says Coming soon | No public contract/objectives |
-| FortiDeceptor Administrator | Pathway says August 2026; exam page says Coming soon | No public contract/objectives |
+| FortiRecon 26 Analyst | Available; 60 minutes, 30–40 questions, English | FortiRecon 26; use the current exam-page task list |
+| FortiDeceptor 6.2 Administrator | Available; 60 minutes, 30–40 questions, English | FortiDeceptor 6.2; use the current exam-page task list |
 
 ## 1. Credential and shared SecOps foundation
 
@@ -111,9 +111,25 @@ For REST, JSON-RPC, FortiSOAR APIs, FortiManager APIs, custom triggers, and conn
 
 **Related item: automation blast radius.** One faulty loop or connector credential can touch thousands of records or endpoints. Bound targets and iteration, use canaries, approval, rate limits, and a kill switch.
 
-## 5. Announced FortiRecon and FortiDeceptor options
+## 5. FortiRecon 26 Analyst and FortiDeceptor 6.2 Administrator
 
-The pathway's “available in August 2026” note has passed, but both exam links remain Coming soon on September 2. This inconsistency is material. Do not treat course or product documentation as a substitute blueprint. Candidates may study exposure-management/reconnaissance or deception fundamentals, but the exam contract and objectives require a future rebaseline.
+Both options are **Available** on the live track and exam pages. Each contract lists 60 minutes, 30–40 questions, and English. Use the exam page for the current task wording; these weighted groups are the published study map, not a substitute for product documentation.
+
+### FortiRecon 26 Analyst
+
+- **Deployment (25–35%)** — explain attack-surface monitoring, threat context, licensing, provisioning and seed data; plan MSSP/customer onboarding with clear tenant ownership and data boundaries.
+- **Core module analysis (25–30%)** — triage ASM exposures and exposed services; prioritize issues; interpret credentials and web-application findings; distinguish Brand Protection from Adversary Centric Intelligence (ACI) data.
+- **Intelligence reports (15–25%)** — select a report for a SOC question, interpret its objective and evidence, and state what the report does not establish.
+- **Security orchestration and APIs (15–25%)** — map a supported playbook or integration to a bounded response, authenticate API access safely, and verify action outcomes without treating an intelligence finding as confirmed compromise.
+
+### FortiDeceptor 6.2 Administrator
+
+- **Deployment and system configuration (35–45%)** — plan modules, deployment, network/system settings, central or air-gapped management, and Fortinet or third-party integrations; verify control-plane reachability before enabling decoys.
+- **Deception (55–65%)** — deploy decoys and lures with scoped wizard/token workflows; analyze incidents, campaigns, and attack maps; apply MITRE ICS mapping where relevant; choose a deception strategy and document operational best practices.
+
+For either lane, keep the exercise isolated and authorized. Use synthetic or approved targets, define owner, scope, retention, alert routing, rollback and cleanup before onboarding assets or placing lures. A deception alert is a high-value signal to investigate, not proof that every related host is compromised. Confirm product-specific behavior in documentation for the deployed release; the blueprint defines exam scope, not configuration semantics.
+
+**Readiness drills:** For FortiRecon, take a fictional exposed-service finding from asset ownership through prioritization, report selection, and a reversible API/playbook action; record the evidence and what remains unconfirmed. For FortiDeceptor, sketch an isolated decoy deployment, show required network/control-plane paths, create a token/lure workflow, and trace an alert through campaign and attack-map analysis to containment and cleanup. In both drills, name the weighted objective group each task practices and identify any product behavior that needs a current-version check.
 
 ## Integrated scenarios
 
@@ -148,8 +164,8 @@ Use only synthetic events and owned or explicitly authorized nonproduction syste
 
 1. Is this a single composite exam?
 2. Which prerequisite must remain active?
-3. Which three options had detailed pages on September 2, 2026?
-4. What is the status ambiguity for FortiRecon and FortiDeceptor?
+3. What contract do the currently available FortiRecon 26 and FortiDeceptor 6.2 exams publish?
+4. Which weighted objective groups should a FortiRecon 26 study plan cover?
 5. What belongs in a telemetry contract?
 6. Why does source health affect detection confidence?
 7. How do event, alert, and incident differ?
@@ -183,8 +199,8 @@ Use only synthetic events and owned or explicitly authorized nonproduction syste
 
 1. No; active NSE 4 plus one qualifying specialist exam form the pathway.
 2. NSE 4 FortiOS.
-3. FortiSIEM Analyst, FortiNDR Cloud Analyst, and FortiSOAR Analyst.
-4. The pathway says August 2026 availability, but both exam pages still say Coming soon; do not infer availability or objectives.
+3. Both are Available; each lists 60 minutes, 30–40 questions, and English. Verify the live exam page before booking.
+4. Deployment (25–35%), core module analysis (25–30%), intelligence reports (15–25%), and security orchestration/APIs (15–25%).
 5. Owner/purpose, identity, method, schema/version/units/time, expected volume, retention/sensitivity, access, parsing, health, and offboarding.
 6. Missing, delayed, duplicated, misparsed, or stale data can create false negatives/positives regardless of rule quality.
 7. Raw occurrence, analytic conclusion, and managed response/decision container respectively.
@@ -222,13 +238,13 @@ This is a selective starting set, not a complete list and not a prescription to 
 |---|---|---:|---|
 | [NSE 6 in Security Operations](https://training.fortinet.com/local/staticpage/view.php?page=nse_6_security_operations) | Public | 20–30 min | Canonical requirements, options, inconsistent availability notes, renewal and policies |
 | [FortiSIEM Analyst exam](https://training.fortinet.com/local/staticpage/view.php?page=fortisiem_analyst_exam) | Public | 30–60 min | Current FortiSIEM 7.4 contract and objectives |
-| [FortiSIEM 7.4 course](https://training.fortinet.com/course/view.php?id=74942) and [documentation](https://docs.fortinet.com/product/fortisiem/7.4) | Free account/public; labs may cost | 25–45 hr plus labs | Queries, rules, incidents, UEBA/ML, ZTNA and operations |
+| [FortiSIEM Analyst 7.4 course outline](https://training.fortinet.com/local/staticpage/view.php?page=library_fortisiem-analyst) and [documentation](https://docs.fortinet.com/product/fortisiem/7.4) | Fortinet account; course/lab entitlement may vary | 9 hr lecture + 9 hr estimated labs | Queries, nested lookups, rules, incidents/remediation, hunting, ML/UEBA and ZTNA; outline reviewed, lessons not completed |
 | [FortiNDR Cloud Analyst exam](https://training.fortinet.com/local/staticpage/view.php?page=fortindr_cloud_analyst_exam) | Public | 45–75 min | Current weighted FortiNDR Cloud 26 blueprint |
-| [FortiNDR Cloud 26 course](https://training.fortinet.com/course/view.php?id=85496) and [documentation](https://docs.fortinet.com/product/fortindr-cloud/26.3) | Free account/public; labs may cost | 20–40 hr plus labs | Sensors, metadata, IQL, detections, investigations and APIs |
+| [FortiNDR Cloud Analyst 26 course outline](https://training.fortinet.com/local/staticpage/view.php?page=library_fortindr-cloud-analyst) and [documentation index](https://docs.fortinet.com/product/fortindr-cloud/26.3) | Fortinet account; course/lab entitlement may vary | 7 hr lecture + 5 hr estimated labs | Sensors, events, IQL, detections, investigations, integrations and hunting; guide names 26.3 while public docs expose 26.2.x, so verify build alignment |
 | [FortiSOAR Analyst exam](https://training.fortinet.com/local/staticpage/view.php?page=fortisoar_analyst_exam) | Public | 45–75 min | Current weighted FortiSOAR 7.6 blueprint |
-| [FortiSOAR 7.6 documentation](https://docs.fortinet.com/product/fortisoar/7.6) | Public | 25–50 hr selected | Data models, playbooks, incidents, connectors/APIs and troubleshooting |
+| [FortiSOAR Analyst 7.6 course outline](https://training.fortinet.com/local/staticpage/view.php?page=library_fortisoar-analyst) and [7.6 documentation](https://docs.fortinet.com/product/fortisoar/7.6) | Fortinet account; course/lab entitlement may vary | 8 hr lecture + 8 hr estimated labs | Data models, playbooks, Jinja/JSON/YAQL, connectors/APIs and troubleshooting; verify the solution-pack boundary for incident handling |
 | [NSE 6 Security Operations course library](https://training.fortinet.com/local/library/?category=Certification:NSE_6_Security_Operations) | Free account; labs/ILT may cost | 15–35 hr per lane | Locate the current official option course and verify duration/version after sign-in |
-| [FortiRecon placeholder](https://training.fortinet.com/local/staticpage/view.php?page=fortirecon_analyst_exam) and [FortiDeceptor placeholder](https://training.fortinet.com/local/staticpage/view.php?page=fortideceptor_administrator_exam) | Public | 5–10 min | Recheck for actual publication; both still say Coming soon |
+| [FortiRecon 26 Analyst exam](https://training.fortinet.com/local/staticpage/view.php?page=fortirecon_analyst_exam) and [FortiDeceptor 6.2 Administrator exam](https://training.fortinet.com/local/staticpage/view.php?page=fortideceptor_administrator_exam) | Public | 30–60 min each | Newly available exam contracts and objective tasks; both list 60 minutes and 30–40 questions |
 | [Fortinet exam policy](https://helpdesk.training.fortinet.com/en/support/solutions/articles/73000672593-exam-policy-recertification) | Public | 20–40 min | Retake, renewal, reuse and timing rules |
 | [MITRE ATT&CK](https://attack.mitre.org/) and [Sigma rule specification](https://sigmahq.io/docs/basics/rules.html) | Public | 8–16 hr selected | Threat-model and portable detection context; not product behavior authority |
 | [Fortinet YouTube](https://www.youtube.com/@Fortinet) | Free/YouTube | 4–10 hr selected | Official demos and architecture; verify version in current docs |
@@ -240,5 +256,5 @@ This is a selective starting set, not a complete list and not a prescription to 
 - Recheck the pathway and chosen exam for availability, version, objectives, duration, count, language, price, and current policies.
 - Confirm active NSE 4 and the two-year relationship of qualifying achievements.
 - Build and troubleshoot the chosen lane from raw telemetry through detection, incident, action, verification, and closure.
-- Treat FortiRecon and FortiDeceptor as unpublished until their linked pages expose a full contract and objectives.
+- Verify the available FortiRecon and FortiDeceptor exam contracts and objective wording against their live pages; use current product documentation for configuration details.
 - Reject unauthorized question collections and practice only with original or explicitly authorized material.

@@ -6,19 +6,23 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-28
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-28
+upcoming_change_checked: 2026-10-28
 ---
 
 # DEA-C01 AWS Certified Data Engineer - Associate Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed on September 28, 2026, including all 120 numbered skills. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dea-c01-coverage-record). The [official DEA-C01 exam guide](https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/data-engineer-associate-01.html) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed on October 28, 2026, including all 120 numbered skills. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dea-c01-coverage-record). The [official DEA-C01 exam guide](https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/data-engineer-associate-01.html) is authoritative.
 
 **Current baseline:** DEA-C01 exam guide version 1.1, published December 12, 2025; 50 scored plus 15 unscored questions<br>
 **Upcoming blueprint change:** None announced in the current guide, revisions page, or certification page as of September 28, 2026; no exam retirement was found in the reviewed sources. See the [deep-review report](../docs/research/2026-09-28-dea-c01-deep-review.md).<br>
 **Important freshness boundary:** Version 1.1 added LLM-assisted data processing, Apache Iceberg/open-table formats, HNSW and IVF vector indexes, vectorization and Bedrock knowledge-base context, SageMaker Catalog and Unified Studio governance, and related current services. It removed Cloud9, CodeCommit, and AWS SCT from the in-scope service list. The non-exhaustive service list does not erase task examples: skill 2.4.3 still names AWS SCT alongside DMS Schema Conversion. Study schema conversion and verify available tooling. Treat version 1.0 courses as gap-fill resources, not complete coverage.<br>
 **Official source:** [AWS Certified Data Engineer - Associate exam guide](https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/data-engineer-associate-01.html)
+
+## Current data-lake context — October 28, 2026
+
+Amazon S3 Tables added support for all Apache Iceberg V3 data types on September 30, including column defaults, deletion vectors, and row lineage. Redshift also announced Iceberg V3 read/write support. These features matter to table evolution, delete handling, and incremental/change-data-capture design; check engine, table type, and region compatibility before applying them. The DEA-C01 published guide/revision history remains the exam-scope authority.
 
 ## How to use this guide
 

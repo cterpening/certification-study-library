@@ -6,17 +6,17 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-02
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-02
+upcoming_change_checked: 2026-10-28
 ---
 
 # Fortinet Industry Certification in OT Security Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live industry-certification page, OT Security Architect exam page, current product versions, official documentation, and policy sources were checked September 2, 2026.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live industry-certification page, OT Security Architect exam page, current product versions, official documentation, and policy sources were checked October 28, 2026.
 
 **Current baseline:** This is a multi-credential pathway plus an architect exam. Hold **NSE 4 FortiOS**, hold **NSE 5 or NSE 6**, hold **NSE 7 in the same track as that NSE 5 or NSE 6**, and pass the proctored **NSE I - OT Security Architect** exam within two years of the last prerequisite exam. All prerequisites must be active for renewal.<br>
-**Exam contract:** The live OT Security Architect page lists 65 minutes, 35–40 questions, English, and FortiOS 7.6, FortiAnalyzer 7.6, FortiSIEM 7.4, and FortiNAC 7.6. Published objective groups are Asset management, Network access control, Network security, and Monitoring/risk assessment; Fortinet does not publish weights on this page.<br>
+**Exam contract:** The live OT Security Architect page lists 70 minutes, 35–40 questions, English, and FortiOS 7.6, FortiAnalyzer 7.6, FortiSIEM 7.4, and FortiNAC 7.6. Published objective groups are Asset management (15–25%), Network access control (25–35%), Network security (25–35%), and Monitoring/risk assessment (20–30%). The ranges overlap; do not normalize them into point weights.<br>
 **Credential contract:** The credential is active for two years from the industry exam or last prerequisite exam, whichever is later. Passing only the architect exam earns an exam badge, not the complete certification if prerequisites are absent.<br>
 **Upcoming change:** No replacement or retirement was announced on the live pages September 2, 2026. Recheck product versions and prerequisite rules immediately before booking.<br>
 **Integrity:** Use official samples and original scenarios only. Do not use real/recalled/leaked questions or production OT systems as a practice range.

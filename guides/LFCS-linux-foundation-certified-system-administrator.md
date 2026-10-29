@@ -6,9 +6,9 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-29
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-29
 ---
 
 # LFCS Linux Foundation Certified System Administrator Study Guide
@@ -526,6 +526,10 @@ All eight complete Linux labs remain proposed. The executed certificate and loop
 - Distribution networking/package paths, commands, versions, certificates, SELinux, virtualization/container engines and service implementations must be verified on the practiced/current exam environment.
 - Objective snapshot SHA-256: `7e81f913990e564ad0238c7842735843375ec30d94f036f88e194dcbfe77cb63`.
 - This guide independently maps public competencies. It does not reproduce official simulator/exam tasks, proprietary labs or recalled items.
+
+## Refresh check — October 29, 2026
+
+The current LFCS issuer page still describes a two-hour, performance-based command-line exam; the published objective snapshot and delivery contract remain unchanged. The upstream kernel stable index now lists Linux 6.18.59 (October 26) and 6.12.114 (October 21). For administration practice, use current release notes to rehearse package/update planning, kernel-log inspection, reboot scheduling, and post-update service checks, while following the chosen distribution’s supported kernel and backport policy rather than installing upstream kernels solely to match a version number. [Linux kernel stable releases](https://www.kernel.org/pub/linux/kernel/v6.x/).
 
 ## Places to learn
 

@@ -6,18 +6,18 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-02
+last_verified: 2026-10-28
 upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-02
+upcoming_change_checked: 2026-10-28
 ---
 
 # Fortinet NSE 6 in Cloud Security Study Guide
 
-> **Independent AI-assisted resource — SOURCES + PUBLIC REQUIREMENTS CHECKED; HUMAN REVIEW PENDING.** The pathway, current option pages, announced placeholder, official documentation, and policy sources were checked September 2, 2026.
+> **Independent AI-assisted resource — SOURCES + PUBLIC REQUIREMENTS CHECKED; HUMAN REVIEW PENDING.** The pathway, current option pages, announced placeholder, official documentation, and policy sources were rechecked October 28, 2026.
 
 **Current baseline:** This is a certification pathway. Hold active **NSE 4 FortiOS** and pass **one** proctored Cloud Security exam within two years: FortiCNAPP Analyst, FortiMail Administrator, or FortiDDoS Administrator. The credential is active for two years from the second qualifying exam.<br>
 **Exam contract:** FortiCNAPP 26 lists 75 minutes and 30–40 questions; FortiMail 7.4 lists 65 minutes and 30–40 questions; FortiDDoS 7.2 lists 60 minutes and 30–40 questions. Each has its own role and blueprint.<br>
-**Upcoming change:** FortiMail WorkSpace Security Administrator is announced for Q3 2026, but its linked exam page still says **Coming soon** on September 2. A September 17 check confirms the announced version is 26; timing, item count, and detailed objectives remain unpublished.<br>
+**Upcoming change:** FortiMail WorkSpace Security 26 Administrator remains marked **Coming Soon** on its live exam page October 28. The page describes its audience and broad responsibilities but publishes no exam time, item count, or detailed objectives; do not treat the earlier Q3 forecast as a launch date.<br>
 **Integrity:** Use only authorized official samples and original practice. Avoid recalled, leaked, “real,” or guaranteed-match exam content.
 
 > **September 17, 2026 contract check:** Current official exam and track pages were inspected; the exam times and prerequisite statements above reflect that check. Historical objective snapshots and full technical-review dates remain unchanged. See the [exam validation report](../docs/research/2026-09-17-exam-validation.md).
@@ -38,7 +38,7 @@ Study the selected official page in full. This guide does not combine option per
 | FortiCNAPP Analyst | Fundamentals 25–35%; End-to-end risk 35–45%; Threat detection/response 25–35% | FortiCNAPP 26 |
 | FortiMail Administrator | Initial deployment; email flow/authentication; email security; encryption; server/transparent modes | FortiMail 7.4 |
 | FortiDDoS Administrator | Fundamentals 20–30%; deployment/configuration/baselining 25–35%; protection/mitigation 25–35%; monitoring/analysis 10–20% | FortiDDoS 7.2 |
-| FortiMail WorkSpace Security Administrator | Announced for Q3 2026; placeholder | No public objectives or contract yet |
+| FortiMail WorkSpace Security 26 Administrator | Coming Soon on October 28, 2026 | No public objectives or exam contract yet |
 
 ## 1. Credential and shared cloud-service foundation
 
@@ -53,6 +53,8 @@ For every lane, inventory protected services, identities, accounts/tenants, data
 ### Architecture and onboarding
 
 Map FortiCNAPP components, tenant identity, CLI, agentless and agent-based deployment, AWS/Azure/Google Cloud accounts, Kubernetes clusters, code repositories/pipelines, telemetry, APIs, and Security Fabric integrations. Review every onboarding template/role/service account for trust, actions, resources, conditions, external IDs, regions, outputs, update, and deletion.
+
+**Version-specific release example:** FortiCNAPP's May 2026 release notes include runtime/process attribution, Windows SAST, and Kubernetes-agent updates alongside preview and service-coverage changes. Use the [official release feed](https://docs.fortinet.com/document/forticnapp/latest/release-notes) to choose a current example, and distinguish generally available features from previews and newly listed cloud-service coverage; a release-feed mention is not a universal support guarantee or exam objective.
 
 Authentication success is not coverage. Reconcile organization/account/project/subscription and cluster inventories with assets seen, scan freshness, permission errors, unsupported regions/services, and excluded scope. Generate a compliance report only after documenting denominator, framework version, mapping, evidence period, exceptions, and limitations.
 
@@ -116,7 +118,7 @@ After an event, preserve time-normalized evidence, identify targeted services an
 
 ## 5. Announced FortiMail WorkSpace option
 
-The certification page announces the option for Q3 2026, while its linked page says “Coming soon!” The September 17 page identifies FortiMail Workspace Security 26 and its intended audience, but still publishes no objective list, weights, item count, or exam time. Current FortiMail workspace-security documentation may support general learning, but rebaseline when Fortinet publishes the real exam page.
+The track page's Q3 2026 forecast has passed, while the live exam page still says “Coming Soon.” It identifies FortiMail Workspace Security 26 and its intended audience, but publishes no objective list, weights, item count, or exam time. Current FortiMail workspace-security documentation may support general learning, but rebaseline when Fortinet publishes the detailed exam contract.
 
 ## Integrated scenarios
 

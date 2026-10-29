@@ -6,9 +6,9 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-29
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-29
 ---
 
 # Salesforce Certified Platform Developer Study Guide
@@ -495,6 +495,10 @@ print(json.dumps({'passed': len(checks), 'checks': checks,
 40. Which authoritative pages will you recheck before scheduling?
 
    **Answer:** Recheck the canonical exam article, current credential/preparation pages and your maintenance/scheduling information. For implementation, inspect current versioned product documentation and org behavior.
+
+### October 29, 2026 current-source update
+
+**Related item — Winter ’27 developer context:** Salesforce's [developer release guide](https://developer.salesforce.com/blogs/2026/10/developers-guide-to-the-winter-27-release) says API 68.0 raises Apex heap limits to 10 MB synchronous/25 MB asynchronous and removes the `SF_TEMP_SHOW_SECRETS=true` CLI workaround on October 28; CLI output now redacts credentials by default. It also describes LWC complex template expressions as GA, with API/version boundaries. Verify org rollout and the cited feature-level notes before using these in a lab; they are current platform behavior, not evidence that the exam's stale Summer ’25 version label has changed. Salesforce's four-step [Platform Developer exam-prep trail](https://trailhead.salesforce.com/content/learn/trails/platform-developer-i-certification-study-guide) is listed at about 1 hr 15 min (10/35/10/20 minutes across its four badges) and uses interactive scenarios/flashcards. Use it as structured review while preserving the official objective map and testing examples in a scratch org you control.
 
 ## Places to learn
 

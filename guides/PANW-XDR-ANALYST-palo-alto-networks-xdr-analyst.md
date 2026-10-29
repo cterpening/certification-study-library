@@ -6,20 +6,20 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-02
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-02
+upcoming_change_checked: 2026-10-28
 ---
 
 # Palo Alto Networks Certified XDR Analyst Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live certification page, August 2025 datasheet, July 2025 certification handbook, Cortex XDR documentation, and public incident/detection sources were checked September 2, 2026. This does not guarantee that every explanation is error-free or remains current. The [official page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-xdr-analyst) and [datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/xdr-analyst-datasheet.pdf) are authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live certification page, August 2025 datasheet, September 2026 certification handbook, Cortex XDR documentation, and public incident/detection sources were checked October 28, 2026. This does not guarantee that every explanation is error-free or remains current. The [official page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-xdr-analyst) and [datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/xdr-analyst-datasheet.pdf) are authoritative.
 
 **Current baseline:** alert/detection 23%; incident handling/response 34%; data analysis 28%; endpoint management 15%; August 2025 datasheet<br>
 **Exam contract:** specialist-level English Pearson VUE certification. The current handbook uses an 860 passing score on a 300–1000 scaled range and provisional results. The public datasheet omits item count, base duration, price, and formal experience; verify registration.<br>
 **Experience boundary:** the datasheet expects Tier 2+ Cortex XDR competence plus networking/TCP-IP, OS/hardening, automation, security controls/models, basic Python/PowerShell/SQL/XQL, forensic/intelligence, alerts/incidents/response/query/assets knowledge. This is not an entry-level product overview.<br>
-**Validity and renewal:** two years under the July 2025 handbook, subject to current pathway rules.<br>
-**Upcoming change:** no retirement or dated replacement was found September 2, 2026. Cortex XDR UI, query helpers, retention, response, agent profiles/content, and integrations are volatile.<br>
+**Validity and renewal:** two years from passing. The September 2026 [Certification Handbook](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf) permits higher-level exam recertification to renew active lower-level credentials in the same track; the same passed exam cannot be retaken for 545 days. Failed-attempt waits are 15, 30, then 90 days. Check your credential record and current policy before scheduling.<br>
+**Upcoming change:** no retirement or dated replacement was found October 28, 2026. Cortex XDR UI, query helpers, retention, response, agent profiles/content, and integrations are volatile.<br>
 **Integrity:** actual exam content is confidential. This guide uses the public blueprint, original checks, safe labs, and synthetic data only.
 
 ## How to use this guide
@@ -128,6 +128,10 @@ Correlate ITDR authentication/session/privilege events with endpoint process and
 ### Silent endpoint group
 
 A report shows no alerts for one department. Compare expected inventory, agent operational/version/content/policy, ingestion/retention, lookup membership, and source health. Determine whether quiet means safe, collection failure, or policy exclusion; deploy a canary fix and regression detection.
+
+## Current product notes
+
+**Related product announcement (not a new exam objective):** Cortex XDR 6.0 was announced on October 19, 2026 with new agentic-endpoint and AI detection/response capabilities. Do not infer general availability or substitute those announced capabilities for the current XDR Analyst datasheet; follow current tenant release notes and access boundaries. [Cortex XDR 6.0 announcement](https://www.paloaltonetworks.com/blog/security-operations/cortex-xdr-6-0/) · [Cortex XDR lifecycle table](https://www.paloaltonetworks.com/services/support/end-of-life-announcements/end-of-life-summary).
 
 ## Hands-on labs
 
@@ -243,13 +247,14 @@ A report shows no alerts for one department. Compare expected inventory, agent o
 
 This is not a complete list, and it is not meant to be consumed in full. Use the blueprint and official XDR path as the spine, then select query, endpoint, forensics, and incident resources for measured gaps. Record tenant/release because schemas, profiles, actions, and UI evolve.
 
+**Official learning path:** The [current certification page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-xdr-analyst) links to the Palo Alto Networks Certified XDR Analyst digital path. Palo Alto Networks describes its digital modules as free and self-paced; Learning Center registration/sign-in is required, and public pages do not state total path runtime. See [Education Services](https://www.paloaltonetworks.com/services/education) and [Learning Center registration guidance](https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA10g000000PLNxCAO&lang=en_US); course access may vary by account/region.
+
 | Resource | Access | Estimated time | Best use |
 |---|---|---:|---|
 | [XDR Analyst certification page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-xdr-analyst) | Public | 10–15 minutes | Current credential, datasheet, learning path, registration |
 | [August 2025 datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/xdr-analyst-datasheet.pdf) | Public PDF | 60–90 minutes | Canonical four-domain weighted blueprint and prerequisites |
 | [Certification Handbook](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf) | Public PDF | 30–45 minutes | Scoring, ESL, results, retakes, validity, renewal, integrity |
-| [Official digital learning](https://learn.paloaltonetworks.com/learn) | Free account/login may be required | 30 minutes planning; modules vary | Follow certification-page learning plan and record live duration/version |
-| [Cortex XDR documentation](https://docs.paloaltonetworks.com/cortex/cortex-xdr) | Public | 30–50 hours selected topics/labs | Alerts/incidents, forensics/ITDR, response, XQL, dashboards, retention, Host Insights, profiles/agents |
+| [Cortex XDR documentation](https://docs-cortex.paloaltonetworks.com/r/Cortex-XDR/Cortex-XDR-5.x-Documentation/Detailed-View) | Public | 30–50 hours selected topics/labs | Alerts/incidents, forensics/ITDR, response, XQL, dashboards, retention, Host Insights, profiles/agents |
 | [MITRE ATT&CK](https://attack.mitre.org/) | Public | 4–8 hours plus mapping labs | Behavioral analysis, data sources, mitigations, hunting/detection context |
 | [NIST SP 800-61 Rev. 3](https://csrc.nist.gov/pubs/sp/800/61/r3/final) | Public primary guidance | 3–5 hours | Current incident-response lifecycle, roles, improvement, and evidence context |
 | [Unit 42 Research](https://unit42.paloaltonetworks.com/) | Public | 4–8 hours selected investigations | Current threat behavior, indicators, analysis, and response case studies |

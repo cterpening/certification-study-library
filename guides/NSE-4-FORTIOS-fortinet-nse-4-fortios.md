@@ -6,9 +6,9 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-29
 upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-29
 ---
 
 # Fortinet NSE 4 FortiOS Study Guide
@@ -443,6 +443,12 @@ These are original explanations for the numbered readiness prompts, not recalled
 38. The available exam baseline is 7.6.0, 50–55 questions and 100 minutes, with English/Japanese and pass/fail reporting. The 8.0 Coming Soon stub has no visible launch date; recheck before booking.
 39. A qualifying pass earns two years. Renewal has several conditional routes; transitioned FCP issue/expiry dates are preserved. Account eligibility and newer assessment availability still need verification.
 40. Use original exercises and official sample material for format only. Reject real/recalled/leaked-item claims and do not treat a marketplace score promise as an official pass contract.
+
+## Refresh check — October 29, 2026
+
+**Keep the exam versions separate.** The official exam page currently lists NSE 4 FortiOS 7.6 Administrator as **Available** (50–55 questions, 100 minutes, FortiOS 7.6.0) and FortiOS 8.0 Administrator as **Coming Soon** (50–60 questions, 100 minutes, FortiOS 8.0.0). The release notice had forecast an early-October 8.0 release, but the exam page had not made it bookable at this check; no exact launch date or final 7.6 last-delivery date is confirmed.
+
+The posted 8.0 topic snapshot raises Deployment/system configuration from 20–25% to 25–35% and adds FortiAI/GenAI-on-CLI, FortiSASE identity/tagging and GenAI DLP, policy tagging, telemetry, TLS 1.3 VPN negotiation, AI/ML DNS-tunneling detection, FortiGuard Extended SaaS DB, SD-WAN underlay bandwidth decisions, and quantum-safe IPsec. These are preparation signals for the upcoming 8.0 version; keep the guide’s detailed scored mapping on 7.6 until Fortinet changes availability and publishes its final date. Recheck the [official exam page](https://training.fortinet.com/local/staticpage/view.php?page=fortios_administrator_exam) and [NSE release notice](https://helpdesk.training.fortinet.com/support/solutions/articles/73000659982) before scheduling.
 
 ## Places to learn
 

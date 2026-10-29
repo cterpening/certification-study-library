@@ -6,20 +6,20 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-02
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-02
+upcoming_change_checked: 2026-10-28
 ---
 
 # Palo Alto Networks Certified Security Operations Professional Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live certification page, July 2026 datasheet, July 2025 certification handbook, official Cortex documentation, NIST/MITRE sources, and selected public learning sources were checked September 2, 2026. This does not guarantee that every explanation is error-free or remains current. The [official page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-secops-professional) and [datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/secops-professional-datasheet.pdf) are authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live certification page, July 2026 datasheet, September 2026 certification handbook, official Cortex documentation, NIST/MITRE sources, and selected public learning sources were checked October 28, 2026. This does not guarantee that every explanation is error-free or remains current. The [official page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-secops-professional) and [datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/secops-professional-datasheet.pdf) are authoritative.
 
 **Current baseline:** SecOps fundamentals 25%; threat intelligence/incident response 16%; Cortex XDR 23%; Cortex XSOAR 16%; Cortex XSIAM 20%; July 2026 datasheet<br>
 **Exam contract:** professional-level English Pearson VUE certification. Under the current handbook, Palo Alto Networks exams use an 860 passing score on a 300–1000 scaled range and provisional results. The datasheet omits item count, base duration, and price; verify them in live registration.<br>
 **Experience boundary:** job-ready basic application in a SOC, including dashboards/reports, cases, indicators, hunting, playbooks, escalation, and response. Product screens vary; prepare around workflows, evidence, permissions, and outcomes.<br>
-**Validity and renewal:** two years under the July 2025 handbook, subject to current recertification pathway rules.<br>
-**Upcoming change:** no retirement or dated replacement was found September 2, 2026. The July 2026 blueprint is recent; Cortex XDR/XSIAM/XSOAR packaging and interfaces remain volatile.<br>
+**Validity and renewal:** two years from passing. The September 2026 [Certification Handbook](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf) permits higher-level exam recertification to renew active lower-level credentials in the same track; the same passed exam cannot be retaken for 545 days. Failed-attempt waits are 15, 30, then 90 days. Check your credential record and current policy before scheduling.<br>
+**Upcoming change:** no retirement or dated replacement was found October 28, 2026. The July 2026 blueprint is recent; Cortex XDR/XSIAM/XSOAR packaging and interfaces remain volatile.<br>
 **Integrity:** actual exam content is confidential. This guide uses only the public blueprint, original questions, synthetic telemetry, and public documentation.
 
 ## How to use this guide
@@ -150,6 +150,10 @@ A dashboard shows fewer reporting agents than cloud assets. Validate inventory a
 
 A domain feed creates hundreds of alerts. Evaluate intelligence source/confidence/time, shared infrastructure, resolution history, asset/user/causality context, and related techniques. Classify TP/FP/FN risks, tune matching/correlation, expire stale data, and add human approval before global block.
 
+## Current product notes
+
+**Related release announcement (not a new exam objective):** Palo Alto Networks announced Cortex XDR 6.0 on October 19, 2026, describing agentic-endpoint visibility, app controls, runtime AI detection/response, and endpoint analytics. Treat this as an announcement until current release notes and tenant availability confirm the features; keep it distinct from existing XDR/XSIAM analyst workflows. [Cortex XDR 6.0 announcement](https://www.paloaltonetworks.com/blog/security-operations/cortex-xdr-6-0/).
+
 ## Hands-on labs
 
 1. **SOC RACI:** define roles, permissions, escalation, data access, response authority, metrics, and after-hours handoffs for the three scenarios.
@@ -264,13 +268,14 @@ A domain feed creates hundreds of alerts. Evaluate intelligence source/confidenc
 
 This is not a complete list, and it is not meant to be consumed in full. Start with the blueprint and official digital path, then choose product documentation and vendor-neutral incident/detection material for measured gaps. Verify product version, licensing, and access before investing time.
 
+**Official learning path:** The [current certification page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-secops-professional) links to the Palo Alto Networks Certified Security Operations Professional digital path. Palo Alto Networks describes its digital modules as free and self-paced; Learning Center registration/sign-in is required, and public pages do not state total path runtime. See [Education Services](https://www.paloaltonetworks.com/services/education) and [Learning Center registration guidance](https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA10g000000PLNxCAO&lang=en_US); course access may vary by account/region.
+
 | Resource | Access | Estimated time | Best use |
 |---|---|---:|---|
 | [Security Operations Professional page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-secops-professional) | Public | 10–15 minutes | Current credential, datasheet, learning path, and registration |
 | [July 2026 datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/secops-professional-datasheet.pdf) | Public PDF | 45–75 minutes | Canonical five-domain scope and named workflows/features |
 | [Certification Handbook](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf) | Public PDF | 30–45 minutes | Scoring, ESL, retakes, validity, renewal, integrity, and results |
-| [Official digital learning](https://learn.paloaltonetworks.com/learn) | Free account/login may be required | 30 minutes planning; modules vary | Follow the certification-page learning plan and record live durations |
-| [Cortex XDR documentation](https://docs.paloaltonetworks.com/cortex/cortex-xdr) | Public | 12–20 hours selected topics | Access/logs, agents, incidents, causality, hunting, analytics, response, reports |
+| [Cortex XDR documentation](https://docs-cortex.paloaltonetworks.com/r/Cortex-XDR/Cortex-XDR-5.x-Documentation/Detailed-View) | Public | 12–20 hours selected topics | Access/logs, agents, incidents, causality, hunting, analytics, response, reports |
 | [Cortex XSOAR documentation](https://docs.paloaltonetworks.com/cortex/cortex-xsoar) | Public | 10–18 hours selected topics | Integrations, TIM, playbooks, War Room, scripts/jobs, cases, Marketplace |
 | [Cortex XSIAM documentation](https://cortex-docs.paloaltonetworks.com/) | Public | 12–20 hours selected topics | Ingestion, content, incidents, analytics, BIOCs/correlations, queries, automation |
 | [NIST SP 800-61 Rev. 3](https://csrc.nist.gov/pubs/sp/800/61/r3/final) | Public primary guidance | 3–5 hours | Current incident response and CSF 2.0 lifecycle integration |

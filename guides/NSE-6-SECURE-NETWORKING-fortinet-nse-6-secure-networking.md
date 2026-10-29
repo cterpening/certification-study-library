@@ -6,18 +6,18 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-02
+last_verified: 2026-10-28
 upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-02
+upcoming_change_checked: 2026-10-28
 ---
 
 # Fortinet NSE 6 in Secure Networking Study Guide
 
-> **Independent AI-assisted resource — SOURCES + PUBLIC REQUIREMENTS CHECKED; HUMAN REVIEW PENDING.** The certification page, current detailed exam pages, announced-exam placeholders, documentation, and policy links were checked September 2, 2026.
+> **Independent AI-assisted resource — SOURCES + PUBLIC REQUIREMENTS CHECKED; HUMAN REVIEW PENDING.** The certification page, current detailed exam pages, announced-exam placeholders, documentation, and policy links were rechecked October 28, 2026.
 
 **Current baseline:** This is a certification pathway, not one composite exam. Earn and keep **NSE 4 FortiOS** active, then pass **one** current proctored Secure Networking exam within two years: FortiManager Administrator or FortiNAC Administrator. The certification is active for two years from the second qualifying exam.<br>
 **Exam contract:** Each option has its own version, duration, question count, language, and blueprint. FortiManager currently lists 70 minutes, 30–40 questions, FortiManager 7.6.1/FortiOS 7.6; FortiNAC-F lists 60 minutes, 30–35 questions, FortiNAC-F 7.6/FortiOS 7.6. Verify the chosen live exam page before booking.<br>
-**Upcoming change:** The certification page says FortiVoice Administrator and FortiAnalyzer Administrator will be available in Q3 2026, but both linked pages still say **Coming soon** on September 2. Do not assume availability, contract, version, or objectives until a detailed page replaces the placeholder.<br>
+**Upcoming change:** FortiVoice Administrator and FortiAnalyzer Administrator remain **Coming soon** on their direct exam pages October 28, after the track page's Q3 2026 forecast. Do not infer availability, contract, version, or objectives from the forecast or product documentation.<br>
 **Integrity:** Use official sample questions only as a format/scope illustration. Reject recalled, leaked, “real,” or guaranteed-match questions.
 
 > **September 17, 2026 contract check:** Current official exam and track pages were inspected; the exam times and prerequisite statements above reflect that check. Historical objective snapshots and full technical-review dates remain unchanged. See the [exam validation report](../docs/research/2026-09-17-exam-validation.md).
@@ -37,8 +37,8 @@ This guide teaches the shared decision model and current option lanes. It does n
 | NSE 4 FortiOS | Required and must be active | FortiOS administration foundation |
 | FortiManager Administrator | Detailed exam available | Administration 15–25%; Device manager 20–30%; Policy and objects 25–35%; Advanced configuration 10–20%; Troubleshooting 20–30% |
 | FortiNAC Administrator | Detailed exam available | Concepts/initial configuration 10–20%; Deployment/provisioning 30–40%; Integration 15–25%; Visibility/monitoring 25–35% |
-| FortiVoice Administrator | Announced for Q3 2026; placeholder page | No public objectives or contract yet |
-| FortiAnalyzer Administrator | Announced for Q3 2026; placeholder page | No public objectives or contract yet |
+| FortiVoice Administrator | Coming soon on October 28, 2026 | No public objectives or contract yet |
+| FortiAnalyzer Administrator | Coming soon on October 28, 2026 | No public objectives or contract yet |
 
 ## 1. Understand the credential contract
 
@@ -84,7 +84,7 @@ Understand import versus install direction and the consequences of per-policy, d
 
 ### Advanced services and troubleshooting
 
-Design FortiManager HA with quorum/failover, synchronization, management reachability, backups, and recovery tests. When it supplies FortiGuard services or caching, validate contracts, packages, update age, server override, reachability, and downstream distribution. Global policies need narrow assignment and ordering evidence.
+Design FortiManager HA with quorum/failover, synchronization, management reachability, backups, and recovery tests. When it supplies FortiGuard services or caching, validate contracts, packages, update age, server override, reachability, and downstream distribution. Global policies need narrow assignment and ordering evidence. The [FortiManager 7.6 change log](https://docs.fortinet.com/document/fortimanager/7.6.0/new-features/4/change-log) records version-specific install-on behavior for IPsec templates and managed-device failover improvements; verify the target build and topology before using these as examples.
 
 Troubleshoot from transport and FGFM through registration, ADOM/device database, import/install task, device response, revision, resources, filesystem/database integrity, and keepalive/recovery state. Preserve failed task and debug evidence before retrying.
 
@@ -95,6 +95,8 @@ Troubleshoot from transport and FGFM through registration, ADOM/device database,
 ### Architecture, discovery, and isolation
 
 Map FortiNAC-F components, manager/distributed topology, network devices, endpoint observations, groups, logical networks, enforcement points, and captive/isolation networks. Discovery creates evidence about a device; it does not establish identity or trust by itself.
+
+**Version-specific identity example:** FortiNAC-F 7.6.3 documents options including native Entra ID authentication for RADIUS/portal flows and TEAP multiple inner authentication. Treat these as release-specific integration choices: confirm supported topology, identity-provider setup, and authentication method in the [FortiNAC-F 7.6.3 notes](https://docs.fortinet.com/document/fortinac-f/7.6.3/release-notes/590876/whats-new-in-fortinac-f-7-6-3) before testing. They are not extra FortiNAC exam objectives.
 
 For each infrastructure device, validate supported model/firmware, credentials, SNMP/syslog/trap behavior, polling, VLAN/role controls, and a known event. Separate visibility-only deployment from active enforcement.
 
@@ -231,7 +233,7 @@ This is a selective starting set, not a complete list and not a prescription to 
 | [FortiNAC Administrator exam](https://training.fortinet.com/local/staticpage/view.php?page=fortinac_administrator_exam) | Public | 45–75 min | Current contract, weighted objectives and official source links |
 | [NSE 6 Secure Networking course library](https://training.fortinet.com/local/library/?category=Certification:NSE_6_Secure_Networking) | Free account; labs/ILT may cost | 15–30 hr selected | Find the current FortiNAC course and future option courses; verify duration/version after sign-in |
 | [FortiNAC-F 7.6 documentation](https://docs.fortinet.com/product/fortinac-f/7.6) | Public | 20–40 hr selected | Architecture, deployment, Manager, access, integrations and operations |
-| [FortiVoice Administrator placeholder](https://training.fortinet.com/local/staticpage/view.php?page=fortivoice_administrator_exam) and [FortiVoice 7.6 docs](https://docs.fortinet.com/product/fortivoice-enterprise/7.6) | Public | 6–12 hr fundamentals | Pre-study only; the exam page still says Coming soon |
+| [FortiVoice Administrator placeholder](https://training.fortinet.com/local/staticpage/view.php?page=fortivoice_administrator_exam) and [FortiVoice 8.0 documentation](https://docs.fortinet.com/product/fortivoice-enterprise/8.0) | Public | 6–12 hr fundamentals | Pre-study only; the exam page still says Coming soon, and product documentation does not establish exam scope |
 | [FortiAnalyzer Administrator placeholder](https://training.fortinet.com/local/staticpage/view.php?page=fortianalyzer_administrator_exam) and [FortiAnalyzer 7.6 docs](https://docs.fortinet.com/product/fortianalyzer/7.6) | Public | 8–16 hr fundamentals | Pre-study only; do not infer unpublished exam objectives |
 | [Fortinet Training Institute exam policy](https://helpdesk.training.fortinet.com/en/support/solutions/articles/73000672593-exam-policy-recertification) | Public | 20–40 min | Retake, reuse, renewal and timing rules |
 | [Fortinet YouTube](https://www.youtube.com/@Fortinet) | Free/YouTube | 3–8 hr selected | Official architecture and feature demonstrations; verify product version in current docs |

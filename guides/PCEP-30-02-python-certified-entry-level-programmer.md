@@ -6,17 +6,17 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-29
 upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-29
 ---
 
 # PCEP-30-02 Certified Entry-Level Python Programmer Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked September 29, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#pcep-30-02-coverage-record). The [official PCEP syllabus](https://pythoninstitute.org/pcep-exam-syllabus/) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were rechecked October 29, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#pcep-30-02-coverage-record). The [official PCEP syllabus](https://pythoninstitute.org/pcep-exam-syllabus/) is authoritative.
 
 **CURRENT BLUEPRINT — current baseline:** PCEP-30-02, whose detailed syllabus is dated February 23, 2022 and remains marked active<br>
-**VERIFY CURRENT — upcoming blueprint change:** PCEP-30-03 is in development and was announced for Q3 2026; the live credential page still identifies PCEP-30-02 as the current version, so verify the code and syllabus immediately before purchase<br>
+**VERIFY CURRENT — upcoming blueprint change:** PCEP-30-03 is pending release and scheduled for October 31, 2026; PCEP-30-02 remains the current active version as of October 29. Recheck code and syllabus immediately before purchase<br>
 **VERIFY CURRENT — official delivery snapshot:** 30 questions; 40-minute exam plus 5-minute NDA/tutorial; 70% passing score; TestNow delivery; English, Spanish, Portuguese, Polish, and Japanese listed<br>
 **VERIFY CURRENT — credential snapshot:** no formal prerequisite; five-year validity; exam from USD 69 when checked; a failed attempt requires a seven-day wait<br>
 
@@ -720,11 +720,15 @@ The JSON output reports `"passed": 82` and the labels of all passing checks. The
 ## Source and freshness notes
 
 - The detailed syllabus controls the four block names, item counts, weights, and topic boundary. The [PCEP credential page](https://pythoninstitute.org/pcep/) controls current version, delivery, price, language, prerequisite, validity, and retake details.
-- The official practice product currently disagrees with the syllabus by one percentage point in blocks 2 and 3. The syllabus is used here; revalidate both pages when PCEP-30-03 launches.
+- The official practice product currently disagrees with the syllabus by one percentage point in blocks 2 and 3. The syllabus is used here; revalidate both pages when PCEP-30-03 launches on its scheduled date.
 - The direct source checker timed out for Python Institute and Harvard, while the web reader retrieved their public pages. Those access paths are reported separately; no successful direct monitor/hash comparison is claimed. The current displayed syllabus was compared with the retained objective snapshot, which was not rewritten. The PDF was read through extracted page text, not downloaded as a locally hashed PDF.
 - The [PCEP testing policies](https://pythoninstitute.org/pcep-testing-policies) describe proctored delivery and a seven-day wait after failure. The credential page and practice store disagree about which account role redeems practice access; follow current vendor instructions for your account. No account, purchase, voucher redemption or exam attempt was performed.
 - Python behavior is grounded in the versioned references above and the [Python tutorial](https://docs.python.org/3/tutorial/). Only selected documentation sections were read; source capture does not mean the entire language reference or linked courses were completed.
 - This guide paraphrases the public objectives and uses original examples, scenarios, labs, checks, and answers. It contains no recalled/live items, answer dumps, or copied paid-course questions.
+
+### October 29, 2026 current-source update
+
+**VERIFY CURRENT — scheduled version transition:** the [official PCEP page](https://pythoninstitute.org/pcep/) identifies PCEP-30-02 as active and PCEP-30-03 as pending release, scheduled for October 31, 2026. This guide remains scoped to 30-02; recheck the active code and syllabus before buying or using a new course. The [Python version index](https://www.python.org/doc/versions/) now lists Python 3.15.2 and 3.14.10 (October 25 releases). Use a supported, recorded interpreter for practice; the exam syllabus does not require these patch versions. The issuer maps the free [Python Essentials 1](https://edube.org/study/pe1) self-paced course to PCEP (provider estimate: 42 hours); compare lessons to the active syllabus during the transition.
 
 ## Places to learn
 

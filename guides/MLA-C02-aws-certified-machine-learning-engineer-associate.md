@@ -6,9 +6,9 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-28
+last_verified: 2026-10-28
 upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-28
+upcoming_change_checked: 2026-10-28
 ---
 
 # MLA-C02 AWS Certified Machine Learning Engineer - Associate Study Guide
@@ -28,6 +28,10 @@ upcoming_change_checked: 2026-09-28
 **Coverage and resources:** All 107 skills on the four C02 domain pages were reviewed. The automated broad-domain snapshot matches the accepted baseline; it does not track each detailed skill. Provider labels are insufficient: the Tutorials Dojo page now lists C02 domain sections, but still combines 65 questions with 170 minutes, unlike AWS's 85-question beta. Paid-bank coverage remains unverified. See the [review report](../docs/research/2026-09-28-mla-c02-deep-review.md).
 
 **Lab availability:** The [June 30 availability announcement](https://aws.amazon.com/about-aws/whats-new/2026/06/aws-service-availability/) places the original Amazon Bedrock Agents, now **Agents Classic**, and several SageMaker features in maintenance with July 30 new-customer closure. Do not assume an old action-group or Clarify/Debugger/Model Monitor walkthrough can be created in a new account. Preserve the agent, evaluation and monitoring concepts; select a currently supported implementation and verify account access before a paid lab. AgentCore capabilities have their own contracts and are not a drop-in replacement for every Classic resource.
+
+## Current guide watch — October 28, 2026
+
+MLA-C02 beta delivery began September 29, 2026, after registration opened September 1. AWS’s guide keeps four domains and expands work to foundation models, generative AI, agentic workflows, responsible AI, and operating and securing AI/ML systems. Standard delivery is scheduled for January 14, 2027; beta format and timing differ from the standard exam. Use the C02 guide for current scope; the C01 guide remains historical. [MLA-C02 official exam guide](https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02.html) and [AWS transition announcement](https://aws.amazon.com/blogs/training-and-certification/updates-to-aws-certified-machine-learning-engineer-associate-mla-c02/)
 
 ## How to use this guide
 

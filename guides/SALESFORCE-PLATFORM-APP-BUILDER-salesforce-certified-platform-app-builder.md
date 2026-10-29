@@ -6,9 +6,9 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-29
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-29
 ---
 
 # Salesforce Certified Platform App Builder Study Guide
@@ -19,7 +19,7 @@ upcoming_change_checked: 2026-09-29
 
 **VERIFY CURRENT — exam details:** The guide lists 60 multiple-choice questions plus up to five unscored, 105 minutes, a 73% passing score, USD 200 registration and USD 100 retake plus taxes, and no prerequisite. Six to twelve months of relevant experience describes the intended audience. Recheck the actual booking terms and regional availability.
 
-**Refresh and upcoming changes:** The [August 27, 2026 Salesforce Admins interview](https://admin.salesforce.com/blog/2026/what-does-the-salesforce-platform-app-builder-certification-prove-today-podcast) confirms the refreshed emphasis on building, maintaining and troubleshooting Flow, with foundational Agentforce use. The previously cited August 21 launch date was not independently reverified from a readable primary announcement in this review. No later blueprint or retirement announcement was found in the checked sources. Current product features do not by themselves announce an exam refresh.
+**Refresh and upcoming changes:** The [August 27, 2026 Salesforce Admins interview](https://admin.salesforce.com/blog/2026/what-does-the-salesforce-platform-app-builder-certification-prove-today-podcast) confirms the refreshed emphasis on building, maintaining and troubleshooting Flow, with foundational Agentforce use. The [Salesforce Certification Change Management lead announced](https://trailhead.salesforce.com/trailblazer-community/groups/0F9300000001vuUCAQ) on August 24 that the update launched August 21, 2026; the current exam guide now shows Summer ’26 alignment. No later blueprint or retirement announcement was found in the checked sources. Current product features do not by themselves announce an exam refresh.
 
 **VERIFY CURRENT — maintenance discrepancy:** The exam article says three maintenance badges per year, but the dedicated [maintenance policy](https://help.salesforce.com/s/articleView?id=005298841&language=de&type=1) and [schedule](https://help.salesforce.com/s/articleView?id=005298922&language=de&type=1) specify one annual badge and place App Builder in the Winter cycle. Their English bodies were readable through German-locale routes. The schedule lists Winter ’26 availability December 11, 2025 and due date December 4, 2026, in Pacific time; dates may change. Use the requirement assigned in your credential profile and the dedicated schedule. The conflicting exam-page sentence remains recorded for clarification.
 
@@ -396,6 +396,10 @@ Original prompts and answer notes for explanation and demonstration, not live ex
 39. **What annual action keeps the credential current?** The dedicated policy specifies an annual Winter maintenance badge; the exam page says three per year. Use your assigned requirement and current schedule, keeping the conflict visible.
 
 40. **Which authoritative pages will you recheck before scheduling?** Read the canonical exam guide, current credential/preparation trail, dedicated maintenance policy/schedule and actual booking terms. Do not substitute commercial course metadata.
+### October 29, 2026 current-source update
+
+The currently published [Summer ’26 exam guide](https://help.salesforce.com/s/articleView?id=005298964&language=en_US&type=1) states 60 multiple-choice items plus up to five unscored, 105 minutes, 73% passing, no prerequisite, and objective weights of Fundamentals 18%, Data Modeling 20%, Business Logic and Process Automation 32%, User Interface 17%, and App Deployment 13%. Its updated tasks explicitly include AgentExchange, external data sources, Agentforce business-process automation, and flow maintenance/troubleshooting. Align practice to that current outline. The official [Platform App Builder preparation trailmix](https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-platform-app-builder-credential) is a broader curated route; the indexed Spanish equivalent lists about 39 hr 20 min, while English-path duration was not confirmed. Use only the current exam guide to decide scope, and verify locale/access and the credential-assigned maintenance requirement.
+
 ## Places to learn
 
 This is not a complete list. Select resources by the gaps you can demonstrate. Current scope is **18/20/32/17/13**; reconcile any older course map. Public metadata does not establish paid lesson quality or complete blueprint coverage. “Planning” times are our estimates.

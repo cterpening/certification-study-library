@@ -6,20 +6,21 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-04
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-04
+upcoming_change_checked: 2026-10-28
 ---
 
 # 1Z0-1067-26 Oracle Cloud Infrastructure Cloud Operations Professional Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide maps Oracle University's public 2026 learning-path scope checked September 4, 2026. It is unofficial and may contain errors. The [official OCI Cloud Operations Professional learning path](https://mylearn.oracle.com/ou/learning-path/become-an-oci-cloud-operations-professional-2026/163390) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide maps Oracle University's public 2026 learning-path scope checked October 28, 2026. It is unofficial and may contain errors. The [official OCI Cloud Operations Professional learning path](https://mylearn.oracle.com/ou/learning-path/become-an-oci-cloud-operations-professional-2026/163390) is authoritative.
 
 **Assessment contract exposed by the current path:** Oracle Cloud Infrastructure Cloud Operations Professional, exam 1Z0-1067-26, 90 minutes.<br>
-**Published scope:** security posture; billing and account management; OCI CLI and shell operations; Terraform, Resource Manager, and Ansible; resilient network and disaster-recovery design; observability and monitoring; custom images, scaling, DNS, load balancing, and troubleshooting.<br>
+**Published scope (high-level path topics):** security posture; billing and account management; OCI CLI and shell operations; Terraform, Resource Manager, and Ansible; resilient network and disaster-recovery design; observability and monitoring. The guide uses custom images, scaling, DNS, load balancing, and troubleshooting as derived examples/practice areas within those topics; Oracle’s path does not enumerate these as separate published objectives.<br>
 **Recommended experience on the path:** strong core IAM, networking, compute, and storage knowledge plus at least one year of hands-on OCI work.<br>
 **Source boundary:** no public weights, question count, or passing score are inferred. **VERIFY CURRENT** in MyLearn before scheduling.
 
+**Japanese-language option (Japan only; checked October 28, 2026):** Oracle's September 4 launch notice added 1Z0-1067-26-JPN. The current Japanese exam list shows 90 minutes, 50 questions, and a 68% pass score for that distinct code. This route does not replace the English exam or its contract. [Japan launch notice](https://www.oracle.com/jp/education/news/) · [Japanese exam list](https://www.oracle.com/jp/education/certification/certification-exam-list/).
 ## How to use this guide
 
 Practice every operation as declared state → authorized change → pre-check → execution → observable result → rollback or recovery. Prefer repeatable CLI/IaC over screenshots, but never run destructive commands against resources you do not own.
@@ -75,6 +76,8 @@ Troubleshoot from symptom and timeline through recent changes, identity, quotas,
 
 > **Related item:** An alarm that fires without an owned response path is telemetry, not an operational control.
 
+**Related item: current OKE version boundary (October 2026).** Oracle lists Kubernetes 1.36.4 as GA and 1.37.0 as preview for OC1 only; 1.37 is not recommended for production. The preview changes LoadBalancer defaults and requires a TLS Secret in the Service namespace. This version-sensitive example may help test the guide's OKE operations workflow, but it is not an exam baseline. Check the [supported-version calendar](https://docs.oracle.com/en-us/iaas/Content/ContEng/Concepts/contengaboutk8sversions.htm) before a lab.
+
 ## Integrated practice scenarios
 
 1. **Failed deployment:** Correlate Resource Manager job output, work requests, IAM denial, and Terraform state; repair least privilege and rerun safely.
@@ -114,5 +117,6 @@ This is a selective learning path, not a complete list of OCI operations resourc
 | Resource | Access | Estimated time |
 |---|---|---:|
 | [Official OCI Cloud Operations Professional learning path](https://mylearn.oracle.com/ou/learning-path/become-an-oci-cloud-operations-professional-2026/163390) | Oracle account/subscription may be required | **22+ hours** as published by Oracle University |
+| [OCI APM with OpenTelemetry tutorial](https://docs.oracle.com/en/learn/oci-apm-with-opentelemetry/index.html) | Public tutorial; OCI tenancy and Node.js sample app required; usage may incur charges | No publisher duration; 2–4 hours is a coordinator estimate for selected steps | Instrument an application, send traces/metrics to APM and logs to Logging Analytics; current commands and tenant costs must be verified |
 | [OCI documentation](https://docs.oracle.com/en-us/iaas/Content/home.htm) | Public | **12–18 hours** targeted operational reading |
 | Eight labs in this guide | Authorized OCI tenancy | **28–40 hours** plus two timed incidents |

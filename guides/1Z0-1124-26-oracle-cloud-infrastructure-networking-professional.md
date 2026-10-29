@@ -6,14 +6,14 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-04
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-04
+upcoming_change_checked: 2026-10-28
 ---
 
 # 1Z0-1124-26 Oracle Cloud Infrastructure Networking Professional Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide maps Oracle University's public 2026 learning-path scope checked September 4, 2026. It is unofficial and may contain errors. The [official OCI Networking Professional learning path](https://mylearn.oracle.com/ou/learning-path/become-an-oracle-cloud-infrastructure-networking-professional-2026/163340) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide maps Oracle University's public 2026 learning-path scope checked October 28, 2026. It is unofficial and may contain errors. The [official OCI Networking Professional learning path](https://mylearn.oracle.com/ou/learning-path/become-an-oracle-cloud-infrastructure-networking-professional-2026/163340) is authoritative.
 
 **Assessment contract exposed by the current path:** Oracle Cloud Infrastructure Networking Professional, exam 1Z0-1124-26, 90 minutes.<br>
 **Published scope:** plan and design OCI networking; hybrid and multicloud architectures; secure implementation and operations; workload migration; troubleshooting.<br>
@@ -91,6 +91,10 @@ Change one well-supported hypothesis at a time. Record expected observation, act
 2. **Private multicloud data service:** Design cross-cloud routing, DNS, encryption, prefix filters, return paths, monitoring, and support boundaries for an application consuming a private database endpoint.
 3. **Zero-downtime migration:** Discover an existing web application, establish OCI connectivity, migrate data and compute, switch DNS, validate transactions, and exercise rollback after a simulated path fault.
 
+## Current product context — separate from exam objectives
+
+> **Related item:** Oracle’s 2026 OCI refresh removed calendar years from certification names while keeping exam codes; Oracle states OCI credentials are valid for 24 months and professional-level courses require paid access. Recent OCI Networking changes include IPv4 NAT for Dynamic Routing Gateway (October 1, 2026) and FastConnect traffic draining for private virtual circuits (September 16, 2026). Treat these as dated product context; verify topology, region, and current service limits before using them in a design.
+
 ## Hands-on labs
 
 1. Create an address plan for six VCNs, two sites, and another cloud; detect and resolve an intentional overlap.
@@ -123,6 +127,6 @@ This is a selective learning path, not a complete list of OCI networking resourc
 
 | Resource | Access | Estimated time |
 |---|---|---:|
-| [Official OCI Networking Professional learning path](https://mylearn.oracle.com/ou/learning-path/become-an-oracle-cloud-infrastructure-networking-professional-2026/163340) | Oracle account/subscription may be required | **19+ hours** as published by Oracle University |
+| [Official OCI Networking Professional learning path](https://mylearn.oracle.com/ou/learning-path/become-an-oracle-cloud-infrastructure-networking-professional-2026/163340) | Paid Professional course; Oracle account sign-in | **19+ hours** as published by Oracle University |
 | [OCI Networking documentation](https://docs.oracle.com/en-us/iaas/Content/Network/Concepts/overview.htm) | Public | **12–18 hours** targeted study |
 | Eight labs in this guide | Authorized OCI tenancy or paper design | **28–40 hours** plus two timed troubleshooting drills |

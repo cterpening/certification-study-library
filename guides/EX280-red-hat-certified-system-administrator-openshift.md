@@ -6,21 +6,25 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-28
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-28
+upcoming_change_checked: 2026-10-28
 ---
 
 # EX280 Red Hat Certified System Administrator in OpenShift Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 28, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ex280-coverage-record). The [official EX280 objectives](https://www.redhat.com/en/services/training/red-hat-certified-openshift-administrator-exam) are authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on October 28, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ex280-coverage-record). The [official EX280 objectives](https://www.redhat.com/en/services/training/red-hat-certified-openshift-administrator-exam) are authoritative.
 
-**Current public-page baseline:** The headline says Red Hat OpenShift Container Platform 4.22; the same page's delivery paragraph still says tasks are based on 4.18<br>
+**Current public-page baseline:** Red Hat now states OpenShift Container Platform 4.22 in both the exam description and delivery paragraphs<br>
 **Upcoming/version change:** Multiple versions remain in use; no future effective date is established by that statement<br>
 **Binding version rule:** Confirm the version shown in the purchase/LMS assignment. Use that version's objectives and product documentation—not this page's mixed metadata or a third-party course title—as the final scope.<br>
 **Official source:** [Red Hat EX280 exam page](https://www.redhat.com/en/services/training/red-hat-certified-openshift-administrator-exam)
 
-**CURRENT BLUEPRINT / VERIFY CURRENT:** On September 28, the public [version-specific objectives PDF](https://training-lms.redhat.com/public_content/redhat/training/Red%20Hat%20Certification%20Exam%20Objectives%20by%20Version.pdf) includes `EX280V422`, matching this guide's 55-task, nine-group map. It also contains older version lists; these are not interchangeable. The PDF does not settle the main page's 4.18 delivery wording. Select the exact assigned version before booking or building a cluster; keep the mismatch visible pending clarification.
+**CURRENT BLUEPRINT / VERIFY CURRENT:** On October 28, the public [version-specific objectives PDF](https://training-lms.redhat.com/public_content/redhat/training/Red%20Hat%20Certification%20Exam%20Objectives%20by%20Version.pdf) still includes `EX280V422`, matching this guide's 55-task, nine-group map. The current EX280 exam page now consistently identifies 4.22 in its headline and delivery paragraph. The PDF also contains older version lists; these are not interchangeable. Select the assigned version before booking or building a cluster.
+
+## Current guide watch — October 28, 2026
+
+- The live EX280 page now consistently specifies OpenShift Container Platform 4.22 in both the exam baseline and delivery paragraphs; its earlier 4.18 delivery wording is no longer present. The version-specific objective PDF still contains EX280V422. Use the version assigned in the exam portal. OCP 4.22 release notes add platform context such as Kubernetes 1.35, but do not expand the hands-on objective list. Red Hat's May framework changed credential mapping and validity, not this exam's tasks. See [OCP 4.22 documentation](https://docs.redhat.com/en/documentation/openshift_container_platform/4.22) and the [Red Hat certification FAQ](https://www.redhat.com/en/services/training-and-certification/faq).
 
 ## How to use this guide
 

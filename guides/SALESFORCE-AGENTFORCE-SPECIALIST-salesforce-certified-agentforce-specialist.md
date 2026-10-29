@@ -6,9 +6,9 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-29
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-29
 ---
 
 # Salesforce Certified Agentforce Specialist Study Guide
@@ -516,6 +516,10 @@ print(json.dumps({'passed': len(checks), 'checks': checks,
 40. Which official pages will you recheck before scheduling and deployment?
 
    **Answer:** Recheck the canonical exam article, credential/preparation and assigned maintenance requirement. For deployment, recheck specific access, masking, library, testing and API documentation against the target org.
+
+### October 29, 2026 current-source update
+
+**Related item — Winter ’27 platform context:** Salesforce says the release rollout completed by October 9, with instance schedules varying. Its [developer update](https://developer.salesforce.com/blogs/2026/10/developers-guide-to-the-winter-27-release) documents new Agent Script functions and `else if`, multi-agent orchestration GA, and bidirectional MCP: agents can call MCP tools, while external MCP clients can invoke agents built with the new Agent Script Builder. Calls run as the authenticated user and retain sharing, field-level security, and Trust Layer policies. Test these behaviors only in an eligible org and check the current release notes; monthly product updates do not automatically revise this exam's Spring ’26 objective map. For applied follow-up, Trailhead's [Agentblazer Legend 2026 trail](https://trailhead.salesforce.com/content/learn/trails/become-an-agentblazer-legend-2026) lists about 17 hr 28 min and requires earlier trail completion; account tracking and some exercises may need an org. Use its current lessons as extended practice, then return to the exam guide for what is scored.
 
 ## Places to learn
 

@@ -6,9 +6,9 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-30
+last_verified: 2026-10-29
 upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-30
+upcoming_change_checked: 2026-10-29
 ---
 
 # PCAT-31-01 Certified Associate Tester with Python Study Guide
@@ -74,7 +74,7 @@ Automate stable, repeatable checks with clear oracles. A frequently changing UI,
 
 The [coverage.py branch documentation](https://coverage.readthedocs.io/en/latest/branch.html) distinguishes executable statements from decision destinations. The original `allowed` probe deliberately uses `1 <= quantity < 5` where the integer contract includes 5. Inputs **0 and 1** return the expected False/True and execute **4/4 statements and 2/2 branches: 100% combined coverage**. Only a later, independent boundary-5 check exposes expected True versus actual False. Coverage identifies execution opportunities, not all important values or correct oracles.
 
-The probe measures only that temporary module, starting before import, with no added exclusions or persistent coverage database. [The selected API contracts](https://coverage.readthedocs.io/en/latest/api_coverage.html) support start/stop and JSON reporting. Runtime coverage.py 7.15.4 differs from documentation 7.16.2. No whole-catalog coverage, method-coverage total or type-policy completeness is inferred. Unexecuted code may be untested, unreachable under current assumptions or obsolete; investigate before labeling it dead or excluding it from a denominator.
+The probe measures only that temporary module, starting before import, with no added exclusions or persistent coverage database. [The selected API contracts](https://coverage.readthedocs.io/en/latest/api_coverage.html) support start/stop and JSON reporting. Runtime coverage.py 7.15.4 differs from the current documentation version 7.17.0. No whole-catalog coverage, method-coverage total or type-policy completeness is inferred. Unexecuted code may be untested, unreachable under current assumptions or obsolete; investigate before labeling it dead or excluding it from a denominator.
 
 ## 3. Assertions, contexts, decorators, and method types — 11.9%
 
@@ -1072,6 +1072,10 @@ The workbook executes components of these 12 labs. The complete layered plan, fi
 - The full PDF, 12 broader labs, real integrations, course/BDD plugins, stakeholder discussion and independent human content/accessibility review remain pending. No readiness approval is implied.
 
 ## Places to learn
+
+### October 29, 2026 source update
+
+The issuer currently marks PCAT-31-01 active and PCAT-31-02 in development; the six-block 31-01 testing syllabus remains unchanged. Its introduction still contains a conflicting 31-02/four-block description, so use the 31-01 header, alignment and six-block testing table while retaining the source conflict. [PT102](https://pythoninstitute.org/python-for-testing-102) is the strongest current official learning route: intermediate, six modules and 40+ lessons, with a provider estimate of 4–5 weeks, free Core and $49 Pro. The separate Study Resources listing gives a 30–40-hour estimate; treat these as conflicting estimates, not a normalized duration. The page's Core/Pro lab descriptions are inconsistent, so confirm entitlement before relying on free labs. PT101 is PCET preparation and only a possible Python foundation, not PCAT coverage. Official practice tests are still described as in development. No course interior was accessed. See the [current PCAT page](https://pythoninstitute.org/pcat), [PT102 page](https://pythoninstitute.org/python-for-testing-102), [Study Resources](https://pythoninstitute.org/study-resources), and current [Python 3.14 documentation](https://docs.python.org/3.14/).
 
 This is not a complete list and is not intended to be consumed in full. Use the official PT102 outline to select aligned material, maintain your own test suite, and choose targeted resources for gaps.
 

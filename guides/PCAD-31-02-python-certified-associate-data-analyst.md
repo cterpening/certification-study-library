@@ -6,9 +6,9 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-29
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-29
 ---
 
 # PCAD-31-02 Certified Associate Data Analyst with Python Study Guide
@@ -20,7 +20,7 @@ upcoming_change_checked: 2026-09-29
 **Official delivery snapshot:** 48 questions; 60 minutes plus NDA; 75% cumulative passing score; single-/multiple-select and scenario items; TestNow; English<br>
 **Credential snapshot:** no formal prerequisite; PCAP/PCED-equivalent and domain skills recommended; six-year validity; USD 195 exam, USD 225 with retake, USD 215 with practice, USD 245 with both when checked; 15-day wait after a failed attempt<br>
 
-**VERIFY CURRENT:** The [exam page](https://pythoninstitute.org/pcad), [testing policies](https://pythoninstitute.org/pcad-testing-policies), [standalone practice kit](https://ums.edube.org/products/1-pi-pcad-3102-pt) and [exam/retake/practice bundle](https://ums.edube.org/products/1-pi-pcad-3102-erpt) describe different products and procedures. The USD 49 standalone kit lists two tests with up to **10 launches each**; the USD 245 bundle lists **five each**. Both list 12-month voucher validity. The store says Test Candidate → Practice while the credential FAQ says Learner; confirm the profile and exact entitlement before redemption. Local testing-partner rescheduling generally requires 24 hours; the global unredeemed-voucher route has different scheduling rules. No account, booking, purchase, system test or private practice questions were accessed.
+**VERIFY CURRENT — public-store observation (October 29, 2026):** The [exam page](https://pythoninstitute.org/pcad), [testing policies](https://pythoninstitute.org/pcad-testing-policies), [standalone practice kit](https://ums.edube.org/products/1-pi-pcad-3102-pt) and [exam/retake/practice bundle](https://ums.edube.org/products/1-pi-pcad-3102-erpt) describe different products and procedures. The two exact product pages were opened and their public descriptions read via browser on October 29: the USD 49 standalone kit lists two tests with up to **10 launches each**; the USD 245 bundle lists **five each**, with 12-month voucher validity. The automated health client returned 404 for the two store URLs, so confirm the live page and purchased entitlement before relying on the launch or profile instructions. The store says Test Candidate → Practice while the credential FAQ says Learner. Local testing-partner rescheduling generally requires 24 hours; the global unredeemed-voucher route has different scheduling rules. No account, booking, purchase, system test or private practice questions were accessed.
 
 ## How to use this guide
 
@@ -876,6 +876,10 @@ These nine activities remain proposed end-to-end work with a permitted external 
 - [Official PCAD syllabus](https://pythoninstitute.org/pcad-exam-syllabus) controls objectives and weights.
 - [Official PCAD page](https://pythoninstitute.org/pcad) controls current delivery/status and official learning/practice references.
 - Use [Python](https://docs.python.org/3/), [Pandas](https://pandas.pydata.org/docs/), [NumPy](https://numpy.org/doc/stable/), [Matplotlib](https://matplotlib.org/stable/), [Seaborn](https://seaborn.pydata.org/), and your SQL driver's current primary documentation for behavior.
+
+### October 29, 2026 current-source update
+
+The Python Institute currently identifies PCAD-31-02 as active; its page still labels PD101 “in development,” while the live [PD101 course page](https://edube.org/study/pd101) offers a PCED-aligned path (free Core lessons/tests; paid Pro adds labs/projects; about five weeks at one hour daily). It can build foundations but is not represented as full PCAD coverage. For reproducible analyst environments, the official [NumPy release notes](https://numpy.org/doc/2.5/release/2.5.0-notes.html) say NumPy 2.5 supports Python 3.12–3.14 and dropped Python 3.11; [pandas 3.0 migration guidance](https://pandas.pydata.org/pandas-docs/version/3.0/whatsnew/v3.0.0.html) documents default string dtype and Copy-on-Write changes, and [pandas 3.1.0 notes](https://pandas.pydata.org/docs/whatsnew/v3.1.0.html) describe ongoing datetime-resolution adjustments. Pin and record library versions, then test dtype, missing-value, and datetime assumptions before reusing a notebook. These are current tool behavior, not new exam objectives.
 
 ## Places to learn
 

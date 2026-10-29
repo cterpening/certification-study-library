@@ -6,9 +6,9 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-29
 upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-29
 ---
 
 # N10-009 CompTIA Network+ (V9) Study Guide
@@ -547,6 +547,10 @@ Map older material line by line to V9 rather than assuming continuity. Verify cu
 - This guide contains original scenarios, labs, checks and explanations synthesized from public scope. It does not reproduce proprietary objectives, course labs, PBQs or recalled exam items.
 
 > **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
+
+## Refresh check — October 29, 2026
+
+The official N10-009 page still lists V9 (N10-009), a 90-minute exam, and an estimated 2027 retirement window; no exact retirement date or replacement exam was posted. A current wireless example for the wireless standards and troubleshooting objectives is Wi-Fi 7 / 802.11be multi-link operation (MLO): clients and access points may use multiple links, but support depends on device capabilities, channel/regulatory availability, and implementation. Treat 320 MHz and other feature claims as capability-dependent; troubleshoot negotiated bands, channel width, interference, and client/AP support rather than using theoretical peak throughput as observed performance. This is current standards context, not an asserted N10-009 objective change. [Android Wi-Fi 7 implementation notes](https://source.android.com/docs/core/connect/wifi-7).
 
 ## Places to learn
 

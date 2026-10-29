@@ -6,17 +6,17 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-28
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-28
+upcoming_change_checked: 2026-10-28
 ---
 
 # MB-310 Microsoft Dynamics 365 Finance Functional Consultant Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide was checked against the August 14, 2026 official objective baseline and cited public sources on September 28, 2026. It may still contain errors or become outdated. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mb-310-coverage-record). The [official MB-310 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-310) is authoritative.
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-04.md#mb-310) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mb-310-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-310) is authoritative.
 
 **Current baseline:** Skills measured as of August 14, 2026.<br>
-**Upcoming blueprint change:** None announced on the official study guide as of September 28, 2026.<br>
+**Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
 **Lifecycle:** The [Dynamics 365 Finance Functional Consultant Associate credential](https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-financials/) is active. The exam is 100 minutes, available in English and Japanese, lists no retirement date, and links a free Practice Assessment. Renewal is every 12 months; the direct assessment endpoint exposed no question content during this review.<br>
 **Scope change:** The August baseline removes cost management, substantially revises financial management, receivables, subscription billing, payables and fixed-asset transactions, and adds budget planning. Do not use an older course or practice test as the objective checklist.<br>
 **Official source:** [MB-310 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-310)
@@ -67,6 +67,10 @@ Use the current [financial-tag documentation](https://learn.microsoft.com/en-us/
 
 The September 11, 2026 [financial-dimension service deprecation](https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/financial-dimensions) concerns an optional optimization for certain large DMF general-journal imports. Financial dimensions remain core accounting structures. The old service excludes Customer/Vendor/Bank account types and derived-dimension scenarios; do not interpret its deprecation as instructions to remove dimensions.
 
+#### Turn a shortcut into a controlled account combination
+
+For a synthetic maintenance expense, define an alias against the correct account structure and company, specify its main-account/dimension combination and choose which dimension receives initial focus. Enter the alias in a test journal and inspect the expanded segments before validating. An alias accelerates entry; it does not bypass account-structure rules or establish a user's posting permission. Compare this with a main-account category used for reporting and a balance expectation used for validation. See [ledger-account alias setup](https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/tasks/set-up-ledger-account-alias). Change one dimension to an invalid value and retain the expected rejection as evidence.
+
 ### Configure ledgers, fiscal time and currency
 
 The ledger ties a legal entity to its chart of accounts, fiscal calendar, accounting currency, reporting currency and balancing dimensions. Fiscal calendars define years and periods; opening or closing a period controls when modules and user groups can post. **Posting layers** separate current, operations, tax or custom reporting effects without creating another legal entity.
@@ -83,6 +87,12 @@ A journal name carries defaults and controls such as journal type, voucher numbe
 
 For manual and Excel-assisted journals, trace template → draft/import → validation → workflow if used → posting → voucher → ledger inquiry. Excel improves volume entry but does not bypass account structures, permissions or validation. Batch posting improves throughput; it adds scheduling, contention, retry and monitoring responsibilities. A safe correction preserves audit history through reversal or supported correction rather than deleting evidence.
 
+#### Retrieve a recurring entry, then validate the actual journal
+
+For a monthly 600 expense, create a periodic-journal line with account/offset/dimensions, next date, a one-month interval and the correct last retrieval date. Retrieve it into a general journal using a deliberate cutoff; inspect how many occurrences were generated before approving/posting. A cutoff spanning several due dates can create the line several times. Retain the periodic definition and the generated journal/voucher separately. See [periodic-journal retrieval](https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/tasks/post-periodic-journals).
+
+For an Excel journal template, choose an entity/template supporting the account types, retain journal/company keys and mandatory fields, then add the needed dimensions through the supported entity/designer configuration. Refresh the journal context, enter synthetic lines, publish and inspect validation errors in Finance before posting. Publishing is not posting. A custom workbook's presence on disk does not make it a journal-menu template: promotion has a registration/resource path and journal-type/account-type filtering. See [journal template support](https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/open-lines-excel-journals-documents) and [custom template promotion](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu). Test an unsupported offset type and an invalid dimension rather than weakening validation. Developer registration is implementation context; the functional objective is to create/modify a usable, correctly bound template.
+
 ### Manage cash, banks and payments
 
 Bank groups organize institutions; bank accounts hold currency, account identifiers, reconciliation, posting and payment settings. Payment methods define how customer or vendor payments are processed, while payment-format configuration produces or imports the bank-specific message. Protect account changes and payment-file generation with segregation of duties, workflow and out-of-band verification.
@@ -96,6 +106,12 @@ Cash-flow forecasting combines configured liquidity accounts, transaction source
 [Bank matching rules](https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/set-up-bank-reconciliation-matching-rules) can select the first eligible document by default. Enable the manual-review parameter for ambiguous matches on amount and use references/date criteria. The [advanced reconciliation procedure](https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/reconcile-bank-statements-advanced-bank-reconciliation) distinguishes the Modern bank reconciliation feature; record its state instead of mixing both workflows. Importing a multi-account file can succeed for some accounts and fail for others, so inspect per-account results before retrying.
 
 [Customer/vendor netting](https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/net-customer-and-vendor-balances) requires an active agreement, a suitable journal name and a bridging account. Net eligible open transactions **before creating payment journals**; transactions already included in a payment journal are outside that netting flow. A reversal both unsets settlement and reverses the netting journal. Intercompany netting has its own enablement and company setup; it is not implied by two accounts sharing a name.
+
+#### Schedule forecast data and configure cross-company settlement
+
+For forecasting, identify liquidity accounts first, then select source areas and timing assumptions on Cash flow forecast setup. Calculate a baseline and inspect its last-run date. If using cash-flow process automation, resolve competing legacy batch schedules, create the supported schedule **for each company**, and inspect pending/completed runs. Refresh the relevant analytical measurement as required; a calculation timestamp and report timestamp can differ. Test an omitted bank account and an unpaid invoice with an unrealistic expected date. See [cash-flow setup and automation](https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/cash-flow-forecasting).
+
+For shared payments, configure a hierarchy with purpose **Centralized payments**, intercompany due-to/due-from accounts and the chosen company treatment for discounts/realized currency differences. Corresponding customer/vendor accounts need the same address-book identity; payment-method and posting-profile **IDs** must match across the involved entities, although their account settings can differ. Any included entity can pay for another; this is not restricted to a parent paying children. See [centralized-payment setup](https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/set-up-centralized-payments). In an original test, pay a 900 invoice in company B from company A, then reconcile B's settled liability, A's cash and reciprocal balances. Test a missing party mapping and a mismatched payment-method ID before generating a bank file.
 
 ### Perform close, consolidation and tax work
 
@@ -113,6 +129,18 @@ For [ledger settlements](https://learn.microsoft.com/en-us/dynamics365/finance/g
 
 ---
 
+#### Configure the consolidation company before running it
+
+Create the target legal entity with the financial-consolidation designation, configure its chart, fiscal calendar, accounting/reporting currencies, rate type and exchange rates, then prepare subsidiary account mapping. Choose an elimination company/control design deliberately. A consolidation entity is not a daily operational company. In a synthetic two-subsidiary run, record source dates, account mapping, translation accounts and consolidation history; reconcile source balances before eliminating reciprocals. See [consolidation-company preparation](https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/prepare-company-for-consolidation). **VERIFY CURRENT:** Consolidate online template and preview behavior; a source balance change requires a deliberate rerun/review, not an unexplained plug.
+
+#### Work a tax intersection through settlement
+
+Set up tax main accounts/posting group, authority and settlement period before linking a code to the period and posting group. Put the appropriate codes in the party sales-tax group and item sales-tax group, then test their intersection on a document. For an invented exclusive-price line of 800, a common 5% code produces 40; an additional code present in only one group does not apply merely because it exists. Review the transaction's calculated tax and any supported documented adjustment, including the configured exemption treatment. See [sales-tax components and calculation](https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/indirect-taxes-overview).
+
+For settlement, select the settlement period/date interval and correct original/correction processing, review the calculated liability, then run Settle and post sales tax and reconcile the clearing/settlement account. A later tax payment is a separate cash transaction. Test a late invoice after the original settlement and use the documented correction process rather than settling the original interval twice. See [sales-tax settlement procedure](https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/tasks/create-sales-tax-payment).
+
+Withholding has its own setup. For the **global withholding** mechanism, configure authority, settlement period, ledger posting group/accounts, codes, party groups and item withholding groups before testing the applicable threshold and transaction. Do not assume ordinary vendor-payment withholding and global/localized withholding share every field or calculation trigger. See [global-withholding setup](https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/set-up-global-withholding-tax). For an original paper test, an explicitly applicable 2% withholding on a 1,000 base gives 20 withheld and 980 paid; confirm the actual jurisdiction, taxable base, recognition event and payable/withholding vouchers in an authorized sandbox. This arithmetic does not establish a real tax rate or policy. **VERIFY CURRENT:** localization, tax-engine selection, account requirements, rounding and feature state.
+
 ## 2. Implement receivables, credit, collections, and subscription billing
 
 ### Run order-to-cash with explainable posting
@@ -127,6 +155,16 @@ Credit management combines limits, risk attributes, rules, holds and release aut
 
 Collections use pools, activities and work queues to prioritize contact and resolution. Interest notes and collection letters apply configured policies; write-offs remove approved uncollectible balances to the proper account. Design for disputes, promises to pay, partial settlements, legal restrictions and vulnerable customers. Measure recovered value, dispute resolution and aged exposure, not just contact volume.
 
+#### Generate recurring invoices and process collection evidence
+
+Create a free-text invoice template containing the service/revenue account, amount, tax/charges, terms and dimensions; assign it to the customer with start/end, frequency and any maximum amount. Generate for a chosen invoice date, inspect the recurrence ID and individual documents, submit workflow when required, validate and post. A generated recurrence group is not a posted receivable. Test a customer with two schedules and a failed document; reconcile already-posted members before regenerating. See [recurring free-text invoice setup](https://learn.microsoft.com/en-us/dynamics365/finance/accounts-receivable/set-up-process-recurring-invoices).
+
+For a prepayment scenario, configure the prepayment posting account/feature and applicable parameters, create/confirm the proposal and post the deposit invoice, then settle it through the customer payment journal. Select the received prepayment for application to the final sales invoice and verify synchronous settlement or successful background application under the configured option. For a 5,000 sale with an agreed 1,000 deposit, reconcile a 4,000 remaining receivable, then test reversal/credit. See [customer prepayment setup and application](https://learn.microsoft.com/en-us/dynamics365/finance/accounts-receivable/customer-prepayment-invoice). **VERIFY CURRENT:** line-level versus header-level prepayment and settlement feature/parameter state. A payment journal marked as a prepayment is not automatically the same contract as a sales-order prepayment invoice.
+
+Billing classification has public-sector applicability: create the classification with terms, associate existing billing codes and explicitly decide interest/collection-letter settings; the documented defaults suppress those activities for that classification. Apply it to an appropriate free-text invoice and verify grouping and due date. See [billing classification setup](https://learn.microsoft.com/en-us/dynamics365/finance/public-sector/tasks/create-billing-classification-public-sector). Do not treat it as a universal customer-payment category.
+
+For letters, assign the collection sequence and permission on the customer posting profile, generate the selected transaction/date/customer population, review the created letter, then print/post under the intended process. Customer-level versus transaction-level handling changes how letters group and advance. See [collection-letter processing](https://learn.microsoft.com/en-us/dynamics365/finance/accounts-receivable/tasks/process-collection-letters). For interest, assign the interest code to the applicable posting profile, select the calculation population/date range, review created notes and post with the intended per-transaction versus grouped posting behavior. See [interest-note processing](https://learn.microsoft.com/en-us/dynamics365/finance/accounts-receivable/tasks/process-interest). In both cases, test a payment or credit arriving before posting; stale selection must not produce an unjustified demand. Retain source open items, calculation parameters, note/letter ID and voucher.
+
 ### Configure subscription billing and deferrals
 
 A billing schedule defines recurring or milestone-based customer billing. Contract billing groups, item groups, frequency, dates, pricing, escalation and milestones determine generated sales documents. Holds and termination change future processing; preserve the commercial reason and effective date. Test mid-period starts, price updates, renewal, usage/milestone completion, cancellation and credit.
@@ -138,6 +176,8 @@ Revenue and expense deferrals separate invoice/posting timing from recognition t
 ---
 
 Check the [deferral parameters](https://learn.microsoft.com/en-us/dynamics365/finance/accounts-receivable/sb-deferrals): Equal per period gives equal full-period amounts but prorates partial periods; turning it off allocates using days. Posting method and reversal settings also affect credit/termination behavior. In [recognition processing](https://learn.microsoft.com/en-us/dynamics365/finance/accounts-receivable/sb-deferrals-schedules), the cutoff includes schedule lines whose end date is on or before it. Creating a recognition journal is not evidence of posting when automatic posting is off. Once lines are recognized, schedule modification must handle their history through the supported catch-up/reversal behavior.
+
+For a straight-line schedule, recognition history changes the available repair: with no recognized or externally posted lines, the whole schedule, including its start date, can be modified. With history, use the documented recalculation, catch-up or reversal behavior and preview the result. An event-based schedule has different restrictions, including immutable template/allocation choices once history exists. The [schedule modification rules](https://learn.microsoft.com/en-us/dynamics365/finance/accounts-receivable/sb-deferrals-schedules) are a better diagnostic than assuming every schedule remains freely editable.
 
 ---
 
@@ -163,6 +203,16 @@ Test missing receipts, mixed currency, partial personal spend, delegate entry, p
 
 ---
 
+#### Build recurring payables and an expense-control worksheet
+
+With the recurring-invoice feature enabled, save a suitable pending vendor invoice as a template, including distributions, tax, charges and dimensions. Assign it to the vendor with dates/frequency/limits, generate the selected recurrence and inspect each pending invoice. Submit workflow before posting when required. A recurrence ID groups generated documents; it does not prove all posted. See [recurring vendor invoice workflow](https://learn.microsoft.com/en-us/dynamics365/finance/accounts-payable/recurring-invoice). For a monthly 250 maintenance service, test an intentionally changed vendor tax/default account and a failed invoice before allowing the next run.
+
+Expense categories require a shared category, expense type, default payment method, main account, item-tax group and any itemization/subcategory decisions. Configure those first, then create an original report containing mileage, a location/date-based per diem, a personal portion and an intercompany line. See [expense-category setup](https://learn.microsoft.com/en-us/dynamics365/project-operations/expense/set-up-expense-categories).
+
+For mileage, configure the rate/tiers and test quantities immediately below/at/above a tier boundary and the fiscal-versus-calendar accumulation setting. For per diem, confirm the intended interface/feature, travel dates/location and included-meal reduction method before calculating. See [mileage tier configuration](https://learn.microsoft.com/en-us/dynamics365/project-operations/expense/set-up-mileage) and [per-diem entry prerequisites](https://learn.microsoft.com/en-us/dynamics365/project-operations/expense/mobile-app-manage-perdiem). An invented 80-distance-unit trip at a single 0.50 rate is 40, but it is not a published reimbursement rate.
+
+Enable **Allow intercompany expense lines** before entering a line for work performed for a borrowing company. Configure project-intercompany default categories where applicable, and explicitly select the supported source/destination tax treatment before reconciling both entities. See [intercompany expense configuration](https://learn.microsoft.com/en-us/dynamics365/project-operations/prod-exp/intercompany-expense). For corporate-card personal spend, select Paid by employee or Paid by company in Expense management parameters: the latter pays the card bill and debits the worker account. A 100 card line split into 75 business and 25 personal must preserve that 25 recovery/employee obligation under the chosen method. See [personal expense treatment](https://learn.microsoft.com/en-us/dynamics365/project-operations/expense/personal-expenses-expense-report). These references are under Project Operations Integrated with ERP; verify the Finance-integrated deployment rather than using older Project Service instructions. **VERIFY CURRENT:** deployment, feature state, currency, policy and statutory requirements. No expense report was submitted here.
+
 ## 4. Implement budgeting
 
 ### Separate three budgeting capabilities
@@ -183,6 +233,12 @@ Version 10.0.49 adds an optional automatic accounting-date advancement feature f
 
 ---
 
+#### A budget entry becomes usable through its lifecycle
+
+Prepare Budgeting dimensions, model, code, number sequence and rates; attach any workflow to the code and configure budget control before loading its starting amounts. Create the register header with model/code and lines with date, account structure, dimension values, amount/type and currency. Submit/complete the required workflow and **Update budget balances**; a saved draft does not establish available budget. See [budget-register entry lifecycle](https://learn.microsoft.com/en-us/dynamics365/finance/budgeting/budget-register-entries).
+
+For an original transfer, move 1,200 from department A to B with a Transfer budget code: A −1,200, B +1,200. Confirm both dimensions and dates, workflow and transfer rules, then reconcile model totals and budget-versus-actual at the same grain. Allocation creates reversal and destination entries; inspect them before updating balances. An overall zero transfer can still be wrong when it moves money from an unauthorized source.
+
 ## 5. Manage fixed assets
 
 ### Configure books and depreciation
@@ -202,6 +258,12 @@ Use journals or supported source documents to split, reclassify or transfer asse
 > **Related item:** Asset leasing is relevant Finance knowledge and may affect accounting, but it is not an explicit domain in the August 14, 2026 MB-310 objectives. Cost management was removed from this baseline. Do not spend current exam-prep time on either until core gaps are closed.
 
 ---
+
+#### Keep asset budgets and actual asset value separate
+
+Create a **Fixed asset budget journal** with the appropriate journal name/model, transaction type, date, asset/book and amount. Inspect the posting-profile defaults. Choose asset-budget-only transfer or asset-and-ledger-budget transfer according to the requirement, and reconcile the destination budget entries. The Delete existing entries option replaces existing budget records; inspect scope and retain a before/after export before using it. See [asset budgeting workflow](https://learn.microsoft.com/en-us/training/modules/manage-fixed-assets-finance/asset-budgeting). A 30,000 planned acquisition must remain a budget until an actual acquisition is posted; transferring it to budgeting does not create a supplier liability or depreciable asset balance.
+
+For a split, create the destination asset/book, invoke the source book's split function with date, percentage and journal, then review/post the generated adjustments. A 25% split of an assumed 20,000 acquisition basis moves 5,000 to the new asset and leaves 15,000 on the original under this simple model; reconcile associated history and accumulated depreciation under the actual book rules. See [asset split and journal review](https://learn.microsoft.com/en-us/dynamics365/finance/fixed-assets/tasks/split-fixed-asset). A department transfer changes the supported ownership/dimension context; reclassification changes group/classification and can affect accounts/defaults. Neither should be substituted for a split merely to move a percentage of value. Test book status, dates and voucher rules before posting. **VERIFY CURRENT:** cross-company split/transfer is a separate preview capability with additional mappings and must not be assumed from the ordinary within-company example.
 
 ## Integrated scenarios
 
@@ -332,9 +394,30 @@ Original learning prompts; no recalled exam items. Try each before opening its a
 
 ---
 
+## Final readiness checklist
+
+- [ ] I can trace a source document or journal through defaults, validation, subledger, voucher, ledger, settlement and reporting.
+- [ ] I can design COA/dimensions/account structures/tags without confusing reporting metadata and posting control.
+- [ ] I can configure journals, currencies, revaluation, bank reconciliation, payments, close, consolidation and tax with failure/recovery evidence.
+- [ ] I can operate receivables, credit, collections, subscription billing and deferral as connected but distinct controls.
+- [ ] I can configure payables, invoice matching, payments, prepayments and expenses with segregation of duties.
+- [ ] I can distinguish basic budgeting, budget control and budget planning and build one complete flow through each.
+- [ ] I can configure asset groups/books/depreciation and reconcile acquisition, transfer, split and disposal.
+- [ ] I completed scenarios and labs in a nonproduction environment and recorded expected vouchers and exceptions.
+- [ ] I used older commercial material only after gap-checking it against the August 14, 2026 blueprint.
+- [ ] I rechecked the official study guide, lifecycle and Practice Assessment before scheduling.
+
+## Source notes
+
+The August 14, 2026 official study guide is the objective authority. Microsoft Learn paths and product documentation support behavior but can include adjacent topics. MicrosoftLearning labs are linked for independent hands-on use under their repository terms, not copied here. Commercial resources are optional perspectives and were not treated as objective authority. All questions in this guide are original and conceptual; no exam dumps or recalled items were used.
+
 ## Places to learn
 
 This is not a complete list and is not meant to be consumed in full. Choose one primary route, build several source-document-to-ledger journeys, and add another resource only for a measured gap.
+
+### Focused reading and evidence route
+
+Select MicrosoftLearning’s [voucher breakdown lab](https://microsoftlearning.github.io/MB-310-Microsoft-Dynamics-365-Finance/Instructions/Labs/LP3%20Lab%20-%20Breakdown%20of%20voucher.html) for payables-to-ledger reasoning. Allow about 60–90 minutes for reading and an original worksheet that predicts taxable bases, tax by line, offset accounts, balanced totals and the evidence needed before and after posting; this editorial range includes one deliberately wrong tax-group mapping and its correction. The February 10, 2026 change record is visible, but the walkthrough assumes USMF demo records and older dates. Reconcile those prerequisites with your sandbox and current Finance documentation. Exclude its expired-certificate bypass workaround. The public textual procedure was read, not executed; screenshots, journal postings and tax compliance outcomes were not independently verified.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
@@ -354,20 +437,3 @@ This is not a complete list and is not meant to be consumed in full. Choose one 
 | [Microsoft Partner Skilling Hub](https://www.skilling-hub.com/en-US) | Partner login required | Use the four-day official-course pattern for planning; verify the signed-in event’s exact start/end time |
 
 The five paths list **37 distinct modules** (16 + 8 + 6 + 3 + 4). Their current public pages do not expose a total runtime, so the earlier 48h30 sum is withdrawn. Cost management remains in the receivables path; expense modules reference Project Operations. Use the current blueprint to select content. The table's study-hour ranges are editorial estimates, not provider runtimes. Allow roughly **100–160 hours** for a new Finance practitioner to complete a primary route, build the labs and remediate the Practice Assessment. No exact O’Reilly or Whizlabs MB-310 product was established in the earlier catalog review; those providers were not comprehensively searched again here. Partner events require signed-in verification and the direct Practice Assessment fetch returned no substantive body. Reject recalled live content, “valid questions,” pass guarantees and any practice source that cannot explain its authorship and update baseline.
-
-## Final readiness checklist
-
-- [ ] I can trace a source document or journal through defaults, validation, subledger, voucher, ledger, settlement and reporting.
-- [ ] I can design COA/dimensions/account structures/tags without confusing reporting metadata and posting control.
-- [ ] I can configure journals, currencies, revaluation, bank reconciliation, payments, close, consolidation and tax with failure/recovery evidence.
-- [ ] I can operate receivables, credit, collections, subscription billing and deferral as connected but distinct controls.
-- [ ] I can configure payables, invoice matching, payments, prepayments and expenses with segregation of duties.
-- [ ] I can distinguish basic budgeting, budget control and budget planning and build one complete flow through each.
-- [ ] I can configure asset groups/books/depreciation and reconcile acquisition, transfer, split and disposal.
-- [ ] I completed scenarios and labs in a nonproduction environment and recorded expected vouchers and exceptions.
-- [ ] I used older commercial material only after gap-checking it against the August 14, 2026 blueprint.
-- [ ] I rechecked the official study guide, lifecycle and Practice Assessment before scheduling.
-
-## Source notes
-
-The August 14, 2026 official study guide is the objective authority. Microsoft Learn paths and product documentation support behavior but can include adjacent topics. MicrosoftLearning labs are linked for independent hands-on use under their repository terms, not copied here. Commercial resources are optional perspectives and were not treated as objective authority. All questions in this guide are original and conceptual; no exam dumps or recalled items were used.

@@ -6,9 +6,9 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-30
+last_verified: 2026-10-29
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-30
+upcoming_change_checked: 2026-10-29
 ---
 
 # PCES-30-01 Certified Entry-Level Security Specialist with Python Study Guide
@@ -206,7 +206,7 @@ The complete [Fernet reference](https://cryptography.io/en/latest/fernet/) descr
 
 The complete [Paramiko client reference](https://docs.paramiko.org/en/stable/api/client.html) describes known-host checks, default `RejectPolicy`, separate connection/authentication timeouts, explicit close and SFTP sessions. Before a future disposable-host lab, obtain the expected host key through a trusted route; automatic acceptance or warning-and-accept policies do not establish that trust. Remote command strings have different parsing boundaries from local argument lists. No SSH key, account, agent or host was accessed; `paramiko` is absent.
 
-Objective 4.2.3 names PyPDF2, python-docx and openpyxl. Their PDF encryption/text, document comments/metadata and spreadsheet hidden-content/formula exercises remain pending because those packages are absent. Installed **pypdf 6.16.1** supports one narrow original experiment, not equivalence with all PyPDF2 objectives: removing `/Info` from a blank one-page PDF leaves the XMP creator intact. The complete [metadata documentation](https://pypdf.readthedocs.io/en/stable/user/metadata.html), currently 6.19.0, distinguishes these stores. Neither removal of a metadata field nor a successful parse proves absence of embedded actions, scripts, comments, hidden content, macros or sensitive text.
+Objective 4.2.3 names PyPDF2, python-docx and openpyxl. Their PDF encryption/text, document comments/metadata and spreadsheet hidden-content/formula exercises remain pending because those packages are absent. Installed **pypdf 6.16.1** supports one narrow original experiment, not equivalence with all PyPDF2 objectives: removing `/Info` from a blank one-page PDF leaves the XMP creator intact. The complete [metadata documentation](https://pypdf.readthedocs.io/en/stable/user/metadata.html), currently 6.21.4, distinguishes these stores. Neither removal of a metadata field nor a successful parse proves absence of embedded actions, scripts, comments, hidden content, macros or sensitive text.
 
 The [pypdf encryption page](https://pypdf.readthedocs.io/en/stable/user/encryption-decryption.html) warns that omitting the algorithm uses insecure RC4 and that AES needs an extra backend. Neither supported backend is installed here. No PDF encryption or decryption ran. A future exercise must explicitly select a supported AES algorithm, keep a strong synthetic password out of source/logs, verify correct and wrong-password behavior, inspect the actual file structure and transmit through an authenticated channel. No arbitrary document was opened or declared sanitized.
 
@@ -984,6 +984,10 @@ if __name__ == "__main__":
 - Use current primary documentation for [Python](https://docs.python.org/3/), [psutil](https://psutil.readthedocs.io/en/latest/), [cryptography](https://cryptography.io/en/latest/), and [Paramiko](https://docs.paramiko.org/).
 
 ## Places to learn
+
+### October 29, 2026 source update
+
+The current credential page and linked v1.5 syllabus still identify PCES-30-01 as active, with the same four-block, 45-item outline (10/12/13/10 items; 22/27/29/22%). The announced practice-test window has passed: the page still says planned/coming Q3 or Q3/Q4 2026 and does not confirm release or provide a verified purchase route. The next-level PCAS Q4 notice is a separate credential, not a PCES replacement. No dedicated official PCES course surfaced in the issuer catalog reviewed; use the syllabus as the coverage checklist and perform defensive exercises only in authorized environments. Python 3.14 documentation is a current reference, while the included executable observations remain specifically tied to Python 3.13.14. See the [PCES credential page](https://pythoninstitute.org/pces), [syllabus](https://pythoninstitute.org/pces-exam-syllabus), and [Python 3.14 docs](https://docs.python.org/3.14/).
 
 This is **not a complete list** and is not intended to be consumed in full. All times below are **author planning budgets**, not measured course durations or claims of completion. Use one foundation and the relevant reference sections, then demonstrate outcomes in authorized labs.
 

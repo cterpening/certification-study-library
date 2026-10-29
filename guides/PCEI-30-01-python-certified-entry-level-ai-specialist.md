@@ -5,26 +5,26 @@ official_blueprint: https://pythoninstitute.org/pcei-exam-syllabus
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: source-validated
-last_verified: 2026-09-30
+review_status: review-required
+last_verified: 2026-10-29
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-30
+upcoming_change_checked: 2026-10-29
 ---
 
 # PCEI-30-01 Certified Entry-Level AI Specialist with Python Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Deep-reviewed September 30, 2026. The [official PCEI syllabus](https://pythoninstitute.org/pcei-exam-syllabus) is authoritative.
+> **Independent AI-assisted resource — REVIEW REQUIRED; HUMAN REVIEW PENDING.** The October 29, 2026 refresh confirmed the current PCEI syllabus map but found that the issuer-advertised practice-test destination returns 404. The [official PCEI syllabus](https://pythoninstitute.org/pcei-exam-syllabus) remains authoritative; practice-test access is unresolved.
 
 **Current baseline:** PCEI-30-01, active; syllabus last updated December 11, 2025<br>
 **Upcoming blueprint change:** no replacement outline identified on the reviewed official pages; practice-test announcements conflict between Q3/Q4 2026 tables and stale Q1 2026 FAQ text; verify actual availability<br>
 **Official delivery snapshot:** 36 questions; 60 minutes plus NDA; 75%; single-/multiple-select, scenario and interactive items; TestNow; English<br>
 **Credential snapshot:** no formal prerequisite; basic Python, data analysis, and digital literacy (roughly PCEP+PCED) recommended; seven-year validity; USD 69 exam / USD 86 with retake when checked; seven-day wait after failure<br>
 
-**VERIFY CURRENT:** The complete [credential page](https://pythoninstitute.org/pcei) lists PAI101 in development and inconsistent practice-test dates; its separate PCAI announcement still names a past quarter. A price or generic purchase instruction does not establish that a practice product is available. No account, checkout, booking or protected practice material was accessed.
+**VERIFY CURRENT:** The [credential page](https://pythoninstitute.org/pcei) now advertises a $29 PCEI practice test as available and lists exam/test bundles, while its FAQ retains a planned Q1 2026 date and bundle copy still says Q3/Q4 2026. The linked [store product](https://ums.edube.org/products/pcei-exam-prep) returned 404 on October 29, 2026, so purchase/access remains unresolved; the price listing alone does not confirm availability. PAI101 remains in development. PCAI is shown as Coming Soon in the credential table, while its FAQ retains the passed Q1 2026 date. No account, checkout, booking or protected practice material was accessed.
 
 The complete [testing policy](https://pythoninstitute.org/pcei-testing-policies), revised November 18, 2025, describes global browser proctoring and distinct local-partner procedures. Read its current admission, environment, rescheduling and final-score conditions before booking. The specific retake rule covers failure; broader footer wording about passed attempts does not establish eligibility to retake after passing. No system diagnostic, device setting or privacy permission was changed during this review.
 
-The complete canonical English syllabus, detailed bullets and minimum-qualified-candidate profile were manually read after direct retrieval and the automated monitor failed. There are **33 numbered objectives**, grouped **5/5/6/7/5/5**, and **36 exam items**, distributed **5/6/6/8/6/5**. Objectives 2.4, 4.6 and 5.2 account for the additional item allocations. The existing six-paragraph objective snapshot is historical summary evidence; manual confirmation does not constitute a successful fresh automated hash or full PDF review.
+The complete canonical English syllabus, detailed bullets and minimum-qualified-candidate profile were manually read after direct retrieval and the automated monitor failed. The 2026-10-29 source gate remains blocked by the linked practice-store URL returning 404; the guide records the current issuer/store conflict and does not claim purchase availability. There are **33 numbered objectives**, grouped **5/5/6/7/5/5**, and **36 exam items**, distributed **5/6/6/8/6/5**. Objectives 2.4, 4.6 and 5.2 account for the additional item allocations. The existing six-paragraph objective snapshot is historical summary evidence; manual confirmation does not constitute a successful fresh automated hash or full PDF review.
 
 ## How to use this guide
 
@@ -867,6 +867,10 @@ if __name__ == "__main__":
 - Technical grounding: [scikit-learn user guide](https://scikit-learn.org/stable/user_guide.html), [Pandas](https://pandas.pydata.org/docs/), [NumPy](https://numpy.org/doc/stable/), and [NIST AI RMF](https://www.nist.gov/itl/ai-risk-management-framework).
 
 ## Places to learn
+
+### October 29, 2026 source update
+
+The active PCEI-30-01 syllabus remains dated December 11, 2025; the linked v1.6 PDF and six-module, 36-item map still match the accepted snapshot. No replacement or objective-map change was found. The issuer's current practice messaging is internally inconsistent: it advertises a $29 test as available, but the linked product URL returned 404 and the FAQ still says Q1 2026. Treat access as unresolved and recheck the exact store route before purchase. PAI101 is still in development; PCAI's table says Coming Soon while its FAQ retains an expired quarter. The official [PCEI page](https://pythoninstitute.org/pcei), [syllabus](https://pythoninstitute.org/pcei-exam-syllabus), and [Python 3.14 docs](https://docs.python.org/3.14/) were checked; examples in this guide remain executed only on the recorded Python 3.13.14 stack.
 
 This is not a complete list and is not intended to be consumed in full. PAI101 is listed as in development, not a completed course reviewed here. Choose one fundamentals resource and a small implementation path. All hour ranges below are **author planning budgets**, not verified course durations or completed study time. Reading a public landing page or selected table of contents does not establish completion of lessons, exercises, videos or paid chapters.
 

@@ -6,14 +6,14 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-28
 ---
 
 # JSA-41-01 Certified Associate JavaScript Programmer Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Selected public sources and all 40 numbered objectives were reviewed September 29, 2026. Original code was executed in existing Node and Chrome runtimes. Direct official-page fetching failed; indexed public content supported manual scope comparison. Paid interiors and human review remain pending. This is not a guarantee that every explanation is error-free or that the provider will not change the exam. Recheck the [official JSA certification page](https://jsinstitute.org/jsa-certification) and [JSA-41-01 syllabus](https://jsinstitute.org/jsa-exam-syllabus) before scheduling.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Selected public sources and all 40 numbered objectives were reviewed October 28, 2026. Original code was executed in existing Node and Chrome runtimes. Direct official-page fetching failed; indexed public content supported manual scope comparison. Paid interiors and human review remain pending. This is not a guarantee that every explanation is error-free or that the provider will not change the exam. Recheck the [official JSA certification page](https://jsinstitute.org/jsa-certification) and [JSA-41-01 syllabus](https://jsinstitute.org/jsa-exam-syllabus) before scheduling.
 
 **Current baseline:** JSA-41-01, active; syllabus last updated September 22, 2025<br>
 **Upcoming blueprint change:** none announced on the official exam, syllabus, or certification-overview pages when checked; no unseen announcement feed or booking availability was verified<br>
@@ -21,6 +21,10 @@ upcoming_change_checked: 2026-09-29
 **Purchase snapshot:** no formal prerequisite; JSE-40-01 recommended; exam from USD 295 and exam-plus-retake from USD 345 when checked; delivery through TestNow, OnVUE, or a Pearson VUE test center<br>
 
 The official [TestNow policy](https://jsinstitute.org/test-now-testing-policies) states seven days after failure; the [Pearson VUE policy](https://jsinstitute.org/pvue-testing-policies) states fifteen and disallows retaking the same passed version. Keep delivery channels separate. Pearson's free-retake eligibility wording and the exam/retake bundle prices do not establish your voucher's actual terms; verify the selected product before purchase. No account, checkout or booking was entered. The certification page contains an unrelated Python credential label in one row; it does not redefine this JavaScript exam. No current credential-expiration claim is inferred from silence.
+
+## Refresh check — October 28, 2026
+
+Manual review of the current JS Institute syllabus page confirms JSA-41-01 is active, with 40 items across the same four blocks (11/7/12/10 items; 25/23/27/25%); the issuer dates the syllabus September 22, 2025. The objective monitor could not parse the page’s changed layout, so this scope was checked directly against the published page and preserved in the dated snapshot. The current page still recommends JavaScript Essentials 2; use the exact active syllabus for scope. [JSA syllabus](https://jsinstitute.org/jsa-exam-syllabus).
 
 ## How to use this guide
 

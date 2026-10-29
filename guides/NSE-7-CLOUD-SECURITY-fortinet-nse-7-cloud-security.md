@@ -6,23 +6,24 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-02
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-02
+upcoming_change_checked: 2026-10-28
 ---
 
 # Fortinet NSE 7 in Cloud Security Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live Cloud Security certification and Public Cloud Security 7.6.4 Architect exam pages, current Fortinet product documentation, and public AWS/Azure guidance were checked September 2, 2026. Fortinet's live pages remain authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live Cloud Security certification and Public Cloud Security 7.6.4 Architect exam pages, current Fortinet product documentation, and public AWS/Azure guidance were checked October 28, 2026. Fortinet's live pages remain authoritative.
 
 **Current baseline:** Public Cloud Security 7.6.4 Architect, using FortiOS 7.6 and FortiWeb 7.4. Published domains are Security solutions deployment; Automation tools; Cloud infrastructure monitoring; and Troubleshooting. Fortinet does **not** publish weights for these domains, so this guide does not invent them.<br>
 **Exam contract:** 35–40 questions, 75 minutes, English, Pearson VUE, pass/fail. It includes design scenarios, configuration extracts, and troubleshooting captures.<br>
+**Delivery:** Since September 21, 2026, NSE 7 exams are available only at Pearson VUE-authorized test centers; OnVUE remote delivery ended. Check current local availability when scheduling.<br>
 **Certification contract checked September 17, 2026:** Hold NSE 4 FortiOS and either NSE 5 Cloud Security or NSE 6 Cloud Security, then pass the NSE 7 Public Cloud Security Architect exam within two years of the last prerequisite exam. The credential is active for two years from the later qualifying exam. The current track page now uses this consistent prerequisite rule; it resolves the earlier wording discrepancy.<br>
 **Experience boundary:** Fortinet recommends two years with Fortinet security solutions, two years with AWS, and two years with Azure.<br>
-**Upcoming change:** No retirement or dated replacement was announced September 2, 2026. The current exam is Public Cloud Security **7.6.4** Architect; older FCSS Public Cloud Security 7.2/7.6 pages are not the current credential contract.<br>
+**Upcoming change:** No additional retirement or dated replacement was announced as of October 28, 2026. The current exam is Public Cloud Security **7.6.4** Architect; older FCSS Public Cloud Security 7.2/7.6 pages are not the current credential contract.<br>
 **Integrity:** Use official samples only for form/scope. Reject leaked, recalled, “real exam,” guaranteed-match, or braindump material.
 
-> **September 17, 2026 contract check:** Current official exam and track pages were inspected; the exam times and prerequisite statements above reflect that check. Historical objective snapshots and full technical-review dates remain unchanged. See the [exam validation report](../docs/research/2026-09-17-exam-validation.md).
+> **October 28, 2026 delivery check:** The current OnVUE notice limits the four NSE 7 exams to Pearson VUE-authorized test centers effective September 21, 2026. The blueprint and prerequisite rule were also rechecked against the live exam and track pages.
 
 ## How to use this guide
 
@@ -209,6 +210,7 @@ This is not a complete list, and it is not a prescription to consume everything.
 | [Public Cloud Security Architect exam](https://training.fortinet.com/local/staticpage/view.php?page=public_cloud_security_architect_exam) | Public | 30–50 min | Current contract, exact unweighted objectives, products, experience, and official resources |
 | [NSE 7 in Cloud Security](https://training.fortinet.com/local/staticpage/view.php?page=nse_7_cloud_security) | Public | 20–30 min | Track purpose, prerequisite language, validity, and recertification; verify noted inconsistency |
 | [Fortinet Training Institute library](https://training.fortinet.com/local/library/?category=Certification%3ANSE_7+-+Cloud+Security) | Free account; labs/ILT may cost | 20–40 min selection; course varies | Locate current Public Cloud Security 7.6.4 Architect course and lab, avoiding older versions |
+| [Public Cloud Security 7.6.4 Architect course outline](https://training.fortinet.com/local/staticpage/view.php?page=library_public-cloud-security-architect) | Account/enrollment; separate cloud subscriptions and costs apply | 6 hr lecture + 10 hr estimated labs | Official course covers cloud design, IaC, deployment, monitoring and troubleshooting. Fortinet states students need their own AWS and Azure accounts and estimates about USD $15 per cloud vendor per day; verify current prerequisites and costs. Outline reviewed, lessons not completed. |
 | [FortiGate Public Cloud documentation](https://docs.fortinet.com/product/fortigate-public-cloud) | Public | 20–35 hr selected AWS/Azure chapters/labs | Current reference architectures, deployment, routing, HA, automation, SDN connectors, and troubleshooting |
 | [FortiWeb 7.4 documentation](https://docs.fortinet.com/product/fortiweb/7.4) | Public | 8–16 hr selected reading/labs | Web/API protection, deployment modes, certificates, policies, logging, HA, and troubleshooting |
 | [FortiCNAPP documentation](https://docs.fortinet.com/product/forticnapp) | Public | 5–10 hr selected reading/labs | Account onboarding, inventory, posture/workload risks, permissions, findings, and operations |

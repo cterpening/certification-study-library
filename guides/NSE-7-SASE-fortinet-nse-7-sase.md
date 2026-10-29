@@ -6,25 +6,26 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-02
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-02
+upcoming_change_checked: 2026-10-28
 ---
 
 # Fortinet NSE 7 in SASE Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live NSE 7 SASE and FortiSASE 26 Architect pages, current FortiSASE/FortiOS documentation, and public program policies were checked September 2, 2026. Fortinet's pages remain authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live NSE 7 SASE and FortiSASE 26 Architect pages, current FortiSASE/FortiOS documentation, and public program policies were checked October 28, 2026. Fortinet's pages remain authoritative.
 
 **Current baseline:** FortiSASE 26 Architect, using FortiSASE 26 and FortiOS 7.4/7.6. SD-WAN architecture and deployment 10–20%; SD-WAN traffic control and IPsec 20–30%; FortiSASE architecture and integration 15–25%; FortiSASE deployment and secure access 20–30%; Centralized management, visibility and troubleshooting 10–20%.<br>
 **Exam contract:** 40–50 questions, 75 minutes, English and Japanese, Pearson VUE, pass/fail. Verify registration details and the live product baseline before booking.<br>
+**Delivery:** Since September 21, 2026, NSE 7 exams are available only at Pearson VUE-authorized test centers; OnVUE remote delivery ended. Check current local availability when scheduling.<br>
 **Certification contract:** This is the required NSE 7 SASE exam guide, not the entire credential. NSE 7 in SASE also requires NSE 4 FortiOS and either NSE 5 SASE or NSE 6 SASE; the NSE 7 exam must be completed within two years of the last prerequisite. The credential is active for two years from the later qualifying exam.<br>
 **Experience boundary:** Fortinet recommends three years each in networking and network security, two years with FortiGate/FortiManager, and one year with FortiSASE.<br>
-**Upcoming change:** No dated replacement or retirement was announced September 2, 2026. FortiSASE 26 is the live baseline; search results for FortiSASE 25 Enterprise Administrator describe an older exam/course generation.<br>
+**Upcoming change:** No additional dated replacement or retirement was announced as of October 28, 2026. FortiSASE 26 is the live baseline; search results for FortiSASE 25 Enterprise Administrator describe an older exam/course generation.<br>
 **Integrity:** Use only official samples and original practice. Do not use recalled, leaked, guaranteed-match, or braindump questions.
 
 > **September 17, 2026 contract check:** Current official exam and track pages were inspected; the exam times and prerequisite statements above reflect that check. Historical objective snapshots and full technical-review dates remain unchanged. See the [exam validation report](../docs/research/2026-09-17-exam-validation.md).
 
-> **September 27, 2026 delivery check:** The [FortiSASE 26 Architect exam page](https://training.fortinet.com/local/staticpage/view.php?page=fortisase_architect_exam) now lists English and Japanese. The objective extraction is unchanged.
+> **October 28, 2026 delivery and naming check:** NSE 7 exams are test-center-only effective September 21. Fortinet's release notice calls this exam “FortiSASE 7.6 Architect,” while the current detail page calls it “FortiSASE 26 Architect” and lists FortiSASE 26 with FortiOS 7.4/7.6. This official naming discrepancy remains unresolved; use the detail page for candidate-facing contract and verify the booking entry.
 
 ## How to use this guide
 
@@ -220,6 +221,8 @@ This is not a complete list, and it is not a prescription to consume everything.
 | [FortiSASE Architect exam](https://training.fortinet.com/local/staticpage/view.php?page=fortisase_architect_exam) | Public | 45–75 min | Current FortiSASE 26 contract, full task list, experience, and official resources |
 | [NSE 7 in SASE](https://training.fortinet.com/local/staticpage/view.php?page=nse_7_sase) | Public | 20–30 min | Credential prerequisites, timing, validity, recertification, and exam relationship |
 | [Fortinet Training Institute library](https://training.fortinet.com/local/library/?search=sase) | Free account; labs/ILT may cost | 20–40 min selection; courses vary | Find current FortiSASE Enterprise/Core and SD-WAN Enterprise/Core courses; avoid older-version entries |
+| [FortiSASE 26 Enterprise Administrator course outline](https://training.fortinet.com/local/staticpage/view.php?page=library_fortisase-enterprise-administrator) | Account/enrollment; lab entitlement may vary | 4 hr lecture + 5 hr estimated labs | Branch deployment, secure access, posture, analytics and troubleshooting; listed companion versions include FortiOS/FortiClient/FortiManager 7.4 and FortiAnalyzer 7.6 |
+| [SD-WAN Enterprise Administrator course outline](https://training.fortinet.com/local/staticpage/view.php?page=library_sd-wan-enterprise-administrator) | Account/enrollment; labs may cost | 6 hr lecture + 7 hr estimated labs | Enterprise SD-WAN architecture and operation shared with the current SASE exam; course outline only, not verified lesson coverage |
 | [FortiSASE documentation](https://docs.fortinet.com/product/fortisase) | Public | 15–25 hr selected reading/labs | Administration, architecture, deployment, reference, access, posture, logging, and troubleshooting |
 | [FortiOS 7.6 documentation](https://docs.fortinet.com/product/fortigate/7.6) | Public | 12–20 hr selected reading/labs | SD-WAN, BGP, IPsec/ADVPN, sessions, policies, and on-ramp behavior |
 | [FortiManager 7.6 documentation](https://docs.fortinet.com/product/fortimanager/7.6) | Public | 6–12 hr selected reading/labs | ZTP, templates, orchestration, variables, install and monitoring |

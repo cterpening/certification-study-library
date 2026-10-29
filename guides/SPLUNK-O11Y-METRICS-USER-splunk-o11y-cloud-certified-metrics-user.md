@@ -6,14 +6,14 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-02
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-02
+upcoming_change_checked: 2026-10-28
 ---
 
 # Splunk O11y Cloud Certified Metrics User Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live certification page, four-page public blueprint, current Splunk Observability Cloud/OpenTelemetry documentation, and selected resources were checked September 2, 2026. This contains original learning material, not exam items. Recheck the [certification page](https://www.splunk.com/en_us/training/certification-track/splunk-o11y-cloud-certified-metrics-user.html) and [official blueprint](https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-o11y-cloud-metrics-user.pdf) before scheduling.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live certification page, four-page public blueprint, current Splunk Observability Cloud/OpenTelemetry documentation, and selected resources were checked October 28, 2026. This contains original learning material, not exam items. Recheck the [certification page](https://www.splunk.com/en_us/training/certification-track/splunk-o11y-cloud-certified-metrics-user.html) and [official blueprint](https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-o11y-cloud-metrics-user.pdf) before scheduling.
 
 **Current baseline:** OpenTelemetry ingest 10%; Metrics Concepts 15%; Built-in Content 10%; Visualizing Metrics 15%; Introductory Detectors 10%; Efficient Dashboards/Alerts 10%; Analytics 15%; Detector Use Cases 15%.<br>
 **Exam contract:** foundational; 54 questions; 60 total minutes including three minutes for the exam agreement.<br>
@@ -107,6 +107,10 @@ Use Navigator, Cluster Analyzer, built-in dashboards, events, and workload/pod/c
 
 Build weekly comparison and population ratio for many ephemeral instances. Test zero denominator, DST, missing/late data, cardinality, flapping, muting, message context, and clear behavior.
 
+## Current product context — separate from exam objectives
+
+> **Related item:** October 2026 Observability Cloud notes change APM tag `!=` filtering for missing tags and describe Controlled Availability for MetricSets that include spans without parents. These changes can alter metric values, charts, detector behavior and cardinality; the additional-spans feature is not universal. Check realm and account rollout before comparing or changing a production signal. [October 2026 release notes](https://help.splunk.com/en/splunk-observability-cloud/release-notes/october-2026)
+
 ## Hands-on labs
 
 1. Install/configure OTel Collector on Linux; diagnose five config/network/auth/resource faults.
@@ -147,6 +151,6 @@ This is not a complete list, and it is not meant to be consumed end to end. Choo
 | [Official certification page](https://www.splunk.com/en_us/training/certification-track/splunk-o11y-cloud-certified-metrics-user.html) and [blueprint](https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-o11y-cloud-metrics-user.pdf) | Free | 45–75 min | Canonical scope |
 | [Splunk Observability Cloud docs](https://help.splunk.com/en/splunk-observability-cloud) | Free | 15–30 hr targeted | Current product behavior; tenant entitlements vary |
 | [OpenTelemetry Collector docs](https://opentelemetry.io/docs/collector/) | Free/open source | 5–10 hr targeted | Collector concepts; use Splunk docs for supported packaging/export |
-| Seven blueprint-recommended official learning-path courses | Free/paid/partner/employer access varies | 12–25 hr estimate | Structured path; verify current duration/version |
-| [Splunk How-To YouTube channel](https://www.youtube.com/@SplunkHowTo) | Free | 4–10 hr selected | Visual supplement; verify current UI/product behavior |
+| [Official Metrics User track flowchart](https://www.splunk.com/en_us/pdfs/training/splunk-o11y-cloud-certified-metrics-user-track.pdf) | Free self-paced and selected paid options; account/access may vary | Combined runtime not stated; individual paths vary | Recommended learning sequence, not an exam prerequisite; check current catalog |
+| [Fundamentals of Metrics Monitoring](https://www.splunk.com/en_us/pdfs/training/fundamentals-of-metrics-monitoring-course-description.pdf) and [Visualizing and Alerting](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/visualizing-and-alerting-in-splunk-im-course-description.pdf) | Paid instructor-led/blended training; check current delivery | 6 hours; 4.5-hour instructor-led portion respectively | Optional metric/MTS and dashboard/detector practice; neither covers the whole blueprint |
 | Sandbox tenant plus synthetic Linux/Kubernetes metrics portfolio | Trial/employer/partner access may be needed | 20–40 hr | Applied evidence; never use production secrets/data |

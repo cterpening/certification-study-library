@@ -6,14 +6,14 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-28
 ---
 
 # Certified in Risk and Information Systems Control (CRISC) Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Reviewed September 29, 2026. The guide maps 44 entries in the live domain lists and 24 supporting tasks, answers 40 original prompts, and adds three worked scenarios plus 52 executed offline checks. Eight broader activities remain proposed. See the [coverage record](../docs/SOURCE-VALIDATION.md#crisc-coverage-record) and [research record](../docs/research/2026-09-29-crisc-deep-review.md).
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Reviewed October 28, 2026. The guide maps 44 entries in the live domain lists and 24 supporting tasks, answers 40 original prompts, and adds three worked scenarios plus 52 executed offline checks. Eight broader activities remain proposed. See the [coverage record](../docs/SOURCE-VALIDATION.md#crisc-coverage-record) and [research record](../docs/research/2026-09-29-crisc-deep-review.md).
 
 **CURRENT BLUEPRINT:** Governance 26%; Risk Assessment 22%; Risk Response and Reporting 32%; Technology and Security 20%. ISACA's [April 2025 announcement](https://www.isaca.org/about-us/newsroom/press-releases/2025/isaca-updates-cdpse-and-crisc-exams-to-reflect-latest-risk-and-privacy-priorities) dates this version to **November 3, 2025**, with materials from September 3, 2025. No later replacement or retirement appeared in the official sources examined on the review date. These are historical effective dates, not an upcoming 2026 cutover.
 
@@ -26,6 +26,10 @@ upcoming_change_checked: 2026-09-29
 **Resource verification:** The current certification landing advertises **833 QAE items and six-month access**, correcting this guide's earlier 600-item figure. The individual course, QAE and manual store routes rendered application shells, so exact product editions, interiors and course duration remain unverified. Public Pluralsight course durations total 5 hours 19 minutes beneath a rounded five-hour headline; LinkedIn/Cybrary lists 6 hours 3 minutes. Paid content was not reviewed. [Official preparation page](https://www.isaca.org/credentialing/crisc).
 
 **Integrity and execution:** Original prompts and examples are not recalled or predicted questions. The free quiz was fetched but its items were not reviewed or submitted. Execution used synthetic data, a local public schema copy, an existing Python/jsonschema installation and a seeded simulation. No account, purchase, organizational control, infrastructure or approval was exercised.
+
+## Refresh check — October 28, 2026
+
+ISACA’s live [CRISC outline](https://www.isaca.org/credentialing/crisc/crisc-exam-content-outline) still gives the four domains at 26%, 22%, 32%, and 20%, with 150 questions; no replacement exam outline is announced. The new 2027 CPE framework already noted below is a credential-maintenance change, not a change to the exam blueprint. Continue using the official outline and current candidate guide as the scope authority.
 
 ## How to use this guide
 

@@ -5,25 +5,33 @@ official_blueprint: https://learn.microsoft.com/en-us/credentials/certifications
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: source-validated
-last_verified: 2026-09-27
+review_status: review-required
+last_verified: 2026-10-28
 upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-27
+upcoming_change_checked: 2026-10-28
 ---
 
 # AB-100 Agentic AI Business Solutions Architect Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The complete guide, objective coverage, selected implementation claims, exercises, and citations were reviewed on September 27, 2026. Exercises were reviewed as architecture/tabletop work; no tenant deployments or paid course contents were tested. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-100-coverage-record) and [deep-review findings](../docs/research/2026-09-27-ab-100-deep-review.md). The [official AB-100 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100) is authoritative.
+> **FUTURE OUTLINE — November 16, 2026.** The live official page displays a future outline. This refresh separately maps its 74 detailed objectives while preserving the accepted July teaching snapshot. Future weights below do not apply before the effective date. The prerequisite-page conflict remains unresolved.
 
-**Current baseline:** Skills measured as of July 22, 2026<br>
-**Upcoming blueprint change (checked September 27, 2026):** The English revision is effective October 14, 2026. A complete comparison with the saved July outline found the same objective groups and weights; two bullets add “Microsoft” before Foundry Tools and one capitalizes “Service.” The public page now displays the October outline. The July snapshot remains the historical baseline; these editorial changes do not establish a new domain. Localized updates can follow a different schedule; check the [exam page](https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-100/) for your appointment.<br>
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 detailed refresh maps all 74 objectives in the retained teaching baseline and checks current public product evidence. See the [current refresh record](../docs/research/2026-10-28-ab100-gh300-ai103-refresh.md#ab-100) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-100-coverage-record). The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100) is authoritative. Product/tenant execution and human review remain separate; limitations and source conflicts are stated below.
+
+**Retained teaching baseline:** Skills measured as of July 22, 2026. The current live page exposes the future November 16 outline; this is not a claim that July was freshly republished today.<br>
+**Upcoming blueprint change — VERIFY CURRENT (October 28, 2026):** The exam and credential pages now announce November 16, 2026, and the study guide displays that future outline. Its change log includes reweighted plan/design/deploy areas and changed strategy, agent and ALM wording. The earlier October 14 editorial comparison is historical and does not establish November coverage. All 74 retained objectives and the separately labeled future objectives have now been reconciled to teaching. The July snapshot remains accepted because November 16 is future; localized timing can differ.<br>
 **Official source:** [AB-100 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100)
 
-> **Credential name checked September 27, 2026:** Microsoft now lists **Agentic AI Business Solutions Architect Expert**. The exam code remains AB-100. Passing the exam and earning the credential are separate: the existing associate-certification prerequisite still needs to be satisfied. Check the [current credential page](https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect/) for accepted prerequisites; a name change does not establish a new exam.
+> **Credential name checked October 28, 2026:** Microsoft now lists **Agentic AI Business Solutions Architect Expert**. The exam code remains AB-100. Passing the exam and earning the credential are separate: the existing associate-certification prerequisite still needs to be satisfied. Check the [current credential page](https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect/) for accepted prerequisites; a name change does not establish a new exam.
 
-> **Official-page conflict (rechecked October 4, 2026):** The exam page includes MB-280 and PL-200 in its prerequisite list; the credential page omits them. Both also contain an unrelated information-protection exam summary. Use the dedicated study guide for scope and confirm an ambiguous prerequisite with Microsoft Credentials support before relying on it. The course and learning path have separate entry requirements; completing them does not satisfy the associate-credential requirement.
+> **Official-page conflict (rechecked October 28, 2026):** The exam page includes MB-280 and PL-200 in its prerequisite list; the credential page omits them. Both also contain an unrelated information-protection exam summary. Use the dedicated study guide for scope and confirm an ambiguous prerequisite with Microsoft Credentials support before relying on it. The course and learning path have separate entry requirements; completing them does not satisfy the associate-credential requirement.
 
-**Bounded maintenance pilot - October 4, 2026:** The prerequisite discrepancy remains open and Microsoft still announces October 14 as the English revision date. The July baseline and September 27 full-review date remain unchanged. This follow-up adds grounding and governance practice, evaluated supplementary resources, and a fresh offline lab run; it does not establish tenant behavior or human review. See the [pilot evidence and source decisions](../docs/research/2026-10-04-ab-100-maintenance-pilot.md).
+**Historical bounded maintenance pilot — October 4, 2026:** At that time the prerequisite discrepancy remained open and Microsoft announced October 14. That date observation is superseded by the October 28 notice above. The July baseline and September 27 full-review date remain unchanged. This follow-up adds grounding and governance practice, evaluated supplementary resources, and a fresh offline lab run. Use it to learn the concepts, practice architecture decisions, and prepare for the certification. Tenant testing and independent human review were not performed; these are evidence limits and useful future checks, not automatic barriers to using supported material for study. See the [pilot evidence and source decisions](../docs/research/2026-10-04-ab-100-maintenance-pilot.md).
+
+## October 28 implementation notes
+
+**Confirmed — VERIFY CURRENT (October 28, 2026).** Current GitHub Copilot harness agents support solutions/ALM, but existing agents cannot be transferred between standard and GitHub Copilot harnesses. Recheck capability fit before migration: the table still excludes Azure AI Search knowledge, manual/custom authentication and several publication channels for the GitHub Copilot harness. The harness is Copilot Studio technology; its name does not mean agent customer data is processed by the GitHub Copilot service. [Agents powered by the GitHub Copilot Harness overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/overview)
+
+These are bounded operational updates, not a completed objective rebaseline. Product and tenant exercises were not run. Earlier unresolved support and documentation gaps remain.
 
 ## How to use this guide
 
@@ -31,14 +39,14 @@ AB-100 is an architecture exam. For every scenario, identify the desired busines
 
 > **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
 
-> **Evidence boundary for supplementary sources:** The Microsoft blueprint defines exam scope, and current Microsoft product documentation defines Microsoft behavior. Named engineering blogs, cross-cloud architecture guidance, standards, and research below add transferable design heuristics; they do not prove that a topic is tested or that another platform behaves like Microsoft. Treat product-specific details from those sources as examples, translate the principle to the Microsoft design, and verify volatile Microsoft behavior in current documentation. This guide excludes exam dumps, recalled items, and sources that claim to reproduce live questions.
+> **Best-effort learning and evidence:** The Microsoft blueprint defines exam scope. Current Microsoft product documentation is primary evidence for Microsoft behavior; Microsoft team blogs and evaluated practitioner sources can add useful implementation detail when their ownership, date, harness, and limitations fit the claim. Weigh the specific evidence rather than treating every Microsoft page as interchangeable. Direct objective coverage teaches published skills; `Related item:` identifies adjacent examples worth learning. Blog-documented behavior is distinguished from behavior tested by this library. If sources conflict, retain both with a dated conflict note and revisit the claim when better evidence becomes available. Tenant testing and independent review are pursued when practical and disclosed when absent; their absence alone does not invalidate useful, source-supported study material. This guide uses public information and excludes exam dumps, recalled items, and sources claiming to reproduce live questions.
 
 ### Use a deliverables-first study loop
 
 1. **Scope pass:** Read the blueprint and objective map. Mark every term you cannot explain and every Microsoft surface you cannot place in an architecture.
 2. **Plan pass:** Work Parts 1–4 until you can produce a process map, requirement set, grounding-data assessment, architecture decision record, portfolio decision, and ROI/TCO model.
 3. **Design pass:** Work Parts 5–7 until you can draw platform, identity, data, knowledge, tool, state, orchestration, and human boundaries for a cross-product scenario.
-4. **Deploy pass:** Spend proportionally more practice here because it is 40–45% of the blueprint. Produce an evaluation/release plan, environment and ALM map, operational dashboard, threat model, and audit-evidence contract.
+4. **Deploy pass:** For the retained July outline, spend proportionally more practice here because deployment is 40–45%; use the separate future weights for appointments after the November change. Produce an evaluation/release plan, environment and ALM map, operational dashboard, threat model, and audit-evidence contract.
 5. **Retrieval pass:** Answer the scenario checks without notes, complete at least three exercises end to end, and use the official practice assessment to identify—not memorize—weak areas. Return to the exact blueprint objective and source documentation for each miss.
 
 For a compressed schedule, study one scenario through all five passes rather than reading every section passively. A useful completion standard is that another architect can challenge your assumptions and you can respond with a requirement, tradeoff, owner, evidence, and fallback.
@@ -72,6 +80,16 @@ The current [GitHub Copilot Harness agent overview](https://learn.microsoft.com/
 | Plan AI-powered business solutions | 25–30% | Establish requirements, data readiness, strategy, portfolio, costs, and benefits |
 | Design AI-powered business solutions | 25–30% | Select agent patterns, platforms, extensibility, applications, and integrations |
 | Deploy AI-powered business solutions | 40–45% | Design monitoring, testing, ALM, security, governance, risk, and compliance |
+
+### November 16 outline — future preparation only
+
+| Area | Retained July teaching weights | Future November 16 weights |
+|---|---:|---:|
+| Plan AI-powered business solutions | 25–30% | 35–40% |
+| Design AI-powered business solutions | 25–30% | 30–35% |
+| Deploy AI-powered business solutions | 40–45% | 20–25% |
+
+The future outline changes emphasis materially, even though its 74 detailed tasks mostly retain the earlier wording. The three bullet edits add Microsoft branding to Foundry Tools and capitalize Service. Continue practicing deployment, security, testing and operations; a smaller future percentage does not remove those objectives. Build a separate appointment/language study plan instead of silently replacing the current teaching map. The [refresh evidence](../docs/research/2026-10-28-ab100-gh300-ai103-refresh.md#ab-100) records current and future mappings and exact hashes.
 
 The candidate is expected to understand Microsoft 365 Copilot, Copilot Studio, Microsoft Foundry and Foundry Tools, Power Platform, and core Dynamics 365 products. The role also connects business process design, responsible AI, open agent protocols, data governance, security, financial analysis, and adoption.
 
@@ -208,7 +226,9 @@ Organize reusable business data with governed semantics, ownership, identifiers,
 
 **Confirmed; VERIFY CURRENT:** For standard-harness agents, [Microsoft's SharePoint knowledge guidance](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-add-sharepoint) scopes retrieval to the registered location and the chatting user's permissions. It documents filters for title, author, modifier, and modification date. Encryption-protected files can appear ready yet yield no answer; transcripts omit retrieved document bodies. Neither a ready status nor an empty transcript proves successful retrieval or denied access.
 
-Adi Leibowitz's [metadata-filtering walkthrough](https://microsoft.github.io/mcscatblog/posts/sharepoint-metadata-filtering/) illustrates a different, GitHub Copilot-harness path. Use it to design document-applicability tests; its built-in tool names and schemas are internal implementation details. **Unconfirmed - validation needed; VERIFY CURRENT:** this pilot did not establish custom-column filtering behavior in a tenant or find a directly matching product-reference contract. Do not promise this capability for every harness or turn the blog's tool calls into a required API.
+**Direct objective coverage:** Checking grounding-data relevance and enforcing access practice AB-100's grounding, testing, and data-access objectives.
+
+**Related item: Microsoft CAT blog-documented behavior - VERIFY CURRENT (reviewed October 4, 2026).** Adi Leibowitz's [metadata-filtering walkthrough](https://microsoft.github.io/mcscatblog/posts/sharepoint-metadata-filtering/) describes custom-column filtering and scoped SharePoint search for the GitHub Copilot harness. This Microsoft team implementation account is accepted as useful learning evidence for an applicability-test design. The standard-harness product article above describes a different filter surface; it neither confirms nor contradicts the GHCP account. This library did not test that behavior in a tenant or confirm a separate matching product-reference contract. Keep the harness distinction, revisit details as documentation evolves, and treat the post's built-in tool names and schemas as internal implementation details rather than public APIs.
 
 For a case assistant, relevance has two independent questions: does an approved article apply to this market and date, and may this caller read it? A country or approval-status tag narrows applicability; it grants no permission. Missing metadata calls for clarification or a governed fallback rather than a guessed market. In [Exercise 14](#exercise-14-applicable-and-authorized-grounding), inspect selected document IDs and revisions separately from the final prose and test both authorized-but-inapplicable and applicable-but-restricted records.
 
@@ -839,6 +859,18 @@ For a model or deployment update:
 | Lifecycle | Risk assessment, testing, approval, monitoring, incident response, retirement |
 | Evidence | Trace, audit trail, lineage, model/data/configuration change history |
 
+#### Map the actual governance coverage
+
+[Advanced connector policies](https://learn.microsoft.com/en-us/power-platform/admin/advanced-connector-policies) cover supported certified connectors and MCP servers; custom, HTTP and virtual connectors have different coverage. In mixed mode, classic and advanced policies constrain together; ACP-only does not enforce classic policy. Removing group or environment membership is not proof that the last applied environment policy vanished. Inspect effective policy and propagation before claiming rollback.
+
+Build an original matrix for a certified case connector, custom refund connector, HTTP endpoint and MCP server: applicable control, environment, effective identity, permitted read, forbidden write, propagation and verification owner. Use the [agent data-policy reference](https://learn.microsoft.com/en-us/microsoft-copilot-studio/admin-data-loss-prevention) for the selected agent/harness and the [Power Platform policy overview](https://learn.microsoft.com/en-us/power-platform/admin/wp-data-loss-prevention) for design-time/runtime and propagation boundaries. Whole-server allowance does not implement per-business-action approval. **VERIFY CURRENT:** mode, supported connector class, harness and control surface. No tenant policy was changed.
+
+#### Worked platform elimination and shared-tool change
+
+The service-case assistant requires Azure AI Search knowledge, manual/custom authentication and a Contact Center channel. The [current harness capability matrix](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/overview) excludes those capabilities from the GitHub Copilot harness. ALM support alone does not make that candidate fit; select a platform meeting all requirements or explicitly change the requirements and tests. Existing agents cannot simply transfer harnesses.
+
+> **Related item:** A [Foundry Toolbox](https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/toolbox-overview) default-version promotion can change tools without redeploying consuming agents. Include shared-tool version, effective identity, allowed/denied operations and impacted consumers in the release/rollback record. A stable endpoint and an unchanged agent package do not prove unchanged behavior.
+
 ### Use risk tiers
 
 Risk classification can consider decision impact, autonomy, reversibility, users, sensitive data, external exposure, regulated context, model type, and integration power. Higher tiers require stronger independent review, validation, human oversight, monitoring, and release authority.
@@ -987,6 +1019,12 @@ Allow 20-30 minutes. This original tabletop uses synthetic records; it executes 
 
 ---
 
+### Exercise 15: Effective-control and evaluation-identity review
+
+Complete the four-integration policy matrix above as a tabletop. Compare standard and GitHub Copilot harness candidates against the named knowledge/auth/channel requirements. Then evaluate the release record under an intended user and a restricted user; native Copilot Studio evaluations run as the signed-in user, so a missing restricted-user run is missing evidence, even when every completed answer passes. Assign policy, deployment, runtime-test, approval and incident owners separately. Include a shared-tool default promotion and group-removal case; state what actual tests and effective-policy observations are needed before release or rollback. No policy change, model call, deployment or customer action is required for this worksheet.
+
+---
+
 ## 12. Scenario checks and exam distinctions
 
 ### Knowledge checks
@@ -1015,6 +1053,9 @@ Allow 20-30 minutes. This original tabletop uses synthetic records; it executes 
 22. An unchanged package is imported into production and its greeting works. What environment-dependent checks remain before broader release?
 23. Alex can read two policies, but only one applies to the case market. A third applicable policy is restricted. Which independent gates and retrieval evidence are required?
 24. A vendor supplies a safety-tested agent, but no one owns deployment-specific incidents or the human exception queue. Which responsibilities remain unassigned?
+
+25. An environment is removed from a policy group, yet an integration remains blocked. What effective-policy and mode evidence is needed before calling it a prompt defect?
+26. An unchanged agent acquires a new tool through a shared default version. Which release identity, permission and regression records must be rechecked?
 
 For each answer, state the outcome, architecture boundary, owner, decision, risk, evidence, deployment path, and rollback or escalation.
 
@@ -1048,6 +1089,8 @@ These checkpoints explain the original questions above. Alternative architecture
 | 22 | Check target connections, identities, permissions, configuration, knowledge, channels, telemetry, and a limited smoke test. Record intentional differences and recovery steps; package equality alone does not establish equivalent behavior. |
 | 23 | Check applicability and actual caller authorization separately. Retain selected IDs/revisions and safe evidence; missing transcript document bodies alone prove neither retrieval success nor denial. |
 | 24 | Assign builder handover and deploying-owner obligations, including effective identities, approved use, exception staffing, user guidance, monitoring, incident response, and retirement. Vendor testing does not establish local readiness. |
+| 25 | Inspect the effective environment policy, last-applied state, classic/advanced mode, supported connector class and propagation. Group removal alone is not rollback evidence. |
+| 26 | Record the shared-tool version/default and resulting tool set, consuming agent identities, downstream allowed/denied actions, evaluation coverage, approval and rollback owner. Package or endpoint equality is insufficient. |
 
 Before declaring readiness, explain three additional implementation traps: maker credentials in event triggers, a changed identity during Foundry migration, and an informational feed task mistaken for approval. Revisit Parts 5, 6, and 9 if any distinction is unclear.
 
@@ -1171,18 +1214,24 @@ For a focused session, choose one post, produce its artifact, then explain which
 
 | Resource | Access and time | Objective fit and artifact | Review boundary |
 |---|---|---|---|
-| [SharePoint metadata-filtering walkthrough](https://microsoft.github.io/mcscatblog/posts/sharepoint-metadata-filtering/) - Adi Leibowitz | Public; 7-minute publisher reading estimate; add 20-30 minutes for Exercise 14 | Plan/grounding, design/SharePoint, deploy/testing: an applicability and permission test matrix | Published September 1, updated September 2, 2026; GHCP harness. Internal tools are not public APIs; custom-column behavior remains tenant-unvalidated. |
-| [Microsoft AI Agents for Beginners](https://github.com/microsoft/ai-agents-for-beginners) - lessons 6 and 10 | Public reading; about 2-3 hours selected reading and a worksheet, estimated from two lessons plus analysis | Deploy/security, monitoring, testing: a threat-control matrix and trace-to-outcome evidence plan | MIT license inspected; no separate lesson dates displayed. Reviewed lesson text only. SDK/notebook use can require accounts, model access and costs. The inline poem example asks for approval after generation; it does not establish pre-action tool enforcement. |
-| [Microsoft 2026 Responsible AI Transparency Report web summary](https://www.microsoft.com/en-us/corporate-responsibility/topics/responsible-ai/reports/transparency-report/) | Public; about 30-45 minutes selected reading and a responsibility worksheet, locally estimated | Deploy/responsible AI and governance: developer/deployer handover matrix | Vendor self-report; no separate publication/update date displayed. Full linked PDF not reviewed. Governance context, not an independent audit or product-control reference. |
+| [SharePoint metadata-filtering walkthrough](https://microsoft.github.io/mcscatblog/posts/sharepoint-metadata-filtering/) - Adi Leibowitz | Public; 7-minute publisher reading estimate; add 20-30 minutes for Exercise 14 | Direct: grounding, SharePoint design, testing and access controls; produce an applicability and permission test matrix. Related item: GHCP metadata-routing implementation. | Published September 1, updated September 2, 2026; Microsoft CAT blog-documented behavior, not independently tenant-tested here. Internal tools are not public APIs; verify harness-specific details. |
+| [Microsoft AI Agents for Beginners](https://github.com/microsoft/ai-agents-for-beginners) - lessons 6 and 10 | Public reading; about 2-3 hours selected reading and a worksheet, estimated from two lessons plus analysis | Direct: deploy/security, monitoring and testing; produce a threat-control matrix and trace-to-outcome plan. Related item: optional SDK/notebook implementation. | MIT license inspected; no separate lesson dates displayed. Reviewed lesson text only. SDK/notebook use can require accounts, model access and costs. The inline poem example asks for approval after generation; it does not establish pre-action tool enforcement. |
+| [Microsoft 2026 Responsible AI Transparency Report web summary](https://www.microsoft.com/en-us/corporate-responsibility/topics/responsible-ai/reports/transparency-report/) | Public; about 30-45 minutes selected reading and a responsibility worksheet, locally estimated | Direct: responsible-AI and governance principles. Related item: developer/deployer handover matrix. | Vendor self-report; no separate publication/update date displayed. Full linked PDF not reviewed. Governance context, not an independent audit or product-control reference. |
 
 **VERIFY CURRENT:** The repository is a supplementary coding/lab starting point, not an AB-100 curriculum. Recheck its current dependencies, accounts, service costs, and sample support before running anything. These external notebooks and videos were not executed or watched in this pilot. For a service-free exercise, use the existing local release gate and Exercise 14.
+
+### Current data-policy reading and original worksheet
+
+Read [Configure data policies for agents](https://learn.microsoft.com/en-us/microsoft-copilot-studio/admin-data-loss-prevention), visibly updated October 22, alongside the [Power Platform policy overview](https://learn.microsoft.com/en-us/power-platform/admin/wp-data-loss-prevention). Allow about 15–25 minutes for selected reading and 20–30 minutes for the four-integration policy matrix (editorial estimates). Separate data groups, tool/HTTP/authentication/channel/event-trigger controls, design-time/runtime effects and propagation. Confirm the selected harness, effective identity, role and policy before interpreting an error. Reading is public; configuration requires an authorized environment and appropriate administrative access. No tenant configuration was performed.
+
+An evaluated bootcamp governance workshop requires its own setup and contains timing and policy generalizations needing reconciliation. It is not promoted as a general-purpose runnable AB-100 lab. Use the original tabletop above to produce an evidence artifact without inventing environment access.
 
 ### Courses, labs, and assessments
 
 | Resource | Access | Estimated time | Best use and caveat |
 |---|---|---:|---|
 | [Microsoft Learn — AB-100 course](https://learn.microsoft.com/en-us/training/courses/ab-100t00) and [Architect AI solutions for business productivity](https://learn.microsoft.com/en-us/training/paths/architect-agentic-ai-business-solutions/) | Free self-study; instructor-led options vary | 3 days (official course); 11-module learning path | Official architecture foundation across planning, design, and deployment; Microsoft notes the course is preparatory rather than an exam-prep course |
-| [Microsoft — AB-100 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-100/practice/assessment?assessment-type=practice&assessmentId=1815645847&practice-assessment-type=certification) | Free Microsoft account | About 1–2 hours for an attempt and review | Repeatable official readiness check with rationales and learning links; use after learning and keep the blueprint and product docs authoritative |
+| [Microsoft — AB-100 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-100/practice/assessment?assessment-type=practice&assessmentId=1815645847&practice-assessment-type=certification) | Free Microsoft account | About 1–2 hours for an attempt and review (editorial estimate) | Official pages now advertise AI Skills Navigator with sign-in; assessment contents/launch were not inspected. Use after learning and keep the blueprint and product docs authoritative |
 | [Microsoft Partner Skilling Hub — LevelUp AB-100](https://www.skilling-hub.com/en-US/listing/o::levelup::2426785) | Partner login required | 10 hours | No additional cost for eligible Microsoft partners; self-paced coverage spans architecture, value, grounding, agent selection, extensibility, operations, ALM, governance, security, and exam preparation |
 | [Microsoft Copilot Studio guidance](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/) | Free | Select 4–8 hours by gap | Architecture, governance, testing, ALM, operations, and value guidance from the product team |
 | [O'Reilly — AB-100 Crash Course with Tim Warner](https://www.oreilly.com/live-events/agentic-ai-business-solutions-architect-crash-course-exam-ab-100/0642572326043/) | Subscription or event access | 4 hours (published course length) | Certification-focused treatment of the full blueprint; verify the occurrence and current baseline |

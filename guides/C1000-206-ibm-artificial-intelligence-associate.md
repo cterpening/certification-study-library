@@ -6,14 +6,14 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-04
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-04
+upcoming_change_checked: 2026-10-28
 ---
 
 # C1000-206 IBM Artificial Intelligence Fundamentals v1 Associate Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide maps the live IBM exam contract checked September 4, 2026. It is unofficial and may contain errors. The [official C1000-206 exam record](https://www.ibm.com/training/credentials/getExam/C1000-206) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide maps the live IBM exam contract checked October 28, 2026. It is unofficial and may contain errors. The [official C1000-206 exam record](https://www.ibm.com/training/credentials/getExam/C1000-206) is authoritative.
 
 **Assessment contract:** 44 questions; 31 required to pass; 60 minutes.<br>
 **Current status:** Live. The official record showed no replacement or withdrawal notice when checked.<br>
@@ -67,6 +67,8 @@ Ethics asks what ought to be built and how impacts are distributed. Responsible 
 
 Security covers training/data poisoning, prompt injection, sensitive-data exposure, model theft, unsafe output, supply-chain risk, insecure tools, and denial/cost abuse. Apply least privilege, data classification, isolation, input/output controls, grounded authorization, adversarial testing, monitoring, and response. A content filter alone is not a complete control system.
 
+**Related item: governance for AI agents.** IBM's October 14, 2026 watsonx.governance announcement describes asset discovery for agents, tools, MCP servers and knowledge sources, rule checks and developer-facing risk findings. This is one vendor's current example, not a universal AI governance control or a C1000-206 objective. Inventory does not establish safety; evaluate permissions, data lineage, behavior and human accountability. [IBM announcement](https://www.ibm.com/new/announcements/new-in-ibm-watsonx-governance-govern-ai-agents-as-you-build-expand-accountability-and-streamline-compliance).
+
 ## 5. Use cases and integration
 
 Start with outcome, user, workflow, error cost, latency, volume, data rights, explainability, integration, and fallback. Traditional ML fits stable prediction/classification from measurable features. GenAI fits synthesis and unstructured interaction. Rules may be best when policy is explicit and deterministic.
@@ -114,4 +116,6 @@ This is a selective learning path, not a complete list of AI resources.
 |---|---|---:|
 | [Official C1000-206 exam record](https://www.ibm.com/training/credentials/getExam/C1000-206) | Public | **20 minutes** for the contract and objectives |
 | [IBM overview of artificial intelligence](https://www.ibm.com/think/topics/artificial-intelligence) | Public | **2–4 hours** with linked concept reading |
+| [IBM Artificial Intelligence Fundamentals badge](https://www.ibm.com/training/badge/artificial-intelligence-fundamentals?hss_channel=lcp-78306383) | Free IBM SkillsBuild account; courses, quizzes and simulations required | Module times vary; IBM does not state a reliable total for the full badge | Broad concepts across ML, GenAI, vision, NLP, ethics and Watson Studio; not exam-specific |
+| [IBM Developer: get started with artificial intelligence](https://developer.ibm.com/learningpaths/get-started-artificial-intelligence/) | Public | **2 hours** as listed | Beginner path with a Python/scikit-learn model exercise; narrower than the full responsible-AI and business-integration scope |
 | Eight labs in this guide | Local tools or notebook | **10–14 hours** plus one timed review |

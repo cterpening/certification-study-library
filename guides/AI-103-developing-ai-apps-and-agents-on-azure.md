@@ -6,24 +6,24 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-27
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-27
+upcoming_change_checked: 2026-10-28
 ---
 
 # AI-103 Developing AI Apps and Agents on Azure Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 27, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ai-103-coverage-record). The [official AI-103 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-103) is authoritative.
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 detailed refresh maps all 64 objectives in the retained teaching baseline and checks current public product evidence. See the [current refresh record](../docs/research/2026-10-28-ab100-gh300-ai103-refresh.md#ai-103) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ai-103-coverage-record). The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-103) is authoritative. Product/tenant execution and human review remain separate; limitations and source conflicts are stated below.
 
 **Current baseline:** Skills measured as of April 16, 2026<br>
-**Upcoming blueprint change:** None announced on the official study guide as of September 27, 2026.<br>
+**Upcoming blueprint change:** None announced on the official study guide checked October 28, 2026.<br>
 **Official source:** [AI-103 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-103)
 
 ## How to use this guide
 
 Start with the service-selection and lifecycle models, then build the labs. For each objective, be able to explain the decision, implement a small Python solution, observe its behavior, and troubleshoot one failure. Use the official blueprint as a coverage checklist; use this guide to connect its individual bullets into complete systems.
 
-The [credential page](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-apps-and-agents-developer-associate/) explicitly expects Python experience. For a focused learning route, follow the fictional maintenance-assistant examples below, complete Lab 8, and attempt all twelve knowledge checks before reading their answer checkpoints. The local retrieval-metric example needs only Python; cloud labs require your own authorized, cost-capped environment and current SDK versions.
+The [credential page](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-apps-and-agents-developer-associate/) explicitly expects Python experience. For a focused learning route, follow the fictional maintenance-assistant examples below, complete Lab 8, and attempt all sixteen knowledge checks before reading their answer checkpoints. The local retrieval-metric example needs only Python; cloud labs require your own authorized, cost-capped environment and current SDK versions.
 
 > **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
 
@@ -350,6 +350,10 @@ An agent adds state, tools, and decisions around a model. Define:
 
 The [current Foundry Agent Service overview](https://learn.microsoft.com/en-us/azure/foundry/agents/overview) distinguishes prompt agents, hosted agents, and application-owned use of the Responses API. Choose by how much runtime/orchestration code the team must control, then verify identity, tool, state, deployment, and observability support for that agent type. **FOUNDRY (CLASSIC):** courses or samples centered on the Assistants API, threads, messages, runs, or older persistent-agent objects describe the previous agent generation.
 
+**VERIFY CURRENT — shared tool releases:** A [Foundry Toolbox](https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/toolbox-overview) exposes curated tools through an MCP endpoint. Promoting its default version can change consuming agents' tool sets without an agent redeployment. Record toolbox identity/version, effective default, tool definitions, consumer identities and regression/rollback evidence; endpoint equality is not candidate equality. Not every direct tool is supported through Toolbox: client-side function calling has a different execution path. A newly advertised write tool still requires downstream authorization.
+
+**Safety detection versus enforcement:** [Prompt Shields](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/jailbreak-detection) can return an attack detection that the application must act on. In Foundry, configured filtering can block; a detection annotation is not the same as a filtered response. Treat direct user attacks, retrieved-document attacks and tool-result scanning as distinct supported paths with their own defaults/preview state. In a synthetic `detected=true, filtered=false` case, explain the application's block/quarantine route and independently reject an unapproved wrong-asset write. Do not claim this fixture was returned by a real detector.
+
 ### Design tools as security-sensitive APIs
 
 Use precise names, descriptions, types, allowed values, and validation. The application—not the language model—must enforce authorization and business rules. Avoid a general-purpose tool when several narrower operations express policy more safely.
@@ -462,6 +466,21 @@ Inspect both the media and embedded text. An image can contain harmful content, 
 
 ---
 
+### Enforce visual policy as a release workflow
+
+The blueprint names watermarking, prohibited symbols, brand rules and inappropriate content. Turn each rule into an observable release decision; a generic safety score does not implement an organization's brand policy.
+
+| Rule | Evidence and control | Hold the output when |
+|---|---|---|
+| Disclose generated or altered media | Preserve supported provenance and apply the organization's approved visible mark in its authorized publishing workflow; inspect the exported artifact | Required marking is absent, removed or unverifiable |
+| Flag a prohibited symbol | Use a validated detector or qualified reviewer with known false-positive/negative cases | The detection is positive or uncertain under the policy's threshold |
+| Use an approved brand asset | Compare the asset/version, permitted treatment and destination with the brand owner's rules | The asset is unapproved, distorted or used outside the allowed context |
+| Block inappropriate content | Apply supported content classification, application thresholds and human escalation | A blocking category matches or required review is incomplete |
+
+[Foundry provenance and disclosure guidance](https://learn.microsoft.com/en-us/azure/foundry/responsible-ai/content-safety/provenance-disclosure) distinguishes provenance metadata and watermark mechanisms with their limits. Do not equate C2PA metadata with a visible business watermark or assume every API automatically supplies one. The table is an application design, not a claim that one Azure filter implements all four controls. Retain input/output hashes, policy/version, rule result, reviewer and release decision. **VERIFY CURRENT:** model/feature support and the organization's actual policy. No image generation, classifier or watermark operation was executed here.
+
+---
+
 ### Worked visual example: observable evidence and useful alt text
 
 The maintenance photo shows a pump beside a small pool of liquid; its serial-number plate is blurry. A grounded description can report those visible features and state that the serial number cannot be read. It should not invent the serial number, diagnose the liquid, or conclude that the pump is unsafe from the photograph alone.
@@ -485,6 +504,33 @@ For translation, decide whether fidelity, terminology control, conversational fl
 
 [Azure Translator](https://learn.microsoft.com/en-us/azure/ai-services/translator/overview) provides purpose-built text/document translation capabilities, while LLM-powered translation can support more contextual flows. **VERIFY CURRENT:** API versions, supported languages, adaptive/custom features, quotas, data residency, and model eligibility.
 
+### Structured output: syntax, schema and business meaning
+
+[Azure OpenAI structured outputs](https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/structured-outputs) constrain supported direct-inference output to a JSON Schema subset. Chat Completions uses `response_format`; Responses uses `text.format`. Set required fields and `additionalProperties: false`, and check the exact model/API support. This reference explicitly excludes Foundry Agents Service and audio models from its supported combinations; do not assume the same capability on every agent or audio path.
+
+For a synthetic maintenance draft, request an object containing `asset_id`, `action` and `evidence`. Limit the action to `draft` or `ask`. Parse JSON, validate the supported schema, and then validate source facts and application rules independently. Refusal, truncation, missing evidence and unavailable output are failure states to handle, not permission to fill missing values.
+
+The following original local check illustrates a narrow application boundary after parsing. It does not replace a complete JSON Schema validator or authorize a tool:
+
+```python
+import re
+
+def validate_maintenance_draft(record):
+    expected = {"asset_id", "action", "evidence"}
+    if type(record) is not dict or set(record) != expected:
+        raise ValueError("Unexpected output shape")
+    if type(record["asset_id"]) is not str or not re.fullmatch(r"P-\d{3}", record["asset_id"]):
+        raise ValueError("Invalid asset identifier")
+    if type(record["action"]) is not str or record["action"] not in {"draft", "ask"}:
+        raise ValueError("Only draft or ask is permitted")
+    evidence = record["evidence"]
+    if type(evidence) is not str or not evidence.strip() or len(evidence) > 512:
+        raise ValueError("Missing or excessive evidence")
+    return record
+```
+
+A well-formed `P-104` can still be the wrong asset. Compare it with the user's request and permitted source record; verify authorization and approval before any later submission. Schema conformance cannot turn `draft` into permission to execute a write. Local synthetic checks are recorded in the refresh evidence; no inference or service call is implied.
+
 ### Speech pipeline
 
 ```text
@@ -494,6 +540,12 @@ audio → speech recognition → language/agent processing → text-to-speech
 Streaming voice agents also need turn detection, interruption handling, latency budgets, noise testing, transcript protection, and clear disclosure. Custom speech can improve domain recognition but introduces dataset, evaluation, deployment, and lifecycle responsibilities.
 
 Use the [Azure Speech documentation](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/) for current speech-to-text, text-to-speech, translation, custom-model, language, SDK, and real-time support; the exam expects solution choice and implementation judgment, not memorization of every voice or locale.
+
+#### Choose custom recognition and audio-native reasoning deliberately
+
+For [custom speech](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/custom-speech-overview), first compare the base recognizer with human reference transcripts on a held-out, representative corpus. Inspect vocabulary and acoustic errors; decide whether text adaptation or audio with reference transcriptions fits the failure. Keep training and test sets separate, train only with authorized data, compare word error rate and business-critical terms, and choose deployment/lifecycle monitoring from the real-time or batch path. Real-time use needs a supported endpoint; batch has a different endpoint requirement. **VERIFY CURRENT:** language, region, data, cost and model lifecycle. Do not confuse adapting recognition with creating a custom synthetic voice.
+
+An [audio-enabled model](https://learn.microsoft.com/en-us/azure/foundry/openai/audio-completions-quickstart) can receive supported audio directly; a speech-to-text → text-model pipeline receives only the transcript and selected metadata. Choose the former when the task needs information retained in the audio modality, and the latter when inspectable words/terminology and explicit component control fit. Neither path establishes accurate emotion, identity, consent or action authority. Test identical wording with different timing/noise or speaker overlap, missing audio, negation and critical numbers. Measure recognition, interpretation, supported audio grounding and end-to-end latency separately. Do not copy structured-output support from a text-only path into an audio model.
 
 > **Related item:** Voice interfaces add a real-time state machine. Barge-in, silence, partial transcripts, retries, and channel failure need explicit behavior even when the language model is working correctly.
 
@@ -787,6 +839,14 @@ Test accents, languages, code switching, domain vocabulary, background noise, in
 
 ## 10. Production architecture and incident drills
 
+### Current SDK and retrieval preflight — October 28, 2026
+
+The [current SDK overview](https://learn.microsoft.com/en-us/azure/foundry/how-to/develop/sdk-overview) documents Python 3.10+, `azure-ai-projects >= 2.3.0` and `openai >= 3.0.0`; the [agent-evaluation tutorial](https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/evaluate-agent) requires `azure-ai-projects >= 2.8.0` for its operations but still names Python 3.8 in its prerequisites. Preserve that discrepancy. A generic 2.x label is insufficient: choose a Python/package combination that meets the actual selected distribution and task requirements, then pin tested versions. These are documented minimums, not a verified environment or an instruction to upgrade this repository. Record endpoint, token audience, agent/API generation and required operation before adapting a sample.
+
+[Vector filter placement](https://learn.microsoft.com/en-us/azure/search/vector-search-filters) affects retrieval quality without changing source permission. `preFilter` applies the predicate during traversal; `postFilter` filters per-shard candidates afterward; preview `strictPostFilter` filters the global candidates afterward. Selective post-filtering can miss permitted relevant documents. A simplified ordered list `restricted, restricted, allowed, allowed` with `k=2` illustrates how global filtering can return none while prefiltering may find the two allowed items. It is not an HNSW or sharding simulation. Keep the authorization predicate, inspect index/API/mode, and compare allowed recall, latency and cost; never remove access filtering to fill the result count.
+
+The [October Content Safety update](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/whats-new) stages text-harm and Prompt Shields changes from Spain Central. It does not establish a simultaneous update to image safety, PII, task adherence, egress, Spotlighting, blocklists or protected material. Record region/configuration and test reviewed benign and attack slices; rollout news is not a measured improvement or proof that every region is updated. **VERIFY CURRENT:** exact feature, region and model/filter behavior.
+
 ### Draw trust boundaries before selecting controls
 
 An AI application crosses more boundaries than the model endpoint. Start with a data-flow diagram:
@@ -884,6 +944,8 @@ Microsoft Foundry separates evaluation, tracing, and production monitoring while
 
 > **Related item:** An LLM-based evaluator is another model measurement, not ground truth. Calibrate it against reviewed examples, retain deterministic checks for schemas and policies, and sample disagreements for human adjudication.
 
+**Choose evaluator inputs, not only names.** The current [agent evaluator reference](https://learn.microsoft.com/en-us/azure/foundry/concepts/evaluation-evaluators/agent-evaluators) distinguishes current checks from deprecated Quality Grader and preview composite evaluators. Use full output items/tool trajectories when judging a tool-using workflow; final text alone can hide an unauthorized intermediate action. A reviewed rubric or composite score can reduce repeated judge calls, but deterministic asset, permission and approval invariants still block release. Record unsupported, missing and failed evaluation cases; no universal vendor sample threshold replaces application criteria.
+
 ### Roll out an agent change as an operational experiment
 
 A change to a model, system instruction, tool, knowledge source, safety configuration, or orchestration rule can alter behavior. Package these as one versioned release unit or record their exact independent versions.
@@ -964,6 +1026,12 @@ Start offline with synthetic fixtures: the retrieval IDs above, the ambiguous ph
 
 **Answer checkpoint:** missing evidence is a retrieval problem; `P-140` is an argument/identity-binding problem; HTTP success does not prove task completion; a timeout requires reconciliation before another write. The spoken negation prevents closing the order. A blurry plate supplies no trustworthy ID. The invoice's arithmetic catches a mapping inconsistency but does not authorize changing the source document.
 
+### Lab 9: Policy, output and speech evidence worksheet
+
+Use synthetic input and expected outcomes. Define the four visual release controls above, including an uncertain detector result and an absent watermark. Run the local draft validator on valid, missing-field, wrong-type, extra-key and forbidden-action objects, then show a schema-valid but source-wrong asset that still needs rejection. Design a held-out speech comparison and an audio-versus-transcript experiment; mark product-dependent observations as unexecuted. Retain the policy/schema/version, expected/observed local result, missing service evidence and release decision. Do not publish images, train voices, upload personal audio or submit maintenance actions to complete the worksheet.
+
+---
+
 ## 12. Scenario checks and exam distinctions
 
 ### Knowledge checks
@@ -981,6 +1049,12 @@ Start offline with synthetic fixtures: the retrieval IDs above, the ambiguous ph
 11. A photo's serial number is unreadable. Should a confident multimodal answer supply the most likely number?
 12. An evaluation run omits the agent version and has several errored rows. Can its successful rows alone justify release?
 
+13. Does valid structured JSON establish the correct asset and permission to act?
+14. Does a generic image-safety result implement watermark and brand rules?
+15. What must be measured before choosing custom speech instead of the base recognizer?
+16. What information does an audio-native path retain that a text-only transcript path may lose, and what does neither authorize?
+
+
 ### Answer checkpoints
 
 1. Inspect ingestion, chunking, authorized filtering, retrieval/ranking, and the actual prompt context; then evaluate whether claims use that evidence. Changing the generator cannot recover documents it never received.
@@ -995,6 +1069,12 @@ Start offline with synthetic fixtures: the retrieval IDs above, the ambiguous ph
 10. Wait for a finalized interpretation, preserve negation and identifiers, validate the proposed structured operation, and obtain the required approval. Partial recognition is unsuitable authorization for a write.
 11. No. Report the missing evidence and request a clearer image or another trusted identifier. A confidence signal cannot make unreadable detail observable.
 12. No. Pin the target version, record errored/missing cases, investigate failure patterns, and apply the predeclared release criteria. A changing target and silently excluded failures undermine the comparison.
+
+13. No. Shape/types are one gate; verify source identity, meaning, user authorization and any action-bound approval separately.
+14. No. Define each policy, its detector or human review, the actual exported marking/provenance and a release gate.
+15. Use held-out reference transcripts, word error rate and critical-term performance, then compare training data, deployment, cost and lifecycle requirements.
+16. Supported audio input can preserve nontextual/timing context for the task; a transcript omits information it does not encode. Neither proves identity, consent, accurate emotion or write authority.
+
 
 ### Distinctions to explain without notes
 
@@ -1098,10 +1178,11 @@ This is a curated starting point, not a complete list. You are not meant to cons
 |---|---|---:|---|
 | [Microsoft Learn — AI-103 course](https://learn.microsoft.com/en-us/training/courses/ai-103t00) | Free self-study; instructor-led options vary | 4 days (official course) | Official objective-aligned starting point and lab sequence |
 | [Microsoft — AI-103 Practice Assessment on AI Skills Navigator](https://aiskillsnavigator.microsoft.com/credentials/cert-3fb198f57997226a824aa5f52a1a22af9a4597941b2288ed39371c7a9e6bd7c9) | Free Microsoft account | About 1–2 hours for an attempt and review | Repeatable official readiness check; AI Skills Navigator sign-in is required, and the blueprint and product documentation remain authoritative |
-| [Microsoft Partner Skilling Hub — LevelUp AI-103](https://www.skilling-hub.com/en-US/listing/o::levelup::2394396) | Partner login required | 10 hours | No additional cost for eligible Microsoft partners; self-paced coverage includes generative apps, agents, tools, knowledge connections, multimodal content, and exam preparation |
-| [Current Microsoft Foundry documentation](https://learn.microsoft.com/en-us/azure/foundry/) and [AI Show](https://learn.microsoft.com/en-us/shows/ai-show/) | Free | Select 4–10 hours by gap | Current behavior and public demonstrations; select pages and episodes by objective |
+| [Microsoft Partner Skilling Hub — LevelUp AI-103](https://www.skilling-hub.com/en-US/listing/o::levelup::2394396) | Partner login required; current exact listing details unverified | 10-hour historical/journey listing, not a freshly verified session runtime | October 28 direct HTTP reached an application shell while browser access was unavailable; confirm current enrollment, exact content and eligibility with the provider. No exact successor was verified; access failure does not prove retirement |
+| [Use a custom function in an AI agent](https://microsoftlearning.github.io/mslearn-ai-agents/Instructions/Exercises/02-agent-custom-tools.html) | Public MIT lab; Azure subscription, permissions, deployed model and local tooling required; charges possible | 50 minutes (publisher estimate), plus setup/troubleshooting | Current create-version, conversation and Responses function-output workflow; add schema, denied-action and timeout tests; no lab executed here |
+| [Extend agents with MCP tools](https://microsoftlearning.github.io/mslearn-ai-agents/Instructions/Exercises/03-mcp-integration.html) | Public MIT lab; eligible Azure environment, Python, VS Code and Git required | 60 minutes (publisher estimate), plus setup/troubleshooting | Remote Learn MCP and local inventory server; sample automatically approves matching requests despite requesting approval, so it does not establish human enforcement; reconcile its Python 3.13 prerequisite with 3.12 test note |
 | [O'Reilly — AI-103 Crash Course with Yasir Khan](https://www.oreilly.com/live-events/azure-ai-apps-and-agents-developer-associate-certification-ai-103-crash-course/0642572384906/0642572384890/) | Subscription or event access | About 4 instructional hours plus breaks | Certification-focused walkthrough across all five domains; verify the event occurrence and current baseline |
-| [O'Reilly — Hands-On Microsoft Foundry](https://www.oreilly.com/live-events/hands-on-microsoft-foundry/0642572231088/0642572231071/) | Subscription or event access | 4 hours (October 22, 10 a.m.–2 p.m. EDT) | Supporting implementation practice; the listing uses nonstandard “Microsoft Foundry Studio” and goal/planner terminology, so confirm the demos use the current portal, project model, SDK, and Responses API |
+| [O'Reilly — Hands-On Microsoft Foundry](https://www.oreilly.com/live-events/hands-on-microsoft-foundry/0642572231088/0642572231071/) | Subscription or event access | Historical 4-hour October 22 occurrence; recording/future access unverified | Supporting implementation practice; the listing uses nonstandard “Microsoft Foundry Studio” and goal/planner terminology, so confirm the demos use the current portal, project model, SDK, and Responses API |
 | [O'Reilly — Introduction to AI Agents on Azure](https://www.oreilly.com/live-events/introduction-to-ai-agents-on-azure/0642572194079/) | Subscription or event access | 4 hours (published agenda) | Agent concepts and Azure implementation context; the listed live occurrence has ended |
 | [Udemy — AI-103 course by Alan Rodrigues](https://www.udemy.com/course/ai-102-microsoft-certified-azure-ai-engineer-associate-d/) | Purchase or subscription | 32 hours 56 minutes | Long-form course shown as updated July 2026; the listing follows AI-103 despite the legacy URL slug, but does not expose lesson-level Foundry generation, so verify demos against the current-generation signals above |
 | [Udemy — AI-103 course by Luke Ginn](https://www.udemy.com/course/ai-103-azure-ai-app-and-agent-developer-complete-course/) | Purchase or subscription | 30 hours 22 minutes | Deep alternative updated August 2026; includes labs and explicitly marked older lectures—treat those older lectures as **FOUNDRY (CLASSIC)** or adjacent content and follow the current sections |

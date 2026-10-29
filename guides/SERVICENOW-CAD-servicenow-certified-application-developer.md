@@ -1,19 +1,19 @@
 ---
 exam_code: SERVICENOW-CAD
 vendor_id: servicenow
-official_blueprint: https://learning.servicenow.com/lxp/en/credentials/certified-application-developer-mainline-exam-blueprint?id=kb_article_view&sysparm_article=KB0011498
+official_blueprint: https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011498
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-29
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-29
 ---
 
 # ServiceNow Certified Application Developer (CAD) Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The September 29 review maps 22 canonical subtopics, answers 40 original readiness prompts and executes 38 local JavaScript checks. Eight ServiceNow activities remain proposed. See the [coverage record](../docs/SOURCE-VALIDATION.md#servicenow-cad-coverage-record) and [deep-review evidence](../docs/research/2026-09-29-servicenow-cad-deep-review.md).
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The October 29 refresh rechecked the current January 2026 blueprint and retained its 22 mapped subtopics. The 40 original readiness prompts and 38 local JavaScript checks are from the September 29 deep review; eight ServiceNow activities remain proposed. See the [coverage record](../docs/SOURCE-VALIDATION.md#servicenow-cad-coverage-record) and [deep-review evidence](../docs/research/2026-09-29-servicenow-cad-deep-review.md).
 
 **CURRENT BLUEPRINT:** Designing and Creating an Application 20%; Application User Interface 20%; Security and Restricting Access 20%; Application Automation 20%; Working with External Data 10%; Managing Applications 10%. The canonical January 2026 page was fully read in a fresh unsigned browser on September 29. Its listed subskills are not exhaustive.<br>
 **Snapshot repair:** The September 17 guide headers already used these weights, but the saved snapshot and final checklist retained 15/20/20/20/10/15. This review aligns them and preserves the earlier snapshots and reviews. It records a correction, not a newly announced exam cutover.<br>
@@ -517,19 +517,25 @@ These are original explanation prompts, not reconstructed exam items. Answer, ex
 - Treat the certification as a checkpoint. Production development still requires architecture, security/privacy, accessibility, testing, change control, operational ownership and recovery review.
 
 
+### October 29, 2026 current-source update
+
+The live [CAD Mainline Exam Blueprint](https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011498) says **Updated January 2026** and retains six domains weighted 20/20/20/20/10/10 percent. It explicitly includes ServiceNow Git integration for source-code management. **Related item:** Brazil documentation distinguishes Build Agent (AI-assisted development), Creator Studio (no-code), App Engine Studio (low-code), and ServiceNow Studio (unified development, tracking, and packaging). Select a builder for the application and team; generated code and artifacts still need scope, ACL, test, review, and promotion checks. Release, role, plugin, and entitlement affect availability, and none of these builders changes the exam scope.
+
 ## Places to learn
 
 This is not a complete list. Select resources for demonstrated gaps. Public landing metadata is not a lesson, exam-question or quality audit. Times are planning estimates unless identified as earlier publisher metadata; account-only content, blocked resources and proposed instance work remain distinct.
 
 | Use and reading boundary | Resource | Access | Estimated time |
 |---|---|---|---:|
-| Full fresh unsigned browser main; 22 subtopics and exam contract | [Certified Application Developer Mainline Exam Blueprint](https://learning.servicenow.com/lxp/en/credentials/certified-application-developer-mainline-exam-blueprint?id=kb_article_view&sysparm_article=KB0011498) | Public browser; direct shell | 20–30 min estimate |
+| Full fresh unsigned browser main; 22 subtopics and exam contract | [Certified Application Developer Mainline Exam Blueprint](https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011498) | Public browser; direct shell | 20–30 min estimate |
 | Official path entry; current assignments/duration not visible | [Certified Application Developer Learning Path](https://learning.servicenow.com/lxp/en/now-platform/certified-application-developer?course_id=4c12ba8c87c39ad4a3bc40c5cebb3526&id=learning_content_prev) | Account/loading shell | 30–45 min planning estimate |
 | Earlier three-day ILT anchors not reverified; PDF blocked | [ServiceNow University Technical Training Catalog](https://www.servicenow.com/content/dam/servicenow-assets/public/en-us/doc-type/other-document/technical-training-portfolio.pdf) | HTTP 403 | Earlier 10–20 min reading estimate |
 | Older Washington-labeled course route; interior/duration unavailable | [Scripting in ServiceNow Fundamentals](https://learning.servicenow.com/lxp/en/now-platform/scripting-in-servicenow-fundamentals-on-demand-washington?course_id=f424ca5a87f71e143a3a84c7cebb3509&id=learning_course_prev) | Account/loading shell | Earlier three ILT days not reverified |
 | Find current Application Development Fundamentals assignment | [ServiceNow University Credential Catalog](https://learning.servicenow.com/lxp/en/credentials) | Account/entry shell | Current course duration unverified |
 | Current Welcome recommended by blueprint; no lesson interior | [Welcome to ServiceNow — current recommended course](https://learning.servicenow.com/lxp/en/now-platform/welcome-to-servicenow?course_id=386f3cf847b36a90c00af235126d430c&id=learning_course_prev) | Account/loading shell | Earlier three hours not reverified |
 | Product entry only; specific references below provide technical evidence | [ServiceNow Product Documentation](https://www.servicenow.com/docs/) | Public shell/browser docs | 15–30 hr selected study estimate |
+| 2026 role route map; choose only CAD-relevant scripting, application development, source control, and testing topics | [ServiceNow Career Journeys](https://www.servicenow.com/community/s/cgfwn76974/attachments/cgfwn76974/training-certifications-forum/27136/1/Learning%20paths%20-%20ServiceNow.pdf) | Public PDF; course access/catalog details vary | About 20–30 minutes to map a path; course durations are not shown |
+| Current ServiceNow University release index lists Studio Overview and Application Development Fundamentals as catalog leads | [Content Releases](https://nowlearning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0010279) | Public listing; linked course shells may require account | About 15–30 minutes to locate relevant material; course runtime unknown |
 | PDI/learning entry only; no instance allocated | [ServiceNow Developer Program](https://developer.servicenow.com/) | Public entry/account | 1–2 hr setup plus 20–40 hr labs estimate |
 | Public 120-question March 2026 listing; no demo/question interior | [ServiceNow CAD Practice Test](https://www.measureup.com/servicenow-cad-practice-test.html) | Paid product/public metadata | 3–5 hr study estimate |
 | Official channel title/footer only; no playback | [ServiceNow Developers YouTube Channel](https://www.youtube.com/@servicenowdevprogram) | Public video platform | 3–8 hr selected study estimate |

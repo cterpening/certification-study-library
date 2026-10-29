@@ -6,14 +6,14 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-28
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-28
+upcoming_change_checked: 2026-10-28
 ---
 
 # Databricks Certified Data Analyst Associate Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed on September 28, 2026 against all 39 detailed PDF objectives and the nine live weighted domains. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#databricks-data-analyst-associate-coverage-record). The [official certification page](https://www.databricks.com/learn/certification/data-analyst-associate) and its linked exam guide are authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed on October 28, 2026 against all 39 detailed PDF objectives and the nine live weighted domains. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#databricks-data-analyst-associate-coverage-record). The [official certification page](https://www.databricks.com/learn/certification/data-analyst-associate) and its linked exam guide are authoritative.
 
 **Library identifier:** `DATABRICKS-DATA-ANALYST-ASSOCIATE`; Databricks does not publish a short exam code on the official page checked.<br>
 **Current baseline:** Detailed official exam guide current as of October 30, 2025, with 39 objectives; live nine-domain weighted coverage page and its linked PDF checked September 28, 2026.<br>
@@ -24,6 +24,10 @@ upcoming_change_checked: 2026-09-28
 **Code convention:** Exam SQL is ANSI SQL. Practice writing and reading SQL without depending on a vendor-specific shortcut when a standard construct is available.
 
 **Product terminology — VERIFY CURRENT:** The exam still names **AI/BI Genie spaces**. Current [setup documentation](https://docs.databricks.com/aws/en/genie-agents/set-up) calls them **Genie Agents** and explicitly identifies the former name. Keep the published exam wording when mapping objectives, and use the current name when finding product instructions. This product change does not establish a new exam blueprint. The [deep-review record](../docs/research/2026-09-28-databricks-data-analyst-associate-deep-review.md) preserves the distinction.
+
+## Living-guide watch — October 28, 2026
+
+**Current platform context:** The published exam guide remains the October 30, 2025 version, with AI/BI Genie in scope. October 2026 Databricks release notes extend AI Search sources to streaming tables, materialized views and managed Iceberg V3 tables, while platform releases are staged and may reach accounts later. Use the live guide for exam scope and current documentation for feature availability. See the [current exam page](https://www.databricks.com/learn/certification/data-analyst-associate) and [October release notes](https://docs.databricks.com/aws/en/release-notes/product/2026/october).
 
 ## How to use this guide
 

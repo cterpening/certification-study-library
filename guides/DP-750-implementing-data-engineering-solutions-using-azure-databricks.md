@@ -6,17 +6,17 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-27
-upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-27
+last_verified: 2026-10-28
+upcoming_change_status: none-announced
+upcoming_change_checked: 2026-10-28
 ---
 
 # DP-750 Implementing Data Engineering Solutions Using Azure Databricks Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 27, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-750-coverage-record). The [official DP-750 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-750) is authoritative.
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-01.md#dp-750) and the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-750-coverage-record). Known source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-750) is authoritative.
 
-**Current baseline:** Skills measured as of March 11, 2026; the accepted snapshot records the July 13 page update. The newly fetched October revision is preparation material until its effective date.<br>
-**Upcoming blueprint change (checked September 27, 2026):** The English blueprint changes October 19, 2026. The revision uses Declarative Automation Bundles and Databricks CLI terminology, and removes deletion vectors from the clustering-strategy bullet. Domain weights are unchanged; deletion vectors remain useful technical context, not a clustering strategy. The current baseline below remains dated separately. See the [official revision](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-750).<br>
+**Current baseline:** Skills measured as of October 19, 2026. The March teaching snapshot is preserved in the objective archive.<br>
+**Blueprint reconciliation (October 28, 2026):** The accepted English revision uses Declarative Automation Bundles and Databricks CLI terminology, and removes deletion vectors from the clustering-strategy objective. Domain weights are unchanged. Deletion vectors remain useful technical context, not a clustering strategy. No later revision is announced on the checked official page.<br>
 **Lifecycle status:** Active; no retirement or replacement was announced on the official pages checked.<br>
 **Exam page:** [Azure Databricks Data Engineer Associate](https://learn.microsoft.com/en-us/credentials/certifications/implementing-data-engineering-solutions-using-azure-databricks/) · 120-minute assessment · ten listed languages: English, Japanese, Simplified and Traditional Chinese, Korean, German, French, Italian, Brazilian Portuguese and Spanish. Recheck language-specific revision timing when booking.<br>
 **Official course:** [DP-750T00 Implement data engineering solutions using Azure Databricks](https://learn.microsoft.com/en-us/training/courses/dp-750t00) · four instructor-led days.<br>
@@ -241,7 +241,15 @@ When a view reads a protected base table, ABAC uses the **session user** for its
 
 The [policy evaluation rules](https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/policy-evaluation) explain why deleting a referenced governed tag or UDF can deny queries throughout the policy scope. Removing a tag definition is not a safe way to disable a policy. Test missing attributes, policy conflicts, owner/exempt identities and actual reader routes.
 
-**September additions, not blanket GA claims:** [Metastore policies](https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/metastore-policies) are Beta; SQL management requires Runtime 19+ and metastore administration. [DENY policies](https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/deny-policies) are separately Beta and currently deny only `MANAGE ACCESS CONTROL`. They can prevent an owner from changing access, but do not remove that owner’s other data privileges; metastore admins are exempt. This is not a general `DENY SELECT` facility. The metastore page mentions view targets in Beta while the requirements page still excludes direct view policies: use the documented base-table/view evaluation path above and verify direct-view support before designing around it.
+**September additions, not blanket GA claims:** [Metastore policies](https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/metastore-policies) are Beta; SQL management requires Runtime 19+ and metastore administration. [DENY policies](https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/deny-policies) are separately Beta and currently deny only `MANAGE ACCESS CONTROL`. They can prevent an owner from changing access, but do not remove that owner’s other data privileges; metastore admins are exempt. This is not a general `DENY SELECT` facility.
+
+**Confirmed — VERIFY CURRENT (October 28, 2026).** The [October 15 ABAC requirements](https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/requirements) now explicitly document **direct-view policies in Beta**, resolving the earlier exclusion conflict. A workspace administrator must enable ABAC on Views and use Runtime 19+. Metric views are unsupported. The current requirements warn that `CREATE OR REPLACE VIEW` drops governed tags and directly attached policies; use supported `ALTER VIEW` changes or reapply and verify protection. The announced future metadata-preservation change is not the current contract.
+
+**Proposed practice extension — not executed:** Tabletop a protected view replacement: inventory tags and direct/inherited policies, predict access, then identify post-change negative tests. Record Beta switch and runtime. Keep base-table/session-user behavior separate.
+
+**Answer checkpoint:** Is ABAC on ordinary views universally available? No; current support is Beta with explicit workspace/runtime requirements; metric views remain excluded.
+
+The current limit is 20 layered policies across a base-table/view hierarchy. This does not remove the separate same-table or same-column conflict rules described above.
 
 #### Worked example: identity changes a persisted result
 
@@ -450,7 +458,15 @@ Choose a notebook/job when bespoke side effects/control flow dominate. Choose a 
 
 Customer C has `(08:00, 1, bronze)`, `(08:00, 2, silver)`, then a late-arriving `(07:59, 9, starter)`. Ordering lexicographically by `(event_time, change_id)` gives current state **silver**, not starter or bronze. A Type 1 target retains one state; a Type 2 design needs separate effective intervals. Deduplicating a micro-batch alone does not prevent an older later batch from overwriting a newer target: compare source and target sequence, and retain delete/tombstone state for replay.
 
-**Related item — automatic versus legacy CDF:** [Automatic CDF](https://learn.microsoft.com/en-us/azure/databricks/delta/delta-change-data-feed) computes changes at read time on eligible Unity Catalog tables with Runtime 19+: Delta needs row tracking; managed Iceberg needs v3. Azure Databricks readers are required. It uses the familiar `table_changes`/`readChangeFeed` APIs, but has limitations for row filters/masks and non-additive schema changes. Legacy Delta CDF still needs explicit enablement; do not run both modes together. Neither feed is a permanent audit archive. Verify regional rollout and retained versions before migration; September GA and the planned end-of-October regional rollout are separately stated in the [upcoming changes](https://learn.microsoft.com/en-us/azure/databricks/release-notes/whats-coming).
+> **Related item:** **Automatic versus legacy CDF.** [Automatic CDF](https://learn.microsoft.com/en-us/azure/databricks/delta/delta-change-data-feed) computes changes at read time on eligible Unity Catalog tables with Runtime 19+: Delta needs row tracking; managed Iceberg needs v3. Azure Databricks readers are required. It uses the familiar `table_changes`/`readChangeFeed` APIs, but has limitations for row filters/masks and non-additive schema changes. Legacy Delta CDF still needs explicit enablement; do not run both modes together. Neither feed is a permanent audit archive. Verify regional rollout and retained versions before migration; September GA and the planned end-of-October regional rollout are separately stated in the [upcoming changes](https://learn.microsoft.com/en-us/azure/databricks/release-notes/whats-coming).
+
+### Worked example — a schema boundary can invalidate a replay range
+
+**Confirmed — VERIFY CURRENT (October 28, 2026).** A synthetic source renames a column at version 45. A CDF read spanning 40–50 crosses a non-additive schema change and can fail; the current [CDF guidance](https://learn.microsoft.com/en-us/azure/databricks/delta/delta-change-data-feed) says to split ranges before and after that change. Preserve each range's schema and reconcile downstream mapping. Automatic CDF also excludes tables with row filters or column masks. Do not remove governance controls merely to make ingestion work.
+
+**Proposed practice extension — not executed:** Record runtime, Unity Catalog table type, row tracking, policy and available history. Test the supported alternative in an isolated lab and retain an explicit pre/post-schema boundary.
+
+**Answer checkpoint:** Does a valid checkpoint make a 40–50 CDF replay valid across a version 45 rename? No; retained history and compatible schema range are independent requirements.
 
 ### Cleanse, transform and load
 
@@ -912,7 +928,7 @@ These are original prompts, not recalled exam questions. Answer with decision, d
 
 ## 9. Final readiness checklist
 
-- [ ] I can map every March 11, 2026 objective to a section, lab and evidence artifact.
+- [ ] I can map every October 19, 2026 objective to a section, lab and evidence artifact.
 - [ ] I can select serverless, job, classic, SQL warehouse, pipeline, shared/dedicated compute and pooling from requirements.
 - [ ] I can configure runtime/Spark, Photon, workers/autoscaling, termination, node type, libraries, policies and permissions.
 - [ ] I can design and create catalogs, schemas, volumes, tables, views, materialized views, connections and foreign catalogs.
@@ -937,7 +953,15 @@ These are original prompts, not recalled exam questions. Answer with decision, d
 
 ## Places to learn
 
-This is **not a complete list**, and it is not a recommendation to consume everything. Pick a current primary path, build the labs, and use targeted references/practice for gaps. Times are page-published when available; otherwise they are clearly labeled estimates. Catalogs, access, duration, price and alignment change. DP-750 is new enough that several vendors had no dedicated current course on the pages found; broad Databricks material must be mapped to the March baseline and separately checked against the October revision. Avoid dumps or anything claiming real exam questions.
+### October 28 learning route and evidence task
+
+The [official DP-750 exercises](https://microsoftlearning.github.io/DP-750T00-Implement-Data-Engineering-Solutions-using-Azure-Databricks/) now list setup, 13 numbered labs and cleanup, with **9 hours 20 minutes** in summed publisher estimates. They assume a Premium workspace and real compute; public instructions do not include cloud credits. [Lab 12: development lifecycle](https://microsoftlearning.github.io/DP-750T00-Implement-Data-Engineering-Solutions-using-Azure-Databricks/Instructions/Labs/12-implement-development-lifecycle-processes-in-azure-databricks.html) has a 45-minute index estimate and separates notebook tests from the local PowerShell CLI. Its deployment uses placeholder notebooks, so successful resource creation alone does not validate the transformation. Allow extra time for setup, current CLI compatibility and independent tests.
+
+**Original deployment extension (about 45–90 minutes beyond the published lab, editorial estimate):** Keep a snapshot of the placeholder plan, then implement a small synthetic transformation with independently calculated expected output. Record the Git revision, test result, target, execution identity, job run and output reconciliation before considering the deployed job complete. Do not deploy to a shared production target merely to exercise the workflow.
+
+**Answer checkpoint:** A valid bundle and a job with the expected task graph prove configuration/deployment state. They do not prove that placeholder code performs the required transformation or that production permissions and data contracts work.
+
+This is **not a complete list**, and it is not a recommendation to consume everything. Pick a current primary path, build the labs, and use targeted references/practice for gaps. Times are page-published when available; otherwise they are clearly labeled estimates. Catalogs, access, duration, price and alignment change. DP-750 is new enough that several vendors had no dedicated current course on the pages found; broad Databricks material must be mapped to the current October 19 outline; March-only coverage remains historical. Avoid dumps or anything claiming real exam questions.
 
 ### Start with Microsoft and Databricks
 

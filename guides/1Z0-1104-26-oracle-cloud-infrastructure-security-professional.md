@@ -6,19 +6,20 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-04
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-04
+upcoming_change_checked: 2026-10-28
 ---
 
 # 1Z0-1104-26 Oracle Cloud Infrastructure Security Professional Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide maps Oracle University's public 2026 learning-path scope checked September 4, 2026. It is unofficial and may contain errors. The [official OCI Security Professional learning path](https://mylearn.oracle.com/ou/learning-path/become-a-cloud-security-professional-2026/163254) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide maps Oracle University's public 2026 learning-path scope checked October 28, 2026. It is unofficial and may contain errors. The [official OCI Security Professional learning path](https://mylearn.oracle.com/ou/learning-path/become-a-cloud-security-professional-2026/163254) is authoritative.
 
 **Assessment contract exposed by the current path:** Oracle Cloud Infrastructure Security Professional, exam 1Z0-1104-26, 90 minutes.<br>
 **Published scope:** security principles; identity domains, IAM and workload principals; network and infrastructure security; WAF, TLS, Vault, encryption, secrets, and Data Safe; Cloud Guard, Security Zones, Vulnerability Scanning, Bastion, and Threat Intelligence; Audit, Logging, Events, Notifications, flow logs, Network Path Analyzer, automation, incident investigation, and forensics.<br>
 **Source boundary:** the public path does not publish weights, question count, or passing score. **VERIFY CURRENT** in MyLearn before scheduling.
 
+**Japanese-language option (Japan only; checked October 28, 2026):** Oracle's September 4 launch notice added 1Z0-1104-26-JPN. The current Japanese exam list shows 90 minutes, 50 questions, and a 68% pass score for that distinct code. This route does not replace the English exam or its contract. [Japan launch notice](https://www.oracle.com/jp/education/news/) · [Japanese exam list](https://www.oracle.com/jp/education/certification/certification-exam-list/).
 ## How to use this guide
 
 Analyze every control as asset and threat → trust boundary → preventive control → detective signal → response owner → recovery and retained evidence. Use only authorized tenancies and synthetic data for practice.
@@ -74,6 +75,8 @@ Define triage, severity, containment authority, evidence preservation, communica
 
 > **Related item:** Retention is part of detection design. A perfect query cannot recover evidence that was never enabled, centralized, time-synchronized, or retained long enough.
 
+**Related item: Data Safe Crypto Posture Assessment (October 20, 2026).** Oracle's release note describes a centralized cryptographic-posture view for registered target databases. This is a current product example, not a published 1Z0-1104-26 objective and not a replacement for encryption, key management, Data Safe assessments or compliance controls. Verify supported targets and IAM before any lab. [Release note](https://docs.oracle.com/en-us/iaas/releasenotes/data-safe/crypto-assessment.htm) · [feature overview](https://docs.oracle.com/en-us/iaas/data-safe/doc/crypto-posture-assessment-overview.html).
+
 ## Integrated practice scenarios
 
 1. **Exposed database path:** Investigate a Cloud Guard problem, validate route/NSG evidence, preserve logs, restrict access, rotate secrets, and confirm recovery.
@@ -113,5 +116,6 @@ This is a selective learning path, not a complete list of OCI security resources
 | Resource | Access | Estimated time |
 |---|---|---:|
 | [Official OCI Security Professional learning path](https://mylearn.oracle.com/ou/learning-path/become-a-cloud-security-professional-2026/163254) | Oracle account/subscription may be required | **23+ hours** as published by Oracle University |
+| [Data Safe Crypto Posture Assessment overview](https://docs.oracle.com/en-us/iaas/data-safe/doc/crypto-posture-assessment-overview.html) | Public | No duration | Related current feature documentation; check supported targets, region and IAM before use |
 | [OCI IAM security guidance](https://docs.oracle.com/en-us/iaas/Content/Security/Reference/iam_security.htm) | Public | **8–12 hours** plus linked service guidance |
 | Eight labs in this guide | Authorized OCI tenancy and synthetic data | **24–36 hours** plus two timed incidents |

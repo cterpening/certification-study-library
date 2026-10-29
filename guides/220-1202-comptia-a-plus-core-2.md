@@ -6,19 +6,23 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-28
+last_verified: 2026-10-28
 upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-28
+upcoming_change_checked: 2026-10-28
 ---
 
 # 220-1202 CompTIA A+ Core 2 (V15) Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 28, 2026. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#220-1202-coverage-record). The [official Core 2 V15 page](https://www.comptia.org/en-us/certifications/a/core-2-v15/) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on October 28, 2026. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#220-1202-coverage-record). The [official Core 2 V15 page](https://www.comptia.org/en-us/certifications/a/core-2-v15/) is authoritative.
 
 **Current baseline:** A+ V15, Core 2 exam 220-1202; launched March 25, 2025<br>
 **Version rule:** Core 1 and Core 2 must be passed from the same version; do not mix 1200- and 1100-series exams<br>
 **Lifecycle watch:** No exact retirement date is announced. CompTIA says usually three years after launch and estimates 2028; verify before scheduling.<br>
 **Official delivery snapshot:** Maximum 90 questions, including multiple-choice, drag-and-drop, and performance-based questions; 90 minutes; 700/900 passing score; English, German, and Japanese listed
+
+## Current guide watch — October 28, 2026
+
+- **Windows support boundary:** The 220-1202 objectives say Windows versions that remain in mainstream support are testable, up to Windows 11. Windows 10 reached end of support on October 14, 2025; its ESU program is conditional and does not restore mainstream support, while LTSC editions follow separate lifecycles. Windows 11 Home/Pro 24H2 reached end of updates on October 13, 2026; 25H2 and 26H2 are supported. Keep this version/lifecycle note distinct from the unchanged V15 objectives. See [Windows 11 release information](https://learn.microsoft.com/en-us/windows/release-health/windows11-release-information) and Microsoft's [Windows 10 lifecycle notice](https://learn.microsoft.com/en-us/windows/release-health/release-information).
 
 ## How to use this guide
 
@@ -130,7 +134,7 @@ For Linux evidence, connect `pwd`/`ls` to paths, `cat`/`less`/`grep` to content,
 
 For an ordinary file, mode `640` means owner read/write, group read, others no access: 6 = 4 + 2, 4 = read, 0 = none. Directory execute means search/traversal, so a directory with read permission alone is not equivalent to an accessible file. See the [GNU numeric-permission reference](https://www.gnu.org/software/coreutils/manual/html_node/Numeric-Modes.html). ACLs and additional controls can further affect access; no Linux permission changes were run here.
 
-On a Mac with Apple silicon or T2, automatic storage encryption and enabling FileVault are distinct protection states. FileVault adds password-bound access protection; keep the chosen recovery route usable and separate from the device. See [Apple’s FileVault guidance](https://support.apple.com/en-gb/guide/mac-help/mh11785/26/mac). Time Machine backup, iCloud synchronization and a FileVault recovery key solve different problems.
+On a Mac with Apple silicon or T2, automatic storage encryption and enabling FileVault are distinct protection states. FileVault adds password-bound access protection; keep the chosen recovery route usable and separate from the device. See [Apple’s FileVault guidance](https://support.apple.com/en-gb/guide/mac-help/mh11785/27/mac/27). Time Machine backup, iCloud synchronization and a FileVault recovery key solve different problems.
 
 ### Cloud productivity support — objective 1.11
 

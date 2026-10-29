@@ -6,20 +6,20 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-02
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-02
+upcoming_change_checked: 2026-10-28
 ---
 
 # Palo Alto Networks Certified Network Security Analyst Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live certification page, August 2025 datasheet, July 2025 certification handbook, Strata Cloud Manager/PAN-OS documentation, and selected public learning sources were checked September 2, 2026. This does not guarantee that every explanation is error-free or remains current. The [official page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-netsec-analyst) and [datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/netsec-analyst-datasheet.pdf) are authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live certification page, August 2025 datasheet, July 2025 certification handbook, Strata Cloud Manager/PAN-OS documentation, and selected public learning sources were checked October 28, 2026. This does not guarantee that every explanation is error-free or remains current. The [official page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-netsec-analyst) and [datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/netsec-analyst-datasheet.pdf) are authoritative.
 
 **Current baseline:** object configuration 30%; policy creation 30%; management/operations 26%; troubleshooting 14%; August 2025 datasheet<br>
 **Exam contract:** specialist-level English Pearson VUE certification. Under the checked handbook, all Palo Alto Networks certification exams use an 860 passing score on a 300–1000 scaled range and provisional results. The public datasheet does not state item count, base duration, price, or formal experience; verify live registration.<br>
 **Platform boundary:** Strata Cloud Manager and Strata Logging Service are explicit. The role creates objects/policy, improves posture, handles incidents/alerts, and troubleshoots management/on-box/runtime/push/health issues. UI and supported products evolve; learn object-policy-operation relationships.<br>
 **Validity and renewal:** two years under the July 2025 handbook, subject to current pathway rules.<br>
-**Upcoming change:** no retirement or dated replacement was found September 2, 2026.<br>
+**Upcoming change:** no additional retirement or dated replacement was found as of October 28, 2026.<br>
 **Integrity:** actual exam content is confidential. This guide uses the public blueprint, original checks, safe labs, and public documentation only.
 
 ## How to use this guide
@@ -256,7 +256,10 @@ This is not a complete list, and it is not meant to be consumed in full. Start w
 | [Certification Handbook](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf) | Public PDF | 30–45 minutes | Scoring, ESL, result, retake, validity, renewal, and integrity |
 | [Official digital learning](https://learn.paloaltonetworks.com/learn) | Free account/login may be required | 30 minutes planning; modules vary | Follow the certification-page plan and record current duration/version |
 | [Strata Cloud Manager documentation](https://docs.paloaltonetworks.com/strata-cloud-manager) | Public | 20–35 hours selected topics/labs | Folders/snippets, objects/policy, deployment, insights, optimizer, logs, incidents, health |
+| [Get Started with Strata Cloud Manager](https://docs.paloaltonetworks.com/strata-cloud-manager/navigation/get-started) | Public | 1–2 hours selected | Current folder scope, configuration, variables/snippets and push status; verify feature availability by managed product, service and license |
 | [PAN-OS policy documentation](https://docs.paloaltonetworks.com/pan-os) | Public | 15–25 hours selected topics | Security/NAT/decryption/override/PBF/profiles/objects and packet/runtime behavior |
+| [PAN-OS NAT rules](https://docs.paloaltonetworks.com/ngfw/networking/nat/nat-policy-rules), [decryption policy rules](https://docs.paloaltonetworks.com/network-security/decryption/administration/enabling-decryption/create-decryption-policy-rule), and [decryption profiles](https://docs.paloaltonetworks.com/network-security/decryption/administration/enabling-decryption/create-decryption-profile) | Public | 4–8 hours selected | First-match NAT behavior and current decryption setup; note version- and model-specific behavior |
+| [Strata Cloud Manager: NGFW Management OLX announcement](https://live.paloaltonetworks.com/t5/news/introducing-palo-alto-networks-nbsp-on-demand-learning/ta-p/1252677) | Free according to Palo Alto Networks announcement; Learning Center access may vary | Course lessons/hours not inspected | Optional SCM orientation, not full Network Security Analyst coverage; public announcement inspected, course content was not |
 | [Security Policy Best Practices](https://docs.paloaltonetworks.com/best-practices/security-policy-best-practices) | Public | 5–10 hours | App-based migration, profiles, decryption, cleanup, and Policy Optimizer context |
 | [Palo Alto Networks YouTube](https://www.youtube.com/@PaloAltoNetworks) | Free video | 4–10 hours selected current demos | SCM/Strata architecture and workflow visuals; verify current UI |
 | [Pluralsight Palo Alto Firewalls for Network Protection](https://www.pluralsight.com/paths/palo-alto-firewalls-for-network-protection) | Paid; older path | About 4h05m listed core course plus labs | PAN-OS policy subset; not SCM-complete and may use older UI |

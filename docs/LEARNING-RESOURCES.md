@@ -81,32 +81,48 @@ Third-party resources are evaluated individually. A trustworthy marketplace can 
 
 ### GH-900 — GitHub Foundations
 
-- Official: [Microsoft Learn Part 1](https://learn.microsoft.com/en-us/training/paths/github-foundations/) and [Part 2](https://learn.microsoft.com/en-us/training/paths/github-foundations-2/)
-- Free official assessment (about 1–2 hours for an attempt and review): [Microsoft GH-900 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/github-foundations/practice/assessment?assessment-type=practice&assessmentId=954809103&practice-assessment-type=certification); Microsoft account required
-- Official video: [Microsoft Learn GH-900 playlist](https://www.youtube.com/playlist?list=PLahhVEj9XNTf5iQVK_80RdvTju7ov6RYy)
-- Official supporting session (1 hour): [Microsoft Reactor — From Git to GitHub Foundations](https://www.youtube.com/watch?v=W86EkkBdquo); useful current orientation, not a replacement for the objective-mapped Learn paths
-- Hands-on: [Introduction to GitHub](https://github.com/skills/introduction-to-github) and the wider [GitHub Skills catalog](https://github.com/skills)
-- Structured subscription path: [Pluralsight GitHub Foundations](https://www.pluralsight.com/paths/github-foundations)
-- Partner path: [LinkedIn Learning — Prepare for the GitHub Foundations Certification](https://www.linkedin.com/learning/paths/prepare-for-the-github-foundations-certification)
-- Interactive partner track: [DataCamp GitHub Foundations](https://www.datacamp.com/certification/github-foundations)
-- Assessment supplement (about 3–6 hours for three quizzes and answer review; provider runtime not published): [Whizlabs GitHub Foundations](https://www.whizlabs.com/github-foundations-certification-course/)
-- Assessment supplement (about 4–8 hours for simulation, targeted practice, and review): [MeasureUp GH-900 practice test](https://www.measureup.com/microsoft-gh-900-github-foundations-practice-test.html), with a 100-question bank and explanations/references
-- Subscription assessment (about 2–4 hours for an attempt and review): [O'Reilly certification prep](https://www.oreilly.com/products/certification-prep.html), whose current public catalog lists a GitHub Foundation interactive practice test
-- Book: [GitHub Foundations Certification Guide on O'Reilly](https://www.oreilly.com/library/view/github-foundations-certification/9781836206057/), published August 2025; cross-check against the January 2026 blueprint
-- Marketplace course (5 hours 42 minutes): [GH-900 exam prep: GitHub Foundations on Udemy](https://www.udemy.com/course/gh-900-exam-prep-github-foundations/), updated November 2025; cross-check against the January 2026 blueprint
+Resource details from the [GH-900 guide](../guides/GH-900-github-foundations.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Start with the official paths, then pick the explanations, formats, and practice that work for you and close specific blueprint gaps. Times are approximate consumption time at normal speed; labs, note-taking, review, and independent practice add time.
+
+| Resource | Access | Estimated time | Best use and caveat |
+|---|---|---:|---|
+| [Microsoft Learn — GitHub Foundations Part 1](https://learn.microsoft.com/en-us/training/paths/github-foundations/) and [Part 2](https://learn.microsoft.com/en-us/training/paths/github-foundations-2/) | Free | About 12–16 hours | Official starting point and closest match to the January 2026 objectives |
+| [AI Skills Navigator — GH-900 Practice Assessment](https://aiskillsnavigator.microsoft.com/credentials/cert-b1ae9b371a2a7f811842dd9ab465ed04b9fd0cfa83870cec1ab58e789554e422) | Free; sign-in required | About 1–2 hours for an attempt and review (planning estimate) | Current credential page links this official assessment; its questions and launch session were not accessed |
+| [Microsoft Learn GH-900 video course](https://www.youtube.com/playlist?list=PLahhVEj9XNTf5iQVK_80RdvTju7ov6RYy) | Free | About 6–8 hours | Official instructor-led reinforcement for visual learners |
+| [Microsoft Reactor — From Git to GitHub Foundations](https://www.youtube.com/watch?v=W86EkkBdquo) | Free | 1 hour | Current first-party orientation covering the path from Git concepts into GitHub; supporting depth rather than an end-to-end GH-900 course |
+| [GitHub Skills — Introduction to GitHub](https://github.com/skills/introduction-to-github) | Free account | About 45–90 minutes | Guided practice with branches, commits, pull requests, and repository interaction |
+| [Pluralsight — GitHub Foundations](https://www.pluralsight.com/paths/github-foundations) | Subscription | 12 hours | Nine-course path; compare course dates with the current blueprint |
+| [DataCamp — GitHub Foundations](https://www.datacamp.com/certification/github-foundations) | Subscription | About 12–20 hours including exercises | GitHub-partnered interactive track mapped to exam objectives |
+| [Whizlabs — GitHub Foundations practice](https://www.whizlabs.com/github-foundations-certification-course/) | Paid course | About 3–6 hours for 3 quizzes and review | Assessment supplement rather than primary instruction; the provider does not publish a total runtime |
+| [MeasureUp — GH-900 practice test](https://www.measureup.com/microsoft-gh-900-github-foundations-practice-test.html) | Paid test or subscription; free demo available | About 4–8 hours for simulation and review | Tier 6 assessment supplement with 100 questions, explanations, and references; use results to find blueprint gaps rather than memorize items |
+| [O'Reilly — GitHub Foundations interactive practice test](https://www.oreilly.com/products/certification-prep.html) | Subscription | About 2–4 hours for an attempt and review | O'Reilly's public certification-prep catalog lists a GitHub Foundation practice test; exact launch details appear after sign-in |
+| [O'Reilly — GitHub Foundations Certification Guide](https://www.oreilly.com/library/view/github-foundations-certification/9781836206057/) | Subscription | About 10–14 hours reading/practice | Book-length treatment published August 2025; fill January 2026 changes from Microsoft Learn |
+| [Udemy — GH-900 exam prep: GitHub Foundations](https://www.udemy.com/course/gh-900-exam-prep-github-foundations/) | Purchase or subscription | 5 hours 42 minutes | Instructional course updated November 2025; evaluate the individual course, not the marketplace name |
+| [freeCodeCamp / Andrew Brown — GitHub Foundations course](https://www.youtube.com/watch?v=Jdc0i7RcBv8) | Free | About 11 hours | Long-form visual course for fundamentals; it targets an older blueprint |
+| [John Savill — DevOps Master Class](https://www.youtube.com/playlist?list=PLlVtbbG169nFr8RzQ4GIxUEznpNR53ERq) and [companion repository](https://github.com/johnthebrit/DevOpsMC) | Free | About 4–6 hours for the two linked parts | Strong supporting explanations, handouts, whiteboards, and examples; start with [Master Git](https://www.youtube.com/watch?v=hQJktcBzJUs) and [Azure DevOps and GitHub](https://www.youtube.com/watch?v=Z9evyML2I6M). It is not an end-to-end GH-900 course, and the repository has no detected license, so link rather than republish its files. |
+
+See the broader [Places to learn catalog](LEARNING-RESOURCES.md) for selection criteria, provider notes, and resources for the other GitHub exams.
 
 ### GH-200 — GitHub Actions
 
-- Official: [Microsoft Learn Part 1](https://learn.microsoft.com/en-us/training/paths/github-actions/) and [Part 2](https://learn.microsoft.com/en-us/training/paths/github-actions-2/)
-- Free official assessment (about 1–2 hours for an attempt and review): [Microsoft GH-200 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/github-actions/practice/assessment?assessment-type=practice&assessmentId=1001&practice-assessment-type=certification); Microsoft account required
-- Official video: [Microsoft Learn GH-200 playlist](https://www.youtube.com/playlist?list=PLahhVEj9XNTd5N_seZDoRXVIn6N1qAp-_)
-- Hands-on: [Test with Actions](https://github.com/skills/test-with-actions), [Reusable workflows](https://github.com/skills/reusable-workflows), and [Workflow artifacts](https://github.com/skills/workflow-artifacts)
-- Structured subscription path: [Pluralsight GitHub Actions](https://www.pluralsight.com/paths/github-actions)
-- Book: [Learning GitHub Actions on O'Reilly](https://www.oreilly.com/library/view/learning-github-actions/9781098131067/), published August 2023; useful for durable concepts, not current exam scope by itself
-- Assessment supplement (about 4–8 hours for simulation, targeted practice, and review): [MeasureUp GH-200 practice test](https://www.measureup.com/microsoft-gh-200-github-actions-practice-test.html), with 126 questions and explanations/references. Its public page also contains copied Copilot-oriented introductory text, so use the current Actions blueprint—not the marketing prose—as the scope check.
-- Subscription assessment (about 2–4 hours for an attempt and review): [O'Reilly certification prep](https://www.oreilly.com/products/certification-prep.html), whose current public catalog lists a GitHub Actions interactive practice test
+Resource details from the [GH-200 guide](../guides/GH-200-github-actions.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-No instruction-first Whizlabs or Udemy GH-200 course is listed yet. Assessment products are listed separately and are not substitutes for explanatory instruction.
+This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Start with the official paths, then pick the explanations, formats, and practice that work for you and close specific blueprint gaps. Times are approximate consumption time at normal speed; labs, note-taking, review, and independent practice add time.
+
+| Resource | Access | Estimated time | Best use and caveat |
+|---|---|---:|---|
+| [Microsoft Learn — GitHub Actions Part 1](https://learn.microsoft.com/en-us/training/paths/github-actions/) and [Part 2](https://learn.microsoft.com/en-us/training/paths/github-actions-2/) | Free | About 12–16 hours | Official starting point, with modules and exercises mapped to the credential |
+| [AI Skills Navigator — GH-200 Practice Assessment](https://aiskillsnavigator.microsoft.com/credentials/cert-38619ddf060902251eff3bb5285fe9c240a8bc7314467860ad9c5f69962602e2) | Free; sign-in required | About 1–2 hours for an attempt and review (planning estimate) | Current credential page links this official assessment; its questions and launch session were not accessed |
+| [Microsoft Learn GH-200 video course](https://www.youtube.com/playlist?list=PLahhVEj9XNTd5N_seZDoRXVIn6N1qAp-_) | Free | About 6–8 hours | Official instructor-led reinforcement for visual learners |
+| GitHub Skills: [Test with Actions](https://github.com/skills/test-with-actions), [Reusable workflows](https://github.com/skills/reusable-workflows), and [Workflow artifacts](https://github.com/skills/workflow-artifacts) | Free account | About 2–4 hours | Real-repository practice with automated feedback |
+| [Pluralsight — GitHub Actions](https://www.pluralsight.com/paths/github-actions) | Subscription | 7 hours | Five-course structured path; verify 2024 course behavior against the January 2026 baseline |
+| [O'Reilly — Learning GitHub Actions](https://www.oreilly.com/library/view/learning-github-actions/9781098131067/) | Subscription | About 8–12 hours reading/practice | Durable workflow and automation depth; published in 2023, so it is not a current exam map by itself |
+| [MeasureUp — GH-200 practice test](https://www.measureup.com/microsoft-gh-200-github-actions-practice-test.html) | Paid test or subscription; free demo available | About 4–8 hours for simulation and review | Tier 6 assessment with 126 questions and explanations; the public page contains copied Copilot-oriented introduction text, so use the official Actions blueprint as the scope check |
+| [O'Reilly — GitHub Actions interactive practice test](https://www.oreilly.com/products/certification-prep.html) | Subscription | About 2–4 hours for an attempt and review | O'Reilly's public certification-prep catalog lists a GitHub Actions practice test; exact launch details appear after sign-in |
+| [John Savill — DevOps Master Class](https://www.youtube.com/playlist?list=PLlVtbbG169nFr8RzQ4GIxUEznpNR53ERq) and [companion repository](https://github.com/johnthebrit/DevOpsMC) | Free | About 2 hours for CI/CD plus artifact review | Strong supporting explanations and workflow examples; [Part 4: CI/CD](https://www.youtube.com/watch?v=nLRHV2sRTe8) demonstrates triggers, runners, actions, environments, approvals, and matrices. It is not an end-to-end GH-200 course, and the repository has no detected license, so link rather than republish its files. |
+
+No instruction-first Whizlabs or Udemy course is listed yet. The MeasureUp assessment above is a gap-detection supplement, not explanatory instruction. See the broader [Places to learn catalog](LEARNING-RESOURCES.md).
 
 ### GH-300 — GitHub Copilot
 
@@ -123,7 +139,7 @@ Both are public GitHub articles reviewed September 27. They supplement the bluep
 
 #### Courses and practice
 
-Commercial durations and course-update dates below are historical catalog observations unless stated otherwise. September 27 checks did not inspect paid course interiors; blocked pages and application shells do not establish syllabus freshness. The September 24 event is now past, so verify recording or future-session access before purchasing.
+Commercial durations and course-update dates below are historical catalog observations unless stated otherwise; the six-course Pluralsight path and current public companion were specifically rechecked October 28. September 27 checks did not inspect paid course interiors; blocked pages and application shells do not establish syllabus freshness. The September 24 event is now past, so verify recording or future-session access before purchasing.
 
 This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Start with the official paths, then pick what works for you. Copilot changes particularly quickly, so use the August 7, 2026 blueprint and current GitHub Docs to resolve disagreements with any course. Times are approximate consumption time at normal speed; labs, note-taking, review, and independent practice add time.
 
@@ -134,8 +150,11 @@ This is a curated starting point, not a complete list, and it is not meant to be
 | [Microsoft Partner Skilling Hub — LevelUp GH-300](https://www.skilling-hub.com/en-US/listing/o::levelup::1776161) | Partner login required | 10 hours | No additional cost for eligible Microsoft partners; use a work account associated with the partner organization |
 | [Microsoft Learn GH-300 video course](https://www.youtube.com/playlist?list=PLahhVEj9XNTd8lE7clFGR1el35zaBmJbS) | Free | About 5–7 hours | Official instructor-led reinforcement for visual learners |
 | [Microsoft Reactor — Secure by Design: Building Security into Every Commit with GitHub Copilot](https://www.youtube.com/watch?v=DyGumvvyYy8) | Free | 1 hour | Current first-party related depth for secure Copilot-assisted development and validation; not an end-to-end GH-300 course |
-| GitHub Skills: [Getting started](https://github.com/skills/getting-started-with-github-copilot), [Customize Copilot](https://github.com/skills/customize-your-github-copilot-experience), and [Integrate MCP](https://github.com/skills/integrate-mcp-with-copilot) | Free account; Copilot access may be required | About 2–4 hours | Hands-on practice in real repositories |
-| [Pluralsight — GH-300 GitHub Copilot path and practice exam](https://www.pluralsight.com/paths/gh-300-github-copilot) | Subscription; practice access depends on plan/library | 4 hours plus about 2–4 hours for assessment/review | Compact four-course path updated in 2026; public page explicitly includes a practice exam |
+| GitHub Skills: [Getting started](https://github.com/skills/getting-started-with-github-copilot) | Free account; Copilot access may be required | About 1–2 hours with setup and notes (editorial estimate) | Initial repository exercise; verify current account and feature requirements |
+| GitHub Skills: [Customize Copilot](https://github.com/skills/customize-your-github-copilot-experience) | Public reading; account/Copilot access for execution | Less than 30 minutes (publisher estimate), plus setup | Instructions, skills and custom-agent practice; no workflow executed in this refresh |
+| GitHub Skills: [Integrate MCP](https://github.com/skills/integrate-mcp-with-copilot) | Public reading; own exercise repository and eligible account | Less than 1 hour (publisher estimate), plus setup | Prerequisite getting-started exercise; issue/PR writes are intended learner actions, not performed here |
+| [GitHub Copilot CLI for Beginners: First Steps](https://github.com/github/copilot-cli-for-beginners/blob/main/01-setup-and-first-steps/README.md) | Public MIT learning material; installed CLI and eligible account for execution | About 45 minutes: 15 reading + 30 hands-on (publisher estimate), excluding setup | Compare interactive, plan and programmatic modes and session controls; verify current commands/permissions before use |
+| [Pluralsight — GH-300 GitHub Copilot path and practice exam](https://www.pluralsight.com/paths/gh-300-github-copilot) | Subscription; practice access depends on plan/library | 6 hours plus about 2–4 hours for assessment/review (review time estimated) | Six-course public path rechecked October 28, including an October 23 productivity course and practice exam; paid interiors unreviewed |
 | [Whizlabs — GitHub Copilot certification practice](https://www.whizlabs.com/github-copilot-certification/) | Paid course | About 3–6 hours for 3 quizzes and review | Assessment supplement rather than primary instruction; the provider does not publish a total runtime |
 | [MeasureUp — GH-300 practice test](https://www.measureup.com/microsoft-gh-300-github-copilot-practice-test.html) | Paid test or subscription; free demo available | About 4–8 hours for simulation and review | Tier 6 assessment supplement with 114 questions, explanations, and references; use after learning to locate gaps |
 | [O'Reilly — GitHub Copilot interactive practice test](https://www.oreilly.com/products/certification-prep.html) | Subscription | About 2–4 hours for an attempt and review | O'Reilly's public certification-prep catalog lists a GitHub Copilot practice test; exact launch details appear after sign-in |
@@ -143,43 +162,66 @@ This is a curated starting point, not a complete list, and it is not meant to be
 | [O'Reilly — GitHub Copilot Certification Crash Course with Tim Warner](https://learning.oreilly.com/live-events/github-copilot-certification-crash-course/0642572013405/0642572354893/) | Subscription or event access | 5 hours 30 minutes (published agenda) | Earlier course occurrence associated with Tim's public companion repository |
 | [O'Reilly — Pass Your GitHub Copilot Certification Exam with Tim Warner](https://www.oreilly.com/live-events/pass-your-github-copilot-certification-exam/0642572414696/0642572414689/) | Subscription or event access | 4 hours (September 24, 10 a.m.–2 p.m. EDT) | Past September 24, 2026 event that links the public repository; **VERIFY CURRENT** recording or future-session access and compare with the August 7 blueprint |
 | [Udemy — GH-300 hands-on certification prep](https://www.udemy.com/course/github-copilot-exam-preparation/) | Purchase or subscription | 16 hours 36 minutes plus exercises | Hands-on course updated August 2026; evaluate this individual course rather than the marketplace name |
-| [Timothy Warner — public O'Reilly course companion repository](https://github.com/timothywarner-org/copilot-cert-prep) | Free | About 6–10 hours plus labs | Used with the earlier certification crash course and linked by the September 24 course listing; apply this guide's corrections and recheck volatile details |
+| [Timothy Warner — public O'Reilly course companion repository](https://github.com/timothywarner-org/copilot-cert-prep) | Free | About 1–2 hours selected reading/activities, or 4–6 hours for a broader route (editorial estimates) | Current September 24 four-hour course companion; selected activities total 50 minutes; use current primary docs for volatile behavior |
 
 Tim's authorized paid catalog is also available through his [Pluralsight author page](https://www.pluralsight.com/authors/tim-warner); at this review, his directly verified certification path there was the GH-500 path rather than GH-300.
 
-Timothy Warner's README explicitly declares MIT licensing, although its linked `LICENSE` file was missing when checked on August 30, 2026. This guide follows that stated intent conservatively: Tim and the repository are credited, the synthesis here is independently written, and his slides, O'Reilly presentation, and question material are not reproduced wholesale. See [Third-party notices](../THIRD-PARTY-NOTICES.md) and the broader [Places to learn catalog](LEARNING-RESOURCES.md).
+The repository's complete MIT license was present and inspected October 28: Copyright (c) 2025-2026 Tim Warner. The August 30 missing-file observation is historical. Tim and the repository are credited, this guide remains independently written, and paid presentations or assessment material are not reproduced. The exact restored copyright and permission notice is preserved below in the linked notices. See [Third-party notices](../THIRD-PARTY-NOTICES.md) and the broader [Places to learn catalog](LEARNING-RESOURCES.md).
 
 ### GH-100 — GitHub Enterprise Administrator
 
-- Official: [Microsoft Learn Part 1](https://learn.microsoft.com/en-us/training/paths/github-administration-products/) and [Part 2](https://learn.microsoft.com/en-us/training/paths/github-admin-2/github-admin-2/)
-- Free official assessment (about 1–2 hours for an attempt and review): [Microsoft GH-100 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/github-administration/practice/assessment?assessment-type=practice&assessmentId=1841205577&practice-assessment-type=certification); Microsoft account required
-- Hands-on support: [GitHub Skills](https://github.com/skills) for repository, Actions, and security exercises; enterprise identity and governance still require a suitable lab or sandbox
-- Structured subscription path: [Pluralsight GitHub Administration](https://www.pluralsight.com/paths/github-administration)
-- Compact subscription course (3 hours 3 minutes): [LinkedIn Learning GitHub Administration Cert Prep](https://www.linkedin.com/learning/github-administration-cert-prep), released September 2025; compare its older-scope and adjacent material with the July 2026 blueprint
-- Assessment supplement (about 4–8 hours for simulation, targeted practice, and review): [MeasureUp GH-100 practice test](https://www.measureup.com/microsoft-gh-100-github-administration-practice-test.html), with 105 questions. The public page's detailed domain list is administration-oriented, but some surrounding marketing copy incorrectly describes Copilot; validate every explanation against the current blueprint and GitHub Docs.
+Resource details from the [GH-100 guide](../guides/GH-100-github-enterprise-administration.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-No current individual Whizlabs, O'Reilly, or instruction-first Udemy GH-100 resource was verified during this review. That is an open catalog gap, not a claim that none exists.
+This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Start with the official paths, then pick the explanations, formats, and practice that work for you and close specific blueprint gaps. Times are approximate consumption time at normal speed; labs, note-taking, review, and independent practice add time.
+
+| Resource | Access | Estimated time | Best use and caveat |
+|---|---|---:|---|
+| [Microsoft Learn — GitHub Administration Part 1](https://learn.microsoft.com/en-us/training/paths/github-administration-products/) and [Part 2](https://learn.microsoft.com/en-us/training/paths/github-admin-2/github-admin-2/) | Free | About 12–16 hours | Official starting point and closest match to the published objectives |
+| [Microsoft — GH-100 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/github-administration/practice/assessment?assessment-type=practice&assessmentId=1841205577&practice-assessment-type=certification) | Free Microsoft account | About 1–2 hours for an attempt and review | Repeatable official readiness check with rationales and learning links; start here before buying another assessment |
+| [GitHub Skills](https://github.com/skills) | Free account | Select 2–5 hours | Repository, Actions, and security practice; enterprise identity and governance still need a suitable lab or sandbox |
+| [Pluralsight — GitHub Administration](https://www.pluralsight.com/paths/github-administration) | Subscription | About 12–18 hours | Structured administration path; compare its module dates and coverage with the July 2026 blueprint |
+| [LinkedIn Learning — GitHub Administration Cert Prep](https://www.linkedin.com/learning/github-administration-cert-prep) | Subscription | 3 hours 3 minutes | Noah Gift course released September 2025; useful compact survey, but it includes older-scope material and needs a July 2026 objective delta |
+| [MeasureUp — GH-100 practice test](https://www.measureup.com/microsoft-gh-100-github-administration-practice-test.html) | Paid test or subscription; free demo available | About 4–8 hours for simulation and review | Tier 6 assessment with 105 questions; its detailed domains are administration-oriented, but some public marketing copy incorrectly describes Copilot, so validate explanations against the current blueprint and GitHub Docs |
+| [GitHub YouTube](https://www.youtube.com/@GitHub) | Free | Select 2–6 hours by gap | Product demonstrations and enterprise sessions; select videos by objective rather than treating the channel as an exam course |
+| [GitHub Enterprise Server documentation](https://docs.github.com/en/enterprise-server@latest/admin) | Free | Select 4–8 hours by GHES gap | Primary source for backup, HA, upgrades, support, and appliance operations |
+| [GitHub Enterprise Importer documentation](https://docs.github.com/en/migrations/using-github-enterprise-importer) | Free | About 2–4 hours | Related migration planning and validation; adjacent rather than named exam scope |
+
+No current individual Whizlabs, O'Reilly, or instruction-first Udemy GH-100 course was verified during the August 31, 2026 review. See the broader [Places to learn catalog](LEARNING-RESOURCES.md) and its selection criteria.
 
 ### GH-500 — GitHub Advanced Security
 
-- Official: [Microsoft Learn Part 1](https://learn.microsoft.com/en-us/training/paths/github-advanced-security/) and [Part 2](https://learn.microsoft.com/en-us/training/paths/github-advanced-security-2)
-- Free official assessment (about 1–2 hours for an attempt and review): [Microsoft GH-500 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/github-advanced-security/practice/assessment?assessment-type=practice&assessmentId=590484996&practice-assessment-type=certification); Microsoft account required
-- Official video: [Microsoft Learn GH-500 playlist](https://www.youtube.com/playlist?list=PLahhVEj9XNTcJZjBU671JAiX8St3CV5dA)
-- Hands-on: [Secure repository supply chain](https://github.com/skills/secure-repository-supply-chain) and [Secure Code Game](https://github.com/skills/secure-code-game)
-- Structured subscription path and practice exam: [Pluralsight GH-500](https://www.pluralsight.com/paths/gh-500-github-advanced-security), 13 hours of courses plus about 2–4 hours for the practice attempt and review; taught by [Timothy Warner](https://www.pluralsight.com/authors/tim-warner) and updated in 2026
-- Assessment supplement (about 4–8 hours for simulation, targeted practice, and review): [MeasureUp GH-500 practice test](https://www.measureup.com/microsoft-gh-500-github-advanced-security-practice-test.html), with 100 questions. Its detailed domains cover Advanced Security, but the public page contains unrelated Copilot marketing copy; use the official blueprint and GitHub Docs to resolve conflicts.
+Resource details from the [GH-500 guide](../guides/GH-500-github-advanced-security.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-No current individual Whizlabs, O'Reilly, or instruction-first Udemy GH-500 resource was verified during this review.
+This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Start with the official paths, then pick the explanations, formats, and practice that work for you and close specific blueprint gaps. Times are approximate consumption time at normal speed; labs, note-taking, review, and independent practice add time.
+
+| Resource | Access | Estimated time | Best use and caveat |
+|---|---|---:|---|
+| [Microsoft Learn — GitHub Advanced Security Part 1](https://learn.microsoft.com/en-us/training/paths/github-advanced-security/) and [Part 2](https://learn.microsoft.com/en-us/training/paths/github-advanced-security-2) | Free | About 12–16 hours | Official starting point, including secret, supply-chain, CodeQL, and administration modules |
+| [AI Skills Navigator — GH-500 Practice Assessment](https://aiskillsnavigator.microsoft.com/credentials/cert-395e3a717f1a76889026d920979c10d0cb4ff7057b3c768f4efece80f217e6b3) | Free; sign-in required | About 1–2 hours for an attempt and review (planning estimate) | Current credential page links this official assessment; its questions and launch session were not accessed |
+| [Microsoft Learn GH-500 video course](https://www.youtube.com/playlist?list=PLahhVEj9XNTcJZjBU671JAiX8St3CV5dA) | Free | About 6–8 hours | Official instructor-led reinforcement for visual learners |
+| GitHub Skills: [Secure repository supply chain](https://github.com/skills/secure-repository-supply-chain) and [Secure Code Game](https://github.com/skills/secure-code-game) | Free account | About 2–4 hours | Practical security exercises; some enterprise controls require an appropriately licensed lab |
+| [Pluralsight — GH-500 GitHub Advanced Security path and practice exam](https://www.pluralsight.com/paths/gh-500-github-advanced-security) | Subscription; practice access depends on plan/library | 13 hours plus about 2–4 hours for assessment/review | Seven-course 2026 path taught by [Timothy Warner](https://www.pluralsight.com/authors/tim-warner); public page explicitly includes a practice exam |
+| [GitHub Security Lab](https://securitylab.github.com/) | Free | Select 3–8 hours by gap | CodeQL research, queries, and security concepts beyond minimum exam preparation |
+| [MeasureUp — GH-500 practice test](https://www.measureup.com/microsoft-gh-500-github-advanced-security-practice-test.html) | Paid test or subscription; free demo may be available | About 4–8 hours for simulation and review | Tier 6 assessment with 100 questions; the detailed domains cover Advanced Security, but unrelated Copilot copy appears on the public page, so resolve conflicts with the official blueprint and GitHub Docs |
+
+No current individual Whizlabs, O'Reilly, or instruction-first Udemy GH-500 course was verified during the August 31, 2026 review. See the broader [Places to learn catalog](LEARNING-RESOURCES.md).
 
 ### GH-600 — Developing in Agentic AI Systems (beta)
 
-- Official exam authority: [GH-600 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-600) and [beta credential page](https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-developer/)
-- Official course hub: [GH-600T00-A](https://learn.microsoft.com/en-us/training/courses/gh-600t00)
-- Official self-paced training: [Part 1](https://learn.microsoft.com/en-us/training/paths/gh-developing-agentic-systems-1) covers SDLC architecture, tools, MCP, and execution environments; [Part 2](https://learn.microsoft.com/en-us/training/paths/github-agentic-systems-part-two/github-agentic-systems-part-two) covers multi-agent orchestration, memory/state/evaluation, and governance
-- Current product reference: [GitHub agent concepts](https://docs.github.com/en/copilot/concepts/agents), [custom-agent configuration](https://docs.github.com/en/copilot/reference/custom-agents-configuration), [hooks](https://docs.github.com/en/copilot/reference/hooks-reference), and [enterprise agent management](https://docs.github.com/en/copilot/concepts/enterprise/agent-management)
-- Preview hands-on context: [Creating GitHub Agentic Workflows](https://docs.github.com/en/copilot/how-tos/github-agentic-workflows/creating-github-agentic-workflows); treat its syntax and availability as volatile rather than permanent exam scope
+Resource details from the [GH-600 guide](../guides/GH-600-developing-agentic-ai-systems.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-No exact third-party GH-600 course or practice product was promoted during the September 7 review. The exam is in beta, so use the official outline and learning paths as the scope authority, avoid dump-oriented claims, and recheck commercial material after the scored exam and stable blueprint are published.
+This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Start with the current official paths, then use documentation and this guide's labs to close specific gaps. Times are approximate reading or module time; note-taking, setup, repetition, and independent practice add time.
+
+| Resource | Access | Estimated time | Best use and caveat |
+|---|---|---:|---|
+| [Microsoft Learn — Developing in Agentic AI Systems Part 1](https://learn.microsoft.com/en-us/training/paths/gh-developing-agentic-systems-1) | Free; account optional for reading | About 2 hours 45 minutes | Official architecture, SDLC, tool, MCP, and execution-environment sequence |
+| [Microsoft Learn — Developing in Agentic AI Systems Part 2](https://learn.microsoft.com/en-us/training/paths/github-agentic-systems-part-two/github-agentic-systems-part-two) | Free; account optional for reading | About 3 hours 5 minutes | Official multi-agent, memory/state/evaluation, guardrail, and operations sequence |
+| [GH-600 course hub](https://learn.microsoft.com/en-us/training/courses/gh-600t00) | Free syllabus; instructor-led delivery varies | About 30 minutes to map the syllabus; course delivery varies | Use to confirm the current role, prerequisites, and official learning sequence |
+| [GitHub agent concepts](https://docs.github.com/en/copilot/concepts/agents), [custom-agent configuration](https://docs.github.com/en/copilot/reference/custom-agents-configuration), and [hooks reference](https://docs.github.com/en/copilot/reference/hooks-reference) | Free | Select about 3–6 hours by gap | Current product depth; client, plan, preview, syntax, and policy behavior can change |
+| [Creating GitHub Agentic Workflows](https://docs.github.com/en/copilot/how-tos/github-agentic-workflows/creating-github-agentic-workflows) | Free; hands-on use requires supported tools/accounts | About 1–2 hours for reading and a disposable-repository exercise | Useful CI integration practice, but public preview and adjacent to the durable objective rather than permanent syntax authority |
+| This guide's seven labs | Free; some product features need an eligible account | About 7–14 hours | Evidence-first practice; use tabletop substitutes where a licensed or enterprise feature is unavailable |
+
+No exact third-party GH-600 course or practice product was promoted in the September 7 review. That is a current catalog gap, not a claim that none exists. Avoid products centered on “real,” recalled, or leaked questions, and recheck all objective-alignment claims against the official study guide.
 
 ### AZ-900 — Microsoft Azure Fundamentals
 
@@ -187,12 +229,16 @@ Resource details from the [AZ-900 guide](../guides/AZ-900-microsoft-azure-fundam
 
 This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Pick the formats that fit you. Times are approximate consumption time at normal speed; labs, note-taking, review, and independent practice add time.
 
+#### Focused cloud-cost decision worksheet
+
+Start with the [cloud concepts outline](https://learn.microsoft.com/en-us/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/), then read [Cost optimization options](https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/7a-describe-cost-optimization-options) (published **4 minutes**) within the [management and governance path](https://learn.microsoft.com/en-us/training/paths/describe-azure-management-governance/). Compare a stable server, a steady but changing compute mix and a restartable batch job. For each, record responsibility boundaries, utilization assumptions, interruption tolerance, a candidate pricing model and a measurement you need before committing spend. **About 45–75 minutes**, estimated for selected reading and this original three-workload worksheet; the four-minute unit time is reading only. **VERIFY CURRENT:** eligibility, term and actual prices in the service's current documentation/calculator. No subscription, commitment purchase or Azure deployment is required for the paper exercise; none was performed in this review.
+
 | Resource | Access | Estimated time | Best use and caveat |
 |---|---|---:|---|
 | [Microsoft Learn — Introduction to Cloud Infrastructure (AZ-900T00)](https://learn.microsoft.com/en-us/training/courses/az-900t00) | Free self-study; instructor-led options vary | 1 day (official course) | Current objective-aligned foundation and best scope anchor |
 | [Microsoft — AZ-900 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/practice/assessment?assessment-type=practice&assessmentId=23&practice-assessment-type=certification) | Free Microsoft account | About 1–2 hours for an attempt and review | Repeatable official readiness check with rationales and learning links; start here before buying another assessment |
 | [Microsoft Partner Skilling Hub — LevelUp AZ-900](https://www.skilling-hub.com/en-US/listing/o::levelup::2058307) | Partner login required | Earlier 10-hour estimate; current content requires sign-in | No additional cost for eligible Microsoft partners; use a work account associated with the partner organization |
-| [Microsoft Learn AZ-900 learning paths](https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/?practice-assessment-type=certification) | Free | About 8–12 hours | Read modules and use the free sandbox exercises where available |
+| [Microsoft Learn AZ-900 learning paths](https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/?practice-assessment-type=certification) | Free | About 8–12 hours | Choose current modules and guided projects; check account requirements and charges before deployment |
 | [John Savill — AZ-900 Study Cram](https://www.youtube.com/watch?v=tQp1YkB2Tgs) and [course handout repository](https://github.com/johnthebrit/AZ900CertCourse) | Free | Earlier estimate: about 4 hours, not reverified in this pass; add handout review | Clear visual review with a public companion handout; published for the 2022 scope, so fill July 2026 changes from Learn. The repository has no detected license, so link rather than republish the PDF. |
 | [Pluralsight — Microsoft Azure Fundamentals (AZ-900) and practice exam](https://www.pluralsight.com/paths/microsoft-certified-azure-fundamentals-az-900) | Subscription; practice access depends on plan/library | Header: 21 hours including four labs; component sum 18h 56m courses + 2h labs = 20h 56m. Add assessment/review time | Broad structured path updated through 2026; its public page explicitly includes a practice exam, and you should choose only modules that close gaps |
 | [O'Reilly — AZ-900 Microsoft Azure Fundamentals](https://www.oreilly.com/videos/az-900-microsoft/9781806387694/) | Subscription | 6 hours 27 minutes | Rithin Skaria/KodeKloud video course published August 2025; cross-check July 2026 blueprint |
@@ -213,6 +259,10 @@ See the broader [Places to learn catalog](LEARNING-RESOURCES.md) for selection c
 Resource details from the [DP-900 guide](../guides/DP-900-microsoft-azure-data-fundamentals.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
 This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Pick the formats that fit you. Times are approximate consumption time at normal speed; labs, note-taking, review, and independent practice add time.
+
+#### Focused reading and evidence route
+
+Read the [warehouse architecture](https://learn.microsoft.com/en-us/training/modules/examine-components-of-modern-data-warehouse/2-describe-warehousing), [ingestion](https://learn.microsoft.com/en-us/training/modules/examine-components-of-modern-data-warehouse/3-data-ingestion-pipelines) and [analytical-store](https://learn.microsoft.com/en-us/training/modules/examine-components-of-modern-data-warehouse/4-analytical-data-stores) units: their published estimates total 16 minutes. Then allow about 30–45 minutes for an original worksheet comparing a daily sales file, a replicated operational database and a live event stream. For each, draw source → ingestion/reference → store → semantic model → report, explain ETL versus ELT and identify freshness, identity and reconciliation checks. This worksheet estimate covers three scenarios and written justification, not deployment. The [Fabric exercise introduction](https://learn.microsoft.com/en-us/training/modules/examine-components-of-modern-data-warehouse/5-exercise-data-analytics-fabric) publishes another 30 minutes and requires a Fabric account/trial; its launched instructions were unavailable in this review. Text units were read; videos and the cloud exercise were not run. **VERIFY CURRENT:** confirm service limits and avoid treating a shortcut as an unconditional no-copy/no-cache guarantee.
 
 | Resource | Access | Estimated time | Best use and caveat |
 |---|---|---:|---|
@@ -241,13 +291,17 @@ Resource details from the [PL-900 guide](../guides/PL-900-microsoft-power-platfo
 
 This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Pick the formats that fit you. Times are approximate consumption time at normal speed; labs, note-taking, review, and independent practice add time.
 
+#### Focused reading and evidence route
+
+Use the [plans FAQ](https://learn.microsoft.com/en-us/power-apps/maker/common/faq-plan-designer) for a requirement-to-artifact worksheet: describe a small service-request process, its roles and permissions, data entities, app surface, automation and agent boundary. Allow about 45–60 minutes for reading and mapping three requirements to proposed components, then identify a missing authorization rule and one generated artifact that would need review. This is an editorial estimate based on the short FAQ and a written component map; no app generation is required. **VERIFY CURRENT:** generated code-app preview features, prerequisites and limits. The complete readable FAQ was inspected despite its generic authorization banner; it does not establish tenant entitlement or the quality of any generated solution. The Power Series directory was unavailable in this pass, so its earlier directory-only caveat remains.
+
 | Resource | Access | Estimated time | Best use and caveat |
 |---|---|---:|---|
 | [Microsoft Learn — PL-900 course](https://learn.microsoft.com/en-us/training/courses/pl-900t00) | Free self-study; instructor-led options vary | 1 day (official course) | Official foundation; the public overview still emphasizes apps, flows, and Power Pages, so use the July 2026 blueprint to check the agent/code/Plan-designer gaps |
 | [Microsoft — PL-900 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/power-platform-fundamentals/practice/assessment?assessment-type=practice&assessmentId=34&practice-assessment-type=certification) | Free Microsoft account | About 1–2 hours for an attempt and review | Repeatable official readiness check with rationales and learning links; start here before buying another assessment |
 | [Microsoft Partner Skilling Hub — LevelUp PL-900](https://www.skilling-hub.com/en-US/listing/o::levelup::2058317) | Partner login required | Current duration not verified | Public fetch returns a shell; confirm eligible-partner access and the current syllabus after sign-in |
 | [Microsoft Learn Power Platform Fundamentals](https://learn.microsoft.com/en-us/credentials/certifications/power-platform-fundamentals/) | Free | Self-paced; current total not published in the fetched overview | Use the credential page to find official preparation and practice; budget lab time separately |
-| [Pluralsight — Power Platform Fundamentals (PL-900) and practice exam](https://www.pluralsight.com/paths/microsoft-power-platform-fundamentals-pl-900) | Subscription; practice access depends on plan/library | 8 hours 56 minutes of listed instruction; budget practice separately | Eight listed courses, dated 2024–2025; practice entitlement must be checked; much of the instruction predates the July 2026 agent/code/Plan-designer changes, so use selectively |
+| [Pluralsight — Introduction to PL-900](https://www.pluralsight.com/courses/intro-microsoft-power-platform-fundamentals-900) | Subscription; public outline inspected only | Published: 24 minutes | Vlad Catrinescu; current landing page says updated October 13, 2026. Orientation and study planning, not a complete current blueprint course. Verify logistics against Microsoft; paid lessons and practice content not inspected |
 | [O'Reilly — Complete PL-900 Masterclass](https://www.oreilly.com/videos/the-complete-masterclass/9781805125044/) | Subscription | Previously listed 16 hours 40 minutes; current listing unverified | Direct access blocked in this review; retain only as an optional older companion, and verify the syllabus before purchase |
 | [Udemy — PL-900 Power Platform Fundamentals](https://www.udemy.com/course/pl-900-microsoft-power-platform-fundamentals-r/) | Purchase or subscription | 11 hours 1 minute (public search listing) | Phillip Burton; public listing shows September 2026, 25 sections/132 lectures. Direct fetch blocked; July-objective coverage was not verified inside the paid course |
 | [LinkedIn Learning — PL-900 Cert Prep by Microsoft Press](https://www.linkedin.com/learning/microsoft-power-platform-fundamentals-pl-900-cert-prep-by-microsoft-press) | Subscription | 6 hours | Craig Zacker course released March 2025; useful for core products but pre-dates the July 2026 agent/code/Plan-designer scope |
@@ -271,6 +325,14 @@ Use the primary documentation for behavior and limits. Course update dates and b
 Resource details from the [SC-900 guide](../guides/SC-900-microsoft-security-compliance-identity-fundamentals.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
 This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Pick the formats that fit you. Published runtimes are distinguished from suggested study allocations and earlier metadata. Labs, note-taking, review and independent practice add time; no paid course or signed-in assessment was completed in this review.
+
+#### October 28 learning route and evidence task
+
+Begin with the [one-day Microsoft introductory course](https://learn.microsoft.com/en-us/training/courses/sc-900t00), then use this guide’s control map and tabletop labs before taking an assessment. Choose one additional explanation style only for a measured gap: the [Christopher Wojahn/Microsoft Press course](https://www.linkedin.com/learning/microsoft-security-compliance-and-identity-fundamentals-sc-900-cert-prep-by-microsoft-press) still lists **3h32, released June 11, 2024**; the [Vlad Catrinescu Pluralsight path](https://www.pluralsight.com/paths/microsoft-security-compliance-and-identity-fundamentals-sc-900) still totals **8h45** of 2023–2024 lessons. Their public metadata was rechecked, while paid lessons and current-blueprint completeness were not. Existing resources are adequate; no tenant purchase is required for the tabletop route.
+
+**Original worksheet (about 25–35 minutes, editorial estimate):** For a confidential file shared with a contractor, assign six separate questions to an evidence owner: who authenticated, who may open it, which risky action is restricted, which copy must remain, what activity was recorded and who can investigate. Add a failed-access case and a deletion request.
+
+**Answer checkpoint:** Select controls from the question and evidence boundary. Encryption, access control, DLP, retention and investigation cannot be substituted for one another simply because each is a security feature.
 
 | Resource | Access | Estimated time | Best use and caveat |
 |---|---|---:|---|
@@ -308,13 +370,14 @@ This is a curated starting point, not a complete list, and it is not meant to be
 
 | Resource | Access | Estimated time | Best use and caveat |
 |---|---|---:|---|
-| [Microsoft Learn — AB-900 course](https://learn.microsoft.com/en-us/training/courses/ab-900t00) | Free self-study; instructor-led options vary | 1 day (official course) | Current objective-aligned foundation for Microsoft 365, Purview, Copilot, and agent administration |
+| [AB-900T00: Introduction to Microsoft 365 and AI administration](https://learn.microsoft.com/en-us/training/courses/ab-900t00) | Free self-study; instructor-led options vary | 1 day (official course) | Current objective-aligned foundation for Microsoft 365, Purview, Copilot, and agent administration |
 | [Microsoft — AB-900 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/copilot-and-agent-administration-fundamentals/practice/assessment?assessment-type=practice&assessmentId=428463062&practice-assessment-type=certification) | Free Microsoft account | About 1–2 hours for an attempt and review | Repeatable official readiness check with rationales and learning links; use after learning and verify fast-changing details in current Microsoft documentation |
-| [Microsoft Learn AB-900 learning material](https://learn.microsoft.com/en-us/credentials/certifications/copilot-and-agent-administration-fundamentals/) | Free | About 10–14 hours | Official scope anchor; add tenant exploration where authorized |
+| [Explore Microsoft 365 administration](https://learn.microsoft.com/en-us/training/paths/explore-microsoft-365-administration/) | Free public reading; licensed tenant needed for product practice | About 3–5 hours for three modules and control-map notes (editorial estimate) | Core service objects, security and Purview governance; current product documentation governs exact controls |
+| [Explore Microsoft 365 Copilot and agent administration](https://learn.microsoft.com/en-us/training/paths/explore-microsoft-365-copilot-agent-administration/) | Free public reading; product entitlements vary | About 3–5 hours for three modules and notes (editorial estimate) | Capabilities/licensing, Copilot administration and agent lifecycle; practice adds time |
 | [Pluralsight — AB-900 path and practice exam](https://www.pluralsight.com/paths/microsoft-365-copilot-and-agent-administration-fundamentals-ab-900) | Subscription; practice access depends on plan/library | 9 hours plus about 2–4 hours for assessment and review | Three-course path published June–July 2026 by Vlad Catrinescu; public path explicitly includes a practice exam |
-| [O'Reilly — Microsoft 365 Copilot and Agent Administration Fundamentals](https://www.oreilly.com/library/view/microsoft-365-copilot/9781807306519/) | Subscription | About 7 hours 22 minutes | Steve Miles, July 2026, 278 pages; broad book treatment aligned to the new credential |
-| [O'Reilly — AB-900 Certification Course](https://www.oreilly.com/videos/ab-900-certification/9781807788490/) | Subscription | About 4 hours | Pavel Hrabec video course; useful compact review, then practice admin decisions |
-| [Udemy — AB-900 by John Christopher](https://www.udemy.com/course/ab-900-copilot-agent-administration-fundamentals-course/) | Purchase or subscription | About 11 hours | Course shown as updated August 2026; inspect previews, hands-on tenant needs, and current objective mapping |
+| [O'Reilly — Microsoft 365 Copilot and Agent Administration Fundamentals](https://www.oreilly.com/library/view/microsoft-365-copilot/9781807306519/) | Subscription | 7 hours 22 minutes (platform reading estimate) | Steve Miles, July 2026, 278 pages; broad book treatment aligned to the new credential |
+| [O'Reilly — AB-900 Certification Course](https://www.oreilly.com/videos/ab-900-certification/9781807788490/) | Subscription | 4 hours 18 minutes | Pavel Hrabec, March 2026 video course; useful compact review, then practice admin decisions |
+| [Udemy — AB-900 by John Christopher](https://www.udemy.com/course/ab-900-copilot-agent-administration-fundamentals-course/) | Purchase or subscription | 11 hours 7 minutes | October 2026 public listing: 14 sections / 88 lectures; inspect previews, hands-on tenant needs, and current objective mapping |
 | [Microsoft Mechanics](https://www.youtube.com/@MSFTMechanics) | Free | Select 2–4 hours by gap | Official product demos for Microsoft 365 Copilot, agents, identity, and governance; not a single exam course |
 | [MeasureUp — AB-900 practice test](https://www.measureup.com/microsoft-ab-900-microsoft-365-copilot-agent-administration-fundamentals-practice-test.html) | Paid test or subscription; free demo available | About 4–8 hours for simulation and review | Tier 6 assessment with 115 questions, released April 2026; verify fast-changing Copilot administration details against current Microsoft Learn |
 | [Whizlabs — AB-900 course and practice tests](https://www.whizlabs.com/ab-900-microsoft-365-copilot-and-agent-administration/) | Paid course or subscription | About 3–6 hours for assessment and review; instructional time not published | Whizlabs identifies a mixed course/practice offering, but its public product page does not expose a reliable item count or total runtime; pair it with explanatory official learning |
@@ -325,7 +388,7 @@ Whizlabs identifies its AB-900 listing as a course and practice-test offering, b
 
 [Agent management updates in the Copilot Control System](https://techcommunity.microsoft.com/blog/microsoftmechanicsblog/agent-management-updates-in-the-copilot-control-system/4414790), **Microsoft Mechanics, posted by Zachary-Cavanell, May 19, 2025; presented by Jeremy Chapman**. Estimate 15–25 minutes for the public article/transcript and a control map. It connects discovery, usage, deployment, billing and investigation. Its older navigation and message-based billing terminology must be reconciled with current Agent 365 and Copilot Credits documentation. Exercise: identify the separate evidence needed to approve an agent, authorize a tool and stop metered use. The article and transcript were read; the video was not played and tenant steps were not executed.
 
-The three O'Reilly/Udemy pages were access-blocked on September 27; retained durations are historical catalog observations. Public practice-assessment navigation was reachable, but no signed-in assessment session was completed. Recheck October wording and current feature support when selecting resources.
+The three O'Reilly/Udemy pages were automation-blocked on September 27. Their selected public listing bodies were readable in the October 28 browser review, supporting the updated metadata above; this does not erase blocked automated observations or establish access to lessons. Public practice-assessment navigation was reachable, but no signed-in assessment session was completed. Use the current October 14 objective wording and verify feature support when selecting resources.
 
 ### AI-901 — Microsoft Azure AI Fundamentals
 
@@ -333,13 +396,17 @@ Resource details from the [AI-901 guide](../guides/AI-901-microsoft-azure-ai-fun
 
 This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Pick the formats that fit you. Times are approximate consumption time at normal speed; labs, note-taking, review, and independent practice add time.
 
+#### Focused retrieval learning route
+
+Pair the RAG concepts in the [AI concepts path](https://learn.microsoft.com/en-us/training/paths/ai-concepts/) with the current [Foundry IQ module outline](https://learn.microsoft.com/en-us/training/modules/get-started-foundry-iq/). Draw a source-to-answer diagram with knowledge sources, knowledge base, retrieval request, returned evidence and agent response. Write one answerable question, one question whose answer is absent and one case in which a user should not receive a source. State the evidence you would require from a later exercise before accepting the answer or access boundary. **About 60–90 minutes**, estimated for selected module reading and this original diagram/question set; actual exercise provisioning and model usage add time/cost. The seven-module implementation path currently ends in Foundry IQ. This review read outlines, not the exercise or assessment questions, and did not execute a client.
+
 | Resource | Access | Estimated time | Best use and caveat |
 |---|---|---:|---|
 | [Microsoft Learn — AI-901 course](https://learn.microsoft.com/en-us/training/courses/ai-901t00) | Free self-study; instructor-led options vary | 1 day (official course) | Current objective-aligned foundation and implementation sequence |
 | [Microsoft — AI-901 Practice Assessment on AI Skills Navigator](https://aiskillsnavigator.microsoft.com/credentials/cert-83587e0a0754cfee561ade3e27d9fa1cdaf15ae03be52d2413b2b858d1b4eda4) | Free Microsoft account | About 1–2 hours for an attempt and review | Repeatable official readiness check; AI Skills Navigator sign-in is required, and the blueprint and product documentation remain authoritative |
 | [Microsoft Learn AI-901 certification material](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/) | Free | About 10–14 hours | Official scope anchor; complete current Foundry exercises rather than relying on AI-900 modules |
 | [Microsoft Learn — AI concepts](https://learn.microsoft.com/en-us/training/paths/ai-concepts/) | Free | Budget 4–6 hours including notes (editorial estimate) | Seven modules; current total runtime not exposed. Concepts path across the workloads in the first domain |
-| [Microsoft Learn — AI applications and agents](https://learn.microsoft.com/en-us/training/paths/get-started-ai-apps-agents/) | Free | Budget 6–10 hours including labs (editorial estimate) | Seven modules; current total runtime not exposed. Implementation path across Foundry, apps/agents, text, speech, vision, extraction, and retrieval |
+| [Microsoft Learn — AI applications and agents](https://learn.microsoft.com/en-us/training/paths/get-started-ai-apps-agents/) | Free | Budget 6–10 hours including labs (editorial estimate) | Seven modules; current total runtime not exposed. Implementation path across Foundry, apps/agents, text, speech, vision, extraction, and Foundry IQ knowledge retrieval |
 | [O'Reilly — Azure AI Fundamentals AI-901](https://www.oreilly.com/videos/azure-ai-fundamentals/9781807782979/) | Subscription | 4 hours 4 minutes | Anand Rao Nednur, April 2026; indexed public outline only, direct access blocked. Verify current SDK demos before purchase |
 | [Udemy — AI-901 by Christopher Nett](https://www.udemy.com/course/ai-901-azure-ai-fundamentals/) | Purchase or subscription | About 6 hours 20 minutes | Christopher Nett; indexed outline: June 2026, 12 sections/49 lectures. Direct access blocked; lessons not watched |
 | [Udemy — AI-901 exam prep by Kuljot Singh Bakshi](https://www.udemy.com/course/azure-ai-fundamentals-exam-prep/) | Purchase or subscription | About 6 hours 54 minutes | Kuljot Singh Bakshi; indexed outline: July 2026, 11 sections/47 lectures. Direct access blocked; lessons not watched |
@@ -373,10 +440,11 @@ This is a curated starting point, not a complete list. You are not meant to cons
 |---|---|---:|---|
 | [Microsoft Learn — AI-103 course](https://learn.microsoft.com/en-us/training/courses/ai-103t00) | Free self-study; instructor-led options vary | 4 days (official course) | Official objective-aligned starting point and lab sequence |
 | [Microsoft — AI-103 Practice Assessment on AI Skills Navigator](https://aiskillsnavigator.microsoft.com/credentials/cert-3fb198f57997226a824aa5f52a1a22af9a4597941b2288ed39371c7a9e6bd7c9) | Free Microsoft account | About 1–2 hours for an attempt and review | Repeatable official readiness check; AI Skills Navigator sign-in is required, and the blueprint and product documentation remain authoritative |
-| [Microsoft Partner Skilling Hub — LevelUp AI-103](https://www.skilling-hub.com/en-US/listing/o::levelup::2394396) | Partner login required | 10 hours | No additional cost for eligible Microsoft partners; self-paced coverage includes generative apps, agents, tools, knowledge connections, multimodal content, and exam preparation |
-| [Current Microsoft Foundry documentation](https://learn.microsoft.com/en-us/azure/foundry/) and [AI Show](https://learn.microsoft.com/en-us/shows/ai-show/) | Free | Select 4–10 hours by gap | Current behavior and public demonstrations; select pages and episodes by objective |
+| [Microsoft Partner Skilling Hub — LevelUp AI-103](https://www.skilling-hub.com/en-US/listing/o::levelup::2394396) | Partner login required; current exact listing details unverified | 10-hour historical/journey listing, not a freshly verified session runtime | October 28 direct HTTP reached an application shell while browser access was unavailable; confirm current enrollment, exact content and eligibility with the provider. No exact successor was verified; access failure does not prove retirement |
+| [Use a custom function in an AI agent](https://microsoftlearning.github.io/mslearn-ai-agents/Instructions/Exercises/02-agent-custom-tools.html) | Public MIT lab; Azure subscription, permissions, deployed model and local tooling required; charges possible | 50 minutes (publisher estimate), plus setup/troubleshooting | Current create-version, conversation and Responses function-output workflow; add schema, denied-action and timeout tests; no lab executed here |
+| [Extend agents with MCP tools](https://microsoftlearning.github.io/mslearn-ai-agents/Instructions/Exercises/03-mcp-integration.html) | Public MIT lab; eligible Azure environment, Python, VS Code and Git required | 60 minutes (publisher estimate), plus setup/troubleshooting | Remote Learn MCP and local inventory server; sample automatically approves matching requests despite requesting approval, so it does not establish human enforcement; reconcile its Python 3.13 prerequisite with 3.12 test note |
 | [O'Reilly — AI-103 Crash Course with Yasir Khan](https://www.oreilly.com/live-events/azure-ai-apps-and-agents-developer-associate-certification-ai-103-crash-course/0642572384906/0642572384890/) | Subscription or event access | About 4 instructional hours plus breaks | Certification-focused walkthrough across all five domains; verify the event occurrence and current baseline |
-| [O'Reilly — Hands-On Microsoft Foundry](https://www.oreilly.com/live-events/hands-on-microsoft-foundry/0642572231088/0642572231071/) | Subscription or event access | 4 hours (October 22, 10 a.m.–2 p.m. EDT) | Supporting implementation practice; the listing uses nonstandard “Microsoft Foundry Studio” and goal/planner terminology, so confirm the demos use the current portal, project model, SDK, and Responses API |
+| [O'Reilly — Hands-On Microsoft Foundry](https://www.oreilly.com/live-events/hands-on-microsoft-foundry/0642572231088/0642572231071/) | Subscription or event access | Historical 4-hour October 22 occurrence; recording/future access unverified | Supporting implementation practice; the listing uses nonstandard “Microsoft Foundry Studio” and goal/planner terminology, so confirm the demos use the current portal, project model, SDK, and Responses API |
 | [O'Reilly — Introduction to AI Agents on Azure](https://www.oreilly.com/live-events/introduction-to-ai-agents-on-azure/0642572194079/) | Subscription or event access | 4 hours (published agenda) | Agent concepts and Azure implementation context; the listed live occurrence has ended |
 | [Udemy — AI-103 course by Alan Rodrigues](https://www.udemy.com/course/ai-102-microsoft-certified-azure-ai-engineer-associate-d/) | Purchase or subscription | 32 hours 56 minutes | Long-form course shown as updated July 2026; the listing follows AI-103 despite the legacy URL slug, but does not expose lesson-level Foundry generation, so verify demos against the current-generation signals above |
 | [Udemy — AI-103 course by Luke Ginn](https://www.udemy.com/course/ai-103-azure-ai-app-and-agent-developer-complete-course/) | Purchase or subscription | 30 hours 22 minutes | Deep alternative updated August 2026; includes labs and explicitly marked older lectures—treat those older lectures as **FOUNDRY (CLASSIC)** or adjacent content and follow the current sections |
@@ -422,18 +490,24 @@ For a focused session, choose one post, produce its artifact, then explain which
 
 | Resource | Access and time | Objective fit and artifact | Review boundary |
 |---|---|---|---|
-| [SharePoint metadata-filtering walkthrough](https://microsoft.github.io/mcscatblog/posts/sharepoint-metadata-filtering/) - Adi Leibowitz | Public; 7-minute publisher reading estimate; add 20-30 minutes for Exercise 14 | Plan/grounding, design/SharePoint, deploy/testing: an applicability and permission test matrix | Published September 1, updated September 2, 2026; GHCP harness. Internal tools are not public APIs; custom-column behavior remains tenant-unvalidated. |
-| [Microsoft AI Agents for Beginners](https://github.com/microsoft/ai-agents-for-beginners) - lessons 6 and 10 | Public reading; about 2-3 hours selected reading and a worksheet, estimated from two lessons plus analysis | Deploy/security, monitoring, testing: a threat-control matrix and trace-to-outcome evidence plan | MIT license inspected; no separate lesson dates displayed. Reviewed lesson text only. SDK/notebook use can require accounts, model access and costs. The inline poem example asks for approval after generation; it does not establish pre-action tool enforcement. |
-| [Microsoft 2026 Responsible AI Transparency Report web summary](https://www.microsoft.com/en-us/corporate-responsibility/topics/responsible-ai/reports/transparency-report/) | Public; about 30-45 minutes selected reading and a responsibility worksheet, locally estimated | Deploy/responsible AI and governance: developer/deployer handover matrix | Vendor self-report; no separate publication/update date displayed. Full linked PDF not reviewed. Governance context, not an independent audit or product-control reference. |
+| [SharePoint metadata-filtering walkthrough](https://microsoft.github.io/mcscatblog/posts/sharepoint-metadata-filtering/) - Adi Leibowitz | Public; 7-minute publisher reading estimate; add 20-30 minutes for Exercise 14 | Direct: grounding, SharePoint design, testing and access controls; produce an applicability and permission test matrix. Related item: GHCP metadata-routing implementation. | Published September 1, updated September 2, 2026; Microsoft CAT blog-documented behavior, not independently tenant-tested here. Internal tools are not public APIs; verify harness-specific details. |
+| [Microsoft AI Agents for Beginners](https://github.com/microsoft/ai-agents-for-beginners) - lessons 6 and 10 | Public reading; about 2-3 hours selected reading and a worksheet, estimated from two lessons plus analysis | Direct: deploy/security, monitoring and testing; produce a threat-control matrix and trace-to-outcome plan. Related item: optional SDK/notebook implementation. | MIT license inspected; no separate lesson dates displayed. Reviewed lesson text only. SDK/notebook use can require accounts, model access and costs. The inline poem example asks for approval after generation; it does not establish pre-action tool enforcement. |
+| [Microsoft 2026 Responsible AI Transparency Report web summary](https://www.microsoft.com/en-us/corporate-responsibility/topics/responsible-ai/reports/transparency-report/) | Public; about 30-45 minutes selected reading and a responsibility worksheet, locally estimated | Direct: responsible-AI and governance principles. Related item: developer/deployer handover matrix. | Vendor self-report; no separate publication/update date displayed. Full linked PDF not reviewed. Governance context, not an independent audit or product-control reference. |
 
 **VERIFY CURRENT:** The repository is a supplementary coding/lab starting point, not an AB-100 curriculum. Recheck its current dependencies, accounts, service costs, and sample support before running anything. These external notebooks and videos were not executed or watched in this pilot. For a service-free exercise, use the existing local release gate and Exercise 14.
+
+#### Current data-policy reading and original worksheet
+
+Read [Configure data policies for agents](https://learn.microsoft.com/en-us/microsoft-copilot-studio/admin-data-loss-prevention), visibly updated October 22, alongside the [Power Platform policy overview](https://learn.microsoft.com/en-us/power-platform/admin/wp-data-loss-prevention). Allow about 15–25 minutes for selected reading and 20–30 minutes for the four-integration policy matrix (editorial estimates). Separate data groups, tool/HTTP/authentication/channel/event-trigger controls, design-time/runtime effects and propagation. Confirm the selected harness, effective identity, role and policy before interpreting an error. Reading is public; configuration requires an authorized environment and appropriate administrative access. No tenant configuration was performed.
+
+An evaluated bootcamp governance workshop requires its own setup and contains timing and policy generalizations needing reconciliation. It is not promoted as a general-purpose runnable AB-100 lab. Use the original tabletop above to produce an evidence artifact without inventing environment access.
 
 #### Courses, labs, and assessments
 
 | Resource | Access | Estimated time | Best use and caveat |
 |---|---|---:|---|
 | [Microsoft Learn — AB-100 course](https://learn.microsoft.com/en-us/training/courses/ab-100t00) and [Architect AI solutions for business productivity](https://learn.microsoft.com/en-us/training/paths/architect-agentic-ai-business-solutions/) | Free self-study; instructor-led options vary | 3 days (official course); 11-module learning path | Official architecture foundation across planning, design, and deployment; Microsoft notes the course is preparatory rather than an exam-prep course |
-| [Microsoft — AB-100 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-100/practice/assessment?assessment-type=practice&assessmentId=1815645847&practice-assessment-type=certification) | Free Microsoft account | About 1–2 hours for an attempt and review | Repeatable official readiness check with rationales and learning links; use after learning and keep the blueprint and product docs authoritative |
+| [Microsoft — AB-100 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-100/practice/assessment?assessment-type=practice&assessmentId=1815645847&practice-assessment-type=certification) | Free Microsoft account | About 1–2 hours for an attempt and review (editorial estimate) | Official pages now advertise AI Skills Navigator with sign-in; assessment contents/launch were not inspected. Use after learning and keep the blueprint and product docs authoritative |
 | [Microsoft Partner Skilling Hub — LevelUp AB-100](https://www.skilling-hub.com/en-US/listing/o::levelup::2426785) | Partner login required | 10 hours | No additional cost for eligible Microsoft partners; self-paced coverage spans architecture, value, grounding, agent selection, extensibility, operations, ALM, governance, security, and exam preparation |
 | [Microsoft Copilot Studio guidance](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/) | Free | Select 4–8 hours by gap | Architecture, governance, testing, ALM, operations, and value guidance from the product team |
 | [O'Reilly — AB-100 Crash Course with Tim Warner](https://www.oreilly.com/live-events/agentic-ai-business-solutions-architect-crash-course-exam-ab-100/0642572326043/) | Subscription or event access | 4 hours (published course length) | Certification-focused treatment of the full blueprint; verify the occurrence and current baseline |
@@ -454,12 +528,29 @@ No exact Pluralsight AB-100 certification path was verified during the August 31
 
 Resource details from the [AI-500 guide](../guides/AI-500-designing-implementing-multi-agent-ai-solutions.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
+#### October 28 learning route and evidence task
+
+The [official AI-500 course](https://learn.microsoft.com/en-us/training/courses/ai-500t00) still lists **four instructor-led days** with no future-availability notice in the inspected overview; actual class delivery remains unverified. [Clint Bonnett’s Foundry course](https://www.pluralsight.com/courses/microsoft-foundry-building-intelligent-applications) is a 1 hour 2 minute beginner introduction, last updated February 13, 2026. Use it for a focused RAG/workflow/evaluation refresher, then return to the official paths and this guide’s production-failure labs. The existing two engineering articles remain useful for written design work; APIs, language parity and preview integration need current checks before running code.
+
+**Original article-to-evidence task (about 45–75 minutes, editorial estimate):** Choose one article’s session, memory or recovery example. Record its promised behavior, documented limitation, application-owned responsibility and a counterexample. Give each a required trace or stored record and mark which evidence was actually observed. Keep code inspection separate from an executed restart or tenant-isolation test.
+
+**Answer checkpoint:** A clean asynchronous shutdown does not prove crash durability; a stored thread ID does not authorize a caller; a completed run can still fail the business-quality test.
+
+#### October 28 learning-resource check
+
+Additional options and access updates; choose relevant resources rather than consuming every route. New course availability, class delivery and licensing are **VERIFY CURRENT**. Published days describe instructor-led scope, not measured self-study time.
+
+| Resource | Access | Estimated time |
+|---|---|---|
+| [Microsoft AI Agents for Beginners: selected lessons 8 and 10](https://github.com/microsoft/ai-agents-for-beginners) | Public reading; model/cloud execution may require accounts or charges | About **2–3 hours**, editorial estimate for two lessons and an original handoff/trace/quality worksheet; excludes notebooks and videos |
+
+
 This is a curated starting point, not a complete list. Do **not** try to consume everything. Pick the explanation style, labs, and assessment signals that close your gaps; keep the current official blueprint beside every third-party resource.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
 | Four official Microsoft Learn paths | Public | 17 modules; allow 14–20 hours as a planning estimate |
-| AI-500T00-A instructor-led course | Provider/schedule dependent | 4 days; available September 30, 2026 |
+| AI-500T00-A instructor-led course | Provider/schedule dependent | 4 published days; current outline listed; class availability unverified |
 | O'Reilly *Agentic AI with Microsoft Foundry* | Paid subscription | Earlier 8h 43m estimate; current listing access-blocked |
 | O'Reilly *Hands-On Microsoft Foundry* | Paid subscription/event | About 4 instructional hours plus breaks per listed occurrence |
 | Pluralsight *Building Intelligent Applications* | Paid subscription | 1 hour 2 minutes |
@@ -474,7 +565,7 @@ This is a curated starting point, not a complete list. Do **not** try to consume
 - [Build production-grade multi-agent capabilities in Microsoft Foundry](https://learn.microsoft.com/en-us/training/paths/aaai-2-build-production-grade-multi-agent-capabilities-microsoft-foundry/) — four modules; the previously recorded 3h 48m total was not exposed in this fetch.
 - [Deploy and govern agentic AI solutions on Azure](https://learn.microsoft.com/en-us/training/paths/aaai-3-deploy-govern-agentic-ai-solutions-azure/) — four modules; the previously recorded 3h 14m total was not exposed in this fetch.
 - [Monitor, evaluate, and operate multi-agent AI solutions](https://learn.microsoft.com/en-us/training/paths/aaai-4-monitor-evaluate-operate-multi-agent-ai-solutions-azure/) — five modules; Microsoft does not currently publish usable combined duration values, so allow about 4–6 hours plus lab time as a library planning estimate.
-- [AI-500T00-A Designing and implementing multi-agent AI solutions](https://learn.microsoft.com/en-us/training/courses/ai-500t00) — four instructor-led days, listed as available September 30, 2026. This future course date is separate from the already-live beta exam.
+- [AI-500T00-A Designing and implementing multi-agent AI solutions](https://learn.microsoft.com/en-us/training/courses/ai-500t00) — four published instructor-led days, linked from the current exam page. The earlier September availability notice is historical; class delivery was not verified.
 
 The current paths expose **4 + 4 + 4 + 5 = 17 modules**. The former first-three total of 10h 23m is historical, not a current verified runtime. Allow roughly 14–20 hours for path study and 16–30 hours for the ten labs as editorial planning estimates; adapt to your prerequisites and cloud access.
 
@@ -485,7 +576,7 @@ The current paths expose **4 + 4 + 4 + 5 = 17 modules**. The former first-three 
 - [Building Intelligent Applications with Microsoft Foundry](https://www.pluralsight.com/courses/microsoft-foundry-building-intelligent-applications) — Pluralsight, Clint Bonnett, 1h 02m, published February 13, 2026; public syllabus inspected, paid lessons not viewed. A short current-platform introduction to RAG, agents/workflows, evaluation, and guardrails; it is not a complete AI-500 path.
 - [Microsoft Foundry samples](https://github.com/azure-ai-foundry/foundry-samples) — free official sample repository. Select examples that match the current SDK generation and a lab objective; examples can change faster than conceptual documentation.
 
-No complete, current AI-500-specific Pluralsight path, Whizlabs course, MeasureUp practice test, or official Microsoft Practice Assessment was verified on September 28, 2026. These bounded public searches do not prove absence. Recheck after the course date and beta transition.
+No complete, current AI-500-specific Pluralsight path, Whizlabs course, MeasureUp practice test, or official Microsoft Practice Assessment was verified on September 28, 2026. These bounded public searches do not prove absence. Recheck current official availability; historical course/beta observations do not establish today’s delivery.
 
 #### Optional assessment supplement
 
@@ -507,10 +598,14 @@ Resource details from the [AB-620 guide](../guides/AB-620-designing-building-int
 
 This is a curated starting point, not a complete list. Do **not** consume everything. Select the explanations, demonstrations, labs, and assessment signals that close your gaps, and keep the current official blueprint beside third-party material.
 
+#### Focused harness decision worksheet
+
+Read [Identify implementation options by harness](https://learn.microsoft.com/en-us/training/modules/design-multi-agent-solutions-copilot-studio/3-design-agent-organization) (published **4 minutes**), then use the [multi-agent path](https://learn.microsoft.com/en-us/training/paths/design-build-multi-agent-solutions-copilot-studio/) to design a support agent with an account-management capability owned by another team. Produce a table of owner, independent lifecycle, harness, delegation option, authentication boundary and return contract. Add a failure case for an unavailable connected agent and mark anything needing current feature verification. **About 45–75 minutes** for reading and this original worksheet, estimated from one short unit plus comparison/design work; tenant implementation adds time and may incur charges. **VERIFY CURRENT:** the unit's preview/support table changes as features ship. The reviewed outline supports this route; no agent was executed in this review.
+
 | Resource | Access | Estimated time |
 |---|---|---:|
 | Three official Microsoft Learn paths | Public | 11 modules; allow 8–12 hours plus exercises (editorial budget) |
-| AB-620T00-A instructor-led course | Provider/schedule dependent | 3 days; available September 30, 2026 (scheduled; not yet delivered) |
+| AB-620T00-A instructor-led course | Provider/schedule dependent | Published: 3 instructor-led days; confirm provider delivery dates separately |
 | Ten labs in this guide | Platform usage may cost money | About 18–34 hours (editorial estimate) |
 | Udemy AB-620 course by Kuljot Singh Bakshi | Paid | 9 hours 27 minutes plus labs/review |
 | Udemy practice exams by Joshua Ravnjak | Paid | About 6–10 hours including explanation review |
@@ -521,9 +616,9 @@ This is a curated starting point, not a complete list. Do **not** consume everyt
 - [Design agent conversations and responses using topics](https://learn.microsoft.com/en-us/training/paths/design-agent-conversations-responses-topics-copilot-studio/) — three modules; older recorded runtime 2 hours 17 minutes, not reverified in the current outline.
 - [Design and build multi-agent solutions](https://learn.microsoft.com/en-us/training/paths/design-build-multi-agent-solutions-copilot-studio/) — four modules; older recorded runtime 2 hours 54 minutes, not reverified in the current outline.
 - [Integrate agents with enterprise systems](https://learn.microsoft.com/en-us/training/paths/integrate-agents-enterprise-systems-copilot-studio/) — four modules; older recorded runtime 3 hours 18 minutes, not reverified in the current outline.
-- [AB-620T00-A](https://learn.microsoft.com/en-us/training/courses/ab-620t00) — three instructor-led days, listed as available September 30, 2026 (scheduled; not yet delivered).
+- [AB-620T00-A](https://learn.microsoft.com/en-us/training/courses/ab-620t00) — three instructor-led days in the current public listing; actual class availability depends on the provider.
 
-The three live paths contain 3 + 4 + 4 = 11 modules. Their earlier recorded total was 8 hours 29 minutes; the current outlines do not expose a verified total runtime. Each currently identifies its modules as classic-experience content. Pair it with the current experience comparison, and do not infer that the future instructor-led course date delays the active exam or the self-paced paths.
+The three live paths contain 3 + 4 + 4 = 11 modules. Their earlier recorded total was 8 hours 29 minutes; the October 28 public outlines do not expose a verified total runtime. The [multi-agent design module](https://learn.microsoft.com/en-us/training/modules/design-multi-agent-solutions-copilot-studio/3-design-agent-organization) now compares standard and GitHub Copilot harnesses; the other three modules in that path and all modules in the topics and integration paths retain classic-experience warnings. **VERIFY CURRENT:** match each lesson and implementation to the current harness and product documentation. The course listing does not establish a provider's actual delivery schedule.
 
 #### Additional instruction and assessment
 
@@ -531,7 +626,7 @@ The three live paths contain 3 + 4 + 4 = 11 modules. Their earlier recorded tota
 - [AB-620 Practice Exams: Copilot Studio AI Agent Builder](https://www.udemy.com/course/ab-620-practice-exams-copilot-studio-ai-agent-builder/) by Joshua Ravnjak — six 60-question tests (360 questions), shown as updated August 2026. Originality and exam-difficulty claims are the provider's, not independently audited. Its claimed 100-minute real-exam window conflicts with Microsoft's current 120 minutes; use the official duration. Allow about 6–10 hours for selected timed attempts and explanation/source review; use it as a secondary signal after hands-on work.
 - [Copilot Studio documentation](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) and [architecture/guidance collection](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/) — use exact pages by objective and verify whether each applies to classic, new, preview, or both.
 
-Both retained Udemy pages blocked direct retrieval; the metadata above comes from indexed public provider pages checked September 28. No paid lessons/questions were opened. Bounded exact-exam searches did not verify a Pluralsight or LinkedIn Learning course; the other providers previously marked absent were not exhaustively searched again. Microsoft still explicitly reports no Practice Assessment. Broader videos are supporting demonstrations, not a verified AB-620 syllabus.
+Both retained Udemy pages blocked direct retrieval; the metadata above comes from indexed public provider pages checked September 28. No paid lessons/questions were opened. Bounded exact-exam searches did not verify a Pluralsight or LinkedIn Learning course; the other providers previously marked absent were not exhaustively searched again. Microsoft now directs candidates to a sign-in AI Skills Navigator Practice Assessment; this review inspected only its public shell, not questions or results. Broader videos are supporting demonstrations, not a verified AB-620 syllabus.
 
 Avoid products that promise leaked, “actual,” or memorized exam questions. Original practice is useful only when explanations are checked against the current blueprint and Microsoft documentation.
 
@@ -539,7 +634,15 @@ Avoid products that promise leaked, “actual,” or memorized exam questions. O
 
 Resource details from the [SC-100 guide](../guides/SC-100-microsoft-cybersecurity-architect.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is a curated starting point, not a complete list. Do **not** try to consume every resource. Pick a primary path that fits how you learn, use documentation and labs for weak areas, and use assessments to decide what to revisit. Verify every course against the July 28, 2026 blueprint—especially AI security, Entra Agent ID, Exposure Management, Copilot, and current SSE objectives.
+This is a curated starting point, not a complete list. Do **not** try to consume every resource. Pick a primary path that fits how you learn, use documentation and labs for weak areas, and use assessments to decide what to revisit. Verify every course against the October 21, 2026 blueprint—especially AI security, Entra Agent ID, Exposure Management, Copilot, and current SSE objectives.
+
+#### October 28 learning route and evidence task
+
+Choose the [four-day Microsoft course](https://learn.microsoft.com/en-us/training/courses/sc-100t00) or the four selected Learn paths (**19 modules**) as one primary route. Use the interactive cases in the [operations/identity/compliance path](https://learn.microsoft.com/en-us/training/paths/sc-100-design-operations-identity-compliance-capabilities/) to write decisions before reading further explanations. The [official labs README](https://github.com/MicrosoftLearning/SC-100-Microsoft-Cybersecurity-Architect) explicitly expects a preconfigured M365 E5 tenant and separate Azure subscription; public instructions do not provide either. The course’s older AZ-500 attendance recommendation must not decide the current credential prerequisite. Existing official and specialist resources are adequate; another passive course is optional.
+
+**Original worksheet (about 35–50 minutes, editorial estimate):** A service has a 120-minute recovery target. Model dependent phases of 85 minutes to restore, 50 to validate and 10 to restore routing. Assign each phase an owner, independent recovery identity and success/failure evidence. Compare a sequential design with a proposed parallel design and document the actual dependency permitting any overlap.
+
+**Answer checkpoint:** Sequential recovery takes 145 minutes and misses the target by 25. Merely drawing parallel boxes does not remove dependencies or prove a tested 120-minute outcome. Treat the figures as an original planning exercise, not observed product performance.
 
 #### Time-planning summary
 
@@ -575,7 +678,7 @@ This is a curated starting point, not a complete list. Do **not** try to consume
 
 #### Video, books, and structured courses
 
-- [John Savill SC-100 Study Cram](https://www.youtube.com/watch?v=2Qu5gQjNQh4) — previously cataloged 2022 architecture review; current page returned a shell, so runtime/content were not reverified. It predates the July 2026 blueprint; supplement rather than use as a complete course.
+- [John Savill SC-100 Study Cram](https://www.youtube.com/watch?v=2Qu5gQjNQh4) — previously cataloged 2022 architecture review; current page returned a shell, so runtime/content were not reverified. It predates the current October 2026 blueprint; supplement rather than use as a complete course.
 - [Pluralsight Microsoft Cybersecurity Architect (SC-100)](https://www.pluralsight.com/paths/microsoft-cybersecurity-architect-sc-100) — four Tim Warner courses totaling 4h58, rounded to five path hours, plus a practice exam. The courses date from December 2024–January 2025, so build a current-objective gap list.
 - [O'Reilly Exam Ref SC-100](https://www.oreilly.com/library/view/exam-ref-sc-100/9780137997299/) by Yuri Diogenes, Sarah Young, Mark Simos, and Gladys Rodriguez — earlier catalog observation: 352 pages/10h37, February 2023. Current access was blocked; contents and current availability were not verified.
 - [O'Reilly Microsoft Cybersecurity Architect — SC-100 Exam Prep](https://www.oreilly.com/videos/microsoft-cybersecurity-architect/9781805128816/) with Anand Rao Nednur — earlier catalog observation: 13h03, April 2023. Current access was blocked; compare current availability and scope before purchase.
@@ -605,7 +708,15 @@ Avoid sites selling “real questions,” dumps, guarantees based on recalled ex
 
 Resource details from the [SC-200 guide](../guides/SC-200-microsoft-security-operations-analyst.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is a curated starting point, not a complete list. Do **not** try to consume every resource. Pick a primary path that fits how you learn, use documentation and labs for weak areas, and use assessments to decide what to revisit. Verify every course against the July 28, 2026 blueprint—especially data-lake tiers/jobs, Sentinel Graph, agentic investigation, embedded Security Copilot, and Sentinel MCP Server.
+This is a curated starting point, not a complete list. Do **not** try to consume every resource. Pick a primary path that fits how you learn, use documentation and labs for weak areas, and use assessments to decide what to revisit. Verify every course against the October 21, 2026 blueprint—especially data-lake tiers/jobs, Sentinel Graph, agentic investigation, embedded Security Copilot, and Sentinel MCP Server.
+
+#### October 28 learning route and evidence task
+
+The [current four-day Microsoft course](https://learn.microsoft.com/en-us/training/courses/sc-200t00) and ten selected path outlines still provide **59 module placements**. Begin with [KQL](https://learn.microsoft.com/en-us/training/paths/sc-200-utilize-kql-for-azure-sentinel/), then workspace/ingestion, product investigations, detections and hunting; use Security Copilot after you can inspect its underlying evidence. This is a suggested learning order, not a replacement blueprint. The [course lab README](https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst) is a written companion, with separate training materials and preparation requirements; no hosted environment or full fresh runtime was established. Existing resources are sufficient for this route.
+
+**Original worksheet (about 30–45 minutes, editorial estimate):** Inventory twelve expected log producers. Supply synthetic timely records for nine and none for three. Build a freshness worksheet with producer ID, source time, arrival time, expected cadence, last-seen age and triage owner; include the three absent producers in the denominator.
+
+**Answer checkpoint:** Nine timely arrivals out of nine returned records do not establish twelve healthy producers. Mark the three silent sources unresolved and distinguish missing telemetry from a negative security finding. No connector, KQL job or response action was executed for this exercise.
 
 #### Time-planning summary
 
@@ -627,7 +738,7 @@ This is a curated starting point, not a complete list. Do **not** try to consume
 
 #### Official Microsoft resources
 
-- [SC-200 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200) — accepted July 28 baseline, published October 21 revision and change log.
+- [SC-200 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200) — current accepted October 21 outline and change log; July bytes archived.
 - [Security Operations Analyst Associate credential](https://learn.microsoft.com/en-us/credentials/certifications/security-operations-analyst/) — status, renewal, 100-minute exam, free Practice Assessment, sandbox, and prep-video entry point.
 - [SC-200T00-A course](https://learn.microsoft.com/en-us/training/courses/sc-200t00) — four instructor-led days and the current self-directed syllabus.
 - [Mitigate threats using Defender XDR](https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-microsoft-365-defender/) — earlier 6 hours 6 minutes duration is historical; inspect current modules.
@@ -678,6 +789,14 @@ Resource details from the [SC-300 guide](../guides/SC-300-microsoft-identity-acc
 
 This is a curated list, not a complete list. Do **not** try to consume every resource. Pick the format that works for you, use the official blueprint and documentation to resolve disagreements, and spend substantial time practicing. Commercial durations and catalogs can change; estimates below are planning aids, not promises.
 
+#### October 28 learning route and evidence task
+
+Use the [four-day SC-300 course](https://learn.microsoft.com/en-us/training/courses/sc-300t00) with the four selected paths: identity, authentication/access, app integration and governance (**18 modules**). The current [authentication/access outline](https://learn.microsoft.com/en-us/training/paths/implement-authentication-access-management-solution/) includes Global Secure Access and mentions agent identities in its Conditional Access description; detailed targeting and availability still require current product documentation. Four selected path pages do not prove every dynamic course-syllabus entry has been enumerated. Existing paths, labs and evaluated specialist readings are adequate; the historical 15h11 remains a planning observation because fresh aggregate runtimes were not exposed.
+
+**Original worksheet (about 35–50 minutes, editorial estimate):** Follow one synthetic contractor from request and approval through app assignment, sign-in, review denial, applied change and resource retest. Give every transition an authoritative object/system, timestamp, owner and evidence. Add an independent assignment path that survives the first removal.
+
+**Answer checkpoint:** A completed review and an applied membership change are intermediate evidence. Verify the destination and every independent grant before declaring access removed; retain an explicit untested result when you lack a licensed test tenant.
+
 #### Two blog readings with practical tasks
 
 | Reading | Learning task | Limits |
@@ -697,7 +816,7 @@ Four Learn paths list **18 modules**. Earlier path times below total **15h11** b
 | [SC-300T00 instructor-led course](https://learn.microsoft.com/en-us/training/courses/sc-300t00) | Paid/partner delivery | 4 days listed |
 | [MicrosoftLearning SC-300 labs](https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator) | Public (MIT) | 12–24 hours selectively; tenant/license setup extra |
 | [Official Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/identity-and-access-administrator/practice/assessment?assessment-type=practice&assessmentId=60) and exam sandbox from the credential page | Public | 1–2 hours per assessment/review cycle |
-| [Exam Readiness Zone: workload identities (part 3)](https://learn.microsoft.com/en-us/shows/exam-readiness-zone/preparing-for-sc-300-plan-and-implement-workload-identities) and linked series | Public | Historical estimate: about two hours/four parts, February 2024; part 3 landing page only, videos unreviewed; reconcile April objectives |
+| [Exam Readiness Zone: workload identities (part 3)](https://learn.microsoft.com/en-us/shows/exam-readiness-zone/preparing-for-sc-300-plan-and-implement-workload-identities) and linked series | Public | Historical estimate: about two hours/four parts, February 2024; part 3 landing page only, videos unreviewed; reconcile the current October 28 objectives |
 | [Pluralsight SC-300 path](https://www.pluralsight.com/paths/microsoft-certified-identity-and-access-administrator-associate-sc-300) | Paid/trial | 10h20 across four public listings, Nov 2025–Apr 2026 (path rounds to ten hours); in-production notice remains. Paid lessons/practice and full current coverage unverified |
 | [O'Reilly/Packt SC-300 Exam Guide, Second Edition](https://www.oreilly.com/library/view/microsoft-identity-and/9781836200390/) | Paid | Historical 13h03 / 594 pages, March 2025; page blocked. Current edition/content unverified |
 | [O'Reilly SC-300 crash course with Razi Rais](https://www.oreilly.com/live-events/exam-sc-300-microsoft-identity-and-access-administrator-crash-course/0636920056976/0636920056975/) | Paid | Public agenda totals three hours; older Azure AD terminology. Event availability and paid session unverified |
@@ -715,18 +834,26 @@ Avoid any provider claiming actual/live/leaked exam questions. Use legitimate pr
 
 Resource details from the [SC-401 guide](../guides/SC-401-administering-information-security-microsoft-365.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is a curated starting set, **not a complete list** and not a recommendation to consume everything. Pick the formats that work for you, map them to the July 28, 2026 blueprint, and spend substantial time in a safe tenant. Durations are provider-listed runtimes where public; lab and reading times are planning estimates and access can change.
+This is a curated starting set, **not a complete list** and not a recommendation to consume everything. Pick the formats that work for you, map them to the October 28, 2026 blueprint, and spend substantial time in a safe tenant. Durations are provider-listed runtimes where public; lab and reading times are planning estimates and access can change.
+
+#### October 28 learning route and evidence task
+
+Use the [current four-day Microsoft course, Protect sensitive information with Microsoft Purview in the AI era](https://learn.microsoft.com/en-us/training/courses/sc-401t00), as the primary route. Its six selected path outlines now list **27 modules (9/5/2/5/2/4)**; fresh runtimes were not exposed, so the earlier 20h45 is historical metadata. Complete classification, protection, DLP and retention before the [four-module AI path](https://learn.microsoft.com/en-us/training/paths/purview-protect-ai/), whose prerequisites expect that foundation. John Christopher’s [optional SC-401 course](https://www.udemy.com/course/sc-400-course-microsoft-information-protection-administrator/) now lists **8h27, 91 lectures, 12 sections and an October 2026 update**; that supersedes its earlier February/8h26 listing, without verifying paid lessons or simulations.
+
+**Original worksheet (about 35–50 minutes, editorial estimate):** For a synthetic document used by an employee, external collaborator and AI workflow, create separate rows for classification, resource permission, protected action, retention and investigation. Record the attempted operation, expected allow/deny/preserve result, role, policy version, evidence source and unavailable capability.
+
+**Answer checkpoint:** A label, a blocked action, retained content and an audit event answer different questions. Missing evidence must stay a gap; completing a course or browser simulation does not establish that all workload routes were tested.
 
 | Resource | Access | Estimated time | Best use / freshness note |
 |---|---|---:|---|
-| [Official SC-401 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-401) | Free | 30–45 min | Authoritative objective and change-log checklist; July 28, 2026 baseline. |
-| Six official SC-401 Learn paths: [Information Protection](https://learn.microsoft.com/en-us/training/paths/purview-implement-information-protection/), [DLP](https://learn.microsoft.com/en-us/training/paths/purview-implement-manage-dlp/), [retention](https://learn.microsoft.com/en-us/training/paths/purview-implement-retention/), [Insider Risk](https://learn.microsoft.com/en-us/training/paths/purview-implement-insider-risk-management/), [Audit/search](https://learn.microsoft.com/en-us/training/paths/purview-audit-search/), and [AI](https://learn.microsoft.com/en-us/training/paths/purview-protect-ai/) | Free | 20h45 listed; allow 28–40h with exercises | Best current first-party sequence; repeat weak modules rather than racing the XP total. |
+| [Official SC-401 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-401) | Free | 30–45 min | Authoritative objective and change-log checklist; current October 28, 2026 outline. |
+| Six official SC-401 Learn paths: [Information Protection](https://learn.microsoft.com/en-us/training/paths/purview-implement-information-protection/), [DLP](https://learn.microsoft.com/en-us/training/paths/purview-implement-manage-dlp/), [retention](https://learn.microsoft.com/en-us/training/paths/purview-implement-retention/), [Insider Risk](https://learn.microsoft.com/en-us/training/paths/purview-implement-insider-risk-management/), [Audit/search](https://learn.microsoft.com/en-us/training/paths/purview-audit-search/), and [AI](https://learn.microsoft.com/en-us/training/paths/purview-protect-ai/) | Free | Historical 20h45; current 27 modules without exposed runtime; allow an estimated 28–40h with exercises | Best current first-party sequence; repeat weak modules rather than racing the XP total. |
 | [SC-401T00-A official course](https://learn.microsoft.com/en-us/training/courses/sc-401t00) | Paid instructor-led / free self-study links | 4 days | Structured current course and lab discussion; delivery varies by training partner. |
 | [Official Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/information-security-administrator/practice/assessment?assessment-type=practice&assessmentId=1801497482&practice-assessment-type=certification) and exam sandbox | Free | 45–75 min per attempt plus review | Use diagnostically; research every weak answer in current documentation. |
-| Official [Exam Readiness Zone videos](https://learn.microsoft.com/en-us/shows/exam-readiness-zone/?terms=SC-401) | Free | About 1–2h; verify playlist | Orientation and blueprint review; confirm that each video reflects July 2026. |
-| [John Christopher SC-401 course](https://www.udemy.com/course/sc-400-course-microsoft-information-protection-administrator/) | Paid | 8h26 video; allow 14–20h with simulations | Hands-on demonstrations and browser simulations; updated February 2026, so reconcile the July AI/audit changes. |
+| Official [Exam Readiness Zone videos](https://learn.microsoft.com/en-us/shows/exam-readiness-zone/?terms=SC-401) | Free | About 1–2h; verify playlist | Orientation and blueprint review; confirm that each video reflects the current October 2026 outline. |
+| [John Christopher SC-401 course](https://www.udemy.com/course/sc-400-course-microsoft-information-protection-administrator/) | Paid | 8h27 listed video; allow an estimated 14–20h with exercises | Public listing now updated October 2026, 91 lectures/12 sections; paid lessons/simulations and current-objective completeness unverified. |
 | [John Christopher SC-401 overview on YouTube](https://www.youtube.com/watch?v=CqYs-KtJoeQ) | Free | About 20 min; verify current runtime | Course orientation/sample teaching, not a complete July 2026 study path. This is not John Savill; no current Savill SC-401 end-to-end course was independently verified. |
-| [MeasureUp SC-401 practice test](https://www.measureup.com/microsoft-sc-401-practice-test.html) | Paid; demo available | 146 questions; allow 6–10h across attempts/review | Independent assessment released September 2025; its listed objectives mostly match, but reconcile July 2026 changes and verify explanations. |
+| [MeasureUp SC-401 practice test](https://www.measureup.com/microsoft-sc-401-practice-test.html) | Paid; demo available | 146 questions; allow 6–10h across attempts/review | Independent assessment released September 2025; its listed objectives mostly match, but reconcile current October 2026 changes and verify explanations. |
 | [Microsoft Partner Skilling Hub](https://www.skilling-hub.com/en-US) | Microsoft partner login required | Schedule-dependent; allow the listed start/end time plus labs | Search SC-401, Purview, information security, and security workshops after sign-in; public pages did not expose a stable SC-401 listing or duration. |
 | Microsoft Purview [documentation hub](https://learn.microsoft.com/en-us/purview/) | Free | Ongoing reference; 8–15h focused reading | Use for current prerequisites, supported locations, roles, licensing, limits, and portal changes. |
 
@@ -743,6 +870,10 @@ The discover, remediate, prevent and monitor sequence is useful for Scenario 3. 
 Resource details from the [SC-500 guide](../guides/SC-500-microsoft-cloud-ai-security-engineer.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
 This is a curated starting point, **not a complete list**. Do not try to consume every item. Pick the format and depth that work for you, use the official blueprint as the coverage checklist, and spend at least as much effort on implementation and negative testing as on passive watching. Provider runtimes and catalogs change; estimates below use public listings checked September 28, 2026 and include notes where exact current duration was unavailable.
+
+#### Focused reading and evidence route
+
+Read [enable protection](https://learn.microsoft.com/en-us/training/modules/enable-protection-copilot-studio-agents/3-enable-protection-microsoft-defender) and [review protection outputs](https://learn.microsoft.com/en-us/training/modules/enable-protection-copilot-studio-agents/4-review-ai-agent-protection-outputs): published estimates total 12 minutes. Then allow about 45–60 minutes for a handoff/evidence worksheet assigning the Defender URL, Power Platform configuration and matching App ID to their owners. Distinguish the proxy app from an agent’s own identity, and predict evidence for a mismatched ID, missing connector, no suspicious activity and a fresh session. Keep inventory, alert flow and hunting results as separate checks; a connected indicator or logged event alone is insufficient proof of prevention. The added range covers four failure cases, not tenant setup. **VERIFY CURRENT:** product prerequisites, UI, query schema and detection behavior; training examples are not guaranteed thresholds. Both unit texts were read; no tenant change or query ran.
 
 The twelve current official paths are [secure Entra access](https://learn.microsoft.com/en-us/training/paths/secure-access-resources-entra/), [Key Vault security](https://learn.microsoft.com/en-us/training/paths/configure-key-vault-security/), [security governance and compliance](https://learn.microsoft.com/en-us/training/paths/security-governance-compliance/), [Storage security](https://learn.microsoft.com/en-us/training/paths/implement-azure-storage-security/), [Azure SQL security](https://learn.microsoft.com/en-us/training/paths/implement-azure-sql-database-security/), [network security controls](https://learn.microsoft.com/en-us/training/paths/implement-network-security-controls-azure/), [AI security](https://learn.microsoft.com/en-us/training/paths/implement-ai-security/), [server and VM security](https://learn.microsoft.com/en-us/training/paths/server-vm-security/), [application-platform security](https://learn.microsoft.com/en-us/training/paths/secure-application-platform-services/), [Defender for Cloud posture](https://learn.microsoft.com/en-us/training/paths/manage-security-posture-defender-cloud/), [Sentinel activity and event collection](https://learn.microsoft.com/en-us/training/paths/implement-activity-event-collection-sentinel/), and [Security Copilot deployment and operation](https://learn.microsoft.com/en-us/training/paths/deploy-operate-security-copilot/). The fetched overviews expose **63 module placements** (3/4/6/4/3/4/9/7/6/6/8/3). Module titles/descriptions were reviewed, not every linked unit. Current runtimes are absent, so the earlier 30h08 sum is withdrawn.
 
@@ -774,6 +905,14 @@ Treat blogs as context and discovery. Use the current product references to deci
 ### MS-102 — Microsoft 365 Administrator
 
 Resource details from the [MS-102 guide](../guides/MS-102-microsoft-365-administrator.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+#### October 28 learning route and evidence task
+
+The [official MS-102 course](https://learn.microsoft.com/en-us/training/courses/ms-102t00) still publishes **five instructor-led days**. The [Pluralsight path](https://www.pluralsight.com/paths/microsoft-365-certified-administrator-expert-microsoft-365-administrator-ms-102) still lists five 2025 courses totaling 7 hours 44 minutes (header rounded to 8 hours). These are content-consumption figures; they do not include tenant preparation, negative tests or source review. Choose one route and use the April 2026 objective map to identify gaps. Existing blocked book/Udemy details remain historical; class availability and retirement timing require their own current checks.
+
+**Original resource-gap audit (about 45–60 minutes, editorial estimate):** Choose one task from tenant operations, identity, Defender and Purview. Map each to a specific lesson, current product reference, lab evidence and unresolved limitation. Prioritize a missing high-impact task rather than replaying a familiar whole course.
+
+**Answer checkpoint:** Completing every listed video does not establish readiness if you cannot produce the task’s permitted/denied result and recovery evidence. A dated public syllabus establishes advertised coverage, not current lesson accuracy.
 
 This is a curated starting point, **not a complete list**. Do not try to consume every item. Pick the format and depth that work for you, use the current official blueprint as the coverage checklist, and reserve substantial time for tenant practice, negative tests, troubleshooting, and review. Because MS-102 retires November 30, 2026, verify that any planned course and exam date leave enough recovery time for rescheduling.
 
@@ -809,6 +948,24 @@ No exact current Whizlabs MS-102 product page was established; none is inferred 
 ### AB-650 — Microsoft 365 and AI Services Administrator Associate (beta)
 
 Resource details from the [AB-650 guide](../guides/AB-650-ai-services-administrator-associate.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+#### October 28 learning route and evidence task
+
+The [official seven-lab set](https://microsoftlearning.github.io/AB-650T00_administer_microsoft_365_and_ai_services/) offers **450 minutes** of publisher-estimated practice. Read its [environment guide](https://microsoftlearning.github.io/AB-650T00_administer_microsoft_365_and_ai_services/Instructions/Labs/00-getting-started.html) first: the ordered labs assume one prepared Microsoft 365 E7 tenant with seeded identities, content and agents; public instructions do not include that tenant or its licenses. No Azure subscription is needed by this lab set. **VERIFY CURRENT:** the course page still announces November 13 availability; a visible repository does not prove a class or hosted lab can be booked. Allow extra time for setup, propagation and independent testing.
+
+**Original evidence worksheet (about 30–45 minutes beyond the published lab time, editorial estimate):** For the governance lab, record one identity, registry/tool-approval decision and usage signal. Give each row an object ID, acting persona, timestamp, source period and provenance: live observed, seeded sample, pending or unavailable. Keep Conditional Access report-only as the instructions require.
+
+**Answer checkpoint:** An empty or failed activity card is not proof of zero use or zero risk. Seeded practice evidence can support reasoning, but must not be recorded as a live incident or independently observed product result.
+
+#### October 28 learning-resource check
+
+Additional options and access updates; choose relevant resources rather than consuming every route. New course availability, class delivery and licensing are **VERIFY CURRENT**. Published days describe instructor-led scope, not measured self-study time.
+
+| Resource | Access | Estimated time |
+|---|---|---|
+| [AB-650T00: Administer Microsoft 365 and AI services](https://learn.microsoft.com/en-us/training/courses/ab-650t00) | Public outline; instructor-led class/provider access may be paid | **3 published days**; exact page currently says available **November 13, 2026**; indexed October 30 date conflicts; delivery unverified |
+| [Manage and secure Microsoft 365 AI services](https://learn.microsoft.com/en-us/training/paths/manage-secure-microsoft-365-ai-services/) — access recheck | Public reading; current outline assumes an E5 tenant and prefers E7/Frontier Suite for some exercises; VERIFY CURRENT licensing | About **one study day**, editorial plan for seven modules; exact runtime not verified in direct view and setup/labs need extra time |
+
 
 This is not a complete list, and it is not meant to be consumed in full. Pick one primary route that fits how you learn, build labs around weak objectives, and use assessments to diagnose gaps. Recheck dates and coverage because AB-650 and several Agent 365 features are beta or rapidly changing.
 
@@ -855,7 +1012,24 @@ Targeted searches did not verify an exact current Pluralsight, O’Reilly, Whizl
 
 Resource details from the [MD-102 guide](../guides/MD-102-managing-securing-microsoft-365-endpoints-intune.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is a curated starting point, **not a complete list**. It is not meant to be consumed in full. Choose one current primary route, build a real lab, and use assessment results plus the July 2026 blueprint to select supplements. Older MD-102 courses may omit Intune Suite, device preparation changes, automation/reporting, and Security Copilot agents.
+#### October 28 learning route and evidence task
+
+Use [MD-102T00](https://learn.microsoft.com/en-us/training/courses/md-102t00) as the primary route: identity/enrollment first, then policy and applications, protection, operations and premium/cloud-desktop gaps. Its eight selected paths still list **34 modules**, and the course still lists five instructor-led days; the earlier 29h46 remains historical runtime metadata. Before attempting the [Foundation lab](https://github.com/MicrosoftLearning/MD-102T00-Microsoft-365-Endpoint-Administrator/blob/main/Instructions/Labs/Lab01-Foundation.md), budget for its prepared tenant, seeded licensed users and four VMs. The 90-minute lab estimate excludes unmeasured setup; trial availability and eligibility are **VERIFY CURRENT**. Only its prerequisites and initial user/group exercise were read in this pass.
+
+**Original worksheet (about 30–45 minutes, editorial estimate):** Choose a harmless app assignment from your learning route and record separately the intended cohort, resolved targets, check-in time, detection evidence, effective policy and tested user result. Add a device that never checked in and one that reports an installation failure.
+
+**Answer checkpoint:** Assignment success is not installation evidence, and a missing device is an observation gap rather than a successful outcome. A browser simulation can rehearse the workflow while tenant/device execution remains untested.
+
+#### October 28 learning-resource check
+
+Additional options and access updates; choose relevant resources rather than consuming every route. New course availability, class delivery and licensing are **VERIFY CURRENT**. Published days describe instructor-led scope, not measured self-study time.
+
+| Resource | Access | Estimated time |
+|---|---|---|
+| [Official MD-102 Foundation lab](https://github.com/MicrosoftLearning/MD-102T00-Microsoft-365-Endpoint-Administrator/blob/main/Instructions/Labs/Lab01-Foundation.md) | Public instructions; prepared disposable tenant, licenses and four VMs required; no hosted lab included | **90 published minutes plus unmeasured setup**; identity, enrollment, Autopilot and RBAC practice; not executed or audited against every October objective |
+
+
+This is a curated starting point, **not a complete list**. It is not meant to be consumed in full. Choose one current primary route, build a real lab, and use assessment results plus the current October 27, 2026 blueprint to select supplements. Older MD-102 courses may omit Intune Suite, device preparation changes, automation/reporting, and Security Copilot agents.
 
 The eight official paths currently list **34 modules**. The earlier **29 hours 46 minutes** and per-path times below are historical metadata; current pages did not expose runtimes in this retrieval. Budget separately for labs and review.
 
@@ -884,13 +1058,21 @@ No exact current Whizlabs or MeasureUp MD-102 product page was independently ver
 | [Windows App Management in Microsoft Intune](https://techcommunity.microsoft.com/blog/microsoftmechanicsblog/windows-app-management-in-microsoft-intune/4515194), Zachary Cavanell, Microsoft Mechanics, April 27, 2026; demonstration by Nicole Zhao | Budget 20–30 minutes to read the public transcript and sketch inventory → package → assignment → installation → update evidence. Identify where a mutable payload can affect an earlier ring. | Article/transcript reviewed, video and tenant not tested. Its private-preview deployment label is historical; current detailed docs say public preview. The separate automatic-update and deployment demonstrations do not establish that those options can be combined. |
 | [Windows settings backup becoming a new resilience baseline](https://techcommunity.microsoft.com/blog/windows-itpro-blog/windows-settings-backup-becoming-a-new-resilience-baseline/4530757), Miranda Leschke, Windows IT Pro Blog, July 6, 2026 | Budget 20–30 minutes for a Not Configured/Enabled/Disabled backup-policy table and a separate restore column. Add OS, geography/cloud and file-protection checks. | Main article reviewed, linked video not watched. Default-on is scoped to eligible 26H2 behavior; explicit policy is honored, restore stays separate, and DMA/sovereign restrictions matter. Do not infer every tenant/device already received it. |
 
-Public catalogs and official modules were inspected; paid lessons/questions were not accessed. O'Reilly and both Udemy pages were blocked. Channel/partner responses were shells or profile metadata, and the direct Practice Assessment did not expose question content. Use dated resource metadata to plan study, not as proof of complete current coverage. The existing Agent 365 announcement remains adjacent context, not an Intune-agent availability matrix.
+Public catalogs and official modules were inspected; paid lessons/questions were not accessed. O'Reilly and both Udemy pages were blocked in the earlier review; this learning-resource pass did not recheck those three exact listings. Channel/partner responses were shells or profile metadata, and the direct Practice Assessment did not expose question content. Use dated resource metadata to plan study, not as proof of complete current coverage. The existing Agent 365 announcement remains adjacent context, not an Intune-agent availability matrix.
 
 ### MS-700 — Teams Administrator Associate
 
 Resource details from the [MS-700 guide](../guides/MS-700-managing-microsoft-teams.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is a curated starting point, **not a complete list**, and it is not meant to be consumed in full. Choose one primary path, practice in a tenant, and select supplements from measured gaps. Reconcile all older resources with the July 29, 2026 blueprint, especially MTO, Copilot/AI troubleshooting, current events, policies and external collaboration.
+This is a curated starting point, **not a complete list**, and it is not meant to be consumed in full. Choose one primary path, practice in a tenant, and select supplements from measured gaps. Reconcile all older resources with the October 27, 2026 blueprint, especially MTO, Copilot/AI troubleshooting, current events, policies and external collaboration.
+
+#### October 28 learning route and evidence task
+
+Use the [four-day Microsoft course](https://learn.microsoft.com/en-us/training/courses/ms-700t00) and its four selected paths (**20 modules**) for the primary route, then choose one tenant case across governance, external access, apps and a meeting/call. John Christopher’s [MS-700 Training & Lab Simulations](https://www.udemy.com/course/microsoft-teams-examlabpractice/) is now publicly accessible and lists **11h56, 120 lectures, 16 sections, updated October 2026**. This replaces the earlier blocked-page observation for that listing only; paid lessons and simulations remain unreviewed. Choose it as an alternative explanation style rather than adding it automatically to the full official route.
+
+**Original worksheet (about 35–50 minutes, editorial estimate):** For an approved collaboration app, trace publisher review → effective audience → installation → consent → resource access. Specify a negative case at each boundary, who owns remediation, and what evidence distinguishes a policy restriction from a resource-permission failure.
+
+**Answer checkpoint:** A pinned app, an allowed publisher and a successful consent decision are separate evidence. Accept the workflow only after a permitted persona succeeds and an out-of-scope persona fails. The worksheet can be completed without installing a real third-party app.
 
 The four official paths are [get started](https://learn.microsoft.com/en-us/training/paths/get-started-managing-microsoft-teams/) (3h36), [prepare the environment](https://learn.microsoft.com/en-us/training/paths/prepare-environment-for-microsoft-teams-deployment/) (3h20), [manage chat/teams/channels/apps](https://learn.microsoft.com/en-us/training/paths/manage-chat-teams-channels-apps-microsoft-teams/) (3h02), and [manage meetings/calling](https://learn.microsoft.com/en-us/training/paths/manage-meetings-calling-microsoft-teams/) (9h03), a historical total of **19 hours 1 minute** from the earlier review. Current pages list **20 modules (4/4/3/9)** but do not expose those runtimes in the retrieved text; treat the old times as planning estimates, not freshly verified durations.
 
@@ -903,7 +1085,7 @@ The four official paths are [get started](https://learn.microsoft.com/en-us/trai
 | [Pluralsight MS-700 path](https://www.pluralsight.com/paths/managing-microsoft-teams) | Paid | Five public course listings total 18h58 (path rounds to 19h); 2022/2024 dates require current-doc supplements |
 | [O'Reilly/Packt MS-700 Third Edition](https://www.oreilly.com/library/view/ms-700-managing-microsoft/9781835883945/) by Nate Chamberlain and Peter Rising | Paid | Historical 10h41 / 502 pages, August 2024; page blocked on recheck, current edition/content unverified |
 | [O'Reilly/ACI MS-700 video](https://www.oreilly.com/videos/managing-microsoft-teams/9781836643135/) with Adam Gordon | Paid | Historical 31h03, August 2024; page blocked on recheck, current content unverified |
-| [Udemy MS-700 with labs](https://www.udemy.com/course/microsoft-teams-examlabpractice/) by John Christopher | Paid | Page blocked; historical February 2026 update and runtime unverified now; allow 20–35 hours with practice |
+| [Udemy MS-700 with labs](https://www.udemy.com/course/microsoft-teams-examlabpractice/) by John Christopher | Paid | Public listing: 11h56, 120 lectures/16 sections, updated October 2026; allow an estimated 20–35 hours with practice; paid lessons/simulations and completeness unverified |
 | [MeasureUp MS-700](https://www.measureup.com/microsoft-practice-test-ms-700-managing-microsoft-teams.html) | Paid | 155 questions (69/36/31/19), September 2025 update verified from public listing; paid questions and July/October completeness unreviewed; allow 6–10 hours |
 | [Udemy current-blueprint practice](https://www.udemy.com/course/ms-700-practice-tests-teams-administrator-2026/) by Dean Ellerby | Paid | Page blocked; historical 360-question/August 2026 claims and originality unverified; allow 10–16 hours with source review |
 | [Microsoft Mechanics](https://www.youtube.com/@MSFTMechanics), [Microsoft Reactor](https://www.youtube.com/@MicrosoftReactor), and [John Savill](https://www.youtube.com/@NTFAQGuy) | Public | 2–10 hours selectively; no complete current MS-700 playlist was confirmed |
@@ -924,7 +1106,15 @@ Start with Microsoft's free Practice Assessment. Add paid questions only for a d
 
 Resource details from the [MS-721 guide](../guides/MS-721-collaboration-communications-systems-engineer.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is a curated starting point, **not a complete list**, and it is not meant to be consumed in full. Choose one primary route, build a lab/topology, and add resources only for measured gaps. Reconcile every older source with the April 28, 2026 blueprint, especially Shared Calling, SMS, Queues app, Copilot, current events, Android enrollment/MDEP, flexible workspaces and room/device features.
+This is a curated starting point, **not a complete list**, and it is not meant to be consumed in full. Choose one primary route, build a lab/topology, and add resources only for measured gaps. Reconcile every older source with the retained April 28, 2026 outline and separately compare the future October 29 outline, especially Shared Calling, SMS, Queues app, Copilot, current events, Android enrollment/MDEP, flexible workspaces and room/device features.
+
+#### October 28 learning route and evidence task
+
+Start with the [five-day Microsoft course](https://learn.microsoft.com/en-us/training/courses/ms-721t00) and its two selected paths (**15 modules, 7/8**); choose voice or room investigations from actual weak areas. As of this review on **October 28, 2026**, the [October 29 outline](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-721) is still a future exam baseline. A course update or a five-day duration does not establish exam-transition timing. The existing [Tom Arbuthnot/Marius Nilsen interop briefing](https://empowering.cloud/microsoft-teams-rooms-cloud-video-interop-vs-direct-guest-join-vs-cross-platform-meetings-via-sip/) is useful specialist context: its **2 min** page label describes the synopsis, while video chapters extend past 15 minutes; the full video runtime was not verified or watched.
+
+**Original worksheet (about 30–45 minutes, editorial estimate):** Draw an external SIP endpoint joining your Teams meeting and a Teams Room joining an external meeting. For each direction record endpoint/platform, provider/plan, join method, lobby expectation, required content/peripheral behavior, owner and one failure test. Mark any May 2026 rollout statement for a current support check.
+
+**Answer checkpoint:** Similar meeting names do not establish the same direction, entitlement or feature set. An advertised interop capability needs a direction-specific acceptance test; reading the synopsis is not successful interoperability execution.
 
 The two official paths are [plan and design Teams collaboration communications systems](https://learn.microsoft.com/en-us/training/paths/plan-configure-teams-voice/) (6h38) and [manage Teams collaboration communications systems](https://learn.microsoft.com/en-us/training/paths/manage-teams-voice/) (8h05), a historical total of **14 hours 43 minutes**. Current public pages list **15 modules (7/8)** without those runtimes in retrieved text; use the previous timings only as planning estimates.
 
@@ -953,7 +1143,15 @@ Practice Assessment and video/partner sites returned public shells; no interacti
 
 Resource details from the [DP-600 guide](../guides/DP-600-implementing-analytics-solutions-microsoft-fabric.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is a curated starting point, **not a complete list**, and it is not meant to be consumed in full. Choose one primary route, build a Fabric solution, and add only resources that close measured gaps. Reconcile every older source with the July 21, 2026 blueprint, especially Direct Lake on OneLake versus SQL analytics endpoint, OneLake security, Real-Time hub, AI-ready data, Fabric IQ and current endorsement/lifecycle behavior.
+#### October 28 learning route and evidence task
+
+For focused practice, use [Secure data access in Microsoft Fabric](https://microsoftlearning.github.io/mslearn-fabric/Instructions/Labs/19-secure-data-access.html) (**45 published minutes**) and [Prepare a semantic model for AI](https://microsoftlearning.github.io/mslearn-fabric/Instructions/Labs/30-prepare-model-ai.html) (**30 published minutes**). The security exercise assumes two personas and paid/trial capacity; the AI exercise explicitly requires paid capacity and excludes trial Copilot. **VERIFY CURRENT:** licensing, Desktop prerequisites, Q&A/AI dependencies and UI before execution. Heini Ilmarinen and Stephanie Bruno’s [April 23 Reactor orientation](https://developer.microsoft.com/en-us/reactor/events/26973/) has a one-hour agenda; its recording was not watched and predates the October blueprint. Choose it only if a PL-300-to-DP-600 learning map helps.
+
+**Original comparison sheet (about 30–45 minutes beyond the published lab estimates, editorial estimate):** For a permission test and an AI-answer test, record actor, endpoint, source/model version, expected rows or measure, observed result and evidence status. A one-account walkthrough must mark the second-persona denial untested. For AI, use at least one ambiguous business term and one question the model cannot answer.
+
+**Answer checkpoint:** Schema simplification and model approval improve discoverability/context; they do not by themselves prove access isolation or answer correctness. Retain a separately observed result for each.
+
+This is a curated starting point, **not a complete list**, and it is not meant to be consumed in full. Choose one primary route, build a Fabric solution, and add only resources that close measured gaps. Reconcile every older source with the October 19, 2026 blueprint, especially Direct Lake on OneLake versus SQL analytics endpoint, OneLake security, Real-Time hub, AI-ready data, Fabric IQ and current endorsement/lifecycle behavior.
 
 The September 1 review recorded five official paths: [analytics data stores](https://learn.microsoft.com/en-us/training/paths/explore-analytics-data-stores/) (4h34), [transform analytics data](https://learn.microsoft.com/en-us/training/paths/design-transform-analytics-data/) (5h14), [semantic models](https://learn.microsoft.com/en-us/training/paths/design-manage-semantic-models-fabric/) (6h21), [AI-ready analytics data](https://learn.microsoft.com/en-us/training/paths/prepare-ai-ready-analytics-data/) (3h50), and [security/governance](https://learn.microsoft.com/en-us/training/paths/secure-govern-analytics-data/) (3h21), totaling **23 hours 20 minutes**. September 27 checks verified the public path/module pages, but those pages did not expose a fresh total; treat these runtimes as historical planning metadata.
 
@@ -980,7 +1178,15 @@ No exact current Whizlabs or MeasureUp DP-600 product was independently verified
 
 Resource details from the [DP-700 guide](../guides/DP-700-implementing-data-engineering-solutions-microsoft-fabric.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is a curated starting point, **not a complete list**, and it is not meant to be consumed in full. Pick one primary route, build a complete Fabric solution, then add documentation, videos or practice questions only for measured gaps. Reconcile older courses with the July 21, 2026 blueprint, especially Airflow workspace settings, OneLake security, query acceleration, current Git/database-project behavior and Fabric monitoring.
+#### October 28 learning route and evidence task
+
+Use the official [Monitoring hub lab](https://microsoftlearning.github.io/mslearn-fabric/Instructions/Labs/18-monitor-hub.html) (**30 published minutes**) with the [Fabric access-control lab](https://microsoftlearning.github.io/mslearn-fabric/Instructions/Labs/19-secure-data-access.html) (**45 published minutes**). Both require paid/trial Fabric capacity; the access exercise needs a second persona for independent permission evidence. The [Pluralsight path](https://www.pluralsight.com/paths/implementing-data-engineering-solutions-using-microsoft-fabric-dp-700) still contains three 2025 courses totaling 6 hours 15 minutes. Use those for foundations and current written labs/documentation for the October baseline; runtime totals exclude setup, failure injection and review.
+
+**Original monitoring extension (about 30–45 minutes beyond the lab, editorial estimate):** Compare two successful runs with deliberately different source inputs. Record run ID, status, submitted identity, input/output counts, watermark or checkpoint, and the business reconciliation. In a separate permitted test, record one denied access path or unavailable signal.
+
+**Answer checkpoint:** A Succeeded activity records completion of that activity; it does not prove source completeness, idempotency or unchanged business results. A filtered monitoring view can hide the failed run you need to investigate.
+
+This is a curated starting point, **not a complete list**, and it is not meant to be consumed in full. Pick one primary route, build a complete Fabric solution, then add documentation, videos or practice questions only for measured gaps. Reconcile older courses with the October 19, 2026 blueprint, especially Airflow workspace settings, OneLake security, query acceleration, current Git/database-project behavior and Fabric monitoring.
 
 The five official paths below retain the **September 1 duration estimates**; September 27 public path pages exposed module lists but did not independently reverify those totals. They are [ingest data](https://learn.microsoft.com/en-us/training/paths/ingest-data-with-microsoft-fabric/) (4h49), [lakehouse](https://learn.microsoft.com/en-us/training/paths/implement-lakehouse-microsoft-fabric/) (7h21), [Real-Time Intelligence](https://learn.microsoft.com/en-us/training/paths/explore-real-time-analytics-microsoft-fabric/) (5h31), [data warehouse](https://learn.microsoft.com/en-us/training/paths/work-with-data-warehouses-using-microsoft-fabric/) (6h38), and [manage a Fabric environment](https://learn.microsoft.com/en-us/training/paths/manage-microsoft-fabric-environment/) (3h30), totaling **27 hours 49 minutes**.
 
@@ -990,7 +1196,7 @@ The five official paths below retain the **September 1 duration estimates**; Sep
 | Five official paths from [DP-700T00](https://learn.microsoft.com/en-us/training/courses/dp-700t00) | Public | 27h49 historical estimate; allow 50–90 hours with exercises/notes |
 | DP-700T00 instructor-led course | Paid/partner delivery | 4 days listed |
 | [Microsoft DP-700 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/fabric-data-engineer-associate/practice/assessment?assessment-type=practice&assessmentId=1704375541&practice-assessment-type=certification) | Public | 45–75 minutes per attempt plus source review |
-| [Pluralsight DP-700 path](https://www.pluralsight.com/paths/implementing-data-engineering-solutions-using-microsoft-fabric-dp-700) | Paid | 6h15 across 3 courses plus practice exam; 2025 content, supplement July 2026 |
+| [Pluralsight DP-700 path](https://www.pluralsight.com/paths/implementing-data-engineering-solutions-using-microsoft-fabric-dp-700) | Paid | 6h15 across 3 courses plus practice exam; 2025 content; supplement the current October outline |
 | [O’Reilly DP-700 bootcamp](https://www.oreilly.com/live-events/microsoft-fabric-data-engineer-associate-bootcamp-dp-700/0642572016304/) with Nikola Ilic | Paid/live | Two sessions; about 8 hours from the public agenda; verify current availability and dates |
 | [O’Reilly DP-700 Study Guide early release](https://www.oreilly.com/library/view/microsoft-fabric-data/0642572319250/) by Michael John Pena | Paid/early release | Earlier listing: 400 pages / 3h22 and December 2027 publication; access blocked on recheck, contents not final |
 | [Microsoft Press DP-700 video](https://www.microsoftpressstore.com/store/exam-dp-700-implementing-data-engineering-solutions-9780135497517) by Andy Cutler | Paid | Runtime not exposed on the public page; published February 2026, supplement July changes |
@@ -1013,6 +1219,10 @@ Follow the [Fabric release notes](https://learn.microsoft.com/en-us/fabric/funda
 Resource details from the [PL-300 guide](../guides/PL-300-microsoft-power-bi-data-analyst.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
 This is a curated starting point, **not a complete list**, and it is not meant to be consumed in full. Choose one primary course or path, build an end-to-end report, and add only resources that close measured gaps. Reconcile every resource with the April 20, 2026 blueprint, especially Direct Lake, calculation groups, DAX query view, Copilot, visual calculations, current usability controls, and workspace/asset changes.
+
+#### Focused reading and evidence route
+
+Choose MicrosoftLearning’s [visual-calculations lab](https://microsoftlearning.github.io/PL-300-Microsoft-Power-BI-Data-Analyst/Instructions/Labs/07-create-visual-calculations.html) when Axis, Reset or totals are a measured gap. The publisher estimates 30 minutes. Add about 30–45 minutes for an original evidence sheet that predicts a result before switching rows/columns, changes the hierarchy level, compares a running sum with and without reset, and explains the grand-total result. That added range covers four comparisons and written reasoning, not a promised runtime. Preserve the report and capture the visual grain, sort/filter state and result so another learner can explain it. **VERIFY CURRENT:** Desktop UI and feature availability. The textual lab was read; its PBIX download, visuals and calculations were not executed.
 
 The five official paths retain their **September 1 duration estimates**; September 27 module listings did not independently reverify the total. They are [data-analytics foundations](https://learn.microsoft.com/en-us/training/paths/data-analytics-microsoft/) (1h28), [prepare data](https://learn.microsoft.com/en-us/training/paths/prepare-data-power-bi/) (4h33), [model data](https://learn.microsoft.com/en-us/training/paths/model-power-bi/) (5h50), [effective reports](https://learn.microsoft.com/en-us/training/paths/power-bi-effective/) (5h07), and [manage and secure](https://learn.microsoft.com/en-us/training/paths/manage-secure-power-bi/) (2h54), totaling **19 hours 52 minutes**.
 
@@ -1046,7 +1256,24 @@ The attributed Microsoft Q&A timeline update above is operational reading for mi
 
 Resource details from the [PL-400 guide](../guides/PL-400-microsoft-power-platform-developer.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is a curated starting point, **not a complete list**, and it is not meant to be consumed in full. Choose one current primary path, implement the ten labs or equivalent work, and use other resources only to close measured gaps. Reconcile every resource with the March 19, 2026 blueprint; older courses can still teach fundamentals but may use prior weights, deprecated tooling, or objectives that have moved.
+#### October 28 learning route and evidence task
+
+The [official PL-400 course](https://learn.microsoft.com/en-us/training/courses/pl-400t00) still lists **five days**. The [Pluralsight path](https://www.pluralsight.com/paths/microsoft-power-platform-developer-pl-400) publishes nine courses/about 15 hours, with 2022–2023 dates. Its body also calls PL-400 “App Maker”; use the official blueprint for credential identity and scope. This path can offer durable code/extension explanations, but the date and inconsistent label make a current gap map essential. Keep the existing official lab repository as selective practice; the AB-400 successor-training note already supplies the transition route.
+
+**Original extension-review exercise (about 30–45 minutes, editorial estimate):** Take one older lesson’s plug-in, connector or event scenario and create an implementation decision card: objective, client/server trust boundary, execution identity, transaction boundary, retry/duplicate risk, 2026 documentation and independent test. Classify the Dataverse Skills blog’s generated mutations by these same fields before accepting them.
+
+**Answer checkpoint:** An AI tool selecting the correct API does not prove the caller has permission, the mutation belongs in the right solution, or an external side effect rolls back with Dataverse.
+
+#### October 28 learning-resource check
+
+Additional options and access updates; choose relevant resources rather than consuming every route. New course availability, class delivery and licensing are **VERIFY CURRENT**. Published days describe instructor-led scope, not measured self-study time.
+
+| Resource | Access | Estimated time |
+|---|---|---|
+| [AB-400T00 successor training](https://learn.microsoft.com/en-us/training/courses/ab-400t00) | Public outline; class/provider access may be paid | **3 published days**; adjacent AB-400 preparation after PL-400T00 courseware retirement on October 30; not proof of identical exam coverage |
+
+
+This is a curated starting point, **not a complete list**, and it is not meant to be consumed in full. Choose one current primary path, implement the ten labs or equivalent work, and use other resources only to close measured gaps. Reconcile every resource with the current October 16 published outline and the appointment code; older courses can still teach fundamentals but may use prior weights, deprecated tooling, or objectives that have moved.
 
 The nine self-paced paths recorded during the September 1 review cover advanced canvas apps, expressions/Dataverse flows, developer foundations, client scripting/commands, PCF, Dataverse extension, Azure integration, custom connectors, and ALM. Their recorded durations totaled about **25 hours**; the September 27 public course shell reconfirms five days of instructor-led delivery but does not independently reverify that path-duration sum. Allow **50–90 hours** with coding, tenant setup, failure testing, and notes.
 
@@ -1078,7 +1305,11 @@ The article is useful for understanding tool selection and orchestration. Reconc
 
 Resource details from the [AB-410 guide](../guides/AB-410-building-intelligent-applications.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is a selective starting set, not a complete list and not a prescription to consume everything. Pick the explanation, demonstration, hands-on practice, and assessment style that works for you. Reconcile every exam-labeled resource with the May 15, 2026 official blueprint before investing time or money.
+This is a selective starting set, not a complete list and not a prescription to consume everything. Pick the explanation, demonstration, hands-on practice, and assessment style that works for you. Reconcile every exam-labeled resource with the current official blueprint before investing time or money; the October 16 page update does not publish a new skills-effective date.
+
+#### Focused source-to-evidence route
+
+**Requirements before tooling — public reading; about 45–75 minutes.** Read the [AI-powered solution-design module overview](https://learn.microsoft.com/en-us/training/modules/design-ai-powered-solutions-power-platform/) and its [requirements-to-components unit](https://learn.microsoft.com/en-us/training/modules/design-ai-powered-solutions-power-platform/3-recommend-power-platform-components) (published unit estimate: 7 minutes). For a synthetic repair-request process, produce a one-page matrix of users, data, human decisions, automation and proposed components; justify one step that should remain deterministic. The planning range adds an original worksheet and revision to the short reading, not tenant deployment. Prior canvas-app, flow and Dataverse familiarity is assumed. The module is selective design training, not proof of licensing, rollout or complete blueprint coverage; implementation needs current product documentation. Public text was reviewed October 28, 2026; no account, tenant or paid lesson was used.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
@@ -1098,7 +1329,7 @@ This is a selective starting set, not a complete list and not a prescription to 
 - **Additional paid course/practice bundle — allow 8–20 hours selectively:** [Whizlabs AB-410](https://www.whizlabs.com/microsoft-ab-410-certification-training/). The fetched page returned only a title shell, so duration, counts and coverage remain unverified; verify before purchase.
 - **Partner-restricted learning:** [Partner Skilling Hub](https://www.skilling-hub.com/en-US) may list AB-410-aligned delivery for eligible Microsoft partners. Sign-in is required to confirm the exact current event, start/end times, seat availability, and prerequisites.
 
-Microsoft explicitly says an official AB-410 Practice Assessment is **not currently available**. In bounded September 28, 2026 searches, no exact AB-410 offering from Pluralsight, O'Reilly, or MeasureUp could be independently verified in their public catalogs. Do not infer a product from their coverage of older Power Platform exams, and avoid sites advertising memorized or “real exam” questions. Use the official exam sandbox for interface familiarity and the original checks and labs above for readiness until a reputable current assessment is available.
+**VERIFY CURRENT — checked October 28, 2026:** the [AB-410 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-410) and credential page now direct learners to the Practice Assessment on AI Skills Navigator, with sign-in required. Its public link establishes the announced access path; no signed-in questions, launch, count or performance was inspected. Allow about 1–2 hours for an initial diagnostic attempt and review, an editorial estimate. In bounded September 28, 2026 searches, no exact AB-410 offering from Pluralsight, O'Reilly, or MeasureUp could be independently verified in their public catalogs. Do not infer a product from their coverage of older Power Platform exams, and avoid sites advertising memorized or “real exam” questions. Use the official exam sandbox for interface familiarity and the original checks and labs above for readiness; use the announced official Practice Assessment diagnostically once its exam-specific signed-in access is confirmed.
 
 ---
 
@@ -1113,26 +1344,29 @@ Only those selected article sections were reviewed for these exercises. Other pr
 
 Resource details from the [AB-730 guide](../guides/AB-730-ai-business-professional.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is a selective starting set, not a complete list and not a requirement to consume everything. Pick the explanation, hands-on practice, and assessment style that works for you, and map each resource to the blueprint effective for your appointment. Current public listings were checked September 27; this is not a review of paid lessons or assessment questions.
+This is a selective starting set, not a complete list and not a requirement to consume everything. Pick the explanation, hands-on practice, and assessment style that works for you, and map each resource to the blueprint effective for your appointment. Selected public course/path listings were rechecked October 28; unchanged older observations remain dated below. Public landing-page access does not establish access to paid lessons or assessment questions.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
-| Official self-paced path | Free | Now 4 modules; prior 4h31 estimate is not verified for this revision |
+| Official self-paced path | Free public reading; product practice needs eligible access | 4 modules; about 4–6 hours including notes (editorial estimate; no directly verified total) |
+| Focused Work IQ foundations module | Free public reading | About 25–40 minutes for reading and a context worksheet (editorial estimate) |
+| Focused Cowork module | Free public reading; eligible product access for practice | About 1–2 hours for selected units and a supervision worksheet (editorial estimate) |
 | AB-730T00-A instructor-led course | Paid or partner-sponsored | 1 day |
 | Microsoft Practice Assessment | Free | 45–75 minutes per attempt plus review |
 | Microsoft exam-prep video | Free | Public page retrieved; runtime/video content not independently reviewed |
-| Pluralsight AB-730 path | Paid | 3 rounded hours / 2 courses (3h01 summed); path still in production |
+| Pluralsight AB-730 path | Paid | 4 rounded hours / 3 courses (4h26 summed); path still in production |
 | O'Reilly AB-730 Crash Course | Paid | About 3 hours of agenda plus breaks/exercises |
 | MeasureUp AB-730 | Paid | 110 questions; allow 5–8 hours across remediation |
-| Udemy Scott Duffy practice | Paid | Earlier 100-question listing; current retrieval blocked |
+| Udemy Scott Duffy practice | Paid | 100 questions advertised; about 3–6 hours for attempts/remediation (editorial estimate); paid questions uninspected |
 | Partner Skilling Hub | Partner-restricted | Event-specific; verify signed-in start/end times |
 
 - **Primary route:** [Microsoft Learn AB-730T00](https://learn.microsoft.com/en-us/training/courses/ab-730t00) and the linked [Enhance business workflows with AI path](https://learn.microsoft.com/en-us/training/paths/transform-business-workflows-with-ai/). It now lists four modules: content, data/visuals, meetings/collaboration, and Cowork. It is no longer the earlier six-module listing; use the full course and objective map to identify remaining fundamentals and prompt-management needs.
+- **Targeted current-scope reading:** [Get ready to work with Microsoft Copilot](https://learn.microsoft.com/en-us/training/modules/get-ready-work-microsoft-365-copilot/) introduces Work IQ, protection and prompting. [Get more done with Copilot Cowork](https://learn.microsoft.com/en-us/training/modules/delegate-work-copilot-cowork/) has ten units; selected how-it-works, guardrails and a 15-minute exercise entry were inspected. Use synthetic data and a plan/progress/result worksheet. The course's simple approval description must be read alongside product documentation on existing session approvals and preauthorization; the module is not proof that every action prompts again. No exercise launcher or tenant task was run.
 - **Readiness:** [free official Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/ai-business-professional/practice/assessment?assessment-type=practice&assessmentId=650120434&practice-assessment-type=certification) and [official AB-730 prep video](https://www.youtube.com/live/T_Y3GTEb8pY). Use the assessment diagnostically; investigate every miss in first-party documentation.
-- **Structured subscription path:** [Pluralsight AB-730](https://www.pluralsight.com/paths/ab-730-ai-business-professional) now lists Vlad Catrinescu's 1h16 fundamentals course (August 22) and 1h45 prompt/conversation course (September 11), plus a practice exam. The path remains in production and its three-domain description does not establish complete October coverage.
+- **Structured subscription path:** [Pluralsight AB-730](https://www.pluralsight.com/paths/ab-730-ai-business-professional) now lists three courses totaling 4h26: 1h16 fundamentals (August 22), 1h45 prompts/conversations (September 11) and 1h25 business-content training (October 6), plus a practice exam. The path remains in production and its three-domain description does not establish complete October 20 coverage.
 - **Live guided preparation:** [O'Reilly AB-730 Crash Course](https://www.oreilly.com/live-events/microsoft-ai-business-professional-ab-730-crash-course/0642572353940/0642572353933/) by Renaldi Gondosubroto has a 180-minute teaching/exercise agenda plus breaks. It still describes three domains and custom-agent construction; verify October coverage, the actual event date and local start/end time before enrolling.
 - **Paid assessment:** [MeasureUp AB-730](https://www.measureup.com/microsoft-ab-730-ai-business-professional-practice-test.html), 110 questions released June 2026. Its generic overview text incorrectly mentions Azure AI workloads, while its detailed mapping follows the earlier three-domain AB-730 scope. Neither establishes coverage of the new October agent domain; verify revision coverage before purchase.
-- **Previously listed additional assessment:** [Udemy AB-730 practice by Scott Duffy and Jordi Koenderink](https://www.udemy.com/course/ab730-tests/), previously listed 100 questions and an August 2026 update mapped to July 22. Current retrieval was blocked; treat those as historical observations and recheck before buying.
+- **Additional assessment listing:** [Udemy AB-730 practice by Scott Duffy and Jordi Koenderink](https://www.udemy.com/course/ab730-tests/), public listing rechecked October 28 advertises 100 questions in four sets and an August 2026 update mapped to July 22. September automation was blocked; current browser-readable metadata does not establish October 20 coverage, question originality or paid-content quality. Recheck before buying.
 - **Partner-restricted learning:** [Partner Skilling Hub](https://www.skilling-hub.com/en-US); sign in to confirm current AB-730 delivery, exact start/end times, seats, and prerequisites.
 
 No exact Whizlabs AB-730 product was independently verified in the earlier September 1 catalog review; this deep review did not establish a new product listing. Avoid unusually large banks, “real questions,” pass guarantees, or content that claims to mirror live questions. A small set of original scenarios plus hands-on Copilot use is more useful than memorizing hundreds of unsupported answers.
@@ -1142,6 +1376,10 @@ No exact Whizlabs AB-730 product was independently verified in the earlier Septe
 Resource details from the [AB-731 guide](../guides/AB-731-ai-transformation-leader.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
 This is not a complete list and is not meant to be consumed in full. Choose one primary route, build the decision artifacts and labs, and add another resource only when it closes a measured gap.
+
+#### Focused pilot-investment worksheet
+
+Read [Business strategy](https://learn.microsoft.com/en-us/training/modules/create-business-value/2-business-strategy) (published **3 minutes**) alongside the [Transform your business with AI outline](https://learn.microsoft.com/en-us/training/paths/transform-your-business-with-microsoft-ai/). Compare two candidate processes on business impact, feasibility, time to value, measurability and risk. Select one pilot and record its baseline, two outcome measures, one quality/risk limit, an accountable owner and scale/hold/stop criteria. **About 45–75 minutes**, an editorial estimate for selected reading and an original one-page decision record, rather than the course's runtime. Use evidence you can collect; the unit's uncited industry statistic is not a validated benchmark or a forecast for your organization. No quiz, paid lesson or live pilot was performed in this review.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
@@ -1167,6 +1405,14 @@ The earlier O'Reilly, MeasureUp and Whizlabs gaps were not exhaustively rechecke
 
 Resource details from the [AB-210 guide](../guides/AB-210-accelerating-sales-pipelines-ai-dynamics-365.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
+#### October 28 learning route and evidence task
+
+The current [AB-210 course](https://learn.microsoft.com/en-us/training/courses/ab-210t00) still lists **three instructor-led days**. Its four paths retain 13 modules: 3 for configuration, 3 for leads, 4 for deals and 3 for extensions. Direct path bodies did not expose a fresh combined runtime, so keep 12 hours 3 minutes as historical metadata. A current training outline can still teach a retiring feature: the [deal-execution path](https://learn.microsoft.com/en-us/training/paths/win-deals-ai-sales/) continues to name Sales Close Agent. Use the blueprint for required learning and this guide’s dated lifecycle evidence for whether a new tenant implementation remains appropriate.
+
+**Original worksheet (about 30–45 minutes, editorial estimate):** Select three lesson actions. Record the objective, intended business outcome, record/identity boundary, product-lifecycle evidence, safe substitute/tabletop action and observable completion evidence. Put the retiring-agent action beside a current deployment action so their purposes remain explicit.
+
+**Answer checkpoint:** A lesson title is learning guidance, not evidence that the feature can still be provisioned. A valid worksheet can retain exam reasoning while marking a tenant action unavailable or tabletop-only.
+
 This is not a complete list and is not meant to be consumed in full. Choose one primary route, configure a synthetic lead-to-cash environment, and add resources only for measured gaps.
 
 | Resource | Access | Estimated time |
@@ -1182,13 +1428,17 @@ This is not a complete list and is not meant to be consumed in full. Choose one 
 | [Udemy AB-210 by Hamdy Khaled](https://www.udemy.com/course/ab-210-dynamics-365-sales-ai-consultant-2026/) | Paid; price varies | Previously listed 4 hours 54 minutes; page access-blocked September 28 |
 | [Partner Skilling Hub](https://www.skilling-hub.com/en-US) | Partner login required | Verify current session start/end time after sign-in |
 
-The four official paths previously listed **12 hours 3 minutes** in total; their currently fetched path pages expose 13 modules (3 + 3 + 4 + 3) without those durations, so treat that time as historical. Allow roughly **30–50 hours** with tenant configuration and labs; this is a planning estimate, not an executed-study measurement. The three-day course currently lists seven languages. Both Udemy pages were access-blocked, so current runtime, content quality and assessment originality were not reverified; retain them as candidates to evaluate before purchase. Microsoft says the Practice Assessment is not currently available for this beta exam. No exact current AB-210 path from Pluralsight, O'Reilly, MeasureUp or Whizlabs was independently verified in the September 28 search. The Partner Skilling Hub returned a login shell, not a verified current AB-210 session. Several marketplaces advertise hundreds or thousands of questions or “valid” material; those were deliberately excluded. Reject recalled live questions, pass guarantees and unsupported banks.
+The four official paths previously listed **12 hours 3 minutes** in total; their currently fetched path pages expose 13 modules (3 + 3 + 4 + 3) without those durations, so treat that time as historical. Allow roughly **30–50 hours** with tenant configuration and labs; this is a planning estimate, not an executed-study measurement. The three-day course currently lists seven languages. Both Udemy pages were access-blocked, so current runtime, content quality and assessment originality were not reverified; retain them as candidates to evaluate before purchase. The September 28 observation that the Practice Assessment was unavailable is historical: the October 28 exam-page listing advertises it through AI Skills Navigator with sign-in. The assessment itself was not opened or tested. No exact current AB-210 path from Pluralsight, O'Reilly, MeasureUp or Whizlabs was independently verified in the September 28 search. The Partner Skilling Hub returned a login shell, not a verified current AB-210 session. Several marketplaces advertise hundreds or thousands of questions or “valid” material; those were deliberately excluded. Reject recalled live questions, pass guarantees and unsupported banks.
 
 ### AB-250 — Transforming Contact Center Experiences with AI in Dynamics 365
 
 Resource details from the [AB-250 guide](../guides/AB-250-transforming-contact-center-experiences-ai-dynamics-365.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
 This is not a complete list and is not meant to be consumed in full. Choose one primary route, build representative end-to-end journeys, and add another resource only for a measured gap.
+
+#### Focused reading and evidence route
+
+Start the monitor/optimize path with [Enable supervisor controls for live conversations](https://learn.microsoft.com/en-us/training/modules/configure-supervisor-experience-contact-center/2-enable-supervisor-controls), a published five-minute unit. Allow about 45–60 more minutes for a persona/action matrix covering monitor, assign, transfer and force close. For each action, record the needed control, expected visibility and allowed/denied evidence; add a supervisor who can view dashboards but lacks intervention access and an assignment-role conflict. This editorial estimate covers reading and a four-action worksheet, not tenant configuration. Use synthetic conversation descriptions and current product guidance before testing any control. **VERIFY CURRENT:** supported channel/action combinations and role behavior. The complete textual unit was read; no live conversation was monitored, reassigned or closed.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
@@ -1202,7 +1452,7 @@ This is not a complete list and is not meant to be consumed in full. Choose one 
 | [LinkedIn Learning AB-250 Cert Prep](https://www.linkedin.com/learning/microsoft-dynamics-365-contact-center-ai-engineer-associate-ab-250-cert-prep/) | Subscription/trial | 4h 38m public runtime, July 27, 2026; Tutorials Dojo; paid lessons not viewed |
 | [Partner Skilling Hub](https://www.skilling-hub.com/en-US) | Partner login required | Verify current session start/end time after sign-in |
 
-The four official paths expose **16 modules (4 + 4 + 5 + 3)**. Their old **11h 40m** duration total is historical; the fetched current outlines do not expose those totals. Allow roughly **40–70 hours** with journey design and ten labs as an editorial planning estimate. The three-day course remains listed; a partner schedule requires sign-in and was not verified. The official credential page does not offer a Practice Assessment. No exact current AB-250 product from Pluralsight, O'Reilly, MeasureUp or Whizlabs was independently verified on September 28, 2026. These bounded catalog searches do not establish market-wide absence. The LinkedIn outline includes broad Azure/AI material, so map lessons to the actual objectives instead of treating the full runtime as exam-specific coverage. Reject recalled live content, “valid questions” and pass guarantees.
+The four official paths expose **16 modules (4 + 4 + 5 + 3)**. Their old **11h 40m** duration total is historical; the fetched current outlines do not expose those totals. Allow roughly **40–70 hours** with journey design and ten labs as an editorial planning estimate. The three-day course remains listed; a partner schedule requires sign-in and was not verified. The official [credential page](https://learn.microsoft.com/en-us/credentials/certifications/d365-contact-center-ai-engineer-associate/) now directs learners to a sign-in-required Practice Assessment on AI Skills Navigator. Allow about 1–2 hours for an initial attempt and explanation review as an editorial estimate; assessment content was not opened. No exact current AB-250 product from Pluralsight, O'Reilly, MeasureUp or Whizlabs was independently verified on September 28, 2026. These bounded catalog searches do not establish market-wide absence. The LinkedIn outline includes broad Azure/AI material, so map lessons to the actual objectives instead of treating the full runtime as exam-specific coverage. Reject recalled live content, “valid questions” and pass guarantees.
 
 #### Useful blogs and focused exercises
 
@@ -1216,6 +1466,10 @@ Both main articles were read; linked videos, integrations, tenant behavior and p
 Resource details from the [MB-230 guide](../guides/MB-230-microsoft-dynamics-365-customer-service-functional-consultant.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
 This is not a complete list and is not meant to be consumed in full. Choose one primary route, build complete case/SLA/routing/workspace journeys, and add another resource only for a measured gap.
+
+#### Focused reading and evidence route
+
+Use [Define SLA items](https://learn.microsoft.com/en-us/training/modules/service-level-agreements/define-service-level-agreement) as a small step beyond the two-module SLA/entitlements path. The unit publishes nine minutes; allow about 45–60 more minutes to design two support tiers with response and resolution KPIs. Record applicability, calendar, pause, success, warning/failure and expected KPI-instance state, then add an overlapping item and a changed applicability field as negative cases. Explain which protected action-flow branch receives your notification rather than editing the predefined branch structure. The added time is an editorial estimate for a four-item matrix and two failure traces. This is a paper design route; tenant execution needs Customer Service access and current product documentation. The complete unit was read, without assessment questions or tenant testing.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
@@ -1244,6 +1498,10 @@ Resource details from the [MB-310 guide](../guides/MB-310-microsoft-dynamics-365
 
 This is not a complete list and is not meant to be consumed in full. Choose one primary route, build several source-document-to-ledger journeys, and add another resource only for a measured gap.
 
+#### Focused reading and evidence route
+
+Select MicrosoftLearning’s [voucher breakdown lab](https://microsoftlearning.github.io/MB-310-Microsoft-Dynamics-365-Finance/Instructions/Labs/LP3%20Lab%20-%20Breakdown%20of%20voucher.html) for payables-to-ledger reasoning. Allow about 60–90 minutes for reading and an original worksheet that predicts taxable bases, tax by line, offset accounts, balanced totals and the evidence needed before and after posting; this editorial range includes one deliberately wrong tax-group mapping and its correction. The February 10, 2026 change record is visible, but the walkthrough assumes USMF demo records and older dates. Reconcile those prerequisites with your sandbox and current Finance documentation. Exclude its expired-certificate bypass workaround. The public textual procedure was read, not executed; screenshots, journal postings and tax compliance outcomes were not independently verified.
+
 | Resource | Access | Estimated time |
 |---|---|---:|
 | [Official MB-310 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-310) | Free | 1–2 hours to map objectives and the August change log |
@@ -1268,6 +1526,14 @@ The five paths list **37 distinct modules** (16 + 8 + 6 + 3 + 4). Their current 
 Resource details from the [MB-330 guide](../guides/MB-330-microsoft-dynamics-365-supply-chain-management-functional-consultant.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
 This is not a complete list and is not meant to be consumed in full. Choose one primary route, build complete product-to-plan and order-to-warehouse journeys, and add another resource only for a measured gap.
+
+#### October 28 learning route and evidence task
+
+Follow the [five-day MB-330 course](https://learn.microsoft.com/en-us/training/courses/mb-330t00) with one purchase-to-receipt case before branching into the existing asset, landed-cost, transportation and planning paths. The eight selected path outlines contain **35 module placements**, including repeated Asset Management foundation content; that is not 35 unique required exam modules. Their current public bodies do not expose a fresh combined runtime, so keep 50h07 as dated historical planning metadata. The existing [lab repository](https://github.com/MicrosoftLearning/MB-330-Microsoft-Dynamics-365-Supply-Chain-Management) remains a public course companion; it does not include a hosted Dynamics environment.
+
+**Original worksheet (about 40–60 minutes, editorial estimate):** Trace a synthetic late purchase-order line through expected receipt, quality decision, warehouse work and downstream demand. At each handoff record document ID, unit/dimension context, owner, observed state, exception and next confirming record. Model a lost handheld response without replaying a transaction.
+
+**Answer checkpoint:** A screen timeout is an unknown result until the authoritative transaction/work record is checked. A plan or a calendar entry alone does not prove that physical work or a new supply commitment was created. This is a tabletop unless an authorized nonproduction environment is available.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
@@ -1302,6 +1568,10 @@ Resource details from the [MB-500 guide](../guides/MB-500-microsoft-dynamics-365
 
 This is not a complete list and is not meant to be consumed in full. Choose one primary route, build and deploy a secure extension end to end, and add another resource only for a measured gap.
 
+#### Focused reading and evidence route
+
+Read MicrosoftLearning’s [Trace Parser lab](https://microsoftlearning.github.io/MB-500-Microsoft-Dynamics-365-Finance-and-Operations-Apps-Developer/Instructions/Labs/Lab%20-%201%20-%20Work%20with%20trace%20and%20import%20it%20to%20Trace%20Parser.html) to connect a slow business action to call-tree, X++ and SQL evidence. Allow about 60–90 minutes for a capture-plan worksheet: business action, user/session, start/stop boundaries, expensive call versus inclusive duration, candidate query and a repeatable before/after comparison. That editorial estimate covers reading, one diagnostic hypothesis and its falsification; VM/tool setup and execution add time. The February 9, 2026 change record still references a development VM and earlier platform setup. **VERIFY CURRENT:** validate your development topology and tracing prerequisites; exclude certificate bypass and do not apply local manifest edits as generic UDE steps. Use synthetic data if capturing SQL parameters. The complete textual lab was read, with no trace collection or performance claim.
+
 | Resource | Access | Estimated time |
 |---|---|---:|
 | [Official MB-500 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-500) | Free | 1–2 hours to map seven domains/change log |
@@ -1328,6 +1598,10 @@ Resource details from the [MB-800 guide](../guides/MB-800-microsoft-dynamics-365
 
 This is not a complete list and is not meant to be consumed in full. Choose one primary route, build one company from setup through close, and add a second resource only for a measured gap.
 
+#### Focused reading and evidence route
+
+Turn MicrosoftLearning’s [purchase approval workflow lab](https://microsoftlearning.github.io/MB-800-Business-Central-Functional-Consultant/Instructions/Labs/Lab05_Set_up_and_use_a_purchase_approval_workflow.html) into an approval-chain worksheet. Allow about 60–90 minutes to map requester, approver, limit, substitute, event, condition, response, notification and final document state, then predict approve, reject, above-limit and absent-approver outcomes. The range is an editorial estimate for reading and four test traces; tenant configuration takes additional time. **Source discrepancy:** its setup says to leave Approver ID blank, but its check asks each user to have an approver. Resolve the intended chain using current Business Central documentation and your configuration; the sample is not a universal default. The full textual exercise was read; no approval, notification or purchase document was created.
+
 | Resource | Access | Estimated time |
 |---|---|---:|
 | [Official MB-800 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-800) | Free | 1–2 hours to map four domains and June change log |
@@ -1353,6 +1627,10 @@ Resource details from the [MB-820 guide](../guides/MB-820-microsoft-dynamics-365
 
 This is not a complete list and is not meant to be consumed in full. Choose one primary route, build and upgrade one secure extension end to end, and add another resource only for a measured gap.
 
+#### Focused reading and evidence route
+
+Use MicrosoftLearning’s [installation/upgrade lab](https://microsoftlearning.github.io/MB-820-Business-Central-Developer-Certification/Instructions/Labs/LAB_02_Implement_installation_and_upgrade_code_extension.html) as a code-review exercise alongside [Upgrading Extensions](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-upgrading-extensions). **Source defect observed October 28, 2026:** the shown upgrade code declares `UpdateSalespeople()` twice and includes a same-name call; its final expected precondition error refers to a trigger absent from the displayed code. Do not treat the snippet as a validated solution. Allow about 60–90 minutes for an independent design separating tag check, transformation and tag recording, with expected old/new data, fresh-install/new-company behavior and retry evidence. This editorial estimate covers reading and design; compiler and sandbox tests add time. Both texts were inspected within the recorded scope; no AL compilation or upgrade was performed.
+
 | Resource | Access | Estimated time |
 |---|---|---:|
 | [Official MB-820 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-820) | Free | 1–2 hours to map six domains and freshness gaps |
@@ -1365,7 +1643,7 @@ This is not a complete list and is not meant to be consumed in full. Choose one 
 | [Tailor roles and design the UI](https://learn.microsoft.com/en-us/training/paths/tailor-roles-design-ui/) | Free | 5 modules; runtime not shown; 8–15 hours with onboarding/accessibility |
 | [Essential development standards](https://learn.microsoft.com/en-us/training/paths/essential-development-standards/) | Free | 4 modules; runtime not shown; 10–20 hours implementing standard patterns |
 | [MB-820T00-A: Develop solutions with Dynamics 365 Business Central](https://learn.microsoft.com/en-us/training/courses/mb-820t00) | Paid/provider-dependent | 5 days; English |
-| [MicrosoftLearning MB-820 labs](https://github.com/MicrosoftLearning/MB-820-Business-Central-Developer-Certification) | Free; MIT | 12–25 hours; repository title/README retain sample-course artifacts, so use hosted lab index and verify current instructions |
+| [MicrosoftLearning MB-820 labs](https://github.com/MicrosoftLearning/MB-820-Business-Central-Developer-Certification) | Free; MIT | 12–25 hours editorial estimate for selected work; Lab 02 has a defective displayed upgrade sample (see focused route); review and rewrite before execution |
 | [Free MB-820 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-developer-associate/practice/assessment?assessment-type=practice&assessmentId=66154329&practice-assessment-type=certification) | Free | 45–90 minutes plus remediation |
 | [AL developer documentation](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/) | Free | 25–60 hours selected current reference/troubleshooting |
 | [O’Reilly: MB-820 Certification Companion](https://www.oreilly.com/library/view/dynamics-365-business/9798868809262/) | Subscription/trial | 317-page Apress book by Dr. Gomathi S, November 2024; 3h48 platform reading estimate; gap-check current runtime |
@@ -1378,12 +1656,21 @@ The eight official paths expose **54 module placements** (7/8/11/10/3/6/5/4). Cu
 
 Resource details from the [AZ-800 guide](../guides/AZ-800-administering-windows-server-hybrid-core-infrastructure.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is **not a complete list**, and it is not a recommendation to consume everything. Pick the resources and formats that fit you. Because AZ-800 retires September 30, 2026, compare the time remaining with the broader value of studying AZ-802. Use the official January 21, 2026 objectives as the AZ-800 coverage checklist. Estimated times include reasonable note-taking or practice where stated and should be rechecked before purchase. Older material can teach durable Windows Server concepts, but reconcile product names, versions and deprecated capabilities with current documentation.
+#### October 28 learning-resource check
+
+Additional options and access updates; choose relevant resources rather than consuming every route. New course availability, class delivery and licensing are **VERIFY CURRENT**. Published days describe instructor-led scope, not measured self-study time.
+
+| Resource | Access | Estimated time |
+|---|---|---|
+| [AZ-802T00 successor Windows Server course](https://learn.microsoft.com/en-us/training/courses/az-802t00) | Public outline; class and labs may be paid | **5 published days**; current preparation route following AZ-800/AZ-801 courseware retirement; compare AZ-802 objectives |
+
+
+This is **not a complete list**, and it is not a recommendation to consume everything. Pick the resources and formats that fit you. AZ-800 is retired; use its material for technical foundations and choose AZ-802 for a current exam path. Use the official January 21, 2026 objectives as the AZ-800 coverage checklist. Estimated times include reasonable note-taking or practice where stated and should be rechecked before purchase. Older material can teach durable Windows Server concepts, but reconcile product names, versions and deprecated capabilities with current documentation.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
 | [Official AZ-800 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-800) | Free; authoritative AZ-800 scope and retirement notice | 45–75 min initially; 10–15 min before exam |
-| [AZ-802 replacement blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802) | Free; compare before committing to the retiring two-exam route | 60–90 min for a scope diff |
+| [AZ-802 replacement blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802) | Free; compare for the current single-exam path | 60–90 min for a scope diff |
 | [Microsoft Learn AZ-800 exam/training collection](https://learn.microsoft.com/en-us/credentials/certifications/exams/az-800/) | Free self-paced paths; official instructor-led AZ-800T00 duration is 4 days | Plan 35–55 hr self-paced with labs, or 4 instructor-led days plus review |
 | [Microsoft free AZ-800 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/exams/az-800/practice/assessment?assessment-type=practice&assessmentId=67) | Free; use explanations for remediation, not question memorization | 45–90 min per attempt; plan 3–5 hr with remediation |
 | [Official MicrosoftLearning AZ-800 lab instructions](https://microsoftlearning.github.io/AZ-800-Administering-Windows-Server-Hybrid-Core-Infrastructure/) | Free public hands-on course labs; Azure/VM costs may apply | Plan 15–25 hr including setup, evidence and cleanup |
@@ -1399,7 +1686,7 @@ This is **not a complete list**, and it is not a recommendation to consume every
 
 ##### Experienced Windows Server administrator route
 
-1. Decide AZ-800 versus AZ-802 from the retirement date and credential page.
+1. Use AZ-802 for a current certification route; use this retired AZ-800 guide selectively for technical foundations.
 2. Diff the January 2026 blueprint against your production experience; do not assume on-premises depth covers Azure identity, Arc, Files or Private Resolver.
 3. Complete Labs 2, 4, 6 and 8, then inject one identity, DNS and sync failure.
 4. Use practice assessment results to select current Microsoft documentation, not to memorize answer wording.
@@ -1429,6 +1716,15 @@ This guide is an independent synthesis of public sources. It does not reproduce 
 ### AZ-801 — Configuring Windows Server Hybrid Advanced Services
 
 Resource details from the [AZ-801 guide](../guides/AZ-801-configuring-windows-server-hybrid-advanced-services.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+#### October 28 learning-resource check
+
+Additional options and access updates; choose relevant resources rather than consuming every route. New course availability, class delivery and licensing are **VERIFY CURRENT**. Published days describe instructor-led scope, not measured self-study time.
+
+| Resource | Access | Estimated time |
+|---|---|---|
+| [AZ-802T00 successor Windows Server course](https://learn.microsoft.com/en-us/training/courses/az-802t00) | Public outline; class and labs may be paid | **5 published days**; current preparation route following AZ-800/AZ-801 courseware retirement; compare AZ-802 objectives |
+
 
 This is **not a complete list**, and it is not meant to be consumed end to end. Pick the combination that fits your experience, access, learning style, available time, and weak objectives. A productive plan is often one primary course or book, the official blueprint/documentation, hands-on labs, and one legitimate practice assessment used diagnostically.
 
@@ -1487,7 +1783,7 @@ Practice products should be used to expose weak domains and reasoning errors, no
 3. Complete labs 1–3, 6, and 8: 25–40 hours.
 4. Use practice assessments to drive another 8–15 hours of documentation and lab remediation.
 
-##### Final review before the retirement date
+##### Historical final-review checklist
 
 1. Recheck the official study guide, exam page, retirement page, and AZ-802 replacement route.
 2. Rebuild the five-domain objective map from memory and mark weak subobjectives.
@@ -1495,13 +1791,17 @@ Practice products should be used to expose weak domains and reasoning errors, no
 4. Rerun two failure/recovery labs and explain the evidence aloud.
 5. Use one legitimate practice assessment, investigate every uncertain answer, and stop memorizing question wording.
 
-Schedule conservatively: Microsoft gives an exact **September 30, 2026, 5:00 PM Central Standard Time** retirement. Availability of test centers, online slots, rescheduling, accommodations, results, and prerequisite exam completion can add lead time. If that path is no longer realistic, use [AZ-802](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802) rather than rushing an expiring exam.
+AZ-801 retired on **September 30, 2026, at 5:00 PM Central Standard Time**. This checklist remains for historical study and technical remediation; use [AZ-802](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802) for the current certification route and rebuild the objective map for that exam.
 
 ### AZ-802 — Administering Windows Server
 
 Resource details from the [AZ-802 guide](../guides/AZ-802-administering-windows-server.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
 This is **not a complete list**, and it is not meant to be consumed end to end. Pick the resources and formats that work for your experience, access, learning style, and weakest objectives. A strong plan is usually the official blueprint and documentation, one primary structured resource, hands-on practice, and a legitimate assessment used diagnostically—not every course from every vendor.
+
+#### Focused source-to-evidence route
+
+**Monitoring evidence — public instructions; about 60–90 minutes for reading and a tabletop.** Read the [monitoring and troubleshooting lab](https://microsoftlearning.github.io/AZ-802-Windows-Server-Administrator-Associate/Instructions/Labs/LAB_08_Monitoring_and_troubleshooting_Windows_Server.html), which publishes 40 minutes for an already prepared environment. Draft a baseline/load/recovery table naming counters, collection intervals, expected evidence and an event-forwarding check. The longer range allows reading and original analysis; it excludes environment creation. **VERIFY CURRENT:** the [Lab 0 setup page](https://microsoftlearning.github.io/AZ-802-Windows-Server-Administrator-Associate/Instructions/Labs/LAB_00_Set_up_the_AZ-802_lab_environment.html) currently warns that it is under development and must not be used to provision. Use instructions as reading, or execute only in a separately supplied, verified disposable course environment. Record actual observations separately; no scripts or servers were run in this review. This lab does not resolve the SSH Direct support gap.
 
 Provider catalogs and coverage can lag the current AZ-802 blueprint. Estimated times describe content consumption or a reasonable practice session, not total preparation; add note-taking, labs, documentation lookup, spaced review, and remediation. Recheck duration, access, price, publication/update date, and blueprint alignment before purchase.
 
@@ -1512,20 +1812,20 @@ Provider catalogs and coverage can lag the current AZ-802 blueprint. Estimated t
 | [Official AZ-802 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802) | Free; authoritative exam scope | 45–75 min to map; 10–15 min before each study cycle | Build the seven-domain checklist and detect objective changes |
 | [Windows Server Administrator Associate page](https://learn.microsoft.com/en-us/credentials/certifications/windows-server-administrator-associate/) | Free; exam delivery, training/practice, and credential status | 15–30 min; recheck before scheduling | Confirm live exam rules and replacement path |
 | [Microsoft AZ-802T00 course](https://learn.microsoft.com/en-us/training/courses/az-802t00) | Course page public; instructor-led access/pricing varies | **5 instructor-led days** plus review/labs | Microsoft's current structured course outline across all seven domains |
-| [MicrosoftLearning AZ-802 labs](https://microsoftlearning.github.io/AZ-802-Windows-Server-Administrator-Associate/) | Free public instructions; infrastructure may cost | Estimate 18–30 hr including setup, evidence, troubleshooting, and cleanup | Guided implementation aligned to the new course |
+| [MicrosoftLearning AZ-802 labs](https://microsoftlearning.github.io/AZ-802-Windows-Server-Administrator-Associate/) | Free public instructions; infrastructure may cost | About 18–30 hr for selected exercises, evidence and troubleshooting in an already supplied environment; editorial budget | Public exercises; Lab 0 is under development and says not to provision with it yet; see the focused route above |
 | [MicrosoftLearning AZ-802 repository](https://github.com/MicrosoftLearning/AZ-802-Windows-Server-Administrator-Associate) | Free; repository states MIT license | 30–60 min to inspect releases/issues plus lab time above | Source, revision history, setup files, and issue context for official labs |
-| [Microsoft practice-assessment catalog](https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications) | Free; **AZ-802 not available at verification time** | Recheck periodically; later allow 1–2 hr per attempt plus remediation | Use once released to expose weak domains, not memorize wording |
+| [Microsoft practice-assessment catalog](https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications) | Free public catalog; current study guide links sign-in-required AI Skills Navigator while credential page says unavailable | Verify the exact access path; allow about 1–2 hr per diagnostic attempt plus remediation | Current access is disputed between official pages; no assessment content or launch inspected |
 | [Udemy AZ-802 & AZ-800 hands-on course](https://www.udemy.com/course/az-800-course-administering-windows-server-hybrid-core-inf/) | Paid; John Christopher; page showed August 2026 update, 25h 38m, 193 lectures | 25h 38m video; plan 35–50 hr with labs and notes | Current commercial course explicitly retitled for AZ-802/AZ-800; map every section to the current blueprint |
 | [Udemy AZ-802 practice tests](https://www.udemy.com/course/az802-tests/) | Paid; Scott Duffy; page showed August 2026 update and four 25-question tests | About 2–4 hr for attempts; 5–10 hr with documentation remediation | Early third-party diagnostic practice; verify explanations against official docs |
 
 #### Selective legacy resources
 
-AZ-800 and AZ-801 retire on September 30, 2026. Their material can still teach durable objectives that moved into AZ-802, but neither old path matches the consolidated blueprint. Use the AZ-802 objective map as a filter: omit old-only migration, clustering/DR, containers, hybrid identity synchronization, and other material unless it supports your wider job learning; add new AZ-802-specific coverage such as SSH Direct, GPU partitioning, current Windows Server 2025 security/storage, and its exact troubleshooting scope.
+AZ-800 and AZ-801 retired on September 30, 2026. Their material can still teach durable objectives that moved into AZ-802, but neither old path matches the consolidated blueprint. Use the AZ-802 objective map as a filter: omit old-only migration, clustering/DR, containers, hybrid identity synchronization, and other material unless it supports your wider job learning; add new AZ-802-specific coverage such as SSH Direct, GPU partitioning, current Windows Server 2025 security/storage, and its exact troubleshooting scope.
 
 | Resource | Access | Estimated time | Reuse boundary |
 |---|---|---:|---|
-| [Microsoft AZ-800 training/course](https://learn.microsoft.com/en-us/training/courses/az-800t00) | Self-directed modules free; instructor-led access varies | 4 instructor-led days; selectively plan 15–30 hr | Reuse AD DS, Group Policy, hybrid server management, Hyper-V/Azure VM, DNS/DHCP, and file-service foundations |
-| [Microsoft AZ-801 training/course](https://learn.microsoft.com/en-us/training/courses/az-801t00) | Self-directed modules free; instructor-led access varies | 4 instructor-led days; selectively plan 8–18 hr | Reuse host/AD security and monitoring/troubleshooting; much HA/DR/migration scope is outside AZ-802 |
+| [Historical AZ-800 course URL](https://learn.microsoft.com/en-us/training/courses/az-800t00) | October 28 check redirects to the general training browser; the specific course outline is unavailable at this URL | Earlier listing: 4 days; not a current verified runtime | Use the current documentation above for AD DS, Group Policy, hybrid server management, VM, network and file-service foundations; this redirect does not establish an available course or its coverage |
+| [Historical AZ-801 course URL](https://learn.microsoft.com/en-us/training/courses/az-801t00) | October 28 check redirects to the general training browser; the specific course outline is unavailable at this URL | Earlier listing: 4 days; not a current verified runtime | Use the current documentation above for security, monitoring and troubleshooting; this redirect does not establish an available course or its coverage |
 | [Pluralsight AZ-800 path](https://www.pluralsight.com/paths/administering-windows-server-hybrid-core-infrastructure-az-800) | Paid; displayed six courses, two labs, practice exam | **17 hr** displayed; plan 22–35 hr with labs/current-doc checks | Broad overlap, but most original videos are older; select by AZ-802 objective |
 | [Pluralsight AZ-801 path](https://www.pluralsight.com/paths/administering-windows-server-hybrid-advanced-services-az-801) | Paid; displayed six courses, one lab, practice exam | **18 hr** displayed; likely 5–10 hr relevant selection | Select security and monitoring only; do not treat its old practice exam as AZ-802 validation |
 | [O'Reilly Exam Ref AZ-800](https://www.oreilly.com/library/view/exam-ref-az-800/9780137729333/cover.xhtml) | Paid subscription; Orin Thomas, 2022 | O'Reilly displayed about 9h 35m; selectively 6–12 hr | Durable identity, management, VM, network, and storage foundation; update terminology/features |
@@ -1588,6 +1888,14 @@ This guide is an independent synthesis of public sources. It does not reproduce 
 
 Resource details from the [DP-300 guide](../guides/DP-300-administering-microsoft-azure-sql-solutions.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
+#### October 28 learning route and evidence task
+
+The current [DP-300 course](https://learn.microsoft.com/en-us/training/courses/dp-300t00) is titled **Implement scalable database solutions using Azure SQL** and still lists four instructor-led days. The [Pluralsight path](https://www.pluralsight.com/paths/microsoft-certified-azure-database-administrator-associate) lists five courses totaling 9 hours 11 minutes plus a 30-minute lab (header rounded to 10 hours); its latest displayed course is September 14, 2026. No dedicated planning/deployment course title is visible, so use the October 27 blueprint and targeted official material to check that gap. The compaction blog now redirects to a GA headline, but its body was unavailable; current product documentation governs the feature status.
+
+**Original course-gap worksheet (about 30–45 minutes, editorial estimate):** Map one planning decision, one security denial, one measured performance regression and one recovery proof to the chosen route. For each, record an artifact you can produce without the lesson instructions and a current-source check for older tooling or maintenance advice.
+
+**Answer checkpoint:** Course runtime measures viewing scope, not demonstrated administration. A reachability result or changed announcement title is not a tested maintenance or recovery result.
+
 This is **not a complete list**, and it is not meant to be consumed end to end. Pick the resources and formats that work for you. A practical plan is the official blueprint/documentation, one primary structured course or book, hands-on labs, and one legitimate practice assessment used to find weak domains. Avoid any provider selling recalled live questions, “dumps,” VCE files, or guarantees based on leaked content.
 
 Estimated times describe content consumption or a reasonable assessment session, not total preparation. Add lab time, notes, current-document checks, spaced review and remediation. Provider access, catalog, duration, price and April 2026 alignment can change; verify them before purchase. Older SQL content can teach durable engine concepts, but reconcile Azure Data Studio retirement, current migration paths, database watcher, Fabric SQL, service tiers, security and HA/DR with current official documentation.
@@ -1596,7 +1904,7 @@ Estimated times describe content consumption or a reasonable assessment session,
 
 | Resource | Access | Estimated time | Best use |
 |---|---|---:|---|
-| [Official DP-300 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300) | Free; April baseline and observed October 27 revision | 45–75 min to map; 10–15 min weekly | Coverage checklist, weights, changes and official links |
+| [Official DP-300 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300) | Free; current October 27 outline, earlier April bytes archived | 45–75 min to map; 10–15 min weekly | Coverage checklist, weights, changes and official links |
 | [Azure Database Administrator Associate page](https://learn.microsoft.com/en-us/credentials/certifications/azure-database-administrator-associate/) | Free | 20–30 min; recheck before scheduling | Current status, 100-minute exam, practice and renewal links |
 | [DP-300T00 course and self-directed modules](https://learn.microsoft.com/en-us/training/courses/dp-300t00) | Modules free; instructor-led access varies | **4 instructor-led days**; plan 35–55 hr self-paced with labs | Structured official path across all five domains |
 | [Microsoft free DP-300 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/exams/dp-300/practice/assessment?assessment-type=practice&assessmentId=58) | Free; sign-in may be required | 45–90 min per attempt; 4–8 hr with remediation | Baseline, then diagnose weak objectives from explanations |
@@ -1612,7 +1920,7 @@ Estimated times describe content consumption or a reasonable assessment session,
 | [O'Reilly Administering Microsoft Azure SQL video](https://www.oreilly.com/videos/administering-microsoft-azure/0636920934721/) | Paid subscription; prior listing: Mikey Bronowski, September 2024; blocked on recheck | **1h 44m** plus 2–4 hr practice/docs | Compact overview, not sufficient alone; older tooling/monitoring needs reconciliation |
 | [O'Reilly DP-300 certification-prep catalog](https://www.oreilly.com/products/certification-prep.html) | Paid; catalog lists DP-300 book, guide, practice and on-demand formats | Verify selected item; plan 2–4 hr per practice attempt plus review | Use the current item page to confirm version and blueprint alignment |
 | [Udemy DP-300 course by Phillip Burton](https://www.udemy.com/course/dp-300-administering-relational-databases-azure-dba/) | Paid; historical listing claimed April 2026 alignment and 173 lectures; blocked on recheck | **17h 40m** video; plan 25–40 hr with labs | Historical runtime/scope only; current content and availability unverified |
-| [Whizlabs DP-300](https://www.whizlabs.com/microsoft-azure-certification-dp-300/) | Paid; packaging can include course/practice/labs | Verify current displayed duration/question/lab count; plan 10–25 hr selectively | Map coverage to April 2026 blueprint and use practice diagnostically |
+| [Whizlabs DP-300](https://www.whizlabs.com/microsoft-azure-certification-dp-300/) | Paid; packaging can include course/practice/labs | Verify current displayed duration/question/lab count; plan 10–25 hr selectively | Map coverage to the October 27, 2026 blueprint and use practice diagnostically |
 | [MeasureUp DP-300 practice test](https://www.measureup.com/microsoft-practice-test-dp-300-administering-relational-databases-on-microsoft-azure.html) | Paid | Estimate 4–8 hr across baseline, explanation review and retest | Public listing: 160 questions (34+34+38+23+31), last update December 2022. Current objective alignment unverified; use diagnostically alongside current docs |
 
 #### Supplemental experts and channels
@@ -1675,13 +1983,21 @@ This guide is an independent synthesis of public sources. It does not reproduce 
 
 Resource details from the [DP-420 guide](../guides/DP-420-designing-and-implementing-cloud-native-applications-using-microsoft-azure-cosmos-db.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
+#### October 28 learning route and evidence task
+
+The [official DP-420 course](https://learn.microsoft.com/en-us/training/courses/dp-420t00) is now **Build AI applications with Azure Cosmos DB**, still four instructor-led days. The [Pluralsight path](https://www.pluralsight.com/paths/designing-and-implementing-cloud-native-applications-using-microsoft-azure-cosmos-db-dp-420) still advertises the older five-domain structure and 9 hours, with its latest displayed update in January 2026. Use it selectively for database foundations and map AI retrieval, memory and authorization gaps against the October 6 blueprint. The Agent Kit article’s improved constructor is now balanced; keep its load-distribution caveat rather than repeating an unsupported syntax defect.
+
+**Original retrieval-resource worksheet (about 45–60 minutes, editorial estimate):** For a two-tenant corpus, record partition-routing choice, vector-shard choice, authenticated scope, relevance target and RU/latency measurement. Add one skewed-tenant counterexample to a proposed year-based key. Separate an article’s measured example from the result your own workload would need to demonstrate.
+
+**Answer checkpoint:** Partition routing and vector-index sharding solve different parts of the request path; neither replaces application authorization. A benchmark percentage is not a guaranteed improvement.
+
 This is **not a complete list**, and it is not a recommendation to consume everything. Pick the formats and gaps that work for you: one current primary path, hands-on labs, targeted documentation, and one ethical readiness check are usually more useful than passively completing every course. Times are page-published durations where available; otherwise they are clearly labeled estimates. Catalogs, durations, prices, access, and blueprint alignment change—verify them before purchase. Practice products should teach and explain; do not use brain dumps or material claiming real exam questions.
 
 #### Start with Microsoft
 
 | Resource | Access | Estimated time | Best use |
 |---|---|---:|---|
-| [Official DP-420 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-420) | Public | 45–75 min for blueprint mapping | Live page now displays October 6 scope; compare your exam date with this guide's retained July baseline |
+| [Official DP-420 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-420) | Public | 45–75 min for blueprint mapping | Current October 6 scope; July organization is historical foundation |
 | [DP-420 Microsoft Learn course page](https://learn.microsoft.com/en-us/training/courses/dp-420t00) | Public self-study; paid instructor option | 4 instructor-led days; roughly 25–40 hours self-study plus labs (estimate) | Primary structured path across the published domains |
 | [Azure Cosmos DB documentation](https://learn.microsoft.com/en-us/azure/cosmos-db/) | Public | 15–30 hours selectively (estimate) | Current product truth, limits, SDK guidance and deep remediation by objective |
 | Microsoft free Practice Assessment, linked on the [credential page](https://learn.microsoft.com/en-us/credentials/certifications/azure-cosmos-db-developer-specialty/) | Public; sign-in may be required | 45–90 min per attempt plus review (estimate) | Diagnostic baseline and gap review; explanations are more valuable than memorizing answers |
@@ -1692,10 +2008,10 @@ This is **not a complete list**, and it is not a recommendation to consume every
 
 | Resource | Access | Estimated time | Best use and freshness note |
 |---|---|---:|---|
-| [Pluralsight DP-420 path](https://www.pluralsight.com/paths/designing-and-implementing-cloud-native-applications-using-microsoft-azure-cosmos-db-dp-420) | Paid/trial depending plan | 9 hours published, plus labs/review | Five-domain path with a practice exam; page showed course updates through January 2026. Gap-check the July Fabric/time-travel and blueprint additions. |
-| [O'Reilly Azure Cosmos DB Developer Specialty course](https://www.oreilly.com/videos/azure-cosmos-db/0636920986164/) | Paid subscription/trial | 4h34m published, plus practice | Mohit Batra, January 2025; broad exam course with quizzes. Reconcile legacy Synapse Link and July 2026 changes. |
+| [Pluralsight DP-420 path](https://www.pluralsight.com/paths/designing-and-implementing-cloud-native-applications-using-microsoft-azure-cosmos-db-dp-420) | Paid/trial depending plan | 9 hours published, plus labs/review | Five-domain path with a practice exam; page showed course updates through January 2026. Gap-check all October AI retrieval, memory, security and analytics objectives. |
+| [O'Reilly Azure Cosmos DB Developer Specialty course](https://www.oreilly.com/videos/azure-cosmos-db/0636920986164/) | Paid subscription/trial | 4h34m published, plus practice | Mohit Batra, January 2025; broad exam course with quizzes. Reconcile legacy Synapse Link and the current October AI-focused outline. |
 | [O'Reilly DP-420 crash course](https://www.oreilly.com/live-events/exam-dp-420-microsoft-azure-cosmos-db-developer-crash-course/0636920079751/) | Paid; schedule/access varies | Four hours published when scheduled | Reza Salehi live overview; verify next event dates and treat older “Core/SQL API” wording as API for NoSQL terminology. |
-| [Udemy DP-420 hands-on course](https://www.udemy.com/course/azure-cosmosdb-database/) | Paid; price varies | 6h47m / 64 lectures published, plus labs | Page showed July 2026 update and many demos, but also an older “October 2023 topics” claim; gap-check every July 2026 addition. |
+| [Udemy DP-420 hands-on course](https://www.udemy.com/course/azure-cosmosdb-database/) | Paid; price varies | 6h47m / 64 lectures published, plus labs | Page showed July 2026 update and many demos, but also an older “October 2023 topics” claim; gap-check every current October objective. |
 | [Microsoft Azure Cosmos DB YouTube channel](https://www.youtube.com/@AzureCosmosDB) | Public | 3–10 hours selectively (estimate) | Product announcements, engineering explanations and demos; select videos by weak objective and date. |
 | [Microsoft Reactor YouTube channel search for Cosmos DB](https://www.youtube.com/@MicrosoftReactor/search?query=Cosmos%20DB) | Public | 2–8 hours selectively (estimate) | Workshops and developer sessions; verify product version and avoid treating any one playlist as full exam alignment. |
 | [John Savill Azure Cosmos DB channel search](https://www.youtube.com/@NTFAQGuy/search?query=Cosmos%20DB) | Public | 1–4 hours selectively (estimate) | Supplemental Azure architecture explanations; not a complete DP-420 course. Check video descriptions for linked whiteboards/resources. |
@@ -1704,8 +2020,8 @@ This is **not a complete list**, and it is not a recommendation to consume every
 
 | Resource | Access | Estimated time | Best use and caution |
 |---|---|---:|---|
-| [Microsoft Press DP-420 video by Tim Warner](https://www.microsoftpressstore.com/store/exam-dp-420-designing-and-implementing-cloud-native-9780137951222) | Paid | 11+ hours published | Hands-on 2023 course. Strong foundation, but reconcile all July 2026 objectives, Fabric mirroring, hierarchical keys, and current product notices. |
-| [Whizlabs DP-420 training and practice](https://www.whizlabs.com/microsoft-azure-certification-dp-420/) | Paid; offering varies | Approximately 8–15 hours for course/labs/practice (estimate; page did not expose reliable counts) | Additional labs and readiness checks; verify counts, update date and July 2026 alignment before purchase. |
+| [Microsoft Press DP-420 video by Tim Warner](https://www.microsoftpressstore.com/store/exam-dp-420-designing-and-implementing-cloud-native-9780137951222) | Paid | 11+ hours published | Hands-on 2023 course. Strong foundation, but reconcile all current October 6 objectives, Fabric mirroring, hierarchical keys, and current product notices. |
+| [Whizlabs DP-420 training and practice](https://www.whizlabs.com/microsoft-azure-certification-dp-420/) | Paid; offering varies | Approximately 8–15 hours for course/labs/practice (estimate; page did not expose reliable counts) | Additional labs and readiness checks; verify counts, update date and October 2026 alignment before purchase. |
 | [MeasureUp DP-420 practice test](https://www.measureup.com/microsoft-practice-test-dp-420-designing-and-implementing-cloud-native-applications-using-microsoft-azure-cosmos-db.html) | Paid; demo available | 2–4 hours per full attempt and explanation review (estimate) | Page listed 120 questions but a June 2022 release and older objective terminology. Use for reasoning practice only after verifying current alignment. |
 | [Udemy DP-420 topic catalog](https://www.udemy.com/topic/microsoft-dp-420/) | Paid catalog; price varies | Varies | Compare recent course/practice options, instructor updates, previews and explanations. Reject any product claiming leaked/real exam content. |
 | [Azure Cosmos DB design-pattern samples](https://github.com/Azure-Samples/cosmos-db-design-patterns) | Public | 6–15 hours selectively (estimate) | Implement and benchmark patterns such as hierarchical partitioning; turn examples into measured labs rather than copying blindly. |
@@ -1720,11 +2036,11 @@ This is **not a complete list**, and it is not a recommendation to consume every
 6. Use one paid practice product only if explanations and current-objective alignment add value.
 7. Recheck the official study guide, credential page, lifecycle, support notices, limits and pricing immediately before the exam.
 
-For October candidates, add Labs 9–10 and targeted C#/Python practice. Allow an estimated 12–20 additional hours for the new material and evidence collection, with more time if embeddings, Fabric or authorization testing are new to you. Older course durations above are historical catalog observations; three paid pages were access-blocked during this review and other catalog access does not prove lesson access or October alignment.
+For the current October outline, include Labs 9–10 and targeted C#/Python practice. Allow an estimated 12–20 additional hours for the new material and evidence collection, with more time if embeddings, Fabric or authorization testing are new to you. Older course durations above are historical catalog observations; three paid pages were access-blocked during this review and other catalog access does not prove lesson access or October alignment.
 
 #### Focused blog reading
 
-- [Introducing the Azure Cosmos DB Agent Kit](https://devblogs.microsoft.com/cosmosdb/azure-cosmos-db-agent-kit-ai-coding-assistants/), **Sajeetharan Sinnathurai, Microsoft, January 22, 2026**. Estimate 20–30 minutes with the current repository. Read for a review workflow, then identify which suggestions need measurements. Its sample constructor has an unmatched brace, and a tenant/year key can still concentrate current-year writes. Treat examples and performance claims as proposals to test; the kit was not installed or executed here.
+- [Introducing the Azure Cosmos DB Agent Kit](https://devblogs.microsoft.com/cosmosdb/azure-cosmos-db-agent-kit-ai-coding-assistants/), **Sajeetharan Sinnathurai, Microsoft, January 22, 2026**. Estimate 20–30 minutes with the current repository. Read for a review workflow, then identify which suggestions need measurements. The constructor in the current public body is balanced; the earlier syntax-defect observation is historical. A tenant/year key can still concentrate current-year writes. Treat examples and performance claims as proposals to test; the kit was not installed or executed here.
 - [Sharded DiskANN for multitenant vector search](https://devblogs.microsoft.com/cosmosdb/sharded-diskann-focused-vector-search-for-better-performance-and-lower-cost/), **James Codella, Shivam Atri and Haiyang Xu, Microsoft, April 24, 2025**. Estimate 25–40 minutes with current search docs. Useful for separating partition routing from index sharding and comparing recall, latency and RU. Published benchmark gains are workload-specific; some query samples put `WHERE` after `ORDER BY`, so use current query syntax. Exercise: design an authorized-tenant comparison with identical data and a held-out relevance set. Samples and benchmark were not executed here.
 
 ---
@@ -1735,7 +2051,15 @@ For October candidates, add Labs 9–10 and targeted C#/Python practice. Allow a
 
 Resource details from the [DP-750 guide](../guides/DP-750-implementing-data-engineering-solutions-using-azure-databricks.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is **not a complete list**, and it is not a recommendation to consume everything. Pick a current primary path, build the labs, and use targeted references/practice for gaps. Times are page-published when available; otherwise they are clearly labeled estimates. Catalogs, access, duration, price and alignment change. DP-750 is new enough that several vendors had no dedicated current course on the pages found; broad Databricks material must be mapped to the March baseline and separately checked against the October revision. Avoid dumps or anything claiming real exam questions.
+#### October 28 learning route and evidence task
+
+The [official DP-750 exercises](https://microsoftlearning.github.io/DP-750T00-Implement-Data-Engineering-Solutions-using-Azure-Databricks/) now list setup, 13 numbered labs and cleanup, with **9 hours 20 minutes** in summed publisher estimates. They assume a Premium workspace and real compute; public instructions do not include cloud credits. [Lab 12: development lifecycle](https://microsoftlearning.github.io/DP-750T00-Implement-Data-Engineering-Solutions-using-Azure-Databricks/Instructions/Labs/12-implement-development-lifecycle-processes-in-azure-databricks.html) has a 45-minute index estimate and separates notebook tests from the local PowerShell CLI. Its deployment uses placeholder notebooks, so successful resource creation alone does not validate the transformation. Allow extra time for setup, current CLI compatibility and independent tests.
+
+**Original deployment extension (about 45–90 minutes beyond the published lab, editorial estimate):** Keep a snapshot of the placeholder plan, then implement a small synthetic transformation with independently calculated expected output. Record the Git revision, test result, target, execution identity, job run and output reconciliation before considering the deployed job complete. Do not deploy to a shared production target merely to exercise the workflow.
+
+**Answer checkpoint:** A valid bundle and a job with the expected task graph prove configuration/deployment state. They do not prove that placeholder code performs the required transformation or that production permissions and data contracts work.
+
+This is **not a complete list**, and it is not a recommendation to consume everything. Pick a current primary path, build the labs, and use targeted references/practice for gaps. Times are page-published when available; otherwise they are clearly labeled estimates. Catalogs, access, duration, price and alignment change. DP-750 is new enough that several vendors had no dedicated current course on the pages found; broad Databricks material must be mapped to the current October 19 outline; March-only coverage remains historical. Avoid dumps or anything claiming real exam questions.
 
 #### Start with Microsoft and Databricks
 
@@ -1794,7 +2118,15 @@ Both public articles were read as supplementary explanations. No linked customer
 
 Resource details from the [DP-800 guide](../guides/DP-800-developing-ai-enabled-database-solutions.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is **not a complete list**, and it is not a recommendation to consume everything. Pick one current primary path, build the labs, and use targeted references or practice for gaps. Times are page-published when available; otherwise they are clearly labeled estimates. Catalogs, access, duration, price and alignment change. DP-800 is new, so several established vendors did not yet have a dedicated full certification path on the pages found; map broader SQL Server 2025 material to the March baseline and separately to October preparation. Avoid dumps or products claiming recalled/live exam questions.
+This is **not a complete list**, and it is not a recommendation to consume everything. Pick one current primary path, build the labs, and use targeted references or practice for gaps. Times are page-published when available; otherwise they are clearly labeled estimates. Catalogs, access, duration, price and alignment change. DP-800 is new, so several established vendors did not yet have a dedicated full certification path on the pages found; map broader SQL Server 2025 material to the current October 19 outline; March-only coverage is historical. Avoid dumps or products claiming recalled/live exam questions.
+
+#### October 28 learning route and evidence task
+
+Use the three paths linked from the [current DP-800 course](https://learn.microsoft.com/en-us/training/courses/dp-800t00) as one sequence: database design, secure delivery, then AI retrieval. Their public outlines still contain **11 modules (4/4/3)**, and the [official exercise index](https://microsoftlearning.github.io/mslearn-sql-developer/) lists eleven matching labs. The three instructor-led days are publisher metadata; the earlier 18h22 self-study total remains historical because fresh path runtimes were not exposed. The existing resource set is sufficient. Rudi Bruchez’s [vector course](https://www.pluralsight.com/courses/sql-server-25-optimize-vector-search) remains 1h19, updated March 30, 2026; its description mentions HNSW while its chapter list names DiskANN, so use current SQL documentation to settle the algorithm and platform assumptions.
+
+**Original worksheet (about 35–50 minutes, editorial estimate):** Choose one object-design exercise, one API/deployment exercise and one retrieval exercise. For each, record platform/build, intended identity, prerequisite, allowed case, denied or stale-data case, expected evidence and cleanup. Add a second-platform column that can explicitly say unsupported or untested.
+
+**Answer checkpoint:** A working vector query on one SQL platform does not prove the API, index or authorization behavior on another. Keep unsupported and unexecuted cases visible instead of marking the whole workflow complete.
 
 #### Start with Microsoft
 
@@ -1868,19 +2200,31 @@ This is **not a complete list**, and it is not a recommendation to consume every
 | [Official AI-200 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-200) | Public | 30–60 min | Authoritative objectives, weights and lifecycle |
 | [AI-200T00 Microsoft Learn course](https://learn.microsoft.com/en-us/training/courses/ai-200t00) | Public self-study; paid instructor option | 5 instructor-led days; self-study budget 25–40 hours plus labs (editorial estimate) | 12 course languages; current extracted page does not expose a verifiable path/runtime total |
 | [Azure Architecture Center AI architecture](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/) | Public | 4–12 hours selectively (estimate) | Production tradeoffs, reliability and service composition |
-| [Microsoft Azure samples](https://github.com/Azure-Samples) | Public | 8–20 hours selectively (estimate) | Current SDK and deployable examples; verify maintenance and security before reuse |
+| [RAG on PostgreSQL sample](https://github.com/Azure-Samples/rag-postgres-openai-python) | Public MIT repository; Azure deployment may cost | About 3–6 hours for selected reading and a design worksheet (editorial estimate); deployment adds time | Specific Python/PostgreSQL RAG implementation; inspect identity, versions, costs and cleanup before reuse; no deployment verified |
 | [Microsoft exam sandbox](https://aka.ms/examdemo) | Public | 20–30 min | Interface familiarity; no technical questions |
 
-Microsoft's credential page explicitly said no AI-200 Practice Assessment was available on September 28, 2026. Recheck rather than substituting an assessment for a different exam.
+#### Target the data-service objectives
+
+| Resource | Access | Estimated time and scope |
+|---|---|---|
+| [Develop AI solutions with Azure Cosmos DB for NoSQL](https://learn.microsoft.com/en-us/training/paths/develop-ai-solutions-azure-cosmos-db/) | Free public reading; Azure exercise requirements separate | About 3–5 hours for three modules and notes (editorial estimate); SDK/data operations, indexing and vector search |
+| [Develop AI solutions with Azure Database for PostgreSQL](https://learn.microsoft.com/en-us/training/paths/develop-ai-solutions-azure-database-postgresql/) | Free public reading; database access for execution | About 4–6 hours for three modules and query-plan notes (editorial estimate); relational data, vectors and tuning |
+| [Enhance AI solutions with Azure Managed Redis](https://learn.microsoft.com/en-us/training/paths/enhance-ai-solutions-azure-managed-redis/) | Free public reading; service costs and module prerequisites separate | About 2–3 hours for selected data/vector modules (editorial estimate); its Streams/pub-sub module is **Related item:** adjacent context, not a Service Bus substitute |
+| [Managed Redis vector-search overview](https://learn.microsoft.com/en-us/azure/redis/overview-vector-similarity) | Public product documentation | About 20–40 minutes for reading and a configuration table (editorial estimate); verify exact module/client/index requirements |
+| [Managed Redis semantic-cache tutorial](https://learn.microsoft.com/en-us/azure/redis/tutorial-semantic-cache) | Public reading; product execution may cost | About 45–90 minutes for reading and a cache-boundary worksheet (editorial estimate); add tenant, source/model version, threshold and TTL tests |
+
+Path descriptions and selected module pages were inspected, not every lesson or exercise. Use the PostgreSQL repository's README, retrieval flow and monitoring notes to trace source → query → authorized retrieval → response → telemetry. Add your own negative cases for stale source versions, wrong-tenant access and absent documents. The MIT license permits reuse under its terms; it does not establish production security or current dependency compatibility. No repository deployment, load test or cloud exercise was executed. These resources do not resolve the official domain-weight or Redis conversion-document conflicts.
+
+Microsoft's credential page explicitly said no AI-200 Practice Assessment was available on September 28, 2026. That observation is historical: on October 28 the [official study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-200) advertises one through AI Skills Navigator with sign-in. Actual assessment launch and content were not verified; do not substitute an assessment for a different exam.
 
 #### Courses and video
 
 | Resource | Access | Estimated time | Best use and freshness note |
 |---|---|---:|---|
-| [O'Reilly Azure AI Cloud Developer Associate AI-200 Crash Course](https://www.oreilly.com/live-events/azure-ai-cloud-developer-associate-ai-200-crash-course/0642572385149/0642572385132/) | Paid subscription/live event | 4-hour event window; agenda totals 240 min before separately listed breaks; October 1, 2026 | Blueprint-wide live review with Reza Salehi; upcoming after this guide's validation date, so verify schedule/recording |
-| [Udemy AI-200 Complete Course by Luke Ginn](https://www.udemy.com/course/ai-200-azure-ai-cloud-developer-associate-complete-course/) | Paid; price varies | 21h19 / 55 lectures / 13 sections (indexed outline) | Updated August 2026, broad hands-on coverage; includes adjacent agent content, so map to blueprint |
-| [Udemy AI-200 Exam Prep by Kuljot Singh Bakshi](https://www.udemy.com/course/azure-ai-cloud-developer/) | Paid; price varies | 18h5 / 135 lectures / 15 sections (indexed outline) | Updated June 2026, objective-oriented demos and labs |
-| [Udemy AI-200 course by Scott Duffy](https://www.udemy.com/course/ai200-azure/) | Paid; price varies | 3h54 / 29 lectures / 11 sections (indexed outline) | Concise overview updated May 2026; supplement with implementation labs |
+| [O'Reilly Azure AI Cloud Developer Associate AI-200 Crash Course](https://www.oreilly.com/live-events/azure-ai-cloud-developer-associate-ai-200-crash-course/0642572385149/0642572385132/) | Paid subscription/live event | 4-hour event window; agenda totals 240 min before separately listed breaks; October 1, 2026 | Historical October 1 event listing with Reza Salehi; delivery and recording access were not verified |
+| [Udemy AI-200 Complete Course by Luke Ginn](https://www.udemy.com/course/ai-200-azure-ai-cloud-developer-associate-complete-course/) | Paid; price varies | 21h43 / 56 lectures / 13 sections (public listing) | Updated October 2026, broad advertised hands-on coverage; includes adjacent agent content, so map to blueprint |
+| [Udemy AI-200 Exam Prep by Kuljot Singh Bakshi](https://www.udemy.com/course/azure-ai-cloud-developer/) | Paid; price varies | 18h5 / 135 lectures / 16 sections (public listing) | Updated September 2026; advertised objective-oriented demos and labs |
+| [Udemy AI-200 course by Scott Duffy](https://www.udemy.com/course/ai200-azure/) | Paid; price varies | 3h54 / 30 lectures / 11 sections (public listing) | Concise overview updated May 2026; supplement with implementation labs |
 | [Microsoft Reactor YouTube](https://www.youtube.com/@MicrosoftReactor) | Public | 3–10 hours selectively (estimate) | Search current Container Apps, Cosmos vector, PostgreSQL/pgvector, Redis, eventing and observability sessions |
 | [John Savill Azure Master Class repository](https://github.com/johnthebrit/AzureMasterClass) | Public | 3–8 hours selectively (estimate) | Broad Azure platform/network/identity architecture and whiteboards; not a complete AI-200 path and may predate current vector/Managed Redis objectives |
 
@@ -1890,7 +2234,7 @@ A bounded September 28 search did not identify a dedicated current AI-200 Plural
 
 | Resource | Access | Estimated time | Best use and caution |
 |---|---|---:|---|
-| [AI-200 Practice Assessment status on credential page](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-cloud-developer-associate/) | Public status; assessment unavailable when checked | Recheck in 1–2 min | Use the official assessment first if Microsoft later publishes it |
+| [AI-200 Practice Assessment listing on official study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-200) | Public listing; AI Skills Navigator sign-in; assessment not opened | Recheck in 1–2 min; assessment duration unverified | Current October 28 listing supersedes the historical September unavailability observation |
 | [Udemy AI-200 practice tests by Scott Duffy](https://www.udemy.com/course/ai200-tests/) | Paid; price varies | Four 25-question tests plus explanation review; 3–6 hours (estimate) | New third-party practice; verify explanations against current Microsoft docs and reject live-question claims |
 | [Whizlabs AI-200 catalog](https://www.whizlabs.com/microsoft-azure-ai-cloud-developer-associate/) | Paid product; public title shell | Duration/question count unverified | Listing found; inspect current syllabus/sample explanations before selecting |
 | This guide's ten labs | Azure access; costs vary | 28–50 hours for cloud work plus 2–4 hours for offline artifacts (estimates) | End-to-end build, failure, identity, replay, observability and recovery proof |
@@ -1898,16 +2242,16 @@ A bounded September 28 search did not identify a dedicated current AI-200 Plural
 
 The [Whizlabs AI-200 catalog page](https://www.whizlabs.com/microsoft-azure-ai-cloud-developer-associate/) now exists, correcting the previous missing-product note. It exposed only a title shell; question count, lessons, labs and coverage remain unverified. A bounded search did not identify a dedicated MeasureUp product; recheck rather than treating this as proof of absence.
 
-Direct access to all four Udemy listings was blocked; the displayed metadata above comes from indexed public outlines checked September 28. Paid content, coverage, question originality and claimed exam difficulty were not evaluated. Scott Duffy's practice listing shows four 25-question sets, updated August 2026, but its claimed August 28 exam update is not corroborated by the official May 5 baseline. Luke Ginn's indexed outline still labels some walkthroughs as forthcoming. O'Reilly's event is future; attendance/recording was not verified. The older Learn total of nine paths/32h4 was not reproduced from the current page and is no longer presented as current.
+September 28 direct automation was blocked for all four Udemy listings. Their public landing bodies were readable in the October 28 browser review, supporting the updated counts/dates above; automated blocked results remain separate. Paid lessons, assessment content, question originality, practical accuracy and difficulty were not evaluated. The practice listing still advertises four 25-question sets and an August update; its claimed August exam revision is not official evidence for the current October 7 outline. O'Reilly's earlier October 1 event listing is historical; current exact delivery dates, attendance and recording access remain unverified. The earlier nine-path/32h4 Learn total is not presented as a newly verified runtime.
 
 #### A practical study sequence
 
-1. Map the official blueprint to one deployable architecture and record the currently unavailable Practice Assessment.
+1. Map the current official blueprint to one deployable architecture and check the advertised Practice Assessment's access requirements.
 2. Complete the Microsoft Learn paths or one current structured course; do not stack passive courses.
 3. Build Labs 1–3 until container deployment, identity, rollout, scaling and diagnosis are routine.
 4. Build Labs 4–6 and compare Cosmos, PostgreSQL and Redis using the same corpus/SLO evidence.
 5. Build Labs 7–8 and prove duplicate, retry, DLQ, rotation, distributed trace, KQL and reconciliation behavior; complete Labs 9–10 as review artifacts.
-6. If an official Practice Assessment appears, use it once as a diagnostic; remediate by objective and lab.
+6. If you can access the advertised official Practice Assessment, use it once as a diagnostic; remediate by objective and lab.
 7. Recheck the blueprint, credential page, SDK/service limits, vector/index support, course schedule and Azure Managed Redis transition immediately before the exam.
 
 ---
@@ -1920,6 +2264,10 @@ Resource details from the [AI-300 guide](../guides/AI-300-operationalizing-machi
 
 This is **not a complete list**, and it is not a recommendation to consume everything. Choose one primary path, build the labs and use targeted material for gaps. Times are published when available or labeled estimates. Avoid dumps and recalled/live exam questions.
 
+#### Focused reproducibility review
+
+Use the [MLOps accelerator structure](https://github.com/Azure/mlops-v2/blob/main/documentation/structure/README.md) and [Azure ML examples README](https://github.com/Azure/azureml-examples) to draw the inner-loop/outer-loop handoff for one model: data/version, environment, run, model registration, test evidence, deployment identity and rollback owner. Add a separate column for GenAIOps evidence still needed. Then inspect the [Foundry samples validation description](https://github.com/microsoft-foundry/foundry-samples) and distinguish build readiness from a sample's opt-in live-service validation. **About 90–150 minutes**, estimated for two short repository documents, the validation section and an original evidence map; sample setup/execution is additional and may cost money. **VERIFY CURRENT:** legacy SDK-v1 choices in accelerator documentation are historical context, not an instruction to use an unsupported SDK. No samples or pipelines were run in this review.
+
 | Resource | Access | Estimated time | Best use |
 |---|---|---:|---|
 | [Official AI-300 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-300) | Public | 30–60 min | Authoritative scope and lifecycle |
@@ -1927,7 +2275,7 @@ This is **not a complete list**, and it is not a recommendation to consume every
 | [AI Skills Navigator Practice Assessment](https://aiskillsnavigator.microsoft.com/en-us/certifications/microsoft-certified-associate/machine-learning-operations-engineer) | Free account/sign-in | 45–90 min plus remediation (estimate) | Microsoft-linked diagnostic; sign-in shell only, no questions/results reviewed |
 | [Azure MLOps v2 solution accelerator](https://github.com/Azure/mlops-v2) | Public | 8–20 hours selectively (estimate) | Official reference architectures and automation; verify current SDK/IaC |
 | [Azure ML examples](https://github.com/Azure/azureml-examples) | Public | 10–30 hours selectively (estimate) | CLI/SDK jobs, pipelines and endpoints |
-| [Foundry samples](https://github.com/azure-ai-foundry/foundry-samples) | Public | 8–20 hours selectively (estimate) | Current evaluation, tracing and GenAIOps examples |
+| [Foundry samples](https://github.com/microsoft-foundry/foundry-samples) | Public | 8–20 hours selectively (estimate) | Official sample directory; inspect each sample and distinguish build checks from opt-in live validation |
 | [O'Reilly MLOps/LLMOps Bootcamp](https://www.oreilly.com/live-events/mlopsllmops-bootcamp/0642572182861/0642572243333/) | Paid live/subscription | Historical November 3–5, 2025 event; 10h metadata and agenda | Ammar Mohanna, two sessions; verify recording/new dates; broad lifecycle supplement |
 | [Udemy AI-300 MLOps & GenAIOps preparation](https://www.udemy.com/course/ai-300-mlops-genaiops-engineer-exam-preparation/) | Paid; price varies | 3h27, 11 lectures / one section (indexed public outline) | Aseem Mankotia, updated July 2026; 100-minute simulation differs from official 120-minute assessment |
 | [Udemy AI-300 practice tests](https://www.udemy.com/course/ai-300-operationalizing-ml-and-generative-ai-practice-tests/) | Paid; price varies | Five 150-question sets plus one 161-question set = 911; 12–25h review (estimate) | VARONTO Academy, updated June 2026; description still says 900, paid content/originality unverified |
@@ -1958,6 +2306,10 @@ Resource details from the [AZ-104 guide](../guides/AZ-104-microsoft-azure-admini
 
 This is a curated starting set, not a complete list. Do **not** consume every resource. Pick one structured spine, use documentation for weak objectives, do the labs, and add one assessment source. Time estimates are planning ranges, not guarantees; playback speed, prior experience, exercises, lab cleanup, and vendor changes matter. Verify the current blueprint before buying or starting a course.
 
+#### Focused governance evidence route
+
+[Microsoft's Lab 02b](https://microsoftlearning.github.io/AZ-104-MicrosoftAzureAdministrator/Instructions/Labs/LAB_02b-Manage_Governance_via_Azure_Policy.html) publishes **30 minutes** for tagging, policy and locks. Allow **about 60–90 minutes** for the lab plus evidence and cleanup, an editorial extension of that published estimate; subscription setup and policy propagation may add time. In a disposable resource group, retain the assigned scope/parameters, the denied deployment message, the modify/remediation identity and result, the deletion-lock failure and cleanup evidence. Distinguish the lab's predicted result from what you actually observe. **VERIFY CURRENT:** use the configured tag value (`000` in the example), since one explanatory sentence instead says `Default`; do not adopt the lab's broad pre/post-deployment security shorthand as a rule. Azure resources may incur charges. This review read the lab and did not execute it.
+
 | Resource | Access | Estimated time | Best use |
 |---|---|---:|---|
 | [Microsoft Learn AZ-104 course](https://learn.microsoft.com/en-us/training/courses/az-104t00) | Free self-paced; instructor delivery varies | Published: 4 instructor-led days; plan 20–30 hours reading or 30–45 with exercises | Best official objective-aligned spine |
@@ -1977,6 +2329,10 @@ Catalog metadata is not proof of lesson accuracy, exam coverage or question orig
 Resource details from the [AZ-120 guide](../guides/AZ-120-planning-administering-azure-sap-workloads.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
 This is **not a complete list**, and it is not a recommendation to consume everything. Pick the combination that fits how you learn and use the official April 17, 2026 objective list as the coverage checklist. Time estimates are planning ranges, not vendor promises; pause-and-practice time is included where useful. Verify subscription access, course freshness and exact duration before purchase.
+
+#### Focused source-to-evidence route
+
+**Deployment design without provisioning — public tutorial; about 90–150 minutes.** Read the prerequisites, environment overview, deployment phases and cleanup sections of [Deploy SAP Deployment Automation Framework](https://learn.microsoft.com/en-us/azure/sap/automation/tutorial) (article updated April 13, 2026). Draw the control-plane, workload-zone and system dependencies, then write a prerequisite/cost gate and a reverse-order cleanup checklist. This is an editorial estimate for selected reading and two original artifacts, not a published deployment duration. **VERIFY CURRENT:** actual deployment requires an Azure subscription, suitable permissions/quota and SAP software-download entitlement, and incurs resource costs. Check the pinned release and reconcile sample names before running commands. This reading does not validate HSR backup/failback or SAP support matrices; the guide’s open findings remain. No Azure or SAP environment was deployed.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
@@ -2046,6 +2402,10 @@ Resource details from the [AZ-140 guide](../guides/AZ-140-configuring-operating-
 
 This is **not a complete list**, and it is not a recommendation to consume everything. Pick the resources and formats that fit you, and use the official July 20, 2026 objectives as the coverage checklist. Estimated times include reasonable note-taking or practice where stated and should be rechecked before purchase.
 
+#### Focused monitoring evidence route
+
+Choose the Entra ID branch in the [official lab index](https://microsoftlearning.github.io/AZ-140-Configuring-and-Operating-Microsoft-Azure-Virtual-Desktop/), then read [Implement monitoring with AVD Insights](https://microsoftlearning.github.io/AZ-140-Configuring-and-Operating-Microsoft-Azure-Virtual-Desktop/Instructions/Labs_EntraID/03_LAB_41_01_Implement_monitoring_by_using_Azure_Virtual_Desktop_Insights.html). Its published **25 minutes** assumes the deployment and management labs are complete. For an existing disposable host pool, allow **about 60–90 minutes** for configuration, evidence and review, estimated from the published lab plus checking diagnostics, DCR associations, the monitoring extension and actual generated data. Preserve a before/after warning record and separate connection health from telemetry-collection health. **VERIFY CURRENT:** subscription permissions, agent/UI steps and ingestion costs. Prerequisite environment creation and cleanup are additional; do not expect the entire route in 25 minutes. No host pool, workbook or telemetry was executed/observed in this review.
+
 | Resource | Access | Estimated time |
 |---|---|---:|
 | [Official AZ-140 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-140) | Free; authoritative scope and change log | 45–75 min initially; 10–15 min before exam |
@@ -2100,6 +2460,10 @@ Resource details from the [AZ-305 guide](../guides/AZ-305-designing-microsoft-az
 
 This is a curated starting set, not a complete list. Do **not** consume every resource. Pick one structured spine, use documentation and architecture case studies for weak objectives, complete design/lab work, and add one assessment source. Time estimates are planning ranges, not guarantees; playback speed, prior Azure experience, exercises, lab cleanup, and vendor changes matter. Verify the current blueprint before buying or starting a course.
 
+#### Focused architecture failure worksheet
+
+Use [Well-Architected failure mode analysis](https://learn.microsoft.com/en-us/azure/well-architected/reliability/failure-mode-analysis) to trace one critical request from ingress through identity, compute, data and an external dependency. For each component, record the user impact, blast radius, strong/weak dependency, detection signal, degraded mode and recovery objective. Compare an identity outage with a regional data outage; state what existing requests and new deployments can still do. **About 75–120 minutes**, estimated for selected article reading and an original flow diagram/failure matrix, rather than a vendor-published duration. This produces a design hypothesis and a future test plan; it does not demonstrate availability, recovery time or successful fault injection. The guidance is relevant to business continuity and infrastructure design; current service documentation still controls individual capabilities.
+
 | Resource | Access | Estimated time | Best use |
 |---|---|---:|---|
 | [Microsoft Learn AZ-305 course](https://learn.microsoft.com/en-us/training/courses/az-305t00) | Free self-directed content; instructor delivery varies | Published: 4 instructor-led days; plan 20–30 hours reading or 30–45 with case studies/labs | Best official objective-aligned spine; assumes administration experience |
@@ -2130,6 +2494,10 @@ Blog reading was limited to the recorded sections in the review report. No paid 
 Resource details from the [AZ-400 guide](../guides/AZ-400-designing-implementing-microsoft-devops-solutions.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
 This is **not a complete list**, and it is not a recommendation to consume everything. Pick the resources and formats that fit you, and use the official July 27, 2026 objectives as the coverage checklist. Estimated times include reasonable note-taking or practice where stated and should be rechecked before purchase. Older material can still teach durable concepts, but reconcile every product screen, feature, identity method and objective against current documentation.
+
+#### Focused pipeline evidence and critique route
+
+Follow the Azure DevOps Services YAML sections of [Create your first pipeline](https://learn.microsoft.com/en-us/azure/devops/pipelines/create-first-pipeline?view=azure-devops) for one disposable repository. Retain the commit, YAML, agent selection, run log and test/artifact evidence; deliberately introduce and then repair one build failure. Next, critique the [Azure Developer CLI promotion article](https://devblogs.microsoft.com/devops/azure-developer-cli-from-dev-to-prod-with-azure-devops-pipelines/): identify the same artifact crossing stages and replace its TODO/simulated validation with a written real-check design. **About 2–3 hours**, estimated for one starter pipeline and an original review record; account/agent entitlement and deployment setup add time. **VERIFY CURRENT:** use current agents/authentication. The [older YAML lab](https://www.azuredevopslabs.com/labs/azuredevops/yaml/) is dated January 20, 2022 and contains an obsolete hosted image, so read it as historical illustration only. No pipeline, video or cloud deployment was executed in this review.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
@@ -2186,6 +2554,10 @@ Resource details from the [AZ-700 guide](../guides/AZ-700-designing-implementing
 
 This is a curated starting set, not a complete list. Do **not** consume every resource. Pick one structured spine, use current documentation for weak objectives, build and break the labs, and add one assessment source. Time estimates are planning ranges, not guarantees; playback speed, prior networking experience, gateway deployment time, exercises, cleanup, and vendor changes matter. Verify the current blueprint before buying or starting a course.
 
+#### Focused DNS evidence route
+
+[Configure DNS settings in Azure](https://microsoftlearning.github.io/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/Instructions/Exercises/M01-Unit%206%20Configure%20DNS%20settings%20in%20Azure.html) publishes **25 minutes** and requires the preceding virtual-network setup. Allow **about 60–90 minutes** after prerequisites for the exercise, evidence and cleanup, estimated from that timing plus validation. Record the private zone, VNet link/registration setting, VM A records and name-resolution output. Explain why a failed ping can coexist with successful DNS resolution, then specify a separate application/port test. The exercise heading says subnet linking, but its actual steps link a VNet; keep that boundary clear. **VERIFY CURRENT:** VM capacity/SKUs, portal and account costs. Provisioning waits and prerequisite resources add time and charges. This review read the procedure without deploying VMs or executing tests.
+
 | Resource | Access | Estimated time | Best use |
 |---|---|---:|---|
 | [Microsoft Learn AZ-700 course](https://learn.microsoft.com/en-us/training/courses/az-700t00) | Free self-directed content; instructor delivery varies | Published: 3 instructor-led days; plan 18–28 hours reading or 30–45 with labs | Best official objective-aligned spine |
@@ -2207,7 +2579,11 @@ Practice products should contain independently authored questions and explanatio
 
 Resource details from the [MO-110 guide](../guides/MO-110-microsoft-word-microsoft-365-apps.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is a selective learning path, not a complete list of Word resources.
+This is a selective learning path, not a complete list of Word resources or a requirement to consume every item.
+
+#### Focused source-to-evidence route
+
+**A report that survives revision — public task reference; about 45–75 minutes.** Use [Update a table of contents](https://support.microsoft.com/en-us/word/update-a-table-of-contents) after building your own three-page report with heading styles and an automatic contents table. Rename a heading and insert a page; compare updating page numbers with updating the entire table. Save the revised `.docx` and a short before/after checklist, then reopen the file. The estimate covers the short article, original document creation and two revisions; it is not publisher runtime. The article lists Microsoft 365 Word on Windows and Mac; use the matching desktop environment and record its build. Web workflow and exam-environment equivalence were not evaluated. No article publication/update date is displayed. Text was inspected October 28, 2026; Word was not executed.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
@@ -2222,7 +2598,11 @@ This is a selective learning path, not a complete list of Word resources.
 
 Resource details from the [MO-111 guide](../guides/MO-111-microsoft-word-expert-microsoft-365-apps.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is a selective learning path, not a complete list of Word Expert resources.
+This is a selective learning path, not a complete list of Word Expert resources or a requirement to consume every item.
+
+#### Focused source-to-evidence route
+
+**A merge pack with edge cases — public task references; about 60–90 minutes.** Read [prepare the Excel source](https://support.microsoft.com/en-us/word/prepare-your-excel-data-source-for-a-word-mail-merge), [preview recipients](https://support.microsoft.com/en-us/word/mail-merge-preview-results) and the [mail-merge platform boundary](https://support.microsoft.com/en-us/word/use-mail-merge-for-bulk-email-letters-labels-and-envelopes). Create six synthetic recipients including a leading-zero postal code and a blank optional value. Deliver the source `.xlsx`, main `.docx`, a preview checklist and locally merged letters; do not send mail. Estimate basis: three short references plus original files and recipient-by-recipient inspection. Windows and Mac instructions differ; choose the matching desktop steps. Word for the web preserves existing merge settings but cannot perform or edit the merge. No visible article dates were established. Public text was reviewed October 28, 2026; no merge or paid lesson was executed.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
@@ -2237,7 +2617,11 @@ This is a selective learning path, not a complete list of Word Expert resources.
 
 Resource details from the [MO-210 guide](../guides/MO-210-microsoft-excel-microsoft-365-apps.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is a selective learning path, not a complete list of Excel resources.
+This is a selective learning path, not a complete list of Excel resources or a requirement to consume every item.
+
+#### Focused source-to-evidence route
+
+**Identifiers and trustworthy totals — public task references; about 60–90 minutes.** Read [preserving leading zeros and long identifiers](https://support.microsoft.com/en-us/excel/keeping-leading-zeros-and-large-numbers) and [Excel table totals](https://support.microsoft.com/en-us/excel/get-started/total-the-data-in-an-excel-table). Build an original small sales workbook with text identifiers, a table, a Total Row and a chart. Filter one region and document why its visible total differs from the unfiltered total. Save the `.xlsx` with a raw-input sheet and a reconciliation note; formatting cannot reconstruct source digits already lost. The estimate covers reading, constructing data and two checks, not provider runtime. The totals page has Windows/Mac/web steps; the conversion page has narrower version applicability. **VERIFY CURRENT:** use the applicable desktop instructions for full preparation and record build/platform. No visible article dates were established; Excel was not executed.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
@@ -2252,7 +2636,11 @@ This is a selective learning path, not a complete list of Excel resources.
 
 Resource details from the [MO-211 guide](../guides/MO-211-microsoft-excel-expert.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is a selective learning path, not a complete list of Excel Expert resources. All time estimates below are author suggestions.
+This is a selective learning path, not a complete list of Excel Expert resources or a requirement to consume every item. All time estimates below are author suggestions.
+
+#### Focused source-to-evidence route
+
+**A Pivot report with a reconciliation trail — public task reference; about 60–90 minutes.** Use [Create a PivotChart](https://support.microsoft.com/en-us/excel/get-started/create-a-pivotchart) with your own monthly expense table. Produce a PivotTable, linked chart and category filter; reconcile the displayed values with a manually checked source subtotal. Change one source value, refresh, and retain the saved `.xlsx` plus a change log. This estimate adds original workbook creation and verification to a short article, not a vendor course duration. **VERIFY CURRENT:** Microsoft documents separate Windows, Mac and web routes; Mac and web begin from a PivotTable, and Mac chart-type limits apply. Follow your platform tab rather than copying Windows clicks. This focused chart route does not replace advanced-formula or macro practice. No visible article date was established; text was inspected October 28, 2026 without Excel execution.
 
 Joe McDaid's [Stale Value Formatting announcement](https://techcommunity.microsoft.com/blog/excelblog/stale-value-formatting/3887098), originally published August 8, 2023, explains the calculation-mode problem clearly. Its Windows Beta availability paragraph is historical. Use the current Support reference in section 1 for present behavior and limitations. Read the warning as a prompt to verify calculation, not as ordinary font styling. The article adds useful context; it does not establish an additional exam objective. Its embedded demonstration was not evaluated here.
 
@@ -2260,7 +2648,7 @@ Joe McDaid's [Stale Value Formatting announcement](https://techcommunity.microso
 |---|---|---:|
 | Official credential page and linked detailed outline above | Public | **25 minutes** for scope and logistics |
 | Function and workflow references linked in each section | Public | **3–5 hours**, including small experiments |
-| [Excel help and learning](https://support.microsoft.com/en-us/excel) | Public directory; linked lessons not comprehensively audited | Target gaps as needed |
+| [Excel help and learning](https://support.microsoft.com/en-us/excel) | Public directory; linked lessons not comprehensively audited | About 30–60 min to locate one weak-topic route; estimate for directory browsing and planning, with task practice budgeted separately |
 | Ten labs and six worked examples in this guide | Suitable Excel desktop environment required | **15–22 hours** plus two timed repeats |
 
 Before a timed attempt, explain every named function, recover from a broken formula, reconcile a filtered Pivot total and deliver a correctly protected workbook. Reserve part of the 50-minute practice session for checking the saved result.
@@ -2269,7 +2657,11 @@ Before a timed attempt, explain every named function, recover from a broken form
 
 Resource details from the [MO-310 guide](../guides/MO-310-microsoft-powerpoint-microsoft-365-apps.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is a selective learning path, not a complete list of PowerPoint resources. Times are author suggestions, not provider runtimes or an exam-readiness guarantee.
+This is a selective learning path, not a complete list of PowerPoint resources or a requirement to consume every item. Times are author suggestions, not provider runtimes or an exam-readiness guarantee.
+
+#### Focused source-to-evidence route
+
+**A reusable layout, not repeated manual formatting — public references; about 60–90 minutes.** Read [slide-layout concepts](https://support.microsoft.com/en-us/powerpoint/what-is-a-slide-layout) and [editing layout placeholders](https://support.microsoft.com/en-us/powerpoint/add-edit-or-remove-a-placeholder-on-a-slide-layout). In your own five-slide deck, duplicate a layout, add a picture placeholder and change its prompt text; apply it to two slides, revise it, then reapply it. Deliver the `.pptx` and a checklist distinguishing layout changes from individual-slide edits. Estimate basis: two articles, an original deck and a revision pass. **VERIFY CURRENT:** use the matching Windows or Mac desktop steps; PowerPoint for the web cannot edit layout definitions in Slide Master view. These references do not establish SmartArt preview availability or media support. No visible article dates were established; no PowerPoint operation or embedded video was executed.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
@@ -2380,7 +2772,7 @@ This is not a complete list and is not meant to be consumed in full. Pick one pr
 |---|---|---:|
 | [Official certification page](https://www.databricks.com/learn/certification/data-engineer-associate) and [May 4, 2026 exam guide](https://www.databricks.com/sites/default/files/2026-05/databricks-certified-data-engineer-associate-exam-guide-may-2026-000.pdf) | Public | 1–2 hr to map objectives and recheck details |
 | Six self-paced courses named in the official PDF through [Databricks Academy](https://customer-academy.databricks.com/) | Free account or customer/partner Academy entitlement; catalog visibility varies | 18–30 hr planning estimate including labs; vendor does not expose a stable public total |
-| [Get Started with Databricks for Data Engineering](https://customer-academy.databricks.com/learn/courses/2469/get-started-with-databricks-for-data-engineering/lessons) | Free account; current hands-on onboarding | 4–8 hr planning estimate for demos/labs; no reliable public duration displayed |
+| [Databricks Data Engineering learning paths](https://community.databricks.com/t5/learning-paths/ct-p/databricks-learning-paths) | Free public learning-path catalog; course and lab entitlements vary | Select courses by objective; confirm current Academy access and duration |
 | [Databricks Free Edition](https://www.databricks.com/learn/free-edition) plus the eight labs in this guide | Free account; product limits apply | 12–24 hr |
 | [Databricks documentation](https://docs.databricks.com/aws/en/introduction/) | Public; select only objective gaps | 8–20 hr selected reading and implementation |
 | [Databricks Certified Data Engineer Associate Study Guide](https://www.oreilly.com/library/view/databricks-certified-data/9781098166823/) by Derar Alhussein | O’Reilly subscription or purchase; February 2025 baseline | Previously recorded 9 hr 49 min provider estimate, not reverified because access was blocked; allow 15–25 hr with labs and May 2026 gap check |
@@ -2526,11 +2918,11 @@ This is not a complete list and is not meant to be consumed in full. Choose one 
 | [Official exam guide](https://services.google.com/fh/files/misc/generative_ai_leader_exam_guide_english.pdf), [study guide](https://services.google.com/fh/files/misc/generative_ai_leader_study_guide_english.pdf), and [sample questions](https://forms.gle/soztS7Q74AXBncATA) | Public, first-party | 3–5 hours with objective mapping and answer review |
 | [Google Skills Generative AI Leader path](https://www.skills.google/paths/1951) | Google account; public path confirms five activities and an update about two months earlier | Current durations/access details were not fully exposed; allow 10–14 hours as a study-planning estimate |
 | [Google Cloud Generative AI Leader Professional Certificate on Coursera](https://www.coursera.org/professional-certificates/generative-ai-for-leaders) | Coursera audit/subscription terms vary; first-party Google Cloud courses | Landing page says 8 hours, while five course cards total 20 hours (3/4/4/4/5). Treat these as different estimates; choose time based on activities completed |
-| [Pluralsight Generative AI Leader path](https://www.pluralsight.com/paths/google-cloud-generative-ai-leader-by-pluralsight) | Paid subscription; four courses, one lab and practice exam | Four course durations sum 5h44m plus a 30-minute lab (rounded path total: 6h). Public dates range December 2025–May 2026, with the lab dated August 11, 2026; add 5–10 hours of planned review |
+| [Pluralsight Generative AI Leader path](https://www.pluralsight.com/paths/google-cloud-generative-ai-leader-by-pluralsight) | Paid subscription; four courses, four labs and a practice exam | Course cards total 5h44m; four lab cards total 2h15m (7h59m combined, rounded path total: 8h). Newer labs include model selection (Oct 6) and multimodal triage (Oct 13, 2026); add 5–10 hours of planned review |
 | [O'Reilly — GenAI on Google Cloud](https://www.oreilly.com/library/view/genai-on-google/9798341623842/) | Paid subscription/book; broader and more technical than the exam | Earlier 9h58m estimate **not reverified** because public access was blocked; allow 5–10 hours for selected practice and terminology mapping |
 | [Udemy / in28Minutes Generative AI Leader](https://www.udemy.com/course/google-cloud-certified-generative-ai-leader-certification/) | Paid marketplace course | Earlier 3h51m and August 2026 update **not reverified** because public access was blocked; allow 5–10 hours for exercises/review |
 
-No exact current MeasureUp product was found during this review. The Google-authored Coursera outline lists five courses and practical Gemini, NotebookLM and AI Studio activities; that is public metadata, not evidence of completed provider exercises. Pluralsight's four course titles follow the exam domains, but dates and a lab title alone do not establish full current-product alignment. The sample-form content was not exposed by the fetch, and no paid lessons or assessment questions were read.
+No exact current MeasureUp product was found during this review. The Google-authored Coursera outline lists five courses and practical Gemini, NotebookLM and AI Studio activities; that is public metadata, not evidence of completed provider exercises. Pluralsight's four course titles follow the exam domains, with four current labs listed; the October 13 multimodal triage lab is a new product example, not evidence of exam scope. Titles and dates do not establish full current-product alignment. The sample-form content was not exposed by the fetch, and no paid lessons or assessment questions were read.
 
 For focused technical gaps, use the linked documentation on data handling, access controls, model lifecycle and tool validation. Allow 2–3 additional hours for selected reading and the original worksheet; this is a planning estimate. Google's official sample resource and independently authored exercises can help locate learning gaps. Reject “actual questions,” copied exam material, or guaranteed replicas; use explanation-led assessment to locate a concept or decision gap.
 
@@ -2538,7 +2930,7 @@ For focused technical gaps, use the linked documentation on data handling, acces
 
 Resource details from the [GOOGLE-ASSOCIATE-CLOUD-ENGINEER guide](../guides/GOOGLE-ASSOCIATE-CLOUD-ENGINEER-associate-cloud-engineer.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is intentionally **not a complete list**, and it is not a prescription to consume everything. Pick one coherent teaching route, use first-party documentation to close its version gaps, spend substantial time hands-on, and use assessments only to locate weak objectives. Public metadata was checked September 29, 2026. Distinguish card totals from overall schedule estimates; add lab, note, review and troubleshooting time. Paid course interiors and provider labs were not accessed.
+This is intentionally **not a complete list**, and it is not a prescription to consume everything. Pick one coherent teaching route, use first-party documentation to close its version gaps, spend substantial time hands-on, and use assessments only to locate weak objectives. Public metadata was checked October 28, 2026. Distinguish card totals from overall schedule estimates; add lab, note, review and troubleshooting time. Paid course interiors and provider labs were not accessed.
 
 | Resource | Access | Estimated time | Best use / currency note |
 |---|---|---:|---|
@@ -2569,7 +2961,7 @@ Before relying on any course or book, confirm that you can map older coverage to
 
 Resource details from the [GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT guide](../guides/GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT-professional-cloud-architect.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is **not a complete list**, and it is not meant to be consumed in full. Pick a coherent route, use the blueprint/case studies as the checklist, and select labs/readings for weak decisions. Public metadata was checked September 29, 2026; paid lessons/labs were not accessed. Separate visible content totals from schedule estimates, then add practice, design, troubleshooting and review time.
+This is **not a complete list**, and it is not meant to be consumed in full. Pick a coherent route, use the blueprint/case studies as the checklist, and select labs/readings for weak decisions. Public metadata was checked October 28, 2026; paid lessons/labs were not accessed. Separate visible content totals from schedule estimates, then add practice, design, troubleshooting and review time.
 
 | Resource | Access | Estimated time | Best use / currency note |
 |---|---|---:|---|
@@ -2582,7 +2974,7 @@ This is **not a complete list**, and it is not meant to be consumed in full. Pic
 | [Whizlabs Professional Cloud Architect](https://www.whizlabs.com/google-cloud-certified-professional-cloud-architect/) | Paid; limited free material may vary | Full current catalog not exposed; verify before purchase | Direct fetch returned a title-only shell, so course/lab quantities and current objective alignment were not verified |
 | [Well-Architected Framework](https://cloud.google.com/architecture/framework) and [Architecture Center](https://cloud.google.com/architecture) | Public | 12–30h targeted reading | Production tradeoffs and all six cross-cutting pillars |
 
-A current [Pluralsight PCA path](https://www.pluralsight.com/paths/google-certified-professional-cloud-architect-by-pluralsight) is verified: seven Victor Dantas courses total **7h17m**, with one 30-minute regional-MIG lab, **7h47m** altogether versus the rounded eight-hour header. Core course dates span July–December 2025; the lab is August 6, 2026. Compare current AI/agent/case objectives explicitly; public titles and dates do not establish complete paid-lesson coverage. No verified MeasureUp PCA item is added.
+A current [Pluralsight PCA path](https://www.pluralsight.com/paths/google-certified-professional-cloud-architect-by-pluralsight) lists seven Victor Dantas courses and four labs. The course cards total **7h17m**; the labs total **2h30m** (regional MIG, hybrid zero trust, cost/storage lifecycle, and reliability/rollouts), or **9h47m** versus the rounded 10-hour header. The cost/storage lab is dated October 22, 2026. Compare current AI/agent/case objectives explicitly; public titles and dates do not establish complete paid-lesson coverage. No verified MeasureUp PCA item is added.
 
 #### Current-version gap checklist
 
@@ -2592,7 +2984,7 @@ When a resource predates the current guide, independently close: Gemini Enterpri
 
 Resource details from the [GOOGLE-PROFESSIONAL-DATA-ENGINEER guide](../guides/GOOGLE-PROFESSIONAL-DATA-ENGINEER-professional-data-engineer.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is **not a complete list**, and it is not meant to be consumed in full. Select one route, map it to the five standard-exam domains, and use first-party docs/labs for gaps. Public metadata was checked September 29, 2026. Suggested reading/practice budgets are planning estimates, not measured completion times.
+This is **not a complete list**, and it is not meant to be consumed in full. Select one route, map it to the five standard-exam domains, and use first-party docs/labs for gaps. Public metadata was checked October 28, 2026. Suggested reading/practice budgets are planning estimates, not measured completion times.
 
 | Resource | Access | Estimated time | Best use / currency note |
 |---|---|---|---|
@@ -2611,7 +3003,7 @@ No PDE-specific MeasureUp listing was verified in this review. Older routes need
 
 Resource details from the [GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER guide](../guides/GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER-professional-cloud-security-engineer.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is **not a complete list**, and it is not meant to be consumed in full. Pick one route, map it to the five current domains, and use primary docs/labs to close gaps. Public metadata was checked September 29, 2026. Suggested budgets include neither a guarantee of mastery nor measured completion time.
+This is **not a complete list**, and it is not meant to be consumed in full. Pick one route, map it to the five current domains, and use primary docs/labs to close gaps. Public metadata was checked October 28, 2026. Suggested budgets include neither a guarantee of mastery nor measured completion time.
 
 | Resource | Access | Estimated time | Best use / currency note |
 |---|---|---|---|
@@ -2629,7 +3021,7 @@ A current Pluralsight path is now verified, correcting the earlier catalog gap. 
 
 Resource details from the [GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER guide](../guides/GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER-professional-machine-learning-engineer.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is **not a complete list**. Catalog observations below are from September 29, 2026. Durations are provider metadata unless explicitly described as a suggested practice budget. A certificate/path title does not prove complete June 2026 blueprint coverage.
+This is **not a complete list**. Catalog observations below are from October 28, 2026. Durations are provider metadata unless explicitly described as a suggested practice budget. A certificate/path title does not prove complete June 2026 blueprint coverage.
 
 | Resource | Access | Estimated time |
 |---|---|---|
@@ -2760,6 +3152,8 @@ This is not a complete list. Use the current replacement course and measured pra
 | Resource | Access | Estimated time |
 |---|---|---|
 | [Platform On-Demand Training, OD-SPT](https://learn.snowflake.com/en/courses/OD-SPT/) | Free; public listing links the Platform Assessment/Badge to course completion; curated labs advertised for 30 days | Four hours provider estimated effort; add practice as needed, not a verified assessment duration |
+| [Level Up: First Concepts Series](https://learn.snowflake.com/en/pages/level-up-track) | Free online nine-step learning track; current course listing, no lesson interiors reviewed | No total time published; choose relevant modules and budget practice separately |
+| [Hands-On Essentials Track](https://learn.snowflake.com/en/pages/hands-on-essentials-track/) | Free workshop/badge index across warehousing, collaboration/cost, data apps, lake, engineering, and science | No total time published; use an authorized disposable account and check current compute costs |
 | [Transition FAQ](https://publish-p93462-e887935.adobeaemcloud.com/content/dam/SnowProAssociateCertificationTransitionSnowflakeUniversityPlatformSkillsBadgeFAQs.pdf) | Public; actual two-page PDF fully read | 15–30m study estimate |
 | [Snowflake University catalog](https://learn.snowflake.com/) | Public catalog; course access/enrollment varies | 30–60m planning estimate |
 | [Platform training datasheet](https://www.snowflake.com/wp-content/uploads/2024/12/standard_spt_datasheet.pdf) | Public four-page document, course code 25A24; nine modules and historical function names | Half-day instructor-led description; not the replacement assessment runtime |
@@ -2778,7 +3172,7 @@ Badge 1 is a separate Hands-On Essentials offering, not another name for the Pla
 
 Resource details from the [COF-C03 guide](../guides/COF-C03-snowpro-core.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is not a complete list, and it is not meant to be consumed in full. Public metadata was checked September 29, 2026; paid lessons, assessments and recordings were not accessed. Provider durations below are labeled separately from this guide's optional study budgets. **VERIFY CURRENT:** Confirm content version, access expiry and actual booking availability before purchase.
+This is not a complete list, and it is not meant to be consumed in full. Public metadata was checked October 28, 2026; paid lessons, assessments and recordings were not accessed. Provider durations below are labeled separately from this guide's optional study budgets. **VERIFY CURRENT:** Confirm content version, access expiry and actual booking availability before purchase.
 
 | Resource | Access | Estimated time |
 |---|---|---|
@@ -2799,7 +3193,7 @@ Choose one route, then fill evidence gaps from primary documentation and authori
 
 Resource details from the [DEA-C02 guide](../guides/DEA-C02-snowpro-advanced-data-engineer.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is not a complete list, and it is not meant to be consumed in full. Public metadata was checked September 29, 2026; no paid lessons, recordings or practice questions were accessed. Provider estimates are separated from this guide's optional study budgets. **VERIFY CURRENT:** Confirm exam alignment, expiry, client versions and booking availability before purchasing or enrolling.
+This is not a complete list, and it is not meant to be consumed in full. Public metadata was checked October 28, 2026; no paid lessons, recordings or practice questions were accessed. Provider estimates are separated from this guide's optional study budgets. **VERIFY CURRENT:** Confirm exam alignment, expiry, client versions and booking availability before purchasing or enrolling.
 
 | Resource | Access | Estimated time |
 |---|---|---|
@@ -2821,7 +3215,7 @@ Choose resources for identified evidence gaps. Reject products promising recalle
 
 Resource details from the [GES-C02 guide](../guides/GES-C02-snowpro-specialty-gen-ai.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is not a complete list, and it is not meant to be consumed in full. Start with the official scope and one practical route, then target gaps. Public pages and the actual five-page training PDF were checked September 29, 2026. Learning estimates below are ours unless explicitly identified as provider duration. Public metadata does not establish lesson quality or complete exam coverage.
+This is not a complete list, and it is not meant to be consumed in full. Start with the official scope and one practical route, then target gaps. Public pages and the actual five-page training PDF were checked October 28, 2026. Learning estimates below are ours unless explicitly identified as provider duration. Public metadata does not establish lesson quality or complete exam coverage.
 
 | Resource | Access | Estimated time |
 |---|---|---|
@@ -2874,6 +3268,7 @@ This is not a complete list. Choose a route, map it against the current outline,
 |---|---|---|
 | [Current SSCP outline](https://www.isc2.org/certifications/sscp/sscp-certification-exam-outline) — canonical 36-objective map and seven weights | Public | Planning: 3–6h mapping and review |
 | [ISC2 self-study resources](https://www.isc2.org/certifications/sscp/sscp-self-study-resources) — official links to outline, adaptive training and study aids | Public hub; some destinations require account/payment | Planning: 1–2h selecting resources; study varies |
+| [SSCP Flash Cards](https://cloud.connect.isc2.org/sscp-flashcards) — free recall practice covering seven domains; form required for access | Public access page; account/form may be required | About 1–3 hours for a first pass and targeted repeat (author estimate); no publisher duration |
 | [Official adaptive training](https://www.isc2.org/training/online-self-paced/sscp-online-self-paced) — public seven-domain description; English course; included textbook/questions are catalog claims only | Paid/account; 90/180-day access begins at purchase | No fixed public runtime verified; earlier 35–50h was a planning estimate |
 | [Pluralsight SSCP path](https://www.pluralsight.com/paths/sscpr-systems-security-certified-practitioner-certification) — eight public course cards dated September–October 2024; conflicting September 2024/November 2021 outline labels require current gap mapping | Paid/trial; public catalog only reviewed | Header 14h; eight listed cards total 13h36m; planning: add 25–40h practical work |
 | [LinkedIn Learning/Cybrary SSCP Cert Prep](https://www.linkedin.com/learning/isc2-systems-security-certified-practitioner-sscp-cert-prep) — August 26, 2025 public listing, seven domains and nine quizzes; current detailed alignment not established | Paid/trial; public contents only reviewed | Header 6h; 30 listed clips total 6h00m59s; planning: add 20–35h practical work |
@@ -3192,6 +3587,8 @@ This is not a complete list. Choose resources to close demonstrated gaps, and ke
 | Recommended Fundamentals course; current lesson duration unavailable | [ServiceNow Administration Fundamentals](https://learning.servicenow.com/lxp?course_id=fbb6cc4847f5dd505cbdaf44846d436a&id=learning_course_prev) | Account/entitlement | Earlier 3 ILT days not reverified |
 | Earlier Welcome citation is actually a CSA certification-path route | [ServiceNow CSA certification path — earlier mislabelled Welcome link](https://learning.servicenow.com/lxp/en/now-platform/certified-system-administrator?course_id=931d939697d229587f7070871153af8c&id=learning_content_prev) | Account/loading shell | Not verified |
 | Credential navigation; no course interiors | [ServiceNow University Credential Catalog](https://learning.servicenow.com/lxp/en/credentials) | Public shell/account | 10–20 min estimate |
+| 2026 role route map; distinguish 3–6 month exam recommendation from the separate 6+ month career-path guidance | [ServiceNow Career Journeys](https://www.servicenow.com/community/s/cgfwn76974/attachments/cgfwn76974/training-certifications-forum/27136/1/Learning%20paths%20-%20ServiceNow.pdf) | Public PDF; course access/catalog details vary | About 20–30 minutes to map a path; course durations are not shown |
+| Current ServiceNow University content release index; LabX/Studio titles are catalog leads, not verified completions | [Content Releases](https://nowlearning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0010279) | Public listing; linked course shells may require account | About 15–30 minutes to locate a current item; course runtime unknown |
 | Select your instance family; homepage is not a full documentation audit | [ServiceNow Product Documentation](https://www.servicenow.com/docs/) | Public shell/browser docs | 10–20 hr selected study estimate |
 | PDI and learning entry; no instance obtained | [ServiceNow Developer Program](https://developer.servicenow.com/) | Public entry/account | 1–2 hr setup estimate, availability unverified |
 | February 2026 product metadata: 120 questions; no demo/question interiors | [ServiceNow CSA Practice Test](https://www.measureup.com/servicenow-csa-practice-test.html) | Paid; demo advertised, not opened | 2–4 hr study estimate |
@@ -3230,13 +3627,15 @@ This is not a complete list. Select resources for demonstrated gaps. Public land
 
 | Use and reading boundary | Resource | Access | Estimated time |
 |---|---|---|---:|
-| Full fresh unsigned browser main; 22 subtopics and exam contract | [Certified Application Developer Mainline Exam Blueprint](https://learning.servicenow.com/lxp/en/credentials/certified-application-developer-mainline-exam-blueprint?id=kb_article_view&sysparm_article=KB0011498) | Public browser; direct shell | 20–30 min estimate |
+| Full fresh unsigned browser main; 22 subtopics and exam contract | [Certified Application Developer Mainline Exam Blueprint](https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011498) | Public browser; direct shell | 20–30 min estimate |
 | Official path entry; current assignments/duration not visible | [Certified Application Developer Learning Path](https://learning.servicenow.com/lxp/en/now-platform/certified-application-developer?course_id=4c12ba8c87c39ad4a3bc40c5cebb3526&id=learning_content_prev) | Account/loading shell | 30–45 min planning estimate |
 | Earlier three-day ILT anchors not reverified; PDF blocked | [ServiceNow University Technical Training Catalog](https://www.servicenow.com/content/dam/servicenow-assets/public/en-us/doc-type/other-document/technical-training-portfolio.pdf) | HTTP 403 | Earlier 10–20 min reading estimate |
 | Older Washington-labeled course route; interior/duration unavailable | [Scripting in ServiceNow Fundamentals](https://learning.servicenow.com/lxp/en/now-platform/scripting-in-servicenow-fundamentals-on-demand-washington?course_id=f424ca5a87f71e143a3a84c7cebb3509&id=learning_course_prev) | Account/loading shell | Earlier three ILT days not reverified |
 | Find current Application Development Fundamentals assignment | [ServiceNow University Credential Catalog](https://learning.servicenow.com/lxp/en/credentials) | Account/entry shell | Current course duration unverified |
 | Current Welcome recommended by blueprint; no lesson interior | [Welcome to ServiceNow — current recommended course](https://learning.servicenow.com/lxp/en/now-platform/welcome-to-servicenow?course_id=386f3cf847b36a90c00af235126d430c&id=learning_course_prev) | Account/loading shell | Earlier three hours not reverified |
 | Product entry only; specific references below provide technical evidence | [ServiceNow Product Documentation](https://www.servicenow.com/docs/) | Public shell/browser docs | 15–30 hr selected study estimate |
+| 2026 role route map; choose only CAD-relevant scripting, application development, source control, and testing topics | [ServiceNow Career Journeys](https://www.servicenow.com/community/s/cgfwn76974/attachments/cgfwn76974/training-certifications-forum/27136/1/Learning%20paths%20-%20ServiceNow.pdf) | Public PDF; course access/catalog details vary | About 20–30 minutes to map a path; course durations are not shown |
+| Current ServiceNow University release index lists Studio Overview and Application Development Fundamentals as catalog leads | [Content Releases](https://nowlearning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0010279) | Public listing; linked course shells may require account | About 15–30 minutes to locate relevant material; course runtime unknown |
 | PDI/learning entry only; no instance allocated | [ServiceNow Developer Program](https://developer.servicenow.com/) | Public entry/account | 1–2 hr setup plus 20–40 hr labs estimate |
 | Public 120-question March 2026 listing; no demo/question interior | [ServiceNow CAD Practice Test](https://www.measureup.com/servicenow-cad-practice-test.html) | Paid product/public metadata | 3–5 hr study estimate |
 | Official channel title/footer only; no playback | [ServiceNow Developers YouTube Channel](https://www.youtube.com/@servicenowdevprogram) | Public video platform | 3–8 hr selected study estimate |
@@ -3337,6 +3736,7 @@ This is not a complete list, and it is not a prescription to consume everything.
 |---|---|---|---:|
 | Live level, count, duration, price, delivery, preparation and BOTS links | [SPLK-5001 certification page](https://www.splunk.com/en_us/training/certification-track/splunk-certified-cybersecurity-defense-analyst.html) | Public | 15–25 min |
 | Canonical six-domain weights, every objective and official resource names | [SPLK-5001 test blueprint](https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-cybersecurity-defense-analyst.pdf) | Public PDF | 30–60 min initially; repeat |
+| Public description of seven official Cybersecurity Defense Analyst courses; lesson access, total time and full blueprint coverage not published | [Cybersecurity Defense Analyst course descriptions](https://www.splunk.com/en_us/pdfs/training/cybersecurity-landscape-course-description.pdf) | Public PDF; course registration/access varies | No total published; about 20–30 minutes to map the sequence (author estimate), then use the chosen courses’ current catalog times |
 | Official ordered route across cyber foundations, SPL, ES investigation and hunting; select by gaps | [Cybersecurity Defense Analyst track](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-certified-cybersecurity-defense-analyst-track.pdf) | Public PDF; course registration varies | 30–60 hr estimate if completing most courses/labs |
 | Blue Team Academy, Intro to Splunk, ES foundations, data/tools, investigation and threat hunting | [Free Splunk training](https://www.splunk.com/en_us/training/free-courses/overview.html) | Free account | 10–25 hr study estimate; account lessons not reviewed |
 | Planning directory; current result list did not load, so course availability remains unverified | [Splunk course catalog](https://www.splunk.com/en_us/training/course-catalog.html) | Mixed free/paid | 15–30 min planning; course-specific |
@@ -3502,21 +3902,21 @@ This is not a complete list, and it is not meant to be consumed in full. Pick on
 |---|---|---:|
 | [Official JSE exam page and scope](https://jsinstitute.org/jse-certification) | Free official blueprint | 1–2 hours to map and recheck |
 | [JS Institute TestNow policies](https://jsinstitute.org/test-now-testing-policies) | Free official policy | 20–40 minutes before scheduling |
-| [Official JSE-40-01 Practice Test Kit](https://ums.edube.org/products/0-jsi-jse-4001-pt) | Paid official practice; USD 29 when checked | 3–6 hours across attempts and review |
+| [JSE certification page](https://jsinstitute.org/jse-certification) | Free issuer overview lists a $29 practice kit; its direct OpenEDG Store link returned HTTP 404 on October 28, 2026 | Purchase availability and current practice hours are unverified; use the free JavaScript Essentials courses for now |
 | [OpenEDG JavaScript Essentials 1](https://jsinstitute.org/javascript-essentials-1) | Free account; public six-module listing read, lessons not entered | 40 hours listed |
 | [Cisco Networking Academy JavaScript Essentials 1](https://www.netacad.com/courses/javascript-essentials-1) | Free account; only application shell retrieved | About 40 hours is a planning reference from the aligned course; partner duration unverified |
 | [MDN Dynamic Scripting with JavaScript](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting) | Free; module index and selected separate reference pages read | 15–25 hours is an author estimate; DOM/network topics exceed this scope |
 | [Microsoft Beginner's Series to JavaScript](https://learn.microsoft.com/en-us/shows/beginners-series-to-javascript/) | Free Node.js series; current page does not expose episode count/runtime | Prior 51-part claim not reverified; 4–6 hours is an author estimate |
-| [Pluralsight Professional JavaScript path](https://www.pluralsight.com/paths/javascript-2022) | Subscription; current public listing: 28 courses/38 labs/85 hours | Fundamentals 6h08m + Debugging 1h35m = 7h43m; selected guided labs add 3h24m |
+| [Pluralsight Professional JavaScript path](https://www.pluralsight.com/paths/javascript-2022) | Subscription; current public listing: 28 courses/38 labs/84 hours | Fundamentals 6h08m + Debugging 1h35m = 7h43m; selected guided labs add 3h24m |
 | [O'Reilly JavaScript: The Definitive Guide, 7th Edition](https://www.oreilly.com/library/view/javascript-the-definitive/9781491952016/) | Subscription; HTTP 403; prior 21h15m not reverified | Select early language/debugging chapters; 8–12 hours is an author estimate |
 | [Udemy Complete JavaScript Course by Jonas Schmedtmann](https://www.udemy.com/course/the-complete-javascript-course/) | Paid marketplace; HTTP 403; prior 71h10m not reverified | Select fundamentals/debugging; 12–18 hours is an author estimate |
 | [freeCodeCamp Learn JavaScript — Full Course for Beginners](https://www.youtube.com/watch?v=PkZNo7MFNFg) | Free; title/shell only, no playback/transcript review | Prior approximately 3h27m not reverified; add coding time |
 
 **VERIFY CURRENT — source limits:** Canonical exam, course and policy pages were read via the public web reader after direct requests timed out. The objective monitor failed its direct comparison; snapshots were retained after manual review. The exam page has an apparent copy error labeling the associated JSA credential as a Python data-analyst certification; it does not change JSE scope. The policy opening says entry-level exams default to non-proctored delivery, while its later generic delivery paragraph calls online proctoring the global default. Verify the applicable mode before booking. Failed attempts currently have a seven-day retake wait; account and booking screens were not inspected.
 
-The official practice product describes multiple launches but the current captured page gives no exact count. Its 12-month voucher redemption validity is separate from an exam attempt, which the practice-only product does not include. Paid practice questions were not accessed. The [Microsoft supporting repository](https://github.com/microsoft/beginners-intro-javascript-node) was archived June 15, 2026; its README assumes experience with another language and uses Node. That context matters when choosing it as a beginner supplement. Pluralsight metadata came from its headline and selected novice/entry-level listings, not paid lessons; the guided variables/data, scope, and control-flow/collections labs list 100 + 40 + 64 = 204 minutes (3h24m). No lab was entered or video watched. A source landing page is not proof of complete lesson quality or exact exam coverage.
+The issuer advertises a $29 official practice kit, but its linked OpenEDG Store product returned HTTP 404 on October 28, 2026. Availability, voucher validity, and practice access could not be confirmed; use the free JavaScript Essentials courses until the issuer link works. Paid practice questions were not accessed. The [Microsoft supporting repository](https://github.com/microsoft/beginners-intro-javascript-node) was archived June 15, 2026; its README assumes experience with another language and uses Node. That context matters when choosing it as a beginner supplement. Pluralsight metadata came from its headline and selected novice/entry-level listings, not paid lessons; the guided variables/data, scope, and control-flow/collections labs list 100 + 40 + 64 = 204 minutes (3h24m). No lab was entered or video watched. A source landing page is not proof of complete lesson quality or exact exam coverage.
 
-No exact current MeasureUp or Whizlabs JSE-40-01 product was verified. The OpenEDG practice kit explicitly identifies the active version; avoid third-party practice that does not state its blueprint and provenance.
+No exact current MeasureUp or Whizlabs JSE-40-01 product was verified. The indexed OpenEDG practice-kit page names JSE-40-01, but its current link is unavailable; avoid third-party practice that does not state its blueprint and provenance.
 
 ### CLE-10-01 — CLE C Certified Entry-Level Programmer
 
@@ -3593,7 +3993,7 @@ This is not a complete list, and it is not meant to be consumed in full. Pick on
 |---|---|---:|
 | [Official WDE-40-01 syllabus](https://jsinstitute.org/wde-exam-syllabus) | Free canonical objectives and weights | 2–3 hours to map and recheck |
 | [Official WDE certification page](https://jsinstitute.org/wde-certification) | Free version, format, cost, delivery, and policy links | 30–60 minutes before purchase |
-| [OpenEDG Web Dev 101: HTML](https://jsinstitute.org/html-essentials) | Free Core / paid Pro; public prose attributes 45+ labs and a diploma to Pro; six modules and 45+ lessons listed | Provider lists 25 hours; no account lessons audited |
+| [OpenEDG Web Dev 101: HTML (WD101)](https://edube.org/study/html-essentials) | Core is free; Full Course is USD 49 and adds quizzes, interactive work/labs, projects, final assessment, diploma, and a 20% WDE exam discount per the public Edube page | Provider estimate: 5 weeks at 1 hour/day (about 25 hours); lesson interior not reviewed |
 | [Cisco Networking Academy HTML Essentials](https://www.netacad.com/courses/html-essentials) | Partner landing returned only an application shell; account/curriculum details unverified | Author budget about 25 hours; verify actual access |
 | [MDN Learn: Structuring content with HTML](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content) | Free current lessons and challenges | 12–20 hours with project work |
 | [W3C WAI Tutorials](https://www.w3.org/WAI/tutorials/) | Free authoritative accessibility patterns | 6–10 hours for page structure, images, tables, forms, and menus |
@@ -3616,8 +4016,8 @@ Public course/index comparison is not course completion. The official CSS landin
 |---|---|---:|
 | [Official WDA-41-01 syllabus](https://jsinstitute.org/wda-exam-syllabus) | Free canonical objectives and weights | 2–3 hours to map and recheck |
 | [Official WDA certification page](https://jsinstitute.org/wda-certification) | Free version, format, price, delivery, and policy links; duration needs confirmation | 30–60 minutes before purchase |
-| [OpenEDG Web Dev 102: CSS](https://jsinstitute.org/css-essentials) | Public landing lists free Core / USD49 Pro and nine modules; prose places 45+ labs/diploma in Pro; repeated text-only tier lists remain ambiguous | 40 hours listed |
-| [OpenEDG Web Dev 101: HTML](https://jsinstitute.org/html-essentials) | Free core / paid Pro; prerequisite foundation rather than WDA substitute | 25 hours listed if HTML needs rebuilding |
+| [OpenEDG Web Dev 102: CSS (WD102)](https://www.edube.org/study/css-essentials) | Core is free; Full Course is USD 49 and adds interactive work/labs, quizzes, projects/final assessment, diploma, and a 20% WDA exam discount per the public Edube page | Provider estimate: 40 hours; 9 modules and 45+ lessons listed; no lesson interior reviewed |
+| [OpenEDG Web Dev 101: HTML (WD101)](https://edube.org/study/html-essentials) | Optional free Core / paid Full Course; prerequisite foundation rather than WDA substitute | Provider estimate: about 25 hours if HTML needs rebuilding |
 | [Cisco Networking Academy CSS Essentials](https://www.netacad.com/courses/css-essentials) | Partner link returned a 14-character application shell; access, account terms and lesson contents unverified | Author budget: about 40 hours; verify live listing |
 | [MDN Learn CSS](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics) and [CSS layout](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout) | Free current standards-oriented lessons | 20–30 hours with projects |
 | [web.dev Learn CSS](https://web.dev/learn/css/) and [Responsive Design](https://web.dev/learn/design/) | Free modern modules and exercises | 15–25 hours for WDA-relevant portions |
@@ -3797,7 +4197,7 @@ This is not a complete list and is not intended to be consumed in full. Use one 
 | Resource | Access | Estimated time |
 |---|---|---:|
 | [PCET syllabus](https://pythoninstitute.org/pcet-exam-syllabus) | Public official blueprint; code/heading conflicts recorded | Author planning budget: 2–3 hours to map all 22 objectives |
-| [Python for Testing 101](https://edube.org/study/pt101) | Free Core lessons/module tests; USD 49 Full/Pro adds interactive work, practice assessment and diploma when checked; account required | Provider estimate: four weeks at about one hour/day; provider advertises 38 labs, not independently completed |
+| [Python for Testing 101 (PT101)](https://pythoninstitute.org/python-for-testing-101) | Public course page lists Core/Pro tiers; duplicated tier copy leaves some lab/practice access unclear. No lesson interiors inspected. | Provider page: 4–5 weeks; Study Resources catalog: 20–30 hours. Keep both estimates, which are not a guaranteed duration |
 | [ISTQB Foundation overview](https://www.istqb.org/certifications/certified-tester-foundation-level) | Public overview and syllabus link; CTFL is a broader, different exam; linked PDF not read here | Author planning budget: 8–15 selected hours; no verified course runtime |
 | [Python 3.13 unittest](https://docs.python.org/3.13/library/unittest.html) | Public primary reference; selected contracts reviewed | Author planning budget: 5–10 hours with original coding |
 | [Software Testing, 2nd ed.](https://www.oreilly.com/library/view/software-testing-2nd/9780134698298/) | Prior paid-book lead; page automation-blocked and present access/contents unverified | No verified runtime; optional after checking contents and access |
@@ -3809,6 +4209,10 @@ Verify exact course availability, entitlement, price, runtime and exam code befo
 ### PCAT-31-01 — PCAT Certified Associate Tester with Python
 
 Resource details from the [PCAT-31-01 guide](../guides/PCAT-31-01-python-certified-associate-tester.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+#### October 29, 2026 source update
+
+The issuer currently marks PCAT-31-01 active and PCAT-31-02 in development; the six-block 31-01 testing syllabus remains unchanged. Its introduction still contains a conflicting 31-02/four-block description, so use the 31-01 header, alignment and six-block testing table while retaining the source conflict. [PT102](https://pythoninstitute.org/python-for-testing-102) is the strongest current official learning route: intermediate, six modules and 40+ lessons, with a provider estimate of 4–5 weeks, free Core and $49 Pro. The separate Study Resources listing gives a 30–40-hour estimate; treat these as conflicting estimates, not a normalized duration. The page's Core/Pro lab descriptions are inconsistent, so confirm entitlement before relying on free labs. PT101 is PCET preparation and only a possible Python foundation, not PCAT coverage. Official practice tests are still described as in development. No course interior was accessed. See the [current PCAT page](https://pythoninstitute.org/pcat), [PT102 page](https://pythoninstitute.org/python-for-testing-102), [Study Resources](https://pythoninstitute.org/study-resources), and current [Python 3.14 documentation](https://docs.python.org/3.14/).
 
 This is not a complete list and is not intended to be consumed in full. Use the official PT102 outline to select aligned material, maintain your own test suite, and choose targeted resources for gaps.
 
@@ -3833,6 +4237,10 @@ Verify the current exam version, course entitlement and practice product before 
 
 Resource details from the [PCES-30-01 guide](../guides/PCES-30-01-python-certified-entry-level-security-specialist.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
+#### October 29, 2026 source update
+
+The current credential page and linked v1.5 syllabus still identify PCES-30-01 as active, with the same four-block, 45-item outline (10/12/13/10 items; 22/27/29/22%). The announced practice-test window has passed: the page still says planned/coming Q3 or Q3/Q4 2026 and does not confirm release or provide a verified purchase route. The next-level PCAS Q4 notice is a separate credential, not a PCES replacement. No dedicated official PCES course surfaced in the issuer catalog reviewed; use the syllabus as the coverage checklist and perform defensive exercises only in authorized environments. Python 3.14 documentation is a current reference, while the included executable observations remain specifically tied to Python 3.13.14. See the [PCES credential page](https://pythoninstitute.org/pces), [syllabus](https://pythoninstitute.org/pces-exam-syllabus), and [Python 3.14 docs](https://docs.python.org/3.14/).
+
 This is **not a complete list** and is not intended to be consumed in full. All times below are **author planning budgets**, not measured course durations or claims of completion. Use one foundation and the relevant reference sections, then demonstrate outcomes in authorized labs.
 
 | Resource | Access | Estimated time |
@@ -3852,6 +4260,10 @@ The complete public Academy landing and Bandit introduction were read, not the i
 
 Resource details from the [PCEA-30-01 guide](../guides/PCEA-30-01-python-certified-entry-level-automation-specialist.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
+#### October 29, 2026 source update
+
+The current credential page lists PCEA-30-01 as active and no beta, limited-availability or small-market-trial statement was present in the page checked. The accepted syllabus remains dated September 2, 2025, with six blocks and 46 items; no replacement code was announced. No dedicated PCEA course surfaced in the official catalog pages reviewed. Use the syllabus as the direct checklist and a small hands-on automation portfolio; Python Essentials 1 is an optional beginner foundation only, not objective-aligned PCEA training. The credential page and [Python Essentials 1](https://pythoninstitute.org/python-essentials-1) were checked October 29; the latter's provider estimate is 6–7 weeks and its own page should be checked for current access. No course was enrolled in.
+
 This is not a complete list and is not intended to be consumed in full. The reviewed credential page did not list an aligned course; that observation does not prove no such resource exists elsewhere. Choose selected documentation and one bounded project. All hour ranges below are author planning estimates, not measured completion times, publisher guarantees or proof of exam readiness.
 
 | Resource | Access | Estimated time |
@@ -3868,11 +4280,15 @@ The complete author landing for **Automate the Boring Stuff** identifies the cur
 
 The former O'Reilly link ending in ISBN `9781803247300` could not be verified and is removed from the recommendation. Packt's confirmed listing identifies Jaime Buelta's third edition, June 29, 2026, 676 pages, print ISBN `9781806702893`. Its contents include relevant file/API/report/testing material alongside broader AI/MCP topics that are not additional PCEA objectives. The page labels 19 chapters while the visible numbered sequence runs 1–17 followed by other-books/index entries. Selected metadata, the complete visible contents list and only an opening portion of the public sample were read; full book content, paid entitlements and code execution were not reviewed. The old catalog entry is retained with an unverified-link note, not silently reassigned to another ISBN.
 
-Because delivery remains beta, third-party exam-alignment claims need particular care. Use the public official outline and original exercises; avoid recalled exam questions. Direct source receipts, manual fallback boundaries, dependency versions and remaining work are documented in the [September 30 review](research/2026-09-30-pcea-30-01-deep-review.md).
+Third-party exam-alignment claims still need particular care. Use the public official outline and original exercises; avoid recalled exam questions. Direct source receipts, manual fallback boundaries, dependency versions and remaining work are documented in the [September 30 review](research/2026-09-30-pcea-30-01-deep-review.md).
 
 ### PCEI-30-01 — PCEI Certified Entry-Level AI Specialist with Python
 
 Resource details from the [PCEI-30-01 guide](../guides/PCEI-30-01-python-certified-entry-level-ai-specialist.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+#### October 29, 2026 source update
+
+The active PCEI-30-01 syllabus remains dated December 11, 2025; the linked v1.6 PDF and six-module, 36-item map still match the accepted snapshot. No replacement or objective-map change was found. The issuer's current practice messaging is internally inconsistent: it advertises a $29 test as available, but the linked product URL returned 404 and the FAQ still says Q1 2026. Treat access as unresolved and recheck the exact store route before purchase. PAI101 is still in development; PCAI's table says Coming Soon while its FAQ retains an expired quarter. The official [PCEI page](https://pythoninstitute.org/pcei), [syllabus](https://pythoninstitute.org/pcei-exam-syllabus), and [Python 3.14 docs](https://docs.python.org/3.14/) were checked; examples in this guide remain executed only on the recorded Python 3.13.14 stack.
 
 This is not a complete list and is not intended to be consumed in full. PAI101 is listed as in development, not a completed course reviewed here. Choose one fundamentals resource and a small implementation path. All hour ranges below are **author planning budgets**, not verified course durations or completed study time. Reading a public landing page or selected table of contents does not establish completion of lessons, exercises, videos or paid chapters.
 
@@ -3894,6 +4310,10 @@ See the [dated deep-review report](research/2026-09-30-pcei-30-01-deep-review.md
 ### SPLUNK-CORE-USER — Splunk Core Certified User
 
 Resource details from the [SPLUNK-CORE-USER guide](../guides/SPLUNK-CORE-USER-splunk-core-certified-user.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+#### October 29, 2026 source update
+
+The blueprint and weighted map are unchanged. Splunk now directs candidates to Cisco's Certification Tracking System while the exam page continues to identify Pearson VUE as the delivery partner; these describe program/account routing and exam delivery respectively. The 2026 FAQ says the Core User credential is not in its listed Legacy category and coursework recertification ended March 1, 2026. The overview still advertises coursework as an option, so treat the conflict as unresolved and confirm in the current tracking system before relying on a renewal route. Splunk's [Core User track PDF](https://www.splunk.com/en_us/pdfs/training/splunk-core-certified-user-track.pdf) is an official course sequence, but it is dated 2022; use it as a topic list alongside the [current free-course catalog](https://www.splunk.com/en_us/training/free-courses/overview.html), checking course availability and lab entitlement individually. No course was enrolled in. Current [Splunk Enterprise 10.4 release notes](https://help.splunk.com/en/splunk-enterprise/release-notes-and-updates/release-notes/10.4/whats-new/welcome-to-splunk-enterprise-10.4) and [Search Manual 10.4](https://help.splunk.com/en/splunk-enterprise/search/search-manual/10.4/search-overview/get-started-with-search) are versioned product references; examples are not verified in a running 10.4 deployment. The release notes say dashboard auto-refresh requires the `auto_refresh_dashboards` capability, which defaults after upgrade to `admin` and `sc_admin`; check that capability in an authorized 10.4 environment before interpreting refresh failure.
 
 This is not a complete list, and it is not meant to be consumed in full. Pick one primary path, use documentation to resolve specific behavior, and spend at least as much time searching and building objects in a lab as watching. Commercial resources are supplementary; reconcile them with the current official blueprint and product version.
 
@@ -3918,6 +4338,10 @@ No exact current MeasureUp, Whizlabs, or Pluralsight Core User practice product 
 
 Resource details from the [SPLUNK-CORE-POWER-USER guide](../guides/SPLUNK-CORE-POWER-USER-splunk-core-certified-power-user.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
+#### October 29, 2026 source update
+
+The current PDF still has 65 multiple-choice questions and ten weighted domains, with no objective-map change found. Splunk's program overview now points to Cisco's Certification Tracking System; Pearson VUE remains the delivery partner on the exam page. The 2026 change FAQ does not list Core Power User among the credentials made Legacy, but retires coursework recertification from March 1, 2026. The general overview still describes coursework, creating a live official-source conflict; check the tracking system before acting. Add the current [2026 Power User track PDF](https://www.splunk.com/en_us/pdfs/training/splunk-core-certified-power-user-track.pdf), which organizes Working with Time, Statistical Processing, Comparing Values, Result Modification, Correlation Analysis, Knowledge Objects, Field Extractions and Data Models. The [free-course catalog](https://www.splunk.com/en_us/training/free-courses/overview.html) has selected related courses, but access and lab entitlement vary by course; no interior was accessed. Current [Splunk Enterprise 10.4 release notes](https://help.splunk.com/en/splunk-enterprise/release-notes-and-updates/release-notes/10.4/whats-new/welcome-to-splunk-enterprise-10.4), [Search Manual 10.4](https://help.splunk.com/en/splunk-enterprise/search/search-manual/10.4/search-overview/get-started-with-search), and [fillnull reference](https://help.splunk.com/en/splunk-enterprise/search/spl-search-reference/10.4/search-commands/fillnull) support versioned product study, not claims of local execution.
+
 This is not a complete list, and it is not meant to be consumed in full. Pick one primary path, use product/CIM documentation to resolve exact behavior, and spend at least as much time creating and testing knowledge objects as watching. Commercial resources are supplementary; reconcile them with the current blueprint and product/CIM versions.
 
 Hour ranges are author planning budgets, not measured completion times. The linked course sheet is from 2024; the earlier September 30 parsed reading supports its historical course list, not current access or prices. This pass's Pluralsight search response was a page shell with an unrendered template, and YouTube returned only a short shell. No specific course or video was reviewed. O'Reilly and Udemy searches were blocked. Lantern's parsed landing text matched the earlier reading, but its linked articles were not reviewed. Existing 10.4 UI and CIM reference bodies were unavailable for a fresh reading; retain their version labels and verify against the installed product.
@@ -3941,6 +4365,10 @@ No exact current MeasureUp or Whizlabs Power User practice product was verified.
 ### SPLUNK-ADVANCED-POWER-USER — Splunk Core Certified Advanced Power User
 
 Resource details from the [SPLUNK-ADVANCED-POWER-USER guide](../guides/SPLUNK-ADVANCED-POWER-USER-splunk-core-certified-advanced-power-user.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+#### October 29, 2026 source update
+
+The published blueprint still specifies 70 multiple-choice questions and the same 22 domain structure. Splunk's overview routes candidate management through Cisco's Certification Tracking System while the exam page continues to name Pearson VUE for delivery. The 2026 change FAQ does not list Advanced Power User as Legacy and says coursework recertification ended March 1, 2026; the current certification overview still mentions coursework. Confirm renewal eligibility in the tracking system before acting. The official [2026 Advanced Power User track PDF](https://www.splunk.com/en_us/pdfs/training/splunk-core-certified-advanced-power-user-track.pdf) maps a sequence across search, knowledge objects, data models and dashboards; its page states the Power User credential prerequisite and no prerequisite course. Use it with the [free-course catalog](https://www.splunk.com/en_us/training/free-courses/overview.html), checking account and lab entitlement for each item. No course interior or product lab was accessed. Current [Splunk Enterprise 10.4 release notes](https://help.splunk.com/en/splunk-enterprise/release-notes-and-updates/release-notes/10.4/whats-new/welcome-to-splunk-enterprise-10.4), [deprecated/removed features](https://help.splunk.com/en/splunk-enterprise/release-notes-and-updates/release-notes/10.4/deprecated-features/deprecated-and-removed-in-version-10.4), and [Simple XML dashboard overview](https://help.splunk.com/en/splunk-enterprise/create-dashboards-and-reports/simple-xml-dashboards/10.4/get-started-with-dashboards/dashboard-overview) provide current product context; this guide does not claim a local 10.4 runtime test. Version 10.4 has removed HTML dashboards and legacy Simple XML using `version="1.0"` fails after jQuery 2 removal; verify authorized dashboards and migrate those using the old version to `version="1.1"`. Simple XML remains relevant to this blueprint.
 
 This is not a complete list, and it is not meant to be consumed in full. Pick official training or a documentation-led lab as the primary path, then add targeted alternatives. Spend more time producing and measuring searches/dashboards than watching. Reconcile all resources with the current blueprint and your product/framework version.
 
@@ -3970,15 +4398,1130 @@ This is not a complete list, and it is not meant to be consumed end to end. Choo
 
 | Resource | Access | Estimated time | Best use |
 |---|---|---:|---|
-| [Official certification page](https://www.splunk.com/en_us/training/certification-track/splunk-certified-cybersecurity-defense-engineer.html) and [blueprint](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-cybersecurity-defense-engineer.pdf) | Free | 45–75 min | Canonical scope/recommendations |
+| [Official certification page](https://www.splunk.com/en_us/training/certification-track/splunk-certified-cybersecurity-defense-engineer.html), [blueprint](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-cybersecurity-defense-engineer.pdf), and [2026 course track](https://www.splunk.com/en_us/pdfs/training/splunk-certified-cybersecurity-defense-engineer-track.pdf) | Free | 45–75 min for exam materials; course runtime varies | Blueprint defines scope; the track is optional preparation, not an exam prerequisite |
 | [Splunk Enterprise Security docs](https://help.splunk.com/en/splunk-enterprise-security) | Free | 20–40 hr targeted | Deployed release and findings/notables terminology |
 | [Splunk SOAR docs](https://help.splunk.com/en/splunk-soar) | Free | 12–25 hr targeted | Cloud/on-prem release and paired-ES behavior |
 | [ES 8.5 detection guidance](https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.5/detections/create-event-based-detections-in-splunk-enterprise-security) and [ES/SOAR compatibility](https://help.splunk.com/en/splunk-enterprise-security-8/release-notes-and-resources/8.6/splunk-enterprise-security-release-notes/compatibility-and-regional-availability) | Free | 2–4 hr selected | Output-type contradiction and version/topology checks; compare with your release |
-| Seven blueprint-recommended official courses, plus Defense Analyst path foundations | Paid/partner/employer access may apply | 25–55 hr estimate | Structured path; verify current durations/releases |
+| [Seven recommended course titles in the 2026 track](https://www.splunk.com/en_us/pdfs/training/splunk-certified-cybersecurity-defense-engineer-track.pdf) | Course access and cost vary; some free self-paced, others paid | Total runtime not publicly stated | Optional preparation; check current course catalog, format and lab availability |
 | [Splunk Threat Research Team](https://research.splunk.com/) | Free | 8–20 hr selected | Adapt, test and govern detections; never copy blindly |
 | [Boss of the SOC](https://bots.splunk.com/) | Public availability varies | 12–30 hr selected | Defensive investigation practice, not exam content |
 | [MITRE ATT&CK](https://attack.mitre.org/) | Free | 8–20 hr targeted | Knowledge/coverage framework; not proof a detection works |
 | Synthetic ES/SOAR detection portfolio | Product lab/trial/partner access may be required | 35–70 hr | Applied evidence with destructive actions mocked |
+
+### C3000-006 — IBM Certified Bob v2 Developer - Associate
+
+Resource details from the [C3000-006 guide](../guides/C3000-006-ibm-bob-v2-developer-associate.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a curated starting point, not a complete list or a requirement to consume every resource. Times are **author estimates** based on reading scope and proposed practice unless explicitly stated otherwise; they are not IBM-published runtimes. **VERIFY CURRENT:** access, versions, downloads and plan entitlements can change.
+
+| Resource | Access | Estimated time |
+|---|---|---|
+| [Official certification page, study PDF and sample test](https://www.ibm.com/training/certification/ibm-certified-bob-v2-developer-associate-C9010800) | Public preparation links; exam/assessment booking separate | About **1–2 hours** for the 24-page study guide and objective mapping; sample-test time not measured |
+| [Official machine-readable exam objectives](https://www.ibm.com/training/credentials/getExam/C3000-006) | Public | About **20–30 minutes** to check the six domains and 52 objectives |
+| [Bob IDE docs](https://bob.ibm.com/docs/ide) and [Bob Shell docs](https://bob.ibm.com/docs/shell) | Public docs; execution needs Bob access | About **3–5 hours** of selected reading across features, configuration, account and security topics |
+| [Prompting tutorial](https://bob.ibm.com/docs/ide/tutorials/write-effective-prompts) and [project initialization tutorial](https://bob.ibm.com/docs/ide/tutorials/start-a-project) | Public docs; Bob access for practice | About **1–2 hours** to read, apply and compare prompts in a toy project |
+| [Build AI agents with Bob and watsonx Orchestrate](https://developer.ibm.com/tutorials/build-agents-mcp-tools-watsonx-orchestrate-using-bob/) | Public tutorial; Bob and Orchestrate environment required, terms may involve cost | About **2–4 hours** for setup, MCP-tool tests and deployment practice; optional and not runtime-validated here |
+| [Meet Bob: external-audience workshop](https://ibm.github.io/intro-bob-workshop/lab-6/) | Public materials; Bob access for exercises | **60 minutes**, published guided agenda; separate **30-minute** presentation; prompts, skill setup and role-based practice |
+| [IBM Bob Level 3 labs](https://ibm.github.io/bob-l3/) | Public courseware; Bob access; some linked setup routes are employee/partner-specific | About **4–6 hours**, estimated for four modules: assistance, delegation, customization and context/Shell/MCP; verify older setup and trial claims |
+| [Galaxium Travels application](https://github.com/IBM/galaxium-travels) | Public repository; local runtimes needed | About **1–2 hours** for setup and code/test inspection; reuse it for several labs rather than adding this time repeatedly; choose the tutorial's branch |
+| [IBM Bob demo collection](https://github.com/IBM/bob-demo) | Public Apache-2.0 examples; Bob and demo-specific tooling | About **30–90 minutes per selected demo**, editorial estimate; older five-mode terminology and sample defects require repair, and maintenance is disclaimed |
+| [Create and use skills](https://bob.ibm.com/docs/ide/tutorials/use-skills) | Public tutorial; Bob and demo code | About **45–60 minutes** to build a changelog skill and compare explicit/automatic activation; supports Concepts and Configuration |
+| [Generate architecture diagrams](https://bob.ibm.com/docs/ide/tutorials/generate-architecture-diagrams) | Public tutorial; Bob, Git and demo code | About **45–90 minutes** to inspect a repository, generate a diagram and compare it with the code; supports planning and code understanding |
+| [Build MCP servers with Bob](https://bob.ibm.com/docs/ide/tutorials/mcp-server-integration) | Public tutorial; Bob and Node.js | About **1–2 hours before repairs**, estimated for planning and a local tool; example helper code is incomplete and prose/code contracts differ; see caveats below |
+| [Actor-critic secure-code workflow](https://bob.ibm.com/docs/ide/tutorials/generate-secure-code) | Public tutorial; Bob and specified demo branch | About **1–2 hours** to inspect paired skills and compare generated/reviewed changes; supports security practice, not compliance certification |
+| [Getting the Most Out of Bob](https://bob.ibm.com/blog/getting-the-most-out-of-bob/) | Public first-party article | About **20–30 minutes** of reading plus optional **30–60 minutes** of applying its planning/context/verification cycle |
+| [Monolith modernization with reusable skills](https://developer.ibm.com/tutorials/ai-assisted-app-mod-workflow/) | Public tutorial; Bob, Neo4j, MinIO and additional tools | About **4–8 hours**, estimated setup and practice; advanced optional depth across skills, MCP and modernization, not a required exam stack |
+| Eight original labs in this guide | Disposable repository; account/plan requirements vary | About **8–12 hours** to produce and review the requested evidence; product execution remains pending |
+
+#### Additional-source review — October 28, 2026
+
+The ten additional resources above extend the initial documentation set with courses and examples. **VERIFY CURRENT:** these are reading/practice options, and none was executed in this review. The Level 3 setup contains older trial/registration details; use current account terms and installation docs. Galaxium Travels `main` may already contain features an older exercise asks you to add. The demo collection retains older five-mode names; its introductory skill example also has front-matter and script-path defects. Prefer the current skills tutorial when learning the actual file format.
+
+The MCP tutorial's prose asks for `search_papers` with default 5/max 20 results; its code instead names `search_arxiv` and uses default 10/max 50, with XML/formatting helpers omitted. Reconcile and test a contract before treating it as runnable code. The security tutorial is a workflow exercise: instructions and a reviewing model cannot guarantee compliance, and a user-supplied identity header alone does not authenticate a caller. Keep independent tests, scanners and human review.
+
+These supplemental materials do not resolve the general marketplace-browser gap. A PR-review video linked by IBM was inaccessible through the reader and remains in the source-candidate inbox pending content and runtime review.
+
+Avoid sources selling recalled or “actual” exam questions and guaranteed passes. Use public objectives, official preparation and independently written practice to identify understanding gaps.
+
+### NSE-6-SASE — Fortinet NSE 6 in SASE
+
+Resource details from the [NSE-6-SASE guide](../guides/NSE-6-SASE-fortinet-nse-6-sase.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective starting set, not a complete list and not a prescription to consume everything. Pick and choose the lane-specific official sources and labs that close measured gaps. Durations are estimates unless publisher-listed.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [NSE 6 in SASE](https://training.fortinet.com/local/staticpage/view.php?page=nse_6_sase) | Public | 20–30 min | Canonical requirements, options, validity, renewal and policies |
+| [FortiClient EMS Administrator exam](https://training.fortinet.com/local/staticpage/view.php?page=forticlient_ems_administrator_exam) | Public | 30–60 min | Current EMS/FortiClient/FortiGate baseline and published objectives |
+| [NSE 6 SASE course library](https://training.fortinet.com/local/library/?category=Certification:NSE_6_SASE) | Free account; labs/ILT may cost | 15–30 hr per selected lane | Locate current official EMS, EDR, or DLP course; verify version/duration after sign-in |
+| [FortiClient 7.4 documentation](https://docs.fortinet.com/product/forticlient/7.4) | Public | 15–30 hr selected | Endpoint/EMS deployment, profiles, telemetry and ZTNA dependencies |
+| [FortiEDR Administrator exam](https://training.fortinet.com/local/staticpage/view.php?page=fortiedr_administrator_exam) | Public | 30–60 min | Current EDR 7.0 objectives, contract and experience guidance |
+| [FortiEDR 7.0 course](https://training.fortinet.com/course/view.php?id=73365) and [documentation](https://docs.fortinet.com/product/fortiedr/7.0) | Free account/public; labs may cost | 20–40 hr plus labs | System, policies, events, forensics, hunting, integrations and troubleshooting |
+| [FortiDLP Administrator exam](https://training.fortinet.com/local/staticpage/view.php?page=fortidlp_administrator_exam) | Public | 45–75 min | Weighted FortiDLP 26 blueprint and official resources |
+| [FortiDLP 26 course](https://training.fortinet.com/course/view.php?id=84334) and [documentation](https://docs.fortinet.com/product/fortidlp) | Free account/public; labs may cost | 25–45 hr plus labs | Current tenant, agent, policy, data, investigation and troubleshooting behavior |
+| [What's New in FortiDLP (H1 2026)](https://video.fortinet.com/products/fortidlp/1.0/what-s-new-in-fortidlp-h1-2026) | Public official video | Not stated | Optional overview of current data-protection features; verify details against documentation |
+| [Fortinet exam policy](https://helpdesk.training.fortinet.com/en/support/solutions/articles/73000672593-exam-policy-recertification) | Public | 20–40 min | Retake, renewal, exam reuse and timing rules |
+| [Fortinet YouTube](https://www.youtube.com/@Fortinet) | Free/YouTube | 4–10 hr selected | Official feature and architecture demonstrations; verify version against docs |
+| O'Reilly, Pluralsight, Udemy, LinkedIn Learning and other courses on endpoint security, EDR hunting, ZTNA, DLP, and incident handling | Subscription/purchase may apply | 10–30 hr selected | No exact current pathway-aligned third-party course was verified; use for concepts and reconcile product claims with Fortinet |
+| Authorized endpoint/tenant lab | Entitlement, partner, or training access may be required | 30–70 hr | Deployment, policy, telemetry, failure, investigation, and rollback evidence |
+
+### NSE-6-SECURITY-OPERATIONS — Fortinet NSE 6 in Security Operations
+
+Resource details from the [NSE-6-SECURITY-OPERATIONS guide](../guides/NSE-6-SECURITY-OPERATIONS-fortinet-nse-6-security-operations.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective starting set, not a complete list and not a prescription to consume everything. Pick the chosen lane's official pages, documentation, and labs. Durations are estimates unless publisher-listed.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [NSE 6 in Security Operations](https://training.fortinet.com/local/staticpage/view.php?page=nse_6_security_operations) | Public | 20–30 min | Canonical requirements, options, inconsistent availability notes, renewal and policies |
+| [FortiSIEM Analyst exam](https://training.fortinet.com/local/staticpage/view.php?page=fortisiem_analyst_exam) | Public | 30–60 min | Current FortiSIEM 7.4 contract and objectives |
+| [FortiSIEM Analyst 7.4 course outline](https://training.fortinet.com/local/staticpage/view.php?page=library_fortisiem-analyst) and [documentation](https://docs.fortinet.com/product/fortisiem/7.4) | Fortinet account; course/lab entitlement may vary | 9 hr lecture + 9 hr estimated labs | Queries, nested lookups, rules, incidents/remediation, hunting, ML/UEBA and ZTNA; outline reviewed, lessons not completed |
+| [FortiNDR Cloud Analyst exam](https://training.fortinet.com/local/staticpage/view.php?page=fortindr_cloud_analyst_exam) | Public | 45–75 min | Current weighted FortiNDR Cloud 26 blueprint |
+| [FortiNDR Cloud Analyst 26 course outline](https://training.fortinet.com/local/staticpage/view.php?page=library_fortindr-cloud-analyst) and [documentation index](https://docs.fortinet.com/product/fortindr-cloud/26.3) | Fortinet account; course/lab entitlement may vary | 7 hr lecture + 5 hr estimated labs | Sensors, events, IQL, detections, investigations, integrations and hunting; guide names 26.3 while public docs expose 26.2.x, so verify build alignment |
+| [FortiSOAR Analyst exam](https://training.fortinet.com/local/staticpage/view.php?page=fortisoar_analyst_exam) | Public | 45–75 min | Current weighted FortiSOAR 7.6 blueprint |
+| [FortiSOAR Analyst 7.6 course outline](https://training.fortinet.com/local/staticpage/view.php?page=library_fortisoar-analyst) and [7.6 documentation](https://docs.fortinet.com/product/fortisoar/7.6) | Fortinet account; course/lab entitlement may vary | 8 hr lecture + 8 hr estimated labs | Data models, playbooks, Jinja/JSON/YAQL, connectors/APIs and troubleshooting; verify the solution-pack boundary for incident handling |
+| [NSE 6 Security Operations course library](https://training.fortinet.com/local/library/?category=Certification:NSE_6_Security_Operations) | Free account; labs/ILT may cost | 15–35 hr per lane | Locate the current official option course and verify duration/version after sign-in |
+| [FortiRecon 26 Analyst exam](https://training.fortinet.com/local/staticpage/view.php?page=fortirecon_analyst_exam) and [FortiDeceptor 6.2 Administrator exam](https://training.fortinet.com/local/staticpage/view.php?page=fortideceptor_administrator_exam) | Public | 30–60 min each | Newly available exam contracts and objective tasks; both list 60 minutes and 30–40 questions |
+| [Fortinet exam policy](https://helpdesk.training.fortinet.com/en/support/solutions/articles/73000672593-exam-policy-recertification) | Public | 20–40 min | Retake, renewal, reuse and timing rules |
+| [MITRE ATT&CK](https://attack.mitre.org/) and [Sigma rule specification](https://sigmahq.io/docs/basics/rules.html) | Public | 8–16 hr selected | Threat-model and portable detection context; not product behavior authority |
+| [Fortinet YouTube](https://www.youtube.com/@Fortinet) | Free/YouTube | 4–10 hr selected | Official demos and architecture; verify version in current docs |
+| O'Reilly, Pluralsight, Udemy and other SIEM, network detection, threat hunting, SOAR, Python/Jinja, JSON/API courses | Subscription/purchase may apply | 12–35 hr selected | Concept reinforcement; no exact current pathway-aligned third-party course was verified |
+| Authorized FortiSIEM, FortiNDR Cloud, or FortiSOAR lab | Entitlement/partner/training access may be required | 40–80 hr | Highest-value telemetry, analytics, investigation, automation, failure and recovery practice |
+
+### NSE-7-CLOUD-SECURITY — Fortinet NSE 7 in Cloud Security
+
+Resource details from the [NSE-7-CLOUD-SECURITY guide](../guides/NSE-7-CLOUD-SECURITY-fortinet-nse-7-cloud-security.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list, and it is not a prescription to consume everything. Start with the official exam contract; then select only current documentation, cloud guidance, and labs that close measured gaps. Times are publisher-listed where visible or clearly labeled estimates.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [Public Cloud Security Architect exam](https://training.fortinet.com/local/staticpage/view.php?page=public_cloud_security_architect_exam) | Public | 30–50 min | Current contract, exact unweighted objectives, products, experience, and official resources |
+| [NSE 7 in Cloud Security](https://training.fortinet.com/local/staticpage/view.php?page=nse_7_cloud_security) | Public | 20–30 min | Track purpose, prerequisite language, validity, and recertification; verify noted inconsistency |
+| [Fortinet Training Institute library](https://training.fortinet.com/local/library/?category=Certification%3ANSE_7+-+Cloud+Security) | Free account; labs/ILT may cost | 20–40 min selection; course varies | Locate current Public Cloud Security 7.6.4 Architect course and lab, avoiding older versions |
+| [Public Cloud Security 7.6.4 Architect course outline](https://training.fortinet.com/local/staticpage/view.php?page=library_public-cloud-security-architect) | Account/enrollment; separate cloud subscriptions and costs apply | 6 hr lecture + 10 hr estimated labs | Official course covers cloud design, IaC, deployment, monitoring and troubleshooting. Fortinet states students need their own AWS and Azure accounts and estimates about USD $15 per cloud vendor per day; verify current prerequisites and costs. Outline reviewed, lessons not completed. |
+| [FortiGate Public Cloud documentation](https://docs.fortinet.com/product/fortigate-public-cloud) | Public | 20–35 hr selected AWS/Azure chapters/labs | Current reference architectures, deployment, routing, HA, automation, SDN connectors, and troubleshooting |
+| [FortiWeb 7.4 documentation](https://docs.fortinet.com/product/fortiweb/7.4) | Public | 8–16 hr selected reading/labs | Web/API protection, deployment modes, certificates, policies, logging, HA, and troubleshooting |
+| [FortiCNAPP documentation](https://docs.fortinet.com/product/forticnapp) | Public | 5–10 hr selected reading/labs | Account onboarding, inventory, posture/workload risks, permissions, findings, and operations |
+| [AWS Well-Architected security pillar](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/welcome.html) | Public | 4–8 hr selected reading | Primary AWS design principles and shared-responsibility context |
+| [Azure Architecture Center: security](https://learn.microsoft.com/en-us/azure/architecture/security/security-get-started) | Public | 4–8 hr selected reading | Primary Azure architecture patterns, identity, network, monitoring, and governance context |
+| [Terraform documentation](https://developer.hashicorp.com/terraform/docs) | Public | 6–12 hr selected tutorials/labs | State, providers, modules, plans, lifecycle, automation, and safe workflow |
+| [Ansible documentation](https://docs.ansible.com/ansible/latest/) | Public | 4–10 hr selected tutorials/labs | Inventory, variables, modules, playbooks, vault, idempotence, and validation |
+| [Fortinet Training Institute policies](https://helpdesk.training.fortinet.com/support/solutions/73000238852) | Public | 30–60 min | Delivery, retake, result, voucher, integrity, and renewal policy |
+
+### NSE-7-SASE — Fortinet NSE 7 in SASE
+
+Resource details from the [NSE-7-SASE guide](../guides/NSE-7-SASE-fortinet-nse-7-sase.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list, and it is not a prescription to consume everything. Begin with the official exam page, then choose the current course, documentation, or labs that close measured gaps. Times are publisher-listed where visible or clearly labeled estimates.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [FortiSASE Architect exam](https://training.fortinet.com/local/staticpage/view.php?page=fortisase_architect_exam) | Public | 45–75 min | Current FortiSASE 26 contract, full task list, experience, and official resources |
+| [NSE 7 in SASE](https://training.fortinet.com/local/staticpage/view.php?page=nse_7_sase) | Public | 20–30 min | Credential prerequisites, timing, validity, recertification, and exam relationship |
+| [Fortinet Training Institute library](https://training.fortinet.com/local/library/?search=sase) | Free account; labs/ILT may cost | 20–40 min selection; courses vary | Find current FortiSASE Enterprise/Core and SD-WAN Enterprise/Core courses; avoid older-version entries |
+| [FortiSASE 26 Enterprise Administrator course outline](https://training.fortinet.com/local/staticpage/view.php?page=library_fortisase-enterprise-administrator) | Account/enrollment; lab entitlement may vary | 4 hr lecture + 5 hr estimated labs | Branch deployment, secure access, posture, analytics and troubleshooting; listed companion versions include FortiOS/FortiClient/FortiManager 7.4 and FortiAnalyzer 7.6 |
+| [SD-WAN Enterprise Administrator course outline](https://training.fortinet.com/local/staticpage/view.php?page=library_sd-wan-enterprise-administrator) | Account/enrollment; labs may cost | 6 hr lecture + 7 hr estimated labs | Enterprise SD-WAN architecture and operation shared with the current SASE exam; course outline only, not verified lesson coverage |
+| [FortiSASE documentation](https://docs.fortinet.com/product/fortisase) | Public | 15–25 hr selected reading/labs | Administration, architecture, deployment, reference, access, posture, logging, and troubleshooting |
+| [FortiOS 7.6 documentation](https://docs.fortinet.com/product/fortigate/7.6) | Public | 12–20 hr selected reading/labs | SD-WAN, BGP, IPsec/ADVPN, sessions, policies, and on-ramp behavior |
+| [FortiManager 7.6 documentation](https://docs.fortinet.com/product/fortimanager/7.6) | Public | 6–12 hr selected reading/labs | ZTP, templates, orchestration, variables, install and monitoring |
+| [FortiAnalyzer 7.6 documentation](https://docs.fortinet.com/product/fortianalyzer/7.6) | Public | 4–8 hr selected reading/labs | SD-WAN/SASE logs, analytics, reporting, and forwarding evidence |
+| [Fortinet Training Institute policies](https://helpdesk.training.fortinet.com/support/solutions/73000238852) | Public | 30–60 min | Current exam, retake, score, voucher, integrity, and renewal rules |
+| [Fortinet YouTube](https://www.youtube.com/@Fortinet) | Free/YouTube | 3–8 hr selected current videos | Architecture and demonstrations; reconcile every version-sensitive detail with current docs |
+
+### NSE-7-SECURE-NETWORKING — Fortinet NSE 7 in Secure Networking
+
+Resource details from the [NSE-7-SECURE-NETWORKING guide](../guides/NSE-7-SECURE-NETWORKING-fortinet-nse-7-secure-networking.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list, and it is not a prescription to consume everything. Start with the official exam contract and choose only the documentation, course sections, and labs that close measured gaps. Times are publisher-listed where visible or clearly labeled estimates and can change.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [Secure Networking Architect exam](https://training.fortinet.com/local/staticpage/view.php?page=secure_networking_architect_exam) | Public | 45–75 min | Current contract, exact tasks/ranges, versions, experience, and approved sample-question boundary |
+| [NSE 7 Secure Networking certification](https://training.fortinet.com/local/staticpage/view.php?page=nse_7_secure_networking) | Public | 20–30 min | Prerequisite, timing, validity, renewal, and exam relationship |
+| [Fortinet Training Institute library](https://training.fortinet.com/local/library/) | Free account; labs/ILT may cost | 20–40 min selection; courses vary | Find the current Enterprise Firewall, SD-WAN, FortiOS, FortiManager, and FortiAnalyzer courses named by the exam page |
+| [SD-WAN Enterprise Administrator course outline](https://training.fortinet.com/local/staticpage/view.php?page=library_sd-wan-enterprise-administrator) | Account/enrollment; labs may cost | 6 hr lecture + 7 hr estimated labs | SD-WAN architecture and operations within the comprehensive exam; course outline only, not verified lesson coverage |
+| [FortiOS 7.6 documentation](https://docs.fortinet.com/product/fortigate/7.6) | Public | 20–35 hr selected chapters/labs | HA, VDOM, Security Fabric, routing, SD-WAN, profiles, sessions, and IPsec authority |
+| [FortiManager 7.6 documentation](https://docs.fortinet.com/product/fortimanager/7.6) | Public | 12–20 hr selected chapters/labs | ZTP, policy packages, templates, variables, VPN Manager, orchestration, install and troubleshooting |
+| [FortiAnalyzer 7.6 documentation](https://docs.fortinet.com/product/fortianalyzer/7.6) | Public | 6–12 hr selected chapters/labs | SD-WAN/security logs, analytics, reports, event handling, and operational evidence |
+| [Fortinet Training Institute policies](https://helpdesk.training.fortinet.com/support/solutions/73000238852) | Public | 30–60 min | Current delivery, retake, results, voucher, integrity, and renewal policy |
+| [Fortinet YouTube](https://www.youtube.com/@Fortinet) | Free/YouTube | 3–8 hr selected current videos | Visual architecture and product demonstrations; reconcile version-sensitive steps with 7.6 docs |
+
+### NSE-7-SECURITY-OPERATIONS — Fortinet NSE 7 in Security Operations
+
+Resource details from the [NSE-7-SECURITY-OPERATIONS guide](../guides/NSE-7-SECURITY-OPERATIONS-fortinet-nse-7-security-operations.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list, and it is not a prescription to consume everything. Start with the official contract and select the course, documentation, framework, and lab sections that close measured gaps. Times are publisher-listed where visible or clearly labeled estimates.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [Security Operations Architect exam](https://training.fortinet.com/local/staticpage/view.php?page=security_operations_architect_exam) | Public | 30–50 min | Current unweighted objectives, versions, experience, and official-resource boundary |
+| [NSE 7 in Security Operations](https://training.fortinet.com/local/staticpage/view.php?page=nse_7_security_operations) and [Fortinet recertification policy](https://helpdesk.training.fortinet.com/support/solutions/articles/73000672593-exam-policy-recertification) | Public | 20–40 min | Credential prerequisites and renewal; the track page validity sentence is malformed, while the current policy states NSE certifications expire two years after issue |
+| [Fortinet Training Institute library](https://training.fortinet.com/local/library/?search=security%20operations) | Free account; labs/ILT may cost | 20–40 min selection; course varies | Locate current Security Operations 7.6 Architect course and hands-on lab |
+| [FortiSIEM 7.3 documentation](https://docs.fortinet.com/product/fortisiem/7.3) | Public | 18–30 hr selected reading/labs | Architecture, collection, parsers, queries, analytics/rules, incidents, HA and troubleshooting |
+| [FortiSOAR 7.6 documentation](https://docs.fortinet.com/product/fortisoar/7.6) | Public | 18–30 hr selected reading/labs | Cases, queues/shifts, war rooms, connectors, playbooks, Jinja, debugging and administration |
+| [MITRE ATT&CK](https://attack.mitre.org/) | Public | 5–10 hr selected techniques/data sources | Primary adversary-behavior vocabulary and detection data-source mapping |
+| [NIST SP 800-61 Rev. 3](https://csrc.nist.gov/pubs/sp/800/61/r3/final) | Public | 4–7 hr | Current primary incident-response recommendations and organizational integration |
+| [Fortinet Training Institute policies](https://helpdesk.training.fortinet.com/support/solutions/73000238852) | Public | 30–60 min | Delivery, retake, results, integrity, voucher, and renewal policy |
+| [Fortinet YouTube](https://www.youtube.com/@Fortinet) | Free/YouTube | 3–8 hr selected current videos | Official SOC/product demonstrations; verify version and reproduce with synthetic evidence |
+
+### NSE-I-OT-SECURITY — Fortinet Industry Certification in OT Security
+
+Resource details from the [NSE-I-OT-SECURITY guide](../guides/NSE-I-OT-SECURITY-fortinet-industry-ot-security.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective starting set, not a complete list and not a prescription to consume everything. Choose official baseline documents, standards context, and authorized hands-on work that close measured gaps. Times are estimates unless publisher-listed.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [Industry Certification in OT Security](https://training.fortinet.com/local/staticpage/view.php?page=nse_industry_ot_security) | Public | 25–40 min | Canonical prerequisites, track/timing requirements, validity and renewal |
+| [OT Security Architect exam](https://training.fortinet.com/local/staticpage/view.php?page=ot_security_architect_exam) | Public | 45–75 min | Current product baseline, published objective groups, resources and experience |
+| [NSE Industry course library](https://training.fortinet.com/local/library/?category=Certification:NSE_Industry) | Free account; labs/ILT may cost | 30–60 hr estimate plus labs | Locate current OT Security 7.6 Architect and supporting Fortinet courses; verify duration after sign-in |
+| [FortiOS 7.6 Administration Guide](https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide) | Public | 20–40 hr selected | Segmentation, industrial/application control, IPS, automation, logging and operations |
+| [FortiAnalyzer 7.6 documentation](https://docs.fortinet.com/product/fortianalyzer/7.6) | Public | 12–25 hr selected | Registration, event handlers, reports, evidence, storage and troubleshooting |
+| [FortiSIEM 7.4 documentation](https://docs.fortinet.com/product/fortisiem/7.4) | Public | 12–25 hr selected | OT telemetry, enrichment, rules, incidents and risk context |
+| [FortiNAC-F 7.6 documentation](https://docs.fortinet.com/product/fortinac-f/7.6) | Public | 15–30 hr selected | Asset visibility, profiling, segmentation/access, integrations and HA |
+| [NIST SP 800-82 Rev. 3](https://csrc.nist.gov/pubs/sp/800/82/r3/final) | Public | 8–14 hr selected | Authoritative OT security architecture, threats and controls context |
+| [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/) | Public | 4–8 hr selected | Threat-behavior and detection coverage context; not a product blueprint |
+| [CISA ICS resources](https://www.cisa.gov/topics/industrial-control-systems) | Public | 5–12 hr selected | Advisories, recommended practices and incident context |
+| [Fortinet YouTube](https://www.youtube.com/@Fortinet) | Free/YouTube | 4–10 hr selected | Official OT/Fortinet demonstrations; verify versions in current documentation |
+| O'Reilly, Pluralsight, Udemy, SANS/other training on ICS/OT networking, IEC 62443, incident response and industrial protocols | Subscription/purchase may apply | 15–50 hr selected | Concepts and alternate instruction; no exact current certification-aligned third-party course was verified |
+| Authorized OT cyber range or simulated plant lab | Paid/partner/lab access may be required | 50–100 hr | Highest-value safe architecture, traffic, failure, recovery and incident practice |
+
+### PANW-CLOUD-SECURITY-ENGINEER — Palo Alto Networks Certified Cloud Security Engineer
+
+Resource details from the [PANW-CLOUD-SECURITY-ENGINEER guide](../guides/PANW-CLOUD-SECURITY-ENGINEER-palo-alto-networks-cloud-security-engineer.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective starting set, not a complete list and not a prescription to consume everything. Pick and choose the official documentation, provider fundamentals, focused courses, and hands-on labs that close your gaps. Times are planning estimates unless a provider publishes duration; access, licensing, titles, versions and pricing can change.
+
+- [Official certification page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-cloudsec-engineer) and [July 2026 datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/palo-alto-networks-cloudsec-engineer.pdf) — **60–90 minutes** to annotate the unusually detailed blueprint and prerequisite list; public; canonical scope.
+- [Palo Alto Networks Certification Handbook](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf) — **30–45 minutes**; public; verify delivery, score, retakes, validity/renewal, accommodation, and program rules.
+- [Official Palo Alto Networks digital learning](https://learn.paloaltonetworks.com/learn) — locate the **Cloud Security Engineer** learning path; **estimate 25–45 hours** depending on background; learning/partner login may be required and the public certification link currently resolves to the learning portal rather than a stable deep link.
+- [Cortex Cloud documentation](https://docs.paloaltonetworks.com/resources/all-products-a-z) — **40–70 hours targeted reading and authorized labs**; public main documentation, though tenant help/features require entitlement; canonical product source for all six domains.
+- [Cortex XDR 5.x case detail](https://docs-cortex.paloaltonetworks.com/r/Cortex-XDR/Cortex-XDR-5.x-Documentation/Detailed-View) and [Cortex XSIAM documentation](https://cortex-docs.paloaltonetworks.com/) — **10–20 hours selected**; public; useful for case timelines, causality, detections and response workflows that overlap some runtime concepts; products and entitlements remain distinct.
+- [Cortex Cloud CSP onboarding tiers and licensing](https://docs-cortex.paloaltonetworks.com/r/Cortex-CLOUD/Cortex-Cloud-Posture-Management-Documentation/Understand-CSP-onboarding-tiers-and-licensing?contentId=Pgg5HMfhT2f1MKpUnTKXHw) — public current documentation; compare foundational and comprehensive permissions/features, then verify live SKU, add-ons and region before a lab.
+- [AWS security documentation](https://docs.aws.amazon.com/security/), [Microsoft Azure security documentation](https://learn.microsoft.com/azure/security/), [Google Cloud security documentation](https://cloud.google.com/docs/security), and [OCI security documentation](https://docs.oracle.com/en-us/iaas/Content/Security/Concepts/security.htm) — **20–40 hours targeted**; public; focus IAM hierarchy/conditions, audit/config, network, encryption, organization onboarding and native CLIs.
+- [Kubernetes documentation](https://kubernetes.io/docs/) and [Kubernetes Security Checklist](https://kubernetes.io/docs/concepts/security/security-checklist/) — **12–25 hours plus labs**; public; cover RBAC/service accounts, admission, networking, workloads, secrets, supply chain and troubleshooting.
+- [OpenTofu/Terraform documentation](https://opentofu.org/docs/), [AWS CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html), [Bicep](https://learn.microsoft.com/azure/azure-resource-manager/bicep/), and [Helm](https://helm.sh/docs/) — **20–40 hours selected and practiced**; public; be able to read plan/template/chart, IAM/resources, state, drift, failure and rollback. HashiCorp licensing/access may affect which Terraform resources you choose.
+- [GitHub secure use reference](https://docs.github.com/en/code-security), [SARIF 2.1.0 standard](https://docs.oasis-open.org/sarif/sarif/v2.1.0/sarif-v2.1.0.html), and [OpenSSF resources](https://openssf.org/resources/) — **10–18 hours selected**; public; useful for VCS integration, code scanning, interchange and supply-chain traceability.
+- [NIST SP 800-53 Rev. 5](https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final), [NIST SSDF](https://csrc.nist.gov/pubs/sp/800/218/final), [CVSS v4.0 specification](https://www.first.org/cvss/v4.0/specification-document), and [MITRE ATT&CK Cloud](https://attack.mitre.org/matrices/enterprise/cloud/) — **12–25 hours targeted**; public; standards/framework context, not a substitute for current product behavior.
+- [Palo Alto Networks LIVEcommunity](https://live.paloaltonetworks.com/) and [official YouTube channel](https://www.youtube.com/@PaloAltoNetworks) — **6–15 hours selected Cortex Cloud demos/release/troubleshooting content**; public; corroborate older media/community answers with July/August 2026 docs.
+- Authorized cloud sandboxes and a Cortex Cloud tenant or partner lab — **40–80 hours**; cloud charges and partner/tenant access may apply; use budgets, synthetic data, disposable identities/resources and cleanup. This is the highest-value preparation for the engineering-level scope.
+- [Cortex Platform Management OLX announcement](https://live.paloaltonetworks.com/t5/news/introducing-palo-alto-networks-nbsp-on-demand-learning/ta-p/1252677) — optional free foundational orientation announced by Palo Alto Networks; Learning Center course lessons were not inspectable here and do not replace the datasheet or authorized hands-on work.
+- O’Reilly, Pluralsight, Udemy, A Cloud Guru/other vendor courses on CNAPP, multicloud IAM, Kubernetes, DevSecOps, IaC and cloud incident response — **15–50 hours selected**; subscription/purchase may apply; no current course specifically aligned to this July 2026 credential was verified. Map modules to the official blueprint and primary docs.
+- Practice questions, if used — **2–4 hours per timed set plus review**; no current official, MeasureUp, or Whizlabs credential-specific practice product was verified September 2, 2026. Use authorized, explanation-rich questions only; avoid dumps and do not infer readiness from a single score.
+
+### PANW-CLOUD-SECURITY-PROFESSIONAL — Palo Alto Networks Certified Cloud Security Professional
+
+Resource details from the [PANW-CLOUD-SECURITY-PROFESSIONAL guide](../guides/PANW-CLOUD-SECURITY-PROFESSIONAL-palo-alto-networks-cloud-security-professional.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list, and it is not meant to be consumed in full. Start with the blueprint and official path, then select standards, provider docs, and labs for measured gaps. Cloud/product interfaces change; record the tenant, module, provider, and date used.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [Cloud Security Professional page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-cloudsec-professional) | Public | 10–15 minutes | Current credential, datasheet, learning path, and registration |
+| [August 2025 datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/cloudsec-professional-datasheet.pdf) | Public PDF | 45–75 minutes | Canonical five-domain scope and terminology |
+| [Certification Handbook](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf) | Public PDF | 30–45 minutes | Scoring, ESL, results, retakes, validity, renewal, and integrity |
+| [Official digital learning](https://learn.paloaltonetworks.com/learn) | Free account/login may be required | 30 minutes planning; modules vary | Follow the certification-page learning plan and record live durations |
+| [Cortex Cloud documentation](https://docs.paloaltonetworks.com/resources/all-products-a-z) | Public | 25–45 hours selected topics/labs | Platform, application, posture, runtime, data, identity, SOC, onboarding, and agents |
+| [Cortex Cloud CSP onboarding tiers and licensing](https://docs-cortex.paloaltonetworks.com/r/Cortex-CLOUD/Cortex-Cloud-Posture-Management-Documentation/Understand-CSP-onboarding-tiers-and-licensing?contentId=Pgg5HMfhT2f1MKpUnTKXHw) and [operational workflows](https://docs-cortex.paloaltonetworks.com/r/Cortex-CLOUD/Cortex-Cloud-Posture-Management-Documentation/Operational-workflows) | Public | 1–3 hours selected | Distinguish onboarding entitlements and review posture coverage; confirm current tenant SKUs and add-ons |
+| [Cortex Platform Management OLX announcement](https://live.paloaltonetworks.com/t5/news/introducing-palo-alto-networks-nbsp-on-demand-learning/ta-p/1252677) | Free according to Palo Alto Networks announcement; Learning Center access may vary | Course lessons/hours not inspected | Optional Cortex fundamentals; not a substitute for this weighted blueprint or hands-on preparation |
+| [AWS Security Learning Plan](https://explore.skillbuilder.aws/learn/learning_plan/view/91/security-learning-plan) | Free account; cloud-provider-specific | 10–20 hours selected fundamentals | AWS shared responsibility, IAM, logging, posture, workloads; not Cortex-specific |
+| [Microsoft Learn: Implement network security controls in Azure](https://learn.microsoft.com/en-us/training/paths/implement-network-security-controls-azure/) | Free | About 3 hours plus labs | Current Azure network-security path; add identity, logging, and workload modules for broader coverage |
+| [Google Cloud security learning](https://cloud.google.com/learn/training/security) | Free/paid paths | 8–20 hours selected content | GCP security and operations context; not Cortex-specific |
+| [OWASP Web Security Testing Guide](https://owasp.org/www-project-web-security-testing-guide/) | Public | 8–15 hours selected safe labs | Web/API testing concepts for authorized applications |
+| [NIST Secure Software Development Framework](https://csrc.nist.gov/pubs/sp/800/218/final) | Public primary guidance | 3–5 hours | SDLC, supply-chain, build, vulnerability, and remediation practices |
+| [Palo Alto Networks YouTube](https://www.youtube.com/@PaloAltoNetworks) | Free video | 4–10 hours selected current videos | Cortex Cloud visual overview/demos; verify current names and licensing |
+| [O'Reilly Cloud Security Handbook](https://www.oreilly.com/library/view/cloud-security-handbook/9781119816287/) | Paid; vendor-neutral/broader | 15–25 hours selected chapters | Architecture, IAM, data, workloads, DevSecOps, monitoring, and response context |
+
+No current official practice exam, MeasureUp product, or Whizlabs product explicitly aligned to this exact Cloud Security Professional blueprint was verified. Prefer authorized build-and-defend labs and current product documentation over unsourced question banks.
+
+### PANW-CYBERSECURITY-PRACTITIONER — Palo Alto Networks Certified Cybersecurity Practitioner
+
+Resource details from the [PANW-CYBERSECURITY-PRACTITIONER guide](../guides/PANW-CYBERSECURITY-PRACTITIONER-palo-alto-networks-cybersecurity-practitioner.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list, and it is not a prescription to consume everything. Start with the blueprint, select the official learning modules that close measured gaps, and use standards/labs for durable concepts. Durations are publisher-listed or clearly labeled estimates and can change.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [Cybersecurity Practitioner certification page](https://www.paloaltonetworks.com/services/education/panw-cybersecurity-practitioner) | Public | 10–15 minutes | Current credential identity, datasheet, learning path, and registration |
+| [December 2025 exam datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/practitioner-datasheet.pdf) | Public PDF | 45–75 minutes | Canonical six-domain weighted blueprint and named product functions |
+| [Palo Alto Networks Certification Handbook](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf) | Public PDF | 30–45 minutes | Scoring, ESL, retakes, validity, renewal, integrity, and result policy |
+| [Official Palo Alto Networks digital learning](https://learn.paloaltonetworks.com/learn) | Free account/login may be required | 20–30 minutes planning; modules vary | Locate the Cybersecurity Practitioner path; the public certification page currently resolves to the portal rather than a stable deep link |
+| [Palo Alto Networks technical documentation](https://docs.paloaltonetworks.com/) | Public | 8–15 hours selected topics | Current NGFW, Prisma, Cortex, cloud, and CDSS behavior |
+| [MITRE ATT&CK Enterprise](https://attack.mitre.org/matrices/enterprise/) | Public | 3–6 hours overview and mapping lab | Tactics, techniques, sub-techniques, software/groups, mitigations, and data sources |
+| [NIST SP 800-207 Zero Trust Architecture](https://csrc.nist.gov/pubs/sp/800/207/final) | Public | 2–4 hours | Durable Zero Trust concepts and policy decision/enforcement architecture |
+| [Cortex Cloud documentation](https://docs.paloaltonetworks.com/resources/all-products-a-z) | Public | 3–6 hours selected current pages | Code/cloud/runtime/SOC platform mapping; verify packaging |
+| [Cortex XDR 5.x case details](https://docs-cortex.paloaltonetworks.com/r/Cortex-XDR/Cortex-XDR-5.x-Documentation/Detailed-View) | Public | 3–6 hours selected current pages | Current case timelines, causality chains, issues/insights and response; keep XDR product/version separate from Cortex Cloud |
+| [Cortex Platform Management OLX announcement](https://live.paloaltonetworks.com/t5/news/introducing-palo-alto-networks-nbsp-on-demand-learning/ta-p/1252677) | Free according to Palo Alto Networks announcement; Learning Center access may vary | Course lessons/hours not inspected | Optional Cortex fundamentals only; the six-domain Practitioner path was not inspected and this is not full exam coverage |
+| [Palo Alto Networks YouTube](https://www.youtube.com/@PaloAltoNetworks) | Free video | 3–8 hours selected current videos | Visual product/concept explanations; map every video to a blueprint gap |
+| [Palo Alto Networks Cybersecurity Fundamentals](https://www.oreilly.com/videos/palo-alto-networks/9781835885468/) | Paid/O'Reilly; 2024 course | 6h47m listed plus labs | Broad alternate introduction; older product names require current-doc reconciliation |
+| [Pluralsight Palo Alto Firewalls for Network Protection](https://www.pluralsight.com/paths/palo-alto-firewalls-for-network-protection) | Paid; older NGFW-focused path | About 4h05m listed core course plus labs | Network-security subset only; not full exam coverage and may use older UI/features |
+| [NDG Cybersecurity Essentials PAN8 labs](https://www.netdevgroup.com/content/paloalto/labs/cybersecurity_essentials.html) | Institution/NETLAB+ access; academic partner may be required | 12 labs; plan 12–24 hours | Legacy but practical Zero Trust/authentication/App-ID/decryption/endpoint-style exercises; reconcile PAN-OS version |
+
+No current official practice exam, MeasureUp product, or Whizlabs product explicitly aligned to this exact Practitioner blueprint was verified. Prefer original scenario checks and the current official learning path over question banks that do not identify source, version, and authorization.
+
+### PANW-NETWORK-SECURITY-ANALYST — Palo Alto Networks Certified Network Security Analyst
+
+Resource details from the [PANW-NETWORK-SECURITY-ANALYST guide](../guides/PANW-NETWORK-SECURITY-ANALYST-palo-alto-networks-network-security-analyst.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list, and it is not meant to be consumed in full. Start with the blueprint and page-linked official path, then choose current SCM/PAN-OS documentation and authorized labs for gaps. Record platform/version because interfaces and feature support change.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [Network Security Analyst page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-netsec-analyst) | Public | 10–15 minutes | Current credential, datasheet, learning path, registration |
+| [August 2025 datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/netsec-analyst-datasheet.pdf) | Public PDF | 45–75 minutes | Canonical four-domain weighted objective map |
+| [Certification Handbook](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf) | Public PDF | 30–45 minutes | Scoring, ESL, result, retake, validity, renewal, and integrity |
+| [Official digital learning](https://learn.paloaltonetworks.com/learn) | Free account/login may be required | 30 minutes planning; modules vary | Follow the certification-page plan and record current duration/version |
+| [Strata Cloud Manager documentation](https://docs.paloaltonetworks.com/strata-cloud-manager) | Public | 20–35 hours selected topics/labs | Folders/snippets, objects/policy, deployment, insights, optimizer, logs, incidents, health |
+| [Get Started with Strata Cloud Manager](https://docs.paloaltonetworks.com/strata-cloud-manager/navigation/get-started) | Public | 1–2 hours selected | Current folder scope, configuration, variables/snippets and push status; verify feature availability by managed product, service and license |
+| [PAN-OS policy documentation](https://docs.paloaltonetworks.com/pan-os) | Public | 15–25 hours selected topics | Security/NAT/decryption/override/PBF/profiles/objects and packet/runtime behavior |
+| [PAN-OS NAT rules](https://docs.paloaltonetworks.com/ngfw/networking/nat/nat-policy-rules), [decryption policy rules](https://docs.paloaltonetworks.com/network-security/decryption/administration/enabling-decryption/create-decryption-policy-rule), and [decryption profiles](https://docs.paloaltonetworks.com/network-security/decryption/administration/enabling-decryption/create-decryption-profile) | Public | 4–8 hours selected | First-match NAT behavior and current decryption setup; note version- and model-specific behavior |
+| [Strata Cloud Manager: NGFW Management OLX announcement](https://live.paloaltonetworks.com/t5/news/introducing-palo-alto-networks-nbsp-on-demand-learning/ta-p/1252677) | Free according to Palo Alto Networks announcement; Learning Center access may vary | Course lessons/hours not inspected | Optional SCM orientation, not full Network Security Analyst coverage; public announcement inspected, course content was not |
+| [Security Policy Best Practices](https://docs.paloaltonetworks.com/best-practices/security-policy-best-practices) | Public | 5–10 hours | App-based migration, profiles, decryption, cleanup, and Policy Optimizer context |
+| [Palo Alto Networks YouTube](https://www.youtube.com/@PaloAltoNetworks) | Free video | 4–10 hours selected current demos | SCM/Strata architecture and workflow visuals; verify current UI |
+| [Pluralsight Palo Alto Firewalls for Network Protection](https://www.pluralsight.com/paths/palo-alto-firewalls-for-network-protection) | Paid; older path | About 4h05m listed core course plus labs | PAN-OS policy subset; not SCM-complete and may use older UI |
+| [NDG PAN11 Firewall Essentials](https://www.netdevgroup.com/online/courses/cybersecurity/pan11-firewall-essentials) | Paid/institutional | 14 labs; plan 15–25 hours | Authorized firewall configuration practice; map older PCNSA alignment to this blueprint |
+
+No current official practice exam, MeasureUp product, or Whizlabs product explicitly aligned to this exact Network Security Analyst blueprint was verified. Prefer current documentation and original change/troubleshooting labs over unsourced question banks.
+
+### 1Z0-1067-26 — Oracle Cloud Infrastructure Cloud Operations Professional
+
+Resource details from the [1Z0-1067-26 guide](../guides/1Z0-1067-26-oracle-cloud-infrastructure-cloud-operations-professional.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective learning path, not a complete list of OCI operations resources.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official OCI Cloud Operations Professional learning path](https://mylearn.oracle.com/ou/learning-path/become-an-oci-cloud-operations-professional-2026/163390) | Oracle account/subscription may be required | **22+ hours** as published by Oracle University |
+| [OCI APM with OpenTelemetry tutorial](https://docs.oracle.com/en/learn/oci-apm-with-opentelemetry/index.html) | Public tutorial; OCI tenancy and Node.js sample app required; usage may incur charges | No publisher duration; 2–4 hours is a coordinator estimate for selected steps | Instrument an application, send traces/metrics to APM and logs to Logging Analytics; current commands and tenant costs must be verified |
+| [OCI documentation](https://docs.oracle.com/en-us/iaas/Content/home.htm) | Public | **12–18 hours** targeted operational reading |
+| Eight labs in this guide | Authorized OCI tenancy | **28–40 hours** plus two timed incidents |
+
+### 1Z0-1072-26 — Oracle Cloud Infrastructure Architect Associate
+
+Resource details from the [1Z0-1072-26 guide](../guides/1Z0-1072-26-oracle-cloud-infrastructure-architect-associate.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective learning path, not a complete list of OCI architecture resources.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official OCI Architect Associate learning path](https://mylearn.oracle.com/ou/learning-path/become-an-oci-architect-associate-2026/162234) | Oracle account/subscription may be required | **27+ hours** as published by Oracle University |
+| [OCI network and connectivity architecture](https://docs.oracle.com/en/solutions/oci-best-practices/define-your-network-and-connectivity-architecture1.html) and [workload-networking design playbook](https://docs.oracle.com/en/solutions/oci-best-practices-networking/index.html) | Public architecture guidance | No publisher duration; 1–2 hours for selected decisions is an estimate | Compare redundant FastConnect/VPN, CIDR, service gateway and hub/spoke choices; apply to a design scenario, not as a complete course |
+| [OCI best practices and reference architectures](https://docs.oracle.com/en/solutions/oci-best-practices/) | Public | **8–12 hours** targeted study |
+| Eight labs in this guide | Authorized OCI tenancy | **24–36 hours** plus two timed design reviews |
+
+### 1Z0-1084-26 — Oracle Cloud Infrastructure Developer Professional
+
+Resource details from the [1Z0-1084-26 guide](../guides/1Z0-1084-26-oracle-cloud-infrastructure-developer-professional.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective learning path, not a complete list of OCI development resources.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official OCI Developer Professional learning path](https://mylearn.oracle.com/ou/learning-path/become-an-oci-developer-professional-2026/162926) | Oracle account/subscription may be required | **19+ hours** as published by Oracle University |
+| [Deploy an application with OCI DevOps CI/CD on Kubernetes](https://docs.oracle.com/en/learn/oci-devops-cicd-on-kubernetes/index.html) | Public tutorial; OCI tenancy, OKE and registry resources required; charges may apply | No publisher duration; 2–4 hours is a coordinator estimate with cleanup | Build a project/pipeline and deploy a sample app; complements rather than replaces the Functions, streaming and security scope |
+| [OCI services and developer documentation](https://docs.oracle.com/en-us/iaas/Content/services.htm) | Public | **10–14 hours** targeted study |
+| Eight labs in this guide | Authorized OCI tenancy or local substitutes | **26–38 hours** plus one timed build-and-diagnose exercise |
+
+### 1Z0-1085-26 — Oracle Cloud Infrastructure Foundations Associate
+
+Resource details from the [1Z0-1085-26 guide](../guides/1Z0-1085-26-oracle-cloud-infrastructure-foundations-associate.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective learning path, not a complete list of OCI resources.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official OCI Foundations Associate learning path](https://mylearn.oracle.com/ou/learning-path/-become-an-oci-foundations-associate-2026/163541) | Oracle account; exam listed as free | **7+ hours** as published by Oracle University |
+| [Get started with OCI basics](https://docs.oracle.com/en/learn/oci-basics-tutorial/) | Oracle-provided free lab; personal-tenancy resources may incur charges | No publisher duration; 1–2 hours is an estimate for this tutorial | Guided VCN, compute, block-volume and web-service practice; stay in the assigned compartment and terminate billable resources |
+| [OCI release notes](https://docs.oracle.com/en-us/iaas/releasenotes/index.htm) | Public | Variable | Current service and region announcements; use as a discovery index, not an exam blueprint |
+| [OCI overview and concepts](https://docs.oracle.com/en-us/iaas/Content/GSG/Concepts/baremetalintro.htm) | Public | **4–6 hours** targeted reading |
+| Eight labs in this guide | Authorized OCI tenancy or paper design | **10–16 hours** plus review |
+
+### 1Z0-1104-26 — Oracle Cloud Infrastructure Security Professional
+
+Resource details from the [1Z0-1104-26 guide](../guides/1Z0-1104-26-oracle-cloud-infrastructure-security-professional.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective learning path, not a complete list of OCI security resources.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official OCI Security Professional learning path](https://mylearn.oracle.com/ou/learning-path/become-a-cloud-security-professional-2026/163254) | Oracle account/subscription may be required | **23+ hours** as published by Oracle University |
+| [Data Safe Crypto Posture Assessment overview](https://docs.oracle.com/en-us/iaas/data-safe/doc/crypto-posture-assessment-overview.html) | Public | No duration | Related current feature documentation; check supported targets, region and IAM before use |
+| [OCI IAM security guidance](https://docs.oracle.com/en-us/iaas/Content/Security/Reference/iam_security.htm) | Public | **8–12 hours** plus linked service guidance |
+| Eight labs in this guide | Authorized OCI tenancy and synthetic data | **24–36 hours** plus two timed incidents |
+
+### C1000-175 — IBM Certified Associate - Security QRadar SIEM V7.5
+
+Resource details from the [C1000-175 guide](../guides/C1000-175-ibm-security-qradar-siem-associate.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective learning path, not a complete list of QRadar resources.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official C1000-175 exam record](https://www.ibm.com/training/credentials/getExam/C1000-175) | Public | **25 minutes** for contract and objectives |
+| [IBM QRadar SIEM 7.5 documentation](https://www.ibm.com/docs/en/qsip/7.5) | Public; automation may be blocked | **18–28 hours** for selected concepts and procedures |
+| [QRadar SIEM Foundations (BQ105G)](https://www.ibm.com/training/course/ibm-qradar-siem-foundations-BQ105G) | Paid, instructor-led; labs included | **24 hours** | QRadar SIEM 7.5 concepts, flows, rules, offenses, AQL, assets, reporting and administration; course description read, labs not inspected |
+| [QRadar SIEM Foundation badge requirements](https://www.ibm.com/support/pages/how-can-i-earn-ibm-qradar-siem-foundation-badge-completing-security-learning-academy-course) | Free Security Learning Academy account | 13–14h estimated lessons; separate 2h quiz estimate | IBM lists 19 lessons; the badge quiz is not a C1000-175 practice exam |
+| Eight labs in this guide | Authorized QRadar lab | **18–26 hours** plus one timed review |
+
+### C1000-184 — IBM Certified Db2 13 for z/OS Database Administrator - Associate
+
+Resource details from the [C1000-184 guide](../guides/C1000-184-ibm-db2-13-zos-database-administrator.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective learning path, not a complete list of Db2 for z/OS resources.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official C1000-184 exam record](https://www.ibm.com/training/credentials/getExam/C1000-184) | Public | **25 minutes** for contract and objectives |
+| [IBM Db2 13 for z/OS documentation](https://www.ibm.com/docs/en/db2-for-zos/13.0.0) | Public; automation may be blocked | **28–44 hours** for selected administration topics |
+| [Introduction to Db2 for z/OS PDF](https://www.ibm.com/docs/en/SSEPEK_13.0.0/pdf/db2z_13_introbook.pdf) | Public; an authorized Db2 for z/OS subsystem and ID are needed to execute | Selected DB2I/SPUFI modules; no vendor duration stated | Two-module SQL/utility tutorial; use a sanctioned training subsystem, not production |
+| [Db2 13 Basic Database Administration (CV845G)](https://www.ibm.com/training/search?query=CV845G) | IBM instructor-led course listing; paid enrollment may apply | Three days in the current class listing; detailed syllabus not available here | Search by course code CV845G; course outline was not exposed |
+| [Db2 13 for z/OS Introduction to System Administration (CV854G)](https://www.ibm.com/training/course/db2-for-zos-13-introduction-to-system-administration-CV854G) | Paid, instructor-led | **24 hours** | Subsystem operations, authority, catalog, logs, utilities, monitoring and recovery; higher experience prerequisites; course description read, labs not inspected |
+| Eight labs in this guide | Authorized z/OS training environment or simulation | **24–40 hours** plus one timed review |
+
+### C1000-185 — IBM Certified watsonx Generative AI Engineer - Associate
+
+Resource details from the [C1000-185 guide](../guides/C1000-185-ibm-watsonx-generative-ai-engineer.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective learning path, not a complete list of watsonx resources.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official C1000-185 exam record](https://www.ibm.com/training/credentials/getExam/C1000-185) | Public | **25 minutes** for contract and objectives |
+| [IBM watsonx documentation](https://www.ibm.com/docs/en/watsonx) | Public; automation may be blocked | **12–20 hours** for selected product workflows |
+| [IBM watsonx Generative AI Engineer v1.1 learning path](https://www.ibm.com/training/learning-path/ibm-certified-watsonx-generative-ai-engineer-v11-associate-1054) | IBM account may be needed to enroll; listed course may be no-cost | Includes a **3-hour** Watsonx Technical Essentials course | Product foundation for watsonx.ai; the path is labeled v1.1 while the exam remains v1, so do not treat it as an exam revision |
+| [IBM Developer: get started with generative AI assets in watsonx](https://developer.ibm.com/articles/awb-get-started-with-watsonx/) | Public article; watsonx account needed to run examples | No publisher duration; 3–5h is a planning estimate for selected tutorials | Prompt Lab, Python/Jupyter RAG and tuning examples; older UI/model steps require current-doc recheck |
+| Eight labs in this guide | watsonx access or equivalent local stack | **18–28 hours** plus one timed review |
+
+### C1000-197 — IBM Certified Guardium Data Protection v12.x Administrator - Professional
+
+Resource details from the [C1000-197 guide](../guides/C1000-197-ibm-guardium-data-protection-administrator.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective learning path, not a complete list of Guardium resources.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official C1000-197 exam record](https://www.ibm.com/training/credentials/getExam/C1000-197) | Public | **25 minutes** for contract and objectives |
+| [IBM Guardium Data Protection 12.x documentation](https://www.ibm.com/docs/en/gdp/12.x) | Public; automation may be blocked | **24–40 hours** for selected administration procedures |
+| [Guardium Data Protection Fundamentals (8G103G)](https://www.ibm.com/training/course/guardium-data-protection-fundamentals-8G103G) | Paid instructor-led; hands-on exercises listed | **24 hours** | Guardium 12.1 access, groups, backup/restore, discovery, policies, queries, reports and alerts; outline read, labs not inspected |
+| [Guardium Data Protection Administration (8G920XG)](https://www.ibm.com/training/course/guardium-data-protection-administration-8G920XG) | Paid IBM Intensive Learning; hands-on exercises listed | **4 hours** | Guardium 12.1 administration, monitoring and archive/backup/restore; outline only |
+| [IBM Guardium certification prep session](https://mediacenter.ibm.com/media/Certification%2BPrep%2BSession%3A%2BIBM%2BGuardium%2BData%2BProtection%2Bv12.x%2BAdministrator%2BProfessional/1_flq1wrlz/233881112) | Public page; video playback not inspected | Duration not stated | Optional objective-orientation session; not lab practice or a source of exam questions |
+| Eight labs in this guide | Authorized Guardium lab | **24–40 hours** plus one timed review |
+
+### C1000-206 — IBM Certified Artificial Intelligence v1 - Associate
+
+Resource details from the [C1000-206 guide](../guides/C1000-206-ibm-artificial-intelligence-associate.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective learning path, not a complete list of AI resources.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official C1000-206 exam record](https://www.ibm.com/training/credentials/getExam/C1000-206) | Public | **20 minutes** for the contract and objectives |
+| [IBM overview of artificial intelligence](https://www.ibm.com/think/topics/artificial-intelligence) | Public | **2–4 hours** with linked concept reading |
+| [IBM Artificial Intelligence Fundamentals badge](https://www.ibm.com/training/badge/artificial-intelligence-fundamentals?hss_channel=lcp-78306383) | Free IBM SkillsBuild account; courses, quizzes and simulations required | Module times vary; IBM does not state a reliable total for the full badge | Broad concepts across ML, GenAI, vision, NLP, ethics and Watson Studio; not exam-specific |
+| [IBM Developer: get started with artificial intelligence](https://developer.ibm.com/learningpaths/get-started-artificial-intelligence/) | Public | **2 hours** as listed | Beginner path with a Python/scikit-learn model exercise; narrower than the full responsible-AI and business-integration scope |
+| Eight labs in this guide | Local tools or notebook | **10–14 hours** plus one timed review |
+
+### PANW-NETWORK-SECURITY-ARCHITECT — Palo Alto Networks Certified Network Security Architect
+
+Resource details from the [PANW-NETWORK-SECURITY-ARCHITECT guide](../guides/PANW-NETWORK-SECURITY-ARCHITECT-palo-alto-networks-network-security-architect.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective starting set, not a complete list and not a prescription to consume everything. Pick official reference architectures, specialist refreshers, primary provider/framework sources and hands-on design reviews that close your gaps. Times are planning estimates unless a provider publishes duration; architecture, regulations, features, access and pricing change.
+
+**Official learning path:** The [current certification page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-netsec-architect) links to the Palo Alto Networks Certified Network Security Architect digital path. Palo Alto Networks describes its digital modules as free and self-paced; Learning Center registration/sign-in is required, and public pages do not state total path runtime. See [Education Services](https://www.paloaltonetworks.com/services/education) and [Learning Center registration guidance](https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA10g000000PLNxCAO&lang=en_US); course access may vary by account/region.
+
+**Official Architect digital learning path linked from the certification page** — the vendor describes free, self-paced modules; the Learning Center requires an account/sign-in and public materials do not state total runtime. The page recommends reviewing relevant Specialist paths. Do not use the earlier 35–60-hour estimate as a published duration.
+- [Official certification page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-netsec-architect) and [October 2025 datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/netsec-architect-datasheet.pdf) — **75–120 minutes** to annotate its ten-domain blueprint; public; canonical scope/experience.
+- [Palo Alto Networks Certification Handbook](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf) — **30–45 minutes**; public; verify delivery, scoring, retakes, validity/renewal, accommodations and rules.
+- [Palo Alto Networks reference architectures](https://www.paloaltonetworks.com/resources/reference-architectures) — **25–50 hours selected design reading**; public; verify publication date, product release and assumptions for every pattern.
+- [PAN-OS/NGFW](https://docs.paloaltonetworks.com/pan-os), [Prisma Access](https://docs.paloaltonetworks.com/prisma-access), [Prisma SD-WAN](https://docs.paloaltonetworks.com/prisma-sd-wan), [Strata Cloud Manager](https://docs.paloaltonetworks.com/strata-cloud-manager), and [Strata Logging Service](https://docs.paloaltonetworks.com/strata-logging-service) — **50–90 hours targeted**; public; current canonical implementation constraints.
+- [Prisma AIRS](https://docs.paloaltonetworks.com/ai-runtime-security), [AI Access Security](https://docs.paloaltonetworks.com/ai-access-security), [SaaS Security](https://docs.paloaltonetworks.com/saas-security), [Enterprise DLP](https://docs.paloaltonetworks.com/enterprise-dlp), and [Device Security](https://docs.paloaltonetworks.com/iot) — **35–60 hours selected**; public; entitlements may be needed for labs.
+- The four recommended specialist learning paths: SSE Engineer, NGFW Engineer, Network Security Analyst and SD-WAN Engineer — **40–100 hours selective refresh**; login may be required; do not repeat mastered material, but close product-engineering gaps before architecture scenarios.
+- [AWS Architecture Center](https://aws.amazon.com/architecture/), [Azure Architecture Center](https://learn.microsoft.com/azure/architecture/), [Google Cloud Architecture Framework](https://cloud.google.com/architecture/framework), and [OCI Architecture Center](https://docs.oracle.com/solutions/) — **25–50 hours targeted**; public; primary provider routing/load-balancing/HA/shared-responsibility constraints.
+- [NIST SP 800-207 Zero Trust Architecture](https://csrc.nist.gov/pubs/sp/800/207/final), [NIST AI RMF](https://www.nist.gov/itl/ai-risk-management-framework), [NIST CSF 2.0](https://www.nist.gov/cyberframework), and [NIST SP 800-53 Rev. 5](https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final) — **15–30 hours selected**; public; architecture/risk/control frameworks, not product recipes.
+- [EU GDPR official portal](https://commission.europa.eu/law/law-topic/data-protection/data-protection-eu_en), [EU Data Act official page](https://digital-strategy.ec.europa.eu/en/policies/data-act), [PCI SSC](https://www.pcisecuritystandards.org/), and [HHS HIPAA Security Rule](https://www.hhs.gov/hipaa/for-professionals/security/) — **10–25 hours with compliance/legal owners**; public; applicability is jurisdiction/context-specific and requires qualified review.
+- [Palo Alto Networks LIVEcommunity](https://live.paloaltonetworks.com/) and [official YouTube channel](https://www.youtube.com/@PaloAltoNetworks) — **8–20 hours selected architect/release sessions**; public; corroborate older/community material with current official docs.
+- Authorized multi-product proof of concept, partner lab or architecture workshop — **60–120 hours**; partner/tenant/cloud access and charges may apply; highest-value preparation for option tradeoffs, failures, operations and measured sizing.
+- O’Reilly, Pluralsight, Udemy or other cloud/network/Zero Trust/SASE/AI/architecture courses — **20–60 hours selected**; subscription/purchase may apply; no current course specifically aligned to this credential was verified September 2, 2026. Map material to the official blueprint and primary docs.
+- Practice questions, if used — **3–5 hours per scenario set plus review**; no current official, MeasureUp or Whizlabs credential-specific practice product was verified. Prefer architecture decision scenarios with competing valid options; avoid dumps.
+
+### PANW-NETWORK-SECURITY-PROFESSIONAL — Palo Alto Networks Certified Network Security Professional
+
+Resource details from the [PANW-NETWORK-SECURITY-PROFESSIONAL guide](../guides/PANW-NETWORK-SECURITY-PROFESSIONAL-palo-alto-networks-network-security-professional.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list, and it is not a prescription to consume everything. Start with the blueprint and official path, then select documentation and labs for measured gaps. Product pages, UI, licensing, and course versions change; record the version you used.
+
+**Official learning path:** The [current certification page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-netsec-professional) links to the Palo Alto Networks Certified Network Security Professional digital path. Palo Alto Networks describes its digital modules as free and self-paced; Learning Center registration/sign-in is required, and public pages do not state total path runtime. See [Education Services](https://www.paloaltonetworks.com/services/education) and [Learning Center registration guidance](https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA10g000000PLNxCAO&lang=en_US); course access may vary by account/region.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [Network Security Professional certification page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-netsec-professional) | Public | 10–15 minutes | Current credential, official blueprint/path/registration links |
+| [June 2026 datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/netsec-professional-datasheet.pdf) | Public PDF | 60–90 minutes | Canonical six-domain scope and all named product capabilities |
+| [Certification Handbook](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf) | Public PDF | 30–45 minutes | Scoring, ESL, result, retake, validity, renewal, and integrity policy |
+| [PAN-OS documentation](https://docs.paloaltonetworks.com/pan-os) | Public | 15–30 hours selected topics | Packet flow, policy, NAT, App/User/Device-ID, decryption, profiles, updates, HA, logs |
+| [Strata Cloud Manager documentation](https://docs.paloaltonetworks.com/strata-cloud-manager) | Public | 8–15 hours selected topics | Cloud management, AIOps/BPA, supported products, policy and operations |
+| [Prisma Access documentation](https://docs.paloaltonetworks.com/prisma-access) | Public | 8–15 hours selected topics | Remote-user/network connectivity, policy, operations, and logging |
+| [Prisma SD-WAN documentation](https://docs.paloaltonetworks.com/prisma-sd-wan) | Public | 5–10 hours selected topics | Path policy, branch connectivity, NAT/security, monitoring, failover |
+| [Next-Generation Trust Security](https://www.paloaltonetworks.com/network-security/next-gen-trust-security) | Public | 2–4 hours with current docs | Certificate lifecycle, private PKI, crypto-agility, post-quantum transition |
+| [Palo Alto Networks YouTube](https://www.youtube.com/@PaloAltoNetworks) | Free video | 4–10 hours selected current videos | Visual product and architecture explanations; map each to blueprint |
+| [Pluralsight Palo Alto Firewalls for Network Protection](https://www.pluralsight.com/paths/palo-alto-firewalls-for-network-protection) | Paid; older path | About 4h05m listed core course plus labs | NGFW subset and alternative explanation; reconcile release/UI |
+| [NDG PAN11 Firewall Essentials](https://www.netdevgroup.com/online/courses/cybersecurity/pan11-firewall-essentials) | Paid/institutional lab access | 14 labs; plan 15–25 hours | Configuration practice; older PCNSA alignment means map carefully to current blueprint |
+
+No current official practice exam, MeasureUp product, or Whizlabs product explicitly aligned to this June 2026 credential was verified. Use original operational scenarios and current documentation; avoid any source claiming live questions or guaranteed matches.
+
+### PANW-NGFW-ENGINEER — Palo Alto Networks Certified Next-Generation Firewall Engineer
+
+Resource details from the [PANW-NGFW-ENGINEER guide](../guides/PANW-NGFW-ENGINEER-palo-alto-networks-next-generation-firewall-engineer.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective starting set, not a complete list and not a prescription to consume everything. Pick the official documentation, guided training, videos, and labs that close your specific gaps. Times are planning estimates unless the provider publishes a duration; access, titles, versions, and pricing can change.
+
+**Official learning path:** The [current certification page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-ngfw-engineer) links to the Palo Alto Networks Certified Next-Generation Firewall Engineer digital path. Palo Alto Networks describes its digital modules as free and self-paced; Learning Center registration/sign-in is required, and public pages do not state total path runtime. See [Education Services](https://www.paloaltonetworks.com/services/education) and [Learning Center registration guidance](https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA10g000000PLNxCAO&lang=en_US); course access may vary by account/region.
+
+- [Official Palo Alto Networks digital learning](https://learn.paloaltonetworks.com/learn) — locate the **NGFW Engineer** path from the certification page; free and self-paced, but sign-in is required and public pages state no total runtime.
+- [Official certification page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-ngfw-engineer) and [November 2025 datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/ngfw-engineer-datasheet.pdf) — **45–75 minutes** to annotate the complete blueprint; public; canonical scope and recommended-experience source.
+- [Palo Alto Networks Certification Handbook](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf) — **30–45 minutes**; public; verify delivery, scoring, retake, validity, renewal, accommodations, and current program rules.
+- Optional official instructor-led courses: [EDU-210 Firewall Essentials: Configuration and Management](https://www.paloaltonetworks.com/services/education/edu-210-firewall-essentials-configuration-and-management) (5 days) and [Panorama: NGFW Management](https://www.paloaltonetworks.com/services/education/ilt-panorama-ngfw-management) (2 days). Registration is through authorized partners; paid or training-credit access, with local pricing varying.
+- [PAN-OS and NGFW documentation](https://docs.paloaltonetworks.com/pan-os) — **20–40 hours targeted reading and lab replication**; public; prioritize networking, HA, routing, GlobalProtect, VPN, authentication, VSYS, logging, upgrades, certificates/decryption, User-ID, web proxy, and the exact release used in practice.
+- [Advanced Routing documentation](https://docs.paloaltonetworks.com/ngfw/administration/set-up-firewalls/routing-and-interfaces) — **3–6 hours plus labs**; public; check platform/release support and migration differences.
+- [Decryption administration](https://docs.paloaltonetworks.com/network-security/decryption/administration) — **4–8 hours plus PKI labs**; public; use current legal/privacy policy and a non-production CA.
+- [GlobalProtect documentation](https://docs.paloaltonetworks.com/globalprotect) — **4–8 hours plus labs**; public; focus on portal/gateway, authentication/certificates, routes/DNS, split tunneling, policy, logs, and troubleshooting.
+- [Panorama documentation](https://docs.paloaltonetworks.com/panorama) and [PAN-OS/Panorama API documentation](https://docs.paloaltonetworks.com/pan-os) — **8–14 hours targeted reading/coding**; public; use the version selector and validate schemas/commit-job behavior against a lab.
+- [Strata Logging Service documentation](https://docs.paloaltonetworks.com/strata-logging-service) and [Cloud Identity Engine overview](https://docs.paloaltonetworks.com/identity/cloud-identity-engine/cloud-identity-engine-overview) — **5–9 hours targeted**; public; entitlement and tenant access may be needed for hands-on work.
+- [Palo Alto Networks LIVEcommunity](https://live.paloaltonetworks.com/) and [official YouTube channel](https://www.youtube.com/@PaloAltoNetworks) — **4–10 hours selected troubleshooting/release sessions**; public; corroborate community answers and older videos with current official documentation.
+- [Palo Alto Firewalls for Network Protection path on Pluralsight](https://www.pluralsight.com/paths/palo-alto-firewalls-for-network-protection) — **estimate 10–20 hours depending on selected courses**; subscription/trial may be required; useful conceptual practice but some content can target older PAN-OS or retired PCNSA/PCNSE structures, so map it to this blueprint.
+- [NDG PAN11 Firewall Essentials labs](https://www.netdevgroup.com/online/courses/cybersecurity/pan11-firewall-essentials) — provider lists **14 labs**; paid lab access; useful for configuration repetition, but verify current software, availability, and coverage because the marketing page references older certification mappings.
+- Practice questions, if used — **2–4 hours per timed set plus review**; the official page/datasheet did not expose a current first-party practice assessment, and no current credential-specific MeasureUp or Whizlabs product was verified September 2, 2026. Use only authorized, blueprint-aligned, explanation-rich items; avoid dumps and do not treat one score as readiness.
+
+### PANW-SD-WAN-ENGINEER — Palo Alto Networks Certified SD-WAN Engineer
+
+Resource details from the [PANW-SD-WAN-ENGINEER guide](../guides/PANW-SD-WAN-ENGINEER-palo-alto-networks-sd-wan-engineer.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective starting set, not a complete list and not a prescription to consume everything. Pick and choose the official documentation, structured training, demonstrations, and labs that close your gaps. Times are planning estimates unless the provider states a duration; access, licensing, versions, titles, and prices change.
+
+**Official learning path:** The [current certification page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-sd-wan-engineer) links to the Palo Alto Networks Certified SD-WAN Engineer digital path. Palo Alto Networks describes its digital modules as free and self-paced; Learning Center registration/sign-in is required, and public pages do not state total path runtime. See [Education Services](https://www.paloaltonetworks.com/services/education) and [Learning Center registration guidance](https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA10g000000PLNxCAO&lang=en_US); course access may vary by account/region.
+
+- [Official Palo Alto Networks digital learning](https://learn.paloaltonetworks.com/learn) — locate the **SD-WAN Engineer** path from the certification page; free/self-paced, sign-in required, total runtime not public.
+- [Official certification page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-sd-wan-engineer) and [August 2025 datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/sd-wan-engineer-datasheet.pdf) — **45–75 minutes** to annotate; public; canonical scope.
+- [Palo Alto Networks Certification Handbook](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf) — **30–45 minutes**; public; verify current delivery, score, retakes, validity/renewal, accommodations, and program rules.
+- Optional official instructor-led [Prisma SD-WAN: Design and Operation](https://www.paloaltonetworks.com/services/education/edu-238-prisma-sd-wan-design-and-operation) (5 days, including hands-on lab work). Authorized-partner registration; paid or training-credit access, local pricing varies.
+- [Prisma SD-WAN documentation](https://docs.paloaltonetworks.com/prisma-sd-wan) — **25–45 hours targeted reading and lab repetition**; public; canonical product study source; select the current ION/controller release and cover onboarding, deployment, policy, routing, VRF, monitoring, incidents, and release notes.
+- [Prisma SD-WAN Administrator’s Guide](https://docs.paloaltonetworks.com/prisma-sd-wan/administration) — **12–25 hours targeted**; public; policy ordering/features and UI paths are release-sensitive.
+- [WAN Clarity Reports](https://docs.paloaltonetworks.com/prisma-sd-wan/administration/prisma-sd-wan-clarity-reports) — **2–4 hours plus report review**; public documentation, but report access requires relevant tenant/license.
+- [Prisma SASE documentation](https://docs.paloaltonetworks.com/sase) and [Prisma Access documentation](https://docs.paloaltonetworks.com/prisma-access) — **8–15 hours targeted**; public; hands-on access/entitlements may be required.
+- [ADEM documentation](https://docs.paloaltonetworks.com/autonomous-dem) and [Cloud Identity Engine overview](https://docs.paloaltonetworks.com/identity/cloud-identity-engine/cloud-identity-engine-overview) — **5–10 hours targeted**; public; validate current license, tenant, data, and deployment prerequisites.
+- [Palo Alto Networks LIVEcommunity](https://live.paloaltonetworks.com/) and [official YouTube channel](https://www.youtube.com/@PaloAltoNetworks) — **4–10 hours selected SD-WAN/SASE troubleshooting and release sessions**; public; corroborate community/older media with current docs.
+- Vendor/partner lab, evaluation tenant, or authorized proof of concept — **20–40 hours**; access varies and partner login/entitlement may be required; practice end-to-end deployment, failures, integrations, and reports without production impact.
+- Adjacent O’Reilly, Pluralsight, Udemy, or other SD-WAN/SASE networking courses — **6–20 hours selected**; subscription/purchase may be required; useful for routing, QoS, SD-WAN, and SASE foundations, but no current course specifically aligned to this Palo Alto Networks credential was verified September 2, 2026. Map every module to the official blueprint and current product docs.
+- Practice questions, if used — **2–4 hours per timed set plus review**; no current official, MeasureUp, or Whizlabs credential-specific practice product was verified September 2, 2026. Use only authorized, explanation-rich questions; avoid dumps and treat results as one signal, not proof of readiness.
+
+### PANW-SECURITY-OPERATIONS-ARCHITECT — Palo Alto Networks Certified Security Operations Architect
+
+Resource details from the [PANW-SECURITY-OPERATIONS-ARCHITECT guide](../guides/PANW-SECURITY-OPERATIONS-ARCHITECT-palo-alto-networks-security-operations-architect.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective starting set, not a complete list and not a prescription to consume everything. Pick official reference architectures, engineering refreshers, primary frameworks and architecture exercises that close your gaps. Times are planning estimates unless a provider publishes duration; features, licenses, laws, access and pricing change.
+
+**Official learning path:** The [current certification page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-secops-architect) links to the Palo Alto Networks Certified Security Operations Architect digital path. Palo Alto Networks describes its digital modules as free and self-paced; Learning Center registration/sign-in is required, and public pages do not state total path runtime. See [Education Services](https://www.paloaltonetworks.com/services/education) and [Learning Center registration guidance](https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA10g000000PLNxCAO&lang=en_US); course access may vary by account/region.
+
+**Official Architect digital learning path:** the vendor describes a free, self-paced Learning Center path; account/sign-in is required and public materials do not state total runtime. The page recommends relevant Specialist paths as needed. No dedicated Architect ILT is listed.
+- [Official certification page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-secops-architect) and [February 2026 datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/secops-architect-datasheet.pdf) — **60–90 minutes** to annotate; public; canonical scope and experience.
+- [Palo Alto Networks Certification Handbook](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf) — **30–45 minutes**; public; verify current delivery, score, retakes, validity/renewal, accommodations and rules.
+- Official Security Operations Architect learning path linked from the page — **estimate 35–60 hours** depending on engineering mastery; learning login may be required; use current module list/durations.
+- Recommended XSIAM Analyst and XSIAM Engineer paths, plus XDR Engineer and XSOAR Engineer refreshers — **40–100 hours selective**; learning login may be required; the architect blueprint explicitly assumes these engineering competencies.
+- [Cortex XSIAM documentation](https://cortex-docs.paloaltonetworks.com/), [Cortex XDR documentation](https://docs-cortex.paloaltonetworks.com/r/Cortex-XDR/Cortex-XDR-5.x-Documentation/Detailed-View), and [Cortex XSOAR documentation](https://docs.paloaltonetworks.com/cortex/cortex-xsoar) — **60–100 hours targeted architecture/engineering study**; public main docs, tenant details may require access; canonical platform sources.
+- [Palo Alto Networks reference architectures](https://www.paloaltonetworks.com/resources/reference-architectures) — **15–35 hours selected**; public; verify publication date, current products and assumptions.
+- [Cribl documentation](https://docs.cribl.io/) — **12–25 hours selected plus lab**; public documentation, product use may require license; learn routing/transformation/buffering/HA, but treat Cribl as the blueprint's example rather than a mandatory product.
+- [NIST CSF 2.0](https://www.nist.gov/cyberframework), [NIST SP 800-61 Rev. 3](https://csrc.nist.gov/pubs/sp/800/61/r3/final), [NIST SP 800-92](https://csrc.nist.gov/pubs/sp/800/92/final), and [NIST SP 800-207](https://csrc.nist.gov/pubs/sp/800/207/final) — **15–25 hours selected**; public; risk/incident/log/Zero Trust architecture foundations.
+- [MITRE ATT&CK](https://attack.mitre.org/), [MITRE D3FEND](https://d3fend.mitre.org/), and [MITRE Center for Threat-Informed Defense](https://ctid.mitre.org/) — **12–25 hours selected**; public; use for threat-informed coverage, not vendor scoring or attribution proof.
+- [EU GDPR official portal](https://commission.europa.eu/law/law-topic/data-protection/data-protection-eu_en), [PCI SSC](https://www.pcisecuritystandards.org/), and [HHS HIPAA Security Rule](https://www.hhs.gov/hipaa/for-professionals/security/) — **8–20 hours with privacy/compliance/legal owners**; public; applicability requires qualified review and current jurisdiction-specific law.
+- [OWASP Top 10 for LLM Applications](https://genai.owasp.org/llm-top-10/) and [NIST AI RMF](https://www.nist.gov/itl/ai-risk-management-framework) — **6–12 hours selected**; public; useful for agentic automation risk, not a Cortex feature specification.
+- [Palo Alto Networks LIVEcommunity](https://live.paloaltonetworks.com/) and [official YouTube channel](https://www.youtube.com/@PaloAltoNetworks) — **8–20 hours selected SecOps architecture/release sessions**; public; corroborate older/community content with current official docs.
+- Authorized XSIAM/XDR/XSOAR tenant, partner lab or architecture workshop — **70–140 hours**; tenant/partner access required; highest-value preparation for pipeline, component, migration, automation and failure tradeoffs using synthetic data.
+- O’Reilly, Pluralsight, Udemy or other SOC/SIEM/SOAR/data-engineering/detection/cloud/AI governance courses — **20–60 hours selected**; subscription/purchase may apply; no current course specifically aligned to this credential was verified September 2, 2026. Map to blueprint and primary sources.
+- Practice questions, if used — **3–5 hours per architecture scenario set plus review**; no current official, MeasureUp or Whizlabs credential-specific practice product was verified. Prefer competing-option design scenarios with evidence; avoid dumps.
+
+### PANW-SECURITY-OPERATIONS-PROFESSIONAL — Palo Alto Networks Certified Security Operations Professional
+
+Resource details from the [PANW-SECURITY-OPERATIONS-PROFESSIONAL guide](../guides/PANW-SECURITY-OPERATIONS-PROFESSIONAL-palo-alto-networks-security-operations-professional.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list, and it is not meant to be consumed in full. Start with the blueprint and official digital path, then choose product documentation and vendor-neutral incident/detection material for measured gaps. Verify product version, licensing, and access before investing time.
+
+**Official learning path:** The [current certification page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-secops-professional) links to the Palo Alto Networks Certified Security Operations Professional digital path. Palo Alto Networks describes its digital modules as free and self-paced; Learning Center registration/sign-in is required, and public pages do not state total path runtime. See [Education Services](https://www.paloaltonetworks.com/services/education) and [Learning Center registration guidance](https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA10g000000PLNxCAO&lang=en_US); course access may vary by account/region.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [Security Operations Professional page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-secops-professional) | Public | 10–15 minutes | Current credential, datasheet, learning path, and registration |
+| [July 2026 datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/secops-professional-datasheet.pdf) | Public PDF | 45–75 minutes | Canonical five-domain scope and named workflows/features |
+| [Certification Handbook](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf) | Public PDF | 30–45 minutes | Scoring, ESL, retakes, validity, renewal, integrity, and results |
+| [Cortex XDR documentation](https://docs-cortex.paloaltonetworks.com/r/Cortex-XDR/Cortex-XDR-5.x-Documentation/Detailed-View) | Public | 12–20 hours selected topics | Access/logs, agents, incidents, causality, hunting, analytics, response, reports |
+| [Cortex XSOAR documentation](https://docs.paloaltonetworks.com/cortex/cortex-xsoar) | Public | 10–18 hours selected topics | Integrations, TIM, playbooks, War Room, scripts/jobs, cases, Marketplace |
+| [Cortex XSIAM documentation](https://cortex-docs.paloaltonetworks.com/) | Public | 12–20 hours selected topics | Ingestion, content, incidents, analytics, BIOCs/correlations, queries, automation |
+| [NIST SP 800-61 Rev. 3](https://csrc.nist.gov/pubs/sp/800/61/r3/final) | Public primary guidance | 3–5 hours | Current incident response and CSF 2.0 lifecycle integration |
+| [MITRE ATT&CK](https://attack.mitre.org/) | Public | 4–8 hours plus mapping lab | Behavior, data sources, mitigations, groups/software, and hunt/detection mapping |
+| [Palo Alto Networks Unit 42](https://unit42.paloaltonetworks.com/) | Public | 3–8 hours selected reports | Current threat research and evidence-led case studies |
+| [Palo Alto Networks YouTube](https://www.youtube.com/@PaloAltoNetworks) | Free video | 4–10 hours selected current content | Visual Cortex/SOC demonstrations; reconcile UI and licensing with docs |
+| [O'Reilly Practical Security Automation and Testing](https://www.oreilly.com/library/view/practical-security-automation/9781098143160/) | Paid; broader/vendor-neutral | 10–18 hours selected chapters/labs | Automation design, APIs, testing, safety, and repeatable workflows |
+
+No current official practice exam, MeasureUp product, or Whizlabs product explicitly aligned to the July 2026 Security Operations Professional blueprint was verified. Use current official documentation and original synthetic investigations instead of unsourced question banks.
+
+### PANW-SSE-ENGINEER — Palo Alto Networks Certified Security Service Edge Engineer
+
+Resource details from the [PANW-SSE-ENGINEER guide](../guides/PANW-SSE-ENGINEER-palo-alto-networks-security-service-edge-engineer.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective starting set, not a complete list and not a prescription to consume everything. Pick and choose the official documentation, structured training, videos, and labs that close your specific gaps. Times are planning estimates unless the provider publishes a duration; access, entitlements, versions, titles, and pricing can change.
+
+**Official learning path:** The [current certification page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-sse-engineer) links to the Palo Alto Networks Certified Security Service Edge Engineer digital path. Palo Alto Networks describes its digital modules as free and self-paced; Learning Center registration/sign-in is required, and public pages do not state total path runtime. See [Education Services](https://www.paloaltonetworks.com/services/education) and [Learning Center registration guidance](https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA10g000000PLNxCAO&lang=en_US); course access may vary by account/region.
+
+- [Official Palo Alto Networks digital learning](https://learn.paloaltonetworks.com/learn) — follow the **Security Service Edge Engineer** path linked from the certification page; free/self-paced, sign-in required, total runtime not public.
+- [Official certification page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-sse-engineer) and [March 2026 datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/sse-engineer-datasheet.pdf) — **45–75 minutes** to annotate; public; canonical scope and experience source.
+- [Palo Alto Networks Certification Handbook](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf) — **30–45 minutes**; public; verify current delivery, score, retakes, validity/renewal, accommodations, and program rules.
+- Optional official instructor-led [Prisma Access SSE: Configuration and Deployment](https://www.paloaltonetworks.com/services/education/ilt-prisma-access-sse-configuration-and-deployment) (4 days, including hands-on lab work). Authorized-partner registration; paid or training-credit access, local pricing varies.
+- [Prisma Access documentation](https://docs.paloaltonetworks.com/prisma-access) — **30–50 hours targeted reading and lab replication**; public; use the current release and management-model branches for planning, mobile users, remote networks, private apps, services, policy, operations, and troubleshooting.
+- [Prisma Browser documentation](https://docs.paloaltonetworks.com/prisma-access-browser) — **10–18 hours plus authorized endpoint tests**; public; version/feature availability changes frequently.
+- [Strata Cloud Manager documentation](https://docs.paloaltonetworks.com/strata-cloud-manager) and [Strata Copilot](https://docs.paloaltonetworks.com/strata-cloud-manager/getting-started/strata-copilot) — **8–15 hours targeted**; public; hands-on behavior depends on product, tenant, license, role, and release.
+- [Strata Logging Service documentation](https://docs.paloaltonetworks.com/strata-logging-service) — **4–8 hours plus pipeline tests**; public; service entitlement/tenant required for hands-on work.
+- [Cloud Identity Engine overview](https://docs.paloaltonetworks.com/identity/cloud-identity-engine/cloud-identity-engine-overview), [Enterprise DLP](https://docs.paloaltonetworks.com/enterprise-dlp), and [AI Access Security](https://docs.paloaltonetworks.com/ai-access-security) documentation — **10–20 hours selected**; public; lab use requires applicable services and safe synthetic data.
+- [Palo Alto Networks LIVEcommunity](https://live.paloaltonetworks.com/) and [official YouTube channel](https://www.youtube.com/@PaloAltoNetworks) — **5–12 hours selected SSE/release/troubleshooting material**; public; corroborate community and older videos with current docs.
+- Vendor, partner, or authorized evaluation tenant/lab — **25–50 hours**; access varies and partner/tenant login may be required; highest-value practice for routing, identities, policy, browser, logging, failure, and evidence.
+- Adjacent O’Reilly, Pluralsight, Udemy, or other SASE/Zero Trust/network-security courses — **6–20 hours selected**; subscription/purchase may be required; no current course specifically aligned to this exact credential was verified September 2, 2026. Map every module to the public blueprint and current product documentation.
+- Practice questions, if used — **2–4 hours per timed set plus review**; no current official, MeasureUp, or Whizlabs credential-specific practice product was verified September 2, 2026. Use only authorized, explanation-rich items; avoid dumps and treat a score as one readiness signal.
+
+### PANW-XDR-ANALYST — Palo Alto Networks Certified XDR Analyst
+
+Resource details from the [PANW-XDR-ANALYST guide](../guides/PANW-XDR-ANALYST-palo-alto-networks-xdr-analyst.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list, and it is not meant to be consumed in full. Use the blueprint and official XDR path as the spine, then select query, endpoint, forensics, and incident resources for measured gaps. Record tenant/release because schemas, profiles, actions, and UI evolve.
+
+**Official learning path:** The [current certification page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-xdr-analyst) links to the Palo Alto Networks Certified XDR Analyst digital path. Palo Alto Networks describes its digital modules as free and self-paced; Learning Center registration/sign-in is required, and public pages do not state total path runtime. See [Education Services](https://www.paloaltonetworks.com/services/education) and [Learning Center registration guidance](https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA10g000000PLNxCAO&lang=en_US); course access may vary by account/region.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [XDR Analyst certification page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-xdr-analyst) | Public | 10–15 minutes | Current credential, datasheet, learning path, registration |
+| [August 2025 datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/xdr-analyst-datasheet.pdf) | Public PDF | 60–90 minutes | Canonical four-domain weighted blueprint and prerequisites |
+| [Certification Handbook](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf) | Public PDF | 30–45 minutes | Scoring, ESL, results, retakes, validity, renewal, integrity |
+| [Cortex XDR documentation](https://docs-cortex.paloaltonetworks.com/r/Cortex-XDR/Cortex-XDR-5.x-Documentation/Detailed-View) | Public | 30–50 hours selected topics/labs | Alerts/incidents, forensics/ITDR, response, XQL, dashboards, retention, Host Insights, profiles/agents |
+| [MITRE ATT&CK](https://attack.mitre.org/) | Public | 4–8 hours plus mapping labs | Behavioral analysis, data sources, mitigations, hunting/detection context |
+| [NIST SP 800-61 Rev. 3](https://csrc.nist.gov/pubs/sp/800/61/r3/final) | Public primary guidance | 3–5 hours | Current incident-response lifecycle, roles, improvement, and evidence context |
+| [Unit 42 Research](https://unit42.paloaltonetworks.com/) | Public | 4–8 hours selected investigations | Current threat behavior, indicators, analysis, and response case studies |
+| [Palo Alto Networks YouTube](https://www.youtube.com/@PaloAltoNetworks) | Free video | 4–10 hours selected current XDR demos | Visual investigation/query/endpoint workflows; verify release/UI |
+| [O'Reilly Applied Incident Response](https://www.oreilly.com/library/view/applied-incident-response/9781119561453/) | Paid; vendor-neutral and older | 12–20 hours selected chapters/labs | Investigation process, evidence, response, and reporting context |
+
+No current official practice exam, MeasureUp product, or Whizlabs product explicitly aligned to this exact XDR Analyst blueprint was verified. Prefer official docs and original tenant/synthetic-data labs over unsourced question banks.
+
+### PANW-XDR-ENGINEER — Palo Alto Networks Certified XDR Engineer
+
+Resource details from the [PANW-XDR-ENGINEER guide](../guides/PANW-XDR-ENGINEER-palo-alto-networks-xdr-engineer.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective starting set, not a complete list and not a prescription to consume everything. Pick and choose official documentation, structured training, data/detection references and labs that close your gaps. Times are planning estimates unless a provider publishes duration; access, entitlements, versions and prices can change.
+
+**Official learning path:** The [current certification page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-xdr-engineer) links to the Palo Alto Networks Certified XDR Engineer digital path. Palo Alto Networks describes its digital modules as free and self-paced; Learning Center registration/sign-in is required, and public pages do not state total path runtime. See [Education Services](https://www.paloaltonetworks.com/services/education) and [Learning Center registration guidance](https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA10g000000PLNxCAO&lang=en_US); course access may vary by account/region.
+
+- [Official Palo Alto Networks digital learning](https://learn.paloaltonetworks.com/learn) — follow the **XDR Engineer** path linked from the certification page; free/self-paced, sign-in required, total runtime not public.
+- [Official certification page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-xdr-engineer) and [August 2025 datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/xdr-engineer-datasheet.pdf) — **45–75 minutes** to annotate; public; canonical scope.
+- [Palo Alto Networks Certification Handbook](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf) — **30–45 minutes**; public; verify current delivery, scoring, retakes, validity/renewal, accommodations and rules.
+- Optional official instructor-led [Cortex XDR: Security Operations and Integration](https://www.paloaltonetworks.com/services/education/ilt-cortex-xdr-security-operations-integration) (3 days). Authorized-partner registration; paid or training-credit access, local pricing varies.
+- [Cortex XDR documentation](https://docs-cortex.paloaltonetworks.com/r/Cortex-XDR/Cortex-XDR-5.x-Documentation/Detailed-View) — **35–60 hours targeted reading and labs**; public main documentation, with tenant help/entitlement possibly required for current detail; canonical product source.
+- [Cloud Identity Engine overview](https://docs.paloaltonetworks.com/identity/cloud-identity-engine/cloud-identity-engine-overview) — **4–8 hours targeted plus integration tests**; public; verify current XDR integration support and identity formats.
+- [MITRE ATT&CK](https://attack.mitre.org/) and [NIST SP 800-61 Rev. 3](https://csrc.nist.gov/pubs/sp/800/61/r3/final) — **8–14 hours selected**; public; behavior/response context, not product UI or attribution proof.
+- [JSON](https://www.rfc-editor.org/rfc/rfc8259), [XML](https://www.w3.org/TR/xml/), and vendor CEF resources — **5–10 hours plus parser fixtures**; public/vendor; focus transformation, timestamps, identifiers and malformed/adversarial cases.
+- [Palo Alto Networks LIVEcommunity](https://live.paloaltonetworks.com/) and [official YouTube channel](https://www.youtube.com/@PaloAltoNetworks) — **5–12 hours selected XDR deployment/detection/troubleshooting**; public; corroborate community/older videos with current docs.
+- Authorized Cortex XDR tenant, partner lab or evaluation — **35–70 hours**; tenant/partner access required; use synthetic data and safe tests. Highest-value preparation for agents, Broker, collectors, detections, compute and failures.
+- Adjacent O’Reilly, Pluralsight, Udemy or other EDR/XDR/detection-engineering/log-pipeline courses — **10–30 hours selected**; subscription/purchase may apply; no current course aligned to this exact credential was verified September 2, 2026. Map modules to the blueprint/current docs.
+- Practice questions, if used — **2–4 hours per timed set plus review**; no current official, MeasureUp or Whizlabs credential-specific practice product was verified. Use authorized explanation-rich questions; avoid dumps and do not treat a single score as readiness.
+
+### PANW-XSIAM-ANALYST — Palo Alto Networks Certified XSIAM Analyst
+
+Resource details from the [PANW-XSIAM-ANALYST guide](../guides/PANW-XSIAM-ANALYST-palo-alto-networks-xsiam-analyst.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list, and it is not meant to be consumed in full. Start with the blueprint and official XSIAM path/course, then use documentation and synthetic investigations for measured gaps. Record tenant/release because XQL schemas, content, and UI evolve.
+
+**Official learning path:** The [current certification page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-xsiam-analyst) links to the Palo Alto Networks Certified XSIAM Analyst digital path. Palo Alto Networks describes its digital modules as free and self-paced; Learning Center registration/sign-in is required, and public pages do not state total path runtime. See [Education Services](https://www.paloaltonetworks.com/services/education) and [Learning Center registration guidance](https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA10g000000PLNxCAO&lang=en_US); course access may vary by account/region.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [XSIAM Analyst certification page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-xsiam-analyst) | Public | 10–15 minutes | Current credential, datasheet, official learning routes, registration |
+| [August 2025 datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/XSIAMAnalyst-datasheet.pdf) | Public PDF | 60–90 minutes | Canonical six-domain weighted blueprint |
+| [Certification Handbook](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf) | Public PDF | 30–45 minutes | Scoring, ESL, results, retakes, validity, renewal, integrity |
+| [Cortex XSIAM: Investigation and Analysis](https://www.paloaltonetworks.com/services/education/ilt-xsiam-investigation-analysis) | Paid/authorized training partner or training credits; regional price varies | 2 days | Officially recommended hands-on analyst workflow course |
+| [Cortex XSIAM documentation](https://cortex-docs.paloaltonetworks.com/) | Public | 25–40 hours selected topics/labs | Alerts/incidents, playbooks, XQL/XDM, endpoint, TIM/ASM, reports |
+| [MITRE ATT&CK](https://attack.mitre.org/) | Public | 4–8 hours plus mapping labs | Behavior, data sources, mitigations, detection and hunt context |
+| [NIST SP 800-61 Rev. 3](https://csrc.nist.gov/pubs/sp/800/61/r3/final) | Public primary guidance | 3–5 hours | Current incident-response lifecycle and improvement context |
+| [Unit 42 Research](https://unit42.paloaltonetworks.com/) | Public | 4–8 hours selected reports | Current threats, indicators, behavior, and investigations |
+| [Palo Alto Networks YouTube](https://www.youtube.com/@PaloAltoNetworks) | Free video | 4–10 hours selected current XSIAM demos | Visual workflows; validate release/UI against docs |
+| [O'Reilly Practical Security Automation and Testing](https://www.oreilly.com/library/view/practical-security-automation/9781098143160/) | Paid; vendor-neutral | 10–18 hours selected chapters/labs | Safe automation, APIs, testing, secrets, repeatability |
+
+No current official practice exam, MeasureUp product, or Whizlabs product explicitly aligned to this exact XSIAM Analyst blueprint was verified. Prefer the official course/path and original tenant/synthetic-data labs over unsourced question banks.
+
+### C1000-156 — IBM Certified Administrator - Security QRadar SIEM V7.5
+
+Resource details from the [C1000-156 guide](../guides/C1000-156-ibm-security-qradar-siem-administrator.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective learning path, not a complete list of QRadar administration resources.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [C1000-156 exam record](https://www.ibm.com/training/credentials/getExam/C1000-156) and [IBM Certified Administrator credential page](https://www.ibm.com/training/certification/ibm-certified-administrator-security-qradar-siem-v75-C9004600) | Public | **25 minutes** for contract and objectives; English exam, replacement credential N/A |
+| [QRadar SIEM V7.5 Administration – Exam C1000-156 Preparation Guide (SLA6910)](https://www.ibm.com/training/course/qradar-siem-v75-administration-exam-c1000-156-preparation-guide-SLA6910) | Free Express Learning; IBM/Security Learning Academy sign-in; catalog says “Retiring soon” | **1.5 hours stated**; verify course remains launchable |
+| [IBM QRadar SIEM 7.5 documentation](https://www.ibm.com/docs/en/qsip/7.5) | Public; automation may be blocked | **24–36 hours** for selected administration procedures |
+| Eight labs in this guide | Authorized QRadar lab | **24–36 hours** plus one timed review |
+
+### PANW-XSIAM-ENGINEER — Palo Alto Networks Certified XSIAM Engineer
+
+Resource details from the [PANW-XSIAM-ENGINEER guide](../guides/PANW-XSIAM-ENGINEER-palo-alto-networks-xsiam-engineer.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective starting set, not a complete list and not a prescription to consume everything. Pick and choose the official documentation, structured training, videos, data-engineering references, and labs that close your gaps. Times are planning estimates unless the provider states a duration; access, entitlements, versions and prices can change.
+
+- [Official certification page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-xsiam-engineer) and [August 2025 datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/xsiam-engineer-datasheet.pdf) — **45–75 minutes** to annotate; public; canonical scope.
+- [Palo Alto Networks Certification Handbook](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf) — **30–45 minutes**; public; verify delivery, score, retakes, validity/renewal, accommodation and program rules.
+- [Official Palo Alto Networks digital learning](https://learn.paloaltonetworks.com/learn) — locate the **XSIAM Engineer** learning path; free self-paced path; Learning Center sign-in may be required. The public portal does not state total runtime or expose the module list; confirm after sign-in.
+- Official instructor-led **Cortex XSIAM: Security Operations, Integration, and Automation** — **3 days** per the official course page; instructor-led with labs, commercial/authorized training; explicitly recommended on the certification page. Confirm current partner schedule and delivery.
+- [Cortex XSIAM documentation](https://cortex-docs.paloaltonetworks.com/) — **35–60 hours targeted reading and lab replication**; public main documentation, though tenant access may expose more contextual help; canonical product source.
+- [Cortex XDR documentation](https://docs-cortex.paloaltonetworks.com/r/Cortex-XDR/Cortex-XDR-5.x-Documentation/Detailed-View) and [Cortex XSOAR documentation](https://docs.paloaltonetworks.com/cortex/cortex-xsoar) — **15–30 hours selected**; public; useful for shared agent, XQL, data, incident, integration, Marketplace and playbook concepts; verify XSIAM-specific behavior.
+- [MITRE ATT&CK](https://attack.mitre.org/), [OASIS STIX 2.1](https://docs.oasis-open.org/cti/stix/v2.1/stix-v2.1.html), and [TAXII 2.1](https://docs.oasis-open.org/cti/taxii/v2.1/taxii-v2.1.html) — **8–15 hours targeted**; public; behavior/intelligence vocabulary and interchange, not attribution proof.
+- [JSON specification](https://www.rfc-editor.org/rfc/rfc8259), [XML specification](https://www.w3.org/TR/xml/), and [CEF implementation resources from source vendors](https://www.microfocus.com/documentation/arcsight/arcsight-smartconnectors-8.4/cef-implementation-standard/) — **6–12 hours selected plus parser fixtures**; public/vendor docs; avoid memorizing one product's informal examples.
+- [NIST SP 800-61 Rev. 3](https://csrc.nist.gov/pubs/sp/800/61/r3/final) and [NIST SP 800-92](https://csrc.nist.gov/pubs/sp/800/92/final) — **6–10 hours selected**; public; incident-response and log-management grounding; product workflows remain authoritative for UI behavior.
+- [Palo Alto Networks LIVEcommunity](https://live.paloaltonetworks.com/) and [official YouTube channel](https://www.youtube.com/@PaloAltoNetworks) — **5–12 hours selected XSIAM/data/automation sessions**; public; corroborate community/older videos with current docs.
+- Authorized XSIAM tenant, partner lab, or evaluation — **40–80 hours**; tenant/partner access required; use synthetic feeds/endpoints and non-disruptive integrations. Highest-value preparation for engineering depth.
+- Adjacent O’Reilly, Pluralsight, Udemy, or other SIEM/SOAR/detection-engineering/data-pipeline courses — **12–35 hours selected**; subscription/purchase may apply; no current course aligned to this exact credential was verified October 28, 2026. Map content to the blueprint and current docs.
+- Practice questions, if used — **2–4 hours per timed set plus review**; no current official, MeasureUp, or Whizlabs credential-specific practice product was verified. Use authorized, explanation-rich questions only; avoid dumps and do not treat one score as readiness.
+
+### PANW-XSOAR-ENGINEER — Palo Alto Networks Certified XSOAR Engineer
+
+Resource details from the [PANW-XSOAR-ENGINEER guide](../guides/PANW-XSOAR-ENGINEER-palo-alto-networks-xsoar-engineer.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective starting set, not a complete list and not a prescription to consume everything. Pick and choose official documentation, structured training, secure-development references and labs that close your gaps. Times are planning estimates unless a provider publishes duration; access, model/version, packs and prices can change.
+
+- [Official certification page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-xsoar-engineer) and [August 2025 datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/xsoar-engineer-datasheet.pdf) — **45–75 minutes** to annotate; public; canonical scope. The page also links a short official video overview.
+- [Palo Alto Networks Certification Handbook](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf) — **30–45 minutes**; public; verify delivery, score, retakes, validity/renewal, accommodation and rules.
+- [Official Palo Alto Networks digital learning](https://learn.paloaltonetworks.com/learn) — locate the **XSOAR Engineer** learning path; free self-paced path; Learning Center sign-in may be required. The public portal does not state total runtime or expose the module list; confirm after sign-in.
+- Official instructor-led **Cortex XSOAR: Engineering Security Automation Solutions** — **4 days** per the official course page; instructor-led with hands-on labs, commercial/authorized-partner delivery. Confirm current schedule and regional access.
+- [Cortex XSOAR documentation](https://docs.paloaltonetworks.com/cortex/cortex-xsoar) — **40–70 hours targeted reading and lab work**; public main documentation, with deployed-version/tenant details possibly gated; canonical product source.
+- [Cortex XSOAR content repository](https://github.com/demisto/content) — **10–25 hours targeted code/content review**; public; licenses can differ by file/package, so follow repository licensing; use patterns as learning examples and validate against current supported content/runtime.
+- [MITRE ATT&CK](https://attack.mitre.org/), [STIX 2.1](https://docs.oasis-open.org/cti/stix/v2.1/stix-v2.1.html), [TAXII 2.1](https://docs.oasis-open.org/cti/taxii/v2.1/taxii-v2.1.html), and [FIRST TLP 2.0](https://www.first.org/tlp/) — **10–18 hours selected**; public; threat/relationship/sharing foundations, not attribution proof.
+- [Python documentation](https://docs.python.org/3/), [JavaScript MDN Guide](https://developer.mozilla.org/docs/Web/JavaScript/Guide), and [PowerShell documentation](https://learn.microsoft.com/powershell/) — **15–35 hours selected practice**; public; prioritize data types, JSON, HTTP, errors, testing, input validation and secrets.
+- [OWASP API Security Top 10](https://owasp.org/API-Security/) and [NIST SP 800-61 Rev. 3](https://csrc.nist.gov/pubs/sp/800/61/r3/final) — **6–10 hours selected**; public; secure integration/incident-response context.
+- [Palo Alto Networks LIVEcommunity](https://live.paloaltonetworks.com/) and [official YouTube channel](https://www.youtube.com/@PaloAltoNetworks) — **5–12 hours selected XSOAR demos/troubleshooting**; public; corroborate community/older videos with current docs.
+- Authorized XSOAR dev/prod tenant, partner lab or evaluation — **50–90 hours**; tenant/partner access required; use synthetic data and non-production integrations. Highest-value practice for the 30% playbook domain.
+- Adjacent O’Reilly, Pluralsight, Udemy or other SOAR/Python/API/threat-intelligence courses — **12–35 hours selected**; subscription/purchase may apply; no current course specifically aligned to this credential was verified October 28, 2026. Map to blueprint/current docs.
+- Practice questions, if used — **2–4 hours per timed set plus review**; no current official, MeasureUp or Whizlabs credential-specific practice product was verified. Use authorized, explanation-rich items; avoid dumps and do not treat a single score as readiness.
+
+### SPLK-5003 — Splunk Certified Cybersecurity Defense Architect
+
+Resource details from the [SPLK-5003 guide](../guides/SPLK-5003-splunk-certified-cybersecurity-defense-architect.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list, and it is not meant to be consumed end to end. Choose resources for measured gaps. Times are planning estimates; access, law/framework versions, product releases, and availability change.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [Official certification page](https://www.splunk.com/en_us/training/certification-track/splunk-certified-cybersecurity-defense-architect.html), [blueprint](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-cybersecurity-defense-architect.pdf), and [2026 course-track flowchart](https://www.splunk.com/en_us/pdfs/training/splunk-certified-cybersecurity-defense-architect-track-flowchart.pdf) | Free | 60–90 min | Blueprint is canonical; flowchart lists recommended courses, not eligibility prerequisites |
+| [Splunk Enterprise Security](https://help.splunk.com/en/splunk-enterprise-security), [SOAR](https://help.splunk.com/en/splunk-soar), and Enterprise docs | Free | 25–50 hr targeted | Relevant deployed release |
+| [2026 architect course-track flowchart](https://www.splunk.com/en_us/pdfs/training/splunk-certified-cybersecurity-defense-architect-track-flowchart.pdf) | Access/cost vary by delivery and learner | Combined runtime not publicly stated | Optional courses that extend Analyst/Engineer preparation; check catalog for current availability |
+| [Splunk Threat Research](https://research.splunk.com/), [Splunk Lantern Security Use Cases](https://lantern.splunk.com/Security_Use_Cases), and [BOTS](https://bots.splunk.com/) | Free/public availability varies | 15–35 hr selected | Adapt and test rather than copy |
+| [NIST Cybersecurity Framework 2.0](https://www.nist.gov/cyberframework) and [NIST SP 800-61](https://csrc.nist.gov/pubs/sp/800/61/r3/final) | Free | 10–20 hr targeted | Primary guidance; not legal advice or a single implementation |
+| [MITRE ATT&CK](https://attack.mitre.org/), [D3FEND](https://d3fend.mitre.org/), and [CISA Secure by Design](https://www.cisa.gov/securebydesign) | Free | 12–30 hr targeted | Public references whose mappings require validation |
+| [OpenSSF](https://openssf.org/) and [NTIA SBOM resources](https://www.ntia.gov/page/software-bill-materials) | Free | 8–16 hr targeted | Current formats/tooling and provenance checks |
+| Architecture portfolio/tabletop/pipeline lab | Safe lab plus qualified reviewers | 50–100 hr | Synthetic data, safe actions and governance review |
+
+### SPLUNK-CLOUD-ADMIN — Splunk Cloud Certified Admin
+
+Resource details from the [SPLUNK-CLOUD-ADMIN guide](../guides/SPLUNK-CLOUD-ADMIN-splunk-cloud-certified-admin.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list, and it is not meant to be consumed in full. Pick the official administration course or a documentation-led lab as the primary path. Cloud service behavior changes; verify every third-party explanation against the current service description, Admin/ACS manuals, and your tenant.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [Official Cloud Admin blueprint](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-cloud-admin.pdf) | Free canonical scope | 1–2 hr mapping/final review | Domains, prerequisite, contract |
+| [Official Cloud Admin page](https://www.splunk.com/en_us/training/certification-track/splunk-cloud-certified-admin.html) | Free | 20–40 min before booking | Status, delivery, price, prerequisite |
+| [Splunk Cloud Administration course description](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-cloud-administration-course-description.pdf) | Paid instructor-led; current schedule/pricing varies | 18 hours stated in the course description; labs/study extra | Net-new Cloud Admin path; do not combine with Transitioning to Splunk Cloud |
+| [Transitioning to Splunk Cloud course description](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/transitioning-to-splunk-cloud-course-description.pdf) | Paid instructor-led; current schedule/pricing varies | Check current catalog for duration | For experienced Enterprise admins; overlaps the Cloud Administration course, so choose the path that fits your background |
+| [Current Splunk Cloud service details](https://help.splunk.com/en/splunk-cloud-platform/get-started/service-terms-and-policies/10.5.2605/information-about-the-service/splunk-cloud-platform-service-details) | Free authoritative service boundary | 4–8 hr selected full review | Customer/Splunk responsibility and constraints |
+| [Splunk Cloud administration hub](https://help.splunk.com/en/splunk-cloud-platform/administer) | Free | 15–25 hr selected Admin/identity/index/monitoring topics | Current tenant administration |
+| [Admin Config Service manual](https://help.splunk.com/en/splunk-cloud-platform/administer/admin-config-service-manual/9.3.2411/welcome-to-the-admin-config-service-acs/about-the-admin-config-service-acs-api) | Free; compatibility/role requirements apply | 4–8 hr plus safe CLI/API lab | Self-service operations versus Support |
+| [Splunk Cloud data-ingestion docs](https://help.splunk.com/en/splunk-cloud-platform/get-data-in) | Free | 15–25 hr selected inputs/parsing topics plus lab | Exact ingestion mechanics |
+| [Splunk How-To YouTube](https://www.youtube.com/@SplunkHowTo) | Free official videos | 4–8 hr selected admin/ingest videos plus recreation | Visual supplement, version-check required |
+| [Splunk Lantern](https://lantern.splunk.com/) | Free use cases | 6–12 hr selected Cloud onboarding/troubleshooting articles | Operational patterns |
+| [O'Reilly Splunk Cloud search](https://www.oreilly.com/search/?q=Splunk%20Cloud) | Subscription; version age varies | Select 8–15 hr after publication/version review | Alternate background, never service authority |
+| [Udemy Splunk Cloud Admin search](https://www.udemy.com/courses/search/?q=Splunk%20Cloud%20Admin) | Paid marketplace; catalog/version vary | Select 8–15 hr only after blueprint/lab/provenance check | Optional alternate course |
+
+No exact current MeasureUp, Whizlabs, or Pluralsight Cloud Admin practice product was verified. Reject recalled/live/guaranteed-pass questions and any course that treats customer access to the managed service as identical to self-managed Enterprise.
+
+### SPLUNK-CORE-CONSULTANT — Splunk Core Certified Consultant
+
+Resource details from the [SPLUNK-CORE-CONSULTANT guide](../guides/SPLUNK-CORE-CONSULTANT-splunk-core-certified-consultant.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list, and it is not meant to be consumed end to end. Choose resources for measured gaps. Times are planning estimates; access, price, version, and schedules change.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [Official certification page](https://www.splunk.com/en_us/training/certification-track/splunk-core-certified-consultant.html) and [blueprint](https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-consultant.pdf) | Free | 60–90 min | Canonical scope/prerequisites |
+| [Splunk Enterprise docs](https://help.splunk.com/en/splunk-enterprise) | Free | 35–70 hr targeted | Deployed release and clustering/admin/search manuals |
+| [Core Consultant track flowchart](https://www.splunk.com/en_us/pdfs/training/splunk-core-certified-consultant-track.pdf) and [Core Consultant Labs description](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/core-consultant-labs-course-description.pdf) | Required; paid and access restricted to eligible Enterprise Architects | Combined time not publicly stated; Labs course includes six timed self-paced labs | Required eligibility training; the track defines the exact alternate credential route and authorization |
+| [Splunk Validated Architectures](https://help.splunk.com/en/splunk-enterprise/get-started/splunk-validated-architectures/introduction-to-splunk-validated-architectures/about-splunk-validated-architectures) | Free | 5–10 hr | Verify edition and applicability |
+| [Splunk How-To YouTube channel](https://www.youtube.com/@SplunkHowTo) | Free | 6–15 hr selected | Supplement; verify age/version |
+| Multi-node disposable implementation portfolio | Infrastructure/software terms vary | 60–120 hr | Synthetic data and repeatable rebuilds |
+| [Splunk Community](https://community.splunk.com/) | Free | 5–12 hr targeted | Corroborate with official docs |
+
+### SPLUNK-ENTERPRISE-ADMIN — Splunk Enterprise Certified Admin
+
+Resource details from the [SPLUNK-ENTERPRISE-ADMIN guide](../guides/SPLUNK-ENTERPRISE-ADMIN-splunk-enterprise-certified-admin.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list, and it is not meant to be consumed end to end. Pick the documentation, structured instruction, video, and practice format that addresses your measured gaps. Times are planning estimates, not promises; access, price, release coverage, and availability can change.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [Official certification page](https://www.splunk.com/en_us/training/certification-track/splunk-enterprise-certified-admin.html) and [test blueprint](https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-enterprise-admin.pdf) | Free | 45–75 min | Canonical scope/prerequisite; recheck before scheduling |
+| [Splunk Enterprise documentation](https://help.splunk.com/en/splunk-enterprise) | Free | 18–35 hr targeted | Select the version matching the lab/deployment |
+| [Splunk Enterprise System Administration](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-enterprise-system-administration-course-description.pdf) and [Splunk Enterprise Data Administration](https://www.splunk.com/en_us/pdfs/training/splunk-enterprise-data-administration-course-description.pdf) course descriptions | Paid/partner/employer access may apply | 12 and 18 hours respectively (30 contact hours total); labs/study extra | Blueprint-recommended preparation, not an exam prerequisite; confirm current schedule and version |
+| [Splunk How-To YouTube channel](https://www.youtube.com/@SplunkHowTo) | Free | 4–10 hr selected | Supplement rather than blueprint replacement; verify UI/version age |
+| [Splunk Community](https://community.splunk.com/) | Free | 3–8 hr targeted | Troubleshooting perspectives; validate answers against current official docs |
+| Disposable local or approved sandbox lab | Software/infrastructure terms vary | 25–50 hr | Use synthetic data and snapshot before destructive changes |
+| Pearson VUE/Splunk scheduling and policy pages reached from the certification page | Public policy pages | 20–40 min | Current price, delivery, identification, retake, and renewal details |
+
+### SPLUNK-ENTERPRISE-ARCHITECT — Splunk Enterprise Certified Architect
+
+Resource details from the [SPLUNK-ENTERPRISE-ARCHITECT guide](../guides/SPLUNK-ENTERPRISE-ARCHITECT-splunk-enterprise-certified-architect.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list, and it is not meant to be consumed end to end. Pick resources for measured gaps. Times are planning estimates; access, price, version, and schedules change.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [Official certification page](https://www.splunk.com/en_us/training/certification-track/splunk-enterprise-certified-architect.html) and [blueprint](https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-architect.pdf) | Free | 60–90 min | Canonical prerequisites/scope; recheck before scheduling |
+| [Splunk Enterprise documentation](https://help.splunk.com/en/splunk-enterprise) | Free | 30–60 hr targeted | Deployed release and clustering/admin manuals |
+| [Official Enterprise Architect track flowchart](https://www.splunk.com/en_us/pdfs/training/splunk-enterprise-certified-architect-track.pdf); [Architecting course description](https://www.splunk.com/en_us/pdfs/training/architecting-splunk-enterprise-deployments-course-description.pdf); [Deployment Practical Lab description](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/deployment-practical-lab-course-description.pdf) | Required; paid/partner/employer access | Published duration: Architecting 9 hours; Deployment Practical Lab 24 hours; other required courses vary | Eligibility training; complete every required item and verify authorization; do not infer a total duration from two items |
+| [Splunk Validated Architectures](https://help.splunk.com/en/splunk-enterprise/get-started/splunk-validated-architectures/introduction-to-splunk-validated-architectures/about-splunk-validated-architectures) | Free | 4–8 hr selected | Validate currency and applicability; not a sizing substitute |
+| [Splunk How-To YouTube channel](https://www.youtube.com/@SplunkHowTo) | Free | 5–12 hr selected | Supplement; verify version/UI age |
+| Disposable multi-node lab and failure journal | Infrastructure/software terms vary | 45–90 hr | Synthetic data and automated rebuilds |
+| [Splunk Community](https://community.splunk.com/) | Free | 4–10 hr targeted | Corroborate answers with current official docs |
+
+### SPLUNK-O11Y-METRICS-USER — Splunk O11y Cloud Certified Metrics User
+
+Resource details from the [SPLUNK-O11Y-METRICS-USER guide](../guides/SPLUNK-O11Y-METRICS-USER-splunk-o11y-cloud-certified-metrics-user.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list, and it is not meant to be consumed end to end. Choose resources for measured gaps. Times are planning estimates; access, price, tenant features, and availability change.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [Official certification page](https://www.splunk.com/en_us/training/certification-track/splunk-o11y-cloud-certified-metrics-user.html) and [blueprint](https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-o11y-cloud-metrics-user.pdf) | Free | 45–75 min | Canonical scope |
+| [Splunk Observability Cloud docs](https://help.splunk.com/en/splunk-observability-cloud) | Free | 15–30 hr targeted | Current product behavior; tenant entitlements vary |
+| [OpenTelemetry Collector docs](https://opentelemetry.io/docs/collector/) | Free/open source | 5–10 hr targeted | Collector concepts; use Splunk docs for supported packaging/export |
+| [Official Metrics User track flowchart](https://www.splunk.com/en_us/pdfs/training/splunk-o11y-cloud-certified-metrics-user-track.pdf) | Free self-paced and selected paid options; account/access may vary | Combined runtime not stated; individual paths vary | Recommended learning sequence, not an exam prerequisite; check current catalog |
+| [Fundamentals of Metrics Monitoring](https://www.splunk.com/en_us/pdfs/training/fundamentals-of-metrics-monitoring-course-description.pdf) and [Visualizing and Alerting](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/visualizing-and-alerting-in-splunk-im-course-description.pdf) | Paid instructor-led/blended training; check current delivery | 6 hours; 4.5-hour instructor-led portion respectively | Optional metric/MTS and dashboard/detector practice; neither covers the whole blueprint |
+| Sandbox tenant plus synthetic Linux/Kubernetes metrics portfolio | Trial/employer/partner access may be needed | 20–40 hr | Applied evidence; never use production secrets/data |
+
+### 1Z0-1109-26 — Oracle Cloud Infrastructure DevOps Professional
+
+Resource details from the [1Z0-1109-26 guide](../guides/1Z0-1109-26-oracle-cloud-infrastructure-devops-professional.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective learning path, not a complete list of OCI DevOps resources.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official OCI DevOps Professional learning path](https://mylearn.oracle.com/ou/learning-path/become-an-oci-devops-professional-2026/162852) | Paid Professional course; Oracle account sign-in | **35+ hours** as published by Oracle University |
+| [A DevOps Engineer's Guide to OCI](https://docs.oracle.com/en-us/iaas/Content/GSG/Reference/getting-started-as-devops.htm) | Public | **10–14 hours** targeted study |
+| Eight labs in this guide | Authorized OCI tenancy or local substitutes | **28–40 hours** plus one timed release-and-recovery exercise |
+
+### 1Z0-1111-26 — Oracle Cloud Infrastructure Observability Professional
+
+Resource details from the [1Z0-1111-26 guide](../guides/1Z0-1111-26-oracle-cloud-infrastructure-observability-professional.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective learning path, not a complete list of OCI observability resources.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official OCI Observability Professional learning path](https://mylearn.oracle.com/ou/learning-path/become-an-oracle-cloud-infrastructure-observability-professional-2026/162237) | Paid Professional course; Oracle account sign-in | **9+ hours** as published by Oracle University |
+| [OCI monitoring and observability guidance](https://docs.oracle.com/en-us/iaas/Content/cloud-adoption-framework/monitoring-and-observability.htm) | Public | **10–14 hours** targeted study |
+| Eight labs in this guide | Authorized OCI tenancy or local substitutes | **24–36 hours** plus two timed incident drills |
+
+### 1Z0-1124-26 — Oracle Cloud Infrastructure Networking Professional
+
+Resource details from the [1Z0-1124-26 guide](../guides/1Z0-1124-26-oracle-cloud-infrastructure-networking-professional.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective learning path, not a complete list of OCI networking resources.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official OCI Networking Professional learning path](https://mylearn.oracle.com/ou/learning-path/become-an-oracle-cloud-infrastructure-networking-professional-2026/163340) | Paid Professional course; Oracle account sign-in | **19+ hours** as published by Oracle University |
+| [OCI Networking documentation](https://docs.oracle.com/en-us/iaas/Content/Network/Concepts/overview.htm) | Public | **12–18 hours** targeted study |
+| Eight labs in this guide | Authorized OCI tenancy or paper design | **28–40 hours** plus two timed troubleshooting drills |
+
+### 1Z0-171 — Oracle AI Database SQL Associate
+
+Resource details from the [1Z0-171 guide](../guides/1Z0-171-oracle-ai-database-sql-associate.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective learning path, not a complete list of Oracle SQL resources.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official Oracle AI Database SQL Associate learning path](https://mylearn.oracle.com/ou/learning-path/earn-the-oracle-ai-database-sql-associate-credential/140075) | Oracle account/subscription may be required | **20+ hours** as published by Oracle University |
+| [Oracle AI Database 26 SQL Language Reference](https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/index.html) | Public | **12–20 hours** targeted reference work |
+| Eight labs in this guide | Disposable Oracle AI Database schema | **28–40 hours** plus timed SQL drills |
+
+### 1Z0-182 — Oracle AI Database Administration Associate
+
+Resource details from the [1Z0-182 guide](../guides/1Z0-182-oracle-ai-database-administration-associate.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective learning path, not a complete list of Oracle database administration resources.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official Oracle AI Database Administration Associate learning path](https://mylearn.oracle.com/ou/learning-path/earn-the-oracle-ai-database-administration-associate-credential/140076) | Oracle account/subscription may be required | **12+ hours** as published by Oracle University |
+| [Oracle AI Database 26 Administrator's Guide](https://docs.oracle.com/en/database/oracle/oracle-database/26/admin/index.html) | Public | **15–25 hours** targeted reference work |
+| Eight labs in this guide | Disposable Oracle AI Database environment | **32–48 hours** plus two recovery/tuning rehearsals |
+
+### 1Z0-830 — Oracle Certified Professional: Java SE 21 Developer
+
+Resource details from the [1Z0-830 guide](../guides/1Z0-830-oracle-java-se-21-developer-professional.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective learning path, not a complete list of Java resources.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official Java SE 21 Developer learning path](https://learn.oracle.com/ols/learning-path/become-a-java-se-21-developer/117252/138845) | Oracle account/subscription may be required for course content | **40+ hours** as published by Oracle University |
+| [Java SE 21 API documentation](https://docs.oracle.com/en/java/javase/21/docs/api/index.html) | Public | **15–25 hours** of targeted API reading while coding |
+| Eight labs in this guide | Local JDK 21 | **24–36 hours** plus two timed reviews |
+
+### 1Z0-997-26 — Oracle Cloud Infrastructure Architect Professional
+
+Resource details from the [1Z0-997-26 guide](../guides/1Z0-997-26-oracle-cloud-infrastructure-architect-professional.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective learning path, not a complete list of OCI architecture resources.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official OCI Architect Professional learning path](https://mylearn.oracle.com/ou/learning-path/become-an-oci-architect-professional-2026/163270) | Paid Professional course; Oracle account sign-in | **26+ hours** as published by Oracle University |
+| [OCI best practices and reference architectures](https://docs.oracle.com/en/solutions/oci-best-practices/) | Public | **10–14 hours** targeted study |
+| Eight labs in this guide | Authorized OCI tenancy or paper design | **28–40 hours** plus two timed architecture reviews |
+
+### NSE-8 — Fortinet NSE 8 Cybersecurity Expert
+
+Resource details from the [NSE-8 guide](../guides/NSE-8-fortinet-nse-8-cybersecurity-expert.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list, and it is not a prescription to consume everything. NSE 8 is a practical expert journey: use the official contracts and select current documents and labs for measured gaps. Times are publisher-listed where visible or clearly labeled estimates.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [NSE 8 Cybersecurity Expert](https://training.fortinet.com/local/staticpage/view.php?page=nse_8) | Public | 30–45 min | Credential prerequisites, Core-plus-Elective rule, timing, validity, renewal, availability and policies |
+| [Fortinet certification program catalog](https://www.fortinet.com/training-certification) | Public | 15–30 min | Program pathway and two-year validity context; practical pages remain authoritative for exam scope |
+| [2026 NSE Training Program Update](https://www.fortinet.com/nse-training-update) | Public | 30–60 min | Standard 200-point renewal route, prerequisite status, activity categories/caps and transition rules |
+| [NSE 8 Core Practical](https://training.fortinet.com/local/staticpage/view.php?page=880_core_exam) | Public | 60–90 min | Current weighted Core blueprint, product versions, delivery, price and task contract |
+| [Secure Networking Practical](https://training.fortinet.com/local/staticpage/view.php?page=881_secure_networking_exam) | Public | 45–75 min | December 2026 status watch and exact Secure Networking elective blueprint |
+| [Application Security Practical](https://training.fortinet.com/local/staticpage/view.php?page=882_application_security_exam) | Public | 45–75 min | January 2027 status watch and exact Application Security elective blueprint |
+| [Security Operations Practical](https://training.fortinet.com/local/staticpage/view.php?page=883_security_operations_exam) | Public | 45–75 min | March 2027 status watch and exact Security Operations elective blueprint |
+| [Fortinet Training Institute library](https://training.fortinet.com/local/library/?category=Certification%3AExpert) | Account; Immersion/labs may be gated or paid | 20–40 min selection; 80–160+ hr practice estimate | Locate the current NSE 8 Immersion course and build an elective-aligned lab plan |
+| [FortiOS 7.6 documentation](https://docs.fortinet.com/product/fortigate/7.6) | Public | 30–50 hr selected labs/reference | Core networking, HA, VPN/SD-WAN, NGFW, SASE, authentication, Fabric and troubleshooting |
+| [FortiGate 7.6 SD-WAN deployment for MSSPs](https://docs.fortinet.com/document/fortigate/7.6.0/sd-wan-deployment-for-mssps/705134/introduction) | Public | 3–8 hr selected | Multi-tenant overlay, management and operating context for relevant Secure Networking practice |
+| [FortiManager 7.6 documentation](https://docs.fortinet.com/product/fortimanager/7.6) | Public | 15–25 hr selected labs/reference | Policy/template/install/workspace, VPN/SD-WAN orchestration, HA, scripts, Jinja and APIs |
+| [FortiAnalyzer 7.6 documentation](https://docs.fortinet.com/product/fortianalyzer/7.6) | Public | 12–20 hr selected labs/reference | Logging, HA, views/datasets, incidents, events, handlers, reports and triage |
+| [FortiAuthenticator documentation](https://docs.fortinet.com/product/fortiauthenticator) | Public | 8–16 hr selected labs/reference | Core AAA, SSO, PKI/certificates, HA and troubleshooting; select the 8.0 baseline |
+| [FortiClient EMS 7.4 documentation](https://docs.fortinet.com/product/forticlient/7.4) | Public | 8–16 hr selected labs/reference | Secure Networking endpoint, ZTNA, profiles/tags, protection, quarantine and HA |
+| [FortiWeb 8.0 documentation](https://docs.fortinet.com/product/fortiweb/8.0) | Public | 10–20 hr selected labs/reference | Application elective web/API protection, delivery, HA, learning and troubleshooting |
+| [FortiSandbox 5.2 documentation](https://docs.fortinet.com/product/fortisandbox/5.2) | Public | 8–16 hr selected labs/reference | Versioned application-elective submission, analysis, verdict, integration, HA and outage behavior |
+| [FortiSIEM 7.4 documentation](https://docs.fortinet.com/product/fortisiem/7.4) | Public | 12–24 hr selected labs/reference | Security Operations elective collection, CMDB, parsers, queries, analytics, incidents and HA |
+| [FortiSOAR 7.6 documentation](https://docs.fortinet.com/product/fortisoar/7.6) | Public | 12–24 hr selected labs/reference | Security Operations cases, connectors, playbooks, content, reporting, workspaces and HA |
+| [Fortinet Training Institute policies](https://helpdesk.training.fortinet.com/support/solutions/73000238852) | Public | 45–75 min | Practical delivery, retake, results, security, vouchers, conduct and renewal |
+
+### NSE-I-MSSP-SECURITY — Fortinet Industry Certification in MSSP Security
+
+Resource details from the [NSE-I-MSSP-SECURITY guide](../guides/NSE-I-MSSP-SECURITY-fortinet-industry-mssp-security.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective foundation, not a complete list, not a prescription to consume everything, and not an exam plan until Fortinet publishes a blueprint. Choose the sources that close operational gaps. Times are planning estimates unless publisher-listed.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [Official MSSP Security certification page](https://training.fortinet.com/local/staticpage/view.php?page=nse_industry_mssp_security) | Public | 5 min now; recheck regularly | Canonical status; currently only Coming soon |
+| [Fortinet certification program catalog](https://www.fortinet.com/training-certification) | Public | 15–30 min; recheck before decisions | Credential purpose, prerequisites, proctored-exam requirement, delivery context and two-year validity; not an exam blueprint |
+| [2026 NSE Training Program Update](https://www.fortinet.com/nse-training-update) | Public | 30–60 min; recheck before renewal | Industry-certification prerequisites and bounded recertification route; table layout and availability details remain volatile |
+| [Fortinet MSSP solution overview](https://www.fortinet.com/solutions/service-provider/communications-service-provider/mssp) | Public | 30–60 min | Vendor's managed-service solution context; marketing, not exam objectives |
+| [FortiGate 7.6 SD-WAN deployment for MSSPs](https://docs.fortinet.com/document/fortigate/7.6.0/sd-wan-deployment-for-mssps/705134/introduction) | Public | 3–8 hr selected | Versioned multi-tenant MSSP deployment context; supporting practice only, not published certification scope |
+| [FortiManager 7.6 documentation](https://docs.fortinet.com/product/fortimanager/7.6) | Public | 20–40 hr selected | ADOMs, delegated administration, devices, policies, APIs, HA and operations |
+| [FortiManager 7.6.6 ADOM guidance](https://docs.fortinet.com/document/fortimanager/7.6.6/administration-guide/962634/adoms) | Public | 1–2 hr plus lab | Concrete customer/device/VDOM and administrator-scope model; product evidence, not exam scope |
+| [FortiPortal multi-organization service-provider administrators](https://docs.fortinet.com/document/fortiportal/7.4.0/new-features/811633/multi-organization-service-provider-administrators-7-4-4) | Public | 30–60 min plus lab | Versioned organization/delegation example; verify current FortiPortal release behavior |
+| [FortiAnalyzer 7.6 documentation](https://docs.fortinet.com/product/fortianalyzer/7.6) | Public | 15–30 hr selected | Multi-scope logging, reports, events, storage, APIs and troubleshooting |
+| [FortiSIEM 7.4 documentation](https://docs.fortinet.com/product/fortisiem/7.4) and [FortiSOAR 7.6 documentation](https://docs.fortinet.com/product/fortisoar/7.6) | Public | 25–50 hr selected | Telemetry, detection, incidents, tenant/organization models, connectors and automation |
+| [NIST Cybersecurity Framework 2.0](https://csrc.nist.gov/pubs/cswp/29/the-nist-cybersecurity-framework-csf-20/final) | Public | 6–10 hr selected | Outcome, governance and risk vocabulary for service mapping |
+| [NIST SP 800-61 Rev. 3](https://csrc.nist.gov/pubs/sp/800/61/r3/final) | Public | 5–9 hr selected | Incident-response integration with cybersecurity risk management |
+| [CISA/NSA/FBI and international guidance for MSPs and customers](https://www.cisa.gov/news-events/news/cisa-nsa-fbi-and-international-cyber-authorities-issue-cybersecurity-advisory-protect-managed) | Public | 2–4 hr selected | Shared security, MFA/remote access, logging, incident/recovery, supply-chain and contract practice; vendor-neutral, not exam scope |
+| [Fortinet Training Institute library](https://training.fortinet.com/course/index.php) | Free account; labs/ILT may cost | 15–40 hr selected | Current Fortinet product learning; no MSSP certification-aligned course was publicly identified |
+| [Fortinet YouTube](https://www.youtube.com/@Fortinet) | Free/YouTube | 4–12 hr selected | Official demos and service-provider context; verify behavior in current docs |
+| O'Reilly, Pluralsight, Udemy, LinkedIn Learning, SANS and other managed-SOC/MSSP, SIEM/SOAR, ITIL/SLA, multi-tenancy, API and incident courses | Subscription/purchase may apply | 15–50 hr selected | Transferable foundation only; no current course can be declared aligned without a blueprint |
+| Authorized multi-tenant partner or product lab | Partner, entitlement, or training access may be required | 50–100 hr | Highest-value isolation, onboarding, change, telemetry, incident, resilience, and offboarding practice |
+
+### NSE-1-CYBERSECURITY — Fortinet NSE 1 in Cybersecurity
+
+Resource details from the [NSE-1-CYBERSECURITY guide](../guides/NSE-1-CYBERSECURITY-fortinet-nse-1-in-cybersecurity.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective starting set, not a complete list and not a prescription to consume everything. Pick and choose what closes your gaps. Times are publisher-listed or labeled estimates; access and content can change.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [NSE 1 certification page](https://training.fortinet.com/local/staticpage/view.php?page=nse_1) | Public | 15–25 min | Current requirement, validity, renewal, and authoritative enrollment route |
+| [Cybersecurity and Cloud Fundamentals](https://training.fortinet.com/local/staticpage/view.php?page=library_cybersecurity-and-cloud-fundamentals) | Free Fortinet account | 11 hr listed | Required official course, published agenda, and online assessment |
+| [Fortinet NSE program](https://training.fortinet.com/local/staticpage/view.php?page=nse) | Public | 20–30 min | Current level structure and progression after July 2026 |
+| [NIST Cybersecurity Framework 2.0](https://www.nist.gov/cyberframework) | Public | 2–4 hr selected | Vendor-neutral Govern, Identify, Protect, Detect, Respond, Recover context |
+| [CISA Secure Our World](https://www.cisa.gov/secure-our-world) | Public | 1–2 hr selected | Practical password, MFA, phishing, and update guidance |
+| [Cloud Security Alliance Security Guidance](https://cloudsecurityalliance.org/research/guidance) | Public | 4–8 hr selected | Cloud responsibility and control context; deeper than the assessment requires |
+| [Fortinet YouTube](https://www.youtube.com/@Fortinet) | Free/YouTube | 2–5 hr selected | Official visual threat, product, and architecture explanations; check dates |
+| [Introduction to Cyber Security Specialization](https://www.coursera.org/specializations/intro-cyber-security) | Audit/subscription varies | About 4 months at 4 hr/week listed | Optional vendor-neutral reinforcement, not Fortinet assessment authority |
+
+### NSE-2-CYBERSECURITY — Fortinet NSE 2 in Cybersecurity
+
+Resource details from the [NSE-2-CYBERSECURITY guide](../guides/NSE-2-CYBERSECURITY-fortinet-nse-2-in-cybersecurity.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective starting set, not a complete list and not a prescription to consume everything. Start with the required course, then pick only the references and labs that address your gaps. Times are publisher-listed or planning estimates.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [NSE 2 certification page](https://training.fortinet.com/local/staticpage/view.php?page=nse_2) | Public | 15–25 min | Current requirement, validity, renewal, and enrollment route |
+| [Introduction to the Next Generation Firewall](https://training.fortinet.com/local/staticpage/view.php?page=library_introduction-to-next-generation-firewall) | Free Fortinet account | 2 hr listed | Required course, exact published agenda, and online exam |
+| [FortiGate/FortiOS 7.6 documentation](https://docs.fortinet.com/product/fortigate/7.6) | Public | 4–10 hr selected | Current product context and diagrams; deeper than NSE 2 configuration scope |
+| [NIST SP 800-41 Rev. 1](https://csrc.nist.gov/pubs/sp/800/41/r1/final) | Public | 3–5 hr selected | Vendor-neutral firewall policy and architecture fundamentals |
+| [NIST SP 800-207 Zero Trust Architecture](https://csrc.nist.gov/pubs/sp/800/207/final) | Public | 3–5 hr selected | Identity, policy enforcement, and zero-trust context |
+| [CISA Secure by Design](https://www.cisa.gov/securebydesign) | Public | 1–3 hr selected | Broader control, default, and product-responsibility thinking |
+| [Fortinet YouTube](https://www.youtube.com/@Fortinet) | Free/YouTube | 2–6 hr selected | Official NGFW, SD-WAN, SASE, and threat explanations; verify version/date |
+| [Network Security and Firewalls path](https://www.pluralsight.com/paths/network-security-and-firewalls) | Paid | 10 hr listed; select modules | Optional vendor-neutral reinforcement, not assessment authority |
+
+### NSE-3-CYBERSECURITY — Fortinet NSE 3 in Cybersecurity
+
+Resource details from the [NSE-3-CYBERSECURITY guide](../guides/NSE-3-CYBERSECURITY-fortinet-nse-3-in-cybersecurity.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective starting set, not a complete list and not a prescription to consume everything. Complete the official course, then pick references or labs that address measured gaps. Times are publisher-listed or planning estimates.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [NSE 3 certification page](https://training.fortinet.com/local/staticpage/view.php?page=nse_3) | Public | 15–25 min | Current course/exam requirement, validity, and renewal |
+| [FortiGate 7.6 Operator](https://training.fortinet.com/local/staticpage/view.php?page=library_fortigate-operator) | Free Fortinet account | 8 hr listed | Required course, simulations, exact agenda, and authorized online exam |
+| [FortiGate/FortiOS 7.6 documentation](https://docs.fortinet.com/product/fortigate/7.6) | Public | 12–25 hr selected | Current administration, reference, release, SD-WAN, ZTNA, and deployment guidance |
+| [Fortinet Training Institute policies](https://helpdesk.training.fortinet.com/support/solutions/73000238852) | Public | 30–60 min | Current account, exam, badge, and program-policy questions |
+| [Fortinet YouTube](https://www.youtube.com/@Fortinet) | Free/YouTube | 3–8 hr selected | Official visual demonstrations and architecture; verify versions |
+| [Fortinet: The Big Picture](https://www.pluralsight.com/courses/fortinet-big-picture) | Paid | 1 hr 24 min listed | Optional product-family context; 2023 content predates the current program |
+| [Network Security and Firewalls path](https://www.pluralsight.com/paths/network-security-and-firewalls) | Paid | 10 hr listed; select modules | Vendor-neutral networking/firewall reinforcement |
+| An entitled FortiGate lab, VM, or authorized sandbox | Entitlement/cost varies | 12–25 hr | Highest-value configuration, observation, failure, rollback, and cleanup practice |
+
+### NSE-5-CLOUD-SECURITY — Fortinet NSE 5 in Cloud Security
+
+Resource details from the [NSE-5-CLOUD-SECURITY guide](../guides/NSE-5-CLOUD-SECURITY-fortinet-nse-5-in-cloud-security.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective starting set, not a complete list and not a prescription to consume everything. Choose one available route, then pick only resources that close its measured gaps. Times are publisher-listed or planning estimates.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [NSE 5 Cloud Security track](https://training.fortinet.com/local/staticpage/view.php?page=nse_5_cloud_security) | Public | 20–30 min | Current prerequisite, eligible routes, validity, and renewal |
+| [FortiWeb 8.0 exam page](https://training.fortinet.com/local/staticpage/view.php?page=fortiweb_administrator_exam) | Public | 30–45 min | Canonical FortiWeb route contract and topics |
+| [FortiWeb 8.0 course](https://training.fortinet.com/local/staticpage/view.php?page=library_fortiweb-administrator) | Free account; labs/ILT may cost | 17–25 hr estimate | Official deployment, WAF/API/bot, delivery, HA, and troubleshooting preparation |
+| [FortiWeb 8.0 documentation](https://docs.fortinet.com/product/fortiweb/8.0) | Public | 20–40 hr selected | Administration, WAF concepts, CLI, and troubleshooting |
+| [FortiAppSec Cloud 26 exam page](https://training.fortinet.com/local/staticpage/view.php?page=fortiappsec_cloud_administrator_exam) | Public | 45–60 min | Canonical weighted route contract and tasks |
+| [FortiAppSec Cloud 26 course](https://training.fortinet.com/local/staticpage/view.php?page=library_fortiappsec-cloud-administrator) | Free account; labs may vary | 10–18 hr estimate | Official SaaS architecture, WAAP/API, bot, GSLB, and analytics instruction |
+| [FortiAppSec Cloud documentation](https://docs.fortinet.com/product/fortiappsec-cloud) | Public; tenant features may require access | 15–30 hr selected | Current user behavior, integrations, and operations |
+| [FortiADC 7.6 course](https://training.fortinet.com/local/staticpage/view.php?page=library_fortiadc-administrator) | Free account; labs/ILT may cost | 17 hr lecture+lab listed | Skills preview only until the standalone NSE 5 exam contract is live |
+| [OWASP Web Security Testing Guide](https://owasp.org/www-project-web-security-testing-guide/) and [API Security Top 10](https://owasp.org/projects/api-security-project) | Public | 12–25 hr selected | Vendor-neutral web/API risk and authorized test context |
+| [Fortinet exam release notices](https://helpdesk.training.fortinet.com/support/solutions/articles/73000659982-nse-exam-release-notices-new-and-discontinued-exams) | Public | 15–20 min | Recent releases and retirements |
+| [Fortinet YouTube](https://www.youtube.com/@Fortinet) | Free/YouTube | 4–10 hr selected | Official application-security demonstrations; verify product/version |
+| Authorized FortiWeb or FortiAppSec tenant/partner lab | Gated/paid entitlement | 30–60 hr for one route | Highest-value deployment, tuning, failure, evidence, rollback, and cleanup practice |
+
+### NSE-5-SASE — Fortinet NSE 5 in SASE
+
+Resource details from the [NSE-5-SASE guide](../guides/NSE-5-SASE-fortinet-nse-5-in-sase.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective starting set, not a complete list and not a prescription to consume everything. Start with the exam page and official courses, then choose documentation and labs that close your gaps. Times are publisher-listed or planning estimates.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [NSE 5 SASE track page](https://training.fortinet.com/local/staticpage/view.php?page=nse_5_sase) | Public | 20–30 min | Prerequisite, credential, renewal, and current exam route |
+| [FortiSASE and SD-WAN Core Administrator exam](https://training.fortinet.com/local/staticpage/view.php?page=fortisase_and_sd-wan_core_administrator_exam) | Public | 45–75 min | Canonical version 26 ranges, tasks, contract, experience, and 7.6 retirement |
+| [FortiSASE 26 Core Administrator course](https://training.fortinet.com/local/staticpage/view.php?page=library_fortisase-core-administrator) | Free account; labs may vary | 8–16 hr estimate | Official SASE provisioning, onboarding, SIA/SSA, endpoint, and analytics instruction |
+| [SD-WAN Core Operations Administrator](https://training.fortinet.com/local/staticpage/view.php?page=library_sd-wan-core-operations-administrator) | Free account; labs/ILT may cost | 12 hr lecture+lab listed | Members, SLA, rules, routing, sessions, and troubleshooting |
+| [FortiSASE documentation](https://docs.fortinet.com/product/fortisase) | Public; automated access may be blocked | 15–30 hr selected | Current administration, architecture, deployment, and reference source |
+| [FortiOS 7.6 documentation](https://docs.fortinet.com/product/fortigate/7.6) | Public | 12–25 hr selected | SD-WAN, routing, sessions, NAT, policies, inspection, and operations |
+| [FortiManager documentation](https://docs.fortinet.com/product/fortimanager/7.6) | Public | 5–12 hr selected | Central management ownership, templates, installation, revision, and troubleshooting |
+| [NIST SP 800-207 Zero Trust Architecture](https://csrc.nist.gov/pubs/sp/800/207/final) | Public | 3–5 hr selected | Vendor-neutral identity/policy/access context; not product authority |
+| [Fortinet exam release notices](https://helpdesk.training.fortinet.com/support/solutions/articles/73000659982-nse-exam-release-notices-new-and-discontinued-exams) | Public | 15–20 min | Current release and last-delivery dates |
+| [Fortinet YouTube](https://www.youtube.com/@Fortinet) | Free/YouTube | 5–12 hr selected | Official SASE/SD-WAN architecture and demonstrations; check version |
+| Authorized FortiSASE partner/tenant and FortiGate/FortiManager lab | Gated/paid entitlement | 30–60 hr | Highest-value end-to-end deployment, failure, analytics, rollback, and cleanup practice |
+
+### NSE-5-SECURE-NETWORKING — Fortinet NSE 5 in Secure Networking
+
+Resource details from the [NSE-5-SECURE-NETWORKING guide](../guides/NSE-5-SECURE-NETWORKING-fortinet-nse-5-in-secure-networking.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective starting set, not a complete list and not a prescription to consume everything. Choose the one exam route you intend to take, then use only resources that close measured gaps. Times are publisher-listed or planning estimates.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [NSE 5 Secure Networking track](https://training.fortinet.com/local/staticpage/view.php?page=nse_5_secure_networking) | Public | 20–30 min | Current prerequisites, eligible routes, validity, and renewal |
+| [FortiSwitch exam page](https://training.fortinet.com/local/staticpage/view.php?page=fortiswitch_administrator_exam) | Public | 30–45 min | Exact 7.6 route contract and published topic checklist |
+| [FortiSwitch 7.6 course](https://training.fortinet.com/local/staticpage/view.php?page=library_fortiswitch-administrator) | Free account; labs may cost | 12–20 hr estimate | Official route instruction and hands-on labs; verify displayed duration |
+| [FortiSwitchOS 7.6.2 release notes](https://docs.fortinet.com/document/fortiswitch/7.6.2/fortiswitchos-administration-guide/35890/what-s-new-in-fortiswitchos-7-6-2) | Public | 15–30 hr selected | FortiLink/standalone, VLAN, STP, security, operations, CLI, and version-specific release details |
+| [Secure Wireless LAN exam page](https://training.fortinet.com/local/staticpage/view.php?page=secure_wireless_lan_administrator_exam) | Public | 30–45 min | Exact current 7.6 route contract and topic checklist |
+| [Secure Wireless LAN course](https://training.fortinet.com/local/staticpage/view.php?page=library_secure-wireless-lan-administrator) | Free account; labs may vary | 10–18 hr estimate | Official FortiAP/controller/FortiEdge Cloud preparation |
+| [FortiAP/FortiWiFi 7.6 documentation](https://docs.fortinet.com/product/fortiap/7.6) | Public | 15–30 hr selected | RF, controller, AP profiles, access, monitoring, and diagnostics |
+| [SD-WAN 7.6 Core Administrator exam](https://training.fortinet.com/local/staticpage/view.php?page=sd-wan_core_administrator_exam) | Public | 30–45 min | Current route contract and three weighted topic groups |
+| [SD-WAN Core Operations course](https://training.fortinet.com/local/staticpage/view.php?page=library_sd-wan-core-operations-administrator) | Free account; labs/ILT may cost | 12 hr lecture+lab listed | Skills preparation for the current SD-WAN route |
+| [FortiOS 7.6 SD-WAN documentation](https://docs.fortinet.com/sdwan) | Public | 10–20 hr selected | Members, SLA, routing, rules, sessions, design, and troubleshooting |
+| [Fortinet exam release notices](https://helpdesk.training.fortinet.com/support/solutions/articles/73000659982-nse-exam-release-notices-new-and-discontinued-exams) | Public | 15–20 min | Releases and last-delivery dates before booking |
+| [Fortinet YouTube](https://www.youtube.com/@Fortinet) | Free/YouTube | 4–10 hr selected | Official switching, wireless, and SD-WAN demonstrations; verify versions |
+| Authorized FortiGate/FortiSwitch/FortiAP or SD-WAN lab | Entitlement/cost varies | 25–50 hr for one route | Required applied configuration, failure, evidence, rollback, and cleanup |
+
+### NSE-5-SECURITY-OPERATIONS — Fortinet NSE 5 in Security Operations
+
+Resource details from the [NSE-5-SECURITY-OPERATIONS guide](../guides/NSE-5-SECURITY-OPERATIONS-fortinet-nse-5-in-security-operations.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective starting set, not a complete list and not a prescription to consume everything. Start with the exam page and official Analyst course, then choose references and labs that close measured gaps. Times are publisher-listed or planning estimates.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [NSE 5 Security Operations track](https://training.fortinet.com/local/staticpage/view.php?page=nse_5_security_operations) | Public | 20–30 min | Current prerequisite, eligible exam, validity, and renewal |
+| [FortiAnalyzer 7.6 Analyst exam](https://training.fortinet.com/local/staticpage/view.php?page=fortianalyzer_analyst_exam) | Public | 30–45 min | Canonical contract, tasks, experience, and official resources |
+| [FortiAnalyzer 7.6 Analyst course](https://training.fortinet.com/local/staticpage/view.php?page=library_fortianalyzer-analyst) | Free account; labs/ILT may cost | 11 hr lecture+lab listed | Official log analysis, events/incidents, FortiAI, reports, and playbooks |
+| [FortiAnalyzer 7.6 Administrator course](https://training.fortinet.com/local/staticpage/view.php?page=library_fortianalyzer-administrator) | Free account; labs/ILT may cost | 7 hr lecture+lab listed | Prerequisite deployment/log health knowledge; not the Analyst blueprint |
+| [FortiAnalyzer 7.6.7 release notes](https://docs.fortinet.com/document/fortianalyzer/7.6.0/new-features/893972/7-6-7) | Public | 20–40 hr selected | Current release deltas, analytics/report updates, and version-specific operational changes |
+| [MITRE ATT&CK](https://attack.mitre.org/) | Public | 4–10 hr selected | Technique-driven hunting and incident context; not product authority |
+| [NIST SP 800-61 Rev. 3](https://csrc.nist.gov/pubs/sp/800/61/r3/final) | Public | 3–6 hr selected | Vendor-neutral incident-response lifecycle and coordination |
+| [Fortinet YouTube](https://www.youtube.com/@Fortinet) | Free/YouTube | 4–10 hr selected | Official SOC, FortiAnalyzer, Fabric, and automation demonstrations; verify version |
+| Authorized FortiAnalyzer/FortiGate tenant, VM, or partner lab | Gated/paid entitlement | 30–60 hr | Highest-value log, detection, investigation, automation, report, and failure practice |
+| Third-party SIEM/SOC analysis courses on O'Reilly, Pluralsight, or Udemy | Paid; selection varies | 10–30 hr selected | Optional SQL, hunting, incident, and automation reinforcement; map back to official 7.6 tasks |
+
+### NSE-6-CLOUD-SECURITY — Fortinet NSE 6 in Cloud Security
+
+Resource details from the [NSE-6-CLOUD-SECURITY guide](../guides/NSE-6-CLOUD-SECURITY-fortinet-nse-6-cloud-security.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective starting set, not a complete list and not a prescription to consume everything. Choose the selected lane's official blueprint, documentation, and hands-on work. Times are planning estimates unless the publisher lists them.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [NSE 6 in Cloud Security](https://training.fortinet.com/local/staticpage/view.php?page=nse_6_cloud_security) | Public | 20–30 min | Canonical requirements, options, availability, renewal and policy summary |
+| [FortiCNAPP Analyst exam](https://training.fortinet.com/local/staticpage/view.php?page=forticnapp_analyst_exam) | Public | 45–75 min | Current weighted FortiCNAPP 26 blueprint and experience guidance |
+| [FortiCNAPP documentation](https://docs.fortinet.com/product/forticnapp) | Public | 25–50 hr selected | Architecture, policies, APIs, query language and current cloud behavior |
+| [FortiMail Administrator exam](https://training.fortinet.com/local/staticpage/view.php?page=fortimail_administrator_exam) | Public | 30–60 min | Current FortiMail 7.4 scope and official learning route |
+| [FortiMail 7.4 documentation](https://docs.fortinet.com/product/fortimail/7.4) | Public | 20–40 hr selected | Deployment, SMTP, policies, filtering, encryption, modes and troubleshooting |
+| [FortiDDoS Administrator exam](https://training.fortinet.com/local/staticpage/view.php?page=fortiddos_administrator_exam) | Public | 45–75 min | Current weighted FortiDDoS 7.2 blueprint |
+| [FortiDDoS 7.2 documentation](https://docs.fortinet.com/product/fortiddos-f/7.2) | Public | 18–35 hr selected | Deployment, baselining, profiles, mitigation, logs and operations |
+| [NSE 6 Cloud Security course library](https://training.fortinet.com/local/library/?category=Certification:NSE_6_Cloud_Security) | Free account; labs/ILT may cost | 15–35 hr per selected lane | Locate current official course; verify title, version and duration after sign-in |
+| [FortiMail WorkSpace exam placeholder](https://training.fortinet.com/local/staticpage/view.php?page=fortimail_workspace_administrator_exam) | Public | 5 min now | Recheck for publication; currently Coming soon |
+| [Fortinet exam policy](https://helpdesk.training.fortinet.com/en/support/solutions/articles/73000672593-exam-policy-recertification) | Public | 20–40 min | Retake, renewal, reuse and timing rules |
+| [Fortinet YouTube](https://www.youtube.com/@Fortinet) | Free/YouTube | 4–10 hr selected | Official demonstrations; reconcile version and product behavior with current docs |
+| AWS, Microsoft Azure, Google Cloud, Kubernetes, SMTP/email-security, and DDoS primary documentation | Public | 15–35 hr selected | Vendor-neutral dependency knowledge; not a replacement for the selected Fortinet blueprint |
+| O'Reilly, Pluralsight, Udemy and other courses on CNAPP, email security, SMTP, or DDoS | Subscription/purchase may apply | 10–30 hr selected | No exact current pathway-aligned third-party course was verified; map concepts and validate with primary sources |
+| Authorized product lab or cloud sandbox | Entitlement/partner/training access and cloud costs may apply | 35–80 hr | Highest-value configuration, evidence, failure, response, and rollback practice |
+
+### NSE-6-SECURE-NETWORKING — Fortinet NSE 6 in Secure Networking
+
+Resource details from the [NSE-6-SECURE-NETWORKING guide](../guides/NSE-6-SECURE-NETWORKING-fortinet-nse-6-secure-networking.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective starting set, not a complete list and not a prescription to consume everything. Pick the option-specific documentation, course, and labs that close measured gaps. Times are planning estimates unless a publisher lists a duration; access and versions can change.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [NSE 6 in Secure Networking](https://training.fortinet.com/local/staticpage/view.php?page=nse_6_secure_networking) | Public | 20–30 min | Canonical requirements, options, availability notes, renewal and exam policy summary |
+| [FortiManager Administrator exam](https://training.fortinet.com/local/staticpage/view.php?page=fortimanager_administrator_exam) | Public | 45–75 min | Current contract, weighted objectives, official resources and sample-question boundary |
+| [FortiManager 7.6 Administrator course](https://training.fortinet.com/course/view.php?id=66101) | Free account; labs/ILT may cost | 15–25 hr estimate plus labs | Official option-aligned instruction; verify displayed duration after sign-in |
+| [FortiManager 7.6 documentation](https://docs.fortinet.com/product/fortimanager/7.6) | Public | 20–40 hr selected | ADOMs, devices, policies, APIs, HA, FortiGuard and troubleshooting |
+| [FortiNAC Administrator exam](https://training.fortinet.com/local/staticpage/view.php?page=fortinac_administrator_exam) | Public | 45–75 min | Current contract, weighted objectives and official source links |
+| [NSE 6 Secure Networking course library](https://training.fortinet.com/local/library/?category=Certification:NSE_6_Secure_Networking) | Free account; labs/ILT may cost | 15–30 hr selected | Find the current FortiNAC course and future option courses; verify duration/version after sign-in |
+| [FortiNAC-F 7.6 documentation](https://docs.fortinet.com/product/fortinac-f/7.6) | Public | 20–40 hr selected | Architecture, deployment, Manager, access, integrations and operations |
+| [FortiVoice Administrator placeholder](https://training.fortinet.com/local/staticpage/view.php?page=fortivoice_administrator_exam) and [FortiVoice 8.0 documentation](https://docs.fortinet.com/product/fortivoice-enterprise/8.0) | Public | 6–12 hr fundamentals | Pre-study only; the exam page still says Coming soon, and product documentation does not establish exam scope |
+| [FortiAnalyzer Administrator placeholder](https://training.fortinet.com/local/staticpage/view.php?page=fortianalyzer_administrator_exam) and [FortiAnalyzer 7.6 docs](https://docs.fortinet.com/product/fortianalyzer/7.6) | Public | 8–16 hr fundamentals | Pre-study only; do not infer unpublished exam objectives |
+| [Fortinet Training Institute exam policy](https://helpdesk.training.fortinet.com/en/support/solutions/articles/73000672593-exam-policy-recertification) | Public | 20–40 min | Retake, reuse, renewal and timing rules |
+| [Fortinet YouTube](https://www.youtube.com/@Fortinet) | Free/YouTube | 3–8 hr selected | Official architecture and feature demonstrations; verify product version in current docs |
+| O'Reilly, Pluralsight, Udemy and other vendor courses on centralized firewall management, NAC, network automation, and troubleshooting | Subscription/purchase may apply | 8–25 hr selected | No current course aligned to this exact post-July-2026 pathway was verified; map concepts to the chosen official blueprint |
+| Authorized FortiManager or FortiNAC lab | Entitlement, VM, partner, or training lab may be required | 30–60 hr | Highest-value configuration, failure, troubleshooting and recovery practice |
 
 ## AWS
 
@@ -4351,7 +5894,7 @@ This is not a complete list and is not meant to be consumed in full. Pick one pr
 
 - Official scope (1–2 hours): [live certification page](https://www.databricks.com/learn/certification/data-engineer-associate) plus the linked [May 4, 2026 exam guide](https://www.databricks.com/sites/default/files/2026-05/databricks-certified-data-engineer-associate-exam-guide-may-2026-000.pdf)
 - Six courses named in the PDF through [Databricks Academy](https://customer-academy.databricks.com/) (**18–30 hours planning estimate with labs**; account/entitlement and catalog visibility vary, and no stable public combined runtime is shown)
-- Current official onboarding: [Get Started with Databricks for Data Engineering](https://customer-academy.databricks.com/learn/courses/2469/get-started-with-databricks-for-data-engineering/lessons) (**4–8 hours planning estimate** for its demos/labs; no reliable public duration shown)
+- Current official onboarding: [Databricks Data Engineering learning paths](https://community.databricks.com/t5/learning-paths/ct-p/databricks-learning-paths) (course durations and Academy lab entitlements vary; verify the current catalog)
 - Hands-on route: [Databricks Free Edition](https://www.databricks.com/learn/free-edition) plus the guide's eight labs (**12–24 hours**; product limits apply)
 - Detailed book: [O’Reilly Databricks Certified Data Engineer Associate Study Guide](https://www.oreilly.com/library/view/databricks-certified-data/9781098166823/) (**9 hours 49 minutes provider estimate; allow 15–25 hours with labs**); February 2025, so close May 2026 gaps
 - Live route: [O’Reilly two-week prep](https://www.oreilly.com/live-events/databricks-data-engineer-associate-certification-prep-in-2-weeks/0636920093415/) (**16 hours provider duration across four sessions**); verify current dates and exact start/end times
@@ -4675,6 +6218,7 @@ This is not a complete list and is not meant to be consumed in full. Given the s
 | [Udemy / Jason Dion SY0-701](https://www.udemy.com/course/securityplus/) | Paid marketplace course; automated catalog access blocked during this review | Earlier 31h11 runtime not reverified; inspect current syllabus and revision |
 | [MeasureUp SY0-701 practice test](https://www.measureup.com/sy0-701-comptia-security-practice-test.html) | Paid explanation-led practice; product-specific listing has 213 questions, December 2023 release | About 10–18 hours across attempts and remediation |
 | [Professor Messer free SY0-701 course](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/sy0-701-comptia-security-plus-course/) | Free 121-video course; optional paid notes/practice | 15 hours 11 minutes plus 25–50 hands-on hours |
+| [NIST SP 800-63-4 implementation hub](https://pages.nist.gov/800-63-4/) | Public overview linking 63A/B/C; FAQ and conformance material still forthcoming | About 1–2 hours selected-reference reading (author estimate); not an exam course |
 
 **VERIFY CURRENT:** Public metadata was checked September 29, 2026; paid course/book interiors, question banks and provider labs were not accessed. Pluralsight includes older course material and newer lab dates, so a recent path/lab date does not re-date every lesson. Extra study-hour ranges are planning suggestions, not provider guarantees. MeasureUp’s product-specific 213-question listing takes precedence over generic FAQ wording about 150 questions. No exact current Whizlabs SY0-701 route was independently verified. Reject “actual questions,” dumps and out-of-scope attack labs. Provider duration, price, bundle, bank, revision and access details are volatile.
 
@@ -4689,6 +6233,7 @@ This is not a complete list and is not meant to be consumed in full. Choose one 
 | CompTIA [CertMaster Perform](https://www.comptia.org/en-us/resources/certmaster-training/perform/), [Learn](https://www.comptia.org/en-us/resources/certmaster-training/learn/), Labs, and Practice | Paid official platform; select exact XK0-006 product/bundle | Provider estimates: Perform 30–60h, Learn 25–40h, Practice 10–20h, Labs 15–25h; overlapping options, not additive requirements |
 | [Pluralsight Linux+ path](https://www.pluralsight.com/paths/comptia-linux-xk0-006) | Subscription; 5 courses, 4 labs and practice exam listed; course and lab dates vary | 27 listed hours plus 35–70 suggested additional lab/review hours |
 | [LinkedIn Learning / Total Seminars XK0-006](https://www.linkedin.com/learning/comptia-linux-plus-xk0-006-v8-cert-prep) | Subscription; Total Seminars V8 course released March 18, 2026; 10 quizzes | 15 hours 42 minutes listed plus 35–70 suggested lab/review hours |
+| [Linux Foundation Introduction to Linux (LFS101)](https://training.linuxfoundation.org/training/introduction-to-linux/) | Free foundation course; registration required for lessons; no provider duration published | About 15–25 hours for selected foundations and independent practice (author estimate); not full XK0-006 coverage |
 | [O'Reilly/Sybex Linux+ Study Guide](https://www.oreilly.com/library/view/comptia-linux-study/9781394316328/) | Subscription book; automated catalog access blocked; prior sixth-edition claim not reverified | Suggested 25–45 reading hours plus 35–70 lab/review hours; verify current edition |
 | [Udemy / Jason Dion XK0-006](https://www.udemy.com/course/comptia-linux/) | Paid marketplace course; automated catalog access blocked | Earlier 34h39 runtime not reverified; inspect current syllabus/revision |
 | [MeasureUp XK0-006 CertKit](https://www.measureup.com/xk0-006-comptia-linux-certkit.html) | Paid course bundle, exam simulation and Online Mentor listed; different access periods | Suggested 35–70 selected learning/practice hours; listed e-learning 365 days and practice 60 days from first practice access; verify terms |
@@ -4714,7 +6259,7 @@ This is not a complete list, and it is not meant to be consumed end to end. Pick
 | [Udemy Cloud+ CV0-004 Complete Course](https://www.udemy.com/course/comptia-cloud-plus/) | Paid; automated catalog access blocked | Earlier 10h54 runtime not reverified | Earlier instructor, update-date and assessment details not reverified; inspect current syllabus |
 | [MeasureUp CV0-004 practice test](https://www.measureup.com/comptia-cloud-cv0-004-practice-test.html) | Paid | 5–9 hours estimated | Product-specific 186 questions, March 2025 release; suggested time includes explanation-led remediation |
 
-**VERIFY CURRENT:** Public metadata checked September 29, 2026; paid interiors, provider labs and assessment questions were not accessed. CompTIA’s product estimates overlap and should not be added into a mandatory workload. Other estimated hours are planning suggestions. MeasureUp’s specific 186-question listing takes precedence over its generic FAQ’s approximate 150. A course’s publication date or runtime does not establish complete current coverage.
+**VERIFY CURRENT:** Public metadata checked October 28, 2026; paid interiors, provider labs and assessment questions were not accessed. CompTIA’s product estimates overlap and should not be added into a mandatory workload. Other estimated hours are planning suggestions. MeasureUp’s specific 186-question listing takes precedence over its generic FAQ’s approximate 150. A course’s publication date or runtime does not establish complete current coverage.
 
 Use practice assessments to find gaps, not to memorize items. Avoid any product claiming live, leaked or recalled exam questions.
 
@@ -4765,7 +6310,7 @@ Resource details from the [CKA guide](../guides/CKA-certified-kubernetes-adminis
 
 | Resource | Access | Estimated time |
 |---|---|---:|
-| [Official CKA page](https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/) and [public CNCF v1.35 curriculum](https://github.com/cncf/curriculum/blob/master/CKA_Curriculum_v1.35.pdf) | Public; exam paid | 3–5 hours mapping/review, plus 8–14 selected simulator hours |
+| [Official CKA page](https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/) and [public latest CNCF v1.37 curriculum](https://github.com/cncf/curriculum/blob/master/CKA_Curriculum_v1.37.pdf) | Public; exam paid | 3–5 hours mapping/review, plus 8–14 selected simulator hours |
 | [Kubernetes v1.35 documentation](https://v1-35.docs.kubernetes.io/docs/home/) | Public | 20–35 selected reading/lab hours; use as reference, not a cover-to-cover course |
 | [Kubernetes v1.37 release](https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/) | Public release watch; use only to trigger the exam-version recheck | 20–40 minutes |
 | [Ingress NGINX retirement notice](https://kubernetes.io/blog/2025/11/11/ingress-nginx-retirement/) | Public operational warning; distinguishes the controller from the stable Ingress API | 15–25 minutes |
@@ -4785,7 +6330,7 @@ Resource details from the [CKAD guide](../guides/CKAD-certified-kubernetes-appli
 
 | Resource | Access | Estimated time |
 |---|---|---:|
-| [Official CKAD page](https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/) and [public CNCF v1.35 curriculum](https://github.com/cncf/curriculum/blob/master/CKAD_Curriculum_v1.35.pdf) | Public; exam paid | 3–5 hours mapping/review, plus 8–14 selected simulator hours |
+| [Official CKAD page](https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/) and [public latest CNCF v1.37 curriculum](https://github.com/cncf/curriculum/blob/master/CKAD_Curriculum_v1.37.pdf) | Public; exam paid | 3–5 hours mapping/review, plus 8–14 selected simulator hours |
 | [Kubernetes v1.35 documentation](https://v1-35.docs.kubernetes.io/docs/home/) | Public | 18–30 selected reading/lab hours; use as a reference |
 | [Kubernetes v1.37 release](https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/) | Public release watch; use only to trigger the exam-version recheck | 20–40 minutes |
 | [Ingress NGINX retirement notice](https://kubernetes.io/blog/2025/11/11/ingress-nginx-retirement/) | Public operational warning; distinguishes the controller from the Ingress API | 15–25 minutes |
@@ -4893,3 +6438,4 @@ When proposing a resource, include the exact course, book, playlist, or reposito
 - any licensing or exam-integrity concern.
 
 Do not copy paid material, transcripts, slides, or proprietary labs. Summarize independently, attribute ideas, and cite current first-party documentation for technical behavior.
+

@@ -6,21 +6,21 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-28
-upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-28
+last_verified: 2026-10-28
+upcoming_change_status: none-announced
+upcoming_change_checked: 2026-10-28
 ---
 
 # AIB-C01 AWS Certified AI Business Strategist Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed again on September 28, 2026, including all 58 detailed skills. Beta-duration wording remains inconsistent across official pages. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#aib-c01-coverage-record). The [official AIB-C01 exam guide](https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01.html) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed again on October 28, 2026, including all 58 detailed skills. Beta-duration wording remains inconsistent across official pages. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#aib-c01-coverage-record). The [official AIB-C01 exam guide](https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01.html) is authoritative.
 
 **Current baseline:** Initial AIB-C01 beta blueprint announced September 1, 2026; four domains; business category<br>
-**Upcoming change:** Beta exam delivery begins September 29, 2026. AWS has not announced the general-availability date or final delivery contract; beta findings can change questions, scoring, format, preparation assets, or the published outline.<br>
-**Beta limitations:** Registration is open, but delivery has not begun as of this review. The official practice exam is unavailable during beta, third-party AIB-C01 catalogs are immature, and candidate experience is not yet established.<br>
+**Upcoming change:** Beta exam delivery began September 29, 2026. AWS has not announced the general-availability date; beta findings can change questions, scoring, format, preparation assets, or the published outline.<br>
+**Beta limitations:** Delivery began September 29, 2026. The official practice exam remains unavailable during beta; third-party AIB-C01 catalogs are immature, and candidate experience is still emerging.<br>
 **Official source:** [AWS Certified AI Business Strategist exam guide](https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01.html)
 
-## Living-guide watch — September 28, 2026
+## Earlier lifecycle note — September 28, 2026
 
 **Confirmed boundary:** This is a business-level exam, not a configuration exam, but “not implementation” does not mean “no AWS awareness.” AWS's nonexhaustive [in-scope services appendix](https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/aib-01-in-scope-services.html) names Amazon Bedrock, SageMaker AI, Amazon Quick, the AWS Cloud Adoption Framework, shared responsibility, Cost Explorer, AWS Marketplace, and Pricing Calculator. Learn what business problem each supports and the decision boundary—not console procedures.
 
@@ -29,6 +29,10 @@ upcoming_change_checked: 2026-09-28
 **Review evidence:** The [deep-review report](../docs/research/2026-09-28-aib-c01-deep-review.md) records the objective map, scheduling discrepancy and public-source limitations. No new retirement notice was found in the reviewed official credential, blueprint and launch sources.
 
 **Concern to recheck:** The appendices are explicitly nonexhaustive and this is a new beta. Treat the lists as the best current study boundary, not a permanent product inventory; validate them again when AWS publishes the standard exam or revised preparation assets.
+
+## Current beta update — October 28, 2026
+
+The AWS Certified AI Business Strategist beta exam began delivery on September 29. The current AWS certification page lists 85 questions, 170 minutes, USD 50 beta pricing (USD 100 standard price), English and Japanese, and an early-adopter badge for earning the credential by February 15, 2027. The official practice exam remains unavailable during beta. The detailed exam guide still says 130 minutes, so preserve that official-source discrepancy rather than treating the current beta page as a final post-beta contract. AWS says no coding or implementation experience is required and AWS service knowledge is not the subject being tested.
 
 ## How to use this guide
 

@@ -6,21 +6,21 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-27
-upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-27
+last_verified: 2026-10-28
+upcoming_change_status: none-announced
+upcoming_change_checked: 2026-10-28
 ---
 
 # DP-300 Administering Microsoft Azure SQL Solutions Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 27, 2026. The [deep review](../docs/research/2026-09-27-dp-300-deep-review.md) maps all 94 October objectives; live database labs and independent human review remain pending. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-300-coverage-record). The [official DP-300 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300) is authoritative.
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-01.md#dp-300) and the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-300-coverage-record). Known source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300) is authoritative.
 
-**Current baseline:** Skills measured as of April 24, 2026.<br>
-**Upcoming blueprint change (checked September 27, 2026):** The English blueprint changes October 27, 2026. The Always Encrypted objective now refers to secure enclaves rather than specifically VBS enclaves. Domain weights are unchanged. Compare the enclave options supported by the target SQL platform before selecting an implementation. The current baseline below remains dated separately. See the [official revision](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300).<br>
+**Current baseline:** Skills measured as of October 27, 2026.<br>
+**Blueprint reconciliation (October 28, 2026):** The October 27 English outline is now the accepted teaching baseline. Its Always Encrypted objective says secure enclaves rather than specifically VBS enclaves; domain weights are unchanged. Compare the enclave, attestation, driver and migration options supported by the actual SQL platform. Earlier April objective bytes and dated reviews remain archived. No later revision is announced on the checked official page.<br>
 **Lifecycle status:** Active; no retirement or replacement was announced on the official pages checked.<br>
 **Exam page:** [Azure Database Administrator Associate](https://learn.microsoft.com/en-us/credentials/certifications/azure-database-administrator-associate/) · 100-minute assessment · ten exam languages · annual renewal for the earned role-based certification.<br>
 **Official course:** [DP-300T00 Implement scalable database solutions using Azure SQL](https://learn.microsoft.com/en-us/training/courses/dp-300t00) · four instructor-led days.<br>
-**Practice:** A free Microsoft Practice Assessment is linked from the credential and study-guide pages.
+**Practice routing — VERIFY CURRENT (October 28, 2026):** The [credential page](https://learn.microsoft.com/en-us/credentials/certifications/azure-database-administrator-associate/) routes Practice Assessment to AI Skills Navigator with sign-in. No assessment was launched or its question content inspected. Recheck the vendor launch route before relying on an older direct link below; a practice result does not establish coverage of another exam code.<br>
 
 ## How to use this guide
 
@@ -275,6 +275,37 @@ Authentication troubleshooting order:
 6. database role, explicit grant/deny, schema/object ownership and execution context;
 7. row-level predicate, masking/client behavior and application query.
 
+#### Worked example — object permissions and actual sign-in are separate
+
+Use a disposable database, dbo.StudyOrders table and StudyReader database user WITHOUT LOGIN, with no broad grants. Grant only SELECT on that table. Under authorized impersonation compare SELECT (expected allowed) with UPDATE (expected denied), then REVERT. This tests database authorization, not Entra sign-in or private endpoint connectivity. In SSMS inspect database Security > Users > StudyReader > Securables, explicit grants and role memberships; script the approved one-table change and test the denied action using the restricted identity.
+
+For a disposable SQL Server/Azure SQL database, the following is a proposed authorization fixture. Start as an authorized database administrator; use only new lab objects and no broad grants. `WITHOUT LOGIN` deliberately cannot authenticate. [CREATE USER](https://learn.microsoft.com/en-us/sql/t-sql/statements/create-user-transact-sql?view=sql-server-ver17) and [EXECUTE AS USER](https://learn.microsoft.com/en-us/sql/t-sql/statements/execute-as-transact-sql?view=sql-server-ver17) define these separate boundaries.
+
+```sql
+CREATE TABLE dbo.StudyOrders (OrderId int PRIMARY KEY, Amount int);
+INSERT dbo.StudyOrders VALUES (1, 100);
+CREATE USER StudyReader WITHOUT LOGIN;
+GRANT SELECT ON OBJECT::dbo.StudyOrders TO StudyReader;
+EXECUTE AS USER = 'StudyReader';
+SELECT OrderId, Amount FROM dbo.StudyOrders;
+SELECT HAS_PERMS_BY_NAME('dbo.StudyOrders', 'OBJECT', 'UPDATE') AS MayUpdate;
+BEGIN TRY
+    UPDATE dbo.StudyOrders SET Amount = 200 WHERE OrderId = 1;
+END TRY
+BEGIN CATCH
+    SELECT ERROR_NUMBER() AS RejectedUpdate;
+END CATCH;
+REVERT;
+```
+
+Expected in this isolated fixture: the row is readable, `MayUpdate` is 0, and UPDATE is rejected. Check that Amount remains 100 as the authorized operator. Inspect the SSMS user/securables and role-membership views before and after the one-object grant. Revert impersonation before removing only the created user and table. This script and GUI workflow were not executed here; test an actual Entra-authenticated client separately.
+
+**Question:** Does a successful impersonated SELECT prove actual Entra sign-in?
+
+**Answer:** No; endpoint, TLS, token, principal mapping and actual-client authentication remain separate tests.
+
+[Primary reference 1](https://learn.microsoft.com/en-us/sql/t-sql/statements/grant-object-permissions-transact-sql?view=sql-server-ver17) · [Primary reference 2](https://learn.microsoft.com/en-us/sql/relational-databases/security/authentication-access/create-a-database-user?view=sql-server-ver17)
+
 ### Protect network and transport
 
 Azure SQL Database logical-server firewall rules and database-level firewall rules permit public endpoint sources; they do not grant SQL authentication or permissions. “Allow Azure services and resources to access this server” is broad and should not be confused with a specific service identity.
@@ -320,6 +351,12 @@ The October objective broadens the wording beyond VBS. Use this [client/attestat
 | Azure SQL Database with supported VBS configuration | VBS | None |
 
 Ordinary Always Encrypted support in MI does not establish secure-enclave support there. Check the enclave feature's platform matrix, driver version, enabled keys, query operation and region. A Key Vault key alone does not configure an enclave or make a driver enclave-aware.
+
+> **Related item:** **Confirmed — VERIFY CURRENT (October 28, 2026).** Intel SGX enclaves reach end of support on **October 31, 2027**. The [migration guidance](https://learn.microsoft.com/en-us/sql/relational-databases/security/encryption/always-encrypted-enclaves-migration?view=sql-server-ver17) says remaining DC-series databases will then move automatically to standard-series with VBS enabled. Plan earlier: inventory standalone databases and elastic pools, compare the security properties, select supported hardware, update compatible clients, use `None` attestation for Azure SQL VBS and remove the obsolete attestation URL. This is not a claim that SGX and VBS provide identical protection.
+
+**Proposed practice extension — not executed:** For a synthetic SGX-dependent application, record driver/attestation assumptions and choose between Azure SQL VBS and a separately assessed confidential-VM/SQL Server design. Validate encrypted queries, DML, failover and recovery in an authorized lab before cutover.
+
+**Answer checkpoint:** Does changing the compute tier alone prove enclave migration succeeded? No; client, attestation, encrypted operations and recovery also need validation.
 
 ### Apply compliance controls without confusing their guarantees
 
@@ -523,9 +560,11 @@ Never use repair options as a routine response. Preserve damaged databases/logs/
 
 #### Worked example — compaction is one maintenance decision
 
-**Related item, preview:** [Automatic index compaction](https://learn.microsoft.com/en-us/sql/relational-databases/indexes/automatic-index-compaction?view=sql-server-ver17) is opt-in for Azure SQL Database, MI with Always-up-to-date policy, and Fabric SQL database. It improves page density on recently modified eligible B-tree leaf pages; it does not process every untouched page, update statistics or eliminate logical fragmentation. Heaps, LOB pages and compressed columnstore rowgroups are outside its scope.
+**Related item:** [Automatic index compaction](https://learn.microsoft.com/en-us/sql/relational-databases/indexes/automatic-index-compaction?view=sql-server-ver17) is opt-in for Azure SQL Database, MI with Always-up-to-date policy, and Fabric SQL database. It improves page density on recently modified eligible B-tree leaf pages; it does not process every untouched page, update statistics or eliminate logical fragmentation. Heaps, LOB pages and compressed columnstore rowgroups are outside its scope.
 
 An illustrative index falls from 10,000 to 6,000 used pages: 40% fewer pages. That is not a promised 40% query speedup or a smaller allocated file. Compare logical reads, latency, log/CPU overhead and concurrency under the same workload. Keep needed statistics and integrity work; evaluate any remaining targeted index work separately. Disabling compaction stops future work rather than restoring the former page layout.
+
+> **Related item:** **Confirmed — VERIFY CURRENT (October 28, 2026).** [Automatic index compaction](https://learn.microsoft.com/en-us/sql/relational-databases/indexes/automatic-index-compaction?view=sql-server-ver17) is now generally available for Azure SQL Database according to the [release ledger](https://learn.microsoft.com/en-us/azure/azure-sql/database/doc-changes-updates-release-notes-whats-new?view=azuresql). The feature documentation includes SQL Database, Managed Instance with Always-up-to-date policy, and Fabric SQL database. It remains disabled by default. Page density, statistics, fragmentation and file size remain distinct; GA does not make every index or platform eligible.
 
 ### Use automatic tuning and Intelligent Query Processing safely
 
@@ -910,7 +949,7 @@ Match principal, instance, source subnet, cadence and documented event signature
 
 ### Lab 10 — Compare maintenance and recovery policies
 
-Use a disposable supported preview database, or complete the planning exercise if unavailable. Inventory index type, page density, statistics, update policy and backup coverage. Follow the linked Microsoft compaction example selectively, measuring a repeatable workload before/after and retaining required statistics/integrity tasks. Separately rehearse the MI copy/move state machine on disposable data; prefer copy until the source-deletion consequence is understood and authorized for the lab. Verify target recovery points and the full application timeline.
+Use a disposable database on an eligible supported platform, or complete the planning exercise if unavailable. Inventory index type, page density, statistics, update policy and backup coverage. Follow the linked Microsoft compaction example selectively, measuring a repeatable workload before/after and retaining required statistics/integrity tasks. Separately rehearse the MI copy/move state machine on disposable data; prefer copy until the source-deletion consequence is understood and authorized for the lab. Verify target recovery points and the full application timeline.
 
 **Evidence:** support matrix, before/after measurements, completion/cancellation state, recovery-point availability and RPO/RTO result. **Cleanup:** remove disposable replicas/databases, stop jobs and confirm backup/data-store retention costs. No live SQL, migration, preview or recovery exercise was executed during this repository review.
 
@@ -997,11 +1036,19 @@ These are original reasoning checks based on public objectives, not recalled exa
 - [ ] I can perform a planned failover/restore and prove data, identity, network, keys, jobs, monitoring and the application transaction.
 - [ ] I can explain why Azure Data Studio material is legacy after February 28, 2026 and identify current migration/tooling paths.
 - [ ] I completed at least one security, query-regression, automation and recovery failure-injection lab.
-- [ ] I rechecked the official April 24, 2026 blueprint and lifecycle status before scheduling.
+- [ ] I rechecked the official October 27, 2026 blueprint and lifecycle status before scheduling.
 
 ---
 
 ## Places to learn
+
+### October 28 learning route and evidence task
+
+The current [DP-300 course](https://learn.microsoft.com/en-us/training/courses/dp-300t00) is titled **Implement scalable database solutions using Azure SQL** and still lists four instructor-led days. The [Pluralsight path](https://www.pluralsight.com/paths/microsoft-certified-azure-database-administrator-associate) lists five courses totaling 9 hours 11 minutes plus a 30-minute lab (header rounded to 10 hours); its latest displayed course is September 14, 2026. No dedicated planning/deployment course title is visible, so use the October 27 blueprint and targeted official material to check that gap. The compaction blog now redirects to a GA headline, but its body was unavailable; current product documentation governs the feature status.
+
+**Original course-gap worksheet (about 30–45 minutes, editorial estimate):** Map one planning decision, one security denial, one measured performance regression and one recovery proof to the chosen route. For each, record an artifact you can produce without the lesson instructions and a current-source check for older tooling or maintenance advice.
+
+**Answer checkpoint:** Course runtime measures viewing scope, not demonstrated administration. A reachability result or changed announcement title is not a tested maintenance or recovery result.
 
 This is **not a complete list**, and it is not meant to be consumed end to end. Pick the resources and formats that work for you. A practical plan is the official blueprint/documentation, one primary structured course or book, hands-on labs, and one legitimate practice assessment used to find weak domains. Avoid any provider selling recalled live questions, “dumps,” VCE files, or guarantees based on leaked content.
 
@@ -1011,7 +1058,7 @@ Estimated times describe content consumption or a reasonable assessment session,
 
 | Resource | Access | Estimated time | Best use |
 |---|---|---:|---|
-| [Official DP-300 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300) | Free; April baseline and observed October 27 revision | 45–75 min to map; 10–15 min weekly | Coverage checklist, weights, changes and official links |
+| [Official DP-300 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300) | Free; current October 27 outline, earlier April bytes archived | 45–75 min to map; 10–15 min weekly | Coverage checklist, weights, changes and official links |
 | [Azure Database Administrator Associate page](https://learn.microsoft.com/en-us/credentials/certifications/azure-database-administrator-associate/) | Free | 20–30 min; recheck before scheduling | Current status, 100-minute exam, practice and renewal links |
 | [DP-300T00 course and self-directed modules](https://learn.microsoft.com/en-us/training/courses/dp-300t00) | Modules free; instructor-led access varies | **4 instructor-led days**; plan 35–55 hr self-paced with labs | Structured official path across all five domains |
 | [Microsoft free DP-300 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/exams/dp-300/practice/assessment?assessment-type=practice&assessmentId=58) | Free; sign-in may be required | 45–90 min per attempt; 4–8 hr with remediation | Baseline, then diagnose weak objectives from explanations |
@@ -1027,7 +1074,7 @@ Estimated times describe content consumption or a reasonable assessment session,
 | [O'Reilly Administering Microsoft Azure SQL video](https://www.oreilly.com/videos/administering-microsoft-azure/0636920934721/) | Paid subscription; prior listing: Mikey Bronowski, September 2024; blocked on recheck | **1h 44m** plus 2–4 hr practice/docs | Compact overview, not sufficient alone; older tooling/monitoring needs reconciliation |
 | [O'Reilly DP-300 certification-prep catalog](https://www.oreilly.com/products/certification-prep.html) | Paid; catalog lists DP-300 book, guide, practice and on-demand formats | Verify selected item; plan 2–4 hr per practice attempt plus review | Use the current item page to confirm version and blueprint alignment |
 | [Udemy DP-300 course by Phillip Burton](https://www.udemy.com/course/dp-300-administering-relational-databases-azure-dba/) | Paid; historical listing claimed April 2026 alignment and 173 lectures; blocked on recheck | **17h 40m** video; plan 25–40 hr with labs | Historical runtime/scope only; current content and availability unverified |
-| [Whizlabs DP-300](https://www.whizlabs.com/microsoft-azure-certification-dp-300/) | Paid; packaging can include course/practice/labs | Verify current displayed duration/question/lab count; plan 10–25 hr selectively | Map coverage to April 2026 blueprint and use practice diagnostically |
+| [Whizlabs DP-300](https://www.whizlabs.com/microsoft-azure-certification-dp-300/) | Paid; packaging can include course/practice/labs | Verify current displayed duration/question/lab count; plan 10–25 hr selectively | Map coverage to the October 27, 2026 blueprint and use practice diagnostically |
 | [MeasureUp DP-300 practice test](https://www.measureup.com/microsoft-practice-test-dp-300-administering-relational-databases-on-microsoft-azure.html) | Paid | Estimate 4–8 hr across baseline, explanation review and retest | Public listing: 160 questions (34+34+38+23+31), last update December 2022. Current objective alignment unverified; use diagnostically alongside current docs |
 
 ### Supplemental experts and channels

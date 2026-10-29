@@ -6,17 +6,17 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-28
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-28
+upcoming_change_checked: 2026-10-28
 ---
 
 # AB-731 AI Transformation Leader Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide was checked against the July 22, 2026 objectives and cited public sources on September 28, 2026. It may still contain errors or become outdated. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-731-coverage-record). The [official AB-731 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-731) is authoritative.
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-03.md#ab-731) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-731-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-731) is authoritative.
 
 **Current baseline:** Skills measured as of July 22, 2026.<br>
-**Upcoming blueprint change:** None announced on the official study guide as of September 28, 2026.<br>
+**Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
 **Lifecycle:** The [AI Transformation Leader credential](https://learn.microsoft.com/en-us/credentials/certifications/ai-transformation-leader/) and 45-minute exam are active.<br>
 **Official source:** [AB-731 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-731)
 
@@ -194,6 +194,20 @@ Microsoft Graph connects users to mail, files, meetings, people and other permit
 For [Researcher](https://learn.microsoft.com/en-us/microsoft-365/copilot/faq-researcher), a citation is a useful lead to verify, not proof that every statement is correct. The documented web control does not offer a site-by-site allowlist. [Model choice](https://support.microsoft.com/en-us/office/use-model-choice-in-the-researcher-agent) can include a GPT report reviewed by Claude through Critique, or separate reports compared through Model Council when enabled. Agreement between models is not independent factual verification: they can rely on the same weak source. Check administrator settings and provider/data boundaries before assuming that a familiar Researcher button always takes the same processing path.
 
 **Related context — Work IQ.** The [Work IQ overview](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/work-iq/) describes workplace context and tools exposed through APIs and protocols. Its API usage has its own usage-based billing, independent of Microsoft 365 Copilot licensing. Treat it as an extension architecture and cost decision; it does not remove the need for permission-aware data access or turn all custom-agent hosting into an included entitlement.
+
+### Worked comparison: choose the experience from data and artifact needs
+
+**VERIFY CURRENT — checked October 28, 2026.** Current [Copilot experience documentation](https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-overview) distinguishes web-grounded **Copilot Chat (Basic)**, standard in-app access under **Microsoft 365 Copilot (Basic)**, and priority/full work-grounded capability under the **Premium** add-on. Basic chat can use work content explicitly supplied/opened in supported contexts; that differs from broad permission-aware organizational grounding. Do not equate “no add-on” with “no app capability.” Tenant configuration and actual entitlement decide availability.
+
+| Synthetic task | Starting experience and check |
+|---|---|
+| Rewrite an approved document | Word; verify source meaning and tracked business changes |
+| Explain trends and propose formulas | Excel; inspect input ranges, formula and arithmetic |
+| Prepare a presentation from approved material | PowerPoint; verify slide claims and image rights |
+| Draft a reply or summarize a thread | Outlook; verify recipients, commitments and source context |
+| Extract meeting decisions/action items | Teams; verify transcript context, owners and permissions |
+
+For mobile users, distinguish chatting with a file from editing the file. Microsoft's [mobile change notice](https://support.microsoft.com/en-us/microsoft-365-copilot/understand-changes-to-microsoft-365-copilot-mobile-app) redirects full browsing/editing to dedicated Office/OneDrive apps as the Copilot app changes. **Answer check:** a salesperson needing a cross-work briefing and then an exact spreadsheet edit has two capability/permission checks, even when both start on the same phone. Validate the work account, license and actual rollout before the pilot.
 
 ### Decide whether to buy, build or extend
 
@@ -476,9 +490,26 @@ These are artifact-based learning labs. This review validated the worked arithme
 47. No. The document distinguishes a September 2026 planning milestone from September 2028 Image Analysis retirement and identifies the affected API scope.
 48. Cohort, period, baseline, comparator, selection, definitions, costs and limitations. A vendor case study is evidence to examine, not a guaranteed return.
 
+## Final readiness checklist
+
+- [ ] I can explain every published subobjective in business language.
+- [ ] I can choose generation, grounding/RAG, fine-tuning, ML, automation or a composition and defend the tradeoff.
+- [ ] I can build a value hypothesis with a baseline, complete cost and scale/stop threshold.
+- [ ] I can map processes to Copilot, Graph, Copilot Studio, Microsoft Foundry and Foundry Tools.
+- [ ] I distinguish current Microsoft Foundry language from older Azure AI Foundry material and verify volatile details.
+- [ ] I can turn responsible-AI principles into owners, controls, evidence and escalation.
+- [ ] I can distinguish an AI council, adoption team, champions and workload owner.
+- [ ] I can plan a representative pilot and measure outcomes, quality, adoption, safety and cost.
+- [ ] I verify current licensing, consumption, product packaging and regional availability.
+- [ ] I use assessments to find knowledge gaps, never to reproduce live exam content.
+
 ## Places to learn
 
 This is not a complete list and is not meant to be consumed in full. Choose one primary route, build the decision artifacts and labs, and add another resource only when it closes a measured gap.
+
+### Focused pilot-investment worksheet
+
+Read [Business strategy](https://learn.microsoft.com/en-us/training/modules/create-business-value/2-business-strategy) (published **3 minutes**) alongside the [Transform your business with AI outline](https://learn.microsoft.com/en-us/training/paths/transform-your-business-with-microsoft-ai/). Compare two candidate processes on business impact, feasibility, time to value, measurability and risk. Select one pilot and record its baseline, two outcome measures, one quality/risk limit, an accountable owner and scale/hold/stop criteria. **About 45–75 minutes**, an editorial estimate for selected reading and an original one-page decision record, rather than the course's runtime. Use evidence you can collect; the unit's uncited industry statistic is not a validated benchmark or a forecast for your organization. No quiz, paid lesson or live pilot was performed in this review.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
@@ -499,16 +530,3 @@ The three official paths contain **eight modules**. Their earlier 4h44 total is 
 Pluralsight's public outline lists Saravanan Dhandapani's three courses, dated May 7, June 3 and June 22, 2026, and advertises a practice exam; subscription content was not accessed. Both Udemy pages blocked direct retrieval; indexed public outlines supplied the metadata above. A provider update predating the July blueprint should prompt an objective-by-objective comparison, not an assumption that every lesson is obsolete. The Practice Assessment is linked from the current credential page, but the separate endpoint returned an empty shell; no questions or results were inspected. Partner scheduling requires sign-in, and the prep-video shell did not establish runtime.
 
 The earlier O'Reilly, MeasureUp and Whizlabs gaps were not exhaustively rechecked in this pass; no claim of market-wide absence is made. Reject recalled live questions, unsupported exam guarantees and materials that replace explanation with memorization. Supplement your primary route with the sourced blog worksheet and measurement documentation above.
-
-## Final readiness checklist
-
-- [ ] I can explain every published subobjective in business language.
-- [ ] I can choose generation, grounding/RAG, fine-tuning, ML, automation or a composition and defend the tradeoff.
-- [ ] I can build a value hypothesis with a baseline, complete cost and scale/stop threshold.
-- [ ] I can map processes to Copilot, Graph, Copilot Studio, Microsoft Foundry and Foundry Tools.
-- [ ] I distinguish current Microsoft Foundry language from older Azure AI Foundry material and verify volatile details.
-- [ ] I can turn responsible-AI principles into owners, controls, evidence and escalation.
-- [ ] I can distinguish an AI council, adoption team, champions and workload owner.
-- [ ] I can plan a representative pilot and measure outcomes, quality, adoption, safety and cost.
-- [ ] I verify current licensing, consumption, product packaging and regional availability.
-- [ ] I use assessments to find knowledge gaps, never to reproduce live exam content.

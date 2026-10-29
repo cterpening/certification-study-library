@@ -6,14 +6,14 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-04
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-04
+upcoming_change_checked: 2026-10-28
 ---
 
 # C1000-184 IBM Db2 13 for z/OS Database Administrator Associate Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide maps the live IBM exam contract checked September 4, 2026. It is unofficial and may contain errors. The [official C1000-184 exam record](https://www.ibm.com/training/credentials/getExam/C1000-184) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide maps the latest reviewed IBM credential and exam evidence as of October 28, 2026. It is unofficial and may contain errors. The [official C1000-184 exam record](https://www.ibm.com/training/credentials/getExam/C1000-184) is authoritative; its dynamic page could not be read in this review, so the existing accepted contract has not been changed.
 
 **Assessment contract:** 60 questions; 44 required to pass; 90 minutes.<br>
 **Product baseline:** Db2 13 for z/OS.<br>
@@ -77,6 +77,8 @@ Locks protect resources at granularities and modes that determine compatibility.
 
 EXPLAIN records optimizer access-path information; statistics describe data distribution/cardinality; traces and reports show runtime behavior. An access path may use indexes, scans, join methods/order, sort, or parallelism. Diagnose from workload and elapsed/CPU/I/O/lock evidence. Refresh appropriate statistics and compare the same workload before and after a controlled change; do not force a path from one anecdote.
 
+**Related item: Db2 13 function level 509 (April 2026).** IBM describes updates including utility-history SHRLEVEL recording and synchronous-read I/O counters in real-time statistics. Function level is distinct from installed code/PTFs: confirm code, catalog, activated function level, APPLCOMPAT, and IBM/third-party tool compatibility before using a newer capability. The [IBM function-level note](https://www.ibm.com/docs/en/db2-for-zos/13.0.0?topic=levels-function-level-509) was indexed but blocked to direct opening in this review; use it and the [Db2 tools compatibility matrix](https://www.ibm.com/support/pages/node/6583559) for a current environment check. This is a dated product example, not an exam-version change.
+
 ## Integrated practice scenarios
 
 1. **Online table change:** Assess DDL/dependencies, authority, package effects, utilities, concurrency, recovery, statistics, access path, and rollback.
@@ -118,4 +120,7 @@ This is a selective learning path, not a complete list of Db2 for z/OS resources
 |---|---|---:|
 | [Official C1000-184 exam record](https://www.ibm.com/training/credentials/getExam/C1000-184) | Public | **25 minutes** for contract and objectives |
 | [IBM Db2 13 for z/OS documentation](https://www.ibm.com/docs/en/db2-for-zos/13.0.0) | Public; automation may be blocked | **28–44 hours** for selected administration topics |
+| [Introduction to Db2 for z/OS PDF](https://www.ibm.com/docs/en/SSEPEK_13.0.0/pdf/db2z_13_introbook.pdf) | Public; an authorized Db2 for z/OS subsystem and ID are needed to execute | Selected DB2I/SPUFI modules; no vendor duration stated | Two-module SQL/utility tutorial; use a sanctioned training subsystem, not production |
+| [Db2 13 Basic Database Administration (CV845G)](https://www.ibm.com/training/search?query=CV845G) | IBM instructor-led course listing; paid enrollment may apply | Three days in the current class listing; detailed syllabus not available here | Search by course code CV845G; course outline was not exposed |
+| [Db2 13 for z/OS Introduction to System Administration (CV854G)](https://www.ibm.com/training/course/db2-for-zos-13-introduction-to-system-administration-CV854G) | Paid, instructor-led | **24 hours** | Subsystem operations, authority, catalog, logs, utilities, monitoring and recovery; higher experience prerequisites; course description read, labs not inspected |
 | Eight labs in this guide | Authorized z/OS training environment or simulation | **24–40 hours** plus one timed review |

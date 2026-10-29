@@ -6,19 +6,20 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-04
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-04
+upcoming_change_checked: 2026-10-28
 ---
 
 # 1Z0-1085-26 Oracle Cloud Infrastructure Foundations Associate Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide maps Oracle University's public 2026 learning-path scope checked September 4, 2026. It is unofficial and may contain errors. The [official OCI Foundations Associate learning path](https://mylearn.oracle.com/ou/learning-path/-become-an-oci-foundations-associate-2026/163541) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide maps Oracle University's public 2026 learning-path scope checked October 28, 2026. It is unofficial and may contain errors. The [official OCI Foundations Associate learning path](https://mylearn.oracle.com/ou/learning-path/-become-an-oci-foundations-associate-2026/163541) is authoritative.
 
 **Assessment contract exposed by the current path:** Oracle Cloud Infrastructure Foundations Associate, exam 1Z0-1085-26, 60 minutes, online. The public path does not state the proctoring model; **VERIFY CURRENT** in MyLearn before scheduling.<br>
 **Published scope:** fundamentals and distributed-cloud architecture; identity and access; networking and load balancing; compute, containers, and functions; object, block, and file storage; security services; pricing, cost management, tagging, and support rewards.<br>
 **Source boundary:** Oracle does not publish a question count, passing score, or domain weights on this public path. Do not invent them. **VERIFY CURRENT** in MyLearn before scheduling.
 
+**Japanese-language option (Japan only; checked October 28, 2026):** Oracle's September 4 launch notice added 1Z0-1085-26-JPN. The current Japanese exam list shows 60 minutes, 40 questions, and a 65% pass score for that distinct code; it does not specify the proctoring mode. This route does not replace the English exam or its contract. [Japan launch notice](https://www.oracle.com/jp/education/news/) · [Japanese exam list](https://www.oracle.com/jp/education/certification/certification-exam-list/).
 ## How to use this guide
 
 For each requirement, name the OCI resource, its scope, the identity that changes it, its network/data path, the observable evidence, and the cost or security consequence. Use a free or explicitly authorized tenancy for labs and remove billable resources afterward.
@@ -113,5 +114,7 @@ This is a selective learning path, not a complete list of OCI resources.
 | Resource | Access | Estimated time |
 |---|---|---:|
 | [Official OCI Foundations Associate learning path](https://mylearn.oracle.com/ou/learning-path/-become-an-oci-foundations-associate-2026/163541) | Oracle account; exam listed as free | **7+ hours** as published by Oracle University |
+| [Get started with OCI basics](https://docs.oracle.com/en/learn/oci-basics-tutorial/) | Oracle-provided free lab; personal-tenancy resources may incur charges | No publisher duration; 1–2 hours is an estimate for this tutorial | Guided VCN, compute, block-volume and web-service practice; stay in the assigned compartment and terminate billable resources |
+| [OCI release notes](https://docs.oracle.com/en-us/iaas/releasenotes/index.htm) | Public | Variable | Current service and region announcements; use as a discovery index, not an exam blueprint |
 | [OCI overview and concepts](https://docs.oracle.com/en-us/iaas/Content/GSG/Concepts/baremetalintro.htm) | Public | **4–6 hours** targeted reading |
 | Eight labs in this guide | Authorized OCI tenancy or paper design | **10–16 hours** plus review |

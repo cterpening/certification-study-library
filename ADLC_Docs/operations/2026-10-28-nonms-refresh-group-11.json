@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "group_id": "2026-10-28-nonms-refresh-group-11",
+  "title": "Non-Microsoft certification refresh — group 11",
+  "completed_on": "2026-10-28",
+  "eligibility": {
+    "as_of": "2026-10-28",
+    "minimum_age_days": 27,
+    "frozen_eligible_guides": 167,
+    "group_number": 11,
+    "total_groups": 17,
+    "guides_remaining": 57,
+    "groups_remaining": 6,
+    "selection": "Eleventh group of ten from the frozen eligible queue after Groups 1–10."
+  },
+  "exam_codes": [
+    "200-901",
+    "CC",
+    "CCSP",
+    "CISA",
+    "CISM",
+    "CISSP",
+    "CKA",
+    "CKAD",
+    "CKS",
+    "CLA-11-03"
+  ],
+  "guides": [
+    {
+      "exam_code": "200-901",
+      "guide_path": "guides/200-901-cisco-certified-network-associate-automation.md",
+      "guide_sha256": "c462ec10da814d5be7cda29536f77545daf6970ee822830545b44d7775a8812d",
+      "objective_snapshot_unchanged": false,
+      "source_health_checked": true
+    },
+    {
+      "exam_code": "CC",
+      "guide_path": "guides/CC-isc2-certified-in-cybersecurity.md",
+      "guide_sha256": "35864b576294213266831cc3407bf928f9e66f78d7233c37615daa2c2bb2469a",
+      "objective_snapshot_unchanged": true,
+      "source_health_checked": true
+    },
+    {
+      "exam_code": "CCSP",
+      "guide_path": "guides/CCSP-isc2-certified-cloud-security-professional.md",
+      "guide_sha256": "2d2e1bb5706e7bdc1f124a0ac5f94f51eb6e3213ac3196bafb723f787f8954a9",
+      "objective_snapshot_unchanged": true,
+      "source_health_checked": true
+    },
+    {
+      "exam_code": "CISA",
+      "guide_path": "guides/CISA-isaca-certified-information-systems-auditor.md",
+      "guide_sha256": "ab9e0e5af75c65e877b4896964023fea1a4660e8e45fbb4576087ee1fbc2dcc6",
+      "objective_snapshot_unchanged": true,
+      "source_health_checked": true
+    },
+    {
+      "exam_code": "CISM",
+      "guide_path": "guides/CISM-isaca-certified-information-security-manager.md",
+      "guide_sha256": "664bd5d30fe9987846764e878cf6c146fa31881a5a446721da2d8fcebb15ecc1",
+      "objective_snapshot_unchanged": true,
+      "source_health_checked": true
+    },
+    {
+      "exam_code": "CISSP",
+      "guide_path": "guides/CISSP-isc2-certified-information-systems-security-professional.md",
+      "guide_sha256": "72ea0862dc3bd630fdf77f01296c98610f4636db523b3cdb2f8596f3c4d3c51b",
+      "objective_snapshot_unchanged": true,
+      "source_health_checked": true
+    },
+    {
+      "exam_code": "CKA",
+      "guide_path": "guides/CKA-certified-kubernetes-administrator.md",
+      "guide_sha256": "6999b32a95910ea0bf9bc4ffe2f586920e32cbc80e9f8daf12c2e6f5a43274a1",
+      "objective_snapshot_unchanged": true,
+      "source_health_checked": true
+    },
+    {
+      "exam_code": "CKAD",
+      "guide_path": "guides/CKAD-certified-kubernetes-application-developer.md",
+      "guide_sha256": "a623b65fd3dfb1fb4e03231fe41bffee10d4a239473a0a8e24c1bba56faa2c54",
+      "objective_snapshot_unchanged": true,
+      "source_health_checked": true
+    },
+    {
+      "exam_code": "CKS",
+      "guide_path": "guides/CKS-certified-kubernetes-security-specialist.md",
+      "guide_sha256": "54b610b6e1fc67762063440d5851ec0928a9c59bc63ac8790b183de201c81d60",
+      "objective_snapshot_unchanged": true,
+      "source_health_checked": true
+    },
+    {
+      "exam_code": "CLA-11-03",
+      "guide_path": "guides/CLA-11-03-c-certified-associate-programmer.md",
+      "guide_sha256": "9c2a95640087d3ddd7bbfc547796363ed106498635845ba2a3688862164503ff",
+      "objective_snapshot_unchanged": false,
+      "source_health_checked": true
+    }
+  ],
+  "source_health": {
+    "checked_sources": 225,
+    "ok": 202,
+    "blocked": 23,
+    "broken": 0,
+    "changed_metadata": 13
+  },
+  "objective_snapshot_changes": [
+    {
+      "exam_code": "200-901",
+      "change": "Cisco renamed exam/credential page to CCNA Automation and removed v1.0 from description; official v1.1 topic scope remains."
+    },
+    {
+      "exam_code": "CISSP",
+      "change": "Official status page now announces a new outline effective April 15, 2027; detailed successor scope not yet published."
+    },
+    {
+      "exam_code": "CKA",
+      "change": "Kubernetes v1.35 exam environment listed; future curriculum file is v1.37."
+    },
+    {
+      "exam_code": "CKAD",
+      "change": "Kubernetes v1.35 exam environment listed; future curriculum file is v1.37."
+    },
+    {
+      "exam_code": "CLA-11-03",
+      "change": "Official syllabus wording refreshed with same four-block content and weights."
+    }
+  ],
+  "validation": {
+    "repository": "passed",
+    "site_prepare": "passed",
+    "strict_mkdocs": "passed",
+    "site_validation": "passed"
+  },
+  "limitations": [
+    "HashiCorp monitor parser could not extract Terraform Associate and Vault Associate objectives; current public pages were manually reviewed and compared.",
+    "Some official training pages require account access; no Academy paid course interior was inspected.",
+    "No Databricks workspace, HCP organization, or certification lab was accessed.",
+    "Audit is same-context and is not human or independent review."
+  ],
+  "research_report_path": "docs/research/2026-10-28-nonms-refresh-group-11.md",
+  "freshness_batch_id": "freshness-2026-10-28-nonms-g11",
+  "ai_audit_batch_id": "nonms-refresh-2026-10-28-group-11"
+}

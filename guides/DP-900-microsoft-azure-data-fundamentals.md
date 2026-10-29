@@ -6,17 +6,17 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-28
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-28
+upcoming_change_checked: 2026-10-28
 ---
 
 # DP-900 Microsoft Azure Data Fundamentals Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 28, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-900-coverage-record). The [official DP-900 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-900) is authoritative.
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-04.md#dp-900) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-900-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-900) is authoritative.
 
 **Current baseline:** Skills measured as of July 21, 2026<br>
-**Upcoming blueprint change:** None announced on the official study guide as of September 28, 2026.<br>
+**Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
 **Official source:** [DP-900 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-900)
 
 ## How to use this guide
@@ -443,6 +443,8 @@ Power BI Desktop authors models and reports. The service hosts and shares artifa
 
 Since September 5, 2025, creating a Fabric warehouse, lakehouse or mirrored item no longer automatically creates a default Power BI semantic model. Current [semantic-model guidance](https://learn.microsoft.com/en-us/fabric/data-warehouse/semantic-models) also says existing defaults were to be decoupled by November 30, 2025. An older tutorial that expects a model to appear needs an explicit model-creation step. Retain a useful existing model and check dependent reports before deleting it.
 
+**Schema check:** The same [semantic-model documentation](https://learn.microsoft.com/en-us/fabric/data-warehouse/semantic-models) warns that columns whose source types cannot map to Power BI types can be dropped during synchronization. If a field is missing, compare the source schema with the model and inspect type compatibility before changing a visual. An explicit supported type conversion belongs upstream when required; retaining a file in OneLake does not prove every field reached the model.
+
 A [Power BI dashboard](https://learn.microsoft.com/en-us/power-bi/create-reports/service-dashboards) is a one-page service artifact that can combine tiles from multiple reports/models. A report can have several pages, is based on one semantic model, and supports detailed filtering and drill-through. Desktop authors reports; it does not create service dashboards. Source data, the model's access/refresh mode, report visuals and dashboard tiles each have their own role; a successful source load alone does not prove the displayed result is fresh.
 
 ## 5. Objective-to-scenario drill
@@ -769,6 +771,10 @@ The [credential page](https://learn.microsoft.com/en-us/credentials/certificatio
 ## Places to learn
 
 This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Pick the formats that fit you. Times are approximate consumption time at normal speed; labs, note-taking, review, and independent practice add time.
+
+### Focused reading and evidence route
+
+Read the [warehouse architecture](https://learn.microsoft.com/en-us/training/modules/examine-components-of-modern-data-warehouse/2-describe-warehousing), [ingestion](https://learn.microsoft.com/en-us/training/modules/examine-components-of-modern-data-warehouse/3-data-ingestion-pipelines) and [analytical-store](https://learn.microsoft.com/en-us/training/modules/examine-components-of-modern-data-warehouse/4-analytical-data-stores) units: their published estimates total 16 minutes. Then allow about 30–45 minutes for an original worksheet comparing a daily sales file, a replicated operational database and a live event stream. For each, draw source → ingestion/reference → store → semantic model → report, explain ETL versus ELT and identify freshness, identity and reconciliation checks. This worksheet estimate covers three scenarios and written justification, not deployment. The [Fabric exercise introduction](https://learn.microsoft.com/en-us/training/modules/examine-components-of-modern-data-warehouse/5-exercise-data-analytics-fabric) publishes another 30 minutes and requires a Fabric account/trial; its launched instructions were unavailable in this review. Text units were read; videos and the cloud exercise were not run. **VERIFY CURRENT:** confirm service limits and avoid treating a shortcut as an unconditional no-copy/no-cache guarantee.
 
 | Resource | Access | Estimated time | Best use and caveat |
 |---|---|---:|---|

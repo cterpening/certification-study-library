@@ -6,23 +6,23 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-28
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-28
+upcoming_change_checked: 2026-10-28
 ---
 
 # AZ-140 Configuring and Operating Microsoft Azure Virtual Desktop Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 28, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-140-coverage-record). The [official AZ-140 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-140) is authoritative.
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-03.md#az-140) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-140-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-140) is authoritative.
 
 **Current baseline:** Skills measured as of July 20, 2026<br>
-**Upcoming blueprint change:** None announced on the official study guide as of September 28, 2026.<br>
+**Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
 **Certification lifecycle:** Active; no retirement or replacement is announced on the [official credential page](https://learn.microsoft.com/en-us/credentials/certifications/azure-virtual-desktop-specialty/) as of September 28, 2026.<br>
 **Official source:** [AZ-140 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-140)
 
 The September 28 [deep review](../docs/research/2026-09-28-az-140-deep-review.md) maps all **78 detailed objectives**. The credential page lists **100 minutes**, seven exam languages, annual renewal, a Practice Assessment and an exam sandbox. Assessment links were checked at the landing page only. Human review and live labs remain pending.
 
-**Near-term lifecycle checks:** [AVD classic](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new) retires **September 30, 2026**, after which connections to classic resources are blocked. Its retirement is separate from the active AZ-140 certification. See section 4 for client and Teams optimization deadlines.
+**Lifecycle check — VERIFY CURRENT:** [AVD classic](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new) retired **September 30, 2026**; Microsoft states connections to classic resources are blocked after retirement. This is separate from active AZ-140 certification. Identify ARM-based host pools before following current configuration procedures; section 4 separately tracks clients and Teams optimization.
 
 ## How to use this guide
 
@@ -147,7 +147,7 @@ The [AVD networking recommendations](https://learn.microsoft.com/en-us/azure/wel
 - QoS marking for managed Shortpath can prioritize latency-sensitive UDP only when the complete managed path honors DSCP; QoS does not create bandwidth.
 - [RDP Multipath](https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-multipath) can maintain multiple transport paths and shift when a path degrades; Microsoft recommends Shortpath as the primary transport for maximum resilience benefits.
 
-The September documentation distinguishes public-cloud availability from Azure Government's phased redundant-TCP rollout and macOS **Beta** UDP support. Windows App version requirements also differ for multiple UDP paths and redundant TCP. Use the current [Multipath prerequisites](https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-multipath) for the exact client/cloud combination. Standby paths improve resilience; they do not promise summed bandwidth or survival when every network path is lost. TURN is a relay, so a UDP connection is not necessarily a direct client-to-host route.
+**VERIFY CURRENT — scoped availability:** The October release notes and [Multipath availability matrix](https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-multipath) list multiple-UDP and redundant-TCP paths as generally available in both public Azure and Azure Government. The Government endpoint tab separately marks RDP Shortpath through its listed Government endpoints as preview/validation-ring scoped; do not transfer that caveat to every Multipath transport. Check the exact cloud, endpoint and client combination in [Shortpath guidance](https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-shortpath). macOS UDP support remains tied to the documented Beta client. Standby paths improve resilience rather than adding bandwidth; complete network loss still requires reconnection. TURN remains a relay.
 
 Do not diagnose from “UDP allowed” alone. Confirm the negotiated transport in connection information/logs and measure the client-to-host path. Forced tunneling, proxies, TLS inspection, asymmetric routes and firewalls can impair service endpoints or transport.
 
@@ -177,6 +177,12 @@ For Azure Files, distinguish each file/directory handle limit from the share roo
 
 The current [Entra Kerberos profile procedure](https://learn.microsoft.com/en-us/fslogix/how-to-configure-profile-container-entra-id-hybrid) distinguishes hybrid identities from cloud-only/external identities. Follow the [Azure Files prerequisites](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-auth-hybrid-identities-enable) for supported Windows builds, cloud, tenant and permission setup. Cloud-only support does not make every older OS or cross-tenant scenario supported. Configure one storage identity source, share permissions and file/directory permissions. For cloud-only groups, check the required storage application configuration and consent. The documented MFA exception is scoped to the storage application needed for silent Kerberos access; it is not a reason to remove MFA from AVD or Windows Cloud Login.
 
+### Worked storage implementation: Azure Files versus NetApp Files
+
+For a lab persona whose profile must roam, first record the user's identity source, SMB path, expected sign-in burst, and required recovery point. With Azure Files, create the supported storage-account/share combination, enable the chosen supported identity source, assign share-level access and NTFS permissions, and set the FSLogix location to that share. Test as an ordinary user rather than only as a storage administrator.
+
+With [Azure NetApp Files](https://learn.microsoft.com/en-us/fslogix/how-to-configure-profile-container-netapp), create the NetApp account, capacity pool, AD connection and SMB volume; consider the documented Continuous Availability setting. Point FSLogix `VHDLocations` to the volume's SMB path, apply profile directory permissions, sign in with a test user and confirm both container creation and a successful next-session attach. Current ANF profile access requires AD DS-backed Kerberos; an Entra-joined host does not make cloud-only users supported. **Answer check:** if an Entra-only user can sign into the host but cannot attach an ANF profile, adding storage capacity does not solve the unsupported identity path. Verify the current identity and concurrency matrix before deployment.
+
 ### Implement host pools and session hosts
 
 Implementation sequence:
@@ -193,6 +199,10 @@ Implementation sequence:
 Automate with PowerShell, Azure CLI, ARM or Bicep as supported. Protect registration tokens, make identity join and extensions idempotent, and record versioned parameters. Validate portal-created resources against the same desired state.
 
 Host-pool settings govern load balancing, session limits, validation environments, preferred app-group behavior, Start VM on Connect and RDP properties. Drain mode prevents new sessions but does not terminate existing sessions. Use it before update or removal.
+
+### Worked licensing check: service eligibility and guest activation
+
+For a Windows client host, document the user's eligible access license separately from the VM's Windows client license configuration and Azure compute charges. For a Windows Server host, document the applicable RDS CAL and license-server configuration as well. Verify the selected OS and user population against the [current AVD licensing rules](https://learn.microsoft.com/en-us/azure/virtual-desktop/licensing); per-user AVD access charges do not supply Office or other separately licensed products. Record the VM's applicable license setting, guest activation evidence and, for Server, the RDS licensing mode/server and Licensing Diagnoser result. **VERIFY CURRENT:** eligible license lists and Server requirements. **Answer check:** an assigned desktop appearing in a feed proves neither Windows activation nor valid user/RDS entitlement.
 
 ### Create and manage images
 
@@ -285,6 +295,14 @@ Trusted Launch protects boot integrity and secrets with vTPM/VBS capabilities. C
 
 **VERIFY CURRENT:** Defender licensing/onboarding, supported security VM types, Intune multi-session policy support, redirection defaults and App Control terminology/behavior.
 
+> **Related item:** **VERIFY CURRENT:** [Context-based redirections](https://learn.microsoft.com/en-us/windows-365/enterprise/context-based-redirections?tabs=windows-365) are preview and now include AVD RemoteApp sessions. Map a Conditional Access authentication context to the host pool's RDP properties for clipboard, drives, printers or USB. The authentication-context identifier is a link to policy requirements, not an authorization grant by itself. Do not transfer the article's Windows 365 Intune device-policy steps to AVD. For an artifact exercise, specify expected redirection for a compliant device and a BYOD device, then repeat the matrix for desktop and RemoteApp. Actual client/session behavior and overriding policies still need validation.
+
+### Worked endpoint-protection acceptance plan
+
+For two disposable hosts created from one pooled image, define four separate checks. Defender for Cloud must assess the subscription/resources and show the relevant recommendation; Defender Antivirus must have current protection/signatures and the intended scan policy; Defender for Endpoint must report the two provisioned devices; App Control and Controlled Folder Access must produce the expected audit result before controlled enforcement. Treat onboarding, scanning, posture and application execution as different controls.
+
+The [nonpersistent VDI onboarding procedure](https://learn.microsoft.com/en-us/defender-endpoint/configure-endpoints-vdi) installs the selected onboarding scripts in the image so they run on provisioned devices. Do not clone an already onboarded primary image: duplicate sensor identity can hide provisioned devices. Choose the supported single-entry or multiple-entry model and check the resulting device inventory. Schedule scans against session density and use only documented profile exclusions. For application control/CFA, pilot an approved application and a harmless write to a protected test folder, inspect the corresponding audit/block evidence, then phase enforcement with recovery access. The [AVD security recommendations](https://learn.microsoft.com/en-us/azure/virtual-desktop/security-recommendations) supply the layered-control context. **Answer check:** two healthy VMs but one cloned sensor entry fails acceptance; a secure-score increase does not prove either endpoint's scan or application policy worked. **VERIFY CURRENT:** licenses, OS support, policy paths and protection exclusions.
+
 ### Security troubleshooting sequence
 
 1. Identify whether failure occurs at feed, service token, Windows Cloud Login, host sign-in or application/data access.
@@ -330,6 +348,12 @@ The [FSLogix documentation](https://learn.microsoft.com/en-us/fslogix/) and curr
 
 Use the [FAQ](https://learn.microsoft.com/en-us/fslogix/overview-faq) and [configuration reference](https://learn.microsoft.com/en-us/fslogix/reference-configuration-settings) to distinguish `VHDLocations` from Cloud Cache, provider requirements at registration/unregistration, sign-out timeout and local-cache retention. Slow or unavailable providers can extend sign-out. A forced close plus cache deletion can lose unflushed state; preserve recovery evidence and test the chosen settings before using disposable hosts. Highly available storage can support a conventional profile-container design without Cloud Cache. The FAQ's older cloud-only overview is less specific than the current Entra profile procedure; it does not establish support for every application-masking or object-specific rule.
 
+### Worked ODFC and masking configuration checks
+
+Use ODFC when the chosen design needs separate Microsoft 365 data redirection, for example with a third-party roaming-profile product. A normal single FSLogix Profile Container already includes those benefits; dual containers are not the default recommendation. In a disposable host, configure ODFC enablement, supported VHDX location and selected Office redirections through the [ODFC procedure](https://learn.microsoft.com/en-us/fslogix/how-to-configure-odfc-containers), excluding those same paths from the other profile product. Sign in as the test user, run `frx list-redirects` from the FSLogix Apps directory and inspect the user's resulting container. For policy configuration, use the ODFC base `HKLM\SOFTWARE\Policies\FSLogix\ODFC` documented in the [current configuration reference](https://learn.microsoft.com/en-us/fslogix/reference-configuration-settings), then inspect the effective values. A differently located direct-configuration example is not proof that this policy was applied; keep the configuration surface and precedence explicit.
+
+For [application masking](https://learn.microsoft.com/en-us/fslogix/tutorial-application-rule-sets), create a Rule Set with Rules Editor, scan a disposable installed application, test hiding and reversal locally, then add explicit group assignments. Deploy both `.fxr` rules and `.fxa` assignment files to the FSLogix Apps Rules directory. Compare two ordinary test users with different assignments; do not infer success from an administrator's view. **Answer check:** hiding the shortcut without the expected rule/assignment effect fails the masking test, and masking still does not replace execution authorization. Retain the rule files and a safe removal procedure. **VERIFY CURRENT:** FSLogix version, profile compatibility, path and assignment support.
+
 ### Choose, deploy and troubleshoot clients
 
 Client availability and features differ across Windows, web, macOS, iOS/iPadOS, Android/Chrome OS and thin-client platforms. Windows App is the current cross-service client direction, but exact feature support varies. Validate SSO, redirection, display, URI/feed discovery, update channel, proxy and Conditional Access for each client population.
@@ -350,6 +374,18 @@ RDP properties at the host pool interact with Group Policy/Intune and client cap
 - authentication/SSO and transport settings.
 
 Use the least data movement that satisfies the workflow. Universal Print can replace direct printer redirection for managed cloud printing. Multimedia redirection and Teams optimization move supported media work toward the client to improve scale and quality; verify that optimization is active rather than assuming installation succeeded.
+
+### Worked user-experience policy test
+
+Define a test matrix before changing the pool: supported client/platform, user group, host-pool RDP properties, applicable Intune/GPO settings and expected clipboard/printer/media behavior. Apply one controlled redirection change, reconnect, inspect effective policy and exercise the actual data path. For [printer redirection](https://learn.microsoft.com/en-us/azure/virtual-desktop/redirection-configure-printers), a local printer must work on the endpoint; the remote session uses Easy Print. Universal Print instead requires its own licensed/registered/shared printer and user permissions, not that local redirection path.
+
+For managed Universal Print delivery, follow the [Intune provisioning model](https://learn.microsoft.com/en-us/universal-print/fundamentals/universal-print-intune-tool): policy assignment, MDM synchronization, Universal Print CSP, then user printer installation. Check each layer and submit a harmless test job as the intended AVD user. For multimedia redirection, validate the supported client, host components/browser integration and actual optimized playback rather than only app presence. Set active/idle/disconnected session limits via the supported policy and test idle versus disconnected behavior with saved test work. **Answer check:** the host-pool option being enabled is insufficient when host policy or client capability prohibits the path; a timeout that signs out destroys unsaved session work while a disconnect preserves the session. **VERIFY CURRENT:** precedence, exact settings, licensing and platform support.
+
+### Worked personal-desktop and power-on workflow
+
+In a disposable personal pool using direct assignment, grant the test user's application-group entitlement and explicitly assign the intended session host. Application-group entitlement alone does not satisfy direct host assignment. Connect and record the chosen host; remove the host assignment only after handling the session and preserving required user state, then verify the intended unassigned behavior. [Personal assignment guidance](https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-host-pool-personal-desktop-assignment-type) distinguishes direct and automatic assignment; recheck any newer multiple-desktop preview separately.
+
+To test [Start VM on Connect](https://learn.microsoft.com/en-us/azure/virtual-desktop/start-virtual-machine-connect), use an existing supported host pool, configure its managed identity or documented service principal with Desktop Virtualization Power On Contributor at a scope containing the target VMs, then enable the host-pool property. Deallocate a lab host without unsaved work, initiate a connection as the test user and inspect power action, startup delay, broker/agent health and successful session. **Answer check:** power-on succeeds but Windows sign-in fails means the power permission check passed while identity/session prerequisites still failed. Enabling a property does not create missing VMs, entitlements or guest health. **VERIFY CURRENT:** supported identity/scope, pool type and assignment behavior.
 
 ### Deliver applications
 
@@ -422,6 +458,10 @@ Monitor:
 - FSLogix attach duration, size, capacity, locks and provider health;
 - image/app version compliance and Defender status;
 - scaling decisions, excluded hosts and capacity shortfalls.
+
+### Worked active-session maintenance decision
+
+Before image maintenance, enumerate the target host's active and disconnected sessions and identify the application groups/users affected. Notify the lab user, set drain mode to prevent new assignments, and choose the supported session operation deliberately: disconnect retains the running session; logoff ends it and can discard unsaved work. Verify the resulting session state and only remove/replace the host after acceptance and state protection. Application-group unassignment changes entitlement, while deleting a VM changes compute; neither is a substitute for a controlled session operation. **Answer check:** a disconnected session is still user state to handle. Record session IDs, owner approval/notification, state before/after and end-to-end reconnection. The [management troubleshooting guide](https://learn.microsoft.com/en-us/troubleshoot/azure/virtual-desktop/troubleshoot-management-issues) separates failed drain, disconnect, sign-out and application-group unassignment, and calls for VM/session/identity checks. This is an unexecuted maintenance scenario.
 
 ### Autoscale and capacity
 
@@ -781,6 +821,10 @@ Choose standard or session-host-configuration management before creating the poo
 ## Places to learn
 
 This is **not a complete list**, and it is not a recommendation to consume everything. Pick the resources and formats that fit you, and use the official July 20, 2026 objectives as the coverage checklist. Estimated times include reasonable note-taking or practice where stated and should be rechecked before purchase.
+
+### Focused monitoring evidence route
+
+Choose the Entra ID branch in the [official lab index](https://microsoftlearning.github.io/AZ-140-Configuring-and-Operating-Microsoft-Azure-Virtual-Desktop/), then read [Implement monitoring with AVD Insights](https://microsoftlearning.github.io/AZ-140-Configuring-and-Operating-Microsoft-Azure-Virtual-Desktop/Instructions/Labs_EntraID/03_LAB_41_01_Implement_monitoring_by_using_Azure_Virtual_Desktop_Insights.html). Its published **25 minutes** assumes the deployment and management labs are complete. For an existing disposable host pool, allow **about 60–90 minutes** for configuration, evidence and review, estimated from the published lab plus checking diagnostics, DCR associations, the monitoring extension and actual generated data. Preserve a before/after warning record and separate connection health from telemetry-collection health. **VERIFY CURRENT:** subscription permissions, agent/UI steps and ingestion costs. Prerequisite environment creation and cleanup are additional; do not expect the entire route in 25 minutes. No host pool, workbook or telemetry was executed/observed in this review.
 
 | Resource | Access | Estimated time |
 |---|---|---:|

@@ -6,21 +6,21 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-28
+last_verified: 2026-10-28
 upcoming_change_status: retirement-announced
-upcoming_change_checked: 2026-09-28
+upcoming_change_checked: 2026-10-28
 ---
 
 # ANS-C01 AWS Certified Advanced Networking - Specialty Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed on September 28, 2026, including all 177 detailed knowledge/skill bullets. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ans-c01-coverage-record). The [official ANS-C01 exam guide](https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/advanced-networking-specialty-01.html) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed on October 28, 2026, including all 177 detailed knowledge/skill bullets. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ans-c01-coverage-record). The [official ANS-C01 exam guide](https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/advanced-networking-specialty-01.html) is authoritative.
 
 **Current baseline:** Current four-domain ANS-C01 guide; 50 scored plus 15 unscored questions<br>
 **Upcoming exam retirement:** **RETIREMENT ANNOUNCED.** The live English certification page says December 31, 2026 is the last testing date. AWS says credentials earned before retirement retain their normal three-year validity and points future networking learners to Skill Builder; it does not name a replacement certification.<br>
 **Important lifecycle conflict:** The [Japanese certification page](https://aws.amazon.com/jp/certification/certified-advanced-networking-specialty/) still displays August 25, 2026, while the English page shows December 31. This discrepancy was rechecked September 28; do not infer that every language has identical appointment availability. Verify the [live certification page](https://aws.amazon.com/certification/certified-advanced-networking-specialty/) and actual scheduling availability before paying or beginning an exam-specific plan.<br>
 **Official source:** [AWS Certified Advanced Networking - Specialty exam guide](https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/advanced-networking-specialty-01.html)
 
-## Living-guide watch — September 28, 2026
+## Earlier platform notes — September 28, 2026
 
 **Confirmed product change; exam relevance not explicitly confirmed:** AWS made [Transit Gateway policy-based routing generally available](https://aws.amazon.com/about-aws/whats-new/2026/07/aws-transit-gateway-policy-based-routing/) on July 30, 2026. A policy table evaluates ordered rules by source/destination IP, source/destination port, and protocol, uses the first match, and selects a Transit Gateway route table. An attachment can be associated with a policy table or a route table, but not both, according to the current [policy-table documentation](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-policy-tables.html). This is useful current networking knowledge under the existing Transit Gateway objectives; AWS has not published a revised ANS-C01 outline that specifically names policy tables.
 
@@ -31,6 +31,10 @@ upcoming_change_checked: 2026-09-28
 **Review evidence:** See the [deep-review report](../docs/research/2026-09-28-ans-c01-deep-review.md).
 
 **Concern to recheck:** ANS-C01 is retiring, so this note deliberately preserves useful adjacent product behavior without claiming that a new feature changed the frozen exam weighting. Reconfirm the live service documentation when designing production networks.
+
+## Retirement status — October 28, 2026
+
+AWS's current English certification page confirms December 31, 2026 as the last day to test; certifications earned before retirement remain active for their standard three-year validity, and AWS has not named a replacement certification. The Japanese page has previously shown an older August date, so use the exact language and appointment date offered by the live scheduler. This is a finite exam window, not a blueprint revision.
 
 ## How to use this guide
 

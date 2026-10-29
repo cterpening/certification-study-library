@@ -6,9 +6,9 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-29
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-29
 ---
 
 # Splunk Certified Cybersecurity Defense Analyst Study Guide
@@ -17,7 +17,7 @@ upcoming_change_checked: 2026-09-29
 
 **Current baseline:** The Cyber Landscape, Frameworks, and Standards (10%); Threat and Attack Types, Motivations, and Tactics (20%); Defenses, Data Sources, and SIEM Best Practices (20%); Investigation, Event Handling, Correlation, and Risk (20%); SPL and Efficient Searching (20%); Threat Hunting and Remediation (10%). The blueprint warns that related topics can appear and its guidelines can change without notice.<br>
 **Exam contract:** Splunk lists an intermediate, 66-question multiple-choice exam with 75 total minutes, including three minutes for the exam agreement. The live page lists $130 USD per attempt and Pearson VUE delivery. There is no prerequisite exam, but the blueprint recommends Power User-level Splunk Enterprise knowledge.<br>
-**Credential contract — VERIFY CURRENT:** The [candidate handbook](https://www.splunk.com/en_us/pdfs/training/splunk-certification-candidate-handbook.pdf), version 05.05.26, describes a three-year lifecycle and 90-day grace period. Its renewal tables list no next-level or downstream credential for Defense Analyst. The [learning track](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-certified-cybersecurity-defense-analyst-track.pdf) recommends Engineer/Architect as career next steps; that does not establish renewal eligibility. Same-exam recertification belongs in the final year. After failure, waits progress 7, 14, 28, 56 and 56 days before attempts two through six, counted from the day after the previous attempt; further attempts require individual review. Cancellation/rescheduling requires 48 hours. Personal eligibility, accommodations, booking and regional charges remain unverified.<br>
+**Credential contract — VERIFY CURRENT:** The [candidate handbook](https://www.splunk.com/en_us/pdfs/training/splunk-certification-candidate-handbook.pdf), version 10.20.26, describes a three-year lifecycle and 90-day grace period. Its renewal tables list no next-level or downstream credential for Defense Analyst. The [learning track](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-certified-cybersecurity-defense-analyst-track.pdf) recommends Engineer/Architect as career next steps; that does not establish renewal eligibility. Same-exam recertification belongs in the final year. After failure, waits progress 7, 14, 28, 56 and 56 days before attempts two through six, counted from the day after the previous attempt; further attempts require individual review. Cancellation/rescheduling requires 48 hours. Personal eligibility, accommodations, booking and regional charges remain unverified.<br>
 **Upcoming change:** No SPLK-5001 retirement or replacement was announced September 29, 2026. The blueprint does not name a Splunk Enterprise or Enterprise Security version. Its `Notable Event`, `Risk Notable` and `Contributing Events` vocabulary spans older product generations; current Enterprise Security 8 documentation increasingly uses `finding`, `intermediate finding`, `finding group`, `entity`, Mission Control and the analyst queue. Learn the blueprint terms, then reconcile them with the version you use.<br>
 **Integrity:** The public program study guide offers official sample-format material. This review read its introduction and contents, not its sample questions, and did not establish a separately available dedicated SPLK-5001 mock exam. Reject any source claiming live, recalled, exact-match or guaranteed-pass questions. The checks below are original learning prompts, not representations of exam items.
 
@@ -459,6 +459,10 @@ These original explanations correspond to the 40 prompts above. They are study f
 39. Analyst launch and configured event/detection/automation paths depend on pairing and version. Verify supported triggers and connector permissions in the installed ES/SOAR environment before enabling actions.
 40. Weights are 10/20/20/20/20/10 percent; 66 multiple-choice questions have 75 total minutes including three for the agreement. Use original practice and official format guidance, not live or recalled questions.
 
+### October 29, 2026 current-source update
+
+The current [Enterprise Security 8.7 release notes](https://help.splunk.com/en/splunk-enterprise-security-8/release-notes-and-resources/8.7/splunk-enterprise-security-release-notes/release-notes-for-splunk-enterprise-security) say 8.7.2 released October 23, 2026 with a bug fix and no listed enhancements. Earlier 8.7 releases add AI SOC Analyst and Connector Builder Agent features whose edition, deployment, and enablement conditions differ. The notes also warn that ES 8.x upgrade is one-way, does not automatically back up app/content/data, and can affect older investigations; confirm the exact version and complete an approved full search-head/KV Store backup before a real upgrade. These are volatile product examples, not SPLK-5001 requirements; no ES instance or entitlement was used.
+
 ## Places to learn
 
 This is not a complete list, and it is not a prescription to consume everything. Start with the official blueprint, then choose courses, documentation, videos, books or labs that close your measured gaps. Durations are publisher-listed or clearly labeled estimates and can change.
@@ -467,6 +471,7 @@ This is not a complete list, and it is not a prescription to consume everything.
 |---|---|---|---:|
 | Live level, count, duration, price, delivery, preparation and BOTS links | [SPLK-5001 certification page](https://www.splunk.com/en_us/training/certification-track/splunk-certified-cybersecurity-defense-analyst.html) | Public | 15–25 min |
 | Canonical six-domain weights, every objective and official resource names | [SPLK-5001 test blueprint](https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-cybersecurity-defense-analyst.pdf) | Public PDF | 30–60 min initially; repeat |
+| Public description of seven official Cybersecurity Defense Analyst courses; lesson access, total time and full blueprint coverage not published | [Cybersecurity Defense Analyst course descriptions](https://www.splunk.com/en_us/pdfs/training/cybersecurity-landscape-course-description.pdf) | Public PDF; course registration/access varies | No total published; about 20–30 minutes to map the sequence (author estimate), then use the chosen courses’ current catalog times |
 | Official ordered route across cyber foundations, SPL, ES investigation and hunting; select by gaps | [Cybersecurity Defense Analyst track](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-certified-cybersecurity-defense-analyst-track.pdf) | Public PDF; course registration varies | 30–60 hr estimate if completing most courses/labs |
 | Blue Team Academy, Intro to Splunk, ES foundations, data/tools, investigation and threat hunting | [Free Splunk training](https://www.splunk.com/en_us/training/free-courses/overview.html) | Free account | 10–25 hr study estimate; account lessons not reviewed |
 | Planning directory; current result list did not load, so course availability remains unverified | [Splunk course catalog](https://www.splunk.com/en_us/training/course-catalog.html) | Mixed free/paid | 15–30 min planning; course-specific |

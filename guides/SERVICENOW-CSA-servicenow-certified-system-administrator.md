@@ -6,14 +6,14 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-29
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-29
 ---
 
 # ServiceNow Certified System Administrator (CSA) Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The September 29 review maps 30 current official subtopics, answers 40 original readiness prompts and executes 34 local Python/SQLite checks. Eight instance activities remain proposed. See the [coverage record](../docs/SOURCE-VALIDATION.md#servicenow-csa-coverage-record) and [deep-review evidence](../docs/research/2026-09-29-servicenow-csa-deep-review.md).
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The October 29 refresh rechecked the current January 2026 blueprint and retained its 30 mapped official subtopics. The 40 original readiness prompts and 34 local Python/SQLite checks are from the September 29 deep review; eight instance activities remain proposed. See the [coverage record](../docs/SOURCE-VALIDATION.md#servicenow-csa-coverage-record) and [deep-review evidence](../docs/research/2026-09-29-servicenow-csa-deep-review.md).
 
 **Current baseline:** Platform Overview and Navigation 7%; Instance Configuration 10%; Configuring Applications for Collaboration 20%; Self Service and Automation 20%; Database Management and Platform Security 30%; Data Migration and Integration 13%.<br>
 **Exam contract:** The public blueprint lists 60 multiple-choice/multiple-select questions in 90 minutes, delivered through Pearson at a test center or online with OnVUE. Registering is payment; the attempt must be scheduled and completed within 90 days. The result is conditional and may be audited. The cut score is not public and is not always 70%. Verify current fee, language, accommodations, system test, ID and retake rules before purchase.<br>
@@ -518,6 +518,10 @@ These are original explanation prompts, not reconstructed exam items. Answer alo
 - Treat certification as a checkpoint; production configuration still requires peer review, security, testing, change control and recovery.
 
 
+### October 29, 2026 current-source update
+
+The live [CSA Mainline Exam Blueprint](https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011554) says **Updated January 2026** and retains the six current weights: 7/10/20/20/30/13 percent. Its listed terms include Workflow Studio, Virtual Agent, CMDB/CSDM, Security Center, and the Shared Responsibility Model; the subskills are not exhaustive. The blueprint describes three to six months of instance experience as recommended preparation, not a formal prerequisite. **Related item:** the Brazil App Engine Studio [release notes](https://www.servicenow.com/docs/r/release-notes/app-engine-studio-rn.html) say PDF Extractor table creation is deprecated in that release and direct users toward Build Agent. Confirm release, application, role, and entitlement before selecting a migration workflow; this product change is not an exam objective.
+
 ## Places to learn
 
 This is not a complete list. Choose resources to close demonstrated gaps, and keep account-only lessons and practice questions distinct from publicly reviewed metadata. Times below are planning estimates unless a publisher-listed historical value is explicitly identified. No course, exam booking, PDI enrollment, paid lesson or practice-question interior was accessed.
@@ -529,6 +533,8 @@ This is not a complete list. Choose resources to close demonstrated gaps, and ke
 | Recommended Fundamentals course; current lesson duration unavailable | [ServiceNow Administration Fundamentals](https://learning.servicenow.com/lxp?course_id=fbb6cc4847f5dd505cbdaf44846d436a&id=learning_course_prev) | Account/entitlement | Earlier 3 ILT days not reverified |
 | Earlier Welcome citation is actually a CSA certification-path route | [ServiceNow CSA certification path — earlier mislabelled Welcome link](https://learning.servicenow.com/lxp/en/now-platform/certified-system-administrator?course_id=931d939697d229587f7070871153af8c&id=learning_content_prev) | Account/loading shell | Not verified |
 | Credential navigation; no course interiors | [ServiceNow University Credential Catalog](https://learning.servicenow.com/lxp/en/credentials) | Public shell/account | 10–20 min estimate |
+| 2026 role route map; distinguish 3–6 month exam recommendation from the separate 6+ month career-path guidance | [ServiceNow Career Journeys](https://www.servicenow.com/community/s/cgfwn76974/attachments/cgfwn76974/training-certifications-forum/27136/1/Learning%20paths%20-%20ServiceNow.pdf) | Public PDF; course access/catalog details vary | About 20–30 minutes to map a path; course durations are not shown |
+| Current ServiceNow University content release index; LabX/Studio titles are catalog leads, not verified completions | [Content Releases](https://nowlearning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0010279) | Public listing; linked course shells may require account | About 15–30 minutes to locate a current item; course runtime unknown |
 | Select your instance family; homepage is not a full documentation audit | [ServiceNow Product Documentation](https://www.servicenow.com/docs/) | Public shell/browser docs | 10–20 hr selected study estimate |
 | PDI and learning entry; no instance obtained | [ServiceNow Developer Program](https://developer.servicenow.com/) | Public entry/account | 1–2 hr setup estimate, availability unverified |
 | February 2026 product metadata: 120 questions; no demo/question interiors | [ServiceNow CSA Practice Test](https://www.measureup.com/servicenow-csa-practice-test.html) | Paid; demo advertised, not opened | 2–4 hr study estimate |

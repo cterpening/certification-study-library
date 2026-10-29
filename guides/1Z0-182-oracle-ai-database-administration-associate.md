@@ -6,14 +6,14 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-04
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-04
+upcoming_change_checked: 2026-10-28
 ---
 
 # 1Z0-182 Oracle AI Database Administration Associate Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide maps Oracle University's current public learning-path scope checked September 4, 2026. It is unofficial and may contain errors. The [official Oracle AI Database Administration Associate learning path](https://mylearn.oracle.com/ou/learning-path/earn-the-oracle-ai-database-administration-associate-credential/140076) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide maps Oracle University's current public learning-path scope checked October 28, 2026. It is unofficial and may contain errors. The [official Oracle AI Database Administration Associate learning path](https://mylearn.oracle.com/ou/learning-path/earn-the-oracle-ai-database-administration-associate-credential/140076) is authoritative.
 
 **Assessment contract exposed by the current path:** Oracle AI Database Administration Associate, exam 1Z0-182, 120 minutes.<br>
 **Published scope:** instance startup/shutdown and architecture; Oracle Net; multitenant CDB/PDB administration; tablespaces and undo; users, roles, privileges, profiles, and auditing; RMAN backup/recovery; SQL*Loader, Data Pump, and external tables; AWR, ADDM, SQL Tuning Advisor, SQL Access Advisor, and basic tuning; automated tasks and resource plans; current Oracle AI Database enhancements.<br>
@@ -91,6 +91,10 @@ The path expects awareness of current Oracle AI Database architecture and enhanc
 1. **New application PDB:** Provision a PDB/service, tablespace, local users/roles, profile, audit policy, backup, and health checks.
 2. **Failed data load:** Diagnose listener/authentication, directory/privilege, format, rejected rows, constraints, and transaction effects; reconcile counts.
 3. **Performance regression and user error:** Preserve AWR/SQL evidence, choose a bounded tuning test, then execute an RMAN or flashback recovery drill with measured RPO/RTO.
+
+## Current product context — separate from exam objectives
+
+> **Related item:** Oracle’s October 20, 2026 Oracle AI Database 26ai New Features guide describes the release’s SQL Firewall and Release Update 23.26.4 changes. SQL Firewall is part of Oracle Database Vault and use is license-dependent; verify the deployment’s release, options, and license before planning controls. This dated product note does not add exam objectives.
 
 ## Hands-on labs
 

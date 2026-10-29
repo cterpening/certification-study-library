@@ -6,20 +6,20 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-02
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-02
+upcoming_change_checked: 2026-10-28
 ---
 
 # Palo Alto Networks Certified Security Operations Architect Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live certification page, February 2026 datasheet, July 2025 certification handbook, current public Cortex XSIAM/XDR/XSOAR documentation, and primary NIST/MITRE/regulatory sources were checked September 2, 2026. This does not guarantee every explanation is error-free or remains current. The [official page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-secops-architect) and [datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/secops-architect-datasheet.pdf) are authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live certification page, February 2026 datasheet, September 2026 certification handbook, current public Cortex XSIAM/XDR/XSOAR documentation, and primary NIST/MITRE/regulatory sources were checked October 28, 2026. This does not guarantee every explanation is error-free or remains current. The [official page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-secops-architect) and [datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/secops-architect-datasheet.pdf) are authoritative.
 
 **Current baseline:** business alignment/strategy 22%; platform/data architecture 49%; automation/detection strategy 29%; February 2026 datasheet<br>
 **Exam contract:** architect-level English Pearson VUE certification. The current handbook uses an 860 passing score on a 300–1000 scaled range and provisional results. The datasheet does not publish item count, base duration, price, or exam-form details; verify registration.<br>
 **Experience boundary:** Palo Alto Networks recommends at least five years designing large-scale enterprise/multicloud security operations, incident response, and threat detection/prevention, plus two years with Cortex architecture. XSIAM Analyst and XSIAM Engineer are recommended. The blueprint also expects knowledge equivalent to XSIAM, XSOAR, and XDR engineering, advanced data/security frameworks, vulnerability/ASM/hunting, reference architectures, Zero Trust integration, and SOC measurement.<br>
-**Validity and renewal:** two years under the July 2025 handbook, subject to current pathway rules.<br>
-**Upcoming change:** no retirement or dated replacement was found September 2, 2026. Agentic automation, product licenses, Cortex data/tenant models, Broker/Collector/engine support, AI-driven analytics, integrations and data-pipeline tooling evolve rapidly; date every assumption and recheck current tenant/release documentation.<br>
+**Validity and renewal:** two years from passing. The September 2026 [Certification Handbook](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf) permits higher-level exam recertification to renew active lower-level credentials in the same track; the same passed exam cannot be retaken for 545 days. Failed-attempt waits are 15, 30, then 90 days. Check your credential record and current policy before scheduling.<br>
+**Upcoming change:** no retirement or dated replacement was found October 28, 2026. Agentic automation, product licenses, Cortex data/tenant models, Broker/Collector/engine support, AI-driven analytics, integrations and data-pipeline tooling evolve rapidly; date every assumption and recheck current tenant/release documentation.<br>
 **Integrity:** actual exam content is confidential. This guide follows the public blueprint and uses original questions and synthetic architecture scenarios only.
 
 ## How to use this guide
@@ -211,6 +211,10 @@ Use deterministic ingestion/classification/evidence preservation and safe URL/fi
 
 Correlate identity, cloud control, endpoint, network and asset/vulnerability context. Ensure provider feeds have known latency and entity mapping. Rank by privilege/business/data and attack path; automate enrichment and short reversible token/session containment under authority; coordinate evidence and service owner; test feed outage and shared identity.
 
+## Current product notes
+
+**Related product announcement (not a new exam objective):** Palo Alto Networks’ July 2026 Cortex update describes XSIAM 3.6/AgentiX 1.4 capabilities including natural-language dashboard creation, extended threat intelligence, and AI-assisted SOC workflows. These are version-, tenant-, and license-dependent examples; do not assume they are available in every architecture or generally enabled. [July 2026 Cortex update](https://www.paloaltonetworks.com/blog/security-operations/whats-new-in-cortex-july-2026/).
+
 ## Hands-on architecture labs
 
 1. **Business requirements:** create a fictional enterprise/service/threat/data inventory and turn it into measurable SOC, availability, privacy, recovery, cost and reporting requirements.
@@ -333,11 +337,14 @@ Correlate identity, cloud control, endpoint, network and asset/vulnerability con
 
 This is a selective starting set, not a complete list and not a prescription to consume everything. Pick official reference architectures, engineering refreshers, primary frameworks and architecture exercises that close your gaps. Times are planning estimates unless a provider publishes duration; features, licenses, laws, access and pricing change.
 
+**Official learning path:** The [current certification page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-secops-architect) links to the Palo Alto Networks Certified Security Operations Architect digital path. Palo Alto Networks describes its digital modules as free and self-paced; Learning Center registration/sign-in is required, and public pages do not state total path runtime. See [Education Services](https://www.paloaltonetworks.com/services/education) and [Learning Center registration guidance](https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA10g000000PLNxCAO&lang=en_US); course access may vary by account/region.
+
+**Official Architect digital learning path:** the vendor describes a free, self-paced Learning Center path; account/sign-in is required and public materials do not state total runtime. The page recommends relevant Specialist paths as needed. No dedicated Architect ILT is listed.
 - [Official certification page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-secops-architect) and [February 2026 datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/secops-architect-datasheet.pdf) — **60–90 minutes** to annotate; public; canonical scope and experience.
 - [Palo Alto Networks Certification Handbook](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf) — **30–45 minutes**; public; verify current delivery, score, retakes, validity/renewal, accommodations and rules.
 - Official Security Operations Architect learning path linked from the page — **estimate 35–60 hours** depending on engineering mastery; learning login may be required; use current module list/durations.
 - Recommended XSIAM Analyst and XSIAM Engineer paths, plus XDR Engineer and XSOAR Engineer refreshers — **40–100 hours selective**; learning login may be required; the architect blueprint explicitly assumes these engineering competencies.
-- [Cortex XSIAM documentation](https://cortex-docs.paloaltonetworks.com/), [Cortex XDR documentation](https://docs.paloaltonetworks.com/cortex/cortex-xdr), and [Cortex XSOAR documentation](https://docs.paloaltonetworks.com/cortex/cortex-xsoar) — **60–100 hours targeted architecture/engineering study**; public main docs, tenant details may require access; canonical platform sources.
+- [Cortex XSIAM documentation](https://cortex-docs.paloaltonetworks.com/), [Cortex XDR documentation](https://docs-cortex.paloaltonetworks.com/r/Cortex-XDR/Cortex-XDR-5.x-Documentation/Detailed-View), and [Cortex XSOAR documentation](https://docs.paloaltonetworks.com/cortex/cortex-xsoar) — **60–100 hours targeted architecture/engineering study**; public main docs, tenant details may require access; canonical platform sources.
 - [Palo Alto Networks reference architectures](https://www.paloaltonetworks.com/resources/reference-architectures) — **15–35 hours selected**; public; verify publication date, current products and assumptions.
 - [Cribl documentation](https://docs.cribl.io/) — **12–25 hours selected plus lab**; public documentation, product use may require license; learn routing/transformation/buffering/HA, but treat Cribl as the blueprint's example rather than a mandatory product.
 - [NIST CSF 2.0](https://www.nist.gov/cyberframework), [NIST SP 800-61 Rev. 3](https://csrc.nist.gov/pubs/sp/800/61/r3/final), [NIST SP 800-92](https://csrc.nist.gov/pubs/sp/800/92/final), and [NIST SP 800-207](https://csrc.nist.gov/pubs/sp/800/207/final) — **15–25 hours selected**; public; risk/incident/log/Zero Trust architecture foundations.

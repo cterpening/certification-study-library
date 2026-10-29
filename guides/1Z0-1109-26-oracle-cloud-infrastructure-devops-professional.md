@@ -6,14 +6,14 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-04
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-04
+upcoming_change_checked: 2026-10-28
 ---
 
 # 1Z0-1109-26 Oracle Cloud Infrastructure DevOps Professional Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide maps Oracle University's public 2026 learning-path scope checked September 4, 2026. It is unofficial and may contain errors. The [official OCI DevOps Professional learning path](https://mylearn.oracle.com/ou/learning-path/become-an-oci-devops-professional-2026/162852) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide maps Oracle University's public 2026 learning-path scope checked October 28, 2026. It is unofficial and may contain errors. The [official OCI DevOps Professional learning path](https://mylearn.oracle.com/ou/learning-path/become-an-oci-devops-professional-2026/162852) is authoritative.
 
 **Assessment contract exposed by the current path:** Oracle Cloud Infrastructure DevOps Professional, exam 1Z0-1109-26, 90 minutes.<br>
 **Published scope:** microservices on Container Registry, Container Instances, and OKE; OCI DevOps repositories, build and deployment pipelines, and artifact registries; Terraform and Resource Manager; IAM, key and secret management, and container-image security; Monitoring, Logging, and Events.<br>
@@ -83,6 +83,10 @@ Measure whether a canary is safe against a declared baseline. A green pipeline p
 2. **Infrastructure-plus-application change:** Use Resource Manager and OCI DevOps to add a dependency and deploy compatible code with ordered approval, verification, and recovery.
 3. **Compromised build credential:** Detect unusual pipeline activity, contain identities and secrets, establish artifact provenance, rotate safely, and restore delivery with an evidence trail.
 
+## Current product context — separate from exam objectives
+
+> **Related item:** Oracle’s 2026 OCI refresh removed calendar years from certification names while keeping exam codes such as 1Z0-1109-26; Oracle states OCI credentials are valid for 24 months. The professional learning path is listed at 35 hours and professional-level course access is paid under the 2026 model. Confirm the current enrollment terms before planning study time. This program update does not change the five published capability groups.
+
 ## Hands-on labs
 
 1. Map source, build, artifact, deployment, runtime, and observability identities for one service; remove an unnecessary permission.
@@ -115,6 +119,6 @@ This is a selective learning path, not a complete list of OCI DevOps resources.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
-| [Official OCI DevOps Professional learning path](https://mylearn.oracle.com/ou/learning-path/become-an-oci-devops-professional-2026/162852) | Oracle account/subscription may be required | **35+ hours** as published by Oracle University |
+| [Official OCI DevOps Professional learning path](https://mylearn.oracle.com/ou/learning-path/become-an-oci-devops-professional-2026/162852) | Paid Professional course; Oracle account sign-in | **35+ hours** as published by Oracle University |
 | [A DevOps Engineer's Guide to OCI](https://docs.oracle.com/en-us/iaas/Content/GSG/Reference/getting-started-as-devops.htm) | Public | **10–14 hours** targeted study |
 | Eight labs in this guide | Authorized OCI tenancy or local substitutes | **28–40 hours** plus one timed release-and-recovery exercise |

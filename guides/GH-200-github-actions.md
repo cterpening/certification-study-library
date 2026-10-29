@@ -6,22 +6,22 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-05
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-08-31
+upcoming_change_checked: 2026-10-28
 ---
 
 # GH-200 GitHub Actions Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#gh-200-coverage-record). The [official GH-200 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-200) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on October 28, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#gh-200-coverage-record). The [official GH-200 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-200) is authoritative.
 
 **Current baseline:** Skills measured as of January 2026<br>
-**Upcoming blueprint change:** None announced on the official study guide as of August 31, 2026.<br>
+**Upcoming blueprint change:** None announced on the official study guide as of October 28, 2026.<br>
 **Official source:** [GH-200 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-200)
 
-## Living-guide watch — September 7, 2026
+## Living-guide watch — October 28, 2026
 
-**Confirmed runner deadlines:** GitHub's [self-hosted runner enforcement notice](https://github.blog/changelog/2026-06-12-github-actions-minimum-version-enforcement-timeline-for-self-hosted-runners/) requires version 2.329.0 or later to register or reregister and requires every new runner release within 30 days for continued job execution. GitHub Enterprise Cloud enforcement begins September 25, 2026; critical security releases can pause job queuing sooner. Treat 2.329.0 as a registration floor, not a permanently supported runtime.
+**Runner enforcement is now in effect:** GitHub's [self-hosted runner enforcement notice](https://github.blog/changelog/2026-06-12-github-actions-minimum-version-enforcement-timeline-for-self-hosted-runners/) sets 2.329.0 as the registration floor and requires runner updates within 30 days for continued job execution. GitHub Enterprise Cloud enforcement began September 25, 2026; a critical security update can pause job queuing sooner. Check the effective current minimum and runner inventory; 2.329.0 is not a permanently supported runtime.
 
 **Confirmed JavaScript-action transition:** GitHub moved the default action runtime to Node 24 on June 16 and says Node 20 will be removed from runners September 23, 2026. Action maintainers should update action metadata; users should select action releases that support Node 24. The change also ends support for macOS 13.4 and earlier and ARM32 self-hosted runners, according to the [Node 20 deprecation notice](https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/).
 
@@ -30,6 +30,10 @@ upcoming_change_checked: 2026-08-31
 **Useful current depth:** The [early-September Actions update](https://github.blog/changelog/2026-09-03-github-actions-early-september-2026-updates/) adds a runner-deprecation API, a read-only `vulnerability-alerts` permission for `GITHUB_TOKEN`, and reusable-workflow source identity in `job.workflow_ref`, `job.workflow_sha`, `job.workflow_repository`, and `job.workflow_file_path` (not GHES). [CodeQL 2.26.4](https://github.blog/changelog/2026-09-03-codeql-2-26-4-improves-github-actions-security-detections/) also detects mutable reusable-workflow references and reasons more precisely about event actor checks.
 
 **Concern to recheck:** These are dated operational changes under stable GH-200 domains, not proof of a blueprint revision. Learn the durable decisions—runner currency, explicit permissions, immutable references, workflow identity, and evidence retention—then verify exact versions, dates, GHES support, and API fields before implementation.
+
+**Workflow dependency lockfiles:** GitHub Actions workflow lockfiles entered public preview on October 14, 2026 for GitHub Enterprise Cloud, Enterprise Cloud with Data Residency, Team, and Free. A lockfile pins the resolved commits behind action and reusable-workflow references; it does not establish that the dependency is trustworthy. Check current plan and GHES availability before relying on the preview.
+
+**Credential maintenance:** The current credential page says GitHub certifications last two years while GitHub transitions to Microsoft recertification; expiries before the process is available receive a six-month extension. The official practice assessment now launches through AI Skills Navigator and requires sign-in; the assessment itself was not accessed.
 
 ## How to use this guide
 
@@ -842,7 +846,7 @@ This is a curated starting point, not a complete list, and it is not meant to be
 | Resource | Access | Estimated time | Best use and caveat |
 |---|---|---:|---|
 | [Microsoft Learn — GitHub Actions Part 1](https://learn.microsoft.com/en-us/training/paths/github-actions/) and [Part 2](https://learn.microsoft.com/en-us/training/paths/github-actions-2/) | Free | About 12–16 hours | Official starting point, with modules and exercises mapped to the credential |
-| [Microsoft — GH-200 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/github-actions/practice/assessment?assessment-type=practice&assessmentId=1001&practice-assessment-type=certification) | Free Microsoft account | About 1–2 hours for an attempt and review | Repeatable official readiness check with rationales and learning links; start here before buying another assessment |
+| [AI Skills Navigator — GH-200 Practice Assessment](https://aiskillsnavigator.microsoft.com/credentials/cert-38619ddf060902251eff3bb5285fe9c240a8bc7314467860ad9c5f69962602e2) | Free; sign-in required | About 1–2 hours for an attempt and review (planning estimate) | Current credential page links this official assessment; its questions and launch session were not accessed |
 | [Microsoft Learn GH-200 video course](https://www.youtube.com/playlist?list=PLahhVEj9XNTd5N_seZDoRXVIn6N1qAp-_) | Free | About 6–8 hours | Official instructor-led reinforcement for visual learners |
 | GitHub Skills: [Test with Actions](https://github.com/skills/test-with-actions), [Reusable workflows](https://github.com/skills/reusable-workflows), and [Workflow artifacts](https://github.com/skills/workflow-artifacts) | Free account | About 2–4 hours | Real-repository practice with automated feedback |
 | [Pluralsight — GitHub Actions](https://www.pluralsight.com/paths/github-actions) | Subscription | 7 hours | Five-course structured path; verify 2024 course behavior against the January 2026 baseline |

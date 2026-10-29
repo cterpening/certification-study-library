@@ -6,17 +6,17 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-28
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-28
+upcoming_change_checked: 2026-10-28
 ---
 
 # MB-800 Microsoft Dynamics 365 Business Central Functional Consultant Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Checked against the June 30, 2026 official objective baseline and cited public sources on September 28, 2026. See the [coverage record](../docs/SOURCE-VALIDATION.md#mb-800-coverage-record). The [official MB-800 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-800) is authoritative.
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-04.md#mb-800) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mb-800-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-800) is authoritative.
 
 **Current baseline:** Skills measured as of June 30, 2026.<br>
-**Upcoming blueprint change:** None announced as of September 28, 2026.<br>
+**Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
 **Lifecycle:** The [Business Central Functional Consultant Associate credential](https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-functional-consultant-associate/) is active, renews every 12 months, and has no announced retirement. The exam is 100 minutes, is offered in eight languages, and has a free Practice Assessment.<br>
 **Recent blueprint change:** The June 2026 update removed the standalone integration objective, added Copilot and agent setup, substantially revised core setup/basic operations, increased operations weighting, and added inventory transactions. Older courses remain useful only after this gap check.<br>
 **Official source:** [MB-800 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-800)
@@ -78,6 +78,12 @@ Start with standard permission sets, compose least-privilege access through grou
 
 **Check combined permissions.** For multiple permission sets granting access to the same table, Business Central uses the least restrictive security filter. Adding a filtered permission set does not narrow another broader grant. Test every applicable assignment in the intended company, including unfiltered grants. Security filters do not support `*` or `?` wildcards; supported expressions and length limits differ from an ordinary page filter. See [security-filter behavior](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/security/security-filters) and worked example 1.
 
+#### Configure evidence before testing a permission change
+
+In Change Log Setup, select the relevant tables/fields and insert/modify/delete events, then enable logging. With a test user, make one authorized synthetic permission/setup change and inspect Change Log Entries using the correct company/user/time filters. Session refresh/restart can affect when the entries appear. Field monitoring and Change Log have overlapping-control restrictions; choose the documented mechanism for a sensitive field. See [Change Log configuration](https://learn.microsoft.com/en-us/dynamics365/business-central/across-log-changes).
+
+Test a denied change separately: the lack of a change-log row does not prove an attempted unauthorized write was recorded. Protect log access, retain a review owner and configure retention deliberately. Logging every field indefinitely adds noise and storage, while enabling logging after an incident cannot recover earlier unrecorded changes.
+
 ### Configure core functionality
 
 Number series provide controlled identifiers for master data, documents and journals. Define automatic/manual numbering, relationships, dates and collision behavior. Report selection and layouts determine which report runs and how output renders; distinguish Word, RDLC and Excel layouts, defaults, custom copies and per-customer/vendor requirements. Test data, localization, email/print output and upgrades.
@@ -90,6 +96,8 @@ Enable Copilot and built-in agent capabilities only after validating geography, 
 
 **Agent setup changes the control boundary.** Current [Payables Agent setup](https://learn.microsoft.com/en-us/dynamics365/business-central/payables-agent-setup) lists the capability as generally available; an older preview sentence in the overview is not the current activation guide. Availability still depends on the supported country/region, language, permissions and environment billing. Its production-only trial automatically becomes billable processing after 50 invoices; do not assume a sandbox exercise is covered by that trial. Credit exhaustion pauses invoice processing while the scheduled task can remain active, and replenishment can resume a backlog.
 
+**Check whose mailbox access is used.** [Payables Agent setup](https://learn.microsoft.com/en-us/dynamics365/business-central/payables-agent-setup) says activation starts a background task in the activating user's context; configuring a shared mailbox requires Full Access, and Exchange permission propagation can take hours. For multiple companies sharing a mailbox, route invoices into company-specific folders and test the intended company before activation. Folder routing also changes email-review behavior, so reconcile it with the sender controls below. **VERIFY CURRENT:** mailbox delegation, billing and supported environments.
+
 Separate email review, draft review, vendor approval and posting. Finalizing a purchase draft creates an unposted purchase invoice. An agent-created vendor starts blocked; the agent does not provide vendor-approval workflows. The [Payables Agent overview](https://learn.microsoft.com/en-us/dynamics365/business-central/payables-agent) documents PDF and daily-processing limits—include malformed attachments and exceptions in acceptance tests.
 
 [Known-sender policies](https://learn.microsoft.com/en-us/dynamics365/business-central/payables-agent-known-senders) apply when email review is Manage per sender and no monitored subfolder is configured. Always/Never settings override sender policy; a monitored subfolder bypasses these email-review controls. Do not interpret Approve as permission to post every invoice. Test authenticated internal senders separately using the setup document's rules, and treat mailbox folder routing as a business control.
@@ -99,6 +107,10 @@ The [Sales Order Agent](https://learn.microsoft.com/en-us/dynamics365/business-c
 ### Set up dimensions
 
 Dimensions classify entries for management reporting without multiplying G/L accounts. Define stable dimension/value codes and ownership. Global dimensions are highly integrated and costly to change; shortcut dimensions simplify entry but do not change the underlying dimension-set model. Default dimensions on G/L accounts, customers, vendors, items and other master data can enforce values or block combinations.
+
+An account-type default applies across a category of accounts; an individual account default can replace that type default. On Dimensions, select the dimension and open **Account Type Default Dim.** to configure the relevant type, value and Value Posting rule. For an original example, suggest department SERVICE for the chosen account type, give one specific account a REPAIRS default and compare the resulting journal lines. Use Code Mandatory with a blank value when a value is required without choosing one automatically; check documented batch-job restrictions before enforcing such rules. See [default dimensions and priorities](https://learn.microsoft.com/en-us/dynamics365/business-central/finance-dimensions).
+
+Priorities resolve competing sources per source code, rather than changing the account-versus-type override. Configure the source code and source priorities, then test customer/item/location conflicts and both header-first and line-first entry. Inspect actual line dimensions and any overwrite prompt before posting. This is a proposed sandbox check, not an executed configuration.
 
 Default-dimension priorities resolve competing defaults. Dimension combinations can block a complete pair or selected values. Test documents containing multiple sources because headers, lines and account types may contribute different defaults. Use the Dimension Correction Tool for supported posted-entry corrections with approval and audit evidence; it does not rewrite every operational fact or replace preventive validation.
 
@@ -150,7 +162,9 @@ Bank details and payment exports are sensitive. Apply least privilege, approval 
 
 ### Fixed assets
 
-Fixed Asset Setup, classes/subclasses, locations and posting groups define structure. Depreciation books hold accounting or tax treatments. A fixed asset may be a main asset with components, but component behavior and disposal/acquisition must be tested explicitly. Understand straight-line, declining-balance and other supported depreciation methods conceptually: basis, dates, conventions, residual value and posting integration determine results.
+Fixed Asset Setup, classes/subclasses, locations and posting groups define structure. Depreciation books hold accounting or tax treatments. A main asset groups separately created component assets; it is different from assigning a class/subclass for classification or a depreciation book for valuation. For an original production-line example, create separate fixed-asset cards for the line and its motor, assign the appropriate books before acquisition, then open **Main Asset Components** on the line and select the motor's FA No. Inspect the resulting main/component fields, and deliberately configure **Allow Posting to Main Assets** in Fixed Asset Setup for the intended posting design. See [asset cards and component setup](https://learn.microsoft.com/en-us/dynamics365/business-central/fa-how-acquire).
+
+Test adding an existing component and changing the component list in a disposable company. Reconcile each card's acquisition, depreciation and ledger history; grouping does not by itself establish that costs were acquired, transferred or depreciated. Compare this component relationship with an ordinary shared asset class. No asset or component transaction was posted here. Understand straight-line, declining-balance and other supported depreciation methods conceptually: basis, dates, conventions, residual value and posting integration determine results.
 
 > **Related item:** A fixed-asset card identifies the asset; a depreciation book defines a valuation/depreciation view; the FA posting group routes transactions to G/L. One physical asset can require more than one accounting book.
 
@@ -165,6 +179,20 @@ Inventory Setup establishes shared behavior. Item categories and attributes supp
 Know the entry chain: an item transaction creates item ledger entries for quantity, value entries for cost/value changes, and—through expected/actual cost posting and setup—G/L entries. Costing method changes how outbound cost is assigned; Standard, FIFO, Average, Specific and other supported behavior should be understood through transactions rather than definitions. Run and explain Adjust Cost–Item Entries and the relevant G/L posting process.
 
 Keep three controls separate: **Automatic Cost Adjustment** forwards cost changes to related item value entries; **Automatic Cost Posting** transfers value to G/L; **Expected Cost Posting to G/L** controls interim estimates. Choose scheduling from transaction volume and acceptable latency using [Inventory Setup](https://learn.microsoft.com/en-us/dynamics365/business-central/inventory-how-setup-general). A later invoice can change COGS for an earlier shipment through [cost adjustment](https://learn.microsoft.com/en-us/dynamics365/business-central/design-details-cost-adjustment) without changing quantity. Before manual [Post Inventory Cost to G/L](https://learn.microsoft.com/en-us/dynamics365/business-central/finance-how-to-post-inventory-costs-to-the-general-ledger), adjust costs, inspect the test report and resolve skipped entries. A test report with Post cleared does not update G/L.
+
+#### Compare the cost assumption before choosing the item method
+
+| Method | Cost assignment to distinguish |
+|---|---|
+| FIFO | Uses the eligible earliest receipt cost flow |
+| Average | Calculates a weighted cost under configured period and item/location/variant scope |
+| Specific | Follows the individually identified receipt through fixed application/item tracking |
+| Standard | Uses maintained standard cost and records actual differences through variances |
+| LIFO | Uses the latest-receipt assumption; policy/localization restrictions require verification |
+
+See [Business Central costing methods](https://learn.microsoft.com/en-us/dynamics365/business-central/design-details-costing-methods). A serial number does not by itself select Specific costing. Do not change the costing method casually once item ledger entries exist.
+
+For an original simplified example, receive one unit at 40 and another at 60, then sell one after both receipts. FIFO assigns 40, an assumed single average-cost bucket assigns 50 and Specific assigns the cost of the identified unit; a preset standard of 45 assigns 45 with separate variance treatment. Remaining quantity is one in every case. Dates, applications, average-cost period and later adjustment can change actual results, so test the configured method and reconcile value entries rather than treating this paper model as a posted result.
 
 ### Customer and vendor master data
 
@@ -202,6 +230,12 @@ For both directions, release freezes a document for downstream processing; reope
 
 **Over-receipt is not an invoice agreement.** An [over-receipt code](https://learn.microsoft.com/en-us/dynamics365/business-central/purchasing-how-record-purchases) defines quantity tolerance and can require approval. Receiving extra units does not settle their financial treatment with the vendor. Work through the quantity and invoice decisions separately in example 3.
 
+#### Reuse lines or release a blanket quantity
+
+For recurring purchases, create a recurring-line code with the standard items/accounts/quantities, assign it to the vendor and choose manual/automatic/ask behavior per document type. Insert it with Get Recurring Purchase Lines on a new document and inspect calculated prices/discounts there; the recurring definition does not fix those prices. See [recurring purchase lines](https://learn.microsoft.com/en-us/dynamics365/business-central/purchasing-how-work-recurring-purchase-lines). Repeat the pattern for a customer with Recurring Sales Lines. The batch Create Recurring Sales Invoices uses assigned codes and valid dates, then creates invoices for review/posting. See [recurring sales workflow](https://learn.microsoft.com/en-us/dynamics365/business-central/sales-how-work-standard-lines). Test two eligible codes and a changed price so insertion does not silently select the wrong agreement.
+
+A blanket order records the larger agreement. Create dated quantity lines, specify the quantity to release for the next order and use Make Order; keep the blanket reference and inspect quantities shipped/received and invoiced as the child orders progress. Blanket quantities do not themselves affect availability. See [blanket sales and purchase workflow](https://learn.microsoft.com/en-us/dynamics365/business-central/sales-how-to-create-blanket-sales-orders). For a synthetic 120-unit agreement released as 30, then 40, reconcile 70 released with the remaining agreement and actual fulfillment; an order number is not shipment evidence. Use purchase receipt quantities for the purchasing counterpart. Test an attempted child quantity above its blanket quantity. A recurring-line template is neither a blanket commitment nor automatic posting.
+
 ### Financial documents, journals and payments
 
 Process purchase/sales invoices and credit memos with correct application and reason. A posted correction must reverse both business and ledger effects. Prepayments create invoices/payments before final fulfillment and must be applied through the final document lifecycle.
@@ -214,6 +248,12 @@ Bank reconciliation matches statement lines to bank-account ledger entries, expl
 
 For [bank reconciliation](https://learn.microsoft.com/en-us/dynamics365/business-central/bank-how-reconcile-bank-accounts-separately), distinguish imported statement lines, matched bank-ledger entries, outstanding timing items and missing postings. A bank fee missing from the ledger needs a posting, not a forced match. The [Copilot reconciliation assist (preview)](https://learn.microsoft.com/en-us/dynamics365/business-central/bank-reconciliation-with-copilot) supplements ordinary automatch and proposes additional matches/accounts; review those proposals before posting. Localization and current operational limits matter.
 
+#### Combine fulfilled lines and account for deposits
+
+For a combined sales invoice, start with posted, uninvoiced shipments for the compatible customer/currency, create the invoice header, use Get Shipment Lines, select the intended remaining quantities and review/post. The invoice updates the originating orders' invoiced quantities but does not automatically remove every completed order. See [combined-shipment invoicing](https://learn.microsoft.com/en-us/dynamics365/business-central/sales-how-to-combine-shipments-on-a-single-invoice). For purchasing, use the corresponding purchase invoice and Get Receipt Lines to select posted, uninvoiced receipts for the same vendor/currency; reconcile the selected receipt/order references and remaining quantities before posting. A receipt already invoiced is not a second billable receipt. See [combined-receipt workflow](https://learn.microsoft.com/en-us/dynamics365/business-central/purchasing-how-to-combine-receipts). Test a wrong-party or already-invoiced selection rather than copying freehand lines that lose the source link.
+
+For a prepayment, set the appropriate posting accounts/number series and customer/vendor/item defaults, create the order, review the calculated deposit and post the prepayment invoice. Post/apply the payment through the appropriate receipt/payment process, then reconcile prepayment deduction on the final invoice. For an assumed 2,000 order with a 25% deposit, the deposit is 500 and the later remaining amount is 1,500 before tax/rounding and other changes. A prepayment credit memo is required before deleting a line whose prepayment was invoiced; do not just reduce its quantity. See [prepayment invoice lifecycle](https://learn.microsoft.com/en-us/dynamics365/business-central/finance-invoice-prepayments). **VERIFY CURRENT:** posting setup, tax, blocking-unpaid-prepayment behavior and correction eligibility. No invoice/payment was posted here.
+
 ### Fixed-asset and inventory operations
 
 Post fixed-asset acquisition, depreciation and disposal with the intended depreciation book, dates and integration. Reconcile FA ledger entries to G/L and explain gain/loss on disposal.
@@ -223,6 +263,16 @@ Inventory receipts and shipments adjust quantity outside normal sales/purchase f
 > **Related item:** Quantity and value are related but not identical timelines. An item ledger entry carries quantity; value entries can arrive or adjust later, so operational availability can be correct while cost remains provisional.
 
 ---
+
+### Prove depreciation and inventory changes through entries
+
+Straight-line allocates the depreciable amount across its configured life; declining-balance front-loads expense using a declining basis. Combined DB/SL methods switch according to their rules, Manual requires deliberate entries and a user-defined method requires the configured depreciation table. For an original full-year paper model with cost 18,000 and no salvage, three-year straight-line gives 6,000 per year; a 30% declining assumption gives 5,400 then 3,780. This is a conceptual comparison, not a prediction for every Business Central day convention. See [depreciation methods](https://learn.microsoft.com/en-us/dynamics365/business-central/fa-depreciation-methods).
+
+To exercise the actual book, verify acquisition, starting date/method/life and G/L integration, run Calculate Depreciation for the chosen book/date/filter, review the proposed journal lines and post, then reconcile FA and G/L entries. A calculation job proposing lines does not itself establish posted depreciation. Test a Manual book and a previously posted period. See [depreciation proposal and posting](https://learn.microsoft.com/en-us/dynamics365/business-central/fa-how-depreciate-amortize).
+
+For a simple location without directed warehouse handling, use an Item Journal positive adjustment for a justified nonpurchase receipt and negative adjustment for a justified nonsales issue. Specify item, date, location, quantity and tracking/cost context; preview/post and inspect item/value/G/L entries. For a physical count, calculate the expected quantity in the Physical Inventory Journal, control movements while counting, enter the observed quantity and review/post only the difference. If expected is 25 and observed 23, the adjustment is −2, not a new receipt of 23. Advanced warehouse locations require their warehouse count/register and item-ledger synchronization path. See [counting and quantity-adjustment workflow](https://learn.microsoft.com/en-us/dynamics365/business-central/inventory-how-count-adjust-reclassify).
+
+For a location transfer, configure locations/routes, create the transfer and choose the supported direct or in-transit mode. Ship then receive for an in-transit transfer; goods in transit are not destination stock yet. For supported direct reclassification, use the Item Reclassification Journal with old/new location, bin or tracking fields and inspect paired entries. Changing classification does not create a sale/purchase. See [transfers and reclassification](https://learn.microsoft.com/en-us/dynamics365/business-central/inventory-how-transfer-between-locations). Test missing destination setup and tracking mismatch; reconcile total company quantity before/after, location quantities, cost and any in-transit remainder. **VERIFY CURRENT:** warehouse/direct-transfer combinations. No journal or transfer was posted here.
 
 ## Worked examples
 
@@ -393,29 +443,6 @@ Use an isolated test company with synthetic data. These are proposed tenant labs
 
 ---
 
-## Places to learn
-
-This is not a complete list and is not meant to be consumed in full. Choose one primary route, build one company from setup through close, and add a second resource only for a measured gap.
-
-| Resource | Access | Estimated time |
-|---|---|---:|
-| [Official MB-800 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-800) | Free | 1–2 hours to map four domains and June change log |
-| [Set up Business Central](https://learn.microsoft.com/en-us/training/paths/set-up-business-central/) | Free | 5 modules; runtime not shown; 12–20 hours with setup/migration/security labs |
-| [Configure financials](https://learn.microsoft.com/en-us/training/paths/configure-financials-business-central/) | Free | 15 modules; runtime not shown; 25–40 hours with posting/reconciliation practice |
-| [Configure sales and purchasing](https://learn.microsoft.com/en-us/training/paths/configure-sales-purchasing-business-central/) | Free | 7 modules; runtime not shown; 12–20 hours with price/inventory setup |
-| [Process sales and purchasing](https://learn.microsoft.com/en-us/training/paths/process-sales-purchasing-business-central/) | Free | 12 modules; runtime not shown; 25–40 hours with full document lifecycles |
-| [Process financial operations](https://learn.microsoft.com/en-us/training/paths/process-financial-operations-business-central/) | Free | 9 modules; runtime not shown; 18–30 hours with close/correction/reconciliation |
-| [MB-800T00-A: Manage business solutions with Microsoft Dynamics 365 Business Central](https://learn.microsoft.com/en-us/training/courses/mb-800t00) | Paid/provider-dependent | 5 days; English |
-| [MicrosoftLearning MB-800 labs](https://github.com/MicrosoftLearning/MB-800-Business-Central-Functional-Consultant) | Free; MIT | 15–30 hours selected; review open issues and current tenant/localization differences |
-| [Free MB-800 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-functional-consultant-associate/practice/assessment?assessment-type=practice&assessmentId=109&practice-assessment-type=certification) | Free | 45–90 minutes plus remediation |
-| [Business Central documentation](https://learn.microsoft.com/en-us/dynamics365/business-central/) | Free | 20–50 hours selected implementation/reference reading |
-| [O’Reilly: Business Central Essentials](https://www.oreilly.com/library/view/microsoft-dynamics-365/9798868822292/) | Subscription/trial | 186-page Apress book by Dr. Gomathi S, January 2026; 2h38 platform reading estimate, not video runtime; broad primer |
-| [Udemy MB-800 by Dr. Gomathi Srinivasan](https://www.udemy.com/course/mb-800-dynamics-365-bc-functional-consultant-exam-training/) | Paid | 14 sections, 36 lectures, 18h43; public listing updated February 2026, gap-check against June inventory/agent changes |
-| [MeasureUp MB-800 practice test](https://www.measureup.com/microsoft-practice-test-mb-800-microsoft-dynamics-365-business-central-functional-consultant.html) | Paid; free demo | 2–5 hours; 132 questions, last updated January 2026, so map against June changes first |
-| [Microsoft Partner Skilling Hub](https://www.skilling-hub.com/en-US) | Partner login required | Use the five-day course pattern for planning; signed-in event start/end times control |
-
-The five official paths show **48 module placements** (5/15/7/12/9); the current public pages do not show runtime. The earlier 43h40 total is withdrawn. Linked units were not exhaustively read; budgeted asset and integration material can be adjacent to the detailed exam bullets. Allow roughly **100–170 hours** for a learner without current Business Central implementation experience to configure, transact, reconcile, correct and remediate. No exact current Pluralsight or Whizlabs MB-800 product was independently verified. Question-bank-only, recalled-content and guaranteed-pass listings were excluded.
-
 ## Useful articles and current documentation
 
 - [Sumit Singh: Inventory Setup in Business Central](https://community.dynamics.com/blogs/post/?postid=7989aea7-627b-f011-b4cc-7c1e5248819c) provides prompts for an inventory-reconciliation worksheet. **Use it selectively:** its placement of Inventory Account (Interim) conflicts with the official setup documented above. Do not copy its account map or generic configuration defaults. Publication date was not independently established.
@@ -438,3 +465,30 @@ For each article, write one requirement, one predicted ledger/document state, on
 ## Source notes
 
 The June 30, 2026 study guide defines exam scope. Microsoft Learn, product documentation and public course labs support behavior but may include adjacent features or localization-dependent steps. Commercial sources are optional supplements and never define the objective contract. All scenarios, labs and checks here are original; no dumps or recalled questions were used.
+
+## Places to learn
+
+This is not a complete list and is not meant to be consumed in full. Choose one primary route, build one company from setup through close, and add a second resource only for a measured gap.
+
+### Focused reading and evidence route
+
+Turn MicrosoftLearning’s [purchase approval workflow lab](https://microsoftlearning.github.io/MB-800-Business-Central-Functional-Consultant/Instructions/Labs/Lab05_Set_up_and_use_a_purchase_approval_workflow.html) into an approval-chain worksheet. Allow about 60–90 minutes to map requester, approver, limit, substitute, event, condition, response, notification and final document state, then predict approve, reject, above-limit and absent-approver outcomes. The range is an editorial estimate for reading and four test traces; tenant configuration takes additional time. **Source discrepancy:** its setup says to leave Approver ID blank, but its check asks each user to have an approver. Resolve the intended chain using current Business Central documentation and your configuration; the sample is not a universal default. The full textual exercise was read; no approval, notification or purchase document was created.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official MB-800 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-800) | Free | 1–2 hours to map four domains and June change log |
+| [Set up Business Central](https://learn.microsoft.com/en-us/training/paths/set-up-business-central/) | Free | 5 modules; runtime not shown; 12–20 hours with setup/migration/security labs |
+| [Configure financials](https://learn.microsoft.com/en-us/training/paths/configure-financials-business-central/) | Free | 15 modules; runtime not shown; 25–40 hours with posting/reconciliation practice |
+| [Configure sales and purchasing](https://learn.microsoft.com/en-us/training/paths/configure-sales-purchasing-business-central/) | Free | 7 modules; runtime not shown; 12–20 hours with price/inventory setup |
+| [Process sales and purchasing](https://learn.microsoft.com/en-us/training/paths/process-sales-purchasing-business-central/) | Free | 12 modules; runtime not shown; 25–40 hours with full document lifecycles |
+| [Process financial operations](https://learn.microsoft.com/en-us/training/paths/process-financial-operations-business-central/) | Free | 9 modules; runtime not shown; 18–30 hours with close/correction/reconciliation |
+| [MB-800T00-A: Manage business solutions with Microsoft Dynamics 365 Business Central](https://learn.microsoft.com/en-us/training/courses/mb-800t00) | Paid/provider-dependent | 5 days; English |
+| [MicrosoftLearning MB-800 labs](https://github.com/MicrosoftLearning/MB-800-Business-Central-Functional-Consultant) | Free; MIT | 15–30 hours selected; review open issues and current tenant/localization differences |
+| [Free MB-800 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-functional-consultant-associate/practice/assessment?assessment-type=practice&assessmentId=109&practice-assessment-type=certification) | Free | 45–90 minutes plus remediation |
+| [Business Central documentation](https://learn.microsoft.com/en-us/dynamics365/business-central/) | Free | 20–50 hours selected implementation/reference reading |
+| [O’Reilly: Business Central Essentials](https://www.oreilly.com/library/view/microsoft-dynamics-365/9798868822292/) | Subscription/trial | 186-page Apress book by Dr. Gomathi S, January 2026; 2h38 platform reading estimate, not video runtime; broad primer |
+| [Udemy MB-800 by Dr. Gomathi Srinivasan](https://www.udemy.com/course/mb-800-dynamics-365-bc-functional-consultant-exam-training/) | Paid | 14 sections, 36 lectures, 18h43; public listing updated February 2026, gap-check against June inventory/agent changes |
+| [MeasureUp MB-800 practice test](https://www.measureup.com/microsoft-practice-test-mb-800-microsoft-dynamics-365-business-central-functional-consultant.html) | Paid; free demo | 2–5 hours; 132 questions, last updated January 2026, so map against June changes first |
+| [Microsoft Partner Skilling Hub](https://www.skilling-hub.com/en-US) | Partner login required | Use the five-day course pattern for planning; signed-in event start/end times control |
+
+The five official paths show **48 module placements** (5/15/7/12/9); the current public pages do not show runtime. The earlier 43h40 total is withdrawn. Linked units were not exhaustively read; budgeted asset and integration material can be adjacent to the detailed exam bullets. Allow roughly **100–170 hours** for a learner without current Business Central implementation experience to configure, transact, reconcile, correct and remediate. No exact current Pluralsight or Whizlabs MB-800 product was independently verified. Question-bank-only, recalled-content and guaranteed-pass listings were excluded.

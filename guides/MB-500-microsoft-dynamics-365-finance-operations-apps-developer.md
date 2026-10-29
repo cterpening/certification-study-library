@@ -6,17 +6,17 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-28
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-28
+upcoming_change_checked: 2026-10-28
 ---
 
 # MB-500 Microsoft Dynamics 365 Finance and Operations Apps Developer Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Checked against the January 30, 2026 official objective baseline and cited public sources on September 28, 2026. See the [coverage record](../docs/SOURCE-VALIDATION.md#mb-500-coverage-record). The [official MB-500 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-500) is authoritative.
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-04.md#mb-500) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mb-500-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-500) is authoritative.
 
 **Current baseline:** Skills measured as of January 30, 2026.<br>
-**Upcoming blueprint change:** None announced as of September 28, 2026.<br>
+**Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
 **Lifecycle:** The [Finance and Operations Apps Developer Associate credential](https://learn.microsoft.com/en-us/credentials/certifications/d365-finance-and-operations-apps-developer-associate/) is active. The exam is 100 minutes, offered in English and Japanese, lists no retirement date, and links a free Practice Assessment. Renewal is every 12 months; the direct practice endpoint returned no substantive body during this review.<br>
 **Platform transition:** Current objectives explicitly include Unified Developer Experience (UDE) environments in Power Platform admin center and the Implementation portal. Treat older LCS/VM-only instructions as context and verify current ownership for each environment action.<br>
 **Official source:** [MB-500 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-500)
@@ -73,9 +73,15 @@ The [February 16 LCS project-creation freeze](https://learn.microsoft.com/en-us/
 
 [Self-service migration](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/migrate-lifecycle-services-environments-power-platform-admin-center) is **public preview** in September 2026: it changes each environment's management plane, not the project or database location. It is one-way for customer-initiated operations; LCS becomes read-only for that environment. Microsoft recommends sandboxes first and not production during preview. Cloud-hosted developer environments and Commerce workloads are unsupported; the prerequisite checker does not detect Commerce usage. Validate the workload separately and prepare unified deployment pipelines before a sandbox migration.
 
+**Migration planning check — VERIFY CURRENT:** The [migration procedure](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/migrate-lifecycle-services-environments-power-platform-admin-center) estimates about 15 minutes of downtime per AOS instance and requires extra maintenance-window allowance. Migration does not return an LCS environment slot; future provisioning uses Power Platform capacity. Model a three-AOS environment as an approximately 45-minute planning estimate plus contingency, not a promised completion time. Validate copy, deployment and integrations in the migrated sandbox before the next migration.
+
 In the [unified admin model](https://learn.microsoft.com/en-us/power-platform/admin/unified-experience/finance-operations-apps-overview), license/capacity and environment type matter. A [UDE](https://learn.microsoft.com/en-us/power-platform/admin/unified-experience/unified-environment-types-and-templates) is a **Sandbox** with developer tooling, intended for one X++ developer with one AOS. It is not the Power Platform Developer environment type, a shared development server or a performance-test environment. USE and UDE cannot be converted into each other after provisioning.
 
 ---
+
+### Search an issue with a reproducible context
+
+Record application/platform version, environment type, failing operation, exact public error and minimal synthetic reproduction before opening Issue Search. Compare the returned issue's affected versions, status, KB/workaround and prerequisites; a matching phrase is only a lead. For an original package-deployment failure, inspect the failed step's logs, identify a dependency/customization versus servicing problem, and validate the proposed repair in the sandbox before rebuilding/promoting the package. See [Issue Search support workflow](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/issue-search-lcs). Keep the issue identifier, source, applied change and regression evidence; do not publish credentials or customer attachments. **VERIFY CURRENT:** portal ownership and support entitlement.
 
 ## 2. Apply developer tools
 
@@ -107,6 +113,10 @@ Tables own persisted business data and behavior; extensions add supported fields
 
 Choose surrogate/natural keys deliberately, enforce relations and indexes aligned with access paths, and specify delete actions and company scope. Adding a mandatory field to a populated table requires default/migration behavior. An entity contract needs public fields, keys, validation, sequencing, change tracking and backward compatibility.
 
+#### Model one common field without merging table identities
+
+For an original pair of custom import staging tables, define a map field ExternalReference. Map InboundOrder.ExternalOrderRef and InboundReturn.SourceRef to that common field, after confirming compatible types and semantics. Keep each table's keys, company scope and validation distinct; the shared shape does not create a database copy or security union. Shared logic can now inspect ExternalReference without assuming that both tables physically use the same field name. Test a missing reference and a row from each source table. Contrast a **map** with a query joining data sources and a view exposing a read shape. The [X++ class-library reference](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-library-objects) describes table/map/view buffers and query-object responsibilities. Build and inspect the actual effective metadata in the developer environment before treating the model as runnable.
+
 ### Classes and extensibility
 
 Create cohesive classes with clear dependencies and transaction ownership. Attributes add framework metadata; modifiers determine visibility/extension behavior. Prefer supported Chain of Command for wrapping extensible methods and call `next` unless the contract explicitly supports replacement. Event handlers subscribe without changing base code; delegates publish intentional extension points.
@@ -127,7 +137,9 @@ X++ includes types, classes, exceptions, loops/conditions and database statement
 
 Use `ttsBegin`/`ttsCommit` for a coherent atomic boundary and handle exceptions without swallowing failure. Avoid long transactions and external calls inside locks. Global functions should have deliberate discoverability and dependency behavior rather than becoming a dumping ground.
 
-Inheritance and abstract classes define stable polymorphic contracts. Query objects and QueryBuild* classes support dynamic sources, joins, ranges and fields; validate generated shape and parameterize ranges. Attribute classes support discovery/registration patterns. SysExtensionSerializer provides supported serialization scenarios; understand versioning and type registration.
+Inheritance reuses and specializes a base-class contract; abstraction exposes the required behavior while leaving a concrete subclass to supply its implementation. In X++, a derived class uses `extends` and can have one superclass. An abstract class cannot be instantiated; a concrete subclass must implement its abstract methods. An overridden instance method keeps the inherited signature, and dispatch follows the actual object even when a variable has the base type. See [X++ inheritance](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-inheritance) and the [abstract modifier](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-syntax).
+
+For an original adjustment-policy design, let an abstract policy require a calculation and let two concrete policies provide distinct rules. For a synthetic base amount of 100, let one policy return a fixed 5 and the other 10 percent (10). Pass each through the same base-typed consumer and predict those distinct results without branching on concrete class names. In a developer environment, implement and test both variants, then confirm that instantiating the abstract base or omitting a required implementation fails compilation. This is an uncompiled design exercise; inheritance is distinct from wrapping an existing method with CoC.  Query objects and QueryBuild* classes support dynamic sources, joins, ranges and fields; validate generated shape and parameterize ranges. Attribute classes support discovery/registration patterns. SysExtensionSerializer supports the [related-table extension framework](https://microsoftlearning.github.io/MB-500-Microsoft-Dynamics-365-Finance-and-Operations-Apps-Developer/Instructions/Labs/Lab%20-%203%20-%20Implement%20the%20SysExtensionSerializer%20framework.html) for eligible base tables, as worked below. Generic JSON serialization is a separate contract.
 
 **SysOperation** separates data contract, service and controller for synchronous/batch operations. Define serialization, validation, retry, batch grouping and idempotency. Workflow separates configurable approval/state from business code; implement document, participant, event and state behavior with resubmit/cancel/recovery. Async and Sandbox frameworks isolate suitable work under their current contracts.
 
@@ -136,6 +148,33 @@ SysTest unit tests need arrange/act/assert, isolated data, deterministic company
 > **Related item:** Unit tests prove small code contracts, SysTest integration tests exercise framework/data behavior, and RSAT/UAT proves business journeys. A healthy release uses layers rather than one enormous end-to-end script.
 
 ---
+
+### Build three small X++ contracts
+
+For control flow, this original proposed static class method accepts synthetic nonnegative amounts, loops over the container and rejects a negative input before returning the total. It performs no database write and has not been compiled:
+
+```xpp
+public static real nonnegativeTotal(container _amounts)
+{
+    real total = 0;
+    for (int i = 1; i <= conLen(_amounts); i++)
+    {
+        real amount = conPeek(_amounts, i);
+        if (amount < 0)
+        {
+            throw Exception::Error;
+        }
+        total += amount;
+    }
+    return total;
+}
+```
+
+Expected cases are an empty container → 0, `[10, 0, 5]` → 15 and a negative value → an error path. Validate input types and add an appropriate label-based diagnostic before real use. Choose a class method for domain-specific behavior; a public static extension method on **Global** becomes available as an unprefixed language function, so use that broad surface only for a suitably general helper. See [X++ language reference](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-language-reference) and [Global extension behavior](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/extensibility/class-extensions).
+
+For a dynamic customer query, create a Query, add the customer data source, add the intended field range with a typed/query-value representation, select required fields, then execute through QueryRun and read its current buffer while iterating. A child data source represents a join; a peer source does not automatically mean that join. Test an empty match and cross-company leakage, and inspect the generated shape before optimizing it. See [query-object model](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-library-objects).
+
+For an attribute, create a nonabstract class derived from SysAttribute, store a literal policy identifier through its constructor and expose a getter. Decorate the intended class/method, then retrieve that metadata with DictClass/DictMethod as applicable. The compiler stores the attribute name and literal arguments; it does not execute the constructor at decoration time. An attribute supplies metadata, not an automatic authorization rule. Test a missing attribute and invalid metadata consumption. See [X++ attribute implementation](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-attribute-classes).
 
 ### Transaction and retry failures to rehearse
 
@@ -148,6 +187,12 @@ SysTest unit tests need arrange/act/assert, isolated data, deterministic company
 [SysTest guidance](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/perf-test/testing-validation) covers unit/component tests and generating test assets from Task recorder. Its older VM/Fleet Management walkthrough is not the current UDE provisioning procedure. Isolate fixture data and test failure/cleanup paths without granting the business user administrator rights.
 
 ---
+
+### Implement a workflow and a linked-table extension deliberately
+
+For an original approval on a custom adjustment, identify the document table/query, status field and submit/cancel entry points; create the appropriate workflow category/type and approval/task elements, implement document and lifecycle handlers, then configure and activate a workflow version. The business code must validate eligibility, submit the record and respond to approval/rejection/cancellation without allowing an invalid direct state change. Test resubmission and cancellation as separate transitions, with a nonadministrator submitter and approver. See [workflow framework training](https://learn.microsoft.com/en-us/training/modules/explore-extensions-framework-finance-operations/workflow-framework). The generated artifacts are a starting point; complete the business-state and security contract before deployment.
+
+**SysExtensionSerializer is not merely a JSON serializer.** The [official serializer lab](https://microsoftlearning.github.io/MB-500-Microsoft-Dynamics-365-Finance-and-Operations-Apps-Developer/Instructions/Labs/Lab%20-%203%20-%20Implement%20the%20SysExtensionSerializer%20framework.html) demonstrates a supported base-table extension using a related custom table, a base-record reference and **SysExtensionSerializerExtensionMap**, then form and data-entity/staging integration. For an original optional compliance-reference requirement, inspect whether the base table supports the framework, design a unique related record and lifecycle relation, map the base record ID, expose only justified fields and verify both form and import/export paths. A value saved in a form is not proof the staging/entity path preserves it. Test no extension row, changed value, base-record deletion and round trip. Follow the linked lab independently rather than copying its protected instructions/code; its VM/Visual Studio setup is historical and must be reconciled with current UDE documentation. No performance improvement is established merely by selecting this framework.
 
 ## 5. Implement reporting
 
@@ -166,6 +211,14 @@ Workspaces combine tiles, lists, KPIs and embedded visuals around a role. Each n
 > **Related item:** Reporting datastore selection is separate from visualization choice. A beautiful report over an unsupported or stale data path is still a poor design.
 
 ---
+
+### Trace a report from source to deployed output
+
+The operational application database serves transactions; **Entity store** stages aggregate measurements in a reporting-optimized store. A DirectQuery report over Entity store can still be stale when the measurement refresh is stale. An exported analytics copy has its own synchronization/security boundary; a data entity is an integration contract rather than a name for every reporting datastore. See [Entity store and refresh boundaries](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store).
+
+For an original paginated adjustment report, select a supported query/RDP path, define parameters/contract and any temporary dataset, build the report design, deploy the report and route the output menu item/controller to that design. Extend a standard dataset through supported table/business-logic extension points when possible. Rebuild/refresh dataset metadata after adding fields, then verify the report called by the app is the deployed custom design. Test an empty company, a denied user and a large parameter range. See [report dataset extension](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/expand-app-suite-report-data-sets). Rendering successfully as administrator is not security validation.
+
+For an original ER payment file, model the business fields, map them to authorized application data and bind a format's elements to that model. Add a validation that rejects a missing bank identifier, select the supported output destination and test structure/control totals before enabling the format in a payment method. Model, mapping and format versions/dependencies must travel together; importing a format alone does not prove the mapping is correct. See [ER components](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/er-overview-components). The same separation supports incoming-file integration through its documented updatable mapping targets. **VERIFY CURRENT:** report deployment tools, supported stores and ER destinations.
 
 ## 6. Integrate and manage data solutions
 
@@ -189,6 +242,14 @@ Change tracking supports deltas but needs a stable key/watermark and deletion st
 
 For the [data-management package API](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/data-management-api), capture the execution ID and query execution status/errors. An accepted request does not prove success, and `PartiallySucceeded` needs reconciliation. The documentation explicitly warns against calling `ImportFromPackage()` on parallel client threads; use its supported data-management parallel-processing rules. Reconcile source, staging and target by stable keys and business totals before deciding what to retry.
 
+#### Work outbound calls and entity shapes separately
+
+For a proposed outbound shipping-rate lookup, generate/use the appropriate supported REST or SOAP client contract, configure endpoint/authentication and secret references, serialize only approved fields, then classify response status or SOAP faults before deserializing. Test timeout, malformed response, denied credentials and rate change. Keep a slow external call outside database locks; record a correlation ID and bound retry only where the remote operation is safe to repeat. The [external-service procedure](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/consume-external-web-service) uses a referenced class library/service proxy and a fictional SOAP URL; adapt the contract rather than invoking that sample URL. A WSDL-generated proxy does not remove authorization, certificate or error-handling work. See also [integration-pattern guidance](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/integration-overview); no endpoint was invoked here.
+
+A composite entity packages related parent/child entities such as an order and its lines through Data management XML import/export; it is not a synchronous OData entity or a directly programmable X++ composite API. Build the component entities/relations and composite root, build/synchronize as required and test the data-project mapping/sequence. See [composite entity implementation](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/develop-composite-data-entities). An aggregate entity represents grouped analytical results, such as sales by customer/month; it is not a bulk-import synonym for that parent/child package. For an original test, a missing parent must produce an explainable reject, while the analytical output must reconcile to source totals at the chosen grain.
+
+For **SQL change tracking** in Data management, select the published BYOD entity or Data entities list and enable primary-table, entire-entity or supported custom-query tracking according to which changes must trigger export. Exported rows contain the entity fields, not just changed fields. Non-BYOD exports do not track deletions; BYOD deletion tracking is limited to the root source. See [SQL change-tracking configuration](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-change-track). **Row version tracking** is a separate mechanism with table/entity metadata, configuration and build-time eligibility rules; enabling one does not enable the other. See [row-version prerequisites](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/rowversion-change-track). Test an initial full load, a parent edit, a related-table edit and a deletion before claiming complete incremental synchronization. **VERIFY CURRENT:** mechanism, eligible tables and consuming feature.
+
 ### Connect the ecosystem
 
 Dual-write synchronizes mapped data between finance/operations and Dataverse with ownership, filters, ordering and error handling; virtual entities/tables expose F&O data without copying it for supported scenarios. Choose based on ownership, latency, supported operations, offline/reporting needs and failure tolerance. Power Apps/Power Automate should use least-privilege connectors and avoid chatty row-by-row designs.
@@ -203,11 +264,19 @@ Excel uses OData/entity contracts. Azure services can broker, transform or proce
 
 ---
 
+#### Configure a vault reference and test failure
+
+For the supported certificate-storage client, provision the vault item and permitted application identity, then create the Finance Key Vault parameters with vault URL/client authentication and a named certificate secret reference. Use the documented Validate action to check reference and certificate validity. The client can reference a specific version; unversioned selection has documented expiration-based behavior and caching, so rotation needs an explicit validation/cache plan. See [Finance Key Vault client setup](https://learn.microsoft.com/en-us/dynamics365/finance/localizations/global/setting-up-azure-key-vault-client). Do not generalize this certificate-client configuration to every Azure connector's identity model.
+
+An original sandbox test should distinguish a denied vault identity, wrong secret name, expired certificate and a valid rotated version. Record identifiers and validation outcomes without exporting secrets. A successful vault validation does not prove the downstream service accepts that certificate. **VERIFY CURRENT:** authentication method, certificate cache and rotation behavior. No vault, secret or application was created here.
+
 ## 7. Implement security and optimize performance
 
 Roles collect duties; duties collect privileges; privileges grant entry-point permissions to menu items, service operations, entities or other securable objects. Extend the smallest appropriate artifact. Segregation of duties detects risky combinations. XDS policies restrict supported table access through constrained tables/queries. Test forms, reports, batch and integration paths independently; a successful form restriction is not evidence that an entity endpoint inherits it. Do not rely on UI visibility.
 
-Performance work begins with measurement. Table/form caching reduces repeated reads but introduces scope/staleness decisions. Global cache/singletons require key, company/user isolation, invalidation and memory discipline. InMemory and TempDB tables have different scale/join/lifecycle behavior. Prefer set-based work when semantics permit; avoid N+1 queries, unnecessary fields/joins, broad ranges and row-by-row updates.
+Performance work begins with measurement. Table/form caching reduces repeated reads but introduces scope/staleness decisions. Global cache/singletons require key, company/user isolation, invalidation and memory discipline. Choose temporary-table storage from the workload. `InMemory` is an indexed temporary dataset outside SQL Server; it can suit a small working set, while joining it is not a server-side SQL join. `TempDB` stores temporary data in SQL Server and supports joins to regular tables, indexes and TTS transaction scope. See [temporary-table choices](https://learn.microsoft.com/en-us/training/modules/apply-basic-performance-optimization-finance-operations/3-table).
+
+For an original reconciliation preview, create a temporary AOT table with company, reference and amount fields, choose its `TableType`, and add an index for the measured lookup. Compare a small local working set with a larger dataset joined to application records. Populate and query each using identical filters/totals; verify the buffer instance reaches the consumer. Microsoft documents `setTmpData` for InMemory and `linkPhysicalTableInstance` for TempDB, so substituting one linking mechanism for the other is a failure case. See [temporary-table construction](https://learn.microsoft.com/en-us/training/modules/apply-basic-performance-optimization-finance-operations/temporary-tables). Record company isolation, cleanup and measured cost; neither type is durable business storage or automatically faster. No table was built or benchmarked here.  Prefer set-based work when semantics permit; avoid N+1 queries, unnecessary fields/joins, broad ranges and row-by-row updates.
 
 Keep variable scope and transactions narrow. Design indexes for selective predicates, joins and ordering while accounting for write cost. Analyze optimistic/pessimistic concurrency, lock order, retry and batch parallelism. Never use `firstOnly` or a cache to mask nondeterministic business logic.
 
@@ -224,6 +293,14 @@ For supported table paths, [multiple XDS policies intersect](https://learn.micro
 [Set-based statements may fall back to record-by-record execution](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-data/xpp-data-perf) depending on table/method/logging behavior. Trace the actual workload. The [update documentation](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-data/xpp-update) warns that `doUpdate()` bypasses update logic, handlers and CoC; it is not a harmless performance replacement. Preserve required behavior before optimizing call count.
 
 ---
+
+### Distinguish cache lifetime from asynchronous execution
+
+Implement a singleton as a class that controls access to its instance through an accessor; define the intended runtime/session lifetime rather than assuming a global distributed singleton. For an original currency-lookup cache, choose a namespace plus company/currency/date keys, check **find**, compute on miss and **insert**, and remove/clear the appropriate cached entry after a configuration change. The [SysGlobalObjectCache reference](https://learn.microsoft.com/en-us/dotnet/api/microsoft.dynamics.ax.xpp.sysglobalobjectcache?view=dyn-finops-dotnet) exposes these operations but does not establish a universal cross-process consistency guarantee. Test two companies, an authorization-sensitive lookup and an invalidated rate; never let a cached record bypass current access checks. **VERIFY CURRENT:** effective cache/session lifetime in the deployed runtime.
+
+The [SysOperationSandbox training](https://learn.microsoft.com/en-us/training/modules/explore-extensions-framework-finance-operations/sysoperationsandbox-framework) describes a separate asynchronous session for time-consuming client-initiated work, keeping the UI responsive through a waiting/cancel experience. Its static business entry and serializable input/output must not rely on the caller's live form buffer. For instance-state patterns, pack/unpack must preserve the required state. This is distinct from a scheduled SysOperation batch and from a Power Platform sandbox environment.
+
+For an original read-only reconciliation preview, pass company/date/filter values, calculate in the worker and return the result, then validate that the form still represents the same request before displaying it. Test cancellation, timeout and a form closed while work runs. A Cancel control is not a universal database rollback contract; do not infer that an already committed external effect disappears. Use the Global/FormRun async APIs rather than the deprecated xApplication runAsync path; see the [async API migration guidance](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/deprecated-apis). No asynchronous or sandbox task was run here.
 
 ## Integrated scenarios
 
@@ -393,9 +470,28 @@ Original conceptual prompts, not recalled exam items. Answer first, then compare
 
 ---
 
+## Final readiness checklist
+
+- [ ] I can map cloud/on-prem/ecosystem responsibilities and use current PPAC/LCS/Implementation portal ownership.
+- [ ] I can develop, debug, version, build, test, package, promote and roll back a model reproducibly.
+- [ ] I can create/extend AOT UI/data/class elements using upgrade-safe mechanisms.
+- [ ] I can write transactional X++, dynamic queries and SysOperation/workflow/serialization code with layered tests.
+- [ ] I can choose and secure SSRS, Power BI, Excel, ER and workspace reporting.
+- [ ] I can design APIs/entities/jobs/events/dual-write/virtual-entity integrations with retries and reconciliation.
+- [ ] I can implement least-privilege roles/duties/privileges/XDS and tune from trace evidence.
+- [ ] I rechecked the official blueprint, lifecycle, Practice Assessment and portal transitions before scheduling.
+
+## Source notes
+
+The January 30, 2026 study guide defines scope. Microsoft Learn, developer docs and MIT course labs support behavior but may include adjacent or transitioning portal content. Commercial material is supplemental and does not define objectives. All questions and labs here are original; no dumps or recalled items were used.
+
 ## Places to learn
 
 This is not a complete list and is not meant to be consumed in full. Choose one primary route, build and deploy a secure extension end to end, and add another resource only for a measured gap.
+
+### Focused reading and evidence route
+
+Read MicrosoftLearning’s [Trace Parser lab](https://microsoftlearning.github.io/MB-500-Microsoft-Dynamics-365-Finance-and-Operations-Apps-Developer/Instructions/Labs/Lab%20-%201%20-%20Work%20with%20trace%20and%20import%20it%20to%20Trace%20Parser.html) to connect a slow business action to call-tree, X++ and SQL evidence. Allow about 60–90 minutes for a capture-plan worksheet: business action, user/session, start/stop boundaries, expensive call versus inclusive duration, candidate query and a repeatable before/after comparison. That editorial estimate covers reading, one diagnostic hypothesis and its falsification; VM/tool setup and execution add time. The February 9, 2026 change record still references a development VM and earlier platform setup. **VERIFY CURRENT:** validate your development topology and tracing prerequisites; exclude certificate bypass and do not apply local manifest edits as generic UDE steps. Use synthetic data if capturing SQL parameters. The complete textual lab was read, with no trace collection or performance claim.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
@@ -416,18 +512,3 @@ This is not a complete list and is not meant to be consumed in full. Choose one 
 | [Microsoft Partner Skilling Hub](https://www.skilling-hub.com/en-US) | Partner login required | Use five-day course pattern; verify exact signed-in event times |
 
 The six paths contain **35 module placements and 34 distinct modules**; the migration-preparation module appears in both Connect and Migrate. Current public pages do not show aggregate runtimes, so the earlier 43h02 sum is withdrawn. Study-hour ranges above are editorial estimates. Reconcile LCS-era lessons with current UDE/PPAC instructions. Allow roughly **120–200 hours** for a developer new to F&O to complete a primary route, build/deploy the labs and remediate assessment gaps. No exact Pluralsight or Whizlabs MB-500 product was established in the earlier review; neither catalog was comprehensively searched again. Partner events require login verification and the practice endpoint exposed no question content. Bulk question-bank and guaranteed-pass listings were excluded.
-
-## Final readiness checklist
-
-- [ ] I can map cloud/on-prem/ecosystem responsibilities and use current PPAC/LCS/Implementation portal ownership.
-- [ ] I can develop, debug, version, build, test, package, promote and roll back a model reproducibly.
-- [ ] I can create/extend AOT UI/data/class elements using upgrade-safe mechanisms.
-- [ ] I can write transactional X++, dynamic queries and SysOperation/workflow/serialization code with layered tests.
-- [ ] I can choose and secure SSRS, Power BI, Excel, ER and workspace reporting.
-- [ ] I can design APIs/entities/jobs/events/dual-write/virtual-entity integrations with retries and reconciliation.
-- [ ] I can implement least-privilege roles/duties/privileges/XDS and tune from trace evidence.
-- [ ] I rechecked the official blueprint, lifecycle, Practice Assessment and portal transitions before scheduling.
-
-## Source notes
-
-The January 30, 2026 study guide defines scope. Microsoft Learn, developer docs and MIT course labs support behavior but may include adjacent or transitioning portal content. Commercial material is supplemental and does not define objectives. All questions and labs here are original; no dumps or recalled items were used.

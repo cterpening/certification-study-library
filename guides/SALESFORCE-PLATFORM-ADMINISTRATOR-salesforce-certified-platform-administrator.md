@@ -6,9 +6,9 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-29
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-29
 ---
 
 # Salesforce Certified Platform Administrator Study Guide
@@ -426,6 +426,10 @@ These original prompts and answer notes support explanation, not recall of live 
 39. **What annual action keeps the credential active?** Complete the credential-specific annual maintenance badge by the deadline in the credential record. Do not substitute an unrelated badge.
 
 40. **Which source will you recheck for weights, current release, delivery, price, and maintenance before booking?** Recheck the canonical prep unit, Help exam guide, actual booking experience and maintenance record. Treat the retained Summer 25 label and unreadable Academy metadata as unresolved.
+### October 29, 2026 current-source update
+
+The current official Trailhead prep unit assigns Agentforce 8% and retains the other seven weights shown above; it is a five-minute orientation that links three scenario/flashcard modules in the [Administrator exam-prep trail](https://trailhead.salesforce.com/content/learn/trails/administrator-certification-prep) (listed total about 1 hr 20 min). Keep that current learning outline separate from the Help exam-guide page, which still shows a Summer ’25 label; its current logistics/version remain a source discrepancy to verify at booking. For current administrative-security context, Salesforce's [Winter ’27 overview](https://developer.salesforce.com/blogs/2026/10/developers-guide-to-the-winter-27-release) and [security release notes](https://help.salesforce.com/s/articleView?id=release-notes.rn_security_enhancements_upcoming.htm&language=en_US&release=262&type=5) describe MFA and connected-app/API changes with org, license, and effective-date conditions. Check the exact release note and org configuration before applying; product updates are not by themselves exam-objective changes.
+
 ## Places to learn
 
 This is not a complete list. Choose material that fills a demonstrated gap, then practice in an authorized org. Public listing metadata does not establish lesson quality or complete current blueprint coverage. Estimates explicitly marked “planning” are ours.

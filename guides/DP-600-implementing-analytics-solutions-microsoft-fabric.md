@@ -6,18 +6,19 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-27
-upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-27
+last_verified: 2026-10-28
+upcoming_change_status: none-announced
+upcoming_change_checked: 2026-10-28
 ---
 
 # DP-600 Implementing Analytics Solutions Using Microsoft Fabric Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The complete guide and all 41 published October objectives were reviewed on September 27, 2026 while preserving the July baseline. See the [deep-review report](../docs/research/2026-09-27-dp-600-deep-review.md). It may still contain errors or become outdated. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-600-coverage-record). The [official DP-600 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-600) is authoritative.
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-01.md#dp-600) and the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-600-coverage-record). Known source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-600) is authoritative.
 
-**Current baseline:** Skills measured as of July 21, 2026<br>
-**Upcoming blueprint change (checked September 27, 2026):** The English blueprint changes October 19, 2026. The extracted change is capitalization of Visual query editor. Domain weights and the remaining extracted objectives are unchanged; no additional weighted domain is implied. The current baseline below remains dated separately. See the [official revision](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-600).<br>
+**Current baseline:** Skills measured as of October 19, 2026<br>
+**Blueprint reconciliation (October 28, 2026):** The October 19 English outline is now accepted. The revision capitalizes Visual query editor differently; domain weights and the other extracted objectives are unchanged. Earlier July bytes and dated reviews remain archived. No later revision is announced on the checked official page.<br>
 **Official source:** [DP-600 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-600)
+**Practice routing — VERIFY CURRENT (October 28, 2026):** The [credential page](https://learn.microsoft.com/en-us/credentials/certifications/fabric-analytics-engineer-associate/) routes Practice Assessment to AI Skills Navigator with sign-in. No assessment was launched or its question content inspected. Recheck the vendor launch route before relying on an older direct link below; a practice result does not establish coverage of another exam code.<br>
 
 ## How to use this guide
 
@@ -153,6 +154,57 @@ For SQL, practice joins, CTEs, window functions, grouping, null semantics, views
 
 > **Related item:** Power Query/M shapes data before model evaluation; DAX calculates over the semantic model at query/refresh time depending on object type. A transformation and a measure can return the same sample result but have different refresh, storage and security behavior.
 
+#### Worked example — one fixture across four query routes
+
+Use this original four-row fixture independently in the chosen store and semantic model. These are expected arithmetic results, not observed Fabric or DAX outputs.
+
+| Region | Quantity | UnitPrice | Status |
+|---|---:|---:|---|
+| East | 2 | 10 | Posted |
+| East | 3 | 10 | Draft |
+| West | 4 | 5 | Posted |
+| West | 1 | 10 | Posted |
+
+In [Dataflow Gen2](https://learn.microsoft.com/en-us/fabric/data-factory/tutorial-end-to-end-dataflow), add a typed Revenue custom column with `[Quantity] * [UnitPrice]`. Merge a two-row RegionOwner lookup with unique Region keys; retain unmatched regions for review. Verify that four input rows still produce four enriched rows. A duplicate lookup key can multiply revenue before any aggregate runs.
+
+For the [Visual query editor](https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-visual-query), load the prepared table, select Region/Revenue/Status, filter Status to Posted, and group by Region with Sum of Revenue. Inspect the generated SQL and the actual result instead of assuming the canvas preview covers the full data.
+
+```sql
+SELECT Region, SUM(Quantity * UnitPrice) AS Revenue
+FROM dbo.StudySales
+WHERE Status = 'Posted'
+GROUP BY Region
+ORDER BY Region;
+```
+
+```kusto
+StudySales
+| where Status == "Posted"
+| extend Revenue = Quantity * UnitPrice
+| summarize Revenue = sum(Revenue) by Region
+| order by Region asc
+```
+
+For a semantic model containing the same StudySales table, this proposed [DAX summary query](https://learn.microsoft.com/en-us/dax/summarizecolumns-function-dax) applies the filter inside the grouping expression:
+
+```dax
+EVALUATE
+SUMMARIZECOLUMNS(
+    StudySales[Region],
+    FILTER(StudySales, StudySales[Status] = "Posted"),
+    "Revenue", SUMX(StudySales, StudySales[Quantity] * StudySales[UnitPrice])
+)
+ORDER BY StudySales[Region]
+```
+
+All four routes should produce **East = 20, West = 30** for these inputs. The Draft row adds 30 if accidentally included; dropping the West/1/10 row produces 20 rather than 30 there. SQL-store freshness, KQL ingestion and semantic-model framing/permissions remain separate. Python and SQLite arithmetic checks were performed locally for the fixture; no Fabric, KQL, DAX, visual-editor or Power Query engine was executed.
+
+**Question:** Why can adding a duplicate lookup row change totals?
+
+**Answer:** A nonunique merge can multiply fact rows before grouping; reconcile cardinality and grain, not just fluent chart labels.
+
+[Primary reference 1](https://learn.microsoft.com/en-us/fabric/data-warehouse/visual-query-editor) · [Primary reference 2](https://learn.microsoft.com/en-us/kusto/query/summarize-operator?view=microsoft-fabric) · [Primary reference 3](https://learn.microsoft.com/en-us/dax/calculate-function-dax) · [Primary reference 4](https://learn.microsoft.com/en-us/sql/t-sql/queries/select-group-by-transact-sql?view=sql-server-ver17)
+
 ---
 
 ## 3. Implement and manage semantic models
@@ -186,6 +238,12 @@ Automatic updates are disabled during a coordinated load. The model was framed a
 The [Direct Lake execution guide](https://learn.microsoft.com/en-us/fabric/fundamentals/direct-lake-how-it-works) separates framing from loading columns into memory. For SQL-mode diagnostics, inspect actual fallback evidence, including `TABLETRAITS()` and its fallback information, instead of assuming that the configured name proves the execution mode.
 
 For Import incremental refresh, use the [configuration procedure](https://learn.microsoft.com/en-us/power-bi/connect-data/incremental-refresh-configure): include equality on only one of `RangeStart` and `RangeEnd` to avoid overlapping partitions. The first service refresh loads the historical store window. Change detection does not detect hard-deleted rows; plan a supported soft-delete or partition-reprocessing approach. See the [refresh overview](https://learn.microsoft.com/en-us/power-bi/connect-data/incremental-refresh-overview) for supported real-time/hybrid behavior.
+
+**Confirmed — VERIFY CURRENT (October 28, 2026).** [Direct Lake automatic updates](https://learn.microsoft.com/en-us/fabric/fundamentals/direct-lake-how-it-works) can suspend after a nonrecoverable refresh failure. Repair the cause and complete a successful on-demand refresh to resume them. Repeatedly refreshing the report page does not demonstrate that semantic-model framing resumed.
+
+**Proposed practice extension — not executed:** Add a synthetic incident: Delta commits continue after 08:05, reports query successfully, and model automatic updates are suspended. Record source commit, last successful frame, refresh error, repair and successful on-demand refresh. For SQL-endpoint Direct Lake, inspect fallback separately because fallback queries can see newer source data than the retained frame.
+
+**Answer checkpoint:** Why might one successful report query conceal stale Direct Lake data? Query execution, framing and automatic-update health are different evidence.
 
 ### DAX and reusable calculation design
 
@@ -331,9 +389,29 @@ Compare KQL ingestion, Eventhouse OneLake availability, model framing and report
 43. **Does incremental change detection discover hard deletes?** No; plan soft-delete handling or deliberate partition reprocessing.
 44. **Does an ADBC tenant setting prove a gateway refresh used ADBC?** No; validate the gateway and cloud execution paths separately.
 
+## Final readiness checklist
+
+- I can select lakehouse, warehouse, eventhouse, shortcut/OneLake integration and semantic-model modes from requirements.
+- I can transform at an explicit grain, reconcile quality and query correctly with SQL, KQL and DAX.
+- I can layer workspace, item, row/column/object/file and semantic-model controls and prove every access path.
+- I can model star schemas, relationships, bridges, DAX and reusable calculations without ambiguous filters.
+- I can configure and explain Import, DirectQuery, Direct Lake, composite, large-model and incremental-refresh behavior.
+- I can diagnose visual, DAX, engine, source and capacity performance with evidence.
+- I can version, deploy, inspect impact, validate, govern and roll back analytics assets.
+- I can prepare governed semantics for AI without treating an ontology or generated answer as proof of correctness.
+- I can explain additive OneLake grants, unenforced Warehouse keys, model framing, cache evidence and the cloud/gateway driver distinction.
+
 ## Places to learn
 
-This is a curated starting point, **not a complete list**, and it is not meant to be consumed in full. Choose one primary route, build a Fabric solution, and add only resources that close measured gaps. Reconcile every older source with the July 21, 2026 blueprint, especially Direct Lake on OneLake versus SQL analytics endpoint, OneLake security, Real-Time hub, AI-ready data, Fabric IQ and current endorsement/lifecycle behavior.
+### October 28 learning route and evidence task
+
+For focused practice, use [Secure data access in Microsoft Fabric](https://microsoftlearning.github.io/mslearn-fabric/Instructions/Labs/19-secure-data-access.html) (**45 published minutes**) and [Prepare a semantic model for AI](https://microsoftlearning.github.io/mslearn-fabric/Instructions/Labs/30-prepare-model-ai.html) (**30 published minutes**). The security exercise assumes two personas and paid/trial capacity; the AI exercise explicitly requires paid capacity and excludes trial Copilot. **VERIFY CURRENT:** licensing, Desktop prerequisites, Q&A/AI dependencies and UI before execution. Heini Ilmarinen and Stephanie Bruno’s [April 23 Reactor orientation](https://developer.microsoft.com/en-us/reactor/events/26973/) has a one-hour agenda; its recording was not watched and predates the October blueprint. Choose it only if a PL-300-to-DP-600 learning map helps.
+
+**Original comparison sheet (about 30–45 minutes beyond the published lab estimates, editorial estimate):** For a permission test and an AI-answer test, record actor, endpoint, source/model version, expected rows or measure, observed result and evidence status. A one-account walkthrough must mark the second-persona denial untested. For AI, use at least one ambiguous business term and one question the model cannot answer.
+
+**Answer checkpoint:** Schema simplification and model approval improve discoverability/context; they do not by themselves prove access isolation or answer correctness. Retain a separately observed result for each.
+
+This is a curated starting point, **not a complete list**, and it is not meant to be consumed in full. Choose one primary route, build a Fabric solution, and add only resources that close measured gaps. Reconcile every older source with the October 19, 2026 blueprint, especially Direct Lake on OneLake versus SQL analytics endpoint, OneLake security, Real-Time hub, AI-ready data, Fabric IQ and current endorsement/lifecycle behavior.
 
 The September 1 review recorded five official paths: [analytics data stores](https://learn.microsoft.com/en-us/training/paths/explore-analytics-data-stores/) (4h34), [transform analytics data](https://learn.microsoft.com/en-us/training/paths/design-transform-analytics-data/) (5h14), [semantic models](https://learn.microsoft.com/en-us/training/paths/design-manage-semantic-models-fabric/) (6h21), [AI-ready analytics data](https://learn.microsoft.com/en-us/training/paths/prepare-ai-ready-analytics-data/) (3h50), and [security/governance](https://learn.microsoft.com/en-us/training/paths/secure-govern-analytics-data/) (3h21), totaling **23 hours 20 minutes**. September 27 checks verified the public path/module pages, but those pages did not expose a fresh total; treat these runtimes as historical planning metadata.
 
@@ -355,16 +433,3 @@ No exact current Whizlabs or MeasureUp DP-600 product was independently verified
 
 - [Deep dive into Direct Lake on OneLake](https://community.fabric.microsoft.com/blog/fbc_pbiupdatesblog/deep-dive-into-direct-lake-on-onelake-and-creating-direct-lake-semantic-models-i/5174203), **DataZoe, Microsoft Power BI Updates Blog, April 21, 2025**. Allow 20–30 minutes. Useful for separating live service-model editing from report editing and comparing Direct Lake variants. Its initial-preview, shortcut, security and web-authoring restrictions are dated; use current development/security documentation above. The available public article text was reviewed through web search; direct automated retrieval of the migrated page was blocked. Exercise: record the model object, report object, source binding and tested rollback before a migration.
 - [Role-playing dimensions revisited](https://blog.crossjoin.co.uk/2026/04/05/role-playing-dimensions-in-fabric-direct-lake-semantic-models-revisited/), **Chris Webb, April 5, 2026**. Allow 10–15 minutes plus a design exercise comparing sender/recipient dimensions with two active relationships. The author acknowledged a web-editor bug in the April 9 discussion. Treat the TMDL workaround as version-specific investigation material, not a verified deployment recipe; prefer the supported relationship design and test both Desktop and the service. The public article/discussion was read; screenshots, model edits and tenant behavior were not independently validated.
-
-## Final readiness checklist
-
-- I can select lakehouse, warehouse, eventhouse, shortcut/OneLake integration and semantic-model modes from requirements.
-- I can transform at an explicit grain, reconcile quality and query correctly with SQL, KQL and DAX.
-- I can layer workspace, item, row/column/object/file and semantic-model controls and prove every access path.
-- I can model star schemas, relationships, bridges, DAX and reusable calculations without ambiguous filters.
-- I can configure and explain Import, DirectQuery, Direct Lake, composite, large-model and incremental-refresh behavior.
-- I can diagnose visual, DAX, engine, source and capacity performance with evidence.
-- I can version, deploy, inspect impact, validate, govern and roll back analytics assets.
-- I can prepare governed semantics for AI without treating an ontology or generated answer as proof of correctness.
-- I can explain additive OneLake grants, unenforced Warehouse keys, model framing, cache evidence and the cloud/gateway driver distinction.
-

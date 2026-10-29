@@ -6,20 +6,24 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-28
 ---
 
 # CKS Certified Kubernetes Security Specialist Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 29, 2026. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#cks-coverage-record). The [official CKS page](https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on October 28, 2026. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#cks-coverage-record). The [official CKS page](https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/) is authoritative.
 
 **Current baseline:** Kubernetes v1.35 and the six weighted domains on the live Linux Foundation CKS page: 15% / 15% / 10% / 20% / 20% / 20%<br>
 **Source discrepancy:** The [CNCF CKS page](https://www.cncf.io/training/certification/cks/) still shows the earlier 10% / 15% / 15% first-three weights, and the public repository's latest named [CKS curriculum PDF is v1.34](https://github.com/cncf/curriculum/blob/master/CKS_Curriculum%20v1.34.pdf). The actual three-page PDF was read on September 29: despite its filename, its 26 competencies and weights match the live Linux Foundation outline, apart from minor wording/case differences. The overview page remains inconsistent; the live exam page governs.<br>
 **Lifecycle watch:** Kubernetes [v1.37 was released August 26, 2026](https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/), while the live CKS page still names v1.35 on September 29. Linux Foundation says alignment follows by approximately 4–8 weeks, so recheck between September 23 and October 21 and immediately before practice or scheduling; this is a watch window, not an announced switch date.<br>
 **Official delivery snapshot:** Online, remotely proctored, performance-based command-line exam; two hours; certification valid for two years; 12-month eligibility, one retake, and two 36-hour Killer.sh simulator activations; the public certification page now lists 17 simulator questions per attempt as of September 29, 2026 (separate from the live exam)<br>
 **Required prerequisite:** You must previously have passed CKA. The current Linux Foundation/CNCF wording says the CKA does **not** have to remain active.
+
+## Current guide watch — October 28, 2026
+
+The official page now lists Kubernetes v1.35 as the exam environment and retains the requirement to pass CKA before attempting CKS. Under CARE, passing or recertifying CKS has also extended/reinstated CKA since June 18, 2026. This renewal relationship does not remove the CKA prerequisite for sitting CKS. [CKS official exam page](https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/) and [CARE update](https://training.linuxfoundation.org/blog/expanding-care-passing-cks-can-now-extend-your-cka-certification/)
 
 ## How to use this guide
 

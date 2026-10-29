@@ -6,14 +6,14 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-29
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-29
 ---
 
 # WDA-41-01 Certified Associate Web Developer Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The public syllabus, exam status, links, technical references, and exam-integrity boundaries were reviewed September 29, 2026. The complete current indexed HTML syllabus was manually compared with all 40 retained objective subjects after direct fetching and automated monitoring failed. This same-context AI review includes original executed examples; independent human review remains pending. This guide contains original explanations and questions, not exam items. Recheck the [official WDA page](https://jsinstitute.org/wda-certification) and [WDA-41-01 syllabus](https://jsinstitute.org/wda-exam-syllabus) before scheduling.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The public syllabus, exam status, links, technical references, and exam-integrity boundaries were reviewed October 29, 2026. The complete official syllabus and certification page were opened in a browser after automated extraction failed and manually compared with all retained objective subjects. Original browser examples remain from the earlier local review. This same-context AI review includes original executed examples; independent human review remains pending. This guide contains original explanations and questions, not exam items. Recheck the [official WDA page](https://jsinstitute.org/wda-certification) and [WDA-41-01 syllabus](https://jsinstitute.org/wda-exam-syllabus) before scheduling.
 
 **Current baseline:** WDA-41-01, active; syllabus last updated September 16, 2025<br>
 **Upcoming blueprint change:** no replacement identified in the inspected current credential, HTML syllabus and certification overview; this is not a claim that every announcement channel or booking system was audited<br>
@@ -833,6 +833,10 @@ These ten broader learner activities remain **proposed**. The bounded examples a
 - [ ] I completed the ten labs and retained before/after evidence and regression notes.
 - [ ] I rechecked the official WDA-41-01 page, especially its duration ambiguity.
 
+### October 29, 2026 current-source update
+
+The current WDA-41-01 syllabus page still says ACTIVE and retains its September 16, 2025 five-domain map. The certification page advertises a future JavaScript/Node.js direction without identifying an exam code or date; treat it as unannounced roadmap language, not a replacement or scheduled retirement. **Related item:** the current [WHATWG popover standard](https://html.spec.whatwg.org/multipage/popover.html) distinguishes `auto`, `hint`, and `manual` popovers from modal `<dialog>`. Add keyboard/focus/dismissal checks to interaction testing and validate the target browsers; this is current HTML context, not a change to WDA’s published objectives.
+
 ## Places to learn
 
 Public course/index comparison is not course completion. The official CSS landing lists 40 hours, nine modules and 45+ lessons; the HTML landing lists 25 hours and six modules. The public Pluralsight listing reports 31 hours, ten courses and seven labs, but subscriber interiors were not reviewed. Tutorial directories were read as indexes, not every linked lesson. Except for explicitly listed provider totals, hours below are author planning budgets. This is not a complete list, and it is not meant to be consumed in full. Pick one primary path, add focused documentation where useful, and spend at least as much time building, inspecting, measuring, and testing as watching. Commercial resources are supplementary; reconcile them with the current official syllabus.
@@ -841,8 +845,8 @@ Public course/index comparison is not course completion. The official CSS landin
 |---|---|---:|
 | [Official WDA-41-01 syllabus](https://jsinstitute.org/wda-exam-syllabus) | Free canonical objectives and weights | 2–3 hours to map and recheck |
 | [Official WDA certification page](https://jsinstitute.org/wda-certification) | Free version, format, price, delivery, and policy links; duration needs confirmation | 30–60 minutes before purchase |
-| [OpenEDG Web Dev 102: CSS](https://jsinstitute.org/css-essentials) | Public landing lists free Core / USD49 Pro and nine modules; prose places 45+ labs/diploma in Pro; repeated text-only tier lists remain ambiguous | 40 hours listed |
-| [OpenEDG Web Dev 101: HTML](https://jsinstitute.org/html-essentials) | Free core / paid Pro; prerequisite foundation rather than WDA substitute | 25 hours listed if HTML needs rebuilding |
+| [OpenEDG Web Dev 102: CSS (WD102)](https://www.edube.org/study/css-essentials) | Core is free; Full Course is USD 49 and adds interactive work/labs, quizzes, projects/final assessment, diploma, and a 20% WDA exam discount per the public Edube page | Provider estimate: 40 hours; 9 modules and 45+ lessons listed; no lesson interior reviewed |
+| [OpenEDG Web Dev 101: HTML (WD101)](https://edube.org/study/html-essentials) | Optional free Core / paid Full Course; prerequisite foundation rather than WDA substitute | Provider estimate: about 25 hours if HTML needs rebuilding |
 | [Cisco Networking Academy CSS Essentials](https://www.netacad.com/courses/css-essentials) | Partner link returned a 14-character application shell; access, account terms and lesson contents unverified | Author budget: about 40 hours; verify live listing |
 | [MDN Learn CSS](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics) and [CSS layout](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout) | Free current standards-oriented lessons | 20–30 hours with projects |
 | [web.dev Learn CSS](https://web.dev/learn/css/) and [Responsive Design](https://web.dev/learn/design/) | Free modern modules and exercises | 15–25 hours for WDA-relevant portions |

@@ -6,14 +6,14 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-04
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-04
+upcoming_change_checked: 2026-10-28
 ---
 
 # 1Z0-171 Oracle AI Database SQL Associate Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide maps Oracle University's current public learning-path scope checked September 4, 2026. It is unofficial and may contain errors. The [official Oracle AI Database SQL Associate learning path](https://mylearn.oracle.com/ou/learning-path/earn-the-oracle-ai-database-sql-associate-credential/140075) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide maps Oracle University's current public learning-path scope checked October 28, 2026. It is unofficial and may contain errors. The [official Oracle AI Database SQL Associate learning path](https://mylearn.oracle.com/ou/learning-path/earn-the-oracle-ai-database-sql-associate-credential/140075) is authoritative.
 
 **Assessment contract exposed by the current path:** Oracle AI Database SQL Associate, exam 1Z0-171, 120 minutes.<br>
 **Published scope:** relational and Oracle AI Database architecture; retrieval, filtering, and sorting; functions and aggregation; joins, subqueries, set operators, and hierarchical queries; tables, views, indexes, sequences, constraints, DML, transactions, multitable inserts, `MERGE`, and flashback queries; users, privileges, and roles; SQL Developer and SQL*Plus; selected 26ai SQL enhancements.<br>
@@ -86,6 +86,10 @@ The current path highlights `SELECT` without `FROM`, SQL `BOOLEAN`, enhanced `DE
 1. **Sales analysis:** Join customers/orders/items, handle missing dimensions, create monthly summaries with subtotals, and prove row counts.
 2. **Schema release:** Create constrained tables, views, indexes, and sequences; load with multitable inserts/`MERGE`; test rollback and invalid rows.
 3. **Delegated reporting:** Create a minimum reporting role, expose a view, test direct/role grants, and audit a denied change attempt.
+
+## Current product context — separate from exam objectives
+
+> **Related item:** Oracle’s October 20, 2026 Oracle AI Database 26ai New Features guide includes SQL additions such as `GROUP BY ALL`, direct joins in `UPDATE`/`DELETE`, and `INSERT INTO SET` syntax. Confirm the server release update and compatibility settings before using them. They are examples of current product evolution, not a claim that each appears on the associate exam.
 
 ## Hands-on labs
 

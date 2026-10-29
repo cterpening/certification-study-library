@@ -6,19 +6,23 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-28
+last_verified: 2026-10-28
 upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-28
+upcoming_change_checked: 2026-10-28
 ---
 
 # DOP-C02 AWS Certified DevOps Engineer - Professional Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed on September 28, 2026, including all 140 detailed knowledge/skill bullets. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dop-c02-coverage-record). The [official DOP-C02 exam guide](https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02.html) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed on October 28, 2026, including all 140 detailed knowledge/skill bullets. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dop-c02-coverage-record). The [official DOP-C02 exam guide](https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02.html) is authoritative.
 
 **Current baseline:** Current six-domain DOP-C02 AWS Certified DevOps Engineer - Professional guide; 65 scored plus 10 unscored questions<br>
 **Upcoming delivery change:** AWS says the Korean language version retires after December 31, 2026. This is a language-specific delivery change; the DOP-C02 blueprint remains the current study baseline. Checked September 28, 2026. See the [deep-review report](../docs/research/2026-09-28-dop-c02-deep-review.md).<br>
 **Important freshness boundary:** DOP-C02 remains current, but AWS delivery, observability, governance, container, and security services evolve inside an unchanged exam code. Validate features, regions, quotas, integrations, pricing, and learning metadata. Do not confuse older DOP-C01 domains or legacy service workflows with the current contract.<br>
 **Official source:** [AWS Certified DevOps Engineer - Professional exam guide](https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02.html)
+
+## Current guide watch — October 28, 2026
+
+- AWS added October training on AI compute and EKS efficiency. Its EKS Auto Mode change log records October 12 `advancedCompute` settings and an October 1 change to the default consolidation policy for new EKS 1.37 node pools. These are current operational examples under evolving infrastructure/automation domains; they do not change the DOP-C02 blueprint. The Korean-language exam retires after December 31, 2026; other listed language versions are not included in that notice. See [EKS Auto Mode updates](https://docs.aws.amazon.com/eks/latest/userguide/auto-change.html) and the [AWS training update](https://aws.amazon.com/blogs/training-and-certification/).
 
 ## How to use this guide
 

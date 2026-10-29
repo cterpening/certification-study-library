@@ -1,25 +1,29 @@
 ---
 exam_code: TERRAFORM-ASSOCIATE-004
 vendor_id: hashicorp
-official_blueprint: https://developer.hashicorp.com/certifications/infrastructure-automation
+official_blueprint: https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-review-004
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-28
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-28
+upcoming_change_checked: 2026-10-28
 ---
 
 # HashiCorp Certified: Terraform Associate (004) Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed on September 28, 2026 across all 37 detailed objectives; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#terraform-associate-004-coverage-record). The [official HashiCorp certification page](https://developer.hashicorp.com/certifications/infrastructure-automation) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed on October 28, 2026 across all 37 detailed objectives; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#terraform-associate-004-coverage-record). The [official Terraform Associate 004 content list](https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-review-004) is authoritative.
 
-**Current baseline:** Terraform Associate (004), testing Terraform 1.12; verified September 28, 2026<br>
-**Upcoming blueprint change:** No future update or retirement announcement was found on the official certification page as of September 28, 2026.<br>
-**Official source:** [HashiCorp infrastructure automation certifications and Terraform Associate objectives](https://developer.hashicorp.com/certifications/infrastructure-automation)
+**Current baseline:** Terraform Associate (004), testing Terraform 1.12; verified October 28, 2026<br>
+**Upcoming blueprint change:** No future update or retirement announcement was found on the official certification page as of October 28, 2026.<br>
+**Official source:** [HashiCorp infrastructure automation certifications and Terraform Associate objectives](https://developer.hashicorp.com/certifications/terraform-associate)
 
 HashiCorp presents the credential as **Terraform Associate (004)** rather than a short exam code. This library uses `TERRAFORM-ASSOCIATE-004` as a stable catalog identifier.
+
+## Living-guide watch — October 28, 2026
+
+HashiCorp still lists Terraform 1.12 and all 37 detailed Associate 004 objectives; the official credential page is now the canonical exam contract and the 004 content list remains the objective-to-resource map. An HCP Terraform changelog note adds organization-scoped Azure DevOps PAT support, helping teams replace globally scoped PATs before Microsoft retires them on December 1, 2026. This is HCP workflow context, not a new exam objective. See the [current credential page](https://developer.hashicorp.com/certifications/terraform-associate), [004 content list](https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-review-004), and [HCP Terraform changelog](https://developer.hashicorp.com/terraform/cloud-docs/changelog).
 
 ## How to use this guide
 
@@ -621,7 +625,7 @@ If you use the live service, **VERIFY CURRENT** plan availability and destroy al
 
 ## Primary references
 
-- [Official Terraform Associate (004) certification and objectives](https://developer.hashicorp.com/certifications/infrastructure-automation)
+- [Official Terraform Associate (004) certification and objectives](https://developer.hashicorp.com/certifications/terraform-associate)
 - [Official objective-to-documentation content list](https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-review-004)
 - [Terraform product introduction](https://developer.hashicorp.com/terraform/intro)
 - [Terraform core workflow](https://developer.hashicorp.com/terraform/intro/core-workflow)

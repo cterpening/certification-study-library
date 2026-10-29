@@ -6,19 +6,23 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-28
+last_verified: 2026-10-28
 upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-28
+upcoming_change_checked: 2026-10-28
 ---
 
 # SCS-C03 AWS Certified Security - Specialty Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed on September 28, 2026, including all 70 detailed skills. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#scs-c03-coverage-record). The [official SCS-C03 exam guide](https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03.html) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed on October 28, 2026, including all 70 detailed skills. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#scs-c03-coverage-record). The [official SCS-C03 exam guide](https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03.html) is authoritative.
 
 **Current baseline:** SCS-C03 version 1.0, published March 26, 2026; six domains; 50 scored plus 15 unscored questions<br>
 **Upcoming delivery change:** Simplified Chinese, Spanish (Latin America) and Portuguese (Brazil) delivery retires after December 31, 2026. This does not retire the overall SCS-C03 certification. Checked September 28, 2026; see the [deep-review report](../docs/research/2026-09-28-scs-c03-deep-review.md)<br>
 **Important freshness boundary:** SCS-C03 replaced SCS-C02 on December 2, 2025. Older courses can still teach useful AWS security concepts, but must be gap-checked against AWS's official [C02-to-C03 comparison](https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03-appendix-b.html).<br>
 **Official source:** [AWS Certified Security - Specialty exam guide](https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03.html)
+
+## Current guide watch — October 28, 2026
+
+The current SCS-C03 guide is version 1.0, published March 26, 2026. AWS now lists SCS-C03 as the active exam and describes six domains; its current guide includes updated security work for AI/ML, data protection and response. Follow the C03 objective map in this guide rather than older C02 books or notes. [AWS SCS-C03 exam guide](https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03.html)
 
 ## How to use this guide
 

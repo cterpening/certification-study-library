@@ -6,14 +6,14 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-28
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-28
+upcoming_change_checked: 2026-10-28
 ---
 
 # Databricks Certified Associate Developer for Apache Spark Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 28, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#databricks-associate-developer-for-apache-spark-coverage-record). The [official certification page](https://www.databricks.com/learn/certification/apache-spark-developer-associate) and its linked exam guide are authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on October 28, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#databricks-associate-developer-for-apache-spark-coverage-record). The [official certification page](https://www.databricks.com/learn/certification/apache-spark-developer-associate) and its linked exam guide are authoritative.
 
 **Library identifier:** `DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK`; Databricks does not publish a short exam code on the official page checked.<br>
 **Current baseline:** Detailed official guide for the live version as of October 30, 2025; live seven-domain weighted page checked September 28, 2026.<br>
@@ -21,6 +21,10 @@ upcoming_change_checked: 2026-09-28
 **Lifecycle status:** Active; valid for two years, with the currently live exam required for recertification. The earlier review recorded Databricks staff confirmation that the [previous Apache Spark 3.0 credential retired in 2025](https://community.databricks.com/t5/certifications/databricks-certified-associate-developer-for-apache-spark-3-0/m-p/118717/highlight/true); this guide targets the replacement certification, not a renewal or conversion claim. That community page blocked automated access on September 28; the current official page and linked guide establish the active exam baseline.<br>
 **Assessment:** 45 scored multiple-choice questions, 90 minutes, English, online or test-center delivery, no test aids—including API documentation—according to the detailed guide.<br>
 **Prerequisite:** None required. The official guide highly recommends related training and six months of hands-on Apache Spark experience. Basic Python, SQL, schemas/files, distributed-data concepts, and command-line/application troubleshooting are practical prerequisites.
+
+## Current guide watch — October 28, 2026
+
+- Databricks' Academy catalog lists a September 7 course update to Apache Spark 4 with notebook-only lectures and Python examples. The public exam page still lists seven weighted domains, including Spark Connect and Pandas API on Spark; the October 2025 exam guide remains the exam contract. Use the new course as product practice, then verify any version-specific API against the official exam guide and its task wording. The exam language is Python. See the [current Academy course listing](https://customer-academy.databricks.com/learn/courses/3788/introduction-to-apache-spark) and [official certification page](https://www.databricks.com/learn/certification/apache-spark-developer-associate).
 
 ## How to use this guide
 

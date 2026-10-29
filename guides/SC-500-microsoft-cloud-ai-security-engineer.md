@@ -5,20 +5,20 @@ official_blueprint: https://learn.microsoft.com/en-us/credentials/certifications
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: source-validated
-last_verified: 2026-09-28
+review_status: review-required
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-28
+upcoming_change_checked: 2026-10-28
 ---
 
 # SC-500 Microsoft Cloud and AI Security Engineer Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 28, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sc-500-coverage-record). The [official SC-500 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-500) is authoritative.
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-04.md#sc-500) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sc-500-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-500) is authoritative.
 
 **Current baseline:** The official study-guide page was last updated May 13, 2026; Microsoft publishes no separate skills-effective date on that page.<br>
 **Exam state:** Active and no longer labeled beta; the credential page lists no retirement date.<br>
 **Transition:** AZ-500 retired on August 31, 2026. SC-500 is its active successor and adds substantial AI, agent, Microsoft 365, and modern posture content; an AZ-500-only resource is not complete SC-500 preparation. Microsoft documented the transition in its [May 2026 announcement](https://learn.microsoft.com/en-us/partner-center/announcements/2026-may#keep-skilling-on-track-as-az500-transitions-to-sc500).<br>
-**Upcoming blueprint change:** None announced on the official study guide as of September 28, 2026.<br>
+**Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
 **Practice Assessment:** Not currently available. Microsoft says one is usually published within eight weeks after an exam leaves beta and becomes generally available. **VERIFY CURRENT** on the credential page.<br>
 **Official source:** [SC-500 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-500)
 
@@ -319,6 +319,12 @@ Query Microsoft Purview Audit from the Defender XDR experience with the correct 
 
 > **Related item:** Collection is a product decision and a detection dependency. Record why each event source exists, which use cases depend on it, expected daily volume, parser/schema owner, health signal, retention class, and removal test.
 
+### Worked ingestion path: direct Windows events versus WEF
+
+For a disposable Windows source, install the appropriate Content Hub solution and open its connector. Confirm workspace and deployment permissions, select or create a DCR, associate the intended Azure VM or Arc-enabled machine, choose the event set or a tested XPath filter, and select the destination workspace. With [Windows Security Events via AMA](https://learn.microsoft.com/en-us/azure/sentinel/connect-services-windows-based), trace a harmless known sign-in event into `SecurityEvent` and inspect its computer, event ID and timestamps. A DCR existing without the intended machine association does not prove collection.
+
+For [Windows Event Forwarding](https://learn.microsoft.com/en-us/azure/sentinel/windows-security-event-id-reference), first prove WEC is receiving the subscribed events locally, then configure AMA/DCR on the collector and verify `WindowsEvent` ingestion. Do not expect an unchanged analytics rule querying `SecurityEvent` to match records held only in `WindowsEvent`. Adapt its query or use an appropriate parser, then test a known source event through the detection. Common, Minimal, All and Custom sets differ; Minimal is not a full audit trail, and All here is not every Windows log. Preserve source event identity and compare source/ingested counts before evaluating detection coverage. **Answer check:** a healthy collector with no incident can be a table/query mismatch rather than event loss. **VERIFY CURRENT:** connector/portal support, table schemas and permissions. No collector or analytics rule was deployed in this review.
+
 ### Operate Microsoft Security Copilot with the same rigor as other privileged tooling
 
 Security Copilot can use organizational security data and plugins to help analysts investigate, summarize, script, and act. Configure workspace ownership, capacity, data location, retention/diagnostic expectations, sharing, and permitted workflows. Separate Security Copilot roles from permissions in the connected Microsoft products: a user cannot legitimately retrieve source data that their underlying product role does not allow merely because they can prompt Copilot.
@@ -342,7 +348,10 @@ The [Defender for Cloud release notes](https://learn.microsoft.com/en-us/azure/d
 | July 31, 2026 | Legacy grouped recommendations removed; individual recommendations replace them | Check queries, reporting, and exemptions instead of expecting old grouped records. |
 | August 6, 2026 | AWS/GCP overprovisioned-identity assessments no longer include unused-action lists | Obtain permission-use evidence from the cloud provider; do not infer a permission is unused because a field disappeared. |
 | August 21, 2026 | Detailed CVE properties move to `microsoft.security/cvedetails` in Azure Resource Graph | Review query joins/schema before concluding vulnerability details are absent. |
-| October 27, 2026, announced | Foundational CSPM becomes opt-in for new Azure subscriptions | Add explicit onboarding checks. Existing subscriptions and AWS/GCP are outside this change. The foundational plan remains free. |
+| October 28, 2026 source recheck | The current release-note body no longer includes the earlier October 27 Foundational CSPM opt-in announcement | **Unconfirmed — validation needed:** recheck actual onboarding and current Microsoft guidance. An omitted announcement does not prove either rollout or cancellation. |
+| October 20, 2026, public preview | Cloud security plan management in the Defender portal for Azure commercial environments | The notice describes Defender-owned configuration, Azure view-only configuration and DWU-based billing for migrated subscriptions; verify the actual migration state before changing plans. |
+| October 5, 2026, GA notice | KSPM recommendations move from running-container scope to workload-controller scope | Reconcile changed recommendation populations and Secure Score impact before interpreting a count change as remediation. |
+| November 1, 2026, announced | Defender for Servers billing classification and identification change | **VERIFY CURRENT:** distinguish Plan 1 desktop-device treatment from Plan 1/2 server-count identification; billing classification alone does not establish supported OS or licensing eligibility. |
 | December 14, 2026, announced | The grouped vulnerability-assessment-solution recommendation is scheduled for removal | Use individual coverage recommendations and verify automation before the date. |
 | August 16, 2027, announced | Classic Defender for SQL VA/ATP APIs retire | Inventory dependent scripts and plan migration; this does not mean SQL threat protection ends. |
 
@@ -531,7 +540,7 @@ These 48 original questions include answers for self-review; they are not recall
 | 44 | Are image/audio tokens scanned by the cited AI threat plan? | No. Its documented scanning support is text tokens on supported models/services. |
 | 45 | Is Sentinel data-lake onboarding a reversible per-workspace toggle? | No. Same-region connected workspaces are onboarded together; offboarding requires support. Review CMK and query-access limits first. |
 | 46 | Does Security Copilot Contributor grant Sentinel data access? | No. Source-service permissions such as the appropriate Sentinel workspace role are separately required. |
-| 47 | What changes for new Azure subscriptions on October 27, 2026? | The announced Foundational CSPM default becomes opt-in; existing subscriptions and AWS/GCP are unaffected. |
+| 47 | Does the omitted October 27 Foundational CSPM announcement prove a current opt-in change? | No. The current release-note body no longer confirms that announcement; recheck Microsoft guidance and actual onboarding. Omission proves neither rollout nor cancellation. |
 | 48 | Does deleting an exposed secret from an issue finish incident response? | No. Revoke/rotate it, assess historical use and effective permissions, and verify dependent applications and recovery controls. |
 
 ## Final readiness checklist
@@ -556,6 +565,10 @@ These 48 original questions include answers for self-review; they are not recall
 ## Places to learn
 
 This is a curated starting point, **not a complete list**. Do not try to consume every item. Pick the format and depth that work for you, use the official blueprint as the coverage checklist, and spend at least as much effort on implementation and negative testing as on passive watching. Provider runtimes and catalogs change; estimates below use public listings checked September 28, 2026 and include notes where exact current duration was unavailable.
+
+### Focused reading and evidence route
+
+Read [enable protection](https://learn.microsoft.com/en-us/training/modules/enable-protection-copilot-studio-agents/3-enable-protection-microsoft-defender) and [review protection outputs](https://learn.microsoft.com/en-us/training/modules/enable-protection-copilot-studio-agents/4-review-ai-agent-protection-outputs): published estimates total 12 minutes. Then allow about 45–60 minutes for a handoff/evidence worksheet assigning the Defender URL, Power Platform configuration and matching App ID to their owners. Distinguish the proxy app from an agent’s own identity, and predict evidence for a mismatched ID, missing connector, no suspicious activity and a fresh session. Keep inventory, alert flow and hunting results as separate checks; a connected indicator or logged event alone is insufficient proof of prevention. The added range covers four failure cases, not tenant setup. **VERIFY CURRENT:** product prerequisites, UI, query schema and detection behavior; training examples are not guaranteed thresholds. Both unit texts were read; no tenant change or query ran.
 
 The twelve current official paths are [secure Entra access](https://learn.microsoft.com/en-us/training/paths/secure-access-resources-entra/), [Key Vault security](https://learn.microsoft.com/en-us/training/paths/configure-key-vault-security/), [security governance and compliance](https://learn.microsoft.com/en-us/training/paths/security-governance-compliance/), [Storage security](https://learn.microsoft.com/en-us/training/paths/implement-azure-storage-security/), [Azure SQL security](https://learn.microsoft.com/en-us/training/paths/implement-azure-sql-database-security/), [network security controls](https://learn.microsoft.com/en-us/training/paths/implement-network-security-controls-azure/), [AI security](https://learn.microsoft.com/en-us/training/paths/implement-ai-security/), [server and VM security](https://learn.microsoft.com/en-us/training/paths/server-vm-security/), [application-platform security](https://learn.microsoft.com/en-us/training/paths/secure-application-platform-services/), [Defender for Cloud posture](https://learn.microsoft.com/en-us/training/paths/manage-security-posture-defender-cloud/), [Sentinel activity and event collection](https://learn.microsoft.com/en-us/training/paths/implement-activity-event-collection-sentinel/), and [Security Copilot deployment and operation](https://learn.microsoft.com/en-us/training/paths/deploy-operate-security-copilot/). The fetched overviews expose **63 module placements** (3/4/6/4/3/4/9/7/6/6/8/3). Module titles/descriptions were reviewed, not every linked unit. Current runtimes are absent, so the earlier 30h08 sum is withdrawn.
 

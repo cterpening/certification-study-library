@@ -6,19 +6,23 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-28
 ---
 
 # JSE-40-01 Certified Entry-Level JavaScript Programmer Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked September 29, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#jse-40-01-coverage-record). The [official JSE exam page and scope](https://jsinstitute.org/jse-certification) are authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked October 28, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#jse-40-01-coverage-record). The [official JSE exam page and scope](https://jsinstitute.org/jse-certification) are authoritative.
 
 **CURRENT BLUEPRINT — current baseline:** JSE-40-01, active; six-block public scope<br>
 **VERIFY CURRENT — upcoming blueprint change:** none announced on the official exam or certification-catalog pages when checked<br>
 **VERIFY CURRENT — official delivery snapshot:** 30 single- and multiple-select questions; 40-minute exam plus 5-minute tutorial/NDA; 70% passing score; TestNow; English and Spanish<br>
-**VERIFY CURRENT — purchase snapshot:** no formal prerequisite; exam from USD 69, exam-plus-retake from USD 86, and exam-plus-retake-plus-practice from USD 95 when checked; standalone official practice was USD 29<br>
+**VERIFY CURRENT — purchase snapshot:** no formal prerequisite; exam from USD 69, exam-plus-retake from USD 86, and exam-plus-retake-plus-practice from USD 95 when checked; the issuer overview lists a USD 29 practice kit, but its direct store link returned HTTP 404 on October 28; purchase availability is unverified<br>
+
+## Refresh check — October 28, 2026
+
+JSE-40-01 remains active. The current issuer page lists 30 single- and multiple-select questions, a 40-minute exam plus a five-minute tutorial/NDA, a 70% pass mark, and free JavaScript Essentials 1 and 2 learning routes; an official practice test is separately priced. The page’s associated-certification row contains an apparent unrelated Python label, already called out below; it does not replace the JavaScript syllabus. [JSE certification page and scope](https://jsinstitute.org/jse-certification).
 
 ## How to use this guide
 
@@ -47,7 +51,7 @@ The scope explicitly includes browser dialog functions and asynchronous timers, 
 | 5. Functions | 21% | Use calls/returns/scope, first-class functions, recursion, callbacks, timers, and arrows |
 | 6. Errors, Exceptions, Debugging, and Troubleshooting | 12% | Classify failures, handle/throw exceptions, and debug reproducibly |
 
-The canonical scope has **30 listed skill bullets**, grouped **3/5/5/5/7/5** under its six blocks; the subsequent certification-holder profile is supporting prose rather than extra scope bullets. The main official scope does not display weights. The percentages above come from the provider's JSE-40-01 Practice Test Kit page, which says its content is organized to those six blocks. Treat them as a study-allocation signal, not proof of individual item counts or scoring values.
+The canonical scope has **30 listed skill bullets**, grouped **3/5/5/5/7/5** under its six blocks; the subsequent certification-holder profile is supporting prose rather than extra scope bullets. The main official scope does not display weights. A previously indexed OpenEDG Practice Test Kit page listed the weights shown here, but its direct product URL returned HTTP 404 on October 28, 2026. Treat those percentages as historical study-allocation signals, not proof of current item counts or scoring values.
 
 The [deep-review record](../docs/research/2026-09-29-jse-40-01-deep-review.md) separates actual execution from proposed activities. The original core workbook passed 114 checks in Chrome 154.0.8037.58 and Node.js 24.18.1; browser scenarios passed 109 additional checks, including 19 real dialog flows handled by automation. Actual Chrome debugger protocol work inspected and changed a paused local variable. No installation, paid lesson completion, account action or human review is claimed. Use a fresh page for each standalone example so bindings and timers from earlier examples do not interfere.
 
@@ -715,18 +719,18 @@ This is not a complete list, and it is not meant to be consumed in full. Pick on
 |---|---|---:|
 | [Official JSE exam page and scope](https://jsinstitute.org/jse-certification) | Free official blueprint | 1–2 hours to map and recheck |
 | [JS Institute TestNow policies](https://jsinstitute.org/test-now-testing-policies) | Free official policy | 20–40 minutes before scheduling |
-| [Official JSE-40-01 Practice Test Kit](https://ums.edube.org/products/0-jsi-jse-4001-pt) | Paid official practice; USD 29 when checked | 3–6 hours across attempts and review |
+| [JSE certification page](https://jsinstitute.org/jse-certification) | Free issuer overview lists a $29 practice kit; its direct OpenEDG Store link returned HTTP 404 on October 28, 2026 | Purchase availability and current practice hours are unverified; use the free JavaScript Essentials courses for now |
 | [OpenEDG JavaScript Essentials 1](https://jsinstitute.org/javascript-essentials-1) | Free account; public six-module listing read, lessons not entered | 40 hours listed |
 | [Cisco Networking Academy JavaScript Essentials 1](https://www.netacad.com/courses/javascript-essentials-1) | Free account; only application shell retrieved | About 40 hours is a planning reference from the aligned course; partner duration unverified |
 | [MDN Dynamic Scripting with JavaScript](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting) | Free; module index and selected separate reference pages read | 15–25 hours is an author estimate; DOM/network topics exceed this scope |
 | [Microsoft Beginner's Series to JavaScript](https://learn.microsoft.com/en-us/shows/beginners-series-to-javascript/) | Free Node.js series; current page does not expose episode count/runtime | Prior 51-part claim not reverified; 4–6 hours is an author estimate |
-| [Pluralsight Professional JavaScript path](https://www.pluralsight.com/paths/javascript-2022) | Subscription; current public listing: 28 courses/38 labs/85 hours | Fundamentals 6h08m + Debugging 1h35m = 7h43m; selected guided labs add 3h24m |
+| [Pluralsight Professional JavaScript path](https://www.pluralsight.com/paths/javascript-2022) | Subscription; current public listing: 28 courses/38 labs/84 hours | Fundamentals 6h08m + Debugging 1h35m = 7h43m; selected guided labs add 3h24m |
 | [O'Reilly JavaScript: The Definitive Guide, 7th Edition](https://www.oreilly.com/library/view/javascript-the-definitive/9781491952016/) | Subscription; HTTP 403; prior 21h15m not reverified | Select early language/debugging chapters; 8–12 hours is an author estimate |
 | [Udemy Complete JavaScript Course by Jonas Schmedtmann](https://www.udemy.com/course/the-complete-javascript-course/) | Paid marketplace; HTTP 403; prior 71h10m not reverified | Select fundamentals/debugging; 12–18 hours is an author estimate |
 | [freeCodeCamp Learn JavaScript — Full Course for Beginners](https://www.youtube.com/watch?v=PkZNo7MFNFg) | Free; title/shell only, no playback/transcript review | Prior approximately 3h27m not reverified; add coding time |
 
 **VERIFY CURRENT — source limits:** Canonical exam, course and policy pages were read via the public web reader after direct requests timed out. The objective monitor failed its direct comparison; snapshots were retained after manual review. The exam page has an apparent copy error labeling the associated JSA credential as a Python data-analyst certification; it does not change JSE scope. The policy opening says entry-level exams default to non-proctored delivery, while its later generic delivery paragraph calls online proctoring the global default. Verify the applicable mode before booking. Failed attempts currently have a seven-day retake wait; account and booking screens were not inspected.
 
-The official practice product describes multiple launches but the current captured page gives no exact count. Its 12-month voucher redemption validity is separate from an exam attempt, which the practice-only product does not include. Paid practice questions were not accessed. The [Microsoft supporting repository](https://github.com/microsoft/beginners-intro-javascript-node) was archived June 15, 2026; its README assumes experience with another language and uses Node. That context matters when choosing it as a beginner supplement. Pluralsight metadata came from its headline and selected novice/entry-level listings, not paid lessons; the guided variables/data, scope, and control-flow/collections labs list 100 + 40 + 64 = 204 minutes (3h24m). No lab was entered or video watched. A source landing page is not proof of complete lesson quality or exact exam coverage.
+The issuer advertises a $29 official practice kit, but its linked OpenEDG Store product returned HTTP 404 on October 28, 2026. Availability, voucher validity, and practice access could not be confirmed; use the free JavaScript Essentials courses until the issuer link works. Paid practice questions were not accessed. The [Microsoft supporting repository](https://github.com/microsoft/beginners-intro-javascript-node) was archived June 15, 2026; its README assumes experience with another language and uses Node. That context matters when choosing it as a beginner supplement. Pluralsight metadata came from its headline and selected novice/entry-level listings, not paid lessons; the guided variables/data, scope, and control-flow/collections labs list 100 + 40 + 64 = 204 minutes (3h24m). No lab was entered or video watched. A source landing page is not proof of complete lesson quality or exact exam coverage.
 
-No exact current MeasureUp or Whizlabs JSE-40-01 product was verified. The OpenEDG practice kit explicitly identifies the active version; avoid third-party practice that does not state its blueprint and provenance.
+No exact current MeasureUp or Whizlabs JSE-40-01 product was verified. The indexed OpenEDG practice-kit page names JSE-40-01, but its current link is unavailable; avoid third-party practice that does not state its blueprint and provenance.

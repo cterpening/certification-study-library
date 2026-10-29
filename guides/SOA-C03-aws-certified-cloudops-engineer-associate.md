@@ -6,14 +6,14 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-28
+last_verified: 2026-10-28
 upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-28
+upcoming_change_checked: 2026-10-28
 ---
 
 # SOA-C03 AWS Certified CloudOps Engineer - Associate Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed on September 28, 2026, including all 53 numbered skills. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#soa-c03-coverage-record). The [official SOA-C03 exam guide](https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/sysops-administrator-associate-03.html) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed on October 28, 2026, including all 53 numbered skills. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#soa-c03-coverage-record). The [official SOA-C03 exam guide](https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/sysops-administrator-associate-03.html) is authoritative.
 
 **Current baseline:** SOA-C03 revision 1.1 published June 1, 2026; five domains; 50 scored plus 15 unscored questions<br>
 **Upcoming delivery change:** AWS says the Simplified Chinese and Korean language versions retire after November 19, 2026. This is a language-specific delivery change; the SOA-C03 blueprint remains the current study baseline. Rechecked September 28, 2026; no additional overall exam retirement was found. See the [deep-review report](../docs/research/2026-09-28-soa-c03-deep-review.md).<br>
@@ -21,6 +21,10 @@ upcoming_change_checked: 2026-09-28
 **Official source:** [AWS Certified CloudOps Engineer - Associate exam guide](https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/sysops-administrator-associate-03.html)
 
 The [revision history](https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/soa-03-revisions.html) dates the AI monitoring, agent and S3 Files additions to June 1, 2026. A course carrying the SOA-C03 title can still predate these changes.
+
+## Current guide watch — October 28, 2026
+
+The official revision history lists revision 1.1, published June 1, 2026. The CloudOps exam continues to emphasize containers, multi-account and multi-Region operations, automation and infrastructure as code; these are in the C03 blueprint, not inferred from newer AWS service releases. Keep product examples versioned and confirm the in-scope list in the live guide. [AWS SOA-C03 revision history](https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/soa-03-revisions.html)
 
 ## How to use this guide
 

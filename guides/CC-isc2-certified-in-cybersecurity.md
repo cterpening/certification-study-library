@@ -6,9 +6,9 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-28
 ---
 
 # ISC2 Certified in Cybersecurity (CC) Study Guide
@@ -27,6 +27,10 @@ upcoming_change_checked: 2026-09-29
 The [CAT policy](https://www.isc2.org/certifications/computerized-adaptive-testing) says finalized answers cannot be revisited and breaks consume exam time. Twenty-five pretest items are included in the minimum exam and cannot be distinguished by candidates. Exam length alone does not identify pass or fail, and 700/1000 is not a raw 70% answer target. The public outline's Chinese window text contains an impossible April 31 date; use actual booking availability rather than copying that calendar.
 
 **PRACTICAL DEPTH:** The original workbook, scenarios and answers below teach control reasoning. They are not recalled exam items. Only the workbook was executed; infrastructure labs and independent human review remain pending.
+
+## Current guide watch — October 28, 2026
+
+The new ISC2 CC outline took effect September 1, 2026. It retains five domains but changes weights to Security Principles 24%, Security Governance 17.3%, IAM 20%, Networking and Cloud Security 21.3%, and Security Operations and Incident Response 17.3%. Foundational AI risks are threaded into the outline; use the September 2026 outline and avoid older 2023 maps. [ISC2 CC outline](https://www.isc2.org/certifications/cc/cc-certification-exam-outline) and [ISC2 AI exam guidance](https://www.isc2.org/insights/2026/09/updated-isc2-ai-guidance-published)
 
 ## How to use this guide
 

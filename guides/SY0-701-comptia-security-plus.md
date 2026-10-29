@@ -6,14 +6,14 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-29
 upcoming_change_status: retirement-announced
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-29
 ---
 
 # SY0-701 CompTIA Security+ (V7) Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 29, 2026. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sy0-701-coverage-record). The [official Security+ page](https://www.comptia.org/en-us/certifications/security/v7/) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on October 29, 2026. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sy0-701-coverage-record). The [official Security+ page](https://www.comptia.org/en-us/certifications/security/v7/) is authoritative.
 
 **Current baseline:** Security+ V7, exam SY0-701; launched November 7, 2023<br>
 **Scheduled retirement — verify before booking:** CompTIA lists June 11, 2027 for the English exam and August 13, 2027 for Japanese, Portuguese, Spanish, and Thai. CompTIA now publishes the replacement as [Security+ V8, SY0-801](https://www.comptia.org/en-us/certifications/security/v8/), with launch expected November 17, 2026. Checked September 29, 2026. V7 remains available; the V8 launch does not itself retire V7.<br>
@@ -542,6 +542,10 @@ Map older material line by line to V7. Rebuild around the current five-domain we
 
 > **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
 
+### October 29, 2026 current-source update
+
+The current official CompTIA V7 snapshot still identifies SY0-701 and records English retirement on June 11, 2027, with Japanese, Portuguese, Spanish, and Thai delivery retiring August 13, 2027. Keep the active V7 map tied to its official page; no V8 effective date or replacement objectives are used here. **Related item:** NIST’s [SP 800-63-4 implementation hub](https://pages.nist.gov/800-63-4/) was announced available October 6. It links the 63A, 63B, and 63C volumes, but its FAQ and conformance criteria still say “Coming Soon” on this check. Use the relevant NIST volume for identity context; do not treat the hub as a CompTIA requirement or a certification/conformance test.
+
 ## Places to learn
 
 This is not a complete list and is not meant to be consumed in full. Given the scheduled language-specific retirement dates, first verify that SY0-701 is still schedulable in your language. Then choose one current path, practice in an isolated/authorized lab, and use one explanation-led assessment for remediation.
@@ -555,5 +559,6 @@ This is not a complete list and is not meant to be consumed in full. Given the s
 | [Udemy / Jason Dion SY0-701](https://www.udemy.com/course/securityplus/) | Paid marketplace course; automated catalog access blocked during this review | Earlier 31h11 runtime not reverified; inspect current syllabus and revision |
 | [MeasureUp SY0-701 practice test](https://www.measureup.com/sy0-701-comptia-security-practice-test.html) | Paid explanation-led practice; product-specific listing has 213 questions, December 2023 release | About 10–18 hours across attempts and remediation |
 | [Professor Messer free SY0-701 course](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/sy0-701-comptia-security-plus-course/) | Free 121-video course; optional paid notes/practice | 15 hours 11 minutes plus 25–50 hands-on hours |
+| [NIST SP 800-63-4 implementation hub](https://pages.nist.gov/800-63-4/) | Public overview linking 63A/B/C; FAQ and conformance material still forthcoming | About 1–2 hours selected-reference reading (author estimate); not an exam course |
 
 **VERIFY CURRENT:** Public metadata was checked September 29, 2026; paid course/book interiors, question banks and provider labs were not accessed. Pluralsight includes older course material and newer lab dates, so a recent path/lab date does not re-date every lesson. Extra study-hour ranges are planning suggestions, not provider guarantees. MeasureUp’s product-specific 213-question listing takes precedence over generic FAQ wording about 150 questions. No exact current Whizlabs SY0-701 route was independently verified. Reject “actual questions,” dumps and out-of-scope attack labs. Provider duration, price, bundle, bank, revision and access details are volatile.

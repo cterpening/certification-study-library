@@ -5,19 +5,19 @@ official_blueprint: https://learn.microsoft.com/en-us/credentials/certifications
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: source-validated
-last_verified: 2026-09-28
+review_status: review-required
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-28
+upcoming_change_checked: 2026-10-28
 ---
 
 # MB-230 Microsoft Dynamics 365 Customer Service Functional Consultant Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide was checked against the March 11, 2026 official objective baseline and cited public sources on September 28, 2026. It may still contain errors or become outdated. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mb-230-coverage-record). The [official MB-230 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-230) is authoritative.
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-04.md#mb-230) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mb-230-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-230) is authoritative.
 
 **Current baseline:** Skills measured as of March 11, 2026.<br>
-**Upcoming blueprint change:** None announced on the official study guide as of September 28, 2026.<br>
-**Metadata discrepancy:** The credential page still shows October 3, 2025 and future-tense March 11, 2026 text. The study guide presents the March 11 objective set with no later announcement. All 50 detailed objectives retain the same meaning; this review restores two paraphrased bullets and the complete source wording in the repository snapshot.<br>
+**Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
+**Metadata discrepancy:** The credential page still shows October 3, 2025 and future-tense March 11, 2026 text. The study guide presents the March 11 objective set with no later announcement. The September review restored two paraphrased bullets and the complete source wording in the repository snapshot. The October 28 refresh retains all 50 detailed objective bytes unchanged.<br>
 **Lifecycle:** The [Dynamics 365 Customer Service Functional Consultant Associate credential](https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-customer-service-v3/) is active. The exam is 100 minutes, available in seven languages, lists no retirement date, and links a free Practice Assessment. Renewal is every 12 months; the direct practice endpoint returned no substantive text in this review.<br>
 **Official source:** [MB-230 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-230)
 
@@ -59,6 +59,12 @@ The resolution experience controls the information collected when a case closes.
 
 Use [modern automatic record creation](https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/automatically-create-update-records). Email rules must be linked to a queue and activated; saving leaves the rule in draft. A queue cannot simultaneously belong to single-queue and multiple-queue tracking rules, and changing between those scopes requires a new rule. Modern ARC is not supported on-premises. Record creation and routing are separate steps: a created case is not proof it reached an eligible representative.
 
+#### A resolution dialog is configuration plus permissions
+
+For an original repair-code requirement, first select the customizable resolution dialog in Case Settings. Edit the **Case Resolution** form in Power Apps, add the required repair information, save and publish, then resolve a synthetic case as the representative. Test a custom role as well as the standard role: the environment-variable definition privileges differ between the configuring manager and the representative. If adding a new resolution choice, keep the numeric values aligned between Case status reason and Case Resolution resolution type. A label alone does not establish that relationship. Do not add Regarding to this dialog; Microsoft documents that as unsupported. See [resolution-dialog configuration](https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/modify-case-resolution-dialog).
+
+Evidence should include the saved form, role assignment, displayed choices and resulting resolution record. An absent choice can be a value mismatch or publishing issue; a permission failure needs a role correction, not broader access to customer records.
+
 ### Secure records and shape the timeline
 
 Use security roles for table privileges and record access, teams/business units or sharing for scope, and field security where individual columns need protection. Separate representatives, managers, knowledge authors/publishers and administrators. Test each persona against customer, case, knowledge, survey and AI-generated data; a hidden form control is not authorization.
@@ -85,6 +91,12 @@ The [knowledge setup guidance](https://learn.microsoft.com/en-us/dynamics365/cus
 
 [Customer Knowledge Management Agent](https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/admin-km-agent) can harvest resolved cases or closed conversations. Set up its connection references, flows, agent publication and consumption billing, then constrain eligible records and input attributes. A generated article still needs a deliberate review/publish policy; removing customer-specific material is part of that policy.
 
+#### Enable a record type and maintain a translation
+
+In the admin center's Knowledge settings, use **Record types** to enable the supported table and configure its side-pane knowledge-search experience; Case and Conversation are enabled by default. Configure article-table privileges separately. For a synthetic equipment-service record, verify that its context opens search, that the expected language/status filters work, and that the same user cannot gain unrelated record privileges through the search surface. See [knowledge setup](https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/set-up-knowledge-management-embedded-knowledge-search).
+
+To maintain a translated repair article, open the source article, choose Translate, select a supported language and a major/minor version, then supply the translated title, keywords, description and content. Review and publish deliberately; creating the translation is not publication. Use Related Translations on the article to find and maintain the language/version set. Test a source revision with an intentionally stale translation and assign a reviewer rather than assuming text is translated automatically. See [article translation workflow](https://learn.microsoft.com/en-us/dynamics365/customer-service/use/translate-ka).
+
 ### Configure Teams collaboration
 
 Embedded Teams chat preserves case context while representatives consult specialists. Configure linking, record sharing, permissions, retention and external-participant boundaries. Suggested contacts can be rule-based or AI-assisted; validate why a person is surfaced and provide manual search when suggestions fail. “Join a Teams call” lets selected users bring a customer into a supported call flow; confirm identity, consent and what case data participants can see.
@@ -92,6 +104,12 @@ Embedded Teams chat preserves case context while representatives consult special
 The collaboration experience should answer: who may start/link chats, which records are shared, how a conversation is retained/discovered, what happens when users lack Dynamics access, and how the decision returns to the case. Teams is a collaboration channel, not the system of record for case disposition.
 
 For [Join a Teams call](https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/set-up-join-a-teams-call), check the environment collaboration setting, representative Teams access, productivity pane and outbound email where invitations use email. Enable custom experience profiles deliberately. Customers do not need a Teams license. The [runtime guide](https://learn.microsoft.com/en-us/dynamics365/customer-service/use/join-a-teams-call) says joining the meeting does **not** end the existing voice call automatically; the representative must end it. A meeting recording is stored in Microsoft 365 rather than Dataverse. Plan those as separate communication and retention paths.
+
+#### Work a suggested-contact rule
+
+For a warranty case, suggest the customer's account manager through a relational rule. Enable connected Teams chat for the record type, enable rules-based suggestions, add the relationship path to the relevant user and order the rule before a general escalation rule. A custom rule instead needs an existing custom action with the documented input/output contract. Case supports both AI and rules-based suggestions; the latter follows configured relationships rather than inferring expertise from similar resolved cases. See [rules-based suggested-contact setup](https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/configure-rules-based-suggested-contacts).
+
+Test an account with a manager, one with no manager and a manager who lacks record access. Compare the displayed suggestion with the rule path; a suggestion is neither availability nor authorization. Keep manual expert search as the recovery path. **VERIFY CURRENT:** enabled record types, suggestion availability and collaboration UI.
 
 ### Configure Copilot and service agents
 
@@ -106,6 +124,8 @@ Measure correct resolution, representative correction/acceptance, escalation, la
 #### Configure an automation level, then verify the action path
 
 [Case resolution setup](https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/set-up-case-resolution-agent) distinguishes Full, Require agent confirmation, Shadow mode and Disabled by line of business. Fully autonomous processing needs its application user/shared mailbox configuration, along with the documented intent, setup and billing prerequisites. Inbound email or a closed conversation transcript must be associated with the case for the corresponding standard trigger.
+
+**Language is an eligibility gate.** The same [case-resolution setup](https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/set-up-case-resolution-agent) can use a configured case locale or one supported language. With the case-record option, a missing or unsupported locale causes handoff without drafting or sending email. Test a valid locale such as `en-US`, an empty value and an unsupported value alongside the automation level; a triggered case is not automatically eligible for an AI response. **VERIFY CURRENT:** supported languages and the tenant configuration.
 
 [Follow-up and closure rules](https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/set-up-case-closure) have their own conditions, automation level and wait settings. An unanswered representative email counts as the first follow-up. Do not assume the configured count means that many *additional* agent emails. Test replies, rule ordering and eligibility changes before closure.
 
@@ -159,6 +179,12 @@ The [deprecation notice](https://learn.microsoft.com/en-us/dynamics365/customer-
 
 [Conversation diagnostics in Application Insights](https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/configure-conversation-diagnostics) requires a Managed Environment, an export connection and appropriate Azure/Power Platform permissions; ingestion has a cost. Verify the events emitted by the target channel/work type. [Real-time record-routing analytics](https://learn.microsoft.com/en-us/dynamics365/customer-service/use/rr-overview) provides queue, representative and work-item views. It respects Dataverse access; different permissions can produce different totals. Ongoing/backlog views require manual refresh, while summary/queue/representative reports refresh automatically. An aggregate dashboard is not a per-rule execution trace.
 
+#### Train a skill model before using its classification
+
+Choose representative text attributes and a labeled skill set, load the selected training records, review/correct labels and approve the dataset before training. The current setup requires at least 50 approved records and AI Builder availability with its documented preview-model prerequisite. Train and publish the model, test unseen examples and inspect confidence/metrics, then use the model in the supported machine-learning skill-classification rule. The downstream queue and representative still need matching skills, proficiency, presence and capacity. See [intelligent skill finder setup](https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/set-up-isf-model).
+
+For a paper example, separate “damaged enclosure” from “electrical fault” and include ambiguous text requiring manual classification. Keep a held-out set and record wrong/missing skills. The setup page limits model transport to environments of the same type; do not assume a trained test model can be imported directly into production. No training job was started here.
+
 ### Configure scripts, slugs and macros
 
 Representative scripts guide a consistent sequence of steps. Slugs insert supported runtime context into script text or automated actions. Macros execute repeated UI/record actions. Choose scripts for guidance and judgment; use macros for deterministic repetition.
@@ -179,6 +205,12 @@ Design profiles by role instead of enabling every feature for everyone. Configur
 
 [Experience profiles](https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/overview) bundle the experience for users who already have the required security roles. A user without a custom assignment receives the out-of-box profile. Create a custom [session template](https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/session-templates) rather than editing an out-of-box template; the anchor tab cannot be closed. Configure [Inbox settings](https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/configure-inbox) on custom experiences. Accepting a voice item opens a new session even when its card also appears in the Inbox.
 
+#### Build one Inbox view for a persona
+
+Edit a custom experience profile, enable its Inbox and add a view named “My service follow-up.” Select the required Case and Email record types; choose the simple assigned-to-me settings or supported advanced conditions for each type, then set representative visibility and save. Sorting and card fields are additional configurations. Confirm the profile assignment with two representatives whose assigned cases differ. A visible view changes presentation; it does not authorize another user's cases. See [custom Inbox views](https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/configure-inbox).
+
+Test a record that falls outside the condition and one reassigned during the session. Record refresh time before concluding that assignment failed. Voice items continue to open new sessions under the documented voice behavior. **VERIFY CURRENT:** record-type options and workspace UI.
+
 ## 3. Extend Customer Service
 
 ### Configure Dataverse data and UI components
@@ -190,6 +222,16 @@ Forms shape data entry; views shape record retrieval; model-driven app component
 Dataverse search requires appropriate tables/columns and honors supported security boundaries. Configure relevance around representative tasks and protect sensitive fields. Email templates need approved content, localization, dynamic-field null handling, ownership and update governance. Alerts and in-app notifications need recipient, urgency, action/deep link, expiry, deduplication and accessibility; alert fatigue is a design failure.
 
 > **Related item:** Forms, views and app navigation improve usability; security roles and column security enforce authorization. Do not use a customized UI as the only data-protection control.
+
+#### Build an original repair-authorization extension
+
+Create a solution-owned Repair Authorization table only if a separate authorization record is justified. Add a text reference, decision choice and expiry date; create a many-to-one Case lookup so one case can have several authorization records. Decide ownership and cascading before loading data. Configure an “Awaiting decision” view with decision/expiry conditions and useful case/reference columns. Add the fields and a related-record subgrid to the appropriate form, then save and publish. Test two authorizations against one case and an unauthorized reader. Microsoft's [table/column/relationship/view/form example](https://learn.microsoft.com/en-us/power-apps/maker/data-platform/create-custom-entity) explains these maker components; the [main-form procedure](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/create-edit-main-forms) separates form editing from publication. These are original service requirements, not a reproduction of that tutorial.
+
+Include the required table pages/forms/views in the service app and publish the app; verify actual role-based access after deployment. In app settings, enable in-app notifications and publish. Use **SendAppNotification** from a supported API/flow path for the specific approver, with a case link and expiry. Notifications target individual users, so a team needs one notification per intended user. Test sender and recipient privileges, duplicate triggering and the denied case link. The Power Apps Notification connector's mobile push is a different mechanism. See [app settings](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/app-properties) and [in-app notification implementation](https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/send-in-app-notifications).
+
+For search, select the supported searchable tables, include them in the app and configure the table's Quick Find find/view/filter columns according to the Dataverse-search rules. Publish, allow indexing and test a unique synthetic reference plus a denied record. A newly added form field is not automatically a searchable field. See [Dataverse-search configuration](https://learn.microsoft.com/en-us/power-platform/admin/configure-relevance-search-organization).
+
+Create a **case-type email template** for a repair acknowledgment; choose organizational versus personal availability, supply subject/body and insert supported dynamic values with fallback text. Insert it into a case-related draft and test a missing customer name before sending anything. A global template has a different record-type scope; changing the template type later is not the intended maintenance route. See [email-template creation](https://learn.microsoft.com/en-us/power-platform/admin/create-templates-email). Keep solution dependencies and owner/approval evidence with the extension. **VERIFY CURRENT:** maker UI, notification privileges and indexing behavior. No app, notification or email was deployed or sent here.
 
 ### Close the loop with Customer Voice
 
@@ -468,9 +510,30 @@ The local arithmetic/calendar checks were executed during this review. The tenan
    **Answer:** No. Implement an invitation policy with stable idempotency keys and inspect saved identity/correlation settings.
 ---
 
+## Final readiness checklist
+
+- [ ] I can automate and troubleshoot case intake through resolution/reopen without confusing queues, ownership and security.
+- [ ] I can govern internal, translated and external knowledge plus Teams collaboration and AI-assisted drafting.
+- [ ] I can configure Copilot/Case Management Agent with filters, scoped tools, human checkpoints, evaluation and fallback.
+- [ ] I can explain and test SLA, item, KPI, KPI instance, calendar, applicability, pause and Power Automate behavior.
+- [ ] I can trace workstream, classification, queues, capacity, skills/skill finder, assignment and diagnostics.
+- [ ] I can configure scripts/slugs/macros and experience/session/app-tab templates around representative work.
+- [ ] I can extend Dataverse/forms/views/apps/search/templates/notifications without treating UI changes as security.
+- [ ] I can distribute, personalize, correlate and govern Customer Voice feedback.
+- [ ] I completed scenarios and labs in a nonproduction environment and recorded failures/recovery evidence.
+- [ ] I rechecked the official study guide, lifecycle, Practice Assessment and stale credential-page banner before scheduling.
+
+## Source notes
+
+The March 11, 2026 official study guide is the objective authority. The credential surface retains older October 3, 2025/future-tense update text, so this guide does not use those banners as the baseline. Microsoft Learn and product documentation support product behavior; commercial resources are optional perspectives and were not treated as objective authority. All practice questions in this guide are original and conceptual; no exam dumps or recalled items were used.
+
 ## Places to learn
 
 This is not a complete list and is not meant to be consumed in full. Choose one primary route, build complete case/SLA/routing/workspace journeys, and add another resource only for a measured gap.
+
+### Focused reading and evidence route
+
+Use [Define SLA items](https://learn.microsoft.com/en-us/training/modules/service-level-agreements/define-service-level-agreement) as a small step beyond the two-module SLA/entitlements path. The unit publishes nine minutes; allow about 45–60 more minutes to design two support tiers with response and resolution KPIs. Record applicability, calendar, pause, success, warning/failure and expected KPI-instance state, then add an overlapping item and a changed applicability field as negative cases. Explain which protected action-flow branch receives your notification rather than editing the predefined branch structure. The added time is an editorial estimate for a four-item matrix and two failure traces. This is a paper design route; tenant execution needs Customer Service access and current product documentation. The complete unit was read, without assessment questions or tenant testing.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
@@ -492,20 +555,3 @@ This is not a complete list and is not meant to be consumed in full. Choose one 
 The seven current paths contain **29 module placements and 25 distinct modules**: the SLA and entitlement modules appear in both cases and SLA paths, case management appears in productivity too, and Customer Voice feedback appears in both extension and survey paths. Public pages no longer expose the earlier duration totals; do not use the old 29h02 sum as current or add overlapping modules twice. Practice-time ranges here are planning estimates, not provider runtimes. Allow roughly **60–100 hours** for a new practitioner to complete a primary route, build the labs and remediate the Practice Assessment. The earlier search did not verify an exact O’Reilly, MeasureUp or Whizlabs MB-230 product; that market-wide search was not repeated in this review. Listings centered on hundreds or thousands of “exam questions” were excluded. Reject recalled live content, “valid questions” and pass guarantees.
 
 Current catalog inspection covers public path/course metadata and selected outlines, not complete lessons. Direct Udemy access was blocked; the browser copy was indexed about two months earlier and conflicts with the prior observation. The partner page returned a login shell, and the assessment endpoint returned no substantive content. Confirm access, current duration and coverage before paying or reserving study time.
-
-## Final readiness checklist
-
-- [ ] I can automate and troubleshoot case intake through resolution/reopen without confusing queues, ownership and security.
-- [ ] I can govern internal, translated and external knowledge plus Teams collaboration and AI-assisted drafting.
-- [ ] I can configure Copilot/Case Management Agent with filters, scoped tools, human checkpoints, evaluation and fallback.
-- [ ] I can explain and test SLA, item, KPI, KPI instance, calendar, applicability, pause and Power Automate behavior.
-- [ ] I can trace workstream, classification, queues, capacity, skills/skill finder, assignment and diagnostics.
-- [ ] I can configure scripts/slugs/macros and experience/session/app-tab templates around representative work.
-- [ ] I can extend Dataverse/forms/views/apps/search/templates/notifications without treating UI changes as security.
-- [ ] I can distribute, personalize, correlate and govern Customer Voice feedback.
-- [ ] I completed scenarios and labs in a nonproduction environment and recorded failures/recovery evidence.
-- [ ] I rechecked the official study guide, lifecycle, Practice Assessment and stale credential-page banner before scheduling.
-
-## Source notes
-
-The March 11, 2026 official study guide is the objective authority. The credential surface retains older October 3, 2025/future-tense update text, so this guide does not use those banners as the baseline. Microsoft Learn and product documentation support product behavior; commercial resources are optional perspectives and were not treated as objective authority. All practice questions in this guide are original and conceptual; no exam dumps or recalled items were used.

@@ -6,18 +6,28 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: review-required
-last_verified: 2026-09-28
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-28
+upcoming_change_checked: 2026-10-28
 ---
 
 # AB-650 Microsoft 365 and AI Services Administrator Associate Study Guide
 
-> **Independent AI-assisted resource — DEEP REVIEW COMPLETED WITH AN OPEN DOCUMENTATION GAP; HUMAN REVIEW PENDING.** The September 28, 2026 [deep review](../docs/research/2026-09-28-ab-650-deep-review.md) maps all 58 published objectives. Microsoft’s two-year Backup recovery window is not fully explained by its restore-frequency tables. Six worked examples are synthetic; tenant labs were not executed. See the [coverage record](../docs/SOURCE-VALIDATION.md#ab-650-coverage-record) and authoritative [blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-650).
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-01.md#ab-650) and the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-650-coverage-record). Known source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-650) is authoritative.
 
 **Current baseline:** Beta blueprint page last updated July 27, 2026; Microsoft does not state a separate “skills measured as of” date on the page.<br>
 **Upcoming blueprint change:** No dated change is announced, but beta content can change before general availability. Recheck the official page before studying or scheduling.<br>
 **Official source:** [AB-650 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-650)
+
+## October 28 implementation notes
+
+**Confirmed — VERIFY CURRENT (October 28, 2026).** Shortening selected offboarding items from 90 to seven days requires two approvals from approvers aged at least two days. With exactly two configured approvers, the requestor can count; with three or more, two other approvers must approve. A request expires after 30 days without quorum. This governs faster permanent deletion, not ordinary restore authorization or every Backup action. Undo is possible before purge; purge is irreversible. [What's new in Microsoft 365 Backup](https://learn.microsoft.com/en-us/microsoft-365/backup/backup-whats-new?view=o365-worldwide) · [Offboarding in Microsoft 365 Backup](https://learn.microsoft.com/en-us/microsoft-365/backup/backup-offboarding?view=o365-worldwide)
+
+**Confirmed — VERIFY CURRENT (October 28, 2026).** Backup Activity Logs show policy/restore operations, including failures and partial success, and support filtered CSV export. Their retention is a fixed 365 days; read-only operations are omitted. Workload-admin visibility follows role scope. Use these logs for troubleshooting and Microsoft Purview Audit for the compliance audit record; an empty operational view does not prove no one accessed the service. [What's new in Microsoft 365 Backup](https://learn.microsoft.com/en-us/microsoft-365/backup/backup-whats-new?view=o365-worldwide) · [Privacy, security, and compliance in Microsoft 365 Backup](https://learn.microsoft.com/en-us/microsoft-365/backup/backup-privacy-security?view=o365-worldwide)
+
+**Confirmed — VERIFY CURRENT (October 28, 2026).** A spending policy that includes a user and selects Cowork grants access, even with a tiny credit limit. Remove the user from every Cowork-selecting policy to deny access. Discoverability and allowed model families are separate controls: disabling Anthropic does not deny Cowork when another model remains. The old All Agents Cowork entry no longer controls access. Inspect effective policies rather than treating a budget or model toggle as an access block. [Manage Copilot Cowork for your organization](https://learn.microsoft.com/en-us/copilot/cowork/cowork-admin-governance)
+
+These dated operational notes supplement the objective treatment in this refresh. Product and tenant exercises were not run. Unresolved support and documentation gaps remain stated at the affected topic.
 
 ## How to use this guide
 
@@ -38,7 +48,7 @@ Do not solve a data-access problem only at the AI surface. Copilot and agents ca
 
 The [Agent 365 GA announcement](https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/) confirms the control plane's product-level status, while explicitly leaving individual integrations and capabilities on their own release schedules. Use the [Microsoft 365 Copilot release notes](https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes) to detect changes in agent submission, connectors, administration, and rollout; then verify the specific implementation page and tenant before acting.
 
-The September 23 Copilot release entry includes a dedicated license-request page; rollout can differ within a tenant. A release announcement does not establish an individual user’s entitlement. The beta exam remains English-only, with no Practice Assessment and no separately announced objectives-effective date. The retrieved [exam page](https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-650/) lists no current instructor-led course; no fixed exam duration was verified.
+The September 23 Copilot release entry includes a dedicated license-request page; rollout can differ within a tenant. A release announcement does not establish an individual user’s entitlement. The beta exam remains English-only, with no Practice Assessment and no separately announced objectives-effective date. The retrieved [exam page](https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-650/) still lists no current instructor-led course, while the direct AB-650T00 page now exists and announces November 13 availability. The listing conflict is preserved; no delivered class or fixed exam duration was verified.
 
 This is a status clarification, not a blueprint revision. Keep preview, Frontier, licensing, cloud, and role limitations attached to the individual feature. Independent administrator explanations such as the John Savill resource listed later are useful corroboration, but current Microsoft documentation controls exact portal behavior.
 
@@ -65,6 +75,23 @@ Use the Microsoft 365 admin center for organization settings, licensing, health,
 Service Health reports Microsoft-confirmed incidents and advisories; Message center communicates planned service changes; usage reports describe adoption; audit logs describe supported activity; security products describe threats. A user complaint is a signal, not proof that Microsoft has a service incident. Correlate time, tenant, workload, affected population, client, network path, health notice, configuration change, and error/correlation ID.
 
 Microsoft 365 Backup protects supported Exchange, SharePoint, and OneDrive data with configured policies and restore workflows. Treat backup, retention, recycle-bin behavior, eDiscovery hold, and business continuity as different mechanisms. Define protected scope, retention/restore expectations, privileged roles, validation, and recovery evidence.
+
+#### Worked example — two branding surfaces need two checks
+
+Treat suite and sign-in branding separately. Microsoft 365 organization themes control suite navigation logo, alternate dark-theme logo, on-click company URL and colors under default/group scope. Entra branding controls sign-in background image/color, banner/header logo and layout with its own role/license prerequisites. A suite-logo company URL is not a clickable sign-in footer link. Build evidence table for asset, HTTPS source, target surface, audience, light/dark contrast, language/device and rollback; test a member and nonmember of group theme plus a fresh sign-in.
+
+| Requested asset | Owning surface | Expected evidence |
+|---|---|---|
+| Navigation logo and company URL | Microsoft 365 organization theme | Correct light/dark logo and approved HTTPS destination for the intended audience |
+| Theme colors | Microsoft 365 default/group theme | Member and nonmember receive the intended effective theme |
+| Sign-in background | Microsoft Entra branding | Fresh sign-in uses the selected background, language and layout |
+| Sign-in banner/header logo | Microsoft Entra branding | Accessible rendering and role/license prerequisites checked independently |
+
+**Question:** Suite logo is right but sign-in background unchanged. Did the suite theme fail?
+
+**Answer:** Not necessarily. Different settings control those surfaces; inspect intended audience/effective configuration at the owning plane.
+
+[Primary reference 1](https://learn.microsoft.com/en-us/microsoft-365/admin/setup/customize-your-organization-theme?view=o365-worldwide) · [Primary reference 2](https://learn.microsoft.com/en-us/entra/fundamentals/how-to-customize-branding)
 
 ### Backup scope, recovery points and connectivity evidence
 
@@ -313,6 +340,12 @@ Review a tool before approval:
 
 Blocking one shared tool can remove capability from every dependent agent. That is useful containment and a potential operational outage. Maintain dependency knowledge and an approved fallback. Reassess after scope, publisher, endpoint, permission, ownership, or behavior changes.
 
+**Confirmed — VERIFY CURRENT (October 28, 2026).** The [Power Platform connector-usage view](https://learn.microsoft.com/en-us/microsoft-365/admin/manage/manage-tools-for-agent?view=o365-worldwide) is a **preview inventory view**: it identifies agents using a connector but does not manage connector policy. Follow its Power Platform link to the owning policy plane. Distinguish a tool-registry Block action from discovering a connector dependency; seeing a connector in the list does not prove its policy was changed.
+
+**Proposed practice extension — not executed:** Add a tabletop case: one connector appears under three agents. Identify the actual Power Platform policy and affected audiences, propose narrow containment, and predict positive/negative retests for all three dependencies. A screenshot of usage alone is insufficient evidence.
+
+**Answer checkpoint:** Does the Connectors usage tab itself block a connector? No; it reports dependencies and directs policy management to Power Platform.
+
 ### Agent 365 security, compliance, cost, and monitoring
 
 Use Defender, Purview, Entra, Agent 365, and workload evidence together. A suspicious agent incident may include anomalous sign-in, risky OAuth consent, sensitive source access, tool egress, DLP alert, agent action, user report, and downstream change. Correlate identity, agent, tool, session, source, action, destination, timestamp, and policy result.
@@ -468,7 +501,39 @@ Tabletop overlapping spending scopes, hidden discovery, disabled Anthropic, a pr
 
 ---
 
+## Final readiness checklist
+
+- I can map every published subobjective to a configuration, evidence source, failure mode, and recovery action.
+- I can distinguish license, authentication, Conditional Access, workload permission, data protection, agent audience, and tool authorization.
+- I can operate domains, licenses, service health, Exchange, Teams, SharePoint, Search, Backup, Entra, Defender, and Purview at the expected scope.
+- I can explain and demonstrate Copilot readiness without treating AI as a permission bypass.
+- I can govern an agent from discovery and approval through monitoring, incident response, and retirement.
+- I can correlate Agent Registry, Agent ID blueprint and identity records, owners, sponsors, access, sign-ins, lifecycle workflows, and disablement scope.
+- I can configure allowed agent types, sharing, user access, and risk-based policy templates without confusing them with data or tool authorization.
+- I can use Purview AI observability and Compliance Manager evidence to find, remediate, and retest Agent 365 protection and compliance gaps.
+- I can assess MCP servers/connectors/plugins/skills by identity, actions, data flow, ownership, observability, and emergency response.
+- I can interpret cost, usage, adoption, service-health, audit, DLP, and security signals without confusing activity with value or proof.
+- I have rechecked the beta blueprint and credential page immediately before scheduling.
+
 ## Places to learn
+
+### October 28 learning route and evidence task
+
+The [official seven-lab set](https://microsoftlearning.github.io/AB-650T00_administer_microsoft_365_and_ai_services/) offers **450 minutes** of publisher-estimated practice. Read its [environment guide](https://microsoftlearning.github.io/AB-650T00_administer_microsoft_365_and_ai_services/Instructions/Labs/00-getting-started.html) first: the ordered labs assume one prepared Microsoft 365 E7 tenant with seeded identities, content and agents; public instructions do not include that tenant or its licenses. No Azure subscription is needed by this lab set. **VERIFY CURRENT:** the course page still announces November 13 availability; a visible repository does not prove a class or hosted lab can be booked. Allow extra time for setup, propagation and independent testing.
+
+**Original evidence worksheet (about 30–45 minutes beyond the published lab time, editorial estimate):** For the governance lab, record one identity, registry/tool-approval decision and usage signal. Give each row an object ID, acting persona, timestamp, source period and provenance: live observed, seeded sample, pending or unavailable. Keep Conditional Access report-only as the instructions require.
+
+**Answer checkpoint:** An empty or failed activity card is not proof of zero use or zero risk. Seeded practice evidence can support reasoning, but must not be recorded as a live incident or independently observed product result.
+
+### October 28 learning-resource check
+
+Additional options and access updates; choose relevant resources rather than consuming every route. New course availability, class delivery and licensing are **VERIFY CURRENT**. Published days describe instructor-led scope, not measured self-study time.
+
+| Resource | Access | Estimated time |
+|---|---|---|
+| [AB-650T00: Administer Microsoft 365 and AI services](https://learn.microsoft.com/en-us/training/courses/ab-650t00) | Public outline; instructor-led class/provider access may be paid | **3 published days**; exact page currently says available **November 13, 2026**; indexed October 30 date conflicts; delivery unverified |
+| [Manage and secure Microsoft 365 AI services](https://learn.microsoft.com/en-us/training/paths/manage-secure-microsoft-365-ai-services/) — access recheck | Public reading; current outline assumes an E5 tenant and prefers E7/Frontier Suite for some exercises; VERIFY CURRENT licensing | About **one study day**, editorial plan for seven modules; exact runtime not verified in direct view and setup/labs need extra time |
+
 
 This is not a complete list, and it is not meant to be consumed in full. Pick one primary route that fits how you learn, build labs around weak objectives, and use assessments to diagnose gaps. Recheck dates and coverage because AB-650 and several Agent 365 features are beta or rapidly changing.
 
@@ -510,17 +575,3 @@ Spend an estimated 45–75 minutes reading and building a one-page operating wor
 September 28 search results surfaced two exact Udemy listings: [Dean Ellerby’s AB-650 practice tests](https://www.udemy.com/course/ab-650-practice-tests-administering-m365-ai-services/) advertises six tests/360 questions; [Hamdy Khaled’s AB-650 practice exams](https://www.udemy.com/course/ab-650-practice-exams-300-qs-official-sources/) advertises five tests/300 questions. Both public descriptions say August 2026 and documentation-linked explanations. Direct retrieval was access-blocked. These are **leads to inspect**, not verified question banks, coverage endorsements or evidence of exam/renewal rules. No questions were purchased, copied or tested, and no runtime was verified.
 
 Targeted searches did not verify an exact current Pluralsight, O’Reilly, Whizlabs or MeasureUp AB-650 offering. That does not establish absence. Channel/repository links above are supplemental catalogs, not reviewed full courses; partner sessions require sign-in. Before buying, inspect sample originality, explanations, current objective mapping and correction history. Use the official blueprint, not seller marketing, to decide readiness.
-
-## Final readiness checklist
-
-- I can map every published subobjective to a configuration, evidence source, failure mode, and recovery action.
-- I can distinguish license, authentication, Conditional Access, workload permission, data protection, agent audience, and tool authorization.
-- I can operate domains, licenses, service health, Exchange, Teams, SharePoint, Search, Backup, Entra, Defender, and Purview at the expected scope.
-- I can explain and demonstrate Copilot readiness without treating AI as a permission bypass.
-- I can govern an agent from discovery and approval through monitoring, incident response, and retirement.
-- I can correlate Agent Registry, Agent ID blueprint and identity records, owners, sponsors, access, sign-ins, lifecycle workflows, and disablement scope.
-- I can configure allowed agent types, sharing, user access, and risk-based policy templates without confusing them with data or tool authorization.
-- I can use Purview AI observability and Compliance Manager evidence to find, remediate, and retest Agent 365 protection and compliance gaps.
-- I can assess MCP servers/connectors/plugins/skills by identity, actions, data flow, ownership, observability, and emergency response.
-- I can interpret cost, usage, adoption, service-health, audit, DLP, and security signals without confusing activity with value or proof.
-- I have rechecked the beta blueprint and credential page immediately before scheduling.

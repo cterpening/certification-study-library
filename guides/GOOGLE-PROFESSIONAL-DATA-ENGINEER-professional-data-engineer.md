@@ -6,18 +6,22 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-28
 ---
 
 # Google Cloud Professional Data Engineer Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, links, volatility labels, and exam-integrity compliance were checked September 29, 2026. See the [coverage record](../docs/SOURCE-VALIDATION.md#google-professional-data-engineer-coverage-record). The [official page](https://cloud.google.com/learn/certification/data-engineer) and [detailed guide](https://services.google.com/fh/files/misc/professional_data_engineer_exam_guide_english.pdf) are authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, links, volatility labels, and exam-integrity compliance were checked October 28, 2026. See the [coverage record](../docs/SOURCE-VALIDATION.md#google-professional-data-engineer-coverage-record). The [official page](https://cloud.google.com/learn/certification/data-engineer) and [detailed guide](https://services.google.com/fh/files/misc/professional_data_engineer_exam_guide_english.pdf) are authoritative.
 
-**CURRENT BLUEPRINT:** Five domains weighted approximately 22%, 25%, 20%, 15%, and 18%; actual five-page PDF read September 29, 2026. The mapping covers 67 main considerations under 19 numbered objectives; four transformation sub-bullets remain within their parent consideration<br>
+**CURRENT BLUEPRINT:** Five domains weighted approximately 22%, 25%, 20%, 15%, and 18%; actual five-page PDF read October 28, 2026. The mapping covers 67 main considerations under 19 numbered objectives; four transformation sub-bullets remain within their parent consideration<br>
 **Upcoming blueprint change:** The live page says a branding update is coming, without a dated replacement blueprint. Continue using its linked standard guide; do not infer a new exam date from a product rename.<br>
 **Official source:** [Professional Data Engineer certification](https://cloud.google.com/learn/certification/data-engineer) · [official exam guide](https://services.google.com/fh/files/misc/professional_data_engineer_exam_guide_english.pdf)
+
+## Refresh check — October 28, 2026
+
+The five public PDE abilities remain unchanged. Google’s certification hub says its exam guides are being updated for Next ’26, including Gemini platform and data/analytics changes, but this page publishes no PDE-specific replacement date. The current detailed PDE PDF remains the scope authority. The guide already includes Google’s 2026 Knowledge Catalog product context; treat new product naming as an implementation update, not a new exam objective. [PDE certification page](https://cloud.google.com/learn/certification/data-engineer) · [certification hub](https://cloud.google.com/learn/certification).
 
 ## How to use this guide
 
@@ -482,7 +486,7 @@ if __name__ == '__main__':
 
 ## Places to learn
 
-This is **not a complete list**, and it is not meant to be consumed in full. Select one route, map it to the five standard-exam domains, and use first-party docs/labs for gaps. Public metadata was checked September 29, 2026. Suggested reading/practice budgets are planning estimates, not measured completion times.
+This is **not a complete list**, and it is not meant to be consumed in full. Select one route, map it to the five standard-exam domains, and use first-party docs/labs for gaps. Public metadata was checked October 28, 2026. Suggested reading/practice budgets are planning estimates, not measured completion times.
 
 | Resource | Access | Estimated time | Best use / currency note |
 |---|---|---|---|

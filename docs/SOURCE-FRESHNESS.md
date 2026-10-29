@@ -103,6 +103,10 @@ guide has been improved.
 
 ## Preparing a scan
 
+For research-heavy refreshes, use the [subagent refresh workflow](AUTOMATION.md#subagent-refresh-workflow).
+Research findings remain read-only until the coordinator evaluates and applies them;
+delegation does not change this rubric or establish independent human review.
+
 The preparer packages current exam metadata, the guide-bound source baseline,
 official catalog entry points, registered first-party sources, health states, and
 queued candidates. Explicit exam codes are useful for a curated wave:

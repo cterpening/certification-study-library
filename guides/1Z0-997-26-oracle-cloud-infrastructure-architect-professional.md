@@ -6,14 +6,14 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-04
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-04
+upcoming_change_checked: 2026-10-28
 ---
 
 # 1Z0-997-26 Oracle Cloud Infrastructure Architect Professional Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide maps Oracle University's public 2026 learning-path scope checked September 4, 2026. It is unofficial and may contain errors. The [official OCI Architect Professional learning path](https://mylearn.oracle.com/ou/learning-path/become-an-oci-architect-professional-2026/163270) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide maps Oracle University's public 2026 learning-path scope checked October 28, 2026. It is unofficial and may contain errors. The [official OCI Architect Professional learning path](https://mylearn.oracle.com/ou/learning-path/become-an-oci-architect-professional-2026/163270) is authoritative.
 
 **Assessment contract exposed by the current path:** Oracle Cloud Infrastructure Architect Professional, exam 1Z0-997-26, 90 minutes.<br>
 **Published scope:** high availability and disaster recovery; cloud-native solutions; Terraform and Resource Manager; security services; Base Database Service and Autonomous Database; Monitoring and Logging.<br>
@@ -90,6 +90,10 @@ Close the architecture loop with cost estimates, quotas, budgets, capacity tests
 2. **Global cloud-native API:** Select OKE, Functions, Container Instances, API Gateway, and Autonomous Database components; design safe scaling, regional recovery, security boundaries, and request-level telemetry.
 3. **Shared enterprise landing zone:** Build compartment, network, policy, key, Terraform, logging, quota, and chargeback patterns for independent teams without creating an unrestricted shared operator.
 
+## Current product context — separate from exam objectives
+
+> **Related item:** Oracle’s 2026 OCI refresh removed calendar years from certification names while keeping exam codes; Oracle states OCI credentials are valid for 24 months and professional-level courses require paid access. October 2026 OCI release notes add PostgreSQL DB System support in Full Stack Disaster Recovery and IPv4 NAT for DRG. These are product-specific examples, not new blueprint claims; validate service, region, topology, and release support before using them.
+
 ## Hands-on labs
 
 1. Convert one narrative into measurable service, data, security, residency, and cost constraints plus a declared failure model.
@@ -122,6 +126,6 @@ This is a selective learning path, not a complete list of OCI architecture resou
 
 | Resource | Access | Estimated time |
 |---|---|---:|
-| [Official OCI Architect Professional learning path](https://mylearn.oracle.com/ou/learning-path/become-an-oci-architect-professional-2026/163270) | Oracle account/subscription may be required | **26+ hours** as published by Oracle University |
+| [Official OCI Architect Professional learning path](https://mylearn.oracle.com/ou/learning-path/become-an-oci-architect-professional-2026/163270) | Paid Professional course; Oracle account sign-in | **26+ hours** as published by Oracle University |
 | [OCI best practices and reference architectures](https://docs.oracle.com/en/solutions/oci-best-practices/) | Public | **10–14 hours** targeted study |
 | Eight labs in this guide | Authorized OCI tenancy or paper design | **28–40 hours** plus two timed architecture reviews |

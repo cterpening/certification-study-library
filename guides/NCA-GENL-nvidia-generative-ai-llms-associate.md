@@ -6,9 +6,9 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-29
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-29
 ---
 
 # NVIDIA-Certified Associate: Generative AI LLMs (NCA-GENL) Study Guide
@@ -383,6 +383,10 @@ These original answered prompts support study; they do not reproduce an exam or 
 40. **When should a system abstain or stop?** When evidence, permission, quality or safety requirements are unmet. Define thresholds, human escalation, rollback and review triggers before production.
 
 Readiness means being able to explain a decision, implement the relevant component, evaluate its failures and state what the evidence does not establish.
+
+## Refresh check — October 29, 2026
+
+The current NCA-GENL page continues to define the exam contract and public preparation topics; this refresh found no revised objective weights or exam version. As current model-development context, NVIDIA’s October 15 technical blog introduces Nemotron 3.5 Super VL, a multimodal open model, and describes customization with NeMo. The current NeMo Framework documentation covers custom language, multimodal, vision, and speech model workflows. Use these as optional examples for comparing modality, prompting, adaptation, evaluation, and deployment choices; the blog’s performance claims are vendor-reported and neither source adds exam requirements. [Nemotron 3.5 Super VL announcement](https://developer.nvidia.com/blog/nvidia-nemotron-3-5-super-vl-powers-specialized-agents-with-multimodal-reasoning/) · [NeMo Framework documentation](https://docs.nvidia.com/nemo-framework/).
 
 ## Places to learn
 

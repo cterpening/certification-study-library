@@ -1,33 +1,196 @@
-Official source: https://pythoninstitute.org/pced-exam-syllabus
-Captured: 2026-09-02
-Exam: PCED-30-02
-Status: ACTIVE
-Last updated: July 14, 2025
-
-Block 1: Introduction to Data and Data Analysis Concepts — 9 items, 22.5%
-1.1.1 Define data and explain how it becomes meaningful.
-1.1.2 Classify data by type and format.
-1.2.1 Identify data sources and collection methods.
-1.2.2 Explain how data is stored and organized.
-1.3.1 Describe the data lifecycle.
-1.3.2 Discuss the value and challenges of lifecycle management.
-1.4.1 Differentiate data analysis, data analytics, and data science.
-1.4.2 Explain the data analytics workflow.
-1.5.1 Describe ethical principles and legal frameworks.
-
-Block 2: Python Basics for Data Analysis — 13 items, 32.5%
-2.1.1 Variables, types and basic operations.
-2.2.1 Lists; 2.2.2 tuples and sets; 2.2.3 dictionaries; 2.2.4 strings.
-2.3.1 Functions; 2.3.2 scope; 2.3.3 try/except.
-2.4.1 Boolean logic; 2.4.2 conditionals; 2.4.3 loops.
-2.5.1 Standard modules/packages including csv; 2.5.2 external libraries and NumPy.
-
-Block 3: Working with Data and Performing Simple Analyses — 13 items, 32.5%
-3.1.1 Text files; 3.1.2 CSV.
-3.2.1 Missing/invalid data; 3.2.2 duplicates/normalization; 3.2.3 string cleaning; 3.2.4 conversions, formatting and dates.
-3.3.1 Built-in aggregation; 3.3.2 statistics/math/Counter; 3.3.3 NumPy operations; 3.3.4 conditional metrics.
-3.4.1 Sorting/filtering; 3.4.2 unique values/frequencies; 3.4.3 correlation and outliers.
-
-Block 4: Communicating Insights and Reporting — 5 items, 12.5%
-4.1.1 Visualization types and uses; 4.1.2 interpretation and misleading visuals.
-4.2.1 Data storytelling; 4.3.1 analytical reports; 4.4.1 presentations.
+Exam Syllabus Contents
+Block 1: Introduction to Data and Data Analysis Concepts
+Block 2: Python Basics for Data Analysis
+Block 3: Working with Data and Performing Simple Analyses
+Block 4: Communicating Insights and Reporting
+Block 1: Introduction to Data and Data Analysis Concepts
+9 objectives covered by the block → 9 exam items
+Define and Classify Data
+Objective 1.1.1 – Define data and explain how it becomes meaningful.
+Define data and explain its role in decision-making, business, and everyday life.
+Distinguish between data, information, and knowledge.
+Describe how raw data is processed into usable insights for decision-making.
+Objective 1.1.2 – Classify data by type and format.
+Identify and classify data as quantitative or qualitative.
+Differentiate structured, semi-structured, and unstructured data using real-world examples.
+Describe Data Sources, Collection Methods, and Storage
+Objective 1.2.1 – Identify data sources and collection methods.
+Identify various data sources, including APIs, web pages, databases, IoT devices, surveys, and logs.
+Explain common data collection methods: surveys, interviews, observations, automated systems, web scraping.
+Discuss representative sampling and the risks of biased or incomplete data.
+Compare advantages and limitations of data collection techniques for qualitative and quantitative research.
+Objective 1.2.2 – Explain how data is stored and organized.
+Describe data formats (CSV, JSON, Excel, databases) and storage systems (data lakes, warehouses, relational databases).
+Explain the role of metadata and compare storage solutions by type, structure, and purpose of data.
+Evaluate storage options based on data structure, scale, and use case.
+Explain the Data Lifecycle and Its Management
+Objective 1.3.1 – Describe the data lifecycle.
+List and explain lifecycle stages: collection, storage, processing, analysis, reporting, archiving, deletion.
+Explain how errors at any stage impact results and decisions.
+Identify tools and techniques used at each stage.
+Objective 1.3.2 – Discuss the value and challenges of lifecycle management.
+Explain the importance of lifecycle management for quality, security, and compliance.
+Describe challenges in managing large-scale data and strategies like cloud storage and data pipelines.
+Understand the Scope of Data Science, Analytics, and Analysis
+Objective 1.4.1 – Differentiate between data analysis, data analytics, and data science.
+Define each term and explain their relationship.
+Compare their scope, tools, and goals using real examples.
+Describe roles and responsibilities of professionals in each area.
+Identify typical tasks in each field (e.g., statistical summaries vs. ML modeling).
+Objective 1.4.2 – Explain the data analytics workflow.
+Describe descriptive, diagnostic, predictive, and prescriptive analytics.
+Identify key questions each type answers and their business relevance.
+Explain the steps: collection, preprocessing, analysis, reporting.
+Match analytics types with real-world examples.
+Identify Ethical and Legal Considerations in Data Analytics
+Objective 1.5.1 – Describe key ethical principles and legal frameworks.
+Explain transparency, consent, privacy, fairness, and accountability in data handling.
+Identify major laws (GDPR, HIPAA, CCPA) and how they guide data use.
+Describe anonymization and encryption techniques that support compliance.
+Block 2: Python Basics for Data Analysis
+13 objectives covered by the block → 13 exam items
+Work with Variables and Data Types
+Objective 2.1.1 – Use variables and data types, and perform basic operations.
+Define and assign variables in Python using the assignment operator =.
+Perform simple operations with numbers (e.g., addition, subtraction) and strings (e.g., concatenation, repetition).
+Use type() and isinstance() to inspect variable types.
+Identify common Python data types: int, float, str, and bool.
+Use Python Data Collections and Sequences
+Objective 2.2.1 – Create and manipulate lists.
+Create and access list elements using indexing and slicing.
+Use list methods such as append(), insert(), pop(), remove(), sort(), reverse(), count(), and index().
+Use list comprehensions to transform or filter data.
+Objective 2.2.2 – Work with tuples and sets.
+Create and access tuples using indexing.
+Explain tuple immutability and its use cases.
+Create sets and perform operations like add(), remove(), union(), intersection(), difference().
+Use sets to remove duplicates and check membership.
+Objective 2.2.3 – Use dictionaries for data storage, grouping, and lookup.
+Create dictionaries with key-value pairs.
+Access, update, and delete dictionary values.
+Loop through dictionaries with for...in and items().
+Apply dictionaries for counting, lookup, and categorization tasks.
+Represent data as lists of dictionaries.
+Objective 2.2.4 – Work with strings as sequences and apply string methods.
+Use indexing, slicing, and loops with strings.
+Apply methods like startswith(), endswith(), find(), capitalize(), isdigit(), isalpha().
+Use Functions and Handle Exceptions
+Objective 2.3.1 – Define and call functions.
+Create functions using def and pass arguments (positional, keyword, default).
+Return values and explain how None is used when no return is given.
+Use pass for placeholder function bodies.
+Objective 2.3.2 – Understand scope and variable behavior in functions.
+Distinguish between local and global variables.
+Explain name shadowing and variable scope within functions.
+Understand when to use global variables.
+Objective 2.3.3 – Handle errors with try-except blocks.
+Identify common runtime errors like TypeError, ValueError, IndexError.
+Use try-except blocks to prevent script crashes.
+Print or log useful error messages for debugging.
+Control Program Flow with Conditionals and Loops
+Objective 2.4.1 – Apply Boolean logic and comparisons.
+Use comparison operators and logical operators in conditions.
+Use Boolean expressions for data filtering and validation.
+Objective 2.4.2 – Use conditional statements to control logic.
+Write if, elif, and else statements.
+Check for missing data, outliers, and invalid input.
+Use nested conditionals for complex decisions.
+Objective 2.4.3 – Write loops for repeated tasks.
+Use for and while loops.
+Apply break, continue, and else with loops.
+Combine loops with conditionals for data operations.
+Use Modules and Packages
+Objective 2.5.1 – Import and use Python modules and packages.
+Import modules with import, from...import, and aliases.
+Use standard libraries like math, random, statistics, collections, os, datetime.
+Use the csv module to read and write CSV files.
+Understand when to use built-in vs. third-party packages.
+Objective 2.5.2 – Use external libraries in data workflows.
+Install and import external libraries like numpy using pip.
+Use numpy for arrays and numerical analysis.
+Understand the distinction between built-in and third-party libraries.
+Block 3: Working with Data and Performing Simple Analyses
+13 objectives covered by the block → 13 exam items
+Read and Write Data Using Files
+Objective 3.1.1 – Read and write plain text files using Python built-ins.
+Use open(), read(), readlines(), and write() to handle text files.
+Use with statements for safe file handling.
+Work with file paths and check file existence with os.path.exists().
+Use try-except to catch file-related errors.
+Objective 3.1.2 – Read and write CSV files using the csv module.
+Read CSV data with csv.reader().
+Write data with csv.writer().
+Manually parse lines using .strip() and .split(',').
+Write formatted summaries with f-strings.
+Clean and Prepare Data for Analysis
+Objective 3.2.1 – Identify and handle missing or invalid data.
+Detect missing/null values with conditionals and list comprehensions.
+Replace or remove missing values logically.
+Check for invalid types, formats, or ranges before processing.
+Objective 3.2.2 – Remove duplicates and normalize values.
+Use set(), dict keys, or comprehensions to eliminate duplicates.
+Perform min-max normalization manually.
+Use enumeration for indexed transformations.
+Objective 3.2.3 – Clean and format strings.
+Use .strip(), .lower(), .upper(), .replace(), and .title() for cleaning.
+Chain string methods for multi-step operations.
+Objective 3.2.4 – Convert and format data for analysis and storage.
+Convert data types using int(), float(), str(), bool().
+Format numbers with f-strings.
+Manipulate strings with .split() and .join().
+Handle dates with datetime.strptime() and strftime().
+Perform Basic Analytical Computations
+Objective 3.3.1 – Perform aggregations using Python built-ins.
+Use len(), sum(), min(), max(), round() for summaries.
+Count values with .count() or dictionary methods.
+Objective 3.3.2 – Calculate descriptive statistics with built-in libraries.
+Use statistics.mean(), statistics.median(), statistics.stdev().
+Use math.sqrt(), math.ceil(), math.floor().
+Use collections.Counter() for frequency counts.
+Objective 3.3.3 – Perform numerical operations with NumPy.
+Create arrays with numpy.array().
+Use numpy.mean(), numpy.median(), numpy.std(), numpy.sum().
+Generate sequences with numpy.arange() and numpy.linspace().
+Objective 3.3.4 – Calculate conditional metrics based on filters or categories.
+Use if statements or list comprehensions for filtered metrics.
+Group by categories and calculate summaries with dictionaries or loops.
+Use logical conditions to filter by multiple factors.
+Conduct Basic Exploratory Data Analysis (EDA)
+Objective 3.4.1 – Identify patterns and trends using sorting and filtering.
+Sort data with sorted() or numpy.sort().
+Filter data with filter(), list comprehensions, or conditions.
+Objective 3.4.2 – Identify unique values and frequencies.
+Find unique values with set() or numpy.unique().
+Count frequencies with Counter().
+Objective 3.4.3 – Perform simple correlation checks and detect outliers.
+Use numpy.corrcoef() for correlation.
+Detect outliers with rules or std-based checks.
+Filter outliers with conditions or numpy boolean indexing.
+Interpret findings from code-based exploration.
+Block 4: Communicating Insights and Reporting
+5 objectives covered by the block → 5 exam items
+Understand Basic Principles of Data Visualization
+Objective 4.1.1 – Recognize common visualization types and their uses.
+Identify bar charts, line charts, and pie charts.
+Explain when to use each type.
+Discuss strengths and limitations of each visualization type.
+Objective 4.1.2 – Interpret simple data visualizations.
+Describe trends, comparisons, and proportions in visuals.
+Identify unclear or misleading visuals and suggest improvements.
+Assess if a visual supports or confuses the insight.
+Apply Fundamentals of Data Storytelling
+Objective 4.2.1 – Structure and communicate insights as a narrative.
+Explain the structure: introduction, insights, conclusion.
+Lead with a key message supported by evidence.
+Use transitions and signposting for flow.
+Adjust tone and depth to audience needs.
+Create Clear and Concise Analytical Reports
+Objective 4.3.1 – Summarize and organize results effectively.
+Write short summaries with supporting data.
+Use logical structure: problem, analysis, insight, recommendation.
+Apply formatting (headings, bullet points, visuals) for clarity.
+Communicate Insights Effectively in Presentations
+Objective 4.4.1 – Present insights with visual and verbal techniques.
+Use clean design: labels, titles, colors, font size.
+Explain charts and results clearly in presentations.
+Respond to questions with evidence from visuals or data.

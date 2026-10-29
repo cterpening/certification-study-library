@@ -6,9 +6,9 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-28
+last_verified: 2026-10-28
 upcoming_change_status: retirement-announced
-upcoming_change_checked: 2026-09-28
+upcoming_change_checked: 2026-10-28
 ---
 
 # MLA-C01 AWS Certified Machine Learning Engineer - Associate Study Guide
@@ -30,6 +30,10 @@ upcoming_change_checked: 2026-09-28
 **Confirmed product lifecycle; blueprint still names the concepts:** AWS announced that several services and features moved to maintenance/no-new-customer status on July 30, including SageMaker Clarify, Debugger, and Model Monitor. Existing Model Monitor customers can continue using it, but AWS says there will be no new features and points new customers to an open-source SageMaker monitoring approach with QuickSight and CloudWatch; see the [service availability announcement](https://aws.amazon.com/about-aws/whats-new/2026/06/aws-service-availability/) and [Model Monitor availability notice](https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor-availability-change.html).
 
 **Concern and study decision:** Keep learning drift, bias, explainability, data-quality, alerting, and monitoring decisions because they remain in the C01 blueprint. Treat Model Monitor/Clarify/Debugger product-specific details as historical-current context for this retiring exam, not a recommendation for a new production design. Recheck official availability before choosing an implementation.
+
+## Current guide watch — October 28, 2026
+
+English delivery of MLA-C01 ended September 28, 2026. AWS says Japanese, Korean and Simplified Chinese delivery continues during the MLA-C02 beta until the standard MLA-C02 launch on January 14, 2027. This guide preserves the C01 blueprint for historical/current non-English candidates; English candidates should prepare against MLA-C02 instead. The retired C01 guide URL now returns 404, so its preserved objective snapshot is the reference for this guide. [AWS September 2026 certification update](https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/)
 
 ## How to use this guide
 

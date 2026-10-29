@@ -6,18 +6,24 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-07
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-07
+upcoming_change_checked: 2026-10-28
 ---
 
 # GH-600 Developing in Agentic AI Systems Study Guide
 
-> **Independent AI-assisted resource — BETA BLUEPRINT; SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The certification and exam are in beta as of September 7, 2026. Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked against public sources; this is not a guarantee that the beta outline, product behavior, or eventual scored exam will remain unchanged. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#gh-600-coverage-record). The [official GH-600 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-600) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The certification page now presents GH-600 as a regular active certification. Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked against public sources; product behavior and the published exam outline can still change. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#gh-600-coverage-record). The [official GH-600 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-600) is authoritative.
 
-**Current baseline:** Initial public beta skills outline, checked September 7, 2026  
-**Upcoming blueprint change:** None separately announced; beta content is inherently volatile.  
-**Credential status:** [GitHub Certified: Agentic AI Developer (beta)](https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-developer/)
+**Current baseline:** Published skills outline (July 2026), rechecked October 28, 2026
+**Upcoming blueprint change:** None separately announced; check the current Microsoft Learn study guide before booking.
+**Credential status:** [GitHub Certified: Agentic AI Developer](https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-developer/)
+
+## Living-guide watch — October 28, 2026
+
+**Credential status:** The current GitHub credential page now presents GitHub Certified: Agentic AI Developer as a regular certification; it no longer labels the credential or exam beta. The current page lists a 120-minute proctored exam, potential interactive components, English delivery, and annual Microsoft renewal. The July 2026 skills outline remains the current published baseline. Verify current price and appointment conditions in Pearson VUE; the public credential page may omit region-specific price.
+
+**Current workflow context:** GitHub Agentic Workflows reached general availability on October 28. It is an Actions-based, Markdown-authored repository-automation product with read-only permissions by default and controlled write outputs; do not treat this product feature as a GH-600 objective by itself. Keep agent authority, tool permissions, artifact review, execution isolation, and cost ownership explicit. See the [GitHub changelog](https://github.blog/changelog/2026-10-28-github-agentic-workflows-generally-available/).
 
 ## How to use this guide
 
@@ -32,7 +38,7 @@ Study each domain as an operating decision, not a product vocabulary list. For e
 
 Use the official [GH-600 course](https://learn.microsoft.com/en-us/training/courses/gh-600t00), [Part 1 learning path](https://learn.microsoft.com/en-us/training/paths/gh-developing-agentic-systems-1), and [Part 2 learning path](https://learn.microsoft.com/en-us/training/paths/github-agentic-systems-part-two/github-agentic-systems-part-two) for the current Microsoft-authored sequence. This guide adds decision tables, failure reasoning, labs, and review prompts; it does not reproduce exam questions.
 
-> **About related items:** A `Related item:` callout adds implementation or operational context that makes the current objective easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published beta objectives.
+> **About related items:** A `Related item:` callout adds implementation or operational context that makes the current objective easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published objectives.
 
 ## Objective map
 
@@ -495,7 +501,7 @@ Attempt to induce an agent to edit a protected path, expose a fake secret, call 
 | Preview repository automation | [Creating GitHub Agentic Workflows](https://docs.github.com/en/copilot/how-tos/github-agentic-workflows/creating-github-agentic-workflows) |
 | Workflow isolation controls | [Workflow concurrency](https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/control-workflow-concurrency) and [deployment environments](https://docs.github.com/en/actions/how-tos/deploy/configure-and-manage-deployments/manage-environments) |
 
-**VERIFY CURRENT before the exam:** beta status and scoring timeline; objective revision date and weights; available exam languages and booking terms; product/plan availability; preview versus GA status; agent, hook, memory, MCP, workflow, and enterprise-policy behavior; supported tools and configuration syntax. When sources conflict, preserve the discrepancy, prefer the narrowest authoritative source for the decision, and record what still needs validation.
+**VERIFY CURRENT before the exam:** scoring timeline; objective revision date and weights; available exam languages and booking terms; product/plan availability; preview versus GA status; agent, hook, memory, MCP, workflow, and enterprise-policy behavior; supported tools and configuration syntax. When sources conflict, preserve the discrepancy, prefer the narrowest authoritative source for the decision, and record what still needs validation.
 
 ---
 
@@ -512,4 +518,4 @@ This is a curated starting point, not a complete list, and it is not meant to be
 | [Creating GitHub Agentic Workflows](https://docs.github.com/en/copilot/how-tos/github-agentic-workflows/creating-github-agentic-workflows) | Free; hands-on use requires supported tools/accounts | About 1–2 hours for reading and a disposable-repository exercise | Useful CI integration practice, but public preview and adjacent to the durable objective rather than permanent syntax authority |
 | This guide's seven labs | Free; some product features need an eligible account | About 7–14 hours | Evidence-first practice; use tabletop substitutes where a licensed or enterprise feature is unavailable |
 
-No exact third-party GH-600 course or practice product was promoted in the September 7 review. That is a current catalog gap, not a claim that none exists. Avoid products centered on “real,” recalled, or leaked questions, and recheck all beta-alignment claims against the official study guide.
+No exact third-party GH-600 course or practice product was promoted in the September 7 review. That is a current catalog gap, not a claim that none exists. Avoid products centered on “real,” recalled, or leaked questions, and recheck all objective-alignment claims against the official study guide.

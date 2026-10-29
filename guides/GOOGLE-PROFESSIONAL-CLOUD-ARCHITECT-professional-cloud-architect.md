@@ -6,18 +6,22 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-28
 ---
 
 # Google Cloud Professional Cloud Architect Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 29, 2026. Human review is still pending. See the [coverage record](../docs/SOURCE-VALIDATION.md#google-professional-cloud-architect-coverage-record). The [official certification page](https://cloud.google.com/learn/certification/cloud-architect) and [detailed exam guide](https://services.google.com/fh/files/misc/professional_cloud_architect_exam_guide_english.pdf) are authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on October 28, 2026. Human review is still pending. See the [coverage record](../docs/SOURCE-VALIDATION.md#google-professional-cloud-architect-coverage-record). The [official certification page](https://cloud.google.com/learn/certification/cloud-architect) and [detailed exam guide](https://services.google.com/fh/files/misc/professional_cloud_architect_exam_guide_english.pdf) are authoritative.
 
-**Current baseline:** Six domains weighted approximately 25%, 17.5%, 17.5%, 15%, 12.5%, and 12.5%; actual seven-page guide and all four case-study PDFs read September 29, 2026; 101 mapped statements (96 bullets plus five standalone objectives) under 22 numbered objectives<br>
+**Current baseline:** Six domains weighted approximately 25%, 17.5%, 17.5%, 15%, 12.5%, and 12.5%; actual seven-page guide and all four case-study PDFs read October 28, 2026; 101 mapped statements (96 bullets plus five standalone objectives) under 22 numbered objectives<br>
 **Published change notice:** Google says the exam was updated for recent branding changes and directs candidates to the exam guide for current product names. No future effective date is announced.<br>
 **Official source:** [Certification page](https://cloud.google.com/learn/certification/cloud-architect) · [exam guide](https://services.google.com/fh/files/misc/professional_cloud_architect_exam_guide_english.pdf) · [Architecture Center](https://cloud.google.com/architecture)
+
+## Refresh check — October 28, 2026
+
+Google’s live page still lists the six architecture abilities and says the exam was updated for recent product-branding changes. Google’s certification hub separately notes broader Next ’26 exam-guide updates; it does not name a new PCA effective date or domain set. Keep the official PCA PDF linked below as the scope authority and map legacy product names to current documentation only when needed. Google lists both a renewal exam and eligible Google Skills course/badge route for active holders. [PCA certification page](https://cloud.google.com/learn/certification/cloud-architect) · [certification hub](https://cloud.google.com/learn/certification).
 
 ## How to use this guide
 
@@ -243,7 +247,7 @@ These eight cloud exercises are **proposed, not executed in this review**. Use a
 
 ### Offline architecture worksheet — executed
 
-Save the following as `pca_architecture_workbook.py` and run `python pca_architecture_workbook.py`. The exact standard-library code passed **32 checks** on September 29, 2026. It sends no requests and changes no infrastructure.
+Save the following as `pca_architecture_workbook.py` and run `python pca_architecture_workbook.py`. The exact standard-library code passed **32 checks** on October 28, 2026. It sends no requests and changes no infrastructure.
 
 The deterministic recovery graph assumes unlimited parallel workers and invented task durations; its result is planning arithmetic, not measured RTO. Backlog arithmetic assumes steady effective rates and no additional transfer/apply overhead. Burn rate uses a stated request population; the separate time budget assumes a 30-day time-based SLO. The approval model assumes trusted reviewer identities and approval records; hashing binds content but does not authenticate a reviewer, prove content correctness, or provide an atomic publication transaction. A real workflow must revalidate and commit atomically under its actual authorization and concurrency rules.
 
@@ -435,7 +439,7 @@ The quicker recovery scenario changes only the database task and yields 53 minut
 
 ## Places to learn
 
-This is **not a complete list**, and it is not meant to be consumed in full. Pick a coherent route, use the blueprint/case studies as the checklist, and select labs/readings for weak decisions. Public metadata was checked September 29, 2026; paid lessons/labs were not accessed. Separate visible content totals from schedule estimates, then add practice, design, troubleshooting and review time.
+This is **not a complete list**, and it is not meant to be consumed in full. Pick a coherent route, use the blueprint/case studies as the checklist, and select labs/readings for weak decisions. Public metadata was checked October 28, 2026; paid lessons/labs were not accessed. Separate visible content totals from schedule estimates, then add practice, design, troubleshooting and review time.
 
 | Resource | Access | Estimated time | Best use / currency note |
 |---|---|---:|---|
@@ -448,7 +452,7 @@ This is **not a complete list**, and it is not meant to be consumed in full. Pic
 | [Whizlabs Professional Cloud Architect](https://www.whizlabs.com/google-cloud-certified-professional-cloud-architect/) | Paid; limited free material may vary | Full current catalog not exposed; verify before purchase | Direct fetch returned a title-only shell, so course/lab quantities and current objective alignment were not verified |
 | [Well-Architected Framework](https://cloud.google.com/architecture/framework) and [Architecture Center](https://cloud.google.com/architecture) | Public | 12–30h targeted reading | Production tradeoffs and all six cross-cutting pillars |
 
-A current [Pluralsight PCA path](https://www.pluralsight.com/paths/google-certified-professional-cloud-architect-by-pluralsight) is verified: seven Victor Dantas courses total **7h17m**, with one 30-minute regional-MIG lab, **7h47m** altogether versus the rounded eight-hour header. Core course dates span July–December 2025; the lab is August 6, 2026. Compare current AI/agent/case objectives explicitly; public titles and dates do not establish complete paid-lesson coverage. No verified MeasureUp PCA item is added.
+A current [Pluralsight PCA path](https://www.pluralsight.com/paths/google-certified-professional-cloud-architect-by-pluralsight) lists seven Victor Dantas courses and four labs. The course cards total **7h17m**; the labs total **2h30m** (regional MIG, hybrid zero trust, cost/storage lifecycle, and reliability/rollouts), or **9h47m** versus the rounded 10-hour header. The cost/storage lab is dated October 22, 2026. Compare current AI/agent/case objectives explicitly; public titles and dates do not establish complete paid-lesson coverage. No verified MeasureUp PCA item is added.
 
 ### Current-version gap checklist
 

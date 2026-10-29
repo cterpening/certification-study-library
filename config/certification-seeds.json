@@ -212,6 +212,27 @@
       "catalog_url": "https://education.oracle.com/midtier/html/OUCollectionsProducts/pillar.html",
       "selection": "Five current English 2026 Oracle University professional paths selected September 4, 2026: OCI Architect, Developer, DevOps, Networking, and Observability. The current Networking path and exam identify 2026 while one path-description sentence still names 2025; that inconsistency is retained as a verification warning.",
       "last_verified": "2026-09-04"
+    },
+    {
+      "id": "ibm-bob-v2-current",
+      "vendor_id": "ibm",
+      "catalog_url": "https://www.ibm.com/training/certification/ibm-certified-bob-v2-developer-associate-C9010800",
+      "selection": "IBM Bob v2 Developer Associate added October 28, 2026 from the live C9010800 credential and C3000-006 public exam API. This adds one credential to the six IBM anchors checked September 4; it does not reverify the whole IBM catalog.",
+      "last_verified": "2026-10-28"
+    },
+    {
+      "id": "microsoft-october-discovery-2026",
+      "vendor_id": "microsoft",
+      "catalog_url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-devops-engineer-expert/",
+      "selection": "Targeted October 28, 2026 identity triage of public Microsoft credential/exam pages after a catalog delta. Research-only entries; no published guide, complete objective review, prerequisite equivalence or replacement is inferred.",
+      "last_verified": "2026-10-28"
+    },
+    {
+      "id": "microsoft-office-october-discovery-2026",
+      "vendor_id": "microsoft-office",
+      "catalog_url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-for-operational-management-associate/",
+      "selection": "Targeted October 28, 2026 identity triage of public Microsoft credential/exam pages after a catalog delta. Research-only entries; no published guide, complete objective review, prerequisite equivalence or replacement is inferred.",
+      "last_verified": "2026-10-28"
     }
   ],
   "certifications": [
@@ -281,7 +302,7 @@
         "Microsoft Certified: Agentic AI Business Solutions Architect"
       ],
       "lifecycle": {
-        "checked_on": "2026-09-30",
+        "checked_on": "2026-10-28",
         "blueprint_updates": [
           {
             "effective_on": "2026-07-22",
@@ -292,9 +313,14 @@
             "effective_on": "2026-10-14",
             "language": "en",
             "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100"
+          },
+          {
+            "effective_on": "2026-11-16",
+            "language": "en",
+            "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100"
           }
         ],
-        "notes": "The July 22 English baseline is preserved in the repository objective snapshot and September 27 deep review. Microsoft now displays the October 14 outline and announces that future effective date. The credential title adds Expert; the exam code remains AB-100 and the exam title can omit Expert. The former credential title is retained as an LMS query alias. The exact rename effective date and initial release date are not confirmed. Conflicting prerequisite lists remain documented in the guide; more research is needed on the next pass."
+        "notes": "Observed October 28: official page displays 2026-11-16 English scope. It is future on the check date; preserve the accepted historical teaching snapshot until a complete objective reconciliation. Earlier dated observations remain historical."
       },
       "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect/",
       "status": "active",
@@ -306,7 +332,11 @@
       "title": "Microsoft Certified: AI Agent Builder Associate",
       "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/ai-agent-builder-associate/",
       "status": "active",
-      "source_id": "microsoft-azure-current"
+      "source_id": "microsoft-azure-current",
+      "lifecycle": {
+        "checked_on": "2026-10-28",
+        "notes": "October 28 complete-guide/objective refresh retains the byte-identical current detailed outline. Named workflow teaching and current product/resource observations reconciled; no product lab executed. See group-03 report for bounded source/execution limits. The undated study-page metadata date changed; it does not establish a new skills-effective date."
+      }
     },
     {
       "vendor_id": "microsoft",
@@ -316,14 +346,15 @@
       "status": "active",
       "source_id": "microsoft-azure-current",
       "lifecycle": {
-        "checked_on": "2026-09-30",
+        "checked_on": "2026-10-28",
         "blueprint_updates": [
           {
             "effective_on": "2026-10-14",
             "language": "en",
             "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-900"
           }
-        ]
+        ],
+        "notes": "October28 detailed refresh accepts the current English outline; earlier effective-date notices remain historical. No later English revision announced on checked canonical pages."
       }
     },
     {
@@ -350,7 +381,18 @@
       "title": "Microsoft Certified: Azure AI Cloud Developer Associate",
       "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-cloud-developer-associate/",
       "status": "active",
-      "source_id": "microsoft-azure-current"
+      "source_id": "microsoft-azure-current",
+      "lifecycle": {
+        "checked_on": "2026-10-28",
+        "notes": "October28 detailed refresh accepts the current English outline; earlier effective-date notices remain historical. Official data-domain weights still disagree; current source gate blocked.",
+        "blueprint_updates": [
+          {
+            "effective_on": "2026-10-07",
+            "language": "en",
+            "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-200"
+          }
+        ]
+      }
     },
     {
       "vendor_id": "microsoft",
@@ -358,15 +400,30 @@
       "title": "Microsoft Certified: Machine Learning Operations Engineer Associate",
       "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/operationalizing-machine-learning-and-generative-ai-solutions/",
       "status": "active",
-      "source_id": "microsoft-azure-current"
+      "source_id": "microsoft-azure-current",
+      "lifecycle": {
+        "checked_on": "2026-10-28",
+        "notes": "October 28 complete-guide/objective refresh retains the byte-identical current detailed outline. Named workflow teaching and current product/resource observations reconciled; no product lab executed. See group-03 report for bounded source/execution limits. The undated study-page metadata date changed; it does not establish a new skills-effective date."
+      }
     },
     {
       "vendor_id": "microsoft",
       "exam_code": "AI-500",
-      "title": "Microsoft Certified: Multi-Agent AI Solutions Expert (beta)",
+      "title": "Microsoft Certified: Multi-Agent AI Solutions Expert",
       "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/multi-agent-ai-solutions-expert/",
-      "status": "beta",
-      "source_id": "microsoft-azure-current"
+      "status": "active",
+      "source_id": "microsoft-azure-current",
+      "aliases": [
+        "Microsoft Certified: Multi-Agent AI Solutions Expert (beta)"
+      ],
+      "lifecycle": {
+        "checked_on": "2026-10-28",
+        "notes": "Current official exam and credential headings omit beta; course/exam pages list AI-500T00. Recorded as active on observed-page evidence, without inventing a GA date. English; no official Practice Assessment listed.",
+        "source_urls": [
+          "https://learn.microsoft.com/en-us/credentials/certifications/exams/ai-500/",
+          "https://learn.microsoft.com/en-us/credentials/certifications/multi-agent-ai-solutions-expert/"
+        ]
+      }
     },
     {
       "vendor_id": "microsoft",
@@ -376,14 +433,15 @@
       "status": "active",
       "source_id": "microsoft-azure-current",
       "lifecycle": {
-        "checked_on": "2026-09-30",
+        "checked_on": "2026-10-28",
         "blueprint_updates": [
           {
             "effective_on": "2026-04-15",
             "language": "en",
             "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-901"
           }
-        ]
+        ],
+        "notes": "October 28 complete-guide/objective refresh retains the byte-identical current detailed outline. Named workflow teaching and current product/resource observations reconciled; no product lab executed. See group-03 report for bounded source/execution limits."
       }
     },
     {
@@ -394,14 +452,15 @@
       "status": "active",
       "source_id": "microsoft-azure-current",
       "lifecycle": {
-        "checked_on": "2026-09-30",
+        "checked_on": "2026-10-28",
         "blueprint_updates": [
           {
             "effective_on": "2026-04-17",
             "language": "en",
             "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104"
           }
-        ]
+        ],
+        "notes": "October 28 complete-guide/objective refresh retains the byte-identical current detailed outline. Named workflow teaching and current product/resource observations reconciled; no product lab executed. See group-03 report for bounded source/execution limits."
       }
     },
     {
@@ -412,14 +471,15 @@
       "status": "active",
       "source_id": "microsoft-azure-current",
       "lifecycle": {
-        "checked_on": "2026-09-30",
+        "checked_on": "2026-10-28",
         "blueprint_updates": [
           {
             "effective_on": "2026-04-17",
             "language": "en",
             "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-120"
           }
-        ]
+        ],
+        "notes": " October 28 group05 complete-guide refresh retains the accepted objective bytes and separately maps current detailed Office PDF tasks. Page update dates do not establish new scope. See group05 report for source gaps, proposed unexecuted workflows and bounded review."
       }
     },
     {
@@ -430,14 +490,15 @@
       "status": "active",
       "source_id": "microsoft-azure-current",
       "lifecycle": {
-        "checked_on": "2026-09-30",
+        "checked_on": "2026-10-28",
         "blueprint_updates": [
           {
             "effective_on": "2026-07-20",
             "language": "en",
             "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-140"
           }
-        ]
+        ],
+        "notes": "October 28 complete-guide/objective refresh retains the byte-identical current detailed outline. Named workflow teaching and current product/resource observations reconciled; no product lab executed. See group-03 report for bounded source/execution limits."
       }
     },
     {
@@ -448,14 +509,15 @@
       "status": "active",
       "source_id": "microsoft-azure-current",
       "lifecycle": {
-        "checked_on": "2026-09-30",
+        "checked_on": "2026-10-28",
         "blueprint_updates": [
           {
             "effective_on": "2026-04-17",
             "language": "en",
             "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-305"
           }
-        ]
+        ],
+        "notes": "October 28 complete-guide/objective refresh retains the byte-identical current detailed outline. Named workflow teaching and current product/resource observations reconciled; no product lab executed. See group-03 report for bounded source/execution limits."
       }
     },
     {
@@ -466,14 +528,15 @@
       "status": "active",
       "source_id": "microsoft-azure-current",
       "lifecycle": {
-        "checked_on": "2026-09-30",
+        "checked_on": "2026-10-28",
         "blueprint_updates": [
           {
             "effective_on": "2026-07-27",
             "language": "en",
             "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-400"
           }
-        ]
+        ],
+        "notes": "October 28 complete-guide/objective refresh retains the byte-identical current detailed outline. Named workflow teaching and current product/resource observations reconciled; no product lab executed. See group-03 report for bounded source/execution limits."
       }
     },
     {
@@ -484,14 +547,15 @@
       "status": "active",
       "source_id": "microsoft-azure-current",
       "lifecycle": {
-        "checked_on": "2026-09-30",
+        "checked_on": "2026-10-28",
         "blueprint_updates": [
           {
             "effective_on": "2026-07-27",
             "language": "en",
             "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-700"
           }
-        ]
+        ],
+        "notes": "October 28 complete-guide/objective refresh retains the byte-identical current detailed outline. Named workflow teaching and current product/resource observations reconciled; no product lab executed. See group-03 report for bounded source/execution limits."
       }
     },
     {
@@ -499,42 +563,46 @@
       "exam_code": "AZ-800",
       "title": "Microsoft Certified: Windows Server Hybrid Administrator Associate",
       "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/windows-server-hybrid-administrator/",
-      "status": "retirement-announced",
+      "status": "retired",
       "retirement_date": "2026-09-30",
       "replacement_exam_code": "AZ-802",
       "replacement_official_url": "https://learn.microsoft.com/en-us/credentials/certifications/windows-server-administrator-associate/",
       "source_id": "microsoft-azure-current",
       "lifecycle": {
-        "checked_on": "2026-09-30",
+        "checked_on": "2026-10-28",
         "blueprint_updates": [
           {
             "effective_on": "2026-01-21",
             "language": "en",
             "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-800"
           }
-        ]
-      }
+        ],
+        "notes": "Microsoft study guide explicitly states the exam was retired September 30, 2026 at 5 PM CST; rechecked October 28. Accepted teaching snapshot remains archived; AZ-802 is the current preparation route. Historical technical gaps remain unresolved."
+      },
+      "retirement_source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-800"
     },
     {
       "vendor_id": "microsoft",
       "exam_code": "AZ-801",
       "title": "Microsoft Certified: Windows Server Hybrid Administrator Associate",
       "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/windows-server-hybrid-administrator/",
-      "status": "retirement-announced",
+      "status": "retired",
       "retirement_date": "2026-09-30",
       "replacement_exam_code": "AZ-802",
       "replacement_official_url": "https://learn.microsoft.com/en-us/credentials/certifications/windows-server-administrator-associate/",
       "source_id": "microsoft-azure-current",
       "lifecycle": {
-        "checked_on": "2026-09-30",
+        "checked_on": "2026-10-28",
         "blueprint_updates": [
           {
             "effective_on": "2025-10-06",
             "language": "en",
             "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-801"
           }
-        ]
-      }
+        ],
+        "notes": "Microsoft study guide explicitly states the exam was retired September 30, 2026 at 5 PM CST; rechecked October 28. Accepted teaching snapshot remains archived; AZ-802 is the current preparation route. Historical technical gaps remain unresolved."
+      },
+      "retirement_source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-801"
     },
     {
       "vendor_id": "microsoft",
@@ -542,7 +610,11 @@
       "title": "Microsoft Certified: Windows Server Administrator Associate",
       "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/windows-server-administrator-associate/",
       "status": "active",
-      "source_id": "microsoft-azure-adjacent-current"
+      "source_id": "microsoft-azure-adjacent-current",
+      "lifecycle": {
+        "checked_on": "2026-10-28",
+        "notes": " October 28 group05 complete-guide refresh retains the accepted objective bytes and separately maps current detailed Office PDF tasks. Page update dates do not establish new scope. See group05 report for source gaps, proposed unexecuted workflows and bounded review."
+      }
     },
     {
       "vendor_id": "microsoft",
@@ -552,14 +624,15 @@
       "status": "active",
       "source_id": "microsoft-azure-current",
       "lifecycle": {
-        "checked_on": "2026-09-30",
+        "checked_on": "2026-10-28",
         "blueprint_updates": [
           {
             "effective_on": "2026-07-20",
             "language": "en",
             "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"
           }
-        ]
+        ],
+        "notes": "October 28 complete-guide/objective refresh retains the byte-identical current detailed outline. Named workflow teaching and current product/resource observations reconciled; no product lab executed. See group-03 report for bounded source/execution limits."
       }
     },
     {
@@ -570,33 +643,38 @@
       "status": "active",
       "source_id": "microsoft-azure-current",
       "lifecycle": {
-        "checked_on": "2026-09-30",
+        "checked_on": "2026-10-28",
         "blueprint_updates": [
           {
             "effective_on": "2026-10-27",
             "language": "en",
             "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300"
           }
-        ]
+        ],
+        "notes": "Current effective October English outline accepted after complete detailed-objective mapping and teaching reconciliation. Earlier objective bytes and dated reviews preserved; no later revision announced on checked pages."
       }
     },
     {
       "vendor_id": "microsoft",
       "exam_code": "DP-420",
-      "title": "Microsoft Certified: Azure Cosmos DB Developer Specialty",
+      "title": "Microsoft Certified: Azure Cosmos DB AI Developer Associate",
       "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-cosmos-db-developer-specialty/",
       "status": "active",
       "source_id": "microsoft-azure-current",
       "lifecycle": {
-        "checked_on": "2026-09-30",
+        "checked_on": "2026-10-28",
         "blueprint_updates": [
           {
             "effective_on": "2026-10-06",
             "language": "en",
             "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-420"
           }
-        ]
-      }
+        ],
+        "notes": "Current October 6 English outline accepted after all 56 detailed objectives were mapped. Credential name/level change took effect October 6; future-tense study-page copy remains a dated source observation. Exam code DP-420 unchanged; July snapshot/reviews archived."
+      },
+      "aliases": [
+        "Microsoft Certified: Azure Cosmos DB Developer Specialty"
+      ]
     },
     {
       "vendor_id": "microsoft",
@@ -606,14 +684,15 @@
       "status": "active",
       "source_id": "microsoft-azure-current",
       "lifecycle": {
-        "checked_on": "2026-09-30",
+        "checked_on": "2026-10-28",
         "blueprint_updates": [
           {
             "effective_on": "2026-10-19",
             "language": "en",
             "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-750"
           }
-        ]
+        ],
+        "notes": "Current effective October English outline accepted after complete detailed-objective mapping and teaching reconciliation. Earlier objective bytes and dated reviews preserved; no later revision announced on checked pages."
       }
     },
     {
@@ -624,14 +703,15 @@
       "status": "active",
       "source_id": "microsoft-published-outside-azure",
       "lifecycle": {
-        "checked_on": "2026-09-30",
+        "checked_on": "2026-10-28",
         "blueprint_updates": [
           {
             "effective_on": "2026-10-19",
             "language": "en",
             "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-600"
           }
-        ]
+        ],
+        "notes": "Current effective October English outline accepted after complete detailed-objective mapping and teaching reconciliation. Earlier objective bytes and dated reviews preserved; no later revision announced on checked pages."
       }
     },
     {
@@ -642,14 +722,15 @@
       "status": "active",
       "source_id": "microsoft-azure-current",
       "lifecycle": {
-        "checked_on": "2026-09-30",
+        "checked_on": "2026-10-28",
         "blueprint_updates": [
           {
             "effective_on": "2026-10-19",
             "language": "en",
             "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-800"
           }
-        ]
+        ],
+        "notes": "Current effective October English outline accepted after complete objective mapping and teaching reconciliation. Historical objective bytes/dated reviews preserved; source and runtime limits remain in the group-02 report."
       }
     },
     {
@@ -660,14 +741,15 @@
       "status": "active",
       "source_id": "microsoft-azure-current",
       "lifecycle": {
-        "checked_on": "2026-09-30",
+        "checked_on": "2026-10-28",
         "blueprint_updates": [
           {
             "effective_on": "2026-07-21",
             "language": "en",
             "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-900"
           }
-        ]
+        ],
+        "notes": " October28 group04 complete-guide/objective refresh retains the exact current detailed outline/status bytes. Workflow teaching and scoped product/resource evidence reconciled; source/human/lab limits remain in the group04 report."
       }
     },
     {
@@ -678,14 +760,15 @@
       "status": "active",
       "source_id": "microsoft-published-outside-azure",
       "lifecycle": {
-        "checked_on": "2026-09-30",
+        "checked_on": "2026-10-28",
         "blueprint_updates": [
           {
             "effective_on": "2026-07-24",
             "language": "en",
             "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-900"
           }
-        ]
+        ],
+        "notes": " October28 group04 complete-guide/objective refresh retains the exact current detailed outline/status bytes. Workflow teaching and scoped product/resource evidence reconciled; source/human/lab limits remain in the group04 report."
       }
     },
     {
@@ -696,14 +779,15 @@
       "status": "active",
       "source_id": "microsoft-azure-adjacent-current",
       "lifecycle": {
-        "checked_on": "2026-09-30",
+        "checked_on": "2026-10-28",
         "blueprint_updates": [
           {
             "effective_on": "2026-10-21",
             "language": "en",
             "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-100"
           }
-        ]
+        ],
+        "notes": "Current effective October English outline accepted after complete objective mapping and teaching reconciliation. Historical objective bytes/dated reviews preserved; source and runtime limits remain in the group-02 report."
       }
     },
     {
@@ -714,14 +798,15 @@
       "status": "active",
       "source_id": "microsoft-azure-current",
       "lifecycle": {
-        "checked_on": "2026-09-30",
+        "checked_on": "2026-10-28",
         "blueprint_updates": [
           {
             "effective_on": "2026-10-21",
             "language": "en",
             "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200"
           }
-        ]
+        ],
+        "notes": "Current effective October English outline accepted after complete objective mapping and teaching reconciliation. Historical objective bytes/dated reviews preserved; source and runtime limits remain in the group-02 report."
       }
     },
     {
@@ -732,14 +817,15 @@
       "status": "active",
       "source_id": "microsoft-azure-current",
       "lifecycle": {
-        "checked_on": "2026-09-30",
+        "checked_on": "2026-10-28",
         "blueprint_updates": [
           {
             "effective_on": "2026-10-28",
             "language": "en",
             "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-300"
           }
-        ]
+        ],
+        "notes": "Current October 28 wording accepted after complete mapping. Canonical authentication/access weights still conflict:25–30% at a glance and20–25% detailed. Neither is silently selected; source gate remains blocked."
       }
     },
     {
@@ -748,7 +834,11 @@
       "title": "Microsoft Certified: Cloud and AI Security Engineer Associate",
       "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/cloud-and-ai-security-engineer-associate/",
       "status": "active",
-      "source_id": "microsoft-azure-current"
+      "source_id": "microsoft-azure-current",
+      "lifecycle": {
+        "checked_on": "2026-10-28",
+        "notes": " October28 group04 complete-guide/objective refresh retains the exact current detailed outline/status bytes. Workflow teaching and scoped product/resource evidence reconciled; source/human/lab limits remain in the group04 report."
+      }
     },
     {
       "vendor_id": "microsoft",
@@ -758,14 +848,15 @@
       "status": "active",
       "source_id": "microsoft-published-outside-azure",
       "lifecycle": {
-        "checked_on": "2026-09-30",
+        "checked_on": "2026-10-28",
         "blueprint_updates": [
           {
             "effective_on": "2026-10-28",
             "language": "en",
             "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-401"
           }
-        ]
+        ],
+        "notes": "October 28 current published outline accepted. Credential metadata Last Updated October 14 is not a separate effective-scope announcement; earlier date-conflict interpretation corrected. Historical July bytes and dated receipts retained."
       }
     },
     {
@@ -776,14 +867,15 @@
       "status": "active",
       "source_id": "microsoft-azure-current",
       "lifecycle": {
-        "checked_on": "2026-09-30",
+        "checked_on": "2026-10-28",
         "blueprint_updates": [
           {
             "effective_on": "2026-10-21",
             "language": "en",
             "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900"
           }
-        ]
+        ],
+        "notes": "Current effective October English outline accepted after complete objective mapping and teaching reconciliation. Historical objective bytes/dated reviews preserved; source and runtime limits remain in the group-02 report."
       }
     },
     {
@@ -795,14 +887,15 @@
       "retirement_date": "2026-11-30",
       "source_id": "microsoft-published-outside-azure",
       "lifecycle": {
-        "checked_on": "2026-09-30",
+        "checked_on": "2026-10-28",
         "blueprint_updates": [
           {
             "effective_on": "2026-04-28",
             "language": "en",
             "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-102"
           }
-        ]
+        ],
+        "notes": "Retirement November 30 at 11:59 PM CST remains; no direct expert-credential replacement named on checked canonical pages. Credential page lists four prerequisite options while study-guide audience lists three; retain discrepancy. AB-650T00 is replacement training, not proof of replacement expert credential."
       }
     },
     {
@@ -811,7 +904,11 @@
       "title": "Microsoft 365 Certified: Microsoft 365 and AI Services Administrator Associate",
       "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/ai-services-administrator-associate/",
       "status": "beta",
-      "source_id": "microsoft-published-outside-azure"
+      "source_id": "microsoft-published-outside-azure",
+      "lifecycle": {
+        "checked_on": "2026-10-28",
+        "notes": "Beta and English retained; actual outline is undated despite two-version boilerplate. No Practice Assessment listed. November 13 course availability and public lab instructions do not establish delivered classes or included tenant access."
+      }
     },
     {
       "vendor_id": "microsoft",
@@ -821,14 +918,15 @@
       "status": "active",
       "source_id": "microsoft-published-outside-azure",
       "lifecycle": {
-        "checked_on": "2026-09-30",
+        "checked_on": "2026-10-28",
         "blueprint_updates": [
           {
             "effective_on": "2026-10-27",
             "language": "en",
             "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/md-102"
           }
-        ]
+        ],
+        "notes": "Current effective October English outline accepted after complete objective mapping and teaching reconciliation. Historical objective bytes/dated reviews preserved; source and runtime limits remain in the group-02 report."
       }
     },
     {
@@ -839,14 +937,15 @@
       "status": "active",
       "source_id": "microsoft-published-outside-azure",
       "lifecycle": {
-        "checked_on": "2026-09-30",
+        "checked_on": "2026-10-28",
         "blueprint_updates": [
           {
             "effective_on": "2026-10-27",
             "language": "en",
             "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-700"
           }
-        ]
+        ],
+        "notes": "Current effective October English outline accepted after complete objective mapping and teaching reconciliation. Historical objective bytes/dated reviews preserved; source and runtime limits remain in the group-02 report."
       }
     },
     {
@@ -857,14 +956,15 @@
       "status": "active",
       "source_id": "microsoft-published-outside-azure",
       "lifecycle": {
-        "checked_on": "2026-09-30",
+        "checked_on": "2026-10-28",
         "blueprint_updates": [
           {
             "effective_on": "2026-10-29",
             "language": "en",
             "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-721"
           }
-        ]
+        ],
+        "notes": "Live page shows future October 29 English outline. Current April 28 objective/status bytes retained; 173 current and 173 future objectives mapped separately. Future text saved under a separate filename; a reached date does not itself complete acceptance or prove localized delivery."
       }
     },
     {
@@ -875,14 +975,15 @@
       "status": "active",
       "source_id": "microsoft-published-outside-azure",
       "lifecycle": {
-        "checked_on": "2026-09-30",
+        "checked_on": "2026-10-28",
         "blueprint_updates": [
           {
             "effective_on": "2026-10-19",
             "language": "en",
             "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-700"
           }
-        ]
+        ],
+        "notes": "Current effective October English outline accepted after complete detailed-objective mapping and teaching reconciliation. Earlier objective bytes and dated reviews preserved; no later revision announced on checked pages."
       }
     },
     {
@@ -925,14 +1026,15 @@
       "status": "active",
       "source_id": "microsoft-published-outside-azure",
       "lifecycle": {
-        "checked_on": "2026-09-30",
+        "checked_on": "2026-10-28",
         "blueprint_updates": [
           {
             "effective_on": "2026-04-20",
             "language": "en",
             "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300"
           }
-        ]
+        ],
+        "notes": " October28 group04 complete-guide/objective refresh retains the exact current detailed outline/status bytes. Workflow teaching and scoped product/resource evidence reconciled; source/human/lab limits remain in the group04 report."
       }
     },
     {
@@ -940,18 +1042,23 @@
       "exam_code": "PL-400",
       "title": "Microsoft Certified: Power Platform Developer Associate",
       "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate/",
-      "status": "active",
+      "status": "retirement-announced",
       "source_id": "microsoft-published-outside-azure",
       "lifecycle": {
-        "checked_on": "2026-09-30",
+        "checked_on": "2026-10-28",
         "blueprint_updates": [
           {
             "effective_on": "2026-10-16",
             "language": "en",
             "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-400"
           }
-        ]
-      }
+        ],
+        "notes": "Registration closed October 16; existing registrations may test through October 30. The PL-400 page now publishes the October 16 four-domain outline, mapped and accepted in this refresh. AB-400 is the new registration route; this does not publish a separate AB-400 guide or prove identical existing-appointment delivery. Courseware retirement remains distinct."
+      },
+      "retirement_date": "2026-10-30",
+      "retirement_source_url": "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate/",
+      "replacement_official_url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-400/",
+      "replacement_exam_code": "AB-400"
     },
     {
       "vendor_id": "microsoft",
@@ -959,7 +1066,11 @@
       "title": "Microsoft Certified: Intelligent Applications Builder Associate",
       "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/intelligent-applications-builder-associate/",
       "status": "active",
-      "source_id": "microsoft-published-outside-azure"
+      "source_id": "microsoft-published-outside-azure",
+      "lifecycle": {
+        "checked_on": "2026-10-28",
+        "notes": " October 28 group05 complete-guide refresh retains the accepted objective bytes and separately maps current detailed Office PDF tasks. Page update dates do not establish new scope. See group05 report for source gaps, proposed unexecuted workflows and bounded review."
+      }
     },
     {
       "vendor_id": "microsoft",
@@ -969,14 +1080,15 @@
       "status": "active",
       "source_id": "microsoft-published-outside-azure",
       "lifecycle": {
-        "checked_on": "2026-09-30",
+        "checked_on": "2026-10-28",
         "blueprint_updates": [
           {
             "effective_on": "2026-10-20",
             "language": "en",
             "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-730"
           }
-        ]
+        ],
+        "notes": "October28 detailed refresh accepts the current English outline; earlier effective-date notices remain historical. No later English revision announced on checked canonical pages."
       }
     },
     {
@@ -987,14 +1099,15 @@
       "status": "active",
       "source_id": "microsoft-published-outside-azure",
       "lifecycle": {
-        "checked_on": "2026-09-30",
+        "checked_on": "2026-10-28",
         "blueprint_updates": [
           {
             "effective_on": "2026-07-22",
             "language": "en",
             "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-731"
           }
-        ]
+        ],
+        "notes": "October 28 complete-guide/objective refresh retains the byte-identical current detailed outline. Named workflow teaching and current product/resource observations reconciled; no product lab executed. See group-03 report for bounded source/execution limits."
       }
     },
     {
@@ -1003,7 +1116,11 @@
       "title": "Microsoft Certified: Dynamics 365 Sales AI Consultant Associate",
       "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-sales-ai-consultant-associate/",
       "status": "beta",
-      "source_id": "microsoft-published-outside-azure"
+      "source_id": "microsoft-published-outside-azure",
+      "lifecycle": {
+        "checked_on": "2026-10-28",
+        "notes": "Beta/delayed-results wording remains alongside a sign-in Practice Assessment route on AI Skills Navigator. Actual outline undated, page last updated June 18. Retiring Close Agent objectives and current deployment lifecycle are separate."
+      }
     },
     {
       "vendor_id": "microsoft",
@@ -1011,7 +1128,11 @@
       "title": "Microsoft Certified: Dynamics 365 Contact Center AI Engineer Associate",
       "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-contact-center-ai-engineer-associate/",
       "status": "active",
-      "source_id": "microsoft-published-outside-azure"
+      "source_id": "microsoft-published-outside-azure",
+      "lifecycle": {
+        "checked_on": "2026-10-28",
+        "notes": " October28 group04 complete-guide/objective refresh retains the exact current detailed outline/status bytes. Workflow teaching and scoped product/resource evidence reconciled; source/human/lab limits remain in the group04 report."
+      }
     },
     {
       "vendor_id": "microsoft",
@@ -1021,14 +1142,15 @@
       "status": "active",
       "source_id": "microsoft-published-outside-azure",
       "lifecycle": {
-        "checked_on": "2026-09-30",
+        "checked_on": "2026-10-28",
         "blueprint_updates": [
           {
             "effective_on": "2026-03-11",
             "language": "en",
             "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-230"
           }
-        ]
+        ],
+        "notes": " October28 group04 complete-guide/objective refresh retains the exact current detailed outline/status bytes. Workflow teaching and scoped product/resource evidence reconciled; source/human/lab limits remain in the group04 report."
       }
     },
     {
@@ -1039,14 +1161,15 @@
       "status": "active",
       "source_id": "microsoft-published-outside-azure",
       "lifecycle": {
-        "checked_on": "2026-09-30",
+        "checked_on": "2026-10-28",
         "blueprint_updates": [
           {
             "effective_on": "2026-08-14",
             "language": "en",
             "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-310"
           }
-        ]
+        ],
+        "notes": " October28 group04 complete-guide/objective refresh retains the exact current detailed outline/status bytes. Workflow teaching and scoped product/resource evidence reconciled; source/human/lab limits remain in the group04 report."
       }
     },
     {
@@ -1057,14 +1180,15 @@
       "status": "active",
       "source_id": "microsoft-published-outside-azure",
       "lifecycle": {
-        "checked_on": "2026-09-30",
+        "checked_on": "2026-10-28",
         "blueprint_updates": [
           {
             "effective_on": "2026-10-21",
             "language": "en",
             "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-330"
           }
-        ]
+        ],
+        "notes": "Current effective October English outline accepted after complete objective mapping and teaching reconciliation. Historical objective bytes/dated reviews preserved; source and runtime limits remain in the group-02 report."
       }
     },
     {
@@ -1075,14 +1199,15 @@
       "status": "active",
       "source_id": "microsoft-published-outside-azure",
       "lifecycle": {
-        "checked_on": "2026-09-30",
+        "checked_on": "2026-10-28",
         "blueprint_updates": [
           {
             "effective_on": "2026-01-30",
             "language": "en",
             "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-500"
           }
-        ]
+        ],
+        "notes": " October28 group04 complete-guide/objective refresh retains the exact current detailed outline/status bytes. Workflow teaching and scoped product/resource evidence reconciled; source/human/lab limits remain in the group04 report."
       }
     },
     {
@@ -1093,14 +1218,15 @@
       "status": "active",
       "source_id": "microsoft-published-outside-azure",
       "lifecycle": {
-        "checked_on": "2026-09-30",
+        "checked_on": "2026-10-28",
         "blueprint_updates": [
           {
             "effective_on": "2026-06-30",
             "language": "en",
             "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-800"
           }
-        ]
+        ],
+        "notes": " October28 group04 complete-guide/objective refresh retains the exact current detailed outline/status bytes. Workflow teaching and scoped product/resource evidence reconciled; source/human/lab limits remain in the group04 report."
       }
     },
     {
@@ -1111,14 +1237,15 @@
       "status": "active",
       "source_id": "microsoft-published-outside-azure",
       "lifecycle": {
-        "checked_on": "2026-09-30",
+        "checked_on": "2026-10-28",
         "blueprint_updates": [
           {
             "effective_on": "2025-06-10",
             "language": "en",
             "source_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-820"
           }
-        ]
+        ],
+        "notes": " October28 group04 complete-guide/objective refresh retains the exact current detailed outline/status bytes. Workflow teaching and scoped product/resource evidence reconciled; source/human/lab limits remain in the group04 report."
       }
     },
     {
@@ -2313,7 +2440,11 @@
       "title": "Microsoft Word (Microsoft 365 Apps)",
       "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-associate-m365-apps/",
       "status": "active",
-      "source_id": "microsoft-office-365-current"
+      "source_id": "microsoft-office-365-current",
+      "lifecycle": {
+        "checked_on": "2026-10-28",
+        "notes": " October 28 group05 complete-guide refresh retains the accepted objective bytes and separately maps current detailed Office PDF tasks. Page update dates do not establish new scope. See group05 report for source gaps, proposed unexecuted workflows and bounded review."
+      }
     },
     {
       "vendor_id": "microsoft-office",
@@ -2321,7 +2452,11 @@
       "title": "Microsoft Excel (Microsoft 365 Apps)",
       "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-associate-m365-apps/",
       "status": "active",
-      "source_id": "microsoft-office-365-current"
+      "source_id": "microsoft-office-365-current",
+      "lifecycle": {
+        "checked_on": "2026-10-28",
+        "notes": " October 28 group05 complete-guide refresh retains the accepted objective bytes and separately maps current detailed Office PDF tasks. Page update dates do not establish new scope. See group05 report for source gaps, proposed unexecuted workflows and bounded review."
+      }
     },
     {
       "vendor_id": "microsoft-office",
@@ -2329,7 +2464,11 @@
       "title": "Microsoft PowerPoint (Microsoft 365 Apps)",
       "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-powerpoint-associate-m365-apps/",
       "status": "active",
-      "source_id": "microsoft-office-365-current"
+      "source_id": "microsoft-office-365-current",
+      "lifecycle": {
+        "checked_on": "2026-10-28",
+        "notes": " October 28 group05 complete-guide refresh retains the accepted objective bytes and separately maps current detailed Office PDF tasks. Page update dates do not establish new scope. See group05 report for source gaps, proposed unexecuted workflows and bounded review."
+      }
     },
     {
       "vendor_id": "microsoft-office",
@@ -2337,7 +2476,11 @@
       "title": "Microsoft Word Expert (Microsoft 365 Apps)",
       "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-expert-m365-apps/",
       "status": "active",
-      "source_id": "microsoft-office-365-current"
+      "source_id": "microsoft-office-365-current",
+      "lifecycle": {
+        "checked_on": "2026-10-28",
+        "notes": " October 28 group05 complete-guide refresh retains the accepted objective bytes and separately maps current detailed Office PDF tasks. Page update dates do not establish new scope. See group05 report for source gaps, proposed unexecuted workflows and bounded review."
+      }
     },
     {
       "vendor_id": "microsoft-office",
@@ -2345,7 +2488,11 @@
       "title": "Microsoft Excel Expert (Microsoft 365 Apps)",
       "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-expert-m365-apps/",
       "status": "active",
-      "source_id": "microsoft-office-365-current"
+      "source_id": "microsoft-office-365-current",
+      "lifecycle": {
+        "checked_on": "2026-10-28",
+        "notes": " October 28 group05 complete-guide refresh retains the accepted objective bytes and separately maps current detailed Office PDF tasks. Page update dates do not establish new scope. See group05 report for source gaps, proposed unexecuted workflows and bounded review."
+      }
     },
     {
       "vendor_id": "ibm",
@@ -2394,6 +2541,22 @@
       "official_url": "https://www.ibm.com/training/certification/ibm-certified-db2-13-for-zos-database-administrator-associate-C9006800",
       "status": "active",
       "source_id": "ibm-selected-current"
+    },
+    {
+      "vendor_id": "ibm",
+      "exam_code": "C3000-006",
+      "title": "IBM Certified Bob v2 Developer - Associate",
+      "official_url": "https://www.ibm.com/training/certification/ibm-certified-bob-v2-developer-associate-C9010800",
+      "status": "active",
+      "source_id": "ibm-bob-v2-current",
+      "lifecycle": {
+        "checked_on": "2026-10-28",
+        "source_urls": [
+          "https://www.ibm.com/training/credentials/getExam/C3000-006",
+          "https://www.ibm.com/training/certification/ibm-certified-bob-v2-developer-associate-C9010800"
+        ],
+        "notes": "Live exam and credential; public exam record last modified October 21, 2026. No prerequisite exam, withdrawal or replacement listed. A client support notice is not an exam lifecycle change."
+      }
     },
     {
       "vendor_id": "oracle",
@@ -2490,6 +2653,71 @@
       "official_url": "https://mylearn.oracle.com/ou/learning-path/become-an-oracle-cloud-infrastructure-observability-professional-2026/162237",
       "status": "active",
       "source_id": "oracle-oci-advanced-2026"
+    },
+    {
+      "vendor_id": "microsoft",
+      "exam_code": "AZ-401",
+      "title": "Microsoft Certified: Agentic DevOps Engineer Expert (beta)",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-devops-engineer-expert/",
+      "status": "beta",
+      "source_id": "microsoft-october-discovery-2026",
+      "lifecycle": {
+        "checked_on": "2026-10-28",
+        "source_urls": [
+          "https://learn.microsoft.com/en-us/credentials/certifications/agentic-devops-engineer-expert/",
+          "https://learn.microsoft.com/en-us/credentials/certifications/exams/az-401/",
+          "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401"
+        ],
+        "notes": "Credential and exam headings explicitly beta and both include delayed beta scoring notices; exam lists English and retirement none. Research-only: complete guide/source review pending. Credential assessed-domain list repeats AB-100 plan/design/deploy AI business solutions. Dedicated AZ-401 exam and blueprint instead show five DevOps domains; use dedicated blueprint for scope. Exam related-certification summary repeats generic AI-first solution-architect prose. Formal prerequisite requirements not established by this bounded identity check."
+      }
+    },
+    {
+      "vendor_id": "microsoft",
+      "exam_code": "AB-330",
+      "title": "Microsoft Certified: Supply Chain Management AI Consultant Associate (beta)",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/supply-chain-management-ai-consultant-associate/",
+      "status": "beta",
+      "source_id": "microsoft-october-discovery-2026",
+      "lifecycle": {
+        "checked_on": "2026-10-28",
+        "source_urls": [
+          "https://learn.microsoft.com/en-us/credentials/certifications/supply-chain-management-ai-consultant-associate/",
+          "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-330"
+        ],
+        "notes": "Credential heading explicitly beta and body names beta exam AB-330 with delayed-scoring notice. English; 100-minute assessment shown; no current training/practice assessment. Research-only: complete guide/source review pending. Published beta page is present now; earlier anticipated November beta timing must not override current explicit beta status. New credential identity does not establish retirement or automatic replacement of MB-330. Formal prerequisite requirements not established by this bounded identity check."
+      }
+    },
+    {
+      "vendor_id": "microsoft",
+      "exam_code": "AB-400",
+      "title": "Microsoft Certified: Power Platform Developer Associate",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-400/",
+      "status": "active",
+      "source_id": "microsoft-october-discovery-2026",
+      "lifecycle": {
+        "checked_on": "2026-10-28",
+        "source_urls": [
+          "https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-400/",
+          "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-400"
+        ],
+        "notes": "Official exam page explicitly makes AB-400 available October16, 2026 and registration available today; English, retirement none. Official PL-400 transition notice corroborates new registration exclusively AB-400. Research-only: complete guide/source review pending. PL-400 existing registrants can still test through October30; new AB-400 identity is not evidence PL-400 was already retired October28. AB-400 blueprint is already registered as ab-400-transition-blueprint, but there is no published AB-400 guide. Formal prerequisite requirements not established by this bounded identity check."
+      }
+    },
+    {
+      "vendor_id": "microsoft-office",
+      "exam_code": "MO-240",
+      "title": "Microsoft Office Specialist: Excel for Operational Management Associate",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-for-operational-management-associate/",
+      "status": "active",
+      "source_id": "microsoft-office-october-discovery-2026",
+      "lifecycle": {
+        "checked_on": "2026-10-28",
+        "source_urls": [
+          "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-for-operational-management-associate/",
+          "https://arch-center.azureedge.net/Credentials/mos-excel-for-operational-management-od.pdf"
+        ],
+        "notes": "Current credential offers Certiport scheduling, lists English and links an MO-240 skills outline; no beta label observed. This is current-label/scheduling evidence, not an established launch date. Research-only: complete guide/source review pending. Current credential displays renewal frequency 60 months. Record as current page observation and VERIFY CURRENT; do not extrapolate to other MOS credentials. Exam code is visible in the credential PDF link label; PDF itself emphasizes role-based performance tasks and does not print MO-240 in its title. Formal prerequisite requirements not established by this bounded identity check."
+      }
     }
   ]
 }

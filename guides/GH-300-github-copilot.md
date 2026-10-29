@@ -5,41 +5,43 @@ official_blueprint: https://learn.microsoft.com/en-us/credentials/certifications
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: source-validated
-last_verified: 2026-09-27
+review_status: review-required
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-27
+upcoming_change_checked: 2026-10-28
 ---
 
 # GH-300 GitHub Copilot Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 27, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#gh-300-coverage-record). The [official GH-300 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-300) is authoritative.
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 detailed refresh maps all 41 objectives in the retained teaching baseline and checks current public product evidence. See the [current refresh record](../docs/research/2026-10-28-ab100-gh300-ai103-refresh.md#gh-300) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#gh-300-coverage-record). The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-300) is authoritative. Product/tenant execution and human review remain separate; limitations and source conflicts are stated below.
 
 ## Responsible use, features, data architecture, context, productivity, safeguards, and governance
 
-**Prepared:** September 27, 2026<br>
+**Prepared / refreshed:** October 28, 2026<br>
 **Exam:** GH-300 GitHub Copilot<br>
 **Current baseline:** Skills measured as of August 7, 2026<br>
-**Upcoming blueprint change:** None announced on the official study guide as of September 27, 2026. The [credential page](https://learn.microsoft.com/en-us/credentials/certifications/github-copilot/) remains the starting point for booking and current requirements.
+**Upcoming blueprint change:** None announced on the official study guide checked October 28, 2026. The [credential page](https://learn.microsoft.com/en-us/credentials/certifications/github-copilot/) remains the starting point for booking and current requirements.
 
 **Credential lifecycle — VERIFY CURRENT:** That page describes the transition to Microsoft's recertification process, including a six-month extension for certifications that would expire before the new process is available. Check your individual credential record and the current notice; an extension is not a new exam-objective date.
 
+> **Source-review blocker — October 28, 2026:** The current exclusion how-to and September CLI availability announcement conflict. This refresh preserves the disagreement and supplies a harmless verification worksheet; exact client/plan behavior remains untested. The source gate stays blocked. Legacy PDF/API metadata is kept distinct from the current six-domain outline and booking page.
+
 > **VERIFY CURRENT:** Copilot changes rapidly. Recheck pricing, plans, models, feature availability, previews, UI paths, commands, quotas, credits, data handling, and retention in the linked official documentation. Those details are synchronized only to the `last_verified` date above and can change without an exam-blueprint revision.
 
-This standalone guide maps the August 7, 2026 blueprint and includes public-source corrections and additions for Timothy Warner's June 2026 repository.
+This standalone guide maps the August 7, 2026 blueprint and uses Timothy Warner's current September course companion as supplementary learning. Corrections to older June material are retained explicitly as history, not as claims about the current repository.
 
 The current official blueprint is the final authority:
 
 - [Microsoft GH-300 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-300)
 - [GitHub Copilot documentation](https://docs.github.com/en/copilot)
 
-## Living-guide watch — September 27, 2026
+## Living-guide watch — October 28, 2026
 
-**Confirmed September policy and data change:** No earlier than September 28, GitHub will unify Copilot cloud agent, Copilot Chat on github.com, and Copilot Chat in GitHub Mobile under one policy that is enabled by default. The github.com experience moves to agent sessions, and chat data changes from 28-day retention to the life of the account. Administrators should review the unified setting rather than assuming the old policies or retention model remain separate. The same [policy and billing announcement](https://github.blog/changelog/2026-08-28-upcoming-changes-to-github-copilot-policies-and-billing/) says the `Default` code-review effort becomes Balanced September 28 and documents upfront seat billing changes for card/PayPal customers while stating that plan prices do not change.
+**Historical September policy announcement — VERIFY CURRENT:** The August notice scheduled, no earlier than September 28, the unification of Copilot cloud agent, Copilot Chat on github.com, and Copilot Chat in GitHub Mobile under one policy that is enabled by default. The github.com experience moves to agent sessions, and chat data changes from 28-day retention to the life of the account. Administrators should review the unified setting rather than assuming the old policies or retention model remain separate. The same [policy and billing announcement](https://github.blog/changelog/2026-08-28-upcoming-changes-to-github-copilot-policies-and-billing/) says the `Default` code-review effort becomes Balanced September 28 and documents upfront seat billing changes for card/PayPal customers while stating that plan prices do not change.
 
-**Confirmed model volatility:** GitHub plans to remove Gemini 3.5 Flash, Gemini 3.6 Flash, Kimi K2.7 Code, and Claude Opus 4.7 from all Copilot experiences on October 2, 2026 and names newer suggested alternatives. Business and Enterprise administrators may need to enable those alternatives in model policy; see the [model deprecation notice](https://github.blog/changelog/2026-09-03-upcoming-deprecation-of-selected-github-copilot-models/).
+**Model lifecycle checkpoint — VERIFY CURRENT (October 28):** The [current supported-model catalog](https://docs.github.com/en/copilot/reference/ai-models/supported-models) no longer lists the four models named for October 2 retirement: Gemini 3.5 Flash, Gemini 3.6 Flash, Kimi K2.7 Code and Claude Opus 4.7. Compare the [dated retirement notice](https://github.blog/changelog/2026-09-03-upcoming-deprecation-of-selected-github-copilot-models/) with the current catalog and effective model policy. A plan name or suggested alternative does not establish that a specific client/account can use it; do not memorize this list as a permanent exam fact.
 
-**Next policy checkpoint — October 22:** GitHub's [September 24 announcement](https://github.blog/changelog/2026-09-24-default-enablement-of-copilot-features-for-copilot-business-and-enterprise/) gives administrators time to configure the default for eligible GA features. Beginning October 22, unconfigured features follow that default; explicit feature choices remain effective and previews are excluded. The default is enabled unless changed. Check both enterprise decisions and delegated organization settings using the [default-availability documentation](https://docs.github.com/en/copilot/concepts/enterprise/default-availability). This is a product-policy transition, not an announced exam revision.
+**Policy checkpoint whose date has passed — October 22:** GitHub's [September 24 announcement](https://github.blog/changelog/2026-09-24-default-enablement-of-copilot-features-for-copilot-business-and-enterprise/) gives administrators time to configure the default for eligible GA features. Beginning October 22, unconfigured features follow that default; explicit feature choices remain effective and previews are excluded. The default is enabled unless changed. Check both enterprise decisions and delegated organization settings using the [default-availability documentation](https://docs.github.com/en/copilot/concepts/enterprise/default-availability). This is a product-policy transition, not an announced exam revision.
 
 **Concern and study decision:** These announcements are authoritative for current operations but are too volatile to treat as durable exam facts. Learn how policy inheritance, retention disclosure, model allowlists, budgets, seat lifecycle, and defaults affect governance. Verify the current model catalog, exact billing contract, settings labels, and effective dates rather than memorizing this snapshot.
 
@@ -70,7 +72,7 @@ The most important mental model is:
 | Improve developer productivity | 10–15% | This part and labs |
 | Configure privacy, exclusions, and safeguards | 10–15% | Parts 5 and 6 |
 
-The official page currently contains a duplicated “GitHub Copilot features” line in its high-level list. Treat the detailed objective groups and their published ranges as authoritative; do not invent a separate eighth domain.
+The official page currently contains a duplicated “GitHub Copilot features” line in its high-level list. Treat the detailed objective groups and their published ranges as authoritative; do not treat the repeated label as an additional domain.
 
 ### Responsible AI
 
@@ -655,7 +657,7 @@ An enterprise can:
 - Enable it only for selected organizations
 - Delegate the decision with **Let organizations decide**, where that option is available; an unconfigured feature can instead inherit the applicable default
 
-An enforced enterprise feature policy constrains organizations. If the enterprise delegates, organizations can differ. This can create different feature availability for users associated with multiple organizations. Distinguish a locked policy from an inherited default: a default can allow lower-level overrides.
+An enforced enterprise feature policy constrains organizations. If the enterprise delegates, organizations can differ. **VERIFY CURRENT:** [default availability](https://docs.github.com/en/copilot/concepts/enterprise/default-availability) distinguishes feature defaults from model defaults and locks **Enabled everywhere / Disabled everywhere** at the enterprise level. A setting called a default is not necessarily overridable. Distinguish explicit feature/model decisions, inherited values and delegated choices. Code-review effort is a separate setting with its own override contract.
 
 For example, the [September 23 code-review configuration release](https://github.blog/changelog/2026-09-23-copilot-code-review-more-ways-to-request-and-configure-reviews/) adds an enterprise default review effort that organizations and repositories can override, alongside expanded personal automatic-review settings. Setting review effort or automatically requesting a review does not itself require a review for merge. Inspect the separate ruleset, review outcome, and applicable approval feature described later in this guide.
 
@@ -914,6 +916,8 @@ Local sandboxing can restrict commands and tools:
 
 See [configuring Copilot CLI](https://docs.github.com/en/copilot/how-tos/copilot-cli/set-up-copilot-cli/configure-copilot-cli).
 
+**VERIFY CURRENT — permission mode is not a human decision:** The [October 26 assisted-permissions release](https://github.blog/changelog/2026-10-26-github-copilot-assisted-permissions-generally-available/) adds an important distinction between manual, assisted and allow-all modes. Assisted mode can let an AI assessment approve eligible requests without a person. Enterprise controls over permitted modes and the chosen default are separate. Review actual tool/path/URL authority, mode and executed command evidence; do not treat an assisted approval as human authorization for `terraform apply`. No CLI mode was enabled or tested in this refresh.
+
 ### 22. Essential CLI commands
 
 Commands change quickly, so `/help` is authoritative for the installed version.
@@ -1019,6 +1023,24 @@ After the task:
 
 ---
 
+### Enable IDE assistance, use Chat, and diagnose a missing suggestion
+
+Follow the [setup reference for your editor](https://docs.github.com/en/copilot/how-tos/copilot-in-your-ide/set-up-copilot/install-copilot-extension?tool=vscode): verify a supported editor/version, install or enable its documented Copilot integration, and sign in with the GitHub account that has eligible access. Confirm organization feature policy separately from account entitlement. In a trusted disposable workspace, test a harmless inline completion and a small Chat question before enabling write-capable agent work. **VERIFY CURRENT:** editor-specific setup and controls; CLI authentication does not prove IDE setup is complete.
+
+Use the [IDE Chat reference](https://docs.github.com/en/copilot/how-tos/copilot-in-your-ide/chat-with-copilot/chat-in-ide?tool=vscode) for the selected client. Ask, Plan, Edit and Agent capabilities differ by editor/version and policy. Add the intended file or selection, inspect references, and start a fresh conversation when old context is misleading. Discover available slash commands in that client's command menu; CLI session commands are not automatically IDE Chat commands. Provide feedback through the supported response controls after inspecting what context and output it contains. Model choice, quotas, input size and available tools remain separate constraints; no fixed limit applies to all plans and clients.
+
+For an absent or inappropriate suggestion, investigate in order:
+
+1. Record editor/integration version, signed-in account, feature, repository and time.
+2. Confirm entitlement, effective organization/enterprise policy, feature enablement and service state.
+3. Check workspace/file context, supported surface and any configured exclusions; preserve the CLI documentation conflict described in Part 5.
+4. Check network/authentication errors and usage limits before treating an empty result as proof of exclusion.
+5. Compare an allowed nonsensitive control file, inspect references/tool activity, then review or reject output and retest.
+
+An absent marker in generated prose does not prove a file was never read. Keep secrets outside the test and retain the exact observed evidence; the sequence is a diagnostic worksheet, not an executed IDE experiment.
+
+---
+
 ## Part 4: Agent modes, sessions, sub-agents, and MCP
 
 ### 27. Current feature distinctions
@@ -1117,6 +1139,14 @@ Prefer read-only tools during research and planning. Separate write capability i
 
 > **Related item:** Indirect prompt injection occurs when untrusted retrieved content tries to redirect the agent or its tools. Treat repository text, issues, webpages, and MCP results as data with a trust level; tool authorization and human approval must not depend on the retrieved content behaving honestly.
 
+#### Enforce MCP boundaries on the actual client
+
+[Enterprise-managed settings](https://docs.github.com/en/copilot/how-tos/administer-copilot/manage-for-enterprise/use-managed-settings/get-started) and the [MCP allowlist](https://docs.github.com/en/copilot/how-tos/administer-copilot/manage-mcp-usage/configure-enterprise-allowlist) provide stronger applicable-client control than assuming a private registry alone constrains server configuration. Inspect each property's supported clients, server URL or command matching, deny rules and deployment evidence; a familiar server name does not identify trusted code.
+
+The [MCP integration contract](https://docs.github.com/en/copilot/concepts/context/mcp) is surface-specific. Cloud-agent MCP tools can run autonomously without a local approval dialog. If pre-write approval is mandatory, enforce it in the target service/workflow or omit the write-capable tool. A `readOnlyHint` is an eligibility annotation, not proof the implementation cannot mutate state. Server allowance, selected tools, effective credentials, downstream authorization and human approval are distinct gates. Do not assume every client supports remote OAuth, resources or prompts merely because another client does.
+
+> **Related item — VERIFY CURRENT:** [Copilot Fusion's October 28 announcement](https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion/) illustrates routing/orchestration across enabled models. Compare output against the same independent test oracle, and record actual models, effort, latency and usage. A cascade or critique is not independent verification of a claim, and not every task necessarily uses several models. This is current implementation context, not a new August exam domain.
+
 ### 32. Copilot Spaces, Spark, and pull-request summaries
 
 #### Spaces
@@ -1167,7 +1197,7 @@ Current GitHub documentation states that content exclusion is not supported in:
 
 - Edit and Agent modes in supported IDE Chat experiences
 
-Copilot CLI and the GitHub Copilot app now honor enterprise, organization, and repository content-exclusion policies for Copilot Business and Enterprise customers. See the [September 2026 availability announcement](https://github.blog/changelog/2026-09-02-content-exclusions-generally-available-in-copilot-app-and-cli/).
+**Documentation conflict — October 28, 2026:** The [current exclusion how-to](https://docs.github.com/en/copilot/how-tos/configure-content-exclusion/exclude-content-from-copilot) lists Copilot CLI among unsupported surfaces, while the [September 2 availability announcement](https://github.blog/changelog/2026-09-02-content-exclusions-generally-available-in-copilot-app-and-cli/) says Business/Enterprise CLI and app exclusions are generally available. Preserve both statements; do not promise universal CLI protection or assume one page proves every client version. Confirm the exact plan/client/policy with GitHub and test only harmless fixtures. The IDE Agent mode limitation remains explicit in the how-to.
 
 Therefore:
 
@@ -1179,7 +1209,7 @@ Do not keep secrets in a repository and assume exclusion makes them safe. Use se
 
 #### `.copilotignore`
 
-The Timothy Warner repository contains `.copilotignore` guidance. Current official GitHub content-exclusion documentation does not define that file as the supported administrative mechanism. Do not memorize it as an enforceable GitHub control.
+Older June companion material described `.copilotignore`; the current repository quick reference inspected October 28 rejects that as the supported policy mechanism. Official GitHub content-exclusion documentation governs the actual administrative control. Do not memorize it as an enforceable GitHub control.
 
 See [excluding content from Copilot](https://docs.github.com/en/copilot/how-tos/configure-content-exclusion/exclude-content-from-copilot).
 
@@ -1448,6 +1478,8 @@ Practice the standalone agentic CLI safely.
 
 #### Safety test
 
+**Script and file-management task:** In an authorized disposable lab folder, provide a tiny synthetic asset JSON file and ask the CLI to generate `inventory.py` that reads only that fixture and prints a sorted asset/count summary. Permit writes only inside the lab folder; require it to show the proposed script before execution. Inspect imports, paths and file operations, then compare the result with a hand-calculated answer. Ask for a renamed copy and inspect the diff before removing only lab-created files. A script that runs successfully but reads outside the approved fixture scope fails the task. Record unavailable CLI access as a tabletop plan; this refresh did not generate or run that CLI output.
+
 Ask the CLI to explain which directories, tools, URLs, and MCP servers it can access. Verify the configuration rather than trusting the answer alone.
 
 ### Lab 4: Content-exclusion boundaries
@@ -1461,7 +1493,7 @@ Learn what exclusions do and do not protect.
 1. In a paid practice organization, configure a documented repository content exclusion.
 2. Test inline suggestions and supported Chat behavior in the excluded file.
 3. Test code review behavior.
-4. Review GitHub's documented surface limitations.
+4. Review GitHub's documented surface limitations and the CLI release/how-to conflict. Record client version, plan, configured policy and observed positive/negative fixture behavior; use a tabletop result if the environment is unavailable.
 5. Do not place real secrets in the test.
 
 #### Explain afterward
@@ -1490,7 +1522,7 @@ Use the Timothy Warner repository as a working example.
 
 #### Important correction
 
-Do not use the repository's retired `gh copilot` CLI commands or treat `.copilotignore` as the current supported exclusion control.
+When studying archived June material, replace retired `gh copilot` commands and unsupported `.copilotignore` assumptions. The current September companion uses the standalone CLI and configured exclusions; verify exact client behavior against the conflicting official exclusion sources above.
 
 ---
 
@@ -1504,11 +1536,17 @@ Create a disposable Python repository for the shipping contract in Part 0. Write
 
 ### Lab 7: Policy, defaults, and merge controls — 30–45 minutes
 
-Use a tabletop first. A fictional enterprise disables one feature explicitly, leaves another GA feature unconfigured, and delegates a third to an organization. Its default for eligible new features is enabled; a repository overrides the enterprise's default review effort. Work out the effective settings before and after the announced October 22 transition. Then diagram the separate path from a pull request through tests, review, ruleset checks, and merge.
+Use a tabletop first. A fictional enterprise disables one feature explicitly, leaves another GA feature unconfigured, and delegates a third to an organization. Its default for eligible new features is enabled; a repository overrides the enterprise's default review effort. Work out the effective settings before and after the [October 22–26 documented rollout](https://github.blog/changelog/2026-10-22-global-default-for-copilot-features-generally-available/). The release describes one-time assignment for eligible unconfigured features: changing the global default afterward does not rewrite those now-set feature policies. Explicit feature changes are separate. Contrast that dated migration rule with current default behavior for newly unconfigured settings. Then diagram the separate path from a pull request through tests, review, ruleset checks, and merge.
 
 In an authorized disposable repository, optionally require one test check and verify a failing code change and a documentation-only change. Record which commit and event produced the check. Do not change enterprise-wide settings just to complete this exercise.
 
 **Answer checkpoint:** explicit disablement remains effective; eligible unconfigured GA features follow the applicable default when the transition takes effect; delegated settings require inspection at organization scope. A review-effort override does not override a locked feature policy. A prompt instructing Copilot to run tests cannot enforce merge protection.
+
+### Lab 8: Setup, context and policy evidence worksheet
+
+In a disposable repository or tabletop, map one inline-suggestion task, one IDE Chat question and one cloud-agent task to the client, account, plan, effective feature/model policy, context, tool and permission path. Diagnose a missing suggestion using the ordered process above. Compare a server's approved URL/command with an altered one, then a read-only versus write-capable tool under the same credential. State where a human decision is enforced and where calls can be autonomous. Retain observed facts separately from expected behavior; do not enable enterprise-wide settings or run destructive commands for the exercise.
+
+---
 
 ## Part 8: Exam distinctions to know cold
 
@@ -1561,7 +1599,7 @@ A repository includes `.github/copilot-instructions.md` telling Copilot to run `
 
 A team excludes `secrets.auto.tfvars` through Copilot settings and then uses Agent Mode, assuming the file cannot be read.
 
-**Answer:** Unsafe assumption. Current documentation says IDE Agent mode does not support content exclusion; support also varies by client and plan. Copilot CLI now honors configured exclusions for Business and Enterprise, but exclusion is still not a secret-management boundary. Remove secrets from the workspace and use proper secret management and access controls.
+**Answer:** Unsafe assumption. Current documentation says IDE Agent mode does not support content exclusion; support also varies by client and plan. The current CLI how-to conflicts with the September GA announcement, so exact client/plan/policy behavior remains a verification task; exclusion is not a secret-management boundary. Remove secrets from the workspace and use proper secret management and access controls.
 
 ### Scenario 5
 
@@ -1618,6 +1656,26 @@ An organization-instruction change is visible in one JetBrains session but absen
 A metrics report has an empty review-stage array and high suggestion acceptance. Can you conclude that Copilot eliminated review delay?
 
 **Answer:** No. The array has no qualifying observations; acceptance is a usage signal. Examine the reporting window, human-review coverage, comparable completed tasks, end-to-end time, and defect/rework outcomes.
+
+### Scenario 14
+
+Inline suggestions work, but IDE Chat is absent. Should the team reinstall the CLI?
+
+**Answer:** Diagnose the IDE path: supported integration/version, signed-in account, entitlement, effective Chat policy and client availability. CLI authentication and operation are a separate path. Retain exact error/context evidence and test a harmless allowed file before changing access.
+
+### Scenario 15
+
+A cloud-agent MCP tool makes a write without a local permission dialog. Did a prompt asking for confirmation enforce the required approval?
+
+**Answer:** No. Cloud MCP calls can be autonomous. Enforce a required pre-write decision in the target workflow/API or omit that tool; inspect effective credentials, arguments and actual execution. An allowlisted server or read-only hint is not proof of downstream business authorization.
+
+### Scenario 16
+
+An unconfigured feature received its default during the October rollout. The global default later changes. Is that evidence that the already-set feature was disabled?
+
+**Answer:** No. The dated rollout describes a one-time assignment. Inspect the feature's actual explicit/effective state and separate model policy; a review-effort override does not change a locked feature decision.
+
+---
 
 ## Part 10: Suggested study sequence
 
@@ -1702,7 +1760,7 @@ You are ready when you can explain or demonstrate the following without relying 
 - [ ] I understand trusted directories and permissions.
 - [ ] I can plan, review, inspect context, and manage sessions.
 - [ ] I understand the risk of `--allow-all` and `--yolo`.
-- [ ] I know Copilot CLI honors configured exclusions for Business and Enterprise, while IDE Agent mode remains an explicit limitation and exclusions never replace secret management.
+- [ ] I can explain the conflicting current CLI exclusion guidance, verify exact client/plan behavior, and protect secrets independently of exclusions; IDE Agent limitations remain explicit.
 
 ### Agents and customization
 
@@ -1724,9 +1782,9 @@ You are ready when you can explain or demonstrate the following without relying 
 
 ---
 
-## Corrections and supplements for the June repository
+## Historical June corrections and current companion review
 
-Use Timothy Warner's repository for its excellent agent, skills, prompt, instructions, hooks, and MCP examples. Apply these corrections while studying:
+The October 28 review of Timothy Warner's current README, course plan, quick reference and selected activities confirms a September 24 course companion targeting the August 7 blueprint. The seven items below document older June material; they are not a claim that current main still contains those defects. Selected public content was inspected, not every sample, quiz or product behavior. Apply these historical corrections when reading older copies:
 
 1. Replace **Plan Mode as the fourth IDE trigger** with the current objective wording, **Agent Mode**. Plan Mode remains a useful agent and CLI planning feature.
 2. Replace **Edit Mode** with the current exam term **Copilot Edits**.
@@ -1798,7 +1856,7 @@ Both are public GitHub articles reviewed September 27. They supplement the bluep
 
 ### Courses and practice
 
-Commercial durations and course-update dates below are historical catalog observations unless stated otherwise. September 27 checks did not inspect paid course interiors; blocked pages and application shells do not establish syllabus freshness. The September 24 event is now past, so verify recording or future-session access before purchasing.
+Commercial durations and course-update dates below are historical catalog observations unless stated otherwise; the six-course Pluralsight path and current public companion were specifically rechecked October 28. September 27 checks did not inspect paid course interiors; blocked pages and application shells do not establish syllabus freshness. The September 24 event is now past, so verify recording or future-session access before purchasing.
 
 This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Start with the official paths, then pick what works for you. Copilot changes particularly quickly, so use the August 7, 2026 blueprint and current GitHub Docs to resolve disagreements with any course. Times are approximate consumption time at normal speed; labs, note-taking, review, and independent practice add time.
 
@@ -1809,8 +1867,11 @@ This is a curated starting point, not a complete list, and it is not meant to be
 | [Microsoft Partner Skilling Hub — LevelUp GH-300](https://www.skilling-hub.com/en-US/listing/o::levelup::1776161) | Partner login required | 10 hours | No additional cost for eligible Microsoft partners; use a work account associated with the partner organization |
 | [Microsoft Learn GH-300 video course](https://www.youtube.com/playlist?list=PLahhVEj9XNTd8lE7clFGR1el35zaBmJbS) | Free | About 5–7 hours | Official instructor-led reinforcement for visual learners |
 | [Microsoft Reactor — Secure by Design: Building Security into Every Commit with GitHub Copilot](https://www.youtube.com/watch?v=DyGumvvyYy8) | Free | 1 hour | Current first-party related depth for secure Copilot-assisted development and validation; not an end-to-end GH-300 course |
-| GitHub Skills: [Getting started](https://github.com/skills/getting-started-with-github-copilot), [Customize Copilot](https://github.com/skills/customize-your-github-copilot-experience), and [Integrate MCP](https://github.com/skills/integrate-mcp-with-copilot) | Free account; Copilot access may be required | About 2–4 hours | Hands-on practice in real repositories |
-| [Pluralsight — GH-300 GitHub Copilot path and practice exam](https://www.pluralsight.com/paths/gh-300-github-copilot) | Subscription; practice access depends on plan/library | 4 hours plus about 2–4 hours for assessment/review | Compact four-course path updated in 2026; public page explicitly includes a practice exam |
+| GitHub Skills: [Getting started](https://github.com/skills/getting-started-with-github-copilot) | Free account; Copilot access may be required | About 1–2 hours with setup and notes (editorial estimate) | Initial repository exercise; verify current account and feature requirements |
+| GitHub Skills: [Customize Copilot](https://github.com/skills/customize-your-github-copilot-experience) | Public reading; account/Copilot access for execution | Less than 30 minutes (publisher estimate), plus setup | Instructions, skills and custom-agent practice; no workflow executed in this refresh |
+| GitHub Skills: [Integrate MCP](https://github.com/skills/integrate-mcp-with-copilot) | Public reading; own exercise repository and eligible account | Less than 1 hour (publisher estimate), plus setup | Prerequisite getting-started exercise; issue/PR writes are intended learner actions, not performed here |
+| [GitHub Copilot CLI for Beginners: First Steps](https://github.com/github/copilot-cli-for-beginners/blob/main/01-setup-and-first-steps/README.md) | Public MIT learning material; installed CLI and eligible account for execution | About 45 minutes: 15 reading + 30 hands-on (publisher estimate), excluding setup | Compare interactive, plan and programmatic modes and session controls; verify current commands/permissions before use |
+| [Pluralsight — GH-300 GitHub Copilot path and practice exam](https://www.pluralsight.com/paths/gh-300-github-copilot) | Subscription; practice access depends on plan/library | 6 hours plus about 2–4 hours for assessment/review (review time estimated) | Six-course public path rechecked October 28, including an October 23 productivity course and practice exam; paid interiors unreviewed |
 | [Whizlabs — GitHub Copilot certification practice](https://www.whizlabs.com/github-copilot-certification/) | Paid course | About 3–6 hours for 3 quizzes and review | Assessment supplement rather than primary instruction; the provider does not publish a total runtime |
 | [MeasureUp — GH-300 practice test](https://www.measureup.com/microsoft-gh-300-github-copilot-practice-test.html) | Paid test or subscription; free demo available | About 4–8 hours for simulation and review | Tier 6 assessment supplement with 114 questions, explanations, and references; use after learning to locate gaps |
 | [O'Reilly — GitHub Copilot interactive practice test](https://www.oreilly.com/products/certification-prep.html) | Subscription | About 2–4 hours for an attempt and review | O'Reilly's public certification-prep catalog lists a GitHub Copilot practice test; exact launch details appear after sign-in |
@@ -1818,8 +1879,8 @@ This is a curated starting point, not a complete list, and it is not meant to be
 | [O'Reilly — GitHub Copilot Certification Crash Course with Tim Warner](https://learning.oreilly.com/live-events/github-copilot-certification-crash-course/0642572013405/0642572354893/) | Subscription or event access | 5 hours 30 minutes (published agenda) | Earlier course occurrence associated with Tim's public companion repository |
 | [O'Reilly — Pass Your GitHub Copilot Certification Exam with Tim Warner](https://www.oreilly.com/live-events/pass-your-github-copilot-certification-exam/0642572414696/0642572414689/) | Subscription or event access | 4 hours (September 24, 10 a.m.–2 p.m. EDT) | Past September 24, 2026 event that links the public repository; **VERIFY CURRENT** recording or future-session access and compare with the August 7 blueprint |
 | [Udemy — GH-300 hands-on certification prep](https://www.udemy.com/course/github-copilot-exam-preparation/) | Purchase or subscription | 16 hours 36 minutes plus exercises | Hands-on course updated August 2026; evaluate this individual course rather than the marketplace name |
-| [Timothy Warner — public O'Reilly course companion repository](https://github.com/timothywarner-org/copilot-cert-prep) | Free | About 6–10 hours plus labs | Used with the earlier certification crash course and linked by the September 24 course listing; apply this guide's corrections and recheck volatile details |
+| [Timothy Warner — public O'Reilly course companion repository](https://github.com/timothywarner-org/copilot-cert-prep) | Free | About 1–2 hours selected reading/activities, or 4–6 hours for a broader route (editorial estimates) | Current September 24 four-hour course companion; selected activities total 50 minutes; use current primary docs for volatile behavior |
 
 Tim's authorized paid catalog is also available through his [Pluralsight author page](https://www.pluralsight.com/authors/tim-warner); at this review, his directly verified certification path there was the GH-500 path rather than GH-300.
 
-Timothy Warner's README explicitly declares MIT licensing, although its linked `LICENSE` file was missing when checked on August 30, 2026. This guide follows that stated intent conservatively: Tim and the repository are credited, the synthesis here is independently written, and his slides, O'Reilly presentation, and question material are not reproduced wholesale. See [Third-party notices](../THIRD-PARTY-NOTICES.md) and the broader [Places to learn catalog](../docs/LEARNING-RESOURCES.md).
+The repository's complete MIT license was present and inspected October 28: Copyright (c) 2025-2026 Tim Warner. The August 30 missing-file observation is historical. Tim and the repository are credited, this guide remains independently written, and paid presentations or assessment material are not reproduced. The exact restored copyright and permission notice is preserved below in the linked notices. See [Third-party notices](../THIRD-PARTY-NOTICES.md) and the broader [Places to learn catalog](../docs/LEARNING-RESOURCES.md).

@@ -48,8 +48,17 @@ paths may migrate to that byte-identical archive; audit hashes, dates, checks,
 findings and verdicts stay unchanged. Validation uses the latest retained source
 review on or before the audit date, so a later blocked review does not rewrite a
 historical pass and a new audit cannot use a superseded baseline. Legacy catalogs
-without a dated historical review still require the audit to match the current
-review's snapshot path and hash. See the [snapshot acceptance checklist](AUTOMATION.md#review-checklist-for-an-objective-change-pr).
+without a dated historical review use the earliest retained source review as the
+fallback and still require the exact snapshot path and hash. A later blocked
+refresh cannot rewrite that legacy fallback, nor can a later pass hide an earlier
+retained block. This fallback preserves a historical ledger; it does not establish
+missing contemporaneous evidence or renew an audit. Audits on or after the current
+blueprint-check date still require a current source-validation record. See the
+[snapshot acceptance checklist](AUTOMATION.md#review-checklist-for-an-objective-change-pr).
+
+Explicit same-day source-review supersession binds date-applicable audits to the
+unsuperseded review, independently of array order. Superseded passes cannot renew a
+current source gate; the earliest-record legacy fallback retains its original version.
 
 ## Ten required checks
 
@@ -217,7 +226,9 @@ On September 6, multiple rubric-2 batches bound complete-guide review to exact g
 | GitHub agentic AI and source-candidate verification | 3 | 3 | 0 | 0 | 0 open / 0 closed | Same context |
 | **Recorded rubric-2 results** | **284** | **256** | **7** | **2** | **41 open / 39 closed** | **Same context** |
 
-The original Terraform, Google Professional Agentic Architect, CCNA, Security+, Fortinet MSSP, NSE-8, CKS, PCPP-32-101, AB-100, and Oracle Foundations results remain historical where their bound guides changed. Their repaired or expanded versions now have current results: Security+, NSE-8, CKA, CKAD, CKS, PCPP-32-101, AB-100, Oracle Foundations, CCNA, GitHub Enterprise Administration, and the repaired Fortinet and Palo Alto guides pass, while MSSP remains blocked only by its unpublished objective blueprint. Current rubric-2 coverage is 220 guides and all 220 pass; no source-ready guide remains audit-due. AZ-800, AZ-802, and MSSP remain outside the default audit queue because they do not have a current passed source-validation review; MSSP's earlier blocked audit is now historical because its guide changed. A guide or objective change makes a completed result historical and returns that guide to the queue. Completed batches do not invalidate or erase earlier findings.
+Before the October 28 Microsoft refresh, the recorded rubric-2 summary reported 220 current guides, all passing, with no source-ready guide audit-due. Its repaired or expanded Security+, NSE-8, CKA, CKAD, CKS, PCPP-32-101, AB-100, Oracle Foundations, CCNA, GitHub Enterprise Administration, Fortinet and Palo Alto results were current at that point; MSSP remained blocked by its unpublished objective blueprint. AZ-800, AZ-802 and MSSP were outside the default queue without a current passed source-validation review. These are historical coverage observations, not a claim about the changed October 28 guides. The original Terraform, Google Professional Agentic Architect, CCNA, Security+, Fortinet MSSP, NSE-8, CKS, PCPP-32-101, AB-100 and Oracle Foundations results also remain historical wherever their bindings changed.
+
+A guide or objective change makes a completed result historical and returns an otherwise eligible guide to the queue. The October 28 changed bindings require new full semantic audits after their source/objective gates are satisfied; the separate refresh diff/evidence review does not fulfill those audits. Completed batches do not invalidate or erase earlier findings.
 
 ## Completion and reporting
 

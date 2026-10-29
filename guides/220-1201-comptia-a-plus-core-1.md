@@ -6,19 +6,23 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-28
+last_verified: 2026-10-28
 upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-28
+upcoming_change_checked: 2026-10-28
 ---
 
 # 220-1201 CompTIA A+ Core 1 (V15) Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 28, 2026. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#220-1201-coverage-record). The [official Core 1 V15 page](https://www.comptia.org/en-us/certifications/a/core-1-v15/) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on October 28, 2026. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#220-1201-coverage-record). The [official Core 1 V15 page](https://www.comptia.org/en-us/certifications/a/core-1-v15/) is authoritative.
 
 **Current baseline:** A+ V15, Core 1 exam 220-1201; launched March 25, 2025<br>
 **Version rule:** Core 1 and Core 2 must be passed from the same version; do not mix 1200- and 1100-series exams<br>
 **Lifecycle watch:** No exact retirement date is announced. CompTIA says usually three years after launch and estimates 2028; verify before scheduling.<br>
 **Official delivery snapshot:** Maximum 90 questions, including multiple-choice, drag-and-drop, and performance-based questions; 90 minutes; 675/900 passing score; English, German, and Japanese listed
+
+## Current guide watch — October 28, 2026
+
+- **Current platform context:** Microsoft lists Windows 11 26H2 as the current general-availability release. Version 26H1 is a hardware-specific preinstall for select new devices, not an in-place feature update. Keep these version details as support context; the A+ 220-1201 objective snapshot and published weights are unchanged. See [Windows 11 release information](https://learn.microsoft.com/en-us/windows/release-health/windows11-release-information).
 
 ## How to use this guide
 

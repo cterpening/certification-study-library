@@ -6,19 +6,20 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-30
+last_verified: 2026-10-29
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-30
+upcoming_change_checked: 2026-10-29
 ---
 
 # Splunk Core Certified Power User Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The September 30, 2026 best-effort review read the complete indexed credential page and three-page blueprint, mapped all 32 objectives, and checked selected command and knowledge-object references. Direct retrieval and the objective monitor encountered DNS errors; the historical snapshot remains intact. All eight Splunk labs remain unexecuted because no runtime or approved endpoint was available. The checks here are original learning prompts, not exam items. Recheck the [official certification page](https://www.splunk.com/en_us/training/certification-track/splunk-core-certified-power-user.html) and [test blueprint](https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-power-user.pdf) before scheduling.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The October 29, 2026 review opened the current official credential page and three-page blueprint, mapped all 32 objectives, and checked selected command and knowledge-object references. Direct source review is complete for the published outline; the accepted snapshot remains unchanged. All eight Splunk labs remain unexecuted because no runtime or approved endpoint was available. The checks here are original learning prompts, not exam items. Recheck the [official certification page](https://www.splunk.com/en_us/training/certification-track/splunk-core-certified-power-user.html) and [test blueprint](https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-power-user.pdf) before scheduling.
 
 **Current baseline:** Transforming Commands for Visualizations (5%); Filtering and Formatting Results (10%); Correlating Events (15%); Creating and Managing Fields (10%); Field Aliases and Calculated Fields (10%); Tags and Event Types (10%); Macros (10%); Workflow Actions (10%); Data Models (10%); Common Information Model Add-On (10%). Related topics may appear and the blueprint may change without notice.<br>
-**Exam contract:** entry level; 65 multiple-choice questions; 60 total minutes including three minutes for the exam agreement; USD 130 per attempt; Pearson VUE delivery<br>
+**Exam contract — VERIFY CURRENT:** entry level; 65 multiple-choice questions; 60 total minutes including three minutes for the exam agreement; USD 130 per attempt; Pearson VUE delivery. Splunk's overview routes candidate management through Cisco's Certification Tracking System.<br>
+**Credential lifecycle — VERIFY CURRENT:** The [2026 certification-change FAQ](https://www.splunk.com/en_us/pdfs/training/splunk-certification-changes.pdf) says coursework-based recertification ended March 1, 2026 and lists same-exam renewal in the final year or a higher-level exam in the same track. The certification overview still mentions coursework, so official pages conflict; confirm your actual path in the current tracking system. The published cycle remains three years per the [current FAQ](https://www.splunk.com/en_us/training/faq.html). No account was inspected.<br>
 **Prerequisite contract:** no prerequisite exam. Core User is a useful foundation, but it is not required by the published contract.<br>
-**Upcoming change:** No retirement or replacement was found in the credential page and blueprint read September 30; this bounded check does not establish absence across every release channel. The blueprint tests established SPL and knowledge objects. SPL2 is adjacent context with a different syntax contract.<br>
+**Upcoming change — checked October 29, 2026:** Current credential page and blueprint show no retirement or replacement notice; the 2026 program FAQ identifies three other Legacy credentials and does not list Core Power User. This bounded check does not establish absence across every release channel. The blueprint tests established SPL and knowledge objects. SPL2 is adjacent context with a different syntax contract.<br>
 
 ## How to use this guide
 
@@ -76,7 +77,7 @@ High-cardinality split fields can create many series and an “OTHER” grouping
     | fillnull value="unknown" owner
 ```
 
-The [fillnull reference 10.2](https://help.splunk.com/en/splunk-enterprise/spl-search-reference/10.2/search-commands/fillnull) distinguishes explicit field lists from filling all fields. Its argument description and example 3 say an explicitly named missing field is created. Its all-fields examples show that a field containing only `null()` is not filled, even after an `eval` or `table` mentions it. Do not teach “create it with eval” as a universal fix: assigning another null does not supply a real value. Test both forms in your deployment; no SPL execution is claimed here. Do not replace unknown with zero unless zero is semantically correct.
+The [fillnull reference 10.4](https://help.splunk.com/en/splunk-enterprise/search/spl-search-reference/10.4/search-commands/fillnull) distinguishes explicit field lists from filling all fields. Its argument description and example 3 say an explicitly named missing field is created. Its all-fields examples show that a field containing only `null()` is not filled, even after an `eval` or `table` mentions it. Do not teach “create it with eval” as a universal fix: assigning another null does not supply a real value. Test both forms in your deployment; no SPL execution is claimed here. Do not replace unknown with zero unless zero is semantically correct.
 
 The [predicate reference 10.4](https://help.splunk.com/en/splunk-enterprise/search/search-manual/10.4/expressions-and-predicates/predicate-expressions) documents different precedence: `search` evaluates OR before AND; `where` and `eval` evaluate AND before OR. Use parentheses when translating an expression. For `tier="prod" AND status=500 OR urgent=1`, an urgent nonproduction event is excluded by the first grouping, but included by the second. This is a logical prediction under the stated values, not an observed engine result.
 
@@ -122,7 +123,7 @@ Preserving the original field does not guarantee preserving the alias destinatio
 
 A calculated field uses an `eval` expression automatically at search time for a selected source/host/sourcetype. Use it for a stable derived value such as normalized units or a category. Handle nulls/types and avoid expensive/opaque expressions applied to broad datasets.
 
-Calculated fields in one stanza are evaluated independently, rather than as sequential pipeline steps. In an original hypothetical event with `raw_ms=2400`, defining `EVAL-seconds=raw_ms/1000` and `EVAL-minutes=seconds/60` does not make the second definition consume the first definition's new value. Derive both from the available input, or use deliberate sequential pipeline commands. The [calculated-fields reference 10.2](https://help.splunk.com/en/splunk-enterprise/manage-knowledge-objects/knowledge-management-manual/10.2/calculated-fields/about-calculated-fields) also excludes dependencies on later lookups, event types and tags. No configuration was installed or executed.
+Calculated fields in one stanza are evaluated independently, rather than as sequential pipeline steps. In an original hypothetical event with `raw_ms=2400`, defining `EVAL-seconds=raw_ms/1000` and `EVAL-minutes=seconds/60` does not make the second definition consume the first definition's new value. Derive both from the available input, or use deliberate sequential pipeline commands. The [calculated-fields reference 10.4](https://help.splunk.com/en/splunk-enterprise/manage-knowledge-objects/knowledge-management-manual/10.4/calculated-fields/about-calculated-fields) also excludes dependencies on later lookups, event types and tags. No configuration was installed or executed.
 
 Search-time order matters: automatic key-value extraction precedes field aliases; aliases precede calculated fields; lookups, event types, and tags have later dependencies. The current [tags and aliases documentation](https://help.splunk.com/en/splunk-cloud-platform/manage-knowledge-objects/knowledge-management-manual/10.4.2604/tags/about-tags-and-aliases) documents these boundaries.
 
@@ -314,6 +315,10 @@ Create an argumented macro for a bounded base search, a Search workflow action t
 - [ ] I rechecked the current certification page, blueprint, handbook, and policies.
 
 ## Places to learn
+
+### October 29, 2026 source update
+
+The current PDF still has 65 multiple-choice questions and ten weighted domains, with no objective-map change found. Splunk's program overview now points to Cisco's Certification Tracking System; Pearson VUE remains the delivery partner on the exam page. The 2026 change FAQ does not list Core Power User among the credentials made Legacy, but retires coursework recertification from March 1, 2026. The general overview still describes coursework, creating a live official-source conflict; check the tracking system before acting. Add the current [2026 Power User track PDF](https://www.splunk.com/en_us/pdfs/training/splunk-core-certified-power-user-track.pdf), which organizes Working with Time, Statistical Processing, Comparing Values, Result Modification, Correlation Analysis, Knowledge Objects, Field Extractions and Data Models. The [free-course catalog](https://www.splunk.com/en_us/training/free-courses/overview.html) has selected related courses, but access and lab entitlement vary by course; no interior was accessed. Current [Splunk Enterprise 10.4 release notes](https://help.splunk.com/en/splunk-enterprise/release-notes-and-updates/release-notes/10.4/whats-new/welcome-to-splunk-enterprise-10.4), [Search Manual 10.4](https://help.splunk.com/en/splunk-enterprise/search/search-manual/10.4/search-overview/get-started-with-search), and [fillnull reference](https://help.splunk.com/en/splunk-enterprise/search/spl-search-reference/10.4/search-commands/fillnull) support versioned product study, not claims of local execution.
 
 This is not a complete list, and it is not meant to be consumed in full. Pick one primary path, use product/CIM documentation to resolve exact behavior, and spend at least as much time creating and testing knowledge objects as watching. Commercial resources are supplementary; reconcile them with the current blueprint and product/CIM versions.
 

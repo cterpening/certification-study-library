@@ -6,21 +6,21 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-29
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-29
 ---
 
 # WDE-40-01 Certified Entry-Level Web Developer Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Selected public sources and all 40 numbered objectives were reviewed September 29, 2026. Original HTML and browser examples were executed. Direct official-page fetching failed; indexed current content supported manual scope comparison. Booking, paid interiors and human review remain pending. This guide contains original explanations and questions, not exam items. Recheck the [official WDE page](https://jsinstitute.org/wde-certification) and [WDE-40-01 syllabus](https://jsinstitute.org/wde-exam-syllabus) before scheduling.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Selected public sources and all 40 numbered objectives were reviewed October 29, 2026. The full official syllabus and certification page were opened in a browser after automated extraction failed; all retained objective subjects were compared. Original HTML and browser examples remain from the earlier local review. Booking, paid interiors and human review remain pending. This guide contains original explanations and questions, not exam items. Recheck the [official WDE page](https://jsinstitute.org/wde-certification) and [WDE-40-01 syllabus](https://jsinstitute.org/wde-exam-syllabus) before scheduling.
 
 **Current baseline:** WDE-40-01, active; syllabus last updated September 18, 2025<br>
 **Upcoming blueprint change:** none announced on the official exam, syllabus, or certification-overview pages when checked; no unseen release feed or booking availability was verified<br>
 **Official delivery snapshot:** 40 single- and multiple-select items; approximately 60-minute exam plus 2–5-minute tutorial/NDA; 75% cumulative normalized passing score; the credential page names TestNow; English and Spanish<br>
 **Purchase snapshot:** no formal prerequisite; exam from USD 69, exam-plus-retake from USD 86, exam-plus-retake-plus-practice from USD 95, and standalone practice USD 29 when checked<br>
 
-The [JS Institute homepage](https://www.jsinstitute.org/) names Pearson VUE/OnVUE for WDE, while the credential page names TestNow. The [TestNow policy](https://jsinstitute.org/test-now-testing-policies) describes entry-level exams as non-proctored by default but also contains a generic proctored-delivery statement. It states a seven-day wait after a failed attempt. Resolve delivery, supervision, retake eligibility and voucher terms for the actual WDE product before purchase; no account or checkout was inspected.
+The [JS Institute homepage](https://jsinstitute.org/) names Pearson VUE/OnVUE for WDE, while the credential page names TestNow. The [TestNow policy](https://jsinstitute.org/test-now-testing-policies) describes entry-level exams as non-proctored by default but also contains a generic proctored-delivery statement. It states a seven-day wait after a failed attempt. Resolve delivery, supervision, retake eligibility and voucher terms for the actual WDE product before purchase; no account or checkout was inspected.
 
 The credential page's headline says 60 minutes while its detail separates a 2–5-minute tutorial from approximately 60 exam minutes; do not infer the exact appointment length. Its practice-product row incorrectly names WDE-41-01 while the active exam and syllabus say WDE-40-01. That row is not evidence of a new exam version. No expiration rule is inferred from silence.
 
@@ -809,6 +809,10 @@ These eight broader activities remain **proposed**. The bounded original checks 
 - [ ] I completed the eight labs and can show the resulting pages and test notes.
 - [ ] I rechecked the official WDE-40-01 page and policies.
 
+### October 29, 2026 current-source update
+
+The current WDE-40-01 syllabus page still says ACTIVE and retains the September 18, 2025 five-domain map. The certification page’s practice-test row labels a product “WDE-41-01” while the active exam and syllabus say WDE-40-01; preserve this as an issuer-page typo/discrepancy and verify the exact product before purchase. **Related item:** the current [WHATWG popover standard](https://html.spec.whatwg.org/multipage/popover.html) defines `auto`, `hint`, and `manual` popover behavior. A native popover is not automatically a menu or modal dialog; use `<dialog>` when modal semantics are needed. Test invoker, keyboard dismissal, focus, and the actual target browsers before relying on the behavior. This interaction model is current HTML context, not a new WDE objective.
+
 ## Places to learn
 
 This is not a complete list, and it is not meant to be consumed in full. Pick one primary path, add focused references where useful, and spend at least as much time building, validating, and testing pages as watching. Commercial resources are supplementary; reconcile them with the current official syllabus. Times below are author planning budgets unless explicitly marked as a provider-listed total. Public contents and selected reference sections were reviewed, not every linked lesson or any paid course interior. The [review report](../docs/research/2026-09-29-wde-40-01-deep-review.md) records exact boundaries.
@@ -817,7 +821,7 @@ This is not a complete list, and it is not meant to be consumed in full. Pick on
 |---|---|---:|
 | [Official WDE-40-01 syllabus](https://jsinstitute.org/wde-exam-syllabus) | Free canonical objectives and weights | 2–3 hours to map and recheck |
 | [Official WDE certification page](https://jsinstitute.org/wde-certification) | Free version, format, cost, delivery, and policy links | 30–60 minutes before purchase |
-| [OpenEDG Web Dev 101: HTML](https://jsinstitute.org/html-essentials) | Free Core / paid Pro; public prose attributes 45+ labs and a diploma to Pro; six modules and 45+ lessons listed | Provider lists 25 hours; no account lessons audited |
+| [OpenEDG Web Dev 101: HTML (WD101)](https://edube.org/study/html-essentials) | Core is free; Full Course is USD 49 and adds quizzes, interactive work/labs, projects, final assessment, diploma, and a 20% WDE exam discount per the public Edube page | Provider estimate: 5 weeks at 1 hour/day (about 25 hours); lesson interior not reviewed |
 | [Cisco Networking Academy HTML Essentials](https://www.netacad.com/courses/html-essentials) | Partner landing returned only an application shell; account/curriculum details unverified | Author budget about 25 hours; verify actual access |
 | [MDN Learn: Structuring content with HTML](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content) | Free current lessons and challenges | 12–20 hours with project work |
 | [W3C WAI Tutorials](https://www.w3.org/WAI/tutorials/) | Free authoritative accessibility patterns | 6–10 hours for page structure, images, tables, forms, and menus |
