@@ -6,19 +6,23 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-28
 upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-28
 ---
 
 # CV0-004 CompTIA Cloud+ (V4) Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 29, 2026. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#cv0-004-coverage-record). The [official Cloud+ page](https://www.comptia.org/en-us/certifications/cloud/) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on October 28, 2026. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#cv0-004-coverage-record). The [official Cloud+ page](https://www.comptia.org/en-us/certifications/cloud/) is authoritative.
 
 **Current baseline:** Cloud+ V4, exam CV0-004; launched September 24, 2024<br>
 **Lifecycle watch:** CompTIA estimates retirement in 2027 but publishes no exact date or replacement; verify before scheduling.<br>
 **Official delivery snapshot:** Maximum 90 multiple-choice and performance-based questions; 90 minutes; 750/900 passing score; English and Japanese listed<br>
 **Experience guidance:** CompTIA recommends 2–3 years of hands-on experience as a systems administrator or cloud engineer. The objectives PDF also recommends Network+ and Server+ or equivalent knowledge; these are recommendations, not mandatory prerequisites
+
+## Refresh check — October 28, 2026
+
+CompTIA still lists **Cloud+ V4 / CV0-004**, launched September 24, 2024, with the current objective PDF, 90-minute exam, and 750/900 passing score. Its lifecycle estimate remains “usually three years after launch” (2027); no exact retirement date or successor was published on the [Cloud+ page](https://www.comptia.org/en-us/certifications/cloud/). Treat that as a planning window and check the live page before buying a voucher.
 
 ## How to use this guide
 
@@ -359,7 +363,7 @@ if __name__ == '__main__':
 
 The standalone example uses an in-memory database and prints one new result followed by a duplicate result. With `autocommit=True`, this code uses SQL `BEGIN IMMEDIATE`, `COMMIT` and `ROLLBACK`; Python’s connection `commit()`/`rollback()` methods do not perform this job in that mode. The write transaction serializes competing writers within SQLite’s supported locking model. No email, payment, cloud action or queue acknowledgement is performed inside the transaction.
 
-**Executed September 29, 2026:** the two examples and a harness passed **61 checks** with Terraform 1.12.2, Python 3.13.14 and SQLite 3.50.4. Terraform initialized its built-in provider, validated/planned/applied local state, produced unchanged/update/replacement outcomes, rejected six invalid inputs and destroyed the local resource. SQLite tests covered duplicates, conflicting intent, rollback, reconnect, an owned worker exiting before commit and eight concurrent calls producing one new effect. Owned temporary state and database fixtures were cleaned.
+**Executed October 28, 2026:** the two examples and a harness passed **61 checks** with Terraform 1.12.2, Python 3.13.14 and SQLite 3.50.4. Terraform initialized its built-in provider, validated/planned/applied local state, produced unchanged/update/replacement outcomes, rejected six invalid inputs and destroyed the local resource. SQLite tests covered duplicates, conflicting intent, rollback, reconnect, an owned worker exiting before commit and eight concurrent calls producing one new effect. Owned temporary state and database fixtures were cleaned.
 
 The [SQLite atomic-commit discussion](https://www.sqlite.org/atomiccommit.html) explains recovery mechanisms, but this test did not simulate arbitrary disk corruption or power loss. The receipt table has no expiry cleanup, distributed replication or production authentication. A local commit cannot atomically acknowledge an external queue or perform an unrelated external action; those require additional design. Do not describe this as distributed exactly-once delivery. All eight complete cloud labs remain proposed.
 
@@ -536,8 +540,8 @@ Do not treat a CV0-003 course as complete V4 coverage. Re-map it to all six curr
 
 ## Source and freshness notes
 
-- Scope, weights, delivery, experience and estimated retirement: [official CompTIA Cloud+ V4 page](https://www.comptia.org/en-us/certifications/cloud/), checked September 29, 2026.
-- Reachable third-party catalog metadata was checked September 29, 2026; O’Reilly and Udemy details remain unverified where access was blocked. Prices, access, bundles and catalogs can change.
+- Scope, weights, delivery, experience and estimated retirement: [official CompTIA Cloud+ V4 page](https://www.comptia.org/en-us/certifications/cloud/), checked October 28, 2026.
+- Reachable third-party catalog metadata was checked October 28, 2026; O’Reilly and Udemy details remain unverified where access was blocked. Prices, access, bundles and catalogs can change.
 - Cloud services, limits, regions, naming, interfaces, security recommendations, standards and laws change. Verify implementation behavior in current first-party provider documentation.
 - The objective snapshot is stored at `data/objective-snapshots/cv0-004-official-objectives.txt`; its SHA-256 is `6fb337abbad0ccde4c7a29dceb3c7e3611211edf97a676fe7bd7800406c0a192`.
 - This guide independently synthesizes public scope and product concepts. It does not reproduce proprietary objective PDFs, course content, PBQs or recalled exam items.
@@ -559,6 +563,6 @@ This is not a complete list, and it is not meant to be consumed end to end. Pick
 | [Udemy Cloud+ CV0-004 Complete Course](https://www.udemy.com/course/comptia-cloud-plus/) | Paid; automated catalog access blocked | Earlier 10h54 runtime not reverified | Earlier instructor, update-date and assessment details not reverified; inspect current syllabus |
 | [MeasureUp CV0-004 practice test](https://www.measureup.com/comptia-cloud-cv0-004-practice-test.html) | Paid | 5–9 hours estimated | Product-specific 186 questions, March 2025 release; suggested time includes explanation-led remediation |
 
-**VERIFY CURRENT:** Public metadata checked September 29, 2026; paid interiors, provider labs and assessment questions were not accessed. CompTIA’s product estimates overlap and should not be added into a mandatory workload. Other estimated hours are planning suggestions. MeasureUp’s specific 186-question listing takes precedence over its generic FAQ’s approximate 150. A course’s publication date or runtime does not establish complete current coverage.
+**VERIFY CURRENT:** Public metadata checked October 28, 2026; paid interiors, provider labs and assessment questions were not accessed. CompTIA’s product estimates overlap and should not be added into a mandatory workload. Other estimated hours are planning suggestions. MeasureUp’s specific 186-question listing takes precedence over its generic FAQ’s approximate 150. A course’s publication date or runtime does not establish complete current coverage.
 
 Use practice assessments to find gaps, not to memorize items. Avoid any product claiming live, leaked or recalled exam questions.

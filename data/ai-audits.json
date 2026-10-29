@@ -3884,21 +3884,51 @@
           "vendor_id": "comptia",
           "guide_path": "guides/CV0-004-comptia-cloud-plus.md",
           "guide_content_sha256": "9128a086a8a836c46d53366808886a75e01befa3c21dd20f69f43561de29bfc4",
-          "blueprint_snapshot_path": "data/objective-snapshots/cv0-004-official-objectives.txt",
+          "blueprint_snapshot_path": "data/objective-snapshots/cv0-004-official-objectives-2026-09-29.txt",
           "blueprint_snapshot_sha256": "6fb337abbad0ccde4c7a29dceb3c7e3611211edf97a676fe7bd7800406c0a192",
           "audited_on": "2026-09-06",
           "verdict": "pass",
           "checks": {
-            "official_scope": {"status": "passed", "notes": "Cloud+ V4, CV0-004, all six 23/19/17/19/10/12 domains, and the current contract match CompTIA's September 6 extraction."},
-            "objective_coverage": {"status": "passed", "notes": "Six sections, three cross-domain scenarios, eight labs, and 42 checks cover architecture, deployment, operations, security, DevOps, and troubleshooting with provider-neutral depth."},
-            "material_claim_support": {"status": "passed", "notes": "The official contract plus current registered official training and clearly labeled third-party learning and practice sources support the guide's bounded claims."},
-            "exam_contract_integrity": {"status": "passed", "notes": "The guide correctly records V4, launch, maximum question count, formats, duration, passing score, languages, and only an estimated 2027 retirement."},
-            "technical_coherence": {"status": "passed", "notes": "Shared responsibility, resilience, virtualization, networking, data, IaC, migration, operations, security, DevOps, cost, and layered troubleshooting form a defensible model."},
-            "volatility_and_lifecycle": {"status": "passed", "notes": "The current monitor found no change and provider behavior, standards, obligations, costs, and retirement timing remain explicitly bounded."},
-            "lab_safety_and_feasibility": {"status": "passed", "notes": "Eight labs use authorized sandboxes or local substitutes, budgets, synthetic data, least privilege, controlled faults, recovery, cleanup, and cross-provider translation."},
-            "readiness_check_quality": {"status": "passed", "notes": "Forty-two original questions and answers test domain concepts, decisions, evidence, recovery, and provider-neutral translation."},
-            "review_evidence_accuracy": {"status": "passed", "notes": "Six domain mappings, current objective hash, nine guide URLs, and recorded 7/2/0 health split reconcile with repository evidence."},
-            "duplication_and_contamination": {"status": "passed", "notes": "Multiple-provider examples are legitimate translation aids; no provider marketing is presented as universal behavior and no suspicious duplication was found."}
+            "official_scope": {
+              "status": "passed",
+              "notes": "Cloud+ V4, CV0-004, all six 23/19/17/19/10/12 domains, and the current contract match CompTIA's September 6 extraction."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Six sections, three cross-domain scenarios, eight labs, and 42 checks cover architecture, deployment, operations, security, DevOps, and troubleshooting with provider-neutral depth."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "The official contract plus current registered official training and clearly labeled third-party learning and practice sources support the guide's bounded claims."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The guide correctly records V4, launch, maximum question count, formats, duration, passing score, languages, and only an estimated 2027 retirement."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Shared responsibility, resilience, virtualization, networking, data, IaC, migration, operations, security, DevOps, cost, and layered troubleshooting form a defensible model."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The current monitor found no change and provider behavior, standards, obligations, costs, and retirement timing remain explicitly bounded."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use authorized sandboxes or local substitutes, budgets, synthetic data, least privilege, controlled faults, recovery, cleanup, and cross-provider translation."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty-two original questions and answers test domain concepts, decisions, evidence, recovery, and provider-neutral translation."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Six domain mappings, current objective hash, nine guide URLs, and recorded 7/2/0 health split reconcile with repository evidence."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Multiple-provider examples are legitimate translation aids; no provider marketing is presented as universal behavior and no suspicious duplication was found."
+            }
           },
           "findings": [],
           "notes": "The current provider-neutral Cloud+ V4 guide passes all ten rubric checks."
@@ -6703,7 +6733,7 @@
           "vendor_id": "cpp-institute",
           "guide_path": "guides/CLE-10-01-c-certified-entry-level-programmer.md",
           "guide_content_sha256": "bdfd0457c9bd96b90fd736fcf8c4fdc15e0aa99d2cbb0979211a3f482e395543",
-          "blueprint_snapshot_path": "data/objective-snapshots/cle-10-01-official-objectives.txt",
+          "blueprint_snapshot_path": "data/objective-snapshots/cle-10-01-official-objectives-2026-09-29.txt",
           "blueprint_snapshot_sha256": "24a914783ae6dd53544f35edc1e6fdae598a2998c7187d1d0008adf8c1703ec9",
           "audited_on": "2026-09-06",
           "verdict": "pass",
@@ -8569,21 +8599,51 @@
           "vendor_id": "cpp-institute",
           "guide_path": "guides/CLP-12-01-c-certified-professional-programmer.md",
           "guide_content_sha256": "195eb12b893729dbc3a7f94933a3c300b2f7c360ee4fb2401c0534636bc13c25",
-          "blueprint_snapshot_path": "data/objective-snapshots/clp-12-01-official-objectives.txt",
+          "blueprint_snapshot_path": "data/objective-snapshots/clp-12-01-official-objectives-2026-09-29.txt",
           "blueprint_snapshot_sha256": "ca46317388e8217cdca5a716c497f3c1b715a76d371d2c79247e1cfe7d0d0603",
           "audited_on": "2026-09-06",
           "verdict": "pass",
           "checks": {
-            "official_scope": {"status": "passed", "notes": "All eight weighted CLP-12-01 blocks and thirty published objectives are mapped to the C11-and-history baseline."},
-            "objective_coverage": {"status": "passed", "notes": "C evolution, variadics, low-level I/O, memory/strings, processes/threads, numerics, sockets, volatile/non-local-jump/UB/declaration topics receive substantive coverage."},
-            "material_claim_support": {"status": "passed", "notes": "All ten cited URLs are cataloged: eight reachable and two SEI/O'Reilly pages automation-blocked, with none missing or errored."},
-            "exam_contract_integrity": {"status": "passed", "notes": "The 55-question, 65-minute plus tutorial/NDA, 70-percent, Pearson VUE contract and recommendation-versus-prerequisite distinction are explicit."},
-            "technical_coherence": {"status": "passed", "notes": "ISO C version rules are consistently separated from POSIX, Win32, ABI, compiler and external-library behavior, with defined failure, cleanup and portability boundaries."},
-            "volatility_and_lifecycle": {"status": "passed", "notes": "The C11 tested baseline, later C standards, OS APIs, compiler/library behavior, prices, and delivery details are visible recheck points."},
-            "lab_safety_and_feasibility": {"status": "passed", "notes": "Eight labs use local processes and loopback networking, bounded inputs, multiple toolchains where practical, warnings/sanitizers/race tools, controlled failures, and cleanup."},
-            "readiness_check_quality": {"status": "passed", "notes": "Thirty original checks test language-version, runtime-contract, concurrency, numeric, socket, lifetime, and undefined-behavior reasoning."},
-            "review_evidence_accuracy": {"status": "passed", "notes": "The September 2 record matches the objective hash, eight-block map, three scenarios, eight labs, thirty checks, and 10/8/2/0 link evidence."},
-            "duplication_and_contamination": {"status": "passed", "notes": "POSIX and Windows material is explicitly labeled non-ISO scope where the professional blueprint requires systems APIs; no suspicious copying or language contamination was found."}
+            "official_scope": {
+              "status": "passed",
+              "notes": "All eight weighted CLP-12-01 blocks and thirty published objectives are mapped to the C11-and-history baseline."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "C evolution, variadics, low-level I/O, memory/strings, processes/threads, numerics, sockets, volatile/non-local-jump/UB/declaration topics receive substantive coverage."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All ten cited URLs are cataloged: eight reachable and two SEI/O'Reilly pages automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The 55-question, 65-minute plus tutorial/NDA, 70-percent, Pearson VUE contract and recommendation-versus-prerequisite distinction are explicit."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "ISO C version rules are consistently separated from POSIX, Win32, ABI, compiler and external-library behavior, with defined failure, cleanup and portability boundaries."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The C11 tested baseline, later C standards, OS APIs, compiler/library behavior, prices, and delivery details are visible recheck points."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use local processes and loopback networking, bounded inputs, multiple toolchains where practical, warnings/sanitizers/race tools, controlled failures, and cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Thirty original checks test language-version, runtime-contract, concurrency, numeric, socket, lifetime, and undefined-behavior reasoning."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 record matches the objective hash, eight-block map, three scenarios, eight labs, thirty checks, and 10/8/2/0 link evidence."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "POSIX and Windows material is explicitly labeled non-ISO scope where the professional blueprint requires systems APIs; no suspicious copying or language contamination was found."
+            }
           },
           "findings": [],
           "notes": "The guide handles a difficult mixed standard-and-systems syllabus by making every portability and API boundary explicit."
@@ -8593,21 +8653,51 @@
           "vendor_id": "cpp-institute",
           "guide_path": "guides/CPA-21-02-cpp-certified-associate-programmer.md",
           "guide_content_sha256": "2a59cfbdfb7535a266cbcf29c978e1b3b7f237a7ca39155194b9219e8e9040ac",
-          "blueprint_snapshot_path": "data/objective-snapshots/cpa-21-02-official-objectives.txt",
+          "blueprint_snapshot_path": "data/objective-snapshots/cpa-21-02-official-objectives-2026-09-29.txt",
           "blueprint_snapshot_sha256": "3d25434609c18c0dc30b6225e052b44235407d3d6968a3125b30d2cd77a776e0",
           "audited_on": "2026-09-06",
           "verdict": "pass",
           "checks": {
-            "official_scope": {"status": "passed", "notes": "All thirty-five objectives across the five 24.5/18/17.5/11/29 percent CPA-21-02 blocks are mapped."},
-            "objective_coverage": {"status": "passed", "notes": "Types/operators, control/exceptions, functions/preprocessor, pointers, and classes/namespaces receive semantic, lifetime, scenario, lab, and readiness coverage."},
-            "material_claim_support": {"status": "passed", "notes": "All eleven cited URLs are cataloged: nine reachable and two commercial pages automation-blocked, with none missing or errored."},
-            "exam_contract_integrity": {"status": "passed", "notes": "The current exam identity and weights are preserved, and the aligned course's CLA-21-02 field typo is explicitly flagged rather than propagated."},
-            "technical_coherence": {"status": "passed", "notes": "Conversions and operators, flow and exception unwinding, overload/default/macro behavior, pointer ranges/ownership, invariants/special members, inheritance/dispatch/casts, and namespaces are internally consistent."},
-            "volatility_and_lifecycle": {"status": "passed", "notes": "Legacy throw() recognition is separated from modern RAII/noexcept practice, while standard, compiler, delivery, price, and course metadata remain recheckable."},
-            "lab_safety_and_feasibility": {"status": "passed", "notes": "Eight local labs use warnings, sanitizers, boundary inputs, exception and lifetime instrumentation, isolated ownership faults, repeatable builds, and cleanup."},
-            "readiness_check_quality": {"status": "passed", "notes": "Thirty original checks test types, control, overloads, pointers, lifetime, class behavior, dispatch, operators, and namespaces without copied exam material."},
-            "review_evidence_accuracy": {"status": "passed", "notes": "The September 2 record matches the objective hash, five-block map, three scenarios, eight labs, thirty checks, and 11/9/2/0 link evidence."},
-            "duplication_and_contamination": {"status": "passed", "notes": "Older syntax appears only for explicit syllabus literacy and is contrasted with current safe practice; no C/C++ scope leakage or suspicious substantive duplication was found."}
+            "official_scope": {
+              "status": "passed",
+              "notes": "All thirty-five objectives across the five 24.5/18/17.5/11/29 percent CPA-21-02 blocks are mapped."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Types/operators, control/exceptions, functions/preprocessor, pointers, and classes/namespaces receive semantic, lifetime, scenario, lab, and readiness coverage."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All eleven cited URLs are cataloged: nine reachable and two commercial pages automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The current exam identity and weights are preserved, and the aligned course's CLA-21-02 field typo is explicitly flagged rather than propagated."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Conversions and operators, flow and exception unwinding, overload/default/macro behavior, pointer ranges/ownership, invariants/special members, inheritance/dispatch/casts, and namespaces are internally consistent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Legacy throw() recognition is separated from modern RAII/noexcept practice, while standard, compiler, delivery, price, and course metadata remain recheckable."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight local labs use warnings, sanitizers, boundary inputs, exception and lifetime instrumentation, isolated ownership faults, repeatable builds, and cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Thirty original checks test types, control, overloads, pointers, lifetime, class behavior, dispatch, operators, and namespaces without copied exam material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 record matches the objective hash, five-block map, three scenarios, eight labs, thirty checks, and 11/9/2/0 link evidence."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Older syntax appears only for explicit syllabus literacy and is contrasted with current safe practice; no C/C++ scope leakage or suspicious substantive duplication was found."
+            }
           },
           "findings": [],
           "notes": "The guide teaches the C++ object and lifetime model behind the syntax, which is appropriate for associate-level transfer."
@@ -8617,21 +8707,51 @@
           "vendor_id": "cpp-institute",
           "guide_path": "guides/CPE-20-01-cpp-certified-entry-level-programmer.md",
           "guide_content_sha256": "ead8e82414fa06f0c7ade0900af30be7a1023fb130cae14595d05fb03acc2b6f",
-          "blueprint_snapshot_path": "data/objective-snapshots/cpe-20-01-official-objectives.txt",
+          "blueprint_snapshot_path": "data/objective-snapshots/cpe-20-01-official-objectives-2026-09-29.txt",
           "blueprint_snapshot_sha256": "faf4501642933ecdc38efb270dda58a7db3a7c95a0028bda125b61544a34f60d",
           "audited_on": "2026-09-06",
           "verdict": "pass",
           "checks": {
-            "official_scope": {"status": "passed", "notes": "All four 28/28/24/20 percent CPE-20-01 blocks are mapped, and the preserved official objective capture documents its transport-certificate discrepancy."},
-            "objective_coverage": {"status": "passed", "notes": "Syntax/literals/operators, flow/functions, vectors/pointers, and structures/strings receive translation, semantics, lifetime, scenario, lab, and readiness coverage."},
-            "material_claim_support": {"status": "passed", "notes": "All eleven cited URLs are cataloged: nine reachable and two commercial pages automation-blocked, with none missing or errored."},
-            "exam_contract_integrity": {"status": "passed", "notes": "The exact public objective block is preserved despite one monitor's certificate-chain failure, while the independently successful source-health capture is disclosed."},
-            "technical_coherence": {"status": "passed", "notes": "Translation and diagnostics, types/operators/streams, structured control, parameter passing and recursion, arrays/vectors/pointers/casts/allocation, structures, and strings are internally consistent."},
-            "volatility_and_lifecycle": {"status": "passed", "notes": "Raw memory operations are taught for syllabus literacy and separated from modern ownership context; compiler, standard, delivery, and transport evidence remain recheckable."},
-            "lab_safety_and_feasibility": {"status": "passed", "notes": "Eight local labs use safe inputs, warnings and sanitizers, scoped allocation experiments, deterministic tests, error-path inspection, and cleanup."},
-            "readiness_check_quality": {"status": "passed", "notes": "Forty original checks test language semantics, flow, functions, recursion, pointer/vector lifetime, structures, and strings without recalled items."},
-            "review_evidence_accuracy": {"status": "passed", "notes": "The September 2 record matches the objective hash, four-block map, three scenarios, eight labs, forty checks, and 11/9/2/0 link evidence."},
-            "duplication_and_contamination": {"status": "passed", "notes": "Modern-practice notes are clearly adjacent context and do not displace the entry-level tested syntax; no C-syllabus leakage or suspicious duplication was found."}
+            "official_scope": {
+              "status": "passed",
+              "notes": "All four 28/28/24/20 percent CPE-20-01 blocks are mapped, and the preserved official objective capture documents its transport-certificate discrepancy."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Syntax/literals/operators, flow/functions, vectors/pointers, and structures/strings receive translation, semantics, lifetime, scenario, lab, and readiness coverage."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All eleven cited URLs are cataloged: nine reachable and two commercial pages automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The exact public objective block is preserved despite one monitor's certificate-chain failure, while the independently successful source-health capture is disclosed."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Translation and diagnostics, types/operators/streams, structured control, parameter passing and recursion, arrays/vectors/pointers/casts/allocation, structures, and strings are internally consistent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Raw memory operations are taught for syllabus literacy and separated from modern ownership context; compiler, standard, delivery, and transport evidence remain recheckable."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight local labs use safe inputs, warnings and sanitizers, scoped allocation experiments, deterministic tests, error-path inspection, and cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original checks test language semantics, flow, functions, recursion, pointer/vector lifetime, structures, and strings without recalled items."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 record matches the objective hash, four-block map, three scenarios, eight labs, forty checks, and 11/9/2/0 link evidence."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Modern-practice notes are clearly adjacent context and do not displace the entry-level tested syntax; no C-syllabus leakage or suspicious duplication was found."
+            }
           },
           "findings": [],
           "notes": "The guide gives entry-level syntax a useful execution, diagnostic, and lifetime model without hiding older syllabus requirements."
@@ -8641,21 +8761,51 @@
           "vendor_id": "cpp-institute",
           "guide_path": "guides/CPP-22-02-cpp-certified-professional-programmer.md",
           "guide_content_sha256": "1914620159cddd8330c2992d4a2f9d0fc356a9a4487af6f20e98cf19d128206a",
-          "blueprint_snapshot_path": "data/objective-snapshots/cpp-22-02-official-objectives.txt",
+          "blueprint_snapshot_path": "data/objective-snapshots/cpp-22-02-official-objectives-2026-09-29.txt",
           "blueprint_snapshot_sha256": "c107cc84fb7b04ddebd32b529e9e319869dd8b9d8fb91748daeec025621b9776",
           "audited_on": "2026-09-06",
           "verdict": "pass",
           "checks": {
-            "official_scope": {"status": "passed", "notes": "Every named container, adapter, iterator, algorithm, function-object, stream and template objective is mapped without normalizing the provider's internally inconsistent totals."},
-            "objective_coverage": {"status": "passed", "notes": "All nine published blocks receive precondition, result, iterator-invalidation, complexity, scenario, lab, and readiness reasoning."},
-            "material_claim_support": {"status": "passed", "notes": "All eleven cited URLs are cataloged: nine reachable and two commercial pages automation-blocked, with none missing or errored; a broken provisional URL was rejected before publication."},
-            "exam_contract_integrity": {"status": "passed", "notes": "The guide explicitly reports that the official page says 40 questions while block counts total 32 and displayed weights total 107 percent, preserving the discrepancy for recheck."},
-            "technical_coherence": {"status": "passed", "notes": "Container/adapter choice, iterators and invalidation, algorithm range and ordering preconditions, function objects, formatting/state, and template instantiation are consistently taught through contracts."},
-            "volatility_and_lifecycle": {"status": "passed", "notes": "Legacy ptr_fun and stale CPP-22-01 course labeling are explicit, while exam totals, weights, standard/library behavior, course routes, and pricing remain recheckable."},
-            "lab_safety_and_feasibility": {"status": "passed", "notes": "Ten local labs use deterministic fixtures, iterator diagnostics, comparator/property tests, stream-state restoration, compiler diagnostics, benchmarks only where appropriate, and cleanup."},
-            "readiness_check_quality": {"status": "passed", "notes": "Thirty original checks test selection, preconditions, invalidation, results, complexity, I/O state, callables, and templates without copied items."},
-            "review_evidence_accuracy": {"status": "passed", "notes": "The September 2 record matches the objective hash, nine-block map, documented 40/32 and 107-percent discrepancies, three scenarios, ten labs, thirty checks, and 11/9/2/0 links."},
-            "duplication_and_contamination": {"status": "passed", "notes": "Legacy utilities and modern alternatives are clearly distinguished as syllabus versus practice; no unrelated C++ scope or suspicious substantive duplication was found."}
+            "official_scope": {
+              "status": "passed",
+              "notes": "Every named container, adapter, iterator, algorithm, function-object, stream and template objective is mapped without normalizing the provider's internally inconsistent totals."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "All nine published blocks receive precondition, result, iterator-invalidation, complexity, scenario, lab, and readiness reasoning."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All eleven cited URLs are cataloged: nine reachable and two commercial pages automation-blocked, with none missing or errored; a broken provisional URL was rejected before publication."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The guide explicitly reports that the official page says 40 questions while block counts total 32 and displayed weights total 107 percent, preserving the discrepancy for recheck."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Container/adapter choice, iterators and invalidation, algorithm range and ordering preconditions, function objects, formatting/state, and template instantiation are consistently taught through contracts."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Legacy ptr_fun and stale CPP-22-01 course labeling are explicit, while exam totals, weights, standard/library behavior, course routes, and pricing remain recheckable."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Ten local labs use deterministic fixtures, iterator diagnostics, comparator/property tests, stream-state restoration, compiler diagnostics, benchmarks only where appropriate, and cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Thirty original checks test selection, preconditions, invalidation, results, complexity, I/O state, callables, and templates without copied items."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 record matches the objective hash, nine-block map, documented 40/32 and 107-percent discrepancies, three scenarios, ten labs, thirty checks, and 11/9/2/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Legacy utilities and modern alternatives are clearly distinguished as syllabus versus practice; no unrelated C++ scope or suspicious substantive duplication was found."
+            }
           },
           "findings": [],
           "notes": "The guide makes a best-effort syllabus useful without concealing the official arithmetic and question-count contradictions."
@@ -8689,21 +8839,51 @@
           "vendor_id": "isaca",
           "guide_path": "guides/CRISC-isaca-certified-risk-information-systems-control.md",
           "guide_content_sha256": "07d954288b859fc90b609420c8d61a51cafb0b7ba72cdeb37d62cac5b8d6d78e",
-          "blueprint_snapshot_path": "data/objective-snapshots/crisc-official-objectives.txt",
+          "blueprint_snapshot_path": "data/objective-snapshots/crisc-official-objectives-2026-09-29.txt",
           "blueprint_snapshot_sha256": "8a607e350fc322e463cf56ebad620f53e5c2826017f3235aab6f04baf97bd614",
           "audited_on": "2026-09-06",
           "verdict": "pass",
           "checks": {
-            "official_scope": {"status": "passed", "notes": "All four effective-2025 CRISC domains at 26/22/32/20 percent are mapped."},
-            "objective_coverage": {"status": "passed", "notes": "Governance, assessment, response/reporting, and technology/security receive cause-event-impact, ownership, control, metric, scenario, lab, and readiness depth."},
-            "material_claim_support": {"status": "passed", "notes": "All twelve cited URLs are cataloged: ten reachable and two commercial pages automation-blocked, with none missing or errored."},
-            "exam_contract_integrity": {"status": "passed", "notes": "Passing the exam is correctly separated from the three-year/two-domain experience, application, ethics, maintenance, and credential requirements."},
-            "technical_coherence": {"status": "passed", "notes": "Governance and appetite, complete risk scenarios, qualitative/quantitative analysis, response/control design, control testing, KRIs/KPIs/KCIs, reporting, technology, resilience, and security connect consistently."},
-            "volatility_and_lifecycle": {"status": "passed", "notes": "Effective-outline date, exam/application/experience/CPE/fee policies, legal/regulatory context, technology risk, and commercial materials are clearly recheckable."},
-            "lab_safety_and_feasibility": {"status": "passed", "notes": "Eight safe risk-workflow labs use hypothetical or sanitized registers, explicit assumptions, stakeholder and control-owner roles, evidence plans, tabletop response, and no production change."},
-            "readiness_check_quality": {"status": "passed", "notes": "Forty original checks test governance, scenario construction, analysis, response, control/evidence, reporting, resilience, and technology judgment."},
-            "review_evidence_accuracy": {"status": "passed", "notes": "The September 2 record matches the objective hash, four-domain map, three scenarios, eight labs, forty checks, and 12/10/2/0 link evidence."},
-            "duplication_and_contamination": {"status": "passed", "notes": "Architecture, operations, SDLC, data, resilience and security are explicit risk context; no unrelated framework substitution or suspicious substantive duplication was found."}
+            "official_scope": {
+              "status": "passed",
+              "notes": "All four effective-2025 CRISC domains at 26/22/32/20 percent are mapped."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Governance, assessment, response/reporting, and technology/security receive cause-event-impact, ownership, control, metric, scenario, lab, and readiness depth."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All twelve cited URLs are cataloged: ten reachable and two commercial pages automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Passing the exam is correctly separated from the three-year/two-domain experience, application, ethics, maintenance, and credential requirements."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Governance and appetite, complete risk scenarios, qualitative/quantitative analysis, response/control design, control testing, KRIs/KPIs/KCIs, reporting, technology, resilience, and security connect consistently."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Effective-outline date, exam/application/experience/CPE/fee policies, legal/regulatory context, technology risk, and commercial materials are clearly recheckable."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight safe risk-workflow labs use hypothetical or sanitized registers, explicit assumptions, stakeholder and control-owner roles, evidence plans, tabletop response, and no production change."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original checks test governance, scenario construction, analysis, response, control/evidence, reporting, resilience, and technology judgment."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 record matches the objective hash, four-domain map, three scenarios, eight labs, forty checks, and 12/10/2/0 link evidence."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Architecture, operations, SDLC, data, resilience and security are explicit risk context; no unrelated framework substitution or suspicious substantive duplication was found."
+            }
           },
           "findings": [],
           "notes": "The guide keeps CRISC centered on decision ownership and defensible risk/control evidence rather than formula memorization."
@@ -9225,7 +9405,7 @@
           "vendor_id": "snowflake",
           "guide_path": "guides/COF-C03-snowpro-core.md",
           "guide_content_sha256": "88f17325bd3ef6ff48fbf8af68a7cb53426fec59b47c2991b654fc2408b8ba07",
-          "blueprint_snapshot_path": "data/objective-snapshots/COF-C03-official-objectives.txt",
+          "blueprint_snapshot_path": "data/objective-snapshots/COF-C03-official-objectives-2026-09-29.txt",
           "blueprint_snapshot_sha256": "fc6ba90a44c29eb3380a41bd9609357c29247bbe81be8003dcbe89ad71a8063c",
           "audited_on": "2026-09-06",
           "verdict": "pass",
@@ -9279,7 +9459,7 @@
           "vendor_id": "snowflake",
           "guide_path": "guides/DEA-C02-snowpro-advanced-data-engineer.md",
           "guide_content_sha256": "b2196de058766409bc49b61cc1f3689f63a25d900a6ce324861f1396bab5e183",
-          "blueprint_snapshot_path": "data/objective-snapshots/DEA-C02-official-objectives.txt",
+          "blueprint_snapshot_path": "data/objective-snapshots/DEA-C02-official-objectives-2026-09-29.txt",
           "blueprint_snapshot_sha256": "5d27aac73433eb775a5d5b4ff7af013755ab26751154413fa84c363d200909c0",
           "audited_on": "2026-09-06",
           "verdict": "pass",
@@ -15439,7 +15619,7 @@
           "vendor_id": "snowflake",
           "guide_path": "guides/GES-C02-snowpro-specialty-gen-ai.md",
           "guide_content_sha256": "38150a2c21058f0b61cdb3b8d1cc4307c4f23325f1dd03dc8132969b5bc044d5",
-          "blueprint_snapshot_path": "data/objective-snapshots/GES-C02-official-objectives.txt",
+          "blueprint_snapshot_path": "data/objective-snapshots/GES-C02-official-objectives-2026-09-29.txt",
           "blueprint_snapshot_sha256": "c6dcc5ab29e74f1ba7c2778039589727d42e249a5b732ff57bbbd323cf002a25",
           "audited_on": "2026-09-07",
           "verdict": "pass",
@@ -24844,5 +25024,586 @@
         "open_findings": 0,
         "closed_findings": 0
       }
-    }]
+    },
+    {
+      "id": "nonms-refresh-2026-10-28-group-12",
+      "title": "Non-Microsoft certification refresh group 12 guide audit",
+      "rubric_version": 2,
+      "created_on": "2026-10-28",
+      "completed_on": "2026-10-28",
+      "status": "completed",
+      "audit_mode": "read-only",
+      "selection_method": "Twelfth group of ten selected in oldest-first order from the frozen October 28 eligible queue.",
+      "rubric_path": "docs/AI-AUDIT.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "label": "codex-same-context-refresh-audit",
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "CLE-10-01",
+        "CLP-12-01",
+        "COF-C03",
+        "CPA-21-02",
+        "CPE-20-01",
+        "CPP-22-02",
+        "CRISC",
+        "CV0-004",
+        "DEA-C02",
+        "GES-C02"
+      ],
+      "results": [
+        {
+          "exam_code": "CLE-10-01",
+          "vendor_id": "cpp-institute",
+          "guide_path": "guides/CLE-10-01-c-certified-entry-level-programmer.md",
+          "guide_content_sha256": "3e5d67b63fd9b3a458f125274db980dac8f12d3fb52b673b54f9597af83a3689",
+          "blueprint_snapshot_path": "data/objective-snapshots/cle-10-01-official-objectives.txt",
+          "blueprint_snapshot_sha256": "f21493c90c62aa1fb1ad68ccdd416655ddee8b9f5206a9b992f8829ddf5ee2dd",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The active public syllabus/abilities and lifecycle were compared with the refreshed guide; no new exam version or applicable scope revision was announced."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "The existing objective map remains complete against the current issuer outline; full public task wording is captured in the four refreshed C/C++ snapshots where applicable."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Material exam and lifecycle statements remain tied to registered issuer sources; new release examples have their own primary-source records."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Published delivery and credential facts remain separated from unpublished details, estimates and recommendations."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide’s technical explanations and practice boundaries remain internally coherent at the level reviewed; no new technical issue was identified in this refresh."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current versions, dates, retirements and preview/GA distinctions are dated and labeled; unrelated SnowPro retirement notices were not applied to these exams."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Previously scoped exercises remain bounded; no live infrastructure or paid course work was executed in this batch."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original guide checks remain distinct from recalled, leaked or third-party exam questions."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "This receipt binds the current guide and objective snapshot hashes and records access limits; no human review is claimed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "The checked updates remain exam-specific and supplementary product context is not presented as exam scope."
+            }
+          },
+          "findings": [],
+          "notes": "Same-context read-only audit; no independent reviewer, human review, paid content access, or live labs are claimed."
+        },
+        {
+          "exam_code": "CLP-12-01",
+          "vendor_id": "cpp-institute",
+          "guide_path": "guides/CLP-12-01-c-certified-professional-programmer.md",
+          "guide_content_sha256": "f61cbe4ecd905d632773dc46f7dedf0632c849937b1b8069165db7f46ba91a9d",
+          "blueprint_snapshot_path": "data/objective-snapshots/clp-12-01-official-objectives.txt",
+          "blueprint_snapshot_sha256": "8136ac8d71a73622dd2068d08b9c18d513c25adaefddbc64e42ea1e63f402091",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The active public syllabus/abilities and lifecycle were compared with the refreshed guide; no new exam version or applicable scope revision was announced."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "The existing objective map remains complete against the current issuer outline; full public task wording is captured in the four refreshed C/C++ snapshots where applicable."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Material exam and lifecycle statements remain tied to registered issuer sources; new release examples have their own primary-source records."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Published delivery and credential facts remain separated from unpublished details, estimates and recommendations."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide’s technical explanations and practice boundaries remain internally coherent at the level reviewed; no new technical issue was identified in this refresh."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current versions, dates, retirements and preview/GA distinctions are dated and labeled; unrelated SnowPro retirement notices were not applied to these exams."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Previously scoped exercises remain bounded; no live infrastructure or paid course work was executed in this batch."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original guide checks remain distinct from recalled, leaked or third-party exam questions."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "This receipt binds the current guide and objective snapshot hashes and records access limits; no human review is claimed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "The checked updates remain exam-specific and supplementary product context is not presented as exam scope."
+            }
+          },
+          "findings": [],
+          "notes": "Same-context read-only audit; no independent reviewer, human review, paid content access, or live labs are claimed."
+        },
+        {
+          "exam_code": "COF-C03",
+          "vendor_id": "snowflake",
+          "guide_path": "guides/COF-C03-snowpro-core.md",
+          "guide_content_sha256": "00925ac2eb9457a77eb00ae7f1ece6bca3c058dd50870bb85c5800082f82113a",
+          "blueprint_snapshot_path": "data/objective-snapshots/COF-C03-official-objectives.txt",
+          "blueprint_snapshot_sha256": "fc6ba90a44c29eb3380a41bd9609357c29247bbe81be8003dcbe89ad71a8063c",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The active public syllabus/abilities and lifecycle were compared with the refreshed guide; no new exam version or applicable scope revision was announced."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "The existing objective map remains complete against the current issuer outline; full public task wording is captured in the four refreshed C/C++ snapshots where applicable."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Material exam and lifecycle statements remain tied to registered issuer sources; new release examples have their own primary-source records."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Published delivery and credential facts remain separated from unpublished details, estimates and recommendations."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide’s technical explanations and practice boundaries remain internally coherent at the level reviewed; no new technical issue was identified in this refresh."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current versions, dates, retirements and preview/GA distinctions are dated and labeled; unrelated SnowPro retirement notices were not applied to these exams."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Previously scoped exercises remain bounded; no live infrastructure or paid course work was executed in this batch."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original guide checks remain distinct from recalled, leaked or third-party exam questions."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "This receipt binds the current guide and objective snapshot hashes and records access limits; no human review is claimed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "The checked updates remain exam-specific and supplementary product context is not presented as exam scope."
+            }
+          },
+          "findings": [],
+          "notes": "Same-context read-only audit; no independent reviewer, human review, paid content access, or live labs are claimed."
+        },
+        {
+          "exam_code": "CPA-21-02",
+          "vendor_id": "cpp-institute",
+          "guide_path": "guides/CPA-21-02-cpp-certified-associate-programmer.md",
+          "guide_content_sha256": "6acafa5f00f55ad279291521b0f84d72a7dee742278c7c70c16e2e533f555432",
+          "blueprint_snapshot_path": "data/objective-snapshots/cpa-21-02-official-objectives.txt",
+          "blueprint_snapshot_sha256": "d0a9b639d54f64ab17900bdcd919f934945cba6d3b69efacd110611c861c6fdc",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The active public syllabus/abilities and lifecycle were compared with the refreshed guide; no new exam version or applicable scope revision was announced."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "The existing objective map remains complete against the current issuer outline; full public task wording is captured in the four refreshed C/C++ snapshots where applicable."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Material exam and lifecycle statements remain tied to registered issuer sources; new release examples have their own primary-source records."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Published delivery and credential facts remain separated from unpublished details, estimates and recommendations."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide’s technical explanations and practice boundaries remain internally coherent at the level reviewed; no new technical issue was identified in this refresh."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current versions, dates, retirements and preview/GA distinctions are dated and labeled; unrelated SnowPro retirement notices were not applied to these exams."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Previously scoped exercises remain bounded; no live infrastructure or paid course work was executed in this batch."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original guide checks remain distinct from recalled, leaked or third-party exam questions."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "This receipt binds the current guide and objective snapshot hashes and records access limits; no human review is claimed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "The checked updates remain exam-specific and supplementary product context is not presented as exam scope."
+            }
+          },
+          "findings": [],
+          "notes": "Same-context read-only audit; no independent reviewer, human review, paid content access, or live labs are claimed."
+        },
+        {
+          "exam_code": "CPE-20-01",
+          "vendor_id": "cpp-institute",
+          "guide_path": "guides/CPE-20-01-cpp-certified-entry-level-programmer.md",
+          "guide_content_sha256": "73130e853d66211931745c2d8c8b352f0413ae0173c0bc811b892cd00dfbd179",
+          "blueprint_snapshot_path": "data/objective-snapshots/cpe-20-01-official-objectives.txt",
+          "blueprint_snapshot_sha256": "faf4501642933ecdc38efb270dda58a7db3a7c95a0028bda125b61544a34f60d",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The active public syllabus/abilities and lifecycle were compared with the refreshed guide; no new exam version or applicable scope revision was announced."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "The existing objective map remains complete against the current issuer outline; full public task wording is captured in the four refreshed C/C++ snapshots where applicable."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Material exam and lifecycle statements remain tied to registered issuer sources; new release examples have their own primary-source records."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Published delivery and credential facts remain separated from unpublished details, estimates and recommendations."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide’s technical explanations and practice boundaries remain internally coherent at the level reviewed; no new technical issue was identified in this refresh."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current versions, dates, retirements and preview/GA distinctions are dated and labeled; unrelated SnowPro retirement notices were not applied to these exams."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Previously scoped exercises remain bounded; no live infrastructure or paid course work was executed in this batch."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original guide checks remain distinct from recalled, leaked or third-party exam questions."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "This receipt binds the current guide and objective snapshot hashes and records access limits; no human review is claimed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "The checked updates remain exam-specific and supplementary product context is not presented as exam scope."
+            }
+          },
+          "findings": [],
+          "notes": "Same-context read-only audit; no independent reviewer, human review, paid content access, or live labs are claimed."
+        },
+        {
+          "exam_code": "CPP-22-02",
+          "vendor_id": "cpp-institute",
+          "guide_path": "guides/CPP-22-02-cpp-certified-professional-programmer.md",
+          "guide_content_sha256": "75131515dfed7e150516d207c6c2c409d19853ad4b6d2de18022edd64f18ea57",
+          "blueprint_snapshot_path": "data/objective-snapshots/cpp-22-02-official-objectives.txt",
+          "blueprint_snapshot_sha256": "5869a199ee4632f40f020426475c4df284e614660e7ac83ca8595bb8709b6c7d",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The active public syllabus/abilities and lifecycle were compared with the refreshed guide; no new exam version or applicable scope revision was announced."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "The existing objective map remains complete against the current issuer outline; full public task wording is captured in the four refreshed C/C++ snapshots where applicable."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Material exam and lifecycle statements remain tied to registered issuer sources; new release examples have their own primary-source records."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Published delivery and credential facts remain separated from unpublished details, estimates and recommendations."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide’s technical explanations and practice boundaries remain internally coherent at the level reviewed; no new technical issue was identified in this refresh."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current versions, dates, retirements and preview/GA distinctions are dated and labeled; unrelated SnowPro retirement notices were not applied to these exams."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Previously scoped exercises remain bounded; no live infrastructure or paid course work was executed in this batch."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original guide checks remain distinct from recalled, leaked or third-party exam questions."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "This receipt binds the current guide and objective snapshot hashes and records access limits; no human review is claimed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "The checked updates remain exam-specific and supplementary product context is not presented as exam scope."
+            }
+          },
+          "findings": [],
+          "notes": "Same-context read-only audit; no independent reviewer, human review, paid content access, or live labs are claimed."
+        },
+        {
+          "exam_code": "CRISC",
+          "vendor_id": "isaca",
+          "guide_path": "guides/CRISC-isaca-certified-risk-information-systems-control.md",
+          "guide_content_sha256": "97a51751ea63e36183fb05585c20b37f231aaa3f7c465acd00ebce9b754632b3",
+          "blueprint_snapshot_path": "data/objective-snapshots/crisc-official-objectives.txt",
+          "blueprint_snapshot_sha256": "8a607e350fc322e463cf56ebad620f53e5c2826017f3235aab6f04baf97bd614",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The active public syllabus/abilities and lifecycle were compared with the refreshed guide; no new exam version or applicable scope revision was announced."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "The existing objective map remains complete against the current issuer outline; full public task wording is captured in the four refreshed C/C++ snapshots where applicable."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Material exam and lifecycle statements remain tied to registered issuer sources; new release examples have their own primary-source records."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Published delivery and credential facts remain separated from unpublished details, estimates and recommendations."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide’s technical explanations and practice boundaries remain internally coherent at the level reviewed; no new technical issue was identified in this refresh."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current versions, dates, retirements and preview/GA distinctions are dated and labeled; unrelated SnowPro retirement notices were not applied to these exams."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Previously scoped exercises remain bounded; no live infrastructure or paid course work was executed in this batch."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original guide checks remain distinct from recalled, leaked or third-party exam questions."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "This receipt binds the current guide and objective snapshot hashes and records access limits; no human review is claimed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "The checked updates remain exam-specific and supplementary product context is not presented as exam scope."
+            }
+          },
+          "findings": [],
+          "notes": "Same-context read-only audit; no independent reviewer, human review, paid content access, or live labs are claimed."
+        },
+        {
+          "exam_code": "CV0-004",
+          "vendor_id": "comptia",
+          "guide_path": "guides/CV0-004-comptia-cloud-plus.md",
+          "guide_content_sha256": "3c4d905ace4fdefaf0fbc15321a7b5e3c978d42f1aa802f3425eb8e3308c683c",
+          "blueprint_snapshot_path": "data/objective-snapshots/cv0-004-official-objectives.txt",
+          "blueprint_snapshot_sha256": "6fb337abbad0ccde4c7a29dceb3c7e3611211edf97a676fe7bd7800406c0a192",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The active public syllabus/abilities and lifecycle were compared with the refreshed guide; no new exam version or applicable scope revision was announced."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "The existing objective map remains complete against the current issuer outline; full public task wording is captured in the four refreshed C/C++ snapshots where applicable."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Material exam and lifecycle statements remain tied to registered issuer sources; new release examples have their own primary-source records."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Published delivery and credential facts remain separated from unpublished details, estimates and recommendations."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide’s technical explanations and practice boundaries remain internally coherent at the level reviewed; no new technical issue was identified in this refresh."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current versions, dates, retirements and preview/GA distinctions are dated and labeled; unrelated SnowPro retirement notices were not applied to these exams."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Previously scoped exercises remain bounded; no live infrastructure or paid course work was executed in this batch."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original guide checks remain distinct from recalled, leaked or third-party exam questions."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "This receipt binds the current guide and objective snapshot hashes and records access limits; no human review is claimed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "The checked updates remain exam-specific and supplementary product context is not presented as exam scope."
+            }
+          },
+          "findings": [],
+          "notes": "Same-context read-only audit; no independent reviewer, human review, paid content access, or live labs are claimed."
+        },
+        {
+          "exam_code": "DEA-C02",
+          "vendor_id": "snowflake",
+          "guide_path": "guides/DEA-C02-snowpro-advanced-data-engineer.md",
+          "guide_content_sha256": "4d0b8da4c10cf0a62674f04925c28f62076938cb0f003c88824937560b217861",
+          "blueprint_snapshot_path": "data/objective-snapshots/DEA-C02-official-objectives.txt",
+          "blueprint_snapshot_sha256": "5d27aac73433eb775a5d5b4ff7af013755ab26751154413fa84c363d200909c0",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The active public syllabus/abilities and lifecycle were compared with the refreshed guide; no new exam version or applicable scope revision was announced."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "The existing objective map remains complete against the current issuer outline; full public task wording is captured in the four refreshed C/C++ snapshots where applicable."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Material exam and lifecycle statements remain tied to registered issuer sources; new release examples have their own primary-source records."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Published delivery and credential facts remain separated from unpublished details, estimates and recommendations."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide’s technical explanations and practice boundaries remain internally coherent at the level reviewed; no new technical issue was identified in this refresh."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current versions, dates, retirements and preview/GA distinctions are dated and labeled; unrelated SnowPro retirement notices were not applied to these exams."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Previously scoped exercises remain bounded; no live infrastructure or paid course work was executed in this batch."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original guide checks remain distinct from recalled, leaked or third-party exam questions."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "This receipt binds the current guide and objective snapshot hashes and records access limits; no human review is claimed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "The checked updates remain exam-specific and supplementary product context is not presented as exam scope."
+            }
+          },
+          "findings": [],
+          "notes": "Same-context read-only audit; no independent reviewer, human review, paid content access, or live labs are claimed."
+        },
+        {
+          "exam_code": "GES-C02",
+          "vendor_id": "snowflake",
+          "guide_path": "guides/GES-C02-snowpro-specialty-gen-ai.md",
+          "guide_content_sha256": "2c3798229fbba61939739381cacccf0aa16cb0ac31427d8b58d1a88fdb73a276",
+          "blueprint_snapshot_path": "data/objective-snapshots/GES-C02-official-objectives.txt",
+          "blueprint_snapshot_sha256": "c6dcc5ab29e74f1ba7c2778039589727d42e249a5b732ff57bbbd323cf002a25",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The active public syllabus/abilities and lifecycle were compared with the refreshed guide; no new exam version or applicable scope revision was announced."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "The existing objective map remains complete against the current issuer outline; full public task wording is captured in the four refreshed C/C++ snapshots where applicable."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Material exam and lifecycle statements remain tied to registered issuer sources; new release examples have their own primary-source records."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Published delivery and credential facts remain separated from unpublished details, estimates and recommendations."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide’s technical explanations and practice boundaries remain internally coherent at the level reviewed; no new technical issue was identified in this refresh."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current versions, dates, retirements and preview/GA distinctions are dated and labeled; unrelated SnowPro retirement notices were not applied to these exams."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Previously scoped exercises remain bounded; no live infrastructure or paid course work was executed in this batch."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original guide checks remain distinct from recalled, leaked or third-party exam questions."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "This receipt binds the current guide and objective snapshot hashes and records access limits; no human review is claimed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "The checked updates remain exam-specific and supplementary product context is not presented as exam scope."
+            }
+          },
+          "findings": [],
+          "notes": "Same-context read-only audit; no independent reviewer, human review, paid content access, or live labs are claimed."
+        }
+      ],
+      "summary": {
+        "guide_count": 10,
+        "pass": 10,
+        "pass_with_notes": 0,
+        "fix_required": 0,
+        "blocked": 0,
+        "open_findings": 0,
+        "closed_findings": 0
+      }
+    }
+]
 }

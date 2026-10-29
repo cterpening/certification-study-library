@@ -6,21 +6,27 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-28
 ---
 
 # SnowPro Advanced: Data Engineer (DEA-C02) Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Reviewed September 29, 2026 against five public abilities and current primary documentation. The original local CDC workbook below passed 40 checks; eight Snowflake account labs remain proposed. See the [deep-review evidence](../docs/research/2026-09-29-dea-c02-deep-review.md) and [coverage record](../docs/SOURCE-VALIDATION.md#dea-c02-coverage-record).
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Reviewed October 28, 2026 against five public abilities and current primary documentation. The original local CDC workbook below passed 40 checks; eight Snowflake account labs remain proposed. See the [deep-review evidence](../docs/research/2026-09-29-dea-c02-deep-review.md) and [coverage record](../docs/SOURCE-VALIDATION.md#dea-c02-coverage-record).
 
 **Current baseline:** DEA-C02 is the active SnowPro Advanced: Data Engineer exam. Snowflake publishes five abilities and recommends two or more years of hands-on data-engineering experience in a production environment.<br>
-**Upcoming change:** No future exam update or retirement announcement was present on the checked official page September 29, 2026. Recent streaming product releases below are separate from the exam lifecycle.<br>
+**Upcoming change:** No future exam update or retirement announcement was present on the checked official page October 28, 2026. Recent streaming product releases below are separate from the exam lifecycle.<br>
 **Public scope boundary:** The detailed exam guide is requested through a Snowflake web form. This guide maps the five live public abilities to current product documentation and production evidence; it does not invent inaccessible weights or subobjectives. Reconcile it with the official guide you receive.<br>
 **Credential contract:** The public catalog lists Advanced attempts at USD 375. Current SnowPro policy says certifications expire after two years, uses a 0–1000 scale with 750 passing, and documents renewal and retake rules. Confirm price, delivery, languages, policy and accommodations at registration.
 
 The score is scaled, so 750 does not mean 75% correct. Current [program policy](https://learn.snowflake.com/en/pages/snowpro-policies/) requires qualifying renewal before expiry, allows full-exam renewal within six months of expiration, and specifies a seven-day wait after failure with four retakes within twelve months. An expired credential cannot use the continuing-education route. **VERIFY CURRENT:** Neither a training agenda nor a practice-product page establishes this exam's question count, duration or domain weights.
+
+## Refresh check — October 28, 2026
+
+Snowflake continues to list **DEA-C02** as its Advanced Data Engineer exam. The public profile retains five abilities—data sourcing, cross-platform transformation/replication/sharing, near-real-time streams, scalable compute, and performance—and recommends two or more years of production data-engineering experience. The official [catalog](https://learn.snowflake.com/en/certifications/) shows the study-guide link and no retirement notice for DEA-C02; reconcile the public abilities with the detailed guide before the exam.
+
+Two recent engineering updates give this guide fresh implementation examples: Elastic Channels for Snowpipe Streaming reached GA on September 15 (SDK 1.8.0+; use named channels where ordering/exactly-once semantics are required), and CoCo continuous plus bulk file loading reached GA October 27. Dynamic tables can now continue incremental or adaptive refresh after failover, with stated Iceberg exclusions. These are product examples, not new exam objectives: [Elastic Channels](https://docs.snowflake.com/en/release-notes/2026/other/2026-09-15-snowpipe-streaming-elastic-channels-ga), [CoCo file loading](https://docs.snowflake.com/en/release-notes/2026/other/2026-10-27-file-loading-coco-ga), [dynamic-table failover](https://docs.snowflake.com/en/release-notes/2026/other/2026-09-30-dynamic-tables-incremental-refresh-after-failover).
 
 ## How to use this guide
 
@@ -608,7 +614,7 @@ Original study prompts with explanatory answers; these are not exam items.
 
 ## Places to learn
 
-This is not a complete list, and it is not meant to be consumed in full. Public metadata was checked September 29, 2026; no paid lessons, recordings or practice questions were accessed. Provider estimates are separated from this guide's optional study budgets. **VERIFY CURRENT:** Confirm exam alignment, expiry, client versions and booking availability before purchasing or enrolling.
+This is not a complete list, and it is not meant to be consumed in full. Public metadata was checked October 28, 2026; no paid lessons, recordings or practice questions were accessed. Provider estimates are separated from this guide's optional study budgets. **VERIFY CURRENT:** Confirm exam alignment, expiry, client versions and booking availability before purchasing or enrolling.
 
 | Resource | Access | Estimated time |
 |---|---|---|

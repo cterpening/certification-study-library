@@ -7671,7 +7671,7 @@
       "review_type": "source-validation",
       "reviewed_on": "2026-09-29",
       "outcome": "passed",
-      "blueprint_snapshot_path": "data/objective-snapshots/cv0-004-official-objectives.txt",
+      "blueprint_snapshot_path": "data/objective-snapshots/cv0-004-official-objectives-2026-09-29.txt",
       "blueprint_snapshot_sha256": "6fb337abbad0ccde4c7a29dceb3c7e3611211edf97a676fe7bd7800406c0a192",
       "objective_coverage": [
         {
@@ -8999,7 +8999,7 @@
       "review_type": "source-validation",
       "reviewed_on": "2026-09-29",
       "outcome": "passed",
-      "blueprint_snapshot_path": "data/objective-snapshots/COF-C03-official-objectives.txt",
+      "blueprint_snapshot_path": "data/objective-snapshots/COF-C03-official-objectives-2026-09-29.txt",
       "blueprint_snapshot_sha256": "fc6ba90a44c29eb3380a41bd9609357c29247bbe81be8003dcbe89ad71a8063c",
       "objective_coverage": [
         {
@@ -9081,7 +9081,7 @@
       "review_type": "source-validation",
       "reviewed_on": "2026-09-29",
       "outcome": "passed",
-      "blueprint_snapshot_path": "data/objective-snapshots/DEA-C02-official-objectives.txt",
+      "blueprint_snapshot_path": "data/objective-snapshots/DEA-C02-official-objectives-2026-09-29.txt",
       "blueprint_snapshot_sha256": "5d27aac73433eb775a5d5b4ff7af013755ab26751154413fa84c363d200909c0",
       "objective_coverage": [
         {
@@ -9147,7 +9147,7 @@
       "review_type": "source-validation",
       "reviewed_on": "2026-09-29",
       "outcome": "passed",
-      "blueprint_snapshot_path": "data/objective-snapshots/GES-C02-official-objectives.txt",
+      "blueprint_snapshot_path": "data/objective-snapshots/GES-C02-official-objectives-2026-09-29.txt",
       "blueprint_snapshot_sha256": "c6dcc5ab29e74f1ba7c2778039589727d42e249a5b732ff57bbbd323cf002a25",
       "objective_coverage": [
         {
@@ -10772,7 +10772,7 @@
       "review_type": "source-validation",
       "reviewed_on": "2026-09-29",
       "outcome": "passed",
-      "blueprint_snapshot_path": "data/objective-snapshots/crisc-official-objectives.txt",
+      "blueprint_snapshot_path": "data/objective-snapshots/crisc-official-objectives-2026-09-29.txt",
       "blueprint_snapshot_sha256": "8a607e350fc322e463cf56ebad620f53e5c2826017f3235aab6f04baf97bd614",
       "objective_coverage": [
         {
@@ -10994,66 +10994,66 @@
       "notes": "Mapped 84 syllabus bullets across all 15 numbered objectives. Repaired failure-stage, Boolean-operand, copy, method-return and scope explanations; preserved and improved 40 answers. Four public code blocks passed 136 offline checks, including three worked scenarios. Refreshed course metadata and disclosed conflicting vendor counts/weights and practice-role instructions. Direct primary fetches, paid interiors, current exam rollout and human review remain qualified. See docs/research/2026-09-29-pcep-30-02-deep-review.md"
     },
         {
-      "id": "cpe2001-2026-09-29-source-validation",
-      "exam_code": "CPE-20-01",
-      "guide_path": "guides/CPE-20-01-cpp-certified-entry-level-programmer.md",
-      "review_type": "source-validation",
-      "reviewed_on": "2026-09-29",
-      "outcome": "passed",
-      "blueprint_snapshot_path": "data/objective-snapshots/cpe-20-01-official-objectives.txt",
-      "blueprint_snapshot_sha256": "faf4501642933ecdc38efb270dda58a7db3a7c95a0028bda125b61544a34f60d",
-      "objective_coverage": [
-        {
-          "objective_group": "Block 1 – Syntax, Literals, and Operators",
-          "guide_sections": [
-            "1. Syntax, literals, and operators — 28%",
-            "Executed trace workbook",
-            "Answer key"
-          ]
+          "id": "cpe2001-2026-09-29-source-validation",
+          "exam_code": "CPE-20-01",
+          "guide_path": "guides/CPE-20-01-cpp-certified-entry-level-programmer.md",
+          "review_type": "source-validation",
+          "reviewed_on": "2026-09-29",
+          "outcome": "passed",
+          "blueprint_snapshot_path": "data/objective-snapshots/cpe-20-01-official-objectives-2026-09-29.txt",
+          "blueprint_snapshot_sha256": "faf4501642933ecdc38efb270dda58a7db3a7c95a0028bda125b61544a34f60d",
+          "objective_coverage": [
+            {
+              "objective_group": "Block 1 – Syntax, Literals, and Operators",
+              "guide_sections": [
+                "1. Syntax, literals, and operators — 28%",
+                "Executed trace workbook",
+                "Answer key"
+              ]
+            },
+            {
+              "objective_group": "Block 2 – Flow Control and Functions",
+              "guide_sections": [
+                "2. Flow control and functions — 28%",
+                "Executed trace workbook",
+                "Integrated scenarios",
+                "Answer key"
+              ]
+            },
+            {
+              "objective_group": "Block 3 – Vectors and Pointers",
+              "guide_sections": [
+                "3. Vectors and pointers — 24%",
+                "Executed trace workbook",
+                "Integrated scenarios",
+                "Answer key"
+              ]
+            },
+            {
+              "objective_group": "Block 4 – Structures and Strings",
+              "guide_sections": [
+                "4. Structures and strings — 20%",
+                "Executed trace workbook",
+                "Integrated scenarios",
+                "Answer key"
+              ]
+            }
+          ],
+          "checks": {
+            "official_objectives_mapped": true,
+            "material_claims_sourced": true,
+            "volatile_claims_labeled": true,
+            "links_and_local_references_valid": true,
+            "exam_integrity_policy_passed": true
+          },
+          "link_evidence": {
+            "unique_external_links": 29,
+            "reachable": 26,
+            "access_blocked": 2,
+            "missing_or_error": 1
+          },
+          "notes": "Mapped all 26 numbered objectives; repaired hosted-main arguments, integer remainder, whole-line input, pointer casts, vector capacity/lifetime and string sentinel explanations. Ten public C++ blocks compiled and ran with documented contexts; 67 workbook checks and 60 scenario checks passed on GCC 14.2 and Clang 19.1 remotely. Preserved/improved 40 original answers, completed three worked programs and refreshed resource metadata. Direct primary fetches, paid interiors, vendor copy errors and human review remain qualified. See docs/research/2026-09-29-cpe-20-01-deep-review.md"
         },
-        {
-          "objective_group": "Block 2 – Flow Control and Functions",
-          "guide_sections": [
-            "2. Flow control and functions — 28%",
-            "Executed trace workbook",
-            "Integrated scenarios",
-            "Answer key"
-          ]
-        },
-        {
-          "objective_group": "Block 3 – Vectors and Pointers",
-          "guide_sections": [
-            "3. Vectors and pointers — 24%",
-            "Executed trace workbook",
-            "Integrated scenarios",
-            "Answer key"
-          ]
-        },
-        {
-          "objective_group": "Block 4 – Structures and Strings",
-          "guide_sections": [
-            "4. Structures and strings — 20%",
-            "Executed trace workbook",
-            "Integrated scenarios",
-            "Answer key"
-          ]
-        }
-      ],
-      "checks": {
-        "official_objectives_mapped": true,
-        "material_claims_sourced": true,
-        "volatile_claims_labeled": true,
-        "links_and_local_references_valid": true,
-        "exam_integrity_policy_passed": true
-      },
-      "link_evidence": {
-        "unique_external_links": 29,
-        "reachable": 26,
-        "access_blocked": 2,
-        "missing_or_error": 1
-      },
-      "notes": "Mapped all 26 numbered objectives; repaired hosted-main arguments, integer remainder, whole-line input, pointer casts, vector capacity/lifetime and string sentinel explanations. Ten public C++ blocks compiled and ran with documented contexts; 67 workbook checks and 60 scenario checks passed on GCC 14.2 and Clang 19.1 remotely. Preserved/improved 40 original answers, completed three worked programs and refreshed resource metadata. Direct primary fetches, paid interiors, vendor copy errors and human review remain qualified. See docs/research/2026-09-29-cpe-20-01-deep-review.md"
-    },
     {
       "id": "jse4001-2026-09-29-source-validation",
       "exam_code": "JSE-40-01",
@@ -11134,103 +11134,103 @@
       "notes": "Mapped all 30 canonical scope bullets across six unweighted blocks, separating practice-kit percentages. Reviewed and improved all 40 original answers; eight public JavaScript blocks executed in Chrome, with 114 core checks also passing in Node, 109 scenario checks, 19 scenario and 16 introductory dialog cases, scope/timing probes and actual debugger state/source-repair evidence. Resource metadata, vendor copy errors, access limits and pending human review remain explicit. See docs/research/2026-09-29-jse-40-01-deep-review.md"
     },
         {
-      "id": "cle1001-2026-09-29-source-validation",
-      "exam_code": "CLE-10-01",
-      "guide_path": "guides/CLE-10-01-c-certified-entry-level-programmer.md",
-      "review_type": "source-validation",
-      "reviewed_on": "2026-09-29",
-      "outcome": "passed",
-      "blueprint_snapshot_path": "data/objective-snapshots/cle-10-01-official-objectives.txt",
-      "blueprint_snapshot_sha256": "24a914783ae6dd53544f35edc1e6fdae598a2998c7187d1d0008adf8c1703ec9",
-      "objective_coverage": [
-        {
-          "objective_group": "Block 1 - Basic Concepts (4 items; 13.25%)",
-          "guide_sections": [
-            "1. Basic concepts — 13.25%",
-            "Executed core workbook",
-            "Integrated scenarios",
-            "Answer key"
-          ]
+          "id": "cle1001-2026-09-29-source-validation",
+          "exam_code": "CLE-10-01",
+          "guide_path": "guides/CLE-10-01-c-certified-entry-level-programmer.md",
+          "review_type": "source-validation",
+          "reviewed_on": "2026-09-29",
+          "outcome": "passed",
+          "blueprint_snapshot_path": "data/objective-snapshots/cle-10-01-official-objectives-2026-09-29.txt",
+          "blueprint_snapshot_sha256": "24a914783ae6dd53544f35edc1e6fdae598a2998c7187d1d0008adf8c1703ec9",
+          "objective_coverage": [
+            {
+              "objective_group": "Block 1 - Basic Concepts (4 items; 13.25%)",
+              "guide_sections": [
+                "1. Basic concepts — 13.25%",
+                "Executed core workbook",
+                "Integrated scenarios",
+                "Answer key"
+              ]
+            },
+            {
+              "objective_group": "Block 2 - Data Types, Evaluations, and Basic I/O Operations (4 items; 13.25%)",
+              "guide_sections": [
+                "2. Data types, conversions, and basic I/O — 13.25%",
+                "Executed core workbook",
+                "Integrated scenarios",
+                "Answer key"
+              ]
+            },
+            {
+              "objective_group": "Block 3 - Arithmetic, Logical, and Bitwise Operators (4 items; 13.25%)",
+              "guide_sections": [
+                "3. Operators — 13.25%",
+                "Executed core workbook",
+                "Integrated scenarios",
+                "Answer key"
+              ]
+            },
+            {
+              "objective_group": "Block 4 - Flow Control: Decision-Making Statements (4 items; 13.25%)",
+              "guide_sections": [
+                "4. Decision-making — 13.25%",
+                "Executed core workbook",
+                "Integrated scenarios",
+                "Answer key"
+              ]
+            },
+            {
+              "objective_group": "Block 5 - Flow Control: Loops (5 items; 16.50%)",
+              "guide_sections": [
+                "5. Loops — 16.50%",
+                "Executed core workbook",
+                "Integrated scenarios",
+                "Answer key"
+              ]
+            },
+            {
+              "objective_group": "Block 6 - Arrays, Pointers, and Memory Management (5 items; 16.50%)",
+              "guide_sections": [
+                "6. Arrays, pointers, and memory — 16.50%",
+                "Executed core workbook",
+                "Integrated scenarios",
+                "Answer key"
+              ]
+            },
+            {
+              "objective_group": "Block 7 - String Manipulation (2 items; 7%)",
+              "guide_sections": [
+                "7. Strings — 7%",
+                "Executed core workbook",
+                "Integrated scenarios",
+                "Answer key"
+              ]
+            },
+            {
+              "objective_group": "Block 8 - The Basics of Functions (2 items; 7%)",
+              "guide_sections": [
+                "8. Functions — 7%",
+                "Executed core workbook",
+                "Integrated scenarios",
+                "Answer key"
+              ]
+            }
+          ],
+          "checks": {
+            "official_objectives_mapped": true,
+            "material_claims_sourced": true,
+            "volatile_claims_labeled": true,
+            "links_and_local_references_valid": true,
+            "exam_integrity_policy_passed": true
+          },
+          "link_evidence": {
+            "unique_external_links": 23,
+            "reachable": 20,
+            "access_blocked": 2,
+            "missing_or_error": 1
+          },
+          "notes": "Mapped all 36 numbered objectives, repaired numeric input overflow/prefix handling, explicit rounding, array-row bounds, ownership and string capacity. Reviewed/improved all 30 original answers. Eight complete public C programs executed remotely; GCC 14.2 and Clang 19.1 each passed 72 core and 118 scenario checks, plus nine sum-boundary checks on GCC. Paid/source access limits, incomplete vendor snippets and human review remain explicit. See docs/research/2026-09-29-cle-10-01-deep-review.md"
         },
-        {
-          "objective_group": "Block 2 - Data Types, Evaluations, and Basic I/O Operations (4 items; 13.25%)",
-          "guide_sections": [
-            "2. Data types, conversions, and basic I/O — 13.25%",
-            "Executed core workbook",
-            "Integrated scenarios",
-            "Answer key"
-          ]
-        },
-        {
-          "objective_group": "Block 3 - Arithmetic, Logical, and Bitwise Operators (4 items; 13.25%)",
-          "guide_sections": [
-            "3. Operators — 13.25%",
-            "Executed core workbook",
-            "Integrated scenarios",
-            "Answer key"
-          ]
-        },
-        {
-          "objective_group": "Block 4 - Flow Control: Decision-Making Statements (4 items; 13.25%)",
-          "guide_sections": [
-            "4. Decision-making — 13.25%",
-            "Executed core workbook",
-            "Integrated scenarios",
-            "Answer key"
-          ]
-        },
-        {
-          "objective_group": "Block 5 - Flow Control: Loops (5 items; 16.50%)",
-          "guide_sections": [
-            "5. Loops — 16.50%",
-            "Executed core workbook",
-            "Integrated scenarios",
-            "Answer key"
-          ]
-        },
-        {
-          "objective_group": "Block 6 - Arrays, Pointers, and Memory Management (5 items; 16.50%)",
-          "guide_sections": [
-            "6. Arrays, pointers, and memory — 16.50%",
-            "Executed core workbook",
-            "Integrated scenarios",
-            "Answer key"
-          ]
-        },
-        {
-          "objective_group": "Block 7 - String Manipulation (2 items; 7%)",
-          "guide_sections": [
-            "7. Strings — 7%",
-            "Executed core workbook",
-            "Integrated scenarios",
-            "Answer key"
-          ]
-        },
-        {
-          "objective_group": "Block 8 - The Basics of Functions (2 items; 7%)",
-          "guide_sections": [
-            "8. Functions — 7%",
-            "Executed core workbook",
-            "Integrated scenarios",
-            "Answer key"
-          ]
-        }
-      ],
-      "checks": {
-        "official_objectives_mapped": true,
-        "material_claims_sourced": true,
-        "volatile_claims_labeled": true,
-        "links_and_local_references_valid": true,
-        "exam_integrity_policy_passed": true
-      },
-      "link_evidence": {
-        "unique_external_links": 23,
-        "reachable": 20,
-        "access_blocked": 2,
-        "missing_or_error": 1
-      },
-      "notes": "Mapped all 36 numbered objectives, repaired numeric input overflow/prefix handling, explicit rounding, array-row bounds, ownership and string capacity. Reviewed/improved all 30 original answers. Eight complete public C programs executed remotely; GCC 14.2 and Clang 19.1 each passed 72 core and 118 scenario checks, plus nine sum-boundary checks on GCC. Paid/source access limits, incomplete vendor snippets and human review remain explicit. See docs/research/2026-09-29-cle-10-01-deep-review.md"
-    },
     {
       "id": "pcap-31-03-2026-09-29-source-validation",
       "exam_code": "PCAP-31-03",
@@ -11565,259 +11565,259 @@
       "notes": "Mapped all 23 objectives and expanded 30 answers. Fixed an undeclared allocation operand, unchecked signed addition, realloc lifetime/zero-size wording and ambiguous formatted-input failure handling. Five original C files plus CMake build passed remote GCC/Clang checks: 181 loader and 53 language checks on each, selected optimization/configuration/sanitizer variants, six diagnostic failures and preprocessing inspection. Resource/policy access limits and human review remain explicit. See docs/research/2026-09-29-cla-11-03-deep-review.md"
     },
         {
-      "id": "clp1201-2026-09-29-source-validation",
-      "exam_code": "CLP-12-01",
-      "guide_path": "guides/CLP-12-01-c-certified-professional-programmer.md",
-      "review_type": "source-validation",
-      "reviewed_on": "2026-09-29",
-      "outcome": "passed",
-      "blueprint_snapshot_path": "data/objective-snapshots/clp-12-01-official-objectives.txt",
-      "blueprint_snapshot_sha256": "ca46317388e8217cdca5a716c497f3c1b715a76d371d2c79247e1cfe7d0d0603",
-      "objective_coverage": [
-        {
-          "objective_group": "Block 1 - Applied Evolution of C Programming (8 items; 14.5%)",
-          "guide_sections": [
-            "1. Applied evolution of C — 14.5%",
-            "Original executable workbook",
-            "Answer key"
-          ]
+          "id": "clp1201-2026-09-29-source-validation",
+          "exam_code": "CLP-12-01",
+          "guide_path": "guides/CLP-12-01-c-certified-professional-programmer.md",
+          "review_type": "source-validation",
+          "reviewed_on": "2026-09-29",
+          "outcome": "passed",
+          "blueprint_snapshot_path": "data/objective-snapshots/clp-12-01-official-objectives-2026-09-29.txt",
+          "blueprint_snapshot_sha256": "ca46317388e8217cdca5a716c497f3c1b715a76d371d2c79247e1cfe7d0d0603",
+          "objective_coverage": [
+            {
+              "objective_group": "Block 1 - Applied Evolution of C Programming (8 items; 14.5%)",
+              "guide_sections": [
+                "1. Applied evolution of C — 14.5%",
+                "Original executable workbook",
+                "Answer key"
+              ]
+            },
+            {
+              "objective_group": "Block 2 - Variadic Functions and Macros (5 items; 9%)",
+              "guide_sections": [
+                "2. Variadic functions and macros — 9%",
+                "Original executable workbook",
+                "Answer key"
+              ]
+            },
+            {
+              "objective_group": "Block 3 - Fundamentals of Low-Level I/O (7 items; 13%)",
+              "guide_sections": [
+                "3. Fundamentals of low-level I/O — 13%",
+                "Original executable workbook",
+                "Answer key"
+              ]
+            },
+            {
+              "objective_group": "Block 4 - Memory and String Handling (9 items; 16%)",
+              "guide_sections": [
+                "4. Memory and string handling — 16%",
+                "Original executable workbook",
+                "Answer key"
+              ]
+            },
+            {
+              "objective_group": "Block 5 - Process and Thread Management (5 items; 9%)",
+              "guide_sections": [
+                "5. Processes and threads — 9%",
+                "Original executable workbook",
+                "Answer key"
+              ]
+            },
+            {
+              "objective_group": "Block 6 - Numerical Types and Computations (6 items; 11%)",
+              "guide_sections": [
+                "6. Numerical types and computations — 11%",
+                "Original executable workbook",
+                "Answer key"
+              ]
+            },
+            {
+              "objective_group": "Block 7 - Network Socket Programming (7 items; 13%)",
+              "guide_sections": [
+                "7. Network socket programming — 13%",
+                "Original executable workbook",
+                "Answer key"
+              ]
+            },
+            {
+              "objective_group": "Block 8 - Specialized Programming Considerations (8 items; 14.5%)",
+              "guide_sections": [
+                "8. Specialized considerations — 14.5%",
+                "Original executable workbook",
+                "Answer key"
+              ]
+            }
+          ],
+          "checks": {
+            "official_objectives_mapped": true,
+            "material_claims_sourced": true,
+            "volatile_claims_labeled": true,
+            "links_and_local_references_valid": true,
+            "exam_integrity_policy_passed": true
+          },
+          "link_evidence": {
+            "unique_external_links": 34,
+            "reachable": 16,
+            "access_blocked": 1,
+            "missing_or_error": 17
+          },
+          "notes": "Mapped all 29 objectives and expanded 30 answers. Replaced incomplete variadic and descriptor fragments with five exact original C11 programs. Seventeen GCC/Clang workbook runs passed, including 31 language, 11 descriptor and 69 framing checks, ten 1,000-item batches per queue run, exact GMP arithmetic, three optimized variants and four address/undefined sanitizer runs. Seven dialect/header probes had the expected outcomes. ThreadSanitizer crashes, source and booking conflicts, broader labs and human review remain explicit. See docs/research/2026-09-29-clp-12-01-deep-review.md"
         },
         {
-          "objective_group": "Block 2 - Variadic Functions and Macros (5 items; 9%)",
-          "guide_sections": [
-            "2. Variadic functions and macros — 9%",
-            "Original executable workbook",
-            "Answer key"
-          ]
+          "id": "cpa2102-2026-09-29-source-validation",
+          "exam_code": "CPA-21-02",
+          "guide_path": "guides/CPA-21-02-cpp-certified-associate-programmer.md",
+          "review_type": "source-validation",
+          "reviewed_on": "2026-09-29",
+          "outcome": "passed",
+          "blueprint_snapshot_path": "data/objective-snapshots/cpa-21-02-official-objectives-2026-09-29.txt",
+          "blueprint_snapshot_sha256": "3d25434609c18c0dc30b6225e052b44235407d3d6968a3125b30d2cd77a776e0",
+          "objective_coverage": [
+            {
+              "objective_group": "Block 1 - Types and Operators (9 items; 24.5%)",
+              "guide_sections": [
+                "1. Types and operators — 24.5%",
+                "Original executable workbook",
+                "Answer key"
+              ]
+            },
+            {
+              "objective_group": "Block 2 - Control and Exceptions (8 items; 18%)",
+              "guide_sections": [
+                "2. Control and exceptions — 18%",
+                "Original executable workbook",
+                "Answer key"
+              ]
+            },
+            {
+              "objective_group": "Block 3 - Functions and Preprocessor Directives (9 items; 17.5%)",
+              "guide_sections": [
+                "3. Functions and preprocessor — 17.5%",
+                "Original executable workbook",
+                "Answer key"
+              ]
+            },
+            {
+              "objective_group": "Block 4 - Pointers (4 items; 11%)",
+              "guide_sections": [
+                "4. Pointers — 11%",
+                "Original executable workbook",
+                "Answer key"
+              ]
+            },
+            {
+              "objective_group": "Block 5 - Classes and Namespaces (10 items; 29%)",
+              "guide_sections": [
+                "5. Classes and namespaces — 29%",
+                "Original executable workbook",
+                "Answer key"
+              ]
+            }
+          ],
+          "checks": {
+            "official_objectives_mapped": true,
+            "material_claims_sourced": true,
+            "volatile_claims_labeled": true,
+            "links_and_local_references_valid": true,
+            "exam_integrity_policy_passed": true
+          },
+          "link_evidence": {
+            "unique_external_links": 36,
+            "reachable": 33,
+            "access_blocked": 2,
+            "missing_or_error": 1
+          },
+          "notes": "Mapped all 35 objectives and expanded all 30 answers. Added six exact public workbook files, including a multi-file owner, language exercises and hierarchy tracing. Thirteen GCC/Clang workbook runs passed, including three optimized and three address/undefined sanitizer variants, plus a macro branch. Sixteen invalid-code probes were rejected and ten language-mode probes recorded. Source/booking conflicts, broader labs and human review remain explicit. See docs/research/2026-09-29-cpa-21-02-deep-review.md"
         },
         {
-          "objective_group": "Block 3 - Fundamentals of Low-Level I/O (7 items; 13%)",
-          "guide_sections": [
-            "3. Fundamentals of low-level I/O — 13%",
-            "Original executable workbook",
-            "Answer key"
-          ]
+          "id": "cpp2202-2026-09-29-source-validation",
+          "exam_code": "CPP-22-02",
+          "guide_path": "guides/CPP-22-02-cpp-certified-professional-programmer.md",
+          "review_type": "source-validation",
+          "reviewed_on": "2026-09-29",
+          "outcome": "passed",
+          "blueprint_snapshot_path": "data/objective-snapshots/cpp-22-02-official-objectives-2026-09-29.txt",
+          "blueprint_snapshot_sha256": "c107cc84fb7b04ddebd32b529e9e319869dd8b9d8fb91748daeec025621b9776",
+          "objective_coverage": [
+            {
+              "objective_group": "Block 1 - Sequence Containers and Container Adapters (4 items; 13.25%)",
+              "guide_sections": [
+                "1. Sequence containers and adapters — 13.25%",
+                "Original executable workbook",
+                "Answer key"
+              ]
+            },
+            {
+              "objective_group": "Block 2 - Associative Containers (4 items; 13.25%)",
+              "guide_sections": [
+                "2. Associative containers — 13.25%",
+                "Original executable workbook",
+                "Answer key"
+              ]
+            },
+            {
+              "objective_group": "Block 3 - Non-Modifying Sequence Algorithms (4 items; 13.25%)",
+              "guide_sections": [
+                "3. Non-modifying sequence algorithms — 13.25%",
+                "Original executable workbook",
+                "Answer key"
+              ]
+            },
+            {
+              "objective_group": "Block 4 - Modifying Sequence Algorithms (4 items; 13.25%)",
+              "guide_sections": [
+                "4. Modifying sequence algorithms — 13.25%",
+                "Original executable workbook",
+                "Answer key"
+              ]
+            },
+            {
+              "objective_group": "Block 5 - Sorting and Binary Search (5 items; 16.5%)",
+              "guide_sections": [
+                "5. Sorting and binary search — 16.5%",
+                "Original executable workbook",
+                "Answer key"
+              ]
+            },
+            {
+              "objective_group": "Block 6 - Merge, Set, and Min/Max Algorithms (5 items; 16.5%)",
+              "guide_sections": [
+                "6. Merge, set, and min/max algorithms — 16.5%",
+                "Original executable workbook",
+                "Answer key"
+              ]
+            },
+            {
+              "objective_group": "Block 7 - STL Function Objects and Utilities (2 items; 7%)",
+              "guide_sections": [
+                "7. STL function objects and utilities — 7%",
+                "Original executable workbook",
+                "Answer key"
+              ]
+            },
+            {
+              "objective_group": "Block 8 - Advanced I/O (2 items; 7%)",
+              "guide_sections": [
+                "8. Advanced I/O — 7%",
+                "Original executable workbook",
+                "Answer key"
+              ]
+            },
+            {
+              "objective_group": "Block 9 - Templates (2 items; 7%)",
+              "guide_sections": [
+                "9. Templates — 7%",
+                "Original executable workbook",
+                "Answer key"
+              ]
+            }
+          ],
+          "checks": {
+            "official_objectives_mapped": true,
+            "material_claims_sourced": true,
+            "volatile_claims_labeled": true,
+            "links_and_local_references_valid": true,
+            "exam_integrity_policy_passed": true
+          },
+          "link_evidence": {
+            "unique_external_links": 25,
+            "reachable": 19,
+            "access_blocked": 2,
+            "missing_or_error": 4
+          },
+          "notes": "Mapped all 34 objectives and expanded all 30 answers. Seven exact public C++17 files passed sixteen hosted CMake runs, including four optimized and four address/undefined sanitizer variants. Sixteen invalid-code probes were rejected and four legacy ptr_fun mode probes recorded. Corrected for_each mutation, destination/invalidation/order/multiplicity/formatting contracts. Published arithmetic, eligibility/course/policy conflicts, access limits, broader labs and human review remain explicit. See docs/research/2026-09-29-cpp-22-02-deep-review.md"
         },
-        {
-          "objective_group": "Block 4 - Memory and String Handling (9 items; 16%)",
-          "guide_sections": [
-            "4. Memory and string handling — 16%",
-            "Original executable workbook",
-            "Answer key"
-          ]
-        },
-        {
-          "objective_group": "Block 5 - Process and Thread Management (5 items; 9%)",
-          "guide_sections": [
-            "5. Processes and threads — 9%",
-            "Original executable workbook",
-            "Answer key"
-          ]
-        },
-        {
-          "objective_group": "Block 6 - Numerical Types and Computations (6 items; 11%)",
-          "guide_sections": [
-            "6. Numerical types and computations — 11%",
-            "Original executable workbook",
-            "Answer key"
-          ]
-        },
-        {
-          "objective_group": "Block 7 - Network Socket Programming (7 items; 13%)",
-          "guide_sections": [
-            "7. Network socket programming — 13%",
-            "Original executable workbook",
-            "Answer key"
-          ]
-        },
-        {
-          "objective_group": "Block 8 - Specialized Programming Considerations (8 items; 14.5%)",
-          "guide_sections": [
-            "8. Specialized considerations — 14.5%",
-            "Original executable workbook",
-            "Answer key"
-          ]
-        }
-      ],
-      "checks": {
-        "official_objectives_mapped": true,
-        "material_claims_sourced": true,
-        "volatile_claims_labeled": true,
-        "links_and_local_references_valid": true,
-        "exam_integrity_policy_passed": true
-      },
-      "link_evidence": {
-        "unique_external_links": 34,
-        "reachable": 16,
-        "access_blocked": 1,
-        "missing_or_error": 17
-      },
-      "notes": "Mapped all 29 objectives and expanded 30 answers. Replaced incomplete variadic and descriptor fragments with five exact original C11 programs. Seventeen GCC/Clang workbook runs passed, including 31 language, 11 descriptor and 69 framing checks, ten 1,000-item batches per queue run, exact GMP arithmetic, three optimized variants and four address/undefined sanitizer runs. Seven dialect/header probes had the expected outcomes. ThreadSanitizer crashes, source and booking conflicts, broader labs and human review remain explicit. See docs/research/2026-09-29-clp-12-01-deep-review.md"
-    },
-        {
-      "id": "cpa2102-2026-09-29-source-validation",
-      "exam_code": "CPA-21-02",
-      "guide_path": "guides/CPA-21-02-cpp-certified-associate-programmer.md",
-      "review_type": "source-validation",
-      "reviewed_on": "2026-09-29",
-      "outcome": "passed",
-      "blueprint_snapshot_path": "data/objective-snapshots/cpa-21-02-official-objectives.txt",
-      "blueprint_snapshot_sha256": "3d25434609c18c0dc30b6225e052b44235407d3d6968a3125b30d2cd77a776e0",
-      "objective_coverage": [
-        {
-          "objective_group": "Block 1 - Types and Operators (9 items; 24.5%)",
-          "guide_sections": [
-            "1. Types and operators — 24.5%",
-            "Original executable workbook",
-            "Answer key"
-          ]
-        },
-        {
-          "objective_group": "Block 2 - Control and Exceptions (8 items; 18%)",
-          "guide_sections": [
-            "2. Control and exceptions — 18%",
-            "Original executable workbook",
-            "Answer key"
-          ]
-        },
-        {
-          "objective_group": "Block 3 - Functions and Preprocessor Directives (9 items; 17.5%)",
-          "guide_sections": [
-            "3. Functions and preprocessor — 17.5%",
-            "Original executable workbook",
-            "Answer key"
-          ]
-        },
-        {
-          "objective_group": "Block 4 - Pointers (4 items; 11%)",
-          "guide_sections": [
-            "4. Pointers — 11%",
-            "Original executable workbook",
-            "Answer key"
-          ]
-        },
-        {
-          "objective_group": "Block 5 - Classes and Namespaces (10 items; 29%)",
-          "guide_sections": [
-            "5. Classes and namespaces — 29%",
-            "Original executable workbook",
-            "Answer key"
-          ]
-        }
-      ],
-      "checks": {
-        "official_objectives_mapped": true,
-        "material_claims_sourced": true,
-        "volatile_claims_labeled": true,
-        "links_and_local_references_valid": true,
-        "exam_integrity_policy_passed": true
-      },
-      "link_evidence": {
-        "unique_external_links": 36,
-        "reachable": 33,
-        "access_blocked": 2,
-        "missing_or_error": 1
-      },
-      "notes": "Mapped all 35 objectives and expanded all 30 answers. Added six exact public workbook files, including a multi-file owner, language exercises and hierarchy tracing. Thirteen GCC/Clang workbook runs passed, including three optimized and three address/undefined sanitizer variants, plus a macro branch. Sixteen invalid-code probes were rejected and ten language-mode probes recorded. Source/booking conflicts, broader labs and human review remain explicit. See docs/research/2026-09-29-cpa-21-02-deep-review.md"
-    },
-        {
-      "id": "cpp2202-2026-09-29-source-validation",
-      "exam_code": "CPP-22-02",
-      "guide_path": "guides/CPP-22-02-cpp-certified-professional-programmer.md",
-      "review_type": "source-validation",
-      "reviewed_on": "2026-09-29",
-      "outcome": "passed",
-      "blueprint_snapshot_path": "data/objective-snapshots/cpp-22-02-official-objectives.txt",
-      "blueprint_snapshot_sha256": "c107cc84fb7b04ddebd32b529e9e319869dd8b9d8fb91748daeec025621b9776",
-      "objective_coverage": [
-        {
-          "objective_group": "Block 1 - Sequence Containers and Container Adapters (4 items; 13.25%)",
-          "guide_sections": [
-            "1. Sequence containers and adapters — 13.25%",
-            "Original executable workbook",
-            "Answer key"
-          ]
-        },
-        {
-          "objective_group": "Block 2 - Associative Containers (4 items; 13.25%)",
-          "guide_sections": [
-            "2. Associative containers — 13.25%",
-            "Original executable workbook",
-            "Answer key"
-          ]
-        },
-        {
-          "objective_group": "Block 3 - Non-Modifying Sequence Algorithms (4 items; 13.25%)",
-          "guide_sections": [
-            "3. Non-modifying sequence algorithms — 13.25%",
-            "Original executable workbook",
-            "Answer key"
-          ]
-        },
-        {
-          "objective_group": "Block 4 - Modifying Sequence Algorithms (4 items; 13.25%)",
-          "guide_sections": [
-            "4. Modifying sequence algorithms — 13.25%",
-            "Original executable workbook",
-            "Answer key"
-          ]
-        },
-        {
-          "objective_group": "Block 5 - Sorting and Binary Search (5 items; 16.5%)",
-          "guide_sections": [
-            "5. Sorting and binary search — 16.5%",
-            "Original executable workbook",
-            "Answer key"
-          ]
-        },
-        {
-          "objective_group": "Block 6 - Merge, Set, and Min/Max Algorithms (5 items; 16.5%)",
-          "guide_sections": [
-            "6. Merge, set, and min/max algorithms — 16.5%",
-            "Original executable workbook",
-            "Answer key"
-          ]
-        },
-        {
-          "objective_group": "Block 7 - STL Function Objects and Utilities (2 items; 7%)",
-          "guide_sections": [
-            "7. STL function objects and utilities — 7%",
-            "Original executable workbook",
-            "Answer key"
-          ]
-        },
-        {
-          "objective_group": "Block 8 - Advanced I/O (2 items; 7%)",
-          "guide_sections": [
-            "8. Advanced I/O — 7%",
-            "Original executable workbook",
-            "Answer key"
-          ]
-        },
-        {
-          "objective_group": "Block 9 - Templates (2 items; 7%)",
-          "guide_sections": [
-            "9. Templates — 7%",
-            "Original executable workbook",
-            "Answer key"
-          ]
-        }
-      ],
-      "checks": {
-        "official_objectives_mapped": true,
-        "material_claims_sourced": true,
-        "volatile_claims_labeled": true,
-        "links_and_local_references_valid": true,
-        "exam_integrity_policy_passed": true
-      },
-      "link_evidence": {
-        "unique_external_links": 25,
-        "reachable": 19,
-        "access_blocked": 2,
-        "missing_or_error": 4
-      },
-      "notes": "Mapped all 34 objectives and expanded all 30 answers. Seven exact public C++17 files passed sixteen hosted CMake runs, including four optimized and four address/undefined sanitizer variants. Sixteen invalid-code probes were rejected and four legacy ptr_fun mode probes recorded. Corrected for_each mutation, destination/invalidation/order/multiplicity/formatting contracts. Published arithmetic, eligibility/course/policy conflicts, access limits, broader labs and human review remain explicit. See docs/research/2026-09-29-cpp-22-02-deep-review.md"
-    },
     {
       "id": "pcpp32101-2026-09-29-source-validation",
       "exam_code": "PCPP-32-101",
@@ -34994,5 +34994,771 @@
         "missing_or_error": 0
       },
       "notes": "Official current outline, lifecycle, release, scheduling and learning pages checked October 28, 2026. CISM and CISSP successor dates, scope boundaries and future outline limits are labeled. See Group 11 research report and operations receipt."
-    }]
+    },
+    {
+      "id": "cle-10-01-2026-10-28-source-validation",
+      "exam_code": "CLE-10-01",
+      "guide_path": "guides/CLE-10-01-c-certified-entry-level-programmer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/cle-10-01-official-objectives.txt",
+      "blueprint_snapshot_sha256": "f21493c90c62aa1fb1ad68ccdd416655ddee8b9f5206a9b992f8829ddf5ee2dd",
+      "objective_coverage": [
+        {
+          "objective_group": "Block 1 - Basic Concepts (4 items; 13.25%)",
+          "guide_sections": [
+            "1. Basic concepts — 13.25%",
+            "Executed core workbook",
+            "Integrated scenarios",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 2 - Data Types, Evaluations, and Basic I/O Operations (4 items; 13.25%)",
+          "guide_sections": [
+            "2. Data types, conversions, and basic I/O — 13.25%",
+            "Executed core workbook",
+            "Integrated scenarios",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 3 - Arithmetic, Logical, and Bitwise Operators (4 items; 13.25%)",
+          "guide_sections": [
+            "3. Operators — 13.25%",
+            "Executed core workbook",
+            "Integrated scenarios",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 4 - Flow Control: Decision-Making Statements (4 items; 13.25%)",
+          "guide_sections": [
+            "4. Decision-making — 13.25%",
+            "Executed core workbook",
+            "Integrated scenarios",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 5 - Flow Control: Loops (5 items; 16.50%)",
+          "guide_sections": [
+            "5. Loops — 16.50%",
+            "Executed core workbook",
+            "Integrated scenarios",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 6 - Arrays, Pointers, and Memory Management (5 items; 16.50%)",
+          "guide_sections": [
+            "6. Arrays, pointers, and memory — 16.50%",
+            "Executed core workbook",
+            "Integrated scenarios",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 7 - String Manipulation (2 items; 7%)",
+          "guide_sections": [
+            "7. Strings — 7%",
+            "Executed core workbook",
+            "Integrated scenarios",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 8 - The Basics of Functions (2 items; 7%)",
+          "guide_sections": [
+            "8. Functions — 7%",
+            "Executed core workbook",
+            "Integrated scenarios",
+            "Answer key"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 23,
+        "reachable": 21,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "October 28 issuer objectives, public lifecycle/status and linked-source availability were checked. Four C/C++ monitors now capture fuller official task wording, with no version or block/weight change detected. Snowflake product-release examples are labeled separately from exam scope. Automated link blocks are recorded separately from confirmed failures."
+    },
+    {
+      "id": "clp-12-01-2026-10-28-source-validation",
+      "exam_code": "CLP-12-01",
+      "guide_path": "guides/CLP-12-01-c-certified-professional-programmer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/clp-12-01-official-objectives.txt",
+      "blueprint_snapshot_sha256": "8136ac8d71a73622dd2068d08b9c18d513c25adaefddbc64e42ea1e63f402091",
+      "objective_coverage": [
+        {
+          "objective_group": "Block 1 - Applied Evolution of C Programming (8 items; 14.5%)",
+          "guide_sections": [
+            "1. Applied evolution of C — 14.5%",
+            "Original executable workbook",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 2 - Variadic Functions and Macros (5 items; 9%)",
+          "guide_sections": [
+            "2. Variadic functions and macros — 9%",
+            "Original executable workbook",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 3 - Fundamentals of Low-Level I/O (7 items; 13%)",
+          "guide_sections": [
+            "3. Fundamentals of low-level I/O — 13%",
+            "Original executable workbook",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 4 - Memory and String Handling (9 items; 16%)",
+          "guide_sections": [
+            "4. Memory and string handling — 16%",
+            "Original executable workbook",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 5 - Process and Thread Management (5 items; 9%)",
+          "guide_sections": [
+            "5. Processes and threads — 9%",
+            "Original executable workbook",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 6 - Numerical Types and Computations (6 items; 11%)",
+          "guide_sections": [
+            "6. Numerical types and computations — 11%",
+            "Original executable workbook",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 7 - Network Socket Programming (7 items; 13%)",
+          "guide_sections": [
+            "7. Network socket programming — 13%",
+            "Original executable workbook",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 8 - Specialized Programming Considerations (8 items; 14.5%)",
+          "guide_sections": [
+            "8. Specialized considerations — 14.5%",
+            "Original executable workbook",
+            "Answer key"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 34,
+        "reachable": 33,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "October 28 issuer objectives, public lifecycle/status and linked-source availability were checked. Four C/C++ monitors now capture fuller official task wording, with no version or block/weight change detected. Snowflake product-release examples are labeled separately from exam scope. Automated link blocks are recorded separately from confirmed failures."
+    },
+    {
+      "id": "cof-c03-2026-10-28-source-validation",
+      "exam_code": "COF-C03",
+      "guide_path": "guides/COF-C03-snowpro-core.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/COF-C03-official-objectives.txt",
+      "blueprint_snapshot_sha256": "fc6ba90a44c29eb3380a41bd9609357c29247bbe81be8003dcbe89ad71a8063c",
+      "objective_coverage": [
+        {
+          "objective_group": "Use the Snowflake AI Data Cloud architecture",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Labs 1 and 8"
+          ]
+        },
+        {
+          "objective_group": "Manage Snowflake accounts and virtual warehouses",
+          "guide_sections": [
+            "Section 2",
+            "Scenarios 1–2",
+            "Labs 1–3 and 8"
+          ]
+        },
+        {
+          "objective_group": "Perform data loading, unloading, and transformation",
+          "guide_sections": [
+            "Section 3",
+            "Scenario 1",
+            "Labs 4 and 8"
+          ]
+        },
+        {
+          "objective_group": "Use structured, semi-structured, and unstructured data",
+          "guide_sections": [
+            "Section 4",
+            "Scenario 1",
+            "Labs 4–5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Monitor and optimize performance",
+          "guide_sections": [
+            "Section 5",
+            "Scenario 2",
+            "Labs 3, 6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Enable data collaboration and protection",
+          "guide_sections": [
+            "Section 6",
+            "Scenario 3",
+            "Labs 2 and 7–8"
+          ]
+        },
+        {
+          "objective_group": "Establish Snowflake connectivity",
+          "guide_sections": [
+            "Section 7",
+            "Scenarios 1 and 3",
+            "Labs 4 and 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 33,
+        "reachable": 31,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "October 28 issuer objectives, public lifecycle/status and linked-source availability were checked. Four C/C++ monitors now capture fuller official task wording, with no version or block/weight change detected. Snowflake product-release examples are labeled separately from exam scope. Automated link blocks are recorded separately from confirmed failures."
+    },
+    {
+      "id": "cpa-21-02-2026-10-28-source-validation",
+      "exam_code": "CPA-21-02",
+      "guide_path": "guides/CPA-21-02-cpp-certified-associate-programmer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/cpa-21-02-official-objectives.txt",
+      "blueprint_snapshot_sha256": "d0a9b639d54f64ab17900bdcd919f934945cba6d3b69efacd110611c861c6fdc",
+      "objective_coverage": [
+        {
+          "objective_group": "Block 1 - Types and Operators (9 items; 24.5%)",
+          "guide_sections": [
+            "1. Types and operators — 24.5%",
+            "Original executable workbook",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 2 - Control and Exceptions (8 items; 18%)",
+          "guide_sections": [
+            "2. Control and exceptions — 18%",
+            "Original executable workbook",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 3 - Functions and Preprocessor Directives (9 items; 17.5%)",
+          "guide_sections": [
+            "3. Functions and preprocessor — 17.5%",
+            "Original executable workbook",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 4 - Pointers (4 items; 11%)",
+          "guide_sections": [
+            "4. Pointers — 11%",
+            "Original executable workbook",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 5 - Classes and Namespaces (10 items; 29%)",
+          "guide_sections": [
+            "5. Classes and namespaces — 29%",
+            "Original executable workbook",
+            "Answer key"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 36,
+        "reachable": 34,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "October 28 issuer objectives, public lifecycle/status and linked-source availability were checked. Four C/C++ monitors now capture fuller official task wording, with no version or block/weight change detected. Snowflake product-release examples are labeled separately from exam scope. Automated link blocks are recorded separately from confirmed failures."
+    },
+    {
+      "id": "cpe-20-01-2026-10-28-source-validation",
+      "exam_code": "CPE-20-01",
+      "guide_path": "guides/CPE-20-01-cpp-certified-entry-level-programmer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/cpe-20-01-official-objectives.txt",
+      "blueprint_snapshot_sha256": "faf4501642933ecdc38efb270dda58a7db3a7c95a0028bda125b61544a34f60d",
+      "objective_coverage": [
+        {
+          "objective_group": "Block 1 – Syntax, Literals, and Operators",
+          "guide_sections": [
+            "1. Syntax, literals, and operators — 28%",
+            "Executed trace workbook",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 2 – Flow Control and Functions",
+          "guide_sections": [
+            "2. Flow control and functions — 28%",
+            "Executed trace workbook",
+            "Integrated scenarios",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 3 – Vectors and Pointers",
+          "guide_sections": [
+            "3. Vectors and pointers — 24%",
+            "Executed trace workbook",
+            "Integrated scenarios",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 4 – Structures and Strings",
+          "guide_sections": [
+            "4. Structures and strings — 20%",
+            "Executed trace workbook",
+            "Integrated scenarios",
+            "Answer key"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 29,
+        "reachable": 27,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "October 28 issuer objectives, public lifecycle/status and linked-source availability were checked. Four C/C++ monitors now capture fuller official task wording, with no version or block/weight change detected. Snowflake product-release examples are labeled separately from exam scope. Automated link blocks are recorded separately from confirmed failures."
+    },
+    {
+      "id": "cpp-22-02-2026-10-28-source-validation",
+      "exam_code": "CPP-22-02",
+      "guide_path": "guides/CPP-22-02-cpp-certified-professional-programmer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/cpp-22-02-official-objectives.txt",
+      "blueprint_snapshot_sha256": "5869a199ee4632f40f020426475c4df284e614660e7ac83ca8595bb8709b6c7d",
+      "objective_coverage": [
+        {
+          "objective_group": "Block 1 - Sequence Containers and Container Adapters (4 items; 13.25%)",
+          "guide_sections": [
+            "1. Sequence containers and adapters — 13.25%",
+            "Original executable workbook",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 2 - Associative Containers (4 items; 13.25%)",
+          "guide_sections": [
+            "2. Associative containers — 13.25%",
+            "Original executable workbook",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 3 - Non-Modifying Sequence Algorithms (4 items; 13.25%)",
+          "guide_sections": [
+            "3. Non-modifying sequence algorithms — 13.25%",
+            "Original executable workbook",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 4 - Modifying Sequence Algorithms (4 items; 13.25%)",
+          "guide_sections": [
+            "4. Modifying sequence algorithms — 13.25%",
+            "Original executable workbook",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 5 - Sorting and Binary Search (5 items; 16.5%)",
+          "guide_sections": [
+            "5. Sorting and binary search — 16.5%",
+            "Original executable workbook",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 6 - Merge, Set, and Min/Max Algorithms (5 items; 16.5%)",
+          "guide_sections": [
+            "6. Merge, set, and min/max algorithms — 16.5%",
+            "Original executable workbook",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 7 - STL Function Objects and Utilities (2 items; 7%)",
+          "guide_sections": [
+            "7. STL function objects and utilities — 7%",
+            "Original executable workbook",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 8 - Advanced I/O (2 items; 7%)",
+          "guide_sections": [
+            "8. Advanced I/O — 7%",
+            "Original executable workbook",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 9 - Templates (2 items; 7%)",
+          "guide_sections": [
+            "9. Templates — 7%",
+            "Original executable workbook",
+            "Answer key"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 25,
+        "reachable": 23,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "October 28 issuer objectives, public lifecycle/status and linked-source availability were checked. Four C/C++ monitors now capture fuller official task wording, with no version or block/weight change detected. Snowflake product-release examples are labeled separately from exam scope. Automated link blocks are recorded separately from confirmed failures."
+    },
+    {
+      "id": "crisc-2026-10-28-source-validation",
+      "exam_code": "CRISC",
+      "guide_path": "guides/CRISC-isaca-certified-risk-information-systems-control.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/crisc-official-objectives.txt",
+      "blueprint_snapshot_sha256": "8a607e350fc322e463cf56ebad620f53e5c2826017f3235aab6f04baf97bd614",
+      "objective_coverage": [
+        {
+          "objective_group": "Governance (26%)",
+          "guide_sections": [
+            "1. Governance (26%)",
+            "Worked results for the three scenarios",
+            "Executed offline risk workbook",
+            "Answer notes"
+          ]
+        },
+        {
+          "objective_group": "Risk Assessment (22%)",
+          "guide_sections": [
+            "2. Risk Assessment (22%)",
+            "Worked results for the three scenarios",
+            "Executed offline risk workbook",
+            "Answer notes"
+          ]
+        },
+        {
+          "objective_group": "Risk Response And Reporting (32%)",
+          "guide_sections": [
+            "3. Risk Response and Reporting (32%)",
+            "Worked results for the three scenarios",
+            "Executed offline risk workbook",
+            "Answer notes"
+          ]
+        },
+        {
+          "objective_group": "Technology And Security (20%)",
+          "guide_sections": [
+            "4. Technology and Security (20%)",
+            "Worked results for the three scenarios",
+            "Executed offline risk workbook",
+            "Answer notes"
+          ]
+        },
+        {
+          "objective_group": "Supporting tasks across the four domains",
+          "guide_sections": [
+            "1. Governance (26%)",
+            "2. Risk Assessment (22%)",
+            "3. Risk Response and Reporting (32%)",
+            "4. Technology and Security (20%)",
+            "Answer notes"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 19,
+        "reachable": 17,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "October 28 issuer objectives, public lifecycle/status and linked-source availability were checked. Four C/C++ monitors now capture fuller official task wording, with no version or block/weight change detected. Snowflake product-release examples are labeled separately from exam scope. Automated link blocks are recorded separately from confirmed failures."
+    },
+    {
+      "id": "cv0-004-2026-10-28-source-validation",
+      "exam_code": "CV0-004",
+      "guide_path": "guides/CV0-004-comptia-cloud-plus.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/cv0-004-official-objectives.txt",
+      "blueprint_snapshot_sha256": "6fb337abbad0ccde4c7a29dceb3c7e3611211edf97a676fe7bd7800406c0a192",
+      "objective_coverage": [
+        {
+          "objective_group": "Cloud architecture (23%)",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–2, 5–6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Deployment (19%)",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios 1 and 3",
+            "Labs 3–4, 7–8"
+          ]
+        },
+        {
+          "objective_group": "Operations (17%)",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios 1–2",
+            "Labs 5–6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Security (19%)",
+          "guide_sections": [
+            "Section 4",
+            "All integrated scenarios",
+            "Labs 1–2 and 6–8"
+          ]
+        },
+        {
+          "objective_group": "DevOps fundamentals (10%)",
+          "guide_sections": [
+            "Section 5",
+            "Integrated scenarios 2–3",
+            "Labs 3 and 7–8"
+          ]
+        },
+        {
+          "objective_group": "Troubleshooting (12%)",
+          "guide_sections": [
+            "Section 6",
+            "All integrated scenarios",
+            "All labs"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 27,
+        "reachable": 25,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "October 28 issuer objectives, public lifecycle/status and linked-source availability were checked. Four C/C++ monitors now capture fuller official task wording, with no version or block/weight change detected. Snowflake product-release examples are labeled separately from exam scope. Automated link blocks are recorded separately from confirmed failures."
+    },
+    {
+      "id": "dea-c02-2026-10-28-source-validation",
+      "exam_code": "DEA-C02",
+      "guide_path": "guides/DEA-C02-snowpro-advanced-data-engineer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/DEA-C02-official-objectives.txt",
+      "blueprint_snapshot_sha256": "5d27aac73433eb775a5d5b4ff7af013755ab26751154413fa84c363d200909c0",
+      "objective_coverage": [
+        {
+          "objective_group": "Source data from Data Lakes, APIs, and on-premises",
+          "guide_sections": [
+            "Section 1",
+            "Scenario 1",
+            "Labs 1–2 and 8"
+          ]
+        },
+        {
+          "objective_group": "Transform, replicate, and share data across cloud platforms",
+          "guide_sections": [
+            "Section 2",
+            "Scenarios 1 and 3",
+            "Labs 3 and 7–8"
+          ]
+        },
+        {
+          "objective_group": "Design end-to-end near real-time streams",
+          "guide_sections": [
+            "Section 3",
+            "Scenario 2",
+            "Labs 3–4 and 8"
+          ]
+        },
+        {
+          "objective_group": "Design scalable compute solutions for Data Engineer workloads",
+          "guide_sections": [
+            "Section 4",
+            "Scenarios 2–3",
+            "Labs 4–5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Evaluate performance metrics",
+          "guide_sections": [
+            "Section 5",
+            "All scenarios",
+            "Labs 5–6 and 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 33,
+        "reachable": 31,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "October 28 issuer objectives, public lifecycle/status and linked-source availability were checked. Four C/C++ monitors now capture fuller official task wording, with no version or block/weight change detected. Snowflake product-release examples are labeled separately from exam scope. Automated link blocks are recorded separately from confirmed failures."
+    },
+    {
+      "id": "ges-c02-2026-10-28-source-validation",
+      "exam_code": "GES-C02",
+      "guide_path": "guides/GES-C02-snowpro-specialty-gen-ai.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/GES-C02-official-objectives.txt",
+      "blueprint_snapshot_sha256": "c6dcc5ab29e74f1ba7c2778039589727d42e249a5b732ff57bbbd323cf002a25",
+      "objective_coverage": [
+        {
+          "objective_group": "Define and implement Snowflake Gen AI principles, capabilities, and best practices",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Labs 1 and 8"
+          ]
+        },
+        {
+          "objective_group": "Use Snowflake Cortex AI features and functions, including LLMs, to meet customer use cases",
+          "guide_sections": [
+            "Section 2",
+            "Scenarios 1–2",
+            "Labs 2–4 and 8"
+          ]
+        },
+        {
+          "objective_group": "Build and fine-tune open-source models with Snowpark Container Services and Snowflake Model Registry",
+          "guide_sections": [
+            "Section 3",
+            "Scenario 3",
+            "Labs 6–8"
+          ]
+        },
+        {
+          "objective_group": "Use Snowflake document processing functions to build, manage, and optimize document parsing pipelines",
+          "guide_sections": [
+            "Section 4",
+            "Scenarios 1–2",
+            "Labs 3, 5 and 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 32,
+        "reachable": 30,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "October 28 issuer objectives, public lifecycle/status and linked-source availability were checked. Four C/C++ monitors now capture fuller official task wording, with no version or block/weight change detected. Snowflake product-release examples are labeled separately from exam scope. Automated link blocks are recorded separately from confirmed failures."
+    }
+]
 }

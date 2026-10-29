@@ -6,19 +6,23 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-28
 ---
 
 # CLP-12-01 C Certified Professional Programmer Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, links, lifecycle, and exam-integrity compliance were checked September 29, 2026. This does not guarantee that every explanation is error-free or remains current. The [official CLP page and syllabus](https://cppinstitute.org/clp) are authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, links, lifecycle, and exam-integrity compliance were checked October 28, 2026. This does not guarantee that every explanation is error-free or remains current. The [official CLP page and syllabus](https://cppinstitute.org/clp) are authoritative.
 
 **Current baseline:** CLP-12-01, active; 29 numbered objectives in eight public blocks (July 24, 2025 syllabus)<br>
 **Upcoming blueprint change:** none announced on the official exam or certification-catalog pages when checked<br>
 **Official delivery snapshot:** 55 single- and multiple-select questions; 65-minute exam plus approximately 10 minutes for the NDA/tutorial; 70% passing score on a normalized maximum of 1,000 points; Pearson VUE; English<br>
 **Purchase snapshot:** no formal prerequisite; CLA or equivalent experience recommended; from USD 325 exam or USD 375 exam-plus-retake when checked<br>
+
+## Refresh check — October 28, 2026
+
+**CLP-12-01** remains active. OpenEDG’s current syllabus page, last updated July 24, 2025, now exposes expanded task wording for the same eight blocks; no replacement version is announced. Recheck the [official syllabus](https://cppinstitute.org/clp) and use its aligned C Advanced course to practice variadic functions, low-level I/O, memory handling, and threads.
 
 ## How to use this guide
 

@@ -6,14 +6,14 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-28
 ---
 
 # CLE-10-01 C Certified Entry-Level Programmer Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, links, lifecycle, and exam-integrity compliance were checked September 29, 2026. This does not guarantee that every explanation is error-free or remains current. The [official CLE page and syllabus](https://cppinstitute.org/cle) are authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, links, lifecycle, and exam-integrity compliance were checked October 28, 2026. This does not guarantee that every explanation is error-free or remains current. The [official CLE page and syllabus](https://cppinstitute.org/cle) are authoritative.
 
 **CURRENT BLUEPRINT — current baseline:** CLE-10-01, active; eight-block syllabus last updated July 24, 2025<br>
 **Upcoming blueprint change:** none announced on the official exam or certification-catalog pages when checked<br>
@@ -21,6 +21,10 @@ upcoming_change_checked: 2026-09-29
 **VERIFY CURRENT — purchase snapshot:** no prerequisite; USD 69 exam or USD 86 exam-plus-retake when checked<br>
 
 The [dated deep-review record](../docs/research/2026-09-29-cle-10-01-deep-review.md) maps all **36 numbered objectives**. Canonical scope was compared manually after direct monitoring timed out; existing snapshots were retained. This review executed original programs remotely in C11 mode using Compiler Explorer GCC 14.2 and Clang 19.1. C11 is an author practice choice; the exam page does not prescribe a language-version switch. No local compiler was installed. Eight broader activities remain proposed.
+
+## Refresh check — October 28, 2026
+
+The issuer still lists **CLE-10-01** as active; its eight-block syllabus was last updated July 24, 2025. The live syllabus now gives fuller wording for the same eight blocks and weights. No replacement version or upcoming change is announced. Use the current [CLE syllabus](https://cppinstitute.org/cle) and the aligned C Essentials 1 course for fresh study, then practice the listed C constructs with original programs.
 
 ## How to use this guide
 

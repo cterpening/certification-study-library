@@ -3170,7 +3170,7 @@ Badge 1 is a separate Hands-On Essentials offering, not another name for the Pla
 
 Resource details from the [COF-C03 guide](../guides/COF-C03-snowpro-core.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is not a complete list, and it is not meant to be consumed in full. Public metadata was checked September 29, 2026; paid lessons, assessments and recordings were not accessed. Provider durations below are labeled separately from this guide's optional study budgets. **VERIFY CURRENT:** Confirm content version, access expiry and actual booking availability before purchase.
+This is not a complete list, and it is not meant to be consumed in full. Public metadata was checked October 28, 2026; paid lessons, assessments and recordings were not accessed. Provider durations below are labeled separately from this guide's optional study budgets. **VERIFY CURRENT:** Confirm content version, access expiry and actual booking availability before purchase.
 
 | Resource | Access | Estimated time |
 |---|---|---|
@@ -3191,7 +3191,7 @@ Choose one route, then fill evidence gaps from primary documentation and authori
 
 Resource details from the [DEA-C02 guide](../guides/DEA-C02-snowpro-advanced-data-engineer.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is not a complete list, and it is not meant to be consumed in full. Public metadata was checked September 29, 2026; no paid lessons, recordings or practice questions were accessed. Provider estimates are separated from this guide's optional study budgets. **VERIFY CURRENT:** Confirm exam alignment, expiry, client versions and booking availability before purchasing or enrolling.
+This is not a complete list, and it is not meant to be consumed in full. Public metadata was checked October 28, 2026; no paid lessons, recordings or practice questions were accessed. Provider estimates are separated from this guide's optional study budgets. **VERIFY CURRENT:** Confirm exam alignment, expiry, client versions and booking availability before purchasing or enrolling.
 
 | Resource | Access | Estimated time |
 |---|---|---|
@@ -3213,7 +3213,7 @@ Choose resources for identified evidence gaps. Reject products promising recalle
 
 Resource details from the [GES-C02 guide](../guides/GES-C02-snowpro-specialty-gen-ai.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is not a complete list, and it is not meant to be consumed in full. Start with the official scope and one practical route, then target gaps. Public pages and the actual five-page training PDF were checked September 29, 2026. Learning estimates below are ours unless explicitly identified as provider duration. Public metadata does not establish lesson quality or complete exam coverage.
+This is not a complete list, and it is not meant to be consumed in full. Start with the official scope and one practical route, then target gaps. Public pages and the actual five-page training PDF were checked October 28, 2026. Learning estimates below are ours unless explicitly identified as provider duration. Public metadata does not establish lesson quality or complete exam coverage.
 
 | Resource | Access | Estimated time |
 |---|---|---|
@@ -6043,7 +6043,7 @@ This is not a complete list, and it is not meant to be consumed end to end. Pick
 | [Udemy Cloud+ CV0-004 Complete Course](https://www.udemy.com/course/comptia-cloud-plus/) | Paid; automated catalog access blocked | Earlier 10h54 runtime not reverified | Earlier instructor, update-date and assessment details not reverified; inspect current syllabus |
 | [MeasureUp CV0-004 practice test](https://www.measureup.com/comptia-cloud-cv0-004-practice-test.html) | Paid | 5–9 hours estimated | Product-specific 186 questions, March 2025 release; suggested time includes explanation-led remediation |
 
-**VERIFY CURRENT:** Public metadata checked September 29, 2026; paid interiors, provider labs and assessment questions were not accessed. CompTIA’s product estimates overlap and should not be added into a mandatory workload. Other estimated hours are planning suggestions. MeasureUp’s specific 186-question listing takes precedence over its generic FAQ’s approximate 150. A course’s publication date or runtime does not establish complete current coverage.
+**VERIFY CURRENT:** Public metadata checked October 28, 2026; paid interiors, provider labs and assessment questions were not accessed. CompTIA’s product estimates overlap and should not be added into a mandatory workload. Other estimated hours are planning suggestions. MeasureUp’s specific 186-question listing takes precedence over its generic FAQ’s approximate 150. A course’s publication date or runtime does not establish complete current coverage.
 
 Use practice assessments to find gaps, not to memorize items. Avoid any product claiming live, leaked or recalled exam questions.
 

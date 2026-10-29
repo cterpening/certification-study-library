@@ -6,19 +6,23 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-28
 ---
 
 # CPA-21-02 C++ Certified Associate Programmer Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, links, lifecycle, and exam-integrity compliance were checked September 29, 2026. This does not guarantee that every explanation is error-free or remains current. The [official CPA page and syllabus](https://cppinstitute.org/cpa) are authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, links, lifecycle, and exam-integrity compliance were checked October 28, 2026. This does not guarantee that every explanation is error-free or remains current. The [official CPA page and syllabus](https://cppinstitute.org/cpa) are authoritative.
 
 **Current baseline:** CPA-21-02, active; CPA-21-01 retired; five-block syllabus last updated July 22, 2025<br>
 **Upcoming blueprint change:** none announced on the official exam or certification-catalog pages when checked<br>
 **Official delivery snapshot:** 40 single- and multiple-choice questions; 65-minute exam plus approximately 10 minutes for the NDA/tutorial; 70% cumulative passing score on a normalized maximum of 200 points; Pearson VUE/OnVUE; English<br>
 **Purchase snapshot:** no formal prerequisite; from USD 325 exam or USD 375 exam-plus-retake when checked<br>
+
+## Refresh check — October 28, 2026
+
+**CPA-21-02** remains the active C++ Associate exam; the issuer’s five-block syllabus is dated July 22, 2025, and no new version is announced. The live page provides expanded explanations of the existing scope. Recheck the [CPA syllabus](https://cppinstitute.org/cpa) and its C++ Advanced learning path before relying on third-party practice content.
 
 ## How to use this guide
 

@@ -6,19 +6,25 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-28
 ---
 
 # SnowPro Specialty: Gen AI (GES-C02) Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Public scope, citations, links, lifecycle evidence and exam-integrity compliance were checked September 29, 2026. See the [coverage record](../docs/SOURCE-VALIDATION.md#ges-c02-coverage-record).
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Public scope, citations, links, lifecycle evidence and exam-integrity compliance were checked October 28, 2026. See the [coverage record](../docs/SOURCE-VALIDATION.md#ges-c02-coverage-record).
 
 **Current baseline:** GES-C02 is the active SnowPro Specialty: Gen AI exam. Snowflake publishes four abilities and recommends one or more years of enterprise Gen AI experience with Snowflake. Prior data-engineering and SQL knowledge are assumed; the candidate profile says applicants may have Python proficiency.<br>
-**Upcoming change:** No future revision or retirement announcement was present on the checked official page September 29, 2026.<br>
+**Upcoming change:** No future revision or retirement announcement was present on the checked official page October 28, 2026.<br>
 **Public scope boundary:** Snowflake distributes the detailed study guide through a web form. This guide maps the four live public abilities to current first-party documentation; it does not reconstruct inaccessible subobjectives or weights. Reconcile it with the official guide you receive before scheduling.<br>
 **Credential contract:** The [public certification catalog](https://learn.snowflake.com/en/certifications/) lists Specialty attempts at USD 225. Current policy says SnowPro certifications expire after two years, uses a 0–1000 scale with 750 passing, and defines renewal and retake rules. 750 is a scaled score, not a statement that 75% of questions is sufficient. Confirm price, format, question count, delivery, language, policy and accommodations at registration. [Program policies](https://learn.snowflake.com/en/pages/snowpro-policies/) govern eligible renewal before expiration; an expired credential cannot use the continuing-education route. Failed attempts require a seven-day wait, with at most four retakes in twelve months.
+
+## Refresh check — October 28, 2026
+
+Snowflake continues to list **GES-C02** as its Gen AI Specialty exam. The public profile retains four abilities spanning Gen AI principles, Cortex AI/LLMs, open-source model work with Snowpark Container Services and Model Registry, and document processing. It recommends one or more years of enterprise Snowflake Gen AI experience and says prior data engineering/SQL knowledge is assumed. The official [catalog](https://learn.snowflake.com/en/certifications/) currently shows no GES-C02 retirement notice; use the linked study guide for detailed scope.
+
+A recent official example relevant to multimodal document work is Cortex AI_SUMMARIZE, announced in public preview September 14 for summarizing text, images, and documents. Treat it as a changing preview feature and a practical example; it does not alter the four public exam abilities or establish that this preview is required. [Release note](https://docs.snowflake.com/en/release-notes/2026/other/2026-09-14-ai-summarize-multimodal-preview).
 
 ## How to use this guide
 
@@ -484,7 +490,7 @@ These are original answered study prompts, not exam items. Explain each answer u
 
 ## Places to learn
 
-This is not a complete list, and it is not meant to be consumed in full. Start with the official scope and one practical route, then target gaps. Public pages and the actual five-page training PDF were checked September 29, 2026. Learning estimates below are ours unless explicitly identified as provider duration. Public metadata does not establish lesson quality or complete exam coverage.
+This is not a complete list, and it is not meant to be consumed in full. Start with the official scope and one practical route, then target gaps. Public pages and the actual five-page training PDF were checked October 28, 2026. Learning estimates below are ours unless explicitly identified as provider duration. Public metadata does not establish lesson quality or complete exam coverage.
 
 | Resource | Access | Estimated time |
 |---|---|---|
