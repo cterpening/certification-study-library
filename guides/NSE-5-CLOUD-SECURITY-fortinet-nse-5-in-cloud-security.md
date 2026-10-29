@@ -6,19 +6,19 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-02
+last_verified: 2026-10-28
 upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-02
+upcoming_change_checked: 2026-10-28
 ---
 
 # Fortinet NSE 5 in Cloud Security Study Guide
 
-> **Independent AI-assisted resource — SOURCES + CURRENT PATH REQUIREMENTS CHECKED; HUMAN REVIEW PENDING.** Fortinet's live track page, FortiWeb 8.0 and FortiAppSec Cloud 26 exam pages, course library, release notices, and public product documentation were checked September 2, 2026. The [track page](https://training.fortinet.com/local/staticpage/view.php?page=nse_5_cloud_security) and chosen exam page are authoritative.
+> **Independent AI-assisted resource — SOURCES + CURRENT PATH REQUIREMENTS CHECKED; HUMAN REVIEW PENDING.** Fortinet's live track page, FortiWeb 8.0 and FortiAppSec Cloud 26 exam pages, course library, release notices, and public product documentation were rechecked October 28, 2026. The [track page](https://training.fortinet.com/local/staticpage/view.php?page=nse_5_cloud_security) and chosen exam page are authoritative.
 
 **Current baseline:** This is a certification track, not one exam. Hold active NSE 4 FortiOS and pass **one** eligible proctored NSE 5 Cloud Security exam within two years. FortiWeb 8.0 Administrator and FortiAppSec Cloud 26 Administrator are currently available routes.<br>
 **Route contracts:** FortiWeb 8.0: 35–40 questions, 75 minutes, English/Japanese, unweighted topic groups. FortiAppSec Cloud 26 (product baseline 26.2): 30–40 questions, 65 minutes, English, with Platform architecture/deployment 10–20%, Web application/API protection 30–40%, Bot protection/traffic management 30–40%, Monitoring/analytics 10–20%.<br>
 **Credential contract:** The credential is active for two years from completion of the second requirement. NSE 4 must be active; verify retake, renewal, and exam-reuse rules on the live page before booking.<br>
-**Upcoming change:** The track page lists FortiADC Administrator for Q3 2026, but no current standalone exam contract was found September 2. A current FortiADC course does not prove exam availability. FortiAppSec 26 released August 27, 2026; older third-party material may predate it.<br>
+**Upcoming change:** FortiADC Administrator remains marked “Coming Soon” on its live exam page, despite the track page's Q3 2026 forecast. Do not treat the forecast or course as proof of exam availability. FortiAppSec Cloud 26 released August 27, 2026; recheck its route and product version before booking.<br>
 **Integrity:** Choose one route and use its exact blueprint. Do not merge route topics into a fictional weighted exam or use recalled questions.
 
 > **September 17, 2026 contract check:** Current official exam and track pages were inspected; the exam times and prerequisite statements above reflect that check. Historical objective snapshots and full technical-review dates remain unchanged. See the [exam validation report](../docs/research/2026-09-17-exam-validation.md).
@@ -35,7 +35,7 @@ Choose FortiWeb for customer-managed appliance/VM WAF and delivery operations, o
 |---|---|---|---|
 | FortiWeb 8.0 Administrator | Available | Appliance/VM WAF deployment, delivery, policy, API/bot controls, HA, troubleshooting | [Exam page](https://training.fortinet.com/local/staticpage/view.php?page=fortiweb_administrator_exam) |
 | FortiAppSec Cloud 26 Administrator | Available | SaaS WAAP, DNS onboarding, API schema, advanced bot, GSLB, analytics | [Exam page](https://training.fortinet.com/local/staticpage/view.php?page=fortiappsec_cloud_administrator_exam) |
-| FortiADC Administrator | Announced for Q3 2026 | ADC/load-balancing operations | [Track page](https://training.fortinet.com/local/staticpage/view.php?page=nse_5_cloud_security); wait for live exam contract |
+| FortiADC Administrator | Track forecast says Q3 2026; live page still says “Coming Soon” on October 28 | ADC/load-balancing operations | [Exam placeholder](https://training.fortinet.com/local/staticpage/view.php?page=fortiadc_administrator_exam); wait for published contract |
 
 ## 1. Common application-security foundations
 
@@ -58,6 +58,8 @@ TLS offloading moves cryptographic work and key custody to FortiWeb. Validate ce
 ### Protect web applications and APIs
 
 Combine signatures, protocol constraints, parameter/data validation, anomaly or machine-learning models, file/upload controls, URL/method restrictions, cookie/session protections, client-side controls, API discovery/schema enforcement, and bot mitigation based on the application. Train/tune models with representative clean traffic and a governed promotion process; poisoning or incomplete baselines can create bypass or false positives.
+
+**Version-specific API visibility:** FortiWeb 8.0 adds zombie-API tagging for APIs with no observed traffic for seven consecutive days, with evaluation every ten minutes; 8.0.3 also adds API discovery/protection and token-related enhancements. Treat these as version-specific investigation signals, not proof that an API is unused or an exam objective. Confirm current settings and behavior in the [FortiWeb 8.0.5 new-features guide](https://docs.fortinet.com/document/fortiweb/8.0.5/administration-guide/819488/new-features) before acting.
 
 API security needs inventory and owner, base paths, methods, authentication, schema, content types, size/rate, sensitive fields, version, and lifecycle. Discovery finds observed traffic, not dormant or bypassed APIs. Validate OpenAPI or other schema against deployed behavior and fix applications where possible rather than accumulating exceptions.
 
@@ -171,7 +173,7 @@ Trace authoritative DNS/GSLB answer, TTL/cache/ECS, synthetic and real health, c
 1. Active NSE 4 FortiOS plus one eligible proctored NSE 5 Cloud Security exam within two years.
 2. No. The current track requires one listed route exam.
 3. FortiWeb 8.0 Administrator and FortiAppSec Cloud 26 Administrator.
-4. The track announced Q3 2026 but no standalone exam contract was found; a course/SKU is not availability proof.
+4. Its track forecast has passed, but the live exam page still says “Coming Soon”; a course/SKU is not availability proof.
 5. Owner/domain, clients, data/API, auth, certs, origin, DNS/network, normal methods/content/rates, dependencies, logs, compliance, and recovery.
 6. Attackers can bypass the inspection endpoint by reaching the origin address directly.
 7. Reverse proxy terminates and creates separate client/server flows; transparent designs preserve a different network path and failure model.

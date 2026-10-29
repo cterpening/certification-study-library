@@ -52591,6 +52591,670 @@
         "no_action_findings": 0,
         "blocked_findings": 0
       }
+    },
+    {
+      "id": "freshness-2026-10-28-nonms-g01",
+      "title": "Fortinet oldest non-Microsoft refresh group 01",
+      "rubric_version": 1,
+      "created_on": "2026-10-28",
+      "completed_on": "2026-10-28",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "First ten of the frozen 167 non-Microsoft guides at least 27 days old, ordered by latest source-validation date, vendor ID and exam code.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "fortinet-exam-research",
+          "fortinet-technical-research",
+          "fortinet-learning-resources",
+          "refresh-coordinator"
+        ],
+        "independence": "mixed",
+        "human_review": false
+      },
+      "exam_codes": [
+        "NSE-1-CYBERSECURITY",
+        "NSE-2-CYBERSECURITY",
+        "NSE-3-CYBERSECURITY",
+        "NSE-5-CLOUD-SECURITY",
+        "NSE-5-SASE",
+        "NSE-5-SECURE-NETWORKING",
+        "NSE-5-SECURITY-OPERATIONS",
+        "NSE-6-CLOUD-SECURITY",
+        "NSE-6-SASE",
+        "NSE-6-SECURE-NETWORKING"
+      ],
+      "results": [
+        {
+          "exam_code": "NSE-1-CYBERSECURITY",
+          "vendor_id": "fortinet",
+          "guide_path": "guides/NSE-1-CYBERSECURITY-fortinet-nse-1-in-cybersecurity.md",
+          "baseline_sha256": "d21f01cd0cfc337cbf6dff375b0ba14b43e6b4d343f7a4ba5691cbbc9dbdecc9",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current official credential/option pages, current/future routes, published scope, prerequisites and lifecycle notices were opened. See exact URLs in the dated exam and lifecycle packet."
+            },
+            "official_product_documentation": {
+              "status": "not-applicable",
+              "notes": "This course-based entry credential has no product-configuration scope. Current course and credential pages were reviewed; no unrelated product-release claim was added."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Fortinet exam release notices and relevant product release channels were checked; announcements remain distinct from current direct exam-page availability."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "New direct official exam, versioned documentation, and training/video URLs are registered for the affected exam. Scoped source health checked 86 records: 81 accessible, 5 account/automated-access blocked, zero broken after repairs."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Past-quarter forecasts, the official NSE 6 SASE taxonomy wording, product/version/tenant limits, account-gated training and automated-access blocks remain explicit. No release detail is presented as exam scope."
+            }
+          },
+          "findings": [
+            {
+              "id": "nse-1-course-outline-current",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "updated-source",
+              "title": "Cybersecurity and Cloud Fundamentals course outline rechecked",
+              "url": "https://training.fortinet.com/local/staticpage/view.php?page=library_cybersecurity-and-cloud-fundamentals",
+              "source_type": "official-training",
+              "confidence": "high",
+              "evidence": "The official course library identifies Cybersecurity and Cloud Fundamentals 1.0 Self-Paced and reports a July 14, 2026 update.",
+              "recommendation": "Keep the current unweighted course-topic map; no exam weights are published.",
+              "resolution": "Updated the NSE 1 course note; duration and account caveat remain.",
+              "affected_exams": [
+                "NSE-1-CYBERSECURITY"
+              ],
+              "catalog_status": "registered",
+              "disposition": "applied",
+              "source_id": "nse-1-cybersecurity-source-1"
+            }
+          ],
+          "notes": "Manual direct-page review reconciled this guide with current official exam, lifecycle, product/release and training evidence. The objective monitor returns abbreviated Fortinet extracts, so its changed flag was not treated as an accepted objective delta. See the dated group report for sources and limitations."
+        },
+        {
+          "exam_code": "NSE-2-CYBERSECURITY",
+          "vendor_id": "fortinet",
+          "guide_path": "guides/NSE-2-CYBERSECURITY-fortinet-nse-2-in-cybersecurity.md",
+          "baseline_sha256": "f0ed87c7103b5650d44dd0cea1a81ec94bb912919d5528292a3f9531dcbbd083",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current official credential/option pages, current/future routes, published scope, prerequisites and lifecycle notices were opened. See exact URLs in the dated exam and lifecycle packet."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Applicable current versioned docs/product release feeds were inspected; guide additions are release/product bounded and distinct from exam scope. For the course-only NSE 1 credential, no unrelated product release was added."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Fortinet exam release notices and relevant product release channels were checked; announcements remain distinct from current direct exam-page availability."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "New direct official exam, versioned documentation, and training/video URLs are registered for the affected exam. Scoped source health checked 86 records: 81 accessible, 5 account/automated-access blocked, zero broken after repairs."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Past-quarter forecasts, the official NSE 6 SASE taxonomy wording, product/version/tenant limits, account-gated training and automated-access blocks remain explicit. No release detail is presented as exam scope."
+            }
+          },
+          "findings": [
+            {
+              "id": "nse-2-fortios-sdwan-765-example",
+              "check": "official_product_documentation",
+              "category": "new-source",
+              "title": "FortiOS 7.6.5 SD-WAN release notes",
+              "url": "https://docs.fortinet.com/document/fortigate/7.6.0/sd-wan-new-features/832953/whats-new-in-7-6-5",
+              "source_type": "product-documentation",
+              "confidence": "high",
+              "evidence": "The notes describe a supported two-WAN default and hub BGP route suppression when all spoke links are down.",
+              "recommendation": "Use only as release/topology-specific path-health context; not exam scope.",
+              "resolution": "Added the bounded SD-WAN example and registered the versioned source.",
+              "affected_exams": [
+                "NSE-2-CYBERSECURITY"
+              ],
+              "catalog_status": "registered",
+              "disposition": "applied",
+              "source_id": "fortios-7-6-5-sd-wan-change-log"
+            }
+          ],
+          "notes": "Manual direct-page review reconciled this guide with current official exam, lifecycle, product/release and training evidence. The objective monitor returns abbreviated Fortinet extracts, so its changed flag was not treated as an accepted objective delta. See the dated group report for sources and limitations."
+        },
+        {
+          "exam_code": "NSE-3-CYBERSECURITY",
+          "vendor_id": "fortinet",
+          "guide_path": "guides/NSE-3-CYBERSECURITY-fortinet-nse-3-in-cybersecurity.md",
+          "baseline_sha256": "9d66120ac9288a491cfd5bc75a0fdcc0b8584a821f46c6dc077907d1348ba9bb",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current official credential/option pages, current/future routes, published scope, prerequisites and lifecycle notices were opened. See exact URLs in the dated exam and lifecycle packet."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Applicable current versioned docs/product release feeds were inspected; guide additions are release/product bounded and distinct from exam scope. For the course-only NSE 1 credential, no unrelated product release was added."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Fortinet exam release notices and relevant product release channels were checked; announcements remain distinct from current direct exam-page availability."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "New direct official exam, versioned documentation, and training/video URLs are registered for the affected exam. Scoped source health checked 86 records: 81 accessible, 5 account/automated-access blocked, zero broken after repairs."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Past-quarter forecasts, the official NSE 6 SASE taxonomy wording, product/version/tenant limits, account-gated training and automated-access blocks remain explicit. No release detail is presented as exam scope."
+            }
+          },
+          "findings": [
+            {
+              "id": "nse-3-fortios-release-context",
+              "check": "official_product_documentation",
+              "category": "new-source",
+              "title": "FortiOS 7.6 change log",
+              "url": "https://docs.fortinet.com/document/fortigate/7.6.0/new-features/4/change-log",
+              "source_type": "product-documentation",
+              "confidence": "high",
+              "evidence": "The release channel includes platform-specific FortiAP, IPv6-management and 802.1X changes.",
+              "recommendation": "Use as optional release context only where hardware/build supports it; not new exam objectives.",
+              "resolution": "Added a version-bounded operator note and registered the official change log.",
+              "affected_exams": [
+                "NSE-3-CYBERSECURITY"
+              ],
+              "catalog_status": "registered",
+              "disposition": "applied",
+              "source_id": "fortigate-7-6-change-log"
+            }
+          ],
+          "notes": "Manual direct-page review reconciled this guide with current official exam, lifecycle, product/release and training evidence. The objective monitor returns abbreviated Fortinet extracts, so its changed flag was not treated as an accepted objective delta. See the dated group report for sources and limitations."
+        },
+        {
+          "exam_code": "NSE-5-CLOUD-SECURITY",
+          "vendor_id": "fortinet",
+          "guide_path": "guides/NSE-5-CLOUD-SECURITY-fortinet-nse-5-in-cloud-security.md",
+          "baseline_sha256": "0fd460cf2cf2b56fc1b9eadae7ab637fc4c091d5be0b0c31649e825d8137b6cf",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current official credential/option pages, current/future routes, published scope, prerequisites and lifecycle notices were opened. See exact URLs in the dated exam and lifecycle packet."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Applicable current versioned docs/product release feeds were inspected; guide additions are release/product bounded and distinct from exam scope. For the course-only NSE 1 credential, no unrelated product release was added."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Fortinet exam release notices and relevant product release channels were checked; announcements remain distinct from current direct exam-page availability."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "New direct official exam, versioned documentation, and training/video URLs are registered for the affected exam. Scoped source health checked 86 records: 81 accessible, 5 account/automated-access blocked, zero broken after repairs."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Past-quarter forecasts, the official NSE 6 SASE taxonomy wording, product/version/tenant limits, account-gated training and automated-access blocks remain explicit. No release detail is presented as exam scope."
+            }
+          },
+          "findings": [
+            {
+              "id": "nse-5-cloud-fortiweb-805",
+              "check": "official_product_documentation",
+              "category": "new-source",
+              "title": "FortiWeb 8.0.5 API visibility and client-side protection",
+              "url": "https://docs.fortinet.com/document/fortiweb/8.0.5/administration-guide/819488/new-features",
+              "source_type": "product-documentation",
+              "confidence": "high",
+              "evidence": "The guide describes zombie-API tagging in 8.0 and API discovery/protection updates in 8.0.3.",
+              "recommendation": "Treat discovery signals as version-specific context, not proof of deprecation or exam scope.",
+              "resolution": "Added a sourced API-discovery note with release boundaries.",
+              "affected_exams": [
+                "NSE-5-CLOUD-SECURITY"
+              ],
+              "catalog_status": "registered",
+              "disposition": "applied",
+              "source_id": "fortiweb-8-0-5-new-features"
+            },
+            {
+              "id": "nse-5-cloud-fortiadc-status",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "lifecycle-change",
+              "title": "FortiADC exam remains a placeholder after the Q3 forecast",
+              "url": "https://training.fortinet.com/local/staticpage/view.php?page=fortiadc_administrator_exam",
+              "source_type": "official-training",
+              "confidence": "high",
+              "evidence": "The direct FortiADC exam page says Coming Soon on October 28; the track page retains a Q3 forecast.",
+              "recommendation": "Do not treat a course or forecast as proof of exam availability or scope.",
+              "resolution": "Updated the guide and status snapshot to use the direct page state.",
+              "affected_exams": [
+                "NSE-5-CLOUD-SECURITY"
+              ],
+              "catalog_status": "registered",
+              "disposition": "applied",
+              "source_id": "nse-5-cloud-fortiadc-exam-status"
+            }
+          ],
+          "notes": "Manual direct-page review reconciled this guide with current official exam, lifecycle, product/release and training evidence. The objective monitor returns abbreviated Fortinet extracts, so its changed flag was not treated as an accepted objective delta. See the dated group report for sources and limitations."
+        },
+        {
+          "exam_code": "NSE-5-SASE",
+          "vendor_id": "fortinet",
+          "guide_path": "guides/NSE-5-SASE-fortinet-nse-5-in-sase.md",
+          "baseline_sha256": "811ed71943313043d2715032aedb4a66bdda1c09db3efacd1e4677d4da11425f",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current official credential/option pages, current/future routes, published scope, prerequisites and lifecycle notices were opened. See exact URLs in the dated exam and lifecycle packet."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Applicable current versioned docs/product release feeds were inspected; guide additions are release/product bounded and distinct from exam scope. For the course-only NSE 1 credential, no unrelated product release was added."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Fortinet exam release notices and relevant product release channels were checked; announcements remain distinct from current direct exam-page availability."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "New direct official exam, versioned documentation, and training/video URLs are registered for the affected exam. Scoped source health checked 86 records: 81 accessible, 5 account/automated-access blocked, zero broken after repairs."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Past-quarter forecasts, the official NSE 6 SASE taxonomy wording, product/version/tenant limits, account-gated training and automated-access blocks remain explicit. No release detail is presented as exam scope."
+            }
+          },
+          "findings": [
+            {
+              "id": "nse-5-sase-26-contract",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "updated-source",
+              "title": "FortiSASE and SD-WAN 26 contract and 7.6 final delivery",
+              "url": "https://training.fortinet.com/local/staticpage/view.php?page=fortisase_and_sd-wan_core_administrator_exam",
+              "source_type": "exam-blueprint",
+              "confidence": "high",
+              "evidence": "The 26 exam is available with 65 minutes, 30-35 questions, English/Japanese and FortiSASE 26 baseline. Version 7.6 is available until November 14, 2026.",
+              "recommendation": "Use version 26 for new study; retain the dated 7.6 boundary for already booked candidates.",
+              "resolution": "Updated the guide and objective snapshot to current contract and final-delivery date.",
+              "affected_exams": [
+                "NSE-5-SASE"
+              ],
+              "catalog_status": "registered",
+              "disposition": "applied",
+              "source_id": "nse-5-sase-blueprint"
+            },
+            {
+              "id": "nse-5-sase-feature-train",
+              "check": "official_product_documentation",
+              "category": "updated-source",
+              "title": "FortiSASE feature-release notes",
+              "url": "https://docs.fortinet.com/document/fortisase/latest/feature-release-notes/661728/whats-new",
+              "source_type": "product-documentation",
+              "confidence": "high",
+              "evidence": "The official feature channel includes API, onboarding and PoP updates with feature-train and availability restrictions.",
+              "recommendation": "Verify service version, tenant, region and eligibility; keep sovereign variants separate.",
+              "resolution": "Added the current feature-release check and registered its source.",
+              "affected_exams": [
+                "NSE-5-SASE"
+              ],
+              "catalog_status": "registered",
+              "disposition": "applied",
+              "source_id": "fortisase-feature-release-notes"
+            }
+          ],
+          "notes": "Manual direct-page review reconciled this guide with current official exam, lifecycle, product/release and training evidence. The objective monitor returns abbreviated Fortinet extracts, so its changed flag was not treated as an accepted objective delta. See the dated group report for sources and limitations."
+        },
+        {
+          "exam_code": "NSE-5-SECURE-NETWORKING",
+          "vendor_id": "fortinet",
+          "guide_path": "guides/NSE-5-SECURE-NETWORKING-fortinet-nse-5-in-secure-networking.md",
+          "baseline_sha256": "82138dbaa8e93d490867337da1dcc29706a14cd6a41c7305e422ff289578dab7",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current official credential/option pages, current/future routes, published scope, prerequisites and lifecycle notices were opened. See exact URLs in the dated exam and lifecycle packet."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Applicable current versioned docs/product release feeds were inspected; guide additions are release/product bounded and distinct from exam scope. For the course-only NSE 1 credential, no unrelated product release was added."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Fortinet exam release notices and relevant product release channels were checked; announcements remain distinct from current direct exam-page availability."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "New direct official exam, versioned documentation, and training/video URLs are registered for the affected exam. Scoped source health checked 86 records: 81 accessible, 5 account/automated-access blocked, zero broken after repairs."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Past-quarter forecasts, the official NSE 6 SASE taxonomy wording, product/version/tenant limits, account-gated training and automated-access blocks remain explicit. No release detail is presented as exam scope."
+            }
+          },
+          "findings": [
+            {
+              "id": "nse-5-secure-sdwan-option",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "updated-source",
+              "title": "SD-WAN 7.6 Core Administrator is an available route",
+              "url": "https://training.fortinet.com/local/staticpage/view.php?page=sd-wan_core_administrator_exam",
+              "source_type": "exam-blueprint",
+              "confidence": "high",
+              "evidence": "The direct page publishes an available SD-WAN 7.6 route, 60-70 minutes, 30-35 questions and three weighted groups.",
+              "recommendation": "Map SD-WAN groups to this option only; do not blend with other routes.",
+              "resolution": "Added SD-WAN as the third route and updated its objective snapshot.",
+              "affected_exams": [
+                "NSE-5-SECURE-NETWORKING"
+              ],
+              "catalog_status": "registered",
+              "disposition": "applied",
+              "source_id": "nse-5-secure-networking-sdwan-exam"
+            },
+            {
+              "id": "nse-5-secure-fortiap-763",
+              "check": "official_product_documentation",
+              "category": "new-source",
+              "title": "FortiAP 7.6.3 release notes",
+              "url": "https://docs.fortinet.com/document/fortiap/7.6.3/fortiap-release-notes/277928/new-features-or-enhancements",
+              "source_type": "product-documentation",
+              "confidence": "high",
+              "evidence": "The 7.6.3 notes describe Wi-Fi 7 MLO/preamble-puncturing and other selected model features.",
+              "recommendation": "Confirm regulatory region and AP model before any lab example.",
+              "resolution": "Added a bounded wireless release note and registered the versioned source.",
+              "affected_exams": [
+                "NSE-5-SECURE-NETWORKING"
+              ],
+              "catalog_status": "registered",
+              "disposition": "applied",
+              "source_id": "fortiap-7-6-3-release-notes"
+            }
+          ],
+          "notes": "Manual direct-page review reconciled this guide with current official exam, lifecycle, product/release and training evidence. The objective monitor returns abbreviated Fortinet extracts, so its changed flag was not treated as an accepted objective delta. See the dated group report for sources and limitations."
+        },
+        {
+          "exam_code": "NSE-5-SECURITY-OPERATIONS",
+          "vendor_id": "fortinet",
+          "guide_path": "guides/NSE-5-SECURITY-OPERATIONS-fortinet-nse-5-in-security-operations.md",
+          "baseline_sha256": "ed820134a3dccdde08d7fea31a18c82d87d2f18c5bbc6c450c030a33c2bca277",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current official credential/option pages, current/future routes, published scope, prerequisites and lifecycle notices were opened. See exact URLs in the dated exam and lifecycle packet."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Applicable current versioned docs/product release feeds were inspected; guide additions are release/product bounded and distinct from exam scope. For the course-only NSE 1 credential, no unrelated product release was added."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Fortinet exam release notices and relevant product release channels were checked; announcements remain distinct from current direct exam-page availability."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "New direct official exam, versioned documentation, and training/video URLs are registered for the affected exam. Scoped source health checked 86 records: 81 accessible, 5 account/automated-access blocked, zero broken after repairs."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Past-quarter forecasts, the official NSE 6 SASE taxonomy wording, product/version/tenant limits, account-gated training and automated-access blocks remain explicit. No release detail is presented as exam scope."
+            }
+          },
+          "findings": [
+            {
+              "id": "nse-5-so-fortianalyzer-767",
+              "check": "official_product_documentation",
+              "category": "new-source",
+              "title": "FortiAnalyzer 7.6.7 release notes",
+              "url": "https://docs.fortinet.com/document/fortianalyzer/7.6.0/new-features/893972/7-6-7",
+              "source_type": "product-documentation",
+              "confidence": "high",
+              "evidence": "FortiAnalyzer 7.6.7 adds FortiSOC Connector requirements and report updates.",
+              "recommendation": "Use for optional integration/report practice; preserve root-ADOM, token and version limits.",
+              "resolution": "Added connector/report context and repaired the dead documentation link.",
+              "affected_exams": [
+                "NSE-5-SECURITY-OPERATIONS"
+              ],
+              "catalog_status": "registered",
+              "disposition": "applied",
+              "source_id": "nse-5-security-operations-source-4"
+            }
+          ],
+          "notes": "Manual direct-page review reconciled this guide with current official exam, lifecycle, product/release and training evidence. The objective monitor returns abbreviated Fortinet extracts, so its changed flag was not treated as an accepted objective delta. See the dated group report for sources and limitations."
+        },
+        {
+          "exam_code": "NSE-6-CLOUD-SECURITY",
+          "vendor_id": "fortinet",
+          "guide_path": "guides/NSE-6-CLOUD-SECURITY-fortinet-nse-6-cloud-security.md",
+          "baseline_sha256": "a078a0cf9e89d884110f290c55540d49d150fd04d2951ba1a482ce48fbfdfcf6",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current official credential/option pages, current/future routes, published scope, prerequisites and lifecycle notices were opened. See exact URLs in the dated exam and lifecycle packet."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Applicable current versioned docs/product release feeds were inspected; guide additions are release/product bounded and distinct from exam scope. For the course-only NSE 1 credential, no unrelated product release was added."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Fortinet exam release notices and relevant product release channels were checked; announcements remain distinct from current direct exam-page availability."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "New direct official exam, versioned documentation, and training/video URLs are registered for the affected exam. Scoped source health checked 86 records: 81 accessible, 5 account/automated-access blocked, zero broken after repairs."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Past-quarter forecasts, the official NSE 6 SASE taxonomy wording, product/version/tenant limits, account-gated training and automated-access blocks remain explicit. No release detail is presented as exam scope."
+            }
+          },
+          "findings": [
+            {
+              "id": "nse-6-cloud-forticnapp-release",
+              "check": "official_product_documentation",
+              "category": "new-source",
+              "title": "FortiCNAPP release updates",
+              "url": "https://docs.fortinet.com/document/forticnapp/latest/release-notes",
+              "source_type": "product-documentation",
+              "confidence": "high",
+              "evidence": "May 2026 notes include runtime attribution, Windows SAST and Kubernetes-agent changes alongside preview/service-coverage items.",
+              "recommendation": "Check each feature status and service scope; the release feed is not a universal coverage guarantee or exam map.",
+              "resolution": "Added a status-bounded release example and registered the source.",
+              "affected_exams": [
+                "NSE-6-CLOUD-SECURITY"
+              ],
+              "catalog_status": "registered",
+              "disposition": "applied",
+              "source_id": "forticnapp-release-notes"
+            },
+            {
+              "id": "nse-6-cloud-workspace-status",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "lifecycle-change",
+              "title": "FortiMail Workspace Security 26 remains Coming Soon",
+              "url": "https://training.fortinet.com/local/staticpage/view.php?page=fortimail_workspace_administrator_exam",
+              "source_type": "official-training",
+              "confidence": "high",
+              "evidence": "The track forecasts Q3, while the direct page remains Coming Soon without an exam time, count or detailed objectives.",
+              "recommendation": "Do not use the Q3 forecast as a release date or invent an objective map.",
+              "resolution": "Updated the guide and current status snapshot with direct-page observation.",
+              "affected_exams": [
+                "NSE-6-CLOUD-SECURITY"
+              ],
+              "catalog_status": "registered",
+              "disposition": "applied",
+              "source_id": "nse-6-cloud-security-source-7"
+            }
+          ],
+          "notes": "Manual direct-page review reconciled this guide with current official exam, lifecycle, product/release and training evidence. The objective monitor returns abbreviated Fortinet extracts, so its changed flag was not treated as an accepted objective delta. See the dated group report for sources and limitations."
+        },
+        {
+          "exam_code": "NSE-6-SASE",
+          "vendor_id": "fortinet",
+          "guide_path": "guides/NSE-6-SASE-fortinet-nse-6-sase.md",
+          "baseline_sha256": "e0eed0e2c76ce449c7c6c71f4f35739e501a0cfb392ff31e676a9381f0c51cca",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current official credential/option pages, current/future routes, published scope, prerequisites and lifecycle notices were opened. See exact URLs in the dated exam and lifecycle packet."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Applicable current versioned docs/product release feeds were inspected; guide additions are release/product bounded and distinct from exam scope. For the course-only NSE 1 credential, no unrelated product release was added."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Fortinet exam release notices and relevant product release channels were checked; announcements remain distinct from current direct exam-page availability."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "New direct official exam, versioned documentation, and training/video URLs are registered for the affected exam. Scoped source health checked 86 records: 81 accessible, 5 account/automated-access blocked, zero broken after repairs."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Past-quarter forecasts, the official NSE 6 SASE taxonomy wording, product/version/tenant limits, account-gated training and automated-access blocks remain explicit. No release detail is presented as exam scope."
+            }
+          },
+          "findings": [
+            {
+              "id": "nse-6-sase-video-context",
+              "check": "official_release_channels",
+              "category": "new-source",
+              "title": "FortiDLP H1 2026 feature overview",
+              "url": "https://video.fortinet.com/products/fortidlp/1.0/what-s-new-in-fortidlp-h1-2026",
+              "source_type": "official-training",
+              "confidence": "high",
+              "evidence": "The official video summarizes GenAI guardrails/coaching, cloud data protection and endpoint support.",
+              "recommendation": "Use only as optional overview; confirm details, licensing and setup in current documentation.",
+              "resolution": "Added a clearly labeled optional video resource and registered it.",
+              "affected_exams": [
+                "NSE-6-SASE"
+              ],
+              "catalog_status": "registered",
+              "disposition": "applied",
+              "source_id": "fortidlp-h1-2026-whats-new"
+            },
+            {
+              "id": "nse-6-sase-taxonomy-copy",
+              "check": "contradiction_and_gap_review",
+              "category": "other",
+              "title": "NSE 6 SASE pathway uses a broad credential taxonomy",
+              "url": "https://training.fortinet.com/local/staticpage/view.php?page=nse_6_sase",
+              "source_type": "official-training",
+              "confidence": "medium",
+              "evidence": "The official track assigns EMS, EDR and DLP exams under SASE while the description emphasizes endpoint protection and data security.",
+              "recommendation": "Preserve the official track assignment but do not infer full FortiSASE service-administration scope.",
+              "resolution": "Added a nearby explanation that identifies this as credential taxonomy.",
+              "affected_exams": [
+                "NSE-6-SASE"
+              ],
+              "catalog_status": "registered",
+              "disposition": "applied",
+              "source_id": "nse-6-sase-blueprint"
+            }
+          ],
+          "notes": "Manual direct-page review reconciled this guide with current official exam, lifecycle, product/release and training evidence. The objective monitor returns abbreviated Fortinet extracts, so its changed flag was not treated as an accepted objective delta. See the dated group report for sources and limitations."
+        },
+        {
+          "exam_code": "NSE-6-SECURE-NETWORKING",
+          "vendor_id": "fortinet",
+          "guide_path": "guides/NSE-6-SECURE-NETWORKING-fortinet-nse-6-secure-networking.md",
+          "baseline_sha256": "f32c0b76a573f47cb493f847c466633b8e82b875a0fde0a4b79bb91bb7499c72",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current official credential/option pages, current/future routes, published scope, prerequisites and lifecycle notices were opened. See exact URLs in the dated exam and lifecycle packet."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Applicable current versioned docs/product release feeds were inspected; guide additions are release/product bounded and distinct from exam scope. For the course-only NSE 1 credential, no unrelated product release was added."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Fortinet exam release notices and relevant product release channels were checked; announcements remain distinct from current direct exam-page availability."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "New direct official exam, versioned documentation, and training/video URLs are registered for the affected exam. Scoped source health checked 86 records: 81 accessible, 5 account/automated-access blocked, zero broken after repairs."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Past-quarter forecasts, the official NSE 6 SASE taxonomy wording, product/version/tenant limits, account-gated training and automated-access blocks remain explicit. No release detail is presented as exam scope."
+            }
+          },
+          "findings": [
+            {
+              "id": "nse-6-secure-nac-763",
+              "check": "official_product_documentation",
+              "category": "new-source",
+              "title": "FortiNAC-F 7.6.3 authentication updates",
+              "url": "https://docs.fortinet.com/document/fortinac-f/7.6.3/release-notes/590876/whats-new-in-fortinac-f-7-6-3",
+              "source_type": "product-documentation",
+              "confidence": "high",
+              "evidence": "The notes describe identity-provider and TEAP options with platform/topology prerequisites.",
+              "recommendation": "Use only for a version-bounded identity scenario; not extra objectives.",
+              "resolution": "Added a bounded identity example and registered the source.",
+              "affected_exams": [
+                "NSE-6-SECURE-NETWORKING"
+              ],
+              "catalog_status": "registered",
+              "disposition": "applied",
+              "source_id": "fortinac-f-7-6-3-whats-new"
+            },
+            {
+              "id": "nse-6-secure-upcoming-status",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "lifecycle-change",
+              "title": "FortiVoice and FortiAnalyzer remain Coming Soon",
+              "url": "https://training.fortinet.com/local/staticpage/view.php?page=fortivoice_administrator_exam",
+              "source_type": "official-training",
+              "confidence": "high",
+              "evidence": "The track forecasts Q3, but both direct option pages still say Coming Soon on October 28.",
+              "recommendation": "Retain as announced context; do not invent a contract or objectives.",
+              "resolution": "Updated the guide/status snapshot and corrected the FortiVoice link to current 8.0 documentation.",
+              "affected_exams": [
+                "NSE-6-SECURE-NETWORKING"
+              ],
+              "catalog_status": "registered",
+              "disposition": "applied",
+              "source_id": "nse-6-secure-networking-source-6"
+            }
+          ],
+          "notes": "Manual direct-page review reconciled this guide with current official exam, lifecycle, product/release and training evidence. The objective monitor returns abbreviated Fortinet extracts, so its changed flag was not treated as an accepted objective delta. See the dated group report for sources and limitations."
+        }
+      ],
+      "summary": {
+        "exam_count": 10,
+        "current": 10,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 16,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
     }
   ]
 }

@@ -6,18 +6,19 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-02
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-02
+upcoming_change_checked: 2026-10-28
 ---
 
 # Fortinet NSE 6 in SASE Study Guide
 
-> **Independent AI-assisted resource — SOURCES + PUBLIC REQUIREMENTS CHECKED; HUMAN REVIEW PENDING.** The live certification page, three option exam pages, official documentation, and policy sources were checked September 2, 2026.
+> **Independent AI-assisted resource — SOURCES + PUBLIC REQUIREMENTS CHECKED; HUMAN REVIEW PENDING.** The live certification page, three option exam pages, official documentation, and policy sources were rechecked October 28, 2026.
 
 **Current baseline:** This is a certification pathway, not one composite exam. Hold active **NSE 4 FortiOS** and pass **one** proctored SASE-track exam within two years: FortiClient EMS Administrator, FortiEDR Administrator, or FortiDLP Administrator. The credential is active for two years from the second qualifying exam.<br>
 **Exam contract:** The current option pages list 65 minutes and 30–40 questions for FortiClient EMS 7.4; 70 minutes and 30–35 questions for FortiEDR 7.0; and 65 minutes and 30–40 questions for FortiDLP 26. Each has independent objectives and experience guidance.<br>
-**Upcoming change:** No replacement or retirement is announced on the pathway page as of September 2, 2026. Product versions and SaaS behavior can move faster than the credential page, so recheck the chosen exam and documentation immediately before study and booking.<br>
+**Upcoming change:** No replacement or retirement is announced on the pathway page as of October 28, 2026. Product versions and SaaS behavior can move faster than the credential page, so recheck the chosen exam and documentation immediately before study and booking.<br>
+**October 28, 2026 product note:** Fortinet's H1 2026 FortiDLP overview highlights GenAI usage guardrails, user coaching, cloud data protection, and expanded endpoint-platform support. Use the [official video](https://video.fortinet.com/products/fortidlp/1.0/what-s-new-in-fortidlp-h1-2026) as optional context for policy and investigation—not as a procedural reference or exam blueprint. Verify availability, licensing, and configuration in the current FortiDLP documentation.<br>
 **Integrity:** Use official sample questions only to understand style and scope. Reject dumps, recalled questions, and claims of guaranteed matches.
 
 > **September 17, 2026 contract check:** Current official exam and track pages were inspected; the exam times and prerequisite statements above reflect that check. Historical objective snapshots and full technical-review dates remain unchanged. See the [exam validation report](../docs/research/2026-09-17-exam-validation.md).
@@ -47,7 +48,7 @@ Across all lanes, inventory users, devices, operating systems, data classes, app
 
 Plan staged deployment, compatibility, bandwidth, proxy/TLS, identity, certificates, exclusions, update rings, offline behavior, rollback, privacy, and support collection. Use small canaries before broad enforcement.
 
-**Related item: SASE naming.** The published pathway currently emphasizes EMS, EDR, and DLP capabilities. Do not assume this guide is a complete FortiSASE service-administration blueprint; follow the actual selected exam page.
+**Related item: SASE naming.** The pathway page currently groups EMS, EDR, and DLP exams under “SASE”; its description emphasizes endpoint protection and data security. Keep the official pathway assignment intact while treating the product grouping as Fortinet's credential taxonomy, not proof that these products administer the FortiSASE service. Follow the exact selected exam page.
 
 ## 2. FortiClient EMS Administrator lane
 
@@ -230,6 +231,7 @@ This is a selective starting set, not a complete list and not a prescription to 
 | [FortiEDR 7.0 course](https://training.fortinet.com/course/view.php?id=73365) and [documentation](https://docs.fortinet.com/product/fortiedr/7.0) | Free account/public; labs may cost | 20–40 hr plus labs | System, policies, events, forensics, hunting, integrations and troubleshooting |
 | [FortiDLP Administrator exam](https://training.fortinet.com/local/staticpage/view.php?page=fortidlp_administrator_exam) | Public | 45–75 min | Weighted FortiDLP 26 blueprint and official resources |
 | [FortiDLP 26 course](https://training.fortinet.com/course/view.php?id=84334) and [documentation](https://docs.fortinet.com/product/fortidlp) | Free account/public; labs may cost | 25–45 hr plus labs | Current tenant, agent, policy, data, investigation and troubleshooting behavior |
+| [What's New in FortiDLP (H1 2026)](https://video.fortinet.com/products/fortidlp/1.0/what-s-new-in-fortidlp-h1-2026) | Public official video | Not stated | Optional overview of current data-protection features; verify details against documentation |
 | [Fortinet exam policy](https://helpdesk.training.fortinet.com/en/support/solutions/articles/73000672593-exam-policy-recertification) | Public | 20–40 min | Retake, renewal, exam reuse and timing rules |
 | [Fortinet YouTube](https://www.youtube.com/@Fortinet) | Free/YouTube | 4–10 hr selected | Official feature and architecture demonstrations; verify version against docs |
 | O'Reilly, Pluralsight, Udemy, LinkedIn Learning and other courses on endpoint security, EDR hunting, ZTNA, DLP, and incident handling | Subscription/purchase may apply | 10–30 hr selected | No exact current pathway-aligned third-party course was verified; use for concepts and reconcile product claims with Fortinet |

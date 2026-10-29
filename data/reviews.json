@@ -15242,7 +15242,7 @@
       "review_type": "source-validation",
       "reviewed_on": "2026-09-02",
       "outcome": "passed",
-      "blueprint_snapshot_path": "data/objective-snapshots/nse-5-secure-networking-official-objectives.txt",
+      "blueprint_snapshot_path": "data/objective-snapshots/archive/nse-5-secure-networking-official-objectives-ea2a12b1c36cfb3b763cc898f518564fd81db4a25d7a8c39f00d4a17c262f916.txt",
       "blueprint_snapshot_sha256": "ea2a12b1c36cfb3b763cc898f518564fd81db4a25d7a8c39f00d4a17c262f916",
       "objective_coverage": [
         {
@@ -15289,7 +15289,7 @@
       "review_type": "source-validation",
       "reviewed_on": "2026-09-02",
       "outcome": "passed",
-      "blueprint_snapshot_path": "data/objective-snapshots/nse-5-sase-official-objectives.txt",
+      "blueprint_snapshot_path": "data/objective-snapshots/archive/nse-5-sase-official-objectives-0873782a14bab76e6f3da5c9f18af642eaec585670d80bd74e6f66f073764729.txt",
       "blueprint_snapshot_sha256": "0873782a14bab76e6f3da5c9f18af642eaec585670d80bd74e6f66f073764729",
       "objective_coverage": [
         {
@@ -15350,7 +15350,7 @@
       "review_type": "source-validation",
       "reviewed_on": "2026-09-02",
       "outcome": "passed",
-      "blueprint_snapshot_path": "data/objective-snapshots/nse-5-cloud-security-official-objectives.txt",
+      "blueprint_snapshot_path": "data/objective-snapshots/archive/nse-5-cloud-security-official-objectives-6053cab73f8ab3fd9cf74db3daf454ce557a22d880c3ec6451688f9d6e5e3060.txt",
       "blueprint_snapshot_sha256": "6053cab73f8ab3fd9cf74db3daf454ce557a22d880c3ec6451688f9d6e5e3060",
       "objective_coverage": [
         {
@@ -15451,7 +15451,7 @@
       "review_type": "source-validation",
       "reviewed_on": "2026-09-02",
       "outcome": "passed",
-      "blueprint_snapshot_path": "data/objective-snapshots/nse-6-secure-networking-official-objectives.txt",
+      "blueprint_snapshot_path": "data/objective-snapshots/archive/nse-6-secure-networking-official-objectives-d869cde3cb19fdf2175bdd8ec15b74b9cc82dc8ab35047bfdd47c012a67df9cd.txt",
       "blueprint_snapshot_sha256": "d869cde3cb19fdf2175bdd8ec15b74b9cc82dc8ab35047bfdd47c012a67df9cd",
       "objective_coverage": [
         {
@@ -15664,7 +15664,7 @@
       "review_type": "source-validation",
       "reviewed_on": "2026-09-02",
       "outcome": "passed",
-      "blueprint_snapshot_path": "data/objective-snapshots/nse-6-cloud-security-official-objectives.txt",
+      "blueprint_snapshot_path": "data/objective-snapshots/archive/nse-6-cloud-security-official-objectives-84fbd9fed54da498423bcf8199d37c88e3cc0f28c7066cf99272935bd4fb5857.txt",
       "blueprint_snapshot_sha256": "84fbd9fed54da498423bcf8199d37c88e3cc0f28c7066cf99272935bd4fb5857",
       "objective_coverage": [
         {
@@ -26586,6 +26586,889 @@
         "missing_or_error": 0
       },
       "notes": "Complete immutable/final guide reading and detailed objective reconciliation by assigned subset researcher: 73 tasks. Office detailed PDF evidence is separate from accepted coarse adapter snapshot. Selected technical/resource source bodies read with declared scope. Bounded source gate passed; see docs/research/2026-10-28-microsoft-refresh-group-05.md and ADLC_Docs/operations/2026-10-28-microsoft-refresh-group-05.json. Full rubric2/human/product execution not inferred."
+    },
+    {
+      "id": "nse-1-cybersecurity-2026-10-28-source-validation",
+      "exam_code": "NSE-1-CYBERSECURITY",
+      "guide_path": "guides/NSE-1-CYBERSECURITY-fortinet-nse-1-in-cybersecurity.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/nse-1-cybersecurity-official-objectives.txt",
+      "blueprint_snapshot_sha256": "43efb7dbce9188ebb6c2048f955015564de7bec3e07a0530788fe4821284967c",
+      "objective_coverage": [
+        {
+          "objective_group": "Intro to Cybersecurity",
+          "guide_sections": [
+            "Section 1",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Threat Landscape",
+          "guide_sections": [
+            "Section 1",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Social Engineering",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Malware",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Cryptography and the Public Key Infrastructure",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Secure Networking",
+          "guide_sections": [
+            "Section 5",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Authentication and Access Control",
+          "guide_sections": [
+            "Section 6",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Endpoint Security",
+          "guide_sections": [
+            "Section 7",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Secure Data and Applications",
+          "guide_sections": [
+            "Section 8",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Cloud Security and Virtualization",
+          "guide_sections": [
+            "Section 9",
+            "Integrated scenarios"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 8,
+        "reachable": 7,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "Current official exam/track pages, material cited sources, source health and applicable lifecycle/release channels reviewed October 28, 2026. Guide is source-validated; human/community review remains pending. Five blocked source-health requests are account/automated access limits across this batch, not missing/error links. Full semantic audit is recorded separately."
+    },
+    {
+      "id": "nse-2-cybersecurity-2026-10-28-source-validation",
+      "exam_code": "NSE-2-CYBERSECURITY",
+      "guide_path": "guides/NSE-2-CYBERSECURITY-fortinet-nse-2-in-cybersecurity.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/nse-2-cybersecurity-official-objectives.txt",
+      "blueprint_snapshot_sha256": "6a8c018a66d7d93364d14a95c107186a205d5d0e7d042ab76cd9989806212ede",
+      "objective_coverage": [
+        {
+          "objective_group": "What is Next Generation Firewall",
+          "guide_sections": [
+            "Section 1",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "How Firewall Policies Work",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "User Authentication in NGFW",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Blocking Malware",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Controlling Web Access with Web Filtering",
+          "guide_sections": [
+            "Section 5",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Intrusion Prevention System and Application Control",
+          "guide_sections": [
+            "Section 6",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Connecting Multiple Locations Securely",
+          "guide_sections": [
+            "Section 7",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Secure SD-WAN",
+          "guide_sections": [
+            "Section 8",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "SASE",
+          "guide_sections": [
+            "Section 9",
+            "Integrated scenarios"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 9,
+        "reachable": 8,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "Current official exam/track pages, material cited sources, source health and applicable lifecycle/release channels reviewed October 28, 2026. Guide is source-validated; human/community review remains pending. Five blocked source-health requests are account/automated access limits across this batch, not missing/error links. Full semantic audit is recorded separately."
+    },
+    {
+      "id": "nse-3-cybersecurity-2026-10-28-source-validation",
+      "exam_code": "NSE-3-CYBERSECURITY",
+      "guide_path": "guides/NSE-3-CYBERSECURITY-fortinet-nse-3-in-cybersecurity.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/nse-3-cybersecurity-official-objectives.txt",
+      "blueprint_snapshot_sha256": "920241b7c63ba868fa041e18036e1c337e144f4128f166c1e663298890b1eaae",
+      "objective_coverage": [
+        {
+          "objective_group": "FortiGate Overview",
+          "guide_sections": [
+            "Section 1",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "How to Access your FortiGate",
+          "guide_sections": [
+            "Section 1",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Configuring System Settings and Basic Networking",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Firewall Policies",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Logging Events",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Authenticating Network Users",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Inspect SSL Traffic",
+          "guide_sections": [
+            "Section 5",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Blocking Malware",
+          "guide_sections": [
+            "Section 5",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Control Web Access Using Web Filtering",
+          "guide_sections": [
+            "Section 5",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Configuring the FortiGate Intrusion Prevention System",
+          "guide_sections": [
+            "Section 5",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Controlling Application Access",
+          "guide_sections": [
+            "Section 5",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Securing Remote Access with ZTNA",
+          "guide_sections": [
+            "Section 6",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Creating IPsec Virtual Private Networks",
+          "guide_sections": [
+            "Section 7",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "FortiGate System Maintenance and Monitoring",
+          "guide_sections": [
+            "Section 8",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Configuring the Fortinet Security Fabric",
+          "guide_sections": [
+            "Section 9",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "FortiGate High Availability (HA)",
+          "guide_sections": [
+            "Section 9",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Configuring FortiLink",
+          "guide_sections": [
+            "Section 10",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Securing Public and Private Clouds",
+          "guide_sections": [
+            "Section 10",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "FortiCare",
+          "guide_sections": [
+            "Section 10",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "FortiCloud",
+          "guide_sections": [
+            "Section 10",
+            "Integrated scenarios"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 8,
+        "reachable": 8,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "Current official exam/track pages, material cited sources, source health and applicable lifecycle/release channels reviewed October 28, 2026. Guide is source-validated; human/community review remains pending. Five blocked source-health requests are account/automated access limits across this batch, not missing/error links. Full semantic audit is recorded separately."
+    },
+    {
+      "id": "nse-5-cloud-security-2026-10-28-source-validation",
+      "exam_code": "NSE-5-CLOUD-SECURITY",
+      "guide_path": "guides/NSE-5-CLOUD-SECURITY-fortinet-nse-5-in-cloud-security.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/nse-5-cloud-security-official-objectives.txt",
+      "blueprint_snapshot_sha256": "058569ef0acb8d185e004a1b7100f56d5cb3088f369add4bf28d3d2693b61755",
+      "objective_coverage": [
+        {
+          "objective_group": "Fortinet NSE 5 - FortiWeb 8.0 Administrator",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Fortinet NSE 5 - FortiAppSec Cloud 26 Administrator",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Fortinet NSE 5 - FortiADC Administrator",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenarios"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 14,
+        "reachable": 14,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "Current official exam/track pages, material cited sources, source health and applicable lifecycle/release channels reviewed October 28, 2026. Guide is source-validated; human/community review remains pending. Five blocked source-health requests are account/automated access limits across this batch, not missing/error links. Full semantic audit is recorded separately."
+    },
+    {
+      "id": "nse-5-sase-2026-10-28-source-validation",
+      "exam_code": "NSE-5-SASE",
+      "guide_path": "guides/NSE-5-SASE-fortinet-nse-5-in-sase.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/nse-5-sase-official-objectives.txt",
+      "blueprint_snapshot_sha256": "5da7fcd14dcb7c1c88edac3c997cc168fd4194e3a385ec1f30b460e5bdeb52cd",
+      "objective_coverage": [
+        {
+          "objective_group": "Decentralized SD-WAN (20-30%)",
+          "guide_sections": [
+            "Section 1",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Rules and routing (15-25%)",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "SASE deployment (20-30%)",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Secure internet access and secure SaaS access (15-25%)",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Analytics (15-25%)",
+          "guide_sections": [
+            "Section 5",
+            "Integrated scenarios"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 11,
+        "reachable": 11,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "Current official exam/track pages, material cited sources, source health and applicable lifecycle/release channels reviewed October 28, 2026. Guide is source-validated; human/community review remains pending. Five blocked source-health requests are account/automated access limits across this batch, not missing/error links. Full semantic audit is recorded separately."
+    },
+    {
+      "id": "nse-5-secure-networking-2026-10-28-source-validation",
+      "exam_code": "NSE-5-SECURE-NETWORKING",
+      "guide_path": "guides/NSE-5-SECURE-NETWORKING-fortinet-nse-5-in-secure-networking.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/nse-5-secure-networking-official-objectives.txt",
+      "blueprint_snapshot_sha256": "4e484d47f37076fb725c46a4361b7149b6f80b0a962f240f06da53c2b7f344ee",
+      "objective_coverage": [
+        {
+          "objective_group": "Fortinet NSE 5 - FortiSwitch Administrator",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Fortinet NSE 5 - Secure Wireless LAN Administrator",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Fortinet NSE 5 - SD-WAN 7.6 Core Administrator (three published groups)",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenarios"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 13,
+        "reachable": 13,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "Current official exam/track pages, material cited sources, source health and applicable lifecycle/release channels reviewed October 28, 2026. Guide is source-validated; human/community review remains pending. Five blocked source-health requests are account/automated access limits across this batch, not missing/error links. Full semantic audit is recorded separately."
+    },
+    {
+      "id": "nse-5-security-operations-2026-10-28-source-validation",
+      "exam_code": "NSE-5-SECURITY-OPERATIONS",
+      "guide_path": "guides/NSE-5-SECURITY-OPERATIONS-fortinet-nse-5-in-security-operations.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/nse-5-security-operations-official-objectives.txt",
+      "blueprint_snapshot_sha256": "f78670ac5a8264c35f041c6505263af3c1d6037302f66ce33bbf225a8b0c96f7",
+      "objective_coverage": [
+        {
+          "objective_group": "Features and concepts",
+          "guide_sections": [
+            "Section 1",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Log Analysis",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "SOC operation and automation",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Reports",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenarios"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 8,
+        "reachable": 8,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "Current official exam/track pages, material cited sources, source health and applicable lifecycle/release channels reviewed October 28, 2026. Guide is source-validated; human/community review remains pending. Five blocked source-health requests are account/automated access limits across this batch, not missing/error links. Full semantic audit is recorded separately."
+    },
+    {
+      "id": "nse-6-cloud-security-2026-10-28-source-validation",
+      "exam_code": "NSE-6-CLOUD-SECURITY",
+      "guide_path": "guides/NSE-6-CLOUD-SECURITY-fortinet-nse-6-cloud-security.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/nse-6-cloud-security-official-objectives.txt",
+      "blueprint_snapshot_sha256": "a8935c5b12491b416808caecccd7a584c8196fe004fc81aab36fd4683504c13d",
+      "objective_coverage": [
+        {
+          "objective_group": "FortiCNAPP Analyst — FortiCNAPP fundamentals (25–35%)",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "FortiCNAPP Analyst — End-to-end risk management (35–45%)",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "FortiCNAPP Analyst — Threat detection and response (25–35%)",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "FortiMail Administrator — Initial deployment and basic configuration",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "FortiMail Administrator — Email flow and authentication",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "FortiMail Administrator — Email security",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "FortiMail Administrator — Encryption",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "FortiMail Administrator — Server mode and transparent mode",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "FortiDDoS Administrator — DDoS fundamentals (20–30%)",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "FortiDDoS Administrator — Deployment, configuration, and baselining (25–35%)",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "FortiDDoS Administrator — Protection and mitigation controls (25–35%)",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "FortiDDoS Administrator — Monitoring, logging, and analysis (10–20%)",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenarios"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 12,
+        "reachable": 12,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "Current official exam/track pages, material cited sources, source health and applicable lifecycle/release channels reviewed October 28, 2026. Guide is source-validated; human/community review remains pending. Five blocked source-health requests are account/automated access limits across this batch, not missing/error links. Full semantic audit is recorded separately."
+    },
+    {
+      "id": "nse-6-sase-2026-10-28-source-validation",
+      "exam_code": "NSE-6-SASE",
+      "guide_path": "guides/NSE-6-SASE-fortinet-nse-6-sase.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/nse-6-sase-official-objectives.txt",
+      "blueprint_snapshot_sha256": "ba1e06514a146c4221881b88534a5d0df0ab56482d0207b0777f2996c7078249",
+      "objective_coverage": [
+        {
+          "objective_group": "FortiClient EMS Administrator — FortiClient EMS design and deployment",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "FortiClient EMS Administrator — FortiClient provisioning and deployment",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "FortiClient EMS Administrator — Implement endpoint security",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "FortiClient EMS Administrator — Zero trust and Security Fabric integration",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "FortiClient EMS Administrator — Troubleshooting",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "FortiEDR Administrator — FortiEDR system",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "FortiEDR Administrator — FortiEDR security settings and policies",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "FortiEDR Administrator — Events, forensics, and threat hunting",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "FortiEDR Administrator — FortiEDR integration",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "FortiEDR Administrator — FortiEDR troubleshooting",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "FortiDLP Administrator — FortiDLP fundamentals and deployment (25–35%)",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "FortiDLP Administrator — Data identification and enforcement (20–30%)",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "FortiDLP Administrator — Detection and investigation (15–25%)",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "FortiDLP Administrator — Troubleshooting (15–25%)",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenarios"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 13,
+        "reachable": 11,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Current official exam/track pages, material cited sources, source health and applicable lifecycle/release channels reviewed October 28, 2026. Guide is source-validated; human/community review remains pending. Five blocked source-health requests are account/automated access limits across this batch, not missing/error links. Full semantic audit is recorded separately."
+    },
+    {
+      "id": "nse-6-secure-networking-2026-10-28-source-validation",
+      "exam_code": "NSE-6-SECURE-NETWORKING",
+      "guide_path": "guides/NSE-6-SECURE-NETWORKING-fortinet-nse-6-secure-networking.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/nse-6-secure-networking-official-objectives.txt",
+      "blueprint_snapshot_sha256": "590e6c7dcd2829ce07adf647aa99c5edaa7039cf28bfbe0a4784c8be312151a3",
+      "objective_coverage": [
+        {
+          "objective_group": "FortiManager Administrator — Administration (15–25%)",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "FortiManager Administrator — Device manager (20–30%)",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "FortiManager Administrator — Policy and objects (25–35%)",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "FortiManager Administrator — Advanced configuration (10–20%)",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "FortiManager Administrator — Troubleshooting (20–30%)",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "FortiNAC Administrator — Concepts and initial configuration (10–20%)",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "FortiNAC Administrator — Deployment and provisioning (30–40%)",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "FortiNAC Administrator — Integration (15–25%)",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "FortiNAC Administrator — Network visibility and monitoring (25–35%)",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenarios"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 15,
+        "reachable": 14,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "Current official exam/track pages, material cited sources, source health and applicable lifecycle/release channels reviewed October 28, 2026. Guide is source-validated; human/community review remains pending. Five blocked source-health requests are account/automated access limits across this batch, not missing/error links. Full semantic audit is recorded separately."
     }
   ]
 }

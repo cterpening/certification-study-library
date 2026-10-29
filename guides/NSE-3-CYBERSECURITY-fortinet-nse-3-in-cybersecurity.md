@@ -6,18 +6,19 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-02
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-02
+upcoming_change_checked: 2026-10-28
 ---
 
 # Fortinet NSE 3 in Cybersecurity Study Guide
 
-> **Independent AI-assisted resource — SOURCES + PUBLISHED COURSE OUTLINE CHECKED; HUMAN REVIEW PENDING.** Fortinet's live NSE 3 page, FortiGate Operator course, FortiOS 7.6 documentation, and post-July 2026 requirements were checked September 2, 2026. The [official NSE 3 page](https://training.fortinet.com/local/staticpage/view.php?page=nse_3) is authoritative.
+> **Independent AI-assisted resource — SOURCES + PUBLISHED COURSE OUTLINE CHECKED; HUMAN REVIEW PENDING.** Fortinet's live NSE 3 page, FortiGate Operator course, FortiOS 7.6 documentation, and post-July 2026 requirements were rechecked October 28, 2026. The [official NSE 3 page](https://training.fortinet.com/local/staticpage/view.php?page=nse_3) is authoritative.
 
 **Current baseline:** NSE 3 in Cybersecurity through FortiGate 7.6 Operator and its online end-of-course exam. The eight-hour course lists 20 agenda areas but no weighted assessment domains; this guide does not infer weights.<br>
 **Credential contract:** Complete the FortiGate Operator self-paced course and pass its online exam. Fortinet states the credential is active for two years from course completion. This is a course-based credential, not the NSE 4 Pearson VUE exam.<br>
-**Upcoming change:** No retirement or replacement was announced September 2, 2026. Fortinet's level names and course placement changed July 15, 2026; older FCA/FortiGate Operator pages may describe the former program.<br>
+**Upcoming change:** No additional retirement or replacement was announced as of October 28, 2026. Fortinet's level names and course placement changed July 15, 2026; older FCA/FortiGate Operator pages may describe the former program.<br>
+**October 28, 2026 product note:** The FortiOS 7.6 release channel includes version-specific changes such as Wi-Fi 7 multi-link operation on listed FortiAP models, IPv6 FortiAP management, and 802.1X on a virtual switch in a software switch. Use the [FortiOS 7.6 change log](https://docs.fortinet.com/document/fortigate/7.6.0/new-features/4/change-log) to select examples that match the platform and release; these changes add context to the course's networking, access, and monitoring map, not new NSE 3 objectives.<br>
 **Integrity:** Use the official course assessment and original lab questions. Do not collect, publish, or buy live assessment content.
 
 ## How to use this guide

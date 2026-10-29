@@ -6,18 +6,19 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-02
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-02
+upcoming_change_checked: 2026-10-28
 ---
 
 # Fortinet NSE 2 in Cybersecurity Study Guide
 
-> **Independent AI-assisted resource — SOURCES + PUBLISHED COURSE OUTLINE CHECKED; HUMAN REVIEW PENDING.** Fortinet's live NSE 2 page, current Introduction to the Next Generation Firewall course, program requirements, and current FortiOS documentation were checked September 2, 2026. The [official NSE 2 page](https://training.fortinet.com/local/staticpage/view.php?page=nse_2) is authoritative.
+> **Independent AI-assisted resource — SOURCES + PUBLISHED COURSE OUTLINE CHECKED; HUMAN REVIEW PENDING.** Fortinet's live NSE 2 page, current Introduction to the Next Generation Firewall course, program requirements, and current FortiOS documentation were rechecked October 28, 2026. The [official NSE 2 page](https://training.fortinet.com/local/staticpage/view.php?page=nse_2) is authoritative.
 
 **Current baseline:** NSE 2 in Cybersecurity through the Introduction to the Next Generation Firewall self-paced course and its online end-of-course exam. The official course lists nine topics and an estimated two-hour duration; it does not publish weighted domains.<br>
 **Credential contract:** Complete the current online course and pass its online exam. Fortinet says the credential is active for two years from course completion. This is not a Pearson VUE proctored exam.<br>
-**Upcoming change:** No replacement or retirement was announced September 2, 2026. Technical Introduction to Cybersecurity retired July 15, 2026 and was replaced by this NGFW-focused course; avoid old FCF preparation paths.<br>
+**Upcoming change:** No additional replacement or retirement was announced as of October 28, 2026. Technical Introduction to Cybersecurity retired July 15, 2026 and was replaced by this NGFW-focused course; avoid old FCF preparation paths.<br>
+**October 28, 2026 product note:** FortiOS 7.6.5 documents a two-WAN default SD-WAN configuration on supported models and a hub behavior that suppresses BGP routes when all spoke links are down. Treat these as version- and topology-specific examples for understanding path health, routing, and failure evidence; they are not published NSE 2 objectives. See the [7.6.5 SD-WAN release notes](https://docs.fortinet.com/document/fortigate/7.6.0/sd-wan-new-features/832953/whats-new-in-7-6-5).<br>
 **Integrity:** Use Fortinet's authorized assessment and original practice only. Never reproduce or seek live assessment questions.
 
 ## How to use this guide

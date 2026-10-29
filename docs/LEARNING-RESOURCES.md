@@ -4368,6 +4368,28 @@ These supplemental materials do not resolve the general marketplace-browser gap.
 
 Avoid sources selling recalled or “actual” exam questions and guaranteed passes. Use public objectives, official preparation and independently written practice to identify understanding gaps.
 
+### NSE-6-SASE — Fortinet NSE 6 in SASE
+
+Resource details from the [NSE-6-SASE guide](../guides/NSE-6-SASE-fortinet-nse-6-sase.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective starting set, not a complete list and not a prescription to consume everything. Pick and choose the lane-specific official sources and labs that close measured gaps. Durations are estimates unless publisher-listed.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [NSE 6 in SASE](https://training.fortinet.com/local/staticpage/view.php?page=nse_6_sase) | Public | 20–30 min | Canonical requirements, options, validity, renewal and policies |
+| [FortiClient EMS Administrator exam](https://training.fortinet.com/local/staticpage/view.php?page=forticlient_ems_administrator_exam) | Public | 30–60 min | Current EMS/FortiClient/FortiGate baseline and published objectives |
+| [NSE 6 SASE course library](https://training.fortinet.com/local/library/?category=Certification:NSE_6_SASE) | Free account; labs/ILT may cost | 15–30 hr per selected lane | Locate current official EMS, EDR, or DLP course; verify version/duration after sign-in |
+| [FortiClient 7.4 documentation](https://docs.fortinet.com/product/forticlient/7.4) | Public | 15–30 hr selected | Endpoint/EMS deployment, profiles, telemetry and ZTNA dependencies |
+| [FortiEDR Administrator exam](https://training.fortinet.com/local/staticpage/view.php?page=fortiedr_administrator_exam) | Public | 30–60 min | Current EDR 7.0 objectives, contract and experience guidance |
+| [FortiEDR 7.0 course](https://training.fortinet.com/course/view.php?id=73365) and [documentation](https://docs.fortinet.com/product/fortiedr/7.0) | Free account/public; labs may cost | 20–40 hr plus labs | System, policies, events, forensics, hunting, integrations and troubleshooting |
+| [FortiDLP Administrator exam](https://training.fortinet.com/local/staticpage/view.php?page=fortidlp_administrator_exam) | Public | 45–75 min | Weighted FortiDLP 26 blueprint and official resources |
+| [FortiDLP 26 course](https://training.fortinet.com/course/view.php?id=84334) and [documentation](https://docs.fortinet.com/product/fortidlp) | Free account/public; labs may cost | 25–45 hr plus labs | Current tenant, agent, policy, data, investigation and troubleshooting behavior |
+| [What's New in FortiDLP (H1 2026)](https://video.fortinet.com/products/fortidlp/1.0/what-s-new-in-fortidlp-h1-2026) | Public official video | Not stated | Optional overview of current data-protection features; verify details against documentation |
+| [Fortinet exam policy](https://helpdesk.training.fortinet.com/en/support/solutions/articles/73000672593-exam-policy-recertification) | Public | 20–40 min | Retake, renewal, exam reuse and timing rules |
+| [Fortinet YouTube](https://www.youtube.com/@Fortinet) | Free/YouTube | 4–10 hr selected | Official feature and architecture demonstrations; verify version against docs |
+| O'Reilly, Pluralsight, Udemy, LinkedIn Learning and other courses on endpoint security, EDR hunting, ZTNA, DLP, and incident handling | Subscription/purchase may apply | 10–30 hr selected | No exact current pathway-aligned third-party course was verified; use for concepts and reconcile product claims with Fortinet |
+| Authorized endpoint/tenant lab | Entitlement, partner, or training access may be required | 30–70 hr | Deployment, policy, telemetry, failure, investigation, and rollback evidence |
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

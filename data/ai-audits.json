@@ -4993,7 +4993,7 @@
           "vendor_id": "fortinet",
           "guide_path": "guides/NSE-5-CLOUD-SECURITY-fortinet-nse-5-in-cloud-security.md",
           "guide_content_sha256": "0acad5ea3de233a93833a25ac0fae11024a2ced0455a936ec64d57679930d857",
-          "blueprint_snapshot_path": "data/objective-snapshots/nse-5-cloud-security-official-objectives.txt",
+          "blueprint_snapshot_path": "data/objective-snapshots/archive/nse-5-cloud-security-official-objectives-6053cab73f8ab3fd9cf74db3daf454ce557a22d880c3ec6451688f9d6e5e3060.txt",
           "blueprint_snapshot_sha256": "6053cab73f8ab3fd9cf74db3daf454ce557a22d880c3ec6451688f9d6e5e3060",
           "audited_on": "2026-09-06",
           "verdict": "pass",
@@ -5057,7 +5057,7 @@
           "vendor_id": "fortinet",
           "guide_path": "guides/NSE-5-SASE-fortinet-nse-5-in-sase.md",
           "guide_content_sha256": "6f2be7b63eddc4a7dcb17461ffea0c1c3ca0f55f227960ab5cfaf05ac93c064c",
-          "blueprint_snapshot_path": "data/objective-snapshots/nse-5-sase-official-objectives.txt",
+          "blueprint_snapshot_path": "data/objective-snapshots/archive/nse-5-sase-official-objectives-0873782a14bab76e6f3da5c9f18af642eaec585670d80bd74e6f66f073764729.txt",
           "blueprint_snapshot_sha256": "0873782a14bab76e6f3da5c9f18af642eaec585670d80bd74e6f66f073764729",
           "audited_on": "2026-09-06",
           "verdict": "pass",
@@ -5111,7 +5111,7 @@
           "vendor_id": "fortinet",
           "guide_path": "guides/NSE-5-SECURE-NETWORKING-fortinet-nse-5-in-secure-networking.md",
           "guide_content_sha256": "40e522ac3cb7cbcbbdd4abe4ced33166b44370634dd9cf93888e91a2c3457193",
-          "blueprint_snapshot_path": "data/objective-snapshots/nse-5-secure-networking-official-objectives.txt",
+          "blueprint_snapshot_path": "data/objective-snapshots/archive/nse-5-secure-networking-official-objectives-ea2a12b1c36cfb3b763cc898f518564fd81db4a25d7a8c39f00d4a17c262f916.txt",
           "blueprint_snapshot_sha256": "ea2a12b1c36cfb3b763cc898f518564fd81db4a25d7a8c39f00d4a17c262f916",
           "audited_on": "2026-09-06",
           "verdict": "pass",
@@ -5165,7 +5165,7 @@
           "vendor_id": "fortinet",
           "guide_path": "guides/NSE-6-CLOUD-SECURITY-fortinet-nse-6-cloud-security.md",
           "guide_content_sha256": "bed9942a15d200429bb417bc46e12f868cf95e9cce796c30a9589a93b4f98ce4",
-          "blueprint_snapshot_path": "data/objective-snapshots/nse-6-cloud-security-official-objectives.txt",
+          "blueprint_snapshot_path": "data/objective-snapshots/archive/nse-6-cloud-security-official-objectives-84fbd9fed54da498423bcf8199d37c88e3cc0f28c7066cf99272935bd4fb5857.txt",
           "blueprint_snapshot_sha256": "84fbd9fed54da498423bcf8199d37c88e3cc0f28c7066cf99272935bd4fb5857",
           "audited_on": "2026-09-06",
           "verdict": "pass",
@@ -5219,7 +5219,7 @@
           "vendor_id": "fortinet",
           "guide_path": "guides/NSE-6-SECURE-NETWORKING-fortinet-nse-6-secure-networking.md",
           "guide_content_sha256": "1d892a217ff937b36417a54d99c8b39d4519544990b12a9681d4973854239a7f",
-          "blueprint_snapshot_path": "data/objective-snapshots/nse-6-secure-networking-official-objectives.txt",
+          "blueprint_snapshot_path": "data/objective-snapshots/archive/nse-6-secure-networking-official-objectives-d869cde3cb19fdf2175bdd8ec15b74b9cc82dc8ab35047bfdd47c012a67df9cd.txt",
           "blueprint_snapshot_sha256": "d869cde3cb19fdf2175bdd8ec15b74b9cc82dc8ab35047bfdd47c012a67df9cd",
           "audited_on": "2026-09-06",
           "verdict": "pass",
@@ -18226,6 +18226,622 @@
         "open_findings": 0,
         "closed_findings": 0
       }
+    },
+  {
+    "id": "nonms-refresh-2026-10-28-group-01",
+    "title": "Non-Microsoft refresh group 1 — Fortinet",
+    "rubric_version": 2,
+    "created_on": "2026-10-28",
+    "completed_on": "2026-10-28",
+    "status": "completed",
+    "audit_mode": "read-only",
+    "selection_method": "Ten oldest eligible non-Microsoft guides by last source-validation date, vendor ID, and exam code; all Fortinet.",
+    "rubric_path": "docs/AI-AUDIT.md",
+    "auditor": {
+      "kind": "ai-agent",
+      "label": "codex-independent-semantic-auditor",
+      "independence": "fresh-context",
+      "human_review": false
+    },
+    "exam_codes": [
+      "NSE-1-CYBERSECURITY",
+      "NSE-2-CYBERSECURITY",
+      "NSE-3-CYBERSECURITY",
+      "NSE-5-CLOUD-SECURITY",
+      "NSE-5-SASE",
+      "NSE-5-SECURE-NETWORKING",
+      "NSE-5-SECURITY-OPERATIONS",
+      "NSE-6-CLOUD-SECURITY",
+      "NSE-6-SASE",
+      "NSE-6-SECURE-NETWORKING"
+    ],
+    "results": [
+      {
+        "exam_code": "NSE-1-CYBERSECURITY",
+        "vendor_id": "fortinet",
+        "guide_path": "guides/NSE-1-CYBERSECURITY-fortinet-nse-1-in-cybersecurity.md",
+        "guide_content_sha256": "3de2b392529e3d9354c6713f5f312169545d1602c57200913bb78bb5dc142d8c",
+        "blueprint_snapshot_path": "data/objective-snapshots/nse-1-cybersecurity-official-objectives.txt",
+        "blueprint_snapshot_sha256": "43efb7dbce9188ebb6c2048f955015564de7bec3e07a0530788fe4821284967c",
+        "audited_on": "2026-10-28",
+        "verdict": "pass",
+        "checks": {
+          "official_scope": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "objective_coverage": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "material_claim_support": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "exam_contract_integrity": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "technical_coherence": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "volatility_and_lifecycle": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "lab_safety_and_feasibility": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "readiness_check_quality": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "review_evidence_accuracy": {
+            "status": "passed",
+            "notes": "Current source-validation record is dated 2026-10-28 and binds to the exact packet objective snapshot. The latest review was verified in data/reviews.json."
+          },
+          "duplication_and_contamination": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          }
+        },
+        "findings": [
+          {
+            "id": "f-02",
+            "check": "review_evidence_accuracy",
+            "severity": "low",
+            "category": "review-evidence",
+            "location": "guide § credential/status note (NSE-1/2/3, line 20)",
+            "evidence": "Each guide reports no replacement/retirement as observed on September 2, 2026 while front matter and nearby October note date the guide check October 28. The claim is temporally bounded but its age is easy to miss.",
+            "recommendation": "Refresh the no-change statement to the October 28 check or label the September 2 statement as historical; keep the October 28 evidence distinct.",
+            "status": "resolved",
+            "resolution": "Verified follow-up edit: the no-change statement now says October 28, 2026, matching front matter and recheck evidence."
+          }
+        ],
+        "notes": "Fresh-context, full-guide rubric 2 review. See independent-review.md; human review remains pending."
+      },
+      {
+        "exam_code": "NSE-2-CYBERSECURITY",
+        "vendor_id": "fortinet",
+        "guide_path": "guides/NSE-2-CYBERSECURITY-fortinet-nse-2-in-cybersecurity.md",
+        "guide_content_sha256": "74c1a7bb88e16771c352856246ff136485544fcf58ffd51bc355d12c543f4c7e",
+        "blueprint_snapshot_path": "data/objective-snapshots/nse-2-cybersecurity-official-objectives.txt",
+        "blueprint_snapshot_sha256": "6a8c018a66d7d93364d14a95c107186a205d5d0e7d042ab76cd9989806212ede",
+        "audited_on": "2026-10-28",
+        "verdict": "pass",
+        "checks": {
+          "official_scope": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "objective_coverage": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "material_claim_support": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "exam_contract_integrity": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "technical_coherence": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "volatility_and_lifecycle": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "lab_safety_and_feasibility": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "readiness_check_quality": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "review_evidence_accuracy": {
+            "status": "passed",
+            "notes": "Current source-validation record is dated 2026-10-28 and binds to the exact packet objective snapshot. The latest review was verified in data/reviews.json."
+          },
+          "duplication_and_contamination": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          }
+        },
+        "findings": [
+          {
+            "id": "f-02",
+            "check": "review_evidence_accuracy",
+            "severity": "low",
+            "category": "review-evidence",
+            "location": "guide § credential/status note (NSE-1/2/3, line 20)",
+            "evidence": "Each guide reports no replacement/retirement as observed on September 2, 2026 while front matter and nearby October note date the guide check October 28. The claim is temporally bounded but its age is easy to miss.",
+            "recommendation": "Refresh the no-change statement to the October 28 check or label the September 2 statement as historical; keep the October 28 evidence distinct.",
+            "status": "resolved",
+            "resolution": "Verified follow-up edit: the no-change statement now says October 28, 2026, matching front matter and recheck evidence."
+          }
+        ],
+        "notes": "Fresh-context, full-guide rubric 2 review. See independent-review.md; human review remains pending."
+      },
+      {
+        "exam_code": "NSE-3-CYBERSECURITY",
+        "vendor_id": "fortinet",
+        "guide_path": "guides/NSE-3-CYBERSECURITY-fortinet-nse-3-in-cybersecurity.md",
+        "guide_content_sha256": "8c9cb097279e70c9a6db50c7d081445fa49cfa4c4469296cd76fa508e39e128e",
+        "blueprint_snapshot_path": "data/objective-snapshots/nse-3-cybersecurity-official-objectives.txt",
+        "blueprint_snapshot_sha256": "920241b7c63ba868fa041e18036e1c337e144f4128f166c1e663298890b1eaae",
+        "audited_on": "2026-10-28",
+        "verdict": "pass",
+        "checks": {
+          "official_scope": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "objective_coverage": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "material_claim_support": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "exam_contract_integrity": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "technical_coherence": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "volatility_and_lifecycle": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "lab_safety_and_feasibility": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "readiness_check_quality": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "review_evidence_accuracy": {
+            "status": "passed",
+            "notes": "Current source-validation record is dated 2026-10-28 and binds to the exact packet objective snapshot. The latest review was verified in data/reviews.json."
+          },
+          "duplication_and_contamination": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          }
+        },
+        "findings": [
+          {
+            "id": "f-02",
+            "check": "review_evidence_accuracy",
+            "severity": "low",
+            "category": "review-evidence",
+            "location": "guide § credential/status note (NSE-1/2/3, line 20)",
+            "evidence": "Each guide reports no replacement/retirement as observed on September 2, 2026 while front matter and nearby October note date the guide check October 28. The claim is temporally bounded but its age is easy to miss.",
+            "recommendation": "Refresh the no-change statement to the October 28 check or label the September 2 statement as historical; keep the October 28 evidence distinct.",
+            "status": "resolved",
+            "resolution": "Verified follow-up edit: the no-change statement now says October 28, 2026, matching front matter and recheck evidence."
+          }
+        ],
+        "notes": "Fresh-context, full-guide rubric 2 review. See independent-review.md; human review remains pending."
+      },
+      {
+        "exam_code": "NSE-5-CLOUD-SECURITY",
+        "vendor_id": "fortinet",
+        "guide_path": "guides/NSE-5-CLOUD-SECURITY-fortinet-nse-5-in-cloud-security.md",
+        "guide_content_sha256": "9bed915d4099150052a657045362ed656a1dc998807ae2da6b2497ef1423f5c8",
+        "blueprint_snapshot_path": "data/objective-snapshots/nse-5-cloud-security-official-objectives.txt",
+        "blueprint_snapshot_sha256": "058569ef0acb8d185e004a1b7100f56d5cb3088f369add4bf28d3d2693b61755",
+        "audited_on": "2026-10-28",
+        "verdict": "pass",
+        "checks": {
+          "official_scope": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "objective_coverage": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "material_claim_support": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "exam_contract_integrity": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "technical_coherence": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "volatility_and_lifecycle": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "lab_safety_and_feasibility": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "readiness_check_quality": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "review_evidence_accuracy": {
+            "status": "passed",
+            "notes": "Current source-validation record is dated 2026-10-28 and binds to the exact packet objective snapshot. The latest review was verified in data/reviews.json."
+          },
+          "duplication_and_contamination": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          }
+        },
+        "findings": [],
+        "notes": "Fresh-context, full-guide rubric 2 review. See independent-review.md; human review remains pending."
+      },
+      {
+        "exam_code": "NSE-5-SASE",
+        "vendor_id": "fortinet",
+        "guide_path": "guides/NSE-5-SASE-fortinet-nse-5-in-sase.md",
+        "guide_content_sha256": "5afa87d6025364a8efc91ca85466ae896202f5cbd87c68b2a6eae58474525d3b",
+        "blueprint_snapshot_path": "data/objective-snapshots/nse-5-sase-official-objectives.txt",
+        "blueprint_snapshot_sha256": "5da7fcd14dcb7c1c88edac3c997cc168fd4194e3a385ec1f30b460e5bdeb52cd",
+        "audited_on": "2026-10-28",
+        "verdict": "pass",
+        "checks": {
+          "official_scope": {
+            "status": "passed",
+            "notes": "Live track and exam pages distinguish the NSE 5 SASE route and current FortiSASE/SD-WAN 26 exam from the 7.6 exam's November 14, 2026 final delivery."
+          },
+          "objective_coverage": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "material_claim_support": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "exam_contract_integrity": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "technical_coherence": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "volatility_and_lifecycle": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "lab_safety_and_feasibility": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "readiness_check_quality": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "review_evidence_accuracy": {
+            "status": "passed",
+            "notes": "Current source-validation record is dated 2026-10-28 and binds to the exact packet objective snapshot. The latest review was verified in data/reviews.json."
+          },
+          "duplication_and_contamination": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          }
+        },
+        "findings": [],
+        "notes": "Fresh-context, full-guide rubric 2 review. See independent-review.md; human review remains pending."
+      },
+      {
+        "exam_code": "NSE-5-SECURE-NETWORKING",
+        "vendor_id": "fortinet",
+        "guide_path": "guides/NSE-5-SECURE-NETWORKING-fortinet-nse-5-in-secure-networking.md",
+        "guide_content_sha256": "501c57a859e6d03dd77a7d9cee58309473a56bbf152be4d05c3b456afdf3dcc5",
+        "blueprint_snapshot_path": "data/objective-snapshots/nse-5-secure-networking-official-objectives.txt",
+        "blueprint_snapshot_sha256": "4e484d47f37076fb725c46a4361b7149b6f80b0a962f240f06da53c2b7f344ee",
+        "audited_on": "2026-10-28",
+        "verdict": "pass",
+        "checks": {
+          "official_scope": {
+            "status": "passed",
+            "notes": "Live track page and SD-WAN 7.6 exam page confirm SD-WAN 7.6 remains a separate NSE 5 Secure Networking option."
+          },
+          "objective_coverage": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "material_claim_support": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "exam_contract_integrity": {
+            "status": "passed",
+            "notes": "The current route-readiness text identifies SD-WAN 7.6 as available and directs candidates to the live exam contract."
+          },
+          "technical_coherence": {
+            "status": "passed",
+            "notes": "The route selector, §4, integrated scenario, and answer guide now consistently describe the available SD-WAN 7.6 route."
+          },
+          "volatility_and_lifecycle": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "lab_safety_and_feasibility": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "readiness_check_quality": {
+            "status": "passed",
+            "notes": "Readiness check 3 asks about current routes and answer 3 lists all three. Check 30 asks what to verify before booking and answer 30 provides aligned steps."
+          },
+          "review_evidence_accuracy": {
+            "status": "passed",
+            "notes": "Current source-validation record is dated 2026-10-28 and binds to the exact packet objective snapshot. The latest review was verified in data/reviews.json."
+          },
+          "duplication_and_contamination": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          }
+        },
+        "findings": [],
+        "notes": "Fresh-context, full-guide rubric 2 review. See independent-review.md; human review remains pending."
+      },
+      {
+        "exam_code": "NSE-5-SECURITY-OPERATIONS",
+        "vendor_id": "fortinet",
+        "guide_path": "guides/NSE-5-SECURITY-OPERATIONS-fortinet-nse-5-in-security-operations.md",
+        "guide_content_sha256": "f9387438f6ef596a148e00028af1e9a678b1e024f5a629dadd346cfc048ef2ce",
+        "blueprint_snapshot_path": "data/objective-snapshots/nse-5-security-operations-official-objectives.txt",
+        "blueprint_snapshot_sha256": "f78670ac5a8264c35f041c6505263af3c1d6037302f66ce33bbf225a8b0c96f7",
+        "audited_on": "2026-10-28",
+        "verdict": "pass",
+        "checks": {
+          "official_scope": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "objective_coverage": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "material_claim_support": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "exam_contract_integrity": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "technical_coherence": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "volatility_and_lifecycle": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "lab_safety_and_feasibility": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "readiness_check_quality": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "review_evidence_accuracy": {
+            "status": "passed",
+            "notes": "Current source-validation record is dated 2026-10-28 and binds to the exact packet objective snapshot. The latest review was verified in data/reviews.json."
+          },
+          "duplication_and_contamination": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          }
+        },
+        "findings": [],
+        "notes": "Fresh-context, full-guide rubric 2 review. See independent-review.md; human review remains pending."
+      },
+      {
+        "exam_code": "NSE-6-CLOUD-SECURITY",
+        "vendor_id": "fortinet",
+        "guide_path": "guides/NSE-6-CLOUD-SECURITY-fortinet-nse-6-cloud-security.md",
+        "guide_content_sha256": "404241d999befff8d47136d1b3023eb300e703730c4e62d19774d1b5429b8d5f",
+        "blueprint_snapshot_path": "data/objective-snapshots/nse-6-cloud-security-official-objectives.txt",
+        "blueprint_snapshot_sha256": "a8935c5b12491b416808caecccd7a584c8196fe004fc81aab36fd4683504c13d",
+        "audited_on": "2026-10-28",
+        "verdict": "pass",
+        "checks": {
+          "official_scope": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "objective_coverage": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "material_claim_support": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "exam_contract_integrity": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "technical_coherence": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "volatility_and_lifecycle": {
+            "status": "passed",
+            "notes": "Direct FortiMail WorkSpace 26 exam page says Coming Soon; detailed contract/objectives are not published."
+          },
+          "lab_safety_and_feasibility": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "readiness_check_quality": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "review_evidence_accuracy": {
+            "status": "passed",
+            "notes": "Current source-validation record is dated 2026-10-28 and binds to the exact packet objective snapshot. The latest review was verified in data/reviews.json."
+          },
+          "duplication_and_contamination": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          }
+        },
+        "findings": [],
+        "notes": "Fresh-context, full-guide rubric 2 review. See independent-review.md; human review remains pending."
+      },
+      {
+        "exam_code": "NSE-6-SASE",
+        "vendor_id": "fortinet",
+        "guide_path": "guides/NSE-6-SASE-fortinet-nse-6-sase.md",
+        "guide_content_sha256": "da642f54845e4d5719cb8fe70f6ad363e4577c86f2b7dd0da142a098d16636bf",
+        "blueprint_snapshot_path": "data/objective-snapshots/nse-6-sase-official-objectives.txt",
+        "blueprint_snapshot_sha256": "ba1e06514a146c4221881b88534a5d0df0ab56482d0207b0777f2996c7078249",
+        "audited_on": "2026-10-28",
+        "verdict": "pass",
+        "checks": {
+          "official_scope": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "objective_coverage": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "material_claim_support": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "exam_contract_integrity": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "technical_coherence": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "volatility_and_lifecycle": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "lab_safety_and_feasibility": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "readiness_check_quality": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "review_evidence_accuracy": {
+            "status": "passed",
+            "notes": "Current source-validation record is dated 2026-10-28 and binds to the exact packet objective snapshot. The latest review was verified in data/reviews.json."
+          },
+          "duplication_and_contamination": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          }
+        },
+        "findings": [],
+        "notes": "Fresh-context, full-guide rubric 2 review. See independent-review.md; human review remains pending."
+      },
+      {
+        "exam_code": "NSE-6-SECURE-NETWORKING",
+        "vendor_id": "fortinet",
+        "guide_path": "guides/NSE-6-SECURE-NETWORKING-fortinet-nse-6-secure-networking.md",
+        "guide_content_sha256": "f7c94c3bd59637d84668a3cc7e076a63d259754b73bf8629885f26d4f5bf1836",
+        "blueprint_snapshot_path": "data/objective-snapshots/nse-6-secure-networking-official-objectives.txt",
+        "blueprint_snapshot_sha256": "590e6c7dcd2829ce07adf647aa99c5edaa7039cf28bfbe0a4784c8be312151a3",
+        "audited_on": "2026-10-28",
+        "verdict": "pass",
+        "checks": {
+          "official_scope": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "objective_coverage": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "material_claim_support": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "exam_contract_integrity": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "technical_coherence": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "volatility_and_lifecycle": {
+            "status": "passed",
+            "notes": "Direct FortiVoice and FortiAnalyzer Administrator pages say Coming soon; no detailed contract/objectives are published."
+          },
+          "lab_safety_and_feasibility": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "readiness_check_quality": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          },
+          "review_evidence_accuracy": {
+            "status": "passed",
+            "notes": "Current source-validation record is dated 2026-10-28 and binds to the exact packet objective snapshot. The latest review was verified in data/reviews.json."
+          },
+          "duplication_and_contamination": {
+            "status": "passed",
+            "notes": "Read complete guide, current objective/status snapshot, exam row, seed, latest source review, cited-source registry and health, and relevant opened primary sources. No material content defect found in this check."
+          }
+        },
+        "findings": [],
+        "notes": "Fresh-context, full-guide rubric 2 review. See independent-review.md; human review remains pending."
+      }
+    ],
+    "summary": {
+      "guide_count": 10,
+      "pass": 10,
+      "pass_with_notes": 0,
+      "fix_required": 0,
+      "blocked": 0,
+      "open_findings": 0,
+      "closed_findings": 3
     }
+  }
   ]
 }

@@ -6,18 +6,19 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-02
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-02
+upcoming_change_checked: 2026-10-28
 ---
 
 # Fortinet NSE 1 in Cybersecurity Study Guide
 
-> **Independent AI-assisted resource — SOURCES + PUBLISHED COURSE OUTLINE CHECKED; HUMAN REVIEW PENDING.** Fortinet's live NSE 1 page, current Cybersecurity and Cloud Fundamentals course page, post-July 2026 program requirements, and selected public standards were checked September 2, 2026. The [official NSE 1 page](https://training.fortinet.com/local/staticpage/view.php?page=nse_1) is authoritative.
+> **Independent AI-assisted resource — SOURCES + PUBLISHED COURSE OUTLINE CHECKED; HUMAN REVIEW PENDING.** Fortinet's live NSE 1 page, current Cybersecurity and Cloud Fundamentals course page, post-July 2026 program requirements, and selected public standards were rechecked October 28, 2026. The [official NSE 1 page](https://training.fortinet.com/local/staticpage/view.php?page=nse_1) is authoritative.
 
 **Current baseline:** NSE 1 in Cybersecurity through the Cybersecurity and Cloud Fundamentals self-paced course and its online end-of-course exam. Fortinet publishes course topics, not weighted exam domains; this guide does not invent weights.<br>
 **Credential contract:** Complete the current online course and pass the online exam presented at its end. Fortinet lists an estimated 11-hour course duration and a two-year credential term. This is not a Pearson VUE proctored exam.<br>
-**Upcoming change:** No replacement or retirement was announced on the live pages September 2, 2026. The former Introduction to the Threat Landscape and Getting Started in Cybersecurity routes retired July 15, 2026; use the new Cybersecurity and Cloud Fundamentals baseline.<br>
+**Upcoming change:** No additional replacement or retirement was announced on the live pages as of October 28, 2026. The former Introduction to the Threat Landscape and Getting Started in Cybersecurity routes retired July 15, 2026; use the new Cybersecurity and Cloud Fundamentals baseline.<br>
+**October 28, 2026 course check:** The official library lists Cybersecurity and Cloud Fundamentals 1.0 Self-Paced as updated July 14, 2026. Its published outline remains the syllabus basis here; Fortinet publishes no weighted domain breakdown, so this guide adds no exam weights. Course-page duration and assessment access may require a Fortinet account.<br>
 **Integrity:** Use the authorized end-of-course assessment and original practice. Do not copy, solicit, or redistribute live assessment content.
 
 ## How to use this guide

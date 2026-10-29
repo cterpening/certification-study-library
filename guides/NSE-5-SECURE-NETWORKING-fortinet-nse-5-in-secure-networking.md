@@ -6,19 +6,19 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-02
+last_verified: 2026-10-28
 upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-02
+upcoming_change_checked: 2026-10-28
 ---
 
 # Fortinet NSE 5 in Secure Networking Study Guide
 
-> **Independent AI-assisted resource — SOURCES + CURRENT PATH REQUIREMENTS CHECKED; HUMAN REVIEW PENDING.** Fortinet's live track page, current FortiSwitch and Secure Wireless LAN exam pages, Fortinet release notices, course library, and product documentation were checked September 2, 2026. The [official track page](https://training.fortinet.com/local/staticpage/view.php?page=nse_5_secure_networking) and the chosen exam page are authoritative.
+> **Independent AI-assisted resource — SOURCES + CURRENT PATH REQUIREMENTS CHECKED; HUMAN REVIEW PENDING.** Fortinet's live track page, current FortiSwitch, Secure Wireless LAN, and SD-WAN exam pages, Fortinet release notices, course library, and product documentation were rechecked October 28, 2026. The [official track page](https://training.fortinet.com/local/staticpage/view.php?page=nse_5_secure_networking) and the chosen exam page are authoritative.
 
-**Current baseline:** This is a certification track, not one exam. Hold active NSE 4 FortiOS and pass **one** eligible NSE 5 Secure Networking exam within two years. Current listed routes are FortiSwitch Administrator, Secure Wireless LAN Administrator, and a forthcoming SD-WAN Core Administrator route.<br>
-**Current available exams:** FortiSwitch 7.6 Administrator (70 minutes, 35–40 questions, English/Japanese) and Secure Wireless LAN 7.6 Administrator (70 minutes, 30–40 questions, English). Fortinet does not publish weights for either current route.<br>
+**Current baseline:** This is a certification track, not one exam. Hold active NSE 4 FortiOS and pass **one** eligible NSE 5 Secure Networking exam within two years. Current routes are FortiSwitch 7.6 Administrator, Secure Wireless LAN 7.6 Administrator, or SD-WAN 7.6 Core Administrator.<br>
+**Current available exams:** FortiSwitch 7.6 Administrator (70 minutes, 35–40 questions, English/Japanese), Secure Wireless LAN 7.6 Administrator (70 minutes, 30–40 questions, English), and SD-WAN 7.6 Core Administrator (60–70 minutes, 30–35 questions, English). Fortinet does not publish weights for the FortiSwitch or Secure Wireless routes; the SD-WAN page publishes three weighted groups.<br>
 **Credential contract:** NSE 4 must be active when requirements are fulfilled. The credential is active for two years from the NSE 5 exam date. Retakes of failed proctored exams require 15 days; a passed exam cannot be retaken and cannot be reused to renew the same credential.<br>
-**Upcoming change:** The track page says SD-WAN Core Administrator will be available in Q3 2026 but did not yet provide a live standalone exam contract September 2. Secure Wireless LAN 7.4 reached its August 31, 2026 last-delivery date; use 7.6. Recheck before choosing a route.<br>
+**October 28, 2026 pathway check:** SD-WAN 7.6 Core Administrator is now an available route. Secure Wireless LAN 7.4 reached its August 31, 2026 final-delivery date; use 7.6. The Fortinet-owned Secure Wireless LAN 7.6 course materials page was updated April 15, 2026.<br>
 **Integrity:** Pick and prepare for one current route. Do not combine its topics into a fictional weighted exam and do not use recalled questions.
 
 > **September 17, 2026 contract check:** Current official exam and track pages were inspected; the exam times and prerequisite statements above reflect that check. Historical objective snapshots and full technical-review dates remain unchanged. See the [exam validation report](../docs/research/2026-09-17-exam-validation.md).
@@ -35,11 +35,15 @@ First verify that NSE 4 will remain active through the NSE 5 exam date. Then sel
 |---|---|---|---|
 | FortiSwitch 7.6 Administrator | Available | FortiLink/standalone switching, VLAN, STP, QoS, L2 security, operations | [Exam page](https://training.fortinet.com/local/staticpage/view.php?page=fortiswitch_administrator_exam) |
 | Secure Wireless LAN 7.6 Administrator | Available | FortiAP, FortiGate controller, FortiEdge Cloud, RF/security/analytics | [Exam page](https://training.fortinet.com/local/staticpage/view.php?page=secure_wireless_lan_administrator_exam) |
-| SD-WAN Core Administrator | Announced for Q3 2026 | FortiGate SD-WAN members, SLA, rules, routing, sessions | [Track page](https://training.fortinet.com/local/staticpage/view.php?page=nse_5_secure_networking); wait for live exam page |
+| SD-WAN 7.6 Core Administrator | Available | Architecture, health checks, traffic control/routing, centralized management, visibility and troubleshooting | [Exam page](https://training.fortinet.com/local/staticpage/view.php?page=sd-wan_core_administrator_exam) |
+
+The SD-WAN route publishes Architecture and Concept (15–25%), Traffic Control/Rules/Routing (35–45%), and Centralized Management/Visibility/Troubleshooting (35–45%). These are route-specific ranges; do not blend them with the other two exam paths.
 
 ## 1. Common secure-networking foundations
 
 Maintain an inventory of sites, switches, access points, controllers/managers, FortiGate interfaces, firmware, licenses, owners, management paths, uplinks, VLANs/subnets, routing, authentication, certificates, logs, and dependencies. Establish supported version combinations before deployment or upgrade.
+
+**Version-specific wireless example:** FortiAP 7.6.3 documents Wi-Fi 7 multi-link operation and preamble puncturing on selected models, with country, regulatory, and hardware support boundaries. Use the [FortiAP 7.6.3 release notes](https://docs.fortinet.com/document/fortiap/7.6.3/fortiap-release-notes/277928/new-features-or-enhancements) to verify eligibility before using these as lab examples; they are not additional exam objectives.
 
 Separate management, control, and data planes. A reachable management GUI does not prove endpoint traffic, FortiLink, CAPWAP, VLAN trunking, routing, authentication, or inspection. Diagram discovery, authorization, provisioning, configuration, telemetry, and failure behavior for the chosen platform.
 
@@ -93,11 +97,11 @@ Troubleshoot in sequence: client/radio, association, authentication, address/DNS
 
 ## 4. SD-WAN route readiness
 
-Until Fortinet publishes the standalone exam contract, use the track page only to plan. Core skills likely align with the official current SD-WAN course: members and zones, active/passive performance SLAs, rule matching and strategies, routing, sessions, direct internet access, monitoring, and failure—but only a future live exam page can define assessed scope.
+Use the live SD-WAN 7.6 Core Administrator page for its published exam contract and weighted groups. The official SD-WAN course remains useful for members and zones, active/passive performance SLAs, rule matching and strategies, routing, sessions, direct internet access, monitoring, and failure; keep study aligned to the exam page's current outline.
 
 For real deployments, distinguish underlay and overlay, routing eligibility, health measurement, SD-WAN rule, firewall policy/NAT, session persistence, and return path. Validate loss/latency/jitter and application reachability, stable failover/failback, and visibility.
 
-**Related item: announced is not available.** A course or purchasing SKU is not proof that an exam is schedulable or eligible. Verify the live track and exam page immediately before booking.
+**Availability check:** SD-WAN 7.6 Core Administrator is listed as an available route on the live track and exam pages as of October 28, 2026. Verify current scheduling and eligibility before booking.
 
 ## Integrated scenarios
 
@@ -111,7 +115,7 @@ Plan measured RF coverage/capacity, AP profiles, enterprise and guest SSIDs, ide
 
 ### New SD-WAN candidate path
 
-Build two lab transports, relevant health probes, members/zones, routing and a business rule. Prove preferred path, brownout, outage, session behavior, return symmetry, and stable recovery while noting that the exam route remains announced until its page is live.
+Build two lab transports, relevant health probes, members/zones, routing and a business rule. Prove preferred path, brownout, outage, session behavior, return symmetry, and stable recovery. Use the SD-WAN 7.6 route's published exam outline to direct study.
 
 ## Hands-on labs
 
@@ -130,7 +134,7 @@ Build two lab transports, relevant health probes, members/zones, routing and a b
 
 1. What exact combination earns NSE 5 Secure Networking?
 2. Must candidates pass every listed NSE 5 route exam?
-3. Which routes were available September 2, 2026?
+3. Which exam routes are currently available in the NSE 5 Secure Networking track?
 4. Why must the chosen exam page drive study scope?
 5. What belongs in a secure-network inventory?
 6. How do management, control, and data planes differ?
@@ -157,7 +161,7 @@ Build two lab transports, relevant health probes, members/zones, routing and a b
 27. How do SD-WAN routing and steering differ?
 28. What makes a performance SLA application-relevant?
 29. Why must failback stability be tested?
-30. Why is the SD-WAN route not yet a firm exam baseline?
+30. What should a candidate verify before booking the SD-WAN 7.6 exam?
 31. What changed for Secure Wireless LAN 7.4?
 32. What is the NSE 5 proctored-exam retake rule?
 33. What does exam reuse mean for renewal?
@@ -168,7 +172,7 @@ Build two lab transports, relevant health probes, members/zones, routing and a b
 
 1. An active NSE 4 FortiOS plus one eligible proctored NSE 5 Secure Networking exam within two years.
 2. No. The live track requires one listed route exam, not all of them.
-3. FortiSwitch 7.6 and Secure Wireless LAN 7.6; SD-WAN Core was announced for Q3 without a standalone live contract.
+3. FortiSwitch 7.6, Secure Wireless LAN 7.6, and SD-WAN 7.6 Core Administrator; each is a currently listed route, with different exam contracts.
 4. Each route has different products, versions, topics, question count, time, and experience assumptions.
 5. Devices/sites, models/versions, ownership, management, links, VLANs/routes, trust, identities, licenses, logs, dependencies, backup, and support.
 6. Management administers, control establishes topology/state, and data carries user/application traffic.
@@ -195,7 +199,7 @@ Build two lab transports, relevant health probes, members/zones, routing and a b
 27. Routing supplies eligible reachability; SD-WAN rules choose paths using source/destination/application/business and health context.
 28. Representative target/path, relevant loss/latency/jitter, stable thresholds, probe source, frequency, and failure meaning.
 29. A recovered but unstable path can cause flapping, loss, asymmetry, or repeated session moves.
-30. Fortinet had announced it for Q3 but had not published a standalone schedulable exam page on the verification date.
+30. Confirm the live route remains available, then verify its current schedule, language, delivery, prerequisites, and published topic groups.
 31. Its last delivery date was August 31, 2026; the current route is 7.6.
 32. Wait 15 days after a failed exam; a passed exam cannot be retaken.
 33. Once counted for the certification, the same exam cannot simply be reused to renew that certification.
@@ -211,11 +215,12 @@ This is a selective starting set, not a complete list and not a prescription to 
 | [NSE 5 Secure Networking track](https://training.fortinet.com/local/staticpage/view.php?page=nse_5_secure_networking) | Public | 20–30 min | Current prerequisites, eligible routes, validity, and renewal |
 | [FortiSwitch exam page](https://training.fortinet.com/local/staticpage/view.php?page=fortiswitch_administrator_exam) | Public | 30–45 min | Exact 7.6 route contract and published topic checklist |
 | [FortiSwitch 7.6 course](https://training.fortinet.com/local/staticpage/view.php?page=library_fortiswitch-administrator) | Free account; labs may cost | 12–20 hr estimate | Official route instruction and hands-on labs; verify displayed duration |
-| [FortiSwitch 7.6 documentation](https://docs.fortinet.com/product/fortiswitch/7.6.0) | Public | 15–30 hr selected | FortiLink/standalone, VLAN, STP, security, operations, CLI, release details |
+| [FortiSwitchOS 7.6.2 release notes](https://docs.fortinet.com/document/fortiswitch/7.6.2/fortiswitchos-administration-guide/35890/what-s-new-in-fortiswitchos-7-6-2) | Public | 15–30 hr selected | FortiLink/standalone, VLAN, STP, security, operations, CLI, and version-specific release details |
 | [Secure Wireless LAN exam page](https://training.fortinet.com/local/staticpage/view.php?page=secure_wireless_lan_administrator_exam) | Public | 30–45 min | Exact current 7.6 route contract and topic checklist |
 | [Secure Wireless LAN course](https://training.fortinet.com/local/staticpage/view.php?page=library_secure-wireless-lan-administrator) | Free account; labs may vary | 10–18 hr estimate | Official FortiAP/controller/FortiEdge Cloud preparation |
 | [FortiAP/FortiWiFi 7.6 documentation](https://docs.fortinet.com/product/fortiap/7.6) | Public | 15–30 hr selected | RF, controller, AP profiles, access, monitoring, and diagnostics |
-| [SD-WAN Core Operations course](https://training.fortinet.com/local/staticpage/view.php?page=library_sd-wan-core-operations-administrator) | Free account; labs/ILT may cost | 12 hr lecture+lab listed | Skills preparation while waiting for the standalone exam contract |
+| [SD-WAN 7.6 Core Administrator exam](https://training.fortinet.com/local/staticpage/view.php?page=sd-wan_core_administrator_exam) | Public | 30–45 min | Current route contract and three weighted topic groups |
+| [SD-WAN Core Operations course](https://training.fortinet.com/local/staticpage/view.php?page=library_sd-wan-core-operations-administrator) | Free account; labs/ILT may cost | 12 hr lecture+lab listed | Skills preparation for the current SD-WAN route |
 | [FortiOS 7.6 SD-WAN documentation](https://docs.fortinet.com/sdwan) | Public | 10–20 hr selected | Members, SLA, routing, rules, sessions, design, and troubleshooting |
 | [Fortinet exam release notices](https://helpdesk.training.fortinet.com/support/solutions/articles/73000659982-nse-exam-release-notices-new-and-discontinued-exams) | Public | 15–20 min | Releases and last-delivery dates before booking |
 | [Fortinet YouTube](https://www.youtube.com/@Fortinet) | Free/YouTube | 4–10 hr selected | Official switching, wireless, and SD-WAN demonstrations; verify versions |

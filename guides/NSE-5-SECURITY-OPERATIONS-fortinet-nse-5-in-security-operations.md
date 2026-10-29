@@ -6,19 +6,20 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-02
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-02
+upcoming_change_checked: 2026-10-28
 ---
 
 # Fortinet NSE 5 in Security Operations Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Fortinet's live NSE 5 Security Operations track, FortiAnalyzer 7.6 Analyst exam, Analyst and Administrator courses, and current FortiAnalyzer documentation were checked September 2, 2026. The [exam page](https://training.fortinet.com/local/staticpage/view.php?page=fortianalyzer_analyst_exam) is authoritative for scope.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Fortinet's live NSE 5 Security Operations track, FortiAnalyzer 7.6 Analyst exam, Analyst and Administrator courses, and current FortiAnalyzer documentation were rechecked October 28, 2026. The [exam page](https://training.fortinet.com/local/staticpage/view.php?page=fortianalyzer_analyst_exam) is authoritative for scope.
 
 **Current baseline:** Fortinet NSE 5 - FortiAnalyzer 7.6 Analyst. The official page publishes four unweighted groups: Features and concepts; Log Analysis; SOC operation and automation; Reports. Do not invent weights.<br>
 **Exam contract:** 30–35 questions, 65 minutes, English and Japanese, FortiAnalyzer 7.6, pass/fail score report, multiple-choice and drag-and-drop under Fortinet's proctored-exam rules. Fortinet recommends six months to one year of FortiGate and FortiAnalyzer hands-on experience.<br>
 **Credential contract:** Hold active NSE 4 FortiOS and pass the proctored FortiAnalyzer Analyst exam within two years. The track page says the credential is active for two years from completion of the second requirement. Recheck renewal and exam-reuse rules before booking.<br>
-**Upcoming change:** No replacement or retirement was announced September 2, 2026. The track page currently lists only FortiAnalyzer Analyst despite using "one of" in some requirement text; do not assume retired FortiSandbox or re-leveled exams remain eligible.<br>
+**Upcoming change:** No replacement or retirement was announced October 28, 2026. The track page currently lists only FortiAnalyzer Analyst despite using "one of" in some requirement text; do not assume retired FortiSandbox or re-leveled exams remain eligible.<br>
+**October 28, 2026 operations note:** FortiAnalyzer 7.6.7 adds a FortiSOC Connector for log forwarding with root-ADOM and token requirements, plus new anomaly-login and FortiDeceptor incident reports. Use this as an optional integration and report-triage example; it is not an NSE 5 requirement. Verify token age, access, and product version in the [FortiAnalyzer 7.6.7 notes](https://docs.fortinet.com/document/fortianalyzer/7.6.0/new-features/893972/7-6-7) before configuring a connector.<br>
 **Integrity:** Use official samples only for scope and format. All checks here are original; reject leaked or recalled questions and handle logs as potentially sensitive evidence.
 
 ## How to use this guide
@@ -223,7 +224,7 @@ This is a selective starting set, not a complete list and not a prescription to 
 | [FortiAnalyzer 7.6 Analyst exam](https://training.fortinet.com/local/staticpage/view.php?page=fortianalyzer_analyst_exam) | Public | 30–45 min | Canonical contract, tasks, experience, and official resources |
 | [FortiAnalyzer 7.6 Analyst course](https://training.fortinet.com/local/staticpage/view.php?page=library_fortianalyzer-analyst) | Free account; labs/ILT may cost | 11 hr lecture+lab listed | Official log analysis, events/incidents, FortiAI, reports, and playbooks |
 | [FortiAnalyzer 7.6 Administrator course](https://training.fortinet.com/local/staticpage/view.php?page=library_fortianalyzer-administrator) | Free account; labs/ILT may cost | 7 hr lecture+lab listed | Prerequisite deployment/log health knowledge; not the Analyst blueprint |
-| [FortiAnalyzer 7.6 documentation](https://docs.fortinet.com/product/fortianalyzer/7.6.1) | Public | 20–40 hr selected | Admin, dataset/SQL, normalization, SOC automation, architecture, and release references |
+| [FortiAnalyzer 7.6.7 release notes](https://docs.fortinet.com/document/fortianalyzer/7.6.0/new-features/893972/7-6-7) | Public | 20–40 hr selected | Current release deltas, analytics/report updates, and version-specific operational changes |
 | [MITRE ATT&CK](https://attack.mitre.org/) | Public | 4–10 hr selected | Technique-driven hunting and incident context; not product authority |
 | [NIST SP 800-61 Rev. 3](https://csrc.nist.gov/pubs/sp/800/61/r3/final) | Public | 3–6 hr selected | Vendor-neutral incident-response lifecycle and coordination |
 | [Fortinet YouTube](https://www.youtube.com/@Fortinet) | Free/YouTube | 4–10 hr selected | Official SOC, FortiAnalyzer, Fabric, and automation demonstrations; verify version |
