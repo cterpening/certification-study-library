@@ -39505,6 +39505,74 @@
         "missing_or_error": 0
       },
       "notes": "October 29, 2026 repair review: reopened the current four-page official exam PDF and issuer certification page; confirmed the five weighted domains and 28 tool-list entries remain unchanged from the existing objective snapshot. Expanded the guide with individual role, selection, failure-boundary and learner-check mappings for all listed tools. The official Antigravity Workbench CLI page was directly opened and read; local automated fetch timed out, so its source-health state remains blocked and the guide labels the preview volatile. Forty-eight of 49 guide links have healthy automated evidence; one access timeout is reconciled to the successful direct official-page read. No product behavior was executed. Fresh-context independent audit is recorded separately."
+    },
+    {
+      "id": "az-401-2026-10-29-source-validation",
+      "exam_code": "AZ-401",
+      "guide_path": "guides/AZ-401-designing-implementing-microsoft-agentic-devops-solutions.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-29",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/az-401-official-objectives.txt",
+      "blueprint_snapshot_sha256": "b74fe4beb2509bb4fd6a13d19783c0ad97ad102abe7bda0d6eefae429dbe4337",
+      "objective_coverage": [
+        {
+          "objective_group": "Design and implement processes and communications (15–20%)",
+          "guide_sections": [
+            "Objective map",
+            "1. Design and implement processes and communications",
+            "Cross-platform feature delivery",
+            "Labs 1–2"
+          ]
+        },
+        {
+          "objective_group": "Design and implement a source control strategy (10–15%)",
+          "guide_sections": [
+            "2. Design and implement a source control strategy",
+            "Agent-assisted pull request",
+            "Lab 3"
+          ]
+        },
+        {
+          "objective_group": "Design and implement build and release pipelines (35–40%)",
+          "guide_sections": [
+            "3. Design and implement build and release pipelines",
+            "Cross-platform feature delivery",
+            "Progressive deployment scenario",
+            "Labs 4–6 and pipeline inspection sequence"
+          ]
+        },
+        {
+          "objective_group": "Design and implement a security and compliance plan (15–20%)",
+          "guide_sections": [
+            "4. Design and implement a security and compliance plan",
+            "Agent-assisted pull request",
+            "Identity decision check and lab 7"
+          ]
+        },
+        {
+          "objective_group": "Implement an instrumentation strategy (15–20%)",
+          "guide_sections": [
+            "5. Implement an instrumentation strategy",
+            "Progressive deployment and SRE investigation",
+            "GitHub Insights and agent-log coverage; lab 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 49,
+        "reachable": 49,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "Opened the current dedicated AZ-401 exam page, credential page and full AZ-401 study-guide objective map on October 29, 2026. The study guide lists five weighted domains and was last updated October 13, 2026; its full objective set is preserved in the bound snapshot. The credential page repeats unrelated AB-100 objectives, so scope uses the AZ-401-specific exam page and study guide that agree. The exam remains beta; observed page shows English, score 700 and delayed beta results, with no formal prerequisite credential, duration or item count identified; the exam page says pricing varies by country or region without giving the local amount. Added a complete guide with domain-level mapping, technical explanations, failure/decision guidance, safe proposed labs, original checks and evaluated resource options. 49 unique guide links are cataloged and source-health checked: 49 reachable, none blocked or broken. Objective-specific practice now includes artifact feeds/views, test-result and coverage publication, reusable pipeline elements, runner diagnostics, token distinctions, GHAS platform coverage, Git recovery commands, Copilot review controls, GitHub Insights limits, and Copilot agent-log surfaces. No product/cloud execution, exam-session material or human review is claimed."
     }
 ]
 }

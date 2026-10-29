@@ -29370,6 +29370,466 @@
         "open_findings": 1,
         "closed_findings": 2
       }
+    },
+    {
+      "id": "az401-independent-audit-2026-10-29-initial",
+      "title": "AZ-401 independent objective-coverage audit",
+      "rubric_version": 2,
+      "created_on": "2026-10-29",
+      "completed_on": "2026-10-29",
+      "status": "completed",
+      "audit_mode": "read-only",
+      "selection_method": "Explicit fresh-context AZ-401 guide audit and subsequent repair disposition.",
+      "rubric_path": "docs/AI-AUDIT.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "label": "Codex independent semantic auditor",
+        "independence": "fresh-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "AZ-401"
+      ],
+      "results": [
+        {
+          "exam_code": "AZ-401",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AZ-401-designing-implementing-microsoft-agentic-devops-solutions.md",
+          "guide_content_sha256": "a24dec585b25ca57dd51aee3ec9071e42510d48359eb3fb542b1987b7e058c4d",
+          "blueprint_snapshot_path": "data/objective-snapshots/az-401-official-objectives.txt",
+          "blueprint_snapshot_sha256": "b74fe4beb2509bb4fd6a13d19783c0ad97ad102abe7bda0d6eefae429dbe4337",
+          "audited_on": "2026-10-29",
+          "verdict": "fix-required",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The dedicated AZ-401 exam page and study guide identify the beta Agentic DevOps Engineer Expert credential and the same five weighted DevOps domains. The credential page's AB-100 block and unrelated architect prose are disclosed and excluded from scope."
+            },
+            "objective_coverage": {
+              "status": "failed",
+              "notes": "All five domains are represented, but multiple specific published objectives receive only broad mentions or general decision advice rather than substantive, findable treatment. See finding az401-depth-gaps."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "The official exam contract is sourced to the dedicated AZ-401 pages. Technical claims have nearby first-party references; all 34 unique guide links match catalog entries with source-health status ok. Checked health establishes reachability, not technical correctness."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Beta status, English, score 700, delayed beta scoring and no retirement date match the opened exam page. The guide does not invent duration, question count, price or prerequisite certification, and labels changing observations for recheck."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide consistently distinguishes identity from authorization, pipeline YAML from protected-resource controls, deployment rollback from database recovery, and AI-generated hypotheses from verified operational evidence. Opened GitHub Agentic Workflows, Observability Agent and Azure SRE Agent documentation support the central descriptions."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Beta, Preview, product stages, client support, plans, regions, identity federation and changing product interfaces are marked VERIFY CURRENT or explicitly bounded."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Labs are proposed and unexecuted, use synthetic or disposable resources, prohibit production deployment and real credentials, call out cost/budget/cleanup, and provide a tabletop substitute."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "The 25 questions are independently phrased, scenario/reasoning oriented, and their answers align with the guide's safety and technical guidance. No recalled exam material appears."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The objective snapshot raw-byte hash and normalized guide-content hash match this review. The cited-link count is 34 and the 34 matching catalog source-health records are all ok. Source validation is not represented as product execution or human review."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No suspicious copied exam content or unrelated vendor/template contamination found. Related-item framing is used for adjacent material and training resources are explicitly not represented as full exam coverage."
+            }
+          },
+          "notes": "Read-only fresh-context semantic review against rubric version 2. Inputs included the complete guide and objective snapshot, current official exam/credential/study-guide pages, research note, relevant catalog and all 34 health records. The credential/exam contract and safety framing are strong; the outstanding issue is objective-level teaching depth rather than incorrect exam identity or product claims.",
+          "findings": [
+            {
+              "id": "az401-depth-gaps",
+              "check": "objective_coverage",
+              "severity": "medium",
+              "category": "scope-gap",
+              "location": "Guide sections 2–5, especially lines 79–81, 95–119, 125–139 and 145–157; readiness checks 10–24; proposed labs 3–8.",
+              "evidence": "The objective snapshot includes specific implementation skills that the guide mostly names without teaching a usable model or inspection task. Examples include package feeds/views and upstream sources, pipeline artifact versioning, test-agent configuration and publishing coverage, reusable YAML elements and Azure Pipelines/GitHub repository integration; GitHub Copilot branch controls and Git data recovery commands; distinctions among GitHub Apps, GITHUB_TOKEN, PATs and Azure DevOps PAT/service connections; GHAS for Azure DevOps versus GitHub; GitHub Insights/charts and alerts; and configuring/collecting Copilot agent logs. The corresponding narrative gives useful high-level principles, but the proposed labs generally ask learners to design or document rather than configure, inspect, or troubleshoot these objective-specific features. This is most consequential in the 35–40% build/release domain.",
+              "recommendation": "Expand the affected domain sections with concise objective-specific examples or decision/inspection tables, at minimum for the high-weight pipeline objectives and the named identity, scanning and instrumentation features. Tie each addition to a cited first-party reference and give a concrete evidence task in a lab/readiness check. Keep stage- or plan-sensitive steps marked VERIFY CURRENT and distinguish tabletop material from executed product behavior.",
+              "status": "open"
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "guide_count": 1,
+        "pass": 0,
+        "pass_with_notes": 0,
+        "fix_required": 1,
+        "blocked": 0,
+        "open_findings": 1,
+        "closed_findings": 0
+      }
+    },
+    {
+      "id": "az401-independent-audit-2026-10-29-pricing",
+      "title": "AZ-401 objective repair and pricing-contract audit",
+      "rubric_version": 2,
+      "created_on": "2026-10-29",
+      "completed_on": "2026-10-29",
+      "status": "completed",
+      "audit_mode": "read-only",
+      "selection_method": "Explicit fresh-context AZ-401 guide audit and subsequent repair disposition.",
+      "rubric_path": "docs/AI-AUDIT.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "label": "Codex independent semantic auditor",
+        "independence": "fresh-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "AZ-401"
+      ],
+      "results": [
+        {
+          "exam_code": "AZ-401",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AZ-401-designing-implementing-microsoft-agentic-devops-solutions.md",
+          "guide_content_sha256": "6d861ba343a971823456079815acf934b50f3ffbcb9d427ec642e0a75307c2a1",
+          "blueprint_snapshot_path": "data/objective-snapshots/az-401-official-objectives.txt",
+          "blueprint_snapshot_sha256": "b74fe4beb2509bb4fd6a13d19783c0ad97ad102abe7bda0d6eefae429dbe4337",
+          "audited_on": "2026-10-29",
+          "verdict": "fix-required",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The current dedicated AZ-401 exam page and study guide identify the beta Agentic DevOps Engineer Expert credential and the same five weighted DevOps domains. The credential landing page still shows unrelated AB-100 objectives, which the guide discloses and excludes."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "All five domains and their detailed subobjectives are findable with substantive decision, example, failure, check, and proposed evidence-lab treatment. The repaired additions address feeds/views/upstreams, artifact identity, test-result and coverage publication, reusable YAML elements, GitHub integration, Copilot review controls, Git recovery, identity/token distinctions, platform-specific GHAS and Defender coverage, Insights chart limits, and Copilot agent-log surfaces."
+            },
+            "material_claim_support": {
+              "status": "failed",
+              "notes": "Technical guidance is generally tied to current first-party references or bounded as volatile. However, the claim that the exam page does not state a price is contradicted by the currently opened official exam page, which says price is based on the country or region (guide line 18). The note that no exact amount was identified would be accurate."
+            },
+            "exam_contract_integrity": {
+              "status": "failed",
+              "notes": "The guide accurately reports beta status, English, 700 passing score, delayed beta results, and no retirement date, but its logistics summary incorrectly says the exam page does not state a price. The page states country/region-based pricing; it does not state a single exact amount."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Reviewed explanations are internally coherent and technically defensible: Azure Artifacts feed views are subsets/read-only and upstream packages must be saved; run identity is separated from artifact identity; test execution is separated from result/coverage publication; YAML templates/groups are distinguished from Classic task groups; service connections and user PATs are differentiated; GHAS platforms/Defender onboarding are distinct; and GitHub Insights and Copilot log surfaces are bounded. Official technical docs opened included feed views, GitHub-backed Azure Pipelines, PublishTestResults, variables, service connections, and Defender for Cloud."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Beta, Preview, product stage, client support, permissions, plan, region, UI, identity federation, monitoring-agent mode and retention claims are visibly bounded or marked VERIFY CURRENT. The source-page issuer conflict is disclosed."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Exercises are clearly proposed and unexecuted, use disposable or synthetic resources, distinguish table-top substitutes, flag MCP mutation and Azure cost/access, avoid production deployment and credential creation, and include budget/cleanup guidance."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "The 31 checks are independently phrased and answer-aligned. The new questions test package-upstream and view behavior, missing test/coverage publication, YAML reusable-element distinctions, Copilot review as advisory, Insights limits, and agent-log source distinction. No recalled exam content is present."
+            },
+            "review_evidence_accuracy": {
+              "status": "failed",
+              "notes": "Guide and objective-snapshot bindings were independently verified, and all 49 distinct cited URLs match catalog records and source-health entries (49 status ok). But the October 29 source-validation record and research note repeat the inaccurate statement that the exam page states no price; current official page evidence states regional pricing. Link health does not resolve this claim mismatch."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No suspicious exam-content overlap, unrelated vendor leakage, or contradictory guide template material found. The guide identifies itself as independent AI-assisted work and distinguishes adjacent learning from exam scope."
+            }
+          },
+          "notes": "Fresh-context read-only audit against rubric v2. Independently read repository instructions and audit standards, the complete guide and official-objective snapshot, current exam/credential/study-guide pages, the October 29 research note, current catalog/seed entries, source-validation record, and every one of the 49 unique cited URL source/health records. Guide SHA-256 is UTF-8 text with CR/CRLF normalized to LF; snapshot hash is raw bytes. Objective coverage and technical depth are substantially repaired; one current official exam-pricing statement remains misstated. No human review or product execution is claimed.",
+          "findings": [
+            {
+              "id": "az401-depth-gaps",
+              "check": "objective_coverage",
+              "severity": "medium",
+              "category": "scope-gap",
+              "location": "Guide sections 2–5, especially lines 79–81, 95–119, 125–139 and 145–157; readiness checks 10–24; proposed labs 3–8.",
+              "evidence": "The objective snapshot includes specific implementation skills that the guide mostly names without teaching a usable model or inspection task. Examples include package feeds/views and upstream sources, pipeline artifact versioning, test-agent configuration and publishing coverage, reusable YAML elements and Azure Pipelines/GitHub repository integration; GitHub Copilot branch controls and Git data recovery commands; distinctions among GitHub Apps, GITHUB_TOKEN, PATs and Azure DevOps PAT/service connections; GHAS for Azure DevOps versus GitHub; GitHub Insights/charts and alerts; and configuring/collecting Copilot agent logs. The corresponding narrative gives useful high-level principles, but the proposed labs generally ask learners to design or document rather than configure, inspect, or troubleshoot these objective-specific features. This is most consequential in the 35–40% build/release domain.",
+              "recommendation": "Expand the affected domain sections with concise objective-specific examples or decision/inspection tables, at minimum for the high-weight pipeline objectives and the named identity, scanning and instrumentation features. Tie each addition to a cited first-party reference and give a concrete evidence task in a lab/readiness check. Keep stage- or plan-sensitive steps marked VERIFY CURRENT and distinguish tabletop material from executed product behavior.",
+              "status": "resolved",
+              "resolution": "Verified by fresh-context audit on October 29, 2026 at guide hash 6d861ba343a971823456079815acf934b50f3ffbcb9d427ec642e0a75307c2a1: objective coverage passed after adding objective-specific package, pipeline, test, identity, scanning, Git recovery, Insights and log material."
+            },
+            {
+              "id": "az401-price-observation",
+              "check": "material_claim_support",
+              "severity": "medium",
+              "category": "exam-contract",
+              "location": "Guide line 18; also docs/research/2026-10-29-az401-refresh.md line 15 and the AZ-401 source-validation record in data/reviews.json.",
+              "evidence": "The current official exam page, https://learn.microsoft.com/en-us/credentials/certifications/exams/az-401/, states “Price based on the country or region in which the exam is proctored” (opened October 29, 2026). The guide says it does not state a price, and the same-day research/source-validation notes repeat that wording. The page provides no single numeric amount, but it does provide the regional pricing model.",
+              "recommendation": "Change the guide and associated same-day evidence to say that pricing varies by country/region and no exact amount was identified in the inspected view. Preserve that distinction in any refreshed source-validation note.",
+              "status": "open"
+            },
+            {
+              "id": "az401-price-exam-contract-integrity",
+              "check": "exam_contract_integrity",
+              "severity": "medium",
+              "category": "exam-contract",
+              "location": "Guide line 18; also docs/research/2026-10-29-az401-refresh.md line 15 and the AZ-401 source-validation record in data/reviews.json.",
+              "evidence": "The current official exam page, https://learn.microsoft.com/en-us/credentials/certifications/exams/az-401/, states “Price based on the country or region in which the exam is proctored” (opened October 29, 2026). The guide says it does not state a price, and the same-day research/source-validation notes repeat that wording. The page provides no single numeric amount, but it does provide the regional pricing model.",
+              "recommendation": "Change the guide and associated same-day evidence to say that pricing varies by country/region and no exact amount was identified in the inspected view. Preserve that distinction in any refreshed source-validation note.",
+              "status": "open"
+            },
+            {
+              "id": "az401-price-review-evidence-accuracy",
+              "check": "review_evidence_accuracy",
+              "severity": "medium",
+              "category": "exam-contract",
+              "location": "Guide line 18; also docs/research/2026-10-29-az401-refresh.md line 15 and the AZ-401 source-validation record in data/reviews.json.",
+              "evidence": "The current official exam page, https://learn.microsoft.com/en-us/credentials/certifications/exams/az-401/, states “Price based on the country or region in which the exam is proctored” (opened October 29, 2026). The guide says it does not state a price, and the same-day research/source-validation notes repeat that wording. The page provides no single numeric amount, but it does provide the regional pricing model.",
+              "recommendation": "Change the guide and associated same-day evidence to say that pricing varies by country/region and no exact amount was identified in the inspected view. Preserve that distinction in any refreshed source-validation note.",
+              "status": "open"
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "guide_count": 1,
+        "pass": 0,
+        "pass_with_notes": 0,
+        "fix_required": 1,
+        "blocked": 0,
+        "open_findings": 3,
+        "closed_findings": 1
+      }
+    },
+    {
+      "id": "az401-independent-audit-2026-10-29-research-note",
+      "title": "AZ-401 pricing and research-evidence audit",
+      "rubric_version": 2,
+      "created_on": "2026-10-29",
+      "completed_on": "2026-10-29",
+      "status": "completed",
+      "audit_mode": "read-only",
+      "selection_method": "Explicit fresh-context AZ-401 guide audit and subsequent repair disposition.",
+      "rubric_path": "docs/AI-AUDIT.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "label": "Codex independent semantic auditor",
+        "independence": "fresh-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "AZ-401"
+      ],
+      "results": [
+        {
+          "exam_code": "AZ-401",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AZ-401-designing-implementing-microsoft-agentic-devops-solutions.md",
+          "guide_content_sha256": "858941ca73d06410b4ec4bcba960f4b90707a68b4865f0f9b90a7e9d914ebd9d",
+          "blueprint_snapshot_path": "data/objective-snapshots/az-401-official-objectives.txt",
+          "blueprint_snapshot_sha256": "b74fe4beb2509bb4fd6a13d19783c0ad97ad102abe7bda0d6eefae429dbe4337",
+          "audited_on": "2026-10-29",
+          "verdict": "fix-required",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The current AZ-401 exam page and study guide agree on the beta Agentic DevOps Engineer Expert identity and five weighted DevOps domains. The credential page's unrelated AB-100 assessed-domain block is disclosed and excluded from scope."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "All five domains and published objective groups are substantively treated. The repaired depth covers package feeds/views and upstreams, test and coverage publication, reusable YAML elements, pipeline integration and runner selection, Git recovery, identity/token distinctions, platform-specific scanning, GitHub Insights boundaries, and Copilot agent-log surfaces, with decision guidance, examples, failure modes and learner checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "The guide cites first-party behavior documentation and bounds volatile claims. Its current exam-price statement correctly says that price varies by country or region and directs learners to check the current local amount; it invents no numeric price."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The guide reports beta status, English, passing score 700, delayed beta results and no retirement date. It avoids inventing duration, item count, formal prerequisite credential or numeric price, and correctly describes country/region-dependent pricing."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Reviewed technical distinctions are coherent and supported by first-party sources: feeds/views versus saved upstream packages, test execution versus publication, YAML templates/variables versus Classic task groups, Copilot review versus required approval, token and identity surfaces, GitHub versus Azure DevOps scanning, Insights versus custom charts, and distinct Copilot log sources."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Beta, Preview, plan, region, client, issuer, UI, identity-federation, agent-mode and retention behavior is bounded and marked for current verification where appropriate. The issuer-page scope anomaly is disclosed."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Labs are explicitly proposed and unexecuted. They use synthetic or disposable contexts, call out possible cost and access needs, avoid production deployment and credential creation, and offer tabletop alternatives plus cleanup guidance."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "The 31 original checks align with the guide and their answer guidance is consistent, including repaired objective details. No recalled or live exam material was found."
+            },
+            "review_evidence_accuracy": {
+              "status": "failed",
+              "notes": "The guide and latest source-validation note correctly state country/region-dependent pricing, and the bound hashes match. However, docs/research/2026-10-29-az401-refresh.md still says the exam page did not publish a price, contradicting the current official exam page and the corrected guide/source-validation record. Cataloged guide-link health is 49/49 ok, and catalog health is 13/13 ok; these establish captured reachability/metadata, not claim correctness."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No suspicious exam-content overlap, unrelated product leakage, contradictory template content or prohibited material was found. The guide identifies itself as independent AI-assisted work and labels adjacent learning."
+            }
+          },
+          "notes": "Fresh-context, read-only rubric v2 audit based on repository policies, the complete guide and objective snapshot, current official Microsoft credential/exam/study-guide pages, current source and health catalogs, latest source-validation evidence, and current refresh research. The objective-depth repairs are present and the guide correctly states country/region-dependent pricing without an amount. One stale pricing statement remains in the linked research note, so review-evidence accuracy fails until corrected. Guide hash is SHA-256 of complete UTF-8 text after CR/CRLF normalization to LF; snapshot hash is over raw bytes. No human review or product/lab execution is claimed.",
+          "findings": [
+            {
+              "id": "az401-price-observation",
+              "check": "material_claim_support",
+              "severity": "medium",
+              "category": "exam-contract",
+              "location": "Guide line 18; also docs/research/2026-10-29-az401-refresh.md line 15 and the AZ-401 source-validation record in data/reviews.json.",
+              "evidence": "The current official exam page, https://learn.microsoft.com/en-us/credentials/certifications/exams/az-401/, states “Price based on the country or region in which the exam is proctored” (opened October 29, 2026). The guide says it does not state a price, and the same-day research/source-validation notes repeat that wording. The page provides no single numeric amount, but it does provide the regional pricing model.",
+              "recommendation": "Change the guide and associated same-day evidence to say that pricing varies by country/region and no exact amount was identified in the inspected view. Preserve that distinction in any refreshed source-validation note.",
+              "status": "resolved",
+              "resolution": "Verified by fresh-context audit on October 29, 2026 at guide hash 858941ca73d06410b4ec4bcba960f4b90707a68b4865f0f9b90a7e9d914ebd9d: the guide and source-validation evidence state country/region-dependent pricing without inventing a numeric amount."
+            },
+            {
+              "id": "az401-price-exam-contract-integrity",
+              "check": "exam_contract_integrity",
+              "severity": "medium",
+              "category": "exam-contract",
+              "location": "Guide line 18; also docs/research/2026-10-29-az401-refresh.md line 15 and the AZ-401 source-validation record in data/reviews.json.",
+              "evidence": "The current official exam page, https://learn.microsoft.com/en-us/credentials/certifications/exams/az-401/, states “Price based on the country or region in which the exam is proctored” (opened October 29, 2026). The guide says it does not state a price, and the same-day research/source-validation notes repeat that wording. The page provides no single numeric amount, but it does provide the regional pricing model.",
+              "recommendation": "Change the guide and associated same-day evidence to say that pricing varies by country/region and no exact amount was identified in the inspected view. Preserve that distinction in any refreshed source-validation note.",
+              "status": "resolved",
+              "resolution": "Verified by fresh-context audit on October 29, 2026 at guide hash 858941ca73d06410b4ec4bcba960f4b90707a68b4865f0f9b90a7e9d914ebd9d: the guide and source-validation evidence state country/region-dependent pricing without inventing a numeric amount."
+            },
+            {
+              "id": "az401-price-review-evidence-accuracy",
+              "check": "review_evidence_accuracy",
+              "severity": "medium",
+              "category": "exam-contract",
+              "location": "Guide line 18; also docs/research/2026-10-29-az401-refresh.md line 15 and the AZ-401 source-validation record in data/reviews.json.",
+              "evidence": "The current official exam page, https://learn.microsoft.com/en-us/credentials/certifications/exams/az-401/, states “Price based on the country or region in which the exam is proctored” (opened October 29, 2026). The guide says it does not state a price, and the same-day research/source-validation notes repeat that wording. The page provides no single numeric amount, but it does provide the regional pricing model.",
+              "recommendation": "Change the guide and associated same-day evidence to say that pricing varies by country/region and no exact amount was identified in the inspected view. Preserve that distinction in any refreshed source-validation note.",
+              "status": "resolved",
+              "resolution": "Verified by fresh-context audit on October 29, 2026 at guide hash 858941ca73d06410b4ec4bcba960f4b90707a68b4865f0f9b90a7e9d914ebd9d: the guide and source-validation evidence state country/region-dependent pricing without inventing a numeric amount."
+            },
+            {
+              "id": "az401-stale-pricing-research-note",
+              "check": "review_evidence_accuracy",
+              "severity": "low",
+              "category": "review-evidence",
+              "location": "docs/research/2026-10-29-az401-refresh.md, section 'Official scope and credential identity' (paragraph beginning 'The dedicated exam page and study guide agree').",
+              "evidence": "The note says the exam page 'did not publish duration, item count or price in the reviewed view.' The currently opened official exam page states, 'Price based on the country or region in which the exam is proctored' (https://learn.microsoft.com/en-us/credentials/certifications/exams/az-401/). The guide and latest source-validation record have been corrected to say pricing varies by country or region without inventing a numeric amount, but this linked research evidence remains inconsistent.",
+              "recommendation": "Update the research note to state that Microsoft gives country/region-dependent pricing but the inspected page does not identify a single local numeric amount. Preserve the distinction between the pricing model and the amount at the user's location.",
+              "status": "open"
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "guide_count": 1,
+        "pass": 0,
+        "pass_with_notes": 0,
+        "fix_required": 1,
+        "blocked": 0,
+        "open_findings": 1,
+        "closed_findings": 3
+      }
+    },
+    {
+      "id": "az401-independent-audit-2026-10-29-final",
+      "title": "AZ-401 full audit and final repair disposition",
+      "rubric_version": 2,
+      "created_on": "2026-10-29",
+      "completed_on": "2026-10-29",
+      "status": "completed",
+      "audit_mode": "read-only",
+      "selection_method": "Explicit fresh-context AZ-401 guide audit and subsequent repair disposition.",
+      "rubric_path": "docs/AI-AUDIT.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "label": "Codex independent semantic auditor",
+        "independence": "fresh-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "AZ-401"
+      ],
+      "results": [
+        {
+          "exam_code": "AZ-401",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AZ-401-designing-implementing-microsoft-agentic-devops-solutions.md",
+          "guide_content_sha256": "858941ca73d06410b4ec4bcba960f4b90707a68b4865f0f9b90a7e9d914ebd9d",
+          "blueprint_snapshot_path": "data/objective-snapshots/az-401-official-objectives.txt",
+          "blueprint_snapshot_sha256": "b74fe4beb2509bb4fd6a13d19783c0ad97ad102abe7bda0d6eefae429dbe4337",
+          "audited_on": "2026-10-29",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The guide identifies beta AZ-401 and the Agentic DevOps Engineer Expert credential. Its five domains and weights match the AZ-401-specific exam page and objective snapshot; it explicitly excludes unrelated AB-100 credential-page copy."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "All five weighted groups receive substantive sections, scenarios, proposed labs, and findable study prompts. The repaired objective-depth items remain present: upstream package/feed-view permissions, test and coverage result publication, YAML reusable elements, runner diagnostics, GitHub App/GITHUB_TOKEN/PAT distinctions, platform-specific GHAS coverage, distinct Git recovery paths, Copilot review limitations, GitHub Insights bounds, and Copilot agent-log surfaces."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "The guide cites official Microsoft and GitHub documentation alongside product claims and distinguishes assessment scope from supplementary context. The official objective snapshot and dedicated exam page support the exam-contract statements."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "It reports only published weights, English, passing score 700, delayed beta results, and no stated retirement date. It does not invent duration, item count, or a prerequisite credential, and it bounds these as dated observations."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The explanations consistently distinguish identity from authorization, artifact identity from run identity, scanners from coverage/compliance, and AI-generated hypotheses from verified evidence. Cross-platform examples and answers follow those boundaries."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Beta status, Preview capabilities, UI/product stages, regions, licensing, plan limits, and changing interfaces are dated or marked VERIFY CURRENT. Guide pricing language says the exam price varies by country or region and directs readers to check the current local amount."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Labs are explicitly proposed, scoped to authorized/disposable environments, include cost and cleanup guidance, and provide tabletop/design substitutes when access is unavailable. No live execution is claimed."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Thirty-one original checks have direct answers aligned with the guide, including the repaired package-feed, publishing, reusable-element, approval, Insights, and agent-log distinctions. No recalled exam content is used."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The raw objective snapshot hash matches the AZ-401 source-validation record. That record maps all five domains, records 49 unique links as reachable with zero blocked or broken, and does not claim human review or product execution. A low-severity wording ambiguity remains in the certification seed and is recorded below."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No suspicious copied material, unrelated vendor leakage, or contradictory templates were identified in the full guide. Related items are visibly labeled and kept separate from official scope claims."
+            }
+          },
+          "notes": "Reviewed the complete guide, complete objective snapshot, AI audit rubric, October 29 research note, AZ-401 source-validation row, relevant current catalog/seed entries, and current official dedicated exam page. Objective-depth repairs are present in the guide. The guide and primary review evidence consistently describe region-based pricing without implying that no pricing model exists; the seed note retains the ambiguity noted above. Hashes use LF-normalized complete UTF-8 guide text and raw snapshot bytes. No product or lab execution and no human review are claimed. Post-audit focused fresh-context verification resolved the sole low review-evidence observation. All ten checks below are retained from the full audit on identical guide and snapshot hashes; the final repair changed only seed evidence wording.",
+          "findings": [
+            {
+              "id": "az401-stale-pricing-research-note",
+              "check": "review_evidence_accuracy",
+              "severity": "low",
+              "category": "review-evidence",
+              "location": "docs/research/2026-10-29-az401-refresh.md, section 'Official scope and credential identity' (paragraph beginning 'The dedicated exam page and study guide agree').",
+              "evidence": "The note says the exam page 'did not publish duration, item count or price in the reviewed view.' The currently opened official exam page states, 'Price based on the country or region in which the exam is proctored' (https://learn.microsoft.com/en-us/credentials/certifications/exams/az-401/). The guide and latest source-validation record have been corrected to say pricing varies by country or region without inventing a numeric amount, but this linked research evidence remains inconsistent.",
+              "recommendation": "Update the research note to state that Microsoft gives country/region-dependent pricing but the inspected page does not identify a single local numeric amount. Preserve the distinction between the pricing model and the amount at the user's location.",
+              "status": "resolved",
+              "resolution": "Verified by fresh-context audit on October 29, 2026: the refresh report now says prices vary by country/region and no local numeric amount is stated."
+            },
+            {
+              "id": "az401-regional-pricing-seed-wording",
+              "check": "review_evidence_accuracy",
+              "severity": "low",
+              "category": "review-evidence",
+              "location": "config/certification-seeds.json, AZ-401 lifecycle.notes",
+              "evidence": "The seed says: ‘No formal prerequisite credential, duration, question count or price identified on inspected pages.’ The current dedicated exam page says: ‘Price based on the country or region in which the exam is proctored’ (https://learn.microsoft.com/en-us/credentials/certifications/exams/az-401/, opened 2026-10-29). The guide, research note, and AZ-401 source-validation row correctly say pricing varies by country or region and that no local amount is given. The seed wording is ambiguous about whether no numeric amount or no pricing model was identified.",
+              "recommendation": "Clarify the seed note as: ‘No formal prerequisite credential, duration, question count or local price amount was identified; the exam page says pricing is based on country or region.’ Keep the distinction between a regional pricing model and an undisclosed local amount.",
+              "status": "resolved",
+              "resolution": "Verified by focused fresh-context follow-up on October 29, 2026 at guide hash 858941ca73d06410b4ec4bcba960f4b90707a68b4865f0f9b90a7e9d914ebd9d: the seed retains the country/region price rule and says no local numeric amount was recorded; no stale claim that price or pricing was unidentified remains."
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "guide_count": 1,
+        "pass": 1,
+        "pass_with_notes": 0,
+        "fix_required": 0,
+        "blocked": 0,
+        "open_findings": 0,
+        "closed_findings": 2
+      }
     }
 ]
 }

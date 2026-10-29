@@ -52,6 +52,7 @@ Passing this workflow changes the public label to **Sources + objectives checked
 | MB-800 | October 28, 2026 | Current detailed outline reconciled; see group-04 report | 56 registered links: 54 reachable, 2 access-blocked, 0 missing/error | Passed; human/product review pending |
 | MB-500 | October 28, 2026 | Current detailed outline reconciled; see group-04 report | 64 registered links: 62 reachable, 2 access-blocked, 0 missing/error | Passed; human/product review pending |
 | MB-310 | October 28, 2026 | Current detailed outline reconciled; see group-04 report | 60 registered links: 59 reachable, 1 access-blocked, 0 missing/error | Passed; human/product review pending |
+| AZ-401 | October 29, 2026 | Five current AZ-401 domains (15–20%, 10–15%, 35–40%, 15–20%, 15–20%); full study-guide objectives checked October 29 | 49 registered links: 49 reachable, 0 access-blocked, 0 missing/error | Passed; human/product review pending |
 | AZ-400 | October 28, 2026 | Current detailed outline reconciled; see group-03 report | 83 registered links: 82 reachable, 1 access-blocked, 0 missing/error | Passed; human/product review pending |
 | AI-300 | October 28, 2026 | Current detailed outline reconciled; see group-03 report | 61 registered links: 59 reachable, 2 access-blocked, 0 missing/error | Passed; human/product review pending |
 | AB-620 | October 28, 2026 | Current detailed outline reconciled; see group-03 report | 61 registered links: 59 reachable, 2 access-blocked, 0 missing/error | Passed; human/product review pending |
@@ -602,6 +603,10 @@ The September 27 [deep review](research/2026-09-27-az-800-deep-review.md) maps 1
 | Manage storage and file services | Section 6, file-server migration scenario, and Lab 8 |
 
 The September 5 repair corrects Azure Extended Network's on-premises-subnet-to-Azure-VNet boundary and adds prerequisites, configuration, validation, troubleshooting, cleanup, and Lab 9 coverage for Azure Network Adapter and Extended Network. The September 7 best-effort pass documents SSH Direct instead of omitting it: Microsoft confirms the Hyper-V/VSOCK substrate, Microsoft-owned lab code provides an older Debian composition, and qualified Ubuntu, Red Hat-family, SUSE/openSUSE, Oracle Linux, systemd, libvirt, Microsoft Press, and expert sources support pieces of the provisional model. Source validation remains blocked because Microsoft still publishes no current end-to-end implementation contract or compatibility matrix establishing supported host/guest combinations, authentication, configuration, validation, and troubleshooting. The record therefore remains `review-required`, not a passed source validation. The guide has three scenarios, nine labs, and 24 checks. All 77 cited URLs are cataloged: 73 reachable, four access-blocked, and none missing. The official blueprint snapshot SHA-256 is `03c6f4e0c73f383ada8c4ddf43a91fa28ec513a732b40abae0a38b1b6ac4f7bc`.
+
+## AZ-401 coverage record
+
+The October 29, 2026 [guide intake and source-validation report](research/2026-10-29-az401-refresh.md) maps the current dedicated exam page and study guide. The study-guide page displays last updated October 13, 2026. Five weighted domains and their detailed subobjectives are preserved in `data/objective-snapshots/az-401-official-objectives.txt`; snapshot SHA-256: `b74fe4beb2509bb4fd6a13d19783c0ad97ad102abe7bda0d6eefae429dbe4337`. The guide explains the unrelated AB-100 assessment block still shown on the credential page and uses only the dedicated AZ-401 exam/study-guide map. Link evidence: 34 registered, 34 reachable, zero blocked or missing/error. Beta status and product/Preview details remain volatile. No product execution or human review is claimed.
 
 ## AZ-801 coverage record
 
