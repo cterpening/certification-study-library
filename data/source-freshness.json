@@ -53255,6 +53255,800 @@
         "no_action_findings": 0,
         "blocked_findings": 0
       }
+    },
+    {
+      "id": "freshness-2026-10-28-nonms-g02",
+      "title": "Fortinet and Palo Alto Networks non-Microsoft refresh group 02",
+      "rubric_version": 1,
+      "created_on": "2026-10-28",
+      "completed_on": "2026-10-28",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Second ten of the frozen eligible non-Microsoft source-validation queue, ordered by last source-validation date, vendor ID, then exam code.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "fortinet-exam-research",
+          "fortinet-technical-research",
+          "fortinet-learning-resources",
+          "refresh-coordinator"
+        ],
+        "independence": "mixed",
+        "human_review": false
+      },
+      "exam_codes": [
+        "NSE-6-SECURITY-OPERATIONS",
+        "NSE-7-CLOUD-SECURITY",
+        "NSE-7-SASE",
+        "NSE-7-SECURE-NETWORKING",
+        "NSE-7-SECURITY-OPERATIONS",
+        "NSE-I-OT-SECURITY",
+        "PANW-CLOUD-SECURITY-ENGINEER",
+        "PANW-CLOUD-SECURITY-PROFESSIONAL",
+        "PANW-CYBERSECURITY-PRACTITIONER",
+        "PANW-NETWORK-SECURITY-ANALYST"
+      ],
+      "results": [
+        {
+          "exam_code": "NSE-6-SECURITY-OPERATIONS",
+          "vendor_id": "fortinet",
+          "guide_path": "guides/NSE-6-SECURITY-OPERATIONS-fortinet-nse-6-security-operations.md",
+          "baseline_sha256": "55ce74062b655fbbae58bea883bd74484210c69dbde9257fe88b80145bbe3e2e",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Direct official route, objective and lifecycle pages were checked for all ten guides; announced/released changes were compared with current contracts."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party versioned product pages were added where useful. The general NSE 7 SASE docs index remains directly blocked (403), recorded separately; current course/release references are bounded."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Relevant provider release and delivery announcements were checked; the 2026-09-21 NSE 7 test-center-only rule is applied. Palo Alto OLX learning is optional and access-qualified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "New/updated first-party sources were compared with data/sources.json. Scoped source health covered 107 URLs: 100 OK, 7 blocked, zero broken; blocked entries are reported as access limitations."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Product-document versions, exam baselines, and FortiSASE 403 are explicitly bounded; product releases are not promoted to exam scope without a blueprint match."
+            }
+          },
+          "findings": [
+            {
+              "id": "nse6-fortirecon-26-exam-availability",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "objective-change",
+              "title": "FortiRecon 26 Analyst is now Available",
+              "url": "https://training.fortinet.com/local/staticpage/view.php?page=fortirecon_analyst_exam",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "NSE-6-SECURITY-OPERATIONS"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The page publishes Available status, 60 minutes, 30–40 questions, English, and four weighted groups.",
+              "recommendation": "Keep the objective groups and live contract distinct from product documentation.",
+              "disposition": "applied",
+              "source_id": "nse6-fortirecon-26-exam",
+              "resolution": "Added current contract, weighted scope, mapped study coverage and readiness drills; removed stale upcoming status."
+            },
+            {
+              "id": "nse6-fortideceptor-62-exam-availability",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "objective-change",
+              "title": "FortiDeceptor 6.2 Administrator is now Available",
+              "url": "https://training.fortinet.com/local/staticpage/view.php?page=fortideceptor_administrator_exam",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "NSE-6-SECURITY-OPERATIONS"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The page publishes Available status, 60 minutes, 30–40 questions, English, and two weighted groups.",
+              "recommendation": "Keep the objective groups and live contract distinct from product documentation.",
+              "disposition": "applied",
+              "source_id": "nse6-fortideceptor-62-exam",
+              "resolution": "Added current contract, weighted scope, mapped study coverage and readiness drills; removed stale upcoming status."
+            }
+          ],
+          "notes": "Full exam, lifecycle, technical, catalog, and learning-resource discovery is summarized in docs/research/2026-10-28-nonms-refresh-group-02.md. Scoped health: 100 OK, 7 blocked, zero broken among 107 checked URLs. Access blocks and unexecuted lesson/lab access are limits, not claims of content validation."
+        },
+        {
+          "exam_code": "NSE-7-CLOUD-SECURITY",
+          "vendor_id": "fortinet",
+          "guide_path": "guides/NSE-7-CLOUD-SECURITY-fortinet-nse-7-cloud-security.md",
+          "baseline_sha256": "01a5e7fcb77bf83964ae607c1a0190ed87b11e1c15df4400232c19e11c934f35",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Direct official route, objective and lifecycle pages were checked for all ten guides; announced/released changes were compared with current contracts."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party versioned product pages were added where useful. The general NSE 7 SASE docs index remains directly blocked (403), recorded separately; current course/release references are bounded."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Relevant provider release and delivery announcements were checked; the 2026-09-21 NSE 7 test-center-only rule is applied. Palo Alto OLX learning is optional and access-qualified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "New/updated first-party sources were compared with data/sources.json. Scoped source health covered 107 URLs: 100 OK, 7 blocked, zero broken; blocked entries are reported as access limitations."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Product-document versions, exam baselines, and FortiSASE 403 are explicitly bounded; product releases are not promoted to exam scope without a blueprint match."
+            }
+          },
+          "findings": [
+            {
+              "id": "nse7-test-center-only-delivery",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "lifecycle-change",
+              "title": "NSE 7 exams are test-center-only",
+              "url": "https://ftnt.freshdesk.com/support/solutions/articles/73000672931-nse-certification-program-notice-onvue-delivery",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "NSE-7-CLOUD-SECURITY",
+                "NSE-7-SASE",
+                "NSE-7-SECURE-NETWORKING",
+                "NSE-7-SECURITY-OPERATIONS"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Fortinet’s notice states OnVUE delivery ended effective 2026-09-21.",
+              "recommendation": "Keep all four exam contracts aligned with authorized Pearson VUE test-center delivery.",
+              "disposition": "applied",
+              "source_id": "fortinet-nse7-onvue-delivery-notice",
+              "resolution": "Updated all four NSE 7 guides and status snapshots with the effective delivery rule."
+            },
+            {
+              "id": "nse7-public-cloud-course-outline",
+              "check": "official_product_documentation",
+              "category": "new-source",
+              "title": "Public Cloud Security Architect course outline",
+              "url": "https://training.fortinet.com/local/staticpage/view.php?page=library_public-cloud-security-architect",
+              "source_type": "official-training",
+              "affected_exams": [
+                "NSE-7-CLOUD-SECURITY"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "FortiGate 7.6.4/FortiWeb 7.6/FortiCNAPP Aug 2025; 6h lecture plus 10h estimated labs. Own AWS/Azure accounts are required; vendor estimates about USD 15 per cloud vendor/day.",
+              "recommendation": "Treat course metadata as a discovery path; do not equate outlines or estimated hours with inspected lessons or full exam coverage.",
+              "disposition": "applied",
+              "source_id": "nse7-public-cloud-security-course",
+              "resolution": "Added as optional course with access, cost and version boundaries."
+            }
+          ],
+          "notes": "Full exam, lifecycle, technical, catalog, and learning-resource discovery is summarized in docs/research/2026-10-28-nonms-refresh-group-02.md. Scoped health: 100 OK, 7 blocked, zero broken among 107 checked URLs. Access blocks and unexecuted lesson/lab access are limits, not claims of content validation."
+        },
+        {
+          "exam_code": "NSE-7-SASE",
+          "vendor_id": "fortinet",
+          "guide_path": "guides/NSE-7-SASE-fortinet-nse-7-sase.md",
+          "baseline_sha256": "ab9f2be658beb7a26699343f37c7952dee5002e0302ff82dcd0667684e678386",
+          "scanned_on": "2026-10-28",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Direct official route, objective and lifecycle pages were checked for all ten guides; announced/released changes were compared with current contracts."
+            },
+            "official_product_documentation": {
+              "status": "blocked",
+              "notes": "The exact general FortiSASE documentation entry returns 403, so current docs index/version could not be checked; limitation is explicit and not replaced with FortiSASE-Sovereign evidence."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Relevant provider release and delivery announcements were checked; the 2026-09-21 NSE 7 test-center-only rule is applied. Palo Alto OLX learning is optional and access-qualified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "New/updated first-party sources were compared with data/sources.json. Scoped source health covered 107 URLs: 100 OK, 7 blocked, zero broken; blocked entries are reported as access limitations."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Product-document versions, exam baselines, and FortiSASE 403 are explicitly bounded; product releases are not promoted to exam scope without a blueprint match."
+            }
+          },
+          "findings": [
+            {
+              "id": "nse7-test-center-only-delivery",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "lifecycle-change",
+              "title": "NSE 7 exams are test-center-only",
+              "url": "https://ftnt.freshdesk.com/support/solutions/articles/73000672931-nse-certification-program-notice-onvue-delivery",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "NSE-7-CLOUD-SECURITY",
+                "NSE-7-SASE",
+                "NSE-7-SECURE-NETWORKING",
+                "NSE-7-SECURITY-OPERATIONS"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Fortinet’s notice states OnVUE delivery ended effective 2026-09-21.",
+              "recommendation": "Keep all four exam contracts aligned with authorized Pearson VUE test-center delivery.",
+              "disposition": "applied",
+              "source_id": "fortinet-nse7-onvue-delivery-notice",
+              "resolution": "Updated all four NSE 7 guides and status snapshots with the effective delivery rule."
+            },
+            {
+              "id": "nse7-fortisase-course-outline",
+              "check": "catalog_comparison",
+              "category": "new-source",
+              "title": "FortiSASE Enterprise Administrator course outline",
+              "url": "https://training.fortinet.com/local/staticpage/view.php?page=library_fortisase-enterprise-administrator",
+              "source_type": "official-training",
+              "affected_exams": [
+                "NSE-7-SASE"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "FortiSASE 26 course outline reports 4h lecture plus 5h estimated labs and companion product-version prerequisites.",
+              "recommendation": "Treat course metadata as a discovery path; do not equate outlines or estimated hours with inspected lessons or full exam coverage.",
+              "disposition": "applied",
+              "source_id": "nse7-fortisase-enterprise-course",
+              "resolution": "Added exact optional course outline and stack version caveats."
+            },
+            {
+              "id": "nse7-sdwan-course-outline",
+              "check": "catalog_comparison",
+              "category": "new-source",
+              "title": "SD-WAN Enterprise Administrator course outline",
+              "url": "https://training.fortinet.com/local/staticpage/view.php?page=library_sd-wan-enterprise-administrator",
+              "source_type": "official-training",
+              "affected_exams": [
+                "NSE-7-SASE"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "FortiOS/FortiManager 7.6.3 course outline reports 6h lecture plus 7h estimated labs.",
+              "recommendation": "Treat course metadata as a discovery path; do not equate outlines or estimated hours with inspected lessons or full exam coverage.",
+              "disposition": "applied",
+              "source_id": "nse7-sdwan-enterprise-course",
+              "resolution": "Added exact optional course outline with prerequisites and version bounds."
+            },
+            {
+              "id": "fortisase-general-docs-blocked",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "General FortiSASE documentation page blocked during direct access",
+              "url": "https://docs.fortinet.com/product/fortisase",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "NSE-7-SASE"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Direct opening returned HTTP 403, preventing inspection of the current general FortiSASE documentation index/version. FortiSASE-Sovereign is a distinct product and was not substituted.",
+              "recommendation": "Recheck the general FortiSASE docs route and retain product separation.",
+              "disposition": "blocked"
+            }
+          ],
+          "notes": "Full exam, lifecycle, technical, catalog, and learning-resource discovery is summarized in docs/research/2026-10-28-nonms-refresh-group-02.md. Scoped health: 100 OK, 7 blocked, zero broken among 107 checked URLs. Access blocks and unexecuted lesson/lab access are limits, not claims of content validation."
+        },
+        {
+          "exam_code": "NSE-7-SECURE-NETWORKING",
+          "vendor_id": "fortinet",
+          "guide_path": "guides/NSE-7-SECURE-NETWORKING-fortinet-nse-7-secure-networking.md",
+          "baseline_sha256": "c1a3f3774e1c7fa035fc393dd68e7cd099530bca593f30f8542bdfdd20b47ccc",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Direct official route, objective and lifecycle pages were checked for all ten guides; announced/released changes were compared with current contracts."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party versioned product pages were added where useful. The general NSE 7 SASE docs index remains directly blocked (403), recorded separately; current course/release references are bounded."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Relevant provider release and delivery announcements were checked; the 2026-09-21 NSE 7 test-center-only rule is applied. Palo Alto OLX learning is optional and access-qualified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "New/updated first-party sources were compared with data/sources.json. Scoped source health covered 107 URLs: 100 OK, 7 blocked, zero broken; blocked entries are reported as access limitations."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Product-document versions, exam baselines, and FortiSASE 403 are explicitly bounded; product releases are not promoted to exam scope without a blueprint match."
+            }
+          },
+          "findings": [
+            {
+              "id": "nse7-test-center-only-delivery",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "lifecycle-change",
+              "title": "NSE 7 exams are test-center-only",
+              "url": "https://ftnt.freshdesk.com/support/solutions/articles/73000672931-nse-certification-program-notice-onvue-delivery",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "NSE-7-CLOUD-SECURITY",
+                "NSE-7-SASE",
+                "NSE-7-SECURE-NETWORKING",
+                "NSE-7-SECURITY-OPERATIONS"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Fortinet’s notice states OnVUE delivery ended effective 2026-09-21.",
+              "recommendation": "Keep all four exam contracts aligned with authorized Pearson VUE test-center delivery.",
+              "disposition": "applied",
+              "source_id": "fortinet-nse7-onvue-delivery-notice",
+              "resolution": "Updated all four NSE 7 guides and status snapshots with the effective delivery rule."
+            },
+            {
+              "id": "nse7-secure-networking-sdwan-course-outline",
+              "check": "catalog_comparison",
+              "category": "new-source",
+              "title": "SD-WAN Enterprise Administrator course outline",
+              "url": "https://training.fortinet.com/local/staticpage/view.php?page=library_sd-wan-enterprise-administrator",
+              "source_type": "official-training",
+              "affected_exams": [
+                "NSE-7-SECURE-NETWORKING"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Official course outline covers SD-WAN and centralized management; it supplements the full blueprint.",
+              "recommendation": "Treat course metadata as a discovery path; do not equate outlines or estimated hours with inspected lessons or full exam coverage.",
+              "disposition": "applied",
+              "source_id": "nse7-sdwan-enterprise-course",
+              "resolution": "Added exact optional course outline and its scope/prerequisite limits."
+            }
+          ],
+          "notes": "Full exam, lifecycle, technical, catalog, and learning-resource discovery is summarized in docs/research/2026-10-28-nonms-refresh-group-02.md. Scoped health: 100 OK, 7 blocked, zero broken among 107 checked URLs. Access blocks and unexecuted lesson/lab access are limits, not claims of content validation."
+        },
+        {
+          "exam_code": "NSE-7-SECURITY-OPERATIONS",
+          "vendor_id": "fortinet",
+          "guide_path": "guides/NSE-7-SECURITY-OPERATIONS-fortinet-nse-7-security-operations.md",
+          "baseline_sha256": "52dc1232419f6eafcd1ad8944ced15e1fce1a2bba1f0797289e919f7f5f5bd29",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Direct official route, objective and lifecycle pages were checked for all ten guides; announced/released changes were compared with current contracts."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party versioned product pages were added where useful. The general NSE 7 SASE docs index remains directly blocked (403), recorded separately; current course/release references are bounded."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Relevant provider release and delivery announcements were checked; the 2026-09-21 NSE 7 test-center-only rule is applied. Palo Alto OLX learning is optional and access-qualified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "New/updated first-party sources were compared with data/sources.json. Scoped source health covered 107 URLs: 100 OK, 7 blocked, zero broken; blocked entries are reported as access limitations."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Product-document versions, exam baselines, and FortiSASE 403 are explicitly bounded; product releases are not promoted to exam scope without a blueprint match."
+            }
+          },
+          "findings": [
+            {
+              "id": "nse7-test-center-only-delivery",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "lifecycle-change",
+              "title": "NSE 7 exams are test-center-only",
+              "url": "https://ftnt.freshdesk.com/support/solutions/articles/73000672931-nse-certification-program-notice-onvue-delivery",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "NSE-7-CLOUD-SECURITY",
+                "NSE-7-SASE",
+                "NSE-7-SECURE-NETWORKING",
+                "NSE-7-SECURITY-OPERATIONS"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Fortinet’s notice states OnVUE delivery ended effective 2026-09-21.",
+              "recommendation": "Keep all four exam contracts aligned with authorized Pearson VUE test-center delivery.",
+              "disposition": "applied",
+              "source_id": "fortinet-nse7-onvue-delivery-notice",
+              "resolution": "Updated all four NSE 7 guides and status snapshots with the effective delivery rule."
+            }
+          ],
+          "notes": "Full exam, lifecycle, technical, catalog, and learning-resource discovery is summarized in docs/research/2026-10-28-nonms-refresh-group-02.md. Scoped health: 100 OK, 7 blocked, zero broken among 107 checked URLs. Access blocks and unexecuted lesson/lab access are limits, not claims of content validation."
+        },
+        {
+          "exam_code": "NSE-I-OT-SECURITY",
+          "vendor_id": "fortinet",
+          "guide_path": "guides/NSE-I-OT-SECURITY-fortinet-industry-ot-security.md",
+          "baseline_sha256": "8506338e01ab1c46187aeeee57016e5c7c24572560f5775dc1c628bc78d5a98c",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Direct official route, objective and lifecycle pages were checked for all ten guides; announced/released changes were compared with current contracts."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party versioned product pages were added where useful. The general NSE 7 SASE docs index remains directly blocked (403), recorded separately; current course/release references are bounded."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Relevant provider release and delivery announcements were checked; the 2026-09-21 NSE 7 test-center-only rule is applied. Palo Alto OLX learning is optional and access-qualified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "New/updated first-party sources were compared with data/sources.json. Scoped source health covered 107 URLs: 100 OK, 7 blocked, zero broken; blocked entries are reported as access limitations."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Product-document versions, exam baselines, and FortiSASE 403 are explicitly bounded; product releases are not promoted to exam scope without a blueprint match."
+            }
+          },
+          "findings": [
+            {
+              "id": "ot-architect-contract-correction",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "objective-change",
+              "title": "OT Security 7.6 Architect duration and weighted groups",
+              "url": "https://training.fortinet.com/local/staticpage/view.php?page=ot_security_architect_exam",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "NSE-I-OT-SECURITY"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current exam page and snapshot publish 70 minutes, 35–40 questions, English; Asset Management 15–25%, NAC 25–35%, Network Security 25–35%, Monitoring/Risk 20–30%.",
+              "recommendation": "Use the 70-minute contract and published domains.",
+              "disposition": "applied",
+              "source_id": "nse-industry-ot-76-exam",
+              "resolution": "Corrected guide and accepted objective/status snapshots and archived prior objective bytes."
+            }
+          ],
+          "notes": "Full exam, lifecycle, technical, catalog, and learning-resource discovery is summarized in docs/research/2026-10-28-nonms-refresh-group-02.md. Scoped health: 100 OK, 7 blocked, zero broken among 107 checked URLs. Access blocks and unexecuted lesson/lab access are limits, not claims of content validation."
+        },
+        {
+          "exam_code": "PANW-CLOUD-SECURITY-ENGINEER",
+          "vendor_id": "palo-alto-networks",
+          "guide_path": "guides/PANW-CLOUD-SECURITY-ENGINEER-palo-alto-networks-cloud-security-engineer.md",
+          "baseline_sha256": "c653d0739bd06e97df524aa08901375f8c05717795097807fcbf8eab75a8818c",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Direct official route, objective and lifecycle pages were checked for all ten guides; announced/released changes were compared with current contracts."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party versioned product pages were added where useful. The general NSE 7 SASE docs index remains directly blocked (403), recorded separately; current course/release references are bounded."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Relevant provider release and delivery announcements were checked; the 2026-09-21 NSE 7 test-center-only rule is applied. Palo Alto OLX learning is optional and access-qualified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "New/updated first-party sources were compared with data/sources.json. Scoped source health covered 107 URLs: 100 OK, 7 blocked, zero broken; blocked entries are reported as access limitations."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Product-document versions, exam baselines, and FortiSASE 403 are explicitly bounded; product releases are not promoted to exam scope without a blueprint match."
+            }
+          },
+          "findings": [
+            {
+              "id": "panw-cortex-csp-onboarding",
+              "check": "official_product_documentation",
+              "category": "new-source",
+              "title": "Cortex Cloud CSP onboarding tiers and licensing",
+              "url": "https://docs-cortex.paloaltonetworks.com/r/Cortex-CLOUD/Cortex-Cloud-Posture-Management-Documentation/Understand-CSP-onboarding-tiers-and-licensing?contentId=Pgg5HMfhT2f1MKpUnTKXHw",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PANW-CLOUD-SECURITY-ENGINEER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current Cortex Cloud docs explain CSP onboarding/licensing tiers and paths.",
+              "recommendation": "Keep product, version, SKU, management plane and tenant boundaries explicit.",
+              "disposition": "applied",
+              "source_id": "panw-cortex-cloud-csp-onboarding-tiers",
+              "resolution": "Added exact onboarding/licensing reference with tenant entitlement caveat."
+            },
+            {
+              "id": "panw-olx-optional-learning",
+              "check": "official_release_channels",
+              "category": "new-source",
+              "title": "Palo Alto Networks announces on-demand learning courses",
+              "url": "https://live.paloaltonetworks.com/t5/news/introducing-palo-alto-networks-nbsp-on-demand-learning/ta-p/1252677",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "PANW-CLOUD-SECURITY-ENGINEER",
+                "PANW-CLOUD-SECURITY-PROFESSIONAL",
+                "PANW-CYBERSECURITY-PRACTITIONER",
+                "PANW-NETWORK-SECURITY-ANALYST"
+              ],
+              "catalog_status": "registered",
+              "confidence": "medium",
+              "evidence": "Announcement supports optional Cortex Platform Management and Strata Cloud Manager NGFW Management learning. Course interiors and entitlement details were not inspected; automated source health is blocked.",
+              "recommendation": "Keep these optional, narrow and access-qualified; do not claim blueprint-complete training.",
+              "disposition": "applied",
+              "source_id": "panw-ondemand-learning-olx",
+              "resolution": "Added caveated optional resource rows; no lesson inspection or complete exam coverage is claimed."
+            }
+          ],
+          "notes": "Full exam, lifecycle, technical, catalog, and learning-resource discovery is summarized in docs/research/2026-10-28-nonms-refresh-group-02.md. Scoped health: 100 OK, 7 blocked, zero broken among 107 checked URLs. Access blocks and unexecuted lesson/lab access are limits, not claims of content validation."
+        },
+        {
+          "exam_code": "PANW-CLOUD-SECURITY-PROFESSIONAL",
+          "vendor_id": "palo-alto-networks",
+          "guide_path": "guides/PANW-CLOUD-SECURITY-PROFESSIONAL-palo-alto-networks-cloud-security-professional.md",
+          "baseline_sha256": "b1d5c58f08aa5e7db87ab0a30985b4d8a18448f0db9b6f61bf8a544e53363955",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Direct official route, objective and lifecycle pages were checked for all ten guides; announced/released changes were compared with current contracts."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party versioned product pages were added where useful. The general NSE 7 SASE docs index remains directly blocked (403), recorded separately; current course/release references are bounded."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Relevant provider release and delivery announcements were checked; the 2026-09-21 NSE 7 test-center-only rule is applied. Palo Alto OLX learning is optional and access-qualified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "New/updated first-party sources were compared with data/sources.json. Scoped source health covered 107 URLs: 100 OK, 7 blocked, zero broken; blocked entries are reported as access limitations."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Product-document versions, exam baselines, and FortiSASE 403 are explicitly bounded; product releases are not promoted to exam scope without a blueprint match."
+            }
+          },
+          "findings": [
+            {
+              "id": "panw-cortex-operational-workflows",
+              "check": "official_product_documentation",
+              "category": "new-source",
+              "title": "Cortex Cloud posture operational workflows",
+              "url": "https://docs-cortex.paloaltonetworks.com/r/Cortex-CLOUD/Cortex-Cloud-Posture-Management-Documentation/Operational-workflows",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PANW-CLOUD-SECURITY-PROFESSIONAL"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current docs cover onboarding, scanner enablement, coverage and code-to-cloud mapping.",
+              "recommendation": "Keep product, version, SKU, management plane and tenant boundaries explicit.",
+              "disposition": "applied",
+              "source_id": "panw-cortex-cloud-operational-workflows",
+              "resolution": "Added as workflow reference, not proof of tenant access or exam scope."
+            },
+            {
+              "id": "panw-olx-optional-learning",
+              "check": "official_release_channels",
+              "category": "new-source",
+              "title": "Palo Alto Networks announces on-demand learning courses",
+              "url": "https://live.paloaltonetworks.com/t5/news/introducing-palo-alto-networks-nbsp-on-demand-learning/ta-p/1252677",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "PANW-CLOUD-SECURITY-ENGINEER",
+                "PANW-CLOUD-SECURITY-PROFESSIONAL",
+                "PANW-CYBERSECURITY-PRACTITIONER",
+                "PANW-NETWORK-SECURITY-ANALYST"
+              ],
+              "catalog_status": "registered",
+              "confidence": "medium",
+              "evidence": "Announcement supports optional Cortex Platform Management and Strata Cloud Manager NGFW Management learning. Course interiors and entitlement details were not inspected; automated source health is blocked.",
+              "recommendation": "Keep these optional, narrow and access-qualified; do not claim blueprint-complete training.",
+              "disposition": "applied",
+              "source_id": "panw-ondemand-learning-olx",
+              "resolution": "Added caveated optional resource rows; no lesson inspection or complete exam coverage is claimed."
+            }
+          ],
+          "notes": "Full exam, lifecycle, technical, catalog, and learning-resource discovery is summarized in docs/research/2026-10-28-nonms-refresh-group-02.md. Scoped health: 100 OK, 7 blocked, zero broken among 107 checked URLs. Access blocks and unexecuted lesson/lab access are limits, not claims of content validation."
+        },
+        {
+          "exam_code": "PANW-CYBERSECURITY-PRACTITIONER",
+          "vendor_id": "palo-alto-networks",
+          "guide_path": "guides/PANW-CYBERSECURITY-PRACTITIONER-palo-alto-networks-cybersecurity-practitioner.md",
+          "baseline_sha256": "01ffaa3c2ae20f09bfa94a341f7131ed5782ed33b88f5feb48babbc3a248a8f6",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Direct official route, objective and lifecycle pages were checked for all ten guides; announced/released changes were compared with current contracts."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party versioned product pages were added where useful. The general NSE 7 SASE docs index remains directly blocked (403), recorded separately; current course/release references are bounded."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Relevant provider release and delivery announcements were checked; the 2026-09-21 NSE 7 test-center-only rule is applied. Palo Alto OLX learning is optional and access-qualified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "New/updated first-party sources were compared with data/sources.json. Scoped source health covered 107 URLs: 100 OK, 7 blocked, zero broken; blocked entries are reported as access limitations."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Product-document versions, exam baselines, and FortiSASE 403 are explicitly bounded; product releases are not promoted to exam scope without a blueprint match."
+            }
+          },
+          "findings": [
+            {
+              "id": "panw-cortex-xdr-5x-case-detail",
+              "check": "official_product_documentation",
+              "category": "new-source",
+              "title": "Current Cortex XDR 5.x detailed case view",
+              "url": "https://docs-cortex.paloaltonetworks.com/r/Cortex-XDR/Cortex-XDR-5.x-Documentation/Detailed-View",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PANW-CYBERSECURITY-PRACTITIONER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The old generic Cortex XDR URL returned 404; current 5.x docs describe timelines, causality chains, issues/insights and response actions.",
+              "recommendation": "Keep product, version, SKU, management plane and tenant boundaries explicit.",
+              "disposition": "applied",
+              "source_id": "panw-cortex-xdr-5x-case-detail",
+              "resolution": "Replaced the broken shared link in five Palo Alto guides with this product-specific page."
+            },
+            {
+              "id": "panw-olx-optional-learning",
+              "check": "official_release_channels",
+              "category": "new-source",
+              "title": "Palo Alto Networks announces on-demand learning courses",
+              "url": "https://live.paloaltonetworks.com/t5/news/introducing-palo-alto-networks-nbsp-on-demand-learning/ta-p/1252677",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "PANW-CLOUD-SECURITY-ENGINEER",
+                "PANW-CLOUD-SECURITY-PROFESSIONAL",
+                "PANW-CYBERSECURITY-PRACTITIONER",
+                "PANW-NETWORK-SECURITY-ANALYST"
+              ],
+              "catalog_status": "registered",
+              "confidence": "medium",
+              "evidence": "Announcement supports optional Cortex Platform Management and Strata Cloud Manager NGFW Management learning. Course interiors and entitlement details were not inspected; automated source health is blocked.",
+              "recommendation": "Keep these optional, narrow and access-qualified; do not claim blueprint-complete training.",
+              "disposition": "applied",
+              "source_id": "panw-ondemand-learning-olx",
+              "resolution": "Added caveated optional resource rows; no lesson inspection or complete exam coverage is claimed."
+            }
+          ],
+          "notes": "Full exam, lifecycle, technical, catalog, and learning-resource discovery is summarized in docs/research/2026-10-28-nonms-refresh-group-02.md. Scoped health: 100 OK, 7 blocked, zero broken among 107 checked URLs. Access blocks and unexecuted lesson/lab access are limits, not claims of content validation."
+        },
+        {
+          "exam_code": "PANW-NETWORK-SECURITY-ANALYST",
+          "vendor_id": "palo-alto-networks",
+          "guide_path": "guides/PANW-NETWORK-SECURITY-ANALYST-palo-alto-networks-network-security-analyst.md",
+          "baseline_sha256": "67979b2ea0d002d46a298d1deb710843b07d7fa865b163ae0bf12489473f436a",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Direct official route, objective and lifecycle pages were checked for all ten guides; announced/released changes were compared with current contracts."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party versioned product pages were added where useful. The general NSE 7 SASE docs index remains directly blocked (403), recorded separately; current course/release references are bounded."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Relevant provider release and delivery announcements were checked; the 2026-09-21 NSE 7 test-center-only rule is applied. Palo Alto OLX learning is optional and access-qualified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "New/updated first-party sources were compared with data/sources.json. Scoped source health covered 107 URLs: 100 OK, 7 blocked, zero broken; blocked entries are reported as access limitations."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Product-document versions, exam baselines, and FortiSASE 403 are explicitly bounded; product releases are not promoted to exam scope without a blueprint match."
+            }
+          },
+          "findings": [
+            {
+              "id": "panw-scm-get-started",
+              "check": "official_product_documentation",
+              "category": "new-source",
+              "title": "Strata Cloud Manager getting started",
+              "url": "https://docs.paloaltonetworks.com/strata-cloud-manager/navigation/get-started",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PANW-NETWORK-SECURITY-ANALYST"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current SCM docs provide product-specific orientation/setup.",
+              "recommendation": "Keep product, version, SKU, management plane and tenant boundaries explicit.",
+              "disposition": "applied",
+              "source_id": "panw-scm-get-started",
+              "resolution": "Added a current SCM orientation source with feature/license bounds."
+            },
+            {
+              "id": "panw-panos-nat-rules",
+              "check": "official_product_documentation",
+              "category": "new-source",
+              "title": "PAN-OS NAT policy rule behavior",
+              "url": "https://docs.paloaltonetworks.com/ngfw/networking/nat/nat-policy-rules",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PANW-NETWORK-SECURITY-ANALYST"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current docs explain ordered first-match NAT rules and identify version/hardware-specific exceptions.",
+              "recommendation": "Keep product, version, SKU, management plane and tenant boundaries explicit.",
+              "disposition": "applied",
+              "source_id": "panw-panos-nat-policy-rules",
+              "resolution": "Added as a bounded current technical reference."
+            },
+            {
+              "id": "panw-decryption-rule",
+              "check": "official_product_documentation",
+              "category": "new-source",
+              "title": "PAN-OS decryption rules and profiles",
+              "url": "https://docs.paloaltonetworks.com/network-security/decryption/administration/enabling-decryption/create-decryption-policy-rule",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PANW-NETWORK-SECURITY-ANALYST"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current docs define rule/profile mechanics and release-dependent details.",
+              "recommendation": "Keep product, version, SKU, management plane and tenant boundaries explicit.",
+              "disposition": "applied",
+              "source_id": "panw-decryption-policy-rule",
+              "resolution": "Added current rule/profile references with PAN-OS version and model caveats."
+            },
+            {
+              "id": "panw-olx-optional-learning",
+              "check": "official_release_channels",
+              "category": "new-source",
+              "title": "Palo Alto Networks announces on-demand learning courses",
+              "url": "https://live.paloaltonetworks.com/t5/news/introducing-palo-alto-networks-nbsp-on-demand-learning/ta-p/1252677",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "PANW-CLOUD-SECURITY-ENGINEER",
+                "PANW-CLOUD-SECURITY-PROFESSIONAL",
+                "PANW-CYBERSECURITY-PRACTITIONER",
+                "PANW-NETWORK-SECURITY-ANALYST"
+              ],
+              "catalog_status": "registered",
+              "confidence": "medium",
+              "evidence": "Announcement supports optional Cortex Platform Management and Strata Cloud Manager NGFW Management learning. Course interiors and entitlement details were not inspected; automated source health is blocked.",
+              "recommendation": "Keep these optional, narrow and access-qualified; do not claim blueprint-complete training.",
+              "disposition": "applied",
+              "source_id": "panw-ondemand-learning-olx",
+              "resolution": "Added caveated optional resource rows; no lesson inspection or complete exam coverage is claimed."
+            }
+          ],
+          "notes": "Full exam, lifecycle, technical, catalog, and learning-resource discovery is summarized in docs/research/2026-10-28-nonms-refresh-group-02.md. Scoped health: 100 OK, 7 blocked, zero broken among 107 checked URLs. Access blocks and unexecuted lesson/lab access are limits, not claims of content validation."
+        }
+      ],
+      "summary": {
+        "exam_count": 10,
+        "current": 9,
+        "review_required": 0,
+        "blocked": 1,
+        "queued_findings": 0,
+        "applied_findings": 21,
+        "no_action_findings": 0,
+        "blocked_findings": 1
+      }
     }
   ]
 }

@@ -6,20 +6,21 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-02
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-02
+upcoming_change_checked: 2026-10-28
 ---
 
 # Fortinet NSE 7 in Security Operations Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live NSE 7 Security Operations and Security Operations 7.6 Architect pages, current FortiSIEM/FortiSOAR documents, and public NIST/MITRE guidance were checked September 2, 2026. Fortinet's pages remain authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live NSE 7 Security Operations and Security Operations 7.6 Architect pages, current FortiSIEM/FortiSOAR documents, and public NIST/MITRE guidance were checked October 28, 2026. Fortinet's pages remain authoritative.
 
 **Current baseline:** Security Operations 7.6 Architect, using FortiSOAR 7.6 and FortiSIEM 7.3. Published domains are SOC Concepts and Frameworks; Detection Capabilities; SOAR Incident Handling and Threat Hunting; and SOAR Playbook Development. Fortinet publishes no weights for these domains; do not invent them.<br>
 **Exam contract:** 35–40 questions, 75 minutes, English, Pearson VUE, pass/fail. It includes operational scenarios, incident analysis, integrations, and troubleshooting.<br>
-**Certification contract:** This guide covers the required NSE 7 Security Operations exam, not the credential alone. NSE 7 in Security Operations also requires NSE 4 FortiOS and either NSE 5 Security Operations or NSE 6 Security Operations; the NSE 7 exam must be passed within two years of the last prerequisite. The credential is active for two years from the later qualifying exam.<br>
+**Delivery:** Since September 21, 2026, NSE 7 exams are available only at Pearson VUE-authorized test centers; OnVUE remote delivery ended. Check current local availability when scheduling.<br>
+**Certification contract:** This guide covers the required NSE 7 Security Operations exam, not the credential alone. NSE 7 in Security Operations also requires NSE 4 FortiOS and either NSE 5 Security Operations or NSE 6 Security Operations; the NSE 7 exam must be passed within two years of the last prerequisite. The credential is active for two years under the official recertification policy; the current track page's validity sentence is malformed, so verify the credential record for its exact expiration date.<br>
 **Experience boundary:** Fortinet recommends one year of network-security experience and six months of SOC experience. The scenario depth still requires practical SIEM/SOAR work.<br>
-**Upcoming change:** No retirement or dated replacement was announced September 2, 2026. FortiSIEM is listed at 7.3 even though later product documentation may exist; study the exam baseline and note later-version differences.<br>
+**Upcoming change:** No additional retirement or dated replacement was announced as of October 28, 2026. FortiSIEM is listed at 7.3 even though later product documentation may exist; study the exam baseline and note later-version differences.<br>
 **Integrity:** Never use customer incidents or unauthorized exam content as study material. Use sanitized synthetic evidence and official sample questions only for format/scope.
 
 ## How to use this guide
@@ -197,7 +198,7 @@ This is not a complete list, and it is not a prescription to consume everything.
 | Resource | Access | Estimated time | Best use |
 |---|---|---:|---|
 | [Security Operations Architect exam](https://training.fortinet.com/local/staticpage/view.php?page=security_operations_architect_exam) | Public | 30–50 min | Current unweighted objectives, versions, experience, and official-resource boundary |
-| [NSE 7 in Security Operations](https://training.fortinet.com/local/staticpage/view.php?page=nse_7_security_operations) | Public | 20–30 min | Credential prerequisites, timing, validity, recertification, and exam relationship |
+| [NSE 7 in Security Operations](https://training.fortinet.com/local/staticpage/view.php?page=nse_7_security_operations) and [Fortinet recertification policy](https://helpdesk.training.fortinet.com/support/solutions/articles/73000672593-exam-policy-recertification) | Public | 20–40 min | Credential prerequisites and renewal; the track page validity sentence is malformed, while the current policy states NSE certifications expire two years after issue |
 | [Fortinet Training Institute library](https://training.fortinet.com/local/library/?search=security%20operations) | Free account; labs/ILT may cost | 20–40 min selection; course varies | Locate current Security Operations 7.6 Architect course and hands-on lab |
 | [FortiSIEM 7.3 documentation](https://docs.fortinet.com/product/fortisiem/7.3) | Public | 18–30 hr selected reading/labs | Architecture, collection, parsers, queries, analytics/rules, incidents, HA and troubleshooting |
 | [FortiSOAR 7.6 documentation](https://docs.fortinet.com/product/fortisoar/7.6) | Public | 18–30 hr selected reading/labs | Cases, queues/shifts, war rooms, connectors, playbooks, Jinja, debugging and administration |

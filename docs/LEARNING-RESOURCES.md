@@ -4390,6 +4390,225 @@ This is a selective starting set, not a complete list and not a prescription to 
 | O'Reilly, Pluralsight, Udemy, LinkedIn Learning and other courses on endpoint security, EDR hunting, ZTNA, DLP, and incident handling | Subscription/purchase may apply | 10–30 hr selected | No exact current pathway-aligned third-party course was verified; use for concepts and reconcile product claims with Fortinet |
 | Authorized endpoint/tenant lab | Entitlement, partner, or training access may be required | 30–70 hr | Deployment, policy, telemetry, failure, investigation, and rollback evidence |
 
+### NSE-6-SECURITY-OPERATIONS — Fortinet NSE 6 in Security Operations
+
+Resource details from the [NSE-6-SECURITY-OPERATIONS guide](../guides/NSE-6-SECURITY-OPERATIONS-fortinet-nse-6-security-operations.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective starting set, not a complete list and not a prescription to consume everything. Pick the chosen lane's official pages, documentation, and labs. Durations are estimates unless publisher-listed.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [NSE 6 in Security Operations](https://training.fortinet.com/local/staticpage/view.php?page=nse_6_security_operations) | Public | 20–30 min | Canonical requirements, options, inconsistent availability notes, renewal and policies |
+| [FortiSIEM Analyst exam](https://training.fortinet.com/local/staticpage/view.php?page=fortisiem_analyst_exam) | Public | 30–60 min | Current FortiSIEM 7.4 contract and objectives |
+| [FortiSIEM Analyst 7.4 course outline](https://training.fortinet.com/local/staticpage/view.php?page=library_fortisiem-analyst) and [documentation](https://docs.fortinet.com/product/fortisiem/7.4) | Fortinet account; course/lab entitlement may vary | 9 hr lecture + 9 hr estimated labs | Queries, nested lookups, rules, incidents/remediation, hunting, ML/UEBA and ZTNA; outline reviewed, lessons not completed |
+| [FortiNDR Cloud Analyst exam](https://training.fortinet.com/local/staticpage/view.php?page=fortindr_cloud_analyst_exam) | Public | 45–75 min | Current weighted FortiNDR Cloud 26 blueprint |
+| [FortiNDR Cloud Analyst 26 course outline](https://training.fortinet.com/local/staticpage/view.php?page=library_fortindr-cloud-analyst) and [documentation index](https://docs.fortinet.com/product/fortindr-cloud/26.3) | Fortinet account; course/lab entitlement may vary | 7 hr lecture + 5 hr estimated labs | Sensors, events, IQL, detections, investigations, integrations and hunting; guide names 26.3 while public docs expose 26.2.x, so verify build alignment |
+| [FortiSOAR Analyst exam](https://training.fortinet.com/local/staticpage/view.php?page=fortisoar_analyst_exam) | Public | 45–75 min | Current weighted FortiSOAR 7.6 blueprint |
+| [FortiSOAR Analyst 7.6 course outline](https://training.fortinet.com/local/staticpage/view.php?page=library_fortisoar-analyst) and [7.6 documentation](https://docs.fortinet.com/product/fortisoar/7.6) | Fortinet account; course/lab entitlement may vary | 8 hr lecture + 8 hr estimated labs | Data models, playbooks, Jinja/JSON/YAQL, connectors/APIs and troubleshooting; verify the solution-pack boundary for incident handling |
+| [NSE 6 Security Operations course library](https://training.fortinet.com/local/library/?category=Certification:NSE_6_Security_Operations) | Free account; labs/ILT may cost | 15–35 hr per lane | Locate the current official option course and verify duration/version after sign-in |
+| [FortiRecon 26 Analyst exam](https://training.fortinet.com/local/staticpage/view.php?page=fortirecon_analyst_exam) and [FortiDeceptor 6.2 Administrator exam](https://training.fortinet.com/local/staticpage/view.php?page=fortideceptor_administrator_exam) | Public | 30–60 min each | Newly available exam contracts and objective tasks; both list 60 minutes and 30–40 questions |
+| [Fortinet exam policy](https://helpdesk.training.fortinet.com/en/support/solutions/articles/73000672593-exam-policy-recertification) | Public | 20–40 min | Retake, renewal, reuse and timing rules |
+| [MITRE ATT&CK](https://attack.mitre.org/) and [Sigma rule specification](https://sigmahq.io/docs/basics/rules.html) | Public | 8–16 hr selected | Threat-model and portable detection context; not product behavior authority |
+| [Fortinet YouTube](https://www.youtube.com/@Fortinet) | Free/YouTube | 4–10 hr selected | Official demos and architecture; verify version in current docs |
+| O'Reilly, Pluralsight, Udemy and other SIEM, network detection, threat hunting, SOAR, Python/Jinja, JSON/API courses | Subscription/purchase may apply | 12–35 hr selected | Concept reinforcement; no exact current pathway-aligned third-party course was verified |
+| Authorized FortiSIEM, FortiNDR Cloud, or FortiSOAR lab | Entitlement/partner/training access may be required | 40–80 hr | Highest-value telemetry, analytics, investigation, automation, failure and recovery practice |
+
+### NSE-7-CLOUD-SECURITY — Fortinet NSE 7 in Cloud Security
+
+Resource details from the [NSE-7-CLOUD-SECURITY guide](../guides/NSE-7-CLOUD-SECURITY-fortinet-nse-7-cloud-security.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list, and it is not a prescription to consume everything. Start with the official exam contract; then select only current documentation, cloud guidance, and labs that close measured gaps. Times are publisher-listed where visible or clearly labeled estimates.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [Public Cloud Security Architect exam](https://training.fortinet.com/local/staticpage/view.php?page=public_cloud_security_architect_exam) | Public | 30–50 min | Current contract, exact unweighted objectives, products, experience, and official resources |
+| [NSE 7 in Cloud Security](https://training.fortinet.com/local/staticpage/view.php?page=nse_7_cloud_security) | Public | 20–30 min | Track purpose, prerequisite language, validity, and recertification; verify noted inconsistency |
+| [Fortinet Training Institute library](https://training.fortinet.com/local/library/?category=Certification%3ANSE_7+-+Cloud+Security) | Free account; labs/ILT may cost | 20–40 min selection; course varies | Locate current Public Cloud Security 7.6.4 Architect course and lab, avoiding older versions |
+| [Public Cloud Security 7.6.4 Architect course outline](https://training.fortinet.com/local/staticpage/view.php?page=library_public-cloud-security-architect) | Account/enrollment; separate cloud subscriptions and costs apply | 6 hr lecture + 10 hr estimated labs | Official course covers cloud design, IaC, deployment, monitoring and troubleshooting. Fortinet states students need their own AWS and Azure accounts and estimates about USD $15 per cloud vendor per day; verify current prerequisites and costs. Outline reviewed, lessons not completed. |
+| [FortiGate Public Cloud documentation](https://docs.fortinet.com/product/fortigate-public-cloud) | Public | 20–35 hr selected AWS/Azure chapters/labs | Current reference architectures, deployment, routing, HA, automation, SDN connectors, and troubleshooting |
+| [FortiWeb 7.4 documentation](https://docs.fortinet.com/product/fortiweb/7.4) | Public | 8–16 hr selected reading/labs | Web/API protection, deployment modes, certificates, policies, logging, HA, and troubleshooting |
+| [FortiCNAPP documentation](https://docs.fortinet.com/product/forticnapp) | Public | 5–10 hr selected reading/labs | Account onboarding, inventory, posture/workload risks, permissions, findings, and operations |
+| [AWS Well-Architected security pillar](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/welcome.html) | Public | 4–8 hr selected reading | Primary AWS design principles and shared-responsibility context |
+| [Azure Architecture Center: security](https://learn.microsoft.com/en-us/azure/architecture/security/security-get-started) | Public | 4–8 hr selected reading | Primary Azure architecture patterns, identity, network, monitoring, and governance context |
+| [Terraform documentation](https://developer.hashicorp.com/terraform/docs) | Public | 6–12 hr selected tutorials/labs | State, providers, modules, plans, lifecycle, automation, and safe workflow |
+| [Ansible documentation](https://docs.ansible.com/ansible/latest/) | Public | 4–10 hr selected tutorials/labs | Inventory, variables, modules, playbooks, vault, idempotence, and validation |
+| [Fortinet Training Institute policies](https://helpdesk.training.fortinet.com/support/solutions/73000238852) | Public | 30–60 min | Delivery, retake, result, voucher, integrity, and renewal policy |
+
+### NSE-7-SASE — Fortinet NSE 7 in SASE
+
+Resource details from the [NSE-7-SASE guide](../guides/NSE-7-SASE-fortinet-nse-7-sase.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list, and it is not a prescription to consume everything. Begin with the official exam page, then choose the current course, documentation, or labs that close measured gaps. Times are publisher-listed where visible or clearly labeled estimates.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [FortiSASE Architect exam](https://training.fortinet.com/local/staticpage/view.php?page=fortisase_architect_exam) | Public | 45–75 min | Current FortiSASE 26 contract, full task list, experience, and official resources |
+| [NSE 7 in SASE](https://training.fortinet.com/local/staticpage/view.php?page=nse_7_sase) | Public | 20–30 min | Credential prerequisites, timing, validity, recertification, and exam relationship |
+| [Fortinet Training Institute library](https://training.fortinet.com/local/library/?search=sase) | Free account; labs/ILT may cost | 20–40 min selection; courses vary | Find current FortiSASE Enterprise/Core and SD-WAN Enterprise/Core courses; avoid older-version entries |
+| [FortiSASE 26 Enterprise Administrator course outline](https://training.fortinet.com/local/staticpage/view.php?page=library_fortisase-enterprise-administrator) | Account/enrollment; lab entitlement may vary | 4 hr lecture + 5 hr estimated labs | Branch deployment, secure access, posture, analytics and troubleshooting; listed companion versions include FortiOS/FortiClient/FortiManager 7.4 and FortiAnalyzer 7.6 |
+| [SD-WAN Enterprise Administrator course outline](https://training.fortinet.com/local/staticpage/view.php?page=library_sd-wan-enterprise-administrator) | Account/enrollment; labs may cost | 6 hr lecture + 7 hr estimated labs | Enterprise SD-WAN architecture and operation shared with the current SASE exam; course outline only, not verified lesson coverage |
+| [FortiSASE documentation](https://docs.fortinet.com/product/fortisase) | Public | 15–25 hr selected reading/labs | Administration, architecture, deployment, reference, access, posture, logging, and troubleshooting |
+| [FortiOS 7.6 documentation](https://docs.fortinet.com/product/fortigate/7.6) | Public | 12–20 hr selected reading/labs | SD-WAN, BGP, IPsec/ADVPN, sessions, policies, and on-ramp behavior |
+| [FortiManager 7.6 documentation](https://docs.fortinet.com/product/fortimanager/7.6) | Public | 6–12 hr selected reading/labs | ZTP, templates, orchestration, variables, install and monitoring |
+| [FortiAnalyzer 7.6 documentation](https://docs.fortinet.com/product/fortianalyzer/7.6) | Public | 4–8 hr selected reading/labs | SD-WAN/SASE logs, analytics, reporting, and forwarding evidence |
+| [Fortinet Training Institute policies](https://helpdesk.training.fortinet.com/support/solutions/73000238852) | Public | 30–60 min | Current exam, retake, score, voucher, integrity, and renewal rules |
+| [Fortinet YouTube](https://www.youtube.com/@Fortinet) | Free/YouTube | 3–8 hr selected current videos | Architecture and demonstrations; reconcile every version-sensitive detail with current docs |
+
+### NSE-7-SECURE-NETWORKING — Fortinet NSE 7 in Secure Networking
+
+Resource details from the [NSE-7-SECURE-NETWORKING guide](../guides/NSE-7-SECURE-NETWORKING-fortinet-nse-7-secure-networking.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list, and it is not a prescription to consume everything. Start with the official exam contract and choose only the documentation, course sections, and labs that close measured gaps. Times are publisher-listed where visible or clearly labeled estimates and can change.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [Secure Networking Architect exam](https://training.fortinet.com/local/staticpage/view.php?page=secure_networking_architect_exam) | Public | 45–75 min | Current contract, exact tasks/ranges, versions, experience, and approved sample-question boundary |
+| [NSE 7 Secure Networking certification](https://training.fortinet.com/local/staticpage/view.php?page=nse_7_secure_networking) | Public | 20–30 min | Prerequisite, timing, validity, renewal, and exam relationship |
+| [Fortinet Training Institute library](https://training.fortinet.com/local/library/) | Free account; labs/ILT may cost | 20–40 min selection; courses vary | Find the current Enterprise Firewall, SD-WAN, FortiOS, FortiManager, and FortiAnalyzer courses named by the exam page |
+| [SD-WAN Enterprise Administrator course outline](https://training.fortinet.com/local/staticpage/view.php?page=library_sd-wan-enterprise-administrator) | Account/enrollment; labs may cost | 6 hr lecture + 7 hr estimated labs | SD-WAN architecture and operations within the comprehensive exam; course outline only, not verified lesson coverage |
+| [FortiOS 7.6 documentation](https://docs.fortinet.com/product/fortigate/7.6) | Public | 20–35 hr selected chapters/labs | HA, VDOM, Security Fabric, routing, SD-WAN, profiles, sessions, and IPsec authority |
+| [FortiManager 7.6 documentation](https://docs.fortinet.com/product/fortimanager/7.6) | Public | 12–20 hr selected chapters/labs | ZTP, policy packages, templates, variables, VPN Manager, orchestration, install and troubleshooting |
+| [FortiAnalyzer 7.6 documentation](https://docs.fortinet.com/product/fortianalyzer/7.6) | Public | 6–12 hr selected chapters/labs | SD-WAN/security logs, analytics, reports, event handling, and operational evidence |
+| [Fortinet Training Institute policies](https://helpdesk.training.fortinet.com/support/solutions/73000238852) | Public | 30–60 min | Current delivery, retake, results, voucher, integrity, and renewal policy |
+| [Fortinet YouTube](https://www.youtube.com/@Fortinet) | Free/YouTube | 3–8 hr selected current videos | Visual architecture and product demonstrations; reconcile version-sensitive steps with 7.6 docs |
+
+### NSE-7-SECURITY-OPERATIONS — Fortinet NSE 7 in Security Operations
+
+Resource details from the [NSE-7-SECURITY-OPERATIONS guide](../guides/NSE-7-SECURITY-OPERATIONS-fortinet-nse-7-security-operations.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list, and it is not a prescription to consume everything. Start with the official contract and select the course, documentation, framework, and lab sections that close measured gaps. Times are publisher-listed where visible or clearly labeled estimates.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [Security Operations Architect exam](https://training.fortinet.com/local/staticpage/view.php?page=security_operations_architect_exam) | Public | 30–50 min | Current unweighted objectives, versions, experience, and official-resource boundary |
+| [NSE 7 in Security Operations](https://training.fortinet.com/local/staticpage/view.php?page=nse_7_security_operations) and [Fortinet recertification policy](https://helpdesk.training.fortinet.com/support/solutions/articles/73000672593-exam-policy-recertification) | Public | 20–40 min | Credential prerequisites and renewal; the track page validity sentence is malformed, while the current policy states NSE certifications expire two years after issue |
+| [Fortinet Training Institute library](https://training.fortinet.com/local/library/?search=security%20operations) | Free account; labs/ILT may cost | 20–40 min selection; course varies | Locate current Security Operations 7.6 Architect course and hands-on lab |
+| [FortiSIEM 7.3 documentation](https://docs.fortinet.com/product/fortisiem/7.3) | Public | 18–30 hr selected reading/labs | Architecture, collection, parsers, queries, analytics/rules, incidents, HA and troubleshooting |
+| [FortiSOAR 7.6 documentation](https://docs.fortinet.com/product/fortisoar/7.6) | Public | 18–30 hr selected reading/labs | Cases, queues/shifts, war rooms, connectors, playbooks, Jinja, debugging and administration |
+| [MITRE ATT&CK](https://attack.mitre.org/) | Public | 5–10 hr selected techniques/data sources | Primary adversary-behavior vocabulary and detection data-source mapping |
+| [NIST SP 800-61 Rev. 3](https://csrc.nist.gov/pubs/sp/800/61/r3/final) | Public | 4–7 hr | Current primary incident-response recommendations and organizational integration |
+| [Fortinet Training Institute policies](https://helpdesk.training.fortinet.com/support/solutions/73000238852) | Public | 30–60 min | Delivery, retake, results, integrity, voucher, and renewal policy |
+| [Fortinet YouTube](https://www.youtube.com/@Fortinet) | Free/YouTube | 3–8 hr selected current videos | Official SOC/product demonstrations; verify version and reproduce with synthetic evidence |
+
+### NSE-I-OT-SECURITY — Fortinet Industry Certification in OT Security
+
+Resource details from the [NSE-I-OT-SECURITY guide](../guides/NSE-I-OT-SECURITY-fortinet-industry-ot-security.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective starting set, not a complete list and not a prescription to consume everything. Choose official baseline documents, standards context, and authorized hands-on work that close measured gaps. Times are estimates unless publisher-listed.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [Industry Certification in OT Security](https://training.fortinet.com/local/staticpage/view.php?page=nse_industry_ot_security) | Public | 25–40 min | Canonical prerequisites, track/timing requirements, validity and renewal |
+| [OT Security Architect exam](https://training.fortinet.com/local/staticpage/view.php?page=ot_security_architect_exam) | Public | 45–75 min | Current product baseline, published objective groups, resources and experience |
+| [NSE Industry course library](https://training.fortinet.com/local/library/?category=Certification:NSE_Industry) | Free account; labs/ILT may cost | 30–60 hr estimate plus labs | Locate current OT Security 7.6 Architect and supporting Fortinet courses; verify duration after sign-in |
+| [FortiOS 7.6 Administration Guide](https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide) | Public | 20–40 hr selected | Segmentation, industrial/application control, IPS, automation, logging and operations |
+| [FortiAnalyzer 7.6 documentation](https://docs.fortinet.com/product/fortianalyzer/7.6) | Public | 12–25 hr selected | Registration, event handlers, reports, evidence, storage and troubleshooting |
+| [FortiSIEM 7.4 documentation](https://docs.fortinet.com/product/fortisiem/7.4) | Public | 12–25 hr selected | OT telemetry, enrichment, rules, incidents and risk context |
+| [FortiNAC-F 7.6 documentation](https://docs.fortinet.com/product/fortinac-f/7.6) | Public | 15–30 hr selected | Asset visibility, profiling, segmentation/access, integrations and HA |
+| [NIST SP 800-82 Rev. 3](https://csrc.nist.gov/pubs/sp/800/82/r3/final) | Public | 8–14 hr selected | Authoritative OT security architecture, threats and controls context |
+| [MITRE ATT&CK for ICS](https://attack.mitre.org/matrices/ics/) | Public | 4–8 hr selected | Threat-behavior and detection coverage context; not a product blueprint |
+| [CISA ICS resources](https://www.cisa.gov/topics/industrial-control-systems) | Public | 5–12 hr selected | Advisories, recommended practices and incident context |
+| [Fortinet YouTube](https://www.youtube.com/@Fortinet) | Free/YouTube | 4–10 hr selected | Official OT/Fortinet demonstrations; verify versions in current documentation |
+| O'Reilly, Pluralsight, Udemy, SANS/other training on ICS/OT networking, IEC 62443, incident response and industrial protocols | Subscription/purchase may apply | 15–50 hr selected | Concepts and alternate instruction; no exact current certification-aligned third-party course was verified |
+| Authorized OT cyber range or simulated plant lab | Paid/partner/lab access may be required | 50–100 hr | Highest-value safe architecture, traffic, failure, recovery and incident practice |
+
+### PANW-CLOUD-SECURITY-ENGINEER — Palo Alto Networks Certified Cloud Security Engineer
+
+Resource details from the [PANW-CLOUD-SECURITY-ENGINEER guide](../guides/PANW-CLOUD-SECURITY-ENGINEER-palo-alto-networks-cloud-security-engineer.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective starting set, not a complete list and not a prescription to consume everything. Pick and choose the official documentation, provider fundamentals, focused courses, and hands-on labs that close your gaps. Times are planning estimates unless a provider publishes duration; access, licensing, titles, versions and pricing can change.
+
+- [Official certification page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-cloudsec-engineer) and [July 2026 datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/palo-alto-networks-cloudsec-engineer.pdf) — **60–90 minutes** to annotate the unusually detailed blueprint and prerequisite list; public; canonical scope.
+- [Palo Alto Networks Certification Handbook](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf) — **30–45 minutes**; public; verify delivery, score, retakes, validity/renewal, accommodation, and program rules.
+- [Official Palo Alto Networks digital learning](https://learn.paloaltonetworks.com/learn) — locate the **Cloud Security Engineer** learning path; **estimate 25–45 hours** depending on background; learning/partner login may be required and the public certification link currently resolves to the learning portal rather than a stable deep link.
+- [Cortex Cloud documentation](https://docs.paloaltonetworks.com/resources/all-products-a-z) — **40–70 hours targeted reading and authorized labs**; public main documentation, though tenant help/features require entitlement; canonical product source for all six domains.
+- [Cortex XDR 5.x case detail](https://docs-cortex.paloaltonetworks.com/r/Cortex-XDR/Cortex-XDR-5.x-Documentation/Detailed-View) and [Cortex XSIAM documentation](https://cortex-docs.paloaltonetworks.com/) — **10–20 hours selected**; public; useful for case timelines, causality, detections and response workflows that overlap some runtime concepts; products and entitlements remain distinct.
+- [Cortex Cloud CSP onboarding tiers and licensing](https://docs-cortex.paloaltonetworks.com/r/Cortex-CLOUD/Cortex-Cloud-Posture-Management-Documentation/Understand-CSP-onboarding-tiers-and-licensing?contentId=Pgg5HMfhT2f1MKpUnTKXHw) — public current documentation; compare foundational and comprehensive permissions/features, then verify live SKU, add-ons and region before a lab.
+- [AWS security documentation](https://docs.aws.amazon.com/security/), [Microsoft Azure security documentation](https://learn.microsoft.com/azure/security/), [Google Cloud security documentation](https://cloud.google.com/docs/security), and [OCI security documentation](https://docs.oracle.com/en-us/iaas/Content/Security/Concepts/security.htm) — **20–40 hours targeted**; public; focus IAM hierarchy/conditions, audit/config, network, encryption, organization onboarding and native CLIs.
+- [Kubernetes documentation](https://kubernetes.io/docs/) and [Kubernetes Security Checklist](https://kubernetes.io/docs/concepts/security/security-checklist/) — **12–25 hours plus labs**; public; cover RBAC/service accounts, admission, networking, workloads, secrets, supply chain and troubleshooting.
+- [OpenTofu/Terraform documentation](https://opentofu.org/docs/), [AWS CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html), [Bicep](https://learn.microsoft.com/azure/azure-resource-manager/bicep/), and [Helm](https://helm.sh/docs/) — **20–40 hours selected and practiced**; public; be able to read plan/template/chart, IAM/resources, state, drift, failure and rollback. HashiCorp licensing/access may affect which Terraform resources you choose.
+- [GitHub secure use reference](https://docs.github.com/en/code-security), [SARIF 2.1.0 standard](https://docs.oasis-open.org/sarif/sarif/v2.1.0/sarif-v2.1.0.html), and [OpenSSF resources](https://openssf.org/resources/) — **10–18 hours selected**; public; useful for VCS integration, code scanning, interchange and supply-chain traceability.
+- [NIST SP 800-53 Rev. 5](https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final), [NIST SSDF](https://csrc.nist.gov/pubs/sp/800/218/final), [CVSS v4.0 specification](https://www.first.org/cvss/v4.0/specification-document), and [MITRE ATT&CK Cloud](https://attack.mitre.org/matrices/enterprise/cloud/) — **12–25 hours targeted**; public; standards/framework context, not a substitute for current product behavior.
+- [Palo Alto Networks LIVEcommunity](https://live.paloaltonetworks.com/) and [official YouTube channel](https://www.youtube.com/@PaloAltoNetworks) — **6–15 hours selected Cortex Cloud demos/release/troubleshooting content**; public; corroborate older media/community answers with July/August 2026 docs.
+- Authorized cloud sandboxes and a Cortex Cloud tenant or partner lab — **40–80 hours**; cloud charges and partner/tenant access may apply; use budgets, synthetic data, disposable identities/resources and cleanup. This is the highest-value preparation for the engineering-level scope.
+- [Cortex Platform Management OLX announcement](https://live.paloaltonetworks.com/t5/news/introducing-palo-alto-networks-nbsp-on-demand-learning/ta-p/1252677) — optional free foundational orientation announced by Palo Alto Networks; Learning Center course lessons were not inspectable here and do not replace the datasheet or authorized hands-on work.
+- O’Reilly, Pluralsight, Udemy, A Cloud Guru/other vendor courses on CNAPP, multicloud IAM, Kubernetes, DevSecOps, IaC and cloud incident response — **15–50 hours selected**; subscription/purchase may apply; no current course specifically aligned to this July 2026 credential was verified. Map modules to the official blueprint and primary docs.
+- Practice questions, if used — **2–4 hours per timed set plus review**; no current official, MeasureUp, or Whizlabs credential-specific practice product was verified September 2, 2026. Use authorized, explanation-rich questions only; avoid dumps and do not infer readiness from a single score.
+
+### PANW-CLOUD-SECURITY-PROFESSIONAL — Palo Alto Networks Certified Cloud Security Professional
+
+Resource details from the [PANW-CLOUD-SECURITY-PROFESSIONAL guide](../guides/PANW-CLOUD-SECURITY-PROFESSIONAL-palo-alto-networks-cloud-security-professional.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list, and it is not meant to be consumed in full. Start with the blueprint and official path, then select standards, provider docs, and labs for measured gaps. Cloud/product interfaces change; record the tenant, module, provider, and date used.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [Cloud Security Professional page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-cloudsec-professional) | Public | 10–15 minutes | Current credential, datasheet, learning path, and registration |
+| [August 2025 datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/cloudsec-professional-datasheet.pdf) | Public PDF | 45–75 minutes | Canonical five-domain scope and terminology |
+| [Certification Handbook](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf) | Public PDF | 30–45 minutes | Scoring, ESL, results, retakes, validity, renewal, and integrity |
+| [Official digital learning](https://learn.paloaltonetworks.com/learn) | Free account/login may be required | 30 minutes planning; modules vary | Follow the certification-page learning plan and record live durations |
+| [Cortex Cloud documentation](https://docs.paloaltonetworks.com/resources/all-products-a-z) | Public | 25–45 hours selected topics/labs | Platform, application, posture, runtime, data, identity, SOC, onboarding, and agents |
+| [Cortex Cloud CSP onboarding tiers and licensing](https://docs-cortex.paloaltonetworks.com/r/Cortex-CLOUD/Cortex-Cloud-Posture-Management-Documentation/Understand-CSP-onboarding-tiers-and-licensing?contentId=Pgg5HMfhT2f1MKpUnTKXHw) and [operational workflows](https://docs-cortex.paloaltonetworks.com/r/Cortex-CLOUD/Cortex-Cloud-Posture-Management-Documentation/Operational-workflows) | Public | 1–3 hours selected | Distinguish onboarding entitlements and review posture coverage; confirm current tenant SKUs and add-ons |
+| [Cortex Platform Management OLX announcement](https://live.paloaltonetworks.com/t5/news/introducing-palo-alto-networks-nbsp-on-demand-learning/ta-p/1252677) | Free according to Palo Alto Networks announcement; Learning Center access may vary | Course lessons/hours not inspected | Optional Cortex fundamentals; not a substitute for this weighted blueprint or hands-on preparation |
+| [AWS Security Learning Plan](https://explore.skillbuilder.aws/learn/learning_plan/view/91/security-learning-plan) | Free account; cloud-provider-specific | 10–20 hours selected fundamentals | AWS shared responsibility, IAM, logging, posture, workloads; not Cortex-specific |
+| [Microsoft Learn: Implement network security controls in Azure](https://learn.microsoft.com/en-us/training/paths/implement-network-security-controls-azure/) | Free | About 3 hours plus labs | Current Azure network-security path; add identity, logging, and workload modules for broader coverage |
+| [Google Cloud security learning](https://cloud.google.com/learn/training/security) | Free/paid paths | 8–20 hours selected content | GCP security and operations context; not Cortex-specific |
+| [OWASP Web Security Testing Guide](https://owasp.org/www-project-web-security-testing-guide/) | Public | 8–15 hours selected safe labs | Web/API testing concepts for authorized applications |
+| [NIST Secure Software Development Framework](https://csrc.nist.gov/pubs/sp/800/218/final) | Public primary guidance | 3–5 hours | SDLC, supply-chain, build, vulnerability, and remediation practices |
+| [Palo Alto Networks YouTube](https://www.youtube.com/@PaloAltoNetworks) | Free video | 4–10 hours selected current videos | Cortex Cloud visual overview/demos; verify current names and licensing |
+| [O'Reilly Cloud Security Handbook](https://www.oreilly.com/library/view/cloud-security-handbook/9781119816287/) | Paid; vendor-neutral/broader | 15–25 hours selected chapters | Architecture, IAM, data, workloads, DevSecOps, monitoring, and response context |
+
+No current official practice exam, MeasureUp product, or Whizlabs product explicitly aligned to this exact Cloud Security Professional blueprint was verified. Prefer authorized build-and-defend labs and current product documentation over unsourced question banks.
+
+### PANW-CYBERSECURITY-PRACTITIONER — Palo Alto Networks Certified Cybersecurity Practitioner
+
+Resource details from the [PANW-CYBERSECURITY-PRACTITIONER guide](../guides/PANW-CYBERSECURITY-PRACTITIONER-palo-alto-networks-cybersecurity-practitioner.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list, and it is not a prescription to consume everything. Start with the blueprint, select the official learning modules that close measured gaps, and use standards/labs for durable concepts. Durations are publisher-listed or clearly labeled estimates and can change.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [Cybersecurity Practitioner certification page](https://www.paloaltonetworks.com/services/education/panw-cybersecurity-practitioner) | Public | 10–15 minutes | Current credential identity, datasheet, learning path, and registration |
+| [December 2025 exam datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/practitioner-datasheet.pdf) | Public PDF | 45–75 minutes | Canonical six-domain weighted blueprint and named product functions |
+| [Palo Alto Networks Certification Handbook](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf) | Public PDF | 30–45 minutes | Scoring, ESL, retakes, validity, renewal, integrity, and result policy |
+| [Official Palo Alto Networks digital learning](https://learn.paloaltonetworks.com/learn) | Free account/login may be required | 20–30 minutes planning; modules vary | Locate the Cybersecurity Practitioner path; the public certification page currently resolves to the portal rather than a stable deep link |
+| [Palo Alto Networks technical documentation](https://docs.paloaltonetworks.com/) | Public | 8–15 hours selected topics | Current NGFW, Prisma, Cortex, cloud, and CDSS behavior |
+| [MITRE ATT&CK Enterprise](https://attack.mitre.org/matrices/enterprise/) | Public | 3–6 hours overview and mapping lab | Tactics, techniques, sub-techniques, software/groups, mitigations, and data sources |
+| [NIST SP 800-207 Zero Trust Architecture](https://csrc.nist.gov/pubs/sp/800/207/final) | Public | 2–4 hours | Durable Zero Trust concepts and policy decision/enforcement architecture |
+| [Cortex Cloud documentation](https://docs.paloaltonetworks.com/resources/all-products-a-z) | Public | 3–6 hours selected current pages | Code/cloud/runtime/SOC platform mapping; verify packaging |
+| [Cortex XDR 5.x case details](https://docs-cortex.paloaltonetworks.com/r/Cortex-XDR/Cortex-XDR-5.x-Documentation/Detailed-View) | Public | 3–6 hours selected current pages | Current case timelines, causality chains, issues/insights and response; keep XDR product/version separate from Cortex Cloud |
+| [Cortex Platform Management OLX announcement](https://live.paloaltonetworks.com/t5/news/introducing-palo-alto-networks-nbsp-on-demand-learning/ta-p/1252677) | Free according to Palo Alto Networks announcement; Learning Center access may vary | Course lessons/hours not inspected | Optional Cortex fundamentals only; the six-domain Practitioner path was not inspected and this is not full exam coverage |
+| [Palo Alto Networks YouTube](https://www.youtube.com/@PaloAltoNetworks) | Free video | 3–8 hours selected current videos | Visual product/concept explanations; map every video to a blueprint gap |
+| [Palo Alto Networks Cybersecurity Fundamentals](https://www.oreilly.com/videos/palo-alto-networks/9781835885468/) | Paid/O'Reilly; 2024 course | 6h47m listed plus labs | Broad alternate introduction; older product names require current-doc reconciliation |
+| [Pluralsight Palo Alto Firewalls for Network Protection](https://www.pluralsight.com/paths/palo-alto-firewalls-for-network-protection) | Paid; older NGFW-focused path | About 4h05m listed core course plus labs | Network-security subset only; not full exam coverage and may use older UI/features |
+| [NDG Cybersecurity Essentials PAN8 labs](https://www.netdevgroup.com/content/paloalto/labs/cybersecurity_essentials.html) | Institution/NETLAB+ access; academic partner may be required | 12 labs; plan 12–24 hours | Legacy but practical Zero Trust/authentication/App-ID/decryption/endpoint-style exercises; reconcile PAN-OS version |
+
+No current official practice exam, MeasureUp product, or Whizlabs product explicitly aligned to this exact Practitioner blueprint was verified. Prefer original scenario checks and the current official learning path over question banks that do not identify source, version, and authorization.
+
+### PANW-NETWORK-SECURITY-ANALYST — Palo Alto Networks Certified Network Security Analyst
+
+Resource details from the [PANW-NETWORK-SECURITY-ANALYST guide](../guides/PANW-NETWORK-SECURITY-ANALYST-palo-alto-networks-network-security-analyst.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list, and it is not meant to be consumed in full. Start with the blueprint and page-linked official path, then choose current SCM/PAN-OS documentation and authorized labs for gaps. Record platform/version because interfaces and feature support change.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [Network Security Analyst page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-netsec-analyst) | Public | 10–15 minutes | Current credential, datasheet, learning path, registration |
+| [August 2025 datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/netsec-analyst-datasheet.pdf) | Public PDF | 45–75 minutes | Canonical four-domain weighted objective map |
+| [Certification Handbook](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf) | Public PDF | 30–45 minutes | Scoring, ESL, result, retake, validity, renewal, and integrity |
+| [Official digital learning](https://learn.paloaltonetworks.com/learn) | Free account/login may be required | 30 minutes planning; modules vary | Follow the certification-page plan and record current duration/version |
+| [Strata Cloud Manager documentation](https://docs.paloaltonetworks.com/strata-cloud-manager) | Public | 20–35 hours selected topics/labs | Folders/snippets, objects/policy, deployment, insights, optimizer, logs, incidents, health |
+| [Get Started with Strata Cloud Manager](https://docs.paloaltonetworks.com/strata-cloud-manager/navigation/get-started) | Public | 1–2 hours selected | Current folder scope, configuration, variables/snippets and push status; verify feature availability by managed product, service and license |
+| [PAN-OS policy documentation](https://docs.paloaltonetworks.com/pan-os) | Public | 15–25 hours selected topics | Security/NAT/decryption/override/PBF/profiles/objects and packet/runtime behavior |
+| [PAN-OS NAT rules](https://docs.paloaltonetworks.com/ngfw/networking/nat/nat-policy-rules), [decryption policy rules](https://docs.paloaltonetworks.com/network-security/decryption/administration/enabling-decryption/create-decryption-policy-rule), and [decryption profiles](https://docs.paloaltonetworks.com/network-security/decryption/administration/enabling-decryption/create-decryption-profile) | Public | 4–8 hours selected | First-match NAT behavior and current decryption setup; note version- and model-specific behavior |
+| [Strata Cloud Manager: NGFW Management OLX announcement](https://live.paloaltonetworks.com/t5/news/introducing-palo-alto-networks-nbsp-on-demand-learning/ta-p/1252677) | Free according to Palo Alto Networks announcement; Learning Center access may vary | Course lessons/hours not inspected | Optional SCM orientation, not full Network Security Analyst coverage; public announcement inspected, course content was not |
+| [Security Policy Best Practices](https://docs.paloaltonetworks.com/best-practices/security-policy-best-practices) | Public | 5–10 hours | App-based migration, profiles, decryption, cleanup, and Policy Optimizer context |
+| [Palo Alto Networks YouTube](https://www.youtube.com/@PaloAltoNetworks) | Free video | 4–10 hours selected current demos | SCM/Strata architecture and workflow visuals; verify current UI |
+| [Pluralsight Palo Alto Firewalls for Network Protection](https://www.pluralsight.com/paths/palo-alto-firewalls-for-network-protection) | Paid; older path | About 4h05m listed core course plus labs | PAN-OS policy subset; not SCM-complete and may use older UI |
+| [NDG PAN11 Firewall Essentials](https://www.netdevgroup.com/online/courses/cybersecurity/pan11-firewall-essentials) | Paid/institutional | 14 labs; plan 15–25 hours | Authorized firewall configuration practice; map older PCNSA alignment to this blueprint |
+
+No current official practice exam, MeasureUp product, or Whizlabs product explicitly aligned to this exact Network Security Analyst blueprint was verified. Prefer current documentation and original change/troubleshooting labs over unsourced question banks.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

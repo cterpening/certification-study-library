@@ -15774,7 +15774,7 @@
       "review_type": "source-validation",
       "reviewed_on": "2026-09-02",
       "outcome": "passed",
-      "blueprint_snapshot_path": "data/objective-snapshots/nse-6-security-operations-official-objectives.txt",
+      "blueprint_snapshot_path": "data/objective-snapshots/archive/nse-6-security-operations-official-objectives-cb2f3954b5dc6ab4c74fda5460c63dcc479732c00b5beb8131111fd555d25c9f.txt",
       "blueprint_snapshot_sha256": "cb2f3954b5dc6ab4c74fda5460c63dcc479732c00b5beb8131111fd555d25c9f",
       "objective_coverage": [
         {
@@ -15924,7 +15924,7 @@
       "review_type": "source-validation",
       "reviewed_on": "2026-09-02",
       "outcome": "passed",
-      "blueprint_snapshot_path": "data/objective-snapshots/nse-i-ot-security-official-objectives.txt",
+      "blueprint_snapshot_path": "data/objective-snapshots/archive/nse-i-ot-security-official-objectives-8953b14715ee311dd8660affe1a4f41360eada1a208b53ec5bfd8641f6c24f96.txt",
       "blueprint_snapshot_sha256": "8953b14715ee311dd8660affe1a4f41360eada1a208b53ec5bfd8641f6c24f96",
       "objective_coverage": [
         {
@@ -27469,6 +27469,682 @@
         "missing_or_error": 0
       },
       "notes": "Current official exam/track pages, material cited sources, source health and applicable lifecycle/release channels reviewed October 28, 2026. Guide is source-validated; human/community review remains pending. Five blocked source-health requests are account/automated access limits across this batch, not missing/error links. Full semantic audit is recorded separately."
+    },
+      {
+      "id": "nse-6-security-operations-2026-10-28-source-validation",
+      "exam_code": "NSE-6-SECURITY-OPERATIONS",
+      "guide_path": "guides/NSE-6-SECURITY-OPERATIONS-fortinet-nse-6-security-operations.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/nse-6-security-operations-official-objectives.txt",
+      "blueprint_snapshot_sha256": "386ab01206c22c4a33a8c1f7c38ea5ddf34a814606c3f1cf56c772a0d4a7ecab",
+      "objective_coverage": [
+        {
+          "objective_group": "FortiSIEM Analyst — Analytics",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "FortiSIEM Analyst — Rules and subpatterns",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "FortiSIEM Analyst — Incidents, notifications, and remediation",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "FortiSIEM Analyst — ML, UEBA, and ZTNA",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "FortiNDR Cloud Analyst — Architecture and system settings (15–25%)",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "FortiNDR Cloud Analyst — Events and queries (25–35%)",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "FortiNDR Cloud Analyst — Detection (15–25%)",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "FortiNDR Cloud Analyst — Investigations and integrations (20–30%)",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "FortiSOAR Analyst — FortiSOAR architecture and data models (20–30%)",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "FortiSOAR Analyst — Playbook Development (25–35%)",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "FortiSOAR Analyst — Incident Handling (5–15%; the official page omits the percent sign after 15)",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "FortiSOAR Analyst — APIs and Connectors (15–25%)",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "FortiSOAR Analyst — Troubleshooting (15–25%)",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "FortiRecon deployment (25–35%), core module analysis (25–30%), intelligence reports (15–25%), orchestration/APIs (15–25%)",
+          "guide_sections": [
+            "FortiRecon lane",
+            "Integrated scenarios",
+            "Readiness checks"
+          ]
+        },
+        {
+          "objective_group": "FortiDeceptor deployment/system configuration (35–45%) and deception (55–65%)",
+          "guide_sections": [
+            "FortiDeceptor lane",
+            "Integrated scenarios",
+            "Readiness checks"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 17,
+        "reachable": 17,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "Current official route and status pages were opened and compared with the guide. Version-specific technical/course references were reviewed; account-gated course lessons were not claimed as inspected. Independent full-guide audit is recorded separately."
+    },
+      {
+      "id": "nse-7-cloud-security-2026-10-28-source-validation",
+      "exam_code": "NSE-7-CLOUD-SECURITY",
+      "guide_path": "guides/NSE-7-CLOUD-SECURITY-fortinet-nse-7-cloud-security.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/nse-7-cloud-security-official-objectives.txt",
+      "blueprint_snapshot_sha256": "22927de9215a1c05ce16cec640852c25dc4d17a071a791dcd2c5a87ff1d3ba72",
+      "objective_coverage": [
+        {
+          "objective_group": "Security solutions deployment",
+          "guide_sections": [
+            "Section 1",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Automation tools",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Cloud infrastructure monitoring",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Troubleshooting",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenarios"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 12,
+        "reachable": 12,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "Current official route and status pages were opened and compared with the guide. Version-specific technical/course references were reviewed; account-gated course lessons were not claimed as inspected. Independent full-guide audit is recorded separately."
+    },
+      {
+      "id": "nse-7-sase-2026-10-28-source-validation",
+      "exam_code": "NSE-7-SASE",
+      "guide_path": "guides/NSE-7-SASE-fortinet-nse-7-sase.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/nse-7-sase-official-objectives.txt",
+      "blueprint_snapshot_sha256": "d16c69aa3a18263d75937cc625556bbd11a697b6bf12d7d70906adac4f181a68",
+      "objective_coverage": [
+        {
+          "objective_group": "SD-WAN architecture and deployment (10–20%)",
+          "guide_sections": [
+            "Section 1",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "SD-WAN traffic control and IPsec (20–30%)",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "FortiSASE architecture and integration (15–25%)",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "FortiSASE deployment and secure access (20–30%)",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Centralized management, visibility and troubleshooting (10–20%)",
+          "guide_sections": [
+            "Section 5",
+            "Integrated scenarios"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 11,
+        "reachable": 11,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "Current official route and status pages were opened and compared with the guide. Version-specific technical/course references were reviewed; account-gated course lessons were not claimed as inspected. Independent full-guide audit is recorded separately."
+    },
+      {
+      "id": "nse-7-secure-networking-2026-10-28-source-validation",
+      "exam_code": "NSE-7-SECURE-NETWORKING",
+      "guide_path": "guides/NSE-7-SECURE-NETWORKING-fortinet-nse-7-secure-networking.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/nse-7-secure-networking-official-objectives.txt",
+      "blueprint_snapshot_sha256": "efd3f0187c4e4561e7eef93b46cfa08fe8082fe5261beff0e9e763c85bda60ca",
+      "objective_coverage": [
+        {
+          "objective_group": "System configuration and SD-WAN setup (20–30%)",
+          "guide_sections": [
+            "Section 1",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Central management (15–25%)",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Security profiles (5–15%)",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Rules and routing (25–35%)",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Advanced IPsec (25–35%)",
+          "guide_sections": [
+            "Section 5",
+            "Integrated scenarios"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 9,
+        "reachable": 9,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "Current official route and status pages were opened and compared with the guide. Version-specific technical/course references were reviewed; account-gated course lessons were not claimed as inspected. Independent full-guide audit is recorded separately."
+    },
+      {
+      "id": "nse-7-security-operations-2026-10-28-source-validation",
+      "exam_code": "NSE-7-SECURITY-OPERATIONS",
+      "guide_path": "guides/NSE-7-SECURITY-OPERATIONS-fortinet-nse-7-security-operations.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/nse-7-security-operations-official-objectives.txt",
+      "blueprint_snapshot_sha256": "8eff12fa2587ffee934184ef4a675da3458ab62158286a2537edba75e286e39c",
+      "objective_coverage": [
+        {
+          "objective_group": "SOC Concepts and Frameworks",
+          "guide_sections": [
+            "Section 1",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Detection Capabilities",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "SOAR Incident Handling and Threat Hunting",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "SOAR Playbook Development",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenarios"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 10,
+        "reachable": 10,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "Current official route and status pages were opened and compared with the guide. Version-specific technical/course references were reviewed; account-gated course lessons were not claimed as inspected. Independent full-guide audit is recorded separately."
+    },
+      {
+      "id": "nse-i-ot-security-2026-10-28-source-validation",
+      "exam_code": "NSE-I-OT-SECURITY",
+      "guide_path": "guides/NSE-I-OT-SECURITY-fortinet-industry-ot-security.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/nse-i-ot-security-official-objectives.txt",
+      "blueprint_snapshot_sha256": "57b6b7679dd8d5c82e3bcb3f7d98594c5db06ded2baca2e01fc814fb72368066",
+      "objective_coverage": [
+        {
+          "objective_group": "Asset management (15–25%)",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Network access control (25–35%)",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Network security (25–35%)",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Monitoring and risk assessment (20–30%)",
+          "guide_sections": [
+            "Section 5",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Exam contract: 70 minutes, 35–40 questions, English, available",
+          "guide_sections": [
+            "Front matter",
+            "Exam contract",
+            "Readiness checks"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 11,
+        "reachable": 10,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "Current official route and status pages were opened and compared with the guide. Version-specific technical/course references were reviewed; account-gated course lessons were not claimed as inspected. Independent full-guide audit is recorded separately."
+    },
+      {
+      "id": "panw-cloud-security-engineer-2026-10-28-source-validation",
+      "exam_code": "PANW-CLOUD-SECURITY-ENGINEER",
+      "guide_path": "guides/PANW-CLOUD-SECURITY-ENGINEER-palo-alto-networks-cloud-security-engineer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/panw-cloud-security-engineer-official-objectives.txt",
+      "blueprint_snapshot_sha256": "8a226a5c7f86018cb4d6767ded061b772eeabe8c0bcff84e9fb4371970f8f0d1",
+      "objective_coverage": [
+        {
+          "objective_group": "Planning and Installation (12%)",
+          "guide_sections": [
+            "Section 1",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Integration (16%)",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Posture Security (22%)",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Runtime Security (18%)",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Application Security (16%)",
+          "guide_sections": [
+            "Section 5",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Troubleshooting (16%)",
+          "guide_sections": [
+            "Section 6",
+            "Integrated scenarios"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 28,
+        "reachable": 26,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Current official route and status pages were opened and compared with the guide. Version-specific technical/course references were reviewed; account-gated course lessons were not claimed as inspected. Independent full-guide audit is recorded separately."
+    },
+      {
+      "id": "panw-cloud-security-professional-2026-10-28-source-validation",
+      "exam_code": "PANW-CLOUD-SECURITY-PROFESSIONAL",
+      "guide_path": "guides/PANW-CLOUD-SECURITY-PROFESSIONAL-palo-alto-networks-cloud-security-professional.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/panw-cloud-security-professional-official-objectives.txt",
+      "blueprint_snapshot_sha256": "85d843c3d92c883b854add6b05c2bae20e18c18da44ce42d9f62ec7d9f8a89ae",
+      "objective_coverage": [
+        {
+          "objective_group": "Security Operations Center Fundamentals (10%)",
+          "guide_sections": [
+            "Section 1",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Cortex Fundamentals (15%)",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Cloud Posture Security (29%)",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Cloud Runtime Security (26%)",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Application Security (20%)",
+          "guide_sections": [
+            "Section 5",
+            "Integrated scenarios"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 15,
+        "reachable": 13,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Current official route and status pages were opened and compared with the guide. Version-specific technical/course references were reviewed; account-gated course lessons were not claimed as inspected. Independent full-guide audit is recorded separately."
+    },
+      {
+      "id": "panw-cybersecurity-practitioner-2026-10-28-source-validation",
+      "exam_code": "PANW-CYBERSECURITY-PRACTITIONER",
+      "guide_path": "guides/PANW-CYBERSECURITY-PRACTITIONER-palo-alto-networks-cybersecurity-practitioner.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/panw-cybersecurity-practitioner-official-objectives.txt",
+      "blueprint_snapshot_sha256": "600eac4ecbdddea9b5ce0e0dba159accac70b13b677dbcfdeaa0e19926dcd34b",
+      "objective_coverage": [
+        {
+          "objective_group": "Cybersecurity (19%)",
+          "guide_sections": [
+            "Section 1",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Network Security (19%)",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Secure Access (14%)",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Cloud Security (20%)",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Endpoint Security (15%)",
+          "guide_sections": [
+            "Section 5",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Security Operations (13%)",
+          "guide_sections": [
+            "Section 6",
+            "Integrated scenarios"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 15,
+        "reachable": 13,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Current official route and status pages were opened and compared with the guide. Version-specific technical/course references were reviewed; account-gated course lessons were not claimed as inspected. Independent full-guide audit is recorded separately."
+    },
+      {
+      "id": "panw-network-security-analyst-2026-10-28-source-validation",
+      "exam_code": "PANW-NETWORK-SECURITY-ANALYST",
+      "guide_path": "guides/PANW-NETWORK-SECURITY-ANALYST-palo-alto-networks-network-security-analyst.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/panw-network-security-analyst-official-objectives.txt",
+      "blueprint_snapshot_sha256": "10b40a968bc62f35505e71b5972b161cedebdc723bf0f12bd31a90942d657ece",
+      "objective_coverage": [
+        {
+          "objective_group": "Object Configuration Creation and Application (30%)",
+          "guide_sections": [
+            "Section 1",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Policy Creation and Application (30%)",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Management and Operations (26%)",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Troubleshooting (14%)",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenarios"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 15,
+        "reachable": 14,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "Current official route and status pages were opened and compared with the guide. Version-specific technical/course references were reviewed; account-gated course lessons were not claimed as inspected. Independent full-guide audit is recorded separately."
     }
   ]
 }

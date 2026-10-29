@@ -5273,7 +5273,7 @@
           "vendor_id": "fortinet",
           "guide_path": "guides/NSE-6-SECURITY-OPERATIONS-fortinet-nse-6-security-operations.md",
           "guide_content_sha256": "8cfb5d309b26fc8c3ed37b87b806726061cce663db20f1e73132c3c211ed209e",
-          "blueprint_snapshot_path": "data/objective-snapshots/nse-6-security-operations-official-objectives.txt",
+          "blueprint_snapshot_path": "data/objective-snapshots/archive/nse-6-security-operations-official-objectives-cb2f3954b5dc6ab4c74fda5460c63dcc479732c00b5beb8131111fd555d25c9f.txt",
           "blueprint_snapshot_sha256": "cb2f3954b5dc6ab4c74fda5460c63dcc479732c00b5beb8131111fd555d25c9f",
           "audited_on": "2026-09-06",
           "verdict": "pass",
@@ -10749,7 +10749,7 @@
           "vendor_id": "fortinet",
           "guide_path": "guides/NSE-I-OT-SECURITY-fortinet-industry-ot-security.md",
           "guide_content_sha256": "f029f4d11d2132779b703435509f0560ff06739d39d27845ada7fdf6d19db0f0",
-          "blueprint_snapshot_path": "data/objective-snapshots/nse-i-ot-security-official-objectives.txt",
+          "blueprint_snapshot_path": "data/objective-snapshots/archive/nse-i-ot-security-official-objectives-8953b14715ee311dd8660affe1a4f41360eada1a208b53ec5bfd8641f6c24f96.txt",
           "blueprint_snapshot_sha256": "8953b14715ee311dd8660affe1a4f41360eada1a208b53ec5bfd8641f6c24f96",
           "audited_on": "2026-09-06",
           "verdict": "pass",
@@ -18842,6 +18842,586 @@
       "open_findings": 0,
       "closed_findings": 3
     }
-  }
+  },
+    {
+      "id": "g02-independent-review-2026-10-28",
+      "title": "G02 non-Microsoft refresh: fresh-context independent semantic review",
+      "rubric_version": 2,
+      "created_on": "2026-10-28",
+      "completed_on": "2026-10-28",
+      "status": "completed",
+      "audit_mode": "read-only",
+      "selection_method": "Explicit ten-guide batch from .maintenance/2026-10-29-nonms-refresh/g02-audit-manifest-final.json",
+      "rubric_path": "docs/AI-AUDIT.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "label": "Codex fresh-context independent reviewer",
+        "independence": "fresh-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "NSE-6-SECURITY-OPERATIONS",
+        "NSE-7-CLOUD-SECURITY",
+        "NSE-7-SASE",
+        "NSE-7-SECURE-NETWORKING",
+        "NSE-7-SECURITY-OPERATIONS",
+        "NSE-I-OT-SECURITY",
+        "PANW-CLOUD-SECURITY-ENGINEER",
+        "PANW-CLOUD-SECURITY-PROFESSIONAL",
+        "PANW-CYBERSECURITY-PRACTITIONER",
+        "PANW-NETWORK-SECURITY-ANALYST"
+      ],
+      "results": [
+        {
+          "exam_code": "NSE-6-SECURITY-OPERATIONS",
+          "vendor_id": "fortinet",
+          "guide_path": "guides/NSE-6-SECURITY-OPERATIONS-fortinet-nse-6-security-operations.md",
+          "guide_content_sha256": "04b5e34bc30bdc4a8e8c73b0caed7711aa2da44021bed956532be61cc89e8b02",
+          "blueprint_snapshot_path": "data/objective-snapshots/nse-6-security-operations-official-objectives.txt",
+          "blueprint_snapshot_sha256": "386ab01206c22c4a33a8c1f7c38ea5ddf34a814606c3f1cf56c772a0d4a7ecab",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "Credential identity, published option/domain structure, product baseline and lifecycle were compared with exact objective/status snapshots and current official pages. Current five-option pathway and availability are consistent; FortiRecon and FortiDeceptor now receive objective-group explanations and readiness drills."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Published groups are mapped to substantive, findable teaching content and readiness material; multi-option pathways are explicit. Current five-option pathway and availability are consistent; FortiRecon and FortiDeceptor now receive objective-group explanations and readiness drills."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Exam-contract claims are tied to official snapshots/pages; version-sensitive behavior is paired with first-party documentation or visibly qualified. Current five-option pathway and availability are consistent; FortiRecon and FortiDeceptor now receive objective-group explanations and readiness drills."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "No unsupported counts, scores, weights, prerequisites, delivery modes or lifecycle dates were found in the reviewed current content. Current five-option pathway and availability are consistent; FortiRecon and FortiDeceptor now receive objective-group explanations and readiness drills."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Explanations, scenarios and answers were internally consistent and technically defensible at the stated version and scope. Current five-option pathway and availability are consistent; FortiRecon and FortiDeceptor now receive objective-group explanations and readiness drills."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Changing product/version/UI, source limitations, current delivery/lifecycle or cross-page discrepancies are visibly bounded. Current five-option pathway and availability are consistent; FortiRecon and FortiDeceptor now receive objective-group explanations and readiness drills."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Labs use owned, synthetic, simulated or explicitly authorized nonproduction resources with scoped actions and recovery/cleanup controls. Current five-option pathway and availability are consistent; FortiRecon and FortiDeceptor now receive objective-group explanations and readiness drills."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks align to the teaching material, have usable answers, and do not present recalled or leaked exam content. Current five-option pathway and availability are consistent; FortiRecon and FortiDeceptor now receive objective-group explanations and readiness drills."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Current manifest guide hashes and raw-byte objective-snapshot hashes match; source-validation receipts pass; human-review status is not overstated. Current five-option pathway and availability are consistent; FortiRecon and FortiDeceptor now receive objective-group explanations and readiness drills."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant copied passage, suspicious overlap, contradictory template leakage or cross-vendor product leakage was found. Current five-option pathway and availability are consistent; FortiRecon and FortiDeceptor now receive objective-group explanations and readiness drills."
+            }
+          },
+          "findings": [],
+          "notes": "Fresh-context, read-only review of the complete guide and front matter; objective/status snapshots; exam row and seed; latest passed source-validation receipt; and registered citation/source-health records. Relevant public first-party material was consulted. No live lab execution or human review is claimed. Current five-option pathway and availability are consistent; FortiRecon and FortiDeceptor now receive objective-group explanations and readiness drills."
+        },
+        {
+          "exam_code": "NSE-7-CLOUD-SECURITY",
+          "vendor_id": "fortinet",
+          "guide_path": "guides/NSE-7-CLOUD-SECURITY-fortinet-nse-7-cloud-security.md",
+          "guide_content_sha256": "c884e1708370c431f9b673ea03d3200ea63267af9d2c0756b82cc3e9556a3d75",
+          "blueprint_snapshot_path": "data/objective-snapshots/nse-7-cloud-security-official-objectives.txt",
+          "blueprint_snapshot_sha256": "22927de9215a1c05ce16cec640852c25dc4d17a071a791dcd2c5a87ff1d3ba72",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "Credential identity, published option/domain structure, product baseline and lifecycle were compared with exact objective/status snapshots and current official pages. Four unweighted objectives, current 7.6.4 baseline, delivery and prerequisite statements are represented; version-sensitive cloud behavior is bounded."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Published groups are mapped to substantive, findable teaching content and readiness material; multi-option pathways are explicit. Four unweighted objectives, current 7.6.4 baseline, delivery and prerequisite statements are represented; version-sensitive cloud behavior is bounded."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Exam-contract claims are tied to official snapshots/pages; version-sensitive behavior is paired with first-party documentation or visibly qualified. Four unweighted objectives, current 7.6.4 baseline, delivery and prerequisite statements are represented; version-sensitive cloud behavior is bounded."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "No unsupported counts, scores, weights, prerequisites, delivery modes or lifecycle dates were found in the reviewed current content. Four unweighted objectives, current 7.6.4 baseline, delivery and prerequisite statements are represented; version-sensitive cloud behavior is bounded."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Explanations, scenarios and answers were internally consistent and technically defensible at the stated version and scope. Four unweighted objectives, current 7.6.4 baseline, delivery and prerequisite statements are represented; version-sensitive cloud behavior is bounded."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Changing product/version/UI, source limitations, current delivery/lifecycle or cross-page discrepancies are visibly bounded. Four unweighted objectives, current 7.6.4 baseline, delivery and prerequisite statements are represented; version-sensitive cloud behavior is bounded."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Labs use owned, synthetic, simulated or explicitly authorized nonproduction resources with scoped actions and recovery/cleanup controls. Four unweighted objectives, current 7.6.4 baseline, delivery and prerequisite statements are represented; version-sensitive cloud behavior is bounded."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks align to the teaching material, have usable answers, and do not present recalled or leaked exam content. Four unweighted objectives, current 7.6.4 baseline, delivery and prerequisite statements are represented; version-sensitive cloud behavior is bounded."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Current manifest guide hashes and raw-byte objective-snapshot hashes match; source-validation receipts pass; human-review status is not overstated. Four unweighted objectives, current 7.6.4 baseline, delivery and prerequisite statements are represented; version-sensitive cloud behavior is bounded."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant copied passage, suspicious overlap, contradictory template leakage or cross-vendor product leakage was found. Four unweighted objectives, current 7.6.4 baseline, delivery and prerequisite statements are represented; version-sensitive cloud behavior is bounded."
+            }
+          },
+          "findings": [],
+          "notes": "Fresh-context, read-only review of the complete guide and front matter; objective/status snapshots; exam row and seed; latest passed source-validation receipt; and registered citation/source-health records. Relevant public first-party material was consulted. No live lab execution or human review is claimed. Four unweighted objectives, current 7.6.4 baseline, delivery and prerequisite statements are represented; version-sensitive cloud behavior is bounded."
+        },
+        {
+          "exam_code": "NSE-7-SASE",
+          "vendor_id": "fortinet",
+          "guide_path": "guides/NSE-7-SASE-fortinet-nse-7-sase.md",
+          "guide_content_sha256": "7a2ffd1ac9e0741019612ad71466c58d49131fb16f65540dd974c0e0204c10aa",
+          "blueprint_snapshot_path": "data/objective-snapshots/nse-7-sase-official-objectives.txt",
+          "blueprint_snapshot_sha256": "d16c69aa3a18263d75937cc625556bbd11a697b6bf12d7d70906adac4f181a68",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "Credential identity, published option/domain structure, product baseline and lifecycle were compared with exact objective/status snapshots and current official pages. Five weighted groups receive substantive coverage; current FortiSASE 26 baseline is stated and the official naming discrepancy is disclosed."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Published groups are mapped to substantive, findable teaching content and readiness material; multi-option pathways are explicit. Five weighted groups receive substantive coverage; current FortiSASE 26 baseline is stated and the official naming discrepancy is disclosed."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Exam-contract claims are tied to official snapshots/pages; version-sensitive behavior is paired with first-party documentation or visibly qualified. Five weighted groups receive substantive coverage; current FortiSASE 26 baseline is stated and the official naming discrepancy is disclosed."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "No unsupported counts, scores, weights, prerequisites, delivery modes or lifecycle dates were found in the reviewed current content. Five weighted groups receive substantive coverage; current FortiSASE 26 baseline is stated and the official naming discrepancy is disclosed."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Explanations, scenarios and answers were internally consistent and technically defensible at the stated version and scope. Five weighted groups receive substantive coverage; current FortiSASE 26 baseline is stated and the official naming discrepancy is disclosed."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Changing product/version/UI, source limitations, current delivery/lifecycle or cross-page discrepancies are visibly bounded. Five weighted groups receive substantive coverage; current FortiSASE 26 baseline is stated and the official naming discrepancy is disclosed."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Labs use owned, synthetic, simulated or explicitly authorized nonproduction resources with scoped actions and recovery/cleanup controls. Five weighted groups receive substantive coverage; current FortiSASE 26 baseline is stated and the official naming discrepancy is disclosed."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks align to the teaching material, have usable answers, and do not present recalled or leaked exam content. Five weighted groups receive substantive coverage; current FortiSASE 26 baseline is stated and the official naming discrepancy is disclosed."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Current manifest guide hashes and raw-byte objective-snapshot hashes match; source-validation receipts pass; human-review status is not overstated. Five weighted groups receive substantive coverage; current FortiSASE 26 baseline is stated and the official naming discrepancy is disclosed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant copied passage, suspicious overlap, contradictory template leakage or cross-vendor product leakage was found. Five weighted groups receive substantive coverage; current FortiSASE 26 baseline is stated and the official naming discrepancy is disclosed."
+            }
+          },
+          "findings": [],
+          "notes": "Fresh-context, read-only review of the complete guide and front matter; objective/status snapshots; exam row and seed; latest passed source-validation receipt; and registered citation/source-health records. Relevant public first-party material was consulted. No live lab execution or human review is claimed. Five weighted groups receive substantive coverage; current FortiSASE 26 baseline is stated and the official naming discrepancy is disclosed."
+        },
+        {
+          "exam_code": "NSE-7-SECURE-NETWORKING",
+          "vendor_id": "fortinet",
+          "guide_path": "guides/NSE-7-SECURE-NETWORKING-fortinet-nse-7-secure-networking.md",
+          "guide_content_sha256": "d13a84000be98e9c3ef9ec4babe902be4c4fa4ea995cb384d6c178105bfdc960",
+          "blueprint_snapshot_path": "data/objective-snapshots/nse-7-secure-networking-official-objectives.txt",
+          "blueprint_snapshot_sha256": "efd3f0187c4e4561e7eef93b46cfa08fe8082fe5261beff0e9e763c85bda60ca",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "Credential identity, published option/domain structure, product baseline and lifecycle were compared with exact objective/status snapshots and current official pages. Five weighted groups, current comprehensive exam scope, versions and test-center delivery are represented."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Published groups are mapped to substantive, findable teaching content and readiness material; multi-option pathways are explicit. Five weighted groups, current comprehensive exam scope, versions and test-center delivery are represented."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Exam-contract claims are tied to official snapshots/pages; version-sensitive behavior is paired with first-party documentation or visibly qualified. Five weighted groups, current comprehensive exam scope, versions and test-center delivery are represented."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "No unsupported counts, scores, weights, prerequisites, delivery modes or lifecycle dates were found in the reviewed current content. Five weighted groups, current comprehensive exam scope, versions and test-center delivery are represented."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Explanations, scenarios and answers were internally consistent and technically defensible at the stated version and scope. Five weighted groups, current comprehensive exam scope, versions and test-center delivery are represented."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Changing product/version/UI, source limitations, current delivery/lifecycle or cross-page discrepancies are visibly bounded. Five weighted groups, current comprehensive exam scope, versions and test-center delivery are represented."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Labs use owned, synthetic, simulated or explicitly authorized nonproduction resources with scoped actions and recovery/cleanup controls. Five weighted groups, current comprehensive exam scope, versions and test-center delivery are represented."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks align to the teaching material, have usable answers, and do not present recalled or leaked exam content. Five weighted groups, current comprehensive exam scope, versions and test-center delivery are represented."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Current manifest guide hashes and raw-byte objective-snapshot hashes match; source-validation receipts pass; human-review status is not overstated. Five weighted groups, current comprehensive exam scope, versions and test-center delivery are represented."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant copied passage, suspicious overlap, contradictory template leakage or cross-vendor product leakage was found. Five weighted groups, current comprehensive exam scope, versions and test-center delivery are represented."
+            }
+          },
+          "findings": [],
+          "notes": "Fresh-context, read-only review of the complete guide and front matter; objective/status snapshots; exam row and seed; latest passed source-validation receipt; and registered citation/source-health records. Relevant public first-party material was consulted. No live lab execution or human review is claimed. Five weighted groups, current comprehensive exam scope, versions and test-center delivery are represented."
+        },
+        {
+          "exam_code": "NSE-7-SECURITY-OPERATIONS",
+          "vendor_id": "fortinet",
+          "guide_path": "guides/NSE-7-SECURITY-OPERATIONS-fortinet-nse-7-security-operations.md",
+          "guide_content_sha256": "1c1e939bc63216b3338b34c82f3ea70d686f94d82e0df799470eccf5d97f5088",
+          "blueprint_snapshot_path": "data/objective-snapshots/nse-7-security-operations-official-objectives.txt",
+          "blueprint_snapshot_sha256": "8eff12fa2587ffee934184ef4a675da3458ab62158286a2537edba75e286e39c",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "Credential identity, published option/domain structure, product baseline and lifecycle were compared with exact objective/status snapshots and current official pages. Four unweighted groups, version boundaries, evidence-led operations and current delivery are covered."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Published groups are mapped to substantive, findable teaching content and readiness material; multi-option pathways are explicit. Four unweighted groups, version boundaries, evidence-led operations and current delivery are covered."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Exam-contract claims are tied to official snapshots/pages; version-sensitive behavior is paired with first-party documentation or visibly qualified. Four unweighted groups, version boundaries, evidence-led operations and current delivery are covered."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "No unsupported counts, scores, weights, prerequisites, delivery modes or lifecycle dates were found in the reviewed current content. Four unweighted groups, version boundaries, evidence-led operations and current delivery are covered."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Explanations, scenarios and answers were internally consistent and technically defensible at the stated version and scope. Four unweighted groups, version boundaries, evidence-led operations and current delivery are covered."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Changing product/version/UI, source limitations, current delivery/lifecycle or cross-page discrepancies are visibly bounded. Four unweighted groups, version boundaries, evidence-led operations and current delivery are covered."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Labs use owned, synthetic, simulated or explicitly authorized nonproduction resources with scoped actions and recovery/cleanup controls. Four unweighted groups, version boundaries, evidence-led operations and current delivery are covered."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks align to the teaching material, have usable answers, and do not present recalled or leaked exam content. Four unweighted groups, version boundaries, evidence-led operations and current delivery are covered."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Current manifest guide hashes and raw-byte objective-snapshot hashes match; source-validation receipts pass; human-review status is not overstated. Four unweighted groups, version boundaries, evidence-led operations and current delivery are covered."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant copied passage, suspicious overlap, contradictory template leakage or cross-vendor product leakage was found. Four unweighted groups, version boundaries, evidence-led operations and current delivery are covered."
+            }
+          },
+          "findings": [],
+          "notes": "Fresh-context, read-only review of the complete guide and front matter; objective/status snapshots; exam row and seed; latest passed source-validation receipt; and registered citation/source-health records. Relevant public first-party material was consulted. No live lab execution or human review is claimed. Four unweighted groups, version boundaries, evidence-led operations and current delivery are covered."
+        },
+        {
+          "exam_code": "NSE-I-OT-SECURITY",
+          "vendor_id": "fortinet",
+          "guide_path": "guides/NSE-I-OT-SECURITY-fortinet-industry-ot-security.md",
+          "guide_content_sha256": "2850db26536da20375eeadca3608e705c6ac1826ed21a5b77f72f996da253804",
+          "blueprint_snapshot_path": "data/objective-snapshots/nse-i-ot-security-official-objectives.txt",
+          "blueprint_snapshot_sha256": "57b6b7679dd8d5c82e3bcb3f7d98594c5db06ded2baca2e01fc814fb72368066",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "Credential identity, published option/domain structure, product baseline and lifecycle were compared with exact objective/status snapshots and current official pages. Current 70-minute exam contract, objective weights, pathway and OT safety boundaries are represented; labs are safely scoped."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Published groups are mapped to substantive, findable teaching content and readiness material; multi-option pathways are explicit. Current 70-minute exam contract, objective weights, pathway and OT safety boundaries are represented; labs are safely scoped."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Exam-contract claims are tied to official snapshots/pages; version-sensitive behavior is paired with first-party documentation or visibly qualified. Current 70-minute exam contract, objective weights, pathway and OT safety boundaries are represented; labs are safely scoped."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "No unsupported counts, scores, weights, prerequisites, delivery modes or lifecycle dates were found in the reviewed current content. Current 70-minute exam contract, objective weights, pathway and OT safety boundaries are represented; labs are safely scoped."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Explanations, scenarios and answers were internally consistent and technically defensible at the stated version and scope. Current 70-minute exam contract, objective weights, pathway and OT safety boundaries are represented; labs are safely scoped."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Changing product/version/UI, source limitations, current delivery/lifecycle or cross-page discrepancies are visibly bounded. Current 70-minute exam contract, objective weights, pathway and OT safety boundaries are represented; labs are safely scoped."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Labs use owned, synthetic, simulated or explicitly authorized nonproduction resources with scoped actions and recovery/cleanup controls. Current 70-minute exam contract, objective weights, pathway and OT safety boundaries are represented; labs are safely scoped."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks align to the teaching material, have usable answers, and do not present recalled or leaked exam content. Current 70-minute exam contract, objective weights, pathway and OT safety boundaries are represented; labs are safely scoped."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Current manifest guide hashes and raw-byte objective-snapshot hashes match; source-validation receipts pass; human-review status is not overstated. Current 70-minute exam contract, objective weights, pathway and OT safety boundaries are represented; labs are safely scoped."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant copied passage, suspicious overlap, contradictory template leakage or cross-vendor product leakage was found. Current 70-minute exam contract, objective weights, pathway and OT safety boundaries are represented; labs are safely scoped."
+            }
+          },
+          "findings": [],
+          "notes": "Fresh-context, read-only review of the complete guide and front matter; objective/status snapshots; exam row and seed; latest passed source-validation receipt; and registered citation/source-health records. Relevant public first-party material was consulted. No live lab execution or human review is claimed. Current 70-minute exam contract, objective weights, pathway and OT safety boundaries are represented; labs are safely scoped."
+        },
+        {
+          "exam_code": "PANW-CLOUD-SECURITY-ENGINEER",
+          "vendor_id": "palo-alto-networks",
+          "guide_path": "guides/PANW-CLOUD-SECURITY-ENGINEER-palo-alto-networks-cloud-security-engineer.md",
+          "guide_content_sha256": "ae005f8572a5b7c87216250cc6ac3429945bade15a74ead0a25ce22ff29c9535",
+          "blueprint_snapshot_path": "data/objective-snapshots/panw-cloud-security-engineer-official-objectives.txt",
+          "blueprint_snapshot_sha256": "8a226a5c7f86018cb4d6767ded061b772eeabe8c0bcff84e9fb4371970f8f0d1",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "Credential identity, published option/domain structure, product baseline and lifecycle were compared with exact objective/status snapshots and current official pages. July 2026 six-domain blueprint and engineering breadth receive substantive coverage; volatile platform details are bounded."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Published groups are mapped to substantive, findable teaching content and readiness material; multi-option pathways are explicit. July 2026 six-domain blueprint and engineering breadth receive substantive coverage; volatile platform details are bounded."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Exam-contract claims are tied to official snapshots/pages; version-sensitive behavior is paired with first-party documentation or visibly qualified. July 2026 six-domain blueprint and engineering breadth receive substantive coverage; volatile platform details are bounded."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "No unsupported counts, scores, weights, prerequisites, delivery modes or lifecycle dates were found in the reviewed current content. July 2026 six-domain blueprint and engineering breadth receive substantive coverage; volatile platform details are bounded."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Explanations, scenarios and answers were internally consistent and technically defensible at the stated version and scope. July 2026 six-domain blueprint and engineering breadth receive substantive coverage; volatile platform details are bounded."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Changing product/version/UI, source limitations, current delivery/lifecycle or cross-page discrepancies are visibly bounded. July 2026 six-domain blueprint and engineering breadth receive substantive coverage; volatile platform details are bounded."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Labs use owned, synthetic, simulated or explicitly authorized nonproduction resources with scoped actions and recovery/cleanup controls. July 2026 six-domain blueprint and engineering breadth receive substantive coverage; volatile platform details are bounded."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks align to the teaching material, have usable answers, and do not present recalled or leaked exam content. July 2026 six-domain blueprint and engineering breadth receive substantive coverage; volatile platform details are bounded."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Current manifest guide hashes and raw-byte objective-snapshot hashes match; source-validation receipts pass; human-review status is not overstated. July 2026 six-domain blueprint and engineering breadth receive substantive coverage; volatile platform details are bounded."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant copied passage, suspicious overlap, contradictory template leakage or cross-vendor product leakage was found. July 2026 six-domain blueprint and engineering breadth receive substantive coverage; volatile platform details are bounded."
+            }
+          },
+          "findings": [],
+          "notes": "Fresh-context, read-only review of the complete guide and front matter; objective/status snapshots; exam row and seed; latest passed source-validation receipt; and registered citation/source-health records. Relevant public first-party material was consulted. No live lab execution or human review is claimed. July 2026 six-domain blueprint and engineering breadth receive substantive coverage; volatile platform details are bounded."
+        },
+        {
+          "exam_code": "PANW-CLOUD-SECURITY-PROFESSIONAL",
+          "vendor_id": "palo-alto-networks",
+          "guide_path": "guides/PANW-CLOUD-SECURITY-PROFESSIONAL-palo-alto-networks-cloud-security-professional.md",
+          "guide_content_sha256": "d0c2e1f86b6c45115a55f68455f3f28d612a09164e252527612619668c962973",
+          "blueprint_snapshot_path": "data/objective-snapshots/panw-cloud-security-professional-official-objectives.txt",
+          "blueprint_snapshot_sha256": "85d843c3d92c883b854add6b05c2bae20e18c18da44ce42d9f62ec7d9f8a89ae",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "Credential identity, published option/domain structure, product baseline and lifecycle were compared with exact objective/status snapshots and current official pages. Five weighted domains are covered without inventing omitted exam logistics; product packaging is qualified."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Published groups are mapped to substantive, findable teaching content and readiness material; multi-option pathways are explicit. Five weighted domains are covered without inventing omitted exam logistics; product packaging is qualified."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Exam-contract claims are tied to official snapshots/pages; version-sensitive behavior is paired with first-party documentation or visibly qualified. Five weighted domains are covered without inventing omitted exam logistics; product packaging is qualified."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "No unsupported counts, scores, weights, prerequisites, delivery modes or lifecycle dates were found in the reviewed current content. Five weighted domains are covered without inventing omitted exam logistics; product packaging is qualified."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Explanations, scenarios and answers were internally consistent and technically defensible at the stated version and scope. Five weighted domains are covered without inventing omitted exam logistics; product packaging is qualified."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Changing product/version/UI, source limitations, current delivery/lifecycle or cross-page discrepancies are visibly bounded. Five weighted domains are covered without inventing omitted exam logistics; product packaging is qualified."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Labs use owned, synthetic, simulated or explicitly authorized nonproduction resources with scoped actions and recovery/cleanup controls. Five weighted domains are covered without inventing omitted exam logistics; product packaging is qualified."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks align to the teaching material, have usable answers, and do not present recalled or leaked exam content. Five weighted domains are covered without inventing omitted exam logistics; product packaging is qualified."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Current manifest guide hashes and raw-byte objective-snapshot hashes match; source-validation receipts pass; human-review status is not overstated. Five weighted domains are covered without inventing omitted exam logistics; product packaging is qualified."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant copied passage, suspicious overlap, contradictory template leakage or cross-vendor product leakage was found. Five weighted domains are covered without inventing omitted exam logistics; product packaging is qualified."
+            }
+          },
+          "findings": [],
+          "notes": "Fresh-context, read-only review of the complete guide and front matter; objective/status snapshots; exam row and seed; latest passed source-validation receipt; and registered citation/source-health records. Relevant public first-party material was consulted. No live lab execution or human review is claimed. Five weighted domains are covered without inventing omitted exam logistics; product packaging is qualified."
+        },
+        {
+          "exam_code": "PANW-CYBERSECURITY-PRACTITIONER",
+          "vendor_id": "palo-alto-networks",
+          "guide_path": "guides/PANW-CYBERSECURITY-PRACTITIONER-palo-alto-networks-cybersecurity-practitioner.md",
+          "guide_content_sha256": "d99ac9ab576c4880ddd23cccac530b6cafe83f13d86a549eb6fe7bbdd1333f5e",
+          "blueprint_snapshot_path": "data/objective-snapshots/panw-cybersecurity-practitioner-official-objectives.txt",
+          "blueprint_snapshot_sha256": "600eac4ecbdddea9b5ce0e0dba159accac70b13b677dbcfdeaa0e19926dcd34b",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "Credential identity, published option/domain structure, product baseline and lifecycle were compared with exact objective/status snapshots and current official pages. Six objective groups, original checks and safe labs are mapped; PDF text-extraction limitation is disclosed."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Published groups are mapped to substantive, findable teaching content and readiness material; multi-option pathways are explicit. Six objective groups, original checks and safe labs are mapped; PDF text-extraction limitation is disclosed."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Exam-contract claims are tied to official snapshots/pages; version-sensitive behavior is paired with first-party documentation or visibly qualified. Six objective groups, original checks and safe labs are mapped; PDF text-extraction limitation is disclosed."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "No unsupported counts, scores, weights, prerequisites, delivery modes or lifecycle dates were found in the reviewed current content. Six objective groups, original checks and safe labs are mapped; PDF text-extraction limitation is disclosed."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Explanations, scenarios and answers were internally consistent and technically defensible at the stated version and scope. Six objective groups, original checks and safe labs are mapped; PDF text-extraction limitation is disclosed."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Changing product/version/UI, source limitations, current delivery/lifecycle or cross-page discrepancies are visibly bounded. Six objective groups, original checks and safe labs are mapped; PDF text-extraction limitation is disclosed."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Labs use owned, synthetic, simulated or explicitly authorized nonproduction resources with scoped actions and recovery/cleanup controls. Six objective groups, original checks and safe labs are mapped; PDF text-extraction limitation is disclosed."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks align to the teaching material, have usable answers, and do not present recalled or leaked exam content. Six objective groups, original checks and safe labs are mapped; PDF text-extraction limitation is disclosed."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Current manifest guide hashes and raw-byte objective-snapshot hashes match; source-validation receipts pass; human-review status is not overstated. Six objective groups, original checks and safe labs are mapped; PDF text-extraction limitation is disclosed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant copied passage, suspicious overlap, contradictory template leakage or cross-vendor product leakage was found. Six objective groups, original checks and safe labs are mapped; PDF text-extraction limitation is disclosed."
+            }
+          },
+          "findings": [],
+          "notes": "Fresh-context, read-only review of the complete guide and front matter; objective/status snapshots; exam row and seed; latest passed source-validation receipt; and registered citation/source-health records. Relevant public first-party material was consulted. No live lab execution or human review is claimed. Six objective groups, original checks and safe labs are mapped; PDF text-extraction limitation is disclosed."
+        },
+        {
+          "exam_code": "PANW-NETWORK-SECURITY-ANALYST",
+          "vendor_id": "palo-alto-networks",
+          "guide_path": "guides/PANW-NETWORK-SECURITY-ANALYST-palo-alto-networks-network-security-analyst.md",
+          "guide_content_sha256": "35c0d0a080fa4f6fba6b11591a117c52bea9e8984d59de52b843262c6b288e89",
+          "blueprint_snapshot_path": "data/objective-snapshots/panw-network-security-analyst-official-objectives.txt",
+          "blueprint_snapshot_sha256": "10b40a968bc62f35505e71b5972b161cedebdc723bf0f12bd31a90942d657ece",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "Credential identity, published option/domain structure, product baseline and lifecycle were compared with exact objective/status snapshots and current official pages. Four weighted domains and current SCM/Strata Logging Service scope are covered; omitted logistics are not invented."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Published groups are mapped to substantive, findable teaching content and readiness material; multi-option pathways are explicit. Four weighted domains and current SCM/Strata Logging Service scope are covered; omitted logistics are not invented."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Exam-contract claims are tied to official snapshots/pages; version-sensitive behavior is paired with first-party documentation or visibly qualified. Four weighted domains and current SCM/Strata Logging Service scope are covered; omitted logistics are not invented."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "No unsupported counts, scores, weights, prerequisites, delivery modes or lifecycle dates were found in the reviewed current content. Four weighted domains and current SCM/Strata Logging Service scope are covered; omitted logistics are not invented."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Explanations, scenarios and answers were internally consistent and technically defensible at the stated version and scope. Four weighted domains and current SCM/Strata Logging Service scope are covered; omitted logistics are not invented."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Changing product/version/UI, source limitations, current delivery/lifecycle or cross-page discrepancies are visibly bounded. Four weighted domains and current SCM/Strata Logging Service scope are covered; omitted logistics are not invented."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Labs use owned, synthetic, simulated or explicitly authorized nonproduction resources with scoped actions and recovery/cleanup controls. Four weighted domains and current SCM/Strata Logging Service scope are covered; omitted logistics are not invented."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks align to the teaching material, have usable answers, and do not present recalled or leaked exam content. Four weighted domains and current SCM/Strata Logging Service scope are covered; omitted logistics are not invented."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Current manifest guide hashes and raw-byte objective-snapshot hashes match; source-validation receipts pass; human-review status is not overstated. Four weighted domains and current SCM/Strata Logging Service scope are covered; omitted logistics are not invented."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant copied passage, suspicious overlap, contradictory template leakage or cross-vendor product leakage was found. Four weighted domains and current SCM/Strata Logging Service scope are covered; omitted logistics are not invented."
+            }
+          },
+          "findings": [],
+          "notes": "Fresh-context, read-only review of the complete guide and front matter; objective/status snapshots; exam row and seed; latest passed source-validation receipt; and registered citation/source-health records. Relevant public first-party material was consulted. No live lab execution or human review is claimed. Four weighted domains and current SCM/Strata Logging Service scope are covered; omitted logistics are not invented."
+        }
+      ],
+      "summary": {
+        "guide_count": 10,
+        "pass": 10,
+        "pass_with_notes": 0,
+        "fix_required": 0,
+        "blocked": 0,
+        "open_findings": 0,
+        "closed_findings": 0
+      }
+    }
   ]
 }

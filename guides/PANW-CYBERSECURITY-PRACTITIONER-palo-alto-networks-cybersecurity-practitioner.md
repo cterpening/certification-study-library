@@ -6,19 +6,19 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-02
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-02
+upcoming_change_checked: 2026-10-28
 ---
 
 # Palo Alto Networks Certified Cybersecurity Practitioner Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live certification page, December 2025 datasheet, July 2025 certification handbook, official documentation, public standards, and selected learning sources were checked September 2, 2026. This does not guarantee that every explanation is error-free or remains current. The [official certification page](https://www.paloaltonetworks.com/services/education/panw-cybersecurity-practitioner) and [datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/practitioner-datasheet.pdf) are authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live certification page, December 2025 datasheet, July 2025 certification handbook, official documentation, public standards, and selected learning sources were checked October 28, 2026. This does not guarantee that every explanation is error-free or remains current. The [official certification page](https://www.paloaltonetworks.com/services/education/panw-cybersecurity-practitioner) and [datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/practitioner-datasheet.pdf) are authoritative.
 
 **Current baseline:** Cybersecurity 19%; Network Security 19%; Secure Access 14%; Cloud Security 20%; Endpoint Security 15%; Security Operations 13%; December 2025 datasheet<br>
 **Exam contract:** foundational English-language Pearson VUE certification; no recommended work experience. The handbook sets an 860 passing score on a 300–1000 scaled range and calls results provisional until data-forensics review. The public datasheet does not state item count, base duration, or price; verify these in the live registration flow.<br>
 **Validity and renewal:** certification validity is two years under the July 2025 handbook. Recertification is by examination; an active higher-level credential can renew active lower-level credentials in the same track under the current pathway rules. Recheck before scheduling.<br>
-**Upcoming change:** no retirement or dated replacement was found September 2, 2026. Product names and bundles are volatile even while the blueprint is active; verify live documentation, especially Cortex Cloud, Prisma AIRS, AI Access, and cloud-delivered services.<br>
+**Upcoming change:** no additional retirement or dated replacement was found as of October 28, 2026. Product names and bundles are volatile even while the blueprint is active; verify live documentation, especially Cortex Cloud, Prisma AIRS, AI Access, and cloud-delivered services.<br>
 **Integrity:** Palo Alto Networks says actual exam content is confidential and substantially similar/leaked questions are unauthorized. This guide uses the public blueprint, original checks, safe labs, standards, and public product documentation only.
 
 ## How to use this guide
@@ -317,7 +317,8 @@ This is not a complete list, and it is not a prescription to consume everything.
 | [MITRE ATT&CK Enterprise](https://attack.mitre.org/matrices/enterprise/) | Public | 3–6 hours overview and mapping lab | Tactics, techniques, sub-techniques, software/groups, mitigations, and data sources |
 | [NIST SP 800-207 Zero Trust Architecture](https://csrc.nist.gov/pubs/sp/800/207/final) | Public | 2–4 hours | Durable Zero Trust concepts and policy decision/enforcement architecture |
 | [Cortex Cloud documentation](https://docs.paloaltonetworks.com/resources/all-products-a-z) | Public | 3–6 hours selected current pages | Code/cloud/runtime/SOC platform mapping; verify packaging |
-| [Cortex XDR documentation](https://docs.paloaltonetworks.com/cortex/cortex-xdr) | Public | 3–6 hours selected current pages | Endpoint telemetry, incidents, investigation, hunting, and response concepts |
+| [Cortex XDR 5.x case details](https://docs-cortex.paloaltonetworks.com/r/Cortex-XDR/Cortex-XDR-5.x-Documentation/Detailed-View) | Public | 3–6 hours selected current pages | Current case timelines, causality chains, issues/insights and response; keep XDR product/version separate from Cortex Cloud |
+| [Cortex Platform Management OLX announcement](https://live.paloaltonetworks.com/t5/news/introducing-palo-alto-networks-nbsp-on-demand-learning/ta-p/1252677) | Free according to Palo Alto Networks announcement; Learning Center access may vary | Course lessons/hours not inspected | Optional Cortex fundamentals only; the six-domain Practitioner path was not inspected and this is not full exam coverage |
 | [Palo Alto Networks YouTube](https://www.youtube.com/@PaloAltoNetworks) | Free video | 3–8 hours selected current videos | Visual product/concept explanations; map every video to a blueprint gap |
 | [Palo Alto Networks Cybersecurity Fundamentals](https://www.oreilly.com/videos/palo-alto-networks/9781835885468/) | Paid/O'Reilly; 2024 course | 6h47m listed plus labs | Broad alternate introduction; older product names require current-doc reconciliation |
 | [Pluralsight Palo Alto Firewalls for Network Protection](https://www.pluralsight.com/paths/palo-alto-firewalls-for-network-protection) | Paid; older NGFW-focused path | About 4h05m listed core course plus labs | Network-security subset only; not full exam coverage and may use older UI/features |

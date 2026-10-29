@@ -6,20 +6,20 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-02
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-02
+upcoming_change_checked: 2026-10-28
 ---
 
 # Palo Alto Networks Certified Cloud Security Professional Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live certification page, August 2025 datasheet, July 2025 certification handbook, Cortex Cloud documentation, public security standards, and selected learning sources were checked September 2, 2026. This does not guarantee that every explanation is error-free or remains current. The [official page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-cloudsec-professional) and [datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/cloudsec-professional-datasheet.pdf) are authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live certification page, August 2025 datasheet, July 2025 certification handbook, Cortex Cloud documentation, public security standards, and selected learning sources were checked October 28, 2026. This does not guarantee that every explanation is error-free or remains current. The [official page](https://www.paloaltonetworks.com/services/education/palo-alto-networks-cloudsec-professional) and [datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/cloudsec-professional-datasheet.pdf) are authoritative.
 
 **Current baseline:** SOC fundamentals 10%; Cortex fundamentals 15%; cloud posture 29%; cloud runtime 26%; application security 20%; August 2025 datasheet<br>
 **Exam contract:** professional-level English Pearson VUE certification. Under the checked handbook, Palo Alto Networks exams use an 860 passing score on a 300–1000 scaled range and provisional results. The datasheet omits item count, base duration, and price; verify live registration.<br>
 **Experience boundary:** working knowledge of cloud deployments/threats, operating systems, networking, SDLC, vulnerability, compliance, identity, and SOC processes. This is not a generic cloud-fundamentals exam; it asks how Cortex Cloud organizes posture, runtime, application, data, identity, and operations capabilities.<br>
 **Validity and renewal:** two years under the July 2025 handbook, subject to current recertification pathway rules.<br>
-**Upcoming change:** no retirement or dated replacement was found September 2, 2026. Cortex Cloud packaging and terminology are fast-moving; verify live product documentation throughout study.<br>
+**Upcoming change:** no additional retirement or dated replacement was found as of October 28, 2026. Cortex Cloud packaging and terminology are fast-moving; verify live product documentation throughout study.<br>
 **Integrity:** actual exam content is confidential. This guide uses only the public blueprint, original questions, safe labs, and public documentation.
 
 ## How to use this guide
@@ -275,6 +275,8 @@ This is not a complete list, and it is not meant to be consumed in full. Start w
 | [Certification Handbook](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf) | Public PDF | 30–45 minutes | Scoring, ESL, results, retakes, validity, renewal, and integrity |
 | [Official digital learning](https://learn.paloaltonetworks.com/learn) | Free account/login may be required | 30 minutes planning; modules vary | Follow the certification-page learning plan and record live durations |
 | [Cortex Cloud documentation](https://docs.paloaltonetworks.com/resources/all-products-a-z) | Public | 25–45 hours selected topics/labs | Platform, application, posture, runtime, data, identity, SOC, onboarding, and agents |
+| [Cortex Cloud CSP onboarding tiers and licensing](https://docs-cortex.paloaltonetworks.com/r/Cortex-CLOUD/Cortex-Cloud-Posture-Management-Documentation/Understand-CSP-onboarding-tiers-and-licensing?contentId=Pgg5HMfhT2f1MKpUnTKXHw) and [operational workflows](https://docs-cortex.paloaltonetworks.com/r/Cortex-CLOUD/Cortex-Cloud-Posture-Management-Documentation/Operational-workflows) | Public | 1–3 hours selected | Distinguish onboarding entitlements and review posture coverage; confirm current tenant SKUs and add-ons |
+| [Cortex Platform Management OLX announcement](https://live.paloaltonetworks.com/t5/news/introducing-palo-alto-networks-nbsp-on-demand-learning/ta-p/1252677) | Free according to Palo Alto Networks announcement; Learning Center access may vary | Course lessons/hours not inspected | Optional Cortex fundamentals; not a substitute for this weighted blueprint or hands-on preparation |
 | [AWS Security Learning Plan](https://explore.skillbuilder.aws/learn/learning_plan/view/91/security-learning-plan) | Free account; cloud-provider-specific | 10–20 hours selected fundamentals | AWS shared responsibility, IAM, logging, posture, workloads; not Cortex-specific |
 | [Microsoft Learn: Implement network security controls in Azure](https://learn.microsoft.com/en-us/training/paths/implement-network-security-controls-azure/) | Free | About 3 hours plus labs | Current Azure network-security path; add identity, logging, and workload modules for broader coverage |
 | [Google Cloud security learning](https://cloud.google.com/learn/training/security) | Free/paid paths | 8–20 hours selected content | GCP security and operations context; not Cortex-specific |

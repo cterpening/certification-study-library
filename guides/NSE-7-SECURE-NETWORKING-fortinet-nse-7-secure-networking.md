@@ -6,23 +6,24 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-02
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-02
+upcoming_change_checked: 2026-10-28
 ---
 
 # Fortinet NSE 7 in Secure Networking Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live certification and Secure Networking 7.6 Architect exam pages, current Fortinet documentation, and public program policies were checked September 2, 2026. Fortinet's pages remain authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live certification and Secure Networking 7.6 Architect exam pages, current Fortinet documentation, and public program policies were checked October 28, 2026. Fortinet's pages remain authoritative.
 
 **Current baseline:** Secure Networking 7.6 Architect: System configuration and SD-WAN setup 20–30%; Central management 15–25%; Security profiles 5–15%; Rules and routing 25–35%; Advanced IPsec 25–35%. The published ranges overlap and are not normalized point weights.<br>
 **Exam contract:** 40–50 questions, 75 minutes, English and Japanese, Pearson VUE, pass/fail, using FortiGate 7.6, FortiManager 7.6, and FortiAnalyzer 7.6. Questions include multiple choice and drag-and-drop; verify the booking screen.<br>
+**Delivery:** Since September 21, 2026, NSE 7 exams are available only at Pearson VUE-authorized test centers; OnVUE remote delivery ended. Check current local availability when scheduling.<br>
 **Certification contract:** This guide covers the required **NSE 7 Secure Networking exam**, not the entire credential by itself. The credential also requires active NSE 4 FortiOS and either NSE 5 Secure Networking or NSE 6 Secure Networking, with the NSE 7 exam passed within two years of the last prerequisite exam. The credential is active for two years from the later qualifying exam.<br>
 **Experience boundary:** Fortinet recommends three years each in networking and network security, plus two years of hands-on work with each of FortiGate, FortiManager, and FortiAnalyzer.<br>
 **Upcoming change:** No replacement or retirement was announced September 2, 2026. This comprehensive exam was introduced with the July 15, 2026 program redesign; older FCSS/NSE 7 pages and course names can describe a different contract.<br>
 **Integrity:** Use official sample questions only to understand form and scope. Reject recalled, leaked, “real exam,” guaranteed-match, or braindump material.
 
-> **September 17, 2026 contract check:** Current official exam and track pages were inspected; the exam times and prerequisite statements above reflect that check. Historical objective snapshots and full technical-review dates remain unchanged. See the [exam validation report](../docs/research/2026-09-17-exam-validation.md).
+> **October 28, 2026 delivery check:** The current OnVUE notice limits the four NSE 7 exams to Pearson VUE-authorized test centers effective September 21, 2026. The blueprint and prerequisite rule were also rechecked against the live exam and track pages.
 
 ## How to use this guide
 
@@ -222,6 +223,7 @@ This is not a complete list, and it is not a prescription to consume everything.
 | [Secure Networking Architect exam](https://training.fortinet.com/local/staticpage/view.php?page=secure_networking_architect_exam) | Public | 45–75 min | Current contract, exact tasks/ranges, versions, experience, and approved sample-question boundary |
 | [NSE 7 Secure Networking certification](https://training.fortinet.com/local/staticpage/view.php?page=nse_7_secure_networking) | Public | 20–30 min | Prerequisite, timing, validity, renewal, and exam relationship |
 | [Fortinet Training Institute library](https://training.fortinet.com/local/library/) | Free account; labs/ILT may cost | 20–40 min selection; courses vary | Find the current Enterprise Firewall, SD-WAN, FortiOS, FortiManager, and FortiAnalyzer courses named by the exam page |
+| [SD-WAN Enterprise Administrator course outline](https://training.fortinet.com/local/staticpage/view.php?page=library_sd-wan-enterprise-administrator) | Account/enrollment; labs may cost | 6 hr lecture + 7 hr estimated labs | SD-WAN architecture and operations within the comprehensive exam; course outline only, not verified lesson coverage |
 | [FortiOS 7.6 documentation](https://docs.fortinet.com/product/fortigate/7.6) | Public | 20–35 hr selected chapters/labs | HA, VDOM, Security Fabric, routing, SD-WAN, profiles, sessions, and IPsec authority |
 | [FortiManager 7.6 documentation](https://docs.fortinet.com/product/fortimanager/7.6) | Public | 12–20 hr selected chapters/labs | ZTP, policy packages, templates, variables, VPN Manager, orchestration, install and troubleshooting |
 | [FortiAnalyzer 7.6 documentation](https://docs.fortinet.com/product/fortianalyzer/7.6) | Public | 6–12 hr selected chapters/labs | SD-WAN/security logs, analytics, reports, event handling, and operational evidence |
