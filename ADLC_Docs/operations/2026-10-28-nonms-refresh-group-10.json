@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "group_id": "2026-10-28-nonms-refresh-group-10",
+  "title": "Non-Microsoft certification refresh — group 10",
+  "completed_on": "2026-10-28",
+  "eligibility": {
+    "as_of": "2026-10-28",
+    "minimum_age_days": 27,
+    "frozen_eligible_guides": 167,
+    "group_number": 10,
+    "total_groups": 17,
+    "guides_remaining": 67,
+    "groups_remaining": 7,
+    "selection": "Tenth group of ten from the frozen eligible queue after Groups 1–9."
+  },
+  "exam_codes": [
+    "FC0-U71",
+    "MLA-C01",
+    "MLA-C02",
+    "SAA-C03",
+    "SAP-C02",
+    "SCS-C03",
+    "SOA-C03",
+    "100-150",
+    "100-160",
+    "200-301"
+  ],
+  "guides": [
+    {
+      "exam_code": "FC0-U71",
+      "guide_path": "guides/FC0-U71-comptia-tech-plus.md",
+      "guide_sha256": "cb7bece97121234cb3b06dc0378f88e4a98d9ffcae8bf84960be577c1303752f",
+      "objective_snapshot_unchanged": true,
+      "source_health_checked": true
+    },
+    {
+      "exam_code": "MLA-C01",
+      "guide_path": "guides/MLA-C01-aws-certified-machine-learning-engineer-associate.md",
+      "guide_sha256": "218c70f398e367d841a57704246f81e98945e2ced8b43704cbe397ca06c4f11f",
+      "objective_snapshot_unchanged": true,
+      "source_health_checked": true
+    },
+    {
+      "exam_code": "MLA-C02",
+      "guide_path": "guides/MLA-C02-aws-certified-machine-learning-engineer-associate.md",
+      "guide_sha256": "8362c96fe430dece0625e3cac59e246373fda449bedc54a07e06b553f575d10b",
+      "objective_snapshot_unchanged": true,
+      "source_health_checked": true
+    },
+    {
+      "exam_code": "SAA-C03",
+      "guide_path": "guides/SAA-C03-aws-certified-solutions-architect-associate.md",
+      "guide_sha256": "b834989d23762b311f12f319fb52cee5682df0f39ce97d046f34e6bc949b5b2d",
+      "objective_snapshot_unchanged": true,
+      "source_health_checked": true
+    },
+    {
+      "exam_code": "SAP-C02",
+      "guide_path": "guides/SAP-C02-aws-certified-solutions-architect-professional.md",
+      "guide_sha256": "a918dcde828589c2d4c45867b8b86611a30add578e9e7fd0e249ffd70a3b6964",
+      "objective_snapshot_unchanged": true,
+      "source_health_checked": true
+    },
+    {
+      "exam_code": "SCS-C03",
+      "guide_path": "guides/SCS-C03-aws-certified-security-specialty.md",
+      "guide_sha256": "55683a707ee9393414f13a4a54d794872c9e2fdba55a9cbe737b2b07ed474dca",
+      "objective_snapshot_unchanged": true,
+      "source_health_checked": true
+    },
+    {
+      "exam_code": "SOA-C03",
+      "guide_path": "guides/SOA-C03-aws-certified-cloudops-engineer-associate.md",
+      "guide_sha256": "28fac289e784ba510c6d44174e8f10c64d7714d8ceb90bdd09f6bbfda2967a68",
+      "objective_snapshot_unchanged": true,
+      "source_health_checked": true
+    },
+    {
+      "exam_code": "100-150",
+      "guide_path": "guides/100-150-cisco-certified-support-technician-networking.md",
+      "guide_sha256": "a3d40ea43ad81b737ed37829f874e5b1644321c5a9ad4d782a3b8dfb557ec924",
+      "objective_snapshot_unchanged": true,
+      "source_health_checked": true
+    },
+    {
+      "exam_code": "100-160",
+      "guide_path": "guides/100-160-cisco-certified-support-technician-cybersecurity.md",
+      "guide_sha256": "b91a110690cd00b2370fabdb62b02300769c2064228ac93bdf80a9619fe99fcf",
+      "objective_snapshot_unchanged": true,
+      "source_health_checked": true
+    },
+    {
+      "exam_code": "200-301",
+      "guide_path": "guides/200-301-cisco-certified-network-associate.md",
+      "guide_sha256": "ccef97caf3eed0c98417511dec60dda5a53068e87aa70dce8337332320e259f7",
+      "objective_snapshot_unchanged": false,
+      "source_health_checked": true
+    }
+  ],
+  "source_health": {
+    "checked_sources": 249,
+    "ok": 227,
+    "blocked": 22,
+    "broken": 0,
+    "changed_metadata": 7
+  },
+  "objective_snapshot_changes": [
+    {
+      "exam_code": "200-301",
+      "change": "Official exam-page monitor text removed the v1.1 label; objective topic map preserved and separate v2.0 release notice retained."
+    },
+    {
+      "exam_code": "MLA-C01",
+      "change": "Official objective endpoint returned HTTP 404 after English retirement; preserved snapshot retained for historical guide and remaining language availability."
+    }
+  ],
+  "validation": {
+    "repository": "passed",
+    "site_prepare": "passed",
+    "strict_mkdocs": "passed",
+    "site_validation": "passed"
+  },
+  "limitations": [
+    "HashiCorp monitor parser could not extract Terraform Associate and Vault Associate objectives; current public pages were manually reviewed and compared.",
+    "Some official training pages require account access; no Academy paid course interior was inspected.",
+    "No Databricks workspace, HCP organization, or certification lab was accessed.",
+    "Audit is same-context and is not human or independent review."
+  ],
+  "research_report_path": "docs/research/2026-10-28-nonms-refresh-group-10.md",
+  "freshness_batch_id": "freshness-2026-10-28-nonms-g10",
+  "ai_audit_batch_id": "nonms-refresh-2026-10-28-group-10"
+}

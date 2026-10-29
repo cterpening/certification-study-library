@@ -6,9 +6,9 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-28
 upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-28
 ---
 
 # Cisco Certified Network Associate (200-301 CCNA) Study Guide
@@ -18,6 +18,10 @@ upcoming_change_checked: 2026-09-29
 **Current baseline:** 200-301 CCNA v1.1, six domains weighted 20/20/25/10/15/10; available through February 2, 2027<br>
 **Scheduled change:** CCNA v2.0 launches February 3, 2027 with five reorganized 25/25/20/20/10 domains, more troubleshooting/configuration, OSPFv3, DNS records, secure file transfer, IPv6 RA Guard, agentic AI, prompting, and Ansible execution<br>
 **Official source:** [current exam](https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccna.html) · [v1.1 topics](https://learningcontent.cisco.com/documents/marketing/exam-topics/200-301-CCNA-v1.1.pdf) · [v2.0 topics](https://learningcontent.cisco.com/documents/marketing/exam-topics/200-301_CCNA_v2.0_Exam_Topics_PDF.pdf) · [transition date](https://blogs.cisco.com/learning/stay-on-track-get-certified-before-the-ccna-refresh)
+
+## Current guide watch — October 28, 2026
+
+Cisco’s transition notice confirms 200-301 v1.1 remains available through February 2, 2027, and v2.0 begins February 3, 2027. The v2.0 topics emphasize practical assessment, troubleshooting, AI-aware network operations and security across the revised weighting. This guide keeps separate v1.1 and v2.0 objective maps; schedule against the version you intend to take. [Cisco CCNA transition dates](https://blogs.cisco.com/learning/stay-on-track-get-certified-before-the-ccna-refresh) and [official v2.0 topics](https://learningcontent.cisco.com/documents/marketing/exam-topics/200-301_CCNA_v2.0_Exam_Topics_PDF.pdf)
 
 ## How to use this guide
 

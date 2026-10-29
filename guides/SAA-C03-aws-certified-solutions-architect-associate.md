@@ -6,19 +6,23 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-28
+last_verified: 2026-10-28
 upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-28
+upcoming_change_checked: 2026-10-28
 ---
 
 # SAA-C03 AWS Certified Solutions Architect - Associate Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed on September 28, 2026, including all 189 detailed knowledge/skill bullets. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#saa-c03-coverage-record). The [official SAA-C03 exam guide](https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/solutions-architect-associate-03.html) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed on October 28, 2026, including all 189 detailed knowledge/skill bullets. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#saa-c03-coverage-record). The [official SAA-C03 exam guide](https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/solutions-architect-associate-03.html) is authoritative.
 
 **Current baseline:** Current four-domain SAA-C03 AWS Certified Solutions Architect - Associate guide; 50 scored plus 15 unscored questions<br>
 **Upcoming delivery change:** The official certification page says Italian delivery retires after December 31, 2026. This does not retire the overall SAA-C03 certification; the four-domain blueprint remains current. Checked September 28, 2026. See the [deep-review report](../docs/research/2026-09-28-saa-c03-deep-review.md).<br>
 **Important freshness boundary:** AWS can change services without changing the exam code. Treat feature availability, quotas, pricing, instance families, named products, console paths, and learning-product metadata as **VERIFY CURRENT**. The official service list is non-exhaustive; it is a scope aid, not a checklist to memorize.<br>
 **Official source:** [AWS Certified Solutions Architect - Associate exam guide](https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/solutions-architect-associate-03.html)
+
+## Current guide watch — October 28, 2026
+
+The official SAA-C03 guide remains organized around secure (30%), resilient (26%), high-performing (24%), and cost-optimized (20%) architectures. AWS also notes the Italian-language exam will retire after December 31, 2026; this is a language availability change, not a blueprint change. The current 50 scored plus 15 unscored format and 720 passing score remain as listed in the guide. [AWS SAA-C03 exam guide](https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/solutions-architect-associate-03.html)
 
 ## How to use this guide
 

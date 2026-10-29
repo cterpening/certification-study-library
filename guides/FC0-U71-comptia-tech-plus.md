@@ -6,19 +6,23 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-28
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-28
+upcoming_change_checked: 2026-10-28
 ---
 
 # FC0-U71 CompTIA Tech+ Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 28, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#fc0-u71-coverage-record). The [official CompTIA Tech+ page](https://www.comptia.org/en-us/certifications/tech/) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on October 28, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#fc0-u71-coverage-record). The [official CompTIA Tech+ page](https://www.comptia.org/en-us/certifications/tech/) is authoritative.
 
 **Current baseline:** Tech+ V6, exam series FC0-U71<br>
 **Upcoming blueprint change:** None announced when checked September 28, 2026<br>
 **Official delivery snapshot:** Maximum 70 questions, 60 minutes, passing score 650 on a 900-point scale; English and Japanese listed<br>
 **Credential lifecycle detail:** The public page lists FC0-U71 as no-expiration and FC0-U71-CE as valid for five years. Confirm which series and renewal terms you are purchasing.<br>
+
+## Current guide watch — October 28, 2026
+
+The official Tech+ page and V6 objective document still identify FC0-U71 with six weighted domains. This is a stable blueprint check; use the registered CompTIA objective PDF for detailed tasks and the exam page for scheduling details. [CompTIA Tech+ page](https://www.comptia.org/en-us/certifications/tech/) and [official FC0-U71 objectives](https://www.comptia.org/en-us/certifications/tech/)
 
 ## How to use this guide
 

@@ -6,9 +6,9 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-28
 ---
 
 # Cisco Certified Support Technician Cybersecurity (100-160) Study Guide
@@ -18,6 +18,10 @@ upcoming_change_checked: 2026-09-29
 **Current baseline:** **CURRENT BLUEPRINT:** Active 100-160 CCST Cybersecurity; 23 numbered objectives and all supporting bullets across five domains, read from the actual three-page objective PDF on September 29, 2026<br>
 **Scheduled change:** None announced on the checked official pages<br>
 **Official source:** [100-160 exam page](https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccst-cybersecurity.html) · [exam topics](https://learningnetwork.cisco.com/s/ccst-cybersecurity-exam-topics) · [training overview](https://www.cisco.com/c/dam/en_us/training-events/training/courses/ccst-cybersecurity.pdf)
+
+## Current guide watch — October 28, 2026
+
+Cisco’s current 100-160 page still describes a 50-minute entry-level cybersecurity exam and links the Junior Cybersecurity Analyst career path. Cisco’s recertification policy says CCST credentials earned on or after July 15, 2025 can be renewed by passing a CCST, associate, professional, or expert Cisco exam; that policy affects credential maintenance, not the exam blueprint. [Cisco CCST Cybersecurity exam page](https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccst-cybersecurity.html) and [Cisco CCST maintenance policy](https://www.cisco.com/site/us/en/learn/training-certifications/certifications/support-technician/index.html)
 
 ## How to use this guide
 

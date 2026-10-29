@@ -6,9 +6,9 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-28
 ---
 
 # Cisco Certified Support Technician Networking (100-150) Study Guide
@@ -18,6 +18,10 @@ upcoming_change_checked: 2026-09-29
 **Current baseline:** **CURRENT BLUEPRINT:** Active 100-150 CCST Networking; 25 numbered objectives and their supporting bullets across six domains, read from the actual three-page objective PDF on September 29, 2026<br>
 **Scheduled change:** None announced on the checked official pages<br>
 **Official source:** [100-150 exam page](https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccst-networking.html) · [exam topics](https://learningnetwork.cisco.com/s/ccst-networking-exam-topics) · [training overview](https://www.cisco.com/c/dam/en_us/training-events/training/courses/ccst-networking.pdf)
+
+## Current guide watch — October 28, 2026
+
+Cisco’s current 100-150 page still lists a 50-minute CCST Networking exam and the same six areas: standards/concepts, addressing, endpoints/media, infrastructure, diagnosis, and security. The current free Cisco Networking Academy career path remains a direct preparation route; no new exam version was announced in the reviewed source set. [Cisco CCST Networking exam page](https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccst-networking.html)
 
 ## How to use this guide
 
