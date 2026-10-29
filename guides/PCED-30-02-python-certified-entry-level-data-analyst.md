@@ -6,14 +6,14 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-29
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-29
 ---
 
 # PCED-30-02 Certified Entry-Level Data Analyst with Python Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Validate this guide against the [official PCED syllabus](https://pythoninstitute.org/pced-exam-syllabus), checked September 29, 2026.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Validate this guide against the [official PCED syllabus](https://pythoninstitute.org/pced-exam-syllabus), rechecked October 29, 2026.
 
 **Current baseline:** PCED-30-02, active since July 15, 2025; syllabus last updated July 14, 2025; PCED-30-01 retired July 14, 2025<br>
 **Upcoming blueprint change:** none announced on the live credential or syllabus pages<br>
@@ -22,7 +22,7 @@ upcoming_change_checked: 2026-09-29
 
 The active version is **30-02**. The exam page says already-issued 30-01 vouchers may still be redeemed despite that version's retirement; verify the code attached to a voucher. The current syllabus gives each item a maximum of one point and reports a normalized percentage. The four weights are not four separate passing thresholds. No official questions or current partial-credit rules were accessed.
 
-Public practice instructions need clarification: the [standalone USD 29 kit](https://ums.edube.org/products/pced-practice-test) lists two tests with up to **10 launches each**, while the [USD 95 exam/retake/practice bundle](https://ums.edube.org/products/0-pi-pced-3002-erpt) says **five launches each**. The store says Test Candidate → Practice; the credential FAQ says Learner. These may be product or instruction differences; do not transfer one product's entitlement to another. Public voucher validity is 12 months. No purchase, redemption, enrolled assessment or account inspection was performed.
+**VERIFY CURRENT — public-store observation (October 29, 2026):** The exact [standalone USD 29 kit](https://ums.edube.org/products/pced-practice-test) and [USD 95 exam/retake/practice bundle](https://ums.edube.org/products/0-pi-pced-3002-erpt) pages were opened and their public descriptions read via browser on October 29. The listings describe two practice tests, with up to **10 launches each** for the standalone kit and **five launches each** for the bundle; they show a 12-month voucher validity. The automated health client returned 404 for both exact store URLs, so confirm the page and purchased entitlement before relying on the launch limits or instructions. The store says Test Candidate → Practice while the credential FAQ says Learner; do not transfer one product's entitlement to another. No purchase, redemption, enrolled assessment or account inspection was performed.
 
 ## How to use this guide
 
@@ -53,7 +53,7 @@ Analysis examines data for a question; analytics describes the broader systemati
 
 Ethical handling requires purpose limitation, transparency, appropriate consent/lawful basis, minimization, privacy, fairness, security, and accountability. GDPR, HIPAA, and CCPA apply under different jurisdictions and contexts; knowing a name is not enough to determine applicability. Anonymization aims to prevent re-identification; encryption protects data under a key but does not anonymize it.
 
-The [European Commission overview](https://commission.europa.eu/law/law-topic/data-protection/reform/rules-business-and-organisations/principles-gdpr/overview-principles/what-data-can-we-process-and-under-which-conditions_en) supports purpose, minimization, accuracy, retention and security principles. [HHS covered-entity guidance](https://www.hhs.gov/hipaa/for-professionals/covered-entities/index.html) and the [California CCPA overview](https://www.oag.ca.gov/privacy/ccpa) identify different legal contexts; only limited indexed excerpts of the latter two were readable here. Their full requirements and applicability to an organization were not reviewed. Removing names alone may leave identifying combinations of dates, locations and rare events. The worked example uses invented observations without real people or organizations.
+The [European Commission overview](https://www.edpb.europa.eu/topics/key-gdpr-concepts/legal-basis_en) supports purpose, minimization, accuracy, retention and security principles. [HHS covered-entity guidance](https://www.hhs.gov/hipaa/for-professionals/covered-entities/index.html) and the [California CCPA overview](https://www.oag.ca.gov/privacy/ccpa) identify different legal contexts; only limited indexed excerpts of the latter two were readable here. Their full requirements and applicability to an organization were not reviewed. Removing names alone may leave identifying combinations of dates, locations and rare events. The worked example uses invented observations without real people or organizations.
 
 ## 2. Python basics for analysis — 32.5%
 
@@ -728,6 +728,10 @@ Analyze a public, non-sensitive CSV of service requests:
 - Selected primary contracts: [types](https://docs.python.org/3.13/library/stdtypes.html), [built-ins](https://docs.python.org/3.13/library/functions.html), [control flow](https://docs.python.org/3.13/tutorial/controlflow.html), [CSV](https://docs.python.org/3.13/library/csv.html), [statistics](https://docs.python.org/3.13/library/statistics.html), [math](https://docs.python.org/3.13/library/math.html), [random](https://docs.python.org/3.13/library/random.html), [Counter](https://docs.python.org/3.13/library/collections.html), [dates](https://docs.python.org/3.13/library/datetime.html) and [path existence](https://docs.python.org/3.13/library/os.path.html). Per-source evidence records exactly which sections were read, rather than treating downloads as complete reviews.
 - NumPy: [user index](https://numpy.org/doc/stable/user/) is navigation, [quickstart](https://numpy.org/doc/stable/user/quickstart.html) was read in selected sections; complete generated entries were read for [array](https://numpy.org/doc/stable/reference/generated/numpy.array.html), [mean](https://numpy.org/doc/stable/reference/generated/numpy.mean.html), [median](https://numpy.org/doc/stable/reference/generated/numpy.median.html), [std](https://numpy.org/doc/stable/reference/generated/numpy.std.html), [sum](https://numpy.org/doc/stable/reference/generated/numpy.sum.html), [arange](https://numpy.org/doc/stable/reference/generated/numpy.arange.html), [linspace](https://numpy.org/doc/stable/reference/generated/numpy.linspace.html), [corrcoef](https://numpy.org/doc/stable/reference/generated/numpy.corrcoef.html), [sort](https://numpy.org/doc/stable/reference/generated/numpy.sort.html), [unique](https://numpy.org/doc/stable/reference/generated/numpy.unique.html) and [isfinite](https://numpy.org/doc/stable/reference/generated/numpy.isfinite.html).
 - The optional Windows helper uses [Microsoft Chart.SaveImage](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.datavisualization.charting.chart.saveimage?view=netframework-4.8.1). The exported image was visually inspected by the AI reviewer, not by a human; a complete accessibility assessment remains pending.
+
+### October 29, 2026 current-source update
+
+The issuer's current PCED page lists [Python for Data Analytics 101](https://edube.org/study/pd101), an English self-paced path the provider estimates at five weeks/about one hour daily: free Core offers lessons and module tests; paid Pro adds quizzes, labs, projects, and a diploma. Its public course page calls it PCED-aligned. The separate PCAD page still labels it “in development,” so treat it as PCED preparation and a possible foundation—not verified coverage of PCAD's full blueprint. For reproducibility, NumPy 2.5 documents supported Python versions as 3.12–3.14 and drops 3.11; Pandas 3.0 changes string inference and copy-on-write semantics, while Pandas 3.1.0 continues datetime-resolution fixes. See [NumPy 2.5 notes](https://numpy.org/doc/2.5/release/2.5.0-notes.html), [Pandas 3.0 upgrade notes](https://pandas.pydata.org/pandas-docs/version/3.0/whatsnew/v3.0.0.html), and [Pandas 3.1.0 changes](https://pandas.pydata.org/docs/whatsnew/v3.1.0.html). Record library versions and check dtype, selection, and datetime assumptions in notebooks. These are tool-version examples, not additional exam objectives.
 
 ## Places to learn
 

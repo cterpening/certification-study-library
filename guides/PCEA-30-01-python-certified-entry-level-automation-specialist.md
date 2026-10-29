@@ -6,9 +6,9 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-30
+last_verified: 2026-10-29
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-30
+upcoming_change_checked: 2026-10-29
 ---
 
 # PCEA-30-01 Certified Entry-Level Automation Specialist with Python Study Guide

@@ -6,9 +6,9 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-29
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-29
 ---
 
 # Palo Alto Networks Certified Cybersecurity Apprentice Study Guide
@@ -497,6 +497,10 @@ These are original explanation prompts, not exam items. Explain the answer and a
 40. **Can I identify and reject unauthorized exam-content sources?**
 
    Use published objectives and original explanations. Reject copied or recalled exam items, alleged dumps and claimed pass guarantees; course completion is not independent proof of competence.
+
+### October 29, 2026 current-source update
+
+The current issuer-linked [May 2026 datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/apprentice-datasheet.pdf) is the detailed exam map: Cybersecurity 16%, Network Fundamentals 16%, Network Security 14%, Endpoint Security 10%, Cloud Security 13%, Security Operations 13%, and Identity Security 18%. It names AI-powered attacks, enterprise browsers, cloud-native security platforms, AI-assisted SOC work, and secrets in CI/CD as examples within those domains. Review the exact tasks; the separate issuer [Cybersecurity Academy](https://www2.paloaltonetworks.com/services/education/academy/learner) overview lists free Cybersecurity, Network Security, Cloud Security, Security Operations, and AI in Cybersecurity Fundamentals courses. Their lesson interiors and durations were not inspected, and this overview is supplementary rather than proof of the credential's exact digital path. **Related item:** Palo Alto's [PAN-OS 12.2 feature notes](https://docs.paloaltonetworks.com/ngfw/new-features/by-version/panos/12-2) give a current vendor-specific example of how firewall, certificate, inspection, and identity controls evolve. Those licensed product-version details are beyond this foundational exam; use the [release update index](https://docs.paloaltonetworks.com/resources/recent-release-note-updates) to locate current product notes, not to infer exam scope.
 
 ## Places to learn
 

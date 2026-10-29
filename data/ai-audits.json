@@ -4569,21 +4569,51 @@
           "vendor_id": "python-institute",
           "guide_path": "guides/PCAP-31-03-python-certified-associate-python-programmer.md",
           "guide_content_sha256": "b7b76a3b545673253ff5115225fcdf7029cbc7ae17696d4508602297b3a7a25d",
-          "blueprint_snapshot_path": "data/objective-snapshots/pcap-31-03-official-objectives.txt",
+          "blueprint_snapshot_path": "data/objective-snapshots/archive/pcap-31-03-189719f136c042874d3fb6530214fa39ee69cc34f73f26675db41dd50e3eca85.txt",
           "blueprint_snapshot_sha256": "189719f136c042874d3fb6530214fa39ee69cc34f73f26675db41dd50e3eca85",
           "audited_on": "2026-09-06",
           "verdict": "pass",
           "checks": {
-            "official_scope": {"status": "passed", "notes": "The active PCAP-31-03 identity and five 12/14/18/34/22 sections match the detailed March 2022 syllabus; PCAP-31-04 remains an explicitly scheduled watch."},
-            "objective_coverage": {"status": "passed", "notes": "Five sections, three scenarios, ten labs, and 27 questions cover the named modules, exceptions, strings, OOP, functional constructs, closures, and I/O behavior with boundary cases."},
-            "material_claim_support": {"status": "passed", "notes": "Eleven registered sources support the blueprint, current credential contract, Python semantics, aligned training, practice, and alternatives; ten are reachable and O'Reilly is automation-blocked."},
-            "exam_contract_integrity": {"status": "passed", "notes": "Question count, assessment and tutorial time, score, item types, delivery, price floor, validity, prerequisite recommendation, and retake wait remain clearly bounded to provider evidence."},
-            "technical_coherence": {"status": "passed", "notes": "Namespace/import behavior, exception propagation, Unicode/text/bytes, class and instance state, inheritance, closures, and file modes are accurate and internally consistent."},
-            "volatility_and_lifecycle": {"status": "passed", "notes": "The guide preserves 31-03 as the live credential while labeling the overdue Q3 2026 31-04 announcement, runtime-version drift, delivery, price, and resource versions for recheck."},
-            "lab_safety_and_feasibility": {"status": "passed", "notes": "Ten labs use disposable Python environments, original programs, local data, deliberate failures, and no external side effects or recalled items."},
-            "readiness_check_quality": {"status": "passed", "notes": "Twenty-seven original questions have accurate, concise reasoning and include the critical version-before-purchase check."},
-            "review_evidence_accuracy": {"status": "passed", "notes": "The September 2 review maps all five sections and reconciles three scenarios, ten labs, 27 checks, the objective hash, and 11/10/1/0 guide-link evidence."},
-            "duplication_and_contamination": {"status": "passed", "notes": "Modern professional context is labeled adjacent and does not displace the 2022 syllabus; no unrelated language, copied course content, or suspicious substantive duplication was found."}
+            "official_scope": {
+              "status": "passed",
+              "notes": "The active PCAP-31-03 identity and five 12/14/18/34/22 sections match the detailed March 2022 syllabus; PCAP-31-04 remains an explicitly scheduled watch."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Five sections, three scenarios, ten labs, and 27 questions cover the named modules, exceptions, strings, OOP, functional constructs, closures, and I/O behavior with boundary cases."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Eleven registered sources support the blueprint, current credential contract, Python semantics, aligned training, practice, and alternatives; ten are reachable and O'Reilly is automation-blocked."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Question count, assessment and tutorial time, score, item types, delivery, price floor, validity, prerequisite recommendation, and retake wait remain clearly bounded to provider evidence."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Namespace/import behavior, exception propagation, Unicode/text/bytes, class and instance state, inheritance, closures, and file modes are accurate and internally consistent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The guide preserves 31-03 as the live credential while labeling the overdue Q3 2026 31-04 announcement, runtime-version drift, delivery, price, and resource versions for recheck."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Ten labs use disposable Python environments, original programs, local data, deliberate failures, and no external side effects or recalled items."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Twenty-seven original questions have accurate, concise reasoning and include the critical version-before-purchase check."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 review maps all five sections and reconciles three scenarios, ten labs, 27 checks, the objective hash, and 11/10/1/0 guide-link evidence."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Modern professional context is labeled adjacent and does not displace the 2022 syllabus; no unrelated language, copied course content, or suspicious substantive duplication was found."
+            }
           },
           "findings": [],
           "notes": "The guide is both syllabus-faithful and operationally useful during the uncertain PCAP-31-04 transition."
@@ -4593,21 +4623,51 @@
           "vendor_id": "python-institute",
           "guide_path": "guides/PCPP-32-101-python-certified-professional-programmer-level-1.md",
           "guide_content_sha256": "1527ac4375a8901014c810d6314c0484d7bf988e0eb028638b49515bf3d82542",
-          "blueprint_snapshot_path": "data/objective-snapshots/pcpp-32-101-official-objectives.txt",
+          "blueprint_snapshot_path": "data/objective-snapshots/archive/pcpp-32-101-b36342ae9b7e21da6ba93845b94bfe42e1b72b2813c8f853e91e08c679637631.txt",
           "blueprint_snapshot_sha256": "b36342ae9b7e21da6ba93845b94bfe42e1b72b2813c8f853e91e08c679637631",
           "audited_on": "2026-09-06",
           "verdict": "fix-required",
           "checks": {
-            "official_scope": {"status": "passed", "notes": "The active PCPP-32-101 identity, five 35/12/20/18/15 sections, and unreleased 32-102 watch match the current provider evidence."},
-            "objective_coverage": {"status": "failed", "notes": "Nearly all named subtopics are substantive, but the explicit Advanced OOP objective to subclass built-in classes appears only in the snapshot and not in the guide explanation, lab work, or checks."},
-            "material_claim_support": {"status": "passed", "notes": "Eleven registered sources support the blueprint, contract, Python/Requests semantics, named PEPs, Tkinter alternative, and training; ten are reachable and O'Reilly is automation-blocked."},
-            "exam_contract_integrity": {"status": "passed", "notes": "Question count, time, score, delivery, validity, price floor, prerequisite recommendation, retake wait, and lack of official practice test are provider-bounded."},
-            "technical_coherence": {"status": "passed", "notes": "Advanced OOP, PEPs, GUI event handling, sockets/HTTP, SQLite, XML/CSV, logging, and configuration form a coherent build-and-debug path."},
-            "volatility_and_lifecycle": {"status": "passed", "notes": "The guide keeps 32-101 current, labels 32-102 in development without a release date, and distinguishes the older syllabus from current Python behavior."},
-            "lab_safety_and_feasibility": {"status": "passed", "notes": "The integrated application and twelve focused labs use local/disposable resources, trusted pickle data, loopback/test endpoints, bounded transactions, and no production actions."},
-            "readiness_check_quality": {"status": "passed", "notes": "Twenty-two questions have consistent answers across the taught content, though a built-in-subclassing check should accompany the missing objective repair."},
-            "review_evidence_accuracy": {"status": "failed", "notes": "The review claims eight labs and maps OOP/conventions/GUI/network/files to labs 1–3/4/5/6/7–8, but the guide contains twelve labs whose correct ranges are 1–6/7/8/9–10/11–12."},
-            "duplication_and_contamination": {"status": "passed", "notes": "Protocols and modern retry/typing context are relevant and labeled; no unrelated language, copied course material, or suspicious substantive duplication was found."}
+            "official_scope": {
+              "status": "passed",
+              "notes": "The active PCPP-32-101 identity, five 35/12/20/18/15 sections, and unreleased 32-102 watch match the current provider evidence."
+            },
+            "objective_coverage": {
+              "status": "failed",
+              "notes": "Nearly all named subtopics are substantive, but the explicit Advanced OOP objective to subclass built-in classes appears only in the snapshot and not in the guide explanation, lab work, or checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Eleven registered sources support the blueprint, contract, Python/Requests semantics, named PEPs, Tkinter alternative, and training; ten are reachable and O'Reilly is automation-blocked."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Question count, time, score, delivery, validity, price floor, prerequisite recommendation, retake wait, and lack of official practice test are provider-bounded."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Advanced OOP, PEPs, GUI event handling, sockets/HTTP, SQLite, XML/CSV, logging, and configuration form a coherent build-and-debug path."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The guide keeps 32-101 current, labels 32-102 in development without a release date, and distinguishes the older syllabus from current Python behavior."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "The integrated application and twelve focused labs use local/disposable resources, trusted pickle data, loopback/test endpoints, bounded transactions, and no production actions."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Twenty-two questions have consistent answers across the taught content, though a built-in-subclassing check should accompany the missing objective repair."
+            },
+            "review_evidence_accuracy": {
+              "status": "failed",
+              "notes": "The review claims eight labs and maps OOP/conventions/GUI/network/files to labs 1–3/4/5/6/7–8, but the guide contains twelve labs whose correct ranges are 1–6/7/8/9–10/11–12."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Protocols and modern retry/typing context are relevant and labeled; no unrelated language, copied course material, or suspicious substantive duplication was found."
+            }
           },
           "findings": [
             {
@@ -4643,16 +4703,46 @@
           "audited_on": "2026-09-06",
           "verdict": "pass",
           "checks": {
-            "official_scope": {"status": "passed", "notes": "All 22 weighted domains, including the explicit 41% Simple XML/form/dashboard scope and Power User prerequisite, match the current blueprint."},
-            "objective_coverage": {"status": "passed", "notes": "Grouped sections remain findable and substantive across advanced SPL, extraction, acceleration, efficiency, multivalue/time/transaction/subsearch behavior, and all Simple XML interactions."},
-            "material_claim_support": {"status": "passed", "notes": "Thirteen registered sources cover the contract, current Splunk search, knowledge, and dashboard documentation, and learning alternatives; eight access blocks are recorded separately from errors."},
-            "exam_contract_integrity": {"status": "passed", "notes": "The 70-question, 60-minute including agreement, USD-130, Pearson VUE, intermediate, and active-Power-User prerequisite statements are provider-bounded."},
-            "technical_coherence": {"status": "passed", "notes": "Command schemas, acceleration completeness, optimization equivalence, transaction/subsearch limits, token handling, post-process constraints, and drilldowns are internally consistent."},
-            "volatility_and_lifecycle": {"status": "passed", "notes": "Simple XML remains exam scope while Classic, HTML, PDF, Dashboard Studio, extension, Cloud, and product-version differences are explicitly separated and recheckable."},
-            "lab_safety_and_feasibility": {"status": "passed", "notes": "Ten labs require approved nonproduction data, bounded webhook/lookup side effects, measured equivalence, permission checks, and regression evidence."},
-            "readiness_check_quality": {"status": "passed", "notes": "Forty original questions and answers test semantics, limits, evidence, security boundaries, framework state, and prerequisite status."},
-            "review_evidence_accuracy": {"status": "passed", "notes": "The September 2 record maps all 22 groups and accurately records the current objective hash and 13/5/8/0 guide-link evidence."},
-            "duplication_and_contamination": {"status": "passed", "notes": "Dashboard Studio is explicitly adjacent rather than substituted for Simple XML; no other product leakage, copied course material, or suspicious substantive duplication was found."}
+            "official_scope": {
+              "status": "passed",
+              "notes": "All 22 weighted domains, including the explicit 41% Simple XML/form/dashboard scope and Power User prerequisite, match the current blueprint."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Grouped sections remain findable and substantive across advanced SPL, extraction, acceleration, efficiency, multivalue/time/transaction/subsearch behavior, and all Simple XML interactions."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Thirteen registered sources cover the contract, current Splunk search, knowledge, and dashboard documentation, and learning alternatives; eight access blocks are recorded separately from errors."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The 70-question, 60-minute including agreement, USD-130, Pearson VUE, intermediate, and active-Power-User prerequisite statements are provider-bounded."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Command schemas, acceleration completeness, optimization equivalence, transaction/subsearch limits, token handling, post-process constraints, and drilldowns are internally consistent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Simple XML remains exam scope while Classic, HTML, PDF, Dashboard Studio, extension, Cloud, and product-version differences are explicitly separated and recheckable."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Ten labs require approved nonproduction data, bounded webhook/lookup side effects, measured equivalence, permission checks, and regression evidence."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original questions and answers test semantics, limits, evidence, security boundaries, framework state, and prerequisite status."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 record maps all 22 groups and accurately records the current objective hash and 13/5/8/0 guide-link evidence."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Dashboard Studio is explicitly adjacent rather than substituted for Simple XML; no other product leakage, copied course material, or suspicious substantive duplication was found."
+            }
           },
           "findings": [],
           "notes": "The guide preserves an unusually legacy-heavy blueprint while clearly separating present-day product choices."
@@ -4667,16 +4757,46 @@
           "audited_on": "2026-09-06",
           "verdict": "pass",
           "checks": {
-            "official_scope": {"status": "passed", "notes": "All 13 weighted domains and the required Power User credential match the current four-page public blueprint."},
-            "objective_coverage": {"status": "passed", "notes": "Thirteen sections, three scenarios, ten labs, and 40 checks cover Cloud responsibility, index/identity/configuration, forwarding, inputs, parsing/transformation, apps, and Support."},
-            "material_claim_support": {"status": "passed", "notes": "Thirteen registered sources support the exam, Cloud service boundary, administration, ACS, ingestion, and learning claims; eight automation-blocked endpoints are not reported as missing."},
-            "exam_contract_integrity": {"status": "passed", "notes": "The professional, 60-question, 75-minute including agreement, USD-130, Pearson VUE, and prerequisite contract is kept distinct from product and tenant entitlement."},
-            "technical_coherence": {"status": "passed", "notes": "Responsibility boundaries, effective configuration, forwarding topology, checkpoints, HEC, event construction, props/transforms, masking, apps, and escalation form one defensible ingest lifecycle."},
-            "volatility_and_lifecycle": {"status": "passed", "notes": "Legacy Self-Service/Managed wording is preserved for the exam while current service description, deployment experience, region, subscription, ACS compatibility, and Support paths govern practice."},
-            "lab_safety_and_feasibility": {"status": "passed", "notes": "Labs use customer-managed forwarders and approved nonproduction Cloud access, synthetic data, canaries, redaction, rollback, and simulation for destructive index deletion."},
-            "readiness_check_quality": {"status": "passed", "notes": "Forty original questions and answers test ownership, failure, security, irreversibility, and evidence rather than configuration trivia alone."},
-            "review_evidence_accuracy": {"status": "passed", "notes": "The September 2 review maps all 13 groups and reconciles the current objective hash and 13/5/8/0 guide-link evidence."},
-            "duplication_and_contamination": {"status": "passed", "notes": "Enterprise-only access assumptions and newer ingest alternatives are carefully bounded; no competing vendor model, copied course material, or suspicious substantive duplication was found."}
+            "official_scope": {
+              "status": "passed",
+              "notes": "All 13 weighted domains and the required Power User credential match the current four-page public blueprint."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Thirteen sections, three scenarios, ten labs, and 40 checks cover Cloud responsibility, index/identity/configuration, forwarding, inputs, parsing/transformation, apps, and Support."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Thirteen registered sources support the exam, Cloud service boundary, administration, ACS, ingestion, and learning claims; eight automation-blocked endpoints are not reported as missing."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The professional, 60-question, 75-minute including agreement, USD-130, Pearson VUE, and prerequisite contract is kept distinct from product and tenant entitlement."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Responsibility boundaries, effective configuration, forwarding topology, checkpoints, HEC, event construction, props/transforms, masking, apps, and escalation form one defensible ingest lifecycle."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Legacy Self-Service/Managed wording is preserved for the exam while current service description, deployment experience, region, subscription, ACS compatibility, and Support paths govern practice."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Labs use customer-managed forwarders and approved nonproduction Cloud access, synthetic data, canaries, redaction, rollback, and simulation for destructive index deletion."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original questions and answers test ownership, failure, security, irreversibility, and evidence rather than configuration trivia alone."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 review maps all 13 groups and reconciles the current objective hash and 13/5/8/0 guide-link evidence."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Enterprise-only access assumptions and newer ingest alternatives are carefully bounded; no competing vendor model, copied course material, or suspicious substantive duplication was found."
+            }
           },
           "findings": [],
           "notes": "The guide turns a product- and tenant-sensitive exam into a safe evidence-led ingestion workflow without flattening Cloud responsibilities."
@@ -4691,16 +4811,46 @@
           "audited_on": "2026-09-06",
           "verdict": "pass",
           "checks": {
-            "official_scope": {"status": "passed", "notes": "The ten 5/10/15/10/10/10/10/10/10/10 domains and no-prerequisite contract match the public blueprint."},
-            "objective_coverage": {"status": "passed", "notes": "Ten sections, three scenarios, eight labs, and 40 checks cover chart/timechart, filtering, correlation, extraction, aliases/calculated fields, categorization, macros, workflow actions, models, and CIM."},
-            "material_claim_support": {"status": "passed", "notes": "Fourteen registered sources support the contract, current search/knowledge/CIM semantics, official learning, and alternatives; six are reachable and eight are automation-blocked."},
-            "exam_contract_integrity": {"status": "passed", "notes": "The entry-level, 65-question, 60-minute including agreement, USD-130, Pearson VUE, and no-prerequisite statements remain provider-bounded."},
-            "technical_coherence": {"status": "passed", "notes": "Aggregation, null/type handling, transaction-versus-stats decisions, search-time dependencies, safe substitution, model hierarchy, Pivot, and CIM normalization are consistent."},
-            "volatility_and_lifecycle": {"status": "passed", "notes": "The classic SPL/knowledge-object blueprint is kept distinct from adjacent SPL2, current product/CIM versions, UI differences, and changing policy details."},
-            "lab_safety_and_feasibility": {"status": "passed", "notes": "Eight labs use representative synthetic data, private-first knowledge objects, lab endpoints for GET/POST actions, permission checks, and no production side effects."},
-            "readiness_check_quality": {"status": "passed", "notes": "Forty original questions and a complete answer key test conceptual and behavioral boundaries across every domain."},
-            "review_evidence_accuracy": {"status": "passed", "notes": "The September 2 review maps all ten groups and accurately records the current objective hash and 14/6/8/0 guide-link evidence."},
-            "duplication_and_contamination": {"status": "passed", "notes": "OCSF and acceleration are explicitly adjacent context; no administrator-track substitution, other product leakage, copied course material, or suspicious substantive duplication was found."}
+            "official_scope": {
+              "status": "passed",
+              "notes": "The ten 5/10/15/10/10/10/10/10/10/10 domains and no-prerequisite contract match the public blueprint."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Ten sections, three scenarios, eight labs, and 40 checks cover chart/timechart, filtering, correlation, extraction, aliases/calculated fields, categorization, macros, workflow actions, models, and CIM."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Fourteen registered sources support the contract, current search/knowledge/CIM semantics, official learning, and alternatives; six are reachable and eight are automation-blocked."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The entry-level, 65-question, 60-minute including agreement, USD-130, Pearson VUE, and no-prerequisite statements remain provider-bounded."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Aggregation, null/type handling, transaction-versus-stats decisions, search-time dependencies, safe substitution, model hierarchy, Pivot, and CIM normalization are consistent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The classic SPL/knowledge-object blueprint is kept distinct from adjacent SPL2, current product/CIM versions, UI differences, and changing policy details."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use representative synthetic data, private-first knowledge objects, lab endpoints for GET/POST actions, permission checks, and no production side effects."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original questions and a complete answer key test conceptual and behavioral boundaries across every domain."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 review maps all ten groups and accurately records the current objective hash and 14/6/8/0 guide-link evidence."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "OCSF and acceleration are explicitly adjacent context; no administrator-track substitution, other product leakage, copied course material, or suspicious substantive duplication was found."
+            }
           },
           "findings": [],
           "notes": "The guide makes search-time knowledge-object ordering and CIM validation concrete without drifting into administration scope."
@@ -4715,16 +4865,46 @@
           "audited_on": "2026-09-06",
           "verdict": "pass",
           "checks": {
-            "official_scope": {"status": "passed", "notes": "The RHEL 10 baseline and all ten unweighted public task groups match the current EX200 objectives."},
-            "objective_coverage": {"status": "passed", "notes": "Ten sections, three integrated scenarios, eight performance labs, 40 checks, and the explicit RHEL 9-to-10 checklist cover every published task through persistent evidence."},
-            "material_claim_support": {"status": "passed", "notes": "Twelve registered sources include the live exam page, RHEL 10 docs, current official routes, a no-cost environment, and labeled alternatives; ten are reachable and two O'Reilly pages are automation-blocked."},
-            "exam_contract_integrity": {"status": "passed", "notes": "The guide avoids inventing weights, prerequisite certification, universal price, or appointment duration and labels the skills-path three-hour value as volatile supplemental evidence."},
-            "technical_coherence": {"status": "passed", "notes": "Shell, RPM/Flatpak, scripts, boot/systemd/logs, storage/filesystems, scheduling, networking, identity, firewalld, SSH, and SELinux form a coherent inspect-persist-reboot-recover model."},
-            "volatility_and_lifecycle": {"status": "passed", "notes": "RHEL 10 is binding; older RHEL 9 material, minor versions, objectives, tools, boot behavior, logistics, course versions, and access are explicitly recheckable."},
-            "lab_safety_and_feasibility": {"status": "passed", "notes": "Eight labs require disposable authorized RHEL 10 VMs, exact device inspection, snapshots for boot/storage risk, nonvaluable data, recovery, rollback, and reboot validation."},
-            "readiness_check_quality": {"status": "passed", "notes": "Forty original questions test durable administration distinctions, current RHEL 10 gaps, validation, persistence, and recovery."},
-            "review_evidence_accuracy": {"status": "passed", "notes": "The September 1 review maps all ten groups and accurately reconciles three scenarios, eight labs, 40 checks, the objective hash, and 12/10/2/0 guide-link evidence."},
-            "duplication_and_contamination": {"status": "passed", "notes": "Older-version and broader operational material is clearly bounded; no Debian/SUSE command leakage, copied commercial lab, or suspicious substantive duplication was found."}
+            "official_scope": {
+              "status": "passed",
+              "notes": "The RHEL 10 baseline and all ten unweighted public task groups match the current EX200 objectives."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Ten sections, three integrated scenarios, eight performance labs, 40 checks, and the explicit RHEL 9-to-10 checklist cover every published task through persistent evidence."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Twelve registered sources include the live exam page, RHEL 10 docs, current official routes, a no-cost environment, and labeled alternatives; ten are reachable and two O'Reilly pages are automation-blocked."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The guide avoids inventing weights, prerequisite certification, universal price, or appointment duration and labels the skills-path three-hour value as volatile supplemental evidence."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Shell, RPM/Flatpak, scripts, boot/systemd/logs, storage/filesystems, scheduling, networking, identity, firewalld, SSH, and SELinux form a coherent inspect-persist-reboot-recover model."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "RHEL 10 is binding; older RHEL 9 material, minor versions, objectives, tools, boot behavior, logistics, course versions, and access are explicitly recheckable."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs require disposable authorized RHEL 10 VMs, exact device inspection, snapshots for boot/storage risk, nonvaluable data, recovery, rollback, and reboot validation."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original questions test durable administration distinctions, current RHEL 10 gaps, validation, persistence, and recovery."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 1 review maps all ten groups and accurately reconciles three scenarios, eight labs, 40 checks, the objective hash, and 12/10/2/0 guide-link evidence."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Older-version and broader operational material is clearly bounded; no Debian/SUSE command leakage, copied commercial lab, or suspicious substantive duplication was found."
+            }
           },
           "findings": [],
           "notes": "The guide is a strong distribution-specific complement to the broader Linux+ material and directly addresses the current RHEL 10 transition."
@@ -4765,21 +4945,51 @@
           "vendor_id": "python-institute",
           "guide_path": "guides/PCPP-32-101-python-certified-professional-programmer-level-1.md",
           "guide_content_sha256": "63f1edc65cad755c8e05f301e790731748e4c2d7688d94d28df3ceb53e3032a3",
-          "blueprint_snapshot_path": "data/objective-snapshots/pcpp-32-101-official-objectives.txt",
+          "blueprint_snapshot_path": "data/objective-snapshots/archive/pcpp-32-101-b36342ae9b7e21da6ba93845b94bfe42e1b72b2813c8f853e91e08c679637631.txt",
           "blueprint_snapshot_sha256": "b36342ae9b7e21da6ba93845b94bfe42e1b72b2813c8f853e91e08c679637631",
           "audited_on": "2026-09-06",
           "verdict": "pass",
           "checks": {
-            "official_scope": {"status": "passed", "notes": "The active PCPP-32-101 identity, five 35/12/20/18/15 sections, and unreleased 32-102 watch match current provider evidence."},
-            "objective_coverage": {"status": "passed", "notes": "Every named subtopic is now substantive, including direct built-in subclassing, inherited-operation hazards, substitutability, composition, and collections wrappers."},
-            "material_claim_support": {"status": "passed", "notes": "Eleven registered sources support the blueprint, contract, Python/Requests semantics, named PEPs, Tkinter alternative, and training; ten are reachable and O'Reilly is automation-blocked."},
-            "exam_contract_integrity": {"status": "passed", "notes": "Question count, time, score, delivery, validity, price floor, prerequisite recommendation, retake wait, and lack of official practice test remain provider-bounded."},
-            "technical_coherence": {"status": "passed", "notes": "The optional-tag TaggedList preserves ordinary list construction, and the text correctly warns that strict invariants across inherited mutation paths often favor composition or a purpose-built wrapper."},
-            "volatility_and_lifecycle": {"status": "passed", "notes": "The guide keeps 32-101 current, labels 32-102 in development without a release date, and separates the older syllabus from current Python behavior."},
-            "lab_safety_and_feasibility": {"status": "passed", "notes": "The integrated application and twelve focused labs use local/disposable resources, trusted pickle data, loopback/test endpoints, bounded transactions, and an applied built-in-subclass comparison."},
-            "readiness_check_quality": {"status": "passed", "notes": "Twenty-three original questions now include the repaired built-in-subclass decision and remain consistent with their answers."},
-            "review_evidence_accuracy": {"status": "passed", "notes": "The September 6 review accurately reports 12 labs and maps OOP to 1–6, conventions to 7, GUI to 8, networking to 9–10, and file/environment work to 11–12."},
-            "duplication_and_contamination": {"status": "passed", "notes": "Protocols and modern retry/typing context are relevant and labeled; no unrelated language, copied course material, or suspicious substantive duplication was found."}
+            "official_scope": {
+              "status": "passed",
+              "notes": "The active PCPP-32-101 identity, five 35/12/20/18/15 sections, and unreleased 32-102 watch match current provider evidence."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Every named subtopic is now substantive, including direct built-in subclassing, inherited-operation hazards, substitutability, composition, and collections wrappers."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Eleven registered sources support the blueprint, contract, Python/Requests semantics, named PEPs, Tkinter alternative, and training; ten are reachable and O'Reilly is automation-blocked."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Question count, time, score, delivery, validity, price floor, prerequisite recommendation, retake wait, and lack of official practice test remain provider-bounded."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The optional-tag TaggedList preserves ordinary list construction, and the text correctly warns that strict invariants across inherited mutation paths often favor composition or a purpose-built wrapper."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The guide keeps 32-101 current, labels 32-102 in development without a release date, and separates the older syllabus from current Python behavior."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "The integrated application and twelve focused labs use local/disposable resources, trusted pickle data, loopback/test endpoints, bounded transactions, and an applied built-in-subclass comparison."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Twenty-three original questions now include the repaired built-in-subclass decision and remain consistent with their answers."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 6 review accurately reports 12 labs and maps OOP to 1–6, conventions to 7, GUI to 8, networking to 9–10, and file/environment work to 11–12."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Protocols and modern retry/typing context are relevant and labeled; no unrelated language, copied course material, or suspicious substantive duplication was found."
+            }
           },
           "findings": [
             {
@@ -15478,7 +15688,7 @@
           "vendor_id": "python-institute",
           "guide_path": "guides/PCAD-31-02-python-certified-associate-data-analyst.md",
           "guide_content_sha256": "6c6ba7915ea67082ae6c7d8544583dedf725ad65f6dbb279224287eba404420c",
-          "blueprint_snapshot_path": "data/objective-snapshots/pcad-31-02-official-objectives.txt",
+          "blueprint_snapshot_path": "data/objective-snapshots/archive/pcad-31-02-987bb1bd68b7df55fb008bb96de6a3b1b407c1d63c042e35437ab2eadd4532bf.txt",
           "blueprint_snapshot_sha256": "987bb1bd68b7df55fb008bb96de6a3b1b407c1d63c042e35437ab2eadd4532bf",
           "audited_on": "2026-09-07",
           "verdict": "pass",
@@ -15565,7 +15775,7 @@
           "vendor_id": "python-institute",
           "guide_path": "guides/PCED-30-02-python-certified-entry-level-data-analyst.md",
           "guide_content_sha256": "be79f4621bdf185cc1c8971fffd4e52c012a31808f9928957866202f15a83e49",
-          "blueprint_snapshot_path": "data/objective-snapshots/pced-30-02-official-objectives.txt",
+          "blueprint_snapshot_path": "data/objective-snapshots/archive/pced-30-02-d3b9a519347510e7f6564eb07ef2bbaebf8774f7d2bc61560f944717bc770d12.txt",
           "blueprint_snapshot_sha256": "d3b9a519347510e7f6564eb07ef2bbaebf8774f7d2bc61560f944717bc770d12",
           "audited_on": "2026-09-07",
           "verdict": "pass",
@@ -26794,6 +27004,586 @@
         "fix_required": 0,
         "blocked": 0,
         "open_findings": 1,
+        "closed_findings": 0
+      }
+    },
+    {
+      "id": "nonms-refresh-2026-10-29-group-15",
+      "title": "Non-Microsoft certification refresh group 15 independent guide audit",
+      "rubric_version": 2,
+      "created_on": "2026-10-29",
+      "completed_on": "2026-10-29",
+      "status": "completed",
+      "audit_mode": "read-only",
+      "selection_method": "Fresh-context independent review after the fifteenth non-Microsoft refresh batch.",
+      "rubric_path": "docs/AI-AUDIT.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "label": "g15-independent-review",
+        "independence": "fresh-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "PANW-CYBERSECURITY-APPRENTICE",
+        "PCAD-31-02",
+        "PCAP-31-03",
+        "PCED-30-02",
+        "PCEP-30-02",
+        "PCPP-32-101",
+        "SALESFORCE-AGENTFORCE-SPECIALIST",
+        "SALESFORCE-PLATFORM-ADMINISTRATOR",
+        "SALESFORCE-PLATFORM-APP-BUILDER",
+        "SALESFORCE-PLATFORM-DEVELOPER"
+      ],
+      "results": [
+        {
+          "exam_code": "PANW-CYBERSECURITY-APPRENTICE",
+          "vendor_id": "palo-alto-networks",
+          "guide_path": "guides/PANW-CYBERSECURITY-APPRENTICE-palo-alto-networks-cybersecurity-apprentice.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/panw-cybersecurity-apprentice-official-objectives.txt",
+          "blueprint_snapshot_sha256": "fbd3b8491d4f5a04b8592653652089dcb6e1fe7f7e1948a974dd37469f1673b7",
+          "audited_on": "2026-10-29",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            }
+          },
+          "findings": [],
+          "notes": "Independent fresh-context read-only review. All ten rubric checks passed against the current guide and objective/status hashes. See the detailed independent-review report.",
+          "guide_content_sha256": "3b70c8dbe71cbd5ebe3598564dbdbceec5ada6b72da10f082756da3e260d32d4"
+        },
+        {
+          "exam_code": "PCAD-31-02",
+          "vendor_id": "python-institute",
+          "guide_path": "guides/PCAD-31-02-python-certified-associate-data-analyst.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/pcad-31-02-official-objectives.txt",
+          "blueprint_snapshot_sha256": "c0e03d205f2bb78e1902508ab699839dee11825423eebe0da9a68832ca657275",
+          "audited_on": "2026-10-29",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            }
+          },
+          "findings": [],
+          "notes": "Independent fresh-context read-only review. All ten rubric checks passed against the current guide and objective/status hashes. See the detailed independent-review report.",
+          "guide_content_sha256": "1ca62705472dea31e5a0626f2f3491df1295b16c8bfca070049154359ddd4bb3"
+        },
+        {
+          "exam_code": "PCAP-31-03",
+          "vendor_id": "python-institute",
+          "guide_path": "guides/PCAP-31-03-python-certified-associate-python-programmer.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/pcap-31-03-official-objectives.txt",
+          "blueprint_snapshot_sha256": "49589f9a3aaa766a2b2c1a640ac5dbbf7842c01d2517397519ab35ac86a060b0",
+          "audited_on": "2026-10-29",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            }
+          },
+          "findings": [],
+          "notes": "Independent fresh-context read-only review. All ten rubric checks passed against the current guide and objective/status hashes. See the detailed independent-review report.",
+          "guide_content_sha256": "5f4ac30a67ee01c77afa0af42feaba1f1ef8d1c519f2f6b4194a8b573556d017"
+        },
+        {
+          "exam_code": "PCED-30-02",
+          "vendor_id": "python-institute",
+          "guide_path": "guides/PCED-30-02-python-certified-entry-level-data-analyst.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/pced-30-02-official-objectives.txt",
+          "blueprint_snapshot_sha256": "27c6f07ec4b1e1063e5cbb6effd00e13406e15d8ee54a2e748c50dff86c24b90",
+          "audited_on": "2026-10-29",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            }
+          },
+          "findings": [],
+          "notes": "Independent fresh-context read-only review. All ten rubric checks passed against the current guide and objective/status hashes. See the detailed independent-review report.",
+          "guide_content_sha256": "fdc5933f33eb959f00eae59278ded3660889cd27d65670159b7f6ff691c52abb"
+        },
+        {
+          "exam_code": "PCEP-30-02",
+          "vendor_id": "python-institute",
+          "guide_path": "guides/PCEP-30-02-python-certified-entry-level-programmer.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/pcep-30-02-official-objectives.txt",
+          "blueprint_snapshot_sha256": "fc0a0b67b1f15a4430075b889978a82e162d98642f0b822768bc3796c322ca57",
+          "audited_on": "2026-10-29",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            }
+          },
+          "findings": [],
+          "notes": "Independent fresh-context read-only review. All ten rubric checks passed against the current guide and objective/status hashes. See the detailed independent-review report.",
+          "guide_content_sha256": "0c98947b3472f419b606164454613630641cc3c9be50c94abf1dff46b9eb033c"
+        },
+        {
+          "exam_code": "PCPP-32-101",
+          "vendor_id": "python-institute",
+          "guide_path": "guides/PCPP-32-101-python-certified-professional-programmer-level-1.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/pcpp-32-101-official-objectives.txt",
+          "blueprint_snapshot_sha256": "899426a902f78aba1471211f0c1eeace8016a66eb8dac3407d013d97cdaafcd6",
+          "audited_on": "2026-10-29",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            }
+          },
+          "findings": [],
+          "notes": "Independent fresh-context read-only review. All ten rubric checks passed against the current guide and objective/status hashes. See the detailed independent-review report.",
+          "guide_content_sha256": "bbd1de3b5c4aa0f38d7b6d3fc9fd53a982b8669d7bc5a090042f81b2c9b21282"
+        },
+        {
+          "exam_code": "SALESFORCE-AGENTFORCE-SPECIALIST",
+          "vendor_id": "salesforce",
+          "guide_path": "guides/SALESFORCE-AGENTFORCE-SPECIALIST-salesforce-certified-agentforce-specialist.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/salesforce-agentforce-specialist-official-objectives.txt",
+          "blueprint_snapshot_sha256": "a633fd73b5f733d78426c5c66eebf566a7867d80a36ddadd505dbd8ef29b5664",
+          "audited_on": "2026-10-29",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            }
+          },
+          "findings": [],
+          "notes": "Independent fresh-context read-only review. All ten rubric checks passed against the current guide and objective/status hashes. See the detailed independent-review report.",
+          "guide_content_sha256": "a4ccfa3e3f5d0ac8e7fe516d5b9dd864959c70578ab35c2c0201681ec5090c08"
+        },
+        {
+          "exam_code": "SALESFORCE-PLATFORM-ADMINISTRATOR",
+          "vendor_id": "salesforce",
+          "guide_path": "guides/SALESFORCE-PLATFORM-ADMINISTRATOR-salesforce-certified-platform-administrator.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/salesforce-platform-administrator-official-objectives.txt",
+          "blueprint_snapshot_sha256": "b2f9f40f925247562d8d19eed5ad7a33a4b5c10e03b705d2fe34ec88678b7c97",
+          "audited_on": "2026-10-29",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            }
+          },
+          "findings": [],
+          "notes": "Independent fresh-context read-only review. All ten rubric checks passed against the current guide and objective/status hashes. See the detailed independent-review report.",
+          "guide_content_sha256": "91b8f52e4542e2c8e0bf951d8622a4e8cf0ac64391dde2059cfc80c3d439ea11"
+        },
+        {
+          "exam_code": "SALESFORCE-PLATFORM-APP-BUILDER",
+          "vendor_id": "salesforce",
+          "guide_path": "guides/SALESFORCE-PLATFORM-APP-BUILDER-salesforce-certified-platform-app-builder.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/salesforce-platform-app-builder-official-objectives.txt",
+          "blueprint_snapshot_sha256": "5365cb37f260db38aa6b4a306dd826258e3d85f058b8111352e56a065a965f14",
+          "audited_on": "2026-10-29",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            }
+          },
+          "findings": [],
+          "notes": "Independent fresh-context read-only review. All ten rubric checks passed against the current guide and objective/status hashes. See the detailed independent-review report.",
+          "guide_content_sha256": "f42b52a3080ab22bbd5134ddb8e4591cc525694f8b99070e95eaf78bc4eecadb"
+        },
+        {
+          "exam_code": "SALESFORCE-PLATFORM-DEVELOPER",
+          "vendor_id": "salesforce",
+          "guide_path": "guides/SALESFORCE-PLATFORM-DEVELOPER-salesforce-certified-platform-developer.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/salesforce-platform-developer-official-objectives.txt",
+          "blueprint_snapshot_sha256": "4843c3b24a93a1c4da79e50db00e79c38fa5921c6127df89e37a6754c5cddbfe",
+          "audited_on": "2026-10-29",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Fresh-context reviewer verified current guide, objective/status snapshots and documented current-source coverage; see Group 15 independent review report."
+            }
+          },
+          "findings": [],
+          "notes": "Independent fresh-context read-only review. All ten rubric checks passed against the current guide and objective/status hashes. See the detailed independent-review report.",
+          "guide_content_sha256": "733d4f311f1d1826e477868b1288b83745b0bf35e7a68957cb1add51118f2af2"
+        }
+      ],
+      "summary": {
+        "guide_count": 10,
+        "pass": 10,
+        "pass_with_notes": 0,
+        "fix_required": 0,
+        "blocked": 0,
+        "open_findings": 0,
         "closed_findings": 0
       }
     }

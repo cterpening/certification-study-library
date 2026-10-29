@@ -959,46 +959,47 @@
     {
       "id": "pcad-testing-policies",
       "url": "https://pythoninstitute.org/pcad-testing-policies",
-      "checked_at": "2026-09-30T03:10:40+00:00",
-      "status": "error",
-      "http_status": null,
+      "checked_at": "2026-10-29T04:22:36+00:00",
+      "status": "ok",
+      "http_status": 200,
       "final_url": "https://pythoninstitute.org/pcad-testing-policies",
+      "content_type": "text/html; charset=UTF-8",
+      "page_title": "TestNow – PCAD Testing Policies",
+      "canonical_url": "https://pythoninstitute.org/pcad-testing-policies",
+      "duration_signals": [
+        "15 minutes",
+        "24 hours"
+      ],
+      "signal_fingerprint": "e223103b88fe27c483f4f073bf58dd7c8fe29cd1fd9af62102462298865b38ca",
+      "error": ""
+    },
+    {
+      "id": "pcad-practice-kit",
+      "url": "https://ums.edube.org/products/1-pi-pcad-3102-pt",
+      "checked_at": "2026-10-29T04:22:36+00:00",
+      "status": "blocked",
+      "http_status": 404,
+      "final_url": "https://ums.edube.org/products/1-pi-pcad-3102-pt",
       "content_type": "",
       "page_title": "",
       "canonical_url": "",
       "duration_signals": [],
       "signal_fingerprint": "",
-      "error": "<urlopen error timed out>"
-    },
-    {
-      "id": "pcad-practice-kit",
-      "url": "https://ums.edube.org/products/1-pi-pcad-3102-pt",
-      "checked_at": "2026-09-30T03:10:40+00:00",
-      "status": "ok",
-      "http_status": 200,
-      "final_url": "https://ums.edube.org/products/1-pi-pcad-3102-pt",
-      "content_type": "text/html; charset=UTF-8",
-      "page_title": "OpenEDG - Store",
-      "canonical_url": "https://ums.edube.org/products/1-pi-pcad-3102-pt",
-      "duration_signals": [],
-      "signal_fingerprint": "dd168bfccb4da7c7073453d9b6513d18d72d7e4c0438303df90acdd5752bac15",
-      "error": ""
+      "error": "Automation-specific 404: exact product page was opened and its substantive voucher content read through the web browser on 2026-10-29. The automated health client alone returned Not Found; treat this as automated access blocked, not a broken learner URL."
     },
     {
       "id": "pcad-retake-practice-bundle",
       "url": "https://ums.edube.org/products/1-pi-pcad-3102-erpt",
-      "checked_at": "2026-09-30T03:10:40+00:00",
-      "status": "ok",
-      "http_status": 200,
+      "checked_at": "2026-10-29T04:22:36+00:00",
+      "status": "blocked",
+      "http_status": 404,
       "final_url": "https://ums.edube.org/products/1-pi-pcad-3102-erpt",
-      "content_type": "text/html; charset=UTF-8",
-      "page_title": "OpenEDG - Store",
-      "canonical_url": "https://ums.edube.org/products/1-pi-pcad-3102-erpt",
-      "duration_signals": [
-        "60 minutes"
-      ],
-      "signal_fingerprint": "f009ffde2ccd3e833928d25d73599e325ff9d411781c9a8b4a365b16512e67d1",
-      "error": ""
+      "content_type": "",
+      "page_title": "",
+      "canonical_url": "",
+      "duration_signals": [],
+      "signal_fingerprint": "",
+      "error": "Automation-specific 404: exact product page was opened and its substantive voucher content read through the web browser on 2026-10-29. The automated health client alone returned Not Found; treat this as automated access blocked, not a broken learner URL."
     },
     {
       "id": "pcad-syllabus-pdf",
@@ -1017,144 +1018,142 @@
     {
       "id": "pandas-copy-on-write",
       "url": "https://pandas.pydata.org/docs/user_guide/copy_on_write.html",
-      "checked_at": "2026-09-30T03:10:42+00:00",
+      "checked_at": "2026-10-29T04:22:36+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://pandas.pydata.org/docs/user_guide/copy_on_write.html",
       "content_type": "text/html; charset=utf-8",
-      "page_title": "Copy-on-Write (CoW) — pandas 3.0.6 documentation",
+      "page_title": "",
       "canonical_url": "https://pandas.pydata.org/docs/user_guide/copy_on_write.html",
-      "duration_signals": [
-        "10 minutes"
-      ],
-      "signal_fingerprint": "f1cc88e6f283af1eaf622a790fd32983b74f4cedf5aae9daf6d77f6a17a99664",
+      "duration_signals": [],
+      "signal_fingerprint": "88d0167dd3e7a7f1faa41d232d138d7ddbde535b40002896a20b30756ff00636",
       "error": ""
     },
     {
       "id": "pandas-indexing",
       "url": "https://pandas.pydata.org/docs/user_guide/indexing.html",
-      "checked_at": "2026-09-30T03:10:42+00:00",
+      "checked_at": "2026-10-29T04:22:36+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://pandas.pydata.org/docs/user_guide/indexing.html",
       "content_type": "text/html; charset=utf-8",
-      "page_title": "Indexing and selecting data — pandas 3.0.6 documentation",
+      "page_title": "Indexing and selecting data — pandas 3.1.0 documentation",
       "canonical_url": "https://pandas.pydata.org/docs/user_guide/indexing.html",
       "duration_signals": [
         "10 minutes"
       ],
-      "signal_fingerprint": "20809549cc932d3ef9215dc434592e97fe7498cc5ca78c5de6d48bdb862dd24f",
+      "signal_fingerprint": "cb4a6392a9061e1826125152bf00f5b728f8dab6df17ce69b0fcd19136ade88e",
       "error": ""
     },
     {
       "id": "pandas-missing-data",
       "url": "https://pandas.pydata.org/docs/user_guide/missing_data.html",
-      "checked_at": "2026-09-30T03:10:43+00:00",
+      "checked_at": "2026-10-29T04:22:36+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://pandas.pydata.org/docs/user_guide/missing_data.html",
       "content_type": "text/html; charset=utf-8",
-      "page_title": "Working with missing data — pandas 3.0.6 documentation",
+      "page_title": "Working with missing data — pandas 3.1.0 documentation",
       "canonical_url": "https://pandas.pydata.org/docs/user_guide/missing_data.html",
       "duration_signals": [
         "10 minutes"
       ],
-      "signal_fingerprint": "4838a86c40866c2a8d49d993dccd7fbca81f08ae364cf4dc93d59cdd9bb3f7c3",
+      "signal_fingerprint": "ef3c9630240ec78dd1fc2d542e8dd522afc93bd5a574b1fb175ceec137919e1e",
       "error": ""
     },
     {
       "id": "pandas-groupby",
       "url": "https://pandas.pydata.org/docs/user_guide/groupby.html",
-      "checked_at": "2026-09-30T03:10:43+00:00",
+      "checked_at": "2026-10-29T04:22:36+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://pandas.pydata.org/docs/user_guide/groupby.html",
       "content_type": "text/html; charset=utf-8",
-      "page_title": "Group by: split-apply-combine — pandas 3.0.6 documentation",
+      "page_title": "Group by: split-apply-combine — pandas 3.1.0 documentation",
       "canonical_url": "https://pandas.pydata.org/docs/user_guide/groupby.html",
       "duration_signals": [
         "0.181231 min",
         "10 minutes"
       ],
-      "signal_fingerprint": "67420db1ee5039dffc8a52ca574c58b42a18a4147a63f8167a0606b96c934eda",
+      "signal_fingerprint": "397242c6aa0fa5ad5276343e26d3655cc3d70000fc233b08798dac7ed8cb97ec",
       "error": ""
     },
     {
       "id": "pandas-reshaping",
       "url": "https://pandas.pydata.org/docs/user_guide/reshaping.html",
-      "checked_at": "2026-09-30T03:10:44+00:00",
+      "checked_at": "2026-10-29T04:22:36+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://pandas.pydata.org/docs/user_guide/reshaping.html",
       "content_type": "text/html; charset=utf-8",
-      "page_title": "Reshaping and pivot tables — pandas 3.0.6 documentation",
+      "page_title": "Reshaping and pivot tables — pandas 3.1.0 documentation",
       "canonical_url": "https://pandas.pydata.org/docs/user_guide/reshaping.html",
       "duration_signals": [
         "10 minutes"
       ],
-      "signal_fingerprint": "25048514d670ac35d51c0846964c3d6e4b9f59193d4c6c3abfe0379f95dde1db",
+      "signal_fingerprint": "fe4326a0b3ba068d0059bcc184dceb6770a967e982294473eb7291b47e4ae225",
       "error": ""
     },
     {
       "id": "pandas-dataframe-merge",
       "url": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.merge.html",
-      "checked_at": "2026-09-30T03:10:45+00:00",
+      "checked_at": "2026-10-29T04:22:36+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.merge.html",
       "content_type": "text/html; charset=utf-8",
-      "page_title": "pandas.DataFrame.merge — pandas 3.0.6 documentation",
+      "page_title": "pandas.DataFrame.merge — pandas 3.1.0 documentation",
       "canonical_url": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.merge.html",
       "duration_signals": [],
-      "signal_fingerprint": "2cd2fc1eec83f48aacc15a0858ed250a8224c77c005470c9b7e87271e3de86a0",
+      "signal_fingerprint": "ae0ca527ead727ae2e8922f9fcc6f42ae7ef5edbeadc5859268ca9f71027f017",
       "error": ""
     },
     {
       "id": "pandas-dataframe-std",
       "url": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.std.html",
-      "checked_at": "2026-09-30T03:10:45+00:00",
+      "checked_at": "2026-10-29T04:22:37+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.std.html",
       "content_type": "text/html; charset=utf-8",
-      "page_title": "pandas.DataFrame.std — pandas 3.0.6 documentation",
+      "page_title": "pandas.DataFrame.std — pandas 3.1.0 documentation",
       "canonical_url": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.std.html",
       "duration_signals": [],
-      "signal_fingerprint": "a0f6dddcc9139cbc45fbdeab33926ce839adb66e335b2c0a952665b53b3ca59f",
+      "signal_fingerprint": "f89fbb960c0c7fba2d7b98e740715e73f9462d7251ada69f988206361ffd26b5",
       "error": ""
     },
     {
       "id": "pandas-crosstab",
       "url": "https://pandas.pydata.org/docs/reference/api/pandas.crosstab.html",
-      "checked_at": "2026-09-30T03:10:46+00:00",
+      "checked_at": "2026-10-29T04:22:37+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://pandas.pydata.org/docs/reference/api/pandas.crosstab.html",
       "content_type": "text/html; charset=utf-8",
-      "page_title": "pandas.crosstab — pandas 3.0.6 documentation",
+      "page_title": "pandas.crosstab — pandas 3.1.0 documentation",
       "canonical_url": "https://pandas.pydata.org/docs/reference/api/pandas.crosstab.html",
       "duration_signals": [],
-      "signal_fingerprint": "6151e69957f584da5b0d1b6eaee841b7d1a5900f8ddc62cdee8d6e8251916894",
+      "signal_fingerprint": "63b621acf1e6626eff578ebfb62113c06bf401b66f17b9b80927e57d4470a140",
       "error": ""
     },
     {
       "id": "pandas-read-csv",
       "url": "https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html",
-      "checked_at": "2026-09-30T03:10:46+00:00",
+      "checked_at": "2026-10-29T04:22:37+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html",
       "content_type": "text/html; charset=utf-8",
-      "page_title": "pandas.read_csv — pandas 3.0.6 documentation",
+      "page_title": "pandas.read_csv — pandas 3.1.0 documentation",
       "canonical_url": "https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html",
       "duration_signals": [],
-      "signal_fingerprint": "835dea89461e64d82cea070db107a29fa2bf1bb68e9bd48413bf7e70d4a1687f",
+      "signal_fingerprint": "97421d34b2ab52e2d660a2bb91bb928b39a0ceee517c05a952056b97dfa1780a",
       "error": ""
     },
     {
       "id": "numpy-broadcasting",
       "url": "https://numpy.org/doc/stable/user/basics.broadcasting.html",
-      "checked_at": "2026-09-30T03:10:47+00:00",
+      "checked_at": "2026-10-29T04:22:37+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://numpy.org/doc/stable/user/basics.broadcasting.html",
@@ -1168,7 +1167,7 @@
     {
       "id": "numpy-quantile",
       "url": "https://numpy.org/doc/stable/reference/generated/numpy.quantile.html",
-      "checked_at": "2026-09-30T03:10:48+00:00",
+      "checked_at": "2026-10-29T04:22:37+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://numpy.org/doc/stable/reference/generated/numpy.quantile.html",
@@ -1182,7 +1181,7 @@
     {
       "id": "numpy-random-generator",
       "url": "https://numpy.org/doc/stable/reference/random/generator.html",
-      "checked_at": "2026-09-30T03:10:48+00:00",
+      "checked_at": "2026-10-29T04:22:37+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://numpy.org/doc/stable/reference/random/generator.html",
@@ -1196,49 +1195,49 @@
     {
       "id": "scipy-minimize",
       "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.minimize.html",
-      "checked_at": "2026-09-30T03:10:49+00:00",
-      "status": "error",
-      "http_status": null,
+      "checked_at": "2026-10-29T04:22:37+00:00",
+      "status": "ok",
+      "http_status": 200,
       "final_url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.minimize.html",
-      "content_type": "",
-      "page_title": "",
-      "canonical_url": "",
+      "content_type": "text/html",
+      "page_title": "minimize — SciPy v1.18.0 Manual",
+      "canonical_url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.minimize.html",
       "duration_signals": [],
-      "signal_fingerprint": "",
-      "error": "<urlopen error timed out>"
+      "signal_fingerprint": "12fd8eca03fa3c6c085d6876a7adaeb724606ac7f28badee778905fe05cfc6c5",
+      "error": ""
     },
     {
       "id": "scipy-expit",
       "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.special.expit.html",
-      "checked_at": "2026-09-30T03:10:58+00:00",
-      "status": "error",
-      "http_status": null,
+      "checked_at": "2026-10-29T04:22:37+00:00",
+      "status": "ok",
+      "http_status": 200,
       "final_url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.special.expit.html",
-      "content_type": "",
-      "page_title": "",
-      "canonical_url": "",
+      "content_type": "text/html",
+      "page_title": "scipy.special.expit — SciPy v1.18.0 Manual",
+      "canonical_url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.special.expit.html",
       "duration_signals": [],
-      "signal_fingerprint": "",
-      "error": "<urlopen error timed out>"
+      "signal_fingerprint": "2535c30711aa1cc6fbe6c201bf5edcf2058e85972ba7e0a0102814ebf4dd49ea",
+      "error": ""
     },
     {
       "id": "scipy-bootstrap",
       "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.bootstrap.html",
-      "checked_at": "2026-09-30T03:10:59+00:00",
-      "status": "error",
-      "http_status": null,
+      "checked_at": "2026-10-29T04:22:37+00:00",
+      "status": "ok",
+      "http_status": 200,
       "final_url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.bootstrap.html",
-      "content_type": "",
-      "page_title": "",
-      "canonical_url": "",
+      "content_type": "text/html",
+      "page_title": "bootstrap — SciPy v1.18.0 Manual",
+      "canonical_url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.bootstrap.html",
       "duration_signals": [],
-      "signal_fingerprint": "",
-      "error": "<urlopen error timed out>"
+      "signal_fingerprint": "bd4740ccf147250991d8c71e45e931b66de7491f33e87c2c425f5ca912e9f9f8",
+      "error": ""
     },
     {
       "id": "matplotlib-quickstart",
       "url": "https://matplotlib.org/stable/users/explain/quick_start.html",
-      "checked_at": "2026-09-30T05:47:32+00:00",
+      "checked_at": "2026-10-29T04:22:37+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://matplotlib.org/stable/users/explain/quick_start.html",
@@ -1254,7 +1253,7 @@
     {
       "id": "seaborn-introduction",
       "url": "https://seaborn.pydata.org/tutorial/introduction.html",
-      "checked_at": "2026-09-30T03:11:08+00:00",
+      "checked_at": "2026-10-29T04:22:37+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://seaborn.pydata.org/tutorial/introduction.html",
@@ -1268,7 +1267,7 @@
     {
       "id": "sqlite-select",
       "url": "https://www.sqlite.org/lang_select.html",
-      "checked_at": "2026-09-30T03:11:08+00:00",
+      "checked_at": "2026-10-29T04:22:37+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.sqlite.org/lang_select.html",
@@ -1282,7 +1281,7 @@
     {
       "id": "sqlite-datatypes",
       "url": "https://www.sqlite.org/datatype3.html",
-      "checked_at": "2026-09-30T03:11:12+00:00",
+      "checked_at": "2026-10-29T04:22:37+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.sqlite.org/datatype3.html",
@@ -1296,7 +1295,7 @@
     {
       "id": "sqlite-aggregate-functions",
       "url": "https://www.sqlite.org/lang_aggfunc.html",
-      "checked_at": "2026-09-30T03:11:13+00:00",
+      "checked_at": "2026-10-29T04:22:37+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.sqlite.org/lang_aggfunc.html",
@@ -1338,49 +1337,52 @@
     {
       "id": "vanbuuren-missing-identification",
       "url": "https://stefvanbuuren.name/fimd/sec-idconcepts.html",
-      "checked_at": "2026-09-30T03:30:30+00:00",
-      "status": "error",
-      "http_status": null,
+      "checked_at": "2026-10-29T04:22:37+00:00",
+      "status": "ok",
+      "http_status": 200,
       "final_url": "https://stefvanbuuren.name/fimd/sec-idconcepts.html",
-      "content_type": "",
+      "content_type": "text/html; charset=utf-8",
       "page_title": "",
-      "canonical_url": "",
+      "canonical_url": "https://stefvanbuuren.name/fimd/sec-idconcepts.html",
       "duration_signals": [],
-      "signal_fingerprint": "",
-      "error": "<urlopen error timed out>"
+      "signal_fingerprint": "41842ae379aaae5181d2d25929fab49527cdecdcde45ff55d2be5c89b526b32d",
+      "error": ""
     },
     {
       "id": "pced-testing-policies",
       "url": "https://pythoninstitute.org/pced-testing-policies",
-      "checked_at": "2026-09-30T02:39:20+00:00",
-      "status": "error",
-      "http_status": null,
+      "checked_at": "2026-10-29T04:22:37+00:00",
+      "status": "ok",
+      "http_status": 200,
       "final_url": "https://pythoninstitute.org/pced-testing-policies",
-      "content_type": "",
-      "page_title": "",
-      "canonical_url": "",
-      "duration_signals": [],
-      "signal_fingerprint": "",
-      "error": "<urlopen error timed out>"
+      "content_type": "text/html; charset=UTF-8",
+      "page_title": "TestNow – PCED Testing Policies",
+      "canonical_url": "https://pythoninstitute.org/pced-testing-policies",
+      "duration_signals": [
+        "15 minutes",
+        "24 hours"
+      ],
+      "signal_fingerprint": "828d3bf5b08a9ce7d9f2f924b2d9ada429fa28d0e5279a3f19e9968a49d87868",
+      "error": ""
     },
     {
       "id": "pced-pd101-vendor",
       "url": "https://pythoninstitute.org/python-for-data-analytics-101",
-      "checked_at": "2026-09-30T02:39:20+00:00",
-      "status": "error",
-      "http_status": null,
+      "checked_at": "2026-10-29T04:22:37+00:00",
+      "status": "ok",
+      "http_status": 200,
       "final_url": "https://pythoninstitute.org/python-for-data-analytics-101",
-      "content_type": "",
-      "page_title": "",
-      "canonical_url": "",
+      "content_type": "text/html; charset=UTF-8",
+      "page_title": "Python for Data Analytics 101 (PD101)",
+      "canonical_url": "https://pythoninstitute.org/python-for-data-analytics-101",
       "duration_signals": [],
-      "signal_fingerprint": "",
-      "error": "<urlopen error timed out>"
+      "signal_fingerprint": "2d811d184fdc3560ee03bdeaefcb3919fdaa5bcf2e3ef8f43992435de652c73b",
+      "error": ""
     },
     {
       "id": "pced-pd101-edube",
       "url": "https://edube.org/study/pd101",
-      "checked_at": "2026-09-30T03:10:41+00:00",
+      "checked_at": "2026-10-29T04:22:37+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://edube.org/study/pd101",
@@ -1396,37 +1398,35 @@
     {
       "id": "pced-practice-kit",
       "url": "https://ums.edube.org/products/pced-practice-test",
-      "checked_at": "2026-09-30T02:39:21+00:00",
-      "status": "ok",
-      "http_status": 200,
+      "checked_at": "2026-10-29T04:22:37+00:00",
+      "status": "blocked",
+      "http_status": 404,
       "final_url": "https://ums.edube.org/products/pced-practice-test",
-      "content_type": "text/html; charset=UTF-8",
-      "page_title": "OpenEDG - Store",
-      "canonical_url": "https://ums.edube.org/products/pced-practice-test",
+      "content_type": "",
+      "page_title": "",
+      "canonical_url": "",
       "duration_signals": [],
-      "signal_fingerprint": "e687c373d14807d4f61b1a6ef1d1123868db02b1d6927daa0aa917b37f8c9cd7",
-      "error": ""
+      "signal_fingerprint": "",
+      "error": "Automation-specific 404: exact product page was opened and its substantive voucher content read through the web browser on 2026-10-29. The automated health client alone returned Not Found; treat this as automated access blocked, not a broken learner URL."
     },
     {
       "id": "pced-retake-practice-bundle",
       "url": "https://ums.edube.org/products/0-pi-pced-3002-erpt",
-      "checked_at": "2026-09-30T02:39:22+00:00",
-      "status": "ok",
-      "http_status": 200,
+      "checked_at": "2026-10-29T04:22:37+00:00",
+      "status": "blocked",
+      "http_status": 404,
       "final_url": "https://ums.edube.org/products/0-pi-pced-3002-erpt",
-      "content_type": "text/html; charset=UTF-8",
-      "page_title": "OpenEDG - Store",
-      "canonical_url": "https://ums.edube.org/products/0-pi-pced-3002-erpt",
-      "duration_signals": [
-        "60 minutes"
-      ],
-      "signal_fingerprint": "77b442ae71805fd3dbe2d553207e30db1c8c4d8c744931300a56d3241a536b94",
-      "error": ""
+      "content_type": "",
+      "page_title": "",
+      "canonical_url": "",
+      "duration_signals": [],
+      "signal_fingerprint": "",
+      "error": "Automation-specific 404: exact product page was opened and its substantive voucher content read through the web browser on 2026-10-29. The automated health client alone returned Not Found; treat this as automated access blocked, not a broken learner URL."
     },
     {
       "id": "pced-pd101-pro",
       "url": "https://ums.edube.org/products/pi-pd101-courseware",
-      "checked_at": "2026-09-30T02:39:22+00:00",
+      "checked_at": "2026-10-29T04:22:37+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://ums.edube.org/products/pi-pd101-courseware",
@@ -1441,22 +1441,22 @@
     },
     {
       "id": "eu-data-protection-principles",
-      "url": "https://commission.europa.eu/law/law-topic/data-protection/reform/rules-business-and-organisations/principles-gdpr/overview-principles/what-data-can-we-process-and-under-which-conditions_en",
-      "checked_at": "2026-09-30T02:39:22+00:00",
-      "status": "error",
-      "http_status": null,
-      "final_url": "https://commission.europa.eu/law/law-topic/data-protection/reform/rules-business-and-organisations/principles-gdpr/overview-principles/what-data-can-we-process-and-under-which-conditions_en",
-      "content_type": "",
-      "page_title": "",
-      "canonical_url": "",
+      "url": "https://www.edpb.europa.eu/topics/key-gdpr-concepts/legal-basis_en",
+      "checked_at": "2026-10-29T04:22:37+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://www.edpb.europa.eu/topics/key-gdpr-concepts/legal-basis_en",
+      "content_type": "text/html; charset=utf-8",
+      "page_title": "Legal basis | European Data Protection Board",
+      "canonical_url": "https://www.edpb.europa.eu/topics/key-gdpr-concepts/legal-basis_en",
       "duration_signals": [],
-      "signal_fingerprint": "",
-      "error": "<urlopen error timed out>"
+      "signal_fingerprint": "48452624e2417594256aba6528c40916bbb5a2ab2bd4bd61680e1225e10739e3",
+      "error": ""
     },
     {
       "id": "hhs-hipaa-covered-entities",
       "url": "https://www.hhs.gov/hipaa/for-professionals/covered-entities/index.html",
-      "checked_at": "2026-09-30T02:39:38+00:00",
+      "checked_at": "2026-10-29T04:22:37+00:00",
       "status": "blocked",
       "http_status": 403,
       "final_url": "https://www.hhs.gov/hipaa/for-professionals/covered-entities/index.html",
@@ -1470,21 +1470,21 @@
     {
       "id": "california-ccpa-overview",
       "url": "https://www.oag.ca.gov/privacy/ccpa",
-      "checked_at": "2026-09-30T02:39:38+00:00",
-      "status": "error",
-      "http_status": null,
+      "checked_at": "2026-10-29T04:22:37+00:00",
+      "status": "ok",
+      "http_status": 200,
       "final_url": "https://www.oag.ca.gov/privacy/ccpa",
-      "content_type": "",
-      "page_title": "",
-      "canonical_url": "",
+      "content_type": "text/html; charset=utf-8",
+      "page_title": "California Consumer Privacy Act (CCPA)",
+      "canonical_url": "https://oag.ca.gov/privacy/ccpa",
       "duration_signals": [],
-      "signal_fingerprint": "",
-      "error": "<urlopen error timed out>"
+      "signal_fingerprint": "45d6d176dd2b9177a12b92b98a55c8e09d29206fd2f0fbc0d3806315b868c353",
+      "error": ""
     },
     {
       "id": "numpy-array",
       "url": "https://numpy.org/doc/stable/reference/generated/numpy.array.html",
-      "checked_at": "2026-09-30T02:39:39+00:00",
+      "checked_at": "2026-10-29T04:22:37+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://numpy.org/doc/stable/reference/generated/numpy.array.html",
@@ -1498,7 +1498,7 @@
     {
       "id": "numpy-mean",
       "url": "https://numpy.org/doc/stable/reference/generated/numpy.mean.html",
-      "checked_at": "2026-09-30T05:47:09+00:00",
+      "checked_at": "2026-10-29T04:22:37+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://numpy.org/doc/stable/reference/generated/numpy.mean.html",
@@ -1512,7 +1512,7 @@
     {
       "id": "numpy-median",
       "url": "https://numpy.org/doc/stable/reference/generated/numpy.median.html",
-      "checked_at": "2026-09-30T02:39:40+00:00",
+      "checked_at": "2026-10-29T04:22:37+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://numpy.org/doc/stable/reference/generated/numpy.median.html",
@@ -1526,7 +1526,7 @@
     {
       "id": "numpy-std",
       "url": "https://numpy.org/doc/stable/reference/generated/numpy.std.html",
-      "checked_at": "2026-09-30T02:39:40+00:00",
+      "checked_at": "2026-10-29T04:22:37+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://numpy.org/doc/stable/reference/generated/numpy.std.html",
@@ -1540,7 +1540,7 @@
     {
       "id": "numpy-sum",
       "url": "https://numpy.org/doc/stable/reference/generated/numpy.sum.html",
-      "checked_at": "2026-09-30T02:39:40+00:00",
+      "checked_at": "2026-10-29T04:22:38+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://numpy.org/doc/stable/reference/generated/numpy.sum.html",
@@ -1554,7 +1554,7 @@
     {
       "id": "numpy-arange",
       "url": "https://numpy.org/doc/stable/reference/generated/numpy.arange.html",
-      "checked_at": "2026-09-30T02:39:41+00:00",
+      "checked_at": "2026-10-29T04:22:38+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://numpy.org/doc/stable/reference/generated/numpy.arange.html",
@@ -1568,7 +1568,7 @@
     {
       "id": "numpy-linspace",
       "url": "https://numpy.org/doc/stable/reference/generated/numpy.linspace.html",
-      "checked_at": "2026-09-30T02:39:41+00:00",
+      "checked_at": "2026-10-29T04:22:38+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://numpy.org/doc/stable/reference/generated/numpy.linspace.html",
@@ -1582,7 +1582,7 @@
     {
       "id": "numpy-corrcoef",
       "url": "https://numpy.org/doc/stable/reference/generated/numpy.corrcoef.html",
-      "checked_at": "2026-09-30T02:39:42+00:00",
+      "checked_at": "2026-10-29T04:22:38+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://numpy.org/doc/stable/reference/generated/numpy.corrcoef.html",
@@ -1596,7 +1596,7 @@
     {
       "id": "numpy-sort",
       "url": "https://numpy.org/doc/stable/reference/generated/numpy.sort.html",
-      "checked_at": "2026-09-30T02:39:42+00:00",
+      "checked_at": "2026-10-29T04:22:38+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://numpy.org/doc/stable/reference/generated/numpy.sort.html",
@@ -1610,7 +1610,7 @@
     {
       "id": "numpy-unique",
       "url": "https://numpy.org/doc/stable/reference/generated/numpy.unique.html",
-      "checked_at": "2026-09-30T02:39:43+00:00",
+      "checked_at": "2026-10-29T04:22:38+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://numpy.org/doc/stable/reference/generated/numpy.unique.html",
@@ -1624,7 +1624,7 @@
     {
       "id": "numpy-isfinite",
       "url": "https://numpy.org/doc/stable/reference/generated/numpy.isfinite.html",
-      "checked_at": "2026-09-30T02:39:43+00:00",
+      "checked_at": "2026-10-29T04:22:38+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://numpy.org/doc/stable/reference/generated/numpy.isfinite.html",
@@ -1638,7 +1638,7 @@
     {
       "id": "python313-statistics",
       "url": "https://docs.python.org/3.13/library/statistics.html",
-      "checked_at": "2026-09-30T05:47:08+00:00",
+      "checked_at": "2026-10-29T04:22:38+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.python.org/3.13/library/statistics.html",
@@ -1652,7 +1652,7 @@
     {
       "id": "python313-collections",
       "url": "https://docs.python.org/3.13/library/collections.html",
-      "checked_at": "2026-09-30T02:39:45+00:00",
+      "checked_at": "2026-10-29T04:22:38+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.python.org/3.13/library/collections.html",
@@ -1666,7 +1666,7 @@
     {
       "id": "python313-datetime",
       "url": "https://docs.python.org/3.13/library/datetime.html",
-      "checked_at": "2026-09-30T04:49:33+00:00",
+      "checked_at": "2026-10-29T04:22:38+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.python.org/3.13/library/datetime.html",
@@ -1683,7 +1683,7 @@
     {
       "id": "python313-ospath",
       "url": "https://docs.python.org/3.13/library/os.path.html",
-      "checked_at": "2026-09-30T02:39:46+00:00",
+      "checked_at": "2026-10-29T04:22:38+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.python.org/3.13/library/os.path.html",
@@ -1697,7 +1697,7 @@
     {
       "id": "dotnet-chart-saveimage",
       "url": "https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.datavisualization.charting.chart.saveimage?view=netframework-4.8.1",
-      "checked_at": "2026-09-30T02:51:48+00:00",
+      "checked_at": "2026-10-29T04:22:38+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.datavisualization.charting.chart.saveimage?view=netframework-4.8.1",
@@ -1711,16 +1711,21 @@
     {
       "id": "python-institute-pearson-scheduling",
       "url": "https://pythoninstitute.org/schedule-exam-pvue",
-      "checked_at": "2026-09-30T01:57:11+00:00",
-      "status": "error",
-      "http_status": null,
+      "checked_at": "2026-10-29T04:22:38+00:00",
+      "status": "ok",
+      "http_status": 200,
       "final_url": "https://pythoninstitute.org/schedule-exam-pvue",
-      "content_type": "",
-      "page_title": "",
-      "canonical_url": "",
-      "duration_signals": [],
-      "signal_fingerprint": "",
-      "error": "<urlopen error timed out>"
+      "content_type": "text/html; charset=UTF-8",
+      "page_title": "Schedule Your Exam with Pearson VUE",
+      "canonical_url": "https://pythoninstitute.org/schedule-exam-pvue",
+      "duration_signals": [
+        "15 minutes",
+        "24 hours",
+        "30 minutes",
+        "about 15 minutes"
+      ],
+      "signal_fingerprint": "1a1c4d3bffb69d5b53f62eb11ece2b233e208256d6937244e116f2a171cb883d",
+      "error": ""
     },
     {
       "id": "python-professional-course",
@@ -1753,7 +1758,7 @@
     {
       "id": "pep-1-process",
       "url": "https://peps.python.org/pep-0001/",
-      "checked_at": "2026-09-30T01:57:29+00:00",
+      "checked_at": "2026-10-29T04:22:38+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://peps.python.org/pep-0001/",
@@ -1767,7 +1772,7 @@
     {
       "id": "pep-20-zen",
       "url": "https://peps.python.org/pep-0020/",
-      "checked_at": "2026-09-30T01:57:29+00:00",
+      "checked_at": "2026-10-29T04:22:48+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://peps.python.org/pep-0020/",
@@ -1781,7 +1786,7 @@
     {
       "id": "openedg-python-advanced-1",
       "url": "https://edube.org/study/pcpp1-1",
-      "checked_at": "2026-09-30T01:57:30+00:00",
+      "checked_at": "2026-10-29T04:22:49+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://edube.org/study/pcpp1-1",
@@ -1798,7 +1803,7 @@
     {
       "id": "openedg-python-advanced-2",
       "url": "https://edube.org/study/pcpp1-2",
-      "checked_at": "2026-09-30T01:57:30+00:00",
+      "checked_at": "2026-10-29T04:22:49+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://edube.org/study/pcpp1-2",
@@ -1815,7 +1820,7 @@
     {
       "id": "openedg-python-advanced-3",
       "url": "https://edube.org/study/pcpp1-3",
-      "checked_at": "2026-09-30T01:57:30+00:00",
+      "checked_at": "2026-10-29T04:22:49+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://edube.org/study/pcpp1-3",
@@ -1832,7 +1837,7 @@
     {
       "id": "openedg-python-advanced-4",
       "url": "https://edube.org/study/pcpp1-4",
-      "checked_at": "2026-09-30T01:57:31+00:00",
+      "checked_at": "2026-10-29T04:22:49+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://edube.org/study/pcpp1-4",
@@ -1849,7 +1854,7 @@
     {
       "id": "openedg-python-advanced-5",
       "url": "https://edube.org/study/pcpp1-5",
-      "checked_at": "2026-09-30T01:57:31+00:00",
+      "checked_at": "2026-10-29T04:22:49+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://edube.org/study/pcpp1-5",
@@ -1866,7 +1871,7 @@
     {
       "id": "python313-data-model",
       "url": "https://docs.python.org/3.13/reference/datamodel.html",
-      "checked_at": "2026-09-30T03:11:15+00:00",
+      "checked_at": "2026-10-29T04:22:49+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.python.org/3.13/reference/datamodel.html",
@@ -1880,7 +1885,7 @@
     {
       "id": "python313-abc",
       "url": "https://docs.python.org/3.13/library/abc.html",
-      "checked_at": "2026-09-30T01:57:31+00:00",
+      "checked_at": "2026-10-29T04:22:49+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.python.org/3.13/library/abc.html",
@@ -1894,7 +1899,7 @@
     {
       "id": "python313-functools",
       "url": "https://docs.python.org/3.13/library/functools.html",
-      "checked_at": "2026-09-30T04:17:00+00:00",
+      "checked_at": "2026-10-29T04:22:49+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.python.org/3.13/library/functools.html",
@@ -1908,7 +1913,7 @@
     {
       "id": "python313-copy",
       "url": "https://docs.python.org/3.13/library/copy.html",
-      "checked_at": "2026-09-30T01:57:32+00:00",
+      "checked_at": "2026-10-29T04:22:50+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.python.org/3.13/library/copy.html",
@@ -1922,7 +1927,7 @@
     {
       "id": "python313-pickle",
       "url": "https://docs.python.org/3.13/library/pickle.html",
-      "checked_at": "2026-09-30T01:57:32+00:00",
+      "checked_at": "2026-10-29T04:22:50+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.python.org/3.13/library/pickle.html",
@@ -1936,7 +1941,7 @@
     {
       "id": "python313-shelve",
       "url": "https://docs.python.org/3.13/library/shelve.html",
-      "checked_at": "2026-09-30T01:57:32+00:00",
+      "checked_at": "2026-10-29T04:22:50+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.python.org/3.13/library/shelve.html",
@@ -1950,7 +1955,7 @@
     {
       "id": "python313-tkinter",
       "url": "https://docs.python.org/3.13/library/tkinter.html",
-      "checked_at": "2026-09-30T01:57:32+00:00",
+      "checked_at": "2026-10-29T04:22:50+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.python.org/3.13/library/tkinter.html",
@@ -1964,7 +1969,7 @@
     {
       "id": "python313-json",
       "url": "https://docs.python.org/3.13/library/json.html",
-      "checked_at": "2026-09-30T05:47:08+00:00",
+      "checked_at": "2026-10-29T04:22:50+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.python.org/3.13/library/json.html",
@@ -1978,7 +1983,7 @@
     {
       "id": "python313-elementtree",
       "url": "https://docs.python.org/3.13/library/xml.etree.elementtree.html",
-      "checked_at": "2026-09-30T04:49:34+00:00",
+      "checked_at": "2026-10-29T04:22:50+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.python.org/3.13/library/xml.etree.elementtree.html",
@@ -1992,7 +1997,7 @@
     {
       "id": "python313-logging",
       "url": "https://docs.python.org/3.13/library/logging.html",
-      "checked_at": "2026-09-30T05:15:23+00:00",
+      "checked_at": "2026-10-29T04:22:50+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.python.org/3.13/library/logging.html",
@@ -2006,7 +2011,7 @@
     {
       "id": "python313-configparser",
       "url": "https://docs.python.org/3.13/library/configparser.html",
-      "checked_at": "2026-09-30T01:57:36+00:00",
+      "checked_at": "2026-10-29T04:22:50+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.python.org/3.13/library/configparser.html",
@@ -2020,7 +2025,7 @@
     {
       "id": "python313-contextlib",
       "url": "https://docs.python.org/3.13/library/contextlib.html",
-      "checked_at": "2026-09-30T04:17:00+00:00",
+      "checked_at": "2026-10-29T04:22:50+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.python.org/3.13/library/contextlib.html",
@@ -2034,7 +2039,7 @@
     {
       "id": "python313-xml-security",
       "url": "https://docs.python.org/3.13/library/xml.html",
-      "checked_at": "2026-09-30T02:16:07+00:00",
+      "checked_at": "2026-10-29T04:22:50+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.python.org/3.13/library/xml.html",
@@ -4508,64 +4513,71 @@
     },
     {
       "id": "python-pcap-testnow-policies",
-      "url": "https://www.pythoninstitute.org/pcap-testing-policies",
-      "checked_at": "2026-09-29T21:20:16+00:00",
-      "status": "error",
-      "http_status": null,
-      "final_url": "https://www.pythoninstitute.org/pcap-testing-policies",
-      "content_type": "",
-      "page_title": "",
-      "canonical_url": "",
-      "duration_signals": [],
-      "signal_fingerprint": "",
-      "error": "<urlopen error timed out>"
+      "url": "https://pythoninstitute.org/pcap-testing-policies",
+      "checked_at": "2026-10-29T04:22:50+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://pythoninstitute.org/pcap-testing-policies",
+      "content_type": "text/html; charset=UTF-8",
+      "page_title": "TestNow – PCAP Testing Policies",
+      "canonical_url": "https://pythoninstitute.org/pcap-testing-policies",
+      "duration_signals": [
+        "15 minutes",
+        "24 hours"
+      ],
+      "signal_fingerprint": "8d382bb6f9052765310fd585303cbe02bc6aeb9b855435dfae4326176fe511f8",
+      "error": ""
     },
     {
       "id": "python-pvue-policies",
       "url": "https://pythoninstitute.org/pvue-testing-policies",
-      "checked_at": "2026-09-30T02:00:52+00:00",
-      "status": "error",
-      "http_status": null,
+      "checked_at": "2026-10-29T04:22:50+00:00",
+      "status": "ok",
+      "http_status": 200,
       "final_url": "https://pythoninstitute.org/pvue-testing-policies",
-      "content_type": "",
-      "page_title": "",
-      "canonical_url": "",
-      "duration_signals": [],
-      "signal_fingerprint": "",
-      "error": "<urlopen error timed out>"
+      "content_type": "text/html; charset=UTF-8",
+      "page_title": "Pearson VUE Exam Policies",
+      "canonical_url": "https://pythoninstitute.org/pvue-testing-policies",
+      "duration_signals": [
+        "15 minutes",
+        "24 hours",
+        "about 15 minutes"
+      ],
+      "signal_fingerprint": "180df0beda3b5c3e052784c5e0af575f803fc4ed27e273931e8cef29c9e6ba8a",
+      "error": ""
     },
     {
       "id": "pcap-japanese-credential",
       "url": "https://pythoninstitute.org/ja/pcap",
-      "checked_at": "2026-09-29T21:20:16+00:00",
-      "status": "error",
-      "http_status": null,
+      "checked_at": "2026-10-29T04:22:50+00:00",
+      "status": "ok",
+      "http_status": 200,
       "final_url": "https://pythoninstitute.org/ja/pcap",
-      "content_type": "",
-      "page_title": "",
-      "canonical_url": "",
+      "content_type": "text/html; charset=UTF-8",
+      "page_title": "PCAP",
+      "canonical_url": "https://pythoninstitute.org/ja/pcap",
       "duration_signals": [],
-      "signal_fingerprint": "",
-      "error": "<urlopen error timed out>"
+      "signal_fingerprint": "c66ba492e246e1e361283c8a55cb4237a989c0b758d3c12aaec1538c8bd65d7f",
+      "error": ""
     },
     {
       "id": "pcap-syllabus-pdf",
       "url": "https://pythoninstitute.org/assets/627e61fa6fe27591613128.pdf",
-      "checked_at": "2026-09-29T21:20:34+00:00",
-      "status": "error",
-      "http_status": null,
+      "checked_at": "2026-10-29T04:22:50+00:00",
+      "status": "ok",
+      "http_status": 200,
       "final_url": "https://pythoninstitute.org/assets/627e61fa6fe27591613128.pdf",
-      "content_type": "",
+      "content_type": "application/pdf",
       "page_title": "",
       "canonical_url": "",
       "duration_signals": [],
       "signal_fingerprint": "",
-      "error": "<urlopen error timed out>"
+      "error": ""
     },
     {
       "id": "python313-modules",
       "url": "https://docs.python.org/3.13/tutorial/modules.html",
-      "checked_at": "2026-09-29T21:20:34+00:00",
+      "checked_at": "2026-10-29T04:22:50+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.python.org/3.13/tutorial/modules.html",
@@ -4579,7 +4591,7 @@
     {
       "id": "python313-math",
       "url": "https://docs.python.org/3.13/library/math.html",
-      "checked_at": "2026-09-30T05:47:08+00:00",
+      "checked_at": "2026-10-29T04:22:50+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.python.org/3.13/library/math.html",
@@ -4593,7 +4605,7 @@
     {
       "id": "python313-random",
       "url": "https://docs.python.org/3.13/library/random.html",
-      "checked_at": "2026-09-30T02:39:44+00:00",
+      "checked_at": "2026-10-29T04:22:50+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.python.org/3.13/library/random.html",
@@ -4607,7 +4619,7 @@
     {
       "id": "python313-platform",
       "url": "https://docs.python.org/3.13/library/platform.html",
-      "checked_at": "2026-09-29T21:20:35+00:00",
+      "checked_at": "2026-10-29T04:22:50+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.python.org/3.13/library/platform.html",
@@ -4621,7 +4633,7 @@
     {
       "id": "python313-io-tutorial",
       "url": "https://docs.python.org/3.13/tutorial/inputoutput.html",
-      "checked_at": "2026-09-29T21:20:36+00:00",
+      "checked_at": "2026-10-29T04:22:50+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.python.org/3.13/tutorial/inputoutput.html",
@@ -4635,7 +4647,7 @@
     {
       "id": "python313-io",
       "url": "https://docs.python.org/3.13/library/io.html",
-      "checked_at": "2026-09-29T21:20:36+00:00",
+      "checked_at": "2026-10-29T04:22:50+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.python.org/3.13/library/io.html",
@@ -4649,7 +4661,7 @@
     {
       "id": "python313-errno",
       "url": "https://docs.python.org/3.13/library/errno.html",
-      "checked_at": "2026-09-29T21:20:37+00:00",
+      "checked_at": "2026-10-29T04:22:50+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.python.org/3.13/library/errno.html",
@@ -4663,7 +4675,7 @@
     {
       "id": "python313-compound",
       "url": "https://docs.python.org/3.13/reference/compound_stmts.html",
-      "checked_at": "2026-09-30T04:17:01+00:00",
+      "checked_at": "2026-10-29T04:22:50+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.python.org/3.13/reference/compound_stmts.html",
@@ -4677,7 +4689,7 @@
     {
       "id": "python313-csv",
       "url": "https://docs.python.org/3.13/library/csv.html",
-      "checked_at": "2026-09-30T05:47:08+00:00",
+      "checked_at": "2026-10-29T04:22:50+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.python.org/3.13/library/csv.html",
@@ -5380,35 +5392,38 @@
     {
       "id": "pcep-testing-policies",
       "url": "https://pythoninstitute.org/pcep-testing-policies",
-      "checked_at": "2026-09-29T19:25:18+00:00",
-      "status": "error",
-      "http_status": null,
+      "checked_at": "2026-10-29T04:22:51+00:00",
+      "status": "ok",
+      "http_status": 200,
       "final_url": "https://pythoninstitute.org/pcep-testing-policies",
-      "content_type": "",
-      "page_title": "",
-      "canonical_url": "",
-      "duration_signals": [],
-      "signal_fingerprint": "",
-      "error": "<urlopen error timed out>"
+      "content_type": "text/html; charset=UTF-8",
+      "page_title": "TestNow – PCEP Testing Policies",
+      "canonical_url": "https://pythoninstitute.org/pcep-testing-policies",
+      "duration_signals": [
+        "15 minutes",
+        "24 hours"
+      ],
+      "signal_fingerprint": "155f5081e21107754d9fca94c64bad2ba78fe007675aa067df084beca42b472e",
+      "error": ""
     },
     {
       "id": "pcep-syllabus-pdf",
       "url": "https://pythoninstitute.org/assets/627e61bc29de3989767095.pdf",
-      "checked_at": "2026-09-29T19:25:18+00:00",
-      "status": "error",
-      "http_status": null,
+      "checked_at": "2026-10-29T04:22:51+00:00",
+      "status": "ok",
+      "http_status": 200,
       "final_url": "https://pythoninstitute.org/assets/627e61bc29de3989767095.pdf",
-      "content_type": "",
+      "content_type": "application/pdf",
       "page_title": "",
       "canonical_url": "",
       "duration_signals": [],
       "signal_fingerprint": "",
-      "error": "<urlopen error timed out>"
+      "error": ""
     },
     {
       "id": "python313-datastructures",
       "url": "https://docs.python.org/3.13/tutorial/datastructures.html",
-      "checked_at": "2026-09-29T21:20:36+00:00",
+      "checked_at": "2026-10-29T04:22:51+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.python.org/3.13/tutorial/datastructures.html",
@@ -5422,7 +5437,7 @@
     {
       "id": "python313-expressions",
       "url": "https://docs.python.org/3.13/reference/expressions.html",
-      "checked_at": "2026-09-29T19:25:18+00:00",
+      "checked_at": "2026-10-29T04:22:51+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.python.org/3.13/reference/expressions.html",
@@ -5436,7 +5451,7 @@
     {
       "id": "python313-errors",
       "url": "https://docs.python.org/3.13/tutorial/errors.html",
-      "checked_at": "2026-09-29T21:20:35+00:00",
+      "checked_at": "2026-10-29T04:22:51+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.python.org/3.13/tutorial/errors.html",
@@ -5450,7 +5465,7 @@
     {
       "id": "python313-exceptions",
       "url": "https://docs.python.org/3.13/library/exceptions.html",
-      "checked_at": "2026-09-30T01:57:36+00:00",
+      "checked_at": "2026-10-29T04:22:51+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.python.org/3.13/builtins/exceptions.html",
@@ -5464,7 +5479,7 @@
     {
       "id": "python313-classes",
       "url": "https://docs.python.org/3.13/tutorial/classes.html",
-      "checked_at": "2026-09-30T01:57:31+00:00",
+      "checked_at": "2026-10-29T04:22:51+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.python.org/3.13/tutorial/classes.html",
@@ -5478,7 +5493,7 @@
     {
       "id": "python313-lexical",
       "url": "https://docs.python.org/3.13/reference/lexical_analysis.html",
-      "checked_at": "2026-09-29T19:25:19+00:00",
+      "checked_at": "2026-10-29T04:22:51+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.python.org/3.13/reference/lexical_analysis.html",
@@ -5492,7 +5507,7 @@
     {
       "id": "python313-float",
       "url": "https://docs.python.org/3.13/tutorial/floatingpoint.html",
-      "checked_at": "2026-09-29T19:25:20+00:00",
+      "checked_at": "2026-10-29T04:22:51+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.python.org/3.13/tutorial/floatingpoint.html",
@@ -5506,7 +5521,7 @@
     {
       "id": "python313-builtins",
       "url": "https://docs.python.org/3.13/library/functions.html",
-      "checked_at": "2026-09-30T04:17:01+00:00",
+      "checked_at": "2026-10-29T04:22:51+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.python.org/3.13/builtins/functions.html",
@@ -5520,7 +5535,7 @@
     {
       "id": "python313-types",
       "url": "https://docs.python.org/3.13/library/stdtypes.html",
-      "checked_at": "2026-09-30T02:39:48+00:00",
+      "checked_at": "2026-10-29T04:22:51+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.python.org/3.13/builtins/stdtypes.html",
@@ -6349,7 +6364,7 @@
     {
       "id": "panw-certification-faq",
       "url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/certification-faq.pdf",
-      "checked_at": "2026-09-29T17:08:50+00:00",
+      "checked_at": "2026-10-29T04:22:51+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/certification-faq.pdf",
@@ -6363,21 +6378,21 @@
     {
       "id": "panw-pearson-program",
       "url": "https://www.pearsonvue.com/us/en/paloaltonetworks.html",
-      "checked_at": "2026-09-29T17:08:50+00:00",
+      "checked_at": "2026-10-29T04:22:51+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.pearsonvue.com/us/en/paloaltonetworks.html",
       "content_type": "text/html",
-      "page_title": "Palo Alto Networks, Inc. Certification Exams | Cybersecurity & Network Security",
+      "page_title": "Palo Alto Networks Certification Examinations | Cybersecurity & Network Security",
       "canonical_url": "https://www.pearsonvue.com/us/en/paloaltonetworks.html",
       "duration_signals": [],
-      "signal_fingerprint": "71d3458992fc5c4988c252303aed2c07a652b51db10c6815b8bcfc77f60b1573",
+      "signal_fingerprint": "c96a4f3159fbfa01abb24a0b07081603343b85040bb84b35394931da56062ce6",
       "error": ""
     },
     {
       "id": "panw-security-rules",
       "url": "https://docs.paloaltonetworks.com/network-security/security-policy/administration/security-rules",
-      "checked_at": "2026-09-29T17:08:50+00:00",
+      "checked_at": "2026-10-29T04:22:51+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.paloaltonetworks.com/network-security/security-policy/administration/security-rules",
@@ -6391,7 +6406,7 @@
     {
       "id": "panw-machine-agentic-pam-2026",
       "url": "https://www.paloaltonetworks.com/blog/identity-security/securing-machine-agentic-identities-modern-pam/",
-      "checked_at": "2026-09-29T17:08:51+00:00",
+      "checked_at": "2026-10-29T04:22:51+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.paloaltonetworks.com/blog/identity-security/securing-machine-agentic-identities-modern-pam/",
@@ -6408,7 +6423,7 @@
     {
       "id": "aws-shared-responsibility",
       "url": "https://aws.amazon.com/compliance/shared-responsibility-model/",
-      "checked_at": "2026-09-29T17:08:51+00:00",
+      "checked_at": "2026-10-29T04:22:51+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://aws.amazon.com/compliance/shared-responsibility-model/",
@@ -6422,7 +6437,7 @@
     {
       "id": "nist-authenticator-requirements",
       "url": "https://pages.nist.gov/800-63-4/sp800-63b/authenticators/",
-      "checked_at": "2026-09-30T04:49:36+00:00",
+      "checked_at": "2026-10-29T04:22:51+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://pages.nist.gov/800-63-4/sp800-63b/authenticators/",
@@ -6438,7 +6453,7 @@
     {
       "id": "ietf-syslog-rfc5424",
       "url": "https://www.rfc-editor.org/rfc/rfc5424.html",
-      "checked_at": "2026-09-29T17:08:51+00:00",
+      "checked_at": "2026-10-29T04:22:51+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.rfc-editor.org/rfc/rfc5424.html",
@@ -6456,7 +6471,7 @@
     {
       "id": "cisa-zero-trust-v2-pdf",
       "url": "https://www.cisa.gov/sites/default/files/2023-04/CISA_Zero_Trust_Maturity_Model_Version_2_508c.pdf",
-      "checked_at": "2026-09-29T17:08:52+00:00",
+      "checked_at": "2026-10-29T04:22:51+00:00",
       "status": "blocked",
       "http_status": 403,
       "final_url": "https://www.cisa.gov/sites/default/files/2023-04/CISA_Zero_Trust_Maturity_Model_Version_2_508c.pdf",
@@ -6470,7 +6485,7 @@
     {
       "id": "ietf-dns-tcp-rfc7766",
       "url": "https://www.rfc-editor.org/rfc/rfc7766.html",
-      "checked_at": "2026-09-29T17:10:16+00:00",
+      "checked_at": "2026-10-29T04:22:51+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.rfc-editor.org/rfc/rfc7766.html",
@@ -6484,7 +6499,7 @@
     {
       "id": "panw-pearson-onvue",
       "url": "https://www.pearsonvue.com/us/en/paloaltonetworks/onvue.html",
-      "checked_at": "2026-09-29T17:10:16+00:00",
+      "checked_at": "2026-10-29T04:22:51+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.pearsonvue.com/us/en/paloaltonetworks/onvue.html",
@@ -7492,7 +7507,7 @@
     {
       "id": "salesforce-agentforce-testing-center",
       "url": "https://help.salesforce.com/s/articleView?id=ai.agent_testing_center.htm&language=en_US&type=5",
-      "checked_at": "2026-09-29T15:10:35+00:00",
+      "checked_at": "2026-10-29T04:22:51+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://help.salesforce.com/s/articleView?id=ai.agent_testing_center.htm&language=en_US&type=5",
@@ -7506,7 +7521,7 @@
     {
       "id": "salesforce-agentforce-data-library-troubleshooting",
       "url": "https://help.salesforce.com/s/articleView?id=ai.data_library_troubleshooting.htm&language=en_US&type=5",
-      "checked_at": "2026-09-29T15:06:16+00:00",
+      "checked_at": "2026-10-29T04:22:51+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://help.salesforce.com/s/articleView?id=ai.data_library_troubleshooting.htm&language=en_US&type=5",
@@ -7520,7 +7535,7 @@
     {
       "id": "salesforce-agentforce-data-library-setup",
       "url": "https://help.salesforce.com/s/articleView?id=ai.data_library_setup.htm&language=en_US&type=5",
-      "checked_at": "2026-09-29T15:06:16+00:00",
+      "checked_at": "2026-10-29T04:22:51+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://help.salesforce.com/s/articleView?id=ai.data_library_setup.htm&language=en_US&type=5",
@@ -7534,7 +7549,7 @@
     {
       "id": "salesforce-agent-api-examples",
       "url": "https://developer.salesforce.com/docs/ai/agentforce/guide/agent-api-examples.html",
-      "checked_at": "2026-09-29T15:06:17+00:00",
+      "checked_at": "2026-10-29T04:22:51+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://developer.salesforce.com/docs/ai/agentforce/guide/agent-api-examples.html",
@@ -7548,7 +7563,7 @@
     {
       "id": "salesforce-agent-api-start",
       "url": "https://developer.salesforce.com/docs/ai/agentforce/guide/agent-api-get-started.html",
-      "checked_at": "2026-09-29T15:06:17+00:00",
+      "checked_at": "2026-10-29T04:22:52+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://developer.salesforce.com/docs/ai/agentforce/guide/agent-api-get-started.html",
@@ -7562,7 +7577,7 @@
     {
       "id": "salesforce-prompt-builder-enable",
       "url": "https://help.salesforce.com/s/articleView?id=prompt_builder_enable.htm&language=en_US&type=5",
-      "checked_at": "2026-09-29T15:06:17+00:00",
+      "checked_at": "2026-10-29T04:22:52+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://help.salesforce.com/s/articleView?id=prompt_builder_enable.htm&language=en_US&type=5",
@@ -7576,7 +7591,7 @@
     {
       "id": "salesforce-agent-masking-limits",
       "url": "https://help.salesforce.com/s/articleView?id=ai.agent_trust_data_masking.htm&language=en_US&type=5",
-      "checked_at": "2026-09-29T15:10:35+00:00",
+      "checked_at": "2026-10-29T04:22:52+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://help.salesforce.com/s/articleView?id=ai.agent_trust_data_masking.htm&language=en_US&type=5",
@@ -7590,7 +7605,7 @@
     {
       "id": "salesforce-agent-variables-filters",
       "url": "https://developer.salesforce.com/blogs/2025/04/control-agent-access-and-decision-making-with-variables-and-filters",
-      "checked_at": "2026-09-29T15:06:18+00:00",
+      "checked_at": "2026-10-29T04:22:52+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://developer.salesforce.com/blogs/2025/04/control-agent-access-and-decision-making-with-variables-and-filters",
@@ -7604,7 +7619,7 @@
     {
       "id": "salesforce-agentforce-summer26-unit",
       "url": "https://trailhead.salesforce.com/content/learn/modules/agentforce-specialist-certification-maintenance-summer-26/maintain-your-agentforce-specialist-certification-for-summer-26",
-      "checked_at": "2026-09-29T15:06:51+00:00",
+      "checked_at": "2026-10-29T04:22:52+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://trailhead.salesforce.com/content/learn/modules/agentforce-specialist-certification-maintenance-summer-26/maintain-your-agentforce-specialist-certification-for-summer-26",
@@ -7621,7 +7636,7 @@
     {
       "id": "salesforce-agent-subagents",
       "url": "https://help.salesforce.com/s/articleView?id=ai.agent_topics_parent.htm&language=en_US&type=5",
-      "checked_at": "2026-09-29T15:09:19+00:00",
+      "checked_at": "2026-10-29T04:22:52+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://help.salesforce.com/s/articleView?id=ai.agent_topics_parent.htm&language=en_US&type=5",
@@ -7635,7 +7650,7 @@
     {
       "id": "salesforce-agent-script-flow",
       "url": "https://developer.salesforce.com/docs/ai/agentforce/guide/ascript-flow.html",
-      "checked_at": "2026-09-29T15:09:19+00:00",
+      "checked_at": "2026-10-29T04:22:52+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://developer.salesforce.com/docs/ai/agentforce/guide/ascript-flow.html",
@@ -7649,7 +7664,7 @@
     {
       "id": "salesforce-mcp-solutions",
       "url": "https://developer.salesforce.com/docs/ai/agentforce/guide/mcp.html",
-      "checked_at": "2026-09-29T15:09:19+00:00",
+      "checked_at": "2026-10-29T04:22:52+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://developer.salesforce.com/docs/ai/agentforce/guide/mcp.html",
@@ -7663,7 +7678,7 @@
     {
       "id": "salesforce-apex-lwc-security",
       "url": "https://developer.salesforce.com/docs/platform/lwc/guide/apex-security.html",
-      "checked_at": "2026-09-29T14:50:49+00:00",
+      "checked_at": "2026-10-29T04:22:52+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://developer.salesforce.com/docs/platform/lwc/guide/apex-security.html",
@@ -7677,7 +7692,7 @@
     {
       "id": "salesforce-summer26-developer-release",
       "url": "https://developer.salesforce.com/blogs/2026/06/the-salesforce-developers-guide-to-the-summer-26-release",
-      "checked_at": "2026-09-29T14:50:49+00:00",
+      "checked_at": "2026-10-29T04:22:52+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://developer.salesforce.com/blogs/2026/06/the-salesforce-developers-guide-to-the-summer-26-release",
@@ -7693,7 +7708,7 @@
     {
       "id": "salesforce-apex-trigger-context-67",
       "url": "https://help.salesforce.com/s/articleView?id=release-notes.rn_apex_triggers_system_mode.htm&language=en_US&release=262&type=5",
-      "checked_at": "2026-09-29T14:50:49+00:00",
+      "checked_at": "2026-10-29T04:22:52+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://help.salesforce.com/s/articleView?id=release-notes.rn_apex_triggers_system_mode.htm&language=en_US&release=262&type=5",
@@ -7707,7 +7722,7 @@
     {
       "id": "salesforce-lws-html-allowlist",
       "url": "https://developer.salesforce.com/docs/platform/lightning-components-security/guide/lws-sanitize-html.html",
-      "checked_at": "2026-09-29T14:50:49+00:00",
+      "checked_at": "2026-10-29T04:22:52+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://developer.salesforce.com/docs/platform/lightning-components-security/guide/lws-sanitize-html.html",
@@ -7721,7 +7736,7 @@
     {
       "id": "salesforce-lightning-csp",
       "url": "https://developer.salesforce.com/docs/platform/lightning-components-security/guide/content-security-policy-intro.html",
-      "checked_at": "2026-09-29T14:50:50+00:00",
+      "checked_at": "2026-10-29T04:22:52+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://developer.salesforce.com/docs/platform/lightning-components-security/guide/content-security-policy-intro.html",
@@ -7735,7 +7750,7 @@
     {
       "id": "salesforce-apex-dml",
       "url": "https://trailhead.salesforce.com/content/learn/modules/apex_database/apex_database_dml",
-      "checked_at": "2026-09-29T14:50:50+00:00",
+      "checked_at": "2026-10-29T04:22:52+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://trailhead.salesforce.com/content/learn/modules/apex_database/apex_database_dml",
@@ -7743,17 +7758,16 @@
       "page_title": "Improve Data Operations with Apex DML",
       "canonical_url": "https://trailhead.salesforce.com/content/learn/modules/apex_database/apex_database_dml",
       "duration_signals": [
-        "48 hours",
         "About 45 mins",
         "PT45M"
       ],
-      "signal_fingerprint": "fa4b29aa5e1a8d5119583f569a9d27704542070f3cf75bc349dea001396d69b6",
+      "signal_fingerprint": "5361252d4a0064a64a1610b8fc61df3fb30c305b2bbc57ce80e493b82cf705fa",
       "error": ""
     },
     {
       "id": "salesforce-apex-queueable",
       "url": "https://trailhead.salesforce.com/content/learn/modules/asynchronous_apex/async_apex_queueable",
-      "checked_at": "2026-09-29T14:50:50+00:00",
+      "checked_at": "2026-10-29T04:22:52+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://trailhead.salesforce.com/content/learn/modules/asynchronous_apex/async_apex_queueable",
@@ -7762,17 +7776,16 @@
       "canonical_url": "https://trailhead.salesforce.com/content/learn/modules/asynchronous_apex/async_apex_queueable",
       "duration_signals": [
         "38 minute",
-        "48 hours",
         "About 45 mins",
         "PT45M"
       ],
-      "signal_fingerprint": "87f0dc23528fdf3a852f6a45f692e86426d8543f0b26217e32add58c322622f3",
+      "signal_fingerprint": "7453a539edc52d714fe1a495ca49a91bd26765175f4f30c48ba3766d3a4b3be1",
       "error": ""
     },
     {
       "id": "salesforce-apex-trigger-tests",
       "url": "https://trailhead.salesforce.com/content/learn/modules/apex_testing/apex_testing_triggers",
-      "checked_at": "2026-09-29T14:50:50+00:00",
+      "checked_at": "2026-10-29T04:22:52+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://trailhead.salesforce.com/content/learn/modules/apex_testing/apex_testing_triggers",
@@ -7780,17 +7793,16 @@
       "page_title": "Improve Apex Trigger Unit Testing Techniques",
       "canonical_url": "https://trailhead.salesforce.com/content/learn/modules/apex_testing/apex_testing_triggers",
       "duration_signals": [
-        "48 hours",
         "About 45 mins",
         "PT45M"
       ],
-      "signal_fingerprint": "1a86ddc7287600f2d7e7a7228683936ca4f28988d4876030a44e6eb7c45fbd83",
+      "signal_fingerprint": "23366a63a78bfd61907a65ac6893a25dd586181f055ed5a84c114b76419681b7",
       "error": ""
     },
     {
       "id": "salesforce-apex-bulk-triggers",
       "url": "https://trailhead.salesforce.com/content/learn/modules/apex_triggers/apex_triggers_bulk",
-      "checked_at": "2026-09-29T14:51:26+00:00",
+      "checked_at": "2026-10-29T04:22:52+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://trailhead.salesforce.com/content/learn/modules/apex_triggers/apex_triggers_bulk",
@@ -7798,17 +7810,16 @@
       "page_title": "Effective Bulk Apex Trigger Design Techniques",
       "canonical_url": "https://trailhead.salesforce.com/content/learn/modules/apex_triggers/apex_triggers_bulk",
       "duration_signals": [
-        "48 hours",
         "About 45 mins",
         "PT45M"
       ],
-      "signal_fingerprint": "590278caeaf4701be8f3652e93892d85c91484b98ea61bcfac5184ff56d2c30b",
+      "signal_fingerprint": "f2046bd97839e670bc01da7164a9f3c999196944376c1ed8296ef7e919717741",
       "error": ""
     },
     {
       "id": "salesforce-developer-winter26-unit",
       "url": "https://trailhead.salesforce.com/content/learn/modules/platform-developer-certification-maintenance-winter-26/maintain-your-platform-developer-certification-for-winter-26",
-      "checked_at": "2026-09-29T14:51:26+00:00",
+      "checked_at": "2026-10-29T04:22:52+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://trailhead.salesforce.com/content/learn/modules/platform-developer-certification-maintenance-winter-26/maintain-your-platform-developer-certification-for-winter-26",
@@ -7825,7 +7836,7 @@
     {
       "id": "salesforce-apex-default-user-mode-67",
       "url": "https://help.salesforce.com/s/articleView?id=release-notes.rn_apex_default_user_mode.htm&language=en_US&release=262&type=5",
-      "checked_at": "2026-09-29T14:53:48+00:00",
+      "checked_at": "2026-10-29T04:22:52+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://help.salesforce.com/s/articleView?id=release-notes.rn_apex_default_user_mode.htm&language=en_US&release=262&type=5",
@@ -7839,7 +7850,7 @@
     {
       "id": "salesforce-agentforce-dx-environment",
       "url": "https://developer.salesforce.com/docs/ai/agentforce/guide/agent-dx-set-up-env.html",
-      "checked_at": "2026-09-29T14:53:48+00:00",
+      "checked_at": "2026-10-29T04:22:52+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://developer.salesforce.com/docs/ai/agentforce/guide/agent-dx-set-up-env.html",
@@ -7855,7 +7866,7 @@
     {
       "id": "salesforce-maintenance-policy-de",
       "url": "https://help.salesforce.com/s/articleView?id=005298841&language=de&type=1",
-      "checked_at": "2026-09-29T14:30:41+00:00",
+      "checked_at": "2026-10-29T04:22:52+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://help.salesforce.com/s/articleView?id=005298841&language=de&type=1",
@@ -7869,7 +7880,7 @@
     {
       "id": "salesforce-maintenance-schedule-de",
       "url": "https://help.salesforce.com/s/articleView?id=005298922&language=de&type=1",
-      "checked_at": "2026-09-29T15:06:14+00:00",
+      "checked_at": "2026-10-29T04:22:53+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://help.salesforce.com/s/articleView?id=005298922&language=de&type=1",
@@ -7883,7 +7894,7 @@
     {
       "id": "salesforce-cross-object-formula",
       "url": "https://help.salesforce.com/s/articleView?id=customize_cross_object.htm&language=en_US&type=5",
-      "checked_at": "2026-09-29T14:30:42+00:00",
+      "checked_at": "2026-10-29T04:22:53+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://help.salesforce.com/s/articleView?id=customize_cross_object.htm&language=en_US&type=5",
@@ -7897,7 +7908,7 @@
     {
       "id": "salesforce-flow-approval-locking",
       "url": "https://help.salesforce.com/s/articleView?id=platform.automate_automated_approvals_concept_record_locking.htm&language=en_US&type=5",
-      "checked_at": "2026-09-29T14:30:42+00:00",
+      "checked_at": "2026-10-29T04:22:53+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://help.salesforce.com/s/articleView?id=platform.automate_automated_approvals_concept_record_locking.htm&language=en_US&type=5",
@@ -7911,7 +7922,7 @@
     {
       "id": "salesforce-object-relationships",
       "url": "https://trailhead.salesforce.com/content/learn/modules/data_modeling/object_relationships",
-      "checked_at": "2026-09-29T14:30:42+00:00",
+      "checked_at": "2026-10-29T04:22:53+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://trailhead.salesforce.com/content/learn/modules/data_modeling/object_relationships",
@@ -7919,17 +7930,16 @@
       "page_title": "Object Relationships: Create & Manage",
       "canonical_url": "https://trailhead.salesforce.com/content/learn/modules/data_modeling/object_relationships",
       "duration_signals": [
-        "48 hours",
         "About 15 mins",
         "PT15M"
       ],
-      "signal_fingerprint": "cae438ecbec8fbf9f0fbf60602bdcc9a3291a0083becb79f2b800ded64d64914",
+      "signal_fingerprint": "38f6d792e300b0911bc872fd2f3564c0427cc25279d4e0543f6541ffb10a5bd1",
       "error": ""
     },
     {
       "id": "salesforce-deployment-monitoring",
       "url": "https://help.salesforce.com/s/articleView?id=sf.deploy_monitoring.htm&language=en_US&type=5",
-      "checked_at": "2026-09-29T14:30:43+00:00",
+      "checked_at": "2026-10-29T04:22:53+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://help.salesforce.com/s/articleView?id=sf.deploy_monitoring.htm&language=en_US&type=5",
@@ -7943,7 +7953,7 @@
     {
       "id": "salesforce-app-builder-winter26-unit",
       "url": "https://trailhead.salesforce.com/content/learn/modules/platform-app-builder-certification-maintenance-winter-26/maintain-your-platform-app-builder-certification-for-winter-26",
-      "checked_at": "2026-09-29T14:30:44+00:00",
+      "checked_at": "2026-10-29T04:22:53+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://trailhead.salesforce.com/content/learn/modules/platform-app-builder-certification-maintenance-winter-26/maintain-your-platform-app-builder-certification-for-winter-26",
@@ -7960,7 +7970,7 @@
     {
       "id": "salesforce-rollup-summary",
       "url": "https://help.salesforce.com/s/articleView?id=platform.fields_about_roll_up_summary_fields.htm&language=en_US&type=5",
-      "checked_at": "2026-09-29T14:32:15+00:00",
+      "checked_at": "2026-10-29T04:22:53+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://help.salesforce.com/s/articleView?id=platform.fields_about_roll_up_summary_fields.htm&language=en_US&type=5",
@@ -7988,7 +7998,7 @@
     {
       "id": "salesforce-admin-exam-guide-help",
       "url": "https://help.salesforce.com/s/articleView?id=005298966&type=1&language=en_US",
-      "checked_at": "2026-09-29T14:15:07+00:00",
+      "checked_at": "2026-10-29T04:22:53+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://help.salesforce.com/s/articleView?id=005298966&type=1&language=en_US",
@@ -8002,7 +8012,7 @@
     {
       "id": "salesforce-admin-exam-guide-ko",
       "url": "https://help.salesforce.com/s/articleView?id=005298966&language=ko&type=1",
-      "checked_at": "2026-09-29T14:15:07+00:00",
+      "checked_at": "2026-10-29T04:22:53+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://help.salesforce.com/s/articleView?id=005298966&language=ko&type=1",
@@ -8016,7 +8026,7 @@
     {
       "id": "salesforce-admin-academy-exam",
       "url": "https://trailheadacademy.salesforce.com/certificate/exam-platform-admin---Plat-Admn-201",
-      "checked_at": "2026-09-29T14:15:07+00:00",
+      "checked_at": "2026-10-29T04:22:53+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://trailheadacademy.salesforce.com/certificate/exam-platform-admin---Plat-Admn-201",
@@ -8030,7 +8040,7 @@
     {
       "id": "salesforce-admin-trailmix-current",
       "url": "https://trailhead.salesforce.com/users/00550000006yDdKAAU/trailmixes/prepare-for-your-salesforce-administrator-credential",
-      "checked_at": "2026-09-29T14:15:08+00:00",
+      "checked_at": "2026-10-29T04:22:54+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-administrator-credential",
@@ -8044,7 +8054,7 @@
     {
       "id": "salesforce-flow-api68-context",
       "url": "https://help.salesforce.com/s/articleView?id=platform.automate_flow_versioned_updates_68.htm&language=en_US&type=5",
-      "checked_at": "2026-09-29T15:06:14+00:00",
+      "checked_at": "2026-10-29T04:22:54+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://help.salesforce.com/s/articleView?id=platform.automate_flow_versioned_updates_68.htm&language=en_US&type=5",
@@ -8058,7 +8068,7 @@
     {
       "id": "salesforce-permission-muting",
       "url": "https://trailhead.salesforce.com/content/learn/modules/permission-set-groups/mute-permissions-in-permission-set-groups",
-      "checked_at": "2026-09-29T14:30:39+00:00",
+      "checked_at": "2026-10-29T04:22:54+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://trailhead.salesforce.com/content/learn/modules/permission-set-groups/mute-permissions-in-permission-set-groups",
@@ -8066,17 +8076,16 @@
       "page_title": "Mute Permissions in Salesforce Permission Set Groups",
       "canonical_url": "https://trailhead.salesforce.com/content/learn/modules/permission-set-groups/mute-permissions-in-permission-set-groups",
       "duration_signals": [
-        "48 hours",
         "About 15 mins",
         "PT15M"
       ],
-      "signal_fingerprint": "49381bcd8725e8973d77d0a151b374e66a96ef7d10c7ddc642e500aa323ea5e6",
+      "signal_fingerprint": "c35f9aada44386bbb7ca47efe214156c20f54e6529b23d31f03ef6e163fdb05c",
       "error": ""
     },
     {
       "id": "salesforce-object-security",
       "url": "https://trailhead.salesforce.com/content/learn/modules/data_security/data_security_objects",
-      "checked_at": "2026-09-29T14:15:09+00:00",
+      "checked_at": "2026-10-29T04:22:54+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://trailhead.salesforce.com/content/learn/modules/data_security/data_security_objects",
@@ -8084,17 +8093,16 @@
       "page_title": "Manage Salesforce Object Access",
       "canonical_url": "https://trailhead.salesforce.com/content/learn/modules/data_security/data_security_objects",
       "duration_signals": [
-        "48 hours",
         "About 25 mins",
         "PT25M"
       ],
-      "signal_fingerprint": "706399ca7c5e6fc1e82ac3a2317b976897c320f4e6178e18411f1085663617e1",
+      "signal_fingerprint": "8301bb9623d3662180d24623910d923b8c2e3669b7a245700623322833208112",
       "error": ""
     },
     {
       "id": "salesforce-flow-rollback",
       "url": "https://trailhead.salesforce.com/content/learn/modules/flow-implementation-2/roll-back-changes-after-an-error",
-      "checked_at": "2026-09-29T14:30:39+00:00",
+      "checked_at": "2026-10-29T04:22:54+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://trailhead.salesforce.com/content/learn/modules/flow-implementation-2/roll-back-changes-after-an-error",
@@ -8102,17 +8110,16 @@
       "page_title": "Optimize Salesforce Flows with Rollback & Custom Errors",
       "canonical_url": "https://trailhead.salesforce.com/content/learn/modules/flow-implementation-2/roll-back-changes-after-an-error",
       "duration_signals": [
-        "48 hours",
         "About 30 mins",
         "PT30M"
       ],
-      "signal_fingerprint": "2549c1ce7bb0b7cafbd12342b655c1ef7b9815756bdd84466d46c2070ee9590b",
+      "signal_fingerprint": "71885ba64eec1b1a459a2c947c592eac855aae76c8d2bee224616ce4cc649704",
       "error": ""
     },
     {
       "id": "salesforce-agent-user-access",
       "url": "https://help.salesforce.com/s/articleView?id=ai.agent_user.htm&language=en_US&type=5",
-      "checked_at": "2026-09-29T15:06:14+00:00",
+      "checked_at": "2026-10-29T04:23:04+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://help.salesforce.com/s/articleView?id=ai.agent_user.htm&language=en_US&type=5",
@@ -8126,7 +8133,7 @@
     {
       "id": "salesforce-upsert-external-id",
       "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/resources-sobject-upsert.html",
-      "checked_at": "2026-09-29T14:15:11+00:00",
+      "checked_at": "2026-10-29T04:23:04+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/resources-sobject-upsert.html",
@@ -8140,7 +8147,7 @@
     {
       "id": "salesforce-upsert-collections",
       "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/resources-composite-sobjects-collections-upsert.html",
-      "checked_at": "2026-09-29T14:15:11+00:00",
+      "checked_at": "2026-10-29T04:23:04+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/resources-composite-sobjects-collections-upsert.html",
@@ -8576,7 +8583,7 @@
     {
       "id": "numpy-lstsq",
       "url": "https://numpy.org/doc/stable/reference/generated/numpy.linalg.lstsq.html",
-      "checked_at": "2026-10-29T04:04:02+00:00",
+      "checked_at": "2026-10-29T04:23:04+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://numpy.org/doc/stable/reference/generated/numpy.linalg.lstsq.html",
@@ -9952,7 +9959,7 @@
     {
       "id": "requests-quickstart",
       "url": "https://requests.readthedocs.io/en/latest/user/quickstart/",
-      "checked_at": "2026-10-29T03:21:32+00:00",
+      "checked_at": "2026-10-29T04:23:04+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://requests.readthedocs.io/en/latest/user/quickstart/",
@@ -9966,7 +9973,7 @@
     {
       "id": "requests-advanced",
       "url": "https://requests.readthedocs.io/en/latest/user/advanced/",
-      "checked_at": "2026-10-29T03:21:32+00:00",
+      "checked_at": "2026-10-29T04:23:04+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://requests.readthedocs.io/en/latest/user/advanced/",
@@ -14054,7 +14061,7 @@
     {
       "id": "python313-hashlib",
       "url": "https://docs.python.org/3.13/library/hashlib.html",
-      "checked_at": "2026-09-30T04:49:33+00:00",
+      "checked_at": "2026-10-29T04:23:04+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.python.org/3.13/library/hashlib.html",
@@ -14848,7 +14855,7 @@
     {
       "id": "python313-socket",
       "url": "https://docs.python.org/3.13/library/socket.html",
-      "checked_at": "2026-10-29T03:03:03+00:00",
+      "checked_at": "2026-10-29T04:23:04+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.python.org/3.13/library/socket.html",
@@ -14988,7 +14995,7 @@
     {
       "id": "python313-control-flow",
       "url": "https://docs.python.org/3.13/tutorial/controlflow.html",
-      "checked_at": "2026-10-29T03:11:54+00:00",
+      "checked_at": "2026-10-29T04:23:04+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.python.org/3.13/tutorial/controlflow.html",
@@ -15002,7 +15009,7 @@
         {
       "id": "python313-sqlite3",
       "url": "https://docs.python.org/3.13/library/sqlite3.html",
-      "checked_at": "2026-10-29T03:34:52+00:00",
+      "checked_at": "2026-10-29T04:23:04+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.python.org/3.13/library/sqlite3.html",
@@ -15016,7 +15023,7 @@
     {
       "id": "sqlite-foreign-keys",
       "url": "https://www.sqlite.org/foreignkeys.html",
-      "checked_at": "2026-10-29T03:11:54+00:00",
+      "checked_at": "2026-10-29T04:23:04+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.sqlite.org/foreignkeys.html",
@@ -16204,7 +16211,7 @@
     {
       "id": "sklearn-common-pitfalls",
       "url": "https://scikit-learn.org/stable/common_pitfalls.html",
-      "checked_at": "2026-10-29T04:04:16+00:00",
+      "checked_at": "2026-10-29T04:23:04+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://scikit-learn.org/stable/common_pitfalls.html",
@@ -35767,7 +35774,7 @@
     {
       "id": "apex-hours-lwc-security-2026",
       "url": "https://www.apexhours.com/lwc-security-in-salesforce/",
-      "checked_at": "2026-09-29T14:48:07+00:00",
+      "checked_at": "2026-10-29T04:23:20+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.apexhours.com/lwc-security-in-salesforce/",
@@ -45322,16 +45329,16 @@
     {
       "id": "beautiful-soup-documentation",
       "url": "https://www.crummy.com/software/BeautifulSoup/bs4/doc/",
-      "checked_at": "2026-09-30T05:11:37+00:00",
-      "status": "error",
-      "http_status": null,
+      "checked_at": "2026-10-29T04:23:19+00:00",
+      "status": "ok",
+      "http_status": 200,
       "final_url": "https://www.crummy.com/software/BeautifulSoup/bs4/doc/",
-      "content_type": "",
-      "page_title": "",
-      "canonical_url": "",
+      "content_type": "text/html",
+      "page_title": "Beautiful Soup Documentation — Beautiful Soup 4.14.3 documentation",
+      "canonical_url": "https://www.crummy.com/software/BeautifulSoup/bs4/doc/",
       "duration_signals": [],
-      "signal_fingerprint": "",
-      "error": "<urlopen error timed out>"
+      "signal_fingerprint": "a25e9daf10c0baec34ce7e08135074959341e70f76d93e187ee864e7c5db9d86",
+      "error": ""
     },
         {
       "id": "beej-network-programming",
@@ -45574,7 +45581,7 @@
     {
       "id": "cisa-zero-trust-maturity-model",
       "url": "https://www.cisa.gov/resources-tools/resources/zero-trust-maturity-model",
-      "checked_at": "2026-09-29T17:04:18+00:00",
+      "checked_at": "2026-10-29T04:23:07+00:00",
       "status": "blocked",
       "http_status": 403,
       "final_url": "https://www.cisa.gov/resources-tools/resources/zero-trust-maturity-model",
@@ -46041,7 +46048,7 @@
     {
       "id": "cisco-data-analytics-essentials",
       "url": "https://www.netacad.com/courses/data-analytics-essentials",
-      "checked_at": "2026-09-30T03:10:41+00:00",
+      "checked_at": "2026-10-29T04:23:18+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.netacad.com/courses/data-analytics-essentials",
@@ -46169,7 +46176,7 @@
     {
       "id": "cisco-python-essentials-1",
       "url": "https://www.netacad.com/courses/python-essentials-1",
-      "checked_at": "2026-09-29T19:19:12+00:00",
+      "checked_at": "2026-10-29T04:23:07+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.netacad.com/courses/python-essentials-1",
@@ -46183,7 +46190,7 @@
     {
       "id": "cisco-python-essentials-2",
       "url": "https://www.netacad.com/courses/python-essentials-2",
-      "checked_at": "2026-09-29T21:12:37+00:00",
+      "checked_at": "2026-10-29T04:23:08+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.netacad.com/courses/python-essentials-2",
@@ -46331,7 +46338,7 @@
     {
       "id": "cloud-security-alliance-guidance-v5",
       "url": "https://cloudsecurityalliance.org/artifacts/security-guidance-v5",
-      "checked_at": "2026-09-29T17:04:18+00:00",
+      "checked_at": "2026-10-29T04:23:07+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://cloudsecurityalliance.org/artifacts/security-guidance-v5",
@@ -53858,7 +53865,7 @@
     {
       "id": "focus-on-force-salesforce-certification",
       "url": "https://focusonforce.com/",
-      "checked_at": "2026-09-29T15:03:32+00:00",
+      "checked_at": "2026-10-29T04:23:05+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://k2u.ai/salesforce/certifications/",
@@ -53872,15 +53879,17 @@
     {
       "id": "forceacademy-app-builder-refresh-2026",
       "url": "https://forceacademy.io/blog/platform-app-builder-exam-changes-august-2026",
-      "checked_at": "2026-09-29T14:25:04+00:00",
+      "checked_at": "2026-10-29T04:23:20+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://forceacademy.io/blog/platform-app-builder-exam-changes-august-2026",
       "content_type": "text/html; charset=utf-8",
-      "page_title": "ForceAcademy – Salesforce Certification Practice Exams",
-      "canonical_url": "https://forceacademy.io/",
-      "duration_signals": [],
-      "signal_fingerprint": "8df86c36e8be12527eadfe7293c25d63e314c867ae0658937a482c0b5fd2529b",
+      "page_title": "Platform App Builder Exam Changes (Aug 2026): 73% Pass Score | ForceAcademy Blog",
+      "canonical_url": "https://forceacademy.io/blog/platform-app-builder-exam-changes-august-2026",
+      "duration_signals": [
+        "105 minutes"
+      ],
+      "signal_fingerprint": "0d76c8116adb89753eee636ca0da8bc23c4d741d846ce36ac0a17fd4bffef333",
       "error": ""
     },
     {
@@ -57990,16 +57999,16 @@
     {
       "id": "harvard-cs50-python",
       "url": "https://cs50.harvard.edu/python/",
-      "checked_at": "2026-09-29T21:12:18+00:00",
-      "status": "error",
-      "http_status": null,
+      "checked_at": "2026-10-29T04:23:07+00:00",
+      "status": "ok",
+      "http_status": 200,
       "final_url": "https://cs50.harvard.edu/python/",
-      "content_type": "",
-      "page_title": "",
-      "canonical_url": "",
+      "content_type": "text/html",
+      "page_title": "CS50's Introduction to Programming with Python",
+      "canonical_url": "https://cs50.harvard.edu/python/",
       "duration_signals": [],
-      "signal_fingerprint": "",
-      "error": "<urlopen error timed out>"
+      "signal_fingerprint": "ce9c9f53f10a77d93343774103573f08b86f98669fb6b285edc63c02fb9669e6",
+      "error": ""
     },
     {
       "id": "hashicorp-terraform-introduction-video",
@@ -58204,16 +58213,16 @@
     {
       "id": "introduction-statistical-learning-python",
       "url": "https://www.statlearning.com/",
-      "checked_at": "2026-09-30T03:03:31+00:00",
-      "status": "error",
-      "http_status": null,
+      "checked_at": "2026-10-29T04:23:19+00:00",
+      "status": "ok",
+      "http_status": 200,
       "final_url": "https://www.statlearning.com/",
-      "content_type": "",
-      "page_title": "",
-      "canonical_url": "",
+      "content_type": "text/html;charset=utf-8",
+      "page_title": "An Introduction to Statistical Learning",
+      "canonical_url": "https://www.statlearning.com",
       "duration_signals": [],
-      "signal_fingerprint": "",
-      "error": "<urlopen error timed out>"
+      "signal_fingerprint": "d7de1de3280c2f8bce2896e38db8b6d77df7aee433a883652838c51229ee34b8",
+      "error": ""
     },
         {
       "id": "isaca-certification-candidate-guide",
@@ -58757,16 +58766,16 @@
     {
       "id": "kaggle-learn",
       "url": "https://www.kaggle.com/learn",
-      "checked_at": "2026-09-30T03:03:12+00:00",
-      "status": "error",
-      "http_status": null,
+      "checked_at": "2026-10-29T04:23:11+00:00",
+      "status": "ok",
+      "http_status": 200,
       "final_url": "https://www.kaggle.com/learn",
-      "content_type": "",
-      "page_title": "",
-      "canonical_url": "",
+      "content_type": "text/html; charset=utf-8",
+      "page_title": "Learn Python, Data Viz, Pandas & More | Tutorials | Kaggle",
+      "canonical_url": "/learn",
       "duration_signals": [],
-      "signal_fingerprint": "",
-      "error": "<urlopen error timed out>"
+      "signal_fingerprint": "c72dcb062b5c72f176c21fc650c71e174c38beab1f7796d1bd898e3ca4209b4e",
+      "error": ""
     },
     {
       "id": "kodekloud-terraform-associate-004",
@@ -60040,7 +60049,7 @@
     {
       "id": "matplotlib-documentation",
       "url": "https://matplotlib.org/stable/",
-      "checked_at": "2026-09-30T03:03:30+00:00",
+      "checked_at": "2026-10-29T04:23:19+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://matplotlib.org/stable/",
@@ -64147,7 +64156,7 @@
     {
       "id": "microsoft-learn-python-fundamentals",
       "url": "https://learn.microsoft.com/en-us/training/paths/get-started-with-python-fundamentals/",
-      "checked_at": "2026-09-29T19:19:13+00:00",
+      "checked_at": "2026-10-29T04:23:07+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/training/paths/get-started-with-python-fundamentals/",
@@ -66641,7 +66650,7 @@
         {
       "id": "nist-cybersecurity-framework-2",
       "url": "https://www.nist.gov/cyberframework",
-      "checked_at": "2026-10-29T03:34:54+00:00",
+      "checked_at": "2026-10-29T04:23:07+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.nist.gov/cyberframework",
@@ -68459,7 +68468,7 @@
     {
       "id": "numpy-documentation",
       "url": "https://numpy.org/doc/stable/",
-      "checked_at": "2026-09-30T05:40:17+00:00",
+      "checked_at": "2026-10-29T04:23:19+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://numpy.org/doc/stable/",
@@ -68473,7 +68482,7 @@
     {
       "id": "numpy-quickstart",
       "url": "https://numpy.org/doc/stable/user/quickstart.html",
-      "checked_at": "2026-10-29T04:04:32+00:00",
+      "checked_at": "2026-10-29T04:23:10+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://numpy.org/doc/stable/user/quickstart.html",
@@ -68487,7 +68496,7 @@
     {
       "id": "numpy-user-guide",
       "url": "https://numpy.org/doc/stable/user/",
-      "checked_at": "2026-09-30T02:33:53+00:00",
+      "checked_at": "2026-10-29T04:23:10+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://numpy.org/doc/stable/user/",
@@ -69151,7 +69160,7 @@
     {
       "id": "openedg-pcap-31-03-practice",
       "url": "https://ums.edube.org/products/1-pi-pcap-3103-pt",
-      "checked_at": "2026-09-29T21:12:37+00:00",
+      "checked_at": "2026-10-29T04:23:08+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://ums.edube.org/products/1-pi-pcap-3103-pt",
@@ -69165,7 +69174,7 @@
     {
       "id": "openedg-pcep-practice",
       "url": "https://ums.edube.org/products/0-pi-pcep-3002-pt",
-      "checked_at": "2026-09-29T19:19:12+00:00",
+      "checked_at": "2026-10-29T04:23:07+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://ums.edube.org/products/0-pi-pcep-3002-pt",
@@ -69179,7 +69188,7 @@
     {
       "id": "openedg-python-essentials-1",
       "url": "https://edube.org/study/pe1",
-      "checked_at": "2026-09-29T19:19:11+00:00",
+      "checked_at": "2026-10-29T04:23:07+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://edube.org/study/pe1",
@@ -69195,7 +69204,7 @@
     {
       "id": "openedg-python-essentials-2",
       "url": "https://edube.org/study/pe2",
-      "checked_at": "2026-09-29T21:12:37+00:00",
+      "checked_at": "2026-10-29T04:23:08+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://edube.org/study/pe2",
@@ -69738,7 +69747,7 @@
     {
       "id": "oreilly-foundations-cybersecurity-second",
       "url": "https://www.oreilly.com/library/view/foundations-of-cybersecurity/0642572230302/",
-      "checked_at": "2026-09-29T17:04:19+00:00",
+      "checked_at": "2026-10-29T04:23:07+00:00",
       "status": "blocked",
       "http_status": 403,
       "final_url": "https://www.oreilly.com/library/view/foundations-of-cybersecurity/0642572230302/",
@@ -69958,7 +69967,7 @@
     {
       "id": "oreilly-learning-python-6",
       "url": "https://www.oreilly.com/library/view/learning-python-6th/9781098171292/",
-      "checked_at": "2026-09-29T19:19:14+00:00",
+      "checked_at": "2026-10-29T04:23:07+00:00",
       "status": "blocked",
       "http_status": 403,
       "final_url": "https://www.oreilly.com/library/view/learning-python-6th/9781098171292/",
@@ -70098,7 +70107,7 @@
     {
       "id": "oreilly-practical-salesforce-agentforce-playbook",
       "url": "https://www.oreilly.com/library/view/practical-salesforce-agentforce/9781806389230/",
-      "checked_at": "2026-09-29T15:03:35+00:00",
+      "checked_at": "2026-10-29T04:23:06+00:00",
       "status": "blocked",
       "http_status": 403,
       "final_url": "https://www.oreilly.com/library/view/practical-salesforce-agentforce/9781806389230/",
@@ -70112,7 +70121,7 @@
     {
       "id": "oreilly-python-3-object-oriented-fourth",
       "url": "https://www.oreilly.com/library/view/python-3-object-oriented/9781804611864/",
-      "checked_at": "2026-09-30T01:53:31+00:00",
+      "checked_at": "2026-10-29T04:23:08+00:00",
       "status": "blocked",
       "http_status": 403,
       "final_url": "https://www.oreilly.com/library/view/python-3-object-oriented/9781804611864/",
@@ -70140,7 +70149,7 @@
     {
       "id": "oreilly-salesforce-developer-i-certification",
       "url": "https://www.oreilly.com/library/view/salesforce-developer-i/9798868803000/",
-      "checked_at": "2026-09-29T14:48:07+00:00",
+      "checked_at": "2026-10-29T04:23:05+00:00",
       "status": "blocked",
       "http_status": 403,
       "final_url": "https://www.oreilly.com/library/view/salesforce-developer-i/9798868803000/",
@@ -70154,7 +70163,7 @@
     {
       "id": "oreilly-salesforce-platform-administrator-study-guide",
       "url": "https://www.oreilly.com/library/view/salesforce-certified-platform/9781098165734/",
-      "checked_at": "2026-09-29T14:09:33+00:00",
+      "checked_at": "2026-10-29T04:23:04+00:00",
       "status": "blocked",
       "http_status": 403,
       "final_url": "https://www.oreilly.com/library/view/salesforce-certified-platform/9781098165734/",
@@ -70168,7 +70177,7 @@
     {
       "id": "oreilly-salesforce-platform-app-builder-bootcamp",
       "url": "https://www.oreilly.com/live-events/salesforce-platform-app-builder-certification-bootcamp/0642572176150/",
-      "checked_at": "2026-09-29T14:25:03+00:00",
+      "checked_at": "2026-10-29T04:23:05+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.oreilly.com/live-events/salesforce-platform-app-builder-certification-bootcamp/0642572176150/",
@@ -70189,7 +70198,7 @@
     {
       "id": "oreilly-salesforce-platform-app-builder-training",
       "url": "https://www.oreilly.com/videos/salesforce-platform-app/9781804611197/",
-      "checked_at": "2026-09-29T14:25:03+00:00",
+      "checked_at": "2026-10-29T04:23:05+00:00",
       "status": "blocked",
       "http_status": 403,
       "final_url": "https://www.oreilly.com/videos/salesforce-platform-app/9781804611197/",
@@ -70492,37 +70501,37 @@
     {
       "id": "pandas-documentation",
       "url": "https://pandas.pydata.org/docs/",
-      "checked_at": "2026-09-30T05:40:17+00:00",
+      "checked_at": "2026-10-29T04:23:19+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://pandas.pydata.org/docs/",
       "content_type": "text/html; charset=utf-8",
-      "page_title": "pandas documentation — pandas 3.0.6 documentation",
+      "page_title": "pandas documentation — pandas 3.1.0 documentation",
       "canonical_url": "https://pandas.pydata.org/docs/",
       "duration_signals": [],
-      "signal_fingerprint": "b973056cbaa4c1633cc6345ecd2326386f601fa0cdeb48cc43962540790b6c59",
+      "signal_fingerprint": "850aa90ff6617a6e46bdd8d5a6ce064ecbdc6031ca828b0dbe7836bb10f73224",
       "error": ""
     },
     {
       "id": "pandas-getting-started",
       "url": "https://pandas.pydata.org/docs/getting_started/",
-      "checked_at": "2026-09-30T03:03:31+00:00",
+      "checked_at": "2026-10-29T04:23:19+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://pandas.pydata.org/docs/getting_started/",
       "content_type": "text/html; charset=utf-8",
-      "page_title": "Getting started — pandas 3.0.6 documentation",
+      "page_title": "Getting started — pandas 3.1.0 documentation",
       "canonical_url": "https://pandas.pydata.org/docs/getting_started/",
       "duration_signals": [
         "10 Minutes"
       ],
-      "signal_fingerprint": "5c7368ce0e77e253e439edb4ea0cc81e8fcc03daf2add010051d692e28db8fba",
+      "signal_fingerprint": "f436e3435ef556a37f9d2805d23f8de27342aac7e756c9052b4e288fea15c117",
       "error": ""
     },
     {
       "id": "panw-certification-handbook",
       "url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf",
-      "checked_at": "2026-10-29T01:53:03+00:00",
+      "checked_at": "2026-10-29T04:23:06+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/ebooks/panw-certification-handbook.pdf",
@@ -70844,7 +70853,7 @@
     {
       "id": "panw-cybersecurity-academy",
       "url": "https://www.paloaltonetworks.com/services/education/academy",
-      "checked_at": "2026-09-29T17:04:17+00:00",
+      "checked_at": "2026-10-29T04:23:06+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.paloaltonetworks.com/services/education/academy",
@@ -70858,7 +70867,7 @@
     {
       "id": "panw-cybersecurity-apprentice-certification",
       "url": "https://www.paloaltonetworks.com/services/education/panw-cybersecurity-apprentice",
-      "checked_at": "2026-09-29T17:04:17+00:00",
+      "checked_at": "2026-10-29T04:23:06+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.paloaltonetworks.com/services/education/panw-cybersecurity-apprentice",
@@ -70872,7 +70881,7 @@
     {
       "id": "panw-cybersecurity-apprentice-datasheet",
       "url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/apprentice-datasheet.pdf",
-      "checked_at": "2026-09-29T17:04:17+00:00",
+      "checked_at": "2026-10-29T04:23:06+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/apprentice-datasheet.pdf",
@@ -70928,7 +70937,7 @@
     {
       "id": "panw-cybersecurity-practitioner-source-2",
       "url": "https://csrc.nist.gov/pubs/sp/800/207/final",
-      "checked_at": "2026-10-29T01:31:11+00:00",
+      "checked_at": "2026-10-29T04:23:19+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://csrc.nist.gov/pubs/sp/800/207/final",
@@ -71015,7 +71024,7 @@
     {
       "id": "panw-learning-center",
       "url": "https://learn.paloaltonetworks.com/learn",
-      "checked_at": "2026-10-29T01:53:03+00:00",
+      "checked_at": "2026-10-29T04:23:06+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.paloaltonetworks.com/learn",
@@ -71820,7 +71829,7 @@
     {
       "id": "panw-technical-documentation",
       "url": "https://docs.paloaltonetworks.com/",
-      "checked_at": "2026-10-29T00:46:39+00:00",
+      "checked_at": "2026-10-29T04:23:07+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.paloaltonetworks.com/",
@@ -71918,7 +71927,7 @@
     {
       "id": "panw-xdr-engineer-source-2",
       "url": "https://www.w3.org/TR/xml/",
-      "checked_at": "2026-10-29T01:53:18+00:00",
+      "checked_at": "2026-10-29T04:23:19+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.w3.org/TR/xml/",
@@ -72175,58 +72184,65 @@
     {
       "id": "pcad-31-02-syllabus",
       "url": "https://pythoninstitute.org/pcad-exam-syllabus",
-      "checked_at": "2026-09-30T03:03:13+00:00",
-      "status": "error",
-      "http_status": null,
+      "checked_at": "2026-10-29T04:23:18+00:00",
+      "status": "ok",
+      "http_status": 200,
       "final_url": "https://pythoninstitute.org/pcad-exam-syllabus",
-      "content_type": "",
-      "page_title": "",
-      "canonical_url": "",
+      "content_type": "text/html; charset=UTF-8",
+      "page_title": "PCAD-31-0x Exam Syllabus",
+      "canonical_url": "https://pythoninstitute.org/pcad-exam-syllabus",
       "duration_signals": [],
-      "signal_fingerprint": "",
-      "error": "<urlopen error timed out>"
+      "signal_fingerprint": "d9364af0f665ea191e0f6fe1db7f5b22807911ebe6168855d10f2c8944e2b46e",
+      "error": ""
     },
     {
       "id": "pcad-certification-page",
       "url": "https://pythoninstitute.org/pcad",
-      "checked_at": "2026-09-30T03:03:13+00:00",
-      "status": "error",
-      "http_status": null,
+      "checked_at": "2026-10-29T04:23:19+00:00",
+      "status": "ok",
+      "http_status": 200,
       "final_url": "https://pythoninstitute.org/pcad",
-      "content_type": "",
-      "page_title": "",
-      "canonical_url": "",
-      "duration_signals": [],
-      "signal_fingerprint": "",
-      "error": "<urlopen error timed out>"
+      "content_type": "text/html; charset=UTF-8",
+      "page_title": "PCAD – Certified Associate Data Analyst with Python",
+      "canonical_url": "https://pythoninstitute.org/pcad",
+      "duration_signals": [
+        "24 hours",
+        "60 minutes"
+      ],
+      "signal_fingerprint": "c62438012f870cdaa75e5c46e86a8fe1dc945ef2fe6757d09e660fbaaec56e56",
+      "error": ""
     },
     {
       "id": "pcap-31-03-syllabus",
       "url": "https://pythoninstitute.org/pcap-exam-syllabus",
-      "checked_at": "2026-09-29T21:12:18+00:00",
-      "status": "error",
-      "http_status": null,
+      "checked_at": "2026-10-29T04:23:07+00:00",
+      "status": "ok",
+      "http_status": 200,
       "final_url": "https://pythoninstitute.org/pcap-exam-syllabus",
-      "content_type": "",
-      "page_title": "",
-      "canonical_url": "",
+      "content_type": "text/html; charset=UTF-8",
+      "page_title": "PCAP-31-0x Exam Syllabus",
+      "canonical_url": "https://pythoninstitute.org/pcap-exam-syllabus",
       "duration_signals": [],
-      "signal_fingerprint": "",
-      "error": "<urlopen error timed out>"
+      "signal_fingerprint": "1eba358dc096d62d3e79957b68b3a7d1258d84b4935322960fc71adcb5029c3d",
+      "error": ""
     },
     {
       "id": "pcap-certification-page",
       "url": "https://pythoninstitute.org/pcap",
-      "checked_at": "2026-09-29T21:12:18+00:00",
-      "status": "error",
-      "http_status": null,
+      "checked_at": "2026-10-29T04:23:08+00:00",
+      "status": "ok",
+      "http_status": 200,
       "final_url": "https://pythoninstitute.org/pcap",
-      "content_type": "",
-      "page_title": "",
-      "canonical_url": "",
-      "duration_signals": [],
-      "signal_fingerprint": "",
-      "error": "<urlopen error timed out>"
+      "content_type": "text/html; charset=UTF-8",
+      "page_title": "PCAP",
+      "canonical_url": "https://pythoninstitute.org/pcap",
+      "duration_signals": [
+        "10 minutes",
+        "24 hours",
+        "65 minutes"
+      ],
+      "signal_fingerprint": "20e8c5ad3984d959871a7701971a8daf6efa351e03fe37c10545c5bbaaf30f5b",
+      "error": ""
     },
     {
       "id": "pcat-31-01-syllabus",
@@ -72287,30 +72303,33 @@
     {
       "id": "pced-30-02-syllabus",
       "url": "https://pythoninstitute.org/pced-exam-syllabus",
-      "checked_at": "2026-09-30T02:33:52+00:00",
-      "status": "error",
-      "http_status": null,
+      "checked_at": "2026-10-29T04:23:09+00:00",
+      "status": "ok",
+      "http_status": 200,
       "final_url": "https://pythoninstitute.org/pced-exam-syllabus",
-      "content_type": "",
-      "page_title": "",
-      "canonical_url": "",
+      "content_type": "text/html; charset=UTF-8",
+      "page_title": "PCED-30-0x Exam Syllabus",
+      "canonical_url": "https://pythoninstitute.org/pced-exam-syllabus",
       "duration_signals": [],
-      "signal_fingerprint": "",
-      "error": "<urlopen error timed out>"
+      "signal_fingerprint": "6403401b661601d6facb5882d4af66b0e7d8614225aad5bc65af87c292a3e3e2",
+      "error": ""
     },
     {
       "id": "pced-certification-page",
       "url": "https://pythoninstitute.org/pced",
-      "checked_at": "2026-09-30T02:33:52+00:00",
-      "status": "error",
-      "http_status": null,
+      "checked_at": "2026-10-29T04:23:09+00:00",
+      "status": "ok",
+      "http_status": 200,
       "final_url": "https://pythoninstitute.org/pced",
-      "content_type": "",
-      "page_title": "",
-      "canonical_url": "",
-      "duration_signals": [],
-      "signal_fingerprint": "",
-      "error": "<urlopen error timed out>"
+      "content_type": "text/html; charset=UTF-8",
+      "page_title": "PCED – Certified Entry-Level Data Analyst with Python",
+      "canonical_url": "https://pythoninstitute.org/pced",
+      "duration_signals": [
+        "24 hours",
+        "60 minutes"
+      ],
+      "signal_fingerprint": "05c34e81bacf9d2bd3446e80229c6821988a4614be629fbf6b63561aa1139b07",
+      "error": ""
     },
     {
       "id": "pcei-30-01-syllabus",
@@ -72343,30 +72362,34 @@
     {
       "id": "pcep-30-02-syllabus",
       "url": "https://pythoninstitute.org/pcep-exam-syllabus/",
-      "checked_at": "2026-09-29T19:19:10+00:00",
-      "status": "error",
-      "http_status": null,
+      "checked_at": "2026-10-29T04:23:07+00:00",
+      "status": "ok",
+      "http_status": 200,
       "final_url": "https://pythoninstitute.org/pcep-exam-syllabus/",
-      "content_type": "",
-      "page_title": "",
-      "canonical_url": "",
+      "content_type": "text/html; charset=UTF-8",
+      "page_title": "PCEP-30-0x Exam Syllabus",
+      "canonical_url": "https://pythoninstitute.org/pcep-exam-syllabus/",
       "duration_signals": [],
-      "signal_fingerprint": "",
-      "error": "<urlopen error timed out>"
+      "signal_fingerprint": "2633d0082203643b3e3e339ae4cadf63486da9bd8fc939003a3cdd70f1e6f061",
+      "error": ""
     },
     {
       "id": "pcep-certification-page",
       "url": "https://pythoninstitute.org/pcep/",
-      "checked_at": "2026-09-29T19:19:10+00:00",
-      "status": "error",
-      "http_status": null,
+      "checked_at": "2026-10-29T04:23:07+00:00",
+      "status": "ok",
+      "http_status": 200,
       "final_url": "https://pythoninstitute.org/pcep/",
-      "content_type": "",
-      "page_title": "",
-      "canonical_url": "",
-      "duration_signals": [],
-      "signal_fingerprint": "",
-      "error": "<urlopen error timed out>"
+      "content_type": "text/html; charset=UTF-8",
+      "page_title": "PCEP",
+      "canonical_url": "https://pythoninstitute.org/pcep/",
+      "duration_signals": [
+        "24 hours",
+        "40 minutes",
+        "5 minutes"
+      ],
+      "signal_fingerprint": "0ba50a7acdbcfd38fe7ee053ea0dbc4d2a87dcbcb0e5734ba66261a39029bec6",
+      "error": ""
     },
     {
       "id": "pces-30-01-syllabus",
@@ -72427,30 +72450,34 @@
     {
       "id": "pcpp-32-101-syllabus",
       "url": "https://pythoninstitute.org/pcpp1-exam-syllabus",
-      "checked_at": "2026-09-30T01:53:33+00:00",
-      "status": "error",
-      "http_status": null,
+      "checked_at": "2026-10-29T04:23:08+00:00",
+      "status": "ok",
+      "http_status": 200,
       "final_url": "https://pythoninstitute.org/pcpp1-exam-syllabus",
-      "content_type": "",
-      "page_title": "",
-      "canonical_url": "",
+      "content_type": "text/html; charset=UTF-8",
+      "page_title": "PCPP-32-10x Exam Syllabus",
+      "canonical_url": "https://pythoninstitute.org/pcpp1-exam-syllabus",
       "duration_signals": [],
-      "signal_fingerprint": "",
-      "error": "<urlopen error timed out>"
+      "signal_fingerprint": "7e2ded26f03519aa5d53ad76cfef7b5a046156b59a96cd48345e65db87bc645e",
+      "error": ""
     },
     {
       "id": "pcpp1-certification-page",
       "url": "https://pythoninstitute.org/pcpp1",
-      "checked_at": "2026-09-30T01:53:37+00:00",
-      "status": "error",
-      "http_status": null,
+      "checked_at": "2026-10-29T04:23:08+00:00",
+      "status": "ok",
+      "http_status": 200,
       "final_url": "https://pythoninstitute.org/pcpp1",
-      "content_type": "",
-      "page_title": "",
-      "canonical_url": "",
-      "duration_signals": [],
-      "signal_fingerprint": "",
-      "error": "<urlopen error timed out>"
+      "content_type": "text/html; charset=UTF-8",
+      "page_title": "PCPP1",
+      "canonical_url": "https://pythoninstitute.org/pcpp1",
+      "duration_signals": [
+        "10 minutes",
+        "24 hours",
+        "65 minutes"
+      ],
+      "signal_fingerprint": "acfdccc7cd5d70d0001bbb6b779217a1fdbf020f0cfb47088b121fb2c43ded54",
+      "error": ""
     },
     {
       "id": "pearson-200-901-official-guide-2e",
@@ -72469,7 +72496,7 @@
     {
       "id": "pep-257-docstrings",
       "url": "https://peps.python.org/pep-0257/",
-      "checked_at": "2026-09-30T03:11:16+00:00",
+      "checked_at": "2026-10-29T04:23:09+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://peps.python.org/pep-0257/",
@@ -72483,7 +72510,7 @@
     {
       "id": "pep-484-type-hints",
       "url": "https://peps.python.org/pep-0484/",
-      "checked_at": "2026-09-30T01:53:44+00:00",
+      "checked_at": "2026-10-29T04:23:09+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://peps.python.org/pep-0484/",
@@ -72497,7 +72524,7 @@
     {
       "id": "pep-8-style-guide",
       "url": "https://peps.python.org/pep-0008/",
-      "checked_at": "2026-09-30T03:45:28+00:00",
+      "checked_at": "2026-10-29T04:23:08+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://peps.python.org/pep-0008/",
@@ -73315,7 +73342,7 @@
     {
       "id": "pluralsight-cybersecurity-catalog",
       "url": "https://www.pluralsight.com/browse/information-cyber-security",
-      "checked_at": "2026-09-29T17:04:19+00:00",
+      "checked_at": "2026-10-29T04:23:07+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.pluralsight.com/browse/information-cyber-security",
@@ -73580,7 +73607,7 @@
     {
       "id": "pluralsight-python-3-path",
       "url": "https://www.pluralsight.com/paths/python-3",
-      "checked_at": "2026-09-29T21:12:38+00:00",
+      "checked_at": "2026-10-29T04:23:08+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.pluralsight.com/paths/python-3",
@@ -73597,23 +73624,23 @@
     {
       "id": "pluralsight-python-catalog",
       "url": "https://www.pluralsight.com/browse/software-development/python",
-      "checked_at": "2026-09-30T01:53:51+00:00",
+      "checked_at": "2026-10-29T04:23:09+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.pluralsight.com/browse/software-development",
       "content_type": "text/html;charset=utf-8",
-      "page_title": "Software Development Courses. Beginner to Advanced Tutorials | Pluralsight",
+      "page_title": "Software Development & Programming Courses | Pluralsight",
       "canonical_url": "https://www.pluralsight.com/browse/software-development",
       "duration_signals": [
         "5 minutes"
       ],
-      "signal_fingerprint": "0af1acb6462a4df62cc6eee82555655a8c2b54722a00067701c99796e1067244",
+      "signal_fingerprint": "ed6aba11ec43b300cc2331bccf7c173dbb73739090e85e57dcdd98ca082cc847",
       "error": ""
     },
     {
       "id": "pluralsight-python-essentials",
       "url": "https://www.pluralsight.com/paths/python-essentials",
-      "checked_at": "2026-09-29T19:19:13+00:00",
+      "checked_at": "2026-10-29T04:23:07+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.pluralsight.com/paths/python-essentials",
@@ -73622,9 +73649,9 @@
       "canonical_url": "https://www.pluralsight.com/paths/python-essentials",
       "duration_signals": [
         "10 minutes",
-        "47 Hours"
+        "54 Hours"
       ],
-      "signal_fingerprint": "b6f32a868eb9c420c43c72a3159342dec60ae2bc153c9c4edcc8fe9d3a3ebc3f",
+      "signal_fingerprint": "c24ac6157ea0e7fe7583ce0a33f2aa6f53d8951165c0ea6a2cc65361b8079d7a",
       "error": ""
     },
     {
@@ -73647,7 +73674,7 @@
     {
       "id": "pluralsight-salesforce-certified-administrator-path",
       "url": "https://www.pluralsight.com/paths/salesforce-certified-administrator-update",
-      "checked_at": "2026-09-29T14:09:32+00:00",
+      "checked_at": "2026-10-29T04:23:04+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.pluralsight.com/paths/salesforce-certified-administrator-update",
@@ -73663,7 +73690,7 @@
     {
       "id": "pluralsight-salesforce-platform-developer-path",
       "url": "https://www.pluralsight.com/paths/salesforce-certified-platform-developer-i-update",
-      "checked_at": "2026-09-29T14:48:06+00:00",
+      "checked_at": "2026-10-29T04:23:05+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.pluralsight.com/paths/salesforce-certified-platform-developer-i-update",
@@ -73840,7 +73867,7 @@
     {
       "id": "python-3-documentation",
       "url": "https://docs.python.org/3/",
-      "checked_at": "2026-10-29T01:53:03+00:00",
+      "checked_at": "2026-10-29T04:23:08+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.python.org/3/",
@@ -73854,7 +73881,7 @@
     {
       "id": "python-3-library-reference",
       "url": "https://docs.python.org/3/library/",
-      "checked_at": "2026-09-30T05:11:18+00:00",
+      "checked_at": "2026-10-29T04:23:08+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.python.org/3/library/",
@@ -73868,7 +73895,7 @@
     {
       "id": "python-3-tutorial",
       "url": "https://docs.python.org/3/tutorial/",
-      "checked_at": "2026-09-29T21:12:18+00:00",
+      "checked_at": "2026-10-29T04:23:07+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.python.org/3/tutorial/",
@@ -73896,7 +73923,7 @@
     {
       "id": "python-for-data-analysis-web",
       "url": "https://wesmckinney.com/book/",
-      "checked_at": "2026-09-30T03:03:12+00:00",
+      "checked_at": "2026-10-29T04:23:10+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://wesmckinney.com/book/",
@@ -74720,7 +74747,7 @@
     {
       "id": "requests-documentation",
       "url": "https://requests.readthedocs.io/en/latest/",
-      "checked_at": "2026-09-30T05:11:18+00:00",
+      "checked_at": "2026-10-29T04:23:09+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://requests.readthedocs.io/en/latest/",
@@ -74734,7 +74761,7 @@
     {
       "id": "salesforce-admin-blueprint-update-2026",
       "url": "https://admin.salesforce.com/blog/2026/what-the-salesforce-certified-platform-administrator-exam-update-means-for-admins",
-      "checked_at": "2026-09-29T14:09:32+00:00",
+      "checked_at": "2026-10-29T04:23:04+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://admin.salesforce.com/blog/2026/what-the-salesforce-certified-platform-administrator-exam-update-means-for-admins",
@@ -74750,7 +74777,7 @@
     {
       "id": "salesforce-admins-app-builder-refresh-2026",
       "url": "https://admin.salesforce.com/blog/2026/what-does-the-salesforce-platform-app-builder-certification-prove-today-podcast",
-      "checked_at": "2026-09-29T14:25:03+00:00",
+      "checked_at": "2026-10-29T04:23:19+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://admin.salesforce.com/blog/2026/what-does-the-salesforce-platform-app-builder-certification-prove-today-podcast",
@@ -74764,7 +74791,7 @@
     {
       "id": "salesforce-afs401-agentforce-service-specialist",
       "url": "https://trailheadacademy.salesforce.com/classes/afs401-agentforce-for-service-specialist---afs401",
-      "checked_at": "2026-09-29T15:03:34+00:00",
+      "checked_at": "2026-10-29T04:23:06+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://trailheadacademy.salesforce.com/classes/afs401-agentforce-for-service-specialist---afs401",
@@ -74778,7 +74805,7 @@
     {
       "id": "salesforce-agentblazer-legend-2026",
       "url": "https://trailhead.salesforce.com/content/learn/trails/become-an-agentblazer-legend-2026",
-      "checked_at": "2026-09-29T15:03:33+00:00",
+      "checked_at": "2026-10-29T04:23:06+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://trailhead.salesforce.com/content/learn/trails/become-an-agentblazer-legend-2026",
@@ -74800,7 +74827,7 @@
     {
       "id": "salesforce-agentforce-partner-pocket-guide",
       "url": "https://cloud.mail.salesforce.com/agentforcepartnerpocketguide",
-      "checked_at": "2026-09-29T15:03:35+00:00",
+      "checked_at": "2026-10-29T04:23:06+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://cloud.mail.salesforce.com/agentforcepartnerpocketguide",
@@ -74814,7 +74841,7 @@
     {
       "id": "salesforce-agentforce-release-notes-summer-26",
       "url": "https://help.salesforce.com/s/articleView?id=release-notes.rn_einstein_platform.htm&language=en_US&release=262&type=5",
-      "checked_at": "2026-09-29T15:03:36+00:00",
+      "checked_at": "2026-10-29T04:23:06+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://help.salesforce.com/s/articleView?id=release-notes.rn_einstein_platform.htm&language=en_US&release=262&type=5",
@@ -74828,7 +74855,7 @@
     {
       "id": "salesforce-agentforce-specialist-certification",
       "url": "https://trailhead.salesforce.com/credentials/agentforcespecialist",
-      "checked_at": "2026-09-29T15:03:32+00:00",
+      "checked_at": "2026-10-29T04:23:06+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://trailhead.salesforce.com/credentials/agentforcespecialist",
@@ -74842,7 +74869,7 @@
     {
       "id": "salesforce-agentforce-specialist-guide",
       "url": "https://help.salesforce.com/s/articleView?id=005298924&language=en_US&type=1",
-      "checked_at": "2026-09-29T15:03:32+00:00",
+      "checked_at": "2026-10-29T04:23:06+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://help.salesforce.com/s/articleView?id=005298924&language=en_US&type=1",
@@ -74856,7 +74883,7 @@
     {
       "id": "salesforce-agentforce-specialist-maintenance-summer-26",
       "url": "https://trailhead.salesforce.com/content/learn/modules/agentforce-specialist-certification-maintenance-summer-26",
-      "checked_at": "2026-09-29T15:03:34+00:00",
+      "checked_at": "2026-10-29T04:23:06+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://trailhead.salesforce.com/content/learn/modules/agentforce-specialist-certification-maintenance-summer-26",
@@ -74873,7 +74900,7 @@
     {
       "id": "salesforce-dex450-platform-development",
       "url": "https://trailheadacademy.salesforce.com/classes/dex450-build-applications-programmatically-on-the-salesforce-platform",
-      "checked_at": "2026-09-29T14:48:06+00:00",
+      "checked_at": "2026-10-29T04:23:05+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://trailheadacademy.salesforce.com/classes/dex450-build-applications-programmatically-on-the-salesforce-platform",
@@ -74887,7 +74914,7 @@
     {
       "id": "salesforce-platform-admin-certification",
       "url": "https://trailhead.salesforce.com/credentials/platformadministrator",
-      "checked_at": "2026-09-29T14:09:31+00:00",
+      "checked_at": "2026-10-29T04:23:04+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://trailhead.salesforce.com/credentials/platformadministrator",
@@ -74901,7 +74928,7 @@
     {
       "id": "salesforce-platform-admin-prep-trail",
       "url": "https://trailhead.salesforce.com/content/learn/trails/administrator-certification-prep",
-      "checked_at": "2026-09-29T14:09:31+00:00",
+      "checked_at": "2026-10-29T04:23:04+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://trailhead.salesforce.com/content/learn/trails/administrator-certification-prep",
@@ -74920,7 +74947,7 @@
     {
       "id": "salesforce-platform-admin-prep-unit",
       "url": "https://trailhead.salesforce.com/content/learn/modules/administrator-certification-prep-setup-and-objects/get-started-with-administrator-certification-prep",
-      "checked_at": "2026-09-29T14:09:31+00:00",
+      "checked_at": "2026-10-29T04:23:04+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://trailhead.salesforce.com/content/learn/modules/administrator-certification-prep-setup-and-objects/get-started-with-administrator-certification-prep",
@@ -74937,7 +74964,7 @@
     {
       "id": "salesforce-platform-admin-trailmix",
       "url": "https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-administrator-credential",
-      "checked_at": "2026-09-29T14:09:32+00:00",
+      "checked_at": "2026-10-29T04:23:04+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-administrator-credential",
@@ -74951,7 +74978,7 @@
     {
       "id": "salesforce-platform-app-builder-certification",
       "url": "https://trailhead.salesforce.com/credentials/platformappbuilder",
-      "checked_at": "2026-09-29T14:25:01+00:00",
+      "checked_at": "2026-10-29T04:23:05+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://trailhead.salesforce.com/credentials/platformappbuilder",
@@ -74965,7 +74992,7 @@
     {
       "id": "salesforce-platform-app-builder-guide",
       "url": "https://help.salesforce.com/s/articleView?id=005298964&language=en_US&type=1",
-      "checked_at": "2026-09-29T14:25:01+00:00",
+      "checked_at": "2026-10-29T04:23:05+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://help.salesforce.com/s/articleView?id=005298964&language=en_US&type=1",
@@ -74979,7 +75006,7 @@
     {
       "id": "salesforce-platform-app-builder-learning-path",
       "url": "https://trailhead.salesforce.com/content/learn/trails/prepare-for-your-salesforce-platform-app-builder-certification",
-      "checked_at": "2026-09-29T14:25:02+00:00",
+      "checked_at": "2026-10-29T04:23:05+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://trailhead.salesforce.com/content/learn/trails/prepare-for-your-salesforce-platform-app-builder-certification",
@@ -75020,7 +75047,7 @@
     {
       "id": "salesforce-platform-app-builder-maintenance-winter-26",
       "url": "https://trailhead.salesforce.com/content/learn/modules/platform-app-builder-certification-maintenance-winter-26",
-      "checked_at": "2026-09-29T14:25:02+00:00",
+      "checked_at": "2026-10-29T04:23:05+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://trailhead.salesforce.com/content/learn/modules/platform-app-builder-certification-maintenance-winter-26",
@@ -75040,7 +75067,7 @@
     {
       "id": "salesforce-platform-developer-certification",
       "url": "https://trailhead.salesforce.com/credentials/platformdeveloperi",
-      "checked_at": "2026-09-29T14:48:03+00:00",
+      "checked_at": "2026-10-29T04:23:05+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://trailhead.salesforce.com/credentials/platformdeveloperi",
@@ -75054,7 +75081,7 @@
     {
       "id": "salesforce-platform-developer-guide",
       "url": "https://help.salesforce.com/s/articleView?id=005298965&language=en_US&type=1",
-      "checked_at": "2026-09-29T14:48:03+00:00",
+      "checked_at": "2026-10-29T04:23:05+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://help.salesforce.com/s/articleView?id=005298965&language=en_US&type=1",
@@ -75068,7 +75095,7 @@
     {
       "id": "salesforce-platform-developer-maintenance-winter-26",
       "url": "https://trailhead.salesforce.com/content/learn/modules/platform-developer-certification-maintenance-winter-26",
-      "checked_at": "2026-09-29T14:48:05+00:00",
+      "checked_at": "2026-10-29T04:23:05+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://trailhead.salesforce.com/content/learn/modules/platform-developer-certification-maintenance-winter-26",
@@ -75088,7 +75115,7 @@
     {
       "id": "salesforce-platform-developer-prep-trail",
       "url": "https://trailhead.salesforce.com/content/learn/trails/platform-developer-i-certification-study-guide",
-      "checked_at": "2026-09-29T14:48:04+00:00",
+      "checked_at": "2026-10-29T04:23:05+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://trailhead.salesforce.com/content/learn/trails/platform-developer-i-certification-study-guide",
@@ -75107,7 +75134,7 @@
     {
       "id": "salesforce-platform-developer-trailmix",
       "url": "https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-platform-developer-i-credential",
-      "checked_at": "2026-09-29T14:48:04+00:00",
+      "checked_at": "2026-10-29T04:23:05+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-platform-developer-i-credential",
@@ -75121,7 +75148,7 @@
     {
       "id": "salesforce-well-architected-secure",
       "url": "https://architect.salesforce.com/docs/architect/well-architected/guide/trust.html",
-      "checked_at": "2026-09-29T15:03:37+00:00",
+      "checked_at": "2026-10-29T04:23:19+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://architect.salesforce.com/docs/architect/well-architected/guide/trust.html",
@@ -77873,7 +77900,7 @@
     {
       "id": "seaborn-documentation",
       "url": "https://seaborn.pydata.org/",
-      "checked_at": "2026-09-30T03:03:31+00:00",
+      "checked_at": "2026-10-29T04:23:19+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://seaborn.pydata.org/",
@@ -80127,16 +80154,16 @@
     {
       "id": "tkdocs-tutorial",
       "url": "https://tkdocs.com/tutorial/",
-      "checked_at": "2026-09-30T01:53:47+00:00",
-      "status": "error",
-      "http_status": null,
+      "checked_at": "2026-10-29T04:23:09+00:00",
+      "status": "ok",
+      "http_status": 200,
       "final_url": "https://tkdocs.com/tutorial/",
-      "content_type": "",
-      "page_title": "",
-      "canonical_url": "",
+      "content_type": "text/html",
+      "page_title": "TkDocs Tutorial",
+      "canonical_url": "https://tkdocs.com/tutorial/",
       "duration_signals": [],
-      "signal_fingerprint": "",
-      "error": "<urlopen error timed out>"
+      "signal_fingerprint": "5f5ddb64dda5183451670d73af9ae0f05f81991734237eb3d743181ab6d01df9",
+      "error": ""
     },
     {
       "id": "udemy-ab-100-kuljot-bakshi",
@@ -80666,7 +80693,7 @@
     {
       "id": "udemy-python-pcep-wiech",
       "url": "https://www.udemy.com/course/python-pcep/",
-      "checked_at": "2026-09-29T19:19:14+00:00",
+      "checked_at": "2026-10-29T04:23:07+00:00",
       "status": "blocked",
       "http_status": 403,
       "final_url": "https://www.udemy.com/course/python-pcep/",
@@ -80680,7 +80707,7 @@
     {
       "id": "udemy-salesforce-agentforce-specialist-wheeler",
       "url": "https://www.udemy.com/course/agentforce/",
-      "checked_at": "2026-09-29T15:03:35+00:00",
+      "checked_at": "2026-10-29T04:23:06+00:00",
       "status": "blocked",
       "http_status": 403,
       "final_url": "https://www.udemy.com/course/agentforce/",
@@ -80694,7 +80721,7 @@
     {
       "id": "udemy-salesforce-platform-administrator-wheeler",
       "url": "https://www.udemy.com/course/salesforce-administrator/",
-      "checked_at": "2026-09-29T14:09:33+00:00",
+      "checked_at": "2026-10-29T04:23:05+00:00",
       "status": "blocked",
       "http_status": 403,
       "final_url": "https://www.udemy.com/course/salesforce-administrator/",
@@ -80708,7 +80735,7 @@
     {
       "id": "udemy-salesforce-platform-app-builder-wheeler",
       "url": "https://www.udemy.com/course/salesforce-platform-app-builder/",
-      "checked_at": "2026-09-29T14:25:02+00:00",
+      "checked_at": "2026-10-29T04:23:05+00:00",
       "status": "blocked",
       "http_status": 403,
       "final_url": "https://www.udemy.com/course/salesforce-platform-app-builder/",
@@ -80722,7 +80749,7 @@
     {
       "id": "udemy-salesforce-platform-developer-wheeler",
       "url": "https://www.udemy.com/course/salesforce-developer/",
-      "checked_at": "2026-09-29T14:48:07+00:00",
+      "checked_at": "2026-10-29T04:23:06+00:00",
       "status": "blocked",
       "http_status": 403,
       "final_url": "https://www.udemy.com/course/salesforce-developer/",
@@ -81852,7 +81879,7 @@
     {
       "id": "youtube-freecodecamp-python-beginner",
       "url": "https://www.youtube.com/watch?v=rfscVS0vtbw",
-      "checked_at": "2026-09-29T19:19:29+00:00",
+      "checked_at": "2026-10-29T04:23:07+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.youtube.com/watch?v=rfscVS0vtbw",
@@ -81894,7 +81921,7 @@
     {
       "id": "youtube-palo-alto-networks",
       "url": "https://www.youtube.com/@PaloAltoNetworks",
-      "checked_at": "2026-10-29T01:53:03+00:00",
+      "checked_at": "2026-10-29T04:23:07+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.youtube.com/@PaloAltoNetworks",
@@ -81908,7 +81935,7 @@
     {
       "id": "youtube-salesforce-ben-agentforce-specialist-2026",
       "url": "https://www.youtube.com/watch?v=jbqQPedm_lk",
-      "checked_at": "2026-09-29T15:03:35+00:00",
+      "checked_at": "2026-10-29T04:23:06+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.youtube.com/watch?v=jbqQPedm_lk",
@@ -81922,7 +81949,7 @@
     {
       "id": "youtube-salesforce-ben-platform-app-builder-overview",
       "url": "https://www.youtube.com/watch?v=q_xsHJDgMfY",
-      "checked_at": "2026-09-29T14:25:03+00:00",
+      "checked_at": "2026-10-29T04:23:05+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.youtube.com/watch?v=q_xsHJDgMfY",
@@ -90274,7 +90301,7 @@
     {
       "id": "panw-panos-122-new-features",
       "url": "https://docs.paloaltonetworks.com/ngfw/new-features/by-version/panos/12-2",
-      "checked_at": "2026-10-29T01:31:29+00:00",
+      "checked_at": "2026-10-29T04:23:20+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://docs.paloaltonetworks.com/ngfw/new-features/by-version/panos/12-2",
@@ -91774,6 +91801,166 @@
       "canonical_url": "https://developer.nvidia.com/blog/nvidia-nemotron-3-5-super-vl-powers-specialized-agents-with-multimodal-reasoning/",
       "duration_signals": [],
       "signal_fingerprint": "c5629e70fc4bea3de24ce1ef1d77b54c66912b64ec818283b8ffb561e994b15d",
+      "error": ""
+    },
+    {
+      "id": "numpy-25-release-notes",
+      "url": "https://numpy.org/doc/2.5/release/2.5.0-notes.html",
+      "checked_at": "2026-10-29T04:23:20+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://numpy.org/doc/2.5/release/2.5.0-notes.html",
+      "content_type": "text/html; charset=utf-8",
+      "page_title": "NumPy 2.5.0 Release Notes — NumPy v2.5 Manual",
+      "canonical_url": "https://numpy.org/doc/2.5/release/2.5.0-notes.html",
+      "duration_signals": [],
+      "signal_fingerprint": "b08ab0bcf513fc6637f1c7092c54621673ed8ad709724e8849d192f5259ed394",
+      "error": ""
+    },
+    {
+      "id": "pandas-30-release-notes",
+      "url": "https://pandas.pydata.org/pandas-docs/version/3.0/whatsnew/v3.0.0.html",
+      "checked_at": "2026-10-29T04:23:20+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://pandas.pydata.org/pandas-docs/version/3.0/whatsnew/v3.0.0.html",
+      "content_type": "text/html; charset=utf-8",
+      "page_title": "What’s new in 3.0.0 (January 21, 2026) — pandas 3.0.6 documentation",
+      "canonical_url": "https://pandas.pydata.org/pandas-docs/version/3.0/whatsnew/v3.0.0.html",
+      "duration_signals": [
+        "24 hours"
+      ],
+      "signal_fingerprint": "8ea9474bcca240f83836ffbdb896d216a1fd8a7c6a00f00f083a1e8023bc0e8b",
+      "error": ""
+    },
+    {
+      "id": "pandas-31-release-notes",
+      "url": "https://pandas.pydata.org/docs/whatsnew/v3.1.0.html",
+      "checked_at": "2026-10-29T04:23:20+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://pandas.pydata.org/docs/whatsnew/v3.1.0.html",
+      "content_type": "text/html; charset=utf-8",
+      "page_title": "What’s new in 3.1.0 (October 22, 2026) — pandas 3.1.0 documentation",
+      "canonical_url": "https://pandas.pydata.org/docs/whatsnew/v3.1.0.html",
+      "duration_signals": [
+        "5min"
+      ],
+      "signal_fingerprint": "4ff5aca1b807f8597578d9881335196e584ab217978513271fe452c717231164",
+      "error": ""
+    },
+    {
+      "id": "panw-cybersecurity-academy-courses",
+      "url": "https://www2.paloaltonetworks.com/services/education/academy/learner",
+      "checked_at": "2026-10-29T04:23:20+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://www2.paloaltonetworks.com/services/education/academy/learner",
+      "content_type": "text/html;charset=utf-8",
+      "page_title": "Cybersecurity Academy - Learner",
+      "canonical_url": "https://www.paloaltonetworks.com/services/education/academy/learner",
+      "duration_signals": [],
+      "signal_fingerprint": "1d06e0a63346b7016c8efda3cd0e1ec7f720d2d03f143281abba3e2feeeda304",
+      "error": ""
+    },
+    {
+      "id": "panw-release-note-updates-2026",
+      "url": "https://docs.paloaltonetworks.com/resources/recent-release-note-updates",
+      "checked_at": "2026-10-29T04:23:20+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://docs.paloaltonetworks.com/resources/recent-release-note-updates",
+      "content_type": "text/html;charset=utf-8",
+      "page_title": "Recent Release Note UpdatesClear",
+      "canonical_url": "https://docs.paloaltonetworks.com/resources/recent-release-note-updates",
+      "duration_signals": [],
+      "signal_fingerprint": "7fb3b59ca39bd130324fb4834f75870a98fe20488a66c8c17ddb779cee017f56",
+      "error": ""
+    },
+    {
+      "id": "python-release-index-2026",
+      "url": "https://www.python.org/doc/versions/",
+      "checked_at": "2026-10-29T04:23:20+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://www.python.org/doc/versions/",
+      "content_type": "text/html; charset=utf-8",
+      "page_title": "",
+      "canonical_url": "https://www.python.org/doc/versions/",
+      "duration_signals": [],
+      "signal_fingerprint": "8fb0fd7e6908f1914e555513399ab841da313398d50f230c362371af13889aab",
+      "error": ""
+    },
+    {
+      "id": "pythoninstitute-study-resources-2026",
+      "url": "https://pythoninstitute.org/study-resources",
+      "checked_at": "2026-10-29T04:23:20+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://pythoninstitute.org/study-resources",
+      "content_type": "text/html; charset=UTF-8",
+      "page_title": "Study Resources",
+      "canonical_url": "https://pythoninstitute.org/study-resources",
+      "duration_signals": [],
+      "signal_fingerprint": "4d4ddc1e96e3fa29fa6637eedb7d9dd00354cb514a88481dcba3cecb2dcfc7ef",
+      "error": ""
+    },
+    {
+      "id": "salesforce-admin-security-release-notes-2026",
+      "url": "https://help.salesforce.com/s/articleView?id=release-notes.rn_security_enhancements_upcoming.htm&language=en_US&release=262&type=5",
+      "checked_at": "2026-10-29T04:23:20+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://help.salesforce.com/s/articleView?id=release-notes.rn_security_enhancements_upcoming.htm&language=en_US&release=262&type=5",
+      "content_type": "text/html;charset=UTF-8",
+      "page_title": "Salesforce Help",
+      "canonical_url": "https://help.salesforce.com/s/articleView?id=release-notes.rn_security_enhancements_upcoming.htm&language=en_US&release=262&type=5",
+      "duration_signals": [],
+      "signal_fingerprint": "d6e71c8063f9ab98fb47f4a7764a8951ead608286c3ad8905e74ed889cc70ea8",
+      "error": ""
+    },
+    {
+      "id": "salesforce-app-builder-refresh-announcement-2026",
+      "url": "https://trailhead.salesforce.com/trailblazer-community/groups/0F9300000001vuUCAQ",
+      "checked_at": "2026-10-29T04:23:21+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://trailhead.salesforce.com/trailblazer-community/groups/0F9300000001vuUCAQ",
+      "content_type": "text/html; charset=utf-8",
+      "page_title": "Group Detail | Salesforce Trailblazer Community",
+      "canonical_url": "https://trailhead.salesforce.com/trailblazer-community/groups/0F9300000001vuUCAQ",
+      "duration_signals": [],
+      "signal_fingerprint": "69546d2ca348ffbe6fd1c093dbbcf4184e84cdfe950a4f3138fa3391af5637a0",
+      "error": ""
+    },
+    {
+      "id": "salesforce-app-builder-trailmix-2026",
+      "url": "https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-platform-app-builder-credential",
+      "checked_at": "2026-10-29T04:23:20+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-platform-app-builder-credential",
+      "content_type": "text/html; charset=utf-8",
+      "page_title": "Prepare for Your Salesforce Platform App Builder Certification Trailmix | Salesforce Trailhead",
+      "canonical_url": "https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-platform-app-builder-credential",
+      "duration_signals": [],
+      "signal_fingerprint": "8572cbeb40d56edfba6b9486ac54add669ead510ec3bf100dd09aa99f28075db",
+      "error": ""
+    },
+    {
+      "id": "salesforce-winter27-developer-guide",
+      "url": "https://developer.salesforce.com/blogs/2026/10/developers-guide-to-the-winter-27-release",
+      "checked_at": "2026-10-29T04:23:20+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://developer.salesforce.com/blogs/2026/10/developers-guide-to-the-winter-27-release",
+      "content_type": "text/html; charset=utf-8",
+      "page_title": "The Salesforce Developer’s Guide to the Winter ’27 Release",
+      "canonical_url": "https://developer.salesforce.com/blogs/2026/10/developers-guide-to-the-winter-27-release",
+      "duration_signals": [
+        "24 hours"
+      ],
+      "signal_fingerprint": "6ee932427ce1d730629e20f4506790872d69e80a8c98a1961d3b5fcdbc3d87cf",
       "error": ""
     }
 ]

@@ -60023,6 +60023,369 @@
         "no_action_findings": 0,
         "blocked_findings": 0
       }
+    },
+    {
+      "id": "freshness-2026-10-29-nonms-g15",
+      "title": "Non-Microsoft certification freshness review group 15",
+      "rubric_version": 1,
+      "created_on": "2026-10-29",
+      "completed_on": "2026-10-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Fifteenth batch from the frozen eligible queue of guides at least 27 days old.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "PANW-CYBERSECURITY-APPRENTICE",
+        "PCAD-31-02",
+        "PCAP-31-03",
+        "PCED-30-02",
+        "PCEP-30-02",
+        "PCPP-32-101",
+        "SALESFORCE-AGENTFORCE-SPECIALIST",
+        "SALESFORCE-PLATFORM-ADMINISTRATOR",
+        "SALESFORCE-PLATFORM-APP-BUILDER",
+        "SALESFORCE-PLATFORM-DEVELOPER"
+      ],
+      "results": [
+        {
+          "exam_code": "PANW-CYBERSECURITY-APPRENTICE",
+          "vendor_id": "palo-alto-networks",
+          "guide_path": "guides/PANW-CYBERSECURITY-APPRENTICE-palo-alto-networks-cybersecurity-apprentice.md",
+          "baseline_sha256": "3b70c8dbe71cbd5ebe3598564dbdbceec5ada6b72da10f082756da3e260d32d4",
+          "scanned_on": "2026-10-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current issuer objectives/status and replacement announcements were checked; lifecycle differences are recorded in the report and guide."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party product and standards material was checked and separated from scored exam scope."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current official release/announcement channels were searched for material changes."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Current public issuer learning material was compared; paywalled interiors and access were not inferred."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Version conflicts, access limits, and unverified exam logistics are disclosed in the Group 15 report."
+            }
+          },
+          "findings": [],
+          "notes": "See Group 15 report for guide-specific verified updates, source links, objective-scope boundary and access limitations."
+        },
+        {
+          "exam_code": "PCAD-31-02",
+          "vendor_id": "python-institute",
+          "guide_path": "guides/PCAD-31-02-python-certified-associate-data-analyst.md",
+          "baseline_sha256": "1ca62705472dea31e5a0626f2f3491df1295b16c8bfca070049154359ddd4bb3",
+          "scanned_on": "2026-10-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current issuer objectives/status and replacement announcements were checked; lifecycle differences are recorded in the report and guide."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party product and standards material was checked and separated from scored exam scope."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current official release/announcement channels were searched for material changes."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Current public issuer learning material was compared; paywalled interiors and access were not inferred."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Version conflicts, access limits, and unverified exam logistics are disclosed in the Group 15 report."
+            }
+          },
+          "findings": [],
+          "notes": "See Group 15 report for guide-specific verified updates, source links, objective-scope boundary and access limitations."
+        },
+        {
+          "exam_code": "PCAP-31-03",
+          "vendor_id": "python-institute",
+          "guide_path": "guides/PCAP-31-03-python-certified-associate-python-programmer.md",
+          "baseline_sha256": "5f4ac30a67ee01c77afa0af42feaba1f1ef8d1c519f2f6b4194a8b573556d017",
+          "scanned_on": "2026-10-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current issuer objectives/status and replacement announcements were checked; lifecycle differences are recorded in the report and guide."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party product and standards material was checked and separated from scored exam scope."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current official release/announcement channels were searched for material changes."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Current public issuer learning material was compared; paywalled interiors and access were not inferred."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Version conflicts, access limits, and unverified exam logistics are disclosed in the Group 15 report."
+            }
+          },
+          "findings": [],
+          "notes": "See Group 15 report for guide-specific verified updates, source links, objective-scope boundary and access limitations."
+        },
+        {
+          "exam_code": "PCED-30-02",
+          "vendor_id": "python-institute",
+          "guide_path": "guides/PCED-30-02-python-certified-entry-level-data-analyst.md",
+          "baseline_sha256": "fdc5933f33eb959f00eae59278ded3660889cd27d65670159b7f6ff691c52abb",
+          "scanned_on": "2026-10-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current issuer objectives/status and replacement announcements were checked; lifecycle differences are recorded in the report and guide."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party product and standards material was checked and separated from scored exam scope."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current official release/announcement channels were searched for material changes."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Current public issuer learning material was compared; paywalled interiors and access were not inferred."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Version conflicts, access limits, and unverified exam logistics are disclosed in the Group 15 report."
+            }
+          },
+          "findings": [],
+          "notes": "See Group 15 report for guide-specific verified updates, source links, objective-scope boundary and access limitations."
+        },
+        {
+          "exam_code": "PCEP-30-02",
+          "vendor_id": "python-institute",
+          "guide_path": "guides/PCEP-30-02-python-certified-entry-level-programmer.md",
+          "baseline_sha256": "0c98947b3472f419b606164454613630641cc3c9be50c94abf1dff46b9eb033c",
+          "scanned_on": "2026-10-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current issuer objectives/status and replacement announcements were checked; lifecycle differences are recorded in the report and guide."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party product and standards material was checked and separated from scored exam scope."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current official release/announcement channels were searched for material changes."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Current public issuer learning material was compared; paywalled interiors and access were not inferred."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Version conflicts, access limits, and unverified exam logistics are disclosed in the Group 15 report."
+            }
+          },
+          "findings": [],
+          "notes": "See Group 15 report for guide-specific verified updates, source links, objective-scope boundary and access limitations."
+        },
+        {
+          "exam_code": "PCPP-32-101",
+          "vendor_id": "python-institute",
+          "guide_path": "guides/PCPP-32-101-python-certified-professional-programmer-level-1.md",
+          "baseline_sha256": "bbd1de3b5c4aa0f38d7b6d3fc9fd53a982b8669d7bc5a090042f81b2c9b21282",
+          "scanned_on": "2026-10-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current issuer objectives/status and replacement announcements were checked; lifecycle differences are recorded in the report and guide."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party product and standards material was checked and separated from scored exam scope."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current official release/announcement channels were searched for material changes."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Current public issuer learning material was compared; paywalled interiors and access were not inferred."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Version conflicts, access limits, and unverified exam logistics are disclosed in the Group 15 report."
+            }
+          },
+          "findings": [],
+          "notes": "See Group 15 report for guide-specific verified updates, source links, objective-scope boundary and access limitations."
+        },
+        {
+          "exam_code": "SALESFORCE-AGENTFORCE-SPECIALIST",
+          "vendor_id": "salesforce",
+          "guide_path": "guides/SALESFORCE-AGENTFORCE-SPECIALIST-salesforce-certified-agentforce-specialist.md",
+          "baseline_sha256": "a4ccfa3e3f5d0ac8e7fe516d5b9dd864959c70578ab35c2c0201681ec5090c08",
+          "scanned_on": "2026-10-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current issuer objectives/status and replacement announcements were checked; lifecycle differences are recorded in the report and guide."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party product and standards material was checked and separated from scored exam scope."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current official release/announcement channels were searched for material changes."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Current public issuer learning material was compared; paywalled interiors and access were not inferred."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Version conflicts, access limits, and unverified exam logistics are disclosed in the Group 15 report."
+            }
+          },
+          "findings": [],
+          "notes": "See Group 15 report for guide-specific verified updates, source links, objective-scope boundary and access limitations."
+        },
+        {
+          "exam_code": "SALESFORCE-PLATFORM-ADMINISTRATOR",
+          "vendor_id": "salesforce",
+          "guide_path": "guides/SALESFORCE-PLATFORM-ADMINISTRATOR-salesforce-certified-platform-administrator.md",
+          "baseline_sha256": "91b8f52e4542e2c8e0bf951d8622a4e8cf0ac64391dde2059cfc80c3d439ea11",
+          "scanned_on": "2026-10-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current issuer objectives/status and replacement announcements were checked; lifecycle differences are recorded in the report and guide."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party product and standards material was checked and separated from scored exam scope."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current official release/announcement channels were searched for material changes."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Current public issuer learning material was compared; paywalled interiors and access were not inferred."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Version conflicts, access limits, and unverified exam logistics are disclosed in the Group 15 report."
+            }
+          },
+          "findings": [],
+          "notes": "See Group 15 report for guide-specific verified updates, source links, objective-scope boundary and access limitations."
+        },
+        {
+          "exam_code": "SALESFORCE-PLATFORM-APP-BUILDER",
+          "vendor_id": "salesforce",
+          "guide_path": "guides/SALESFORCE-PLATFORM-APP-BUILDER-salesforce-certified-platform-app-builder.md",
+          "baseline_sha256": "f42b52a3080ab22bbd5134ddb8e4591cc525694f8b99070e95eaf78bc4eecadb",
+          "scanned_on": "2026-10-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current issuer objectives/status and replacement announcements were checked; lifecycle differences are recorded in the report and guide."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party product and standards material was checked and separated from scored exam scope."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current official release/announcement channels were searched for material changes."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Current public issuer learning material was compared; paywalled interiors and access were not inferred."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Version conflicts, access limits, and unverified exam logistics are disclosed in the Group 15 report."
+            }
+          },
+          "findings": [],
+          "notes": "See Group 15 report for guide-specific verified updates, source links, objective-scope boundary and access limitations."
+        },
+        {
+          "exam_code": "SALESFORCE-PLATFORM-DEVELOPER",
+          "vendor_id": "salesforce",
+          "guide_path": "guides/SALESFORCE-PLATFORM-DEVELOPER-salesforce-certified-platform-developer.md",
+          "baseline_sha256": "733d4f311f1d1826e477868b1288b83745b0bf35e7a68957cb1add51118f2af2",
+          "scanned_on": "2026-10-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current issuer objectives/status and replacement announcements were checked; lifecycle differences are recorded in the report and guide."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party product and standards material was checked and separated from scored exam scope."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current official release/announcement channels were searched for material changes."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Current public issuer learning material was compared; paywalled interiors and access were not inferred."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Version conflicts, access limits, and unverified exam logistics are disclosed in the Group 15 report."
+            }
+          },
+          "findings": [],
+          "notes": "See Group 15 report for guide-specific verified updates, source links, objective-scope boundary and access limitations."
+        }
+      ],
+      "summary": {
+        "exam_count": 10,
+        "current": 10,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 0,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
     }
 ]
 }

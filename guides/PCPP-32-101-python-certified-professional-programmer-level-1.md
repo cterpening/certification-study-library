@@ -6,17 +6,17 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-29
+last_verified: 2026-10-29
 upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-29
+upcoming_change_checked: 2026-10-29
 ---
 
 # PCPP-32-101 Certified Professional Python Programmer Level 1 Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage and exam status were checked September 29, 2026. Validate important details against the [official PCPP1 syllabus](https://pythoninstitute.org/pcpp1-exam-syllabus).
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage and exam status were rechecked October 29, 2026; the full deep review remains dated September 29. Validate important details against the [official PCPP1 syllabus](https://pythoninstitute.org/pcpp1-exam-syllabus).
 
 **Current baseline:** PCPP-32-101, active; syllabus last updated March 11, 2022<br>
-**Upcoming blueprint change:** PCPP-32-102 remains in development with no announced release date; its page describes five-year validity, distinct from the active 101 lifetime credential<br>
+**Upcoming blueprint change:** PCPP-32-102 is pending release and scheduled for October 31, 2026; its page describes five-year validity, distinct from active 101 lifetime credential<br>
 **Official delivery snapshot:** 45 questions; 65 minutes plus 10-minute NDA/tutorial; 70%; Python 3.x; single- and multiple-select; Pearson VUE/OnVUE, with limited TestNow availability<br>
 **Credential snapshot:** no formal prerequisite; PCAP recommended; PCPP-32-101 credential validity is lifetime; exam from USD 325 when checked; 15-day retake wait; no official PCPP1 practice test currently listed<br>
 
@@ -1559,7 +1559,7 @@ if __name__ == "__main__":
 - [ ] I can explain socket framing and implement a defensive REST/JSON client.
 - [ ] I can transact safely with SQLite and process XML/CSV/log/config data.
 - [ ] I completed the integrated build and can demonstrate recovery from each boundary failure.
-- [ ] I rechecked whether PCPP-32-102 has replaced PCPP-32-101.
+- [ ] I rechecked whether PCPP-32-102 replaced PCPP-32-101 on its scheduled October 31 release date.
 
 ## Source and freshness notes
 
@@ -1567,6 +1567,10 @@ if __name__ == "__main__":
 - [Official PCPP1 page](https://pythoninstitute.org/pcpp1): current version, format, delivery, validity, price, retake and transition status.
 - Technical behavior should be checked in the [Python standard-library documentation](https://docs.python.org/3/library/), [Requests documentation](https://requests.readthedocs.io/en/latest/), and the named PEPs.
 - The blueprint is older than several current Python releases. Study the named contract; do not assume every modern feature is in scope.
+
+### October 29, 2026 current-source update
+
+**VERIFY CURRENT — scheduled version transition:** the issuer page continues to mark PCPP-32-101 active and PCPP-32-102 pending, with an October 31, 2026 planned release. Keep this guide tied to the current 32-101 objectives until the issuer changes the active status; the next-version syllabus must be checked separately. The [Python release index](https://www.python.org/doc/versions/) lists Python 3.15.2 and 3.14.10 as October 25 releases, but the certification objectives say Python 3.x and do not mandate either patch. For structured learning, the issuer's [PCPP1 course catalog](https://pythoninstitute.org/study-resources) includes free English courses in advanced OOP, conventions, GUI, REST, and file processing; course time estimates are learning guidance, not exam weighting.
 
 ## Places to learn
 

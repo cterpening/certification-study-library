@@ -6,6 +6,17 @@ The internal `source-validated` state powers the repository workflow. On the pub
 
 The machine-readable evidence is in [`data/reviews.json`](https://github.com/cterpening/certification-study-library/blob/main/data/reviews.json). Repository validation recomputes blueprint hashes, exact source registration, and source-health counts so a stale review record fails the build. A separate human contributor review is still required before a guide can become **COMMUNITY REVIEWED**.
 
+| PANW-CYBERSECURITY-APPRENTICE | October 29, 2026 | Seven foundational cybersecurity domains; May 2026 issuer datasheet; see group-15 report | 26 registered links: 23 reachable, 3 automation-blocked, 0 missing/error | Passed; human/product review pending |
+| PCAD-31-02 | October 29, 2026 | Five data-acquisition, programming/database, statistics, modeling and communication blocks; see group-15 report | 50 registered links: 48 reachable, 2 automation-blocked, 0 missing/error | Passed; human/product review pending |
+| PCAP-31-03 | October 29, 2026 | Five current 31-03 syllabus sections; 31-04 pending for Oct 31; see group-15 report | 33 registered links: 32 reachable, 1 automation-blocked, 0 missing/error | Passed; human/product review pending |
+| PCED-30-02 | October 29, 2026 | Four data-analysis and Python syllabus domains; see group-15 report | 42 registered links: 39 reachable, 3 automation-blocked, 0 missing/error | Passed; human/product review pending |
+| PCEP-30-02 | October 29, 2026 | Fifteen objectives across four current syllabus blocks; 30-03 pending for Oct 31; see group-15 report | 26 registered links: 24 reachable, 2 automation-blocked, 0 missing/error | Passed; human/product review pending |
+| PCPP-32-101 | October 29, 2026 | Five PCPP1 sections; 32-102 pending for Oct 31; see group-15 report | 43 registered links: 42 reachable, 1 automation-blocked, 0 missing/error | Passed; human/product review pending |
+| SALESFORCE-AGENTFORCE-SPECIALIST | October 29, 2026 | Spring ’26 six-domain exam outline; Winter ’27 product context separate; see group-15 report | 28 registered links: 26 reachable, 2 automation-blocked, 0 missing/error | Passed; human/product review pending |
+| SALESFORCE-PLATFORM-ADMINISTRATOR | October 29, 2026 | Eight current Trailhead prep weights; Help logistics/version conflict bounded; see group-15 report | 22 registered links: 20 reachable, 2 automation-blocked, 0 missing/error | Passed; human/product review pending |
+| SALESFORCE-PLATFORM-APP-BUILDER | October 29, 2026 | Current Summer ’26 five-domain outline; maintenance discrepancy retained; see group-15 report | 25 registered links: 23 reachable, 2 automation-blocked, 0 missing/error | Passed; human/product review pending |
+| SALESFORCE-PLATFORM-DEVELOPER | October 29, 2026 | Current 21-objective outline; stale seasonal label retained as verify-current; see group-15 report | 24 registered links: 22 reachable, 2 automation-blocked, 0 missing/error | Passed; human/product review pending |
+
 ## AI-agent validation workflow
 
 An AI agent may perform the sources-and-objectives gate so the library can scale beyond what one maintainer can manually inspect. For each guide, the agent must:
@@ -2466,6 +2477,8 @@ item, answer dump or copied course content is used. Blueprint SHA-256:
 
 ## PCEA-30-01 coverage record
 
+- Current source reconciliation: October 29, 2026. The current official syllabus was rechecked online and still says ACTIVE, Last updated September 2, 2025, aligned with PCEA-30-01; the six blocks and 46 objectives are unchanged. Current link evidence is 29 unique URLs: 24 reachable, 1 access-blocked, 4 missing/error. The receipt supersedes the September 30 link-health snapshot because the shared Beautiful Soup documentation URL changed status in the October 29 global scan. This is a source-health reconciliation only; PCEA remains in the queue for a full content refresh.
+
 The September 30 [deep review](research/2026-09-30-pcea-30-01-deep-review.md) maps 46 detailed objectives. Mapped all 46 objectives and expanded 18 answers. Three exact original files pass 25 methods and 23 observations per normal/optimized mode, including owned HTTP responses, strict data validation, idempotent one-file replacement and byte restore. Preserved beta status and corrected the unverified book recommendation. Full integrated lab, scheduler/notification integrations, full PDF and human review remain pending. Current guide citations: 29 registered, 23 reachable, 1 access-blocked, 5 missing/error. Earlier dates/counts below describe the historical review.
 
 - Reviewed: September 2, 2026
@@ -3293,6 +3306,106 @@ The review requires correct signal semantics, missing-data treatment, bounded au
 - Product execution and independent human review remain pending. This source/objective gate does not claim that the marketplace gap is resolved or that the proposed labs passed.
 
 See the [dated intake and individual objective mappings](research/2026-10-28-ibm-bob-certification-intake.md). Blueprint SHA-256: `d4573e943742dfca30eb28ace0a1953957e412b90b8c4165c315cf9e617db5e3`.
+
+## PANW-CYBERSECURITY-APPRENTICE coverage record
+
+- Reviewed: October 29, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Seven foundational cybersecurity domains; May 2026 issuer datasheet
+- Coverage evidence: Cybersecurity (16%), Network Fundamentals (16%), Network Security (14%), Endpoint Security (10%), Cloud Security (13%), Security Operations (13%), Identity Security (18%). See the dated Group 15 research (`docs/research/2026-10-29-nonms-refresh-group-15.md`) for current changes, maps and limits.
+- Link evidence: 26 unique external guide URLs; 23 reachable, 3 automation-blocked, 0 missing/error. Four OpenEDG product pages were read directly with the browser although the automated client returned 404; see Group 15 report.
+
+Current version transitions, product-context boundaries and unresolved issuer-page differences are dated in the guide and Group 15 report. Blueprint SHA-256: `fbd3b8491d4f5a04b8592653652089dcb6e1fe7f7e1948a974dd37469f1673b7`.
+
+## PCAD-31-02 coverage record
+
+- Reviewed: October 29, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Five data-acquisition, programming/database, statistics, modeling and communication blocks
+- Coverage evidence: Block 1: Data Acquisition and Pre-Processing — 14 items, 29.2%, Block 2: Programming and Database Skills — 16 items, 33.3%, Block 3: Statistical Analysis — 4 items, 8.3%, Block 4: Data Analysis and Modeling — 9 items, 18.8%, Block 5: Data Communication and Visualization — 5 items, 10.4%. See the dated Group 15 research (`docs/research/2026-10-29-nonms-refresh-group-15.md`) for current changes, maps and limits.
+- Link evidence: 50 unique external guide URLs; 48 reachable, 2 automation-blocked, 0 missing/error. Four OpenEDG product pages were read directly with the browser although the automated client returned 404; see Group 15 report.
+
+Current version transitions, product-context boundaries and unresolved issuer-page differences are dated in the guide and Group 15 report. Blueprint SHA-256: `c0e03d205f2bb78e1902508ab699839dee11825423eebe0da9a68832ca657275`.
+
+## PCAP-31-03 coverage record
+
+- Reviewed: October 29, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Five current 31-03 syllabus sections; 31-04 pending for Oct 31
+- Coverage evidence: Section 1: Modules and Packages — 6 items, 12%, Section 2: Exceptions — 5 items, 14%, Section 3: Strings — 8 items, 18%, Section 4: Object-Oriented Programming — 12 items, 34%, Section 5: Miscellaneous — 9 items, 22%. See the dated Group 15 research (`docs/research/2026-10-29-nonms-refresh-group-15.md`) for current changes, maps and limits.
+- Link evidence: 33 unique external guide URLs; 32 reachable, 1 automation-blocked, 0 missing/error. Four OpenEDG product pages were read directly with the browser although the automated client returned 404; see Group 15 report.
+
+Current version transitions, product-context boundaries and unresolved issuer-page differences are dated in the guide and Group 15 report. Blueprint SHA-256: `49589f9a3aaa766a2b2c1a640ac5dbbf7842c01d2517397519ab35ac86a060b0`.
+
+## PCED-30-02 coverage record
+
+- Reviewed: October 29, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Four data-analysis and Python syllabus domains
+- Coverage evidence: Block 1: Introduction to Data and Data Analysis Concepts — 9 items, 22.5%, Block 2: Python Basics for Data Analysis — 13 items, 32.5%, Block 3: Working with Data and Performing Simple Analyses — 13 items, 32.5%, Block 4: Communicating Insights and Reporting — 5 items, 12.5%. See the dated Group 15 research (`docs/research/2026-10-29-nonms-refresh-group-15.md`) for current changes, maps and limits.
+- Link evidence: 42 unique external guide URLs; 39 reachable, 3 automation-blocked, 0 missing/error. Four OpenEDG product pages were read directly with the browser although the automated client returned 404; see Group 15 report.
+
+Current version transitions, product-context boundaries and unresolved issuer-page differences are dated in the guide and Group 15 report. Blueprint SHA-256: `27c6f07ec4b1e1063e5cbb6effd00e13406e15d8ee54a2e748c50dff86c24b90`.
+
+## PCEP-30-02 coverage record
+
+- Reviewed: October 29, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Fifteen objectives across four current syllabus blocks; 30-03 pending for Oct 31
+- Coverage evidence: 1.1 Understand fundamental terms and definitions, 1.2 Understand Python’s logic and structure, 1.3 Introduce literals and variables into code and use different numeral systems, 1.4 Choose operators and data types adequate to the problem, 1.5 Perform Input/Output console operations, 2.1 Make decisions and branch the flow with the if instruction, 2.2 Perform different types of iterations, 3.1 Collect and process data using lists, 3.2 Collect and process data using tuples, 3.3 Collect and process data using dictionaries, 3.4 Operate with strings, 4.1 Decompose the code using functions, 4.2 Organize interaction between the function and its environment, 4.3 Python Built-In Exceptions Hierarchy, 4.4 Basics of Python Exception Handling. See the dated Group 15 research (`docs/research/2026-10-29-nonms-refresh-group-15.md`) for current changes, maps and limits.
+- Link evidence: 26 unique external guide URLs; 24 reachable, 2 automation-blocked, 0 missing/error. Four OpenEDG product pages were read directly with the browser although the automated client returned 404; see Group 15 report.
+
+Current version transitions, product-context boundaries and unresolved issuer-page differences are dated in the guide and Group 15 report. Blueprint SHA-256: `fc0a0b67b1f15a4430075b889978a82e162d98642f0b822768bc3796c322ca57`.
+
+## PCPP-32-101 coverage record
+
+- Reviewed: October 29, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Five PCPP1 sections; 32-102 pending for Oct 31
+- Coverage evidence: Section 1: Advanced Object-Oriented Programming — 15 items, 35%, Section 2: Coding Conventions, Best Practices, and Standardization — 7 items, 12%, Section 3: GUI Programming — 8 items, 20%, Section 4: Network Programming — 8 items, 18%, Section 5: File Processing and Environment — 7 items, 15%. See the dated Group 15 research (`docs/research/2026-10-29-nonms-refresh-group-15.md`) for current changes, maps and limits.
+- Link evidence: 43 unique external guide URLs; 42 reachable, 1 automation-blocked, 0 missing/error. Four OpenEDG product pages were read directly with the browser although the automated client returned 404; see Group 15 report.
+
+Current version transitions, product-context boundaries and unresolved issuer-page differences are dated in the guide and Group 15 report. Blueprint SHA-256: `899426a902f78aba1471211f0c1eeace8016a66eb8dac3407d013d97cdaafcd6`.
+
+## SALESFORCE-AGENTFORCE-SPECIALIST coverage record
+
+- Reviewed: October 29, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Spring ’26 six-domain exam outline; Winter ’27 product context separate
+- Coverage evidence: Prompt Engineering (20%), Data 360 Fundamentals (20%), AI Agents (35%), Testing, Deployment, and Maintenance (10%), Governance and Observability (10%), Multi-Agent Orchestration (5%). See the dated Group 15 research (`docs/research/2026-10-29-nonms-refresh-group-15.md`) for current changes, maps and limits.
+- Link evidence: 28 unique external guide URLs; 26 reachable, 2 automation-blocked, 0 missing/error. Four OpenEDG product pages were read directly with the browser although the automated client returned 404; see Group 15 report.
+
+Current version transitions, product-context boundaries and unresolved issuer-page differences are dated in the guide and Group 15 report. Blueprint SHA-256: `a633fd73b5f733d78426c5c66eebf566a7867d80a36ddadd505dbd8ef29b5664`.
+
+## SALESFORCE-PLATFORM-ADMINISTRATOR coverage record
+
+- Reviewed: October 29, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Eight current Trailhead prep weights; Help logistics/version conflict bounded
+- Coverage evidence: Configuration and Setup (15%), Object Manager and Lightning App Builder (15%), Sales and Marketing Applications (10%), Service and Support Applications (10%), Productivity and Collaboration (10%), Data and Analytics Management (17%), Automation (15%), Agentforce (8%). See the dated Group 15 research (`docs/research/2026-10-29-nonms-refresh-group-15.md`) for current changes, maps and limits.
+- Link evidence: 22 unique external guide URLs; 20 reachable, 2 automation-blocked, 0 missing/error. Four OpenEDG product pages were read directly with the browser although the automated client returned 404; see Group 15 report.
+
+Current version transitions, product-context boundaries and unresolved issuer-page differences are dated in the guide and Group 15 report. Blueprint SHA-256: `b2f9f40f925247562d8d19eed5ad7a33a4b5c10e03b705d2fe34ec88678b7c97`.
+
+## SALESFORCE-PLATFORM-APP-BUILDER coverage record
+
+- Reviewed: October 29, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Current Summer ’26 five-domain outline; maintenance discrepancy retained
+- Coverage evidence: Salesforce Fundamentals (18%), Data Modeling and Management (20%), Business Logic and Process Automation (32%), User Interface (17%), App Deployment (13%). See the dated Group 15 research (`docs/research/2026-10-29-nonms-refresh-group-15.md`) for current changes, maps and limits.
+- Link evidence: 25 unique external guide URLs; 23 reachable, 2 automation-blocked, 0 missing/error. Four OpenEDG product pages were read directly with the browser although the automated client returned 404; see Group 15 report.
+
+Current version transitions, product-context boundaries and unresolved issuer-page differences are dated in the guide and Group 15 report. Blueprint SHA-256: `5365cb37f260db38aa6b4a306dd826258e3d85f058b8111352e56a065a965f14`.
+
+## SALESFORCE-PLATFORM-DEVELOPER coverage record
+
+- Reviewed: October 29, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Current 21-objective outline; stale seasonal label retained as verify-current
+- Coverage evidence: Developer Fundamentals (27%), Process Automation and Logic (28%), User Interface (25%), Testing, Debugging, and Deployment (20%). See the dated Group 15 research (`docs/research/2026-10-29-nonms-refresh-group-15.md`) for current changes, maps and limits.
+- Link evidence: 24 unique external guide URLs; 22 reachable, 2 automation-blocked, 0 missing/error. Four OpenEDG product pages were read directly with the browser although the automated client returned 404; see Group 15 report.
+
+Current version transitions, product-context boundaries and unresolved issuer-page differences are dated in the guide and Group 15 report. Blueprint SHA-256: `4843c3b24a93a1c4da79e50db00e79c38fa5921c6127df89e37a6754c5cddbfe`.
 
 ## Revalidation triggers
 
