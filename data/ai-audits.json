@@ -28199,6 +28199,479 @@
         "open_findings": 0,
         "closed_findings": 0
       }
+    },
+    {
+      "id": "nonms-refresh-2026-10-29-group-17",
+      "title": "Non-Microsoft certification refresh — group 17",
+      "rubric_version": 2,
+      "created_on": "2026-10-29",
+      "completed_on": "2026-10-29",
+      "status": "completed",
+      "audit_mode": "read-only",
+      "selection_method": "Explicit seven-guide scope supplied in the Group 17 handoff",
+      "rubric_path": "docs/AI-AUDIT.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "human_review": false,
+        "independence": "fresh-context",
+        "label": "Fresh-context independent reviewer; no editing conversation used as evidence"
+      },
+      "exam_codes": [
+        "PCAT-31-01",
+        "PCES-30-01",
+        "PCEI-30-01",
+        "PCEA-30-01",
+        "SPLUNK-CORE-USER",
+        "SPLUNK-CORE-POWER-USER",
+        "SPLUNK-ADVANCED-POWER-USER"
+      ],
+      "results": [
+        {
+          "exam_code": "PCAT-31-01",
+          "vendor_id": "python-institute",
+          "guide_path": "guides/PCAT-31-01-python-certified-associate-tester.md",
+          "guide_content_sha256": "faa0347e377c9ed12567a41ab9820a73d39e7e44c1112c24736b15f653baefea",
+          "blueprint_snapshot_path": "data/objective-snapshots/pcat-31-01-official-objectives.txt",
+          "blueprint_snapshot_sha256": "d93b7e4da42b76c0263e9ea2964b023f65d3aa2ac20d43384e0686e0dca7b724",
+          "audited_on": "2026-10-29",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "Current issuer identity and active version were compared with the accepted snapshot and the Oct. 29 exam research. Provider page conflicts are stated in the guide rather than adopted as exam scope."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "All published blocks/domains remain mapped; no accepted baseline was replaced on hash change alone. Manual source comparison supports unchanged Python outlines and Splunk PDF maps."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Material exam and product claims are tied to registered public sources; unresolved availability, version, and access claims are bounded. See guide-specific notes/findings."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "No recalled questions, answer dumps, confidential assessment material, or unsupported exam-contract predictions were found."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Readiness answers and examples align with their explanations; synthetic examples are distinguished from observed product/runtime results."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current volatile details are labeled or date-bounded. Python practice and Splunk recertification conflicts remain visible."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Python examples use owned/synthetic fixtures and bounded loopback work; Splunk labs require approved nonproduction environments. No guide claims new runtime/product execution in this refresh."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Questions and answer guidance are original, aligned to published domains, and consistent with guide explanations."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Current content hashes, accepted objective hashes, config review states, Oct. 29 source-validation receipts, and link-health counts were compared. PCEI is correctly review-required with a blocked source record."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No material cross-vendor leakage, copied exam material, or contradictory template sections were identified."
+            }
+          },
+          "findings": [],
+          "notes": "Six-block active 31-01 map and delivery facts align with the retained snapshot and current page evidence. The provider intro/four-versus-six-block and Block 2 objective-count conflicts remain explicit. PT102 access/time estimates and Core/Pro lab entitlement ambiguity are bounded. No code or course exercise was run for this audit."
+        },
+        {
+          "exam_code": "PCES-30-01",
+          "vendor_id": "python-institute",
+          "guide_path": "guides/PCES-30-01-python-certified-entry-level-security-specialist.md",
+          "guide_content_sha256": "f92875b770dcb07471189971695bfe5c914d51d1d1bb941e94bd1d894598c9a9",
+          "blueprint_snapshot_path": "data/objective-snapshots/pces-30-01-official-objectives.txt",
+          "blueprint_snapshot_sha256": "20acb805135538b41982013c936788e9324272472a840145161037a56ef6f38f",
+          "audited_on": "2026-10-29",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "Current issuer identity and active version were compared with the accepted snapshot and the Oct. 29 exam research. Provider page conflicts are stated in the guide rather than adopted as exam scope."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "All published blocks/domains remain mapped; no accepted baseline was replaced on hash change alone. Manual source comparison supports unchanged Python outlines and Splunk PDF maps."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Material exam and product claims are tied to registered public sources; unresolved availability, version, and access claims are bounded. See guide-specific notes/findings."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "No recalled questions, answer dumps, confidential assessment material, or unsupported exam-contract predictions were found."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Readiness answers and examples align with their explanations; synthetic examples are distinguished from observed product/runtime results."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current volatile details are labeled or date-bounded. Python practice and Splunk recertification conflicts remain visible."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Python examples use owned/synthetic fixtures and bounded loopback work; Splunk labs require approved nonproduction environments. No guide claims new runtime/product execution in this refresh."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Questions and answer guidance are original, aligned to published domains, and consistent with guide explanations."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Current content hashes, accepted objective hashes, config review states, Oct. 29 source-validation receipts, and link-health counts were compared. PCEI is correctly review-required with a blocked source record."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No material cross-vendor leakage, copied exam material, or contradictory template sections were identified."
+            }
+          },
+          "findings": [],
+          "notes": "Current v1.5 syllabus identity and 45-item four-block map match the accepted baseline. Past Q3/Q4 practice-test wording is not treated as proof of release; PCAS is not misrepresented as a replacement. Authorized-only security exercises and unavailable third-party tools are bounded."
+        },
+        {
+          "exam_code": "PCEI-30-01",
+          "vendor_id": "python-institute",
+          "guide_path": "guides/PCEI-30-01-python-certified-entry-level-ai-specialist.md",
+          "guide_content_sha256": "b976d07be45639eb31eddc51fbd445cd2d6ef472a2de8dd33b00b95e5b9421da",
+          "blueprint_snapshot_path": "data/objective-snapshots/pcei-30-01-official-objectives.txt",
+          "blueprint_snapshot_sha256": "e5fdda2adf0c6e0b035be96b13269a63f7ca7aaf52183c123a3d2af3a9a1301e",
+          "audited_on": "2026-10-29",
+          "verdict": "blocked",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "Current issuer identity and active version were compared with the accepted snapshot and the Oct. 29 exam research. Provider page conflicts are stated in the guide rather than adopted as exam scope."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "All published blocks/domains remain mapped; no accepted baseline was replaced on hash change alone. Manual source comparison supports unchanged Python outlines and Splunk PDF maps."
+            },
+            "material_claim_support": {
+              "status": "blocked",
+              "notes": "Issuer advertising is documented and the registered product route returns HTTP 404, but access to the advertised practice resource cannot be verified. Because authoritative access evidence is unavailable and the current source-validation record is blocked, this required check cannot be completed; the audit verdict is blocked under repository policy."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "No recalled questions, answer dumps, confidential assessment material, or unsupported exam-contract predictions were found."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Readiness answers and examples align with their explanations; synthetic examples are distinguished from observed product/runtime results."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current volatile details are labeled or date-bounded. Python practice and Splunk recertification conflicts remain visible."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Python examples use owned/synthetic fixtures and bounded loopback work; Splunk labs require approved nonproduction environments. No guide claims new runtime/product execution in this refresh."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Questions and answer guidance are original, aligned to published domains, and consistent with guide explanations."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Current content hashes, accepted objective hashes, config review states, Oct. 29 source-validation receipts, and link-health counts were compared. PCEI is correctly review-required with a blocked source record. The blocked record is accurately represented, but it prevents a passing audit verdict."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No material cross-vendor leakage, copied exam material, or contradictory template sections were identified."
+            }
+          },
+          "findings": [
+            {
+              "id": "g17-pcei-01",
+              "severity": "low",
+              "check": "review_evidence_accuracy",
+              "location": ".maintenance/2026-10-29-nonms-refresh/g17-learning-research.md:24-29",
+              "evidence": "The guide and learning packet now agree that the issuer page advertises a $29 practice test while the linked https://ums.edube.org/products/pcei-exam-prep route returns HTTP 404. Purchase, activation, and actual access are explicitly unverified.",
+              "recommendation": "Reconcile the learning packet to say the issuer page advertises availability, the linked route returned 404, and actual purchase/access and activation were not verified.",
+              "category": "review-evidence",
+              "status": "resolved",
+              "resolution": "Rechecked .maintenance/2026-10-29-nonms-refresh/g17-learning-research.md after the coordinator correction. Its recommendation now says advertised but unavailable to verify/access through the HTTP 404 store route; it no longer presents the route as a usable available self-assessment. The guide likewise says access is unresolved."
+            },
+            {
+              "id": "g17-pcei-02",
+              "severity": "info",
+              "check": "material_claim_support",
+              "location": "guides/PCEI-30-01-python-certified-entry-level-ai-specialist.md:23 and .maintenance/2026-10-29-nonms-refresh/g17-source-health-final.json:findings.broken",
+              "evidence": "The issuer page advertises the practice test, but the registered product URL returns HTTP 404; purchase/access cannot be confirmed. The guide accurately labels this unresolved and config/frontmatter remain review-required with a blocked source-validation receipt.",
+              "recommendation": "Keep the practice resource explicitly unavailable to verify; recheck the exact issuer store route in a later freshness pass and retain the source gate until authoritative access evidence works.",
+              "category": "source-mismatch",
+              "status": "open"
+            }
+          ],
+          "notes": "The current v1.6 syllabus map matches the accepted baseline. The guide and learning packet agree on the practice-test advertisement plus broken route; actual access remains unresolved. The source-validation record is blocked, so the required material-claim-support check is blocked and this guide cannot receive a passing audit verdict until authoritative access evidence is available. No other open finding remains."
+        },
+        {
+          "exam_code": "PCEA-30-01",
+          "vendor_id": "python-institute",
+          "guide_path": "guides/PCEA-30-01-python-certified-entry-level-automation-specialist.md",
+          "guide_content_sha256": "d2703dcf8820eef6c88221acfc1442cca237d5c93301563e1f5d1696573410f9",
+          "blueprint_snapshot_path": "data/objective-snapshots/pcea-30-01-official-objectives.txt",
+          "blueprint_snapshot_sha256": "979e1a08fc3b397566e6549bae8cbfc70238b37d5652f54fadde55f1011c3598",
+          "audited_on": "2026-10-29",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "Current issuer identity and active version were compared with the accepted snapshot and the Oct. 29 exam research. Provider page conflicts are stated in the guide rather than adopted as exam scope."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "All published blocks/domains remain mapped; no accepted baseline was replaced on hash change alone. Manual source comparison supports unchanged Python outlines and Splunk PDF maps."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Material exam and product claims are tied to registered public sources; unresolved availability, version, and access claims are bounded. See guide-specific notes/findings."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "No recalled questions, answer dumps, confidential assessment material, or unsupported exam-contract predictions were found."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Readiness answers and examples align with their explanations; synthetic examples are distinguished from observed product/runtime results."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current volatile details are labeled or date-bounded. Python practice and Splunk recertification conflicts remain visible."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Python examples use owned/synthetic fixtures and bounded loopback work; Splunk labs require approved nonproduction environments. No guide claims new runtime/product execution in this refresh."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Questions and answer guidance are original, aligned to published domains, and consistent with guide explanations."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Current content hashes, accepted objective hashes, config review states, Oct. 29 source-validation receipts, and link-health counts were compared. PCEI is correctly review-required with a blocked source record."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No material cross-vendor leakage, copied exam material, or contradictory template sections were identified."
+            }
+          },
+          "findings": [],
+          "notes": "The current issuer page lists PCEA-30-01 active without the former beta/limited-trial wording; the guide and current config match. The accepted six-block/46-item baseline remains unchanged. Study resources are bounded by the reviewed issuer pages."
+        },
+        {
+          "exam_code": "SPLUNK-CORE-USER",
+          "vendor_id": "splunk",
+          "guide_path": "guides/SPLUNK-CORE-USER-splunk-core-certified-user.md",
+          "guide_content_sha256": "eb7dc8341f4c174fc4a729449d92d5a3237b9d6f5e0dc1d1511fe2930b9bd470",
+          "blueprint_snapshot_path": "data/objective-snapshots/splunk-core-user-official-objectives.txt",
+          "blueprint_snapshot_sha256": "12b7fe480f890afd5f9bab87a17cd67eb1952d32720b92f86d57b9e5fae42c77",
+          "audited_on": "2026-10-29",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "Current issuer identity and active version were compared with the accepted snapshot and the Oct. 29 exam research. Provider page conflicts are stated in the guide rather than adopted as exam scope."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "All published blocks/domains remain mapped; no accepted baseline was replaced on hash change alone. Manual source comparison supports unchanged Python outlines and Splunk PDF maps."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Material exam and product claims are tied to registered public sources; unresolved availability, version, and access claims are bounded. See guide-specific notes/findings. A low note remains for explicit 10.0/10.2 references where current 10.4 equivalents were reviewed. Repair verification: current Splunk 10.4 citations were added beside the affected explanations; older Search Tutorial 10.0 and Event Handler 10.2 material is now explicitly version-labeled."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "No recalled questions, answer dumps, confidential assessment material, or unsupported exam-contract predictions were found."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Readiness answers and examples align with their explanations; synthetic examples are distinguished from observed product/runtime results."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current volatile details are labeled or date-bounded. Python practice and Splunk recertification conflicts remain visible."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Python examples use owned/synthetic fixtures and bounded loopback work; Splunk labs require approved nonproduction environments. No guide claims new runtime/product execution in this refresh."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Questions and answer guidance are original, aligned to published domains, and consistent with guide explanations."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Current content hashes, accepted objective hashes, config review states, Oct. 29 source-validation receipts, and link-health counts were compared. PCEI is correctly review-required with a blocked source record."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No material cross-vendor leakage, copied exam material, or contradictory template sections were identified."
+            }
+          },
+          "findings": [
+            {
+              "id": "g17-splunk-user-01",
+              "severity": "low",
+              "check": "material_claim_support",
+              "location": "guides/SPLUNK-CORE-USER-splunk-core-certified-user.md:101,142,146,361,364",
+              "evidence": "Current guide text was reread after repair and the changed citations were matched to the registered Oct. 29 source-health records. Automated 403 status is recorded as access-blocked; the technical research packet documents the direct browser reading. No product runtime is claimed.",
+              "recommendation": "Prefer verified 10.4 equivalents for current search/command behavior where available, or label the older tutorial as version-specific and link current docs for current behavior; do not imply 10.4 was executed.",
+              "category": "source-mismatch",
+              "status": "resolved",
+              "resolution": "The current Search Reference and sort citations now point to checked Splunk Enterprise 10.4 references. The Search Tutorial is labeled as the versioned 10.0 tutorial, with the current 10.4 Search Manual linked for current behavior."
+            }
+          ],
+          "notes": "Current blueprint map, 60-item exam contract, and lifecycle distinction are consistent with the official evidence. Cisco tracking-system routing is distinguished from Pearson VUE delivery; coursework-renewal disagreement is reported without choosing a path. See low citation-version finding. The previously open source-version/citation-placement finding was repaired and verified on October 29; the corrected 10.4 citations are registered, with automated HTTP 403 health categorized as access-blocked."
+        },
+        {
+          "exam_code": "SPLUNK-CORE-POWER-USER",
+          "vendor_id": "splunk",
+          "guide_path": "guides/SPLUNK-CORE-POWER-USER-splunk-core-certified-power-user.md",
+          "guide_content_sha256": "65df7299ae6696aa6408d25f1b065826a2a7614ecab28caa964e4f7e13a9e27a",
+          "blueprint_snapshot_path": "data/objective-snapshots/splunk-core-power-user-official-objectives.txt",
+          "blueprint_snapshot_sha256": "e5715fa538ca2139d8472fd5aa4122ddf4651abe8f41794ddb6347760aa5f1d1",
+          "audited_on": "2026-10-29",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "Current issuer identity and active version were compared with the accepted snapshot and the Oct. 29 exam research. Provider page conflicts are stated in the guide rather than adopted as exam scope."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "All published blocks/domains remain mapped; no accepted baseline was replaced on hash change alone. Manual source comparison supports unchanged Python outlines and Splunk PDF maps."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Material exam and product claims are tied to registered public sources; unresolved availability, version, and access claims are bounded. See guide-specific notes/findings. A low note remains for the inline 10.2 fillnull/calculated-fields references despite current 10.4 resources in the update section. Repair verification: current Splunk 10.4 citations were added beside the affected explanations; older Search Tutorial 10.0 and Event Handler 10.2 material is now explicitly version-labeled."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "No recalled questions, answer dumps, confidential assessment material, or unsupported exam-contract predictions were found."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Readiness answers and examples align with their explanations; synthetic examples are distinguished from observed product/runtime results."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current volatile details are labeled or date-bounded. Python practice and Splunk recertification conflicts remain visible."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Python examples use owned/synthetic fixtures and bounded loopback work; Splunk labs require approved nonproduction environments. No guide claims new runtime/product execution in this refresh."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Questions and answer guidance are original, aligned to published domains, and consistent with guide explanations."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Current content hashes, accepted objective hashes, config review states, Oct. 29 source-validation receipts, and link-health counts were compared. PCEI is correctly review-required with a blocked source record."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No material cross-vendor leakage, copied exam material, or contradictory template sections were identified."
+            }
+          },
+          "findings": [
+            {
+              "id": "g17-splunk-power-01",
+              "severity": "low",
+              "check": "material_claim_support",
+              "location": "guides/SPLUNK-CORE-POWER-USER-splunk-core-certified-power-user.md:80,126",
+              "evidence": "Current guide text was reread after repair and the changed citations were matched to the registered Oct. 29 source-health records. Automated 403 status is recorded as access-blocked; the technical research packet documents the direct browser reading. No product runtime is claimed.",
+              "recommendation": "Move the verified 10.4 command references beside the affected explanations and retain older-version notes only where they help explain version differences.",
+              "category": "source-mismatch",
+              "status": "resolved",
+              "resolution": "The fillnull and calculated-fields explanations now cite checked Enterprise 10.4 pages inline."
+            }
+          ],
+          "notes": "Current ten-domain/65-item blueprint, no-prerequisite contract, Cisco tracking route, and renewal conflict are represented consistently. Labs remain explicitly unexecuted. See low citation-version finding. The previously open source-version/citation-placement finding was repaired and verified on October 29; the corrected 10.4 citations are registered, with automated HTTP 403 health categorized as access-blocked."
+        },
+        {
+          "exam_code": "SPLUNK-ADVANCED-POWER-USER",
+          "vendor_id": "splunk",
+          "guide_path": "guides/SPLUNK-ADVANCED-POWER-USER-splunk-core-certified-advanced-power-user.md",
+          "guide_content_sha256": "cf41233fde618cb3113d51a119b92846e204bbf7907b4e7f90ee3cf58528ffeb",
+          "blueprint_snapshot_path": "data/objective-snapshots/splunk-advanced-power-user-official-objectives.txt",
+          "blueprint_snapshot_sha256": "88bf95c61b865a715feb43849ff3ba24a64fff0218c4c17d8f7cd589b2232815",
+          "audited_on": "2026-10-29",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "Current issuer identity and active version were compared with the accepted snapshot and the Oct. 29 exam research. Provider page conflicts are stated in the guide rather than adopted as exam scope."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "All published blocks/domains remain mapped; no accepted baseline was replaced on hash change alone. Manual source comparison supports unchanged Python outlines and Splunk PDF maps."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Material exam and product claims are tied to registered public sources; unresolved availability, version, and access claims are bounded. See guide-specific notes/findings. A low note remains for 10.0/10.2 references and the top-matter 10.4 deprecation claim, whose direct links appear later in Places to learn rather than beside the claim. Repair verification: current Splunk 10.4 citations were added beside the affected explanations; older Search Tutorial 10.0 and Event Handler 10.2 material is now explicitly version-labeled."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "No recalled questions, answer dumps, confidential assessment material, or unsupported exam-contract predictions were found."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Readiness answers and examples align with their explanations; synthetic examples are distinguished from observed product/runtime results."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current volatile details are labeled or date-bounded. Python practice and Splunk recertification conflicts remain visible."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Python examples use owned/synthetic fixtures and bounded loopback work; Splunk labs require approved nonproduction environments. No guide claims new runtime/product execution in this refresh."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Questions and answer guidance are original, aligned to published domains, and consistent with guide explanations."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Current content hashes, accepted objective hashes, config review states, Oct. 29 source-validation receipts, and link-health counts were compared. PCEI is correctly review-required with a blocked source record."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No material cross-vendor leakage, copied exam material, or contradictory template sections were identified."
+            }
+          },
+          "findings": [
+            {
+              "id": "g17-splunk-adv-01",
+              "severity": "low",
+              "check": "material_claim_support",
+              "location": "guides/SPLUNK-ADVANCED-POWER-USER-splunk-core-certified-advanced-power-user.md:21,51,85,147",
+              "evidence": "Current guide text was reread after repair and the changed citations were matched to the registered Oct. 29 source-health records. Automated 403 status is recorded as access-blocked; the technical research packet documents the direct browser reading. No product runtime is claimed.",
+              "recommendation": "Add the direct 10.4 release/deprecation links beside the top claim and update command/event-handler references to verified current equivalents where available, keeping version boundaries explicit.",
+              "category": "source-mismatch",
+              "status": "resolved",
+              "resolution": "Direct Enterprise 10.4 release/deprecation links now appear beside the lifecycle/dashboard claim. makeresults and tstats now use checked 10.4 references; the Event Handler Reference remains 10.2 and is explicitly labeled older/versioned."
+            }
+          ],
+          "notes": "Current 22-domain/70-item map, Power User prerequisite, lifecycle conflict, and 10.4 dashboard removals are represented. Simple XML remains within the blueprint; no runtime behavior is claimed. See low citation-proximity/version finding. The previously open source-version/citation-placement finding was repaired and verified on October 29; the corrected 10.4 citations are registered, with automated HTTP 403 health categorized as access-blocked."
+        }
+      ],
+      "summary": {
+        "guide_count": 7,
+        "pass": 6,
+        "pass_with_notes": 0,
+        "fix_required": 0,
+        "blocked": 1,
+        "open_findings": 1,
+        "closed_findings": 4
+      }
     }
 ]
 }

@@ -61246,6 +61246,382 @@
         "no_action_findings": 0,
         "blocked_findings": 0
       }
+    },
+    {
+      "id": "freshness-2026-10-29-nonms-g17",
+      "title": "Non-Microsoft certification refresh group 17",
+      "rubric_version": 1,
+      "created_on": "2026-10-29",
+      "completed_on": "2026-10-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Final group of seven from the frozen eligible queue of guides at least 27 days old, following Groups 1–16.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex",
+          "three research agents"
+        ],
+        "independence": "mixed",
+        "human_review": false
+      },
+      "exam_codes": [
+        "PCAT-31-01",
+        "PCES-30-01",
+        "PCEI-30-01",
+        "PCEA-30-01",
+        "SPLUNK-CORE-USER",
+        "SPLUNK-CORE-POWER-USER",
+        "SPLUNK-ADVANCED-POWER-USER"
+      ],
+      "results": [
+        {
+          "exam_code": "PCAT-31-01",
+          "vendor_id": "python-institute",
+          "guide_path": "guides/PCAT-31-01-python-certified-associate-tester.md",
+          "baseline_sha256": "dca843d87d07fb30a25c0e3c07ca451d19d5ea10ce5bef73574a796c4d3f6154",
+          "scanned_on": "2026-10-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current issuer page confirms 31-01 Active and 31-02 in development; six-block 31-01 map is unchanged. Its intro conflict remains explicit. PT102 and Python 3.14 reference sources were added; course estimate/entitlement ambiguity is disclosed."
+            },
+            "official_product_documentation": {
+              "status": "not-applicable",
+              "notes": "No official product execution performed; this guide is testing-method focused and current docs were checked only as references."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current issuer/vendor lifecycle and release-announcement surfaces were searched or opened; search limits and manual objective/PDF checks are documented in the research report."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Official PCAT practice status and PT102 course route were reviewed; course interior not accessed."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No objective change; PCAT page contains an unresolved intro/header mismatch that is disclosed."
+            }
+          },
+          "findings": [
+            {
+              "id": "g17-pcat-intro-conflict",
+              "check": "contradiction_and_gap_review",
+              "category": "other",
+              "title": "Active PCAT-31-01 syllabus conflicts with the page introduction",
+              "url": "https://pythoninstitute.org/pcat-exam-syllabus",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "PCAT-31-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current page introduction references 31-02/four blocks while the active 31-01 header, alignment and testing table show six blocks. Guide retains the discrepancy.",
+              "recommendation": "Continue following the active six-block 31-01 table; check with issuer on a future pass.",
+              "disposition": "no-action",
+              "resolution": "Current guide explicitly describes the mismatch and preserves accepted 31-01 snapshot."
+            }
+          ],
+          "notes": "See docs/research/2026-10-29-nonms-refresh-group-17.md and the three Group 17 research packets. Accepted objective snapshots were retained."
+        },
+        {
+          "exam_code": "PCES-30-01",
+          "vendor_id": "python-institute",
+          "guide_path": "guides/PCES-30-01-python-certified-entry-level-security-specialist.md",
+          "baseline_sha256": "b6c5ffe05aa321eaa1969c074be4c64a0192c728b625cab379c53d66aa161ac6",
+          "scanned_on": "2026-10-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current issuer page and linked v1.5 syllabus confirm active 30-01 and unchanged four-block/45-item map. Hash candidate differences were manually reconciled against page/PDF."
+            },
+            "official_product_documentation": {
+              "status": "not-applicable",
+              "notes": "Current Python docs are reference only; recorded examples still report their actual Python 3.13.14 runtime."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current issuer/vendor lifecycle and release-announcement surfaces were searched or opened; search limits and manual objective/PDF checks are documented in the research report."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "No dedicated current issuer course found in reviewed catalog pages."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Practice ETA Q3/Q4 2026 remains unconfirmed past Q3; PCAS is separate. No objective change."
+            }
+          },
+          "findings": [],
+          "notes": "See docs/research/2026-10-29-nonms-refresh-group-17.md and the three Group 17 research packets. Accepted objective snapshots were retained."
+        },
+        {
+          "exam_code": "PCEI-30-01",
+          "vendor_id": "python-institute",
+          "guide_path": "guides/PCEI-30-01-python-certified-entry-level-ai-specialist.md",
+          "baseline_sha256": "2788e0a5ea74bb127eb9b923aa66047b2599466758a91fde9ef705c48b0c823c",
+          "scanned_on": "2026-10-29",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current issuer page and v1.6 syllabus confirm active PCEI-30-01 and unchanged six-module/36-item map. Hash candidate differences were manually reconciled."
+            },
+            "official_product_documentation": {
+              "status": "not-applicable",
+              "notes": "Python docs are reference only; no fresh runtime execution."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current issuer/vendor lifecycle and release-announcement surfaces were searched or opened; search limits and manual objective/PDF checks are documented in the research report."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Issuer page advertises practice available but its linked product URL is 404; discrepancy retained."
+            },
+            "contradiction_and_gap_review": {
+              "status": "blocked",
+              "notes": "PCAI table says Coming Soon while FAQ retains past Q1 2026. Result remains review-required due unresolved advertised practice access."
+            }
+          },
+          "findings": [
+            {
+              "id": "g17-pcei-practice-url-404",
+              "check": "contradiction_and_gap_review",
+              "category": "other",
+              "title": "Advertised PCEI practice product is not reachable at linked store path",
+              "url": "https://ums.edube.org/products/pcei-exam-prep",
+              "source_type": "official-training",
+              "affected_exams": [
+                "PCEI-30-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Issuer page says $29 practice test is available; linked product returned HTTP 404; FAQ retains planned Q1 2026.",
+              "recommendation": "Retain explicit unresolved availability caveat and recheck the exact issuer store link before recommending purchase.",
+              "disposition": "blocked"
+            }
+          ],
+          "notes": "See docs/research/2026-10-29-nonms-refresh-group-17.md and the three Group 17 research packets. Accepted objective snapshots were retained."
+        },
+        {
+          "exam_code": "PCEA-30-01",
+          "vendor_id": "python-institute",
+          "guide_path": "guides/PCEA-30-01-python-certified-entry-level-automation-specialist.md",
+          "baseline_sha256": "f26c1441cb03ebda11d4cba4cf8df7316dc9d03114aa9ebd4a68449b414501f4",
+          "scanned_on": "2026-10-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current credential page lists active PCEA-30-01; syllabus map/date unchanged. Stale beta/limited-trial text was removed from guide and status corrected to active."
+            },
+            "official_product_documentation": {
+              "status": "not-applicable",
+              "notes": "Current Python docs consulted as reference; no fresh runtime execution."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current issuer/vendor lifecycle and release-announcement surfaces were searched or opened; search limits and manual objective/PDF checks are documented in the research report."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "No dedicated PCEA course surfaced; Python Essentials 1 recorded only as optional prerequisite foundation."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Issuer page no longer says beta/limited availability; status and guide reconciled."
+            }
+          },
+          "findings": [
+            {
+              "id": "g17-pcea-beta-claim-retired",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "lifecycle-change",
+              "title": "Current credential page no longer uses beta or limited-availability language",
+              "url": "https://pythoninstitute.org/pcea",
+              "source_type": "credential-page",
+              "affected_exams": [
+                "PCEA-30-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current issuer credential page lists PCEA-30-01 active without beta, small-market-trial or limited-availability text.",
+              "recommendation": "Remove stale beta qualification and align metadata status.",
+              "disposition": "applied",
+              "source_id": "pcea-certification-page",
+              "resolution": "Guide claims and config status were corrected to current Active wording."
+            }
+          ],
+          "notes": "See docs/research/2026-10-29-nonms-refresh-group-17.md and the three Group 17 research packets. Accepted objective snapshots were retained."
+        },
+        {
+          "exam_code": "SPLUNK-CORE-USER",
+          "vendor_id": "splunk",
+          "guide_path": "guides/SPLUNK-CORE-USER-splunk-core-certified-user.md",
+          "baseline_sha256": "eb7dc8341f4c174fc4a729449d92d5a3237b9d6f5e0dc1d1511fe2930b9bd470",
+          "scanned_on": "2026-10-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current credential page and blueprint PDF manually compared with accepted eight-domain map; no objective change. PDF extractor remains manual-review only."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current Splunk 10.4 release notes and search docs reviewed; no local Splunk runtime, account, or deployment available."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current issuer/vendor lifecycle and release-announcement surfaces were searched or opened; search limits and manual objective/PDF checks are documented in the research report."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Current certification page, FAQ and dated User path reviewed; path is from 2022 and course access is per-item."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Cisco tracking-system account route vs Pearson VUE exam delivery is clarified. Coursework renewal policy conflicts between overview and 2026 FAQ; bounded in guide."
+            }
+          },
+          "findings": [
+            {
+              "id": "g17-splunk-core-user-recertification-conflict",
+              "check": "contradiction_and_gap_review",
+              "category": "updated-source",
+              "title": "Current Splunk recertification surfaces conflict on coursework renewal",
+              "url": "https://www.splunk.com/en_us/pdfs/training/splunk-certification-changes.pdf",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "SPLUNK-CORE-USER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "2026 change FAQ says coursework recertification ended March 1, 2026; current overview still says coursework is an option.",
+              "recommendation": "Disclose conflict and confirm candidate-specific renewal route in Cisco tracking system.",
+              "disposition": "applied",
+              "source_id": "splunk-certification-changes-faq",
+              "resolution": "Guide identifies the contradiction and points to current candidate tracking for confirmation."
+            }
+          ],
+          "notes": "See docs/research/2026-10-29-nonms-refresh-group-17.md and the three Group 17 research packets. Accepted objective snapshots were retained."
+        },
+        {
+          "exam_code": "SPLUNK-CORE-POWER-USER",
+          "vendor_id": "splunk",
+          "guide_path": "guides/SPLUNK-CORE-POWER-USER-splunk-core-certified-power-user.md",
+          "baseline_sha256": "65df7299ae6696aa6408d25f1b065826a2a7614ecab28caa964e4f7e13a9e27a",
+          "scanned_on": "2026-10-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current credential page and PDF manually compared with accepted ten-domain map; no objective change. PDF extractor remains manual-review only."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current 10.4 fillnull and search references checked; no local runtime execution."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current issuer/vendor lifecycle and release-announcement surfaces were searched or opened; search limits and manual objective/PDF checks are documented in the research report."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Official 2026 Power User path and free catalog reviewed; course interiors/access entitlements not verified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Cisco tracking-system route and coursework recertification conflict are disclosed; Core Power is not on FAQ legacy list."
+            }
+          },
+          "findings": [
+            {
+              "id": "g17-splunk-core-power-user-recertification-conflict",
+              "check": "contradiction_and_gap_review",
+              "category": "updated-source",
+              "title": "Current Splunk recertification surfaces conflict on coursework renewal",
+              "url": "https://www.splunk.com/en_us/pdfs/training/splunk-certification-changes.pdf",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "SPLUNK-CORE-POWER-USER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "2026 change FAQ says coursework recertification ended March 1, 2026; current overview still says coursework is an option.",
+              "recommendation": "Disclose conflict and confirm candidate-specific renewal route in Cisco tracking system.",
+              "disposition": "applied",
+              "source_id": "splunk-certification-changes-faq",
+              "resolution": "Guide identifies the contradiction and points to current candidate tracking for confirmation."
+            }
+          ],
+          "notes": "See docs/research/2026-10-29-nonms-refresh-group-17.md and the three Group 17 research packets. Accepted objective snapshots were retained."
+        },
+        {
+          "exam_code": "SPLUNK-ADVANCED-POWER-USER",
+          "vendor_id": "splunk",
+          "guide_path": "guides/SPLUNK-ADVANCED-POWER-USER-splunk-core-certified-advanced-power-user.md",
+          "baseline_sha256": "cf41233fde618cb3113d51a119b92846e204bbf7907b4e7f90ee3cf58528ffeb",
+          "scanned_on": "2026-10-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current credential page and PDF manually compared with accepted 22-domain map; no objective change. PDF extractor remains manual-review only."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current 10.4 release/removal docs and Simple XML reference reviewed; behavior not executed locally."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current issuer/vendor lifecycle and release-announcement surfaces were searched or opened; search limits and manual objective/PDF checks are documented in the research report."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Official 2026 Advanced path and free catalog reviewed; course interiors/access entitlements not verified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Cisco tracking-system route and coursework recertification conflict disclosed; current 10.4 dashboard changes bounded."
+            }
+          },
+          "findings": [
+            {
+              "id": "g17-splunk-advanced-power-user-recertification-conflict",
+              "check": "contradiction_and_gap_review",
+              "category": "updated-source",
+              "title": "Current Splunk recertification surfaces conflict on coursework renewal",
+              "url": "https://www.splunk.com/en_us/pdfs/training/splunk-certification-changes.pdf",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "SPLUNK-ADVANCED-POWER-USER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "2026 change FAQ says coursework recertification ended March 1, 2026; current overview still says coursework is an option.",
+              "recommendation": "Disclose conflict and confirm candidate-specific renewal route in Cisco tracking system.",
+              "disposition": "applied",
+              "source_id": "splunk-certification-changes-faq",
+              "resolution": "Guide identifies the contradiction and points to current candidate tracking for confirmation."
+            }
+          ],
+          "notes": "See docs/research/2026-10-29-nonms-refresh-group-17.md and the three Group 17 research packets. Accepted objective snapshots were retained."
+        }
+      ],
+      "summary": {
+        "exam_count": 7,
+        "current": 6,
+        "review_required": 0,
+        "blocked": 1,
+        "queued_findings": 0,
+        "applied_findings": 4,
+        "no_action_findings": 1,
+        "blocked_findings": 1
+      }
     }
 ]
 }

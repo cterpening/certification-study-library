@@ -13,14 +13,14 @@ upcoming_change_checked: 2026-10-29
 
 # PCEA-30-01 Certified Entry-Level Automation Specialist with Python Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** **BETA / SMALL-MARKET-TRIAL CREDENTIAL.** The syllabus says active, but the live credential page labels PCEA-30-01 limited availability/small market trial/beta. Availability, objectives, scoring, and policies may change. Deep-reviewed September 30, 2026; verify the [official PCEA page](https://pythoninstitute.org/pcea) before acting.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The official credential page currently lists PCEA-30-01 as active and no longer describes it as a beta or limited-market trial. Recheck current availability, objectives and policies before acting.
 
-**Current baseline:** PCEA-30-01 limited-availability beta; syllabus last updated September 2, 2025<br>
-**Upcoming blueprint change:** beta stabilization is the change watch; no replacement code announced<br>
+**Current baseline:** PCEA-30-01 active; syllabus last updated September 2, 2025<br>
+**Upcoming blueprint change:** no replacement code or future blueprint was announced on the current credential page<br>
 **Official delivery snapshot:** 46 questions; 60 minutes plus NDA; 75%; select, input-based, scenario and analytical items; TestNow; English<br>
 **Credential snapshot:** no formal prerequisite; PCEP-equivalent Python and basic scripting/data exposure recommended; seven-year validity; USD 69 exam or USD 86 with retake when checked<br>
 
-**VERIFY CURRENT:** The complete [credential page](https://pythoninstitute.org/pcea) still labels delivery limited availability / small market trial / beta. “Active” on the syllabus describes the published outline; it does not prove general availability. The complete [testing policy](https://pythoninstitute.org/pcea-testing-policies), revised September 2, 2025, specifies seven days after a failed attempt. Generic footer wording also mentions passing, which does not establish passed-exam retake eligibility. Local partner rescheduling and the global unredeemed-voucher procedure have different conditions. No account, booking, system test or purchase occurred.
+**VERIFY CURRENT:** The live [credential page](https://pythoninstitute.org/pcea) now lists PCEA-30-01 as active without beta, limited-availability or small-market-trial wording. This page-level status does not establish local appointment availability. The [testing policy](https://pythoninstitute.org/pcea-testing-policies), revised September 2, 2025, specifies seven days after a failed attempt. Generic footer wording also mentions passing, which does not establish passed-exam retake eligibility. Local partner rescheduling and the global unredeemed-voucher procedure have different conditions. No account, booking, system test or purchase occurred.
 
 The canonical English syllabus, all detailed bullets and the full minimum-qualified-candidate profile were manually read after direct retrieval and the automated monitor timed out. The existing 46-objective snapshot is retained; manual confirmation is not a successful new automated hash observation. Full PDF reading remains pending. The MQC incorrectly groups Requests, Beautiful Soup and `schedule` with standard libraries; these are third-party dependencies. Python's `sched` module and the separate `schedule` package are different tools.
 
@@ -930,7 +930,7 @@ if __name__ == "__main__":
 15. `schedule` needs a running Python process and does not supply durable job persistence or concurrent execution by itself. The package was not installed or run here; an OS scheduler launch and missed-run behavior remain separate verification.
 16. Use a lock/lease appropriate to all participating processes and release/recovery rules, plus idempotency. The workbook only demonstrates same-process nonblocking lock behavior; it neither wraps `run_once` with it nor proves a cross-process scheduler policy.
 17. Encode for the actual output context. `html.escape` is appropriate for the demonstrated text nodes, while script, URL, CSS and arbitrary markup contexts have different requirements. Generating a report is separate from securely storing or delivering it.
-18. The credential page still describes limited beta delivery while the syllabus is active. Confirm availability, outline and applicable policies before committing time or money. A calendar date or unverified third-party alignment claim does not establish release or readiness.
+18. The credential page currently lists PCEA-30-01 as active and does not include its former beta/limited-trial wording. Confirm availability, outline and applicable policies before committing time or money. A calendar date or unverified third-party alignment claim does not establish release or readiness.
 
 ## Readiness checklist
 
@@ -941,17 +941,21 @@ if __name__ == "__main__":
 - [ ] I can fetch permitted APIs/pages with timeouts, validation, rate/terms awareness, and robust parsing.
 - [ ] I can schedule without overlap and produce proportionate notifications/reports.
 - [ ] I completed the integrated lab and tested failure paths.
-- [ ] I rechecked beta availability and objectives before purchase.
+- [ ] I rechecked current availability and objectives before purchase.
 
 **Execution status:** The exact workbook passes its bounded checks. The complete integrated lab and independent human content/accessibility review remain pending. In particular, `schedule` and `plyer` are unavailable; venv activation, Unix permission changes, persistent scheduler runs, actual email/desktop delivery and external API/TLS/authentication behavior were not tested. A direct objective-monitor timeout remains visible despite manual syllabus confirmation.
 
 ## Source and freshness notes
 
 - [Official PCEA syllabus](https://pythoninstitute.org/pcea-exam-syllabus) controls the six-block map and labels its syllabus active.
-- [Official PCEA credential page](https://pythoninstitute.org/pcea) labels the offering limited availability/small market trial/beta; this more conservative status is used here.
+- [Official PCEA credential page](https://pythoninstitute.org/pcea) currently lists PCEA-30-01 as active and contains no limited-availability/small-market-trial/beta claim; this dated status replaces the stale September wording.
 - Technical behavior: [Python stdlib](https://docs.python.org/3/library/), [Requests](https://requests.readthedocs.io/en/latest/), [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/), and [schedule](https://schedule.readthedocs.io/en/stable/).
 
 ## Places to learn
+
+### October 29, 2026 source update
+
+The current credential page lists PCEA-30-01 as active and no beta, limited-availability or small-market-trial statement was present in the page checked. The accepted syllabus remains dated September 2, 2025, with six blocks and 46 items; no replacement code was announced. No dedicated PCEA course surfaced in the official catalog pages reviewed. Use the syllabus as the direct checklist and a small hands-on automation portfolio; Python Essentials 1 is an optional beginner foundation only, not objective-aligned PCEA training. The credential page and [Python Essentials 1](https://pythoninstitute.org/python-essentials-1) were checked October 29; the latter's provider estimate is 6–7 weeks and its own page should be checked for current access. No course was enrolled in.
 
 This is not a complete list and is not intended to be consumed in full. The reviewed credential page did not list an aligned course; that observation does not prove no such resource exists elsewhere. Choose selected documentation and one bounded project. All hour ranges below are author planning estimates, not measured completion times, publisher guarantees or proof of exam readiness.
 
@@ -969,4 +973,4 @@ The complete author landing for **Automate the Boring Stuff** identifies the cur
 
 The former O'Reilly link ending in ISBN `9781803247300` could not be verified and is removed from the recommendation. Packt's confirmed listing identifies Jaime Buelta's third edition, June 29, 2026, 676 pages, print ISBN `9781806702893`. Its contents include relevant file/API/report/testing material alongside broader AI/MCP topics that are not additional PCEA objectives. The page labels 19 chapters while the visible numbered sequence runs 1–17 followed by other-books/index entries. Selected metadata, the complete visible contents list and only an opening portion of the public sample were read; full book content, paid entitlements and code execution were not reviewed. The old catalog entry is retained with an unverified-link note, not silently reassigned to another ISBN.
 
-Because delivery remains beta, third-party exam-alignment claims need particular care. Use the public official outline and original exercises; avoid recalled exam questions. Direct source receipts, manual fallback boundaries, dependency versions and remaining work are documented in the [September 30 review](../docs/research/2026-09-30-pcea-30-01-deep-review.md).
+Third-party exam-alignment claims still need particular care. Use the public official outline and original exercises; avoid recalled exam questions. Direct source receipts, manual fallback boundaries, dependency versions and remaining work are documented in the [September 30 review](../docs/research/2026-09-30-pcea-30-01-deep-review.md).

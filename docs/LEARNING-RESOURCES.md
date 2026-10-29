@@ -4210,6 +4210,10 @@ Verify exact course availability, entitlement, price, runtime and exam code befo
 
 Resource details from the [PCAT-31-01 guide](../guides/PCAT-31-01-python-certified-associate-tester.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
+#### October 29, 2026 source update
+
+The issuer currently marks PCAT-31-01 active and PCAT-31-02 in development; the six-block 31-01 testing syllabus remains unchanged. Its introduction still contains a conflicting 31-02/four-block description, so use the 31-01 header, alignment and six-block testing table while retaining the source conflict. [PT102](https://pythoninstitute.org/python-for-testing-102) is the strongest current official learning route: intermediate, six modules and 40+ lessons, with a provider estimate of 4–5 weeks, free Core and $49 Pro. The separate Study Resources listing gives a 30–40-hour estimate; treat these as conflicting estimates, not a normalized duration. The page's Core/Pro lab descriptions are inconsistent, so confirm entitlement before relying on free labs. PT101 is PCET preparation and only a possible Python foundation, not PCAT coverage. Official practice tests are still described as in development. No course interior was accessed. See the [current PCAT page](https://pythoninstitute.org/pcat), [PT102 page](https://pythoninstitute.org/python-for-testing-102), [Study Resources](https://pythoninstitute.org/study-resources), and current [Python 3.14 documentation](https://docs.python.org/3.14/).
+
 This is not a complete list and is not intended to be consumed in full. Use the official PT102 outline to select aligned material, maintain your own test suite, and choose targeted resources for gaps.
 
 | Resource | Access | Estimated time |
@@ -4233,6 +4237,10 @@ Verify the current exam version, course entitlement and practice product before 
 
 Resource details from the [PCES-30-01 guide](../guides/PCES-30-01-python-certified-entry-level-security-specialist.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
+#### October 29, 2026 source update
+
+The current credential page and linked v1.5 syllabus still identify PCES-30-01 as active, with the same four-block, 45-item outline (10/12/13/10 items; 22/27/29/22%). The announced practice-test window has passed: the page still says planned/coming Q3 or Q3/Q4 2026 and does not confirm release or provide a verified purchase route. The next-level PCAS Q4 notice is a separate credential, not a PCES replacement. No dedicated official PCES course surfaced in the issuer catalog reviewed; use the syllabus as the coverage checklist and perform defensive exercises only in authorized environments. Python 3.14 documentation is a current reference, while the included executable observations remain specifically tied to Python 3.13.14. See the [PCES credential page](https://pythoninstitute.org/pces), [syllabus](https://pythoninstitute.org/pces-exam-syllabus), and [Python 3.14 docs](https://docs.python.org/3.14/).
+
 This is **not a complete list** and is not intended to be consumed in full. All times below are **author planning budgets**, not measured course durations or claims of completion. Use one foundation and the relevant reference sections, then demonstrate outcomes in authorized labs.
 
 | Resource | Access | Estimated time |
@@ -4252,6 +4260,10 @@ The complete public Academy landing and Bandit introduction were read, not the i
 
 Resource details from the [PCEA-30-01 guide](../guides/PCEA-30-01-python-certified-entry-level-automation-specialist.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
+#### October 29, 2026 source update
+
+The current credential page lists PCEA-30-01 as active and no beta, limited-availability or small-market-trial statement was present in the page checked. The accepted syllabus remains dated September 2, 2025, with six blocks and 46 items; no replacement code was announced. No dedicated PCEA course surfaced in the official catalog pages reviewed. Use the syllabus as the direct checklist and a small hands-on automation portfolio; Python Essentials 1 is an optional beginner foundation only, not objective-aligned PCEA training. The credential page and [Python Essentials 1](https://pythoninstitute.org/python-essentials-1) were checked October 29; the latter's provider estimate is 6–7 weeks and its own page should be checked for current access. No course was enrolled in.
+
 This is not a complete list and is not intended to be consumed in full. The reviewed credential page did not list an aligned course; that observation does not prove no such resource exists elsewhere. Choose selected documentation and one bounded project. All hour ranges below are author planning estimates, not measured completion times, publisher guarantees or proof of exam readiness.
 
 | Resource | Access | Estimated time |
@@ -4268,11 +4280,15 @@ The complete author landing for **Automate the Boring Stuff** identifies the cur
 
 The former O'Reilly link ending in ISBN `9781803247300` could not be verified and is removed from the recommendation. Packt's confirmed listing identifies Jaime Buelta's third edition, June 29, 2026, 676 pages, print ISBN `9781806702893`. Its contents include relevant file/API/report/testing material alongside broader AI/MCP topics that are not additional PCEA objectives. The page labels 19 chapters while the visible numbered sequence runs 1–17 followed by other-books/index entries. Selected metadata, the complete visible contents list and only an opening portion of the public sample were read; full book content, paid entitlements and code execution were not reviewed. The old catalog entry is retained with an unverified-link note, not silently reassigned to another ISBN.
 
-Because delivery remains beta, third-party exam-alignment claims need particular care. Use the public official outline and original exercises; avoid recalled exam questions. Direct source receipts, manual fallback boundaries, dependency versions and remaining work are documented in the [September 30 review](research/2026-09-30-pcea-30-01-deep-review.md).
+Third-party exam-alignment claims still need particular care. Use the public official outline and original exercises; avoid recalled exam questions. Direct source receipts, manual fallback boundaries, dependency versions and remaining work are documented in the [September 30 review](research/2026-09-30-pcea-30-01-deep-review.md).
 
 ### PCEI-30-01 — PCEI Certified Entry-Level AI Specialist with Python
 
 Resource details from the [PCEI-30-01 guide](../guides/PCEI-30-01-python-certified-entry-level-ai-specialist.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+#### October 29, 2026 source update
+
+The active PCEI-30-01 syllabus remains dated December 11, 2025; the linked v1.6 PDF and six-module, 36-item map still match the accepted snapshot. No replacement or objective-map change was found. The issuer's current practice messaging is internally inconsistent: it advertises a $29 test as available, but the linked product URL returned 404 and the FAQ still says Q1 2026. Treat access as unresolved and recheck the exact store route before purchase. PAI101 is still in development; PCAI's table says Coming Soon while its FAQ retains an expired quarter. The official [PCEI page](https://pythoninstitute.org/pcei), [syllabus](https://pythoninstitute.org/pcei-exam-syllabus), and [Python 3.14 docs](https://docs.python.org/3.14/) were checked; examples in this guide remain executed only on the recorded Python 3.13.14 stack.
 
 This is not a complete list and is not intended to be consumed in full. PAI101 is listed as in development, not a completed course reviewed here. Choose one fundamentals resource and a small implementation path. All hour ranges below are **author planning budgets**, not verified course durations or completed study time. Reading a public landing page or selected table of contents does not establish completion of lessons, exercises, videos or paid chapters.
 
@@ -4294,6 +4310,10 @@ See the [dated deep-review report](research/2026-09-30-pcei-30-01-deep-review.md
 ### SPLUNK-CORE-USER — Splunk Core Certified User
 
 Resource details from the [SPLUNK-CORE-USER guide](../guides/SPLUNK-CORE-USER-splunk-core-certified-user.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+#### October 29, 2026 source update
+
+The blueprint and weighted map are unchanged. Splunk now directs candidates to Cisco's Certification Tracking System while the exam page continues to identify Pearson VUE as the delivery partner; these describe program/account routing and exam delivery respectively. The 2026 FAQ says the Core User credential is not in its listed Legacy category and coursework recertification ended March 1, 2026. The overview still advertises coursework as an option, so treat the conflict as unresolved and confirm in the current tracking system before relying on a renewal route. Splunk's [Core User track PDF](https://www.splunk.com/en_us/pdfs/training/splunk-core-certified-user-track.pdf) is an official course sequence, but it is dated 2022; use it as a topic list alongside the [current free-course catalog](https://www.splunk.com/en_us/training/free-courses/overview.html), checking course availability and lab entitlement individually. No course was enrolled in. Current [Splunk Enterprise 10.4 release notes](https://help.splunk.com/en/splunk-enterprise/release-notes-and-updates/release-notes/10.4/whats-new/welcome-to-splunk-enterprise-10.4) and [Search Manual 10.4](https://help.splunk.com/en/splunk-enterprise/search/search-manual/10.4/search-overview/get-started-with-search) are versioned product references; examples are not verified in a running 10.4 deployment. The release notes say dashboard auto-refresh requires the `auto_refresh_dashboards` capability, which defaults after upgrade to `admin` and `sc_admin`; check that capability in an authorized 10.4 environment before interpreting refresh failure.
 
 This is not a complete list, and it is not meant to be consumed in full. Pick one primary path, use documentation to resolve specific behavior, and spend at least as much time searching and building objects in a lab as watching. Commercial resources are supplementary; reconcile them with the current official blueprint and product version.
 
@@ -4318,6 +4338,10 @@ No exact current MeasureUp, Whizlabs, or Pluralsight Core User practice product 
 
 Resource details from the [SPLUNK-CORE-POWER-USER guide](../guides/SPLUNK-CORE-POWER-USER-splunk-core-certified-power-user.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
+#### October 29, 2026 source update
+
+The current PDF still has 65 multiple-choice questions and ten weighted domains, with no objective-map change found. Splunk's program overview now points to Cisco's Certification Tracking System; Pearson VUE remains the delivery partner on the exam page. The 2026 change FAQ does not list Core Power User among the credentials made Legacy, but retires coursework recertification from March 1, 2026. The general overview still describes coursework, creating a live official-source conflict; check the tracking system before acting. Add the current [2026 Power User track PDF](https://www.splunk.com/en_us/pdfs/training/splunk-core-certified-power-user-track.pdf), which organizes Working with Time, Statistical Processing, Comparing Values, Result Modification, Correlation Analysis, Knowledge Objects, Field Extractions and Data Models. The [free-course catalog](https://www.splunk.com/en_us/training/free-courses/overview.html) has selected related courses, but access and lab entitlement vary by course; no interior was accessed. Current [Splunk Enterprise 10.4 release notes](https://help.splunk.com/en/splunk-enterprise/release-notes-and-updates/release-notes/10.4/whats-new/welcome-to-splunk-enterprise-10.4), [Search Manual 10.4](https://help.splunk.com/en/splunk-enterprise/search/search-manual/10.4/search-overview/get-started-with-search), and [fillnull reference](https://help.splunk.com/en/splunk-enterprise/search/spl-search-reference/10.4/search-commands/fillnull) support versioned product study, not claims of local execution.
+
 This is not a complete list, and it is not meant to be consumed in full. Pick one primary path, use product/CIM documentation to resolve exact behavior, and spend at least as much time creating and testing knowledge objects as watching. Commercial resources are supplementary; reconcile them with the current blueprint and product/CIM versions.
 
 Hour ranges are author planning budgets, not measured completion times. The linked course sheet is from 2024; the earlier September 30 parsed reading supports its historical course list, not current access or prices. This pass's Pluralsight search response was a page shell with an unrendered template, and YouTube returned only a short shell. No specific course or video was reviewed. O'Reilly and Udemy searches were blocked. Lantern's parsed landing text matched the earlier reading, but its linked articles were not reviewed. Existing 10.4 UI and CIM reference bodies were unavailable for a fresh reading; retain their version labels and verify against the installed product.
@@ -4341,6 +4365,10 @@ No exact current MeasureUp or Whizlabs Power User practice product was verified.
 ### SPLUNK-ADVANCED-POWER-USER — Splunk Core Certified Advanced Power User
 
 Resource details from the [SPLUNK-ADVANCED-POWER-USER guide](../guides/SPLUNK-ADVANCED-POWER-USER-splunk-core-certified-advanced-power-user.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+#### October 29, 2026 source update
+
+The published blueprint still specifies 70 multiple-choice questions and the same 22 domain structure. Splunk's overview routes candidate management through Cisco's Certification Tracking System while the exam page continues to name Pearson VUE for delivery. The 2026 change FAQ does not list Advanced Power User as Legacy and says coursework recertification ended March 1, 2026; the current certification overview still mentions coursework. Confirm renewal eligibility in the tracking system before acting. The official [2026 Advanced Power User track PDF](https://www.splunk.com/en_us/pdfs/training/splunk-core-certified-advanced-power-user-track.pdf) maps a sequence across search, knowledge objects, data models and dashboards; its page states the Power User credential prerequisite and no prerequisite course. Use it with the [free-course catalog](https://www.splunk.com/en_us/training/free-courses/overview.html), checking account and lab entitlement for each item. No course interior or product lab was accessed. Current [Splunk Enterprise 10.4 release notes](https://help.splunk.com/en/splunk-enterprise/release-notes-and-updates/release-notes/10.4/whats-new/welcome-to-splunk-enterprise-10.4), [deprecated/removed features](https://help.splunk.com/en/splunk-enterprise/release-notes-and-updates/release-notes/10.4/deprecated-features/deprecated-and-removed-in-version-10.4), and [Simple XML dashboard overview](https://help.splunk.com/en/splunk-enterprise/create-dashboards-and-reports/simple-xml-dashboards/10.4/get-started-with-dashboards/dashboard-overview) provide current product context; this guide does not claim a local 10.4 runtime test. Version 10.4 has removed HTML dashboards and legacy Simple XML using `version="1.0"` fails after jQuery 2 removal; verify authorized dashboards and migrate those using the old version to `version="1.1"`. Simple XML remains relevant to this blueprint.
 
 This is not a complete list, and it is not meant to be consumed in full. Pick official training or a documentation-led lab as the primary path, then add targeted alternatives. Spend more time producing and measuring searches/dashboards than watching. Reconcile all resources with the current blueprint and your product/framework version.
 

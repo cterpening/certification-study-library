@@ -6,19 +6,19 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-30
+last_verified: 2026-10-29
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-30
+upcoming_change_checked: 2026-10-29
 ---
 
 # Splunk Core Certified Advanced Power User Study Guide
 
-> **Independent AI-assisted resource — BEST-EFFORT PUBLIC-SOURCE REVIEW; HUMAN REVIEW PENDING.** On September 30, 2026, the complete indexed credential page and parsed six-page blueprint, all 104 mapped objectives, the full guide and 40 answers were reviewed. Selected official command and token references support the corrections below. Direct official retrieval failed DNS; the September 2 objective snapshot is retained with manual confirmation recorded separately. All ten Splunk labs remain unexecuted. See the [review and follow-ups](../docs/research/2026-09-30-splunk-advanced-power-user-deep-review.md). This is original learning material, not exam content.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** On October 29, 2026, the current credential page and blueprint were reopened and compared with the accepted 22-domain snapshot. Selected official 10.4 product references and learning routes were reviewed; no local Splunk runtime was available. All ten Splunk labs remain unexecuted. The September 30 review and its limits remain in the [dated review record](../docs/research/2026-09-30-splunk-advanced-power-user-deep-review.md). This is original learning material, not exam content.
 
 **Current baseline:** 22 published domains spanning advanced SPL/knowledge objects (67%) and Simple XML forms/dashboards (33%). The highest individual domains are Multivalued Fields and Drilldowns at 7% each; all domains are required.<br>
 **Exam contract:** intermediate; 70 multiple-choice questions; 60 total minutes including three minutes for the exam agreement; USD 130 per attempt; Pearson VUE delivery<br>
 **Prerequisite contract:** Splunk Core Certified Power User is the named prerequisite on the credential page and blueprint. Confirm current eligibility and credential validity before booking.<br>
-**Upcoming/lifecycle boundary:** no retirement or replacement was found in the credential page and blueprint checked September 30. This is a bounded observation, not a check of every release channel. Simple XML remains explicit blueprint scope. Framework availability and deprecations in your deployment need current verification; the existing dashboard overview and event-handler bodies could not be freshly retrieved.<br>
+**Upcoming/lifecycle boundary — VERIFY CURRENT:** No retirement or replacement was found on the current credential page and blueprint checked October 29; the 2026 program FAQ lists three other Legacy credentials. The current certification overview routes candidate management through Cisco’s Certification Tracking System, while Pearson VUE remains the exam delivery partner. The 2026 change FAQ says coursework recertification ended March 1, although the overview still mentions it; confirm renewal eligibility in the tracking system. Simple XML remains explicit blueprint scope. Splunk Enterprise 10.4 [release notes](https://help.splunk.com/en/splunk-enterprise/release-notes-and-updates/release-notes/10.4/whats-new/welcome-to-splunk-enterprise-10.4) and [removed-feature notes](https://help.splunk.com/en/splunk-enterprise/release-notes-and-updates/release-notes/10.4/deprecated-features/deprecated-and-removed-in-version-10.4) state that HTML dashboards were removed and legacy Simple XML `version="1.0"` fails; verify deployment requirements and migrate authorized labs to `version="1.1"` as appropriate.<br>
 
 ## How to use this guide
 
@@ -48,7 +48,7 @@ Use three passes:
 
 `eventstats` calculates aggregates and adds them back to each applicable event; `streamstats` calculates running/windowed results in current event order. Sort intentionally before order-dependent processing and understand memory/window/reset boundaries. `list` preserves ordered values but has limits; `values` deduplicates and orders rather than preserving event order.
 
-`eval` function families include conversions, text, comparison/conditional, informational/type/null, statistical/math, and time formatting. Use [`makeresults`](https://help.splunk.com/en/splunk-enterprise/spl-search-reference/10.0/search-commands/makeresults) to generate temporary rows without indexed input. Its default `_time` is execution time; assign fixed values when testing repeatability. The following SPL is a proposed, unexecuted type/null exercise:
+`eval` function families include conversions, text, comparison/conditional, informational/type/null, statistical/math, and time formatting. Use [`makeresults`](https://help.splunk.com/en/splunk-enterprise/search/spl-search-reference/10.4/search-commands/makeresults) to generate temporary rows without indexed input. Its default `_time` is execution time; assign fixed values when testing repeatability. The following SPL is a proposed, unexecuted type/null exercise:
 
 ```spl
 | makeresults count=4
@@ -82,7 +82,7 @@ Report acceleration builds summaries for eligible transforming reports and trans
 
 Summary indexing explicitly writes scheduled transforming results to a summary index, commonly with `collect` or `sistats`/`sitimechart`/related commands, then searches those summarized fields. Design the summary schema, `_time`, source marker, schedule, window, lateness/backfill, retention, and deduplication. Gaps undercount and overlaps double count.
 
-Data model acceleration builds `.tsidx` summaries for selected model datasets over a configured range. `datamodel` explores models. [`tstats`](https://help.splunk.com/en/splunk-enterprise/spl-search-reference/10.0/search-commands/tstats) can query indexed fields without a data model, and can run over accelerated or unaccelerated models. For a model, select its root dataset and use the required field qualification. The default `summariesonly=false` can include unsummarized data outside summary coverage, at additional cost; `true` excludes that data and does not run over an unaccelerated model. Compare coverage and results before speed.
+Data model acceleration builds `.tsidx` summaries for selected model datasets over a configured range. `datamodel` explores models. [`tstats`](https://help.splunk.com/en/splunk-enterprise/search/spl-search-reference/10.4/search-commands/tstats) can query indexed fields without a data model, and can run over accelerated or unaccelerated models. For a model, select its root dataset and use the required field qualification. The default `summariesonly=false` can include unsummarized data outside summary coverage, at additional cost; `true` excludes that data and does not run over an unaccelerated model. Compare coverage and results before speed.
 
 **Paper example, not a Splunk result:** if an intended population contains 120 matching events and only 90 are summarized, an otherwise equivalent summary-only count can cover just those 90. Faster execution does not establish a complete answer. Verify source population, time bounds, model constraints and lag in the actual deployment.
 
@@ -144,7 +144,7 @@ Drilldowns can link to searches, dashboards/forms, or external URLs, or manage t
 
 Event handlers respond to input change, search progress/done/error, page load, selection, and drilldown contexts, using actions such as set, unset, eval, and link. Contextual behavior uses conditions and tokens to choose actions. Simple XML extensions can add JavaScript/CSS behavior in supported environments, but expand security, compatibility, accessibility, and upgrade risk; prefer native supported capabilities when adequate.
 
-The versioned [Event Handler Reference](https://help.splunk.com/en/splunk-enterprise/create-dashboards-and-reports/simple-xml-dashboards/10.2/simple-xml-reference/event-handler-reference) and [token management guidance](https://help.splunk.com/en/splunk-enterprise/create-dashboards-and-reports/simple-xml-dashboards/10.4/drilldown-and-dashboard-interactivity/manage-token-values-in-the-current-dashboard) are official references; their full bodies remain next-pass reading.
+The older versioned [Event Handler Reference 10.2](https://help.splunk.com/en/splunk-enterprise/create-dashboards-and-reports/simple-xml-dashboards/10.2/simple-xml-reference/event-handler-reference) and [token management guidance](https://help.splunk.com/en/splunk-enterprise/create-dashboards-and-reports/simple-xml-dashboards/10.4/drilldown-and-dashboard-interactivity/manage-token-values-in-the-current-dashboard) are official references; their full bodies remain next-pass reading.
 
 > **Related item:** Dashboard Studio also supports tokens and event handlers through a different JSON model. Learn it for current work where appropriate, but keep framework syntax separate from the blueprint's explicit Simple XML contract.
 
@@ -296,6 +296,10 @@ Contributors can add fixes with the product version/framework, minimal public or
 - [ ] My required Power User credential is current, and I rechecked the exam/framework contract.
 
 ## Places to learn
+
+### October 29, 2026 source update
+
+The published blueprint still specifies 70 multiple-choice questions and the same 22 domain structure. Splunk's overview routes candidate management through Cisco's Certification Tracking System while the exam page continues to name Pearson VUE for delivery. The 2026 change FAQ does not list Advanced Power User as Legacy and says coursework recertification ended March 1, 2026; the current certification overview still mentions coursework. Confirm renewal eligibility in the tracking system before acting. The official [2026 Advanced Power User track PDF](https://www.splunk.com/en_us/pdfs/training/splunk-core-certified-advanced-power-user-track.pdf) maps a sequence across search, knowledge objects, data models and dashboards; its page states the Power User credential prerequisite and no prerequisite course. Use it with the [free-course catalog](https://www.splunk.com/en_us/training/free-courses/overview.html), checking account and lab entitlement for each item. No course interior or product lab was accessed. Current [Splunk Enterprise 10.4 release notes](https://help.splunk.com/en/splunk-enterprise/release-notes-and-updates/release-notes/10.4/whats-new/welcome-to-splunk-enterprise-10.4), [deprecated/removed features](https://help.splunk.com/en/splunk-enterprise/release-notes-and-updates/release-notes/10.4/deprecated-features/deprecated-and-removed-in-version-10.4), and [Simple XML dashboard overview](https://help.splunk.com/en/splunk-enterprise/create-dashboards-and-reports/simple-xml-dashboards/10.4/get-started-with-dashboards/dashboard-overview) provide current product context; this guide does not claim a local 10.4 runtime test. Version 10.4 has removed HTML dashboards and legacy Simple XML using `version="1.0"` fails after jQuery 2 removal; verify authorized dashboards and migrate those using the old version to `version="1.1"`. Simple XML remains relevant to this blueprint.
 
 This is not a complete list, and it is not meant to be consumed in full. Pick official training or a documentation-led lab as the primary path, then add targeted alternatives. Spend more time producing and measuring searches/dashboards than watching. Reconcile all resources with the current blueprint and your product/framework version.
 

@@ -34,6 +34,13 @@ Passing this workflow changes the public label to **Sources + objectives checked
 
 | Exam | Reviewed | Blueprint snapshot | External-link evidence | Result |
 |---|---|---|---|---|
+| PCAT-31-01 | October 29, 2026 | Accepted snapshot retained; no objective-map change; see group-17 report | 22 links: 22 reachable, 0 blocked, 0 missing/error | Passed; human/product review pending |
+| PCES-30-01 | October 29, 2026 | Accepted snapshot retained; no objective-map change; see group-17 report | 36 links: 34 reachable, 2 blocked, 0 missing/error | Passed; human/product review pending |
+| PCEI-30-01 | October 29, 2026 | Accepted snapshot retained; no objective-map change; see group-17 report | 27 links: 25 reachable, 1 blocked, 1 missing/error | Blocked: PCEI practice destination returns 404; issuer conflict disclosed |
+| PCEA-30-01 | October 29, 2026 | Accepted snapshot retained; no objective-map change; see group-17 report | 30 links: 29 reachable, 1 blocked, 0 missing/error | Passed; human/product review pending |
+| SPLUNK-CORE-USER | October 29, 2026 | Accepted snapshot retained; no objective-map change; see group-17 report | 21 links: 9 reachable, 12 blocked, 0 missing/error | Passed; human/product review pending |
+| SPLUNK-CORE-POWER-USER | October 29, 2026 | Accepted snapshot retained; no objective-map change; see group-17 report | 25 links: 10 reachable, 15 blocked, 0 missing/error | Passed; human/product review pending |
+| SPLUNK-ADVANCED-POWER-USER | October 29, 2026 | Accepted snapshot retained; no objective-map change; see group-17 report | 21 links: 7 reachable, 14 blocked, 0 missing/error | Passed; human/product review pending |
 | MO-310 | October 28, 2026 | Current detailed outline reconciled; see group-05 report | 27 registered links: 27 reachable, 0 access-blocked, 0 missing/error | Passed; human/product review pending |
 | MO-211 | October 28, 2026 | Current detailed outline reconciled; see group-05 report | 32 registered links: 32 reachable, 0 access-blocked, 0 missing/error | Passed; human/product review pending |
 | MO-210 | October 28, 2026 | Current detailed outline reconciled; see group-05 report | 32 registered links: 32 reachable, 0 access-blocked, 0 missing/error | Passed; human/product review pending |

@@ -6,20 +6,20 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-30
+last_verified: 2026-10-29
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-30
+upcoming_change_checked: 2026-10-29
 ---
 
 # Splunk Core Certified User Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The September 30, 2026 best-effort review read the complete indexed credential page and three-page blueprint, mapped all 40 objectives, and checked selected public documentation. Direct retrieval and the objective monitor encountered DNS errors; the historical objective snapshot is retained. The [official certification page](https://www.splunk.com/en_us/training/certification-track/splunk-core-certified-user.html) and [test blueprint](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-user.pdf) are authoritative. Source-reading limits and unexecuted labs are explicit below; these original explanations and checks are not exam items.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The October 29, 2026 review opened the current official credential page and three-page blueprint, mapped all 40 objectives, and checked selected versioned documentation. The blueprint map remains unchanged. The [official certification page](https://www.splunk.com/en_us/training/certification-track/splunk-core-certified-user.html) and [test blueprint](https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-user.pdf) are authoritative. Source-reading limits and unexecuted labs are explicit below; these original explanations and checks are not exam items.
 
 **Current baseline:** Splunk Basics (5%); Basic Searching (22%); Using Fields in Searches (20%); Search Language Fundamentals (15%); Using Basic Transforming Commands (15%); Creating Reports and Dashboards (12%); Creating and Using Lookups (6%); Creating Scheduled Reports and Alerts (5%). The blueprint says related topics may appear and may change without notice.<br>
 **Exam contract:** entry-level; 60 multiple-choice questions; 60 total minutes including three minutes for the exam agreement; USD 130 per attempt; Pearson VUE delivery<br>
 **Prerequisite contract:** none. This is an optional entry point intended for candidates with little or no Splunk experience.<br>
-**Credential lifecycle — VERIFY CURRENT:** The [candidate handbook](https://www.splunk.com/en_us/pdfs/training/splunk-certification-candidate-handbook.pdf), selected retake and renewal sections, describes a three-year cycle and requires a qualifying renewal retake in the final year. A previously passed exam cannot simply be retaken outside approved recertification. Confirm your own expiration and eligible path before booking; this review did not inspect an account or all handbook sections.<br>
-**Upcoming change:** No retirement, replacement or new Core User blueprint was found in the credential page and blueprint read on September 30. This is a bounded source check, not proof that no announcement exists elsewhere. Practice classic SPL: the blueprint's objective 4.4 literally says “tables,” while the command is `table`; preserve that source wording when comparing snapshots. SPL2 is a separate syntax contract.<br>
+**Credential lifecycle — VERIFY CURRENT:** Splunk's current overview routes exam administration through Cisco's Certification Tracking System. The [2026 certification-change FAQ](https://www.splunk.com/en_us/pdfs/training/splunk-certification-changes.pdf) says coursework-based recertification ended March 1, 2026; it describes renewal by retaking the same exam during its final year or passing a higher-level exam in the same track. The overview still mentions coursework, so the official pages conflict; confirm the current path in the tracking system before booking. A three-year validity cycle is still published in the [FAQ](https://www.splunk.com/en_us/training/faq.html). No account was inspected.<br>
+**Upcoming change:** The current overview lists Core User, and the 2026 change FAQ's legacy list names three other credentials, not Core User. No replacement or new Core User blueprint was found in the current page and PDF checked October 29. This is bounded evidence, not proof that no announcement exists elsewhere. Practice classic SPL: the blueprint's objective 4.4 literally says “tables,” while the command is `table`; preserve that source wording when comparing snapshots. SPL2 is a separate syntax contract.<br>
 
 ## How to use this guide
 
@@ -98,7 +98,7 @@ A running search is a job with lifecycle, time range, progress, result count, an
 
 Saving search results (for example export) preserves a point-in-time result; saving the search as a report preserves reusable search logic and presentation settings. Exports can contain sensitive raw fields and are detached from later source corrections. Apply minimum necessary fields, access controls, approved location, and retention.
 
-Splunk's current [Search Tutorial](https://help.splunk.com/en/splunk-enterprise/search/search-tutorial/10.0/introduction/about-the-search-tutorial) provides a safe, connected workflow across these objectives.
+The versioned [Splunk Search Tutorial 10.0](https://help.splunk.com/en/splunk-enterprise/search/search-tutorial/10.0/introduction/about-the-search-tutorial) provides a safe, connected workflow. For current command behavior, use the [Splunk Enterprise 10.4 Search Manual](https://help.splunk.com/en/splunk-enterprise/search/search-manual/10.4/search-overview/get-started-with-search).
 
 ## 3. Using fields in searches — 20%
 
@@ -139,11 +139,11 @@ index=web status>=400 earliest=-1h
 | table _time client status uri_path
 ```
 
-Search order changes meaning: sorting before `dedup` deliberately chooses which representative survives. The [SPL Search Reference](https://help.splunk.com/en/splunk-enterprise/spl-search-reference/10.0/introduction/welcome-to-the-search-reference) is authoritative for command syntax and limitations.
+Search order changes meaning: sorting before `dedup` deliberately chooses which representative survives. The [Splunk Enterprise 10.4 Search Reference](https://help.splunk.com/en/splunk-enterprise/search/spl-search-reference/10.4/introduction/welcome-to-the-search-reference) is the current versioned reference for command syntax and limitations.
 
 Here the intended representative is the latest error event per populated client IP. A final sort alone cannot repair an earlier selection. Tied timestamps need an agreed secondary key if reproducibility matters. This is a source-checked example, not an executed Splunk search.
 
-The [SPL sort reference, version 10.2](https://help.splunk.com/en/splunk-enterprise/search/spl-search-reference/10.2/search-commands/sort) documents a default cap of 10,000 results. `sort 0` removes that cap but can increase resource use; use it only on a deliberately bounded lab search. The [SPL dedup reference, Cloud 10.4.2604](https://help.splunk.com/en/splunk-cloud-platform/spl-search-reference/10.4.2604/search-commands/dedup) documents that missing key fields are dropped by default. `keepempty=true` retains every event with a missing key; it does not collapse all missing clients into one representative. These are the specific document versions checked, not a requirement to upgrade your lab.
+The [Splunk Enterprise 10.4 sort reference](https://help.splunk.com/en/splunk-enterprise/search/spl-search-reference/10.4/search-commands/sort) documents a default cap of 10,000 results. `sort 0` removes that cap but can increase resource use; use it only on a deliberately bounded lab search. The [SPL dedup reference, Cloud 10.4.2604](https://help.splunk.com/en/splunk-cloud-platform/spl-search-reference/10.4.2604/search-commands/dedup) documents that missing key fields are dropped by default. `keepempty=true` retains every event with a missing key; it does not collapse all missing clients into one representative. These are the specific document versions checked, not a requirement to upgrade your lab.
 
 ### Predict the result before running it
 
@@ -243,7 +243,7 @@ Turn an error report into a schedule and a test alert. Deliberately model schedu
 | Lab 7: reports and dashboards | Framework, saved report/panel, time behavior and tested access | Describe the smallest working reproduction and permissions |
 | Lab 8: lookup, schedule and alert | Definition/file, matched/unmatched rows, schedule window, fired-instance and action evidence | Distinguish a configured object from a successful run or delivery |
 
-**More research needed — next pass:** refresh the unavailable 10.4 UI/reporting/lookup pages, confirm current training access and the unverified commercial book listing, rerun the objective monitor, and execute the eight labs in an approved environment. The [Search Tutorial introduction](https://help.splunk.com/en/splunk-enterprise/search/search-tutorial/10.0/introduction/about-the-search-tutorial) explains its separate tutorial dataset and sequential parts; linked lessons were not completed here. Keep error text, expected versus observed results and product version with community fixes. Independent human content review remains pending.
+**More research needed — next pass:** refresh the unavailable 10.4 UI/reporting/lookup pages, confirm current training access and the unverified commercial book listing, rerun the objective monitor, and execute the eight labs in an approved environment. The versioned [Search Tutorial 10.0 introduction](https://help.splunk.com/en/splunk-enterprise/search/search-tutorial/10.0/introduction/about-the-search-tutorial) explains its separate tutorial dataset and sequential parts; linked lessons were not completed here. Keep error text, expected versus observed results and product version with community fixes. Independent human content review remains pending.
 
 ## Original readiness checks
 
@@ -345,6 +345,10 @@ Turn an error report into a schedule and a test alert. Deliberately model schedu
 - [ ] I rechecked the official Core User page, blueprint, handbook, and policies.
 
 ## Places to learn
+
+### October 29, 2026 source update
+
+The blueprint and weighted map are unchanged. Splunk now directs candidates to Cisco's Certification Tracking System while the exam page continues to identify Pearson VUE as the delivery partner; these describe program/account routing and exam delivery respectively. The 2026 FAQ says the Core User credential is not in its listed Legacy category and coursework recertification ended March 1, 2026. The overview still advertises coursework as an option, so treat the conflict as unresolved and confirm in the current tracking system before relying on a renewal route. Splunk's [Core User track PDF](https://www.splunk.com/en_us/pdfs/training/splunk-core-certified-user-track.pdf) is an official course sequence, but it is dated 2022; use it as a topic list alongside the [current free-course catalog](https://www.splunk.com/en_us/training/free-courses/overview.html), checking course availability and lab entitlement individually. No course was enrolled in. Current [Splunk Enterprise 10.4 release notes](https://help.splunk.com/en/splunk-enterprise/release-notes-and-updates/release-notes/10.4/whats-new/welcome-to-splunk-enterprise-10.4) and [Search Manual 10.4](https://help.splunk.com/en/splunk-enterprise/search/search-manual/10.4/search-overview/get-started-with-search) are versioned product references; examples are not verified in a running 10.4 deployment. The release notes say dashboard auto-refresh requires the `auto_refresh_dashboards` capability, which defaults after upgrade to `admin` and `sc_admin`; check that capability in an authorized 10.4 environment before interpreting refresh failure.
 
 This is not a complete list, and it is not meant to be consumed in full. Pick one primary path, use documentation to resolve specific behavior, and spend at least as much time searching and building objects in a lab as watching. Commercial resources are supplementary; reconcile them with the current official blueprint and product version.
 
