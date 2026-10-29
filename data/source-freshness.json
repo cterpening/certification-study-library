@@ -57003,6 +57003,560 @@
     "no_action_findings": 0,
     "blocked_findings": 1
   }
-}
+},
+    {
+      "id": "freshness-2026-10-28-nonms-g08",
+      "title": "HashiCorp and Databricks non-Microsoft refresh group 08",
+      "rubric_version": 1,
+      "created_on": "2026-10-28",
+      "completed_on": "2026-10-28",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Eighth group of ten from the frozen eligible queue after Groups 1–7.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "refresh-coordinator",
+          "official-source-review"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "TERRAFORM-ASSOCIATE-004",
+        "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL",
+        "VAULT-ASSOCIATE-003",
+        "VAULT-OPERATIONS-PROFESSIONAL",
+        "DATABRICKS-DATA-ANALYST-ASSOCIATE",
+        "DATABRICKS-DATA-ENGINEER-ASSOCIATE",
+        "DATABRICKS-DATA-ENGINEER-PROFESSIONAL",
+        "DATABRICKS-MACHINE-LEARNING-ASSOCIATE",
+        "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL",
+        "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE"
+      ],
+      "results": [
+        {
+          "exam_code": "TERRAFORM-ASSOCIATE-004",
+          "vendor_id": "hashicorp",
+          "guide_path": "guides/TERRAFORM-ASSOCIATE-004-hashicorp-terraform-associate.md",
+          "baseline_sha256": "3f36ac0515c5e44e8013ece9f06ddcebd60d29f83ac976ffbbb3bfe57720fd2a",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            }
+          },
+          "findings": [
+            {
+              "id": "g08-terraform-associate-004-applied",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "updated-source",
+              "title": "Terraform Associate 004 current contract and objective list",
+              "url": "https://developer.hashicorp.com/certifications/terraform-associate",
+              "source_type": "credential-page",
+              "affected_exams": [
+                "TERRAFORM-ASSOCIATE-004"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The current credential page lists Terraform 1.12; the 004 content list still provides the same eight domains and detailed tasks. HCP Azure DevOps token support is recorded as dated platform context.",
+              "recommendation": "Keep the published objective snapshot authoritative; present this current information only within its version and availability boundary.",
+              "disposition": "applied",
+              "source_id": "hashicorp-terraform-associate-credential-current",
+              "resolution": "Added a dated guide note and registered the first-party source; scope and release boundaries are explicit."
+            }
+          ],
+          "notes": "The real naming discrepancy is resolved without inventing a public exam code or treating the rename as an objective change."
+        },
+        {
+          "exam_code": "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL",
+          "vendor_id": "hashicorp",
+          "guide_path": "guides/TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL-hashicorp-terraform-professional.md",
+          "baseline_sha256": "1f83cfa1fda87a0890e5e1356719660d64a8df82be9777716ff643e5c1d9404e",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            }
+          },
+          "findings": [
+            {
+              "id": "g08-terraform-authoring-operations-professional-applied",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "updated-source",
+              "title": "Terraform Advanced rename and provider versions",
+              "url": "https://developer.hashicorp.com/certifications/terraform-advanced",
+              "source_type": "credential-page",
+              "affected_exams": [
+                "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The current page offers AWS and Azure provider exam variants for one Advanced credential. The prior Azure-launch note is no longer upcoming; the current page retains the Terraform 1.6 contract.",
+              "recommendation": "Keep the published objective snapshot authoritative; present this current information only within its version and availability boundary.",
+              "disposition": "applied",
+              "source_id": "hashicorp-terraform-advanced-credential-current",
+              "resolution": "Added a dated guide note and registered the first-party source; scope and release boundaries are explicit."
+            }
+          ],
+          "notes": "The real naming discrepancy is resolved without inventing a public exam code or treating the rename as an objective change."
+        },
+        {
+          "exam_code": "VAULT-ASSOCIATE-003",
+          "vendor_id": "hashicorp",
+          "guide_path": "guides/VAULT-ASSOCIATE-003-hashicorp-vault-associate.md",
+          "baseline_sha256": "81516de9de30bce1cfe36d3c3b7420d3f933be168145f9ea183f207700f17f38",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            }
+          },
+          "findings": [
+            {
+              "id": "g08-vault-associate-003-applied",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "updated-source",
+              "title": "Vault Associate tested version and objective status",
+              "url": "https://developer.hashicorp.com/certifications/vault-associate",
+              "source_type": "credential-page",
+              "affected_exams": [
+                "VAULT-ASSOCIATE-003"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The public credential page lists Vault 1.19 and the nine mapped objective domains; direct comparison found the 40 detailed tasks represented in the guide.",
+              "recommendation": "Keep the published objective snapshot authoritative; present this current information only within its version and availability boundary.",
+              "disposition": "applied",
+              "source_id": "hashicorp-vault-associate-credential-current",
+              "resolution": "Added a dated guide note and registered the first-party source; scope and release boundaries are explicit."
+            }
+          ],
+          "notes": "The real naming discrepancy is resolved without inventing a public exam code or treating the rename as an objective change."
+        },
+        {
+          "exam_code": "VAULT-OPERATIONS-PROFESSIONAL",
+          "vendor_id": "hashicorp",
+          "guide_path": "guides/VAULT-OPERATIONS-PROFESSIONAL-hashicorp-vault-operations-professional.md",
+          "baseline_sha256": "b08f9e01d45b52a5333069a773be1e85e4c8aeee023c6fdc4217e40460428995",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            }
+          },
+          "findings": [
+            {
+              "id": "g08-vault-operations-professional-applied",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "updated-source",
+              "title": "Vault Operations Advanced credential rename",
+              "url": "https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-update",
+              "source_type": "credential-page",
+              "affected_exams": [
+                "VAULT-OPERATIONS-PROFESSIONAL"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "HashiCorp has completed the Professional-to-Advanced rename; scenario content and format remain unchanged. Vault 2.x release notes are product context; the exam page still specifies Vault 1.16.",
+              "recommendation": "Keep the published objective snapshot authoritative; present this current information only within its version and availability boundary.",
+              "disposition": "applied",
+              "source_id": "hashicorp-certification-advanced-rename",
+              "resolution": "Added a dated guide note and registered the first-party source; scope and release boundaries are explicit."
+            }
+          ],
+          "notes": "The real naming discrepancy is resolved without inventing a public exam code or treating the rename as an objective change."
+        },
+        {
+          "exam_code": "DATABRICKS-DATA-ANALYST-ASSOCIATE",
+          "vendor_id": "databricks",
+          "guide_path": "guides/DATABRICKS-DATA-ANALYST-ASSOCIATE-databricks-data-analyst-associate.md",
+          "baseline_sha256": "52f996c753afcb91e56d5633beb6125683900e0b7cf8129d3817bc4d32ab0c1a",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            }
+          },
+          "findings": [
+            {
+              "id": "g08-databricks-data-analyst-associate-applied",
+              "check": "official_release_channels",
+              "category": "updated-source",
+              "title": "October AI Search and data-platform updates",
+              "url": "https://docs.databricks.com/aws/en/release-notes/product/2026/october",
+              "source_type": "release-notes",
+              "affected_exams": [
+                "DATABRICKS-DATA-ANALYST-ASSOCIATE"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "AI Search now supports streaming tables, materialized views, and managed Iceberg V3 sources; the October feature feed is staged and does not revise the exam guide.",
+              "recommendation": "Keep the published objective snapshot authoritative; present this current information only within its version and availability boundary.",
+              "disposition": "applied",
+              "source_id": "databricks-product-release-notes-oct-2026",
+              "resolution": "Added a dated guide note and registered the first-party source; scope and release boundaries are explicit."
+            }
+          ],
+          "notes": "All raw alerts or supporting-source access limits are bounded by accessible current first-party evidence."
+        },
+        {
+          "exam_code": "DATABRICKS-DATA-ENGINEER-ASSOCIATE",
+          "vendor_id": "databricks",
+          "guide_path": "guides/DATABRICKS-DATA-ENGINEER-ASSOCIATE-databricks-data-engineer-associate.md",
+          "baseline_sha256": "9b9422fe8728fec9957a49c0e40ca1509a5452b88bd72940cf224544eb366d8e",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            }
+          },
+          "findings": [
+            {
+              "id": "g08-databricks-data-engineer-associate-applied",
+              "check": "official_release_channels",
+              "category": "updated-source",
+              "title": "October Lakeflow orchestration updates",
+              "url": "https://docs.databricks.com/aws/en/release-notes/product/2026/october",
+              "source_type": "release-notes",
+              "affected_exams": [
+                "DATABRICKS-DATA-ENGINEER-ASSOCIATE"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "October releases add group run-as identity and GA pipeline system tables; multi-trigger Lakeflow Jobs is beta. These additions do not revise the May 4 exam outline.",
+              "recommendation": "Keep the published objective snapshot authoritative; present this current information only within its version and availability boundary.",
+              "disposition": "applied",
+              "source_id": "databricks-product-release-notes-oct-2026",
+              "resolution": "Added a dated guide note and registered the first-party source; scope and release boundaries are explicit."
+            }
+          ],
+          "notes": "All raw alerts or supporting-source access limits are bounded by accessible current first-party evidence."
+        },
+        {
+          "exam_code": "DATABRICKS-DATA-ENGINEER-PROFESSIONAL",
+          "vendor_id": "databricks",
+          "guide_path": "guides/DATABRICKS-DATA-ENGINEER-PROFESSIONAL-databricks-data-engineer-professional.md",
+          "baseline_sha256": "a4e077db9a561ed4ca7172f21271bc534be9358e80faa4d5c63c4273ca59e1f8",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            }
+          },
+          "findings": [
+            {
+              "id": "g08-databricks-data-engineer-professional-applied",
+              "check": "official_release_channels",
+              "category": "updated-source",
+              "title": "Managed table transactions and pipeline telemetry",
+              "url": "https://docs.databricks.com/aws/en/release-notes/product/2026/october",
+              "source_type": "release-notes",
+              "affected_exams": [
+                "DATABRICKS-DATA-ENGINEER-PROFESSIONAL"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Atomic transactions now support managed Delta and Iceberg tables when catalog commits are enabled; Lakeflow pipeline system tables are GA. The November 2025 exam guide remains current.",
+              "recommendation": "Keep the published objective snapshot authoritative; present this current information only within its version and availability boundary.",
+              "disposition": "applied",
+              "source_id": "databricks-product-release-notes-oct-2026",
+              "resolution": "Added a dated guide note and registered the first-party source; scope and release boundaries are explicit."
+            }
+          ],
+          "notes": "All raw alerts or supporting-source access limits are bounded by accessible current first-party evidence."
+        },
+        {
+          "exam_code": "DATABRICKS-MACHINE-LEARNING-ASSOCIATE",
+          "vendor_id": "databricks",
+          "guide_path": "guides/DATABRICKS-MACHINE-LEARNING-ASSOCIATE-databricks-machine-learning-associate.md",
+          "baseline_sha256": "873e6ae0480f805f1ac8ed841d20105c65569863a250ec62e752fa1df0bff9c3",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            }
+          },
+          "findings": [
+            {
+              "id": "g08-databricks-machine-learning-associate-applied",
+              "check": "official_release_channels",
+              "category": "updated-source",
+              "title": "AI Runtime managed GPU training GA",
+              "url": "https://www.databricks.com/blog/ai-runtime-generally-available",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "DATABRICKS-MACHINE-LEARNING-ASSOCIATE"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "AI Runtime reached GA Oct 21 with governed managed GPU training, MLflow observability and Lakeflow integration; this is dated product context, not a March 2025 outline change.",
+              "recommendation": "Keep the published objective snapshot authoritative; present this current information only within its version and availability boundary.",
+              "disposition": "applied",
+              "source_id": "databricks-ai-runtime-ga-announcement",
+              "resolution": "Added a dated guide note and registered the first-party source; scope and release boundaries are explicit."
+            }
+          ],
+          "notes": "All raw alerts or supporting-source access limits are bounded by accessible current first-party evidence."
+        },
+        {
+          "exam_code": "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL",
+          "vendor_id": "databricks",
+          "guide_path": "guides/DATABRICKS-MACHINE-LEARNING-PROFESSIONAL-databricks-machine-learning-professional.md",
+          "baseline_sha256": "41386ad7f6f3bb6415a97a3037267710b7d49ec9eda22a34b7b40aaed3b39c70",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            }
+          },
+          "findings": [
+            {
+              "id": "g08-databricks-machine-learning-professional-applied",
+              "check": "official_release_channels",
+              "category": "updated-source",
+              "title": "AI Runtime and prompt-registry evaluation workflow",
+              "url": "https://www.databricks.com/blog/spot-fixes-measured-gains-improving-document-extraction-accuracy-aiextract-and-mlflow-prompt",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The Oct 27 engineering post demonstrates versioning prompts and schemas in MLflow Prompt Registry and evaluating candidate changes against fixed human-reviewed data before promotion or rollback.",
+              "recommendation": "Keep the published objective snapshot authoritative; present this current information only within its version and availability boundary.",
+              "disposition": "applied",
+              "source_id": "databricks-ai-extract-prompt-registry-blog",
+              "resolution": "Added a dated guide note and registered the first-party source; scope and release boundaries are explicit."
+            }
+          ],
+          "notes": "All raw alerts or supporting-source access limits are bounded by accessible current first-party evidence."
+        },
+        {
+          "exam_code": "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE",
+          "vendor_id": "databricks",
+          "guide_path": "guides/DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE-databricks-generative-ai-engineer-associate.md",
+          "baseline_sha256": "401a2bf605222c9f76e29334a75e60c3dbe3f007bb68280bb9d73495d90cd346",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Current first-party objective, credential and lifecycle pages were checked. Applicable October release channels and current official learning resources were reviewed; product context remains separate from exam scope."
+            }
+          },
+          "findings": [
+            {
+              "id": "g08-databricks-generative-ai-engineer-associate-applied",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "updated-source",
+              "title": "Live GenAI Engineer domains and assessment",
+              "url": "https://www.databricks.com/learn/certification/genai-engineer-associate",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "All six weights and assessment terms remain; the live page now calls Domain 4 Assembling and Deploying Apps. The March 2026 detailed guide remains the topic-level authority.",
+              "recommendation": "Keep the published objective snapshot authoritative; present this current information only within its version and availability boundary.",
+              "disposition": "applied",
+              "source_id": "databricks-genai-blueprint",
+              "resolution": "Added a dated guide note and registered the first-party source; scope and release boundaries are explicit."
+            }
+          ],
+          "notes": "All raw alerts or supporting-source access limits are bounded by accessible current first-party evidence."
+        }
+      ],
+      "summary": {
+        "exam_count": 10,
+        "current": 10,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 10,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    }
 ]
 }

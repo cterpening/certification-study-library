@@ -6,14 +6,14 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-28
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-28
+upcoming_change_checked: 2026-10-28
 ---
 
 # Databricks Certified Data Engineer Associate Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed on September 28, 2026 against all 33 detailed PDF objectives and seven weighted domains. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#databricks-data-engineer-associate-coverage-record). The [official certification page](https://www.databricks.com/learn/certification/data-engineer-associate) and its linked exam guide are authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed on October 28, 2026 against all 33 detailed PDF objectives and seven weighted domains. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#databricks-data-engineer-associate-coverage-record). The [official certification page](https://www.databricks.com/learn/certification/data-engineer-associate) and its linked exam guide are authoritative.
 
 **Library identifier:** `DATABRICKS-DATA-ENGINEER-ASSOCIATE`; Databricks does not publish a short exam code on the official page checked.<br>
 **Current baseline:** Detailed official exam guide effective May 4, 2026, with 33 objective bullets; live weighted coverage page and linked PDF checked September 28, 2026.<br>
@@ -24,6 +24,10 @@ upcoming_change_checked: 2026-09-28
 **Code convention:** The official page says SQL is used where possible and Python otherwise.
 
 **VERIFY CURRENT — governance wording:** The PDF's Domain 7 includes `DENY`, but the [SQL DENY reference](https://docs.databricks.com/aws/en/sql/language-manual/security-deny) limits that statement to `hive_metastore`. A separate [Unity Catalog ABAC DENY beta](https://docs.databricks.com/aws/en/data-governance/unity-catalog/abac/deny-policies) supports `MANAGE_ACCESS_CONTROL`, not general `DENY SELECT`. Preserve the objective and distinguish these mechanisms; the library will recheck the unclear exam scope October 5. See the [review evidence](../docs/research/2026-09-28-databricks-data-engineer-associate-deep-review.md).
+
+## Living-guide watch — October 28, 2026
+
+**Current platform context:** Use the official May 4, 2026 Associate exam-guide version. October Databricks releases add up to five independent Lakeflow Jobs triggers in beta, allow pipeline run-as identity to be an account group, and make Lakeflow pipeline system tables generally available. These updates support orchestration, identity and monitoring practice; they do not independently change the published exam objectives. See the [current certification page](https://www.databricks.com/learn/certification/data-engineer-associate) and [October release notes](https://docs.databricks.com/aws/en/release-notes/product/2026/october).
 
 ## How to use this guide
 
@@ -447,7 +451,7 @@ This is not a complete list and is not meant to be consumed in full. Pick one pr
 |---|---|---:|
 | [Official certification page](https://www.databricks.com/learn/certification/data-engineer-associate) and [May 4, 2026 exam guide](https://www.databricks.com/sites/default/files/2026-05/databricks-certified-data-engineer-associate-exam-guide-may-2026-000.pdf) | Public | 1–2 hr to map objectives and recheck details |
 | Six self-paced courses named in the official PDF through [Databricks Academy](https://customer-academy.databricks.com/) | Free account or customer/partner Academy entitlement; catalog visibility varies | 18–30 hr planning estimate including labs; vendor does not expose a stable public total |
-| [Get Started with Databricks for Data Engineering](https://customer-academy.databricks.com/learn/courses/2469/get-started-with-databricks-for-data-engineering/lessons) | Free account; current hands-on onboarding | 4–8 hr planning estimate for demos/labs; no reliable public duration displayed |
+| [Databricks Data Engineering learning paths](https://community.databricks.com/t5/learning-paths/ct-p/databricks-learning-paths) | Free public learning-path catalog; course and lab entitlements vary | Select courses by objective; confirm current Academy access and duration |
 | [Databricks Free Edition](https://www.databricks.com/learn/free-edition) plus the eight labs in this guide | Free account; product limits apply | 12–24 hr |
 | [Databricks documentation](https://docs.databricks.com/aws/en/introduction/) | Public; select only objective gaps | 8–20 hr selected reading and implementation |
 | [Databricks Certified Data Engineer Associate Study Guide](https://www.oreilly.com/library/view/databricks-certified-data/9781098166823/) by Derar Alhussein | O’Reilly subscription or purchase; February 2025 baseline | Previously recorded 9 hr 49 min provider estimate, not reverified because access was blocked; allow 15–25 hr with labs and May 2026 gap check |

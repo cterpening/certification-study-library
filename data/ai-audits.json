@@ -22523,6 +22523,586 @@
     "open_findings": 2,
     "closed_findings": 0
   }
-}
+},
+    {
+      "id": "nonms-refresh-2026-10-28-group-08",
+      "title": "HashiCorp and Databricks non-Microsoft refresh group 08",
+      "rubric_version": 2,
+      "created_on": "2026-10-28",
+      "completed_on": "2026-10-28",
+      "status": "completed",
+      "audit_mode": "read-only",
+      "selection_method": "Same-context final read-only audit after group 8.",
+      "rubric_path": "docs/AI-AUDIT.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "label": "refresh-coordinator",
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "TERRAFORM-ASSOCIATE-004",
+        "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL",
+        "VAULT-ASSOCIATE-003",
+        "VAULT-OPERATIONS-PROFESSIONAL",
+        "DATABRICKS-DATA-ANALYST-ASSOCIATE",
+        "DATABRICKS-DATA-ENGINEER-ASSOCIATE",
+        "DATABRICKS-DATA-ENGINEER-PROFESSIONAL",
+        "DATABRICKS-MACHINE-LEARNING-ASSOCIATE",
+        "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL",
+        "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE"
+      ],
+      "results": [
+        {
+          "exam_code": "TERRAFORM-ASSOCIATE-004",
+          "vendor_id": "hashicorp",
+          "guide_path": "guides/TERRAFORM-ASSOCIATE-004-hashicorp-terraform-associate.md",
+          "guide_content_sha256": "3f36ac0515c5e44e8013ece9f06ddcebd60d29f83ac976ffbbb3bfe57720fd2a",
+          "blueprint_snapshot_path": "data/objective-snapshots/terraform-associate-004-official-objectives.txt",
+          "blueprint_snapshot_sha256": "41390d0d2fbb8b1cfbfb7349ada41f4cf13dc65815827b802ad082fd2c1bf53b",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The nine detailed unweighted Vault 1.16 Associate domains remain accurately named and mapped; renamed credentials and internal identifiers are explicitly distinguished."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Substantive coverage of authentication, policies, tokens, leases, secrets engines, transit, seal/storage, deployment, replication, and workload access is findable across explanations, scenarios, practice, and readiness material."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Passed source review vault-associate-003-2026-08-31-source-validation supplies the evidence baseline; 19 sources are healthy, with outside material labeled supplementary."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Assessment format, weights or their absence, lifecycle, maintenance, prerequisites, and unpublished details remain correctly separated without unsupported claims."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The treatment of authentication, policies, tokens, leases, secrets engines, transit, seal/storage, deployment, replication, and workload access is internally consistent and connects design or implementation choices to evidence, failure handling, and rollback."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Vault 1.16 exam scope is separated from current releases, HCP and self-managed responsibilities, editions, interfaces, and the renamed Advanced follow-on."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Practice work includes 6 named labs or exercises and uses authorized or synthetic contexts, bounded privileges and changes, validation, rollback, cleanup, or tabletop substitutes."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks require explanation and operational judgment without recalled, reconstructed, or third-party test-bank material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The passed source record and exact guide and objective hashes bind this result; access and naming caveats remain visible, and no human review is claimed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Normalized long-line comparison found only benign shared disclosure, resource, and integrity language; no irrelevant vendor leakage or suspicious substantive overlap was found."
+            }
+          },
+          "findings": [],
+          "notes": "Same-context final read-only check. Current public objective/credential evidence and the accepted snapshot were compared; dated product context is scoped separately. HashiCorp monitor-parser limits for Terraform Associate and Vault Associate were resolved by direct review of the official pages. No human or independent review is claimed."
+        },
+        {
+          "exam_code": "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL",
+          "vendor_id": "hashicorp",
+          "guide_path": "guides/TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL-hashicorp-terraform-professional.md",
+          "guide_content_sha256": "1f83cfa1fda87a0890e5e1356719660d64a8df82be9777716ff643e5c1d9404e",
+          "blueprint_snapshot_path": "data/objective-snapshots/terraform-authoring-operations-professional-official-objectives.txt",
+          "blueprint_snapshot_sha256": "bffbb1760b01378fc12777096f010256534f6177a4247520f6a0db1c08c56c68",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The nine detailed unweighted Vault 1.16 Associate domains remain accurately named and mapped; renamed credentials and internal identifiers are explicitly distinguished."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Substantive coverage of authentication, policies, tokens, leases, secrets engines, transit, seal/storage, deployment, replication, and workload access is findable across explanations, scenarios, practice, and readiness material."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Passed source review vault-associate-003-2026-08-31-source-validation supplies the evidence baseline; 19 sources are healthy, with outside material labeled supplementary."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Assessment format, weights or their absence, lifecycle, maintenance, prerequisites, and unpublished details remain correctly separated without unsupported claims."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The treatment of authentication, policies, tokens, leases, secrets engines, transit, seal/storage, deployment, replication, and workload access is internally consistent and connects design or implementation choices to evidence, failure handling, and rollback."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Vault 1.16 exam scope is separated from current releases, HCP and self-managed responsibilities, editions, interfaces, and the renamed Advanced follow-on."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Practice work includes 6 named labs or exercises and uses authorized or synthetic contexts, bounded privileges and changes, validation, rollback, cleanup, or tabletop substitutes."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks require explanation and operational judgment without recalled, reconstructed, or third-party test-bank material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The passed source record and exact guide and objective hashes bind this result; access and naming caveats remain visible, and no human review is claimed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Normalized long-line comparison found only benign shared disclosure, resource, and integrity language; no irrelevant vendor leakage or suspicious substantive overlap was found."
+            }
+          },
+          "findings": [],
+          "notes": "Same-context final read-only check. Current public objective/credential evidence and the accepted snapshot were compared; dated product context is scoped separately. HashiCorp monitor-parser limits for Terraform Associate and Vault Associate were resolved by direct review of the official pages. No human or independent review is claimed."
+        },
+        {
+          "exam_code": "VAULT-ASSOCIATE-003",
+          "vendor_id": "hashicorp",
+          "guide_path": "guides/VAULT-ASSOCIATE-003-hashicorp-vault-associate.md",
+          "guide_content_sha256": "81516de9de30bce1cfe36d3c3b7420d3f933be168145f9ea183f207700f17f38",
+          "blueprint_snapshot_path": "data/objective-snapshots/vault-associate-003-official-objectives.txt",
+          "blueprint_snapshot_sha256": "2322b0085fb020f4cd83226d6c3e660412ae71e6de790e3e5716e17504818f0a",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The nine detailed unweighted Vault 1.16 Associate domains remain accurately named and mapped; renamed credentials and internal identifiers are explicitly distinguished."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Substantive coverage of authentication, policies, tokens, leases, secrets engines, transit, seal/storage, deployment, replication, and workload access is findable across explanations, scenarios, practice, and readiness material."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Passed source review vault-associate-003-2026-08-31-source-validation supplies the evidence baseline; 19 sources are healthy, with outside material labeled supplementary."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Assessment format, weights or their absence, lifecycle, maintenance, prerequisites, and unpublished details remain correctly separated without unsupported claims."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The treatment of authentication, policies, tokens, leases, secrets engines, transit, seal/storage, deployment, replication, and workload access is internally consistent and connects design or implementation choices to evidence, failure handling, and rollback."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Vault 1.16 exam scope is separated from current releases, HCP and self-managed responsibilities, editions, interfaces, and the renamed Advanced follow-on."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Practice work includes 6 named labs or exercises and uses authorized or synthetic contexts, bounded privileges and changes, validation, rollback, cleanup, or tabletop substitutes."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks require explanation and operational judgment without recalled, reconstructed, or third-party test-bank material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The passed source record and exact guide and objective hashes bind this result; access and naming caveats remain visible, and no human review is claimed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Normalized long-line comparison found only benign shared disclosure, resource, and integrity language; no irrelevant vendor leakage or suspicious substantive overlap was found."
+            }
+          },
+          "findings": [],
+          "notes": "Same-context final read-only check. Current public objective/credential evidence and the accepted snapshot were compared; dated product context is scoped separately. HashiCorp monitor-parser limits for Terraform Associate and Vault Associate were resolved by direct review of the official pages. No human or independent review is claimed."
+        },
+        {
+          "exam_code": "VAULT-OPERATIONS-PROFESSIONAL",
+          "vendor_id": "hashicorp",
+          "guide_path": "guides/VAULT-OPERATIONS-PROFESSIONAL-hashicorp-vault-operations-professional.md",
+          "guide_content_sha256": "b08f9e01d45b52a5333069a773be1e85e4c8aeee023c6fdc4217e40460428995",
+          "blueprint_snapshot_path": "data/objective-snapshots/vault-operations-professional-official-objectives.txt",
+          "blueprint_snapshot_sha256": "9144a3107d050f893b0c845664fbe4ca07e8edff7f4830f8dc89fefea3d291d6",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The nine detailed unweighted Vault 1.16 Associate domains remain accurately named and mapped; renamed credentials and internal identifiers are explicitly distinguished."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Substantive coverage of authentication, policies, tokens, leases, secrets engines, transit, seal/storage, deployment, replication, and workload access is findable across explanations, scenarios, practice, and readiness material."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Passed source review vault-associate-003-2026-08-31-source-validation supplies the evidence baseline; 19 sources are healthy, with outside material labeled supplementary."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Assessment format, weights or their absence, lifecycle, maintenance, prerequisites, and unpublished details remain correctly separated without unsupported claims."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The treatment of authentication, policies, tokens, leases, secrets engines, transit, seal/storage, deployment, replication, and workload access is internally consistent and connects design or implementation choices to evidence, failure handling, and rollback."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Vault 1.16 exam scope is separated from current releases, HCP and self-managed responsibilities, editions, interfaces, and the renamed Advanced follow-on."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Practice work includes 6 named labs or exercises and uses authorized or synthetic contexts, bounded privileges and changes, validation, rollback, cleanup, or tabletop substitutes."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks require explanation and operational judgment without recalled, reconstructed, or third-party test-bank material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The passed source record and exact guide and objective hashes bind this result; access and naming caveats remain visible, and no human review is claimed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Normalized long-line comparison found only benign shared disclosure, resource, and integrity language; no irrelevant vendor leakage or suspicious substantive overlap was found."
+            }
+          },
+          "findings": [],
+          "notes": "Same-context final read-only check. Current public objective/credential evidence and the accepted snapshot were compared; dated product context is scoped separately. HashiCorp monitor-parser limits for Terraform Associate and Vault Associate were resolved by direct review of the official pages. No human or independent review is claimed."
+        },
+        {
+          "exam_code": "DATABRICKS-DATA-ANALYST-ASSOCIATE",
+          "vendor_id": "databricks",
+          "guide_path": "guides/DATABRICKS-DATA-ANALYST-ASSOCIATE-databricks-data-analyst-associate.md",
+          "guide_content_sha256": "52f996c753afcb91e56d5633beb6125683900e0b7cf8129d3817bc4d32ab0c1a",
+          "blueprint_snapshot_path": "data/objective-snapshots/databricks-data-analyst-associate-official-objectives.txt",
+          "blueprint_snapshot_sha256": "84145c88ff4e5f780829aa1d29cf42da67b9a93e2be247338804daca37c7c6f4",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The live seven-domain 6/21/22/16/10/10/15 coverage and detailed May 4, 2026 exam-guide objectives are reconciled and mapped."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Platform and compute, batch and incremental ingestion, schema and replay, PySpark and SQL transformation, modeling and tuning, Lakeflow Jobs, bundles and CI/CD, diagnosis, and Unity Catalog governance receive production-oriented depth."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All 28 cited URLs are registered: 27 reachable and one commercial Databricks book page automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The active 45-scored-question, 90-minute, USD-200, no-aids exam, four languages, online/test-center delivery, no prerequisite, six-month experience recommendation, SQL/Python convention, and two-year validity agree with stored evidence."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide follows source and schema contracts through ingestion state, bronze provenance, silver validation, gold grain, job and deployment identity, monitored execution, fine-grained access, replay, reconciliation, and recovery."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Lakeflow, Git folder and Declarative Automation Bundle naming, connectors, serverless and runtime support, schema behavior, clustering, Unity Catalog controls, prices, cloud differences, and course currency are explicit recheck points."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use Free Edition or a bounded authorized workspace and synthetic data, durable checkpoints, malformed and replay tests, nonhuman deployment identity, skew diagnosis, positive and negative authorization, cost awareness, and careful external-data cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Thirty-six original readiness checks and scenarios test mechanism choice, state, correctness, performance evidence, failure, CI/CD identity, governance, and recovery without reproducing vendor sample questions."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 1 record matches the objective hash, seven-domain map, three scenarios, eight labs, 36 checks, May 2026 terminology reconciliation, and 28/27/1/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "General Spark and data-engineering concepts are tied to the Databricks platform, Lakeflow and Unity Catalog contracts; no Professional-level substitution or suspicious duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "Same-context final read-only check. Current public objective/credential evidence and the accepted snapshot were compared; dated product context is scoped separately. HashiCorp monitor-parser limits for Terraform Associate and Vault Associate were resolved by direct review of the official pages. No human or independent review is claimed."
+        },
+        {
+          "exam_code": "DATABRICKS-DATA-ENGINEER-ASSOCIATE",
+          "vendor_id": "databricks",
+          "guide_path": "guides/DATABRICKS-DATA-ENGINEER-ASSOCIATE-databricks-data-engineer-associate.md",
+          "guide_content_sha256": "9b9422fe8728fec9957a49c0e40ca1509a5452b88bd72940cf224544eb366d8e",
+          "blueprint_snapshot_path": "data/objective-snapshots/databricks-data-engineer-associate-official-objectives.txt",
+          "blueprint_snapshot_sha256": "b2dca1b253c3174ca4d8a4f5bdf9d7e16ef624a5f34f717476a12dd460853081",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The live seven-domain 6/21/22/16/10/10/15 coverage and detailed May 4, 2026 exam-guide objectives are reconciled and mapped."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Platform and compute, batch and incremental ingestion, schema and replay, PySpark and SQL transformation, modeling and tuning, Lakeflow Jobs, bundles and CI/CD, diagnosis, and Unity Catalog governance receive production-oriented depth."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All 28 cited URLs are registered: 27 reachable and one commercial Databricks book page automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The active 45-scored-question, 90-minute, USD-200, no-aids exam, four languages, online/test-center delivery, no prerequisite, six-month experience recommendation, SQL/Python convention, and two-year validity agree with stored evidence."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide follows source and schema contracts through ingestion state, bronze provenance, silver validation, gold grain, job and deployment identity, monitored execution, fine-grained access, replay, reconciliation, and recovery."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Lakeflow, Git folder and Declarative Automation Bundle naming, connectors, serverless and runtime support, schema behavior, clustering, Unity Catalog controls, prices, cloud differences, and course currency are explicit recheck points."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use Free Edition or a bounded authorized workspace and synthetic data, durable checkpoints, malformed and replay tests, nonhuman deployment identity, skew diagnosis, positive and negative authorization, cost awareness, and careful external-data cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Thirty-six original readiness checks and scenarios test mechanism choice, state, correctness, performance evidence, failure, CI/CD identity, governance, and recovery without reproducing vendor sample questions."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 1 record matches the objective hash, seven-domain map, three scenarios, eight labs, 36 checks, May 2026 terminology reconciliation, and 28/27/1/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "General Spark and data-engineering concepts are tied to the Databricks platform, Lakeflow and Unity Catalog contracts; no Professional-level substitution or suspicious duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "Same-context final read-only check. Current public objective/credential evidence and the accepted snapshot were compared; dated product context is scoped separately. HashiCorp monitor-parser limits for Terraform Associate and Vault Associate were resolved by direct review of the official pages. No human or independent review is claimed."
+        },
+        {
+          "exam_code": "DATABRICKS-DATA-ENGINEER-PROFESSIONAL",
+          "vendor_id": "databricks",
+          "guide_path": "guides/DATABRICKS-DATA-ENGINEER-PROFESSIONAL-databricks-data-engineer-professional.md",
+          "guide_content_sha256": "a4e077db9a561ed4ca7172f21271bc534be9358e80faa4d5c63c4273ca59e1f8",
+          "blueprint_snapshot_path": "data/objective-snapshots/databricks-data-engineer-professional-official-objectives.txt",
+          "blueprint_snapshot_sha256": "5c0abb75889e84a3f4b06c9ccf1d0598cf18b5e5edfaaa10e0b41b198fdd8c08",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The live seven-domain 6/21/22/16/10/10/15 coverage and detailed May 4, 2026 exam-guide objectives are reconciled and mapped."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Platform and compute, batch and incremental ingestion, schema and replay, PySpark and SQL transformation, modeling and tuning, Lakeflow Jobs, bundles and CI/CD, diagnosis, and Unity Catalog governance receive production-oriented depth."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All 28 cited URLs are registered: 27 reachable and one commercial Databricks book page automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The active 45-scored-question, 90-minute, USD-200, no-aids exam, four languages, online/test-center delivery, no prerequisite, six-month experience recommendation, SQL/Python convention, and two-year validity agree with stored evidence."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide follows source and schema contracts through ingestion state, bronze provenance, silver validation, gold grain, job and deployment identity, monitored execution, fine-grained access, replay, reconciliation, and recovery."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Lakeflow, Git folder and Declarative Automation Bundle naming, connectors, serverless and runtime support, schema behavior, clustering, Unity Catalog controls, prices, cloud differences, and course currency are explicit recheck points."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use Free Edition or a bounded authorized workspace and synthetic data, durable checkpoints, malformed and replay tests, nonhuman deployment identity, skew diagnosis, positive and negative authorization, cost awareness, and careful external-data cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Thirty-six original readiness checks and scenarios test mechanism choice, state, correctness, performance evidence, failure, CI/CD identity, governance, and recovery without reproducing vendor sample questions."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 1 record matches the objective hash, seven-domain map, three scenarios, eight labs, 36 checks, May 2026 terminology reconciliation, and 28/27/1/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "General Spark and data-engineering concepts are tied to the Databricks platform, Lakeflow and Unity Catalog contracts; no Professional-level substitution or suspicious duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "Same-context final read-only check. Current public objective/credential evidence and the accepted snapshot were compared; dated product context is scoped separately. HashiCorp monitor-parser limits for Terraform Associate and Vault Associate were resolved by direct review of the official pages. No human or independent review is claimed."
+        },
+        {
+          "exam_code": "DATABRICKS-MACHINE-LEARNING-ASSOCIATE",
+          "vendor_id": "databricks",
+          "guide_path": "guides/DATABRICKS-MACHINE-LEARNING-ASSOCIATE-databricks-machine-learning-associate.md",
+          "guide_content_sha256": "873e6ae0480f805f1ac8ed841d20105c65569863a250ec62e752fa1df0bff9c3",
+          "blueprint_snapshot_path": "data/objective-snapshots/databricks-machine-learning-associate-official-objectives.txt",
+          "blueprint_snapshot_sha256": "2b414caebf75aedc46dc20a956d95c12d8f8b46213655d78768a1a7da9d56346",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The live seven-domain 6/21/22/16/10/10/15 coverage and detailed May 4, 2026 exam-guide objectives are reconciled and mapped."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Platform and compute, batch and incremental ingestion, schema and replay, PySpark and SQL transformation, modeling and tuning, Lakeflow Jobs, bundles and CI/CD, diagnosis, and Unity Catalog governance receive production-oriented depth."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All 28 cited URLs are registered: 27 reachable and one commercial Databricks book page automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The active 45-scored-question, 90-minute, USD-200, no-aids exam, four languages, online/test-center delivery, no prerequisite, six-month experience recommendation, SQL/Python convention, and two-year validity agree with stored evidence."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide follows source and schema contracts through ingestion state, bronze provenance, silver validation, gold grain, job and deployment identity, monitored execution, fine-grained access, replay, reconciliation, and recovery."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Lakeflow, Git folder and Declarative Automation Bundle naming, connectors, serverless and runtime support, schema behavior, clustering, Unity Catalog controls, prices, cloud differences, and course currency are explicit recheck points."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use Free Edition or a bounded authorized workspace and synthetic data, durable checkpoints, malformed and replay tests, nonhuman deployment identity, skew diagnosis, positive and negative authorization, cost awareness, and careful external-data cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Thirty-six original readiness checks and scenarios test mechanism choice, state, correctness, performance evidence, failure, CI/CD identity, governance, and recovery without reproducing vendor sample questions."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 1 record matches the objective hash, seven-domain map, three scenarios, eight labs, 36 checks, May 2026 terminology reconciliation, and 28/27/1/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "General Spark and data-engineering concepts are tied to the Databricks platform, Lakeflow and Unity Catalog contracts; no Professional-level substitution or suspicious duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "Same-context final read-only check. Current public objective/credential evidence and the accepted snapshot were compared; dated product context is scoped separately. HashiCorp monitor-parser limits for Terraform Associate and Vault Associate were resolved by direct review of the official pages. No human or independent review is claimed."
+        },
+        {
+          "exam_code": "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL",
+          "vendor_id": "databricks",
+          "guide_path": "guides/DATABRICKS-MACHINE-LEARNING-PROFESSIONAL-databricks-machine-learning-professional.md",
+          "guide_content_sha256": "41386ad7f6f3bb6415a97a3037267710b7d49ec9eda22a34b7b40aaed3b39c70",
+          "blueprint_snapshot_path": "data/objective-snapshots/databricks-machine-learning-professional-official-objectives.txt",
+          "blueprint_snapshot_sha256": "90c1a98f80cb5fb4bf172563055256b49ba45f967caa4bbe4a0d5a9b88d124f7",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The live seven-domain 6/21/22/16/10/10/15 coverage and detailed May 4, 2026 exam-guide objectives are reconciled and mapped."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Platform and compute, batch and incremental ingestion, schema and replay, PySpark and SQL transformation, modeling and tuning, Lakeflow Jobs, bundles and CI/CD, diagnosis, and Unity Catalog governance receive production-oriented depth."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All 28 cited URLs are registered: 27 reachable and one commercial Databricks book page automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The active 45-scored-question, 90-minute, USD-200, no-aids exam, four languages, online/test-center delivery, no prerequisite, six-month experience recommendation, SQL/Python convention, and two-year validity agree with stored evidence."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide follows source and schema contracts through ingestion state, bronze provenance, silver validation, gold grain, job and deployment identity, monitored execution, fine-grained access, replay, reconciliation, and recovery."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Lakeflow, Git folder and Declarative Automation Bundle naming, connectors, serverless and runtime support, schema behavior, clustering, Unity Catalog controls, prices, cloud differences, and course currency are explicit recheck points."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use Free Edition or a bounded authorized workspace and synthetic data, durable checkpoints, malformed and replay tests, nonhuman deployment identity, skew diagnosis, positive and negative authorization, cost awareness, and careful external-data cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Thirty-six original readiness checks and scenarios test mechanism choice, state, correctness, performance evidence, failure, CI/CD identity, governance, and recovery without reproducing vendor sample questions."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 1 record matches the objective hash, seven-domain map, three scenarios, eight labs, 36 checks, May 2026 terminology reconciliation, and 28/27/1/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "General Spark and data-engineering concepts are tied to the Databricks platform, Lakeflow and Unity Catalog contracts; no Professional-level substitution or suspicious duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "Same-context final read-only check. Current public objective/credential evidence and the accepted snapshot were compared; dated product context is scoped separately. HashiCorp monitor-parser limits for Terraform Associate and Vault Associate were resolved by direct review of the official pages. No human or independent review is claimed."
+        },
+        {
+          "exam_code": "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE",
+          "vendor_id": "databricks",
+          "guide_path": "guides/DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE-databricks-generative-ai-engineer-associate.md",
+          "guide_content_sha256": "401a2bf605222c9f76e29334a75e60c3dbe3f007bb68280bb9d73495d90cd346",
+          "blueprint_snapshot_path": "data/objective-snapshots/databricks-generative-ai-engineer-associate-official-objectives-2026-10-28.txt",
+          "blueprint_snapshot_sha256": "a47e863fa23c1ae501d227ee36016714d90205d29a737e257cc8b63ca7d893dc",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The live seven-domain 6/21/22/16/10/10/15 coverage and detailed May 4, 2026 exam-guide objectives are reconciled and mapped."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Platform and compute, batch and incremental ingestion, schema and replay, PySpark and SQL transformation, modeling and tuning, Lakeflow Jobs, bundles and CI/CD, diagnosis, and Unity Catalog governance receive production-oriented depth."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All 28 cited URLs are registered: 27 reachable and one commercial Databricks book page automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The active 45-scored-question, 90-minute, USD-200, no-aids exam, four languages, online/test-center delivery, no prerequisite, six-month experience recommendation, SQL/Python convention, and two-year validity agree with stored evidence."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide follows source and schema contracts through ingestion state, bronze provenance, silver validation, gold grain, job and deployment identity, monitored execution, fine-grained access, replay, reconciliation, and recovery."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Lakeflow, Git folder and Declarative Automation Bundle naming, connectors, serverless and runtime support, schema behavior, clustering, Unity Catalog controls, prices, cloud differences, and course currency are explicit recheck points."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use Free Edition or a bounded authorized workspace and synthetic data, durable checkpoints, malformed and replay tests, nonhuman deployment identity, skew diagnosis, positive and negative authorization, cost awareness, and careful external-data cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Thirty-six original readiness checks and scenarios test mechanism choice, state, correctness, performance evidence, failure, CI/CD identity, governance, and recovery without reproducing vendor sample questions."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 1 record matches the objective hash, seven-domain map, three scenarios, eight labs, 36 checks, May 2026 terminology reconciliation, and 28/27/1/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "General Spark and data-engineering concepts are tied to the Databricks platform, Lakeflow and Unity Catalog contracts; no Professional-level substitution or suspicious duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "Same-context final read-only check. Current public objective/credential evidence and the accepted snapshot were compared; dated product context is scoped separately. HashiCorp monitor-parser limits for Terraform Associate and Vault Associate were resolved by direct review of the official pages. No human or independent review is claimed."
+        }
+      ],
+      "summary": {
+        "guide_count": 10,
+        "pass": 10,
+        "pass_with_notes": 0,
+        "fix_required": 0,
+        "blocked": 0,
+        "open_findings": 0,
+        "closed_findings": 0
+      }
+    }
 ]
 }

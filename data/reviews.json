@@ -9570,9 +9570,9 @@
       },
       "link_evidence": {
         "unique_external_links": 22,
-        "reachable": 20,
+        "reachable": 21,
         "access_blocked": 1,
-        "missing_or_error": 1
+        "missing_or_error": 0
       },
       "notes": "Mapped 33 detailed current topic bullets and repaired the monitor for the redesigned preparation page while preserving earlier snapshots and review history. Added 23 executed NumPy checks, 40 answered prompts and eight proposed activities. Updated serving-version and learning-resource boundaries; one commercial catalog and five course metadata pages remain inaccessible. Human review and GPU/LLM execution are pending. See docs/research/2026-09-29-nca-genl-deep-review.md September 29 PCAD shared-source health refresh changes link counts only; this guide content and review date are unchanged."
     },
@@ -12002,9 +12002,9 @@
       },
       "link_evidence": {
         "unique_external_links": 47,
-        "reachable": 36,
+        "reachable": 37,
         "access_blocked": 0,
-        "missing_or_error": 11
+        "missing_or_error": 10
       },
       "notes": "Mapped all48 objectives and expanded18 answers. Exact original numerical/SQL/local-HTTP workbook passes86 checks normally and optimized; train-only preprocessing, held-out regression baselines, paired percentile resampling, join grain/NULL/foreign-key rollback and object ownership are explicit. Pandas3/plotting companion compiled and linted only because five optional packages are absent. Corrected learning estimates/product distinctions; nine broader labs, publisher conflicts and human review remain pending. See docs/research/2026-09-29-pcad-31-02-deep-review.md"
     },
@@ -12340,9 +12340,9 @@
       },
       "link_evidence": {
         "unique_external_links": 25,
-        "reachable": 17,
+        "reachable": 18,
         "access_blocked": 1,
-        "missing_or_error": 7
+        "missing_or_error": 6
       },
       "notes": "Mapped33objectives separately from36examitems and expanded20answers. Three exact original files pass21methods/20observations pernormal/optimizedmode for synthetic cleaning,training-only scaling,distances,metrics,NumPyaxes andone-neuron gradients. Fourthpandas/Matplotlibfile syntax/lintonly. Practice-release conflicts,fullPDF,framework/model/plot exercises,full12labs andhumanreview remainpending. See docs/research/2026-09-30-pcei-30-01-deep-review.md"
     },
@@ -31939,6 +31939,796 @@
     "missing_or_error": 0
   },
   "notes": "Official objectives, credential status, source catalog, release channels and relevant learning-resource listings rechecked October 28, 2026. Current product releases are context, not new objectives. See Group 7 report for dated findings, lifecycle caveats and access limits."
-}
+},
+    {
+      "id": "terraform-associate-004-2026-10-28-source-validation",
+      "exam_code": "TERRAFORM-ASSOCIATE-004",
+      "guide_path": "guides/TERRAFORM-ASSOCIATE-004-hashicorp-terraform-associate.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/terraform-associate-004-official-objectives.txt",
+      "blueprint_snapshot_sha256": "41390d0d2fbb8b1cfbfb7349ada41f4cf13dc65815827b802ad082fd2c1bf53b",
+      "objective_coverage": [
+        {
+          "objective_group": "Infrastructure as Code (IaC) with Terraform",
+          "guide_sections": [
+            "Domain 1",
+            "Labs 1–2"
+          ]
+        },
+        {
+          "objective_group": "Terraform fundamentals",
+          "guide_sections": [
+            "Domain 2",
+            "Labs 1–2"
+          ]
+        },
+        {
+          "objective_group": "Core Terraform workflow",
+          "guide_sections": [
+            "Domain 3",
+            "Labs 1–2"
+          ]
+        },
+        {
+          "objective_group": "Terraform configuration",
+          "guide_sections": [
+            "Domain 4",
+            "Labs 1–5"
+          ]
+        },
+        {
+          "objective_group": "Terraform modules",
+          "guide_sections": [
+            "Domain 5",
+            "Lab 3"
+          ]
+        },
+        {
+          "objective_group": "Terraform state management",
+          "guide_sections": [
+            "Domain 6",
+            "Labs 4–5"
+          ]
+        },
+        {
+          "objective_group": "Maintain infrastructure with Terraform",
+          "guide_sections": [
+            "Domain 7",
+            "Labs 4–5"
+          ]
+        },
+        {
+          "objective_group": "HCP Terraform",
+          "guide_sections": [
+            "Domain 8",
+            "Lab 6"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 37,
+        "reachable": 32,
+        "access_blocked": 5,
+        "missing_or_error": 0
+      },
+      "notes": "Official credential and objective pages were checked October 28, 2026; current product and learning-path releases were treated as adjacent context. Two HashiCorp pages did not parse in the repository objective monitor, so their public content was reviewed directly and mapped manually. See Group 8 report for lifecycle and version details."
+    },
+    {
+      "id": "terraform-authoring-operations-professional-2026-10-28-source-validation",
+      "exam_code": "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL",
+      "guide_path": "guides/TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL-hashicorp-terraform-professional.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/terraform-authoring-operations-professional-official-objectives.txt",
+      "blueprint_snapshot_sha256": "bffbb1760b01378fc12777096f010256534f6177a4247520f6a0db1c08c56c68",
+      "objective_coverage": [
+        {
+          "objective_group": "Manage resource lifecycle",
+          "guide_sections": [
+            "Domain 1",
+            "Integrated professional playbook",
+            "Labs 1–2"
+          ]
+        },
+        {
+          "objective_group": "Develop and troubleshoot dynamic configuration",
+          "guide_sections": [
+            "Domain 2",
+            "Labs 2–3"
+          ]
+        },
+        {
+          "objective_group": "Develop collaborative Terraform workflows",
+          "guide_sections": [
+            "Domain 3",
+            "Lab 4"
+          ]
+        },
+        {
+          "objective_group": "Create, maintain, and use Terraform modules",
+          "guide_sections": [
+            "Domain 4",
+            "Labs 2–3"
+          ]
+        },
+        {
+          "objective_group": "Configure and use Terraform providers",
+          "guide_sections": [
+            "Domain 5",
+            "Lab 5"
+          ]
+        },
+        {
+          "objective_group": "Collaborate on infrastructure as code using HCP Terraform",
+          "guide_sections": [
+            "Domain 6",
+            "Lab 6"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 29,
+        "reachable": 28,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "Official credential and objective pages were checked October 28, 2026; current product and learning-path releases were treated as adjacent context. Two HashiCorp pages did not parse in the repository objective monitor, so their public content was reviewed directly and mapped manually. See Group 8 report for lifecycle and version details."
+    },
+    {
+      "id": "vault-associate-003-2026-10-28-source-validation",
+      "exam_code": "VAULT-ASSOCIATE-003",
+      "guide_path": "guides/VAULT-ASSOCIATE-003-hashicorp-vault-associate.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/vault-associate-003-official-objectives.txt",
+      "blueprint_snapshot_sha256": "2322b0085fb020f4cd83226d6c3e660412ae71e6de790e3e5716e17504818f0a",
+      "objective_coverage": [
+        {
+          "objective_group": "Authentication methods",
+          "guide_sections": [
+            "Domain 1",
+            "Lab 1"
+          ]
+        },
+        {
+          "objective_group": "Vault policies",
+          "guide_sections": [
+            "Domain 2",
+            "Lab 1"
+          ]
+        },
+        {
+          "objective_group": "Vault tokens",
+          "guide_sections": [
+            "Domain 3",
+            "Lab 2"
+          ]
+        },
+        {
+          "objective_group": "Vault leases",
+          "guide_sections": [
+            "Domain 4",
+            "Lab 3"
+          ]
+        },
+        {
+          "objective_group": "Secrets engines",
+          "guide_sections": [
+            "Domain 5",
+            "Lab 3"
+          ]
+        },
+        {
+          "objective_group": "Encryption as a Service",
+          "guide_sections": [
+            "Domain 6",
+            "Lab 4"
+          ]
+        },
+        {
+          "objective_group": "Vault architecture fundamentals",
+          "guide_sections": [
+            "Domain 7",
+            "Lab 5"
+          ]
+        },
+        {
+          "objective_group": "Vault deployment architecture",
+          "guide_sections": [
+            "Domain 8",
+            "Lab 5"
+          ]
+        },
+        {
+          "objective_group": "Access management architecture",
+          "guide_sections": [
+            "Domain 9",
+            "Lab 6"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 25,
+        "reachable": 24,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "Official credential and objective pages were checked October 28, 2026; current product and learning-path releases were treated as adjacent context. Two HashiCorp pages did not parse in the repository objective monitor, so their public content was reviewed directly and mapped manually. See Group 8 report for lifecycle and version details."
+    },
+    {
+      "id": "vault-operations-professional-2026-10-28-source-validation",
+      "exam_code": "VAULT-OPERATIONS-PROFESSIONAL",
+      "guide_path": "guides/VAULT-OPERATIONS-PROFESSIONAL-hashicorp-vault-operations-professional.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/vault-operations-professional-official-objectives.txt",
+      "blueprint_snapshot_sha256": "9144a3107d050f893b0c845664fbe4ca07e8edff7f4830f8dc89fefea3d291d6",
+      "objective_coverage": [
+        {
+          "objective_group": "Create a working Vault server configuration given a scenario",
+          "guide_sections": [
+            "Domain 1",
+            "Labs 1–2"
+          ]
+        },
+        {
+          "objective_group": "Monitor a Vault environment",
+          "guide_sections": [
+            "Domain 2",
+            "Labs 3 and 8"
+          ]
+        },
+        {
+          "objective_group": "Employ the Vault security model",
+          "guide_sections": [
+            "Domain 3",
+            "Labs 6–7"
+          ]
+        },
+        {
+          "objective_group": "Build fault-tolerant Vault environments",
+          "guide_sections": [
+            "Domain 4",
+            "Labs 1, 4, and 5"
+          ]
+        },
+        {
+          "objective_group": "Understand the hardware security module integration",
+          "guide_sections": [
+            "Domain 5",
+            "Lab 5"
+          ]
+        },
+        {
+          "objective_group": "Scale Vault for performance",
+          "guide_sections": [
+            "Domain 6",
+            "Lab 5"
+          ]
+        },
+        {
+          "objective_group": "Configure access control",
+          "guide_sections": [
+            "Domain 7",
+            "Lab 6"
+          ]
+        },
+        {
+          "objective_group": "Configure Vault Agent",
+          "guide_sections": [
+            "Domain 8",
+            "Lab 7"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 32,
+        "reachable": 31,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "Official credential and objective pages were checked October 28, 2026; current product and learning-path releases were treated as adjacent context. Two HashiCorp pages did not parse in the repository objective monitor, so their public content was reviewed directly and mapped manually. See Group 8 report for lifecycle and version details."
+    },
+    {
+      "id": "databricks-data-analyst-associate-2026-10-28-source-validation",
+      "exam_code": "DATABRICKS-DATA-ANALYST-ASSOCIATE",
+      "guide_path": "guides/DATABRICKS-DATA-ANALYST-ASSOCIATE-databricks-data-analyst-associate.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/databricks-data-analyst-associate-official-objectives.txt",
+      "blueprint_snapshot_sha256": "84145c88ff4e5f780829aa1d29cf42da67b9a93e2be247338804daca37c7c6f4",
+      "objective_coverage": [
+        {
+          "objective_group": "Understanding of Databricks Data + AI Platform",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Lab 1"
+          ]
+        },
+        {
+          "objective_group": "Managing Data",
+          "guide_sections": [
+            "Section 2",
+            "Executive-dashboard scenario",
+            "Labs 1–2"
+          ]
+        },
+        {
+          "objective_group": "Importing Data",
+          "guide_sections": [
+            "Section 3",
+            "Supplier-data scenario",
+            "Lab 2"
+          ]
+        },
+        {
+          "objective_group": "Executing queries using Databricks SQL and Databricks SQL Warehouses",
+          "guide_sections": [
+            "Section 4",
+            "All integrated scenarios",
+            "Labs 3–4"
+          ]
+        },
+        {
+          "objective_group": "Analyzing Queries",
+          "guide_sections": [
+            "Section 5",
+            "Supplier-data scenario",
+            "Lab 5"
+          ]
+        },
+        {
+          "objective_group": "Creating Dashboards and Visualizations in Databricks",
+          "guide_sections": [
+            "Section 6",
+            "Executive-dashboard scenario",
+            "Lab 6"
+          ]
+        },
+        {
+          "objective_group": "Developing, Sharing, and Maintaining AI/BI Genie spaces",
+          "guide_sections": [
+            "Section 7",
+            "Trusted-sales-Genie scenario",
+            "Lab 7"
+          ]
+        },
+        {
+          "objective_group": "Data Modeling with Databricks SQL",
+          "guide_sections": [
+            "Section 8",
+            "Executive-dashboard and trusted-sales-Genie scenarios",
+            "Labs 3 and 7"
+          ]
+        },
+        {
+          "objective_group": "Securing Data",
+          "guide_sections": [
+            "Section 9",
+            "All integrated scenarios",
+            "Lab 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 35,
+        "reachable": 34,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "Official credential and objective pages were checked October 28, 2026; current product and learning-path releases were treated as adjacent context. Two HashiCorp pages did not parse in the repository objective monitor, so their public content was reviewed directly and mapped manually. See Group 8 report for lifecycle and version details."
+    },
+    {
+      "id": "databricks-data-engineer-associate-2026-10-28-source-validation",
+      "exam_code": "DATABRICKS-DATA-ENGINEER-ASSOCIATE",
+      "guide_path": "guides/DATABRICKS-DATA-ENGINEER-ASSOCIATE-databricks-data-engineer-associate.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/databricks-data-engineer-associate-official-objectives.txt",
+      "blueprint_snapshot_sha256": "b2dca1b253c3174ca4d8a4f5bdf9d7e16ef624a5f34f717476a12dd460853081",
+      "objective_coverage": [
+        {
+          "objective_group": "Databricks Intelligence Platform",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Lab 1"
+          ]
+        },
+        {
+          "objective_group": "Data Ingestion and Loading",
+          "guide_sections": [
+            "Section 2",
+            "Governed-incremental-orders scenario",
+            "Labs 2–3"
+          ]
+        },
+        {
+          "objective_group": "Data Transformation and Modeling",
+          "guide_sections": [
+            "Section 3",
+            "Governed-incremental-orders and slow-consumer scenarios",
+            "Labs 4 and 7"
+          ]
+        },
+        {
+          "objective_group": "Working with Lakeflow Jobs",
+          "guide_sections": [
+            "Section 4",
+            "Governed-incremental-orders scenario",
+            "Lab 5"
+          ]
+        },
+        {
+          "objective_group": "Implementing CI/CD",
+          "guide_sections": [
+            "Section 5",
+            "Multi-environment-pipeline scenario",
+            "Lab 6"
+          ]
+        },
+        {
+          "objective_group": "Troubleshooting, Monitoring, and Optimization",
+          "guide_sections": [
+            "Section 6",
+            "Slow-and-unsafe-consumer scenario",
+            "Lab 7"
+          ]
+        },
+        {
+          "objective_group": "Governance and Security",
+          "guide_sections": [
+            "Section 7",
+            "All integrated scenarios",
+            "Lab 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 38,
+        "reachable": 34,
+        "access_blocked": 4,
+        "missing_or_error": 0
+      },
+      "notes": "Official credential and objective pages were checked October 28, 2026; current product and learning-path releases were treated as adjacent context. Two HashiCorp pages did not parse in the repository objective monitor, so their public content was reviewed directly and mapped manually. See Group 8 report for lifecycle and version details."
+    },
+    {
+      "id": "databricks-data-engineer-professional-2026-10-28-source-validation",
+      "exam_code": "DATABRICKS-DATA-ENGINEER-PROFESSIONAL",
+      "guide_path": "guides/DATABRICKS-DATA-ENGINEER-PROFESSIONAL-databricks-data-engineer-professional.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/databricks-data-engineer-professional-official-objectives.txt",
+      "blueprint_snapshot_sha256": "5c0abb75889e84a3f4b06c9ccf1d0598cf18b5e5edfaaa10e0b41b198fdd8c08",
+      "objective_coverage": [
+        {
+          "objective_group": "Developing Code for Data Processing using Python and SQL",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–3 and 8"
+          ]
+        },
+        {
+          "objective_group": "Data Ingestion & Acquisition",
+          "guide_sections": [
+            "Section 2",
+            "Regulated-events scenario",
+            "Lab 2"
+          ]
+        },
+        {
+          "objective_group": "Data Transformation, Cleansing, and Quality",
+          "guide_sections": [
+            "Section 3",
+            "Regulated-events scenario",
+            "Lab 3"
+          ]
+        },
+        {
+          "objective_group": "Data Sharing and Federation",
+          "guide_sections": [
+            "Section 4",
+            "Shared-supply-data scenario",
+            "Lab 4"
+          ]
+        },
+        {
+          "objective_group": "Monitoring and Alerting",
+          "guide_sections": [
+            "Section 5",
+            "Failing-pipeline scenario",
+            "Lab 5"
+          ]
+        },
+        {
+          "objective_group": "Cost & Performance Optimisation",
+          "guide_sections": [
+            "Section 6",
+            "Failing-pipeline scenario",
+            "Lab 6"
+          ]
+        },
+        {
+          "objective_group": "Ensuring Data Security and Compliance",
+          "guide_sections": [
+            "Section 7",
+            "Regulated-events scenario",
+            "Lab 7"
+          ]
+        },
+        {
+          "objective_group": "Data Governance",
+          "guide_sections": [
+            "Section 8",
+            "All integrated scenarios",
+            "Lab 7"
+          ]
+        },
+        {
+          "objective_group": "Debugging and Deploying",
+          "guide_sections": [
+            "Section 9",
+            "Failing-pipeline scenario",
+            "Lab 8"
+          ]
+        },
+        {
+          "objective_group": "Data Modelling",
+          "guide_sections": [
+            "Section 10",
+            "Regulated-events scenario",
+            "Labs 3 and 6"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 39,
+        "reachable": 36,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "Official credential and objective pages were checked October 28, 2026; current product and learning-path releases were treated as adjacent context. Two HashiCorp pages did not parse in the repository objective monitor, so their public content was reviewed directly and mapped manually. See Group 8 report for lifecycle and version details."
+    },
+    {
+      "id": "databricks-machine-learning-associate-2026-10-28-source-validation",
+      "exam_code": "DATABRICKS-MACHINE-LEARNING-ASSOCIATE",
+      "guide_path": "guides/DATABRICKS-MACHINE-LEARNING-ASSOCIATE-databricks-machine-learning-associate.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/databricks-machine-learning-associate-official-objectives.txt",
+      "blueprint_snapshot_sha256": "2b414caebf75aedc46dc20a956d95c12d8f8b46213655d78768a1a7da9d56346",
+      "objective_coverage": [
+        {
+          "objective_group": "Databricks Machine Learning",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 3–4 and 6"
+          ]
+        },
+        {
+          "objective_group": "ML Workflows",
+          "guide_sections": [
+            "Section 2",
+            "Churn-model scenario",
+            "Labs 1–2"
+          ]
+        },
+        {
+          "objective_group": "Model Development",
+          "guide_sections": [
+            "Section 3",
+            "Churn/fraud scenarios",
+            "Labs 4–5"
+          ]
+        },
+        {
+          "objective_group": "Model Deployment",
+          "guide_sections": [
+            "Section 4",
+            "Fraud/streaming scenarios",
+            "Labs 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 26,
+        "reachable": 24,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Official credential and objective pages were checked October 28, 2026; current product and learning-path releases were treated as adjacent context. Two HashiCorp pages did not parse in the repository objective monitor, so their public content was reviewed directly and mapped manually. See Group 8 report for lifecycle and version details."
+    },
+    {
+      "id": "databricks-machine-learning-professional-2026-10-28-source-validation",
+      "exam_code": "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL",
+      "guide_path": "guides/DATABRICKS-MACHINE-LEARNING-PROFESSIONAL-databricks-machine-learning-professional.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/databricks-machine-learning-professional-official-objectives.txt",
+      "blueprint_snapshot_sha256": "90c1a98f80cb5fb4bf172563055256b49ba45f967caa4bbe4a0d5a9b88d124f7",
+      "objective_coverage": [
+        {
+          "objective_group": "Model Development",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–4"
+          ]
+        },
+        {
+          "objective_group": "ML Ops",
+          "guide_sections": [
+            "Section 2",
+            "Drift-retraining scenario",
+            "Labs 5–7"
+          ]
+        },
+        {
+          "objective_group": "Model Deployment",
+          "guide_sections": [
+            "Section 3",
+            "Real-time/Drift scenarios",
+            "Lab 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 25,
+        "reachable": 24,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "Official credential and objective pages were checked October 28, 2026; current product and learning-path releases were treated as adjacent context. Two HashiCorp pages did not parse in the repository objective monitor, so their public content was reviewed directly and mapped manually. See Group 8 report for lifecycle and version details."
+    },
+    {
+      "id": "databricks-generative-ai-engineer-associate-2026-10-28-source-validation",
+      "exam_code": "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE",
+      "guide_path": "guides/DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE-databricks-generative-ai-engineer-associate.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/databricks-generative-ai-engineer-associate-official-objectives-2026-10-28.txt",
+      "blueprint_snapshot_sha256": "a47e863fa23c1ae501d227ee36016714d90205d29a737e257cc8b63ca7d893dc",
+      "objective_coverage": [
+        {
+          "objective_group": "Design Applications",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1 and 4"
+          ]
+        },
+        {
+          "objective_group": "Data Preparation",
+          "guide_sections": [
+            "Section 2",
+            "Governed-policy scenario",
+            "Labs 2–3"
+          ]
+        },
+        {
+          "objective_group": "Application Development",
+          "guide_sections": [
+            "Section 3",
+            "All integrated scenarios",
+            "Labs 4–5"
+          ]
+        },
+        {
+          "objective_group": "Assembling and Deploying Apps",
+          "guide_sections": [
+            "Section 4",
+            "Support-action and analytics-supervisor scenarios",
+            "Labs 6–7"
+          ]
+        },
+        {
+          "objective_group": "Governance",
+          "guide_sections": [
+            "Section 5",
+            "All integrated scenarios",
+            "Labs 2, 4 and 7"
+          ]
+        },
+        {
+          "objective_group": "Evaluation and Monitoring",
+          "guide_sections": [
+            "Section 6",
+            "All integrated scenarios",
+            "Labs 5 and 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 18,
+        "reachable": 15,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "Official credential and objective pages were checked October 28, 2026; current product and learning-path releases were treated as adjacent context. Two HashiCorp pages did not parse in the repository objective monitor, so their public content was reviewed directly and mapped manually. See Group 8 report for lifecycle and version details."
+    }
 ]
 }

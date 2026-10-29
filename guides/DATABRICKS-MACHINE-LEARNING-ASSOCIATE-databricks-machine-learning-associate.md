@@ -6,14 +6,14 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-28
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-28
+upcoming_change_checked: 2026-10-28
 ---
 
 # Databricks Certified Machine Learning Associate Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 28, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#databricks-machine-learning-associate-coverage-record). The [official certification page](https://www.databricks.com/learn/certification/machine-learning-associate) and its linked exam guide are authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on October 28, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#databricks-machine-learning-associate-coverage-record). The [official certification page](https://www.databricks.com/learn/certification/machine-learning-associate) and its linked exam guide are authoritative.
 
 **Library identifier:** `DATABRICKS-MACHINE-LEARNING-ASSOCIATE`; Databricks does not publish a short exam code on the official page checked.<br>
 **Current baseline:** Detailed official guide for the live version as of March 1, 2025; live four-domain page checked September 28, 2026.<br>
@@ -21,6 +21,10 @@ upcoming_change_checked: 2026-09-28
 **Lifecycle status:** Active; valid for two years, with the currently live exam required for recertification.<br>
 **Assessment:** Live page: 48 scored multiple-choice questions, 90 minutes, USD 200, no test aids, online or test-center delivery; English, Japanese, Brazilian Portuguese and Korean listed. The older PDF says multiple-choice or multiple-selection and online proctoring only; use the live page for current delivery metadata.<br>
 **Prerequisite:** None required. The official guide highly recommends course attendance and six months of hands-on experience; working Python, scikit-learn, Spark ML, Unity Catalog and basic statistics are practical prerequisites.
+
+## Living-guide watch — October 28, 2026
+
+**Current platform context:** The detailed Associate guide remains the March 1, 2025 version. Databricks AI Runtime reached general availability October 21, providing managed GPU training infrastructure governed through Unity Catalog, with MLflow observability and Lakeflow integration. Its availability and supported configurations depend on the account and region; treat it as adjacent ML platform context, not an exam-guide revision. See the [current certification page](https://www.databricks.com/learn/certification/machine-learning-associate), [AI Runtime GA announcement](https://www.databricks.com/blog/ai-runtime-generally-available), and [October release notes](https://docs.databricks.com/aws/en/release-notes/product/2026/october).
 
 ## How to use this guide
 

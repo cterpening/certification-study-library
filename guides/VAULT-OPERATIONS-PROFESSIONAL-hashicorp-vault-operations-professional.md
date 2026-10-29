@@ -6,16 +6,16 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-28
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-28
+upcoming_change_checked: 2026-10-28
 ---
 
 # HashiCorp Certified: Vault Operations Advanced Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed on September 28, 2026 across all 29 detailed objectives; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#vault-operations-professional-coverage-record). The [official Vault Operations Advanced content list](https://developer.hashicorp.com/vault/tutorials/ops-pro-cert/ops-advanced-review) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed on October 28, 2026 across all 29 detailed objectives; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#vault-operations-professional-coverage-record). The [official Vault Operations Advanced content list](https://developer.hashicorp.com/vault/tutorials/ops-pro-cert/ops-advanced-review) is authoritative.
 
-**Current baseline:** Vault Operations Advanced, 29 detailed objectives; the [credential page](https://developer.hashicorp.com/certifications/security-automation) specifies **Vault 1.16**; reviewed September 28, 2026<br>
+**Current baseline:** Vault Operations Advanced, 29 detailed objectives; the [credential page](https://developer.hashicorp.com/certifications/vault-advanced) specifies **Vault 1.16**; reviewed October 28, 2026<br>
 **Upcoming blueprint change:** No future update or retirement announcement was found in the official certification material as of September 28, 2026.<br>
 **Official source:** [Vault Operations Advanced exam content list](https://developer.hashicorp.com/vault/tutorials/ops-pro-cert/ops-advanced-review)
 
@@ -30,6 +30,10 @@ HashiCorp does not display a short exam code for this credential. This library r
 **Rename announcement located:** HashiCorp's [Advanced announcement](https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-update) covers both Vault and Terraform and gives **fall 2026**, with content and format unchanged. It does not supply an exact transition day or short Vault exam code. Preserve this library's stable identifier and the accepted objective snapshots.
 
 **Version boundary — VERIFY CURRENT:** Current Vault documentation and [release notes](https://developer.hashicorp.com/vault/docs/updates/release-notes) cover 2.x. Use the version selector when practicing against the stated 1.16 exam baseline. Newer product capabilities or the Associate guide's separate 1.19/1.16 source conflict do not establish a new Advanced baseline. See the [deep-review evidence](../docs/research/2026-09-28-vault-operations-professional-deep-review.md).
+
+## Living-guide watch — October 28, 2026
+
+**Credential and product update:** HashiCorp has completed the Professional-to-Advanced rename. The public credential is Vault Operations Advanced; the lab-based scenario content and exam format remain unchanged. Keep the official tested version at Vault 1.16. Vault 2.2.1's October 22 policy-alias security patch and Vault 2.2's October 15 features are current operator context only; practice against the version and edition named by the exam. See the [current Advanced content list](https://developer.hashicorp.com/vault/tutorials/ops-pro-cert/ops-advanced-review), [rename announcement](https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-update), and [Vault release notes](https://developer.hashicorp.com/vault/docs/updates/release-notes).
 
 ## How to use this guide
 

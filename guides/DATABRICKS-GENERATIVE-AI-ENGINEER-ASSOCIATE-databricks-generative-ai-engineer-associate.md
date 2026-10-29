@@ -6,14 +6,14 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-28
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-28
+upcoming_change_checked: 2026-10-28
 ---
 
 # Databricks Certified Generative AI Engineer Associate Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 28, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#databricks-generative-ai-engineer-associate-coverage-record). The [official certification page](https://www.databricks.com/learn/certification/genai-engineer-associate) and its linked exam guide are authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on October 28, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#databricks-generative-ai-engineer-associate-coverage-record). The [official certification page](https://www.databricks.com/learn/certification/genai-engineer-associate) and its linked exam guide are authoritative.
 
 **Library identifier:** `DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE`; Databricks does not publish a short exam code on the official page checked.<br>
 **Current baseline:** Detailed official guide for the live version as of March 18, 2026; live six-domain weighted page checked September 28, 2026.<br>
@@ -21,6 +21,10 @@ upcoming_change_checked: 2026-09-28
 **Lifecycle status:** Active; valid for two years, with the currently live exam required for recertification.<br>
 **Assessment:** 45 scored multiple-choice questions, 90 minutes, USD 200, English/Japanese/Brazilian Portuguese/Korean, online or test-center delivery. The March PDF describes multiple-choice or multiple-selection and online proctoring; the live page controls current public delivery metadata.<br>
 **Prerequisite:** None required. The official guide recommends related training and six months of hands-on experience. Working Python, SQL, LLM/prompt basics, retrieval, APIs, testing, identity, Unity Catalog, MLflow, serving, and application operations are practical prerequisites.
+
+## Living-guide watch — October 28, 2026
+
+**Objective-page refresh:** The current live page retains all six domain weights and assessment terms; it now labels Domain 4 “Assembling and Deploying Apps” (22%). The March 2026 detailed PDF remains the richer topic map, so the guide keeps its detail and uses the current page's domain title. On October 20 Databricks introduced Agent Memory in beta: managed sessions, managed memory and background memory pipelines on Lakebase. On October 27 default OAuth client IDs became generally available for external AI agents connecting to Databricks MCP servers; MCP-call jailbreak screening is a separate beta. These are volatile product examples, not additional exam objectives. See the [live certification page](https://www.databricks.com/learn/certification/genai-engineer-associate), [Agent Memory announcement](https://www.databricks.com/blog/introducing-agent-memory-databricks), and [October release notes](https://docs.databricks.com/aws/en/release-notes/product/2026/october).
 
 ## How to use this guide
 
@@ -45,7 +49,7 @@ Application Development and Assembling/Deploying Applications total 52%. Do not 
 | Design Applications | 14% | Requirement-to-pipeline decomposition, structured prompt, model/task/chain choice, ordered tools, and Agent Bricks selection. |
 | Data Preparation | 14% | Source-quality decision, extraction/filtering/chunking pipeline, governed Delta records, retrieval metrics, advanced chunking, and reranking. |
 | Application Development | 30% | Framework/model/embedding selection, context-aware prompts, RAG/agent behavior, guardrails, experiments, MLflow Agent Framework, lifecycle reasoning, and Genie-enabled multi-agent design. |
-| Assembling and Deploying Applications | 22% | Logged/registered chain, AI Search index, Foundation Model API/batch inference, persistent state, CI/CD, MCP, prompt lifecycle, application UI, and access control. |
+| Assembling and Deploying Apps | 22% | Logged/registered chain, AI Search index, Foundation Model API/batch inference, persistent state, CI/CD, MCP, prompt lifecycle, application UI, and access control. |
 | Governance | 8% | Input/output/data guardrails, masking, licensing/provenance, and problematic-content mitigation. |
 | Evaluation and Monitoring | 12% | Evaluation design, traces/scorers/judges, inference and usage evidence, production monitoring, cost controls, and calibrated SME feedback. |
 
@@ -179,7 +183,7 @@ Current interfaces are summarized in [Build agents on Databricks](https://docs.d
 
 ---
 
-## 4. Assembling and Deploying Applications (22%)
+## 4. Assembling and Deploying Apps (22%)
 
 ### Package the whole inference contract
 

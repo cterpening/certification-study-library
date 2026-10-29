@@ -6,14 +6,14 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-28
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-28
+upcoming_change_checked: 2026-10-28
 ---
 
 # Databricks Certified Data Engineer Professional Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 28, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#databricks-data-engineer-professional-coverage-record). The [official certification page](https://www.databricks.com/learn/certification/data-engineer-professional) and its linked exam guide are authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on October 28, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#databricks-data-engineer-professional-coverage-record). The [official certification page](https://www.databricks.com/learn/certification/data-engineer-professional) and its linked exam guide are authoritative.
 
 **Library identifier:** `DATABRICKS-DATA-ENGINEER-PROFESSIONAL`; Databricks does not publish a short exam code on the official page checked.<br>
 **Current baseline:** Detailed official exam guide for the live version as of July 3, 2026; live weighted page checked September 28, 2026.<br>
@@ -22,6 +22,10 @@ upcoming_change_checked: 2026-09-28
 **Assessment:** 59 scored multiple-choice questions, 120 minutes, USD 200, no test aids or API documentation, online or test-center delivery; English, Japanese, Brazilian Portuguese, and Korean listed.<br>
 **Prerequisite:** None required. The official guide highly recommends related training and one year of hands-on experience performing its data-engineering tasks.<br>
 **Scope posture:** This is a production-engineering guide. Be able to explain correctness, state, security, observability, cost, deployment and recovery—not only write a successful notebook cell.
+
+## Living-guide watch — October 28, 2026
+
+**Current platform context:** The current official Professional exam guide is dated November 30, 2025. October releases make atomic transactions available for Unity Catalog managed Delta and Iceberg tables (catalog commits must be enabled) and make Lakeflow pipeline system tables generally available. These are useful current engineering practices for transaction boundaries and pipeline observability, but the live exam guide remains the scope authority. See the [current certification page](https://www.databricks.com/learn/certification/data-engineer-professional) and [October release notes](https://docs.databricks.com/aws/en/release-notes/product/2026/october).
 
 ## How to use this guide
 

@@ -6,20 +6,24 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-28
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-28
+upcoming_change_checked: 2026-10-28
 ---
 
 # HashiCorp Certified: Vault Associate (003) Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed on September 28, 2026 across all 40 detailed objectives; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#vault-associate-003-coverage-record). The [official Vault Associate (003) content list](https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-review-003) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed on October 28, 2026 across all 40 detailed objectives; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#vault-associate-003-coverage-record). The [official Vault Associate (003) content list](https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-review-003) is authoritative.
 
-**Current baseline:** Vault Associate (003), 40 detailed objectives; reviewed September 28, 2026. **VERIFY CURRENT — version discrepancy:** the [certification page](https://developer.hashicorp.com/certifications/security-automation) says **Vault 1.19**, while the learning path still says **1.16**<br>
-**Upcoming blueprint change:** No future update or retirement announcement was found in the official certification material as of September 28, 2026.<br>
+**Current baseline:** Vault Associate (003), 40 detailed objectives; reviewed October 28, 2026. **VERIFY CURRENT — version discrepancy:** the [certification page](https://developer.hashicorp.com/certifications/vault-associate) says **Vault 1.19**, while the learning path still says **1.16**<br>
+**Upcoming blueprint change:** No future update or retirement announcement was found in the official certification material as of October 28, 2026.<br>
 **Official source:** [Vault Associate (003) exam content list](https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-review-003)
 
 HashiCorp presents the credential as **Vault Associate (003)** rather than a short exam code. This library uses `VAULT-ASSOCIATE-003` as a stable catalog identifier.
+
+## Living-guide watch — October 28, 2026
+
+**Current version note:** The current Vault Associate credential page now explicitly lists Vault 1.19 and publishes the same nine objective domains and 40 detailed tasks mapped in this guide. Older HashiCorp preparation material may still say 1.16; follow the current credential page for tested version and use the content list for task mapping. Vault 2.2.1's October 22 policy-alias security fix and Vault 2.2 feature changes are newer product context; do not assume they change the 1.19 exam boundary. See the [current credential page](https://developer.hashicorp.com/certifications/vault-associate), [003 content list](https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-review-003), and [Vault release notes](https://developer.hashicorp.com/vault/docs/updates/release-notes).
 
 ## How to use this guide
 
