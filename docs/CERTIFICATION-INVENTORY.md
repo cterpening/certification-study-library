@@ -1,18 +1,24 @@
 # Certification inventory
 
-The repository keeps discovery separate from publication:
+The repository keeps discovery separate from full-guide publication, while the
+site exposes both in its generated certification inventory. That page lists
+every row in the seed catalog, links to the official listing, and marks whether
+a complete guide is published.
 
-- `config/certification-seeds.json` is the source-backed research inventory.
+- `config/certification-seeds.json` is the source-backed research inventory and
+  drives the site's complete certification inventory.
 - `CERTIFICATIONS.txt` is its generated, tab-separated Python query input.
 - [Certification lifecycle and name history](CERTIFICATION-LIFECYCLE.md) shows
   recorded update/release dates, retirements, replacements and aliases.
-- `config/exams.json` contains only credentials with complete study guides and
-  the metadata needed to publish and monitor them.
+- `config/exams.json` contains credentials with complete study guides and the
+  metadata needed to publish and monitor those guides. The site's study guide
+  catalog is limited to these entries.
 
-An entry in the seed catalog means “research or enrich this credential.” It does
-not mean that a guide exists, that its sources have been reviewed, or that it is
-ready for the website. Repository validation requires every published guide to
-have a seed, but research-only seeds are allowed and expected.
+An entry in the seed catalog means “research or enrich this credential.” Its
+inventory row is visible on the site, but that does not mean a guide exists or
+that its sources have been reviewed. Repository validation requires every
+published guide to have a seed, while research-only seeds remain valid inventory
+entries without a full guide.
 
 ## Current coverage baseline
 
@@ -282,7 +288,7 @@ dates. The generated text file has four tab-separated columns: `vendor_id`,
 unpack exactly three columns must be updated; header-based readers can select the
 fields they need. Query the current title and each alias separately, then merge
 matches under the same vendor/exam identity. A matching old course name does not
-prove alignment with the current blueprint. See the example in the [README](../README.md).
+prove alignment with the current blueprint. See the example in the [repository README](https://github.com/cterpening/certification-study-library/blob/main/README.md).
 
 Lifecycle facts live in the same catalog. Set `lifecycle.checked_on` to the date
 the cited evidence was checked. Each `blueprint_updates` entry needs an
