@@ -6,17 +6,18 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-04
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-04
+upcoming_change_checked: 2026-10-28
 ---
 
 # C1000-175 IBM Security QRadar SIEM V7.5 Associate Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide maps the live IBM exam contract checked September 4, 2026. It is unofficial and may contain errors. The [official C1000-175 exam record](https://www.ibm.com/training/credentials/getExam/C1000-175) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide maps the live IBM exam contract checked October 28, 2026. It is unofficial and may contain errors. The [official C1000-175 exam record](https://www.ibm.com/training/credentials/getExam/C1000-175) is authoritative.
 
 **Assessment contract:** 62 questions; 41 required to pass; 90 minutes.<br>
 **Current status:** Live; no replacement or withdrawal notice appeared in the official record when checked.<br>
+**Current release example (not an exam requirement):** IBM published QRadar SIEM 7.5.0 Update Package 16 on September 1, 2026. It is cumulative maintenance; IBM documents release-specific upgrade paths and does not support a direct 7.5 UP16-to-7.6 upgrade in the cited notice. Check the current [UP16 technical note](https://www.ibm.com/support/pages/node/7283630) and [security bulletin](https://www.ibm.com/support/pages/node/7286010) before planning a supported-system maintenance change. Never practice upgrades on production systems.
 **Practice boundary:** Use an authorized lab. Never ingest real sensitive logs or scan networks without permission.
 
 ## How to use this guide
@@ -56,7 +57,9 @@ Navigate dashboards, Log Activity, Network Activity, Offenses, Assets, Reports, 
 
 The IBM Security App Exchange distributes supported content/apps; the Assistant helps discover/manage app content, while installed apps still need version, permission, resource, and health review. Treat third-party extensions as software dependencies.
 
-Events describe discrete log records; flows summarize network conversations. Flow sources can come from exported flow records or packet inspection. QFlow/QNI-style inspection adds visibility at different depth and cost. QNI versus QIF choices depend on deployment and inspection purpose; preserve the official product terminology/version in the lab.
+Events describe discrete log records; flows summarize network conversations. Flow sources can come from exported flow records or packet inspection. For the objective’s QNI-versus-QIF distinction, QRadar Network Insights (QNI) analyzes network sessions in real time and extracts metadata/application content for detection; QRadar Incident Forensics (QIF) supports post-incident investigation by searching, reconstructing, and analyzing captured network data. They serve complementary detection and retrospective-investigation roles, and require the appropriate product/deployment and available packet data. [IBM QNI installation guide](https://www.ibm.com/docs/en/SS42VS_7.5/pdf/b_qni_ig.pdf) · [IBM QRadar NDR overview](https://www.ibm.com/docs/en/qsip/7.6.0?topic=qradar-network-detection-response).
+
+**QNI inspection levels:** Basic identifies flows by the 5-tuple and counts bytes/packets; Enriched applies protocol/domain inspectors to produce attributes; Advanced adds deeper content extraction and file inspection. These are increasing analysis-depth choices with deployment and performance implications, not fixed throughput promises. [IBM flow inspection levels](https://www.ibm.com/docs/en/qradar-on-cloud?topic=levels-configuring-flow-inspection-level).
 
 ## 3. Rules, building blocks, and offenses
 
@@ -123,4 +126,6 @@ This is a selective learning path, not a complete list of QRadar resources.
 |---|---|---:|
 | [Official C1000-175 exam record](https://www.ibm.com/training/credentials/getExam/C1000-175) | Public | **25 minutes** for contract and objectives |
 | [IBM QRadar SIEM 7.5 documentation](https://www.ibm.com/docs/en/qsip/7.5) | Public; automation may be blocked | **18–28 hours** for selected concepts and procedures |
+| [QRadar SIEM Foundations (BQ105G)](https://www.ibm.com/training/course/ibm-qradar-siem-foundations-BQ105G) | Paid, instructor-led; labs included | **24 hours** | QRadar SIEM 7.5 concepts, flows, rules, offenses, AQL, assets, reporting and administration; course description read, labs not inspected |
+| [QRadar SIEM Foundation badge requirements](https://www.ibm.com/support/pages/how-can-i-earn-ibm-qradar-siem-foundation-badge-completing-security-learning-academy-course) | Free Security Learning Academy account | 13–14h estimated lessons; separate 2h quiz estimate | IBM lists 19 lessons; the badge quiz is not a C1000-175 practice exam |
 | Eight labs in this guide | Authorized QRadar lab | **18–26 hours** plus one timed review |

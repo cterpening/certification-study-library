@@ -6,19 +6,20 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-04
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-04
+upcoming_change_checked: 2026-10-28
 ---
 
 # 1Z0-1084-26 Oracle Cloud Infrastructure Developer Professional Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide maps Oracle University's public 2026 learning-path scope checked September 4, 2026. It is unofficial and may contain errors. The [official OCI Developer Professional learning path](https://mylearn.oracle.com/ou/learning-path/become-an-oci-developer-professional-2026/162926) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide maps Oracle University's public 2026 learning-path scope checked October 28, 2026. It is unofficial and may contain errors. The [official OCI Developer Professional learning path](https://mylearn.oracle.com/ou/learning-path/become-an-oci-developer-professional-2026/162926) is authoritative.
 
 **Assessment contract exposed by the current path:** Oracle Cloud Infrastructure Developer Professional, exam 1Z0-1084-26, 90 minutes.<br>
 **Published scope:** cloud-native and microservices fundamentals; OKE and Container Registry; Functions and API Gateway; Streaming, Queue, and Events; OCI Streaming with Apache Kafka; Vault, image scanning, and testing; application observability.<br>
 **Source boundary:** the public path exposes capabilities rather than weights, question count, or passing score. This guide does not infer them. **VERIFY CURRENT** in MyLearn before scheduling.
 
+**Japanese-language option (Japan only; checked October 28, 2026):** Oracle's September 4 launch notice added 1Z0-1084-26-JPN. The current Japanese exam list shows 90 minutes, 50 questions, and a 68% pass score for that distinct code. This route does not replace the English exam or its contract. [Japan launch notice](https://www.oracle.com/jp/education/news/) · [Japanese exam list](https://www.oracle.com/jp/education/certification/certification-exam-list/).
 ## How to use this guide
 
 For each topic, produce a working request or event path and evidence for success, rejection, retry, scaling, failure, and recovery. Keep source, artifact, configuration, secret, and runtime identity distinct. Use only authorized OCI resources, synthetic data, and disposable environments.
@@ -89,6 +90,8 @@ Instrument service-level outcomes, latency, errors, saturation, dependency calls
 
 Build alerts from user impact and actionable failure conditions. A dashboard should let a responder move from symptom to suspect deployment, dependency, partition, route, or policy. Test telemetry during degraded behavior, not only normal operation.
 
+**Related item: OKE version-sensitive behavior.** The current Oracle calendar lists Kubernetes 1.36.4 as GA and 1.37.0 as preview for OC1 only; preview 1.37 is not recommended for production. On 1.37, TLS Secrets must be in the Service namespace and LoadBalancer defaults differ. For a disposable lab, set the intended shape explicitly and test namespace scoping; do not turn preview behavior into a general exam claim. Check the [current OKE version calendar](https://docs.oracle.com/en-us/iaas/Content/ContEng/Concepts/contengaboutk8sversions.htm).
+
 ## Integrated practice scenarios
 
 1. **Order API:** Publish a secured API Gateway route to a Function that validates a request, writes an idempotent command to Queue, and exposes correlated status without duplicate fulfillment.
@@ -128,5 +131,6 @@ This is a selective learning path, not a complete list of OCI development resour
 | Resource | Access | Estimated time |
 |---|---|---:|
 | [Official OCI Developer Professional learning path](https://mylearn.oracle.com/ou/learning-path/become-an-oci-developer-professional-2026/162926) | Oracle account/subscription may be required | **19+ hours** as published by Oracle University |
+| [Deploy an application with OCI DevOps CI/CD on Kubernetes](https://docs.oracle.com/en/learn/oci-devops-cicd-on-kubernetes/index.html) | Public tutorial; OCI tenancy, OKE and registry resources required; charges may apply | No publisher duration; 2–4 hours is a coordinator estimate with cleanup | Build a project/pipeline and deploy a sample app; complements rather than replaces the Functions, streaming and security scope |
 | [OCI services and developer documentation](https://docs.oracle.com/en-us/iaas/Content/services.htm) | Public | **10–14 hours** targeted study |
 | Eight labs in this guide | Authorized OCI tenancy or local substitutes | **26–38 hours** plus one timed build-and-diagnose exercise |

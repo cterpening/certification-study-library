@@ -54050,5 +54050,908 @@
         "blocked_findings": 1
       }
     }
+,
+    {
+      "id": "freshness-2026-10-28-nonms-g03",
+      "title": "IBM and Oracle non-Microsoft refresh group 03",
+      "rubric_version": 1,
+      "created_on": "2026-10-28",
+      "completed_on": "2026-10-28",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Third ten of the frozen eligible non-Microsoft queue, after the Sep 2 source-validation group; sorted by last source-validation date, vendor ID and exam code.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "ibm-oracle-exam-research",
+          "ibm-oracle-technical-research",
+          "ibm-oracle-learning-resources",
+          "refresh-coordinator"
+        ],
+        "independence": "mixed",
+        "human_review": false
+      },
+      "exam_codes": [
+        "C1000-175",
+        "C1000-184",
+        "C1000-185",
+        "C1000-197",
+        "C1000-206",
+        "1Z0-1067-26",
+        "1Z0-1072-26",
+        "1Z0-1084-26",
+        "1Z0-1085-26",
+        "1Z0-1104-26"
+      ],
+      "results": [
+        {
+          "exam_code": "C1000-175",
+          "vendor_id": "ibm",
+          "guide_path": "guides/C1000-175-ibm-security-qradar-siem-associate.md",
+          "baseline_sha256": "d122da2d864addd16135463609901523b9f4388176da403c4f000464b220e5ad",
+          "scanned_on": "2026-10-28",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "blocked",
+              "notes": "The configured IBM getExam detail endpoint could not be read; credential identity is supported by other current official catalog evidence, but current contract detail could not be independently checked."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party product docs/release references were checked and version-bound examples added. IBM Docs pages sometimes returned 403 in the web reader; guide notes state the limitation and use available support/announcement evidence without procedural claims."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "IBM QRadar/Guardium/watsonx and Oracle OCI/Data Safe release channels were searched. New product examples remain distinct from exam scope; OKE 1.37 preview is explicitly not a production baseline."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "New provider training, learning paths, tutorials and Architecture Center references were compared with data/sources.json. Scoped source health has 57 accessible records, zero blocked and zero broken; Oracle LiveLabs was omitted after two timeouts."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "English exam contracts remain distinct from Oracle -JPN localized options; IBM current release/product versions remain distinct from exam versions. Limited IBM exam-detail access and MyLearn adapter cosmetic changes are documented."
+            }
+          },
+          "findings": [
+            {
+              "id": "qradar-up16-release",
+              "check": "official_release_channels",
+              "category": "updated-source",
+              "title": "QRadar 7.5 UP16 maintenance release",
+              "url": "https://www.ibm.com/support/pages/node/7283630",
+              "source_type": "release-notes",
+              "affected_exams": [
+                "C1000-175"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "IBM published QRadar 7.5.0 UP16 on 2026-09-01. The support note gives release-specific upgrade boundaries; UP16 is not a new exam objective.",
+              "recommendation": "Keep this as a dated maintenance example and verify upgrade compatibility before operations.",
+              "disposition": "applied",
+              "source_id": "c1000-175-qradar-up16-tech-note",
+              "resolution": "Added a bounded current-release note and official release/security references; no production-upgrade lab is proposed."
+            },
+            {
+              "id": "ibm-c1000-175-exam-detail-limited",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "IBM dynamic exam-detail page did not expose current contract during this pass",
+              "url": "https://www.ibm.com/training/credentials/getExam/C1000-175",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "C1000-175"
+              ],
+              "catalog_status": "registered",
+              "confidence": "medium",
+              "evidence": "The configured IBM getExam endpoint could not be read by the public reader. Credential/catalog evidence confirms the credential identity, but this pass could not independently verify all current contract details from that exact dynamic page.",
+              "recommendation": "Retain the exact accepted objective snapshot and existing contract with a visible access limitation; recheck the direct IBM endpoint before any contract change.",
+              "disposition": "blocked"
+            }
+          ],
+          "notes": "Full role research and applied changes are recorded in docs/research/2026-10-28-nonms-refresh-group-03.md. Objective/status snapshots were unchanged because the monitor differences were extraction metadata only. Scoped source health: 57 OK, zero blocked/broken; Oracle LiveLabs was excluded after repeat timeouts. No product labs or course interiors were executed."
+        },
+        {
+          "exam_code": "C1000-184",
+          "vendor_id": "ibm",
+          "guide_path": "guides/C1000-184-ibm-db2-13-zos-database-administrator.md",
+          "baseline_sha256": "edb07e555331ce9b160006e44e83f624c372f441f095843a383d0b4666076b04",
+          "scanned_on": "2026-10-28",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "blocked",
+              "notes": "The configured IBM getExam detail endpoint could not be read; credential identity is supported by other current official catalog evidence, but current contract detail could not be independently checked."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party product docs/release references were checked and version-bound examples added. IBM Docs pages sometimes returned 403 in the web reader; guide notes state the limitation and use available support/announcement evidence without procedural claims."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "IBM QRadar/Guardium/watsonx and Oracle OCI/Data Safe release channels were searched. New product examples remain distinct from exam scope; OKE 1.37 preview is explicitly not a production baseline."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "New provider training, learning paths, tutorials and Architecture Center references were compared with data/sources.json. Scoped source health has 57 accessible records, zero blocked and zero broken; Oracle LiveLabs was omitted after two timeouts."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "English exam contracts remain distinct from Oracle -JPN localized options; IBM current release/product versions remain distinct from exam versions. Limited IBM exam-detail access and MyLearn adapter cosmetic changes are documented."
+            }
+          },
+          "findings": [
+            {
+              "id": "db2-function-level-509",
+              "check": "official_product_documentation",
+              "category": "updated-source",
+              "title": "Db2 13 function level 509",
+              "url": "https://www.ibm.com/docs/en/db2-for-zos/13.0.0?topic=levels-function-level-509",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "C1000-184"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "IBM Docs indexed April 2026 FL509 changes, including utility-history SHRLEVEL and real-time synchronous-read I/O counters; tool compatibility is separately tracked. Direct web-reader access returned 403.",
+              "recommendation": "Keep it as an optional release example; check code/catalog/function/APPLCOMPAT and tool levels before using it.",
+              "disposition": "applied",
+              "source_id": "c1000-184-db2-fl509",
+              "resolution": "Added a short dated related-item example with the IBM docs access limitation and compatibility source."
+            },
+            {
+              "id": "db2-training-tutorial",
+              "check": "catalog_comparison",
+              "category": "new-source",
+              "title": "Current Db2 13 DBA learning resources",
+              "url": "https://www.ibm.com/docs/en/SSEPEK_13.0.0/pdf/db2z_13_introbook.pdf",
+              "source_type": "official-training",
+              "affected_exams": [
+                "C1000-184"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "IBM publishes DB2I/SPUFI tutorial material and a current CV845G three-day listing; the detailed CV845G syllabus was not available.",
+              "recommendation": "Disclose subsystem/ID prerequisites and course-outline limits.",
+              "disposition": "applied",
+              "source_id": "c1000-184-db2-intro-pdf",
+              "resolution": "Added the tutorial and course routes; course time/scope and gated lab limits are labeled."
+            },
+            {
+              "id": "ibm-c1000-184-exam-detail-limited",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "IBM dynamic exam-detail page did not expose current contract during this pass",
+              "url": "https://www.ibm.com/training/credentials/getExam/C1000-184",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "C1000-184"
+              ],
+              "catalog_status": "registered",
+              "confidence": "medium",
+              "evidence": "The configured IBM getExam endpoint could not be read by the public reader. Credential/catalog evidence confirms the credential identity, but this pass could not independently verify all current contract details from that exact dynamic page.",
+              "recommendation": "Retain the exact accepted objective snapshot and existing contract with a visible access limitation; recheck the direct IBM endpoint before any contract change.",
+              "disposition": "blocked"
+            }
+          ],
+          "notes": "Full role research and applied changes are recorded in docs/research/2026-10-28-nonms-refresh-group-03.md. Objective/status snapshots were unchanged because the monitor differences were extraction metadata only. Scoped source health: 57 OK, zero blocked/broken; Oracle LiveLabs was excluded after repeat timeouts. No product labs or course interiors were executed."
+        },
+        {
+          "exam_code": "C1000-185",
+          "vendor_id": "ibm",
+          "guide_path": "guides/C1000-185-ibm-watsonx-generative-ai-engineer.md",
+          "baseline_sha256": "5703f4ca31ded65bc7955446a85482031f8526d825a3d5d662438253b23fcf03",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current IBM credential pages/catalog and Oracle Japan launch/list were checked. Objective monitor deltas were compared in temporary candidates and proved to be title/boilerplate/trailing-whitespace only; no objective snapshot was accepted. Three IBM dynamic getExam pages remain inaccessible and are explicitly blocked."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party product docs/release references were checked and version-bound examples added. IBM Docs pages sometimes returned 403 in the web reader; guide notes state the limitation and use available support/announcement evidence without procedural claims."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "IBM QRadar/Guardium/watsonx and Oracle OCI/Data Safe release channels were searched. New product examples remain distinct from exam scope; OKE 1.37 preview is explicitly not a production baseline."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "New provider training, learning paths, tutorials and Architecture Center references were compared with data/sources.json. Scoped source health has 57 accessible records, zero blocked and zero broken; Oracle LiveLabs was omitted after two timeouts."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "English exam contracts remain distinct from Oracle -JPN localized options; IBM current release/product versions remain distinct from exam versions. Limited IBM exam-detail access and MyLearn adapter cosmetic changes are documented."
+            }
+          },
+          "findings": [
+            {
+              "id": "watsonx-governance-product-example",
+              "check": "official_release_channels",
+              "category": "new-source",
+              "title": "IBM announces agent governance examples",
+              "url": "https://www.ibm.com/new/announcements/new-in-ibm-watsonx-governance-govern-ai-agents-as-you-build-expand-accountability-and-streamline-compliance",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "C1000-185",
+                "C1000-206"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "IBM’s 2026-10-14 announcement describes agent/tool/MCP/knowledge-source discovery, rule checks and developer-facing risk findings. It is a product example with unspecified plan entitlement, not an exam requirement.",
+              "recommendation": "Use only as an optional vendor-specific governance example, not a universal safety control.",
+              "disposition": "applied",
+              "source_id": "c1000-185-watsonx-governance-announcement",
+              "resolution": "Added distinct, dated related-item callouts to the watsonx engineering and AI fundamentals guides."
+            }
+          ],
+          "notes": "Full role research and applied changes are recorded in docs/research/2026-10-28-nonms-refresh-group-03.md. Objective/status snapshots were unchanged because the monitor differences were extraction metadata only. Scoped source health: 57 OK, zero blocked/broken; Oracle LiveLabs was excluded after repeat timeouts. No product labs or course interiors were executed."
+        },
+        {
+          "exam_code": "C1000-197",
+          "vendor_id": "ibm",
+          "guide_path": "guides/C1000-197-ibm-guardium-data-protection-administrator.md",
+          "baseline_sha256": "6038fb10f27457ff45ee082ef040830fc4c81869dc9510715d9d8b27eb5eef68",
+          "scanned_on": "2026-10-28",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "blocked",
+              "notes": "The configured IBM getExam detail endpoint could not be read; credential identity is supported by other current official catalog evidence, but current contract detail could not be independently checked."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party product docs/release references were checked and version-bound examples added. IBM Docs pages sometimes returned 403 in the web reader; guide notes state the limitation and use available support/announcement evidence without procedural claims."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "IBM QRadar/Guardium/watsonx and Oracle OCI/Data Safe release channels were searched. New product examples remain distinct from exam scope; OKE 1.37 preview is explicitly not a production baseline."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "New provider training, learning paths, tutorials and Architecture Center references were compared with data/sources.json. Scoped source health has 57 accessible records, zero blocked and zero broken; Oracle LiveLabs was omitted after two timeouts."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "English exam contracts remain distinct from Oracle -JPN localized options; IBM current release/product versions remain distinct from exam versions. Limited IBM exam-detail access and MyLearn adapter cosmetic changes are documented."
+            }
+          },
+          "findings": [
+            {
+              "id": "guardium-1224-release",
+              "check": "official_release_channels",
+              "category": "updated-source",
+              "title": "Guardium 12.2.4 release and component patch constraints",
+              "url": "https://www.ibm.com/support/pages/node/7288587",
+              "source_type": "release-notes",
+              "affected_exams": [
+                "C1000-197"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "IBM Support release evidence describes Guardium 12.2.4 changes and patch prerequisites; the 12.x guide baseline is retained and the current exam-detail route was inaccessible.",
+              "recommendation": "Do not use a release summary as a patch procedure; check installed GPU/component/platform and current support instructions.",
+              "disposition": "applied",
+              "source_id": "c1000-197-gdp-1224-release",
+              "resolution": "Added a bounded release-watch note, warned against patching from summary text, and preserved the v12.x exam baseline."
+            },
+            {
+              "id": "ibm-c1000-197-exam-detail-limited",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "IBM dynamic exam-detail page did not expose current contract during this pass",
+              "url": "https://www.ibm.com/training/credentials/getExam/C1000-197",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "C1000-197"
+              ],
+              "catalog_status": "registered",
+              "confidence": "medium",
+              "evidence": "The configured IBM getExam endpoint could not be read by the public reader. Credential/catalog evidence confirms the credential identity, but this pass could not independently verify all current contract details from that exact dynamic page.",
+              "recommendation": "Retain the exact accepted objective snapshot and existing contract with a visible access limitation; recheck the direct IBM endpoint before any contract change.",
+              "disposition": "blocked"
+            }
+          ],
+          "notes": "Full role research and applied changes are recorded in docs/research/2026-10-28-nonms-refresh-group-03.md. Objective/status snapshots were unchanged because the monitor differences were extraction metadata only. Scoped source health: 57 OK, zero blocked/broken; Oracle LiveLabs was excluded after repeat timeouts. No product labs or course interiors were executed."
+        },
+        {
+          "exam_code": "C1000-206",
+          "vendor_id": "ibm",
+          "guide_path": "guides/C1000-206-ibm-artificial-intelligence-associate.md",
+          "baseline_sha256": "4b97a5b4a7c04d8567ecf9c36f04f558e42cd5b15eeed90e6cfaab71e5708263",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current IBM credential pages/catalog and Oracle Japan launch/list were checked. Objective monitor deltas were compared in temporary candidates and proved to be title/boilerplate/trailing-whitespace only; no objective snapshot was accepted. Three IBM dynamic getExam pages remain inaccessible and are explicitly blocked."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party product docs/release references were checked and version-bound examples added. IBM Docs pages sometimes returned 403 in the web reader; guide notes state the limitation and use available support/announcement evidence without procedural claims."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "IBM QRadar/Guardium/watsonx and Oracle OCI/Data Safe release channels were searched. New product examples remain distinct from exam scope; OKE 1.37 preview is explicitly not a production baseline."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "New provider training, learning paths, tutorials and Architecture Center references were compared with data/sources.json. Scoped source health has 57 accessible records, zero blocked and zero broken; Oracle LiveLabs was omitted after two timeouts."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "English exam contracts remain distinct from Oracle -JPN localized options; IBM current release/product versions remain distinct from exam versions. Limited IBM exam-detail access and MyLearn adapter cosmetic changes are documented."
+            }
+          },
+          "findings": [
+            {
+              "id": "watsonx-governance-product-example",
+              "check": "official_release_channels",
+              "category": "new-source",
+              "title": "IBM announces agent governance examples",
+              "url": "https://www.ibm.com/new/announcements/new-in-ibm-watsonx-governance-govern-ai-agents-as-you-build-expand-accountability-and-streamline-compliance",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "C1000-185",
+                "C1000-206"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "IBM’s 2026-10-14 announcement describes agent/tool/MCP/knowledge-source discovery, rule checks and developer-facing risk findings. It is a product example with unspecified plan entitlement, not an exam requirement.",
+              "recommendation": "Use only as an optional vendor-specific governance example, not a universal safety control.",
+              "disposition": "applied",
+              "source_id": "c1000-185-watsonx-governance-announcement",
+              "resolution": "Added distinct, dated related-item callouts to the watsonx engineering and AI fundamentals guides."
+            }
+          ],
+          "notes": "Full role research and applied changes are recorded in docs/research/2026-10-28-nonms-refresh-group-03.md. Objective/status snapshots were unchanged because the monitor differences were extraction metadata only. Scoped source health: 57 OK, zero blocked/broken; Oracle LiveLabs was excluded after repeat timeouts. No product labs or course interiors were executed."
+        },
+        {
+          "exam_code": "1Z0-1067-26",
+          "vendor_id": "oracle",
+          "guide_path": "guides/1Z0-1067-26-oracle-cloud-infrastructure-cloud-operations-professional.md",
+          "baseline_sha256": "6b5d5370c1a52729bd52ed401e493dc77769f8fe06d335fd097f751ecec296b3",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current IBM credential pages/catalog and Oracle Japan launch/list were checked. Objective monitor deltas were compared in temporary candidates and proved to be title/boilerplate/trailing-whitespace only; no objective snapshot was accepted. Three IBM dynamic getExam pages remain inaccessible and are explicitly blocked."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party product docs/release references were checked and version-bound examples added. IBM Docs pages sometimes returned 403 in the web reader; guide notes state the limitation and use available support/announcement evidence without procedural claims."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "IBM QRadar/Guardium/watsonx and Oracle OCI/Data Safe release channels were searched. New product examples remain distinct from exam scope; OKE 1.37 preview is explicitly not a production baseline."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "New provider training, learning paths, tutorials and Architecture Center references were compared with data/sources.json. Scoped source health has 57 accessible records, zero blocked and zero broken; Oracle LiveLabs was omitted after two timeouts."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "English exam contracts remain distinct from Oracle -JPN localized options; IBM current release/product versions remain distinct from exam versions. Limited IBM exam-detail access and MyLearn adapter cosmetic changes are documented."
+            }
+          },
+          "findings": [
+            {
+              "id": "oracle-japanese-exam-launch",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "new-source",
+              "title": "Oracle launches Japanese-language variants for five OCI exams",
+              "url": "https://www.oracle.com/jp/education/news/",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "1Z0-1067-26",
+                "1Z0-1072-26",
+                "1Z0-1084-26",
+                "1Z0-1085-26",
+                "1Z0-1104-26"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Oracle’s 2026-09-04 announcement says Japanese-language variants began that day; each variant has a separate -JPN exam code. English objective/contract snapshots did not change.",
+              "recommendation": "Keep localized code, language, scheduling and contract separate from English exam details.",
+              "disposition": "applied",
+              "source_id": "oracle-jp-cloud-exams-announcement",
+              "resolution": "Added a dated Japan-only language route note to all five guides; did not change English objective snapshots."
+            },
+            {
+              "id": "oracle-jpn-contract-1z0-1067-26",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "updated-source",
+              "title": "1Z0-1067-26-JPN localized exam contract",
+              "url": "https://www.oracle.com/jp/education/certification/certification-exam-list/",
+              "source_type": "credential-page",
+              "affected_exams": [
+                "1Z0-1067-26"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The current Oracle Japan exam list gives 1Z0-1067-26-JPN: 90 minutes, 50 questions, 68%. These details are Japan-specific and are not the English exam contract.",
+              "recommendation": "Retain the JPN code and localized contract as a separate option; do not infer an English-language blueprint change.",
+              "disposition": "applied",
+              "source_id": "oracle-jp-certification-exam-list",
+              "resolution": "Added the Japan-only route and code-specific contract to the guide."
+            },
+            {
+              "id": "oci-apm-learning",
+              "check": "catalog_comparison",
+              "category": "new-source",
+              "title": "OCI APM and OpenTelemetry tutorial",
+              "url": "https://docs.oracle.com/en/learn/oci-apm-with-opentelemetry/index.html",
+              "source_type": "official-training",
+              "affected_exams": [
+                "1Z0-1067-26"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Oracle tutorial instruments a sample Node.js application and sends telemetry to OCI APM/Logging Analytics; tenant usage may incur charges.",
+              "recommendation": "Use only in an authorized, budgeted tenancy; estimate duration separately from vendor-stated runtime.",
+              "disposition": "applied",
+              "source_id": "oracle-oci-apm-opentelemetry-tutorial",
+              "resolution": "Added an optional current tutorial row with tenancy/cost boundaries."
+            },
+            {
+              "id": "oke-current-version-boundary",
+              "check": "official_product_documentation",
+              "category": "updated-source",
+              "title": "Current OKE GA and preview version boundary",
+              "url": "https://docs.oracle.com/en-us/iaas/Content/ContEng/Concepts/contengaboutk8sversions.htm",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "1Z0-1067-26",
+                "1Z0-1072-26",
+                "1Z0-1084-26"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Oracle lists Kubernetes 1.36.4 as GA and 1.37.0 as OC1-only preview; preview is not recommended for production and has namespace/load-balancer behavior changes.",
+              "recommendation": "Keep versions dated and do not present preview behavior as a general exam baseline.",
+              "disposition": "applied",
+              "source_id": "oracle-oke-version-calendar",
+              "resolution": "Added bounded OKE notes only to operations, architecture and developer guides where it fits existing scope."
+            }
+          ],
+          "notes": "Full role research and applied changes are recorded in docs/research/2026-10-28-nonms-refresh-group-03.md. Objective/status snapshots were unchanged because the monitor differences were extraction metadata only. Scoped source health: 57 OK, zero blocked/broken; Oracle LiveLabs was excluded after repeat timeouts. No product labs or course interiors were executed."
+        },
+        {
+          "exam_code": "1Z0-1072-26",
+          "vendor_id": "oracle",
+          "guide_path": "guides/1Z0-1072-26-oracle-cloud-infrastructure-architect-associate.md",
+          "baseline_sha256": "188d50a1a4b3568599300cb8d36bd8365227074ebacf3cdeb5d06e84112855fd",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current IBM credential pages/catalog and Oracle Japan launch/list were checked. Objective monitor deltas were compared in temporary candidates and proved to be title/boilerplate/trailing-whitespace only; no objective snapshot was accepted. Three IBM dynamic getExam pages remain inaccessible and are explicitly blocked."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party product docs/release references were checked and version-bound examples added. IBM Docs pages sometimes returned 403 in the web reader; guide notes state the limitation and use available support/announcement evidence without procedural claims."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "IBM QRadar/Guardium/watsonx and Oracle OCI/Data Safe release channels were searched. New product examples remain distinct from exam scope; OKE 1.37 preview is explicitly not a production baseline."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "New provider training, learning paths, tutorials and Architecture Center references were compared with data/sources.json. Scoped source health has 57 accessible records, zero blocked and zero broken; Oracle LiveLabs was omitted after two timeouts."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "English exam contracts remain distinct from Oracle -JPN localized options; IBM current release/product versions remain distinct from exam versions. Limited IBM exam-detail access and MyLearn adapter cosmetic changes are documented."
+            }
+          },
+          "findings": [
+            {
+              "id": "oracle-japanese-exam-launch",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "new-source",
+              "title": "Oracle launches Japanese-language variants for five OCI exams",
+              "url": "https://www.oracle.com/jp/education/news/",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "1Z0-1067-26",
+                "1Z0-1072-26",
+                "1Z0-1084-26",
+                "1Z0-1085-26",
+                "1Z0-1104-26"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Oracle’s 2026-09-04 announcement says Japanese-language variants began that day; each variant has a separate -JPN exam code. English objective/contract snapshots did not change.",
+              "recommendation": "Keep localized code, language, scheduling and contract separate from English exam details.",
+              "disposition": "applied",
+              "source_id": "oracle-jp-cloud-exams-announcement",
+              "resolution": "Added a dated Japan-only language route note to all five guides; did not change English objective snapshots."
+            },
+            {
+              "id": "oracle-jpn-contract-1z0-1072-26",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "updated-source",
+              "title": "1Z0-1072-26-JPN localized exam contract",
+              "url": "https://www.oracle.com/jp/education/certification/certification-exam-list/",
+              "source_type": "credential-page",
+              "affected_exams": [
+                "1Z0-1072-26"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The current Oracle Japan exam list gives 1Z0-1072-26-JPN: 90 minutes, 50 questions, 68%. These details are Japan-specific and are not the English exam contract.",
+              "recommendation": "Retain the JPN code and localized contract as a separate option; do not infer an English-language blueprint change.",
+              "disposition": "applied",
+              "source_id": "oracle-jp-certification-exam-list",
+              "resolution": "Added the Japan-only route and code-specific contract to the guide."
+            },
+            {
+              "id": "oci-network-design-resource",
+              "check": "catalog_comparison",
+              "category": "new-source",
+              "title": "Current OCI network architecture and design playbook",
+              "url": "https://docs.oracle.com/en/solutions/oci-best-practices/define-your-network-and-connectivity-architecture1.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "1Z0-1072-26"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Oracle Architecture Center covers redundant connectivity, non-overlapping CIDRs, service gateways and hub/spoke tradeoffs.",
+              "recommendation": "Apply to design exercises, not as complete exam coverage.",
+              "disposition": "applied",
+              "source_id": "oracle-oci-network-architecture",
+              "resolution": "Added current network design references as optional architecture guidance."
+            },
+            {
+              "id": "oke-current-version-boundary",
+              "check": "official_product_documentation",
+              "category": "updated-source",
+              "title": "Current OKE GA and preview version boundary",
+              "url": "https://docs.oracle.com/en-us/iaas/Content/ContEng/Concepts/contengaboutk8sversions.htm",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "1Z0-1067-26",
+                "1Z0-1072-26",
+                "1Z0-1084-26"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Oracle lists Kubernetes 1.36.4 as GA and 1.37.0 as OC1-only preview; preview is not recommended for production and has namespace/load-balancer behavior changes.",
+              "recommendation": "Keep versions dated and do not present preview behavior as a general exam baseline.",
+              "disposition": "applied",
+              "source_id": "oracle-oke-version-calendar",
+              "resolution": "Added bounded OKE notes only to operations, architecture and developer guides where it fits existing scope."
+            }
+          ],
+          "notes": "Full role research and applied changes are recorded in docs/research/2026-10-28-nonms-refresh-group-03.md. Objective/status snapshots were unchanged because the monitor differences were extraction metadata only. Scoped source health: 57 OK, zero blocked/broken; Oracle LiveLabs was excluded after repeat timeouts. No product labs or course interiors were executed."
+        },
+        {
+          "exam_code": "1Z0-1084-26",
+          "vendor_id": "oracle",
+          "guide_path": "guides/1Z0-1084-26-oracle-cloud-infrastructure-developer-professional.md",
+          "baseline_sha256": "92a38e0d1b5b6b5ac5df840fd265a2b3fb8fcd3ebf672a2c99a2a5845d59af86",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current IBM credential pages/catalog and Oracle Japan launch/list were checked. Objective monitor deltas were compared in temporary candidates and proved to be title/boilerplate/trailing-whitespace only; no objective snapshot was accepted. Three IBM dynamic getExam pages remain inaccessible and are explicitly blocked."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party product docs/release references were checked and version-bound examples added. IBM Docs pages sometimes returned 403 in the web reader; guide notes state the limitation and use available support/announcement evidence without procedural claims."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "IBM QRadar/Guardium/watsonx and Oracle OCI/Data Safe release channels were searched. New product examples remain distinct from exam scope; OKE 1.37 preview is explicitly not a production baseline."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "New provider training, learning paths, tutorials and Architecture Center references were compared with data/sources.json. Scoped source health has 57 accessible records, zero blocked and zero broken; Oracle LiveLabs was omitted after two timeouts."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "English exam contracts remain distinct from Oracle -JPN localized options; IBM current release/product versions remain distinct from exam versions. Limited IBM exam-detail access and MyLearn adapter cosmetic changes are documented."
+            }
+          },
+          "findings": [
+            {
+              "id": "oracle-japanese-exam-launch",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "new-source",
+              "title": "Oracle launches Japanese-language variants for five OCI exams",
+              "url": "https://www.oracle.com/jp/education/news/",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "1Z0-1067-26",
+                "1Z0-1072-26",
+                "1Z0-1084-26",
+                "1Z0-1085-26",
+                "1Z0-1104-26"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Oracle’s 2026-09-04 announcement says Japanese-language variants began that day; each variant has a separate -JPN exam code. English objective/contract snapshots did not change.",
+              "recommendation": "Keep localized code, language, scheduling and contract separate from English exam details.",
+              "disposition": "applied",
+              "source_id": "oracle-jp-cloud-exams-announcement",
+              "resolution": "Added a dated Japan-only language route note to all five guides; did not change English objective snapshots."
+            },
+            {
+              "id": "oracle-jpn-contract-1z0-1084-26",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "updated-source",
+              "title": "1Z0-1084-26-JPN localized exam contract",
+              "url": "https://www.oracle.com/jp/education/certification/certification-exam-list/",
+              "source_type": "credential-page",
+              "affected_exams": [
+                "1Z0-1084-26"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The current Oracle Japan exam list gives 1Z0-1084-26-JPN: 90 minutes, 50 questions, 68%. These details are Japan-specific and are not the English exam contract.",
+              "recommendation": "Retain the JPN code and localized contract as a separate option; do not infer an English-language blueprint change.",
+              "disposition": "applied",
+              "source_id": "oracle-jp-certification-exam-list",
+              "resolution": "Added the Japan-only route and code-specific contract to the guide."
+            },
+            {
+              "id": "oci-devops-oke-training",
+              "check": "catalog_comparison",
+              "category": "new-source",
+              "title": "OCI DevOps CI/CD on Kubernetes tutorial",
+              "url": "https://docs.oracle.com/en/learn/oci-devops-cicd-on-kubernetes/index.html",
+              "source_type": "official-training",
+              "affected_exams": [
+                "1Z0-1084-26"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Oracle tutorial builds a DevOps project/pipeline and deploys a sample application to OKE; tenancy/registry resources may incur charges.",
+              "recommendation": "Use a disposable authorized environment and clean up resources.",
+              "disposition": "applied",
+              "source_id": "oracle-oci-devops-oke-tutorial",
+              "resolution": "Added the tutorial as a bounded developer practice resource."
+            },
+            {
+              "id": "oke-current-version-boundary",
+              "check": "official_product_documentation",
+              "category": "updated-source",
+              "title": "Current OKE GA and preview version boundary",
+              "url": "https://docs.oracle.com/en-us/iaas/Content/ContEng/Concepts/contengaboutk8sversions.htm",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "1Z0-1067-26",
+                "1Z0-1072-26",
+                "1Z0-1084-26"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Oracle lists Kubernetes 1.36.4 as GA and 1.37.0 as OC1-only preview; preview is not recommended for production and has namespace/load-balancer behavior changes.",
+              "recommendation": "Keep versions dated and do not present preview behavior as a general exam baseline.",
+              "disposition": "applied",
+              "source_id": "oracle-oke-version-calendar",
+              "resolution": "Added bounded OKE notes only to operations, architecture and developer guides where it fits existing scope."
+            }
+          ],
+          "notes": "Full role research and applied changes are recorded in docs/research/2026-10-28-nonms-refresh-group-03.md. Objective/status snapshots were unchanged because the monitor differences were extraction metadata only. Scoped source health: 57 OK, zero blocked/broken; Oracle LiveLabs was excluded after repeat timeouts. No product labs or course interiors were executed."
+        },
+        {
+          "exam_code": "1Z0-1085-26",
+          "vendor_id": "oracle",
+          "guide_path": "guides/1Z0-1085-26-oracle-cloud-infrastructure-foundations-associate.md",
+          "baseline_sha256": "c456936845f0835903c3a1b1c4d30670159afdeba496ba69f7b6ad3d1f0afd93",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current IBM credential pages/catalog and Oracle Japan launch/list were checked. Objective monitor deltas were compared in temporary candidates and proved to be title/boilerplate/trailing-whitespace only; no objective snapshot was accepted. Three IBM dynamic getExam pages remain inaccessible and are explicitly blocked."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party product docs/release references were checked and version-bound examples added. IBM Docs pages sometimes returned 403 in the web reader; guide notes state the limitation and use available support/announcement evidence without procedural claims."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "IBM QRadar/Guardium/watsonx and Oracle OCI/Data Safe release channels were searched. New product examples remain distinct from exam scope; OKE 1.37 preview is explicitly not a production baseline."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "New provider training, learning paths, tutorials and Architecture Center references were compared with data/sources.json. Scoped source health has 57 accessible records, zero blocked and zero broken; Oracle LiveLabs was omitted after two timeouts."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "English exam contracts remain distinct from Oracle -JPN localized options; IBM current release/product versions remain distinct from exam versions. Limited IBM exam-detail access and MyLearn adapter cosmetic changes are documented."
+            }
+          },
+          "findings": [
+            {
+              "id": "oracle-japanese-exam-launch",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "new-source",
+              "title": "Oracle launches Japanese-language variants for five OCI exams",
+              "url": "https://www.oracle.com/jp/education/news/",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "1Z0-1067-26",
+                "1Z0-1072-26",
+                "1Z0-1084-26",
+                "1Z0-1085-26",
+                "1Z0-1104-26"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Oracle’s 2026-09-04 announcement says Japanese-language variants began that day; each variant has a separate -JPN exam code. English objective/contract snapshots did not change.",
+              "recommendation": "Keep localized code, language, scheduling and contract separate from English exam details.",
+              "disposition": "applied",
+              "source_id": "oracle-jp-cloud-exams-announcement",
+              "resolution": "Added a dated Japan-only language route note to all five guides; did not change English objective snapshots."
+            },
+            {
+              "id": "oracle-jpn-contract-1z0-1085-26",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "updated-source",
+              "title": "1Z0-1085-26-JPN localized exam contract",
+              "url": "https://www.oracle.com/jp/education/certification/certification-exam-list/",
+              "source_type": "credential-page",
+              "affected_exams": [
+                "1Z0-1085-26"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The current Oracle Japan exam list gives 1Z0-1085-26-JPN: 60 minutes, 40 questions, 65%; Japanese list does not specify proctoring mode. These details are Japan-specific and are not the English exam contract.",
+              "recommendation": "Retain the JPN code and localized contract as a separate option; do not infer an English-language blueprint change.",
+              "disposition": "applied",
+              "source_id": "oracle-jp-certification-exam-list",
+              "resolution": "Added the Japan-only route and code-specific contract to the guide."
+            },
+            {
+              "id": "oci-foundations-guided-lab",
+              "check": "catalog_comparison",
+              "category": "new-source",
+              "title": "Oracle guided OCI fundamentals lab",
+              "url": "https://docs.oracle.com/en/learn/oci-basics-tutorial/",
+              "source_type": "official-training",
+              "affected_exams": [
+                "1Z0-1085-26"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Oracle provides a guided OCI basics lab covering VCN, compute, block storage and a basic web workload; personal-tenancy usage may incur charges.",
+              "recommendation": "Keep novice labs within assigned compartment and terminate billable resources.",
+              "disposition": "applied",
+              "source_id": "oracle-oci-basics-tutorial",
+              "resolution": "Added the lab with an estimated time clearly labeled as coordinator estimate."
+            },
+            {
+              "id": "oci-foundations-release-discovery",
+              "check": "catalog_comparison",
+              "category": "new-source",
+              "title": "OCI release-notes discovery index",
+              "url": "https://docs.oracle.com/en-us/iaas/releasenotes/index.htm",
+              "source_type": "release-notes",
+              "affected_exams": [
+                "1Z0-1085-26"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Oracle release index is a current discovery channel for service/region availability, not an exam blueprint.",
+              "recommendation": "Use only to verify current service availability for a relevant guide section.",
+              "disposition": "applied",
+              "source_id": "oracle-oci-release-index",
+              "resolution": "Added the index as optional current-information lookup."
+            }
+          ],
+          "notes": "Full role research and applied changes are recorded in docs/research/2026-10-28-nonms-refresh-group-03.md. Objective/status snapshots were unchanged because the monitor differences were extraction metadata only. Scoped source health: 57 OK, zero blocked/broken; Oracle LiveLabs was excluded after repeat timeouts. No product labs or course interiors were executed."
+        },
+        {
+          "exam_code": "1Z0-1104-26",
+          "vendor_id": "oracle",
+          "guide_path": "guides/1Z0-1104-26-oracle-cloud-infrastructure-security-professional.md",
+          "baseline_sha256": "fb8c63e6dbed3582811cb07783811fe1c1243f26b6650e20229a9bd74970908e",
+          "scanned_on": "2026-10-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current IBM credential pages/catalog and Oracle Japan launch/list were checked. Objective monitor deltas were compared in temporary candidates and proved to be title/boilerplate/trailing-whitespace only; no objective snapshot was accepted. Three IBM dynamic getExam pages remain inaccessible and are explicitly blocked."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current first-party product docs/release references were checked and version-bound examples added. IBM Docs pages sometimes returned 403 in the web reader; guide notes state the limitation and use available support/announcement evidence without procedural claims."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "IBM QRadar/Guardium/watsonx and Oracle OCI/Data Safe release channels were searched. New product examples remain distinct from exam scope; OKE 1.37 preview is explicitly not a production baseline."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "New provider training, learning paths, tutorials and Architecture Center references were compared with data/sources.json. Scoped source health has 57 accessible records, zero blocked and zero broken; Oracle LiveLabs was omitted after two timeouts."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "English exam contracts remain distinct from Oracle -JPN localized options; IBM current release/product versions remain distinct from exam versions. Limited IBM exam-detail access and MyLearn adapter cosmetic changes are documented."
+            }
+          },
+          "findings": [
+            {
+              "id": "oracle-japanese-exam-launch",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "new-source",
+              "title": "Oracle launches Japanese-language variants for five OCI exams",
+              "url": "https://www.oracle.com/jp/education/news/",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "1Z0-1067-26",
+                "1Z0-1072-26",
+                "1Z0-1084-26",
+                "1Z0-1085-26",
+                "1Z0-1104-26"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Oracle’s 2026-09-04 announcement says Japanese-language variants began that day; each variant has a separate -JPN exam code. English objective/contract snapshots did not change.",
+              "recommendation": "Keep localized code, language, scheduling and contract separate from English exam details.",
+              "disposition": "applied",
+              "source_id": "oracle-jp-cloud-exams-announcement",
+              "resolution": "Added a dated Japan-only language route note to all five guides; did not change English objective snapshots."
+            },
+            {
+              "id": "oracle-jpn-contract-1z0-1104-26",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "updated-source",
+              "title": "1Z0-1104-26-JPN localized exam contract",
+              "url": "https://www.oracle.com/jp/education/certification/certification-exam-list/",
+              "source_type": "credential-page",
+              "affected_exams": [
+                "1Z0-1104-26"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The current Oracle Japan exam list gives 1Z0-1104-26-JPN: 90 minutes, 50 questions, 68%. These details are Japan-specific and are not the English exam contract.",
+              "recommendation": "Retain the JPN code and localized contract as a separate option; do not infer an English-language blueprint change.",
+              "disposition": "applied",
+              "source_id": "oracle-jp-certification-exam-list",
+              "resolution": "Added the Japan-only route and code-specific contract to the guide."
+            },
+            {
+              "id": "data-safe-crypto-posture",
+              "check": "official_release_channels",
+              "category": "new-source",
+              "title": "Oracle Data Safe Crypto Posture Assessment",
+              "url": "https://docs.oracle.com/en-us/iaas/releasenotes/data-safe/crypto-assessment.htm",
+              "source_type": "release-notes",
+              "affected_exams": [
+                "1Z0-1104-26"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Oracle release note dated 2026-10-20 describes a centralized cryptographic-posture view for registered target databases.",
+              "recommendation": "Label this as a related current product feature; verify supported targets/IAM and do not treat it as exam scope.",
+              "disposition": "applied",
+              "source_id": "oracle-data-safe-crypto-release",
+              "resolution": "Added a dated related-item note and linked feature documentation, distinct from the exam map."
+            }
+          ],
+          "notes": "Full role research and applied changes are recorded in docs/research/2026-10-28-nonms-refresh-group-03.md. Objective/status snapshots were unchanged because the monitor differences were extraction metadata only. Scoped source health: 57 OK, zero blocked/broken; Oracle LiveLabs was excluded after repeat timeouts. No product labs or course interiors were executed."
+        }
+      ],
+      "summary": {
+        "exam_count": 10,
+        "current": 7,
+        "review_required": 0,
+        "blocked": 3,
+        "queued_findings": 0,
+        "applied_findings": 25,
+        "no_action_findings": 0,
+        "blocked_findings": 3
+      }
+    }
   ]
 }

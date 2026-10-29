@@ -6,14 +6,14 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-04
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-04
+upcoming_change_checked: 2026-10-28
 ---
 
 # C1000-197 IBM Guardium Data Protection v12.x Administrator Professional Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide maps the live IBM exam contract checked September 4, 2026. It is unofficial and may contain errors. The [official C1000-197 exam record](https://www.ibm.com/training/credentials/getExam/C1000-197) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide maps the latest reviewed IBM credential and exam evidence as of October 28, 2026. It is unofficial and may contain errors. The [official C1000-197 exam record](https://www.ibm.com/training/credentials/getExam/C1000-197) is authoritative; its dynamic page could not be read in this review, so the existing accepted contract has not been changed.
 
 **Assessment contract:** 60 questions; 41 required to pass; 90 minutes.<br>
 **Product baseline:** IBM Guardium Data Protection v12.x.<br>
@@ -76,6 +76,8 @@ Monitor appliance, agent, collection, communication, storage, archive/purge, agg
 
 Maintain appliances and agents with compatibility checks, backups, prechecks, controlled sequencing, maintenance communication, validation, and rollback/escalation. Troubleshoot from scope/time/last-good/change history. Trace source → agent/network → collector → aggregator/manager → policy/report/alert. Review configuration before reinstalling; collect support bundles and protect their sensitive content.
 
+**Related item: Guardium 12.2.4 release watch.** IBM's current release information describes Active Threat Analytics UI changes, parallel-query behavior for certain newly created or cloned reports, audit workflow improvements and mTLS SIEM forwarding. Guardium remains a 12.x exam baseline; these are product-release examples, not new exam objectives. Confirm the installed GPU/component patch and platform before adopting any behavior. IBM's release note warns that 12.0p7240 replaces p240 and that customers already on p240 should use p1064 instead; the 12.2.4 upgrade also has health-check and restart prerequisites. Read the current [Guardium release information](https://www.ibm.com/docs/en/gdp/12.x?topic=overview-release-information) and [12.2.4 support note](https://www.ibm.com/support/pages/node/7288587) before maintenance. IBM Docs blocked direct opening during this review, so do not use this summary as a patch procedure.
+
 ## Integrated practice scenarios
 
 1. **New payment database:** Classify requirements, choose monitoring, deploy agent/source, group assets, install a tested policy, alert, report, and prove health.
@@ -117,4 +119,7 @@ This is a selective learning path, not a complete list of Guardium resources.
 |---|---|---:|
 | [Official C1000-197 exam record](https://www.ibm.com/training/credentials/getExam/C1000-197) | Public | **25 minutes** for contract and objectives |
 | [IBM Guardium Data Protection 12.x documentation](https://www.ibm.com/docs/en/gdp/12.x) | Public; automation may be blocked | **24–40 hours** for selected administration procedures |
+| [Guardium Data Protection Fundamentals (8G103G)](https://www.ibm.com/training/course/guardium-data-protection-fundamentals-8G103G) | Paid instructor-led; hands-on exercises listed | **24 hours** | Guardium 12.1 access, groups, backup/restore, discovery, policies, queries, reports and alerts; outline read, labs not inspected |
+| [Guardium Data Protection Administration (8G920XG)](https://www.ibm.com/training/course/guardium-data-protection-administration-8G920XG) | Paid IBM Intensive Learning; hands-on exercises listed | **4 hours** | Guardium 12.1 administration, monitoring and archive/backup/restore; outline only |
+| [IBM Guardium certification prep session](https://mediacenter.ibm.com/media/Certification%2BPrep%2BSession%3A%2BIBM%2BGuardium%2BData%2BProtection%2Bv12.x%2BAdministrator%2BProfessional/1_flq1wrlz/233881112) | Public page; video playback not inspected | Duration not stated | Optional objective-orientation session; not lab practice or a source of exam questions |
 | Eight labs in this guide | Authorized Guardium lab | **24–40 hours** plus one timed review |

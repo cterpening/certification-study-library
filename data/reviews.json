@@ -28146,5 +28146,746 @@
       },
       "notes": "Current official route and status pages were opened and compared with the guide. Version-specific technical/course references were reviewed; account-gated course lessons were not claimed as inspected. Independent full-guide audit is recorded separately."
     }
+,
+    {
+      "id": "c1000-175-2026-10-28-source-validation",
+      "exam_code": "C1000-175",
+      "guide_path": "guides/C1000-175-ibm-security-qradar-siem-associate.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/c1000-175-official-objectives.txt",
+      "blueprint_snapshot_sha256": "8dac7e2540d973f15e452b531615c21ca6c57cd568f83451e3727b13499577a6",
+      "objective_coverage": [
+        {
+          "objective_group": "SIEM Concepts; QRadar Architecture; User Interface",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–2"
+          ]
+        },
+        {
+          "objective_group": "Extensions; Flows",
+          "guide_sections": [
+            "Section 2",
+            "Branch scenario",
+            "Lab 4"
+          ]
+        },
+        {
+          "objective_group": "Rules and Building Blocks; Working with Offenses",
+          "guide_sections": [
+            "Section 3",
+            "Failed-login scenario",
+            "Lab 5"
+          ]
+        },
+        {
+          "objective_group": "Search, Filtering, and AQL; Assets; Reporting and Dashboards",
+          "guide_sections": [
+            "Section 4",
+            "All integrated scenarios",
+            "Labs 6–8"
+          ]
+        },
+        {
+          "objective_group": "Events; Configuration and Tuning; QRadar System Errors; User and Role Management",
+          "guide_sections": [
+            "Section 5",
+            "Branch and missing-report scenarios",
+            "Labs 3 and 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 9,
+        "reachable": 9,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "IBM credential identity/current QRadar 7.5 boundary were rechecked. Dynamic getExam contract details were not exposed, so the accepted contract and objective map were retained. QRadar UP16 is a dated maintenance example, not new exam scope; IBM QNI/QIF documentation supports the real-time analysis versus post-incident investigation distinction and all three inspection levels; training outlines are metadata only and labs were not inspected. Scoped source health checked 57 records: 57 accessible, none blocked or broken in the tracked baseline. One timed-out Oracle LiveLabs candidate was excluded from the guide and source catalog. No human review or lab execution is claimed."
+    },
+    {
+      "id": "c1000-184-2026-10-28-source-validation",
+      "exam_code": "C1000-184",
+      "guide_path": "guides/C1000-184-ibm-db2-13-zos-database-administrator.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/c1000-184-official-objectives.txt",
+      "blueprint_snapshot_sha256": "05ab6453b1927d388a6a219430bfb8c479264dda8d81c62903a90955f439c47e",
+      "objective_coverage": [
+        {
+          "objective_group": "Planning",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–2"
+          ]
+        },
+        {
+          "objective_group": "Operations",
+          "guide_sections": [
+            "Section 2",
+            "All integrated scenarios",
+            "Labs 2–3"
+          ]
+        },
+        {
+          "objective_group": "Security",
+          "guide_sections": [
+            "Section 3",
+            "Online-change scenario",
+            "Lab 5"
+          ]
+        },
+        {
+          "objective_group": "Database Design",
+          "guide_sections": [
+            "Section 4",
+            "Online-change scenario",
+            "Lab 4"
+          ]
+        },
+        {
+          "objective_group": "Application Development",
+          "guide_sections": [
+            "Section 5",
+            "Online-change and slow-query scenarios",
+            "Lab 6"
+          ]
+        },
+        {
+          "objective_group": "Data Concurrency",
+          "guide_sections": [
+            "Section 6",
+            "Online-change and slow-query scenarios",
+            "Lab 7"
+          ]
+        },
+        {
+          "objective_group": "Performance",
+          "guide_sections": [
+            "Section 7",
+            "Slow-query scenario",
+            "Lab 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 7,
+        "reachable": 7,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "IBM Training catalog/credential evidence was rechecked; the dynamic getExam endpoint was not readable in this pass. The existing accepted exam contract and objective snapshot were retained without inference from third-party material. Current version-specific training references and release constraints were added; no labs or paid lessons were executed. Scoped source health checked 57 records: 57 accessible, none blocked or broken in the tracked baseline. One timed-out Oracle LiveLabs candidate was excluded from the guide and source catalog. No human review or lab execution is claimed."
+    },
+    {
+      "id": "c1000-185-2026-10-28-source-validation",
+      "exam_code": "C1000-185",
+      "guide_path": "guides/C1000-185-ibm-watsonx-generative-ai-engineer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/c1000-185-official-objectives.txt",
+      "blueprint_snapshot_sha256": "51dcebdb7703b1489f09d109556e81d4d443d67976ecc562646859fd07fb350b",
+      "objective_coverage": [
+        {
+          "objective_group": "Analyze and Design a Generative AI Solution",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Lab 1"
+          ]
+        },
+        {
+          "objective_group": "Prompt Engineering",
+          "guide_sections": [
+            "Section 2",
+            "All integrated scenarios",
+            "Labs 1–2"
+          ]
+        },
+        {
+          "objective_group": "Fine-Tuning",
+          "guide_sections": [
+            "Section 3",
+            "Document extractor scenario",
+            "Labs 3–4"
+          ]
+        },
+        {
+          "objective_group": "Retrieval-Augmented Generation (RAG)",
+          "guide_sections": [
+            "Section 4",
+            "Support and research scenarios",
+            "Labs 5–6"
+          ]
+        },
+        {
+          "objective_group": "Deployment",
+          "guide_sections": [
+            "Section 5",
+            "All integrated scenarios",
+            "Lab 7"
+          ]
+        },
+        {
+          "objective_group": "Integration with Model Orchestration",
+          "guide_sections": [
+            "Section 6",
+            "All integrated scenarios",
+            "Lab 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 5,
+        "reachable": 5,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "Current IBM page still identifies the live v1 exam and published scope. The separate v1.1 learning path was labeled as preparation, not an exam revision. Current watsonx governance/deployment examples are explicitly product-bounded; IBM Docs direct access and account/lab execution remain limited. Scoped source health checked 57 records: 57 accessible, none blocked or broken in the tracked baseline. One timed-out Oracle LiveLabs candidate was excluded from the guide and source catalog. No human review or lab execution is claimed."
+    },
+    {
+      "id": "c1000-197-2026-10-28-source-validation",
+      "exam_code": "C1000-197",
+      "guide_path": "guides/C1000-197-ibm-guardium-data-protection-administrator.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/c1000-197-official-objectives.txt",
+      "blueprint_snapshot_sha256": "8a4394d8553ab8134540536ffd7ffe37fdfecfc31cc1d06a4372bb511d6b473f",
+      "objective_coverage": [
+        {
+          "objective_group": "Architecture / Planning / Designing",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Lab 1"
+          ]
+        },
+        {
+          "objective_group": "Deploy and Configure",
+          "guide_sections": [
+            "Section 2",
+            "New database scenario",
+            "Labs 2–4"
+          ]
+        },
+        {
+          "objective_group": "Discover, Assess and Harden",
+          "guide_sections": [
+            "Section 3",
+            "Sensitive-data scenario",
+            "Lab 5"
+          ]
+        },
+        {
+          "objective_group": "Policy Management",
+          "guide_sections": [
+            "Section 4",
+            "New database scenario",
+            "Lab 6"
+          ]
+        },
+        {
+          "objective_group": "Reporting and Alerting",
+          "guide_sections": [
+            "Section 5",
+            "All integrated scenarios",
+            "Lab 7"
+          ]
+        },
+        {
+          "objective_group": "System Health; Maintenance; Troubleshooting",
+          "guide_sections": [
+            "Section 6",
+            "Missing-record scenario",
+            "Lab 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 7,
+        "reachable": 7,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "IBM Training catalog/credential evidence was rechecked; the dynamic getExam endpoint was not readable in this pass. The existing accepted exam contract and objective snapshot were retained without inference from third-party material. Current version-specific training references and release constraints were added; no labs or paid lessons were executed. Scoped source health checked 57 records: 57 accessible, none blocked or broken in the tracked baseline. One timed-out Oracle LiveLabs candidate was excluded from the guide and source catalog. No human review or lab execution is claimed."
+    },
+    {
+      "id": "c1000-206-2026-10-28-source-validation",
+      "exam_code": "C1000-206",
+      "guide_path": "guides/C1000-206-ibm-artificial-intelligence-associate.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/c1000-206-official-objectives.txt",
+      "blueprint_snapshot_sha256": "c239552411fb1fa7c111d883745dc679667e93a653190f33da114a7c6593acd2",
+      "objective_coverage": [
+        {
+          "objective_group": "AI Foundations",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1 and 4"
+          ]
+        },
+        {
+          "objective_group": "Machine Learning and Deep Learning Fundamentals",
+          "guide_sections": [
+            "Section 2",
+            "Service routing and forecast scenarios",
+            "Labs 2–3"
+          ]
+        },
+        {
+          "objective_group": "Generative AI and Applied AI Concepts",
+          "guide_sections": [
+            "Section 3",
+            "Policy assistant scenario",
+            "Labs 4–5"
+          ]
+        },
+        {
+          "objective_group": "Responsible AI, Ethics, Security, and Governance",
+          "guide_sections": [
+            "Section 4",
+            "All integrated scenarios",
+            "Labs 6–7"
+          ]
+        },
+        {
+          "objective_group": "AI Use Case Implementation and Business Integration",
+          "guide_sections": [
+            "Section 5",
+            "All integrated scenarios",
+            "Labs 1 and 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 5,
+        "reachable": 5,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "Current IBM page still identifies the live v1 exam and its published weighted domains. The watsonx.governance example is clearly identified as a vendor-specific optional governance example, not a universal requirement or exam objective. No lab was executed. Scoped source health checked 57 records: 57 accessible, none blocked or broken in the tracked baseline. One timed-out Oracle LiveLabs candidate was excluded from the guide and source catalog. No human review or lab execution is claimed."
+    },
+    {
+      "id": "1z0-1067-26-2026-10-28-source-validation",
+      "exam_code": "1Z0-1067-26",
+      "guide_path": "guides/1Z0-1067-26-oracle-cloud-infrastructure-cloud-operations-professional.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/1z0-1067-26-official-objectives.txt",
+      "blueprint_snapshot_sha256": "317af1108a35b43d611bee316d39d933ccc8fa1ce00ecbb39336b2fb6c28260b",
+      "objective_coverage": [
+        {
+          "objective_group": "Enhance security posture",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Labs 1–2"
+          ]
+        },
+        {
+          "objective_group": "Billing and account management",
+          "guide_sections": [
+            "Section 1",
+            "Failed-deployment scenario",
+            "Labs 1 and 8"
+          ]
+        },
+        {
+          "objective_group": "OCI CLI command-line proficiency",
+          "guide_sections": [
+            "Section 2",
+            "Failed-deployment scenario",
+            "Labs 1–2"
+          ]
+        },
+        {
+          "objective_group": "Terraform, Resource Manager, and Ansible infrastructure as code",
+          "guide_sections": [
+            "Section 3",
+            "Failed-deployment scenario",
+            "Labs 3–4"
+          ]
+        },
+        {
+          "objective_group": "Resilient network design and disaster recovery",
+          "guide_sections": [
+            "Sections 4–5",
+            "Service and recovery scenarios",
+            "Labs 5–6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Observability and monitoring",
+          "guide_sections": [
+            "Section 6",
+            "All scenarios",
+            "Labs 6–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 6,
+        "reachable": 6,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "The current Oracle Japan announcement and language-specific exam list add a Japan-only -JPN route with localized contract details; the English exam remains distinct. The MyLearn extractor showed title/boilerplate text changes only, so the accepted English objective snapshot was retained. New release/tutorial references are optional, version-bound study material; no labs were executed. Scoped source health checked 57 records: 57 accessible, none blocked or broken in the tracked baseline. One timed-out Oracle LiveLabs candidate was excluded from the guide and source catalog. No human review or lab execution is claimed."
+    },
+    {
+      "id": "1z0-1072-26-2026-10-28-source-validation",
+      "exam_code": "1Z0-1072-26",
+      "guide_path": "guides/1Z0-1072-26-oracle-cloud-infrastructure-architect-associate.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/1z0-1072-26-official-objectives.txt",
+      "blueprint_snapshot_sha256": "6caee9398656f4de4f4fe669606e1f9862380e061c8fcf9ca417e6516bec14a6",
+      "objective_coverage": [
+        {
+          "objective_group": "Identity and Access Management",
+          "guide_sections": [
+            "Sections 1–2",
+            "Multi-team-platform scenario",
+            "Labs 1–2"
+          ]
+        },
+        {
+          "objective_group": "Networking",
+          "guide_sections": [
+            "Section 3",
+            "All scenarios",
+            "Lab 3"
+          ]
+        },
+        {
+          "objective_group": "Compute",
+          "guide_sections": [
+            "Section 4",
+            "Regional-commerce scenario",
+            "Labs 4–5"
+          ]
+        },
+        {
+          "objective_group": "Storage",
+          "guide_sections": [
+            "Section 5",
+            "Hybrid-analytics scenario",
+            "Lab 6"
+          ]
+        },
+        {
+          "objective_group": "Secure and scalable cloud solutions",
+          "guide_sections": [
+            "Sections 1–6",
+            "All scenarios",
+            "Labs 2–7"
+          ]
+        },
+        {
+          "objective_group": "High performance, cost, and operational efficiency",
+          "guide_sections": [
+            "Section 6",
+            "All scenarios",
+            "Labs 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 6,
+        "reachable": 6,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "The current Oracle Japan announcement and language-specific exam list add a Japan-only -JPN route with localized contract details; the English exam remains distinct. The MyLearn extractor showed title/boilerplate text changes only, so the accepted English objective snapshot was retained. New release/tutorial references are optional, version-bound study material; no labs were executed. Scoped source health checked 57 records: 57 accessible, none blocked or broken in the tracked baseline. One timed-out Oracle LiveLabs candidate was excluded from the guide and source catalog. No human review or lab execution is claimed."
+    },
+    {
+      "id": "1z0-1084-26-2026-10-28-source-validation",
+      "exam_code": "1Z0-1084-26",
+      "guide_path": "guides/1Z0-1084-26-oracle-cloud-infrastructure-developer-professional.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/1z0-1084-26-official-objectives.txt",
+      "blueprint_snapshot_sha256": "c706ea7ed83d4723ad60bf7448bc9d3b722855607a38bbfb8dc0e425ce00b396",
+      "objective_coverage": [
+        {
+          "objective_group": "Cloud-native fundamentals and microservices architecture",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Lab 1"
+          ]
+        },
+        {
+          "objective_group": "OKE and Container Registry containerized applications",
+          "guide_sections": [
+            "Section 2",
+            "Media-platform scenario",
+            "Labs 2–3"
+          ]
+        },
+        {
+          "objective_group": "Functions and API Gateway",
+          "guide_sections": [
+            "Section 3",
+            "Order-API scenario",
+            "Lab 4"
+          ]
+        },
+        {
+          "objective_group": "Streaming, Queue, and Events serverless messaging",
+          "guide_sections": [
+            "Section 4",
+            "Order and media scenarios",
+            "Labs 5–6"
+          ]
+        },
+        {
+          "objective_group": "OCI Streaming with Apache Kafka",
+          "guide_sections": [
+            "Section 5",
+            "Telemetry-service scenario",
+            "Lab 7"
+          ]
+        },
+        {
+          "objective_group": "Vault, image scanning, testing, and application security",
+          "guide_sections": [
+            "Section 6",
+            "All scenarios",
+            "Labs 1–4"
+          ]
+        },
+        {
+          "objective_group": "Application observability",
+          "guide_sections": [
+            "Section 7",
+            "All scenarios",
+            "Lab 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 6,
+        "reachable": 6,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "The current Oracle Japan announcement and language-specific exam list add a Japan-only -JPN route with localized contract details; the English exam remains distinct. The MyLearn extractor showed title/boilerplate text changes only, so the accepted English objective snapshot was retained. New release/tutorial references are optional, version-bound study material; no labs were executed. Scoped source health checked 57 records: 57 accessible, none blocked or broken in the tracked baseline. One timed-out Oracle LiveLabs candidate was excluded from the guide and source catalog. No human review or lab execution is claimed."
+    },
+    {
+      "id": "1z0-1085-26-2026-10-28-source-validation",
+      "exam_code": "1Z0-1085-26",
+      "guide_path": "guides/1Z0-1085-26-oracle-cloud-infrastructure-foundations-associate.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/1z0-1085-26-official-objectives.txt",
+      "blueprint_snapshot_sha256": "5aec5199922193f9bc9fd118e974eb73f0000ac5ea0e613899dd4d262e7ffd44",
+      "objective_coverage": [
+        {
+          "objective_group": "Fundamentals, architecture, distributed cloud, compartments, authentication, authorization, and tenancy setup",
+          "guide_sections": [
+            "Section 1",
+            "Department-tenancy scenario",
+            "Labs 1–2"
+          ]
+        },
+        {
+          "objective_group": "Networking, VCNs, routing, security, and load balancing",
+          "guide_sections": [
+            "Section 3",
+            "Public-web-service scenario",
+            "Labs 3 and 6"
+          ]
+        },
+        {
+          "objective_group": "Compute instances, scaling, OKE, containers, and Functions",
+          "guide_sections": [
+            "Section 4",
+            "Public and batch scenarios",
+            "Lab 4"
+          ]
+        },
+        {
+          "objective_group": "Object, block, and file storage",
+          "guide_sections": [
+            "Section 5",
+            "Public and batch scenarios",
+            "Lab 5"
+          ]
+        },
+        {
+          "objective_group": "Cloud Guard, Security Zones, encryption, and Vault",
+          "guide_sections": [
+            "Sections 2 and 6",
+            "All scenarios",
+            "Labs 2 and 8"
+          ]
+        },
+        {
+          "objective_group": "Pricing, cost management, tagging, and support rewards",
+          "guide_sections": [
+            "Section 6",
+            "Public and department scenarios",
+            "Lab 7"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 6,
+        "reachable": 6,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "The current Oracle Japan announcement and language-specific exam list add a Japan-only -JPN route with localized contract details; the English exam remains distinct. The MyLearn extractor showed title/boilerplate text changes only, so the accepted English objective snapshot was retained. New release/tutorial references are optional, version-bound study material; no labs were executed. Scoped source health checked 57 records: 57 accessible, none blocked or broken in the tracked baseline. One timed-out Oracle LiveLabs candidate was excluded from the guide and source catalog. No human review or lab execution is claimed."
+    },
+    {
+      "id": "1z0-1104-26-2026-10-28-source-validation",
+      "exam_code": "1Z0-1104-26",
+      "guide_path": "guides/1Z0-1104-26-oracle-cloud-infrastructure-security-professional.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-10-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/1z0-1104-26-official-objectives.txt",
+      "blueprint_snapshot_sha256": "1b662cc0bff386cddd4440bde7696ba376a37ebe61b18778b26ac4b9e1c5c7d8",
+      "objective_coverage": [
+        {
+          "objective_group": "OCI security foundations",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Lab 1"
+          ]
+        },
+        {
+          "objective_group": "Identity and access management",
+          "guide_sections": [
+            "Section 2",
+            "Compromised-workload scenario",
+            "Lab 2"
+          ]
+        },
+        {
+          "objective_group": "Network and infrastructure security",
+          "guide_sections": [
+            "Section 3",
+            "Exposed-database scenario",
+            "Lab 3"
+          ]
+        },
+        {
+          "objective_group": "Application and data security",
+          "guide_sections": [
+            "Section 4",
+            "All scenarios",
+            "Labs 4–5"
+          ]
+        },
+        {
+          "objective_group": "Cloud security posture",
+          "guide_sections": [
+            "Section 5",
+            "Exposed-database scenario",
+            "Lab 6"
+          ]
+        },
+        {
+          "objective_group": "Security operations",
+          "guide_sections": [
+            "Section 6",
+            "All scenarios",
+            "Labs 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 6,
+        "reachable": 6,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "The current Oracle Japan announcement and language-specific exam list add a Japan-only -JPN route with localized contract details; the English exam remains distinct. The MyLearn extractor showed title/boilerplate text changes only, so the accepted English objective snapshot was retained. New release/tutorial references are optional, version-bound study material; no labs were executed. Scoped source health checked 57 records: 57 accessible, none blocked or broken in the tracked baseline. One timed-out Oracle LiveLabs candidate was excluded from the guide and source catalog. No human review or lab execution is claimed."
+    }
   ]
 }

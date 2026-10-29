@@ -6,14 +6,14 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-04
+last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-04
+upcoming_change_checked: 2026-10-28
 ---
 
 # C1000-185 IBM watsonx Generative AI Engineer Associate Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide maps the live IBM exam contract checked September 4, 2026. It is unofficial and may contain errors. The [official C1000-185 exam record](https://www.ibm.com/training/credentials/getExam/C1000-185) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide maps the live IBM exam contract checked October 28, 2026. It is unofficial and may contain errors. The [official C1000-185 exam record](https://www.ibm.com/training/credentials/getExam/C1000-185) is authoritative. IBM's linked preparation path is labeled v1.1; that learning-path label does not revise this v1 exam blueprint.
 
 **Assessment contract:** 62 questions; 44 required to pass; 90 minutes.<br>
 **Experience baseline:** IBM describes an associate engineer with roughly six to twelve months of practical GenAI work.<br>
@@ -74,6 +74,8 @@ Operational checks include endpoint identity/authorization, quotas, timeouts, re
 
 Use watsonx.ai APIs/SDKs and orchestration services through least-privilege service identities. Keep secrets out of prompts and code. Define typed inputs/outputs, validation, timeout/retry/circuit-breaker behavior, and observability. LangChain or another library accelerates chains, retrieval, and agents but does not remove dependency, permission, evaluation, or upgrade responsibility.
 
+**Related item: agent governance in watsonx.governance (October 14, 2026).** IBM announced expanded discovery of agent assets, tools, MCP servers and knowledge sources, plus organization-defined rule checks and developer-facing risk findings. Treat this as a product example of inventory and governance, not a universal GenAI control or C1000-185 exam objective. Discovery and a policy finding do not prove an agent safe; verify ownership, data entitlements, tool permissions and runtime behavior separately. [IBM announcement](https://www.ibm.com/new/announcements/new-in-ibm-watsonx-governance-govern-ai-agents-as-you-build-expand-accountability-and-streamline-compliance).
+
 ## Integrated practice scenarios
 
 1. **Support copilot:** Permission-aware RAG, cited answers, ticket-tool handoff, abstention, human escalation, and quality/cost monitoring.
@@ -115,4 +117,6 @@ This is a selective learning path, not a complete list of watsonx resources.
 |---|---|---:|
 | [Official C1000-185 exam record](https://www.ibm.com/training/credentials/getExam/C1000-185) | Public | **25 minutes** for contract and objectives |
 | [IBM watsonx documentation](https://www.ibm.com/docs/en/watsonx) | Public; automation may be blocked | **12–20 hours** for selected product workflows |
+| [IBM watsonx Generative AI Engineer v1.1 learning path](https://www.ibm.com/training/learning-path/ibm-certified-watsonx-generative-ai-engineer-v11-associate-1054) | IBM account may be needed to enroll; listed course may be no-cost | Includes a **3-hour** Watsonx Technical Essentials course | Product foundation for watsonx.ai; the path is labeled v1.1 while the exam remains v1, so do not treat it as an exam revision |
+| [IBM Developer: get started with generative AI assets in watsonx](https://developer.ibm.com/articles/awb-get-started-with-watsonx/) | Public article; watsonx account needed to run examples | No publisher duration; 3–5h is a planning estimate for selected tutorials | Prompt Lab, Python/Jupyter RAG and tuning examples; older UI/model steps require current-doc recheck |
 | Eight labs in this guide | watsonx access or equivalent local stack | **18–28 hours** plus one timed review |

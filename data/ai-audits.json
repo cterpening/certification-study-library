@@ -19423,5 +19423,586 @@
         "closed_findings": 0
       }
     }
+,
+    {
+      "id": "nonms-refresh-2026-10-28-group-03",
+      "title": "IBM and Oracle guide refresh independent review",
+      "rubric_version": 2,
+      "created_on": "2026-10-28",
+      "completed_on": "2026-10-28",
+      "status": "completed",
+      "audit_mode": "read-only",
+      "selection_method": "Explicit ten-guide verification batch from the final handoff manifest.",
+      "rubric_path": "docs/AI-AUDIT.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "label": "codex-independent-semantic-auditor",
+        "independence": "fresh-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "C1000-175",
+        "C1000-184",
+        "C1000-185",
+        "C1000-197",
+        "C1000-206",
+        "1Z0-1067-26",
+        "1Z0-1072-26",
+        "1Z0-1084-26",
+        "1Z0-1085-26",
+        "1Z0-1104-26"
+      ],
+      "results": [
+        {
+          "exam_code": "C1000-175",
+          "vendor_id": "ibm",
+          "guide_path": "guides/C1000-175-ibm-security-qradar-siem-associate.md",
+          "guide_content_sha256": "0e12ad14c9d3654dc21084afe16f871814d4776da4b99b7e6b97aeffbd103bc9",
+          "blueprint_snapshot_path": "data/objective-snapshots/c1000-175-official-objectives.txt",
+          "blueprint_snapshot_sha256": "8dac7e2540d973f15e452b531615c21ca6c57cd568f83451e3727b13499577a6",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "Identity, V7.5 baseline, domains and contract match accepted IBM snapshots; dynamic getExam details were unavailable."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "All 14 weighted domains are findable. The corrected flow section now explains QNI versus QIF and all three QNI levels."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "IBM documentation supports the new QNI/QIF and inspection-level claims; the UP16 example is dated and bounded."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "62 questions, 41 to pass and 90 minutes match accepted evidence; no new contract claims."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "QNI real-time analysis, QIF retrospective packet investigation, and the increasing inspection depth are coherent with IBM documentation."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "UP16 is dated, not exam scope, and readers are directed to current release/security notes."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Labs require authorized QRadar environments, benign data and avoid production upgrades or sensitive-log ingestion."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original questions and answers align; no recalled/live questions."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Guide and snapshot hashes match final manifest and passed receipt. All listed sources have health `ok`; receipt records 57/57 reachable, not claim validation."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant vendor leakage, suspicious copying or template contradictions."
+            }
+          },
+          "findings": [],
+          "notes": "Complete guide/front matter, objective/status snapshots, exam row/seed, latest passed source-validation receipt, all registered sources and source-health records were reviewed; relevant first-party sources were consulted. Guide hash matches the final manifest. No live lab or human review is claimed."
+        },
+        {
+          "exam_code": "C1000-184",
+          "vendor_id": "ibm",
+          "guide_path": "guides/C1000-184-ibm-db2-13-zos-database-administrator.md",
+          "guide_content_sha256": "6bb5ef45e182e86283eb3b14699fe64693cb057a779afdfe674a8b563f9eb498",
+          "blueprint_snapshot_path": "data/objective-snapshots/c1000-184-official-objectives.txt",
+          "blueprint_snapshot_sha256": "05ab6453b1927d388a6a219430bfb8c479264dda8d81c62903a90955f439c47e",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "Db2 13 credential, scope and contract match accepted snapshots. Dynamic getExam access was limited and the guide explicitly retains accepted contract."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "All seven weighted domains have substantive, findable teaching, scenarios, labs and readiness material."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "IBM Db2 docs and current FL509 page support technical examples; direct-access limits are disclosed."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "60 questions, 44 to pass and 90 minutes match accepted snapshot; no contract details inferred from third parties."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Code/function/APPLCOMPAT distinctions, authorization, transaction, recovery and performance guidance are coherent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "FL509 is dated as product context, distinct from exam baseline, and paired with compatibility checks."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Labs use sanctioned training subsystems or simulation and exclude production experimentation."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original prompts have aligned, usable answers and cover the domains."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Guide/snapshot hashes match final manifest and passed receipt. Registered health is `ok`; receipt reports 57/57 reachable."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No suspicious duplication or cross-vendor contamination."
+            }
+          },
+          "findings": [],
+          "notes": "Complete guide/front matter, objective/status snapshots, exam row/seed, latest passed source-validation receipt, all registered sources and source-health records were reviewed; relevant first-party sources were consulted. Guide hash matches the final manifest. No live lab or human review is claimed."
+        },
+        {
+          "exam_code": "C1000-185",
+          "vendor_id": "ibm",
+          "guide_path": "guides/C1000-185-ibm-watsonx-generative-ai-engineer.md",
+          "guide_content_sha256": "10abf3c2261a2cb8d5a817cde2e7a590162fb32083553753889858a34df92ecc",
+          "blueprint_snapshot_path": "data/objective-snapshots/c1000-185-official-objectives.txt",
+          "blueprint_snapshot_sha256": "51dcebdb7703b1489f09d109556e81d4d443d67976ecc562646859fd07fb350b",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "Credential identity, v1 baseline and six domains match accepted snapshots."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "All six weighted domains have substantive coverage, scenarios, labs and checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "IBM watsonx docs/tutorial support claims; version-sensitive tutorial steps and v1.1 course path are bounded."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "62 questions, 44 to pass and 90 minutes match accepted evidence; experience is attributed, not a formal prerequisite."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Prompting, adaptation, RAG, deployment and orchestration guidance is coherent and qualified."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The v1.1 preparation path is explicitly not treated as an exam revision; UI/model changes require recheck."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Labs use authorized data/resources and include leakage, permissions, rollback and safety checks."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks align with answers; no exam-dump material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Guide/snapshot hashes match final manifest and passed receipt; registered health is `ok`, receipt reports 57/57 reachable."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Product governance example is bounded; no irrelevant copying found."
+            }
+          },
+          "findings": [],
+          "notes": "Complete guide/front matter, objective/status snapshots, exam row/seed, latest passed source-validation receipt, all registered sources and source-health records were reviewed; relevant first-party sources were consulted. Guide hash matches the final manifest. No live lab or human review is claimed."
+        },
+        {
+          "exam_code": "C1000-197",
+          "vendor_id": "ibm",
+          "guide_path": "guides/C1000-197-ibm-guardium-data-protection-administrator.md",
+          "guide_content_sha256": "9b2677dd522971e4557c3d051bb32e6432b9a9fa1757fdc37cf51301fe7c8086",
+          "blueprint_snapshot_path": "data/objective-snapshots/c1000-197-official-objectives.txt",
+          "blueprint_snapshot_sha256": "8a4394d8553ab8134540536ffd7ffe37fdfecfc31cc1d06a4372bb511d6b473f",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "Guardium v12.x identity, domains and status match accepted snapshots. Dynamic getExam access was limited; guide retains baseline with caveat."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "All eight weighted domains have substantive sections, scenarios and labs."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "IBM release/support material supports dated 12.2.4 watch; guide says it is not a patch procedure."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "60 questions, 41 to pass and 90 minutes match accepted contract; no unsupported lifecycle details."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Monitoring, policy, investigation, health and release guidance is coherent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Patch IDs, component compatibility, prerequisites and documentation access limits are visible."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Practice stays in authorized labs with controlled changes, evidence and recovery."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original readiness questions have matching usable answers."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Guide/snapshot hashes match final manifest and passed receipt; every registered source health is `ok`, receipt 57/57 reachable."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No unrelated material or suspicious overlap found."
+            }
+          },
+          "findings": [],
+          "notes": "Complete guide/front matter, objective/status snapshots, exam row/seed, latest passed source-validation receipt, all registered sources and source-health records were reviewed; relevant first-party sources were consulted. Guide hash matches the final manifest. No live lab or human review is claimed."
+        },
+        {
+          "exam_code": "C1000-206",
+          "vendor_id": "ibm",
+          "guide_path": "guides/C1000-206-ibm-artificial-intelligence-associate.md",
+          "guide_content_sha256": "0a8fef3c0f9523d137503d31f48c6f22e41ed07e881d7fe239984519e7bda9ec",
+          "blueprint_snapshot_path": "data/objective-snapshots/c1000-206-official-objectives.txt",
+          "blueprint_snapshot_sha256": "c239552411fb1fa7c111d883745dc679667e93a653190f33da114a7c6593acd2",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "AI v1 associate identity and five weighted domains match accepted snapshots/current IBM record."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "All five domains are findable with teaching, examples, labs and readiness checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "IBM training/overview support material; watsonx governance is expressly vendor-specific related context."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "44 questions, 31 to pass and 60 minutes match accepted snapshot; no logistics invented."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "AI/ML, evaluation, RAG, responsible AI and integration coverage is coherent for a fundamentals guide."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Governance example is dated and not generalized into an exam requirement."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Labs use small/synthetic examples or paper designs, not production actions."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original prompts and answers align; no recalled content."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Guide/snapshot hashes match final manifest and passed receipt; registered health `ok`, receipt 57/57 reachable."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No accidental product leakage or suspicious duplication."
+            }
+          },
+          "findings": [],
+          "notes": "Complete guide/front matter, objective/status snapshots, exam row/seed, latest passed source-validation receipt, all registered sources and source-health records were reviewed; relevant first-party sources were consulted. Guide hash matches the final manifest. No live lab or human review is claimed."
+        },
+        {
+          "exam_code": "1Z0-1067-26",
+          "vendor_id": "oracle",
+          "guide_path": "guides/1Z0-1067-26-oracle-cloud-infrastructure-cloud-operations-professional.md",
+          "guide_content_sha256": "7304c4889b9ac94dee44ed1eec02fa82888f602625650d56523e725cc16eb344",
+          "blueprint_snapshot_path": "data/objective-snapshots/1z0-1067-26-official-objectives.txt",
+          "blueprint_snapshot_sha256": "317af1108a35b43d611bee316d39d933ccc8fa1ce00ecbb39336b2fb6c28260b",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The six high-level English path skills are accurately summarized; derived image/scaling/DNS/load-balancing/troubleshooting examples are distinguished from published objectives. -JPN stays separate."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "All six capability groups map to sections, scenarios, labs and readiness material."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Current Oracle docs support operational and OKE examples; preview details cite the supported-version calendar."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Only 90-minute English duration is asserted; count, score and weights are not inferred. JPN is a separate route."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Identity, CLI, IaC, network/recovery, monitoring and operations explanations are coherent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "OKE 1.37 preview/OC1 limit and production warning are dated and qualified."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Labs require authorized OCI scope and recovery; tutorial costs are disclosed."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks and answers align; no exam questions or predictions."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Guide/snapshot hashes match final manifest and passed receipt; registered source health `ok`, receipt 57/57 reachable."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Derived examples are separated from published scope; no unrelated copying."
+            }
+          },
+          "findings": [],
+          "notes": "Complete guide/front matter, objective/status snapshots, exam row/seed, latest passed source-validation receipt, all registered sources and source-health records were reviewed; relevant first-party sources were consulted. Guide hash matches the final manifest. No live lab or human review is claimed."
+        },
+        {
+          "exam_code": "1Z0-1072-26",
+          "vendor_id": "oracle",
+          "guide_path": "guides/1Z0-1072-26-oracle-cloud-infrastructure-architect-associate.md",
+          "guide_content_sha256": "d8ffa266a25431765e0fbfb3d53200f43418fc7e46239a47e6266988c68fdf0a",
+          "blueprint_snapshot_path": "data/objective-snapshots/1z0-1072-26-official-objectives.txt",
+          "blueprint_snapshot_sha256": "6caee9398656f4de4f4fe669606e1f9862380e061c8fcf9ca417e6516bec14a6",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "English Associate identity and high-level path scope match accepted evidence; Japan-only -JPN is separate."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "IAM, networking, compute, storage, secure/scalable design and cost/operations are substantively mapped."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Oracle architecture/network docs support design guidance; OKE version example is cited and bounded."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Only 90-minute English duration is asserted; unpublished count/score/weights remain unstated; JPN values separate."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Architecture, IAM, paths, recovery, telemetry and cost decisions are technically consistent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Preview details are dated; MyLearn is the check before scheduling."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Labs use authorized OCI tenancy and include access/path tests and cleanup guidance."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original prompts and answers align and test design decisions."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Guide/snapshot hashes match final manifest and passed receipt; registered health `ok`, receipt 57/57 reachable."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No unrelated leakage, copying or template contradiction."
+            }
+          },
+          "findings": [],
+          "notes": "Complete guide/front matter, objective/status snapshots, exam row/seed, latest passed source-validation receipt, all registered sources and source-health records were reviewed; relevant first-party sources were consulted. Guide hash matches the final manifest. No live lab or human review is claimed."
+        },
+        {
+          "exam_code": "1Z0-1084-26",
+          "vendor_id": "oracle",
+          "guide_path": "guides/1Z0-1084-26-oracle-cloud-infrastructure-developer-professional.md",
+          "guide_content_sha256": "3b78bc792d3a56160b5db8de9167d819a81099c493a64620071b9bb5bdb13f48",
+          "blueprint_snapshot_path": "data/objective-snapshots/1z0-1084-26-official-objectives.txt",
+          "blueprint_snapshot_sha256": "c706ea7ed83d4723ad60bf7448bc9d3b722855607a38bbfb8dc0e425ce00b396",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "English Developer Professional identity and seven published groups match accepted snapshots; -JPN is distinct."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "All seven groups appear in substantive teaching, scenarios, labs and readiness checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Oracle service and OKE docs support behavior claims; other material stays conceptual and qualified."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "English duration only; count, score and weights are not inferred. JPN contract separately attributed."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Container, API, functions, messages/Kafka and observability explanations are coherent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Kubernetes 1.37 is preview-only, not recommended for production, and not an exam baseline."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Labs use authorized OCI or local substitutes, synthetic data and disposable environments; charges are disclosed for tutorial tenancy."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "28 original prompts align with answers; no leaked content."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Guide/snapshot hashes match final manifest and passed receipt; registered health `ok`, receipt 57/57 reachable."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Shared OCI concepts are relevant, with no suspicious copying."
+            }
+          },
+          "findings": [],
+          "notes": "Complete guide/front matter, objective/status snapshots, exam row/seed, latest passed source-validation receipt, all registered sources and source-health records were reviewed; relevant first-party sources were consulted. Guide hash matches the final manifest. No live lab or human review is claimed."
+        },
+        {
+          "exam_code": "1Z0-1085-26",
+          "vendor_id": "oracle",
+          "guide_path": "guides/1Z0-1085-26-oracle-cloud-infrastructure-foundations-associate.md",
+          "guide_content_sha256": "ad00d7f7065539b3ce585a4ed03c11f70176cd4dabd24b0ead0660d1ebea9f36",
+          "blueprint_snapshot_path": "data/objective-snapshots/1z0-1085-26-official-objectives.txt",
+          "blueprint_snapshot_sha256": "5aec5199922193f9bc9fd118e974eb73f0000ac5ea0e613899dd4d262e7ffd44",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "English Foundations Associate identity and six groups match accepted snapshots; -JPN is distinct and separately contracted."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "All six groups have substantive coverage, examples, labs and checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Oracle OCI concept/tutorial sources support material; access/cost caveats are visible."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "English path states 60 minutes; no English score/count/weights/proctoring invented; JPN contract separate."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Tenancy, IAM, network, storage, security and cost content is coherent for foundations level."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Delivery facts are bounded with VERIFY CURRENT; English/JPN routes are not conflated."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Labs require authorized tenancy/paper design, test allow/deny and terminate billable resources."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original questions and answers align; no recalled exam material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Guide/snapshot hashes match final manifest and passed receipt; registered health `ok`, receipt 57/57 reachable."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No unrelated duplication, template contradiction or vendor leakage."
+            }
+          },
+          "findings": [],
+          "notes": "Complete guide/front matter, objective/status snapshots, exam row/seed, latest passed source-validation receipt, all registered sources and source-health records were reviewed; relevant first-party sources were consulted. Guide hash matches the final manifest. No live lab or human review is claimed."
+        },
+        {
+          "exam_code": "1Z0-1104-26",
+          "vendor_id": "oracle",
+          "guide_path": "guides/1Z0-1104-26-oracle-cloud-infrastructure-security-professional.md",
+          "guide_content_sha256": "7a69c1dbf1bfe45a0a5da88c4cc2fffde26ceacb33ad3fe709187bb86d759094",
+          "blueprint_snapshot_path": "data/objective-snapshots/1z0-1104-26-official-objectives.txt",
+          "blueprint_snapshot_sha256": "1b662cc0bff386cddd4440bde7696ba376a37ebe61b18778b26ac4b9e1c5c7d8",
+          "audited_on": "2026-10-28",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "English Security Professional identity and six groups match accepted evidence; -JPN and its contract are clearly separate."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "All six groups are taught with scenarios and checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Oracle IAM, Data Safe and release docs support claims; Crypto Posture feature is labeled as product context, not exam objective."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Only English path's 90-minute duration; count, score and weights remain unpublished; JPN values separate."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "IAM, trust boundaries, Data Safe, posture and incident evidence are consistent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Data Safe feature date/target/IAM boundaries are visible; MyLearn is the scheduling check."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Labs use authorized OCI and synthetic data with scoped actions/evidence."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks align with answers and avoid actual exam questions."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Guide/snapshot hashes match final manifest and passed receipt; registered health `ok`, receipt 57/57 reachable."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant copied material or cross-vendor contamination."
+            }
+          },
+          "findings": [],
+          "notes": "Complete guide/front matter, objective/status snapshots, exam row/seed, latest passed source-validation receipt, all registered sources and source-health records were reviewed; relevant first-party sources were consulted. Guide hash matches the final manifest. No live lab or human review is claimed."
+        }
+      ],
+      "summary": {
+        "guide_count": 10,
+        "pass": 10,
+        "pass_with_notes": 0,
+        "fix_required": 0,
+        "blocked": 0,
+        "open_findings": 0,
+        "closed_findings": 0
+      }
+    }
   ]
 }

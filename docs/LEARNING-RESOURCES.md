@@ -4609,6 +4609,144 @@ This is not a complete list, and it is not meant to be consumed in full. Start w
 
 No current official practice exam, MeasureUp product, or Whizlabs product explicitly aligned to this exact Network Security Analyst blueprint was verified. Prefer current documentation and original change/troubleshooting labs over unsourced question banks.
 
+### 1Z0-1067-26 — Oracle Cloud Infrastructure Cloud Operations Professional
+
+Resource details from the [1Z0-1067-26 guide](../guides/1Z0-1067-26-oracle-cloud-infrastructure-cloud-operations-professional.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective learning path, not a complete list of OCI operations resources.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official OCI Cloud Operations Professional learning path](https://mylearn.oracle.com/ou/learning-path/become-an-oci-cloud-operations-professional-2026/163390) | Oracle account/subscription may be required | **22+ hours** as published by Oracle University |
+| [OCI APM with OpenTelemetry tutorial](https://docs.oracle.com/en/learn/oci-apm-with-opentelemetry/index.html) | Public tutorial; OCI tenancy and Node.js sample app required; usage may incur charges | No publisher duration; 2–4 hours is a coordinator estimate for selected steps | Instrument an application, send traces/metrics to APM and logs to Logging Analytics; current commands and tenant costs must be verified |
+| [OCI documentation](https://docs.oracle.com/en-us/iaas/Content/home.htm) | Public | **12–18 hours** targeted operational reading |
+| Eight labs in this guide | Authorized OCI tenancy | **28–40 hours** plus two timed incidents |
+
+### 1Z0-1072-26 — Oracle Cloud Infrastructure Architect Associate
+
+Resource details from the [1Z0-1072-26 guide](../guides/1Z0-1072-26-oracle-cloud-infrastructure-architect-associate.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective learning path, not a complete list of OCI architecture resources.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official OCI Architect Associate learning path](https://mylearn.oracle.com/ou/learning-path/become-an-oci-architect-associate-2026/162234) | Oracle account/subscription may be required | **27+ hours** as published by Oracle University |
+| [OCI network and connectivity architecture](https://docs.oracle.com/en/solutions/oci-best-practices/define-your-network-and-connectivity-architecture1.html) and [workload-networking design playbook](https://docs.oracle.com/en/solutions/oci-best-practices-networking/index.html) | Public architecture guidance | No publisher duration; 1–2 hours for selected decisions is an estimate | Compare redundant FastConnect/VPN, CIDR, service gateway and hub/spoke choices; apply to a design scenario, not as a complete course |
+| [OCI best practices and reference architectures](https://docs.oracle.com/en/solutions/oci-best-practices/) | Public | **8–12 hours** targeted study |
+| Eight labs in this guide | Authorized OCI tenancy | **24–36 hours** plus two timed design reviews |
+
+### 1Z0-1084-26 — Oracle Cloud Infrastructure Developer Professional
+
+Resource details from the [1Z0-1084-26 guide](../guides/1Z0-1084-26-oracle-cloud-infrastructure-developer-professional.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective learning path, not a complete list of OCI development resources.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official OCI Developer Professional learning path](https://mylearn.oracle.com/ou/learning-path/become-an-oci-developer-professional-2026/162926) | Oracle account/subscription may be required | **19+ hours** as published by Oracle University |
+| [Deploy an application with OCI DevOps CI/CD on Kubernetes](https://docs.oracle.com/en/learn/oci-devops-cicd-on-kubernetes/index.html) | Public tutorial; OCI tenancy, OKE and registry resources required; charges may apply | No publisher duration; 2–4 hours is a coordinator estimate with cleanup | Build a project/pipeline and deploy a sample app; complements rather than replaces the Functions, streaming and security scope |
+| [OCI services and developer documentation](https://docs.oracle.com/en-us/iaas/Content/services.htm) | Public | **10–14 hours** targeted study |
+| Eight labs in this guide | Authorized OCI tenancy or local substitutes | **26–38 hours** plus one timed build-and-diagnose exercise |
+
+### 1Z0-1085-26 — Oracle Cloud Infrastructure Foundations Associate
+
+Resource details from the [1Z0-1085-26 guide](../guides/1Z0-1085-26-oracle-cloud-infrastructure-foundations-associate.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective learning path, not a complete list of OCI resources.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official OCI Foundations Associate learning path](https://mylearn.oracle.com/ou/learning-path/-become-an-oci-foundations-associate-2026/163541) | Oracle account; exam listed as free | **7+ hours** as published by Oracle University |
+| [Get started with OCI basics](https://docs.oracle.com/en/learn/oci-basics-tutorial/) | Oracle-provided free lab; personal-tenancy resources may incur charges | No publisher duration; 1–2 hours is an estimate for this tutorial | Guided VCN, compute, block-volume and web-service practice; stay in the assigned compartment and terminate billable resources |
+| [OCI release notes](https://docs.oracle.com/en-us/iaas/releasenotes/index.htm) | Public | Variable | Current service and region announcements; use as a discovery index, not an exam blueprint |
+| [OCI overview and concepts](https://docs.oracle.com/en-us/iaas/Content/GSG/Concepts/baremetalintro.htm) | Public | **4–6 hours** targeted reading |
+| Eight labs in this guide | Authorized OCI tenancy or paper design | **10–16 hours** plus review |
+
+### 1Z0-1104-26 — Oracle Cloud Infrastructure Security Professional
+
+Resource details from the [1Z0-1104-26 guide](../guides/1Z0-1104-26-oracle-cloud-infrastructure-security-professional.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective learning path, not a complete list of OCI security resources.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official OCI Security Professional learning path](https://mylearn.oracle.com/ou/learning-path/become-a-cloud-security-professional-2026/163254) | Oracle account/subscription may be required | **23+ hours** as published by Oracle University |
+| [Data Safe Crypto Posture Assessment overview](https://docs.oracle.com/en-us/iaas/data-safe/doc/crypto-posture-assessment-overview.html) | Public | No duration | Related current feature documentation; check supported targets, region and IAM before use |
+| [OCI IAM security guidance](https://docs.oracle.com/en-us/iaas/Content/Security/Reference/iam_security.htm) | Public | **8–12 hours** plus linked service guidance |
+| Eight labs in this guide | Authorized OCI tenancy and synthetic data | **24–36 hours** plus two timed incidents |
+
+### C1000-175 — IBM Certified Associate - Security QRadar SIEM V7.5
+
+Resource details from the [C1000-175 guide](../guides/C1000-175-ibm-security-qradar-siem-associate.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective learning path, not a complete list of QRadar resources.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official C1000-175 exam record](https://www.ibm.com/training/credentials/getExam/C1000-175) | Public | **25 minutes** for contract and objectives |
+| [IBM QRadar SIEM 7.5 documentation](https://www.ibm.com/docs/en/qsip/7.5) | Public; automation may be blocked | **18–28 hours** for selected concepts and procedures |
+| [QRadar SIEM Foundations (BQ105G)](https://www.ibm.com/training/course/ibm-qradar-siem-foundations-BQ105G) | Paid, instructor-led; labs included | **24 hours** | QRadar SIEM 7.5 concepts, flows, rules, offenses, AQL, assets, reporting and administration; course description read, labs not inspected |
+| [QRadar SIEM Foundation badge requirements](https://www.ibm.com/support/pages/how-can-i-earn-ibm-qradar-siem-foundation-badge-completing-security-learning-academy-course) | Free Security Learning Academy account | 13–14h estimated lessons; separate 2h quiz estimate | IBM lists 19 lessons; the badge quiz is not a C1000-175 practice exam |
+| Eight labs in this guide | Authorized QRadar lab | **18–26 hours** plus one timed review |
+
+### C1000-184 — IBM Certified Db2 13 for z/OS Database Administrator - Associate
+
+Resource details from the [C1000-184 guide](../guides/C1000-184-ibm-db2-13-zos-database-administrator.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective learning path, not a complete list of Db2 for z/OS resources.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official C1000-184 exam record](https://www.ibm.com/training/credentials/getExam/C1000-184) | Public | **25 minutes** for contract and objectives |
+| [IBM Db2 13 for z/OS documentation](https://www.ibm.com/docs/en/db2-for-zos/13.0.0) | Public; automation may be blocked | **28–44 hours** for selected administration topics |
+| [Introduction to Db2 for z/OS PDF](https://www.ibm.com/docs/en/SSEPEK_13.0.0/pdf/db2z_13_introbook.pdf) | Public; an authorized Db2 for z/OS subsystem and ID are needed to execute | Selected DB2I/SPUFI modules; no vendor duration stated | Two-module SQL/utility tutorial; use a sanctioned training subsystem, not production |
+| [Db2 13 Basic Database Administration (CV845G)](https://www.ibm.com/training/search?query=CV845G) | IBM instructor-led course listing; paid enrollment may apply | Three days in the current class listing; detailed syllabus not available here | Search by course code CV845G; course outline was not exposed |
+| [Db2 13 for z/OS Introduction to System Administration (CV854G)](https://www.ibm.com/training/course/db2-for-zos-13-introduction-to-system-administration-CV854G) | Paid, instructor-led | **24 hours** | Subsystem operations, authority, catalog, logs, utilities, monitoring and recovery; higher experience prerequisites; course description read, labs not inspected |
+| Eight labs in this guide | Authorized z/OS training environment or simulation | **24–40 hours** plus one timed review |
+
+### C1000-185 — IBM Certified watsonx Generative AI Engineer - Associate
+
+Resource details from the [C1000-185 guide](../guides/C1000-185-ibm-watsonx-generative-ai-engineer.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective learning path, not a complete list of watsonx resources.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official C1000-185 exam record](https://www.ibm.com/training/credentials/getExam/C1000-185) | Public | **25 minutes** for contract and objectives |
+| [IBM watsonx documentation](https://www.ibm.com/docs/en/watsonx) | Public; automation may be blocked | **12–20 hours** for selected product workflows |
+| [IBM watsonx Generative AI Engineer v1.1 learning path](https://www.ibm.com/training/learning-path/ibm-certified-watsonx-generative-ai-engineer-v11-associate-1054) | IBM account may be needed to enroll; listed course may be no-cost | Includes a **3-hour** Watsonx Technical Essentials course | Product foundation for watsonx.ai; the path is labeled v1.1 while the exam remains v1, so do not treat it as an exam revision |
+| [IBM Developer: get started with generative AI assets in watsonx](https://developer.ibm.com/articles/awb-get-started-with-watsonx/) | Public article; watsonx account needed to run examples | No publisher duration; 3–5h is a planning estimate for selected tutorials | Prompt Lab, Python/Jupyter RAG and tuning examples; older UI/model steps require current-doc recheck |
+| Eight labs in this guide | watsonx access or equivalent local stack | **18–28 hours** plus one timed review |
+
+### C1000-197 — IBM Certified Guardium Data Protection v12.x Administrator - Professional
+
+Resource details from the [C1000-197 guide](../guides/C1000-197-ibm-guardium-data-protection-administrator.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective learning path, not a complete list of Guardium resources.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official C1000-197 exam record](https://www.ibm.com/training/credentials/getExam/C1000-197) | Public | **25 minutes** for contract and objectives |
+| [IBM Guardium Data Protection 12.x documentation](https://www.ibm.com/docs/en/gdp/12.x) | Public; automation may be blocked | **24–40 hours** for selected administration procedures |
+| [Guardium Data Protection Fundamentals (8G103G)](https://www.ibm.com/training/course/guardium-data-protection-fundamentals-8G103G) | Paid instructor-led; hands-on exercises listed | **24 hours** | Guardium 12.1 access, groups, backup/restore, discovery, policies, queries, reports and alerts; outline read, labs not inspected |
+| [Guardium Data Protection Administration (8G920XG)](https://www.ibm.com/training/course/guardium-data-protection-administration-8G920XG) | Paid IBM Intensive Learning; hands-on exercises listed | **4 hours** | Guardium 12.1 administration, monitoring and archive/backup/restore; outline only |
+| [IBM Guardium certification prep session](https://mediacenter.ibm.com/media/Certification%2BPrep%2BSession%3A%2BIBM%2BGuardium%2BData%2BProtection%2Bv12.x%2BAdministrator%2BProfessional/1_flq1wrlz/233881112) | Public page; video playback not inspected | Duration not stated | Optional objective-orientation session; not lab practice or a source of exam questions |
+| Eight labs in this guide | Authorized Guardium lab | **24–40 hours** plus one timed review |
+
+### C1000-206 — IBM Certified Artificial Intelligence v1 - Associate
+
+Resource details from the [C1000-206 guide](../guides/C1000-206-ibm-artificial-intelligence-associate.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective learning path, not a complete list of AI resources.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official C1000-206 exam record](https://www.ibm.com/training/credentials/getExam/C1000-206) | Public | **20 minutes** for the contract and objectives |
+| [IBM overview of artificial intelligence](https://www.ibm.com/think/topics/artificial-intelligence) | Public | **2–4 hours** with linked concept reading |
+| [IBM Artificial Intelligence Fundamentals badge](https://www.ibm.com/training/badge/artificial-intelligence-fundamentals?hss_channel=lcp-78306383) | Free IBM SkillsBuild account; courses, quizzes and simulations required | Module times vary; IBM does not state a reliable total for the full badge | Broad concepts across ML, GenAI, vision, NLP, ethics and Watson Studio; not exam-specific |
+| [IBM Developer: get started with artificial intelligence](https://developer.ibm.com/learningpaths/get-started-artificial-intelligence/) | Public | **2 hours** as listed | Beginner path with a Python/scikit-learn model exercise; narrower than the full responsible-AI and business-integration scope |
+| Eight labs in this guide | Local tools or notebook | **10–14 hours** plus one timed review |
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.
