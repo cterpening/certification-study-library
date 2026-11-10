@@ -35,6 +35,11 @@ def main() -> None:
             [sys.executable, str(ROOT / "examples/visual-exercises/dp-900-data-freshness/build.py"), "--check"],
             cwd=ROOT, check=True,
         )
+        for slug in ("az-900-governance-scope", "dp-900-sql-choices"):
+            subprocess.run(
+                [sys.executable, str(ROOT / "examples/visual-exercises" / slug / "build.py"), "--check"],
+                cwd=ROOT, check=True,
+            )
 
 
 if __name__ == "__main__":

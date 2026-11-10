@@ -17,6 +17,20 @@ ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_BUILD_DIR = ROOT / ".site-build"
 
 PUBLIC_DOCUMENTS = (
+    "docs/research/2026-11-10-diagram-expansion.md",
+    "examples/visual-exercises/README.md",
+    "examples/visual-exercises/az-900-governance-scope/README.md",
+    "examples/visual-exercises/az-900-governance-scope/brief.md",
+    "examples/visual-exercises/az-900-governance-scope/study.svg",
+    "examples/visual-exercises/az-900-governance-scope/practice.svg",
+    "examples/visual-exercises/az-900-governance-scope/manifest.json",
+    "examples/visual-exercises/dp-900-sql-choices/README.md",
+    "examples/visual-exercises/dp-900-sql-choices/brief.md",
+    "examples/visual-exercises/dp-900-sql-choices/study.svg",
+    "examples/visual-exercises/dp-900-sql-choices/practice.svg",
+    "examples/visual-exercises/dp-900-sql-choices/manifest.json",
+    "examples/study-packs/dp-900-data-decisions/units.json",
+    "data/objective-snapshots/dp-900-official-objectives.txt",
     "docs/VISUAL-ASSETS.md",
     "website/assets/study-icons/manifest.json",
     "website/assets/study-icons/notices/Microsoft_Terms_of_Use.pdf",

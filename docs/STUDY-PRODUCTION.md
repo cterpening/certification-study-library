@@ -84,6 +84,12 @@ replace the standard study-pack diagrams or automatically author other formats.
 For diagrams that name Azure services, select original icons from the
 [visual asset catalog](VISUAL-ASSETS.md). The accepted bundle is maintained through
 the separate visual-library repository and checked locally without network access.
+The [paired diagram gallery](../examples/visual-exercises/README.md) adds a scope
+map for AZ-900 and a management-boundary comparison for DP-900. Both embed the
+selected original SVG bytes and bind their outputs to exact source-unit versions.
+Their practice descriptions preserve givens without the worked answers. The
+gallery also identifies the next useful formats; additional images of the same
+topic are not counted as new objective coverage.
 
 This first implementation conservatively fingerprints entire catalogs and health
 records, so even a catalog change for another exam invalidates an old package.
