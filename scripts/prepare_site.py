@@ -17,6 +17,15 @@ ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_BUILD_DIR = ROOT / ".site-build"
 
 PUBLIC_DOCUMENTS = (
+    "docs/research/2026-11-10-study-production.md",
+    "docs/STUDY-PRODUCTION.md",
+    "docs/STUDY-PRODUCTION-BACKLOG.md",
+    "adapters/podcast-services.md",
+    "examples/study-packs/az-900-governance/study-guide.md",
+    "examples/study-packs/az-900-governance/visuals/permissions-and-policy.svg",
+    "examples/study-packs/az-900-governance/visuals/locks-and-recovery.svg",
+    "examples/study-packs/az-900-governance/visuals/tags-and-cost.svg",
+    "examples/podcasts/az-900-governance/part-01/transcript.md",
     "docs/research/2026-10-29-az401-refresh.md",
     "data/objective-snapshots/az-401-official-objectives.txt",
     "ADLC_Docs/operations/2026-10-29-az401-site-guide-publication.json",
@@ -261,6 +270,7 @@ PROJECT_NAV = (
     ("Accessibility", "docs/ACCESSIBILITY.md"),
     ("Architecture", "docs/ARCHITECTURE.md"),
     ("Automation", "docs/AUTOMATION.md"),
+    ("Study guides, visuals, and podcasts", "docs/STUDY-PRODUCTION.md"),
     ("Microsoft review progress", "docs/MICROSOFT-REVIEW-STATUS.md"),
     ("Roadmap", "docs/ROADMAP.md"),
     ("Guide backlog", "docs/BACKLOG.md"),

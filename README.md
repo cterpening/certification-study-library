@@ -12,6 +12,12 @@ An independent, AI-assisted, source-driven library of certification study guides
 
 ## What this library is
 
+The [study production process](docs/STUDY-PRODUCTION.md) turns the existing guides
+into focused study companions, visual aids, and recall cards. A separate process
+prepares two-host podcasts, with episode length and parts determined by the content.
+Start with the [AZ-900 visual companion](examples/study-packs/az-900-governance/study-guide.md)
+and its [two-host transcript](examples/podcasts/az-900-governance/part-01/transcript.md).
+
 Try the [runnable learning labs](docs/LAB-VALIDATION.md) for starter files, deliberate failure cases, recorded local results, and practitioner review checklists.
 
 People learn in different ways. This project does not prescribe one learning path or claim that one resource is best for everyone. It provides several ways to approach the same published objective:

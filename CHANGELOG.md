@@ -1,5 +1,7 @@
 # Changelog
 
+- November 10, 2026: Added [study production](docs/STUDY-PRODUCTION.md): reusable authoring packets, source-bound study companions, accessible SVG aids and original recall cards. Added a separate two-host podcast process with flexible parts, exact-script review, and an optional ElevenLabs adapter. The AZ-900 governance pilot includes a visual companion and transcript; service audio and listening review remain pending.
+
 - September 30, 2026: Spread objective monitoring across four stable monthly cohorts on the 1st, 8th, 15th, and 22nd. Added manual single-exam runs, candidate diffs, and a checklist issue for detected changes so guides can be reviewed and updated one exam at a time. Kept the combined full-library maintenance sweep manual; scheduled source-health and catalog discovery checks continue to report without changing guides.
 
 - September 30, 2026: Reconciled the roadmap's published-guide count with the catalog: 223 guides across 26 vendors, including six GitHub guides. Clarified that the 222-guide denominator in the older rubric-1 audit summary is historical.

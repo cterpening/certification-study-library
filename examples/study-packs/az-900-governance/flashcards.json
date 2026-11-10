@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "exam_code": "AZ-900",
+  "content_status": "ai-generated-draft",
+  "cards": [
+    {
+      "id": "permissions-and-policy",
+      "question": "A deployment identity has permission to create resources in a project resource group. An applicable policy denies creation outside approved locations, and the deployment selects another location. Should the team solve this by expanding the identity's role?",
+      "answer": "No. The stated failure is the configuration restriction. Select an approved location or follow the organization's legitimate exception process. Broader RBAC permissions do not resolve that policy denial. Inspect the actual error, requested configuration, and applicable scope before changing access.",
+      "objectives": [
+        "Describe Azure role-based access control (RBAC)",
+        "Describe the purpose of Azure Policy"
+      ],
+      "source_ids": [
+        "azure-rbac-overview",
+        "azure-policy-overview",
+        "sc100-policy-remediation"
+      ]
+    },
+    {
+      "id": "locks-and-recovery",
+      "question": "A storage account has a delete lock. An application is authorized to delete blobs and deletes one through the Blob service API. Does the lock guarantee that the document remains available?",
+      "answer": "No. The account lock restricts management-plane operations. The blob deletion is a data-plane operation. Whether the document can be recovered depends on the applicable data-protection configuration and its limits; the label locked does not establish that recovery is possible.",
+      "objectives": [
+        "Describe the purpose of resource locks"
+      ],
+      "source_ids": [
+        "azure-resource-locks"
+      ]
+    },
+    {
+      "id": "tags-and-cost",
+      "question": "A cost report groups spending under CostCenter=Research, but the virtual machine lacks that resource tag. Is either observation necessarily wrong?",
+      "answer": "No. Supported Cost Management tag inheritance can add a parent label to the usage record without changing the virtual machine's metadata. Inspect the resource separately if a policy requires the resource tag. A financial classification does not establish either resource-tag compliance or access permissions.",
+      "objectives": [
+        "Describe the purpose of tags",
+        "Describe cost management capabilities in Azure"
+      ],
+      "source_ids": [
+        "az900-tags",
+        "az900-cost-tags",
+        "azure-rbac-overview",
+        "azure-policy-overview"
+      ]
+    }
+  ]
+}
