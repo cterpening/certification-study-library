@@ -17,7 +17,19 @@ ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_BUILD_DIR = ROOT / ".site-build"
 
 PUBLIC_DOCUMENTS = (
+    "docs/GENFM-PILOT.md",
+    "examples/study-packs/dp-900-data-decisions/study-guide.md",
+    "examples/study-packs/dp-900-data-decisions/visuals/data-shapes-and-workloads.svg",
+    "examples/study-packs/dp-900-data-decisions/visuals/relational-management.svg",
+    "examples/study-packs/dp-900-data-decisions/visuals/nonrelational-access.svg",
+    "examples/study-packs/dp-900-data-decisions/visuals/analytics-to-insight.svg",
+    "examples/podcasts/dp-900-data-decisions/part-01/transcript.md",
+    "examples/genfm/az-900-governance/source.txt",
+    "examples/genfm/az-900-governance/instructions.txt",
+    "examples/genfm/dp-900-data-decisions/source.txt",
+    "examples/genfm/dp-900-data-decisions/instructions.txt",
     "docs/research/2026-11-10-study-production.md",
+    "docs/research/2026-11-10-dp900-study-production.md",
     "docs/STUDY-PRODUCTION.md",
     "docs/STUDY-PRODUCTION-BACKLOG.md",
     "adapters/podcast-services.md",

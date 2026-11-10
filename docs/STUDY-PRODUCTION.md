@@ -18,6 +18,12 @@ The transcript is approximately nine minutes at the planning rate; no audio runt
 has been measured. These are dated, reproducible examples. Rebuild from reviewed
 inputs when their source binding becomes stale.
 
+The second pilot is [DP-900 data decisions](../examples/study-packs/dp-900-data-decisions/study-guide.md),
+with four visual chapters and a [two-host transcript](../examples/podcasts/dp-900-data-decisions/part-01/transcript.md)
+estimated at 11.5 minutes. It samples all four domains through selected objectives,
+without claiming complete exam coverage. Use the [ElevenLabs/GenFM pilot guide](GENFM-PILOT.md)
+for signup and ready-to-upload source files for either pilot.
+
 Both processes retain **AI-generated draft; human review pending** status. Reading
 files, matching hashes, rendering diagrams, and synthesizing speech do not establish
 technical correctness. The official exam blueprint remains authoritative.
@@ -56,6 +62,11 @@ runtime. Follow these steps:
 python scripts/build_study_pack.py build --content data/study-content/az-900-governance.json --output-dir .learning-output/az900-study
 python scripts/build_study_pack.py check --package .learning-output/az900-study
 ```
+
+For the second pilot, substitute `DP-900` in the prepare command and use
+`data/study-content/dp-900-data-decisions.json` as the content input. Select a new
+output folder such as `.learning-output/dp900-study`. Podcast preparation can use
+that package with no duration target, or a soft target when parts would help.
 
 The package contains a readable study companion, recall cards, diagrams with text
 alternatives, the authored units, and a manifest. Hashes bind the outputs to the

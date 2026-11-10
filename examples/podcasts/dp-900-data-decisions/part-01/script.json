@@ -1,0 +1,195 @@
+{
+  "schema_version": 1,
+  "exam_code": "DP-900",
+  "language": "en",
+  "part": 1,
+  "total_parts": 1,
+  "unit_ids": [
+    "data-shapes-and-workloads",
+    "relational-management",
+    "nonrelational-access",
+    "analytics-to-insight"
+  ],
+  "sections": [
+    {
+      "unit_id": "introduction",
+      "title": "Introduction",
+      "turns": [
+        {
+          "speaker": "host",
+          "text": "Welcome to our DP-900 study conversation, part 1 of 1. This is an independent, AI-assisted study resource with synthetic voices. Human review is pending. The official exam blueprint is authoritative. Our source package uses this baseline: Skills measured as of July 21, 2026. Its recorded blueprint check was 2026-10-28; preparing this episode does not renew that review. Today's scope: Four selected data-decision topics spanning core concepts, relational services, non-relational storage, and analytics. This companion is not complete DP-900 exam coverage. Scoped technical evidence was checked on November 10, 2026; human review and live Azure, Fabric, and Power BI execution remain pending."
+        },
+        {
+          "speaker": "learner",
+          "text": "We will work through the ideas, compare common choices, and pause for recall. The linked guide and show notes contain the sources and visual aids."
+        }
+      ]
+    },
+    {
+      "unit_id": "data-shapes-and-workloads",
+      "title": "Choose from the workload, not just the file format",
+      "turns": [
+        {
+          "speaker": "host",
+          "text": "Our example is an online bookshop. It accepts orders, stores book-cover images, remembers customer preferences, and reports monthly sales. We will use those needs to make data decisions. These are original study scenarios, not recalled exam questions."
+        },
+        {
+          "speaker": "learner",
+          "text": "I am tempted to start by choosing a familiar database. But that bundles several different questions together. What does the data look like, what do people do with it, how quickly do they need results, and who will operate the system?"
+        },
+        {
+          "speaker": "host",
+          "text": "Exactly. Start with representation. Rows with predictable columns are structured data. A document with named fields and a flexible arrangement can be semi-structured. Images and audio are common examples of unstructured content. That last label does not mean the content is useless, unsearchable, or exempt from access control."
+        },
+        {
+          "speaker": "learner",
+          "text": "Suppose our order arrives as JavaScript Object Notation, usually called JSON. The message format tells me how information is represented. It does not tell me whether the application needs relational constraints, document retrieval, or a file archive. I still need the access and transaction requirements."
+        },
+        {
+          "speaker": "host",
+          "text": "Now separate the workloads. Checkout repeatedly creates or changes a small set of operational records. Online transaction processing, often shortened to O-L-T-P, describes that kind of work. An analyst comparing several years of sales is asking an analytical question across many records. The same business can need both."
+        },
+        {
+          "speaker": "learner",
+          "text": "Our visual aid uses three independent arrows. JSON points to representation. Checkout points to transaction and point-access needs. Historical comparison points to aggregation and analytical serving. The arrows are questions to investigate, not instructions to deploy three particular products."
+        },
+        {
+          "speaker": "host",
+          "text": "Here is a recall check. Orders arrive as JSON, checkout needs reliable order changes, and analysts need historical comparisons. Does the file format prove that both workloads should use one document database? Pause and explain what evidence you would ask for."
+        },
+        {
+          "speaker": "learner",
+          "text": "No. I would ask which changes belong together, which queries are frequent, what latency is acceptable, and how much history must be scanned. Then I would compare candidate stores and processing engines. Separating operational and analytical serving can help, but it also introduces integration and freshness work. The requirement earns the extra component; the fashionable product name does not."
+        }
+      ]
+    },
+    {
+      "unit_id": "relational-management",
+      "title": "Match relational design and the Azure SQL management boundary",
+      "turns": [
+        {
+          "speaker": "host",
+          "text": "Return to the bookshop's orders. A relational model can separate customers, products, orders, and order lines. A primary key identifies a row. A foreign key helps enforce the intended relationship, such as which customer an order belongs to."
+        },
+        {
+          "speaker": "learner",
+          "text": "Why not repeat the customer's current address on every order line? It makes one spreadsheet easy to read, but a later address change would require many rows to agree. Separating repeated current facts reduces that update problem. That is part of the reason for normalization."
+        },
+        {
+          "speaker": "host",
+          "text": "There is an important meaning check. The address used to deliver an old order is a historical fact. It may need to remain exactly as it was, even after the customer's current address changes. Normalization is not an instruction to delete history or create the largest possible number of tables."
+        },
+        {
+          "speaker": "learner",
+          "text": "Once the model makes sense, we still have to choose how to run the SQL Server-family database. A managed service can reduce platform administration, but its compatibility and control boundary must fit the application. The name SQL by itself does not settle that."
+        },
+        {
+          "speaker": "host",
+          "text": "Read the diagram as three starting points. A compatible cloud application needing a managed database leads us to evaluate Azure SQL Database. Broader instance-level dependencies lead us to evaluate Azure SQL Managed Instance. A requirement for guest operating-system and SQL installation control leads us to SQL Server on Azure Virtual Machines."
+        },
+        {
+          "speaker": "learner",
+          "text": "Those are conditional choices, not a ranking from worst to best. Managed Instance does not guarantee that every existing application will migrate unchanged. A virtual machine gives more control and also brings more administration. We must verify exact feature requirements, supported versions, and the operational design."
+        },
+        {
+          "speaker": "host",
+          "text": "Our vendor says its application requires an agent installed inside the guest operating system and control over the SQL Server installation. Which starting point matches that requirement? Pause and include the responsibility tradeoff in your answer."
+        },
+        {
+          "speaker": "learner",
+          "text": "Evaluate SQL Server on Azure Virtual Machines. The requirement explicitly calls for operating-system and installation control, which the platform-managed alternatives do not expose in the same way. The team must accept the corresponding administration work and verify the vendor's support conditions. A shorter management checklist would not compensate for an incompatible application."
+        }
+      ]
+    },
+    {
+      "unit_id": "nonrelational-access",
+      "title": "Distinguish objects, shared files, and database documents",
+      "turns": [
+        {
+          "speaker": "host",
+          "text": "Now consider three things that are not the bookshop's normalized order tables: cover images, shared application files, and customer preference documents. Calling all three non-relational does not tell us how they should be stored or accessed."
+        },
+        {
+          "speaker": "learner",
+          "text": "For a cover image fetched by its object name, Blob Storage is a natural candidate. The application asks for an object. That is a different requirement from an older application that expects to open and coordinate files through a shared file system."
+        },
+        {
+          "speaker": "host",
+          "text": "Azure Files is a candidate for managed file shares using supported protocols such as Server Message Block, or S-M-B, and Network File System, or N-F-S. Check which protocol and features the application needs. Do not turn this distinction into the false rule that Blob Storage can never expose another protocol; supported capabilities and constraints need their own check."
+        },
+        {
+          "speaker": "learner",
+          "text": "The customer profile is another case. If document access and regional distribution are central requirements, Azure Cosmos DB for NoSQL may fit. But JSON is only the representation. We still need to know which fields identify a request, how data is partitioned, and what consistency the application requires."
+        },
+        {
+          "speaker": "host",
+          "text": "In that service's resource model, items live in containers. A partition key helps organize and distribute the data and requests. A design that sends most traffic to one key value can create a hot spot. The item's ID and its partition key have different roles, even when the application sometimes uses both together."
+        },
+        {
+          "speaker": "learner",
+          "text": "Our visual has three independent requirement arrows: image objects to Blob Storage, shared-file access to Azure Files, and distributed document lookup to Cosmos DB for NoSQL with partition design. It does not mean that every shop must deploy three stores. Each extra service also needs integration and operational attention."
+        },
+        {
+          "speaker": "host",
+          "text": "Try this aloud. We need named image objects, an application with shared-file requirements, and profiles accessed by key across regions. Name a reasonable candidate for each, then name one reason the initial choice might change."
+        },
+        {
+          "speaker": "learner",
+          "text": "Blob Storage, Azure Files, and Cosmos DB for NoSQL are the initial candidates. Required protocols or compatibility may change the first two choices. Query patterns, partition distribution, consistency, and cost may change the database choice. A useful answer explains the requirement and the remaining validation, instead of merely listing product names."
+        }
+      ]
+    },
+    {
+      "unit_id": "analytics-to-insight",
+      "title": "Trace data from ingestion to a trustworthy visual",
+      "turns": [
+        {
+          "speaker": "host",
+          "text": "The bookshop manager asks two questions. Is the current order rate unusually high, and how did monthly revenue change over the last year? Those questions do not necessarily need the same response time or the same processing path."
+        },
+        {
+          "speaker": "learner",
+          "text": "A current order-rate alert may justify streaming events and evaluating windows of activity. A monthly revenue comparison can often use a bounded batch. Streaming processes an ongoing flow, but it is not a promise that every downstream result appears instantly. We should choose the pattern from when someone needs to act."
+        },
+        {
+          "speaker": "host",
+          "text": "Follow the analytics responsibilities. Ingestion receives the records. Transformation validates, combines, and reshapes them. Orchestration coordinates the steps and dependencies. The analytical store serves the result. A semantic model defines tables, relationships, and business measures so people can interpret the same number consistently."
+        },
+        {
+          "speaker": "learner",
+          "text": "Then we choose a visual. For revenue across months, a line chart is a useful starting point. For category comparisons, bars are useful. For investigating exact records, use a table. Decorating a chart cannot repair a wrong revenue definition or a join that counted an order twice."
+        },
+        {
+          "speaker": "host",
+          "text": "Our final diagram shows invented timestamps for one Import-model workflow. A sale commits at ten o'clock, is ingested at three minutes past, and is transformed at five minutes past. The scheduled semantic-model refresh finishes at quarter past. At ten minutes past, the report still omits the sale. What should the team inspect first? Pause and trace the path."
+        },
+        {
+          "speaker": "learner",
+          "text": "Inspect the model's refresh state and the timestamps. In this scenario, transformation has finished but the Import model has not yet completed its refresh. Replacing the chart would not shorten that path. The total delay is fifteen minutes, with ten minutes between transformation and completed model refresh. Those numbers are our example, not a Microsoft service commitment."
+        },
+        {
+          "speaker": "host",
+          "text": "That reasoning depends on the stated access mode. Other modes have different freshness paths, so verify the configuration instead of applying the example mechanically. Also distinguish freshness from correctness. A current result can still be wrong if its data quality, relationships, or business measure is wrong."
+        },
+        {
+          "speaker": "learner",
+          "text": "To finish, explain the bookshop's data flow without reciting a product list. Name the operational transaction, object and file access needs, document lookup, processing latency, model meaning, and final business question. These selected distinctions give you a framework for further DP-900 study. They do not replace the complete guide, hands-on practice, or the current official objectives."
+        }
+      ]
+    },
+    {
+      "unit_id": "recap",
+      "title": "Next steps",
+      "turns": [
+        {
+          "speaker": "learner",
+          "text": "Before moving on, explain the distinctions from this episode without looking at your notes. Use the original practice questions in the study pack to find gaps."
+        },
+        {
+          "speaker": "host",
+          "text": "Then check the current official sources and complete the relevant hands-on work. This conversation covers selected objectives; listening alone is not evidence of readiness or complete exam coverage."
+        }
+      ]
+    }
+  ]
+}

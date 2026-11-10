@@ -7,6 +7,9 @@ new exam intake continue through the existing [maintenance process](AUTOMATION.m
 |---|---|---|
 | First delivery | Repeatable authoring packets, study companions, recall cards, and visual aids | AZ-900 example, deterministic builds, reference checks, stale-input tests |
 | First delivery | Independent two-host podcast preparation and service adapter | Bound transcripts, flexible parts, mock service tests, accurate partial-failure receipts |
+| Second pilot | DP-900 data decisions | Four visual chapters, 15 selected objective mappings, original recall cards, two-host transcript; AI reviewed, human/audio review pending |
+| Ready for trial | GenFM comparison using the same learning material | Offline source and focus-prompt exports for AZ-900 and DP-900; account setup and generated-script/listening review remain to be performed |
+| Next | Tighten DP-900 visual-selection citation | Register the [specific verified lesson](https://learn.microsoft.com/en-us/training/modules/power-bi-effective-reports/5-report-visuals), replace the broad training-hub citation, and regenerate affected packages; current low review note is recorded in the [DP-900 pilot report](research/2026-11-10-dp900-study-production.md) |
 | Next | Select two licensed stock voices and run a small ElevenLabs pilot | Service credentials configured outside Git; measured cost, actual audio, listening review, pronunciation fixes |
 | Next | Expand one complete certification as a coherent series | Objective coverage map, source review, guide/visual/recall consistency, episode index and unresolved gaps |
 | Next | Add source-driven authoring through a selected agent runtime | Bounded work packets, source evidence, budget limit, useful draft PRs, independent review; no false review completion |

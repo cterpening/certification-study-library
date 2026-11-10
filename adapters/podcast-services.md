@@ -13,6 +13,7 @@ trial using the same sample on the shortlisted services.
 | Service | Fit for this library | Current integration decision |
 |---|---|---|
 | [ElevenLabs Text to Dialogue](https://elevenlabs.io/docs/api-reference/text-to-dialogue/convert) | Ordered text/voice pairs; script and speaker choices remain in the repository. | Implemented optional renderer. The API documents `eleven_v3` as its default. Requests use at most 2,000 spoken characters, following current reliability guidance. |
+| [ElevenLabs GenFM](https://elevenlabs.io/docs/help-center/product/distribution-publishing/gen-fm/how-do-i-use-gen-fm) | Generates a new conversation from documents, URLs, or project content; the web workflow allows script editing before audio export. | First manual comparison candidate. Offline source/prompt exports exist for AZ-900 and DP-900. Its generated wording needs a new review. |
 | [Google Cloud Gemini TTS](https://docs.cloud.google.com/text-to-speech/docs/gemini-tts) | Multi-speaker synthesis and delivery prompts; another route for rendering a controlled script. | Strong next adapter for an A/B listening trial. Recheck the exact model, endpoint, region and quota before implementation. |
 | [Gemini Notebook Enterprise audio overviews](https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-audio-overview) | Produces a conversation from selected notebook sources and an episode-focus prompt. | Useful editorial alternative; the notebook API is Preview and allows one audio overview per notebook. It does not promise to preserve our reviewed script verbatim. Review its newly generated claims before publication. |
 | [Google standalone Podcast API](https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/podcast-api) | Previously a direct source-to-podcast API. | Excluded for a new integration: the current page explicitly says it is deprecated and Google is not allowlisting new customers. Do not confuse it with notebook audio overviews. |
@@ -23,6 +24,11 @@ user and the Cloud NotebookLM User role. A consumer NotebookLM subscription shou
 not be treated as proof of access to that enterprise API.
 
 ## Production contract
+
+For GenFM signup, plan requirements, and the two ready-to-upload trials, see the
+[GenFM pilot guide](../docs/GENFM-PILOT.md). This is a separate source-to-script
+route. The implemented renderer below takes a script that has already been prepared
+and reviewed. Studio API access is separately requested from ElevenLabs.
 
 `scripts/build_study_podcast.py prepare` is offline and has no service dependency.
 It reads a validated study package, keeps both speakers, and writes a transcript,

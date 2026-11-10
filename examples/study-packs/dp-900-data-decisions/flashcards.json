@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "exam_code": "DP-900",
+  "content_status": "ai-generated-draft",
+  "cards": [
+    {
+      "id": "data-shapes-and-workloads",
+      "question": "A bookshop receives orders as JSON messages. Checkout must record order changes reliably, while analysts compare sales across several years. Does JSON mean both workloads should use the same document database?",
+      "answer": "No. JSON describes the message representation. Checkout needs an appropriate transaction and access design; historical analysis needs suitable aggregation and serving. Evaluate those requirements independently. One product might support both, or separate operational and analytical stores might fit better; the format alone cannot decide.",
+      "objectives": [
+        "Describe the features of structured data",
+        "Describe the features of semi-structured data",
+        "Describe the features of unstructured data",
+        "Describe features of transactional workloads",
+        "Describe features of analytical workloads"
+      ],
+      "source_ids": [
+        "microsoft-dp900-core-data-concepts-module"
+      ]
+    },
+    {
+      "id": "relational-management",
+      "question": "A vendor's SQL Server application requires a supported agent installed in the guest operating system and control over the SQL Server installation. Which Azure SQL family option is the appropriate starting point, and what tradeoff follows?",
+      "answer": "Evaluate SQL Server on Azure Virtual Machines because the requirement includes guest operating-system and installation control. The team also takes on the corresponding administration responsibilities. Azure SQL Database and Managed Instance reduce platform work but do not expose the same operating-system control. Validate the vendor's exact requirements before committing to a design.",
+      "objectives": [
+        "Identify features of relational data",
+        "Describe normalization and why it is used",
+        "Describe the Azure SQL family of products, including Azure SQL Database, Azure SQL Managed Instance, and SQL Server on Azure Virtual Machines"
+      ],
+      "source_ids": [
+        "microsoft-dp900-relational-concepts-module",
+        "microsoft-azure-sql-options-overview"
+      ]
+    },
+    {
+      "id": "nonrelational-access",
+      "question": "The bookshop needs cover images fetched by object name, an existing application that expects a managed shared file system, and customer profiles accessed by key across regions. What are reasonable service candidates, and what still needs validation?",
+      "answer": "Evaluate Blob Storage for the object access, Azure Files for the shared-file requirement, and Cosmos DB for NoSQL for the profile workload if its distribution and document-access features fit. Check protocols, compatibility, partition key, consistency needs, costs, and actual access patterns. These are justified starting points, not a mandatory three-service architecture.",
+      "objectives": [
+        "Describe features of Azure Blob storage",
+        "Describe features of Azure Files",
+        "Identify use cases for Azure Cosmos DB"
+      ],
+      "source_ids": [
+        "dp900-blob",
+        "dp900-files",
+        "dp-420-resource-model",
+        "microsoft-cosmos-db-partitioning-overview"
+      ]
+    },
+    {
+      "id": "analytics-to-insight",
+      "question": "In an invented Import workflow, a sale commits at 10:00, ingestion completes at 10:03, transformation finishes at 10:05, and the model refresh completes at 10:15. At 10:10, the report still omits the sale. Should the team begin by replacing the chart?",
+      "answer": "No. The model has not yet completed its scheduled refresh. Trace the timestamps and access mode before changing presentation. The stated path has 15 minutes of end-to-end delay, including ten minutes between transformation and completed model refresh. These timings are scenario assumptions, not a service guarantee.",
+      "objectives": [
+        "Describe considerations for data ingestion and processing",
+        "Describe the difference between batch and streaming data",
+        "Describe features of data models in Power BI",
+        "Identify appropriate visualizations for data"
+      ],
+      "source_ids": [
+        "dp900-3-analytics-unit",
+        "microsoft-dp900-stream-processing-module",
+        "microsoft-power-bi-semantic-models",
+        "microsoft-power-bi-star-schema-guidance",
+        "microsoft-power-bi-guided-learning-dp900"
+      ]
+    }
+  ]
+}
