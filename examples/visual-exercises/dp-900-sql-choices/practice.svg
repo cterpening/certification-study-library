@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1400" viewBox="0 0 1200 1400" role="img" aria-labelledby="title description">
 <title id="title">DP-900 SQL management choices — practice exercise</title>
-<desc id="description">DP-900. Practice version. Who runs which SQL layer? Three equal columns compare responsibility, not a universal product ranking. Read each stack downward: app/data/access, SQL platform, guest OS, Azure infrastructure. The app/data/access layer represents decisions, not application hosting inside the SQL service. The dashed line marks the shift to Microsoft-managed platform layers: after the first row for the two PaaS services, after the guest OS for the VM. Azure SQL Database. PaaS · database scope. Customer: application, data and access decisions. Microsoft: SQL engine platform and guest operating system. No customer guest OS access. Microsoft: Azure infrastructure. Database-oriented app. Check required SQL features.  Azure SQL Managed Instance. PaaS · instance scope. Customer: application, data and access decisions. Microsoft: SQL engine platform and guest operating system. No customer guest OS access. Microsoft: Azure infrastructure. Instance-level dependencies. Check exact compatibility.  SQL Server on Azure Virtual Machines. IaaS · OS + SQL control. Customer: application, data and access decisions. Customer: SQL installation and engine; guest OS and added agents. Microsoft: Azure infrastructure. Guest OS + installation control. Own admin; automation can help.  In every option the customer owns recovery requirements. Managed backups do not choose business recovery needs. VM automation can help with patching, backup and availability. Three original, invented requirements follow. A  /  NEW APPLICATION. A compatible cloud app needs one database, with no instance-level or guest OS dependency. Choose a candidate, explain one tradeoff and identify a check before deployment. B  /  EXISTING SQL WORKLOAD. A migration needs instance-level SQL features and managed OS upkeep. No OS agent needed. Choose a candidate, explain one tradeoff and identify a check before deployment. C  /  VENDOR REQUIREMENT. The vendor requires a guest OS agent and control over the SQL Server installation. Choose a candidate, explain one tradeoff and identify a check before deployment. These are candidates to evaluate. VERIFY CURRENT: exact feature compatibility, vendor support and recovery configuration. Independent AI-assisted draft; human review pending. Selected objective only; accepted baseline July 21, 2026. The official DP-900 study guide is authoritative. Sources: Microsoft Learn Azure SQL comparison and DP-900 study guide. See the README for exact links and a separate answer section. No live Azure execution or vendor validation is claimed.</desc>
+<desc id="description">DP-900. Practice version. Who runs which SQL layer? Three equal columns compare responsibility, not a universal product ranking. Read each stack downward: app/data/access, SQL platform, guest OS, Azure infrastructure. The app/data/access layer represents decisions, not application hosting inside the SQL service. The dashed line marks the shift to Microsoft-managed platform layers: after the first row for the two PaaS services, after the guest OS for the VM. Azure SQL Database. PaaS · database scope. Customer: application, data and access decisions. Microsoft: SQL engine platform upkeep and guest operating system. No customer guest OS access. Microsoft: Azure infrastructure. Database-oriented app. Check required SQL features.  Azure SQL Managed Instance. PaaS · instance scope. Customer: application, data and access decisions. Microsoft: SQL engine platform upkeep and guest operating system. No customer guest OS access. Microsoft: Azure infrastructure. Instance-level dependencies. Check exact compatibility.  SQL Server on Azure Virtual Machines. IaaS · OS + SQL control. Customer: application, data and access decisions. Customer: SQL installation and engine; guest OS and added agents. Microsoft: Azure infrastructure. Guest OS + installation control. Own admin; automation can help.  In every option the customer owns recovery requirements. Managed backups do not choose business recovery needs. Customers retain database administration, application/data/access decisions, workload tuning and security decisions. VM automation can help with patching, backup and availability. Three original, invented requirements follow. A  /  NEW APPLICATION. A compatible cloud app needs one database, with no instance-level or guest OS dependency. Choose a candidate, explain one tradeoff and identify a check before deployment. B  /  EXISTING SQL WORKLOAD. A migration needs instance-level SQL features and managed OS upkeep. No OS agent needed. Choose a candidate, explain one tradeoff and identify a check before deployment. C  /  VENDOR REQUIREMENT. The vendor requires a guest OS agent and control over the SQL Server installation. Choose a candidate, explain one tradeoff and identify a check before deployment. These are candidates to evaluate. VERIFY CURRENT: exact feature compatibility, vendor support and recovery configuration. Independent AI-assisted draft; human review pending. Selected objective only; accepted baseline July 21, 2026. The official DP-900 study guide is authoritative. Sources: Microsoft Learn Azure SQL comparison and DP-900 study guide. See the README for exact links and a separate answer section. No live Azure execution or vendor validation is claimed.</desc>
 <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="#668093"/></marker></defs>
 <rect x="0" y="0" width="1200" height="1400" rx="0" fill="#f3f6f7" stroke="none" stroke-width="1"/>
 <g font-family="Arial, sans-serif">
@@ -8,7 +8,7 @@
 <rect x="56" y="34" width="5" height="22" rx="0" fill="#70e0be" stroke="none" stroke-width="1"/>
 <text x="74" y="51" font-size="16" fill="#bceedd" font-weight="700" text-anchor="start">DP-900  /  SQL DECISIONS</text>
 <text x="56" y="107" font-size="43" fill="#ffffff" font-weight="700" text-anchor="start">Who runs which SQL layer?</text>
-<text x="56" y="146" font-size="21" fill="#d7e6ef" font-weight="400" text-anchor="start">Match the management boundary to the workload.</text>
+<text x="56" y="146" font-size="21" fill="#d7e6ef" font-weight="400" text-anchor="start">Match responsibilities to the workload; app hosting is a separate choice.</text>
 <rect x="943" y="28" width="201" height="34" rx="17" fill="#23485e" stroke="none" stroke-width="1"/>
 <text x="1043" y="51" font-size="15" fill="#ffffff" font-weight="700" text-anchor="middle">PRACTICE VERSION</text>
 <text x="56" y="218" font-size="28" fill="#183348" font-weight="700" text-anchor="start">Start with the control you need</text>
@@ -25,10 +25,10 @@
 <text x="76" y="396" font-size="16" fill="#496175" font-weight="400" text-anchor="start">PaaS · database scope</text>
 <rect x="76" y="424" width="312" height="62" rx="9" fill="#fff1d5" stroke="none" stroke-width="1"/>
 <text x="90" y="444" font-size="11" fill="#704711" font-weight="700" text-anchor="start">CUSTOMER</text>
-<text x="90" y="471" font-size="19" fill="#183348" font-weight="700" text-anchor="start">App · data · access</text>
+<text x="90" y="471" font-size="19" fill="#183348" font-weight="700" text-anchor="start">App · data · access decisions</text>
 <rect x="76" y="505" width="312" height="62" rx="9" fill="#e3f3ed" stroke="none" stroke-width="1"/>
 <text x="90" y="525" font-size="11" fill="#0e6654" font-weight="700" text-anchor="start">MICROSOFT</text>
-<text x="90" y="552" font-size="19" fill="#183348" font-weight="700" text-anchor="start">SQL engine platform</text>
+<text x="90" y="552" font-size="19" fill="#183348" font-weight="700" text-anchor="start">SQL engine upkeep</text>
 <rect x="76" y="576" width="312" height="62" rx="9" fill="#e3f3ed" stroke="none" stroke-width="1"/>
 <text x="90" y="596" font-size="11" fill="#0e6654" font-weight="700" text-anchor="start">MICROSOFT</text>
 <text x="90" y="623" font-size="19" fill="#183348" font-weight="700" text-anchor="start">Guest operating system</text>
@@ -45,10 +45,10 @@
 <text x="444" y="396" font-size="16" fill="#496175" font-weight="400" text-anchor="start">PaaS · instance scope</text>
 <rect x="444" y="424" width="312" height="62" rx="9" fill="#fff1d5" stroke="none" stroke-width="1"/>
 <text x="458" y="444" font-size="11" fill="#704711" font-weight="700" text-anchor="start">CUSTOMER</text>
-<text x="458" y="471" font-size="19" fill="#183348" font-weight="700" text-anchor="start">App · data · access</text>
+<text x="458" y="471" font-size="19" fill="#183348" font-weight="700" text-anchor="start">App · data · access decisions</text>
 <rect x="444" y="505" width="312" height="62" rx="9" fill="#e3f3ed" stroke="none" stroke-width="1"/>
 <text x="458" y="525" font-size="11" fill="#0e6654" font-weight="700" text-anchor="start">MICROSOFT</text>
-<text x="458" y="552" font-size="19" fill="#183348" font-weight="700" text-anchor="start">SQL engine platform</text>
+<text x="458" y="552" font-size="19" fill="#183348" font-weight="700" text-anchor="start">SQL engine upkeep</text>
 <rect x="444" y="576" width="312" height="62" rx="9" fill="#e3f3ed" stroke="none" stroke-width="1"/>
 <text x="458" y="596" font-size="11" fill="#0e6654" font-weight="700" text-anchor="start">MICROSOFT</text>
 <text x="458" y="623" font-size="19" fill="#183348" font-weight="700" text-anchor="start">Guest operating system</text>
@@ -66,7 +66,7 @@
 <text x="812" y="396" font-size="16" fill="#496175" font-weight="400" text-anchor="start">IaaS · OS + SQL control</text>
 <rect x="812" y="424" width="312" height="62" rx="9" fill="#fff1d5" stroke="none" stroke-width="1"/>
 <text x="826" y="444" font-size="11" fill="#704711" font-weight="700" text-anchor="start">CUSTOMER</text>
-<text x="826" y="471" font-size="19" fill="#183348" font-weight="700" text-anchor="start">App · data · access</text>
+<text x="826" y="471" font-size="19" fill="#183348" font-weight="700" text-anchor="start">App · data · access decisions</text>
 <rect x="812" y="505" width="312" height="62" rx="9" fill="#fff1d5" stroke="none" stroke-width="1"/>
 <text x="826" y="525" font-size="11" fill="#704711" font-weight="700" text-anchor="start">CUSTOMER</text>
 <text x="826" y="552" font-size="19" fill="#183348" font-weight="700" text-anchor="start">SQL installation + engine</text>
@@ -81,8 +81,8 @@
 <text x="812" y="790" font-size="16" fill="#496175" font-weight="400" text-anchor="start">Own admin; automation can help.</text>
 <rect x="56" y="836" width="1088" height="64" rx="12" fill="#e6edf2" stroke="none" stroke-width="1"/>
 <text x="76" y="862" font-size="13" fill="#102b40" font-weight="700" text-anchor="start">IN EVERY OPTION</text>
-<text x="245" y="862" font-size="19" fill="#183348" font-weight="700" text-anchor="start">Own recovery requirements as well as app, data and access decisions.</text>
-<text x="245" y="886" font-size="17" fill="#496175" font-weight="400" text-anchor="start">Managed backups do not choose your business recovery needs.</text>
+<text x="245" y="862" font-size="19" fill="#183348" font-weight="700" text-anchor="start">Own database administration, app/data/access decisions and recovery needs.</text>
+<text x="245" y="886" font-size="17" fill="#496175" font-weight="400" text-anchor="start">Platform upkeep does not remove workload tuning or security decisions.</text>
 <text x="56" y="941" font-size="26" fill="#183348" font-weight="700" text-anchor="start">Choose a candidate. Explain one tradeoff.</text>
 <rect x="56" y="960" width="1088" height="84" rx="12" fill="#ffffff" stroke="#c3d0d8" stroke-width="1"/>
 <text x="76" y="981" font-size="12" fill="#0e6654" font-weight="700" text-anchor="start">A  /  NEW APPLICATION</text>

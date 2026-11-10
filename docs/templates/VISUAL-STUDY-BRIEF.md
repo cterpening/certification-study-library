@@ -101,14 +101,34 @@ unless the corresponding work was performed and recorded.
 2. Render both visuals and inspect them at the intended size. Check labels, units,
    arrow direction, reading order, contrast, and clipping. A successful render or
    matching hash establishes neither technical correctness nor learning outcomes.
-3. Give a fresh-context reviewer the exact inputs, outputs, hashes, source evidence,
-   and this brief. Resolve material findings. Record author/same-context review,
-   independent AI review, human review, and actual product execution separately;
-   state plainly when any did not occur.
-4. Keep a short review record: [date; reviewer/kind; exact artifact paths and
-   SHA-256 values; checks actually completed; findings/fixes; limitations; next
-   check]. Record link/structure validation and visual inspection as distinct evidence.
-5. Recheck and rebuild when a bound guide, objective, package, content input, source
+3. Give a fresh-context reviewer a staged handoff. First supply only the practice
+   visual, its rendered preview, and equivalent practice text. Withhold the study
+   version, answer, authoring conversation, prior verdicts, and answer-bearing
+   guide/brief/builder files. Have the reviewer solve the task, state assumptions
+   and missing givens, and inspect practice accessibility text for answer leakage.
+   Record that response before releasing the full review packet. This is an AI
+   practice attempt using the model's background knowledge, not a novice test.
+4. Then supply the exact inputs, outputs, hashes, complete affected guide,
+   objectives, source evidence, and this brief. Review technical accuracy and
+   teaching/visual quality separately. Findings identify severity, location,
+   evidence, and required correction. Incorrect claims, misleading relationships,
+   unreadable essential content, and unanswerable questions require repair and
+   reviewer recheck; cosmetic preferences may be recorded for later. Keep the
+   original practice response unchanged when documenting fixes.
+5. Keep a short review record: [date; author/reviewer role; AI/human kind; model
+   ID and reasoning effort when observable, otherwise unknown; exact artifact
+   paths and SHA-256 values; stage-one response and handoff order; checks actually
+   completed; findings/fixes and recheck; limitations; next check]. Record
+   author/same-context review, fresh-context AI review, link/structure validation,
+   visual inspection, human review, and actual product execution separately. Do
+   not infer an active model from a configuration default or treat model agreement
+   as independent factual evidence.
+6. For an optional learner trial, ask someone to explain the distinction and solve
+   a new variant before revealing the answer. Record misunderstandings and help
+   needed. Label this informal learner feedback; keep it pending until someone
+   actually participates. It does not establish exam readiness or a full human
+   content review.
+7. Recheck and rebuild when a bound guide, objective, package, content input, source
    record, or answer changes; when evidence becomes stale or contradictory; or when
    a learner/reviewer finds an ambiguity or accessibility defect. Follow the package's
    existing fingerprint rules, including whole-catalog changes. Preserve the previous

@@ -57,7 +57,7 @@ REQUIREMENTS = (
         "label": "B  /  EXISTING SQL WORKLOAD",
         "given": "A migration needs instance-level SQL features\nand managed OS upkeep. No OS agent needed.",
         "candidate": "Evaluate Azure SQL Managed Instance",
-        "tradeoff": "Broader instance scope; verify each dependency.",
+        "tradeoff": "Managed OS; no OS access. Verify SQL features.",
     },
     {
         "label": "C  /  VENDOR REQUIREMENT",
@@ -88,8 +88,8 @@ def comparison(exercise: Exercise) -> list[str]:
             *[text(x + 94, y, value, 24, INK, 700) for value, y in service["titles"]],
             text(x + 20, 396, service["scope"], 16, "#496175"),
         ]
-        body += layer(x + 20, 424, "App · data · access", "CUSTOMER")
-        body += layer(x + 20, 505, "SQL installation + engine" if vm else "SQL engine platform", "CUSTOMER" if vm else "MICROSOFT")
+        body += layer(x + 20, 424, "App · data · access decisions", "CUSTOMER")
+        body += layer(x + 20, 505, "SQL installation + engine" if vm else "SQL engine upkeep", "CUSTOMER" if vm else "MICROSOFT")
         body += layer(x + 20, 576, "Guest OS + added agents" if vm else "Guest operating system", "CUSTOMER" if vm else "MICROSOFT")
         body += layer(x + 20, 658, "Azure infrastructure", "MICROSOFT")
         boundary_y = 647 if vm else 495
@@ -109,7 +109,7 @@ def description(mode: str) -> str:
             f"{service['name']}. {service['scope']}. "
             "Customer: application, data and access decisions. "
             + ("Customer: SQL installation and engine; guest OS and added agents. " if vm else
-               "Microsoft: SQL engine platform and guest operating system. No customer guest OS access. ")
+               "Microsoft: SQL engine platform upkeep and guest operating system. No customer guest OS access. ")
             + f"Microsoft: Azure infrastructure. {service['cue']}. {service['caution']} "
         )
     tasks = []
@@ -128,6 +128,7 @@ def description(mode: str) -> str:
         "The dashed line marks the shift to Microsoft-managed platform layers: after the first row for the two PaaS services, after the guest OS for the VM.",
         *labels,
         "In every option the customer owns recovery requirements. Managed backups do not choose business recovery needs.",
+        "Customers retain database administration, application/data/access decisions, workload tuning and security decisions.",
         "VM automation can help with patching, backup and availability.",
         "Three original, invented requirements follow.", *tasks,
         "These are candidates to evaluate. VERIFY CURRENT: exact feature compatibility, vendor support and recovery configuration.",
@@ -144,7 +145,7 @@ def svg(exercise: Exercise, mode: str) -> str:
         rect(56, 34, 5, 22, "#70e0be", radius=0),
         text(74, 51, "DP-900  /  SQL DECISIONS", 16, "#bceedd", 700),
         text(56, 107, "Who runs which SQL layer?", 43, "#ffffff", 700),
-        text(56, 146, "Match the management boundary to the workload.", 21, "#d7e6ef"),
+        text(56, 146, "Match responsibilities to the workload; app hosting is a separate choice.", 21, "#d7e6ef"),
         rect(943, 28, 201, 34, "#23485e", radius=17),
         text(1043, 51, mode.upper() + " VERSION", 15, "#ffffff", 700, "middle"),
         text(56, 218, "Start with the control you need", 28, INK, 700),
@@ -157,8 +158,8 @@ def svg(exercise: Exercise, mode: str) -> str:
         *comparison(exercise),
         rect(56, 836, 1088, 64, "#e6edf2", radius=12),
         text(76, 862, "IN EVERY OPTION", 13, NAVY, 700),
-        text(245, 862, "Own recovery requirements as well as app, data and access decisions.", 19, INK, 700),
-        text(245, 886, "Managed backups do not choose your business recovery needs.", 17, "#496175"),
+        text(245, 862, "Own database administration, app/data/access decisions and recovery needs.", 19, INK, 700),
+        text(245, 886, "Platform upkeep does not remove workload tuning or security decisions.", 17, "#496175"),
         text(56, 941, "Three requirements. Three reasoned starting points." if study else "Choose a candidate. Explain one tradeoff.", 26, INK, 700),
     ]
     for index, requirement in enumerate(REQUIREMENTS):

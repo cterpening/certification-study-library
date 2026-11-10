@@ -27,7 +27,8 @@ mean that an application is hosted inside the database service.
 The [Microsoft Azure SQL comparison, especially **Administration** and the comparison table](https://learn.microsoft.com/en-us/azure/azure-sql/azure-sql-iaas-vs-paas-what-is-overview)
 supports these distinctions. Database and Managed Instance include platform
 maintenance and built-in backups. In every option, customers still own application,
-data, access and recovery decisions. VM automation can assist patching, backup and
+data, access and recovery decisions, including database administration, workload
+tuning and security configuration. VM automation can assist patching, backup and
 availability; additional customer responsibility does not mean every task is manual.
 
 The following requirements are invented learning inputs. They do not establish
@@ -55,7 +56,8 @@ the exact application and agent in an authorized environment.
    maintains the platform; the app must fit the supported database features.
 2. **Evaluate Azure SQL Managed Instance.** Its broader instance-level
    compatibility is a useful starting point while Microsoft maintains the
-   platform. Confirm each required feature; “managed instance” does not prove
+   platform. The tradeoff is giving up guest OS control. Confirm each required
+   SQL feature; “managed instance” does not prove
    full application compatibility.
 3. **Evaluate SQL Server on Azure Virtual Machines.** The stated guest OS and SQL
    installation requirements need that control boundary. The team accepts the

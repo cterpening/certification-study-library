@@ -53,6 +53,7 @@ def diagram(exercise, mode):
             "Practice: which given explains the block? Justify your answer using the requested "
             "location and the applicable assignment. What evidence would you inspect next? "
             "Would a broader role resolve the stated issue? Explain and propose a next step. "
+            "Explain your reasoning before opening the study version. "
         )
     description += (
         "Simplified scope map; other checks can affect real requests. VERIFY CURRENT: actual "
@@ -105,6 +106,7 @@ def diagram(exercise, mode):
         text(742, 438, "Azure Policy", 29, NAVY, 700),
         exercise.icon("azure-policy", 1025, 393, 55),
         lines(742, 479, ["Scope: subscription", "Allowed: East US", "Effect: deny"], 24, step=34),
+        text(742, 571, "No exclusion or exemption applies.", 18, AMBER),
         path("M913 578 V650", AMBER, 3, dash="7 5"),
         rect(809, 598, 208, 32, "#edf3f6", radius=0),
         text(913, 621, "Applicable here", 23, AMBER, 700, "middle"),

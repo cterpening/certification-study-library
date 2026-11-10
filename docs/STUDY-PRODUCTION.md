@@ -91,6 +91,16 @@ Their practice descriptions preserve givens without the worked answers. The
 gallery also identifies the next useful formats; additional images of the same
 topic are not counted as new objective coverage.
 
+For each paired exercise, use one author and a separate fresh-context reviewer.
+Give the reviewer the practice sheet first and record its answer before supplying
+the study sheet, full guide, sources, and brief. Review technical accuracy and
+visual/teaching quality separately, repair substantive findings, and recheck the
+corrected artifact. Record the actual model and reasoning effort when observable,
+the reviewed versions, findings, and what remains untested. The
+[visual-study brief](templates/VISUAL-STUDY-BRIEF.md#4-review-record-and-rebuild)
+defines the handoff. An AI practice attempt is distinct from actual learner
+feedback; a person can later try a new variant and explain their reasoning.
+
 This first implementation conservatively fingerprints entire catalogs and health
 records, so even a catalog change for another exam invalidates an old package.
 That may require rebuilding more often than strictly necessary. A successful

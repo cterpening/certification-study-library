@@ -52,3 +52,7 @@ readiness. See [the production process](../../docs/STUDY-PRODUCTION.md) and
 The [dated review record](../../docs/research/2026-11-10-diagram-expansion.md)
 documents the scope, independent AI reviews, and source/artifact hashes for the
 new AZ-900 scope and DP-900 SQL pairs. Human review remains pending.
+
+The [practice-first follow-up](../../docs/research/2026-11-10-practice-first-review.md)
+records each reviewer's attempt before seeing the worked answers, the model used,
+source review, and repairs. Actual learner feedback is tracked separately.

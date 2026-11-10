@@ -1,5 +1,7 @@
 # Changelog
 
+- November 10, 2026: Applied [practice-first independent reviews](docs/research/2026-11-10-practice-first-review.md) to the AZ-900 scope and DP-900 SQL pairs. Reviewers recorded answers before seeing solutions, then checked sources and identified two medium and two low clarity/parity findings. All four were repaired and rechecked; the reusable brief now records this sequence and actual model settings. Human learner feedback remains pending.
+
 - November 10, 2026: Expanded the [diagram gallery](examples/visual-exercises/README.md) with an AZ-900 role/Policy scope map and a DP-900 Azure SQL comparison. Both have study/practice versions, visible responsibility or scope boundaries, and embedded original Microsoft icons. These improve existing selected topics; they do not claim complete exam coverage.
 
 - November 10, 2026: Added an [Azure visual asset catalog](docs/VISUAL-ASSETS.md) for AZ-900 and DP-900 from the separate reusable visual library. The 14 selected original SVGs match Microsoft's current V25 archive; the bundle includes vendor terms, provenance and offline integrity checks. Older/unselected pack issues are documented.
