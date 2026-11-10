@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1120" viewBox="0 0 1200 1120" role="img" aria-labelledby="title description">
+<title id="title">DP-900 data freshness — practice exercise</title>
+<desc id="description">DP-900. Practice version. At 10:10, the report does not include the 10:00 sale. Why? The invented scenario assumes a successful 10:15 Import-model refresh includes the sale. 10:00: Sale committed. The source records the new sale. 10:03: Ingestion done. The pipeline has received the sale. 10:05: Transform done. The prepared data includes the sale. 10:10: Report checked. The sale is missing from the report. 10:15: Refresh done. The Import model now includes the sale. Events are shown in order; spacing is not elapsed time. 01  FIND THE BOUNDARY. Explain the missing sale. At 10:10, which steps are complete? Which relevant step has not completed? Explain using two timestamps. 02  EXPLAIN THE INTERVAL. Calculate both intervals. How long from sale to updated model? How long from completed transformation to updated model? 03  CHOOSE THE FIRST CHECK. Choose and justify a check. Would you inspect the chart design or the model refresh and access mode first? Explain your choice. An updated model does not guarantee that an already-open report display updates at that instant. Illustrative Import workflow only. Invented times; no service guarantee. VERIFY CURRENT: access mode and refresh settings. AI-generated draft; human review pending. Official blueprint is authoritative.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="#668093"/></marker></defs>
+<rect width="1200" height="1120" fill="#f3f6f7"/>
+<rect width="1200" height="194" fill="#102b40"/>
+<rect x="64" y="36" width="5" height="22" fill="#70e0be"/>
+<g font-family="Arial, sans-serif">
+<text x="82" y="53" font-size="16" fill="#bceedd" font-weight="700">DP-900  /  DATA DETECTIVE 01</text>
+<text x="64" y="113" font-size="44" fill="#ffffff" font-weight="700">Why is the sale missing?</text>
+<text x="64" y="151" font-size="21" fill="#d7e6ef" font-weight="400">Follow one sale through an illustrative Power BI Import workflow.</text>
+<rect x="937" y="29" width="199" height="34" rx="17" fill="#23485e"/>
+<text x="959" y="52" font-size="15" fill="#ffffff" font-weight="700">PRACTICE VERSION</text>
+<rect x="64" y="222" width="1072" height="112" rx="16" fill="#fff1d5" stroke="#bd8432"/>
+<text x="86" y="252" font-size="14" fill="#68430e" font-weight="700">THE OBSERVATION</text>
+<text x="86" y="285" font-size="25" fill="#513612" font-weight="700">At 10:10, the report does not include the 10:00 sale. Why?</text>
+<text x="86" y="313" font-size="18" fill="#68430e" font-weight="400">The times below are invented. The 10:15 refresh successfully includes this sale.</text>
+<text x="64" y="386" font-size="28" fill="#163047" font-weight="700">Trace the evidence</text>
+<text x="682" y="384" font-size="17" fill="#163047" font-weight="400">Event sequence — spacing is not elapsed time</text>
+<path d="M154 470 H1050" fill="none" stroke="#668093" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="107" y="438" font-size="27" fill="#0e6654" font-weight="700">10:00</text>
+<circle cx="160" cy="470" r="15" fill="#0e6654"/>
+<text x="155" y="476" font-size="17" fill="#ffffff" font-weight="700">1</text>
+<rect x="64" y="502" width="192" height="143" rx="13" fill="#ffffff" stroke="#93a8b6"/>
+<text x="78" y="532" font-size="19" fill="#163047" font-weight="700">Sale committed</text>
+<text x="78" y="562" font-size="17" fill="#334e63" font-weight="400">The source records</text>
+<text x="78" y="586" font-size="17" fill="#334e63" font-weight="400">the new sale.</text>
+<text x="327" y="438" font-size="27" fill="#0e6654" font-weight="700">10:03</text>
+<circle cx="380" cy="470" r="15" fill="#0e6654"/>
+<text x="375" y="476" font-size="17" fill="#ffffff" font-weight="700">2</text>
+<rect x="284" y="502" width="192" height="143" rx="13" fill="#ffffff" stroke="#93a8b6"/>
+<text x="298" y="532" font-size="19" fill="#163047" font-weight="700">Ingestion done</text>
+<text x="298" y="562" font-size="17" fill="#334e63" font-weight="400">The pipeline has</text>
+<text x="298" y="586" font-size="17" fill="#334e63" font-weight="400">received the sale.</text>
+<text x="547" y="438" font-size="27" fill="#0e6654" font-weight="700">10:05</text>
+<circle cx="600" cy="470" r="15" fill="#0e6654"/>
+<text x="595" y="476" font-size="17" fill="#ffffff" font-weight="700">3</text>
+<rect x="504" y="502" width="192" height="143" rx="13" fill="#ffffff" stroke="#93a8b6"/>
+<text x="518" y="532" font-size="19" fill="#163047" font-weight="700">Transform done</text>
+<text x="518" y="562" font-size="17" fill="#334e63" font-weight="400">The prepared data</text>
+<text x="518" y="586" font-size="17" fill="#334e63" font-weight="400">includes the sale.</text>
+<text x="767" y="438" font-size="27" fill="#85500a" font-weight="700">10:10</text>
+<circle cx="820" cy="470" r="15" fill="#85500a"/>
+<text x="815" y="476" font-size="17" fill="#ffffff" font-weight="700">?</text>
+<rect x="724" y="502" width="192" height="143" rx="13" fill="#fff1d5" stroke="#93a8b6"/>
+<text x="738" y="532" font-size="19" fill="#163047" font-weight="700">Report checked</text>
+<text x="738" y="562" font-size="17" fill="#334e63" font-weight="400">The sale is missing</text>
+<text x="738" y="586" font-size="17" fill="#334e63" font-weight="400">from the report.</text>
+<text x="987" y="438" font-size="27" fill="#0e6654" font-weight="700">10:15</text>
+<circle cx="1040" cy="470" r="15" fill="#0e6654"/>
+<text x="1035" y="476" font-size="17" fill="#ffffff" font-weight="700">4</text>
+<rect x="944" y="502" width="192" height="143" rx="13" fill="#ffffff" stroke="#93a8b6"/>
+<text x="958" y="532" font-size="19" fill="#163047" font-weight="700">Refresh done</text>
+<text x="958" y="562" font-size="17" fill="#334e63" font-weight="400">The Import model</text>
+<text x="958" y="586" font-size="17" fill="#334e63" font-weight="400">now includes the</text>
+<text x="958" y="610" font-size="17" fill="#334e63" font-weight="400">sale.</text>
+<text x="64" y="701" font-size="25" fill="#163047" font-weight="700">Pause. Work it out before looking at the study version.</text>
+<rect x="64" y="726" width="342" height="240" rx="14" fill="#ffffff" stroke="#b6c6cf"/>
+<text x="82" y="755" font-size="13" fill="#0e6654" font-weight="700">01  FIND THE BOUNDARY</text>
+<text x="82" y="790" font-size="20" fill="#163047" font-weight="700">Explain the missing sale</text>
+<text x="82" y="820" font-size="17" fill="#334e63" font-weight="400">At 10:10, which steps are</text>
+<text x="82" y="845" font-size="17" fill="#334e63" font-weight="400">complete? Which relevant step</text>
+<text x="82" y="870" font-size="17" fill="#334e63" font-weight="400">has not completed? Explain using</text>
+<text x="82" y="895" font-size="17" fill="#334e63" font-weight="400">two timestamps.</text>
+<path d="M82 925 H388 M82 949 H388" stroke="#93a8b6" fill="none"/>
+<rect x="429" y="726" width="342" height="240" rx="14" fill="#ffffff" stroke="#b6c6cf"/>
+<text x="447" y="755" font-size="13" fill="#0e6654" font-weight="700">02  EXPLAIN THE INTERVAL</text>
+<text x="447" y="790" font-size="20" fill="#163047" font-weight="700">Calculate both intervals</text>
+<text x="447" y="820" font-size="17" fill="#334e63" font-weight="400">How long from sale to updated</text>
+<text x="447" y="845" font-size="17" fill="#334e63" font-weight="400">model? How long from completed</text>
+<text x="447" y="870" font-size="17" fill="#334e63" font-weight="400">transformation to updated model?</text>
+<path d="M447 925 H753 M447 949 H753" stroke="#93a8b6" fill="none"/>
+<rect x="794" y="726" width="342" height="240" rx="14" fill="#ffffff" stroke="#b6c6cf"/>
+<text x="812" y="755" font-size="13" fill="#0e6654" font-weight="700">03  CHOOSE THE FIRST CHECK</text>
+<text x="812" y="790" font-size="20" fill="#163047" font-weight="700">Choose and justify a check</text>
+<text x="812" y="820" font-size="17" fill="#334e63" font-weight="400">Would you inspect the chart</text>
+<text x="812" y="845" font-size="17" fill="#334e63" font-weight="400">design or the model refresh and</text>
+<text x="812" y="870" font-size="17" fill="#334e63" font-weight="400">access mode first? Explain your</text>
+<text x="812" y="895" font-size="17" fill="#334e63" font-weight="400">choice.</text>
+<path d="M812 925 H1118 M812 949 H1118" stroke="#93a8b6" fill="none"/>
+<text x="64" y="998" font-size="16" fill="#163047" font-weight="400">An updated model does not guarantee that an already-open report display updates at that instant.</text>
+<text x="64" y="1025" font-size="15" fill="#163047" font-weight="400">Illustrative Import workflow only. Invented times; no service guarantee. VERIFY CURRENT: access mode and refresh settings.</text>
+<text x="64" y="1056" font-size="14" fill="#163047" font-weight="400">Independent AI-assisted draft · Human review pending · Selected objectives · Accepted baseline: July 21, 2026</text>
+<text x="64" y="1081" font-size="14" fill="#163047" font-weight="400">Sources: Microsoft Learn — Power BI semantic models; DP-900 official study guide (authoritative exam scope).</text>
+<text x="64" y="1104" font-size="14" fill="#163047" font-weight="400">Exact source links, objective mapping and text alternative: accompanying README. No Azure or Power BI execution.</text>
+</g></svg>

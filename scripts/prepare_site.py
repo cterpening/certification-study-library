@@ -17,6 +17,12 @@ ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_BUILD_DIR = ROOT / ".site-build"
 
 PUBLIC_DOCUMENTS = (
+    "docs/templates/VISUAL-STUDY-BRIEF.md",
+    "examples/visual-exercises/dp-900-data-freshness/README.md",
+    "examples/visual-exercises/dp-900-data-freshness/brief.md",
+    "examples/visual-exercises/dp-900-data-freshness/review.md",
+    "examples/visual-exercises/dp-900-data-freshness/study.svg",
+    "examples/visual-exercises/dp-900-data-freshness/practice.svg",
     "docs/GENFM-PILOT.md",
     "examples/study-packs/dp-900-data-decisions/study-guide.md",
     "examples/study-packs/dp-900-data-decisions/visuals/data-shapes-and-workloads.svg",

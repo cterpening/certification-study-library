@@ -30,6 +30,10 @@ def main() -> None:
             ]
             for script, *arguments in commands:
                 subprocess.run([sys.executable, str(ROOT / "scripts" / script), *arguments], cwd=ROOT, check=True)
+        subprocess.run(
+            [sys.executable, str(ROOT / "examples/visual-exercises/dp-900-data-freshness/build.py"), "--check"],
+            cwd=ROOT, check=True,
+        )
 
 
 if __name__ == "__main__":

@@ -74,6 +74,14 @@ guide, objectives, content input, and supporting records. A subsequent change ma
 the package stale; review the change and rebuild into a new directory. Never renew
 a review date merely to make a hash check pass.
 
+For question-led infographics, use the [visual-study brief template](templates/VISUAL-STUDY-BRIEF.md)
+to identify one learner decision, the evidence needed to make it, and an original
+recall task. Produce a study version with the explanation and a practice version
+that preserves the problem inputs while withholding the answer, including in its
+text alternative. The [DP-900 data-freshness exercise](../examples/visual-exercises/dp-900-data-freshness/README.md)
+is the first example. Its editable SVG timeline has a custom renderer; it does not
+replace the standard study-pack diagrams or automatically author other formats.
+
 This first implementation conservatively fingerprints entire catalogs and health
 records, so even a catalog change for another exam invalidates an old package.
 That may require rebuilding more often than strictly necessary. A successful

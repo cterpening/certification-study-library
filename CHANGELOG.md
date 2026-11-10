@@ -1,5 +1,7 @@
 # Changelog
 
+- November 10, 2026: Added a [DP-900 data-freshness infographic exercise](examples/visual-exercises/dp-900-data-freshness/README.md) with separate study and practice sheets, accessible text, source bindings and a reusable visual-study brief. The original timestamp exercise is illustrative; human review remains pending.
+
 - November 10, 2026: Added DP-900 as the second study/podcast pilot: four visual chapters, 15 selected objectives, original recall cards and a two-host transcript. Added offline GenFM source exports for both pilots and [ElevenLabs signup/trial instructions](docs/GENFM-PILOT.md). AI review passed with one low citation-precision note; human review, service audio and listening review remain pending.
 
 - November 10, 2026: Added [study production](docs/STUDY-PRODUCTION.md): reusable authoring packets, source-bound study companions, accessible SVG aids and original recall cards. Added a separate two-host podcast process with flexible parts, exact-script review, and an optional ElevenLabs adapter. The AZ-900 governance pilot includes a visual companion and transcript; service audio and listening review remain pending.
