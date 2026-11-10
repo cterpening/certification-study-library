@@ -81,6 +81,9 @@ that preserves the problem inputs while withholding the answer, including in its
 text alternative. The [DP-900 data-freshness exercise](../examples/visual-exercises/dp-900-data-freshness/README.md)
 is the first example. Its editable SVG timeline has a custom renderer; it does not
 replace the standard study-pack diagrams or automatically author other formats.
+For diagrams that name Azure services, select original icons from the
+[visual asset catalog](VISUAL-ASSETS.md). The accepted bundle is maintained through
+the separate visual-library repository and checked locally without network access.
 
 This first implementation conservatively fingerprints entire catalogs and health
 records, so even a catalog change for another exam invalidates an old package.

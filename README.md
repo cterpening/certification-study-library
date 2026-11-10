@@ -19,6 +19,7 @@ Start with the [AZ-900 visual companion](examples/study-packs/az-900-governance/
 and its [two-host transcript](examples/podcasts/az-900-governance/part-01/transcript.md).
 The second pilot is [DP-900 data decisions](examples/study-packs/dp-900-data-decisions/study-guide.md).
 Try its [data-freshness infographic exercise](examples/visual-exercises/dp-900-data-freshness/README.md), with separate practice and study sheets.
+The [visual asset catalog](docs/VISUAL-ASSETS.md) provides original Azure icons for AZ-900 and DP-900 diagrams.
 The [GenFM pilot guide](docs/GENFM-PILOT.md) includes account setup and ready-to-upload source files.
 
 Try the [runnable learning labs](docs/LAB-VALIDATION.md) for starter files, deliberate failure cases, recorded local results, and practitioner review checklists.

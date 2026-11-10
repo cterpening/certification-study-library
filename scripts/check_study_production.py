@@ -11,6 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def main() -> None:
+    subprocess.run([sys.executable, str(ROOT / "scripts/check_visual_assets.py")], cwd=ROOT, check=True)
     output = ROOT / ".learning-output"
     output.mkdir(exist_ok=True)
     # The fixed parent stays inside this repository. TemporaryDirectory owns only
