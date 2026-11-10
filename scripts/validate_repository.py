@@ -138,7 +138,7 @@ GUIDE_METADATA = {
     "upcoming_change_status",
     "upcoming_change_checked",
 }
-IGNORED_MARKDOWN_DIRS = {".git", ".maintenance", ".site-build", ".venv", "site", "__pycache__"}
+IGNORED_MARKDOWN_DIRS = {".git", ".maintenance", ".learning-output", ".site-build", ".venv", "site", "__pycache__"}
 IGNORED_MARKDOWN_FILES = {Path("docs/initialChat.md")}
 CERTIFICATION_LIST_PATH = ROOT / "CERTIFICATIONS.txt"
 CERTIFICATION_LIST_COLUMNS = (

@@ -1,5 +1,17 @@
 # Changelog
 
+- November 10, 2026: Applied [practice-first independent reviews](docs/research/2026-11-10-practice-first-review.md) to the AZ-900 scope and DP-900 SQL pairs. Reviewers recorded answers before seeing solutions, then checked sources and identified two medium and two low clarity/parity findings. All four were repaired and rechecked; the reusable brief now records this sequence and actual model settings. Human learner feedback remains pending.
+
+- November 10, 2026: Expanded the [diagram gallery](examples/visual-exercises/README.md) with an AZ-900 role/Policy scope map and a DP-900 Azure SQL comparison. Both have study/practice versions, visible responsibility or scope boundaries, and embedded original Microsoft icons. These improve existing selected topics; they do not claim complete exam coverage.
+
+- November 10, 2026: Added an [Azure visual asset catalog](docs/VISUAL-ASSETS.md) for AZ-900 and DP-900 from the separate reusable visual library. The 14 selected original SVGs match Microsoft's current V25 archive; the bundle includes vendor terms, provenance and offline integrity checks. Older/unselected pack issues are documented.
+
+- November 10, 2026: Added a [DP-900 data-freshness infographic exercise](examples/visual-exercises/dp-900-data-freshness/README.md) with separate study and practice sheets, accessible text, source bindings and a reusable visual-study brief. The original timestamp exercise is illustrative; human review remains pending.
+
+- November 10, 2026: Added DP-900 as the second study/podcast pilot: four visual chapters, 15 selected objectives, original recall cards and a two-host transcript. Added offline GenFM source exports for both pilots and [ElevenLabs signup/trial instructions](docs/GENFM-PILOT.md). AI review passed with one low citation-precision note; human review, service audio and listening review remain pending.
+
+- November 10, 2026: Added [study production](docs/STUDY-PRODUCTION.md): reusable authoring packets, source-bound study companions, accessible SVG aids and original recall cards. Added a separate two-host podcast process with flexible parts, exact-script review, and an optional ElevenLabs adapter. The AZ-900 governance pilot includes a visual companion and transcript; service audio and listening review remain pending.
+
 - September 30, 2026: Spread objective monitoring across four stable monthly cohorts on the 1st, 8th, 15th, and 22nd. Added manual single-exam runs, candidate diffs, and a checklist issue for detected changes so guides can be reviewed and updated one exam at a time. Kept the combined full-library maintenance sweep manual; scheduled source-health and catalog discovery checks continue to report without changing guides.
 
 - September 30, 2026: Reconciled the roadmap's published-guide count with the catalog: 223 guides across 26 vendors, including six GitHub guides. Clarified that the 222-guide denominator in the older rubric-1 audit summary is historical.

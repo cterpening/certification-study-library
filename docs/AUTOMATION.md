@@ -1,5 +1,9 @@
 # Automation and maintenance
 
+For expanding reviewed material into study companions, visual aids, recall cards,
+and a separate two-host podcast, use the [study production process](STUDY-PRODUCTION.md).
+It consumes the evidence and guides maintained by the workflows below.
+
 ## Complete recurring maintenance review
 
 Run the whole library with one command:

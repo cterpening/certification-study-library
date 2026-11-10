@@ -1,0 +1,52 @@
+name: Prepare study podcast
+
+on:
+  workflow_dispatch:
+    inputs:
+      content_path:
+        description: Reviewed authored content JSON used to build the source package
+        required: true
+        default: data/study-content/az-900-governance.json
+        type: string
+      target_minutes:
+        description: Approximate part length; topics stay intact and may exceed it
+        required: true
+        default: '15'
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.13'
+      - name: Prepare two-host script and parts
+        env:
+          CONTENT_PATH: ${{ inputs.content_path }}
+          TARGET_MINUTES: ${{ inputs.target_minutes }}
+        run: |
+          python - <<'PY'
+          import os
+          from pathlib import Path
+          import subprocess
+          import sys
+          output = Path.cwd() / '.learning-output' / 'study-podcast'
+          output.mkdir(parents=True)
+          package = output / 'source-package'
+          subprocess.run([sys.executable, 'scripts/build_study_pack.py', 'build', '--content', os.environ['CONTENT_PATH'], '--output-dir', str(package)], check=True)
+          subprocess.run([sys.executable, 'scripts/build_study_podcast.py', 'prepare', '--package', str(package), '--output-dir', str(output / 'podcast'), '--target-minutes', os.environ['TARGET_MINUTES']], check=True)
+          Path(os.environ['GITHUB_STEP_SUMMARY']).write_text('Two-host podcast scripts prepared. Review the transcript before rendering. This job made no speech-service calls and produced no audio.\n', encoding='utf-8')
+          PY
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: study-podcast-scripts
+          path: .learning-output/study-podcast
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 30
