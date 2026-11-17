@@ -2,6 +2,8 @@
 
 An independent, AI-assisted, source-driven library of certification study guides. The collection began with GitHub and Microsoft credentials, includes the current HashiCorp Terraform and Vault catalog and all seven current Databricks certifications, and is now expanding into AWS. Each guide connects public exam objectives with original explanations, practical exercises, and further learning resources.
 
+**Website:** [Browse the searchable study library](https://cterpening.github.io/certification-study-library/)
+
 **Latest maintenance:** The [September 27, 2026 repository review](docs/research/2026-09-27-repository-maintenance.md) covers all 223 guides, October exam changes, Security+ V8, and source-access limits. The [recurring maintenance process](docs/AUTOMATION.md#complete-recurring-maintenance-review) produces a weekly review task and per-guide evidence.
 
 > **AI disclosure:** Every study guide in this repository is generated or substantially developed with AI from registered public sources. The sources-and-objectives gate is also AI-assisted; it is not an independent human validation. A guide has received complete human review only when it is explicitly labeled **Community reviewed**.
