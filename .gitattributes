@@ -2,3 +2,5 @@
 data/objective-snapshots/*-official-objectives.txt text eol=lf
 # Archived snapshots preserve the exact bytes referenced by historical reviews.
 data/objective-snapshots/archive/*.txt -text
+# Preserve vendor bytes and portable bundle hashes across checkout platforms.
+website/assets/study-icons/** -text

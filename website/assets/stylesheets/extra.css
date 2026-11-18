@@ -738,3 +738,11 @@ body {
     color: #000;
   }
 }
+
+/* Keep original vendor SVGs legible in the study icon catalog. */
+.md-typeset table img[src*="study-icons/assets/"] {
+  width: 3rem;
+  height: 3rem;
+  min-width: 3rem;
+  object-fit: contain;
+}

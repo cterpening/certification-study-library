@@ -1,0 +1,63 @@
+name: Prepare study materials
+
+on:
+  workflow_dispatch:
+    inputs:
+      exam_code:
+        description: Registered exam code to read into an authoring packet
+        required: true
+        default: AZ-900
+        type: string
+      content_path:
+        description: Optional authored content JSON to build (must match the exam)
+        required: false
+        default: data/study-content/az-900-governance.json
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.13'
+      - name: Read content and prepare study artifacts
+        env:
+          EXAM_CODE: ${{ inputs.exam_code }}
+          CONTENT_PATH: ${{ inputs.content_path }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+          import subprocess
+          import sys
+          root = Path.cwd().resolve()
+          output = root / '.learning-output' / 'study-materials'
+          output.mkdir(parents=True)
+          command = [sys.executable, 'scripts/build_study_pack.py']
+          exam = os.environ['EXAM_CODE']
+          subprocess.run(command + ['prepare', '--exam-code', exam, '--output-dir', str(output / 'authoring')], check=True)
+          content = os.environ['CONTENT_PATH'].strip()
+          if content:
+              path = (root / content).resolve()
+              if not path.is_relative_to(root):
+                  raise ValueError('Content path must remain inside the repository')
+              if json.loads(path.read_text(encoding='utf-8'))['exam_code'] != exam:
+                  raise ValueError('Content exam_code must match the selected exam')
+              subprocess.run(command + ['build', '--content', str(path), '--output-dir', str(output / 'package')], check=True)
+              subprocess.run(command + ['check', '--package', str(output / 'package')], check=True)
+          Path(os.environ['GITHUB_STEP_SUMMARY']).write_text('Study authoring packet prepared. Generated material remains draft; no review dates changed.\n', encoding='utf-8')
+          PY
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: study-materials
+          path: .learning-output/study-materials
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 30

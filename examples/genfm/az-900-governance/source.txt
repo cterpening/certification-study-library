@@ -1,0 +1,128 @@
+AZ-900 — Microsoft Azure Fundamentals: study material for a conversation
+
+Independent AI-assisted resource — AI-GENERATED DRAFT; HUMAN REVIEW PENDING. Structural checks do not establish factual accuracy or renew source review. The official exam blueprint is authoritative.
+
+Accepted objective baseline: Skills measured as of July 20, 2026
+Official exam blueprint: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900
+Blueprint last checked in the catalog: 2026-10-28.
+This export performs no live source refresh or new factual review.
+
+Canonical library guide: guides/AZ-900-microsoft-azure-fundamentals.md
+Guide text SHA-256: 09dafd7ca0dffee692577828c9efca74232f668469361d83e4a2b081c0d021f0
+Accepted objective snapshot: data/objective-snapshots/az-900-official-objectives.txt
+Scope: Three selected governance distinctions: permissions and Policy, management locks and data protection, and tags and cost allocation. This companion does not cover the entire AZ-900 exam. Technical evidence for these distinctions was checked on November 10, 2026; human review and live Azure execution remain pending.
+
+VERIFY CURRENT: Product details and unresolved limitations may change. This focused selection does not replace the complete guide or official objectives. Source-health records report earlier access checks, not technical verification. Matching hashes do not establish current accuracy.
+
+The questions below are independently authored learning scenarios, not actual exam items.
+
+Unit 1: Azure RBAC and Azure Policy answer different questions
+Unit ID: permissions-and-policy
+
+Separate permission to perform an action from the governance requirements that also apply to the request. Azure role-based access control grants permissions through role assignments at a scope. Azure Policy applies configured governance rules and effects. A permission grant does not exempt a deployment from an applicable policy denial.
+
+Supporting registered sources:
+- What is Azure role-based access control? [azure-rbac-overview]: https://learn.microsoft.com/en-us/azure/role-based-access-control/overview
+  Recorded access status: ok; checked at: 2026-10-28T18:42:32+00:00.
+- What is Azure Policy? [azure-policy-overview]: https://learn.microsoft.com/en-us/azure/governance/policy/overview
+  Recorded access status: ok; checked at: 2026-10-28T18:42:32+00:00.
+- Remediate resources with Azure Policy [sc100-policy-remediation]: https://learn.microsoft.com/en-us/azure/governance/policy/how-to/remediate-resources
+  Recorded access status: ok; checked at: 2026-10-28T18:42:23+00:00.
+
+Published objectives:
+- Describe Azure role-based access control (RBAC)
+- Describe the purpose of Azure Policy
+
+Canonical guide headings:
+- Authentication and authorization
+- Governance controls
+- Apply governance controls at the correct scope
+- Worked example 6 — permission, policy, lock and data protection
+
+Key points:
+- An Azure RBAC role assignment connects a security principal, a role definition, and a scope. Successful sign-in alone does not establish permission for a requested resource operation.
+- Policy behavior depends on the definition, assignment scope, exclusions or exemptions, and effect. Audit and deny have different outcomes; a noncompliance finding is not proof that a resource has been repaired.
+- Supported remediation needs the appropriate configuration, task, and permissions. Inspect the result instead of equating a policy assignment with a successful repair.
+- VERIFY CURRENT: Policy capabilities and effects evolve. Avoid the absolute claim that Policy never considers identity; the current overview also documents identity-aware rules.
+- The diagram maps questions to controls. It is not an asserted execution order, and other service checks can also affect a request.
+
+Original practice question: A deployment identity has permission to create resources in a project resource group. An applicable policy denies creation outside approved locations, and the deployment selects another location. Should the team solve this by expanding the identity's role?
+
+Answer and reasoning: No. The stated failure is the configuration restriction. Select an approved location or follow the organization's legitimate exception process. Broader RBAC permissions do not resolve that policy denial. Inspect the actual error, requested configuration, and applicable scope before changing access.
+
+Diagram: One deployment, two governance questions
+Diagram concepts: Who may perform this action at this scope?; Azure RBAC: scoped permission grants; Does the request satisfy applicable rules?; Azure Policy: configured rules and effects; Inspect the actual denial, configuration, and scope
+Diagram relationships in words: Who may perform this action at this scope? — Examine role assignments → Azure RBAC: scoped permission grants; Does the request satisfy applicable rules? — Examine policy assignments → Azure Policy: configured rules and effects; Azure RBAC: scoped permission grants — Troubleshoot permission failures → Inspect the actual denial, configuration, and scope; Azure Policy: configured rules and effects — Troubleshoot rule failures → Inspect the actual denial, configuration, and scope
+
+Unit 2: A management lock is not a data-recovery plan
+Unit ID: locks-and-recovery
+
+Resource locks restrict management operations at their scope. Protecting a resource's contents also requires understanding data operations and recovery. A delete lock on a storage account does not prevent an authorized application from deleting a blob through the data plane.
+
+Supporting registered sources:
+- Lock Azure resources to protect infrastructure [azure-resource-locks]: https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources
+  Recorded access status: ok; checked at: 2026-10-28T18:42:31+00:00.
+
+Published objectives:
+- Describe the purpose of resource locks
+
+Canonical guide headings:
+- Governance controls
+- Select storage from data shape through recovery
+- Worked example 6 — permission, policy, lock and data protection
+- Lab 6: Offline cost and control worksheet
+
+Key points:
+- CanNotDelete and ReadOnly are different lock levels. Examine inherited locks when an otherwise authorized management operation fails.
+- Identify the operation and its API boundary. A management lock on a storage account and authorization for a data-plane blob operation address different concerns.
+- Related item: A recovery plan needs its own controls and evidence. A locked resource is not proof that deleted data can be restored.
+- VERIFY CURRENT: Check the documented operation-specific lock effects and service exceptions before applying a lock to a workload.
+- The diagram separates management protection, data authorization, and recovery investigation. It does not claim that a recovery mechanism has been configured or tested.
+
+Original practice question: A storage account has a delete lock. An application is authorized to delete blobs and deletes one through the Blob service API. Does the lock guarantee that the document remains available?
+
+Answer and reasoning: No. The account lock restricts management-plane operations. The blob deletion is a data-plane operation. Whether the document can be recovered depends on the applicable data-protection configuration and its limits; the label locked does not establish that recovery is possible.
+
+Diagram: Identify the operation before choosing protection
+Diagram concepts: Delete account through management API; Applicable management lock; Delete blob through data API; Applicable data authorization; Deletion has occurred: can data be restored?; Inspect recovery configuration and test evidence
+Diagram relationships in words: Delete account through management API — Inspect management protection → Applicable management lock; Delete blob through data API — Inspect data permissions → Applicable data authorization; Deletion has occurred: can data be restored? — A separate recovery question → Inspect recovery configuration and test evidence
+
+Unit 3: Resource tags, cost records, and access are separate
+Unit ID: tags-and-cost
+
+A cost-center label helps organize ownership and spending. It does not itself grant access, automatically copy onto child resources, or decide how a shared bill should be divided. Resource metadata and Cost Management usage records can legitimately carry different tag information.
+
+Supporting registered sources:
+- Resource tags and inheritance [az900-tags]: https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources
+  Recorded access status: ok; checked at: 2026-10-28T18:41:30+00:00.
+- Cost Management tag inheritance [az900-cost-tags]: https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/enable-tag-inheritance
+  Recorded access status: ok; checked at: 2026-10-28T18:41:30+00:00.
+- What is Azure role-based access control? [azure-rbac-overview]: https://learn.microsoft.com/en-us/azure/role-based-access-control/overview
+  Recorded access status: ok; checked at: 2026-10-28T18:42:32+00:00.
+- What is Azure Policy? [azure-policy-overview]: https://learn.microsoft.com/en-us/azure/governance/policy/overview
+  Recorded access status: ok; checked at: 2026-10-28T18:42:32+00:00.
+
+Published objectives:
+- Describe the purpose of tags
+- Describe cost management capabilities in Azure
+
+Canonical guide headings:
+- Cost management
+- Budgets, limits, commitments and tags
+- Governance controls
+- Worked example 3 — allocate shared cost without changing access
+
+Key points:
+- Parent tags are not automatically inherited as tags on child resources. Inspect resource metadata when checking a resource-tag requirement.
+- Cost Management tag inheritance, when enabled and supported, enriches usage records rather than changing the resources themselves.
+- A cost report is not evidence that every resource has the required tag. Inspect each relevant record for the question being asked.
+- VERIFY CURRENT: Check supported billing scopes and configuration for Cost Management tag inheritance.
+- A tag alone does not grant resource access. A shared-cost allocation needs an explicit business rule; the arithmetic example is an original illustration, not an Azure allocation default.
+
+Original practice question: A cost report groups spending under CostCenter=Research, but the virtual machine lacks that resource tag. Is either observation necessarily wrong?
+
+Answer and reasoning: No. Supported Cost Management tag inheritance can add a parent label to the usage record without changing the virtual machine's metadata. Inspect the resource separately if a policy requires the resource tag. A financial classification does not establish either resource-tag compliance or access permissions.
+
+Diagram: Follow the record: resource, usage, or authorization
+Diagram concepts: Resource-group tag; Resource metadata tags; Cost Management usage record; Cost report and allocation analysis; Scoped role assignment; Resource authorization
+Diagram relationships in words: Resource-group tag — If supported cost inheritance is enabled → Cost Management usage record; Resource metadata tags — Where resource tags appear in usage → Cost Management usage record; Cost Management usage record — Financial reporting → Cost report and allocation analysis; Scoped role assignment — Grants scoped permissions → Resource authorization

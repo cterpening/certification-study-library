@@ -2,6 +2,22 @@
 
 This file records third-party material that materially influenced the structure, examples, or coverage of original content in this repository. Links and citations elsewhere remain governed by their source publishers.
 
+## Microsoft Azure architecture icons
+
+The selected original SVGs under `website/assets/study-icons/assets/` are Microsoft
+Azure architecture icons, sourced from the owner's public icon pack. The source
+pack's release is unknown; all 14 selected files and both supplied PDFs matched
+the [official V25 download](https://learn.microsoft.com/en-us/azure/architecture/icons/)
+when checked November 10, 2026. Artwork is preserved byte-for-byte.
+
+Microsoft permits these icons in architectural diagrams, training material and
+documentation. The supplied [terms](website/assets/study-icons/notices/Microsoft_Terms_of_Use.pdf)
+govern their use; retain them with the assets. Preserve appearance/proportions,
+label the represented Microsoft product, and do not use an icon for an unrelated
+product. The supplied [FAQ](website/assets/study-icons/notices/Azure_Icons_FAQ.pdf)
+is retained as historical source material, including old roadmap comments.
+No vendor endorsement is claimed. See [asset provenance and maintenance](docs/VISUAL-ASSETS.md).
+
 ## Timothy Warner — GitHub Copilot Certification Exam Preparation
 
 - **Author:** Timothy Warner

@@ -1,0 +1,176 @@
+DP-900 — Microsoft Azure Data Fundamentals: study material for a conversation
+
+Independent AI-assisted resource — AI-GENERATED DRAFT; HUMAN REVIEW PENDING. Structural checks do not establish factual accuracy or renew source review. The official exam blueprint is authoritative.
+
+Accepted objective baseline: Skills measured as of July 21, 2026
+Official exam blueprint: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-900
+Blueprint last checked in the catalog: 2026-10-28.
+This export performs no live source refresh or new factual review.
+
+Canonical library guide: guides/DP-900-microsoft-azure-data-fundamentals.md
+Guide text SHA-256: 1c618b776923450c7bbf59aac51ce2bf3b64cfb5dcc214e6b4b388a718332991
+Accepted objective snapshot: data/objective-snapshots/dp-900-official-objectives.txt
+Scope: Four selected data-decision topics spanning core concepts, relational services, non-relational storage, and analytics. This companion is not complete DP-900 exam coverage. Scoped technical evidence was checked on November 10, 2026; human review and live Azure, Fabric, and Power BI execution remain pending.
+
+VERIFY CURRENT: Product details and unresolved limitations may change. This focused selection does not replace the complete guide or official objectives. Source-health records report earlier access checks, not technical verification. Matching hashes do not establish current accuracy.
+
+The questions below are independently authored learning scenarios, not actual exam items.
+
+Unit 1: Choose from the workload, not just the file format
+Unit ID: data-shapes-and-workloads
+
+Data shape and workload are separate questions. Structured rows, flexible documents, and media describe representation. Transaction processing and historical analysis describe what users need to do with that information. A JSON file alone does not identify the right database.
+
+Supporting registered sources:
+- Explore core data concepts [microsoft-dp900-core-data-concepts-module]: https://learn.microsoft.com/en-us/training/modules/explore-core-data-concepts/
+  Recorded access status: ok; checked at: 2026-10-28T19:10:35+00:00.
+
+Published objectives:
+- Describe the features of structured data
+- Describe the features of semi-structured data
+- Describe the features of unstructured data
+- Describe features of transactional workloads
+- Describe features of analytical workloads
+
+Canonical guide headings:
+- Data representation
+- Operational and analytical workloads
+- A repeatable data-choice method
+
+Key points:
+- Structured data has a predictable organization; semi-structured records carry structure with flexible fields; unstructured content lacks an inherent tabular schema. None of these labels removes the need for governance or validation.
+- Online transaction processing supports operational changes such as placing an order. Analytical workloads examine many records to explain trends, compare periods, or aggregate results.
+- A file format, data model, storage service, and processing engine describe different layers. One service can support more than one representation or workload.
+- Ask about query patterns, transaction scope, latency, scale, compatibility, and responsibility before selecting a product.
+- Related item: Copying operational data for analysis adds freshness and quality questions. A successful copy does not prove that the business measure is correct.
+
+Original practice question: A bookshop receives orders as JSON messages. Checkout must record order changes reliably, while analysts compare sales across several years. Does JSON mean both workloads should use the same document database?
+
+Answer and reasoning: No. JSON describes the message representation. Checkout needs an appropriate transaction and access design; historical analysis needs suitable aggregation and serving. Evaluate those requirements independently. One product might support both, or separate operational and analytical stores might fit better; the format alone cannot decide.
+
+Diagram: Separate representation from business workload
+Diagram concepts: JSON order message; Semi-structured representation; Place and change orders; Transaction and point-access needs; Compare several years of sales; Aggregation and analytical serving needs
+Diagram relationships in words: JSON order message — Describes the data format → Semi-structured representation; Place and change orders — Defines operational requirements → Transaction and point-access needs; Compare several years of sales — Defines analytical requirements → Aggregation and analytical serving needs
+
+Unit 2: Match relational design and the Azure SQL management boundary
+Unit ID: relational-management
+
+Relational design organizes entities and their relationships with keys and constraints. Normalization reduces repeated facts and update anomalies. Azure SQL Database, Managed Instance, and SQL Server on Azure Virtual Machines then offer different compatibility and administration boundaries for SQL Server-family workloads.
+
+Supporting registered sources:
+- Explore fundamental relational data concepts [microsoft-dp900-relational-concepts-module]: https://learn.microsoft.com/en-us/training/modules/explore-relational-data-offerings/
+  Recorded access status: ok; checked at: 2026-10-28T19:10:35+00:00.
+- What is Azure SQL? [microsoft-azure-sql-options-overview]: https://learn.microsoft.com/en-us/azure/azure-sql/azure-sql-iaas-vs-paas-what-is-overview
+  Recorded access status: ok; checked at: 2026-10-28T19:10:35+00:00.
+
+Published objectives:
+- Identify features of relational data
+- Describe normalization and why it is used
+- Describe the Azure SQL family of products, including Azure SQL Database, Azure SQL Managed Instance, and SQL Server on Azure Virtual Machines
+
+Canonical guide headings:
+- Tables, keys, and relationships
+- Relational reasoning in one worked model
+- Azure relational services
+- Choose the management boundary before the SKU
+
+Key points:
+- Separate customer, order, product, and order-line facts according to their meaning. A primary key identifies a row; a foreign key constrains an applicable relationship.
+- Normalization reduces repeated facts and update anomalies. An order's historical delivery address is a different fact from the customer's current address; preserve required history deliberately.
+- Azure SQL Database is a managed database-oriented starting point. Azure SQL Managed Instance offers broader instance-level SQL Server compatibility while retaining platform management.
+- SQL Server on Azure Virtual Machines offers operating-system and SQL Server control with additional customer administration. Managed does not mean every application feature is automatically compatible.
+- VERIFY CURRENT: Check the exact required SQL Server features, engine versions, region, service limits, and migration requirements before selecting a deployment option.
+
+Original practice question: A vendor's SQL Server application requires a supported agent installed in the guest operating system and control over the SQL Server installation. Which Azure SQL family option is the appropriate starting point, and what tradeoff follows?
+
+Answer and reasoning: Evaluate SQL Server on Azure Virtual Machines because the requirement includes guest operating-system and installation control. The team also takes on the corresponding administration responsibilities. Azure SQL Database and Managed Instance reduce platform work but do not expose the same operating-system control. Validate the vendor's exact requirements before committing to a design.
+
+Diagram: Let compatibility and control guide the SQL choice
+Diagram concepts: Managed database for a compatible cloud application; Evaluate Azure SQL Database; Broader instance-level SQL Server dependencies; Evaluate Azure SQL Managed Instance; Guest OS and SQL installation control required; Evaluate SQL Server on Azure Virtual Machines
+Diagram relationships in words: Managed database for a compatible cloud application — Database-oriented management → Evaluate Azure SQL Database; Broader instance-level SQL Server dependencies — Check exact feature compatibility → Evaluate Azure SQL Managed Instance; Guest OS and SQL installation control required — More control and customer work → Evaluate SQL Server on Azure Virtual Machines
+
+Unit 3: Distinguish objects, shared files, and database documents
+Unit ID: nonrelational-access
+
+Non-relational storage includes several access models. Book-cover images retrieved as objects, an application requiring a shared file system, and profiles retrieved as database documents are different requirements. Choose from those access paths and operating needs rather than treating every non-relational option as interchangeable.
+
+Supporting registered sources:
+- Blob types [dp900-blob]: https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction
+  Recorded access status: ok; checked at: 2026-10-28T19:10:03+00:00.
+- Azure Files overview [dp900-files]: https://learn.microsoft.com/en-us/azure/storage/files/storage-files-introduction
+  Recorded access status: ok; checked at: 2026-10-28T19:10:03+00:00.
+- Azure Cosmos DB: Resource model [dp-420-resource-model]: https://learn.microsoft.com/en-us/azure/cosmos-db/resource-model
+  Recorded access status: ok; checked at: 2026-10-28T19:10:50+00:00.
+- Partitioning and horizontal scaling in Azure Cosmos DB [microsoft-cosmos-db-partitioning-overview]: https://learn.microsoft.com/en-us/azure/cosmos-db/partitioning-overview
+  Recorded access status: ok; checked at: 2026-10-28T19:10:36+00:00.
+
+Published objectives:
+- Describe features of Azure Blob storage
+- Describe features of Azure Files
+- Identify use cases for Azure Cosmos DB
+
+Canonical guide headings:
+- Azure Storage options
+- Azure Cosmos DB
+- Cosmos DB decisions that explain the service
+
+Key points:
+- Azure Blob Storage is an object-storage starting point for images, documents, and other large objects. Supported additional protocols do not remove the need to evaluate their exact constraints.
+- Azure Files provides managed file shares for supported SMB or NFS scenarios. An application that expects a file share needs those access semantics evaluated explicitly.
+- Azure Cosmos DB for NoSQL stores items in containers and supports document-oriented workloads. Global distribution and key/document access can make it a candidate, but the record being JSON is not sufficient justification.
+- Partition-key design should reflect access patterns and distribute data and request load. The item's ID and partition key serve different roles.
+- VERIFY CURRENT: Check the selected storage protocol, Cosmos API, partition behavior, supported features, and service limits. This unit does not cover every storage service or Cosmos API.
+
+Original practice question: The bookshop needs cover images fetched by object name, an existing application that expects a managed shared file system, and customer profiles accessed by key across regions. What are reasonable service candidates, and what still needs validation?
+
+Answer and reasoning: Evaluate Blob Storage for the object access, Azure Files for the shared-file requirement, and Cosmos DB for NoSQL for the profile workload if its distribution and document-access features fit. Check protocols, compatibility, partition key, consistency needs, costs, and actual access patterns. These are justified starting points, not a mandatory three-service architecture.
+
+Diagram: Start with the access requirement
+Diagram concepts: Retrieve cover images as named objects; Evaluate Azure Blob Storage; Application requires managed shared files; Evaluate Azure Files and required protocol; Distributed profile lookup by key/document; Evaluate Cosmos DB for NoSQL and partition design
+Diagram relationships in words: Retrieve cover images as named objects — Object-storage requirements → Evaluate Azure Blob Storage; Application requires managed shared files — File-share requirements → Evaluate Azure Files and required protocol; Distributed profile lookup by key/document — Database access and distribution → Evaluate Cosmos DB for NoSQL and partition design
+
+Unit 4: Trace data from ingestion to a trustworthy visual
+Unit ID: analytics-to-insight
+
+Analytics joins several responsibilities: ingest source data, validate and transform it, serve it for analysis, define business measures in a semantic model, and present an appropriate visual. The required decision latency determines whether batch or streaming is useful. Successful ingestion alone does not prove that a report is current or correct.
+
+Supporting registered sources:
+- Explore data ingestion pipelines [dp900-3-analytics-unit]: https://learn.microsoft.com/en-us/training/modules/examine-components-of-modern-data-warehouse/3-data-ingestion-pipelines
+  Recorded access status: ok; checked at: 2026-10-28T19:25:26+00:00.
+- Explore fundamentals of real-time analytics [microsoft-dp900-stream-processing-module]: https://learn.microsoft.com/en-us/training/modules/explore-fundamentals-stream-processing/
+  Recorded access status: ok; checked at: 2026-10-28T19:10:35+00:00.
+- Power BI semantic models [microsoft-power-bi-semantic-models]: https://learn.microsoft.com/en-us/power-bi/connect-data/service-datasets-understand
+  Recorded access status: ok; checked at: 2026-10-28T19:10:37+00:00.
+- Understand star schema and the importance for Power BI [microsoft-power-bi-star-schema-guidance]: https://learn.microsoft.com/en-us/power-bi/guidance/star-schema
+  Recorded access status: ok; checked at: 2026-10-28T19:10:37+00:00.
+- Power BI training [microsoft-power-bi-guided-learning-dp900]: https://learn.microsoft.com/en-us/training/powerplatform/power-bi
+  Recorded access status: ok; checked at: 2026-10-28T19:10:37+00:00.
+
+Published objectives:
+- Describe considerations for data ingestion and processing
+- Describe the difference between batch and streaming data
+- Describe features of data models in Power BI
+- Identify appropriate visualizations for data
+
+Canonical guide headings:
+- The analytics pipeline
+- Follow the evidence through the pipeline
+- Batch and streaming
+- Power BI concepts
+- Model before decorating
+- 6. Trace a freshness problem
+
+Key points:
+- Ingestion receives or copies data. Transformation cleans and reshapes it. Orchestration coordinates activities and dependencies. These roles can be implemented by cooperating tools.
+- Batch processes bounded collections. Streaming processes an ongoing event flow. Select based on required response time and operating needs; streaming does not mean zero end-to-end latency.
+- A Power BI semantic model gives tables, relationships, and measures a consistent business meaning. The intended fact grain matters before a visual is selected.
+- A line chart is a useful starting point for a time trend; bars support category comparisons; a table supports record-level inspection. Choose the visual from the question.
+- VERIFY CURRENT: Data access mode, refresh configuration, service capabilities, and licensing affect actual behavior. The timestamp exercise describes an Import-model path, not every Power BI mode.
+
+Original practice question: In an invented Import workflow, a sale commits at 10:00, ingestion completes at 10:03, transformation finishes at 10:05, and the model refresh completes at 10:15. At 10:10, the report still omits the sale. Should the team begin by replacing the chart?
+
+Answer and reasoning: No. The model has not yet completed its scheduled refresh. Trace the timestamps and access mode before changing presentation. The stated path has 15 minutes of end-to-end delay, including ten minutes between transformation and completed model refresh. These timings are scenario assumptions, not a service guarantee.
+
+Diagram: Illustrative Import workflow: follow the freshness evidence
+Diagram concepts: Sale committed at 10:00; Ingested at 10:03; Transformed at 10:05; Import-model refresh completed at 10:15; Report can use the updated model
+Diagram relationships in words: Sale committed at 10:00 — Receive source data → Ingested at 10:03; Ingested at 10:03 — Validate and reshape → Transformed at 10:05; Transformed at 10:05 — Wait for the defined refresh path → Import-model refresh completed at 10:15; Import-model refresh completed at 10:15 — Presentation depends on its model → Report can use the updated model
