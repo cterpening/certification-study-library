@@ -8,7 +8,7 @@ authority: unofficial
 review_status: source-validated
 last_verified: 2026-10-29
 upcoming_change_status: retirement-announced
-upcoming_change_checked: 2026-10-29
+upcoming_change_checked: 2026-11-23
 ---
 
 # SY0-701 CompTIA Security+ (V7) Study Guide
@@ -16,13 +16,13 @@ upcoming_change_checked: 2026-10-29
 > **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on October 29, 2026. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sy0-701-coverage-record). The [official Security+ page](https://www.comptia.org/en-us/certifications/security/v7/) is authoritative.
 
 **Current baseline:** Security+ V7, exam SY0-701; launched November 7, 2023<br>
-**Scheduled retirement — verify before booking:** CompTIA lists June 11, 2027 for the English exam and August 13, 2027 for Japanese, Portuguese, Spanish, and Thai. CompTIA now publishes the replacement as [Security+ V8, SY0-801](https://www.comptia.org/en-us/certifications/security/v8/), with launch expected November 17, 2026. Checked September 29, 2026. V7 remains available; the V8 launch does not itself retire V7.<br>
+**Version selection.** CompTIA launched [Security+ V8 (SY0-801)](https://www.comptia.org/en-us/certifications/security/v8/) in English on November 17, 2026. V7 (SY0-701) remains available through June 11, 2027 in English and August 13, 2027 in Japanese, Portuguese, Spanish and Thai. Choose the objective map that matches the booked code.<br>
 **Official delivery snapshot:** Maximum 90 multiple-choice and performance-based questions; 90 minutes; 750/900 passing score; English, Japanese, Portuguese, Spanish, and Thai listed<br>
 **Experience guidance:** CompTIA recommends Network+ knowledge and two years in a security/systems-administrator role
 
 ## Security+ V8 transition preparation
 
-**Announced future scope, checked September 29, 2026:** The [official V8 page](https://www.comptia.org/en-us/certifications/security/v8/) publishes these weights: foundational security concepts 16%, threats/vulnerabilities/attacks 24%, architecture 19%, operations 27%, and program management/oversight 14%. The current V7 map below remains separate. V8 explicitly adds AI security risks and AI-assisted operational workflows; do not assume a V7 course fully covers the replacement.
+**V8 scope (November 23, 2026).** The [official V8 page](https://www.comptia.org/en-us/certifications/security/v8/) publishes these weights: foundational security concepts 16%, threats/vulnerabilities/attacks 24%, architecture 19%, operations 27%, and program management/oversight 14%. The current V7 map below remains separate. V8 explicitly adds AI security risks and AI-assisted operational workflows; do not assume a V7 course fully covers the replacement.
 
 Original practice extension: assess a hypothetical internal assistant that retrieves documents and can open service tickets. Identify its data exposure, prompt-manipulation, authorization, and operational risks. Choose preventive controls, investigation evidence, a containment action, and a recovery test. Explain what still requires human review when automation helps triage. This is preparation guidance, not a reproduction of an exam item or a complete V8 guide.
 
@@ -524,7 +524,7 @@ All eight full labs remain proposed. The limited in-memory cryptography exercise
 39. SLE is $50,000; ALE also needs annual rate of occurrence, with uncertainty made explicit.
 40. The business/organizational owner with delegated authority, informed by security and documented governance—not any technician.
 41. Scope, period, criteria and sampling are limited; add architecture, incidents, tests, monitoring, contract and current risk evidence.
-42. English SY0-701 retires June 11, 2027; Japanese, Portuguese, Spanish and Thai retire August 13, 2027. CompTIA also explicitly announces V8/SY0-801, expected on or about November 17, 2026. That future launch does not itself retire V7; verify the current language/scheduling and transition pages.
+42. English SY0-701 retires June 11, 2027. Japanese, Portuguese, Spanish and Thai retire August 13, 2027. English V8 launched November 17, 2026. Check the exam code and language when booking.
 43. PE decides from policy/context; PA establishes or terminates the path; PEP permits, monitors and ends the connection. A decision log alone does not prove enforcement.
 44. The example’s path verifier did not consume the separately generated CRL. Revocation needs its own applicable, authentic, fresh status evidence and failure policy; a chain alone is insufficient.
 45. OAuth delegates resource access; OIDC adds an identity layer and ID-token claims for the client. Validate the relevant token’s issuer, audience, signature, time and flow protections; a token is not unrestricted permission.
@@ -532,7 +532,7 @@ All eight full labs remain proposed. The limited in-memory cryptography exercise
 
 ## SY0-601-to-SY0-701 gap checklist
 
-Map older material line by line to V7. Rebuild around the current five-domain weights rather than the older structure. Verify expanded control classification and zero trust, security-aware change management, current cryptographic uses, actor/motive/vector/surface reasoning, application/cloud/virtual/mobile/supply-chain vulnerabilities and indicators, IaC/serverless/container/IoT/ICS models, enterprise infrastructure/secure communication, data classification/states and resilience, modern baselines/asset/vulnerability workflows, SIEM/SOAR/EDR/XDR and data sources, IAM/PAM/passwordless, security automation, incident/root-cause/hunting/forensics, governance/risk registers/appetite/tolerance/BIA, third-party agreements/monitoring, compliance/privacy/audit/attestation and measurable awareness. Use the published V8 transition page for future preparation, while keeping the SY0-701 scoring scope separate.
+Map older material line by line to V7. Rebuild around the current five-domain weights rather than the older structure. Verify expanded control classification and zero trust, security-aware change management, current cryptographic uses, actor/motive/vector/surface reasoning, application/cloud/virtual/mobile/supply-chain vulnerabilities and indicators, IaC/serverless/container/IoT/ICS models, enterprise infrastructure/secure communication, data classification/states and resilience, modern baselines/asset/vulnerability workflows, SIEM/SOAR/EDR/XDR and data sources, IAM/PAM/passwordless, security automation, incident/root-cause/hunting/forensics, governance/risk registers/appetite/tolerance/BIA, third-party agreements/monitoring, compliance/privacy/audit/attestation and measurable awareness. Use the published V8 transition page when preparing for SY0-801, while keeping the SY0-701 scoring scope separate.
 
 ## Source and freshness notes
 

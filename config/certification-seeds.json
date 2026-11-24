@@ -1631,8 +1631,20 @@
       "exam_code": "SY0-701",
       "title": "CompTIA Security+",
       "official_url": "https://www.comptia.org/en-us/certifications/security/v7/",
-      "status": "active",
-      "source_id": "comptia-first-wave"
+      "status": "retirement-announced",
+      "source_id": "comptia-first-wave",
+      "retirement_date": "2027-06-11",
+      "retirement_scope": "English. Japanese, Portuguese, Spanish and Thai versions retire August 13, 2027.",
+      "retirement_source_url": "https://www.comptia.org/en-us/certifications/security/v7/",
+      "replacement_exam_code": "SY0-801",
+      "replacement_official_url": "https://www.comptia.org/en-us/certifications/security/v8/",
+      "lifecycle": {
+        "checked_on": "2026-11-23",
+        "source_urls": [
+          "https://www.comptia.org/en-us/certifications/security/v7/",
+          "https://www.comptia.org/en-us/certifications/security/v8/"
+        ]
+      }
     },
     {
       "vendor_id": "comptia",
@@ -2932,6 +2944,23 @@
           "source_url": "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/"
         },
         "notes": "Exam version. Check the appointment for language and local availability."
+      }
+    },
+    {
+      "vendor_id": "comptia",
+      "exam_code": "SY0-801",
+      "title": "CompTIA Security+",
+      "official_url": "https://www.comptia.org/en-us/certifications/security/v8/",
+      "status": "active",
+      "source_id": "comptia-first-wave",
+      "lifecycle": {
+        "checked_on": "2026-11-23",
+        "initial_release": {
+          "date": "2026-11-17",
+          "stage": "general-availability",
+          "scope": "English",
+          "source_url": "https://www.comptia.org/en-us/certifications/security/v8/"
+        }
       }
     }
   ]
