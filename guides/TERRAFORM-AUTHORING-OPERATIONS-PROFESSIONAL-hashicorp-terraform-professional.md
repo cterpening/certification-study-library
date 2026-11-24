@@ -13,6 +13,8 @@ upcoming_change_checked: 2026-10-28
 
 # HashiCorp Certified: Terraform Authoring and Operations Advanced Study Guide
 
+**Exam selection (November 23, 2026).** Authoring and Operations Advanced is a lab-based exam using Terraform 1.6. Infrastructure Engineer Professional uses multiple-choice questions and Terraform 1.15. Check the title on your booking before choosing a preparation path. [Sources and study resources](../docs/research/2026-11-23-refresh-05.md#terraform-authoring-operations-professional)
+
 > **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed on October 28, 2026 across all 27 detailed objectives; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#terraform-authoring-operations-professional-coverage-record). The [official HashiCorp Advanced exam content list](https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-review) is authoritative.
 
 **Current baseline:** Terraform Authoring and Operations Advanced, Terraform 1.6 and AWS-provider exam version; verified September 28, 2026<br>

@@ -13,6 +13,8 @@ upcoming_change_checked: 2026-10-28
 
 # HashiCorp Certified: Vault Associate (003) Study Guide
 
+**Exam selection (November 23, 2026).** The credential page exposes the numbered 003 objectives and specifies Vault 1.19. If a tutorial link opens a general collection, return to that credential page for the exam contract. [Sources and study resources](../docs/research/2026-11-23-refresh-05.md#vault-associate-003)
+
 > **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed on October 28, 2026 across all 40 detailed objectives; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#vault-associate-003-coverage-record). The [official Vault Associate (003) content list](https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-review-003) is authoritative.
 
 **Current baseline:** Vault Associate (003), 40 detailed objectives; reviewed October 28, 2026. **VERIFY CURRENT — version discrepancy:** the [certification page](https://developer.hashicorp.com/certifications/vault-associate) says **Vault 1.19**, while the learning path still says **1.16**<br>

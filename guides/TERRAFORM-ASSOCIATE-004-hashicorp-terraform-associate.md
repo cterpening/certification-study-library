@@ -13,6 +13,8 @@ upcoming_change_checked: 2026-10-28
 
 # HashiCorp Certified: Terraform Associate (004) Study Guide
 
+**Exam selection (November 23, 2026).** Use the credential page for the 004 task list and its Terraform 1.12 target. Infrastructure Engineer Professional is a separate assessment with its own version and objectives. [Sources and study resources](../docs/research/2026-11-23-refresh-05.md#terraform-associate-004)
+
 > **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed on October 28, 2026 across all 37 detailed objectives; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#terraform-associate-004-coverage-record). The [official Terraform Associate 004 content list](https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-review-004) is authoritative.
 
 **Current baseline:** Terraform Associate (004), testing Terraform 1.12; verified October 28, 2026<br>
