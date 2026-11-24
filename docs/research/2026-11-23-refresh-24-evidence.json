@@ -1,0 +1,91 @@
+{
+  "date": "2026-11-23",
+  "scope": "Scoped public objective, assessment and language-delivery source checks. No live labs or bookings.",
+  "exams": [
+    {
+      "code": "NCP-AIO",
+      "url": "https://www.nvidia.com/en-us/learn/certification/ai-operations-professional/",
+      "monitor_transport": "Registered NVIDIA certification page returns complete server HTML, including identity, visible weighted h3 headings, subordinate h4 labels, topic bullet lists and assessment details. Original failure matched 'ValueError: Could not find NVIDIA exam blueprint'.",
+      "objective_boundaries": "Starts at 'NCP-AIO Exam Preparation Topics, Recommended Training and Reading'. Numbered positions in the returned monitor text place the four main domain headings at 665, 688, 715 and 736; each topic is between its h4 caption and the percentage/Exam Weight label. The outer boundary is 'Practice Questions'. The independent data-verticalnav-customtitle weight on each h3 agrees with the visible weight, and the four weights total 100%.",
+      "source_defect": "The fourth domain's h3 and navigation identify Troubleshooting and Optimization (23%). Its h4 repeats Install and Deploy Potential Exam Topics. The five tasks are all troubleshooting. Check the actual h3 and weight while recording this published typo. Fail on any other unrecognized mismatch or missing domain, real percentage, or topics.",
+      "comparison": "The 19 tasks and 31/23/23/23 domains retain their substance. The DOCA-on-DPU task loses terminal punctuation, the DCGM/NVSM/nvidia-smi task describes these as system management tools, and 'fabric manager service' changes case. Existing accepted rows include a manual provenance header and hand-normalized wording.",
+      "assessment": "The page has 30 multiple-choice questions and three performance challenges inside the one 120-minute session. The multiple-choice and performance sections each contribute 50%, the combined grade is pass/fail, and the candidate receives a section-level report. The generic status field 'Hands-on lab: Yes' omits this information. Preserve the two paragraphs under 'Exam Structure', stopping before 'Certification Learning Path'. No exercise, exam account or live VM was accessed.",
+      "old_objective_sha256": "3d4312635eed1b9a05823d40d95a8a8e75dd8852e7b971bee7a799b301c86abf",
+      "new_objective_sha256": "b7bbd393488e7c7e65a9c640ceb0e85b7da8b65b7dfc01ad0c8f3eae7d3e3a5b",
+      "old_status_sha256": "425444a35a8849ca1544c5e50a4a730cd9134c2700f90ff2a54bb7367287bd7e",
+      "new_status_sha256": "7a9c2d7bbaab13f13c1a57266ba4b831dcd0b5756008be9a48533544df46c355",
+      "confidence": "High for official public text. Proposed parser and hashes were tested in an in-memory overlay. This is a serialization migration requiring review.",
+      "observation": "The 19 topics retain their four domain weights of 31%, 23%, 23% and 23%. The final card repeats the installation caption under its troubleshooting heading. The exam combines a multiple-choice section and three hands-on challenges, and the two sections each contribute 50% of the score.",
+      "urls": [
+        "https://www.nvidia.com/en-us/learn/certification/ai-operations-professional/"
+      ],
+      "scope_reconciliation": "September’s 31 topics became 19 named tasks. Install and Deploy now includes both NGC and cloud VMI deployment. Fleet Command is in Administration, and Kubernetes administration is in Workload Management.",
+      "technical_references": [
+        "https://docs.nvidia.com/ngc/ngc-deploy-public-cloud/latest/ngc-deploy-containers/index.html",
+        "https://docs.nvidia.com/deeplearning/riva/archives/2-15-0/user-guide/docs/installation/deploy-egx.html",
+        "https://docs.nvidia.com/dgx-basepod/deployment-guide-dgx-basepod/latest/hardware-overview.html"
+      ]
+    },
+    {
+      "code": "MLA-C01",
+      "canonical": "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-01/machine-learning-engineer-associate-01.html",
+      "credentials": "https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/",
+      "pdf": "https://d1.awsstatic.com/training-and-certification/docs-machine-learning-engineer-associate/AWS-Certified-Machine-Learning-Engineer-Associate_Exam-Guide.pdf",
+      "announcement": "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/",
+      "canonical_error": "The exact English URL linked from the credential page still returns HTTP 404 with monitor.fetch. The English deep link sampled for Domain 2 also returns HTTP 404. This identifies an English guide route failure; credential-wide retirement does not follow.",
+      "pdf_observation": "The registered English AWS static exam guide returns HTTP 200, application/pdf, 219817 bytes. The PDF reader identifies MLA-C01 and 23 pages. The exact PDF byte checksum is separate from the normalized objective text digest.",
+      "pdf_bytes_sha256": "29584b9d17ab38702b7e35de452d80127806122194094b1af60b5155086612fd",
+      "validated_localized_urls": [
+        "https://docs.aws.amazon.com/ja_jp/aws-certification/latest/machine-learning-engineer-associate-01/machine-learning-engineer-associate-01.html",
+        "https://docs.aws.amazon.com/ko_kr/aws-certification/latest/machine-learning-engineer-associate-01/machine-learning-engineer-associate-01.html",
+        "https://docs.aws.amazon.com/zh_cn/aws-certification/latest/machine-learning-engineer-associate-01/machine-learning-engineer-associate-01.html"
+      ],
+      "localized_evidence": "All three aligned AWS-localized HTML guides returned HTTP 200 and identified MLA-C01. Each provides the 28%, 26%, 22%, 24% domain weights using the real monitor transport. These are suitable official source links for candidates using Japanese, Korean or Simplified Chinese; translating or assigning them the English baseline would change the measurement.",
+      "language_delivery": "The English C01 last date was September 28, 2026. Japanese, Korean and Simplified Chinese C01 continue until C02 general availability. AWS's September announcement sets January 14, 2027 as the transition target; its credential FAQ still lists GA registration/delivery TBD. C02 beta is English-only. No booking was attempted.",
+      "old_objective_sha256": "91c5a0ed3fae7d2606bfed410b968599e65b38d058eb0047ef72d7b03e0ab4b7",
+      "old_status_sha256": "56cf4867c47b9ad77f74df83a4a3c739bca8b85068b2ad914e224520c401dfa0",
+      "new_objective_sha256": null,
+      "new_status_sha256": null,
+      "recommendation": "Keep the accepted English C01 baseline and its registered publisher PDF as the English-language fallback. Document the localized issuer HTML and its scope for the three continuing delivery languages. There is no current automated English HTML candidate to accept.",
+      "observation": "The English HTML route returns 404. The English issuer PDF and the Japanese, Korean and Simplified Chinese HTML outlines remain available. The language-specific appointment and the issuer transition announcement determine which exam materials apply.",
+      "urls": [
+        "https://d1.awsstatic.com/training-and-certification/docs-machine-learning-engineer-associate/AWS-Certified-Machine-Learning-Engineer-Associate_Exam-Guide.pdf",
+        "https://docs.aws.amazon.com/ja_jp/aws-certification/latest/machine-learning-engineer-associate-01/machine-learning-engineer-associate-01.html",
+        "https://docs.aws.amazon.com/ko_kr/aws-certification/latest/machine-learning-engineer-associate-01/machine-learning-engineer-associate-01.html",
+        "https://docs.aws.amazon.com/zh_cn/aws-certification/latest/machine-learning-engineer-associate-01/machine-learning-engineer-associate-01.html",
+        "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/"
+      ]
+    }
+  ],
+  "review_inputs": [
+    {
+      "code": "NCP-AIO",
+      "guide": "guides/NCP-AIO-nvidia-ai-operations-professional.md",
+      "guide_sha256_lf": "53ae3cafc4bd2f4e0857003c32f67ba9be8d3bbd5fe226a00af038022c89c208",
+      "objective": "data/objective-snapshots/ncp-aio-official-objectives.txt",
+      "objective_sha256": "b7bbd393488e7c7e65a9c640ceb0e85b7da8b65b7dfc01ad0c8f3eae7d3e3a5b"
+    },
+    {
+      "code": "MLA-C01",
+      "guide": "guides/MLA-C01-aws-certified-machine-learning-engineer-associate.md",
+      "guide_sha256_lf": "71faf1af5e079aac07446404369e2c068ec30efd6e339fce1ca260db4dda7a9d",
+      "objective": "data/objective-snapshots/mla-c01-official-objectives.txt",
+      "objective_sha256": "91c5a0ed3fae7d2606bfed410b968599e65b38d058eb0047ef72d7b03e0ab4b7"
+    }
+  ],
+  "independent_review": {
+    "method": "Fresh-context read-only AI review of changed content and source evidence",
+    "rubric": "docs/AI-AUDIT.md, version 2",
+    "reviewed_tree": "1692d8ae688bd04f84e0e68ae78db8a72ed9451a",
+    "summary": "Rechecked the corrected 6/5/3/5 NCP-AIO map, examples and readiness notes against 19 live issuer tasks. Current NVIDIA HTML yields the staged objectives and status. The two archives match prior bytes, and the NCP-AIO regression test passed. Verified the official AWS MLA-C01 English PDF byte digest and 23-page count. Both guide bindings match. The old 31-topic findings from initial tree 3dfa84e075a924d6e2fd496a87c78a85a97883eb are now presented only as historical or supplementary practice. Targeted code/change/evidence review only.",
+    "findings": [],
+    "validation": [
+      "unit tests",
+      "repository validation",
+      "reviewed learning resource check",
+      "site preparation",
+      "strict MkDocs build",
+      "generated site validation"
+    ]
+  }
+}

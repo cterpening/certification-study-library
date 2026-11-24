@@ -47,6 +47,46 @@ def hashicorp_review_html(heading: str, terraform: bool) -> str:
 
 
 class ObjectiveExtractionTests(unittest.TestCase):
+    def test_ncp_aio_cards_and_performance_section(self) -> None:
+        def card(name: str, weight: int, caption: str, topic: str) -> str:
+            return (f'<h3 data-verticalnav-customtitle="{name}: {weight}%" id="domain">{name}</h3>'
+                    f"<p>Overview of {name}.</p><h4>{caption} Potential Exam Topics:</h4>"
+                    f"<ul><li>{topic}</li></ul><p><strong>{weight}%</strong><br><strong>Exam Weight</strong></p>"
+                    "<h4><button>Recommended Training and Suggested Reading:</button></h4><p>Extra resources</p>")
+        domains = ("Install and Deploy", "Administration", "Workload Management", "Troubleshooting and Optimization")
+        weights = (31, 23, 23, 23)
+        tasks = ("Deploy a container.", "Configure a quota.", "Inspect a queue.", "Diagnose storage.")
+        body = ("<p>NVIDIA-Certified Professional</p><h1>NVIDIA AI Operations Certification Exam</h1>"
+                "<p>(NCP-AIO)</p><h2>Certification Exam Details</h2><p>Duration: 120 minutes</p>"
+                "<p>Price: $500</p><p>Number of questions: 30</p><p>Hands-on lab: Yes</p>"
+                "<p>Scoring: Pass/Fail</p><p>Language: English</p><h2>Exam Structure</h2>"
+                "<p>The multiple-choice and performance-based sections each count 50%.</p>"
+                "<p>The lab has three challenges in a live virtual machine.</p>"
+                "<h2>Certification Learning Path</h2><p>Training recommendation</p>"
+                "<h2>NCP-AIO Exam Preparation Topics, Recommended Training and Reading</h2>"
+                + "<ul>" + "".join(f"<li>{d}</li>" for d in domains) + "</ul>"
+                + "".join(card(name, weight, name if i < 3 else domains[0], task)
+                          for i, (name, weight, task) in enumerate(zip(domains, weights, tasks)))
+                + "<h2>Practice Questions</h2><p>Outside objective scope</p><h2>Get Certified</h2>")
+        objectives = monitor.extract_nvidia_objectives(body)
+        self.assertTrue(objectives.endswith("Troubleshooting and Optimization\n23%\nDiagnose storage.\n"))
+        self.assertNotIn("Extra resources", objectives)
+        self.assertNotIn("Outside objective scope", objectives)
+        details = monitor.extract_nvidia_status(body)["skills_versions"]
+        self.assertIn("The multiple-choice and performance-based sections each count 50%.", details)
+        self.assertIn("The lab has three challenges in a live virtual machine.", details)
+        self.assertNotIn("Training recommendation", details)
+        for broken in (
+            body.replace('data-verticalnav-customtitle="Workload Management: 23%"', 'data-verticalnav-customtitle="Workload Management: 24%"'),
+            body.replace("Administration Potential Exam Topics:", "Unknown Potential Exam Topics:"),
+            body.replace("Diagnose storage.", ""),
+            body.replace("<h2>Practice Questions</h2>", ""),
+        ):
+            with self.subTest(broken=broken[-30:]), self.assertRaises(ValueError):
+                monitor.extract_nvidia_objectives(broken)
+        with self.assertRaises(ValueError):
+            monitor.extract_nvidia_status(body.replace("Exam Structure</h2>", "Other</h2>"))
+
     def test_extracts_named_nvidia_potential_topics_and_limits(self) -> None:
         code = "NCA-AIIO"
         title = f"{code} Exam Preparation Topics and Recommended Reading"

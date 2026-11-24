@@ -5,15 +5,17 @@ official_blueprint: https://www.nvidia.com/en-us/learn/certification/ai-operatio
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: source-validated
-last_verified: 2026-10-29
+review_status: review-required
+last_verified: 2026-11-23
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-10-29
+upcoming_change_checked: 2026-11-23
 ---
 
 # NVIDIA-Certified Professional: AI Operations (NCP-AIO) Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The canonical 31-topic blueprint, exam format and selected operations references were reviewed September 29, 2026. The local workbook passed 25 checks; eight infrastructure activities remain proposed. See the [deep-review report](../docs/research/2026-09-29-ncp-aio-deep-review.md). See the [coverage record](../docs/SOURCE-VALIDATION.md#ncp-aio-coverage-record).
+**Reading the exam domains (November 23, 2026).** NVIDIA lists 19 topics across four domains. The final domain heading is Troubleshooting and Optimization (23%). A repeated Install and Deploy caption appears under it. Use the domain heading and its five troubleshooting topics when planning practice. The multiple-choice and hands-on sections each account for half the score. [Sources and study resources](../docs/research/2026-11-23-refresh-24.md#ncp-aio)
+
+> **Independent AI-assisted resource — HISTORICAL SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The canonical 31-topic blueprint, exam format and selected operations references were reviewed September 29, 2026. The local workbook passed 25 checks; eight infrastructure activities remain proposed. See the [deep-review report](../docs/research/2026-09-29-ncp-aio-deep-review.md). See the [coverage record](../docs/SOURCE-VALIDATION.md#ncp-aio-coverage-record).
 
 **Current baseline:** NCP-AIO is an active professional, English, remotely proctored exam with 30 multiple-choice questions and three integrated hands-on lab exercises inside one 120-minute session. It is pass/fail and listed at USD 500.<br>
 **Upcoming change:** No revision or retirement announcement was present on the checked certification page September 29, 2026.<br>
@@ -39,14 +41,14 @@ Build disposable or dedicated labs. Commands below are categories and examples, 
 
 ## Blueprint map
 
-**CURRENT BLUEPRINT:** The canonical page contains 13 installation/deployment, five administration, seven workload-management and six troubleshooting topics. Its monitored objective and lifecycle snapshots are unchanged. The PDF discrepancy is recorded separately.
+The current NVIDIA page lists 19 topics. The earlier September review mapped 31 topics. Use the four rows below to select exam practice. The wider operator exercises in this guide provide supplementary practice.
 
-| Topic area | Weight | Performance evidence |
+| Topic area | Weight | Topics and evidence of readiness |
 |---|---:|---|
-| Installation and Deployment | 31% | Inspect/configure BCM, categories/images, users, network, schedulers/Kubernetes, patches/firmware and reports; explain Mission Control, DOCA and Run:ai placement |
-| Administration | 23% | Operate Slurm, Kubernetes, Run:ai and MIG against an AI data-center architecture with safe state verification |
-| Workload Management | 23% | Deploy and observe training/inference from NGC; allocate resources among teams; diagnose scheduling, placement and runtime |
-| Troubleshooting and Optimization | 23% | Isolate Docker, NVLink/NVSwitch Fabric Manager, BCM, Magnum IO, storage and NGC deployment faults; validate correction and performance |
+| Install and Deploy | 31% · 6 topics | Configure BCM, initialize Kubernetes on NVIDIA hosts with BCM, deploy an NGC container, deploy a container on a cloud VMI, size storage for an AI data center, and deploy DOCA services on a DPU. |
+| Administration | 23% · 5 topics | Administer Fleet Command, Slurm and Run:ai, design the data-center architecture for a workload, and configure MIG for AI or HPC. |
+| Workload Management | 23% · 3 topics | Administer Kubernetes, use DCGM, NVSM and nvidia-smi to investigate issues, and administer BCM cluster provisioning. |
+| Troubleshooting and Optimization | 23% · 5 topics | Isolate faults in Docker, Fabric Manager on NVLink or NVSwitch systems, BCM, Magnum IO and storage performance. |
 
 ## 1. Installation and Deployment — 31%
 
@@ -108,6 +110,18 @@ For Kubernetes, understand control-plane and worker components, container runtim
 
 Run:ai integrates with Kubernetes. Verify version/platform prerequisites, installation components, cluster connection, organizations/departments/projects, roles, quotas and a small workload before enabling production teams. Separate Run:ai policy from Kubernetes physical resource advertisement.
 
+### 1.7 Deploy NGC containers
+
+Choose an NGC artifact compatible with GPU architecture, driver and workload. Record immutable digest/version, publisher, license/entitlement and scan/approval. Authenticate without embedding tokens in scripts/images. Pull to an authorized registry/cache if policy requires. Confirm runtime GPU injection, mounts, ports, environment/secrets, user IDs and shared-memory/ulimit needs.
+
+Diagnose the chain: registry DNS/TLS/auth → repository/tag/digest/entitlement → local disk/cache → container runtime → NVIDIA Container Toolkit/CDI → device permissions → driver/runtime compatibility → application/library/model. “Image pulled” only validates the first half.
+
+### 1.8 Deploy on a cloud VMI and plan storage
+
+A cloud virtual machine image supplies the host software environment. The NGC container supplies the application. Check the supported GPU and driver, registry access, requested GPU exposure and container output separately. A successful image pull establishes registry access. Run a small approved workload to verify GPU visibility inside the container.
+
+Size storage from the workload. Estimate dataset reads per training step, checkpoint size and frequency, concurrent jobs, and the retention and recovery needs of persistent data. A cluster with free capacity can still fall behind when simultaneous checkpoints exhaust write bandwidth. Distinguish durable shared storage from disposable node-local scratch. [November 23 source comparison](../docs/research/2026-11-23-refresh-24.md#ncp-aio)
+
 ## 2. Administration — 23%
 
 ### 2.1 Slurm cluster administration
@@ -128,11 +142,9 @@ Interpret pending reasons, node `DRAIN/DOWN/IDLE/ALLOCATED` state, GRES mismatch
 
 [Job exit-code documentation](https://slurm.schedmd.com/job_exit_code.html) separates batch-script, step and derived results. A script can exit zero after a central task failed. A colon suffix records a terminating signal, so `0:9` is not successful completion. Derived results can be annotated later; retain original job/step output and application artifacts when making an incident conclusion.
 
-### 2.2 Kubernetes administration
+### 2.2 Administer Fleet Command
 
-Use `kubectl get`, `describe`, `logs`, `events`, resource/metrics views and carefully scoped `exec` to follow desired state → scheduling → image pull → volume/network → container start → readiness → service. Diagnose `Pending`, `ImagePullBackOff`, `CrashLoopBackOff`, `OOMKilled`, failed mounts and missing extended resources from events before changing manifests.
-
-For GPU work, confirm GPU Operator/component health, node labels, `allocatable` extended resources, requests/limits, MIG strategy/profile, tolerations/affinity, runtime class where used, and in-container GPU visibility. A host’s `nvidia-smi` success does not prove that the pod receives a device.
+For a distributed deployment, distinguish the application definition, its target location, and the deployment status at that location. If the expected application is absent at one site, compare the selected location, application version and deployment logs with a working site before changing the package. The archived Riva example linked in the source comparison illustrates these objects. Check the service available in your training environment.
 
 ### 2.3 Run:ai administration
 
@@ -154,19 +166,25 @@ Operational architecture includes compute topology, management/compute/storage f
 
 ## 3. Workload Management — 23%
 
-### 3.1 Pull and deploy NGC containers safely
+### 3.1 Administer Kubernetes clusters
 
-Choose an NGC artifact compatible with GPU architecture, driver and workload. Record immutable digest/version, publisher, license/entitlement and scan/approval. Authenticate without embedding tokens in scripts/images. Pull to an authorized registry/cache if policy requires. Confirm runtime GPU injection, mounts, ports, environment/secrets, user IDs and shared-memory/ulimit needs.
+Use `kubectl get`, `describe`, `logs`, `events`, resource/metrics views and carefully scoped `exec` to follow desired state → scheduling → image pull → volume/network → container start → readiness → service. Diagnose `Pending`, `ImagePullBackOff`, `CrashLoopBackOff`, `OOMKilled`, failed mounts and missing extended resources from events before changing manifests.
 
-Diagnose the chain: registry DNS/TLS/auth → repository/tag/digest/entitlement → local disk/cache → container runtime → NVIDIA Container Toolkit/CDI → device permissions → driver/runtime compatibility → application/library/model. “Image pulled” only validates the first half.
+For GPU work, confirm GPU Operator/component health, node labels, `allocatable` extended resources, requests/limits, MIG strategy/profile, tolerations/affinity, runtime class where used, and in-container GPU visibility. A host’s `nvidia-smi` success does not prove that the pod receives a device.
 
-### 3.2 Training with Slurm
+### 3.2 BCM provisioning and system tools
+
+Trace a node from its BCM category and software image through provisioning and registration. Compare its actual GPU inventory and health with the expected node record. Use the DCGM, NVSM and nvidia-smi observations below to identify whether the mismatch arises from provisioning, a node fault or scheduling. Preserve a known-good peer for comparison.
+
+**Related item:** The following Slurm, inference and Run:ai scenarios extend the three current Workload Management topics with cross-domain practice.
+
+### 3.3 Training with Slurm
 
 A training submission should state partition/account/QOS, node/GPU/CPU/memory/time, container or environment, data/checkpoint paths, output/logs and distributed launcher. For multi-node work, verify consistent image/software, GPU visibility, NCCL/fabric interfaces/topology, rendezvous, DNS/time and storage.
 
 Measure queue time, startup/data stage, samples/tokens per second, scaling efficiency, GPU/SM/tensor/memory/fabric activity, checkpoint duration and failures. A higher GPU allocation that yields worse scaling efficiency may be waste, not optimization.
 
-### 3.3 Inference with Kubernetes
+### 3.4 Inference with Kubernetes
 
 Use a Deployment or suitable controller for long-running replicated inference, a Job for bounded batch work, and Services/routes as required. Pin image/model versions, request GPUs or MIG resources, configure CPU/RAM and probes, mount or fetch the model safely, set rollout strategy and capture latency/throughput/error plus saturation signals.
 
@@ -176,7 +194,7 @@ Readiness should represent ability to serve, not just process existence. Test co
 
 The [Deployment reference](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) rounds surge percentages up and unavailable percentages down. A progress deadline reports a stalled rollout; it does not automatically roll back. [ResourceQuota](https://kubernetes.io/docs/concepts/policy/resource-quotas/) can allow the Deployment object while rejecting its new Pods. Quota is an admission boundary, not a capacity reservation. [GPU scheduling](https://kubernetes.io/docs/tasks/manage-gpus/scheduling-gpus/) requires equal GPU request/limit values when both are supplied; a limit alone supplies the request default.
 
-### 3.4 Workloads and allocation with Run:ai
+### 3.5 Workloads and allocation with Run:ai
 
 For both training and inference, define project/owner, environment, command, compute/memory/GPU fraction or profile, data, priority and policy. Confirm queue and actual Kubernetes workload, then correlate allocation with outcome. Test fair sharing, guaranteed quota, over-quota borrowing, priority and preemption using disposable jobs.
 
@@ -184,7 +202,7 @@ Allocate resources among teams with explicit business priority, minimum guarante
 
 `Related item:` **Preemption safety.** Reclaiming a GPU can lose work or break service unless the workload checkpoints, drains or has replicas. A fair policy without tested workload behavior is incomplete.
 
-### 3.5 System-management tools in workload diagnosis
+### 3.6 System-management tools in workload diagnosis
 
 Start at service impact, then move downward. Correlate application response/job exit and logs with orchestrator events, scheduler allocation, container/process, GPU/DCGM, NVLink/PCIe/fabric, storage, host and facility signals. Compare time-aligned good and bad runs. Change one variable, repeat, and retain the evidence.
 
@@ -420,6 +438,8 @@ One Slurm job hangs during collectives and later checkpoint writes. Use per-rank
 
 ## Hands-on performance labs
 
+These are original supplementary scenarios, including exercises retained from the earlier 31-topic outline. Use the current domain map above to allocate exam preparation time.
+
 These eight activities are **proposed**, with author-estimated study time. Only the separate local workbook above was executed. Use a disposable training environment or systems specifically authorized for practice. Time each activity, preserve command/output evidence, and reset to a known state.
 
 1. **BCM state and report lab (6–10h):** navigate Base View and documented CLI; inventory nodes/categories/images/services; compare a healthy and intentionally misconfigured lab node; produce a health/usage/issue report and correction plan.
@@ -432,6 +452,10 @@ These eight activities are **proposed**, with author-estimated study time. Only 
 8. **Integrated timed simulation (6–10h):** complete three original tasks—a BCM/Slurm administration change, Kubernetes/NGC deployment, and cross-layer performance fault—within 120 minutes, including verification and notes. Review command fluency, wrong turns and risk, then repeat with new failures.
 
 ## Readiness checks
+
+Start with the current domain map. For installation, demonstrate the difference between an NGC image and its cloud VMI host. For administration, explain how to locate a failing Fleet Command deployment. For workload management, trace BCM provisioning and Kubernetes registration to the GPU visible to the workload. For troubleshooting, identify evidence that separates container, fabric, BCM, communications-library and storage failures.
+
+The numbered questions below also retain broader operational exercises from the previous review. Use them to practise diagnosis after covering the 19 current topics.
 
 1. Can you name the authoritative control plane for each cluster state?
    **Answer:** Identify BCM desired configuration, scheduler allocation, Kubernetes reconciliation and each runtime observer separately before changing state.

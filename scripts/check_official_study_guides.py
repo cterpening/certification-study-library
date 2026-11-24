@@ -1090,6 +1090,38 @@ class NvidiaWeightedHeadings(HTMLParser):
         self.parts = []
 
 
+def extract_ncp_aio_cards(page_html: str, lines: list[str], code_index: int, start: int) -> str:
+    end = find_exact(lines, "Practice Questions", start + 1)
+    if end is None:
+        raise ValueError("Could not find the end of NVIDIA AI Operations topics")
+    content = lines[start:end]
+    headings = NvidiaWeightedHeadings()
+    headings.feed(page_html)
+    headings.close()
+    suffix = " Potential Exam Topics:"
+    topics = [index for index, line in enumerate(content) if line.endswith(suffix)]
+    weights = [index for index, line in enumerate(content) if re.fullmatch(r"\d+%", line)]
+    if (len(topics) < 3 or len(topics) != len(weights) or len(topics) != len(headings.headings)
+            or len({name for name, _ in headings.headings}) != len(topics)
+            or sum(int(content[i][:-1]) for i in weights) != 100):
+        raise ValueError("Incomplete NVIDIA AI Operations domain cards")
+    selected = [*lines[code_index - 2:code_index + 1], lines[start]]
+    after_previous = 0
+    for (name, header_weight), topic, weight in zip(headings.headings, topics, weights):
+        caption = content[topic].removesuffix(suffix)
+        # The reviewed troubleshooting card repeats the installation caption. Its h3
+        # and displayed weight still identify the card; fail on any other mismatch.
+        known_caption = name == "Troubleshooting and Optimization" and caption == "Install and Deploy"
+        if (not name or name not in content[after_previous:topic]
+                or (name != caption and not known_caption)
+                or weight <= topic + 1 or weight + 1 >= len(content)
+                or content[weight + 1] != "Exam Weight" or content[weight] != header_weight):
+            raise ValueError("Incomplete NVIDIA AI Operations domain cards")
+        selected.extend([name, header_weight, *content[topic + 1:weight]])
+        after_previous = weight + 2
+    return "\n".join(selected) + "\n"
+
+
 def extract_nvidia_objectives(page_html: str) -> str:
     """Capture an NVIDIA certification's public weighted blueprint."""
 
@@ -1104,6 +1136,12 @@ def extract_nvidia_objectives(page_html: str) -> str:
     )
     if code_index is None or code_index < 2:
         raise ValueError("Could not find NVIDIA certification identity")
+    if lines[code_index] == "(NCP-AIO)":
+        ncp_preparation = find_exact(
+            lines, "NCP-AIO Exam Preparation Topics, Recommended Training and Reading", code_index + 1
+        )
+        if ncp_preparation is not None:
+            return extract_ncp_aio_cards(page_html, lines, code_index, ncp_preparation)
     preparation_heading = (
         f"{lines[code_index].strip('()')} Exam Preparation Topics and Recommended Reading"
     )
@@ -1219,6 +1257,18 @@ def extract_nvidia_status(page_html: str) -> dict[str, list[str]]:
     )
     if code:
         details.insert(0, code.strip("()"))
+    if code == "(NCP-AIO)" and find_exact(
+        lines, "NCP-AIO Exam Preparation Topics, Recommended Training and Reading"
+    ) is not None:
+        structure = find_exact(lines, "Exam Structure")
+        end = find_exact(lines, "Certification Learning Path", structure + 1) if structure is not None else None
+        if structure is None or end is None:
+            raise ValueError("Incomplete NVIDIA AI Operations assessment details")
+        section = lines[structure + 1:end]
+        if (not any("multiple-choice" in line and "performance-based" in line for line in section)
+                or not any("challenge" in line.casefold() for line in section)):
+            raise ValueError("Incomplete NVIDIA AI Operations assessment details")
+        details.extend(section)
     if len(details) < 6:
         raise ValueError("Could not find NVIDIA exam status details")
     announcements = [

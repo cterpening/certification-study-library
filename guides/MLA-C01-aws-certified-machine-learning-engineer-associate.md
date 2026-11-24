@@ -13,6 +13,8 @@ upcoming_change_checked: 2026-10-28
 
 # MLA-C01 AWS Certified Machine Learning Engineer - Associate Study Guide
 
+**Language-specific objectives (November 23, 2026).** AWS publishes MLA-C01 HTML outlines in Japanese, Korean and Simplified Chinese. Each lists domain weights of 28%, 26%, 22% and 24%. The English HTML route returns 404. The previously published official English PDF remains available. Use the version and language on your booking. [Sources and study resources](../docs/research/2026-11-23-refresh-24.md#mla-c01)
+
 > **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, transition warnings, links, and exam-integrity compliance were reviewed again on September 28, 2026 against the available official PDF; current HTML blueprint access remains unresolved. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mla-c01-coverage-record). The [official MLA-C01 exam guide](https://d1.awsstatic.com/training-and-certification/docs-machine-learning-engineer-associate/AWS-Certified-Machine-Learning-Engineer-Associate_Exam-Guide.pdf) is authoritative.
 
 **Current baseline:** MLA-C01, four scored domains, 50 scored plus 15 unidentified unscored questions, and a 720 minimum scaled score<br>

@@ -38455,7 +38455,7 @@
       "review_type": "source-validation",
       "reviewed_on": "2026-10-29",
       "outcome": "passed",
-      "blueprint_snapshot_path": "data/objective-snapshots/ncp-aio-official-objectives.txt",
+      "blueprint_snapshot_path": "data/objective-snapshots/archive/ncp-aio-3d4312635eed1b9a05823d40d95a8a8e75dd8852e7b971bee7a799b301c86abf.txt",
       "blueprint_snapshot_sha256": "3d4312635eed1b9a05823d40d95a8a8e75dd8852e7b971bee7a799b301c86abf",
       "objective_coverage": [
         {
@@ -41750,6 +41750,60 @@
         "missing_or_error": 0
       },
       "notes": "Reviewed all 22 official topic entries and the matching weighted sections in the guide. The normalized outline excludes card controls and appended practice labels. Previous validations retain the original snapshot. The full guide claim and link assessment is pending."
+    },
+    {
+      "id": "ncp-aio-2026-11-23-effective-outline",
+      "exam_code": "NCP-AIO",
+      "guide_path": "guides/NCP-AIO-nvidia-ai-operations-professional.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-11-23",
+      "outcome": "blocked",
+      "blueprint_snapshot_path": "data/objective-snapshots/ncp-aio-official-objectives.txt",
+      "blueprint_snapshot_sha256": "b7bbd393488e7c7e65a9c640ceb0e85b7da8b65b7dfc01ad0c8f3eae7d3e3a5b",
+      "objective_coverage": [
+        {
+          "objective_group": "Install and Deploy (31%)",
+          "guide_sections": [
+            "Blueprint map",
+            "1. Installation and Deployment — 31%"
+          ]
+        },
+        {
+          "objective_group": "Administration (23%)",
+          "guide_sections": [
+            "Blueprint map",
+            "2. Administration — 23%"
+          ]
+        },
+        {
+          "objective_group": "Workload Management (23%)",
+          "guide_sections": [
+            "Blueprint map",
+            "3. Workload Management — 23%"
+          ]
+        },
+        {
+          "objective_group": "Troubleshooting and Optimization (23%)",
+          "guide_sections": [
+            "Blueprint map",
+            "4. Troubleshooting and Optimization — 23%"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": false,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": false,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 25,
+        "reachable": 25,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "Reviewed the four official weighted domains and 19 task rows, including the repeated subordinate caption on the fourth card. The guide separates the two assessment sections and three practical challenges from task weights. Earlier validations retain their original snapshot. A full revised guide source validation is pending."
     }
 ]
 }

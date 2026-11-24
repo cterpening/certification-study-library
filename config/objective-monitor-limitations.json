@@ -25,14 +25,19 @@
       "last_reviewed": "2026-09-07"
     },
     {
-      "codes": ["SERVICENOW-CSA", "SERVICENOW-CAD"],
+      "codes": [
+        "SERVICENOW-CSA",
+        "SERVICENOW-CAD"
+      ],
       "expected_error": "ValueError: Could not find ServiceNow Exam Scope",
       "reason": "The reachable ServiceNow learning response does not expose the reviewed Exam Scope in server-rendered HTML to this non-browser extractor.",
       "review_route": "docs/SOURCE-FRESHNESS.md",
       "last_reviewed": "2026-09-07"
     },
     {
-      "codes": ["PANW-CYBERSECURITY-APPRENTICE"],
+      "codes": [
+        "PANW-CYBERSECURITY-APPRENTICE"
+      ],
       "expected_error": "ValueError: Palo Alto Networks objective statement was unexpectedly short",
       "reason": "The reachable credential page currently exposes an incomplete objective statement; the reviewed snapshot and registered sources retain the fuller evidence boundary.",
       "review_route": "docs/SOURCE-FRESHNESS.md",
@@ -63,14 +68,21 @@
       "last_reviewed": "2026-09-07"
     },
     {
-      "codes": ["JSA-41-01", "WDE-40-01", "WDA-41-01"],
+      "codes": [
+        "JSA-41-01",
+        "WDE-40-01",
+        "WDA-41-01"
+      ],
       "expected_error": "ValueError: Could not find the JS Institute exam scope",
       "reason": "The reachable JS Institute response no longer exposes the complete reviewed four-block scope between the extractor's stable page markers.",
       "review_route": "docs/SOURCE-FRESHNESS.md",
       "last_reviewed": "2026-09-07"
     },
     {
-      "codes": ["PCET-30-01", "PCAT-31-01"],
+      "codes": [
+        "PCET-30-01",
+        "PCAT-31-01"
+      ],
       "expected_error": "ValueError: Could not find the Python Institute exam syllabus",
       "reason": "The reachable Python Institute response no longer exposes the complete reviewed four-block syllabus between the extractor's stable page markers.",
       "review_route": "docs/SOURCE-FRESHNESS.md",
@@ -93,6 +105,15 @@
       "reason": "These official blueprint URLs return binary PDF documents; their human-reviewed normalized snapshots remain the comparison baseline because the standard-library HTML extractor does not interpret PDF layout.",
       "review_route": "docs/SOURCE-FRESHNESS.md",
       "last_reviewed": "2026-09-07"
+    },
+    {
+      "codes": [
+        "MLA-C01"
+      ],
+      "expected_error": "HTTPError: HTTP Error 404: Not Found",
+      "reason": "The registered English MLA-C01 HTML is unavailable during the language-specific transition. The registered English PDF and three localized official C01 outlines identify the version.",
+      "review_route": "docs/SOURCE-FRESHNESS.md",
+      "last_reviewed": "2026-11-23"
     }
   ]
 }
