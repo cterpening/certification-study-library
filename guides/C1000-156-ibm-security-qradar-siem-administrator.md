@@ -126,6 +126,6 @@ This is a selective learning path, not a complete list of QRadar administration 
 | Resource | Access | Estimated time |
 |---|---|---:|
 | [C1000-156 exam record](https://www.ibm.com/training/credentials/getExam/C1000-156) and [IBM Certified Administrator credential page](https://www.ibm.com/training/certification/ibm-certified-administrator-security-qradar-siem-v75-C9004600) | Public | **25 minutes** for contract and objectives; English exam, replacement credential N/A |
-| [QRadar SIEM V7.5 Administration – Exam C1000-156 Preparation Guide (SLA6910)](https://www.ibm.com/training/course/qradar-siem-v75-administration-exam-c1000-156-preparation-guide-SLA6910) | Free Express Learning; IBM/Security Learning Academy sign-in; catalog says “Retiring soon” | **1.5 hours stated**; verify course remains launchable |
+| [QRadar SIEM V7.5 Administration – Exam C1000-156 Preparation Guide (SLA6910)](https://www.ibm.com/training/course/qradar-siem-v75-administration-exam-c1000-156-preparation-guide-SLA6910) | Earlier catalog listed free Express Learning and flagged retirement. Check signed-in availability. | Earlier listing gave 1.5 hours. Current duration and launch status are unverified. |
 | [IBM QRadar SIEM 7.5 documentation](https://www.ibm.com/docs/en/qsip/7.5) | Public; automation may be blocked | **24–36 hours** for selected administration procedures |
 | Eight labs in this guide | Authorized QRadar lab | **24–36 hours** plus one timed review |

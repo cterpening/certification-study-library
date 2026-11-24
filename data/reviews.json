@@ -41545,6 +41545,72 @@
         "missing_or_error": 0
       },
       "notes": "Targeted issuer, guide and resource checks are documented in the November 23 packet. The objective coverage below is retained from the prior review. Full source validation of the revised guide remains pending."
+    },
+    {
+      "id": "c1000-175-2026-11-23-scoped-refresh",
+      "exam_code": "C1000-175",
+      "guide_path": "guides/C1000-175-ibm-security-qradar-siem-associate.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-11-23",
+      "outcome": "blocked",
+      "blueprint_snapshot_path": "data/objective-snapshots/c1000-175-official-objectives.txt",
+      "blueprint_snapshot_sha256": "8dac7e2540d973f15e452b531615c21ca6c57cd568f83451e3727b13499577a6",
+      "objective_coverage": [
+        {
+          "objective_group": "SIEM Concepts; QRadar Architecture; User Interface",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–2"
+          ]
+        },
+        {
+          "objective_group": "Extensions; Flows",
+          "guide_sections": [
+            "Section 2",
+            "Branch scenario",
+            "Lab 4"
+          ]
+        },
+        {
+          "objective_group": "Rules and Building Blocks; Working with Offenses",
+          "guide_sections": [
+            "Section 3",
+            "Failed-login scenario",
+            "Lab 5"
+          ]
+        },
+        {
+          "objective_group": "Search, Filtering, and AQL; Assets; Reporting and Dashboards",
+          "guide_sections": [
+            "Section 4",
+            "All integrated scenarios",
+            "Labs 6–8"
+          ]
+        },
+        {
+          "objective_group": "Events; Configuration and Tuning; QRadar System Errors; User and Role Management",
+          "guide_sections": [
+            "Section 5",
+            "Branch and missing-report scenarios",
+            "Labs 3 and 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": false,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": false,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 9,
+        "reachable": 8,
+        "access_blocked": 0,
+        "missing_or_error": 1
+      },
+      "notes": "Targeted issuer, guide and resource checks are documented in the November 23 packet. The objective coverage below is retained from the prior review. Full source validation of the revised guide remains pending."
     }
 ]
 }

@@ -4870,7 +4870,7 @@ This is a selective learning path, not a complete list of QRadar resources.
 |---|---|---:|
 | [Official C1000-175 exam record](https://www.ibm.com/training/credentials/getExam/C1000-175) | Public | **25 minutes** for contract and objectives |
 | [IBM QRadar SIEM 7.5 documentation](https://www.ibm.com/docs/en/qsip/7.5) | Public; automation may be blocked | **18–28 hours** for selected concepts and procedures |
-| [QRadar SIEM Foundations (BQ105G)](https://www.ibm.com/training/course/ibm-qradar-siem-foundations-BQ105G) | Paid, instructor-led; labs included | **24 hours** | QRadar SIEM 7.5 concepts, flows, rules, offenses, AQL, assets, reporting and administration; course description read, labs not inspected |
+| [QRadar SIEM Foundations (BQ105G)](https://www.ibm.com/training/course/ibm-qradar-siem-foundations-BQ105G) | Earlier listing described paid instructor-led training and labs. Confirm current enrollment terms. | Earlier listing gave 24 hours. Current public metadata gives no duration. | IBM describes the QRadar SIEM interface and incident investigation for analysts and administrators |
 | [QRadar SIEM Foundation badge requirements](https://www.ibm.com/support/pages/how-can-i-earn-ibm-qradar-siem-foundation-badge-completing-security-learning-academy-course) | Free Security Learning Academy account | 13–14h estimated lessons; separate 2h quiz estimate | IBM lists 19 lessons; the badge quiz is not a C1000-175 practice exam |
 | Eight labs in this guide | Authorized QRadar lab | **18–26 hours** plus one timed review |
 
@@ -4884,7 +4884,7 @@ This is a selective learning path, not a complete list of Db2 for z/OS resources
 |---|---|---:|
 | [Official C1000-184 exam record](https://www.ibm.com/training/credentials/getExam/C1000-184) | Public | **25 minutes** for contract and objectives |
 | [IBM Db2 13 for z/OS documentation](https://www.ibm.com/docs/en/db2-for-zos/13.0.0) | Public; automation may be blocked | **28–44 hours** for selected administration topics |
-| [Introduction to Db2 for z/OS PDF](https://www.ibm.com/docs/en/SSEPEK_13.0.0/pdf/db2z_13_introbook.pdf) | Public; an authorized Db2 for z/OS subsystem and ID are needed to execute | Selected DB2I/SPUFI modules; no vendor duration stated | Two-module SQL/utility tutorial; use a sanctioned training subsystem, not production |
+| [Introduction to Db2 for z/OS PDF](https://www.ibm.com/docs/en/SSEPEK_13.0.0/pdf/db2z_13_introbook.pdf) | Direct PDF access returned HTTP 403 during the November check. An authorized Db2 for z/OS subsystem and ID are needed for practice. | Selected DB2I/SPUFI modules; no vendor duration stated | Two-module SQL/utility tutorial; use a sanctioned training subsystem, not production |
 | [Db2 13 Basic Database Administration (CV845G)](https://www.ibm.com/training/search?query=CV845G) | IBM instructor-led course listing; paid enrollment may apply | Three days in the current class listing; detailed syllabus not available here | Search by course code CV845G; course outline was not exposed |
 | [Db2 13 for z/OS Introduction to System Administration (CV854G)](https://www.ibm.com/training/course/db2-for-zos-13-introduction-to-system-administration-CV854G) | Paid, instructor-led | **24 hours** | Subsystem operations, authority, catalog, logs, utilities, monitoring and recovery; higher experience prerequisites; course description read, labs not inspected |
 | Eight labs in this guide | Authorized z/OS training environment or simulation | **24–40 hours** plus one timed review |
@@ -4900,7 +4900,7 @@ This is a selective learning path, not a complete list of watsonx resources.
 | [Official C1000-185 exam record](https://www.ibm.com/training/credentials/getExam/C1000-185) | Public | **25 minutes** for contract and objectives |
 | [IBM watsonx documentation](https://www.ibm.com/docs/en/watsonx) | Public; automation may be blocked | **12–20 hours** for selected product workflows |
 | [IBM watsonx Generative AI Engineer v1.1 learning path](https://www.ibm.com/training/learning-path/ibm-certified-watsonx-generative-ai-engineer-v11-associate-1054) | IBM account may be needed to enroll; listed course may be no-cost | Includes a **3-hour** Watsonx Technical Essentials course | Product foundation for watsonx.ai; the path is labeled v1.1 while the exam remains v1, so do not treat it as an exam revision |
-| [IBM Developer: get started with generative AI assets in watsonx](https://developer.ibm.com/articles/awb-get-started-with-watsonx/) | Public article; watsonx account needed to run examples | No publisher duration; 3–5h is a planning estimate for selected tutorials | Prompt Lab, Python/Jupyter RAG and tuning examples; older UI/model steps require current-doc recheck |
+| [IBM watsonx.ai developer hub](https://developer.ibm.com/articles/awb-get-started-with-watsonx/) | Public index linking current getting-started material. Running examples requires the relevant account and services. | Allow 3–5 hours for selected tutorials as a study estimate | The former article address now opens the hub. Select a tutorial and confirm its current model and UI requirements. |
 | Eight labs in this guide | watsonx access or equivalent local stack | **18–28 hours** plus one timed review |
 
 ### C1000-197 — IBM Certified Guardium Data Protection v12.x Administrator - Professional
@@ -4914,7 +4914,7 @@ This is a selective learning path, not a complete list of Guardium resources.
 | [Official C1000-197 exam record](https://www.ibm.com/training/credentials/getExam/C1000-197) | Public | **25 minutes** for contract and objectives |
 | [IBM Guardium Data Protection 12.x documentation](https://www.ibm.com/docs/en/gdp/12.x) | Public; automation may be blocked | **24–40 hours** for selected administration procedures |
 | [Guardium Data Protection Fundamentals (8G103G)](https://www.ibm.com/training/course/guardium-data-protection-fundamentals-8G103G) | Paid instructor-led; hands-on exercises listed | **24 hours** | Guardium 12.1 access, groups, backup/restore, discovery, policies, queries, reports and alerts; outline read, labs not inspected |
-| [Guardium Data Protection Administration (8G920XG)](https://www.ibm.com/training/course/guardium-data-protection-administration-8G920XG) | Paid IBM Intensive Learning; hands-on exercises listed | **4 hours** | Guardium 12.1 administration, monitoring and archive/backup/restore; outline only |
+| [Guardium Data Protection Administration (8G920XG)](https://www.ibm.com/training/course/guardium-data-protection-administration-8G920XG) | Earlier listing described paid IBM training. The direct link now displays the general catalog. | Earlier listing gave 4 hours. Current duration is unverified. | Search the catalog for 8G920XG and check the edition and syllabus before enrolling. |
 | [IBM Guardium certification prep session](https://mediacenter.ibm.com/media/Certification%2BPrep%2BSession%3A%2BIBM%2BGuardium%2BData%2BProtection%2Bv12.x%2BAdministrator%2BProfessional/1_flq1wrlz/233881112) | Public page; video playback not inspected | Duration not stated | Optional objective-orientation session; not lab practice or a source of exam questions |
 | Eight labs in this guide | Authorized Guardium lab | **24–40 hours** plus one timed review |
 
@@ -5170,7 +5170,7 @@ This is a selective learning path, not a complete list of QRadar administration 
 | Resource | Access | Estimated time |
 |---|---|---:|
 | [C1000-156 exam record](https://www.ibm.com/training/credentials/getExam/C1000-156) and [IBM Certified Administrator credential page](https://www.ibm.com/training/certification/ibm-certified-administrator-security-qradar-siem-v75-C9004600) | Public | **25 minutes** for contract and objectives; English exam, replacement credential N/A |
-| [QRadar SIEM V7.5 Administration – Exam C1000-156 Preparation Guide (SLA6910)](https://www.ibm.com/training/course/qradar-siem-v75-administration-exam-c1000-156-preparation-guide-SLA6910) | Free Express Learning; IBM/Security Learning Academy sign-in; catalog says “Retiring soon” | **1.5 hours stated**; verify course remains launchable |
+| [QRadar SIEM V7.5 Administration – Exam C1000-156 Preparation Guide (SLA6910)](https://www.ibm.com/training/course/qradar-siem-v75-administration-exam-c1000-156-preparation-guide-SLA6910) | Earlier catalog listed free Express Learning and flagged retirement. Check signed-in availability. | Earlier listing gave 1.5 hours. Current duration and launch status are unverified. |
 | [IBM QRadar SIEM 7.5 documentation](https://www.ibm.com/docs/en/qsip/7.5) | Public; automation may be blocked | **24–36 hours** for selected administration procedures |
 | Eight labs in this guide | Authorized QRadar lab | **24–36 hours** plus one timed review |
 

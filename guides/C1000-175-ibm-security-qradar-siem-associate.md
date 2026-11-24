@@ -5,15 +5,17 @@ official_blueprint: https://www.ibm.com/training/credentials/getExam/C1000-175
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: source-validated
-last_verified: 2026-10-28
+review_status: review-required
+last_verified: 2026-11-23
 upcoming_change_status: none-announced
 upcoming_change_checked: 2026-10-28
 ---
 
 # C1000-175 IBM Security QRadar SIEM V7.5 Associate Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide maps the live IBM exam contract checked October 28, 2026. It is unofficial and may contain errors. The [official C1000-175 exam record](https://www.ibm.com/training/credentials/getExam/C1000-175) is authoritative.
+**Review status.** The November 23 check covered the published exam information and the resources updated below. The previous full source review is historical. Full validation of this revision is pending.
+
+> **Independent AI-assisted resource — HISTORICAL SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide maps the live IBM exam contract checked October 28, 2026. It is unofficial and may contain errors. The [official C1000-175 exam record](https://www.ibm.com/training/credentials/getExam/C1000-175) is authoritative.
 
 **Assessment contract:** 62 questions; 41 required to pass; 90 minutes.<br>
 **Current status:** Live; no replacement or withdrawal notice appeared in the official record when checked.<br>
@@ -126,6 +128,6 @@ This is a selective learning path, not a complete list of QRadar resources.
 |---|---|---:|
 | [Official C1000-175 exam record](https://www.ibm.com/training/credentials/getExam/C1000-175) | Public | **25 minutes** for contract and objectives |
 | [IBM QRadar SIEM 7.5 documentation](https://www.ibm.com/docs/en/qsip/7.5) | Public; automation may be blocked | **18–28 hours** for selected concepts and procedures |
-| [QRadar SIEM Foundations (BQ105G)](https://www.ibm.com/training/course/ibm-qradar-siem-foundations-BQ105G) | Paid, instructor-led; labs included | **24 hours** | QRadar SIEM 7.5 concepts, flows, rules, offenses, AQL, assets, reporting and administration; course description read, labs not inspected |
+| [QRadar SIEM Foundations (BQ105G)](https://www.ibm.com/training/course/ibm-qradar-siem-foundations-BQ105G) | Earlier listing described paid instructor-led training and labs. Confirm current enrollment terms. | Earlier listing gave 24 hours. Current public metadata gives no duration. | IBM describes the QRadar SIEM interface and incident investigation for analysts and administrators |
 | [QRadar SIEM Foundation badge requirements](https://www.ibm.com/support/pages/how-can-i-earn-ibm-qradar-siem-foundation-badge-completing-security-learning-academy-course) | Free Security Learning Academy account | 13–14h estimated lessons; separate 2h quiz estimate | IBM lists 19 lessons; the badge quiz is not a C1000-175 practice exam |
 | Eight labs in this guide | Authorized QRadar lab | **18–26 hours** plus one timed review |

@@ -1,0 +1,469 @@
+{
+  "date": "2026-11-23",
+  "scope": "AI research into official objectives, selected technical references and learning resources. Individual exam delivery, private course contents and live product testing were outside this review.",
+  "exams": [
+    {
+      "code": "C1000-206",
+      "exam": {
+        "code": "C1000-206",
+        "observation": "IBM getExam identifies IBM Artificial Intelligence Fundamentals v1 - Associate; withdrawal date unset, replacement flag false. Both monitored objective text and status matched accepted records.",
+        "urls": [
+          "https://www.ibm.com/training/certification/ibm-certified-artificial-intelligence-v1-associate-C9008700",
+          "https://www.ibm.com/training/credentials/getExam/C1000-206"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Keep current objective baseline and use exam-record fields for lifecycle observations.",
+        "monitor": "unchanged",
+        "accepted_objective_sha256": "c239552411fb1fa7c111d883745dc679667e93a653190f33da114a7c6593acd2",
+        "candidate_objective_sha256": "c239552411fb1fa7c111d883745dc679667e93a653190f33da114a7c6593acd2",
+        "catalog_matches": {
+          "https://www.ibm.com/training/certification/ibm-certified-artificial-intelligence-v1-associate-C9008700": {
+            "sources": [],
+            "candidates": []
+          },
+          "https://www.ibm.com/training/credentials/getExam/C1000-206": {
+            "sources": [
+              "c1000-206-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "C1000-206",
+        "observation": "IBM's overview distinguishes supervised learning on labeled examples from deep neural-network architecture.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://www.ibm.com/think/topics/artificial-intelligence"
+        ],
+        "source_ids": [
+          "ibm-ai-overview"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "C1000-206",
+        "observation": "IBM's badge description identifies concepts including machine learning, vision, language, ethics and model use. The badge is supplementary to the separate exam.",
+        "urls": [
+          "https://www.ibm.com/training/badge/artificial-intelligence-fundamentals?hss_channel=lcp-78306383"
+        ],
+        "source_id": "c1000-206-ai-fundamentals-badge",
+        "resource": "Artificial Intelligence Fundamentals badge",
+        "access_model": "free-account",
+        "time_basis": "No current publisher runtime established for this route.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "unchanged",
+      "accepted_on_start": "c239552411fb1fa7c111d883745dc679667e93a653190f33da114a7c6593acd2",
+      "candidate": "c239552411fb1fa7c111d883745dc679667e93a653190f33da114a7c6593acd2"
+    },
+    {
+      "code": "C1000-185",
+      "exam": {
+        "code": "C1000-185",
+        "observation": "IBM getExam identifies IBM watsonx Generative AI Engineer v1 - Associate; withdrawal date unset, replacement flag false. Candidate differs only by one trailing space in the exam-title line. Monitor detected an objective-text difference.",
+        "urls": [
+          "https://www.ibm.com/training/certification/ibm-certified-watsonx-generative-ai-engineer-associate-C9007000",
+          "https://www.ibm.com/training/credentials/getExam/C1000-185"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Keep current objective baseline and use exam-record fields for lifecycle observations.",
+        "monitor": "changed",
+        "accepted_objective_sha256": "51dcebdb7703b1489f09d109556e81d4d443d67976ecc562646859fd07fb350b",
+        "candidate_objective_sha256": "1148a017edc6c843ea64e9385a9cdb5b62e5021834a2f859b48219f2d6e7c46e",
+        "catalog_matches": {
+          "https://www.ibm.com/training/certification/ibm-certified-watsonx-generative-ai-engineer-associate-C9007000": {
+            "sources": [],
+            "candidates": []
+          },
+          "https://www.ibm.com/training/credentials/getExam/C1000-185": {
+            "sources": [
+              "c1000-185-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "C1000-185",
+        "observation": "IBM's version-specific Prompt Lab reference identifies experimentation with model prompts; the SaaS topic returned 403 in direct retrieval. Edition-specific availability is unresolved.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "Moderate: alternate indexed IBM documentation, original SaaS route access-blocked.",
+        "urls": [
+          "https://www.ibm.com/docs/en/watsonx/w-and-w/2.3.x?topic=prompts-prompt-lab"
+        ],
+        "source_ids": [],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "C1000-185",
+        "observation": "The old introductory tutorial URL now displays the watsonx.ai developer hub, including Getting Started and product links.",
+        "urls": [
+          "https://developer.ibm.com/articles/awb-get-started-with-watsonx/"
+        ],
+        "source_id": "c1000-185-watsonx-dev-tutorial",
+        "resource": "Get started with generative AI assets in watsonx",
+        "access_model": "public",
+        "time_basis": "No current publisher runtime established for this route.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Update the resource description or choose a specific current tutorial."
+      },
+      "monitor_outcome": "changed",
+      "accepted_on_start": "51dcebdb7703b1489f09d109556e81d4d443d67976ecc562646859fd07fb350b",
+      "candidate": "1148a017edc6c843ea64e9385a9cdb5b62e5021834a2f859b48219f2d6e7c46e"
+    },
+    {
+      "code": "C1000-175",
+      "exam": {
+        "code": "C1000-175",
+        "observation": "IBM getExam identifies Foundations of IBM Security QRadar SIEM V7.5; withdrawal date unset, replacement flag false. Both monitored objective text and status matched accepted records.",
+        "urls": [
+          "https://www.ibm.com/training/certification/ibm-certified-associate-security-qradar-siem-v75-C9006200",
+          "https://www.ibm.com/training/credentials/getExam/C1000-175"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Keep current objective baseline and use exam-record fields for lifecycle observations.",
+        "monitor": "unchanged",
+        "accepted_objective_sha256": "8dac7e2540d973f15e452b531615c21ca6c57cd568f83451e3727b13499577a6",
+        "candidate_objective_sha256": "8dac7e2540d973f15e452b531615c21ca6c57cd568f83451e3727b13499577a6",
+        "catalog_matches": {
+          "https://www.ibm.com/training/certification/ibm-certified-associate-security-qradar-siem-v75-C9006200": {
+            "sources": [],
+            "candidates": []
+          },
+          "https://www.ibm.com/training/credentials/getExam/C1000-175": {
+            "sources": [
+              "c1000-175-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "C1000-175",
+        "observation": "IBM's indexed Network Insights guidance relates inspection depth to throughput. Hardware-specific sizing remains an appliance planning decision.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "Moderate: indexed IBM documentation; original direct page blocked.",
+        "urls": [
+          "https://www.ibm.com/docs/en/qradar-on-cloud?topic=hardware-performance-levels"
+        ],
+        "source_ids": [],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "C1000-175",
+        "observation": "BQ105G's current metadata describes the QRadar SIEM UI and incident investigation for analysts and administrators.",
+        "urls": [
+          "https://www.ibm.com/training/course/ibm-qradar-siem-foundations-BQ105G"
+        ],
+        "source_id": "c1000-175-qradar-bq105g",
+        "resource": "QRadar SIEM Foundations BQ105G",
+        "access_model": "paid",
+        "time_basis": "24 hours previously reported; the current public metadata did not confirm the duration.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "unchanged",
+      "accepted_on_start": "8dac7e2540d973f15e452b531615c21ca6c57cd568f83451e3727b13499577a6",
+      "candidate": "8dac7e2540d973f15e452b531615c21ca6c57cd568f83451e3727b13499577a6"
+    },
+    {
+      "code": "C1000-156",
+      "exam": {
+        "code": "C1000-156",
+        "observation": "IBM getExam identifies IBM Security QRadar SIEM V7.5 Administration; withdrawal date unset, replacement flag false. Both monitored objective text and status matched accepted records.",
+        "urls": [
+          "https://www.ibm.com/training/certification/ibm-certified-administrator-security-qradar-siem-v75-C9004600",
+          "https://www.ibm.com/training/credentials/getExam/C1000-156"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Keep current objective baseline and use exam-record fields for lifecycle observations.",
+        "monitor": "unchanged",
+        "accepted_objective_sha256": "ec021d4137eda41679372d22546464a274d70fc0de757b012c23a0b47582c43a",
+        "candidate_objective_sha256": "ec021d4137eda41679372d22546464a274d70fc0de757b012c23a0b47582c43a",
+        "catalog_matches": {
+          "https://www.ibm.com/training/certification/ibm-certified-administrator-security-qradar-siem-v75-C9004600": {
+            "sources": [
+              "c1000-156-credential-page"
+            ],
+            "candidates": []
+          },
+          "https://www.ibm.com/training/credentials/getExam/C1000-156": {
+            "sources": [
+              "c1000-156-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "C1000-156",
+        "observation": "IBM's indexed QRadar Network Insights reference explains the flow collection role. It is from 7.4, so use it only for this general distinction, not 7.5 installation behavior.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "Limited to conceptual background in older official material; 7.5 landing blocked.",
+        "urls": [
+          "https://www.ibm.com/docs/en/qsip/7.4.0?topic=insights-network-flow-data"
+        ],
+        "source_ids": [],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "C1000-156",
+        "observation": "IBM identifies SLA6910 as specific preparation for the V7.5 administrator exam. No signed-in content was reviewed.",
+        "urls": [
+          "https://www.ibm.com/training/course/qradar-siem-v75-administration-exam-c1000-156-preparation-guide-SLA6910"
+        ],
+        "source_id": "ibm-c1000-156-prep-sla6910",
+        "resource": "QRadar SIEM V7.5 Administration – Exam C1000-156 Preparation Guide (SLA6910)",
+        "access_model": "free-account",
+        "time_basis": "1.5 hours in the prior catalog record; recheck current access and retirement status.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "unchanged",
+      "accepted_on_start": "ec021d4137eda41679372d22546464a274d70fc0de757b012c23a0b47582c43a",
+      "candidate": "ec021d4137eda41679372d22546464a274d70fc0de757b012c23a0b47582c43a"
+    },
+    {
+      "code": "C1000-197",
+      "exam": {
+        "code": "C1000-197",
+        "observation": "IBM getExam identifies IBM Guardium Data Protection v12.x Administrator - Professional; withdrawal date unset, replacement flag false. Both monitored objective text and status matched accepted records.",
+        "urls": [
+          "https://www.ibm.com/training/certification/ibm-certified-guardium-data-protection-v12x-administrator-professional-C9008300",
+          "https://www.ibm.com/training/credentials/getExam/C1000-197"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Keep current objective baseline and use exam-record fields for lifecycle observations.",
+        "monitor": "unchanged",
+        "accepted_objective_sha256": "8a4394d8553ab8134540536ffd7ffe37fdfecfc31cc1d06a4372bb511d6b473f",
+        "candidate_objective_sha256": "8a4394d8553ab8134540536ffd7ffe37fdfecfc31cc1d06a4372bb511d6b473f",
+        "catalog_matches": {
+          "https://www.ibm.com/training/certification/ibm-certified-guardium-data-protection-v12x-administrator-professional-C9008300": {
+            "sources": [],
+            "candidates": []
+          },
+          "https://www.ibm.com/training/credentials/getExam/C1000-197": {
+            "sources": [
+              "c1000-197-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "C1000-197",
+        "observation": "IBM identifies 12.2.4 as GPU 12.0p7240 and recommends checking current release notes before deployment across appliances.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://www.ibm.com/support/pages/node/7288587"
+        ],
+        "source_ids": [
+          "c1000-197-gdp-1224-release"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "C1000-197",
+        "observation": "The web index retains the 8G920XG course title, but direct HTML currently serves the generic IBM Training description.",
+        "urls": [
+          "https://www.ibm.com/training/course/guardium-data-protection-administration-8G920XG"
+        ],
+        "source_id": "c1000-197-gdp-admin-course",
+        "resource": "Guardium Data Protection Administration 8G920XG",
+        "access_model": "paid",
+        "time_basis": "No current publisher runtime established for this route.",
+        "confidence": "Limited for current course access.",
+        "recommendation": "Do not promise current enrollment or the previously recorded four-hour duration from this route."
+      },
+      "monitor_outcome": "unchanged",
+      "accepted_on_start": "8a4394d8553ab8134540536ffd7ffe37fdfecfc31cc1d06a4372bb511d6b473f",
+      "candidate": "8a4394d8553ab8134540536ffd7ffe37fdfecfc31cc1d06a4372bb511d6b473f"
+    },
+    {
+      "code": "C1000-184",
+      "exam": {
+        "code": "C1000-184",
+        "observation": "IBM getExam identifies IBM Db2 13 for z/OS Database Administrator - Associate; withdrawal date unset, replacement flag false. Both monitored objective text and status matched accepted records.",
+        "urls": [
+          "https://www.ibm.com/training/certification/ibm-certified-db2-13-for-zos-database-administrator-associate-C9006800",
+          "https://www.ibm.com/training/credentials/getExam/C1000-184"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Keep current objective baseline and use exam-record fields for lifecycle observations.",
+        "monitor": "unchanged",
+        "accepted_objective_sha256": "05ab6453b1927d388a6a219430bfb8c479264dda8d81c62903a90955f439c47e",
+        "candidate_objective_sha256": "05ab6453b1927d388a6a219430bfb8c479264dda8d81c62903a90955f439c47e",
+        "catalog_matches": {
+          "https://www.ibm.com/training/certification/ibm-certified-db2-13-for-zos-database-administrator-associate-C9006800": {
+            "sources": [],
+            "candidates": []
+          },
+          "https://www.ibm.com/training/credentials/getExam/C1000-184": {
+            "sources": [
+              "c1000-184-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "C1000-184",
+        "observation": "IBM's indexed function-level 509 notice names PH70028 (April 2026). Match activated function level and app compatibility to the operation being studied.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "Moderate: indexed official source text; direct IBM Docs fetch returned 403.",
+        "urls": [
+          "https://www.ibm.com/docs/en/db2-for-zos/13.0.0?topic=levels-function-level-509"
+        ],
+        "source_ids": [
+          "c1000-184-db2-fl509"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "C1000-184",
+        "observation": "The Db2 for z/OS introductory PDF returned HTTP 403 on a direct check. Its current version and contents remain unverified.",
+        "urls": [
+          "https://www.ibm.com/docs/en/SSEPEK_13.0.0/pdf/db2z_13_introbook.pdf"
+        ],
+        "source_id": "c1000-184-db2-intro-pdf",
+        "resource": "Introduction to Db2 for z/OS tutorial PDF",
+        "access_model": "public",
+        "time_basis": "No current publisher runtime established for this route.",
+        "confidence": "Limited for this PDF.",
+        "recommendation": "Use a live Db2 course or documentation alternative if the learner cannot open it."
+      },
+      "monitor_outcome": "unchanged",
+      "accepted_on_start": "05ab6453b1927d388a6a219430bfb8c479264dda8d81c62903a90955f439c47e",
+      "candidate": "05ab6453b1927d388a6a219430bfb8c479264dda8d81c62903a90955f439c47e"
+    },
+    {
+      "code": "C3000-006",
+      "exam": {
+        "code": "C3000-006",
+        "observation": "IBM getExam identifies IBM Bob v2 Developer- Associate; withdrawal date unset, replacement flag false. Both monitored objective text and status matched accepted records.",
+        "urls": [
+          "https://www.ibm.com/training/certification/ibm-certified-bob-v2-developer-associate-C9010800",
+          "https://www.ibm.com/training/credentials/getExam/C3000-006"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Keep current objective baseline and use exam-record fields for lifecycle observations.",
+        "monitor": "unchanged",
+        "accepted_objective_sha256": "d4573e943742dfca30eb28ace0a1953957e412b90b8c4165c315cf9e617db5e3",
+        "candidate_objective_sha256": "d4573e943742dfca30eb28ace0a1953957e412b90b8c4165c315cf9e617db5e3",
+        "catalog_matches": {
+          "https://www.ibm.com/training/certification/ibm-certified-bob-v2-developer-associate-C9010800": {
+            "sources": [
+              "ibm-bob-v2-certification"
+            ],
+            "candidates": []
+          },
+          "https://www.ibm.com/training/credentials/getExam/C3000-006": {
+            "sources": [
+              "c3000-006-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "C3000-006",
+        "observation": "IBM Bob's /init tutorial describes generating repository and mode-specific AGENTS.md files after inspecting project context; auto-approval affects prompts.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://bob.ibm.com/docs/ide/tutorials/start-a-project"
+        ],
+        "source_ids": [
+          "ibm-bob-ide-tutorials-start-a-project"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "C3000-006",
+        "observation": "IBM's published four-module Bob course moves from assistive use through customization and extension. The outline includes review and revision of generated work.",
+        "urls": [
+          "https://ibm.github.io/bob-l3/"
+        ],
+        "source_id": "ibm-bob-level-3-labs",
+        "resource": "IBM Bob Level 3",
+        "access_model": "public",
+        "time_basis": "4–6 hours, editorial estimate for selected labs; environment and model access add time.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "unchanged",
+      "accepted_on_start": "d4573e943742dfca30eb28ace0a1953957e412b90b8c4165c315cf9e617db5e3",
+      "candidate": "d4573e943742dfca30eb28ace0a1953957e412b90b8c4165c315cf9e617db5e3"
+    }
+  ],
+  "review_inputs": [
+    {
+      "code": "C1000-206",
+      "guide": "guides/C1000-206-ibm-artificial-intelligence-associate.md",
+      "guide_sha256_lf": "0a8fef3c0f9523d137503d31f48c6f22e41ed07e881d7fe239984519e7bda9ec",
+      "objective": "data/objective-snapshots/c1000-206-official-objectives.txt",
+      "objective_sha256": "c239552411fb1fa7c111d883745dc679667e93a653190f33da114a7c6593acd2"
+    },
+    {
+      "code": "C1000-185",
+      "guide": "guides/C1000-185-ibm-watsonx-generative-ai-engineer.md",
+      "guide_sha256_lf": "8ff98905e59a918514cea4a3c0bb828bce262cdd0e0c70e66a787ac30715d7a0",
+      "objective": "data/objective-snapshots/c1000-185-official-objectives.txt",
+      "objective_sha256": "51dcebdb7703b1489f09d109556e81d4d443d67976ecc562646859fd07fb350b"
+    },
+    {
+      "code": "C1000-175",
+      "guide": "guides/C1000-175-ibm-security-qradar-siem-associate.md",
+      "guide_sha256_lf": "2ae359840284873a4eacfaa7e8aa8b70152c2acb953e19c5feb79982cb386299",
+      "objective": "data/objective-snapshots/c1000-175-official-objectives.txt",
+      "objective_sha256": "8dac7e2540d973f15e452b531615c21ca6c57cd568f83451e3727b13499577a6"
+    },
+    {
+      "code": "C1000-156",
+      "guide": "guides/C1000-156-ibm-security-qradar-siem-administrator.md",
+      "guide_sha256_lf": "20329d04dd5025f947c6f61e1beec997352848b54d80a7481acfc57244ca9266",
+      "objective": "data/objective-snapshots/c1000-156-official-objectives.txt",
+      "objective_sha256": "ec021d4137eda41679372d22546464a274d70fc0de757b012c23a0b47582c43a"
+    },
+    {
+      "code": "C1000-197",
+      "guide": "guides/C1000-197-ibm-guardium-data-protection-administrator.md",
+      "guide_sha256_lf": "9a092476c8486938a66dd5d67afbf5a667ff8cd31f3b47b5859cfafbfb3afe8c",
+      "objective": "data/objective-snapshots/c1000-197-official-objectives.txt",
+      "objective_sha256": "8a4394d8553ab8134540536ffd7ffe37fdfecfc31cc1d06a4372bb511d6b473f"
+    },
+    {
+      "code": "C1000-184",
+      "guide": "guides/C1000-184-ibm-db2-13-zos-database-administrator.md",
+      "guide_sha256_lf": "c4d36cb815f98831766fa604c959b3f3a8c3130d83595848eb23cd811931c7f2",
+      "objective": "data/objective-snapshots/c1000-184-official-objectives.txt",
+      "objective_sha256": "05ab6453b1927d388a6a219430bfb8c479264dda8d81c62903a90955f439c47e"
+    },
+    {
+      "code": "C3000-006",
+      "guide": "guides/C3000-006-ibm-bob-v2-developer-associate.md",
+      "guide_sha256_lf": "cd760a37bd051c7e3fb57a481de077f957beda60bf86266211d470745aa0b177",
+      "objective": "data/objective-snapshots/c3000-006-official-objectives.txt",
+      "objective_sha256": "d4573e943742dfca30eb28ace0a1953957e412b90b8c4165c315cf9e617db5e3"
+    }
+  ],
+  "independent_review": {
+    "method": "Fresh-context read-only AI review of changed content and source evidence",
+    "rubric": "docs/AI-AUDIT.md, version 2",
+    "reviewed_tree": "09ac6b26cafd4b570346c15a7f623e8c3213ff53",
+    "summary": "All seven IBM guide/objective hash pairs match. The issuer API identifies the QRadar Foundations exam and the former introductory watsonx article redirects to the developer hub. The revised materials distinguish prior course durations from verified current data and disclose access limits for IBM PDFs and training. The C1000-175 source gate is marked historical/pending. Targeted change/evidence review only.",
+    "findings": [],
+    "validation": [
+      "unit tests",
+      "repository validation",
+      "reviewed learning resource check",
+      "site preparation",
+      "strict MkDocs build",
+      "generated site validation"
+    ]
+  }
+}
