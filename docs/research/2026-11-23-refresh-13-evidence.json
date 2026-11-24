@@ -1,0 +1,541 @@
+{
+  "date": "2026-11-23",
+  "scope": "AI research into official objectives, selected technical references and learning resources. Individual exam delivery, private course contents and live product testing were outside this review.",
+  "exams": [
+    {
+      "code": "SPLUNK-CORE-USER",
+      "exam": {
+        "code": "SPLUNK-CORE-USER",
+        "observation": "Splunk's dedicated blueprint PDF opens in the web renderer and identifies this exam. The automated parser expects HTML and cannot compare the detailed PDF. Objective monitor reported: ValueError: Could not find the Splunk certification overview",
+        "urls": [
+          "https://www.splunk.com/en_us/training/certification-track/splunk-core-certified-user.html",
+          "https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-user.pdf"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Retain existing domain map. Use PDF-aware comparisons for subsequent full blueprint checks.",
+        "monitor": "manual-review",
+        "accepted_objective_sha256": "12b7fe480f890afd5f9bab87a17cd67eb1952d32720b92f86d57b9e5fae42c77",
+        "candidate_objective_sha256": null,
+        "catalog_matches": {
+          "https://www.splunk.com/en_us/training/certification-track/splunk-core-certified-user.html": {
+            "sources": [
+              "splunk-core-user-certification"
+            ],
+            "candidates": []
+          },
+          "https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-user.pdf": {
+            "sources": [
+              "splunk-core-user-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "SPLUNK-CORE-USER",
+        "observation": "The governed Splunk Web workflow uses an uploaded CSV and a lookup definition. The SPL lookup command accepts either a visible CSV filename or a named definition.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://help.splunk.com/en/splunk-enterprise/manage-knowledge-objects/knowledge-management-manual/10.4/use-lookups-in-splunk-web/define-a-csv-lookup-in-splunk-web",
+          "https://help.splunk.com/en/splunk-enterprise/search/spl-search-reference/10.6/search-commands/lookup"
+        ],
+        "source_ids": [
+          "splunk-define-csv-lookup"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "SPLUNK-CORE-USER",
+        "observation": "The search tutorial is versioned at 10.0 and gives a hands-on route for foundational Splunk searching. Product versions and tutorial exercises must be aligned.",
+        "urls": [
+          "https://help.splunk.com/en/splunk-enterprise/search/search-tutorial/10.0/introduction/about-the-search-tutorial"
+        ],
+        "source_id": "splunk-search-tutorial-10",
+        "resource": "Splunk Search Tutorial 10.0",
+        "access_model": "public",
+        "time_basis": "8–12 hours for selected tutorial and practice, prior library estimate.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "manual-review",
+      "accepted_on_start": "12b7fe480f890afd5f9bab87a17cd67eb1952d32720b92f86d57b9e5fae42c77",
+      "candidate": null
+    },
+    {
+      "code": "SPLUNK-CORE-POWER-USER",
+      "exam": {
+        "code": "SPLUNK-CORE-POWER-USER",
+        "observation": "Splunk's dedicated blueprint PDF opens in the web renderer and identifies this exam. The automated parser expects HTML and cannot compare the detailed PDF. Objective monitor reported: ValueError: Could not find the Splunk certification overview",
+        "urls": [
+          "https://www.splunk.com/en_us/training/certification-track/splunk-core-certified-power-user.html",
+          "https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-power-user.pdf"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Retain existing domain map. Use PDF-aware comparisons for subsequent full blueprint checks.",
+        "monitor": "manual-review",
+        "accepted_objective_sha256": "e5715fa538ca2139d8472fd5aa4122ddf4651abe8f41794ddb6347760aa5f1d1",
+        "candidate_objective_sha256": null,
+        "catalog_matches": {
+          "https://www.splunk.com/en_us/training/certification-track/splunk-core-certified-power-user.html": {
+            "sources": [
+              "splunk-core-power-user-certification"
+            ],
+            "candidates": []
+          },
+          "https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-power-user.pdf": {
+            "sources": [
+              "splunk-core-power-user-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "SPLUNK-CORE-POWER-USER",
+        "observation": "Splunk CIM uses tagged search-time field and data-model conventions to normalize data.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://help.splunk.com/en/splunk-cloud-platform/common-information-model/5.3/introduction/overview-of-the-splunk-common-information-model"
+        ],
+        "source_ids": [
+          "splunk-cim-overview"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "SPLUNK-CORE-POWER-USER",
+        "observation": "The curated platform training PDF lists separate modules for fields, scheduling reports, time and statistics.",
+        "urls": [
+          "https://www.splunk.com/en_us/pdfs/training/platform-curated-learning.pdf"
+        ],
+        "source_id": "splunk-platform-curated-learning",
+        "resource": "Splunk Platform Curated Learning",
+        "access_model": "public",
+        "time_basis": "Using Fields 3 h; Scheduling Reports & Alerts 3 h; Working with Time 3 h; Statistical Processing 3 h, publisher.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "manual-review",
+      "accepted_on_start": "e5715fa538ca2139d8472fd5aa4122ddf4651abe8f41794ddb6347760aa5f1d1",
+      "candidate": null
+    },
+    {
+      "code": "SPLUNK-ADVANCED-POWER-USER",
+      "exam": {
+        "code": "SPLUNK-ADVANCED-POWER-USER",
+        "observation": "Splunk's dedicated blueprint PDF opens in the web renderer and identifies this exam. The automated parser expects HTML and cannot compare the detailed PDF. Objective monitor reported: ValueError: Could not find the Splunk certification overview",
+        "urls": [
+          "https://www.splunk.com/en_us/training/certification-track/splunk-core-certified-advanced-power-user.html",
+          "https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-advanced-power-user.pdf"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Retain existing domain map. Use PDF-aware comparisons for subsequent full blueprint checks.",
+        "monitor": "manual-review",
+        "accepted_objective_sha256": "88bf95c61b865a715feb43849ff3ba24a64fff0218c4c17d8f7cd589b2232815",
+        "candidate_objective_sha256": null,
+        "catalog_matches": {
+          "https://www.splunk.com/en_us/training/certification-track/splunk-core-certified-advanced-power-user.html": {
+            "sources": [
+              "splunk-advanced-power-user-certification"
+            ],
+            "candidates": []
+          },
+          "https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-advanced-power-user.pdf": {
+            "sources": [
+              "splunk-advanced-power-user-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "SPLUNK-ADVANCED-POWER-USER",
+        "observation": "The 10.4 removal page distinguishes unsupported jQuery 2/Simple XML 1.0 from Simple XML dashboards using supported versions.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://help.splunk.com/en/splunk-enterprise/release-notes-and-updates/release-notes/10.4/deprecated-features/deprecated-and-removed-in-version-10.4"
+        ],
+        "source_ids": [
+          "splunk-104-deprecated-features"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "SPLUNK-ADVANCED-POWER-USER",
+        "observation": "The public course catalog includes knowledge-object management, SPL processing and output normalization. Select by current advanced objectives.",
+        "urls": [
+          "https://www.splunk.com/en_us/training/free-courses/overview.html"
+        ],
+        "source_id": "splunk-free-training",
+        "resource": "Free Splunk Training Courses",
+        "access_model": "free-account",
+        "time_basis": "No current publisher runtime established for this route.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Do not treat the complete free catalog as the advanced certification track."
+      },
+      "monitor_outcome": "manual-review",
+      "accepted_on_start": "88bf95c61b865a715feb43849ff3ba24a64fff0218c4c17d8f7cd589b2232815",
+      "candidate": null
+    },
+    {
+      "code": "SPLUNK-CLOUD-ADMIN",
+      "exam": {
+        "code": "SPLUNK-CLOUD-ADMIN",
+        "observation": "Splunk's dedicated blueprint PDF opens in the web renderer and identifies this exam. The automated parser expects HTML and cannot compare the detailed PDF. Objective monitor reported: ValueError: Could not find the Splunk certification overview",
+        "urls": [
+          "https://www.splunk.com/en_us/training/certification-track/splunk-cloud-certified-admin.html",
+          "https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-cloud-admin.pdf"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Retain existing domain map. Use PDF-aware comparisons for subsequent full blueprint checks.",
+        "monitor": "manual-review",
+        "accepted_objective_sha256": "ef925e6aab94980171d47b8162c03c13e5c3800eabc87783f58807030e2b4955",
+        "candidate_objective_sha256": null,
+        "catalog_matches": {
+          "https://www.splunk.com/en_us/training/certification-track/splunk-cloud-certified-admin.html": {
+            "sources": [
+              "splunk-cloud-admin-certification"
+            ],
+            "candidates": []
+          },
+          "https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-cloud-admin.pdf": {
+            "sources": [
+              "splunk-cloud-admin-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "SPLUNK-CLOUD-ADMIN",
+        "observation": "Splunk maintains a Cloud ACS compatibility matrix. Validate the operation against the tenant architecture and supported API.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://help.splunk.com/en/splunk-cloud-platform/administer/admin-config-service-manual/10.5.2605/using-the-admin-config-service-acs--api/admin-config-service-acs-requirements-and-compatibility-matrix"
+        ],
+        "source_ids": [
+          "splunk-cloud-admin-acs-compatibility-1052605"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "SPLUNK-CLOUD-ADMIN",
+        "observation": "Splunk Cloud Administration covers managed-service data collection, configuration and maintenance. Its training description separates it from a platform migration course.",
+        "urls": [
+          "https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-cloud-administration-course-description.pdf"
+        ],
+        "source_id": "splunk-cloud-admin-course-description",
+        "resource": "Splunk Cloud Administration Course Description",
+        "access_model": "paid",
+        "time_basis": "18 hours, published course-description metadata previously recorded in the catalog.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "manual-review",
+      "accepted_on_start": "ef925e6aab94980171d47b8162c03c13e5c3800eabc87783f58807030e2b4955",
+      "candidate": null
+    },
+    {
+      "code": "SPLUNK-ENTERPRISE-ADMIN",
+      "exam": {
+        "code": "SPLUNK-ENTERPRISE-ADMIN",
+        "observation": "Splunk's dedicated blueprint PDF opens in the web renderer and identifies this exam. The automated parser expects HTML and cannot compare the detailed PDF. Objective monitor reported: ValueError: Could not find the Splunk certification overview",
+        "urls": [
+          "https://www.splunk.com/en_us/training/certification-track/splunk-enterprise-certified-admin.html",
+          "https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-enterprise-admin.pdf"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Retain existing domain map. Use PDF-aware comparisons for subsequent full blueprint checks.",
+        "monitor": "manual-review",
+        "accepted_objective_sha256": "5d446f18d95406a4a21e6b7f3ead1530c6bd7b7faa89719d8ecaa3593c179c5c",
+        "candidate_objective_sha256": null,
+        "catalog_matches": {
+          "https://www.splunk.com/en_us/training/certification-track/splunk-enterprise-certified-admin.html": {
+            "sources": [
+              "splunk-enterprise-admin-certification"
+            ],
+            "candidates": []
+          },
+          "https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-enterprise-admin.pdf": {
+            "sources": [
+              "splunk-enterprise-admin-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "SPLUNK-ENTERPRISE-ADMIN",
+        "observation": "Splunk's 10.4 notes list 10.4.5 on October 30, 2026 as a fixes release.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://help.splunk.com/en/splunk-enterprise/release-notes-and-updates/release-notes/10.4/whats-new/welcome-to-splunk-enterprise-10.4"
+        ],
+        "source_ids": [
+          "splunk-enterprise-104-release-notes"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "SPLUNK-ENTERPRISE-ADMIN",
+        "observation": "System Administration covers indexers and search heads, configuration inspection, access roles and forwarding.",
+        "urls": [
+          "https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-enterprise-system-administration-course-description.pdf"
+        ],
+        "source_id": "splunk-enterprise-admin-course-system",
+        "resource": "Splunk Enterprise System Administration Course Description",
+        "access_model": "paid",
+        "time_basis": "12 hours, published course-description metadata previously recorded in the catalog.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "manual-review",
+      "accepted_on_start": "5d446f18d95406a4a21e6b7f3ead1530c6bd7b7faa89719d8ecaa3593c179c5c",
+      "candidate": null
+    },
+    {
+      "code": "SPLUNK-ENTERPRISE-ARCHITECT",
+      "exam": {
+        "code": "SPLUNK-ENTERPRISE-ARCHITECT",
+        "observation": "Splunk's dedicated blueprint PDF opens in the web renderer and identifies this exam (85 questions, 90 minutes). The automated parser expects HTML and cannot compare the detailed PDF. Objective monitor reported: ValueError: Could not find the Splunk certification overview",
+        "urls": [
+          "https://www.splunk.com/en_us/training/certification-track/splunk-enterprise-certified-architect.html",
+          "https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-architect.pdf"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Retain existing domain map. Use PDF-aware comparisons for subsequent full blueprint checks.",
+        "monitor": "manual-review",
+        "accepted_objective_sha256": "0c28e1dbc996a44c1bfad21e83bfcea0bd69645bbee8432a0a93e23262d102f4",
+        "candidate_objective_sha256": null,
+        "catalog_matches": {
+          "https://www.splunk.com/en_us/training/certification-track/splunk-enterprise-certified-architect.html": {
+            "sources": [
+              "splunk-enterprise-architect-certification"
+            ],
+            "candidates": []
+          },
+          "https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-architect.pdf": {
+            "sources": [
+              "splunk-enterprise-architect-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "SPLUNK-ENTERPRISE-ARCHITECT",
+        "observation": "The vendor notes a forwarder pipeline blockage when 10.4.2 tcpout uses acknowledgments; fixed in 10.4.3. Separate build history from topology design.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://help.splunk.com/en/splunk-enterprise/release-notes-and-updates/release-notes/10.4/whats-new/welcome-to-splunk-enterprise-10.4"
+        ],
+        "source_ids": [
+          "splunk-enterprise-104-release-notes"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "SPLUNK-ENTERPRISE-ARCHITECT",
+        "observation": "The Architect flowchart identifies required classes and a practical lab before authorization.",
+        "urls": [
+          "https://www.splunk.com/en_us/pdfs/training/splunk-enterprise-certified-architect-track.pdf"
+        ],
+        "source_id": "splunk-enterprise-architect-course-track",
+        "resource": "Splunk Enterprise Certified Architect Track Flowchart",
+        "access_model": "partner-restricted",
+        "time_basis": "No current publisher runtime established for this route.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Confirm eligibility with the current program and do not treat required training as optional."
+      },
+      "monitor_outcome": "manual-review",
+      "accepted_on_start": "0c28e1dbc996a44c1bfad21e83bfcea0bd69645bbee8432a0a93e23262d102f4",
+      "candidate": null
+    },
+    {
+      "code": "SPLUNK-CORE-CONSULTANT",
+      "exam": {
+        "code": "SPLUNK-CORE-CONSULTANT",
+        "observation": "Splunk's dedicated blueprint PDF opens in the web renderer and identifies this exam (86 questions, 120 minutes). The automated parser expects HTML and cannot compare the detailed PDF. Objective monitor reported: ValueError: Could not find the Splunk certification overview",
+        "urls": [
+          "https://www.splunk.com/en_us/training/certification-track/splunk-core-certified-consultant.html",
+          "https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-consultant.pdf"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Retain existing domain map. Use PDF-aware comparisons for subsequent full blueprint checks.",
+        "monitor": "manual-review",
+        "accepted_objective_sha256": "4fe612b351b9c761b9032259a223155b6e4e3c3773d9edd2fac17d5b0731ea73",
+        "candidate_objective_sha256": null,
+        "catalog_matches": {
+          "https://www.splunk.com/en_us/training/certification-track/splunk-core-certified-consultant.html": {
+            "sources": [
+              "splunk-core-consultant-certification"
+            ],
+            "candidates": []
+          },
+          "https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-consultant.pdf": {
+            "sources": [
+              "splunk-core-consultant-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "SPLUNK-CORE-CONSULTANT",
+        "observation": "When triaging a 10.4.2 forwarding stall with acknowledgments enabled, compare the installed build against the 10.4.3 fix documented in 10.4 release notes.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://help.splunk.com/en/splunk-enterprise/release-notes-and-updates/release-notes/10.4/whats-new/welcome-to-splunk-enterprise-10.4"
+        ],
+        "source_ids": [
+          "splunk-enterprise-104-release-notes"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "SPLUNK-CORE-CONSULTANT",
+        "observation": "The Consultant track flowchart distinguishes qualifying coursework and alternative sequencing. It is useful for checking access to the partner route.",
+        "urls": [
+          "https://www.splunk.com/en_us/pdfs/training/splunk-core-certified-consultant-track.pdf"
+        ],
+        "source_id": "splunk-core-consultant-course-track",
+        "resource": "Splunk Core Certified Consultant Track Flowchart",
+        "access_model": "partner-restricted",
+        "time_basis": "No current publisher runtime established for this route.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Check current partner access and eligibility before recommending purchases."
+      },
+      "monitor_outcome": "manual-review",
+      "accepted_on_start": "4fe612b351b9c761b9032259a223155b6e4e3c3773d9edd2fac17d5b0731ea73",
+      "candidate": null
+    },
+    {
+      "code": "SPLUNK-ES-ADMIN",
+      "exam": {
+        "code": "SPLUNK-ES-ADMIN",
+        "observation": "Issuer's program FAQ names Enterprise Security Certified Admin as a legacy certification effective January 1, 2026. Legacy credentials stay valid but do not receive updated exam content for product releases. Objective monitor outcome: null.",
+        "urls": [
+          "https://www.splunk.com/en_us/training/certification-track/splunk-es-certified-admin.html",
+          "https://www.splunk.com/en_us/pdfs/training/splunk-certification-changes.pdf"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Keep the legacy scope and the separate program-maintenance and retirement concepts; confirm scheduling separately.",
+        "monitor": null,
+        "accepted_objective_sha256": null,
+        "candidate_objective_sha256": null,
+        "catalog_matches": {
+          "https://www.splunk.com/en_us/training/certification-track/splunk-es-certified-admin.html": {
+            "sources": [],
+            "candidates": []
+          },
+          "https://www.splunk.com/en_us/pdfs/training/splunk-certification-changes.pdf": {
+            "sources": [
+              "splunk-certification-changes-faq"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "SPLUNK-ES-ADMIN",
+        "observation": "The issuer labels Enterprise Security Certified Admin Legacy. Its focus includes ES-specific event processing and normalization; this is an inventory-only entry.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://www.splunk.com/en_us/training/certification-track/splunk-es-certified-admin.html"
+        ],
+        "source_ids": [],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "SPLUNK-ES-ADMIN",
+        "observation": "The public Enterprise Security Certified Admin page links the test blueprint and an SOC administrator learning path.",
+        "urls": [
+          "https://www.splunk.com/en_us/training/certification-track/splunk-es-certified-admin.html"
+        ],
+        "source_id": null,
+        "resource": "SPLUNK-ES-ADMIN credential prep listing",
+        "access_model": "not established",
+        "time_basis": "No current publisher runtime established for this route.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use the credential page to locate current related training and preserve any lifecycle qualification."
+      },
+      "monitor_outcome": "inventory-only",
+      "accepted_on_start": null,
+      "candidate": null
+    }
+  ],
+  "review_inputs": [
+    {
+      "code": "SPLUNK-CORE-USER",
+      "guide": "guides/SPLUNK-CORE-USER-splunk-core-certified-user.md",
+      "guide_sha256_lf": "c1f6dc2a8fd94cb22c3eb5db3da556a78e02e318baf1e83ecfa15f824de26a59",
+      "objective": "data/objective-snapshots/splunk-core-user-official-objectives.txt",
+      "objective_sha256": "12b7fe480f890afd5f9bab87a17cd67eb1952d32720b92f86d57b9e5fae42c77"
+    },
+    {
+      "code": "SPLUNK-CORE-POWER-USER",
+      "guide": "guides/SPLUNK-CORE-POWER-USER-splunk-core-certified-power-user.md",
+      "guide_sha256_lf": "65df7299ae6696aa6408d25f1b065826a2a7614ecab28caa964e4f7e13a9e27a",
+      "objective": "data/objective-snapshots/splunk-core-power-user-official-objectives.txt",
+      "objective_sha256": "e5715fa538ca2139d8472fd5aa4122ddf4651abe8f41794ddb6347760aa5f1d1"
+    },
+    {
+      "code": "SPLUNK-ADVANCED-POWER-USER",
+      "guide": "guides/SPLUNK-ADVANCED-POWER-USER-splunk-core-certified-advanced-power-user.md",
+      "guide_sha256_lf": "cf41233fde618cb3113d51a119b92846e204bbf7907b4e7f90ee3cf58528ffeb",
+      "objective": "data/objective-snapshots/splunk-advanced-power-user-official-objectives.txt",
+      "objective_sha256": "88bf95c61b865a715feb43849ff3ba24a64fff0218c4c17d8f7cd589b2232815"
+    },
+    {
+      "code": "SPLUNK-CLOUD-ADMIN",
+      "guide": "guides/SPLUNK-CLOUD-ADMIN-splunk-cloud-certified-admin.md",
+      "guide_sha256_lf": "edf238dc9d384467ca0be410fe12c9d5c0df21923b60eddbb6284f521e182625",
+      "objective": "data/objective-snapshots/splunk-cloud-admin-official-objectives.txt",
+      "objective_sha256": "ef925e6aab94980171d47b8162c03c13e5c3800eabc87783f58807030e2b4955"
+    },
+    {
+      "code": "SPLUNK-ENTERPRISE-ADMIN",
+      "guide": "guides/SPLUNK-ENTERPRISE-ADMIN-splunk-enterprise-certified-admin.md",
+      "guide_sha256_lf": "5ff89aad0e6f462a6b6efd2c1ca0b7a184ebc7d98b3184fd34ace2d538d75eaf",
+      "objective": "data/objective-snapshots/splunk-enterprise-admin-official-objectives.txt",
+      "objective_sha256": "5d446f18d95406a4a21e6b7f3ead1530c6bd7b7faa89719d8ecaa3593c179c5c"
+    },
+    {
+      "code": "SPLUNK-ENTERPRISE-ARCHITECT",
+      "guide": "guides/SPLUNK-ENTERPRISE-ARCHITECT-splunk-enterprise-certified-architect.md",
+      "guide_sha256_lf": "9d28ab9a8ebdd3ab00f6a616e4c68e4b75d903ca529ce444df50e1829d4e24f2",
+      "objective": "data/objective-snapshots/splunk-enterprise-architect-official-objectives.txt",
+      "objective_sha256": "0c28e1dbc996a44c1bfad21e83bfcea0bd69645bbee8432a0a93e23262d102f4"
+    },
+    {
+      "code": "SPLUNK-CORE-CONSULTANT",
+      "guide": "guides/SPLUNK-CORE-CONSULTANT-splunk-core-certified-consultant.md",
+      "guide_sha256_lf": "8a0ec7b5b7c10afa494a3ae3a7bd2c205baa8a9e7c4708f5af48e778d4fb8c74",
+      "objective": "data/objective-snapshots/splunk-core-consultant-official-objectives.txt",
+      "objective_sha256": "4fe612b351b9c761b9032259a223155b6e4e3c3773d9edd2fac17d5b0731ea73"
+    }
+  ],
+  "independent_review": {
+    "method": "Fresh-context read-only AI review of changed content and source evidence",
+    "rubric": "docs/AI-AUDIT.md, version 2",
+    "reviewed_tree": "daa8013a59e724e212310674ab017f27ccce864f",
+    "summary": "Confirmed the resolved lookup-contract error from tree c613e340680f80fb96de1c318b2fe6b17c737fce against the SPL reference. The Core User guide and both reports now distinguish a named Splunk Web definition from direct filename use. Seven guide and objective pairs match. The eighth record is a legacy inventory-only credential. Targeted change/evidence review only.",
+    "findings": [],
+    "validation": [
+      "unit tests",
+      "repository validation",
+      "reviewed learning resource check",
+      "site preparation",
+      "strict MkDocs build",
+      "generated site validation"
+    ]
+  }
+}

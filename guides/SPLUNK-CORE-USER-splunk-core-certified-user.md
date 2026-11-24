@@ -185,7 +185,7 @@ Current references: [Create and edit reports](https://help.splunk.com/en/splunk-
 
 ## 7. Lookups — 6%
 
-A lookup enriches events by matching one or more input fields to reference data and returning fields. A CSV lookup workflow has two distinct objects: uploaded lookup table file and lookup definition. Permissions/app context govern use.
+A lookup enriches events by matching one or more input fields to reference data and returning fields. A named CSV lookup configured in Splunk Web uses an uploaded table file and a lookup definition. The SPL lookup command can also take a CSV filename directly. Permissions/app context govern use.
 
 ```spl
 index=web earliest=-1h
@@ -277,7 +277,7 @@ Turn an error report into a schedule and a test alert. Deliberately model schedu
 28. How should a visualization be selected?
 29. What is the purpose of a dashboard?
 30. How can a report relate to a dashboard panel?
-31. What are the two required UI objects in a basic CSV lookup setup?
+31. Which two objects make up a named CSV lookup configured in Splunk Web?
 32. How do OUTPUT and OUTPUTNEW differ?
 33. What does an automatic lookup do?
 34. Which lookup boundary rows should be tested?
@@ -320,7 +320,7 @@ Turn an error report into a schedule and a test alert. Deliberately model schedu
 28. From the question and result shape, with honest scales/labels.
 29. Group panels for a defined audience and decision/workflow.
 30. The saved report can power the panel.
-31. Lookup table file and lookup definition.
+31. The uploaded table file and its lookup definition. For an explicit SPL lookup, the command can also name the CSV file directly.
 32. OUTPUT may overwrite; OUTPUTNEW adds only where the destination is absent.
 33. Enriches matching events at search time without an explicit lookup command.
 34. Matched, unmatched, duplicate, blank, case/format, and stale-reference rows.
