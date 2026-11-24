@@ -1,0 +1,747 @@
+{
+  "date": "2026-11-23",
+  "scope": "AI research into official objectives, selected technical references and learning resources. Individual exam delivery, private course contents and live product testing were outside this review.",
+  "exams": [
+    {
+      "code": "PANW-XSIAM-ANALYST",
+      "exam": {
+        "code": "PANW-XSIAM-ANALYST",
+        "observation": "Manual recovery of 4-page AUGUST 2025 datasheet found all 31 original numeric task IDs. Domain weights in order: 19%, 20%, 15%, 14%, 12%, 20%. Paraphrased descriptions limit exact string comparison. Objective monitor reported: ValueError: Could not find Palo Alto Networks certification objectives",
+        "urls": [
+          "https://www.paloaltonetworks.com/services/education/palo-alto-networks-xsiam-analyst",
+          "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/XSIAMAnalyst-datasheet.pdf"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Keep PDF scope; the HTML-only monitor failure does not signal a changed exam.",
+        "monitor": "manual-review",
+        "accepted_objective_sha256": "c1f175c79813c8b994e1a1d61270ef393a4162a9e9b0f674399d5b7969c80137",
+        "candidate_objective_sha256": null,
+        "catalog_matches": {
+          "https://www.paloaltonetworks.com/services/education/palo-alto-networks-xsiam-analyst": {
+            "sources": [
+              "panw-xsiam-analyst-certification"
+            ],
+            "candidates": []
+          },
+          "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/XSIAMAnalyst-datasheet.pdf": {
+            "sources": [
+              "panw-xsiam-analyst-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "PANW-XSIAM-ANALYST",
+        "observation": "NIST incorporates incident response throughout risk management, including preparation, detection and recovery.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://csrc.nist.gov/pubs/sp/800/61/r3/final"
+        ],
+        "source_ids": [
+          "splk-5003-source-1"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "PANW-XSIAM-ANALYST",
+        "observation": "The XSIAM Analyst credential explicitly lists Cortex XSIAM for Investigation and Analysis. The digital route links the general portal.",
+        "urls": [
+          "https://learn.paloaltonetworks.com/learn",
+          "https://www.paloaltonetworks.com/services/education/palo-alto-networks-xsiam-analyst"
+        ],
+        "linked_portal": "https://learn.paloaltonetworks.com/learn",
+        "source_id": "panw-learning-center",
+        "resource": "Palo Alto Networks Learning Center",
+        "access_model": "free-account",
+        "time_basis": "No current publisher runtime established for this route.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Name the investigation course in the guide."
+      },
+      "monitor_outcome": "manual-review",
+      "accepted_on_start": "c1f175c79813c8b994e1a1d61270ef393a4162a9e9b0f674399d5b7969c80137",
+      "candidate": null
+    },
+    {
+      "code": "PANW-XDR-ANALYST",
+      "exam": {
+        "code": "PANW-XDR-ANALYST",
+        "observation": "Manual recovery of 4-page AUGUST 2025 datasheet found all 19 original numeric task IDs. Domain weights in order: 23%, 34%, 28%, 15%. Paraphrased descriptions limit exact string comparison. Objective monitor reported: ValueError: Could not find Palo Alto Networks certification objectives",
+        "urls": [
+          "https://www.paloaltonetworks.com/services/education/palo-alto-networks-xdr-analyst",
+          "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/xdr-analyst-datasheet.pdf"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Keep PDF scope; the HTML-only monitor failure does not signal a changed exam.",
+        "monitor": "manual-review",
+        "accepted_objective_sha256": "3c06e6862b0b7301795c65038b2313ba160aea3d244bef736cb252585ee42f44",
+        "candidate_objective_sha256": null,
+        "catalog_matches": {
+          "https://www.paloaltonetworks.com/services/education/palo-alto-networks-xdr-analyst": {
+            "sources": [
+              "panw-xdr-analyst-certification"
+            ],
+            "candidates": []
+          },
+          "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/xdr-analyst-datasheet.pdf": {
+            "sources": [
+              "panw-xdr-analyst-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "PANW-XDR-ANALYST",
+        "observation": "XDR's current case detail supports reviewing a case timeline, parameters for automation, and resolution.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs-cortex.paloaltonetworks.com/r/Cortex-XDR/Cortex-XDR-5.x-Documentation/Detailed-View"
+        ],
+        "source_ids": [
+          "panw-cybersecurity-practitioner-source-4",
+          "panw-cortex-xdr-5x-case-detail"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "PANW-XDR-ANALYST",
+        "observation": "The XDR Investigation and Analysis instructor-led course is designed for SOC analysts and incident response teams.",
+        "urls": [
+          "https://www.paloaltonetworks.com/services/education/ilt-xdr-investigation-analysis",
+          "https://www.paloaltonetworks.com/services/education/palo-alto-networks-xdr-analyst"
+        ],
+        "linked_portal": "https://learn.paloaltonetworks.com/learn",
+        "source_id": "panw-ilt-xdr-investigation",
+        "resource": "Cortex XDR: Investigation and Analysis",
+        "access_model": "paid",
+        "time_basis": "2 instructor-led days, publisher.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "manual-review",
+      "accepted_on_start": "3c06e6862b0b7301795c65038b2313ba160aea3d244bef736cb252585ee42f44",
+      "candidate": null
+    },
+    {
+      "code": "PANW-XSIAM-ENGINEER",
+      "exam": {
+        "code": "PANW-XSIAM-ENGINEER",
+        "observation": "Manual recovery of 4-page AUGUST 2025 datasheet found all 34 original numeric task IDs. Domain weights in order: 22%, 30%, 24%, 24%. Paraphrased descriptions limit exact string comparison. Objective monitor reported: ValueError: Could not find Palo Alto Networks certification objectives",
+        "urls": [
+          "https://www.paloaltonetworks.com/services/education/palo-alto-networks-xsiam-engineer",
+          "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/xsiam-engineer-datasheet.pdf"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Keep PDF scope; the HTML-only monitor failure does not signal a changed exam.",
+        "monitor": "manual-review",
+        "accepted_objective_sha256": "01fcfc3a45ecdf45cdd41d9dfa6e33f6d30360991d2be20807fe2d9fcf6130ca",
+        "candidate_objective_sha256": null,
+        "catalog_matches": {
+          "https://www.paloaltonetworks.com/services/education/palo-alto-networks-xsiam-engineer": {
+            "sources": [
+              "panw-xsiam-engineer-certification"
+            ],
+            "candidates": []
+          },
+          "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/xsiam-engineer-datasheet.pdf": {
+            "sources": [
+              "panw-xsiam-engineer-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "PANW-XSIAM-ENGINEER",
+        "observation": "STIX 2.1 specifies structured threat intelligence objects and relationships used for interoperable defensive context.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.oasis-open.org/cti/stix/v2.1/stix-v2.1.html"
+        ],
+        "source_ids": [
+          "panw-xsiam-engineer-source-1"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "PANW-XSIAM-ENGINEER",
+        "observation": "The XSIAM security operations/integration course covers platform integration and automation for SOC engineers.",
+        "urls": [
+          "https://www.paloaltonetworks.com/services/education/ilt-xsiam-security-operations-integration-automation",
+          "https://www.paloaltonetworks.com/services/education/palo-alto-networks-xsiam-engineer"
+        ],
+        "linked_portal": "https://learn.paloaltonetworks.com/learn",
+        "source_id": "panw-xsiam-engineer-ilt",
+        "resource": "Cortex XSIAM: Security Operations, Integration, and Automation course",
+        "access_model": "paid",
+        "time_basis": "3 instructor-led days, publisher.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "manual-review",
+      "accepted_on_start": "01fcfc3a45ecdf45cdd41d9dfa6e33f6d30360991d2be20807fe2d9fcf6130ca",
+      "candidate": null
+    },
+    {
+      "code": "PANW-XDR-ENGINEER",
+      "exam": {
+        "code": "PANW-XDR-ENGINEER",
+        "observation": "Manual recovery of 4-page AUGUST 2025 datasheet found all 25 original numeric task IDs. Domain weights in order: 14%, 22%, 22%, 22%, 20%. Paraphrased descriptions limit exact string comparison. Objective monitor reported: ValueError: Could not find Palo Alto Networks certification objectives",
+        "urls": [
+          "https://www.paloaltonetworks.com/services/education/palo-alto-networks-xdr-engineer",
+          "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/xdr-engineer-datasheet.pdf"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Keep PDF scope; the HTML-only monitor failure does not signal a changed exam.",
+        "monitor": "manual-review",
+        "accepted_objective_sha256": "12d92e0024c93b533cecb01a55b53e8e5c667ec75b2fbbeca2db183b75451a26",
+        "candidate_objective_sha256": null,
+        "catalog_matches": {
+          "https://www.paloaltonetworks.com/services/education/palo-alto-networks-xdr-engineer": {
+            "sources": [
+              "panw-xdr-engineer-certification"
+            ],
+            "candidates": []
+          },
+          "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/xdr-engineer-datasheet.pdf": {
+            "sources": [
+              "panw-xdr-engineer-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "PANW-XDR-ENGINEER",
+        "observation": "Cloud Identity Engine has dedicated identity and directory integration documentation; verify the deployment configuration before inferring user-to-event attribution.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.paloaltonetworks.com/identity/cloud-identity-engine/cloud-identity-engine-overview"
+        ],
+        "source_ids": [
+          "panw-ngfw-engineer-source-6",
+          "panw-sd-wan-engineer-source-5"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "PANW-XDR-ENGINEER",
+        "observation": "Cortex XDR Security Operations and Integration serves engineers responsible for XDR deployment and integration.",
+        "urls": [
+          "https://www.paloaltonetworks.com/services/education/ilt-cortex-xdr-security-operations-integration",
+          "https://www.paloaltonetworks.com/services/education/palo-alto-networks-xdr-engineer"
+        ],
+        "linked_portal": "https://learn.paloaltonetworks.com/learn",
+        "source_id": "panw-ilt-xdr-integration",
+        "resource": "Cortex XDR: Security Operations and Integration",
+        "access_model": "paid",
+        "time_basis": "3 instructor-led days, publisher.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "manual-review",
+      "accepted_on_start": "12d92e0024c93b533cecb01a55b53e8e5c667ec75b2fbbeca2db183b75451a26",
+      "candidate": null
+    },
+    {
+      "code": "PANW-XSOAR-ENGINEER",
+      "exam": {
+        "code": "PANW-XSOAR-ENGINEER",
+        "observation": "Manual recovery of 4-page AUGUST 2025 datasheet found all 33 original numeric task IDs. Domain weights in order: 14%, 22%, 30%, 16%, 18%. Paraphrased descriptions limit exact string comparison. Objective monitor reported: ValueError: Could not find Palo Alto Networks certification objectives",
+        "urls": [
+          "https://www.paloaltonetworks.com/services/education/palo-alto-networks-xsoar-engineer",
+          "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/xsoar-engineer-datasheet.pdf"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Keep PDF scope; the HTML-only monitor failure does not signal a changed exam.",
+        "monitor": "manual-review",
+        "accepted_objective_sha256": "43a17a64086c63ac3a769b6279b2c31cb3eec4e85f69fe62f8f88dae4a8c504c",
+        "candidate_objective_sha256": null,
+        "catalog_matches": {
+          "https://www.paloaltonetworks.com/services/education/palo-alto-networks-xsoar-engineer": {
+            "sources": [
+              "panw-xsoar-engineer-certification"
+            ],
+            "candidates": []
+          },
+          "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/xsoar-engineer-datasheet.pdf": {
+            "sources": [
+              "panw-xsoar-engineer-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "PANW-XSOAR-ENGINEER",
+        "observation": "Version-specific XSOAR SaaS release notes distinguish platform features such as a built-in Git repository for moving content between development and production.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://cortex-docs.paloaltonetworks.com/cortex-xsoar-8-saas-releases/cortex-xsoar-8-saas-releases.md"
+        ],
+        "source_ids": [
+          "panw-xsoar-engineer-release-notes-8-saas"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "PANW-XSOAR-ENGINEER",
+        "observation": "The Cortex XSOAR engineering course teaches integration of security tools and defensive automation.",
+        "urls": [
+          "https://www.paloaltonetworks.com/services/education/ilt-cortex-xsoar-engineering-security-automation-solutions",
+          "https://www.paloaltonetworks.com/services/education/palo-alto-networks-xsoar-engineer"
+        ],
+        "linked_portal": "https://learn.paloaltonetworks.com/learn/home",
+        "source_id": "panw-xsoar-engineer-ilt",
+        "resource": "Cortex XSOAR: Engineering Security Automation Solutions course",
+        "access_model": "paid",
+        "time_basis": "4 instructor-led days, publisher.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "manual-review",
+      "accepted_on_start": "43a17a64086c63ac3a769b6279b2c31cb3eec4e85f69fe62f8f88dae4a8c504c",
+      "candidate": null
+    },
+    {
+      "code": "PANW-SECURITY-OPERATIONS-ARCHITECT",
+      "exam": {
+        "code": "PANW-SECURITY-OPERATIONS-ARCHITECT",
+        "observation": "Manual recovery of 4-page FEBRUARY 2026 datasheet found all 15 original numeric task IDs. Domain weights in order: 22%, 49%, 29%. Paraphrased descriptions limit exact string comparison. Objective monitor reported: ValueError: Could not find Palo Alto Networks certification objectives",
+        "urls": [
+          "https://www.paloaltonetworks.com/services/education/palo-alto-networks-secops-architect",
+          "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/secops-architect-datasheet.pdf"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Keep PDF scope; the HTML-only monitor failure does not signal a changed exam.",
+        "monitor": "manual-review",
+        "accepted_objective_sha256": "1b4c3dc91c145dd25409e6ddef72d2580f6b964f3b1dd6dab4136e728788c4e5",
+        "candidate_objective_sha256": null,
+        "catalog_matches": {
+          "https://www.paloaltonetworks.com/services/education/palo-alto-networks-secops-architect": {
+            "sources": [
+              "panw-security-operations-architect-certification"
+            ],
+            "candidates": []
+          },
+          "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/secops-architect-datasheet.pdf": {
+            "sources": [
+              "panw-security-operations-architect-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "PANW-SECURITY-OPERATIONS-ARCHITECT",
+        "observation": "NIST SP 800-92 covers enterprise log management infrastructure and ongoing log management processes.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://csrc.nist.gov/pubs/sp/800/92/final"
+        ],
+        "source_ids": [
+          "panw-xsiam-engineer-source-4"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "PANW-SECURITY-OPERATIONS-ARCHITECT",
+        "observation": "The architect credential recommends refreshing underlying Specialist topics before working through the advanced learning path. The public path goes to the general portal.",
+        "urls": [
+          "https://www.paloaltonetworks.com/services/education/palo-alto-networks-secops-architect"
+        ],
+        "linked_portal": "https://learn.paloaltonetworks.com/learn",
+        "source_id": "panw-security-operations-architect-certification",
+        "resource": "PANW-SECURITY-OPERATIONS-ARCHITECT credential prep listing",
+        "access_model": "public credential page; learning portal requires account",
+        "time_basis": "60–90 minutes to annotate the datasheet, library estimate.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "manual-review",
+      "accepted_on_start": "1b4c3dc91c145dd25409e6ddef72d2580f6b964f3b1dd6dab4136e728788c4e5",
+      "candidate": null
+    },
+    {
+      "code": "PANW-CLOUD-SECURITY-PROFESSIONAL",
+      "exam": {
+        "code": "PANW-CLOUD-SECURITY-PROFESSIONAL",
+        "observation": "Manual recovery of 4-page AUGUST 2025 datasheet found all 13 original numeric task IDs. Domain weights in order: 10%, 15%, 29%, 26%, 20%. Paraphrased descriptions limit exact string comparison. Objective monitor reported: ValueError: Could not find Palo Alto Networks certification objectives",
+        "urls": [
+          "https://www.paloaltonetworks.com/services/education/palo-alto-networks-cloudsec-professional",
+          "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/cloudsec-professional-datasheet.pdf"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Keep PDF scope; the HTML-only monitor failure does not signal a changed exam.",
+        "monitor": "manual-review",
+        "accepted_objective_sha256": "85d843c3d92c883b854add6b05c2bae20e18c18da44ce42d9f62ec7d9f8a89ae",
+        "candidate_objective_sha256": null,
+        "catalog_matches": {
+          "https://www.paloaltonetworks.com/services/education/palo-alto-networks-cloudsec-professional": {
+            "sources": [
+              "panw-cloud-security-professional-certification"
+            ],
+            "candidates": []
+          },
+          "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/cloudsec-professional-datasheet.pdf": {
+            "sources": [
+              "panw-cloud-security-professional-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "PANW-CLOUD-SECURITY-PROFESSIONAL",
+        "observation": "The former direct licensing topic redirects into the broader CSP onboarding portal; the landing content alone does not substantiate a specific SKU grant.",
+        "recommendation": "Keep feature entitlement verification tied to the actual tenant and an exact feature-level reference.",
+        "confidence": "Limited: publisher redirected to the parent CSP onboarding portal; SKU details were not independently reconfirmed.",
+        "urls": [
+          "https://docs-cortex.paloaltonetworks.com/r/Cortex-CLOUD/Cortex-Cloud-Posture-Management-Documentation/Understand-CSP-onboarding-tiers-and-licensing?contentId=Pgg5HMfhT2f1MKpUnTKXHw"
+        ],
+        "source_ids": [
+          "panw-cortex-cloud-csp-onboarding-tiers"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "PANW-CLOUD-SECURITY-PROFESSIONAL",
+        "observation": "The credential recommends its datasheet and optional digital training. Exact module listing was inaccessible without the portal.",
+        "urls": [
+          "https://learn.paloaltonetworks.com/learn",
+          "https://www.paloaltonetworks.com/services/education/palo-alto-networks-cloudsec-professional"
+        ],
+        "linked_portal": "https://learn.paloaltonetworks.com/learn",
+        "source_id": "panw-learning-center",
+        "resource": "Palo Alto Networks Learning Center",
+        "access_model": "free-account",
+        "time_basis": "About 30 minutes for planning, library estimate.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "manual-review",
+      "accepted_on_start": "85d843c3d92c883b854add6b05c2bae20e18c18da44ce42d9f62ec7d9f8a89ae",
+      "candidate": null
+    },
+    {
+      "code": "PANW-CLOUD-SECURITY-ENGINEER",
+      "exam": {
+        "code": "PANW-CLOUD-SECURITY-ENGINEER",
+        "observation": "Manual recovery of 5-page JULY 2026 datasheet found all 46 original numeric task IDs. Domain weights in order: 12%, 16%, 22%, 18%, 16%, 16%. Paraphrased descriptions limit exact string comparison. Objective monitor reported: ValueError: Could not find Palo Alto Networks certification objectives",
+        "urls": [
+          "https://www.paloaltonetworks.com/services/education/palo-alto-networks-cloudsec-engineer",
+          "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/palo-alto-networks-cloudsec-engineer.pdf"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Keep PDF scope; the HTML-only monitor failure does not signal a changed exam.",
+        "monitor": "manual-review",
+        "accepted_objective_sha256": "8a226a5c7f86018cb4d6767ded061b772eeabe8c0bcff84e9fb4371970f8f0d1",
+        "candidate_objective_sha256": null,
+        "catalog_matches": {
+          "https://www.paloaltonetworks.com/services/education/palo-alto-networks-cloudsec-engineer": {
+            "sources": [
+              "panw-cloud-security-engineer-certification"
+            ],
+            "candidates": []
+          },
+          "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/palo-alto-networks-cloudsec-engineer.pdf": {
+            "sources": [
+              "panw-cloud-security-engineer-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "PANW-CLOUD-SECURITY-ENGINEER",
+        "observation": "Kubernetes labels its security checklist as a baseline with links to supporting controls; deployment policy must be validated independently.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://kubernetes.io/docs/concepts/security/security-checklist/"
+        ],
+        "source_ids": [
+          "panw-cloud-security-engineer-source-5"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "PANW-CLOUD-SECURITY-ENGINEER",
+        "observation": "The credential describes guardrails and end-to-end issue traceability and sends learners from the datasheet to the general learning portal.",
+        "urls": [
+          "https://www.paloaltonetworks.com/services/education/palo-alto-networks-cloudsec-engineer"
+        ],
+        "linked_portal": "https://learn.paloaltonetworks.com/learn",
+        "source_id": "panw-cloud-security-engineer-certification",
+        "resource": "PANW-CLOUD-SECURITY-ENGINEER credential prep listing",
+        "access_model": "public credential page; learning portal requires account",
+        "time_basis": "60–90 minutes to annotate the blueprint, library estimate.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "manual-review",
+      "accepted_on_start": "8a226a5c7f86018cb4d6767ded061b772eeabe8c0bcff84e9fb4371970f8f0d1",
+      "candidate": null
+    },
+    {
+      "code": "NCA-GENL",
+      "exam": {
+        "code": "NCA-GENL",
+        "observation": "Issuer retains exam-specific registration and weighted NCA-GENL preparation topics. Both monitored objective text and status matched accepted records.",
+        "urls": [
+          "https://www.nvidia.com/en-us/learn/certification/generative-ai-llm-associate/"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Retain current scope.",
+        "monitor": "unchanged",
+        "accepted_objective_sha256": "58fd36ca6afda349885c81062a5a802dc3c11fd8b09c1eeb21dc98b5bc4f2b9d",
+        "candidate_objective_sha256": "58fd36ca6afda349885c81062a5a802dc3c11fd8b09c1eeb21dc98b5bc4f2b9d",
+        "catalog_matches": {
+          "https://www.nvidia.com/en-us/learn/certification/generative-ai-llm-associate/": {
+            "sources": [
+              "nvidia-nca-genl-certification"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "NCA-GENL",
+        "observation": "NIM LLM/VLM 2.x packages one inference backend per image; the current overview names both vLLM and SGLang. Supported features depend on the model and engine.",
+        "recommendation": "Update the vLLM-only statement in the current practical-depth section to include SGLang and identify image-specific behavior.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.nvidia.com/nim/large-language-models/latest/about-nim-llm/overview.html"
+        ],
+        "source_ids": [
+          "nvidia-nim-llm-docs"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "NCA-GENL",
+        "observation": "NVIDIA’s DLI course shell exposes blank duration and price fields. The credential links recommendations and suggested reading.",
+        "urls": [
+          "https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-01+V1",
+          "https://www.nvidia.com/en-us/learn/certification/generative-ai-llm-associate/"
+        ],
+        "source_id": "nvidia-getting-started-deep-learning",
+        "resource": "Getting Started With Deep Learning",
+        "access_model": "paid",
+        "time_basis": "No current publisher runtime established for this route.",
+        "confidence": "Limited for the course interior.",
+        "recommendation": "Keep the course budget conditional on the current enrollment record."
+      },
+      "monitor_outcome": "unchanged",
+      "accepted_on_start": "58fd36ca6afda349885c81062a5a802dc3c11fd8b09c1eeb21dc98b5bc4f2b9d",
+      "candidate": "58fd36ca6afda349885c81062a5a802dc3c11fd8b09c1eeb21dc98b5bc4f2b9d"
+    },
+    {
+      "code": "NCA-AIIO",
+      "exam": {
+        "code": "NCA-AIIO",
+        "observation": "Public NVIDIA exam registration and three preparation groups remain visible: Essential AI Knowledge 38%, AI Infrastructure 40%, AI Operations 22%. 50 questions and 60 minutes. The adapter failed to parse these headings. Objective monitor reported: ValueError: Extracted NVIDIA preparation topics were incomplete",
+        "urls": [
+          "https://www.nvidia.com/en-us/learn/certification/ai-infrastructure-operations-associate/"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Retain the three-domain baseline, use manually recoverable source and limit future collection to preparation sections.",
+        "monitor": "error",
+        "accepted_objective_sha256": "99feae0bb9bd6c7ade80eddfb848aaddde0582ee7a739302e65411babb367ed7",
+        "candidate_objective_sha256": null,
+        "catalog_matches": {
+          "https://www.nvidia.com/en-us/learn/certification/ai-infrastructure-operations-associate/": {
+            "sources": [
+              "nvidia-nca-aiio-certification"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "NCA-AIIO",
+        "observation": "GPU time-slicing offers replicas with shared memory/fault domains. MIG delivers hardware-level memory and fault isolation.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/gpu-sharing.html"
+        ],
+        "source_ids": [
+          "nvidia-gpu-time-slicing"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "NCA-AIIO",
+        "observation": "The NCA-AIIO credential explicitly lists AI Infrastructure and Operations Fundamentals as recommended training. Enrollment details and exact course duration were not verified.",
+        "urls": [
+          "https://www.nvidia.com/en-us/training/academy/course-detail/?id=course:15139841",
+          "https://www.nvidia.com/en-us/learn/certification/ai-infrastructure-operations-associate/"
+        ],
+        "source_id": "nvidia-aiio-fundamentals",
+        "resource": "AI Infrastructure and Operations Fundamentals",
+        "access_model": "paid",
+        "time_basis": "No current publisher runtime established for this route.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use the exam page's recommendation to locate the current offering."
+      },
+      "monitor_outcome": "error",
+      "accepted_on_start": "99feae0bb9bd6c7ade80eddfb848aaddde0582ee7a739302e65411babb367ed7",
+      "candidate": null
+    },
+    {
+      "code": "NCP-AIO",
+      "exam": {
+        "code": "NCP-AIO",
+        "observation": "Issuer lists installation/deployment 31%, administration 23%, workload management 23%, troubleshooting/optimization 23%. 30 questions plus three hands-on labs in 120 minutes; each section contributes 50% of score. Weights match retained baseline. Heading under the fourth group repeats Install and Deploy but parent heading identifies troubleshooting. Objective monitor reported: ValueError: Could not find NVIDIA exam blueprint",
+        "urls": [
+          "https://www.nvidia.com/en-us/learn/certification/ai-operations-professional/"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Preserve current scope; separate topic weights from section scoring.",
+        "monitor": "error",
+        "accepted_objective_sha256": "3d4312635eed1b9a05823d40d95a8a8e75dd8852e7b971bee7a799b301c86abf",
+        "candidate_objective_sha256": null,
+        "catalog_matches": {
+          "https://www.nvidia.com/en-us/learn/certification/ai-operations-professional/": {
+            "sources": [
+              "nvidia-ncp-aio-certification"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "NCP-AIO",
+        "observation": "Kubernetes accepts a GPU limit without a separate request, or equal limits and requests. A GPU request alone is unsupported.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://kubernetes.io/docs/tasks/manage-gpus/scheduling-gpus/"
+        ],
+        "source_ids": [
+          "kubernetes-schedule-gpus"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "NCP-AIO",
+        "observation": "The registered Professional training outline URL now returns the general NVIDIA AI/HPC training catalog instead of a dedicated outline. The credential still publishes topic-specific optional training/reading.",
+        "urls": [
+          "https://academy.nvidia.com/en/wp-content/uploads/2026/01/AI-Operations-Outline-2026.pdf",
+          "https://www.nvidia.com/en-us/learn/certification/ai-operations-professional/"
+        ],
+        "source_id": "nvidia-ai-operations-professional-training",
+        "resource": "AI Operations — Professional Training Outline",
+        "access_model": "public",
+        "time_basis": "No current publisher runtime established for this route.",
+        "confidence": "High for route drift, limited for exact class duration.",
+        "recommendation": "Start from the current credential page; do not advertise historical 24-hour timing as current."
+      },
+      "monitor_outcome": "error",
+      "accepted_on_start": "3d4312635eed1b9a05823d40d95a8a8e75dd8852e7b971bee7a799b301c86abf",
+      "candidate": null
+    }
+  ],
+  "review_inputs": [
+    {
+      "code": "PANW-XSIAM-ANALYST",
+      "guide": "guides/PANW-XSIAM-ANALYST-palo-alto-networks-xsiam-analyst.md",
+      "guide_sha256_lf": "891c32c4870dd426a0f185ed802dae3c25c7170bdd30c550cc599c4d8f66475b",
+      "objective": "data/objective-snapshots/panw-xsiam-analyst-official-objectives.txt",
+      "objective_sha256": "c1f175c79813c8b994e1a1d61270ef393a4162a9e9b0f674399d5b7969c80137"
+    },
+    {
+      "code": "PANW-XDR-ANALYST",
+      "guide": "guides/PANW-XDR-ANALYST-palo-alto-networks-xdr-analyst.md",
+      "guide_sha256_lf": "a545d224b36bcf5f43b19f8ac50a39c9297fe741507a531de5e056d8a816e5eb",
+      "objective": "data/objective-snapshots/panw-xdr-analyst-official-objectives.txt",
+      "objective_sha256": "3c06e6862b0b7301795c65038b2313ba160aea3d244bef736cb252585ee42f44"
+    },
+    {
+      "code": "PANW-XSIAM-ENGINEER",
+      "guide": "guides/PANW-XSIAM-ENGINEER-palo-alto-networks-xsiam-engineer.md",
+      "guide_sha256_lf": "d0efe5333b23bc555f911d53bb66853478c1f21e0b67a6e205fcc4246f089c8e",
+      "objective": "data/objective-snapshots/panw-xsiam-engineer-official-objectives.txt",
+      "objective_sha256": "01fcfc3a45ecdf45cdd41d9dfa6e33f6d30360991d2be20807fe2d9fcf6130ca"
+    },
+    {
+      "code": "PANW-XDR-ENGINEER",
+      "guide": "guides/PANW-XDR-ENGINEER-palo-alto-networks-xdr-engineer.md",
+      "guide_sha256_lf": "31a4253490414cf5fba17757b563f1f082cb2ad30d6b8d95e7e52b6d1515fa58",
+      "objective": "data/objective-snapshots/panw-xdr-engineer-official-objectives.txt",
+      "objective_sha256": "12d92e0024c93b533cecb01a55b53e8e5c667ec75b2fbbeca2db183b75451a26"
+    },
+    {
+      "code": "PANW-XSOAR-ENGINEER",
+      "guide": "guides/PANW-XSOAR-ENGINEER-palo-alto-networks-xsoar-engineer.md",
+      "guide_sha256_lf": "8953ccfec17c0058a71d257e5fe5cb7ce98ce2bed06a194b3f8ce7ff3d1d84eb",
+      "objective": "data/objective-snapshots/panw-xsoar-engineer-official-objectives.txt",
+      "objective_sha256": "43a17a64086c63ac3a769b6279b2c31cb3eec4e85f69fe62f8f88dae4a8c504c"
+    },
+    {
+      "code": "PANW-SECURITY-OPERATIONS-ARCHITECT",
+      "guide": "guides/PANW-SECURITY-OPERATIONS-ARCHITECT-palo-alto-networks-security-operations-architect.md",
+      "guide_sha256_lf": "954b64e9eb6d5ac8287b8ef8137b55c2e8653a9bc84ec9a64a358f83c896c5a0",
+      "objective": "data/objective-snapshots/panw-security-operations-architect-official-objectives.txt",
+      "objective_sha256": "1b4c3dc91c145dd25409e6ddef72d2580f6b964f3b1dd6dab4136e728788c4e5"
+    },
+    {
+      "code": "PANW-CLOUD-SECURITY-PROFESSIONAL",
+      "guide": "guides/PANW-CLOUD-SECURITY-PROFESSIONAL-palo-alto-networks-cloud-security-professional.md",
+      "guide_sha256_lf": "d0c2e1f86b6c45115a55f68455f3f28d612a09164e252527612619668c962973",
+      "objective": "data/objective-snapshots/panw-cloud-security-professional-official-objectives.txt",
+      "objective_sha256": "85d843c3d92c883b854add6b05c2bae20e18c18da44ce42d9f62ec7d9f8a89ae"
+    },
+    {
+      "code": "PANW-CLOUD-SECURITY-ENGINEER",
+      "guide": "guides/PANW-CLOUD-SECURITY-ENGINEER-palo-alto-networks-cloud-security-engineer.md",
+      "guide_sha256_lf": "ae005f8572a5b7c87216250cc6ac3429945bade15a74ead0a25ce22ff29c9535",
+      "objective": "data/objective-snapshots/panw-cloud-security-engineer-official-objectives.txt",
+      "objective_sha256": "8a226a5c7f86018cb4d6767ded061b772eeabe8c0bcff84e9fb4371970f8f0d1"
+    },
+    {
+      "code": "NCA-GENL",
+      "guide": "guides/NCA-GENL-nvidia-generative-ai-llms-associate.md",
+      "guide_sha256_lf": "293603913ec36021da89de77ba8b348e950c1e2b19c7a080eccee2d3a7735b7e",
+      "objective": "data/objective-snapshots/nca-genl-official-objectives.txt",
+      "objective_sha256": "58fd36ca6afda349885c81062a5a802dc3c11fd8b09c1eeb21dc98b5bc4f2b9d"
+    },
+    {
+      "code": "NCA-AIIO",
+      "guide": "guides/NCA-AIIO-nvidia-ai-infrastructure-operations-associate.md",
+      "guide_sha256_lf": "498e9ea1aa791c4e50fb5ca90a4ace2e568d0137bfde30802ee1e84dd842bf53",
+      "objective": "data/objective-snapshots/nca-aiio-official-objectives.txt",
+      "objective_sha256": "99feae0bb9bd6c7ade80eddfb848aaddde0582ee7a739302e65411babb367ed7"
+    },
+    {
+      "code": "NCP-AIO",
+      "guide": "guides/NCP-AIO-nvidia-ai-operations-professional.md",
+      "guide_sha256_lf": "ae54ecd3eb36feba4f557d28b4ffcb0584c633d5c4170d212aa3c995f3b5bea7",
+      "objective": "data/objective-snapshots/ncp-aio-official-objectives.txt",
+      "objective_sha256": "3d4312635eed1b9a05823d40d95a8a8e75dd8852e7b971bee7a799b301c86abf"
+    }
+  ],
+  "independent_review": {
+    "method": "Fresh-context read-only AI review of changed content and source evidence",
+    "rubric": "docs/AI-AUDIT.md, version 2",
+    "reviewed_tree": "0d07c6f051908a912f1b24991f712852cd36629b",
+    "summary": "All eleven guide and objective hash pairs match. The current NVIDIA NIM overview confirms one inference engine per image and the two named engines. The NCP-AIO credential page confirms 30 multiple-choice questions and three exercises in a single 120-minute exam with equal section weighting. Palo Alto PDF comparison limitations are labeled. Targeted change/evidence review only.",
+    "findings": [],
+    "validation": [
+      "unit tests",
+      "repository validation",
+      "reviewed learning resource check",
+      "site preparation",
+      "strict MkDocs build",
+      "generated site validation"
+    ]
+  }
+}
