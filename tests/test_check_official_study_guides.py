@@ -17,6 +17,35 @@ assert SPEC.loader is not None
 SPEC.loader.exec_module(monitor)
 
 
+def hashicorp_review_html(heading: str, terraform: bool) -> str:
+    # The current site puts the product comparison before the objective table.
+    comparison = """
+      <h2>Content differences between the 003 and 004 exams</h2>
+      <ul><li>4f: comparison text, not an objective row</li>
+          <li>Tests on Terraform version 1.12</li></ul>
+      <h2>Exam content list</h2>
+    """ if terraform else ""
+    ids = ["1", "1a", "1b", "1c", "1d", "2", "2a", "2b", "2c", "2d"]
+    rows = "".join(
+        f"<tr><td><strong>{item}</strong></td>"
+        f"<td>Task <code>{item}</code> &amp; context</td>"
+        f"<td><a href='/docs'>Extra reading</a><br/><a href='/other'>Another</a></td>"
+        f"<td><a href='/learn'>Practice tutorial</a></td></tr>"
+        for item in ids
+    )
+    return f"""<html><body><nav>Exam content list</nav><main>
+      <header><h1>{heading}</h1></header>
+      <p>Introductory material and a sample <code>1a</code> identifier.</p>
+      {comparison}
+      <table><tr><th>Metadata</th></tr><tr><td>Ignore me</td></tr></table>
+      <div><table><thead><tr><th></th><th><strong>Exam objective and sub-topics</strong></th>
+        <th>Documentation</th><th>Tutorials</th></tr></thead>
+        <tbody>{rows}</tbody></table></div>
+      <p>* API was added to objective 5g in 2025.</p>
+      <h2>Continue studying</h2><p>This exam will retire on December 1, 2030.</p>
+      </main><footer>{heading}</footer></body></html>"""
+
+
 class ObjectiveExtractionTests(unittest.TestCase):
     def test_fetch_rejects_unsafe_url_before_opening(self) -> None:
         with patch.object(monitor, "open_public_https") as opener:
@@ -464,6 +493,32 @@ class ObjectiveExtractionTests(unittest.TestCase):
         self.assertTrue(
             any("December 1, 2027" in item for item in status["upcoming_announcements"])
         )
+
+    def test_extracts_hashicorp_associate_study_tables(self) -> None:
+        for heading, terraform in [
+            ("Exam Content List - Terraform Associate 004", True),
+            ("Exam content list - Vault Associate (003)", False),
+        ]:
+            with self.subTest(heading=heading):
+                body = hashicorp_review_html(heading, terraform)
+                objectives = monitor.extract_hashicorp_objectives(body)
+                status = monitor.extract_hashicorp_status(body)
+                self.assertIn("1a\nTask 1a & context\n", objectives)
+                self.assertTrue(objectives.endswith("2d\nTask 2d & context\n"))
+                for unwanted in ("Extra reading", "Practice tutorial", "comparison text", "Ignore me", "API was added", "Continue studying"):
+                    self.assertNotIn(unwanted, objectives)
+                self.assertEqual(["Terraform Associate (004) - Product version tested: Terraform 1.12"] if terraform else [heading], status["skills_versions"])
+                self.assertEqual([], status["upcoming_announcements"])
+                broken = body.replace("<td><strong>2d</strong></td>", "<td><strong>2c</strong></td>")
+                with self.assertRaisesRegex(ValueError, "duplicate"):
+                    monitor.extract_hashicorp_objectives(broken)
+                with self.assertRaises(ValueError):
+                    monitor.extract_hashicorp_objectives(body.replace("<th>Tutorials</th>", "<th>Unexpected header</th>"))
+
+    def test_hashicorp_study_page_requires_current_terraform_version(self) -> None:
+        body = hashicorp_review_html("Exam Content List - Terraform Associate 004", True)
+        with self.assertRaisesRegex(ValueError, "product version"):
+            monitor.extract_hashicorp_status(body.replace("Tests on Terraform version 1.12", "Old version 1.12"))
 
     def test_extracts_hashicorp_terraform_associate_objectives(self) -> None:
         rows = "".join(

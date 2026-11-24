@@ -65,7 +65,7 @@ Cloud does not remove capacity, security, or financial planning. It replaces slo
 
 ### Well-Architected is a tradeoff framework
 
-The [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/the-pillars-of-the-framework.html) organizes design reviews around six pillars: operational excellence, security, reliability, performance efficiency, cost optimization, and sustainability.
+The [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/definitions.html) organizes design reviews around operational excellence, security, reliability, performance efficiency, cost optimization, and sustainability.
 
 | Requirement | Relevant pillar question |
 |---|---|
@@ -556,7 +556,7 @@ For an AWS disruption, vulnerable package, suspicious API call, high bill, and a
 - [Cloud Technology and Services domain](https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02-domain3.html)
 - [Billing, Pricing, and Support domain](https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02-domain4.html)
 - [CLF-C02 in-scope services](https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/clf-02-in-scope-services.html)
-- [AWS Well-Architected pillars](https://docs.aws.amazon.com/wellarchitected/latest/framework/the-pillars-of-the-framework.html)
+- [AWS Well-Architected Framework pillar definitions](https://docs.aws.amazon.com/wellarchitected/latest/framework/definitions.html)
 - [AWS shared responsibility model](https://docs.aws.amazon.com/whitepapers/latest/aws-risk-and-compliance/shared-responsibility-model.html)
 - [IAM security best practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
 - [AWS global infrastructure](https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-regions-availability-zones.html)

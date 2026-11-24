@@ -1,0 +1,123 @@
+{
+  "date": "2026-11-23",
+  "scope": "Targeted issuer, intake and resource checks. No live bookings, course sessions or product labs.",
+  "exams": [
+    {
+      "code": "CLF-C02",
+      "observation": "The guide now links to the AWS definitions page for the six Well-Architected pillars.",
+      "urls": [
+        "https://docs.aws.amazon.com/wellarchitected/latest/framework/definitions.html"
+      ]
+    },
+    {
+      "code": "SOA-C03",
+      "observation": "The replacement training page identifies SOA-C03. The guide distinguishes its optional practice resources from the official objectives.",
+      "urls": [
+        "https://www.whizlabs.com/aws-sysops-administrator-associate/"
+      ]
+    },
+    {
+      "code": "TERRAFORM-ASSOCIATE-004",
+      "targeted_monitor": {
+        "url": "https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-review-004",
+        "previous_sha256": "41390d0d2fbb8b1cfbfb7349ada41f4cf13dc65815827b802ad082fd2c1bf53b",
+        "current_sha256": "41390d0d2fbb8b1cfbfb7349ada41f4cf13dc65815827b802ad082fd2c1bf53b",
+        "previous_status_sha256": "2fe55b8488a5597dc673b720b3eee92a00f913048890c858e6c9469ef94548af",
+        "current_status_sha256": "2fe55b8488a5597dc673b720b3eee92a00f913048890c858e6c9469ef94548af",
+        "status": "unchanged",
+        "objectives_changed": false,
+        "status_changed": false
+      },
+      "observation": "All 45 objective ID and label pairs match the accepted snapshot, in order; candidate bytes and official-status fields match exactly.",
+      "urls": [
+        "https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-review-004"
+      ]
+    },
+    {
+      "code": "VAULT-ASSOCIATE-003",
+      "targeted_monitor": {
+        "url": "https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-review-003",
+        "previous_sha256": "2322b0085fb020f4cd83226d6c3e660412ae71e6de790e3e5716e17504818f0a",
+        "current_sha256": "3e1ade047b7229dfb119a424e0d70653b0618219c5878a4d2d39feec51a18a9c",
+        "previous_status_sha256": "3204260206fbc51e8aeeeaafd46570e88ef3524709d6e6ea8ca09739339c316e",
+        "current_status_sha256": "3204260206fbc51e8aeeeaafd46570e88ef3524709d6e6ea8ca09739339c316e",
+        "status": "changed",
+        "objectives_changed": true,
+        "status_changed": false
+      },
+      "observation": "All 49 objective ID and label pairs match the accepted snapshot, in order. The legacy snapshot also held volatile resource column labels and link titles. The proposed projection excludes those, so a format-only migration was reviewed for Vault. Its two status fields match.",
+      "urls": [
+        "https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-review-003"
+      ]
+    },
+    {
+      "code": "TERRAFORM-INFRASTRUCTURE-ENGINEER-PROFESSIONAL-002",
+      "observation": "Public credential page names version 002, Terraform 1.15, multiple-choice format and a registration route. Its recertification section distinguishes passing this Professional exam from earning a new Advanced badge with an AWS or Azure Terraform Authoring and Operations Advanced exam. Associate knowledge is its recommended preparation.",
+      "urls": [
+        "https://developer.hashicorp.com/certifications/terraform-infrastructure-engineer-professional",
+        "https://developer.hashicorp.com/terraform/tutorials/certification-infra-professional"
+      ]
+    },
+    {
+      "code": "SAP-C03",
+      "observation": "The English SAP-C03 standard exam launched 2026-11-17. The inventory links directly to the versioned exam guide.",
+      "urls": [
+        "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-professional-03/solutions-architect-professional-03.html",
+        "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/"
+      ]
+    },
+    {
+      "code": "DVA-C03",
+      "observation": "AWS announced December 1, 2026 for the DVA-C03 transition. Confirm the booked code and language before scheduling. The inventory links directly to the versioned exam guide.",
+      "urls": [
+        "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-03/developer-associate-03.html",
+        "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/"
+      ]
+    }
+  ],
+  "review_inputs": [
+    {
+      "code": "CLF-C02",
+      "guide": "guides/CLF-C02-aws-certified-cloud-practitioner.md",
+      "guide_sha256_lf": "f7d7c93d3b02305bd9b600832ae5bdbed24aede95dbaa13997e311214e82b305",
+      "objective": "data/objective-snapshots/clf-c02-official-objectives.txt",
+      "objective_sha256": "f7672b5ced01847d85eb6909ef171881785be1263868286068422231d7b7a5da"
+    },
+    {
+      "code": "SOA-C03",
+      "guide": "guides/SOA-C03-aws-certified-cloudops-engineer-associate.md",
+      "guide_sha256_lf": "ce42f8a8a3a3d9355dea17c41e2af97354ac9904798ad93c9449fe3cfb01887f",
+      "objective": "data/objective-snapshots/soa-c03-official-objectives.txt",
+      "objective_sha256": "0ad821a84709cd5d39eb724aa1b3c040d14f67e4e705ac3fdc7f129021cec466"
+    },
+    {
+      "code": "TERRAFORM-ASSOCIATE-004",
+      "guide": "guides/TERRAFORM-ASSOCIATE-004-hashicorp-terraform-associate.md",
+      "guide_sha256_lf": "658636f8f273e1cc80c670a67b0ec73fb44d80c2381fbaf922fd1cebd53d22ba",
+      "objective": "data/objective-snapshots/terraform-associate-004-official-objectives.txt",
+      "objective_sha256": "41390d0d2fbb8b1cfbfb7349ada41f4cf13dc65815827b802ad082fd2c1bf53b"
+    },
+    {
+      "code": "VAULT-ASSOCIATE-003",
+      "guide": "guides/VAULT-ASSOCIATE-003-hashicorp-vault-associate.md",
+      "guide_sha256_lf": "fbf7b01bb5b4d0173327eb4ef4c7df34121a2c074d62f840d41d482872baf993",
+      "objective": "data/objective-snapshots/vault-associate-003-official-objectives.txt",
+      "objective_sha256": "3e1ade047b7229dfb119a424e0d70653b0618219c5878a4d2d39feec51a18a9c"
+    }
+  ],
+  "independent_review": {
+    "method": "Fresh-context read-only AI review of changed content and source evidence",
+    "rubric": "docs/AI-AUDIT.md, version 2",
+    "reviewed_tree": "8f424338be4da920b746350ac72d5012a9d14540",
+    "summary": "Parsed both issuer HTML study tables independently. In order, every Terraform row (8 groups and 37 detailed items) and every Vault row (9 groups and 40 detailed items) matches the staged ID and label. The Vault archive is byte-identical to its previous objective, and prior review/audit path changes retain that SHA-256. All four guide/objective bindings and five focused HashiCorp tests passed. Targeted code/change/evidence review only.",
+    "findings": [],
+    "validation": [
+      "unit tests",
+      "repository validation",
+      "reviewed learning resource check",
+      "site preparation",
+      "strict MkDocs build",
+      "generated site validation"
+    ]
+  }
+}

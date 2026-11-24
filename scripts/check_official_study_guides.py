@@ -254,10 +254,122 @@ def extract_exam_status(page_html: str) -> dict[str, list[str]]:
     }
 
 
+class HashiCorpStudyTable(HTMLParser):
+    """Read the first two fields of numbered study objectives within a main element."""
+
+    HEADER = ["", "Exam objective and sub-topics", "Documentation", "Tutorials"]
+
+    def __init__(self) -> None:
+        super().__init__(convert_charrefs=True)
+        self.in_main = False
+        self.heading_parts: list[str] | None = None
+        self.heading = ""
+        self.table: list[list[str]] | None = None
+        self.row: list[str] = []
+        self.cell: list[str] | None = None
+        self.objective_tables: list[list[list[str]]] = []
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if tag == "main":
+            self.in_main = True
+        if not self.in_main:
+            return
+        if tag == "h1":
+            self.heading_parts = []
+        elif tag == "table":
+            self.table = []
+        elif self.table is not None:
+            if tag == "tr":
+                self.row = []
+            elif tag in {"td", "th"}:
+                self.cell = []
+            elif tag == "br" and self.cell is not None:
+                self.cell.append(" ")
+
+    def handle_data(self, value: str) -> None:
+        if self.heading_parts is not None:
+            self.heading_parts.append(value)
+        if self.cell is not None:
+            self.cell.append(value)
+
+    def handle_endtag(self, tag: str) -> None:
+        if not self.in_main:
+            return
+        if tag == "h1" and self.heading_parts is not None:
+            self.heading = " ".join("".join(self.heading_parts).split())
+            self.heading_parts = None
+        elif tag in {"td", "th"} and self.cell is not None:
+            self.row.append(" ".join("".join(self.cell).split()))
+            self.cell = None
+        elif tag == "tr" and self.table is not None:
+            self.table.append(self.row)
+        elif tag == "table" and self.table is not None:
+            if self.table and self.table[0] == self.HEADER:
+                self.objective_tables.append(self.table[1:])
+            self.table = None
+        elif tag == "main":
+            self.in_main = False
+
+
+def hashicorp_associate_study_page(
+    page_html: str, lines: list[str]
+) -> tuple[list[str], str, list[str]] | None:
+    parser = HashiCorpStudyTable()
+    parser.feed(page_html)
+    parser.close()
+    terraform = parser.heading == "Exam Content List - Terraform Associate 004"
+    vault = parser.heading == "Exam content list - Vault Associate (003)"
+    if not (terraform or vault):
+        return None
+    if not parser.objective_tables:
+        # Vault's older standalone guide uses the same h1 and an Objective ID header.
+        # Its existing extractor still recognizes the archived representation.
+        if vault and find_exact(lines, "Objective ID") is not None:
+            return None
+        raise ValueError("Missing numbered HashiCorp study table")
+    if len(parser.objective_tables) != 1:
+        raise ValueError("Ambiguous numbered HashiCorp study tables")
+
+    title = find_exact(lines, parser.heading)
+    if title is None:
+        raise ValueError("Could not locate the HashiCorp study-page title")
+    end = find_exact(lines, "Continue studying", title + 1)
+    if end is None:
+        raise ValueError("Could not find the end of the HashiCorp study page")
+    section = lines[title:end]
+    if terraform:
+        matches = [m.group(1) for line in section
+                   if (m := re.fullmatch(r"Tests on Terraform version (\d+\.\d+(?:\.\d+)?)", line))]
+        if len(matches) != 1:
+            raise ValueError("Expected one tested Terraform product version")
+        label = f"Product version tested: Terraform {matches[0]}"
+        prefix = [HASHICORP_ASSOCIATE_TITLE, label, "Exam objectives"]
+        version = f"{HASHICORP_ASSOCIATE_TITLE} - {label}"
+    else:
+        prefix = [parser.heading, "Objective ID", "Exam objective"]
+        version = parser.heading
+
+    rows = parser.objective_tables[0]
+    if len(rows) < 10:
+        raise ValueError("Extracted HashiCorp objective table was unexpectedly short")
+    seen: set[str] = set()
+    for fields in rows:
+        if (len(fields) != 4 or not re.fullmatch(r"[1-9]\d*[a-z]?", fields[0])
+                or not fields[1] or fields[0] in seen):
+            raise ValueError("Invalid or duplicate numbered HashiCorp objective")
+        seen.add(fields[0])
+        prefix.extend(fields[:2])
+    return prefix, version, section
+
+
 def extract_hashicorp_objectives(page_html: str) -> str:
     """Extract a supported HashiCorp certification objective table."""
 
     lines = normalize_lines(visible_text(page_html))
+    study_page = hashicorp_associate_study_page(page_html, lines)
+    if study_page is not None:
+        objective_lines, _, _ = study_page
+        return "\n".join(objective_lines) + "\n"
     title = find_first(lines, (HASHICORP_ASSOCIATE_TITLE,))
     if title is not None:
         start = find_exact(lines, "Exam objectives", title + 1)
@@ -304,7 +416,10 @@ def extract_hashicorp_status(page_html: str) -> dict[str, list[str]]:
 
     lines = normalize_lines(visible_text(page_html))
     title = find_first(lines, (HASHICORP_ASSOCIATE_TITLE,))
-    if title is not None:
+    study_page = hashicorp_associate_study_page(page_html, lines)
+    if study_page is not None:
+        _, version_label, section = study_page
+    elif title is not None:
         product_version = find_first(lines, ("Product version tested:",), title + 1)
         if product_version is None:
             raise ValueError("Could not find the tested Terraform version")

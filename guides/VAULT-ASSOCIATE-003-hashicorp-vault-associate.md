@@ -5,17 +5,19 @@ official_blueprint: https://developer.hashicorp.com/vault/tutorials/associate-ce
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: source-validated
-last_verified: 2026-10-28
+review_status: review-required
+last_verified: 2026-11-23
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-10-28
+upcoming_change_checked: 2026-11-23
 ---
 
 # HashiCorp Certified: Vault Associate (003) Study Guide
 
+**Source review (November 23, 2026).** The issuer table contains the same 49 numbered objectives. The monitor now records each ID and objective independently of the suggested documentation and tutorials. A complete source validation of this revision is pending. [Sources and study resources](../docs/research/2026-11-23-refresh-21.md#vault-associate-003)
+
 **Exam selection (November 23, 2026).** The credential page exposes the numbered 003 objectives and specifies Vault 1.19. If a tutorial link opens a general collection, return to that credential page for the exam contract. [Sources and study resources](../docs/research/2026-11-23-refresh-05.md#vault-associate-003)
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed on October 28, 2026 across all 40 detailed objectives; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#vault-associate-003-coverage-record). The [official Vault Associate (003) content list](https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-review-003) is authoritative.
+> **Independent AI-assisted resource — HISTORICAL SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed on October 28, 2026 across all 40 detailed objectives; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#vault-associate-003-coverage-record). The [official Vault Associate (003) content list](https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-review-003) is authoritative.
 
 **Current baseline:** Vault Associate (003), 40 detailed objectives; reviewed October 28, 2026. **VERIFY CURRENT — version discrepancy:** the [certification page](https://developer.hashicorp.com/certifications/vault-associate) says **Vault 1.19**, while the learning path still says **1.16**<br>
 **Upcoming blueprint change:** No future update or retirement announcement was found in the official certification material as of October 28, 2026.<br>
@@ -50,7 +52,7 @@ Choose a route:
 - **Application developer:** Concentrate on auth methods, policy paths/capabilities, tokens, leases, KV/database/transit, response wrapping, and workload delivery.
 - **Operator:** Concentrate on seal/unseal, storage, HCP versus self-managed responsibilities, replication, and client integration; then continue to the Vault Operations Advanced guide.
 
-HashiCorp's [official learning path](https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-study-003) still specifies 1.16 and links versioned 1.16 material, while the credential overview specifies 1.19. Use the current published objectives, check version-specific behavior and confirm the tested version before scheduling. The [deep-review report](../docs/research/2026-09-28-vault-associate-003-deep-review.md) preserves this unresolved discrepancy; the library will recheck October 5. Current Vault 2.x releases are separate from either stated exam baseline.
+HashiCorp's [official learning path](https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-study-003) still specifies 1.16 and links versioned 1.16 material, while the credential overview specifies 1.19. Use the current published objectives, check version-specific behavior and confirm the tested version before scheduling. The [deep-review report](../docs/research/2026-09-28-vault-associate-003-deep-review.md) preserves this unresolved discrepancy; this November check confirms the credential page lists 1.19. Current Vault 2.x releases are separate from either stated exam baseline.
 
 > **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
 
