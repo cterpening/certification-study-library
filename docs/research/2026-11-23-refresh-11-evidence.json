@@ -1,0 +1,634 @@
+{
+  "date": "2026-11-23",
+  "scope": "AI research into official objectives, selected technical references and learning resources. Individual exam delivery, private course contents and live product testing were outside this review.",
+  "exams": [
+    {
+      "code": "PANW-CYBERSECURITY-APPRENTICE",
+      "exam": {
+        "code": "PANW-CYBERSECURITY-APPRENTICE",
+        "observation": "Opening Download datasheet on the credential resolves to the full five-page May 2026 blueprint. It publishes 7 weighted domains and numbered tasks; the HTML error does not block version-specific study. First domains: cybersecurity 16%, networking fundamentals 16%, network security 14%, endpoint security 10%. Objective monitor reported: ValueError: Palo Alto Networks objective statement was unexpectedly short",
+        "urls": [
+          "https://www.paloaltonetworks.com/services/education/panw-cybersecurity-apprentice",
+          "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/apprentice-datasheet.pdf"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Use the static datasheet for exam scope. Continue to distinguish its blueprint date from the source URL title.",
+        "monitor": "manual-review",
+        "accepted_objective_sha256": "fbd3b8491d4f5a04b8592653652089dcb6e1fe7f7e1948a974dd37469f1673b7",
+        "candidate_objective_sha256": null,
+        "catalog_matches": {
+          "https://www.paloaltonetworks.com/services/education/panw-cybersecurity-apprentice": {
+            "sources": [
+              "panw-cybersecurity-apprentice-certification"
+            ],
+            "candidates": []
+          },
+          "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/apprentice-datasheet.pdf": {
+            "sources": [
+              "panw-cybersecurity-apprentice-datasheet"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "PANW-CYBERSECURITY-APPRENTICE",
+        "observation": "Security policy uses the first matching rule. Session logging is configurable per rule.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.paloaltonetworks.com/network-security/security-policy/administration/security-rules"
+        ],
+        "source_ids": [
+          "panw-security-rules"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "PANW-CYBERSECURITY-APPRENTICE",
+        "observation": "The academy offers free online foundational cybersecurity courses; the credential recommends selecting Digital Learning material after reviewing the exam datasheet.",
+        "urls": [
+          "https://www.paloaltonetworks.com/services/education/academy",
+          "https://www.paloaltonetworks.com/services/education/panw-cybersecurity-apprentice"
+        ],
+        "linked_portal": "https://learn.paloaltonetworks.com/learn",
+        "source_id": "panw-cybersecurity-academy",
+        "resource": "Palo Alto Networks Cybersecurity Academy",
+        "access_model": "public",
+        "time_basis": "No current publisher runtime established for this route.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "The credential’s path button opens the general learning portal."
+      },
+      "monitor_outcome": "manual-review",
+      "accepted_on_start": "fbd3b8491d4f5a04b8592653652089dcb6e1fe7f7e1948a974dd37469f1673b7",
+      "candidate": null
+    },
+    {
+      "code": "PANW-CYBERSECURITY-PRACTITIONER",
+      "exam": {
+        "code": "PANW-CYBERSECURITY-PRACTITIONER",
+        "observation": "The official five-page Practitioner datasheet is available. Local PDF extraction did not reproduce the numbered objectives; the failure does not establish retirement. Objective monitor reported: ValueError: Could not find Palo Alto Networks certification objectives",
+        "urls": [
+          "https://www.paloaltonetworks.com/services/education/panw-cybersecurity-practitioner",
+          "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/practitioner-datasheet.pdf"
+        ],
+        "confidence": "Issuer identity confirmed; exact full objective parity remains unverified.",
+        "recommendation": "Use the issuer credential and manually inspect the complete datasheet before replacing its baseline.",
+        "monitor": "manual-review",
+        "accepted_objective_sha256": "600eac4ecbdddea9b5ce0e0dba159accac70b13b677dbcfdeaa0e19926dcd34b",
+        "candidate_objective_sha256": null,
+        "catalog_matches": {
+          "https://www.paloaltonetworks.com/services/education/panw-cybersecurity-practitioner": {
+            "sources": [
+              "panw-cybersecurity-practitioner-certification"
+            ],
+            "candidates": []
+          },
+          "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/practitioner-datasheet.pdf": {
+            "sources": [
+              "panw-cybersecurity-practitioner-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "PANW-CYBERSECURITY-PRACTITIONER",
+        "observation": "XDR 5.x's case detail supports examining case evidence and choosing a response action with explicit parameters.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs-cortex.paloaltonetworks.com/r/Cortex-XDR/Cortex-XDR-5.x-Documentation/Detailed-View"
+        ],
+        "source_ids": [
+          "panw-cybersecurity-practitioner-source-4",
+          "panw-cortex-xdr-5x-case-detail"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "PANW-CYBERSECURITY-PRACTITIONER",
+        "observation": "The Practitioner credential recommends the datasheet and selected digital courses. Its path button points to the general portal; the public reader showed a loading shell.",
+        "urls": [
+          "https://learn.paloaltonetworks.com/learn",
+          "https://www.paloaltonetworks.com/services/education/panw-cybersecurity-practitioner"
+        ],
+        "linked_portal": "https://learn.paloaltonetworks.com/learn",
+        "source_id": "panw-learning-center",
+        "resource": "Palo Alto Networks Learning Center",
+        "access_model": "free-account",
+        "time_basis": "20–30 minutes to choose a path, editorial.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Sign in and search for the exact credential."
+      },
+      "monitor_outcome": "manual-review",
+      "accepted_on_start": "600eac4ecbdddea9b5ce0e0dba159accac70b13b677dbcfdeaa0e19926dcd34b",
+      "candidate": null
+    },
+    {
+      "code": "PANW-NETWORK-SECURITY-PROFESSIONAL",
+      "exam": {
+        "code": "PANW-NETWORK-SECURITY-PROFESSIONAL",
+        "observation": "Opened the 5-page issuer datasheet dated JUNE 2026. Its domain weights in order are 17%, 13%, 30%, 10%, 17%, 13%. All 22 retained numeric task IDs appear in the extracted PDF. Retained task descriptions use paraphrases; literal task-string completeness is not established. Objective monitor reported: ValueError: Could not find Palo Alto Networks certification objectives",
+        "urls": [
+          "https://www.paloaltonetworks.com/services/education/palo-alto-networks-netsec-professional",
+          "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/netsec-professional-datasheet.pdf"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Keep the manual PDF route and the existing scope unless a substantive difference is established.",
+        "monitor": "manual-review",
+        "accepted_objective_sha256": "682be74c10edf47fb23e61e21cb7544cf34fa962a9926b3b5265758bb66c6483",
+        "candidate_objective_sha256": null,
+        "catalog_matches": {
+          "https://www.paloaltonetworks.com/services/education/palo-alto-networks-netsec-professional": {
+            "sources": [
+              "panw-network-security-professional-certification"
+            ],
+            "candidates": []
+          },
+          "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/netsec-professional-datasheet.pdf": {
+            "sources": [
+              "panw-network-security-professional-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "PANW-NETWORK-SECURITY-PROFESSIONAL",
+        "observation": "The Prisma Access 6.2 notes tie ZTNA Connector private-application tagging to Strata Cloud Manager and the listed release.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.paloaltonetworks.com/prisma-access/new-features/by-version/prisma-access/6-2-preferred-innovation"
+        ],
+        "source_ids": [
+          "panw-prisma-access-62-new-features"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "PANW-NETWORK-SECURITY-PROFESSIONAL",
+        "observation": "The Professional credential links a generic digital-learning portal. First identify architecture and operations gaps using the exam datasheet.",
+        "urls": [
+          "https://learn.paloaltonetworks.com/learn",
+          "https://www.paloaltonetworks.com/services/education/palo-alto-networks-netsec-professional"
+        ],
+        "linked_portal": "https://learn.paloaltonetworks.com/learn",
+        "source_id": "panw-learning-center",
+        "resource": "Palo Alto Networks Learning Center",
+        "access_model": "free-account",
+        "time_basis": "No current publisher runtime established for this route.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Search by the complete credential name in the portal."
+      },
+      "monitor_outcome": "manual-review",
+      "accepted_on_start": "682be74c10edf47fb23e61e21cb7544cf34fa962a9926b3b5265758bb66c6483",
+      "candidate": null
+    },
+    {
+      "code": "PANW-NETWORK-SECURITY-ANALYST",
+      "exam": {
+        "code": "PANW-NETWORK-SECURITY-ANALYST",
+        "observation": "Opened the 3-page issuer datasheet dated AUGUST 2025. Its domain weights in order are 30%, 30%, 26%, 14%. All 21 retained numeric task IDs appear in the extracted PDF. Retained task descriptions use paraphrases; literal task-string completeness is not established. Objective monitor reported: ValueError: Could not find Palo Alto Networks certification objectives",
+        "urls": [
+          "https://www.paloaltonetworks.com/services/education/palo-alto-networks-netsec-analyst",
+          "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/netsec-analyst-datasheet.pdf"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Keep the manual PDF route and the existing scope unless a substantive difference is established.",
+        "monitor": "manual-review",
+        "accepted_objective_sha256": "10b40a968bc62f35505e71b5972b161cedebdc723bf0f12bd31a90942d657ece",
+        "candidate_objective_sha256": null,
+        "catalog_matches": {
+          "https://www.paloaltonetworks.com/services/education/palo-alto-networks-netsec-analyst": {
+            "sources": [
+              "panw-network-security-analyst-certification"
+            ],
+            "candidates": []
+          },
+          "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/netsec-analyst-datasheet.pdf": {
+            "sources": [
+              "panw-network-security-analyst-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "PANW-NETWORK-SECURITY-ANALYST",
+        "observation": "PAN-OS security and NAT rules match original IP addresses; security policy evaluates the post-NAT zone.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.paloaltonetworks.com/ngfw/networking/nat/nat-policy-rules"
+        ],
+        "source_ids": [
+          "panw-panos-nat-policy-rules"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "PANW-NETWORK-SECURITY-ANALYST",
+        "observation": "The Analyst path link goes to the general portal. The credential recommends its datasheet before assigning digital courses.",
+        "urls": [
+          "https://learn.paloaltonetworks.com/learn",
+          "https://www.paloaltonetworks.com/services/education/palo-alto-networks-netsec-analyst"
+        ],
+        "linked_portal": "https://learn.paloaltonetworks.com/learn",
+        "source_id": "panw-learning-center",
+        "resource": "Palo Alto Networks Learning Center",
+        "access_model": "free-account",
+        "time_basis": "About 30 minutes for initial planning, editorial.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Verify the matching path once signed in."
+      },
+      "monitor_outcome": "manual-review",
+      "accepted_on_start": "10b40a968bc62f35505e71b5972b161cedebdc723bf0f12bd31a90942d657ece",
+      "candidate": null
+    },
+    {
+      "code": "PANW-NGFW-ENGINEER",
+      "exam": {
+        "code": "PANW-NGFW-ENGINEER",
+        "observation": "Opened the 4-page issuer datasheet dated NOVEMBER 2025. Its domain weights in order are 40%, 40%, 20%. All 61 retained numeric task IDs appear in the extracted PDF. Retained task descriptions use paraphrases; literal task-string completeness is not established. Objective monitor reported: ValueError: Could not find Palo Alto Networks certification objectives",
+        "urls": [
+          "https://www.paloaltonetworks.com/services/education/palo-alto-networks-ngfw-engineer",
+          "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/ngfw-engineer-datasheet.pdf"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Keep the manual PDF route and the existing scope unless a substantive difference is established.",
+        "monitor": "manual-review",
+        "accepted_objective_sha256": "e6d1470d49b1d63602c5021bf347751e6b64443817cdda1e9700bd4a10486806",
+        "candidate_objective_sha256": null,
+        "catalog_matches": {
+          "https://www.paloaltonetworks.com/services/education/palo-alto-networks-ngfw-engineer": {
+            "sources": [
+              "panw-ngfw-engineer-certification"
+            ],
+            "candidates": []
+          },
+          "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/ngfw-engineer-datasheet.pdf": {
+            "sources": [
+              "panw-ngfw-engineer-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "PANW-NGFW-ENGINEER",
+        "observation": "PAN-OS 12.1 maintains a build-specific default-behavior change list for upgrade planning, including management SSH host-key behavior.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.paloaltonetworks.com/ngfw/release-notes/12-1/changes-to-default-behavior/changes-to-default-behavior-in-pan-os-12-1"
+        ],
+        "source_ids": [
+          "panw-panos-121-defaults"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "PANW-NGFW-ENGINEER",
+        "observation": "The instructor-led firewall course includes guided configuration, management and monitoring work in a lab.",
+        "urls": [
+          "https://www.paloaltonetworks.com/services/education/edu-210-firewall-essentials-configuration-and-management",
+          "https://www.paloaltonetworks.com/services/education/palo-alto-networks-ngfw-engineer"
+        ],
+        "linked_portal": "https://learn.paloaltonetworks.com/learn",
+        "source_id": "panw-edu-210-firewall-essentials",
+        "resource": "Firewall Essentials: Configuration and Management (EDU-210)",
+        "access_model": "paid",
+        "time_basis": "5 instructor-led days, publisher.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "manual-review",
+      "accepted_on_start": "e6d1470d49b1d63602c5021bf347751e6b64443817cdda1e9700bd4a10486806",
+      "candidate": null
+    },
+    {
+      "code": "PANW-SD-WAN-ENGINEER",
+      "exam": {
+        "code": "PANW-SD-WAN-ENGINEER",
+        "observation": "Opened the 4-page issuer datasheet dated AUGUST 2025. Its domain weights in order are 24%, 24%, 18%, 14%, 20%. All 36 retained numeric task IDs appear in the extracted PDF. All numbered task strings match after normalization. Objective monitor reported: ValueError: Could not find Palo Alto Networks certification objectives",
+        "urls": [
+          "https://www.paloaltonetworks.com/services/education/palo-alto-networks-sd-wan-engineer",
+          "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/sd-wan-engineer-datasheet.pdf"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Keep the manual PDF route and the existing scope unless a substantive difference is established.",
+        "monitor": "manual-review",
+        "accepted_objective_sha256": "4975bd40c58863097d6c0a49ff6a56601f4351ce8b0f44c0b6b1e41a5a1bf123",
+        "candidate_objective_sha256": null,
+        "catalog_matches": {
+          "https://www.paloaltonetworks.com/services/education/palo-alto-networks-sd-wan-engineer": {
+            "sources": [
+              "panw-sd-wan-engineer-certification"
+            ],
+            "candidates": []
+          },
+          "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/sd-wan-engineer-datasheet.pdf": {
+            "sources": [
+              "panw-sd-wan-engineer-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "PANW-SD-WAN-ENGINEER",
+        "observation": "WAN Clarity reports are a Prisma SD-WAN reporting feature. Check report scope against topology and time window.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.paloaltonetworks.com/prisma-sd-wan/administration/prisma-sd-wan-clarity-reports"
+        ],
+        "source_ids": [
+          "panw-sd-wan-engineer-source-2"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "PANW-SD-WAN-ENGINEER",
+        "observation": "The Prisma SD-WAN class covers system design, implementation and operations with lab practice.",
+        "urls": [
+          "https://www.paloaltonetworks.com/services/education/edu-238-prisma-sd-wan-design-and-operation",
+          "https://www.paloaltonetworks.com/services/education/palo-alto-networks-sd-wan-engineer"
+        ],
+        "linked_portal": "https://learn.paloaltonetworks.com/learn/home",
+        "source_id": "panw-edu-238-prisma-sdwan",
+        "resource": "Prisma SD-WAN: Design and Operation (EDU-238)",
+        "access_model": "paid",
+        "time_basis": "5 instructor-led days, publisher.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "manual-review",
+      "accepted_on_start": "4975bd40c58863097d6c0a49ff6a56601f4351ce8b0f44c0b6b1e41a5a1bf123",
+      "candidate": null
+    },
+    {
+      "code": "PANW-SSE-ENGINEER",
+      "exam": {
+        "code": "PANW-SSE-ENGINEER",
+        "observation": "Opened the 5-page issuer datasheet dated MARCH 2026. Its domain weights in order are 22%, 22%, 22%, 16%, 18%. All 74 retained numeric task IDs appear in the extracted PDF. All numbered task strings match after normalization. Objective monitor reported: ValueError: Could not find Palo Alto Networks certification objectives",
+        "urls": [
+          "https://www.paloaltonetworks.com/services/education/palo-alto-networks-sse-engineer",
+          "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/sse-engineer-datasheet.pdf"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Keep the manual PDF route and the existing scope unless a substantive difference is established.",
+        "monitor": "manual-review",
+        "accepted_objective_sha256": "3bdbefeb8ab8230ee70c124ad888afdde4739714b7f11f5e53d5ee446597e722",
+        "candidate_objective_sha256": null,
+        "catalog_matches": {
+          "https://www.paloaltonetworks.com/services/education/palo-alto-networks-sse-engineer": {
+            "sources": [
+              "panw-sse-engineer-certification"
+            ],
+            "candidates": []
+          },
+          "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/sse-engineer-datasheet.pdf": {
+            "sources": [
+              "panw-sse-engineer-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "PANW-SSE-ENGINEER",
+        "observation": "Enterprise DLP classifies sensitive content using patterns and profiles; policy and supported channel affect enforcement.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.paloaltonetworks.com/enterprise-dlp"
+        ],
+        "source_ids": [
+          "panw-sse-engineer-source-3"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "PANW-SSE-ENGINEER",
+        "observation": "The four-day Prisma Access SSE course covers configuration, management and troubleshooting; the provider highlights cloud/network familiarity.",
+        "urls": [
+          "https://www.paloaltonetworks.com/services/education/ilt-prisma-access-sse-configuration-and-deployment",
+          "https://www.paloaltonetworks.com/services/education/palo-alto-networks-sse-engineer"
+        ],
+        "linked_portal": "https://learn.paloaltonetworks.com/learn",
+        "source_id": "panw-ilt-prisma-access-sse",
+        "resource": "Prisma Access SSE: Configuration and Deployment",
+        "access_model": "paid",
+        "time_basis": "4 instructor-led days, publisher.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "manual-review",
+      "accepted_on_start": "3bdbefeb8ab8230ee70c124ad888afdde4739714b7f11f5e53d5ee446597e722",
+      "candidate": null
+    },
+    {
+      "code": "PANW-NETWORK-SECURITY-ARCHITECT",
+      "exam": {
+        "code": "PANW-NETWORK-SECURITY-ARCHITECT",
+        "observation": "Opened the 6-page issuer datasheet dated OCTOBER 2025. Its domain weights in order are 8%, 11%, 13%, 11%, 7%, 11%, 7%, 11%, 11%, 10%. All 108 retained numeric task IDs appear in the extracted PDF. Retained task descriptions use paraphrases; literal task-string completeness is not established. Objective monitor reported: ValueError: Could not find Palo Alto Networks certification objectives",
+        "urls": [
+          "https://www.paloaltonetworks.com/services/education/palo-alto-networks-netsec-architect",
+          "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/netsec-architect-datasheet.pdf"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Keep the manual PDF route and the existing scope unless a substantive difference is established.",
+        "monitor": "manual-review",
+        "accepted_objective_sha256": "28444ec9fc48dbee66d43c27ab1d3c60bc56ab51b323e887152a18b21306eda2",
+        "candidate_objective_sha256": null,
+        "catalog_matches": {
+          "https://www.paloaltonetworks.com/services/education/palo-alto-networks-netsec-architect": {
+            "sources": [
+              "panw-network-security-architect-certification"
+            ],
+            "candidates": []
+          },
+          "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/netsec-architect-datasheet.pdf": {
+            "sources": [
+              "panw-network-security-architect-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "PANW-NETWORK-SECURITY-ARCHITECT",
+        "observation": "The 6.2 release train documents ZTNA Connector application tagging. Design around the installed release and management plane.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.paloaltonetworks.com/prisma-access/new-features/by-version/prisma-access/6-2-preferred-innovation"
+        ],
+        "source_ids": [
+          "panw-prisma-access-62-new-features"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "PANW-NETWORK-SECURITY-ARCHITECT",
+        "observation": "The Architect page recommends its datasheet and advanced learning route. It also recommends reviewing underlying Specialist-level topics where needed.",
+        "urls": [
+          "https://www.paloaltonetworks.com/services/education/palo-alto-networks-netsec-architect"
+        ],
+        "linked_portal": "https://learn.paloaltonetworks.com/learn",
+        "source_id": "panw-network-security-architect-certification",
+        "resource": "PANW-NETWORK-SECURITY-ARCHITECT credential prep listing",
+        "access_model": "public credential page; learning portal requires account",
+        "time_basis": "No current publisher runtime established for this route.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "The digital path button opens the general portal; select by credential name."
+      },
+      "monitor_outcome": "manual-review",
+      "accepted_on_start": "28444ec9fc48dbee66d43c27ab1d3c60bc56ab51b323e887152a18b21306eda2",
+      "candidate": null
+    },
+    {
+      "code": "PANW-SECURITY-OPERATIONS-PROFESSIONAL",
+      "exam": {
+        "code": "PANW-SECURITY-OPERATIONS-PROFESSIONAL",
+        "observation": "Opened the 4-page issuer datasheet dated JULY 2026. Its domain weights in order are 25%, 16%, 23%, 16%, 20%. All 19 retained numeric task IDs appear in the extracted PDF. Retained task descriptions use paraphrases; literal task-string completeness is not established. Objective monitor reported: ValueError: Could not find Palo Alto Networks certification objectives",
+        "urls": [
+          "https://www.paloaltonetworks.com/services/education/palo-alto-networks-secops-professional",
+          "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/secops-professional-datasheet.pdf"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Keep the manual PDF route and the existing scope unless a substantive difference is established.",
+        "monitor": "manual-review",
+        "accepted_objective_sha256": "4b118e221e1a6158afc9f749efc6e977b60f8e1a012f89efd5c512cdd2211acd",
+        "candidate_objective_sha256": null,
+        "catalog_matches": {
+          "https://www.paloaltonetworks.com/services/education/palo-alto-networks-secops-professional": {
+            "sources": [
+              "panw-security-operations-professional-certification"
+            ],
+            "candidates": []
+          },
+          "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/secops-professional-datasheet.pdf": {
+            "sources": [
+              "panw-security-operations-professional-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "PANW-SECURITY-OPERATIONS-PROFESSIONAL",
+        "observation": "XSOAR distinguishes playbooks for investigation and response, scheduled jobs, case SLAs and operational dashboards.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.paloaltonetworks.com/cortex/cortex-xsoar"
+        ],
+        "source_ids": [
+          "panw-security-operations-professional-source-2"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "PANW-SECURITY-OPERATIONS-PROFESSIONAL",
+        "observation": "The SecOps Professional credential recommends selecting digital courses by datasheet topic. Its path button loads the general portal.",
+        "urls": [
+          "https://www.paloaltonetworks.com/services/education/palo-alto-networks-secops-professional"
+        ],
+        "linked_portal": "https://learn.paloaltonetworks.com/learn",
+        "source_id": "panw-security-operations-professional-certification",
+        "resource": "PANW-SECURITY-OPERATIONS-PROFESSIONAL credential prep listing",
+        "access_model": "public credential page; learning portal requires account",
+        "time_basis": "10–15 minutes to compare the public material, editorial.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "manual-review",
+      "accepted_on_start": "4b118e221e1a6158afc9f749efc6e977b60f8e1a012f89efd5c512cdd2211acd",
+      "candidate": null
+    }
+  ],
+  "review_inputs": [
+    {
+      "code": "PANW-CYBERSECURITY-APPRENTICE",
+      "guide": "guides/PANW-CYBERSECURITY-APPRENTICE-palo-alto-networks-cybersecurity-apprentice.md",
+      "guide_sha256_lf": "1aa17fc40af87140a82c3bb0c58d6b9a3d47b8fcfd1ebe2c70a23b7e25463ec2",
+      "objective": "data/objective-snapshots/panw-cybersecurity-apprentice-official-objectives.txt",
+      "objective_sha256": "fbd3b8491d4f5a04b8592653652089dcb6e1fe7f7e1948a974dd37469f1673b7"
+    },
+    {
+      "code": "PANW-CYBERSECURITY-PRACTITIONER",
+      "guide": "guides/PANW-CYBERSECURITY-PRACTITIONER-palo-alto-networks-cybersecurity-practitioner.md",
+      "guide_sha256_lf": "d99ac9ab576c4880ddd23cccac530b6cafe83f13d86a549eb6fe7bbdd1333f5e",
+      "objective": "data/objective-snapshots/panw-cybersecurity-practitioner-official-objectives.txt",
+      "objective_sha256": "600eac4ecbdddea9b5ce0e0dba159accac70b13b677dbcfdeaa0e19926dcd34b"
+    },
+    {
+      "code": "PANW-NETWORK-SECURITY-PROFESSIONAL",
+      "guide": "guides/PANW-NETWORK-SECURITY-PROFESSIONAL-palo-alto-networks-network-security-professional.md",
+      "guide_sha256_lf": "dc78dcd00958d02f512adcd57700e25bbf4c6bf5d9e9d781d6e1373bc73a1a08",
+      "objective": "data/objective-snapshots/panw-network-security-professional-official-objectives.txt",
+      "objective_sha256": "682be74c10edf47fb23e61e21cb7544cf34fa962a9926b3b5265758bb66c6483"
+    },
+    {
+      "code": "PANW-NETWORK-SECURITY-ANALYST",
+      "guide": "guides/PANW-NETWORK-SECURITY-ANALYST-palo-alto-networks-network-security-analyst.md",
+      "guide_sha256_lf": "4b1a920c06cc9febce14776593a4ff9b64eca214b7dd43b2ad0f0aec6f2e87d1",
+      "objective": "data/objective-snapshots/panw-network-security-analyst-official-objectives.txt",
+      "objective_sha256": "10b40a968bc62f35505e71b5972b161cedebdc723bf0f12bd31a90942d657ece"
+    },
+    {
+      "code": "PANW-NGFW-ENGINEER",
+      "guide": "guides/PANW-NGFW-ENGINEER-palo-alto-networks-next-generation-firewall-engineer.md",
+      "guide_sha256_lf": "b13991884c1941672af589fd81dc6474c10b73aaf56f53cb02f6e23c5de32a2b",
+      "objective": "data/objective-snapshots/panw-ngfw-engineer-official-objectives.txt",
+      "objective_sha256": "e6d1470d49b1d63602c5021bf347751e6b64443817cdda1e9700bd4a10486806"
+    },
+    {
+      "code": "PANW-SD-WAN-ENGINEER",
+      "guide": "guides/PANW-SD-WAN-ENGINEER-palo-alto-networks-sd-wan-engineer.md",
+      "guide_sha256_lf": "70282714ff98410265fd9d42fd8b3e7594223a7f6a8b7a8172ddf309a023a572",
+      "objective": "data/objective-snapshots/panw-sd-wan-engineer-official-objectives.txt",
+      "objective_sha256": "4975bd40c58863097d6c0a49ff6a56601f4351ce8b0f44c0b6b1e41a5a1bf123"
+    },
+    {
+      "code": "PANW-SSE-ENGINEER",
+      "guide": "guides/PANW-SSE-ENGINEER-palo-alto-networks-security-service-edge-engineer.md",
+      "guide_sha256_lf": "571b4e5db6342dbe08b2448884d2711b39465eabf5fdce1df9952af426c6438c",
+      "objective": "data/objective-snapshots/panw-sse-engineer-official-objectives.txt",
+      "objective_sha256": "3bdbefeb8ab8230ee70c124ad888afdde4739714b7f11f5e53d5ee446597e722"
+    },
+    {
+      "code": "PANW-NETWORK-SECURITY-ARCHITECT",
+      "guide": "guides/PANW-NETWORK-SECURITY-ARCHITECT-palo-alto-networks-network-security-architect.md",
+      "guide_sha256_lf": "458887b19c29ca944daec00ec4880c410618e711f9b065124b9595418a9e0bd8",
+      "objective": "data/objective-snapshots/panw-network-security-architect-official-objectives.txt",
+      "objective_sha256": "28444ec9fc48dbee66d43c27ab1d3c60bc56ab51b323e887152a18b21306eda2"
+    },
+    {
+      "code": "PANW-SECURITY-OPERATIONS-PROFESSIONAL",
+      "guide": "guides/PANW-SECURITY-OPERATIONS-PROFESSIONAL-palo-alto-networks-security-operations-professional.md",
+      "guide_sha256_lf": "881e4ef07276f43c8d6a2f05d0c652e7d40b7c263fa9fc659dd403199b75ea21",
+      "objective": "data/objective-snapshots/panw-security-operations-professional-official-objectives.txt",
+      "objective_sha256": "4b118e221e1a6158afc9f749efc6e977b60f8e1a012f89efd5c512cdd2211acd"
+    }
+  ],
+  "independent_review": {
+    "method": "Fresh-context read-only AI review of changed content and source evidence",
+    "rubric": "docs/AI-AUDIT.md, version 2",
+    "reviewed_tree": "849a7f9f3ebbcb18688d549add9b6c4f968b74f4",
+    "summary": "Rechecked the authority-tier correction from d6f8b3bf356dafdd149e2690ae445c33683b3dbc. The Strata Cloud Manager product page now has tier 2 and supports the resource description. Nine guide/objective bindings match. PDF coverage limits are disclosed for the Practitioner and records with paraphrased tasks. Targeted change/evidence review only.",
+    "findings": [],
+    "validation": [
+      "unit tests",
+      "repository validation",
+      "reviewed learning resource check",
+      "site preparation",
+      "strict MkDocs build",
+      "generated site validation"
+    ]
+  }
+}
