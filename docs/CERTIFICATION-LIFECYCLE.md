@@ -1,6 +1,6 @@
 # Certification lifecycle and name history
 
-**Dated view: 2026-11-20.** Of 235 research-inventory entries, 57 have a recorded dated lifecycle event; 178 still need date research. This is a generated repository snapshot. The published page changes when the site is deployed; it is not a live vendor feed.
+**Dated view: 2026-11-23.** Of 235 research-inventory entries, 57 have a recorded dated lifecycle event; 178 still need date research. This is a generated repository snapshot. The published page changes when the site is deployed; it is not a live vendor feed.
 
 The event tables show only source-backed dates. A missing row means this inventory has no confirmed dated event for that exam; it does not mean the exam has never changed. The coverage table below shows the research gap by vendor.
 
@@ -131,7 +131,6 @@ These beta or legacy inventory entries have no confirmed dated lifecycle event y
 
 - [GH-600](<https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-600>) (github; beta)
 - [GH-700](<https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-professional/>) (github; beta)
-- [GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT](<https://cloud.google.com/learn/certification/agentic-architect/>) (google-cloud; beta)
 - [AB-330](<https://learn.microsoft.com/en-us/credentials/certifications/supply-chain-management-ai-consultant-associate/>) (microsoft; beta)
 - [AZ-401](<https://learn.microsoft.com/en-us/credentials/certifications/agentic-devops-engineer-expert/>) (microsoft; beta)
 - [PCEA-30-01](<https://pythoninstitute.org/pcea>) (python-institute; beta)
@@ -157,6 +156,7 @@ The current title and each alias refer to the same vendor/exam identity. Try eac
 - **MLA-C02:** AWS announces English-only beta delivery beginning September 29, 2026, with different identifiers on the registration button (MLA-C02) and comparison table (ME1-C02). This is the MLA-C02 exam-version beta date, not the initial launch of the credential. General availability conflicts: the September announcement gives January 14, 2027, while the credential page says TBD. More research needed — next pass. No exam booking or account availability was tested. Sources: [evidence 1](<https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/>), [evidence 2](<https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/>).
 - **SAP-C03:** Exam version. Check the appointment for language and local availability.
 - **GH-700:** GitHub maintains this credential. Microsoft delivers its English beta through Pearson VUE. October 20 launch notice targets December 2026 for general availability. GitHub lists 90 minutes and Microsoft lists 100. Verify the duration at booking. Sources: [evidence 1](<https://learn.github.com/certification/agenticbusiness>), [evidence 2](<https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-700>), [evidence 3](<https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-professional/>), [evidence 4](<https://techcommunity.microsoft.com/blog/skills-hub-blog/new-github-certified-agentic-ai-business-professional/4564534>).
+- **GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT:** Standard two-part registration displayed. The issuer did not supply an exact GA day on the registration page. Sources: [evidence 1](<https://cloud.google.com/learn/certification/agentic-architect/>).
 - **C3000-006:** Live exam and credential; public exam record last modified October 21, 2026. No prerequisite exam, withdrawal or replacement listed. A client support notice is not an exam lifecycle change. Sources: [evidence 1](<https://www.ibm.com/training/credentials/getExam/C3000-006>), [evidence 2](<https://www.ibm.com/training/certification/ibm-certified-bob-v2-developer-associate-C9010800>).
 - **CISM:** The current outline lists 37 subtopics and 42 supporting tasks across four domains.
 - **AB-100:** The official credential is Microsoft Certified: Agentic AI Business Solutions Architect Expert. The credential requires the AB-100 exam and one of the 13 specifically listed associate certifications. The Power Platform Developer Associate credential is still listed. Its current exam route is AB-400. The effective November 16 English outline was accepted. The older exam listing still differs on two prerequisite options.

@@ -465,7 +465,7 @@ This is **not a complete list**, and it is not meant to be consumed in full. Pic
 | Resource | Access | Estimated time | Best use / currency note |
 |---|---|---|---|
 | [Official exam guide](https://services.google.com/fh/files/misc/professional_cloud_security_engineer_exam_guide_english.pdf) | Public | Suggested 1–2h then weekly | Current scope/checklist authority; actual four-page PDF reviewed |
-| [Google Skills PCSE path](https://www.skills.google/paths/15) | Account; labs may require credits | 21 activities; current activity durations not exposed | Earlier 82h30m total not reverified. The relative four-month update age is not study time |
+| [Google Skills PCSE path](https://www.skills.google/paths/15) | Account; labs may require credits | 25 activities; current activity durations not exposed | Earlier 82h30m total not reverified. The relative four-month update age is not study time |
 | [Official sample questions](https://docs.google.com/forms/d/e/1FAIpQLSfSuKEE8cUQWj9sfak7QG9hpaljBC89Y22KoWMQFgoECZjzUg/viewform) | Public | Suggested 30–60m plus review | Official format context; landing page only, question contents not used here |
 | [Google Cloud security documentation](https://cloud.google.com/security) | Public | Suggested 15–35h targeted | Discovery index; use behavior-specific primary pages cited above |
 | [Pluralsight PCSE path](https://www.pluralsight.com/paths/google-cloud-professional-security-engineer) | Paid/subscription | Six courses 6h56m plus two 30m labs = 7h56m; live header rounds to 8h | Intro November 2025; five domain courses January–July 2026. Direct page lists API-controls lab September 21 and DLP/CMEK lab September 11, 2026. Older search results still showed one lab/seven hours; direct dated catalog governs |

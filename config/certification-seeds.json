@@ -1,7 +1,7 @@
 {
   "$schema": "../schemas/certification-seed-catalog.schema.json",
   "schema_version": 1,
-  "lifecycle_as_of": "2026-11-20",
+  "lifecycle_as_of": "2026-11-23",
   "catalog_sources": [
     {
       "id": "github-published-guides",
@@ -1751,8 +1751,15 @@
       "exam_code": "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT",
       "title": "Professional Agentic Architect",
       "official_url": "https://cloud.google.com/learn/certification/agentic-architect/",
-      "status": "beta",
-      "source_id": "google-cloud-expansion"
+      "status": "active",
+      "source_id": "google-cloud-expansion",
+      "lifecycle": {
+        "checked_on": "2026-11-23",
+        "source_urls": [
+          "https://cloud.google.com/learn/certification/agentic-architect/"
+        ],
+        "notes": "Standard two-part registration displayed. The issuer did not supply an exact GA day on the registration page."
+      }
     },
     {
       "vendor_id": "cisco",
