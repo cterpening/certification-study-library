@@ -8,7 +8,7 @@ authority: unofficial
 review_status: review-required
 last_verified: 2026-11-20
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-10-28
+upcoming_change_checked: 2026-11-23
 ---
 
 # AI-300 Operationalizing Machine Learning and Generative AI Solutions Study Guide
@@ -17,7 +17,7 @@ upcoming_change_checked: 2026-10-28
 
 > **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-03.md#ai-300) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ai-300-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-300) is authoritative.
 
-**Current baseline:** The study-guide page shows last updated October 15, 2026; no separate skills-effective date is published. All 58 detailed objective wordings match the accepted baseline checked October 28, 2026. The credential page separately shows October 7; neither metadata date establishes a changed skills-effective baseline.<br>
+**Current baseline.** Microsoft updated the study-guide page November 23, 2026. It gives no separate skills-effective date. All 58 objective wordings still match the accepted outline. The credential page separately shows October 7.<br>
 **Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
 **Lifecycle status:** Active; no retirement or replacement was announced.<br>
 **Exam page:** [Machine Learning Operations Engineer Associate](https://learn.microsoft.com/en-us/credentials/certifications/operationalizing-machine-learning-and-generative-ai-solutions/) · 120-minute assessment · English on the current exam page; course languages are separate.<br>

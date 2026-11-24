@@ -8,7 +8,7 @@ authority: unofficial
 review_status: review-required
 last_verified: 2026-10-28
 upcoming_change_status: retirement-announced
-upcoming_change_checked: 2026-11-20
+upcoming_change_checked: 2026-11-23
 ---
 
 # MS-102 Microsoft 365 Administrator Study Guide
@@ -21,7 +21,7 @@ upcoming_change_checked: 2026-11-20
 **Retirement:** The exam and Microsoft 365 Certified: Administrator Expert certification retire November 30, 2026, at 11:59 PM Central Standard Time. They cannot be earned or renewed after that date.<br>
 **Transition.** Microsoft pairs the retiring expert certification with AB-650, the Microsoft 365 and AI Services Administrator Associate credential. Partner Center names AB-650 for the Modern Work skilling metric. The expert and associate awards have different requirements. [November source notes](../docs/research/2026-11-20-microsoft-refresh-group-04.md#ms-102).<br>
 **Upcoming blueprint change:** Retirement is announced; no separate pre-retirement objective revision is announced.<br>
-**Practice Assessment:** A free Microsoft Practice Assessment is available.<br>
+**Practice assessment.** Microsoft now directs candidates to its signed-in AI Skills Navigator. On November 23 the published short links opened Bing. The legacy Learn assessment still opens, and Microsoft says that version receives no new updates. The resource table below links to it.<br>
 **Official source:** [MS-102 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-102)
 
 ## October 28 implementation notes
@@ -570,7 +570,7 @@ The nine official paths linked from the MS-102 course list **39 modules**. Their
 | [Official MS-102 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-102) and [Administrator Expert credential page](https://learn.microsoft.com/en-us/credentials/certifications/m365-administrator-expert/) | Public | 1–2 hours initially; 15 minutes on each recheck |
 | Nine official Microsoft Learn paths linked from the [MS-102T00 course syllabus](https://learn.microsoft.com/en-us/training/courses/ms-102t00) | Public | Historical 28h45; allow an estimated 45–65 hours with exercises and notes |
 | [MS-102T00 instructor-led course](https://learn.microsoft.com/en-us/training/courses/ms-102t00) | Paid/partner delivery | 5 days listed |
-| [Microsoft MS-102 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/exams/ms-102/practice/assessment?assessment-type=practice&assessmentId=75) | Public | 45–75 minutes per attempt plus source review |
+| [Legacy Microsoft Learn MS-102 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/exams/ms-102/practice/assessment?assessment-type=practice&assessmentId=75) | Legacy Learn route. Microsoft directs learners to the signed-in AI Skills Navigator for updates. | 45–75 minutes per attempt plus source review |
 | [O'Reilly MS-102 certification course](https://www.oreilly.com/videos/microsoft-365-administrator/0642572062019/) with Aaron Guilmette | Paid | Historical 4h23, January 2025; page blocked. Reconcile the April 2026 changes and retirement baseline |
 | [O'Reilly/Microsoft Press Exam Ref MS-102](https://www.oreilly.com/library/view/exam-ref-ms-102/9780138199517/) by Orin Thomas | Paid | Historical 7h37 / 305 pages, November 2023; page blocked and current edition/content unverified. Check April objectives |
 | [Udemy MS-102 course with simulations](https://www.udemy.com/course/ms100course/) by John Christopher | Paid | Historical 15h05, August 2026 update; page blocked. Current runtime, lessons and objective coverage unverified |

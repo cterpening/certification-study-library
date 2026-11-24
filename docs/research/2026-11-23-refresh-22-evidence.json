@@ -1,0 +1,78 @@
+{
+  "date": "2026-11-23",
+  "scope": "Status-only Microsoft objective follow-ups and public practice resource routes.",
+  "exams": [
+    {
+      "code": "AI-300",
+      "scope": "existing guide and credential",
+      "nov20_context": "Group 02 verified the credential/scheduling, Azure ML SDK/CLI and accelerator resource. The guide already describes the signed-in Skills Navigator practice assessment.",
+      "objective_sha256_unchanged": "79d7fabcf253e7ac5f5f7629397075867d22c48045c2483c9d03e1b217215f41",
+      "status_sha256_before": "b86beba443622c4507335eafac190c71128e28d607f1fac563278202be008919",
+      "status_sha256_after": "34a489bd98a01caa8f82f759fee33a686a3802781d63001333e8135cc852fe64",
+      "finding": "Only the study guide's fallback page-updated date changed from October 15 to November 23. There is no skills-effective date or new announcement. The separate credential still shows October 7. The live study guide continues to point to AI Skills Navigator. The registration and credential identity evidence does not support a lifecycle change.",
+      "action": "Update the guide's current baseline and upcoming-check dates/wording and accept the status snapshot with the unchanged objective hash. Keep the existing scope and full-review dates.",
+      "suggested_baseline": "Microsoft last updated the study-guide page on November 23, 2026. It gives no separate skills-effective date. The 58 detailed objectives match the accepted wording. The credential page was updated October 7.",
+      "urls": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-300",
+        "https://learn.microsoft.com/en-us/credentials/certifications/operationalizing-machine-learning-and-generative-ai-solutions/",
+        "https://aka.ms/AI300-PA",
+        "https://aiskillsnavigator.microsoft.com/en-us/credentials/cert-6e7fcf9954d1620318e5d199346ace3b7bd84edc8be79e735bcdc09ada8437bf"
+      ],
+      "observation": "Only the study guide's fallback page-updated date changed from October 15 to November 23. There is no skills-effective date or new announcement. The separate credential still shows October 7. The live study guide continues to point to AI Skills Navigator. The registration and credential identity evidence does not support a lifecycle change."
+    },
+    {
+      "code": "MS-102",
+      "scope": "existing retiring exam and expert credential",
+      "nov20_context": "Group 04 and the published guide already describe the November 30 retirement, four possible qualifying associates, and AB-650 as the separate associate credential/Modern Work mapping.",
+      "objective_sha256_unchanged": "97ce6b34e98fb43947409e8b7997f3de72e6cae7a62102dfdea849bfb177c92a",
+      "status_sha256_before": "774becfc67b7184d9d8e0868e20d03dc74c7f38a3b1edcfc2983bb8a920cca09",
+      "status_sha256_after": "b807f0edb8494fd334ef29b3bdf0ca568d364e0a2834f272f6d55a242ef0e0b5",
+      "finding": "The November 20-dated study-guide page now has a practice-assessment tip in place of its retirement banner. The April 28 skills baseline and all extracted objectives remain identical. The exam banner still states November 30, 2026 at 11:59 p.m. Central Standard Time, and the award notice and retirement table independently confirm November 30. The same exam page's generic field reads 'Retirement date: none'; the explicit dated exam and credential notices take precedence.",
+      "practice": "Microsoft now prioritizes the signed-in AI Skills Navigator practice assessment. Legacy Learn assessment remains available and Microsoft says it is no longer updated. Both issuer short URLs currently resolve to Bing (including the HTTP new-assessment link as printed). The guide's direct legacy assessment URL opens a page titled Practice Assessment | Microsoft Learn. Candidate questions/attempts and a working exam-specific navigator deep link were not verified.",
+      "action": "Preserve retirement and AB-650 qualification distinction. Accept the snapshot only as a record of the study-guide banner removal. Mark the current practice link and guide resources row as legacy, refer readers to the practice tip on the official study guide, and visibly acknowledge its faulty shortcuts. Keep full-review dates.",
+      "urls": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-102",
+        "https://learn.microsoft.com/en-us/credentials/certifications/exams/ms-102/",
+        "https://learn.microsoft.com/en-us/credentials/certifications/m365-administrator-expert/",
+        "https://learn.microsoft.com/en-us/credentials/support/retired-certification-exams",
+        "https://learn.microsoft.com/en-us/credentials/certifications/ai-services-administrator-associate/",
+        "https://learn.microsoft.com/en-us/partner-center/announcements/2026-october",
+        "http://aka.ms/MS102-PA",
+        "https://aka.ms/MS102-LearnPA",
+        "https://learn.microsoft.com/en-us/credentials/certifications/exams/ms-102/practice/assessment?assessment-type=practice&assessmentId=75"
+      ],
+      "observation": "The November 20-dated study-guide page now has a practice-assessment tip in place of its retirement banner. The April 28 skills baseline and all extracted objectives remain identical. The exam banner still states November 30, 2026 at 11:59 p.m. Central Standard Time, and the award notice and retirement table independently confirm November 30. The same exam page's generic field reads 'Retirement date: none'; the explicit dated exam and credential notices take precedence."
+    }
+  ],
+  "review_inputs": [
+    {
+      "code": "AI-300",
+      "guide": "guides/AI-300-operationalizing-machine-learning-generative-ai-solutions.md",
+      "guide_sha256_lf": "d325f204bad9b08bbecb40d92f26376407582ddafe319325b02fab3ff791c91f",
+      "objective": "data/objective-snapshots/ai-300-official-objectives.txt",
+      "objective_sha256": "79d7fabcf253e7ac5f5f7629397075867d22c48045c2483c9d03e1b217215f41"
+    },
+    {
+      "code": "MS-102",
+      "guide": "guides/MS-102-microsoft-365-administrator.md",
+      "guide_sha256_lf": "b69dba82941b18672276362660eec380ea9ccd37dc6b7dea1fe4cef16feebd58",
+      "objective": "data/objective-snapshots/ms-102-official-objectives.txt",
+      "objective_sha256": "97ce6b34e98fb43947409e8b7997f3de72e6cae7a62102dfdea849bfb177c92a"
+    }
+  ],
+  "independent_review": {
+    "method": "Fresh-context read-only AI review of changed content and source evidence",
+    "rubric": "docs/AI-AUDIT.md, version 2",
+    "reviewed_tree": "aaf8983b809c843385da53732069b6d630f816e8",
+    "summary": "Fetched both official Microsoft study guides. Fresh objective extraction is byte-identical to both accepted snapshots and the two current status fields match. Both archived status JSONs are exact prior bytes. Microsoft’s MS-102 exam banner still gives November 30 at 11:59 PM CST despite banner removal from the study guide and a conflicting generic field. Both guide hashes match. Targeted change/evidence review only.",
+    "findings": [],
+    "validation": [
+      "unit tests",
+      "repository validation",
+      "reviewed learning resource check",
+      "site preparation",
+      "strict MkDocs build",
+      "generated site validation"
+    ]
+  }
+}
