@@ -17,6 +17,10 @@ ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_BUILD_DIR = ROOT / ".site-build"
 
 PUBLIC_DOCUMENTS = (
+    "docs/research/2026-11-23-discovery-triage.json",
+    "docs/research/2026-11-23-source-rechecks.json",
+    "docs/research/2026-11-23-library-refresh-evidence.json",
+    "docs/research/2026-11-23-library-refresh.md",
     "docs/research/2026-11-23-refresh-27-evidence.json",
     "docs/research/2026-11-23-refresh-27.md",
     "docs/research/2026-11-23-refresh-26-evidence.json",

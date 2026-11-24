@@ -492,7 +492,7 @@ Attempt to induce an agent to edit a protected path, expose a fake secret, call 
 | Need | Primary source |
 |---|---|
 | Exam authority and current domains | [Official GH-600 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-600) |
-| Beta credential status | [Agentic AI Developer certification](https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-developer/) |
+| Credential status and scheduling | [Agentic AI Developer certification](https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-developer/) |
 | Official training sequence | [GH-600 course](https://learn.microsoft.com/en-us/training/courses/gh-600t00), [Part 1](https://learn.microsoft.com/en-us/training/paths/gh-developing-agentic-systems-1), and [Part 2](https://learn.microsoft.com/en-us/training/paths/github-agentic-systems-part-two/github-agentic-systems-part-two) |
 | Current agent surfaces | [GitHub agent concepts](https://docs.github.com/en/copilot/concepts/agents) |
 | Custom profile and tools contract | [Custom agents configuration](https://docs.github.com/en/copilot/reference/custom-agents-configuration) |

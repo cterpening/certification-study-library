@@ -1,0 +1,1003 @@
+{
+  "checked_on": "2026-11-23",
+  "scope_basis": "Compared the 23 changed or manual catalog sources with the certification inventory before the final successor intakes.",
+  "method": "Bounded discovery review of the 18 changed and five manually flagged source records only. Evidence uses program and credential page content and the saved catalog delta. Named catalog additions refer to their appearance in the monitored snapshot, not necessarily their original launch. URLs are identified separately as catalog delta items and additional primary pages opened. No provider booking, account-gated transcript review, new source baseline, seed, or guide is asserted by this triage.",
+  "summary": {
+    "changed": 18,
+    "manual_review": 5,
+    "confirmed_in_scope_missing_identity": "Terraform Infrastructure Engineer Professional (002), verified separately after a manual catalog flag. The public portfolio describes five credential tracks; this identity is separate from the existing Terraform Advanced track.",
+    "in_scope_already_registered": [
+      "GH-700",
+      "AZ-401",
+      "MO-240",
+      "AB-330",
+      "DVA-C03",
+      "SAP-C03",
+      "SY0-801"
+    ],
+    "breadth_signals": "AG0-001 (announced), SAIA (coming soon), ADS-B01, three NVIDIA associate entries, five Palo Alto Networks identity-security awards, AAIG (closed beta), COBIT 7 Foundation certificate, Salesforce Public Sector Solutions Consultant and selected named Oracle cloud/data paths. Some entries lack public scheduling evidence. The catalog selections do not extend to importing all these offerings.",
+    "manual_limits": "HashiCorp yielded a specific verified intake. Cisco and MongoDB yielded readable cross-checks with no comparable automatic diff. IBM and ServiceNow returned insufficient body content for broad comparison."
+  },
+  "sources": [
+    {
+      "id": "github-catalog",
+      "monitor_status": "changed",
+      "catalog_url": "https://learn.github.com/api/certifications",
+      "added": [
+        {
+          "title": "GitHub Agentic AI Business Professional (beta)",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-professional?practice-assessment-type=certification",
+          "catalog_detail": "Active: True; beta: False"
+        }
+      ],
+      "missing": [],
+      "changed": [],
+      "classification": "existing beta identity",
+      "scope": "selected; GH-700 already represented",
+      "observation": "The GitHub-hosted catalog and Microsoft credential page describe the same GH-700 beta for business professionals. Microsoft administers it and GitHub maintains it.",
+      "recommendation": "Already represented. Reconcile the two feeds as one candidate.",
+      "confidence": "high",
+      "opened_primary_urls": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-professional?practice-assessment-type=certification",
+        "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-professional/"
+      ]
+    },
+    {
+      "id": "microsoft-catalog",
+      "monitor_status": "changed",
+      "catalog_url": "https://learn.microsoft.com/api/contentbrowser/search/credentials?locale=en-us&facet=roles&facet=products&facet=levels&facet=subjects&facet=credential_types&%24filter=(credential_types%2Fany(c%3A%20c%20eq%20%27certification%27))&%24orderBy=title&%24top=100&fuzzySearch=false",
+      "added": [
+        {
+          "title": "GitHub Certified: Agentic AI Business Professional (beta)",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-professional",
+          "catalog_detail": "Required exam references: not supplied by catalog"
+        },
+        {
+          "title": "Microsoft Certified: Agentic DevOps Engineer Expert (beta)",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-devops-engineer-expert",
+          "catalog_detail": "Required exam references: AZ-401"
+        },
+        {
+          "title": "Microsoft Office Specialist: Excel for Operational Management Associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-for-operational-management-associate",
+          "catalog_detail": "Required exam references: not supplied by catalog"
+        },
+        {
+          "title": "Microsoft Certified: Supply Chain Management AI Consultant Associate (beta)",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/supply-chain-management-ai-consultant-associate",
+          "catalog_detail": "Required exam references: not supplied by catalog"
+        }
+      ],
+      "missing": [
+        {
+          "title": "Microsoft Certified: Windows Server Administrator Associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/windows-server-administrator-associate",
+          "catalog_detail": "Required exam references: not supplied by catalog"
+        }
+      ],
+      "changed": [
+        {
+          "before_title": "Microsoft Certified: Agentic AI Business Solutions Architect",
+          "after_title": "Microsoft Certified: Agentic AI Business Solutions Architect Expert",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect"
+        },
+        {
+          "before_title": "Microsoft 365 Certified:  Microsoft 365 and AI Services Administrator Associate (beta)",
+          "after_title": "Microsoft 365 Certified: Microsoft 365 and AI Services Administrator Associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/ai-services-administrator-associate"
+        },
+        {
+          "before_title": "Microsoft Certified: Azure Cosmos DB Developer Specialty",
+          "after_title": "Microsoft Certified: Azure Cosmos DB AI Developer Associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-cosmos-db-developer-specialty"
+        },
+        {
+          "before_title": "Microsoft Certified: Multi-Agent AI Solutions Expert (beta)",
+          "after_title": "Microsoft Certified: Multi-Agent AI Solutions Expert",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/multi-agent-ai-solutions-expert"
+        },
+        {
+          "before_title": "Microsoft Certified: Power Platform Developer Associate",
+          "after_title": "Microsoft Certified: Power Platform Developer Associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate"
+        },
+        {
+          "before_title": "Microsoft Certified: Windows Server Hybrid Administrator Associate",
+          "after_title": "Microsoft Certified: Windows Server Administrator Associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/windows-server-hybrid-administrator"
+        }
+      ],
+      "classification": "existing exams and credential metadata",
+      "scope": "selected existing identities and inventory-only records",
+      "observation": "Four additions map to GH-700, AZ-401, MO-240 and AB-330 in the seed inventory. Stable credential URLs acquired an Expert label, lost beta suffixes, changed award titles or changed the listed exam requirement. The removed Windows Server Administrator Associate URL still opens and explicitly replaces AZ-800/AZ-801 with AZ-802 after September 30, 2026.",
+      "recommendation": "Use exam-level evidence to update existing rows. Preserve alias to the Windows Server page, and distinguish award identity from exam version. MO-240 remains an inventory row.",
+      "confidence": "high",
+      "opened_primary_urls": [
+        "https://learn.microsoft.com/en-us/credentials/certifications/supply-chain-management-ai-consultant-associate",
+        "https://learn.microsoft.com/en-us/credentials/certifications/windows-server-administrator-associate"
+      ]
+    },
+    {
+      "id": "hashicorp-catalog",
+      "monitor_status": "manual-review",
+      "catalog_url": "https://developer.hashicorp.com/certifications",
+      "monitor_limit": "Expected catalog content missing; possible login, challenge, or page shell",
+      "added": [],
+      "missing": [],
+      "changed": [],
+      "classification": "confirmed separate intake",
+      "scope": "direct in-scope addition under the all-current-HashiCorp selection",
+      "observation": "Public Terraform Infrastructure Engineer Professional (002) offers registration. It is a distinct multiple-choice exam, separate from the Terraform Authoring and Operations Advanced AWS/Azure credentials. The collector failed to parse the portfolio.",
+      "recommendation": "Add the independently verified 002 intake from intake-and-coverage.json. No comparable portfolio-wide delta.",
+      "confidence": "high on 002, limited on portfolio",
+      "opened_primary_urls": [
+        "https://developer.hashicorp.com/certifications",
+        "https://developer.hashicorp.com/certifications/terraform-infrastructure-engineer-professional",
+        "https://developer.hashicorp.com/terraform/tutorials/certification-infra-professional"
+      ]
+    },
+    {
+      "id": "comptia-catalog",
+      "monitor_status": "changed",
+      "catalog_url": "https://www.comptia.org/en-us/certifications/",
+      "added": [
+        {
+          "title": "AgentOps+ (Coming Q2 2027) DevOps Engineer Cloud Engineer AI Engineer Learn More",
+          "url": "https://www.comptia.org/en-us/certifications/agentops"
+        },
+        {
+          "title": "Client Pro Systems Administrator Learn More",
+          "url": "https://www.comptia.org/en-us/certifications/client-pro"
+        },
+        {
+          "title": "DataSys+ Database Administrator Data Analyst DevOps Engineer Learn More",
+          "url": "https://www.comptia.org/en-us/certifications/datasys"
+        }
+      ],
+      "missing": [
+        {
+          "title": "DataSys+ V1 Database Administrator Data Analyst DevOps Engineer Learn More",
+          "url": "https://www.comptia.org/en-us/certifications/datasys/v1"
+        },
+        {
+          "title": "Client Pro Systems Administrator Learn More",
+          "url": "https://www.comptia.org/en-us/certifications/windows-client-pro"
+        }
+      ],
+      "changed": [],
+      "classification": "one announced future exam; existing URLs moved",
+      "scope": "outside the enumerated CompTIA foundational/infrastructure/security set",
+      "observation": "CompTIA AgentOps+ V1 has published series AG0-001 and a Q2 2027 launch window. Client Pro and DataSys+ recur in the missing set at different routes.",
+      "recommendation": "Keep AG0-001 as an announced candidate. No exact launch day or open exam delivery was established. Reconcile other route changes by title/version.",
+      "confidence": "high",
+      "opened_primary_urls": [
+        "https://www.comptia.org/en-us/certifications/agentops",
+        "https://www.comptia.org/en-us/certifications/agentops/"
+      ]
+    },
+    {
+      "id": "linux-foundation-catalog",
+      "monitor_status": "changed",
+      "catalog_url": "https://training.linuxfoundation.org/certification-catalog/",
+      "added": [
+        {
+          "title": "Cloud & Containers CKNE Certification Pathway Build Kubernetes networking skills with the CKNE Certification Pathway, including learning modules, hands-on labs, and the exam. Intermediate $645",
+          "url": "https://training.linuxfoundation.org/certification/ckne-certification-pathway"
+        },
+        {
+          "title": "Certification FinOps Foundation Training and Certifica… FinOps Foundation Training and Certifications A certified FinOps Practitioner will bring a strong understanding of FinOps, its Principles, Capabilities and … Beginner",
+          "url": "https://training.linuxfoundation.org/certification/finops-foundation-training-and-certifications"
+        },
+        {
+          "title": "AI & ML PTCA Certification Pathway Build practical PyTorch skills with the PTCA Certification Pathway, including structured learning modules, hands-on labs, and the PTCA exam. Beginner $299",
+          "url": "https://training.linuxfoundation.org/certification/ptca-certification-pathway"
+        },
+        {
+          "title": "AI & ML Secure AI Associate (SAIA) Earn the Secure AI Associate (SAIA) and prove you can secure AI/ML data, models, pipelines, and supply chains. Beginner $250",
+          "url": "https://training.linuxfoundation.org/certification/secure-ai-associate-saia"
+        }
+      ],
+      "missing": [
+        {
+          "title": "Certification FinOps Certified Practitioner & Fin… FinOps Certified Practitioner & FinOps Certified Professional A certified FinOps Practitioner will bring a strong understanding of FinOps, its Principles, Capabilities and … Beginner",
+          "url": "https://training.linuxfoundation.org/certification/certified-finops"
+        }
+      ],
+      "changed": [
+        {
+          "before_title": "Certification Certified Kubernetes Network Engineer (C… Certified Kubernetes Network Engineer (CKNE) CKNE validates hands-on skills in designing, securing, and troubleshooting Kubernetes networking for platform, network, and … $99 Intermedi",
+          "after_title": "Certification Certified Kubernetes Network Engineer (C… Certified Kubernetes Network Engineer (CKNE) CKNE validates hands-on skills in designing, securing, and troubleshooting Kubernetes networking for platform, network, and … $445 Intermed",
+          "url": "https://training.linuxfoundation.org/certification/certified-kubernetes-network-engineer-ckne"
+        },
+        {
+          "before_title": "AI & ML OpenSearch Certified Associate (OSCA) Coming Soon! OpenSearch Certified Associate (OSCA) Beginner $250",
+          "after_title": "AI & ML OpenSearch Certified Associate (OSCA) Earn the OpenSearch Certified Associate (OSCA) credential to validate your skills in search, observability, and securing OpenSearch clusters. Beginner $250",
+          "url": "https://training.linuxfoundation.org/certification/opensearch-certified-associate"
+        }
+      ],
+      "classification": "one announced exam; training bundles and changed metadata",
+      "scope": "outside selected LFCA, LFCS, CKA, CKAD and CKS",
+      "observation": "Secure AI Associate (SAIA) has a dedicated certification page marked coming soon. CKNE and PTCA additions bundle an existing exam with training. FinOps Foundation Training and Certifications is a collection. CKNE's changed entry is a price. OSCA's 'coming soon' catalog text was removed; the official page describes an online proctored multiple-choice exam.",
+      "recommendation": "Track SAIA as forthcoming, OSCA as a distinct current offering to assess separately if expanding. Do not duplicate exams for bundles, pricing or a collection.",
+      "confidence": "high for course/credential identity; OSCA appointments untested",
+      "opened_primary_urls": [
+        "https://training.linuxfoundation.org/certification/secure-ai-associate-saia",
+        "https://training.linuxfoundation.org/certification/opensearch-certified-associate",
+        "https://training.linuxfoundation.org/certification/opensearch-certified-associate/",
+        "https://training.linuxfoundation.org/certification/secure-ai-associate-saia/"
+      ]
+    },
+    {
+      "id": "google-cloud-catalog",
+      "monitor_status": "changed",
+      "catalog_url": "https://cloud.google.com/learn/certification",
+      "added": [],
+      "missing": [],
+      "changed": [
+        {
+          "before_title": "Agentic Architect (Beta)",
+          "after_title": "Agentic Architect",
+          "url": "https://cloud.google.com/learn/certification/agentic-architect"
+        }
+      ],
+      "classification": "existing exam moves beyond beta label",
+      "scope": "selected existing Google Cloud exam",
+      "observation": "Professional Agentic Architect retains the same public URL. It describes a registered proctored exam followed, after passing, by a separate Google Skills hands-on labs step. Registration links are present.",
+      "recommendation": "Apply status and exam-plus-lab requirements to the existing Professional Agentic Architect record.",
+      "confidence": "high",
+      "opened_primary_urls": [
+        "https://cloud.google.com/learn/certification/agentic-architect"
+      ]
+    },
+    {
+      "id": "cisco-catalog",
+      "monitor_status": "manual-review",
+      "catalog_url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/list.html",
+      "monitor_limit": "HTTP 403; official catalog review required",
+      "added": [],
+      "missing": [],
+      "changed": [],
+      "classification": "manual, primary directory accessible",
+      "scope": "four selected Cisco exams; broad feed not reconciled",
+      "observation": "Cisco's current exams list rendered and names career exams, numbers and certification tracks. The 403 prevented a comparable captured inventory. Packet p08 separately examined selected Cisco preparation routes.",
+      "recommendation": "Retain current selected Cisco evidence. The unparsed directory cannot establish all additions/removals.",
+      "confidence": "limited for differential",
+      "opened_primary_urls": [
+        "https://www.cisco.com/site/us/en/learn/training-certifications/exams/list.html"
+      ]
+    },
+    {
+      "id": "snowflake-catalog",
+      "monitor_status": "changed",
+      "catalog_url": "https://learn.snowflake.com/en/certifications/",
+      "added": [
+        {
+          "title": "SnowPro® Specialty: AI Governance & Security",
+          "url": "https://learn.snowflake.com/en/certifications/snowpro-AIGovernance&Security"
+        }
+      ],
+      "missing": [
+        {
+          "title": "SnowPro® Advanced: Data Scientist",
+          "url": "https://learn.snowflake.com/en/certifications/snowpro-advanced-datascientistC03"
+        },
+        {
+          "title": "SnowPro® Specialty: Snowpark",
+          "url": "https://learn.snowflake.com/en/certifications/snowpro-snowpark"
+        }
+      ],
+      "changed": [
+        {
+          "before_title": "SnowPro® Advanced: Data Analyst",
+          "after_title": "SnowPro® Advanced: Data Analyst (Retiring December 1, 2026)",
+          "url": "https://learn.snowflake.com/en/certifications/snowpro-advanced-dataanalyst"
+        },
+        {
+          "before_title": "SnowPro® Advanced: Security Engineer",
+          "after_title": "SnowPro® Advanced: Security Engineer (Retiring December 1, 2026)",
+          "url": "https://learn.snowflake.com/en/certifications/snowpro-advanced-securityengineer"
+        }
+      ],
+      "classification": "one credible specialty and three retirement signals",
+      "scope": "outside the selected SnowPro Core, Data Engineer, Gen AI and historical Associate records",
+      "observation": "SnowPro Specialty: AI Governance & Security has a dedicated credential page, ADS-B01 displayed in official page HTML and catalog, controls/governance objectives and a CertMetrics Register Now link. The Data Scientist C03 page states November 1, 2026 retirement. Advanced Data Analyst and Advanced Security Engineer state December 1, 2026 retirement. The old Snowpark specialty URL returned a branded 404.",
+      "recommendation": "Queue ADS-B01 as a distinct specialty; for status beyond a published registration handoff, verify beta/GA wording and dates. The Snowpark 404 does not prove retirement date or successor.",
+      "confidence": "high, except Snowpark lifecycle and ADS-B01 beta/GA",
+      "opened_primary_urls": [
+        "https://learn.snowflake.com/en/certifications/snowpro-AIGovernance&Security",
+        "https://learn.snowflake.com/en/certifications/snowpro-advanced-datascientistC03",
+        "https://learn.snowflake.com/en/certifications/snowpro-snowpark",
+        "https://learn.snowflake.com/en/certifications/snowpro-AIGovernance&Security/",
+        "https://learn.snowflake.com/en/certifications/snowpro-advanced-dataanalyst",
+        "https://learn.snowflake.com/en/certifications/snowpro-advanced-securityengineer",
+        "https://learn.snowflake.com/en/certifications/snowpro-advanced-datascientistC03/",
+        "https://learn.snowflake.com/en/certifications/snowpro-snowpark/"
+      ]
+    },
+    {
+      "id": "nvidia-catalog",
+      "monitor_status": "changed",
+      "catalog_url": "https://www.nvidia.com/en-us/learn/certification/",
+      "added": [
+        {
+          "title": "AI Models and Application Development",
+          "url": "https://www.nvidia.com/en-us/learn/certification/ai-model-application-development-associate"
+        },
+        {
+          "title": "AI Power and Cooling",
+          "url": "https://www.nvidia.com/en-us/learn/certification/ai-power-and-cooling-associate"
+        },
+        {
+          "title": "OpenUSD Foundations and Workflow",
+          "url": "https://www.nvidia.com/en-us/learn/certification/openusd-foundations-workflows-associate"
+        }
+      ],
+      "missing": [],
+      "changed": [],
+      "classification": "three distinct new catalog entries, availability varies",
+      "scope": "outside the selected NCA-GENL, NCA-AIIO and AI Operations professional set",
+      "observation": "NCA-AMAD, NCA-APC and NCA-OUSD each have dedicated pages. AI Model and Application Development Associate links to Certiverse registration. AI Power and Cooling Associate explicitly says registration is coming soon. OpenUSD Foundations and Workflows Associate has a Register for Exam label without a hyperlink in the opened HTML. The existing NCA-GENL page still offers its own registration.",
+      "recommendation": "Queue NCA-AMAD as a distinct registration-linked candidate, NCA-APC as announced, and NCA-OUSD for scheduling confirmation. Do not infer NCA-GENL replacement.",
+      "confidence": "high on identities; NCA-OUSD booking unresolved",
+      "opened_primary_urls": [
+        "https://www.nvidia.com/en-us/learn/certification/ai-model-application-development-associate",
+        "https://www.nvidia.com/en-us/learn/certification/ai-power-and-cooling-associate",
+        "https://www.nvidia.com/en-us/learn/certification/openusd-foundations-workflows-associate",
+        "https://www.nvidia.com/en-us/learn/certification/generative-ai-llm-associate/"
+      ]
+    },
+    {
+      "id": "mongodb-catalog",
+      "monitor_status": "manual-review",
+      "catalog_url": "https://learn.mongodb.com/pages/certification-program",
+      "monitor_limit": "Expected catalog content missing; possible login, challenge, or page shell",
+      "added": [],
+      "missing": [],
+      "changed": [],
+      "classification": "manual, program and new learning model verified",
+      "scope": "three selected MongoDB credentials confirmed at program level",
+      "observation": "The public portal names Associate Developer with language-specific tracks, Associate Data Modeler, Associate Atlas Administrator and Associate Database Administrator. The first three are selected seeds. The fourth self-managed exam is already identified as future breadth. MongoDB also announced a more modular certification path.",
+      "recommendation": "Keep existing exam rows and inspect issuer mappings before translating modular badges, assessments or courses into new exam identities.",
+      "confidence": "medium for program, limited for differential",
+      "opened_primary_urls": [
+        "https://learn.mongodb.com/pages/certification-program",
+        "https://www.mongodb.com/company/blog/news/introducing-a-more-connected-flexible-path-to-certifications"
+      ]
+    },
+    {
+      "id": "servicenow-catalog",
+      "monitor_status": "manual-review",
+      "catalog_url": "https://learning.servicenow.com/lxp?id=amap_home",
+      "monitor_limit": "Expected catalog content missing; possible login, challenge, or page shell",
+      "added": [],
+      "missing": [],
+      "changed": [],
+      "classification": "manual, catalog shell",
+      "scope": "existing CSA/CAD; other ServiceNow offerings future breadth",
+      "observation": "The ServiceNow University URL returned a navigation shell without a usable comparative list of exam records. Existing CSA and CAD research is already in the packet materials.",
+      "recommendation": "Keep the catalogue-level change unresolved; existing candidate links do not prove provider-wide completeness.",
+      "confidence": "limited",
+      "opened_primary_urls": [
+        "https://learning.servicenow.com/lxp?id=amap_home"
+      ]
+    },
+    {
+      "id": "palo-alto-networks-catalog",
+      "monitor_status": "changed",
+      "catalog_url": "https://www.paloaltonetworks.com/services/education/certification",
+      "added": [
+        {
+          "title": "Learn more",
+          "url": "https://www.paloaltonetworks.com/services/education/palo-alto-networks-epm-engineer"
+        },
+        {
+          "title": "Learn more",
+          "url": "https://www.paloaltonetworks.com/services/education/palo-alto-networks-iam-engineer"
+        },
+        {
+          "title": "Learn more",
+          "url": "https://www.paloaltonetworks.com/services/education/palo-alto-networks-pam-saas-engineer"
+        },
+        {
+          "title": "Learn more",
+          "url": "https://www.paloaltonetworks.com/services/education/palo-alto-networks-pam-sh-analyst"
+        },
+        {
+          "title": "Learn more",
+          "url": "https://www.paloaltonetworks.com/services/education/palo-alto-networks-pam-sh-engineer"
+        }
+      ],
+      "missing": [],
+      "changed": [],
+      "classification": "five distinct identity-security credentials",
+      "scope": "new role family outside the specifically inventoried September 2 set of 17; candidate for an explicit portfolio expansion",
+      "observation": "The generic 'Learn more' titles resolve to five unique Palo Alto Networks identity-security certification pages. Each links to a credential datasheet, digital learning and Pearson VUE registration. The five roles are Endpoint Privilege Manager Engineer, Identity and Access Management Engineer, Privileged Access Manager SaaS Engineer, Privileged Access Manager Self-Hosted Analyst and Privileged Access Manager Self-Hosted Engineer.",
+      "recommendation": "Queue these as role-specific breadth candidates in their own packet. Distinguish SaaS/self-hosted and analyst/engineer. The campaign links do not establish individual exam seats or versions.",
+      "confidence": "high",
+      "opened_primary_urls": [
+        "https://www.paloaltonetworks.com/services/education/palo-alto-networks-epm-engineer",
+        "https://www.paloaltonetworks.com/services/education/palo-alto-networks-iam-engineer",
+        "https://www.paloaltonetworks.com/services/education/palo-alto-networks-pam-saas-engineer",
+        "https://www.paloaltonetworks.com/services/education/palo-alto-networks-pam-sh-analyst",
+        "https://www.paloaltonetworks.com/services/education/palo-alto-networks-pam-sh-engineer"
+      ]
+    },
+    {
+      "id": "isaca-catalog",
+      "monitor_status": "changed",
+      "catalog_url": "https://www.isaca.org/credentialing",
+      "added": [
+        {
+          "title": "AAIG – Advanced in AI Governance (Beta)",
+          "url": "https://www.isaca.org/credentialing/aaig"
+        },
+        {
+          "title": "COBIT® 7 Foundation Certificate",
+          "url": "https://www.isaca.org/credentialing/cobit-7-foundation"
+        }
+      ],
+      "missing": [
+        {
+          "title": "COBIT 5 Certificates",
+          "url": "https://www.isaca.org/credentialing/cobit-5-certificates"
+        }
+      ],
+      "changed": [
+        {
+          "before_title": "COBIT Design & Implementation Certificate Program",
+          "after_title": "COBIT 2019 Design & Implementation",
+          "url": "https://www.isaca.org/credentialing/cobit-design-and-implementation"
+        },
+        {
+          "before_title": "COBIT Foundation Certificate",
+          "after_title": "COBIT 19 Foundation",
+          "url": "https://www.isaca.org/credentialing/cobit-foundation"
+        }
+      ],
+      "classification": "new governance beta and new foundation certificate",
+      "scope": "outside selected CISA, CISM and CRISC",
+      "observation": "AAIG Advanced in AI Governance exists as a beta; ISACA states its application period is closed. COBIT 7 Foundation is a distinct certificate exam with open registration and no prerequisites. COBIT 2019 labels changed. Absence of COBIT 5 from this list does not date the award's retirement.",
+      "recommendation": "Record AAIG as closed beta/watch and COBIT 7 as a certificate assessment for a breadth decision, separate from existing professional certifications.",
+      "confidence": "high",
+      "opened_primary_urls": [
+        "https://www.isaca.org/credentialing/aaig",
+        "https://www.isaca.org/credentialing/cobit-7-foundation"
+      ]
+    },
+    {
+      "id": "ibm-catalog",
+      "monitor_status": "manual-review",
+      "catalog_url": "https://www.ibm.com/training/credentials/certifications",
+      "monitor_limit": "Expected catalog content missing; possible login, challenge, or page shell",
+      "added": [],
+      "missing": [],
+      "changed": [],
+      "classification": "manual, official portal lacks comparable catalog body",
+      "scope": "six selected IBM anchors plus IBM Bob; no comparable full provider delta",
+      "observation": "The IBM Training certifications URL did not expose individual comparable records in the readable shell. Existing IBM examination routes in the research packets provide narrower evidence.",
+      "recommendation": "Leave catalog differential unresolved. Independently verify an individual qualifying exam number before adding a new identity.",
+      "confidence": "limited",
+      "opened_primary_urls": [
+        "https://www.ibm.com/training/credentials/certifications"
+      ]
+    },
+    {
+      "id": "oracle-catalog",
+      "monitor_status": "changed",
+      "catalog_url": "https://www.oracle.com/education/certification/",
+      "added": [
+        {
+          "title": "Oracle ClearTrial Implementation Consultant Foundations Associate",
+          "url": "https://mylearn.oracle.com/ou/exam-unproctored/oracle-cleartrial-implementation-consultant-foundations-associate-1z0-2500/165765/279455"
+        },
+        {
+          "title": "Oracle Cloud Infrastructure AI Foundations Associate",
+          "url": "https://mylearn.oracle.com/ou/exam-unproctored/oracle-cloud-infrastructure-ai-foundations-associate-1z0-1122-26-new/163544/271370"
+        },
+        {
+          "title": "Oracle Fusion AI Agent Studio Foundations Associate - Rel 1",
+          "url": "https://mylearn.oracle.com/ou/exam-unproctored/oracle-fusion-ai-agent-studio-foundations-associate-rel-1-beta-1z0-1145-1/152170/251161"
+        },
+        {
+          "title": "Oracle Fusion AI Agent Studio Foundations Associate - Rel 26-2",
+          "url": "https://mylearn.oracle.com/ou/exam-unproctored/oracle-fusion-ai-agent-studio-foundations-associate-rel-26-2-1z0-1145-2/151552/282619"
+        },
+        {
+          "title": "Oracle Fusion Data Intelligence Authoring Foundations Associate",
+          "url": "https://mylearn.oracle.com/ou/exam-unproctored/oracle-fusion-data-intelligence-authoring-foundations-associate-1z0-1228-26/165565/282109"
+        },
+        {
+          "title": "Oracle Multicloud Foundations Associate",
+          "url": "https://mylearn.oracle.com/ou/exam-unproctored/oracle-multicloud-foundations-associate-1z0-1144-26/166469/282133"
+        },
+        {
+          "title": "Oracle Planning + AI 2026 Implementation Professional - Delta",
+          "url": "https://mylearn.oracle.com/ou/exam-unproctored/oracle-planning-ai-2026-implementation-professional-1d0-1080-26-d/162808/271461"
+        },
+        {
+          "title": "Oracle Exadata Database Service Professional",
+          "url": "https://mylearn.oracle.com/ou/exam/1z0-1193-26-oracle-exadata-database-service-professional/163295/166647/281192"
+        },
+        {
+          "title": "Oracle AI Data Platform Professional",
+          "url": "https://mylearn.oracle.com/ou/exam/oracle-ai-data-platform-professional-1z0-1154-26/163295/166071/280598"
+        },
+        {
+          "title": "Oracle AI Database@AWS Architect Professional",
+          "url": "https://mylearn.oracle.com/ou/exam/oracle-databaseaws-architect-professional-1z0-1146/105037/155434/258965"
+        },
+        {
+          "title": "Oracle Fusion AI Agent Studio Developer Professional - Rel 26-3",
+          "url": "https://mylearn.oracle.com/ou/exam/oracle-fusion-ai-agent-studio-developer-professional-rel-26-3-1z0-1155-3/107076/167036/283240"
+        },
+        {
+          "title": "Oracle Fusion Cloud Applications: Enterprise Resource Planning (ERP) AI Agent Studio Master",
+          "url": "https://mylearn.oracle.com/ou/exam/oracle-fusion-cloud-applications-enterprise-resource-planning-erp-ai-agent-studio-master-1z0-1201/107076/166068/280596"
+        },
+        {
+          "title": "Oracle Fusion Cloud Applications: Enterprise Resource Planning (HCM) AI Agent Studio Master",
+          "url": "https://mylearn.oracle.com/ou/exam/oracle-fusion-cloud-applications-human-capital-management-hcm-ai-agent-studio-master-1z0-1202/107076/166069/280597"
+        },
+        {
+          "title": "Oracle Fusion Cloud Applications: Supply Chain & Manufacturing (SCM) AI Agent Studio Master",
+          "url": "https://mylearn.oracle.com/ou/exam/oracle-fusion-cloud-applications-supply-chain-manufacturing-scm-ai-agent-studio-master-1z0-1200/107076/166067/280595"
+        },
+        {
+          "title": "Oracle Planning + AI 2026 Implementation Professional",
+          "url": "https://mylearn.oracle.com/ou/exam/oracle-planning-ai-2026-implementation-professional-1z0-1080-26/107076/160639/268937"
+        }
+      ],
+      "missing": [
+        {
+          "title": "Oracle Health Primary Implementation Consultant Foundations Associate",
+          "url": "https://mylearn.oracle.com/ou/exam-unproctored/oracle-health-primary-implementation-consultant-foundations-associate-1z0-2000/163848/269481"
+        },
+        {
+          "title": "MySQL 8.0 Database Administrator",
+          "url": "https://mylearn.oracle.com/ou/exam/mysql-80-database-administrator-1z0-908/105037/110678/170386"
+        },
+        {
+          "title": "Oracle AI Agent Studio for Fusion Applications Developers Professional",
+          "url": "https://mylearn.oracle.com/ou/exam/oracle-ai-agent-studio-for-fusion-applications-developers-professional-1z0-1155-1/46418/154843/257481"
+        },
+        {
+          "title": "Oracle VM 3.0 for x86 Essentials",
+          "url": "https://mylearn.oracle.com/ou/exam/oracle-vm-30-for-x86-essentials-1z0-590/105037/110673/170376"
+        },
+        {
+          "title": "Oracle Fusion AI Agent Studio Foundations Associate",
+          "url": "https://mylearn.oracle.com/ou/learning-path/oracle-fusion-ai-agent-studio-foundations-associate-1z0-1145-1/152170"
+        }
+      ],
+      "changed": [
+        {
+          "before_title": "Oracle Fusion AI Agent Studio Developer Professional",
+          "after_title": "Oracle Fusion AI Agent Studio Developer Professional - Rel 26-2",
+          "url": "https://mylearn.oracle.com/ou/exam/oracle-fusion-ai-agent-studio-developer-professional-rel-26-2-1z0-1155-2/107076/160602/268909"
+        }
+      ],
+      "classification": "mixed Oracle breadth candidates and version/track changes",
+      "scope": "outside selected Oracle Java, OCI and database exam list",
+      "observation": "The issuer catalog's named deep links include OCI AI Foundations Associate 1Z0-1122-26, Multicloud Foundations Associate 1Z0-1144-26, Exadata Database Service Professional 1Z0-1193-26, AI Data Platform Professional 1Z0-1154-26 and AI Database@AWS Architect Professional 1Z0-1146. Other additions include Fusion release strands, delta and full exam routes, and industry-specific credentials. The ERP/HCM mixed label requires checking. Direct MyLearn pages reviewed exposed an app shell or could not be rendered.",
+      "recommendation": "Queue the five named cloud/data candidates for bounded exam-page and scope confirmation. For other catalog entries retain the release number, featured title and exact URL as leads. Catalog membership changes alone do not establish launch, retirement or availability.",
+      "confidence": "medium for named identities; open-booking and removed-item status unresolved",
+      "opened_primary_urls": [
+        "https://mylearn.oracle.com/ou/exam-unproctored/oracle-cloud-infrastructure-ai-foundations-associate-1z0-1122-26-new/163544/271370",
+        "https://mylearn.oracle.com/ou/exam/oracle-ai-data-platform-professional-1z0-1154-26/163295/166071/280598",
+        "https://www.oracle.com/education/certification/"
+      ]
+    },
+    {
+      "id": "openai-academy-catalog",
+      "monitor_status": "changed",
+      "catalog_url": "https://help.openai.com/en/articles/20001270-openai-academy-courses",
+      "added": [],
+      "missing": [],
+      "changed": [
+        {
+          "before_title": "Agents and Workflows",
+          "after_title": "Agents and Workflows",
+          "url": "https://help.openai.com/en/articles/20001270-openai-academy-courses"
+        },
+        {
+          "before_title": "AI for College Students",
+          "after_title": "AI for College Students",
+          "url": "https://help.openai.com/en/articles/20001270-openai-academy-courses"
+        },
+        {
+          "before_title": "AI for Educators",
+          "after_title": "AI for Educators",
+          "url": "https://help.openai.com/en/articles/20001270-openai-academy-courses"
+        },
+        {
+          "before_title": "AI Foundations",
+          "after_title": "AI Foundations",
+          "url": "https://help.openai.com/en/articles/20001270-openai-academy-courses"
+        },
+        {
+          "before_title": "AI Leadership",
+          "after_title": "AI Leadership",
+          "url": "https://help.openai.com/en/articles/20001270-openai-academy-courses"
+        },
+        {
+          "before_title": "Applied AI Foundations",
+          "after_title": "Applied AI Foundations",
+          "url": "https://help.openai.com/en/articles/20001270-openai-academy-courses"
+        },
+        {
+          "before_title": "Build with Retrieval-Augmented Generation",
+          "after_title": "Build with Retrieval-Augmented Generation",
+          "url": "https://help.openai.com/en/articles/20001270-openai-academy-courses"
+        },
+        {
+          "before_title": "Design and Build Agentic Systems",
+          "after_title": "Design and Build Agentic Systems",
+          "url": "https://help.openai.com/en/articles/20001270-openai-academy-courses"
+        },
+        {
+          "before_title": "Evaluate AI Applications",
+          "after_title": "Evaluate AI Applications",
+          "url": "https://help.openai.com/en/articles/20001270-openai-academy-courses"
+        },
+        {
+          "before_title": "Extend Codex Workflows",
+          "after_title": "Extend Codex Workflows",
+          "url": "https://help.openai.com/en/articles/20001270-openai-academy-courses"
+        },
+        {
+          "before_title": "Get Started with Codex",
+          "after_title": "Get Started with Codex",
+          "url": "https://help.openai.com/en/articles/20001270-openai-academy-courses"
+        },
+        {
+          "before_title": "Optimize AI Application Performance",
+          "after_title": "Optimize AI Application Performance",
+          "url": "https://help.openai.com/en/articles/20001270-openai-academy-courses"
+        },
+        {
+          "before_title": "Scale Codex Across Governed Teams and Systems",
+          "after_title": "Scale Codex Across Governed Teams and Systems",
+          "url": "https://help.openai.com/en/articles/20001270-openai-academy-courses"
+        },
+        {
+          "before_title": "Scope AI Solutions",
+          "after_title": "Scope AI Solutions",
+          "url": "https://help.openai.com/en/articles/20001270-openai-academy-courses"
+        }
+      ],
+      "classification": "course metadata",
+      "scope": "course and credential landscape monitoring",
+      "observation": "Fourteen stable Academy entries changed in descriptive text. The official Academy help page describes sign-in, free courses, assessments and Academy completion badges.",
+      "recommendation": "Keep as Academy learning resources. No newly distinguished exam identity surfaced.",
+      "confidence": "high",
+      "opened_primary_urls": [
+        "https://help.openai.com/en/articles/20001270-openai-academy-courses"
+      ]
+    },
+    {
+      "id": "aws-announcements",
+      "monitor_status": "changed",
+      "catalog_url": "https://aws.amazon.com/blogs/training-and-certification/",
+      "added": [
+        {
+          "title": "Build, deploy, and harden AI agents: Three new AWS Jam experiences now available",
+          "url": "https://aws.amazon.com/blogs/training-and-certification/build-deploy-and-harden-ai-agents-three-new-aws-jam-experiences-now-available"
+        },
+        {
+          "title": "new-digital-courses-for-how-to-optimize-ai-compute-and-containers-on-aws",
+          "url": "https://aws.amazon.com/blogs/training-and-certification/new-digital-courses-for-how-to-optimize-ai-compute-and-containers-on-aws"
+        },
+        {
+          "title": "Prove your agentic AI skills: Two new microcredentials now available",
+          "url": "https://aws.amazon.com/blogs/training-and-certification/prove-your-agentic-ai-skills-two-new-microcredentials-now-available"
+        },
+        {
+          "title": "Register now: Updated Developer Associate and Solutions Architect Professional exams",
+          "url": "https://aws.amazon.com/blogs/training-and-certification/register-now-updated-developer-associate-and-solutions-architect-professional-exams"
+        }
+      ],
+      "missing": [
+        {
+          "title": "Introducing AWS SimuLearn learning plan badges: Verifiable proof of hands-on cloud skills",
+          "url": "https://aws.amazon.com/blogs/training-and-certification/introducing-aws-simulearn-learning-plan-badges-verifiable-proof-of-hands-on-cloud-skills"
+        },
+        {
+          "title": "Introducing Self-Paced Trivia and Polls: new ways to compete and connect in AWS Skill Builder Trivia",
+          "url": "https://aws.amazon.com/blogs/training-and-certification/introducing-self-paced-trivia-and-polls-new-ways-to-compete-and-connect-in-aws-skill-builder-trivia"
+        },
+        {
+          "title": "Updates to AWS Certified Machine Learning Engineer – Associate (MLA-C02)",
+          "url": "https://aws.amazon.com/blogs/training-and-certification/updates-to-aws-certified-machine-learning-engineer-associate-mla-c02"
+        },
+        {
+          "title": "What’s new in Cohorts Studio: Edit, collaborate, and scale",
+          "url": "https://aws.amazon.com/blogs/training-and-certification/whats-new-in-cohorts-studio-edit-collaborate-and-scale"
+        }
+      ],
+      "changed": [],
+      "classification": "two existing version intakes; adjacent training/microcredentials",
+      "scope": "DVA-C03/SAP-C03 in scope and already seeded; microcredentials adjacent",
+      "observation": "AWS announces open registration for DVA-C03 and SAP-C03. Another story announces two distinct agentic AI microcredentials; the other additions are Jam experiences and digital courses. Removed feed articles, including an MLA-C02 update, do not indicate exam retirement.",
+      "recommendation": "Use the official dated announcement for both existing successor seeds. Retain the microcredentials as adjacent and the Jams/courses as preparation.",
+      "confidence": "high",
+      "opened_primary_urls": [
+        "https://aws.amazon.com/blogs/training-and-certification/register-now-updated-developer-associate-and-solutions-architect-professional-exams",
+        "https://aws.amazon.com/blogs/training-and-certification/prove-your-agentic-ai-skills-two-new-microcredentials-now-available"
+      ]
+    },
+    {
+      "id": "microsoft-retirements",
+      "monitor_status": "changed",
+      "catalog_url": "https://learn.microsoft.com/en-us/credentials/support/retired-certification-exams",
+      "added": [
+        {
+          "title": "AZ-400",
+          "url": "https://learn.microsoft.com/en-us/credentials/support/retired-certification-exams",
+          "catalog_detail": "AZ-400 | Microsoft Certified: DevOps Engineer Expert | February 01, 2027"
+        },
+        {
+          "title": "MB-330",
+          "url": "https://learn.microsoft.com/en-us/credentials/support/retired-certification-exams",
+          "catalog_detail": "MB-330 | Microsoft Certified: Dynamics 365 Supply Chain Management Functional Consultant Associate | February 01, 2027"
+        },
+        {
+          "title": "PL-400",
+          "url": "https://learn.microsoft.com/en-us/credentials/support/retired-certification-exams",
+          "catalog_detail": "PL-400 | Microsoft Certified: Microsoft Power Platform Developer | October 30, 2026"
+        }
+      ],
+      "missing": [],
+      "changed": [],
+      "classification": "three dated transitions for existing exams",
+      "scope": "in-scope lifecycle updates on existing credentials",
+      "observation": "Microsoft's table dates MB-330 and AZ-400 retirement February 1, 2027. PL-400 retired October 30, 2026. Its individual page confirms the time and new AB-400 registration; the Power Platform Developer Associate credential continues.",
+      "recommendation": "Record published dates in the existing lifecycle records with their correct subject and direction. Do not mark future retirements as already effective.",
+      "confidence": "high",
+      "opened_primary_urls": [
+        "https://learn.microsoft.com/en-us/credentials/support/retired-certification-exams",
+        "https://learn.microsoft.com/en-us/credentials/certifications/exams/pl-400/"
+      ]
+    },
+    {
+      "id": "openai-certified-status",
+      "monitor_status": "changed",
+      "catalog_url": "https://help.openai.com/en/articles/20001151-openai-certified-app",
+      "added": [],
+      "missing": [],
+      "changed": [
+        {
+          "before_title": "Containment of Memory and Chat History",
+          "after_title": "Containment of memory and chat history",
+          "url": "https://help.openai.com/en/articles/20001151-openai-certified-app"
+        },
+        {
+          "before_title": "Usage Data Access",
+          "after_title": "Usage data access",
+          "url": "https://help.openai.com/en/articles/20001151-openai-certified-app"
+        }
+      ],
+      "classification": "heading case changes",
+      "scope": "access/status resource for adjacent learning offering",
+      "observation": "Only the casing of 'Containment of memory and chat history' and 'Usage data access' changed. The help article still explains access to Coursera-powered courses and eligible OpenAI credentials.",
+      "recommendation": "No intake or lifecycle change from these headings.",
+      "confidence": "high",
+      "opened_primary_urls": [
+        "https://help.openai.com/en/articles/20001151-openai-certified-app"
+      ]
+    },
+    {
+      "id": "anthropic-certification-catalog",
+      "monitor_status": "changed",
+      "catalog_url": "https://anthropic-partners.skilljar.com/page/partner-certifications",
+      "added": [],
+      "missing": [],
+      "changed": [
+        {
+          "before_title": "Claude Certified Architect – Foundations",
+          "after_title": "Architect – Foundations ​",
+          "url": "https://anthropic-partners.skilljar.com/claude-certified-architect-foundations-certification"
+        },
+        {
+          "before_title": "Claude Certified Architect - Professional",
+          "after_title": "Architect – Professional ​",
+          "url": "https://anthropic-partners.skilljar.com/claude-certified-architect-professional-certification"
+        },
+        {
+          "before_title": "Claude Certified Associate - Foundations",
+          "after_title": "Associate – Foundations ​",
+          "url": "https://anthropic-partners.skilljar.com/claude-certified-associate-foundations-certification"
+        },
+        {
+          "before_title": "Claude Certified Developer - Foundations",
+          "after_title": "Developer – Foundations ​",
+          "url": "https://anthropic-partners.skilljar.com/claude-certified-developer-foundations-certification"
+        }
+      ],
+      "classification": "same four partner qualifications with shorter labels",
+      "scope": "existing monitored partner exam tracks",
+      "observation": "The partner portal still names Associate Foundations, Developer Foundations and Architect Foundations/Professional on its certification table. Navigation shortened the four labels and retained their catalog keys. The site describes eligibility per track.",
+      "recommendation": "Retain existing partner credential identities and access limits. No new award can be inferred from the title truncations.",
+      "confidence": "high",
+      "opened_primary_urls": [
+        "https://anthropic-partners.skilljar.com/page/partner-certifications"
+      ]
+    },
+    {
+      "id": "salesforce-consultant-catalog",
+      "monitor_status": "changed",
+      "catalog_url": "https://trailhead.salesforce.com/en/credentials/consultantoverview",
+      "added": [
+        {
+          "title": "Salesforce Certified Public Sector Solutions Consultant",
+          "url": "https://trailhead.salesforce.com/en/credentials/publicsectorsolutionsconsultant"
+        }
+      ],
+      "missing": [],
+      "changed": [],
+      "classification": "one newly surfaced consultant credential",
+      "scope": "outside selected Platform Administrator, App Builder, Platform Developer and Agentforce Specialist",
+      "observation": "Salesforce Certified Public Sector Solutions Consultant has its own Trailhead credential page, audience, role definition and preparation trail. It is a consultant specialization in public sector agency deployments.",
+      "recommendation": "Queue as a distinct breadth candidate. Verify exam details/booking before assigning an exact version, launch or delivery date.",
+      "confidence": "high on identity; seat availability unverified",
+      "opened_primary_urls": [
+        "https://trailhead.salesforce.com/en/credentials/publicsectorsolutionsconsultant"
+      ]
+    },
+    {
+      "id": "aws-exam-guide-index",
+      "monitor_status": "changed",
+      "catalog_url": "https://docs.aws.amazon.com/aws-certification/latest/examguides/aws-certification-exam-guides.html",
+      "added": [
+        {
+          "title": "AWS Certified Developer - Associate (DVA-C03)",
+          "url": "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-03.html"
+        },
+        {
+          "title": "AWS Certified Solutions Architect - Professional (SAP-C03)",
+          "url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-professional-03.html"
+        }
+      ],
+      "missing": [
+        {
+          "title": "AWS Certified Machine Learning Engineer - Associate (MLA-C01)",
+          "url": "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-01.html"
+        }
+      ],
+      "changed": [],
+      "classification": "two existing successor exams; one archived index link",
+      "scope": "in-scope exams already seeded",
+      "observation": "AWS added exam guides for DVA-C03 and SAP-C03, already paired to the previous versions in the updated seed inventory. The MLA-C01 English HTML index entry disappeared. AWS's older guide and locale-dependent delivery information are separate evidence.",
+      "recommendation": "Retain the two updated guide links and use version-/language-specific retirement statements for MLA-C01. Do not infer universal retirement from English HTML navigation.",
+      "confidence": "high",
+      "opened_primary_urls": [
+        "https://docs.aws.amazon.com/aws-certification/latest/examguides/aws-certification-exam-guides.html"
+      ]
+    },
+    {
+      "id": "comptia-security-versions",
+      "monitor_status": "changed",
+      "catalog_url": "https://www.comptia.org/en-us/certifications/security/",
+      "added": [],
+      "missing": [],
+      "changed": [
+        {
+          "before_title": "Security+ V7 Security Analyst Security Engineer Systems Administrator Learn More",
+          "after_title": "Security+ V7 (Retiring Version) Security Analyst Security Engineer Systems Administrator Learn More",
+          "url": "https://www.comptia.org/en-us/certifications/security/v7"
+        },
+        {
+          "before_title": "Security+ V8 (Coming November 2026) Security Analyst Security Engineer Systems Administrator Learn More",
+          "after_title": "Security+ V8 (New Version) Security Analyst Security Engineer Systems Administrator Learn More",
+          "url": "https://www.comptia.org/en-us/certifications/security/v8"
+        }
+      ],
+      "classification": "existing version transition",
+      "scope": "in-scope exam successor already seeded",
+      "observation": "CompTIA's individual V8 page states Security+ SY0-801 launched November 17, 2026. Its V7 page names SY0-701 with English retirement June 11, 2027, and Japanese, Portuguese, Spanish and Thai retirement August 13, 2027.",
+      "recommendation": "Already represented as a new successor seed and a version-selection note in the V7 guide. Scope each record to its own objectives and dates.",
+      "confidence": "high",
+      "opened_primary_urls": [
+        "https://www.comptia.org/en-us/certifications/security/v8",
+        "https://www.comptia.org/en-us/certifications/security/v7",
+        "https://www.comptia.org/en-us/certifications/security/v7/",
+        "https://www.comptia.org/en-us/certifications/security/v8/"
+      ]
+    }
+  ],
+  "targeted_followup": {
+    "checked_on": "2026-11-23",
+    "scope": "Targeted read-only follow-up against the publication worktree, Nov 20 Microsoft group 02/04, and the frozen Nov 23 status candidates.",
+    "records": [
+      {
+        "code": "AI-300",
+        "scope": "existing guide and credential",
+        "nov20_context": "Group 02 verified the credential/scheduling, Azure ML SDK/CLI and accelerator resource. The guide already describes the signed-in Skills Navigator practice assessment.",
+        "objective_sha256_unchanged": "79d7fabcf253e7ac5f5f7629397075867d22c48045c2483c9d03e1b217215f41",
+        "status_sha256_before": "b86beba443622c4507335eafac190c71128e28d607f1fac563278202be008919",
+        "status_sha256_after": "34a489bd98a01caa8f82f759fee33a686a3802781d63001333e8135cc852fe64",
+        "finding": "Only the study guide's fallback page-updated date changed from October 15 to November 23. There is no skills-effective date or new announcement. The separate credential still shows October 7. The live study guide continues to point to AI Skills Navigator. The registration and credential identity evidence does not support a lifecycle change.",
+        "action": "Update the guide's current baseline and upcoming-check dates/wording and accept the status snapshot with the unchanged objective hash. Keep the existing scope and full-review dates.",
+        "suggested_baseline": "Microsoft last updated the study-guide page on November 23, 2026. It gives no separate skills-effective date. The 58 detailed objectives match the accepted wording. The credential page was updated October 7.",
+        "urls": [
+          "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-300",
+          "https://learn.microsoft.com/en-us/credentials/certifications/operationalizing-machine-learning-and-generative-ai-solutions/",
+          "https://aka.ms/AI300-PA",
+          "https://aiskillsnavigator.microsoft.com/en-us/credentials/cert-6e7fcf9954d1620318e5d199346ace3b7bd84edc8be79e735bcdc09ada8437bf"
+        ]
+      },
+      {
+        "code": "MS-102",
+        "scope": "existing retiring exam and expert credential",
+        "nov20_context": "Group 04 and the published guide already describe the November 30 retirement, four possible qualifying associates, and AB-650 as the separate associate credential/Modern Work mapping.",
+        "objective_sha256_unchanged": "97ce6b34e98fb43947409e8b7997f3de72e6cae7a62102dfdea849bfb177c92a",
+        "status_sha256_before": "774becfc67b7184d9d8e0868e20d03dc74c7f38a3b1edcfc2983bb8a920cca09",
+        "status_sha256_after": "b807f0edb8494fd334ef29b3bdf0ca568d364e0a2834f272f6d55a242ef0e0b5",
+        "finding": "The November 20-dated study-guide page now has a practice-assessment tip in place of its retirement banner. The April 28 skills baseline and all extracted objectives remain identical. The exam banner still states November 30, 2026 at 11:59 p.m. Central Standard Time, and the award notice and retirement table independently confirm November 30. The same exam page's generic field reads 'Retirement date: none'; the explicit dated exam and credential notices take precedence.",
+        "practice": "Microsoft now prioritizes the signed-in AI Skills Navigator practice assessment. Legacy Learn assessment remains available and Microsoft says it is no longer updated. Both issuer short URLs currently resolve to Bing (including the HTTP new-assessment link as printed). The guide's direct legacy assessment URL opens a page titled Practice Assessment | Microsoft Learn. Candidate questions/attempts and a working exam-specific navigator deep link were not verified.",
+        "action": "Preserve retirement and AB-650 qualification distinction. Accept the snapshot only as a record of the study-guide banner removal. Mark the current practice link and guide resources row as legacy, refer readers to the practice tip on the official study guide, and visibly acknowledge its faulty shortcuts. Keep full-review dates.",
+        "urls": [
+          "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-102",
+          "https://learn.microsoft.com/en-us/credentials/certifications/exams/ms-102/",
+          "https://learn.microsoft.com/en-us/credentials/certifications/m365-administrator-expert/",
+          "https://learn.microsoft.com/en-us/credentials/support/retired-certification-exams",
+          "https://learn.microsoft.com/en-us/credentials/certifications/ai-services-administrator-associate/",
+          "https://learn.microsoft.com/en-us/partner-center/announcements/2026-october",
+          "http://aka.ms/MS102-PA",
+          "https://aka.ms/MS102-LearnPA",
+          "https://learn.microsoft.com/en-us/credentials/certifications/exams/ms-102/practice/assessment?assessment-type=practice&assessmentId=75"
+        ]
+      },
+      {
+        "code": "ADS-B01",
+        "scope": "new Snowflake specialty outside the selected SOL-C01, COF-C03, DEA-C02, GES-C02 inventory",
+        "finding": "The Snowflake portfolio lists Gen AI alongside AI Governance & Security. The latter has its own ADS-B01 title, governance and Cortex AI controls objectives and CertMetrics registration link. GES-C02 retains its own preparation and registration page. The Security Engineer retirement FAQ explains that an unnamed future security certification will be announced in early 2027; the FAQ does not identify ADS-B01 as that future credential.",
+        "action": "Queue a separate breadth candidate. Do not attach it as successor to GES-C02, the retiring Security Engineer, or another selected SnowPro. Portal registration exists; no exam-specific seat, official beta/GA statement or release date was verified.",
+        "urls": [
+          "https://learn.snowflake.com/en/certifications/",
+          "https://learn.snowflake.com/en/certifications/snowpro-AIGovernance%26Security/",
+          "https://learn.snowflake.com/en/certifications/snowpro-GenAI-C02/",
+          "https://learn.snowflake.com/en/certifications/snowpro-advanced-securityengineer/",
+          "https://publish-p93462-e887935.adobeaemcloud.com/content/dam/SecurityEngineerRetirementFAQ.pdf"
+        ]
+      },
+      {
+        "code": "NCA-AMAD",
+        "scope": "new NVIDIA associate breadth candidate",
+        "finding": "The issuer portfolio lists distinct NCA-GENL and NCA-AMAD cards. Each credential page links to a separate, exact Certiverse checkout identifier. NCA-AMAD covers AI model/app development and deployment.",
+        "action": "Queue as separate credential with published registration. Preserve NCA-GENL. No appointment was booked.",
+        "urls": [
+          "https://www.nvidia.com/en-us/learn/certification/",
+          "https://www.nvidia.com/en-us/learn/certification/ai-model-application-development-associate/",
+          "https://www.nvidia.com/en-us/learn/certification/generative-ai-llm-associate/"
+        ],
+        "issuer_link_targets": [
+          "https://www.certiverse.com/#/checkout/nvidia/store-exam/NCA-AMAD",
+          "https://www.certiverse.com/#/checkout/nvidia/store-exam/NCA-GENL"
+        ]
+      },
+      {
+        "code": "NCA-APC",
+        "scope": "new NVIDIA associate breadth candidate with upcoming registration",
+        "finding": "AI Power and Cooling covers cross-trade facilities knowledge. Its dedicated page says registration is coming soon. The selected AI Infrastructure and Operations Associate NCA-AIIO and professional AI Operations NCP-AIO have distinct pages with registration links.",
+        "action": "Watch the opening of registration without marking NCA-AIIO or NCP-AIO as superseded.",
+        "urls": [
+          "https://www.nvidia.com/en-us/learn/certification/",
+          "https://www.nvidia.com/en-us/learn/certification/ai-power-and-cooling-associate/",
+          "https://www.nvidia.com/en-us/learn/certification/ai-infrastructure-operations-associate/",
+          "https://www.nvidia.com/en-us/learn/certification/ai-operations-professional/"
+        ]
+      },
+      {
+        "code": "NCA-OUSD / NCA-OFW",
+        "scope": "one distinct OpenUSD associate breadth candidate with a conflicting provider code",
+        "finding": "The portfolio card says NCA-OFW and links to the OpenUSD Foundations and Workflows Associate page. The latter gives NCA-OUSD in the heading, exam details and prep. Both Register for Exam controls are buttons without href or an exposed checkout target. The credential covers OpenUSD composition and workflows; no link to an existing inventory predecessor was found.",
+        "action": "Keep this as one unresolved-code candidate. Use the official title, record both codes, and wait for an operational provider registration path or explicit clarification before creating a unique-code seed.",
+        "urls": [
+          "https://www.nvidia.com/en-us/learn/certification/",
+          "https://www.nvidia.com/en-us/learn/certification/openusd-foundations-workflows-associate/"
+        ]
+      }
+    ],
+    "confidence": "High on unchanged Microsoft hashes, page text, issuer classifications and code conflict. Limits for beta/GA, scheduling and actual assessment access are recorded per item."
+  }
+}

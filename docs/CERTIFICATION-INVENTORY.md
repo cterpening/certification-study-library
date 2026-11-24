@@ -20,6 +20,8 @@ that its sources have been reviewed. Repository validation requires every
 published guide to have a seed, while research-only seeds remain valid inventory
 entries without a full guide.
 
+[November 23, 2026 library refresh and per-certification evidence](research/2026-11-23-library-refresh.md)
+
 ## Current coverage baseline
 
 The November intake adds guides for Microsoft's AB-330 and GitHub's GH-700,
@@ -39,12 +41,11 @@ The Azure and HashiCorp baseline was verified on August 31, 2026. The broader
 Microsoft catalog expansion was rechecked on September 1, 2026 and is being
 published one source-validated guide at a time.
 
-The Python Institute/OpenEDG catalog was checked September 2, 2026. It adds ten
-current exam versions: three general-purpose programming exams, two data exams,
-two testing exams, and one each for security, automation, and artificial
-intelligence. PCEA-30-01 is labeled beta because the official page describes
-limited availability through a small-market trial. Announced replacements and
-work-in-progress tracks stay outside the query list until they are earnable.
+The September Python Institute inventory covered ten exam versions. The November
+inventory contains 13. PCEP-30-03 and PCAP-31-04 launched October 31, 2026,
+and PCPP1-32-102 launched November 9. Candidates can still take the three
+preceding versions through November 30, 2027. PCEA-30-01 is active on the
+issuer's exam information page. [Python version transitions](research/2026-11-23-refresh-16.md) · [PCEA exam information](https://pythoninstitute.org/pcea)
 
 The adjacent OpenEDG programming inventory adds the six active C++ Institute
 C/C++ exams and four active JS Institute JavaScript/web-development exams shown
@@ -70,15 +71,15 @@ current `AZ-*` exams that the product facet misses and SC-100 because it is the
 expert cybersecurity architecture path over Azure security, identity, and
 operations credentials. It excludes Applied Skills and retired credentials.
 AB-100 and PL-900 are retained separately because this library already publishes
-those guides. AI-500 remains beta; AZ-802 is active as checked September 27, 2026.
+those guides. The November intake records AI-500 and AZ-802 as active.
+[AI-500 study guide](../guides/AI-500-designing-implementing-multi-agent-ai-solutions.md)
 
 ### Microsoft beyond Azure
 
-The broader Microsoft expansion uses the unfiltered official Microsoft Learn
-certification catalog while excluding Applied Skills and Microsoft Office
-Specialist credentials. Microsoft Certified Educator is also deferred. A
-credential enters the generated query list when its guide is published, so each
-per-certification commit remains independently valid and reviewable.
+The September expansion selected entries from the official Microsoft Learn
+certification catalog. Its scope excluded Applied Skills, Microsoft Office
+Specialist and Microsoft Certified Educator. The November intake separately
+added the announced MO-410 Outlook exam to the research inventory.
 
 The September 1, 2026 final reconciliation closed the selected Microsoft phase
 at 50 published exam guides. The official retirement indexes confirm that
@@ -89,20 +90,13 @@ beta, and still-earnable announced-retirement exams, including AZ-800/AZ-801,
 AZ-802, SC-500 and MS-102. This is a curated current catalog, not a promise to
 publish every historical Microsoft exam.
 
-MS-102 is included as an announced-retirement credential because its exam and
-Microsoft 365 Certified: Administrator Expert certification remain earnable
-through November 30, 2026. Microsoft had not named a direct replacement as of
-the September 1 review.
+Microsoft lists November 30, 2026 as the retirement date for MS-102 and its
+Administrator Expert credential. Partner Center identifies AB-650 for the
+Modern Work designation path. AB-650 is an active associate credential.
+[MS-102 guide](../guides/MS-102-microsoft-365-administrator.md) · [AB-650 guide](../guides/AB-650-ai-services-administrator-associate.md)
 
-AB-650 is included as a beta credential. Its official study guide was last
-updated July 27, 2026 without a separate “skills measured as of” date, and Microsoft had
-not yet published a Practice Assessment as of the September 1 review. Beta exam
-status, objectives, product surfaces, languages, scoring timing, and assessment
-availability must be rechecked before scheduling.
-
-SC-401 is included as the active Microsoft Certified: Information Security
-Administrator Associate exam. Its current skills baseline is July 28, 2026;
-Microsoft publishes a free Practice Assessment and lists no retirement date.
+SC-401 is active. Its current English skills outline took effect October 28, 2026.
+[SC-401 guide](../guides/SC-401-administering-information-security-microsoft-365.md)
 
 ### Lifecycle and replacement rule
 
@@ -119,9 +113,9 @@ Microsoft publishes a free Practice Assessment and lists no retirement date.
   be verified with the vendor; it does not imply automatic conversion to the new
   credential.
 
-AZ-800 and AZ-801 remain in the current catalog, but Microsoft has announced
-that both exams retire on September 30, 2026. Their seed lifecycle is therefore
-`retirement-announced`, not merely `active`.
+AZ-800 and AZ-801 retired September 30, 2026. The library retains their guides
+for historical reference. AZ-802 is the current exam for Windows Server Hybrid
+Administrator Associate. [Microsoft's AZ-802 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802)
 
 [AZ-204](https://learn.microsoft.com/en-us/credentials/support/credential-retirement)
 retired on July 31, 2026, and
@@ -134,18 +128,18 @@ retired credential converts automatically.
 
 ### HashiCorp
 
-The scope is every credential shown in the official [HashiCorp certification
-catalog](https://developer.hashicorp.com/certifications):
+The November 23 inventory covers five HashiCorp credentials.
 
-- HashiCorp Certified: Terraform Associate (004)
-- HashiCorp Certified: Terraform Authoring and Operations Advanced
-- HashiCorp Certified: Vault Associate (003)
-- HashiCorp Certified: Vault Operations Advanced (internal code retained as `VAULT-OPERATIONS-PROFESSIONAL`)
+- Terraform Associate (004)
+- Terraform Infrastructure Engineer Professional (002)
+- Terraform Authoring and Operations Advanced
+- Vault Associate (003)
+- Vault Operations Advanced (repository key `VAULT-OPERATIONS-PROFESSIONAL`)
 
-HashiCorp publishes numeric versions for the associate credentials but does not
-display short exam codes for the two professional credentials. The uppercase
-professional identifiers in this repository are stable query keys, not claimed
-vendor-issued exam codes.
+Infrastructure Engineer Professional is a multiple-choice exam based on Terraform
+1.15. Authoring and Operations Advanced is the lab-based credential with AWS and
+Azure delivery options. The inventory gives each assessment its own query key.
+[HashiCorp catalog](https://developer.hashicorp.com/certifications) · [Assessment and version evidence](research/2026-11-23-refresh-21.md)
 
 ### Databricks
 
@@ -163,50 +157,48 @@ so far. Apply that live-page-plus-linked-PDF rule during every revalidation.
 
 ### AWS
 
-The September 1, 2026 official exam-guide index contains 14 current or announced
-exam-version pages: one Business, two Foundational, six Associate-version, three
-Professional, and two Specialty guides. The count deliberately includes both
-MLA-C01, whose last exam date is September 28, and the MLA-C02 beta replacement,
-whose registration opens September 1 and delivery begins September 29. It also
-includes the newly indexed AIB-C01 business credential. Microcredentials and
-training badges are excluded.
+The September 1 AWS exam-guide index contained 14 current or announced exam
+versions. The English MLA-C01 exam retired September 28. The issuer lists
+continued Japanese, Korean and Simplified Chinese delivery during the transition
+to MLA-C02. Its English beta began September 29. The English SAP-C03 standard
+exam launched November 17. AWS announced December 1 for the DVA-C03 transition.
+The inventory tracks each version and language window separately.
+[AWS transition research](research/2026-11-23-refresh-04.md) · [SAP-C03 and DVA-C03 evidence](research/2026-11-23-refresh-21.md)
 
 ### Red Hat
 
-The selected first wave is not Red Hat's complete catalog. It uses one public,
-performance-based anchor for each chosen specialization: EX200 for Enterprise
-Linux, EX294 for Ansible, EX280 for OpenShift administration, EX378 for
-cloud-native development, and EX267 for AI. Record the tested product versions
-from each exact exam page and label EX280's multiple-version boundary rather than
-combining objectives from an unidentified LMS assignment.
+The selected performance-based exams cover Enterprise Linux (EX200), Ansible
+(EX294), OpenShift administration (EX280), cloud-native development (EX378)
+and AI (EX267). Red Hat now specifies OpenShift 4.22 for both the EX280 exam
+description and its tasks. EX267 uses OpenShift AI 3.3 on OpenShift 4.20.
+[Red Hat exam and training evidence](research/2026-11-23-refresh-17.md)
 
 ### CompTIA
 
-The selected foundation/core set is Tech+ V6 (FC0-U71), A+ V15 Core 1
-(220-1201), A+ V15 Core 2 (220-1202), Network+ V9 (N10-009), Security+ V7
-(SY0-701), Linux+ V8 (XK0-006), and Cloud+ V4 (CV0-004). A+ requires both exams
-from the same version; because their objective maps are independent, this
-library counts and publishes them as two guides.
+Published guides cover Tech+ V6 (FC0-U71), A+ V15 Core 1 and Core 2
+(220-1201 and 220-1202), Network+ V9 (N10-009), Security+ V7 (SY0-701),
+Linux+ V8 (XK0-006) and Cloud+ V4 (CV0-004). A+ requires both cores from
+the same version.
+
+The inventory also includes Security+ V8 (SY0-801), available in English
+since November 17, 2026. V7 retires June 11, 2027 in English and August 13,
+2027 in Japanese, Portuguese, Spanish and Thai.
+[Security+ V7](https://www.comptia.org/en-us/certifications/security/v7/) · [Security+ V8](https://www.comptia.org/en-us/certifications/security/v8/)
 
 ### Linux Foundation and CNCF
 
-The first wave is LFCA, LFCS, CKA, CKAD, and CKS. LFCA is multiple-choice; the
-other four are performance-based. The Kubernetes pages list version 1.35 on the
-September 1 baseline, and CKS requires a previously passed CKA but not an active CKA. Bundles, translations, and
-the rest of the much larger product catalog do not create additional guide
-targets.
+The selected exams are LFCA, LFCS, CKA, CKAD and CKS. LFCA uses multiple-choice
+questions. The other four are performance-based. On November 23, the issuer
+listed Kubernetes v1.37 for CKA, CKAD and CKS. CKS requires a prior CKA pass,
+which may have expired. [Exam environment and prerequisite evidence](research/2026-11-23-refresh-17.md)
 
 ### NVIDIA
 
-The selected first expansion is the active NCA-GENL associate Generative AI
-LLMs credential, NCA-AIIO associate AI Infrastructure and Operations, and
-NCP-AIO professional AI Operations. Their live certification pages expose
-weighted public blueprints and exact delivery/validity contracts. NCP-AIO also
-includes three hands-on labs inside the 120-minute exam and expects Linux CLI,
-Slurm, Kubernetes and Base Command Manager experience. Other NVIDIA associate,
-professional and coming-soon credentials remain future breadth candidates; a
-course certificate or Academy instructor requirement is not treated as a
-separate public certification exam.
+The selected credentials are Generative AI LLMs (NCA-GENL), AI Infrastructure
+and Operations (NCA-AIIO) and AI Operations (NCP-AIO). NCP-AIO publishes 19
+tasks across four domains. Multiple-choice questions and three hands-on
+challenges each contribute half of the overall score. [NVIDIA professional
+exam evidence](research/2026-11-23-refresh-24.md)
 
 ### MongoDB
 

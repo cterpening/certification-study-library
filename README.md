@@ -1,6 +1,8 @@
 # Certification Study Library
 
-An independent, AI-assisted, source-driven library of certification study guides. The collection began with GitHub and Microsoft credentials, includes the current HashiCorp Terraform and Vault catalog and all seven current Databricks certifications, and is now expanding into AWS. Each guide connects public exam objectives with original explanations, practical exercises, and further learning resources.
+An independent, AI-assisted, source-driven library of certification study guides. The collection covers cloud platforms, security, infrastructure, data, programming and enterprise applications. Each guide connects public exam objectives with original explanations, practical exercises, and further learning resources.
+
+The [November 23, 2026 refresh](docs/research/2026-11-23-library-refresh.md) covers 240 certification records across 26 providers, with sources and review status for each.
 
 **Website:** [Browse the searchable study library](https://cterpening.github.io/certification-study-library/)
 
