@@ -489,7 +489,7 @@ This is intentionally **not a complete list**, and it is not a prescription to c
 | [Google Cloud Tech](https://www.youtube.com/@googlecloudtech) | Public | Pick focused playlists/videos; typically 2–8h total | First-party demonstrations and product updates; use for services you cannot yet explain or operate |
 | [Google Cloud Architecture Center](https://cloud.google.com/architecture) | Public | 4–12h targeted reading | Production patterns, decisions and operational tradeoffs rather than exam-only memorization |
 
-The [Pluralsight ACE path](https://www.pluralsight.com/paths/google-associate-cloud-engineer-pluralsight) is now verified: seven course cards total **7h39m**, plus four labs totaling **2h15m**, or **9h54m** versus its rounded ten-hour header. Most core course dates are July–September 2025; a gcloud/IAM demonstration is May 2026 and labs span April–June 2026. Titles still separate planning and deployment, so map them to the current combined domain and fill new-service gaps. This is a public-catalog comparison, not proof that every paid lesson is current. No verified MeasureUp ACE item is added.
+The [Pluralsight ACE path](https://www.pluralsight.com/paths/google-associate-cloud-engineer-pluralsight) lists seven courses, eight labs, a practice exam and 13 hours in total. Titles still separate planning and deployment, so map them to the current combined domain and fill new-service gaps. This is a public-catalog comparison, not proof that every paid lesson is current. No verified MeasureUp ACE item is added.
 
 ### Current-version gap checklist
 

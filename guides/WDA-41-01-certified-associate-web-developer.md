@@ -839,7 +839,7 @@ The current WDA-41-01 syllabus page still says ACTIVE and retains its September 
 
 ## Places to learn
 
-Public course/index comparison is not course completion. The official CSS landing lists 40 hours, nine modules and 45+ lessons; the HTML landing lists 25 hours and six modules. The public Pluralsight listing reports 31 hours, ten courses and seven labs, but subscriber interiors were not reviewed. Tutorial directories were read as indexes, not every linked lesson. Except for explicitly listed provider totals, hours below are author planning budgets. This is not a complete list, and it is not meant to be consumed in full. Pick one primary path, add focused documentation where useful, and spend at least as much time building, inspecting, measuring, and testing as watching. Commercial resources are supplementary; reconcile them with the current official syllabus.
+Public course/index comparison is not course completion. The official CSS landing lists 40 hours, nine modules and 45+ lessons; the HTML landing lists 25 hours and six modules. The public Pluralsight listing reports 34 hours, eleven courses and seven labs, but subscriber interiors were not reviewed. Tutorial directories were read as indexes, not every linked lesson. Except for explicitly listed provider totals, hours below are author planning budgets. This is not a complete list, and it is not meant to be consumed in full. Pick one primary path, add focused documentation where useful, and spend at least as much time building, inspecting, measuring, and testing as watching. Commercial resources are supplementary; reconcile them with the current official syllabus.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
@@ -851,7 +851,7 @@ Public course/index comparison is not course completion. The official CSS landin
 | [MDN Learn CSS](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics) and [CSS layout](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout) | Free current standards-oriented lessons | 20–30 hours with projects |
 | [web.dev Learn CSS](https://web.dev/learn/css/) and [Responsive Design](https://web.dev/learn/design/) | Free modern modules and exercises | 15–25 hours for WDA-relevant portions |
 | [W3C WAI Tutorials](https://www.w3.org/WAI/tutorials/) | Free authoritative accessibility patterns | 6–10 hours plus manual testing |
-| [Pluralsight HTML and CSS path](https://www.pluralsight.com/paths/html-and-css) | Subscription; 10 courses and 7 labs, including 2026 guided labs | 31 hours listed; select layout, APIs, debugging, and optimization as needed |
+| [Pluralsight HTML and CSS path](https://www.pluralsight.com/paths/html-and-css) | Subscription; 11 courses and 7 labs, including 2026 guided labs | 34 hours listed; select layout, APIs, debugging, and optimization as needed |
 | [O'Reilly Learning Web Design, 6th Edition](https://www.oreilly.com/library/view/learning-web-design/9781098137670/) | Subscription/buy; HTTP403 prevented fresh listing/interior verification; old page-count, date and runtime claims removed | Author budget: 18–25 hours for selected CSS/layout/responsive/quality topics; verify actual contents |
 | [Udemy Learn HTML and CSS in 7 Days](https://www.udemy.com/course/learn-html-and-css-in-7-days-web-developer-bootcamp/) | Paid marketplace course; HTTP403 prevented current listing and lesson verification | Author budget: 8–12 hours project/test work; supplement frameworks, preprocessors, SEO, and analytics |
 

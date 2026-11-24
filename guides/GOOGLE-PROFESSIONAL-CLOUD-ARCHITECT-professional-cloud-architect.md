@@ -452,7 +452,7 @@ This is **not a complete list**, and it is not meant to be consumed in full. Pic
 | [Whizlabs Professional Cloud Architect](https://www.whizlabs.com/google-cloud-certified-professional-cloud-architect/) | Paid; limited free material may vary | Full current catalog not exposed; verify before purchase | Direct fetch returned a title-only shell, so course/lab quantities and current objective alignment were not verified |
 | [Well-Architected Framework](https://cloud.google.com/architecture/framework) and [Architecture Center](https://cloud.google.com/architecture) | Public | 12–30h targeted reading | Production tradeoffs and all six cross-cutting pillars |
 
-A current [Pluralsight PCA path](https://www.pluralsight.com/paths/google-certified-professional-cloud-architect-by-pluralsight) lists seven Victor Dantas courses and four labs. The course cards total **7h17m**; the labs total **2h30m** (regional MIG, hybrid zero trust, cost/storage lifecycle, and reliability/rollouts), or **9h47m** versus the rounded 10-hour header. The cost/storage lab is dated October 22, 2026. Compare current AI/agent/case objectives explicitly; public titles and dates do not establish complete paid-lesson coverage. No verified MeasureUp PCA item is added.
+A current [Pluralsight PCA path](https://www.pluralsight.com/paths/google-certified-professional-cloud-architect-by-pluralsight) lists seven courses, seven labs, a practice exam and 13 hours in total. Compare current AI/agent/case objectives explicitly; public titles and dates do not establish complete paid-lesson coverage. No verified MeasureUp PCA item is added.
 
 ### Current-version gap checklist
 
