@@ -17,7 +17,7 @@ upcoming_change_checked: 2026-10-28
 
 **Current baseline:** This is a certification track, not one exam. Hold active NSE 4 FortiOS and pass **one** eligible NSE 5 Secure Networking exam within two years. Current routes are FortiSwitch 7.6 Administrator, Secure Wireless LAN 7.6 Administrator, or SD-WAN 7.6 Core Administrator.<br>
 **Current available exams:** FortiSwitch 7.6 Administrator (70 minutes, 35–40 questions, English/Japanese), Secure Wireless LAN 7.6 Administrator (70 minutes, 30–40 questions, English), and SD-WAN 7.6 Core Administrator (60–70 minutes, 30–35 questions, English). Fortinet does not publish weights for the FortiSwitch or Secure Wireless routes; the SD-WAN page publishes three weighted groups.<br>
-**Credential contract:** NSE 4 must be active when requirements are fulfilled. The credential is active for two years from the NSE 5 exam date. Retakes of failed proctored exams require 15 days; a passed exam cannot be retaken and cannot be reused to renew the same credential.<br>
+**Credential contract:** NSE 4 must be active when requirements are fulfilled. The credential is active for two years from the date the most recent certification requirement is completed. Retakes of failed proctored exams require 15 days; a passed exam cannot be retaken and cannot be reused to renew the same credential.<br>
 **October 28, 2026 pathway check:** SD-WAN 7.6 Core Administrator is now an available route. Secure Wireless LAN 7.4 reached its August 31, 2026 final-delivery date; use 7.6. The Fortinet-owned Secure Wireless LAN 7.6 course materials page was updated April 15, 2026.<br>
 **Integrity:** Pick and prepare for one current route. Do not combine its topics into a fictional weighted exam and do not use recalled questions.
 

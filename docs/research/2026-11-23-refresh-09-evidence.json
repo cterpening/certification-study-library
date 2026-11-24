@@ -1,0 +1,591 @@
+{
+  "date": "2026-11-23",
+  "scope": "AI research into official objectives, selected technical references and learning resources. Individual exam delivery, private course contents and live product testing were outside this review.",
+  "exams": [
+    {
+      "code": "NSE-1-CYBERSECURITY",
+      "exam": {
+        "code": "NSE-1-CYBERSECURITY",
+        "observation": "Fortinet's track page and the repository's previously documented course/option requirements are broader than the automated description-only capture. A track-level delta does not establish a new assessment. Monitor detected an objective-text difference.",
+        "urls": [
+          "https://training.fortinet.com/local/staticpage/view.php?page=nse_1"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Carry forward the track-specific requirement and keep direct-exam gates explicit; do not replace the richer snapshot with the generic candidate.",
+        "monitor": "changed",
+        "accepted_objective_sha256": "43efb7dbce9188ebb6c2048f955015564de7bec3e07a0530788fe4821284967c",
+        "candidate_objective_sha256": "ed8b168120af63034d36338af846f47e79cb09e7888e9ea8c9cabba1490ef0ef",
+        "catalog_matches": {
+          "https://training.fortinet.com/local/staticpage/view.php?page=nse_1": {
+            "sources": [
+              "nse-1-cybersecurity-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "NSE-1-CYBERSECURITY",
+        "observation": "CISA's general public awareness portal refused automated access. NIST's small-business guidance provides a public alternative for multi-factor authentication.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "Moderate. CISA returned 403; alternate public NIST guidance was opened. Other Fortinet rows used direct retrieval of the issuer page after the browser returned access errors.",
+        "urls": [
+          "https://www.nist.gov/itl/smallbusinesscyber/guidance-topic/multi-factor-authentication"
+        ],
+        "source_ids": [],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "NSE-1-CYBERSECURITY",
+        "observation": "The Cybersecurity and Cloud Fundamentals course lists its introductory topics, enrollment and badge route.",
+        "urls": [
+          "https://training.fortinet.com/local/staticpage/view.php?page=library_cybersecurity-and-cloud-fundamentals"
+        ],
+        "source_id": "nse-1-cybersecurity-source-1",
+        "resource": "Cybersecurity and Cloud Fundamentals",
+        "access_model": "public",
+        "time_basis": "11 hours, Fortinet estimate.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "changed",
+      "accepted_on_start": "43efb7dbce9188ebb6c2048f955015564de7bec3e07a0530788fe4821284967c",
+      "candidate": "ed8b168120af63034d36338af846f47e79cb09e7888e9ea8c9cabba1490ef0ef"
+    },
+    {
+      "code": "NSE-2-CYBERSECURITY",
+      "exam": {
+        "code": "NSE-2-CYBERSECURITY",
+        "observation": "Fortinet's track page and the repository's previously documented course/option requirements are broader than the automated description-only capture. A track-level delta does not establish a new assessment. Monitor detected an objective-text difference.",
+        "urls": [
+          "https://training.fortinet.com/local/staticpage/view.php?page=nse_2"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Carry forward the track-specific requirement and keep direct-exam gates explicit; do not replace the richer snapshot with the generic candidate.",
+        "monitor": "changed",
+        "accepted_objective_sha256": "6a8c018a66d7d93364d14a95c107186a205d5d0e7d042ab76cd9989806212ede",
+        "candidate_objective_sha256": "6bd1f6e7e78ca7c70a07d1fb4e068f97e054e1ac98b548e2c38dd5f5daa12291",
+        "catalog_matches": {
+          "https://training.fortinet.com/local/staticpage/view.php?page=nse_2": {
+            "sources": [
+              "nse-2-cybersecurity-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "NSE-2-CYBERSECURITY",
+        "observation": "NIST zero trust removes implicit trust based solely on location or ownership and separates authentication and authorization.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://csrc.nist.gov/pubs/sp/800/207/final"
+        ],
+        "source_ids": [
+          "panw-cybersecurity-practitioner-source-2"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "NSE-2-CYBERSECURITY",
+        "observation": "Intro to Next Generation Firewall builds on the NSE 1 fundamentals course or comparable prior knowledge.",
+        "urls": [
+          "https://training.fortinet.com/local/staticpage/view.php?page=library_introduction-to-next-generation-firewall"
+        ],
+        "source_id": "nse-2-cybersecurity-source-1",
+        "resource": "Introduction to the Next Generation Firewall",
+        "access_model": "public",
+        "time_basis": "2 hours, Fortinet estimate.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "changed",
+      "accepted_on_start": "6a8c018a66d7d93364d14a95c107186a205d5d0e7d042ab76cd9989806212ede",
+      "candidate": "6bd1f6e7e78ca7c70a07d1fb4e068f97e054e1ac98b548e2c38dd5f5daa12291"
+    },
+    {
+      "code": "NSE-3-CYBERSECURITY",
+      "exam": {
+        "code": "NSE-3-CYBERSECURITY",
+        "observation": "Fortinet's track page and the repository's previously documented course/option requirements are broader than the automated description-only capture. A track-level delta does not establish a new assessment. Monitor detected an objective-text difference.",
+        "urls": [
+          "https://training.fortinet.com/local/staticpage/view.php?page=nse_3"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Carry forward the track-specific requirement and keep direct-exam gates explicit; do not replace the richer snapshot with the generic candidate.",
+        "monitor": "changed",
+        "accepted_objective_sha256": "920241b7c63ba868fa041e18036e1c337e144f4128f166c1e663298890b1eaae",
+        "candidate_objective_sha256": "bfbf9a976df8b6aad6ccb9b03bcc4a1c33c9f0ff19d721817ba545f51ac3dafe",
+        "catalog_matches": {
+          "https://training.fortinet.com/local/staticpage/view.php?page=nse_3": {
+            "sources": [
+              "nse-3-cybersecurity-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "NSE-3-CYBERSECURITY",
+        "observation": "Fortinet's change log binds individual features and revisions to dated FortiOS releases.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.fortinet.com/document/fortigate/7.6.0/new-features/4/change-log"
+        ],
+        "source_ids": [
+          "fortigate-7-6-change-log"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "NSE-3-CYBERSECURITY",
+        "observation": "FortiGate Operator serves daily administrators and covers common defensive controls.",
+        "urls": [
+          "https://training.fortinet.com/local/staticpage/view.php?page=library_fortigate-operator"
+        ],
+        "source_id": "nse-3-cybersecurity-source-1",
+        "resource": "FortiGate 7.6 Operator",
+        "access_model": "public",
+        "time_basis": "8 hours, Fortinet estimate.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "changed",
+      "accepted_on_start": "920241b7c63ba868fa041e18036e1c337e144f4128f166c1e663298890b1eaae",
+      "candidate": "bfbf9a976df8b6aad6ccb9b03bcc4a1c33c9f0ff19d721817ba545f51ac3dafe"
+    },
+    {
+      "code": "NSE-4-FORTIOS",
+      "exam": {
+        "code": "NSE-4-FORTIOS",
+        "observation": "Fortinet publishes detailed exam information for the FortiOS 7.6 Administrator version. Text unchanged; different sections on the same page cover different releases. Monitor found a status-only difference.",
+        "urls": [
+          "https://training.fortinet.com/local/staticpage/view.php?page=nse_4",
+          "https://training.fortinet.com/local/staticpage/view.php?page=fortios_administrator_exam"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Separate version-specific question counts and timings in any updates.",
+        "monitor": "changed",
+        "accepted_objective_sha256": "a1bc779b760e1373ce480549181be9cfcace6b1ab081a3eb5c6832d98160ea5b",
+        "candidate_objective_sha256": "a1bc779b760e1373ce480549181be9cfcace6b1ab081a3eb5c6832d98160ea5b",
+        "catalog_matches": {
+          "https://training.fortinet.com/local/staticpage/view.php?page=nse_4": {
+            "sources": [
+              "fortinet-nse4-certification"
+            ],
+            "candidates": []
+          },
+          "https://training.fortinet.com/local/staticpage/view.php?page=fortios_administrator_exam": {
+            "sources": [
+              "fortinet-nse4-fortios-76-exam"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "NSE-4-FORTIOS",
+        "observation": "Session continuity depends on the protocol and failover settings; some interrupted transfers must restart.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.fortinet.com/document/fortigate/7.6.0/administration-guide/955521/session-pickup"
+        ],
+        "source_ids": [
+          "fortios-session-pickup"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "NSE-4-FORTIOS",
+        "observation": "Administrator training lists 12 hours of lecture and 10 hours of labs. Its versioned course should be compared with the current FortiOS exam route.",
+        "urls": [
+          "https://training.fortinet.com/local/staticpage/view.php?page=library_fortigate-administrator"
+        ],
+        "source_id": "fortinet-fortigate-administrator-course-description",
+        "resource": "FortiGate Administrator Course Description",
+        "access_model": "public",
+        "time_basis": "22 hours total, Fortinet estimate.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Select a class matching the intended product release."
+      },
+      "monitor_outcome": "changed",
+      "accepted_on_start": "a1bc779b760e1373ce480549181be9cfcace6b1ab081a3eb5c6832d98160ea5b",
+      "candidate": "a1bc779b760e1373ce480549181be9cfcace6b1ab081a3eb5c6832d98160ea5b",
+      "supplemental_evidence": [
+        {
+          "observation": "Fortinet lists the 8.0 form as available and gives February 28, 2027 as the last day for 7.6. The detailed map in this guide is for 7.6.",
+          "urls": [
+            "https://training.fortinet.com/local/staticpage/view.php?page=fortios_administrator_exam"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NSE-5-CLOUD-SECURITY",
+      "exam": {
+        "code": "NSE-5-CLOUD-SECURITY",
+        "observation": "Fortinet's track page and the repository's previously documented course/option requirements are broader than the automated description-only capture. A track-level delta does not establish a new assessment. Monitor detected an objective-text difference.",
+        "urls": [
+          "https://training.fortinet.com/local/staticpage/view.php?page=nse_5_cloud_security"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Carry forward the track-specific requirement and keep direct-exam gates explicit; do not replace the richer snapshot with the generic candidate.",
+        "monitor": "changed",
+        "accepted_objective_sha256": "058569ef0acb8d185e004a1b7100f56d5cb3088f369add4bf28d3d2693b61755",
+        "candidate_objective_sha256": "e7b43f511f145945b670ad318e002f3d30b4b92ed9ee70ab8c1b25eacc0b11ab",
+        "catalog_matches": {
+          "https://training.fortinet.com/local/staticpage/view.php?page=nse_5_cloud_security": {
+            "sources": [
+              "nse-5-cloud-security-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "NSE-5-CLOUD-SECURITY",
+        "observation": "FortiAppSec Cloud maintains separate WAF and global server load balancing concept guides alongside versioned release notes.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.fortinet.com/product/fortiappsec-cloud"
+        ],
+        "source_ids": [
+          "nse-5-cloud-security-source-5"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "NSE-5-CLOUD-SECURITY",
+        "observation": "The FortiWeb Administrator exam page labels a FortiWeb 8.0 route and gives recommended preparation. Course selection depends on the Cloud Security elective.",
+        "urls": [
+          "https://training.fortinet.com/local/staticpage/view.php?page=fortiweb_administrator_exam"
+        ],
+        "source_id": "nse-5-cloud-security-source-1",
+        "resource": "Exam page",
+        "access_model": "public",
+        "time_basis": "30–45 minutes for mapping the route, editorial.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "changed",
+      "accepted_on_start": "058569ef0acb8d185e004a1b7100f56d5cb3088f369add4bf28d3d2693b61755",
+      "candidate": "e7b43f511f145945b670ad318e002f3d30b4b92ed9ee70ab8c1b25eacc0b11ab",
+      "supplemental_evidence": [
+        {
+          "observation": "The FortiAppSec Cloud 26.2 course is five hours, including four lecture hours and one hour of lab demonstration. The exam is a separate 65-minute assessment.",
+          "urls": [
+            "https://training.fortinet.com/local/staticpage/view.php?page=library_fortiappsec-cloud-administrator",
+            "https://training.fortinet.com/local/staticpage/view.php?page=fortiappsec_cloud_administrator_exam"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NSE-5-SASE",
+      "exam": {
+        "code": "NSE-5-SASE",
+        "observation": "The issuer's current exam page distinguishes FortiSASE 26 Core Administrator training and SD-WAN 7.6. Earlier guide recorded November 14 as last delivery of the older FortiSASE 25 exam. Monitor detected an objective-text difference.",
+        "urls": [
+          "https://training.fortinet.com/local/staticpage/view.php?page=nse_5_sase",
+          "https://training.fortinet.com/local/staticpage/view.php?page=fortisase_and_sd-wan_core_administrator_exam"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Distinguish the new and old exam versions and do not extend the earlier window.",
+        "monitor": "changed",
+        "accepted_objective_sha256": "5da7fcd14dcb7c1c88edac3c997cc168fd4194e3a385ec1f30b460e5bdeb52cd",
+        "candidate_objective_sha256": "fb83fbdb743922620cd9ad23997883b70191afe6c98a7be187d8faab6528f800",
+        "catalog_matches": {
+          "https://training.fortinet.com/local/staticpage/view.php?page=nse_5_sase": {
+            "sources": [
+              "nse-5-sase-source-1"
+            ],
+            "candidates": []
+          },
+          "https://training.fortinet.com/local/staticpage/view.php?page=fortisase_and_sd-wan_core_administrator_exam": {
+            "sources": [
+              "nse-5-sase-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "NSE-5-SASE",
+        "observation": "FortiSASE release notes distinguish maintenance-only builds from changes to endpoint policies or feature configuration.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.fortinet.com/document/fortisase/latest/feature-release-notes/661728/whats-new"
+        ],
+        "source_ids": [
+          "fortisase-feature-release-notes"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "NSE-5-SASE",
+        "observation": "Fortinet identifies FortiSASE and SD-WAN Core Administrator and recommends the associated NSE training.",
+        "urls": [
+          "https://training.fortinet.com/local/staticpage/view.php?page=nse_5_sase"
+        ],
+        "source_id": "nse-5-sase-source-1",
+        "resource": "NSE 5 SASE track page",
+        "access_model": "public",
+        "time_basis": "20–30 minutes to locate the correct route, editorial.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "changed",
+      "accepted_on_start": "5da7fcd14dcb7c1c88edac3c997cc168fd4194e3a385ec1f30b460e5bdeb52cd",
+      "candidate": "fb83fbdb743922620cd9ad23997883b70191afe6c98a7be187d8faab6528f800"
+    },
+    {
+      "code": "NSE-5-SECURE-NETWORKING",
+      "exam": {
+        "code": "NSE-5-SECURE-NETWORKING",
+        "observation": "Fortinet's track page and the repository's previously documented course/option requirements are broader than the automated description-only capture. A track-level delta does not establish a new assessment. Monitor detected an objective-text difference.",
+        "urls": [
+          "https://training.fortinet.com/local/staticpage/view.php?page=nse_5_secure_networking"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Carry forward the track-specific requirement and keep direct-exam gates explicit; do not replace the richer snapshot with the generic candidate.",
+        "monitor": "changed",
+        "accepted_objective_sha256": "4e484d47f37076fb725c46a4361b7149b6f80b0a962f240f06da53c2b7f344ee",
+        "candidate_objective_sha256": "45c876696c7c7147db8513300393331c4f6df79f46f3a3e394bac9db8c1c77b8",
+        "catalog_matches": {
+          "https://training.fortinet.com/local/staticpage/view.php?page=nse_5_secure_networking": {
+            "sources": [
+              "nse-5-secure-networking-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "NSE-5-SECURE-NETWORKING",
+        "observation": "Fortinet documents separate SD-WAN designs for dual-hub topologies and stages zero-touch provisioning via FortiManager.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.fortinet.com/sdwan"
+        ],
+        "source_ids": [
+          "nse-5-secure-networking-source-8"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "NSE-5-SECURE-NETWORKING",
+        "observation": "The Secure Wireless LAN 7.6 Administrator route gives current preparation for FortiAP and controller deployment and administration.",
+        "urls": [
+          "https://training.fortinet.com/local/staticpage/view.php?page=secure_wireless_lan_administrator_exam"
+        ],
+        "source_id": "nse-5-secure-networking-source-2",
+        "resource": "Exam page",
+        "access_model": "public",
+        "time_basis": "30–45 minutes for the topic checklist, editorial.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "changed",
+      "accepted_on_start": "4e484d47f37076fb725c46a4361b7149b6f80b0a962f240f06da53c2b7f344ee",
+      "candidate": "45c876696c7c7147db8513300393331c4f6df79f46f3a3e394bac9db8c1c77b8"
+    },
+    {
+      "code": "NSE-5-SECURITY-OPERATIONS",
+      "exam": {
+        "code": "NSE-5-SECURITY-OPERATIONS",
+        "observation": "The direct FortiAnalyzer exam page still refers to FortiAnalyzer 7.6 Analyst. Exam-only automated capture omits broader track prerequisites and options in the accepted baseline. Monitor detected an objective-text difference.",
+        "urls": [
+          "https://training.fortinet.com/local/staticpage/view.php?page=nse_5_security_operations",
+          "https://training.fortinet.com/local/staticpage/view.php?page=fortianalyzer_analyst_exam"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Preserve route and version facts.",
+        "monitor": "changed",
+        "accepted_objective_sha256": "f78670ac5a8264c35f041c6505263af3c1d6037302f66ce33bbf225a8b0c96f7",
+        "candidate_objective_sha256": "465600a3c230a62ab65660b64a44ecdb0aca55f08f1563fec8099f92f25bdec0",
+        "catalog_matches": {
+          "https://training.fortinet.com/local/staticpage/view.php?page=nse_5_security_operations": {
+            "sources": [
+              "nse-5-security-operations-source-1"
+            ],
+            "candidates": []
+          },
+          "https://training.fortinet.com/local/staticpage/view.php?page=fortianalyzer_analyst_exam": {
+            "sources": [
+              "nse-5-security-operations-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "NSE-5-SECURITY-OPERATIONS",
+        "observation": "The 7.6.7 feature index lists anomaly login reporting, FortiDeceptor reporting and OAuth support for email servers.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.fortinet.com/document/fortianalyzer/7.6.0/new-features/893972/7-6-7"
+        ],
+        "source_ids": [
+          "nse-5-security-operations-source-4",
+          "fortianalyzer-7-6-7-whats-new"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "NSE-5-SECURITY-OPERATIONS",
+        "observation": "The official route identifies FortiAnalyzer Analyst and recommends the corresponding training for monitoring and administration.",
+        "urls": [
+          "https://training.fortinet.com/local/staticpage/view.php?page=nse_5_security_operations"
+        ],
+        "source_id": "nse-5-security-operations-source-1",
+        "resource": "NSE 5 Security Operations track",
+        "access_model": "public",
+        "time_basis": "20–30 minutes for a route and prerequisite check, editorial.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "changed",
+      "accepted_on_start": "f78670ac5a8264c35f041c6505263af3c1d6037302f66ce33bbf225a8b0c96f7",
+      "candidate": "465600a3c230a62ab65660b64a44ecdb0aca55f08f1563fec8099f92f25bdec0"
+    },
+    {
+      "code": "NSE-6-CLOUD-SECURITY",
+      "exam": {
+        "code": "NSE-6-CLOUD-SECURITY",
+        "observation": "Fortinet's track page and the repository's previously documented course/option requirements are broader than the automated description-only capture. A track-level delta does not establish a new assessment. Monitor detected an objective-text difference.",
+        "urls": [
+          "https://training.fortinet.com/local/staticpage/view.php?page=nse_6_cloud_security"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Carry forward the track-specific requirement and keep direct-exam gates explicit; do not replace the richer snapshot with the generic candidate.",
+        "monitor": "changed",
+        "accepted_objective_sha256": "a8935c5b12491b416808caecccd7a584c8196fe004fc81aab36fd4683504c13d",
+        "candidate_objective_sha256": "07d632f3b38eae85a98b80e14d8b5408ff9a9cb627b103c5f4be1ef61be108a7",
+        "catalog_matches": {
+          "https://training.fortinet.com/local/staticpage/view.php?page=nse_6_cloud_security": {
+            "sources": [
+              "nse-6-cloud-security-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "NSE-6-CLOUD-SECURITY",
+        "observation": "The FortiCNAPP notes document OS-version limitations for its Windows collectors, including older systems with insufficient TLS support.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.fortinet.com/document/forticnapp/latest/release-notes"
+        ],
+        "source_ids": [
+          "forticnapp-release-notes"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "NSE-6-CLOUD-SECURITY",
+        "observation": "The FortiCNAPP 26 Analyst page maps preparation to posture management and workload protection among other topics.",
+        "urls": [
+          "https://training.fortinet.com/local/staticpage/view.php?page=forticnapp_analyst_exam"
+        ],
+        "source_id": "nse-6-cloud-security-source-1",
+        "resource": "FortiCNAPP Analyst exam",
+        "access_model": "public",
+        "time_basis": "45–75 minutes for objective-to-study mapping, editorial.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "changed",
+      "accepted_on_start": "a8935c5b12491b416808caecccd7a584c8196fe004fc81aab36fd4683504c13d",
+      "candidate": "07d632f3b38eae85a98b80e14d8b5408ff9a9cb627b103c5f4be1ef61be108a7"
+    }
+  ],
+  "review_inputs": [
+    {
+      "code": "NSE-1-CYBERSECURITY",
+      "guide": "guides/NSE-1-CYBERSECURITY-fortinet-nse-1-in-cybersecurity.md",
+      "guide_sha256_lf": "3de2b392529e3d9354c6713f5f312169545d1602c57200913bb78bb5dc142d8c",
+      "objective": "data/objective-snapshots/nse-1-cybersecurity-official-objectives.txt",
+      "objective_sha256": "43efb7dbce9188ebb6c2048f955015564de7bec3e07a0530788fe4821284967c"
+    },
+    {
+      "code": "NSE-2-CYBERSECURITY",
+      "guide": "guides/NSE-2-CYBERSECURITY-fortinet-nse-2-in-cybersecurity.md",
+      "guide_sha256_lf": "74c1a7bb88e16771c352856246ff136485544fcf58ffd51bc355d12c543f4c7e",
+      "objective": "data/objective-snapshots/nse-2-cybersecurity-official-objectives.txt",
+      "objective_sha256": "6a8c018a66d7d93364d14a95c107186a205d5d0e7d042ab76cd9989806212ede"
+    },
+    {
+      "code": "NSE-3-CYBERSECURITY",
+      "guide": "guides/NSE-3-CYBERSECURITY-fortinet-nse-3-in-cybersecurity.md",
+      "guide_sha256_lf": "8c9cb097279e70c9a6db50c7d081445fa49cfa4c4469296cd76fa508e39e128e",
+      "objective": "data/objective-snapshots/nse-3-cybersecurity-official-objectives.txt",
+      "objective_sha256": "920241b7c63ba868fa041e18036e1c337e144f4128f166c1e663298890b1eaae"
+    },
+    {
+      "code": "NSE-4-FORTIOS",
+      "guide": "guides/NSE-4-FORTIOS-fortinet-nse-4-fortios.md",
+      "guide_sha256_lf": "d79df201b4d135a5ff1b82bcf16bb19032ea3aeb4c701f0909c2f24afb507c2e",
+      "objective": "data/objective-snapshots/nse-4-fortios-official-objectives.txt",
+      "objective_sha256": "a1bc779b760e1373ce480549181be9cfcace6b1ab081a3eb5c6832d98160ea5b"
+    },
+    {
+      "code": "NSE-5-CLOUD-SECURITY",
+      "guide": "guides/NSE-5-CLOUD-SECURITY-fortinet-nse-5-in-cloud-security.md",
+      "guide_sha256_lf": "c9009582ca0be90a082de09739f42ec6ea7681662ae9599b1a87d0971f56ed6d",
+      "objective": "data/objective-snapshots/nse-5-cloud-security-official-objectives.txt",
+      "objective_sha256": "058569ef0acb8d185e004a1b7100f56d5cb3088f369add4bf28d3d2693b61755"
+    },
+    {
+      "code": "NSE-5-SASE",
+      "guide": "guides/NSE-5-SASE-fortinet-nse-5-in-sase.md",
+      "guide_sha256_lf": "c37ab14c8a1174f445270f2bbbb641c2f74ea1ff25e42701de96ffdeb62c72cd",
+      "objective": "data/objective-snapshots/nse-5-sase-official-objectives.txt",
+      "objective_sha256": "5da7fcd14dcb7c1c88edac3c997cc168fd4194e3a385ec1f30b460e5bdeb52cd"
+    },
+    {
+      "code": "NSE-5-SECURE-NETWORKING",
+      "guide": "guides/NSE-5-SECURE-NETWORKING-fortinet-nse-5-in-secure-networking.md",
+      "guide_sha256_lf": "eafd95362d0ac8527ef922038d9d65ec93f3042b174084d0ecf6327f4e535f3f",
+      "objective": "data/objective-snapshots/nse-5-secure-networking-official-objectives.txt",
+      "objective_sha256": "4e484d47f37076fb725c46a4361b7149b6f80b0a962f240f06da53c2b7f344ee"
+    },
+    {
+      "code": "NSE-5-SECURITY-OPERATIONS",
+      "guide": "guides/NSE-5-SECURITY-OPERATIONS-fortinet-nse-5-in-security-operations.md",
+      "guide_sha256_lf": "f9387438f6ef596a148e00028af1e9a678b1e024f5a629dadd346cfc048ef2ce",
+      "objective": "data/objective-snapshots/nse-5-security-operations-official-objectives.txt",
+      "objective_sha256": "f78670ac5a8264c35f041c6505263af3c1d6037302f66ce33bbf225a8b0c96f7"
+    },
+    {
+      "code": "NSE-6-CLOUD-SECURITY",
+      "guide": "guides/NSE-6-CLOUD-SECURITY-fortinet-nse-6-cloud-security.md",
+      "guide_sha256_lf": "213d7b6b7721bad9a32202d9f33885694abeca6c3a479ef66acd985d2246fce1",
+      "objective": "data/objective-snapshots/nse-6-cloud-security-official-objectives.txt",
+      "objective_sha256": "a8935c5b12491b416808caecccd7a584c8196fe004fc81aab36fd4683504c13d"
+    }
+  ],
+  "independent_review": {
+    "method": "Fresh-context read-only AI review of changed content and source evidence",
+    "rubric": "docs/AI-AUDIT.md, version 2",
+    "reviewed_tree": "a3817809bd27d95304a02e55387991e4516888a8",
+    "summary": "Rechecked FortiOS 8.0 availability, the 7.6 last-delivery date, and the FortiSASE 26 exam contract against the issuer pages. Current catalog text and dated flags now agree with the revised guides. All nine guide and objective bindings match, and no material discrepancy remains from the review of b8322f5ac5c1b4d608264ddbede8e1bf4ba04fc3. Targeted change/evidence review only.",
+    "findings": [],
+    "validation": [
+      "unit tests",
+      "repository validation",
+      "reviewed learning resource check",
+      "site preparation",
+      "strict MkDocs build",
+      "generated site validation"
+    ]
+  }
+}

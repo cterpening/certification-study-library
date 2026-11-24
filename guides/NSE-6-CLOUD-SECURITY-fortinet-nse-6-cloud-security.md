@@ -15,9 +15,9 @@ upcoming_change_checked: 2026-10-28
 
 > **Independent AI-assisted resource — SOURCES + PUBLIC REQUIREMENTS CHECKED; HUMAN REVIEW PENDING.** The pathway, current option pages, announced placeholder, official documentation, and policy sources were rechecked October 28, 2026.
 
-**Current baseline:** This is a certification pathway. Hold active **NSE 4 FortiOS** and pass **one** proctored Cloud Security exam within two years: FortiCNAPP Analyst, FortiMail Administrator, or FortiDDoS Administrator. The credential is active for two years from the second qualifying exam.<br>
+**Current baseline:** This is a certification pathway. Hold active **NSE 4 FortiOS** and pass **one** proctored Cloud Security exam within two years: FortiCNAPP Analyst, FortiMail Administrator, or FortiDDoS Administrator. The credential is active for two years from the date the most recent certification requirement is completed.<br>
 **Exam contract:** FortiCNAPP 26 lists 75 minutes and 30–40 questions; FortiMail 7.4 lists 65 minutes and 30–40 questions; FortiDDoS 7.2 lists 60 minutes and 30–40 questions. Each has its own role and blueprint.<br>
-**Upcoming change:** FortiMail WorkSpace Security 26 Administrator remains marked **Coming Soon** on its live exam page October 28. The page describes its audience and broad responsibilities but publishes no exam time, item count, or detailed objectives; do not treat the earlier Q3 forecast as a launch date.<br>
+**Announced option:** Fortinet’s track page forecasts Q4 2026 for FortiMail WorkSpace Security 26 Administrator. On November 23 its exam page still said **Coming Soon** and listed an audience and product description. Check for published objectives and a delivery contract before booking.<br>
 **Integrity:** Use only authorized official samples and original practice. Avoid recalled, leaked, “real,” or guaranteed-match exam content.
 
 > **September 17, 2026 contract check:** Current official exam and track pages were inspected; the exam times and prerequisite statements above reflect that check. Historical objective snapshots and full technical-review dates remain unchanged. See the [exam validation report](../docs/research/2026-09-17-exam-validation.md).
@@ -38,7 +38,7 @@ Study the selected official page in full. This guide does not combine option per
 | FortiCNAPP Analyst | Fundamentals 25–35%; End-to-end risk 35–45%; Threat detection/response 25–35% | FortiCNAPP 26 |
 | FortiMail Administrator | Initial deployment; email flow/authentication; email security; encryption; server/transparent modes | FortiMail 7.4 |
 | FortiDDoS Administrator | Fundamentals 20–30%; deployment/configuration/baselining 25–35%; protection/mitigation 25–35%; monitoring/analysis 10–20% | FortiDDoS 7.2 |
-| FortiMail WorkSpace Security 26 Administrator | Coming Soon on October 28, 2026 | No public objectives or exam contract yet |
+| FortiMail WorkSpace Security 26 Administrator | Coming Soon on November 23, 2026 | No public objectives or exam contract yet |
 
 ## 1. Credential and shared cloud-service foundation
 
@@ -118,7 +118,7 @@ After an event, preserve time-normalized evidence, identify targeted services an
 
 ## 5. Announced FortiMail WorkSpace option
 
-The track page's Q3 2026 forecast has passed, while the live exam page still says “Coming Soon.” It identifies FortiMail Workspace Security 26 and its intended audience, but publishes no objective list, weights, item count, or exam time. Current FortiMail workspace-security documentation may support general learning, but rebaseline when Fortinet publishes the detailed exam contract.
+The track page forecasts Q4 2026, and the direct exam page still says “Coming Soon” as of November 23. It identifies FortiMail Workspace Security 26 and its intended audience, but publishes no objective list, weights, item count, or exam time. Current FortiMail workspace-security documentation may support general learning, but rebaseline when Fortinet publishes the detailed exam contract.
 
 ## Integrated scenarios
 

@@ -8,17 +8,17 @@ authority: unofficial
 review_status: source-validated
 last_verified: 2026-10-29
 upcoming_change_status: scheduled
-upcoming_change_checked: 2026-10-29
+upcoming_change_checked: 2026-11-23
 ---
 
 # Fortinet NSE 4 FortiOS Study Guide
 
 > **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The September 29, 2026 deep review maps 18 current tasks and their 89 listed details, answers 40 original prompts and executes 41 offline Python checks. Public primary material and course listings were reviewed; signed-in lessons, device labs and human review remain pending. See the [coverage record](../docs/SOURCE-VALIDATION.md#nse-4-fortios-coverage-record).
 
-**CURRENT BLUEPRINT — current baseline:** Fortinet NSE 4 - FortiOS 7.6 Administrator, using FortiOS 7.6.0. Deployment and system configuration (20–25%); Firewall policies and authentication (20–25%); Content inspection (25–30%); Routing (10–15%); VPNs (10–15%). These are ranges, so do not invent normalized point weights.<br>
+**FortiOS 7.6 exam scope:** Fortinet NSE 4 - FortiOS 7.6 Administrator, using FortiOS 7.6.0. Deployment and system configuration (20–25%); Firewall policies and authentication (20–25%); Content inspection (25–30%); Routing (10–15%); VPNs (10–15%). These are ranges, so do not invent normalized point weights.<br>
 **Exam contract:** The official page lists 50–55 questions, 100 minutes, English and Japanese, pass/fail reporting, and multiple-choice plus drag-and-drop formats. It recommends 1–2 years of networking, 0–1 year of network security, and at least six months of FortiGate hands-on experience. Those are preparation recommendations, not a substitute for checking the live registration contract.<br>
 **Credential contract:** Since July 15, 2026, passing this proctored exam earns NSE 4 FortiOS directly. The credential is active for two years. Fortinet says a failed proctored exam has a 15-day wait and a passed exam cannot be retaken; a previously counted exam cannot simply be reused for the same renewal. Recheck the [NSE 4 page](https://training.fortinet.com/local/staticpage/view.php?page=nse_4) and policy portal before booking or renewing.<br>
-**VERIFY CURRENT — announced successor:** On September 29 the official page marks 7.6 **Available** and 8.0 **Coming Soon**, without a visible launch date or 7.6 retirement date. The catalog’s `scheduled` label records this announcement, not a dated appointment. Keep studying the published 7.6.0 scope until a reader-visible replacement contract is available. Product release announcements and unpublished HTML comments do not establish exam objectives. Legacy FCP course titles do not rename the current credential.<br>
+**Exam versions:** Fortinet lists FortiOS 8.0 Administrator as available and FortiOS 7.6 Administrator as available through February 28, 2027. This guide’s detailed tasks and weights apply to 7.6.0. Candidates preparing for 8.0 should use the separate 8.0.0 blueprint on the same exam page.<br>
 **Integrity:** Use only Fortinet’s official course sample questions and clearly original independent checks. Reject products claiming real, leaked, recalled, guaranteed-match, or high-percentage exam questions.
 
 > **September 17, 2026 contract check:** Current official exam and track pages were inspected; the exam times and prerequisite statements above reflect that check. Historical objective snapshots and full technical-review dates remain unchanged. See the [exam validation report](../docs/research/2026-09-17-exam-validation.md).
@@ -440,15 +440,15 @@ These are original explanations for the numbered readiness prompts, not recalled
 35. Choose direct versus hub paths, route preference and failure detection per site. Check both directions during degraded operation; redundant links can still share a failure domain.
 36. Use synchronized timestamps, SA identifiers/counters, route/session evidence and permitted captures from both peers. Do not include keys or pre-shared secrets in the record.
 37. For each scenario, state the expected path, one failure hypothesis, a discriminating observation and recovery proof. The three worked results supply starting examples, not executed device outcomes.
-38. The available exam baseline is 7.6.0, 50–55 questions and 100 minutes, with English/Japanese and pass/fail reporting. The 8.0 Coming Soon stub has no visible launch date; recheck before booking.
+38. The 7.6.0 form has 50–55 questions, lasts 100 minutes and is offered in English and Japanese through February 28, 2027. The available 8.0.0 form has 50–60 questions, lasts 100 minutes and is listed in English.
 39. A qualifying pass earns two years. Renewal has several conditional routes; transitioned FCP issue/expiry dates are preserved. Account eligibility and newer assessment availability still need verification.
 40. Use original exercises and official sample material for format only. Reject real/recalled/leaked-item claims and do not treat a marketplace score promise as an official pass contract.
 
 ## Refresh check — October 29, 2026
 
-**Keep the exam versions separate.** The official exam page currently lists NSE 4 FortiOS 7.6 Administrator as **Available** (50–55 questions, 100 minutes, FortiOS 7.6.0) and FortiOS 8.0 Administrator as **Coming Soon** (50–60 questions, 100 minutes, FortiOS 8.0.0). The release notice had forecast an early-October 8.0 release, but the exam page had not made it bookable at this check; no exact launch date or final 7.6 last-delivery date is confirmed.
+**Choose the exam version on your booking.** FortiOS 7.6 Administrator is available through February 28, 2027 (50–55 questions, 100 minutes, FortiOS 7.6.0). FortiOS 8.0 Administrator is available (50–60 questions, 100 minutes, FortiOS 8.0.0). Use the weights and tasks listed under your version.
 
-The posted 8.0 topic snapshot raises Deployment/system configuration from 20–25% to 25–35% and adds FortiAI/GenAI-on-CLI, FortiSASE identity/tagging and GenAI DLP, policy tagging, telemetry, TLS 1.3 VPN negotiation, AI/ML DNS-tunneling detection, FortiGuard Extended SaaS DB, SD-WAN underlay bandwidth decisions, and quantum-safe IPsec. These are preparation signals for the upcoming 8.0 version; keep the guide’s detailed scored mapping on 7.6 until Fortinet changes availability and publishes its final date. Recheck the [official exam page](https://training.fortinet.com/local/staticpage/view.php?page=fortios_administrator_exam) and [NSE release notice](https://helpdesk.training.fortinet.com/support/solutions/articles/73000659982) before scheduling.
+The posted 8.0 topic snapshot raises Deployment/system configuration from 20–25% to 25–35% and adds FortiAI/GenAI-on-CLI, FortiSASE identity/tagging and GenAI DLP, policy tagging, telemetry, TLS 1.3 VPN negotiation, AI/ML DNS-tunneling detection, FortiGuard Extended SaaS DB, SD-WAN underlay bandwidth decisions, and quantum-safe IPsec. These topics apply to the available 8.0 exam. The detailed map in this guide follows 7.6 through its February 28, 2027 last-delivery date. Recheck the [official exam page](https://training.fortinet.com/local/staticpage/view.php?page=fortios_administrator_exam) and [NSE release notice](https://helpdesk.training.fortinet.com/support/solutions/articles/73000659982) before scheduling.
 
 ## Places to learn
 

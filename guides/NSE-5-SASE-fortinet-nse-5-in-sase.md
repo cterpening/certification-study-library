@@ -7,8 +7,8 @@ generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
 last_verified: 2026-10-28
-upcoming_change_status: scheduled
-upcoming_change_checked: 2026-10-28
+upcoming_change_status: none-announced
+upcoming_change_checked: 2026-11-23
 ---
 
 # Fortinet NSE 5 in SASE Study Guide
@@ -17,8 +17,8 @@ upcoming_change_checked: 2026-10-28
 
 **Current baseline:** Fortinet NSE 5 - FortiSASE and SD-WAN **26** Core Administrator: FortiSASE 26, FortiOS 7.6, FortiClient 7.0, FortiAuthenticator 6.5, and FortiManager 7.6. Decentralized SD-WAN 20–30%; Rules and routing 15–25%; SASE deployment 20–30%; SIA and SSA 15–25%; Analytics 15–25%. These ranges deliberately overlap; do not normalize them into invented fixed weights.<br>
 **Exam contract:** 30–35 questions, 65 minutes, English and Japanese, pass/fail score report, multiple-choice and drag-and-drop under the track's general proctored-exam rules.<br>
-**Credential contract:** Hold active NSE 4 FortiOS and pass the NSE 5 SASE exam within two years. The credential is active for two years from the NSE 5 exam date; confirm the live track page for renewal and exam reuse rules.<br>
-**Upcoming change:** The earlier FortiSASE and SD-WAN 7.6 Core Administrator exam remains available only until **November 14, 2026**. Its FortiSASE 25 baseline and unweighted topic list are not the current 26 blueprint. New candidates should use version 26 unless they deliberately booked the retiring form.<br>
+**Credential contract:** Hold active NSE 4 FortiOS and pass the NSE 5 SASE exam within two years. The credential is active for two years from the date the most recent certification requirement is completed; confirm the live track page for renewal and exam reuse rules.<br>
+**Exam transition:** November 14, 2026 was Fortinet’s published last-delivery date for the older FortiSASE and SD-WAN 7.6 Core Administrator form. That form used FortiSASE 25 and unweighted topics. Use the FortiSASE 26 blueprint for current preparation.<br>
 **October 28, 2026 product note:** Current FortiSASE feature release notes describe expanded REST API coverage, remote-user SAML onboarding, and new points of presence with specific availability or eligibility conditions. Verify the feature train, tenant, region, and license before applying them; sovereign deployments have separate guidance. See the [FortiSASE feature-release notes](https://docs.fortinet.com/document/fortisase/latest/feature-release-notes/661728/whats-new).<br>
 **Integrity:** Use official samples only for format and original scenarios for readiness. Reject recalled, leaked, or guaranteed-match questions.
 
@@ -141,7 +141,7 @@ Trace user/device identity, SaaS tenant/action, TLS inspection, inline CASB/DLP,
 
 1. What prerequisites earn NSE 5 SASE?
 2. Which exam version is the current baseline?
-3. What is changing November 14, 2026?
+3. Which FortiSASE exam form had a published last-delivery date of November 14, 2026?
 4. How do underlay and overlay differ?
 5. What belongs in an SD-WAN member inventory?
 6. How do active and passive health measurements differ?
@@ -179,7 +179,7 @@ Trace user/device identity, SaaS tenant/action, TLS inspection, inline CASB/DLP,
 
 1. Active NSE 4 FortiOS plus the proctored NSE 5 FortiSASE and SD-WAN Core Administrator exam within two years.
 2. Version 26 with FortiSASE 26 and the listed FortiOS/FortiClient/FortiAuthenticator/FortiManager baselines.
-3. The older 7.6-named form using FortiSASE 25 reaches its published last-delivery date.
+3. The FortiSASE and SD-WAN 7.6 Core Administrator form used FortiSASE 25. Its published last-delivery date was November 14, 2026.
 4. Underlay is transport; overlay is logical/tunneled connectivity built across it.
 5. Interface/tunnel, addressing/gateway, zone, route, carrier/failure domain, bandwidth/cost, NAT/MTU, owner, and health.
 6. Active sends probes; passive derives quality from observed traffic where supported.
@@ -220,7 +220,7 @@ This is a selective starting set, not a complete list and not a prescription to 
 | Resource | Access | Estimated time | Best use |
 |---|---|---:|---|
 | [NSE 5 SASE track page](https://training.fortinet.com/local/staticpage/view.php?page=nse_5_sase) | Public | 20–30 min | Prerequisite, credential, renewal, and current exam route |
-| [FortiSASE and SD-WAN Core Administrator exam](https://training.fortinet.com/local/staticpage/view.php?page=fortisase_and_sd-wan_core_administrator_exam) | Public | 45–75 min | Canonical version 26 ranges, tasks, contract, experience, and 7.6 retirement |
+| [FortiSASE and SD-WAN Core Administrator exam](https://training.fortinet.com/local/staticpage/view.php?page=fortisase_and_sd-wan_core_administrator_exam) | Public | 45–75 min | Canonical version 26 ranges, tasks, contract, experience, and the older exam form’s last-delivery date |
 | [FortiSASE 26 Core Administrator course](https://training.fortinet.com/local/staticpage/view.php?page=library_fortisase-core-administrator) | Free account; labs may vary | 8–16 hr estimate | Official SASE provisioning, onboarding, SIA/SSA, endpoint, and analytics instruction |
 | [SD-WAN Core Operations Administrator](https://training.fortinet.com/local/staticpage/view.php?page=library_sd-wan-core-operations-administrator) | Free account; labs/ILT may cost | 12 hr lecture+lab listed | Members, SLA, rules, routing, sessions, and troubleshooting |
 | [FortiSASE documentation](https://docs.fortinet.com/product/fortisase) | Public; automated access may be blocked | 15–30 hr selected | Current administration, architecture, deployment, and reference source |
@@ -233,7 +233,7 @@ This is a selective starting set, not a complete list and not a prescription to 
 
 ## Final preparation
 
-- Use the current version 26 blueprint unless intentionally booked for the retiring 7.6 form.
+- Match your study materials to the current FortiSASE 26 blueprint. The older form used FortiSASE 25 and had a November 14, 2026 last-delivery date.
 - Rebuild SD-WAN, onboarding, SIA/SSA, compliance, and analytics labs with failure and rollback evidence.
 - Verify active NSE 4, exam availability/version, count, time, language, delivery, price, retake, and renewal immediately before booking.
 - Use official sample questions only; reject real/recalled-question claims.
