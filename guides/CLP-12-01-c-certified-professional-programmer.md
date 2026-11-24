@@ -5,15 +5,17 @@ official_blueprint: https://cppinstitute.org/clp
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: source-validated
-last_verified: 2026-10-28
+review_status: review-required
+last_verified: 2026-11-23
 upcoming_change_status: none-announced
 upcoming_change_checked: 2026-10-28
 ---
 
 # CLP-12-01 C Certified Professional Programmer Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, links, lifecycle, and exam-integrity compliance were checked October 28, 2026. This does not guarantee that every explanation is error-free or remains current. The [official CLP page and syllabus](https://cppinstitute.org/clp) are authoritative.
+**Review status.** The November 23 check covered the published exam information and the resources updated below. The previous full source review is historical. Full validation of this revision is pending.
+
+> **Independent AI-assisted resource — HISTORICAL SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, links, lifecycle, and exam-integrity compliance were checked October 28, 2026. This does not guarantee that every explanation is error-free or remains current. The [official CLP page and syllabus](https://cppinstitute.org/clp) are authoritative.
 
 **Current baseline:** CLP-12-01, active; 29 numbered objectives in eight public blocks (July 24, 2025 syllabus)<br>
 **Upcoming blueprint change:** none announced on the official exam or certification-catalog pages when checked<br>
@@ -194,7 +196,7 @@ Multiple-precision libraries provide integers or floating values beyond built-in
 
 The numeric workbook declares binary64 `double`, round-to-nearest and no fast-math. It accumulates `1e16, 1, -1e16`: naive accumulation produces 0 on the observed host; Neumaier compensation preserves 1. This illustrates lost low-order information during addition and subsequent cancellation, not a promise that compensation fixes every ill-conditioned or overflowing computation. Reordering operations can change results. Relative-error tests need special care near zero; choose tolerances from the problem rather than applying one magic epsilon everywhere.
 
-For exact values, initialize every GMP object, then clear it when finished. `mpz_ui_pow_ui` computes 2^100 without a built-in integer overflow; `mpq` represents exact rational arithmetic. Assigning 2/20 requires canonicalization before arithmetic, while 1/5 is already canonical. The program checks 1/10 + 1/5 = 3/10 and reports the actual linked GMP version, observed as 6.3.0. [GMP initialization](https://gmplib.org/manual/Initializing-Integers), [integer powers](https://gmplib.org/manual/Integer-Exponentiation), [rational contracts](https://gmplib.org/manual/Rational-Number-Functions)
+For exact values, initialize every GMP object, then clear it when finished. `mpz_ui_pow_ui` computes 2^100 without a built-in integer overflow; `mpq` represents exact rational arithmetic. Assigning 2/20 requires canonicalization before arithmetic, while 1/5 is already canonical. The program checks 1/10 + 1/5 = 3/10 and reports the actual linked GMP version, observed as 6.3.0. The [official GMP 6.3.0 source archive](https://ftp.gnu.org/gnu/gmp/gmp-6.3.0.tar.xz) includes the manual in `doc/gmp.texi`. Look up “Initializing Integers”, “Integer Exponentiation” and “Rational Number Functions” for the three contracts.
 
 Arbitrary precision still uses memory and has library-specific failure rules; GMP initialization is not an allocation-status-returning ISO API. MPFR provides a different floating-point precision/rounding contract. Its header was unavailable in the hosted probe, so no MPFR numerical result is claimed.
 

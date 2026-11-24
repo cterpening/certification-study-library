@@ -1,0 +1,634 @@
+{
+  "date": "2026-11-23",
+  "scope": "AI research into official objectives, selected technical references and learning resources. Individual exam delivery, private course contents and live product testing were outside this review.",
+  "exams": [
+    {
+      "code": "CLE-10-01",
+      "exam": {
+        "code": "CLE-10-01",
+        "observation": "Every detected difference removes only the manual provenance header (title, source, checked date and blank separator); published objective content matches. Monitor detected an objective-text difference.",
+        "urls": [
+          "https://cppinstitute.org/cle"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Preserve the accepted scoped baseline.",
+        "monitor": "changed",
+        "accepted_objective_sha256": "f21493c90c62aa1fb1ad68ccdd416655ddee8b9f5206a9b992f8829ddf5ee2dd",
+        "candidate_objective_sha256": "6021bd3dcb56d733e9b261169089fe1d484455ada25b39371fc8a13f1d838e31",
+        "catalog_matches": {
+          "https://cppinstitute.org/cle": {
+            "sources": [
+              "cle-10-01-syllabus"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "CLE-10-01",
+        "observation": "The C round functions return a floating-point value for the nearest integer; halfway cases round away from zero.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/round-roundf-roundl?view=msvc-170"
+        ],
+        "source_ids": [
+          "msvc-c-round"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "CLE-10-01",
+        "observation": "OpenEDG's introductory C course explicitly prepares entry-level candidates and assumes no programming experience.",
+        "urls": [
+          "https://edube.org/study/ce1"
+        ],
+        "source_id": "openedg-c-essentials-1",
+        "resource": "C Essentials - Part 1",
+        "access_model": "free-account",
+        "time_basis": "42 hours, provider study estimate.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "changed",
+      "accepted_on_start": "f21493c90c62aa1fb1ad68ccdd416655ddee8b9f5206a9b992f8829ddf5ee2dd",
+      "candidate": "6021bd3dcb56d733e9b261169089fe1d484455ada25b39371fc8a13f1d838e31"
+    },
+    {
+      "code": "CLA-11-03",
+      "exam": {
+        "code": "CLA-11-03",
+        "observation": "The issuer page and checked objective extraction retain this exam code. Both monitored objective text and status matched accepted records.",
+        "urls": [
+          "https://cppinstitute.org/cla"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Carry the existing baseline forward.",
+        "monitor": "unchanged",
+        "accepted_objective_sha256": "1fd3f2da7fd14a60373b645a0cc8bce7e56f0c09e3e4154cd0e5f99cf231f983",
+        "candidate_objective_sha256": "1fd3f2da7fd14a60373b645a0cc8bce7e56f0c09e3e4154cd0e5f99cf231f983",
+        "catalog_matches": {
+          "https://cppinstitute.org/cla": {
+            "sources": [
+              "cla-11-03-syllabus"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "CLA-11-03",
+        "observation": "The SEI resource-management guidance pairs resource acquisition and release so files are closed when no longer needed.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/rules/input-output-fio/fio42-c"
+        ],
+        "source_ids": [
+          "sei-cert-fio42-c"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "CLA-11-03",
+        "observation": "C Essentials Part 2 continues Part 1 through functions, structures, streams and preprocessing.",
+        "urls": [
+          "https://edube.org/study/ce2"
+        ],
+        "source_id": "openedg-c-essentials-2",
+        "resource": "C Essentials - Part 2",
+        "access_model": "free-account",
+        "time_basis": "42 hours, provider study estimate.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "unchanged",
+      "accepted_on_start": "1fd3f2da7fd14a60373b645a0cc8bce7e56f0c09e3e4154cd0e5f99cf231f983",
+      "candidate": "1fd3f2da7fd14a60373b645a0cc8bce7e56f0c09e3e4154cd0e5f99cf231f983"
+    },
+    {
+      "code": "CLP-12-01",
+      "exam": {
+        "code": "CLP-12-01",
+        "observation": "Every detected difference removes only the manual provenance header (title, source, checked date and blank separator); published objective content matches. Monitor detected an objective-text difference.",
+        "urls": [
+          "https://cppinstitute.org/clp"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Preserve the accepted scoped baseline.",
+        "monitor": "changed",
+        "accepted_objective_sha256": "8136ac8d71a73622dd2068d08b9c18d513c25adaefddbc64e42ea1e63f402091",
+        "candidate_objective_sha256": "c1ee839f36d8584fbf8a6ae476d33ca123925d9ddf62cef252394c7b71788c40",
+        "catalog_matches": {
+          "https://cppinstitute.org/clp": {
+            "sources": [
+              "clp-12-01-syllabus"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "CLP-12-01",
+        "observation": "A pipe reader observes EOF after all descriptors referring to the write end are closed and buffered bytes have been read.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://man7.org/linux/man-pages/man7/pipe.7.html"
+        ],
+        "source_ids": [
+          "linux-pipe-manual"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "CLP-12-01",
+        "observation": "The free C Advanced course follows associate-level C and is explicitly mapped to CLP.",
+        "urls": [
+          "https://edube.org/study/clp"
+        ],
+        "source_id": "openedg-c-advanced",
+        "resource": "C Advanced",
+        "access_model": "free-account",
+        "time_basis": "42 hours, suggested 7 hours per week.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "changed",
+      "accepted_on_start": "8136ac8d71a73622dd2068d08b9c18d513c25adaefddbc64e42ea1e63f402091",
+      "candidate": "c1ee839f36d8584fbf8a6ae476d33ca123925d9ddf62cef252394c7b71788c40"
+    },
+    {
+      "code": "CPE-20-01",
+      "exam": {
+        "code": "CPE-20-01",
+        "observation": "The issuer page and checked objective extraction retain this exam code. Both monitored objective text and status matched accepted records.",
+        "urls": [
+          "https://cppinstitute.org/cpe"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Carry the existing baseline forward.",
+        "monitor": "unchanged",
+        "accepted_objective_sha256": "faf4501642933ecdc38efb270dda58a7db3a7c95a0028bda125b61544a34f60d",
+        "candidate_objective_sha256": "faf4501642933ecdc38efb270dda58a7db3a7c95a0028bda125b61544a34f60d",
+        "catalog_matches": {
+          "https://cppinstitute.org/cpe": {
+            "sources": [
+              "cpe-20-01-syllabus"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "CPE-20-01",
+        "observation": "The MSVC C++ main reference distinguishes the argument count from the argument vector. Its details apply to that implementation.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://learn.microsoft.com/en-us/cpp/cpp/main-function-command-line-args?view=msvc-170"
+        ],
+        "source_ids": [
+          "msvc-main"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "CPE-20-01",
+        "observation": "The beginner C++ Essentials course targets CPE and starts with programming fundamentals.",
+        "urls": [
+          "https://edube.org/study/cppe1"
+        ],
+        "source_id": "openedg-cpp-essentials-1",
+        "resource": "C++ Essentials - Part 1",
+        "access_model": "free-account",
+        "time_basis": "42 hours, provider study estimate.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "unchanged",
+      "accepted_on_start": "faf4501642933ecdc38efb270dda58a7db3a7c95a0028bda125b61544a34f60d",
+      "candidate": "faf4501642933ecdc38efb270dda58a7db3a7c95a0028bda125b61544a34f60d"
+    },
+    {
+      "code": "CPA-21-02",
+      "exam": {
+        "code": "CPA-21-02",
+        "observation": "Every detected difference removes only the manual provenance header (title, source, checked date and blank separator); published objective content matches. Monitor detected an objective-text difference.",
+        "urls": [
+          "https://cppinstitute.org/cpa"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Preserve the accepted scoped baseline.",
+        "monitor": "changed",
+        "accepted_objective_sha256": "d0a9b639d54f64ab17900bdcd919f934945cba6d3b69efacd110611c861c6fdc",
+        "candidate_objective_sha256": "17550f46f29f74479a1dfb3b01cda915137463347d1c86c2a5a4e981223fa13e",
+        "catalog_matches": {
+          "https://cppinstitute.org/cpa": {
+            "sources": [
+              "cpa-21-02-syllabus"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "CPA-21-02",
+        "observation": "The standard-library reference distinguishes a basic_string object's length and storage from the length of a character array.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://learn.microsoft.com/en-us/cpp/standard-library/basic-string-class?view=msvc-170"
+        ],
+        "source_ids": [
+          "msvc-string"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "CPA-21-02",
+        "observation": "C++ Essentials Part 2 targets CPA in the introductory text and offers four intermediate modules with labs.",
+        "urls": [
+          "https://edube.org/study/cppe2"
+        ],
+        "source_id": "openedg-cpp-essentials-2",
+        "resource": "C++ Essentials - Part 2",
+        "access_model": "free-account",
+        "time_basis": "No current publisher runtime established for this route.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use the exam's canonical code where an associated-certification field differs."
+      },
+      "monitor_outcome": "changed",
+      "accepted_on_start": "d0a9b639d54f64ab17900bdcd919f934945cba6d3b69efacd110611c861c6fdc",
+      "candidate": "17550f46f29f74479a1dfb3b01cda915137463347d1c86c2a5a4e981223fa13e"
+    },
+    {
+      "code": "CPP-22-02",
+      "exam": {
+        "code": "CPP-22-02",
+        "observation": "Every detected difference removes only the manual provenance header (title, source, checked date and blank separator); published objective content matches. Monitor detected an objective-text difference.",
+        "urls": [
+          "https://cppinstitute.org/cpp"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Preserve the accepted scoped baseline.",
+        "monitor": "changed",
+        "accepted_objective_sha256": "5869a199ee4632f40f020426475c4df284e614660e7ac83ca8595bb8709b6c7d",
+        "candidate_objective_sha256": "a1a1e663aaace30a2aebb9a5ae31f3c4458381db1348f70f6c87aba352991c6b",
+        "catalog_matches": {
+          "https://cppinstitute.org/cpp": {
+            "sources": [
+              "cpp-22-02-syllabus"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "CPP-22-02",
+        "observation": "Sequence containers offer ordered access; storage layout and iterator invalidation depend on the particular container.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://en.cppreference.com/w/cpp/container.html"
+        ],
+        "source_ids": [
+          "cppreference-cpp-containers"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "CPP-22-02",
+        "observation": "C++ Advanced has nine modules covering templates, standard containers and algorithms. The provider describes it as following CPA.",
+        "urls": [
+          "https://edube.org/study/cpp"
+        ],
+        "source_id": "openedg-cpp-advanced",
+        "resource": "C++ Advanced",
+        "access_model": "free-account",
+        "time_basis": "42 hours, provider study estimate.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use the current CPP exam code and preserve any version discrepancy in the associated credential field."
+      },
+      "monitor_outcome": "changed",
+      "accepted_on_start": "5869a199ee4632f40f020426475c4df284e614660e7ac83ca8595bb8709b6c7d",
+      "candidate": "a1a1e663aaace30a2aebb9a5ae31f3c4458381db1348f70f6c87aba352991c6b"
+    },
+    {
+      "code": "JSE-40-01",
+      "exam": {
+        "code": "JSE-40-01",
+        "observation": "The issuer page and checked objective extraction retain this exam code. Both monitored objective text and status matched accepted records.",
+        "urls": [
+          "https://jsinstitute.org/jse-certification"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Carry the existing baseline forward.",
+        "monitor": "unchanged",
+        "accepted_objective_sha256": "8e693613dc23a1fcc95ab41c1675897253aa341764d5d9127ff7fc48aeb29e46",
+        "candidate_objective_sha256": "8e693613dc23a1fcc95ab41c1675897253aa341764d5d9127ff7fc48aeb29e46",
+        "catalog_matches": {
+          "https://jsinstitute.org/jse-certification": {
+            "sources": [
+              "jse-40-01-scope"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "JSE-40-01",
+        "observation": "JavaScript let is block scoped; a block does not impose corresponding block scope on var.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let"
+        ],
+        "source_ids": [
+          "mdn-js-let"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "JSE-40-01",
+        "observation": "JavaScript Essentials 1 covers language syntax and core programming and points to JSE.",
+        "urls": [
+          "https://jsinstitute.org/javascript-essentials-1"
+        ],
+        "source_id": "openedg-javascript-essentials-1",
+        "resource": "JavaScript Essentials 1",
+        "access_model": "free-account",
+        "time_basis": "40 hours, provider study estimate.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "unchanged",
+      "accepted_on_start": "8e693613dc23a1fcc95ab41c1675897253aa341764d5d9127ff7fc48aeb29e46",
+      "candidate": "8e693613dc23a1fcc95ab41c1675897253aa341764d5d9127ff7fc48aeb29e46"
+    },
+    {
+      "code": "JSA-41-01",
+      "exam": {
+        "code": "JSA-41-01",
+        "observation": "The issuer syllabus opens and explicitly identifies JSA-41-01 and its numbered study blocks; the automatic HTML adapter failed to recognize the structure. Objective monitor reported: ValueError: Could not find the JS Institute exam scope",
+        "urls": [
+          "https://jsinstitute.org/jsa-certification",
+          "https://jsinstitute.org/jsa-exam-syllabus"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Use the official dated syllabus and preserve the pending adapter discrepancy.",
+        "monitor": "manual-review",
+        "accepted_objective_sha256": "1e5c9dc2e1613250bf36e64705be4635f57b864c5acc99d16b88d1b73e975fc3",
+        "candidate_objective_sha256": null,
+        "catalog_matches": {
+          "https://jsinstitute.org/jsa-certification": {
+            "sources": [
+              "jsa-certification-page"
+            ],
+            "candidates": []
+          },
+          "https://jsinstitute.org/jsa-exam-syllabus": {
+            "sources": [
+              "jsa-41-01-syllabus"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "JSA-41-01",
+        "observation": "Fetch does not automatically reject a promise on a 404. Check status or response.ok when deciding how to handle the response.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch"
+        ],
+        "source_ids": [
+          "mdn-fetch-api"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "JSA-41-01",
+        "observation": "JavaScript Essentials 2 assumes the first course and adds object-oriented programming and data modeling.",
+        "urls": [
+          "https://jsinstitute.org/javascript-essentials-2"
+        ],
+        "source_id": "js-institute-javascript-essentials-2",
+        "resource": "JavaScript Essentials 2",
+        "access_model": "free-account",
+        "time_basis": "50 hours, provider study estimate.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "manual-review",
+      "accepted_on_start": "1e5c9dc2e1613250bf36e64705be4635f57b864c5acc99d16b88d1b73e975fc3",
+      "candidate": null
+    },
+    {
+      "code": "WDE-40-01",
+      "exam": {
+        "code": "WDE-40-01",
+        "observation": "The issuer syllabus opens and explicitly identifies WDE-40-01 and its numbered study blocks; the automatic HTML adapter failed to recognize the structure. Objective monitor reported: ValueError: Could not find the JS Institute exam scope",
+        "urls": [
+          "https://jsinstitute.org/wde-certification",
+          "https://jsinstitute.org/wde-exam-syllabus"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Use the official dated syllabus and preserve the pending adapter discrepancy.",
+        "monitor": "manual-review",
+        "accepted_objective_sha256": "52a8efac1190c7d5b3e863705d0a0b7d4ea88ad72834aff4990051f21a9a7521",
+        "candidate_objective_sha256": null,
+        "catalog_matches": {
+          "https://jsinstitute.org/wde-certification": {
+            "sources": [
+              "wde-certification-page"
+            ],
+            "candidates": []
+          },
+          "https://jsinstitute.org/wde-exam-syllabus": {
+            "sources": [
+              "wde-40-01-syllabus"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "WDE-40-01",
+        "observation": "aria-hidden is inherited by descendants and must not hide a keyboard-focusable control from assistive technology.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-hidden"
+        ],
+        "source_ids": [
+          "mdn-aria-hidden"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "WDE-40-01",
+        "observation": "Web Dev 101 offers an initial free tier and a premium tier with different exercise access. Its syllabus develops HTML structure for WDE.",
+        "urls": [
+          "https://edube.org/study/html-essentials"
+        ],
+        "source_id": "edube-web-dev-101-html",
+        "resource": "Web Dev 101: HTML (WD101)",
+        "access_model": "public",
+        "time_basis": "Five weeks at one hour per study day, provider schedule.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "manual-review",
+      "accepted_on_start": "52a8efac1190c7d5b3e863705d0a0b7d4ea88ad72834aff4990051f21a9a7521",
+      "candidate": null
+    },
+    {
+      "code": "WDA-41-01",
+      "exam": {
+        "code": "WDA-41-01",
+        "observation": "The issuer syllabus opens and explicitly identifies WDA-41-01 and its numbered study blocks; the automatic HTML adapter failed to recognize the structure. Objective monitor reported: ValueError: Could not find the JS Institute exam scope",
+        "urls": [
+          "https://jsinstitute.org/wda-certification",
+          "https://jsinstitute.org/wda-exam-syllabus"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Use the official dated syllabus and preserve the pending adapter discrepancy.",
+        "monitor": "manual-review",
+        "accepted_objective_sha256": "747cb21a7c881c08b2b1107feb22733528ec25faab300998abb8ac499af07c5d",
+        "candidate_objective_sha256": null,
+        "catalog_matches": {
+          "https://jsinstitute.org/wda-certification": {
+            "sources": [
+              "wda-certification-page"
+            ],
+            "candidates": []
+          },
+          "https://jsinstitute.org/wda-exam-syllabus": {
+            "sources": [
+              "wda-41-01-syllabus"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "WDA-41-01",
+        "observation": "The prefers-reduced-motion media feature reflects a user motion preference so authors can adjust motion in an accessible presentation.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion"
+        ],
+        "source_ids": [
+          "mdn-reduced-motion"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "WDA-41-01",
+        "observation": "Web Dev 102 targets WDA and presumes HTML knowledge; the curriculum develops CSS styling and layout.",
+        "urls": [
+          "https://www.edube.org/study/css-essentials"
+        ],
+        "source_id": "edube-web-dev-102-css",
+        "resource": "Web Dev 102: CSS (WD102)",
+        "access_model": "public",
+        "time_basis": "40 hours, provider recommendation of 5 hours per week.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "manual-review",
+      "accepted_on_start": "747cb21a7c881c08b2b1107feb22733528ec25faab300998abb8ac499af07c5d",
+      "candidate": null
+    }
+  ],
+  "review_inputs": [
+    {
+      "code": "CLE-10-01",
+      "guide": "guides/CLE-10-01-c-certified-entry-level-programmer.md",
+      "guide_sha256_lf": "3e5d67b63fd9b3a458f125274db980dac8f12d3fb52b673b54f9597af83a3689",
+      "objective": "data/objective-snapshots/cle-10-01-official-objectives.txt",
+      "objective_sha256": "f21493c90c62aa1fb1ad68ccdd416655ddee8b9f5206a9b992f8829ddf5ee2dd"
+    },
+    {
+      "code": "CLA-11-03",
+      "guide": "guides/CLA-11-03-c-certified-associate-programmer.md",
+      "guide_sha256_lf": "9c2a95640087d3ddd7bbfc547796363ed106498635845ba2a3688862164503ff",
+      "objective": "data/objective-snapshots/cla-11-03-official-objectives.txt",
+      "objective_sha256": "1fd3f2da7fd14a60373b645a0cc8bce7e56f0c09e3e4154cd0e5f99cf231f983"
+    },
+    {
+      "code": "CLP-12-01",
+      "guide": "guides/CLP-12-01-c-certified-professional-programmer.md",
+      "guide_sha256_lf": "4a53252bec1cdd67dfd85ce847b935546d4c1f45c1dc96015cf5de6eb92da0fa",
+      "objective": "data/objective-snapshots/clp-12-01-official-objectives.txt",
+      "objective_sha256": "8136ac8d71a73622dd2068d08b9c18d513c25adaefddbc64e42ea1e63f402091"
+    },
+    {
+      "code": "CPE-20-01",
+      "guide": "guides/CPE-20-01-cpp-certified-entry-level-programmer.md",
+      "guide_sha256_lf": "73130e853d66211931745c2d8c8b352f0413ae0173c0bc811b892cd00dfbd179",
+      "objective": "data/objective-snapshots/cpe-20-01-official-objectives.txt",
+      "objective_sha256": "faf4501642933ecdc38efb270dda58a7db3a7c95a0028bda125b61544a34f60d"
+    },
+    {
+      "code": "CPA-21-02",
+      "guide": "guides/CPA-21-02-cpp-certified-associate-programmer.md",
+      "guide_sha256_lf": "6acafa5f00f55ad279291521b0f84d72a7dee742278c7c70c16e2e533f555432",
+      "objective": "data/objective-snapshots/cpa-21-02-official-objectives.txt",
+      "objective_sha256": "d0a9b639d54f64ab17900bdcd919f934945cba6d3b69efacd110611c861c6fdc"
+    },
+    {
+      "code": "CPP-22-02",
+      "guide": "guides/CPP-22-02-cpp-certified-professional-programmer.md",
+      "guide_sha256_lf": "75131515dfed7e150516d207c6c2c409d19853ad4b6d2de18022edd64f18ea57",
+      "objective": "data/objective-snapshots/cpp-22-02-official-objectives.txt",
+      "objective_sha256": "5869a199ee4632f40f020426475c4df284e614660e7ac83ca8595bb8709b6c7d"
+    },
+    {
+      "code": "JSE-40-01",
+      "guide": "guides/JSE-40-01-certified-entry-level-javascript-programmer.md",
+      "guide_sha256_lf": "033665dd533b39112c1caea58cd25f3b1eec9d4ac88dfbdfa9bcc9410cea2b65",
+      "objective": "data/objective-snapshots/jse-40-01-official-objectives.txt",
+      "objective_sha256": "8e693613dc23a1fcc95ab41c1675897253aa341764d5d9127ff7fc48aeb29e46"
+    },
+    {
+      "code": "JSA-41-01",
+      "guide": "guides/JSA-41-01-certified-associate-javascript-programmer.md",
+      "guide_sha256_lf": "f73e3c593c90869750cd29090d2f4ee4e5bde12a0fdd3cb640a873d6506f824a",
+      "objective": "data/objective-snapshots/jsa-41-01-official-objectives.txt",
+      "objective_sha256": "1e5c9dc2e1613250bf36e64705be4635f57b864c5acc99d16b88d1b73e975fc3"
+    },
+    {
+      "code": "WDE-40-01",
+      "guide": "guides/WDE-40-01-certified-entry-level-web-developer.md",
+      "guide_sha256_lf": "4a2a90bcbfa531fa052e1b1c7fa0cd9dd9a7b6ddf19066d0677392b8ed0a8d82",
+      "objective": "data/objective-snapshots/wde-40-01-official-objectives.txt",
+      "objective_sha256": "52a8efac1190c7d5b3e863705d0a0b7d4ea88ad72834aff4990051f21a9a7521"
+    },
+    {
+      "code": "WDA-41-01",
+      "guide": "guides/WDA-41-01-certified-associate-web-developer.md",
+      "guide_sha256_lf": "bc72ba612cc3499a0c94984057c806328a28f75edf1c4610db5996f83b06c90f",
+      "objective": "data/objective-snapshots/wda-41-01-official-objectives.txt",
+      "objective_sha256": "747cb21a7c881c08b2b1107feb22733528ec25faab300998abb8ac499af07c5d"
+    }
+  ],
+  "independent_review": {
+    "method": "Fresh-context read-only AI review of changed content and source evidence",
+    "rubric": "docs/AI-AUDIT.md, version 2",
+    "reviewed_tree": "2c9a0086cc3b386b626ede051084f5c92c8f6469",
+    "summary": "All ten published guide and objective pairs match. Opened the GNU GMP 6.3.0 distribution archive in memory and verified doc/gmp.texi contains the three cited manual nodes, mpz_ui_pow_ui and mpq_canonicalize. The CLP blocked-source gate and historical October disclosure agree across the guide, catalog and ledger. Targeted change/evidence review only.",
+    "findings": [],
+    "validation": [
+      "unit tests",
+      "repository validation",
+      "reviewed learning resource check",
+      "site preparation",
+      "strict MkDocs build",
+      "generated site validation"
+    ]
+  }
+}
