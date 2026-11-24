@@ -1,0 +1,782 @@
+{
+  "date": "2026-11-23",
+  "scope": "AI research into official objectives, selected technical references and learning resources. Individual exam delivery, private course contents and live product testing were outside this review.",
+  "exams": [
+    {
+      "code": "SPLUNK-ITSI-ADMIN",
+      "exam": {
+        "code": "SPLUNK-ITSI-ADMIN",
+        "observation": "Issuer's 2026 FAQ explicitly lists this credential in its January 1 legacy category: content is frozen across newer product releases. Objective monitor outcome: null.",
+        "urls": [
+          "https://www.splunk.com/en_us/training/certification-track/splunk-itsi-certified-admin.html",
+          "https://www.splunk.com/en_us/pdfs/training/splunk-certification-changes.pdf"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Preserve historical scope. Check any later, dated retirement evidence separately.",
+        "monitor": null,
+        "accepted_objective_sha256": null,
+        "candidate_objective_sha256": null,
+        "catalog_matches": {
+          "https://www.splunk.com/en_us/training/certification-track/splunk-itsi-certified-admin.html": {
+            "sources": [],
+            "candidates": []
+          },
+          "https://www.splunk.com/en_us/pdfs/training/splunk-certification-changes.pdf": {
+            "sources": [
+              "splunk-certification-changes-faq"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "SPLUNK-ITSI-ADMIN",
+        "observation": "Legacy ITSI administrator material concerns IT service intelligence in the inventory; retain the issuer route without adapting release details into exam scope.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "Limited to a legacy inventory route; no product lab or exam-specific current release established.",
+        "urls": [
+          "https://www.splunk.com/en_us/training/certification-track/splunk-itsi-certified-admin.html"
+        ],
+        "source_ids": [],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "SPLUNK-ITSI-ADMIN",
+        "observation": "The ITSI credential page links its test blueprint and related learning paths for preparation. The public overview covers installation and configuration.",
+        "urls": [
+          "https://www.splunk.com/en_us/training/certification-track/splunk-itsi-certified-admin.html"
+        ],
+        "source_id": null,
+        "resource": "SPLUNK-ITSI-ADMIN credential prep listing",
+        "access_model": "not established",
+        "time_basis": "No current publisher runtime established for this route.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "inventory-only",
+      "accepted_on_start": null,
+      "candidate": null
+    },
+    {
+      "code": "SPLUNK-SOAR-AUTOMATION-DEVELOPER",
+      "exam": {
+        "code": "SPLUNK-SOAR-AUTOMATION-DEVELOPER",
+        "observation": "Issuer's 2026 FAQ explicitly lists this credential in its January 1 legacy category: content is frozen across newer product releases. Objective monitor outcome: null.",
+        "urls": [
+          "https://www.splunk.com/en_us/training/certification-track/splunk-soar-certified-automation-developer.html",
+          "https://www.splunk.com/en_us/pdfs/training/splunk-certification-changes.pdf"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Preserve historical scope. Check any later, dated retirement evidence separately.",
+        "monitor": null,
+        "accepted_objective_sha256": null,
+        "candidate_objective_sha256": null,
+        "catalog_matches": {
+          "https://www.splunk.com/en_us/training/certification-track/splunk-soar-certified-automation-developer.html": {
+            "sources": [],
+            "candidates": []
+          },
+          "https://www.splunk.com/en_us/pdfs/training/splunk-certification-changes.pdf": {
+            "sources": [
+              "splunk-certification-changes-faq"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "SPLUNK-SOAR-AUTOMATION-DEVELOPER",
+        "observation": "The SOAR certification route references automation development. The inventory has no guide to update with deployment techniques.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "Limited to inventory identity; no guide or product exercise is published.",
+        "urls": [
+          "https://www.splunk.com/en_us/training/certification-track/splunk-soar-certified-automation-developer.html"
+        ],
+        "source_ids": [],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "SPLUNK-SOAR-AUTOMATION-DEVELOPER",
+        "observation": "The SOAR credential identifies cybersecurity customers using the platform as its target audience; its blueprint and related training can guide defensive case-management practice.",
+        "urls": [
+          "https://www.splunk.com/en_us/training/certification-track/splunk-soar-certified-automation-developer.html"
+        ],
+        "source_id": null,
+        "resource": "SPLUNK-SOAR-AUTOMATION-DEVELOPER credential prep listing",
+        "access_model": "not established",
+        "time_basis": "No current publisher runtime established for this route.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "inventory-only",
+      "accepted_on_start": null,
+      "candidate": null
+    },
+    {
+      "code": "SPLUNK-O11Y-METRICS-USER",
+      "exam": {
+        "code": "SPLUNK-O11Y-METRICS-USER",
+        "observation": "The public Splunk blueprint is readable as PDF and identifies the specific exam despite the automated HTML parser's manual-review result. Objective monitor reported: ValueError: Could not find the Splunk certification overview",
+        "urls": [
+          "https://www.splunk.com/en_us/training/certification-track/splunk-o11y-cloud-certified-metrics-user.html",
+          "https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-o11y-cloud-metrics-user.pdf"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Retain the linked blueprint; apply PDF comparison to individual objectives before changing the accepted map.",
+        "monitor": "manual-review",
+        "accepted_objective_sha256": "53592e027c6e076c752a7fdbda7be355bcc4cde7d02c379d87ff5bb0b85faa01",
+        "candidate_objective_sha256": null,
+        "catalog_matches": {
+          "https://www.splunk.com/en_us/training/certification-track/splunk-o11y-cloud-certified-metrics-user.html": {
+            "sources": [
+              "splunk-o11y-metrics-user-certification"
+            ],
+            "candidates": []
+          },
+          "https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-o11y-cloud-metrics-user.pdf": {
+            "sources": [
+              "splunk-o11y-metrics-user-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "SPLUNK-O11Y-METRICS-USER",
+        "observation": "The Collector is built from receivers, processors and exporters, with connectors/extensions for additional behavior.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://opentelemetry.io/docs/collector/"
+        ],
+        "source_ids": [
+          "splunk-o11y-metrics-user-source-2"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "SPLUNK-O11Y-METRICS-USER",
+        "observation": "Fundamentals of Metrics Monitoring replaces Using Splunk Infrastructure Monitoring and adds labs. It covers metric metadata, rollups, visualization and alerts.",
+        "urls": [
+          "https://www.splunk.com/en_us/pdfs/training/fundamentals-of-metrics-monitoring-course-description.pdf"
+        ],
+        "source_id": "splunk-o11y-metrics-user-course-fundamentals",
+        "resource": "Fundamentals of Metrics Monitoring Course Description",
+        "access_model": "paid",
+        "time_basis": "6 hours for Fundamentals according to the prior course record.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "manual-review",
+      "accepted_on_start": "53592e027c6e076c752a7fdbda7be355bcc4cde7d02c379d87ff5bb0b85faa01",
+      "candidate": null
+    },
+    {
+      "code": "SPLK-5001",
+      "exam": {
+        "code": "SPLK-5001",
+        "observation": "The Cybersecurity Defense Analyst program page and monitored objective text remain consistent. Both monitored objective text and status matched accepted records.",
+        "urls": [
+          "https://www.splunk.com/en_us/training/certification-track/splunk-certified-cybersecurity-defense-analyst.html"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Retain current scope.",
+        "monitor": "unchanged",
+        "accepted_objective_sha256": "a2bd1aa1350f373525e5d2f66cfc38f7023f6b84cf9275f594421412fbd704f5",
+        "candidate_objective_sha256": "a2bd1aa1350f373525e5d2f66cfc38f7023f6b84cf9275f594421412fbd704f5",
+        "catalog_matches": {
+          "https://www.splunk.com/en_us/training/certification-track/splunk-certified-cybersecurity-defense-analyst.html": {
+            "sources": [
+              "splk-5001-certification"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "SPLK-5001",
+        "observation": "ES 8.7.2, released October 23, 2026, was a bug-fix release.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://help.splunk.com/en/splunk-enterprise-security-8/release-notes-and-resources/8.7/splunk-enterprise-security-release-notes/release-notes-for-splunk-enterprise-security"
+        ],
+        "source_ids": [
+          "splk-5002-es-87-release-notes"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "SPLK-5001",
+        "observation": "The Cybersecurity Landscape is the first of three Defense Analyst path courses. Videos and knowledge checks target SOC foundations.",
+        "urls": [
+          "https://www.splunk.com/en_us/pdfs/training/cybersecurity-landscape-course-description.pdf"
+        ],
+        "source_id": "splunk-cda-course-descriptions",
+        "resource": "Cybersecurity Defense Analyst course description: Cybersecurity Landscape",
+        "access_model": "public",
+        "time_basis": "20–30 minutes to map the three-course sequence, editorial.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "unchanged",
+      "accepted_on_start": "a2bd1aa1350f373525e5d2f66cfc38f7023f6b84cf9275f594421412fbd704f5",
+      "candidate": "a2bd1aa1350f373525e5d2f66cfc38f7023f6b84cf9275f594421412fbd704f5"
+    },
+    {
+      "code": "SPLK-5002",
+      "exam": {
+        "code": "SPLK-5002",
+        "observation": "The public Splunk blueprint is readable as PDF and identifies the specific exam despite the automated HTML parser's manual-review result. Objective monitor reported: ValueError: Could not find the Splunk certification overview",
+        "urls": [
+          "https://www.splunk.com/en_us/training/certification-track/splunk-certified-cybersecurity-defense-engineer.html",
+          "https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-cybersecurity-defense-engineer.pdf"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Retain the linked blueprint; apply PDF comparison to individual objectives before changing the accepted map.",
+        "monitor": "manual-review",
+        "accepted_objective_sha256": "8c0b091c2e53985d8ccfd27c19ff36fe4379d18e43fcdfb93c04a0847f18c751",
+        "candidate_objective_sha256": null,
+        "catalog_matches": {
+          "https://www.splunk.com/en_us/training/certification-track/splunk-certified-cybersecurity-defense-engineer.html": {
+            "sources": [
+              "splk-5002-certification"
+            ],
+            "candidates": []
+          },
+          "https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-cybersecurity-defense-engineer.pdf": {
+            "sources": [
+              "splk-5002-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "SPLK-5002",
+        "observation": "ES 8.8 has separate release notes including changes to bundled add-ons and the aligned Common Information Model version.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://help.splunk.com/en/splunk-enterprise-security-8/release-notes-and-resources/8.8/splunk-enterprise-security-release-notes/release-notes-for-splunk-enterprise-security"
+        ],
+        "source_ids": [
+          "splk-5002-es-88-release-notes"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "SPLK-5002",
+        "observation": "The defense engineer track flowchart lists courses as preparation options.",
+        "urls": [
+          "https://www.splunk.com/en_us/pdfs/training/splunk-certified-cybersecurity-defense-engineer-track.pdf"
+        ],
+        "source_id": "splk-5002-course-track-2026",
+        "resource": "Splunk Certified Cybersecurity Defense Engineer 2026 course track",
+        "access_model": "public",
+        "time_basis": "45–75 minutes to compare the track with the exam materials, editorial.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Keep recommended courses separate from eligibility."
+      },
+      "monitor_outcome": "manual-review",
+      "accepted_on_start": "8c0b091c2e53985d8ccfd27c19ff36fe4379d18e43fcdfb93c04a0847f18c751",
+      "candidate": null
+    },
+    {
+      "code": "SPLK-5003",
+      "exam": {
+        "code": "SPLK-5003",
+        "observation": "The public Splunk blueprint is readable as PDF and identifies the specific exam despite the automated HTML parser's manual-review result. Objective monitor reported: ValueError: Could not find the Splunk certification overview",
+        "urls": [
+          "https://www.splunk.com/en_us/training/certification-track/splunk-certified-cybersecurity-defense-architect.html",
+          "https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-cybersecurity-defense-architect.pdf"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Retain the linked blueprint; apply PDF comparison to individual objectives before changing the accepted map.",
+        "monitor": "manual-review",
+        "accepted_objective_sha256": "10121cd48a63fb12ca9073996c56aa52248a86bbcf124729f358798ba7331161",
+        "candidate_objective_sha256": null,
+        "catalog_matches": {
+          "https://www.splunk.com/en_us/training/certification-track/splunk-certified-cybersecurity-defense-architect.html": {
+            "sources": [
+              "splk-5003-certification"
+            ],
+            "candidates": []
+          },
+          "https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-cybersecurity-defense-architect.pdf": {
+            "sources": [
+              "splk-5003-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "SPLK-5003",
+        "observation": "ES 8.7.2 was a bug-fix update; retain the boundaries for exercises that depend on later features.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://help.splunk.com/en/splunk-enterprise-security-8/release-notes-and-resources/8.7/splunk-enterprise-security-release-notes/release-notes-for-splunk-enterprise-security"
+        ],
+        "source_ids": [
+          "splk-5002-es-87-release-notes"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "SPLK-5003",
+        "observation": "The architect flowchart builds on Defense Engineer training and lists additional suggested courses.",
+        "urls": [
+          "https://www.splunk.com/en_us/pdfs/training/splunk-certified-cybersecurity-defense-architect-track-flowchart.pdf"
+        ],
+        "source_id": "splk-5003-course-track-2026",
+        "resource": "Splunk Certified Cybersecurity Defense Architect 2026 course-track flowchart",
+        "access_model": "public",
+        "time_basis": "60–90 minutes to map both levels, editorial.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "manual-review",
+      "accepted_on_start": "10121cd48a63fb12ca9073996c56aa52248a86bbcf124729f358798ba7331161",
+      "candidate": null
+    },
+    {
+      "code": "GH-100",
+      "exam": {
+        "code": "GH-100",
+        "observation": "GH-100 retains an official Learn study guide. GitHub’s certification catalog lists this program as active; GH-600 Agentic AI Developer is separately listed from the GH-700 business beta title. Both monitored objective text and status matched accepted records.",
+        "urls": [
+          "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-100",
+          "https://learn.github.com/api/certifications"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Retain the accepted exam edition and separate each credential identity.",
+        "monitor": "unchanged",
+        "accepted_objective_sha256": "9e671c9dd3ce7ac8914e989a0090422d6f0490fe19f3c9b11de73010453d44b6",
+        "candidate_objective_sha256": "9e671c9dd3ce7ac8914e989a0090422d6f0490fe19f3c9b11de73010453d44b6",
+        "catalog_matches": {
+          "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-100": {
+            "sources": [
+              "gh-100-blueprint"
+            ],
+            "candidates": []
+          },
+          "https://learn.github.com/api/certifications": {
+            "sources": [],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "GH-100",
+        "observation": "The GitHub Enterprise Server HA page is versioned and specifically covers high availability; recovery exercises still need backup and restore evidence.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.github.com/en/enterprise-server@latest/admin/monitoring-and-managing-your-instance/configuring-high-availability/about-high-availability-configuration"
+        ],
+        "source_ids": [
+          "github-docs-ghes-high-availability"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "GH-100",
+        "observation": "Part 1 introduces GitHub administration, products, account types and repository basics.",
+        "urls": [
+          "https://learn.microsoft.com/en-us/training/paths/github-administration-products/"
+        ],
+        "source_id": "gh-100-learn-part-1",
+        "resource": "GitHub Administration Part 1 of 2",
+        "access_model": "public",
+        "time_basis": "12–16 hours estimated for both parts in the guide, not a Part 1 runtime.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "unchanged",
+      "accepted_on_start": "9e671c9dd3ce7ac8914e989a0090422d6f0490fe19f3c9b11de73010453d44b6",
+      "candidate": "9e671c9dd3ce7ac8914e989a0090422d6f0490fe19f3c9b11de73010453d44b6"
+    },
+    {
+      "code": "GH-200",
+      "exam": {
+        "code": "GH-200",
+        "observation": "GH-200 retains an official Learn study guide. GitHub’s certification catalog lists this program as active; GH-600 Agentic AI Developer is separately listed from the GH-700 business beta title. Both monitored objective text and status matched accepted records.",
+        "urls": [
+          "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-200",
+          "https://learn.github.com/api/certifications"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Retain the accepted exam edition and separate each credential identity.",
+        "monitor": "unchanged",
+        "accepted_objective_sha256": "b41c6a6832e14bf4b6c222d0b6162cff81e9ef4683480f89e89b3e0406fdf941",
+        "candidate_objective_sha256": "b41c6a6832e14bf4b6c222d0b6162cff81e9ef4683480f89e89b3e0406fdf941",
+        "catalog_matches": {
+          "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-200": {
+            "sources": [
+              "gh-200-blueprint"
+            ],
+            "candidates": []
+          },
+          "https://learn.github.com/api/certifications": {
+            "sources": [],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "GH-200",
+        "observation": "GitHub's self-hosted runners reference redirects to the current concepts entry. Runtime and maintenance depend on the user's own environment.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.github.com/en/actions/hosting-your-own-runners"
+        ],
+        "source_ids": [
+          "github-docs-self-hosted-runners"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "GH-200",
+        "observation": "GitHub Actions Part 1 introduces CI workflow creation and working with GitHub Script.",
+        "urls": [
+          "https://learn.microsoft.com/en-us/training/paths/github-actions/"
+        ],
+        "source_id": "gh-200-learn-part-1",
+        "resource": "Automate your workflow with GitHub Actions Part 1 of 2",
+        "access_model": "public",
+        "time_basis": "12–16 hours for both parts, prior library estimate.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "unchanged",
+      "accepted_on_start": "b41c6a6832e14bf4b6c222d0b6162cff81e9ef4683480f89e89b3e0406fdf941",
+      "candidate": "b41c6a6832e14bf4b6c222d0b6162cff81e9ef4683480f89e89b3e0406fdf941"
+    },
+    {
+      "code": "GH-300",
+      "exam": {
+        "code": "GH-300",
+        "observation": "GH-300 retains an official Learn study guide. GitHub’s certification catalog lists this program as active; GH-600 Agentic AI Developer is separately listed from the GH-700 business beta title. Both monitored objective text and status matched accepted records.",
+        "urls": [
+          "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-300",
+          "https://learn.github.com/api/certifications"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Retain the accepted exam edition and separate each credential identity.",
+        "monitor": "unchanged",
+        "accepted_objective_sha256": "2043edf29c68926236ec3a6e417058609e4e6cfec55e1e201e48e57c1b4fff9b",
+        "candidate_objective_sha256": "2043edf29c68926236ec3a6e417058609e4e6cfec55e1e201e48e57c1b4fff9b",
+        "catalog_matches": {
+          "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-300": {
+            "sources": [
+              "gh-300-blueprint"
+            ],
+            "candidates": []
+          },
+          "https://learn.github.com/api/certifications": {
+            "sources": [],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "GH-300",
+        "observation": "Enterprise default availability does not cover preview features; check explicit settings for each affected policy.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.github.com/en/copilot/concepts/enterprise/default-availability"
+        ],
+        "source_ids": [
+          "gh300-default-availability"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "GH-300",
+        "observation": "The GitHub Skills exercise covers repo instructions, agent skills and custom agents. Doing it requires copying an exercise into a GitHub account.",
+        "urls": [
+          "https://github.com/skills/customize-your-github-copilot-experience"
+        ],
+        "source_id": "github-skills-customize-copilot",
+        "resource": "Customize your GitHub Copilot experience",
+        "access_model": "free-account",
+        "time_basis": "Under 30 minutes, exercise README.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "unchanged",
+      "accepted_on_start": "2043edf29c68926236ec3a6e417058609e4e6cfec55e1e201e48e57c1b4fff9b",
+      "candidate": "2043edf29c68926236ec3a6e417058609e4e6cfec55e1e201e48e57c1b4fff9b"
+    },
+    {
+      "code": "GH-500",
+      "exam": {
+        "code": "GH-500",
+        "observation": "GH-500 retains an official Learn study guide. GitHub’s certification catalog lists this program as active; GH-600 Agentic AI Developer is separately listed from the GH-700 business beta title. Both monitored objective text and status matched accepted records.",
+        "urls": [
+          "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-500",
+          "https://learn.github.com/api/certifications"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Retain the accepted exam edition and separate each credential identity.",
+        "monitor": "unchanged",
+        "accepted_objective_sha256": "a935dc15cfa929c01d402424f0edc39bb018b4c600ce734bd7cf10e1446ae102",
+        "candidate_objective_sha256": "a935dc15cfa929c01d402424f0edc39bb018b4c600ce734bd7cf10e1446ae102",
+        "catalog_matches": {
+          "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-500": {
+            "sources": [
+              "gh-500-blueprint"
+            ],
+            "candidates": []
+          },
+          "https://learn.github.com/api/certifications": {
+            "sources": [],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "GH-500",
+        "observation": "Dependency review compares manifests/lockfiles and surfaces dependency changes and known vulnerabilities in a pull request.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-dependency-review"
+        ],
+        "source_ids": [
+          "github-docs-dependency-review"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "GH-500",
+        "observation": "The first Advanced Security path introduces GitHub's protective features and code scanning in the development lifecycle.",
+        "urls": [
+          "https://learn.microsoft.com/en-us/training/paths/github-advanced-security/"
+        ],
+        "source_id": "gh-500-learn-part-1",
+        "resource": "GitHub Advanced Security Part 1 of 2",
+        "access_model": "public",
+        "time_basis": "12–16 hours for both parts, prior library estimate.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "unchanged",
+      "accepted_on_start": "a935dc15cfa929c01d402424f0edc39bb018b4c600ce734bd7cf10e1446ae102",
+      "candidate": "a935dc15cfa929c01d402424f0edc39bb018b4c600ce734bd7cf10e1446ae102"
+    },
+    {
+      "code": "GH-900",
+      "exam": {
+        "code": "GH-900",
+        "observation": "GH-900 retains an official Learn study guide. GitHub’s certification catalog lists this program as active; GH-600 Agentic AI Developer is separately listed from the GH-700 business beta title. Both monitored objective text and status matched accepted records.",
+        "urls": [
+          "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-900",
+          "https://learn.github.com/api/certifications"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Retain the accepted exam edition and separate each credential identity.",
+        "monitor": "unchanged",
+        "accepted_objective_sha256": "bd1c323a21723f8479a7b79ec41a576044ebe6afbc5bf57715acf431fe90828b",
+        "candidate_objective_sha256": "bd1c323a21723f8479a7b79ec41a576044ebe6afbc5bf57715acf431fe90828b",
+        "catalog_matches": {
+          "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-900": {
+            "sources": [
+              "gh-900-blueprint"
+            ],
+            "candidates": []
+          },
+          "https://learn.github.com/api/certifications": {
+            "sources": [],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "GH-900",
+        "observation": "CODEOWNERS users need write permission; a team also needs visibility and explicit team write access.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners"
+        ],
+        "source_ids": [
+          "github-docs-codeowners"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "GH-900",
+        "observation": "Foundations Part 1 covers common collaboration, Projects, Markdown and repository workflows.",
+        "urls": [
+          "https://learn.microsoft.com/en-us/training/paths/github-foundations/"
+        ],
+        "source_id": "gh-900-learn-part-1",
+        "resource": "GitHub Foundations Part 1 of 2",
+        "access_model": "public",
+        "time_basis": "12–16 hours for both parts, prior library estimate.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "unchanged",
+      "accepted_on_start": "bd1c323a21723f8479a7b79ec41a576044ebe6afbc5bf57715acf431fe90828b",
+      "candidate": "bd1c323a21723f8479a7b79ec41a576044ebe6afbc5bf57715acf431fe90828b"
+    },
+    {
+      "code": "GH-600",
+      "exam": {
+        "code": "GH-600",
+        "observation": "GH-600 retains an official Learn study guide. GitHub’s certification catalog lists this program as active; GH-600 Agentic AI Developer is separately listed from the GH-700 business beta title. Both monitored objective text and status matched accepted records.",
+        "urls": [
+          "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-600",
+          "https://learn.github.com/api/certifications"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Retain the accepted exam edition and separate each credential identity.",
+        "monitor": "unchanged",
+        "accepted_objective_sha256": "aec7750e2180662b00b676c42477e968c4286eb023ade65d68b3936951df0830",
+        "candidate_objective_sha256": "aec7750e2180662b00b676c42477e968c4286eb023ade65d68b3936951df0830",
+        "catalog_matches": {
+          "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-600": {
+            "sources": [
+              "github-gh600-study-guide"
+            ],
+            "candidates": []
+          },
+          "https://learn.github.com/api/certifications": {
+            "sources": [],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "GH-600",
+        "observation": "Concurrency groups permit one running workflow or job. queue: single replaces the previous pending run; queue: max retains up to 100 pending and cannot accompany cancel-in-progress: true.",
+        "recommendation": "Clarify the GH-600 serialization exercise: retaining every run requires explicit queuing plus handling overflow; a concurrency group alone may discard waiting runs.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/control-workflow-concurrency"
+        ],
+        "source_ids": [
+          "github-docs-workflow-concurrency"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "GH-600",
+        "observation": "GH-600T00-A covers operating, supervising and governing agentic workflows in the software lifecycle. The course offers self-directed learning.",
+        "urls": [
+          "https://learn.microsoft.com/en-us/training/courses/gh-600t00"
+        ],
+        "source_id": "github-gh600-course",
+        "resource": "Course GH-600T00-A: Developing in Agentic AI Systems",
+        "access_model": "public",
+        "time_basis": "Microsoft lists a one-day course duration. Self-paced completion time varies.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Keep course delivery duration separate from time to review the syllabus."
+      },
+      "monitor_outcome": "unchanged",
+      "accepted_on_start": "aec7750e2180662b00b676c42477e968c4286eb023ade65d68b3936951df0830",
+      "candidate": "aec7750e2180662b00b676c42477e968c4286eb023ade65d68b3936951df0830",
+      "supplemental_evidence": [
+        {
+          "observation": "The course page lists a one-day duration and offers self-directed study.",
+          "urls": [
+            "https://learn.microsoft.com/en-us/training/courses/gh-600t00"
+          ]
+        }
+      ]
+    }
+  ],
+  "review_inputs": [
+    {
+      "code": "SPLUNK-O11Y-METRICS-USER",
+      "guide": "guides/SPLUNK-O11Y-METRICS-USER-splunk-o11y-cloud-certified-metrics-user.md",
+      "guide_sha256_lf": "11b82613565e997cf2dc0d95e7a1f479548bc3908a6c9e01ce403f03b8042ca0",
+      "objective": "data/objective-snapshots/splunk-o11y-metrics-user-official-objectives.txt",
+      "objective_sha256": "53592e027c6e076c752a7fdbda7be355bcc4cde7d02c379d87ff5bb0b85faa01"
+    },
+    {
+      "code": "SPLK-5001",
+      "guide": "guides/SPLK-5001-splunk-certified-cybersecurity-defense-analyst.md",
+      "guide_sha256_lf": "ca5df8d4b90b29d9c03ce64b648f9e9d56d94b857aebf48cfdf183c3d2228115",
+      "objective": "data/objective-snapshots/splk-5001-official-objectives.txt",
+      "objective_sha256": "a2bd1aa1350f373525e5d2f66cfc38f7023f6b84cf9275f594421412fbd704f5"
+    },
+    {
+      "code": "SPLK-5002",
+      "guide": "guides/SPLK-5002-splunk-certified-cybersecurity-defense-engineer.md",
+      "guide_sha256_lf": "53f3ca3ed26e13b040f79065f841919b39211cd11c8b6bcd0d952c4946862a73",
+      "objective": "data/objective-snapshots/splk-5002-official-objectives.txt",
+      "objective_sha256": "8c0b091c2e53985d8ccfd27c19ff36fe4379d18e43fcdfb93c04a0847f18c751"
+    },
+    {
+      "code": "SPLK-5003",
+      "guide": "guides/SPLK-5003-splunk-certified-cybersecurity-defense-architect.md",
+      "guide_sha256_lf": "0149845aaae898a0db210633a8ee49ab2b7161a84a2d0d354ba17d381924ba6b",
+      "objective": "data/objective-snapshots/splk-5003-official-objectives.txt",
+      "objective_sha256": "10121cd48a63fb12ca9073996c56aa52248a86bbcf124729f358798ba7331161"
+    },
+    {
+      "code": "GH-100",
+      "guide": "guides/GH-100-github-enterprise-administration.md",
+      "guide_sha256_lf": "beba710aa55af6a4be4c6e6279b187a77d84123853d510cb89d547cbae556e62",
+      "objective": "data/objective-snapshots/gh-100-official-objectives.txt",
+      "objective_sha256": "9e671c9dd3ce7ac8914e989a0090422d6f0490fe19f3c9b11de73010453d44b6"
+    },
+    {
+      "code": "GH-200",
+      "guide": "guides/GH-200-github-actions.md",
+      "guide_sha256_lf": "f42a292b1589e8e0bc00574c0737af4619bfdcf7542de9e04d3429c2ba94cc5d",
+      "objective": "data/objective-snapshots/gh-200-official-objectives.txt",
+      "objective_sha256": "b41c6a6832e14bf4b6c222d0b6162cff81e9ef4683480f89e89b3e0406fdf941"
+    },
+    {
+      "code": "GH-300",
+      "guide": "guides/GH-300-github-copilot.md",
+      "guide_sha256_lf": "2432f9e58643977e035530e40e4f526c9b5a8d76512f4b2fb1a089d3b3aa9ca8",
+      "objective": "data/objective-snapshots/gh-300-official-objectives.txt",
+      "objective_sha256": "2043edf29c68926236ec3a6e417058609e4e6cfec55e1e201e48e57c1b4fff9b"
+    },
+    {
+      "code": "GH-500",
+      "guide": "guides/GH-500-github-advanced-security.md",
+      "guide_sha256_lf": "a3c80641925a6e835d3ba27362d6c28f02878246f35182a43632dbc2bac237d0",
+      "objective": "data/objective-snapshots/gh-500-official-objectives.txt",
+      "objective_sha256": "a935dc15cfa929c01d402424f0edc39bb018b4c600ce734bd7cf10e1446ae102"
+    },
+    {
+      "code": "GH-900",
+      "guide": "guides/GH-900-github-foundations.md",
+      "guide_sha256_lf": "e5c186c65964d4665fae500bc4e8c2823db4eb01553c9f2ecaf2cba6fd6c1822",
+      "objective": "data/objective-snapshots/gh-900-official-objectives.txt",
+      "objective_sha256": "bd1c323a21723f8479a7b79ec41a576044ebe6afbc5bf57715acf431fe90828b"
+    },
+    {
+      "code": "GH-600",
+      "guide": "guides/GH-600-developing-agentic-ai-systems.md",
+      "guide_sha256_lf": "1bceecc60bdfa267a81d9602f2065d47857e558a0f4ed50e8d49dd6250f4d4fb",
+      "objective": "data/objective-snapshots/gh-600-official-objectives.txt",
+      "objective_sha256": "aec7750e2180662b00b676c42477e968c4286eb023ade65d68b3936951df0830"
+    }
+  ],
+  "independent_review": {
+    "method": "Fresh-context read-only AI review of changed content and source evidence",
+    "rubric": "docs/AI-AUDIT.md, version 2",
+    "reviewed_tree": "c829f00af024db08186f476de455a791fc537203",
+    "summary": "The GitHub concurrency documentation confirms the default single waiting run, the 100-pending limit under queue: max, and the invalid combination with cancel-in-progress: true. Microsoft lists a one-day GH-600T00-A course and links self-directed study. Ten published guide/objective pairs match, with two additional legacy inventory entries. Targeted change/evidence review only.",
+    "findings": [],
+    "validation": [
+      "unit tests",
+      "repository validation",
+      "reviewed learning resource check",
+      "site preparation",
+      "strict MkDocs build",
+      "generated site validation"
+    ]
+  }
+}
