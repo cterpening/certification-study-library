@@ -17,6 +17,8 @@ ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_BUILD_DIR = ROOT / ".site-build"
 
 PUBLIC_DOCUMENTS = (
+    "docs/research/2026-11-23-refresh-03-evidence.json",
+    "docs/research/2026-11-23-refresh-03.md",
     "docs/research/2026-11-23-microsoft-editions-evidence.json",
     "docs/research/2026-11-23-microsoft-editions.md",
     "docs/research/2026-11-23-microsoft-application-refresh.md",

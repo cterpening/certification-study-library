@@ -12141,7 +12141,7 @@
       "review_type": "source-validation",
       "reviewed_on": "2026-09-29",
       "outcome": "passed",
-      "blueprint_snapshot_path": "data/objective-snapshots/cism-official-objectives.txt",
+      "blueprint_snapshot_path": "data/objective-snapshots/archive/cism-4e9e04334324b59c3a0c64acb24760b722d7319b15ffa7ab7b81ec9c21cbff46.txt",
       "blueprint_snapshot_sha256": "4e9e04334324b59c3a0c64acb24760b722d7319b15ffa7ab7b81ec9c21cbff46",
       "objective_coverage": [
         {
@@ -36017,7 +36017,7 @@
       "review_type": "source-validation",
       "reviewed_on": "2026-10-28",
       "outcome": "passed",
-      "blueprint_snapshot_path": "data/objective-snapshots/cism-official-objectives.txt",
+      "blueprint_snapshot_path": "data/objective-snapshots/archive/cism-4e9e04334324b59c3a0c64acb24760b722d7319b15ffa7ab7b81ec9c21cbff46.txt",
       "blueprint_snapshot_sha256": "4e9e04334324b59c3a0c64acb24760b722d7319b15ffa7ab7b81ec9c21cbff46",
       "objective_coverage": [
         {
@@ -40787,6 +40787,56 @@
         "unique_external_links": 58,
         "reachable": 57,
         "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "Current public outline and affected teaching reconciled. A full new guide-wide claim and link review is pending. Link counts describe the retained source-health observations."
+    },
+    {
+      "id": "cism-2026-11-23-effective-outline",
+      "exam_code": "CISM",
+      "guide_path": "guides/CISM-isaca-certified-information-security-manager.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-11-23",
+      "outcome": "blocked",
+      "blueprint_snapshot_path": "data/objective-snapshots/cism-official-objectives.txt",
+      "blueprint_snapshot_sha256": "51637938b889389ec6514ec18866207b6fa2691357705b625b81ce41eb0a77ca",
+      "objective_coverage": [
+        {
+          "objective_group": "Information Security Governance (18%)",
+          "guide_sections": [
+            "1. Information Security Governance (18%)"
+          ]
+        },
+        {
+          "objective_group": "Information Security Risk Management (20%)",
+          "guide_sections": [
+            "2. Information Security Risk Management (20%)"
+          ]
+        },
+        {
+          "objective_group": "Information Security Program (33%)",
+          "guide_sections": [
+            "3. Information Security Program (33%)"
+          ]
+        },
+        {
+          "objective_group": "Incident Management (29%)",
+          "guide_sections": [
+            "4. Incident Management (29%)"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": false,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": false,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 19,
+        "reachable": 16,
+        "access_blocked": 3,
         "missing_or_error": 0
       },
       "notes": "Current public outline and affected teaching reconciled. A full new guide-wide claim and link review is pending. Link counts describe the retained source-health observations."

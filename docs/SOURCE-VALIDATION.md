@@ -2056,6 +2056,8 @@ SHA-256: `1b6d14e1c7adfd585869f75f8ea1fb822dcb73a696cabca5c6dc7e7c9ea9d25e`.
 
 ## CISM coverage record
 
+The November 3 outline now governs this guide. The November 23 review reconciled its domains and task groups. Full claim and link verification for that edition remains open. The dated passes below describe their historical scopes. [November evidence](research/2026-11-23-refresh-03.md#cism)
+
 The September 29 [deep review](research/2026-09-29-cism-deep-review.md) maps 72 detailed objectives. Mapped 35 current subtopics and 37 supporting tasks. Corrected the November change with confirmed 18/20/33/29 weights and architecture additions; exact future tasks remain blocked. Added 40 answer notes, three worked scenarios, eight proposed activities and 47 executed management-workbook checks. Product-version ambiguity, paid interiors, personal eligibility and human review remain pending. Current guide citations: 19 registered, 15 reachable, 3 access-blocked, 1 missing/error. Earlier dates/counts below describe the historical review.
 
 - Reviewed: September 7, 2026

@@ -7,8 +7,8 @@ generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
 last_verified: 2026-10-28
-upcoming_change_status: none-announced
-upcoming_change_checked: 2026-10-28
+upcoming_change_status: scheduled
+upcoming_change_checked: 2026-11-23
 ---
 
 # ISC2 Certified Information Systems Security Professional (CISSP) Study Guide
@@ -16,7 +16,9 @@ upcoming_change_checked: 2026-10-28
 > **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The April 15, 2024 outline, claims, links, credential contract and exam-integrity boundary were checked September 29, 2026. This review maps all 62 numbered objectives and executes 23 local risk-register checks; independent human review and infrastructure activities remain pending. See the [coverage record](../docs/SOURCE-VALIDATION.md#cissp-coverage-record).
 
 **Current baseline:** The April 15, 2024 CISSP outline remains active. The CAT exam is three hours with 100–150 multiple-choice/advanced items, 700/1000 passing, and Chinese, English, German, Japanese and Spanish delivery at selected authorized Pearson testing centers; Chinese appointments use selected windows.<br>
-**Upcoming change:** No later revision or retirement announcement was present on the checked outline September 29, 2026. The baseline is older than two years, so recheck it frequently rather than assuming age means retirement.<br>
+
+**Upcoming outline.** ISC2 has published the edition effective April 15, 2027. Use the April 2024 edition for earlier appointments and select the edition for your exam language and date. [Issuer’s current and future outlines](../docs/research/2026-11-23-refresh-03.md#cissp)
+**Language and timing.** ISC2 links English, Chinese, Japanese, German and Spanish editions under its April 15, 2027 notice.<br>
 **Exam versus certification:** ISC2 requires five cumulative years of experience in at least two current CISSP domains. A relevant degree or credential on the approved list can waive one year only; part-time work and internships may count. A passer without enough experience can become an Associate of ISC2 and has six years to earn it. Confirm endorsement/application rules.<br>
 **Maintenance — VERIFY CURRENT:** The [member policies](https://www.isc2.org/policies-procedures/member-policies) require 120 CPEs over three years: at least 90 Group A and another 30 Group A or B. Forty annually is suggested. Member AMF is USD 135; Associates instead have annual 15 Group A and USD 50 requirements. Verify your category and cycle.
 
@@ -28,7 +30,7 @@ The [CAT policy](https://www.isc2.org/certifications/computerized-adaptive-testi
 
 ## Current guide watch — October 28, 2026
 
-ISC2 continues to show the current outline effective April 15, 2024 and has announced that a new outline takes effect April 15, 2027. Detailed future scope is not yet published on the official outline page, so keep the current eight-domain map for exams before that date and recheck the official page before planning for the new version. [ISC2 CISSP outline and transition notice](https://www.isc2.org/certifications/cissp/cissp-certification-exam-outline)
+The 2027 outline is available in the five listed exam languages. Compare the edition that matches your appointment before choosing a study checklist. [ISC2 outline and downloads](https://www.isc2.org/certifications/cissp/cissp-certification-exam-outline)
 
 ## How to use this guide
 

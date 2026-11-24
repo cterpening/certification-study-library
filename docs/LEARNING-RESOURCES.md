@@ -3904,9 +3904,9 @@ This is not a complete list. Choose resources for your measured gaps and intende
 
 | Best use and version boundary | Resource | Access | Estimated time |
 |---|---|---|---:|
-| Current 35 subtopics and 37 tasks; recheck before scheduling | [Official outline](https://www.isaca.org/credentialing/cism/cism-exam-content-outline) | Public | 30–60 min |
-| Confirmed November date, weights and architecture additions; not the complete future tasks | [September 10 update](https://www.isaca.org/about-us/newsroom/press-releases/2026/isaca-updates-cism-exam-content-outline-factoring-in-todays-technologies-security-responsibilities) | Public | 10–15 min |
-| Detailed future explanation remains blocked in this review | [2026 job-practice FAQ](https://support.isaca.org/s/article/Certification-CISM-Job-Practice-Update-2026) | Public route; timed out | Verify availability |
+| Current 37 subtopics and 42 tasks; recheck before scheduling | [Official outline](https://www.isaca.org/credentialing/cism/cism-exam-content-outline) | Public | 30–60 min |
+| November effective date and architecture additions | [September 10 update](https://www.isaca.org/about-us/newsroom/press-releases/2026/isaca-updates-cism-exam-content-outline-factoring-in-todays-technologies-security-responsibilities) | Public | 10–15 min |
+| Job-practice FAQ, historically inaccessible in the September review | [2026 job-practice FAQ](https://support.isaca.org/s/article/Certification-CISM-Job-Practice-Update-2026) | Public route; timed out | Verify availability |
 | Policies and 2022 CISM appendix; selected pages read | [Candidate guide](https://www.isaca.org/credentialing/-/media/fa494652c5f149289af38cef18328650.ashx) | Public PDF | 60–90 min |
 | Public listing retains old-material warning; verify the exact version and access | [Online review course](https://www.isaca.org/store2/product/CISM-ORC-C) | Paid; public description read | About 16 hr stated; 20–30 hr study budget |
 | Current manual route returned a shell; exact edition/interior not verified | [Review manual](https://www.isaca.org/store2/product/CISM-RM-C) | Paid | 20–35 hr study budget |

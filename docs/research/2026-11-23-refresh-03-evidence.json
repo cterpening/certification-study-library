@@ -1,0 +1,437 @@
+{
+  "date": "2026-11-23",
+  "scope": "AI research into official objectives, selected technical references and learning resources. Individual exam delivery, private course contents and live product testing were outside this review.",
+  "exams": [
+    {
+      "code": "CISA",
+      "exam": {
+        "code": "CISA",
+        "observation": "CISA-specific ISACA outline uses five domains. Both monitored objective text and status matched accepted records.",
+        "urls": [
+          "https://www.isaca.org/credentialing/cisa/cisa-exam-content-outline"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Retain current scope.",
+        "monitor": "unchanged",
+        "accepted_objective_sha256": "1b6d14e1c7adfd585869f75f8ea1fb822dcb73a696cabca5c6dc7e7c9ea9d25e",
+        "candidate_objective_sha256": "1b6d14e1c7adfd585869f75f8ea1fb822dcb73a696cabca5c6dc7e7c9ea9d25e",
+        "catalog_matches": {
+          "https://www.isaca.org/credentialing/cisa/cisa-exam-content-outline": {
+            "sources": [
+              "cisa-exam-content-outline"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "CISA",
+        "urls": [
+          "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final"
+        ],
+        "observation": "NIST differentiates system contingency planning, emergency response, and organizational resilience when prioritizing recovery.",
+        "recommendation": "Keep the guide’s recovery planning distinctions; assess downtime and dependencies per system.",
+        "confidence": "High for the facts stated in the opened source. No live product testing.",
+        "source_ids": [
+          "nist-sp80034-r1"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "CISA",
+        "observation": "ISACA offers a public CISA practice quiz for an initial audit-knowledge gap check.",
+        "urls": [
+          "https://www.isaca.org/credentialing/cisa/cisa-practice-quiz"
+        ],
+        "source_id": "cisa-free-practice-quiz",
+        "resource": "Free CISA Practice Quiz",
+        "access_model": "public",
+        "time_basis": "15–25 minutes plus review, library estimate.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use its result to pick review topics; no item content reproduced."
+      },
+      "monitor_outcome": "unchanged",
+      "accepted_on_start": "1b6d14e1c7adfd585869f75f8ea1fb822dcb73a696cabca5c6dc7e7c9ea9d25e",
+      "candidate": "1b6d14e1c7adfd585869f75f8ea1fb822dcb73a696cabca5c6dc7e7c9ea9d25e"
+    },
+    {
+      "code": "CISM",
+      "exam": {
+        "code": "CISM",
+        "observation": "ISACA sets governance 18%, risk 20%, program 33%, incident management 29% effective November 3, 2026. Architecture is newly explicit in governance strategy and program development. Format remains 150 questions. Monitor detected an objective-text difference.",
+        "urls": [
+          "https://www.isaca.org/credentialing/cism/cism-exam-content-outline",
+          "https://www.isaca.org/about-us/newsroom/press-releases/2026/isaca-updates-cism-exam-content-outline-factoring-in-todays-technologies-security-responsibilities"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Accept after remapping architecture, external services and revised supporting tasks; archive prior 17/20/33/30 edition.",
+        "monitor": "changed",
+        "accepted_objective_sha256": "4e9e04334324b59c3a0c64acb24760b722d7319b15ffa7ab7b81ec9c21cbff46",
+        "candidate_objective_sha256": "51637938b889389ec6514ec18866207b6fa2691357705b625b81ce41eb0a77ca",
+        "catalog_matches": {
+          "https://www.isaca.org/credentialing/cism/cism-exam-content-outline": {
+            "sources": [
+              "cism-exam-content-outline"
+            ],
+            "candidates": []
+          },
+          "https://www.isaca.org/about-us/newsroom/press-releases/2026/isaca-updates-cism-exam-content-outline-factoring-in-todays-technologies-security-responsibilities": {
+            "sources": [
+              "cism-2026-update-announcement"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "CISM",
+        "urls": [
+          "https://csrc.nist.gov/pubs/sp/800/61/r3/final"
+        ],
+        "observation": "NIST SP 800-61 Rev. 3 brings incident response into organizational cybersecurity risk management.",
+        "recommendation": "Retain current revision and integrated governance model.",
+        "confidence": "High for the facts stated in the opened source. No live product testing.",
+        "source_ids": [
+          "splk-5003-source-1"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "CISM",
+        "observation": "ISACA maintains a free CISM practice-quiz landing page. Use management decisions as the context for reviewing missed topics.",
+        "urls": [
+          "https://www.isaca.org/credentialing/cism/cism-practice-quiz"
+        ],
+        "source_id": "cism-free-practice-quiz",
+        "resource": "Free CISM Practice Quiz",
+        "access_model": "public",
+        "time_basis": "15–25 minutes plus review, library estimate.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Cross-check target edition before buying a review course."
+      },
+      "monitor_outcome": "changed",
+      "accepted_on_start": "4e9e04334324b59c3a0c64acb24760b722d7319b15ffa7ab7b81ec9c21cbff46",
+      "candidate": "51637938b889389ec6514ec18866207b6fa2691357705b625b81ce41eb0a77ca"
+    },
+    {
+      "code": "CRISC",
+      "exam": {
+        "code": "CRISC",
+        "observation": "ISACA's CRISC-specific page maps four risk domains. Both monitored objective text and status matched accepted records.",
+        "urls": [
+          "https://www.isaca.org/credentialing/crisc/crisc-exam-content-outline"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Retain current scope.",
+        "monitor": "unchanged",
+        "accepted_objective_sha256": "8a607e350fc322e463cf56ebad620f53e5c2826017f3235aab6f04baf97bd614",
+        "candidate_objective_sha256": "8a607e350fc322e463cf56ebad620f53e5c2826017f3235aab6f04baf97bd614",
+        "catalog_matches": {
+          "https://www.isaca.org/credentialing/crisc/crisc-exam-content-outline": {
+            "sources": [
+              "crisc-exam-content-outline"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "CRISC",
+        "urls": [
+          "https://csrc.nist.gov/pubs/ir/8286/r1/final"
+        ],
+        "observation": "IR 8286 Rev. 1 describes how system-level risk registers feed an enterprise view aligned with mission and business objectives.",
+        "recommendation": "Keep risk register and enterprise escalation exercises.",
+        "confidence": "High for the facts stated in the opened source. No live product testing.",
+        "source_ids": [
+          "nist-ir-8286-rev1"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "CRISC",
+        "observation": "The CRISC practice-quiz route is available for a short risk-management self-check.",
+        "urls": [
+          "https://www.isaca.org/credentialing/crisc/crisc-practice-quiz"
+        ],
+        "source_id": "crisc-free-practice-quiz",
+        "resource": "Free CRISC Practice Quiz",
+        "access_model": "public",
+        "time_basis": "15–25 minutes plus review, library estimate.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use for diagnosing topics for further reading."
+      },
+      "monitor_outcome": "unchanged",
+      "accepted_on_start": "8a607e350fc322e463cf56ebad620f53e5c2826017f3235aab6f04baf97bd614",
+      "candidate": "8a607e350fc322e463cf56ebad620f53e5c2826017f3235aab6f04baf97bd614"
+    },
+    {
+      "code": "CC",
+      "exam": {
+        "code": "CC",
+        "observation": "ISC2 lists September 1, 2026 as the CC outline effective date. Both monitored objective text and status matched accepted records.",
+        "urls": [
+          "https://www.isc2.org/certifications/cc/cc-certification-exam-outline"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Retain September scope.",
+        "monitor": "unchanged",
+        "accepted_objective_sha256": "22b7660fa9b289c32f902cae087070762cc492978e2ce949b092fe363e279adb",
+        "candidate_objective_sha256": "22b7660fa9b289c32f902cae087070762cc492978e2ce949b092fe363e279adb",
+        "catalog_matches": {
+          "https://www.isc2.org/certifications/cc/cc-certification-exam-outline": {
+            "sources": [
+              "isc2-cc-outline"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "CC",
+        "urls": [
+          "https://www.isc2.org/ethics"
+        ],
+        "observation": "ISC2 publishes four mandatory ethics canons and a peer-review complaint process for members.",
+        "recommendation": "Keep the four-canons reference and existing ethics scenarios.",
+        "confidence": "High for the facts stated in the opened source. No live product testing.",
+        "source_ids": [
+          "isc2-code-of-ethics"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "CC",
+        "observation": "The CC self-study page lists the outline and official preparation options. Map governance and access-control gaps to that outline.",
+        "urls": [
+          "https://www.isc2.org/certifications/cc/cc-self-study-resources"
+        ],
+        "source_id": "isc2-cc-self-study",
+        "resource": "Certified in Cybersecurity Study Tools and Resources",
+        "access_model": "free-account",
+        "time_basis": "10–20 minutes to compare the listed options, editorial.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Verify access conditions on each individual resource."
+      },
+      "monitor_outcome": "unchanged",
+      "accepted_on_start": "22b7660fa9b289c32f902cae087070762cc492978e2ce949b092fe363e279adb",
+      "candidate": "22b7660fa9b289c32f902cae087070762cc492978e2ce949b092fe363e279adb"
+    },
+    {
+      "code": "SSCP",
+      "exam": {
+        "code": "SSCP",
+        "observation": "ISC2 dates its SSCP exam outline October 1, 2025. Both monitored objective text and status matched accepted records.",
+        "urls": [
+          "https://www.isc2.org/certifications/sscp/sscp-certification-exam-outline"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Retain current scope.",
+        "monitor": "unchanged",
+        "accepted_objective_sha256": "5b6e5e57f166741802957b515a7ec737606e5d43ca796a3691127de083d0a6d4",
+        "candidate_objective_sha256": "5b6e5e57f166741802957b515a7ec737606e5d43ca796a3691127de083d0a6d4",
+        "catalog_matches": {
+          "https://www.isc2.org/certifications/sscp/sscp-certification-exam-outline": {
+            "sources": [
+              "isc2-sscp-outline"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "SSCP",
+        "urls": [
+          "https://pages.nist.gov/800-63-4/"
+        ],
+        "observation": "Rev. 4 covers identity proofing, authentication, federation and revised treatment of syncable authenticators. Some implementation materials remain pending.",
+        "recommendation": "Retain final guideline reference and caveat for implementation resources.",
+        "confidence": "High for the facts stated in the opened source. No live product testing.",
+        "source_ids": [
+          "nist-sp800-63-4-implementation-hub"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "SSCP",
+        "observation": "The flashcard page presents a form and privacy agreement; the deck contents require a separate step.",
+        "urls": [
+          "https://cloud.connect.isc2.org/sscp-flashcards"
+        ],
+        "source_id": "isc2-sscp-flashcards",
+        "resource": "SSCP Flash Cards",
+        "access_model": "public",
+        "time_basis": "1–3 hours for first-pass review and targeted repetition, historical library estimate.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Describe the form before advertising direct deck access."
+      },
+      "monitor_outcome": "unchanged",
+      "accepted_on_start": "5b6e5e57f166741802957b515a7ec737606e5d43ca796a3691127de083d0a6d4",
+      "candidate": "5b6e5e57f166741802957b515a7ec737606e5d43ca796a3691127de083d0a6d4"
+    },
+    {
+      "code": "CCSP",
+      "exam": {
+        "code": "CCSP",
+        "observation": "ISC2 dates the current CCSP outline August 1, 2026. Both monitored objective text and status matched accepted records.",
+        "urls": [
+          "https://www.isc2.org/certifications/ccsp/ccsp-certification-exam-outline"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Retain current scope.",
+        "monitor": "unchanged",
+        "accepted_objective_sha256": "fef10f6e4d4ddf5249d19f5b8ab4b70700473671d5435ffea008fa8e3db84ed1",
+        "candidate_objective_sha256": "fef10f6e4d4ddf5249d19f5b8ab4b70700473671d5435ffea008fa8e3db84ed1",
+        "catalog_matches": {
+          "https://www.isc2.org/certifications/ccsp/ccsp-certification-exam-outline": {
+            "sources": [
+              "isc2-ccsp-outline"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "CCSP",
+        "urls": [
+          "https://docs.aws.amazon.com/kms/latest/developerguide/encrypt_context.html"
+        ],
+        "observation": "AWS KMS treats encryption context as authenticated, nonsecret metadata. It can appear unencrypted in CloudTrail, and decryption requires the same context.",
+        "recommendation": "Retain the guidance to keep sensitive values out of encryption context.",
+        "confidence": "High for the facts stated in the opened source. No live product testing.",
+        "source_ids": [
+          "aws-kms-encryption-context"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "CCSP",
+        "observation": "Six-domain CCSP study-resources page links the outline, self-paced training, and supplementary options.",
+        "urls": [
+          "https://www.isc2.org/certifications/ccsp/ccsp-self-study-resources"
+        ],
+        "source_id": "isc2-ccsp-self-study",
+        "resource": "CCSP Study Tools and Resources",
+        "access_model": "free-account",
+        "time_basis": "10–20 minutes for selecting a route, editorial.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Compare course edition against the exam outline."
+      },
+      "monitor_outcome": "unchanged",
+      "accepted_on_start": "fef10f6e4d4ddf5249d19f5b8ab4b70700473671d5435ffea008fa8e3db84ed1",
+      "candidate": "fef10f6e4d4ddf5249d19f5b8ab4b70700473671d5435ffea008fa8e3db84ed1"
+    },
+    {
+      "code": "CISSP",
+      "exam": {
+        "code": "CISSP",
+        "observation": "ISC2 publishes the April 15, 2027 outline in English, Chinese, Japanese, German and Spanish. Before then, candidates use the April 2024 edition. The November monitor matched the existing status snapshot, which already included the transition notice.",
+        "urls": [
+          "https://www.isc2.org/certifications/cissp/cissp-certification-exam-outline",
+          "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/documents/exam-outlines/2027/EXAMS-CISSP-Exam-Outline-English-RB-Revised-1016-ENU-2.pdf"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Use the future edition for appointments on or after April 15, 2027. The library catalog now records the notice already present in the status snapshot.",
+        "monitor": "unchanged",
+        "accepted_objective_sha256": "6a66cbffa4cbd4c4a75f7a09f831886f52335b6020dc54ff7cb2da5a9544a22c",
+        "candidate_objective_sha256": "6a66cbffa4cbd4c4a75f7a09f831886f52335b6020dc54ff7cb2da5a9544a22c",
+        "catalog_matches": {
+          "https://www.isc2.org/certifications/cissp/cissp-certification-exam-outline": {
+            "sources": [
+              "isc2-cissp-outline"
+            ],
+            "candidates": []
+          },
+          "https://edge.sitecorecloud.io/internationf173-xmc4e73-prodbc0f-9660/media/Project/ISC2/Main/Media/documents/exam-outlines/2027/EXAMS-CISSP-Exam-Outline-English-RB-Revised-1016-ENU-2.pdf": {
+            "sources": [],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "CISSP",
+        "urls": [
+          "https://csrc.nist.gov/pubs/ir/8286/r1/final"
+        ],
+        "observation": "NIST models cyber risks in enterprise registers with explicit alignment to mission and risk appetite.",
+        "recommendation": "Retain the register-based decision exercise.",
+        "confidence": "High for the facts stated in the opened source. No live product testing.",
+        "source_ids": [
+          "nist-ir-8286-rev1"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "CISSP",
+        "observation": "The CISSP self-study menu organizes preparation against eight domains and links official training and the outline.",
+        "urls": [
+          "https://www.isc2.org/certifications/cissp/cissp-self-study-resources"
+        ],
+        "source_id": "isc2-cissp-self-study",
+        "resource": "CISSP Study Tools and Resources",
+        "access_model": "free-account",
+        "time_basis": "10–20 minutes to plan a route, editorial.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use the outline to identify gaps before choosing paid resources."
+      },
+      "monitor_outcome": "unchanged",
+      "accepted_on_start": "6a66cbffa4cbd4c4a75f7a09f831886f52335b6020dc54ff7cb2da5a9544a22c",
+      "candidate": "6a66cbffa4cbd4c4a75f7a09f831886f52335b6020dc54ff7cb2da5a9544a22c"
+    }
+  ],
+  "review_inputs": [
+    {
+      "code": "CISA",
+      "guide": "guides/CISA-isaca-certified-information-systems-auditor.md",
+      "guide_sha256_lf": "ab9e0e5af75c65e877b4896964023fea1a4660e8e45fbb4576087ee1fbc2dcc6",
+      "objective": "data/objective-snapshots/cisa-official-objectives.txt",
+      "objective_sha256": "1b6d14e1c7adfd585869f75f8ea1fb822dcb73a696cabca5c6dc7e7c9ea9d25e"
+    },
+    {
+      "code": "CISM",
+      "guide": "guides/CISM-isaca-certified-information-security-manager.md",
+      "guide_sha256_lf": "c7c94f4759086b9b8c84da7d7628dde404f44cb83343e2dc0bb5ca6b446ebd3f",
+      "objective": "data/objective-snapshots/cism-official-objectives.txt",
+      "objective_sha256": "51637938b889389ec6514ec18866207b6fa2691357705b625b81ce41eb0a77ca"
+    },
+    {
+      "code": "CRISC",
+      "guide": "guides/CRISC-isaca-certified-risk-information-systems-control.md",
+      "guide_sha256_lf": "97a51751ea63e36183fb05585c20b37f231aaa3f7c465acd00ebce9b754632b3",
+      "objective": "data/objective-snapshots/crisc-official-objectives.txt",
+      "objective_sha256": "8a607e350fc322e463cf56ebad620f53e5c2826017f3235aab6f04baf97bd614"
+    },
+    {
+      "code": "CC",
+      "guide": "guides/CC-isc2-certified-in-cybersecurity.md",
+      "guide_sha256_lf": "35864b576294213266831cc3407bf928f9e66f78d7233c37615daa2c2bb2469a",
+      "objective": "data/objective-snapshots/cc-official-objectives.txt",
+      "objective_sha256": "22b7660fa9b289c32f902cae087070762cc492978e2ce949b092fe363e279adb"
+    },
+    {
+      "code": "SSCP",
+      "guide": "guides/SSCP-isc2-systems-security-certified-practitioner.md",
+      "guide_sha256_lf": "72e1c109d49736ae189372894dc0218c9a9ccccf13d0db354ddbb4108267dc42",
+      "objective": "data/objective-snapshots/sscp-official-objectives.txt",
+      "objective_sha256": "5b6e5e57f166741802957b515a7ec737606e5d43ca796a3691127de083d0a6d4"
+    },
+    {
+      "code": "CCSP",
+      "guide": "guides/CCSP-isc2-certified-cloud-security-professional.md",
+      "guide_sha256_lf": "2d2e1bb5706e7bdc1f124a0ac5f94f51eb6e3213ac3196bafb723f787f8954a9",
+      "objective": "data/objective-snapshots/ccsp-official-objectives.txt",
+      "objective_sha256": "fef10f6e4d4ddf5249d19f5b8ab4b70700473671d5435ffea008fa8e3db84ed1"
+    },
+    {
+      "code": "CISSP",
+      "guide": "guides/CISSP-isc2-certified-information-systems-security-professional.md",
+      "guide_sha256_lf": "447ce0e1d12027aecfa93764bb075f502bafbc2cd3c0e43624623012abb996c9",
+      "objective": "data/objective-snapshots/cissp-official-objectives.txt",
+      "objective_sha256": "6a66cbffa4cbd4c4a75f7a09f831886f52335b6020dc54ff7cb2da5a9544a22c"
+    }
+  ],
+  "independent_review": {
+    "type": "Fresh-context AI change and evidence review",
+    "outcome": "Passed after correcting the CISM catalog prerequisite, ISC2 language editions and the description of the monitor result. Seven guide and objective hash pairs matched."
+  }
+}

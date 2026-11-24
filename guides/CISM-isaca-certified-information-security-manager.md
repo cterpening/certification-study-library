@@ -5,19 +5,19 @@ official_blueprint: https://www.isaca.org/credentialing/cism/cism-exam-content-o
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: source-validated
-last_verified: 2026-10-28
-upcoming_change_status: scheduled
-upcoming_change_checked: 2026-10-28
+review_status: review-required
+last_verified: 2026-11-23
+upcoming_change_status: none-announced
+upcoming_change_checked: 2026-11-23
 ---
 
 # Certified Information Security Manager (CISM) Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Reviewed September 29, 2026. The current map covers 35 subtopics and 37 supporting tasks. Forty original prompts have answer notes; three scenarios have worked results; an offline workbook passes 47 checks. Eight broader activities remain proposed. See the [coverage record](../docs/SOURCE-VALIDATION.md#cism-coverage-record) and [research record](../docs/research/2026-09-29-cism-deep-review.md).
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The [official ISACA outline](https://www.isaca.org/credentialing/cism/cism-exam-content-outline) defines the scope for this guide. The September [worked examples and offline checks](../docs/research/2026-09-29-cism-deep-review.md) were reviewed against the previous edition. The [source-validation record](../docs/SOURCE-VALIDATION.md#cism-coverage-record) tracks the checks still open on the November edition.
 
-**CURRENT BLUEPRINT through November 2, 2026:** Governance 17%, Risk Management 20%, Information Security Program 33%, Incident Management 30%. The live outline and candidate guide's 2022 appendix agree. The four domain headings below use this current baseline.
+**Current blueprint.** From November 3, 2026, the weights are governance 18%, risk management 20%, information security program 33% and incident management 29%. The public outline lists 37 subtopics and 42 supporting tasks.
 
-**Scheduled November 3, 2026 change:** ISACA's [September 10 announcement](https://www.isaca.org/about-us/newsroom/press-releases/2026/isaca-updates-cism-exam-content-outline-factoring-in-todays-technologies-security-responsibilities) confirms the same domains with weights **18%, 20%, 33%, 29%**, more strategy/program-development emphasis, and new enterprise-architecture and information-security-architecture content areas. Updated preparation materials became available September 1. The exact future subtopic/task list remains unverified because the linked support article times out; the announcement is sufficient for these specific changes, not a complete replacement objective map.
+The update adds enterprise architecture to governance strategy and information security architecture to program development. It also makes technology monitoring, regulatory change and security exceptions explicit in the supporting tasks. [ISACA’s change announcement](https://www.isaca.org/about-us/newsroom/press-releases/2026/isaca-updates-cism-exam-content-outline-factoring-in-todays-technologies-security-responsibilities)
 
 **Exam and designation are separate:** 150 questions in four hours; a scaled 450 on a 200–800 scale passes, not a raw 56.25% score. The public candidate guide lists US$575 member/US$760 nonmember fees and six-month eligibility. Anyone may sit. The designation requires timely application, verified qualifying management experience, ethics and maintenance; the standard experience route is five years across at least three domains within the ten years before application. Apply within five years of passing; the application fee is US$50. The candidate guide lists a maximum two-year CISM experience waiver, but eligible categories and personal evidence require verification. A passed exam alone does not confer CISM. [Candidate guide](https://www.isaca.org/credentialing/-/media/fa494652c5f149289af38cef18328650.ashx), [certification requirements](https://www.isaca.org/credentialing/cism/get-cism-certified).
 
@@ -28,10 +28,6 @@ upcoming_change_checked: 2026-10-28
 **Resource boundary:** The public certification page still advertises a 1,047-item QAE pool. The rendered course listing advertises about 16 hours, six-month access and 20 CPE, while retaining an old-material warning and linking a recommendation labeled 17th edition. The current QAE/manual and recommended-course routes rendered only shells. Do not assume that a generic link, edition label or question count establishes November alignment or an automatic upgrade. Verify the exact product before purchase; paid lessons and questions were not reviewed.
 
 **Integrity:** These are original management-reasoning exercises, not recalled exam questions. The free quiz was fetched but its items were not reviewed or submitted. No account, checkout, purchase or live organizational action occurred.
-
-## Current guide watch — October 28, 2026
-
-A new CISM outline takes effect November 3, 2026. The four domains remain, with weights changing from 17/20/33/30% to 18/20/33/29%. ISACA announces greater emphasis on security strategy and program development and added enterprise architecture and information security architecture content. The public page still displays the pre-change outline before its effective date; ISACA says updated preparation materials are available. Candidates testing on or after November 3 should use those new materials; this guide’s full task map remains the current pre-November 3 outline until the new public task statements are verifiable. [ISACA CISM update announcement](https://www.isaca.org/about-us/newsroom/press-releases/2026/isaca-updates-cism-exam-content-outline-factoring-in-todays-technologies-security-responsibilities) and [current CISM outline page](https://www.isaca.org/credentialing/cism/cism-exam-content-outline)
 
 ## How to use this guide
 
@@ -45,21 +41,36 @@ Create one portfolio scenario and carry it through all four domains: governance 
 
 | Domain | Weight | Evidence to produce |
 |---|---:|---|
-| Information Security Governance | 17% | Board-aligned strategy, governance model, policy hierarchy, business case and decision reporting |
+| Information Security Governance | 18% | Board-aligned strategy, governance model, policy hierarchy, business case and decision reporting |
 | Information Security Risk Management | 20% | Repeatable assessment, owned response, residual-risk decision and monitoring route |
 | Information Security Program | 33% | Prioritized roadmap, resources, control lifecycle, third-party integration and outcome metrics |
-| Incident Management | 30% | Tested readiness, classification/escalation, coordinated response, recovery and improvement evidence |
+| Incident Management | 29% | Tested readiness, classification/escalation, coordinated response, recovery and improvement evidence |
 
 ### Version selection and architecture bridge
 
 | Exam date | Governance | Risk | Program | Incident | Coverage boundary |
 |---|---:|---:|---:|---:|---|
-| Through November 2, 2026 | 17% | 20% | 33% | 30% | Current 35 subtopics and 37 tasks mapped |
-| From November 3, 2026 | 18% | 20% | 33% | 29% | Announcement verified; complete future task mapping pending |
+| Through November 2, 2026 | 17% | 20% | 33% | 30% | Previous edition, 35 subtopics and 37 tasks |
+| From November 3, 2026 | 18% | 20% | 33% | 29% | Current edition, 37 subtopics and 42 tasks |
 
-**PRACTICAL DEPTH:** Enterprise architecture connects business capabilities to processes, information, applications, infrastructure and suppliers. Information security architecture places security objectives, trust boundaries, identities, protective/detective controls and assurance evidence into those relationships. Draw both for a customer-service launch: which business capability depends on which information flow, who owns the data, which provider may act, what could cross a boundary, and how the business continues if the provider or identity service fails. A diagram is useful only when its assumptions, owners and exceptions are maintained. This bridge teaches the announced areas without inventing their future exam subtopics.
+**Architecture objective:** Enterprise architecture connects business capabilities to processes, information, applications, infrastructure and suppliers. Information security architecture places security objectives, trust boundaries, identities, protective/detective controls and assurance evidence into those relationships. Draw both for a customer-service launch: which business capability depends on which information flow, who owns the data, which provider may act, what could cross a boundary, and how the business continues if the provider or identity service fails. A diagram is useful only when its assumptions, owners and exceptions are maintained. Record who can approve a design exception, what evidence they used and when the decision expires.
 
-## 1. Information Security Governance (17%)
+### Use the 42 supporting tasks in a case study
+
+Use a single proposed customer service as the running example. These ranges follow the task order in the current ISACA outline.
+
+| Tasks | What to produce | Evidence to inspect |
+|---|---|---|
+| 1–8 | A security strategy, governance model, sponsor and business case | Link organizational goals and external obligations to a decision, accountable owner, budget and policy. |
+| 9–13 | A management report and program plan shared with the business teams | Show how a control or funding decision changes when a trend crosses a threshold. |
+| 14–18 | A security architecture aligned with enterprise architecture, with resources, standards and training | Trace a new technology through its information flows, revised control requirements, staffing and training. |
+| 19–25 | Security requirements for operations and suppliers, with classification, measures and a register of obligations | Identify the contract owner, test the supplier’s evidence, track legal changes and distinguish measured control coverage from a policy assertion. |
+| 26–33 | A risk record, response and time-limited exception | Use threat and vulnerability assessments to evaluate residual risk, agree a treatment and state the trigger for reassessment. |
+| 34–42 | An incident exercise linked to continuity and recovery | Classify the incident, assign authority, preserve investigation evidence, rehearse communications and record corrective actions after recovery. |
+
+**Readiness check.** A supplier changes where it processes customer data. Which architecture, contract and risk records change, who accepts any interim exposure, and what evidence would close the exception? A strong answer links the changed data flow and obligations to a named decision owner, a tested control and a review date. [Official job practice](https://www.isaca.org/credentialing/cism/cism-exam-content-outline)
+
+## 1. Information Security Governance (18%)
 
 ### Establish enterprise accountability
 
@@ -143,7 +154,7 @@ Define a metric's population, numerator, time window, exclusions, evidence fresh
 
 Similarly, only two of five fictional suppliers have current, relevant assurance. A stale report, absent report and report covering another service are three distinct gaps. Even a current report is an input: inspect service scope, period, exceptions, subservice treatment and customer responsibilities, then test the controls your organization operates. A 40% evidence-coverage result is not a statement that the other 60% are compromised or that the two reports prove complete security.
 
-## 4. Incident Management (30%)
+## 4. Incident Management (29%)
 
 ### Prepare coordinated enterprise response
 
@@ -437,9 +448,9 @@ This is not a complete list. Choose resources for your measured gaps and intende
 
 | Best use and version boundary | Resource | Access | Estimated time |
 |---|---|---|---:|
-| Current 35 subtopics and 37 tasks; recheck before scheduling | [Official outline](https://www.isaca.org/credentialing/cism/cism-exam-content-outline) | Public | 30–60 min |
-| Confirmed November date, weights and architecture additions; not the complete future tasks | [September 10 update](https://www.isaca.org/about-us/newsroom/press-releases/2026/isaca-updates-cism-exam-content-outline-factoring-in-todays-technologies-security-responsibilities) | Public | 10–15 min |
-| Detailed future explanation remains blocked in this review | [2026 job-practice FAQ](https://support.isaca.org/s/article/Certification-CISM-Job-Practice-Update-2026) | Public route; timed out | Verify availability |
+| Current 37 subtopics and 42 tasks; recheck before scheduling | [Official outline](https://www.isaca.org/credentialing/cism/cism-exam-content-outline) | Public | 30–60 min |
+| November effective date and architecture additions | [September 10 update](https://www.isaca.org/about-us/newsroom/press-releases/2026/isaca-updates-cism-exam-content-outline-factoring-in-todays-technologies-security-responsibilities) | Public | 10–15 min |
+| Job-practice FAQ, historically inaccessible in the September review | [2026 job-practice FAQ](https://support.isaca.org/s/article/Certification-CISM-Job-Practice-Update-2026) | Public route; timed out | Verify availability |
 | Policies and 2022 CISM appendix; selected pages read | [Candidate guide](https://www.isaca.org/credentialing/-/media/fa494652c5f149289af38cef18328650.ashx) | Public PDF | 60–90 min |
 | Public listing retains old-material warning; verify the exact version and access | [Online review course](https://www.isaca.org/store2/product/CISM-ORC-C) | Paid; public description read | About 16 hr stated; 20–30 hr study budget |
 | Current manual route returned a shell; exact edition/interior not verified | [Review manual](https://www.isaca.org/store2/product/CISM-RM-C) | Paid | 20–35 hr study budget |
