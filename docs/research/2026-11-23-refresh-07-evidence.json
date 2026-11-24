@@ -1,0 +1,679 @@
+{
+  "date": "2026-11-23",
+  "scope": "AI research into official objectives, selected technical references and learning resources. Individual exam delivery, private course contents and live product testing were outside this review.",
+  "exams": [
+    {
+      "code": "DATABRICKS-DATA-ANALYST-ASSOCIATE",
+      "exam": {
+        "code": "DATABRICKS-DATA-ANALYST-ASSOCIATE",
+        "observation": "DATABRICKS-DATA-ANALYST-ASSOCIATE continues to have a public issuer credential page and current accepted objective extraction. Both monitored objective text and status matched accepted records.",
+        "urls": [
+          "https://www.databricks.com/learn/certification/data-analyst-associate"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Retain current version.",
+        "monitor": "unchanged",
+        "accepted_objective_sha256": "84145c88ff4e5f780829aa1d29cf42da67b9a93e2be247338804daca37c7c6f4",
+        "candidate_objective_sha256": "84145c88ff4e5f780829aa1d29cf42da67b9a93e2be247338804daca37c7c6f4",
+        "catalog_matches": {
+          "https://www.databricks.com/learn/certification/data-analyst-associate": {
+            "sources": [
+              "databricks-daa-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "DATABRICKS-DATA-ANALYST-ASSOCIATE",
+        "observation": "Individual-permission dashboard viewers query as themselves; published dashboards may instead share a service principal's credentials.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.databricks.com/aws/en/dashboards/share/share"
+        ],
+        "source_ids": [
+          "databricks-daa-dashboard-sharing"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "DATABRICKS-DATA-ANALYST-ASSOCIATE",
+        "observation": "Free Edition offers a personal environment for dashboard and visualization work; the marketing page separately links training.",
+        "urls": [
+          "https://www.databricks.com/learn/free-edition"
+        ],
+        "source_id": "databricks-dea-free-edition",
+        "resource": "Databricks Free Edition",
+        "access_model": "free-account",
+        "time_basis": "12–24 hours across eight guide exercises, editorial; not a Databricks runtime.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "unchanged",
+      "accepted_on_start": "84145c88ff4e5f780829aa1d29cf42da67b9a93e2be247338804daca37c7c6f4",
+      "candidate": "84145c88ff4e5f780829aa1d29cf42da67b9a93e2be247338804daca37c7c6f4"
+    },
+    {
+      "code": "DATABRICKS-DATA-ENGINEER-ASSOCIATE",
+      "exam": {
+        "code": "DATABRICKS-DATA-ENGINEER-ASSOCIATE",
+        "observation": "DATABRICKS-DATA-ENGINEER-ASSOCIATE continues to have a public issuer credential page and current accepted objective extraction. Both monitored objective text and status matched accepted records.",
+        "urls": [
+          "https://www.databricks.com/learn/certification/data-engineer-associate"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Retain current version.",
+        "monitor": "unchanged",
+        "accepted_objective_sha256": "b2dca1b253c3174ca4d8a4f5bdf9d7e16ef624a5f34f717476a12dd460853081",
+        "candidate_objective_sha256": "b2dca1b253c3174ca4d8a4f5bdf9d7e16ef624a5f34f717476a12dd460853081",
+        "catalog_matches": {
+          "https://www.databricks.com/learn/certification/data-engineer-associate": {
+            "sources": [
+              "databricks-dea-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "DATABRICKS-DATA-ENGINEER-ASSOCIATE",
+        "observation": "Auto Loader can persist the inferred schema history at cloudFiles.schemaLocation.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.databricks.com/aws/en/ingestion/cloud-object-storage/auto-loader/schema"
+        ],
+        "source_ids": [
+          "databricks-autoloader-schema"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "DATABRICKS-DATA-ENGINEER-ASSOCIATE",
+        "observation": "The Databricks Community learning paths route now directs learners to choose a role and level; it includes free Fundamentals and Free Edition.",
+        "urls": [
+          "https://community.databricks.com/t5/learning-paths/ct-p/databricks-learning-paths"
+        ],
+        "source_id": "databricks-dea-get-started-course",
+        "resource": "Databricks Data Engineering learning paths",
+        "access_model": "free-account",
+        "time_basis": "No current publisher runtime established for this route.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Link it as a role selector, not a specific course with a fixed duration."
+      },
+      "monitor_outcome": "unchanged",
+      "accepted_on_start": "b2dca1b253c3174ca4d8a4f5bdf9d7e16ef624a5f34f717476a12dd460853081",
+      "candidate": "b2dca1b253c3174ca4d8a4f5bdf9d7e16ef624a5f34f717476a12dd460853081"
+    },
+    {
+      "code": "DATABRICKS-DATA-ENGINEER-PROFESSIONAL",
+      "exam": {
+        "code": "DATABRICKS-DATA-ENGINEER-PROFESSIONAL",
+        "observation": "Current issuer details list 60 scored questions/120 minutes, online or center. The objective extraction did not change. Monitor found a status-only difference.",
+        "urls": [
+          "https://www.databricks.com/learn/certification/data-engineer-professional"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Keep delivery and format updates separate from scope.",
+        "monitor": "changed",
+        "accepted_objective_sha256": "5c0abb75889e84a3f4b06c9ccf1d0598cf18b5e5edfaaa10e0b41b198fdd8c08",
+        "candidate_objective_sha256": "5c0abb75889e84a3f4b06c9ccf1d0598cf18b5e5edfaaa10e0b41b198fdd8c08",
+        "catalog_matches": {
+          "https://www.databricks.com/learn/certification/data-engineer-professional": {
+            "sources": [
+              "databricks-dep-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "DATABRICKS-DATA-ENGINEER-PROFESSIONAL",
+        "observation": "foreachBatch writers can see repeated batches; use the stable batch ID with sink-side deduplication for idempotent writes.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.databricks.com/aws/en/structured-streaming/foreach"
+        ],
+        "source_ids": [
+          "databricks-dep-foreach"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "DATABRICKS-DATA-ENGINEER-PROFESSIONAL",
+        "observation": "The current guide recommends instructor-led Advanced Data Engineering With Databricks and a self-paced Academy alternative.",
+        "urls": [
+          "https://www.databricks.com/sites/default/files/2026-07/databricks-certified-data-engineer-professional-exam-guide-july-3-2026.pdf"
+        ],
+        "source_id": "databricks-dep-exam-guide-jul-2026",
+        "resource": "Databricks Certified Data Engineer Professional exam guide — July 3, 2026",
+        "access_model": "public",
+        "time_basis": "No current publisher runtime established for this route.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use the named advanced course for governance, observability and performance."
+      },
+      "monitor_outcome": "changed",
+      "accepted_on_start": "5c0abb75889e84a3f4b06c9ccf1d0598cf18b5e5edfaaa10e0b41b198fdd8c08",
+      "candidate": "5c0abb75889e84a3f4b06c9ccf1d0598cf18b5e5edfaaa10e0b41b198fdd8c08"
+    },
+    {
+      "code": "DATABRICKS-MACHINE-LEARNING-ASSOCIATE",
+      "exam": {
+        "code": "DATABRICKS-MACHINE-LEARNING-ASSOCIATE",
+        "observation": "DATABRICKS-MACHINE-LEARNING-ASSOCIATE continues to have a public issuer credential page and current accepted objective extraction. Both monitored objective text and status matched accepted records.",
+        "urls": [
+          "https://www.databricks.com/learn/certification/machine-learning-associate"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Retain current version.",
+        "monitor": "unchanged",
+        "accepted_objective_sha256": "2b414caebf75aedc46dc20a956d95c12d8f8b46213655d78768a1a7da9d56346",
+        "candidate_objective_sha256": "2b414caebf75aedc46dc20a956d95c12d8f8b46213655d78768a1a7da9d56346",
+        "catalog_matches": {
+          "https://www.databricks.com/learn/certification/machine-learning-associate": {
+            "sources": [
+              "databricks-mla-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "DATABRICKS-MACHINE-LEARNING-ASSOCIATE",
+        "observation": "Designating a feature table timestamp key enables point-in-time lookups, preventing future feature leakage.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.databricks.com/aws/en/machine-learning/feature-store/time-series"
+        ],
+        "source_ids": [
+          "databricks-mla-point-in-time"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "DATABRICKS-MACHINE-LEARNING-ASSOCIATE",
+        "observation": "The guide lists instructor-led Machine Learning with Databricks and an Academy self-paced alternative.",
+        "urls": [
+          "https://www.databricks.com/sites/default/files/2025-02/databricks-certified-machine-learning-associate-exam-guide-1-mar-2025.pdf"
+        ],
+        "source_id": "databricks-mla-exam-guide-mar-2025",
+        "resource": "Databricks Certified Machine Learning Associate exam guide — March 1, 2025",
+        "access_model": "public",
+        "time_basis": "No current publisher runtime established for this route.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Select practical work for foundational ML tasks."
+      },
+      "monitor_outcome": "unchanged",
+      "accepted_on_start": "2b414caebf75aedc46dc20a956d95c12d8f8b46213655d78768a1a7da9d56346",
+      "candidate": "2b414caebf75aedc46dc20a956d95c12d8f8b46213655d78768a1a7da9d56346"
+    },
+    {
+      "code": "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL",
+      "exam": {
+        "code": "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL",
+        "observation": "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL continues to have a public issuer credential page and current accepted objective extraction. Both monitored objective text and status matched accepted records.",
+        "urls": [
+          "https://www.databricks.com/learn/certification/machine-learning-professional"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Retain current version.",
+        "monitor": "unchanged",
+        "accepted_objective_sha256": "90c1a98f80cb5fb4bf172563055256b49ba45f967caa4bbe4a0d5a9b88d124f7",
+        "candidate_objective_sha256": "90c1a98f80cb5fb4bf172563055256b49ba45f967caa4bbe4a0d5a9b88d124f7",
+        "catalog_matches": {
+          "https://www.databricks.com/learn/certification/machine-learning-professional": {
+            "sources": [
+              "databricks-mlp-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL",
+        "observation": "Databricks reports separate drift metrics for numeric and categorical data, including KS tests and total variation respectively.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-quality-monitoring/data-profiling/monitor-output"
+        ],
+        "source_ids": [
+          "databricks-mlp-profile-metrics"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL",
+        "observation": "The guide names Machine Learning at Scale and Advanced Machine Learning Operations for instructor-led and self-paced preparation.",
+        "urls": [
+          "https://www.databricks.com/sites/default/files/2025-10/databricks-certified-machine-learning-professional-exam-guide-september.pdf"
+        ],
+        "source_id": "databricks-mlp-exam-guide-sep-2025",
+        "resource": "Databricks Certified Machine Learning Professional exam guide — September 30, 2025",
+        "access_model": "public",
+        "time_basis": "No current publisher runtime established for this route.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Map these courses to production ML objectives."
+      },
+      "monitor_outcome": "unchanged",
+      "accepted_on_start": "90c1a98f80cb5fb4bf172563055256b49ba45f967caa4bbe4a0d5a9b88d124f7",
+      "candidate": "90c1a98f80cb5fb4bf172563055256b49ba45f967caa4bbe4a0d5a9b88d124f7"
+    },
+    {
+      "code": "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE",
+      "exam": {
+        "code": "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE",
+        "observation": "Six domain labels changed hyphen typography only; weights unchanged. Issuer specifies 45 scored questions and 90 minutes. Monitor detected an objective-text difference.",
+        "urls": [
+          "https://www.databricks.com/learn/certification/genai-engineer-associate"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Do not treat punctuation as a curriculum revision.",
+        "monitor": "changed",
+        "accepted_objective_sha256": "27994e2dbc5874f47708356b3ff39a38a9e98d835e9ddcb6cc7d6c9f322fc2ca",
+        "candidate_objective_sha256": "a47e863fa23c1ae501d227ee36016714d90205d29a737e257cc8b63ca7d893dc",
+        "catalog_matches": {
+          "https://www.databricks.com/learn/certification/genai-engineer-associate": {
+            "sources": [
+              "databricks-genai-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE",
+        "observation": "App service-principal access shares the principal's permissions; on-behalf-of-user authorization uses individual Unity Catalog permissions.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.databricks.com/aws/en/dev-tools/databricks-apps/auth"
+        ],
+        "source_ids": [
+          "databricks-genai-app-auth"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE",
+        "observation": "The guide identifies Generative AI Engineering with Databricks as Academy preparation; examples of scope include application lifecycle, RAG and governance.",
+        "urls": [
+          "https://www.databricks.com/sites/default/files/2026-03/Databricks-Certified-Generative-AI-Engineer-Associate-Exam-Guide-Mar26.pdf"
+        ],
+        "source_id": "databricks-genai-exam-guide-mar-2026",
+        "resource": "Databricks Certified Generative AI Engineer Associate exam guide — March 18, 2026",
+        "access_model": "public",
+        "time_basis": "No current publisher runtime established for this route.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "changed",
+      "accepted_on_start": "27994e2dbc5874f47708356b3ff39a38a9e98d835e9ddcb6cc7d6c9f322fc2ca",
+      "candidate": "a47e863fa23c1ae501d227ee36016714d90205d29a737e257cc8b63ca7d893dc"
+    },
+    {
+      "code": "DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK",
+      "exam": {
+        "code": "DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK",
+        "observation": "The altered objective-section title capitalizes For. No extracted topic changed; issuer details specify 45 scored questions/90 minutes. Monitor detected an objective-text difference.",
+        "urls": [
+          "https://www.databricks.com/learn/certification/apache-spark-developer-associate"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Carry the current objective map forward.",
+        "monitor": "changed",
+        "accepted_objective_sha256": "b99b2c70f389d4626fa92d378fddd8caf10253dd24357b6bb5040e7f8a61430f",
+        "candidate_objective_sha256": "748e9f79c06f8cddeac5d583c90587b5f0a17c18e06b381785a9d25b9e93cfba",
+        "catalog_matches": {
+          "https://www.databricks.com/learn/certification/apache-spark-developer-associate": {
+            "sources": [
+              "databricks-spark-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK",
+        "observation": "Spark JDBC partition bounds determine range stride; they do not filter the rows read.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://spark.apache.org/docs/latest/sql-data-sources-jdbc.html"
+        ],
+        "source_ids": [
+          "spark-jdbc-reference"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK",
+        "observation": "The Academy route returned only a loading page; lesson count, current pricing and duration were not established.",
+        "urls": [
+          "https://customer-academy.databricks.com/learn/courses/3788/introduction-to-apache-spark"
+        ],
+        "source_id": "databricks-spark-academy-course-sep-2026",
+        "resource": "Introduction to Apache Spark course update",
+        "access_model": "paid",
+        "time_basis": "No current publisher runtime established for this route.",
+        "confidence": "Limited for gated course content.",
+        "recommendation": "Retain its course name with a login check before planning time."
+      },
+      "monitor_outcome": "changed",
+      "accepted_on_start": "b99b2c70f389d4626fa92d378fddd8caf10253dd24357b6bb5040e7f8a61430f",
+      "candidate": "748e9f79c06f8cddeac5d583c90587b5f0a17c18e06b381785a9d25b9e93cfba"
+    },
+    {
+      "code": "SOL-C01",
+      "exam": {
+        "code": "SOL-C01",
+        "observation": "Retired historical reference is intentionally skipped. Original transition FAQ inaccessible to web tool; current Snowflake University Platform on-demand course is a separate badge path. Objective monitor outcome: null.",
+        "urls": [
+          "https://publish-p93462-e887935.adobeaemcloud.com/content/dam/SnowProAssociateCertificationTransitionSnowflakeUniversityPlatformSkillsBadgeFAQs.pdf",
+          "https://learn.snowflake.com/en/courses/OD-SPT/"
+        ],
+        "confidence": "Historical transition supported by retained records; original FAQ could not be reread via web renderer.",
+        "recommendation": "Keep historical version and the original dated retirement receipt; do not treat current course listing as new evidence of the retirement date.",
+        "monitor": null,
+        "accepted_objective_sha256": "a930a723415ca1b8dfead2cf60a3d27b6c7eaf3d336fefc301421adee9123d57",
+        "candidate_objective_sha256": null,
+        "catalog_matches": {
+          "https://publish-p93462-e887935.adobeaemcloud.com/content/dam/SnowProAssociateCertificationTransitionSnowflakeUniversityPlatformSkillsBadgeFAQs.pdf": {
+            "sources": [
+              "snowflake-platform-badge-transition"
+            ],
+            "candidates": []
+          },
+          "https://learn.snowflake.com/en/courses/OD-SPT/": {
+            "sources": [
+              "snowflake-platform-on-demand"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "SOL-C01",
+        "observation": "Snowflake extended general legacy notebook creation to April 30, 2027 and full deprecation to May 31, 2027. Accounts with no activity during the 60 days before November 1, 2026 already cannot create new legacy notebooks.",
+        "recommendation": "Correct the former September/November dates in teaching, readiness answers and research notes, preserving the inactivity exception.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.snowflake.com/en/release-notes/bcr-bundles/un-bundled/bcr-disable-legacy-notebooks"
+        ],
+        "source_ids": [
+          "snowflake-legacy-notebook-retirement"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "SOL-C01",
+        "observation": "The introductory Data Warehousing Workshop awards Badge 1 and offers videos, SQL practice and graded labs.",
+        "urls": [
+          "https://learn.snowflake.com/en/courses/uni-essdww101/"
+        ],
+        "source_id": "snowflake-data-warehousing-badge",
+        "resource": "Data Warehousing Workshop public course",
+        "access_model": "public",
+        "time_basis": "8–12 hours for most learners, publisher estimate.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use for hands-on foundations and check the SOL-C01 outline separately."
+      },
+      "monitor_outcome": "retired-baseline-preserved",
+      "accepted_on_start": "a930a723415ca1b8dfead2cf60a3d27b6c7eaf3d336fefc301421adee9123d57",
+      "candidate": null
+    },
+    {
+      "code": "COF-C03",
+      "exam": {
+        "code": "COF-C03",
+        "observation": "COF-C03 continues to have a public issuer credential page and current accepted objective extraction. Both monitored objective text and status matched accepted records.",
+        "urls": [
+          "https://learn.snowflake.com/en/certifications/snowpro-core-c03/"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Retain current version.",
+        "monitor": "unchanged",
+        "accepted_objective_sha256": "fc6ba90a44c29eb3380a41bd9609357c29247bbe81be8003dcbe89ad71a8063c",
+        "candidate_objective_sha256": "fc6ba90a44c29eb3380a41bd9609357c29247bbe81be8003dcbe89ad71a8063c",
+        "catalog_matches": {
+          "https://learn.snowflake.com/en/certifications/snowpro-core-c03/": {
+            "sources": [
+              "snowflake-cof-c03-certification"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "COF-C03",
+        "observation": "Snowflake extended general legacy notebook creation to April 30, 2027 and full deprecation to May 31, 2027. Accounts with no activity during the 60 days before November 1, 2026 already cannot create new legacy notebooks.",
+        "recommendation": "Correct the former September/November dates in teaching, readiness answers and research notes, preserving the inactivity exception.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.snowflake.com/en/release-notes/bcr-bundles/un-bundled/bcr-disable-legacy-notebooks"
+        ],
+        "source_ids": [
+          "snowflake-legacy-notebook-retirement"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "COF-C03",
+        "observation": "Core exam prep is a self-paced review using clips, resource links and knowledge checks for candidates with prior experience; exam cost is separate.",
+        "urls": [
+          "https://www.snowflake.com/wp-content/uploads/2022/03/OD-Cert_Prep-Datasheet.pdf"
+        ],
+        "source_id": "snowflake-core-prep-datasheet",
+        "resource": "Core certification prep course datasheet 25L19",
+        "access_model": "public",
+        "time_basis": "No current publisher runtime established for this route.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Match the course offering to COF-C03 at enrollment."
+      },
+      "monitor_outcome": "unchanged",
+      "accepted_on_start": "fc6ba90a44c29eb3380a41bd9609357c29247bbe81be8003dcbe89ad71a8063c",
+      "candidate": "fc6ba90a44c29eb3380a41bd9609357c29247bbe81be8003dcbe89ad71a8063c"
+    },
+    {
+      "code": "DEA-C02",
+      "exam": {
+        "code": "DEA-C02",
+        "observation": "DEA-C02 continues to have a public issuer credential page and current accepted objective extraction. Both monitored objective text and status matched accepted records.",
+        "urls": [
+          "https://learn.snowflake.com/en/certifications/snowpro-advanced-dataengineer-C02/"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Retain current version.",
+        "monitor": "unchanged",
+        "accepted_objective_sha256": "5d27aac73433eb775a5d5b4ff7af013755ab26751154413fa84c363d200909c0",
+        "candidate_objective_sha256": "5d27aac73433eb775a5d5b4ff7af013755ab26751154413fa84c363d200909c0",
+        "catalog_matches": {
+          "https://learn.snowflake.com/en/certifications/snowpro-advanced-dataengineer-C02/": {
+            "sources": [
+              "snowflake-dea-c02-certification"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "DEA-C02",
+        "observation": "Dynamic table target lag expresses desired freshness relative to the source. Actual refresh can exceed the target.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.snowflake.com/en/user-guide/dynamic-tables-target-lag"
+        ],
+        "source_ids": [
+          "snowflake-dynamic-target-lag"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "DEA-C02",
+        "observation": "The instructor-led Data Engineer course covers pipelines through lecture, demonstrations and labs, assuming engineering experience.",
+        "urls": [
+          "https://www.snowflake.com/wp-content/uploads/2022/03/standard_de_datasheet.pdf"
+        ],
+        "source_id": "snowflake-de-training-datasheet",
+        "resource": "Data Engineer training datasheet",
+        "access_model": "public",
+        "time_basis": "3 class days, publisher datasheet.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "unchanged",
+      "accepted_on_start": "5d27aac73433eb775a5d5b4ff7af013755ab26751154413fa84c363d200909c0",
+      "candidate": "5d27aac73433eb775a5d5b4ff7af013755ab26751154413fa84c363d200909c0"
+    },
+    {
+      "code": "GES-C02",
+      "exam": {
+        "code": "GES-C02",
+        "observation": "GES-C02 continues to have a public issuer credential page and current accepted objective extraction. Both monitored objective text and status matched accepted records.",
+        "urls": [
+          "https://learn.snowflake.com/en/certifications/snowpro-GenAI-C02/"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Retain current version.",
+        "monitor": "unchanged",
+        "accepted_objective_sha256": "c6dcc5ab29e74f1ba7c2778039589727d42e249a5b732ff57bbbd323cf002a25",
+        "candidate_objective_sha256": "c6dcc5ab29e74f1ba7c2778039589727d42e249a5b732ff57bbbd323cf002a25",
+        "catalog_matches": {
+          "https://learn.snowflake.com/en/certifications/snowpro-GenAI-C02/": {
+            "sources": [
+              "snowflake-ges-c02-certification"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "GES-C02",
+        "observation": "Snowflake extended general legacy notebook creation to April 30, 2027 and full deprecation to May 31, 2027. Accounts with no activity during the 60 days before November 1, 2026 already cannot create new legacy notebooks.",
+        "recommendation": "Correct the former September/November dates in teaching, readiness answers and research notes, preserving the inactivity exception.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.snowflake.com/en/release-notes/bcr-bundles/un-bundled/bcr-disable-legacy-notebooks"
+        ],
+        "source_ids": [
+          "snowflake-legacy-notebook-retirement"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "GES-C02",
+        "observation": "The instructor-led GenAI course includes search, governance and practical exercises.",
+        "urls": [
+          "https://www.snowflake.com/wp-content/uploads/2024/11/standard_genai_datasheet_24J23.pdf"
+        ],
+        "source_id": "snowflake-genai-training-datasheet",
+        "resource": "GenAI training course datasheet",
+        "access_model": "public",
+        "time_basis": "2 class days, publisher datasheet.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "unchanged",
+      "accepted_on_start": "c6dcc5ab29e74f1ba7c2778039589727d42e249a5b732ff57bbbd323cf002a25",
+      "candidate": "c6dcc5ab29e74f1ba7c2778039589727d42e249a5b732ff57bbbd323cf002a25"
+    }
+  ],
+  "review_inputs": [
+    {
+      "code": "DATABRICKS-DATA-ANALYST-ASSOCIATE",
+      "guide": "guides/DATABRICKS-DATA-ANALYST-ASSOCIATE-databricks-data-analyst-associate.md",
+      "guide_sha256_lf": "52f996c753afcb91e56d5633beb6125683900e0b7cf8129d3817bc4d32ab0c1a",
+      "objective": "data/objective-snapshots/databricks-data-analyst-associate-official-objectives.txt",
+      "objective_sha256": "84145c88ff4e5f780829aa1d29cf42da67b9a93e2be247338804daca37c7c6f4"
+    },
+    {
+      "code": "DATABRICKS-DATA-ENGINEER-ASSOCIATE",
+      "guide": "guides/DATABRICKS-DATA-ENGINEER-ASSOCIATE-databricks-data-engineer-associate.md",
+      "guide_sha256_lf": "9b9422fe8728fec9957a49c0e40ca1509a5452b88bd72940cf224544eb366d8e",
+      "objective": "data/objective-snapshots/databricks-data-engineer-associate-official-objectives.txt",
+      "objective_sha256": "b2dca1b253c3174ca4d8a4f5bdf9d7e16ef624a5f34f717476a12dd460853081"
+    },
+    {
+      "code": "DATABRICKS-DATA-ENGINEER-PROFESSIONAL",
+      "guide": "guides/DATABRICKS-DATA-ENGINEER-PROFESSIONAL-databricks-data-engineer-professional.md",
+      "guide_sha256_lf": "a4e077db9a561ed4ca7172f21271bc534be9358e80faa4d5c63c4273ca59e1f8",
+      "objective": "data/objective-snapshots/databricks-data-engineer-professional-official-objectives.txt",
+      "objective_sha256": "5c0abb75889e84a3f4b06c9ccf1d0598cf18b5e5edfaaa10e0b41b198fdd8c08"
+    },
+    {
+      "code": "DATABRICKS-MACHINE-LEARNING-ASSOCIATE",
+      "guide": "guides/DATABRICKS-MACHINE-LEARNING-ASSOCIATE-databricks-machine-learning-associate.md",
+      "guide_sha256_lf": "873e6ae0480f805f1ac8ed841d20105c65569863a250ec62e752fa1df0bff9c3",
+      "objective": "data/objective-snapshots/databricks-machine-learning-associate-official-objectives.txt",
+      "objective_sha256": "2b414caebf75aedc46dc20a956d95c12d8f8b46213655d78768a1a7da9d56346"
+    },
+    {
+      "code": "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL",
+      "guide": "guides/DATABRICKS-MACHINE-LEARNING-PROFESSIONAL-databricks-machine-learning-professional.md",
+      "guide_sha256_lf": "8699a50c18e3549de20b91364b3243ee5f9afc956521ec576575c64fc69a93b4",
+      "objective": "data/objective-snapshots/databricks-machine-learning-professional-official-objectives.txt",
+      "objective_sha256": "90c1a98f80cb5fb4bf172563055256b49ba45f967caa4bbe4a0d5a9b88d124f7"
+    },
+    {
+      "code": "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE",
+      "guide": "guides/DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE-databricks-generative-ai-engineer-associate.md",
+      "guide_sha256_lf": "401a2bf605222c9f76e29334a75e60c3dbe3f007bb68280bb9d73495d90cd346",
+      "objective": "data/objective-snapshots/databricks-generative-ai-engineer-associate-official-objectives.txt",
+      "objective_sha256": "27994e2dbc5874f47708356b3ff39a38a9e98d835e9ddcb6cc7d6c9f322fc2ca"
+    },
+    {
+      "code": "DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK",
+      "guide": "guides/DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK-databricks-associate-developer-apache-spark.md",
+      "guide_sha256_lf": "1be16cdd153371733d0f961dea05a6a67a75a8cd4b32881f4e87cd542db39acc",
+      "objective": "data/objective-snapshots/databricks-associate-developer-apache-spark-official-objectives.txt",
+      "objective_sha256": "b99b2c70f389d4626fa92d378fddd8caf10253dd24357b6bb5040e7f8a61430f"
+    },
+    {
+      "code": "SOL-C01",
+      "guide": "guides/SOL-C01-snowpro-associate-platform.md",
+      "guide_sha256_lf": "a5f153ce33a5b94f5ca488c972b3bb186d70dd3264c46ab66134bc3524e36f70",
+      "objective": "data/objective-snapshots/SOL-C01-official-objectives.txt",
+      "objective_sha256": "a930a723415ca1b8dfead2cf60a3d27b6c7eaf3d336fefc301421adee9123d57"
+    },
+    {
+      "code": "COF-C03",
+      "guide": "guides/COF-C03-snowpro-core.md",
+      "guide_sha256_lf": "a371e6832d82c21bf33aa41ef50676fa91f3d35df6fec7e8792732386352019e",
+      "objective": "data/objective-snapshots/COF-C03-official-objectives.txt",
+      "objective_sha256": "fc6ba90a44c29eb3380a41bd9609357c29247bbe81be8003dcbe89ad71a8063c"
+    },
+    {
+      "code": "DEA-C02",
+      "guide": "guides/DEA-C02-snowpro-advanced-data-engineer.md",
+      "guide_sha256_lf": "4d0b8da4c10cf0a62674f04925c28f62076938cb0f003c88824937560b217861",
+      "objective": "data/objective-snapshots/DEA-C02-official-objectives.txt",
+      "objective_sha256": "5d27aac73433eb775a5d5b4ff7af013755ab26751154413fa84c363d200909c0"
+    },
+    {
+      "code": "GES-C02",
+      "guide": "guides/GES-C02-snowpro-specialty-gen-ai.md",
+      "guide_sha256_lf": "28ea818b6479000ba4b817a823472d7b15018302affdf1128c087568c6209313",
+      "objective": "data/objective-snapshots/GES-C02-official-objectives.txt",
+      "objective_sha256": "c6dcc5ab29e74f1ba7c2778039589727d42e249a5b732ff57bbbd323cf002a25"
+    }
+  ],
+  "independent_review": {
+    "method": "Fresh-context read-only AI review of changed content and source evidence",
+    "rubric": "docs/AI-AUDIT.md, version 2",
+    "reviewed_tree": "8c4172339937ffe4ba38191fe335d3745a3f295d",
+    "summary": "Verified corrected case-sensitive paths for four Snowflake objective snapshots and historical labeling of the October ML Professional source gate following review of 54cfd69d89eded528eab6ec92e9ed31349831271. All eleven staged guide and objective pairs match. The three notebook corrections agree with the current Snowflake behavior-change notice, including its scoped inactive-account exception. Targeted change/evidence review only.",
+    "findings": [],
+    "validation": [
+      "unit tests",
+      "repository validation",
+      "reviewed learning resource check",
+      "site preparation",
+      "strict MkDocs build",
+      "generated site validation"
+    ]
+  }
+}

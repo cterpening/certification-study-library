@@ -167,7 +167,7 @@ For batch inference, design deterministic versioned inputs and outputs with idem
 
 ## 4. Build, manage and optimize document parsing pipelines
 
-**VERIFY CURRENT:** Older course notebook instructions need migration review. The [legacy-notebook notice](https://docs.snowflake.com/en/release-notes/bcr-bundles/un-bundled/bcr-disable-legacy-notebooks) states creation was disabled September 1, 2026 and run/edit removal is planned for November; view/export and migration paths are distinct. No notebook was created, executed or migrated during this review.
+**VERIFY CURRENT.** Snowflake schedules the general cutoff for creating legacy notebooks for April 30, 2027 and full deprecation for May 31, 2027. Accounts with no legacy notebook activity in the 60 days before November 1, 2026 already have creation disabled. Practise migration in Workspaces and check the account before an exercise. [legacy-notebook notice](https://docs.snowflake.com/en/release-notes/bcr-bundles/un-bundled/bcr-disable-legacy-notebooks)
 
 ### Start with a document contract
 
@@ -473,7 +473,7 @@ These are original answered study prompts, not exam items. Explain each answer u
 32. **What separates Registry USAGE and READ?** USAGE supports warehouse inference without internal inspection; READ covers container inference and metadata under the documented model path.
 33. **Does a model appearing in the UI prove Registry API support?** No. Cortex fine-tuned model visibility and API management support differ.
 34. **What must a model rollback restore?** A compatible model/tokenizer/prompt/image/dependency/endpoint/caller bundle, with observed outputs and quality.
-35. **What notebook course instructions need updating?** Legacy creation was disabled in September and run/edit removal is planned for November; verify migration/export paths.
+35. **What notebook course instructions need updating?** Snowflake schedules the general cutoff for creating legacy notebooks for April 30, 2027 and full deprecation for May 31, 2027. Accounts with no legacy notebook activity in the 60 days before November 1, 2026 already have creation disabled. Practise migration in Workspaces and check the account before an exercise. [Snowflake notice](../docs/research/2026-11-23-refresh-07.md#ges-c02)
 36. **What is AI_PARSE_DOCUMENT’s default mode?** OCR. Explicitly request LAYOUT when structure/images are needed.
 37. **What is its ordinary return type and failure behavior?** A JSON-formatted string, or SQL NULL for a failed row; successful rows can still complete.
 38. **What changes with return_error_details?** An object wrapper provides value, error and metadata; inspect nulls/errors and document-level results.

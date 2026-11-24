@@ -57,7 +57,7 @@ Snowsight is the web interface for worksheets, notebooks, data, monitoring and a
 
 Snowflake Notebooks combine code/SQL, Markdown and results in an interactive environment. Treat a notebook as executable software: pin or record dependencies, separate secrets/configuration, make cells restartable, control data exposure, and distinguish an exploratory result from a reproducible pipeline.
 
-**VERIFY CURRENT — notebook transition:** Snowflake's [behavior-change notice](https://docs.snowflake.com/en/release-notes/bcr-bundles/un-bundled/bcr-disable-legacy-notebooks) disables new Legacy Notebook creation from September 1, 2026. Existing legacy notebooks can still run/edit during this phase; the notice plans to end execution/editing in November 2026 while retaining viewing/export/migration. Use [Notebooks in Workspaces migration guidance](https://docs.snowflake.com/en/user-guide/ui-snowsight/notebooks-in-workspaces/notebooks-in-workspaces-migrate) for current practice. Old course screenshots or legacy creation commands are not a reliable current workflow. No notebook migration was performed.
+**VERIFY CURRENT.** Snowflake schedules the general cutoff for creating legacy notebooks for April 30, 2027 and full deprecation for May 31, 2027. Accounts with no legacy notebook activity in the 60 days before November 1, 2026 already have creation disabled. Practise migration in Workspaces and check the account before an exercise. [behavior-change notice](https://docs.snowflake.com/en/release-notes/bcr-bundles/un-bundled/bcr-disable-legacy-notebooks) · [Notebooks in Workspaces migration guidance](https://docs.snowflake.com/en/user-guide/ui-snowsight/notebooks-in-workspaces/notebooks-in-workspaces-migrate)
 
 The migration guide distinguishes notebook-service Container Runtime compute from SQL/Snowpark work pushed down to a warehouse. A Workspaces notebook file also does not inherit a database/schema merely from being a legacy database object: set context or qualify references deliberately. Include both compute paths when planning lab access and cost.
 
@@ -451,7 +451,7 @@ Explain each answer before uncovering it, then produce the relevant evidence. Th
 
 36. **How does the new badge differ?** It is a free, non-expiring educational Platform Skills badge earned through the course assessment. Existing Associate certifications keep their original expiry; SnowPro now denotes proctored professional exams.
 
-37. **What changed for legacy notebooks?** New legacy creation stopped September 1, 2026; the notice plans execution/editing removal in November while keeping view/export/migration. Practice the current Workspaces experience and inspect dependencies before migration.
+37. **What changed for legacy notebooks?** Snowflake schedules the general cutoff for creating legacy notebooks for April 30, 2027 and full deprecation for May 31, 2027. Accounts with no legacy notebook activity in the 60 days before November 1, 2026 already have creation disabled. Practise migration in Workspaces and check the account before an exercise. [Snowflake notice](../docs/research/2026-11-23-refresh-07.md#sol-c01)
 
 38. **Which standard-table constraints are enforced now?** NOT NULL and CHECK are enforced. Standard-table primary/unique/foreign keys are not enforcement substitutes; hybrid-table rules differ. The April 2026 standard CHECK release makes old only-NOT-NULL notes incomplete.
 

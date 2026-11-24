@@ -2952,7 +2952,6 @@ This is **not a complete list**, and it is not meant to be consumed in full. Sel
 | [MLflow documentation](https://mlflow.org/docs/latest/ml/) | Free | 6–12 hours selected nested-run, PyFunc and deployment practice |
 | [Databricks: Data Quality Monitoring at scale (February 4, 2026)](https://www.databricks.com/blog/data-quality-monitoring-scale-agentic-ai) | Free product article | About 30–50 minutes to read and draw separate freshness, drift, performance and alert paths; estimate includes the worksheet. Product context, checked against current profile/API documentation, not added exam scope. |
 | [Databricks YouTube](https://www.youtube.com/@Databricks) | Free | 4–8 hours selected recent MLOps, Ray, MLflow, feature and serving sessions |
-| [Whizlabs: Databricks Machine Learning Professional](https://www.whizlabs.com/databricks-certified-machine-learning-professional/) | Paid; training/practice product | Stable public totals were not exposed; budget 8–18 hours and verify September 2025 alignment |
 | [O'Reilly search: Databricks MLOps](https://www.oreilly.com/search/?q=Databricks%20MLOps) | Paid/trial | 8–20 hours selected current material; map chapters/events to the blueprint rather than assuming completeness |
 
 The blueprint is current but fast-moving interfaces require explicit checks for bundle names, monitoring terminology, Ray/Optuna integrations, online/on-demand features and serving traffic. No exact current Pluralsight, Udemy, LinkedIn Learning or MeasureUp product was independently verified.

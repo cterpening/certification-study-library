@@ -5,15 +5,17 @@ official_blueprint: https://www.databricks.com/learn/certification/machine-learn
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: source-validated
-last_verified: 2026-10-28
+review_status: review-required
+last_verified: 2026-11-23
 upcoming_change_status: none-announced
 upcoming_change_checked: 2026-10-28
 ---
 
 # Databricks Certified Machine Learning Professional Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on October 28, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#databricks-machine-learning-professional-coverage-record). The [official certification page](https://www.databricks.com/learn/certification/machine-learning-professional) and its linked exam guide are authoritative.
+**Review status.** The November 23 check covered the published exam information and the resources updated below. The previous full source review is historical. Full validation of this revision is pending.
+
+> **Independent AI-assisted resource — HISTORICAL SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on October 28, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#databricks-machine-learning-professional-coverage-record). The [official certification page](https://www.databricks.com/learn/certification/machine-learning-professional) and its linked exam guide are authoritative.
 
 **Library identifier:** `DATABRICKS-MACHINE-LEARNING-PROFESSIONAL`; Databricks does not publish a short exam code on the official page checked.<br>
 **Current baseline:** Detailed official guide for the live version as of September 30, 2025; live three-domain weighted page checked September 28, 2026.<br>
@@ -315,7 +317,6 @@ This is **not a complete list**, and it is not meant to be consumed in full. Sel
 | [MLflow documentation](https://mlflow.org/docs/latest/ml/) | Free | 6–12 hours selected nested-run, PyFunc and deployment practice |
 | [Databricks: Data Quality Monitoring at scale (February 4, 2026)](https://www.databricks.com/blog/data-quality-monitoring-scale-agentic-ai) | Free product article | About 30–50 minutes to read and draw separate freshness, drift, performance and alert paths; estimate includes the worksheet. Product context, checked against current profile/API documentation, not added exam scope. |
 | [Databricks YouTube](https://www.youtube.com/@Databricks) | Free | 4–8 hours selected recent MLOps, Ray, MLflow, feature and serving sessions |
-| [Whizlabs: Databricks Machine Learning Professional](https://www.whizlabs.com/databricks-certified-machine-learning-professional/) | Paid; training/practice product | Stable public totals were not exposed; budget 8–18 hours and verify September 2025 alignment |
 | [O'Reilly search: Databricks MLOps](https://www.oreilly.com/search/?q=Databricks%20MLOps) | Paid/trial | 8–20 hours selected current material; map chapters/events to the blueprint rather than assuming completeness |
 
 The blueprint is current but fast-moving interfaces require explicit checks for bundle names, monitoring terminology, Ray/Optuna integrations, online/on-demand features and serving traffic. No exact current Pluralsight, Udemy, LinkedIn Learning or MeasureUp product was independently verified.
