@@ -13,7 +13,11 @@ upcoming_change_checked: 2026-10-28
 
 # DP-800 Developing AI-Enabled Database Solutions Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-02.md#dp-800) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-800-coverage-record). Source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-800) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-02.md#dp-800)
+
+**English outline comparison, November 20, 2026.** The current page displays March 12, while the accepted October 19 outline uses different nearest-neighbor terminology. Both have 73 tasks. KNN describes the neighbors requested. Compare exact exhaustive and approximate indexed retrieval over the same eligible rows using recall and latency. The March edition also names change event streaming for maintaining embeddings. [Compared editions](../docs/research/2026-11-20-microsoft-refresh-group-02.md#dp-800).
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-02.md#dp-800) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-800-coverage-record). Source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-800) is authoritative.
 
 **Current baseline:** Skills measured as of October 19, 2026.<br>
 **Blueprint reconciliation (October 28, 2026):** The October 19, 2026 English outline is the accepted current scope. The revised outline uses columnstore and Copilot naming and ANN versus KNN terminology. CES remains in the general data-change objective but is omitted from the embedding-maintenance-method bullet; these are separate scope observations. Domain weights are unchanged. Historical objective bytes and dated reviews are preserved. Recheck localized appointment timing separately.<br>
@@ -21,6 +25,8 @@ upcoming_change_checked: 2026-10-28
 **Exam page:** [Microsoft Certified: SQL AI Developer Associate](https://learn.microsoft.com/en-us/credentials/certifications/developing-ai-enabled-database-solutions/) · 120-minute assessment · ten listed languages: English, Japanese, Simplified and Traditional Chinese, Korean, German, French, Italian, Brazilian Portuguese and Spanish. Check language-specific revision timing when booking.<br>
 **Official course:** [DP-800T00 Develop AI-enabled database solutions](https://learn.microsoft.com/en-us/training/courses/dp-800t00) · three instructor-led days.<br>
 **Practice:** Microsoft's free Practice Assessment is on [AI Skills Navigator](https://aiskillsnavigator.microsoft.com/credentials/cert-f7c226fff388981b97e2bafd239786aba2d62e74bf8e3d50b04d341899bd55f4); sign-in is required to launch it.
+
+**Practice check.** For an Azure SQL Managed Instance vector design, record the update policy before promising approximate indexes. Microsoft lists vector indexes as generally available on Always up to date and in preview on the SQL Server 2025 policy. Exact distance search offers a reference for assessing approximate recall. [Source notes and publisher link](../docs/research/2026-11-20-microsoft-refresh-group-02.md#dp-800)
 
 ## How to use this guide
 
@@ -1154,7 +1160,9 @@ These are original prompts, not recalled exam questions. Answer each with requir
 
 ## Places to learn
 
-This is **not a complete list**, and it is not a recommendation to consume everything. Pick one current primary path, build the labs, and use targeted references or practice for gaps. Times are page-published when available; otherwise they are clearly labeled estimates. Catalogs, access, duration, price and alignment change. DP-800 is new, so several established vendors did not yet have a dedicated full certification path on the pages found; map broader SQL Server 2025 material to the current October 19 outline; March-only coverage is historical. Avoid dumps or products claiming recalled/live exam questions.
+**Suggested practice.** Use one search question to predict how exact terms, vector similarity and combined ranking could change the returned rows before considering an index. 84 minutes for the module (Microsoft Learn, 9 units). [Design and implement intelligent search with SQL](https://learn.microsoft.com/en-us/training/modules/design-implement-intelligent-search-with-sql/)
+
+This is **not a complete list**, and it is not a recommendation to consume everything. Pick one current primary path, build the labs, and use targeted references or practice for gaps. Times are page-published when available; otherwise they are clearly labeled estimates. Catalogs, access, duration, price and alignment change. DP-800 is new, so several established vendors did not yet have a dedicated full certification path on the pages found; map broader SQL Server 2025 material to the retained October 19 outline and the March edition currently shown by Microsoft. Avoid dumps or products claiming recalled/live exam questions.
 
 ### October 28 learning route and evidence task
 

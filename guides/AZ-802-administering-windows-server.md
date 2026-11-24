@@ -13,11 +13,13 @@ upcoming_change_checked: 2026-10-28
 
 # AZ-802 Administering Windows Server Study Guide
 
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-03.md#az-802)
+
 > **Delivery status checked September 27, 2026:** The [Windows Server Administrator Associate page](https://learn.microsoft.com/en-us/credentials/certifications/windows-server-administrator-associate/) and exam listing no longer label AZ-802 beta. The credential page lists a 120-minute English assessment. This guide now records active delivery; verify current appointment and practice availability before scheduling.
 
 > **REPLACEMENT PATH:** AZ-800 and AZ-801 retired on **September 30, 2026**. The [credential page](https://learn.microsoft.com/en-us/credentials/certifications/windows-server-administrator-associate/) identifies AZ-802 as the replacement exam. AZ-802 is one consolidated exam; do not assume a partial pass in the old two-exam route transfers automatically.
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-05.md#az-802) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-802-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802) is authoritative.
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-05.md#az-802) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-802-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802) is authoritative.
 
 **Current baseline:** Official study-guide page last updated October 19, 2026; Microsoft does not publish a separate “skills measured as of” date on that page. The 115 detailed objectives match the accepted objective wording.<br>
 **Upcoming blueprint change:** No separate future objective revision was found in the September 27 check.<br>
@@ -27,6 +29,8 @@ upcoming_change_checked: 2026-10-28
 **Official sources:** [AZ-802 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802) · [credential and exam page](https://learn.microsoft.com/en-us/credentials/certifications/windows-server-administrator-associate/) · [AZ-802T00 course](https://learn.microsoft.com/en-us/training/courses/az-802t00) · [old-exam retirement list](https://learn.microsoft.com/en-us/credentials/support/retired-certification-exams)
 
 > **Living-guide watch — updated September 27, 2026:** Recheck the blueprint, course, practice availability, and [Windows Server release health](https://learn.microsoft.com/en-us/windows/release-health/) before each study cycle. [What's new in Windows Server 2025](https://learn.microsoft.com/en-us/windows-server/get-started/whats-new-windows-server-2025) helps identify version-specific behavior but is broader than exam scope. SSH Direct remains a documented evidence gap rather than omitted content: Microsoft confirms the Hyper-V/VSOCK substrate and Microsoft-owned code demonstrates an older Debian setup, while Ubuntu, Red Hat-family, SUSE/openSUSE, Oracle Linux, systemd, libvirt, Microsoft Press, and expert evidence show useful but version-bound components. The [dated evidence review](../docs/SSH-DIRECT-EVIDENCE.md) labels each proposition and missing proof. Do not infer a universal supported recipe or compatibility matrix; validate the exact host, guest, kernel, systemd/OpenSSH, authentication, and rollback combination in a disposable authorized lab.
+
+**Practice check.** For an isolated Hyper-V guest, distinguish a host-to-guest socket from a connection through the guest's IP network. Hyper-V sockets provide a local host-to-VM communication path without depending on the guest's virtual network. [Source notes and publisher link](../docs/research/2026-11-20-microsoft-refresh-group-03.md#az-802)
 
 ## How to use this guide
 
@@ -1049,6 +1053,8 @@ These original checks test reasoning from the public objectives. Answer from the
 ---
 
 ## Places to learn
+
+**Suggested practice.** Compare a baseline collector set with a later workload capture and state which counter would justify investigating a particular bottleneck. About 40 minutes for the exercise (publisher estimate); provisioning or setup can add time. [Lab: Monitoring and troubleshooting Windows Server](https://microsoftlearning.github.io/AZ-802-Windows-Server-Administrator-Associate/Instructions/Labs/LAB_08_Monitoring_and_troubleshooting_Windows_Server.html)
 
 This is **not a complete list**, and it is not meant to be consumed end to end. Pick the resources and formats that work for your experience, access, learning style, and weakest objectives. A strong plan is usually the official blueprint and documentation, one primary structured resource, hands-on practice, and a legitimate assessment used diagnostically—not every course from every vendor.
 

@@ -13,7 +13,9 @@ upcoming_change_checked: 2026-10-28
 
 # AI-901 Microsoft Azure AI Fundamentals Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-03.md#ai-901) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ai-901-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-901) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-02.md#ai-901)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-03.md#ai-901) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ai-901-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-901) is authoritative.
 
 **Current baseline:** Skills measured as of April 15, 2026<br>
 **Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
@@ -24,6 +26,8 @@ upcoming_change_checked: 2026-10-28
 The September 28 [deep-review report](../docs/research/2026-09-28-ai-901-deep-review.md) maps all **29 detailed objectives** across seven groups. This guide adds six worked examples, eight labs and 36 explained checks. Cloud examples were syntax-checked only; the invoice validator and synthetic arithmetic were checked locally. No Azure lab or paid lesson was executed or watched.
 
 The [certification page](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/) lists 13 exam languages and links the sign-in Practice Assessment. Its empty training widgets do not invalidate the directly available course and learning paths below. The retrieved page did not establish a current exam duration; confirm appointment details when scheduling.
+
+**Practice check.** Use the prebuilt invoice analyzer when the requested fields match its existing schema. For organization-specific document fields, extend a document base analyzer with a custom schema. For a search use case, consider the retrieval-oriented analyzers. [Source notes and publisher link](../docs/research/2026-11-20-microsoft-refresh-group-02.md#ai-901)
 
 ## How to use this guide
 
@@ -871,6 +875,8 @@ These original practice scenarios are not recalled exam questions. Explain your 
 ---
 
 ## Places to learn
+
+**Suggested practice.** Read the knowledge base and connection units, then draw the path from an enterprise data source to an agent’s cited answer. 38 minutes for the module (Microsoft Learn, 7 units). [Get started with Microsoft Foundry IQ](https://learn.microsoft.com/en-us/training/modules/get-started-foundry-iq/)
 
 This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Pick the formats that fit you. Times are approximate consumption time at normal speed; labs, note-taking, review, and independent practice add time.
 

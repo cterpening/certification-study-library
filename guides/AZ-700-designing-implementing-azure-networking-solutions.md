@@ -13,7 +13,9 @@ upcoming_change_checked: 2026-10-28
 
 # AZ-700 Designing and Implementing Microsoft Azure Networking Solutions Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-03.md#az-700) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-700-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-700) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-03.md#az-700)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-03.md#az-700) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-700-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-700) is authoritative.
 
 **Current baseline:** Skills measured as of July 27, 2026<br>
 **Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
@@ -393,6 +395,8 @@ Inbound NAT rules target administrative or application ports on individual backe
 Traffic Manager routing methods include priority, weighted, performance, geographic, multivalue and subnet patterns. DNS TTL and resolver/client caching affect failover convergence. Monitoring observes endpoints according to configured protocol/port/path; a healthy endpoint may still fail a different user flow.
 
 ### Application Gateway
+
+**Practice check.** Application Gateway v1 reached retirement April 28, 2026. For a surviving legacy deployment, treat migration to v2 as a service-continuity task and verify traffic on the replacement before removing an old route. [Application Gateway V1 retirement and migration to V2 - Azure Application Gateway | Microsoft Learn](https://learn.microsoft.com/en-us/azure/application-gateway/v1-retirement)
 
 Core relationships:
 
@@ -814,6 +818,8 @@ You are approaching readiness when you can:
 ---
 
 ## Places to learn
+
+**Suggested practice.** Sketch the private zone and linked virtual network, then predict which DNS record auto-registration should create and where name resolution can be tested. About 25 minutes for the exercise (publisher estimate); provisioning or setup can add time. [M01 - Unit 6 Configure DNS settings in Azure](https://microsoftlearning.github.io/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/Instructions/Exercises/M01-Unit%206%20Configure%20DNS%20settings%20in%20Azure.html)
 
 This is a curated starting set, not a complete list. Do **not** consume every resource. Pick one structured spine, use current documentation for weak objectives, build and break the labs, and add one assessment source. Time estimates are planning ranges, not guarantees; playback speed, prior networking experience, gateway deployment time, exercises, cleanup, and vendor changes matter. Verify the current blueprint before buying or starting a course.
 

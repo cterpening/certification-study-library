@@ -13,7 +13,9 @@ upcoming_change_checked: 2026-10-28
 
 # DP-900 Microsoft Azure Data Fundamentals Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-04.md#dp-900) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-900-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-900) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-02.md#dp-900)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-04.md#dp-900) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-900-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-900) is authoritative.
 
 **Current baseline:** Skills measured as of July 21, 2026<br>
 **Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
@@ -289,6 +291,8 @@ The APIs support different programming models. At fundamentals level, recognize 
 ---
 
 #### Keep API names and product families separate
+
+**Practice check.** Interpret Azure Cosmos DB for MongoDB (vCore) in older material as the service now named Azure DocumentDB with MongoDB compatibility. When a scenario names the request-unit-based service, keep its product name and throughput model separate. [Service release notes - Azure DocumentDB | Microsoft Learn](https://learn.microsoft.com/en-us/azure/documentdb/release-notes)
 
 | Cosmos DB API | Familiar data/access model |
 |---|---|
@@ -769,6 +773,8 @@ The local SQLite exercise was executed during this review. Azure/Fabric deployme
 The [credential page](https://learn.microsoft.com/en-us/credentials/certifications/azure-data-fundamentals/) lists a 45-minute assessment and 13 languages at this review. Fundamentals certifications do not expire under the [expiration policy](https://learn.microsoft.com/en-us/credentials/support/certification-expiration-policy). Course completion is distinct from earning the certification.
 
 ## Places to learn
+
+**Suggested practice.** Give a reason to choose an Azure SQL option and a reason to choose a managed open-source database for the same broad relational workload. 35 minutes for the module (Microsoft Learn, 6 units). [Explore relational database services in Azure](https://learn.microsoft.com/en-us/training/modules/explore-provision-deploy-relational-database-offerings-azure/)
 
 This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Pick the formats that fit you. Times are approximate consumption time at normal speed; labs, note-taking, review, and independent practice add time.
 

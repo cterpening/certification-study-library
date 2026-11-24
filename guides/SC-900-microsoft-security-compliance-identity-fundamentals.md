@@ -13,7 +13,9 @@ upcoming_change_checked: 2026-10-28
 
 # SC-900 Microsoft Security, Compliance, and Identity Fundamentals Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-02.md#sc-900) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sc-900-coverage-record). Source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-04.md#sc-900)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-02.md#sc-900) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sc-900-coverage-record). Source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900) is authoritative.
 
 **Current baseline:** Skills measured as of October 21, 2026.<br>
 **Blueprint reconciliation (October 28, 2026):** The October 21, 2026 English outline is the accepted current scope. The revised identity objective names workload identities, and the threat-intelligence objective uses Microsoft Threat Intelligence. Study service principals and managed identities as well as agent identities; weights are unchanged. Historical objective bytes and dated reviews are preserved. Recheck localized appointment timing separately.<br>
@@ -333,6 +335,8 @@ The blueprint still names Content explorer, while current Purview documentation 
 
 ### Risk and investigation solutions
 
+**Practice check.** For a commercial Microsoft 365 scenario, use the new Microsoft Purview eDiscovery experience. The legacy solutions article identifies August 31, 2025 as retirement of classic Content Search, Standard, and Premium and limits its remaining instructions to Microsoft 365 operated by 21Vianet. [Microsoft Purview eDiscovery legacy solutions | Microsoft Learn](https://learn.microsoft.com/en-us/purview/ediscovery)
+
 | Solution | Focus |
 |---|---|
 | Insider Risk Management | Signals and workflows for potentially risky insider activity with privacy controls |
@@ -340,7 +344,7 @@ The blueprint still names Content explorer, while current Purview documentation 
 | Audit | Search and retain supported user/admin activity under applicable licensing |
 | eDiscovery | Identify, preserve, collect, review, and export relevant content for investigations/legal matters |
 
-[Insider Risk Management](https://learn.microsoft.com/en-us/purview/insider-risk-management) correlates configured signals into privacy-aware risk workflows; it does not declare a person guilty. [Audit](https://learn.microsoft.com/en-us/purview/audit-solutions-overview) supplies searchable activity evidence under applicable service, retention, role, and licensing boundaries; it does not preserve every content item. [eDiscovery](https://learn.microsoft.com/en-us/purview/ediscovery) is a governed preservation, search, collection, review, and export workflow, not ordinary keyword search. Retention and holds affect whether content remains available.
+[Insider Risk Management](https://learn.microsoft.com/en-us/purview/insider-risk-management) correlates configured signals into privacy-aware risk workflows; it does not declare a person guilty. [Audit](https://learn.microsoft.com/en-us/purview/audit-solutions-overview) supplies searchable activity evidence under applicable service, retention, role, and licensing boundaries; it does not preserve every content item. [commercial eDiscovery source notes](../docs/research/2026-11-20-microsoft-refresh-group-04.md#sc-900) is a governed preservation, search, collection, review, and export workflow, not ordinary keyword search. Retention and holds affect whether content remains available.
 
 > **Related item:** Data minimization reduces both privacy exposure and discovery/retention cost. Keeping everything forever can conflict with legal, privacy, and business requirements just as deleting too early can.
 
@@ -502,6 +506,8 @@ These are original questions with explanations, not recalled exam content.
 ---
 
 ## Places to learn
+
+**Suggested practice.** Use a single workplace scenario to distinguish an identity decision, a security detection, and a compliance obligation, then choose the course section for the weakest distinction. 1 day of instructor-led training (publisher listing); provider scheduling and fees vary. [Introduction to Microsoft Security, Compliance, and Identity](https://learn.microsoft.com/en-us/training/courses/sc-900t00)
 
 This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Pick the formats that fit you. Published runtimes are distinguished from suggested study allocations and earlier metadata. Labs, note-taking, review and independent practice add time; no paid course or signed-in assessment was completed in this review.
 

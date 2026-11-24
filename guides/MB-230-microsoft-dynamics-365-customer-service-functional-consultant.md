@@ -13,7 +13,9 @@ upcoming_change_checked: 2026-10-28
 
 # MB-230 Microsoft Dynamics 365 Customer Service Functional Consultant Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-04.md#mb-230) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mb-230-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-230) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-05.md#mb-230)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-04.md#mb-230) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mb-230-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-230) is authoritative.
 
 **Current baseline:** Skills measured as of March 11, 2026.<br>
 **Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
@@ -170,6 +172,8 @@ Test rule order, stop conditions, ties, unavailable queues, full capacity, no ma
 > **Related item:** Routing chooses where work goes; security determines whether the assignee can open and act on it; SLAs measure the service commitment. Validate all three together.
 
 #### Capacity and current evidence choices
+
+**Practice check.** For case or conversation volume forecasting, evaluate forecast scenarios in workforce engagement management. Microsoft set October 30, 2026 as the end of support for the older Customer Service forecasting feature and identifies the workforce feature for capacity planning and scheduling. [Deprecations in Dynamics 365 Customer Service | Microsoft Learn](https://learn.microsoft.com/en-us/dynamics365/customer-service/implement/deprecations-customer-service)
 
 [Capacity profiles](https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/capacity-profiles) define work limits and reset behavior. Microsoft recommends profiles or unit-based capacity rather than mixing them. Users must be bookable resources. With assignment blocking enabled, reaching the profile limit blocks additional automatic assignments even if another profile has room. Supervisors/manual picks can override capacity and produce negative remaining capacity.
 
@@ -528,6 +532,8 @@ The local arithmetic/calendar checks were executed during this review. The tenan
 The March 11, 2026 official study guide is the objective authority. The credential surface retains older October 3, 2025/future-tense update text, so this guide does not use those banners as the baseline. Microsoft Learn and product documentation support product behavior; commercial resources are optional perspectives and were not treated as objective authority. All practice questions in this guide are original and conceptual; no exam dumps or recalled items were used.
 
 ## Places to learn
+
+**Suggested practice.** Trace an example case through the conditions and predict which SLA item applies, when the timer pauses and which action a breach should trigger. 9 minutes for the unit (publisher page). [Define SLA items](https://learn.microsoft.com/en-us/training/modules/service-level-agreements/define-service-level-agreement)
 
 This is not a complete list and is not meant to be consumed in full. Choose one primary route, build complete case/SLA/routing/workspace journeys, and add another resource only for a measured gap.
 

@@ -319,6 +319,8 @@ class ObjectiveExtractionTests(unittest.TestCase):
     def test_extracts_skills_section_and_omits_study_resources(self) -> None:
         body = """
         <html><body><main>
+          <p>Review the skills measured as of August 7, 2026</p>
+          <p>Change log</p>
           <h2>Skills measured as of August 7, 2026</h2>
           <h3>Skills at a glance</h3>
           <ul>
@@ -330,6 +332,7 @@ class ObjectiveExtractionTests(unittest.TestCase):
             <li>Configure privacy and safeguards (10–15%)</li>
           </ul>
           <h3>Use GitHub Copilot responsibly</h3>
+          <p>Document releases with change logs and readmes.</p>
           <p>Describe risks and limitations.</p>
           <p>Validate AI output.</p>
           <h2>Study resources</h2><p>Do not include this text.</p>
@@ -338,6 +341,12 @@ class ObjectiveExtractionTests(unittest.TestCase):
         result = monitor.extract_skills_section(body)
         self.assertIn("Skills measured as of August 7, 2026", result)
         self.assertIn("Validate AI output.", result)
+        self.assertIn("Document releases with change logs and readmes.", result)
+        self.assertNotIn("Review the skills measured", result)
+        self.assertEqual(
+            monitor.extract_exam_status(body)["skills_versions"],
+            ["Skills measured as of August 7, 2026"],
+        )
         self.assertNotIn("Do not include this text", result)
 
     def test_ignores_script_and_repeated_lines(self) -> None:

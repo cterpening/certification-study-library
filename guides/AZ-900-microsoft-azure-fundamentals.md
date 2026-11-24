@@ -13,7 +13,9 @@ upcoming_change_checked: 2026-10-28
 
 # AZ-900 Microsoft Azure Fundamentals Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-03.md#az-900) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-900-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-03.md#az-900)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-03.md#az-900) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-900-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900) is authoritative.
 
 **Current baseline:** Skills measured as of July 20, 2026<br>
 **Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
@@ -257,6 +259,8 @@ Major cost drivers include resource type and size, running time, storage tier/ca
 A tag is not a security boundary and not every resource automatically inherits tags. A budget notifies; it does not normally stop resources. Reservations and savings plans exchange commitments for eligible discounts, while Azure Hybrid Benefit applies eligible existing licenses. Their scopes and billing units differ; they are not all compute-only offers. **VERIFY CURRENT:** prices, eligible services, terms, and benefits.
 
 #### Budgets, limits, commitments and tags
+
+**Practice check.** For a service with variable eligible usage, model the savings plan hour by hour. Eligible usage draws down the hourly commitment, excess usage is charged at the applicable pay-as-you-go rate, and unused commitment expires at the end of the hour. [What are savings plans? - Microsoft Cost Management | Microsoft Learn](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/savings-plan-overview)
 
 [Cost Management budgets](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-acm-create-budgets) can alert on actual or forecast cost. They do not stop consumption by themselves. Cost data commonly arrives 8–24 hours later, budgets evaluate every 24 hours, and notification follows evaluation. Treat the result as delayed financial evidence, not a real-time cutoff. An action group can invoke separately designed automation; a shutdown still requires the right scope, permissions and failure handling.
 
@@ -642,6 +646,8 @@ Use the three blog exercises to create a claim/source/date table. Compare the ch
 ---
 
 ## Places to learn
+
+**Suggested practice.** Classify a steady workload, a predictable spend commitment and an interruption-tolerant batch job before consulting the unit’s decision guide. 4 minutes for the unit (publisher page). [Describe cost optimization options in Azure](https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/7a-describe-cost-optimization-options)
 
 This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Pick the formats that fit you. Times are approximate consumption time at normal speed; labs, note-taking, review, and independent practice add time.
 

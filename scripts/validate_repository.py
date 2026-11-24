@@ -151,6 +151,7 @@ CERTIFICATION_SEED_STATUSES = {
     "active",
     "beta",
     "legacy",
+    "announced",
     "retirement-announced",
     "retired",
 }

@@ -13,7 +13,9 @@ upcoming_change_checked: 2026-10-28
 
 # AZ-305 Designing Microsoft Azure Infrastructure Solutions Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-03.md#az-305) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-305-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-305) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-03.md#az-305)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-03.md#az-305) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-305-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-305) is authoritative.
 
 **Current baseline:** Skills measured as of April 17, 2026<br>
 **Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
@@ -411,6 +413,8 @@ Classic [Premium multi-region deployment](https://learn.microsoft.com/en-us/azur
 
 #### Caching and configuration
 
+**Practice check.** When planning a cache migration, capture the legacy tier first. Microsoft publishes March 31, 2027 for Enterprise and Enterprise Flash and September 30, 2028 for Basic, Standard, and Premium. Size the destination and test the client's cluster behavior before assigning a cutover window. [Frequently asked questions (FAQ) on the retirement of Azure Cache for Redis - Azure Cache for Redis | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/retirement-faq)
+
 Cache only when access pattern and invalidation behavior are understood. Define source of truth, key, TTL, eviction, stampede protection, consistency tolerance, warm-up, failure behavior, and sensitive-data handling. A cache-aside consumer must tolerate a miss and usually tolerate stale data within a defined bound.
 
 Central configuration services separate deployable code from environment settings. Use managed identity and least privilege, label/version configuration, treat secrets separately, and design application behavior when the configuration service is unavailable. Feature flags need ownership, expiry, telemetry, and removal—not just a toggle.
@@ -805,6 +809,8 @@ You are approaching readiness when you can:
 ---
 
 ## Places to learn
+
+**Suggested practice.** For one critical flow, document a dependency failure, its observable signal, the design mitigation and the residual risk. About 25–40 minutes to read the method and draft a failure-mode worksheet for one critical flow (editorial estimate). [Architecture strategies for performing failure mode analysis](https://learn.microsoft.com/en-us/azure/well-architected/reliability/failure-mode-analysis)
 
 This is a curated starting set, not a complete list. Do **not** consume every resource. Pick one structured spine, use documentation and architecture case studies for weak objectives, complete design/lab work, and add one assessment source. Time estimates are planning ranges, not guarantees; playback speed, prior Azure experience, exercises, lab cleanup, and vendor changes matter. Verify the current blueprint before buying or starting a course.
 

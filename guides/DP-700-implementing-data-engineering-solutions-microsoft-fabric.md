@@ -13,12 +13,16 @@ upcoming_change_checked: 2026-10-28
 
 # DP-700 Implementing Data Engineering Solutions Using Microsoft Fabric Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-01.md#dp-700) and the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-700-coverage-record). Known source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-700) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-06.md#dp-700)
+
+**English outline comparison, November 20, 2026.** The live page now displays 49 tasks without a skills-effective date. The accepted October 19 outline has 54 and the same three 30–35% domain ranges. Five October items lack explicit counterparts on the live page: Fabric audit logs, OneLake security, native Real-Time Intelligence tables versus shortcuts, accelerated versus standard shortcuts, and diagnosing shortcut errors. Keep those exercises for the October scope and verify the edition for your appointment. [Compared editions](../docs/research/2026-11-20-microsoft-refresh-group-06.md#dp-700).
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-01.md#dp-700) and the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-700-coverage-record). Known source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-700) is authoritative.
 
 **Current baseline:** Skills measured as of October 19, 2026<br>
 **Blueprint reconciliation (October 28, 2026):** The October 19 English outline is now accepted. The revision uses Eventstream/Eventhouse terminology; domain weights and the other extracted objectives are unchanged. Earlier July bytes and dated reviews remain archived. No later revision is announced on the checked official page.<br>
 **Official source:** [DP-700 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-700)
-**Practice routing — VERIFY CURRENT (October 28, 2026):** The [credential page](https://learn.microsoft.com/en-us/credentials/certifications/fabric-data-engineer-associate/) routes Practice Assessment to AI Skills Navigator with sign-in. No assessment was launched or its question content inspected. Recheck the vendor launch route before relying on an older direct link below; a practice result does not establish coverage of another exam code.<br>
+**Practice routing, checked November 20, 2026.** The [credential page](https://learn.microsoft.com/en-us/credentials/certifications/fabric-data-engineer-associate/) routes Practice Assessment to AI Skills Navigator with sign-in. No assessment was launched or its question content inspected. Microsoft labels the older Learn assessment legacy and no longer updates it; a practice result does not establish coverage of another exam code.<br>
 
 ## How to use this guide
 
@@ -54,6 +58,8 @@ Build one end-to-end solution and keep an evidence notebook: configuration scree
 A workspace is both a collaboration boundary and a configuration/deployment boundary. Before changing a setting, identify whether it belongs at tenant, capacity, domain, workspace, item, Spark environment or data level; similar labels do not make those scopes interchangeable.
 
 #### Spark workspace settings
+
+**Practice check.** For a Fabric Spark runtime change, use the early access channel in a development or staging environment to compare existing jobs against the next runtime update. Workloads stay on the default channel unless opted in. Record the channel alongside the runtime version when investigating a regression. [Fabric runtime release channels - Microsoft Fabric | Microsoft Learn](https://learn.microsoft.com/en-us/fabric/data-engineering/release-channels)
 
 Set the default Spark pool and environment from workload evidence. Pool size, node family, autoscale bounds, dynamic allocation, executor settings and runtime/library versions affect startup time, concurrency, cost and reproducibility. An environment can centralize libraries and Spark properties; pin dependencies and promote them with code so a notebook does not work only in one developer's session.
 
@@ -509,6 +515,8 @@ These are learning exercises to run in an appropriate sandbox. This review used 
 
 ## Places to learn
 
+**Suggested practice.** Compare a dataflow run with a notebook run and note how the chosen item filter and the viewer’s permissions affect the visible history. About 30 minutes for the exercise (publisher estimate); provisioning or setup can add time. [Monitor Fabric activity in the monitoring hub](https://microsoftlearning.github.io/mslearn-fabric/Instructions/Labs/18-monitor-hub.html)
+
 ### October 28 learning route and evidence task
 
 Use the official [Monitoring hub lab](https://microsoftlearning.github.io/mslearn-fabric/Instructions/Labs/18-monitor-hub.html) (**30 published minutes**) with the [Fabric access-control lab](https://microsoftlearning.github.io/mslearn-fabric/Instructions/Labs/19-secure-data-access.html) (**45 published minutes**). Both require paid/trial Fabric capacity; the access exercise needs a second persona for independent permission evidence. The [Pluralsight path](https://www.pluralsight.com/paths/implementing-data-engineering-solutions-using-microsoft-fabric-dp-700) still contains three 2025 courses totaling 6 hours 15 minutes. Use those for foundations and current written labs/documentation for the October baseline; runtime totals exclude setup, failure injection and review.
@@ -526,7 +534,7 @@ The five official paths below retain the **September 1 duration estimates**; Sep
 | [Official DP-700 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-700) and [credential page](https://learn.microsoft.com/en-us/credentials/certifications/fabric-data-engineer-associate/) | Public | 1–2 hours initially; 15 minutes per recheck |
 | Five official paths from [DP-700T00](https://learn.microsoft.com/en-us/training/courses/dp-700t00) | Public | 27h49 historical estimate; allow 50–90 hours with exercises/notes |
 | DP-700T00 instructor-led course | Paid/partner delivery | 4 days listed |
-| [Microsoft DP-700 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/fabric-data-engineer-associate/practice/assessment?assessment-type=practice&assessmentId=1704375541&practice-assessment-type=certification) | Public | 45–75 minutes per attempt plus source review |
+| [Microsoft DP-700 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/fabric-data-engineer-associate/practice/assessment?assessment-type=practice&assessmentId=1704375541&practice-assessment-type=certification) | Legacy version, no longer updated. Use the credential page for current signed-in practice. | Allow 45–75 minutes for an attempt and review (editorial estimate). |
 | [Pluralsight DP-700 path](https://www.pluralsight.com/paths/implementing-data-engineering-solutions-using-microsoft-fabric-dp-700) | Paid | 6h15 across 3 courses plus practice exam; 2025 content; supplement the current October outline |
 | [O’Reilly DP-700 bootcamp](https://www.oreilly.com/live-events/microsoft-fabric-data-engineer-associate-bootcamp-dp-700/0642572016304/) with Nikola Ilic | Paid/live | Two sessions; about 8 hours from the public agenda; verify current availability and dates |
 | [O’Reilly DP-700 Study Guide early release](https://www.oreilly.com/library/view/microsoft-fabric-data/0642572319250/) by Michael John Pena | Paid/early release | Earlier listing: 400 pages / 3h22 and December 2027 publication; access blocked on recheck, contents not final |

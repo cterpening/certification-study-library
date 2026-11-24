@@ -8,14 +8,16 @@ authority: unofficial
 review_status: source-validated
 last_verified: 2026-10-29
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-10-29
+upcoming_change_checked: 2026-11-20
 ---
 
 # AZ-401 Designing and Implementing Microsoft Agentic DevOps Solutions Study Guide
 
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-03.md#az-401)
+
 > **Independent AI-assisted resource — BETA; sources and objectives checked; human review pending.** Microsoft labels the credential and AZ-401 exam beta. The current [dedicated exam page](https://learn.microsoft.com/en-us/credentials/certifications/exams/az-401/) and [official AZ-401 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401) agree on five DevOps domains. The [credential landing page](https://learn.microsoft.com/en-us/credentials/certifications/agentic-devops-engineer-expert/) currently displays unrelated AB-100 objectives in an “Assessed on this exam” block; use AZ-401-specific sources for scope. The vendor source is authoritative. **VERIFY CURRENT** before scheduling or using Preview/AI features.
 
-**Current baseline, checked October 29, 2026:** Credential and exam are beta; the study-guide page says it was updated October 13, 2026. The exam page lists English, a passing score of 700, delayed beta results, and no retirement date. It does not state an exam duration or item count; Microsoft says exam prices vary by country or region, so check the current local amount when scheduling. No formal prerequisite credential was identified. These are observations, not guarantees; see the [coverage record](../docs/SOURCE-VALIDATION.md#az-401-coverage-record).
+**Current baseline, checked October 29, 2026:** Credential and exam are beta; the study-guide page says it was updated October 13, 2026. The exam page lists English, a passing score of 700, delayed beta results, and no retirement date. It does not state an exam duration or item count; Microsoft says exam prices vary by country or region, so check the current local amount when scheduling. To earn the expert credential, pass AZ-401 and either GH-300 or AZ-104. Microsoft states the combination in its launch announcement. [November source notes](../docs/research/2026-11-20-microsoft-refresh-group-03.md#az-401). These are observations, not guarantees; see the [coverage record](../docs/SOURCE-VALIDATION.md#az-401-coverage-record).
 
 ## How to use this guide
 
@@ -166,6 +168,8 @@ For an investigation, align time windows and inspect workflow logs, resource met
 
 ### Use the named AI observability agents carefully
 
+**Practice check.** An SRE agent's review mode asks for approval for Azure infrastructure changes. For an external action such as posting to Teams, assess tool access policies or hooks separately. Check the managed identity's permissions before assuming an approved change can execute. [Run Modes in Azure SRE Agent | Microsoft Learn](https://learn.microsoft.com/en-us/azure/sre-agent/run-modes)
+
 The blueprint names **Azure Copilot Observability Agent** and **Azure SRE Agent**; these are distinct capabilities. Current [Observability Agent documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/aiops/observability-agent-overview) describes natural-language investigation over telemetry. Its background autonomous alert-correlation/issue-creation mode has a separate Preview boundary; do not infer that it restarts resources or changes configuration autonomously. Read the [governance FAQ](https://learn.microsoft.com/en-us/azure/azure-monitor/aiops/observability-agent-governance-faq) and [telemetry best practices](https://learn.microsoft.com/en-us/azure/azure-monitor/aiops/observability-agent-best-practices) before enabling access. Regions, languages, data handling, retention and modes change: **VERIFY CURRENT**.
 
 Azure SRE Agent run modes distinguish review/approval from autonomous execution. Permissions and tool policies still determine what an action can do. Inspect the proposed action/target, validate its explanation against correlated logs/metrics/traces, require approval for consequential changes, and verify afterward. See [SRE Agent run modes](https://learn.microsoft.com/en-us/azure/sre-agent/run-modes). An AI-generated cause is a hypothesis, not a confirmed incident finding.
@@ -230,7 +234,7 @@ For cloud labs that provision resources, estimate cost, set a budget/alert, capt
 22. **What can Copilot agent logs reveal?** Sensitive prompts, outputs, code context and tool activity; define access, redaction and retention.
 23. **What follows an SRE agent action?** Verify target/permission, review or approve, observe, validate recovery and record the outcome.
 24. **How distinguish missing telemetry from health?** Check collection, time range, sampling and expected data volume.
-25. **What is safe beta preparation?** Recheck official scope/assessment availability; do not infer item counts, prerequisites or current Preview steps.
+25. **What is safe beta preparation?** Recheck official scope/assessment availability; confirm the additional GH-300 or AZ-104 exam requirement and current Preview steps.
 26. **When is an upstream package available to ordinary feed readers?** After a collaborator or higher has installed/saved it into the feed; distinguish feed views and reader permissions.
 27. **A test task passed, but the pipeline shows no test results or coverage. What do you inspect?** Agent/task compatibility, result and coverage file creation/format/path, publish-task inputs and run evidence; execution alone does not publish a gate signal.
 28. **Which reusable pipeline elements work in YAML?** Templates and variable templates/groups; Classic task groups are not supported in YAML. Check template provenance/parameters and explicitly authorize protected variable groups.
@@ -239,6 +243,8 @@ For cloud labs that provision resources, estimate cost, set a budget/alert, capt
 31. **Which Copilot logs should an incident responder collect?** Identify the client or cloud-agent surface, session/run ID and relevant timestamps/events, redact sensitive content, and avoid treating session logs, IDE diagnostic logs and Azure Monitor telemetry as interchangeable.
 
 ## Places to learn
+
+**Suggested practice.** Use one backlog item to identify which task a coding agent could perform and where a maintainer must judge the result before release. 47 minutes for the module (Microsoft Learn, 7 units). [Introduction to agentic DevOps using Microsoft tools on Azure](https://learn.microsoft.com/en-us/training/modules/introduction-agentic-devops-microsoft-tools-azure/)
 
 This is a curated starting point, not a complete list or a requirement to consume every resource. The official study guide is the scope authority; supporting resources teach parts of the role and do not claim complete AZ-401 coverage.
 

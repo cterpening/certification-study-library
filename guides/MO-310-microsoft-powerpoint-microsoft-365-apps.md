@@ -13,7 +13,9 @@ upcoming_change_checked: 2026-10-28
 
 # MO-310 Microsoft PowerPoint Associate (Microsoft 365 Apps) Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-05.md#mo-310) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mo-310-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/mos-powerpoint-associate-m365-apps/) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-06.md#mo-310)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-05.md#mo-310) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mo-310-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/mos-powerpoint-associate-m365-apps/) is authoritative.
 
 **Assessment:** 50 minutes, proctored. Microsoft recommends about 150 hours of instruction and hands-on experience; this is preparation guidance, not a formal prerequisite. The page lists 15 distinct languages (Dutch is duplicated) and no dedicated Learn training collection.<br>
 **Lifecycle:** No retirement or replacement notice found October 28, 2026. The credential shows a 60-month renewal frequency; check the [MOS expiration policy](https://learn.microsoft.com/en-us/credentials/support/credential-expiration-policy) for your award date. Expiration of an earned credential and retirement of an exam are separate events.
@@ -188,9 +190,13 @@ Keep the starting deck, saved result, expected/actual outcome and environment/bu
 
 ## Places to learn
 
+**Suggested practice.** Apply two layouts to copies of one slide, then identify which placeholders and design elements came from the layout and which are direct slide edits. About 15–25 minutes to compare two layouts on a small sample deck and inspect their placeholders in Slide Master view (editorial estimate). [What is a slide layout?](https://support.microsoft.com/en-us/powerpoint/what-is-a-slide-layout)
+
 This is a selective learning path, not a complete list of PowerPoint resources or a requirement to consume every item. Times are author suggestions, not provider runtimes or an exam-readiness guarantee.
 
 ### Focused source-to-evidence route
+
+**Practice check.** When every project slide needs the same content placeholder, edit its layout in Slide Master view. Return to Normal view, select the existing slides that use the revised layout, and reapply that layout to pick up the change. [Add, edit, or remove a placeholder on a slide layout | Microsoft Support](https://support.microsoft.com/en-us/powerpoint/add-edit-or-remove-a-placeholder-on-a-slide-layout)
 
 **A reusable layout, not repeated manual formatting — public references; about 60–90 minutes.** Read [slide-layout concepts](https://support.microsoft.com/en-us/powerpoint/what-is-a-slide-layout) and [editing layout placeholders](https://support.microsoft.com/en-us/powerpoint/add-edit-or-remove-a-placeholder-on-a-slide-layout). In your own five-slide deck, duplicate a layout, add a picture placeholder and change its prompt text; apply it to two slides, revise it, then reapply it. Deliver the `.pptx` and a checklist distinguishing layout changes from individual-slide edits. Estimate basis: two articles, an original deck and a revision pass. **VERIFY CURRENT:** use the matching Windows or Mac desktop steps; PowerPoint for the web cannot edit layout definitions in Slide Master view. These references do not establish SmartArt preview availability or media support. No visible article dates were established; no PowerPoint operation or embedded video was executed.
 

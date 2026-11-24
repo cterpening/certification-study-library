@@ -13,7 +13,9 @@ upcoming_change_checked: 2026-10-28
 
 # SC-401 Administering Information Security in Microsoft 365 Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-02.md#sc-401) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sc-401-coverage-record). Source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-401) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-04.md#sc-401)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-02.md#sc-401) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sc-401-coverage-record). Source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-401) is authoritative.
 
 **Current baseline:** Skills measured as of October 28, 2026.<br>
 **Exam state:** Active; the credential page lists no retirement date.<br>
@@ -169,6 +171,8 @@ Defender for Cloud Apps file policies can inspect files in connected application
 > **Related item:** A policy tip is a control interaction, not proof of prevention. Capture whether the user saw it, could override it, supplied justification, completed the action, and produced an alert.
 
 ### Implement and monitor Endpoint DLP
+
+**Practice check.** Just-in-time Endpoint DLP can protect a monitored file while its policy evaluation is pending. Deploy the intended Endpoint DLP policies first, then evaluate whether pending actions should be blocked. The documented device list includes Windows 10, Windows 11, and the three most recent macOS versions. [Get started with Endpoint DLP Just-in-time protection | Microsoft Learn](https://learn.microsoft.com/en-us/purview/endpoint-dlp-get-started-jit)
 
 Endpoint DLP requires eligible licensing, supported operating systems, device onboarding, connectivity, and supported browser/client extensions for some activities. Establish device groups, printer and removable-media groups, service domains, network-share groups, unallowed apps, browser restrictions, and evidence before advanced rules. The [Endpoint DLP overview](https://learn.microsoft.com/en-us/purview/endpoint-dlp-learn-about) is the current capability boundary.
 
@@ -376,6 +380,8 @@ Use synthetic records to reproduce the classification arithmetic, label a test P
 All knowledge checks and scenarios above are original study material, not recalled exam content. Product and exam names belong to their respective owners.
 
 ## Places to learn
+
+**Suggested practice.** Use a document lifecycle to compare label scope with policy scope and identify a separate recovery requirement. About 20–40 minutes to read the selected sections and produce the suggested comparison or checklist (editorial estimate; full path duration was not verified). [Implement and manage Microsoft 365 retention and recovery](https://learn.microsoft.com/en-us/training/paths/purview-implement-retention/)
 
 This is a curated starting set, **not a complete list** and not a recommendation to consume everything. Pick the formats that work for you, map them to the October 28, 2026 blueprint, and spend substantial time in a safe tenant. Durations are provider-listed runtimes where public; lab and reading times are planning estimates and access can change.
 

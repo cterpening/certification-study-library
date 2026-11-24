@@ -13,7 +13,9 @@ upcoming_change_checked: 2026-10-28
 
 # MB-820 Microsoft Dynamics 365 Business Central Developer Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-04.md#mb-820) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mb-820-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-820) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-05.md#mb-820)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-04.md#mb-820) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mb-820-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-820) is authoritative.
 
 **Current baseline:** Skills measured as of June 10, 2025.<br>
 **Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
@@ -229,6 +231,8 @@ The [testing support matrix](https://learn.microsoft.com/en-us/dynamics365/busin
 **Worked test structure:** declare a [test codeunit](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-test-codeunits-and-test-methods) with `Subtype = Test` and a method marked `[Test]`. Put synthetic setup, the action under test and explicit assertions in that method; put reusable setup in helper methods and expected UI behavior in correctly attributed handlers. Run through the selected test runner and capture method-level success/failure, not merely that the runner opened. A failing test does not prevent the next test method running. For an intentionally invalid quantity, assert the expected error and inspect permitted durable state using the earlier transaction model. **VERIFY CURRENT:** transaction/isolation settings and toolkit compatibility. Runtime18 `TestHandlers` lifecycle hooks are separately documented as preview; do not confuse them with ordinary UI handler methods or make preview hooks a prerequisite for this baseline exercise. No test app, compiler or container run was performed here.
 
 ### Telemetry and performance
+
+**Practice check.** When designing extension telemetry, choose an event ID and dimensions that identify the operation. Session.LogMessage uses TelemetryScope for routing. Search the resulting trace by event and dimensions in Application Insights rather than expecting a TelemetryScope column. [Creating Custom Telemetry Events for Azure Application Insights - Business Central | Microsoft Learn](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-instrument-application-for-telemetry-app-insights)
 
 Configure Application Insights/telemetry using current environment and extension guidance. Correlate environment/tenant, company/user pseudonymous dimensions as permitted, app name/version, operation, duration, result and failure. Platform telemetry provides standard signals; custom telemetry records business/technical milestones that are not otherwise observable. Never emit personal data, secrets or full payloads.
 
@@ -485,6 +489,8 @@ The [Plataan webinar listing](https://app-plataantv-web-prd-euw.azurewebsites.ne
 The June 10, 2025 study guide defines exam scope. Current Microsoft Learn paths, AL documentation and public course labs support implementation, but their platform/runtime detail may evolve beyond the older blueprint. Commercial sources are optional supplements and do not define objectives. All scenarios, labs and checks here are original; no dumps or recalled questions were used.
 
 ## Places to learn
+
+**Suggested practice.** Record the expected rows after a first installation, then identify the field changes that show the subsequent upgrade codeunit ran. About 35–60 minutes to inspect installation and upgrade codeunits and compare their effects in a prepared development sandbox (editorial estimate). [Lab 02 – Implement installation and upgrade code in an extension.](https://microsoftlearning.github.io/MB-820-Business-Central-Developer-Certification/Instructions/Labs/LAB_02_Implement_installation_and_upgrade_code_extension.html)
 
 This is not a complete list and is not meant to be consumed in full. Choose one primary route, build and upgrade one secure extension end to end, and add another resource only for a measured gap.
 

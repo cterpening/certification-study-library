@@ -7,16 +7,18 @@ generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
 last_verified: 2026-10-28
-upcoming_change_status: none-announced
-upcoming_change_checked: 2026-10-28
+upcoming_change_status: scheduled
+upcoming_change_checked: 2026-11-20
 ---
 
 # PL-900 Microsoft Power Platform Fundamentals Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-04.md#pl-900) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#pl-900-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-900) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-05.md#pl-900)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-04.md#pl-900) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#pl-900-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-900) is authoritative.
 
 **Current baseline:** Skills measured as of July 24, 2026<br>
-**Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
+**Upcoming English outline.** The credential page announces a December 18, 2026 update. The study guide still shows July 24. Use the current map until Microsoft publishes the revised tasks. [Source notes](../docs/research/2026-11-20-microsoft-refresh-group-05.md#pl-900).<br>
 **Official source:** [PL-900 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-900)
 
 ## How to use this guide
@@ -123,6 +125,8 @@ AI can propose tables, columns, relationships, formulas, and apps, but generated
 
 ### Connectors and data movement
 
+**Practice check.** When a maker can create a connection but cannot save a flow that uses it, inspect the environment's data policies. A connector blocked by policy can prevent saving the app or flow and existing connections can become inactive after a policy change. [Data policies - Power Platform | Microsoft Learn](https://learn.microsoft.com/en-us/power-platform/admin/wp-data-loss-prevention)
+
 A connector exposes triggers and actions for a service. Standard and premium classifications affect licensing. Custom connectors wrap APIs not supplied by Microsoft. Connections hold authentication context; connection references allow solution components to point to environment-specific connections.
 
 [Data loss prevention policies](https://learn.microsoft.com/en-us/power-platform/admin/wp-data-loss-prevention) classify connectors into business, non-business, or blocked groups and constrain which can be combined. A DLP policy governs connector use; it does not classify every field or replace permissions in the source system. It also does not guarantee that a connector action is semantically safe—for example, an authorized business connector can still update the wrong record if flow logic is defective.
@@ -139,7 +143,7 @@ An [environment](https://learn.microsoft.com/en-us/power-platform/admin/environm
 
 Environment strategy is a portfolio decision. Define who may create environments, which types exist, how production is distinguished from trial/developer work, capacity and region expectations, DLP scope, owner/support metadata, backup/recovery needs, and retirement rules. Separation reduces accidental coupling but adds deployment and administration work.
 
-> **Related item:** **VERIFY CURRENT — October 28, 2026:** [Dataverse for Teams deprecation](https://learn.microsoft.com/en-us/power-platform/important-changes-coming) ends new-environment creation on **November 15, 2026**. Existing environments not upgraded to full Dataverse are scheduled for suspension on **September 15, 2027** and decommissioning on **October 30, 2027**. Inventory the Microsoft Teams environment type, owners, apps, flows and agents; assess target capacity/licensing before upgrade. This concerns Dataverse for Teams environments, not ordinary Teams chats/files or full-Dataverse apps added to Teams. The dates are future milestones, not proof that a current environment is already unavailable.
+> **Related item:** **VERIFY CURRENT.** Microsoft ended creation of new Dataverse for Teams environments November 15, 2026. For existing environments, the published schedule suspends those still awaiting upgrade on September 15, 2027 and decommissions them October 30, 2027. [Dataverse for Teams deprecation](https://learn.microsoft.com/en-us/power-platform/important-changes-coming)
 
 ### Security layers
 
@@ -533,6 +537,8 @@ These original questions follow the 37 objective bullets; they are not recalled 
 
 ## Places to learn
 
+**Suggested practice.** Use a small business request to distinguish the shared data layer, the user-facing app and the automated flow before following the corresponding course units. 1 day of instructor-led training (publisher listing); provider scheduling and fees vary. [Introduction to Microsoft Power Platform](https://learn.microsoft.com/en-us/training/courses/pl-900t00)
+
 This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Pick the formats that fit you. Times are approximate consumption time at normal speed; labs, note-taking, review, and independent practice add time.
 
 ### Focused reading and evidence route
@@ -542,7 +548,7 @@ Use the [plans FAQ](https://learn.microsoft.com/en-us/power-apps/maker/common/fa
 | Resource | Access | Estimated time | Best use and caveat |
 |---|---|---:|---|
 | [Microsoft Learn — PL-900 course](https://learn.microsoft.com/en-us/training/courses/pl-900t00) | Free self-study; instructor-led options vary | 1 day (official course) | Official foundation; the public overview still emphasizes apps, flows, and Power Pages, so use the July 2026 blueprint to check the agent/code/Plan-designer gaps |
-| [Microsoft — PL-900 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/power-platform-fundamentals/practice/assessment?assessment-type=practice&assessmentId=34&practice-assessment-type=certification) | Free Microsoft account | About 1–2 hours for an attempt and review | Repeatable official readiness check with rationales and learning links; start here before buying another assessment |
+| [Microsoft — PL-900 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/power-platform-fundamentals/practice/assessment?assessment-type=practice&assessmentId=34&practice-assessment-type=certification) | Legacy Learn assessment | Previously estimated at 1–2 hours with review | Microsoft no longer updates this version. Use the credential page to launch current practice in AI Skills Navigator with sign-in. |
 | [Microsoft Partner Skilling Hub — LevelUp PL-900](https://www.skilling-hub.com/en-US/listing/o::levelup::2058317) | Partner login required | Current duration not verified | Public fetch returns a shell; confirm eligible-partner access and the current syllabus after sign-in |
 | [Microsoft Learn Power Platform Fundamentals](https://learn.microsoft.com/en-us/credentials/certifications/power-platform-fundamentals/) | Free | Self-paced; current total not published in the fetched overview | Use the credential page to find official preparation and practice; budget lab time separately |
 | [Pluralsight — Introduction to PL-900](https://www.pluralsight.com/courses/intro-microsoft-power-platform-fundamentals-900) | Subscription; public outline inspected only | Published: 24 minutes | Vlad Catrinescu; current landing page says updated October 13, 2026. Orientation and study planning, not a complete current blueprint course. Verify logistics against Microsoft; paid lessons and practice content not inspected |

@@ -13,7 +13,9 @@ upcoming_change_checked: 2026-10-28
 
 # AZ-140 Configuring and Operating Microsoft Azure Virtual Desktop Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-03.md#az-140) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-140-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-140) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-03.md#az-140)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-03.md#az-140) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-140-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-140) is authoritative.
 
 **Current baseline:** Skills measured as of July 20, 2026<br>
 **Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
@@ -276,6 +278,8 @@ Conditional Access evaluates AVD service/feed authentication and Windows Cloud L
 Smart cards and passwordless methods have join, client, certificate/Kerberos and redirection dependencies. “MFA succeeded” proves only that policy step, not host sign-in or resource access.
 
 ### Protect the session hosts and data paths
+
+**Practice check.** To restrict clipboard or redirected drives by session trust, map a Conditional Access authentication context to the redirection. Microsoft's Azure Virtual Desktop guidance also covers RemoteApp sessions and lists printers and USB among the supported redirections. [Configure context-based redirection | Microsoft Learn](https://learn.microsoft.com/en-us/windows-365/enterprise/context-based-redirections?tabs=windows-365)
 
 Apply layered controls:
 
@@ -819,6 +823,8 @@ Choose standard or session-host-configuration management before creating the poo
 ---
 
 ## Places to learn
+
+**Suggested practice.** Map the prerequisite host pool, diagnostic data and workspace configuration to the information that appears in Insights. About 25 minutes for the exercise (publisher estimate); provisioning or setup can add time. [Lab - Implement monitoring by using Azure Virtual Desktop Insights](https://microsoftlearning.github.io/AZ-140-Configuring-and-Operating-Microsoft-Azure-Virtual-Desktop/Instructions/Labs_EntraID/03_LAB_41_01_Implement_monitoring_by_using_Azure_Virtual_Desktop_Insights.html)
 
 This is **not a complete list**, and it is not a recommendation to consume everything. Pick the resources and formats that fit you, and use the official July 20, 2026 objectives as the coverage checklist. Estimated times include reasonable note-taking or practice where stated and should be rechecked before purchase.
 

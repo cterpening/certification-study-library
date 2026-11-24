@@ -17,6 +17,16 @@ ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_BUILD_DIR = ROOT / ".site-build"
 
 PUBLIC_DOCUMENTS = (
+    "docs/research/2026-11-20-microsoft-beta-certifications-evidence.json",
+    "docs/research/2026-11-20-microsoft-beta-certifications.md",
+    "docs/research/2026-11-20-microsoft-refresh-evidence.json",
+    "docs/research/2026-11-20-microsoft-refresh-group-01.md",
+    "docs/research/2026-11-20-microsoft-refresh-group-02.md",
+    "docs/research/2026-11-20-microsoft-refresh-group-03.md",
+    "docs/research/2026-11-20-microsoft-refresh-group-04.md",
+    "docs/research/2026-11-20-microsoft-refresh-group-05.md",
+    "docs/research/2026-11-20-microsoft-refresh-group-06.md",
+    "docs/research/2026-11-20-microsoft-refresh.md",
     "docs/research/2026-10-29-az401-refresh.md",
     "data/objective-snapshots/az-401-official-objectives.txt",
     "ADLC_Docs/operations/2026-10-29-az401-site-guide-publication.json",
@@ -938,6 +948,7 @@ def render_certification_inventory(
         "active": "Active",
         "beta": "Beta",
         "legacy": "Legacy",
+        "announced": "Announced",
         "retirement-announced": "Retirement announced",
         "retired": "Retired",
     }

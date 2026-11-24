@@ -7,19 +7,23 @@ generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
 last_verified: 2026-10-28
-upcoming_change_status: none-announced
-upcoming_change_checked: 2026-10-28
+upcoming_change_status: scheduled
+upcoming_change_checked: 2026-11-20
 ---
 
 # AB-620 Designing and Building Integrated AI Agent Solutions in Copilot Studio Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-03.md#ab-620) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-620-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-620) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-01.md#ab-620)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-03.md#ab-620) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-620-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-620) is authoritative.
 
 **Current baseline:** The study-guide page shows last updated October 16, 2026; Microsoft publishes no separate skills-effective date. All 44 detailed objective wordings match the accepted baseline checked October 28, 2026. Page metadata is not an effective exam-revision date.<br>
 **Exam state:** Active (no longer labeled beta on the credential page) as verified September 28, 2026.<br>
-**Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
+**Upcoming English outline — December 18, 2026.** Microsoft is updating the exam to the GitHub Copilot harness. The original Standard-harness lessons remain available through Learn search. Use the current objective map for preparation before that date. Check the language and version for your appointment. The [November source notes](../docs/research/2026-11-20-microsoft-refresh-group-01.md#ab-620) identify the announced edition and its domain weights.<br>
 **Training availability:** The official self-paced paths and three-day English AB-620T00-A course page are live as checked October 28, 2026. Provider delivery dates and availability vary; the earlier September 30 scheduled-date note is historical.<br>
 **Official source:** [AB-620 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-620)
+
+**Practice check.** When Copilot Studio changes the default model, the documented temporary option can retain the prior model for up to 30 days. Use that window for representative test sets, regression comparisons and an explicit cutover decision. [Source notes and publisher link](../docs/research/2026-11-20-microsoft-refresh-group-01.md#ab-620)
 
 ## How to use this guide
 
@@ -774,6 +778,8 @@ The [AI Agent Builder Associate credential page](https://learn.microsoft.com/en-
 - [Efrat Gilboa and Dikla Dotan-Cohen — Custom graders](https://www.microsoft.com/en-us/copilot/blog/copilot-studio/custom-graders-in-copilot-studio-setting-high-standards-for-agent-evals/) (March 26, 2026). Its layers of general quality, expected outputs, organizational policy and behavior help identify missing tests. Write your own mutually exclusive, exhaustive labels, independently label a small synthetic set, then calculate example 5's confusion matrix. A reported vendor benchmark is not a guarantee for your agent, and grading does not enforce access controls.
 
 ## Places to learn
+
+**Suggested practice.** Compare responsibility and ownership boundaries between a child agent and an independently maintained connected agent, then identify when cross-platform communication is needed. About 20–40 minutes to read the selected sections and produce the suggested comparison or checklist (editorial estimate; full path duration was not verified). [Design and build multi-agent solutions in Microsoft Copilot Studio](https://learn.microsoft.com/en-us/training/paths/design-build-multi-agent-solutions-copilot-studio/)
 
 This is a curated starting point, not a complete list. Do **not** consume everything. Select the explanations, demonstrations, labs, and assessment signals that close your gaps, and keep the current official blueprint beside third-party material.
 

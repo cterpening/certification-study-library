@@ -22,6 +22,12 @@ entries without a full guide.
 
 ## Current coverage baseline
 
+The November intake adds guides for Microsoft's AB-330 and GitHub's GH-700,
+plus an inventory entry for the upcoming MO-410 Outlook exam. **Announced**
+means the issuer has named the exam and its availability has yet to be verified.
+Both guides passed an independent AI review as drafts. Human review and live
+exercises are pending. [Beta guides and announced exams](research/2026-11-20-microsoft-beta-certifications.md) · [Review evidence](research/2026-11-20-microsoft-beta-certifications-evidence.json)
+
 The [IBM Bob v2 Developer Associate intake](research/2026-10-28-ibm-bob-certification-intake.md)
 adds live exam C3000-006 / credential C9010800 as checked October 28, 2026.
 It joins the existing six IBM guides; this targeted addition does not reverify

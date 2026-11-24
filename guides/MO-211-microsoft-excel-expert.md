@@ -13,7 +13,9 @@ upcoming_change_checked: 2026-10-28
 
 # MO-211 Microsoft Excel Expert (Microsoft 365 Apps) Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-05.md#mo-211) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mo-211-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-expert-m365-apps/) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-06.md#mo-211)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-05.md#mo-211) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mo-211-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-expert-m365-apps/) is authoritative.
 
 **Assessment:** 50 minutes, proctored; the current page lists seven languages. Approximately 150 hours of instruction and hands-on experience is preparation guidance, not a formal prerequisite. The page has no dedicated Microsoft Learn training collection.<br>
 **Lifecycle:** No retirement or replacement notice found on October 28, 2026. The credential shows a 60-month renewal frequency; read the [current MOS expiration policy](https://learn.microsoft.com/en-us/credentials/support/credential-expiration-policy) for applicability to your award date. Exam retirement and credential expiration are different events.
@@ -84,6 +86,8 @@ Use TODAY for the current date and NOW for date/time; their results change when 
 Use **Consolidate** to summarize multiple ranges: consolidate by position only when layouts align; choose labels/categories when the same items occupy different rows. Identify whether the output links to source data or represents a snapshot. **Goal Seek** adjusts one input to meet one formula target; **Scenario Manager** stores alternative input sets. Sensitivity Data Tables are useful supplementary practice; they are not separately named in this PDF.
 
 ### Worked consolidation and what-if analysis
+
+**Practice check.** To find the one input that produces a target formula result, use Goal Seek. To compare named sets of several assumptions, save scenarios and review a scenario summary. Each saved scenario can hold up to 32 changing values. [Use Goal Seek to find the result you want by adjusting an input value | Microsoft Support](https://support.microsoft.com/en-au/excel/use-goal-seek-to-find-the-result-you-want-by-adjusting-an-input-value) · [Switch between various sets of values by using scenarios | Microsoft Support](https://support.microsoft.com/en-us/excel/switch-between-various-sets-of-values-by-using-scenarios)
 
 On two sheets, create Item/Amount lists: North has **A/10, B/20** and South has **B/7, A/3**. In a clear destination, Data → Consolidate → Sum, add both source ranges including labels and select Top row/Left column. Expect **A 13, B 27, grand total 40**. Without category labels, positional combination would pair unlike rows and produce **17/23**. Choose deliberately whether to create links to source data. Change South's A amount to **5**: expected recomputed results are **A 15, B 27, total 42**; a snapshot requires rerunning consolidation. See [source-range and label configuration](https://support.microsoft.com/en-us/excel/consolidate-data-in-multiple-worksheets).
 
@@ -221,6 +225,8 @@ These ten labs are proposed desktop exercises. Keep before/after copies, expecte
 32. **What does refresh not fix?** Wrong source range, record grain, types, aggregation or business definitions.
 
 ## Places to learn
+
+**Suggested practice.** Change the filter on an existing PivotTable and check how the associated chart represents the selected categories. About 20–35 minutes to create a PivotTable and PivotChart from a small dataset and test a filter (editorial estimate). [Create a PivotChart](https://support.microsoft.com/en-us/excel/get-started/create-a-pivotchart)
 
 This is a selective learning path, not a complete list of Excel Expert resources or a requirement to consume every item. All time estimates below are author suggestions.
 

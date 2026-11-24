@@ -7,21 +7,25 @@ generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: review-required
 last_verified: 2026-10-28
-upcoming_change_status: none-announced
-upcoming_change_checked: 2026-10-28
+upcoming_change_status: scheduled
+upcoming_change_checked: 2026-11-20
 ---
 
 # AB-250 Transforming Contact Center Experiences with AI in Dynamics 365 Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-04.md#ab-250) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-250-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-250) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-01.md#ab-250)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-04.md#ab-250) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-250-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-250) is authoritative.
 
 **Current baseline:** Official study guide last updated May 15, 2026; Microsoft publishes no separate skills-effective date.<br>
-**Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
-**Lifecycle:** The [Dynamics 365 Contact Center AI Engineer Associate credential](https://learn.microsoft.com/en-us/credentials/certifications/d365-contact-center-ai-engineer-associate/) and 120-minute English exam are active. **VERIFY CURRENT:** Microsoft now lists a Practice Assessment through AI Skills Navigator; sign-in is required to launch it. The public [credential page](https://learn.microsoft.com/en-us/credentials/certifications/d365-contact-center-ai-engineer-associate/) establishes availability. The signed-in assessment and its questions were not accessed.<br>
+**Upcoming English outline — December 18, 2026.** Use the current objective map for preparation before that date. Check the language and version for your appointment. The [November source notes](../docs/research/2026-11-20-microsoft-refresh-group-01.md#ab-250) identify the announced edition and its domain weights.<br>
+**Lifecycle:** The [Dynamics 365 Contact Center AI Engineer Associate credential](https://learn.microsoft.com/en-us/credentials/certifications/d365-contact-center-ai-engineer-associate/) lists a 120-minute exam in seven languages. **VERIFY CURRENT:** Microsoft now lists a Practice Assessment through AI Skills Navigator; sign-in is required to launch it. The public [credential page](https://learn.microsoft.com/en-us/credentials/certifications/d365-contact-center-ai-engineer-associate/) establishes availability. The signed-in assessment and its questions were not accessed.<br>
 **Transition:** Microsoft added AB-250 to partner skilling after MB-240 retired, but [explicitly says it is not a direct replacement](https://learn.microsoft.com/en-us/partner-center/announcements/2026-july).<br>
 **Official source:** [AB-250 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-250)
 
 ### Current changes and evidence limits
+
+**Practice check.** For a proactive engagement cancellation, identify what is being cancelled before selecting the ID. Microsoft directs a delivery task to CCaaS_CancelProactiveEngagement with DeliveryTaskId, and a scheduled callback to the same API with CallbackConversationId. [Deprecations in Dynamics 365 Contact Center | Microsoft Learn](https://learn.microsoft.com/en-us/dynamics365/contact-center/implement/deprecations-contact-center)
 
 The [September 28 deep review](../docs/research/2026-09-28-ab-250-deep-review.md) maps all **119 detailed objectives**. Their wording is unchanged; the old accepted snapshot used different heading, bullet and wrapping formats. This review adds six worked examples, ten labs and answers to 48 original checks. Only offline arithmetic/set checks were executed; tenant, telephony, campaign, agent, SDK and paid-course exercises remain unexecuted.
 
@@ -524,6 +528,8 @@ The six worked examples are offline models. No calls, messages, campaigns, credi
 - [ ] I use original practice and evidence without seeking live exam content.
 
 ## Places to learn
+
+**Suggested practice.** Draw a two-column checklist for observing versus intervening in a conversation, then map one desired supervisor action to its setting. 5 minutes for the unit (publisher page). [Enable supervisor controls for live conversations](https://learn.microsoft.com/en-us/training/modules/configure-supervisor-experience-contact-center/2-enable-supervisor-controls)
 
 This is not a complete list and is not meant to be consumed in full. Choose one primary route, build representative end-to-end journeys, and add another resource only for a measured gap.
 

@@ -5,19 +5,23 @@ official_blueprint: https://learn.microsoft.com/en-us/credentials/certifications
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: source-validated
-last_verified: 2026-10-28
+review_status: review-required
+last_verified: 2026-11-20
 upcoming_change_status: none-announced
 upcoming_change_checked: 2026-10-28
 ---
 
 # AI-103 Developing AI Apps and Agents on Azure Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 detailed refresh maps all 64 objectives in the retained teaching baseline and checks current public product evidence. See the [current refresh record](../docs/research/2026-10-28-ab100-gh300-ai103-refresh.md#ai-103) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ai-103-coverage-record). The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-103) is authoritative. Product/tenant execution and human review remain separate; limitations and source conflicts are stated below.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-02.md#ai-103)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 detailed refresh maps all 64 objectives in the retained teaching baseline and checks current public product evidence. See the [October refresh record](../docs/research/2026-10-28-ab100-gh300-ai103-refresh.md#ai-103) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ai-103-coverage-record). The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-103) is authoritative. Product/tenant execution and human review remain separate; limitations and source conflicts are stated below.
 
 **Current baseline:** Skills measured as of April 16, 2026<br>
 **Upcoming blueprint change:** None announced on the official study guide checked October 28, 2026.<br>
 **Official source:** [AI-103 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-103)
+
+**Practice check.** For fields printed on an invoice, start with a standard analyzer. To reconcile a contract and an amendment, the agentic document preview can reason across both when they are in one input file. Use API version 2026-06-01-preview for that exercise. [Agentic mode overview for document analysis (preview) - Foundry Tools | Microsoft Learn](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/agentic-mode)
 
 ## How to use this guide
 
@@ -1159,6 +1163,8 @@ Recheck model versions, deployment types, SDKs, quotas, pricing, regions, previe
 
 ## Places to learn
 
+**Suggested practice.** Trace one function call from the agent request to the returned value and identify the cleanup instructions before provisioning anything. About 50 minutes for the exercise (publisher estimate); provisioning or setup can add time. [Use a custom function in an AI agent](https://microsoftlearning.github.io/mslearn-ai-agents/Instructions/Exercises/02-agent-custom-tools.html)
+
 ### Targeted blog reading
 
 | Article | Author and date | Learning task and limits |
@@ -1186,7 +1192,6 @@ This is a curated starting point, not a complete list. You are not meant to cons
 | [O'Reilly — Introduction to AI Agents on Azure](https://www.oreilly.com/live-events/introduction-to-ai-agents-on-azure/0642572194079/) | Subscription or event access | 4 hours (published agenda) | Agent concepts and Azure implementation context; the listed live occurrence has ended |
 | [Udemy — AI-103 course by Alan Rodrigues](https://www.udemy.com/course/ai-102-microsoft-certified-azure-ai-engineer-associate-d/) | Purchase or subscription | 32 hours 56 minutes | Long-form course shown as updated July 2026; the listing follows AI-103 despite the legacy URL slug, but does not expose lesson-level Foundry generation, so verify demos against the current-generation signals above |
 | [Udemy — AI-103 course by Luke Ginn](https://www.udemy.com/course/ai-103-azure-ai-app-and-agent-developer-complete-course/) | Purchase or subscription | 30 hours 22 minutes | Deep alternative updated August 2026; includes labs and explicitly marked older lectures—treat those older lectures as **FOUNDRY (CLASSIC)** or adjacent content and follow the current sections |
-| [Pluralsight — Build a Generative AI Solution with Azure](https://www.pluralsight.com/paths/build-a-generative-ai-solution-with-azure) | Subscription | 3 hours across one course and three labs | Current 2026 implementation practice for a secure Azure OpenAI pipeline, rate limits, monitoring, and data services; supports only part of AI-103 |
 | [LinkedIn Learning — Azure AI for Developers: Building AI Agents](https://www.linkedin.com/learning/azure-ai-for-developers-building-ai-agents) | Subscription | 1 hour 53 minutes | **FOUNDRY (CLASSIC):** released February 2025 and teaches Azure AI Foundry with the Assistants API, assistants, threads/runs, and older framework surfaces; use only for legacy comparison or durable agent concepts, not current portal/API steps |
 
 No exact Pluralsight certification path or standalone MeasureUp AI-103 practice-test page was verified during the August 31, 2026 review. Whizlabs announced a 100-question AI-103 bank in August 2026, but the reviewed public listing did not expose a stable exam-specific product URL, so it is not linked yet. The free Microsoft assessment above is available; the listed Pluralsight path supports a subset of the objectives. See the broader [Places to learn catalog](../docs/LEARNING-RESOURCES.md).

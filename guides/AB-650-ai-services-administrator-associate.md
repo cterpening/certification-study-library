@@ -8,15 +8,17 @@ authority: unofficial
 review_status: review-required
 last_verified: 2026-10-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-10-28
+upcoming_change_checked: 2026-11-20
 ---
 
 # AB-650 Microsoft 365 and AI Services Administrator Associate Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-01.md#ab-650) and the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-650-coverage-record). Known source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-650) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-01.md#ab-650)
 
-**Current baseline:** Beta blueprint page last updated July 27, 2026; Microsoft does not state a separate “skills measured as of” date on the page.<br>
-**Upcoming blueprint change:** No dated change is announced, but beta content can change before general availability. Recheck the official page before studying or scheduling.<br>
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-01.md#ab-650) and the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-650-coverage-record). Known source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-650) is authoritative.
+
+**Current baseline:** Blueprint page last updated July 27, 2026; Microsoft does not state a separate “skills measured as of” date on the page.<br>
+**Upcoming blueprint change:** The English outline has no announced effective-date change. Microsoft lists AB-650 as active after the October 30 launch. The credential page gives a 100-minute assessment. Recheck the official page before studying or scheduling.<br>
 **Official source:** [AB-650 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-650)
 
 ## October 28 implementation notes
@@ -48,7 +50,7 @@ Do not solve a data-access problem only at the AI surface. Copilot and agents ca
 
 The [Agent 365 GA announcement](https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/) confirms the control plane's product-level status, while explicitly leaving individual integrations and capabilities on their own release schedules. Use the [Microsoft 365 Copilot release notes](https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes) to detect changes in agent submission, connectors, administration, and rollout; then verify the specific implementation page and tenant before acting.
 
-The September 23 Copilot release entry includes a dedicated license-request page; rollout can differ within a tenant. A release announcement does not establish an individual user’s entitlement. The beta exam remains English-only, with no Practice Assessment and no separately announced objectives-effective date. The retrieved [exam page](https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-650/) still lists no current instructor-led course, while the direct AB-650T00 page now exists and announces November 13 availability. The listing conflict is preserved; no delivered class or fixed exam duration was verified.
+The September 23 Copilot release entry includes a dedicated license-request page; rollout can differ within a tenant. A release announcement does not establish an individual user’s entitlement. The [exam page](https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-650/) links scheduling. The current credential page lists 100 minutes and no Practice Assessment. Consult class providers for AB-650T00 availability.
 
 This is a status clarification, not a blueprint revision. Keep preview, Frontier, licensing, cloud, and role limitations attached to the individual feature. Independent administrator explanations such as the John Savill resource listed later are useful corroboration, but current Microsoft documentation controls exact portal behavior.
 
@@ -224,6 +226,8 @@ Tenant controls include Copilot license assignment, Copilot Chat and web search 
 Copilot Cowork for work/school accounts is now GA. Its [administration procedure](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-admin-governance) separates plugin, browser, model, billing and audit controls. The old Cowork agent-entry allow/block setting no longer controls access. Automated tasks act as their creator; consequential actions require approval by default, but a user can preauthorize actions. An administrator must inspect the task’s approval configuration rather than promise a confirmation at every run.
 
 ### Cowork access and consumption
+
+**Practice check.** For worldwide Copilot Cowork, a spending policy that includes Cowork and the user grants access even with a one-credit limit. To revoke this route, remove the user from every applicable Cowork spending policy. The discovery switch controls visibility. [Determine access controls for Copilot Cowork | Microsoft Learn](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-access)
 
 [Cowork access](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-access) comes from **any applicable spending policy that selects Cowork**. Discovery and model visibility are separate. Hiding discovery, disabling one model family or imposing a tiny credit limit does not exclude a user. Limit enforcement is asynchronous. Remove unintended policy scope to restrict access.
 
@@ -480,7 +484,7 @@ Tabletop overlapping spending scopes, hidden discovery, disabled Anthropic, a pr
 29. **Usage versus value?** Usage shows activity; value requires an outcome and baseline, with quality, risk, and cost considered.
 30. **What does a healthy Microsoft service fail to prove?** That local licensing, policy, identities, connectors, agents, tools, and data are healthy.
 31. **Why preserve incident evidence before remediation?** To determine scope/root cause and support audit, legal, recovery, and control improvement.
-32. **What should a beta candidate recheck?** Objectives, exam status/language, product names, portals, licensing, defaults, and assessment availability.
+32. **What should a candidate recheck?** Objectives, exam status/language, product names, portals, licensing, defaults, and assessment availability.
 33. **Can a search result grant file access?** No. Search is security trimmed and resource authorization remains decisive.
 34. **Why use synthetic lab data?** To test governance and response without exposing production or regulated information.
 35. **What is the best response to one Copilot oversharing citation?** Fix and verify source authorization/ownership/protection, assess similar exposure, and use narrow temporary containment if required.
@@ -513,13 +517,15 @@ Tabletop overlapping spending scopes, hidden discovery, disabled Anthropic, a pr
 - I can use Purview AI observability and Compliance Manager evidence to find, remediate, and retest Agent 365 protection and compliance gaps.
 - I can assess MCP servers/connectors/plugins/skills by identity, actions, data flow, ownership, observability, and emergency response.
 - I can interpret cost, usage, adoption, service-health, audit, DLP, and security signals without confusing activity with value or proof.
-- I have rechecked the beta blueprint and credential page immediately before scheduling.
+- I have rechecked the blueprint and credential page immediately before scheduling.
 
 ## Places to learn
 
+**Suggested practice.** Use the final two modules to distinguish labeling an item from preventing a disclosure and keeping or deleting that item under policy. About 20–40 minutes to read the selected sections and produce the suggested comparison or checklist (editorial estimate; full path duration was not verified). [Govern and secure Microsoft 365 tenants and workloads](https://learn.microsoft.com/en-us/training/paths/govern-secure-microsoft-365-tenants-workloads/)
+
 ### October 28 learning route and evidence task
 
-The [official seven-lab set](https://microsoftlearning.github.io/AB-650T00_administer_microsoft_365_and_ai_services/) offers **450 minutes** of publisher-estimated practice. Read its [environment guide](https://microsoftlearning.github.io/AB-650T00_administer_microsoft_365_and_ai_services/Instructions/Labs/00-getting-started.html) first: the ordered labs assume one prepared Microsoft 365 E7 tenant with seeded identities, content and agents; public instructions do not include that tenant or its licenses. No Azure subscription is needed by this lab set. **VERIFY CURRENT:** the course page still announces November 13 availability; a visible repository does not prove a class or hosted lab can be booked. Allow extra time for setup, propagation and independent testing.
+The [official seven-lab set](https://microsoftlearning.github.io/AB-650T00_administer_microsoft_365_and_ai_services/) offers **450 minutes** of publisher-estimated practice. Read its [environment guide](https://microsoftlearning.github.io/AB-650T00_administer_microsoft_365_and_ai_services/Instructions/Labs/00-getting-started.html) first: the ordered labs assume one prepared Microsoft 365 E7 tenant with seeded identities, content and agents; public instructions do not include that tenant or its licenses. No Azure subscription is needed by this lab set. **VERIFY CURRENT:** the course page offers a three-day syllabus and a self-directed entry point. Confirm dates and hosted lab access with the provider. Allow extra time for setup, propagation and independent testing.
 
 **Original evidence worksheet (about 30–45 minutes beyond the published lab time, editorial estimate):** For the governance lab, record one identity, registry/tool-approval decision and usage signal. Give each row an object ID, acting persona, timestamp, source period and provenance: live observed, seeded sample, pending or unavailable. Keep Conditional Access report-only as the instructions require.
 
@@ -531,11 +537,11 @@ Additional options and access updates; choose relevant resources rather than con
 
 | Resource | Access | Estimated time |
 |---|---|---|
-| [AB-650T00: Administer Microsoft 365 and AI services](https://learn.microsoft.com/en-us/training/courses/ab-650t00) | Public outline; instructor-led class/provider access may be paid | **3 published days**; exact page currently says available **November 13, 2026**; indexed October 30 date conflicts; delivery unverified |
+| [AB-650T00: Administer Microsoft 365 and AI services](https://learn.microsoft.com/en-us/training/courses/ab-650t00) | Public outline; instructor-led class/provider access may be paid | **3 published days**; self-directed training is listed. Confirm class dates and tenant access with the provider |
 | [Manage and secure Microsoft 365 AI services](https://learn.microsoft.com/en-us/training/paths/manage-secure-microsoft-365-ai-services/) — access recheck | Public reading; current outline assumes an E5 tenant and prefers E7/Frontier Suite for some exercises; VERIFY CURRENT licensing | About **one study day**, editorial plan for seven modules; exact runtime not verified in direct view and setup/labs need extra time |
 
 
-This is not a complete list, and it is not meant to be consumed in full. Pick one primary route that fits how you learn, build labs around weak objectives, and use assessments to diagnose gaps. Recheck dates and coverage because AB-650 and several Agent 365 features are beta or rapidly changing.
+This is not a complete list, and it is not meant to be consumed in full. Pick one primary route that fits how you learn, build labs around weak objectives, and use assessments to diagnose gaps. Recheck dates and coverage because the exam and Agent 365 features can change.
 
 ### Official primary route
 
@@ -543,11 +549,11 @@ This is not a complete list, and it is not meant to be consumed in full. Pick on
 - [Govern and secure Microsoft 365 tenants and workloads](https://learn.microsoft.com/en-us/training/paths/govern-secure-microsoft-365-tenants-workloads/) — 5 modules; former listing: 7 hours 39 minutes.
 - [Manage and secure Microsoft 365 AI services](https://learn.microsoft.com/en-us/training/paths/manage-secure-microsoft-365-ai-services/) — 7 modules; former listing: 8 hours 27 minutes.
 - The three current paths expose **17 modules**. The previous **23 hours 8 minutes** total is historical: September 28 retrieval did not expose current duration totals. Budget roughly **35–55 hours** with notes, portal exploration, labs and remediation as an editorial estimate.
-- Use the [AB-650 credential page](https://learn.microsoft.com/en-us/credentials/certifications/ai-services-administrator-associate/) for beta status, scheduling, exam sandbox, language, and assessment availability. The September 28 page still says no Practice Assessment is available; beta results are not immediate. English is the listed exam language.
+- Use the [AB-650 credential page](https://learn.microsoft.com/en-us/credentials/certifications/ai-services-administrator-associate/) for scheduling, exam sandbox, language, and assessment availability. The September 28 page still says no Practice Assessment is available; the current listing gives a 100-minute assessment. English is the listed exam language.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
-| [Official AB-650 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-650) and [credential page](https://learn.microsoft.com/en-us/credentials/certifications/ai-services-administrator-associate/) | Public | 1–2 hours initially; 15 minutes on each beta recheck |
+| [Official AB-650 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-650) and [credential page](https://learn.microsoft.com/en-us/credentials/certifications/ai-services-administrator-associate/) | Public | 1–2 hours initially; 15 minutes on each scope recheck |
 | Three official Microsoft Learn paths | Public | 17 modules; historical total 23 hours 8 minutes; editorial estimate 35–55 hours including practice |
 | Exam sandbox from the credential page | Public | 20–40 minutes; not a knowledge assessment |
 | [Microsoft 365 Copilot documentation](https://learn.microsoft.com/en-us/microsoft-365-copilot/) and [Microsoft Agent 365 documentation](https://learn.microsoft.com/en-us/microsoft-agent-365/) | Public | 6–15 hours selectively for current behavior and limitations |

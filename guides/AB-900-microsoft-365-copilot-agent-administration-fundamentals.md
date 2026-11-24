@@ -13,6 +13,8 @@ upcoming_change_checked: 2026-10-28
 
 # AB-900 Microsoft 365 Copilot and Agent Administration Fundamentals Study Guide
 
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-01.md#ab-900)
+
 
 > **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 refresh maps all 53 detailed objectives in the October 14, 2026 English outline. See the [current deep-review evidence](../docs/research/2026-10-28-microsoft-wave1-deep-review.md#ab-900) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-900-coverage-record). Microsoft's [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-900) is authoritative. Live product labs and human review remain pending; public-source review does not guarantee correctness.
 
@@ -338,6 +340,8 @@ The supporting [Microsoft 365 Power Platform environment](https://learn.microsof
 
 ### Agent lifecycle
 
+**Practice check.** Sharing an Agent Builder agent grants selected colleagues access and owners can maintain it. For an organization-wide rollout or delivery across other channels, evaluate the Copilot Studio publishing path and the administrator's controls. [Share and manage agents built in Agent Builder | Microsoft Learn](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-builder-share-manage-agents)
+
 Agents may be supplied by Microsoft, built from SharePoint, created in Microsoft 365 Copilot or Copilot Studio, or provided by third parties. Agent creation defines purpose, instructions, knowledge, tools, and user experience under the selected authoring surface; agent administration decides whether and how that artifact enters the tenant and who can use it.
 
 For a fundamentals-level creation path, [Agent Builder in Microsoft 365 Copilot](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-builder-build-agents) provides a no-code route to a declarative agent:
@@ -551,6 +555,8 @@ Use synthetic actors and a read-only/tabletop tenant map. Record a domain-verifi
 ---
 
 ## Places to learn
+
+**Suggested practice.** Use the paired administration modules to separate a tenant-level Copilot setting from an action governing a specific agent. About 20–40 minutes to read the selected sections and produce the suggested comparison or checklist (editorial estimate; full path duration was not verified). [Explore Microsoft 365 Copilot and agent administration](https://learn.microsoft.com/en-us/training/paths/explore-microsoft-365-copilot-agent-administration/)
 
 This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Pick the formats that fit you. Times are approximate consumption time at normal speed; labs, note-taking, review, and independent practice add time.
 

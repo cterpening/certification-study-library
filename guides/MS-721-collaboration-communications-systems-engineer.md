@@ -5,18 +5,20 @@ official_blueprint: https://learn.microsoft.com/en-us/credentials/certifications
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: source-validated
-last_verified: 2026-10-28
-upcoming_change_status: scheduled
-upcoming_change_checked: 2026-10-28
+review_status: review-required
+last_verified: 2026-11-20
+upcoming_change_status: none-announced
+upcoming_change_checked: 2026-11-20
 ---
 
 # MS-721 Collaboration Communications Systems Engineer Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-02.md#ms-721) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ms-721-coverage-record). Source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-721) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-04.md#ms-721)
 
-**Retained teaching baseline:** Skills measured as of April 28, 2026. The current live page displays the future October 29 outline; this does not freshly republish April.<br>
-**Future outline — VERIFY CURRENT (October 28, 2026):** The live study guide displays October 29 scope, which is future today. The accepted April outline and all future detailed objectives are mapped separately. The future wording distinguishes Teams Premium and Microsoft 365 Copilot, names appointments with Teams, and clarifies group policy assignment. Accepted objective/status bytes remain unchanged until an effective-date review; no early promotion is implied.<br>
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-02.md#ms-721) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ms-721-coverage-record). Source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-721) is authoritative.
+
+**Current English baseline:** Skills measured as of October 29, 2026.<br>
+**Outline checked November 20, 2026.** Identify which meeting features require Teams Premium or Microsoft 365 Copilot, plan appointments with Teams, and assign policies to groups. The live edition matches the October 29 outline previously mapped here. [November source notes](../docs/research/2026-11-20-microsoft-refresh-group-04.md#ms-721).<br>
 **Official source:** [MS-721 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-721)
 
 The [deep-review report](../docs/research/2026-09-28-ms-721-deep-review.md) records the evidence and limits. The current credential lists 100 minutes; practice vendors’ question counts are not promises about the exam.
@@ -174,7 +176,7 @@ Build a test matrix for organizer, co-organizer, presenter, internal attendee, g
 
 Controlled-content scenarios require more than disabling screen sharing: decide who can present, whether attendees can request control, which apps/polls/forms are permitted, how files are shared and whether external participants can access downstream artifacts. Recording and transcript retention/access are governed by storage location, meeting roles, sharing and Purview policies as well as the Teams meeting setting.
 
-Virtual appointments add external scheduling/join and operational requirements. Determine whether basic scheduling is enough or advanced appointment policies, queue views, notifications, analytics and branding are required. Test a browser/mobile external attendee rather than only a signed-in employee.
+Appointments with Microsoft Teams add external scheduling/join and operational requirements. Determine whether basic scheduling is enough or advanced appointment policies, queue views, notifications, analytics and branding are required. Test a browser/mobile external attendee rather than only a signed-in employee.
 
 ### Create and assign policy packages
 
@@ -379,6 +381,8 @@ Android Teams devices use current AOSP/Microsoft Device Ecosystem Platform (MDEP
 The [device-code policy guidance](https://learn.microsoft.com/en-us/entra/identity/conditional-access/policy-teams-devices-device-code-flow) uses persistent, monitored exceptions for real device accounts and excludes Device Registration Service from the blocking policy. Exceptions are account-wide, not limited to a single room action. Include reprovisioning/recovery even for passwordless devices; confirm the installed authentication design rather than copying a legacy ROPC procedure.
 
 ### Operations and lifecycle
+
+**Practice check.** When two Teams Rooms show different capabilities, record the platform and installed app version, then look for a separate Teams web client release. A web client feature can reach a room through cloud delivery without installing another local app build. [Release notes for Microsoft Teams Rooms - Microsoft Teams | Microsoft Learn](https://learn.microsoft.com/en-us/microsoftteams/rooms/rooms-release-note)
 
 The [Android management transition](https://learn.microsoft.com/en-us/microsoftteams/rooms/aboutunifieddevicemanagement-pmp1) makes Rooms Pro Management the primary portal, with overlapping TAC workflows retiring during September 2026. Devices appear automatically after prerequisites; **configuration profiles must be imported as settings templates**. Portal entitlement does not mean every device needs a new Pro license. Check access/RBAC, required endpoints, minimum Admin Agent and actual device actions; an Entra AU-scoped administrator needs appropriate PMP role delegation. Existing pause settings generally carry over, but mandatory migration Agent updates are non-pausable. Follow the dated transition guidance and cloud-specific release status before relying on a rollout date. [Device management guidance](https://learn.microsoft.com/en-us/microsoftteams/devices/device-management) also distinguishes partial settings application from overwriting a full profile. Compare effective device settings after template import. [The XML reference](https://learn.microsoft.com/en-us/microsoftteams/rooms/xml-config-file) remains relevant to the exam, but Microsoft now recommends PMP settings and no longer publishes new XML settings. A correctly processed `SkypeSettings.xml` is consumed and deleted at startup; malformed XML can apply earlier settings before failure, omitted values stay unchanged, and unknown elements are ignored. File disappearance alone does not prove the intended outcome. Validate supported elements/case, keep a known-good configuration, and inspect effective settings after restart.
 
@@ -620,11 +624,13 @@ Inventory app/OS/OEM/Agent/cloud versions, portal access and AOSP compliance. Re
 
 ## Places to learn
 
-This is a curated starting point, **not a complete list**, and it is not meant to be consumed in full. Choose one primary route, build a lab/topology, and add resources only for measured gaps. Reconcile every older source with the retained April 28, 2026 outline and separately compare the future October 29 outline, especially Shared Calling, SMS, Queues app, Copilot, current events, Android enrollment/MDEP, flexible workspaces and room/device features.
+**Suggested practice.** Use the policy guided project and the room-preparation project as separate exercises: save a policy assignment plan and a room readiness checklist. About 20–40 minutes to read the selected sections and produce the suggested comparison or checklist (editorial estimate; full path duration was not verified). [MS-721 Manage Teams collaboration communications systems](https://learn.microsoft.com/en-us/training/paths/manage-teams-voice/)
+
+This is a curated starting point, **not a complete list**, and it is not meant to be consumed in full. Choose one primary route, build a lab/topology, and add resources only for measured gaps. Reconcile every older source with the October 29, 2026 outline, especially Shared Calling, SMS, Queues app, Copilot, current events, Android enrollment/MDEP, flexible workspaces and room/device features.
 
 ### October 28 learning route and evidence task
 
-Start with the [five-day Microsoft course](https://learn.microsoft.com/en-us/training/courses/ms-721t00) and its two selected paths (**15 modules, 7/8**); choose voice or room investigations from actual weak areas. As of this review on **October 28, 2026**, the [October 29 outline](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-721) is still a future exam baseline. A course update or a five-day duration does not establish exam-transition timing. The existing [Tom Arbuthnot/Marius Nilsen interop briefing](https://empowering.cloud/microsoft-teams-rooms-cloud-video-interop-vs-direct-guest-join-vs-cross-platform-meetings-via-sip/) is useful specialist context: its **2 min** page label describes the synopsis, while video chapters extend past 15 minutes; the full video runtime was not verified or watched.
+Start with the [five-day Microsoft course](https://learn.microsoft.com/en-us/training/courses/ms-721t00) and its two selected paths (**15 modules, 7/8**); choose voice or room investigations from actual weak areas. The [October 29 outline](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-721) governs current English preparation. A course update or a five-day duration does not establish exam-transition timing. The existing [Tom Arbuthnot/Marius Nilsen interop briefing](https://empowering.cloud/microsoft-teams-rooms-cloud-video-interop-vs-direct-guest-join-vs-cross-platform-meetings-via-sip/) is useful specialist context: its **2 min** page label describes the synopsis, while video chapters extend past 15 minutes; the full video runtime was not verified or watched.
 
 **Original worksheet (about 30–45 minutes, editorial estimate):** Draw an external SIP endpoint joining your Teams meeting and a Teams Room joining an external meeting. For each direction record endpoint/platform, provider/plan, join method, lobby expectation, required content/peripheral behavior, owner and one failure test. Mark any May 2026 rollout statement for a current support check.
 

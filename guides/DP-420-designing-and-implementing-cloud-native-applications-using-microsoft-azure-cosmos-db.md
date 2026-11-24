@@ -13,7 +13,9 @@ upcoming_change_checked: 2026-10-28
 
 # DP-420 Building AI Applications with Azure Cosmos DB Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-01.md#dp-420) and the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-420-coverage-record). Known source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-420) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-02.md#dp-420)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-01.md#dp-420) and the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-420-coverage-record). Known source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-420) is authoritative.
 
 **Current baseline:** Skills measured as of October 6, 2026; the current three-domain outline is accepted.<br>
 **Blueprint reconciliation (October 28, 2026):** The October 6 outline governs current preparation. Database development is 40–45%, secure/optimized deployment 30–35%, and AI/analytics 20–25%. The old July domain organization below is retained as a labeled foundation, not current exam weighting. The live study guide still contains future-tense transition copy; the effective-date heading and credential notice are recorded separately. Historical objective bytes and review records are preserved.<br>
@@ -76,7 +78,9 @@ The [vector-search guide](https://learn.microsoft.com/en-us/azure/cosmos-db/vect
 
 ### Change-feed modes, copy jobs and AI-assisted development
 
-Read the [change-feed mode matrix](https://learn.microsoft.com/en-us/azure/cosmos-db/change-feed-modes). Latest-version mode can start at the beginning but does not preserve every intermediate version or deleted item. All-versions-and-deletes mode requires continuous backup, has a bounded retention window and currently starts from now or a valid checkpoint, not an arbitrary historical timestamp. Select supported SDK/processor/pull APIs explicitly; pull mode leaves checkpointing and work distribution to your application, while the processor coordinates leases.
+**Practice check.** For an Azure Cosmos DB for NoSQL consumer that needs delete events or intervening versions, evaluate all versions and deletes mode (preview). It requires continuous backup and retains changes within that backup window. A delete event identifies the deletion without returning the prior item body. Latest version mode serves workloads that need the latest available insert or update. [Change Feed Modes - Azure Cosmos DB | Microsoft Learn](https://learn.microsoft.com/en-us/azure/cosmos-db/change-feed-modes)
+
+Read the [change-feed mode matrix](https://learn.microsoft.com/en-us/azure/cosmos-db/change-feed-modes). Latest-version mode can start at the beginning but does not preserve every intermediate version or deleted item. All-versions-and-deletes mode (preview) requires continuous backup, has a bounded retention window and currently starts from now or a valid checkpoint, not an arbitrary historical timestamp. Select supported SDK/processor/pull APIs explicitly; pull mode leaves checkpointing and work distribution to your application, while the processor coordinates leases.
 
 [Container copy jobs](https://learn.microsoft.com/en-us/azure/cosmos-db/container-copy) remain preview. Online copy requires the documented backup/change-feed prerequisites and supported account/region configuration. Preconfigure the target's partition key, indexes and container TTL; copying items does not copy every container setting. The [completion procedure](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-container-copy) includes stopping source updates, allowing remaining changes to drain and completing the job. Reconcile content, deletes and original transactions before switching callers. A processed-event count is not a count of distinct matching items or proof of a safe cutover.
 
@@ -1069,6 +1073,8 @@ Use these to check your reasoning after attempting the questions.
 ---
 
 ## Places to learn
+
+**Suggested practice.** Follow one document from the source into the mirror and record where to verify replication status before a query on the mirrored data. About 25–45 minutes to map prerequisites, replication state and the analytical endpoint (editorial reading budget; deployment and data volume add time). [Tutorial: Configure Microsoft Fabric mirrored database for Azure Cosmos DB](https://learn.microsoft.com/en-us/fabric/mirroring/azure-cosmos-db-tutorial)
 
 ### October 28 learning route and evidence task
 

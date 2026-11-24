@@ -6,6 +6,8 @@ The internal `source-validated` state powers the repository workflow. On the pub
 
 The machine-readable evidence is in [`data/reviews.json`](https://github.com/cterpening/certification-study-library/blob/main/data/reviews.json). Repository validation recomputes blueprint hashes, exact source registration, and source-health counts so a stale review record fails the build. A separate human contributor review is still required before a guide can become **COMMUNITY REVIEWED**.
 
+The November 20 Microsoft refresh accepted current English outlines for AB-100, AI-200 and MS-721 and replaced unavailable learning references for AI-103, AI-300, AI-500, PL-400 and SC-500. These eight entries have new dated source records. Their guide-wide material-claim and link checks remain open. Earlier records retain their original results and objective hashes. The six packet reviews cover the November changes. [Microsoft refresh evidence](research/2026-11-20-microsoft-refresh.md)
+
 | PANW-CYBERSECURITY-APPRENTICE | October 29, 2026 | Seven foundational cybersecurity domains; May 2026 issuer datasheet; see group-15 report | 26 registered links: 23 reachable, 3 automation-blocked, 0 missing/error | Passed; human/product review pending |
 | PCAD-31-02 | October 29, 2026 | Five data-acquisition, programming/database, statistics, modeling and communication blocks; see group-15 report | 50 registered links: 48 reachable, 2 automation-blocked, 0 missing/error | Passed; human/product review pending |
 | PCAP-31-03 | October 29, 2026 | Five current 31-03 syllabus sections; 31-04 pending for Oct 31; see group-15 report | 33 registered links: 32 reachable, 1 automation-blocked, 0 missing/error | Passed; human/product review pending |

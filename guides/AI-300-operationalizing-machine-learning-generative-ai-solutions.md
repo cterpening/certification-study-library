@@ -5,15 +5,17 @@ official_blueprint: https://learn.microsoft.com/en-us/credentials/certifications
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: source-validated
-last_verified: 2026-10-28
+review_status: review-required
+last_verified: 2026-11-20
 upcoming_change_status: none-announced
 upcoming_change_checked: 2026-10-28
 ---
 
 # AI-300 Operationalizing Machine Learning and Generative AI Solutions Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-03.md#ai-300) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ai-300-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-300) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-02.md#ai-300)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-03.md#ai-300) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ai-300-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-300) is authoritative.
 
 **Current baseline:** The study-guide page shows last updated October 15, 2026; no separate skills-effective date is published. All 58 detailed objective wordings match the accepted baseline checked October 28, 2026. The credential page separately shows October 7; neither metadata date establishes a changed skills-effective baseline.<br>
 **Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
@@ -52,6 +54,8 @@ Retain resource/IaC version, Git commit, data/feature lineage, environment diges
 ---
 
 ## 1. Design and implement an MLOps infrastructure (15–20%)
+
+**Practice check.** An existing v1 workflow might still run after its support deadline. For maintained training exercises use Azure Machine Learning CLI and SDK v2. CLI v1 support ended September 30, 2025 and the documented SDK v1 support deadline was June 30, 2026. [SDK & CLI (v1) - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/en-us/azure/machine-learning/introduction?view=azureml-api-1)
 
 **Use the supported toolchain.** Azure ML CLI v1 support ended September 30, 2025; Python SDK v1 support ended June 30, 2026. Existing workflows can continue operating, but that does not restore support. Inventory `azure-cli-ml`/`azureml-core`, migrate to the `ml` extension/`azure-ai-ml`, and rebuild/test environments instead of mixing v1 and v2 examples. The legacy `azureml` name in a different package is not sufficient by itself to identify SDK v1. [SDK/CLI lifecycle](https://learn.microsoft.com/en-us/azure/machine-learning/introduction?view=azureml-api-1)
 
@@ -665,11 +669,13 @@ Execute the local gate with passing, failing, missing, duplicate, severe and mal
 
 ## Places to learn
 
+**Suggested practice.** Trace which repository supplies platform setup and which one owns workload code, then sketch how a model change reaches a deployment stage. About 20–35 minutes to read the repository guide and sketch a repository layout (editorial estimate). [README.md](https://github.com/Azure/mlops-v2/blob/main/documentation/structure/README.md)
+
 This is **not a complete list**, and it is not a recommendation to consume everything. Choose one primary path, build the labs and use targeted material for gaps. Times are published when available or labeled estimates. Avoid dumps and recalled/live exam questions.
 
 ### Focused reproducibility review
 
-Use the [MLOps accelerator structure](https://github.com/Azure/mlops-v2/blob/main/documentation/structure/README.md) and [Azure ML examples README](https://github.com/Azure/azureml-examples) to draw the inner-loop/outer-loop handoff for one model: data/version, environment, run, model registration, test evidence, deployment identity and rollback owner. Add a separate column for GenAIOps evidence still needed. Then inspect the [Foundry samples validation description](https://github.com/microsoft-foundry/foundry-samples) and distinguish build readiness from a sample's opt-in live-service validation. **About 90–150 minutes**, estimated for two short repository documents, the validation section and an original evidence map; sample setup/execution is additional and may cost money. **VERIFY CURRENT:** legacy SDK-v1 choices in accelerator documentation are historical context, not an instruction to use an unsupported SDK. No samples or pipelines were run in this review.
+Use the [MLOps accelerator structure](https://github.com/Azure/mlops-v2/blob/main/documentation/structure/README.md) and [Azure ML examples README](https://github.com/Azure/azureml-examples) to draw the inner-loop/outer-loop handoff for one model: data/version, environment, run, model registration, test evidence, deployment identity and rollback owner. Add a separate column for GenAIOps evidence still needed. For a Foundry evaluation, record the test dataset, evaluator and release threshold alongside evidence that the deployment builds. [Source notes and publisher link](../docs/research/2026-11-20-microsoft-refresh-group-02.md#ai-300).
 
 | Resource | Access | Estimated time | Best use |
 |---|---|---:|---|
@@ -678,7 +684,6 @@ Use the [MLOps accelerator structure](https://github.com/Azure/mlops-v2/blob/mai
 | [AI Skills Navigator Practice Assessment](https://aiskillsnavigator.microsoft.com/en-us/certifications/microsoft-certified-associate/machine-learning-operations-engineer) | Free account/sign-in | 45–90 min plus remediation (estimate) | Microsoft-linked diagnostic; sign-in shell only, no questions/results reviewed |
 | [Azure MLOps v2 solution accelerator](https://github.com/Azure/mlops-v2) | Public | 8–20 hours selectively (estimate) | Official reference architectures and automation; verify current SDK/IaC |
 | [Azure ML examples](https://github.com/Azure/azureml-examples) | Public | 10–30 hours selectively (estimate) | CLI/SDK jobs, pipelines and endpoints |
-| [Foundry samples](https://github.com/microsoft-foundry/foundry-samples) | Public | 8–20 hours selectively (estimate) | Official sample directory; inspect each sample and distinguish build checks from opt-in live validation |
 | [O'Reilly MLOps/LLMOps Bootcamp](https://www.oreilly.com/live-events/mlopsllmops-bootcamp/0642572182861/0642572243333/) | Paid live/subscription | Historical November 3–5, 2025 event; 10h metadata and agenda | Ammar Mohanna, two sessions; verify recording/new dates; broad lifecycle supplement |
 | [Udemy AI-300 MLOps & GenAIOps preparation](https://www.udemy.com/course/ai-300-mlops-genaiops-engineer-exam-preparation/) | Paid; price varies | 3h27, 11 lectures / one section (indexed public outline) | Aseem Mankotia, updated July 2026; 100-minute simulation differs from official 120-minute assessment |
 | [Udemy AI-300 practice tests](https://www.udemy.com/course/ai-300-operationalizing-ml-and-generative-ai-practice-tests/) | Paid; price varies | Five 150-question sets plus one 161-question set = 911; 12–25h review (estimate) | VARONTO Academy, updated June 2026; description still says 900, paid content/originality unverified |

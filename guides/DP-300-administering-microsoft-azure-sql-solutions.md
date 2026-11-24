@@ -13,7 +13,9 @@ upcoming_change_checked: 2026-10-28
 
 # DP-300 Administering Microsoft Azure SQL Solutions Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-01.md#dp-300) and the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-300-coverage-record). Known source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-06.md#dp-300)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-01.md#dp-300) and the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-300-coverage-record). Known source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300) is authoritative.
 
 **Current baseline:** Skills measured as of October 27, 2026.<br>
 **Blueprint reconciliation (October 28, 2026):** The October 27 English outline is now the accepted teaching baseline. Its Always Encrypted objective says secure enclaves rather than specifically VBS enclaves; domain weights are unchanged. Compare the enclave, attestation, driver and migration options supported by the actual SQL platform. Earlier April objective bytes and dated reviews remain archived. No later revision is announced on the checked official page.<br>
@@ -761,6 +763,8 @@ Back up to Azure Blob Storage using supported `BACKUP TO URL`, credential/manage
 
 #### Azure SQL Database and Managed Instance automated backup
 
+**Practice check.** On supported Azure SQL Database tiers and Managed Instance update policies, default immutability protects up to the latest seven days of point-in-time restore backups. SQL Database Hyperscale and Managed Instance on the SQL Server 2022 update policy are excluded. High volumes of Managed Instance management operations can also affect coverage. The optional retention-aligned lock is in preview and permanent. [Automatic backup immutability for Azure SQL Database and Azure SQL Managed Instance - Azure SQL | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-sql/automatic-backup-immutability?view=azuresql)
+
 Azure SQL creates automated backups for PITR according to platform. Restore produces a new database; account for name/server, tier, network, identity, jobs and application cutover. Configure short-term retention and backup storage redundancy. LTR copies selected full backups under weekly/monthly/yearly policy for longer retention and restores a new database.
 
 Do not memorize limits from an old course. As of validation, current docs describe SQL Database short-term retention up to 35 days for applicable tiers and LTR up to ten years, but exact tier/platform/immutability/API behavior is volatile. Verify [automated backups](https://learn.microsoft.com/en-us/azure/azure-sql/database/automated-backups-overview?view=azuresql) and [LTR](https://learn.microsoft.com/en-us/azure/azure-sql/database/long-term-retention-overview?view=azuresql) before design.
@@ -1041,6 +1045,8 @@ These are original reasoning checks based on public objectives, not recalled exa
 ---
 
 ## Places to learn
+
+**Suggested practice.** Use one database workload to identify which administrative tasks remain with the team on a SQL Server VM and which change for a managed Azure SQL service. 4 days of instructor-led training (publisher listing); provider scheduling and fees vary. [Implement scalable database solutions using Azure SQL](https://learn.microsoft.com/en-us/training/courses/dp-300t00)
 
 ### October 28 learning route and evidence task
 

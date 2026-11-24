@@ -7,16 +7,18 @@ generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
 last_verified: 2026-10-28
-upcoming_change_status: none-announced
-upcoming_change_checked: 2026-10-28
+upcoming_change_status: scheduled
+upcoming_change_checked: 2026-11-20
 ---
 
 # AB-731 AI Transformation Leader Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-03.md#ab-731) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-731-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-731) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-01.md#ab-731)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-03.md#ab-731) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-731-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-731) is authoritative.
 
 **Current baseline:** Skills measured as of July 22, 2026.<br>
-**Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
+**Upcoming English outline — January 11, 2027.** Use the current objective map for preparation before that date. Check the language and version for your appointment. The [November source notes](../docs/research/2026-11-20-microsoft-refresh-group-01.md#ab-731) identify the announced edition and its domain weights.<br>
 **Lifecycle:** The [AI Transformation Leader credential](https://learn.microsoft.com/en-us/credentials/certifications/ai-transformation-leader/) and 45-minute exam are active.<br>
 **Official source:** [AB-731 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-731)
 
@@ -329,6 +331,8 @@ Measure active use and repeat use, task completion, time to acceptable result, a
 
 ### Interpret adoption and impact measures honestly
 
+**Practice check.** The Copilot impact report aggregates active use, actions and assisted hours after the predefined Viva Insights query runs. Pair those usage measures with an independently measured business outcome, such as verified time per completed case, before attributing savings. [Microsoft Copilot impact report | Microsoft Learn](https://learn.microsoft.com/en-us/viva/insights/advanced/analyst/templates/microsoft-365-copilot-impact)
+
 The [AI adoption score](https://learn.microsoft.com/en-us/microsoft-365/admin/adoption/ai-adoption-score) measures usage habit across licensed users over the prior 28 days, using 12 active days as its full-score target. It is not a measure of saved money, output correctness or whether a particular employee performs well. Use role-appropriate aggregated analysis and investigate barriers rather than rewarding meaningless interactions.
 
 **Worked example 4 — keep the denominator.** Of 100 licensed users, 50 use Copilot on 12 days, 25 on six days and 25 on no days in the 28-day period. The average score in this example is **(50 × 100 + 25 × 50 + 25 × 0) / 100 = 62.5**. The share with any use is **75%**. Neither number tells you how many tasks were completed correctly. Reporting only the 75 active users hides unused license assignments and changes the denominator.
@@ -504,6 +508,8 @@ These are artifact-based learning labs. This review validated the worked arithme
 - [ ] I use assessments to find knowledge gaps, never to reproduce live exam content.
 
 ## Places to learn
+
+**Suggested practice.** Pick a business problem and define a baseline, outcome measure and owner before estimating return on investment. 3 minutes for the unit (publisher page). [Business strategy](https://learn.microsoft.com/en-us/training/modules/create-business-value/2-business-strategy)
 
 This is not a complete list and is not meant to be consumed in full. Choose one primary route, build the decision artifacts and labs, and add another resource only when it closes a measured gap.
 

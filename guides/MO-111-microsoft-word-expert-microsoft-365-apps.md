@@ -13,7 +13,9 @@ upcoming_change_checked: 2026-10-28
 
 # MO-111 Microsoft Word Expert (Microsoft 365 Apps) Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-05.md#mo-111) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mo-111-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/mos-word-expert-m365-apps/) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-06.md#mo-111)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-05.md#mo-111) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mo-111-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/mos-word-expert-m365-apps/) is authoritative.
 
 **Assessment contract:** 50-minute proctored practical assessment; about 150 hours of advanced hands-on use is Microsoft preparation guidance.<br>
 **Current scope:** document options/settings; advanced editing/formatting; custom elements; advanced Word features.<br>
@@ -188,9 +190,13 @@ These are proposed desktop exercises using synthetic records and disposable copi
 
 ## Places to learn
 
+**Suggested practice.** Import a synthetic postal-code column as text, check that a leading zero survives in Excel, then inspect the corresponding merged field in Word. About 20–35 minutes to prepare a synthetic CSV and inspect a short merged document in a compatible Word/Excel environment (editorial estimate). [Prepare your Excel data source for a Word mail merge](https://support.microsoft.com/en-us/word/prepare-your-excel-data-source-for-a-word-mail-merge)
+
 This is a selective learning path, not a complete list of Word Expert resources or a requirement to consume every item.
 
 ### Focused source-to-evidence route
+
+**Practice check.** For a personalized letter exercise, open the main document in desktop Word to edit the recipient settings, preview records and perform the merge. Word for the web preserves an existing desktop merge configuration when the file is opened there. [Use mail merge for bulk email, letters, labels, and envelopes | Microsoft Support](https://support.microsoft.com/en-us/word/use-mail-merge-for-bulk-email-letters-labels-and-envelopes)
 
 **A merge pack with edge cases — public task references; about 60–90 minutes.** Read [prepare the Excel source](https://support.microsoft.com/en-us/word/prepare-your-excel-data-source-for-a-word-mail-merge), [preview recipients](https://support.microsoft.com/en-us/word/mail-merge-preview-results) and the [mail-merge platform boundary](https://support.microsoft.com/en-us/word/use-mail-merge-for-bulk-email-letters-labels-and-envelopes). Create six synthetic recipients including a leading-zero postal code and a blank optional value. Deliver the source `.xlsx`, main `.docx`, a preview checklist and locally merged letters; do not send mail. Estimate basis: three short references plus original files and recipient-by-recipient inspection. Windows and Mac instructions differ; choose the matching desktop steps. Word for the web preserves existing merge settings but cannot perform or edit the merge. No visible article dates were established. Public text was reviewed October 28, 2026; no merge or paid lesson was executed.
 

@@ -7,16 +7,18 @@ generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: review-required
 last_verified: 2026-10-28
-upcoming_change_status: none-announced
-upcoming_change_checked: 2026-10-28
+upcoming_change_status: scheduled
+upcoming_change_checked: 2026-11-20
 ---
 
 # AB-410 Building Intelligent Applications Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-05.md#ab-410) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-410-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-410) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-01.md#ab-410)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-05.md#ab-410) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-410-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-410) is authoritative.
 
 **Current baseline:** Official study guide last updated October 16, 2026; Microsoft does not publish a separate skills-effective date on this blueprint. The 48 detailed objectives match the accepted objective wording.<br>
-**Upcoming blueprint change:** None announced on the official study guide as of October 28, 2026.<br>
+**Upcoming English outline — December 18, 2026.** Use the current objective map for preparation before that date. Check the language and version for your appointment. The [November source notes](../docs/research/2026-11-20-microsoft-refresh-group-01.md#ab-410) identify the announced edition and its domain weights.<br>
 **Lifecycle:** The 120-minute exam, currently listed in 13 languages, and [Intelligent Applications Builder Associate credential](https://learn.microsoft.com/en-us/credentials/certifications/intelligent-applications-builder-associate/) are active. The adjacent Power Platform Functional Consultant Associate credential [retired August 31, 2026](https://learn.microsoft.com/en-us/credentials/support/credential-retirement); Microsoft's [retired-course catalog](https://learn.microsoft.com/en-us/credentials/certifications/retired-courses) names AB-410T00 as the replacement for the retired PL-200T00 course, not as a one-to-one replacement statement for every PL-200 credential outcome.<br>
 **Official source:** [AB-410 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-410)
 
@@ -90,7 +92,7 @@ An environment separates apps, flows, connections, agents, and usually a Dataver
 - Use production for durable business workloads with operating ownership, security, capacity, backup, and release controls.
 - Treat trial as temporary and expiry-bound.
 - Treat the tenant default environment as broadly accessible personal productivity space, not the automatic home for a critical application.
-- For new Teams-integrated work, choose an appropriate full Dataverse environment and add the app to Teams. **VERIFY CURRENT — October 28, 2026:** the [Power Platform deprecation ledger](https://learn.microsoft.com/en-us/power-platform/important-changes-coming) ends creation of new Dataverse for Teams environments on **November 15, 2026**. Existing environments that remain unupgraded are suspended **September 15, 2027** and decommissioned **October 30, 2027**. Inventory existing apps/data and plan an upgrade or supported move, including capacity and user licensing, before the applicable cutoff.
+- Microsoft ended creation of new Dataverse for Teams environments November 15, 2026. For existing environments, the published schedule suspends those still awaiting upgrade on September 15, 2027 and decommissions them October 30, 2027. [Power Platform deprecation ledger](https://learn.microsoft.com/en-us/power-platform/important-changes-coming)
 
 Recommend the type together with region/data residency, security group, Dataverse requirement, capacity, licensing, DLP, managed-environment rules, backup/recovery, release ring, and maker/admin ownership. Environment roles do not automatically grant Dataverse data access; Dataverse security must be designed separately.
 
@@ -130,6 +132,8 @@ The [table authoring procedure](https://learn.microsoft.com/en-us/power-apps/mak
 Check schema and row access separately: a customizer can author metadata without access to every customer record. Evidence is the saved column types/properties, correct lookup cardinality and actual nonadministrator data access, not the diagram alone.
 
 ### Distinguish prompt columns, row summaries, and deterministic columns
+
+**Practice check.** A Dataverse prompt column persists its generated value. An architect evaluating retention or access should examine the stored row as well as the prompt invocation. Verify environment-level Copilot and AI Prompts settings and the applicable AI Builder licensing before designing the exercise. [Prompt columns in Microsoft Dataverse - Power Apps | Microsoft Learn](https://learn.microsoft.com/en-us/power-apps/maker/data-platform/prompt-column)
 
 A prompt column uses generative AI to produce content from its configured instructions and row context. A row summary produces an AI-generated summary of the record. Both are probabilistic: source data can be incomplete or malicious, output can be wrong, and behavior can change. Define what input is included, who may see the source and output, when generation occurs, how stale output is handled, and whether a user must verify it.
 
@@ -535,6 +539,8 @@ If an answer is only a feature name, deepen it: state the requirement, data, ide
 ---
 
 ## Places to learn
+
+**Suggested practice.** Choose a business process and use the process-mapping and component-selection units to justify where an agent, flow or user makes each decision. 33 minutes for the module (Microsoft Learn, 7 units). [Design AI-powered business solutions with Microsoft Power Platform](https://learn.microsoft.com/en-us/training/modules/design-ai-powered-solutions-power-platform/)
 
 This is a selective starting set, not a complete list and not a prescription to consume everything. Pick the explanation, demonstration, hands-on practice, and assessment style that works for you. Reconcile every exam-labeled resource with the current official blueprint before investing time or money; the October 16 page update does not publish a new skills-effective date.
 

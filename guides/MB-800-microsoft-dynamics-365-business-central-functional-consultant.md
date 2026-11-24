@@ -7,16 +7,18 @@ generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
 last_verified: 2026-10-28
-upcoming_change_status: none-announced
-upcoming_change_checked: 2026-10-28
+upcoming_change_status: scheduled
+upcoming_change_checked: 2026-11-20
 ---
 
 # MB-800 Microsoft Dynamics 365 Business Central Functional Consultant Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-04.md#mb-800) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mb-800-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-800) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-05.md#mb-800)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-04.md#mb-800) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mb-800-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-800) is authoritative.
 
 **Current baseline:** Skills measured as of June 30, 2026.<br>
-**Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
+**Upcoming English outline — December 18, 2026.** Use the current objective map for preparation before that date. Check the language and version for your appointment. The [November source notes](../docs/research/2026-11-20-microsoft-refresh-group-05.md#mb-800) identify the announced edition and its domain weights.<br>
 **Lifecycle:** The [Business Central Functional Consultant Associate credential](https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-functional-consultant-associate/) is active, renews every 12 months, and has no announced retirement. The exam is 100 minutes, is offered in eight languages, and has a free Practice Assessment.<br>
 **Recent blueprint change:** The June 2026 update removed the standalone integration objective, added Copilot and agent setup, substantially revised core setup/basic operations, increased operations weighting, and added inventory transactions. Older courses remain useful only after this gap check.<br>
 **Official source:** [MB-800 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-800)
@@ -105,6 +107,8 @@ Separate email review, draft review, vendor approval and posting. Finalizing a p
 The [Sales Order Agent](https://learn.microsoft.com/en-us/dynamics365/business-central/sales-order-agent) creates a quote first even when configured to proceed directly to an order. A quote does not reserve stock. Sender email identifies the contact; a forwarded message is matched using the forwarder's address, so a name in the body is insufficient. Use the supported one-time contact association for a forwarded request after verifying it. Review outgoing communications and the task timeline through [agent supervision](https://learn.microsoft.com/en-us/dynamics365/business-central/supervise-agent-tasks); document creation is not shipment, invoicing or cash settlement.
 
 ### Set up dimensions
+
+**Practice check.** To analyze sales by department and project, assign dimension values to the postings and use them as reporting filters. Reserve the two global dimension positions for frequent filters. Business Central provides up to eight shortcut dimensions for direct entry on journals and document lines. [Work with dimensions to track and analyze data - Business Central | Microsoft Learn](https://learn.microsoft.com/en-us/dynamics365/business-central/finance-dimensions)
 
 Dimensions classify entries for management reporting without multiplying G/L accounts. Define stable dimension/value codes and ownership. Global dimensions are highly integrated and costly to change; shortcut dimensions simplify entry but do not change the underlying dimension-set model. Default dimensions on G/L accounts, customers, vendors, items and other master data can enforce values or block combinations.
 
@@ -447,7 +451,7 @@ Use an isolated test company with synthetic data. These are proposed tenant labs
 
 - [Sumit Singh: Inventory Setup in Business Central](https://community.dynamics.com/blogs/post/?postid=7989aea7-627b-f011-b4cc-7c1e5248819c) provides prompts for an inventory-reconciliation worksheet. **Use it selectively:** its placement of Inventory Account (Interim) conflicts with the official setup documented above. Do not copy its account map or generic configuration defaults. Publication date was not independently established.
 - [Mike Morton: Sales Order Agent public-preview introduction](https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2025/04/03/sales-order-agent-in-microsoft-dynamics-365-business-central-now-in-public-preview/) (April 3, 2025) helps trace a request through review and document creation. Its preview status and defaults are historical; current setup/supervision docs govern the lab. The embedded video was not watched.
-- [Richard Riley: the AI at Work roadmap transition](https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/) (August 25, 2026) explains the September move of new release disclosures and planned November 15 Release Planner retirement. Use roadmap discoveries to select a current-documentation check; an announced feature is not evidence that it is enabled in your company.
+- [Richard Riley: the AI at Work roadmap transition](https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/) (August 25, 2026) explains the September move of new release disclosures. The former Release Planner address redirected to the Microsoft Copilot Roadmap on November 20, 2026. Use that destination for new disclosures and Learn product documentation to confirm supported behavior. Use roadmap discoveries to select a current-documentation check; an announced feature is not evidence that it is enabled in your company.
 
 For each article, write one requirement, one predicted ledger/document state, one negative case and the evidence that would prove the result. This makes optional reading useful without treating a blog as the exam blueprint.
 
@@ -467,6 +471,8 @@ For each article, write one requirement, one predicted ledger/document state, on
 The June 30, 2026 study guide defines exam scope. Microsoft Learn, product documentation and public course labs support behavior but may include adjacent features or localization-dependent steps. Commercial sources are optional supplements and never define the objective contract. All scenarios, labs and checks here are original; no dumps or recalled questions were used.
 
 ## Places to learn
+
+**Suggested practice.** Test sample purchase requests below and above an approval limit in a sandbox and record the resulting approval status for each. About 35–60 minutes to follow the setup, approval-user, notification and testing tasks with a prepared sandbox (editorial estimate). [Hands-on-Lab: Set up and use a purchase approval workflow](https://microsoftlearning.github.io/MB-800-Business-Central-Functional-Consultant/Instructions/Labs/Lab05_Set_up_and_use_a_purchase_approval_workflow.html)
 
 This is not a complete list and is not meant to be consumed in full. Choose one primary route, build one company from setup through close, and add a second resource only for a measured gap.
 

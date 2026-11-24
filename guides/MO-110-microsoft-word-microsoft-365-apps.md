@@ -13,7 +13,9 @@ upcoming_change_checked: 2026-10-28
 
 # MO-110 Microsoft Word Associate (Microsoft 365 Apps) Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-05.md#mo-110) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mo-110-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/mos-word-associate-m365-apps/) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-06.md#mo-110)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-05.md#mo-110) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mo-110-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/mos-word-associate-m365-apps/) is authoritative.
 
 **Assessment contract:** 50-minute proctored practical assessment. Microsoft recommends about 150 hours of instruction and hands-on use; that is preparation guidance, not a prerequisite.<br>
 **Current scope:** documents; text, paragraphs, and sections; tables and lists; references; graphics; collaboration.<br>
@@ -74,6 +76,8 @@ When inserting a special character, use the symbol dialog rather than a look-ali
 Columns flow within a section. A column break moves subsequent text to the next column; a page break moves it to a new page without creating independent section settings. Place section breaks before and after a landscape insert when the following pages must return to portrait. Check each section's header/footer linkage separately before editing its contents.
 
 ## 3. Tables and lists
+
+**Practice check.** For a long table, select the header rows including the first row and enable repetition. Verify the result across an automatic page break in Print Layout. A manual page break inside the table prevents the repeated header at that break. [Repeat table header on subsequent pages | Microsoft Support](https://support.microsoft.com/en-us/word/repeat-table-header-on-subsequent-pages) · [Update a table of contents | Microsoft Support](https://support.microsoft.com/en-us/word/update-a-table-of-contents)
 
 Create tables from scratch or delimited text; insert/delete rows and columns; merge/split cells; set alignment, margins, height, width, AutoFit, borders, shading, and repeating header rows. Sorting a table depends on the correct header and data type. Converting between text and a table depends on a delimiter that does not also occur inside the data.
 
@@ -176,6 +180,8 @@ Use synthetic text and local practice copies. These are proposed desktop exercis
 - I can finish a mixed task set inside 50 minutes with time to inspect the result.
 
 ## Places to learn
+
+**Suggested practice.** Rename a heading and add a page break to a sample document; compare both update choices against the same automatic table of contents. About 15–25 minutes to read the article and compare two revisions in a short document (editorial estimate). [Update a table of contents](https://support.microsoft.com/en-us/word/update-a-table-of-contents)
 
 This is a selective learning path, not a complete list of Word resources or a requirement to consume every item.
 

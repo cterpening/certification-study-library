@@ -13,7 +13,9 @@ upcoming_change_checked: 2026-10-28
 
 # SC-200 Microsoft Security Operations Analyst Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-02.md#sc-200) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sc-200-coverage-record). Source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-04.md#sc-200)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-02.md#sc-200) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sc-200-coverage-record). Source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200) is authoritative.
 
 **Current baseline:** Skills measured as of October 21, 2026.<br>
 **Exam state:** Active; the official credential page lists no retirement date.<br>
@@ -166,6 +168,8 @@ Keep the two runtime identities separate: Sentinel needs permission to invoke th
 ### Configure the Sentinel SIEM and platform
 
 #### Choose portal and workspace boundaries
+
+**Practice check.** A Defender portal deployment connects one Microsoft Entra tenant to a primary Sentinel workspace and can also connect secondary workspaces. When only one workspace exists, it becomes primary. Record the primary workspace before assigning connectors that depend on it. [Connect Microsoft Sentinel to the Microsoft Defender portal | Microsoft Learn](https://learn.microsoft.com/en-us/unified-secops/microsoft-sentinel-onboard)
 
 Sentinel is integrated into the Microsoft Defender portal for unified operations with Defender XDR. Know the current capability boundary and migration prerequisites. Microsoft has announced that [Sentinel support in the Azure portal ends after March 31, 2027](https://learn.microsoft.com/en-us/azure/sentinel/microsoft-sentinel-defender-portal), so prefer current Defender-portal workflows while recognizing that some configuration or edit experiences may still link to Azure.
 
@@ -786,6 +790,8 @@ These are original study questions, not recalled exam content.
 
 
 ## Places to learn
+
+**Suggested practice.** Use two small, synthetic event tables to reason through a time filter and join key; predict how repeating a key could inflate a result count. About 20–40 minutes to read the selected sections and produce the suggested comparison or checklist (editorial estimate; full path duration was not verified). [Create queries for Microsoft Sentinel using Kusto Query Language (KQL)](https://learn.microsoft.com/en-us/training/paths/sc-200-utilize-kql-for-azure-sentinel/)
 
 This is a curated starting point, not a complete list. Do **not** try to consume every resource. Pick a primary path that fits how you learn, use documentation and labs for weak areas, and use assessments to decide what to revisit. Verify every course against the October 21, 2026 blueprint—especially data-lake tiers/jobs, Sentinel Graph, agentic investigation, embedded Security Copilot, and Sentinel MCP Server.
 

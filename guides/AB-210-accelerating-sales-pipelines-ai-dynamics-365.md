@@ -7,17 +7,19 @@ generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: review-required
 last_verified: 2026-10-28
-upcoming_change_status: none-announced
-upcoming_change_checked: 2026-10-28
+upcoming_change_status: scheduled
+upcoming_change_checked: 2026-11-20
 ---
 
 # AB-210 Accelerating Sales Pipelines with AI in Dynamics 365 Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-01.md#ab-210) and the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-210-coverage-record). Known source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-210) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-01.md#ab-210)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-01.md#ab-210) and the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-210-coverage-record). Known source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-210) is authoritative.
 
 **Current baseline:** Official study guide last updated June 18, 2026; Microsoft publishes no separate skills-effective date.<br>
-**Upcoming blueprint change:** None announced, but the exam remains labeled **beta**; scope and product behavior may change before general availability.<br>
-**Lifecycle:** The [Dynamics 365 Sales AI Consultant Associate credential](https://learn.microsoft.com/en-us/credentials/certifications/d365-sales-ai-consultant-associate/) and 120-minute beta exam are active. As checked September 28, 2026, Microsoft lists English, Chinese (Simplified), French, German, Japanese, Portuguese (Brazil), and Spanish; verify languages during booking because the undated credential page can change. October 28 follow-up: the credential page still includes beta/delayed-results wording, but now advertises a Practice Assessment on AI Skills Navigator with sign-in. Availability and beta messaging are separate observations; no assessment was opened.<br>
+**Upcoming English outline — December 18, 2026.** Use the current objective map for preparation before that date. Check the language and version for your appointment. The [November source notes](../docs/research/2026-11-20-microsoft-refresh-group-01.md#ab-210) identify the announced edition and its domain weights.<br>
+**Lifecycle:** The [Dynamics 365 Sales AI Consultant Associate credential](https://learn.microsoft.com/en-us/credentials/certifications/d365-sales-ai-consultant-associate/) lists a 120-minute exam with scheduling and a delayed beta-scoring notice. General availability and score timing remain unconfirmed. As checked September 28, 2026, Microsoft lists English, Chinese (Simplified), French, German, Japanese, Portuguese (Brazil), and Spanish; verify languages during booking because the undated credential page can change. October 28 follow-up: the credential page still includes beta/delayed-results wording, but now advertises a Practice Assessment on AI Skills Navigator with sign-in. Availability and beta messaging are separate observations; no assessment was opened.<br>
 **Transition:** AB-210 replaced the retired MB-280 credential in [Microsoft partner skilling changes](https://learn.microsoft.com/en-us/partner-center/announcements/2026-july). This partner mapping does not make the objectives identical; use the AB-210 course and blueprint for its current scope.<br>
 **Official source:** [AB-210 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-210)
 
@@ -38,6 +40,8 @@ Build in a trial or nonproduction environment where licensing permits. Use synth
 > **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
 
 ### Living-guide watch — September 28, 2026
+
+**Practice check.** The published Sales Close Agent schedule stopped new instances on September 30 and set October 30, 2026 for removal of existing instances. For a new design, evaluate Sales Development agent and recheck its prerequisites. Rehearse legacy Close configuration only as a historical comparison. [Removed or deprecated features in Dynamics 365 Sales | Microsoft Learn](https://learn.microsoft.com/en-us/dynamics365/sales/deprecations-sales)
 
 The [current Sales agent roster](https://learn.microsoft.com/en-us/dynamics365/sales/ai-agent-overview) is useful for capability discovery but changes faster than the blueprint. Most importantly, Microsoft's [Sales deprecation ledger](https://learn.microsoft.com/en-us/dynamics365/sales/deprecations-sales) says new Sales Close Agent instances stop September 30, 2026 and existing instances are removed October 30, with Sales Development agent named as the migration path. Retain the Close Agent objectives for exam preparation. For a new implementation, evaluate the replacement and its separate prerequisites below; do not assume an automatic configuration or entitlement transfer.
 
@@ -225,7 +229,7 @@ The [current setup](https://learn.microsoft.com/en-us/dynamics365/sales/configur
 
 Assume **hypothetical measured** consumption of 12 credits per initial opportunity and 3 per refresh. An initial scope of 180 opportunities costs `180 × 12 = 2,160`; refreshing 60 opportunities four times adds `60 × 4 × 3 = 720`, for **2,880**. With 3,000 allocated and a 500-credit reserve, the usable budget is 2,500: the plan exceeds it by 380. Another agent consuming 250 raises combined usage to 3,130, exceeding total allocation by 130. Reduce scope/frequency or arrange capacity before expansion. These are sample assumptions, not Microsoft rates or a prediction of billing behavior.
 
-Configure the Sales Close Agent only after opportunity products/pricing, contact data, mailbox, policies and handoff are ready. Understand its actions rather than treating activity as success. Collaborating with the agent means reviewing status, accepting/correcting direction, handling exceptions and preserving accountable approval for commitments.
+As a historical blueprint exercise, map how product and pricing data, contacts, a mailbox, policies and handoff supported Sales Close Agent. For a new deployment evaluate the documented Sales Development agent path and its prerequisites.
 
 For the retiring product, learn the [manual setup](https://learn.microsoft.com/en-us/dynamics365/sales/configure-sales-close-agent) sequence: identity/mailbox, product details, target records, email delivery/content, knowledge, simulation, then activation. Its AI-assisted setup instructions are stale: the deprecation ledger removes that assistant after June 2026. The [processing description](https://learn.microsoft.com/en-us/dynamics365/sales/how-sales-close-agent-engage-mode-works) distinguishes an active/pending run, failure and completed engagement; a completed run is not independent proof of booked revenue. Inspect the record timeline and seller-escalation view. Follow-up behavior can close nonresponding deals as lost, so review it before authorizing a cohort. [Configuration edits](https://learn.microsoft.com/en-us/dynamics365/sales/manage-sales-close-agent) affect new processing and do not replay previously processed records.
 
@@ -319,7 +323,7 @@ Field sellers need mobile updates, Teams calls, quote approval and regional anal
 8. **Extension:** Design a flow, embedded Power Apps interaction and contextual Power BI report; add mobile/calling/SMS prerequisites and an ALM/security test plan.
 
 9. **Assignment and scoring:** Reproduce examples 2–3 offline, then in a permitted test environment inspect rule order, backlog behavior, seller schedules, excluded training records and delayed data arrival. Record actual eligibility rather than changing labels to meet a minimum.
-10. **Evaluation and transition:** Create the blog-derived assessment rubric, compare research-only handoffs with engage-mode gates, reconcile capacity/currency examples, and prepare a September/October Close Agent continuity plan. Keep the Opportunity custom-field contradiction as an unresolved acceptance item.
+10. **Evaluation and transition:** Create the blog-derived assessment rubric, compare research-only handoffs with engage-mode gates, reconcile capacity/currency examples, and review a continuity plan against the published September and October retirement milestones. Keep the Opportunity custom-field contradiction as an unresolved acceptance item.
 
 **Execution record:** This review checked the six synthetic examples and resource arithmetic offline. It did not configure a tenant, send email/SMS, place calls, train a model, run an agent or execute the ten infrastructure labs.
 
@@ -435,6 +439,8 @@ Field sellers need mobile updates, Teams calls, quote approval and regional anal
 - [ ] I use original practice and source review without seeking live exam content.
 
 ## Places to learn
+
+**Suggested practice.** Use the qualification module to write a sample handoff from automated lead research to a seller; identify which evidence warrants the handoff. About 20–40 minutes to read the selected sections and produce the suggested comparison or checklist (editorial estimate; full path duration was not verified). [Generate and qualify leads using AI in Dynamics 365 Sales](https://learn.microsoft.com/en-us/training/paths/generate-qualify-leads-ai-sales/)
 
 ### October 28 learning route and evidence task
 

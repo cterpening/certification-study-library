@@ -8,16 +8,18 @@ authority: unofficial
 review_status: review-required
 last_verified: 2026-10-28
 upcoming_change_status: retirement-announced
-upcoming_change_checked: 2026-10-28
+upcoming_change_checked: 2026-11-20
 ---
 
 # MS-102 Microsoft 365 Administrator Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-01.md#ms-102) and the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ms-102-coverage-record). Known source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-102) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-04.md#ms-102)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-01.md#ms-102) and the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ms-102-coverage-record). Known source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-102) is authoritative.
 
 **Current baseline:** Skills measured as of April 28, 2026.<br>
 **Retirement:** The exam and Microsoft 365 Certified: Administrator Expert certification retire November 30, 2026, at 11:59 PM Central Standard Time. They cannot be earned or renewed after that date.<br>
-**Replacement:** Microsoft had not named a direct replacement on the official blueprint, credential page, or retirement page as rechecked October 28, 2026. Do not infer one from a neighboring certification.<br>
+**Transition.** Microsoft pairs the retiring expert certification with AB-650, the Microsoft 365 and AI Services Administrator Associate credential. Partner Center names AB-650 for the Modern Work skilling metric. The expert and associate awards have different requirements. [November source notes](../docs/research/2026-11-20-microsoft-refresh-group-04.md#ms-102).<br>
 **Upcoming blueprint change:** Retirement is announced; no separate pre-retirement objective revision is announced.<br>
 **Practice Assessment:** A free Microsoft Practice Assessment is available.<br>
 **Official source:** [MS-102 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-102)
@@ -53,6 +55,8 @@ This credential also requires one qualifying associate certification: Endpoint A
 The [course retirement table](https://learn.microsoft.com/en-us/credentials/certifications/retired-courses) lists **AB-650T00** as the replacement for MS-102T00 training on November 30. A replacement course does not establish a direct replacement expert credential or waive the associate prerequisite. The credential page's empty training collection also does not invalidate the separately available five-day course and nine direct Learn paths below.
 
 ### Living-guide watch — September 28, 2026
+
+**Practice check.** For a hybrid identity maintenance plan, record both the installed Entra Connect Sync version and how the connector authenticates. Microsoft requires version 2.6.84.0 or later and application-based authentication by April 7, 2027. Verify both before declaring the migration complete. [Microsoft Entra Connect: Version release history - Microsoft Entra ID | Microsoft Learn](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/reference-connect-version-history) · [Authenticate to Microsoft Entra ID by Using Application Identity - Microsoft Entra ID | Microsoft Learn](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/authenticate-application-id)
 
 The November 30, 2026 retirement remains the controlling lifecycle fact. Before practicing hybrid identity, check the [Entra Connect version history](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/reference-connect-version-history), including the September 30, 2026 minimum-version enforcement boundary. Do not turn a current operational prerequisite into an invented blueprint revision.
 
@@ -153,7 +157,7 @@ A licensed group contains 50 direct users and a nested group with 20 additional 
 
 When moving between licensed groups, add the destination membership, wait for and verify successful license application, then remove the old membership. Group processing is asynchronous. Removing the source first can interrupt service.
 
-The [memberOf preview ends November 3, 2026](https://learn.microsoft.com/en-us/entra/identity/users/groups-dynamic-rule-member-of). Affected dynamic groups, dynamic administrative units and entitlement auto-assignment rules stop updating and retain their last state. Inventory the rules and downstream licensing/access dependencies; replace with supported attribute rules or assigned membership, then validate membership, delegation and access. This is not removal of all dynamic groups, and stale membership does not mean access was revoked.
+The original memberOf preview ended November 3. Dynamic groups, administrative units and entitlement auto-assignment policies still using that preview retain their last known state. For eligible groups, evaluate MemberOf Next (preview), which needs Microsoft Entra ID Governance and Standard priority and processes changes twice daily. Review other affected assignments separately and validate membership and effective access after migration. [memberOf preview ends November 3, 2026](https://learn.microsoft.com/en-us/entra/identity/users/groups-dynamic-rule-member-of)
 
 Bulk administration should be repeatable, scoped, logged, and idempotent. Prefer the current Microsoft Graph PowerShell SDK for new cross-service automation, request only required scopes, validate a small batch, record per-object results, and handle throttling and partial failures. The [Graph PowerShell overview](https://learn.microsoft.com/en-us/powershell/microsoftgraph/overview?view=graph-powershell-1.0) explains its authentication and command model. A successful command is not the same as successful service provisioning; query the resulting object and workload state.
 
@@ -522,7 +526,7 @@ These are original study questions, not recalled or reconstructed exam items. An
 ## Final readiness checklist
 
 - [ ] I checked the official MS-102 page for retirement, blueprint, prerequisite, language, and scheduling changes.
-- [ ] I understand that November 30, 2026 is the final earning and renewal date and that no direct replacement was officially named at this review.
+- [ ] I understand that November 30, 2026 is the final earning and renewal date and can distinguish AB-650 associate requirements from MS-102 expert requirements.
 - [ ] I can map every objective to its authoritative admin plane, least-privilege role, configuration, negative test, evidence, and rollback.
 - [ ] I can operate domains, organization settings, Service Health, network insights, Apps updates, usage, and Backup as one tenant lifecycle.
 - [ ] I can manage cloud, synchronized, and external users plus contacts, groups, shared mailboxes, licenses, and bulk changes.
@@ -537,6 +541,8 @@ These are original study questions, not recalled or reconstructed exam items. An
 - [ ] I passed an independent readiness check without relying on recalled live-exam content.
 
 ## Places to learn
+
+**Suggested practice.** Trace one identity from its authoritative source to Microsoft 365, then identify where a mistaken attribute should be corrected and where to verify synchronization. About 20–40 minutes to read the selected sections and produce the suggested comparison or checklist (editorial estimate; full path duration was not verified). [MS-102 Implement identity synchronization](https://learn.microsoft.com/en-us/training/paths/implement-identity-synchronization/)
 
 ### October 28 learning route and evidence task
 
@@ -553,7 +559,7 @@ This is a curated starting point, **not a complete list**. Do not try to consume
 | Reading | Learning task | Limits |
 |---|---|---|
 | [Microsoft 365 Backup granular restore now generally available](https://techcommunity.microsoft.com/blog/microsoft_365blog/microsoft-365-backup-granular-restore-now-generally-available/4515936), Microsoft author `diksha050`, April 29, 2026 | Spend an estimated 20–30 minutes comparing one damaged file with a compromised site: choose operation, point, destination and permission checks. | Main article reviewed. Its future in-place wording is historical; current restore instructions document that option. It does not promise the same recovery-point cadence for full and granular restore. |
-| [What's new in Microsoft Entra: September 2026](https://techcommunity.microsoft.com/blog/microsoft-entra-blog/what%E2%80%99s-new-in-microsoft-entra-september-2026/4545179), Yina Arenas, September 1, 2026 | Spend an estimated 20–30 minutes drawing `memberOf` dependencies from membership through licensing, delegated scope and CA. Plan migration and negative tests before November 3. | Main article reviewed; the linked product documentation confirms the retirement. Cloud-to-AD provisioning and MCP firewall are labelled preview in the article and remain adjacent context, not assumed blueprint additions or universal tenant availability. |
+| [What's new in Microsoft Entra: September 2026](https://techcommunity.microsoft.com/blog/microsoft-entra-blog/what%E2%80%99s-new-in-microsoft-entra-september-2026/4545179), Yina Arenas, September 1, 2026 | Spend an estimated 20–30 minutes drawing `memberOf` dependencies from membership through licensing, delegated scope and CA. For rules still frozen after November 3, choose a supported migration and validate both required and removed memberships. | Main article reviewed; the linked product documentation confirms the retirement. Cloud-to-AD provisioning and MCP firewall are labelled preview in the article and remain adjacent context, not assumed blueprint additions or universal tenant availability. |
 
 Public catalogs and module outlines were checked; paid lessons/questions and tenant demonstrations were not consumed. O'Reilly book/video and Udemy retrievals were blocked, so their historical dates and runtimes below are unverified current metadata. Partner and video-channel shells do not establish a current course schedule or content coverage.
 

@@ -13,6 +13,8 @@ upcoming_change_checked: 2026-10-28
 
 # AZ-800 Administering Windows Server Hybrid Core Infrastructure Study Guide
 
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-03.md#az-800)
+
 > **RETIRED — verified October 28, 2026.** Microsoft explicitly confirms that AZ-800 retired September 30, 2026, at 5:00 PM Central Standard Time. Use [AZ-802](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802) for current exam preparation. This guide preserves historical objectives and useful technical foundations; it is not an available booking route. Earlier technical evidence gaps and unexecuted labs remain.
 
 > **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The full guide, detailed objective mapping, citations and learning examples were reviewed on September 27, 2026. SSH Direct support evidence and conflicting Entra Conditional Access guidance remain unresolved; this is not a clean source-validation pass. See the [deep-review findings](../docs/research/2026-09-27-az-800-deep-review.md) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-800-coverage-record). The [official AZ-800 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-800) is authoritative.
@@ -26,6 +28,8 @@ upcoming_change_checked: 2026-10-28
 > **Living-guide watch — September 7, 2026:** Use [Windows Server release health](https://learn.microsoft.com/en-us/windows/release-health/) for servicing and known-issue decisions and [What's new in Windows Server 2025](https://learn.microsoft.com/en-us/windows-server/get-started/whats-new-windows-server-2025) as a feature-generation cross-check; neither changes the January 2026 exam blueprint by itself. SSH Direct remains a documented evidence gap rather than a reason to omit the objective. Microsoft confirms the Hyper-V/VSOCK transport and Microsoft-owned lab code demonstrates one older Debian composition. Ubuntu, Red Hat-family, SUSE/openSUSE, Oracle Linux, systemd, libvirt, Microsoft Press, and expert sources add useful version-specific evidence, cataloged in the [dated evidence review](../docs/SSH-DIRECT-EVIDENCE.md). They do **not** establish a universal support matrix. Learn the bounded model, record the distribution/version gaps, and validate only in an authorized disposable lab.
 
 ## October 28 implementation notes
+
+**Practice check.** Historical Windows Server note. On covered Windows Server 2025 devices with Credential Guard disabled and BlockNtlmv1SSO unset, the October 13, 2026 security update changed the implicit NTLMv1-derived SSO behavior from Audit to Enforce. Scope any legacy dependency review to that configuration. [Manage NTLMv1 changes and prevent network authentication issues in Windows | Microsoft Support](https://support.microsoft.com/en-us/servicing/os/windows/docs/2025/08/upcoming-changes-to-ntlmv1-in-windows-11-version-24h2-and-windows-server-2025)
 
 **Related item:** **Confirmed — VERIFY CURRENT (October 28, 2026).** On applicable Windows 11/Server 2025 systems with Credential Guard disabled, October 13 updates make an absent BlockNtlmv1SSO value enforce blocking of NTLMv1-derived SSO credentials. Check Wi-Fi/Ethernet/VPN MS-CHAPv2 dependencies and NTLM Operational events 4024/4025. An absent key no longer means audit-only, and manual credential entry may still work. Migrate toward supported certificate authentication; any temporary audit exception needs a scoped owner and removal date. [Windows message center](https://learn.microsoft.com/en-us/windows/release-health/windows-message-center) · [Manage NTLMv1 changes and prevent network authentication issues in Windows](https://support.microsoft.com/en-us/servicing/os/windows/docs/2025/08/upcoming-changes-to-ntlmv1-in-windows-11-version-24h2-and-windows-server-2025)
 
@@ -1029,6 +1033,8 @@ Start with a tabletop worksheet: list the initiating identity, target identity, 
 
 ## Places to learn
 
+**Suggested practice.** Use the AZ-802 syllabus to crosswalk current server administration topics against the historical AZ-800 guide before selecting a module. 5 days of instructor-led training (publisher listing); provider scheduling and fees vary. [Administer Windows Server](https://learn.microsoft.com/en-us/training/courses/az-802t00)
+
 ### October 28 learning-resource check
 
 Additional options and access updates; choose relevant resources rather than consuming every route. New course availability, class delivery and licensing are **VERIFY CURRENT**. Published days describe instructor-led scope, not measured self-study time.
@@ -1042,9 +1048,9 @@ This is **not a complete list**, and it is not a recommendation to consume every
 
 | Resource | Access | Estimated time |
 |---|---|---:|
-| [Official AZ-800 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-800) | Free; authoritative AZ-800 scope and retirement notice | 45–75 min initially; 10–15 min before exam |
+| [Official AZ-800 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-800) | Free; authoritative AZ-800 scope and retirement notice | 45–75 min initially; 10–15 min to compare with AZ-802 |
 | [AZ-802 replacement blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802) | Free; compare for the current single-exam path | 60–90 min for a scope diff |
-| [Microsoft Learn AZ-800 exam/training collection](https://learn.microsoft.com/en-us/credentials/certifications/exams/az-800/) | Free self-paced paths; official instructor-led AZ-800T00 duration is 4 days | Plan 35–55 hr self-paced with labs, or 4 instructor-led days plus review |
+| [Microsoft Learn AZ-800 exam/training collection](https://learn.microsoft.com/en-us/credentials/certifications/exams/az-800/) | Historical course listing. Use AZ-802 for current preparation | Former course length was four instructor-led days |
 | [Microsoft free AZ-800 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/exams/az-800/practice/assessment?assessment-type=practice&assessmentId=67) | Free; use explanations for remediation, not question memorization | 45–90 min per attempt; plan 3–5 hr with remediation |
 | [Official MicrosoftLearning AZ-800 lab instructions](https://microsoftlearning.github.io/AZ-800-Administering-Windows-Server-Hybrid-Core-Infrastructure/) | Free public hands-on course labs; Azure/VM costs may apply | Plan 15–25 hr including setup, evidence and cleanup |
 | [Microsoft Exam Readiness Zone AZ-800](https://learn.microsoft.com/en-us/shows/exam-readiness-zone/?terms=AZ-800) | Free objective-review videos; reconcile recording age with January 2026 scope | About 2–3 hr video; plan 3–5 hr with notes/diffs |

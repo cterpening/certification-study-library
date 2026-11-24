@@ -7,17 +7,19 @@ generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
 last_verified: 2026-10-28
-upcoming_change_status: none-announced
-upcoming_change_checked: 2026-10-28
+upcoming_change_status: retirement-announced
+upcoming_change_checked: 2026-11-20
 ---
 
 # AZ-400 Designing and Implementing Microsoft DevOps Solutions Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-03.md#az-400) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-400-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-400) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-03.md#az-400)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-03.md#az-400) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-400-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-400) is authoritative.
 
 **Current baseline:** Skills measured as of July 27, 2026<br>
 **Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
-**Certification lifecycle:** Active; no retirement or replacement is announced on the [official DevOps Engineer Expert credential page](https://learn.microsoft.com/en-us/credentials/certifications/devops-engineer/) as of September 28, 2026.<br>
+**Certification lifecycle.** AZ-400 and [DevOps Engineer Expert](https://learn.microsoft.com/en-us/credentials/certifications/devops-engineer/) retire February 1, 2027. Microsoft identifies AZ-401 as the successor route for the separate Agentic DevOps Engineer Expert award. Check its additional exam requirement. [November source notes](../docs/research/2026-11-20-microsoft-refresh-group-03.md#az-400).<br>
 **Credential prerequisite — checked October 28, 2026:** The [DevOps Engineer Expert profile](https://learn.microsoft.com/en-us/credentials/certifications/devops-engineer/) still accepts Azure Administrator Associate or Azure Developer Associate. [Azure Developer Associate and its renewal assessment are retired](https://learn.microsoft.com/en-us/credentials/certifications/azure-developer/), with July 31, 2026 recorded in the [retirement list](https://learn.microsoft.com/en-us/credentials/support/credential-retirement). New candidates can use the currently offered Azure Administrator Associate route; holders of an earlier Developer credential should verify its accepted status with Microsoft. Do not infer that an AI/cloud developer replacement is automatically an accepted prerequisite or that this retires AZ-400.
 **Official source:** [AZ-400 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-400)
 
@@ -365,6 +367,8 @@ Setting an Azure Pipelines [custom condition](https://learn.microsoft.com/en-us/
 Resource checks remain outside consuming YAML. In the current [approval/lock documentation](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/approvals?view=azure-devops), approvers are fixed when checks begin; a changed group/list is not dynamically substituted into that pending approval. An exclusive lock with `runLatest` differs from `sequential`: superseded waiting deployments versus every queued deployment in order. Choose deliberately for stateful migrations, and retain the identity/reason for any authorized check bypass.
 
 ### Worked YAML graph, tests and template boundary
+
+**Practice check.** For a pipeline that must block publication when tests fail or when the runner emits no results, make both outcomes explicit. PublishTestResults@2 has separate failTaskOnFailedTests and failTaskOnMissingResultsFile inputs and both default to false. [PublishTestResults@2 - Publish Test Results v2 task | Microsoft Learn](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/publish-test-results-v2?view=azure-pipelines)
 
 For a small GitHub-hosted .NET repository connected through an authorized Azure Pipelines GitHub connection, use branch/path PR and CI triggers appropriate to that source, choose an isolated agent pool and save the pipeline YAML in the repository. The following original **illustrative fragment** assumes tests already produce TRX and Cobertura files in the stated directories; it does not install an SDK, run a complete application build or deploy anything:
 
@@ -967,6 +971,8 @@ Use the promotion blog below as a design exercise. Replace its simulated validat
 ---
 
 ## Places to learn
+
+**Suggested practice.** Choose one supported language and map the source repository, YAML definition, task and resulting build log. About 20–40 minutes for one language-specific example and a pipeline run review, excluding queue and environment setup (editorial estimate). [Create your first pipeline](https://learn.microsoft.com/en-us/azure/devops/pipelines/create-first-pipeline?view=azure-devops)
 
 This is **not a complete list**, and it is not a recommendation to consume everything. Pick the resources and formats that fit you, and use the official July 27, 2026 objectives as the coverage checklist. Estimated times include reasonable note-taking or practice where stated and should be rechecked before purchase. Older material can still teach durable concepts, but reconcile every product screen, feature, identity method and objective against current documentation.
 

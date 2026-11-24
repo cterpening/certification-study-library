@@ -13,7 +13,9 @@ upcoming_change_checked: 2026-10-28
 
 # DP-600 Implementing Analytics Solutions Using Microsoft Fabric Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-01.md#dp-600) and the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-600-coverage-record). Known source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-600) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-06.md#dp-600)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-01.md#dp-600) and the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-600-coverage-record). Known source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-600) is authoritative.
 
 **Current baseline:** Skills measured as of October 19, 2026<br>
 **Blueprint reconciliation (October 28, 2026):** The October 19 English outline is now accepted. The revision capitalizes Visual query editor differently; domain weights and the other extracted objectives are unchanged. Earlier July bytes and dated reviews remain archived. No later revision is announced on the checked official page.<br>
@@ -69,6 +71,8 @@ Apply sensitivity labels to supported items to communicate and enforce informati
 > **Related item:** A semantic model can correctly enforce RLS while a user with direct lakehouse or warehouse access reads the underlying rows. Secure every path, including SQL, OneLake, Spark, XMLA, Analyze in Excel and export where applicable.
 
 ### Worked example — A narrow OneLake role does not remove a broad grant
+
+**Practice check.** When a Direct Lake connection has both SSO and a fixed identity, identify the operation being authorized. Queries check the current user while refresh framing and transcoding use the fixed identity. With SSO disabled the fixed identity determines source access at query time too. [Integrate Direct Lake Security - Microsoft Fabric | Microsoft Learn](https://learn.microsoft.com/en-us/fabric/fundamentals/direct-lake-security-integration)
 
 A manager belongs to an East-only role but also qualifies for the lakehouse's `DefaultReader` role through `ReadAll`. The narrow role does not cancel the broader grant. [OneLake roles](https://learn.microsoft.com/en-us/fabric/onelake/security/data-access-control-model) grant access; they are not deny rules. Inspect direct, group and virtual membership before changing a role. Follow the [role-management guidance](https://learn.microsoft.com/en-us/fabric/onelake/security/create-manage-roles) to remove the unwanted broad access, then retest as the manager. Workspace Admin, Member and Contributor access is broader still.
 
@@ -402,6 +406,8 @@ Compare KQL ingestion, Eventhouse OneLake availability, model framing and report
 - I can explain additive OneLake grants, unenforced Warehouse keys, model framing, cache evidence and the cloud/gateway driver distinction.
 
 ## Places to learn
+
+**Suggested practice.** Build an access matrix for the two users before comparing what each can see at workspace, item and data level. About 45 minutes for the exercise (publisher estimate); provisioning or setup can add time. [Secure data access in Microsoft Fabric](https://microsoftlearning.github.io/mslearn-fabric/Instructions/Labs/19-secure-data-access.html)
 
 ### October 28 learning route and evidence task
 

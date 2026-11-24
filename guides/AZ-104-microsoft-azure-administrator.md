@@ -13,10 +13,14 @@ upcoming_change_checked: 2026-10-28
 
 # AZ-104 Microsoft Azure Administrator Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-03.md#az-104) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-104-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-03.md#az-104)
+
+**English outline comparison, November 20, 2026.** The current page displays the October 26, 2023 edition. The library retains the later April 17, 2026 outline and its 82 tasks. Practice blob and container soft delete separately from Azure Files recovery. Distinguish VM encryption at host from legacy Azure Disk Encryption. [Compared editions](../docs/research/2026-11-20-microsoft-refresh-group-03.md#az-104).
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-03.md#az-104) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-104-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104) is authoritative.
 
 **Current baseline:** Skills measured as of April 17, 2026<br>
-**Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
+**Version check.** Microsoft provides no confirmed delivery transition date to explain the older edition currently displayed.<br>
 **Official source:** [AZ-104 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104)
 
 The September 28 [deep review](../docs/research/2026-09-28-az-104-deep-review.md) maps all **82 detailed objectives in 15 groups**. This edition has seven worked examples, ten labs and 48 explained original checks. The calculations were verified locally; no tenant, cloud resource, deployment, paid lesson or practice assessment was exercised.
@@ -182,6 +186,8 @@ Storage access options include Microsoft Entra authorization with Azure RBAC, ac
 Regenerate keys deliberately: identify every consumer, move consumers to the alternate key, rotate the old key, and verify. Rotating a key invalidates SAS tokens signed with that key.
 
 #### Identity-based Azure Files access
+
+**Practice check.** For an application running on a VM that reads an SMB Azure file share, identify the VM's managed identity and authorize it to the share. The same storage account can support end-user identities. The two principals authenticate independently, so success as one does not validate the other's permissions. [Use Managed Identities with Azure Files | Microsoft Learn](https://learn.microsoft.com/en-us/azure/storage/files/files-managed-identities)
 
 [Azure Files SMB identity authentication](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-active-directory-overview) needs a supported identity source, share-level permissions, file/directory permissions, a prepared client and network/DNS reachability. The user identity sources are AD DS, Microsoft Entra Domain Services and Microsoft Entra Kerberos; select one per storage account. Client/identity support differs, including preview combinations. This SMB design is not NFS identity authorization. A successful mount or a share role alone does not prove access to every file. Diagnose ticket acquisition, share permissions and directory ACLs separately.
 
@@ -751,6 +757,8 @@ You are approaching readiness when you can:
 ---
 
 ## Places to learn
+
+**Suggested practice.** Predict how a tagging policy treats a resource at the assignment scope, then distinguish an existing-resource check from the result of a new deployment. About 30 minutes for the exercise (publisher estimate); provisioning or setup can add time. [Lab 02b - Manage Governance via Azure Policy](https://microsoftlearning.github.io/AZ-104-MicrosoftAzureAdministrator/Instructions/Labs/LAB_02b-Manage_Governance_via_Azure_Policy.html)
 
 This is a curated starting set, not a complete list. Do **not** consume every resource. Pick one structured spine, use documentation for weak objectives, do the labs, and add one assessment source. Time estimates are planning ranges, not guarantees; playback speed, prior experience, exercises, lab cleanup, and vendor changes matter. Verify the current blueprint before buying or starting a course.
 

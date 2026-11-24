@@ -13,7 +13,9 @@ upcoming_change_checked: 2026-10-28
 
 # AZ-120 Planning and Administering Microsoft Azure for SAP Workloads Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-05.md#az-120) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-120-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-120) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-03.md#az-120)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-05.md#az-120) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-120-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-120) is authoritative.
 
 **Current baseline:** Skills measured as of April 17, 2026<br>
 **Upcoming blueprint change:** None announced on the official study guide as of October 28, 2026.<br>
@@ -538,6 +540,8 @@ Archiving and HANA data aging can reduce hot working-set and premium-storage dem
 
 ### Start, stop and landscape automation
 
+**Practice check.** If a design uses SAP Landscape Management to relocate or clone an SAP system on Azure, verify that the estate runs LaMa Enterprise Edition. The connector supplies the VM and managed disk operations used in that workflow. [Set up the SAP LaMa connector for Azure | Microsoft Learn](https://learn.microsoft.com/en-us/azure/sap/workloads/lama-installation)
+
 Start and stop in dependency order. A simplified stop sequence moves from entry points and jobs through application servers and central services to the database; start usually reverses it, with validation gates. Actual sequences depend on the SAP design.
 
 [SAP LaMa’s Azure connector](https://learn.microsoft.com/en-us/azure/sap/workloads/lama-installation) can use an Azure service principal or managed identity to manage permitted resources. Prefer managed identities when supported, constrain RBAC scope, protect against concurrent automation and test storage-tier or VM lifecycle actions.
@@ -867,6 +871,8 @@ Answer in your own words before opening the answers.
 ---
 
 ## Places to learn
+
+**Suggested practice.** Draw which zone hosts deployment infrastructure and which hosts SAP workloads, then annotate the required identities and network links. About 25–40 minutes to diagram the zones and their dependencies before deployment (editorial estimate). [Deploy SAP Deployment Automation Framework for enterprise scale](https://learn.microsoft.com/en-us/azure/sap/automation/tutorial)
 
 This is **not a complete list**, and it is not a recommendation to consume everything. Pick the combination that fits how you learn and use the official April 17, 2026 objective list as the coverage checklist. Time estimates are planning ranges, not vendor promises; pause-and-practice time is included where useful. Verify subscription access, course freshness and exact duration before purchase.
 

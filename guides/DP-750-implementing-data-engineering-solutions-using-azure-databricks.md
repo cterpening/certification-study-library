@@ -13,7 +13,11 @@ upcoming_change_checked: 2026-10-28
 
 # DP-750 Implementing Data Engineering Solutions Using Azure Databricks Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-01.md#dp-750) and the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-750-coverage-record). Known source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-750) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-02.md#dp-750)
+
+**English outline comparison, November 20, 2026.** The current page displays March 11, while the accepted October 19 outline names Declarative Automation Bundles. Both have 77 tasks and four domains with the same weights. Practice deploying a bundle with the CLI under either name. Explain how deletion vectors mark rows logically before physical files are rewritten. [Compared editions](../docs/research/2026-11-20-microsoft-refresh-group-02.md#dp-750).
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-01.md#dp-750) and the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-750-coverage-record). Known source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-750) is authoritative.
 
 **Current baseline:** Skills measured as of October 19, 2026. The March teaching snapshot is preserved in the objective archive.<br>
 **Blueprint reconciliation (October 28, 2026):** The accepted English revision uses Declarative Automation Bundles and Databricks CLI terminology, and removes deletion vectors from the clustering-strategy objective. Domain weights are unchanged. Deletion vectors remain useful technical context, not a clustering strategy. No later revision is announced on the checked official page.<br>
@@ -21,6 +25,8 @@ upcoming_change_checked: 2026-10-28
 **Exam page:** [Azure Databricks Data Engineer Associate](https://learn.microsoft.com/en-us/credentials/certifications/implementing-data-engineering-solutions-using-azure-databricks/) · 120-minute assessment · ten listed languages: English, Japanese, Simplified and Traditional Chinese, Korean, German, French, Italian, Brazilian Portuguese and Spanish. Recheck language-specific revision timing when booking.<br>
 **Official course:** [DP-750T00 Implement data engineering solutions using Azure Databricks](https://learn.microsoft.com/en-us/training/courses/dp-750t00) · four instructor-led days.<br>
 **Practice:** Microsoft’s Practice Assessment is on [AI Skills Navigator](https://aiskillsnavigator.microsoft.com/en-us/certifications/microsoft-certified-associate/azure-databricks-data-engineer); sign-in is required to launch it.
+
+**Practice check.** On November 9 Microsoft documented Auto as the new UI default for newly created jobs compute. It usually chooses Standard. Machine learning runtimes, GPU instances, and runtimes below 14.3 are exceptions, and an enforced cluster policy takes precedence. Existing jobs keep their settings. Microsoft scheduled the compliance security profile rollout for December. [Source notes and publisher link](../docs/research/2026-11-20-microsoft-refresh-group-02.md#dp-750)
 
 ## How to use this guide
 
@@ -953,6 +959,8 @@ These are original prompts, not recalled exam questions. Answer with decision, d
 
 ## Places to learn
 
+**Suggested practice.** Separate the notebook test result, the bundle validation and the deployment plan into three distinct pieces of release evidence. About 35–60 minutes for the notebook and bundle walkthrough on paper (editorial estimate); setup and deployment add time. [Lab 12: Implement Development Lifecycle Processes in Azure Databricks](https://microsoftlearning.github.io/DP-750T00-Implement-Data-Engineering-Solutions-using-Azure-Databricks/Instructions/Labs/12-implement-development-lifecycle-processes-in-azure-databricks.html)
+
 ### October 28 learning route and evidence task
 
 The [official DP-750 exercises](https://microsoftlearning.github.io/DP-750T00-Implement-Data-Engineering-Solutions-using-Azure-Databricks/) now list setup, 13 numbered labs and cleanup, with **9 hours 20 minutes** in summed publisher estimates. They assume a Premium workspace and real compute; public instructions do not include cloud credits. [Lab 12: development lifecycle](https://microsoftlearning.github.io/DP-750T00-Implement-Data-Engineering-Solutions-using-Azure-Databricks/Instructions/Labs/12-implement-development-lifecycle-processes-in-azure-databricks.html) has a 45-minute index estimate and separates notebook tests from the local PowerShell CLI. Its deployment uses placeholder notebooks, so successful resource creation alone does not validate the transformation. Allow extra time for setup, current CLI compatibility and independent tests.
@@ -961,7 +969,7 @@ The [official DP-750 exercises](https://microsoftlearning.github.io/DP-750T00-Im
 
 **Answer checkpoint:** A valid bundle and a job with the expected task graph prove configuration/deployment state. They do not prove that placeholder code performs the required transformation or that production permissions and data contracts work.
 
-This is **not a complete list**, and it is not a recommendation to consume everything. Pick a current primary path, build the labs, and use targeted references/practice for gaps. Times are page-published when available; otherwise they are clearly labeled estimates. Catalogs, access, duration, price and alignment change. DP-750 is new enough that several vendors had no dedicated current course on the pages found; broad Databricks material must be mapped to the current October 19 outline; March-only coverage remains historical. Avoid dumps or anything claiming real exam questions.
+This is **not a complete list**, and it is not a recommendation to consume everything. Pick a current primary path, build the labs, and use targeted references/practice for gaps. Times are page-published when available; otherwise they are clearly labeled estimates. Catalogs, access, duration, price and alignment change. DP-750 is new enough that several vendors had no dedicated current course on the pages found; broad Databricks material must be mapped to the retained October 19 outline and the March edition currently shown by Microsoft. Avoid dumps or anything claiming real exam questions.
 
 ### Start with Microsoft and Databricks
 

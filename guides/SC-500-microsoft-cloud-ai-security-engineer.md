@@ -6,14 +6,16 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: review-required
-last_verified: 2026-10-28
+last_verified: 2026-11-20
 upcoming_change_status: none-announced
 upcoming_change_checked: 2026-10-28
 ---
 
 # SC-500 Microsoft Cloud and AI Security Engineer Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-04.md#sc-500) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sc-500-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-500) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-04.md#sc-500)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-04.md#sc-500) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sc-500-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-500) is authoritative.
 
 **Current baseline:** The official study-guide page was last updated May 13, 2026; Microsoft publishes no separate skills-effective date on that page.<br>
 **Exam state:** Active and no longer labeled beta; the credential page lists no retirement date.<br>
@@ -282,6 +284,8 @@ API Management policies can validate JWTs, restrict IPs, check headers, transfor
 
 ### Turn Defender for Cloud findings into controlled remediation
 
+**Practice check.** For a multicloud assessment, match each workload to a named Defender plan. Microsoft's matrix lists Defender for Servers and Defender for Containers as generally available on AWS and GCP. Azure-specific products such as Defender for Key Vault have separate coverage rows. [Microsoft Defender for Cloud multicloud support matrix - Microsoft Defender for Cloud | Microsoft Learn](https://learn.microsoft.com/en-us/azure/defender-for-cloud/multicloud-support-matrix)
+
 Foundational CSPM provides core posture features such as recommendations and secure score; paid Defender CSPM adds advanced capabilities such as attack-path analysis, Cloud Security Explorer, governance, and data/AI posture features. Cloud workload protection plans detect and protect specific workload types. Turning on Defender CSPM does not turn on every workload plan, and a workload plan does not repair poor configuration.
 
 Use a risk workflow:
@@ -351,7 +355,7 @@ The [Defender for Cloud release notes](https://learn.microsoft.com/en-us/azure/d
 | October 28, 2026 source recheck | The current release-note body no longer includes the earlier October 27 Foundational CSPM opt-in announcement | **Unconfirmed — validation needed:** recheck actual onboarding and current Microsoft guidance. An omitted announcement does not prove either rollout or cancellation. |
 | October 20, 2026, public preview | Cloud security plan management in the Defender portal for Azure commercial environments | The notice describes Defender-owned configuration, Azure view-only configuration and DWU-based billing for migrated subscriptions; verify the actual migration state before changing plans. |
 | October 5, 2026, GA notice | KSPM recommendations move from running-container scope to workload-controller scope | Reconcile changed recommendation populations and Secure Score impact before interpreting a count change as remediation. |
-| November 1, 2026, announced | Defender for Servers billing classification and identification change | **VERIFY CURRENT:** distinguish Plan 1 desktop-device treatment from Plan 1/2 server-count identification; billing classification alone does not establish supported OS or licensing eligibility. |
+| November 1, 2026 | Defender for Servers billing | Effective November 1, 2026, Defender for Servers Plan 1 excludes productivity and desktop client devices from server billing. Plans 1 and 2 apply the updated mechanism for identifying billable servers. Confirm billing counts against usage and configuration separately from OS eligibility. |
 | December 14, 2026, announced | The grouped vulnerability-assessment-solution recommendation is scheduled for removal | Use individual coverage recommendations and verify automation before the date. |
 | August 16, 2027, announced | Classic Defender for SQL VA/ATP APIs retire | Inventory dependent scripts and plan migration; this does not mean SQL threat protection ends. |
 
@@ -564,6 +568,8 @@ These 48 original questions include answers for self-review; they are not recall
 
 ## Places to learn
 
+**Suggested practice.** Separate the Defender setting from the Power Platform administrator’s task and identify the status that would show the connection succeeded. 7 minutes for the unit (publisher page). [Enable protection in Microsoft Defender](https://learn.microsoft.com/en-us/training/modules/enable-protection-copilot-studio-agents/3-enable-protection-microsoft-defender)
+
 This is a curated starting point, **not a complete list**. Do not try to consume every item. Pick the format and depth that work for you, use the official blueprint as the coverage checklist, and spend at least as much effort on implementation and negative testing as on passive watching. Provider runtimes and catalogs change; estimates below use public listings checked September 28, 2026 and include notes where exact current duration was unavailable.
 
 ### Focused reading and evidence route
@@ -584,7 +590,7 @@ The twelve current official paths are [secure Entra access](https://learn.micros
 | [Udemy SC-500 + AZ-500 course by Alan Rodrigues](https://www.udemy.com/course/exam-azure-2/) | Paid | Public indexed listing: 36h35, 11 sections/460 lectures, September 2026 update; direct fetch blocked, paid coverage unverified |
 | [Udemy SC-500/AZ-500 hands-on course by John Christopher](https://www.udemy.com/course/az-500-microsoft-azure-security-technologies-with-sims/) | Paid | Public indexed listing: 18h31, 17 sections/151 lectures, August 2026; direct fetch blocked, verify current AI/Agent coverage |
 | [Udemy SC-500 practice tests by Scott Duffy and Jordi Koenderink](https://www.udemy.com/course/sc500-tests/) | Paid | Planning estimate: 3–6 hours; public indexed listing shows four tests of 25 questions, August 2026. Direct fetch blocked; questions not accessed |
-| [Pluralsight AZ-500 path](https://www.pluralsight.com/paths/az-500-microsoft-azure-security-technologies) | Paid/trial | Public listing: six course entries 46h27 (including 12h31 practice entry) plus five labs 3h30 = 49h57; rounded header 50h. Retired AZ-500 foundation only |
+| Microsoft Learn, Implement security for AI | Public, nine modules | Allow 20–40 minutes for a selected module and this exercise (editorial estimate). Map an agent identity and its allowed operations to an AI workload protection or monitoring control. [Source notes and publisher link](../docs/research/2026-11-20-microsoft-refresh-group-04.md#sc-500). |
 | [O’Reilly/Pearson AZ-500 video by Tim Warner](https://www.oreilly.com/library/view/exam-az-500-microsoft/9780137702039/) | Paid | Previously listed 8h34/January 2022; direct fetch blocked and current metadata unverified. Legacy foundation only |
 | [John Savill AZ-500 Study Cram](https://www.youtube.com/watch?v=6vISzj-z8k4) | Public | Previously listed 2h54; current fetch is a shell and video was not watched. Older Azure-security foundation only |
 | [Microsoft Reactor channel](https://www.youtube.com/@MicrosoftReactor) | Public | 2–8 hours selectively for current Azure security, Defender, Sentinel, and AI sessions; no exact SC-500 path confirmed |

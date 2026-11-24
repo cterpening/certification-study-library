@@ -7,17 +7,19 @@ generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
 last_verified: 2026-10-28
-upcoming_change_status: none-announced
-upcoming_change_checked: 2026-10-28
+upcoming_change_status: retirement-announced
+upcoming_change_checked: 2026-11-20
 ---
 
 # MB-330 Microsoft Dynamics 365 Supply Chain Management Functional Consultant Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-02.md#mb-330) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mb-330-coverage-record). Source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-330) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-05.md#mb-330)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-02.md#mb-330) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mb-330-coverage-record). Source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-330) is authoritative.
 
 **Current baseline:** Skills measured as of October 21, 2026.<br>
 **Blueprint reconciliation (October 28, 2026):** The October 21, 2026 English outline is the accepted current scope. The current exact outline is mapped to the teaching, including Planning Optimization. The earlier June snapshot used condensed manual wording; a larger extracted bullet count does not by itself prove every bullet is a newly added capability. Domain weights remain unchanged. Historical objective bytes and dated reviews are preserved. Recheck localized appointment timing separately.<br>
-**Lifecycle:** The [Dynamics 365 Supply Chain Management Functional Consultant Associate credential](https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-supply-chain-management/) is active. The exam is 100 minutes, offered in English and Japanese, has no announced retirement date, and offers a free Practice Assessment.<br>
+**Lifecycle.** The [Dynamics 365 Supply Chain Management Functional Consultant Associate credential](https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-supply-chain-management/) and MB-330 retire February 1, 2027. The successor, AB-330, currently has its own beta outline and scheduling. [November source notes](../docs/research/2026-11-20-microsoft-refresh-group-05.md#mb-330).<br>
 **Freshness note:** The current October 21 outline governs preparation; June 2025 scope and earlier appointment guidance are historical. Recheck current Planning Optimization, warehouse mobile, Copilot and product-specific behavior independently of the exam-date change.<br>
 **Official source:** [MB-330 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-330)
 
@@ -206,6 +208,8 @@ Mobile-device menu items define tasks and work-creation behavior; menus expose t
 Test scanning, GS1 parsing, wrong item/location/license plate, short pick, damaged stock, offline/network interruption, duplicate submit and session recovery. A clean desktop transaction is not evidence the handheld flow works on the warehouse floor.
 
 ### Keep mobile identity and software support current
+
+**Practice check.** The November 9 Warehouse Management mobile app release 4.2.3.0 fixed Android shared-device sign-out so a new worker is not automatically signed in as the previous worker. In a device-handoff exercise, capture the installed build and verify the second worker's identity. [What's new or changed in the Warehouse Management mobile app - Supply Chain Management | Dynamics 365 | Microsoft Learn](https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-app-whats-new)
 
 Use current [installation and connection guidance](https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/install-configure-warehouse-management-app) and the [user-based authentication FAQ](https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-app-user-based-auth-faq). Microsoft recommends the interactive username/password authentication option; it is not an instruction to embed passwords in connection JSON. Microsoft-managed app registration can avoid a custom registration in the supported flow. Service-based authentication for this mobile app is deprecated. Device-code flow remains available for existing deployments but is not the recommended default; do not weaken tenant security to make an older tutorial work.
 
@@ -418,6 +422,8 @@ These ten labs require an appropriate nonproduction environment and permissions.
 The June 20, 2025 snapshot is historical; the current October 21 outline is accepted after full mapping. Earlier future-scope work is preserved in the [deep-review record](../docs/research/2026-09-27-mb-330-deep-review.md). Microsoft Learn paths, product docs and MIT-licensed course labs support behavior but may include adjacent content or UI drift. Commercial assessment/training is optional and never defines scope. All questions here are original and conceptual; no exam dumps or recalled items were used.
 
 ## Places to learn
+
+**Suggested practice.** Use one receipt to trace where warehouse setup gives way to inbound work and connect that work to the later outbound process. About 20–40 minutes to read the selected sections and produce the suggested comparison or checklist (editorial estimate; full path duration was not verified). [Configure and work with warehouse management in Dynamics 365 Supply Chain Management](https://learn.microsoft.com/en-us/training/paths/configure-work-warehouse-management-dyn365-supply-chain-mgmt/)
 
 This is not a complete list and is not meant to be consumed in full. Choose one primary route, build complete product-to-plan and order-to-warehouse journeys, and add another resource only for a measured gap.
 

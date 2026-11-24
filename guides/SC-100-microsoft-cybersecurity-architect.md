@@ -13,7 +13,9 @@ upcoming_change_checked: 2026-10-28
 
 # SC-100 Microsoft Cybersecurity Architect Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-02.md#sc-100) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sc-100-coverage-record). Source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-100) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-04.md#sc-100)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-02.md#sc-100) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sc-100-coverage-record). Source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-100) is authoritative.
 
 **Current baseline:** Skills measured as of October 21, 2026.<br>
 **Exam state:** Active; the official exam page lists no retirement date.<br>
@@ -332,6 +334,8 @@ Current [CIEM guidance](https://learn.microsoft.com/en-us/azure/defender-for-clo
 > **Related item:** Attack-surface reduction usually means changing exposure or behavior at an endpoint/workload. Attack-path management reasons across relationships. EASM finds externally observable assets. These are related but not synonyms.
 
 ### Specify server, client, mobile, IoT, and OT controls
+
+**Practice check.** In an IoT architecture inventory, distinguish the legacy agent under IoT Hub from the later Defender for IoT micro agent. Microsoft's support page lists June 1, 2027 as the planned retirement of the micro agent. Review device dependencies and support dates for the specific component. [Microsoft Defender for IoT Feature Support and Retirement - Microsoft Defender for IoT | Microsoft Learn](https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/edge-security-module-deprecation)
 
 For servers and clients, set platform-specific baselines for supported OS, secure boot/hardware trust, encryption, local firewall, endpoint detection/protection, application control, vulnerability/configuration management, patching, logging, identity, remote administration, and recovery. Manage drift and explicitly retire unsupported systems.
 
@@ -660,6 +664,8 @@ These are original study questions, not recalled exam content.
 
 
 ## Places to learn
+
+**Suggested practice.** For one workload, map a design decision to a framework principle and a measurable recovery objective, then explain what evidence would support it. About 20–40 minutes to read the selected sections and produce the suggested comparison or checklist (editorial estimate; full path duration was not verified). [Design solutions that align with security best practices and priorities](https://learn.microsoft.com/en-us/training/paths/sc-100-design-solutions-best-practices-priorities/)
 
 This is a curated starting point, not a complete list. Do **not** try to consume every resource. Pick a primary path that fits how you learn, use documentation and labs for weak areas, and use assessments to decide what to revisit. Verify every course against the October 21, 2026 blueprint—especially AI security, Entra Agent ID, Exposure Management, Copilot, and current SSE objectives.
 

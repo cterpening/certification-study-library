@@ -13,6 +13,8 @@ upcoming_change_checked: 2026-10-28
 
 # AZ-801 Configuring Windows Server Hybrid Advanced Services Study Guide
 
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-03.md#az-801)
+
 > **RETIRED — verified October 28, 2026.** Microsoft explicitly confirms that AZ-801 retired September 30, 2026, at 5:00 PM Central Standard Time. Use [AZ-802](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802) for current exam preparation. This guide preserves historical objectives and useful technical foundations; it is not an available booking route. Earlier technical evidence gaps and unexecuted labs remain.
 
 > **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The full guide, all 115 detailed objectives, citations and learning examples were reviewed on September 27, 2026. This does not establish live lab execution or guarantee future currency. See the [deep-review findings](../docs/research/2026-09-27-az-801-deep-review.md) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-801-coverage-record). The [official AZ-801 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-801) is authoritative.
@@ -878,6 +880,8 @@ Azure Monitor metric alerts evaluate numeric platform or custom metrics. Log sea
 
 #### VM Insights
 
+**Practice check.** Historical monitoring note. Microsoft schedules VM Insights Map and its Dependency Agent to retire June 30, 2028. Identify process and connection visualizations that rely on that agent separately from the rest of VM monitoring. [VM Insights Map and Dependency Agent retirement guidance - Azure Monitor | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/vminsights-maps-retirement)
+
 VM Insights provides curated performance views for Azure VMs and Arc-enabled servers. Its performance monitoring uses AMA and is not affected by the retirement of the separate **VM Insights Map** experience and **Dependency Agent**. Microsoft says those two deprecated components retire and become unsupported after June 30, 2028; new OS/region support stopped June 30, 2025, portal onboarding stopped September 30, 2025, and Microsoft recommends offboarding rather than deploying them to new systems. If process or connection dependency data is required, evaluate a current replacement and preserve old tables only under the workspace retention policy. Enable the necessary agents/DCRs/workspace configuration, verify data collection, and use supported workbooks, platform metrics, and guest logs. Distinguish:
 
 - Azure resource is running;
@@ -1291,6 +1295,8 @@ You are ready to move from broad review to targeted remediation when you can do 
 
 ## Places to learn
 
+**Suggested practice.** Draw the source and target of replication and identify a setting or observation needed to verify protection before discussing failover. About 25–45 minutes to identify source, target and verification steps without enabling replication (editorial estimate). [Tutorial: Set up disaster recovery for Azure VMs](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-tutorial-enable-replication)
+
 ### October 28 learning-resource check
 
 Additional options and access updates; choose relevant resources rather than consuming every route. New course availability, class delivery and licensing are **VERIFY CURRENT**. Published days describe instructor-led scope, not measured self-study time.
@@ -1309,9 +1315,9 @@ Time estimates below describe content consumption, not total preparation. Add la
 | Resource | Access | Estimated time | Best use |
 |---|---|---:|---|
 | [Official AZ-801 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-801) | Free | 30–60 min to map; revisit weekly | Authoritative scope, weights, objective checklist, retirement status |
-| [AZ-801T00 self-directed learning and course](https://learn.microsoft.com/en-us/training/courses/az-801t00) | Self-directed modules free; instructor-led varies | Microsoft lists 4 instructor-led days; estimate 30–45 hours self-paced with exercises | Structured first pass across all five domains |
+| [AZ-801T00 self-directed learning and course](https://learn.microsoft.com/en-us/training/courses/az-801t00) | Archived course URL now leads to the training catalog | Former course length was four days | Use the AZ-802 route for current preparation |
 | [MicrosoftLearning AZ-801 labs](https://microsoftlearning.github.io/AZ-801-Configuring-Windows-Server-Hybrid-Advanced-Services/) | Public; infrastructure may cost | Estimate 12–20 hours for seven labs plus setup/cleanup | Guided implementation and troubleshooting practice |
-| [Microsoft Learn practice assessments](https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications) | Free; sign-in may be required | 1–2 hours per attempt plus remediation | Baseline and later diagnostic assessment; Microsoft lists AZ-801 as available |
+| [Microsoft Learn practice assessments](https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications) | Free; sign-in may be required | 1–2 hours per attempt plus remediation | Baseline and later diagnostic assessment; current AZ-801 practice access unverified |
 | [Exam Readiness Zone AZ-801 search](https://learn.microsoft.com/en-us/shows/exam-readiness-zone/?terms=AZ-801) | Free | Estimate 2–4 hours, depending on available sessions | Objective review; confirm recording date against current baseline |
 
 ### Courses, books, and practice providers

@@ -13,12 +13,16 @@ upcoming_change_checked: 2026-10-28
 
 # MO-210 Microsoft Excel Associate (Microsoft 365 Apps) Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-05.md#mo-210) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mo-210-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-associate-m365-apps/) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-06.md#mo-210)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-05.md#mo-210) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mo-210-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-associate-m365-apps/) is authoritative.
 
 **Assessment contract:** 50-minute proctored practical assessment; about 150 hours of instruction and hands-on use is Microsoft preparation guidance, not a prerequisite.<br>
 **Current scope:** workbooks and worksheets; cells and ranges; tables; formulas and functions; charts.<br>
 **Change watch:** No retirement or replacement is listed on the credential page, checked October 28, 2026. Current [Microsoft policy](https://learn.microsoft.com/en-us/credentials/support/credential-expiration-policy) gives MOS a five-year lifetime; check your earned credential's dates.<br>
 **Detailed coverage:** The [officially linked PDF](https://arch-center.azureedge.net/Learning/Credentials/microsoft-certified-security-operations-analyst-skills-measured.pdf) currently contains the MO-210 outline despite its misleading filename. All 65 tasks are mapped in the [review report](../docs/research/2026-09-28-mo-210-deep-review.md); the automatic page monitor compares five broad domains. No Excel desktop lab was executed during this review.
+
+**Practice check.** For a sales table that grows weekly, refer to the table and its named columns. Insert a row and verify that the reference covers the added data. A calculated column can fill its formula down the table while adjusting each row's reference. [Using structured references with Excel tables | Microsoft Support](https://support.microsoft.com/en-us/excel/using-structured-references-with-excel-tables)
 
 ## How to use this guide
 
@@ -182,6 +186,8 @@ Use synthetic data and preserve inputs. Expected results below are proposed desk
 - I complete a mixed practical set inside 50 minutes and reconcile the result.
 
 ## Places to learn
+
+**Suggested practice.** Use a synthetic identifier beginning with zeros and a separate long identifier; compare the imported value, visible format and exported text. About 15–30 minutes to compare an import as text with display-only formatting and inspect the underlying values (editorial estimate). [Keeping leading zeros and large numbers](https://support.microsoft.com/en-us/excel/keeping-leading-zeros-and-large-numbers)
 
 This is a selective learning path, not a complete list of Excel resources or a requirement to consume every item.
 

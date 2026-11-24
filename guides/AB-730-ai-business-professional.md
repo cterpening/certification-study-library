@@ -13,6 +13,8 @@ upcoming_change_checked: 2026-10-28
 
 # AB-730 AI Business Professional Study Guide
 
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-01.md#ab-730)
+
 
 > **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 refresh maps all 41 detailed objectives in the October 20, 2026 English outline. See the [current deep-review evidence](../docs/research/2026-10-28-microsoft-wave1-deep-review.md#ab-730) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-730-coverage-record). Microsoft's [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-730) is authoritative. Live product labs and human review remain pending; public-source review does not guarantee correctness.
 
@@ -328,6 +330,8 @@ The October blueprint explicitly requires filtering chats by agent. Practice fin
 
 ### Choose a skill, then supervise the deliverable
 
+**Practice check.** In the documented worldwide Cowork experience, custom instructions apply across tasks. Put recurring preferences there and put the specific deliverable, source and deadline in the individual task. The Plugins page groups skills and plugins for review. [Customize Copilot Cowork | Microsoft Learn](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-customize)
+
 A skill supplies reusable task instructions; a connector supplies access to a data service; a plugin can package both. These are different from a schedule that decides when work starts. Begin with an appropriate built-in skill. Use a custom skill for a repeated process with specific outputs, boundaries and review steps.
 
 In [Cowork Customize](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-customize), inspect the skill's source and instructions, create or edit it, then test in a new conversation. Shared updates require Re-share. Only import trusted material. The operating guide describes automated skill evaluation, while the [application card](https://learn.microsoft.com/en-us/microsoft-365/copilot/responsible-ai/copilot-cowork-application-card) warns that user-authored skills are not Microsoft-validated: a quality score is not certification that your business process is correct. Test missing inputs, wrong recipients and malicious source instructions.
@@ -523,6 +527,8 @@ Both public article texts were read. Marketing performance claims, videos, custo
 ---
 
 ## Places to learn
+
+**Suggested practice.** Take a multi-step request and identify one point to review the plan and one external action requiring approval; inspect the usage unit before trying the workflow in a tenant. 67 minutes for the module (Microsoft Learn, 10 units). [Get more done with Copilot Cowork](https://learn.microsoft.com/en-us/training/modules/delegate-work-copilot-cowork/)
 
 This is a selective starting set, not a complete list and not a requirement to consume everything. Pick the explanation, hands-on practice, and assessment style that works for you, and map each resource to the blueprint effective for your appointment. Selected public course/path listings were rechecked October 28; unchanged older observations remain dated below. Public landing-page access does not establish access to paid lessons or assessment questions.
 

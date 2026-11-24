@@ -13,7 +13,9 @@ upcoming_change_checked: 2026-10-28
 
 # SC-300 Microsoft Identity and Access Administrator Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-02.md#sc-300) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sc-300-coverage-record). Source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-300) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-04.md#sc-300)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-02.md#sc-300) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sc-300-coverage-record). Source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-300) is authoritative.
 
 **Current baseline:** Skills measured as of October 28, 2026.<br>
 **Exam state:** Active; the official credential page lists no retirement date.<br>
@@ -142,7 +144,7 @@ Choose groups by workload and authorization behavior. Security groups govern acc
 
 [Role-assignable groups](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/groups-concept) must be created with the immutable role-assignable setting; an existing group cannot be converted. They use assigned membership and have stronger membership/credential administration controls. Keep these distinct from ordinary PIM-enabled groups, which do not all need to be role-assignable.
 
-Audit [memberOf-based rules before November 3](https://learn.microsoft.com/en-us/entra/identity/users/groups-dynamic-rule-member-of). Affected dynamic groups, dynamic AUs and entitlement auto-assignment policies stop updating and keep their last state. Replace them with supported rules or explicit assignment, then test membership and downstream authorization; frozen membership can preserve excessive access.
+The original memberOf preview ended November 3. Dynamic groups, administrative units and entitlement auto-assignment policies still using that preview retain their last known state. For eligible groups, evaluate MemberOf Next (preview), which needs Microsoft Entra ID Governance and Standard priority and processes changes twice daily. Review other affected assignments separately and validate membership and effective access after migration. [memberOf-based rules before November 3](https://learn.microsoft.com/en-us/entra/identity/users/groups-dynamic-rule-member-of)
 
 Custom security attributes are typed, tenant-defined key/value data assigned to supported Entra objects. Their attribute-definition and attribute-assignment roles are deliberately separate, and their values can support filtering or attribute-based access scenarios. They are not the same as directory extensions or dynamic-group attributes. Define an owner, allowed values, sensitivity, deactivation/change procedure, and permitted consumers before using them. Microsoft's [custom-security-attributes overview](https://learn.microsoft.com/en-us/entra/fundamentals/custom-security-attributes-overview) explains the separate definition and assignment control planes.
 
@@ -193,9 +195,9 @@ Connect Health and synchronization/provisioning logs reveal agent health, export
 
 ### Current hybrid maintenance boundaries
 
-[Connect Sync and Health hardening](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/security-updates-pks) requires Connect Sync **2.5.79.0 or later by September 30**, with a separate Health-agent minimum **4.5.2466.0**. Old Sync versions lose synchronization; old Health agents lose specified alerts. Neither absence of alerts nor a green agent proves every object is synchronized.
+The Connect hardening guidance lists Connect Sync 2.6.84.0 or later. Connect Health agents for Sync, AD DS and AD FS have their own minimum of 4.5.2466.0. Microsoft also requires application-based authentication for Connect Sync by April 7, 2027. Verify version, authentication and synchronization health independently. [Connect Sync and Health hardening](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/security-updates-pks)
 
-The [current release history](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/reference-connect-version-history) lists 2.6.92.0 (September 23), fixing PTA registration in 2.6.91.0; the minimum 2.5.79.0 reaches its listed support end on October 23. Download through the Entra admin center and validate staging, compatibility, app-scoped CA and rollback. Minimum enforcement and supported release selection are separate decisions.
+The prior 2.5.79.0 release reached its support end October 23. Version 2.6.92.0 fixes the 2.6.91.0 PTA-agent registration issue. Use release history and the Entra admin-center download to select a supported build, then validate staging and rollback. [current release history](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/reference-connect-version-history)
 
 [Application authentication](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/authenticate-application-id) also has its own lifecycle: new installations configure it; existing legacy-account servers are not automatically converted by background sync. Managed certificates depend on the Connect scheduler for rotation; BYOC makes the operator responsible for certificates, while BYOA adds app/permission ownership. Verify configured app ID, certificate expiry, key protection, scheduler and rotation rather than inferring success from a version number.
 
@@ -274,6 +276,8 @@ Device-enforced restrictions depend on the consuming application and device sign
 > **Related item:** Conditional Access is a policy engine after first-factor authentication, not a firewall and not an entitlement system. It cannot repair excessive app permissions, stale group membership, or an unauthenticated network path by itself.
 
 ### Manage identity risk and registration
+
+**Practice check.** Create separate Conditional Access policies for user risk and sign-in risk. When a policy expects self-remediation, verify the user has registered the required authentication method. For hybrid password changes, verify password writeback before enforcement. [Risk policies - Microsoft Entra ID Protection | Microsoft Learn](https://learn.microsoft.com/en-us/entra/id-protection/howto-identity-protection-configure-risk-policies)
 
 Microsoft Entra ID Protection produces risk detections and calculates sign-in risk (likelihood this authentication is not legitimate) and user risk (likelihood the identity is compromised). Workload identity risk covers service principals. Use risk-based Conditional Access for user self-remediation where appropriate, and investigate the underlying detections, sign-in context, device, application, and correlated security evidence.
 
@@ -724,6 +728,8 @@ You are close to ready when you can:
 - score consistently on the official Practice Assessment while explaining every incorrect option from current documentation.
 
 ## Places to learn
+
+**Suggested practice.** Follow an access grant from request to periodic review and removal, naming the owner and evidence for each stage. About 20–40 minutes to read the selected sections and produce the suggested comparison or checklist (editorial estimate; full path duration was not verified). [Plan and implement an identity governance strategy](https://learn.microsoft.com/en-us/training/paths/plan-implement-identity-governance-strategy/)
 
 This is a curated list, not a complete list. Do **not** try to consume every resource. Pick the format that works for you, use the official blueprint and documentation to resolve disagreements, and spend substantial time practicing. Commercial durations and catalogs can change; estimates below are planning aids, not promises.
 

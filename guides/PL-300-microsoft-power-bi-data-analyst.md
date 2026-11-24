@@ -13,7 +13,9 @@ upcoming_change_checked: 2026-10-28
 
 # PL-300 Microsoft Power BI Data Analyst Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-04.md#pl-300) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#pl-300-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-05.md#pl-300)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-04.md#pl-300) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#pl-300-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300) is authoritative.
 
 **Current baseline:** Skills measured as of April 20, 2026<br>
 **Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
@@ -39,7 +41,7 @@ Microsoft's [AI at Work roadmap transition](https://www.microsoft.com/en-us/dyna
 
 Independent Power BI books, courses, blogs, and videos in Places to learn remain useful for DAX and modeling explanations. Validate screenshots, licensing, Copilot features, and service limits; durable star-schema, filter-context, reconciliation, accessibility, and least-privilege reasoning should survive those changes.
 
-The [latest published Power BI feature summary](https://learn.microsoft.com/en-us/power-bi/fundamentals/whats-new) observed in this review is August 2026. It includes Fluent 2 visual defaults/Theme pane GA and new refresh controls. It also announces that, starting in October, Desktop versions from March 2026 or earlier lose the old OneDrive/SharePoint save/share experience. Update and test that route; this notice is not retirement of local PBIX authoring.
+The [November 2026 Power BI feature summary](https://learn.microsoft.com/en-us/power-bi/fundamentals/whats-new) lists OneDrive and SharePoint integration in Power BI Desktop as generally available. Check the Desktop build and test opening, saving and sharing through the location your team uses. Local PBIX authoring is a separate workflow.
 
 **Q&A timeline correction:** Microsoft's [September retirement update](https://community.fabric.microsoft.com/blog/fbc_pbiupdatesblog/power-bi-qa-retirement-reminder-february-2027-timeline-update/5365841) moves retirement to **February 2027**. The [current Q&A limitations](https://learn.microsoft.com/en-us/power-bi/natural-language/q-and-a-limitations) agree; the older [Q&A visual page](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-q-and-a) still says December 2026. Inventory old labs and reports, and test alternatives. Copilot requires supported paid capacity and has no announced direct replacement for embedded Q&A PaaS or sovereign-cloud availability. The April blueprint does not name Q&A configuration as a subobjective.
 
@@ -127,6 +129,8 @@ A role-playing dimension supplies multiple roles such as Order Date, Ship Date, 
 [RLS propagates only through active relationships](https://learn.microsoft.com/en-us/power-bi/guidance/relationships-active-inactive); invoking an inactive relationship in a calculation does not turn on an RLS path through it. When both date roles need secured filtering, evaluate separate active role-playing dimensions. A correct Ship Date total alone is not a security test.
 
 ### Put each calculation in the right layer
+
+**Practice check.** For a running total that belongs to one chart, consider a visual calculation over that visual's aggregated data. For a calculation that multiple visuals must reuse with their own filter contexts, define a measure in the semantic model. [Visual calculations overview - Power BI | Microsoft Learn](https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-visual-calculations-overview) · [Use Calculation Options in Power BI Desktop - Power BI | Microsoft Learn](https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-calculations-options)
 
 [Power BI calculation options](https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-calculations-options) differ in timing, storage, context, and reuse:
 
@@ -402,6 +406,8 @@ Use an appropriate test workspace to compare a visual, export, dashboard alert a
 - I can prove source reconciliation, totals, refresh, performance, and allowed/denied user behavior before release.
 
 ## Places to learn
+
+**Suggested practice.** Build a small matrix comparison on paper, then predict how changing the axis or fiscal-year reset affects a running total. About 30 minutes for the exercise (publisher estimate); provisioning or setup can add time. [Create visual calculations in Power BI Desktop](https://microsoftlearning.github.io/PL-300-Microsoft-Power-BI-Data-Analyst/Instructions/Labs/07-create-visual-calculations.html)
 
 This is a curated starting point, **not a complete list**, and it is not meant to be consumed in full. Choose one primary course or path, build an end-to-end report, and add only resources that close measured gaps. Reconcile every resource with the April 20, 2026 blueprint, especially Direct Lake, calculation groups, DAX query view, Copilot, visual calculations, current usability controls, and workspace/asset changes.
 

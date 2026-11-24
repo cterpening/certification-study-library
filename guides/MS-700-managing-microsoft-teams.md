@@ -13,7 +13,9 @@ upcoming_change_checked: 2026-10-28
 
 # MS-700 Managing Microsoft Teams Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-02.md#ms-700) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ms-700-coverage-record). Source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-700) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-04.md#ms-700)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-02.md#ms-700) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ms-700-coverage-record). Source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-700) is authoritative.
 
 **Current baseline:** Skills measured as of October 27, 2026.<br>
 **Blueprint reconciliation (October 28, 2026):** The October 27, 2026 English outline is the accepted current scope. The revision uses Teams Network planner, Teams Advisor and Teams admin center naming. These changes do not create a new weighted domain. Historical objective bytes and dated reviews are preserved. Recheck localized appointment timing separately.<br>
@@ -159,6 +161,8 @@ Teams/channel policies govern who can create private/shared channels and share e
 
 ### Teams apps and extensibility
 
+**Practice check.** For a Teams channel that receives application notifications, create a Workflows webhook and assign a co-owner. Connector-based Incoming Webhooks retired in May 2026, and a workflow belongs to its owners even when it posts to a team channel. [Webhooks and connectors - Teams | Microsoft Learn](https://learn.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/what-are-webhooks-and-connectors)
+
 The app lifecycle is **discover/purchase → allow/block and permission/consent review → assignment/availability → setup/pin → use/monitor → update/respond/retire**. Org-wide app settings establish broad behavior; [app-centric management](https://learn.microsoft.com/en-us/microsoftteams/app-centric-management) replaces deprecated app permission policies as tenants migrate and determines who can use an app; setup policies install/pin supported apps. Blocking an app and removing OAuth consent are separate actions. [Migration checks](https://learn.microsoft.com/en-us/microsoftteams/pre-and-post-migration) should compare exported before/after user availability; migration does not change existing Graph consent. [App administration](https://learn.microsoft.com/en-us/microsoftteams/manage-apps) requires settings in both Teams and Microsoft 365 admin centers to agree until unified management is enabled.
 
 **Worked example 3 — Check the audience, not the icon.** After migration, app X displays Unblocked but Available to **No one**. An installed/pinned X remains unavailable. App Y is assigned to 12 named employees and a group of 8, with 3 overlapping employees: the intended distinct audience is **17**. Reconcile actual availability against those 17; do not count assignment rows as users. Selected-user/group availability excludes guests even if assigned. Nested groups supported for app availability must not be confused with ordinary Teams group-policy inheritance.
@@ -175,7 +179,7 @@ Choose extension point from interaction:
 
 Legacy Office 365 connector webhooks reached their final disablement rollout May 18–22, 2026, according to the updated developer blog below. Use supported Workflows or app notification patterns. [Workflow ownership guidance](https://learn.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/what-are-webhooks-and-connectors) ties flows to users, not channels: provide co-owners, maintain connection authentication, and test owner departure.
 
-**Open source conflict:** The April 14 blog update says private-channel Workflows webhook support is available, while the platform overview still describes private-channel Flow bot support as under development. Record the cloud, posting identity, entry point and actual result before promising private-channel delivery. Shared-channel support does not resolve this conflict.
+Both the Teams platform reference and the April retirement update document private-channel Workflows webhooks. The current reference lists setup through the Power Automate portal or the Teams Workflows app. Record the selected posting identity, permissions and delivery result for the channel being tested.
 
 > **Related item:** A Teams app can be allowed by Teams policy yet fail because Entra consent, license, Conditional Access, resource permission or downstream service is missing.
 
@@ -344,7 +348,7 @@ Use a controlled test call/meeting and CQD/Call Analytics/client evidence. Intro
 
 ### Lab 9 — App and connector migration
 
-Build a before/after audience matrix using example 3. Design a nonproduction Workflow notification with a co-owner, a replaced connection and both valid/invalid payload tests. Verify MessageCard content separately from interactive Adaptive Card actions. For private channels, record the unresolved documentation conflict and test the precise supported cloud/identity path before adoption. **Evidence:** intended versus effective audience, consent inventory, ownership continuity, posting results and rollback.
+Build a before/after audience matrix using example 3. Design a nonproduction Workflow notification with a co-owner, a replaced connection and both valid/invalid payload tests. Verify MessageCard content separately from interactive Adaptive Card actions. For the private channel, record the setup entry point, posting identity, permissions and observed delivery result.
 
 ### Lab 10 — VDI and room authentication transition
 
@@ -402,7 +406,7 @@ Inventory endpoint OS, provider/plugin, Teams build and actual optimization stat
 41. **Does Copilot policy Disabled enforce an unchangeable ban?** No; it sets an organizer-editable default.
 42. **What fails in the 160-second callback example?** The sample completes at 165 seconds, beyond queue timeout.
 43. **Can presenter telemetry prove every event attendee received good media?** No; attendee delivery requires separate evidence.
-44. **Can the private-channel webhook conflict be closed by an HTTP 200 source fetch?** No; confirm current supported cloud, posting identity and an actual scoped delivery result.
+44. **What does Microsoft document for a private-channel Workflows webhook?** The Power Automate portal and the Teams Workflows app can configure it. Check the chosen identity, channel permissions and end-to-end delivery for a particular tenant.
 
 ---
 
@@ -418,6 +422,8 @@ Inventory endpoint OS, provider/plugin, Teams build and actual optimization stat
 - I passed an independent readiness check without relying on recalled live-exam content.
 
 ## Places to learn
+
+**Suggested practice.** Pick an incoming service call and map the roles of an auto attendant, a call queue and the destination user before reading the troubleshooting module. About 20–40 minutes to read the selected sections and produce the suggested comparison or checklist (editorial estimate; full path duration was not verified). [Manage meetings and calling in Microsoft Teams](https://learn.microsoft.com/en-us/training/paths/manage-meetings-calling-microsoft-teams/)
 
 This is a curated starting point, **not a complete list**, and it is not meant to be consumed in full. Choose one primary path, practice in a tenant, and select supplements from measured gaps. Reconcile all older resources with the October 27, 2026 blueprint, especially MTO, Copilot/AI troubleshooting, current events, policies and external collaboration.
 
@@ -452,7 +458,7 @@ Public page retrieval does not establish access to course lessons or practice qu
 
 | Reading | Why it earns a place | Learning output |
 |---|---|---|
-| [Office 365 connectors retirement](https://devblogs.microsoft.com/microsoft365dev/retirement-of-office-365-connectors-within-microsoft-teams/) — Microsoft developer team, original July 3, 2024; controlling update April 14, 2026 | Records successive deadline changes; the latest update supersedes older dates. MessageCard rendering is not interactive-button support. | Inventory notifications, convert interactive payloads to Adaptive Cards, and document ownership/recovery. Keep the private-channel conflict open. |
+| [Office 365 connectors retirement](https://devblogs.microsoft.com/microsoft365dev/retirement-of-office-365-connectors-within-microsoft-teams/) — Microsoft developer team, original July 3, 2024; controlling update April 14, 2026 | Records successive deadline changes; the latest update supersedes older dates. MessageCard rendering is not interactive-button support. | Inventory notifications, convert interactive payloads to Adaptive Cards, and document ownership/recovery. Verify the posting identity and actual delivery in the target private channel. |
 | [What’s new in Teams, July 2026](https://techcommunity.microsoft.com/blog/microsoftteamsblog/what%E2%80%99s-new-in-microsoft-teams--july-2026/4542510) — Kerry Perez Heffernan, July 31 | Highlights app/agent request handling and Windows Rooms passwordless support. Announcement scope must be checked against the deployed device/cloud. | Trace request → approval → audience → consent → working app; separately write a room migration acceptance/recovery checklist. Neither demo execution nor fleet-wide feature availability was verified. |
 
 Start with Microsoft's free Practice Assessment. Add paid questions only for a different explanation style or measured gap; reject any provider claiming recalled live questions.

@@ -5,18 +5,20 @@ official_blueprint: https://learn.microsoft.com/en-us/credentials/certifications
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: source-validated
-last_verified: 2026-10-28
-upcoming_change_status: retirement-announced
-upcoming_change_checked: 2026-10-28
+review_status: review-required
+last_verified: 2026-11-20
+upcoming_change_status: none-announced
+upcoming_change_checked: 2026-11-20
 ---
 
 # PL-400 Microsoft Power Platform Developer Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-01.md#pl-400) and the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#pl-400-coverage-record). Known source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-400) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-05.md#pl-400)
 
-**Current published baseline:** Skills measured as of October 16, 2026. The earlier March snapshot and six-domain weights are historical.<br>
-**Exam transition — VERIFY CURRENT (October 28, 2026):** PL-400 registration closed October 16. Existing registrations can still schedule/take PL-400 through October 30. AB-400 is available for new registrations. The [credential notice](https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate/) and [AB-400 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-400) define the transition. The current PL-400 page publishes the October 16 four-domain outline; this refresh accepts and maps that published text while preserving March as history. This does not create a separate complete AB-400 guide or establish identical delivery for an existing PL-400 appointment.<br>
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-01.md#pl-400) and the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#pl-400-coverage-record). Known source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-400) is authoritative.
+
+**Historical scope.** Skills measured as of October 16, 2026, the final published PL-400 outline.<br>
+**Exam retired October 30, 2026.** The [Power Platform Developer Associate credential](https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate/) continues through AB-400. Use the [AB-400 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-400) to prepare for a new appointment. The exercises below teach the archived PL-400 scope.<br>
 **Official source:** [PL-400 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-400)
 **Practice routing — VERIFY CURRENT (October 28, 2026):** The [credential page](https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate/) routes Practice Assessment to AI Skills Navigator with sign-in. No assessment was launched or its question content inspected. Recheck the vendor launch route before relying on an older direct link below; a practice result does not establish coverage of another exam code.<br>
 
@@ -40,7 +42,7 @@ The current audience is an experienced developer using Power Fx, JavaScript/Type
 
 ## Current published four-domain outline and AB-400 transition
 
-The [AB-400 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-400) covers **Extending Microsoft Power Platform Solutions with Code and AI**. The PL-400 page now publishes the same four domain weights shown here. Keep that current source observation, the historical six-domain foundation, the remaining PL-400 appointment window and new AB-400 registration separate.
+The [AB-400 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-400) covers **Extending Microsoft Power Platform Solutions with Code and AI**. The PL-400 page now publishes the same four domain weights shown here. Keep that current source observation, the historical six-domain foundation, the retired PL-400 exam and current AB-400 registration separate.
 
 | Current published area (paraphrased) | Weight | Existing foundation and extension |
 |---|---:|---|
@@ -236,6 +238,8 @@ An Azure Function can expose an API behind a custom connector. Authenticate the 
 
 ### Platform APIs, performance, and reliability
 
+**Practice check.** A Dataverse Web API client that receives HTTP 429 should honor the Retry-After header, expressed in seconds. The .NET SDK supplies a TimeSpan in the fault details under the same key. Preserve the retry interval when translating a sample between clients. [Service protection API limits (Microsoft Dataverse) - Power Apps | Microsoft Learn](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/api-limits)
+
 Use the Dataverse Web API for REST/OData clients and the current Dataverse SDK/Organization service for .NET clients. Request only required columns, filter server-side, page correctly, and use optimistic concurrency when conflicting writes matter. Choose a bulk or transaction request only when its semantics, partial-failure behavior, and limits fit the business operation; batching is not permission to hide unbounded work.
 
 [Dataverse service protection limits](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/api-limits) can return HTTP 429/SDK faults. Respect `Retry-After`, cap retries, add jitter where appropriate, and make replay safe. Gradually tune concurrency against telemetry rather than hard-coding a remembered platform limit. **VERIFY CURRENT:** service limits and client-library retry behavior can vary or change.
@@ -300,7 +304,7 @@ The [Upsert documentation](https://learn.microsoft.com/en-us/power-apps/develope
 
 ## 7. Implement the current published code and AI scope
 
-This section develops the code and AI objectives on the current published PL-400 outline. AB-400 registration and any existing PL-400 appointment remain separate; a course title alone does not establish complete coverage of either delivery. The [September Power Platform update](https://www.microsoft.com/en-us/power-platform/blog/power-apps/whats-new-in-power-platform-september-2026-feature-update/) helps discover changed developer documentation. Verify each feature in its product page: an overall GA announcement does not make every associated integration GA.
+This section develops the code and AI objectives on the current published PL-400 outline. AB-400 is the registration route for new candidates; a course title alone does not establish complete coverage of either delivery. The [September Power Platform update](https://www.microsoft.com/en-us/power-platform/blog/power-apps/whats-new-in-power-platform-september-2026-feature-update/) helps discover changed developer documentation. Verify each feature in its product page: an overall GA announcement does not make every associated integration GA.
 
 ### Choose the experience and the execution contract
 
@@ -611,13 +615,15 @@ In a disposable environment or tabletop, design a code app with Dataverse data, 
 - I can choose webhook, Service Bus, or Event Hubs and build an idempotent consumer with checkpoint, dead-letter, replay, and reconciliation behavior.
 - I can synchronize with change tracking, alternate keys, and Upsert while handling deletes, conflicts, duplicates, invalid tokens, and full resynchronization.
 - For AB-400, I can explain the code-app, background-operation, Python SDK and agent integration additions and verify the exact route, permissions and preview status.
-- I have rechecked the October registration/delivery dates and the applicable blueprint before scheduling.
+- I can select the AB-400 blueprint for a new appointment and the archived PL-400 outline for historical study.
 
 ## Places to learn
 
+**Suggested practice.** Compare the AB-400 syllabus with the learner’s intended blueprint before booking; identify where AI-powered application extensibility adds new material. 3 days of instructor-led training (publisher listing); provider scheduling and fees vary. [Extend Microsoft Power Platform Solutions with code and AI](https://learn.microsoft.com/en-us/training/courses/ab-400t00)
+
 ### October 28 learning route and evidence task
 
-The [official PL-400 course](https://learn.microsoft.com/en-us/training/courses/pl-400t00) still lists **five days**. The [Pluralsight path](https://www.pluralsight.com/paths/microsoft-power-platform-developer-pl-400) publishes nine courses/about 15 hours, with 2022–2023 dates. Its body also calls PL-400 “App Maker”; use the official blueprint for credential identity and scope. This path can offer durable code/extension explanations, but the date and inconsistent label make a current gap map essential. Keep the existing official lab repository as selective practice; the AB-400 successor-training note already supplies the transition route.
+The [official PL-400 course](https://learn.microsoft.com/en-us/training/courses/pl-400t00) now redirects to the general training catalog. The [Pluralsight path](https://www.pluralsight.com/paths/microsoft-power-platform-developer-pl-400) publishes nine courses/about 15 hours, with 2022–2023 dates. Its body also calls PL-400 “App Maker”; use the official blueprint for credential identity and scope. This path can offer durable code/extension explanations, but the date and inconsistent label make a current gap map essential. Use the AB-400 successor course listed below for current training.
 
 **Original extension-review exercise (about 30–45 minutes, editorial estimate):** Take one older lesson’s plug-in, connector or event scenario and create an implementation decision card: objective, client/server trust boundary, execution identity, transaction boundary, retry/duplicate risk, 2026 documentation and independent test. Classify the Dataverse Skills blog’s generated mutations by these same fields before accepting them.
 
@@ -632,16 +638,16 @@ Additional options and access updates; choose relevant resources rather than con
 | [AB-400T00 successor training](https://learn.microsoft.com/en-us/training/courses/ab-400t00) | Public outline; class/provider access may be paid | **3 published days**; adjacent AB-400 preparation after PL-400T00 courseware retirement on October 30; not proof of identical exam coverage |
 
 
-This is a curated starting point, **not a complete list**, and it is not meant to be consumed in full. Choose one current primary path, implement the ten labs or equivalent work, and use other resources only to close measured gaps. Reconcile every resource with the current October 16 published outline and the appointment code; older courses can still teach fundamentals but may use prior weights, deprecated tooling, or objectives that have moved.
+This is a curated starting point, **not a complete list**, and it is not meant to be consumed in full. Choose one current primary path, implement the ten labs or equivalent work, and use other resources only to close measured gaps. Reconcile every resource with the archived October 16 PL-400 outline or the AB-400 outline for new appointments; older courses can still teach fundamentals but may use prior weights, deprecated tooling, or objectives that have moved.
 
 The nine self-paced paths recorded during the September 1 review cover advanced canvas apps, expressions/Dataverse flows, developer foundations, client scripting/commands, PCF, Dataverse extension, Azure integration, custom connectors, and ALM. Their recorded durations totaled about **25 hours**; the September 27 public course shell reconfirms five days of instructor-led delivery but does not independently reverify that path-duration sum. Allow **50–90 hours** with coding, tenant setup, failure testing, and notes.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
 | [Official PL-400 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-400) and [credential page](https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate/) | Public | 1–2 hours initially; 15 minutes per recheck |
-| Nine self-paced paths from [PL-400T00](https://learn.microsoft.com/en-us/training/courses/pl-400t00) | Public | About 25 hours recorded September 1; allow 50–90 hours with exercises and independent builds |
-| PL-400T00 instructor-led course | Paid/partner delivery | 5 days listed |
-| [Official MicrosoftLearning PL-400 labs](https://github.com/MicrosoftLearning/PL-400_Microsoft-Power-Platform-Developer) (MIT) | Public | About 15–30 hours selectively; repeat key labs without instructions |
+| Nine paths formerly listed by [PL-400T00](https://learn.microsoft.com/en-us/training/courses/pl-400t00) | Public | About 25 hours recorded September 1; allow 50–90 hours with exercises and independent builds |
+| Archived PL-400T00 course | Historical syllabus | The former five-day course retired October 30. |
+| Dataverse plug-in registration | Public instructions | Choose the event message, table, stage and execution mode, then identify which assembly and step belong in the solution. [Source notes and publisher link](../docs/research/2026-11-20-microsoft-refresh-group-05.md#pl-400). |
 | [Microsoft PL-400 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate/practice/assessment?assessment-type=practice&assessmentId=66&practice-assessment-type=certification) | Public | 45–75 minutes per attempt plus source-based remediation |
 | [Microsoft Exam Readiness Zone PL-400 series](https://learn.microsoft.com/en-us/shows/exam-readiness-zone/preparing-for-pl-400-create-a-technical-design) | Public | About 2.5–3.5 hours for six 2024 episodes; useful foundation, but reconcile old weights with 2026 |
 | [Pluralsight PL-400 path](https://www.pluralsight.com/paths/microsoft-power-platform-developer-pl-400) | Paid | 15 hours / 9 courses plus practice exam; courses date from 2022–2023, so use for foundations and supplement 2026 changes |

@@ -13,7 +13,9 @@ upcoming_change_checked: 2026-10-28
 
 # MD-102 Managing and Securing Microsoft 365 Endpoints by Using Intune Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-02.md#md-102) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#md-102-coverage-record). Source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/md-102) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-04.md#md-102)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-02.md#md-102) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#md-102-coverage-record). Source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/md-102) is authoritative.
 
 **Current baseline:** Skills measured as of October 27, 2026.<br>
 **Blueprint reconciliation (October 28, 2026):** The October 27, 2026 English outline is the accepted current scope. The revision clarifies Android work-profile ownership and current Windows Backup, Microsoft Tunnel VPN Gateway, Microsoft 365 apps, Apple Business Manager, Managed Google Play and Remediations wording. It corrects local-administrator-password terminology; weights are unchanged. Historical objective bytes and dated reviews are preserved. Recheck localized appointment timing separately.<br>
@@ -248,6 +250,8 @@ For each workflow retain resolved targets, effective setting, user action, log/r
 [Creating elevation rules with Endpoint Privilege Management](https://learn.microsoft.com/en-us/intune/epm/create-elevation-rules) · [Add an Enterprise App Catalog App to Microsoft Intune](https://learn.microsoft.com/en-us/intune/intune-service/apps/apps-add-enterprise-app) · [Microsoft Cloud PKI deployment for Microsoft Intune](https://learn.microsoft.com/en-us/intune/cloud-pki/deployment-models) · [Microsoft Tunnel for Mobile Application Management for Android](https://learn.microsoft.com/en-us/intune/intune-service/protect/microsoft-tunnel-mam-android)
 
 ### Remote actions and support evidence
+
+**Practice check.** The November 16 Intune service release describes sharing diagnostics during an attended Windows Remote Help session. The user can review and stop sharing the information. If the user declines, the helper can continue the session without those diagnostics. [What's new in Microsoft Intune - Microsoft Intune | Microsoft Learn](https://learn.microsoft.com/en-us/intune/whats-new/)
 
 Choose a remote action from lifecycle intent:
 
@@ -622,6 +626,8 @@ Build a backup/restore matrix for version, join, account, policy and OOBE/first-
 - I passed an independent readiness check without relying on recalled live-exam content.
 
 ## Places to learn
+
+**Suggested practice.** Select an endpoint observation, identify the read permission required and define a measurable result before proposing an automated change. About 20–40 minutes to read the selected sections and produce the suggested comparison or checklist (editorial estimate; full path duration was not verified). [Automate and optimize endpoint management using Microsoft Intune](https://learn.microsoft.com/en-us/training/paths/automate-optimize-endpoint-management-intune/)
 
 ### October 28 learning route and evidence task
 
