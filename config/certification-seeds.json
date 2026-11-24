@@ -1437,8 +1437,19 @@
       "exam_code": "DVA-C02",
       "title": "AWS Certified Developer - Associate",
       "official_url": "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02.html",
-      "status": "active",
-      "source_id": "aws-current"
+      "status": "retirement-announced",
+      "source_id": "aws-current",
+      "retirement_date": "2026-11-30",
+      "retirement_scope": "This exam version",
+      "retirement_source_url": "https://aws.amazon.com/blogs/training-and-certification/register-now-updated-developer-associate-and-solutions-architect-professional-exams/",
+      "replacement_exam_code": "DVA-C03",
+      "replacement_official_url": "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-03/developer-associate-03.html",
+      "lifecycle": {
+        "checked_on": "2026-11-23",
+        "source_urls": [
+          "https://aws.amazon.com/blogs/training-and-certification/register-now-updated-developer-associate-and-solutions-architect-professional-exams/"
+        ]
+      }
     },
     {
       "vendor_id": "aws",
@@ -1469,7 +1480,7 @@
       "status": "beta",
       "source_id": "aws-current",
       "lifecycle": {
-        "checked_on": "2026-09-30",
+        "checked_on": "2026-11-23",
         "initial_release": {
           "date": "2026-09-29",
           "stage": "beta",
@@ -1480,7 +1491,7 @@
           "https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/",
           "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/"
         ],
-        "notes": "AWS announces English-only beta delivery beginning September 29, 2026, with delivery code ME1-C02. This is the MLA-C02 exam-version beta date, not the initial launch of the credential. General availability conflicts: the September announcement gives January 14, 2027, while the credential page says TBD. More research needed — next pass. No exam booking or account availability was tested."
+        "notes": "AWS announces English-only beta delivery beginning September 29, 2026, with different identifiers on the registration button (MLA-C02) and comparison table (ME1-C02). This is the MLA-C02 exam-version beta date, not the initial launch of the credential. General availability conflicts: the September announcement gives January 14, 2027, while the credential page says TBD. More research needed — next pass. No exam booking or account availability was tested."
       }
     },
     {
@@ -1512,8 +1523,19 @@
       "exam_code": "SAP-C02",
       "title": "AWS Certified Solutions Architect - Professional",
       "official_url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-professional-02/solutions-architect-professional-02.html",
-      "status": "active",
-      "source_id": "aws-current"
+      "status": "retired",
+      "source_id": "aws-current",
+      "retirement_date": "2026-11-16",
+      "retirement_scope": "This exam version",
+      "retirement_source_url": "https://aws.amazon.com/blogs/training-and-certification/register-now-updated-developer-associate-and-solutions-architect-professional-exams/",
+      "replacement_exam_code": "SAP-C03",
+      "replacement_official_url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-professional-03/solutions-architect-professional-03.html",
+      "lifecycle": {
+        "checked_on": "2026-11-23",
+        "source_urls": [
+          "https://aws.amazon.com/blogs/training-and-certification/register-now-updated-developer-associate-and-solutions-architect-professional-exams/"
+        ]
+      }
     },
     {
       "vendor_id": "aws",
@@ -2869,6 +2891,40 @@
           "https://certiport.pearsonvue.com/Certifications/Microsoft/MOS/Certify/365-Apps"
         ],
         "notes": "Learn lists MO-410 as coming soon among Associate-level qualifying exams on the MOS Expert requirements page. Certiport lists Outlook for Office 2019. A public MO-410 outline, beta, delivery date and booking route remain unconfirmed."
+      }
+    },
+    {
+      "vendor_id": "aws",
+      "exam_code": "DVA-C03",
+      "title": "AWS Certified Developer - Associate",
+      "official_url": "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-03/developer-associate-03.html",
+      "status": "announced",
+      "source_id": "aws-current",
+      "lifecycle": {
+        "checked_on": "2026-11-23",
+        "initial_release": {
+          "date": "2026-12-01",
+          "stage": "general-availability",
+          "source_url": "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/"
+        },
+        "notes": "Exam version. Check the appointment for language and local availability."
+      }
+    },
+    {
+      "vendor_id": "aws",
+      "exam_code": "SAP-C03",
+      "title": "AWS Certified Solutions Architect - Professional",
+      "official_url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-professional-03/solutions-architect-professional-03.html",
+      "status": "active",
+      "source_id": "aws-current",
+      "lifecycle": {
+        "checked_on": "2026-11-23",
+        "initial_release": {
+          "date": "2026-11-17",
+          "stage": "general-availability",
+          "source_url": "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/"
+        },
+        "notes": "Exam version. Check the appointment for language and local availability."
       }
     }
   ]

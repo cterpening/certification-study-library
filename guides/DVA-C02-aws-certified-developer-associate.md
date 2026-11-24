@@ -8,7 +8,7 @@ authority: unofficial
 review_status: source-validated
 last_verified: 2026-10-28
 upcoming_change_status: retirement-announced
-upcoming_change_checked: 2026-10-28
+upcoming_change_checked: 2026-11-23
 ---
 
 # DVA-C02 AWS Certified Developer - Associate Study Guide
@@ -16,13 +16,13 @@ upcoming_change_checked: 2026-10-28
 > **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed on October 28, 2026, including all 101 detailed skills. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dva-c02-coverage-record). The [official DVA-C02 exam guide](https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02.html) is authoritative.
 
 **Current baseline:** DVA-C02 version 2.1 skills, four scored domains, and a separately labeled emerging-topic/pretest section<br>
-**Upcoming delivery change:** AWS now lists DVA-C03 and released its exam guide on October 27, 2026. Official pages conflict: the launch announcement says registration is open and C02 ends November 30; the new C03 guide says registration opens December 1, and the certification page has shown December 1 as the C02 last day. Verify the actual exam appointment window in the scheduler. This guide covers DVA-C02 only; see the October 28 watch note below for C03 scope and comparison links.
+**Exam transition.** AWS lists November 30, 2026 as the final DVA-C02 test date. Registration is open for DVA-C03, with first delivery scheduled for December 1. Choose the guide that matches your appointment code. [AWS dates and exam routes](../docs/research/2026-11-23-refresh-04.md#dva-c02)
 **Important freshness boundary:** Version 2.1 added Amazon Q Developer, EventBridge patterns, third-party resilience, near-real-time Lambda transformation, specialized stores, fine-grained and cross-service authorization, masking/multi-tenancy, AppConfig, event-driven tests, health/readiness, caching, and performance analysis. AWS Copilot and CodeGuru were removed from the in-scope list, although one detailed testing example still names Copilot environments. Current AI-assisted development, AI security, test, CI/CD, error-analysis, and optimization topics are explicitly described by AWS as possible **unscored pretest** content.<br>
 **Official source:** [AWS Certified Developer - Associate exam guide](https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02.html)
 
-## Current guide watch — October 28, 2026
+## Exam version and study scope
 
-- **Successor now published:** AWS's October 27 announcement says DVA-C03 registration is open and DVA-C02's last test date is November 30, 2026. The C03 exam guide says registration opens December 1, and the live certification page has also shown December 1 as the C02 last day. These official pages conflict; verify the actual appointment deadline in the AWS/Pearson VUE scheduler. DVA-C02 remains the scope of this guide.
+- **Which study plan to use.** Candidates booked on DVA-C02 through November 30 can use the map below. For DVA-C03, use the separate AWS guide and comparison document.
 - The official [DVA-C02/DVA-C03 comparison](https://docs.aws.amazon.com/aws-certification/latest/developer-associate-03/dva-03-comparison.html) shows C03 changes weights from 32/26/24/18 to 30/26/22/22 and adds AI-assisted coding, managed AI integration, AI-service and agent security, AI-supported testing/CI/CD, troubleshooting, and optimization. AWS explicitly excludes prompt engineering, RAG architecture, model selection, and AI-governance design. The [new C03 guide](https://docs.aws.amazon.com/aws-certification/latest/developer-associate-03/developer-associate-03.html) is transition context, not a replacement for the C02 objective map here.
 
 ## How to use this guide

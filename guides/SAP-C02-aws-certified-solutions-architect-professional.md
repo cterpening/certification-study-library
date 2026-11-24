@@ -7,8 +7,8 @@ generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
 last_verified: 2026-10-28
-upcoming_change_status: retirement-announced
-upcoming_change_checked: 2026-10-28
+upcoming_change_status: none-announced
+upcoming_change_checked: 2026-11-23
 ---
 
 # SAP-C02 AWS Certified Solutions Architect - Professional Study Guide
@@ -16,13 +16,13 @@ upcoming_change_checked: 2026-10-28
 > **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed on October 28, 2026, including 187 detailed knowledge/skill bullets. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sap-c02-coverage-record). The [official SAP-C02 exam guide](https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-professional-02/solutions-architect-professional-02.html) is authoritative.
 
 **Current baseline:** Current four-domain SAP-C02 guide; 65 scored plus 10 unscored questions, with a separate unscored emerging-topic section<br>
-**Upcoming delivery change:** SAP-C03 registration opens October 27, with delivery beginning November 17, 2026. AWS gives conflicting SAP-C02 last-test dates: its September announcement says November 16, while the live certification page says November 17. Confirm the deadline in the scheduler before booking. Detailed SAP-C03 objectives are announced for October 27; this guide covers SAP-C02. Rechecked September 28, 2026; the conflict remains. See the [deep-review report](../docs/research/2026-09-28-sap-c02-deep-review.md).<br>
+**Retired exam version.** November 16, 2026 was the final SAP-C02 test date. SAP-C03 became the current version on November 17. Use this guide for historical SAP-C02 study. [AWS dates and current exam route](../docs/research/2026-11-23-refresh-04.md#sap-c02)
 **Important freshness boundary:** AWS currently lists responsible and agentic-AI controls—Bedrock Guardrails, AgentCore Identity, and human-approval workflows—as possible **unscored pretest** topics, not as a fifth scored domain. The large non-exhaustive service list, product names, interfaces, quotas, pricing, Regions, service availability, and training catalogs are **VERIFY CURRENT**.<br>
 **Official source:** [AWS Certified Solutions Architect - Professional exam guide](https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-professional-02/solutions-architect-professional-02.html)
 
-## Current guide watch — October 28, 2026
+## Exam version and study scope
 
-SAP-C03 registration opened October 27, 2026, and adds explicit cloud-native/AI architecture, DevSecOps, resilience and post-quantum cryptography context across five domains. AWS’s September training announcement says SAP-C02’s last day is November 16, while the certification page says November 17; verify the date in the scheduler before booking. This guide remains mapped to SAP-C02, not the new SAP-C03 blueprint. [AWS SAP-C02 certification page](https://aws.amazon.com/certification/certified-solutions-architect-professional/) and [AWS September 2026 update](https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/)
+SAP-C03 covers five domains. For a current appointment, start with that edition and compare its cloud-native architecture and AI coverage with the older four-domain map below. [AWS certification page](https://aws.amazon.com/certification/certified-solutions-architect-professional/) · [September announcement](https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/)
 
 ## How to use this guide
 

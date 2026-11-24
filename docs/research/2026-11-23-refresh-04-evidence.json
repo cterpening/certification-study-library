@@ -1,0 +1,580 @@
+{
+  "date": "2026-11-23",
+  "scope": "AI research into official objectives, selected technical references and learning resources. Individual exam delivery, private course contents and live product testing were outside this review.",
+  "exams": [
+    {
+      "code": "AIB-C01",
+      "exam": {
+        "code": "AIB-C01",
+        "observation": "AWS still labels the exam beta. February 15, 2027 is the additional early-adopter badge window. Both monitored objective text and status matched accepted records.",
+        "urls": [
+          "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01.html",
+          "https://aws.amazon.com/certification/certified-ai-business-strategist/"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Keep the beta status separate from the badge deadline.",
+        "monitor": "unchanged",
+        "accepted_objective_sha256": "84365cfe2180906cec213c48075b2823a10204c07eb9b01f983fb0817a58255d",
+        "candidate_objective_sha256": "84365cfe2180906cec213c48075b2823a10204c07eb9b01f983fb0817a58255d",
+        "catalog_matches": {
+          "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01.html": {
+            "sources": [
+              "aws-aib-c01-blueprint"
+            ],
+            "candidates": []
+          },
+          "https://aws.amazon.com/certification/certified-ai-business-strategist/": {
+            "sources": [
+              "aws-aib-c01-exam-page",
+              "aws-aib-c01-certification-page"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "AIB-C01",
+        "urls": [
+          "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01-domain3.html"
+        ],
+        "observation": "Business governance includes applying responsible AI to decisions, defining accountability, and directing enterprise risk mitigation.",
+        "recommendation": "Retain the governance decision exercises.",
+        "confidence": "High for the facts stated in the opened source. No live product testing.",
+        "source_ids": [
+          "aws-aib-c01-domain-3"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "AIB-C01",
+        "observation": "The AI Business Strategist learning plan renders a JavaScript shell in the public reader. The exam outline still names responsible adoption and business outcomes.",
+        "urls": [
+          "https://skillbuilder.aws/learning-plan/TSP9R1XQ6P/aws-ai-business-strategist-learning-plan/BDE88AHVZN",
+          "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01.html"
+        ],
+        "source_id": "aws-aib-c01-learning-plan",
+        "resource": "AWS AI Business Strategist learning plan",
+        "access_model": "free-account",
+        "time_basis": "12–20 hours for the previously identified plan, editorial.",
+        "confidence": "Limited for signed-in preparation content.",
+        "recommendation": "Map the plan to business outcome, governance and adoption objectives before committing study time."
+      },
+      "monitor_outcome": "unchanged",
+      "accepted_on_start": "84365cfe2180906cec213c48075b2823a10204c07eb9b01f983fb0817a58255d",
+      "candidate": "84365cfe2180906cec213c48075b2823a10204c07eb9b01f983fb0817a58255d"
+    },
+    {
+      "code": "MLA-C01",
+      "exam": {
+        "code": "MLA-C01",
+        "observation": "The old guide returned 404. AWS expressly retains C01 in Korean, Japanese and Simplified Chinese during the English-only C02 beta; English C01 last day was September 28. January 14, 2027 is the published all-language GA/retirement target. Objective monitor reported: HTTPError: HTTP Error 404: Not Found The September announcement gives January 14 as a target, but the credential page still displays TBD for GA registration and delivery. The beta registration button says MLA-C02 and the table says ME1-C02. The official 23-page historical C01 PDF remains accessible.",
+        "urls": [
+          "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-01/machine-learning-engineer-associate-01.html",
+          "https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/",
+          "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/",
+          "https://d1.awsstatic.com/training-and-certification/docs-machine-learning-engineer-associate/AWS-Certified-Machine-Learning-Engineer-Associate_Exam-Guide.pdf"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Keep the frozen scope and point candidates to the current AWS credential page. Preserve language boundaries.",
+        "monitor": "error",
+        "accepted_objective_sha256": "91c5a0ed3fae7d2606bfed410b968599e65b38d058eb0047ef72d7b03e0ab4b7",
+        "candidate_objective_sha256": null,
+        "catalog_matches": {
+          "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-01/machine-learning-engineer-associate-01.html": {
+            "sources": [
+              "aws-mla-c01-blueprint"
+            ],
+            "candidates": []
+          },
+          "https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/": {
+            "sources": [
+              "aws-mla-c01-certification"
+            ],
+            "candidates": []
+          },
+          "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/": {
+            "sources": [
+              "mla-c01-september-2026-certification-update"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "MLA-C01",
+        "urls": [
+          "https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor-availability-change.html"
+        ],
+        "observation": "Model Monitor remains closed to new customers; existing accounts can continue with security/availability support only.",
+        "recommendation": "Keep existing-customer material and direct new-account practice to an available alternative.",
+        "confidence": "High for the facts stated in the opened source. No live product testing.",
+        "source_ids": [
+          "mla-c01-model-monitor-availability-change"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "MLA-C01",
+        "observation": "The older Skill Builder route returned its JavaScript shell and the old C01 blueprint route returned 404.",
+        "urls": [
+          "https://skillbuilder.aws/category/exam-prep/machine-learning-engineer-associate-MLA-C01",
+          "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-01/machine-learning-engineer-associate-01.html"
+        ],
+        "source_id": "aws-mla-c01-skill-builder",
+        "resource": "MLA-C01 AWS Skill Builder exam-prep plan",
+        "access_model": "free-account",
+        "time_basis": "No current C01 course duration confirmed.",
+        "confidence": "Limited for signed-in preparation content.",
+        "recommendation": "Keep historical C01 preparation separate from MLA-C02."
+      },
+      "monitor_outcome": "error",
+      "accepted_on_start": "91c5a0ed3fae7d2606bfed410b968599e65b38d058eb0047ef72d7b03e0ab4b7",
+      "candidate": null
+    },
+    {
+      "code": "MLA-C02",
+      "exam": {
+        "code": "MLA-C02",
+        "observation": "AWS identifies the English-only MLA-C02 beta in the registration text; the comparison table anomalously says ME1-C02. September 29 beta delivery and Jan 14, 2027 all-language GA are announced. Both monitored objective text and status matched accepted records. The September announcement gives January 14 as a target, but the credential page still displays TBD for GA registration and delivery. The beta registration button says MLA-C02 and the table says ME1-C02.",
+        "urls": [
+          "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02.html",
+          "https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/",
+          "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Keep the blueprint code MLA-C02, beta and dated follow-up.",
+        "monitor": "unchanged",
+        "accepted_objective_sha256": "81bd9db7252f56b633e9666c692b98ad8806a21b3602497b82600522070299d7",
+        "candidate_objective_sha256": "81bd9db7252f56b633e9666c692b98ad8806a21b3602497b82600522070299d7",
+        "catalog_matches": {
+          "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02.html": {
+            "sources": [
+              "aws-mla-c01-mla-c02-blueprint"
+            ],
+            "candidates": []
+          },
+          "https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/": {
+            "sources": [
+              "aws-mla-c01-certification"
+            ],
+            "candidates": []
+          },
+          "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/": {
+            "sources": [
+              "mla-c01-september-2026-certification-update"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "MLA-C02",
+        "urls": [
+          "https://docs.aws.amazon.com/codecommit/latest/userguide/history.html"
+        ],
+        "observation": "AWS reopened CodeCommit to new customers on November 25, 2025 after its 2024 closure.",
+        "recommendation": "Retain the chronological availability explanation.",
+        "confidence": "High for the facts stated in the opened source. No live product testing.",
+        "source_ids": [
+          "aws-codecommit-history"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "MLA-C02",
+        "observation": "AWS’s comparison page identifies revised capabilities such as vector storage and diverse AI inputs. Use it to mark gaps in an old C01 plan.",
+        "urls": [
+          "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/mla-02-comparison.html",
+          "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02.html"
+        ],
+        "source_id": "aws-mla-c02-comparison",
+        "resource": "Comparison of MLA-C01 and MLA-C02",
+        "access_model": "public",
+        "time_basis": "20–40 minutes to annotate changed tasks, editorial.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Point migrating learners to the comparison before an older course."
+      },
+      "monitor_outcome": "unchanged",
+      "accepted_on_start": "81bd9db7252f56b633e9666c692b98ad8806a21b3602497b82600522070299d7",
+      "candidate": "81bd9db7252f56b633e9666c692b98ad8806a21b3602497b82600522070299d7"
+    },
+    {
+      "code": "ANS-C01",
+      "exam": {
+        "code": "ANS-C01",
+        "observation": "AWS says the final sitting is December 31, 2026; previously issued certifications retain their three-year validity. Both monitored objective text and status matched accepted records. The Japanese page still gives August 25. Confirm the language and appointment with AWS.",
+        "urls": [
+          "https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/advanced-networking-specialty-01.html",
+          "https://aws.amazon.com/certification/certified-advanced-networking-specialty/",
+          "https://aws.amazon.com/jp/certification/certified-advanced-networking-specialty/"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Retain announced retirement; distinguish credential validity.",
+        "monitor": "unchanged",
+        "accepted_objective_sha256": "6e641ee1f39d66f182de5da5a84b2664cae1c119bc4377faa184f6de05d64e01",
+        "candidate_objective_sha256": "6e641ee1f39d66f182de5da5a84b2664cae1c119bc4377faa184f6de05d64e01",
+        "catalog_matches": {
+          "https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/advanced-networking-specialty-01.html": {
+            "sources": [
+              "aws-ans-c01-blueprint"
+            ],
+            "candidates": []
+          },
+          "https://aws.amazon.com/certification/certified-advanced-networking-specialty/": {
+            "sources": [
+              "aws-ans-c01-exam-page"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "ANS-C01",
+        "urls": [
+          "https://docs.aws.amazon.com/vpc/latest/tgw/tgw-policy-tables.html"
+        ],
+        "observation": "An attachment associates with one policy table or one route table. Policy rules select the destination route table.",
+        "recommendation": "Preserve the attachment association distinction.",
+        "confidence": "High for the facts stated in the opened source. No live product testing.",
+        "source_ids": [
+          "ansc01-tgw-policy-tables"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "ANS-C01",
+        "observation": "The AWS article gives ten advanced networking study areas. Check publication era and exam-code applicability before allocating study time.",
+        "urls": [
+          "https://aws.amazon.com/blogs/training-and-certification/10-study-areas-for-the-aws-certified-advanced-networking-specialty-exam/",
+          "https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/advanced-networking-specialty-01.html"
+        ],
+        "source_id": "aws-ans-c01-study-areas",
+        "resource": "Ten study areas for AWS Advanced Networking Specialty",
+        "access_model": "public",
+        "time_basis": "15–25 minutes for a topic mapping pass, editorial.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use as adjunct reading and check current availability separately."
+      },
+      "monitor_outcome": "unchanged",
+      "accepted_on_start": "6e641ee1f39d66f182de5da5a84b2664cae1c119bc4377faa184f6de05d64e01",
+      "candidate": "6e641ee1f39d66f182de5da5a84b2664cae1c119bc4377faa184f6de05d64e01"
+    },
+    {
+      "code": "DVA-C02",
+      "exam": {
+        "code": "DVA-C02",
+        "observation": "AWS confirms November 30, 2026 as final C02 sitting, followed by DVA-C03 on December 1. AWS already offers C03 registration. Both monitored objective text and status matched accepted records.",
+        "urls": [
+          "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02.html",
+          "https://aws.amazon.com/certification/certified-developer-associate/",
+          "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/",
+          "https://aws.amazon.com/blogs/training-and-certification/register-now-updated-developer-associate-and-solutions-architect-professional-exams/"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Keep C02 current through final day and identify the next exam.",
+        "monitor": "unchanged",
+        "accepted_objective_sha256": "8fbdbecdbab1931b6307b0afcf33b5bf3cc81937d40563ea4209c4eb18db8b0c",
+        "candidate_objective_sha256": "8fbdbecdbab1931b6307b0afcf33b5bf3cc81937d40563ea4209c4eb18db8b0c",
+        "catalog_matches": {
+          "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02.html": {
+            "sources": [
+              "aws-dva-c02-blueprint"
+            ],
+            "candidates": []
+          },
+          "https://aws.amazon.com/certification/certified-developer-associate/": {
+            "sources": [
+              "aws-dva-c02-exam-page"
+            ],
+            "candidates": []
+          },
+          "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/": {
+            "sources": [
+              "mla-c01-september-2026-certification-update"
+            ],
+            "candidates": []
+          },
+          "https://aws.amazon.com/blogs/training-and-certification/register-now-updated-developer-associate-and-solutions-architect-professional-exams/": {
+            "sources": [
+              "aws-dva-c03-launch-announcement-oct-2026"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "DVA-C02",
+        "urls": [
+          "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02-domain4.html"
+        ],
+        "observation": "Root cause analysis, observability instrumentation and optimization are named tasks in the fourth developer domain.",
+        "recommendation": "Retain diagnostic and observability practice as exam scope.",
+        "confidence": "High for the facts stated in the opened source. No live product testing.",
+        "source_ids": [
+          "aws-dva-c02-domain-4"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "DVA-C02",
+        "observation": "DVA-C02: The public Skill Builder page returns its JavaScript application shell; current item access and signed-in syllabus were not independently verified.",
+        "urls": [
+          "https://skillbuilder.aws/category/exam-prep/developer-associate-DVA-C02",
+          "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02.html"
+        ],
+        "source_id": "aws-dva-c02-skill-builder",
+        "resource": "DVA-C02 AWS Skill Builder exam-prep plan",
+        "access_model": "free-account",
+        "time_basis": "15–30 hours for selected activities, prior library estimate.",
+        "confidence": "Limited for signed-in preparation content.",
+        "recommendation": "Verify edition, individual subscription requirement and timings at enrollment."
+      },
+      "monitor_outcome": "unchanged",
+      "accepted_on_start": "8fbdbecdbab1931b6307b0afcf33b5bf3cc81937d40563ea4209c4eb18db8b0c",
+      "candidate": "8fbdbecdbab1931b6307b0afcf33b5bf3cc81937d40563ea4209c4eb18db8b0c"
+    },
+    {
+      "code": "SAP-C02",
+      "exam": {
+        "code": "SAP-C02",
+        "observation": "AWS confirms November 16, 2026 final C02 sitting and publishes November 17 C03 GA. The new C03 guide has five domains. Both monitored objective text and status matched accepted records.",
+        "urls": [
+          "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-professional-02/solutions-architect-professional-02.html",
+          "https://aws.amazon.com/certification/certified-solutions-architect-professional/",
+          "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/",
+          "https://aws.amazon.com/blogs/training-and-certification/register-now-updated-developer-associate-and-solutions-architect-professional-exams/"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Mark C02 historical and direct new study to C03.",
+        "monitor": "unchanged",
+        "accepted_objective_sha256": "a26c57062d9b296a68c6977a3eccb000e1dd64d57c67ffff43a4776da813588d",
+        "candidate_objective_sha256": "a26c57062d9b296a68c6977a3eccb000e1dd64d57c67ffff43a4776da813588d",
+        "catalog_matches": {
+          "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-professional-02/solutions-architect-professional-02.html": {
+            "sources": [
+              "aws-sap-c02-blueprint"
+            ],
+            "candidates": []
+          },
+          "https://aws.amazon.com/certification/certified-solutions-architect-professional/": {
+            "sources": [
+              "aws-sap-c02-exam-page"
+            ],
+            "candidates": []
+          },
+          "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/": {
+            "sources": [
+              "mla-c01-september-2026-certification-update"
+            ],
+            "candidates": []
+          },
+          "https://aws.amazon.com/blogs/training-and-certification/register-now-updated-developer-associate-and-solutions-architect-professional-exams/": {
+            "sources": [
+              "aws-dva-c03-launch-announcement-oct-2026"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "SAP-C02",
+        "urls": [
+          "https://docs.aws.amazon.com/migrationhub-strategy/latest/userguide/migrationhub-availability-change.html"
+        ],
+        "observation": "AWS Migration Hub stopped accepting new customers November 7, 2025. Existing projects can finish, and AWS directs new projects toward AWS Transform.",
+        "recommendation": "Keep the current migration decision table.",
+        "confidence": "High for the facts stated in the opened source. No live product testing.",
+        "source_ids": [
+          "aws-migrationhub-availability"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "SAP-C02",
+        "observation": "SAP-C02: The public Skill Builder page returns its JavaScript application shell; current item access and signed-in syllabus were not independently verified.",
+        "urls": [
+          "https://skillbuilder.aws/category/exam-prep/solutions-architect-professional-SAP-C02",
+          "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-professional-02/solutions-architect-professional-02.html"
+        ],
+        "source_id": "aws-sap-c02-skill-builder",
+        "resource": "SAP-C02 AWS Skill Builder exam-prep plan",
+        "access_model": "free-account",
+        "time_basis": "No verified total.",
+        "confidence": "Limited for signed-in preparation content.",
+        "recommendation": "Verify edition, individual subscription requirement and timings at enrollment."
+      },
+      "monitor_outcome": "unchanged",
+      "accepted_on_start": "a26c57062d9b296a68c6977a3eccb000e1dd64d57c67ffff43a4776da813588d",
+      "candidate": "a26c57062d9b296a68c6977a3eccb000e1dd64d57c67ffff43a4776da813588d"
+    },
+    {
+      "code": "AIP-C01",
+      "exam": {
+        "code": "AIP-C01",
+        "observation": "The guide identifies Generative AI Developer – Professional with its production integration focus. Both monitored objective text and status matched accepted records.",
+        "urls": [
+          "https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/ai-professional-01.html"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Retain current scope.",
+        "monitor": "unchanged",
+        "accepted_objective_sha256": "b5654086954cdac1322092486e79c2b90267a3848117954fd153f40b490597cf",
+        "candidate_objective_sha256": "b5654086954cdac1322092486e79c2b90267a3848117954fd153f40b490597cf",
+        "catalog_matches": {
+          "https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/ai-professional-01.html": {
+            "sources": [
+              "aws-aip-c01-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "AIP-C01",
+        "urls": [
+          "https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-daemon-timeline.html"
+        ],
+        "observation": "X-Ray SDKs and daemon entered security-fix maintenance February 25, 2026; the timeline lists no end date.",
+        "recommendation": "Preserve SDK-specific qualification; avoid treating this as X-Ray service withdrawal.",
+        "confidence": "High for the facts stated in the opened source. No live product testing.",
+        "source_ids": [
+          "aws-dva-xray-timeline"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "AIP-C01",
+        "observation": "AIP-C01: The public Skill Builder page returns its JavaScript application shell; current item access and signed-in syllabus were not independently verified.",
+        "urls": [
+          "https://skillbuilder.aws/category/exam-prep/generative-ai-developer-professional-AIP-C01",
+          "https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/ai-professional-01.html"
+        ],
+        "source_id": "aws-aip-c01-skill-builder",
+        "resource": "AIP-C01 AWS Skill Builder exam-prep plan",
+        "access_model": "free-account",
+        "time_basis": "30–45 hours for selected preparation plus labs, prior library estimate.",
+        "confidence": "Limited for signed-in preparation content.",
+        "recommendation": "Verify edition, individual subscription requirement and timings at enrollment."
+      },
+      "monitor_outcome": "unchanged",
+      "accepted_on_start": "b5654086954cdac1322092486e79c2b90267a3848117954fd153f40b490597cf",
+      "candidate": "b5654086954cdac1322092486e79c2b90267a3848117954fd153f40b490597cf"
+    },
+    {
+      "code": "AIF-C01",
+      "exam": {
+        "code": "AIF-C01",
+        "observation": "The guide still identifies AI Practitioner exam AIF-C01. Both monitored objective text and status matched accepted records.",
+        "urls": [
+          "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Retain current scope.",
+        "monitor": "unchanged",
+        "accepted_objective_sha256": "7ff78e9b2aac28fcc1440e8465c85e881dca3010fdb837e51de552f6ae5118f6",
+        "candidate_objective_sha256": "7ff78e9b2aac28fcc1440e8465c85e881dca3010fdb837e51de552f6ae5118f6",
+        "catalog_matches": {
+          "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html": {
+            "sources": [
+              "aws-aif-c01-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "AIF-C01",
+        "urls": [
+          "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html"
+        ],
+        "observation": "AgentCore exposes separate managed services for runtime, tools and governance. Services can be used independently.",
+        "recommendation": "Keep as adjacent agent-platform learning.",
+        "confidence": "High for the facts stated in the opened source. No live product testing.",
+        "source_ids": [
+          "aws-aif-c01-agentcore"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "AIF-C01",
+        "observation": "The original Standard Exam Prep Plan URL redirects to the general AI Practitioner category. The portal does not expose a current itemized plan or duration without further navigation.",
+        "urls": [
+          "https://explore.skillbuilder.aws/learn/learning-plans/2193/standard-exam-prep-plan-aws-certified-ai-practitioner-aif-c01",
+          "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html",
+          "https://skillbuilder.aws/category/exam-prep/ai-practitioner"
+        ],
+        "source_id": "aws-aif-c01-skill-builder-plan",
+        "resource": "Standard Exam Prep Plan: AWS Certified AI Practitioner",
+        "access_model": "free-account",
+        "time_basis": "12–20 hours plus practice, prior library estimate.",
+        "confidence": "Limited for signed-in preparation content.",
+        "recommendation": "Verify edition, individual subscription requirement and timings at enrollment."
+      },
+      "monitor_outcome": "unchanged",
+      "accepted_on_start": "7ff78e9b2aac28fcc1440e8465c85e881dca3010fdb837e51de552f6ae5118f6",
+      "candidate": "7ff78e9b2aac28fcc1440e8465c85e881dca3010fdb837e51de552f6ae5118f6"
+    }
+  ],
+  "review_inputs": [
+    {
+      "code": "AIB-C01",
+      "guide": "guides/AIB-C01-aws-certified-ai-business-strategist.md",
+      "guide_sha256_lf": "81f81b317bd749bafd077b828ac70759487d2bd248cc5377d805590320e009a2",
+      "objective": "data/objective-snapshots/aib-c01-official-objectives.txt",
+      "objective_sha256": "84365cfe2180906cec213c48075b2823a10204c07eb9b01f983fb0817a58255d"
+    },
+    {
+      "code": "MLA-C01",
+      "guide": "guides/MLA-C01-aws-certified-machine-learning-engineer-associate.md",
+      "guide_sha256_lf": "1e070ad324b953a7333e8c9baa1a2ddb1966c8d5dfd586c46c170b08d9fc573a",
+      "objective": "data/objective-snapshots/mla-c01-official-objectives.txt",
+      "objective_sha256": "91c5a0ed3fae7d2606bfed410b968599e65b38d058eb0047ef72d7b03e0ab4b7"
+    },
+    {
+      "code": "MLA-C02",
+      "guide": "guides/MLA-C02-aws-certified-machine-learning-engineer-associate.md",
+      "guide_sha256_lf": "cdda0545183771f9ac1f00971b5cb703721638bcddb662ca2610c5d87a9d35f0",
+      "objective": "data/objective-snapshots/mla-c02-official-objectives.txt",
+      "objective_sha256": "81bd9db7252f56b633e9666c692b98ad8806a21b3602497b82600522070299d7"
+    },
+    {
+      "code": "ANS-C01",
+      "guide": "guides/ANS-C01-aws-certified-advanced-networking-specialty.md",
+      "guide_sha256_lf": "079082b1fcfe6061c954cd9f96beaa15718654cf9ec3fbd478f75344b9103513",
+      "objective": "data/objective-snapshots/ans-c01-official-objectives.txt",
+      "objective_sha256": "6e641ee1f39d66f182de5da5a84b2664cae1c119bc4377faa184f6de05d64e01"
+    },
+    {
+      "code": "DVA-C02",
+      "guide": "guides/DVA-C02-aws-certified-developer-associate.md",
+      "guide_sha256_lf": "947c5cdeca1ffb3c1bda887050311ea5fc13bb26e07d4f72fdd8b8662ab34451",
+      "objective": "data/objective-snapshots/dva-c02-official-objectives.txt",
+      "objective_sha256": "8fbdbecdbab1931b6307b0afcf33b5bf3cc81937d40563ea4209c4eb18db8b0c"
+    },
+    {
+      "code": "SAP-C02",
+      "guide": "guides/SAP-C02-aws-certified-solutions-architect-professional.md",
+      "guide_sha256_lf": "0d9690bb93f01025d05efb5be0d90e671980c72e32471ab464e2a14c15969449",
+      "objective": "data/objective-snapshots/sap-c02-official-objectives.txt",
+      "objective_sha256": "a26c57062d9b296a68c6977a3eccb000e1dd64d57c67ffff43a4776da813588d"
+    },
+    {
+      "code": "AIP-C01",
+      "guide": "guides/AIP-C01-aws-certified-generative-ai-developer-professional.md",
+      "guide_sha256_lf": "18a7a184a6fd4d6d2b83a93681dbd6e6c2f84986758f0cf87a233599dc7471a3",
+      "objective": "data/objective-snapshots/aip-c01-official-objectives.txt",
+      "objective_sha256": "b5654086954cdac1322092486e79c2b90267a3848117954fd153f40b490597cf"
+    },
+    {
+      "code": "AIF-C01",
+      "guide": "guides/AIF-C01-aws-certified-ai-practitioner.md",
+      "guide_sha256_lf": "0b6a8fc40324117bab02a5507a349e9ffdedbb78118289b1725cf224bef1e205",
+      "objective": "data/objective-snapshots/aif-c01-official-objectives.txt",
+      "objective_sha256": "7ff78e9b2aac28fcc1440e8465c85e881dca3010fdb837e51de552f6ae5118f6"
+    }
+  ],
+  "independent_review": {
+    "type": "Fresh-context AI change and evidence review",
+    "outcome": "Verified guide and objective bindings, PDF availability, AWS release sources and the learning portal redirect. Final guide edits reconcile the January target and language-specific C01 delivery across the dated watch sections."
+  }
+}

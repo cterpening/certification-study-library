@@ -472,6 +472,8 @@ Explain why each answer is true and why the nearest alternative is weaker.
 
 ## Places to learn
 
+The former Standard Exam Prep Plan URL now opens the general AI Practitioner category. The older plan time is a historical estimate. Inspect the current plan and account requirements before scheduling study time. [November training check](../docs/research/2026-11-23-refresh-04.md#aif-c01)
+
 This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Pick the formats that fit you and use the official March 26, 2026 blueprint to close only your gaps. Times are approximate consumption time at normal speed; labs, notes, assessment review, and independent practice add time.
 
 | Resource | Access | Estimated time | Best use and caveat |
