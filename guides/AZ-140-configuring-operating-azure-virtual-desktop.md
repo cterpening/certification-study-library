@@ -145,7 +145,7 @@ The [AVD networking recommendations](https://learn.microsoft.com/en-us/azure/wel
 #### Reverse connect, Shortpath and Multipath
 
 - The service first establishes the brokered reverse-connect transport.
-- [RDP Shortpath](https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-shortpath) attempts a more direct UDP transport for managed or public-network cases and falls back when it cannot establish it.
+- [Direct Stream (DS) Shortpath, called RDP Shortpath in earlier material](https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-shortpath) attempts a more direct UDP transport for managed or public-network cases and falls back when it cannot establish it.
 - QoS marking for managed Shortpath can prioritize latency-sensitive UDP only when the complete managed path honors DSCP; QoS does not create bandwidth.
 - [RDP Multipath](https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-multipath) can maintain multiple transport paths and shift when a path degrades; Microsoft recommends Shortpath as the primary transport for maximum resilience benefits.
 
@@ -299,7 +299,7 @@ Trusted Launch protects boot integrity and secrets with vTPM/VBS capabilities. C
 
 **VERIFY CURRENT:** Defender licensing/onboarding, supported security VM types, Intune multi-session policy support, redirection defaults and App Control terminology/behavior.
 
-> **Related item:** **VERIFY CURRENT:** [Context-based redirections](https://learn.microsoft.com/en-us/windows-365/enterprise/context-based-redirections?tabs=windows-365) are preview and now include AVD RemoteApp sessions. Map a Conditional Access authentication context to the host pool's RDP properties for clipboard, drives, printers or USB. The authentication-context identifier is a link to policy requirements, not an authorization grant by itself. Do not transfer the article's Windows 365 Intune device-policy steps to AVD. For an artifact exercise, specify expected redirection for a compliant device and a BYOD device, then repeat the matrix for desktop and RemoteApp. Actual client/session behavior and overriding policies still need validation.
+> **Related item:** **VERIFY CURRENT:** [Context-based redirections](https://learn.microsoft.com/en-us/windows-365/enterprise/context-based-redirections?tabs=windows-365) apply to AVD desktop and RemoteApp sessions. Check the current prerequisites for the target client and session. Map a Conditional Access authentication context to the host pool's RDP properties for clipboard, drives, printers or USB. The authentication-context identifier is a link to policy requirements, not an authorization grant by itself. Do not transfer the article's Windows 365 Intune device-policy steps to AVD. For an artifact exercise, specify expected redirection for a compliant device and a BYOD device, then repeat the matrix for desktop and RemoteApp. Actual client/session behavior and overriding policies still need validation.
 
 ### Worked endpoint-protection acceptance plan
 

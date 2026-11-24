@@ -41804,6 +41804,406 @@
         "missing_or_error": 0
       },
       "notes": "Reviewed the four official weighted domains and 19 task rows, including the repeated subordinate caption on the fourth card. The guide separates the two assessment sections and three practical challenges from task weights. Earlier validations retain their original snapshot. A full revised guide source validation is pending."
+    },
+    {
+      "id": "az-801-2026-11-23-scoped-refresh",
+      "exam_code": "AZ-801",
+      "guide_path": "guides/AZ-801-configuring-windows-server-hybrid-advanced-services.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-11-23",
+      "outcome": "blocked",
+      "blueprint_snapshot_path": "data/objective-snapshots/az-801-official-objectives.txt",
+      "blueprint_snapshot_sha256": "c279fe648d4e3a6c67df9e119c95335e042937b93b83ffbf6a07d7f0ce51a76f",
+      "objective_coverage": [
+        {
+          "objective_group": "Secure Windows Server on-premises and hybrid infrastructures",
+          "guide_sections": [
+            "Sections 1–2",
+            "Secure file-service and cyber-recovery scenarios",
+            "Lab 1"
+          ]
+        },
+        {
+          "objective_group": "Implement and manage Windows Server high availability",
+          "guide_sections": [
+            "Section 3",
+            "Secure file-service scenario",
+            "Labs 2–3"
+          ]
+        },
+        {
+          "objective_group": "Implement disaster recovery",
+          "guide_sections": [
+            "Section 4",
+            "Secure file-service and cyber-recovery scenarios",
+            "Labs 4–5"
+          ]
+        },
+        {
+          "objective_group": "Migrate servers and workloads",
+          "guide_sections": [
+            "Section 5",
+            "Legacy application migration scenario",
+            "Labs 6–7"
+          ]
+        },
+        {
+          "objective_group": "Monitor and troubleshoot Windows Server environments",
+          "guide_sections": [
+            "Section 6",
+            "All integrated scenarios",
+            "Lab 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": false,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": false,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 98,
+        "reachable": 95,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "Targeted issuer, guide and resource checks are documented in the November 23 packet. The objective coverage below is retained from the prior review. Full source validation of the revised guide remains pending."
+    },
+    {
+      "id": "ab-100-2026-11-23-scoped-refresh",
+      "exam_code": "AB-100",
+      "guide_path": "guides/AB-100-agentic-ai-business-solutions-architect.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-11-23",
+      "outcome": "blocked",
+      "blueprint_snapshot_path": "data/objective-snapshots/ab-100-official-objectives.txt",
+      "blueprint_snapshot_sha256": "cbe7ecb510ab59d0da6f89dbc8f22e7ded45b008d0750c13ee07388ca3717526",
+      "objective_coverage": [
+        {
+          "objective_group": "Analyze requirements for AI-powered business solutions",
+          "guide_sections": [
+            "Classify the work before assigning autonomy",
+            "2. Analyze requirements and grounding data",
+            "Evaluate grounding data"
+          ]
+        },
+        {
+          "objective_group": "Design overall AI strategy for business solutions",
+          "guide_sections": [
+            "Apply the Cloud Adoption Framework as a change system",
+            "Create an AI Center of Excellence that enables delivery",
+            "Match platform to the experience and control required",
+            "Design multi-agent responsibility",
+            "Worked platform elimination and shared-tool change",
+            "Orchestrate prebuilt agents and app experiences",
+            "Copilot Studio design",
+            "Apply layered control",
+            "Map the actual governance coverage",
+            "Evaluate grounding data",
+            "Build, buy, or extend",
+            "Extend Microsoft 365 Copilot",
+            "Decide when a customized small language model fits",
+            "Data and model ALM",
+            "Govern a prompt library",
+            "Build a layered test strategy",
+            "Worked boundary: service case resolution",
+            "7. Orchestrate Dynamics 365, Microsoft 365, and Power Platform capabilities"
+          ]
+        },
+        {
+          "objective_group": "Evaluate the costs and benefits of an AI-powered business solution",
+          "guide_sections": [
+            "Establish value before launch",
+            "Worked ROI check with synthetic assumptions",
+            "Build, buy, or extend",
+            "Use model routing deliberately"
+          ]
+        },
+        {
+          "objective_group": "Design AI and agents for business solutions",
+          "guide_sections": [
+            "Customer experience, service, sales, and Contact Center",
+            "Agent pattern catalog",
+            "Event-driven work has a different identity boundary",
+            "Match a Foundry capability to the input and result",
+            "Worked platform elimination and shared-tool change",
+            "Propose code-first generative pages and an agent feed",
+            "Copilot Studio design",
+            "Evaluate grounding data",
+            "Data and model ALM",
+            "Connect Power Apps and business processes",
+            "Natural-language approach selection"
+          ]
+        },
+        {
+          "objective_group": "Design extensibility of AI solutions",
+          "guide_sections": [
+            "Decide when a customized small language model fits",
+            "Data and model ALM",
+            "Extend Microsoft 365 Copilot",
+            "Copilot Studio design",
+            "Model Context Protocol and Agent2Agent",
+            "Map the actual governance coverage",
+            "Worked platform elimination and shared-tool change",
+            "Computer use, reasoning, and voice",
+            "Worked boundary: service case resolution"
+          ]
+        },
+        {
+          "objective_group": "Orchestrate configuration for prebuilt agents and apps",
+          "guide_sections": [
+            "Orchestrate prebuilt agents and app experiences",
+            "Customer experience, service, sales, and Contact Center",
+            "Add finance and operations knowledge safely"
+          ]
+        },
+        {
+          "objective_group": "Analyze, monitor, and tune AI-powered business solutions",
+          "guide_sections": [
+            "Use an operational measurement stack",
+            "Tune the right layer",
+            "Evaluate outcomes and trajectories"
+          ]
+        },
+        {
+          "objective_group": "Manage the testing of AI-powered business solutions",
+          "guide_sections": [
+            "Build a layered test strategy",
+            "Exercise 15: Effective-control and evaluation-identity review",
+            "Govern a prompt library",
+            "Exercise 8: Dynamics 365 cross-workload orchestration"
+          ]
+        },
+        {
+          "objective_group": "Design the ALM process for AI-powered business solutions",
+          "guide_sections": [
+            "Data and model ALM",
+            "Treat the solution as a bundle of versioned artifacts",
+            "Exercise 15: Effective-control and evaluation-identity review",
+            "Foundry versions, endpoints, and identity",
+            "Add finance and operations knowledge safely"
+          ]
+        },
+        {
+          "objective_group": "Design responsible AI, security, governance, risk management, and compliance",
+          "guide_sections": [
+            "Apply layered control",
+            "Defend against prompt manipulation",
+            "Map the actual governance coverage",
+            "Exercise 15: Effective-control and evaluation-identity review",
+            "Use risk tiers",
+            "Data and model ALM",
+            "Validate residency and data movement",
+            "Evaluate grounding data",
+            "Preserve auditability"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": false,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": false,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 84,
+        "reachable": 82,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Targeted issuer, guide and resource checks are documented in the November 23 packet. The objective coverage below is retained from the prior review. Full source validation of the revised guide remains pending."
+    },
+    {
+      "id": "ab-410-2026-11-23-scoped-refresh",
+      "exam_code": "AB-410",
+      "guide_path": "guides/AB-410-building-intelligent-applications.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-11-23",
+      "outcome": "blocked",
+      "blueprint_snapshot_path": "data/objective-snapshots/ab-410-official-objectives.txt",
+      "blueprint_snapshot_sha256": "390c1040388541915573525f59b9f2f28753f65d0a3a50e9221dd7ab11c68142",
+      "objective_coverage": [
+        {
+          "objective_group": "Design Microsoft Power Platform solutions by using AI-enabled tools",
+          "guide_sections": [
+            "Start with outcome, process, data, and risk",
+            "Recommend an environment and governance boundary",
+            "Apply a solution and ALM strategy"
+          ]
+        },
+        {
+          "objective_group": "Build data models",
+          "guide_sections": [
+            "Build a Dataverse model from business meaning",
+            "Worked build — request data before app screens",
+            "Distinguish prompt columns, row summaries, and deterministic columns",
+            "Worked build — a triage app and its evidence",
+            "Configure Dataverse security as layered authorization"
+          ]
+        },
+        {
+          "objective_group": "Create model-driven apps",
+          "guide_sections": [
+            "Worked build — a triage app and its evidence",
+            "Build a model-driven app from the data model"
+          ]
+        },
+        {
+          "objective_group": "Create canvas apps",
+          "guide_sections": [
+            "Worked build — data, selection and a verified save",
+            "Build a canvas app that remains usable and correct",
+            "Worked example 2 — A plausible gallery can miss most matches",
+            "Automate from the app and handle failures",
+            "Worked choice — one calculation and one reusable experience",
+            "Reuse formulas and components deliberately",
+            "Create an agent from a canvas app with a controlled boundary"
+          ]
+        },
+        {
+          "objective_group": "Create cloud flows",
+          "guide_sections": [
+            "Choose the cloud-flow trigger and connection model",
+            "Compose reliable flow control and approvals",
+            "Worked example 4 — Separate interactive and business deadlines",
+            "Worked flow — classify a small request batch",
+            "Worked build — one prompt, two callers"
+          ]
+        },
+        {
+          "objective_group": "Create prompts and models in AI Hub",
+          "guide_sections": [
+            "Worked build — one prompt, two callers",
+            "Build a prompt as a governed input-output contract",
+            "Worked build — consume an OCR model through both surfaces"
+          ]
+        },
+        {
+          "objective_group": "Implement business and process logic",
+          "guide_sections": [
+            "Select the correct business-logic surface",
+            "Worked build — a guided triage process",
+            "Worked example 6 — An aggregate can be correct for the wrong instant"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": false,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": false,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 59,
+        "reachable": 58,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "Targeted issuer, guide and resource checks are documented in the November 23 packet. The objective coverage below is retained from the prior review. Full source validation of the revised guide remains pending."
+    },
+    {
+      "id": "ab-620-2026-11-23-scoped-refresh",
+      "exam_code": "AB-620",
+      "guide_path": "guides/AB-620-designing-building-integrated-ai-agent-solutions.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-11-23",
+      "outcome": "blocked",
+      "blueprint_snapshot_path": "data/objective-snapshots/ab-620-official-objectives.txt",
+      "blueprint_snapshot_sha256": "8b9f6ca0601cf631a000763ce7a0cca802a0177c66d7a4e3cc29d84d52188dfc",
+      "objective_coverage": [
+        {
+          "objective_group": "Plan an agent solution",
+          "guide_sections": [
+            "Plan enterprise integration as trust boundaries",
+            "Choose the identity strategy before building tools",
+            "Design channels and deployment together",
+            "Plan responsible AI and governance as lifecycle controls",
+            "Build an architecture contract before a canvas"
+          ]
+        },
+        {
+          "objective_group": "Create and monitor agent flows in Copilot Studio",
+          "guide_sections": [
+            "Create bounded agent flows"
+          ]
+        },
+        {
+          "objective_group": "Configure topics",
+          "guide_sections": [
+            "Use topics for explicit conversational control",
+            "Design response formatting and Adaptive Cards",
+            "Use custom prompts and knowledge inside topics",
+            "Connect enterprise knowledge safely",
+            "Manage variables as application state"
+          ]
+        },
+        {
+          "objective_group": "Connect to enterprise knowledge sources",
+          "guide_sections": [
+            "Worked configuration: two sources with different retrieval paths",
+            "Connect enterprise knowledge safely"
+          ]
+        },
+        {
+          "objective_group": "Add tools to agents",
+          "guide_sections": [
+            "Use computer use only where its risk is justified",
+            "Configure MCP tools deliberately",
+            "Worked configuration: expose one read-only operation"
+          ]
+        },
+        {
+          "objective_group": "Configure multi-agent collaboration from Copilot Studio",
+          "guide_sections": [
+            "Choose child versus connected agents",
+            "Integrate current Foundry agents",
+            "Worked configuration: connect an independently owned agent",
+            "Integrate Fabric data agents",
+            "Integrate external agents with A2A"
+          ]
+        },
+        {
+          "objective_group": "Integrate agents with Azure",
+          "guide_sections": [
+            "Integrate external agents with A2A",
+            "Integrate Azure AI Search and Foundry models",
+            "Monitor with native analytics and Application Insights"
+          ]
+        },
+        {
+          "objective_group": "Evaluate agent performance",
+          "guide_sections": [
+            "Build test sets from requirements and risks",
+            "Choose the evaluation method deliberately"
+          ]
+        },
+        {
+          "objective_group": "Implement application lifecycle management (ALM) for agents in Copilot Studio",
+          "guide_sections": [
+            "Package the complete dependency graph",
+            "Separate configuration from solution logic",
+            "Worked extension: make an evaluation result a real deployment gate"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": false,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": false,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 62,
+        "reachable": 60,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Targeted issuer, guide and resource checks are documented in the November 23 packet. The objective coverage below is retained from the prior review. Full source validation of the revised guide remains pending."
     }
 ]
 }

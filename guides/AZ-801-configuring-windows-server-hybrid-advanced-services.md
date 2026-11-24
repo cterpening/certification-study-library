@@ -5,19 +5,21 @@ official_blueprint: https://learn.microsoft.com/en-us/credentials/certifications
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: retired
-last_verified: 2026-10-28
+review_status: review-required
+last_verified: 2026-11-23
 upcoming_change_status: none-announced
 upcoming_change_checked: 2026-10-28
 ---
 
 # AZ-801 Configuring Windows Server Hybrid Advanced Services Study Guide
 
+**Review status.** The November 23 check covered the published exam information and the resources updated below. The previous full source review is historical. Full validation of this revision is pending.
+
 [November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-03.md#az-801)
 
 > **RETIRED — verified October 28, 2026.** Microsoft explicitly confirms that AZ-801 retired September 30, 2026, at 5:00 PM Central Standard Time. Use [AZ-802](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802) for current exam preparation. This guide preserves historical objectives and useful technical foundations; it is not an available booking route. Earlier technical evidence gaps and unexecuted labs remain.
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The full guide, all 115 detailed objectives, citations and learning examples were reviewed on September 27, 2026. This does not establish live lab execution or guarantee future currency. See the [deep-review findings](../docs/research/2026-09-27-az-801-deep-review.md) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-801-coverage-record). The [official AZ-801 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-801) is authoritative.
+> **Independent AI-assisted resource — HISTORICAL SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The full guide, all 115 detailed objectives, citations and learning examples were reviewed on September 27, 2026. This does not establish live lab execution or guarantee future currency. See the [deep-review findings](../docs/research/2026-09-27-az-801-deep-review.md) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-801-coverage-record). The [official AZ-801 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-801) is authoritative.
 
 **Current baseline:** Skills measured as of October 6, 2025<br>
 **Upcoming blueprint change:** None tracked for the retired exam; the accepted objective snapshot is archived.<br>
@@ -809,7 +811,7 @@ GPO migration additionally requires backup/import or copy, Migration Table mappi
 
 #### Primary references
 
-- [Azure Migrate documentation](https://learn.microsoft.com/en-us/azure/migrate/)
+- [Azure Catalyst documentation (formerly Azure Migrate)](https://learn.microsoft.com/en-us/azure/migrate/)
 - [Azure Migrate appliance](https://learn.microsoft.com/en-us/azure/migrate/migrate-appliance)
 - [Windows Server migration and upgrade](https://learn.microsoft.com/en-us/windows-server/get-started/upgrade-overview)
 - [Storage Migration Service cutover](https://learn.microsoft.com/en-us/windows-server/storage/storage-migration-service/cutover)

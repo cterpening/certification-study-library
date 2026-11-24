@@ -431,7 +431,7 @@ Choose an infrastructure/application delivery design that provides versioned art
 
 ### Migration design
 
-Use the [Cloud Adoption Framework](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/) to connect business outcomes, readiness, landing zones, migration, modernization, governance, and operations. Use [Azure Migrate](https://learn.microsoft.com/en-us/azure/migrate/migrate-services-overview) and workload-specific tools for discovery, assessment, dependency analysis, business case, replication, and migration where supported.
+Use the [Cloud Adoption Framework](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/) to connect business outcomes, readiness, landing zones, migration, modernization, governance, and operations. Use [Azure Catalyst (formerly Azure Migrate)](https://learn.microsoft.com/en-us/azure/migrate/migrate-services-overview) and workload-specific tools for discovery, assessment, dependency analysis, business case, replication, and migration where supported.
 
 For each workload, document:
 

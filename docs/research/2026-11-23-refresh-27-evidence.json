@@ -1,0 +1,236 @@
+{
+  "date": "2026-11-23",
+  "scope": "Targeted learning-resource and citation rechecks. Course delivery and paid interiors were outside this review.",
+  "exams": [
+    {
+      "code": "AZ-120",
+      "observations": [
+        {
+          "observation": "Microsoft now calls the service Azure Workload Center for SAP. The guide identifies its role alongside the deployment automation framework.",
+          "source_ids": [
+            "az-120-azure-center-sap"
+          ],
+          "urls": [
+            "https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/overview"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "AZ-140",
+      "observations": [
+        {
+          "observation": "Microsoft documents Direct Stream Shortpath, formerly RDP Shortpath, and current context-based redirection support for desktop and RemoteApp sessions. Verify the client and session prerequisites.",
+          "source_ids": [
+            "az-140-rdp-shortpath",
+            "az140-context-based-redirections"
+          ],
+          "urls": [
+            "https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-shortpath",
+            "https://learn.microsoft.com/en-us/windows-365/enterprise/context-based-redirections?tabs=windows-365"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "AZ-801",
+      "observations": [
+        {
+          "observation": "Microsoft now uses Azure Catalyst for the migration service formerly called Azure Migrate. The historical exam remains tied to the earlier terminology.",
+          "source_ids": [
+            "az-801-doc-48-azure-migrate"
+          ],
+          "urls": [
+            "https://learn.microsoft.com/en-us/azure/migrate/"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "AZ-305",
+      "observations": [
+        {
+          "observation": "Azure Catalyst is the current service name for Azure Migrate. The guide connects the name to its migration planning and assessment role.",
+          "source_ids": [
+            "azure-migrate-services-overview"
+          ],
+          "urls": [
+            "https://learn.microsoft.com/en-us/azure/migrate/migrate-services-overview"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "AZ-900",
+      "observations": [
+        {
+          "observation": "The current service name is Azure Catalyst. Earlier material uses Azure Migrate.",
+          "source_ids": [
+            "azure-migrate-services-overview"
+          ],
+          "urls": [
+            "https://learn.microsoft.com/en-us/azure/migrate/migrate-services-overview"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "AB-100",
+      "observations": [
+        {
+          "observation": "The preview upgrade creates a separate Microsoft Copilot harness agent from the standard agent. Azure AI Search grounding does not carry over. Verify authentication, channel and knowledge support before choosing the harness.",
+          "source_ids": [
+            "copilot-studio-agent-build-overview"
+          ],
+          "urls": [
+            "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/overview",
+            "https://learn.microsoft.com/en-us/microsoft-copilot-studio/upgrade-to-microsoft-copilot-from-standard-harness",
+            "https://learn.microsoft.com/en-us/microsoft-copilot-studio/harnesses-overview",
+            "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/memory-overview"
+          ]
+        }
+      ],
+      "current_harness_evidence": {
+        "observation": "Microsoft’s November 13 guide distinguishes the Microsoft Copilot, Customer Conversation and standard runtimes. Customer Conversation supports voice, web chat and escalation to a human. The preview upgrade copies a standard agent to the Microsoft Copilot harness. The November 20 memory page describes a regional rollout to general availability.",
+        "urls": [
+          "https://learn.microsoft.com/en-us/microsoft-copilot-studio/harnesses-overview",
+          "https://learn.microsoft.com/en-us/microsoft-copilot-studio/upgrade-to-microsoft-copilot-from-standard-harness",
+          "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/memory-overview"
+        ]
+      }
+    },
+    {
+      "code": "AB-410",
+      "observations": [
+        {
+          "observation": "The one-way preview upgrade copies a standard agent to a Microsoft Copilot harness agent. Review supported capabilities before migrating.",
+          "source_ids": [
+            "copilot-studio-agent-build-overview"
+          ],
+          "urls": [
+            "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/overview",
+            "https://learn.microsoft.com/en-us/microsoft-copilot-studio/upgrade-to-microsoft-copilot-from-standard-harness",
+            "https://learn.microsoft.com/en-us/microsoft-copilot-studio/harnesses-overview",
+            "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/memory-overview"
+          ]
+        }
+      ],
+      "current_harness_evidence": {
+        "observation": "Microsoft’s November 13 guide distinguishes the Microsoft Copilot, Customer Conversation and standard runtimes. Customer Conversation supports voice, web chat and escalation to a human. The preview upgrade copies a standard agent to the Microsoft Copilot harness. The November 20 memory page describes a regional rollout to general availability.",
+        "urls": [
+          "https://learn.microsoft.com/en-us/microsoft-copilot-studio/harnesses-overview",
+          "https://learn.microsoft.com/en-us/microsoft-copilot-studio/upgrade-to-microsoft-copilot-from-standard-harness",
+          "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/memory-overview"
+        ]
+      }
+    },
+    {
+      "code": "AB-620",
+      "observations": [
+        {
+          "observation": "The preview harness upgrade creates a copy. Feature availability and knowledge-source support vary by harness.",
+          "source_ids": [
+            "copilot-studio-agent-build-overview"
+          ],
+          "urls": [
+            "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/overview",
+            "https://learn.microsoft.com/en-us/microsoft-copilot-studio/upgrade-to-microsoft-copilot-from-standard-harness",
+            "https://learn.microsoft.com/en-us/microsoft-copilot-studio/harnesses-overview",
+            "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/memory-overview"
+          ]
+        }
+      ],
+      "current_harness_evidence": {
+        "observation": "Microsoft’s November 13 guide distinguishes the Microsoft Copilot, Customer Conversation and standard runtimes. Customer Conversation supports voice, web chat and escalation to a human. The preview upgrade copies a standard agent to the Microsoft Copilot harness. The November 20 memory page describes a regional rollout to general availability.",
+        "urls": [
+          "https://learn.microsoft.com/en-us/microsoft-copilot-studio/harnesses-overview",
+          "https://learn.microsoft.com/en-us/microsoft-copilot-studio/upgrade-to-microsoft-copilot-from-standard-harness",
+          "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/memory-overview"
+        ]
+      },
+      "product_specific_evidence": {
+        "observation": "The Fabric procedure retains an earlier harness name for its Fabric IQ Data MCP tool. The telemetry preview names both standard and Microsoft Copilot harnesses and qualifies the logs it exposes to Application Insights. Separate product procedures describe same-environment connected Copilot agents and connecting a Foundry agent to the Microsoft Copilot harness.",
+        "urls": [
+          "https://learn.microsoft.com/en-us/fabric/data-science/data-agent-microsoft-copilot-studio-tool",
+          "https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-environment-level-agent-telemetry",
+          "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/add-agent-connected",
+          "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/add-agent-foundry",
+          "https://learn.microsoft.com/en-us/training/modules/design-multi-agent-solutions-copilot-studio/3-design-agent-organization"
+        ]
+      }
+    }
+  ],
+  "review_inputs": [
+    {
+      "code": "AZ-120",
+      "guide": "guides/AZ-120-planning-administering-azure-sap-workloads.md",
+      "guide_sha256_lf": "3d7159668925a46ead9123b70446f3072d82da7dfcda2d014c804c1d392aafde",
+      "objective": "data/objective-snapshots/az-120-official-objectives.txt",
+      "objective_sha256": "9ef2824a901a8ba33075de4315d56f6bd0c7e9b5887028f27c16e6645e6eb3ff"
+    },
+    {
+      "code": "AZ-140",
+      "guide": "guides/AZ-140-configuring-operating-azure-virtual-desktop.md",
+      "guide_sha256_lf": "d590421d18054c1f35faa6c50e68d15b233f0f93609ca9dae50bfbcce4af9ac4",
+      "objective": "data/objective-snapshots/az-140-official-objectives.txt",
+      "objective_sha256": "d40f010042124a6e28c81a7f783b6127e3b7ebf7bb99d9b3ddfccdd40dcede84"
+    },
+    {
+      "code": "AZ-801",
+      "guide": "guides/AZ-801-configuring-windows-server-hybrid-advanced-services.md",
+      "guide_sha256_lf": "a8c0f20eca1a7848c39866e83f5a9cd6ceee7ab4ef316b684620f57fcb254fbf",
+      "objective": "data/objective-snapshots/az-801-official-objectives.txt",
+      "objective_sha256": "c279fe648d4e3a6c67df9e119c95335e042937b93b83ffbf6a07d7f0ce51a76f"
+    },
+    {
+      "code": "AZ-305",
+      "guide": "guides/AZ-305-designing-microsoft-azure-infrastructure-solutions.md",
+      "guide_sha256_lf": "33aac77d1dfb6e59b43c57a07b789cd0cbb012e0bc8d44dd9b62f9340b54551c",
+      "objective": "data/objective-snapshots/az-305-official-objectives.txt",
+      "objective_sha256": "7e5e8671b6ba67938e71f71261f92e0d9798f27ec94f79c75e3ea6310f917df2"
+    },
+    {
+      "code": "AZ-900",
+      "guide": "guides/AZ-900-microsoft-azure-fundamentals.md",
+      "guide_sha256_lf": "c8386f2d487644a10d565d701a8b4995a4f54823b4af052f363496395a2d7bc6",
+      "objective": "data/objective-snapshots/az-900-official-objectives.txt",
+      "objective_sha256": "8b4c89d325b3ce339eb881aa2dc4b251888e6d7a07d6351d81bcc2123b1c4449"
+    },
+    {
+      "code": "AB-100",
+      "guide": "guides/AB-100-agentic-ai-business-solutions-architect.md",
+      "guide_sha256_lf": "6b4fee2c6c24e5f309786ff8f51193e37204704266b3f157bacf6fb8d299a62e",
+      "objective": "data/objective-snapshots/ab-100-official-objectives.txt",
+      "objective_sha256": "cbe7ecb510ab59d0da6f89dbc8f22e7ded45b008d0750c13ee07388ca3717526"
+    },
+    {
+      "code": "AB-410",
+      "guide": "guides/AB-410-building-intelligent-applications.md",
+      "guide_sha256_lf": "66302928fac78695dd5e7564a1410d8f5485caa9c32439f1c7ced49eb661cc11",
+      "objective": "data/objective-snapshots/ab-410-official-objectives.txt",
+      "objective_sha256": "390c1040388541915573525f59b9f2f28753f65d0a3a50e9221dd7ab11c68142"
+    },
+    {
+      "code": "AB-620",
+      "guide": "guides/AB-620-designing-building-integrated-ai-agent-solutions.md",
+      "guide_sha256_lf": "cce160edc10a952d04a1a0d2c28df630305ae12b36feb899639ecf83e96b5e4f",
+      "objective": "data/objective-snapshots/ab-620-official-objectives.txt",
+      "objective_sha256": "8b9f6ca0601cf631a000763ce7a0cca802a0177c66d7a4e3cc29d84d52188dfc"
+    }
+  ],
+  "independent_review": {
+    "method": "Fresh-context read-only AI review of changed content and source evidence",
+    "rubric": "docs/AI-AUDIT.md, version 2",
+    "reviewed_tree": "7b1446e45c3c4ca1431b71ba98f03ae6bcc2251c",
+    "summary": "Verified all eight staged guide and objective hashes. Rechecked the corrected Copilot Studio runtime comparison, course terminology, upgrade-copy answer, regional memory release, telemetry limitation and related product procedures against the Microsoft sources. Azure service and transport naming match current product documentation. The scoped review and historical full-review disclosures remain explicit.",
+    "findings": [],
+    "validation": [
+      "unit tests",
+      "repository validation",
+      "reviewed learning resource check",
+      "site preparation",
+      "strict MkDocs build",
+      "generated site validation"
+    ]
+  }
+}

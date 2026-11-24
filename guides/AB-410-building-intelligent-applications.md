@@ -6,12 +6,14 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: review-required
-last_verified: 2026-10-28
+last_verified: 2026-11-23
 upcoming_change_status: scheduled
 upcoming_change_checked: 2026-11-20
 ---
 
 # AB-410 Building Intelligent Applications Study Guide
+
+**Review status.** The November 23 check covered the published exam information and the resources updated below. The previous full source review is historical. Full validation of this revision is pending.
 
 [November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-01.md#ab-410)
 
@@ -44,7 +46,7 @@ The [September 28 deep review](../docs/research/2026-09-28-ab-410-deep-review.md
 
 The prompt-knowledge documentation contains an unresolved SAP support discrepancy: its connector instructions mention SAP, but its limitations list omits it. Treat that path as unverified rather than promising support. Other listed connectors still require their documented execution context and permissions.
 
-Before following an older Power Apps, Power Automate, or Power Virtual Agents exercise, check Microsoft's [Power Platform deprecation ledger](https://learn.microsoft.com/en-us/power-platform/important-changes-coming). For current agent-building terminology, compare the blueprint with the [GitHub Copilot Harness agent overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/overview). A renamed surface or retired client does not by itself change the underlying exam objective; record the current object, supported replacement, and security boundary.
+Before following an older Power Apps, Power Automate, or Power Virtual Agents exercise, check Microsoft's [Power Platform deprecation ledger](https://learn.microsoft.com/en-us/power-platform/important-changes-coming). For current agent-building terminology, compare the blueprint with the [Microsoft Copilot harness agent overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/overview). A renamed surface or retired client does not by itself change the underlying exam objective; record the current object, supported replacement, and security boundary.
 
 Future business-application features now move to the [AI at Work roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap) under the [September 2026 transition](https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/). Treat roadmap dates as volatile planning evidence. The independent courses listed later are useful for a second explanation and guided build, but their screenshots and names require validation against Microsoft Learn.
 
@@ -242,7 +244,7 @@ The blueprint includes creating a Copilot Studio agent from a canvas app. Define
 
 The [app-to-agent procedure](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/agent-builder) extracts metadata and convertible actions from a **canvas app**, then requires review and Copilot Studio testing/publishing. Missing connections can leave actions absent. Its prerequisites include Dataverse, the publish-AI setting, a supported Copilot Studio solution version and allowing unmanaged customization in the authoring environment. Do not weaken production controls to reproduce a tutorial.
 
-Keep that creation route distinct from [Copilot Studio harness selection](https://learn.microsoft.com/en-us/microsoft-copilot-studio/harnesses-overview). Current GitHub Copilot harness agents and standard agents cannot simply be transferred between harnesses. The name identifies Copilot Studio technology; it does not imply that the agent runs in the GitHub Copilot service. Verify the chosen harness's tools, billing and publishing support.
+For a reasoned workflow, a customer voice or chat service, or a structured topic flow, compare the Microsoft Copilot, Customer Conversation and standard runtimes in [Copilot Studio harness selection](https://learn.microsoft.com/en-us/microsoft-copilot-studio/harnesses-overview). The [preview upgrade](https://learn.microsoft.com/en-us/microsoft-copilot-studio/upgrade-to-microsoft-copilot-from-standard-harness) creates a separate Microsoft Copilot harness agent from a standard-harness agent. Review the migration report, tools, billing, grounding and publishing support before rollout. Microsoft Copilot harness agents cannot transfer back to the standard harness.
 
 Test benign, ambiguous, unsupported, sensitive, adversarial, and prompt-injection inputs. Verify citations or grounding where available, authorization for every action, confirmation before consequential operations, and a useful fallback when confidence is low. Monitor task success, unsafe output, tool failures, latency, cost, and human escalation—not just whether the agent produced fluent text.
 

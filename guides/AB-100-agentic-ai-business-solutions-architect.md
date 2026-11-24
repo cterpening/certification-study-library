@@ -6,12 +6,14 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: review-required
-last_verified: 2026-11-20
+last_verified: 2026-11-23
 upcoming_change_status: none-announced
 upcoming_change_checked: 2026-11-20
 ---
 
 # AB-100 Agentic AI Business Solutions Architect Study Guide
+
+**Review status.** The November 23 check covered the published exam information and the resources updated below. The previous full source review is historical. Full validation of this revision is pending.
 
 [November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-01.md#ab-100)
 
@@ -31,7 +33,7 @@ upcoming_change_checked: 2026-11-20
 
 ## October 28 implementation notes
 
-**Confirmed — VERIFY CURRENT (October 28, 2026).** Current GitHub Copilot harness agents support solutions/ALM, but existing agents cannot be transferred between standard and GitHub Copilot harnesses. Recheck capability fit before migration: the table still excludes Azure AI Search knowledge, manual/custom authentication and several publication channels for the GitHub Copilot harness. The harness is Copilot Studio technology; its name does not mean agent customer data is processed by the GitHub Copilot service. [Agents powered by the GitHub Copilot Harness overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/overview)
+Microsoft’s [harness comparison](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/overview) lists solution management support for Microsoft Copilot harness agents. A [preview upgrade](https://learn.microsoft.com/en-us/microsoft-copilot-studio/upgrade-to-microsoft-copilot-from-standard-harness) creates a new Microsoft Copilot harness agent from a standard-harness agent and reports what carried over. Review tools, instructions and grounding before rollout. The matrix excludes Azure AI Search knowledge, manual/custom authentication and Dynamics 365 Contact Center from the Microsoft Copilot harness. An agent on that harness cannot transfer back to the standard harness.
 
 These are bounded operational updates, not a completed objective rebaseline. Product and tenant exercises were not run. Earlier unresolved support and documentation gaps remain.
 
@@ -73,7 +75,7 @@ You can complete the session on paper without a tenant. Write your decision befo
 
 Microsoft now publishes Dynamics 365, Power Platform, and Dataverse disclosures on the roadmap. The August transition announcement targeted November 15 for Release Planner retirement. On November 20 the old Planner address redirected to the Microsoft Copilot Roadmap. Use it for planning leads, Microsoft Learn for supported behavior, and Message Center for tenant rollout. [AI at Work roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap) · [transition announcement](https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/)
 
-The current [GitHub Copilot Harness agent overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/overview), [Agent 365 GA announcement](https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/), and [Microsoft 365 Copilot release notes](https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes) are volatility sources. Product-level GA does not make every integration GA. The cross-vendor NIST, OWASP, Anthropic, AWS, Google, and OpenAI material cited later provides useful design corroboration, but the Microsoft blueprint remains the scope authority.
+The current [Microsoft Copilot harness agent overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/overview), [Agent 365 GA announcement](https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/), and [Microsoft 365 Copilot release notes](https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes) are volatility sources. Product-level GA does not make every integration GA. The cross-vendor NIST, OWASP, Anthropic, AWS, Google, and OpenAI material cited later provides useful design corroboration, but the Microsoft blueprint remains the scope authority.
 
 ## Objective map
 
@@ -460,7 +462,7 @@ Define role, goal, instructions, knowledge, tools, memory, triggers, response co
 
 ### Copilot Studio design
 
-**Choose the runtime first.** Microsoft's [harness overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/harnesses-overview) distinguishes the standard harness, the GitHub Copilot harness, and the Copilot chat harness. A harness controls execution around the model. Standard agents expose familiar topics and agent flows; the GitHub Copilot harness supports reasoning-led work across tools and files; the chat harness extends Microsoft 365 Copilot Chat with enterprise knowledge. Standard agents can also use generative orchestration: “standard” does not mean every path is deterministic. The GitHub Copilot harness runs within Copilot Studio's service boundaries; its name does not imply that business data goes to the GitHub Copilot service. Match feature, billing, channel, evaluation, and ALM documentation to the selected harness.
+**Choose the runtime first.** The [harness overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/harnesses-overview) describes three choices. Use Microsoft Copilot for an agent that reasons across tools and files. Use Customer Conversation for customer voice or web chat with a defined escalation path to a person. Use standard for topic-driven requests and predictable flows. Match knowledge, authentication, channel, billing and support to the chosen runtime.
 
 Use topics for deterministic conversational paths and business rules where explicit control matters. Design triggers, variables, conditions, questions, actions, error paths, and fallback. Generative orchestration is appropriate when the agent must select knowledge and actions flexibly, but its tools and policy still need hard boundaries.
 
@@ -863,7 +865,7 @@ Build an original matrix for a certified case connector, custom refund connector
 
 #### Worked platform elimination and shared-tool change
 
-The service-case assistant requires Azure AI Search knowledge, manual/custom authentication and a Contact Center channel. The [current harness capability matrix](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/overview) excludes those capabilities from the GitHub Copilot harness. ALM support alone does not make that candidate fit; select a platform meeting all requirements or explicitly change the requirements and tests. Existing agents cannot simply transfer harnesses.
+The service-case assistant requires Azure AI Search knowledge, manual/custom authentication and a Contact Center channel. The [current harness capability matrix](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/overview) excludes those capabilities from the Microsoft Copilot harness. ALM support alone does not make that candidate fit; select a platform meeting all requirements or explicitly change the requirements and tests. The [preview upgrade](https://learn.microsoft.com/en-us/microsoft-copilot-studio/upgrade-to-microsoft-copilot-from-standard-harness) creates a copy from a standard-harness agent, but does not carry over Azure AI Search grounding.
 
 > **Related item:** A [Foundry Toolbox](https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/toolbox-overview) default-version promotion can change tools without redeploying consuming agents. Include shared-tool version, effective identity, allowed/denied operations and impacted consumers in the release/rollback record. A stable endpoint and an unchanged agent package do not prove unchanged behavior.
 
@@ -1017,7 +1019,7 @@ Allow 20-30 minutes. This original tabletop uses synthetic records; it executes 
 
 ### Exercise 15: Effective-control and evaluation-identity review
 
-Complete the four-integration policy matrix above as a tabletop. Compare standard and GitHub Copilot harness candidates against the named knowledge/auth/channel requirements. Then evaluate the release record under an intended user and a restricted user; native Copilot Studio evaluations run as the signed-in user, so a missing restricted-user run is missing evidence, even when every completed answer passes. Assign policy, deployment, runtime-test, approval and incident owners separately. Include a shared-tool default promotion and group-removal case; state what actual tests and effective-policy observations are needed before release or rollback. No policy change, model call, deployment or customer action is required for this worksheet.
+Complete the four-integration policy matrix above as a tabletop. Compare standard, Microsoft Copilot and Customer Conversation harness candidates against the named knowledge/auth/channel requirements. Then evaluate the release record under an intended user and a restricted user; native Copilot Studio evaluations run as the signed-in user, so a missing restricted-user run is missing evidence, even when every completed answer passes. Assign policy, deployment, runtime-test, approval and incident owners separately. Include a shared-tool default promotion and group-removal case; state what actual tests and effective-policy observations are needed before release or rollback. No policy change, model call, deployment or customer action is required for this worksheet.
 
 ---
 

@@ -324,7 +324,7 @@ Encryption is a dependency in recovery. A backup without the required keys, cert
 
 ### Automate repeatable deployment
 
-ARM templates and Bicep describe Azure resources; OS/database/SAP configuration needs additional automation. Microsoft’s [SAP Deployment Automation Framework](https://learn.microsoft.com/en-us/azure/sap/automation/tutorial) uses a control plane, workload zones and system deployments, with Terraform and Ansible. [Azure Center for SAP solutions](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/overview) offers guided deployment plus registration and management through a Virtual Instance for SAP solutions (VIS).
+ARM templates and Bicep describe Azure resources; OS/database/SAP configuration needs additional automation. Microsoft’s [SAP Deployment Automation Framework](https://learn.microsoft.com/en-us/azure/sap/automation/tutorial) uses a control plane, workload zones and system deployments, with Terraform and Ansible. [Azure Workload Center for SAP (Azure Center for SAP solutions in older material)](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/overview) offers guided deployment plus registration and management through a Virtual Instance for SAP solutions (VIS).
 
 | Approach | Best fit | Watch for |
 |---|---|---|
@@ -353,7 +353,7 @@ Microsoft's [Sapphire 2026 update](https://techcommunity.microsoft.com/blog/sapa
 
 - [Plan and implement an SAP deployment on Azure](https://learn.microsoft.com/en-us/azure/virtual-machines/workloads/sap/planning-guide)
 - [SAP HANA VM storage configurations](https://learn.microsoft.com/en-us/azure/sap/workloads/hana-vm-operations-storage)
-- [Azure Center for SAP solutions overview](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/overview)
+- [Azure Workload Center for SAP overview](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/overview)
 - [SAP Deployment Automation Framework enterprise tutorial](https://learn.microsoft.com/en-us/azure/sap/automation/tutorial)
 
 ---

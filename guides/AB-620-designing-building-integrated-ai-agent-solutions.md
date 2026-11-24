@@ -5,13 +5,15 @@ official_blueprint: https://learn.microsoft.com/en-us/credentials/certifications
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: source-validated
-last_verified: 2026-10-28
+review_status: review-required
+last_verified: 2026-11-23
 upcoming_change_status: scheduled
 upcoming_change_checked: 2026-11-20
 ---
 
 # AB-620 Designing and Building Integrated AI Agent Solutions in Copilot Studio Study Guide
+
+**Review status.** The November 23 check covered the published exam information and the resources updated below. The previous full source review is historical. Full validation of this revision is pending.
 
 [November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-01.md#ab-620)
 
@@ -19,7 +21,7 @@ upcoming_change_checked: 2026-11-20
 
 **Current baseline:** The study-guide page shows last updated October 16, 2026; Microsoft publishes no separate skills-effective date. All 44 detailed objective wordings match the accepted baseline checked October 28, 2026. Page metadata is not an effective exam-revision date.<br>
 **Exam state:** Active (no longer labeled beta on the credential page) as verified September 28, 2026.<br>
-**Upcoming English outline — December 18, 2026.** Microsoft is updating the exam to the GitHub Copilot harness. The original Standard-harness lessons remain available through Learn search. Use the current objective map for preparation before that date. Check the language and version for your appointment. The [November source notes](../docs/research/2026-11-20-microsoft-refresh-group-01.md#ab-620) identify the announced edition and its domain weights.<br>
+**Upcoming English outline — December 18, 2026.** The exam notice calls the upcoming runtime “GHCP.” The product documentation uses Microsoft Copilot harness. The original Standard-harness lessons remain available through Learn search. Use the current objective map for preparation before that date. Check the language and version for your appointment. The [November source notes](../docs/research/2026-11-20-microsoft-refresh-group-01.md#ab-620) identify the announced edition and its domain weights.<br>
 **Training availability:** The official self-paced paths and three-day English AB-620T00-A course page are live as checked October 28, 2026. Provider delivery dates and availability vary; the earlier September 30 scheduled-date note is historical.<br>
 **Official source:** [AB-620 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-620)
 
@@ -43,7 +45,7 @@ Read Sections 1–7, work through the ten labs, and explain the three scenarios 
 
 ### Living-guide watch — September 28, 2026
 
-The [GitHub Copilot Harness agent overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/overview) is the current boundary for that rapidly changing authoring experience. Keep it distinct from standard and Copilot chat harnesses, and verify which knowledge, tool, channel, ALM, and governance features each experience supports instead of carrying capabilities across by name.
+The [Microsoft Copilot harness agent overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/overview) is the current boundary for that rapidly changing authoring experience. Compare its capabilities with Customer Conversation and standard harnesses, and verify which knowledge, tool, channel, ALM, and governance features each experience supports instead of carrying capabilities across by name.
 
 The [AI at Work roadmap transition](https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/) changes where future Power Platform and Dynamics capabilities are announced, not the current AB-620 blueprint. Use the roadmap for discovery and current Learn pages for implementation. The independent courses in Places to learn can add demonstrations; flag any older product vocabulary and map it to the current object model before relying on it.
 
@@ -78,20 +80,20 @@ The target candidate is a professional developer or advanced builder who integra
 
 ### The current platform has three harnesses
 
-Current Microsoft documentation distinguishes the **GitHub Copilot**, **standard**, and **Copilot chat** harnesses. Older AB-620 learning material may instead say **classic experience** or **new agent experience**. This matters because the objective list explicitly includes topics, nodes, agent flows, variables, and Adaptive Cards, which align most closely with the structured standard-harness authoring model.
+Microsoft lists three current harnesses. Older course modules use the terms *classic experience*, *new agent experience* or *GitHub Copilot harness*. For the edition before December 18, practise the published topic, node and agent-flow objectives on the standard harness.
 
-| Signal | Standard harness | GitHub Copilot harness | Copilot chat harness |
+| Consideration | Standard | Microsoft Copilot | Customer Conversation |
 |---|---|---|---|
-| Primary control | Topics, rules, branches, and structured workflows | Goal-driven reasoning across tools, files, skills, and memory | Enterprise knowledge extension for Microsoft 365 Copilot Chat |
-| Best fit | Predictable conversations and repeatable rule-based work | Longer multistep business processes that must adapt | Grounded internal answers in an existing Copilot Chat surface |
-| Publishing emphasis | Internal teams or external customers | Internal teams or external customers | Internal teams |
-| Volatility to verify | Topic, flow, licensing, and channel support | Tools, skills, memory, files, sandbox, billing, and rollout | Knowledge support, entitlements, publishing, and billing |
+| Choose it for | Repeatable rules, topics and agent flows | Multistep work across files, tools and decisions | Customer contact by voice or web chat |
+| Recovery | Follow a branch defined by the maker | Retry or choose another route within the agent's permissions | Escalate to a person using the configured route |
+| Skills and memory | Focus on the configured topics and flows | Supports skills and memory. Check regional availability. | Supports skills and memory |
+| Channels and billing | Check standard-agent licensing and the intended channel | Internal or external use with Copilot Credits | Website chat or phone with usage-based Copilot Credits |
 
 Use the [current harness overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/harnesses-overview) to identify the runtime before following steps. **VERIFY CURRENT:** capabilities and billing differ by harness and continue to change. For AB-620's published topic objectives, practice the structured topic model even if you also explore the reasoning-heavy harness.
 
 > **Related item:** “Classic” here names the Copilot Studio authoring experience. It is separate from Microsoft Foundry’s classic-versus-current resource/API generations. A connected Foundry agent must also be checked for its own platform generation.
 
-The GitHub Copilot harness is generally available; individual capabilities such as memory and connected agents can still be preview. Agents cannot be transferred between standard and GitHub Copilot harnesses. A structured flow can control the sequence of operations without making its model responses or external-service outcomes deterministic. Also distinguish the harness from the separate GitHub Copilot service and its data handling.
+Copilot Studio’s [Microsoft Copilot harness](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/overview) has feature-specific availability. Microsoft is rolling out memory for general availability and some regions can still show preview. The [preview upgrade](https://learn.microsoft.com/en-us/microsoft-copilot-studio/upgrade-to-microsoft-copilot-from-standard-harness) creates a copy of a standard-harness agent and reports what transferred or needs attention. An agent on the Microsoft Copilot harness cannot transfer back to the standard harness. A structured flow can control the sequence of operations while model responses and external-service outcomes can vary.
 
 ### Build an architecture contract before a canvas
 
@@ -379,6 +381,8 @@ A child agent is not a standalone deployment. It is useful for cohesive speciali
 
 The [child/connected-agent guidance](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-add-other-agents) distinguishes component reuse from an independently managed agent. Topic redirects can return control to their originating topic; Fabric data agents do not support that redirect route. Keep performance recommendations separate from limits: the tools article currently permits up to 128 tools per orchestrator while recommending a much smaller selection, and the multi-agent guidance uses tool-count heuristics for deciding when to split responsibilities. Evaluate routing ambiguity and extra-hop latency rather than splitting at an assumed universal threshold.
 
+For a connection between two Microsoft Copilot harness agents, both must use that harness in the same environment. The target must be published and enabled, and the maker needs access. Sharing the parent covers its connected agent for end users on this route. Validate the effective permissions for downstream data and tools. [Microsoft product procedures](../docs/research/2026-11-23-refresh-27.md#current-copilot-studio-harnesses)
+
 ### Design delegation behavior
 
 The parent needs a distinct description for when each agent should be invoked. Avoid overlapping descriptions. Define accepted task input, returned artifact, context sharing, permission boundary, timeout, error, retry, and fallback. Test ambiguous intents, unavailable child/connected agent, malformed result, multi-hop loops, and conflicting answers.
@@ -399,9 +403,11 @@ This is a **preview standard-harness connection**. The current Foundry agent mus
 
 Treat the Foundry connection as a cross-platform trust boundary: document identities, data shared, model/tool behavior, content controls, latency/cost, observability, and responsibility for evaluation. Mark the feature’s preview status and **VERIFY CURRENT**.
 
+Microsoft also publishes a Foundry connection procedure specifically for the Microsoft Copilot harness. The standard-harness preview and its Activity protocol requirements above describe a different connection. Choose the procedure for the actual parent runtime. [Foundry connection sources](../docs/research/2026-11-23-refresh-27.md#current-copilot-studio-harnesses)
+
 ### Integrate Fabric data agents
 
-The current [Fabric data agent tool procedure](https://learn.microsoft.com/en-us/fabric/data-science/data-agent-microsoft-copilot-studio-tool) applies to the **GitHub Copilot harness**, using the **Fabric IQ Data MCP** tool. Do not substitute its steps for an older standard-harness connected-agent procedure. Prerequisites include a published data agent, qualifying Fabric capacity, required tenant settings, same-tenant/account alignment, the stated licenses, and access to the data agent and its underlying data.
+The current [Fabric data agent tool procedure](https://learn.microsoft.com/en-us/fabric/data-science/data-agent-microsoft-copilot-studio-tool) uses the label **GitHub Copilot harness** and connects through the **Fabric IQ Data MCP** tool. Follow the procedure for the experience it names, and verify applicability before using it on a different runtime. Do not substitute its steps for an older standard-harness connected-agent procedure. Prerequisites include a published data agent, qualifying Fabric capacity, required tenant settings, same-tenant/account alignment, the stated licenses, and access to the data agent and its underlying data.
 
 Its credential choice changes the access boundary: **User** uses the caller's permissions; **Maker** lets users obtain data available to the maker even without their own access. Choose and test the intended model explicitly. Save the tool before testing/publishing and use a precise routing description. Review cross-geography processing/storage because responses can leave the Fabric geography. The standard-harness evaluation feature currently excludes Fabric data agents; a testing step in this separate GitHub-harness tool procedure does not remove that limitation.
 
@@ -479,7 +485,7 @@ Apply redaction, access control, retention, sampling, and workspace ownership to
 
 > **Related item:** A dashboard proves that telemetry exists. An operating model defines thresholds, ownership, alert routing, investigation steps, remediation, and the release decision that follows.
 
-The [environment-level telemetry preview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-environment-level-agent-telemetry) supports both standard and GitHub Copilot harnesses in Managed Environments. New export configurations can take up to 24 hours to deliver telemetry. Current spans are in `dependencies`; older private-preview root events may appear in `requests`. Correlate a turn using `operation_Id` and parent links. This export excludes unauthenticated/multitenant configurations and topic events, lacks standard-harness duration values, and can lose data during transient events. It is not a transactional audit ledger. Keep agent-level `customEvents` queries separate, and do not infer “no executions” from a zero-row query against the wrong table or unsupported configuration.
+The [environment-level telemetry preview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-environment-level-agent-telemetry) names the standard and Microsoft Copilot harnesses in Managed Environments. Its Application Insights limitation says only standard-harness agent logs are available there. Verify which signals reach your environment before relying on them for a Microsoft Copilot agent. New export configurations can take up to 24 hours to deliver telemetry. Current spans are in `dependencies`; older private-preview root events may appear in `requests`. Correlate a turn using `operation_Id` and parent links. This export excludes unauthenticated/multitenant configurations and topic events, lacks standard-harness duration values, and can lose data during transient events. It is not a transactional audit ledger. Keep agent-level `customEvents` queries separate, and do not infer “no executions” from a zero-row query against the wrong table or unsupported configuration.
 
 **Worked example 6 — plan peak throughput separately from credits.** A hypothetical 120-user pilot measures a peak of 18 turns/minute and three model calls per turn: **54 model calls/minute**. Scaling to 2,400 comparable users gives a factor of **20**, or **360 turns and 1,080 model calls/minute** before retries, new channels and campaign bursts. This is an illustrative projection, not measured tenant data or a quota guarantee. The [throughput planning guidance](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/plan-agent-throughput-rate-limits) requires real pilot observations for increase requests. Compare each environment, connector, flow, Dataverse and model limit at the relevant time window; a larger credit balance does not guarantee a higher processing rate.
 
@@ -567,7 +573,7 @@ An older solution version may not be compatible with changed environment variabl
 
 **Evidence:** correct delegation matrix, Fabric permission tests, Foundry version compatibility, A2A auth/failure, conflicting-agent response policy, evaluation by component and workflow, pipeline promotion/rollback proof.
 
-For Scenario 3, write the harness and connection type beside every arrow before implementation. Test the current Fabric IQ tool in its documented GitHub-harness environment and the standard-harness Foundry connector separately. Combining their documentation into one apparently supported topology is not integration evidence; validate the chosen end-to-end route and evaluation surface.
+For Scenario 3, write the harness and connection type beside every arrow before implementation. Test the Fabric IQ tool in the experience named in its product procedure and test the chosen Foundry connection separately. Combining their documentation into one apparently supported topology is not integration evidence; validate the chosen end-to-end route and evaluation surface.
 
 ## 9. Hands-on labs
 
@@ -682,7 +688,7 @@ These are original concept checks, not recalled exam questions.
 
 ## 11. Answers and reasoning
 
-1. The official paths remain topic-centric and classic-based. Identify standard, GitHub Copilot and Copilot chat harnesses explicitly. The GitHub harness is generally available, individual capabilities can be preview, and standard/GitHub agents cannot be transferred between harnesses.
+1. Older lessons teach the standard topic model. Current product choices are standard for rule-based flows, Microsoft Copilot for reasoning across tools, and Customer Conversation for voice or web chat with human escalation. The preview upgrade can copy a standard agent to Microsoft Copilot. Inspect the migration report and rebuild unsupported components before using the copy.
 2. When the sequence, required questions, validation, wording, approval, or transaction must be explicit and repeatable.
 3. End-user authentication, agent sharing/authorization, connection identity (user versus maker/service), and the downstream system’s authorization.
 4. Teams proves the user, but a maker-provided connector can execute under a broader shared identity unless constrained.
@@ -803,7 +809,7 @@ Read [Identify implementation options by harness](https://learn.microsoft.com/en
 - [Integrate agents with enterprise systems](https://learn.microsoft.com/en-us/training/paths/integrate-agents-enterprise-systems-copilot-studio/) — four modules; older recorded runtime 3 hours 18 minutes, not reverified in the current outline.
 - [AB-620T00-A](https://learn.microsoft.com/en-us/training/courses/ab-620t00) — three instructor-led days in the current public listing; actual class availability depends on the provider.
 
-The three live paths contain 3 + 4 + 4 = 11 modules. Their earlier recorded total was 8 hours 29 minutes; the October 28 public outlines do not expose a verified total runtime. The [multi-agent design module](https://learn.microsoft.com/en-us/training/modules/design-multi-agent-solutions-copilot-studio/3-design-agent-organization) now compares standard and GitHub Copilot harnesses; the other three modules in that path and all modules in the topics and integration paths retain classic-experience warnings. **VERIFY CURRENT:** match each lesson and implementation to the current harness and product documentation. The course listing does not establish a provider's actual delivery schedule.
+The three live paths contain 3 + 4 + 4 = 11 modules. Their earlier recorded total was 8 hours 29 minutes; the October 28 public outlines do not expose a verified total runtime. The [multi-agent design module](https://learn.microsoft.com/en-us/training/modules/design-multi-agent-solutions-copilot-studio/3-design-agent-organization) used the earlier GitHub Copilot wording in the October 28 check. It now uses standard and Microsoft Copilot harness terminology. The other three modules in that path and all modules in the topics and integration paths retain classic-experience warnings. **VERIFY CURRENT:** match each lesson and implementation to the current harness and product documentation. The course listing does not establish a provider's actual delivery schedule.
 
 ### Additional instruction and assessment
 
