@@ -1,0 +1,653 @@
+{
+  "date": "2026-11-23",
+  "scope": "AI research into official objectives, selected technical references and learning resources. Individual exam delivery, private course contents and live product testing were outside this review.",
+  "exams": [
+    {
+      "code": "EX200",
+      "exam": {
+        "code": "EX200",
+        "observation": "The issuer-specific objective page continues to identify this performance-based credential and retains its monitored scope. Both monitored objective text and status matched accepted records.",
+        "urls": [
+          "https://www.redhat.com/en/services/training/ex200-red-hat-certified-system-administrator-rhcsa-exam"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Keep existing edition; version-specific labs need separate testing.",
+        "monitor": "unchanged",
+        "accepted_objective_sha256": "69fa2bc5a08fc6c1cf183b89d6123a1564edab0d8e0e3ca12f80bc70b45916d4",
+        "candidate_objective_sha256": "69fa2bc5a08fc6c1cf183b89d6123a1564edab0d8e0e3ca12f80bc70b45916d4",
+        "catalog_matches": {
+          "https://www.redhat.com/en/services/training/ex200-red-hat-certified-system-administrator-rhcsa-exam": {
+            "sources": [
+              "redhat-ex200-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "EX200",
+        "observation": "Red Hat's indexed RHEL 10 documentation distinguishes systemctl daemon status from chronyc time synchronization checks. The direct chapter URL resolved to the broader RHEL 10 documentation landing page during the lookup.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "Moderate; indexed official chapter text was available. Direct article routing returned a general landing.",
+        "urls": [
+          "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/configuring_time_synchronization/using-chrony"
+        ],
+        "source_ids": [
+          "redhat10-chrony"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "EX200",
+        "observation": "RH124 is the first of two introductory system-administration classes and bases its curriculum on RHEL 10.0.",
+        "urls": [
+          "https://www.redhat.com/en/services/training/rh124-red-hat-system-administration-i"
+        ],
+        "source_id": "redhat-ex200-rh124",
+        "resource": "Red Hat System Administration I RH124",
+        "access_model": "paid",
+        "time_basis": "No current publisher runtime established for this route.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "unchanged",
+      "accepted_on_start": "69fa2bc5a08fc6c1cf183b89d6123a1564edab0d8e0e3ca12f80bc70b45916d4",
+      "candidate": "69fa2bc5a08fc6c1cf183b89d6123a1564edab0d8e0e3ca12f80bc70b45916d4"
+    },
+    {
+      "code": "EX294",
+      "exam": {
+        "code": "EX294",
+        "observation": "The issuer-specific objective page continues to identify this performance-based credential and retains its monitored scope. Both monitored objective text and status matched accepted records.",
+        "urls": [
+          "https://www.redhat.com/en/services/training/ex294-red-hat-certified-engineer-rhce-exam-red-hat-enterprise-linux"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Keep existing edition; version-specific labs need separate testing.",
+        "monitor": "unchanged",
+        "accepted_objective_sha256": "e95d8682f731a4bd566b4bac9f0695ee8c46977a595f1eb99402a041cafd0376",
+        "candidate_objective_sha256": "e95d8682f731a4bd566b4bac9f0695ee8c46977a595f1eb99402a041cafd0376",
+        "catalog_matches": {
+          "https://www.redhat.com/en/services/training/ex294-red-hat-certified-engineer-rhce-exam-red-hat-enterprise-linux": {
+            "sources": [
+              "redhat-ex294-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "EX294",
+        "observation": "A handler notified more than once runs once for the corresponding flush; the definition order governs handler execution.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.ansible.com/projects/ansible-core/2.16/playbook_guide/playbooks_handlers.html"
+        ],
+        "source_ids": [
+          "ansible216-handlers"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "EX294",
+        "observation": "AU294 uses RHEL 10 and ansible-core 2.16 and assumes RHCSA or equivalent administration skills.",
+        "urls": [
+          "https://www.redhat.com/en/services/training/au294-red-hat-linux-automation-with-ansible"
+        ],
+        "source_id": "redhat-ex294-au294",
+        "resource": "Red Hat Enterprise Linux Automation with Ansible AU294",
+        "access_model": "paid",
+        "time_basis": "No current publisher runtime established for this route.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "unchanged",
+      "accepted_on_start": "e95d8682f731a4bd566b4bac9f0695ee8c46977a595f1eb99402a041cafd0376",
+      "candidate": "e95d8682f731a4bd566b4bac9f0695ee8c46977a595f1eb99402a041cafd0376"
+    },
+    {
+      "code": "EX280",
+      "exam": {
+        "code": "EX280",
+        "observation": "Red Hat now states OpenShift 4.22 in both introductory and task sections; the current page no longer shows the previously documented 4.18 delivery text. Both monitored objective text and status matched accepted records.",
+        "urls": [
+          "https://www.redhat.com/en/services/training/red-hat-certified-openshift-administrator-exam"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Update any present-tense 4.18 conflict to dated history; retain assigned-version check when booking.",
+        "monitor": "unchanged",
+        "accepted_objective_sha256": "7f06f83b3e8c273d4c24065c54ad45411416e25aa528a8651e7e74016c724040",
+        "candidate_objective_sha256": "7f06f83b3e8c273d4c24065c54ad45411416e25aa528a8651e7e74016c724040",
+        "catalog_matches": {
+          "https://www.redhat.com/en/services/training/red-hat-certified-openshift-administrator-exam": {
+            "sources": [
+              "redhat-ex280-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "EX280",
+        "observation": "ConfigMaps can populate container-environment variables or mounted files. Environment variables need new pods to pick up new values.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://kubernetes.io/docs/concepts/configuration/configmap/"
+        ],
+        "source_ids": [
+          "kubernetes-configmaps"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "EX280",
+        "observation": "DO280 covers OpenShift 4.22 multitenancy, isolation and cluster administration.",
+        "urls": [
+          "https://www.redhat.com/en/services/training/red-hat-openshift-administration-ii-configuring-a-production-cluster"
+        ],
+        "source_id": "redhat-ex280-do280",
+        "resource": "Red Hat OpenShift Administration II DO280",
+        "access_model": "paid",
+        "time_basis": "No current publisher runtime established for this route.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Separate the class version from evidence of exam delivery."
+      },
+      "monitor_outcome": "unchanged",
+      "accepted_on_start": "7f06f83b3e8c273d4c24065c54ad45411416e25aa528a8651e7e74016c724040",
+      "candidate": "7f06f83b3e8c273d4c24065c54ad45411416e25aa528a8651e7e74016c724040"
+    },
+    {
+      "code": "EX378",
+      "exam": {
+        "code": "EX378",
+        "observation": "The issuer-specific objective page continues to identify this performance-based credential and retains its monitored scope. Both monitored objective text and status matched accepted records.",
+        "urls": [
+          "https://www.redhat.com/en/services/training/ex378-red-hat-certified-specialist-in-cloud-native-developer-exam"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Keep existing edition; version-specific labs need separate testing.",
+        "monitor": "unchanged",
+        "accepted_objective_sha256": "32e199f02055ec50b3c82c71f5abcfa09a1f7d598c97c552656ef37623cda239",
+        "candidate_objective_sha256": "32e199f02055ec50b3c82c71f5abcfa09a1f7d598c97c552656ef37623cda239",
+        "catalog_matches": {
+          "https://www.redhat.com/en/services/training/ex378-red-hat-certified-specialist-in-cloud-native-developer-exam": {
+            "sources": [
+              "redhat-ex378-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "EX378",
+        "observation": "SmallRye describes wellness as an additional health group alongside readiness and liveness; use it for monitoring that should not independently trigger routing or restart behavior.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://smallrye.io/docs/smallrye-health/3.0.1/wellness.html"
+        ],
+        "source_ids": [
+          "smallrye-health-wellness"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "EX378",
+        "observation": "DO378 is built around OpenShift 4.14 and Red Hat Build of Quarkus 3.8.",
+        "urls": [
+          "https://www.redhat.com/en/services/training/red-hat-cloud-native-microservices-development-quarkus-do378"
+        ],
+        "source_id": "redhat-ex378-do378",
+        "resource": "Red Hat Cloud-native Microservices Development with Quarkus DO378",
+        "access_model": "paid",
+        "time_basis": "No current publisher runtime established for this route.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "unchanged",
+      "accepted_on_start": "32e199f02055ec50b3c82c71f5abcfa09a1f7d598c97c552656ef37623cda239",
+      "candidate": "32e199f02055ec50b3c82c71f5abcfa09a1f7d598c97c552656ef37623cda239"
+    },
+    {
+      "code": "EX267",
+      "exam": {
+        "code": "EX267",
+        "observation": "The exam page continues to specify OpenShift AI 3.3 on OpenShift Container Platform 4.20. The advertised December 31 course pricing is a training promotion. Both monitored objective text and status matched accepted records.",
+        "urls": [
+          "https://www.redhat.com/en/services/training/ex267-red-hat-certified-developer-in-ai"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Keep version-specific teaching and previously documented PDF discrepancies bounded.",
+        "monitor": "unchanged",
+        "accepted_objective_sha256": "b741b76b2ba6259872d38449c397048d494185090c80d53064aa5d9ab32208fe",
+        "candidate_objective_sha256": "b741b76b2ba6259872d38449c397048d494185090c80d53064aa5d9ab32208fe",
+        "catalog_matches": {
+          "https://www.redhat.com/en/services/training/ex267-red-hat-certified-developer-in-ai": {
+            "sources": [
+              "redhat-ex267-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "EX267",
+        "observation": "Red Hat OpenShift AI 3.3 explicitly documents KServe RawDeployment for the single-model serving platform; retain the assigned-version boundary.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3/html-single/deploying_models/index"
+        ],
+        "source_ids": [
+          "rhoai33-deploy"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "EX267",
+        "observation": "AI267 names OpenShift 4.20 and OpenShift AI 3.3 as its curriculum baseline and expects Python and Git experience.",
+        "urls": [
+          "https://www.redhat.com/en/services/training/ai267-developing-and-deploying-ai/ml-applications-on-red-hat-openshift-ai"
+        ],
+        "source_id": "redhat-ex267-ai267",
+        "resource": "Developing and Deploying AI/ML Applications on Red Hat OpenShift AI AI267",
+        "access_model": "paid",
+        "time_basis": "No current publisher runtime established for this route.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "unchanged",
+      "accepted_on_start": "b741b76b2ba6259872d38449c397048d494185090c80d53064aa5d9ab32208fe",
+      "candidate": "b741b76b2ba6259872d38449c397048d494185090c80d53064aa5d9ab32208fe"
+    },
+    {
+      "code": "LFCA",
+      "exam": {
+        "code": "LFCA",
+        "observation": "The issuer's LFCA credential and exam-information pages remain available; current scope extraction matches. Both monitored objective text and status matched accepted records.",
+        "urls": [
+          "https://training.linuxfoundation.org/certification/linux-foundation-certified-it-associate-lfca/",
+          "https://training.linuxfoundation.org/certification/certified-it-associate/"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Maintain existing entry.",
+        "monitor": "unchanged",
+        "accepted_objective_sha256": "fd4278c4b59fa86cc2c014f67f60263670b72193b2f83354fa3712b0f97a77cf",
+        "candidate_objective_sha256": "fd4278c4b59fa86cc2c014f67f60263670b72193b2f83354fa3712b0f97a77cf",
+        "catalog_matches": {
+          "https://training.linuxfoundation.org/certification/linux-foundation-certified-it-associate-lfca/": {
+            "sources": [],
+            "candidates": []
+          },
+          "https://training.linuxfoundation.org/certification/certified-it-associate/": {
+            "sources": [
+              "lf-lfca-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "LFCA",
+        "observation": "git restore distinguishes working-tree restoration from index restoration with --staged.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://git-scm.com/docs/git-restore"
+        ],
+        "source_ids": [
+          "git-restore"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "LFCA",
+        "observation": "LFS200 is an optional LFCA-aligned introductory course covering open source IT and cloud.",
+        "urls": [
+          "https://training.linuxfoundation.org/training/fundamentals-of-open-source-it-and-cloud-computing-lfs200/"
+        ],
+        "source_id": "lf-lfca-lfs200",
+        "resource": "Fundamentals of Open Source IT and Cloud Computing (LFS200)",
+        "access_model": "paid",
+        "time_basis": "10–15 hours, publisher.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "unchanged",
+      "accepted_on_start": "fd4278c4b59fa86cc2c014f67f60263670b72193b2f83354fa3712b0f97a77cf",
+      "candidate": "fd4278c4b59fa86cc2c014f67f60263670b72193b2f83354fa3712b0f97a77cf"
+    },
+    {
+      "code": "LFCS",
+      "exam": {
+        "code": "LFCS",
+        "observation": "The issuer-specific objective page continues to identify this performance-based credential and retains its monitored scope. Both monitored objective text and status matched accepted records.",
+        "urls": [
+          "https://training.linuxfoundation.org/certification/linux-foundation-certified-sysadmin-lfcs/"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Keep existing edition; version-specific labs need separate testing.",
+        "monitor": "unchanged",
+        "accepted_objective_sha256": "7e81f913990e564ad0238c7842735843375ec30d94f036f88e194dcbfe77cb63",
+        "candidate_objective_sha256": "7e81f913990e564ad0238c7842735843375ec30d94f036f88e194dcbfe77cb63",
+        "catalog_matches": {
+          "https://training.linuxfoundation.org/certification/linux-foundation-certified-sysadmin-lfcs/": {
+            "sources": [
+              "lf-lfcs-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "LFCS",
+        "observation": "xfs_growfs requires the XFS filesystem to be mounted for growth.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://man7.org/linux/man-pages/man8/xfs_growfs.8.html"
+        ],
+        "source_ids": [
+          "linux-xfs-growfs"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "LFCS",
+        "observation": "LFS207 covers Linux administration and is marketed alongside LFCS; course-only and subscription/exam routes differ.",
+        "urls": [
+          "https://training.linuxfoundation.org/training/linux-system-administration-essentials-lfs207/"
+        ],
+        "source_id": "lf-lfcs-lfs207",
+        "resource": "Linux System Administration Essentials (LFS207)",
+        "access_model": "paid",
+        "time_basis": "50–60 hours in the prior provider listing.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "unchanged",
+      "accepted_on_start": "7e81f913990e564ad0238c7842735843375ec30d94f036f88e194dcbfe77cb63",
+      "candidate": "7e81f913990e564ad0238c7842735843375ec30d94f036f88e194dcbfe77cb63"
+    },
+    {
+      "code": "CKA",
+      "exam": {
+        "code": "CKA",
+        "observation": "The issuer-specific objective page continues to identify this performance-based credential and retains its monitored scope. Both monitored objective text and status matched accepted records.",
+        "urls": [
+          "https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Keep existing edition; version-specific labs need separate testing.",
+        "monitor": "unchanged",
+        "accepted_objective_sha256": "e4b196b215d9a8a74203f309fa7b755633fe99955e638e541b3a6eac147d2857",
+        "candidate_objective_sha256": "e4b196b215d9a8a74203f309fa7b755633fe99955e638e541b3a6eac147d2857",
+        "catalog_matches": {
+          "https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/": {
+            "sources": [
+              "lf-cka-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "CKA",
+        "observation": "etcd 3.6 documents etcdutl snapshot status for inspecting revision and hash. Restore should be independently tested in an authorized lab.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://raw.githubusercontent.com/etcd-io/website/main/content/en/docs/v3.6/op-guide/recovery.md"
+        ],
+        "source_ids": [
+          "etcd36-recovery-source"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "CKA",
+        "observation": "LFS258 explicitly includes hosted browser labs without separate local setup.",
+        "urls": [
+          "https://training.linuxfoundation.org/training/kubernetes-fundamentals/"
+        ],
+        "source_id": "lf-cka-lfs258",
+        "resource": "Kubernetes Fundamentals (LFS258)",
+        "access_model": "paid",
+        "time_basis": "35 hours in the prior provider listing.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "unchanged",
+      "accepted_on_start": "e4b196b215d9a8a74203f309fa7b755633fe99955e638e541b3a6eac147d2857",
+      "candidate": "e4b196b215d9a8a74203f309fa7b755633fe99955e638e541b3a6eac147d2857",
+      "supplemental_evidence": [
+        {
+          "observation": "The Linux Foundation exam page identifies Kubernetes v1.37 as the exam environment. Match the practice cluster to the exam instructions.",
+          "urls": [
+            "https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "CKAD",
+      "exam": {
+        "code": "CKAD",
+        "observation": "The issuer-specific objective page continues to identify this performance-based credential and retains its monitored scope. Both monitored objective text and status matched accepted records.",
+        "urls": [
+          "https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Keep existing edition; version-specific labs need separate testing.",
+        "monitor": "unchanged",
+        "accepted_objective_sha256": "58b0290b61ba14ad68c02e06bcd2fbec14d23c4e555e69eb67a5615047e02ca1",
+        "candidate_objective_sha256": "58b0290b61ba14ad68c02e06bcd2fbec14d23c4e555e69eb67a5615047e02ca1",
+        "catalog_matches": {
+          "https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/": {
+            "sources": [
+              "lf-ckad-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "CKAD",
+        "observation": "Kubernetes announced retirement of the community ingress-nginx controller after March 2026; installed deployments can still run while maintenance stops.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://kubernetes.io/blog/2025/11/11/ingress-nginx-retirement/"
+        ],
+        "source_ids": [
+          "kubernetes-ingress-nginx-retirement"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "CKAD",
+        "observation": "LFD259 focuses on developing and deploying applications with Kubernetes and has course-only and optional bundle pathways.",
+        "urls": [
+          "https://training.linuxfoundation.org/training/kubernetes-for-developers/"
+        ],
+        "source_id": "lf-ckad-lfd259",
+        "resource": "Kubernetes for Developers (LFD259)",
+        "access_model": "paid",
+        "time_basis": "35 hours, publisher.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "unchanged",
+      "accepted_on_start": "58b0290b61ba14ad68c02e06bcd2fbec14d23c4e555e69eb67a5615047e02ca1",
+      "candidate": "58b0290b61ba14ad68c02e06bcd2fbec14d23c4e555e69eb67a5615047e02ca1",
+      "supplemental_evidence": [
+        {
+          "observation": "The Linux Foundation exam page identifies Kubernetes v1.37 as the exam environment. Match the practice cluster to the exam instructions.",
+          "urls": [
+            "https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "CKS",
+      "exam": {
+        "code": "CKS",
+        "observation": "Issuer now specifies Kubernetes v1.37, two hours and prior passing of CKA, on the CKS assessment page. This is a version/status change; objective map unchanged. Monitor found a status-only difference.",
+        "urls": [
+          "https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist-cks/",
+          "https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Refresh current exam environment in the guide and keep dated prior observations historical.",
+        "monitor": "changed",
+        "accepted_objective_sha256": "26ca4b0afc590f0df1dbf0ed60a435ce420efc6ac6d4ae95ec41dac302925c98",
+        "candidate_objective_sha256": "26ca4b0afc590f0df1dbf0ed60a435ce420efc6ac6d4ae95ec41dac302925c98",
+        "catalog_matches": {
+          "https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist-cks/": {
+            "sources": [],
+            "candidates": []
+          },
+          "https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/": {
+            "sources": [
+              "lf-cks-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "CKS",
+        "observation": "Istio PeerAuthentication can apply strict mTLS at workload scope. Port-level overrides use the workload port, which can differ from a Service port.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://istio.io/latest/docs/reference/config/security/peer_authentication/"
+        ],
+        "source_ids": [
+          "istio-peer-authentication"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "CKS",
+        "observation": "LFS260 focuses on defensive controls for Kubernetes workloads and platforms and targets prior CKA-level preparation.",
+        "urls": [
+          "https://training.linuxfoundation.org/training/kubernetes-security-essentials-lfs260/"
+        ],
+        "source_id": "lf-cks-lfs260",
+        "resource": "Kubernetes Security Essentials (LFS260)",
+        "access_model": "paid",
+        "time_basis": "26–30 hours, publisher.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "changed",
+      "accepted_on_start": "26ca4b0afc590f0df1dbf0ed60a435ce420efc6ac6d4ae95ec41dac302925c98",
+      "candidate": "26ca4b0afc590f0df1dbf0ed60a435ce420efc6ac6d4ae95ec41dac302925c98",
+      "supplemental_evidence": [
+        {
+          "observation": "The Linux Foundation exam page identifies Kubernetes v1.37 as the exam environment. Match the practice cluster to the exam instructions.",
+          "urls": [
+            "https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/"
+          ]
+        },
+        {
+          "observation": "GitHub’s HTML viewer returned 503 to the source-health client. The direct CNCF PDF lists the six domain weights for v1.37.",
+          "urls": [
+            "https://raw.githubusercontent.com/cncf/curriculum/main/CKS_Curriculum%20v1.37.pdf"
+          ]
+        }
+      ]
+    }
+  ],
+  "review_inputs": [
+    {
+      "code": "EX200",
+      "guide": "guides/EX200-red-hat-certified-system-administrator.md",
+      "guide_sha256_lf": "b117deefdca45e19296c5a789f142298efece49a18a476b801e894e398513b99",
+      "objective": "data/objective-snapshots/ex200-official-objectives.txt",
+      "objective_sha256": "69fa2bc5a08fc6c1cf183b89d6123a1564edab0d8e0e3ca12f80bc70b45916d4"
+    },
+    {
+      "code": "EX294",
+      "guide": "guides/EX294-red-hat-certified-advanced-system-administrator-ansible.md",
+      "guide_sha256_lf": "1abef3ccb9bcaaa6b30bdc481ac6587dc4a8d4834241a6cefac77854f1ac870d",
+      "objective": "data/objective-snapshots/ex294-official-objectives.txt",
+      "objective_sha256": "e95d8682f731a4bd566b4bac9f0695ee8c46977a595f1eb99402a041cafd0376"
+    },
+    {
+      "code": "EX280",
+      "guide": "guides/EX280-red-hat-certified-system-administrator-openshift.md",
+      "guide_sha256_lf": "59acb8088073b4079816115c5890eb3f7ce71701f6f15f6e941db18cbfb23253",
+      "objective": "data/objective-snapshots/ex280-official-objectives.txt",
+      "objective_sha256": "7f06f83b3e8c273d4c24065c54ad45411416e25aa528a8651e7e74016c724040"
+    },
+    {
+      "code": "EX378",
+      "guide": "guides/EX378-red-hat-certified-specialist-cloud-native-development.md",
+      "guide_sha256_lf": "d3e0e1e7cf3ff2960c50b0e7e0032d9fc2f9d42655d2750fe192e6d0470d335f",
+      "objective": "data/objective-snapshots/ex378-official-objectives.txt",
+      "objective_sha256": "32e199f02055ec50b3c82c71f5abcfa09a1f7d598c97c552656ef37623cda239"
+    },
+    {
+      "code": "EX267",
+      "guide": "guides/EX267-red-hat-certified-developer-in-ai.md",
+      "guide_sha256_lf": "0d01a7e5f71692b75bcec7c6fcd0098107bc37e493fdb6beef90f3ca574c009c",
+      "objective": "data/objective-snapshots/ex267-official-objectives.txt",
+      "objective_sha256": "b741b76b2ba6259872d38449c397048d494185090c80d53064aa5d9ab32208fe"
+    },
+    {
+      "code": "LFCA",
+      "guide": "guides/LFCA-linux-foundation-certified-it-associate.md",
+      "guide_sha256_lf": "cf831cafaac6e0dfb5305c6f1251649ca69eee0e16c0a0c9cecab5296e2693c1",
+      "objective": "data/objective-snapshots/lfca-official-objectives.txt",
+      "objective_sha256": "fd4278c4b59fa86cc2c014f67f60263670b72193b2f83354fa3712b0f97a77cf"
+    },
+    {
+      "code": "LFCS",
+      "guide": "guides/LFCS-linux-foundation-certified-system-administrator.md",
+      "guide_sha256_lf": "af05db9532d2ebba4fa23f3b9c1335336fb70fde56ae03dc5fcb9707ced0ed07",
+      "objective": "data/objective-snapshots/lfcs-official-objectives.txt",
+      "objective_sha256": "7e81f913990e564ad0238c7842735843375ec30d94f036f88e194dcbfe77cb63"
+    },
+    {
+      "code": "CKA",
+      "guide": "guides/CKA-certified-kubernetes-administrator.md",
+      "guide_sha256_lf": "49e89a4365989a2926e5ea39db43158f64e3115ada8569700e158957afbac432",
+      "objective": "data/objective-snapshots/cka-official-objectives.txt",
+      "objective_sha256": "e4b196b215d9a8a74203f309fa7b755633fe99955e638e541b3a6eac147d2857"
+    },
+    {
+      "code": "CKAD",
+      "guide": "guides/CKAD-certified-kubernetes-application-developer.md",
+      "guide_sha256_lf": "b3a59670bd1735d26ac7fc61d6f87cf11e86a41e6d99bad14146e83a9adc1633",
+      "objective": "data/objective-snapshots/ckad-official-objectives.txt",
+      "objective_sha256": "58b0290b61ba14ad68c02e06bcd2fbec14d23c4e555e69eb67a5615047e02ca1"
+    },
+    {
+      "code": "CKS",
+      "guide": "guides/CKS-certified-kubernetes-security-specialist.md",
+      "guide_sha256_lf": "a6da9755ac7b9a763f76d4d713e95faf631edf5ffe34cf4a9ddc9a315a83a0a1",
+      "objective": "data/objective-snapshots/cks-official-objectives.txt",
+      "objective_sha256": "26ca4b0afc590f0df1dbf0ed60a435ce420efc6ac6d4ae95ec41dac302925c98"
+    }
+  ],
+  "independent_review": {
+    "method": "Fresh-context read-only AI review of changed content and source evidence",
+    "rubric": "docs/AI-AUDIT.md, version 2",
+    "reviewed_tree": "44ce4c3a9686f314f28c67701dd3466a77646de2",
+    "summary": "Verified Linux Foundation’s three v1.37 exam entries and parsed CNCF’s official three-page CKS curriculum via the raw upstream PDF. Rechecked the LFCS preparation path as tier 3, the CKS direct source, and the retained viewer-503 disclosure following review of 717d656bef367ae514209f81cd99f88f600f1896. All ten guide/objective bindings match. Targeted change/evidence review only.",
+    "findings": [],
+    "validation": [
+      "unit tests",
+      "repository validation",
+      "reviewed learning resource check",
+      "site preparation",
+      "strict MkDocs build",
+      "generated site validation"
+    ]
+  }
+}

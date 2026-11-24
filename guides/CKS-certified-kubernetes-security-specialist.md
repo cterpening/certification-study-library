@@ -5,25 +5,27 @@ official_blueprint: https://training.linuxfoundation.org/certification/certified
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: source-validated
-last_verified: 2026-10-28
+review_status: review-required
+last_verified: 2026-11-23
 upcoming_change_status: none-announced
 upcoming_change_checked: 2026-10-28
 ---
 
 # CKS Certified Kubernetes Security Specialist Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on October 28, 2026. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#cks-coverage-record). The [official CKS page](https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/) is authoritative.
+**Review status.** The November 23 check covered the published exam information and the resources updated below. The previous full source review is historical. Full validation of this revision is pending.
 
-**Current baseline:** Kubernetes v1.35 and the six weighted domains on the live Linux Foundation CKS page: 15% / 15% / 10% / 20% / 20% / 20%<br>
-**Source discrepancy:** The [CNCF CKS page](https://www.cncf.io/training/certification/cks/) still shows the earlier 10% / 15% / 15% first-three weights, and the public repository's latest named [CKS curriculum PDF is v1.34](https://github.com/cncf/curriculum/blob/master/CKS_Curriculum%20v1.34.pdf). The actual three-page PDF was read on September 29: despite its filename, its 26 competencies and weights match the live Linux Foundation outline, apart from minor wording/case differences. The overview page remains inconsistent; the live exam page governs.<br>
-**Lifecycle watch:** Kubernetes [v1.37 was released August 26, 2026](https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/), while the live CKS page still names v1.35 on September 29. Linux Foundation says alignment follows by approximately 4–8 weeks, so recheck between September 23 and October 21 and immediately before practice or scheduling; this is a watch window, not an announced switch date.<br>
+> **Independent AI-assisted resource — HISTORICAL SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on October 28, 2026. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#cks-coverage-record). The [official CKS page](https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/) is authoritative.
+
+**Current baseline:** Kubernetes v1.37 and the six weighted domains on the live Linux Foundation CKS page: 15% / 15% / 10% / 20% / 20% / 20%<br>
+**Source discrepancy, November 23, 2026.** The [CNCF v1.37 curriculum](https://raw.githubusercontent.com/cncf/curriculum/main/CKS_Curriculum%20v1.37.pdf) and the [Linux Foundation exam page](https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/) give Cluster Setup 15%, Cluster Hardening 15% and System Hardening 10%. The [CNCF overview](https://www.cncf.io/training/certification/cks/) still shows 10%, 15% and 15% for those domains. Use the Linux Foundation exam page and versioned curriculum for preparation.<br>
+**Exam environment:** Linux Foundation lists Kubernetes v1.37 for CKS. Check the exam page before scheduling. The [upstream v1.37 release announcement](https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/) documents the August 26 product release.<br>
 **Official delivery snapshot:** Online, remotely proctored, performance-based command-line exam; two hours; certification valid for two years; 12-month eligibility, one retake, and two 36-hour Killer.sh simulator activations; the public certification page now lists 17 simulator questions per attempt as of September 29, 2026 (separate from the live exam)<br>
 **Required prerequisite:** You must previously have passed CKA. The current Linux Foundation/CNCF wording says the CKA does **not** have to remain active.
 
 ## Current guide watch — October 28, 2026
 
-The official page now lists Kubernetes v1.35 as the exam environment and retains the requirement to pass CKA before attempting CKS. Under CARE, passing or recertifying CKS has also extended/reinstated CKA since June 18, 2026. This renewal relationship does not remove the CKA prerequisite for sitting CKS. [CKS official exam page](https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/) and [CARE update](https://training.linuxfoundation.org/blog/expanding-care-passing-cks-can-now-extend-your-cka-certification/)
+The official page now lists Kubernetes v1.37 as the exam environment and retains the requirement to pass CKA before attempting CKS. Under CARE, passing or recertifying CKS has also extended/reinstated CKA since June 18, 2026. This renewal relationship does not remove the CKA prerequisite for sitting CKS. [CKS official exam page](https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/) and [CARE update](https://training.linuxfoundation.org/blog/expanding-care-passing-cks-can-now-extend-your-cka-certification/)
 
 ## How to use this guide
 
@@ -35,7 +37,7 @@ CKS assumes CKA-level administration. Practice security as a layered, testable c
 4. validate legitimate function plus the action that should now be denied or detected;
 5. preserve evidence, restart/reboot/recreate where persistence matters, and document rollback/residual risk.
 
-Use disposable Kubernetes v1.35 clusters and hosts that you own or are explicitly authorized to test. Keep recovery access before changing API server, kubelet, firewall, kernel policy, admission or audit configuration. Use the [versioned Kubernetes v1.35 documentation](https://v1-35.docs.kubernetes.io/docs/home/) and the official objective page as the scope baseline. Tool names in objectives are examples of capabilities; understand inputs, outputs, false positives, enforcement point and verification rather than memorizing one command. Never reproduce proprietary simulator tasks or recalled exam material.
+Use disposable Kubernetes v1.37 clusters and hosts that you own or are explicitly authorized to test. Keep recovery access before changing API server, kubelet, firewall, kernel policy, admission or audit configuration. Use the [versioned Kubernetes v1.35 documentation](https://v1-35.docs.kubernetes.io/docs/home/) and the official objective page as the scope baseline. Tool names in objectives are examples of capabilities; understand inputs, outputs, false positives, enforcement point and verification rather than memorizing one command. Never reproduce proprietary simulator tasks or recalled exam material.
 
 > **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
 
@@ -482,7 +484,7 @@ Use only disposable or explicitly authorized environments; snapshots and console
 
 ## Original knowledge checks
 
-1. **Which first-three domain weights does this guide use?** The live Linux Foundation v1.35 weights: Cluster Setup 15%, Cluster Hardening 15%, System Hardening 10%.
+1. **Which first-three domain weights does this guide use?** The live Linux Foundation domain weights: Cluster Setup 15%, Cluster Hardening 15%, System Hardening 10%.
 2. **Does CKA have to remain active for CKS?** No; current official wording requires that CKA was passed previously.
 3. **Why is NetworkPolicy not encryption?** It permits/denies L3/L4 flows but does not protect content cryptographically.
 4. **How should a CIS failure be handled?** Validate applicability/ownership/risk, change safely, test and document remediation or exception.
@@ -522,7 +524,7 @@ Use only disposable or explicitly authorized environments; snapshots and console
 38. **What are Kubernetes audit stages useful for?** Understanding request receipt, response start and completion/panic timing where recorded.
 39. **Why avoid request bodies for Secrets in broad audit policy?** Audit storage could become another repository of sensitive material.
 40. **What completes a security change?** Legitimate function, denied/detected negative case, persistence, evidence, rollback and residual-risk record.
-41. **Does Kubernetes v1.37 automatically become the CKS exam version?** No; use the live exam page and curriculum, and treat the 4–8-week policy only as a recheck window.
+41. **How do you confirm the Kubernetes minor version for CKS?** Check the Linux Foundation exam page before practice or booking. It lists v1.37 as of November 23, 2026. The upstream release date alone does not establish an exam change.
 42. **What exactly did the ingress-nginx retirement remove?** One community controller's maintained releases, bug fixes and security fixes—not the stable Ingress API or the current CKS objective.
 
 43. **Can a valid signature still fail deployment approval?** Yes; trusted signer, expected claims, matching artifact digest and release policy are separate checks.
@@ -535,9 +537,9 @@ Use only disposable or explicitly authorized environments; snapshots and console
 | Resource | Access | Estimated time |
 |---|---|---:|
 | [Official CKS page](https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/) and [CNCF CKS page](https://www.cncf.io/training/certification/cks/) | Public; exam paid | 3–5 hours mapping/discrepancy review, plus 8–14 selected simulator hours |
-| [Public CNCF CKS v1.34 curriculum](https://github.com/cncf/curriculum/blob/master/CKS_Curriculum%20v1.34.pdf) | Public | 1–2 hours; actual outline and weights match the live v1.35 page despite the older filename |
-| [Kubernetes v1.35 documentation](https://v1-35.docs.kubernetes.io/docs/home/) | Public | 20–35 selected security reading/lab hours; use as a reference |
-| [Kubernetes v1.37 release](https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/) | Public release watch; use only to trigger the exam-version recheck | 20–40 minutes |
+| [Public CNCF CKS v1.37 curriculum](https://raw.githubusercontent.com/cncf/curriculum/main/CKS_Curriculum%20v1.37.pdf) | Public | About 1–2 hours to map the six domains to your practice plan (library estimate) |
+| [Archived Kubernetes v1.35 documentation](https://v1-35.docs.kubernetes.io/docs/home/) | Public | 20–35 selected security reading/lab hours (library estimate). This edition is historical. Confirm current behavior in v1.37. |
+| [Kubernetes v1.37 release](https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/) | Public release notes for the currently listed minor version | 20–40 minutes |
 | [Ingress NGINX retirement notice](https://kubernetes.io/blog/2025/11/11/ingress-nginx-retirement/) | Public operational warning; distinguishes the controller from the Ingress API | 15–25 minutes |
 | [Linux Foundation Kubernetes Security Essentials (LFS260)](https://training.linuxfoundation.org/training/kubernetes-security-essentials-lfs260/) | Paid | 26–30 listed course hours, nine chapters; Linux plus cloud/VirtualBox labs; add 35–70 independent lab hours |
 | [Pluralsight CKS path](https://www.pluralsight.com/paths/certified-kubernetes-security-specialist-cks) | Subscription/trial | 12 listed hours, seven courses, three refreshed 2026 labs and practice exam; add 35–70 lab hours |
@@ -547,4 +549,4 @@ Use only disposable or explicitly authorized environments; snapshots and console
 
 Pluralsight mixes a 2022 introduction, 2025 courses and 2026 cluster courses/labs; a refreshed lab does not date every lesson. KodeKloud's public outline still lists optional Pod Security Policies and does not visibly name SBOM/signature lessons; check modern Pod Security Admission and supply-chain coverage against the official objectives. This does not establish what is inside paid lessons or the actual current lab runtime. LFS260 requires self-managed lab access and possible cloud charges. Public metadata only was reviewed; no paid lessons, mock questions or provider labs were accessed. Added independent study times are planning estimates.
 
-This is not a complete list and is not meant to be consumed in full. Earn CKA first, choose one current structured security route, and use the live Linux Foundation v1.35 objectives as the source of truth while the CNCF overview weights remain inconsistent and the PDF retains its older filename. Build every control in disposable infrastructure and verify both legitimate behavior and denial/detection. Check tools and course examples for current Pod Security Standards, admission APIs, seccomp/AppArmor fields, signatures/provenance, runtime detection and the 15/15/10 weights. Avoid recalled tasks and question dumps; this is a defensive performance exam.
+This is not a complete list and is not meant to be consumed in full. Earn CKA first, choose one current structured security route, and use the live Linux Foundation v1.37 objectives as the source of truth while the CNCF overview weights remain inconsistent and the PDF retains its older filename. Build every control in disposable infrastructure and verify both legitimate behavior and denial/detection. Check tools and course examples for current Pod Security Standards, admission APIs, seccomp/AppArmor fields, signatures/provenance, runtime detection and the 15/15/10 weights. Avoid recalled tasks and question dumps; this is a defensive performance exam.

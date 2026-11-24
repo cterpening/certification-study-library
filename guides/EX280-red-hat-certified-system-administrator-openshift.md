@@ -426,7 +426,7 @@ Do not add an older topic merely because a course teaches it, and do not omit an
 
 ## Source map and freshness notes
 
-The live EX280 page is the scope authority but contains conflicting 4.22/4.18 statements and explicitly delegates assigned candidates to version-specific objectives. Matching versioned product documentation controls syntax and behavior. DO180/DO280 describe official learning routes; other resources supplement explanation and practice only.
+The live EX280 page is the scope authority and lists OpenShift 4.22 in both its exam and delivery descriptions. Red Hat directs registered candidates to their assigned version-specific objectives. Matching versioned product documentation controls syntax and behavior. DO180/DO280 describe official learning routes; other resources supplement explanation and practice only.
 
 Volatile: assigned exam version, objectives, APIs, console layout, CLI/tool behavior, network/ingress implementation, Operator channels, SCC defaults, course versions, sandbox limits, delivery, price, duration, access, and schedule. Recheck the official page and LMS immediately before study-plan lock and booking.
 

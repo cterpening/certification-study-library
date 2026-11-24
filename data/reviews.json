@@ -41471,6 +41471,80 @@
         "missing_or_error": 0
       },
       "notes": "Targeted issuer, guide and resource checks are documented in the November 23 packet. The objective coverage below is retained from the prior review. Full source validation of the revised guide remains pending."
+    },
+    {
+      "id": "cks-2026-11-23-scoped-refresh",
+      "exam_code": "CKS",
+      "guide_path": "guides/CKS-certified-kubernetes-security-specialist.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-11-23",
+      "outcome": "blocked",
+      "blueprint_snapshot_path": "data/objective-snapshots/cks-official-objectives.txt",
+      "blueprint_snapshot_sha256": "26ca4b0afc590f0df1dbf0ed60a435ce420efc6ac6d4ae95ec41dac302925c98",
+      "objective_coverage": [
+        {
+          "objective_group": "Cluster Setup (15%)",
+          "guide_sections": [
+            "Section 1",
+            "Integrated scenario 1",
+            "Labs 1–2 and 8"
+          ]
+        },
+        {
+          "objective_group": "Cluster Hardening (15%)",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenario 1",
+            "Labs 2 and 8"
+          ]
+        },
+        {
+          "objective_group": "System Hardening (10%)",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenario 1",
+            "Labs 3 and 8"
+          ]
+        },
+        {
+          "objective_group": "Minimize Microservice Vulnerabilities (20%)",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenario 2",
+            "Labs 4–5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Supply Chain Security (20%)",
+          "guide_sections": [
+            "Section 5",
+            "Integrated scenario 2",
+            "Labs 6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Monitoring, Logging and Runtime Security (20%)",
+          "guide_sections": [
+            "Section 6",
+            "Integrated scenario 3",
+            "Labs 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": false,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": false,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 32,
+        "reachable": 30,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Targeted issuer, guide and resource checks are documented in the November 23 packet. The objective coverage below is retained from the prior review. Full source validation of the revised guide remains pending."
     }
 ]
 }

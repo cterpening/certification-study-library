@@ -15,14 +15,14 @@ upcoming_change_checked: 2026-10-28
 
 > **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on October 28, 2026. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#cka-coverage-record). The [official CKA page](https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/) is authoritative.
 
-**Current baseline:** Kubernetes v1.35 and the five weighted domains on the live CKA page<br>
-**Lifecycle watch:** Kubernetes [v1.37 was released August 26, 2026](https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/), but the official exam page still names v1.35 as of September 29. Linux Foundation says exam alignment follows a new minor release by approximately 4–8 weeks, so recheck between September 23 and October 21 and immediately before practice or scheduling; this is a watch window, not an announced exam-version date.<br>
+**Current baseline:** Kubernetes v1.37 and the five weighted domains on the live CKA page<br>
+**Exam environment:** Linux Foundation lists Kubernetes v1.37 for CKA. Check the exam page before scheduling. The [upstream v1.37 release announcement](https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/) documents the August 26 product release.<br>
 **Official delivery snapshot:** Online, remotely proctored, performance-based command-line exam; two hours; certification valid for two years; 12-month eligibility, one retake, and two 36-hour Killer.sh simulator activations listed<br>
 **Prerequisite:** No formal certification prerequisite; practical readiness requires Linux, networking, containers, YAML, and repeated Kubernetes administration under time pressure
 
 ## Current guide watch — October 28, 2026
 
-The official Linux Foundation page now lists Kubernetes v1.35 as the exam environment. The competency outline is unchanged; the version tracks the current minor release and is expected to follow new Kubernetes minors within roughly 4–8 weeks. Passing CKS now also reinstates or extends CKA under the CARE program effective June 18, 2026; that is a credential-maintenance route, not an exam prerequisite change. [CKA official exam page](https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/) and [CARE update](https://training.linuxfoundation.org/blog/expanding-care-passing-cks-can-now-extend-your-cka-certification/)
+The official Linux Foundation page now lists Kubernetes v1.37 as the exam environment. The competency outline is unchanged; the version tracks the current minor release and is expected to follow new Kubernetes minors within roughly 4–8 weeks. Passing CKS now also reinstates or extends CKA under the CARE program effective June 18, 2026; that is a credential-maintenance route, not an exam prerequisite change. [CKA official exam page](https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/) and [CARE update](https://training.linuxfoundation.org/blog/expanding-care-passing-cks-can-now-extend-your-cka-certification/)
 
 ## How to use this guide
 
@@ -34,7 +34,7 @@ CKA evaluates working cluster state, not command recall. Practice every task wit
 4. make the smallest supported change, preserving an easy rollback or backup for risky control-plane work;
 5. verify the direct object plus readiness, traffic, persistence, security, restart, and dependent behavior.
 
-Build disposable v1.35 clusters with `kubeadm`, `kind`, or another conformant lab. Use the [versioned Kubernetes v1.35 documentation](https://v1-35.docs.kubernetes.io/docs/home/) while learning, then check the current exam-documentation policy in the official candidate resources. Type and explain commands; do not paste unknown snippets. Time mixed task sets only after you can diagnose them untimed. Never reproduce proprietary simulator tasks or recalled exam material.
+Build disposable v1.37 clusters with `kubeadm`, `kind`, or another conformant lab. Use the [versioned Kubernetes v1.35 documentation](https://v1-35.docs.kubernetes.io/docs/home/) while learning, then check the current exam-documentation policy in the official candidate resources. Type and explain commands; do not paste unknown snippets. Time mixed task sets only after you can diagnose them untimed. Never reproduce proprietary simulator tasks or recalled exam material.
 
 > **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
 
@@ -364,7 +364,7 @@ Inspect Pod scheduling Events, PVC/PV/StorageClass, access/volume modes, topolog
 
 Use disposable infrastructure and only systems you own or are authorized to change. **All eight complete cluster labs below remain proposed:** Docker's Linux-engine endpoint was unavailable during this review, and native Linux runtime validation is deferred. Only the separate offline rendering exercise was executed.
 
-1. **Build and prove a kubeadm cluster (3–5 hours):** create a control plane and worker with v1.35-compatible components, CRI and CNI. Capture component ownership, join evidence, cross-node traffic and DNS. Reboot both nodes and validate again.
+1. **Build and prove a kubeadm cluster (3–5 hours):** create a control plane and worker with v1.37-compatible components, CRI and CNI. Capture component ownership, join evidence, cross-node traffic and DNS. Reboot both nodes and validate again.
 2. **RBAC and operator boundary (2–3 hours):** create a namespaced service account with minimum read/write scope, prove allowed/denied operations, then install a small operator/CRD in a lab. Trace CR to controller, status, RBAC, events and finalizer cleanup. Prove that the namespaced binding grants no access in a second namespace and that an additional restrictive role cannot negate an existing grant.
 3. **Safe lifecycle rehearsal (3–5 hours):** take/verify etcd backup, cordon/drain, perform a supported single-minor kubeadm upgrade in a disposable cluster, validate every component, and restore a separate clone from snapshot. Record quorum, revision/cache recovery and application-data evidence; demonstrate a budget-blocked drain without bypassing it.
 4. **Release and scheduling matrix (2–3 hours):** deploy an app with requests/limits, three probes, ConfigMap/Secret, affinity, taint/toleration, topology spread and HPA. Cause Pending, failed readiness and bad rollout states; repair and roll back. Compare projected-file, environment and subPath configuration refresh. Explain the seven-replica rollout/PDB rounding difference with observed status.
@@ -415,7 +415,7 @@ Use disposable infrastructure and only systems you own or are authorized to chan
 38. **If the API is down, where next?** Load-balancer/host path, kubelet, runtime/static control-plane containers, ports, certificates and etcd.
 39. **Connection refused versus timeout?** Refused often reaches a host with no listener; timeout more often suggests drop/path/unresponsive behavior, though evidence must confirm.
 40. **Why not delete a stuck PVC first?** Reclaim and backend behavior may destroy or strand data before the real attach/mount cause is known.
-41. **Does the Kubernetes v1.37 release move CKA off v1.35 automatically?** No; the live exam page and curriculum remain authoritative, and the 4–8-week policy creates a recheck window rather than a guaranteed switch date.
+41. **How do you confirm the Kubernetes minor version for CKA?** Check the Linux Foundation exam page before practice or booking. It lists v1.37 as of November 23, 2026. The upstream release date alone does not establish an exam change.
 42. **Did ingress-nginx retirement remove the Ingress API objective?** No; it retired one community controller, so distinguish API intent from the installed implementation and use a maintained controller for production.
 
 43. **Does a PDB stop a Deployment rollout from making Pods unavailable?** No; rollout strategy governs that update. Resulting unavailability still affects voluntary-eviction budget calculations.
@@ -429,7 +429,7 @@ Use disposable infrastructure and only systems you own or are authorized to chan
 |---|---|---:|
 | [Official CKA page](https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/) and [public latest CNCF v1.37 curriculum](https://github.com/cncf/curriculum/blob/master/CKA_Curriculum_v1.37.pdf) | Public; exam paid | 3–5 hours mapping/review, plus 8–14 selected simulator hours |
 | [Kubernetes v1.35 documentation](https://v1-35.docs.kubernetes.io/docs/home/) | Public | 20–35 selected reading/lab hours; use as reference, not a cover-to-cover course |
-| [Kubernetes v1.37 release](https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/) | Public release watch; use only to trigger the exam-version recheck | 20–40 minutes |
+| [Kubernetes v1.37 release](https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/) | Public release notes for the currently listed minor version | 20–40 minutes |
 | [Ingress NGINX retirement notice](https://kubernetes.io/blog/2025/11/11/ingress-nginx-retirement/) | Public operational warning; distinguishes the controller from the stable Ingress API | 15–25 minutes |
 | [Linux Foundation Kubernetes Fundamentals (LFS258)](https://training.linuxfoundation.org/training/kubernetes-fundamentals/) | Paid | 35 listed course hours, 17 chapters and hosted browser labs; add 35–70 independent lab hours |
 | [Pluralsight CKA path](https://www.pluralsight.com/paths/certified-kubernetes-administrator) | Subscription/trial | 30 listed hours, 15 courses, 6 labs and practice exam; add 30–60 lab hours |
@@ -437,7 +437,7 @@ Use disposable infrastructure and only systems you own or are authorized to chan
 | [O'Reilly CKA in-depth guidance and practice](https://www.oreilly.com/videos/certified-kubernetes-administrator/0642572014448/) | Subscription/trial | Earlier listing: 8 hours 7 minutes; blocked during this review, not reverified; add 20–40 proposed lab hours |
 | [Udemy/KodeKloud CKA with Practice Tests](https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/) | Paid; price varies | Earlier listing: 25 hours 57 minutes; blocked during this review, not reverified; allow 45–75 proposed total hours |
 
-LFS258 now advertises hosted browser labs; optional self-managed cloud infrastructure may still cost money. Its outline explicitly includes Helm/Kustomize and CRDs, and its overview includes Gateway API. Pluralsight mixes older courses with 2026 additions; path totals alone do not establish every lesson's v1.35 alignment. KodeKloud lists Gateway API, Helm and Kustomize, with a separate September 2025 video update. Public metadata was reviewed; paid lessons, mock questions and provider labs were not accessed. All added independent practice times are planning estimates.
+LFS258 now advertises hosted browser labs; optional self-managed cloud infrastructure may still cost money. Its outline explicitly includes Helm/Kustomize and CRDs, and its overview includes Gateway API. Pluralsight mixes older courses with 2026 additions; path totals alone do not establish every lesson's alignment to the current exam environment. KodeKloud lists Gateway API, Helm and Kustomize, with a separate September 2025 video update. Public metadata was reviewed; paid lessons, mock questions and provider labs were not accessed. All added independent practice times are planning estimates.
 
-This is not a complete list and is not meant to be consumed in full. Choose one current structured route, use the official v1.35 objectives and documentation as the source of truth, build and break disposable clusters, and use the included simulator late for diagnosis. Check every course against the live CKA version, especially when it still teaches older Ingress-only, pre-Gateway API, pre-current-admission, or outdated kubeadm behavior. Avoid recalled tasks and question dumps; this is a performance exam.
+This is not a complete list and is not meant to be consumed in full. Choose one current structured route, use the official v1.37 objectives and documentation as the source of truth, build and break disposable clusters, and use the included simulator late for diagnosis. Check every course against the live CKA version, especially when it still teaches older Ingress-only, pre-Gateway API, pre-current-admission, or outdated kubeadm behavior. Avoid recalled tasks and question dumps; this is a performance exam.
 

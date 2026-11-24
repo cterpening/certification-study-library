@@ -15,14 +15,14 @@ upcoming_change_checked: 2026-10-28
 
 > **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on October 28, 2026. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ckad-coverage-record). The [official CKAD page](https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/) is authoritative.
 
-**Current baseline:** Kubernetes v1.35 and the five weighted domains on the live CKAD page<br>
-**Lifecycle watch:** Kubernetes [v1.37 was released August 26, 2026](https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/), while the live CKAD page still names v1.35 on September 29. Linux Foundation says alignment follows by approximately 4–8 weeks, so recheck between September 23 and October 21 and immediately before practice or scheduling; this is a watch window, not an announced switch date.<br>
+**Current baseline:** Kubernetes v1.37 and the five weighted domains on the live CKAD page<br>
+**Exam environment:** Linux Foundation lists Kubernetes v1.37 for CKAD. Check the exam page before scheduling. The [upstream v1.37 release announcement](https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/) documents the August 26 product release.<br>
 **Official delivery snapshot:** Online, remotely proctored, performance-based command-line exam; two hours; certification valid for two years; 12-month eligibility, one retake, and two 36-hour Killer.sh simulator activations with 17 questions per attempt listed<br>
 **Prerequisite:** No formal certification prerequisite; the official scope assumes working knowledge of OCI-compliant container images/runtimes, microservice architecture, and Kubernetes resource definitions
 
 ## Current guide watch — October 28, 2026
 
-The official page now lists Kubernetes v1.35 as the exam environment; the competency domains remain unchanged. Expect the tested minor version to advance within about 4–8 weeks of a Kubernetes release. Practice the current CLI environment and APIs, while keeping deprecated-API awareness in the published blueprint. [CKAD official exam page](https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/)
+The official page now lists Kubernetes v1.37 as the exam environment; the competency domains remain unchanged. Expect the tested minor version to advance within about 4–8 weeks of a Kubernetes release. Practice the current CLI environment and APIs, while keeping deprecated-API awareness in the published blueprint. [CKAD official exam page](https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/)
 
 ## How to use this guide
 
@@ -34,7 +34,7 @@ CKAD is application-centered. Practice each requirement as a deployable, observa
 4. verify conditions, events, logs, probes, resources, endpoints and user behavior;
 5. restart, roll forward/back, reschedule or recreate to prove the design survives normal lifecycle events.
 
-Build a small service repeatedly on disposable Kubernetes v1.35 clusters. Keep source, Containerfile/Dockerfile, manifests, Kustomize overlays and Helm values in version control. Use the [versioned Kubernetes v1.35 documentation](https://v1-35.docs.kubernetes.io/docs/home/) to understand APIs and examples. Learn fast discovery with `kubectl explain`, API resource discovery, dry run, output formats and focused documentation search. Do not reproduce proprietary simulator tasks or recalled exam material.
+Build a small service repeatedly on disposable Kubernetes v1.37 clusters. Keep source, Containerfile/Dockerfile, manifests, Kustomize overlays and Helm values in version control. Use the [versioned Kubernetes v1.35 documentation](https://v1-35.docs.kubernetes.io/docs/home/) to understand APIs and examples. Learn fast discovery with `kubectl explain`, API resource discovery, dry run, output formats and focused documentation search. Do not reproduce proprietary simulator tasks or recalled exam material.
 
 > **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
 
@@ -124,7 +124,7 @@ After install/upgrade, check release status/history and Kubernetes resources; a 
 
 ### Offline exercise: values, schema and rendered behavior
 
-Create an `api-practice` directory with the seven files below, keeping `templates` as a subdirectory. Use an explicitly selected Helm 3.22.0 executable for repeatability. The image deliberately uses `example.invalid`; it is for rendering only. There are no chart dependencies, plugins, remote schema references or template lookups. The declared Kubernetes range is an exercise constraint, not a claim of runtime compatibility. The application contract would require port 8080, `/ready` and a usable non-root image in a later live lab.
+Create an `api-practice` directory with the seven files below, keeping `templates` as a subdirectory. Use an explicitly selected Helm 3.22.0 executable for repeatability. The image deliberately uses `example.invalid`; it is for rendering only. There are no chart dependencies, plugins, remote schema references or template lookups. The chart deliberately accepts Kubernetes 1.35 for this offline rendering exercise and rejects a 1.37 install. Use a separately validated chart with a compatible range for practice on the current exam version. The application contract would require port 8080, `/ready` and a usable non-root image in a later live lab.
 
 The chart schema checks the final merged values. Values supplied with `-f` override defaults, later files override earlier files, and `--set` overrides them. `--set-string` preserves strings such as `00123`. Chart `version`, informational `appVersion` and the actual image reference are distinct. Sources: [chart files and schema](https://docs.helm.sh/docs/v3/topics/charts/) and [values precedence](https://docs.helm.sh/docs/v3/chart_template_guide/values_files/).
 
@@ -399,7 +399,7 @@ Start with default deny in a lab, then add named flows: frontend to API, API to 
 
 Ingress rules map host/path to Services but require an installed compatible Ingress controller. Set and verify IngressClass, host, path and path type, backend Service/port, address and TLS Secret. Inspect controller logs/events and backend endpoints. Test with correct Host header/DNS and TLS name. Controller-specific annotations are not portable Kubernetes API behavior; identify them explicitly if used.
 
-The current CKAD objectives name Ingress, not Gateway API. Gateway API is useful adjacent knowledge and appears in the CKA v1.35 scope, but do not substitute it for practicing Ingress. External DNS and load balancer provisioning are separate integrations.
+The current CKAD objectives name Ingress, not Gateway API. Gateway API is useful adjacent knowledge and appears in the CKA scope, but do not substitute it for practicing Ingress. External DNS and load balancer provisioning are separate integrations.
 
 The Kubernetes project [retired the community ingress-nginx controller in March 2026](https://kubernetes.io/blog/2025/11/11/ingress-nginx-retirement/), not the Kubernetes Ingress API or CKAD objective. In a provided exam environment, follow the installed controller and task contract. For production, select a maintained implementation and validate IngressClass, controller-specific annotations, TLS, routing, observability, cutover, and rollback; do not translate the controller retirement into an unsupported claim that Ingress resources no longer work.
 
@@ -413,7 +413,7 @@ Build a non-root image that handles termination and writes logs to streams. Depl
 
 ### Scenario 2: Canary through package overlays
 
-Render a Helm chart or Kustomize base/overlay for stable and canary Deployments with deliberate labels. Run a small canary beside stable behind one Service or two controlled routes. Verify image, configuration, probes, resources and endpoint mixture. Define promotion/abort evidence from logs, failures and latency. Promote by reviewed source change, render/diff/apply, and remove or scale down canary only after verification. Record the v1.35 API versions used.
+Render a Helm chart or Kustomize base/overlay for stable and canary Deployments with deliberate labels. Run a small canary beside stable behind one Service or two controlled routes. Verify image, configuration, probes, resources and endpoint mixture. Define promotion/abort evidence from logs, failures and latency. Promote by reviewed source change, render/diff/apply, and remove or scale down canary only after verification. Record the Kubernetes minor and manifest API versions used.
 
 ### Scenario 3: An application is Running but unreachable and loses work
 
@@ -474,7 +474,7 @@ Use only disposable or explicitly authorized environments. **All eight complete 
 38. **Does NetworkPolicy encrypt traffic?** No; it permits/denies L3/L4 flows and needs separate TLS/application controls.
 39. **What makes Ingress work?** A compatible controller plus correct class, rules, Service/endpoints and optional TLS.
 40. **Why test localhost, Pod IP, Service and Ingress separately?** Each isolates a different segment of the application traffic chain.
-41. **Does Kubernetes v1.37 automatically become the CKAD exam version?** No; use the live exam page and curriculum, and treat the 4–8-week policy only as a recheck window.
+41. **How do you confirm the Kubernetes minor version for CKAD?** Check the Linux Foundation exam page before practice or booking. It lists v1.37 as of November 23, 2026. The upstream release date alone does not establish an exam change.
 42. **What exactly did the ingress-nginx retirement remove?** One community controller's maintained releases, bug fixes, and security fixes—not the stable Ingress API or the current CKAD objective.
 
 43. **Does ProgressDeadlineExceeded automatically roll back a Deployment?** No; it reports stalled progress while the controller continues retrying.
@@ -488,7 +488,7 @@ Use only disposable or explicitly authorized environments. **All eight complete 
 |---|---|---:|
 | [Official CKAD page](https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/) and [public latest CNCF v1.37 curriculum](https://github.com/cncf/curriculum/blob/master/CKAD_Curriculum_v1.37.pdf) | Public; exam paid | 3–5 hours mapping/review, plus 8–14 selected simulator hours |
 | [Kubernetes v1.35 documentation](https://v1-35.docs.kubernetes.io/docs/home/) | Public | 18–30 selected reading/lab hours; use as a reference |
-| [Kubernetes v1.37 release](https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/) | Public release watch; use only to trigger the exam-version recheck | 20–40 minutes |
+| [Kubernetes v1.37 release](https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/) | Public release notes for the currently listed minor version | 20–40 minutes |
 | [Ingress NGINX retirement notice](https://kubernetes.io/blog/2025/11/11/ingress-nginx-retirement/) | Public operational warning; distinguishes the controller from the Ingress API | 15–25 minutes |
 | [Linux Foundation Kubernetes for Developers (LFD259)](https://training.linuxfoundation.org/training/kubernetes-for-developers/) | Paid | 35 listed course hours, eight chapters; Linux plus cloud/VirtualBox lab access required; add 30–60 independent lab hours |
 | [Pluralsight CKAD path](https://www.pluralsight.com/paths/certified-kubernetes-application-developer-ckad-2023) | Subscription/trial | 10 listed hours, five courses, four labs and practice exam; add 25–50 lab hours |
@@ -498,5 +498,5 @@ Use only disposable or explicitly authorized environments. **All eight complete 
 
 LFD259 still describes self-managed Linux/cloud or VirtualBox labs; do not infer hosted browser labs from other Linux Foundation courses, and budget for possible cloud charges. Pluralsight includes a September 9, 2026 deployment course and four 2026 labs alongside older courses; its course list has no separately titled networking course, so verify coverage across the actual path. KodeKloud's public outline includes Helm and Ingress but does not visibly list Kustomize, and its stale lab-update history does not establish today's runtime version. Use the official objective map to check those gaps. Paid lessons, labs and mock questions were not accessed. Added practice times are planning estimates.
 
-This is not a complete list and is not meant to be consumed in full. Choose one current route, build one application through every domain, and use official v1.35 objectives/documentation as the gap checklist. The Udemy and KodeKloud entries are the same course family, so choose one access route. Verify older material for current API versions, security contexts, admission, multi-container behavior and release tooling. Avoid recalled tasks and question dumps; this is a performance exam.
+This is not a complete list and is not meant to be consumed in full. Choose one current route, build one application through every domain, and use official v1.37 objectives/documentation as the gap checklist. The Udemy and KodeKloud entries are the same course family, so choose one access route. Verify older material for current API versions, security contexts, admission, multi-container behavior and release tooling. Avoid recalled tasks and question dumps; this is a performance exam.
 

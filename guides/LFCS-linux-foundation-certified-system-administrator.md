@@ -538,7 +538,7 @@ This is not a complete list and is not meant to be consumed in full. Choose one 
 | Resource | Access | Estimated time | Best use and boundary |
 |---|---|---:|---|
 | [Official LFCS page](https://training.linuxfoundation.org/certification/linux-foundation-certified-sysadmin-lfcs/) | Public/exam | 3–5 hours | Map current weights, delivery and simulator; recheck before scheduling |
-| [Official LFCS curriculum path](https://training.linuxfoundation.org/wp-content/uploads/2024/10/LFCS.pdf) | Public | 30–60 minutes | Select training; its 3–6 month estimate depends on experience |
+| [Official LFCS curriculum path](https://training.linuxfoundation.org/wp-content/uploads/2024/10/LFCS_Curriculum_Path_103026.pdf) | Public | 30–60 minutes to plan (library estimate) | The publisher gives a separate 3–6 month preparation estimate that depends on experience. |
 | [Linux System Administration Essentials (LFS207)](https://training.linuxfoundation.org/training/linux-system-administration-essentials-lfs207/) | Paid | 50–60 hours listed | Official cross-distribution course with labs and assignments |
 | Included Killer.sh simulator | Included with exam | 8–14 hours estimated | Two 36-hour activations; rehearse environment, diagnose gaps, then rebuild tasks independently |
 | [Pluralsight LFCS path](https://www.pluralsight.com/paths/linux-foundation-certified-system-administrator-lfcs) | Paid | 40 hours listed | 12 courses, three July 2026 labs and practice exam; two courses updated September 2026, but the summary retains an older six-domain taxonomy |
