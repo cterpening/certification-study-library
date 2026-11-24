@@ -21,7 +21,7 @@ upcoming_change_checked: 2026-10-29
 
 **Experience target:** Use the earlier developer experience description as preparation advice: practice application CRUD, document modeling and the selected official driver. That description is not a newly verified prerequisite. The public exam page currently lists no formal prerequisite.
 
-**VERIFY CURRENT — release and exam scope:** No dated replacement was identified in the accessible certification pages on September 29. That is a limited observation while the objective body remains unavailable. The current [manual](https://www.mongodb.com/docs/manual/) and [9.0 release notes](https://www.mongodb.com/docs/manual/release-notes/9.0/) mix a “current” navigation label, preview context and “Upcoming” patch headings. A documentation selector does not prove general availability, deployment compatibility or a changed exam version. Record the server, feature compatibility and driver versions used in every real lab.
+**VERIFY CURRENT — release and exam scope:** No dated replacement was identified in the accessible certification pages on September 29. That is a limited observation while the objective body remains unavailable. MongoDB announced Server 9.0 general availability on September 29, 2026. Use the [manual](https://www.mongodb.com/docs/manual/) and [release notes](https://www.mongodb.com/docs/manual/release-notes/9.0/) for patch-specific changes. Record the server, feature compatibility and driver versions used in practice. The certification page does not identify the assessed server version. See the [November source check](../docs/research/2026-11-23-refresh-20.md#mongodb-associate-developer).
 
 ## How to use this guide
 

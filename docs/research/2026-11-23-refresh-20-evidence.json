@@ -1,0 +1,591 @@
+{
+  "date": "2026-11-23",
+  "scope": "AI research into official objectives, selected technical references and learning resources. Individual exam delivery, private course contents and live product testing were outside this review.",
+  "exams": [
+    {
+      "code": "SALESFORCE-PLATFORM-ADMINISTRATOR",
+      "exam": {
+        "code": "SALESFORCE-PLATFORM-ADMINISTRATOR",
+        "observation": "Official Trailhead retains the current Administrator study resource and the monitored scope. Both monitored objective text and status matched accepted records.",
+        "urls": [
+          "https://trailhead.salesforce.com/credentials/platformadministrator",
+          "https://trailhead.salesforce.com/content/learn/modules/administrator-certification-prep-setup-and-objects/get-started-with-administrator-certification-prep"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Preserve current scope.",
+        "monitor": "unchanged",
+        "accepted_objective_sha256": "b2f9f40f925247562d8d19eed5ad7a33a4b5c10e03b705d2fe34ec88678b7c97",
+        "candidate_objective_sha256": "b2f9f40f925247562d8d19eed5ad7a33a4b5c10e03b705d2fe34ec88678b7c97",
+        "catalog_matches": {
+          "https://trailhead.salesforce.com/credentials/platformadministrator": {
+            "sources": [
+              "salesforce-platform-admin-certification"
+            ],
+            "candidates": []
+          },
+          "https://trailhead.salesforce.com/content/learn/modules/administrator-certification-prep-setup-and-objects/get-started-with-administrator-certification-prep": {
+            "sources": [
+              "salesforce-platform-admin-prep-unit"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "SALESFORCE-PLATFORM-ADMINISTRATOR",
+        "observation": "Salesforce documents changed caller/user-context behavior for flows configured at API 68 or later; record the flow's version before comparing permission results.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://help.salesforce.com/s/articleView?id=platform.automate_flow_versioned_updates_68.htm&language=en_US&type=5"
+        ],
+        "source_ids": [
+          "salesforce-flow-api68-context"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "SALESFORCE-PLATFORM-ADMINISTRATOR",
+        "source_id": "salesforce-admin-trailmix-current",
+        "urls": [
+          "https://trailhead.salesforce.com/users/00550000006yDdKAAU/trailmixes/prepare-for-your-salesforce-administrator-credential"
+        ],
+        "observation": "Administrator preparation trailmix redirects from a numeric user URL to the Trailhead-curated path. Public English text did not establish a total runtime.",
+        "recommendation": "Use the current Trailhead route and keep duration unverified.",
+        "access": "public",
+        "confidence": "High for public information; courses were not completed."
+      },
+      "monitor_outcome": "unchanged",
+      "accepted_on_start": "b2f9f40f925247562d8d19eed5ad7a33a4b5c10e03b705d2fe34ec88678b7c97",
+      "candidate": "b2f9f40f925247562d8d19eed5ad7a33a4b5c10e03b705d2fe34ec88678b7c97"
+    },
+    {
+      "code": "SALESFORCE-PLATFORM-APP-BUILDER",
+      "exam": {
+        "code": "SALESFORCE-PLATFORM-APP-BUILDER",
+        "observation": "Trailhead retains the named credential; the embedded Help article did not yield a complete machine-readable objective map in the monitor. Objective monitor reported: ValueError: Could not find Salesforce exam objectives",
+        "urls": [
+          "https://trailhead.salesforce.com/credentials/platformappbuilder",
+          "https://help.salesforce.com/s/articleView?id=005298964&language=en_US&type=1"
+        ],
+        "confidence": "Credential visible; complete official scope comparison unresolved.",
+        "recommendation": "Keep the prior baseline and cite any supplemental Trailhead technical coverage separately.",
+        "monitor": "manual-review",
+        "accepted_objective_sha256": "5365cb37f260db38aa6b4a306dd826258e3d85f058b8111352e56a065a965f14",
+        "candidate_objective_sha256": null,
+        "catalog_matches": {
+          "https://trailhead.salesforce.com/credentials/platformappbuilder": {
+            "sources": [
+              "salesforce-platform-app-builder-certification"
+            ],
+            "candidates": []
+          },
+          "https://help.salesforce.com/s/articleView?id=005298964&language=en_US&type=1": {
+            "sources": [
+              "salesforce-platform-app-builder-guide"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "SALESFORCE-PLATFORM-APP-BUILDER",
+        "observation": "A cross-object formula can expose related-record field values through a record a user can view; verify field-level and sharing assumptions.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "Moderate for the specific rule from indexed issuer material; direct help page returned a client shell.",
+        "urls": [
+          "https://help.salesforce.com/s/articleView?id=customize_cross_object.htm&language=en_US&type=5"
+        ],
+        "source_ids": [
+          "salesforce-cross-object-formula"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "SALESFORCE-PLATFORM-APP-BUILDER",
+        "source_id": "salesforce-app-builder-trailmix-2026",
+        "urls": [
+          "https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-platform-app-builder-credential"
+        ],
+        "observation": "The English App Builder trailmix is available; a prior estimate for a translated collection does not establish the English runtime.",
+        "recommendation": "Confirm duration and modules in the selected locale.",
+        "access": "public",
+        "confidence": "High for public information; courses were not completed."
+      },
+      "monitor_outcome": "manual-review",
+      "accepted_on_start": "5365cb37f260db38aa6b4a306dd826258e3d85f058b8111352e56a065a965f14",
+      "candidate": null
+    },
+    {
+      "code": "SALESFORCE-PLATFORM-DEVELOPER",
+      "exam": {
+        "code": "SALESFORCE-PLATFORM-DEVELOPER",
+        "observation": "Trailhead retains the named credential; the embedded Help article did not yield a complete machine-readable objective map in the monitor. Separate issuer test prep confirms Developer Fundamentals 27%, explicitly including Agentforce for Developers. Objective monitor reported: ValueError: Could not find Salesforce exam objectives",
+        "urls": [
+          "https://trailhead.salesforce.com/credentials/platformdeveloperi",
+          "https://help.salesforce.com/s/articleView?id=005298965&language=en_US&type=1",
+          "https://trailhead.salesforce.com/content/learn/modules/platform-developer-i-certification-prep-fundamentals-and-database-modeling/pd1-1-review-fundamentals"
+        ],
+        "confidence": "Credential visible; complete official scope comparison unresolved.",
+        "recommendation": "Keep the prior baseline and cite any supplemental Trailhead technical coverage separately.",
+        "monitor": "manual-review",
+        "accepted_objective_sha256": "4843c3b24a93a1c4da79e50db00e79c38fa5921c6127df89e37a6754c5cddbfe",
+        "candidate_objective_sha256": null,
+        "catalog_matches": {
+          "https://trailhead.salesforce.com/credentials/platformdeveloperi": {
+            "sources": [
+              "salesforce-platform-developer-certification"
+            ],
+            "candidates": []
+          },
+          "https://help.salesforce.com/s/articleView?id=005298965&language=en_US&type=1": {
+            "sources": [
+              "salesforce-platform-developer-guide"
+            ],
+            "candidates": []
+          },
+          "https://trailhead.salesforce.com/content/learn/modules/platform-developer-i-certification-prep-fundamentals-and-database-modeling/pd1-1-review-fundamentals": {
+            "sources": [],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "SALESFORCE-PLATFORM-DEVELOPER",
+        "observation": "Salesforce's indexed documentation distinguishes API 67+ default user-mode database operations from class/trigger sharing context. Declare access intent explicitly for version-sensitive code.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "Moderate: the release article yielded a client shell directly, indexed developer documentation corroborates.",
+        "urls": [
+          "https://help.salesforce.com/s/articleView?id=release-notes.rn_apex_default_user_mode.htm&language=en_US&release=262&type=5"
+        ],
+        "source_ids": [
+          "salesforce-apex-default-user-mode-67"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "SALESFORCE-PLATFORM-DEVELOPER",
+        "source_id": "salesforce-platform-developer-prep-trail",
+        "urls": [
+          "https://trailhead.salesforce.com/content/learn/trails/platform-developer-i-certification-study-guide"
+        ],
+        "observation": "Developer certification prep trail has four steps and explicitly gives about 1 hour 15 minutes.",
+        "recommendation": "Treat its scenarios and flashcards as a focused review.",
+        "access": "public",
+        "confidence": "High for public information; courses were not completed."
+      },
+      "monitor_outcome": "manual-review",
+      "accepted_on_start": "4843c3b24a93a1c4da79e50db00e79c38fa5921c6127df89e37a6754c5cddbfe",
+      "candidate": null
+    },
+    {
+      "code": "SALESFORCE-AGENTFORCE-SPECIALIST",
+      "exam": {
+        "code": "SALESFORCE-AGENTFORCE-SPECIALIST",
+        "observation": "Trailhead retains the named credential; the embedded Help article did not yield a complete machine-readable objective map in the monitor. Objective monitor reported: ValueError: Could not find Salesforce exam objectives",
+        "urls": [
+          "https://trailhead.salesforce.com/credentials/agentforcespecialist",
+          "https://help.salesforce.com/s/articleView?id=005298924&language=en_US&type=1"
+        ],
+        "confidence": "Credential visible; complete official scope comparison unresolved.",
+        "recommendation": "Keep the prior baseline and cite any supplemental Trailhead technical coverage separately.",
+        "monitor": "manual-review",
+        "accepted_objective_sha256": "a633fd73b5f733d78426c5c66eebf566a7867d80a36ddadd505dbd8ef29b5664",
+        "candidate_objective_sha256": null,
+        "catalog_matches": {
+          "https://trailhead.salesforce.com/credentials/agentforcespecialist": {
+            "sources": [
+              "salesforce-agentforce-specialist-certification"
+            ],
+            "candidates": []
+          },
+          "https://help.salesforce.com/s/articleView?id=005298924&language=en_US&type=1": {
+            "sources": [
+              "salesforce-agentforce-specialist-guide"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "SALESFORCE-AGENTFORCE-SPECIALIST",
+        "observation": "Salesforce describes deterministic conditions to filter agent actions using variables before model selection.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for the current first-party article available through browser rendering; direct HTTP returned 403.",
+        "urls": [
+          "https://developer.salesforce.com/blogs/2025/04/control-agent-access-and-decision-making-with-variables-and-filters"
+        ],
+        "source_ids": [
+          "salesforce-agent-variables-filters"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "SALESFORCE-AGENTFORCE-SPECIALIST",
+        "source_id": "salesforce-afs401-agentforce-service-specialist",
+        "urls": [
+          "https://trailheadacademy.salesforce.com/classes/afs401-agentforce-for-service-specialist---afs401"
+        ],
+        "observation": "AFS401 is a service-agent specialist Academy class. Authenticated syllabus and class availability were not confirmed in this reader.",
+        "recommendation": "Keep the older three-day duration dated; check enrollment.",
+        "access": "paid",
+        "confidence": "Limited for enrollment-gated content."
+      },
+      "monitor_outcome": "manual-review",
+      "accepted_on_start": "a633fd73b5f733d78426c5c66eebf566a7867d80a36ddadd505dbd8ef29b5664",
+      "candidate": null
+    },
+    {
+      "code": "MONGODB-ASSOCIATE-DEVELOPER",
+      "exam": {
+        "code": "MONGODB-ASSOCIATE-DEVELOPER",
+        "observation": "The issuer credential page and named study-guide landing page exist. The anonymous study-guide shell exposes a description; a full detailed objective contract was not recovered. Objective monitor reported: ValueError: Could not find MongoDB study-guide identity or objectives",
+        "urls": [
+          "https://learn.mongodb.com/pages/mongodb-associate-developer-exam",
+          "https://learn.mongodb.com/courses/mongodb-associate-developer-exam-study-guide"
+        ],
+        "confidence": "High for identity; full objective parity unresolved.",
+        "recommendation": "Preserve prior manually reviewed baseline and access limitation; do not infer a new retirement or replace it with learning-path topics.",
+        "monitor": "manual-review",
+        "accepted_objective_sha256": "7b8ee2749e9fe5f87fefc15268c82cd74a50ee45e682d1c6c83a552568fc25d6",
+        "candidate_objective_sha256": null,
+        "catalog_matches": {
+          "https://learn.mongodb.com/pages/mongodb-associate-developer-exam": {
+            "sources": [
+              "mongodb-associate-developer-exam"
+            ],
+            "candidates": []
+          },
+          "https://learn.mongodb.com/courses/mongodb-associate-developer-exam-study-guide": {
+            "sources": [
+              "mongodb-associate-developer-study-guide"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "MONGODB-ASSOCIATE-DEVELOPER",
+        "observation": "MongoDB's dated issuer announcement confirms server 9.0 reached GA on September 29, 2026, and separately labels Atlas Infinite public preview. Neither event identifies the assessed exam version.",
+        "recommendation": "Replace the obsolete GA uncertainty with the dated, product-specific status. Keep the server version, feature compatibility, driver and exam-scope boundaries.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://www.mongodb.com/company/newsroom/press-releases/mongodb-launches-mongodb-9-0-the-best-version-ever-built-and-atlas-infinite-for-ai-scale-demand"
+        ],
+        "source_ids": [],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "MONGODB-ASSOCIATE-DEVELOPER",
+        "source_id": "mongodb-python-developer-path",
+        "urls": [
+          "https://learn.mongodb.com/learning-paths/mongodb-python-developer-path"
+        ],
+        "observation": "The Python Developer Learning Path lists 20 hours and learner registration. Choose the language-specific path that corresponds to the learner's exam variant.",
+        "recommendation": "Use the Python path only for the corresponding variant.",
+        "access": "public",
+        "confidence": "High for public information; courses were not completed."
+      },
+      "monitor_outcome": "manual-review",
+      "accepted_on_start": "7b8ee2749e9fe5f87fefc15268c82cd74a50ee45e682d1c6c83a552568fc25d6",
+      "candidate": null
+    },
+    {
+      "code": "MONGODB-ASSOCIATE-DATA-MODELER",
+      "exam": {
+        "code": "MONGODB-ASSOCIATE-DATA-MODELER",
+        "observation": "The issuer credential page and named study-guide landing page exist. The anonymous study-guide shell exposes a description; a full detailed objective contract was not recovered. Objective monitor reported: ValueError: Could not find MongoDB study-guide identity or objectives",
+        "urls": [
+          "https://learn.mongodb.com/pages/mongodb-associate-data-modeler-exam",
+          "https://learn.mongodb.com/courses/associate-data-modeler-exam-study-guide"
+        ],
+        "confidence": "High for identity; full objective parity unresolved.",
+        "recommendation": "Preserve prior manually reviewed baseline and access limitation; do not infer a new retirement or replace it with learning-path topics.",
+        "monitor": "manual-review",
+        "accepted_objective_sha256": "e3b9632a8ab5b80cdb74a5ccd557cdc482917c1aca71f116b804b9fd6f92fd10",
+        "candidate_objective_sha256": null,
+        "catalog_matches": {
+          "https://learn.mongodb.com/pages/mongodb-associate-data-modeler-exam": {
+            "sources": [
+              "mongodb-associate-data-modeler-exam"
+            ],
+            "candidates": []
+          },
+          "https://learn.mongodb.com/courses/associate-data-modeler-exam-study-guide": {
+            "sources": [
+              "mongodb-associate-data-modeler-study-guide"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "MONGODB-ASSOCIATE-DATA-MODELER",
+        "observation": "MongoDB's dated issuer announcement confirms server 9.0 reached GA on September 29, 2026, and separately labels Atlas Infinite public preview. Neither event identifies the assessed exam version.",
+        "recommendation": "Replace the obsolete GA uncertainty with the dated, product-specific status. Keep the server version, feature compatibility, driver and exam-scope boundaries.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://www.mongodb.com/company/newsroom/press-releases/mongodb-launches-mongodb-9-0-the-best-version-ever-built-and-atlas-infinite-for-ai-scale-demand"
+        ],
+        "source_ids": [],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "MONGODB-ASSOCIATE-DATA-MODELER",
+        "source_id": "mongodb-data-modeling-certification-path",
+        "urls": [
+          "https://learn.mongodb.com/learning-paths/mongodb-data-modeling-certification-learning-path"
+        ],
+        "observation": "The data-modeling certification path lists 8 hours. The catalog distinguishes individual activities from the certification exam entry.",
+        "recommendation": "Quote 8 hours for learning; consult the exam registration page for exam time.",
+        "access": "public",
+        "confidence": "High for public information; courses were not completed."
+      },
+      "monitor_outcome": "manual-review",
+      "accepted_on_start": "e3b9632a8ab5b80cdb74a5ccd557cdc482917c1aca71f116b804b9fd6f92fd10",
+      "candidate": null
+    },
+    {
+      "code": "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR",
+      "exam": {
+        "code": "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR",
+        "observation": "The issuer credential page and named study-guide landing page exist. The anonymous study-guide shell exposes a description; a full detailed objective contract was not recovered. Objective monitor reported: ValueError: Could not find MongoDB study-guide identity or objectives",
+        "urls": [
+          "https://learn.mongodb.com/pages/mongodb-associate-atlas-administrator-exam",
+          "https://learn.mongodb.com/courses/mongodb-associate-atlas-administrator-exam-study-guide"
+        ],
+        "confidence": "High for identity; full objective parity unresolved.",
+        "recommendation": "Preserve prior manually reviewed baseline and access limitation; do not infer a new retirement or replace it with learning-path topics.",
+        "monitor": "manual-review",
+        "accepted_objective_sha256": "7aa8a437967e8cbf16e95913b1aeb5854e8acff22fd223793292aa2774d6a273",
+        "candidate_objective_sha256": null,
+        "catalog_matches": {
+          "https://learn.mongodb.com/pages/mongodb-associate-atlas-administrator-exam": {
+            "sources": [
+              "mongodb-associate-atlas-administrator-exam"
+            ],
+            "candidates": []
+          },
+          "https://learn.mongodb.com/courses/mongodb-associate-atlas-administrator-exam-study-guide": {
+            "sources": [
+              "mongodb-associate-atlas-administrator-study-guide"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR",
+        "observation": "MongoDB's dated issuer announcement confirms server 9.0 reached GA on September 29, 2026, and separately labels Atlas Infinite public preview. Neither event identifies the assessed exam version.",
+        "recommendation": "Replace the obsolete GA uncertainty with the dated, product-specific status. Keep the server version, feature compatibility, driver and exam-scope boundaries.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://www.mongodb.com/company/newsroom/press-releases/mongodb-launches-mongodb-9-0-the-best-version-ever-built-and-atlas-infinite-for-ai-scale-demand"
+        ],
+        "source_ids": [],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR",
+        "source_id": "mongodb-atlas-administrator-path",
+        "urls": [
+          "https://learn.mongodb.com/learning-paths/mongodb-atlas-admin-certification-learning-path"
+        ],
+        "observation": "The Atlas Administrator learning path is listed as 13 hours and provides self-paced activities.",
+        "recommendation": "Use the current path and verify exam duration on the credential page.",
+        "access": "public",
+        "confidence": "High for public information; courses were not completed."
+      },
+      "monitor_outcome": "manual-review",
+      "accepted_on_start": "7aa8a437967e8cbf16e95913b1aeb5854e8acff22fd223793292aa2774d6a273",
+      "candidate": null
+    },
+    {
+      "code": "SERVICENOW-CSA",
+      "exam": {
+        "code": "SERVICENOW-CSA",
+        "observation": "Issuer's January 2026 public blueprint includes a complete six-domain weight table, 7/10/20/20/30/13. No public passing cutoff is supplied. Objective monitor reported: ValueError: Could not find ServiceNow Exam Scope",
+        "urls": [
+          "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011554"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Retain the dated scope. The manually accessible HTML table supports follow-up adapter repair.",
+        "monitor": "manual-review",
+        "accepted_objective_sha256": "7b94b0c2b2f331a2e878694c8b9aaa6db8e998bfc0424d75dca80e6cdbe1d553",
+        "candidate_objective_sha256": null,
+        "catalog_matches": {
+          "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011554": {
+            "sources": [
+              "servicenow-csa-mainline-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "SERVICENOW-CSA",
+        "observation": "ServiceNow transform-map coalescing with multiple fields requires all corresponding values to match the existing target record.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://www.servicenow.com/docs/r/integrate-applications/system-import-sets/c_ImportSetCoalesce.html"
+        ],
+        "source_ids": [
+          "servicenow-import-coalesce"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "SERVICENOW-CSA",
+        "source_id": "servicenow-welcome-course",
+        "urls": [
+          "https://learning.servicenow.com/lxp/en/now-platform/certified-system-administrator?course_id=931d939697d229587f7070871153af8c&id=learning_content_prev"
+        ],
+        "observation": "The public course route is a dynamic portal. Current content and timing require the learner's account.",
+        "recommendation": "Keep any prior three-hour orientation estimate historical.",
+        "access": "free-account",
+        "confidence": "Limited for enrollment-gated content."
+      },
+      "monitor_outcome": "manual-review",
+      "accepted_on_start": "7b94b0c2b2f331a2e878694c8b9aaa6db8e998bfc0424d75dca80e6cdbe1d553",
+      "candidate": null
+    },
+    {
+      "code": "SERVICENOW-CAD",
+      "exam": {
+        "code": "SERVICENOW-CAD",
+        "observation": "Issuer's January 2026 public blueprint includes a complete six-domain weight table, 20/20/20/20/10/10. No public passing cutoff is supplied. Objective monitor reported: ValueError: Could not find ServiceNow Exam Scope",
+        "urls": [
+          "https://learning.servicenow.com/lxp/en/credentials/certified-application-developer-mainline-exam-blueprint?id=kb_article_view&sysparm_article=KB0011498",
+          "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011498"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Retain the dated scope. The manually accessible HTML table supports follow-up adapter repair.",
+        "monitor": "manual-review",
+        "accepted_objective_sha256": "f71371fc8583ec438fbdde805d2e69d8034607333e1bc033ccc74ae5a261b59a",
+        "candidate_objective_sha256": null,
+        "catalog_matches": {
+          "https://learning.servicenow.com/lxp/en/credentials/certified-application-developer-mainline-exam-blueprint?id=kb_article_view&sysparm_article=KB0011498": {
+            "sources": [
+              "servicenow-cad-mainline-blueprint"
+            ],
+            "candidates": []
+          },
+          "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011498": {
+            "sources": [
+              "servicenow-cad-mainline-blueprint-canonical"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "SERVICENOW-CAD",
+        "observation": "A Deny-Unless ACL denies access if a required role, script or condition fails; passing it is a condition for access rather than an unconditional grant.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://www.servicenow.com/docs/r/platform-security/access-control/acl-denial-behavior.html"
+        ],
+        "source_ids": [
+          "servicenow-acl-deny-unless"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "SERVICENOW-CAD",
+        "source_id": "servicenow-cad-learning-path",
+        "urls": [
+          "https://learning.servicenow.com/lxp/en/now-platform/certified-application-developer?course_id=4c12ba8c87c39ad4a3bc40c5cebb3526&id=learning_content_prev"
+        ],
+        "observation": "The linked CAD learning assignment uses a dynamic portal. Signed-in sequence and current course duration were not established.",
+        "recommendation": "Check assignments and current release in the learner portal.",
+        "access": "free-account",
+        "confidence": "Limited for enrollment-gated content."
+      },
+      "monitor_outcome": "manual-review",
+      "accepted_on_start": "f71371fc8583ec438fbdde805d2e69d8034607333e1bc033ccc74ae5a261b59a",
+      "candidate": null
+    }
+  ],
+  "review_inputs": [
+    {
+      "code": "SALESFORCE-PLATFORM-ADMINISTRATOR",
+      "guide": "guides/SALESFORCE-PLATFORM-ADMINISTRATOR-salesforce-certified-platform-administrator.md",
+      "guide_sha256_lf": "939b362d0f1e1f4d0b9980c3014dfc0137479d2c1bc02959496a1fd3fed0fa50",
+      "objective": "data/objective-snapshots/salesforce-platform-administrator-official-objectives.txt",
+      "objective_sha256": "b2f9f40f925247562d8d19eed5ad7a33a4b5c10e03b705d2fe34ec88678b7c97"
+    },
+    {
+      "code": "SALESFORCE-PLATFORM-APP-BUILDER",
+      "guide": "guides/SALESFORCE-PLATFORM-APP-BUILDER-salesforce-certified-platform-app-builder.md",
+      "guide_sha256_lf": "889ee71ec7bdf8f000fdb37d5c9fc39148fe8737b7ef91fa38a1a537994cef75",
+      "objective": "data/objective-snapshots/salesforce-platform-app-builder-official-objectives.txt",
+      "objective_sha256": "5365cb37f260db38aa6b4a306dd826258e3d85f058b8111352e56a065a965f14"
+    },
+    {
+      "code": "SALESFORCE-PLATFORM-DEVELOPER",
+      "guide": "guides/SALESFORCE-PLATFORM-DEVELOPER-salesforce-certified-platform-developer.md",
+      "guide_sha256_lf": "666723c1574b0ce91386435e6813c0da6bf48692d41d9dc5d9fecc9c0d06d94b",
+      "objective": "data/objective-snapshots/salesforce-platform-developer-official-objectives.txt",
+      "objective_sha256": "4843c3b24a93a1c4da79e50db00e79c38fa5921c6127df89e37a6754c5cddbfe"
+    },
+    {
+      "code": "SALESFORCE-AGENTFORCE-SPECIALIST",
+      "guide": "guides/SALESFORCE-AGENTFORCE-SPECIALIST-salesforce-certified-agentforce-specialist.md",
+      "guide_sha256_lf": "3c8d089864e680fee1aa378924b0894e30204952ed5830f0fb742d270f80cdb7",
+      "objective": "data/objective-snapshots/salesforce-agentforce-specialist-official-objectives.txt",
+      "objective_sha256": "a633fd73b5f733d78426c5c66eebf566a7867d80a36ddadd505dbd8ef29b5664"
+    },
+    {
+      "code": "MONGODB-ASSOCIATE-DEVELOPER",
+      "guide": "guides/MONGODB-ASSOCIATE-DEVELOPER-mongodb-associate-developer.md",
+      "guide_sha256_lf": "3108ec542700ece961804624d7a8f72a02852cddb9b1713196efb8784093583e",
+      "objective": "data/objective-snapshots/mongodb-associate-developer-official-objectives.txt",
+      "objective_sha256": "7b8ee2749e9fe5f87fefc15268c82cd74a50ee45e682d1c6c83a552568fc25d6"
+    },
+    {
+      "code": "MONGODB-ASSOCIATE-DATA-MODELER",
+      "guide": "guides/MONGODB-ASSOCIATE-DATA-MODELER-mongodb-associate-data-modeler.md",
+      "guide_sha256_lf": "f71d04fa7ca220f75754e51e49b70c5fa724aa7d94d38c700611f87bda6bc9b7",
+      "objective": "data/objective-snapshots/mongodb-associate-data-modeler-official-objectives.txt",
+      "objective_sha256": "e3b9632a8ab5b80cdb74a5ccd557cdc482917c1aca71f116b804b9fd6f92fd10"
+    },
+    {
+      "code": "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR",
+      "guide": "guides/MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR-mongodb-associate-atlas-administrator.md",
+      "guide_sha256_lf": "3fca3150ec84941352015b3614c60e72dd61b9b5de2576cc93ae7b99ddfb19fa",
+      "objective": "data/objective-snapshots/mongodb-associate-atlas-administrator-official-objectives.txt",
+      "objective_sha256": "7aa8a437967e8cbf16e95913b1aeb5854e8acff22fd223793292aa2774d6a273"
+    },
+    {
+      "code": "SERVICENOW-CSA",
+      "guide": "guides/SERVICENOW-CSA-servicenow-certified-system-administrator.md",
+      "guide_sha256_lf": "a58d433383ce405b6f4189826934cfa6b7e69d3367d1000c46fa7e60c84c1061",
+      "objective": "data/objective-snapshots/servicenow-csa-official-objectives.txt",
+      "objective_sha256": "7b94b0c2b2f331a2e878694c8b9aaa6db8e998bfc0424d75dca80e6cdbe1d553"
+    },
+    {
+      "code": "SERVICENOW-CAD",
+      "guide": "guides/SERVICENOW-CAD-servicenow-certified-application-developer.md",
+      "guide_sha256_lf": "32982f9f2eea0c23566a70c3310c343ec195a8e96af70f5a7481b5d1528e0852",
+      "objective": "data/objective-snapshots/servicenow-cad-official-objectives.txt",
+      "objective_sha256": "f71371fc8583ec438fbdde805d2e69d8034607333e1bc033ccc74ae5a261b59a"
+    }
+  ],
+  "independent_review": {
+    "method": "Fresh-context read-only AI review of changed content and source evidence",
+    "rubric": "docs/AI-AUDIT.md, version 2",
+    "reviewed_tree": "496a89bd6436746208341aeb86ef32a425b5b553",
+    "summary": "All nine guide/objective bindings match. MongoDB’s dated issuer release distinguishes Server 9.0 general availability from the Atlas Infinite public preview. The revised guides preserve the exam-version limitation. Trailhead redirects the numeric Administrator URL to its named collection, with no verified total on the public English page. Targeted change/evidence review only.",
+    "findings": [],
+    "validation": [
+      "unit tests",
+      "repository validation",
+      "reviewed learning resource check",
+      "site preparation",
+      "strict MkDocs build",
+      "generated site validation"
+    ]
+  }
+}
