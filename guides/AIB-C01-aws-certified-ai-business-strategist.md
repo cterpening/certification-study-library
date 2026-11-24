@@ -231,7 +231,7 @@ Maturity is not a single badge. One team may operate a governed production servi
 
 **Historical-source boundary:** AWS now labels the linked CAF-AI whitepaper “for historical reference only.” Use its capability questions as supporting context, check linked implementation advice against current documentation, and use the current Responsible AI Lens for lifecycle questions. This notice does not remove CAF concepts from the exam.
 
-The [AWS CAF for AI](https://docs.aws.amazon.com/whitepapers/latest/aws-caf-for-ai/aws-caf-for-ai.html) considers business, people, governance, platform, security, and operations capabilities. Its transformation context is useful, but the exam's judgment is portable beyond AWS. Common maturity movement is from isolated exploration, to repeatable experiments, to governed production, to reusable enterprise capabilities and continuously improved portfolios. Do not scale merely because a proof of concept produced an impressive demo.
+The [AWS CAF for AI](https://docs.aws.amazon.com/pdfs/whitepapers/latest/aws-caf-for-ai/aws-caf-for-ai.pdf) considers business, people, governance, platform, security, and operations capabilities. Its transformation context is useful, but the exam's judgment is portable beyond AWS. Common maturity movement is from isolated exploration, to repeatable experiments, to governed production, to reusable enterprise capabilities and continuously improved portfolios. Do not scale merely because a proof of concept produced an impressive demo.
 
 ### Treat adoption as outcome work
 
@@ -419,7 +419,7 @@ No complete third-party AIB-C01 course or practice bank was established by this 
 
 ### High-quality adjacent resources
 
-- [AWS CAF for AI, ML, and generative AI](https://docs.aws.amazon.com/whitepapers/latest/aws-caf-for-ai/aws-caf-for-ai.html) — **4–7 hours selected reading/workshop**; strong for business, people, governance, platform, security, operations, maturity, and transformation. Free; AWS labels this whitepaper historical, so recheck implementation advice and linked resources; not an exam course.
+- [AWS CAF for AI, ML, and generative AI](https://docs.aws.amazon.com/pdfs/whitepapers/latest/aws-caf-for-ai/aws-caf-for-ai.pdf) — **4–7 hours selected reading/workshop**; strong for business, people, governance, platform, security, operations, maturity, and transformation. Free; AWS labels this whitepaper historical, so recheck implementation advice and linked resources; not an exam course.
 - [AWS Responsible AI Lens](https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-lens/responsible-ai-lens.html) — **4–8 hours selected reading and applying questions**; strong for use-case, benefit/risk, testing, release, guidance, and monitoring. Free; implementation-oriented supporting depth.
 - [NIST AI RMF and Playbook](https://www.nist.gov/itl/ai-risk-management-framework) plus the [Generative AI Profile](https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence) — **5–10 hours selected reading/application**; free, vendor-neutral governance vocabulary. Version 1.0 is under revision, so verify the live baseline.
 - [ISO/IEC 42001 overview](https://www.iso.org/standard/42001) — **20–40 minutes** estimated for the public overview; its page was access-blocked in this review; the full standard is paid; its current edition and page count were not verified during this review. Use it to understand management-system intent, not to infer exam wording.

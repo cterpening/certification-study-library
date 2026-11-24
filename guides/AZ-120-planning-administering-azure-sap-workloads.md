@@ -161,7 +161,7 @@ Group systems into waves by dependency and risk rather than moving isolated serv
 6. validate infrastructure, database, SAP transactions, interfaces, jobs, monitoring and backup;
 7. stabilize before decommissioning the source.
 
-The [Cloud Adoption Framework SAP plan](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/plan) distinguishes rehost, replatform and rearchitect decisions. The [SAP landing-zone guidance](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/ready) provides the platform context.
+[Microsoft’s SAP on Azure service selection guide](https://learn.microsoft.com/en-us/azure/sap/choose-sap-services-by-scenario) compares services by workload scenario. The [Azure landing zone overview](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/) describes general platform and workload landing zones.
 
 ### Design the management hierarchy and controls
 
@@ -216,8 +216,8 @@ The [RISE network guidance](https://learn.microsoft.com/en-us/azure/sap/workload
 #### Primary references
 
 - [SAP on Azure supported products](https://learn.microsoft.com/en-us/azure/sap/workloads/supported-product-on-azure)
-- [Cloud Adoption Framework plan for SAP](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/plan)
-- [Azure landing zone for SAP](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/ready)
+- [SAP on Azure service scenarios and selection guidance](https://learn.microsoft.com/en-us/azure/sap/choose-sap-services-by-scenario)
+- [Azure landing zone overview](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/)
 - [Integrate Azure with SAP RISE managed workloads](https://learn.microsoft.com/en-us/azure/sap/workloads/rise-integration)
 
 ---
