@@ -1,0 +1,844 @@
+{
+  "checked_on": "2026-11-23",
+  "exam": {
+    "checked_on": "2026-11-23",
+    "method": "Opened official publishers; read task snapshots and compared candidate versus accepted; direct HTML checklist counts; no live testing or scheduling.",
+    "rows": [
+      {
+        "code": "MB-310",
+        "urls": [
+          "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-310",
+          "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-financials/"
+        ],
+        "observation": "Current study guide labels July 25, 2025 despite its November 20, 2026 article update. Direct HTML has 108 tasks in 5 domains (47/28/14/5/14); finance is 40–45%. Retained August 14, 2026 scope uses 35–40%; its tasks include derived dimensions, posting layers/ledger allocations and budget planning. Older rendering uniquely includes an inventory costing subdomain, general ledger foreign-currency revaluation and vendor-change approvals. Credential Last Updated = 08/14/2026 and audience wording includes ongoing support. Educate about the conflict, keep both editions distinct; no claim Microsoft reverted actual deliveries.",
+        "confidence": "High for cited public listings and observed text; assessment delivery and individual eligibility were not tested.",
+        "url_matches": {
+          "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-310": {
+            "sources": [
+              "mb-310-blueprint"
+            ],
+            "candidates": []
+          },
+          "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-financials/": {
+            "sources": [
+              "mb-310-credential"
+            ],
+            "candidates": []
+          }
+        },
+        "sha256": {
+          "accepted": "d5bbe85cad214566f2ba0cc7b266af0ff612664ba199a5c8ed948e28474d2284",
+          "monitor_candidate": "3f3f694e65ede8d9f98165db7de3da0385b72179faf62305a5d2e48e441efe2f"
+        }
+      },
+      {
+        "code": "MB-820",
+        "urls": [
+          "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-820",
+          "https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-developer-associate/"
+        ],
+        "observation": "November 20 English edition and credential update corroborate a substantive six-domain change; direct HTML 78 task bullets (6/11/27/18/6/10). Current weights 5–10/10–15/30–35/15–20/10–15/15–20%. Newly explicit teaching gaps: distinguish connect/add-on/library/dependency app roles; develop a control add-in and consider event and lifecycle; create/manage scheduled tasks; Isolated Storage scope; build Copilot capability and UX and create agents. Add or strengthen tests/readiness checks for those. The guide already teaches workspace namespaces, dependencies, code analyzers, attach/snapshot debugging, report extensions, queries, telemetry and AL/HTTP/JSON; update headings and references, distinguish statements vs variables. XMLport design explicitly removed; teaching tips, tours and onboarding checklist are no longer named tasks; retain useful practical depth with labels. Replace claim that control add-ins are adjacent. MCP is not named. Historical June 10, 2025 map previously had 75 detailed objectives. Archive before acceptance and reset current gate as needed.",
+        "confidence": "High for cited public listings and observed text; assessment delivery and individual eligibility were not tested.",
+        "url_matches": {
+          "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-820": {
+            "sources": [
+              "mb-820-blueprint"
+            ],
+            "candidates": []
+          },
+          "https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-developer-associate/": {
+            "sources": [
+              "mb-820-credential"
+            ],
+            "candidates": []
+          }
+        },
+        "sha256": {
+          "accepted": "1e1a344d7da21661343df954d830f847f10aa2e3742893e8fab5381666dca108",
+          "monitor_candidate": "8abdd75504bf3fba9c6979a3cefad2b95e8ee45278ea06b103ac6ed8ec27fb6c"
+        }
+      },
+      {
+        "code": "DP-700",
+        "urls": [
+          "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-700"
+        ],
+        "observation": "The current public rendering has 49 tasks (16/17/16), three equal 30–35% ranges, and no dated scope header. Retained October 19, 2026 scope includes 54 tasks. Same distinction documented November 20. Retain both bounded versions; no narrower delivery scope established.",
+        "confidence": "High for cited public listings and observed text; assessment delivery and individual eligibility were not tested.",
+        "url_matches": {
+          "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-700": {
+            "sources": [
+              "dp-700-blueprint"
+            ],
+            "candidates": []
+          }
+        },
+        "sha256": {
+          "accepted": "536a8f75830b0951502232b8b1a811524d000a7edf7a745613f46462f7dd3fc5",
+          "monitor_candidate": "f60b364516c21527b1396f3122c388d797b8acc0e5fcba37efc565886660800f"
+        }
+      },
+      {
+        "code": "DP-750",
+        "urls": [
+          "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-750"
+        ],
+        "observation": "Live scope still explicitly March 11, 2026 vs later October 19 accepted edition. Differences include deletion vectors in clustering task, older bundle term Databricks Asset Bundles vs Declarative Automation Bundles, and how the CLI is named. Retain dated discrepancy.",
+        "confidence": "High for cited public listings and observed text; assessment delivery and individual eligibility were not tested.",
+        "url_matches": {
+          "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-750": {
+            "sources": [
+              "dp-750-blueprint"
+            ],
+            "candidates": []
+          }
+        },
+        "sha256": {
+          "accepted": "d44f3f814718f33dd69dd72f48381609f4cde30d0b5c9fe1656380223fb2571e",
+          "monitor_candidate": "eba786118a9e5129571b0a9505b8849bd82f3cdf84e2da759d735f354f27fb84"
+        }
+      },
+      {
+        "code": "DP-800",
+        "urls": [
+          "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-800"
+        ],
+        "observation": "Live scope still explicitly March 12, 2026 vs later October 19 accepted edition. Known distinctions include columnstore spelling, Copilot in Fabric naming and embedding/search terms (older: CES and ANN/ENN; later: no CES and ANN/KNN). No new signal justifying reversion.",
+        "confidence": "High for cited public listings and observed text; assessment delivery and individual eligibility were not tested.",
+        "url_matches": {
+          "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-800": {
+            "sources": [
+              "dp-800-blueprint"
+            ],
+            "candidates": []
+          }
+        },
+        "sha256": {
+          "accepted": "6e54b91dfcc48967be9eec6efffdc43262d965d8a66a01d467c5ccb9c283d862",
+          "monitor_candidate": "5302e42b10e2f414caa1fba1ef4e641ecfb85b44d87bb39635b5caea2ac79e7f"
+        }
+      },
+      {
+        "code": "AZ-104",
+        "urls": [
+          "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104"
+        ],
+        "observation": "November 23 render expressly labels April 17, 2026. Whole-library objective monitor also returns unchanged, with accepted April 17 copy. November 20 rendering anomaly (October 26, 2023) can remain historical but present-tense claim requires correction. No new baseline.",
+        "confidence": "High for cited public listings and observed text; assessment delivery and individual eligibility were not tested.",
+        "url_matches": {
+          "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104": {
+            "sources": [
+              "az-104-blueprint"
+            ],
+            "candidates": []
+          }
+        },
+        "sha256": {
+          "accepted": "7d2330fbafdd4981b54e6aa8f9ba371f0bbad1edf521fa8d2fa591e2bf8d2ae1",
+          "monitor_candidate": "7d2330fbafdd4981b54e6aa8f9ba371f0bbad1edf521fa8d2fa591e2bf8d2ae1"
+        }
+      },
+      {
+        "code": "AZ-401",
+        "urls": [
+          "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401",
+          "https://learn.microsoft.com/en-us/credentials/certifications/agentic-devops-engineer-expert/"
+        ],
+        "observation": "Exact credential still labels exam beta. Direct HTML has 76 detailed tasks (11/10/30/13/12); all normalized task strings occur in accepted baseline. Monitor stops at an objective containing 'change logs' though the full rendering continues. Keep full accepted content and flag extractor provenance.",
+        "confidence": "High for cited public listings and observed text; assessment delivery and individual eligibility were not tested.",
+        "url_matches": {
+          "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401": {
+            "sources": [
+              "microsoft-az-401-study-guide"
+            ],
+            "candidates": []
+          },
+          "https://learn.microsoft.com/en-us/credentials/certifications/agentic-devops-engineer-expert/": {
+            "sources": [
+              "microsoft-az-401-credential"
+            ],
+            "candidates": []
+          }
+        },
+        "sha256": {
+          "accepted": "b74fe4beb2509bb4fd6a13d19783c0ad97ad102abe7bda0d6eefae429dbe4337",
+          "monitor_candidate": "6a75fb7b6bcce1dff2a4d3c4aa616093460e829bc4f14f87755df3162e48e8c6"
+        }
+      },
+      {
+        "code": "AB-400",
+        "urls": [
+          "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-400",
+          "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate/"
+        ],
+        "observation": "Public credential lists English, scheduling via Pearson VUE and AB-400 study guide. Four live objective groups: build Power Platform solutions (15–20%), extend UX (25–30%), extend Power Platform (35–40%), develop integrations (10–15%). Historical PL-400 material alone cannot establish current coverage. Guide creation requires separate authored scope and review.",
+        "confidence": "High for cited public listings and observed text; assessment delivery and individual eligibility were not tested.",
+        "url_matches": {
+          "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-400": {
+            "sources": [
+              "ab-400-transition-blueprint"
+            ],
+            "candidates": []
+          },
+          "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate/": {
+            "sources": [
+              "pl-400-credential"
+            ],
+            "candidates": []
+          }
+        },
+        "sha256": {}
+      },
+      {
+        "code": "MO-240",
+        "urls": [
+          "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-for-operational-management-associate/",
+          "https://arch-center.azureedge.net/Credentials/mos-excel-for-operational-management-od.pdf"
+        ],
+        "observation": "Credential explicitly labels PDF link Exam MO-240 skills outline and offers Certiport scheduling. Two-page PDF covers operational/business workflows (process and resource management, data analysis and reporting), lacks literal 'MO-240'. November 20 group 06 statement that outline contents identify code overstates its role; seed notes already correctly attribute the code. Education: use label plus PDF title and tasks; no exam launch day established.",
+        "confidence": "High for cited public listings and observed text; assessment delivery and individual eligibility were not tested.",
+        "url_matches": {
+          "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-for-operational-management-associate/": {
+            "sources": [],
+            "candidates": []
+          },
+          "https://arch-center.azureedge.net/Credentials/mos-excel-for-operational-management-od.pdf": {
+            "sources": [],
+            "candidates": []
+          }
+        },
+        "sha256": {}
+      },
+      {
+        "code": "MO-410",
+        "urls": [
+          "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-expert-m365-apps/",
+          "https://certiport.pearsonvue.com/Certifications/Microsoft/MOS/Certify/365-Apps"
+        ],
+        "observation": "MOS Expert requirements names MO-410 Outlook (Microsoft 365 Apps) as coming soon; Certiport lists Outlook for Office 2019, a separate version. No confirmed MO-410 skills publication or booking, beta/launch date. Keep announced and inventory-only pending these.",
+        "confidence": "High for cited public listings and observed text; assessment delivery and individual eligibility were not tested.",
+        "url_matches": {
+          "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-expert-m365-apps/": {
+            "sources": [],
+            "candidates": []
+          },
+          "https://certiport.pearsonvue.com/Certifications/Microsoft/MOS/Certify/365-Apps": {
+            "sources": [],
+            "candidates": []
+          }
+        },
+        "sha256": {}
+      }
+    ]
+  },
+  "technical": {
+    "date": "2026-11-23",
+    "role": "Technical and learning resources",
+    "rows": [
+      {
+        "code": "MB-310",
+        "observation": "Vendor currently shows July 25 2025 while accepted local edition is August 14 2026. Existing evidence about Include corrections moving from legal-entity to settlement-period scope is supported. The opened voucher lab practices a divided vendor invoice and sales tax.",
+        "recommendation": "Retain accepted edition and add the two dates adjacent to scope with unresolved delivery. No technical correction to the targeted tax section.",
+        "learning": "Public lab, requires Finance sample tenants and permissions for execution. Allow 15–25 min to map inputs and resulting voucher lines as a local worksheet (editorial).",
+        "confidence": "High for the documented facts; edition delivered to a candidate, tenant availability and feature execution unverified.",
+        "sources": [
+          {
+            "opened_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-310",
+            "registered_on_publish_worktree": [
+              "mb-310-blueprint"
+            ],
+            "candidate_ids": []
+          },
+          {
+            "opened_url": "https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/tasks/create-sales-tax-payment",
+            "registered_on_publish_worktree": [
+              "exam-a-mb310-tax-payment"
+            ],
+            "candidate_ids": []
+          },
+          {
+            "opened_url": "https://microsoftlearning.github.io/MB-310-Microsoft-Dynamics-365-Finance/Instructions/Labs/LP3%20Lab%20-%20Breakdown%20of%20voucher.html",
+            "registered_on_publish_worktree": [
+              "mb310-focused-lab"
+            ],
+            "candidate_ids": []
+          }
+        ]
+      },
+      {
+        "code": "MB-820",
+        "observation": "November 20 2026 edition explicitly adds agents, Copilot capabilities/UX, sensitive integration data in isolated storage, scheduled tasks, control add-ins, namespaces and debugging. Report extensions already taught. Scoped status for custom agent design is preview/sandbox. AL SDK has distinct eligibility from the design toolkit. Control add-ins use a web client control with AL/JS interaction. A task must be ready and reach its earliest scheduled time. An isolated-storage SecretText overload offers encrypted storage using DataScope; omitted scope defaults to Module. The SDK can register capability availability and billing; PromptDialog has Prompt, Generate and Content modes.",
+        "recommendation": "Adopt the published Nov 20 edition with all six current headings/weights. Update task map, essential distinctions, step-through scenario and readiness answers. Mark XMLport teaching as related. Use a stock-reorder proposal in a synthetic sandbox or paper: register capability, handle a declined model response, show a draft, authorize and test a narrowly scoped agent. Separate prompt feedback and persisted changes; avoid provisioning by default. Include control add-in, namespaces/cross-app dependencies, attach/snapshot debug and scheduler in map.",
+        "learning": "Public install/upgrade AL lab with a Business Central dev sandbox & VS Code required to execute. Editorial 25–45 min for tracing the example only. New product docs are narrow references rather than complete exam training.",
+        "confidence": "High for the documented facts; edition delivered to a candidate, tenant availability and feature execution unverified.",
+        "sources": [
+          {
+            "opened_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-820",
+            "registered_on_publish_worktree": [
+              "mb-820-blueprint"
+            ],
+            "candidate_ids": []
+          },
+          {
+            "opened_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-instrument-application-for-telemetry-app-insights",
+            "registered_on_publish_worktree": [
+              "g04-examb-devenv-instrument-application-for-telemetry-app-insights"
+            ],
+            "candidate_ids": []
+          },
+          {
+            "opened_url": "https://microsoftlearning.github.io/MB-820-Business-Central-Developer-Certification/Instructions/Labs/LAB_02_Implement_installation_and_upgrade_code_extension.html",
+            "registered_on_publish_worktree": [
+              "mb820-focused-lab"
+            ],
+            "candidate_ids": []
+          },
+          {
+            "opened_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-control-addin-object",
+            "registered_on_publish_worktree": [],
+            "candidate_ids": []
+          },
+          {
+            "opened_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-task-scheduler",
+            "registered_on_publish_worktree": [],
+            "candidate_ids": []
+          },
+          {
+            "opened_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-namespaces-overview",
+            "registered_on_publish_worktree": [],
+            "candidate_ids": []
+          },
+          {
+            "opened_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-snapshot-debugging",
+            "registered_on_publish_worktree": [],
+            "candidate_ids": []
+          },
+          {
+            "opened_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-report-ext-object",
+            "registered_on_publish_worktree": [],
+            "candidate_ids": []
+          },
+          {
+            "opened_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/ai/ai-development-toolkit-agent-create",
+            "registered_on_publish_worktree": [],
+            "candidate_ids": []
+          },
+          {
+            "opened_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/ai/ai-development-toolkit-permissions",
+            "registered_on_publish_worktree": [],
+            "candidate_ids": []
+          },
+          {
+            "opened_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/methods-auto/isolatedstorage/isolatedstorage-setencrypted-string-secrettext-datascope-method",
+            "registered_on_publish_worktree": [],
+            "candidate_ids": []
+          },
+          {
+            "opened_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/properties/devenv-promptmode-property",
+            "registered_on_publish_worktree": [],
+            "candidate_ids": []
+          },
+          {
+            "opened_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-page-type-promptdialog",
+            "registered_on_publish_worktree": [],
+            "candidate_ids": []
+          },
+          {
+            "opened_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/ai-build-capability-in-al",
+            "registered_on_publish_worktree": [],
+            "candidate_ids": []
+          }
+        ]
+      },
+      {
+        "code": "DP-700",
+        "observation": "Live rendered guide is undated; previously captured dated October edition differs. Early-access Fabric runtime channel is preview and requires bypassing Starter Pool; a custom pool may add startup time. Monitoring hub shows authorized items.",
+        "recommendation": "Preserve recorded October teaching and current/undated conflict. Mention Starter Pool dependency only if missing from relevant walkthrough.",
+        "learning": "Monitoring hub lab approx 30 min (publisher); Fabric capacity/workspace access required.",
+        "confidence": "High for the documented facts; edition delivered to a candidate, tenant availability and feature execution unverified.",
+        "sources": [
+          {
+            "opened_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-700",
+            "registered_on_publish_worktree": [
+              "dp-700-blueprint"
+            ],
+            "candidate_ids": []
+          },
+          {
+            "opened_url": "https://learn.microsoft.com/en-us/fabric/data-engineering/release-channels",
+            "registered_on_publish_worktree": [
+              "dp700-runtime-channels"
+            ],
+            "candidate_ids": []
+          },
+          {
+            "opened_url": "https://microsoftlearning.github.io/mslearn-fabric/Instructions/Labs/18-monitor-hub.html",
+            "registered_on_publish_worktree": [
+              "fabric-official-monitoring-hub-lab"
+            ],
+            "candidate_ids": []
+          }
+        ]
+      },
+      {
+        "code": "DP-750",
+        "observation": "Current March 11 outline predates previously captured October edition. November 23 release notes add Unity Catalog impact analysis beta; opt-in at account level and lineage access required. Dependencies can appear days later; an empty list does not clear a rename.",
+        "recommendation": "Preserve prior objective edition and conflict. Add beta source next to lineage to assess a proposed column rename and verify with downstream consumers.",
+        "learning": "Lab 12 covers testing notebooks and validating/deploying Declarative Automation Bundles. Public instructions, execution requires workspace/tooling. Editorial paper walkthrough 35–60 min.",
+        "confidence": "High for the documented facts; edition delivered to a candidate, tenant availability and feature execution unverified.",
+        "sources": [
+          {
+            "opened_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-750",
+            "registered_on_publish_worktree": [
+              "dp-750-blueprint"
+            ],
+            "candidate_ids": []
+          },
+          {
+            "opened_url": "https://learn.microsoft.com/en-us/azure/databricks/release-notes/product/2026/november",
+            "registered_on_publish_worktree": [],
+            "candidate_ids": []
+          },
+          {
+            "opened_url": "https://microsoftlearning.github.io/DP-750T00-Implement-Data-Engineering-Solutions-using-Azure-Databricks/Instructions/Labs/12-implement-development-lifecycle-processes-in-azure-databricks.html",
+            "registered_on_publish_worktree": [
+              "dp-750-official-development-lifecycle-lab"
+            ],
+            "candidate_ids": []
+          },
+          {
+            "opened_url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/impact-analysis",
+            "registered_on_publish_worktree": [],
+            "candidate_ids": []
+          }
+        ]
+      },
+      {
+        "code": "DP-800",
+        "observation": "Current March 12 outline predates previously captured October edition. Opened SQL vector doc redirects to new topic; vector indexes GA for Azure SQL DB, Fabric SQL, MI Always up to date, preview SQL Server 2025 and MI SQL Server 2025 policy. The guide currently teaches platform distinction and latest vs legacy syntax accurately.",
+        "recommendation": "Keep edition conflict and existing SQL version qualifications; consider canonical redirect destination in next source catalog repair.",
+        "learning": "Nine-unit public intelligent-search module; hands-on SQL exercise depends on selected engine/platform. Prior publisher metadata estimated 84 min.",
+        "confidence": "High for the documented facts; edition delivered to a candidate, tenant availability and feature execution unverified.",
+        "sources": [
+          {
+            "opened_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-800",
+            "registered_on_publish_worktree": [
+              "dp-800-blueprint"
+            ],
+            "candidate_ids": []
+          },
+          {
+            "opened_url": "https://learn.microsoft.com/en-us/sql/relational-databases/vectors/vectors-sql-server?view=sql-server-ver17",
+            "registered_on_publish_worktree": [
+              "dp800-vector-overview"
+            ],
+            "candidate_ids": []
+          },
+          {
+            "opened_url": "https://learn.microsoft.com/en-us/training/modules/design-implement-intelligent-search-with-sql/",
+            "registered_on_publish_worktree": [
+              "dp-800-intelligent-sql-search-module"
+            ],
+            "candidate_ids": []
+          },
+          {
+            "opened_url": "https://learn.microsoft.com/en-us/sql/sql-server/ai/vectors?view=sql-server-ver17",
+            "registered_on_publish_worktree": [],
+            "candidate_ids": []
+          }
+        ]
+      },
+      {
+        "code": "AZ-104",
+        "observation": "Live outline now displays April 17 2026 while accepted teaching documents later edition. Managed identity access to file shares is distinct from the end-user identity. Current product doc discusses VM-managed identity and permissions.",
+        "recommendation": "Preserve documented edition disagreement and identity distinctions.",
+        "learning": "Azure Policy learning lab estimates 30 min; permissions needed for policy assignment; paper review possible.",
+        "confidence": "High for the documented facts; edition delivered to a candidate, tenant availability and feature execution unverified.",
+        "sources": [
+          {
+            "opened_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104",
+            "registered_on_publish_worktree": [
+              "az-104-blueprint"
+            ],
+            "candidate_ids": []
+          },
+          {
+            "opened_url": "https://learn.microsoft.com/en-us/azure/storage/files/files-managed-identities",
+            "registered_on_publish_worktree": [
+              "az104-files-managed-identities"
+            ],
+            "candidate_ids": []
+          },
+          {
+            "opened_url": "https://microsoftlearning.github.io/AZ-104-MicrosoftAzureAdministrator/Instructions/Labs/LAB_02b-Manage_Governance_via_Azure_Policy.html",
+            "registered_on_publish_worktree": [
+              "g03-learning-az-104-lab-02b-manage-governance-via-azure-policy"
+            ],
+            "candidate_ids": []
+          }
+        ]
+      },
+      {
+        "code": "AZ-401",
+        "observation": "Live English outline is undated and contains substantive content past a task mentioning change logs; partial candidate cannot support trimming current scope. Azure SRE Agent offers Review (propose and approve) and Autonomous (acts as configured).",
+        "recommendation": "Preserve accepted 76 tasks and use actual matching heading logic in objective extraction. Maintain human approval and permissions in product exercise.",
+        "learning": "Public seven-unit introduction module. Editorial 20–40 min for selective reading/comparison; no agent runtime provided.",
+        "confidence": "High for the documented facts; edition delivered to a candidate, tenant availability and feature execution unverified.",
+        "sources": [
+          {
+            "opened_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401",
+            "registered_on_publish_worktree": [
+              "microsoft-az-401-study-guide"
+            ],
+            "candidate_ids": []
+          },
+          {
+            "opened_url": "https://learn.microsoft.com/en-us/azure/sre-agent/run-modes",
+            "registered_on_publish_worktree": [
+              "microsoft-azure-sre-agent-run-modes"
+            ],
+            "candidate_ids": []
+          },
+          {
+            "opened_url": "https://learn.microsoft.com/en-us/training/modules/introduction-agentic-devops-microsoft-tools-azure/",
+            "registered_on_publish_worktree": [
+              "microsoft-agentic-devops-module"
+            ],
+            "candidate_ids": []
+          }
+        ]
+      },
+      {
+        "code": "AB-400",
+        "observation": "Current public blueprint and AB-400T00-A cover extending apps with code and AI. The course explicitly lists code apps, Microsoft Foundry and Copilot Studio agents. Public catalog lists a 3-day advanced course.",
+        "recommendation": "Use this successor-specific route; avoid relabeling the retired PL-400 technical map as complete AB-400 coverage.",
+        "learning": "Public course outline with self-directed route, three-day publisher course duration. Classroom access, cost and scheduling depend on provider.",
+        "confidence": "High for the documented facts; edition delivered to a candidate, tenant availability and feature execution unverified.",
+        "sources": [
+          {
+            "opened_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-400",
+            "registered_on_publish_worktree": [
+              "ab-400-transition-blueprint"
+            ],
+            "candidate_ids": []
+          },
+          {
+            "opened_url": "https://learn.microsoft.com/en-us/training/courses/ab-400t00",
+            "registered_on_publish_worktree": [
+              "ab-400-official-course"
+            ],
+            "candidate_ids": []
+          }
+        ]
+      },
+      {
+        "code": "MO-240",
+        "observation": "Credential page labels training unavailable and the vendor's 2-page outline groups data, operations/process, resources and reporting. Goal Seek for logistics, Power Query unpivot, PivotTables and accessible dashboards are named. Excel Goal Seek adjusts one input to reach a formula's target.",
+        "recommendation": "Use a route with public outline and a single-purpose Goal Seek tutorial; practice finding shipment volume given target contribution. A typical candidate's 150h experience is not course length or a required prerequisite.",
+        "learning": "Free support guide applies to desktop Excel on Windows/macOS. Approx 10–15 min editorial for adapting its example. No dedicated Learn course currently listed.",
+        "confidence": "High for the documented facts; edition delivered to a candidate, tenant availability and feature execution unverified.",
+        "sources": [
+          {
+            "opened_url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-for-operational-management-associate/",
+            "registered_on_publish_worktree": [],
+            "candidate_ids": []
+          },
+          {
+            "opened_url": "https://arch-center.azureedge.net/Credentials/mos-excel-for-operational-management-od.pdf",
+            "registered_on_publish_worktree": [],
+            "candidate_ids": []
+          },
+          {
+            "opened_url": "https://support.microsoft.com/en-us/excel/use-goal-seek-to-find-the-result-you-want-by-adjusting-an-input-value",
+            "registered_on_publish_worktree": [],
+            "candidate_ids": []
+          }
+        ]
+      },
+      {
+        "code": "MO-410",
+        "observation": "MOS Expert program still lists Microsoft 365 Outlook as coming soon, while its Office 2019 exam is separately linked.",
+        "recommendation": "Retain announcement-only and avoid presenting Office 2019 study material as verified MO-410 exam scope.",
+        "learning": "No current MO-410 blueprint or dedicated learning duration established in this bounded check.",
+        "confidence": "High for the documented facts; edition delivered to a candidate, tenant availability and feature execution unverified.",
+        "sources": [
+          {
+            "opened_url": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-expert-m365-apps/",
+            "registered_on_publish_worktree": [],
+            "candidate_ids": []
+          }
+        ]
+      }
+    ]
+  },
+  "learning": {
+    "checked_on": "2026-11-23",
+    "scope": "Ten exams, public learning material, read-only. Sources matched against the main-based refresh worktree. Dates relate to this reading; no simulation, lab or assessment was run.",
+    "resources": [
+      {
+        "exam": "MB-310",
+        "url": "https://microsoftlearning.github.io/MB-310-Microsoft-Dynamics-365-Finance/Instructions/Labs/LP3%20Lab%20-%20Breakdown%20of%20voucher.html",
+        "source_ids": [
+          "mb310-focused-lab"
+        ],
+        "candidate_ids": [],
+        "http_status": 200,
+        "scope_and_practice": "Use the voucher breakdown to trace split accounts and amounts in the published scenario.",
+        "time_basis": "20–35 min in a prepared Finance training environment; editorial.",
+        "access_and_limitations": "Public MicrosoftLearning lab; Dynamics Finance environment needed for execution.",
+        "confidence": "High for public content; worksheet times are estimates."
+      },
+      {
+        "exam": "MB-820",
+        "url": "https://microsoftlearning.github.io/MB-820-Business-Central-Developer-Certification/Instructions/Labs/LAB_02_Implement_installation_and_upgrade_code_extension.html",
+        "source_ids": [
+          "mb820-focused-lab"
+        ],
+        "candidate_ids": [],
+        "http_status": 200,
+        "scope_and_practice": "Compare seeded salespeople after first installation with key changes after the upgrade codeunit.",
+        "time_basis": "35–60 min with a prepared Business Central extension project; editorial.",
+        "access_and_limitations": "Public MicrosoftLearning lab; sandbox and publishing permissions required for execution. This lab addresses the install/upgrade objective.",
+        "confidence": "High for public content; worksheet times are estimates."
+      },
+      {
+        "exam": "DP-700",
+        "url": "https://microsoftlearning.github.io/mslearn-fabric/Instructions/Labs/18-monitor-hub.html",
+        "source_ids": [
+          "fabric-official-monitoring-hub-lab"
+        ],
+        "candidate_ids": [],
+        "http_status": 200,
+        "scope_and_practice": "Compare two item runs and explain how permissions and filters constrain visibility in the monitoring hub.",
+        "time_basis": "About 30 min, published lab estimate.",
+        "access_and_limitations": "Public MicrosoftLearning lab; Fabric capacity and a workspace are needed to perform it.",
+        "confidence": "High for public content; worksheet times are estimates."
+      },
+      {
+        "exam": "DP-750",
+        "url": "https://microsoftlearning.github.io/DP-750T00-Implement-Data-Engineering-Solutions-using-Azure-Databricks/Instructions/Labs/12-implement-development-lifecycle-processes-in-azure-databricks.html",
+        "source_ids": [
+          "dp-750-official-development-lifecycle-lab"
+        ],
+        "candidate_ids": [],
+        "http_status": 200,
+        "scope_and_practice": "Compare pytest results, bundle configuration validation, and deployment evidence as independent checks.",
+        "time_basis": "35–60 min for paper walkthrough; editorial. Setup extra.",
+        "access_and_limitations": "Public lab; requires Azure Databricks serverless access, CLI, and appropriate workspace/job permissions to execute.",
+        "confidence": "High for public content; worksheet times are estimates."
+      },
+      {
+        "exam": "DP-800",
+        "url": "https://learn.microsoft.com/en-us/training/modules/design-implement-intelligent-search-with-sql/",
+        "source_ids": [
+          "dp-800-intelligent-sql-search-module"
+        ],
+        "candidate_ids": [],
+        "http_status": 200,
+        "scope_and_practice": "Contrast lexical terms, embedding similarity, and combined ranking for a sample query.",
+        "time_basis": "84 min for 9 units, Microsoft Learn gs-duration.",
+        "access_and_limitations": "Public module; additional database/service access for practical work.",
+        "confidence": "High for public content; worksheet times are estimates."
+      },
+      {
+        "exam": "AZ-104",
+        "url": "https://microsoftlearning.github.io/AZ-104-MicrosoftAzureAdministrator/Instructions/Labs/LAB_02b-Manage_Governance_via_Azure_Policy.html",
+        "source_ids": [
+          "g03-learning-az-104-lab-02b-manage-governance-via-azure-policy"
+        ],
+        "candidate_ids": [],
+        "http_status": 200,
+        "scope_and_practice": "Compare tag policy assignment and the compliance/remediation evidence on existing resources.",
+        "time_basis": "30 min, lab estimate.",
+        "access_and_limitations": "Public tutorial. Execution requires Azure subscription access to manage policies at the selected scope.",
+        "confidence": "High for public content; worksheet times are estimates."
+      },
+      {
+        "exam": "AZ-401",
+        "url": "https://learn.microsoft.com/en-us/training/modules/introduction-agentic-devops-microsoft-tools-azure/",
+        "source_ids": [
+          "microsoft-agentic-devops-module"
+        ],
+        "candidate_ids": [],
+        "http_status": 200,
+        "scope_and_practice": "Identify a suitable task for a coding agent and a human checkpoint in a DevOps workflow.",
+        "time_basis": "47 min for 7 units, Microsoft Learn gs-duration.",
+        "access_and_limitations": "Public introductory module; applicable tooling, permissions and entitlements are separate.",
+        "confidence": "High for public content; worksheet times are estimates."
+      },
+      {
+        "exam": "MB-820",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-control-addin-object",
+        "source_ids": [],
+        "candidate_ids": [],
+        "http_status": 200,
+        "scope_and_practice": "Study the AL controladdin and page usercontrol samples, its Scripts/StartupScript properties and AL–JavaScript event boundary. Draw a keyboard-accessible control and callback.",
+        "time_basis": "15–25 min to read the example and annotate calls; editorial.",
+        "access_and_limitations": "Public developer reference; compiling/publishing in a Business Central sandbox and browser testing adds time.",
+        "confidence": "High for public content; worksheet times are estimates."
+      },
+      {
+        "exam": "MB-820",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-isolated-storage",
+        "source_ids": [],
+        "candidate_ids": [],
+        "http_status": 200,
+        "scope_and_practice": "Compare extension isolation, the optional DataScope, and explicit SetEncrypted. Construct a test matrix with synthetic values and intended/forbidden readers.",
+        "time_basis": "10–20 min for an API and scope worksheet; editorial.",
+        "access_and_limitations": "Public developer reference; testing requires a sandbox and suitable app and user contexts.",
+        "confidence": "High for public content; worksheet times are estimates."
+      },
+      {
+        "exam": "MB-820",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/ai-build-experience-overview",
+        "source_ids": [],
+        "candidate_ids": [],
+        "http_status": 200,
+        "scope_and_practice": "Trace the extension capability, system AI module and PromptDialog user review/save sequence. Annotate where the user can dismiss output and where persistence is allowed.",
+        "time_basis": "20–35 min for reading and a sequence diagram; editorial.",
+        "access_and_limitations": "Public developer overview, separate from using Copilot to generate AL code. Functional testing requires Business Central and an authorized AI model setup.",
+        "confidence": "High for public content; worksheet times are estimates."
+      },
+      {
+        "exam": "MO-240",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-for-operational-management-associate/",
+        "source_ids": [],
+        "candidate_ids": [],
+        "http_status": 200,
+        "scope_and_practice": "The credential says no training available. It offers the generic exam interface demo and a skills outline. About 150 hours is typical prior instruction and experience.",
+        "time_basis": "No dedicated curriculum runtime established.",
+        "access_and_limitations": "Public credential and demo link. Candidate description does not establish a mandatory course.",
+        "confidence": "High for public content; worksheet times are estimates."
+      },
+      {
+        "exam": "MO-410",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-expert-m365-apps/",
+        "source_ids": [],
+        "candidate_ids": [],
+        "http_status": 200,
+        "scope_and_practice": "MO-410 appears as coming soon among qualifying Associate exams in the Expert requirements. No MO-410-specific learning route is linked in that list.",
+        "time_basis": "No MO-410-specific curriculum runtime established.",
+        "access_and_limitations": "Public requirements page; Outlook 2019 resources are for a different exam.",
+        "confidence": "High for public content; worksheet times are estimates."
+      },
+      {
+        "exam": "AB-400",
+        "url": "https://learn.microsoft.com/en-us/training/courses/ab-400t00",
+        "source_ids": [
+          "ab-400-official-course"
+        ],
+        "candidate_ids": [],
+        "http_status": 200,
+        "scope_and_practice": "The course directly targets AB-400 and covers code apps, Foundry and Copilot Studio, Dataverse extensions, integration and secure ALM. Five paths have 6, 5, 3, 3 and 3 modules.",
+        "time_basis": "3 instructor-led days as listed; no inference that a self-paced learner needs that duration.",
+        "access_and_limitations": "English public syllabus, self-directed learning and training-provider options; programming, platform, Azure, Foundry and Copilot Studio experience assumed.",
+        "confidence": "High for public content; worksheet times are estimates."
+      },
+      {
+        "exam": "AB-400",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-400/",
+        "source_ids": [],
+        "candidate_ids": [],
+        "http_status": 200,
+        "scope_and_practice": "Credential points to AB-400-specific study/learning routes and a practice assessment.",
+        "time_basis": "No measured runtime for browsing or practice.",
+        "access_and_limitations": "Public credential card; AI Skills Navigator assessment requires sign-in, contents uninspected.",
+        "confidence": "High for public content; worksheet times are estimates."
+      },
+      {
+        "exam": "MO-240",
+        "url": "https://arch-center.azureedge.net/Credentials/mos-excel-for-operational-management-od.pdf",
+        "source_ids": [],
+        "candidate_ids": [],
+        "http_status": 200,
+        "scope_and_practice": "The published skills outline can anchor a synthetic resource-plan workbook with quality checks, a critical-path schedule and management reporting.",
+        "time_basis": "15–30 min to read and map the outline; editorial.",
+        "access_and_limitations": "Public PDF. It describes assessed tasks; the open-ended workbook is an original practice suggestion.",
+        "confidence": "High for public content; worksheet times are estimates."
+      },
+      {
+        "exam": "MO-410",
+        "url": "https://certiport.pearsonvue.com/Certifications/Microsoft/MOS/Certify/365-Apps",
+        "source_ids": [],
+        "candidate_ids": [],
+        "http_status": 200,
+        "scope_and_practice": "Public MOS catalog corroborates that Outlook Office 2019 preparation belongs to a separate edition.",
+        "time_basis": "No MO-410-specific course time established.",
+        "access_and_limitations": "Current program data only. A training link for another edition does not establish MO-410 training.",
+        "confidence": "High for public content; worksheet times are estimates."
+      },
+      {
+        "exam": "MB-820",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-task-scheduler",
+        "source_ids": [],
+        "candidate_ids": [],
+        "http_status": 200,
+        "scope_and_practice": "Compare a developer-scheduled codeunit, ready/earliest-start state, failure handling and a user-manageable job queue. Draw a retry path free of interactive confirmation.",
+        "time_basis": "20–35 min to read the flow and draw it; editorial.",
+        "access_and_limitations": "Public developer documentation. Actual scheduling needs sandbox and sufficient permissions.",
+        "confidence": "High for public content; worksheet times are estimates."
+      }
+    ]
+  },
+  "review_inputs": [
+    {
+      "code": "MB-310",
+      "guide": "guides/MB-310-microsoft-dynamics-365-finance-functional-consultant.md",
+      "guide_sha256_lf": "c1d13da2252674bbd872771dd26f3fac6d7ea85a6bc240251b63052e9023b0aa",
+      "objective": "data/objective-snapshots/mb-310-official-objectives.txt",
+      "objective_sha256": "d5bbe85cad214566f2ba0cc7b266af0ff612664ba199a5c8ed948e28474d2284"
+    },
+    {
+      "code": "MB-820",
+      "guide": "guides/MB-820-microsoft-dynamics-365-business-central-developer.md",
+      "guide_sha256_lf": "2f644da28583ca7f75aec8fa2ba863ed35785390c3896b1ebbdda71c28370805",
+      "objective": "data/objective-snapshots/mb-820-official-objectives.txt",
+      "objective_sha256": "8abdd75504bf3fba9c6979a3cefad2b95e8ee45278ea06b103ac6ed8ec27fb6c"
+    },
+    {
+      "code": "DP-700",
+      "guide": "guides/DP-700-implementing-data-engineering-solutions-microsoft-fabric.md",
+      "guide_sha256_lf": "ba0fcc0b1a208d1396d8ecb97ed9685fbb945fad87094a131b67b6d4cdd2e637",
+      "objective": "data/objective-snapshots/dp-700-official-objectives.txt",
+      "objective_sha256": "536a8f75830b0951502232b8b1a811524d000a7edf7a745613f46462f7dd3fc5"
+    },
+    {
+      "code": "DP-750",
+      "guide": "guides/DP-750-implementing-data-engineering-solutions-using-azure-databricks.md",
+      "guide_sha256_lf": "2fe12dcd3ce4fd21fe2721a69d486146e69d95f8817496b990bb5588779adef9",
+      "objective": "data/objective-snapshots/dp-750-official-objectives.txt",
+      "objective_sha256": "d44f3f814718f33dd69dd72f48381609f4cde30d0b5c9fe1656380223fb2571e"
+    },
+    {
+      "code": "DP-800",
+      "guide": "guides/DP-800-developing-ai-enabled-database-solutions.md",
+      "guide_sha256_lf": "470ec0a805dd688fc2147f362ff357b0fe0d33bffb912e66c85a59360b185ba5",
+      "objective": "data/objective-snapshots/dp-800-official-objectives.txt",
+      "objective_sha256": "6e54b91dfcc48967be9eec6efffdc43262d965d8a66a01d467c5ccb9c283d862"
+    },
+    {
+      "code": "AZ-104",
+      "guide": "guides/AZ-104-microsoft-azure-administrator.md",
+      "guide_sha256_lf": "3ba980760ec78757d5828daa7c508a15a82a1096120fc44887a017e8d1e36ce9",
+      "objective": "data/objective-snapshots/az-104-official-objectives.txt",
+      "objective_sha256": "7d2330fbafdd4981b54e6aa8f9ba371f0bbad1edf521fa8d2fa591e2bf8d2ae1"
+    },
+    {
+      "code": "AZ-401",
+      "guide": "guides/AZ-401-designing-implementing-microsoft-agentic-devops-solutions.md",
+      "guide_sha256_lf": "05018418d090d366346f55ad0ebf049d6c2d47bedc23911288dd86665b29c7ff",
+      "objective": "data/objective-snapshots/az-401-official-objectives.txt",
+      "objective_sha256": "b74fe4beb2509bb4fd6a13d19783c0ad97ad102abe7bda0d6eefae429dbe4337"
+    }
+  ],
+  "independent_review": {
+    "type": "Fresh-context AI review of the staged changes under rubric 2",
+    "outcome": "Passed after repairs. Seven final guide and objective bindings checked. All material findings resolved. November MB-820 full-guide source validation remains blocked.",
+    "rechecked": [
+      "Business Central app roles, DataScope, adjacent onboarding exercises and current practice route",
+      "MB-310 conflicting editions and practice route",
+      "AZ-104 edition banner and DP-750 beta scope",
+      "Historical MB-820 source gate, archive and public disclosure"
+    ]
+  }
+}

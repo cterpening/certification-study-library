@@ -5,25 +5,25 @@ official_blueprint: https://learn.microsoft.com/en-us/credentials/certifications
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: source-validated
-last_verified: 2026-10-28
+review_status: review-required
+last_verified: 2026-11-23
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-10-28
+upcoming_change_checked: 2026-11-23
 ---
 
 # MB-820 Microsoft Dynamics 365 Business Central Developer Study Guide
 
 [November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-05.md#mb-820)
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-04.md#mb-820) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mb-820-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-820) is authoritative.
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-820) defines exam scope. The October 28 review covered the June 2025 edition. The [November source record](../docs/SOURCE-VALIDATION.md#mb-820-coverage-record) keeps the new edition’s guide-wide claim and link checks open.
 
-**Current baseline:** Skills measured as of June 10, 2025.<br>
-**Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
-**Lifecycle:** The [Business Central Developer Associate credential](https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-developer-associate/) is active, renews every 12 months, and has no announced retirement. The exam is 100 minutes, is offered in seven languages, and has a free Practice Assessment.<br>
-**Freshness warning:** The published objective baseline is more than a year old. The 2025 change log mainly revised environment details and APIs; verify current Business Central runtime, AL extension, AppSource, authentication, testing, telemetry and API guidance before implementing a lab.<br>
+**Current English outline:** November 20, 2026. Six domains contain 78 detailed tasks. [Microsoft study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-820)<br>
+**Upcoming blueprint change:** No later English outline was identified on November 23. Check the language and version for your appointment.<br>
+**Lifecycle:** The [Business Central Developer Associate credential](https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-developer-associate/) is active, renews every 12 months, and has no announced retirement. The exam is 100 minutes, is offered in seven languages, and the credential links to practice in AI Skills Navigator.<br>
+**VERIFY CURRENT.** Match the Business Central runtime, AL extension, AI capabilities, marketplace requirements and permissions to your sandbox before starting an exercise.<br>
 **Official source:** [MB-820 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-820)
 
-The [September deep review](../docs/research/2026-09-28-mb-820-deep-review.md) maps **75 detailed objectives**. The older 17-bullet summary is archived; the June 2025 baseline has not changed. Current runtime behavior and announced future removals are distinguished below.
+The [September deep review](../docs/research/2026-09-28-mb-820-deep-review.md) maps 75 tasks from the previous June 2025 edition. The November edition gives more weight to integration and adds Copilot capabilities, user experiences and agents. [November edition comparison](../docs/research/2026-11-23-microsoft-editions.md)
 
 ## How to use this guide
 
@@ -46,16 +46,16 @@ Work in a sandbox with source control. Publish small vertical slices, then test 
 
 | Domain | Weight | Central question |
 |---|---:|---|
-| Describe Business Central | 10–15% | Can you place an extension in the product/app/update/AppSource architecture? |
-| Install, develop and deploy | 10–15% | Can you configure, debug, package, publish, upgrade and maintain a multilanguage extension? |
-| Develop by using AL objects | 35–40% | Can you model data, UI, reports, exchange, logic, permissions and queries with appropriate objects? |
-| Develop by using AL | 15–20% | Can you implement Business Central patterns and safe, understandable AL behavior? |
-| Work with development tools | 10–15% | Can you prove behavior with tests and operate it through telemetry? |
-| Integrate with other applications | 10–15% | Can you build secure REST clients and durable Business Central API contracts? |
+| Design Business Central solutions | 5–10% | Which app model, deployment environment and marketplace checks fit the design? |
+| Install, develop, and deploy for Business Central | 10–15% | Can you manage dependencies, debug, publish and upgrade a multilingual extension? |
+| Develop objects by using AL | 30–35% | Can you choose tables, controls, reports, scheduled codeunits, permissions and queries for the job? |
+| Develop user experiences and logic by using AL | 15–20% | Can you implement data and document patterns, errors and reusable AL logic? |
+| Test and monitor AL code | 10–15% | Which test and telemetry measurements demonstrate the outcome? |
+| Integrate Business Central with other applications | 15–20% | Can you secure a REST integration, build a Copilot interaction and define an agent’s permissions? |
 
 ---
 
-## 1. Describe Business Central
+## 1. Design Business Central solutions
 
 ### Architecture and extension model
 
@@ -68,6 +68,8 @@ An update lifecycle includes platform/runtime, Microsoft applications, dependenc
 > **Related item:** Platform, System Application, Base Application and partner extensions have different ownership and release cadence. An extension can compile against a dependency yet still break behavior if it relied on undocumented implementation.
 
 ### Apps and AppSource
+
+A **connect app** links Business Central to an external service, such as a shipping portal where the shipment data and processing live. An **add-on app** could add packing rules and a page inside Business Central. Two add-ons could share address validation in a **library app** that installs through their manifests. If a routing add-on requires a separately listed warehouse app, the warehouse app is a **dependency app** with its own offer. Trace the manifest dependency before upgrading either package. [Microsoft app-type examples](../docs/research/2026-11-23-microsoft-editions.md#business-central-app-types)
 
 An app package contains compiled AL objects, metadata, permissions, translations and declared resources/dependencies. Distinguish a per-tenant/customer customization from a broadly distributed AppSource app. AppSource submission adds technical validation, analyzers, object ranges/naming, licensing/monetization, privacy/security, documentation, support and marketing obligations.
 
@@ -92,7 +94,7 @@ These are product changes, not newly added exam objectives. Future release dates
 
 **VERIFY CURRENT — v29 administration tooling:** the [platform deprecation register](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/upgrade/deprecated-features-platform) moves the administration modules to PowerShell 7 script modules with the `Microsoft.BusinessCentral` prefix in the server installation's Admin folder. This concerns on-premises/container administration. Match scripts to the installed version and module names; an older Windows PowerShell script still running does not establish a supported configuration. SaaS PTE deployment keeps its separate Admin Center/API path. The v30 OData boundary remains future as of October 28, 2026.
 
-## 2. Install, develop and deploy for Business Central
+## 2. Install, develop, and deploy for Business Central
 
 ### Configure the development environment
 
@@ -116,7 +118,7 @@ Translation uses generated XLIFF and stable labels. Localize captions, messages,
 
 [AL-Go for GitHub](https://github.com/microsoft/AL-Go) provides separate PTE and AppSource templates plus build/test/release workflows. Use its documented update mechanism for shared workflow files, review the change and rerun compatibility tests. A successful pipeline is evidence about the tested artifact/environment; it does not replace data-upgrade or business acceptance checks.
 
-## 3. Develop by using AL objects
+## 3. Develop objects by using AL
 
 ### Tables, enums and pages
 
@@ -132,6 +134,10 @@ Role Centers combine navigation, activities/cues, lists, headlines and parts aro
 
 **FlowFields are calculations, not stored values.** [FlowField documentation](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-flowfields) explains that hidden page FlowFields can still be calculated. From v26, the Calculate only visible FlowFields feature can change that behavior. Record the feature state before comparing timings, and use explicit calculation when code needs a value. Hiding a field does not revoke access.
 
+### Control add-ins
+
+Use a control add-in when an AL page needs an interaction its standard controls cannot express. Define its scripts and startup sequence, an event that passes a user choice back to AL, and the AL procedure that updates the display. Test keyboard access, resizing and what happens when the control loads slowly. Keep business validation in AL. [Control add-in object](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-control-addin-object)
+
 ### Reports
 
 A report object defines data items/columns, request page, triggers/functions and one or more layouts. Model parent/child data items with correct links, filters, sort and temporary/aggregated data. Use a query when it produces a clearer or more efficient dataset. Request pages expose parameters and saved settings; validate them before expensive work.
@@ -140,9 +146,9 @@ Choose RDLC for precise paginated output, Word for editable business-document la
 
 **Worked substitution check:** prefer a report extension when supported dataset/request-page/layout additions meet the requirement. If replacement is needed, subscribe a method to `ReportManagement.OnAfterSubstituteReport`, test the requested `ReportId`, and set the replacement through the `var NewReportId` parameter. Check whether another subscriber already supplied a replacement instead of overwriting it silently. The [substitution procedure](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-substituting-reports) lists the invocation paths that raise the event; use a compatible report contract and test the actual page action/code path. **Answer check:** a replacement that displays manually but fails when called with the original record context is not compatible. No subscriber was compiled or run here. **VERIFY CURRENT:** report signature, calling method and runtime.
 
-### XMLports and queries
+### Queries and related XMLport practice
 
-An XMLport defines schema nodes, element/attribute/text/field nodes, direction, format, encoding, namespaces, separators and triggers. Use it when its structured import/export pipeline fits. Validate external input, avoid leaking sensitive fields and make imports restartable. Invoking an XMLport from AL does not remove its transaction and error obligations.
+**Related item:** The November outline removed the named XMLport subdomain. An XMLport defines schema nodes, element/attribute/text/field nodes, direction, format, encoding, namespaces, separators and triggers. Use it when its structured import/export pipeline fits. Validate external input, avoid leaking sensitive fields and make imports restartable. Invoking an XMLport from AL does not remove its transaction and error obligations.
 
 Query objects join data items, select/filter/sort columns and aggregate supported values. Understand join type and cardinality before assuming row counts. Set filters before opening, read results through the query lifecycle and close resources. A query can outperform nested record loops and feed a report/API, but only when keys, selectivity, company scope and result size are controlled.
 
@@ -172,15 +178,19 @@ Permission-set objects grant object permissions and may include/extend other set
 
 **Inherent permission has a narrow but consequential scope.** [InherentPermissions](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-inherent-permissions) applies only to objects in the same extension. Its optional scope can cover permissions, entitlements or both; the default is Both. It grants capability during the method/event execution, and administrators cannot remove that grant through ordinary permission-set management. Use small, controlled operations with explicit output boundaries; it is not a blanket override for another publisher's sensitive tables.
 
-## 4. Develop by using AL
+### Scheduled tasks
+
+A scheduled task runs a codeunit in a background session. On paper, specify the company, earliest start, ready state, record to process and task identifier. If a retry sees an already processed record, it should find the saved result before attempting another posting. Compare the task with a job queue entry that an operator can schedule and inspect. [Business Central task scheduler](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-task-scheduler)
+
+## 4. Develop user experiences and logic by using AL
 
 ### UI experience and onboarding
 
-Profiles connect users to Role Centers and page customizations; views package filters/sort/display for repeated work. The user-assistance model links tooltips, context help and conceptual guidance. Assisted Setup registers a guided wizard and completion state. Teaching tips/in-app tours explain controls in context, while onboarding checklists guide multi-step adoption. Make every layer dismissible, localizable, accessible and safe to resume.
+Profiles connect users to Role Centers and page customizations; views package filters/sort/display for repeated work. The user-assistance model links tooltips, context help and conceptual guidance. Assisted Setup registers a guided wizard and completion state. **Related item:** Teaching tips, tours and onboarding checklists support adoption. The November outline covers user assistance and Assisted Setup. Make every layer dismissible, localizable, accessible and safe to resume.
 
 Design for first-run, empty state, error recovery and repeated use. A wizard must validate before commit and avoid partial setup. A checklist item needs a meaningful completion signal, not merely a click.
 
-**Worked checklist registration:** first create a [Guided Experience Item](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/onboarding-checklist) for the setup page or wizard through the `Guided Experience` codeunit façade, such as `InsertManualSetup` or `InsertAssistedSetup`. Then reference that item from a checklist and map its audience through checklist role/user records. A setup page existing in the app does not automatically make it an onboarding task. In a disposable company, test the intended role, a different role, skip/resume and a failed validation; completion must correspond to persisted valid setup. Keep the list focused. The current article separately says Role Center Tour items can only be added by Microsoft even though its façade list includes `InsertTour`; do not infer that the method list grants arbitrary partner tour support. Use supported page teaching tips/help and recheck the exact tour contract. This is a design worksheet, not executed AL.
+**Related item: worked checklist registration.** first create a [Guided Experience Item](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/onboarding-checklist) for the setup page or wizard through the `Guided Experience` codeunit façade, such as `InsertManualSetup` or `InsertAssistedSetup`. Then reference that item from a checklist and map its audience through checklist role/user records. A setup page existing in the app does not automatically make it an onboarding task. In a disposable company, test the intended role, a different role, skip/resume and a failed validation; completion must correspond to persisted valid setup. Keep the list focused. The current article separately says Role Center Tour items can only be added by Microsoft even though its façade list includes `InsertTour`; do not infer that the method list grants arbitrary partner tour support. Use supported page teaching tips/help and recheck the exact tour contract. This is a design worksheet, not executed AL.
 
 **Worked profile and view:** define a [profile object](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-profile-object) with a caption, existing RoleCenter and referenced page customizations. Switch the test user's Role Center to that profile before checking its layout; a customization assigned elsewhere will not appear. Page customizations shape layout/actions and cannot add procedures, variables or triggers. Define a named [list-page view](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-views) with a caption, `Filters` on source-table fields and `OrderBy` for the chosen direction. Add the views section after layout/actions; use `SharedLayout = false` when supplying a separate view layout. Check which records survive the filter and how ordinary personalization behaves. **Answer check:** hiding a column or filtering a view does not revoke record access. A view changes presentation/filtering; permission sets remain separate. These are uncompiled design steps; verify object syntax/runtime before implementation.
 
@@ -218,7 +228,7 @@ Trace a procedure before running it: define two `Decimal` inputs for quantity an
 
 Now separate a scalar calculation from record work. A record variable represents a table and current filters/state; set the filter, retrieve the intended record set, then decide whether a field needs `Validate` before `Modify`. A loop that changes persisted records needs a transaction and concurrency decision; it is not equivalent to updating the local subtotal. Predict zero quantity, a negative input, a failed conversion and a missing record, and inspect which state can change in each case. This is an original paper trace, not a compiled AL sample; use the earlier error/commit model when adding persistence.
 
-## 5. Work with development tools
+## 5. Test and monitor AL code
 
 ### Automated and semiautomated testing
 
@@ -277,6 +287,16 @@ Bound actions operate on a resource; unbound actions represent service operation
 For [transactional OData batches](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/webservices/use-odata-batch), `Isolation: snapshot` runs the inner requests in one session. Atomic rollback depends on the invoked AL code not committing partway through. Explicit commits split the transaction; review implicit Codeunit.Run boundaries too. A batch envelope or successful outer HTTP response alone does not prove every business operation succeeded.
 
 [Data-access intent](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips) can be overridden: the Database Access Intent List takes precedence over the request header, which takes precedence over the object's default. Modification requests require ReadWrite. ReadOnly expresses intent and does not guarantee replica routing. Most importantly, [online sandboxes cannot enable read scale-out](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/database-read-scale-out-overview): their objects run against the primary, so a sandbox cannot demonstrate production replica delay. Use a local lag model for learning and authorized production-like telemetry for an actual routing/consistency claim.
+
+### Protect integration secrets
+
+Within the extension, select Module (the default), Company, User or CompanyAndUser. For example, store the key for one company’s carrier account at Company scope so another company can use its own account. Isolated Storage separates extensions’ values. Use the encrypted setter with a SecretText value and an explicit DataScope when credentials require encryption. Keep secrets out of logs and test fixtures. [IsolatedStorage.SetEncrypted](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/methods-auto/isolatedstorage/isolatedstorage-setencrypted-string-secrettext-datascope-method)
+
+### Build a Copilot capability and an agent
+
+For a draft product description, register the capability, configure authorized model access and pass only the fields required to generate the text. Check the operation result before displaying a draft. A PromptDialog gives the user a place to supply input, see generation progress and edit or discard the proposed text before saving. [Build a Copilot capability in AL](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/ai-build-capability-in-al) · [PromptDialog page type](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-page-type-promptdialog)
+
+For an agent that reviews a synthetic document, define its task, company and permission set. Test a permitted read and a denied change, then inspect its activity. **VERIFY CURRENT.** Microsoft describes its agent design toolkit as a sandbox preview with capability, administrative and billing prerequisites. A paper permission test is enough for this exercise. [Create an agent in the agent design toolkit](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/ai/ai-development-toolkit-agent-create)
 
 ## Worked examples
 
@@ -359,11 +379,13 @@ Use synthetic data in an appropriate development/test environment. These tenant 
 3. **Data/UI/security:** Extend a table/page, enum/interface, Role Center and profile. Test validation, permissions and inherent-permission output under a nonadministrator.
 4. **Reports/query/XMLport:** Build a two-layout multilingual report and an import/export. Inject the fan-out from example 3, repair the grain and compare totals; check empty and large inputs.
 5. **Errors/events:** Compare ordinary errors, caught try methods and Boolean Codeunit.Run using disposable records. Observe persisted results and test two subscribers without an ordering dependency.
-6. **Onboarding/files:** Add Assisted Setup, tips and checklist with a durable completion test. Reject malformed/oversized files without leaving partial setup.
+6. **Onboarding/files (optional checklist practice):** Add Assisted Setup, tips and checklist with a durable completion test. Reject malformed/oversized files without leaving partial setup.
 7. **Automated tests:** Use a test runner, handlers and expected-error assertions. Execute a larger suite only in a suitable container/CI setup; retain results for the exact package and version.
 8. **Performance/telemetry:** Benchmark selected fields and intentional JIT loads, test FlowField feature states and count attempt versus eventual outcomes. Keep confidential values out of telemetry.
 9. **Outbound integration:** Reproduce the lost-response/retry model locally, then use an authorized mock service for transport/status/payload errors, idempotency conflict and certificate failure. Verify the stable identity reaches the recipient.
 10. **Inbound API:** Test SystemId, versioning, permissions, concurrency, pagination and bound/unbound actions. Inject a transactional-batch failure with and without a deliberate intermediate commit. Label sandbox read-intent results as primary-only; model lag separately.
+
+**November integration exercise.** Sketch a sandbox extension that generates a draft and queues an approved document for later processing. Record the human decision, permission boundary, task identifier and duplicate-posting check. Explain how you would diagnose a denied operation without exposing a secret.
 
 ## Knowledge checks with answers
 
@@ -475,6 +497,8 @@ The [Plataan webinar listing](https://app-plataantv-web-prd-euw.azurewebsites.ne
 
 ## Final readiness checklist
 
+- [ ] I can trace a control add-in event, a scheduled task and a Copilot draft from user input to an observable result, and explain which identity can act at each step.
+
 - [ ] I can explain online/on-prem, platform/System/Base/extension and AppSource lifecycle boundaries.
 - [ ] I can configure, debug, package, publish, install, upgrade, translate and maintain multi-project AL extensions.
 - [ ] I can choose/build/extend every measured AL object with data, UI, permission, performance and upgrade contracts.
@@ -482,11 +506,11 @@ The [Plataan webinar listing](https://app-plataantv-web-prd-euw.azurewebsites.ne
 - [ ] I can build deterministic test codeunits and privacy-safe telemetry tied to operational action.
 - [ ] I can implement secure outbound REST/JSON and stable inbound API/action contracts, including concurrency and consistency.
 - [ ] I can trace a requirement through source, analyzer, build, test, package, deployment, telemetry and rollback evidence.
-- [ ] I rechecked the older official blueprint, lifecycle, runtime/API guidance and Practice Assessment before scheduling.
+- [ ] I rechecked the current official blueprint, lifecycle, runtime/API guidance and Practice Assessment before scheduling.
 
 ## Source notes
 
-The June 10, 2025 study guide defines exam scope. Current Microsoft Learn paths, AL documentation and public course labs support implementation, but their platform/runtime detail may evolve beyond the older blueprint. Commercial sources are optional supplements and do not define objectives. All scenarios, labs and checks here are original; no dumps or recalled questions were used.
+The November 20, 2026 English study guide defines exam scope. Current Microsoft Learn paths, AL documentation and public course labs support implementation, but their platform/runtime detail may evolve beyond the published blueprint. Commercial sources are optional supplements and do not define objectives. All scenarios, labs and checks here are original; no dumps or recalled questions were used.
 
 ## Places to learn
 
@@ -511,10 +535,10 @@ Use MicrosoftLearning’s [installation/upgrade lab](https://microsoftlearning.g
 | [Essential development standards](https://learn.microsoft.com/en-us/training/paths/essential-development-standards/) | Free | 4 modules; runtime not shown; 10–20 hours implementing standard patterns |
 | [MB-820T00-A: Develop solutions with Dynamics 365 Business Central](https://learn.microsoft.com/en-us/training/courses/mb-820t00) | Paid/provider-dependent | 5 days; English |
 | [MicrosoftLearning MB-820 labs](https://github.com/MicrosoftLearning/MB-820-Business-Central-Developer-Certification) | Free; MIT | 12–25 hours editorial estimate for selected work; Lab 02 has a defective displayed upgrade sample (see focused route); review and rewrite before execution |
-| [Free MB-820 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-developer-associate/practice/assessment?assessment-type=practice&assessmentId=66154329&practice-assessment-type=certification) | Free | 45–90 minutes plus remediation |
+| [Current practice assessment via the credential](https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-developer-associate/) · [Legacy Learn assessment](https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-developer-associate/practice/assessment?assessment-type=practice&assessmentId=66154329&practice-assessment-type=certification) | Sign in to AI Skills Navigator for the current assessment. Microsoft has stopped updating the legacy Learn version. | About 45–90 minutes for an attempt and initial review (editorial estimate) |
 | [AL developer documentation](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/) | Free | 25–60 hours selected current reference/troubleshooting |
 | [O’Reilly: MB-820 Certification Companion](https://www.oreilly.com/library/view/dynamics-365-business/9798868809262/) | Subscription/trial | 317-page Apress book by Dr. Gomathi S, November 2024; 3h48 platform reading estimate; gap-check current runtime |
 | [Microsoft Community MB-820 awareness session](https://techcommunity.microsoft.com/event/d3f367f5-77c3-4097-92a4-2bf95e15d11c/mb-820-certification-essentials-your-complete-guide-to-becoming-a-business-centr/4537934) | Free registration; event availability varies | About 1–2 hours estimated; verify recording/event access |
 | [Microsoft Partner Skilling Hub](https://www.skilling-hub.com/en-US) | Partner login required | Use the five-day course pattern for planning; signed-in event start/end times control |
 
-The eight official paths expose **54 module placements** (7/8/11/10/3/6/5/4). Current public pages do not expose runtime, so the old 50h07 total is withdrawn. Linked units were not exhaustively read; barcode/control-add-in/Dataverse material can be adjacent to the detailed objective list. Allow roughly **120–200 hours** for a developer new to Business Central to build, test, integrate, upgrade and operate the extension portfolio. No exact current Pluralsight, MeasureUp or Whizlabs MB-820 product was independently verified. Earlier Udemy discovery did not establish a suitable course; this pass did not comprehensively repeat those commercial searches.
+The eight official paths expose **54 module placements** (7/8/11/10/3/6/5/4). Current public pages do not expose runtime, so the old 50h07 total is withdrawn. Linked units were not exhaustively read; the November outline explicitly includes control add-ins. Check barcode and Dataverse lessons against the named tasks. Allow roughly **120–200 hours** for a developer new to Business Central to build, test, integrate, upgrade and operate the extension portfolio. No exact current Pluralsight, MeasureUp or Whizlabs MB-820 product was independently verified. Earlier Udemy discovery did not establish a suitable course; this pass did not comprehensively repeat those commercial searches.

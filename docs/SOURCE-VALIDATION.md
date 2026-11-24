@@ -50,7 +50,7 @@ Passing this workflow changes the public label to **Sources + objectives checked
 | MO-110 | October 28, 2026 | Current detailed outline reconciled; see group-05 report | 20 registered links: 20 reachable, 0 access-blocked, 0 missing/error | Passed; human/product review pending |
 | AZ-802 | October 28, 2026 | Current detailed outline reconciled; see group-05 report | 91 registered links: 86 reachable, 5 access-blocked, 0 missing/error | Blocked: current source gap retained |
 | SC-500 | October 28, 2026 | Current detailed outline reconciled; see group-04 report | 66 registered links: 62 reachable, 4 access-blocked, 0 missing/error | Blocked: current source gap retained |
-| MB-820 | October 28, 2026 | Current detailed outline reconciled; see group-04 report | 52 registered links: 51 reachable, 1 access-blocked, 0 missing/error | Passed; human/product review pending |
+| MB-820 | November 23, 2026 | November 20 English outline, 78 tasks | 58 registered links, 57 reachable, 1 access-blocked | Blocked pending guide-wide claim and link verification |
 | MB-800 | October 28, 2026 | Current detailed outline reconciled; see group-04 report | 56 registered links: 54 reachable, 2 access-blocked, 0 missing/error | Passed; human/product review pending |
 | MB-500 | October 28, 2026 | Current detailed outline reconciled; see group-04 report | 64 registered links: 62 reachable, 2 access-blocked, 0 missing/error | Passed; human/product review pending |
 | MB-310 | October 28, 2026 | Current detailed outline reconciled; see group-04 report | 60 registered links: 59 reachable, 1 access-blocked, 0 missing/error | Passed; human/product review pending |
@@ -1025,7 +1025,7 @@ The review maps every June 30, 2026 subobjective to a company/setup/master recor
 
 ## MB-820 coverage record
 
-The October 28 [group-04 refresh](research/2026-10-28-microsoft-refresh-group-04.md#mb-820) maps 75 current detailed objectives. Current link evidence is 52 registered, 51 reachable, 1 automation-blocked and 0 missing/error. The current source gate passed; human and product validation remain pending. Earlier dates, counts and accepted scope below describe historical reviews.
+The [November edition check](research/2026-11-23-microsoft-editions.md) compared the 78-task outline with the guide and updated the six domain sections. The current source-validation record is blocked pending a full claim and link check. The October 28 [group-04 review](research/2026-10-28-microsoft-refresh-group-04.md#mb-820) passed against the previous 75-task edition (52 registered links). The figures below describe the earlier reviews.
 
 The September 28 [deep review](research/2026-09-28-mb-820-deep-review.md) maps 75 detailed objectives. Entire guide and 75 June 2025 objectives mapped; prior 17-row summary preserved. Six worked examples, ten labs, 48 answered checks, one executed local recipient model and 32 assertions. Clarify try/commit/API transactions, sandbox read-scale limits, upgrades/permissions, HTTP/deprecations and catalog/blog scope. No AL or tenant execution; independent human review pending. Current guide citations: 39 registered, 38 reachable, 1 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
 

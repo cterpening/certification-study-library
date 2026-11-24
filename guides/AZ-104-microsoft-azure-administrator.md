@@ -15,12 +15,11 @@ upcoming_change_checked: 2026-10-28
 
 [November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-03.md#az-104)
 
-**English outline comparison, November 20, 2026.** The current page displays the October 26, 2023 edition. The library retains the later April 17, 2026 outline and its 82 tasks. Practice blob and container soft delete separately from Azure Files recovery. Distinguish VM encryption at host from legacy Azure Disk Encryption. [Compared editions](../docs/research/2026-11-20-microsoft-refresh-group-03.md#az-104).
+**English outline comparison, November 23, 2026.** Microsoft again displays the April 17, 2026 edition. Its task text matches the 82-task outline taught here. The [November 20 comparison](../docs/research/2026-11-20-microsoft-refresh-group-03.md#az-104) records the older October 2023 page seen that day.
 
 > **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-03.md#az-104) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-104-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104) is authoritative.
 
 **Current baseline:** Skills measured as of April 17, 2026<br>
-**Version check.** Microsoft provides no confirmed delivery transition date to explain the older edition currently displayed.<br>
 **Official source:** [AZ-104 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104)
 
 The September 28 [deep review](../docs/research/2026-09-28-az-104-deep-review.md) maps all **82 detailed objectives in 15 groups**. This edition has seven worked examples, ten labs and 48 explained original checks. The calculations were verified locally; no tenant, cloud resource, deployment, paid lesson or practice assessment was exercised.

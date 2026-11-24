@@ -6694,7 +6694,7 @@
       "review_type": "source-validation",
       "reviewed_on": "2026-09-28",
       "outcome": "passed",
-      "blueprint_snapshot_path": "data/objective-snapshots/mb-820-official-objectives.txt",
+      "blueprint_snapshot_path": "data/objective-snapshots/archive/mb-820-1e1a344d7da21661343df954d830f847f10aa2e3742893e8fab5381666dca108.txt",
       "blueprint_snapshot_sha256": "1e1a344d7da21661343df954d830f847f10aa2e3742893e8fab5381666dca108",
       "objective_coverage": [
         {
@@ -26337,7 +26337,7 @@
       "review_type": "source-validation",
       "reviewed_on": "2026-10-28",
       "outcome": "passed",
-      "blueprint_snapshot_path": "data/objective-snapshots/mb-820-official-objectives.txt",
+      "blueprint_snapshot_path": "data/objective-snapshots/archive/mb-820-1e1a344d7da21661343df954d830f847f10aa2e3742893e8fab5381666dca108.txt",
       "blueprint_snapshot_sha256": "1e1a344d7da21661343df954d830f847f10aa2e3742893e8fab5381666dca108",
       "objective_coverage": [
         {
@@ -40728,6 +40728,68 @@
         "missing_or_error": 0
       },
       "notes": "Rechecked the official outline and the selected technical and learning sources. Removed an unavailable resource from the guide. The earlier full objective map is carried forward. Full material-claim and guide-wide link verification remains open. Link counts use the tracked health baseline."
+    },
+    {
+      "id": "mb-820-2026-11-23-effective-outline",
+      "exam_code": "MB-820",
+      "guide_path": "guides/MB-820-microsoft-dynamics-365-business-central-developer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-11-23",
+      "outcome": "blocked",
+      "blueprint_snapshot_path": "data/objective-snapshots/mb-820-official-objectives.txt",
+      "blueprint_snapshot_sha256": "8abdd75504bf3fba9c6979a3cefad2b95e8ee45278ea06b103ac6ed8ec27fb6c",
+      "objective_coverage": [
+        {
+          "objective_group": "Design Business Central solutions",
+          "guide_sections": [
+            "1. Design Business Central solutions"
+          ]
+        },
+        {
+          "objective_group": "Install, develop, and deploy for Business Central",
+          "guide_sections": [
+            "2. Install, develop, and deploy for Business Central"
+          ]
+        },
+        {
+          "objective_group": "Develop objects by using AL",
+          "guide_sections": [
+            "3. Develop objects by using AL"
+          ]
+        },
+        {
+          "objective_group": "Develop user experiences and logic by using AL",
+          "guide_sections": [
+            "4. Develop user experiences and logic by using AL"
+          ]
+        },
+        {
+          "objective_group": "Test and monitor AL code",
+          "guide_sections": [
+            "5. Test and monitor AL code"
+          ]
+        },
+        {
+          "objective_group": "Integrate Business Central with other applications",
+          "guide_sections": [
+            "6. Integrate Business Central with other applications"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": false,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": false,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 58,
+        "reachable": 57,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "Current public outline and affected teaching reconciled. A full new guide-wide claim and link review is pending. Link counts describe the retained source-health observations."
     }
 ]
 }

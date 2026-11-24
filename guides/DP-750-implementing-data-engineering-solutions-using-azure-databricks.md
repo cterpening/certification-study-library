@@ -957,6 +957,8 @@ These are original prompts, not recalled exam questions. Answer with decision, d
 
 ---
 
+**Related item:** For a proposed column rename, use Unity Catalog impact analysis to inspect the downstream objects that lineage records. A recently added dependency can be absent. Verify with the owner before making the change. **VERIFY CURRENT.** The November 23 feature is in beta and requires account opt-in and lineage visibility. [November product evidence](../docs/research/2026-11-23-microsoft-editions.md#databricks-lineage)
+
 ## Places to learn
 
 **Suggested practice.** Separate the notebook test result, the bundle validation and the deployment plan into three distinct pieces of release evidence. About 35–60 minutes for the notebook and bundle walkthrough on paper (editorial estimate); setup and deployment add time. [Lab 12: Implement Development Lifecycle Processes in Azure Databricks](https://microsoftlearning.github.io/DP-750T00-Implement-Data-Engineering-Solutions-using-Azure-Databricks/Instructions/Labs/12-implement-development-lifecycle-processes-in-azure-databricks.html)
