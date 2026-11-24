@@ -15,9 +15,9 @@ upcoming_change_checked: 2026-10-28
 
 > **Independent AI-assisted resource — SOURCES + PUBLIC REQUIREMENTS CHECKED; HUMAN REVIEW PENDING.** The certification page, current detailed exam pages, announced-exam placeholders, documentation, and policy links were rechecked October 28, 2026.
 
-**Current baseline:** This is a certification pathway, not one composite exam. Earn and keep **NSE 4 FortiOS** active, then pass **one** current proctored Secure Networking exam within two years: FortiManager Administrator or FortiNAC Administrator. The certification is active for two years from the second qualifying exam.<br>
-**Exam contract:** Each option has its own version, duration, question count, language, and blueprint. FortiManager currently lists 70 minutes, 30–40 questions, FortiManager 7.6.1/FortiOS 7.6; FortiNAC-F lists 60 minutes, 30–35 questions, FortiNAC-F 7.6/FortiOS 7.6. Verify the chosen live exam page before booking.<br>
-**Upcoming change:** FortiVoice Administrator and FortiAnalyzer Administrator remain **Coming soon** on their direct exam pages October 28, after the track page's Q3 2026 forecast. Do not infer availability, contract, version, or objectives from the forecast or product documentation.<br>
+**Current baseline:** This is a certification pathway, not one composite exam. Hold an active **NSE 4 FortiOS** certification and pass **one** current proctored Secure Networking exam within two years: FortiManager Administrator, FortiNAC Administrator or FortiAnalyzer Administrator. The certification is active for two years from the date the most recent certification requirement is completed.<br>
+**Exam contract:** Each option has its own version, duration, question count, language, and blueprint. FortiManager currently lists 70 minutes, 30–40 questions, FortiManager 7.6.1/FortiOS 7.6; FortiNAC-F lists 60 minutes, 30–35 questions, FortiNAC-F 7.6/FortiOS 7.6. FortiAnalyzer Administrator lists 35–40 questions in 65 minutes, in English, on FortiAnalyzer 7.6 and FortiOS 7.6. Verify the selected version before booking.<br>
+**Exam availability:** The FortiAnalyzer 7.6 Administrator exam is available. The track page forecasts FortiVoice Administrator for Q4 2026, and its direct page still says **Coming soon** as of November 23.<br>
 **Integrity:** Use official sample questions only as a format/scope illustration. Reject recalled, leaked, “real,” or guaranteed-match questions.
 
 > **September 17, 2026 contract check:** Current official exam and track pages were inspected; the exam times and prerequisite statements above reflect that check. Historical objective snapshots and full technical-review dates remain unchanged. See the [exam validation report](../docs/research/2026-09-17-exam-validation.md).
@@ -37,8 +37,8 @@ This guide teaches the shared decision model and current option lanes. It does n
 | NSE 4 FortiOS | Required and must be active | FortiOS administration foundation |
 | FortiManager Administrator | Detailed exam available | Administration 15–25%; Device manager 20–30%; Policy and objects 25–35%; Advanced configuration 10–20%; Troubleshooting 20–30% |
 | FortiNAC Administrator | Detailed exam available | Concepts/initial configuration 10–20%; Deployment/provisioning 30–40%; Integration 15–25%; Visibility/monitoring 25–35% |
-| FortiVoice Administrator | Coming soon on October 28, 2026 | No public objectives or contract yet |
-| FortiAnalyzer Administrator | Coming soon on October 28, 2026 | No public objectives or contract yet |
+| FortiVoice Administrator | Coming soon on November 23, 2026 | No public objectives or contract yet |
+| FortiAnalyzer 7.6 Administrator | Available | Initial configuration 25–35%, device management 10–20%, logs and reports management 15–25%, administration 30–40% |
 
 ## 1. Understand the credential contract
 
@@ -116,11 +116,11 @@ Use host/device views, aging, database records, rogue/classification state, logs
 
 **Related item: safety of enforcement.** In hospitals, factories, building systems, and physical access networks, quarantine can affect safety or availability. Use observation, simulation, canaries, bypass ownership, and emergency reversal.
 
-## 5. Announced FortiVoice and FortiAnalyzer options
+## 5. FortiAnalyzer Administrator and the announced FortiVoice option
 
-As of the verification date, only names and Q3 2026 availability intent are published on the certification page; the linked exam pages contain “Coming soon!” Do not manufacture domain weights, versions, question counts, or objectives. Candidates interested in these lanes can build product fundamentals from current documentation while waiting, but must rebaseline when detailed exam pages publish.
+FortiAnalyzer candidates should use its four weighted domains above. In a practice environment, register a logging device in an administrative domain, verify log retention and quota, and check that a report uses the intended domain. The FortiVoice page still lists no public exam tasks. Its Q4 2026 forecast is a prompt to recheck the direct page.
 
-For FortiVoice, useful pre-study themes include telephony architecture, dial plans, trunks, extensions, media/signaling, availability, security, monitoring, and call-quality troubleshooting. For FortiAnalyzer, useful themes include device registration, ADOMs, logging pipeline, storage/retention, event handlers, reports, FortiView, incident investigation, HA, and troubleshooting. These are preparation themes, **not claimed exam objectives**.
+For FortiVoice pre-study, review dial plans, trunks, extensions, media and signaling, availability, monitoring and call quality. For FortiAnalyzer, use its live task list to select exercises in administrator access, high availability, device registration, data retention, quotas, backups and reporting.
 
 ## Integrated scenarios
 
@@ -155,7 +155,7 @@ Use only owned or explicitly authorized nonproduction environments. Record versi
 1. Is NSE 6 in Secure Networking a single exam?
 2. Which prerequisite must remain active?
 3. What starts the certification's two-year validity?
-4. Which option exams had detailed public pages on September 2, 2026?
+4. Which three Secure Networking options have published exam details as of November 23, 2026?
 5. How should Coming-soon options be treated?
 6. What four truth surfaces can diverge in central management?
 7. What belongs in a safe managed-change record?
@@ -189,8 +189,8 @@ Use only owned or explicitly authorized nonproduction environments. Record versi
 
 1. No. It is NSE 4 plus one qualifying specialist exam within the stated window.
 2. NSE 4 FortiOS; it is required for issuance and renewal.
-3. The second qualifying exam in the completed pathway.
-4. FortiManager Administrator and FortiNAC Administrator.
+3. The date the most recent certification requirement is completed.
+4. FortiManager Administrator, FortiNAC Administrator and FortiAnalyzer Administrator.
 5. Use names/availability notes only; wait for a detailed page before relying on objectives or contract.
 6. Desired intent, FortiManager database, device running configuration, and runtime behavior.
 7. Intent, scope, delta, approval/window, preview, target/version, result, runtime tests, failure evidence, owner, and rollback.
@@ -234,7 +234,7 @@ This is a selective starting set, not a complete list and not a prescription to 
 | [NSE 6 Secure Networking course library](https://training.fortinet.com/local/library/?category=Certification:NSE_6_Secure_Networking) | Free account; labs/ILT may cost | 15–30 hr selected | Find the current FortiNAC course and future option courses; verify duration/version after sign-in |
 | [FortiNAC-F 7.6 documentation](https://docs.fortinet.com/product/fortinac-f/7.6) | Public | 20–40 hr selected | Architecture, deployment, Manager, access, integrations and operations |
 | [FortiVoice Administrator placeholder](https://training.fortinet.com/local/staticpage/view.php?page=fortivoice_administrator_exam) and [FortiVoice 8.0 documentation](https://docs.fortinet.com/product/fortivoice-enterprise/8.0) | Public | 6–12 hr fundamentals | Pre-study only; the exam page still says Coming soon, and product documentation does not establish exam scope |
-| [FortiAnalyzer Administrator placeholder](https://training.fortinet.com/local/staticpage/view.php?page=fortianalyzer_administrator_exam) and [FortiAnalyzer 7.6 docs](https://docs.fortinet.com/product/fortianalyzer/7.6) | Public | 8–16 hr fundamentals | Pre-study only; do not infer unpublished exam objectives |
+| [FortiAnalyzer 7.6 Administrator exam](https://training.fortinet.com/local/staticpage/view.php?page=fortianalyzer_administrator_exam) and [FortiAnalyzer 7.6 docs](https://docs.fortinet.com/product/fortianalyzer/7.6) | Public | 8–16 hr fundamentals | Use the weighted exam outline for scope and the product documentation for configuration practice |
 | [Fortinet Training Institute exam policy](https://helpdesk.training.fortinet.com/en/support/solutions/articles/73000672593-exam-policy-recertification) | Public | 20–40 min | Retake, reuse, renewal and timing rules |
 | [Fortinet YouTube](https://www.youtube.com/@Fortinet) | Free/YouTube | 3–8 hr selected | Official architecture and feature demonstrations; verify product version in current docs |
 | O'Reilly, Pluralsight, Udemy and other vendor courses on centralized firewall management, NAC, network automation, and troubleshooting | Subscription/purchase may apply | 8–25 hr selected | No current course aligned to this exact post-July-2026 pathway was verified; map concepts to the chosen official blueprint |
@@ -246,4 +246,4 @@ This is a selective starting set, not a complete list and not a prescription to 
 - Confirm both qualifying achievements fit within two years and NSE 4 is active.
 - Study only the chosen option's current blueprint; do not average domains across different exams.
 - Rebuild the principal labs from blank state and explain observed results, failure isolation, and rollback.
-- If choosing an announced option, wait for a detailed public exam page and completely rebaseline this guide first.
+- If choosing FortiVoice, check its direct page for the release and blueprint. If choosing FortiAnalyzer, use the published 7.6 tasks and weights.
