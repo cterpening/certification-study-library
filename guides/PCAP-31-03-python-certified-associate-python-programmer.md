@@ -1,28 +1,32 @@
 ---
 exam_code: PCAP-31-03
 vendor_id: python-institute
-official_blueprint: https://pythoninstitute.org/pcap-exam-syllabus
+official_blueprint: https://pythoninstitute.org/pcap-31-03-exam-syllabus
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: source-validated
-last_verified: 2026-10-29
-upcoming_change_status: scheduled
-upcoming_change_checked: 2026-10-29
+review_status: review-required
+last_verified: 2026-11-23
+upcoming_change_status: retirement-announced
+upcoming_change_checked: 2026-11-23
 ---
 
 # PCAP-31-03 Certified Associate Python Programmer Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were rechecked October 29, 2026; the detailed deep review remains dated September 29. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#pcap-31-03-coverage-record). The [official PCAP syllabus](https://pythoninstitute.org/pcap-exam-syllabus) is authoritative.
+**Review status.** The November 23 check covered the published exam information and the resources updated below. The previous full source review is historical. Full validation of this revision is pending.
+
+**Choosing an exam version (November 23, 2026).** This guide follows the [PCAP-31-03 syllabus](https://pythoninstitute.org/pcap-31-03-exam-syllabus). The [version-specific credential page](https://pythoninstitute.org/pcap-31-03) gives the November 30, 2027 sunset. PCAP-31-04 has a separate syllabus and credential terms. [Sources and study resources](../docs/research/2026-11-23-refresh-16.md#pcap-31-03)
+
+> **Independent AI-assisted resource — HISTORICAL SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were rechecked October 29, 2026; the detailed deep review remains dated September 29. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#pcap-31-03-coverage-record). The [official PCAP syllabus](https://pythoninstitute.org/pcap-31-03-exam-syllabus) is authoritative.
 
 **Current baseline:** PCAP-31-03, active; detailed five-section syllabus last updated March 7, 2022<br>
-**Upcoming blueprint change:** PCAP-31-04 is pending release and scheduled for October 31, 2026; PCAP-31-03 remains the active version as of October 29. Verify the purchasable code immediately before booking<br>
+**Exam versions:** PCAP-31-04 was released October 31, 2026. PCAP-31-03 remains active through November 30, 2027. This guide follows the 31-03 syllabus.<br>
 **Official delivery snapshot:** 40 questions; 65-minute exam plus 10-minute NDA/tutorial; 70% passing score; single-select, multiple-select, interactive, and scenario-based items; TestNow or Pearson VUE/OnVUE<br>
-**VERIFY CURRENT — credential snapshot:** the English page lists no formal prerequisite, five-year validity, exam from USD 295 and a 15-day failed-retake wait. The [Japanese credential page](https://pythoninstitute.org/ja/pcap) still says lifetime validity. Confirm the terms for your exam/version before purchase; this review did not inspect booking or an account.<br>
+**Credential terms:** PCAP-31-03 has no formal prerequisite and grants a lifetime credential, matching the [Japanese credential page](https://pythoninstitute.org/ja/pcap). The earlier fee check found USD 295, and the exam-specific failed-retake wait is 15 days. Confirm the price and terms for your booking channel.<br>
 
 The September 29 review manually compared all **21 numbered objectives**, grouped 5/2/3/6/5, with the public English syllabus. Direct fetching and automated monitoring failed; the retained snapshots are not a successful new hash comparison. The syllabus HTML contains an unusual per-item scoring statement, while its [dated PDF cover](https://pythoninstitute.org/assets/627e61fa6fe27591613128.pdf) reports section raw-score totals. Use the published weights and overall pass threshold; do not infer equal points per question or a number of correct answers that guarantees a pass.
 
-The [PCAP TestNow policy](https://pythoninstitute.org/pcap-testing-policies) specifies proctoring and 15 days after failure, but a generic footer says seven days. The [Pearson policy](https://pythoninstitute.org/pvue-testing-policies) also specifies 15 days for failure and prohibits retaking the same passed version. The exam-specific rule is the study baseline; confirm channel-specific terms before booking. The English page still announces Q3 2026 for version 31-04 without marking it active as of this review; the calendar alone does not establish a launch.
+The [PCAP TestNow policy](https://pythoninstitute.org/pcap-testing-policies) specifies proctoring and 15 days after failure, but a generic footer says seven days. The [Pearson policy](https://pythoninstitute.org/pvue-testing-policies) also specifies 15 days for failure and prohibits retaking the same passed version. The exam-specific rule is the study baseline; confirm channel-specific terms before booking. PCAP-31-04 launched October 31, 2026. Select the version-specific policy and syllabus for your booking.
 
 ## How to use this guide
 
@@ -693,7 +697,7 @@ Use only your own programs and disposable data. Do not seek, reproduce, or share
 24. Text streams exchange `str` with encoding/newline handling. Binary streams exchange bytes; do not pass an encoding to binary `open()`.
 25. It closes the file on normal exit, an exception or early return. Close may itself report a write failure, and successful cleanup does not establish crash durability.
 26. It can hide missing data, permissions errors or partial output and falsely report success. Catch only an expected condition you can actually recover from; otherwise propagate.
-27. Confirm the purchasable code, syllabus and channel terms. The English page still marks 31-03 active and 31-04 in development; localized validity and generic retake wording conflict. An announced quarter alone proves no launch.
+27. Confirm the exam code, syllabus and channel. Both versions are available during the transition. PCAP-31-03 gives lifetime validity and its exam-specific retake policy specifies 15 days after a failure.
 
 ## Readiness checklist
 
@@ -709,15 +713,15 @@ Use only your own programs and disposable data. Do not seek, reproduce, or share
 
 ## Source and freshness notes
 
-- The [official syllabus](https://pythoninstitute.org/pcap-exam-syllabus) controls section names, item counts, weights, scope, and its March 7, 2022 baseline.
-- The [credential page](https://pythoninstitute.org/pcap) controls current version, delivery, price, languages, validity, prerequisite, retake policy, aligned course, and the PCAP-31-04 announcement and October 31 scheduled release.
+- The [official syllabus](https://pythoninstitute.org/pcap-31-03-exam-syllabus) controls section names, item counts, weights, scope, and its March 7, 2022 baseline.
+- The [credential family page](https://pythoninstitute.org/pcap) describes PCAP-31-04. Use the 31-03 issuer reference in the [November source check](../docs/research/2026-11-23-refresh-16.md#pcap-31-03) for this guide’s exam, eligibility and validity terms.
 - The [current Python documentation index](https://docs.python.org/3/) and selected pinned 3.13 pages were read; their individual reading boundaries are in the deep-review evidence. The exam remains tied to its published outline, so newly added features do not become objectives automatically.
 - Twelve public Python blocks and the multi-file package were verified against their executed source. The core workbook passed 78 checks, with additional real package/file/language tests. Ten broader learner activities remain proposed; paid lesson interiors, authenticated UI and human review remain pending.
 - This guide paraphrases public objectives and contains original scenarios, labs, questions, and answers. It contains no recalled/live items or copied paid-course questions.
 
 ### October 29, 2026 current-source update
 
-**VERIFY CURRENT — scheduled version transition:** the current [issuer exam page](https://pythoninstitute.org/pcap) still marks PCAP-31-03 active and PCAP-31-04 pending, with an announced October 31, 2026 release date. Continue to prepare against the 31-03 syllabus until the issuer marks the new code active; do not assume existing practice content matches 31-04. The official [Python release index](https://www.python.org/doc/versions/) lists Python 3.15.2 (October 25) and the expedited Python 3.14.10 security release (October 25). These are runtime maintenance context only: the PCAP objectives do not prescribe either patch version. Python Essentials 2 remains an issuer-mapped preparation course; see the current [study-resource catalog](https://pythoninstitute.org/study-resources) for course access and time estimates, then follow the 31-03 syllabus for scope.
+**Exam versions:** The [credential family page](https://pythoninstitute.org/pcap) describes 31-04. This guide uses the 31-03 syllabus through its November 30, 2027 sunset. Match courses and practice questions to the code on your booking. The official [Python release index](https://www.python.org/doc/versions/) lists Python 3.15.2 (October 25) and the expedited Python 3.14.10 security release (October 25). These are runtime maintenance context only: the PCAP objectives do not prescribe either patch version. Python Essentials 2 remains an issuer-mapped preparation course; see the current [study-resource catalog](https://pythoninstitute.org/study-resources) for course access and time estimates, then follow the 31-03 syllabus for scope.
 
 ## Places to learn
 
@@ -725,7 +729,7 @@ This is not a complete list and is not meant to be consumed in full. Choose one 
 
 | Resource | Access | Estimated time |
 |---|---|---:|
-| [PCAP-31-03 syllabus](https://pythoninstitute.org/pcap-exam-syllabus) | Free official blueprint | 2–3 hours to map and recheck |
+| [PCAP-31-03 syllabus](https://pythoninstitute.org/pcap-31-03-exam-syllabus) | Free official blueprint | 2–3 hours to map and recheck |
 | [Python Essentials 2](https://edube.org/study/pe2) | Free official aligned course; public four-module listing read; account for study | Provider lists 58 hours, suggested 7/week |
 | [Cisco Python Essentials 2](https://www.netacad.com/courses/python-essentials-2) | Official partner link; direct response was a shell, curriculum not inspected | Author budget 40–60 hours; runtime unverified |
 | [Official PCAP practice-test compendium](https://ums.edube.org/products/1-pi-pcap-3103-pt) | Paid official practice; public product details only, no questions inspected | Author budget 5–8 hours including remediation |

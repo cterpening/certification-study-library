@@ -3961,7 +3961,7 @@ This is not a complete list and is not meant to be consumed in full. Choose one 
 
 | Resource | Access | Estimated time |
 |---|---|---:|
-| [PCEP-30-02 exam syllabus](https://pythoninstitute.org/pcep-exam-syllabus/) | Free official blueprint | 1–2 hours to map and recheck |
+| [PCEP-30-02 exam syllabus](https://pythoninstitute.org/pcep-30-02-exam-syllabus) | Free official blueprint | 1–2 hours to map and recheck |
 | [Python Essentials 1](https://edube.org/study/pe1) | Free official aligned self-study; account required | 42 hours listed |
 | [Cisco Networking Academy Python Essentials 1](https://www.netacad.com/courses/python-essentials-1) | Free official partner listing; direct response was an application shell | Current runtime not verified; earlier 30–42-hour estimate retained only as historical context |
 | [OpenEDG PCEP practice-test compendium](https://ums.edube.org/products/0-pi-pcep-3002-pt) | Paid official practice; public terms describe five launches per test and 12-month voucher redemption validity; items not accessed | 4–8 hours is an author planning estimate, not a listed runtime |
@@ -4059,7 +4059,7 @@ This is not a complete list and is not meant to be consumed in full. Choose one 
 
 | Resource | Access | Estimated time |
 |---|---|---:|
-| [PCAP-31-03 syllabus](https://pythoninstitute.org/pcap-exam-syllabus) | Free official blueprint | 2–3 hours to map and recheck |
+| [PCAP-31-03 syllabus](https://pythoninstitute.org/pcap-31-03-exam-syllabus) | Free official blueprint | 2–3 hours to map and recheck |
 | [Python Essentials 2](https://edube.org/study/pe2) | Free official aligned course; public four-module listing read; account for study | Provider lists 58 hours, suggested 7/week |
 | [Cisco Python Essentials 2](https://www.netacad.com/courses/python-essentials-2) | Official partner link; direct response was a shell, curriculum not inspected | Author budget 40–60 hours; runtime unverified |
 | [Official PCAP practice-test compendium](https://ums.edube.org/products/1-pi-pcap-3103-pt) | Paid official practice; public product details only, no questions inspected | Author budget 5–8 hours including remediation |
@@ -4241,7 +4241,7 @@ This is not a complete list and should not be consumed in full. Use the five off
 
 | Resource | Access | Estimated time |
 |---|---|---:|
-| [PCPP-32-101 syllabus](https://pythoninstitute.org/pcpp1-exam-syllabus) | Free official blueprint | 3–5 hours to map |
+| [PCPP-32-101 syllabus](https://pythoninstitute.org/pcpp1-32-101-exam-syllabus) | Free official blueprint | 3–5 hours to map |
 | [Python Advanced 1: OOP](https://edube.org/study/pcpp1-1) | Free official public outline; enrollment required for lessons | Provider: 42 hours |
 | [Python Advanced 2: PEPs](https://edube.org/study/pcpp1-2) | Free official public outline | Provider: 10 hours |
 | [Python Advanced 3: GUI](https://edube.org/study/pcpp1-3) | Free official public outline | Provider: 21 hours |
@@ -4270,8 +4270,8 @@ This is not a complete list. Choose one foundation path, reproduce the workbook,
 | [PD101 public course outline](https://edube.org/study/pd101) | Associated with PCED; Core lessons/module tests free; no formal prerequisite; English | Provider: 5 weeks at about 1 hour/day |
 | [PD101 Pro courseware](https://ums.edube.org/products/pi-pd101-courseware) | USD 49 public offer; interactive work, quizzes/labs/projects and diploma; minimum 12-month access after redemption; no enrolled interior inspected | Provider: same 5-week course outline; individual progress varies |
 | [Vendor PD101 overview](https://pythoninstitute.org/python-for-data-analytics-101) | Partly readable indexed page; public Edube/store bodies provide the fuller observed details | Do not infer lesson completion or unrestricted free access to Pro features |
-| [Standalone PCED practice kit](https://ums.edube.org/products/pced-practice-test) | USD 29, two tests, up to 10 launches each; practice only; current questions not inspected | Author remediation budget: 4–7 hours |
-| [Exam/retake/practice bundle](https://ums.edube.org/products/0-pi-pced-3002-erpt) | USD 95; public practice limit says five launches each; confirm purchased entitlement | No measured exam-preparation duration |
+| [PCED issuer guidance on practice tests](https://pythoninstitute.org/pced) | The issuer lists a practice option. Current standalone price and launch limits remain unverified. | Allow 4–7 hours for practice and remediation (library estimate). |
+| [PCED issuer guidance on exam bundles](https://pythoninstitute.org/pced) | Check whether the available bundle includes an exam attempt, a retake and practice access. Current entitlements remain unverified. | No measured exam-preparation duration |
 | [NumPy quickstart](https://numpy.org/doc/stable/user/quickstart.html) | Free primary documentation; select arrays, aggregation, indexing and copies | Author budget: 4–8 hours |
 | [Cisco Data Analytics Essentials](https://www.netacad.com/courses/data-analytics-essentials) | Response was a short application shell; current course contents/duration not verified | Verify current listing; prior 30-hour estimate removed |
 | [Python for Data Analysis, 3rd ed.](https://wesmckinney.com/book/) | Complete landing read; open web edition, August 2022, updated for pandas 2.0/Python 3.10 in April 2023; broader than PCED; chapters not reviewed | Author selective-reading budget: 15–25 hours |
@@ -4290,7 +4290,7 @@ This is not a complete list and is not meant to be consumed in full. Times label
 | [PCAD syllabus](https://pythoninstitute.org/pcad-exam-syllabus) and this objective map | Free canonical scope; manual comparison after retrieval failure | Author budget: 2–3 hours to map gaps |
 | [Cisco sequence on the exam page](https://pythoninstitute.org/pcad) | Intro to Data Science → Data Science Essentials with Python → Data Analytics Essentials modules 1/2/3/5/6/7/9/10; direct [catalog](https://www.netacad.com/courses/data-analytics-essentials) returned only an application shell | Current course durations/access unverified; earlier 45–70 hour claim removed |
 | [PD101 public outline](https://edube.org/study/pd101) | Free Core lessons/module tests, USD 49 Full/Pro interactive work; explicitly PCED-aligned foundation | Provider: five weeks, about one hour/day; not a complete PCAD preparation claim |
-| [PCAD standalone practice kit](https://ums.edube.org/products/1-pi-pcad-3102-pt) | USD 49, two tests, up to 10 launches each, 12-month voucher; no exam included; account/profile distinction unresolved | Provider exam simulations; author budget: two sittings plus explanation-led remediation |
+| [PCAD issuer guidance on practice](https://pythoninstitute.org/pcad) | The issuer advertises a practice option. Current kit access, price and launch limits remain unverified. | Allow time for two study sessions and for reviewing weak topics (library estimate). |
 | [Python for Data Analysis, third edition](https://wesmckinney.com/book/) | Free author-hosted web edition; landing updated for Pandas 2.0/Python 3.10, so compare newer Pandas 3 behavior | Author budget: 15–25 selected hours; chapters not audited here |
 | [Pandas getting started](https://pandas.pydata.org/docs/getting_started/) and linked contracts above | Free primary documentation; companion still needs runtime execution | Author budget: 6–10 hours with original tables |
 | [Introduction to Statistical Learning](https://www.statlearning.com/) | Retrieval failed; current download/access and chapters unverified | Current duration unverified; use only after inspecting the resource |

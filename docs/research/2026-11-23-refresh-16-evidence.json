@@ -1,0 +1,859 @@
+{
+  "date": "2026-11-23",
+  "scope": "AI research into official objectives, selected technical references and learning resources. Individual exam delivery, private course contents and live product testing were outside this review.",
+  "exams": [
+    {
+      "code": "PCEP-30-02",
+      "exam": {
+        "code": "PCEP-30-02",
+        "observation": "The issuer's version-specific page explicitly retains PCEP-30-02 until November 30, 2027. PCEP-30-03 released October 31, 2026. Generic family syllabus changed to the newer version, explaining the extraction error. This does not revoke previously earned credentials. Objective monitor reported: ValueError: Could not find the Python Institute exam syllabus",
+        "urls": [
+          "https://pythoninstitute.org/pcep/",
+          "https://pythoninstitute.org/pcep-exam-syllabus/",
+          "https://pythoninstitute.org/pcep-30-02",
+          "https://pythoninstitute.org/pcep-30-02-exam-syllabus"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Pin old guide and monitor to the version-specific official syllabus, add the successor as its own exam version, and schedule the November 2027 sunset.",
+        "monitor": "error",
+        "accepted_objective_sha256": "fc0a0b67b1f15a4430075b889978a82e162d98642f0b822768bc3796c322ca57",
+        "candidate_objective_sha256": null,
+        "catalog_matches": {
+          "https://pythoninstitute.org/pcep/": {
+            "sources": [
+              "pcep-certification-page"
+            ],
+            "candidates": []
+          },
+          "https://pythoninstitute.org/pcep-exam-syllabus/": {
+            "sources": [
+              "pcep-30-02-syllabus"
+            ],
+            "candidates": []
+          },
+          "https://pythoninstitute.org/pcep-30-02": {
+            "sources": [
+              "pcep-30-02-version-specific-credential"
+            ],
+            "candidates": []
+          },
+          "https://pythoninstitute.org/pcep-30-02-exam-syllabus": {
+            "sources": [
+              "pcep-30-02-version-specific-syllabus"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "PCEP-30-02",
+        "observation": "Decimal fractions such as 0.1 may have no exact finite binary floating-point representation, affecting direct equality checks.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.python.org/3.13/tutorial/floatingpoint.html"
+        ],
+        "source_ids": [
+          "python313-float"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "PCEP-30-02",
+        "observation": "Python Essentials 1 offers the first course in the general-purpose PCEP sequence, with programming foundations and four modules.",
+        "urls": [
+          "https://edube.org/study/pe1"
+        ],
+        "source_id": "openedg-python-essentials-1",
+        "resource": "Python Essentials - Part 1",
+        "access_model": "free-account",
+        "time_basis": "42 hours, publisher recommendation of 7 hours per week.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "error",
+      "accepted_on_start": "fc0a0b67b1f15a4430075b889978a82e162d98642f0b822768bc3796c322ca57",
+      "candidate": null,
+      "version_specific_recheck": {
+        "url": "https://pythoninstitute.org/pcep-30-02-exam-syllabus",
+        "previous_sha256": "fc0a0b67b1f15a4430075b889978a82e162d98642f0b822768bc3796c322ca57",
+        "current_sha256": "fc0a0b67b1f15a4430075b889978a82e162d98642f0b822768bc3796c322ca57",
+        "objectives_changed": false,
+        "status_changed": true,
+        "official_status": {
+          "skills_versions": [
+            "Exam: PCEP-30-02",
+            "Status: ACTIVE until November 30, 2027 (Sunset Date)",
+            "Last updated: February 23, 2022",
+            "Aligned with Exam PCEP-30-02"
+          ],
+          "upcoming_announcements": []
+        }
+      },
+      "successor": {
+        "code": "PCEP-30-03",
+        "title": "PCEP – Certified Entry-Level Python Programmer",
+        "vendor": "Python Institute",
+        "status": "active",
+        "is_in_registered_nov23_seed_or_published_set": false,
+        "released_on": "2026-10-31",
+        "canonical_public_credential_url": "https://pythoninstitute.org/pcep",
+        "canonical_current_blueprint_url": "https://pythoninstitute.org/pcep-exam-syllabus",
+        "blueprint_revised": "2026-11-02",
+        "version_specific_predecessor_notice": "https://pythoninstitute.org/pcep-30-02",
+        "stable_version_comparison_pdf": "https://openedg.org/assets/6aec777b9e9e6373633142.pdf",
+        "previous_version_last_available": "2027-11-30",
+        "evidence": "The version-specific previous exam page explicitly says the new code has been released and the previous exam remains active until sunset. The current credential and syllabus name the requested new code. OpenEDG's linked PDF compares those two precise versions.",
+        "limits": "Current public syllabus aliases do not encode the code in the URL; bind accepted scope to the displayed code and snapshot hash. Guessed code-suffixed credential and syllabus paths returned 404. No store checkout or scheduling was performed.",
+        "action": "Add active version-specific seed as a separate intake row. Keep the predecessor and its dated sunset. New guide, source gate and semantic audit require their own evidence."
+      },
+      "supplemental_evidence": [
+        {
+          "observation": "The version-specific syllabus reproduces the accepted objective digest. The scoped monitor detected a lifecycle-only change. The previous exam remains available through November 30, 2027. PCEP-30-03 released on 2026-10-31.",
+          "urls": [
+            "https://pythoninstitute.org/pcep-30-02",
+            "https://pythoninstitute.org/pcep-30-02-exam-syllabus",
+            "https://pythoninstitute.org/pcep-exam-syllabus",
+            "https://openedg.org/assets/6aec777b9e9e6373633142.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "PCAP-31-03",
+      "exam": {
+        "code": "PCAP-31-03",
+        "observation": "The issuer's version-specific page explicitly retains PCAP-31-03 until November 30, 2027. PCAP-31-04 released October 31, 2026. Generic family syllabus changed to the newer version, explaining the extraction error. This does not revoke previously earned credentials. Objective monitor reported: ValueError: Could not find the Python Institute exam syllabus",
+        "urls": [
+          "https://pythoninstitute.org/pcap",
+          "https://pythoninstitute.org/pcap-exam-syllabus",
+          "https://pythoninstitute.org/pcap-31-03",
+          "https://pythoninstitute.org/pcap-31-03-exam-syllabus"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Pin old guide and monitor to the version-specific official syllabus, add the successor as its own exam version, and schedule the November 2027 sunset.",
+        "monitor": "error",
+        "accepted_objective_sha256": "49589f9a3aaa766a2b2c1a640ac5dbbf7842c01d2517397519ab35ac86a060b0",
+        "candidate_objective_sha256": null,
+        "catalog_matches": {
+          "https://pythoninstitute.org/pcap": {
+            "sources": [
+              "pcap-certification-page"
+            ],
+            "candidates": []
+          },
+          "https://pythoninstitute.org/pcap-exam-syllabus": {
+            "sources": [
+              "pcap-31-03-syllabus"
+            ],
+            "candidates": []
+          },
+          "https://pythoninstitute.org/pcap-31-03": {
+            "sources": [
+              "pcap-31-03-version-specific-credential"
+            ],
+            "candidates": []
+          },
+          "https://pythoninstitute.org/pcap-31-03-exam-syllabus": {
+            "sources": [
+              "pcap-31-03-version-specific-syllabus"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "PCAP-31-03",
+        "observation": "A finally clause performs cleanup before an outstanding exception is reraised; control flow inside finally can suppress it.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.python.org/3.13/reference/compound_stmts.html"
+        ],
+        "source_ids": [
+          "python313-compound"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "PCAP-31-03",
+        "observation": "Python Essentials 2 explicitly targets PCAP and covers modules, OOP and related concepts.",
+        "urls": [
+          "https://edube.org/study/pe2"
+        ],
+        "source_id": "openedg-python-essentials-2",
+        "resource": "Python Essentials - Part 2",
+        "access_model": "free-account",
+        "time_basis": "58 hours, provider figure; older 40–50 hour library estimates differ.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "State the 58-hour Edube estimate separately from any independent plan."
+      },
+      "monitor_outcome": "error",
+      "accepted_on_start": "49589f9a3aaa766a2b2c1a640ac5dbbf7842c01d2517397519ab35ac86a060b0",
+      "candidate": null,
+      "version_specific_recheck": {
+        "url": "https://pythoninstitute.org/pcap-31-03-exam-syllabus",
+        "previous_sha256": "49589f9a3aaa766a2b2c1a640ac5dbbf7842c01d2517397519ab35ac86a060b0",
+        "current_sha256": "49589f9a3aaa766a2b2c1a640ac5dbbf7842c01d2517397519ab35ac86a060b0",
+        "objectives_changed": false,
+        "status_changed": true,
+        "official_status": {
+          "skills_versions": [
+            "Exam: PCAP-31-03",
+            "Status: ACTIVE until November 30, 2027 (Sunset Date)",
+            "Last updated: March 7, 2022",
+            "Aligned with Exam PCAP-31-03"
+          ],
+          "upcoming_announcements": []
+        }
+      },
+      "successor": {
+        "code": "PCAP-31-04",
+        "title": "PCAP – Certified Associate Python Programmer",
+        "vendor": "Python Institute",
+        "status": "active",
+        "is_in_registered_nov23_seed_or_published_set": false,
+        "released_on": "2026-10-31",
+        "canonical_public_credential_url": "https://pythoninstitute.org/pcap",
+        "canonical_current_blueprint_url": "https://pythoninstitute.org/pcap-exam-syllabus",
+        "blueprint_revised": "2026-11-02",
+        "version_specific_predecessor_notice": "https://pythoninstitute.org/pcap-31-03",
+        "stable_version_comparison_pdf": "https://openedg.org/assets/6aec778f8f52c323184479.pdf",
+        "previous_version_last_available": "2027-11-30",
+        "evidence": "The version-specific previous exam page explicitly says the new code has been released and the previous exam remains active until sunset. The current credential and syllabus name the requested new code. OpenEDG's linked PDF compares those two precise versions.",
+        "limits": "Current public syllabus aliases do not encode the code in the URL; bind accepted scope to the displayed code and snapshot hash. Guessed code-suffixed credential and syllabus paths returned 404. No store checkout or scheduling was performed.",
+        "action": "Add active version-specific seed as a separate intake row. Keep the predecessor and its dated sunset. New guide, source gate and semantic audit require their own evidence."
+      },
+      "supplemental_evidence": [
+        {
+          "observation": "The version-specific syllabus reproduces the accepted objective digest. The scoped monitor detected a lifecycle-only change. The previous exam remains available through November 30, 2027. PCAP-31-04 released on 2026-10-31.",
+          "urls": [
+            "https://pythoninstitute.org/pcap-31-03",
+            "https://pythoninstitute.org/pcap-31-03-exam-syllabus",
+            "https://pythoninstitute.org/pcap-exam-syllabus",
+            "https://openedg.org/assets/6aec778f8f52c323184479.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "PCPP-32-101",
+      "exam": {
+        "code": "PCPP-32-101",
+        "observation": "The issuer's version-specific page explicitly retains PCPP1-32-101 until November 30, 2027. PCPP1-32-102 released November 9, 2026. Generic family syllabus changed to the newer version, explaining the extraction error. This does not revoke previously earned credentials. Objective monitor reported: ValueError: Could not find the Python Institute exam syllabus",
+        "urls": [
+          "https://pythoninstitute.org/pcpp1",
+          "https://pythoninstitute.org/pcpp1-exam-syllabus",
+          "https://pythoninstitute.org/pcpp1-32-101",
+          "https://pythoninstitute.org/pcpp1-32-101-exam-syllabus"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Pin old guide and monitor to the version-specific official syllabus, add the successor as its own exam version, and schedule the November 2027 sunset.",
+        "monitor": "error",
+        "accepted_objective_sha256": "899426a902f78aba1471211f0c1eeace8016a66eb8dac3407d013d97cdaafcd6",
+        "candidate_objective_sha256": null,
+        "catalog_matches": {
+          "https://pythoninstitute.org/pcpp1": {
+            "sources": [
+              "pcpp1-certification-page"
+            ],
+            "candidates": []
+          },
+          "https://pythoninstitute.org/pcpp1-exam-syllabus": {
+            "sources": [
+              "pcpp-32-101-syllabus"
+            ],
+            "candidates": []
+          },
+          "https://pythoninstitute.org/pcpp1-32-101": {
+            "sources": [
+              "pcpp-32-101-version-specific-credential"
+            ],
+            "candidates": []
+          },
+          "https://pythoninstitute.org/pcpp1-32-101-exam-syllabus": {
+            "sources": [
+              "pcpp-32-101-version-specific-syllabus"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "PCPP-32-101",
+        "observation": "PEP 484 describes type hints for tooling; annotations do not enforce type contracts at runtime by default.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://peps.python.org/pep-0484/"
+        ],
+        "source_ids": [
+          "pep-484-type-hints"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "PCPP-32-101",
+        "observation": "Advanced Perspective of Classes and Object-Oriented Programming is the first course in a five-course series. Its landing uses CSPP1 terminology; verify issuer exam code separately.",
+        "urls": [
+          "https://edube.org/study/pcpp1-1"
+        ],
+        "source_id": "openedg-python-advanced-1",
+        "resource": "Edube Python Advanced 1",
+        "access_model": "public",
+        "time_basis": "42 hours for this one course, publisher.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "error",
+      "accepted_on_start": "899426a902f78aba1471211f0c1eeace8016a66eb8dac3407d013d97cdaafcd6",
+      "candidate": null,
+      "version_specific_recheck": {
+        "url": "https://pythoninstitute.org/pcpp1-32-101-exam-syllabus",
+        "previous_sha256": "899426a902f78aba1471211f0c1eeace8016a66eb8dac3407d013d97cdaafcd6",
+        "current_sha256": "899426a902f78aba1471211f0c1eeace8016a66eb8dac3407d013d97cdaafcd6",
+        "objectives_changed": false,
+        "status_changed": true,
+        "official_status": {
+          "skills_versions": [
+            "Exam: PCPP1-32-101",
+            "Status: ACTIVE until November 30, 2027 (Sunset Date)",
+            "Last updated: March 11, 2022",
+            "Aligned with Exam PCPP-32-101"
+          ],
+          "upcoming_announcements": []
+        }
+      },
+      "successor": {
+        "code": "PCPP1-32-102",
+        "title": "PCPP1 – Certified Professional Python Programmer: Software Development",
+        "vendor": "Python Institute",
+        "status": "active",
+        "is_in_registered_nov23_seed_or_published_set": false,
+        "released_on": "2026-11-09",
+        "canonical_public_credential_url": "https://pythoninstitute.org/pcpp1",
+        "canonical_current_blueprint_url": "https://pythoninstitute.org/pcpp1-exam-syllabus",
+        "blueprint_revised": "2026-11-06",
+        "version_specific_predecessor_notice": "https://pythoninstitute.org/pcpp1-32-101",
+        "stable_version_comparison_pdf": "https://pythoninstitute.org/assets/6aedfd1a733a0843034573.pdf",
+        "previous_version_last_available": "2027-11-30",
+        "evidence": "The version-specific previous exam page explicitly says the new code has been released and the previous exam remains active until sunset. The current credential and syllabus name the requested new code. OpenEDG's linked PDF compares those two precise versions.",
+        "limits": "Current public syllabus aliases do not encode the code in the URL; bind accepted scope to the displayed code and snapshot hash. Guessed code-suffixed credential and syllabus paths returned 404. No store checkout or scheduling was performed.",
+        "action": "Add active version-specific seed as a separate intake row. Keep the predecessor and its dated sunset. New guide, source gate and semantic audit require their own evidence."
+      },
+      "supplemental_evidence": [
+        {
+          "observation": "The version-specific syllabus reproduces the accepted objective digest. The scoped monitor detected a lifecycle-only change. The previous exam remains available through November 30, 2027. PCPP1-32-102 released on 2026-11-09.",
+          "urls": [
+            "https://pythoninstitute.org/pcpp1-32-101",
+            "https://pythoninstitute.org/pcpp1-32-101-exam-syllabus",
+            "https://pythoninstitute.org/pcpp1-exam-syllabus",
+            "https://pythoninstitute.org/assets/6aedfd1a733a0843034573.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "PCED-30-02",
+      "exam": {
+        "code": "PCED-30-02",
+        "observation": "PCED-30-02 issuer credential and syllabus still identify the relevant exam. The accepted scope remains consistent with this check. Both monitored objective text and status matched accepted records.",
+        "urls": [
+          "https://pythoninstitute.org/pced",
+          "https://pythoninstitute.org/pced-exam-syllabus"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Keep the version-specific retained baseline pending any meaningful scope change.",
+        "monitor": "unchanged",
+        "accepted_objective_sha256": "27c6f07ec4b1e1063e5cbb6effd00e13406e15d8ee54a2e748c50dff86c24b90",
+        "candidate_objective_sha256": "27c6f07ec4b1e1063e5cbb6effd00e13406e15d8ee54a2e748c50dff86c24b90",
+        "catalog_matches": {
+          "https://pythoninstitute.org/pced": {
+            "sources": [
+              "pced-certification-page"
+            ],
+            "candidates": []
+          },
+          "https://pythoninstitute.org/pced-exam-syllabus": {
+            "sources": [
+              "pced-30-02-syllabus"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "PCED-30-02",
+        "observation": "pandas 3.0 introduced consistent copy-on-write semantics, changing chained-assignment behavior.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://pandas.pydata.org/pandas-docs/version/3.0/whatsnew/v3.0.0.html"
+        ],
+        "source_ids": [
+          "pandas-30-release-notes"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "PCED-30-02",
+        "observation": "Python Institute PD101 offers a beginner Python/data analysis route mapped to PCED, with free and premium editions.",
+        "urls": [
+          "https://pythoninstitute.org/python-for-data-analytics-101"
+        ],
+        "source_id": "pced-pd101-vendor",
+        "resource": "Python Institute PD101 course",
+        "access_model": "public",
+        "time_basis": "No current publisher runtime established for this route.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Check which package includes the desired activities."
+      },
+      "monitor_outcome": "unchanged",
+      "accepted_on_start": "27c6f07ec4b1e1063e5cbb6effd00e13406e15d8ee54a2e748c50dff86c24b90",
+      "candidate": "27c6f07ec4b1e1063e5cbb6effd00e13406e15d8ee54a2e748c50dff86c24b90"
+    },
+    {
+      "code": "PCAD-31-02",
+      "exam": {
+        "code": "PCAD-31-02",
+        "observation": "PCAD-31-02 issuer credential and syllabus still identify the relevant exam. The accepted scope remains consistent with this check. Both monitored objective text and status matched accepted records.",
+        "urls": [
+          "https://pythoninstitute.org/pcad",
+          "https://pythoninstitute.org/pcad-exam-syllabus"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Keep the version-specific retained baseline pending any meaningful scope change.",
+        "monitor": "unchanged",
+        "accepted_objective_sha256": "c0e03d205f2bb78e1902508ab699839dee11825423eebe0da9a68832ca657275",
+        "candidate_objective_sha256": "c0e03d205f2bb78e1902508ab699839dee11825423eebe0da9a68832ca657275",
+        "catalog_matches": {
+          "https://pythoninstitute.org/pcad": {
+            "sources": [
+              "pcad-certification-page"
+            ],
+            "candidates": []
+          },
+          "https://pythoninstitute.org/pcad-exam-syllabus": {
+            "sources": [
+              "pcad-31-02-syllabus"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "PCAD-31-02",
+        "observation": "SciPy bootstrap constructs a confidence interval around a specified statistic using resampling; the interval is interpreted across repeated samples.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.bootstrap.html"
+        ],
+        "source_ids": [
+          "scipy-bootstrap"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "PCAD-31-02",
+        "observation": "pandas Getting Started provides introductory tutorials and a brief overview; it covers the tabular-data component specifically.",
+        "urls": [
+          "https://pandas.pydata.org/docs/getting_started/"
+        ],
+        "source_id": "pandas-getting-started",
+        "resource": "Pandas Getting Started",
+        "access_model": "public",
+        "time_basis": "6–10 hours for selected examples and original data exercises, library estimate.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "unchanged",
+      "accepted_on_start": "c0e03d205f2bb78e1902508ab699839dee11825423eebe0da9a68832ca657275",
+      "candidate": "c0e03d205f2bb78e1902508ab699839dee11825423eebe0da9a68832ca657275"
+    },
+    {
+      "code": "PCET-30-01",
+      "exam": {
+        "code": "PCET-30-01",
+        "observation": "PCET-30-01 issuer credential and syllabus still identify the relevant exam. Public syllabus is accessible despite automated extraction failure. Objective monitor reported: ValueError: Could not find the Python Institute exam syllabus",
+        "urls": [
+          "https://pythoninstitute.org/pcet",
+          "https://pythoninstitute.org/pcet-exam-syllabus"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Keep the version-specific retained baseline pending any meaningful scope change.",
+        "monitor": "manual-review",
+        "accepted_objective_sha256": "2ba098e2104bb457258687cdcd07afcc3a531ab146c27b0022a9bebb5d793aec",
+        "candidate_objective_sha256": null,
+        "catalog_matches": {
+          "https://pythoninstitute.org/pcet": {
+            "sources": [
+              "pcet-certification-page"
+            ],
+            "candidates": []
+          },
+          "https://pythoninstitute.org/pcet-exam-syllabus": {
+            "sources": [
+              "pcet-30-01-syllabus"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "PCET-30-01",
+        "observation": "coverage.py separates branch measurement, enabled with --branch, from statement coverage.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://coverage.readthedocs.io/en/latest/branch.html"
+        ],
+        "source_ids": [
+          "coverage-branch"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "PCET-30-01",
+        "observation": "PT101 describes levels of software testing and debugging, with separate core and premium access.",
+        "urls": [
+          "https://pythoninstitute.org/python-for-testing-101"
+        ],
+        "source_id": "pcet-pt101-course-page",
+        "resource": "Python for Testing 101 (PT101)",
+        "access_model": "public",
+        "time_basis": "4–5 weeks, provider course page; earlier directory listed 20–30 hours.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "manual-review",
+      "accepted_on_start": "2ba098e2104bb457258687cdcd07afcc3a531ab146c27b0022a9bebb5d793aec",
+      "candidate": null
+    },
+    {
+      "code": "PCAT-31-01",
+      "exam": {
+        "code": "PCAT-31-01",
+        "observation": "PCAT-31-01 issuer credential and syllabus still identify the relevant exam. Public syllabus is accessible despite automated extraction failure. Objective monitor reported: ValueError: Could not find the Python Institute exam syllabus",
+        "urls": [
+          "https://pythoninstitute.org/pcat",
+          "https://pythoninstitute.org/pcat-exam-syllabus"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Keep the version-specific retained baseline pending any meaningful scope change.",
+        "monitor": "manual-review",
+        "accepted_objective_sha256": "d93b7e4da42b76c0263e9ea2964b023f65d3aa2ac20d43384e0686e0dca7b724",
+        "candidate_objective_sha256": null,
+        "catalog_matches": {
+          "https://pythoninstitute.org/pcat": {
+            "sources": [
+              "pcat-certification-page"
+            ],
+            "candidates": []
+          },
+          "https://pythoninstitute.org/pcat-exam-syllabus": {
+            "sources": [
+              "pcat-31-01-syllabus"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "PCAT-31-01",
+        "observation": "unittest.mock.patch must replace the name where the code under test looks it up.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.python.org/3.13/library/unittest.mock.html"
+        ],
+        "source_ids": [
+          "python313-unittest-mock"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "PCAT-31-01",
+        "observation": "Six-module PT102 provides more advanced applied software-testing practice.",
+        "urls": [
+          "https://pythoninstitute.org/python-for-testing-102"
+        ],
+        "source_id": "openedg-pt102-course",
+        "resource": "Python for Testing 102 (PT102)",
+        "access_model": "public",
+        "time_basis": "4–5 weeks, course page; earlier directory listed 30–40 hours.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "manual-review",
+      "accepted_on_start": "d93b7e4da42b76c0263e9ea2964b023f65d3aa2ac20d43384e0686e0dca7b724",
+      "candidate": null
+    },
+    {
+      "code": "PCES-30-01",
+      "exam": {
+        "code": "PCES-30-01",
+        "observation": "Official PCES syllabus retains August 21, 2025; four blocks/45 items. Candidate extraction omits manual metadata. Monitor detected an objective-text difference.",
+        "urls": [
+          "https://pythoninstitute.org/pces",
+          "https://pythoninstitute.org/pces-exam-syllabus"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Keep the version-specific retained baseline pending any meaningful scope change.",
+        "monitor": "changed",
+        "accepted_objective_sha256": "20acb805135538b41982013c936788e9324272472a840145161037a56ef6f38f",
+        "candidate_objective_sha256": "9c7563fb8214795b21ef8cbc32443363213446a1de011dbbddf837e52f48996b",
+        "catalog_matches": {
+          "https://pythoninstitute.org/pces": {
+            "sources": [
+              "pces-certification-page"
+            ],
+            "candidates": []
+          },
+          "https://pythoninstitute.org/pces-exam-syllabus": {
+            "sources": [
+              "pces-30-01-syllabus"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "PCES-30-01",
+        "observation": "The ssl library offers parameterized default contexts for client/server authentication; verification settings should follow the connection role.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.python.org/3.13/library/ssl.html"
+        ],
+        "source_ids": [
+          "python313-ssl"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "PCES-30-01",
+        "observation": "The PCES credential still describes the official test as planned in its FAQ while listing a purchasable product elsewhere. The linked store search displayed a shell.",
+        "urls": [
+          "https://pythoninstitute.org/pces",
+          "https://ums.edube.org/store?q=pces"
+        ],
+        "source_id": null,
+        "resource": "PCES-30-01 credential prep listing",
+        "access_model": "not established",
+        "time_basis": "No current publisher runtime established for this route.",
+        "confidence": "Limited for product availability.",
+        "recommendation": "Describe purchasing status as unconfirmed until an exact product listing is verified."
+      },
+      "monitor_outcome": "changed",
+      "accepted_on_start": "20acb805135538b41982013c936788e9324272472a840145161037a56ef6f38f",
+      "candidate": "9c7563fb8214795b21ef8cbc32443363213446a1de011dbbddf837e52f48996b"
+    },
+    {
+      "code": "PCEA-30-01",
+      "exam": {
+        "code": "PCEA-30-01",
+        "observation": "PCEA-30-01 issuer credential and syllabus still identify the relevant exam. The accepted scope remains consistent with this check. Both monitored objective text and status matched accepted records.",
+        "urls": [
+          "https://pythoninstitute.org/pcea",
+          "https://pythoninstitute.org/pcea-exam-syllabus"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Keep the version-specific retained baseline pending any meaningful scope change.",
+        "monitor": "unchanged",
+        "accepted_objective_sha256": "979e1a08fc3b397566e6549bae8cbfc70238b37d5652f54fadde55f1011c3598",
+        "candidate_objective_sha256": "979e1a08fc3b397566e6549bae8cbfc70238b37d5652f54fadde55f1011c3598",
+        "catalog_matches": {
+          "https://pythoninstitute.org/pcea": {
+            "sources": [
+              "pcea-certification-page"
+            ],
+            "candidates": []
+          },
+          "https://pythoninstitute.org/pcea-exam-syllabus": {
+            "sources": [
+              "pcea-30-01-syllabus"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "PCEA-30-01",
+        "observation": "Python subprocess raises TimeoutExpired on expiration; timeout handling depends on whether the caller used run or lower-level Popen methods.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.python.org/3.13/library/subprocess.html"
+        ],
+        "source_ids": [
+          "python313-subprocess"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "PCEA-30-01",
+        "observation": "Python Essentials 1 explicitly targets PCEP and offers optional background for PCEA. One provider card lists 6–8 weeks.",
+        "urls": [
+          "https://pythoninstitute.org/python-essentials-1"
+        ],
+        "source_id": "python-essentials-1",
+        "resource": "Python Essentials 1",
+        "access_model": "public",
+        "time_basis": "6–8 weeks in the provider's card; preserve separately sourced estimates.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Label it general Python foundation."
+      },
+      "monitor_outcome": "unchanged",
+      "accepted_on_start": "979e1a08fc3b397566e6549bae8cbfc70238b37d5652f54fadde55f1011c3598",
+      "candidate": "979e1a08fc3b397566e6549bae8cbfc70238b37d5652f54fadde55f1011c3598"
+    },
+    {
+      "code": "PCEI-30-01",
+      "exam": {
+        "code": "PCEI-30-01",
+        "observation": "Official PCEI syllabus retains December 11, 2025; six modules, 36 items. Candidate formatting omits prior manual capture metadata. Monitor detected an objective-text difference.",
+        "urls": [
+          "https://pythoninstitute.org/pcei",
+          "https://pythoninstitute.org/pcei-exam-syllabus"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Keep the version-specific retained baseline pending any meaningful scope change.",
+        "monitor": "changed",
+        "accepted_objective_sha256": "e5fdda2adf0c6e0b035be96b13269a63f7ca7aaf52183c123a3d2af3a9a1301e",
+        "candidate_objective_sha256": "53cd163d07a339c233106733b891c97d723dbfa463a9eab7589b0df3a97ef0ec",
+        "catalog_matches": {
+          "https://pythoninstitute.org/pcei": {
+            "sources": [
+              "pcei-certification-page"
+            ],
+            "candidates": []
+          },
+          "https://pythoninstitute.org/pcei-exam-syllabus": {
+            "sources": [
+              "pcei-30-01-syllabus"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "PCEI-30-01",
+        "observation": "Google's classification material distinguishes the operating threshold from evaluation metrics such as ROC/AUC.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://developers.google.com/machine-learning/crash-course/classification"
+        ],
+        "source_ids": [
+          "google-mlcc-classification"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "PCEI-30-01",
+        "observation": "The PCEI certification still describes PAI101 as in development and links an advertised practice product. Public reader could not access the specific store destination.",
+        "urls": [
+          "https://pythoninstitute.org/pcei",
+          "https://ums.edube.org/products/pcei-exam-prep"
+        ],
+        "source_id": null,
+        "resource": "PCEI-30-01 credential prep listing",
+        "access_model": "not established",
+        "time_basis": "No current publisher runtime established for this route.",
+        "confidence": "Limited for purchase availability.",
+        "recommendation": "Retain the access discrepancy and avoid promising that the test can be purchased."
+      },
+      "monitor_outcome": "changed",
+      "accepted_on_start": "e5fdda2adf0c6e0b035be96b13269a63f7ca7aaf52183c123a3d2af3a9a1301e",
+      "candidate": "53cd163d07a339c233106733b891c97d723dbfa463a9eab7589b0df3a97ef0ec"
+    }
+  ],
+  "review_inputs": [
+    {
+      "code": "PCEP-30-02",
+      "guide": "guides/PCEP-30-02-python-certified-entry-level-programmer.md",
+      "guide_sha256_lf": "5341f022e670b5fa4aedcf72637c7e20f50966d119ee01cd3fb789965911dd4b",
+      "objective": "data/objective-snapshots/pcep-30-02-official-objectives.txt",
+      "objective_sha256": "fc0a0b67b1f15a4430075b889978a82e162d98642f0b822768bc3796c322ca57"
+    },
+    {
+      "code": "PCAP-31-03",
+      "guide": "guides/PCAP-31-03-python-certified-associate-python-programmer.md",
+      "guide_sha256_lf": "d31cb11359fbc074806cd30796984f35c6984fb6bab6ae34058f8987110328f2",
+      "objective": "data/objective-snapshots/pcap-31-03-official-objectives.txt",
+      "objective_sha256": "49589f9a3aaa766a2b2c1a640ac5dbbf7842c01d2517397519ab35ac86a060b0"
+    },
+    {
+      "code": "PCPP-32-101",
+      "guide": "guides/PCPP-32-101-python-certified-professional-programmer-level-1.md",
+      "guide_sha256_lf": "babfb70a1e1bb533eb5d9c454d566a83e9cc29489b0ae0c7bff22aab709a144c",
+      "objective": "data/objective-snapshots/pcpp-32-101-official-objectives.txt",
+      "objective_sha256": "899426a902f78aba1471211f0c1eeace8016a66eb8dac3407d013d97cdaafcd6"
+    },
+    {
+      "code": "PCED-30-02",
+      "guide": "guides/PCED-30-02-python-certified-entry-level-data-analyst.md",
+      "guide_sha256_lf": "4914a1d141c09c9991c264bb55970f5476edc5ab7c8c35bce2072352fe6b277f",
+      "objective": "data/objective-snapshots/pced-30-02-official-objectives.txt",
+      "objective_sha256": "27c6f07ec4b1e1063e5cbb6effd00e13406e15d8ee54a2e748c50dff86c24b90"
+    },
+    {
+      "code": "PCAD-31-02",
+      "guide": "guides/PCAD-31-02-python-certified-associate-data-analyst.md",
+      "guide_sha256_lf": "32b4d6ae46d46f194ab4ab4ba61d7cb2a7edf98de01bfe4dcabdf1849d9143d7",
+      "objective": "data/objective-snapshots/pcad-31-02-official-objectives.txt",
+      "objective_sha256": "c0e03d205f2bb78e1902508ab699839dee11825423eebe0da9a68832ca657275"
+    },
+    {
+      "code": "PCET-30-01",
+      "guide": "guides/PCET-30-01-python-certified-entry-level-tester.md",
+      "guide_sha256_lf": "453345f470b3711932cce23e374dc1ea28edbe636940e408e11b984f5b1c5baf",
+      "objective": "data/objective-snapshots/pcet-30-01-official-objectives.txt",
+      "objective_sha256": "2ba098e2104bb457258687cdcd07afcc3a531ab146c27b0022a9bebb5d793aec"
+    },
+    {
+      "code": "PCAT-31-01",
+      "guide": "guides/PCAT-31-01-python-certified-associate-tester.md",
+      "guide_sha256_lf": "faa0347e377c9ed12567a41ab9820a73d39e7e44c1112c24736b15f653baefea",
+      "objective": "data/objective-snapshots/pcat-31-01-official-objectives.txt",
+      "objective_sha256": "d93b7e4da42b76c0263e9ea2964b023f65d3aa2ac20d43384e0686e0dca7b724"
+    },
+    {
+      "code": "PCES-30-01",
+      "guide": "guides/PCES-30-01-python-certified-entry-level-security-specialist.md",
+      "guide_sha256_lf": "f92875b770dcb07471189971695bfe5c914d51d1d1bb941e94bd1d894598c9a9",
+      "objective": "data/objective-snapshots/pces-30-01-official-objectives.txt",
+      "objective_sha256": "20acb805135538b41982013c936788e9324272472a840145161037a56ef6f38f"
+    },
+    {
+      "code": "PCEA-30-01",
+      "guide": "guides/PCEA-30-01-python-certified-entry-level-automation-specialist.md",
+      "guide_sha256_lf": "d2703dcf8820eef6c88221acfc1442cca237d5c93301563e1f5d1696573410f9",
+      "objective": "data/objective-snapshots/pcea-30-01-official-objectives.txt",
+      "objective_sha256": "979e1a08fc3b397566e6549bae8cbfc70238b37d5652f54fadde55f1011c3598"
+    },
+    {
+      "code": "PCEI-30-01",
+      "guide": "guides/PCEI-30-01-python-certified-entry-level-ai-specialist.md",
+      "guide_sha256_lf": "3c934026f8cf84e8edff4b04d5e290b6557ee64feec8b105061339390b17f7ef",
+      "objective": "data/objective-snapshots/pcei-30-01-official-objectives.txt",
+      "objective_sha256": "e5fdda2adf0c6e0b035be96b13269a63f7ca7aaf52183c123a3d2af3a9a1301e"
+    }
+  ],
+  "independent_review": {
+    "method": "Fresh-context read-only AI review of changed content and source evidence",
+    "rubric": "docs/AI-AUDIT.md, version 2",
+    "reviewed_tree": "dd37a033cb7f6892557923246f3e5eb50545a5a0",
+    "summary": "Verified all six new edition-specific source IDs in the corrected catalog matches. The Python Institute confirms the three successor launch dates and older edition sunset. Archived status records are byte-identical to HEAD and hash to their filenames. All ten guide/objective bindings match. Review of initial tree efad0650d74dabe41a49bbd627f5a3cedcee81c8 identified the repaired source mapping. Targeted change/evidence review only.",
+    "findings": [],
+    "validation": [
+      "unit tests",
+      "repository validation",
+      "reviewed learning resource check",
+      "site preparation",
+      "strict MkDocs build",
+      "generated site validation"
+    ]
+  }
+}

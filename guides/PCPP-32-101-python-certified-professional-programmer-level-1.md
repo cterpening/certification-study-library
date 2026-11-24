@@ -1,22 +1,26 @@
 ---
 exam_code: PCPP-32-101
 vendor_id: python-institute
-official_blueprint: https://pythoninstitute.org/pcpp1-exam-syllabus
+official_blueprint: https://pythoninstitute.org/pcpp1-32-101-exam-syllabus
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: source-validated
-last_verified: 2026-10-29
-upcoming_change_status: scheduled
-upcoming_change_checked: 2026-10-29
+review_status: review-required
+last_verified: 2026-11-23
+upcoming_change_status: retirement-announced
+upcoming_change_checked: 2026-11-23
 ---
 
 # PCPP-32-101 Certified Professional Python Programmer Level 1 Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage and exam status were rechecked October 29, 2026; the full deep review remains dated September 29. Validate important details against the [official PCPP1 syllabus](https://pythoninstitute.org/pcpp1-exam-syllabus).
+**Review status.** The November 23 check covered the published exam information and the resources updated below. The previous full source review is historical. Full validation of this revision is pending.
+
+**Choosing an exam version (November 23, 2026).** This guide follows the [PCPP-32-101 syllabus](https://pythoninstitute.org/pcpp1-32-101-exam-syllabus). The [version-specific credential page](https://pythoninstitute.org/pcpp1-32-101) gives the November 30, 2027 sunset. PCPP1-32-102 has a separate syllabus and credential terms. [Sources and study resources](../docs/research/2026-11-23-refresh-16.md#pcpp-32-101)
+
+> **Independent AI-assisted resource — HISTORICAL SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage and exam status were rechecked October 29, 2026; the full deep review remains dated September 29. Validate important details against the [official PCPP1 syllabus](https://pythoninstitute.org/pcpp1-32-101-exam-syllabus).
 
 **Current baseline:** PCPP-32-101, active; syllabus last updated March 11, 2022<br>
-**Upcoming blueprint change:** PCPP-32-102 is pending release and scheduled for October 31, 2026; its page describes five-year validity, distinct from active 101 lifetime credential<br>
+**Exam versions:** PCPP1-32-102 was released November 9, 2026. The issuer keeps 32-101 active through November 30, 2027. Credentials earned through 32-101 retain lifetime validity. The successor grants a five-year credential.<br>
 **Official delivery snapshot:** 45 questions; 65 minutes plus 10-minute NDA/tutorial; 70%; Python 3.x; single- and multiple-select; Pearson VUE/OnVUE, with limited TestNow availability<br>
 **Credential snapshot:** no formal prerequisite; PCAP recommended; PCPP-32-101 credential validity is lifetime; exam from USD 325 when checked; 15-day retake wait; no official PCPP1 practice test currently listed<br>
 
@@ -1546,7 +1550,7 @@ if __name__ == "__main__":
 
 21. The record carries event fields and message arguments, the formatter renders it, and the handler emits it to a destination. Logger/handler thresholds can suppress it; propagation can cause duplicates if handlers are attached at several levels. Formatter style does not change message-argument interpolation.
 
-22. Check that the purchased and schedulable version is still 101, distinguish its lifetime validity from the developing 102's five-year description, and confirm delivery formats, actual appointment change rules and retake terms. No release date or current successful booking was inferred from development wording.
+22. Check the exam code before booking. The 32-101 credential has lifetime validity and 32-102 has five-year validity. Confirm the delivery channel, appointment-change rules and retake terms for your version.
 
 23. Prefer a wrapper when construction, slice assignment, inherited copying or other mutation paths would undermine the intended invariant. The example adds metadata without restricting list behavior and shows that `list.copy()` returns a base list, whereas `copy.copy()` retains this subclass. Inspect the whole exposed contract.
 
@@ -1559,18 +1563,18 @@ if __name__ == "__main__":
 - [ ] I can explain socket framing and implement a defensive REST/JSON client.
 - [ ] I can transact safely with SQLite and process XML/CSV/log/config data.
 - [ ] I completed the integrated build and can demonstrate recovery from each boundary failure.
-- [ ] I rechecked whether PCPP-32-102 replaced PCPP-32-101 on its scheduled October 31 release date.
+- [ ] I matched my booking and syllabus to 32-101 or 32-102 and checked the November 30, 2027 sunset for 32-101.
 
 ## Source and freshness notes
 
-- [Official PCPP1 syllabus](https://pythoninstitute.org/pcpp1-exam-syllabus): canonical objectives, weights, and March 2022 baseline.
+- [Official PCPP1 syllabus](https://pythoninstitute.org/pcpp1-32-101-exam-syllabus): canonical objectives, weights, and March 2022 baseline.
 - [Official PCPP1 page](https://pythoninstitute.org/pcpp1): current version, format, delivery, validity, price, retake and transition status.
 - Technical behavior should be checked in the [Python standard-library documentation](https://docs.python.org/3/library/), [Requests documentation](https://requests.readthedocs.io/en/latest/), and the named PEPs.
 - The blueprint is older than several current Python releases. Study the named contract; do not assume every modern feature is in scope.
 
 ### October 29, 2026 current-source update
 
-**VERIFY CURRENT — scheduled version transition:** the issuer page continues to mark PCPP-32-101 active and PCPP-32-102 pending, with an October 31, 2026 planned release. Keep this guide tied to the current 32-101 objectives until the issuer changes the active status; the next-version syllabus must be checked separately. The [Python release index](https://www.python.org/doc/versions/) lists Python 3.15.2 and 3.14.10 as October 25 releases, but the certification objectives say Python 3.x and do not mandate either patch. For structured learning, the issuer's [PCPP1 course catalog](https://pythoninstitute.org/study-resources) includes free English courses in advanced OOP, conventions, GUI, REST, and file processing; course time estimates are learning guidance, not exam weighting.
+**Exam versions:** PCPP1-32-102 was released November 9, 2026. This guide follows 32-101, which remains active through November 30, 2027. Use the syllabus for your chosen version. The [Python release index](https://www.python.org/doc/versions/) lists Python 3.15.2 and 3.14.10 as October 25 releases, but the certification objectives say Python 3.x and do not mandate either patch. For structured learning, the issuer's [PCPP1 course catalog](https://pythoninstitute.org/study-resources) includes free English courses in advanced OOP, conventions, GUI, REST, and file processing; course time estimates are learning guidance, not exam weighting.
 
 ## Places to learn
 
@@ -1578,7 +1582,7 @@ This is not a complete list and should not be consumed in full. Use the five off
 
 | Resource | Access | Estimated time |
 |---|---|---:|
-| [PCPP-32-101 syllabus](https://pythoninstitute.org/pcpp1-exam-syllabus) | Free official blueprint | 3–5 hours to map |
+| [PCPP-32-101 syllabus](https://pythoninstitute.org/pcpp1-32-101-exam-syllabus) | Free official blueprint | 3–5 hours to map |
 | [Python Advanced 1: OOP](https://edube.org/study/pcpp1-1) | Free official public outline; enrollment required for lessons | Provider: 42 hours |
 | [Python Advanced 2: PEPs](https://edube.org/study/pcpp1-2) | Free official public outline | Provider: 10 hours |
 | [Python Advanced 3: GUI](https://edube.org/study/pcpp1-3) | Free official public outline | Provider: 21 hours |

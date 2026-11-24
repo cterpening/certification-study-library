@@ -6,12 +6,14 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: review-required
-last_verified: 2026-10-29
+last_verified: 2026-11-23
 upcoming_change_status: none-announced
 upcoming_change_checked: 2026-10-29
 ---
 
 # PCEI-30-01 Certified Entry-Level AI Specialist with Python Study Guide
+
+**Review status.** The November 23 check covered the published exam information and the resources updated below. The previous full source review is historical. Full validation of this revision is pending.
 
 > **Independent AI-assisted resource — REVIEW REQUIRED; HUMAN REVIEW PENDING.** The October 29, 2026 refresh confirmed the current PCEI syllabus map but found that the issuer-advertised practice-test destination returns 404. The [official PCEI syllabus](https://pythoninstitute.org/pcei-exam-syllabus) remains authoritative; practice-test access is unresolved.
 
@@ -20,7 +22,7 @@ upcoming_change_checked: 2026-10-29
 **Official delivery snapshot:** 36 questions; 60 minutes plus NDA; 75%; single-/multiple-select, scenario and interactive items; TestNow; English<br>
 **Credential snapshot:** no formal prerequisite; basic Python, data analysis, and digital literacy (roughly PCEP+PCED) recommended; seven-year validity; USD 69 exam / USD 86 with retake when checked; seven-day wait after failure<br>
 
-**VERIFY CURRENT:** The [credential page](https://pythoninstitute.org/pcei) now advertises a $29 PCEI practice test as available and lists exam/test bundles, while its FAQ retains a planned Q1 2026 date and bundle copy still says Q3/Q4 2026. The linked [store product](https://ums.edube.org/products/pcei-exam-prep) returned 404 on October 29, 2026, so purchase/access remains unresolved; the price listing alone does not confirm availability. PAI101 remains in development. PCAI is shown as Coming Soon in the credential table, while its FAQ retains the passed Q1 2026 date. No account, checkout, booking or protected practice material was accessed.
+**VERIFY CURRENT — November 23, 2026.** The [PCEI credential page](https://pythoninstitute.org/pcei) advertises a USD 29 practice test and exam bundles. Its practice FAQ still discusses a planned release, and the linked store product could not be opened. Verify price and availability before budgeting. The page still describes PAI101 as in development and PCAI as coming soon.
 
 The complete [testing policy](https://pythoninstitute.org/pcei-testing-policies), revised November 18, 2025, describes global browser proctoring and distinct local-partner procedures. Read its current admission, environment, rescheduling and final-score conditions before booking. The specific retake rule covers failure; broader footer wording about passed attempts does not establish eligibility to retake after passing. No system diagnostic, device setting or privacy permission was changed during this review.
 

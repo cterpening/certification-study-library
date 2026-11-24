@@ -5,22 +5,24 @@ official_blueprint: https://pythoninstitute.org/pcad-exam-syllabus
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: source-validated
-last_verified: 2026-10-29
+review_status: review-required
+last_verified: 2026-11-23
 upcoming_change_status: none-announced
 upcoming_change_checked: 2026-10-29
 ---
 
 # PCAD-31-02 Certified Associate Data Analyst with Python Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Deep-reviewed September 29, 2026; original numerical/SQL/extraction workbook executed, Pandas/plotting companion prepared only. The [official PCAD syllabus](https://pythoninstitute.org/pcad-exam-syllabus) is authoritative.
+**Review status.** The November 23 check covered the published exam information and the resources updated below. The previous full source review is historical. Full validation of this revision is pending.
+
+> **Independent AI-assisted resource — HISTORICAL SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Deep-reviewed September 29, 2026; original numerical/SQL/extraction workbook executed, Pandas/plotting companion prepared only. The [official PCAD syllabus](https://pythoninstitute.org/pcad-exam-syllabus) is authoritative.
 
 **Current baseline:** PCAD-31-02, active since July 15, 2025; PCAD-31-01 retired July 14, 2025<br>
 **Upcoming blueprint change:** none found in the reviewed public syllabus/exam sections; direct objective monitoring timed out, so the existing snapshot was compared manually and retained<br>
 **Official delivery snapshot:** 48 questions; 60 minutes plus NDA; 75% cumulative passing score; single-/multiple-select and scenario items; TestNow; English<br>
 **Credential snapshot:** no formal prerequisite; PCAP/PCED-equivalent and domain skills recommended; six-year validity; USD 195 exam, USD 225 with retake, USD 215 with practice, USD 245 with both when checked; 15-day wait after a failed attempt<br>
 
-**VERIFY CURRENT — public-store observation (October 29, 2026):** The [exam page](https://pythoninstitute.org/pcad), [testing policies](https://pythoninstitute.org/pcad-testing-policies), [standalone practice kit](https://ums.edube.org/products/1-pi-pcad-3102-pt) and [exam/retake/practice bundle](https://ums.edube.org/products/1-pi-pcad-3102-erpt) describe different products and procedures. The two exact product pages were opened and their public descriptions read via browser on October 29: the USD 49 standalone kit lists two tests with up to **10 launches each**; the USD 245 bundle lists **five each**, with 12-month voucher validity. The automated health client returned 404 for the two store URLs, so confirm the live page and purchased entitlement before relying on the launch or profile instructions. The store says Test Candidate → Practice while the credential FAQ says Learner. Local testing-partner rescheduling generally requires 24 hours; the global unredeemed-voucher route has different scheduling rules. No account, booking, purchase, system test or private practice questions were accessed.
+**VERIFY CURRENT — November 23, 2026.** The standalone PCAD practice kit and the exam/retake/practice bundle were listed separately on October 29. At that time the standalone listing showed USD 49 and up to ten launches per test, and the USD 245 bundle showed five launches per test. Both store destinations now return 404 to the public client. Confirm current availability, validity, launch limits and which account profile to use before purchase. The [PCAD credential page](https://pythoninstitute.org/pcad) describes preparation and voucher options, and the [testing policies](https://pythoninstitute.org/pcad-testing-policies) explain how to schedule or reschedule.
 
 ## How to use this guide
 
@@ -890,7 +892,7 @@ This is not a complete list and is not meant to be consumed in full. Times label
 | [PCAD syllabus](https://pythoninstitute.org/pcad-exam-syllabus) and this objective map | Free canonical scope; manual comparison after retrieval failure | Author budget: 2–3 hours to map gaps |
 | [Cisco sequence on the exam page](https://pythoninstitute.org/pcad) | Intro to Data Science → Data Science Essentials with Python → Data Analytics Essentials modules 1/2/3/5/6/7/9/10; direct [catalog](https://www.netacad.com/courses/data-analytics-essentials) returned only an application shell | Current course durations/access unverified; earlier 45–70 hour claim removed |
 | [PD101 public outline](https://edube.org/study/pd101) | Free Core lessons/module tests, USD 49 Full/Pro interactive work; explicitly PCED-aligned foundation | Provider: five weeks, about one hour/day; not a complete PCAD preparation claim |
-| [PCAD standalone practice kit](https://ums.edube.org/products/1-pi-pcad-3102-pt) | USD 49, two tests, up to 10 launches each, 12-month voucher; no exam included; account/profile distinction unresolved | Provider exam simulations; author budget: two sittings plus explanation-led remediation |
+| [PCAD issuer guidance on practice](https://pythoninstitute.org/pcad) | The issuer advertises a practice option. Current kit access, price and launch limits remain unverified. | Allow time for two study sessions and for reviewing weak topics (library estimate). |
 | [Python for Data Analysis, third edition](https://wesmckinney.com/book/) | Free author-hosted web edition; landing updated for Pandas 2.0/Python 3.10, so compare newer Pandas 3 behavior | Author budget: 15–25 selected hours; chapters not audited here |
 | [Pandas getting started](https://pandas.pydata.org/docs/getting_started/) and linked contracts above | Free primary documentation; companion still needs runtime execution | Author budget: 6–10 hours with original tables |
 | [Introduction to Statistical Learning](https://www.statlearning.com/) | Retrieval failed; current download/access and chapters unverified | Current duration unverified; use only after inspecting the resource |

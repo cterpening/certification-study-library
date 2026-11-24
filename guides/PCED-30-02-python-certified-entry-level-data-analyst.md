@@ -5,15 +5,17 @@ official_blueprint: https://pythoninstitute.org/pced-exam-syllabus
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: source-validated
-last_verified: 2026-10-29
+review_status: review-required
+last_verified: 2026-11-23
 upcoming_change_status: none-announced
 upcoming_change_checked: 2026-10-29
 ---
 
 # PCED-30-02 Certified Entry-Level Data Analyst with Python Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Validate this guide against the [official PCED syllabus](https://pythoninstitute.org/pced-exam-syllabus), rechecked October 29, 2026.
+**Review status.** The November 23 check covered the published exam information and the resources updated below. The previous full source review is historical. Full validation of this revision is pending.
+
+> **Independent AI-assisted resource — HISTORICAL SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Validate this guide against the [official PCED syllabus](https://pythoninstitute.org/pced-exam-syllabus), rechecked October 29, 2026.
 
 **Current baseline:** PCED-30-02, active since July 15, 2025; syllabus last updated July 14, 2025; PCED-30-01 retired July 14, 2025<br>
 **Upcoming blueprint change:** none announced on the live credential or syllabus pages<br>
@@ -22,7 +24,7 @@ upcoming_change_checked: 2026-10-29
 
 The active version is **30-02**. The exam page says already-issued 30-01 vouchers may still be redeemed despite that version's retirement; verify the code attached to a voucher. The current syllabus gives each item a maximum of one point and reports a normalized percentage. The four weights are not four separate passing thresholds. No official questions or current partial-credit rules were accessed.
 
-**VERIFY CURRENT — public-store observation (October 29, 2026):** The exact [standalone USD 29 kit](https://ums.edube.org/products/pced-practice-test) and [USD 95 exam/retake/practice bundle](https://ums.edube.org/products/0-pi-pced-3002-erpt) pages were opened and their public descriptions read via browser on October 29. The listings describe two practice tests, with up to **10 launches each** for the standalone kit and **five launches each** for the bundle; they show a 12-month voucher validity. The automated health client returned 404 for both exact store URLs, so confirm the page and purchased entitlement before relying on the launch limits or instructions. The store says Test Candidate → Practice while the credential FAQ says Learner; do not transfer one product's entitlement to another. No purchase, redemption, enrolled assessment or account inspection was performed.
+**VERIFY CURRENT — November 23, 2026.** The October 29 store descriptions listed a USD 29 practice-only kit with up to ten launches per test and a USD 95 exam/retake/practice bundle with five. They listed 12-month voucher validity. Both product destinations now return 404 to the public client. The [PCED credential page](https://pythoninstitute.org/pced) advertises practice options. Confirm current availability, account profile, voucher validity and launch limits for the product you intend to use.
 
 ## How to use this guide
 
@@ -743,8 +745,8 @@ This is not a complete list. Choose one foundation path, reproduce the workbook,
 | [PD101 public course outline](https://edube.org/study/pd101) | Associated with PCED; Core lessons/module tests free; no formal prerequisite; English | Provider: 5 weeks at about 1 hour/day |
 | [PD101 Pro courseware](https://ums.edube.org/products/pi-pd101-courseware) | USD 49 public offer; interactive work, quizzes/labs/projects and diploma; minimum 12-month access after redemption; no enrolled interior inspected | Provider: same 5-week course outline; individual progress varies |
 | [Vendor PD101 overview](https://pythoninstitute.org/python-for-data-analytics-101) | Partly readable indexed page; public Edube/store bodies provide the fuller observed details | Do not infer lesson completion or unrestricted free access to Pro features |
-| [Standalone PCED practice kit](https://ums.edube.org/products/pced-practice-test) | USD 29, two tests, up to 10 launches each; practice only; current questions not inspected | Author remediation budget: 4–7 hours |
-| [Exam/retake/practice bundle](https://ums.edube.org/products/0-pi-pced-3002-erpt) | USD 95; public practice limit says five launches each; confirm purchased entitlement | No measured exam-preparation duration |
+| [PCED issuer guidance on practice tests](https://pythoninstitute.org/pced) | The issuer lists a practice option. Current standalone price and launch limits remain unverified. | Allow 4–7 hours for practice and remediation (library estimate). |
+| [PCED issuer guidance on exam bundles](https://pythoninstitute.org/pced) | Check whether the available bundle includes an exam attempt, a retake and practice access. Current entitlements remain unverified. | No measured exam-preparation duration |
 | [NumPy quickstart](https://numpy.org/doc/stable/user/quickstart.html) | Free primary documentation; select arrays, aggregation, indexing and copies | Author budget: 4–8 hours |
 | [Cisco Data Analytics Essentials](https://www.netacad.com/courses/data-analytics-essentials) | Response was a short application shell; current course contents/duration not verified | Verify current listing; prior 30-hour estimate removed |
 | [Python for Data Analysis, 3rd ed.](https://wesmckinney.com/book/) | Complete landing read; open web edition, August 2022, updated for pandas 2.0/Python 3.10 in April 2023; broader than PCED; chapters not reviewed | Author selective-reading budget: 15–25 hours |
