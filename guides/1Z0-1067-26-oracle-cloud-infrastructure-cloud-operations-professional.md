@@ -76,7 +76,7 @@ Troubleshoot from symptom and timeline through recent changes, identity, quotas,
 
 > **Related item:** An alarm that fires without an owned response path is telemetry, not an operational control.
 
-**Related item: current OKE version boundary (October 2026).** Oracle lists Kubernetes 1.36.4 as GA and 1.37.0 as preview for OC1 only; 1.37 is not recommended for production. The preview changes LoadBalancer defaults and requires a TLS Secret in the Service namespace. This version-sensitive example may help test the guide's OKE operations workflow, but it is not an exam baseline. Check the [supported-version calendar](https://docs.oracle.com/en-us/iaas/Content/ContEng/Concepts/contengaboutk8sversions.htm) before a lab.
+**Related item: OKE version check (November 2026).** These release-specific details support operational practice outside the published exam objectives. Oracle added production support for Kubernetes 1.37.1 on November 17. The earlier 1.37.0 patch was a preview. Support for 1.34.10 is scheduled to end December 21, 2026. Before upgrading, check that TLS Secrets referenced by a LoadBalancer Service are in its namespace. Existing load balancers retain their shape. Consult the [supported-version calendar](https://docs.oracle.com/en-us/iaas/Content/ContEng/Concepts/contengaboutk8sversions.htm) and the [November source check](../docs/research/2026-11-23-refresh-19.md#1z0-1067-26).
 
 ## Integrated practice scenarios
 

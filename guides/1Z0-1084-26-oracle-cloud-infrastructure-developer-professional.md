@@ -90,7 +90,7 @@ Instrument service-level outcomes, latency, errors, saturation, dependency calls
 
 Build alerts from user impact and actionable failure conditions. A dashboard should let a responder move from symptom to suspect deployment, dependency, partition, route, or policy. Test telemetry during degraded behavior, not only normal operation.
 
-**Related item: OKE version-sensitive behavior.** The current Oracle calendar lists Kubernetes 1.36.4 as GA and 1.37.0 as preview for OC1 only; preview 1.37 is not recommended for production. On 1.37, TLS Secrets must be in the Service namespace and LoadBalancer defaults differ. For a disposable lab, set the intended shape explicitly and test namespace scoping; do not turn preview behavior into a general exam claim. Check the [current OKE version calendar](https://docs.oracle.com/en-us/iaas/Content/ContEng/Concepts/contengaboutk8sversions.htm).
+**Related item: OKE LoadBalancer behavior.** These release-specific details support operational practice outside the published exam objectives. Oracle added production support for Kubernetes 1.37.1 on November 17, 2026. The earlier 1.37.0 patch was a preview. On 1.37, a new LoadBalancer Service defaults to a flexible load balancer with 100 Mbps minimum and maximum bandwidth. An explicit shape annotation takes precedence. Place referenced TLS Secrets in the Service namespace. Check the [OKE version calendar](https://docs.oracle.com/en-us/iaas/Content/ContEng/Concepts/contengaboutk8sversions.htm) before practicing. See the [November source check](../docs/research/2026-11-23-refresh-19.md#1z0-1084-26) for Oracle’s release note.
 
 ## Integrated practice scenarios
 

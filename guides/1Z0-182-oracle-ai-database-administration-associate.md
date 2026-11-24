@@ -46,7 +46,7 @@ Trace Oracle Net from client connect descriptor or Easy Connect string through l
 
 ## 2. Multitenant administration
 
-A CDB contains the root, seed, and PDBs. Common and local objects/users have different scopes. Practice creating, opening, closing, saving state, cloning, unplugging/plugging, and dropping disposable PDBs with correct container context. DBCA and SQL provide different workflows toward the same governed lifecycle.
+A CDB contains the root, seed, and PDBs. Common and local objects/users have different scopes. Practice creating, opening, closing, saving state, cloning, unplugging/plugging, and dropping disposable PDBs with correct container context. DBCA and SQL provide different workflows toward the same governed lifecycle. In Oracle AI Database 26ai, a new database created from a DBCA template defaults to bigfile tablespaces, including `SYSTEM`, `SYSAUX` and `USER`. A database upgraded from an earlier release keeps its existing tablespace type. Check `DBA_TABLESPACES.BIGFILE` when identifying the layout. See the [November source check](../docs/research/2026-11-23-refresh-19.md#1z0-182).
 
 Services should direct workloads to the intended PDB. Verify container before changing users, storage, parameters, or data. Plan file placement, compatibility, keys, and recovery when moving or cloning PDBs.
 

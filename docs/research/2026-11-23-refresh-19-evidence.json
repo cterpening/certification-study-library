@@ -1,0 +1,723 @@
+{
+  "date": "2026-11-23",
+  "scope": "AI research into official objectives, selected technical references and learning resources. Individual exam delivery, private course contents and live product testing were outside this review.",
+  "exams": [
+    {
+      "code": "1Z0-830",
+      "exam": {
+        "code": "1Z0-830",
+        "observation": "New lines are the Java SE 21 learning-path introduction and target audience. Neither changes the exam series code. Monitor detected an objective-text difference.",
+        "urls": [
+          "https://learn.oracle.com/ols/learning-path/become-a-java-se-21-developer/117252/138845"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Preserve versioned certification identity; changing training labels alone do not identify a new exam.",
+        "monitor": "changed",
+        "accepted_objective_sha256": "190f4aa00369d04df712b1479897dc73a90a502008296ba623329e3ff4646f9b",
+        "candidate_objective_sha256": "bd1fd340edd5c2332449ae18f3dbc5e812b996519d91990f19aedd72b3b673a1",
+        "catalog_matches": {
+          "https://learn.oracle.com/ols/learning-path/become-a-java-se-21-developer/117252/138845": {
+            "sources": [
+              "1z0-830-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "1Z0-830",
+        "observation": "Oracle's Java SE 21 API index separates Java SE modules, such as java.base, from JDK modules. Use Java 21 docs for module/API exercises.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.oracle.com/en/java/javase/21/docs/api/index.html"
+        ],
+        "source_ids": [
+          "oracle-java-se-21-api"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "1Z0-830",
+        "observation": "The Java 21 API reference separates standard Java SE modules from JDK-specific facilities. Use versioned APIs for code-reading exercises.",
+        "urls": [
+          "https://docs.oracle.com/en/java/javase/21/docs/api/index.html"
+        ],
+        "source_id": "oracle-java-se-21-api",
+        "resource": "Java SE 21 and JDK 21 API specification",
+        "access_model": "public",
+        "time_basis": "15–25 hours of selected reading and coding, library estimate.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "changed",
+      "accepted_on_start": "190f4aa00369d04df712b1479897dc73a90a502008296ba623329e3ff4646f9b",
+      "candidate": "bd1fd340edd5c2332449ae18f3dbc5e812b996519d91990f19aedd72b3b673a1"
+    },
+    {
+      "code": "1Z0-1085-26",
+      "exam": {
+        "code": "1Z0-1085-26",
+        "observation": "Oracle MyLearn removed (2026) from the learning-path display title. The matched exam series code remains 1Z0-1085-26. It also removed the NEW label on the item. Monitor detected an objective-text difference.",
+        "urls": [
+          "https://mylearn.oracle.com/ou/learning-path/-become-an-oci-foundations-associate-2026/163541"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Preserve versioned certification identity; changing training labels alone do not identify a new exam.",
+        "monitor": "changed",
+        "accepted_objective_sha256": "5aec5199922193f9bc9fd118e974eb73f0000ac5ea0e613899dd4d262e7ffd44",
+        "candidate_objective_sha256": "8600f5a960db994592c997945a2193e31b2c645dc14bddea5a352aab6b50d912",
+        "catalog_matches": {
+          "https://mylearn.oracle.com/ou/learning-path/-become-an-oci-foundations-associate-2026/163541": {
+            "sources": [
+              "1z0-1085-26-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "1Z0-1085-26",
+        "observation": "OCI describes compute and storage capacity connected by virtual networking that can be accessed from on-premises environments.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.oracle.com/en-us/iaas/Content/GSG/Concepts/baremetalintro.htm"
+        ],
+        "source_ids": [
+          "oracle-oci-concepts"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "1Z0-1085-26",
+        "observation": "The OCI basics tutorial links a free Oracle-provided lab environment, as well as instructions for an authorized tenancy.",
+        "urls": [
+          "https://docs.oracle.com/en/learn/oci-basics-tutorial/"
+        ],
+        "source_id": "oracle-oci-basics-tutorial",
+        "resource": "Get started with OCI basics",
+        "access_model": "public",
+        "time_basis": "1–2 hours, editorial; provisioning adds time.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "changed",
+      "accepted_on_start": "5aec5199922193f9bc9fd118e974eb73f0000ac5ea0e613899dd4d262e7ffd44",
+      "candidate": "8600f5a960db994592c997945a2193e31b2c645dc14bddea5a352aab6b50d912"
+    },
+    {
+      "code": "1Z0-1072-26",
+      "exam": {
+        "code": "1Z0-1072-26",
+        "observation": "Oracle MyLearn removed (2026) from the learning-path display title. The matched exam series code remains 1Z0-1072-26. A generic ongoing course-update sentence also appeared. Monitor detected an objective-text difference.",
+        "urls": [
+          "https://mylearn.oracle.com/ou/learning-path/become-an-oci-architect-associate-2026/162234"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Preserve versioned certification identity; changing training labels alone do not identify a new exam.",
+        "monitor": "changed",
+        "accepted_objective_sha256": "6caee9398656f4de4f4fe669606e1f9862380e061c8fcf9ca417e6516bec14a6",
+        "candidate_objective_sha256": "433bbb152df60677ad20a5d641d711d8e193cef3622d04fe30251cb6817b0569",
+        "catalog_matches": {
+          "https://mylearn.oracle.com/ou/learning-path/become-an-oci-architect-associate-2026/162234": {
+            "sources": [
+              "1z0-1072-26-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "1Z0-1072-26",
+        "observation": "The FastConnect reference distinguishes connectivity via partner providers; redundant partner links may need separate ordering.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.oracle.com/en/solutions/oci-best-practices/define-your-network-and-connectivity-architecture1.html"
+        ],
+        "source_ids": [
+          "oracle-oci-network-architecture"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "1Z0-1072-26",
+        "observation": "Oracle's workload-networking playbook connects design choices with connectivity and performance requirements.",
+        "urls": [
+          "https://docs.oracle.com/en/solutions/oci-best-practices-networking/index.html"
+        ],
+        "source_id": "oracle-oci-networking-playbook",
+        "resource": "OCI workload-networking design playbook",
+        "access_model": "public",
+        "time_basis": "1–2 hours for selected architecture decisions, editorial.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "changed",
+      "accepted_on_start": "6caee9398656f4de4f4fe669606e1f9862380e061c8fcf9ca417e6516bec14a6",
+      "candidate": "433bbb152df60677ad20a5d641d711d8e193cef3622d04fe30251cb6817b0569"
+    },
+    {
+      "code": "1Z0-1067-26",
+      "exam": {
+        "code": "1Z0-1067-26",
+        "observation": "Oracle MyLearn removed (2026) from the learning-path display title. The matched exam series code remains 1Z0-1067-26. Monitor detected an objective-text difference.",
+        "urls": [
+          "https://mylearn.oracle.com/ou/learning-path/become-an-oci-cloud-operations-professional-2026/163390"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Preserve versioned certification identity; changing training labels alone do not identify a new exam.",
+        "monitor": "changed",
+        "accepted_objective_sha256": "317af1108a35b43d611bee316d39d933ccc8fa1ce00ecbb39336b2fb6c28260b",
+        "candidate_objective_sha256": "9983ac2111374132eff279dc6bea15259f1343383137743d58a0a593ee00a4c3",
+        "catalog_matches": {
+          "https://mylearn.oracle.com/ou/learning-path/become-an-oci-cloud-operations-professional-2026/163390": {
+            "sources": [
+              "1z0-1067-26-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "1Z0-1067-26",
+        "observation": "OKE now supports Kubernetes 1.37.1. Its November 17 release notice distinguishes production 1.37.1 from preview 1.37.0 and schedules end of 1.34.10 support for December 21, 2026.",
+        "recommendation": "Replace the minor-version-wide production warning with qualified patch versions and the dated Oracle release note.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.oracle.com/en-us/iaas/releasenotes/conteng/conteng-K8s-1-37-1-support.htm"
+        ],
+        "source_ids": [],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "1Z0-1067-26",
+        "observation": "Oracle's APM/OpenTelemetry tutorial instruments an application and exports telemetry. Execution requires OCI access and sample resources.",
+        "urls": [
+          "https://docs.oracle.com/en/learn/oci-apm-with-opentelemetry/index.html"
+        ],
+        "source_id": "oracle-oci-apm-opentelemetry-tutorial",
+        "resource": "Monitor applications using OCI APM and OpenTelemetry",
+        "access_model": "public",
+        "time_basis": "2–4 hours selected hands-on, editorial.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "changed",
+      "accepted_on_start": "317af1108a35b43d611bee316d39d933ccc8fa1ce00ecbb39336b2fb6c28260b",
+      "candidate": "9983ac2111374132eff279dc6bea15259f1343383137743d58a0a593ee00a4c3"
+    },
+    {
+      "code": "1Z0-1104-26",
+      "exam": {
+        "code": "1Z0-1104-26",
+        "observation": "Oracle MyLearn removed (2026) from the learning-path display title. The matched exam series code remains 1Z0-1104-26. Monitor detected an objective-text difference.",
+        "urls": [
+          "https://mylearn.oracle.com/ou/learning-path/become-a-cloud-security-professional-2026/163254"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Preserve versioned certification identity; changing training labels alone do not identify a new exam.",
+        "monitor": "changed",
+        "accepted_objective_sha256": "1b662cc0bff386cddd4440bde7696ba376a37ebe61b18778b26ac4b9e1c5c7d8",
+        "candidate_objective_sha256": "bbacc125b26632038f2edee3e23c7eacada8960537109a18e61a711a08bd6a49",
+        "catalog_matches": {
+          "https://mylearn.oracle.com/ou/learning-path/become-a-cloud-security-professional-2026/163254": {
+            "sources": [
+              "1z0-1104-26-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "1Z0-1104-26",
+        "observation": "Data Safe Crypto Posture Assessment examines registered target databases' encryption, certificates, wallets, backups and compliance settings.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.oracle.com/en-us/iaas/data-safe/doc/crypto-posture-assessment-overview.html"
+        ],
+        "source_ids": [
+          "oracle-data-safe-crypto-docs"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "1Z0-1104-26",
+        "observation": "Oracle's IAM guidance recommends auditing changes to users, groups and policies and links tenancy and compartment controls.",
+        "urls": [
+          "https://docs.oracle.com/en-us/iaas/Content/Security/Reference/iam_security.htm"
+        ],
+        "source_id": "oracle-oci-iam-security-guidance",
+        "resource": "OCI IAM security guidance",
+        "access_model": "public",
+        "time_basis": "8–12 hours including linked guidance, editorial.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "changed",
+      "accepted_on_start": "1b662cc0bff386cddd4440bde7696ba376a37ebe61b18778b26ac4b9e1c5c7d8",
+      "candidate": "bbacc125b26632038f2edee3e23c7eacada8960537109a18e61a711a08bd6a49"
+    },
+    {
+      "code": "1Z0-171",
+      "exam": {
+        "code": "1Z0-171",
+        "observation": "Oracle MyLearn retains the same AI Database exam identity and accepted objective extract. Both monitored objective text and status matched accepted records.",
+        "urls": [
+          "https://mylearn.oracle.com/ou/learning-path/earn-the-oracle-ai-database-sql-associate-credential/140075"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Preserve versioned certification identity; changing training labels alone do not identify a new exam.",
+        "monitor": "unchanged",
+        "accepted_objective_sha256": "173476c88e31d3b1dc6a17d4b9b14a08cef4001a4cbb338b2f2edfa392e19dd7",
+        "candidate_objective_sha256": "173476c88e31d3b1dc6a17d4b9b14a08cef4001a4cbb338b2f2edfa392e19dd7",
+        "catalog_matches": {
+          "https://mylearn.oracle.com/ou/learning-path/earn-the-oracle-ai-database-sql-associate-credential/140075": {
+            "sources": [
+              "1z0-171-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "1Z0-171",
+        "observation": "ORDER BY with FETCH and WITH TIES can include additional rows that share the last sort key; use a deterministic tie-breaker if the result must have a fixed ordering.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/SELECT.html"
+        ],
+        "source_ids": [],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "1Z0-171",
+        "observation": "The Oracle Database 26 SQL Language Reference is a versioned reference suitable for checking SQL semantics and examples.",
+        "urls": [
+          "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/index.html"
+        ],
+        "source_id": "oracle-ai-database-26-sql-reference",
+        "resource": "Oracle AI Database 26 SQL Language Reference",
+        "access_model": "public",
+        "time_basis": "12–20 hours for targeted reference and exercises, editorial.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "unchanged",
+      "accepted_on_start": "173476c88e31d3b1dc6a17d4b9b14a08cef4001a4cbb338b2f2edfa392e19dd7",
+      "candidate": "173476c88e31d3b1dc6a17d4b9b14a08cef4001a4cbb338b2f2edfa392e19dd7"
+    },
+    {
+      "code": "1Z0-182",
+      "exam": {
+        "code": "1Z0-182",
+        "observation": "Oracle MyLearn retains the same AI Database exam identity and accepted objective extract. Both monitored objective text and status matched accepted records.",
+        "urls": [
+          "https://mylearn.oracle.com/ou/learning-path/earn-the-oracle-ai-database-administration-associate-credential/140076"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Preserve versioned certification identity; changing training labels alone do not identify a new exam.",
+        "monitor": "unchanged",
+        "accepted_objective_sha256": "a845bcc5712adc0f0c6791a142ab1a9158f3ae269e346478d9d5f9bd31bf8a22",
+        "candidate_objective_sha256": "a845bcc5712adc0f0c6791a142ab1a9158f3ae269e346478d9d5f9bd31bf8a22",
+        "catalog_matches": {
+          "https://mylearn.oracle.com/ou/learning-path/earn-the-oracle-ai-database-administration-associate-credential/140076": {
+            "sources": [
+              "1z0-182-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "1Z0-182",
+        "observation": "In 26ai, newly created DBCA-template databases default to bigfile tablespaces, while upgraded databases retain their existing tablespace type.",
+        "recommendation": "Add this distinction in the tablespace or DBCA section; use creation method and upgrade history in the example.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.oracle.com/en/database/oracle/oracle-database/26/admin/managing-tablespaces.html"
+        ],
+        "source_ids": [],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "1Z0-182",
+        "observation": "The Database Administrator's Guide is explicitly for release 26; select operational tasks by the blueprint before undertaking practice.",
+        "urls": [
+          "https://docs.oracle.com/en/database/oracle/oracle-database/26/admin/index.html"
+        ],
+        "source_id": "oracle-ai-database-26-admin-guide",
+        "resource": "Oracle AI Database 26 Administrator's Guide",
+        "access_model": "public",
+        "time_basis": "15–25 hours for targeted reference work, editorial.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "unchanged",
+      "accepted_on_start": "a845bcc5712adc0f0c6791a142ab1a9158f3ae269e346478d9d5f9bd31bf8a22",
+      "candidate": "a845bcc5712adc0f0c6791a142ab1a9158f3ae269e346478d9d5f9bd31bf8a22"
+    },
+    {
+      "code": "1Z0-997-26",
+      "exam": {
+        "code": "1Z0-997-26",
+        "observation": "Oracle MyLearn removed (2026) from the learning-path display title. The matched exam series code remains 1Z0-997-26. Monitor detected an objective-text difference.",
+        "urls": [
+          "https://mylearn.oracle.com/ou/learning-path/become-an-oci-architect-professional-2026/163270"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Preserve versioned certification identity; changing training labels alone do not identify a new exam.",
+        "monitor": "changed",
+        "accepted_objective_sha256": "179cb12e26fe986b4928ea0c474a4e0840fc4d813e0ae8913c2306f888203006",
+        "candidate_objective_sha256": "b4c394dda5d89f27be21c751719fec56f4dfea024de4c8484f57f7f8f016713b",
+        "catalog_matches": {
+          "https://mylearn.oracle.com/ou/learning-path/become-an-oci-architect-professional-2026/163270": {
+            "sources": [
+              "1z0-997-26-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "1Z0-997-26",
+        "observation": "The OCI best practices framework groups design guidance into five pillars. Apply the applicable pillars to the workload's requirements.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.oracle.com/en/solutions/oci-best-practices/"
+        ],
+        "source_ids": [
+          "oracle-oci-best-practices"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "1Z0-997-26",
+        "observation": "The OCI Well-Architected Framework discusses architecture responsibilities and cloud adoption practices; use it to justify design choices.",
+        "urls": [
+          "https://docs.oracle.com/en/solutions/oci-best-practices/"
+        ],
+        "source_id": "oracle-oci-best-practices",
+        "resource": "Oracle Cloud Infrastructure best practices framework",
+        "access_model": "public",
+        "time_basis": "10–14 hours for targeted study of linked material, editorial.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "changed",
+      "accepted_on_start": "179cb12e26fe986b4928ea0c474a4e0840fc4d813e0ae8913c2306f888203006",
+      "candidate": "b4c394dda5d89f27be21c751719fec56f4dfea024de4c8484f57f7f8f016713b"
+    },
+    {
+      "code": "1Z0-1084-26",
+      "exam": {
+        "code": "1Z0-1084-26",
+        "observation": "Oracle MyLearn removed (2026) from the learning-path display title. The matched exam series code remains 1Z0-1084-26. Monitor detected an objective-text difference.",
+        "urls": [
+          "https://mylearn.oracle.com/ou/learning-path/become-an-oci-developer-professional-2026/162926"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Preserve versioned certification identity; changing training labels alone do not identify a new exam.",
+        "monitor": "changed",
+        "accepted_objective_sha256": "c706ea7ed83d4723ad60bf7448bc9d3b722855607a38bbfb8dc0e425ce00b396",
+        "candidate_objective_sha256": "cc4a9b1eccc9d3d84ef44ce27640ec900a13da806831ee1b00c93b4e41b553ed",
+        "catalog_matches": {
+          "https://mylearn.oracle.com/ou/learning-path/become-an-oci-developer-professional-2026/162926": {
+            "sources": [
+              "1z0-1084-26-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "1Z0-1084-26",
+        "observation": "OKE now supports Kubernetes 1.37.1. Its November 17 release notice distinguishes production 1.37.1 from preview 1.37.0 and schedules end of 1.34.10 support for December 21, 2026.",
+        "recommendation": "Replace the minor-version-wide production warning with qualified patch versions and the dated Oracle release note.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.oracle.com/en-us/iaas/releasenotes/conteng/conteng-K8s-1-37-1-support.htm"
+        ],
+        "source_ids": [],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "1Z0-1084-26",
+        "observation": "The OCI DevOps tutorial covers deploying an application to Kubernetes through a build/deployment pipeline, with OCI access required.",
+        "urls": [
+          "https://docs.oracle.com/en/learn/oci-devops-cicd-on-kubernetes/index.html"
+        ],
+        "source_id": "oracle-oci-devops-oke-tutorial",
+        "resource": "Deploy application with OCI DevOps CI/CD on Kubernetes",
+        "access_model": "public",
+        "time_basis": "2–4 hours including cleanup, editorial.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "changed",
+      "accepted_on_start": "c706ea7ed83d4723ad60bf7448bc9d3b722855607a38bbfb8dc0e425ce00b396",
+      "candidate": "cc4a9b1eccc9d3d84ef44ce27640ec900a13da806831ee1b00c93b4e41b553ed"
+    },
+    {
+      "code": "1Z0-1109-26",
+      "exam": {
+        "code": "1Z0-1109-26",
+        "observation": "Oracle MyLearn removed (2026) from the learning-path display title. The matched exam series code remains 1Z0-1109-26. Monitor detected an objective-text difference.",
+        "urls": [
+          "https://mylearn.oracle.com/ou/learning-path/become-an-oci-devops-professional-2026/162852"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Preserve versioned certification identity; changing training labels alone do not identify a new exam.",
+        "monitor": "changed",
+        "accepted_objective_sha256": "785c9cc11340f4991070a2c2794c884cdf105ba9f5ed74674004b751e4fd2215",
+        "candidate_objective_sha256": "612091fa8f4d1b3e4ae3308cebefc426376bca96ab30c1904f089fa003ec7334",
+        "catalog_matches": {
+          "https://mylearn.oracle.com/ou/learning-path/become-an-oci-devops-professional-2026/162852": {
+            "sources": [
+              "1z0-1109-26-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "1Z0-1109-26",
+        "observation": "OCI DevOps separates build/test and artifact delivery from deployment pipelines.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.oracle.com/en-us/iaas/Content/GSG/Reference/getting-started-as-devops.htm"
+        ],
+        "source_ids": [
+          "oracle-oci-devops-engineer-guide"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "1Z0-1109-26",
+        "observation": "A DevOps Engineer's Guide points learners to automation, registry tutorials and build/deployment logs.",
+        "urls": [
+          "https://docs.oracle.com/en-us/iaas/Content/GSG/Reference/getting-started-as-devops.htm"
+        ],
+        "source_id": "oracle-oci-devops-engineer-guide",
+        "resource": "A DevOps Engineer's Guide to OCI",
+        "access_model": "public",
+        "time_basis": "10–14 hours for selected guidance and independent practice, editorial.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "changed",
+      "accepted_on_start": "785c9cc11340f4991070a2c2794c884cdf105ba9f5ed74674004b751e4fd2215",
+      "candidate": "612091fa8f4d1b3e4ae3308cebefc426376bca96ab30c1904f089fa003ec7334"
+    },
+    {
+      "code": "1Z0-1124-26",
+      "exam": {
+        "code": "1Z0-1124-26",
+        "observation": "Oracle MyLearn removed (2026) from the learning-path display title. The matched exam series code remains 1Z0-1124-26. A generic ongoing course-update sentence also appeared. Monitor detected an objective-text difference.",
+        "urls": [
+          "https://mylearn.oracle.com/ou/learning-path/become-an-oracle-cloud-infrastructure-networking-professional-2026/163340"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Preserve versioned certification identity; changing training labels alone do not identify a new exam.",
+        "monitor": "changed",
+        "accepted_objective_sha256": "40e613e78b0e72b4a81d91f7c2aec30cdabdf8c633a3b6d99ff4e45878e4e2cb",
+        "candidate_objective_sha256": "eadc92b5507d0cdf761761716bb0a0a7f2da5ed8e01586a4f66b9f9d8277b324",
+        "catalog_matches": {
+          "https://mylearn.oracle.com/ou/learning-path/become-an-oracle-cloud-infrastructure-networking-professional-2026/163340": {
+            "sources": [
+              "1z0-1124-26-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "1Z0-1124-26",
+        "observation": "An OCI VCN lives in a single region and can contain one or more CIDR ranges.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.oracle.com/en-us/iaas/Content/Network/Concepts/overview.htm"
+        ],
+        "source_ids": [
+          "oracle-oci-networking-documentation"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "1Z0-1124-26",
+        "observation": "OCI Networking Overview describes VCNs, subnets, traffic paths and security rules; map one application's connectivity needs to components.",
+        "urls": [
+          "https://docs.oracle.com/en-us/iaas/Content/Network/Concepts/overview.htm"
+        ],
+        "source_id": "oracle-oci-networking-documentation",
+        "resource": "Oracle Cloud Infrastructure Networking documentation",
+        "access_model": "public",
+        "time_basis": "12–18 hours including selected linked topics, editorial.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "changed",
+      "accepted_on_start": "40e613e78b0e72b4a81d91f7c2aec30cdabdf8c633a3b6d99ff4e45878e4e2cb",
+      "candidate": "eadc92b5507d0cdf761761716bb0a0a7f2da5ed8e01586a4f66b9f9d8277b324"
+    },
+    {
+      "code": "1Z0-1111-26",
+      "exam": {
+        "code": "1Z0-1111-26",
+        "observation": "Oracle MyLearn removed (2026) from the learning-path display title. The matched exam series code remains 1Z0-1111-26. Monitor detected an objective-text difference.",
+        "urls": [
+          "https://mylearn.oracle.com/ou/learning-path/become-an-oracle-cloud-infrastructure-observability-professional-2026/162237"
+        ],
+        "confidence": "High for cited public evidence; booking and live assessment delivery were not tested.",
+        "recommendation": "Preserve versioned certification identity; changing training labels alone do not identify a new exam.",
+        "monitor": "changed",
+        "accepted_objective_sha256": "b4fb087297786f8a3917dc0af3463d680f6e9717d3afe18a70c90265df56482c",
+        "candidate_objective_sha256": "8a7b952012b87ce70fe579d72120228e2ae5a167c8cedb1a407cbfee15548ccb",
+        "catalog_matches": {
+          "https://mylearn.oracle.com/ou/learning-path/become-an-oracle-cloud-infrastructure-observability-professional-2026/162237": {
+            "sources": [
+              "1z0-1111-26-blueprint"
+            ],
+            "candidates": []
+          }
+        }
+      },
+      "technical": {
+        "code": "1Z0-1111-26",
+        "observation": "Monitoring exposes service metrics and lets alarms feed Notifications; metrics, logs and events support distinct parts of diagnosis.",
+        "recommendation": "Keep the targeted guidance with its documented scope and existing qualifications.",
+        "confidence": "High for this documented point. No live lab was executed.",
+        "urls": [
+          "https://docs.oracle.com/en-us/iaas/Content/cloud-adoption-framework/monitoring-and-observability.htm"
+        ],
+        "source_ids": [
+          "oracle-oci-monitoring-observability-guidance"
+        ],
+        "candidate_ids": []
+      },
+      "learning": {
+        "code": "1Z0-1111-26",
+        "observation": "OCI monitoring and observability guidance distinguishes metrics, events, logs and analysis services used for capacity and performance decisions.",
+        "urls": [
+          "https://docs.oracle.com/en-us/iaas/Content/cloud-adoption-framework/monitoring-and-observability.htm"
+        ],
+        "source_id": "oracle-oci-monitoring-observability-guidance",
+        "resource": "OCI monitoring and observability guidance",
+        "access_model": "public",
+        "time_basis": "10–14 hours for selected linked guidance, editorial.",
+        "confidence": "High for the public description; private content and exercise outcomes untested.",
+        "recommendation": "Use this route for the identified scope and compare other prerequisites with the current blueprint."
+      },
+      "monitor_outcome": "changed",
+      "accepted_on_start": "b4fb087297786f8a3917dc0af3463d680f6e9717d3afe18a70c90265df56482c",
+      "candidate": "8a7b952012b87ce70fe579d72120228e2ae5a167c8cedb1a407cbfee15548ccb"
+    }
+  ],
+  "review_inputs": [
+    {
+      "code": "1Z0-830",
+      "guide": "guides/1Z0-830-oracle-java-se-21-developer-professional.md",
+      "guide_sha256_lf": "7f63b50986718780669904c0832fb6794968e390a913d9a635d754bc66c98b83",
+      "objective": "data/objective-snapshots/1z0-830-official-objectives.txt",
+      "objective_sha256": "190f4aa00369d04df712b1479897dc73a90a502008296ba623329e3ff4646f9b"
+    },
+    {
+      "code": "1Z0-1085-26",
+      "guide": "guides/1Z0-1085-26-oracle-cloud-infrastructure-foundations-associate.md",
+      "guide_sha256_lf": "ad00d7f7065539b3ce585a4ed03c11f70176cd4dabd24b0ead0660d1ebea9f36",
+      "objective": "data/objective-snapshots/1z0-1085-26-official-objectives.txt",
+      "objective_sha256": "5aec5199922193f9bc9fd118e974eb73f0000ac5ea0e613899dd4d262e7ffd44"
+    },
+    {
+      "code": "1Z0-1072-26",
+      "guide": "guides/1Z0-1072-26-oracle-cloud-infrastructure-architect-associate.md",
+      "guide_sha256_lf": "d8ffa266a25431765e0fbfb3d53200f43418fc7e46239a47e6266988c68fdf0a",
+      "objective": "data/objective-snapshots/1z0-1072-26-official-objectives.txt",
+      "objective_sha256": "6caee9398656f4de4f4fe669606e1f9862380e061c8fcf9ca417e6516bec14a6"
+    },
+    {
+      "code": "1Z0-1067-26",
+      "guide": "guides/1Z0-1067-26-oracle-cloud-infrastructure-cloud-operations-professional.md",
+      "guide_sha256_lf": "35b56c08734df09b9ad471511ba9db01de6587cf2bab1892d7060eb7b9c48f8d",
+      "objective": "data/objective-snapshots/1z0-1067-26-official-objectives.txt",
+      "objective_sha256": "317af1108a35b43d611bee316d39d933ccc8fa1ce00ecbb39336b2fb6c28260b"
+    },
+    {
+      "code": "1Z0-1104-26",
+      "guide": "guides/1Z0-1104-26-oracle-cloud-infrastructure-security-professional.md",
+      "guide_sha256_lf": "7a69c1dbf1bfe45a0a5da88c4cc2fffde26ceacb33ad3fe709187bb86d759094",
+      "objective": "data/objective-snapshots/1z0-1104-26-official-objectives.txt",
+      "objective_sha256": "1b662cc0bff386cddd4440bde7696ba376a37ebe61b18778b26ac4b9e1c5c7d8"
+    },
+    {
+      "code": "1Z0-171",
+      "guide": "guides/1Z0-171-oracle-ai-database-sql-associate.md",
+      "guide_sha256_lf": "01e243d127af6543f31c9b5448b59520a33082a5636d4ad3ae247715478edb87",
+      "objective": "data/objective-snapshots/1z0-171-official-objectives.txt",
+      "objective_sha256": "173476c88e31d3b1dc6a17d4b9b14a08cef4001a4cbb338b2f2edfa392e19dd7"
+    },
+    {
+      "code": "1Z0-182",
+      "guide": "guides/1Z0-182-oracle-ai-database-administration-associate.md",
+      "guide_sha256_lf": "4c0373d00d7f0c678130a5c4a9d5658a91836bf23d8f4898c56f79a4b1094a04",
+      "objective": "data/objective-snapshots/1z0-182-official-objectives.txt",
+      "objective_sha256": "a845bcc5712adc0f0c6791a142ab1a9158f3ae269e346478d9d5f9bd31bf8a22"
+    },
+    {
+      "code": "1Z0-997-26",
+      "guide": "guides/1Z0-997-26-oracle-cloud-infrastructure-architect-professional.md",
+      "guide_sha256_lf": "afcdc18f2356a00e768086f6756d1508bfe4d597018436f06dad1bc1430e6a3b",
+      "objective": "data/objective-snapshots/1z0-997-26-official-objectives.txt",
+      "objective_sha256": "179cb12e26fe986b4928ea0c474a4e0840fc4d813e0ae8913c2306f888203006"
+    },
+    {
+      "code": "1Z0-1084-26",
+      "guide": "guides/1Z0-1084-26-oracle-cloud-infrastructure-developer-professional.md",
+      "guide_sha256_lf": "98d5dbbb06ce136ba28981a214e42050239a07045ea5295bc0b97b8bc97b9bb9",
+      "objective": "data/objective-snapshots/1z0-1084-26-official-objectives.txt",
+      "objective_sha256": "c706ea7ed83d4723ad60bf7448bc9d3b722855607a38bbfb8dc0e425ce00b396"
+    },
+    {
+      "code": "1Z0-1109-26",
+      "guide": "guides/1Z0-1109-26-oracle-cloud-infrastructure-devops-professional.md",
+      "guide_sha256_lf": "6c347d3cdcbc54149bbf3428aba56c80e6ff495498ef6e941ae99501fc2aadc1",
+      "objective": "data/objective-snapshots/1z0-1109-26-official-objectives.txt",
+      "objective_sha256": "785c9cc11340f4991070a2c2794c884cdf105ba9f5ed74674004b751e4fd2215"
+    },
+    {
+      "code": "1Z0-1124-26",
+      "guide": "guides/1Z0-1124-26-oracle-cloud-infrastructure-networking-professional.md",
+      "guide_sha256_lf": "266fa82147ffdc4acc9e4abd34ac9be4f267832455316f79d40eb377376da82c",
+      "objective": "data/objective-snapshots/1z0-1124-26-official-objectives.txt",
+      "objective_sha256": "40e613e78b0e72b4a81d91f7c2aec30cdabdf8c633a3b6d99ff4e45878e4e2cb"
+    },
+    {
+      "code": "1Z0-1111-26",
+      "guide": "guides/1Z0-1111-26-oracle-cloud-infrastructure-observability-professional.md",
+      "guide_sha256_lf": "aee379707d31f56abe780eee0e8e153c217d3f2ce6917106237d8b4f3fa3e162",
+      "objective": "data/objective-snapshots/1z0-1111-26-official-objectives.txt",
+      "objective_sha256": "b4fb087297786f8a3917dc0af3463d680f6e9717d3afe18a70c90265df56482c"
+    }
+  ],
+  "independent_review": {
+    "method": "Fresh-context read-only AI review of changed content and source evidence",
+    "rubric": "docs/AI-AUDIT.md, version 2",
+    "reviewed_tree": "a09f8b251c74378b468ed40d99fd508cbe429ee9",
+    "summary": "Verified Oracle release note and support calendar details for OKE 1.37, including bandwidth, TLS namespace scope and end of 1.34.10 support. The two operational examples now retain their Related item scope after review of tree 5b77c4642c9e52ffbc457fce6402621a79c5a703. Oracle Database 26ai documentation also confirms the bigfile template defaults. All twelve guide/objective bindings match. Targeted change/evidence review only.",
+    "findings": [],
+    "validation": [
+      "unit tests",
+      "repository validation",
+      "reviewed learning resource check",
+      "site preparation",
+      "strict MkDocs build",
+      "generated site validation"
+    ]
+  }
+}
