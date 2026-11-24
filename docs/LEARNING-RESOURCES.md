@@ -612,7 +612,7 @@ Both main articles were read. Their code, videos, benchmark claims and deploymen
 
 Resource details from the [AB-620 guide](../guides/AB-620-designing-building-integrated-ai-agent-solutions.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-**Suggested practice.** Compare responsibility and ownership boundaries between a child agent and an independently maintained connected agent, then identify when cross-platform communication is needed. About 20–40 minutes to read the selected sections and produce the suggested comparison or checklist (editorial estimate; full path duration was not verified). [Design and build multi-agent solutions in Microsoft Copilot Studio](https://learn.microsoft.com/en-us/training/paths/design-build-multi-agent-solutions-copilot-studio/)
+**Suggested practice.** Compare responsibility and ownership boundaries between a child agent and an independently maintained connected agent, then identify when cross-platform communication is needed. Three implementation modules use the classic Copilot Studio experience. Allow about 20–40 minutes for the worksheet. Microsoft Learn lists 165 minutes across the 4 modules, before additional setup or practice. [Design and build multi-agent solutions in Microsoft Copilot Studio](https://learn.microsoft.com/en-us/training/paths/design-build-multi-agent-solutions-copilot-studio/)
 
 This is a curated starting point, not a complete list. Do **not** consume everything. Select the explanations, demonstrations, labs, and assessment signals that close your gaps, and keep the current official blueprint beside third-party material.
 
@@ -632,7 +632,7 @@ Read [Identify implementation options by harness](https://learn.microsoft.com/en
 #### Official course sequence
 
 - [Design agent conversations and responses using topics](https://learn.microsoft.com/en-us/training/paths/design-agent-conversations-responses-topics-copilot-studio/) — three modules; older recorded runtime 2 hours 17 minutes, not reverified in the current outline.
-- [Design and build multi-agent solutions](https://learn.microsoft.com/en-us/training/paths/design-build-multi-agent-solutions-copilot-studio/) — four modules; older recorded runtime 2 hours 54 minutes, not reverified in the current outline.
+- [Design and build multi-agent solutions](https://learn.microsoft.com/en-us/training/paths/design-build-multi-agent-solutions-copilot-studio/) — four modules; 2 hours 45 minutes across the four modules checked November 23.
 - [Integrate agents with enterprise systems](https://learn.microsoft.com/en-us/training/paths/integrate-agents-enterprise-systems-copilot-studio/) — four modules; older recorded runtime 3 hours 18 minutes, not reverified in the current outline.
 - [AB-620T00-A](https://learn.microsoft.com/en-us/training/courses/ab-620t00) — three instructor-led days in the current public listing; actual class availability depends on the provider.
 
@@ -1142,7 +1142,7 @@ Start with Microsoft's free Practice Assessment. Add paid questions only for a d
 
 Resource details from the [MS-721 guide](../guides/MS-721-collaboration-communications-systems-engineer.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-**Suggested practice.** Use the policy guided project and the room-preparation project as separate exercises: save a policy assignment plan and a room readiness checklist. About 20–40 minutes to read the selected sections and produce the suggested comparison or checklist (editorial estimate; full path duration was not verified). [MS-721 Manage Teams collaboration communications systems](https://learn.microsoft.com/en-us/training/paths/manage-teams-voice/)
+**Suggested practice.** Use the policy guided project and the room-preparation project as separate exercises: save a policy assignment plan and a room readiness checklist. Allow about 20–40 minutes for the worksheet. Microsoft Learn lists 485 minutes across the 8 modules, before additional setup or practice. [MS-721 Manage Teams collaboration communications systems](https://learn.microsoft.com/en-us/training/paths/manage-teams-voice/)
 
 This is a curated starting point, **not a complete list**, and it is not meant to be consumed in full. Choose one primary route, build a lab/topology, and add resources only for measured gaps. Reconcile every older source with the October 29, 2026 outline, especially Shared Calling, SMS, Queues app, Copilot, current events, Android enrollment/MDEP, flexible workspaces and room/device features.
 
@@ -1154,7 +1154,7 @@ Start with the [five-day Microsoft course](https://learn.microsoft.com/en-us/tra
 
 **Answer checkpoint:** Similar meeting names do not establish the same direction, entitlement or feature set. An advertised interop capability needs a direction-specific acceptance test; reading the synopsis is not successful interoperability execution.
 
-The two official paths are [plan and design Teams collaboration communications systems](https://learn.microsoft.com/en-us/training/paths/plan-configure-teams-voice/) (6h38) and [manage Teams collaboration communications systems](https://learn.microsoft.com/en-us/training/paths/manage-teams-voice/) (8h05), a historical total of **14 hours 43 minutes**. Current public pages list **15 modules (7/8)** without those runtimes in retrieved text; use the previous timings only as planning estimates.
+The two official paths are [plan and design Teams collaboration communications systems](https://learn.microsoft.com/en-us/training/paths/plan-configure-teams-voice/) (6h38) and [manage Teams collaboration communications systems](https://learn.microsoft.com/en-us/training/paths/manage-teams-voice/) (8h05), a historical total of **14 hours 43 minutes**. The paths list **15 modules (7/8)**. On November 23 the eight Manage modules still totaled 8 hours 5 minutes. The Plan and Design time and the combined total are historical estimates.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
@@ -1457,7 +1457,7 @@ The earlier O'Reilly, MeasureUp and Whizlabs gaps were not exhaustively rechecke
 
 Resource details from the [AB-210 guide](../guides/AB-210-accelerating-sales-pipelines-ai-dynamics-365.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-**Suggested practice.** Use the qualification module to write a sample handoff from automated lead research to a seller; identify which evidence warrants the handoff. About 20–40 minutes to read the selected sections and produce the suggested comparison or checklist (editorial estimate; full path duration was not verified). [Generate and qualify leads using AI in Dynamics 365 Sales](https://learn.microsoft.com/en-us/training/paths/generate-qualify-leads-ai-sales/)
+**Suggested practice.** Use the qualification module to write a sample handoff from automated lead research to a seller; identify which evidence warrants the handoff. Allow about 20–40 minutes for the worksheet. Microsoft Learn lists 135 minutes across the 3 modules, before additional setup or practice. [Generate and qualify leads using AI in Dynamics 365 Sales](https://learn.microsoft.com/en-us/training/paths/generate-qualify-leads-ai-sales/)
 
 #### October 28 learning route and evidence task
 
@@ -1585,7 +1585,7 @@ The five paths list **37 distinct modules** (16 + 8 + 6 + 3 + 4). Their current 
 
 Resource details from the [MB-330 guide](../guides/MB-330-microsoft-dynamics-365-supply-chain-management-functional-consultant.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-**Suggested practice.** Use one receipt to trace where warehouse setup gives way to inbound work and connect that work to the later outbound process. About 20–40 minutes to read the selected sections and produce the suggested comparison or checklist (editorial estimate; full path duration was not verified). [Configure and work with warehouse management in Dynamics 365 Supply Chain Management](https://learn.microsoft.com/en-us/training/paths/configure-work-warehouse-management-dyn365-supply-chain-mgmt/)
+**Suggested practice.** Follow a warehouse receipt from the mobile device menu through inbound work. Record which configuration controls each step. Allow about 20–40 minutes for the worksheet. Microsoft Learn lists 359 minutes across the 5 modules, before additional setup or practice. [Configure and work with warehouse management in Dynamics 365 Supply Chain Management](https://learn.microsoft.com/en-us/training/paths/configure-work-warehouse-management-dyn365-supply-chain-mgmt/)
 
 This is not a complete list and is not meant to be consumed in full. Choose one primary route, build complete product-to-plan and order-to-warehouse journeys, and add another resource only for a measured gap.
 
@@ -1604,7 +1604,7 @@ Follow the [five-day MB-330 course](https://learn.microsoft.com/en-us/training/c
 | [Procurement and vendors](https://learn.microsoft.com/en-us/training/paths/configure-manage-procurement-vendors-dyn365-supply-chain-mgmt/) | Free | 13 hours 41 minutes in the September 1 listing (historical); select objectives and allow 20–32 hours with transactions |
 | [Configure Asset Management](https://learn.microsoft.com/en-us/training/paths/configure-asset-management-dyn365-supply-chain-mgmt/) and [work with Asset Management](https://learn.microsoft.com/en-us/training/paths/work-asset-management-dyn365-supply-chain-mgmt/) | Free | 10 hours 45 minutes in the September 1 listing (historical); 18–28 hours with maintenance flows |
 | [Landed cost](https://learn.microsoft.com/en-us/training/paths/setup-work-landed-cost-dyn365-supply-chain-mgmt/) | Free | 2 hours 53 minutes in the September 1 listing (historical); 6–10 hours with voyage/cost reconciliation |
-| [Warehouse management](https://learn.microsoft.com/en-us/training/paths/configure-work-warehouse-management-dyn365-supply-chain-mgmt/) | Free | 5 hours 59 minutes in the September 1 listing (historical); 15–25 hours with mobile work/failure tests |
+| [Warehouse management](https://learn.microsoft.com/en-us/training/paths/configure-work-warehouse-management-dyn365-supply-chain-mgmt/) | Free | 5 hours 59 minutes across five modules checked November 23; 15–25 hours with mobile work/failure tests |
 | [Transportation management](https://learn.microsoft.com/en-us/training/paths/configure-work-transportation-mgmt-dyn365-supply-chain-mgmt/) | Free | 1 hour 43 minutes in the September 1 listing (historical); 5–8 hours with load/freight practice |
 | [Master planning](https://learn.microsoft.com/en-us/training/paths/master-planning-supply-chain-management/) | Free | 7 hours 20 minutes in the September 1 listing (historical); 14–22 hours with planning diagnostics |
 | [MB-330T00-A Conceptualize Supply Chain Management course](https://learn.microsoft.com/en-us/training/courses/mb-330t00) | Paid/provider-dependent | 5 days |
@@ -1615,7 +1615,7 @@ Follow the [five-day MB-330 course](https://learn.microsoft.com/en-us/training/c
 | [MeasureUp MB-330 practice test](https://www.measureup.com/microsoft-practice-test-mb-330-microsoft-dynamics-365-supply-chain-management.html) | Paid; free demo | Public listing: 154 questions, last updated March 2023; obsolete MB-300 prerequisite statement and unverified October coverage. No paid questions reviewed |
 | [Microsoft Partner Skilling Hub](https://www.skilling-hub.com/en-US) | Partner login required | Use the five-day course pattern for planning; signed-in event start/end times control |
 
-The September 1 durations sum to **50 hours 7 minutes** across eight paths; this review checked landing pages, not every module or a current total. Treat these timings as historical planning observations, not freshly verified runtimes; the full five-day syllabus contains additional manufacturing and adjacent modules, so select against the blueprint. Allow roughly **120–190 hours** for a new practitioner to complete a primary route, build the labs and remediate assessment gaps. No exact current MB-330 Pluralsight, O’Reilly or Whizlabs product was independently verified. Question-bank-only listings and “guaranteed pass” claims were excluded; reject recalled live content and unexplained bulk questions.
+The September 1 durations sum to **50 hours 7 minutes** across eight paths; the warehouse path was rechecked on November 23. The combined eight-path time remains historical. The other seven path times remain historical. The full five-day syllabus contains additional manufacturing and adjacent modules, so select against the blueprint. Allow roughly **120–190 hours** for a new practitioner to complete a primary route, build the labs and remediate assessment gaps. No exact current MB-330 Pluralsight, O’Reilly or Whizlabs product was independently verified. Question-bank-only listings and “guaranteed pass” claims were excluded; reject recalled live content and unexplained bulk questions.
 
 #### Useful blog reading with a task
 
@@ -2273,7 +2273,7 @@ These are supplemental explanations, not exam-authoritative material. Public tex
 
 Resource details from the [AI-200 guide](../guides/AI-200-developing-ai-cloud-solutions-on-azure.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-**Suggested practice.** For one AI feature, sketch a cache entry, an event and a vector search input; explain which Redis workload each represents. About 20–40 minutes to read the selected sections and produce the suggested comparison or checklist (editorial estimate; full path duration was not verified). [Enhance AI solutions with Azure Managed Redis](https://learn.microsoft.com/en-us/training/paths/enhance-ai-solutions-azure-managed-redis/)
+**Suggested practice.** For one AI feature, sketch a cache entry, an event and a vector search input; explain which Redis workload each represents. Allow about 20–40 minutes for the worksheet. Microsoft Learn lists 222 minutes across the 3 modules, before additional setup or practice. [Enhance AI solutions with Azure Managed Redis](https://learn.microsoft.com/en-us/training/paths/enhance-ai-solutions-azure-managed-redis/)
 
 This is **not a complete list**, and it is not a recommendation to consume everything. Pick one current primary path, build the labs, and use targeted references or practice for gaps. Times are page-published when available; otherwise they are clearly labeled estimates. Catalogs, schedules, access, duration, price and alignment change. Avoid dumps or anything claiming recalled/live exam questions.
 

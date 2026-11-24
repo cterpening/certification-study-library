@@ -440,7 +440,7 @@ Field sellers need mobile updates, Teams calls, quote approval and regional anal
 
 ## Places to learn
 
-**Suggested practice.** Use the qualification module to write a sample handoff from automated lead research to a seller; identify which evidence warrants the handoff. About 20–40 minutes to read the selected sections and produce the suggested comparison or checklist (editorial estimate; full path duration was not verified). [Generate and qualify leads using AI in Dynamics 365 Sales](https://learn.microsoft.com/en-us/training/paths/generate-qualify-leads-ai-sales/)
+**Suggested practice.** Use the qualification module to write a sample handoff from automated lead research to a seller; identify which evidence warrants the handoff. Allow about 20–40 minutes for the worksheet. Microsoft Learn lists 135 minutes across the 3 modules, before additional setup or practice. [Generate and qualify leads using AI in Dynamics 365 Sales](https://learn.microsoft.com/en-us/training/paths/generate-qualify-leads-ai-sales/)
 
 ### October 28 learning route and evidence task
 

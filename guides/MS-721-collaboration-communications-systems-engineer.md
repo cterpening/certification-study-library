@@ -624,7 +624,7 @@ Inventory app/OS/OEM/Agent/cloud versions, portal access and AOSP compliance. Re
 
 ## Places to learn
 
-**Suggested practice.** Use the policy guided project and the room-preparation project as separate exercises: save a policy assignment plan and a room readiness checklist. About 20–40 minutes to read the selected sections and produce the suggested comparison or checklist (editorial estimate; full path duration was not verified). [MS-721 Manage Teams collaboration communications systems](https://learn.microsoft.com/en-us/training/paths/manage-teams-voice/)
+**Suggested practice.** Use the policy guided project and the room-preparation project as separate exercises: save a policy assignment plan and a room readiness checklist. Allow about 20–40 minutes for the worksheet. Microsoft Learn lists 485 minutes across the 8 modules, before additional setup or practice. [MS-721 Manage Teams collaboration communications systems](https://learn.microsoft.com/en-us/training/paths/manage-teams-voice/)
 
 This is a curated starting point, **not a complete list**, and it is not meant to be consumed in full. Choose one primary route, build a lab/topology, and add resources only for measured gaps. Reconcile every older source with the October 29, 2026 outline, especially Shared Calling, SMS, Queues app, Copilot, current events, Android enrollment/MDEP, flexible workspaces and room/device features.
 
@@ -636,7 +636,7 @@ Start with the [five-day Microsoft course](https://learn.microsoft.com/en-us/tra
 
 **Answer checkpoint:** Similar meeting names do not establish the same direction, entitlement or feature set. An advertised interop capability needs a direction-specific acceptance test; reading the synopsis is not successful interoperability execution.
 
-The two official paths are [plan and design Teams collaboration communications systems](https://learn.microsoft.com/en-us/training/paths/plan-configure-teams-voice/) (6h38) and [manage Teams collaboration communications systems](https://learn.microsoft.com/en-us/training/paths/manage-teams-voice/) (8h05), a historical total of **14 hours 43 minutes**. Current public pages list **15 modules (7/8)** without those runtimes in retrieved text; use the previous timings only as planning estimates.
+The two official paths are [plan and design Teams collaboration communications systems](https://learn.microsoft.com/en-us/training/paths/plan-configure-teams-voice/) (6h38) and [manage Teams collaboration communications systems](https://learn.microsoft.com/en-us/training/paths/manage-teams-voice/) (8h05), a historical total of **14 hours 43 minutes**. The paths list **15 modules (7/8)**. On November 23 the eight Manage modules still totaled 8 hours 5 minutes. The Plan and Design time and the combined total are historical estimates.
 
 | Resource | Access | Estimated time |
 |---|---|---:|

@@ -371,9 +371,9 @@ Azure Managed Redis is Microsoft's current fully managed Redis offering with Red
 
 #### Match clustering, modules and client
 
-Managed Redis commonly uses **OSS clustering**, which requires a cluster-aware client: port 10000 is the initial endpoint and discovered shards use additional ports. For **RediSearch/vector search**, the current supported combination is **Enterprise clustering plus `NoEviction`**. Enable the module when creating the database; modules cannot be added later. OSS clustering does not support RediSearch. Size memory for vectors and indexes, and handle writes failing at the memory limit. [Architecture](https://learn.microsoft.com/en-us/azure/redis/architecture), [creation requirements](https://learn.microsoft.com/en-us/azure/redis/quickstart-create-managed-redis)
+OSS clustering needs a cluster-aware client. Port 10000 is its initial endpoint, and the client discovers additional shard ports. For a vector index, choose Enterprise clustering or the Non-clustered preview on a supported in-memory tier. Non-clustered supports caches up to 25 GB. Budget memory for both vectors and the index. With `NoEviction`, writes that require more memory can fail when the cache fills. [Architecture](https://learn.microsoft.com/en-us/azure/redis/architecture) · [Creation guide](https://learn.microsoft.com/en-us/azure/redis/quickstart-create-managed-redis)
 
-**Open documentation gap:** the creation guide says clustering cannot change after creation; the [database-update API](https://learn.microsoft.com/en-us/rest/api/redis/redisenterprisecache/databases/update?view=rest-redis-redisenterprisecache-2025-07-01) allows a change when the current policy is `NoCluster`, while OSS/Enterprise changes require database deletion. The architecture page adds size/geo-replication constraints. Choose the correct policy/module at creation, and obtain a confirmed migration path for a particular existing database. Do not turn this disagreement into an instruction to delete a database.
+**VERIFY CURRENT (November 23, 2026).** Redis 7.4 lets you select RediSearch at creation. Redis 8.2 preview bundles the modules on new Memory Optimized, Balanced and Compute Optimized instances. OSS and Enterprise policies are fixed for the life of the cache. An existing `NoCluster` cache outside active geo-replication can move to a supported clustered policy. That change affects client routing and does not install a module. [Database update API](https://learn.microsoft.com/en-us/rest/api/redis/redisenterprisecache/databases/update?view=rest-redis-redisenterprisecache-2025-07-01) · [Microsoft module and clustering guidance](../docs/research/2026-11-23-microsoft-application-refresh.md#redis-vector-search)
 
 #### Data operations and caching
 
@@ -776,7 +776,7 @@ The first eight labs describe optional infrastructure exercises; none were run i
 
 1. Recalculate examples 1 and 4 with a second revision and a 25% model-capacity reduction.
 2. Produce a table of build, image-pull and runtime identities with allowed and denied operations for the actual ACR mode.
-3. Mark each Redis requirement: client protocol, ports, modules, memory, eviction, data rebuild, rollback and unresolved conversion support.
+3. Mark each Redis requirement: client protocol, ports, modules, memory, eviction, data rebuild, rollback and policy changes supported for the starting configuration.
 4. Inventory runtime/package/protocol deadlines separately; attach a dated owner and verification step. Deliver a release/no-release decision, not a claim that a plan deploys successfully.
 
 ### Lab 10: replay, rotation and telemetry evidence
@@ -834,7 +834,7 @@ These are original prompts, not recalled exam questions. Answer with requirement
 39. Which AKS pod label and ServiceAccount dependency does workload identity require?
 40. Which Cosmos change-feed implementation can a Python application actually use?
 41. Why is an unhandled Cosmos-triggered Function error not sufficient evidence of retry?
-42. Which Managed Redis combination supports RediSearch, and what conversion question remains open?
+42. A RediSearch index needs 40 GB. Which clustering policy can serve it, and what happens under memory pressure if you select NoEviction?
 43. How many eight-connection workers fit example 1, and what breaks during overlap?
 44. Why must a deletion watermark survive late version-3 work in example 2?
 45. What does 40% filtered recall say about authorization in example 3?
@@ -843,7 +843,7 @@ These are original prompts, not recalled exam questions. Answer with requirement
 48. Why do 100 sampled telemetry rows represent 910 requests in example 6?
 
 49. Do two differently ordered DiskANN result sets prove that source data or authorization changed?
-50. Can an API-supported NoCluster conversion install a missing RediSearch module after creation?
+50. A Redis 7.4 cache was created without RediSearch. What would changing its eligible NoCluster policy accomplish?
 
 
 ### Answer explanations
@@ -889,7 +889,7 @@ These are original prompts, not recalled exam questions. Answer with requirement
 39. Label the pod template `azure.workload.identity/use: "true"`; reference an appropriately annotated ServiceAccount and configure the cluster/federated identity prerequisites. Image pull is a separate identity boundary.
 40. A supported Python Cosmos-triggered Function or SDK pull reader; the self-hosted processor library is .NET/Java. Pull readers own their continuation/recovery/coordination, and mode/SDK support must be checked separately.
 41. The trigger does not retry application failures by default. Add supported retry policy and durable failed-item/reconciliation handling; batch replay requires idempotency even when retry is enabled.
-42. Enterprise clustering, NoEviction and a RediSearch module selected at creation. The quickstart's blanket immutability statement conflicts with the API's NoCluster conversion exception; confirm the exact existing-database path.
+42. Choose Enterprise on a supported in-memory tier. The Non-clustered option is capped at 25 GB, and OSS does not support RediSearch. With NoEviction, new writes that need more memory can fail. Budget for index growth.
 43. Twenty-three workers fit within 300: `40 + 70 + 23 × 8 = 294`. Two such revisions demand 478; cap overlap or redesign capacity before rollout.
 44. Deletion at version 4 must continue rejecting older work. Erasing the watermark allows stale work to recreate state; a later legitimate version needs an explicit recreation policy.
 45. Recall measures relevant authorized matches recovered, not access correctness. All four may be authorized while six relevant matches are missed; never relax authorization to improve the count.
@@ -898,7 +898,7 @@ These are original prompts, not recalled exam questions. Answer with requirement
 48. Each retained row represents its sampling weight: `90 × 10 + 10 = 910`. Weighted failures are about 1.10%; raw sample counts and missing traces cannot be treated as full-population evidence.
 
 49. No. Independently built approximate indexes can differ by replica. Keep query/model/source versions and authorization fixed; evaluate recall, freshness, latency and RU separately.
-50. No. Policy conversion and module installation are different capabilities; the documented create-time module requirement still applies, and the support conflict remains unresolved.
+50. Conversion changes the clustering policy. A 7.4 instance that needs a missing module requires a separately provisioned instance and a planned data migration.
 
 ---
 
@@ -925,7 +925,7 @@ These are original prompts, not recalled exam questions. Answer with requirement
 
 ## Places to learn
 
-**Suggested practice.** For one AI feature, sketch a cache entry, an event and a vector search input; explain which Redis workload each represents. About 20–40 minutes to read the selected sections and produce the suggested comparison or checklist (editorial estimate; full path duration was not verified). [Enhance AI solutions with Azure Managed Redis](https://learn.microsoft.com/en-us/training/paths/enhance-ai-solutions-azure-managed-redis/)
+**Suggested practice.** For one AI feature, sketch a cache entry, an event and a vector search input; explain which Redis workload each represents. Allow about 20–40 minutes for the worksheet. Microsoft Learn lists 222 minutes across the 3 modules, before additional setup or practice. [Enhance AI solutions with Azure Managed Redis](https://learn.microsoft.com/en-us/training/paths/enhance-ai-solutions-azure-managed-redis/)
 
 This is **not a complete list**, and it is not a recommendation to consume everything. Pick one current primary path, build the labs, and use targeted references or practice for gaps. Times are page-published when available; otherwise they are clearly labeled estimates. Catalogs, schedules, access, duration, price and alignment change. Avoid dumps or anything claiming recalled/live exam questions.
 

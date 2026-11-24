@@ -779,7 +779,7 @@ The [AI Agent Builder Associate credential page](https://learn.microsoft.com/en-
 
 ## Places to learn
 
-**Suggested practice.** Compare responsibility and ownership boundaries between a child agent and an independently maintained connected agent, then identify when cross-platform communication is needed. About 20–40 minutes to read the selected sections and produce the suggested comparison or checklist (editorial estimate; full path duration was not verified). [Design and build multi-agent solutions in Microsoft Copilot Studio](https://learn.microsoft.com/en-us/training/paths/design-build-multi-agent-solutions-copilot-studio/)
+**Suggested practice.** Compare responsibility and ownership boundaries between a child agent and an independently maintained connected agent, then identify when cross-platform communication is needed. Three implementation modules use the classic Copilot Studio experience. Allow about 20–40 minutes for the worksheet. Microsoft Learn lists 165 minutes across the 4 modules, before additional setup or practice. [Design and build multi-agent solutions in Microsoft Copilot Studio](https://learn.microsoft.com/en-us/training/paths/design-build-multi-agent-solutions-copilot-studio/)
 
 This is a curated starting point, not a complete list. Do **not** consume everything. Select the explanations, demonstrations, labs, and assessment signals that close your gaps, and keep the current official blueprint beside third-party material.
 
@@ -799,7 +799,7 @@ Read [Identify implementation options by harness](https://learn.microsoft.com/en
 ### Official course sequence
 
 - [Design agent conversations and responses using topics](https://learn.microsoft.com/en-us/training/paths/design-agent-conversations-responses-topics-copilot-studio/) — three modules; older recorded runtime 2 hours 17 minutes, not reverified in the current outline.
-- [Design and build multi-agent solutions](https://learn.microsoft.com/en-us/training/paths/design-build-multi-agent-solutions-copilot-studio/) — four modules; older recorded runtime 2 hours 54 minutes, not reverified in the current outline.
+- [Design and build multi-agent solutions](https://learn.microsoft.com/en-us/training/paths/design-build-multi-agent-solutions-copilot-studio/) — four modules; 2 hours 45 minutes across the four modules checked November 23.
 - [Integrate agents with enterprise systems](https://learn.microsoft.com/en-us/training/paths/integrate-agents-enterprise-systems-copilot-studio/) — four modules; older recorded runtime 3 hours 18 minutes, not reverified in the current outline.
 - [AB-620T00-A](https://learn.microsoft.com/en-us/training/courses/ab-620t00) — three instructor-led days in the current public listing; actual class availability depends on the provider.
 
