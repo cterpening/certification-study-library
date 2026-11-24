@@ -1051,6 +1051,45 @@ def extract_isc2_status(page_html: str) -> dict[str, list[str]]:
     }
 
 
+class NvidiaWeightedHeadings(HTMLParser):
+    """Pair each topics subheading with the weighted domain heading in its card."""
+
+    def __init__(self) -> None:
+        super().__init__(convert_charrefs=True)
+        self.headings: list[tuple[str, str]] = []
+        self.heading: tuple[str, str] | None = None
+        self.tag = ""
+        self.weight = ""
+        self.parts: list[str] = []
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if tag in {"h2", "h3"}:
+            self.heading = None
+        if tag == "h3":
+            label = dict(attrs).get("data-verticalnav-customtitle") or ""
+            match = re.search(r":\s*(\d+%)$", label)
+            self.weight = match.group(1) if match else ""
+        if tag in {"h2", "h3", "h4"}:
+            self.tag = tag
+            self.parts = []
+
+    def handle_data(self, value: str) -> None:
+        if self.tag:
+            self.parts.append(value)
+
+    def handle_endtag(self, tag: str) -> None:
+        if not self.tag or tag != self.tag:
+            return
+        text = " ".join("".join(self.parts).split())
+        if tag == "h3" and self.weight:
+            self.heading = (text, self.weight)
+        elif tag == "h4" and text.endswith(" Potential Exam Topics:") and self.heading:
+            self.headings.append(self.heading)
+            self.heading = None
+        self.tag = ""
+        self.parts = []
+
+
 def extract_nvidia_objectives(page_html: str) -> str:
     """Capture an NVIDIA certification's public weighted blueprint."""
 
@@ -1087,15 +1126,28 @@ def extract_nvidia_objectives(page_html: str) -> str:
         )
         content = lines[preparation:end]
         weights = [int(line[:-1]) for line in content if re.fullmatch(r"\d+%", line)]
+        named_suffix = " Potential Exam Topics:"
+        topic_positions = [
+            index for index, line in enumerate(content)
+            if line == "Exam Topics:" or line.endswith(named_suffix)
+        ]
         if (
             len(weights) < 3
             or sum(weights) != 100
-            or content.count("Exam Topics:") != len(weights)
+            or len(topic_positions) != len(weights)
             or content.count("Exam Weight") != len(weights)
         ):
             raise ValueError("Extracted NVIDIA preparation topics were incomplete")
-        topic_positions = [index for index, line in enumerate(content) if line == "Exam Topics:"]
         weight_positions = [index for index, line in enumerate(content) if re.fullmatch(r"\d+%", line)]
+        named_topics = any(content[pos].endswith(named_suffix) for pos in topic_positions)
+        selected = [*lines[code_index - 2 : code_index + 1], preparation_heading]
+        if named_topics:
+            card_headings = NvidiaWeightedHeadings()
+            card_headings.feed(page_html)
+            card_headings.close()
+            if len(card_headings.headings) != len(topic_positions):
+                raise ValueError("Extracted NVIDIA preparation topics were incomplete")
+        seen_domains: set[str] = set()
         for number, (topic, weight) in enumerate(zip(topic_positions, weight_positions)):
             next_topic = topic_positions[number + 1] if number + 1 < len(topic_positions) else len(content)
             if (
@@ -1104,7 +1156,16 @@ def extract_nvidia_objectives(page_html: str) -> str:
                 or content[weight + 1] != "Exam Weight"
             ):
                 raise ValueError("Extracted NVIDIA preparation topics were incomplete")
-        selected = [*lines[code_index - 2 : code_index + 1], *content]
+            if named_topics:
+                domain = content[topic].removesuffix(named_suffix)
+                if (not content[topic].endswith(named_suffix) or not domain
+                        or card_headings.headings[number] != (domain, content[weight])
+                        or domain in seen_domains):
+                    raise ValueError("Extracted NVIDIA preparation topics were incomplete")
+                seen_domains.add(domain)
+                selected.extend([domain, content[weight], *content[topic + 1:weight]])
+        if not named_topics:
+            selected = [*lines[code_index - 2 : code_index + 1], *content]
         return "\n".join(selected).strip() + "\n"
     blueprint = next(
         (

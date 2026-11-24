@@ -5,15 +5,17 @@ official_blueprint: https://www.nvidia.com/en-us/learn/certification/ai-infrastr
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: source-validated
-last_verified: 2026-10-29
+review_status: review-required
+last_verified: 2026-11-23
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-10-29
+upcoming_change_checked: 2026-11-23
 ---
 
 # NVIDIA-Certified Associate: AI Infrastructure and Operations (NCA-AIIO) Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** All 22 public objectives, the six-page study guide, delivery details and selected operations documentation were reviewed September 29, 2026. The local workbook passed 34 checks; eight infrastructure activities remain proposed. See the [deep-review report](../docs/research/2026-09-29-nca-aiio-deep-review.md). See the [coverage record](../docs/SOURCE-VALIDATION.md#nca-aiio-coverage-record).
+**Objective table (November 23, 2026).** NVIDIA publishes 22 topics. Essential AI Knowledge has eight topics (38%), AI Infrastructure has ten (40%) and AI Operations has four (22%). The infrastructure wording changes preserve the same teaching areas. The archived outline includes earlier resource and practice labels. Full source validation of the revised guide is pending. [Sources and study resources](../docs/research/2026-11-23-refresh-23.md#nca-aiio)
+
+> **Independent AI-assisted resource — HISTORICAL SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** All 22 public objectives, the six-page study guide, delivery details and selected operations documentation were reviewed September 29, 2026. The local workbook passed 34 checks; eight infrastructure activities remain proposed. See the [deep-review report](../docs/research/2026-09-29-nca-aiio-deep-review.md). See the [coverage record](../docs/SOURCE-VALIDATION.md#nca-aiio-coverage-record).
 
 **Current baseline:** NCA-AIIO is an active, English, remotely proctored associate exam with 50 questions in one hour. The certification page lists USD 125; the separate DGX learning-path card displayed USD 135 when checked. Treat the certification page as the exam authority and verify the Certiverse checkout total before purchase.<br>
 **Upcoming change:** No revision or retirement announcement was present on the checked certification page September 29, 2026.<br>

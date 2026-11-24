@@ -38339,7 +38339,7 @@
       "review_type": "source-validation",
       "reviewed_on": "2026-10-29",
       "outcome": "passed",
-      "blueprint_snapshot_path": "data/objective-snapshots/nca-aiio-official-objectives.txt",
+      "blueprint_snapshot_path": "data/objective-snapshots/archive/nca-aiio-99feae0bb9bd6c7ade80eddfb848aaddde0582ee7a739302e65411babb367ed7.txt",
       "blueprint_snapshot_sha256": "99feae0bb9bd6c7ade80eddfb848aaddde0582ee7a739302e65411babb367ed7",
       "objective_coverage": [
         {
@@ -41700,6 +41700,56 @@
         "missing_or_error": 0
       },
       "notes": "All 49 objective IDs and labels match the earlier ledger in order. This scoped migration drops documentation and tutorial column text from the new snapshot. Earlier reviews retain the original bytes. A new guide-wide source validation remains pending."
+    },
+    {
+      "id": "nca-aiio-2026-11-23-effective-outline",
+      "exam_code": "NCA-AIIO",
+      "guide_path": "guides/NCA-AIIO-nvidia-ai-infrastructure-operations-associate.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-11-23",
+      "outcome": "blocked",
+      "blueprint_snapshot_path": "data/objective-snapshots/nca-aiio-official-objectives.txt",
+      "blueprint_snapshot_sha256": "18e631491ac54940d10c59352461a1dc8eee33ed1b6252f7206cc94e96d07ff4",
+      "objective_coverage": [
+        {
+          "objective_group": "Essential AI Knowledge (38%)",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Labs 1–2 and 8"
+          ]
+        },
+        {
+          "objective_group": "AI Infrastructure (40%)",
+          "guide_sections": [
+            "Section 2",
+            "All scenarios",
+            "Labs 1–4 and 7–8"
+          ]
+        },
+        {
+          "objective_group": "AI Operations (22%)",
+          "guide_sections": [
+            "Section 3",
+            "All scenarios",
+            "Labs 5–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": false,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": false,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 19,
+        "reachable": 18,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "Reviewed all 22 official topic entries and the matching weighted sections in the guide. The normalized outline excludes card controls and appended practice labels. Previous validations retain the original snapshot. The full guide claim and link assessment is pending."
     }
 ]
 }

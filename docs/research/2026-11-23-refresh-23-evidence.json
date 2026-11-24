@@ -1,0 +1,173 @@
+{
+  "date": "2026-11-23",
+  "scope": "Scoped monitor and guide comparison. Public and rendered-source boundaries are recorded below.",
+  "exams": [
+    {
+      "code": "NCA-AIIO",
+      "canonical": "https://www.nvidia.com/en-us/learn/certification/ai-infrastructure-operations-associate/",
+      "tag": "tested adapter proposal",
+      "http_status": 200,
+      "original_error": "ValueError: Extracted NVIDIA preparation topics were incomplete",
+      "monitor_visible_lines": 776,
+      "source_structure": "The unique edition-specific preparation heading precedes three content groups. Each group has an h3 naming the domain, an h4 repeating that domain followed by ' Potential Exam Topics:', a bulleted list, a decorated percentage and line break before 'Exam Weight'. Resource accordions follow each weight; practice links and registration follow the final group. No corresponding agreement has to be inferred from the page navigation or hidden HTML.",
+      "objective_comparison": "Eight Essential AI Knowledge tasks at 38%, ten AI Infrastructure tasks at 40%, and four AI Operations tasks at 22%. Knowledge and Operations wording matches exactly. Ten Infrastructure lines add punctuation or make minor copy edits, including DC→data center, datacenter→data center, and high speed→high-speed. The accepted snapshot's old table/control labels and appended practice prompts are omitted in the new named-card projection.",
+      "old_objective_sha256": "99feae0bb9bd6c7ade80eddfb848aaddde0582ee7a739302e65411babb367ed7",
+      "new_objective_sha256": "18e631491ac54940d10c59352461a1dc8eee33ed1b6252f7206cc94e96d07ff4",
+      "old_status_sha256": "2035c027364a586c49725df14d32bd95b896d142acab103b31aa2160b0dcf5b1",
+      "new_status_sha256": "2035c027364a586c49725df14d32bd95b896d142acab103b31aa2160b0dcf5b1",
+      "status": "Associate, 50 questions, one hour, USD 125, English, basic data center infrastructure knowledge; two-year validity. No upcoming announcement emitted.",
+      "recommendation": "Reconcile and accept the formatting/topic-copy update alongside guide-level evidence after review. Preserve previous generic Exam Topics and legacy blueprint behavior.",
+      "observation": "Eight Essential AI Knowledge tasks at 38%, ten AI Infrastructure tasks at 40%, and four AI Operations tasks at 22%. Knowledge and Operations wording matches exactly. Ten Infrastructure lines add punctuation or make minor copy edits, including DC→data center, datacenter→data center, and high speed→high-speed. The accepted snapshot's old table/control labels and appended practice prompts are omitted in the new named-card projection.",
+      "urls": [
+        "https://www.nvidia.com/en-us/learn/certification/ai-infrastructure-operations-associate/"
+      ],
+      "targeted_monitor": {
+        "status": "changed",
+        "url": "https://www.nvidia.com/en-us/learn/certification/ai-infrastructure-operations-associate/",
+        "error": null,
+        "previous_sha256": "99feae0bb9bd6c7ade80eddfb848aaddde0582ee7a739302e65411babb367ed7",
+        "current_sha256": "18e631491ac54940d10c59352461a1dc8eee33ed1b6252f7206cc94e96d07ff4",
+        "objectives_changed": true,
+        "status_changed": false
+      }
+    },
+    {
+      "code": "SERVICENOW-CSA",
+      "canonical": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011554",
+      "also_opened": "https://nowlearning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011554",
+      "title": "Credentials - Certified System Administrator (CSA) Mainline Exam Blueprint - Knowledge Portal",
+      "weights": [
+        7,
+        10,
+        20,
+        20,
+        30,
+        13
+      ],
+      "body_comparison": "The monitor received ~207 KB of HTML with only three visible lines on both hosts. Description metadata ends at the opening introduction. The separate public issuer reader shows the scope table ending at 'Exam Registration'.",
+      "old_objective_sha256": "7b94b0c2b2f331a2e878694c8b9aaa6db8e998bfc0424d75dca80e6cdbe1d553",
+      "tag": "manual-review",
+      "http_status": 200,
+      "monitor_visible_lines": [
+        "ID-specific title",
+        "Loading...",
+        "Skip to page content"
+      ],
+      "rendered_issuer_date": "Updated January 2026",
+      "comparison": "Published domain names and all six weights agree with the accepted guide. The reader displays the article body, whereas the registered non-browser transport exposes only a generic shell and an ID-specific title. This manual cross-check does not yield an automated snapshot hash.",
+      "old_status_sha256": "e3b4772cbfdcf2428eab25fa1a8fb15f7d58ff4d5473ec9bcfd66a0a7229a410",
+      "new_objective_sha256": null,
+      "new_status_sha256": null,
+      "monitor_error": "ValueError: Could not find ServiceNow Exam Scope",
+      "recommendation": "Retain the accepted records and existing manual-review limitation in config/objective-monitor-limitations.json. The monitor has no current extractable objective or status text. The rendered public article is suitable for a dated manually attributed comparison.",
+      "observation": "The canonical knowledge-base response returned a loading page to the monitor. The rendered issuer blueprint supplies six domain weights. The previous accepted snapshot is retained and a manual check remains required.",
+      "urls": [
+        "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011554"
+      ],
+      "targeted_monitor": {
+        "status": "manual-review",
+        "url": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011554",
+        "error": "ValueError: Could not find ServiceNow Exam Scope",
+        "previous_sha256": null,
+        "current_sha256": null,
+        "objectives_changed": null,
+        "status_changed": null
+      }
+    },
+    {
+      "code": "SERVICENOW-CAD",
+      "canonical": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011498",
+      "also_opened": "https://nowlearning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011498",
+      "title": "Credentials - Certified Application Developer (CAD) Exam Blueprint - Knowledge Portal",
+      "weights": [
+        20,
+        20,
+        20,
+        20,
+        10,
+        10
+      ],
+      "body_comparison": "The monitor received ~207 KB of HTML with only three visible lines on both hosts. Description metadata ends at the opening introduction. The separate public issuer reader shows the scope table ending at 'Exam Registration'.",
+      "old_objective_sha256": "f71371fc8583ec438fbdde805d2e69d8034607333e1bc033ccc74ae5a261b59a",
+      "tag": "manual-review",
+      "http_status": 200,
+      "monitor_visible_lines": [
+        "ID-specific title",
+        "Loading...",
+        "Skip to page content"
+      ],
+      "rendered_issuer_date": "Updated January 2026",
+      "comparison": "Published domain names and all six weights agree with the accepted guide. The reader displays the article body, whereas the registered non-browser transport exposes only a generic shell and an ID-specific title. This manual cross-check does not yield an automated snapshot hash.",
+      "old_status_sha256": "e3b4772cbfdcf2428eab25fa1a8fb15f7d58ff4d5473ec9bcfd66a0a7229a410",
+      "new_objective_sha256": null,
+      "new_status_sha256": null,
+      "monitor_error": "ValueError: Could not find ServiceNow Exam Scope",
+      "recommendation": "Retain the accepted records and existing manual-review limitation in config/objective-monitor-limitations.json. The monitor has no current extractable objective or status text. The rendered public article is suitable for a dated manually attributed comparison.",
+      "observation": "The canonical knowledge-base response returned a loading page to the monitor. The rendered issuer blueprint supplies six domain weights. The previous accepted snapshot is retained and a manual check remains required.",
+      "urls": [
+        "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011498"
+      ],
+      "targeted_monitor": {
+        "status": "manual-review",
+        "url": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011498",
+        "error": "ValueError: Could not find ServiceNow Exam Scope",
+        "previous_sha256": null,
+        "current_sha256": null,
+        "objectives_changed": null,
+        "status_changed": null
+      }
+    }
+  ],
+  "excluded_historical_pdfs": [
+    {
+      "url": "https://www.servicenow.com/community/s/cgfwn76974/attachments/cgfwn76974/training-certifications-forum/5843/1/ServiceNow-Sys-Admin-Exam-Specs.pdf",
+      "reason": "2017 CSA specification; five-domain blueprint differs from the current January 2026 issuer page."
+    },
+    {
+      "url": "https://www.servicenow.com/community/s/cgfwn76974/attachments/cgfwn76974/developer-forum/714196/1/Application%20developer%20exam-blueprint.pdf",
+      "reason": "CAD examination specification copyrighted 2016."
+    },
+    {
+      "url": "https://www.servicenow.com/community/s/cgfwn76974/attachments/cgfwn76974/training-certifications-forum/9901/1/blueprint-cad-.pdf",
+      "reason": "CAD New York release updated October 30, 2019."
+    }
+  ],
+  "review_inputs": [
+    {
+      "code": "NCA-AIIO",
+      "guide": "guides/NCA-AIIO-nvidia-ai-infrastructure-operations-associate.md",
+      "guide_sha256_lf": "489d2c060affe54c76b0d0e8897d8251c08c4ab1e6dd7f5058c178cd4752ff97",
+      "objective": "data/objective-snapshots/nca-aiio-official-objectives.txt",
+      "objective_sha256": "18e631491ac54940d10c59352461a1dc8eee33ed1b6252f7206cc94e96d07ff4"
+    },
+    {
+      "code": "SERVICENOW-CSA",
+      "guide": "guides/SERVICENOW-CSA-servicenow-certified-system-administrator.md",
+      "guide_sha256_lf": "a58d433383ce405b6f4189826934cfa6b7e69d3367d1000c46fa7e60c84c1061",
+      "objective": "data/objective-snapshots/servicenow-csa-official-objectives.txt",
+      "objective_sha256": "7b94b0c2b2f331a2e878694c8b9aaa6db8e998bfc0424d75dca80e6cdbe1d553"
+    },
+    {
+      "code": "SERVICENOW-CAD",
+      "guide": "guides/SERVICENOW-CAD-servicenow-certified-application-developer.md",
+      "guide_sha256_lf": "32982f9f2eea0c23566a70c3310c343ec195a8e96af70f5a7481b5d1528e0852",
+      "objective": "data/objective-snapshots/servicenow-cad-official-objectives.txt",
+      "objective_sha256": "f71371fc8583ec438fbdde805d2e69d8034607333e1bc033ccc74ae5a261b59a"
+    }
+  ],
+  "independent_review": {
+    "method": "Fresh-context read-only AI review of changed content and source evidence",
+    "rubric": "docs/AI-AUDIT.md, version 2",
+    "reviewed_tree": "9be94f8f50f52b72c480c31eea3efc9844b4ba1c",
+    "summary": "Verified the repair from e31ba1d5259e612bc98253c2a9baf9557e296d0e by changing the real first card heading while preserving navigation and topics text: the adapter now rejects it. Unmodified live NVIDIA HTML reproduces the staged 22-topic snapshot, and five targeted tests pass. The prior archived objective equals its historical bytes and all three guide/objective bindings match. The two ServiceNow comparisons remain explicitly manual. Targeted code/change/evidence review only.",
+    "findings": [],
+    "validation": [
+      "unit tests",
+      "repository validation",
+      "reviewed learning resource check",
+      "site preparation",
+      "strict MkDocs build",
+      "generated site validation"
+    ]
+  }
+}

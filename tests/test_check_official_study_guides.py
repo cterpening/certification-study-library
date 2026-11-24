@@ -47,6 +47,43 @@ def hashicorp_review_html(heading: str, terraform: bool) -> str:
 
 
 class ObjectiveExtractionTests(unittest.TestCase):
+    def test_extracts_named_nvidia_potential_topics_and_limits(self) -> None:
+        code = "NCA-AIIO"
+        title = f"{code} Exam Preparation Topics and Recommended Reading"
+        def card(domain: str, weight: int, topics: list[str]) -> str:
+            items = "".join(f"<li>{topic}</li>" for topic in topics)
+            return (f'<h3 data-verticalnav-customtitle="{domain}: {weight}%">{domain}</h3>'
+                    f"<p>Overview of {domain}.</p>"
+                    f"<h4>{domain} Potential Exam Topics:</h4><ul>{items}</ul>"
+                    f"<p><strong>{weight}%</strong><br><strong>Exam Weight</strong></p>"
+                    f"<h4><button>Recommended Training and Suggested Reading on {domain}:</button></h4>"
+                    "<p>Suggested Reading</p><a href='/reading'>Unrelated resource</a>")
+        body = ("<p>NVIDIA-Certified Associate</p><h1>AI Infrastructure and Operations</h1>"
+                f"<p>({code})</p><h2>{title}</h2>"
+                "<ul><li>Essential AI Knowledge</li><li>AI Infrastructure</li><li>AI Operations</li></ul>"
+                + card("Essential AI Knowledge", 38, ["Explain the stack.", "Compare compute."])
+                + card("AI Infrastructure", 40, ["Choose hardware.", "Plan capacity."])
+                + card("AI Operations", 22, ["Describe monitoring.", "Choose metrics."])
+                + "<h2>Practice Questions</h2><p>Outside objective text.</p><h2>Get Certified</h2>")
+        wrong_heading = body.replace(">Essential AI Knowledge</h3>", ">Different domain</h3>")
+        with self.assertRaisesRegex(ValueError, "incomplete"):
+            monitor.extract_nvidia_objectives(wrong_heading)
+        result = monitor.extract_nvidia_objectives(body)
+        self.assertIn("Essential AI Knowledge\n38%\nExplain the stack.", result)
+        self.assertIn("AI Infrastructure\n40%\nChoose hardware.", result)
+        self.assertTrue(result.endswith("AI Operations\n22%\nDescribe monitoring.\nChoose metrics.\n"))
+        for unwanted in ("Suggested Reading", "Unrelated resource", "Outside objective", "Overview of"):
+            self.assertNotIn(unwanted, result)
+        for broken in (
+            body.replace("AI Infrastructure Potential Exam Topics:", "Unknown Potential Exam Topics:"),
+            body.replace("AI Operations Potential Exam Topics:", "Exam Topics:"),
+            body.replace("<li>Choose hardware.</li><li>Plan capacity.</li>", ""),
+            body.replace("<strong>22%</strong>","<strong>21%</strong>"),
+            body.replace("<strong>Exam Weight</strong>",""),
+        ):
+            with self.subTest(broken=broken[-70:]), self.assertRaisesRegex(ValueError, "incomplete"):
+                monitor.extract_nvidia_objectives(broken)
+
     def test_fetch_rejects_unsafe_url_before_opening(self) -> None:
         with patch.object(monitor, "open_public_https") as opener:
             for url in (
