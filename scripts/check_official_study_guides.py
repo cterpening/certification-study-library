@@ -29,7 +29,6 @@ from url_policy import open_public_https, same_site_hosts, validate_public_https
 
 USER_AGENT = "certification-study-library-objective-monitor/1.0"
 DEFAULT_LIMITATIONS_CONFIG = Path("config/objective-monitor-limitations.json")
-START_MARKERS = ("Skills measured as of", "Skills at a glance")
 END_MARKERS = ("Study resources", "Change log", "Additional resources")
 SKILLS_VERSION_PATTERN = re.compile(
     r"\bskills (?:measured|at a glance) "
@@ -199,12 +198,18 @@ def find_exact(lines: list[str], marker: str, start: int = 0) -> int | None:
 
 def extract_skills_section(page_html: str) -> str:
     lines = normalize_lines(visible_text(page_html))
-    start = find_first(lines, START_MARKERS)
+    # Learn also links to these sections from its introductory resource table.
+    start = next((
+        i for i, line in enumerate(lines)
+        if line.casefold().startswith("skills measured as of ")
+        or line.casefold() == "skills at a glance"
+    ), None)
     if start is None:
         raise ValueError("Could not find a skills-measured section")
-    end = find_first(lines, END_MARKERS, start + 1)
-    if end is None:
-        end = len(lines)
+    # A DevOps objective can itself mention change logs or additional resources.
+    end_headings = {heading.casefold() for heading in END_MARKERS}
+    end = next((i for i in range(start + 1, len(lines))
+                if lines[i].casefold() in end_headings), len(lines))
     selected = lines[start:end]
     if len(selected) < 10:
         raise ValueError("Extracted objective section was unexpectedly short")
@@ -217,7 +222,7 @@ def extract_exam_status(page_html: str) -> dict[str, list[str]]:
     skills_versions: list[str] = []
     announcements: list[str] = []
     for line in lines:
-        if SKILLS_VERSION_PATTERN.search(line):
+        if SKILLS_VERSION_PATTERN.match(line):
             if line not in skills_versions:
                 skills_versions.append(line)
         if any(pattern.search(line) for pattern in ANNOUNCEMENT_PATTERNS):

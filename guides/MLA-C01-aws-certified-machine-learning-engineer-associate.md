@@ -431,6 +431,85 @@ These are original blueprint-aligned prompts, not recalled exam questions.
 
 ---
 
+## Key terms and phrases
+
+**Data Preparation for Machine Learning**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Feature](#1-data-preparation-for-machine-learning-28) | An input used to make a prediction, such as purchases in the previous month. It must be available when the prediction will be made. |
+| [Prediction time](#frame-the-data-contract-before-choosing-a-service) | The moment a model must make its decision. Only information available by that moment belongs in its input features. |
+| [Checkpoint](#frame-the-data-contract-before-choosing-a-service) | Saved progress or state from which processing can resume after a failure. A replay design must also control duplicate downstream effects. |
+| [Amazon SageMaker](#frame-the-data-contract-before-choosing-a-service) | AWS's platform for tasks such as preparing data, training models and hosting inference. Choose the component around the stage of the ML lifecycle. |
+| [Lineage](#frame-the-data-contract-before-choosing-a-service) | A record of the sources and transformations that produced data or model artifacts, useful when tracing an error back to a changed input. |
+| [Label](#frame-the-data-contract-before-choosing-a-service) | The target value a supervised model learns to predict. A refund outcome known next month can label training data without being an available input today. |
+| [Amazon S3](#frame-the-data-contract-before-choosing-a-service) | Object storage organized into buckets and keys. Retrieving a named object and mounting a block device are different access patterns. |
+| [Schema evolution](#frame-the-data-contract-before-choosing-a-service) | Changing a dataset's structure over time. Adding an optional field and renaming a required field have different effects on existing readers. |
+| [Feature store](#frame-the-data-contract-before-choosing-a-service) | A service for publishing and reusing model input features. Historical values for training must match what would have been available at prediction time. |
+| [Partition key](#frame-the-data-contract-before-choosing-a-service) | The field or expression used to distribute records into partitions. A frequently repeated value may concentrate work on one partition. |
+| [Backpressure](#frame-the-data-contract-before-choosing-a-service) | A downstream stage forcing producers to slow or pause. If 120 events arrive per second and only 100 leave, backlog initially grows by 20 per second. |
+| [Partitioning](#frame-the-data-contract-before-choosing-a-service) | Dividing a dataset into addressable subsets. Filtering on the partition field can let an engine skip unrelated data. |
+| [Idempotency](#frame-the-data-contract-before-choosing-a-service) | The property that retrying the same intended operation does not apply its effect twice. An order API can remember the request identifier. |
+| [S3 versioning](#frame-the-data-contract-before-choosing-a-service) | Retains distinct versions of objects in a bucket. A recovery plan must also account for retention and access to older versions. |
+| [Throughput](#frame-the-data-contract-before-choosing-a-service) | The volume of work completed per unit time, such as predictions per second. A high rate can coexist with long waits for individual requests. |
+| [Data leakage](#transform-without-creating-leakage-or-skew) | Information from the outcome or future observations entering training or evaluation features, making measured performance look better than it will be in use. |
+| [Deduplication](#transform-without-creating-leakage-or-skew) | Identifying repeated representations of one logical event and retaining or applying it according to an explicit identity rule. |
+| [Tokenization](#transform-without-creating-leakage-or-skew) | Converting text into model-specific units and identifiers. An unfamiliar word may be split into several tokens. |
+| [Test set](#transform-without-creating-leakage-or-skew) | Examples reserved for the final estimate of performance. Repeatedly choosing models with this set can undermine its independence. |
+| [Class imbalance](#protect-integrity-privacy-and-fairness) | A dataset in which some labels occur much less often than others. Overall accuracy can conceal consistently missing the rare class. |
+| [Bias](#protect-integrity-privacy-and-fairness) | A systematic distortion in data, model behavior or decisions. Unequal error rates across groups warrant investigation of the data and intended use. |
+
+**ML Model Development**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Classification](#choose-the-least-complex-approach-that-meets-the-contract) | Predicting a category, such as whether a claim needs manual review. A threshold can trade missed cases for extra reviews. |
+| [Clustering](#choose-the-least-complex-approach-that-meets-the-contract) | Grouping observations by similarity without predefined class labels. A team still needs to interpret and validate the groups. |
+| [Regression](#choose-the-least-complex-approach-that-meets-the-contract) | Predicting a numeric outcome, such as delivery time in minutes. The size of the error matters, not only whether the prediction is exact. |
+| [Amazon Bedrock](#choose-the-least-complex-approach-that-meets-the-contract) | A managed service for building applications with foundation models. Model access and application tools are separate authorization decisions. |
+| [Hyperparameter](#train-reproducibly-and-tune-deliberately) | A training setting chosen outside the learned weights, such as the learning rate. Use validation data to compare choices. |
+| [Overfitting](#train-reproducibly-and-tune-deliberately) | Learning patterns specific to training examples that fail to generalize. Low training error alongside much higher validation error is a warning sign. |
+| [Foundation model](#train-reproducibly-and-tune-deliberately) | A model trained on broad data that can support multiple downstream tasks through prompting or additional training. |
+| [Model artifact](#train-reproducibly-and-tune-deliberately) | The files required to load trained model behavior, such as weights and preprocessing assets. Pair them with the compatible serving runtime. |
+| [Precision](#evaluate-the-decision-not-a-vanity-metric) | Of the cases flagged positive, the fraction that really are positive. If the model flags 10 cases and 8 are true positives, precision is 8 ÷ 10 = 80%. |
+| [Recall](#evaluate-the-decision-not-a-vanity-metric) | Of all actual positives, the fraction the model catches. If those 8 detected cases are among 20 actual positives, recall is 8 ÷ 20 = 40%. |
+| [Confusion matrix](#evaluate-the-decision-not-a-vanity-metric) | A table comparing predicted and actual classes. Counts in its cells let a team distinguish misses from false alarms. |
+
+**Deployment and Orchestration of ML Workflows**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Batch inference](#match-inference-mode-to-traffic-and-latency) | Generating predictions for a collected set of inputs in a job, useful when immediate responses are unnecessary. |
+| [Inference](#match-inference-mode-to-traffic-and-latency) | Running a trained model on new input, for example scoring one loan application or generating text for a request. |
+| [Latency](#match-inference-mode-to-traffic-and-latency) | Elapsed time between a request and the result of interest. Specify whether it measures the first token, the completed response or the full business action. |
+| [Amazon VPC](#match-inference-mode-to-traffic-and-latency) | A logically isolated network in an AWS Region, divided into subnets with routes and security controls that shape connectivity. |
+| [Asynchronous inference](#match-inference-mode-to-traffic-and-latency) | Submitting an inference request for queued processing and retrieving the output later, useful for larger or slower jobs. |
+| [Real-time endpoint](#match-inference-mode-to-traffic-and-latency) | A deployed model that handles synchronous requests while clients wait for the response. |
+| [Batch transform](#match-inference-mode-to-traffic-and-latency) | A SageMaker inference job for processing a dataset without maintaining a continuously serving endpoint. |
+| [Least privilege](#match-inference-mode-to-traffic-and-latency) | Limiting an identity to the actions and resources required for its work. A read-only reporting job needs no permission to modify its source. |
+| [VPC endpoint](#match-inference-mode-to-traffic-and-latency) | A connection from a VPC to a supported service using private connectivity. Access policies and network configuration still apply. |
+| [AWS CloudFormation](#provision-scale-and-release-safely) | Creates or updates a group of resources from a template so infrastructure changes can be reviewed and repeated. |
+| [Model registry](#provision-scale-and-release-safely) | A catalog of model versions and their metadata. A deployment can reference a reviewed version with known training and evaluation records. |
+| [AWS Step Functions](#orchestrate-the-complete-lifecycle) | Coordinates a sequence of application steps as a state machine, with explicit choices, retries and failure paths. |
+| [Amazon EventBridge](#orchestrate-the-complete-lifecycle) | Routes events to targets according to rules, connecting services without requiring each producer to know each consumer. |
+
+**ML Solution Monitoring, Maintenance, and Security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Data drift](#monitor-four-different-systems) | A change in the distribution of production inputs relative to a reference period. Measuring its effect on correctness may require labels that arrive later. |
+| [Ground truth](#monitor-four-different-systems) | The reference outcome used to evaluate a prediction. A label may arrive later or carry uncertainty that limits the evaluation. |
+| [Model drift](#monitor-four-different-systems) | A change over time in model behavior or the relationship between inputs and the desired outcome. Compare performance against representative labeled cases. |
+| [AWS CloudTrail](#monitor-four-different-systems) | Records supported AWS API activity so an investigator can trace who called an operation, when and against which resource. |
+| [Amazon CloudWatch](#monitor-four-different-systems) | Collects operational measurements and logs. An operator can graph request latency or alarm on error rates. |
+| [Experiment guardrail](#monitor-four-different-systems) | A metric used to protect users during an experiment. A recommendation variant that improves clicks may still need to stop if its error rate exceeds a preset threshold. |
+| [Cost Explorer](#optimize-from-evidence) | Analyzes historical AWS usage and charges by dimensions such as service or account to explain spending patterns. |
+| [Horizontal scaling](#optimize-from-evidence) | Adding instances or workers to serve more work in parallel. A shared database can still limit throughput. |
+| [AWS Key Management Service (KMS)](#secure-every-principal-path-and-artifact) | Manages cryptographic keys and controls who may use them for operations such as decrypting a protected data key. |
+| [Identity policy](#secure-every-principal-path-and-artifact) | An IAM policy attached to an identity that describes which actions it can take on which resources, subject to other applicable controls. |
+| [AWS Secrets Manager](#secure-every-principal-path-and-artifact) | Stores sensitive values for authorized retrieval and supports rotation workflows, such as replacing a database password. |
+| [Encryption at rest](#secure-every-principal-path-and-artifact) | Protecting stored data with encryption. Who can use the decryption key is part of the access decision. |
+
 ## Places to learn
 
 This is **not a complete list**, and it is not meant to be consumed end to end. Pick the explanation style, lab environment, and practice format that close your own gaps. Because C01 retires imminently, do not begin a long paid C01 path unless you already hold a valid C01 appointment; new learners should prefer C02-labeled material. On September 28 the public Pluralsight page still listed 20 hours, five courses and eight labs; this is catalog evidence, not a review of the paid lessons. Sign-in shells, blocked pages and video shells cannot confirm their current content. Times are provider-stated when stable and otherwise transparent estimates; access, catalog contents, and runtimes can change.

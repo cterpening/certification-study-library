@@ -544,6 +544,100 @@ These are original learning prompts, not recalled exam items. Answer first, then
 
 The current Associate Atlas Administrator exam route remains the guide’s scope authority. MongoDB’s [August 18 certification-path update](https://www.mongodb.com/company/blog/news/introducing-a-more-connected-flexible-path-to-certifications) aligns the Atlas Administrator certification path with incremental Skill Badges and states that completing the full path unlocks a 50% certification-exam discount; check the linked issuer terms at enrollment. Recent Atlas operations context includes October Data Explorer settings (per-user time zone display, read-only mode, default `maxTimeMS`, and legacy UUID display) and automatic activation of matching verified-domain SAML invitees. September’s Intelligent Workload Management became generally available for protecting clusters under overload; validate its queueing and workload priorities against actual service objectives rather than assuming it replaces capacity planning. The changelog says Push-Based Log Export stops accepting new configurations on **October 30, 2026** and reaches end of life on **February 4, 2027**; existing deployments need a migration plan to supported external sinks. These are dated product operations examples, not new exam objectives. [MongoDB Atlas changelog](https://www.mongodb.com/docs/atlas/release-notes/changelog/).
 
+## Key terms and phrases
+
+**MongoDB foundations**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Index](#1-mongodb-foundations) | An auxiliary structure organizing keys for faster lookup or ordered access, with a corresponding cost for maintenance and storage. |
+| [Selectivity](#1-mongodb-foundations) | How narrowly a filter restricts matching rows. A selective condition can reduce work if the access path can use it. |
+| [Data plane](#1-mongodb-foundations) | The path where workload data is actually processed or forwarded under the configuration established through the control plane. |
+| [Saturation](#1-mongodb-foundations) | The extent to which demand uses up a resource’s available capacity, often becoming visible as queues or increased latency. |
+| [Collection](#1-mongodb-foundations) | A named group of documents within a database. Documents may vary in shape unless validation rules constrain them. |
+| [Document](#1-mongodb-foundations) | A record of named fields and typed values that can include nested objects or arrays. |
+| [Sort order](#1-mongodb-foundations) | The key sequence and direction used to order returned documents. Include a stable tie-breaker for repeatable pagination. |
+| [Aggregation pipeline](#1-mongodb-foundations) | A sequence of stages that filter, transform, group or combine input documents to produce a result. |
+
+**Atlas topology, deployment, and scale**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Replica set](#2-atlas-topology-deployment-and-scale) | A group of MongoDB processes that maintain copies of the same dataset and can elect a primary. |
+| [Sharding](#2-atlas-topology-deployment-and-scale) | Partitioning data across shards to distribute storage and workload. The shard key influences where records and requests go. |
+| [Replication](#2-atlas-topology-deployment-and-scale) | Maintaining additional copies of data across locations or instances. Replicated errors can propagate, so copies still need a separate recovery strategy. |
+| [Rollback](#2-atlas-topology-deployment-and-scale) | Returning to an earlier state after a failed change. For a database transaction, this discards eligible uncommitted work. |
+| [High availability (HA)](#2-atlas-topology-deployment-and-scale) | Designing across failure boundaries so a service can continue or resume promptly after a component failure. |
+| [Latency](#2-atlas-topology-deployment-and-scale) | The time for a request or operation to complete, measured at a specified boundary from the selected start to finish. |
+| [Write concern](#2-atlas-topology-deployment-and-scale) | The level of acknowledgement required from a MongoDB write before the client treats it as successful. |
+| [Read preference](#2-atlas-topology-deployment-and-scale) | A policy controlling which replica-set members a driver may select for reads. |
+| [Connection pool](#2-atlas-topology-deployment-and-scale) | A reusable set of driver-managed connections that limits repeated setup work and bounds concurrent database use. |
+| [Working set](#2-atlas-topology-deployment-and-scale) | The data and index pages receiving regular access. Its size relative to memory affects cache behavior. |
+| [Shard key](#2-atlas-topology-deployment-and-scale) | The specified field or fields MongoDB uses to distribute documents in a sharded collection and target eligible queries. |
+| [Replication lag](#2-atlas-topology-deployment-and-scale) | How far a secondary’s applied state trails the primary, which can affect read freshness and recovery choices. |
+| [Throughput](#plan-capacity-per-actual-limit-boundary) | The amount of useful work completed per unit time, such as bytes transferred or requests served per second. |
+
+**Identity and authorization**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Control plane](#3-identity-and-authorization) | The management interfaces and services that configure resources and policies, as distinct from using the configured workload. |
+| [Authentication](#3-identity-and-authorization) | Establishing the identity used for a request, for example by validating a credential or identity assertion. |
+| [Least privilege](#3-identity-and-authorization) | Granting only the access a specific identity needs for its assigned work, then checking both allowed and denied actions. |
+| [Runbook](#3-identity-and-authorization) | A documented response procedure identifying evidence to gather, safe actions, decision owners and verification steps. |
+| [Secret rotation](#3-identity-and-authorization) | Replacing a secret under controlled conditions, confirming that its consumers use the replacement before retiring the old credential. |
+| [Database user](#separate-token-role-source-and-database-identity) | An identity authorized to access databases. Atlas project membership has a separate administrative scope. |
+| [Service identity](#separate-token-role-source-and-database-identity) | An identity assigned to software or a managed service so automated work can receive its own scoped rights. |
+| [Database](#separate-token-role-source-and-database-identity) | A MongoDB namespace containing collections and associated database-level permissions. |
+
+**Network security and encryption**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Schema](#4-network-security-and-encryption) | The declared structure and types expected for stored data. Compare producer and consumer expectations before accepting a changed field. |
+| [Authorization](#4-network-security-and-encryption) | Evaluating whether the requesting identity may take a particular action on a particular resource within the applicable scope. |
+| [Encryption at rest](#4-network-security-and-encryption) | Protecting persisted data through encryption, with access to keys and backups forming part of the protection boundary. |
+| [Encryption in transit](#4-network-security-and-encryption) | Protecting data while it travels between endpoints, commonly through authenticated TLS connections. |
+| [DNS](#4-network-security-and-encryption) | The naming system resolving service names to addresses or other records. Correct resolution alone does not establish reachability. |
+| [Private endpoint](#private-connectivity-and-key-availability-need-their-own-evidence) | A private network path to a service. The client still needs correct name resolution and database authorization. |
+| [Availability](#private-connectivity-and-key-availability-need-their-own-evidence) | The ability of a service to remain usable for the intended requests over a specified measurement period. |
+
+**Monitoring, logging, and performance**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Metric](#5-monitoring-logging-and-performance) | A numeric measurement recorded over time, such as failed requests or queue depth, with defined units and dimensions. |
+| [Alert](#5-monitoring-logging-and-performance) | A notification that a configured condition was met, requiring interpretation with its time window, source and affected scope. |
+| [Alert threshold](#distinguish-missing-evidence-from-a-healthy-metric) | A metric condition that triggers notification. A missing measurement needs separate investigation. |
+
+**Resilience, backup, recovery, and maintenance**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Data retention](#6-resilience-backup-recovery-and-maintenance) | How long data or recoverable history is kept before removal under an explicit operational or governance policy. |
+| [Disaster recovery (DR)](#6-resilience-backup-recovery-and-maintenance) | Restoring a usable service after a major disruption, including data, dependencies, access and a tested recovery sequence. |
+| [Failback](#6-resilience-backup-recovery-and-maintenance) | Moving service back to the preferred location while preserving changes made during the recovery period. |
+| [Backup](#6-resilience-backup-recovery-and-maintenance) | A retained copy created to support recovery. Validate it by restoring the relevant data and exercising the service that depends on it. |
+| [Point-in-time recovery](#6-resilience-backup-recovery-and-maintenance) | Restoring a database to an eligible chosen time within its configured recovery window. |
+| [Recovery point objective (RPO)](#recovery-is-more-than-a-completed-restore-job) | The maximum tolerable data loss expressed in time, used to choose and test a recoverable point. |
+| [Recovery time objective (RTO)](#recovery-is-more-than-a-completed-restore-job) | The maximum tolerable time to restore usable service, including checks that the application can actually use the recovered data. |
+| [Snapshot](#recovery-is-more-than-a-completed-restore-job) | A point-in-time representation of a resource or dataset used for inspection or recovery under its retention and consistency rules. |
+| [Restore](#recovery-is-more-than-a-completed-restore-job) | Recreating data or a resource from a retained recovery copy, followed by checks that it meets the intended recovery point. |
+
+**Administration, automation, and governance**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Infrastructure reconciliation](#7-administration-automation-and-governance) | Bringing the declared configuration and deployed Atlas resources back into agreement after a change made outside the infrastructure-as-code workflow. |
+| [Audit log](#7-administration-automation-and-governance) | Records of administrative actions that help identify who performed an operation, on what resource and when. |
+| [Pagination](#check-command-purpose-and-inventory-completeness) | Retrieving an administrative result in successive pages. Inventory is incomplete until all pages have been processed. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Data skew](#scenario-2-performance-degradation-after-release) | An unequal distribution of records or workload across keys or partitions that can produce an overloaded partition or long-running tasks. |
+
 ## Places to learn
 
 This is not a complete list or a prescription to consume everything. Public outlines and metadata are not proof of lesson quality or exam completeness. Publisher times are labeled; other ranges are study estimates. No paid lesson, practice interior or enrollment was accessed.

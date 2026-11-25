@@ -865,6 +865,101 @@ Recheck licensing, deployment availability, identity restrictions, GHES version 
 
 ---
 
+## Key terms and phrases
+
+**Enterprise topology and deployment choices**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Enterprise account](#1-enterprise-topology-and-deployment-choices) | The administrative layer for governing multiple organizations and shared enterprise policies. |
+| [Organization](#1-enterprise-topology-and-deployment-choices) | A shared ownership boundary for repositories, teams and organization-level settings. |
+| [GitHub Enterprise Server (GHES)](#1-enterprise-topology-and-deployment-choices) | GitHub's self-hosted deployment option, whose operators manage upgrades, availability and recovery. |
+| [GitHub Enterprise Cloud (GHEC)](#1-enterprise-topology-and-deployment-choices) | The GitHub-hosted enterprise offering in which GitHub operates the service infrastructure. |
+
+**Identity, authentication, and provisioning**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Enterprise Managed Users](#personal-accounts-versus-managed-users) | An enterprise account model that uses identities provisioned and governed through the organization's identity provider. |
+| [Security Assertion Markup Language (SAML) single sign-on](#saml-sso-scim-and-team-synchronization) | A sign-in arrangement in which GitHub relies on an identity provider to authenticate a user for organizational access. |
+| [System for Cross-domain Identity Management (SCIM) provisioning](#saml-sso-scim-and-team-synchronization) | System for Cross-domain Identity Management synchronizes account lifecycle changes from an identity provider. |
+| [Identity provider (IdP)](#saml-sso-scim-and-team-synchronization) | The system that authenticates people and supplies trusted identity information to a connected service. |
+| [Team synchronization](#saml-sso-scim-and-team-synchronization) | Mapping identity-provider groups to GitHub team membership so group changes can affect access. |
+
+**Authorization, roles, and teams**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Repository role](#repository-roles) | A defined set of repository permissions used to distinguish tasks such as reading, contributing and administering. |
+| [Team](#organization-and-enterprise-responsibility) | An organization-level group used to manage repository access and coordinate work across members. |
+| [Enterprise owner](#organization-and-enterprise-responsibility) | An administrator responsible for enterprise-level settings and policy across participating organizations. |
+| [Organization owner](#organization-and-enterprise-responsibility) | An administrator with broad authority inside one organization. |
+| [Effective access](#effective-access) | The permissions a person actually has after individual grants, team membership and organization settings are taken into account. |
+
+**Policies, rulesets, and standards**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Ruleset](#rulesets) | A collection of enforceable repository rules that applies to the branches, tags or repositories it targets. |
+
+**Secure software development and compliance**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Audit log streaming](#audit-and-compliance) | Forwarding administrative activity records to an external destination for retention, monitoring or correlation. |
+
+**APIs and integrations**
+
+| Term or phrase | Meaning |
+|---|---|
+| [GitHub App](#pats-github-apps-and-oauth-apps) | An integration installed on selected resources with explicitly granted permissions and its own installation identity. |
+| [Personal access token (PAT)](#pats-github-apps-and-oauth-apps) | A credential issued for a user and constrained by its scope, resource access and applicable organization policy. |
+| [OAuth app](#pats-github-apps-and-oauth-apps) | An integration that obtains user authorization to access GitHub resources on the user's behalf. |
+
+**GitHub Actions administration**
+
+| Term or phrase | Meaning |
+|---|---|
+| [GITHUB_TOKEN](#governance) | The per-job credential GitHub creates for a workflow to make permitted requests against its repository. |
+| [Self-hosted runner](#runners) | A machine managed by the organization to execute Actions jobs, including the software and network access it needs. |
+| [GitHub-hosted runner](#runners) | A job execution environment provisioned and maintained by GitHub. |
+| [Actions secret](#secrets) | An encrypted configuration value made available to eligible workflows under defined scopes and access rules. |
+| [Environment secret](#secrets) | A secret scoped to an Actions environment and exposed only through jobs allowed to use that environment. |
+| [OpenID Connect (OIDC)](#secrets) | An identity protocol a workflow can use to exchange signed identity claims for short-lived cloud access. |
+
+**Objective-by-objective administration deep dive**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Break-glass access](#break-glass-administration) | A separately controlled emergency path for restoring administrative access after ordinary authentication fails. |
+| [Outside collaborator](#build-an-effective-access-inventory) | A person granted access to selected organization repositories without being an organization member. |
+| [Code owner](#choose-the-right-enforcement-mechanism) | A person or team identified for review when a change affects matching paths in a repository. |
+| [Required status check](#choose-the-right-enforcement-mechanism) | A configured result that must succeed before a change can merge into a protected branch. |
+| [Branch protection](#choose-the-right-enforcement-mechanism) | Branch-specific controls that govern actions such as merges, force pushes and deletion. |
+| [Bypass](#govern-bypass) | An exception allowing a designated actor to proceed past a rule that would otherwise block the action. |
+| [Bypass actor](#govern-bypass) | An identity explicitly permitted to bypass a particular enforcement rule under configured conditions. |
+| [Credential revocation](#incident-response-for-an-exposed-secret) | Invalidating an exposed credential at its issuer so further use is denied. |
+| [Installation token](#select-an-integration-identity) | A short-lived credential that represents an installed GitHub App within its granted permissions. |
+| [Webhook](#engineer-for-api-limits) | An event notification sent to a configured receiver when selected activity occurs. |
+| [API pagination](#engineer-for-api-limits) | Retrieving successive result pages instead of assuming one API response contains every object. |
+| [Rate limit](#engineer-for-api-limits) | A restriction on API activity over a time interval that a client must handle using eligible requests and controlled retries. |
+| [Runner group](#segment-runner-pools) | An administrative grouping that controls which repositories or workflows can use a pool of runners. |
+| [Runner label](#segment-runner-pools) | A property used to match a job's requested execution environment to eligible runners. |
+| [Seat utilization](#optimize-without-creating-hidden-risk) | How assigned paid access compares with actual eligible use during a defined measurement period. |
+
+**Deployment and operations playbooks**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Management Console](#operate-github-enterprise-server) | The GHES administrative interface used for appliance-level setup and operational configuration. |
+| [Recovery point objective (RPO)](#availability-backup-and-recovery) | The amount of recent data the organization aims to avoid losing beyond its accepted recovery threshold. |
+| [Recovery time objective (RTO)](#availability-backup-and-recovery) | The target duration for restoring the GitHub service and its required dependencies after disruption. |
+| [Backup verification](#availability-backup-and-recovery) | Testing whether a retained backup restores a usable service with the expected data and access. |
+| [Migration inventory](#plan-enterprise-migrations-without-confusing-tool-coverage) | A record of repositories, settings, identities and integrations that must move or be recreated during migration. |
+| [Private networking](#design-azure-private-networking-for-hosted-runners) | Connecting an eligible execution environment to controlled private resources using authorized routes and network policies. |
+| [Audit log](#engineer-the-audit-pipeline) | A record of administrative and security-relevant activity used to trace an action to its actor and time. |
+| [Audit event](#engineer-the-audit-pipeline) | One recorded action with details such as actor, time and affected resource. |
+
 ## Places to learn
 
 This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Start with the official paths, then pick the explanations, formats, and practice that work for you and close specific blueprint gaps. Times are approximate consumption time at normal speed; labs, note-taking, review, and independent practice add time.

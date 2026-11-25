@@ -482,6 +482,85 @@ Use only disposable or explicitly authorized environments. **All eight complete 
 45. **Does CronJob Forbid prevent all duplicate business work?** No; it governs one CronJob's overlapping Jobs, and retries/other producers still need application idempotence.
 46. **What did the Helm checks prove?** Local chart rendering, value/schema behavior and the listed negative cases; they did not prove admission, release lifecycle, image behavior or traffic.
 
+## Key terms and phrases
+
+**Application design and build**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Container image](#images-and-executable-contracts) | A packaged filesystem and metadata used to launch containers. An image digest identifies particular contents more precisely than a mutable tag. |
+| [Superuser](#images-and-executable-contracts) | The highly privileged Unix identity traditionally assigned UID 0. Namespaces and additional security policy can constrain what it may do. |
+| [Job](#choose-the-workload-owner) | A controller that runs Pods to complete a finite task, unlike a Deployment that maintains a desired running population. |
+| [Pod](#choose-the-workload-owner) | The smallest deployable Kubernetes unit. Its containers share a network identity and can share declared volumes for the lifetime of that Pod. |
+| [Reconciliation](#choose-the-workload-owner) | The controller loop that compares desired and observed state and acts to bring them into agreement. |
+| [Deployment](#choose-the-workload-owner) | A workload controller that manages rollout and replacement of replicated application Pods. |
+| [StatefulSet](#choose-the-workload-owner) | A controller for workloads needing stable Pod identity or ordered handling, with supported persistent storage patterns for each replica. |
+| [DaemonSet](#choose-the-workload-owner) | A controller that maintains a copy of a Pod on each eligible node, commonly for node-level agents or networking. |
+| [CronJob](#choose-the-workload-owner) | A Kubernetes object that creates Jobs on a schedule. The application should account for execution timing and possible repeated work. |
+| [Sidecar](#multi-container-patterns) | A container in the same Pod that supports the main application, for example by forwarding logs. |
+| [Container](#multi-container-patterns) | An isolated application process and its dependencies that ordinarily shares the host kernel. Its image is the packaged input used to start it. |
+| [Init container](#multi-container-patterns) | A container run during Pod initialization before normal application startup, commonly to prepare data or check a dependency. |
+| [Ephemeral volume](#ephemeral-and-persistent-volumes) | Storage whose lifecycle is tied to a Pod. For example, data in an `emptyDir` survives a container restart inside the same Pod and disappears when the Pod is removed. |
+| [Filesystem permissions](#ephemeral-and-persistent-volumes) | Rules determining which identities may read, write, execute or traverse an object, alongside any applicable ACLs and mandatory security policy. |
+| [PersistentVolume (PV)](#ephemeral-and-persistent-volumes) | A cluster storage resource representing a provisioned volume that can be bound to a compatible claim. |
+
+**Application deployment**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Rolling update](#rolling-updates-and-safe-rollback) | A rollout that gradually replaces old replicas with new ones under availability and surge limits. |
+| [ReplicaSet](#rolling-updates-and-safe-rollback) | A controller that maintains a requested number of matching Pod replicas. A Deployment normally manages the ReplicaSets for its revisions. |
+| [Canary deployment](#bluegreen-and-canary-with-kubernetes-primitives) | A release pattern that exposes a small share of traffic or users to a new version before expanding it. |
+| [Blue/green deployment](#bluegreen-and-canary-with-kubernetes-primitives) | Operating old and new versions in separate environments and switching traffic once the replacement is ready. Data compatibility affects rollback. |
+| [Metrics](#bluegreen-and-canary-with-kubernetes-primitives) | Numerical time series used to quantify behavior such as latency, error rate or capacity. Aggregation and labels determine what the values represent. |
+| [Custom resource definition (CRD)](#helm-packages) | A declaration extending the Kubernetes API with a new resource type and schema. A controller supplies any reconciliation behavior. |
+| [Schema](#offline-exercise-values-schema-and-rendered-behavior) | A definition of expected data structure, field types and constraints. A syntactically valid payload may still fail schema or business validation. |
+| [Hash](#kustomize-composition) | A fixed-size digest derived from input data. Comparing a file’s digest to a trusted reference can detect modification without revealing who modified it. |
+| [Kustomize](#kustomize-composition) | A tool for composing or modifying Kubernetes manifests through bases and overlays without templating the YAML source. |
+
+**Application observability and maintenance**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Readiness probe](#probes-and-health-semantics) | A check that controls whether a Pod is ready to receive normal Service traffic. |
+| [Liveness probe](#probes-and-health-semantics) | A check whose repeated failure can cause the kubelet to restart the affected container. |
+| [Startup probe](#probes-and-health-semantics) | A check that allows a slow-starting container time to initialize before normal liveness and readiness probes take over. |
+| [Timeout](#probes-and-health-semantics) | The time after which an operation stops waiting and reports failure. A caller timing out does not prove the remote system made no change. |
+| [Label selector](#cli-monitoring-logs-and-events) | A filter that selects Kubernetes objects by their labels. A Service can exist with no matching Pods when its selector is wrong. |
+| [Standard output](#cli-monitoring-logs-and-events) | The normal output stream of a process, usually file descriptor 1. It can be redirected or piped independently of error output. |
+| [Controller](#api-deprecations) | A control loop that watches cluster state and acts to maintain a resource’s intended condition, such as a desired replica count. |
+| [CRD conversion webhook](#api-deprecations) | A service the API server can ask to convert a custom resource between versions. During a migration, clients can request a served version that differs from the stored version. |
+
+**Application environment, configuration and security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Authentication](#extensions-authentication-authorization-and-admission) | Checking that a claimant controls an authenticator bound to the claimed identity. It precedes the separate decision about permitted actions. |
+| [Authorization](#extensions-authentication-authorization-and-admission) | Determining whether a given identity may perform a specific action on the particular resource requested. |
+| [Resource request](#requests-limits-and-quotas) | The CPU or memory a container asks Kubernetes to account for when placing its Pod on a node. Two ordinary containers requesting 250 millicores each need 500 millicores, or half a CPU, before any Pod overhead. |
+| [Namespace](#requests-limits-and-quotas) | A Kubernetes scope for the names of many resources and for controls such as Roles and ResourceQuotas. A namespace alone does not isolate all traffic. |
+| [Resource limit](#requests-limits-and-quotas) | An upper bound enforced on resource consumption. CPU pressure can cause throttling, while exceeding a memory limit can lead to termination. |
+| [ResourceQuota](#requests-limits-and-quotas) | A namespaced limit on aggregate resource usage or object counts, such as total requested CPU across workloads. |
+| [ConfigMap](#configmaps-secrets-and-serviceaccounts) | A Kubernetes object for nonsecret configuration values supplied to workloads through environment variables or mounted files. |
+| [Environment variable](#configmaps-secrets-and-serviceaccounts) | A named value supplied in the environment of a process, such as a search path. Child processes inherit exported variables from their parent. |
+| [Secret](#configmaps-secrets-and-serviceaccounts) | A Kubernetes resource for sensitive values such as credentials. Access controls and encryption configuration matter because encoding alone is not secrecy. |
+| [ServiceAccount](#configmaps-secrets-and-serviceaccounts) | A namespaced identity that a workload can use for authenticated operations, including access to the Kubernetes API when authorized. |
+| [Filesystem](#application-security-contexts-and-capabilities) | The structures that organize files and directories on storage or expose a virtual hierarchy. A larger block device alone does not always enlarge its filesystem. |
+| [Linux capability](#application-security-contexts-and-capabilities) | A discrete kernel privilege that can be granted or removed from a process without providing all superuser privileges. |
+| [Security context](#application-security-contexts-and-capabilities) | Settings that govern a Pod’s or container’s execution privileges, such as user identity, Linux capabilities and filesystem restrictions. |
+
+**Services and networking**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Service selector](#services-and-application-access) | The set of labels a Service uses to identify the Pods that should receive its traffic. |
+| [EndpointSlice](#services-and-application-access) | A resource recording a group of backend endpoints for a Service, including their addresses and readiness information. |
+| [LoadBalancer Service](#services-and-application-access) | A Service requesting an externally reachable load balancer from an available platform integration. The object alone does not guarantee a reachable address. |
+| [Layer 3](#networkpolicy) | The network layer responsible for addressing and forwarding packets between IP networks. |
+| [NetworkPolicy](#networkpolicy) | A resource that selects Pods and describes permitted traffic. Enforcement depends on the cluster network implementation. |
+| [Gateway API](#ingress) | Kubernetes APIs separating infrastructure ownership from application routing, using resources such as GatewayClass, Gateway and HTTPRoute. |
+| [Ingress](#ingress) | A Kubernetes resource declaring HTTP routing rules, such as host and path matches. A compatible controller is needed to implement them. |
+
 ## Places to learn
 
 | Resource | Access | Estimated time |

@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "audio_file": "episode.mp3",
+  "mp3_sha256": "421ed72caedc79981940cbd32112f6849ef72bcca5c4fbf6027286467bf9976a",
+  "package_manifest_sha256": "0128dce7ca20366139a6bf667c7f5dfde2bf3091537f23a903e3de8625a42791",
+  "script_sha256": "59d65cfeb7e9ef7cbba5193ebb0ccdc70a1e25b3562e4f7886d04e66510d93e0",
+  "transcript_sha256": "c5456c5d3d19bc778c914388603e586e0921d593784af99b59f6ded8db2a5655",
+  "duration_seconds": 261.0048,
+  "sample_rate": 44100,
+  "channels": 1,
+  "format": "MPEG_LAYER_III",
+  "voices": {
+    "host": "F1",
+    "learner": "M1"
+  },
+  "model": "Supertone/supertonic-3",
+  "model_revision": "3cadd1ee6394adea1bd021217a0e650ede09a323",
+  "license_url": "https://huggingface.co/Supertone/supertonic-3/blob/3cadd1ee6394adea1bd021217a0e650ede09a323/LICENSE",
+  "engine": "offline ONNX Runtime CPU",
+  "supertonic_version": "1.3.1",
+  "onnxruntime_version": "1.32.0",
+  "soundfile_version": "0.14.0",
+  "synthesis": {
+    "language": "en",
+    "speed": 1.05,
+    "steps": 8,
+    "global_gain": 1.52312,
+    "mp3_bitrate_mode": "variable",
+    "mp3_compression_level": 0.45
+  },
+  "notice": "The two speakers are synthetic. Independent AI script review is complete. Human content and listening review are pending.",
+  "chapters": [
+    {
+      "title": "Introduction",
+      "start_seconds": 0.16
+    },
+    {
+      "title": "Can the booking desk stay open when a zone goes down?",
+      "start_seconds": 29.18
+    },
+    {
+      "title": "Next steps",
+      "start_seconds": 235.7
+    }
+  ],
+  "sources_checked_for_recording": [
+    "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900",
+    "https://learn.microsoft.com/en-us/azure/reliability/regions-list",
+    "https://learn.microsoft.com/en-us/azure/reliability/regions-paired",
+    "https://learn.microsoft.com/en-us/azure/reliability/",
+    "https://learn.microsoft.com/en-us/azure/reliability/availability-zones-overview"
+  ],
+  "audio_check": {
+    "audio_sha256": "421ed72caedc79981940cbd32112f6849ef72bcca5c4fbf6027286467bf9976a",
+    "method": "Full independent CPU English ASR against the reviewed script, final audio-text alignment and editorial inspection of flagged differences. Local algorithmic delivery check only.",
+    "recognizer": "faster-whisper 1.2.1 / CTranslate2 int8, Systran/faster-whisper-base.en@3d3d5dee26484f91867d81cb899cfcf72b96be6c",
+    "reference_word_count_for_alignment": 720,
+    "word_error_rate_before_adjudication": 0.0097,
+    "opening_and_closing_checked": true,
+    "finding_disposition": "Both outage cases, all sixty/eighty/twenty figures, disclosure and complete final sentence recovered. Datacenter spacing and Azure spelling account for the lexical differences.",
+    "material_omissions_or_number_changes_outstanding": 0,
+    "human_listening_review": "pending"
+  }
+}

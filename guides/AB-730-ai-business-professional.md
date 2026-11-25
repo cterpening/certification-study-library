@@ -13,6 +13,8 @@ upcoming_change_checked: 2026-10-28
 
 # AB-730 AI Business Professional Study Guide
 
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-01.md#ab-730)
+
 
 > **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 refresh maps all 41 detailed objectives in the October 20, 2026 English outline. See the [current deep-review evidence](../docs/research/2026-10-28-microsoft-wave1-deep-review.md#ab-730) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-730-coverage-record). Microsoft's [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-730) is authoritative. Live product labs and human review remain pending; public-source review does not guarantee correctness.
 
@@ -328,6 +330,8 @@ The October blueprint explicitly requires filtering chats by agent. Practice fin
 
 ### Choose a skill, then supervise the deliverable
 
+**Practice check.** In the documented worldwide Cowork experience, custom instructions apply across tasks. Put recurring preferences there and put the specific deliverable, source and deadline in the individual task. The Plugins page groups skills and plugins for review. [Customize Copilot Cowork | Microsoft Learn](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-customize)
+
 A skill supplies reusable task instructions; a connector supplies access to a data service; a plugin can package both. These are different from a schedule that decides when work starts. Begin with an appropriate built-in skill. Use a custom skill for a repeated process with specific outputs, boundaries and review steps.
 
 In [Cowork Customize](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-customize), inspect the skill's source and instructions, create or edit it, then test in a new conversation. Shared updates require Re-share. Only import trusted material. The operating guide describes automated skill evaluation, while the [application card](https://learn.microsoft.com/en-us/microsoft-365/copilot/responsible-ai/copilot-cowork-application-card) warns that user-authored skills are not Microsoft-validated: a quality score is not certification that your business process is correct. Test missing inputs, wrong recipients and malicious source instructions.
@@ -522,7 +526,66 @@ Both public article texts were read. Marketing performance claims, videos, custo
 
 ---
 
+## Key terms and phrases
+
+**Understand generative AI fundamentals**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Generative model](#understand-what-generation-doesand-does-not-prove) | A model that produces new content, such as text or an image, from patterns learned during training and the input it receives. |
+| [Hallucination](#understand-what-generation-doesand-does-not-prove) | A plausible-sounding generated claim that the underlying source material does not support. |
+| [Grounding](#understand-context-and-organizational-protection) | Supplying relevant work material to make a response traceable to evidence the user can access. |
+| [Context](#understand-context-and-organizational-protection) | The code, conversation and selected supporting material available to the model for the current request. |
+| [Copilot notebook](#distinguish-chat-agents-researcher-analyst-pages-and-notebooks) | A workspace that brings selected reference material together for use in a focused stream of work. |
+| [Copilot Chat](#distinguish-chat-agents-researcher-analyst-pages-and-notebooks) | A conversational interface for asking questions, drafting content and refining an answer with follow-up prompts. |
+| [Copilot Page](#distinguish-chat-agents-researcher-analyst-pages-and-notebooks) | An editable shared surface for shaping generated material into content that people can revise together. |
+| [Researcher](#distinguish-chat-agents-researcher-analyst-pages-and-notebooks) | A research-oriented agent intended to gather and synthesize information for a more involved question. |
+| [Analyst](#distinguish-chat-agents-researcher-analyst-pages-and-notebooks) | An agent oriented toward reasoning over data to investigate patterns, calculations or business questions. |
+| [Work context](#connect-work-context-without-assuming-complete-access) | Organizational material available under the user's permissions, such as files, messages or meeting records. |
+| [Source citation](#worked-example-derive-a-business-conclusion-across-sources) | A reference to the underlying material a reviewer can inspect to check a generated claim. |
+| [Confidentiality](#apply-responsible-ai-and-data-protection) | Keeping information available only to authorized people, including when sharing a generated summary. |
+
+**Manage prompts and chats by using Microsoft 365 Copilot**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Prompt](#create-a-prompt-with-a-testable-contract) | A request that describes a goal, gives context and states what the deliverable should look like. |
+| [Goal](#create-a-prompt-with-a-testable-contract) | The outcome the prompt asks for, such as a decision brief or an action list. |
+| [Output format](#create-a-prompt-with-a-testable-contract) | The requested structure for the response, such as a table with one row per decision. |
+| [Model choice](#choose-the-available-model-for-the-task) | The decision about which model to use based on the task's quality, cost and response requirements. |
+| [Saved prompt](#save-schedule-and-share-prompts-safely) | A stored request that can be reused or adapted instead of retyping the full instructions. |
+| [Scheduled prompt](#save-schedule-and-share-prompts-safely) | A recurring request configured to run at a defined time or interval. |
+| [Chat history](#manage-conversation-history-and-notebooks) | The record of previous conversations that a user can revisit or manage. |
+| [Memory](#separate-memory-history-and-instructions) | Information retained for use in future interactions, such as a preference about how to present a summary. |
+| [Custom instructions](#separate-memory-history-and-instructions) | Persistent preferences or guidance that shape later responses where supported. |
+
+**Manage business content and collaboration by using Microsoft 365 Copilot**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Draft](#draft-a-new-document-from-a-prompt) | Generated content offered as a starting point that the author checks against the sources before sharing. |
+| [Executive summary](#generate-from-an-existing-document-and-create-management-summaries) | A concise account of a source's key findings, decisions and implications for its audience. |
+| [Data visualization](#generate-visuals-that-answer-the-business-question) | A chart or graphic selected to communicate a specific comparison, trend or change. |
+| [Gross growth](#worked-example-gross-growth-is-not-net-growth) | The increase before subtracting losses or departures during the same period. |
+| [Net growth](#worked-example-gross-growth-is-not-net-growth) | The increase remaining after relevant losses or reductions are included. |
+| [Meeting transcript](#use-copilot-for-meetings-and-collaboration) | A text record of captured meeting speech that can ground summaries and action lists. |
+| [Action item](#worked-example-incomplete-capture-is-incomplete-evidence) | A specific commitment from a meeting with an owner and, where agreed, a due date. |
+
+**Drive business outcomes by using agents**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Agent](#select-an-agent-and-return-to-its-work) | A task-oriented assistant that uses instructions, relevant sources and permitted capabilities to produce a result. |
+| [Agent skill](#choose-a-skill-then-supervise-the-deliverable) | A reusable capability or set of instructions an agent can apply to a particular piece of work. |
+| [Delegation](#choose-a-skill-then-supervise-the-deliverable) | Assigning an agent a defined task while retaining responsibility for checking the outcome. |
+| [Approval](#understand-the-approval-you-give) | Permission to carry out a specified action. Its scope matters when the agent can schedule or send later work. |
+| [Approval scope](#worked-example-one-approval-can-cover-a-later-message) | The exact recipients, actions, timing or other limits covered by an authorization. |
+| [Recurring task](#manage-recurring-work-and-access) | A business activity repeated on a schedule with a named owner and a way to check continued relevance. |
+| [Execution surface](#check-the-execution-surface) | The app or agent experience where the action actually runs, determining which capabilities and controls apply. |
+
 ## Places to learn
+
+**Suggested practice.** Take a multi-step request and identify one point to review the plan and one external action requiring approval; inspect the usage unit before trying the workflow in a tenant. 67 minutes for the module (Microsoft Learn, 10 units). [Get more done with Copilot Cowork](https://learn.microsoft.com/en-us/training/modules/delegate-work-copilot-cowork/)
 
 This is a selective starting set, not a complete list and not a requirement to consume everything. Pick the explanation, hands-on practice, and assessment style that works for you, and map each resource to the blueprint effective for your appointment. Selected public course/path listings were rechecked October 28; unchanged older observations remain dated below. Public landing-page access does not establish access to paid lessons or assessment questions.
 

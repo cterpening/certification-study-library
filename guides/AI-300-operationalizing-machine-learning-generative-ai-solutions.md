@@ -5,15 +5,17 @@ official_blueprint: https://learn.microsoft.com/en-us/credentials/certifications
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: source-validated
-last_verified: 2026-10-28
+review_status: review-required
+last_verified: 2026-11-20
 upcoming_change_status: none-announced
 upcoming_change_checked: 2026-10-28
 ---
 
 # AI-300 Operationalizing Machine Learning and Generative AI Solutions Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-03.md#ai-300) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ai-300-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-300) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-02.md#ai-300)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-03.md#ai-300) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ai-300-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-300) is authoritative.
 
 **Current baseline:** The study-guide page shows last updated October 15, 2026; no separate skills-effective date is published. All 58 detailed objective wordings match the accepted baseline checked October 28, 2026. The credential page separately shows October 7; neither metadata date establishes a changed skills-effective baseline.<br>
 **Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
@@ -52,6 +54,8 @@ Retain resource/IaC version, Git commit, data/feature lineage, environment diges
 ---
 
 ## 1. Design and implement an MLOps infrastructure (15–20%)
+
+**Practice check.** An existing v1 workflow might still run after its support deadline. For maintained training exercises use Azure Machine Learning CLI and SDK v2. CLI v1 support ended September 30, 2025 and the documented SDK v1 support deadline was June 30, 2026. [SDK & CLI (v1) - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/en-us/azure/machine-learning/introduction?view=azureml-api-1)
 
 **Use the supported toolchain.** Azure ML CLI v1 support ended September 30, 2025; Python SDK v1 support ended June 30, 2026. Existing workflows can continue operating, but that does not restore support. Inventory `azure-cli-ml`/`azureml-core`, migrate to the `ml` extension/`azure-ai-ml`, and rebuild/test environments instead of mixing v1 and v2 examples. The legacy `azureml` name in a different package is not sufficient by itself to identify SDK v1. [SDK/CLI lifecycle](https://learn.microsoft.com/en-us/azure/machine-learning/introduction?view=azureml-api-1)
 
@@ -663,13 +667,89 @@ Execute the local gate with passing, failing, missing, duplicate, severe and mal
 
 ---
 
+## Key terms and phrases
+
+**Design and implement an MLOps infrastructure (15–20%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Workspace](#build-the-azure-machine-learning-resource-boundary) | The Azure Machine Learning boundary that organizes assets, jobs, permissions and compute for a team. |
+| [Datastore](#datastores-and-data-assets) | An Azure Machine Learning reference to a storage location and the means of accessing it. |
+| [Data asset](#datastores-and-data-assets) | A named, versioned reference to data that training or evaluation jobs can consume consistently. |
+| [Compute target](#compute-targets) | The environment on which a training or inference workload actually runs. |
+| [Environment](#create-reusable-workspace-assets) | A versioned definition of software dependencies and runtime configuration for executing a job. |
+| [Bicep](#provision-with-bicep-cli-and-github-actions) | A declarative language for describing Azure resources and their dependencies in repeatable deployments. |
+
+**Implement machine learning model lifecycle and operations (25–30%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [MLflow run](#make-experiments-reproducible-with-mlflow) | A tracked experiment execution that can associate parameters, metrics and artifacts with the model-building work. |
+| [Experiment](#make-experiments-reproducible-with-mlflow) | A grouping of training or evaluation runs used to compare inputs, settings and outcomes. |
+| [Parameter](#make-experiments-reproducible-with-mlflow) | An input setting recorded for a run, such as the learning rate. |
+| [Metric](#make-experiments-reproducible-with-mlflow) | A numerical result recorded for comparison, such as validation accuracy or response latency. |
+| [Artifact](#make-experiments-reproducible-with-mlflow) | A file produced by a run, such as an evaluation report or serialized model. |
+| [Command job](#worked-command-job-bind-the-script-to-declared-assets) | An Azure Machine Learning job that runs a command or script with declared compute, environment, inputs and outputs. |
+| [Hyperparameter](#automl-and-hyperparameter-tuning) | A training setting selected outside the fitted model, such as tree depth or learning rate. |
+| [Hyperparameter sweep](#automl-and-hyperparameter-tuning) | A set of training trials exploring different parameter combinations against a chosen objective. |
+| [AutoML](#automl-and-hyperparameter-tuning) | An automated process for trying candidate model and preprocessing configurations for a defined machine learning task. |
+| [Distributed training](#distributed-training) | Training one workload using multiple compute processes or devices under an explicit coordination strategy. |
+| [Pipeline component](#build-training-pipelines) | A reusable stage with explicit inputs and outputs that can be composed into a training or evaluation pipeline. |
+| [Registered model](#register-and-govern-models) | A named and versioned model asset retained for controlled use in deployment and evaluation. |
+| [Online endpoint](#deploy-online-and-batch-endpoints) | A service that responds to individual inference requests with predictions as the requests arrive. |
+| [Batch endpoint](#deploy-online-and-batch-endpoints) | An entry point for asynchronous inference jobs over collections of inputs. |
+| [Deployment](#deploy-online-and-batch-endpoints) | The model-serving configuration and compute behind an endpoint, whose version can change separately from the endpoint address. |
+| [Canary rollout](#progressive-rollout-and-rollback) | An initial release to a limited share of traffic so the new version can be measured before broader use. |
+| [Rollback](#progressive-rollout-and-rollback) | Returning traffic or deployment configuration to a previously accepted version after a release problem. |
+| [Data drift](#monitor-drift-and-production-performance) | A shift in the distribution of incoming features relative to a reference period that warrants investigation. |
+| [Reference distribution](#monitor-drift-and-production-performance) | The baseline population against which incoming feature or prediction distributions are compared. |
+| [Prediction drift](#monitor-drift-and-production-performance) | A change in the distribution of model outputs relative to a baseline that calls for checking inputs and observed outcomes. |
+
+**Design and implement a GenAIOps infrastructure (20–25%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Model card](#select-and-deploy-foundation-models) | Documentation of a model's intended uses, capabilities, limitations and evaluation evidence. |
+| [Model deployment](#select-and-deploy-foundation-models) | A selected model version and serving configuration made available to clients through an endpoint. |
+| [Release contract](#define-a-model-release-contract) | The version, dependencies, quality thresholds and rollback criteria agreed before making a model available to users. |
+| [Prompt version](#operate-prompts-and-connections) | A specific revision of a prompt retained with its inputs, evaluation results and release history. |
+
+**Implement generative AI quality assurance and observability (10–15%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Ground truth](#build-evaluation-datasets-and-mappings) | The expected labels, answers or outcomes used to judge model behavior on the evaluation set. |
+| [Evaluation slice](#build-evaluation-datasets-and-mappings) | A subset of examples representing a meaningful population, risk category or operating condition. |
+| [Dataset mapping](#build-evaluation-datasets-and-mappings) | The association between evaluation fields and the actual inputs, outputs or expected results supplied to an evaluator. |
+| [Trace](#observe-applications-and-agents-continuously) | A linked record of the calls made for one request, useful for locating time or errors in retrieval, generation or tool use. |
+| [Span](#observe-applications-and-agents-continuously) | The record of one operation within a trace, such as a database query or model call. |
+| [Release threshold](#turn-metrics-into-a-release-policy) | A minimum acceptable result, such as accuracy on a critical slice, used to decide whether a model version can advance. |
+| [Release gate](#turn-metrics-into-a-release-policy) | A condition a proposed version must satisfy, such as meeting quality and safety thresholds, before deployment. |
+
+**Optimize generative AI systems and model performance (10–15%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Retrieval-augmented generation (RAG)](#optimize-rag-from-a-labeled-baseline) | An application retrieves relevant evidence and includes it in the model's input when generating an answer. |
+| [Embedding](#optimize-rag-from-a-labeled-baseline) | A numeric vector representing content for comparisons such as semantic similarity. |
+| [Retrieval relevance](#optimize-rag-from-a-labeled-baseline) | How well the retrieved passages address the request, measured separately from the quality of the generated answer. |
+| [Recall at k](#optimize-rag-from-a-labeled-baseline) | The fraction of known relevant items found within the first k retrieved results under a specified evaluation setup. |
+| [Groundedness](#diagnose-rag-by-stage) | How well the claims in a generated answer are supported by the evidence supplied to the model. |
+| [Chunk](#diagnose-rag-by-stage) | A bounded portion of a source document indexed and retrieved as a unit of evidence. |
+| [Hybrid search](#diagnose-rag-by-stage) | Combining keyword and vector retrieval so a query can match both exact terms and semantic similarity. |
+| [Fine-tuning](#fine-tune-only-for-the-right-problem) | Further training on examples to change a model's learned behavior for a task or response style. |
+| [Checkpoint](#operate-the-fine-tuning-dataset-and-checkpoints) | A saved training state or model version that can support evaluation or resumption of a fine-tuning run. |
+| [Validation set](#operate-the-fine-tuning-dataset-and-checkpoints) | Held-out examples used to compare tuning choices and detect overfitting before final testing. |
+
 ## Places to learn
+
+**Suggested practice.** Trace which repository supplies platform setup and which one owns workload code, then sketch how a model change reaches a deployment stage. About 20–35 minutes to read the repository guide and sketch a repository layout (editorial estimate). [README.md](https://github.com/Azure/mlops-v2/blob/main/documentation/structure/README.md)
 
 This is **not a complete list**, and it is not a recommendation to consume everything. Choose one primary path, build the labs and use targeted material for gaps. Times are published when available or labeled estimates. Avoid dumps and recalled/live exam questions.
 
 ### Focused reproducibility review
 
-Use the [MLOps accelerator structure](https://github.com/Azure/mlops-v2/blob/main/documentation/structure/README.md) and [Azure ML examples README](https://github.com/Azure/azureml-examples) to draw the inner-loop/outer-loop handoff for one model: data/version, environment, run, model registration, test evidence, deployment identity and rollback owner. Add a separate column for GenAIOps evidence still needed. Then inspect the [Foundry samples validation description](https://github.com/microsoft-foundry/foundry-samples) and distinguish build readiness from a sample's opt-in live-service validation. **About 90–150 minutes**, estimated for two short repository documents, the validation section and an original evidence map; sample setup/execution is additional and may cost money. **VERIFY CURRENT:** legacy SDK-v1 choices in accelerator documentation are historical context, not an instruction to use an unsupported SDK. No samples or pipelines were run in this review.
+Use the [MLOps accelerator structure](https://github.com/Azure/mlops-v2/blob/main/documentation/structure/README.md) and [Azure ML examples README](https://github.com/Azure/azureml-examples) to draw the inner-loop/outer-loop handoff for one model: data/version, environment, run, model registration, test evidence, deployment identity and rollback owner. Add a separate column for GenAIOps evidence still needed. For a Foundry evaluation, record the test dataset, evaluator and release threshold alongside evidence that the deployment builds. [Source notes and publisher link](../docs/research/2026-11-20-microsoft-refresh-group-02.md#ai-300).
 
 | Resource | Access | Estimated time | Best use |
 |---|---|---:|---|
@@ -678,7 +758,6 @@ Use the [MLOps accelerator structure](https://github.com/Azure/mlops-v2/blob/mai
 | [AI Skills Navigator Practice Assessment](https://aiskillsnavigator.microsoft.com/en-us/certifications/microsoft-certified-associate/machine-learning-operations-engineer) | Free account/sign-in | 45–90 min plus remediation (estimate) | Microsoft-linked diagnostic; sign-in shell only, no questions/results reviewed |
 | [Azure MLOps v2 solution accelerator](https://github.com/Azure/mlops-v2) | Public | 8–20 hours selectively (estimate) | Official reference architectures and automation; verify current SDK/IaC |
 | [Azure ML examples](https://github.com/Azure/azureml-examples) | Public | 10–30 hours selectively (estimate) | CLI/SDK jobs, pipelines and endpoints |
-| [Foundry samples](https://github.com/microsoft-foundry/foundry-samples) | Public | 8–20 hours selectively (estimate) | Official sample directory; inspect each sample and distinguish build checks from opt-in live validation |
 | [O'Reilly MLOps/LLMOps Bootcamp](https://www.oreilly.com/live-events/mlopsllmops-bootcamp/0642572182861/0642572243333/) | Paid live/subscription | Historical November 3–5, 2025 event; 10h metadata and agenda | Ammar Mohanna, two sessions; verify recording/new dates; broad lifecycle supplement |
 | [Udemy AI-300 MLOps & GenAIOps preparation](https://www.udemy.com/course/ai-300-mlops-genaiops-engineer-exam-preparation/) | Paid; price varies | 3h27, 11 lectures / one section (indexed public outline) | Aseem Mankotia, updated July 2026; 100-minute simulation differs from official 120-minute assessment |
 | [Udemy AI-300 practice tests](https://www.udemy.com/course/ai-300-operationalizing-ml-and-generative-ai-practice-tests/) | Paid; price varies | Five 150-question sets plus one 161-question set = 911; 12–25h review (estimate) | VARONTO Academy, updated June 2026; description still says 900, paid content/originality unverified |

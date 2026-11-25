@@ -7,16 +7,18 @@ generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
 last_verified: 2026-10-28
-upcoming_change_status: none-announced
-upcoming_change_checked: 2026-10-28
+upcoming_change_status: scheduled
+upcoming_change_checked: 2026-11-20
 ---
 
 # MB-800 Microsoft Dynamics 365 Business Central Functional Consultant Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-04.md#mb-800) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mb-800-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-800) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-05.md#mb-800)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-04.md#mb-800) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mb-800-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-800) is authoritative.
 
 **Current baseline:** Skills measured as of June 30, 2026.<br>
-**Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
+**Upcoming English outline — December 18, 2026.** Use the current objective map for preparation before that date. Check the language and version for your appointment. The [November source notes](../docs/research/2026-11-20-microsoft-refresh-group-05.md#mb-800) identify the announced edition and its domain weights.<br>
 **Lifecycle:** The [Business Central Functional Consultant Associate credential](https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-functional-consultant-associate/) is active, renews every 12 months, and has no announced retirement. The exam is 100 minutes, is offered in eight languages, and has a free Practice Assessment.<br>
 **Recent blueprint change:** The June 2026 update removed the standalone integration objective, added Copilot and agent setup, substantially revised core setup/basic operations, increased operations weighting, and added inventory transactions. Older courses remain useful only after this gap check.<br>
 **Official source:** [MB-800 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-800)
@@ -105,6 +107,8 @@ Separate email review, draft review, vendor approval and posting. Finalizing a p
 The [Sales Order Agent](https://learn.microsoft.com/en-us/dynamics365/business-central/sales-order-agent) creates a quote first even when configured to proceed directly to an order. A quote does not reserve stock. Sender email identifies the contact; a forwarded message is matched using the forwarder's address, so a name in the body is insufficient. Use the supported one-time contact association for a forwarded request after verifying it. Review outgoing communications and the task timeline through [agent supervision](https://learn.microsoft.com/en-us/dynamics365/business-central/supervise-agent-tasks); document creation is not shipment, invoicing or cash settlement.
 
 ### Set up dimensions
+
+**Practice check.** To analyze sales by department and project, assign dimension values to the postings and use them as reporting filters. Reserve the two global dimension positions for frequent filters. Business Central provides up to eight shortcut dimensions for direct entry on journals and document lines. [Work with dimensions to track and analyze data - Business Central | Microsoft Learn](https://learn.microsoft.com/en-us/dynamics365/business-central/finance-dimensions)
 
 Dimensions classify entries for management reporting without multiplying G/L accounts. Define stable dimension/value codes and ownership. Global dimensions are highly integrated and costly to change; shortcut dimensions simplify entry but do not change the underlying dimension-set model. Default dimensions on G/L accounts, customers, vendors, items and other master data can enforce values or block combinations.
 
@@ -447,7 +451,7 @@ Use an isolated test company with synthetic data. These are proposed tenant labs
 
 - [Sumit Singh: Inventory Setup in Business Central](https://community.dynamics.com/blogs/post/?postid=7989aea7-627b-f011-b4cc-7c1e5248819c) provides prompts for an inventory-reconciliation worksheet. **Use it selectively:** its placement of Inventory Account (Interim) conflicts with the official setup documented above. Do not copy its account map or generic configuration defaults. Publication date was not independently established.
 - [Mike Morton: Sales Order Agent public-preview introduction](https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2025/04/03/sales-order-agent-in-microsoft-dynamics-365-business-central-now-in-public-preview/) (April 3, 2025) helps trace a request through review and document creation. Its preview status and defaults are historical; current setup/supervision docs govern the lab. The embedded video was not watched.
-- [Richard Riley: the AI at Work roadmap transition](https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/) (August 25, 2026) explains the September move of new release disclosures and planned November 15 Release Planner retirement. Use roadmap discoveries to select a current-documentation check; an announced feature is not evidence that it is enabled in your company.
+- [Richard Riley: the AI at Work roadmap transition](https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/) (August 25, 2026) explains the September move of new release disclosures. The former Release Planner address redirected to the Microsoft Copilot Roadmap on November 20, 2026. Use that destination for new disclosures and Learn product documentation to confirm supported behavior. Use roadmap discoveries to select a current-documentation check; an announced feature is not evidence that it is enabled in your company.
 
 For each article, write one requirement, one predicted ledger/document state, one negative case and the evidence that would prove the result. This makes optional reading useful without treating a blog as the exam blueprint.
 
@@ -466,7 +470,74 @@ For each article, write one requirement, one predicted ledger/document state, on
 
 The June 30, 2026 study guide defines exam scope. Microsoft Learn, product documentation and public course labs support behavior but may include adjacent features or localization-dependent steps. Commercial sources are optional supplements and never define the objective contract. All scenarios, labs and checks here are original; no dumps or recalled questions were used.
 
+## Key terms and phrases
+
+**Set up Business Central**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Configuration package](#create-a-company-and-move-data) | A defined collection of table data used to move setup or master records into a company. |
+| [Company](#create-a-company-and-move-data) | A Business Central data and accounting boundary representing a particular business or legal entity. |
+| [Permission set](#manage-users-and-security) | A collection of object permissions that can be assigned to grant a user defined access. |
+| [Security group](#manage-users-and-security) | A group used to assign permissions to multiple Business Central users consistently. |
+| [Dimension](#set-up-dimensions) | A reusable analysis category, such as department or project, attached to transactions for reporting. |
+| [Dimension value](#set-up-dimensions) | A member of a dimension, such as Sales within the Department dimension. |
+| [Default dimension](#set-up-dimensions) | A suggested or required dimension value from a master record that can flow to transaction lines. |
+| [Dimension combination](#set-up-dimensions) | Rules governing which dimension values may appear together on an entry. |
+| [Approval workflow](#manage-approvals-with-workflows) | A rule-driven sequence that routes a document or action to the authorized approver before it proceeds. |
+| [Approval entry](#manage-approvals-with-workflows) | The record connecting an approval request to its assigned approver, status and outcome. |
+| [Approval user setup](#manage-approvals-with-workflows) | The configuration identifying approvers, approval limits and the user relationships used in approval workflows. |
+
+**Configure financials**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Chart of accounts](#financial-policy-and-chart-of-accounts) | The collection of general ledger accounts used to classify transactions and report financial results. |
+| [Posting group](#posting-groups-predict-the-ledger-before-posting) | A mapping that helps determine which general ledger accounts a business transaction will affect. |
+| [General business posting group](#posting-groups-predict-the-ledger-before-posting) | A classification of the business partner that combines with the product classification to determine accounts for posting. |
+| [General product posting group](#posting-groups-predict-the-ledger-before-posting) | A classification of what is sold or purchased that helps determine accounts through posting setup. |
+| [Inventory posting group](#posting-groups-predict-the-ledger-before-posting) | A grouping used with location and posting setup to select inventory-related ledger accounts. |
+| [General journal](#journals-and-bank-accounts) | A place to prepare balanced accounting entries before posting them to the ledger. |
+| [Journal template](#journals-and-bank-accounts) | The definition of a journal's purpose and behavior, under which individual batches are created. |
+| [Journal batch](#journals-and-bank-accounts) | A named working set of journal lines with its own settings under the journal template. |
+| [Bank reconciliation](#journals-and-bank-accounts) | Matching bank statement activity to bank ledger entries and resolving differences. |
+| [Customer ledger entry](#payables-and-receivables) | A posted financial record of a customer's transaction, such as an invoice or payment. |
+| [Vendor ledger entry](#payables-and-receivables) | A posted financial record of a vendor transaction that can be applied against another open entry. |
+| [Depreciation book](#fixed-assets) | A set of rules and asset entries used to record depreciation on a particular reporting basis. |
+| [Fixed asset card](#fixed-assets) | The master record identifying an asset and its associated depreciation books and posting setup. |
+
+**Configure sales and purchasing**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Item tracking](#inventory-and-item-structure) | Following specific inventory units or groups through transactions by lot or serial information. |
+| [Stockkeeping unit (SKU)](#inventory-and-item-structure) | An item configuration for a particular location or variant that can carry planning or replenishment settings. |
+| [Costing method](#compare-the-cost-assumption-before-choosing-the-item-method) | The rule used to assign inventory costs to issues and remaining quantities, such as FIFO or average cost. |
+| [FIFO](#compare-the-cost-assumption-before-choosing-the-item-method) | First in, first out, a cost assumption that assigns earlier eligible receipt costs to outgoing quantities first. |
+| [Average costing](#compare-the-cost-assumption-before-choosing-the-item-method) | Valuing outgoing inventory using an average unit cost calculated under the relevant costing setup. |
+| [Customer card](#customer-and-vendor-master-data) | The master record holding customer details, payment terms, posting settings and related information. |
+| [Vendor card](#customer-and-vendor-master-data) | The master record holding supplier identity, payment settings and purchasing defaults. |
+| [Line discount](#prices-and-discounts) | A reduction applied to an individual document line under the applicable pricing rules. |
+| [Invoice discount](#prices-and-discounts) | A reduction calculated across the qualifying document amount according to the configured criteria. |
+
+**Perform Business Central operations**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Purchase receipt](#purchase-and-sales-documents) | The posted record that goods from a purchase order have been received. |
+| [Sales shipment](#purchase-and-sales-documents) | The posted record that ordered goods have been shipped to the customer. |
+| [Sales invoice](#purchase-and-sales-documents) | The document that posts a customer receivable and the corresponding revenue or related entries under posting setup. |
+| [Blanket order](#reuse-lines-or-release-a-blanket-quantity) | An agreement-like document whose quantities can be released into individual orders over time. |
+| [Apply entries](#financial-documents-journals-and-payments) | Link a payment, credit or other ledger entry to the open invoice or transaction it settles. |
+| [Prepayment](#combine-fulfilled-lines-and-account-for-deposits) | An amount invoiced or paid before the final delivery or invoice, later applied as configured. |
+| [Combined invoice](#combine-fulfilled-lines-and-account-for-deposits) | A single invoice collecting multiple eligible shipment or receipt lines for a customer or vendor. |
+| [Item ledger entry](#fixed-asset-and-inventory-operations) | A record of a posted item movement used to trace inventory quantity changes. |
+| [Item journal](#fixed-asset-and-inventory-operations) | The mechanism for posting inventory quantity adjustments or movements outside the normal sales and purchase documents. |
+| [Value entry](#prove-depreciation-and-inventory-changes-through-entries) | A posted record of inventory cost associated with an item ledger entry. |
+
 ## Places to learn
+
+**Suggested practice.** Test sample purchase requests below and above an approval limit in a sandbox and record the resulting approval status for each. About 35–60 minutes to follow the setup, approval-user, notification and testing tasks with a prepared sandbox (editorial estimate). [Hands-on-Lab: Set up and use a purchase approval workflow](https://microsoftlearning.github.io/MB-800-Business-Central-Functional-Consultant/Instructions/Labs/Lab05_Set_up_and_use_a_purchase_approval_workflow.html)
 
 This is not a complete list and is not meant to be consumed in full. Choose one primary route, build one company from setup through close, and add a second resource only for a measured gap.
 

@@ -220,6 +220,76 @@ Use only owned or explicitly authorized nonproduction environments. Record versi
 31. Match actual role, current exam availability/version, lab access, blueprint gaps, and intended NSE 7 track.
 32. Recalled, leaked, stolen, “real,” guaranteed-match, or unauthorized question collections.
 
+## Key terms and phrases
+These terms span several electives. Use the linked sections to find the ones that apply to your chosen exam.
+
+**Shared secure-networking foundation**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Control plane](#model-control-management-and-data-planes) | The part of a network system that determines how traffic should be forwarded. The data plane applies those decisions to packets. |
+| [Federation](#model-control-management-and-data-planes) | An arrangement that lets one security domain rely on identity information issued by another, under agreed trust and validation rules. |
+| [Least privilege](#model-control-management-and-data-planes) | Giving an identity only the permissions needed for its task, for as long as it needs them. |
+| [Multifactor authentication (MFA)](#model-control-management-and-data-planes) | Authentication using factors from two or more categories. A password and a second password both use the same knowledge factor. |
+| [Telemetry](#model-control-management-and-data-planes) | Logs, events and measurements supplied by managed systems. Customer attribution and collection health determine whether the records are usable. |
+| [Rollback](#make-change-observable-and-reversible) | Returning a change to a known acceptable state when results do not meet defined conditions. A valid rollback also accounts for data changed in the meantime. |
+
+**FortiManager Administrator lane**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Administrative domain (ADOM)](#administration-and-adoms) | A FortiManager boundary for managing a selected set of devices, policies and administrative permissions. |
+| [Workspace lock](#administration-and-adoms) | A mechanism that reserves a configuration for an editor to prevent conflicting simultaneous changes. |
+| [Authentication](#administration-and-adoms) | The check that establishes who a user or device is. Authorization determines what that identity may do next. |
+| [Authorization](#administration-and-adoms) | Determining whether a given identity may perform a specific action on the particular resource requested. |
+| [FortiManager](#administration-and-adoms) | A platform for centrally managing Fortinet device configurations and policy. A change staged in its database must reach the intended devices to affect traffic. |
+| [Idempotence](#administration-and-adoms) | Making an operation safe to repeat without accumulating unintended effects. A retried request to create one case should still yield one case. |
+| [Pagination](#administration-and-adoms) | Splitting a response into multiple pages. A consumer that stops after the first page can silently report an incomplete inventory. |
+| [Tenant](#administration-and-adoms) | An administrative or customer boundary in a shared service. Data, identities, configurations and actions must stay within the intended tenant. |
+| [Provisioning template](#device-manager-and-provisioning) | Reusable device settings populated with site-specific values when a device is brought under management. |
+| [Failover](#device-manager-and-provisioning) | Transfer of service to another HA member after a failure. Some sessions may need to reconnect. |
+| [FortiGate](#device-manager-and-provisioning) | The Fortinet firewall platform that applies routing, access policy and security inspection to traffic traversing its interfaces. |
+| [Policy package](#policies-objects-and-installations) | A managed set of policies assigned to installation targets. Editing the package and installing it on a device are separate steps. |
+| [Dynamic object](#policies-objects-and-installations) | An object whose concrete value is derived from device mapping or changing external information, depending on the feature in use. |
+| [Installation target](#policies-objects-and-installations) | A device or group selected to receive a centrally managed configuration. The configured target and actually installed revision can differ. |
+| [Metadata variable](#policies-objects-and-installations) | A named, site-specific value used by a shared template, such as a branch gateway address or interface identifier. |
+| [Device database](#advanced-services-and-troubleshooting) | FortiManager’s stored representation of a managed device’s configuration. It can diverge from the running device after a local change. |
+| [Filesystem](#advanced-services-and-troubleshooting) | The structures that organize files and directories on storage or expose a virtual hierarchy. A larger block device alone does not always enlarge its filesystem. |
+| [Integrity](#advanced-services-and-troubleshooting) | Protection against unauthorized or improper modification or destruction, including the ability to identify that an expected state has changed. |
+
+**FortiNAC Administrator lane**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Network access control (NAC)](#architecture-discovery-and-isolation) | A system that evaluates a device or user and directs the network to provide the appropriate level of access. |
+| [Isolation network](#architecture-discovery-and-isolation) | A restricted network used to separate a device from ordinary resources while its status is assessed or corrected. |
+| [Enforcement point](#architecture-discovery-and-isolation) | The switch, wireless controller or other component that actually applies the access decision. |
+| [FortiNAC](#architecture-discovery-and-isolation) | A network access control platform that discovers and profiles devices and coordinates enforcement with network infrastructure. |
+| [Identity provider (IdP)](#architecture-discovery-and-isolation) | The service that authenticates an identity and makes assertions or issues tokens that a relying service can validate. |
+| [Remote Authentication Dial-In User Service (RADIUS)](#architecture-discovery-and-isolation) | A protocol used by network access equipment to consult a central authentication and authorization service and record accounting events. |
+| [Simple Network Management Protocol (SNMP)](#architecture-discovery-and-isolation) | A protocol for reading management data and receiving notifications from network devices. How access and transport are secured depends on version and settings. |
+| [Syslog](#architecture-discovery-and-isolation) | A mechanism for forwarding timestamped event messages to a collector. Receipt of one message does not show that every expected device is reporting. |
+| [Virtual LAN (VLAN)](#architecture-discovery-and-isolation) | A logical Layer 2 broadcast domain. A frame moving between VLANs normally crosses a routing boundary. |
+| [Deduplication](#access-control-and-security-automation) | Recognizing and handling repeated copies of the same observation or request so duplication does not inflate counts or repeat an action. |
+| [Normalization](#access-control-and-security-automation) | Converting fields from different sources to a common representation so that the records can be compared. |
+| [Quarantine](#access-control-and-security-automation) | A containment action that restricts a device’s connectivity while responders investigate or remediate it. |
+| [Access control list (ACL)](#ha-integrations-and-visibility) | An ordered set of rules that matches traffic attributes and permits or denies traffic according to the platform’s evaluation rules. |
+| [Address Resolution Protocol (ARP)](#ha-integrations-and-visibility) | The IPv4 local-link protocol that resolves a next-hop IP address to a link-layer address so a host can send a frame. |
+| [Dynamic Host Configuration Protocol (DHCP)](#ha-integrations-and-visibility) | The protocol clients use to obtain settings such as an IP address, gateway and DNS servers, typically for a bounded lease. |
+| [Fortinet Security Fabric](#ha-integrations-and-visibility) | Fortinet’s framework for integrating products so they can exchange context and coordinate visibility or policy-driven actions. |
+| [High availability (HA)](#ha-integrations-and-visibility) | A deployment that lets a peer take over when a device fails. The peer still needs working network paths and a valid configuration. |
+
+**Announced FortiVoice and FortiAnalyzer options**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Availability](#5-announced-fortivoice-and-fortianalyzer-options) | Timely and reliable access to a resource by authorized users. A running server may still be unavailable to the business if a required dependency fails. |
+| [Event handler](#5-announced-fortivoice-and-fortianalyzer-options) | FortiAnalyzer logic that identifies matching log conditions and produces an event for further analysis or response. |
+| [FortiAnalyzer](#5-announced-fortivoice-and-fortianalyzer-options) | A platform for collecting and analyzing supported Fortinet telemetry, including searching logs, generating reports and handling security events. |
+| [FortiView](#5-announced-fortivoice-and-fortianalyzer-options) | A set of views that summarize activity from available log data and let an analyst narrow a result to its underlying records. |
+| [Incident](#5-announced-fortivoice-and-fortianalyzer-options) | A case that groups evidence of related activity for investigation, ownership and resolution. |
+| [Log retention](#5-announced-fortivoice-and-fortianalyzer-options) | The period for which records remain available for an investigation or other defined purpose. Missing results outside that period cannot establish inactivity. |
+
 ## Places to learn
 
 This is a selective starting set, not a complete list and not a prescription to consume everything. Pick the option-specific documentation, course, and labs that close measured gaps. Times are planning estimates unless a publisher lists a duration; access and versions can change.

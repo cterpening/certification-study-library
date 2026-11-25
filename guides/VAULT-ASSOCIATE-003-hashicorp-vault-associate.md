@@ -466,6 +466,95 @@ For one Kubernetes application, compare direct API, Agent template, Agent proxy,
 - [Vault leases](https://developer.hashicorp.com/vault/docs/concepts/lease)
 - [Vault seal concepts](https://developer.hashicorp.com/vault/docs/concepts/seal)
 
+## Key terms and phrases
+
+**Authentication methods**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Auth method](#authentication-creates-a-vault-identity-context) | A component that verifies a client's identity and, after successful login, issues a Vault token under configured rules. |
+| [Kubernetes auth method](#authentication-creates-a-vault-identity-context) | An auth method that verifies a Kubernetes service account identity and maps it to configured Vault access. |
+| [AppRole](#authentication-creates-a-vault-identity-context) | An auth method for machines. A role ID identifies the role, and configurations can require a secret ID as an additional login credential. |
+| [Entity alias](#entities-groups-and-aliases) | The link between an identity known to an auth method and the Vault entity that represents that person or workload. |
+| [Entity](#entities-groups-and-aliases) | Vault's identity record for a person or workload. Aliases from different auth methods can refer to the same entity. |
+
+**Vault policies**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Capability](#paths-and-capabilities) | A permitted operation on a Vault API path, such as reading a value or updating it. Policies associate paths with capabilities. |
+| [Policy path pattern](#paths-and-capabilities) | A rule selecting which Vault API paths a policy stanza matches. A trailing asterisk matches a prefix, while a plus matches one path segment. |
+| [Explicit deny](#paths-and-capabilities) | A policy capability that blocks an operation when it applies to the selected path. Test both a permitted path and the protected exception. |
+
+**Vault tokens**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Batch token](#3-vault-tokens) | A lightweight Vault token with a fixed lifetime and different lifecycle behavior from service tokens. It suits some high-volume machine workflows. |
+| [Service token](#3-vault-tokens) | A stored Vault token with lifecycle features such as renewal and revocation when policy and token settings permit. |
+| [Orphan token](#parents-children-and-orphans) | A token without a parent in the token hierarchy. Revoking the token that initiated its creation does not cascade through a parent link to it. |
+| [Time to live (TTL)](#ttl-renewal-and-periodic-behavior) | The time remaining before a token or lease expires unless renewed under its applicable limits. |
+| [Lease renewal](#ttl-renewal-and-periodic-behavior) | A request to extend the current lease or token lifetime. Whether Vault grants the request and for how long depends on the applicable limits. |
+| [Periodic token](#ttl-renewal-and-periodic-behavior) | A token whose lifetime can be extended by renewing within its period, subject to its configuration and any explicit maximum lifetime. |
+| [Token accessor](#accessors) | An identifier that an authorized operator can use to look up or revoke a token without receiving the token itself. |
+
+**Vault leases**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Lease](#4-vault-leases) | Vault's record of the lifetime of a leased credential. It lets Vault track renewal or initiate revocation. |
+| [Revocation](#4-vault-leases) | Ending a token or leased credential's validity. For dynamic secrets, the engine may need to revoke a credential in the external system as well. |
+| [Lease ID](#4-vault-leases) | The identifier Vault uses to track a leased secret's lifetime and process operations such as renewal or revocation. |
+| [Static secret](#4-vault-leases) | A stored value retrieved by authorized clients. Its replacement schedule and consumer reload behavior need to be managed. |
+
+**Secrets engines**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Secrets engine](#5-secrets-engines) | A mounted component that stores, generates or transforms secrets. The engine type determines the operations at its API paths. |
+| [Key rotation](#choose-by-lifecycle) | Starting a new key version for future operations. Earlier ciphertext can still depend on the older version until it is migrated or retired. |
+| [Dynamic secret](#choose-by-lifecycle) | A credential created on demand, typically with a lease and limited permissions, such as a short-lived database user. |
+| [Mount path](#mounts-and-api-paths) | The API path where an auth method or secrets engine is enabled. Two mounts of the same type can have different settings and data. |
+| [Key/value (KV) v2 versioning](#kv-versioning-deletion-and-concurrent-writes) | Vault's KV v2 engine retains successive values written to the same secret path. An authorized reader can request an earlier version when it is still available. |
+| [Check-and-set (CAS)](#kv-versioning-deletion-and-concurrent-writes) | A conditional write that succeeds only for the expected version, preventing one writer from silently replacing a newer value. |
+| [Response wrapping](#response-wrapping) | Returning a short-lived, single-use wrapping token in place of a sensitive response so the intended recipient can unwrap it separately. |
+
+**Encryption as a Service**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Transit secrets engine](#6-encryption-as-a-service) | A service that performs cryptographic operations with Vault-managed keys. The calling application keeps the returned ciphertext. |
+| [Transit key](#6-encryption-as-a-service) | A named key managed by the transit engine for cryptographic operations. An application can submit data and store the ciphertext returned. |
+
+**Vault architecture fundamentals**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Barrier encryption](#7-vault-architecture-fundamentals) | Vault's encryption layer protecting data before it is written to the configured storage backend. |
+| [Auto unseal](#7-vault-architecture-fundamentals) | Using an external key-management or hardware-backed service to unlock Vault's protected key material at startup. |
+| [Shamir shares](#7-vault-architecture-fundamentals) | Parts used with a configured threshold to reconstruct the unseal key. A three-of-five threshold requires three distinct valid shares. |
+| [Recovery key](#7-vault-architecture-fundamentals) | Key material used to authorize certain privileged operations in an auto-unseal deployment. Losing the external seal mechanism is a separate recovery problem. |
+| [Seal](#7-vault-architecture-fundamentals) | The state in which Vault cannot use the encryption key material needed to access protected storage. |
+| [Hardware security module (HSM)](#7-vault-architecture-fundamentals) | A device that protects key material and performs supported cryptographic operations within its security boundary. |
+| [Unseal](#7-vault-architecture-fundamentals) | Making Vault's protected key material available so the server can decrypt its stored data after startup. |
+| [Namespace](#configure-the-client-environment-objective-7c) | An administrative boundary for delegating Vault resources such as auth methods, secrets engines and policies to a tenant. |
+
+**Vault deployment architecture**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Integrated Storage (Raft)](#storage-and-clustering) | A storage backend that replicates Vault data across voting nodes using consensus. The cluster needs a majority to commit writes. |
+| [Performance replication](#replication) | Replicating supported Vault data to serve workloads across clusters. Its purpose and failover procedure differ from disaster recovery replication. |
+| [Raft snapshot](#replication) | A point-in-time backup of integrated storage data. Restoration also depends on having the correct seal configuration and access. |
+
+**Access management architecture**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Vault Agent](#vault-agent) | A client-side process that can automate login, maintain a token and render secret-backed configuration for an application. |
+| [Agent template](#vault-agent) | A Vault Agent template that renders secret values into application-readable configuration and can update output as values change. |
+| [Token sink](#vault-agent) | The destination to which a Vault Agent auth workflow writes its resulting token. Its permissions affect who can act as the authenticated client. |
+
 ## Places to learn
 
 This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Pick the official reading, hands-on path, video, and assessment format that fits your gaps. Times are approximate consumption time at normal speed; labs, pausing, notes, troubleshooting, and review add time.

@@ -13,7 +13,9 @@ upcoming_change_checked: 2026-10-28
 
 # MS-700 Managing Microsoft Teams Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-02.md#ms-700) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ms-700-coverage-record). Source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-700) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-04.md#ms-700)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-02.md#ms-700) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ms-700-coverage-record). Source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-700) is authoritative.
 
 **Current baseline:** Skills measured as of October 27, 2026.<br>
 **Blueprint reconciliation (October 28, 2026):** The October 27, 2026 English outline is the accepted current scope. The revision uses Teams Network planner, Teams Advisor and Teams admin center naming. These changes do not create a new weighted domain. Historical objective bytes and dated reviews are preserved. Recheck localized appointment timing separately.<br>
@@ -159,6 +161,8 @@ Teams/channel policies govern who can create private/shared channels and share e
 
 ### Teams apps and extensibility
 
+**Practice check.** For a Teams channel that receives application notifications, create a Workflows webhook and assign a co-owner. Connector-based Incoming Webhooks retired in May 2026, and a workflow belongs to its owners even when it posts to a team channel. [Webhooks and connectors - Teams | Microsoft Learn](https://learn.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/what-are-webhooks-and-connectors)
+
 The app lifecycle is **discover/purchase → allow/block and permission/consent review → assignment/availability → setup/pin → use/monitor → update/respond/retire**. Org-wide app settings establish broad behavior; [app-centric management](https://learn.microsoft.com/en-us/microsoftteams/app-centric-management) replaces deprecated app permission policies as tenants migrate and determines who can use an app; setup policies install/pin supported apps. Blocking an app and removing OAuth consent are separate actions. [Migration checks](https://learn.microsoft.com/en-us/microsoftteams/pre-and-post-migration) should compare exported before/after user availability; migration does not change existing Graph consent. [App administration](https://learn.microsoft.com/en-us/microsoftteams/manage-apps) requires settings in both Teams and Microsoft 365 admin centers to agree until unified management is enabled.
 
 **Worked example 3 — Check the audience, not the icon.** After migration, app X displays Unblocked but Available to **No one**. An installed/pinned X remains unavailable. App Y is assigned to 12 named employees and a group of 8, with 3 overlapping employees: the intended distinct audience is **17**. Reconcile actual availability against those 17; do not count assignment rows as users. Selected-user/group availability excludes guests even if assigned. Nested groups supported for app availability must not be confused with ordinary Teams group-policy inheritance.
@@ -175,7 +179,7 @@ Choose extension point from interaction:
 
 Legacy Office 365 connector webhooks reached their final disablement rollout May 18–22, 2026, according to the updated developer blog below. Use supported Workflows or app notification patterns. [Workflow ownership guidance](https://learn.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/what-are-webhooks-and-connectors) ties flows to users, not channels: provide co-owners, maintain connection authentication, and test owner departure.
 
-**Open source conflict:** The April 14 blog update says private-channel Workflows webhook support is available, while the platform overview still describes private-channel Flow bot support as under development. Record the cloud, posting identity, entry point and actual result before promising private-channel delivery. Shared-channel support does not resolve this conflict.
+Both the Teams platform reference and the April retirement update document private-channel Workflows webhooks. The current reference lists setup through the Power Automate portal or the Teams Workflows app. Record the selected posting identity, permissions and delivery result for the channel being tested.
 
 > **Related item:** A Teams app can be allowed by Teams policy yet fail because Entra consent, license, Conditional Access, resource permission or downstream service is missing.
 
@@ -344,7 +348,7 @@ Use a controlled test call/meeting and CQD/Call Analytics/client evidence. Intro
 
 ### Lab 9 — App and connector migration
 
-Build a before/after audience matrix using example 3. Design a nonproduction Workflow notification with a co-owner, a replaced connection and both valid/invalid payload tests. Verify MessageCard content separately from interactive Adaptive Card actions. For private channels, record the unresolved documentation conflict and test the precise supported cloud/identity path before adoption. **Evidence:** intended versus effective audience, consent inventory, ownership continuity, posting results and rollback.
+Build a before/after audience matrix using example 3. Design a nonproduction Workflow notification with a co-owner, a replaced connection and both valid/invalid payload tests. Verify MessageCard content separately from interactive Adaptive Card actions. For the private channel, record the setup entry point, posting identity, permissions and observed delivery result.
 
 ### Lab 10 — VDI and room authentication transition
 
@@ -402,7 +406,7 @@ Inventory endpoint OS, provider/plugin, Teams build and actual optimization stat
 41. **Does Copilot policy Disabled enforce an unchangeable ban?** No; it sets an organizer-editable default.
 42. **What fails in the 160-second callback example?** The sample completes at 165 seconds, beyond queue timeout.
 43. **Can presenter telemetry prove every event attendee received good media?** No; attendee delivery requires separate evidence.
-44. **Can the private-channel webhook conflict be closed by an HTTP 200 source fetch?** No; confirm current supported cloud, posting identity and an actual scoped delivery result.
+44. **What does Microsoft document for a private-channel Workflows webhook?** The Power Automate portal and the Teams Workflows app can configure it. Check the chosen identity, channel permissions and end-to-end delivery for a particular tenant.
 
 ---
 
@@ -417,7 +421,74 @@ Inventory endpoint OS, provider/plugin, Teams build and actual optimization stat
 - I completed or tabletop-tested all ten labs and can prove positive and negative outcomes.
 - I passed an independent readiness check without relying on recalled live-exam content.
 
+## Key terms and phrases
+
+**Configure and manage a Teams environment**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Quality of service (QoS)](#network-readiness-and-media-path) | Marking and prioritizing traffic so time-sensitive media can receive appropriate network treatment. |
+| [Jitter](#network-readiness-and-media-path) | Variation in network packet arrival timing that can disrupt real-time audio or video. |
+| [Packet loss](#network-readiness-and-media-path) | The fraction of network packets that fail to arrive, potentially reducing call quality. |
+| [Round-trip time](#network-readiness-and-media-path) | The elapsed time for a network message to reach the other end and its response to return. |
+| [Media relay](#network-readiness-and-media-path) | A service that relays real-time traffic when the preferred media path cannot be used. |
+| [Sensitivity label](#roles-security-and-compliance) | A classification applied to content that can also carry protection settings such as encryption. |
+| [Retention](#roles-security-and-compliance) | Rules governing how long content is kept and what happens when the retention period ends. |
+| [Data loss prevention (DLP)](#roles-security-and-compliance) | Policies that recognize sensitive information and govern actions such as sharing or transferring it. |
+| [eDiscovery](#roles-security-and-compliance) | A process for finding, preserving and reviewing information needed for a legal or investigative matter. |
+| [Teams policy](#governance-and-policy-assignment) | A collection of settings assigned to users to control capabilities such as meetings, messaging or calling. |
+| [Policy assignment](#governance-and-policy-assignment) | Applying a set of Teams settings to a user or group, with precedence determining the effective policy. |
+| [External access](#external-access-guest-access-and-shared-channels) | Federation that lets users communicate with people in other organizations without adding them as guests to a team. |
+| [Guest access](#external-access-guest-access-and-shared-channels) | Access granted to an external person who is invited into the tenant and added to a team for collaboration. |
+| [Shared channel](#external-access-guest-access-and-shared-channels) | A channel that can include designated participants without making every participant a member of the entire parent team. |
+| [B2B direct connect](#external-access-guest-access-and-shared-channels) | An Entra cross-tenant arrangement used for supported shared-channel collaboration without inviting each participant as a guest. |
+| [Tenant allowlist](#external-access-guest-access-and-shared-channels) | A restriction that allows communication only with specified organizational domains under the configured federation rules. |
+
+**Manage teams, channels, chats, and apps**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Team template](#team-rollout-and-creation) | A reusable starting configuration for a team, including selected settings, channels and apps. |
+| [Private channel](#channel-and-messaging-decisions) | A channel accessible only to a selected subset of its parent team's members. |
+| [Standard channel](#channel-and-messaging-decisions) | A team channel available to all team members under the team's membership boundary. |
+| [Channel moderation](#channel-and-messaging-decisions) | Settings determining which participants may initiate or respond to posts in an eligible channel. |
+| [Channel owner](#channel-and-messaging-decisions) | A member with elevated responsibility for supported channel membership and configuration decisions. |
+| [Teams app](#teams-apps-and-extensibility) | An application integrated into Teams through capabilities such as a tab, bot or message extension. |
+| [Tab](#teams-apps-and-extensibility) | An app surface embedded in a Teams chat, channel or personal view for ongoing access to content. |
+| [Bot](#teams-apps-and-extensibility) | An app component that interacts with users through messages or conversational commands. |
+
+**Manage meetings and calling**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Webinar](#meetings-appointments-webinars-and-town-halls) | A structured event with presenter and attendee experiences and participant registration. |
+| [Meeting](#meetings-appointments-webinars-and-town-halls) | A scheduled or ad hoc interactive session for participants to communicate and collaborate. |
+| [Town hall](#meetings-appointments-webinars-and-town-halls) | A presentation-oriented event with separated organizer, presenter and attendee experiences. |
+| [Meeting policy](#meetings-appointments-webinars-and-town-halls) | An administrative configuration controlling which meeting capabilities are available to assigned users. |
+| [Meeting option](#meetings-appointments-webinars-and-town-halls) | An organizer-configured setting for one meeting within the limits allowed by policy. |
+| [Virtual appointment](#meetings-appointments-webinars-and-town-halls) | A scheduled customer or client interaction managed through the supported Teams appointment workflow. |
+| [Lobby](#meetings-appointments-webinars-and-town-halls) | A waiting area through which meeting participants may need admission under policy and meeting options. |
+| [Call queue](#teams-phone-numbers-policies-and-call-flows) | A voice feature that holds incoming calls and routes them to available agents according to the queue's configuration. |
+| [PSTN connectivity](#teams-phone-numbers-policies-and-call-flows) | The connection that lets Teams Phone users place and receive calls to and from public telephone numbers. |
+| [Direct Routing](#teams-phone-numbers-policies-and-call-flows) | A Teams Phone connectivity model in which a supported session border controller links Teams with a telephony provider or system. |
+| [Auto attendant](#teams-phone-numbers-policies-and-call-flows) | A voice application that answers calls and routes callers according to menus, schedules or directory choices. |
+| [Dynamic emergency calling](#teams-phone-numbers-policies-and-call-flows) | Using a caller's network-derived location and applicable policies to route emergency calls with appropriate location information. |
+| [Resource account](#teams-phone-numbers-policies-and-call-flows) | A service account representing a voice application such as an auto attendant or call queue. |
+| [Calling Plan](#teams-phone-numbers-policies-and-call-flows) | Microsoft-provided PSTN connectivity for eligible Teams Phone users and locations. |
+| [Operator Connect](#teams-phone-numbers-policies-and-call-flows) | A connectivity model in which a participating carrier supplies PSTN service integrated with Teams. |
+
+**Monitor, report on, and troubleshoot Teams**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Call quality analytics](#monitoring-and-reporting) | Telemetry used to investigate patterns in meeting and call quality across users, devices and networks. |
+| [Call Quality Dashboard (CQD)](#monitoring-and-reporting) | An organization-wide reporting tool for identifying patterns in Teams media quality. |
+| [Call analytics](#monitoring-and-reporting) | Per-user or per-call diagnostics used to inspect endpoints, network paths and media quality for a reported issue. |
+| [Network subnet mapping](#monitoring-and-reporting) | Associating organizational address ranges with sites so quality reports can localize network patterns. |
+
 ## Places to learn
+
+**Suggested practice.** Pick an incoming service call and map the roles of an auto attendant, a call queue and the destination user before reading the troubleshooting module. About 20–40 minutes to read the selected sections and produce the suggested comparison or checklist (editorial estimate; full path duration was not verified). [Manage meetings and calling in Microsoft Teams](https://learn.microsoft.com/en-us/training/paths/manage-meetings-calling-microsoft-teams/)
 
 This is a curated starting point, **not a complete list**, and it is not meant to be consumed in full. Choose one primary path, practice in a tenant, and select supplements from measured gaps. Reconcile all older resources with the October 27, 2026 blueprint, especially MTO, Copilot/AI troubleshooting, current events, policies and external collaboration.
 
@@ -452,7 +523,7 @@ Public page retrieval does not establish access to course lessons or practice qu
 
 | Reading | Why it earns a place | Learning output |
 |---|---|---|
-| [Office 365 connectors retirement](https://devblogs.microsoft.com/microsoft365dev/retirement-of-office-365-connectors-within-microsoft-teams/) — Microsoft developer team, original July 3, 2024; controlling update April 14, 2026 | Records successive deadline changes; the latest update supersedes older dates. MessageCard rendering is not interactive-button support. | Inventory notifications, convert interactive payloads to Adaptive Cards, and document ownership/recovery. Keep the private-channel conflict open. |
+| [Office 365 connectors retirement](https://devblogs.microsoft.com/microsoft365dev/retirement-of-office-365-connectors-within-microsoft-teams/) — Microsoft developer team, original July 3, 2024; controlling update April 14, 2026 | Records successive deadline changes; the latest update supersedes older dates. MessageCard rendering is not interactive-button support. | Inventory notifications, convert interactive payloads to Adaptive Cards, and document ownership/recovery. Verify the posting identity and actual delivery in the target private channel. |
 | [What’s new in Teams, July 2026](https://techcommunity.microsoft.com/blog/microsoftteamsblog/what%E2%80%99s-new-in-microsoft-teams--july-2026/4542510) — Kerry Perez Heffernan, July 31 | Highlights app/agent request handling and Windows Rooms passwordless support. Announcement scope must be checked against the deployed device/cloud. | Trace request → approval → audience → consent → working app; separately write a room migration acceptance/recovery checklist. Neither demo execution nor fleet-wide feature availability was verified. |
 
 Start with Microsoft's free Practice Assessment. Add paid questions only for a different explanation style or measured gap; reject any provider claiming recalled live questions.

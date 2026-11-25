@@ -264,6 +264,86 @@ A domain feed creates hundreds of alerts. Evaluate intelligence source/confidenc
 - [ ] I reject leaked/live exam questions and unapproved uploads to public intelligence services.
 - [ ] I rechecked the July 2026 datasheet, Cortex docs, handbook, and registration before purchase.
 
+## Key terms and phrases
+
+**Security Operations fundamentals**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Security information and event management (SIEM)](#soc-roles-tools-and-analytics) | Collection and analysis of security records from multiple systems to support detection and investigation. |
+| [Triage](#soc-roles-tools-and-analytics) | Initial assessment of a case to determine its urgency, scope and next investigative step. |
+| [Escalation](#soc-roles-tools-and-analytics) | Passing a case to the person or team with authority or expertise to make the next decision when defined conditions are met. |
+| [Security operations center (SOC)](#soc-roles-tools-and-analytics) | The people and processes that monitor security signals, investigate incidents and coordinate response. |
+| [Vulnerability](#soc-roles-tools-and-analytics) | A weakness in a system or process that could permit harm. The associated risk depends on exposure, likelihood and impact. |
+| [Cortex XDR](#cortex-xdr-governance-logs-reports-and-dashboards) | A platform for correlating endpoint and other telemetry to detect suspicious activity, support investigation and apply authorized response actions. |
+| [Dashboard](#cortex-xdr-governance-logs-reports-and-dashboards) | A set of visual summaries for a defined operational question. Filters, coverage and collection delays determine what the displayed totals represent. |
+| [Data freshness](#cortex-xdr-governance-logs-reports-and-dashboards) | How recently the data needed for a decision was observed or updated. A successful query against stale records can give a misleading view of current state. |
+| [Extended detection and response (XDR)](#cortex-xdr-governance-logs-reports-and-dashboards) | Correlating evidence across endpoints and additional sources to support detection, investigation and response in a common operational context. |
+| [Retention](#cortex-xdr-governance-logs-reports-and-dashboards) | The period for which telemetry remains available for investigation. A search outside that period cannot establish inactivity. |
+| [Service account](#cortex-xdr-governance-logs-reports-and-dashboards) | A nonhuman identity used by software or automation. Scope, credential lifecycle and ownership govern what happens when it is compromised or retired. |
+
+**Threat intelligence and incident/case response**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Containment](#incident-lifecycle-and-management) | Limiting the scope or ongoing effects of an incident, such as isolating the affected device under an approved response plan. |
+| [Eradication](#incident-lifecycle-and-management) | Removing the cause and remaining artifacts of an incident before or alongside controlled restoration of normal operation. |
+| [Incident](#incident-lifecycle-and-management) | A case that groups related alerts and evidence so an analyst can assess scope and coordinate a response. |
+| [Threshold](#incident-lifecycle-and-management) | The value or condition that triggers a rule or changes an operational decision, such as five matching events in a ten-minute interval. |
+| [Indicator of compromise (IOC)](#intelligence-and-indicators) | An observable value associated with suspicious activity, such as a file hash or domain, whose relevance depends on context. |
+| [Advanced WildFire](#intelligence-and-indicators) | A Palo Alto Networks malware analysis service that can examine submitted files and supply verdicts to participating controls. |
+| [False negative](#intelligence-and-indicators) | A target condition that occurs without the expected alert or block. Reviewing alerts alone cannot reveal every missed case. |
+| [False positive](#intelligence-and-indicators) | An alert that classifies benign activity as a target condition. Repeated benign alerts can distort operational priorities. |
+| [Indicator](#intelligence-and-indicators) | An observable value or pattern used to find potentially relevant activity. A match needs source context and timing before it supports an incident conclusion. |
+| [Threat hunting](#intelligence-and-indicators) | A proactive investigation that tests a specific hypothesis against available telemetry and records evidence, including important coverage gaps. |
+| [Threat intelligence](#intelligence-and-indicators) | Assessed information about adversary activity or indicators, with source, context and freshness to guide a decision. |
+
+**Cortex XDR**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Telemetry](#evidence-pipeline-and-investigation) | Records of activity from endpoints, networks or other systems that investigators can correlate into a timeline. |
+| [Alert](#evidence-pipeline-and-investigation) | A notification that an observed condition met a detection criterion. An analyst needs context before treating it as an incident. |
+| [Endpoint detection and response (EDR)](#evidence-pipeline-and-investigation) | Collection and analysis of endpoint activity to detect suspicious behavior, investigate it and support a response. |
+| [Evidence preservation](#evidence-pipeline-and-investigation) | Maintaining the integrity and provenance of information needed for investigation, including original timestamps, collection method and access history. |
+| [Causality chain](#evidence-pipeline-and-investigation) | Linked process and activity relationships that help an analyst understand how an observed event arose and what it influenced. |
+| [Endpoint agent](#agent-management-and-deployment) | Software on a host that supplies activity data and applies configured prevention or response controls. |
+| [Rollback](#agent-management-and-deployment) | Returning a change to a known acceptable state when results do not meet defined conditions. A valid rollback also accounts for data changed in the meantime. |
+| [Tenant](#agent-management-and-deployment) | An administrative or customer boundary in a shared service. Data, identities, configurations and actions must stay within the intended tenant. |
+
+**Cortex XSOAR**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Security orchestration, automation and response (SOAR)](#4-cortex-xsoar-16) | Coordination of tools and response steps through workflows that can include both automated tasks and human decisions. |
+| [Playbook](#4-cortex-xsoar-16) | A defined workflow for handling a type of case, including inputs, decisions, actions and evidence. |
+| [Content pack](#4-cortex-xsoar-16) | A versioned package of integrations, playbooks or other content with dependencies that should be tested before rollout. |
+| [Cortex XSOAR](#4-cortex-xsoar-16) | A platform for managing security cases and coordinating automated and manual response tasks through integrations and playbooks. |
+| [Idempotence](#4-cortex-xsoar-16) | Making an operation safe to repeat without accumulating unintended effects. A retried request to create one case should still yield one case. |
+| [Ingestion](#4-cortex-xsoar-16) | Bringing source records into the security platform for analysis. Missing input limits what a dashboard can show. |
+| [Threat intelligence management](#4-cortex-xsoar-16) | Evaluation and maintenance of indicators and their source, confidence, relevance and useful lifetime. |
+| [War Room](#4-cortex-xsoar-16) | The case workspace that records commands, results, notes and investigation activity. |
+
+**Cortex XSIAM**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Cortex XSIAM](#5-cortex-xsiam-20) | A security operations platform that brings data, detections, cases and automation together for the SOC. |
+| [Correlation rule](#5-cortex-xsiam-20) | Logic that relates events using keys, thresholds or a time window, such as repeated failures for one account followed by a success. |
+| [Data ingestion](#5-cortex-xsiam-20) | Receiving records from a source. A successful connection does not establish that every expected event arrived. |
+| [Data stitching](#5-cortex-xsiam-20) | Linking related events or entities from different sources to enrich context for an investigation. |
+| [Deduplication](#5-cortex-xsiam-20) | Recognizing and handling repeated copies of the same observation or request so duplication does not inflate counts or repeat an action. |
+| [Normalization](#5-cortex-xsiam-20) | Mapping source-specific values to a common representation, such as translating different vendor fields into the same source-address field. |
+| [Remediation](#5-cortex-xsiam-20) | Action taken to remove or correct the cause of an incident after its immediate effects are contained. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Telemetry gap](#cloud-workload-agent-gap) | A portion of the expected population, time period or activity for which the system lacks observations. Silence in that gap does not establish normal behavior. |
+| [Workload agent](#cloud-workload-agent-gap) | Software deployed with a workload to report activity and apply supported runtime protection policies. |
+| [Approval gate](#noisy-domain-correlation) | A point where an authorized person must review available evidence before a workflow performs a sensitive or high-impact action. |
+
 ## Places to learn
 
 This is not a complete list, and it is not meant to be consumed in full. Start with the blueprint and official digital path, then choose product documentation and vendor-neutral incident/detection material for measured gaps. Verify product version, licensing, and access before investing time.

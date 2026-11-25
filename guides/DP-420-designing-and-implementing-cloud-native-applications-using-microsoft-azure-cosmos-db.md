@@ -13,7 +13,9 @@ upcoming_change_checked: 2026-10-28
 
 # DP-420 Building AI Applications with Azure Cosmos DB Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-01.md#dp-420) and the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-420-coverage-record). Known source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-420) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-02.md#dp-420)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-01.md#dp-420) and the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-420-coverage-record). Known source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-420) is authoritative.
 
 **Current baseline:** Skills measured as of October 6, 2026; the current three-domain outline is accepted.<br>
 **Blueprint reconciliation (October 28, 2026):** The October 6 outline governs current preparation. Database development is 40–45%, secure/optimized deployment 30–35%, and AI/analytics 20–25%. The old July domain organization below is retained as a labeled foundation, not current exam weighting. The live study guide still contains future-tense transition copy; the effective-date heading and credential notice are recorded separately. Historical objective bytes and review records are preserved.<br>
@@ -76,7 +78,9 @@ The [vector-search guide](https://learn.microsoft.com/en-us/azure/cosmos-db/vect
 
 ### Change-feed modes, copy jobs and AI-assisted development
 
-Read the [change-feed mode matrix](https://learn.microsoft.com/en-us/azure/cosmos-db/change-feed-modes). Latest-version mode can start at the beginning but does not preserve every intermediate version or deleted item. All-versions-and-deletes mode requires continuous backup, has a bounded retention window and currently starts from now or a valid checkpoint, not an arbitrary historical timestamp. Select supported SDK/processor/pull APIs explicitly; pull mode leaves checkpointing and work distribution to your application, while the processor coordinates leases.
+**Practice check.** For an Azure Cosmos DB for NoSQL consumer that needs delete events or intervening versions, evaluate all versions and deletes mode (preview). It requires continuous backup and retains changes within that backup window. A delete event identifies the deletion without returning the prior item body. Latest version mode serves workloads that need the latest available insert or update. [Change Feed Modes - Azure Cosmos DB | Microsoft Learn](https://learn.microsoft.com/en-us/azure/cosmos-db/change-feed-modes)
+
+Read the [change-feed mode matrix](https://learn.microsoft.com/en-us/azure/cosmos-db/change-feed-modes). Latest-version mode can start at the beginning but does not preserve every intermediate version or deleted item. All-versions-and-deletes mode (preview) requires continuous backup, has a bounded retention window and currently starts from now or a valid checkpoint, not an arbitrary historical timestamp. Select supported SDK/processor/pull APIs explicitly; pull mode leaves checkpointing and work distribution to your application, while the processor coordinates leases.
 
 [Container copy jobs](https://learn.microsoft.com/en-us/azure/cosmos-db/container-copy) remain preview. Online copy requires the documented backup/change-feed prerequisites and supported account/region configuration. Preconfigure the target's partition key, indexes and container TTL; copying items does not copy every container setting. The [completion procedure](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-container-copy) includes stopping source updates, allowing remaining changes to drain and completing the job. Reconcile content, deletes and original transactions before switching callers. A processed-event count is not a count of distinct matching items or proof of a safe cutover.
 
@@ -1068,7 +1072,96 @@ Use these to check your reasoning after attempting the questions.
 
 ---
 
+## Key terms and phrases
+
+**Current October 6 objective map**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Hybrid search](#retrieval-grounding-and-durable-agent-memory) | Combining lexical matches with vector similarity. An exact product code can rank highly by text even when the surrounding description matches better by meaning. |
+| [Reciprocal rank fusion (RRF)](#retrieval-grounding-and-durable-agent-memory) | Combining ranked result lists using each item's position in each list. An item appearing near the top of both lists gets contributions from both, even when the underlying scores use different scales. |
+| [Semantic memory](#retrieval-grounding-and-durable-agent-memory) | Durable facts an agent can retrieve by meaning across interactions. Keep the tenant, source and access rules with the fact so retrieval respects the same boundary as the original data. |
+| [Conversation state](#retrieval-grounding-and-durable-agent-memory) | The messages and progress needed to resume a particular interaction. A saved conversation can restore the last step without making every detail a reusable fact about the user. |
+| [Fabric mirroring](#masking-fleet-capacity-and-analytics-boundaries) | Replication of operational data into Fabric for analytical use. Check replication lag before using a mirrored table to report the latest transaction. |
+
+**Build the mental model first**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Logical partition](#separate-the-resource-distribution-and-request-models) | The set of items sharing a partition-key value within a Cosmos DB container. |
+
+**Data-model foundations — historical July grouping**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Partition key](#id-partition-key-and-unique-keys) | The value Cosmos DB uses to group items into logical partitions, affecting targeted reads and distribution of load. |
+| [Unique key](#id-partition-key-and-unique-keys) | A uniqueness constraint within a logical partition, enforced for the configured property path or combination. |
+| [Time to live (TTL)](#transactional-ttl) | A retention interval after which eligible items are automatically removed based on their last modification time. |
+| [Schema version](#item-and-schema-versioning) | A value maintained with an item that lets software interpret its structure correctly as the document model changes. |
+| [Synthetic partition key](#natural-synthetic-and-hierarchical-keys) | A key assembled from multiple values to fit distribution and query requirements better than one existing field. |
+| [Hierarchical partition key](#natural-synthetic-and-hierarchical-keys) | A key composed of ordered levels that supports routing and distribution decisions based on key prefixes. |
+| [Partition-key prefix](#natural-synthetic-and-hierarchical-keys) | The leading levels of a hierarchical key used to narrow eligible partitions for supported operations. |
+| [Request unit (RU)](#estimate-throughput-and-storage) | Cosmos DB's unit for expressing the resource cost of a database operation. |
+| [Hot partition](#estimate-throughput-and-storage) | A partition receiving disproportionate storage or throughput demand, potentially causing throttling despite adequate total capacity. |
+| [Provisioned throughput](#serverless-versus-provisioned-throughput) | Capacity allocated in request units per second for predictable or autoscaled workloads. |
+| [Serverless capacity](#serverless-versus-provisioned-throughput) | A consumption model that charges for the compute resources used by requests without provisioning a fixed throughput rate. |
+| [Gateway mode](#direct-versus-gateway) | An SDK connectivity mode that sends requests through the service gateway. |
+| [Direct mode](#direct-versus-gateway) | An SDK connectivity mode that communicates with backend replicas for supported operations. |
+| [Parameterized query](#query-with-the-nosql-query-language) | A query that supplies values as parameters so query text and input data remain distinct. |
+| [Point read](#point-operations-and-queries) | Retrieving one item using its ID and full partition key. An order with ID `O42` and customer partition key `C7` can be read directly when both values are known. |
+| [Cross-partition query](#point-operations-and-queries) | A query requiring work across multiple partitions when the filter cannot route it to a single key range. |
+| [ETag](#optimistic-concurrency) | A value that identifies an item version so a conditional write can detect an intervening update. |
+| [Optimistic concurrency control](#optimistic-concurrency) | Using a version precondition to reject an update when another writer has already changed the item. |
+| [Transactional batch](#transactional-batch-versus-bulk) | A group of operations on one logical partition that succeeds or fails as a unit. |
+| [Bulk execution](#transactional-batch-versus-bulk) | Submitting many independent operations efficiently without giving the entire set a shared transaction. |
+| [Continuation token](#pagination-and-continuation) | An opaque value used to resume reading a paged query from an earlier response. |
+| [Session token](#consistency-overrides-and-session-tokens) | A value representing observed progress that helps preserve session consistency across requests. |
+| [Consistency override](#consistency-overrides-and-session-tokens) | A supported request-level change to the read guarantees selected within the account's allowed consistency boundary. |
+
+**Design and implement data distribution — historical July grouping**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Strong consistency](#choose-consistency-from-observable-guarantees) | A consistency level giving reads the latest committed version under its ordering guarantees. |
+| [Session consistency](#choose-consistency-from-observable-guarantees) | A consistency level that preserves guarantees such as reading a session's own writes within the applicable partition scope. |
+| [Bounded staleness](#choose-consistency-from-observable-guarantees) | A consistency level that limits how far reads may lag, using a configured version count or time bound. |
+| [Eventual consistency](#choose-consistency-from-observable-guarantees) | A consistency level allowing replicas to converge over time while reads may initially see older values. |
+| [Preferred region](#configure-failover-and-application-routing) | A client-side region preference used to select eligible endpoints for requests. |
+| [Conflict resolution](#design-multi-region-writes-and-conflict-resolution) | Rules for choosing or reconciling competing writes in a multi-region write configuration. |
+| [Last-writer-wins](#design-multi-region-writes-and-conflict-resolution) | A conflict resolution policy that chooses between conflicting versions using a configured ordering value. |
+
+**Integrate an Azure Cosmos DB solution — historical July grouping**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Change feed processor](#change-feed-processor) | A consumer framework that distributes change-feed work and records progress so processing can resume. |
+| [Lease container](#change-feed-processor) | Storage used by change-feed consumers to coordinate partition work and preserve progress. |
+| [Projection](#common-projections) | A derived representation tailored to an access pattern, such as a per-customer view built from source changes. |
+
+**Optimize an Azure Cosmos DB solution — historical July grouping**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Request charge](#improve-query-and-operation-cost) | The measured RU cost returned for an operation, useful when comparing query or indexing choices. |
+| [Composite index](#define-an-indexing-strategy) | An index over an ordered combination of properties intended to support certain filter and sort patterns. |
+| [Indexing policy](#policy-components) | The container definition controlling which paths and supported index structures are maintained for query access. |
+| [Integrated cache](#use-integrated-cache-where-semantics-permit) | A service-side cache for eligible item reads and queries with freshness and routing constraints. |
+
+**Maintain an Azure Cosmos DB solution — historical July grouping**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Throttling](#status-code-triage) | Temporary rejection or delay when a request exceeds available throughput, requiring controlled retry and investigation. |
+| [Point-in-time restore](#implement-backup-and-restore) | Recovery of a database to a selected time using backups within the available retention window. |
+| [Continuous backup](#implement-backup-and-restore) | A backup mode retaining changes across an eligible recovery window for supported point-in-time restores. |
+| [Data-plane role](#implement-layered-security) | An authorization role granting access to supported item or query operations separately from Azure resource management. |
+| [Control plane](#control-plane-versus-data-plane) | The operations used to provision and configure resources, such as creating a storage account. |
+| [Data plane](#control-plane-versus-data-plane) | The path used to interact with the workload's actual data, such as reading a stored blob. |
+| [Private endpoint](#network-and-browser-controls) | A network interface with a private IP address through which a virtual network reaches a specific supported service resource. |
+
 ## Places to learn
+
+**Suggested practice.** Follow one document from the source into the mirror and record where to verify replication status before a query on the mirrored data. About 25–45 minutes to map prerequisites, replication state and the analytical endpoint (editorial reading budget; deployment and data volume add time). [Tutorial: Configure Microsoft Fabric mirrored database for Azure Cosmos DB](https://learn.microsoft.com/en-us/fabric/mirroring/azure-cosmos-db-tutorial)
 
 ### October 28 learning route and evidence task
 

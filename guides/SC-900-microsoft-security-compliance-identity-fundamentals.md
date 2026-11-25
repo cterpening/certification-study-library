@@ -13,7 +13,9 @@ upcoming_change_checked: 2026-10-28
 
 # SC-900 Microsoft Security, Compliance, and Identity Fundamentals Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-02.md#sc-900) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sc-900-coverage-record). Source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-04.md#sc-900)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-02.md#sc-900) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sc-900-coverage-record). Source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900) is authoritative.
 
 **Current baseline:** Skills measured as of October 21, 2026.<br>
 **Blueprint reconciliation (October 28, 2026):** The October 21, 2026 English outline is the accepted current scope. The revised identity objective names workload identities, and the threat-intelligence objective uses Microsoft Threat Intelligence. Study service principals and managed identities as well as agent identities; weights are unchanged. Historical objective bytes and dated reviews are preserved. Recheck localized appointment timing separately.<br>
@@ -333,6 +335,8 @@ The blueprint still names Content explorer, while current Purview documentation 
 
 ### Risk and investigation solutions
 
+**Practice check.** For a commercial Microsoft 365 scenario, use the new Microsoft Purview eDiscovery experience. The legacy solutions article identifies August 31, 2025 as retirement of classic Content Search, Standard, and Premium and limits its remaining instructions to Microsoft 365 operated by 21Vianet. [Microsoft Purview eDiscovery legacy solutions | Microsoft Learn](https://learn.microsoft.com/en-us/purview/ediscovery)
+
 | Solution | Focus |
 |---|---|
 | Insider Risk Management | Signals and workflows for potentially risky insider activity with privacy controls |
@@ -340,7 +344,7 @@ The blueprint still names Content explorer, while current Purview documentation 
 | Audit | Search and retain supported user/admin activity under applicable licensing |
 | eDiscovery | Identify, preserve, collect, review, and export relevant content for investigations/legal matters |
 
-[Insider Risk Management](https://learn.microsoft.com/en-us/purview/insider-risk-management) correlates configured signals into privacy-aware risk workflows; it does not declare a person guilty. [Audit](https://learn.microsoft.com/en-us/purview/audit-solutions-overview) supplies searchable activity evidence under applicable service, retention, role, and licensing boundaries; it does not preserve every content item. [eDiscovery](https://learn.microsoft.com/en-us/purview/ediscovery) is a governed preservation, search, collection, review, and export workflow, not ordinary keyword search. Retention and holds affect whether content remains available.
+[Insider Risk Management](https://learn.microsoft.com/en-us/purview/insider-risk-management) correlates configured signals into privacy-aware risk workflows; it does not declare a person guilty. [Audit](https://learn.microsoft.com/en-us/purview/audit-solutions-overview) supplies searchable activity evidence under applicable service, retention, role, and licensing boundaries; it does not preserve every content item. [commercial eDiscovery source notes](../docs/research/2026-11-20-microsoft-refresh-group-04.md#sc-900) is a governed preservation, search, collection, review, and export workflow, not ordinary keyword search. Retention and holds affect whether content remains available.
 
 > **Related item:** Data minimization reduces both privacy exposure and discovery/retention cost. Keeping everything forever can conflict with legal, privacy, and business requirements just as deleting too early can.
 
@@ -501,7 +505,75 @@ These are original questions with explanations, not recalled exam content.
 
 ---
 
+## Key terms and phrases
+
+**Security, compliance, and identity foundations**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Defense in depth](#shared-responsibility-and-defense-in-depth) | Using multiple layers of controls so a failure at one layer leaves other protections in place. |
+| [Shared responsibility](#shared-responsibility-and-defense-in-depth) | The division of security and operational duties between the cloud provider and the customer for a chosen service. |
+| [Encryption](#encryption-hashing-and-certificates) | Using a key to turn readable information into protected data that an authorized party can decrypt. |
+| [Hashing](#encryption-hashing-and-certificates) | Producing a fixed-size digest from input data, commonly used to check whether the input has changed. |
+| [Digital certificate](#encryption-hashing-and-certificates) | A signed statement linking a public key to an identity under a trusted issuer. |
+| [Symmetric encryption](#encryption-hashing-and-certificates) | Encryption in which the same secret key is used to encrypt and decrypt data. |
+| [Asymmetric encryption](#encryption-hashing-and-certificates) | Cryptography using a related public and private key pair for operations such as encryption or signatures. |
+| [Governance](#governance-risk-and-compliance) | The structures and responsibilities that determine how security and compliance decisions are made and enforced. |
+| [Risk](#governance-risk-and-compliance) | The potential for a harmful event considered in terms of likelihood and impact. |
+| [Compliance](#governance-risk-and-compliance) | Meeting applicable obligations and producing evidence that required controls operate. |
+| [Authentication](#identity-concepts) | Establishing who or what is making a request, such as verifying a user's identity at sign-in. |
+| [Authorization](#identity-concepts) | Deciding which actions an authenticated identity may perform on a resource. |
+| [Least privilege](#identity-concepts) | Giving each agent identity only the rights needed for its assigned work. |
+
+**Microsoft Entra**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Hybrid identity](#identity-types-and-hybrid-identity) | An identity arrangement that connects an on-premises directory with Microsoft Entra ID for cloud access. |
+| [Guest user](#identity-types-and-hybrid-identity) | An external identity represented in the resource tenant so it can receive access to shared resources. |
+| [Managed identity](#identity-types-and-hybrid-identity) | An Azure-managed workload identity that obtains tokens without an application storing a secret. |
+| [Multifactor authentication (MFA)](#authentication) | Requiring evidence from more than one type of authentication factor, such as a password and a possession factor. |
+| [Passwordless authentication](#authentication) | Proving identity through supported methods such as a passkey or security key without entering a password. |
+| [Conditional Access](#conditional-access-and-authorization) | The Entra policy system that evaluates signals about sign-in context and decides what access conditions to require. |
+| [Role-based access control (RBAC)](#conditional-access-and-authorization) | Assigning permissions through roles instead of granting each operation independently to every person. |
+| [Privileged Identity Management (PIM)](#identity-governance-and-protection) | A service for governing privileged roles, including time-limited activation of eligible assignments. |
+| [Access package](#identity-governance-and-protection) | A bundle of resources and assignment policies that a user can request through entitlement management. |
+| [User risk](#identity-governance-and-protection) | An assessment of the likelihood that a user's identity itself has been compromised. |
+| [Sign-in risk](#identity-governance-and-protection) | An assessment of the likelihood that a particular authentication request came from someone other than the legitimate user. |
+
+**Azure infrastructure and cloud security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Network security group (NSG)](#network-and-platform-controls) | A set of prioritized inbound and outbound traffic rules applied to a subnet or network interface. |
+| [Private endpoint](#network-and-platform-controls) | A network interface with a private IP address through which a virtual network reaches a specific supported service resource. |
+| [Web application firewall (WAF)](#network-and-platform-controls) | A control that evaluates HTTP requests against managed or custom rules to protect web applications. |
+| [Cloud security posture management (CSPM)](#microsoft-defender-for-cloud) | Assessment of cloud configurations and exposures to identify and prioritize weaknesses. |
+| [Workload protection](#microsoft-defender-for-cloud) | Detection and protection directed at running workloads, such as servers, containers or databases. |
+
+**Microsoft threat protection and security operations**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Security information and event management (SIEM)](#microsoft-sentinel) | Collecting and analyzing logs across systems to detect and investigate security events. |
+| [Analytics rule](#microsoft-sentinel) | A Sentinel detection definition that evaluates ingested data and can produce alerts under specified conditions. |
+| [Playbook](#microsoft-sentinel) | An automated response workflow that can take a defined series of actions when an incident meets specified conditions. |
+| [Extended detection and response (XDR)](#microsoft-defender-xdr) | Correlating detections and response actions across security products, such as endpoint, identity and email protection. |
+| [Incident](#microsoft-defender-xdr) | A case that groups related alerts and entities so an analyst can investigate and coordinate a response. |
+
+**Microsoft Purview and compliance**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Service Trust Portal](#trust-privacy-and-compliance-management) | Microsoft's source of compliance reports and other assurance material customers can use in their assessments. |
+| [Sensitivity label](#information-protection-and-data-lifecycle) | A classification for business information that can apply handling or protection settings. |
+| [Data loss prevention (DLP)](#information-protection-and-data-lifecycle) | Policies that recognize sensitive information and govern actions such as sharing or transferring it. |
+| [Retention label](#information-protection-and-data-lifecycle) | A retention setting applied to an item, allowing its lifecycle and, where configured, record status to be managed individually. |
+| [eDiscovery](#risk-and-investigation-solutions) | A process for finding, preserving and reviewing information needed for a legal or investigative matter. |
+
 ## Places to learn
+
+**Suggested practice.** Use a single workplace scenario to distinguish an identity decision, a security detection, and a compliance obligation, then choose the course section for the weakest distinction. 1 day of instructor-led training (publisher listing); provider scheduling and fees vary. [Introduction to Microsoft Security, Compliance, and Identity](https://learn.microsoft.com/en-us/training/courses/sc-900t00)
 
 This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Pick the formats that fit you. Published runtimes are distinguished from suggested study allocations and earlier metadata. Labs, note-taking, review and independent practice add time; no paid course or signed-in assessment was completed in this review.
 

@@ -453,6 +453,122 @@ These are original learning exercises, separate from the vendor's sample questio
 - [ ] I can design fact/dimension keys, history and measure additivity.
 - [ ] I can explain how medallion layers and dimensional models coexist.
 
+## Key terms and phrases
+
+**Developing code for data processing using Python and SQL**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Service principal](#design-a-deployable-python-project) | A nonhuman identity that can own or run scheduled jobs, applications or deployment workflows under explicitly granted permissions. |
+| [User-defined function (UDF)](#choose-native-expressions-before-udfs) | Custom logic exposed as a function in a query. Native expressions often give the optimizer better visibility into the operation. |
+| [UDF execution limits](#choose-native-expressions-before-udfs) | The resources and dependencies available to a user-defined function constrain the code it can run. Check memory use and package availability before choosing a UDF. |
+| [Watermark](#build-batch-and-streaming-pipelines-with-explicit-state) | An event-time progress threshold used by a streaming design to decide how long to retain certain state or accept late records. |
+| [Structured Streaming trigger](#build-batch-and-streaming-pipelines-with-explicit-state) | The setting that controls when a streaming query processes available input. With a processing-time trigger, the specified interval sets the desired cadence for micro-batches. |
+| [Expectation](#build-batch-and-streaming-pipelines-with-explicit-state) | A declarative data-quality condition in a pipeline, paired with a policy such as recording, dropping or failing on violations. |
+| [Idempotent write](#make-custom-streaming-writes-recoverable) | A write that produces the intended result even when the same batch is processed again after a failure. |
+| [Micro-batch](#make-custom-streaming-writes-recoverable) | A small bounded batch used to process a portion of a continuously arriving stream. |
+| [Change data capture (CDC)](#implement-cdc-and-append-flows-deliberately) | Recording inserts, updates and deletes so downstream tables can apply changes incrementally. |
+| [View](#implement-cdc-and-append-flows-deliberately) | A named query through which consumers see data in a defined shape. A conventional logical view reads its inputs when queried. |
+| [Materialized view](#implement-cdc-and-append-flows-deliberately) | A view with stored query results maintained by refresh, trading refresh and storage work for faster access to results. |
+| [Full refresh](#implement-cdc-and-append-flows-deliberately) | Reconstructing a derived dataset from all applicable inputs, which can be simpler but more expensive than applying changes. |
+| [Streaming table](#implement-cdc-and-append-flows-deliberately) | A table maintained by incremental processing of incoming records. |
+
+**Data ingestion and acquisition**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Schema](#model-source-behavior-before-selecting-a-reader) | The declared structure and types expected for stored data. Compare producer and consumer expectations before accepting a changed field. |
+| [Event time](#model-source-behavior-before-selecting-a-reader) | The timestamp associated with occurrence at the source. It can precede arrival or processing by a significant interval. |
+| [Offset](#model-source-behavior-before-selecting-a-reader) | A source position used to track progress through an ordered input, such as the last processed position within one partition. |
+
+**Transformation, cleansing and quality**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Projection](#write-efficient-transformations-with-known-semantics) | Selecting the fields or calculated expressions to return from a query. Fewer output fields can reduce data transfer. |
+| [Selectivity](#write-efficient-transformations-with-known-semantics) | How narrowly a filter restricts matching rows. A selective condition can reduce work if the access path can use it. |
+| [Broadcast join](#write-efficient-transformations-with-known-semantics) | A join that distributes the smaller side to participating workers to reduce movement of the larger side, subject to memory fit. |
+| [Quarantine](#quarantine-rather-than-silently-coerce) | A separate destination for records that fail a quality rule, retaining the original evidence for inspection and possible replay. |
+
+**Data sharing and federation**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Query federation](#select-d2d-open-sharing-or-federation) | Accessing data in an external system through a common query interface while leaving the source data there. |
+| [Data freshness](#select-d2d-open-sharing-or-federation) | The age or lag of data visible to a consumer relative to the agreed source time or publication expectation. |
+| [Replication](#select-d2d-open-sharing-or-federation) | Maintaining additional copies of data across locations or instances. Replicated errors can propagate, so copies still need a separate recovery strategy. |
+| [Delta Sharing](#select-d2d-open-sharing-or-federation) | A protocol for granting recipients controlled access to shared data, across platforms where supported. |
+
+**Monitoring and alerting**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Data skew](#build-observability-by-layer) | An unequal distribution of records or workload across keys or partitions that can produce an overloaded partition or long-running tasks. |
+| [Query history](#build-observability-by-layer) | A record of executed queries and their context or performance, used to identify the exact execution behind a symptom. |
+| [Alert deduplication](#alert-on-an-actionable-condition) | Grouping repeated notifications for the same unresolved condition so one failing pipeline does not repeatedly page its owner. |
+
+**Cost and performance optimisation**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Predicate](#understand-table-maintenance-and-layout) | A condition used to decide which records match a query or qualify for a transformation. |
+| [Partition pruning](#understand-table-maintenance-and-layout) | Using metadata and predicates to skip partitions that cannot contain relevant records. |
+| [Managed table](#understand-table-maintenance-and-layout) | A table for which the platform manages both the metadata and the lifecycle of its underlying data. |
+| [External table](#understand-table-maintenance-and-layout) | A registered table over externally managed storage, requiring separate attention to the object grants and storage location. |
+| [Delta table](#understand-table-maintenance-and-layout) | A table backed by data files and a transaction log that records committed versions and supports consistent reads. |
+| [Liquid clustering](#understand-table-maintenance-and-layout) | A Delta table layout technique organizing files around chosen keys to reduce scanning for relevant filters. |
+| [Change data feed (CDF)](#apply-cdf-and-incremental-processing-from-a-contract) | A Delta table’s record of row-level changes across versions that lets a downstream process read a change interval. |
+| [Incremental processing](#apply-cdf-and-incremental-processing-from-a-contract) | Processing newly arrived or changed records relative to remembered progress instead of recomputing the full dataset. |
+
+**Ensuring data security and compliance**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Unity Catalog](#layer-least-privilege) | Databricks’ governance layer for organizing data and AI assets and managing permissions, lineage and discoverability across supported workloads. |
+| [Volume](#layer-least-privilege) | A Unity Catalog object providing governed file access for non-tabular data, such as source documents or model artifacts. |
+| [Row filter](#layer-least-privilege) | An access rule determining which records a querying identity may see. |
+| [Column mask](#layer-least-privilege) | A rule that changes the value visible in a column according to policy or user context while leaving the source value intact. |
+| [Pseudonymization](#distinguish-privacy-transformations) | Replacing identifying values with substitutes. Re-identification may still be possible with additional information. |
+| [Data retention](#prove-retention-and-purge) | How long data or recoverable history is kept before removal under an explicit operational or governance policy. |
+| [Time travel](#prove-retention-and-purge) | Reading a retained earlier table version or timestamp, useful for reproducing a report or comparing changes. |
+
+**Data governance**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Data lineage](#make-data-discoverable-and-govern-inheritance) | The chain of sources and transformations that produced a dataset or model input, useful for explaining a result or assessing change impact. |
+
+**Debugging and deploying**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Job repair](#triage-failures-from-symptom-to-state) | Rerunning selected failed or skipped tasks in a job run. A failed task can commit some rows before it stops. Check those writes before restarting the task so the repair does not duplicate them. |
+| [Deployment target](#deploy-from-version-control) | A named environment for a bundle deployment, such as staging or production. Targets let the same revision use the appropriate workspace and permissions. |
+
+**Data modelling**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Slowly changing dimension](#build-dimensional-models-for-analytics) | A dimension whose attributes evolve over time. A history-preserving design records successive versions of a member. |
+| [Grain](#build-dimensional-models-for-analytics) | The unit represented by one record or output row, such as an order line. Combining data at incompatible grains can overcount measures. |
+| [Foreign key](#build-dimensional-models-for-analytics) | A field or combination of fields referencing a key in a related table, expressing how rows between the tables correspond. |
+| [Fact table](#build-dimensional-models-for-analytics) | A table recording measurements or events at a specified grain, often with links to the dimensions that describe them. |
+| [Dimension table](#build-dimensional-models-for-analytics) | A table containing descriptive attributes of entities such as customers, locations or products used to interpret facts. |
+| [Star schema](#build-dimensional-models-for-analytics) | A dimensional layout in which fact rows connect to descriptive dimension tables for analysis. |
+| [Bronze layer](#build-dimensional-models-for-analytics) | The landing layer retaining source-level records and ingestion evidence so later transformations can be replayed. |
+| [Silver layer](#build-dimensional-models-for-analytics) | The layer where records are cleaned, reconciled and conformed into reusable datasets. |
+| [Gold layer](#build-dimensional-models-for-analytics) | The publication layer containing business-facing aggregates or models shaped for specific consumption. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Aggregation](#worked-failure-cases-and-diagnostic-answers) | Combining a group of records into a summary such as count, sum or average, at a declared grouping level. |
+| [Inner join](#worked-failure-cases-and-diagnostic-answers) | A join retaining only pairs of rows satisfying its matching condition. |
+| [Checkpoint](#worked-failure-cases-and-diagnostic-answers) | Persisted progress or state that lets a job recover from an interruption with a known starting point. |
+| [Reconciliation](#worked-failure-cases-and-diagnostic-answers) | Comparing source and target results for the same scope, such as record counts and amounts in a given business day. |
+| [Native expression](#code-acquisition-and-quality) | A transformation expressed using the platform’s known functions, giving the optimizer visibility into its computation. |
+
 ## Places to learn
 
 This is **not a complete list**, and it is not a recommendation to consume everything. Pick the route that closes measured gaps, then spend substantial time building, breaking, observing, repairing and redeploying a system. Public resource availability was checked September 28, 2026. Durations are editorial planning estimates, not confirmed paid-course runtimes. Signed-in Academy lessons were not inspected; Udemy and O'Reilly access was blocked, and Whizlabs returned no useful page body.

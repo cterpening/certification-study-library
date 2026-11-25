@@ -431,6 +431,96 @@ These explain the original prompts; they are not an official answer key or a pre
 39. Incorrect scope, weak confidence, excess privileges or unavailable override can spread disruption. Limit authority, monitor outcomes and test failure/rollback paths.
 40. Identify the authorized outcome and constraints, then perform or invoke the appropriate action. Do not add approval delay to an action already safely preauthorized by the incident plan.
 
+## Key terms and phrases
+
+**Information Security Governance**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Security governance](#establish-enterprise-accountability) | The enterprise arrangements for setting security direction, assigning decision rights and overseeing outcomes. |
+| [Guideline](#establish-enterprise-accountability) | Advisory guidance that supports judgment and consistent practice, rather than imposing a mandatory procedure. |
+| [Procedure](#establish-enterprise-accountability) | An ordered set of instructions for carrying out a defined activity, with enough detail for the responsible person to execute it consistently. |
+| [Due diligence](#establish-enterprise-accountability) | The investigation and ongoing verification used to understand obligations, evaluate risk and confirm that safeguards remain suitable. |
+| [Business case](#build-an-aligned-strategy-and-business-case) | A justification linking a proposed security investment to expected business benefits, costs and risks. |
+| [Confidence](#build-an-aligned-strategy-and-business-case) | A judgment about the reliability of evidence or an analytic conclusion. High confidence and high operational impact are separate properties. |
+| [Metrics](#build-an-aligned-strategy-and-business-case) | Numerical time series used to quantify behavior such as latency, error rate or capacity. Aggregation and labels determine what the values represent. |
+| [Quantitative assessment](#build-an-aligned-strategy-and-business-case) | An assessment expressed in numerical units, such as expected loss in dollars per year. Its accuracy depends on the inputs and assumptions. |
+| [Due care](#make-authority-and-uncertainty-explicit) | Taking reasonable protective action given the circumstances, such as putting an appropriate safeguard into operation. |
+| [Risk acceptance](#make-authority-and-uncertainty-explicit) | An authorized decision to retain a specified exposure, with its rationale and review conditions recorded. |
+
+**Information Security Risk Management**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Risk scenario](#identify-and-assess-meaningful-scenarios) | A specific account of an event, the assets or processes it affects and the resulting business impact. |
+| [Audit finding](#identify-and-assess-meaningful-scenarios) | A documented difference between a criterion and the observed condition, supported by evidence and an explanation of consequence. |
+| [Business impact analysis (BIA)](#identify-and-assess-meaningful-scenarios) | Assessment of how disruption affects business activities over time, used to establish priorities and recovery needs. |
+| [Inherent risk](#identify-and-assess-meaningful-scenarios) | Exposure assessed before considering the effect of controls. |
+| [Risk appetite](#identify-and-assess-meaningful-scenarios) | The amount and type of risk an organization is willing to take in pursuit of its objectives. |
+| [Threat intelligence](#identify-and-assess-meaningful-scenarios) | Assessed information about adversary activity or indicators, with source, context and freshness to guide a decision. |
+| [Likelihood](#identify-and-assess-meaningful-scenarios) | An estimate of how probable a defined event is within a stated period and set of assumptions. |
+| [Risk owner](#choose-own-and-monitor-response) | The accountable person with authority to select a response or escalate a risk beyond their mandate. |
+| [Residual risk](#choose-own-and-monitor-response) | The exposure remaining after the selected measures are applied, which must be monitored or formally accepted. |
+| [Key performance indicator (KPI)](#choose-own-and-monitor-response) | A measure of progress or performance against a defined objective, interpreted with its population and reporting period. |
+| [Compensating control](#choose-own-and-monitor-response) | An alternative safeguard addressing the risk when the preferred control is impractical or unavailable. |
+| [Risk mitigation](#choose-own-and-monitor-response) | Reducing the likelihood or impact of a risk by applying safeguards, changing a process or improving resilience. |
+| [Risk register](#choose-own-and-monitor-response) | A record of identified risks, owners, assessments, responses and review status. A completed field is a claim that still needs supporting evidence. |
+| [Risk transfer](#choose-own-and-monitor-response) | Shifting part of a loss or obligation to another party through a contract or insurance. The organization can still face residual loss and accountability. |
+| [Risk tolerance](#choose-own-and-monitor-response) | The acceptable variation for a particular objective or exposure. Crossing it can trigger action even when the overall appetite has not changed. |
+
+**Information Security Program**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Security program](#translate-strategy-into-a-managed-capability-portfolio) | The coordinated capabilities, resources and activities that carry out the organization’s security strategy. |
+| [Control objective](#translate-strategy-into-a-managed-capability-portfolio) | A desired result that one or more safeguards should achieve. A tester needs to establish whether the result was achieved for the assessed scope. |
+| [Encryption](#translate-strategy-into-a-managed-capability-portfolio) | Reversibly transforming data with a key to keep the plaintext unavailable to parties lacking the appropriate decryption capability. |
+| [Log retention](#translate-strategy-into-a-managed-capability-portfolio) | The period for which records remain available for an investigation or other defined purpose. Missing results outside that period cannot establish inactivity. |
+| [Vulnerability](#translate-strategy-into-a-managed-capability-portfolio) | A weakness in design, configuration, process or implementation that can affect a security objective under applicable conditions. |
+| [Assurance](#manage-the-full-control-lifecycle) | Confidence derived from relevant evidence that a claim or control objective is supported for a specified scope and period. |
+| [Exception](#manage-the-full-control-lifecycle) | An authorized, bounded deviation from an established requirement. The owner, scope, compensating measures and expiry make it reviewable. |
+| [Independence](#manage-the-full-control-lifecycle) | Freedom from responsibilities or influence that would compromise an auditor’s objective judgment. |
+| [Operating effectiveness](#manage-the-full-control-lifecycle) | Evidence that a control actually worked for its intended population and period, beyond simply having a documented design. |
+| [Risk-based audit](#manage-the-full-control-lifecycle) | An audit approach that allocates effort according to exposure and business significance so testing addresses the most consequential questions. |
+| [Population](#measure-the-population-and-the-decision) | The full set of items within the defined scope. Measuring only devices that report successfully can systematically omit failures. |
+| [Telemetry](#measure-the-population-and-the-decision) | Observations reported by systems, such as events, logs, metrics or traces. Source coverage and freshness determine which conclusions the data can support. |
+| [Time window](#measure-the-population-and-the-decision) | The interval over which events are selected or grouped. Changing it can split one sequence across windows or merge unrelated activity. |
+
+**Incident Management**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Incident escalation](#prepare-coordinated-enterprise-response) | Moving an incident to an appropriate level of authority or expertise when defined impact or decision thresholds are met. |
+| [Business continuity](#prepare-coordinated-enterprise-response) | Maintaining essential business functions through disruption, including people and workarounds as well as technology. |
+| [Disaster recovery plan (DRP)](#prepare-coordinated-enterprise-response) | The procedures and resources for restoring technology and data after a major disruption, in an order that supports business priorities. |
+| [Recovery point objective (RPO)](#prepare-coordinated-enterprise-response) | The targeted maximum loss of recent data, expressed as a period before the disruption. |
+| [Severity](#prepare-coordinated-enterprise-response) | A rating of expected or observed impact. It differs from confidence, which expresses how strongly the evidence supports the assessment. |
+| [Post-incident review](#operate-recover-and-learn) | An examination of what happened and why, used to assign improvements and verify that they are implemented. |
+| [Containment](#operate-recover-and-learn) | An incident response action that limits further damage or spread while preserving options for investigation and recovery. |
+| [Eradication](#operate-recover-and-learn) | Removing the cause and remaining artifacts of an incident before or alongside controlled restoration of normal operation. |
+| [Impact](#operate-recover-and-learn) | The consequence of an event for the affected objective, such as patient safety, lost service hours or financial loss. |
+| [Triage](#operate-recover-and-learn) | The first assessment of urgency, reliability, affected scope and next action for an alert or case. |
+| [Chain of custody](#response-is-part-of-ongoing-risk-management) | A record of who collected, possessed or transferred evidence, when it changed hands and how its integrity was protected. |
+| [Incident](#response-is-part-of-ongoing-risk-management) | A case representing a security event or set of related events requiring coordinated investigation and response. |
+| [Integrity](#response-is-part-of-ongoing-risk-management) | Protection against improper changes to data or systems, including accidental alterations. |
+
+**Eight practical labs**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Control owner](#eight-practical-labs) | The person accountable for implementing or operating a safeguard and providing evidence of its performance. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Ransomware](#scenario-2-critical-supplier-ransomware) | Malicious software associated with extortion, often by denying access to data. The incident can also involve disclosure or destruction. |
+| [Privileged access management (PAM)](#scenario-3-privileged-access-program) | Controls for powerful accounts and sensitive actions, commonly including approval, short-lived access, credential protection and session auditing. |
+| [Data owner](#worked-results-for-the-three-scenarios) | The accountable person who determines how an asset should be classified, used and protected on behalf of the organization. |
+| [Identity provider (IdP)](#worked-results-for-the-three-scenarios) | The service that authenticates an identity and makes assertions or issues tokens that a relying service can validate. |
+| [Least privilege](#worked-results-for-the-three-scenarios) | Granting an identity only the access needed for its assigned work. |
+| [Recovery time objective (RTO)](#worked-results-for-the-three-scenarios) | The targeted time to restore a usable service, including the dependencies that service needs. |
+
 ## Places to learn
 
 This is not a complete list. Choose resources for your measured gaps and intended exam date. Estimates are study budgets unless an observed duration is explicitly labeled. Older courses can teach transferable concepts; they do not establish complete November alignment.

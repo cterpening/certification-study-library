@@ -295,6 +295,90 @@ Use NGTS-style inventory to locate certificates/algorithms and plan one hybrid-c
 - [ ] I completed the three scenarios and eight labs with both allow and failure proof.
 - [ ] I rechecked the June 2026 datasheet, current technical docs, handbook, and registration before purchase.
 
+## Key terms and phrases
+
+**Network Security Fundamentals**
+
+| Term or phrase | Meaning |
+|---|---|
+| [App-ID](#application-inspection-and-session-processing) | Palo Alto Networks application identification, which classifies traffic using attributes beyond the port number. |
+| [Destination NAT (DNAT)](#application-inspection-and-session-processing) | Rewriting a packet’s destination, for example to direct traffic for an external service address to the corresponding internal server. |
+| [Device identification (Device-ID)](#application-inspection-and-session-processing) | Device classification and context used to make policy decisions about assets such as IoT endpoints. |
+| [Network address translation (NAT)](#application-inspection-and-session-processing) | Rewriting source or destination addressing for a connection. A translation rule alone does not grant permission to pass traffic. |
+| [TLS decryption](#decryption) | Opening an encrypted session for permitted inspection, subject to certificate trust and policy. |
+| [Forward proxy](#decryption) | An intermediary acting on behalf of a client for outbound connections, often to apply access policy or inspection. |
+| [SSL Forward Proxy](#decryption) | TLS inspection in which the firewall represents a server to the client and establishes a separate upstream TLS connection. |
+| [SSL Inbound Inspection](#decryption) | Inspection of eligible encrypted traffic arriving at a protected server using the configured server-side certificate and key material. |
+| [User-ID](#hardening-through-context) | A way to associate network traffic with user and group identity for policy and reporting. |
+| [Content-ID](#hardening-through-context) | Content inspection capabilities used to evaluate allowed traffic for threats, files or sensitive data according to the enabled profiles. |
+| [Hardening](#hardening-through-context) | Reducing avoidable exposure by configuring a system for its intended purpose, such as disabling an unused service or removing excess permissions. |
+| [Least privilege](#hardening-through-context) | Limiting permissions to the tasks, resources and duration an identity actually requires. |
+| [Zero Trust](#hardening-through-context) | An access model that evaluates the identity, resource and context of a request. Location on an internal network alone grants no trust. |
+
+**NGFW and SASE solution functionality**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Firewall form factor](#ngfw-form-factors) | The delivery model of the firewall, such as a physical appliance or a virtual instance. It affects placement and operational ownership. |
+| [Container](#ngfw-form-factors) | An isolated application process and its dependencies that ordinarily shares the host kernel. Its image is the packaged input used to start it. |
+| [High availability (HA)](#ngfw-form-factors) | A design that keeps a site operating through a device or path failure, with enough remaining capacity to serve required traffic. |
+| [Next-generation firewall (NGFW)](#ngfw-form-factors) | A firewall that uses application, user and threat information as well as network attributes to enforce policy. |
+| [Prisma Access](#prisma-sd-wan-and-prisma-access) | A cloud-delivered security service that applies access and inspection policies for connected users and networks. |
+| [Prisma SD-WAN](#prisma-sd-wan-and-prisma-access) | Palo Alto Networks WAN connectivity and application-aware path management for branch and data-center networks. |
+| [Private application access](#prisma-sd-wan-and-prisma-access) | Controlled connectivity to a specified enterprise application through a supported access path. |
+| [Service connection](#prisma-sd-wan-and-prisma-access) | Connectivity between Prisma Access and an enterprise network, commonly to reach private services or applications. |
+| [Software-defined WAN (SD-WAN)](#prisma-sd-wan-and-prisma-access) | A way to apply policy across WAN links, selecting paths according to traffic needs and measured link conditions. |
+| [Management plane](#management-planes) | The part of a system responsible for configuration and administration. Successful management access alone does not test user traffic. |
+| [Device group](#management-planes) | In Panorama, a grouping through which policy rules and objects are shared or scoped to managed firewalls. |
+| [Strata Cloud Manager (SCM)](#management-planes) | A cloud management platform for supported network security deployments, including configuration, monitoring and policy administration. |
+| [Template stack](#management-planes) | An ordered collection of Panorama templates that supplies network and device configuration to assigned firewalls, subject to precedence and overrides. |
+
+**Platform solutions, services, and tools**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Cloud-delivered security services (CDSS)](#security-efficacy-and-cdss) | Threat and content protection services used by a firewall according to the enabled policy and available inspection data. |
+| [Advanced WildFire](#security-efficacy-and-cdss) | A Palo Alto Networks malware analysis service that can examine submitted files and supply verdicts to participating controls. |
+| [GlobalProtect](#security-efficacy-and-cdss) | Palo Alto Networks endpoint connectivity and access software and services, with portals providing configuration and gateways handling access. |
+| [Threat Prevention](#security-efficacy-and-cdss) | A security service or profile capability used to recognize and act on threat patterns in traffic visible to the firewall. |
+| [URL Filtering](#security-efficacy-and-cdss) | Categorization and enforcement based on the web destination or available URL information, subject to policy and encryption visibility. |
+| [Baseline](#aiops-and-best-practices) | A reference measurement or expected state for a defined population and period. A deviation is a reason to investigate, not a diagnosis. |
+| [Remediation](#aiops-and-best-practices) | Action taken to remove or correct the cause of an incident after its immediate effects are contained. |
+
+**NGFW and SASE maintenance/configuration**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Application dependency](#4-ngfw-and-sase-maintenanceconfiguration-10) | Another application or protocol function needed for the intended application to operate, which may affect policy design. |
+| [Secure access service edge (SASE)](#4-ngfw-and-sase-maintenanceconfiguration-10) | An architecture that brings wide-area connectivity and cloud-delivered security together for distributed users and sites. |
+
+**Infrastructure management and CDSS**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Data classification](#5-infrastructure-management-and-cdss-17) | Assigning sensitivity categories to information so access and inspection policy can reflect its handling requirements. |
+| [Encryption at rest](#5-infrastructure-management-and-cdss-17) | Protecting stored data with encryption, such as files, disks or backups. A caller authorized to decrypt can still access the plaintext. |
+| [Retention](#5-infrastructure-management-and-cdss-17) | The period for which telemetry remains available for investigation. A search outside that period cannot establish inactivity. |
+| [Telemetry](#5-infrastructure-management-and-cdss-17) | Records of activity from endpoints, networks or other systems that investigators can correlate into a timeline. |
+
+**Connectivity and security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Security zone](#6-connectivity-and-security-13) | A logical grouping of interfaces used to express policy between traffic sources and destinations. |
+| [Authentication](#6-connectivity-and-security-13) | Checking that a claimant controls an authenticator bound to the claimed identity. It precedes the separate decision about permitted actions. |
+| [Certificate revocation](#6-connectivity-and-security-13) | Marking a certificate as no longer trustworthy before its expiry, with status distributed through a mechanism such as a revocation list or online responder. |
+| [Domain Name System (DNS)](#6-connectivity-and-security-13) | The Domain Name System, which resolves names to records such as IP addresses so clients can locate services. |
+| [Segmentation](#6-connectivity-and-security-13) | Dividing resources into security boundaries and specifying the permitted communication between them. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Private cloud](#hybrid-application-publishing) | Cloud infrastructure reserved for one organization. It can be operated internally or by a third party. |
+| [Approval gate](#quantumai-policy-update) | A point where an authorized person must review available evidence before a workflow performs a sensitive or high-impact action. |
+| [False positive](#quantumai-policy-update) | An alert that classifies benign activity as a target condition. Repeated benign alerts can distort operational priorities. |
+
 ## Places to learn
 
 This is not a complete list, and it is not a prescription to consume everything. Start with the blueprint and official path, then select documentation and labs for measured gaps. Product pages, UI, licensing, and course versions change; record the version you used.

@@ -1,0 +1,94 @@
+{
+  "schema_version": 2,
+  "exam_code": "AZ-900",
+  "language": "en",
+  "part": 1,
+  "total_parts": 2,
+  "unit_ids": [
+    "keep-the-booking-desk-open"
+  ],
+  "sections": [
+    {
+      "unit_id": "introduction",
+      "title": "Introduction",
+      "turns": [
+        {
+          "speaker": "host",
+          "text": "Welcome to part 1 of 2 of our AZ-900 study conversation. Can the booking desk stay open when a zone goes down? Both voices are synthetic. This independent, AI-assisted material is awaiting human review. The show notes link to the official exam blueprint and list the dates used for this episode."
+        },
+        {
+          "speaker": "learner",
+          "text": "We will work through the ideas, compare common choices, and pause for recall. The linked guide and show notes contain the sources and visual aids."
+        }
+      ]
+    },
+    {
+      "unit_id": "keep-the-booking-desk-open",
+      "title": "Can the booking desk stay open when a zone goes down?",
+      "turns": [
+        {
+          "speaker": "host",
+          "text": "It's Saturday morning at a bicycle rental shop. A customer has picked a blue bike for eleven. She presses Reserve. The team has deployed two copies of its booking app in Azure. Then the power goes out in one availability zone. Before we say whether she gets the bike, what would you ask the team?"
+        },
+        {
+          "speaker": "learner",
+          "text": "Where did you put the two copies? I used to hear “two servers” and assume the second one was a spare. If they share the part that just failed, I could lose both."
+        },
+        {
+          "speaker": "host",
+          "text": "Exactly. A datacenter is a facility that houses equipment. In an Azure region that offers zones, each availability zone is a group of one or more datacenters with its own power, cooling and networking. Both app servers in our example are in the same zone. What did the second server buy the shop?"
+        },
+        {
+          "speaker": "learner",
+          "text": "More room for bookings on a busy morning. It could also keep serving if only one server failed and traffic reached the other. The zone outage is a different problem. Both servers are inside it."
+        },
+        {
+          "speaker": "host",
+          "text": "Let's move one server to another zone and assume customers can reach the healthy copy. Now the home page opens. The customer presses Reserve again, and the page hangs. The only database that can accept a booking was in the first zone. What would count as evidence that the shop is back?"
+        },
+        {
+          "speaker": "learner",
+          "text": "I'd make a test reservation and look it up again. Seeing a bicycle on the screen proves the catalog loaded. Seeing my reservation saved proves the app could reach the database and finish the job."
+        },
+        {
+          "speaker": "host",
+          "text": "Follow the arrows in the companion diagram aloud. A customer submits a request. It reaches an app with capacity. The app saves the booking in the database. Then the customer gets confirmation. For each arrow, ask what happens when that zone disappears. A zonal resource is placed in one zone. For a zone-redundant resource, the service distributes or replicates it across zones. Check what your particular service supports and how you deployed it."
+        },
+        {
+          "speaker": "learner",
+          "text": "Here's a numbers check. We now have a database that can handle a zone failure. Each of the two app servers can take sixty bookings a minute. Eighty customers a minute arrive. One zone goes down. Pause here and work out how many bookings a minute the remaining app can handle, and how far that is from demand."
+        },
+        {
+          "speaker": "host",
+          "text": "Sixty fit. Demand exceeds that by twenty bookings every minute. Separate locations helped keep the app reachable. Serving everyone also takes enough capacity in the surviving location. Test the design under the load that will actually arrive."
+        },
+        {
+          "speaker": "learner",
+          "text": "Now change the promise on the shop door. Bookings must continue even if the whole Azure region goes offline. Would a third zone in that same region meet the new promise? Take a moment to explain where a working copy would have to live."
+        },
+        {
+          "speaker": "host",
+          "text": "All those zones are still inside that region. A recovery location outside it needs an app that works, usable booking data and a way for customers to reach them. Azure pairs some regions, and some services use those pairs. A region appearing beside another on a map tells us nothing about whether this shop has configured its booking database to copy records there. Check the chosen services and rehearse the complete reservation."
+        },
+        {
+          "speaker": "learner",
+          "text": "I can explain the difference to the shop owner now. Adding capacity helps with a busy day. Distributing the work helps with a failed location. I can tell whether either choice worked by trying to reserve a bike."
+        }
+      ]
+    },
+    {
+      "unit_id": "recap",
+      "title": "Next steps",
+      "turns": [
+        {
+          "speaker": "learner",
+          "text": "Before moving on, explain the distinctions from this episode without looking at your notes. Use the original practice questions in the study pack to find gaps."
+        },
+        {
+          "speaker": "host",
+          "text": "Then check the current official sources and complete the relevant hands-on work. This conversation covers selected objectives; listening alone is not evidence of readiness or complete exam coverage."
+        }
+      ]
+    }
+  ]
+}

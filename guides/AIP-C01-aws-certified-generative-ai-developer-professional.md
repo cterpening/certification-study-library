@@ -418,6 +418,90 @@ Build an offline and sampled-online evaluation pipeline with versioned dataset/r
 
 ---
 
+## Key terms and phrases
+
+**Foundation Model Integration, Data Management, and Compliance**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Foundation model](#1-foundation-model-integration-data-management-and-compliance-31) | A model trained on broad data that can support multiple downstream tasks through prompting or additional training. |
+| [Parameter-efficient fine-tuning (PEFT)](#select-models-by-measured-fit) | Adapting a model by training a relatively small set of parameters, reducing the amount of model state that must be updated. |
+| [Hyperparameter](#select-models-by-measured-fit) | A training setting chosen by the practitioner or tuning process, such as learning rate. The model learns its weights from data. |
+| [AWS CloudTrail](#select-models-by-measured-fit) | Records supported AWS API activity so an investigator can trace who called an operation, when and against which resource. |
+| [Amazon SageMaker](#select-models-by-measured-fit) | AWS's platform for tasks such as preparing data, training models and hosting inference. Choose the component around the stage of the ML lifecycle. |
+| [Retrieval-augmented generation (RAG)](#select-models-by-measured-fit) | A design that finds relevant source material and gives it to a model as context when it generates a response. |
+| [Data provenance](#govern-multimodal-input-data) | Evidence of a dataset's origin, ownership and transformation history. It supports decisions about permitted use and reproducibility. |
+| [Embedding space](#design-vector-stores-and-retrieval-as-one-system) | The numeric representation in which a system compares a query with indexed content. Both sides need compatible models and dimensions. |
+| [Reranking](#design-vector-stores-and-retrieval-as-one-system) | Reordering an initial set of retrieved passages by how well each answers the query before assembling the model's context. |
+| [Amazon Bedrock](#design-vector-stores-and-retrieval-as-one-system) | A managed service for building applications with foundation models. Model access and application tools are separate authorization decisions. |
+| [Vector database](#design-vector-stores-and-retrieval-as-one-system) | A store that indexes numeric representations for similarity retrieval. Metadata can restrict which documents are eligible. |
+| [Hybrid search](#design-vector-stores-and-retrieval-as-one-system) | Combining lexical matching and semantic retrieval. Exact product codes can benefit from the lexical component. |
+| [Chunk overlap](#design-vector-stores-and-retrieval-as-one-system) | Repeating some source content across adjacent chunks to preserve context near a split. Added overlap also increases index size and duplication. |
+| [Amazon S3](#design-vector-stores-and-retrieval-as-one-system) | Object storage organized into buckets and keys. Retrieving a named object and mounting a block device are different access patterns. |
+| [Embedding](#design-vector-stores-and-retrieval-as-one-system) | A list of numbers representing features of an item. Nearby representations can help a search system find items with similar meanings. |
+| [Prompt template](#version-prompts-as-production-artifacts) | A versioned set of instructions with places for variable input. Keeping its version with evaluations makes changes easier to trace. |
+| [System instruction](#version-prompts-as-production-artifacts) | A high-level instruction that guides a model's behavior across a request. An application still needs to enforce its security rules outside the prompt. |
+| [Few-shot prompting](#version-prompts-as-production-artifacts) | Providing a small set of example inputs and outputs in the prompt to demonstrate the required task or format. |
+
+**Implementation and Integration**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Tool contract](#build-agents-as-bounded-state-machines) | The inputs, outputs and actions an agent may request from a tool. The executing service must check authorization before carrying out a request. |
+| [AWS Lambda](#build-agents-as-bounded-state-machines) | Runs application code in response to an invocation or event. The function owner selects its code, permissions and resource configuration. |
+| [Prompt injection](#build-agents-as-bounded-state-machines) | Untrusted input that attempts to change the instructions followed by a model. Applications should separate content from authority and constrain tool permissions. |
+| [AWS Step Functions](#build-agents-as-bounded-state-machines) | Coordinates a sequence of application steps as a state machine, with explicit choices, retries and failure paths. |
+| [Idempotency](#build-agents-as-bounded-state-machines) | The property that retrying the same intended operation does not apply its effect twice. An order API can remember the request identifier. |
+| [Inference](#choose-inferencedeployment-deliberately) | Running a trained model on new input, for example scoring one loan application or generating text for a request. |
+| [Provisioned throughput](#choose-inferencedeployment-deliberately) | Inference capacity allocated ahead of time under specified service terms. Compare sustained demand, latency needs and utilization before selecting it. |
+| [Model artifact](#choose-inferencedeployment-deliberately) | The files required to load trained model behavior, such as weights and preprocessing assets. Pair them with the compatible serving runtime. |
+| [Tokenization](#choose-inferencedeployment-deliberately) | Converting text into model-specific units and identifiers. An unfamiliar word may be split into several tokens. |
+| [Failover](#choose-inferencedeployment-deliberately) | Moving service to an alternative when the current serving location or component becomes unavailable. |
+| [Service quota](#choose-inferencedeployment-deliberately) | A limit on resource use or request volume within a specified scope. Reaching it can block work even when funds are available. |
+| [Backpressure](#integrate-apis-and-enterprise-workflows) | A downstream stage forcing producers to slow or pause. If 120 events arrive per second and only 100 leave, backlog initially grows by 20 per second. |
+| [Amazon EventBridge](#integrate-apis-and-enterprise-workflows) | Routes events to targets according to rules, connecting services without requiring each producer to know each consumer. |
+| [Federation](#integrate-apis-and-enterprise-workflows) | Accepting trusted identity assertions from another provider so users or workloads can access resources without a separate long-lived credential. |
+| [Amazon SNS](#integrate-apis-and-enterprise-workflows) | A publish-subscribe notification service. Publishing once to a topic can deliver the message to multiple subscribed destinations. |
+| [Amazon SQS](#integrate-apis-and-enterprise-workflows) | A queue that buffers messages between producers and consumers. A worker can process a message even after its producer has disconnected. |
+| [Infrastructure as code (IaC)](#deliver-genai-components-with-cicd) | A versioned description of infrastructure that tools can build or update. Reviewing the proposed changes helps catch unintended replacements. |
+
+**AI Safety, Security, and Governance**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Guardrail](#use-defense-in-depth-for-probabilistic-behavior) | A control that screens or constrains model inputs, outputs or actions against a policy. Use it alongside access checks on the underlying system. |
+| [False positive](#use-defense-in-depth-for-probabilistic-behavior) | A negative case incorrectly labeled positive. A legitimate payment blocked as fraudulent is a false positive. |
+| [Identity policy](#use-defense-in-depth-for-probabilistic-behavior) | An IAM policy attached to an identity that describes which actions it can take on which resources, subject to other applicable controls. |
+| [Least privilege](#use-defense-in-depth-for-probabilistic-behavior) | Limiting an identity to the actions and resources required for its work. A read-only reporting job needs no permission to modify its source. |
+| [Temporary credentials](#protect-identity-data-and-privacy) | Time-limited access keys and a session token. A workload can obtain them by assuming a role. |
+| [VPC endpoint](#protect-identity-data-and-privacy) | A connection from a VPC to a supported service using private connectivity. Access policies and network configuration still apply. |
+| [Amazon VPC](#protect-identity-data-and-privacy) | A logically isolated network in an AWS Region, divided into subnets with routes and security controls that shape connectivity. |
+| [Model card](#make-governance-executable) | Documentation of a model's intended use, evaluation conditions and known limitations, useful when deciding whether to deploy it. |
+| [Bias](#make-governance-executable) | A systematic distortion in data, model behavior or decisions. Unequal error rates across groups warrant investigation of the data and intended use. |
+
+**Operational Efficiency and Optimization**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Human in the loop](#optimize-a-quality-constrained-objective) | A design in which a person reviews or authorizes specified model-assisted decisions, with time, authority and evidence to intervene. |
+| [Prompt cache time to live (TTL)](#optimize-a-quality-constrained-objective) | How long a reusable prompt prefix can stay cached without a cache hit. Reusing a valid prefix before expiry can refresh its lifetime and reduce the cost of processing those input tokens again. |
+| [Time to first token](#measure-latency-and-throughput-end-to-end) | The delay before a streaming caller receives the first generated token. The rest of the answer can still take substantially longer. |
+| [Throughput](#measure-latency-and-throughput-end-to-end) | The volume of work completed per unit time, such as predictions per second. A high rate can coexist with long waits for individual requests. |
+| [Latency](#measure-latency-and-throughput-end-to-end) | Elapsed time between a request and the result of interest. Specify whether it measures the first token, the completed response or the full business action. |
+| [Amazon CloudWatch](#observe-behavior-not-just-infrastructure) | Collects operational measurements and logs. An operator can graph request latency or alarm on error rates. |
+
+**Testing, Validation, and Troubleshooting**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Groundedness](#evaluate-components-and-the-complete-outcome) | The degree to which the generated answer's claims are supported by the material available to the model. |
+| [Task success](#evaluate-components-and-the-complete-outcome) | Whether the application accomplished the intended outcome under its acceptance criteria. A syntactically valid tool call is only one step. |
+| [Escalation](#evaluate-components-and-the-complete-outcome) | Routing a case to an accountable person or process when confidence, authority or risk falls outside the automation's limits. |
+| [Large language model (LLM)](#evaluate-components-and-the-complete-outcome) | A language model trained at scale to predict tokens in context. Fluent text is not itself evidence that a claim is correct. |
+| [Human evaluation](#evaluate-components-and-the-complete-outcome) | People score representative outputs against a defined rubric. Keeping the rubric and disagreement records makes comparisons interpretable. |
+| [Context window](#troubleshoot-by-isolating-the-layer) | The model's token budget for an interaction. Instructions, source passages and conversation history consume space that could otherwise hold more text. |
+| [Golden dataset](#troubleshoot-by-isolating-the-layer) | A curated set of representative inputs and expected behavior used to compare releases under consistent conditions. |
+
 ## Places to learn
 
 This is **not a complete list**, and it is not meant to be consumed in full. Choose one current AIP-C01 route, build the eight evidence labs, and use practice only for diagnosis. This fast-moving exam needs first-party documentation checks even when a course was updated recently.

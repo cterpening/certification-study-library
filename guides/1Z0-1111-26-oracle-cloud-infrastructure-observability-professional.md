@@ -121,6 +121,78 @@ Control cost through purposeful collection, cardinality, retention, query design
 - I can correlate user impact to application, dependency, resource, change, and security evidence.
 - I can design safe automation and manage telemetry access, retention, privacy, cardinality, and cost.
 
+## Key terms and phrases
+
+**Monitoring metrics and alarms**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Metric dimension](#1-monitoring-metrics-and-alarms) | An attribute attached to a metric stream, such as a resource identifier, used to filter or group measurements. |
+| [Alarm](#1-monitoring-metrics-and-alarms) | A rule that evaluates a metric condition over time and can notify a responder when the condition is met. |
+| [Latency](#1-monitoring-metrics-and-alarms) | The time for a request or operation to complete, measured at a specified boundary from the selected start to finish. |
+| [Metric](#1-monitoring-metrics-and-alarms) | A numeric measurement recorded over time, such as failed requests or queue depth, with defined units and dimensions. |
+| [Service-level indicator (SLI)](#1-monitoring-metrics-and-alarms) | A measured aspect of service behavior, such as successful request latency or the percentage of requests returning a valid response. |
+| [Metric namespace](#1-monitoring-metrics-and-alarms) | An identifier grouping related OCI metric definitions, commonly by service or publishing application. |
+| [Statistic](#1-monitoring-metrics-and-alarms) | The calculation applied to samples in an interval, such as mean or maximum. The choice changes what the chart reveals. |
+| [Query window](#1-monitoring-metrics-and-alarms) | The time interval considered when selecting, aggregating or comparing telemetry. |
+| [Monitoring Query Language (MQL)](#1-monitoring-metrics-and-alarms) | The syntax OCI Monitoring uses to select metric streams and apply grouping or statistical operations. |
+
+**Events and automated actions**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Event rule](#2-events-and-automated-actions) | A filter for resource-change events that sends matches to a configured action. |
+| [Least privilege](#2-events-and-automated-actions) | Granting only the access a specific identity needs for its assigned work, then checking both allowed and denied actions. |
+| [Compartment](#2-events-and-automated-actions) | A logical OCI grouping for resources, policy scope, ownership and cost reporting, which can span regions. |
+| [Retry budget](#2-events-and-automated-actions) | A limit on repeated attempts to keep a temporary dependency failure from turning into runaway load. |
+| [Idempotency](#2-events-and-automated-actions) | Designing repeated delivery or repeated requests to yield one intended business effect instead of duplicating the change. |
+
+**Centralized Logging**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Log group](#3-centralized-logging) | An OCI container for organizing log objects and managing access to them. |
+| [Control plane](#3-centralized-logging) | The management interfaces and services that configure resources and policies, as distinct from using the configured workload. |
+| [Audit log](#3-centralized-logging) | Records of administrative actions that help identify who performed an operation, on what resource and when. |
+| [Structured log](#3-centralized-logging) | A record with separately identifiable fields, enabling a search by request ID, service, status or other explicit attributes. |
+| [Service log](#3-centralized-logging) | Records emitted by a supported OCI service about its activity, enabled and accessed under the service’s logging configuration. |
+| [Custom log](#3-centralized-logging) | Application or host records collected into OCI Logging under a configured source, distinct from events emitted by OCI’s control plane. |
+
+**Log Analytics**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Log enrichment](#4-log-analytics) | Adding derived or external context to a log record to make analysis easier while preserving the original observation. |
+| [Parsing](#4-log-analytics) | Extracting structured fields from raw log content so timestamps, identities and outcomes can be queried consistently. |
+
+**Application Performance Monitoring**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Span](#5-application-performance-monitoring) | A timed unit of work within a distributed trace, such as one service call made while handling a request. |
+| [Real-user monitoring](#5-application-performance-monitoring) | Collecting measurements from actual client sessions to see how experience varies across users and environments. |
+| [Synthetic monitoring](#5-application-performance-monitoring) | Running a controlled, repeatable request or user journey to observe availability or performance under known conditions. |
+| [Availability](#5-application-performance-monitoring) | The ability of a service to remain usable for the intended requests over a specified measurement period. |
+| [Distributed trace](#5-application-performance-monitoring) | A record linking the timed work of multiple instrumented components for a single request or transaction. |
+| [Span parent](#5-application-performance-monitoring) | The span from which another operation was invoked, establishing a causal relationship within a trace. |
+| [Sampling](#5-application-performance-monitoring) | Recording a subset of traces or observations according to a policy, which affects how confidently missing evidence can be interpreted. |
+
+**Operational observability design**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Alert](#6-operational-observability-design) | A notification that a configured condition was met, requiring interpretation with its time window, source and affected scope. |
+| [Runbook](#6-operational-observability-design) | A documented response procedure identifying evidence to gather, safe actions, decision owners and verification steps. |
+| [Queue](#6-operational-observability-design) | A buffer of messages decoupling producers and consumers so work can continue asynchronously. |
+| [Service-level objective (SLO)](#6-operational-observability-design) | A target value for a service measure over a defined time window, used to judge whether observed operation meets expectations. |
+| [Blast radius](#6-operational-observability-design) | The set of users, services or resources affected by a fault, established from observed scope and dependencies. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Saturation](#integrated-practice-scenarios) | The extent to which demand uses up a resource’s available capacity, often becoming visible as queues or increased latency. |
+
 ## Places to learn
 
 This is a selective learning path, not a complete list of OCI observability resources.

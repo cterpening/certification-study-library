@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "exam_code": "AZ-900",
+  "content_status": "ai-generated-draft",
+  "cards": [
+    {
+      "id": "keep-the-booking-desk-open",
+      "question": "The booking app has capacity for 60 reservations per minute in each of two zones. Demand is 80 per minute. What happens to the capacity target if one zone goes offline? What else must work for customers still to reserve a bike?",
+      "answer": "Only 60 reservations per minute of app capacity remain, leaving a shortfall of 20 per minute. Plan for sufficient surviving capacity, a functioning route and a booking database that can still serve the application. Verify a complete booking under the failure condition.",
+      "objectives": [
+        "Describe availability zones",
+        "Describe Azure datacenters",
+        "Describe the benefits of high availability and scalability in the cloud"
+      ],
+      "source_ids": [
+        "azure-regions-list",
+        "az305-regions",
+        "azure-reliability-documentation"
+      ]
+    },
+    {
+      "id": "who-patches-the-ticket-counter",
+      "question": "A theater can deploy its booking code to a supported managed web platform. A new vendor component requires an administrator to install an operating-system driver, and the component must run on the same machine. Which hosting choice now deserves evaluation, and who maintains the operating system?",
+      "answer": "Evaluate an Azure virtual machine with a supported guest operating system and confirm driver compatibility. The theater gains guest-level control and takes responsibility for guest patching, its own application and its data. Microsoft maintains the physical host.",
+      "objectives": [
+        "Describe the shared responsibility model",
+        "Describe infrastructure as a service (IaaS)",
+        "Describe platform as a service (PaaS)",
+        "Describe software as a service (SaaS)",
+        "Identify appropriate use cases for each cloud service type (IaaS, PaaS, and SaaS)"
+      ],
+      "source_ids": [
+        "azure-shared-responsibility",
+        "azure-compute-decision-guide",
+        "azure-virtual-machines-overview"
+      ]
+    }
+  ]
+}

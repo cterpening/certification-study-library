@@ -730,6 +730,77 @@ The JSON output reports `"passed": 82` and the labels of all passing checks. The
 
 **VERIFY CURRENT — scheduled version transition:** the [official PCEP page](https://pythoninstitute.org/pcep/) identifies PCEP-30-02 as active and PCEP-30-03 as pending release, scheduled for October 31, 2026. This guide remains scoped to 30-02; recheck the active code and syllabus before buying or using a new course. The [Python version index](https://www.python.org/doc/versions/) now lists Python 3.15.2 and 3.14.10 (October 25 releases). Use a supported, recorded interpreter for practice; the exam syllabus does not require these patch versions. The issuer maps the free [Python Essentials 1](https://edube.org/study/pe1) self-paced course to PCEP (provider estimate: 42 hours); compare lessons to the active syllabus during the transition.
 
+## Key terms and phrases
+
+**Weighted objective map**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Modulo](#detailed-coverage-and-source-reconciliation) | The remainder operation paired with floor division. With a positive divisor, the Python remainder is nonnegative. |
+| [Short-circuit evaluation](#detailed-coverage-and-source-reconciliation) | Stopping a Boolean expression once the result is known. In Python, and and or return an operand and can skip a function call. |
+| [continue](#detailed-coverage-and-source-reconciliation) | A loop statement that skips the rest of the current iteration and proceeds with the next test or item. |
+
+**Computer programming and Python fundamentals**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Interpreter](#from-source-to-behavior) | Software that executes a Python program. The interpreter used for a command also determines which installed packages it can import. |
+| [Literal](#literals-variables-and-types) | A value written directly in a program, such as the integer 7 or the string "seven". |
+| [Integer](#literals-variables-and-types) | A whole-number type. In Python a calculation on integers can grow beyond a fixed machine-word size. |
+| [Floating-point number](#literals-variables-and-types) | A finite-precision representation of a number. Many decimal fractions can only be approximated in binary. |
+| [Floor division](#operators-and-evaluation) | Division rounded down to the next integer at or below the quotient. In Python, `7 // 3` gives `2`, and `-7 // 3` gives `-3`. |
+| [Boolean](#operators-and-evaluation) | A true or false value used in decisions. Python also allows other objects to be tested for truth. |
+| [Operator precedence](#operators-and-evaluation) | The rules that determine which operations group first in an expression. Parentheses make the intended grouping explicit. |
+
+**Control flow**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Conditional branch](#decisions) | A path selected by testing a condition. In an if/elif chain, Python takes the first branch whose condition is true. |
+| [Truth value](#decisions) | Whether an object counts as true in a condition. Zero and empty collections count as false, while a nonempty string like "False" counts as true. |
+| [Loop exhaustion](#iteration) | The point where iteration finishes normally. A loop’s else clause runs on normal completion, including when there were no items. |
+| [range](#iteration) | An integer sequence specified by start, exclusive stop and step. A range from 2 to 6 with step 2 yields 2 and 4. |
+| [break](#iteration) | A loop statement that immediately leaves the nearest enclosing loop and skips that loop’s else clause. |
+| [Iterable](#iteration) | An object from which iteration can obtain successive values, such as a string, list or generator. |
+
+**Data collections**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Aliasing](#one-model-sequence-mapping-mutability-aliasing) | Two names referring to the same object. Changing a shared list through one name changes what the other name sees. |
+| [Index](#one-model-sequence-mapping-mutability-aliasing) | An integer position in a sequence. Python numbers the first position zero and uses negative positions to count from the end. |
+| [Slice](#one-model-sequence-mapping-mutability-aliasing) | A selection of sequence positions described by start, exclusive stop and step. A list slice creates a new outer list. |
+| [Mutability](#one-model-sequence-mapping-mutability-aliasing) | Whether an existing object can change. Rebinding a variable and modifying the object already bound to it are separate operations. |
+| [List](#lists) | An ordered, mutable sequence. Appending to a list changes the object seen by every name referring to that list. |
+| [List comprehension](#lists) | An expression that builds a list by transforming items from an iterable and optionally filtering them. |
+| [Tuple](#tuples) | An ordered collection whose element references cannot be reassigned after creation. A mutable object inside it can still change. |
+| [Dictionary](#dictionaries) | A collection that maps unique keys to values. Looking up a key retrieves its associated value. |
+| [String](#strings) | An immutable sequence of Unicode code points. A string read from input must be converted before performing numeric arithmetic. |
+
+**Functions and exceptions**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Parameter and argument](#functions-arguments-and-results) | A parameter is a name in a function definition. An argument is the value supplied for it by the caller. |
+| [Assignment](#functions-arguments-and-results) | Binding a name to an object. Assigning another name to a list does not create an independent list. |
+| [Keyword argument](#functions-arguments-and-results) | A value supplied to a function using the parameter name, allowing the caller to make the argument’s purpose explicit. |
+| [Default argument](#functions-arguments-and-results) | A parameter value saved when a function is defined and used when the caller omits that argument. A mutable default may be shared across calls. |
+| [Local scope](#functions-arguments-and-results) | The name bindings local to a function invocation. Assigning a local name does not by itself rebind a module-level name. |
+| [Module](#functions-arguments-and-results) | A named unit of Python code with its own namespace that other code can import. |
+| [Generator](#recursion-and-generators) | An object that produces values on demand. A generator function suspends its work at yield and resumes on the next request. |
+| [Recursion](#recursion-and-generators) | A function solving a problem through calls to itself on smaller or simpler cases. A terminating case prevents an unbounded chain. |
+| [Base case](#recursion-and-generators) | The condition that stops further recursive calls and provides a result directly. |
+| [Exception handler](#exception-hierarchy-and-handling) | An except clause that takes control when a matching exception is raised in the protected code. |
+| [KeyError](#exception-hierarchy-and-handling) | The exception raised when a required mapping key cannot be found, for example during ordinary dictionary lookup. |
+| [Exception hierarchy](#exception-hierarchy-and-handling) | The inheritance relationships among exception types. A handler for a base type also matches instances of its exception subclasses. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Shallow copy](#original-knowledge-checks) | An independent outer container that retains references to the same nested elements. A change inside a shared nested list can appear in both copies. |
+| [Return value](#original-knowledge-checks) | The value a call gives back to its caller. Reaching the end of a Python function without a return statement gives None. |
+
 ## Places to learn
 
 This is not a complete list and is not meant to be consumed in full. Choose one coherent primary course or book, write and debug code for every block, and use one explanation-led assessment to identify gaps. The official syllabus—not any third-party “pass” claim—is the final scope authority.

@@ -109,6 +109,95 @@ Estimate cost using shape runtime, storage capacity/performance, requests, backu
 - I test denied access, dependency failure, restore, and cleanup—not just happy-path deployment.
 - I can explain why the design is secure, scalable, observable, recoverable, and cost-aware.
 
+## Key terms and phrases
+
+**Requirements and OCI topology**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Availability domain](#1-requirements-and-oci-topology) | An isolated location within an OCI region used to design placement and reduce common infrastructure failures. |
+| [Fault domain](#1-requirements-and-oci-topology) | A grouping inside an availability domain that helps distribute instances across separate hardware and maintenance boundaries. |
+| [Resource quota](#1-requirements-and-oci-topology) | An administrative limit on a resource category within a defined scope, which can prevent creation even when infrastructure is healthy. |
+| [Availability](#1-requirements-and-oci-topology) | The ability of a service to remain usable for the intended requests over a specified measurement period. |
+| [Latency](#1-requirements-and-oci-topology) | The time for a request or operation to complete, measured at a specified boundary from the selected start to finish. |
+| [Throughput](#1-requirements-and-oci-topology) | The amount of useful work completed per unit time, such as bytes transferred or requests served per second. |
+| [Compartment](#1-requirements-and-oci-topology) | A logical OCI grouping for resources, policy scope, ownership and cost reporting, which can span regions. |
+| [Region](#1-requirements-and-oci-topology) | A geographic area containing OCI infrastructure. Region choice affects service locality, latency, residency and recovery options. |
+
+**Identity architecture**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Dynamic group](#2-identity-architecture) | An OCI grouping whose membership rules identify resources that can receive permissions through policy. |
+| [Instance principal](#2-identity-architecture) | An identity that lets a compute instance call OCI services under assigned permissions without storing a user’s API key. |
+| [Federation](#2-identity-architecture) | Trusting an external identity provider’s assertions so people can authenticate through their established organization identity. |
+| [Tenancy](#2-identity-architecture) | The organization’s root OCI account and administrative boundary in which compartments and resource policies are managed. |
+| [Identity domain](#2-identity-architecture) | An OCI identity boundary managing users, groups, applications and authentication rules. |
+| [Group](#2-identity-architecture) | A collection of identities to which access can be granted through a policy, reducing the need to manage permissions user by user. |
+| [IAM policy](#2-identity-architecture) | An authorization statement identifying who may perform which class of operations on which resources within a specified scope and conditions. |
+| [Resource principal](#2-identity-architecture) | An identity allowing a supported OCI resource to call other services under the permissions assigned to that resource. |
+| [Policy inheritance](#2-identity-architecture) | The application of permissions granted at a wider scope to eligible resources below it in the compartment hierarchy. |
+
+**Network architecture**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Service gateway](#3-network-architecture) | A gateway providing a private route from a VCN to supported Oracle services. |
+| [Health check](#3-network-architecture) | A targeted test of a component’s ability to perform a particular task. Its scope determines what a successful result proves. |
+| [DNS](#3-network-architecture) | The naming system resolving service names to addresses or other records. Correct resolution alone does not establish reachability. |
+| [Load balancer](#3-network-architecture) | A component distributing incoming work among eligible backends under its routing and health policy. |
+| [Subnet](#3-network-architecture) | An address range inside a VCN used to place network interfaces and associate applicable route and security settings. |
+| [CIDR block](#3-network-architecture) | An IP address prefix defining a network range. The prefix length determines the range size and possible overlap with other networks. |
+| [Route table](#3-network-architecture) | Rules selecting a next hop based on destination. A matching route supplies a path, while security controls separately determine permitted traffic. |
+| [Security list](#3-network-architecture) | A set of traffic rules associated with a subnet and applied to its VNICs under OCI networking rules. |
+| [Network security group (NSG)](#3-network-architecture) | Traffic rules applied to chosen VNICs or other supported resource endpoints rather than every VNIC in a subnet. |
+| [Internet gateway](#3-network-architecture) | A VCN gateway providing a route for public internet traffic when addressing, routes and security rules allow it. |
+| [NAT gateway](#3-network-architecture) | A gateway enabling eligible private resources to initiate internet connections without assigning them public IP addresses. |
+| [Dynamic routing gateway (DRG)](#3-network-architecture) | A virtual router joining attached networks or connectivity resources, with route policies determining which paths are available. |
+| [Peering](#3-network-architecture) | Connecting separate networks to exchange traffic privately under the applicable routing, address-space and security rules. |
+| [FastConnect](#3-network-architecture) | A dedicated connectivity option between an external network and OCI that supports private or public peering configurations. |
+| [Listener](#3-network-architecture) | The load balancer configuration accepting a particular protocol and port and directing matching traffic toward a backend. |
+
+**Compute and application platform**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Instance pool](#4-compute-and-application-platform) | A managed collection of compute instances based on a shared configuration that can be scaled together. |
+| [Shape](#4-compute-and-application-platform) | An OCI compute configuration defining available processing, memory and other hardware characteristics. |
+| [Instance configuration](#4-compute-and-application-platform) | A reusable specification of the settings needed to launch instances consistently, often used by an instance pool. |
+| [Autoscaling](#4-compute-and-application-platform) | Adjusting capacity when a defined condition or schedule warrants it, subject to limits, capacity and application readiness. |
+| [Boot volume](#4-compute-and-application-platform) | Persistent block storage containing the operating system and startup files used to boot an instance. |
+| [Oracle Kubernetes Engine (OKE)](#4-compute-and-application-platform) | OCI’s managed Kubernetes service for running orchestrated container workloads on configured cluster capacity. |
+| [Function](#4-compute-and-application-platform) | Code invoked through OCI Functions for a bounded task, with runtime capacity and execution managed by the service. |
+
+**Storage, databases, and data protection**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Recovery point objective (RPO)](#5-storage-databases-and-data-protection) | The maximum acceptable amount of lost recent data, expressed as a time interval. |
+| [Recovery time objective (RTO)](#5-storage-databases-and-data-protection) | The maximum acceptable time to return a service to usable operation after a failure. |
+| [Failover](#5-storage-databases-and-data-protection) | Transferring service to an alternate component or location when the primary cannot serve the workload. |
+| [Backup](#5-storage-databases-and-data-protection) | A retained copy created to support recovery. Validate it by restoring the relevant data and exercising the service that depends on it. |
+| [Restore](#5-storage-databases-and-data-protection) | Recreating data or a resource from a retained recovery copy, followed by checks that it meets the intended recovery point. |
+
+**Reliability, observability, and cost**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Metric](#6-reliability-observability-and-cost) | A numeric measurement recorded over time, such as failed requests or queue depth, with defined units and dimensions. |
+| [Service limit](#6-reliability-observability-and-cost) | A tenancy’s allowed service resource capacity under provider rules, distinct from a compartment quota an administrator sets. |
+| [Cost allocation tag](#6-reliability-observability-and-cost) | A metadata label used to attribute resources or consumption to an owner, environment or cost center. |
+| [Budget](#6-reliability-observability-and-cost) | A target for planned spending with alerts that support investigation when spending approaches an agreed threshold. |
+| [Monitoring alarm](#6-reliability-observability-and-cost) | A rule that evaluates a metric query over time and signals a state change when the configured condition is met. |
+| [Distributed trace](#6-reliability-observability-and-cost) | A record linking the timed work of multiple instrumented components for a single request or transaction. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Least privilege](#integrated-practice-scenarios) | Granting only the access a specific identity needs for its assigned work, then checking both allowed and denied actions. |
+| [Object Storage](#integrated-practice-scenarios) | A service that stores independently addressed objects in buckets and serves them through an API. |
+
 ## Places to learn
 
 This is a selective learning path, not a complete list of OCI architecture resources.

@@ -122,6 +122,85 @@ The path expects awareness of current Oracle AI Database architecture and enhanc
 - I test least privilege and audit evidence for common and local identities.
 - I diagnose data movement and performance from logs, views, row/object reconciliation, and measured outcomes.
 
+## Key terms and phrases
+
+**Architecture, instance, and connection path**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Instance](#1-architecture-instance-and-connection-path) | The memory structures and processes that manage access to database files. |
+| [Listener](#1-architecture-instance-and-connection-path) | The Oracle Net process accepting incoming connection requests and directing clients to registered database services. |
+| [Service name](#1-architecture-instance-and-connection-path) | The logical database service requested by a client, used to connect the workload to the intended instance or PDB. |
+| [Redo](#1-architecture-instance-and-connection-path) | Change information that can be applied to restore database changes during recovery, complementary to undo information. |
+
+**Multitenant administration**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Pluggable database (PDB)](#2-multitenant-administration) | A database container inside a container database with its own application objects and local administration scope. |
+| [Container database (CDB)](#2-multitenant-administration) | An Oracle multitenant database containing the root and pluggable databases, with administrative operations scoped to the current container. |
+| [Seed PDB](#2-multitenant-administration) | The template pluggable database used when creating a new PDB from the seed. |
+| [Common user](#2-multitenant-administration) | An identity common to the relevant containers, distinct from a user created solely inside one PDB. |
+| [Local user](#2-multitenant-administration) | A user created within one pluggable database and administered in that container. |
+
+**Storage and undo**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Tablespace](#3-storage-and-undo) | A logical storage unit backed by physical files, used to organize database segments and manage space. |
+| [Undo](#3-storage-and-undo) | Information about earlier data values that supports transaction rollback and consistent reads. |
+| [Data retention](#3-storage-and-undo) | How long data or recoverable history is kept before removal under an explicit operational or governance policy. |
+| [Transaction](#3-storage-and-undo) | A group of database operations whose changes are committed together or discarded together within the guarantees of the database. |
+| [Rollback](#3-storage-and-undo) | Returning to an earlier state after a failed change. For a database transaction, this discards eligible uncommitted work. |
+| [Flashback](#3-storage-and-undo) | Oracle facilities that access or restore an eligible earlier state using retained history, with requirements depending on the operation. |
+| [Read consistency](#3-storage-and-undo) | Providing a view of data appropriate to the query and isolation rules while other transactions may be modifying it. |
+| [Datafile](#3-storage-and-undo) | A physical file holding data belonging to a database tablespace. |
+| [Tempfile](#3-storage-and-undo) | A file providing space for temporary database operations rather than permanent table data. |
+| [Extent](#3-storage-and-undo) | A set of allocated database blocks belonging to a segment. |
+| [Segment](#3-storage-and-undo) | Storage allocated to a database object or structure, made up of extents. |
+| [Quota](#3-storage-and-undo) | A limit on how much tablespace storage a user may consume within its configured scope. |
+
+**Users, privilege, profiles, and audit**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Object privilege](#4-users-privilege-profiles-and-audit) | Permission to perform a particular action on a named database object, such as reading a table. |
+| [System privilege](#4-users-privilege-profiles-and-audit) | A grant authorizing a class of database actions, such as creating eligible objects within its scope. |
+| [Role](#4-users-privilege-profiles-and-audit) | A named grouping of privileges used to assign related access consistently. |
+| [Audit policy](#4-users-privilege-profiles-and-audit) | A database configuration specifying activities to record so access or changes can be reviewed. |
+
+**RMAN backup and recovery**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Restore and recovery](#5-rman-backup-and-recovery) | A restore retrieves a stored copy of a database file. Recovery applies changes needed to bring it to the intended consistent point. |
+| [Control file](#5-rman-backup-and-recovery) | A file storing structural information the database needs to mount, identify files and coordinate recovery. |
+| [Recovery Manager (RMAN)](#5-rman-backup-and-recovery) | Oracle’s tool for managing physical database backup, restore, recovery and related metadata. |
+
+**Data movement**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Data Pump](#6-data-movement) | Oracle’s facility for moving selected database data and metadata through export and import jobs. |
+| [Index](#6-data-movement) | An auxiliary structure organizing keys for faster lookup or ordered access, with a corresponding cost for maintenance and storage. |
+| [External table](#6-data-movement) | A table definition allowing Oracle to query data held outside ordinary database storage. |
+| [SQL*Loader](#6-data-movement) | Oracle’s loading utility for converting input records into database rows under control-file and rejection rules. |
+
+**Performance and automated maintenance**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Wait event](#7-performance-and-automated-maintenance) | A recorded reason a session spent time waiting, used alongside workload context to investigate performance. |
+| [Execution plan](#7-performance-and-automated-maintenance) | A description of the physical or logical steps chosen to answer a query, useful for investigating excess reads or joins. |
+| [AWR](#7-performance-and-automated-maintenance) | Automatic Workload Repository, a source of captured performance information for comparing database workload behavior over time. |
+| [ADDM](#7-performance-and-automated-maintenance) | Automatic Database Diagnostic Monitor, used to analyze database performance evidence and suggest investigation priorities. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Reconciliation](#integrated-practice-scenarios) | Comparing source and target results for the same scope, such as record counts and amounts in a given business day. |
+
 ## Places to learn
 
 This is a selective learning path, not a complete list of Oracle database administration resources.

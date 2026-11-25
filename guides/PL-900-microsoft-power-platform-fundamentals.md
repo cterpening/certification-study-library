@@ -7,16 +7,18 @@ generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
 last_verified: 2026-10-28
-upcoming_change_status: none-announced
-upcoming_change_checked: 2026-10-28
+upcoming_change_status: scheduled
+upcoming_change_checked: 2026-11-20
 ---
 
 # PL-900 Microsoft Power Platform Fundamentals Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-04.md#pl-900) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#pl-900-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-900) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-05.md#pl-900)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-04.md#pl-900) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#pl-900-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-900) is authoritative.
 
 **Current baseline:** Skills measured as of July 24, 2026<br>
-**Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
+**Upcoming English outline.** The credential page announces a December 18, 2026 update. The study guide still shows July 24. Use the current map until Microsoft publishes the revised tasks. [Source notes](../docs/research/2026-11-20-microsoft-refresh-group-05.md#pl-900).<br>
 **Official source:** [PL-900 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-900)
 
 ## How to use this guide
@@ -123,6 +125,8 @@ AI can propose tables, columns, relationships, formulas, and apps, but generated
 
 ### Connectors and data movement
 
+**Practice check.** When a maker can create a connection but cannot save a flow that uses it, inspect the environment's data policies. A connector blocked by policy can prevent saving the app or flow and existing connections can become inactive after a policy change. [Data policies - Power Platform | Microsoft Learn](https://learn.microsoft.com/en-us/power-platform/admin/wp-data-loss-prevention)
+
 A connector exposes triggers and actions for a service. Standard and premium classifications affect licensing. Custom connectors wrap APIs not supplied by Microsoft. Connections hold authentication context; connection references allow solution components to point to environment-specific connections.
 
 [Data loss prevention policies](https://learn.microsoft.com/en-us/power-platform/admin/wp-data-loss-prevention) classify connectors into business, non-business, or blocked groups and constrain which can be combined. A DLP policy governs connector use; it does not classify every field or replace permissions in the source system. It also does not guarantee that a connector action is semantically safe—for example, an authorized business connector can still update the wrong record if flow logic is defective.
@@ -139,7 +143,7 @@ An [environment](https://learn.microsoft.com/en-us/power-platform/admin/environm
 
 Environment strategy is a portfolio decision. Define who may create environments, which types exist, how production is distinguished from trial/developer work, capacity and region expectations, DLP scope, owner/support metadata, backup/recovery needs, and retirement rules. Separation reduces accidental coupling but adds deployment and administration work.
 
-> **Related item:** **VERIFY CURRENT — October 28, 2026:** [Dataverse for Teams deprecation](https://learn.microsoft.com/en-us/power-platform/important-changes-coming) ends new-environment creation on **November 15, 2026**. Existing environments not upgraded to full Dataverse are scheduled for suspension on **September 15, 2027** and decommissioning on **October 30, 2027**. Inventory the Microsoft Teams environment type, owners, apps, flows and agents; assess target capacity/licensing before upgrade. This concerns Dataverse for Teams environments, not ordinary Teams chats/files or full-Dataverse apps added to Teams. The dates are future milestones, not proof that a current environment is already unavailable.
+> **Related item:** **VERIFY CURRENT.** Microsoft ended creation of new Dataverse for Teams environments November 15, 2026. For existing environments, the published schedule suspends those still awaiting upgrade on September 15, 2027 and decommissions them October 30, 2027. [Dataverse for Teams deprecation](https://learn.microsoft.com/en-us/power-platform/important-changes-coming)
 
 ### Security layers
 
@@ -531,7 +535,82 @@ These original questions follow the 37 objective bullets; they are not recalled 
 
 ---
 
+## Key terms and phrases
+
+**The Power Platform mental model**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Power Pages](#1-the-power-platform-mental-model) | A Power Platform service for websites that expose selected business data to external users. A supplier portal can use web roles and Dataverse table permissions to limit the records each supplier sees. |
+| [Process cycle time](#1-the-power-platform-mental-model) | Elapsed time from the start of a business process to its completion, including waiting. Reducing form entry by two minutes may have little effect if an approval still takes two days. |
+
+**Dataverse and data integration**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Dataverse](#dataverse-concepts) | A managed business data platform with tables, relationships, security and business logic shared across applications. |
+| [Dataverse table](#dataverse-concepts) | A definition of a business entity's records, columns and relationships. |
+| [Primary key](#dataverse-concepts) | The identifier that uniquely distinguishes each record in a table. |
+| [Lookup column](#dataverse-concepts) | A column that refers to a row in another table, such as a request's assigned customer. |
+| [Dataverse relationship](#dataverse-concepts) | A defined association between business records, such as one customer having many service requests. |
+| [Choice column](#dataverse-concepts) | A field restricted to a defined selection of options that provide consistent categories for records. |
+| [Connector](#connectors-and-data-movement) | A packaged interface through which an app or flow can interact with a service. |
+| [Custom connector](#connectors-and-data-movement) | A description of an API's operations and authentication that makes it usable from Power Platform. |
+| [Connection](#connectors-and-data-movement) | An authenticated binding to a service through which a flow's actions operate. |
+
+**Environments, security, governance, and ALM**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Environment](#security-layers) | A managed boundary containing an application's Dataverse data, apps, flows and security configuration. |
+| [Security role](#security-layers) | A defined set of privileges controlling allowed actions and access depth in Dataverse. |
+| [Record sharing](#security-layers) | Granting another user or team access to a specific record within the applicable security model. |
+| [Data policy](#security-layers) | An environment or tenant rule that governs how connectors can be combined or used in supported Power Platform workloads. |
+| [Solution](#solutions-and-lifecycle) | A package of related Power Platform components that can be moved between environments. |
+| [Managed solution](#solutions-and-lifecycle) | A packaged downstream deployment whose components are managed according to solution layering and dependencies. |
+| [Unmanaged solution](#solutions-and-lifecycle) | An editable collection of customizations used as the development source of a solution. |
+| [Environment variable](#solutions-and-lifecycle) | A named deployment setting whose value can differ by environment while the solution logic stays reusable. |
+| [Deployment pipeline](#solutions-and-lifecycle) | A repeatable process for promoting a solution and its target configuration through environments. |
+
+**Power Apps**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Canvas app](#canvas-apps) | An app built by arranging controls on screens and using formulas to work with connected data. |
+| [Gallery](#canvas-apps) | A canvas app control that repeats a layout for each record in its data source. |
+| [Power Fx](#canvas-apps) | The formula language used to express calculations and interactions in Power Apps. |
+| [Component](#canvas-apps) | A reusable unit of interface or behavior that can be shared across screens or applications. |
+| [Model-driven app](#model-driven-apps) | An app built around Dataverse tables, forms, views and relationships for a structured business process. |
+| [Form](#model-driven-apps) | The layout and controls used to view or edit an individual Dataverse record. |
+| [View](#model-driven-apps) | A saved selection of table columns, filters and sorting for a list of records. |
+| [Business rule](#model-driven-apps) | Declarative Dataverse logic for actions such as validating or setting field values under specified conditions. |
+
+**Power Automate**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Cloud flow](#automation-types) | Automation that runs in the cloud in response to an event, a schedule or a manual trigger. |
+| [Flow trigger](#automation-types) | The event, schedule or direct request that starts a cloud flow and supplies its initial inputs. |
+| [Scheduled flow](#automation-types) | A cloud flow that starts on a defined recurrence. |
+| [Instant flow](#automation-types) | A cloud flow started explicitly, such as by selecting a button or invoking it from an app. |
+| [Automated flow](#automation-types) | A cloud flow that starts when a configured event occurs in a connected system. |
+| [Approval](#approvals-and-common-integrations) | A flow step that asks designated people to record a decision before subsequent actions continue. |
+| [Desktop flow](#reliability-and-desktop-automation) | Automation that interacts with desktop applications and user interfaces to perform repetitive tasks. |
+| [Robotic process automation (RPA)](#reliability-and-desktop-automation) | Automating repetitive interactions with software through interface actions when a suitable application integration is unavailable. |
+
+**Copilot Studio agents**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Topic](#topics-knowledge-and-orchestration) | A defined conversation path that guides an agent through a particular intent or set of questions. |
+| [Knowledge source](#topics-knowledge-and-orchestration) | A collection of information an agent can retrieve to ground an answer, subject to access controls. |
+| [Agent flow](#topics-knowledge-and-orchestration) | A defined sequence of actions an agent can invoke for a business operation. |
+| [Model Context Protocol (MCP)](#tools-and-mcp) | A protocol through which a client can discover and use tools or context supplied by a server. |
+| [Publishing](#publish-monitor-and-evaluate) | Making a tested version of an agent available through its configured channel for the intended audience. |
+
 ## Places to learn
+
+**Suggested practice.** Use a small business request to distinguish the shared data layer, the user-facing app and the automated flow before following the corresponding course units. 1 day of instructor-led training (publisher listing); provider scheduling and fees vary. [Introduction to Microsoft Power Platform](https://learn.microsoft.com/en-us/training/courses/pl-900t00)
 
 This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Pick the formats that fit you. Times are approximate consumption time at normal speed; labs, note-taking, review, and independent practice add time.
 
@@ -542,7 +621,7 @@ Use the [plans FAQ](https://learn.microsoft.com/en-us/power-apps/maker/common/fa
 | Resource | Access | Estimated time | Best use and caveat |
 |---|---|---:|---|
 | [Microsoft Learn — PL-900 course](https://learn.microsoft.com/en-us/training/courses/pl-900t00) | Free self-study; instructor-led options vary | 1 day (official course) | Official foundation; the public overview still emphasizes apps, flows, and Power Pages, so use the July 2026 blueprint to check the agent/code/Plan-designer gaps |
-| [Microsoft — PL-900 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/power-platform-fundamentals/practice/assessment?assessment-type=practice&assessmentId=34&practice-assessment-type=certification) | Free Microsoft account | About 1–2 hours for an attempt and review | Repeatable official readiness check with rationales and learning links; start here before buying another assessment |
+| [Microsoft — PL-900 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/power-platform-fundamentals/practice/assessment?assessment-type=practice&assessmentId=34&practice-assessment-type=certification) | Legacy Learn assessment | Previously estimated at 1–2 hours with review | Microsoft no longer updates this version. Use the credential page to launch current practice in AI Skills Navigator with sign-in. |
 | [Microsoft Partner Skilling Hub — LevelUp PL-900](https://www.skilling-hub.com/en-US/listing/o::levelup::2058317) | Partner login required | Current duration not verified | Public fetch returns a shell; confirm eligible-partner access and the current syllabus after sign-in |
 | [Microsoft Learn Power Platform Fundamentals](https://learn.microsoft.com/en-us/credentials/certifications/power-platform-fundamentals/) | Free | Self-paced; current total not published in the fetched overview | Use the credential page to find official preparation and practice; budget lab time separately |
 | [Pluralsight — Introduction to PL-900](https://www.pluralsight.com/courses/intro-microsoft-power-platform-fundamentals-900) | Subscription; public outline inspected only | Published: 24 minutes | Vlad Catrinescu; current landing page says updated October 13, 2026. Orientation and study planning, not a complete current blueprint course. Verify logistics against Microsoft; paid lessons and practice content not inspected |

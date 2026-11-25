@@ -213,6 +213,88 @@ Trace user/device identity, SaaS tenant/action, TLS inspection, inline CASB/DLP,
 34. Use invented patterns/files without real personal or regulated data, in an authorized tenant, with cleanup and protected logs.
 35. Versions, retirement, weights, contract, products, policies, and eligibility can change independently of this guide.
 
+## Key terms and phrases
+
+**Decentralized SD-WAN (20–30%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Direct internet access (DIA)](#design-the-dia-path) | An arrangement in which branch internet traffic exits locally instead of traveling through a central site first. |
+| [Availability](#design-the-dia-path) | Timely and reliable access to a resource by authorized users. A running server may still be unavailable to the business if a required dependency fails. |
+| [Bandwidth](#design-the-dia-path) | The nominal data-carrying capacity of a link, usually expressed in bits per second. It does not by itself establish delay or delivered throughput. |
+| [Failure domain](#design-the-dia-path) | A set of components that can fail together, such as workloads sharing a physical host, power source or region. |
+| [FortiGate](#design-the-dia-path) | The Fortinet firewall platform that applies routing, access policy and security inspection to traffic traversing its interfaces. |
+| [FortiManager](#design-the-dia-path) | A platform for centrally managing Fortinet device configurations and policy. A change staged in its database must reach the intended devices to affect traffic. |
+| [FortiSASE](#design-the-dia-path) | Fortinet’s cloud-delivered access and security service for supported users and sites, with different traffic paths for internet, SaaS and private access. |
+| [Jitter](#build-meaningful-performance-slas) | Variation in packet delay. A link with acceptable average latency can still deliver poor real-time voice quality. |
+| [Packet loss](#build-meaningful-performance-slas) | The share of transmitted packets that do not arrive. If 100 probes are sent over a path and 97 arrive, measured loss for that sample is 3%. |
+| [Latency](#build-meaningful-performance-slas) | Elapsed time for data or a request to travel a defined path. Specify whether the measure is one-way delay or round-trip time. |
+| [Overlay](#build-meaningful-performance-slas) | A logical network formed over underlying links, commonly using tunnels between branches and hubs. |
+| [Performance SLA](#build-meaningful-performance-slas) | A Fortinet SD-WAN health measurement that compares eligible links against targets such as delay, jitter or loss for steering decisions. |
+| [Source interface](#build-meaningful-performance-slas) | The interface on which traffic enters a firewall. Its zone and context can affect which routes and policies apply. |
+
+**Rules and routing (15–25%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [SD-WAN rule](#derive-an-sd-wan-rule-decision) | A policy that identifies a class of traffic and chooses among eligible links using its configured strategy. |
+| [Firewall policy](#derive-an-sd-wan-rule-decision) | A rule that identifies matching traffic and determines its treatment. Rule order can change which action applies. |
+| [Load balancer](#derive-an-sd-wan-rule-decision) | A component that sends eligible requests or connections to selected backends using health and distribution policy. |
+| [Software-defined WAN (SD-WAN)](#derive-an-sd-wan-rule-decision) | A way to steer traffic among network connections according to policy and measured link conditions. |
+| [Source NAT (SNAT)](#derive-an-sd-wan-rule-decision) | Rewriting the source address of a packet, commonly so internal hosts can use a shared external address. |
+| [SD-WAN member](#derive-an-sd-wan-rule-decision) | An interface or connection eligible for SD-WAN forwarding under its zone, route and steering policies. |
+| [Policy package](#explain-routing-and-sessions) | A managed set of policies assigned to installation targets. Editing the package and installing it on a device are separate steps. |
+| [Rollback](#explain-routing-and-sessions) | Returning a change to a known acceptable state when results do not meet defined conditions. A valid rollback also accounts for data changed in the meantime. |
+
+**SASE deployment (20–30%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Point of presence (PoP)](#provision-responsibly) | A service location where users or sites connect to the SASE provider for access and inspection. |
+| [Data residency](#provision-responsibly) | The geographic location in which data is stored or processed. Copies, support access and backups can affect the answer. |
+| [Data sovereignty](#provision-responsibly) | The effect of jurisdiction and legal authority on who may control or obtain data. A storage-region label alone is insufficient evidence. |
+| [Federation](#provision-responsibly) | An arrangement that lets one security domain rely on identity information issued by another, under agreed trust and validation rules. |
+| [Least privilege](#provision-responsibly) | Giving an identity only the permissions needed for its task, for as long as it needs them. |
+| [Log retention](#provision-responsibly) | The period for which records remain available for an investigation or other defined purpose. Missing results outside that period cannot establish inactivity. |
+| [Endpoint onboarding](#onboard-users-and-sites) | Enrolling a user device and establishing the identity, connection and settings it needs to reach the service. |
+| [Failover](#onboard-users-and-sites) | Transfer of service to another HA member after a failure. Some sessions may need to reconnect. |
+| [FortiClient](#onboard-users-and-sites) | Endpoint software used for supported connectivity and security functions, with effective capabilities determined by the deployment and assigned configuration. |
+| [Identity provider (IdP)](#onboard-users-and-sites) | The service that authenticates an identity and makes assertions or issues tokens that a relying service can validate. |
+| [Remote Authentication Dial-In User Service (RADIUS)](#onboard-users-and-sites) | A protocol used by network access equipment to consult a central authentication and authorization service and record accounting events. |
+| [Security assertion markup language (SAML)](#onboard-users-and-sites) | A federation standard in which an identity provider issues signed assertions to a relying service, often for browser-based single sign-on. |
+| [Single sign-on (SSO)](#onboard-users-and-sites) | An arrangement in which an authenticated session can be reused to access multiple authorized applications without a fresh sign-in at each. |
+
+**Secure internet and SaaS access (15–25%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Secure internet access (SIA)](#4-secure-internet-and-saas-access-1525) | Protection applied to internet-bound traffic as it passes through the security service. |
+| [Secure SaaS access (SSA)](#4-secure-internet-and-saas-access-1525) | Visibility and policy controls for use of supported software-as-a-service applications. |
+| [Application control](#4-secure-internet-and-saas-access-1525) | A control that identifies the application using a connection and applies policy to it, even when several applications share a port. |
+| [Endpoint profile](#4-secure-internet-and-saas-access-1525) | A set of managed configuration or protection settings assigned to selected endpoints. Group membership and precedence affect the effective settings. |
+| [False positive](#4-secure-internet-and-saas-access-1525) | A detection that matches benign activity. Tuning requires understanding which condition made it match. |
+| [Security profile](#4-secure-internet-and-saas-access-1525) | A set of inspection settings attached to a policy, such as antivirus or web filtering for allowed traffic. |
+| [Software as a service (SaaS)](#4-secure-internet-and-saas-access-1525) | An application operated by a provider and consumed as a service. The customer still governs tenant settings, access and use of its data. |
+| [Web filtering](#4-secure-internet-and-saas-access-1525) | A control that allows or blocks web access according to a URL, category or other policy criterion. |
+| [Cloud access security broker (CASB)](#4-secure-internet-and-saas-access-1525) | A control between users and cloud services, or integrated through service APIs, that provides visibility and enforces policies on cloud application use. |
+
+**Analytics (15–25%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Log anonymization](#5-analytics-1525) | Reducing the identifying detail in logs to protect privacy while retaining enough context for authorized analysis. |
+| [Alert](#5-analytics-1525) | A notification that an observed condition met a detection criterion. An analyst needs context before treating it as an incident. |
+| [FortiView](#5-analytics-1525) | A set of views that summarize activity from available log data and let an analyst narrow a result to its underlying records. |
+| [Incident](#5-analytics-1525) | A case representing a security event or set of related events requiring coordinated investigation and response. |
+| [Telemetry](#5-analytics-1525) | Logs, events and measurements supplied by managed systems. Customer attribution and collection health determine whether the records are usable. |
+| [Timestamp](#5-analytics-1525) | A recorded time associated with an event. Distinguish source event time from collection or indexing time when building a timeline. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Virtual private network (VPN)](#hybrid-workforce-rollout) | A protected logical connection over a shared network. Its permitted destinations and traffic depend on routes and access policy. |
+
 ## Places to learn
 
 This is a selective starting set, not a complete list and not a prescription to consume everything. Start with the exam page and official courses, then choose documentation and labs that close your gaps. Times are publisher-listed or planning estimates.

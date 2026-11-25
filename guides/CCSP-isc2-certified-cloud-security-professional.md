@@ -450,6 +450,97 @@ These are original teaching prompts, not recalled or predicted exam items. Cover
 47. **Does a 75% adaptive-course score establish CCSP certification?** No. Course completion, the CAT exam’s scaled 700/1000 passing score, and experience/application requirements are separate.
 48. **What remains unproven by the local workbook?** Cloud IAM/KMS behavior, authenticated principals, durable/concurrent nonce/version state, secure deletion, hardware custody, infrastructure recovery and production readiness remain untested.
 
+## Key terms and phrases
+
+**Cloud Concepts, Architecture and Design**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Shared responsibility](#1-cloud-concepts-architecture-and-design-17) | The allocation of cloud security duties between provider and customer. Service model and contract determine the boundary. |
+| [Approval gate](#1-cloud-concepts-architecture-and-design-17) | A point where an authorized person must review available evidence before a workflow performs a sensitive or high-impact action. |
+| [Control plane](#1-cloud-concepts-architecture-and-design-17) | The functions that build network state and decide paths or policy. The data plane uses those decisions for actual traffic. |
+| [Multicloud](#1-cloud-concepts-architecture-and-design-17) | Use of services from multiple cloud providers. Common objectives can require different identities, APIs or controls in each provider. |
+| [Tenant isolation](#1-cloud-concepts-architecture-and-design-17) | Separation of one tenant’s data, permissions and operations from another’s, including when operators or infrastructure are shared. |
+| [Alert](#verify-a-module-claim-and-its-current-status) | A notification that an observed condition met a detection criterion. An analyst needs context before treating it as an incident. |
+| [Security policy](#verify-a-module-claim-and-its-current-status) | A statement of organizational intent and authority that guides decisions. A procedure describes how to carry out a task. |
+
+**Cloud Data Security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Data lifecycle](#2-cloud-data-security-20) | The stages information passes through, from creation and use to retention and eventual disposal. |
+| [Chain of custody](#2-cloud-data-security-20) | A record of who collected, possessed or transferred evidence, when it changed hands and how its integrity was protected. |
+| [Encryption in transit](#2-cloud-data-security-20) | Protecting data while it travels between endpoints. The endpoints and any termination points can ordinarily access the plaintext. |
+| [Integrity](#2-cloud-data-security-20) | Protection against improper changes to data or systems, including accidental alterations. |
+| [Least privilege](#2-cloud-data-security-20) | Granting an identity only the access needed for its assigned work. |
+| [Log retention](#2-cloud-data-security-20) | The period for which records remain available for an investigation or other defined purpose. Missing results outside that period cannot establish inactivity. |
+| [Separation of duties](#2-cloud-data-security-20) | Splitting incompatible responsibilities so one person cannot complete a sensitive operation without independent involvement. |
+| [Envelope encryption](#encryption-authorization-and-deletion-have-different-evidence) | Encrypting data with a data key and protecting that data key with a separate key-encryption key. |
+| [Cryptographic erasure](#encryption-authorization-and-deletion-have-different-evidence) | Rendering encrypted data inaccessible by securely destroying the necessary keys, subject to verified key scope and copies. |
+| [Authorization](#encryption-authorization-and-deletion-have-different-evidence) | The decision about what a verified identity may do to a resource under the applicable policy. |
+| [Encryption](#encryption-authorization-and-deletion-have-different-evidence) | Reversibly transforming data with a key to keep the plaintext unavailable to parties lacking the appropriate decryption capability. |
+| [Key management service (KMS)](#encryption-authorization-and-deletion-have-different-evidence) | A service that controls cryptographic-key creation, access and operations, allowing applications to use keys under policy and audit. |
+| [Symmetric encryption](#encryption-authorization-and-deletion-have-different-evidence) | Encryption in which the same secret key is used to encrypt and decrypt. Secure sharing and storage of the key are essential. |
+
+**Cloud Platform and Infrastructure Security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Authentication](#3-cloud-platform-and-infrastructure-security-17) | Checking that a claimant controls an authenticator bound to the claimed identity. It precedes the separate decision about permitted actions. |
+| [Inherent risk](#3-cloud-platform-and-infrastructure-security-17) | Exposure assessed before considering the effect of controls. |
+| [Residual risk](#3-cloud-platform-and-infrastructure-security-17) | The exposure remaining after safeguards are considered, which an accountable owner must address or accept. |
+| [Service account](#3-cloud-platform-and-infrastructure-security-17) | A nonhuman identity used by software or automation. Scope, credential lifecycle and ownership govern what happens when it is compromised or retired. |
+| [Vulnerability](#3-cloud-platform-and-infrastructure-security-17) | A weakness in design, configuration, process or implementation that can affect a security objective under applicable conditions. |
+| [Recovery point objective (RPO)](#a-recovery-region-must-include-the-dependencies) | The targeted maximum loss of recent data, expressed as a period before the disruption. |
+| [Recovery time objective (RTO)](#a-recovery-region-must-include-the-dependencies) | The targeted time to restore a usable service, including the dependencies that service needs. |
+| [Failure domain](#a-recovery-region-must-include-the-dependencies) | A set of components that can fail together, such as workloads sharing a physical host, power source or region. |
+| [Region](#a-recovery-region-must-include-the-dependencies) | A provider-defined geographical area containing cloud infrastructure. An application’s recovery design must account for dependencies in the selected region. |
+| [Zero Trust](#a-recovery-region-must-include-the-dependencies) | An access model that evaluates requests using identity, resource and context without assuming access is safe solely because it originated on an internal network. |
+
+**Cloud Application Security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Container registry](#4-cloud-application-security-16) | A service that stores and distributes container images, with access and integrity controls for publishing and pulling content. |
+| [Exception](#4-cloud-application-security-16) | An authorized, bounded deviation from an established requirement. The owner, scope, compensating measures and expiry make it reviewable. |
+| [Schema validation](#4-cloud-application-security-16) | Comparing an incoming record or API message with the expected structure and types before trusting downstream interpretation. |
+| [Threat modeling](#4-cloud-application-security-16) | Analyzing a software design’s assets, trust boundaries and potential failure or misuse paths to choose suitable controls early. |
+| [Object-level authorization](#test-the-object-decision-across-every-layer) | Checking whether the requester may access the specific object named in a request, even if the requester is authenticated. |
+| [Rate limiting](#test-the-object-decision-across-every-layer) | Restricting the number or rate of operations in a defined interval to protect capacity. A limit applied per identity behaves differently from one applied per IP address. |
+
+**Cloud Security Operations**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Availability](#5-cloud-security-operations-17) | The ability of authorized users to reach and use a resource when needed. |
+| [Evidence preservation](#5-cloud-security-operations-17) | Maintaining the integrity and provenance of information needed for investigation, including original timestamps, collection method and access history. |
+| [Hypervisor](#5-cloud-security-operations-17) | The layer that supplies and isolates virtual hardware for guest operating systems, allowing multiple virtual machines to share a host. |
+| [Threat intelligence](#5-cloud-security-operations-17) | Assessed information about adversary activity or indicators, with source, context and freshness to guide a decision. |
+| [Virtual private cloud (VPC)](#5-cloud-security-operations-17) | A logically isolated cloud network with customer-defined addressing, subnets and routing boundaries. |
+| [Retry](#an-operational-decision-should-preserve-its-evidence) | Repeating an operation after a transient failure. When the first attempt’s outcome is unknown, idempotence matters before retrying a write. |
+
+**Legal, Risk and Compliance**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Legal hold](#6-legal-risk-and-compliance-13) | A direction to preserve relevant records for a legal matter, which can suspend ordinary disposal schedules. |
+| [Control objective](#6-legal-risk-and-compliance-13) | A desired result that one or more safeguards should achieve. A tester needs to establish whether the result was achieved for the assessed scope. |
+| [Data minimization](#6-legal-risk-and-compliance-13) | Collecting and retaining only the data needed for the defined purpose. Reducing unnecessary copies narrows exposure. |
+| [Population](#6-legal-risk-and-compliance-13) | The full set of items within the defined scope. Measuring only devices that report successfully can systematically omit failures. |
+| [Right to audit](#6-legal-risk-and-compliance-13) | A contractual provision allowing the customer or an authorized assessor to obtain assurance about relevant supplier controls. |
+| [Data sovereignty](#6-legal-risk-and-compliance-13) | The effect of jurisdiction and legal authority on who may control or obtain data. A storage-region label alone is insufficient evidence. |
+| [Assurance](#versioned-control-frameworks-support-evidence-not-blanket-assurance) | Confidence derived from relevant evidence that a claim or control objective is supported for a specified scope and period. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Software as a service (SaaS)](#scenario-1-regulated-saas-selection-and-exit) | An application operated by a provider and consumed as a service. The customer still governs tenant settings, access and use of its data. |
+| [Tenant](#scenario-2-multi-tenant-application-and-key-exposure) | An administrative or customer boundary in a shared service. Data, identities, configurations and actions must stay within the intended tenant. |
+| [Incident](#scenario-3-provider-region-incident-and-legal-hold) | A case representing a security event or set of related events requiring coordinated investigation and response. |
+| [Configuration drift](#hands-on-evidence-labs) | A difference between an environment’s actual configuration and its approved desired state. Out-of-band changes are one possible cause. |
+| [Containment](#hands-on-evidence-labs) | An incident response action that limits further damage or spread while preserving options for investigation and recovery. |
+
 ## Places to learn
 
 This is not a complete list. Select a route and map it against the current outline before adding references or practical work. Public catalog observations were checked September 29, 2026; no paid lessons, book interiors or question banks were accessed. Planning estimates are this guide's suggestions, not verified provider runtimes.

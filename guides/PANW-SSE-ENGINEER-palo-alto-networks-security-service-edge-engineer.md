@@ -343,6 +343,81 @@ Choose browser/extension and agentless/private path from device and risk require
 - [ ] I can answer all original checks and complete the labs with diagrams, configuration/diff, evidence, failure tests, and rollback.
 - [ ] I rechecked the live page, datasheet, handbook, current Prisma Access/Browser/SCM releases and tenant entitlements, and registration terms.
 
+## Key terms and phrases
+
+**Prisma Access planning and deployment**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Allowlist](#11-architecture-and-components) | An explicit set of approved identities, applications or actions, with other cases subject to the applicable default policy. |
+| [Prisma Access](#11-architecture-and-components) | A cloud-delivered security service that applies access and inspection policies for connected users and networks. |
+| [Stateful inspection](#12-routing) | Tracking connections so both a packet’s attributes and the state of the flow influence enforcement. |
+| [Service infrastructure](#13-service-infrastructure) | The internal addressing and connectivity that support a Prisma Access deployment and its service components. |
+| [Commit](#13-service-infrastructure) | Validating and applying a candidate configuration on the relevant management system. Distributing a centrally managed change to devices is a separate step. |
+| [Region](#13-service-infrastructure) | A provider-defined geographical area containing cloud infrastructure. An application’s recovery design must account for dependencies in the selected region. |
+| [Mobile user](#14-mobile-users) | A user who connects to Prisma Access from an endpoint for policy-controlled access independently of a branch connection. |
+| [Forward proxy](#14-mobile-users) | An intermediary acting on behalf of a client for outbound connections, often to apply access policy or inspection. |
+| [GlobalProtect](#14-mobile-users) | Palo Alto Networks endpoint connectivity and access software and services, with portals providing configuration and gateways handling access. |
+| [Remote network](#15-remote-networks) | A branch or site connected to Prisma Access so site traffic can use its security services. |
+| [Prisma SD-WAN](#15-remote-networks) | Palo Alto Networks WAN connectivity and application-aware path management for branch and data-center networks. |
+| [Security association (SA)](#15-remote-networks) | A set of parameters, keys and counters defining how one direction of traffic is protected under IPsec. |
+| [Security zone](#15-remote-networks) | A logical grouping of interfaces that defines a policy boundary for traffic entering or leaving the firewall. |
+| [Service connection](#16-private-application-access) | Connectivity between Prisma Access and an enterprise network, commonly to reach private services or applications. |
+| [Authorization](#16-private-application-access) | Determining whether a given identity may perform a specific action on the particular resource requested. |
+| [Failure domain](#16-private-application-access) | A set of components that can fail together, such as workloads sharing a physical host, power source or region. |
+| [Private application access](#16-private-application-access) | Controlled connectivity to a specified enterprise application through a supported access path. |
+| [Identity provider (IdP)](#17-identity-authentication) | The service that authenticates a user and supplies identity information to the relying access service. |
+| [Authentication](#17-identity-authentication) | Checking that a claimant controls an authenticator bound to the claimed identity. It precedes the separate decision about permitted actions. |
+| [Cloud Identity Engine (CIE)](#17-identity-authentication) | A Palo Alto Networks service that supplies identity context for supported authentication and policy integrations. |
+| [Service account](#17-identity-authentication) | A nonhuman identity used by software or automation. Scope, credential lifecycle and ownership govern what happens when it is compromised or retired. |
+
+**Prisma Access services**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Least privilege](#21-advanced-features-and-services) | Limiting permissions to the tasks, resources and duration an identity actually requires. |
+| [Segmentation](#21-advanced-features-and-services) | Dividing resources into security boundaries and specifying the permitted communication between them. |
+| [Telemetry](#21-advanced-features-and-services) | Records of activity from endpoints, networks or other systems that investigators can correlate into a timeline. |
+| [Data loss prevention (DLP)](#22-data-security-services) | Inspection and policy actions intended to prevent unauthorized disclosure of sensitive information. |
+| [False positive](#22-data-security-services) | An alert that classifies benign activity as a target condition. Repeated benign alerts can distort operational priorities. |
+| [Incident](#22-data-security-services) | A case that groups related alerts and evidence so an analyst can assess scope and coordinate a response. |
+| [Decryption policy](#23-security-decryption-and-qos-policy) | Rules that decide which encrypted flows receive TLS inspection and which are excluded. |
+| [Quality of service (QoS)](#23-security-decryption-and-qos-policy) | Classifying and treating traffic differently under contention, such as protecting voice delay while bulk transfers share the link. |
+| [Security profile](#23-security-decryption-and-qos-policy) | A collection of threat or content inspection settings associated with a matching firewall policy, such as web filtering or intrusion prevention. |
+| [Normalization](#24-user-based-policy) | Mapping source-specific values to a common representation, such as translating different vendor fields into the same source-address field. |
+| [Privileged access management (PAM)](#24-user-based-policy) | Controls for powerful accounts and sensitive actions, commonly including approval, short-lived access, credential protection and session auditing. |
+
+**Prisma Browser**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Prisma Browser](#31-deploy-prisma-browser) | An enterprise-managed browser that applies policy within browser sessions, including access from supported unmanaged devices. |
+| [Single sign-on (SSO)](#31-deploy-prisma-browser) | An arrangement in which an authenticated session can be reused to access multiple authorized applications without a fresh sign-in at each. |
+| [Device posture](#32-security-decryption-and-dlp-policies) | Evidence of the current condition of an endpoint, such as running protection software or encryption status, used as input to an access decision. |
+| [Security rule](#32-security-decryption-and-dlp-policies) | A rule that matches traffic attributes such as zones, identity, application or service and determines whether the flow is permitted. |
+
+**Prisma Access administration and operation**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Device group](#41-panorama-managed-operation) | A Panorama grouping used to manage shared policy and objects for selected firewalls. |
+| [Panorama](#41-panorama-managed-operation) | Palo Alto Networks centralized management for supported firewalls. Managed policy, device settings and log collection have distinct roles. |
+| [Remediation](#42-scm-managed-operation) | Action taken to remove or correct the cause of an incident after its immediate effects are contained. |
+| [Strata Cloud Manager (SCM)](#42-scm-managed-operation) | A cloud management platform for supported network security deployments, including configuration, monitoring and policy administration. |
+| [Strata Logging Service](#43-strata-logging-service) | A cloud service for storing and making security logs available to authorized management and investigation tools. |
+| [Ingestion](#43-strata-logging-service) | Bringing source records into the security platform for analysis. Missing input limits what a dashboard can show. |
+| [Log forwarding](#43-strata-logging-service) | Sending selected logs to other systems under configured match and destination rules. A local log and a successfully received remote record are separate observations. |
+| [Retention](#43-strata-logging-service) | The period for which telemetry remains available for investigation. A search outside that period cannot establish inactivity. |
+
+**Prisma Access troubleshooting**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Domain Name System (DNS)](#51-connectivity-and-performance) | The Domain Name System, which resolves names to records such as IP addresses so clients can locate services. |
+| [DNS Security](#51-connectivity-and-performance) | Analysis of DNS activity or destinations to identify suspicious resolutions and apply configured actions. |
+| [Static route](#51-connectivity-and-performance) | A route installed by configuration, specifying a prefix and next hop or interface. It changes only through configuration or an associated tracking mechanism. |
+| [Split tunneling](#52-traffic-enforcement) | Sending selected traffic through a VPN while other traffic exits through another path. DNS and security policy must account for both paths. |
+
 ## Places to learn
 
 This is a selective starting set, not a complete list and not a prescription to consume everything. Pick and choose the official documentation, structured training, videos, and labs that close your specific gaps. Times are planning estimates unless the provider publishes a duration; access, entitlements, versions, titles, and pricing can change.

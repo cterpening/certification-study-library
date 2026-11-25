@@ -488,6 +488,74 @@ These are original answered study prompts, not exam items. Explain each answer u
 47. **What did the workbook not test?** Authentication, approvals, a real model/parser/Search, distributed caches, concurrent writers, process durability or cloud execution.
 48. **What remains before exam and production readiness?** Reconcile the form-delivered detailed guide, verify the actual account and current policies, execute authorized labs and obtain independent human review.
 
+## Key terms and phrases
+
+**Define and implement Snowflake Gen AI principles and best practices**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Schema enforcement](#frame-the-use-case-before-selecting-a-model) | Checking incoming records against expected fields, types or constraints before accepting them into a governed dataset. |
+| [Account](#frame-the-use-case-before-selecting-a-model) | The Snowflake administrative boundary that contains account objects and controls, including roles, warehouses and databases. |
+| [Grounding](#design-context-grounding-and-evaluation) | Supplying evidence for the model’s answer and checking that important claims can be traced to it. |
+| [Evaluation set](#keep-evaluation-evidence-reproducible) | A versioned collection of representative inputs and expected judgments used to compare application changes. |
+| [Label](#keep-evaluation-evidence-reproducible) | The reference outcome paired with an example for supervised training or evaluation. |
+| [View](#govern-the-complete-data-and-action-path) | A named query through which consumers see data in a defined shape. A conventional logical view reads its inputs when queried. |
+| [Idempotence](#govern-the-complete-data-and-action-path) | Repeatedly applying the same logical input leaves the same intended state as applying it once, which makes retry and replay safer. |
+| [Data leakage](#govern-the-complete-data-and-action-path) | Information unavailable at the time of a real prediction influencing training or evaluation, often producing overly optimistic results. |
+| [Role hierarchy](#govern-the-complete-data-and-action-path) | The graph of role grants through which a parent role can inherit privileges assigned to another role. |
+| [OWNERSHIP](#govern-the-complete-data-and-action-path) | The object-control privilege held by an owning role, distinct from specific consumption grants such as SELECT. |
+
+**Use Cortex AI features and functions for customer use cases**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Cortex Search](#choose-the-narrowest-managed-surface) | A managed retrieval service that lets an application find relevant material in an indexed collection. |
+| [Embedding](#choose-the-narrowest-managed-surface) | A numeric vector representation used to compare or retrieve items according to relationships learned by a model. |
+| [Resource monitor](#check-effective-function-and-retrieval-access) | A Snowflake control for tracking eligible warehouse credit use and taking configured actions at usage thresholds. |
+| [Semantic model or view](#build-governed-natural-language-and-agent-experiences) | A description of business data, relationships and measures that helps a natural-language analytics tool generate meaningful queries. |
+| [Database](#separate-agent-identity-tool-discovery-and-execution-failures) | The namespace containing schemas and their objects; it forms part of a fully qualified Snowflake object name. |
+| [USAGE privilege](#separate-agent-identity-tool-discovery-and-execution-failures) | Permission enabling use of specified objects such as a database, schema or warehouse, alongside other grants required for the query. |
+| [Retrieval-augmented generation (RAG)](#engineer-prompts-structured-outputs-and-rag) | Combining retrieval and generation so a model can answer with relevant evidence available at request time. |
+| [Data freshness](#engineer-prompts-structured-outputs-and-rag) | The age or lag of data visible to a consumer relative to the agreed source time or publication expectation. |
+
+**Build and fine-tune open-source models with container services and Model Registry**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Fine-tuning](#decide-managed-versus-custom-model-operation) | Adapting model behavior using training examples. New or frequently changing document facts can instead be supplied through retrieval. |
+| [Aggregate loss](#decide-managed-versus-custom-model-operation) | A summary of prediction error across examples. A mean can improve even while errors increase for a small but important group. |
+| [Training checkpoint](#decide-managed-versus-custom-model-operation) | Saved state from model training. Resuming an interrupted run may require the optimizer and training progress as well as the model weights. |
+| [Deduplication](#decide-managed-versus-custom-model-operation) | Recognizing repeated representations of the same event or business entity under a defined key and selection rule. |
+| [Hyperparameter](#decide-managed-versus-custom-model-operation) | A configurable choice outside the fitted parameters, such as a learning rate, selected using a validation process. |
+| [Latency](#decide-managed-versus-custom-model-operation) | Elapsed time from accepting a request to delivering the defined response, often assessed at a percentile to expose slow cases. |
+| [Baseline model](#decide-managed-versus-custom-model-operation) | A simple reference approach used to judge whether the added complexity and cost of a candidate model produce worthwhile improvement. |
+| [Model monitoring](#decide-managed-versus-custom-model-operation) | Collecting operational and quality signals after deployment, with enough context to identify changes and investigate their effects. |
+| [Compute pool](#package-and-run-the-workload-reproducibly) | A set of compute resources on which Snowpark Container Services can run containerized services or jobs. |
+| [Model Registry](#govern-models-through-the-registry-and-delivery-lifecycle) | A governed record of model versions, signatures, metrics and lineage that lets a team identify what it evaluated or served. |
+| [Data lineage](#govern-models-through-the-registry-and-delivery-lifecycle) | The chain of sources and transformations that produced a dataset or model input, useful for explaining a result or assessing change impact. |
+| [Prompt template](#govern-models-through-the-registry-and-delivery-lifecycle) | A versioned instruction format with designated places for request data, examples or retrieved evidence. |
+| [Model version](#govern-models-through-the-registry-and-delivery-lifecycle) | A separately identifiable registered model artifact used to track what was evaluated, promoted or deployed. |
+
+**Build, manage and optimize document parsing pipelines**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Data retention](#start-with-a-document-contract) | How long data or recoverable history is kept before removal under an explicit operational or governance policy. |
+| [Document parsing](#start-with-a-document-contract) | Extracting text or structure from a file for downstream use, with separate checks on extraction quality and completeness. |
+| [Extraction score](#parse-the-actual-return-contract-and-evaluate-extraction-scores) | A model-provided indicator associated with extracted content. It needs comparison with labeled examples before being used as a quality threshold. |
+| [Null value](#parse-the-actual-return-contract-and-evaluate-extraction-scores) | A marker for a missing or unknown value. Count and comparison operations may treat it differently from a supplied zero. |
+| [Restartable pipeline](#build-a-restartable-governed-pipeline) | A workflow that records completed steps and output identities so it can resume after interruption without republishing partial results. |
+| [Quarantine](#build-a-restartable-governed-pipeline) | Retaining rejected records and rejection reasons separately so they can be investigated without contaminating trusted outputs. |
+| [Warehouse size](#build-a-restartable-governed-pipeline) | The compute capacity selected for a virtual warehouse, influencing available resources, runtime and credit usage. |
+| [Dynamic table](#build-a-restartable-governed-pipeline) | A table maintained from a defining query under a target-lag policy, subject to refresh capabilities and dependencies. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Reconciliation](#hands-on-evidence-labs) | Comparing source and target results for the same scope, such as record counts and amounts in a given business day. |
+| [Privilege](#hands-on-evidence-labs) | A grant for a specified action or capability on an object or at an account scope. |
+
 ## Places to learn
 
 This is not a complete list, and it is not meant to be consumed in full. Start with the official scope and one practical route, then target gaps. Public pages and the actual five-page training PDF were checked October 28, 2026. Learning estimates below are ours unless explicitly identified as provider duration. Public metadata does not establish lesson quality or complete exam coverage.

@@ -13,7 +13,9 @@ upcoming_change_checked: 2026-10-28
 
 # SC-200 Microsoft Security Operations Analyst Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-02.md#sc-200) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sc-200-coverage-record). Source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-04.md#sc-200)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-02.md#sc-200) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sc-200-coverage-record). Source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200) is authoritative.
 
 **Current baseline:** Skills measured as of October 21, 2026.<br>
 **Exam state:** Active; the official credential page lists no retirement date.<br>
@@ -166,6 +168,8 @@ Keep the two runtime identities separate: Sentinel needs permission to invoke th
 ### Configure the Sentinel SIEM and platform
 
 #### Choose portal and workspace boundaries
+
+**Practice check.** A Defender portal deployment connects one Microsoft Entra tenant to a primary Sentinel workspace and can also connect secondary workspaces. When only one workspace exists, it becomes primary. Record the primary workspace before assigning connectors that depend on it. [Connect Microsoft Sentinel to the Microsoft Defender portal | Microsoft Learn](https://learn.microsoft.com/en-us/unified-secops/microsoft-sentinel-onboard)
 
 Sentinel is integrated into the Microsoft Defender portal for unified operations with Defender XDR. Know the current capability boundary and migration prerequisites. Microsoft has announced that [Sentinel support in the Azure portal ends after March 31, 2027](https://learn.microsoft.com/en-us/azure/sentinel/microsoft-sentinel-defender-portal), so prefer current Defender-portal workflows while recognizing that some configuration or edit experiences may still link to Azure.
 
@@ -785,7 +789,70 @@ These are original study questions, not recalled exam content.
 
 
 
+## Key terms and phrases
+
+**Manage a security operations environment**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Attack surface reduction (ASR) rule](#endpoint-advanced-features-rule-settings-custom-collection-and-asr) | An endpoint control that restricts a class of risky behavior under a configured enforcement mode. |
+| [Endpoint detection and response (EDR)](#endpoint-advanced-features-rule-settings-custom-collection-and-asr) | Monitoring and investigation of endpoint behavior with controls for supported containment and response actions. |
+| [Automated investigation and response (AIR)](#air-automatic-attack-disruption-and-device-automation-scope) | A Defender capability that investigates alerts and proposes or takes remediation actions according to configured automation levels. |
+| [Attack disruption](#air-automatic-attack-disruption-and-device-automation-scope) | An automated containment capability that correlates strong signals and acts on affected assets to limit further harm. |
+| [Playbook](#engineer-sentinel-automation-safely) | An automated response workflow that can take a defined series of actions when an incident meets specified conditions. |
+| [Automation rule](#engineer-sentinel-automation-safely) | A Sentinel rule that coordinates incident-handling tasks and can invoke a playbook under configured conditions. |
+| [Security information and event management (SIEM)](#choose-portal-and-workspace-boundaries) | Collecting and analyzing logs across systems to detect and investigate security events. |
+| [Log Analytics workspace](#choose-portal-and-workspace-boundaries) | A destination for collected logs where operators can run queries and investigate events. |
+| [Retention period](#understand-analytics-data-lake-xdr-basicauxiliary-and-long-term-data) | How long telemetry remains accessible under its table and storage configuration. |
+| [Workbook](#build-decision-oriented-workbooks) | A parameterized Azure visualization that combines queries and charts to answer an operational question. |
+| [Data connector](#select-connectors-by-evidence-requirements) | An integration that supplies a particular source of security telemetry to Microsoft Sentinel. |
+| [Data collection rule (DCR)](#windows-security-events-via-ama-and-wef) | An Azure Monitor definition that specifies which events to collect and where to send them. |
+| [Azure Monitor Agent (AMA)](#windows-security-events-via-ama-and-wef) | The agent that collects selected data from monitored machines under data collection rules. |
+| [Windows Event Forwarding (WEF)](#windows-security-events-via-ama-and-wef) | A Windows mechanism for forwarding selected events from source machines to an event collector. |
+| [Security event selection](#windows-security-events-via-ama-and-wef) | A collection decision determining which event IDs or event sets reach the workspace and how ingestion costs are bounded. |
+| [Common Event Format (CEF)](#syslog-and-cef-via-ama) | A structured security event format that devices can forward for centralized ingestion and analysis. |
+| [Syslog](#syslog-and-cef-via-ama) | A protocol and message convention for forwarding system or device events to a logging service. |
+| [Threat indicator](#threat-intelligence-and-custom-tables) | An observable such as a domain or file hash with associated intelligence and validity context for defensive correlation. |
+| [Custom detection](#defender-xdr-custom-detection-rules) | A detection authored from an appropriate query and schedule to identify matching activity and raise security findings. |
+| [Detection entity mapping](#defender-xdr-custom-detection-rules) | Associating fields returned by a rule with recognized entities such as an account, host or IP address. |
+| [Analytics rule](#sentinel-analytics-rule-types) | A Sentinel detection definition that evaluates ingested data and can produce alerts under specified conditions. |
+| [Scheduled analytics rule](#sentinel-analytics-rule-types) | A Sentinel rule that runs a query periodically over a defined lookback window. |
+| [Lookback period](#sentinel-analytics-rule-types) | The amount of prior event time a scheduled rule searches on each execution. |
+
+**Respond to security incidents**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Alert](#use-a-disciplined-investigation-loop) | A detection signal requiring investigation, which may contribute to a wider incident. |
+| [Investigation hypothesis](#use-a-disciplined-investigation-loop) | A specific, testable explanation of observed activity that guides searches for supporting and contradictory evidence. |
+| [Entity](#investigate-through-microsoft-defender-xdr) | An object involved in a security case, such as a user account, host, IP address or file. |
+| [Extended detection and response (XDR)](#investigate-through-microsoft-defender-xdr) | Correlating detections and response actions across security products, such as endpoint, identity and email protection. |
+| [Investigation graph](#investigate-through-microsoft-defender-xdr) | A visual representation of related entities and evidence used to examine relationships in a case. |
+| [Data loss prevention (DLP)](#microsoft-purview) | Policies that recognize sensitive information and govern actions such as sharing or transferring it. |
+| [User risk](#microsoft-entra-id-and-defender-for-identity) | An assessment of the likelihood that a user's identity itself has been compromised. |
+| [Sign-in risk](#microsoft-entra-id-and-defender-for-identity) | An assessment of the likelihood that a particular authentication request came from someone other than the legitimate user. |
+| [Incident](#microsoft-sentinel-incidents) | A case that groups related alerts and entities so an analyst can investigate and coordinate a response. |
+| [Incident classification](#manage-the-incident-as-a-case) | The investigator's disposition of a case, such as a true positive or false positive, recorded separately from its workflow status. |
+| [Incident severity](#manage-the-incident-as-a-case) | An urgency or impact rating used to prioritize a case, updated as stronger evidence becomes available. |
+| [Device isolation](#device-actions-and-live-response) | A containment action that restricts an endpoint's network communication to limit spread while preserving supported management paths. |
+| [Investigation package](#device-actions-and-live-response) | A set of collected endpoint diagnostics used to inspect a machine's state and activity. |
+| [Audit record](#purview-audit) | A logged account of a workload action used to reconstruct who acted, when and on what object. |
+| [eDiscovery](#ediscovery-content-search) | A process for finding, preserving and reviewing information needed for a legal or investigative matter. |
+
+**Perform threat hunting**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Kusto Query Language (KQL)](#select-the-right-kql-schema-and-operators) | The tabular query language used to filter, join and summarize telemetry for investigation and hunting. |
+| [Time window](#select-the-right-kql-schema-and-operators) | The interval of events queried, which should account for ingestion delay and the scope of the investigation. |
+| [Join](#select-the-right-kql-schema-and-operators) | A query operation that matches records from two tables by specified keys to correlate evidence. |
+| [Hunting bookmark](#hunting-queries-hunts-bookmarks-and-livestream) | A saved finding from a hunting query that preserves relevant results and context for later investigation. |
+| [Threat hunting](#hunting-queries-hunts-bookmarks-and-livestream) | Proactive investigation of telemetry under a stated hypothesis to identify activity that alerts may not have captured. |
+| [Hunt](#hunting-queries-hunts-bookmarks-and-livestream) | A tracked investigation that organizes a hypothesis, queries, observations and the analyst's conclusion. |
+
 ## Places to learn
+
+**Suggested practice.** Use two small, synthetic event tables to reason through a time filter and join key; predict how repeating a key could inflate a result count. About 20–40 minutes to read the selected sections and produce the suggested comparison or checklist (editorial estimate; full path duration was not verified). [Create queries for Microsoft Sentinel using Kusto Query Language (KQL)](https://learn.microsoft.com/en-us/training/paths/sc-200-utilize-kql-for-azure-sentinel/)
 
 This is a curated starting point, not a complete list. Do **not** try to consume every resource. Pick a primary path that fits how you learn, use documentation and labs for weak areas, and use assessments to decide what to revisit. Verify every course against the October 21, 2026 blueprint—especially data-lake tiers/jobs, Sentinel Graph, agentic investigation, embedded Security Copilot, and Sentinel MCP Server.
 

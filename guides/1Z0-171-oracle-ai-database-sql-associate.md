@@ -117,6 +117,96 @@ The current path highlights `SELECT` without `FROM`, SQL `BOOLEAN`, enhanced `DE
 - I create schema objects and privileges without relying on administrator shortcuts.
 - I can explain version-sensitive 26ai syntax and verify compatibility.
 
+## Key terms and phrases
+
+**Relational model and SELECT processing**
+
+| Term or phrase | Meaning |
+|---|---|
+| [NULL](#1-relational-model-and-select-processing) | A marker for a missing or unknown value. An ordinary equality comparison with NULL evaluates to unknown. |
+| [Projection](#1-relational-model-and-select-processing) | Selecting the fields or calculated expressions to return from a query. Fewer output fields can reduce data transfer. |
+| [ORDER BY](#1-relational-model-and-select-processing) | The clause specifying result presentation order. Without it, callers should not rely on an observed row sequence. |
+| [DISTINCT](#1-relational-model-and-select-processing) | An operation removing duplicate selected row values from a query result. |
+
+**Expressions, functions, and conversion**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Format model](#2-expressions-functions-and-conversion) | A pattern that tells Oracle how to parse a text representation of a date or number, or how to display a typed value. |
+| [Data type](#2-expressions-functions-and-conversion) | The representation and operations a field supports. For example, a text identifier with leading zeros may lose meaning if converted to an integer. |
+| [Implicit conversion](#2-expressions-functions-and-conversion) | A type conversion performed automatically by the database, which can depend on settings and make queries less predictable. |
+
+**Aggregation and analytical summaries**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Aggregate function](#3-aggregation-and-analytical-summaries) | A calculation over a group of rows that returns one result for that group, such as a sum or count. |
+| [HAVING clause](#3-aggregation-and-analytical-summaries) | A filter applied to grouped results. After grouping orders by customer, `HAVING COUNT(*) >= 3` keeps customers with at least three orders. |
+| [Aggregation](#3-aggregation-and-analytical-summaries) | Combining a group of records into a summary such as count, sum or average, at a declared grouping level. |
+| [WHERE clause](#3-aggregation-and-analytical-summaries) | The condition applied to individual rows before grouping, useful for excluding inputs before aggregation. |
+| [ROLLUP](#3-aggregation-and-analytical-summaries) | A grouping operation that produces progressively broader subtotals along an ordered grouping list. |
+| [CUBE](#3-aggregation-and-analytical-summaries) | A grouping operation producing subtotal combinations across the chosen grouping dimensions. |
+| [GROUPING SETS](#3-aggregation-and-analytical-summaries) | An explicit specification of the grouping combinations whose aggregates the query should return. |
+
+**Joins, subqueries, and set operators**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Outer join](#4-joins-subqueries-and-set-operators) | A join that also retains unmatched rows from the designated side, filling in NULL for columns from the missing match. |
+| [Correlated subquery](#4-joins-subqueries-and-set-operators) | A nested query that refers to a value from an outer query and whose result depends on that outer context. |
+| [Predicate](#4-joins-subqueries-and-set-operators) | A condition used to decide which records match a query or qualify for a transformation. |
+| [Cardinality](#4-joins-subqueries-and-set-operators) | The number of members in the set being considered, such as distinct values of a field or rows in a query result. |
+| [Join](#4-joins-subqueries-and-set-operators) | Combining records from multiple inputs according to a matching condition. A repeated key can yield more rows than either input leads you to expect. |
+| [Self join](#4-joins-subqueries-and-set-operators) | Using the same table in two query roles, such as relating employees to their managers. |
+| [Cross join](#4-joins-subqueries-and-set-operators) | Combining every row of one input with every row of the other. Two rows matched to three by a cross join produce six. |
+| [EXISTS](#4-joins-subqueries-and-set-operators) | A condition that tests whether a subquery returns at least one qualifying row. |
+| [Set operator](#4-joins-subqueries-and-set-operators) | An operation combining compatible query results according to rules such as union, intersection or difference. |
+
+**Objects, constraints, and transactions**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Savepoint](#5-objects-constraints-and-transactions) | A named position within a transaction to which uncommitted changes can be partially rolled back. |
+| [View](#5-objects-constraints-and-transactions) | A named query through which consumers see data in a defined shape. A conventional logical view reads its inputs when queried. |
+| [Constraint](#5-objects-constraints-and-transactions) | A stated rule for acceptable records or relationships. Whether a particular constraint is enforced depends on the database and object type. |
+| [Index](#5-objects-constraints-and-transactions) | An auxiliary structure organizing keys for faster lookup or ordered access, with a corresponding cost for maintenance and storage. |
+| [Transaction](#5-objects-constraints-and-transactions) | A group of database operations whose changes are committed together or discarded together within the guarantees of the database. |
+| [Rollback](#5-objects-constraints-and-transactions) | Returning to an earlier state after a failed change. For a database transaction, this discards eligible uncommitted work. |
+| [Commit](#5-objects-constraints-and-transactions) | Completing a transaction so its changes become durable under the database’s configured guarantees. |
+| [MERGE](#5-objects-constraints-and-transactions) | An operation combining source and target matching with configured actions such as updating matches or inserting missing rows. |
+| [Check constraint](#5-objects-constraints-and-transactions) | A condition declared on a table to restrict acceptable data under the database’s constraint rules. |
+
+**Advanced retrieval and flashback**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Flashback query](#6-advanced-retrieval-and-flashback) | A query of an eligible earlier version of data, subject to the database’s available history and permissions. |
+| [Data retention](#6-advanced-retrieval-and-flashback) | How long data or recoverable history is kept before removal under an explicit operational or governance policy. |
+| [Hierarchical query](#6-advanced-retrieval-and-flashback) | A query traversing parent-child relationships from a starting set, with explicit handling of direction and possible cycles. |
+
+**Security and 26ai features**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Oracle schema](#7-security-and-26ai-features) | The collection of database objects owned by a database user. Qualifying a table name with its schema identifies which owner’s table a query references. |
+| [System privilege](#7-security-and-26ai-features) | A grant authorizing a class of database actions, such as creating eligible objects within its scope. |
+| [Role](#7-security-and-26ai-features) | A named grouping of privileges used to assign related access consistently. |
+| [Schema object](#7-security-and-26ai-features) | A named object belonging to a schema, such as a table, view or index. |
+
+**Original readiness checks**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Foreign key](#original-readiness-checks) | A field or combination of fields referencing a key in a related table, expressing how rows between the tables correspond. |
+| [Scalar subquery](#original-readiness-checks) | A subquery used as a single value, subject to its row and column cardinality rules. |
+| [Deduplication](#answer-guide) | Recognizing repeated representations of the same event or business entity under a defined key and selection rule. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Grouping key](#hands-on-labs) | A field or expression that determines which records contribute to the same aggregate result. |
+
 ## Places to learn
 
 This is a selective learning path, not a complete list of Oracle SQL resources.

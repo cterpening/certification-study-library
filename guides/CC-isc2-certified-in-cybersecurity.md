@@ -429,6 +429,86 @@ These original answered study prompts are not exam questions. Explain each answe
 47. **Does AI guidance create a new weighted CC domain?** No. It supplies context across the existing five domains, including bot identities, dependencies, drift and validated triage.
 48. **What remains unproven by this guide?** Real identity/network/cloud/incident/forensic/sanitization behavior, production recovery, paid course quality and independent human review.
 
+## Key terms and phrases
+
+**Security Principles**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Confidentiality](#protect-the-right-property) | Restricting disclosure of information to authorized parties. A file can lose confidentiality even if its contents are unchanged. |
+| [Integrity](#protect-the-right-property) | Protection against improper changes to data or systems, including accidental alterations. |
+| [Availability](#protect-the-right-property) | The ability of authorized users to reach and use a resource when needed. |
+| [Accounting](#protect-the-right-property) | Recording access or use so activity can be attributed and reviewed, complementing authentication and authorization. |
+| [Authorization](#protect-the-right-property) | The decision about what a verified identity may do to a resource under the applicable policy. |
+| [Digital signature](#protect-the-right-property) | A cryptographic value produced with a private key and checked with its corresponding public key to authenticate signed data and detect alteration. |
+| [Authenticity](#protect-the-right-property) | Confidence that an entity, message or artifact is what it claims to be, based on an appropriate means of verification. |
+| [Inherent risk](#reason-about-risk-and-controls) | Exposure assessed before considering the effect of controls. |
+| [Separation of duties](#reason-about-risk-and-controls) | Splitting incompatible responsibilities so one person cannot complete a sensitive operation without independent involvement. |
+| [Vulnerability](#reason-about-risk-and-controls) | A weakness in design, configuration, process or implementation that can affect a security objective under applicable conditions. |
+| [Security policy](#connect-governance-documents-and-conduct) | A statement of organizational intent and authority that guides decisions. A procedure describes how to carry out a task. |
+| [Due care](#connect-governance-documents-and-conduct) | Taking reasonable protective action given the circumstances, such as putting an appropriate safeguard into operation. |
+| [Due diligence](#connect-governance-documents-and-conduct) | The investigation and ongoing verification used to understand obligations, evaluate risk and confirm that safeguards remain suitable. |
+| [Evidence preservation](#connect-governance-documents-and-conduct) | Maintaining the integrity and provenance of information needed for investigation, including original timestamps, collection method and access history. |
+
+**Security Governance**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Exception](#plan-grc-as-an-accountable-system) | An authorized, bounded deviation from an established requirement. The owner, scope, compensating measures and expiry make it reviewable. |
+| [Metrics](#plan-grc-as-an-accountable-system) | Numerical time series used to quantify behavior such as latency, error rate or capacity. Aggregation and labels determine what the values represent. |
+| [Business continuity](#preserve-business-service-through-disruption) | Maintaining essential business functions through disruption, including people and workarounds as well as technology. |
+| [Maximum tolerable downtime (MTD)](#preserve-business-service-through-disruption) | The longest interruption the business can tolerate before the impact becomes unacceptable. Restoration targets need to leave time for business recovery. |
+| [Recovery point objective (RPO)](#preserve-business-service-through-disruption) | The targeted maximum loss of recent data, expressed as a period before the disruption. |
+| [Recovery time objective (RTO)](#preserve-business-service-through-disruption) | The targeted time to restore a usable service, including the dependencies that service needs. |
+| [Privileged access management (PAM)](#build-awareness-and-measure-it) | Controls for powerful accounts and sensitive actions, commonly including approval, short-lived access, credential protection and session auditing. |
+| [Security awareness](#build-awareness-and-measure-it) | Activities that help people recognize security situations and act appropriately. Behavioral outcomes give stronger feedback than attendance alone. |
+
+**Identity and Access Management Concepts**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Deprovisioning](#manage-the-whole-identity-lifecycle) | Removing accounts or entitlements when a person leaves or their duties change. |
+| [Identity lifecycle](#manage-the-whole-identity-lifecycle) | The processes that grant, change and remove access as people join, change duties and leave. A role change should also remove incompatible old permissions. |
+| [Identity provider (IdP)](#manage-the-whole-identity-lifecycle) | The service that authenticates an identity and makes assertions or issues tokens that a relying service can validate. |
+| [Multifactor authentication (MFA)](#manage-the-whole-identity-lifecycle) | Authentication using factors from two or more categories. A password and a second password both use the same knowledge factor. |
+| [Authentication](#distinguish-strong-authentication-from-a-policy-slogan) | Checking that a claimant controls an authenticator bound to the claimed identity. It precedes the separate decision about permitted actions. |
+| [Phishing-resistant authentication](#distinguish-strong-authentication-from-a-policy-slogan) | Authentication designed to prevent an impostor service from reusing the proof supplied for a legitimate service, such as a credential bound to the correct origin. |
+| [Least privilege](#apply-logical-access-control-principles-and-models) | Granting an identity only the access needed for its assigned work. |
+| [Attribute-based access control (ABAC)](#apply-logical-access-control-principles-and-models) | Evaluating attributes of the requester, resource, action or environment against a policy, such as permitting access only from managed devices. |
+| [Role-based access control (RBAC)](#apply-logical-access-control-principles-and-models) | Assigning permissions to roles and assigning identities to those roles. An inappropriate role assignment can grant every permission the role carries. |
+
+**Networking and Cloud Security Concepts**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Transmission Control Protocol (TCP)](#trace-the-path-before-naming-the-control) | A connection-oriented transport that provides an ordered byte stream and retransmits missing data while the connection can be maintained. |
+| [User Datagram Protocol (UDP)](#trace-the-path-before-naming-the-control) | A datagram transport that adds port addressing with no built-in guarantee of delivery or order. Applications decide what reliability they need. |
+| [Failure domain](#layer-architecture-and-zero-trust) | A set of components that can fail together, such as workloads sharing a physical host, power source or region. |
+| [Zero Trust](#layer-architecture-and-zero-trust) | An access model that evaluates requests using identity, resource and context without assuming access is safe solely because it originated on an internal network. |
+| [Shared responsibility](#understand-cloud-responsibility) | The allocation of security duties between the cloud provider and the customer for the service in use. |
+| [Elasticity](#understand-cloud-responsibility) | The ability to expand and contract resources in response to demand. It depends on available capacity, policy and workload design. |
+| [Multicloud](#understand-cloud-responsibility) | Use of services from multiple cloud providers. Common objectives can require different identities, APIs or controls in each provider. |
+
+**Security Operations and Incident Response**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Asymmetric cryptography](#protect-data-and-assets-through-their-lifecycle) | Cryptography using mathematically related public and private keys, enabling operations such as signature verification or exchange of protected data. |
+| [Hash](#protect-data-and-assets-through-their-lifecycle) | A fixed-size digest derived from input data. Comparing a file’s digest to a trusted reference can detect modification without revealing who modified it. |
+| [Symmetric encryption](#protect-data-and-assets-through-their-lifecycle) | Encryption in which the same secret key is used to encrypt and decrypt. Secure sharing and storage of the key are essential. |
+| [Encryption](#distinguish-sanitization-and-cryptographic-purposes) | Reversibly transforming data with a key to keep the plaintext unavailable to parties lacking the appropriate decryption capability. |
+| [Incident triage](#triage-events-with-evidence-and-context) | Assessing an observed event in context to decide whether it requires escalation and how urgently to respond. |
+| [Incident](#triage-events-with-evidence-and-context) | A case representing a security event or set of related events requiring coordinated investigation and response. |
+| [Threat intelligence](#triage-events-with-evidence-and-context) | Assessed information about adversary activity or indicators, with source, context and freshness to guide a decision. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Snapshot](#scenario-2-a-backup-restores-but-misses-business-recovery-needs) | A point-in-time representation of a resource. Its independence, consistency and recovery scope depend on the underlying service. |
+| [Timestamp](#scenario-2-a-backup-restores-but-misses-business-recovery-needs) | A recorded time associated with an event. Distinguish source event time from collection or indexing time when building a timeline. |
+| [Data model](#hands-on-evidence-labs) | A definition of data structure, relationships and allowed values that lets producers and consumers interpret records consistently. |
+
 ## Places to learn
 
 This is not a complete list, and it is not meant to be consumed in full. Choose a route after mapping the September 2026 objectives, then close gaps with current primary guidance and authorized exercises. Public sources were checked September 29, 2026. Study times below are our estimates unless stated otherwise; public metadata does not establish paid lesson quality or complete exam coverage.

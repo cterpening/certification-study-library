@@ -1,6 +1,8 @@
 from pathlib import Path
 import sys
+from tempfile import TemporaryDirectory
 import unittest
+from unittest.mock import patch
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -170,6 +172,53 @@ class SitePreparationTests(unittest.TestCase):
             prepare_site.PUBLIC_DOCUMENTS,
         )
 
+    @patch.object(prepare_site, "exam_context")
+    def test_stages_only_embedded_svg_at_its_guide_relative_path(self, load_context) -> None:
+        with TemporaryDirectory() as temp:
+            root = Path(temp).resolve()
+            docs_dir = root / ".site-build/docs"
+            folder = root / "guides/diagrams/gh-999"
+            folder.mkdir(parents=True)
+            svg = folder / "request-flow.svg"
+            svg.write_text("<svg/>", encoding="utf-8")
+            spec = svg.with_suffix(".json")
+            spec.write_text("{}", encoding="utf-8")
+            (folder / "unpublished.svg").touch()
+            embed = r"![An event reaches the handler \[example\]](diagrams/gh-999/request-flow.svg)"
+            guide = "\n".join((
+                "---", "![Metadata](diagrams/gh-999/absent.svg)", "---",
+                "````markdown", "```", "![Example](diagrams/gh-999/absent.svg)", "````",
+                "~~~", "![Example](diagrams/gh-999/absent.svg)", "~~~",
+                "<!-- Draft", "![Example](diagrams/gh-999/unpublished.svg)", "-->",
+                "    ![Indented code](diagrams/gh-999/absent.svg)", embed, embed,
+            ))
+            with patch.object(prepare_site, "build_diagram") as check:
+                published = prepare_site.stage_guide_diagrams(root, docs_dir, self.exams[0], guide)
+
+            self.assertEqual(published, ["guides/diagrams/gh-999/request-flow.svg"])
+            self.assertEqual((docs_dir / published[0]).read_bytes(), svg.read_bytes())
+            self.assertEqual([p.name for p in (docs_dir / published[0]).parent.iterdir()], [svg.name])
+            load_context.assert_called_once_with("gh-999", root)
+            check.assert_called_once_with(spec, check=True, root=root, context=load_context.return_value)
+
+            with patch.object(prepare_site, "build_diagram", side_effect=ValueError("stale SVG")):
+                new_output = root / "next-build/docs"
+                with self.assertRaisesRegex(ValueError, "stale SVG"):
+                    prepare_site.stage_guide_diagrams(root, new_output, self.exams[0], guide)
+                self.assertFalse(new_output.exists())
+
+    def test_rejects_invalid_diagram_paths_and_empty_alt(self) -> None:
+        examples = [
+            "![Trace](diagrams/gh-900/request-flow.svg)",
+            "![Trace](diagrams/gh-999/../private.svg)",
+            "![Trace](diagrams/gh-999/request-flow.json)",
+            "![](diagrams/gh-999/request-flow.svg)",
+        ]
+        with TemporaryDirectory() as temp:
+            for embed in examples:
+                with self.subTest(embed=embed), self.assertRaisesRegex(ValueError, "Invalid diagram embed"):
+                    prepare_site.stage_guide_diagrams(Path(temp), Path(temp), self.exams[0], embed)
+
     def test_yaml_string_quotes_punctuation(self) -> None:
         self.assertEqual(prepare_site.yaml_string("A: B"), '"A: B"')
 
@@ -233,6 +282,16 @@ exam_code: GH-999
         self.assertIn("Report an issue with GH-999", prepared)
         self.assertIn("Example prerequisites.", prepared)
         self.assertIn("Explain examples", prepared)
+        self.assertNotIn('href="#key-terms-and-phrases"', prepared)
+        with_terms = prepare_site.prepare_guide_markdown(
+            guide + "\n## Key terms and phrases\n", self.exams[0]
+        )
+        self.assertIn('href="#key-terms-and-phrases"', with_terms)
+        self.assertNotIn("Listen to the", prepared)
+        for code, anchor in (("AZ-900", "azure-fundamentals-az-900"), ("DP-900", "azure-data-fundamentals-dp-900")):
+            with self.subTest(code=code):
+                podcast_guide = prepare_site.render_guide_start({**self.exams[0], "code": code}, guide)
+                self.assertIn(f'href="../../examples/podcasts/#{anchor}"', podcast_guide)
 
 
 if __name__ == "__main__":

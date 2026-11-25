@@ -7,16 +7,18 @@ generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: review-required
 last_verified: 2026-10-28
-upcoming_change_status: none-announced
-upcoming_change_checked: 2026-10-28
+upcoming_change_status: scheduled
+upcoming_change_checked: 2026-11-20
 ---
 
 # AB-410 Building Intelligent Applications Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-05.md#ab-410) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-410-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-410) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-01.md#ab-410)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-05.md#ab-410) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-410-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-410) is authoritative.
 
 **Current baseline:** Official study guide last updated October 16, 2026; Microsoft does not publish a separate skills-effective date on this blueprint. The 48 detailed objectives match the accepted objective wording.<br>
-**Upcoming blueprint change:** None announced on the official study guide as of October 28, 2026.<br>
+**Upcoming English outline — December 18, 2026.** Use the current objective map for preparation before that date. Check the language and version for your appointment. The [November source notes](../docs/research/2026-11-20-microsoft-refresh-group-01.md#ab-410) identify the announced edition and its domain weights.<br>
 **Lifecycle:** The 120-minute exam, currently listed in 13 languages, and [Intelligent Applications Builder Associate credential](https://learn.microsoft.com/en-us/credentials/certifications/intelligent-applications-builder-associate/) are active. The adjacent Power Platform Functional Consultant Associate credential [retired August 31, 2026](https://learn.microsoft.com/en-us/credentials/support/credential-retirement); Microsoft's [retired-course catalog](https://learn.microsoft.com/en-us/credentials/certifications/retired-courses) names AB-410T00 as the replacement for the retired PL-200T00 course, not as a one-to-one replacement statement for every PL-200 credential outcome.<br>
 **Official source:** [AB-410 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-410)
 
@@ -90,7 +92,7 @@ An environment separates apps, flows, connections, agents, and usually a Dataver
 - Use production for durable business workloads with operating ownership, security, capacity, backup, and release controls.
 - Treat trial as temporary and expiry-bound.
 - Treat the tenant default environment as broadly accessible personal productivity space, not the automatic home for a critical application.
-- For new Teams-integrated work, choose an appropriate full Dataverse environment and add the app to Teams. **VERIFY CURRENT — October 28, 2026:** the [Power Platform deprecation ledger](https://learn.microsoft.com/en-us/power-platform/important-changes-coming) ends creation of new Dataverse for Teams environments on **November 15, 2026**. Existing environments that remain unupgraded are suspended **September 15, 2027** and decommissioned **October 30, 2027**. Inventory existing apps/data and plan an upgrade or supported move, including capacity and user licensing, before the applicable cutoff.
+- Microsoft ended creation of new Dataverse for Teams environments November 15, 2026. For existing environments, the published schedule suspends those still awaiting upgrade on September 15, 2027 and decommissions them October 30, 2027. [Power Platform deprecation ledger](https://learn.microsoft.com/en-us/power-platform/important-changes-coming)
 
 Recommend the type together with region/data residency, security group, Dataverse requirement, capacity, licensing, DLP, managed-environment rules, backup/recovery, release ring, and maker/admin ownership. Environment roles do not automatically grant Dataverse data access; Dataverse security must be designed separately.
 
@@ -130,6 +132,8 @@ The [table authoring procedure](https://learn.microsoft.com/en-us/power-apps/mak
 Check schema and row access separately: a customizer can author metadata without access to every customer record. Evidence is the saved column types/properties, correct lookup cardinality and actual nonadministrator data access, not the diagram alone.
 
 ### Distinguish prompt columns, row summaries, and deterministic columns
+
+**Practice check.** A Dataverse prompt column persists its generated value. An architect evaluating retention or access should examine the stored row as well as the prompt invocation. Verify environment-level Copilot and AI Prompts settings and the applicable AI Builder licensing before designing the exercise. [Prompt columns in Microsoft Dataverse - Power Apps | Microsoft Learn](https://learn.microsoft.com/en-us/power-apps/maker/data-platform/prompt-column)
 
 A prompt column uses generative AI to produce content from its configured instructions and row context. A row summary produces an AI-generated summary of the record. Both are probabilistic: source data can be incomplete or malicious, output can be wrong, and behavior can change. Define what input is included, who may see the source and output, when generation occurs, how stale output is handled, and whether a user must verify it.
 
@@ -534,7 +538,69 @@ If an answer is only a feature name, deepen it: state the requirement, data, ide
 
 ---
 
+## Key terms and phrases
+
+**Create a foundation for intelligent applications**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Environment](#recommend-an-environment-and-governance-boundary) | A managed boundary containing an application's Dataverse data, apps, flows and security configuration. |
+| [Application lifecycle management (ALM)](#apply-a-solution-and-alm-strategy) | The practices used to version, test, promote and maintain a solution across environments. |
+| [Environment variable](#apply-a-solution-and-alm-strategy) | A named deployment setting whose value can differ by environment while the solution logic stays reusable. |
+| [Connection reference](#apply-a-solution-and-alm-strategy) | A solution component that lets an integration bind to a connection appropriate to the target environment. |
+| [Dataverse relationship](#build-a-dataverse-model-from-business-meaning) | A defined association between business records, such as one customer having many service requests. |
+| [Dataverse table](#build-a-dataverse-model-from-business-meaning) | A definition of a business entity's records, columns and relationships. |
+| [Primary key](#build-a-dataverse-model-from-business-meaning) | The identifier that uniquely distinguishes each record in a table. |
+| [Lookup column](#build-a-dataverse-model-from-business-meaning) | A column that refers to a row in another table, such as a request's assigned customer. |
+| [Prompt column](#distinguish-prompt-columns-row-summaries-and-deterministic-columns) | A column whose value is generated from instructions and record context, so the result may need freshness and quality checks. |
+| [Calculated column](#distinguish-prompt-columns-row-summaries-and-deterministic-columns) | A column whose value is derived according to a defined expression over supported inputs. |
+| [Rollup column](#distinguish-prompt-columns-row-summaries-and-deterministic-columns) | A column containing an aggregate over related records whose recalculation timing affects freshness. |
+| [Row summary](#distinguish-prompt-columns-row-summaries-and-deterministic-columns) | A generated synopsis of a record intended to help someone understand its contents. |
+| [Security role](#configure-dataverse-security-as-layered-authorization) | A defined set of privileges controlling allowed actions and access depth in Dataverse. |
+| [Record sharing](#configure-dataverse-security-as-layered-authorization) | Granting another user or team access to a specific record within the applicable security model. |
+| [Business unit](#configure-dataverse-security-as-layered-authorization) | A Dataverse organizational boundary used with roles and ownership to scope access. |
+| [Owner team](#configure-dataverse-security-as-layered-authorization) | A Dataverse team that can own records and receive security roles. |
+
+**Create intelligent applications**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Model-driven app](#build-a-model-driven-app-from-the-data-model) | An application whose navigation, forms and views are built around a Dataverse data model. |
+| [Form](#build-a-model-driven-app-from-the-data-model) | The layout and controls used to view or edit an individual Dataverse record. |
+| [View](#build-a-model-driven-app-from-the-data-model) | A saved selection of table columns, filters and sorting for a list of records. |
+| [Canvas app](#build-a-canvas-app-that-remains-usable-and-correct) | An application where the maker controls the screens and uses formulas to bind controls to data and actions. |
+| [Delegation](#build-a-canvas-app-that-remains-usable-and-correct) | Passing a supported query operation to the data source so it can evaluate the full relevant data set. |
+| [Gallery](#build-a-canvas-app-that-remains-usable-and-correct) | A canvas app control that repeats a layout for each record in its data source. |
+| [Patch](#worked-build-data-selection-and-a-verified-save) | A Power Fx operation that creates or updates selected fields of a record through a connected source. |
+| [Power Fx](#reuse-formulas-and-components-deliberately) | The formula language used to express calculations and interactions in Power Apps. |
+| [Component](#reuse-formulas-and-components-deliberately) | A reusable unit of interface or behavior that can be shared across screens or applications. |
+| [Flow response](#automate-from-the-app-and-handle-failures) | The structured success or failure information a cloud flow returns to the calling app. |
+
+**Build business application logic and automation**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Flow trigger](#choose-the-cloud-flow-trigger-and-connection-model) | The event, schedule or direct request that starts a cloud flow and supplies its initial inputs. |
+| [Connection](#choose-the-cloud-flow-trigger-and-connection-model) | An authenticated binding to a service through which a flow's actions operate. |
+| [Approval](#compose-reliable-flow-control-and-approvals) | A flow step that asks designated people to record a decision before subsequent actions continue. |
+| [Run-after condition](#compose-reliable-flow-control-and-approvals) | A flow setting specifying which outcomes of a preceding action allow a later action to run. |
+| [Idempotency](#worked-example-3-deduplicate-a-business-operation-not-just-a-row) | Designing an operation so processing the same request again does not repeat its business effect. |
+| [Idempotency key](#worked-example-3-deduplicate-a-business-operation-not-just-a-row) | An identifier for one intended operation that lets a service recognize a retry and avoid applying the effect twice. |
+| [Timeout](#worked-example-4-separate-interactive-and-business-deadlines) | The time limit after which an app interaction or background process must stop waiting or choose a recovery path. |
+| [Prompt](#build-a-prompt-as-a-governed-input-output-contract) | A reusable set of instructions, inputs and output expectations for an AI task in an application. |
+| [Output contract](#build-a-prompt-as-a-governed-input-output-contract) | The expected fields, types and validation rules for a generated result consumed by an app or flow. |
+| [Ground truth](#use-ai-models-where-their-task-and-evidence-fit) | The expected labels, answers or outcomes used to judge model behavior on the evaluation set. |
+| [Optical character recognition (OCR)](#worked-build-consume-an-ocr-model-through-both-surfaces) | The extraction of readable text from an image or scanned page, before field interpretation or business validation. |
+| [Confidence score](#worked-build-consume-an-ocr-model-through-both-surfaces) | A service's estimated confidence in an extracted value that should be tested against representative ground truth. |
+| [Coverage](#worked-example-5-coverage-and-correctness-are-different-measures) | The proportion of eligible inputs for which the process produced a result, measured separately from correctness. |
+| [Business rule](#select-the-correct-business-logic-surface) | Declarative Dataverse logic for actions such as validating or setting field values under specified conditions. |
+| [Business process flow](#worked-build-a-guided-triage-process) | A guided sequence of stages and steps that helps users perform a business process consistently. |
+| [Stage](#worked-build-a-guided-triage-process) | A named phase of a business process flow that groups related steps for users. |
+| [Aggregation grain](#worked-example-6-an-aggregate-can-be-correct-for-the-wrong-instant) | The business level represented by one summarized result, such as one total per request or per customer. |
+
 ## Places to learn
+
+**Suggested practice.** Choose a business process and use the process-mapping and component-selection units to justify where an agent, flow or user makes each decision. 33 minutes for the module (Microsoft Learn, 7 units). [Design AI-powered business solutions with Microsoft Power Platform](https://learn.microsoft.com/en-us/training/modules/design-ai-powered-solutions-power-platform/)
 
 This is a selective starting set, not a complete list and not a prescription to consume everything. Pick the explanation, demonstration, hands-on practice, and assessment style that works for you. Reconcile every exam-labeled resource with the current official blueprint before investing time or money; the October 16 page update does not publish a new skills-effective date.
 

@@ -546,6 +546,103 @@ Map older material line by line to V7. Rebuild around the current five-domain we
 
 The current official CompTIA V7 snapshot still identifies SY0-701 and records English retirement on June 11, 2027, with Japanese, Portuguese, Spanish, and Thai delivery retiring August 13, 2027. Keep the active V7 map tied to its official page; no V8 effective date or replacement objectives are used here. **Related item:** NIST’s [SP 800-63-4 implementation hub](https://pages.nist.gov/800-63-4/) was announced available October 6. It links the 63A, 63B, and 63C volumes, but its FAQ and conformance criteria still say “Coming Soon” on this check. Use the relevant NIST volume for identity context; do not treat the hub as a CompTIA requirement or a certification/conformance test.
 
+## Key terms and phrases
+
+**Security+ V8 transition preparation**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Triage](#security-v8-transition-preparation) | The first assessment of urgency, reliability, affected scope and next action for an alert or case. |
+
+**General security concepts**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Preventive control](#controls-and-foundational-outcomes) | A safeguard intended to stop unwanted activity before it succeeds. A detective control identifies activity that has occurred or is underway. |
+| [Least privilege](#controls-and-foundational-outcomes) | Assigning only the permissions needed for the user’s task, such as using a standard account for everyday work. |
+| [Nonrepudiation](#controls-and-foundational-outcomes) | Evidence linking an action or message to its origin in a way that supports resolving later disputes. Key control and identity assurance affect its strength. |
+| [Policy enforcement point](#zero-trust-decision-and-enforcement-roles) | The component that applies an access decision to a request or session. |
+| [Device posture](#zero-trust-decision-and-enforcement-roles) | Evidence of the current condition of an endpoint, such as running protection software or encryption status, used as input to an access decision. |
+| [Zero Trust](#zero-trust-decision-and-enforcement-roles) | An access model that evaluates requests using identity, resource and context without assuming access is safe solely because it originated on an internal network. |
+| [Digital signature](#change-and-cryptography) | Cryptographic evidence that data was signed using the corresponding private key and has remained intact. Trust in the signer requires additional checks. |
+| [Asymmetric cryptography](#change-and-cryptography) | Cryptography using mathematically related public and private keys, enabling operations such as signature verification or exchange of protected data. |
+| [Hash](#change-and-cryptography) | A fixed-size digest derived from input data. Comparing a file’s digest to a trusted reference can detect modification without revealing who modified it. |
+| [Symmetric encryption](#change-and-cryptography) | Encryption in which the same secret key is used to encrypt and decrypt. Secure sharing and storage of the key are essential. |
+| [Encryption](#original-authenticated-encryption-and-signature-exercise) | Reversibly transforming data with a key to keep the plaintext unavailable to parties lacking the appropriate decryption capability. |
+| [Key rotation](#original-authenticated-encryption-and-signature-exercise) | Replacing a key under a planned lifecycle. Data encrypted under an older key may still need that key or a separate migration. |
+
+**Threats, vulnerabilities, and mitigations**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Attack surface](#actor-motive-vector-surface-and-weakness) | The set of exposed interfaces, identities and other points through which a system can be reached or affected. |
+| [Firmware](#actor-motive-vector-surface-and-weakness) | Software stored in a device that controls its low-level operation. Updates must match the hardware and preserve a recovery path. |
+| [Threat intelligence](#actor-motive-vector-surface-and-weakness) | Assessed information about adversary activity or indicators, with source, context and freshness to guide a decision. |
+| [Domain Name System (DNS)](#malicious-activity-and-evidence) | The Domain Name System, which resolves names to records such as the addresses a client can use. |
+| [Risk mitigation](#malicious-activity-and-evidence) | Reducing the likelihood or impact of a risk by applying safeguards, changing a process or improving resilience. |
+| [Procedure](#from-indicator-to-defensible-control) | An ordered set of instructions for carrying out a defined activity, with enough detail for the responsible person to execute it consistently. |
+| [Web application firewall (WAF)](#from-indicator-to-defensible-control) | A control that examines HTTP traffic against application-specific rules and can block or flag suspicious requests. |
+
+**Security architecture**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Shared responsibility](#models-and-shared-responsibility) | The allocation of security duties between a provider and a customer for a particular service. |
+| [Container](#models-and-shared-responsibility) | An isolated application process and its dependencies that ordinarily shares the host kernel. Its image is the packaged input used to start it. |
+| [Operational technology (OT)](#models-and-shared-responsibility) | Systems that monitor or control physical processes, such as industrial equipment. A failed control change can have immediate operational or safety effects. |
+| [Out-of-band](#infrastructure-and-secure-communication) | Use of a separate communications or management path, such as an independent channel for verifying an unusual request. |
+| [Virtual private network (VPN)](#infrastructure-and-secure-communication) | A protected logical connection over a shared network. Its permitted destinations and traffic depend on routes and access policy. |
+| [Restore point](#data-protection-and-resilience) | A recorded state used to restore selected system settings or components. Its scope differs from a full independent backup of user data. |
+| [Synchronization](#data-protection-and-resilience) | Propagation of changes among copies of data. A deletion may propagate too, which makes independent recovery copies important. |
+
+**Security operations**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Hardening](#baselines-hardening-assets-and-vulnerabilities) | Reducing avoidable exposure by configuring a system securely, such as removing unused services. |
+| [Vulnerability](#baselines-hardening-assets-and-vulnerabilities) | A weakness in design, configuration, process or implementation that can affect a security objective under applicable conditions. |
+| [Vulnerability management](#baselines-hardening-assets-and-vulnerabilities) | A recurring process for finding weaknesses, assessing their relevance, treating them and verifying closure within an agreed scope. |
+| [Vulnerability severity](#prioritization-with-current-severity-and-exploitation-evidence) | An assessment of the technical seriousness of a weakness. Asset exposure and observed exploitation help determine remediation priority. |
+| [Severity](#prioritization-with-current-severity-and-exploitation-evidence) | A rating of expected or observed impact. It differs from confidence, which expresses how strongly the evidence supports the assessment. |
+| [Timestamp](#prioritization-with-current-severity-and-exploitation-evidence) | A recorded time associated with an event. Distinguish source event time from collection or indexing time when building a timeline. |
+| [Identity lifecycle](#monitoring-and-enterprise-controls) | The processes that grant, change and remove access as people join, change duties and leave. A role change should also remove incompatible old permissions. |
+| [Privileged access management (PAM)](#monitoring-and-enterprise-controls) | Controls for powerful accounts and sensitive actions, commonly including approval, short-lived access, credential protection and session auditing. |
+| [Federation](#authentication-federation-and-authorization-boundaries) | An arrangement in which a service relies on an external identity provider’s assertions to recognize users. |
+| [Authentication](#authentication-federation-and-authorization-boundaries) | Verifying an identity before deciding which resources that identity may access. |
+| [Authorization](#authentication-federation-and-authorization-boundaries) | Deciding which actions an authenticated identity is permitted to take. |
+| [Phishing-resistant authentication](#authentication-federation-and-authorization-boundaries) | Authentication designed to prevent an impostor service from reusing the proof supplied for a legitimate service, such as a credential bound to the correct origin. |
+| [Normalization](#original-investigation-and-detection-case) | Mapping source-specific values to a common representation, such as translating different vendor fields into the same source-address field. |
+| [True positive](#original-investigation-and-detection-case) | A detection supported by evidence that the condition it was intended to identify really occurred. |
+| [Chain of custody](#automation-incident-response-and-forensics) | A record of how evidence was collected, handled, transferred and stored. |
+| [Containment](#automation-incident-response-and-forensics) | Limiting the scope or ongoing effects of an incident, such as isolating the affected device under an approved response plan. |
+| [Incident](#automation-incident-response-and-forensics) | A case representing a security event or set of related events requiring coordinated investigation and response. |
+
+**Security program management and oversight**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Dual control](#governance-and-accountable-roles) | Requiring two authorized people or independent approvals to complete one sensitive operation. |
+| [Segregation of duties](#governance-and-accountable-roles) | Dividing incompatible responsibilities, such as requesting and approving payment, so a single person cannot complete the whole sensitive transaction. |
+| [Residual risk](#risk-and-business-impact) | The risk left after safeguards or other treatments have been applied. |
+| [Annualized loss expectancy (ALE)](#risk-and-business-impact) | Expected loss per year for a risk scenario. A $20,000 single-event loss at 0.25 events per year gives $5,000 per year in a simple model. |
+| [Maximum tolerable downtime (MTD)](#risk-and-business-impact) | The longest interruption the business can tolerate before the impact becomes unacceptable. Restoration targets need to leave time for business recovery. |
+| [Risk appetite](#risk-and-business-impact) | The amount and type of risk leadership is willing to pursue or retain while meeting business objectives. It guides decisions across the enterprise. |
+| [Audit evidence](#third-parties-compliance-assessment-and-awareness) | Information used to substantiate an audit conclusion. An auditor evaluates its relevance, reliability and sufficiency for the assertion tested. |
+| [Due diligence](#third-parties-compliance-assessment-and-awareness) | The investigation and ongoing verification used to understand obligations, evaluate risk and confirm that safeguards remain suitable. |
+
+**SY0-601-to-SY0-701 gap checklist**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Data classification](#sy0-601-to-sy0-701-gap-checklist) | Assigning a sensitivity or impact category to information to determine required access, handling and protection. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Ransomware](#scenario-1-ransomware-and-cloud-token-activity) | Malicious software associated with extortion, often by denying access to data. The incident can also involve disclosure or destruction. |
+| [Infrastructure as code (IaC)](#scenario-2-iac-change-exposes-customer-data) | Defining infrastructure in a versionable form that can be reviewed and applied through automation. |
+
 ## Places to learn
 
 This is not a complete list and is not meant to be consumed in full. Given the scheduled language-specific retirement dates, first verify that SY0-701 is still schedulable in your language. Then choose one current path, practice in an isolated/authorized lab, and use one explanation-led assessment for remediation.

@@ -214,6 +214,89 @@ These are original study prompts, not Fortinet exam questions.
 - Practice short architecture answers that state requirements, dependencies, decision, failure behavior, evidence, and rollback.
 - Review old FCSS or version-specific material only after mapping it to the current NSE 7 contract and 7.6 behavior.
 
+## Key terms and phrases
+
+**System configuration and SD-WAN setup (20–30%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Fabric connector](#build-a-trustworthy-security-fabric) | An integration through which supported Security Fabric components exchange topology or security context. |
+| [Automation stitch](#build-a-trustworthy-security-fabric) | A FortiOS trigger linked to one or more actions, allowing a detected condition to initiate a defined response. |
+| [External connector](#build-a-trustworthy-security-fabric) | A configured source of external context such as cloud inventory or a threat feed. Stale or failed updates can leave policy inputs inaccurate. |
+| [Fortinet Security Fabric](#build-a-trustworthy-security-fabric) | Fortinet’s framework for integrating products so they can exchange context and coordinate visibility or policy-driven actions. |
+| [Least privilege](#build-a-trustworthy-security-fabric) | Giving an identity only the permissions needed for its task, for as long as it needs them. |
+| [Session synchronization](#select-ha-mechanisms-from-the-failure-model) | Sharing selected connection state with a peer so that it can continue eligible sessions after a failure. |
+| [Active-passive](#select-ha-mechanisms-from-the-failure-model) | An HA arrangement in which a standby peer is available to take over service from the active peer. |
+| [Asymmetric routing](#select-ha-mechanisms-from-the-failure-model) | A flow whose forward and return packets take different paths. Stateful inspection can fail if one direction misses the device holding the session. |
+| [High availability (HA)](#select-ha-mechanisms-from-the-failure-model) | A deployment that lets a peer take over when a device fails. The peer still needs working network paths and a valid configuration. |
+| [Session pickup](#select-ha-mechanisms-from-the-failure-model) | The transfer or reuse of supported connection state so that eligible sessions can continue across HA failover. |
+| [FortiGate Clustering Protocol (FGCP)](#select-ha-mechanisms-from-the-failure-model) | The FortiGate mechanism for coordinating members of an HA cluster, including configuration synchronization and supported session handling. |
+| [FortiGate Session Life Support Protocol (FGSP)](#select-ha-mechanisms-from-the-failure-model) | A mechanism for synchronizing supported session information between FortiGate peers in designs that handle traffic distribution separately. |
+| [Virtual domain (VDOM)](#segment-with-vlans-and-vdoms) | A logical firewall instance that separates routing, policy and administration within a FortiGate. |
+| [Layer 2](#segment-with-vlans-and-vdoms) | The data-link layer, where local delivery uses frames and link-layer addressing, such as Ethernet switching within a VLAN. |
+| [Management plane](#segment-with-vlans-and-vdoms) | The interface and services through which administrators configure and monitor devices. Reachability here does not prove that user traffic is working. |
+| [Virtual LAN (VLAN)](#segment-with-vlans-and-vdoms) | A logical Layer 2 network with its own broadcast scope. Communication with another VLAN ordinarily requires routing and a suitable policy. |
+| [Direct internet access (DIA)](#establish-the-sd-wan-substrate) | An arrangement in which branch internet traffic exits locally instead of traveling through a central site first. |
+| [Performance SLA](#establish-the-sd-wan-substrate) | A Fortinet SD-WAN health measurement that compares eligible links against targets such as delay, jitter or loss for steering decisions. |
+| [SD-WAN member](#establish-the-sd-wan-substrate) | An interface or connection eligible for SD-WAN forwarding under its zone, route and steering policies. |
+| [Software-defined WAN (SD-WAN)](#establish-the-sd-wan-substrate) | A way to steer traffic among network connections according to policy and measured link conditions. |
+
+**Central management (15–25%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Underlay](#govern-fortimanager-templates-and-overlay-orchestration) | The network that provides basic connectivity between sites. An overlay tunnel still depends on that path. |
+| [Metadata variable](#govern-fortimanager-templates-and-overlay-orchestration) | A site- or device-specific value substituted into a shared template, such as a branch interface address. |
+| [FortiAnalyzer](#govern-fortimanager-templates-and-overlay-orchestration) | A platform for collecting and analyzing supported Fortinet telemetry, including searching logs, generating reports and handling security events. |
+| [FortiManager](#govern-fortimanager-templates-and-overlay-orchestration) | A platform for centrally managing Fortinet device configurations and policy. A change staged in its database must reach the intended devices to affect traffic. |
+| [Overlay](#govern-fortimanager-templates-and-overlay-orchestration) | A logical network formed over underlying links, commonly using tunnels between branches and hubs. |
+| [Policy package](#govern-fortimanager-templates-and-overlay-orchestration) | A managed set of firewall policy rules and associated objects assigned to installation targets. Editing and installing are separate operations. |
+
+**Security profiles (5–15%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Certificate authority (CA)](#make-tls-inspection-an-architecture-decision) | A trusted issuer that signs certificates linking subjects to public keys under a stated policy. |
+| [Certificate inspection](#make-tls-inspection-an-architecture-decision) | Examining available TLS negotiation and certificate information without decrypting the application payload. |
+| [Mutual TLS (mTLS)](#make-tls-inspection-an-architecture-decision) | TLS in which both peers present certificates and verify one another. Successful authentication still leaves authorization to policy. |
+| [Application control](#combine-profiles-without-losing-the-packet-story) | A control that identifies the application using a connection and applies policy to it, even when several applications share a port. |
+| [Packet](#combine-profiles-without-losing-the-packet-story) | A network-layer unit carrying a source and destination IP address. Routers use the destination and their forwarding tables to send it onward. |
+| [Web filtering](#combine-profiles-without-losing-the-packet-story) | A control that allows or blocks web access according to a URL, category or other policy criterion. |
+
+**Rules and routing (25–35%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Route redistribution](#control-ospf-and-bgp-policy) | Importing routes learned through one routing source into another. Filtering and route attributes control what is propagated. |
+| [Border Gateway Protocol (BGP)](#control-ospf-and-bgp-policy) | A routing protocol that exchanges reachability between peers and uses policy and path attributes to select routes. |
+| [Next hop](#control-ospf-and-bgp-policy) | The adjacent router or forwarding destination selected for the next stage of a packet’s path. |
+| [Open Shortest Path First (OSPF)](#control-ospf-and-bgp-policy) | A link-state routing protocol in which routers exchange topology information and calculate paths using link costs. |
+| [Equal-cost multipath (ECMP)](#control-ospf-and-bgp-policy) | Forwarding over multiple eligible paths with equal route preference and cost. The way traffic is distributed depends on the implementation. |
+| [Application steering](#derive-sd-wan-decisions) | Selection of a WAN path using traffic classification, policy and the measured condition of eligible links. |
+| [SD-WAN rule](#derive-sd-wan-decisions) | A policy that identifies a class of traffic and chooses among eligible links using its configured strategy. |
+| [Source NAT (SNAT)](#derive-sd-wan-decisions) | Rewriting the source address of a packet, commonly so internal hosts can use a shared external address. |
+| [Static route](#derive-sd-wan-decisions) | A route installed by configuration, specifying a prefix and next hop or interface. It changes only through configuration or an associated tracking mechanism. |
+
+**Advanced IPsec (25–35%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Internet Key Exchange (IKE)](#engineer-reliable-ikev2-tunnels) | The protocol peers use to authenticate and negotiate the keys and settings for IPsec protection. |
+| [Bandwidth](#engineer-reliable-ikev2-tunnels) | The nominal data-carrying capacity of a link, usually expressed in bits per second. It does not by itself establish delay or delivered throughput. |
+| [Internet Protocol Security (IPsec)](#engineer-reliable-ikev2-tunnels) | A set of IP-layer protocols that protect traffic between negotiated peers, with defined security associations and traffic selectors. |
+| [Security association lifetime](#engineer-reliable-ikev2-tunnels) | The interval after which protected traffic needs newly negotiated security association parameters or keys. Peer compatibility matters at renewal. |
+| [Route reflection](#scale-dual-hub-and-multiregion-overlays) | A BGP mechanism that lets a designated router distribute routes among internal peers without a full mesh of peer sessions. |
+| [Auto Discovery VPN (ADVPN)](#scale-dual-hub-and-multiregion-overlays) | A Fortinet overlay design that supports on-demand shortcut tunnels between eligible spokes, subject to routing and security association state. |
+| [Observability](#scale-dual-hub-and-multiregion-overlays) | The ability to infer a system’s internal condition from its outputs, often by relating logs, metrics and traces to a particular request or failure. |
+| [Tenant isolation](#scale-dual-hub-and-multiregion-overlays) | Separation of each customer’s identities, records, policies and actions so that one customer cannot access or affect another. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Load balancer](#asymmetric-data-center-service) | A component that sends eligible requests or connections to selected backends using health and distribution policy. |
+| [Software as a service (SaaS)](#encrypted-saas-degradation) | An application operated by a provider and consumed as a service. The customer still governs tenant settings, access and use of its data. |
+
 ## Places to learn
 
 This is not a complete list, and it is not a prescription to consume everything. Start with the official exam contract and choose only the documentation, course sections, and labs that close measured gaps. Times are publisher-listed where visible or clearly labeled estimates and can change.

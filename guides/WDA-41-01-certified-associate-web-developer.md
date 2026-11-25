@@ -837,6 +837,83 @@ These ten broader learner activities remain **proposed**. The bounded examples a
 
 The current WDA-41-01 syllabus page still says ACTIVE and retains its September 16, 2025 five-domain map. The certification page advertises a future JavaScript/Node.js direction without identifying an exam code or date; treat it as unannounced roadmap language, not a replacement or scheduled retirement. **Related item:** the current [WHATWG popover standard](https://html.spec.whatwg.org/multipage/popover.html) distinguishes `auto`, `hint`, and `manual` popovers from modal `<dialog>`. Add keyboard/focus/dismissal checks to interaction testing and validate the target browsers; this is current HTML context, not a change to WDA’s published objectives.
 
+## Key terms and phrases
+
+**HTML fundamentals**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Metadata](#document-structure-and-metadata) | Information describing the document, such as character encoding, title or viewport settings, typically placed in its head. |
+| [Identifier (id)](#document-structure-and-metadata) | A document identifier expected to be unique, used for references such as a label target or fragment destination. |
+| [Semantic element](#semantic-content) | An element that expresses the role of its content, such as nav for a region containing navigation links. |
+| [Semantic markup](#semantic-content) | Choosing elements that express the role of their content, allowing browsers and assistive technology to interpret the structure. |
+| [Landmark](#semantic-content) | An identifiable page region such as main content or navigation, which users of assistive technology can reach directly. |
+| [Heading level](#semantic-content) | The rank that organizes headings into sections and subsections, independent of their visual size. |
+| [ARIA](#semantic-content) | Accessible Rich Internet Applications attributes that communicate roles, names or states to assistive technology when native semantics need supplementation. |
+| [Attribute](#media-embeds-forms-and-navigation) | A named piece of information attached to an element, such as the destination of a link or the name of a form control. |
+| [Image alternative](#media-embeds-forms-and-navigation) | Text equivalent for an image’s purpose in context. An informative image and a decorative image require different handling. |
+| [Form control](#media-embeds-forms-and-navigation) | An interactive input, selection or button that receives user input or triggers a form operation. |
+| [Required field](#media-embeds-forms-and-navigation) | A form control that must satisfy its required-value constraint before ordinary browser submission. |
+| [Keyboard navigation](#media-embeds-forms-and-navigation) | Operating interactive elements through keys, with a meaningful movement order and usable activation. |
+| [Accessible label](#media-embeds-forms-and-navigation) | An associated name identifying the purpose of a control to users, including those using assistive technology. |
+| [Responsive layout](#media-embeds-forms-and-navigation) | A layout adapting to available space and content so the page remains usable across viewports. |
+| [Media alternative](#media-embeds-forms-and-navigation) | An alternative such as timed captions or a transcript that makes spoken or visual information accessible through another mode. |
+
+**CSS fundamentals**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Cascade](#syntax-selectors-values-and-the-cascade) | The rules that choose a winning CSS declaration when several declarations apply to the same property and element. |
+| [Specificity](#syntax-selectors-values-and-the-cascade) | The selector weight used to break certain ties in the cascade. Origin, importance and layer precedence can decide the result first. |
+| [HTML element](#syntax-selectors-values-and-the-cascade) | A unit of document structure, such as a paragraph or link, represented by markup and exposed to the browser’s document model. |
+| [CSS selector](#syntax-selectors-values-and-the-cascade) | A pattern identifying the elements to which a style rule applies. |
+| [Declaration](#syntax-selectors-values-and-the-cascade) | A CSS property and value pair describing one aspect of the style, such as a text color. |
+| [Inheritance](#syntax-selectors-values-and-the-cascade) | The passing of eligible property values from a parent element to its children when the cascade leaves them to inherit. |
+| [CSS class](#syntax-selectors-values-and-the-cascade) | A reusable class attribute value used to select a group of elements for styling or behavior. |
+| [Color contrast](#syntax-selectors-values-and-the-cascade) | The difference in luminance between adjacent colors that helps users distinguish text or controls against their background. |
+| [Pseudo-class](#syntax-selectors-values-and-the-cascade) | A selector condition based on state or structure, such as a control currently holding focus. |
+| [Source order](#syntax-selectors-values-and-the-cascade) | The order declarations appear in the stylesheet, which resolves otherwise tied declarations. |
+| [Custom property](#syntax-selectors-values-and-the-cascade) | A named cascading CSS value referenced with var() so components can reuse and override settings. |
+| [Box model](#typography-colors-sizing-and-boxes) | The arrangement of an element’s content area, padding, border and outer margin. |
+| [Padding](#typography-colors-sizing-and-boxes) | Space inside an element’s border between its content and the border edge. |
+| [Margin](#typography-colors-sizing-and-boxes) | Space outside an element’s border separating it from neighboring boxes. |
+| [Stacking context](#positioning-stacking-transitions-and-animation) | A group of elements layered together as one unit relative to content in other stacking contexts. |
+| [Viewport](#positioning-stacking-transitions-and-animation) | The visible area through which the page is viewed. Its dimensions affect responsive sizing and media queries. |
+| [Breakpoint](#frameworks-preprocessors-and-css-delivery) | A condition, often a viewport width, where styles change to keep the content usable. |
+
+**Integrating HTML and CSS**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Relative URL](#stylesheet-placement-precedence-and-project-structure) | A destination interpreted relative to the document’s base URL, so it can identify another resource without a full origin. |
+| [SVG](#stylesheet-placement-precedence-and-project-structure) | Scalable Vector Graphics, an XML-based format for shapes and other vector content that can scale without pixelating. |
+| [Stylesheet](#stylesheet-placement-precedence-and-project-structure) | A set of CSS rules associated with a document, often linked as an external file that multiple pages can share. |
+| [Validation](#validation-and-browser-developer-tools) | Checking markup or styles against defined syntax or conformance rules. Passing syntax checks does not establish accessibility. |
+
+**Responsive web design and layout**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Media query](#mobile-first-fluid-foundations) | A condition that applies styles only when the environment matches, for example when the viewport reaches a chosen width. |
+| [Flexbox](#flexbox-and-grid) | A layout system for distributing and aligning items along a main axis, with a cross axis for alignment. |
+| [Grid](#flexbox-and-grid) | A layout system that places items into rows and columns, allowing both dimensions to be coordinated. |
+| [Flex item](#flexbox-and-grid) | A direct child laid out by a flex container, sized and positioned according to flex layout rules. |
+| [Grid track](#flexbox-and-grid) | A row or column of a grid that determines where items can be placed. |
+
+**Accessibility, usability, and best practices**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Keyboard focus](#accessible-and-usable-experiences) | The interface position that receives keyboard input. A visible focus indicator helps users follow it through a page. |
+| [Focus order](#accessible-and-usable-experiences) | The sequence in which keyboard navigation reaches focusable elements, ideally following the intended task and document order. |
+| [Structured data](#seo-and-analytics) | Machine-readable descriptions attached to page content, for example a schema describing an event. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Table caption](#scenario-1-responsive-service-site) | A title associated with a table that explains its subject, helping readers decide how to interpret its cells. |
+
 ## Places to learn
 
 Public course/index comparison is not course completion. The official CSS landing lists 40 hours, nine modules and 45+ lessons; the HTML landing lists 25 hours and six modules. The public Pluralsight listing reports 31 hours, ten courses and seven labs, but subscriber interiors were not reviewed. Tutorial directories were read as indexes, not every linked lesson. Except for explicitly listed provider totals, hours below are author planning budgets. This is not a complete list, and it is not meant to be consumed in full. Pick one primary path, add focused documentation where useful, and spend at least as much time building, inspecting, measuring, and testing as watching. Commercial resources are supplementary; reconcile them with the current official syllabus.

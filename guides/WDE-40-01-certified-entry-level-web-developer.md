@@ -813,6 +813,77 @@ These eight broader activities remain **proposed**. The bounded original checks 
 
 The current WDE-40-01 syllabus page still says ACTIVE and retains the September 18, 2025 five-domain map. The certification page’s practice-test row labels a product “WDE-41-01” while the active exam and syllabus say WDE-40-01; preserve this as an issuer-page typo/discrepancy and verify the exact product before purchase. **Related item:** the current [WHATWG popover standard](https://html.spec.whatwg.org/multipage/popover.html) defines `auto`, `hint`, and `manual` popover behavior. A native popover is not automatically a menu or modal dialog; use `<dialog>` when modal semantics are needed. Test invoker, keyboard dismissal, focus, and the actual target browsers before relying on the behavior. This interaction model is current HTML context, not a new WDE objective.
 
+## Key terms and phrases
+
+**HTML fundamentals**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Document type declaration](#standards-mode-document-and-metadata) | The declaration at the top of an HTML document that tells a browser to use standards mode for a modern page. |
+| [HTML element](#standards-mode-document-and-metadata) | A unit of document structure, such as a paragraph or link, represented by markup and exposed to the browser’s document model. |
+| [Document language](#standards-mode-document-and-metadata) | A declaration of the primary language of the document or a passage, used by assistive technology and language-sensitive tools. |
+| [Metadata](#standards-mode-document-and-metadata) | Information describing the document, such as character encoding, title or viewport settings, typically placed in its head. |
+
+**Text formatting and structure**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Heading hierarchy](#headings-paragraphs-and-separation) | The levels of headings that show how a page’s sections and subsections fit together for readers and assistive technology. |
+| [Table header](#lists-and-tables) | A cell identifying the meaning of its associated row or column data. |
+| [Table caption](#lists-and-tables) | A title associated with a table that explains its subject, helping readers decide how to interpret its cells. |
+
+**Multimedia and hyperlinks**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Alternative text](#images-and-alternatives) | Text conveying the information or function of an image in its context. A purely decorative image usually takes an empty alternative. |
+| [Fragment link](#links) | A link that navigates to an identified location within a page, such as a heading with a matching id. |
+| [Relative URL](#links) | A destination interpreted relative to the document’s base URL, so it can identify another resource without a full origin. |
+| [Absolute URL](#links) | A URL that identifies its destination independently of the current document’s path. |
+| [Hyperlink](#links) | A navigable reference whose text and destination let the reader understand where activation leads. |
+| [Attribute](#audio-video-image-maps-iframes-and-favicons) | A named piece of information attached to an element, such as the destination of a link or the name of a form control. |
+| [Responsive layout](#audio-video-image-maps-iframes-and-favicons) | A layout adapting to available space and content so the page remains usable across viewports. |
+| [Media alternative](#audio-video-image-maps-iframes-and-favicons) | An alternative such as timed captions or a transcript that makes spoken or visual information accessible through another mode. |
+
+**Forms and styling**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Form label](#form-semantics-and-controls) | Text identifying a control, associated by wrapping the control or matching the label’s for attribute to the control’s id. |
+| [Semantic markup](#form-semantics-and-controls) | Choosing elements that express the role of their content, allowing browsers and assistive technology to interpret the structure. |
+| [Form control](#form-semantics-and-controls) | An interactive input, selection or button that receives user input or triggers a form operation. |
+| [Fieldset and legend](#form-semantics-and-controls) | A fieldset groups related form controls, and its legend names the group. For a set of radio buttons, the legend can supply the question and each label a possible answer. |
+| [Constraint validation](#submission-and-validation) | The browser’s check of conditions such as required fields or valid formats before normal form submission. |
+| [Submission method](#submission-and-validation) | The HTTP method used when submitting form data. GET commonly encodes successful controls in the query string. |
+| [Required field](#submission-and-validation) | A form control that must satisfy its required-value constraint before ordinary browser submission. |
+| [CSS selector](#foundational-css) | A pattern identifying the elements to which a style rule applies. |
+| [Declaration](#foundational-css) | A CSS property and value pair describing one aspect of the style, such as a text color. |
+| [CSS class](#foundational-css) | A reusable class attribute value used to select a group of elements for styling or behavior. |
+| [Identifier (id)](#foundational-css) | A document identifier expected to be unique, used for references such as a label target or fragment destination. |
+| [Padding](#foundational-css) | Space inside an element’s border between its content and the border edge. |
+| [Margin](#foundational-css) | Space outside an element’s border separating it from neighboring boxes. |
+| [Stylesheet](#foundational-css) | A set of CSS rules associated with a document, often linked as an external file that multiple pages can share. |
+
+**Accessibility, best practices, and modern HTML**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Accessible name](#accessibility-and-aria) | The name assistive technology uses to identify a control, drawn from its label or another supported naming mechanism. |
+| [Viewport](#accessibility-and-aria) | The visible area through which the page is viewed. Its dimensions affect responsive sizing and media queries. |
+| [Landmark](#accessibility-and-aria) | An identifiable page region such as main content or navigation, which users of assistive technology can reach directly. |
+| [Keyboard navigation](#accessibility-and-aria) | Operating interactive elements through keys, with a meaningful movement order and usable activation. |
+| [Color contrast](#accessibility-and-aria) | The difference in luminance between adjacent colors that helps users distinguish text or controls against their background. |
+| [ARIA](#accessibility-and-aria) | Accessible Rich Internet Applications attributes that communicate roles, names or states to assistive technology when native semantics need supplementation. |
+| [Structured data](#structured-data) | Machine-readable descriptions attached to page content, for example a schema describing an event. |
+| [Web Storage](#geolocation-storage-and-svg) | A browser facility storing string key-value pairs within origin and lifecycle boundaries. |
+| [SVG](#geolocation-storage-and-svg) | Scalable Vector Graphics, an XML-based format for shapes and other vector content that can scale without pixelating. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Focus order](#hands-on-labs) | The sequence in which keyboard navigation reaches focusable elements, ideally following the intended task and document order. |
+
 ## Places to learn
 
 This is not a complete list, and it is not meant to be consumed in full. Pick one primary path, add focused references where useful, and spend at least as much time building, validating, and testing pages as watching. Commercial resources are supplementary; reconcile them with the current official syllabus. Times below are author planning budgets unless explicitly marked as a provider-listed total. Public contents and selected reference sections were reviewed, not every linked lesson or any paid course interior. The [review report](../docs/research/2026-09-29-wde-40-01-deep-review.md) records exact boundaries.

@@ -505,6 +505,84 @@ Attempt to induce an agent to edit a protected path, expose a fake secret, call 
 
 ---
 
+## Key terms and phrases
+
+**Prepare agent architecture and SDLC processes**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Task contract](#start-with-a-bounded-work-contract) | A written description of the requested outcome, allowed actions, evidence and conditions that end an agent's work. |
+| [SDLC](#integrate-agents-into-the-sdlc) | The software development lifecycle, from planning and implementation through review, release and maintenance. |
+| [Planning](#separate-planning-reasoning-and-action) | Breaking a goal into proposed actions and dependencies before executing them. |
+| [Autonomy level](#choose-an-autonomy-level) | The degree of authority an agent has to act before a person must review or approve a decision. |
+| [Human-in-the-loop](#choose-an-autonomy-level) | A workflow design that asks a person to make a decision during execution when authority or judgment is required. |
+| [Exit condition](#choose-an-autonomy-level) | An explicit rule that ends a control loop when it succeeds, exceeds a limit or needs a person. |
+| [Trace](#make-work-observable) | A linked record of the decisions, model calls and tool operations that contributed to one run. |
+
+**Implement tool use and environment interaction**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Tool contract](#select-tools-from-the-task-contract) | The declared inputs, outputs, permissions and failure behavior of an operation exposed to the agent. |
+| [Read scope](#select-tools-from-the-task-contract) | The set of repositories, records or files a tool is permitted to inspect for its task. |
+| [Custom agent](#configure-custom-agents-deliberately) | A specialized assistant configuration with instructions and a chosen set of tools. |
+| [Model Context Protocol (MCP)](#treat-mcp-as-a-trust-boundary) | A protocol that connects an agent client with tools or context provided by a server. Each connection needs its own access boundary. |
+| [Tool allowlist](#treat-mcp-as-a-trust-boundary) | An explicit list of operations an agent may invoke within a defined task. |
+| [Sandbox](#bound-the-execution-environment) | An isolated execution environment with limits on the files, network or other resources accessible to the agent. |
+| [Workflow concurrency](#use-github-native-isolation) | A scheduling control that limits simultaneous runs in a named group so overlapping operations do not collide. |
+| [Retry budget](#design-robust-error-handling) | The maximum number of attempts or elapsed time allowed for retrying recoverable work. |
+| [Idempotency](#design-robust-error-handling) | An operation's property of producing the intended business effect once even if the same request is repeated. |
+| [Transient failure](#design-robust-error-handling) | A temporary fault that may clear on a bounded retry, such as a momentary service outage. |
+| [Terminal failure](#design-robust-error-handling) | A condition that invalidates the current request or authority and calls for stopping or changing the plan. |
+
+**Manage memory, state, and execution**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Memory](#distinguish-memory-from-state) | Information retained for later reasoning, such as a preference or a fact learned in a previous session. |
+| [Execution state](#distinguish-memory-from-state) | The record of completed steps and pending work that lets an interrupted run resume safely. |
+| [Working context](#distinguish-memory-from-state) | The immediate information available to reason about the current request, such as a diff or issue. |
+| [Short-term memory](#distinguish-memory-from-state) | Information retained within a session or task to reuse recent decisions and observations. |
+| [Long-term memory](#distinguish-memory-from-state) | Facts or preferences retained across tasks, requiring ownership, expiry and access controls. |
+| [Memory retention](#define-memory-lifecycle) | The rules for how long remembered information may persist and when it must expire or be removed. |
+| [Checkpoint](#persist-resumable-state) | A saved record of progress and outputs used to resume execution without repeating completed work. |
+| [Context drift](#detect-context-drift) | A shift in the evidence or assumptions used by the agent as a task evolves that can lead it away from the original goal. |
+
+**Perform evaluation, error analysis, and tuning**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Task completion rate](#define-success-at-multiple-layers) | The share of evaluated tasks meeting the defined success criteria, using a stated denominator. |
+| [Evaluation set](#build-an-evaluation-set) | A collection of representative inputs with expected outcomes or scoring criteria used to compare agent behavior. |
+| [Regression case](#build-an-evaluation-set) | A previously tested scenario rerun after a change to detect behavior that has deteriorated. |
+| [Ground truth](#build-an-evaluation-set) | An independently established expected result against which an agent's answer or action can be checked. |
+| [Error taxonomy](#classify-failures-before-tuning) | A set of categories for distinguishing failures such as retrieval misses, reasoning mistakes and tool execution errors. |
+| [Evaluation rubric](#classify-failures-before-tuning) | The criteria a reviewer or scoring system uses to judge a run's output and behavior. |
+| [Baseline](#tune-one-layer-at-a-time) | A defined reference configuration and its measured results used to judge whether a change improves the system. |
+
+**Orchestrate multi-agent coordination**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Sequential orchestration](#choose-the-smallest-useful-topology) | Passing work from one agent to the next when later stages depend on earlier results. |
+| [Parallel orchestration](#choose-the-smallest-useful-topology) | Assigning independent tasks to workers concurrently, then reconciling their outputs. |
+| [Isolation boundary](#isolate-parallel-execution) | A separation of files, credentials or runtime state that prevents workers from interfering with each other's tasks. |
+| [Handoff](#make-handoffs-reviewable) | The transfer of a bounded task with its inputs, evidence, constraints and expected output to another worker. |
+| [Acceptance criterion](#make-handoffs-reviewable) | An observable condition the receiving worker or reviewer can use to judge whether the handoff is complete. |
+| [Conflict resolution](#resolve-conflicts-by-evidence-and-ownership) | Reconciling incompatible agent outputs using original evidence, ownership and the agreed decision rule. |
+| [Fallback](#recover-degraded-workflows) | A bounded alternate path taken when a component fails, such as routing the case to a human owner. |
+| [Compensating action](#recover-degraded-workflows) | An authorized corrective operation that offsets a prior side effect when it cannot simply be undone. |
+
+**Implement guardrails and accountability**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Read-only action](#classify-actions-by-impact) | An operation that retrieves information without changing the target system. |
+| [Guardrail](#build-layered-guardrails) | A control that constrains inputs, tools, execution or outputs to keep work within its permitted scope. |
+| [Human approval gate](#design-meaningful-human-intervention) | A point where a named person must authorize the proposed action before execution continues. |
+| [Audit trail](#preserve-accountability) | A record connecting actions to actors, inputs, decisions and results so a reviewer can reconstruct the run. |
+| [Accountability](#preserve-accountability) | The assignment of responsibility for a proposed action, approval, execution and subsequent review. |
+
 ## Places to learn
 
 This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Start with the current official paths, then use documentation and this guide's labs to close specific gaps. Times are approximate reading or module time; note-taking, setup, repetition, and independent practice add time.

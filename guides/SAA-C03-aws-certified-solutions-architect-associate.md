@@ -386,6 +386,97 @@ Draw one end-to-end scenario with trust, network, failure, data, scaling, observ
 
 ---
 
+## Key terms and phrases
+
+**Design Secure Architectures**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Identity and Access Management (IAM) role](#design-identity-before-permissions) | An identity with a trust policy specifying who can assume it and permissions governing what a session using it can do. |
+| [Landing zone](#design-identity-before-permissions) | A prepared cloud foundation with account or project structure, networking, identity and controls on which teams can deploy workloads. |
+| [Federation](#design-identity-before-permissions) | Accepting trusted identity assertions from another provider so users or workloads can access resources without a separate long-lived credential. |
+| [Temporary credentials](#design-identity-before-permissions) | Time-limited access keys and a session token. A workload can obtain them by assuming a role. |
+| [Identity policy](#design-identity-before-permissions) | An IAM policy attached to an identity that describes which actions it can take on which resources, subject to other applicable controls. |
+| [AWS IAM Identity Center](#design-identity-before-permissions) | Connects workforce users and groups to AWS accounts or applications and manages the access assigned to them. |
+| [Least privilege](#design-identity-before-permissions) | Limiting an identity to the actions and resources required for its work. A read-only reporting job needs no permission to modify its source. |
+| [AWS Control Tower](#design-identity-before-permissions) | A service for setting up and governing a multi-account landing zone, including common controls as accounts are enrolled. |
+| [AWS Organizations](#design-identity-before-permissions) | Groups AWS accounts under common governance so a team can apply policies or consolidate billing across accounts. |
+| [AWS Shield](#build-defense-in-depth-around-the-request-path) | A service for protecting availability against distributed denial-of-service traffic. Application-level request filtering serves a different purpose. |
+| [AWS WAF](#build-defense-in-depth-around-the-request-path) | A web application firewall that evaluates web requests against rules before they reach a protected application. |
+| [Amazon VPC](#build-defense-in-depth-around-the-request-path) | A logically isolated network in an AWS Region, divided into subnets with routes and security controls that shape connectivity. |
+| [AWS Network Firewall](#build-defense-in-depth-around-the-request-path) | A managed traffic-inspection service placed in a routed VPC path. Traffic must actually traverse its endpoints for its policy to apply. |
+| [Container image](#build-defense-in-depth-around-the-request-path) | A packaged file-system and runtime configuration used to start containers. A digest identifies a particular image's contents. |
+| [Internet gateway](#build-defense-in-depth-around-the-request-path) | A VPC component that supplies a route to the internet when addressing, routes and security rules permit it. |
+| [AWS Secrets Manager](#build-defense-in-depth-around-the-request-path) | Stores sensitive values for authorized retrieval and supports rotation workflows, such as replacing a database password. |
+| [Resource policy](#build-defense-in-depth-around-the-request-path) | A policy attached to a resource, such as an S3 bucket, specifying which principals can perform particular actions on it. |
+| [VPC endpoint](#build-defense-in-depth-around-the-request-path) | A connection from a VPC to a supported service using private connectivity. Access policies and network configuration still apply. |
+| [NAT gateway](#build-defense-in-depth-around-the-request-path) | A network address translation service. A public NAT gateway can give private-subnet workloads outbound internet access without making them directly reachable from the internet. |
+| [Amazon CloudFront](#build-defense-in-depth-around-the-request-path) | A content delivery network that serves requests from edge locations and fetches content from an origin when needed. |
+| [AWS Key Management Service (KMS)](#protect-data-throughout-its-lifecycle) | Manages cryptographic keys and controls who may use them for operations such as decrypting a protected data key. |
+| [Encryption at rest](#protect-data-throughout-its-lifecycle) | Protecting stored data with encryption. Who can use the decryption key is part of the access decision. |
+| [Encryption in transit](#protect-data-throughout-its-lifecycle) | Protecting information while it travels between endpoints, typically through an authenticated encrypted connection. |
+
+**Design Resilient Architectures**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Stateless compute](#separate-state-and-decouple-work) | Compute that keeps durable user or business state elsewhere. Another instance can pick up a request when one instance is replaced. |
+| [Visibility timeout](#separate-state-and-decouple-work) | The interval during which a received SQS message is hidden from other consumers. If processing outlasts it, the message can be delivered again. |
+| [Amazon Kinesis Data Streams](#separate-state-and-decouple-work) | A managed record stream that decouples producers from consumers. Shards and partition keys influence throughput and ordering. |
+| [Auto Scaling group](#separate-state-and-decouple-work) | Maintains a desired number of EC2 instances and can change that number under scaling policies. |
+| [AWS Step Functions](#separate-state-and-decouple-work) | Coordinates a sequence of application steps as a state machine, with explicit choices, retries and failure paths. |
+| [Health check](#separate-state-and-decouple-work) | A test used to decide whether a target can serve traffic. A reachable process can still fail a check for a required dependency. |
+| [Amazon EventBridge](#separate-state-and-decouple-work) | Routes events to targets according to rules, connecting services without requiring each producer to know each consumer. |
+| [Idempotency](#separate-state-and-decouple-work) | The property that retrying the same intended operation does not apply its effect twice. An order API can remember the request identifier. |
+| [FIFO queue](#separate-state-and-decouple-work) | A first-in, first-out queue that preserves order within each message group. Choose the group key to match the ordering requirement. |
+| [Amazon SNS](#separate-state-and-decouple-work) | A publish-subscribe notification service. Publishing once to a topic can deliver the message to multiple subscribed destinations. |
+| [Amazon SQS](#separate-state-and-decouple-work) | A queue that buffers messages between producers and consumers. A worker can process a message even after its producer has disconnected. |
+| [Load balancing](#scale-the-constrained-layer) | Sending incoming requests across healthy targets. A load balancer can direct requests to three servers. A scaling policy decides whether to add a fourth. |
+| [Amazon DynamoDB](#scale-the-constrained-layer) | A managed key-value and document database. Choose keys around the reads and writes an application must perform. |
+| [Service quota](#scale-the-constrained-layer) | A limit on resource use or request volume within a specified scope. Reaching it can block work even when funds are available. |
+| [Elastic Load Balancing (ELB)](#scale-the-constrained-layer) | Distributes incoming traffic to healthy targets. Health checks and target selection determine which backends can receive a request. |
+| [Fault isolation](#design-for-defined-failures) | Placing components in separate failure domains so a single failure affects a bounded part of the workload. |
+| [Failover](#design-for-defined-failures) | Moving service to an alternative when the current serving location or component becomes unavailable. |
+| [Time to live (TTL)](#design-for-defined-failures) | An interval after which an entry expires or must be refreshed. A DNS TTL governs how long its answer can be cached. |
+| [Asynchronous replication](#design-for-defined-failures) | Copying updates to a replica after the source commits them. A failover may lose changes that had not yet reached the replica. |
+| [Availability zone](#design-for-defined-failures) | An isolated location within a cloud region. Resilience across zones requires healthy copies of each critical dependency. |
+| [Recovery point objective (RPO)](#make-recovery-measurable) | The acceptable age of restored data at the time of an outage. It guides choices about backup frequency and replication. |
+| [Recovery time objective (RTO)](#make-recovery-measurable) | The maximum time the business can wait for service restoration after an outage. A successful recovery must restore the dependencies as well. |
+
+**Design High-Performing Architectures**
+
+| Term or phrase | Meaning |
+|---|---|
+| [AWS Fargate](#match-compute-to-execution-shape) | A compute option for ECS tasks or EKS Pods that removes the need to administer the underlying worker servers. |
+| [Amazon EC2](#match-compute-to-execution-shape) | Compute service for running virtual machines. The customer chooses the instance configuration and manages the guest operating system. |
+| [AWS Lambda](#match-compute-to-execution-shape) | Runs application code in response to an invocation or event. The function owner selects its code, permissions and resource configuration. |
+| [Amazon EBS](#match-compute-to-execution-shape) | Block storage volumes for EC2. A disk-oriented workload can put its file system or database files on a volume. |
+| [Amazon ECS](#match-compute-to-execution-shape) | An orchestrator that schedules and maintains container tasks from task definitions. |
+| [Amazon EKS](#match-compute-to-execution-shape) | Managed Kubernetes on AWS. A team deploys workloads through the Kubernetes API and chooses how their compute capacity is provided. |
+| [Horizontal scaling](#match-compute-to-execution-shape) | Adding instances or workers to serve more work in parallel. A shared database can still limit throughput. |
+| [Vertical scaling](#match-compute-to-execution-shape) | Giving one machine or service instance more capacity, such as additional memory, instead of adding another worker. |
+| [Block storage](#choose-storage-from-access-semantics) | Storage presented as addressable blocks on a volume. The attached system can build a file system on it. |
+| [Amazon RDS](#choose-a-database-from-the-data-model-and-access-path) | Runs a managed relational database engine. Schema design, queries and application permissions remain customer decisions. |
+| [Amazon Redshift](#choose-a-database-from-the-data-model-and-access-path) | A managed analytical database designed to aggregate and query large datasets. Choose it around reporting and warehouse access patterns. |
+| [AWS Transit Gateway](#design-the-network-and-data-path) | A regional routing hub connecting VPCs and other networks. Attachments and route tables determine which networks can communicate. |
+| [AWS Direct Connect](#design-the-network-and-data-path) | A dedicated connectivity option between a customer network and AWS. Routing, redundancy and encryption are separate design decisions. |
+| [AWS PrivateLink](#design-the-network-and-data-path) | Provides private access to supported services through endpoints without requiring a routed connection between the entire provider and consumer networks. |
+| [AWS Lake Formation](#design-the-network-and-data-path) | Helps govern access to cataloged lake data. Data access must also be compatible with the underlying identity and storage controls. |
+| [Backpressure](#design-the-network-and-data-path) | A downstream stage forcing producers to slow or pause. If 120 events arrive per second and only 100 leave, backlog initially grows by 20 per second. |
+| [Amazon Athena](#design-the-network-and-data-path) | A serverless query service often used to run SQL over data in S3. File format and partition selection affect how much data it reads. |
+
+**Design Cost-Optimized Architectures**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Cost Explorer](#model-total-cost-not-one-price-line) | Analyzes historical AWS usage and charges by dimensions such as service or account to explain spending patterns. |
+| [AWS Pricing Calculator](#model-total-cost-not-one-price-line) | Estimates the cost of a proposed configuration from usage assumptions, useful before deployment. |
+| [Interruption tolerance](#match-commitment-and-interruption-tolerance) | A workload's ability to lose compute capacity and still finish its work, for example by resuming a batch from a checkpoint. |
+| [Savings Plans](#match-commitment-and-interruption-tolerance) | A pricing commitment to eligible compute usage measured as spend per hour over a term. Compare covered usage with the expected baseline. |
+| [Reserved Instance](#match-commitment-and-interruption-tolerance) | A billing commitment that discounts eligible matching usage. Capacity reservation benefits depend on the reservation type and scope. |
+| [Amazon S3](#find-hidden-storage-and-network-costs) | Object storage organized into buckets and keys. Retrieving a named object and mounting a block device are different access patterns. |
+| [S3 lifecycle policy](#find-hidden-storage-and-network-costs) | Rules that transition eligible objects to other storage classes or expire them according to criteria such as age or prefix. |
+
 ## Places to learn
 
 This is **not a complete list**, and it is not meant to be consumed in full. Choose one primary explanation route, do substantial hands-on design/failure work, then use legitimate practice results to select remediation. Prefer current SAA-C03 material and validate changing service behavior in first-party documentation.

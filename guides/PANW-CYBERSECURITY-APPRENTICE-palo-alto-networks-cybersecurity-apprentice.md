@@ -502,6 +502,95 @@ These are original explanation prompts, not exam items. Explain the answer and a
 
 The current issuer-linked [May 2026 datasheet](https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/apprentice-datasheet.pdf) is the detailed exam map: Cybersecurity 16%, Network Fundamentals 16%, Network Security 14%, Endpoint Security 10%, Cloud Security 13%, Security Operations 13%, and Identity Security 18%. It names AI-powered attacks, enterprise browsers, cloud-native security platforms, AI-assisted SOC work, and secrets in CI/CD as examples within those domains. Review the exact tasks; the separate issuer [Cybersecurity Academy](https://www2.paloaltonetworks.com/services/education/academy/learner) overview lists free Cybersecurity, Network Security, Cloud Security, Security Operations, and AI in Cybersecurity Fundamentals courses. Their lesson interiors and durations were not inspected, and this overview is supplementary rather than proof of the credential's exact digital path. **Related item:** Palo Alto's [PAN-OS 12.2 feature notes](https://docs.paloaltonetworks.com/ngfw/new-features/by-version/panos/12-2) give a current vendor-specific example of how firewall, certificate, inspection, and identity controls evolve. Those licensed product-version details are beyond this foundational exam; use the [release update index](https://docs.paloaltonetworks.com/resources/recent-release-note-updates) to locate current product notes, not to infer exam scope.
 
+## Key terms and phrases
+
+**Cybersecurity**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Vulnerability](#1-cybersecurity-16) | A weakness in a system or process that could permit harm. The associated risk depends on exposure, likelihood and impact. |
+| [Defense in depth](#1-cybersecurity-16) | Coordinating complementary safeguards so that one failed control does not expose the entire service or dataset. |
+| [Patch management](#1-cybersecurity-16) | Identifying applicable fixes, prioritizing and testing them, deploying them to the correct population and verifying the resulting state. |
+| [Segmentation](#1-cybersecurity-16) | Dividing resources into security boundaries and specifying the permitted communication between them. |
+| [Zero Trust](#1-cybersecurity-16) | An access model that evaluates the identity, resource and context of a request. Location on an internal network alone grants no trust. |
+
+**Network Fundamentals**
+
+| Term or phrase | Meaning |
+|---|---|
+| [DNS](#2-network-fundamentals-16) | The Domain Name System, which resolves names to records such as IP addresses so clients can locate services. |
+| [Asymmetric routing](#2-network-fundamentals-16) | Forward and return traffic following different network paths. A stateful device may lose visibility of half the flow. |
+| [North-south traffic](#2-network-fundamentals-16) | Traffic crossing into or out of an environment, such as an internet client connecting to an application behind its edge. |
+| [Packet](#2-network-fundamentals-16) | A network-layer unit carrying a source and destination IP address. Routers use the destination and their forwarding tables to send it onward. |
+| [Transmission Control Protocol (TCP)](#2-network-fundamentals-16) | A connection-oriented transport that provides an ordered byte stream and retransmits missing data while the connection can be maintained. |
+
+**Network Security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Network segmentation](#3-network-security-14) | Separating parts of a network and controlling the traffic allowed between them. |
+| [Broadcast domain](#3-network-security-14) | The set of interfaces that receive a Layer 2 broadcast. A VLAN divides a switched network into separate broadcast domains. |
+| [Encryption](#3-network-security-14) | Reversibly transforming data with a key to keep the plaintext unavailable to parties lacking the appropriate decryption capability. |
+| [Next-generation firewall (NGFW)](#3-network-security-14) | A firewall that uses application, user and threat information as well as network attributes to enforce policy. |
+| [Security association (SA)](#3-network-security-14) | A set of parameters, keys and counters defining how one direction of traffic is protected under IPsec. |
+| [Security zone](#3-network-security-14) | A logical grouping of interfaces that defines a policy boundary for traffic entering or leaving the firewall. |
+| [URL Filtering](#3-network-security-14) | Categorization and enforcement based on the web destination or available URL information, subject to policy and encryption visibility. |
+
+**Endpoint Security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Endpoint detection and response (EDR)](#4-endpoint-security-10) | Collection and analysis of endpoint activity to detect suspicious behavior, investigate it and support a response. |
+| [Attack surface](#4-endpoint-security-10) | The set of reachable services, interfaces, identities and other points that expose a system to interaction or harm. |
+| [Endpoint agent](#4-endpoint-security-10) | Software on a host that supplies activity data and applies configured prevention or response controls. |
+| [Operational technology (OT)](#4-endpoint-security-10) | Systems that monitor or control physical processes, such as industrial equipment. A failed control change can have immediate operational or safety effects. |
+| [Virtual machine (VM)](#4-endpoint-security-10) | An isolated software-defined computer with a guest operating system and virtual hardware allocated from a host. |
+
+**Cloud Security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Shared responsibility](#5-cloud-security-13) | The division of security tasks between a cloud customer and provider. The service model determines who operates each layer. |
+| [Continuous integration and continuous delivery (CI/CD)](#5-cloud-security-13) | Practices that integrate and verify changes and prepare or automate their delivery. Releasing to production may still require an explicit approval. |
+| [Observability](#5-cloud-security-13) | The ability to infer a system’s internal condition from its outputs, often by relating logs, metrics and traces to a particular request or failure. |
+| [Policy enforcement point (PEP)](#5-cloud-security-13) | The component that applies an access decision to the requested action or connection. |
+| [Promotion](#5-cloud-security-13) | Moving reviewed and tested content from development to production with controlled scope and a recovery path. |
+
+**Security Operations**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Security operations center (SOC)](#6-security-operations-13) | The people and processes that monitor security signals, investigate incidents and coordinate response. |
+| [False negative](#6-security-operations-13) | A target condition that occurs without the expected alert or block. Reviewing alerts alone cannot reveal every missed case. |
+| [False positive](#6-security-operations-13) | An alert that classifies benign activity as a target condition. Repeated benign alerts can distort operational priorities. |
+| [Incident](#6-security-operations-13) | A case that groups related alerts and evidence so an analyst can assess scope and coordinate a response. |
+| [Severity](#6-security-operations-13) | A rating of expected or observed impact. It differs from confidence, which expresses how strongly the evidence supports the assessment. |
+| [Authenticity](#telemetry-coverage-changes-the-meaning-of-a-score) | Confidence that an entity, message or artifact is what it claims to be, based on an appropriate means of verification. |
+| [Telemetry](#telemetry-coverage-changes-the-meaning-of-a-score) | Records of activity from endpoints, networks or other systems that investigators can correlate into a timeline. |
+| [Timestamp](#telemetry-coverage-changes-the-meaning-of-a-score) | A recorded time associated with an event. Distinguish source event time from collection or indexing time when building a timeline. |
+
+**Identity Security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Multifactor authentication (MFA)](#7-identity-security-18) | Verifying a user through at least two distinct factor types, such as a password and possession of a security key. |
+| [Certificate authority (CA)](#7-identity-security-18) | A trusted issuer that signs certificates linking subjects to public keys under a stated policy. |
+| [Certificate revocation](#7-identity-security-18) | Marking a certificate as no longer trustworthy before its expiry, with status distributed through a mechanism such as a revocation list or online responder. |
+| [Digital signature](#7-identity-security-18) | A cryptographic value produced with a private key and checked with its corresponding public key to authenticate signed data and detect alteration. |
+| [Identity provider (IdP)](#7-identity-security-18) | The service that authenticates a user and supplies identity information to the relying access service. |
+| [Workload identity](#authentication-strength-and-workload-permissions) | An identity used by software, such as a service account, to authenticate and access resources without acting as a human user. |
+| [Authentication](#authentication-strength-and-workload-permissions) | Checking that a claimant controls an authenticator bound to the claimed identity. It precedes the separate decision about permitted actions. |
+| [Phishing-resistant authentication](#authentication-strength-and-workload-permissions) | Authentication designed to prevent an impostor service from reusing the proof supplied for a legitimate service, such as a credential bound to the correct origin. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Ransomware](#scenario-1-small-company-ransomware-path) | Malicious software associated with extortion, often by denying access to data. The incident can also involve disclosure or destruction. |
+| [Alert](#scenario-3-noisy-impossible-travel-alert) | A detection output identifying an event or pattern that warrants assessment. |
+| [Certificate inspection](#october-29-2026-current-source-update) | Examining available TLS negotiation and certificate information without decrypting the application payload. |
+| [PAN-OS firewall operating system](#october-29-2026-current-source-update) | The operating system used by Palo Alto Networks next-generation firewalls. The effective policy and data path determine how a particular flow is treated. |
+
 ## Places to learn
 
 This is not a complete list. Choose resources for demonstrated gaps; listing a resource does not establish lesson quality, complete alignment or a passing guarantee. Distinguish public metadata, selected reference reading and actual practice. Times below are estimates except where publisher metadata is explicitly identified.

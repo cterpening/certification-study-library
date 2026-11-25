@@ -430,6 +430,91 @@ Correlate audit log, identity, resource, outpost/scanner job, API/egress/storage
 - [ ] I can answer all original checks and complete the labs with architecture, configuration, logs, tests, failures and rollback.
 - [ ] I rechecked the live page, July 2026 datasheet, handbook, Cortex Cloud release/help, provider integration templates, support matrices and registration.
 
+## Key terms and phrases
+
+**Planning and installation**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Cortex Cloud](#11-evaluate-the-existing-infrastructure) | Palo Alto Networks cloud security capabilities for relating application, infrastructure posture and runtime risk across cloud environments. |
+| [Data classification](#11-evaluate-the-existing-infrastructure) | Assigning sensitivity categories to information so access and inspection policy can reflect its handling requirements. |
+| [Ingestion](#12-deployment-licensing-ingestion-scanning-iam) | Bringing source records into the security platform for analysis. Missing input limits what a dashboard can show. |
+| [Remediation](#12-deployment-licensing-ingestion-scanning-iam) | Action taken to remove or correct the cause of an incident after its immediate effects are contained. |
+| [Authorization](#13-network-communication) | Determining whether a given identity may perform a specific action on the particular resource requested. |
+| [Identity provider (IdP)](#13-network-communication) | The service that authenticates a user and supplies identity information to the relying access service. |
+| [Role-based access control (RBAC)](#14-tenant-identity-roles-permissions-and-access) | Assigning permissions through roles so each operator can perform only the tasks authorized for their scope. |
+| [Telemetry](#14-tenant-identity-roles-permissions-and-access) | Records of activity from endpoints, networks or other systems that investigators can correlate into a timeline. |
+| [Tenant](#14-tenant-identity-roles-permissions-and-access) | An administrative or customer boundary in a shared service. Data, identities, configurations and actions must stay within the intended tenant. |
+| [Retention](#15-cost-optimization) | The period for which telemetry remains available for investigation. A search outside that period cannot establish inactivity. |
+
+**Integration**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Agentless scanning](#21-cloud-provider-resources) | Inspection through a cloud provider’s interfaces or snapshots without placing a continuously running security agent inside the workload. |
+| [Encryption](#21-cloud-provider-resources) | Reversibly transforming data with a key to keep the plaintext unavailable to parties lacking the appropriate decryption capability. |
+| [Workload identity](#22-data-and-ai-sources) | An identity used by software, such as a service account, to authenticate and access resources without acting as a human user. |
+| [Container registry](#24-container-registries) | A service that stores and distributes container images. Scanning an image there can reveal issues before it is deployed. |
+| [Container](#24-container-registries) | An isolated application process and its dependencies that ordinarily shares the host kernel. Its image is the packaged input used to start it. |
+| [Static application security testing (SAST)](#25-third-party-sastsca) | Examining application code without running it to identify potentially unsafe patterns or data flows. |
+| [Software composition analysis (SCA)](#25-third-party-sastsca) | Inventory and analysis of an application's third-party dependencies for issues such as known vulnerabilities. |
+| [Deduplication](#25-third-party-sastsca) | Recognizing and handling repeated copies of the same observation or request so duplication does not inflate counts or repeat an action. |
+| [Broker VM](#26-broker-vm) | A virtual appliance that hosts supported applets and connects data sources or services to the Cortex tenant. |
+| [Virtual machine (VM)](#26-broker-vm) | An isolated software-defined computer with a guest operating system and virtual hardware allocated from a host. |
+
+**Posture security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Cortex Query Language (XQL)](#31-xql-dashboards) | The Cortex query language used to select, filter and summarize records from datasets for an investigation. |
+| [Asset group](#32-asset-groups) | A named selection of cloud resources used to scope policies, views or access. |
+| [Cloud security rule](#33-cloud-security-rules-and-policies) | A posture assessment condition applied to selected cloud resources. Its effectiveness depends on inventory coverage and rule scope. |
+| [Containment](#34-cloud-workload-rules-and-policies) | Limiting the scope or ongoing effects of an incident, such as isolating the affected device under an approved response plan. |
+| [Vulnerability](#35-vulnerability-policies) | A weakness in a system or process that could permit harm. The associated risk depends on exposure, likelihood and impact. |
+| [Kubernetes connector](#37-kubernetes-connectors) | An integration that supplies the platform with cluster inventory or posture data according to its granted permissions. |
+| [High availability (HA)](#37-kubernetes-connectors) | A design that keeps a site operating through a device or path failure, with enough remaining capacity to serve required traffic. |
+
+**Runtime security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Runtime agent](#41-xdr-agents) | Software deployed on a workload to observe execution and apply supported prevention controls. |
+| [Extended detection and response (XDR)](#41-xdr-agents) | Correlating evidence across endpoints and additional sources to support detection, investigation and response in a common operational context. |
+| [Cortex XDR endpoint agent](#41-xdr-agents) | Software on a supported endpoint that supplies telemetry and applies its effective protection settings. |
+| [Endpoint group](#42-endpoint-protection) | A selection of devices targeted by endpoint management or protection policy. Membership determines which assignments apply. |
+| [Prevention profile](#42-endpoint-protection) | A set of endpoint protection settings referenced by a policy to determine how specified activity should be detected or blocked. |
+| [API gateway](#43-api-gateway-integration) | An entry point that routes API requests and can enforce controls such as authentication, request limits and logging before traffic reaches backends. |
+| [Approval gate](#44-cdr-and-threat-management) | A point where an authorized person must review available evidence before a workflow performs a sensitive or high-impact action. |
+| [Correlation rule](#44-cdr-and-threat-management) | Logic that relates events using keys, thresholds or a time window, such as repeated failures for one account followed by a success. |
+
+**Application security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Application security posture management (ASPM)](#51-aspm-and-business-applications) | Bringing findings from code, builds and deployments into application context so owners can prioritize risk. |
+| [Continuous integration and continuous delivery (CI/CD)](#52-code-ai-guardrails-and-cicd-policy) | Practices that integrate and verify changes and prepare or automate their delivery. Releasing to production may still require an explicit approval. |
+| [Configuration drift](#53-repository-scanning-and-drift) | A difference between the deployed state of a resource and its intended configuration in source control. |
+
+**Troubleshooting**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Infrastructure as code (IaC)](#61-csp-iam-iac-organization-onboarding-ingestion) | Expressing infrastructure configuration in versionable files so changes can be reviewed, reproduced and applied through automation. |
+| [Canary deployment](#62-workload-components) | Deploying a change to a limited, representative population first and evaluating its behavior before expanding exposure. |
+| [Evidence preservation](#63-outpost-communication) | Maintaining the integrity and provenance of information needed for investigation, including original timestamps, collection method and access history. |
+| [Webhook](#64-vcsci-authentication-and-webhooks) | An event-driven message sent to a configured endpoint, such as a repository notification that triggers a scan. |
+| [Authentication](#64-vcsci-authentication-and-webhooks) | Checking that a claimant controls an authenticator bound to the claimed identity. It precedes the separate decision about permitted actions. |
+| [Incident](#67-unexpected-cloud-cost) | A case that groups related alerts and evidence so an analyst can assess scope and coordinate a response. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Cloud-native application protection platform (CNAPP)](#multicloud-cnapp-migration) | A platform combining multiple cloud security capabilities across development, posture and runtime so related risks can be assessed together. |
+| [Multicloud](#multicloud-cnapp-migration) | Use of services from multiple cloud providers. Common objectives can require different identities, APIs or controls in each provider. |
+| [Commit](#vulnerable-service-from-commit-to-runtime) | Validating and applying a candidate configuration on the relevant management system. Distributing a centrally managed change to devices is a separate step. |
+| [Playbook](#suspected-credential-abuse-and-cost-spike) | A defined workflow for handling a type of case, including inputs, decisions, actions and evidence. |
+
 ## Places to learn
 
 This is a selective starting set, not a complete list and not a prescription to consume everything. Pick and choose the official documentation, provider fundamentals, focused courses, and hands-on labs that close your gaps. Times are planning estimates unless a provider publishes duration; access, licensing, titles, versions and pricing can change.

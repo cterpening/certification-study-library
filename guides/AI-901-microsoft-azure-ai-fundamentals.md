@@ -13,7 +13,9 @@ upcoming_change_checked: 2026-10-28
 
 # AI-901 Microsoft Azure AI Fundamentals Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-03.md#ai-901) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ai-901-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-901) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-02.md#ai-901)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-03.md#ai-901) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ai-901-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-901) is authoritative.
 
 **Current baseline:** Skills measured as of April 15, 2026<br>
 **Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
@@ -24,6 +26,8 @@ upcoming_change_checked: 2026-10-28
 The September 28 [deep-review report](../docs/research/2026-09-28-ai-901-deep-review.md) maps all **29 detailed objectives** across seven groups. This guide adds six worked examples, eight labs and 36 explained checks. Cloud examples were syntax-checked only; the invoice validator and synthetic arithmetic were checked locally. No Azure lab or paid lesson was executed or watched.
 
 The [certification page](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/) lists 13 exam languages and links the sign-in Practice Assessment. Its empty training widgets do not invalidate the directly available course and learning paths below. The retrieved page did not establish a current exam duration; confirm appointment details when scheduling.
+
+**Practice check.** Use the prebuilt invoice analyzer when the requested fields match its existing schema. For organization-specific document fields, extend a document base analyzer with a custom schema. For a search use case, consider the retrieval-oriented analyzers. [Source notes and publisher link](../docs/research/2026-11-20-microsoft-refresh-group-02.md#ai-901)
 
 ## How to use this guide
 
@@ -870,7 +874,81 @@ These original practice scenarios are not recalled exam questions. Explain your 
 
 ---
 
+## Key terms and phrases
+
+**AI workloads and techniques**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Prediction](#what-ai-systems-do) | A model output estimating an unknown value or category from supplied input data. |
+| [Classification](#choose-the-workload-from-the-required-output) | Assigning an input to one or more predefined categories, such as labeling a support request by topic. |
+| [Computer vision](#choose-the-workload-from-the-required-output) | Interpreting or generating image or video content for tasks such as locating objects or describing a scene. |
+| [Generative model](#generative-models) | A model that produces new content, such as text or an image, from patterns learned during training and the input it receives. |
+| [Context window](#generative-models) | The amount of input and generated output a model can accommodate in one interaction, measured in tokens. |
+| [Token](#generative-models) | A unit of model input or output that may represent part of a word, a whole word or another symbol. |
+| [Chunk](#worked-example-1-fit-evidence-into-a-context-budget) | A bounded portion of a source document indexed and retrieved as a unit of evidence. |
+| [Agent](#agents) | A system that uses a model, instructions and available tools to carry out a task. |
+| [Tool](#agents) | A callable operation an agent can request to retrieve information or perform a permitted action. |
+
+**Responsible AI**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Fairness](#apply-the-principles-to-one-system) | Assessing and addressing differences in how an AI system affects people or groups. |
+| [Transparency](#apply-the-principles-to-one-system) | Making a system's use, capabilities and limitations understandable to the people affected by it. |
+| [Accountability](#apply-the-principles-to-one-system) | Assigning people responsibility for design decisions, oversight and the consequences of system use. |
+
+**Microsoft Foundry foundations**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Model deployment](#model-catalog-deployment-and-endpoints) | A configured instance of a selected model made available for applications to call. |
+| [Model card](#model-catalog-deployment-and-endpoints) | Documentation of a model's intended uses, capabilities, limitations and evaluation evidence. |
+| [Endpoint](#model-catalog-deployment-and-endpoints) | The address a client calls to send a request to a deployed model or service. |
+| [Prompt](#prompting-and-model-interaction) | Instructions and context sent to a model to request an output. |
+| [System instruction](#prompting-and-model-interaction) | Guidance supplied by the application to set model behavior, response style and restrictions. |
+
+**Generative and agentic implementation**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Tool call](#trace-a-single-agent-turn) | A model's request to use a named operation with arguments that the application checks before execution. |
+| [Groundedness](#evaluation) | How well the claims in a generated answer are supported by the evidence supplied to the model. |
+| [Ground truth](#evaluation) | The expected labels, answers or outcomes used to judge model behavior on the evaluation set. |
+
+**Text, speech, and translation**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Named entity recognition](#text-workloads) | Identifying mentions such as people, organizations or locations in text and labeling their types. |
+| [Sentiment analysis](#text-workloads) | A text analysis task that estimates the sentiment expressed in a passage. |
+| [Key phrase extraction](#text-workloads) | Selecting words or phrases that capture the main subjects discussed in a passage. |
+| [Speech synthesis](#speech-workloads) | Generating spoken audio from text, for example to read an answer aloud. |
+| [Speech recognition](#speech-workloads) | Converting a spoken utterance to text that a downstream application can interpret or translate. |
+| [Word error rate (WER)](#worked-example-3-measure-speech-errors-and-meaning) | The sum of substitutions, deletions and insertions divided by the number of words in a reference transcript. |
+| [Translation](#translation) | Converting meaning from a source language into a target language while preserving relevant context. |
+
+**Vision and multimodal workloads**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Multimodal input](#6-vision-and-multimodal-workloads) | Input combining or selecting among forms such as text, images and audio for a model to interpret. |
+| [Image classification](#6-vision-and-multimodal-workloads) | Assigning one or more labels to an entire image. |
+| [Object detection](#6-vision-and-multimodal-workloads) | Locating individual objects in an image and assigning each a category. |
+
+**Content Understanding and information extraction**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Information extraction](#separate-extraction-stages-and-evidence) | Converting source content into selected fields or facts that can be checked against the original. |
+| [Optical character recognition (OCR)](#separate-extraction-stages-and-evidence) | The extraction of readable text from an image or scanned page, before field interpretation or business validation. |
+| [Confidence score](#separate-extraction-stages-and-evidence) | A service's estimated confidence in an extracted value that should be tested against representative ground truth. |
+| [Schema](#worked-example-5-valid-json-can-still-contain-the-wrong-total) | A specification of expected output fields and types used to validate a structured response. |
+| [Coverage](#worked-example-6-completion-accuracy-and-coverage-differ) | The fraction of eligible items for which a system produced an output, measured separately from the accuracy of those outputs. |
+
 ## Places to learn
+
+**Suggested practice.** Read the knowledge base and connection units, then draw the path from an enterprise data source to an agent’s cited answer. 38 minutes for the module (Microsoft Learn, 7 units). [Get started with Microsoft Foundry IQ](https://learn.microsoft.com/en-us/training/modules/get-started-foundry-iq/)
 
 This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Pick the formats that fit you. Times are approximate consumption time at normal speed; labs, note-taking, review, and independent practice add time.
 

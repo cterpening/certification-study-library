@@ -1,0 +1,18 @@
+{
+  "exam_code": "COF-C03",
+  "guide_section": "Reason across the three service layers",
+  "objective": "•Use the Snowflake AI Data Cloud architecture",
+  "source_ids": ["snowflake-architecture"],
+  "visual": {
+    "title": "Do two warehouses need two copies of ORDERS?",
+    "nodes": [
+      {"id": "orders", "label": "One ORDERS table in shared storage"},
+      {"id": "reporting", "label": "Reporting warehouse (daily totals)"},
+      {"id": "analytics", "label": "Analytics warehouse (trend analysis)"}
+    ],
+    "edges": [
+      {"from": "orders", "to": "reporting", "label": "queried using"},
+      {"from": "orders", "to": "analytics", "label": "queried using"}
+    ]
+  }
+}

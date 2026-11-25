@@ -88,7 +88,13 @@ def exam_context(code: str, root: Path = ROOT) -> dict:
         raise ValueError(f"Expected one published guide for {code}; use prepare for new-guide intake")
     exam = matches[0]
     guide_path = exam["guide_path"]
-    objective_path = f"data/objective-snapshots/{exam['code'].lower()}-official-objectives.txt"
+    snapshot_dir = safe_path(root, "data/objective-snapshots")
+    objective_name = f"{exam['code'].lower()}-official-objectives.txt"
+    # Some accepted baselines retain the vendor's uppercase exam code in Git.
+    snapshot_matches = [path for path in snapshot_dir.iterdir() if path.name.casefold() == objective_name]
+    if len(snapshot_matches) != 1:
+        raise ValueError(f"Expected one accepted objective snapshot named {objective_name} (ignoring case)")
+    objective_path = repository_relative(snapshot_matches[0], root)
     guide = safe_path(root, guide_path).read_text(encoding="utf-8")
     objectives = safe_path(root, objective_path).read_text(encoding="utf-8")
     source_rows = read_json(safe_path(root, "data/sources.json"))["sources"]
@@ -154,6 +160,28 @@ def objective_present(objective: str, snapshot: str) -> bool:
     return False
 
 
+def validate_visual(visual: dict) -> None:
+    _keys(visual, {"title", "nodes", "edges"}, "visual")
+    _text(visual["title"], "visual.title", 180)
+    if not isinstance(visual["nodes"], list) or not 2 <= len(visual["nodes"]) <= 12:
+        raise ValueError("A visual needs 2–12 nodes")
+    node_ids = set()
+    for node in visual["nodes"]:
+        _keys(node, {"id", "label"}, "visual node")
+        node_id = _text(node["id"], "node.id", 64)
+        if not SLUG.fullmatch(node_id) or node_id in node_ids:
+            raise ValueError("Visual node IDs must be unique lowercase slugs")
+        node_ids.add(node_id)
+        _text(node["label"], "node.label", 160)
+    if not isinstance(visual["edges"], list) or not 1 <= len(visual["edges"]) <= 24:
+        raise ValueError("A visual needs 1–24 edges")
+    for edge in visual["edges"]:
+        _keys(edge, {"from", "to", "label"}, "visual edge")
+        if edge["from"] not in node_ids or edge["to"] not in node_ids or edge["from"] == edge["to"]:
+            raise ValueError("Visual edges must connect two different declared nodes")
+        _text(edge["label"], "edge.label", 100)
+
+
 def validate_content(content: dict, context: dict) -> None:
     _keys(content, {"schema_version", "exam_code", "language", "scope_note", "units"}, "content")
     if type(content["schema_version"]) is not int or content["schema_version"] != 1:
@@ -189,25 +217,7 @@ def validate_content(content: dict, context: dict) -> None:
         scenario = _keys(unit["scenario"], {"question", "answer"}, "scenario")
         _text(scenario["question"], "scenario.question")
         _text(scenario["answer"], "scenario.answer")
-        visual = _keys(unit["visual"], {"title", "nodes", "edges"}, "visual")
-        _text(visual["title"], "visual.title", 180)
-        if not isinstance(visual["nodes"], list) or not 2 <= len(visual["nodes"]) <= 12:
-            raise ValueError("A visual needs 2–12 nodes")
-        node_ids = set()
-        for node in visual["nodes"]:
-            _keys(node, {"id", "label"}, "visual node")
-            node_id = _text(node["id"], "node.id", 64)
-            if not SLUG.fullmatch(node_id) or node_id in node_ids:
-                raise ValueError("Visual node IDs must be unique lowercase slugs")
-            node_ids.add(node_id)
-            _text(node["label"], "node.label", 160)
-        if not isinstance(visual["edges"], list) or not 1 <= len(visual["edges"]) <= 24:
-            raise ValueError("A visual needs 1–24 edges")
-        for edge in visual["edges"]:
-            _keys(edge, {"from", "to", "label"}, "visual edge")
-            if edge["from"] not in node_ids or edge["to"] not in node_ids or edge["from"] == edge["to"]:
-                raise ValueError("Visual edges must connect two different declared nodes")
-            _text(edge["label"], "edge.label", 100)
+        validate_visual(unit["visual"])
         dialogue = unit["dialogue"]
         if not isinstance(dialogue, list) or not 2 <= len(dialogue) <= 120:
             raise ValueError("Each unit needs 2–120 dialogue turns")
@@ -232,17 +242,28 @@ def visual_description(visual: dict) -> str:
     return "; ".join(f"{labels[edge['from']]} — {edge['label']} → {labels[edge['to']]}" for edge in visual["edges"])
 
 
-def render_svg(visual: dict) -> str:
+def render_svg(visual: dict, *, group_origins: bool = False) -> str:
     """Render a readable relationship list, retaining every edge without crossings."""
-    rows = []
+    groups = []
+    previous_group = None
     height = 86
+    edges = visual["edges"]
+    shared_target = (
+        group_origins and len(edges) > 1
+        and len({edge["to"] for edge in edges}) == 1
+        and len({edge["from"] for edge in edges}) == len(edges)
+    )
+    group_by = "to" if shared_target else "from"
     labels = {node["id"]: node["label"] for node in visual["nodes"]}
-    for edge in visual["edges"]:
+    for edge in edges:
         left = textwrap.wrap(labels[edge["from"]], 30) or [""]
         right = textwrap.wrap(labels[edge["to"]], 30) or [""]
         middle = textwrap.wrap(edge["label"], 18) or [""]
         row_height = max(len(left), len(right), len(middle) + 1) * 22 + 32
-        rows.append((height, row_height, left, right, middle))
+        if not group_origins or edge[group_by] != previous_group:
+            groups.append([])
+        groups[-1].append((height, row_height, left, right, middle))
+        previous_group = edge[group_by]
         height += row_height + 18
     title_lines = textwrap.wrap(visual["title"], 65)
     title_height = max(0, len(title_lines) - 1) * 25
@@ -257,16 +278,39 @@ def render_svg(visual: dict) -> str:
     ]
     for index, line in enumerate(title_lines):
         output.append(f'<text x="28" y="{36 + index * 25}" font-size="23" font-weight="bold">{escape(line)}</text>')
-    for top, row_height, left, right, middle in rows:
-        top += title_height
-        for x, lines, fill in ((28, left, "#dbeafe"), (652, right, "#dcfce7")):
-            output.append(f'<rect x="{x}" y="{top}" width="320" height="{row_height}" rx="10" fill="{fill}" stroke="#64748b"/>')
-            for index, line in enumerate(lines):
-                output.append(f'<text x="{x + 16}" y="{top + 30 + index * 22}" font-size="17">{escape(line)}</text>')
-        arrow_y = top + row_height - 19
-        output.append(f'<path d="M360,{arrow_y} H637" stroke="#334155" stroke-width="2" fill="none" marker-end="url(#arrow)"/>')
-        for index, line in enumerate(middle):
-            output.append(f'<text x="500" y="{top + 27 + index * 22}" text-anchor="middle" font-size="16">{escape(line)}</text>')
+    def box(x, top, box_height, lines, fill):
+        output.append(f'<rect x="{x}" y="{top}" width="320" height="{box_height}" rx="10" fill="{fill}" stroke="#64748b"/>')
+        for index, line in enumerate(lines):
+            output.append(f'<text x="{x + 16}" y="{top + 30 + index * 22}" font-size="17">{escape(line)}</text>')
+
+    for rows in groups:
+        first_top, first_height, left, right, _ = rows[0]
+        shared_top = first_top + title_height
+        if len(rows) > 1:
+            first_y = shared_top + first_height - 19
+            last_y = rows[-1][0] + title_height + rows[-1][1] - 19
+            center = (first_y + last_y) // 2
+            shared_top = center - first_height // 2
+            if shared_target:
+                output.append(f'<path d="M616,{first_y} V{last_y}" stroke="#334155" stroke-width="2" fill="none"/>')
+                output.append(f'<path d="M616,{center} H648" stroke="#334155" stroke-width="2" fill="none" marker-end="url(#arrow)"/>')
+            else:
+                output.append(f'<path d="M348,{center} H360 M360,{first_y} V{last_y}" stroke="#334155" stroke-width="2" fill="none"/>')
+        if shared_target:
+            box(652, shared_top, first_height, right, "#dcfce7")
+        else:
+            box(28, shared_top, first_height, left, "#dbeafe")
+        for top, row_height, left, right, middle in rows:
+            top += title_height
+            arrow_y = top + row_height - 19
+            if shared_target:
+                box(28, top, row_height, left, "#dbeafe")
+                output.append(f'<path d="M348,{arrow_y} H616" stroke="#334155" stroke-width="2" fill="none"/>')
+            else:
+                box(652, top, row_height, right, "#dcfce7")
+                output.append(f'<path d="M360,{arrow_y} H637" stroke="#334155" stroke-width="2" fill="none" marker-end="url(#arrow)"/>')
+            for index, line in enumerate(middle):
+                output.append(f'<text x="500" y="{top + 27 + index * 22}" text-anchor="middle" font-size="16">{escape(line)}</text>')
     return "\n".join([*output, "</g>", "</svg>", ""])
 
 
@@ -349,6 +393,13 @@ def load_package(package_dir: Path, root: Path = ROOT) -> dict:
     manifest = read_json(safe_path(package_dir, "manifest.json"))
     content_path = safe_path(root, manifest.get("content_path", ""))
     expected, artifacts = compile_content(content_path, root)
+    # Older Windows packages used the lowercase spelling for this same snapshot.
+    objective = expected["objective_path"]
+    legacy = objective.lower()
+    if objective != legacy and manifest.get("objective_path") == legacy:
+        expected["objective_path"] = legacy
+        hashes = expected["input_fingerprints"]
+        hashes[legacy] = hashes.pop(objective)
     if manifest != expected:
         raise ValueError("Study pack is stale or its manifest was modified; rebuild and review it")
     expected_files = {"manifest.json", *artifacts}

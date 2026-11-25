@@ -148,6 +148,7 @@ CERTIFICATION_LIST_COLUMNS = (
     "aliases",
 )
 CERTIFICATION_SEED_STATUSES = {
+    "announced",
     "active",
     "beta",
     "legacy",

@@ -547,6 +547,76 @@ These are original explanation prompts, not recalled certification items.
 
 The current Associate Developer public exam route remains the scope authority. Recent developer-facing Atlas updates include Shell Syntax Mode in Atlas Data Explorer and Compass, which accepts familiar shell literals such as `ObjectId()` and `ISODate()` while the application still works with BSON/EJSON contracts. Atlas Vector Search now stores source fields in its index to avoid unnecessary document fetches (GA); advanced HNSW configuration exposes `maxEdges` and `numEdgeCandidates`, while exact vector-similarity aggregation expressions remain marked public preview in the changelog. Test previews separately from production behavior and measure recall, latency, index cost, and consistency on representative data. Product updates do not expand the certification outline. [MongoDB Atlas changelog](https://www.mongodb.com/docs/atlas/release-notes/changelog/).
 
+## Key terms and phrases
+
+**MongoDB Overview and the Document Model**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Schema](#1-mongodb-overview-and-the-document-model-8) | The declared structure and types expected for stored data. Compare producer and consumer expectations before accepting a changed field. |
+| [Schema enforcement](#1-mongodb-overview-and-the-document-model-8) | Checking incoming records against expected fields, types or constraints before accepting them into a governed dataset. |
+| [Collection](#1-mongodb-overview-and-the-document-model-8) | A named group of documents within a database. Documents may vary in shape unless validation rules constrain them. |
+| [Document](#1-mongodb-overview-and-the-document-model-8) | A record of named fields and typed values that can include nested objects or arrays. |
+| [ObjectId](#1-mongodb-overview-and-the-document-model-8) | A BSON identifier type commonly used for the default _id. A hexadecimal-looking string and an ObjectId are different BSON types. |
+| [Reference](#1-mongodb-overview-and-the-document-model-8) | A link from one document to another by identifier, allowing related data to be stored and updated separately. |
+| [Schema migration](#1-mongodb-overview-and-the-document-model-8) | Moving documents and application readers or writers between data shapes while handling versions that coexist during rollout. |
+| [Binary JSON (BSON)](#make-the-type-and-document-boundary-observable) | MongoDB’s typed binary representation for documents. An ObjectId and a string with the same visible characters have different types. |
+
+**CRUD**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Aggregation](#2-crud-51) | Combining a group of records into a summary such as count, sum or average, at a declared grouping level. |
+| [Idempotence](#2-crud-51) | Repeatedly applying the same logical input leaves the same intended state as applying it once, which makes retry and replay safer. |
+| [Document identifier (_id)](#2-crud-51) | The required identifier field distinguishing documents in a standard collection. |
+| [Update operator](#2-crud-51) | A modifier such as $set that changes selected fields without replacing the whole document. |
+| [Array element match](#2-crud-51) | A query condition requiring a single array element to satisfy all specified criteria, avoiding matches split across different elements. |
+| [Aggregation pipeline](#2-crud-51) | A sequence of stages that filter, transform, group or combine input documents to produce a result. |
+| [Query filter](#predict-the-result-before-choosing-syntax) | A document describing the conditions a stored document must satisfy to match an operation. |
+| [Projection](#predict-the-result-before-choosing-syntax) | A specification selecting which fields a query returns for each matching document. |
+| [Null value](#predict-the-result-before-choosing-syntax) | A marker for a missing or unknown value. Count and comparison operations may treat it differently from a supplied zero. |
+| [Upsert](#predict-the-result-before-choosing-syntax) | An operation that updates an existing matching record or inserts one when there is no match. |
+| [Transaction](#predict-the-result-before-choosing-syntax) | A group of database operations whose changes are committed together or discarded together within the guarantees of the database. |
+
+**Indexes**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Predicate](#3-indexes-17) | A condition used to decide which records match a query or qualify for a transformation. |
+| [Join](#3-indexes-17) | Combining records from multiple inputs according to a matching condition. A repeated key can yield more rows than either input leads you to expect. |
+| [Index](#3-indexes-17) | An auxiliary structure organizing keys for faster lookup or ordered access, with a corresponding cost for maintenance and storage. |
+| [Selectivity](#3-indexes-17) | How narrowly a filter restricts matching rows. A selective condition can reduce work if the access path can use it. |
+| [Full scan](#3-indexes-17) | Examining an entire table or collection to locate relevant records, in contrast with a more selective access path. |
+| [Sort order](#3-indexes-17) | The key sequence and direction used to order returned documents. Include a stable tie-breaker for repeatable pagination. |
+| [Multikey index](#3-indexes-17) | An index containing entries derived from array elements, with restrictions affecting compound keys and query behavior. |
+| [Compound index](#index-candidates-are-hypotheses) | An index whose keys contain multiple fields in a defined order. That order affects which queries and sorts it can support. |
+| [Unique index](#index-candidates-are-hypotheses) | An index enforcing uniqueness of its indexed key according to the index definition, useful for preventing duplicate business identifiers. |
+| [Shard key](#index-candidates-are-hypotheses) | The specified field or fields MongoDB uses to distribute documents in a sharded collection and target eligible queries. |
+
+**Data Modeling**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Embedding](#4-data-modeling-4) | Storing related data inside a parent document so associated values can be read or updated together. |
+| [Cardinality](#4-data-modeling-4) | The number of members in the set being considered, such as distinct values of a field or rows in a query result. |
+| [Reconciliation](#4-data-modeling-4) | Comparing source and target results for the same scope, such as record counts and amounts in a given business day. |
+
+**Language-specific Drivers**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Database](#6-language-specific-drivers-18) | A MongoDB namespace containing collections and associated database-level permissions. |
+| [Write concern](#6-language-specific-drivers-18) | The level of acknowledgement required from a MongoDB write before the client treats it as successful. |
+| [Connection pool](#6-language-specific-drivers-18) | A reusable set of driver-managed connections that limits repeated setup work and bounds concurrent database use. |
+| [Cursor](#translate-contracts-not-just-method-names) | A handle through which a driver retrieves matching results, often in batches rather than loading every document at once. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Idempotency key](#scenario-1-idempotent-order-intake) | An identifier reused across attempts to recognize the same logical request and avoid duplicate effects. |
+| [Single-document atomicity](#scenario-2-inventory-reservation-under-competing-requests) | The guarantee that a single write to one document takes effect as a whole, including changes to multiple fields. |
+
 ## Places to learn
 
 This is not a complete list. Choose material for the registered language and identified gaps. Public catalog metadata does not establish lesson quality or current exam alignment. No paid lessons, practice-question interiors, enrollment, trial or purchase was accessed.

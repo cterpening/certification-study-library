@@ -468,6 +468,89 @@ These explain the original prompts; they are not an official answer key or a pre
 39. Responsibilities depend on the service and contract, but customers commonly retain identity, configuration, data handling, authorized use and monitoring of their obligations.
 40. State the business outcome, feasible options, evidence, cost/uncertainty, residual exposure and authorized decision. A product purchase alone does not establish a managed response.
 
+## Key terms and phrases
+
+**Governance**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Risk appetite](#align-risk-with-enterprise-objectives) | The amount and type of risk an organization is willing to take in pursuit of its objectives. |
+| [Risk tolerance](#align-risk-with-enterprise-objectives) | The permitted variation around a particular objective or exposure that helps determine when to escalate. |
+| [Assurance](#align-risk-with-enterprise-objectives) | Confidence derived from relevant evidence that a claim or control objective is supported for a specified scope and period. |
+| [Compensating control](#align-risk-with-enterprise-objectives) | An alternative safeguard that addresses the same underlying risk when a preferred control cannot be used. |
+| [Disaster recovery plan (DRP)](#align-risk-with-enterprise-objectives) | The procedures and resources for restoring technology and data after a major disruption, in an order that supports business priorities. |
+| [Guideline](#align-risk-with-enterprise-objectives) | Advisory guidance that supports judgment and consistent practice, rather than imposing a mandatory procedure. |
+| [Metrics](#align-risk-with-enterprise-objectives) | Numerical time series used to quantify behavior such as latency, error rate or capacity. Aggregation and labels determine what the values represent. |
+| [Procedure](#align-risk-with-enterprise-objectives) | An ordered set of instructions for carrying out a defined activity, with enough detail for the responsible person to execute it consistently. |
+| [Risk capacity](#align-risk-with-enterprise-objectives) | The maximum exposure an organization can withstand given its resources and obligations. It places an outer bound on appetite. |
+| [Due care](#make-escalation-a-decision-process) | Taking reasonable protective action given the circumstances, such as putting an appropriate safeguard into operation. |
+| [Risk mitigation](#make-escalation-a-decision-process) | Reducing the likelihood or impact of a risk by applying safeguards, changing a process or improving resilience. |
+
+**Risk Assessment**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Risk scenario](#identify-complete-relevant-scenarios) | A description of a plausible event or condition, the asset or process it touches and the resulting business consequence. |
+| [Maximum tolerable downtime (MTD)](#identify-complete-relevant-scenarios) | The longest interruption the business can tolerate before the impact becomes unacceptable. Restoration targets need to leave time for business recovery. |
+| [Threat intelligence](#identify-complete-relevant-scenarios) | Assessed information about adversary activity or indicators, with source, context and freshness to guide a decision. |
+| [Threat modeling](#identify-complete-relevant-scenarios) | Analyzing a software design’s assets, trust boundaries and potential failure or misuse paths to choose suitable controls early. |
+| [Inherent risk](#analyze-evaluate-and-record-risk) | Exposure assessed before considering the effect of controls. |
+| [Residual risk](#analyze-evaluate-and-record-risk) | The risk that remains after controls are applied. A backup can reduce the impact of data loss while leaving the risk that the latest changes cannot be recovered. |
+| [Deduplication](#analyze-evaluate-and-record-risk) | Recognizing and handling repeated copies of the same observation or request so duplication does not inflate counts or repeat an action. |
+| [Incident](#analyze-evaluate-and-record-risk) | A case representing a security event or set of related events requiring coordinated investigation and response. |
+| [Likelihood](#analyze-evaluate-and-record-risk) | An estimate of how probable a defined event is within a stated period and set of assumptions. |
+| [Qualitative assessment](#analyze-evaluate-and-record-risk) | An assessment using defined categories, such as low, moderate and high. Agreement about the scale matters when comparing results. |
+| [Quantitative assessment](#analyze-evaluate-and-record-risk) | An assessment expressed in numerical units, such as expected loss in dollars per year. Its accuracy depends on the inputs and assumptions. |
+| [Risk register](#analyze-evaluate-and-record-risk) | A record of identified risks, owners, assessments, responses and review status. A completed field is a claim that still needs supporting evidence. |
+| [Event-tree branch](#check-what-the-numbers-mean) | One possible outcome at a decision point in an event tree. If a failure has a 10% probability and the next safeguard fails in 20% of those cases, that path has a 2% probability. |
+| [Confidence](#check-what-the-numbers-mean) | A judgment about the reliability of evidence or an analytic conclusion. High confidence and high operational impact are separate properties. |
+| [Sampling](#check-what-the-numbers-mean) | Examining part of a population to draw a bounded conclusion about it. Selection bias or an incomplete population limits the inference. |
+
+**Risk Response and Reporting**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Risk acceptance](#select-and-govern-responses) | An authorized decision to retain a specified exposure, with its rationale and review conditions recorded. |
+| [Due diligence](#select-and-govern-responses) | The investigation and ongoing verification used to understand obligations, evaluate risk and confirm that safeguards remain suitable. |
+| [Exception](#select-and-govern-responses) | An authorized, bounded deviation from an established requirement. The owner, scope, compensating measures and expiry make it reviewable. |
+| [Risk owner](#select-and-govern-responses) | The person accountable for deciding how to treat a risk to an organizational objective, within delegated authority. |
+| [Risk avoidance](#select-and-govern-responses) | Changing or discontinuing the activity that creates an unacceptable exposure, such as withdrawing a service that cannot be operated safely. |
+| [Control owner](#design-implement-and-test-controls) | The person accountable for implementing or operating a safeguard and providing evidence of its performance. |
+| [Operating effectiveness](#design-implement-and-test-controls) | Evidence that a control actually worked for its intended population and period, beyond simply having a documented design. |
+| [Population](#design-implement-and-test-controls) | The full set of items within the defined scope. Measuring only devices that report successfully can systematically omit failures. |
+| [Reperformance](#design-implement-and-test-controls) | Independently repeating a control or calculation to compare the observed result with the result reported by its owner. |
+| [Rollback](#design-implement-and-test-controls) | Returning a change to a known acceptable state when results do not meet defined conditions. A valid rollback also accounts for data changed in the meantime. |
+| [Key risk indicator (KRI)](#monitor-and-report-decisions) | A measure used to track changes in exposure and trigger review when defined thresholds are reached. |
+| [Key control indicator (KCI)](#monitor-and-report-decisions) | A measure of how a safeguard is operating, such as the fraction of required restore tests completed successfully. |
+| [Key performance indicator (KPI)](#monitor-and-report-decisions) | A measure of progress toward a defined objective. Its meaning depends on the population, period and target being measured. |
+| [JavaScript Object Notation (JSON)](#separate-a-valid-register-from-a-supported-decision) | A text representation for structured data using objects, arrays, numbers, strings, booleans and null. Field names and types matter to consuming software. |
+| [Schema](#separate-a-valid-register-from-a-supported-decision) | A definition of expected data structure, field types and constraints. A syntactically valid payload may still fail schema or business validation. |
+| [Schema validation](#separate-a-valid-register-from-a-supported-decision) | Comparing an incoming record or API message with the expected structure and types before trusting downstream interpretation. |
+
+**Technology and Security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Technology lifecycle risk](#understand-technology-lifecycles-as-risk-systems) | Exposure that changes as technology is selected, deployed, operated and retired, such as dependency on an unsupported component. |
+| [Authorization](#understand-technology-lifecycles-as-risk-systems) | The decision about what a verified identity may do to a resource under the applicable policy. |
+| [Availability](#understand-technology-lifecycles-as-risk-systems) | The ability of authorized users to reach and use a resource when needed. |
+| [Business continuity](#understand-technology-lifecycles-as-risk-systems) | Maintaining essential business functions through disruption, including people and workarounds as well as technology. |
+| [Log retention](#understand-technology-lifecycles-as-risk-systems) | The period for which records remain available for an investigation or other defined purpose. Missing results outside that period cannot establish inactivity. |
+| [Observability](#understand-technology-lifecycles-as-risk-systems) | The ability to infer a system’s internal condition from its outputs, often by relating logs, metrics and traces to a particular request or failure. |
+| [Recovery point objective (RPO)](#understand-technology-lifecycles-as-risk-systems) | The targeted maximum loss of recent data, expressed as a period before the disruption. |
+| [Confidentiality](#apply-security-and-privacy-concepts-to-risk) | Restricting disclosure of information to authorized parties. A file can lose confidentiality even if its contents are unchanged. |
+| [Data minimization](#apply-security-and-privacy-concepts-to-risk) | Collecting and retaining only the data needed for the defined purpose. Reducing unnecessary copies narrows exposure. |
+| [Defense in depth](#apply-security-and-privacy-concepts-to-risk) | Coordinating safeguards across multiple layers so the failure of one does not leave the asset entirely exposed. |
+| [Least privilege](#apply-security-and-privacy-concepts-to-risk) | Granting an identity only the access needed for its assigned work. |
+| [Security awareness](#apply-security-and-privacy-concepts-to-risk) | Activities that help people recognize security situations and act appropriately. Behavioral outcomes give stronger feedback than attendance alone. |
+| [Vulnerability management](#apply-security-and-privacy-concepts-to-risk) | A recurring process for finding weaknesses, assessing their relevance, treating them and verifying closure within an agreed scope. |
+
+**Eight practical labs**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Preventive control](#eight-practical-labs) | A measure intended to stop an undesired event before it occurs, such as blocking an unauthorized transaction. |
+
 ## Places to learn
 
 This is not a complete list. Choose sections that close your measured gaps. The effective-November-2025 official outline controls scope; related standards and practical exercises do not add exam requirements. Estimates are study budgets unless a publisher duration is explicitly stated.

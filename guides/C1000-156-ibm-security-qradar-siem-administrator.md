@@ -119,6 +119,92 @@ For apps, inspect deployment state, App Host/resources, logs, permissions, depen
 - I can prove role, profile, domain, and tenant isolation.
 - I can complete 62 mixed questions in 90 minutes from an operator's model.
 
+## Key terms and phrases
+
+**System configuration**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Network hierarchy](#1-system-configuration) | QRadar’s definition of local networks, used to interpret traffic direction and supply context for correlation. |
+| [Backup](#1-system-configuration) | A retained copy created to support recovery. Validate it by restoring the relevant data and exercising the service that depends on it. |
+| [Restore](#1-system-configuration) | Recreating data or a resource from a retained recovery copy, followed by checks that it meets the intended recovery point. |
+| [Deployment rollback](#1-system-configuration) | Restoring a previously working release or configuration after an unsuccessful change, with separate treatment for state already modified. |
+| [App Host](#1-system-configuration) | A managed host assigned to running supported applications, with its own resource and health requirements. |
+| [Asset database](#1-system-configuration) | The inventory of observed or configured systems and associated evidence used to enrich investigation. |
+| [Reference collection](#1-system-configuration) | Reusable values or mappings used to enrich a rule or lookup, whose ownership and freshness affect detection quality. |
+| [License allocation](#1-system-configuration) | Assigning purchased processing capacity to deployment components and tracking use or bursts against those allocations. |
+
+**Performance optimization**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Correlation rule](#2-performance-optimization) | A rule evaluating activity against conditions and time or scope constraints before triggering a configured response. |
+| [Saved search](#2-performance-optimization) | A reusable query definition with its fields, filters and scope, which can support investigation, reporting or dashboards. |
+| [Identity exclusion](#2-performance-optimization) | A configuration suppressing selected identity updates when those associations are unreliable, reducing misleading asset relationships. |
+
+**Data sources**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Custom event property](#3-data-sources) | An additional value extracted from a source event so it can be searched or used in a rule. |
+| [Log source](#3-data-sources) | A configured source of event messages, identified and parsed according to its protocol and device type. |
+| [Protocol configuration](#3-data-sources) | The collection method and connection settings used to receive or retrieve events from a log source. |
+| [Event normalization](#3-data-sources) | Mapping vendor-specific records into common fields and categories so rules and searches can compare them. |
+| [Device Support Module (DSM)](#3-data-sources) | The parsing component that interprets source-specific messages and maps them to normalized QRadar event fields. |
+| [Obfuscation](#3-data-sources) | Masking configured fields to limit exposure while preserving the context required for authorized investigation. |
+
+**Accuracy tuning**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Reference data](#4-accuracy-tuning) | Maintained values, such as a set of known systems, that rules and searches can consult. |
+| [Anomaly baseline](#4-accuracy-tuning) | An expected pattern learned over a defined period and population, used to identify deviations that warrant review. |
+| [Baseline](#4-accuracy-tuning) | An agreed reference configuration or historical measurement used to evaluate change in a comparable environment. |
+| [Alert](#4-accuracy-tuning) | A notification that a configured condition was met, requiring interpretation with its time window, source and affected scope. |
+| [Building block](#4-accuracy-tuning) | Reusable rule criteria defining a recognizable condition that other QRadar rules can reference. |
+| [Time window](#4-accuracy-tuning) | The interval of records included in a search or correlation decision; widening it can change both results and query cost. |
+| [False positive](#4-accuracy-tuning) | An alert or rule match that does not represent the undesirable activity the detection is intended to identify. |
+| [Rule tuning](#4-accuracy-tuning) | Adjusting a detection’s logic or context to reduce noise while preserving the behavior it is intended to detect. |
+| [Anomaly Detection Engine](#4-accuracy-tuning) | The QRadar mechanism that evaluates activity against learned behavior, with tuning needed for population, sensitivity and seasonal changes. |
+
+**Users, reports, searches, and offenses**
+
+| Term or phrase | Meaning |
+|---|---|
+| [User role](#5-users-reports-searches-and-offenses) | A collection of permissions granting access to QRadar features and actions. |
+| [Security profile](#5-users-reports-searches-and-offenses) | A control limiting the data a user can see. It works alongside the permissions granted by the user’s role. |
+| [Authentication](#5-users-reports-searches-and-offenses) | Establishing the identity used for a request, for example by validating a credential or identity assertion. |
+| [Authorization](#5-users-reports-searches-and-offenses) | Evaluating whether the requesting identity may take a particular action on a particular resource within the applicable scope. |
+| [Least privilege](#5-users-reports-searches-and-offenses) | Granting only the access a specific identity needs for its assigned work, then checking both allowed and denied actions. |
+| [Offense ownership](#5-users-reports-searches-and-offenses) | The assignment and status information indicating who is responsible for a correlated investigation. |
+
+**Tenants and domains**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Domain](#6-tenants-and-domains) | A scope used to partition incoming events and flows for separate access and analysis. |
+| [Tenant](#6-tenants-and-domains) | A customer or organizational environment whose users and data need isolation in a shared deployment. |
+
+**Troubleshooting**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Health check](#7-troubleshooting) | A targeted test of a component’s ability to perform a particular task. Its scope determines what a successful result proves. |
+| [System notification](#7-troubleshooting) | A message about QRadar system or component health. Its host, timestamp and cause help distinguish a collection problem from a security offense. |
+| [REST API endpoint](#7-troubleshooting) | The address for an API operation. When an app request fails, check the endpoint, HTTP method, response code and permissions of the identity making the request. |
+
+**Original readiness checks**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Console](#answer-guide) | The QRadar component providing centralized administration and the analyst interface in a deployment. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Runbook](#hands-on-labs) | A documented response procedure identifying evidence to gather, safe actions, decision owners and verification steps. |
+
 ## Places to learn
 
 This is a selective learning path, not a complete list of QRadar administration resources.

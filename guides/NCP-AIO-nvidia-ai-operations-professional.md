@@ -541,6 +541,85 @@ These eight activities are **proposed**, with author-estimated study time. Only 
 
 The current NVIDIA exam page describes 30 multiple-choice questions plus three hands-on lab exercises in a single 120-minute session; the multiple-choice and lab sections each contribute 50% to the pass/fail result. It calls for Linux CLI familiarity with Slurm, Kubernetes, and Base Command Manager. The October DGX Spark release adds cloud-init provisioning, Linux 7.0 support, and appliance-oriented support skills; use it as a small-system lifecycle and provisioning case, not as a substitute for the separate cluster operations assessed by this credential. Confirm the cluster release, scheduler, GPU, networking, and storage combination before any live change. [DGX Spark release notes](https://docs.nvidia.com/dgx/dgx-spark/release-notes.html).
 
+## Key terms and phrases
+
+**Installation and Deployment**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Desired state](#11-establish-desired-state-and-control-planes) | The configuration a management system is expected to apply, against which an operator compares observed cluster behavior. |
+| [Control plane](#11-establish-desired-state-and-control-planes) | The management interfaces and services that configure resources and policies, as distinct from using the configured workload. |
+| [CUDA](#11-establish-desired-state-and-control-planes) | NVIDIA’s parallel computing platform and programming model through which supported workloads use GPU acceleration. |
+| [Taint and toleration](#11-establish-desired-state-and-control-planes) | A Kubernetes node taint repels ineligible pods while a matching toleration permits consideration for scheduling there. |
+| [Data Center GPU Manager (DCGM)](#11-establish-desired-state-and-control-planes) | NVIDIA’s GPU monitoring and management software used to gather telemetry, observe health and run supported diagnostics. |
+| [Node category](#12-bcm-entities-and-base-view) | A Base Command Manager grouping used to apply shared configuration to nodes with similar roles. |
+| [GPU telemetry](#12-bcm-entities-and-base-view) | Measurements such as utilization, temperature, memory use and errors that can be correlated with job and node identity. |
+| [Node image](#12-bcm-entities-and-base-view) | A versioned operating system and software baseline distributed to cluster nodes for reproducible provisioning. |
+| [Authorization](#13-users-roles-and-permissions) | Evaluating whether the requesting identity may take a particular action on a particular resource within the applicable scope. |
+| [Least privilege](#13-users-roles-and-permissions) | Granting only the access a specific identity needs for its assigned work, then checking both allowed and denied actions. |
+| [Authentication](#14-network-dpu-and-switch-operations) | Establishing the identity used for a request, for example by validating a credential or identity assertion. |
+| [DNS](#14-network-dpu-and-switch-operations) | The naming system resolving service names to addresses or other records. Correct resolution alone does not establish reachability. |
+| [RDMA](#14-network-dpu-and-switch-operations) | Remote direct memory access enables supported systems to transfer data to or from remote memory with reduced CPU involvement. |
+| [InfiniBand](#14-network-dpu-and-switch-operations) | A high-performance networking technology used for low-latency communication in some distributed AI clusters. |
+| [Collective communication](#14-network-dpu-and-switch-operations) | A coordinated operation across multiple workers, such as combining gradients during distributed training. |
+| [Image synchronization](#15-patches-firmware-and-image-synchronization) | Distributing an approved node image or its changes so the intended baseline is available on the target nodes. |
+| [Kubernetes](#16-install-slurm-kubernetes-and-runai) | A platform scheduling and managing containerized workloads through declarative resources and controllers. |
+| [GPU Operator](#16-install-slurm-kubernetes-and-runai) | A Kubernetes operator automating deployment and management of components needed to use supported NVIDIA GPUs in a cluster. |
+
+**Administration**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Slurm partition](#21-slurm-cluster-administration) | A logical collection of nodes with associated scheduling rules, used to direct jobs to appropriate capacity. |
+| [Return to service](#21-slurm-cluster-administration) | Making a drained compute node eligible for workloads again after correcting the cause and checking its health. |
+| [Slurm](#21-slurm-cluster-administration) | A cluster workload manager scheduling jobs and resources such as nodes and GPUs under configured partitions and policies. |
+| [Resource request](#21-slurm-cluster-administration) | A workload’s declared resource requirement that the scheduler uses to decide placement. |
+| [Drain](#21-slurm-cluster-administration) | Preventing new work from being assigned to a node and moving or completing existing work before disruptive maintenance. |
+| [Kubernetes device plugin](#22-kubernetes-administration) | A component that advertises specialized node resources, such as GPUs, so Kubernetes can allocate them to pods. |
+| [Metric](#22-kubernetes-administration) | A numeric measurement recorded over time, such as failed requests or queue depth, with defined units and dimensions. |
+| [GPU utilization](#23-runai-administration) | A measure of GPU activity over an interval. Low usage can come from slow input or communication as well as insufficient demand. |
+| [Quota](#23-runai-administration) | An allocation limit restricting the resources a project, user or workload can consume under the scheduler’s policies. |
+| [MIG profile](#24-configure-mig) | A supported resource shape for a Multi-Instance GPU partition, defining the capacity a workload can request. |
+| [Virtual GPU (vGPU)](#24-configure-mig) | A virtualization mechanism presenting eligible GPU capacity to virtual machines under supported hardware and software configurations. |
+| [Time slicing](#24-configure-mig) | Sharing GPU execution over time among workloads, with different isolation and predictability from hardware partitioning. |
+| [Image registry](#25-architecture-for-ai-workload-operations) | A service storing container images and manifests so workloads can pull an identified version or digest. |
+
+**Workload Management**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Image digest](#31-pull-and-deploy-ngc-containers-safely) | A content-derived identifier for an exact container image, useful for reproducing the workload seen during diagnosis. |
+| [Container image](#31-pull-and-deploy-ngc-containers-safely) | A packaged application filesystem and runtime dependencies. The host still supplies compatible GPU drivers and device access. |
+| [Driver compatibility](#31-pull-and-deploy-ngc-containers-safely) | The required relationship among host driver, hardware and application stack for a GPU workload to start and operate correctly. |
+| [NCCL](#32-training-with-slurm) | NVIDIA Collective Communications Library, supporting communication operations among GPUs within and across nodes. |
+| [Saturation](#33-inference-with-kubernetes) | The extent to which demand uses up a resource’s available capacity, often becoming visible as queues or increased latency. |
+| [Bottleneck](#33-inference-with-kubernetes) | The component whose limited capacity constrains end-to-end performance, identified by correlating multiple measurements. |
+| [Kubernetes pod](#33-inference-with-kubernetes) | The unit Kubernetes schedules, carrying one or more containers along with requested resources, permissions and storage. |
+| [Allocation](#34-workloads-and-allocation-with-runai) | Resources granted by the scheduler to a job, which can differ from what the running application actually uses. |
+| [PCIe](#35-system-management-tools-in-workload-diagnosis) | Peripheral Component Interconnect Express, a link used by hosts and attached devices whose topology and bandwidth can affect transfers. |
+
+**Troubleshooting and Optimization**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Baseline](#41-a-reusable-fault-isolation-matrix) | An agreed reference configuration or historical measurement used to evaluate change in a comparable environment. |
+| [Batch size](#41-a-reusable-fault-isolation-matrix) | The number of inputs processed together in one execution step, affecting memory, throughput and request delay. |
+| [NVLink fabric](#43-troubleshoot-nvlinknvswitch-fabric-manager) | The high-bandwidth GPU interconnect whose links, switches and management state affect communication among participating GPUs. |
+| [Runbook](#43-troubleshoot-nvlinknvswitch-fabric-manager) | A documented response procedure identifying evidence to gather, safe actions, decision owners and verification steps. |
+| [NVLink](#43-troubleshoot-nvlinknvswitch-fabric-manager) | NVIDIA’s high-bandwidth interconnect for communicating between supported GPUs or related components. |
+| [NVSwitch](#43-troubleshoot-nvlinknvswitch-fabric-manager) | A switching technology connecting supported NVLink endpoints into a GPU communication fabric. |
+| [Ethernet](#43-troubleshoot-nvlinknvswitch-fabric-manager) | A family of network technologies used for cluster and service communication, with performance dependent on topology, configuration and load. |
+| [Fabric Manager](#43-troubleshoot-nvlinknvswitch-fabric-manager) | The NVIDIA component responsible for managing the applicable NVSwitch fabric on supported systems. |
+| [Alert](#44-troubleshoot-bcm) | A notification that a configured condition was met, requiring interpretation with its time window, source and affected scope. |
+| [Throughput](#45-troubleshoot-magnum-io-and-storage) | The amount of useful work completed per unit time, such as bytes transferred or requests served per second. |
+| [Latency percentile](#46-optimize-without-hiding-risk) | A point in the latency distribution. A p95 of 200 milliseconds means 95 percent of measured requests completed within that duration. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Latency](#scenario-2-kubernetes-inference-misses-latency-slo) | The time for a request or operation to complete, measured at a specified boundary from the selected start to finish. |
+
 ## Places to learn
 
 This is not a complete list. Select public references for the specific platform and weak areas in your practice. Metadata was checked September 29, 2026; paid interiors, lab access and checkout were not tested. Times are author estimates except explicitly listed vendor runtimes.

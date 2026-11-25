@@ -493,6 +493,110 @@ These are original learning cases, not vendor sample questions or recalled exam 
 - [ ] I can explain why ownership is more powerful than ordinary access.
 - [ ] I can apply least privilege across data, warehouse, dashboard and Genie layers.
 
+## Key terms and phrases
+
+**Understanding the Databricks Data + AI Platform**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Delta table](#map-components-to-responsibilities) | A table backed by data files and a transaction log that records committed versions and supports consistent reads. |
+| [Unity Catalog](#operate-catalog-explorer-as-a-discovery-and-control-surface) | Databricks’ governance layer for organizing data and AI assets and managing permissions, lineage and discoverability across supported workloads. |
+| [Catalog](#operate-catalog-explorer-as-a-discovery-and-control-surface) | The top-level Unity Catalog namespace containing schemas and helping administrators group assets and privileges. |
+| [Managed table](#operate-catalog-explorer-as-a-discovery-and-control-surface) | A table for which the platform manages both the metadata and the lifecycle of its underlying data. |
+| [External table](#operate-catalog-explorer-as-a-discovery-and-control-surface) | A registered table over externally managed storage, requiring separate attention to the object grants and storage location. |
+| [Volume](#operate-catalog-explorer-as-a-discovery-and-control-surface) | A Unity Catalog object providing governed file access for non-tabular data, such as source documents or model artifacts. |
+| [Delta Sharing](#understand-marketplace-without-treating-it-as-anonymous-download) | A protocol for granting recipients controlled access to shared data, across platforms where supported. |
+
+**Managing Data**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Data freshness](#discover-and-query-trusted-datasets) | The age or lag of data visible to a consumer relative to the agreed source time or publication expectation. |
+| [Data lineage](#use-tags-and-lineage-as-investigation-tools) | A record of upstream inputs and downstream uses that helps an analyst trace how a reported value was produced. |
+| [Deduplication](#clean-data-without-hiding-quality-defects) | Recognizing repeated representations of the same event or business entity under a defined key and selection rule. |
+| [Quarantine](#clean-data-without-hiding-quality-defects) | Retaining rejected records and rejection reasons separately so they can be investigated without contaminating trusted outputs. |
+
+**Importing Data**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Incremental processing](#choose-an-intake-route) | Processing newly arrived or changed records relative to remembered progress instead of recomputing the full dataset. |
+| [Change data capture (CDC)](#choose-an-intake-route) | Capturing inserts, updates and deletes so downstream consumers can apply changes rather than reload the entire source. |
+| [Idempotence](#choose-an-intake-route) | Repeatedly applying the same logical input leaves the same intended state as applying it once, which makes retry and replay safer. |
+| [Data federation](#choose-an-intake-route) | Querying external data through an integrated interface while the source system retains its data and operational constraints. |
+
+**Executing queries with Databricks SQL and SQL warehouses**
+
+| Term or phrase | Meaning |
+|---|---|
+| [SQL warehouse](#select-and-reason-about-a-sql-warehouse) | Compute that runs SQL queries for analysts, dashboards and other clients accessing lakehouse data. |
+| [Grain](#join-at-a-declared-grain) | What one row represents, such as an order or an order line. Joining tables at different grains can multiply a measure. |
+| [Cardinality](#join-at-a-declared-grain) | The number of members in the set being considered, such as distinct values of a field or rows in a query result. |
+| [Aggregation](#join-at-a-declared-grain) | Combining a group of records into a summary such as count, sum or average, at a declared grouping level. |
+| [Join](#join-at-a-declared-grain) | Combining records from multiple inputs according to a matching condition. A repeated key can yield more rows than either input leads you to expect. |
+| [Inner join](#join-at-a-declared-grain) | A join retaining only pairs of rows satisfying its matching condition. |
+| [Grouping key](#aggregate-and-summarize-correctly) | A field or expression that determines which records contribute to the same aggregate result. |
+| [Anti join](#null-and-anti-join-failures) | Returns left-side rows without a matching right-side row. With order IDs 1, 2 and 3 on the left and shipped IDs 1 and 3 on the right, a left anti join returns order 2. |
+| [Null value](#null-and-anti-join-failures) | A marker for a missing or unknown value. Count and comparison operations may treat it differently from a supplied zero. |
+| [Materialized view](#distinguish-views-materialized-views-and-streaming-tables) | A saved query whose computed results are stored and refreshed, allowing readers to query those results directly. |
+| [View](#distinguish-views-materialized-views-and-streaming-tables) | A named query through which consumers see data in a defined shape. A conventional logical view reads its inputs when queried. |
+| [Streaming table](#distinguish-views-materialized-views-and-streaming-tables) | A table maintained by incremental processing of incoming records. |
+| [Data retention](#use-history-as-evidence) | How long data or recoverable history is kept before removal under an explicit operational or governance policy. |
+| [Time travel](#use-history-as-evidence) | Reading a retained earlier table version or timestamp, useful for reproducing a report or comparing changes. |
+
+**Analyzing Queries**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Data skew](#diagnose-before-tuning) | An unequal distribution of records or workload across keys or partitions that can produce an overloaded partition or long-running tasks. |
+| [Query history](#diagnose-before-tuning) | A record of executed queries and their context or performance, used to identify the exact execution behind a symptom. |
+| [Photon](#place-photon-and-caching-correctly) | A Databricks execution engine that accelerates eligible compute operations. Inspect the actual plan and workload to assess the effect. |
+| [Predicate](#use-history-clustering-and-audit-evidence-deliberately) | A condition used to decide which records match a query or qualify for a transformation. |
+| [Selectivity](#use-history-clustering-and-audit-evidence-deliberately) | How narrowly a filter restricts matching rows. A selective condition can reduce work if the access path can use it. |
+| [Clustering](#use-history-clustering-and-audit-evidence-deliberately) | Organizing related data together according to chosen columns or expressions so selective reads can skip more unrelated storage. |
+| [Liquid clustering](#use-history-clustering-and-audit-evidence-deliberately) | A Delta table layout technique organizing files around chosen keys to reduce scanning for relevant filters. |
+
+**Creating dashboards and visualizations**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Dashboard parameter](#parameterize-safely) | A value supplied to a dashboard query to change its result, for example selecting a reporting period. |
+| [Dashboard field filter](#parameterize-safely) | A dashboard control that restricts displayed data by a field, such as region. Compare this with a query parameter that supplies a value to the dataset query. |
+| [Shared data permissions](#prove-the-publication-identity) | A published dashboard can use its publisher’s data permissions to display results. Check what a viewer without direct table access can see. |
+
+**Developing, sharing and maintaining AI/BI Genie spaces**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Genie space](#ground-a-space-before-asking-it-questions) | A curated environment where people ask natural-language questions about selected data, guided by instructions and examples. |
+| [Genie benchmark](#validate-and-improve-answers) | A set of representative questions used to evaluate a Genie space. In Chat mode, supplying a reference SQL query enables automatic comparison of the result sets. Questions without one need manual scoring. |
+
+**Data Modeling with Databricks SQL**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Star schema](#select-a-model-from-the-workload) | A dimensional layout in which fact rows connect to descriptive dimension tables for analysis. |
+| [Bronze layer](#select-a-model-from-the-workload) | The landing layer retaining source-level records and ingestion evidence so later transformations can be replayed. |
+| [Silver layer](#select-a-model-from-the-workload) | The layer where records are cleaned, reconciled and conformed into reusable datasets. |
+| [Gold layer](#select-a-model-from-the-workload) | The publication layer containing business-facing aggregates or models shaped for specific consumption. |
+
+**Securing Data**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Three-level namespace](#traverse-the-three-level-namespace) | The catalog, schema and object name that together identify a governed table or view in Unity Catalog. |
+| [Unity Catalog schema](#traverse-the-three-level-namespace) | A namespace inside a catalog that groups objects such as tables and views. In sales.reporting.orders, reporting is the schema. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Left outer join](#worked-analyst-decisions-and-current-reading) | A join preserving each left-hand row. A missing right-hand match yields nulls in the right-side result columns. |
+| [Reconciliation](#worked-analyst-decisions-and-current-reading) | Comparing source and target results for the same scope, such as record counts and amounts in a given business day. |
+| [Join fanout](#worked-analyst-decisions-and-current-reading) | The increase in output rows when one input key matches multiple rows on the other side, which can inflate a downstream sum. |
+| [Dashboard dataset](#hands-on-lab-sequence) | The data returned by a query and made available for dashboard visualizations and filters. |
+| [Dimension table](#platform-management-and-import) | A table containing descriptive attributes of entities such as customers, locations or products used to interpret facts. |
+
 ## Places to learn
 
 This is **not a complete list**, and it is not a recommendation to consume everything. Pick the explanation, lab environment, course, or assessment that closes a demonstrated gap; spend at least as much time producing and testing SQL, dashboards and Genie evidence as watching video. Durations are library planning estimates unless a provider runtime is identified. Public metadata was checked September 28, 2026; signed-in catalogs and paid lessons were not inspected.

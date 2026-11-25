@@ -654,6 +654,92 @@ Cover each answer and explain the reasoning before checking it. These are origin
 
 **Check key:** Ready means you can explain the answer and produce the applicable evidence; recognition alone calls for more practice. Pending infrastructure labs cannot be counted as executed evidence.
 
+## Key terms and phrases
+
+**Software Development and Design**
+
+| Term or phrase | Meaning |
+|---|---|
+| [JavaScript Object Notation (JSON)](#data-representations-and-parsing) | A text format that represents values with objects, arrays, strings, numbers, booleans and null. |
+| [Schema](#data-representations-and-parsing) | A definition of expected data structure, field types and constraints. A syntactically valid payload may still fail schema or business validation. |
+| [Extensible Markup Language (XML)](#data-representations-and-parsing) | A structured document format using elements and attributes; namespaces and schema rules can affect how an API or parser interprets a document. |
+| [YAML Ain’t Markup Language (YAML)](#data-representations-and-parsing) | A structured text format commonly used for configuration. Significant indentation and scalar typing can affect the meaning of apparently small edits. |
+| [Unit test](#development-method-structure-and-tests) | A repeatable check of a small unit of code in isolation against an expected result. |
+| [Authorization](#development-method-structure-and-tests) | Deciding which actions an authenticated identity is permitted to take. |
+| [Integration test](#development-method-structure-and-tests) | A check that separately implemented components interact correctly, such as an application using its actual database or message contract. |
+| [Red–green–refactor](#development-method-structure-and-tests) | The test-driven development cycle. Write a test that fails for the expected reason, make the smallest change that passes it, then improve the design while the tests stay green. |
+| [Git commit](#git-as-the-change-record) | A recorded snapshot in repository history that can identify the exact code or configuration under review. |
+| [Branch](#git-as-the-change-record) | A movable Git reference to a line of development. The reference advances as new commits are made on that branch. |
+| [Merge](#git-as-the-change-record) | Combining histories or changes from separate branches. Overlapping edits can require an explicit conflict resolution. |
+
+**Understanding and Using APIs**
+
+| Term or phrase | Meaning |
+|---|---|
+| [HTTP status code](#construct-a-request-from-documentation) | A numeric result describing how a server handled a request, used together with the response body and API contract. |
+| [Idempotency](#construct-a-request-from-documentation) | The property that repeating a request after an uncertain delivery does not produce another unintended side effect. |
+| [Pagination](#construct-a-request-from-documentation) | Splitting a response into multiple pages. A consumer that stops after the first page can silently report an incomplete inventory. |
+| [Retry](#construct-a-request-from-documentation) | Trying a failed operation again under a defined policy. For writes, duplication and uncertain completion require special handling. |
+| [Timeout](#construct-a-request-from-documentation) | The time after which an operation stops waiting and reports failure. A caller timing out does not prove the remote system made no change. |
+| [Webhook](#authentication-and-api-styles) | An event-driven request sent to a registered receiver so the consumer can respond without repeatedly polling. |
+| [Acknowledgment](#authentication-and-api-styles) | A signal that a message has reached a defined handling stage. It must be interpreted using the delivery guarantees of the application and broker. |
+| [Authentication](#authentication-and-api-styles) | Verifying an identity before deciding which resources that identity may access. |
+| [Deduplication](#authentication-and-api-styles) | Recognizing and handling repeated copies of the same observation or request so duplication does not inflate counts or repeat an action. |
+| [Least privilege](#authentication-and-api-styles) | Assigning only the permissions needed for the user’s task, such as using a standard account for everyday work. |
+| [OAuth](#authentication-and-api-styles) | An authorization framework through which a client gets scoped access to a resource. An OAuth access token by itself is not a standardized proof of user identity. |
+
+**Cisco Platforms and Development**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Representational State Transfer (REST)](#select-platform-interface-and-resource) | An architectural style for resource-oriented interactions, commonly using HTTP methods, resource identifiers and representations. |
+| [Sandbox](#select-platform-interface-and-resource) | An isolated environment for observing or restricting a program’s behavior. Its conclusions depend on the inputs, visibility and constraints of the environment. |
+| [Software-defined WAN (SD-WAN)](#select-platform-interface-and-resource) | A way to apply policy across WAN links, selecting paths according to traffic needs and measured link conditions. |
+| [YANG](#model-driven-programmability) | A language for describing the structure and constraints of management data used by model-driven networking interfaces. |
+| [Network Configuration Protocol (NETCONF)](#model-driven-programmability) | A protocol for exchanging structured configuration and operational data with network devices. |
+| [YANG container](#model-driven-programmability) | A node in a YANG data model that groups related child nodes. A container for an interface’s settings can hold leaves such as its description and enabled state. |
+| [RESTCONF network management protocol](#model-driven-programmability) | An HTTP-based protocol for accessing configuration and operational data described by YANG models. |
+
+**Application Deployment and Security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Continuous integration (CI)](#deployment-and-delivery-choices) | Automatically building or checking proposed changes so problems are detected before or during integration. |
+| [Container image](#deployment-and-delivery-choices) | A packaged filesystem and metadata used to launch containers. An image digest identifies particular contents more precisely than a mutable tag. |
+| [Hybrid cloud](#deployment-and-delivery-choices) | An environment linking private or on-premises resources with public cloud resources. Identity, routing and data protection span both sides. |
+| [Latency](#deployment-and-delivery-choices) | The time data takes to travel between two points. A high-capacity link can still have a long delay. |
+| [Observability](#deployment-and-delivery-choices) | The ability to infer a system’s internal condition from its outputs, often by relating logs, metrics and traces to a particular request or failure. |
+| [Domain Name System (DNS)](#test-and-secure-the-application) | The Domain Name System, which resolves names to records such as the addresses a client can use. |
+| [Environment variable](#test-and-secure-the-application) | A named value supplied in the environment of a process, such as a search path. Child processes inherit exported variables from their parent. |
+| [Exit status](#test-and-secure-the-application) | A number returned by a completed process. Shell conditionals conventionally treat zero as success and a nonzero value as failure or another documented result. |
+| [Health check](#test-and-secure-the-application) | A signal about an application’s current condition. Readiness concerns accepting traffic, while liveness concerns whether restarting could restore operation. |
+
+**Infrastructure and Automation**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Idempotence](#a-controlled-workflow) | The property that applying the same desired configuration again leaves an already-correct device in the same state. |
+| [Infrastructure as code (IaC)](#a-controlled-workflow) | Defining infrastructure in a versionable form that can be reviewed and applied through automation. |
+| [Telemetry](#a-controlled-workflow) | Observations reported by systems, such as events, logs, metrics or traces. Source coverage and freshness determine which conclusions the data can support. |
+| [Playbook](#interpret-automation-artifacts) | An Ansible YAML document containing plays that map host selections to tasks, roles and execution settings. |
+| [Quoting](#interpret-automation-artifacts) | Controlling how a shell treats spaces, glob patterns and variable expansions so arguments retain their intended boundaries. |
+
+**Network Fundamentals**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Broadcast domain](#read-the-path-before-automating-it) | The set of interfaces that receive a Layer 2 broadcast. A VLAN divides a switched network into separate broadcast domains. |
+| [Management plane](#read-the-path-before-automating-it) | The interface and services through which administrators configure and monitor devices. Reachability here does not prove that user traffic is working. |
+| [Network address translation (NAT)](#read-the-path-before-automating-it) | Rewriting source or destination addressing as traffic crosses a boundary. The translation and the permission to pass traffic are distinct decisions. |
+| [Stateful inspection](#read-the-path-before-automating-it) | Tracking connections so both a packet’s attributes and the state of the flow influence enforcement. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Virtual LAN (VLAN)](#scenario-2-reviewed-vlan-workflow) | A logical Layer 2 network with its own broadcast scope. Communication with another VLAN ordinarily requires routing and a suitable policy. |
+| [Superuser](#hands-on-evidence-labs) | The highly privileged Unix identity traditionally assigned UID 0. Namespaces and additional security policy can constrain what it may do. |
+
 ## Places to learn
 
 Start with the official objectives; add a course to address a measured gap. This is not a complete list. Public metadata was rechecked September 29, 2026; course availability and access can change. Study budgets below are estimates, not provider runtime claims.

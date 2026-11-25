@@ -13,7 +13,9 @@ upcoming_change_checked: 2026-10-28
 
 # AZ-120 Planning and Administering Microsoft Azure for SAP Workloads Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-05.md#az-120) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-120-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-120) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-03.md#az-120)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-05.md#az-120) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-120-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-120) is authoritative.
 
 **Current baseline:** Skills measured as of April 17, 2026<br>
 **Upcoming blueprint change:** None announced on the official study guide as of October 28, 2026.<br>
@@ -538,6 +540,8 @@ Archiving and HANA data aging can reduce hot working-set and premium-storage dem
 
 ### Start, stop and landscape automation
 
+**Practice check.** If a design uses SAP Landscape Management to relocate or clone an SAP system on Azure, verify that the estate runs LaMa Enterprise Edition. The connector supplies the VM and managed disk operations used in that workflow. [Set up the SAP LaMa connector for Azure | Microsoft Learn](https://learn.microsoft.com/en-us/azure/sap/workloads/lama-installation)
+
 Start and stop in dependency order. A simplified stop sequence moves from entry points and jobs through application servers and central services to the database; start usually reverses it, with validation gates. Actual sequences depend on the SAP design.
 
 [SAP LaMa’s Azure connector](https://learn.microsoft.com/en-us/azure/sap/workloads/lama-installation) can use an Azure service principal or managed identity to manage permitted resources. Prefer managed identities when supported, constrain RBAC scope, protect against concurrent automation and test storage-tier or VM lifecycle actions.
@@ -866,7 +870,81 @@ Answer in your own words before opening the answers.
 
 ---
 
+## Key terms and phrases
+
+**Build the SAP-on-Azure mental model**
+
+| Term or phrase | Meaning |
+|---|---|
+| [SAP application server](#separate-the-layers) | The tier that executes SAP application logic and connects users or services with the database. |
+| [SAP HANA](#separate-the-layers) | SAP's in-memory database platform, whose compute, storage and recovery design must fit the workload. |
+| [Support matrix](#treat-supportability-as-a-design-constraint) | The documented combinations of SAP software, operating system, database and Azure resources eligible for support. |
+| [Recovery time objective (RTO)](#translate-business-requirements-into-engineering-measures) | The target for how long a workload may remain unavailable after a disruption. |
+| [Recovery point objective (RPO)](#translate-business-requirements-into-engineering-measures) | The target for how far back in time recovered data may be relative to the disruption. |
+
+**Migrate SAP workloads to Azure (25–30%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [SAP landscape](#discover-and-size-the-source-landscape) | The collection of connected SAP environments, systems and dependencies included in a deployment or migration. |
+| [Resource quota](#quotas-capacity-licensing-support-and-cost) | The allowed Azure resource quantity for a subscription and region, distinct from physical availability. |
+| [Capacity reservation](#quotas-capacity-licensing-support-and-cost) | A reservation of compute capacity in a location for supported VM configurations. |
+| [Rehost](#choose-the-target-and-migration-pattern) | Move the existing SAP workload to target infrastructure while retaining much of its software and application structure. |
+| [Cutover](#build-a-migration-factory) | The controlled point at which business activity moves from the source SAP system to the target. |
+| [Resource group](#design-the-management-hierarchy-and-controls) | A management container in a subscription for related resources that can share lifecycle and access controls. |
+| [Subscription](#design-the-management-hierarchy-and-controls) | An Azure billing and management boundary in which resources are deployed. |
+| [Management group](#design-the-management-hierarchy-and-controls) | A governance scope above subscriptions where inherited access and policy can be organized. |
+| [RISE with SAP](#integrate-rise-with-sap) | A managed SAP offering with a service responsibility boundary that must be reconciled with customer-managed networking and integrations. |
+
+**Design and implement infrastructure (25–30%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [SAP-certified compute](#choose-certified-compute) | A VM type or configuration certified for a particular SAP workload. Suitability also depends on workload sizing and support conditions. |
+| [SAP sizing](#choose-certified-compute) | Estimating required memory, compute and throughput from workload measurements and approved sizing guidance. |
+| [ExpressRoute](#design-networking-from-flows) | Private connectivity between an on-premises environment and Microsoft cloud services through a connectivity provider. |
+| [Site-to-site VPN](#design-networking-from-flows) | An encrypted network connection between a site gateway and an Azure virtual network gateway. |
+| [Network latency](#design-networking-from-flows) | The elapsed time for communication between workload components, especially important for application-server-to-database calls. |
+| [IOPS](#choose-and-lay-out-storage) | Input/output operations per second, a measure of storage operation rate distinct from throughput and latency. |
+| [Throughput](#choose-and-lay-out-storage) | The volume of data transferred per unit of time, such as megabytes per second. |
+| [Write latency](#choose-and-lay-out-storage) | The time needed for a storage write to complete, an important measure for persistent transaction logging. |
+| [HANA log volume](#match-volume-roles-and-replica-layouts) | Storage for redo records that allow SAP HANA to recover committed changes. |
+| [HANA data volume](#match-volume-roles-and-replica-layouts) | Persistent storage for HANA data pages, distinct from its redo log volume. |
+| [Replica placement](#match-volume-roles-and-replica-layouts) | The decision about which zones, storage paths and failure boundaries separate the primary and secondary systems. |
+| [Encryption at rest](#encrypt-and-protect-data) | Protecting stored data through encryption of disks, volumes, backups or database contents. |
+| [Infrastructure as code (IaC)](#automate-repeatable-deployment) | Defining infrastructure in version-controlled files so environments can be deployed consistently. |
+
+**Design and implement HA and DR (20–25%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [High availability](#keep-ha-dr-and-backup-distinct) | Protection against local component failures, typically through redundancy and a controlled failover path. |
+| [Recovery point](#keep-ha-dr-and-backup-distinct) | A retained state from which a protected workload or file can be restored. |
+| [ASCS](#design-in-region-high-availability) | ABAP SAP Central Services supplies shared services such as message processing and enqueue locking for an SAP system. |
+| [Enqueue replication server](#design-in-region-high-availability) | A service that keeps lock information available for recovery of the SAP enqueue service. |
+| [SAP cluster resource](#design-in-region-high-availability) | A managed service component whose ownership, dependencies and failover are controlled by the cluster. |
+| [Fencing](#understand-fencing-and-split-brain) | Isolating a failed or unreachable cluster member before a replacement takes ownership of a shared workload. |
+| [Split brain](#understand-fencing-and-split-brain) | A failure in which two nodes believe they own the same active service and could both try to write. |
+| [Quorum](#understand-fencing-and-split-brain) | The voting condition a cluster uses to decide which members may continue operating safely. |
+| [Regional disaster recovery](#design-regional-disaster-recovery) | The ability to recover SAP service and its dependent components in another region after the primary region is lost. |
+| [Failover](#design-regional-disaster-recovery) | Moving service responsibility to a prepared recovery system after a fault or deliberate switch. |
+| [Failback](#design-regional-disaster-recovery) | Returning service to the intended primary environment after repairing and validating it. |
+| [Restore](#backup-and-restore) | Reconstructing data from a recoverable backup to a chosen point. |
+| [Recovery test](#backup-and-restore) | A rehearsal that restores or fails over actual dependencies and records whether business operations meet recovery targets. |
+| [Log backup](#backup-and-restore) | A retained set of database log records used with a recoverable data backup to reach a later recovery point. |
+| [HANA System Replication (HSR)](#hsr-backup-identify-the-protection-model-first) | Replication from a primary HANA system to a secondary that can take over under a planned recovery procedure. |
+| [Recovery acceptance](#recovery-test-scorecard) | The check that target recovery time, recovered data point and representative transactions meet business requirements. |
+
+**Maintain SAP workloads on Azure (20–25%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Business transaction test](#observe-by-layer-and-business-service) | An end-to-end check that a representative SAP business operation completes after deployment or recovery. |
+| [Azure Center for SAP solutions](#operate-with-azure-center-for-sap-solutions) | Azure's management experience for discovering and operating eligible SAP systems as associated resources. |
+
 ## Places to learn
+
+**Suggested practice.** Draw which zone hosts deployment infrastructure and which hosts SAP workloads, then annotate the required identities and network links. About 25–40 minutes to diagram the zones and their dependencies before deployment (editorial estimate). [Deploy SAP Deployment Automation Framework for enterprise scale](https://learn.microsoft.com/en-us/azure/sap/automation/tutorial)
 
 This is **not a complete list**, and it is not a recommendation to consume everything. Pick the combination that fits how you learn and use the official April 17, 2026 objective list as the coverage checklist. Time estimates are planning ranges, not vendor promises; pause-and-practice time is included where useful. Verify subscription access, course freshness and exact duration before purchase.
 

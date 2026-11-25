@@ -458,6 +458,88 @@ module.exports = {run};
 - **PRACTICAL DEPTH:** Thirty-five exact public-code checks ran in Node.js 24.18.1. Eight cloud labs and independent human review remain pending. No keys, credentials, policies, services, notifications or runtime settings were changed outside the local exercise.
 - All material is original synthesis from public sources. No paid course/book interior, provider lab, recalled exam item, dump, proprietary question bank or private operational data was used. The official sample form was reviewed only as a public landing page.
 
+## Key terms and phrases
+
+**Configuring access**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Workforce identity](#workforce-identity-lifecycle) | An identity for a person accessing the environment. Its lifecycle includes onboarding, changes in responsibility and prompt removal of access. |
+| [Break-glass access](#workforce-identity-lifecycle) | Emergency access reserved for predefined failure conditions, with strong protection, logging and review after use. |
+| [Workload identity](#workload-identity-and-service-accounts) | An identity for software such as a service or batch job. It enables permissions to follow the workload itself. |
+| [Service account impersonation](#workload-identity-and-service-accounts) | Using authorized short-lived credentials to act as a service account. The ability to impersonate it is separate from its own resource permissions. |
+| [Google Kubernetes Engine (GKE)](#workload-identity-and-service-accounts) | A managed Kubernetes environment for running and operating containerized workloads. |
+| [Workload Identity Federation](#workload-identity-and-service-accounts) | A way to let an external workload exchange trusted identity evidence for short-lived Google Cloud access without distributing a service account key. |
+| [Federation](#bound-the-federation-trust-and-the-revocation-plan) | Trusting identity evidence from an external provider under explicit conditions, such as who issued it and its intended audience. |
+| [Service account key](#bound-the-federation-trust-and-the-revocation-plan) | A credential allowing its holder to act as a service account. Prefer narrow permissions and short-lived alternatives where possible. |
+| [Service account](#bound-the-federation-trust-and-the-revocation-plan) | An identity used by a workload to call services. It can receive its own roles independently of the human who deployed it. |
+| [Organization policy](#authorization-privilege-and-hierarchy) | A set of constraints on how resources may be configured within the hierarchy, such as limiting acceptable locations. |
+| [IAM binding](#authorization-privilege-and-hierarchy) | Associates one role with one or more principals on a resource, optionally subject to a condition. |
+| [Organization, folder and project](#authorization-privilege-and-hierarchy) | Organization is the top-level ownership boundary, folders group resources, and projects hold workloads. Policies can be inherited down this hierarchy. |
+| [Resource hierarchy](#authorization-privilege-and-hierarchy) | The organization, folders, projects and resources through which Google Cloud organizes ownership and inherited policies. |
+| [Least privilege](#authorization-privilege-and-hierarchy) | Limiting an identity to the actions and resources required for its work. A read-only reporting job needs no permission to modify its source. |
+| [Identity and Access Management (IAM) role](#authorization-privilege-and-hierarchy) | A named collection of permissions. A policy binding grants the role to a principal at a chosen resource scope. |
+
+**Communications and boundary protection**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Cloud Load Balancing](#layer-controls-by-traffic-path) | Distributes traffic among configured backends. Protocol, client location and reachability guide the load balancer choice. |
+| [Cloud Armor](#layer-controls-by-traffic-path) | Applies security policies at supported Google Cloud application edges, for example filtering incoming web requests. |
+| [Cloud DNS](#layer-controls-by-traffic-path) | Hosts DNS zones and records. Public and private zones make names visible to different sets of clients. |
+| [Service perimeter](#segment-and-connect-privately) | A VPC Service Controls boundary that constrains supported service access and data movement. IAM permissions still matter inside it. |
+| [Private Service Connect](#segment-and-connect-privately) | Exposes supported services privately using producer and consumer endpoints rather than requiring broad connectivity between their networks. |
+| [Cloud Interconnect](#segment-and-connect-privately) | A dedicated or partner-provided network connection into Google Cloud. Connectivity still requires routing and an appropriate redundancy design. |
+| [Cloud Router](#segment-and-connect-privately) | Exchanges dynamic routes using BGP for supported hybrid connectivity. It does not itself forward application packets. |
+| [Shared VPC](#segment-and-connect-privately) | Allows service projects to use networking managed in a host project, separating application ownership from shared network administration. |
+| [Cloud NAT](#segment-and-connect-privately) | Translates addresses for supported outbound connections. It does not make a private VM a publicly addressable server. |
+| [Cloud VPN](#segment-and-connect-privately) | Connects networks using encrypted IPsec tunnels. Effective availability depends on tunnel, gateway and peer design. |
+
+**Data protection**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Data minimization](#discover-minimize-and-authorize-sensitive-data) | Limiting the sensitive information collected, retained or disclosed to the amount needed for the stated purpose. |
+| [Tokenization of sensitive data](#discover-minimize-and-authorize-sensitive-data) | Replacing sensitive values with surrogate tokens. Who can reconnect a token to the original value is part of the protection design. |
+| [Cloud Storage](#discover-minimize-and-authorize-sensitive-data) | Stores objects in buckets. A file-like object name does not by itself give an application the behavior of a shared POSIX file system. |
+| [Sensitive Data Protection](#discover-minimize-and-authorize-sensitive-data) | Inspects or transforms sensitive information using configured detectors and rules, such as replacing identifiers before analysis. |
+| [Secret Manager](#discover-minimize-and-authorize-sensitive-data) | Stores and versions secrets for authorized consumers. An application using a rotated value must still reload it successfully. |
+| [Cloud SQL](#discover-minimize-and-authorize-sensitive-data) | A managed relational database service for supported SQL engines. It suits applications that depend on relational queries and transactions. |
+| [BigQuery](#discover-minimize-and-authorize-sensitive-data) | Google's managed analytical warehouse for querying large datasets with SQL. Column selection and partition filters help reduce work. |
+| [Idempotency](#make-secret-rotation-observable-end-to-end) | The property that retrying the same intended operation does not apply its effect twice. An order API can remember the request identifier. |
+| [Pub/Sub](#make-secret-rotation-observable-end-to-end) | A messaging service in which publishers send messages to a topic and subscriptions track delivery to consumers independently. |
+| [Encryption in transit](#choose-and-operate-encryptionkey-control) | Protecting information while it travels between endpoints, typically through an authenticated encrypted connection. |
+| [Cloud Key Management Service (Cloud KMS)](#choose-and-operate-encryptionkey-control) | Manages cryptographic keys and versions. Separating permission to use a key from permission to administer it limits access. |
+| [Customer-managed encryption key (CMEK)](#choose-and-operate-encryptionkey-control) | A key the customer manages for a supported service. Key location, service identity access and key availability can all affect the protected workload. |
+| [Key rotation](#separate-key-creation-rewrapping-and-data-re-encryption) | Making a new key version available for future cryptographic use. Existing data protected by older versions still needs an explicit handling plan. |
+| [Data encryption key (DEK)](#separate-key-creation-rewrapping-and-data-re-encryption) | The key that encrypts the actual data. It can be stored in wrapped form under a separately controlled key. |
+| [Envelope encryption](#separate-key-creation-rewrapping-and-data-re-encryption) | Encrypting the content with a data key and wrapping that key with another key. Rewrapping the data key can avoid rewriting the entire dataset. |
+| [Key encryption key (KEK)](#separate-key-creation-rewrapping-and-data-re-encryption) | A cryptographic key used to protect another key, such as the data key encrypted alongside a protected object. |
+| [Grounding](#secure-ai-workloads) | Connecting an answer to evidence the model can use when responding, such as approved product documentation. |
+
+**Managing operations**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Attestation](#secure-supply-chain-and-posture) | A verifiable statement about an artifact, such as evidence that an image passed a build check, that a deployment policy can evaluate. |
+| [Security Command Center](#secure-supply-chain-and-posture) | Collects security findings and posture information so owners can prioritize and investigate affected resources. |
+| [Binary Authorization](#secure-supply-chain-and-posture) | Evaluates deployment policy for supported container workloads, for example requiring evidence that an image passed a trusted build step. |
+| [Artifact Registry](#secure-supply-chain-and-posture) | Stores versioned build outputs such as container images. A digest identifies the immutable content used in a deployment. |
+| [Container image](#secure-supply-chain-and-posture) | A packaged file-system and runtime configuration used to start containers. A digest identifies a particular image's contents. |
+| [Cloud Run](#secure-supply-chain-and-posture) | Runs containerized services or jobs on a managed platform. Choose a service for a request endpoint and a job for work that runs to completion. |
+| [Service level agreement (SLA)](#secure-supply-chain-and-posture) | A service commitment with agreed terms and consequences. Its measurement conditions must be read before comparing it with an internal reliability target. |
+| [Audit log](#logging-detection-and-response) | A record of activity used to establish which principal performed an operation against which resource and when. |
+| [Cloud Audit Logs](#logging-detection-and-response) | Records supported administrative or data-access activity, helping operators establish who performed an action on a resource. |
+
+**Supporting compliance**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Access Transparency](#5-supporting-compliance-about-11) | Logs qualifying Google personnel access to customer data under the applicable service terms, giving customers evidence for oversight. |
+| [Access Approval](#5-supporting-compliance-about-11) | Lets a customer approve qualifying provider access requests for supported services, distinct from authorizing access by the customer's own users. |
+| [Assured Workloads](#5-supporting-compliance-about-11) | Applies supported controls and monitoring for selected compliance needs. The customer still has to verify that its own configuration and use meet its obligations. |
+| [Control owner](#5-supporting-compliance-about-11) | The named party responsible for operating a control and producing evidence at the required frequency. |
+
 ## Places to learn
 
 This is **not a complete list**, and it is not meant to be consumed in full. Pick one route, map it to the five current domains, and use primary docs/labs to close gaps. Public metadata was checked October 28, 2026. Suggested budgets include neither a guarantee of mastery nor measured completion time.

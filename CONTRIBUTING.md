@@ -21,6 +21,8 @@ Every substantive guide change should:
 
 Different formats are welcome when they help learners approach the material differently. Concise reviews, deeper explanations, diagrams, examples, and hands-on labs should agree on the underlying facts even when their teaching styles differ.
 
+To add a diagram beside a guide topic, follow [Add an inline guide diagram](docs/STUDY-PRODUCTION.md#add-an-inline-guide-diagram). It includes a working example and a command to generate, preview, and check another figure from the same format.
+
 Use the [guide depth and related-item standard](docs/GUIDE-QUALITY-STANDARD.md) when expanding a guide. Prefix adjacent context with `Related item:` so readers can distinguish useful supporting knowledge from the published objective map.
 
 ## Resource additions

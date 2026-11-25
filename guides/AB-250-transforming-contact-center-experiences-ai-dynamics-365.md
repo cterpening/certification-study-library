@@ -7,21 +7,25 @@ generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: review-required
 last_verified: 2026-10-28
-upcoming_change_status: none-announced
-upcoming_change_checked: 2026-10-28
+upcoming_change_status: scheduled
+upcoming_change_checked: 2026-11-20
 ---
 
 # AB-250 Transforming Contact Center Experiences with AI in Dynamics 365 Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-04.md#ab-250) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-250-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-250) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-01.md#ab-250)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-04.md#ab-250) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-250-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-250) is authoritative.
 
 **Current baseline:** Official study guide last updated May 15, 2026; Microsoft publishes no separate skills-effective date.<br>
-**Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
-**Lifecycle:** The [Dynamics 365 Contact Center AI Engineer Associate credential](https://learn.microsoft.com/en-us/credentials/certifications/d365-contact-center-ai-engineer-associate/) and 120-minute English exam are active. **VERIFY CURRENT:** Microsoft now lists a Practice Assessment through AI Skills Navigator; sign-in is required to launch it. The public [credential page](https://learn.microsoft.com/en-us/credentials/certifications/d365-contact-center-ai-engineer-associate/) establishes availability. The signed-in assessment and its questions were not accessed.<br>
+**Upcoming English outline — December 18, 2026.** Use the current objective map for preparation before that date. Check the language and version for your appointment. The [November source notes](../docs/research/2026-11-20-microsoft-refresh-group-01.md#ab-250) identify the announced edition and its domain weights.<br>
+**Lifecycle:** The [Dynamics 365 Contact Center AI Engineer Associate credential](https://learn.microsoft.com/en-us/credentials/certifications/d365-contact-center-ai-engineer-associate/) lists a 120-minute exam in seven languages. **VERIFY CURRENT:** Microsoft now lists a Practice Assessment through AI Skills Navigator; sign-in is required to launch it. The public [credential page](https://learn.microsoft.com/en-us/credentials/certifications/d365-contact-center-ai-engineer-associate/) establishes availability. The signed-in assessment and its questions were not accessed.<br>
 **Transition:** Microsoft added AB-250 to partner skilling after MB-240 retired, but [explicitly says it is not a direct replacement](https://learn.microsoft.com/en-us/partner-center/announcements/2026-july).<br>
 **Official source:** [AB-250 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-250)
 
 ### Current changes and evidence limits
+
+**Practice check.** For a proactive engagement cancellation, identify what is being cancelled before selecting the ID. Microsoft directs a delivery task to CCaaS_CancelProactiveEngagement with DeliveryTaskId, and a scheduled callback to the same API with CallbackConversationId. [Deprecations in Dynamics 365 Contact Center | Microsoft Learn](https://learn.microsoft.com/en-us/dynamics365/contact-center/implement/deprecations-contact-center)
 
 The [September 28 deep review](../docs/research/2026-09-28-ab-250-deep-review.md) maps all **119 detailed objectives**. Their wording is unchanged; the old accepted snapshot used different heading, bullet and wrapping formats. This review adds six worked examples, ten labs and answers to 48 original checks. Only offline arithmetic/set checks were executed; tenant, telephony, campaign, agent, SDK and paid-course exercises remain unexecuted.
 
@@ -523,7 +527,85 @@ The six worked examples are offline models. No calls, messages, campaigns, credi
 - [ ] I verify current telephony, SDK/API, agent, licensing, capacity, provider and regional details.
 - [ ] I use original practice and evidence without seeking live exam content.
 
+## Key terms and phrases
+
+**Deploy Dynamics 365 Contact Center**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Contact center as a service (CCaaS)](#choose-the-architecture-and-deployment-mode) | A cloud service providing customer communication and contact-center operations within a defined deployment and integration model. |
+| [Representative workspace](#configure-workspace-agents-and-operational-helpers) | The interface that brings a service representative's active sessions, interactions and tools together. |
+| [Application lifecycle management (ALM)](#apply-alm-and-environment-governance) | The practices used to version, test, promote and maintain a solution across environments. |
+| [Environment](#apply-alm-and-environment-governance) | A managed boundary containing an application's Dataverse data, apps, flows and security configuration. |
+| [Capacity profile](#manage-users-security-and-capacity) | A definition of how work consumes a representative's available capacity for assignment. |
+| [Presence](#manage-users-security-and-capacity) | A representative's current availability state used when deciding whether work can be assigned. |
+| [Security role](#manage-users-security-and-capacity) | A defined set of privileges controlling allowed actions and access depth in Dataverse. |
+| [Available capacity](#worked-example-1-capacity-is-an-intersection) | The remaining amount of work a representative may accept under the applicable capacity limits. |
+
+**Implement channels**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Chat widget](#configure-chat-and-digital-engagement) | A client-facing entry point embedded in a site or app that starts a conversation with the contact center. |
+| [Digital channel](#configure-chat-and-digital-engagement) | A text-based customer contact route such as chat or messaging that feeds work into the contact center. |
+| [Authenticated chat](#configure-chat-and-digital-engagement) | A chat session linked to a verified customer identity so eligible customer context can be used. |
+| [Chat session token](#worked-chat-sdk-lifecycle) | A credential or context value used by the chat client within its supported conversation lifecycle. |
+| [Voice channel](#provision-voice) | The telephony path through which the contact center receives or places customer calls. |
+| [Phone number provisioning](#provision-voice) | Obtaining and configuring a supported number for a voice workload before assigning routing and channel settings. |
+| [Conversation lifecycle](#configure-conversation-lifecycle-features) | The stages an interaction passes through, such as intake, active handling, wrap-up and closure. |
+| [Wrap-up](#configure-conversation-lifecycle-features) | The post-conversation interval for completing notes and disposition before a representative returns to other work. |
+| [Transfer](#configure-conversation-lifecycle-features) | Moving an active conversation to another representative or destination while preserving the needed context. |
+| [Quick reply](#worked-representative-settings-reply-scope-and-availability) | A reusable response a representative can select and customize during a conversation. |
+| [Message masking](#distinguish-message-masking-voice-masking-and-recording-controls) | Concealing configured sensitive patterns in eligible conversation content. |
+| [Recording control](#distinguish-message-masking-voice-masking-and-recording-controls) | The configuration governing whether and how call audio is captured, paused, accessed or retained. |
+| [Recording consent](#distinguish-message-masking-voice-masking-and-recording-controls) | The permission or notification requirement governing when a conversation may be recorded for the configured use. |
+| [Outbound engagement](#configure-proactive-outbound-engagement) | A contact-center-initiated communication to a customer under the applicable consent, timing and channel rules. |
+| [Quiet hours](#worked-example-3-missing-time-zone-changes-quiet-hour-decisions) | A time window in which proactive contact is restricted, interpreted using the relevant customer's time zone. |
+| [Forecast](#configure-workforce-management) | An estimate of expected contact volume and handling workload used to plan staffing. |
+| [Staffing schedule](#configure-workforce-management) | A plan matching representative availability and skills to forecast customer demand over time. |
+| [Average handling time](#worked-example-4-workload-arithmetic-is-only-a-staffing-starting-point) | The average work time per completed interaction used with arrival volume to estimate staffing demand. |
+
+**Configure agents and AI capabilities**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Grounding](#configure-copilot-assisted-guidance) | Using relevant information the user is permitted to access as evidence for a Copilot response. |
+| [Voice agent](#configure-voice-agents) | An automated agent interacting through speech or keypad input with a configured escalation path to a person. |
+| [Escalation](#configure-voice-agents) | Moving a customer from an automated voice interaction to an authorized representative when the agent cannot resolve the request. |
+| [DTMF](#worked-voice-binding-keypad-trigger-and-transfer-context) | Dual-tone multifrequency signals sent by telephone key presses to select options or enter information. |
+
+**Configure work distribution**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Queue](#design-queues-and-capacity-behavior) | A holding and routing destination for a defined class of incoming customer work. |
+| [Overflow](#design-queues-and-capacity-behavior) | The configured alternate handling for work a queue cannot accept under its operating or capacity conditions. |
+| [Workstream](#build-basic-and-unified-routing) | The configuration that governs intake and distribution of work for a particular channel or record type. |
+| [Unified routing](#build-basic-and-unified-routing) | A routing process that classifies incoming work, sends it to a queue and assigns it to an eligible representative. |
+| [Classification](#build-basic-and-unified-routing) | Applying rules or predictions to incoming work so it carries the attributes needed for routing. |
+| [Route-to-queue rule](#build-basic-and-unified-routing) | A condition that selects a destination queue for a classified work item. |
+| [Assignment](#build-basic-and-unified-routing) | The step that chooses an eligible representative for an item already routed to a queue. |
+
+**Configure the representative experience**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Session](#tailor-profiles-sessions-and-inbox) | The representative's work context for handling one interaction and its related information. |
+| [Agent script](#configure-productivity-tools) | A guided sequence of steps shown to a representative during a service interaction. |
+| [Macro](#configure-productivity-tools) | A reusable sequence of automated actions that a representative can invoke for routine service work. |
+| [Knowledge article](#govern-knowledge) | A governed piece of service content published for representatives or customers to use when resolving questions. |
+| [Publication status](#govern-knowledge) | The lifecycle state that determines whether eligible users can rely on an article as published service guidance. |
+
+**Manage analytics**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Quality evaluation](#configure-supervisors-and-quality) | A structured review of an interaction against defined service criteria and supporting evidence. |
+| [Operational dashboard](#customize-reports-and-telemetry) | A view of contact-center signals such as wait time, work volume and handling outcomes used to investigate service performance. |
+
 ## Places to learn
+
+**Suggested practice.** Draw a two-column checklist for observing versus intervening in a conversation, then map one desired supervisor action to its setting. 5 minutes for the unit (publisher page). [Enable supervisor controls for live conversations](https://learn.microsoft.com/en-us/training/modules/configure-supervisor-experience-contact-center/2-enable-supervisor-controls)
 
 This is not a complete list and is not meant to be consumed in full. Choose one primary route, build representative end-to-end journeys, and add another resource only for a measured gap.
 

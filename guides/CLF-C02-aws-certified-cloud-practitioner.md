@@ -564,6 +564,85 @@ For an AWS disruption, vulnerable package, suspicious API call, high bill, and a
 
 ---
 
+## Key terms and phrases
+
+**Cloud Concepts**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Elasticity](#value-agility-elasticity-reach-and-availability) | The ability to add capacity as demand rises and release it when demand falls. A store that sheds extra servers after a sale demonstrates elasticity. |
+| [Agility](#value-agility-elasticity-reach-and-availability) | The ability to provision and change resources quickly enough to test an idea without waiting for a hardware purchase cycle. |
+| [Managed service](#value-agility-elasticity-reach-and-availability) | A service in which AWS operates specified infrastructure or platform tasks. The customer still controls workload configuration, data and authorized use. |
+| [Global reach](#value-agility-elasticity-reach-and-availability) | The ability to deploy in geographic locations near users or required data locations. Choose a Region after checking the specific service and workload needs. |
+| [Scalability](#value-agility-elasticity-reach-and-availability) | A workload's ability to handle a change in demand by adjusting capacity. Elasticity describes making those adjustments as demand rises and falls. |
+| [AWS Well-Architected Framework](#well-architected-is-a-tradeoff-framework) | A set of design questions across six pillars. A recovery design, for example, must balance reliability, cost and operational effort. |
+| [AWS Cloud Adoption Framework (CAF)](#migration-is-portfolio-work-not-copying-servers) | A framework covering organizational capabilities needed for cloud adoption, including business, people, governance, platform, security and operations. |
+| [Capital expenditure (CapEx)](#cloud-economics-cost-follows-configuration-and-consumption) | Up-front spending on assets such as servers. Cloud consumption can shift costs toward operating expense as resources are used. |
+
+**Security and Compliance**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Shared responsibility](#shared-responsibility-changes-by-service) | The division of security work between AWS and the customer. For example, the customer patches the guest operating system on an EC2 instance. |
+| [Amazon EC2](#shared-responsibility-changes-by-service) | Compute service for running virtual machines. The customer chooses the instance configuration and manages the guest operating system. |
+| [Amazon RDS](#shared-responsibility-changes-by-service) | Runs a managed relational database engine. Schema design, queries and application permissions remain customer decisions. |
+| [Least privilege](#identity-prefer-temporary-least-privilege-access) | Limiting an identity to the actions and resources required for its work. A read-only reporting job needs no permission to modify its source. |
+| [Temporary credentials](#identity-prefer-temporary-least-privilege-access) | Time-limited access keys and a session token. A workload can obtain them by assuming a role. |
+| [Federation](#identity-prefer-temporary-least-privilege-access) | Accepting trusted identity assertions from another provider so users or workloads can access resources without a separate long-lived credential. |
+| [Identity policy](#identity-prefer-temporary-least-privilege-access) | An IAM policy attached to an identity that describes which actions it can take on which resources, subject to other applicable controls. |
+| [Resource policy](#identity-prefer-temporary-least-privilege-access) | A policy attached to a resource, such as an S3 bucket, specifying which principals can perform particular actions on it. |
+| [AWS IAM Identity Center](#identity-prefer-temporary-least-privilege-access) | Connects workforce users and groups to AWS accounts or applications and manages the access assigned to them. |
+| [AWS Control Tower](#governance-audit-monitoring-and-compliance-evidence) | A service for setting up and governing a multi-account landing zone, including common controls as accounts are enrolled. |
+| [AWS Organizations](#governance-audit-monitoring-and-compliance-evidence) | Groups AWS accounts under common governance so a team can apply policies or consolidate billing across accounts. |
+| [AWS CloudTrail](#governance-audit-monitoring-and-compliance-evidence) | Records supported AWS API activity so an investigator can trace who called an operation, when and against which resource. |
+| [AWS Config](#governance-audit-monitoring-and-compliance-evidence) | Records supported resource configurations and can evaluate them against rules, such as whether a required setting is present. |
+| [Amazon CloudWatch](#governance-audit-monitoring-and-compliance-evidence) | Collects operational measurements and logs. An operator can graph request latency or alarm on error rates. |
+| [Amazon GuardDuty](#governance-audit-monitoring-and-compliance-evidence) | Analyzes supported telemetry for indicators of threats and produces findings for investigation. |
+| [Amazon Inspector](#governance-audit-monitoring-and-compliance-evidence) | Inspects supported workloads for software vulnerabilities or exposure that owners can prioritize and remediate. |
+| [AWS Secrets Manager](#protect-data-through-layers) | Stores sensitive values for authorized retrieval and supports rotation workflows, such as replacing a database password. |
+| [AWS Systems Manager](#protect-data-through-layers) | A set of operational tools for managed nodes and AWS resources, including inventory, automation and secure remote access. |
+| [Encryption in transit](#protect-data-through-layers) | Protecting information while it travels between endpoints, typically through an authenticated encrypted connection. |
+
+**Cloud Technology and Services**
+
+| Term or phrase | Meaning |
+|---|---|
+| [AWS CloudFormation](#ways-to-deploy-and-operate) | Creates or updates a group of resources from a template so infrastructure changes can be reviewed and repeated. |
+| [Region](#global-infrastructure) | A geographic area where AWS operates infrastructure. The choice affects where data resides and how far requests travel. |
+| [Availability Zone (AZ)](#global-infrastructure) | An isolated location within a Region that contains one or more data centers. Placing copies in different zones can help a workload survive a local failure. |
+| [Amazon CloudFront](#global-infrastructure) | A content delivery network that serves requests from edge locations and fetches content from an origin when needed. |
+| [AWS Lambda](#compute-control-versus-abstraction) | Runs application code in response to an invocation or event. The function owner selects its code, permissions and resource configuration. |
+| [Amazon ECS](#compute-control-versus-abstraction) | An orchestrator that schedules and maintains container tasks from task definitions. |
+| [Amazon EKS](#compute-control-versus-abstraction) | Managed Kubernetes on AWS. A team deploys workloads through the Kubernetes API and chooses how their compute capacity is provided. |
+| [Elastic Load Balancing (ELB)](#compute-control-versus-abstraction) | Distributes incoming traffic to healthy targets. Health checks and target selection determine which backends can receive a request. |
+| [Virtual machine (VM)](#compute-control-versus-abstraction) | A software-defined computer with its own operating system. It can run applications requiring control of the OS and installed packages. |
+| [Object storage](#storage-object-block-and-file) | Storage that addresses each item by a key. An image uploaded to an S3 bucket is an object. |
+| [Amazon S3](#storage-object-block-and-file) | Object storage organized into buckets and keys. Retrieving a named object and mounting a block device are different access patterns. |
+| [S3 lifecycle policy](#storage-object-block-and-file) | Rules that transition eligible objects to other storage classes or expire them according to criteria such as age or prefix. |
+| [AWS Backup](#storage-object-block-and-file) | Coordinates backup policies and protected recovery points for supported resources. A restore test checks whether a recovery point is usable. |
+| [S3 versioning](#storage-object-block-and-file) | Retains distinct versions of objects in a bucket. A recovery plan must also account for retention and access to older versions. |
+| [Amazon DynamoDB](#databases-choose-data-model-and-operating-boundary) | A managed key-value and document database. Choose keys around the reads and writes an application must perform. |
+| [Virtual private cloud (VPC)](#networking-and-content-delivery) | A logically isolated network in an AWS Region. Its subnets and routes determine where resources can connect. |
+| [AWS Transit Gateway](#networking-and-content-delivery) | A regional routing hub connecting VPCs and other networks. Attachments and route tables determine which networks can communicate. |
+| [AWS Direct Connect](#networking-and-content-delivery) | A dedicated connectivity option between a customer network and AWS. Routing, redundancy and encryption are separate design decisions. |
+| [VPC endpoint](#networking-and-content-delivery) | A connection from a VPC to a supported service using private connectivity. Access policies and network configuration still apply. |
+| [NAT gateway](#networking-and-content-delivery) | A network address translation service. A public NAT gateway can give private-subnet workloads outbound internet access without making them directly reachable from the internet. |
+| [AWS PrivateLink](#networking-and-content-delivery) | Provides private access to supported services through endpoints without requiring a routed connection between the entire provider and consumer networks. |
+| [AWS Step Functions](#aiml-analytics-integration-and-other-categories) | Coordinates a sequence of application steps as a state machine, with explicit choices, retries and failure paths. |
+| [Amazon EventBridge](#aiml-analytics-integration-and-other-categories) | Routes events to targets according to rules, connecting services without requiring each producer to know each consumer. |
+
+**Billing, Pricing, and Support**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Spot Instance](#compute-purchase-models) | Compute capacity offered at a discount that AWS can interrupt. A batch job that saves progress can resume elsewhere. |
+| [Reserved Instance](#compute-purchase-models) | A billing commitment that discounts eligible matching usage. Capacity reservation benefits depend on the reservation type and scope. |
+| [Savings Plans](#compute-purchase-models) | A pricing commitment to eligible compute usage measured as spend per hour over a term. Compare covered usage with the expected baseline. |
+| [AWS Budgets](#estimate-observe-allocate-and-govern) | A way to compare actual or forecast spending or usage with a target and trigger alerts as it approaches that target. |
+| [Tag](#estimate-observe-allocate-and-govern) | A resource label used to group or track items, for example to allocate costs by application or owner. |
+| [AWS Pricing Calculator](#estimate-observe-allocate-and-govern) | Estimates the cost of a proposed configuration from usage assumptions, useful before deployment. |
+| [Cost Explorer](#estimate-observe-allocate-and-govern) | Analyzes historical AWS usage and charges by dimensions such as service or account to explain spending patterns. |
+
 ## Places to learn
 
 This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Pick the formats that fit you and use the official blueprint to close only your gaps. Public catalogs were rechecked September 28; paid lessons and videos were not consumed. O'Reilly/Udemy were access-blocked, Skill Builder returned a shell and YouTube exposed only limited metadata. Times below are planning estimates unless explicitly marked as public listed hours; add time for labs and explanation review.

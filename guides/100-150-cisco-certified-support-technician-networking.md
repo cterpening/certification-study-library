@@ -682,6 +682,92 @@ These are 48 original study prompts with answer guidance, not recalled exam item
 
 ---
 
+## Key terms and phrases
+
+**Standards and concepts**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Bandwidth](#performance-terms) | The capacity of a link, usually measured in bits per second. At 100 megabits per second, transferring 200 megabits takes at least two seconds before overhead. |
+| [Latency](#performance-terms) | The time data takes to travel between two points. A high-capacity link can still have a long delay. |
+| [Jitter](#performance-terms) | Variation in packet delay, particularly important to real-time traffic such as voice. |
+| [Round-trip time (RTT)](#performance-terms) | The elapsed time for a request to reach a destination and a response to return. The outward and return paths can contribute different delays. |
+| [Throughput](#performance-terms) | The rate at which data is successfully delivered over an interval. It can be lower than nominal link capacity because of overhead or congestion. |
+| [Private cloud](#network-types-layouts-and-delivery-models) | Cloud infrastructure reserved for one organization. It can be operated internally or by a third party. |
+| [Public cloud](#network-types-layouts-and-delivery-models) | Provider-operated resources offered to multiple customers using logical isolation. Public cloud does not imply that customer workloads have public access. |
+| [Port number](#applications-transports-and-ports) | A transport-layer identifier used to distinguish application endpoints on a host. |
+| [Socket](#applications-transports-and-ports) | A communication endpoint identified by protocol and addressing information such as an IP address and port. |
+| [Transmission Control Protocol (TCP)](#applications-transports-and-ports) | A connection-oriented transport that provides an ordered byte stream and retransmits missing data while the connection can be maintained. |
+
+**Addressing and subnet formats**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Subnet mask](#ipv4-decisions) | An IPv4 value indicating which bits of an address identify the network prefix. |
+| [CIDR prefix](#ipv4-decisions) | The count of leading bits that identify an IP network. An IPv4 /26 leaves six address bits, yielding 64 addresses in the block. |
+| [Layer 2](#ipv4-decisions) | The data-link layer, where local delivery uses frames and link-layer addressing, such as Ethernet switching within a VLAN. |
+| [Link-local address](#ipv4-decisions) | An address meant for communication on the local link. IPv6 routers do not forward packets carrying link-local addresses to another link. |
+| [IPv6 link-local address](#ipv6-recognition) | An IPv6 address usable on the local link. Routers do not forward packets with link-local source or destination addresses to another link. |
+| [Hexadecimal](#ipv6-recognition) | A base-16 number system using 0–9 and A–F. Two hexadecimal digits represent one byte. |
+| [Multicast](#ipv6-recognition) | Delivery to an address representing a group of interested receivers, with the network replicating traffic where needed. |
+| [Unicast](#ipv6-recognition) | Delivery from one sender to one destination address, as in an ordinary client connection to a server. |
+| [DNS](#address-assignment-and-supporting-resolution) | The Domain Name System, which resolves names to records such as the addresses a client can use. |
+| [Default route](#address-assignment-and-supporting-resolution) | The route chosen when no more specific destination prefix matches, commonly represented as 0.0.0.0/0 for IPv4. |
+| [Dynamic Host Configuration Protocol (DHCP)](#address-assignment-and-supporting-resolution) | The protocol clients use to obtain settings such as an IP address, gateway and DNS servers, typically for a bounded lease. |
+| [Neighbor Discovery](#address-assignment-and-supporting-resolution) | The IPv6 mechanisms for learning neighbors and routers and resolving link-layer addresses on the local link. |
+| [Address Resolution Protocol (ARP)](#address-assignment-and-supporting-resolution) | The IPv4 local-link protocol that resolves a next-hop IP address to a link-layer address so a host can send a frame. |
+
+**Endpoints and media types**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Operating system (OS)](#3-endpoints-and-media-types) | Software that manages a computer’s resources and provides common services and isolation for applications. |
+| [Authentication](#copper-fiber-and-radio) | Verifying an identity before deciding which resources that identity may access. |
+| [Optical fiber](#copper-fiber-and-radio) | Media that carries light between transceivers. Fiber type, connector, transceiver compatibility and cleanliness can affect link operation. |
+| [Wi-Fi](#copper-fiber-and-radio) | Wireless local networking under the IEEE 802.11 family. Successful association, IP configuration and application access are distinct checks. |
+| [Ticket](#endpoint-evidence) | A support record documenting the issue, its scope, observations, actions, ownership and resolution so the work can be followed or escalated. |
+
+**Infrastructure**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Layer 3](#4-infrastructure) | The network layer responsible for addressing and forwarding packets between IP networks. |
+| [MAC address](#4-infrastructure) | A link-layer identifier used to deliver frames on the local network. Knowing a MAC address alone does not identify the authenticated user. |
+| [Virtual LAN (VLAN)](#4-infrastructure) | A logical Layer 2 network with its own broadcast scope. Communication with another VLAN ordinarily requires routing and a suitable policy. |
+| [Switch](#switching-and-routing-basics) | A device that normally forwards Ethernet frames within a Layer 2 network based on destination MAC addresses. |
+| [Default gateway](#switching-and-routing-basics) | The next-hop router a host uses for destinations outside its directly connected network when no more specific route applies. |
+| [Broadcast domain](#switching-and-routing-basics) | The set of interfaces that receive a Layer 2 broadcast. A VLAN divides a switched network into separate broadcast domains. |
+| [Frame](#switching-and-routing-basics) | A link-layer unit of transmission carrying a payload and addressing information for one local hop. Routers build a new link-layer frame for the next hop. |
+| [Router](#switching-and-routing-basics) | A device that forwards packets between IP networks using destination addresses and routes. |
+| [Secure Shell (SSH)](#safe-cisco-device-inspection) | An encrypted protocol for remote login and related operations. Host keys authenticate the server, while user credentials establish the client’s identity. |
+| [Telemetry](#safe-cisco-device-inspection) | Observations reported by systems, such as events, logs, metrics or traces. Source coverage and freshness determine which conclusions the data can support. |
+
+**Diagnosing problems**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Rollback](#5-diagnosing-problems) | Returning a change to a known acceptable state when results do not meet defined conditions. A valid rollback also accounts for data changed in the meantime. |
+| [Troubleshooting variable](#5-diagnosing-problems) | One condition changed during a diagnostic test. Swapping only the patch cable while keeping the ports and settings fixed makes the result easier to interpret. |
+| [Asset](#diagnostic-tools) | Something of value that the organization needs to protect, such as a device, identity, service or dataset. |
+| [Internet Control Message Protocol (ICMP)](#diagnostic-tools) | A network-layer protocol used for errors and diagnostics, including echo messages. Its success tests only the path and policy relevant to that traffic. |
+| [Display filter](#capture-evidence-without-confusing-filters) | A condition that selects which already-captured packets are shown. It can be changed without capturing the traffic again. |
+| [Bit](#capture-evidence-without-confusing-filters) | A single binary digit, 0 or 1. Network transmission rates are commonly measured in bits per second. |
+
+**Security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Authorization](#6-security) | Deciding which actions an authenticated identity is permitted to take. |
+| [Least privilege](#6-security) | Assigning only the permissions needed for the user’s task, such as using a standard account for everyday work. |
+| [Multifactor authentication (MFA)](#6-security) | Authentication using at least two distinct types of factor, such as knowledge of a password and possession of a security key. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Packet](#executed-local-packet-and-subnet-workbook) | A network-layer unit carrying a source and destination IP address. Routers use the destination and their forwarding tables to send it onward. |
+| [Subnet](#executed-local-packet-and-subnet-workbook) | A portion of an IP address space sharing a network prefix. Hosts use the prefix to distinguish local delivery from traffic requiring a router. |
+
 ## Places to learn
 
 This is **not a complete list**. Choose resources for your current gaps; the official objectives remain the scope authority. Public listings were compared on September 29, 2026. All ranges marked “editorial” are planning budgets, not provider durations or completion guarantees. No paid lessons, book interiors, provider labs or proprietary practice questions were accessed.

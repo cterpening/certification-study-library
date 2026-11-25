@@ -450,6 +450,88 @@ These are original explanations for the numbered readiness prompts, not recalled
 
 The posted 8.0 topic snapshot raises Deployment/system configuration from 20–25% to 25–35% and adds FortiAI/GenAI-on-CLI, FortiSASE identity/tagging and GenAI DLP, policy tagging, telemetry, TLS 1.3 VPN negotiation, AI/ML DNS-tunneling detection, FortiGuard Extended SaaS DB, SD-WAN underlay bandwidth decisions, and quantum-safe IPsec. These are preparation signals for the upcoming 8.0 version; keep the guide’s detailed scored mapping on 7.6 until Fortinet changes availability and publishes its final date. Recheck the [official exam page](https://training.fortinet.com/local/staticpage/view.php?page=fortios_administrator_exam) and [NSE release notice](https://helpdesk.training.fortinet.com/support/solutions/articles/73000659982) before scheduling.
 
+## Key terms and phrases
+
+**Deployment and system configuration (20–25%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Encryption](#establish-a-recoverable-baseline) | A reversible transformation that protects readable data using a key. Someone with the appropriate key can recover the original. |
+| [Least privilege](#establish-a-recoverable-baseline) | Giving an identity only the permissions needed for its task, for as long as it needs them. |
+| [Management plane](#establish-a-recoverable-baseline) | The interface and services through which administrators configure and monitor devices. Reachability here does not prove that user traffic is working. |
+| [FortiOS](#establish-a-recoverable-baseline) | The operating system used by FortiGate. Its configuration determines such behaviors as routing, policy matching, inspection and logging. |
+| [DHCP lease](#include-dhcp-in-the-baseline) | A time-limited assignment of an IP address and network settings to a client. |
+| [Dynamic Host Configuration Protocol (DHCP)](#include-dhcp-in-the-baseline) | The protocol clients use to obtain settings such as an IP address, gateway and DNS servers, typically for a bounded lease. |
+| [Subnet](#include-dhcp-in-the-baseline) | A portion of an IP address space sharing a network prefix. Hosts use the prefix to distinguish local delivery from traffic requiring a router. |
+| [FortiAnalyzer](#make-logging-part-of-the-control) | A platform for collecting and analyzing supported Fortinet telemetry, including searching logs, generating reports and handling security events. |
+| [Packet](#make-logging-part-of-the-control) | A network-layer unit carrying a source and destination IP address. Routers use the destination and their forwarding tables to send it onward. |
+| [Failover](#understand-ha-behavior) | Transfer of service to another HA member after a failure. Some sessions may need to reconnect. |
+| [FortiGate Clustering Protocol (FGCP)](#understand-ha-behavior) | The FortiGate mechanism for coordinating members of an HA cluster, including configuration synchronization and supported session handling. |
+| [High availability (HA)](#understand-ha-behavior) | A deployment that lets a peer take over when a device fails. The peer still needs working network paths and a valid configuration. |
+| [Session synchronization](#understand-ha-behavior) | Sharing selected connection state with a peer so that it can continue eligible sessions after a failure. |
+| [FortiGate](#place-fortigate-in-cloud-and-sase-architectures) | The Fortinet firewall platform that applies routing, access policy and security inspection to traffic traversing its interfaces. |
+| [Secure access service edge (SASE)](#place-fortigate-in-cloud-and-sase-architectures) | An architecture that combines wide-area connectivity and cloud-delivered security for users and branches. |
+| [Virtual machine (VM)](#place-fortigate-in-cloud-and-sase-architectures) | An isolated software-defined computer with a guest operating system and virtual hardware allocated from a host. |
+
+**Firewall policies and authentication (20–25%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Firewall-policy match](#predict-a-firewall-policy-match) | Selection of the rule that applies to a flow based on attributes such as interfaces, addresses and service. |
+| [Destination interface](#predict-a-firewall-policy-match) | The interface used to forward traffic toward its next hop. Identifying it is part of predicting a policy and routing decision. |
+| [Firewall policy](#predict-a-firewall-policy-match) | A rule that identifies matching traffic and determines its treatment. Rule order can change which action applies. |
+| [Source NAT (SNAT)](#separate-snat-and-dnat) | Rewriting the source address of a packet, commonly so internal hosts can use a shared external address. |
+| [Destination NAT (DNAT)](#separate-snat-and-dnat) | Rewriting the destination address of a packet, commonly to direct traffic for a published address to an internal service. |
+| [Central SNAT](#separate-snat-and-dnat) | A FortiOS configuration approach that manages source translation through a separate ordered rule set. |
+| [IP pool](#separate-snat-and-dnat) | A configured set of addresses available for translation or allocation. In a source-NAT policy it specifies the external addresses a flow may use. |
+| [Network address translation (NAT)](#separate-snat-and-dnat) | Rewriting source or destination addressing as traffic crosses a boundary. The translation and the permission to pass traffic are distinct decisions. |
+| [Authorization](#bind-policy-to-identity-carefully) | Determining whether a given identity may perform a specific action on the particular resource requested. |
+| [Single sign-on (SSO)](#bind-policy-to-identity-carefully) | An arrangement in which an authenticated session can be reused to access multiple authorized applications without a fresh sign-in at each. |
+| [Source interface](#bind-policy-to-identity-carefully) | The interface on which traffic enters a firewall. Its zone and context can affect which routes and policies apply. |
+
+**Content inspection (25–30%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Proxy inspection](#choose-flow-or-proxy-inspection-intentionally) | Inspection in which the firewall acts between client and server and can reconstruct application content for analysis. |
+| [Flow-based inspection](#choose-flow-or-proxy-inspection-intentionally) | Inspection that examines traffic as it passes through the firewall using flow-oriented processing. Supported features differ from proxy inspection. |
+| [Throughput](#choose-flow-or-proxy-inspection-intentionally) | The rate at which data is successfully delivered over an interval. It can be lower than nominal link capacity because of overhead or congestion. |
+| [Deep TLS inspection](#understand-encrypted-inspection-and-certificates) | Inspection in which the firewall decrypts, examines and re-encrypts permitted TLS traffic. Client trust in the inspection certificate matters. |
+| [Certificate authority (CA)](#understand-encrypted-inspection-and-certificates) | A trusted issuer that signs certificates linking subjects to public keys under a stated policy. |
+| [Certificate inspection](#understand-encrypted-inspection-and-certificates) | Examining available TLS negotiation and certificate information without decrypting the application payload. |
+| [Mutual TLS (mTLS)](#understand-encrypted-inspection-and-certificates) | TLS in which both peers present certificates and verify one another. Successful authentication still leaves authorization to policy. |
+| [Application control](#compose-security-profiles) | A control that identifies the application using a connection and applies policy to it, even when several applications share a port. |
+| [Security profile](#compose-security-profiles) | A collection of threat or content inspection settings associated with a matching firewall policy, such as web filtering or intrusion prevention. |
+| [Web filtering](#compose-security-profiles) | A control that allows or blocks web access according to a URL, category or other policy criterion. |
+
+**Routing (10–15%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Longest-prefix match](#derive-the-forwarding-decision) | The routing rule that prefers the most specific matching destination prefix. |
+| [Default route](#derive-the-forwarding-decision) | The forwarding entry used when the routing table has no more specific match for a destination. |
+| [Next hop](#derive-the-forwarding-decision) | The adjacent router or forwarding destination selected for the next stage of a packet’s path. |
+| [Static route](#derive-the-forwarding-decision) | A route installed by configuration, specifying a prefix and next hop or interface. It changes only through configuration or an associated tracking mechanism. |
+| [Performance SLA](#explain-sd-wan-as-policy-plus-health) | A link-health measurement used by SD-WAN to decide whether a path meets the traffic policy's quality targets. |
+| [Health check](#explain-sd-wan-as-policy-plus-health) | A defined test of reachability or service behavior used to decide whether a path or backend remains eligible. A TCP response may test less than an application transaction. |
+| [Jitter](#explain-sd-wan-as-policy-plus-health) | Variation in packet delay. A link with acceptable average latency can still deliver poor real-time voice quality. |
+| [Software-defined WAN (SD-WAN)](#explain-sd-wan-as-policy-plus-health) | A way to steer traffic among network connections according to policy and measured link conditions. |
+
+**VPNs (10–15%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Traffic selector](#build-the-entire-ipsec-path) | A description of the traffic an IPsec security association is intended to carry. |
+| [Authentication](#build-the-entire-ipsec-path) | The check that establishes who a user or device is. Authorization determines what that identity may do next. |
+| [Internet Protocol Security (IPsec)](#build-the-entire-ipsec-path) | A set of IP-layer protocols that protect traffic between negotiated peers, with defined security associations and traffic selectors. |
+| [Security association (SA)](#build-the-entire-ipsec-path) | A set of parameters, keys and counters defining how one direction of traffic is protected under IPsec. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Site-to-site VPN](#scenario-2-redundant-site-to-site-connectivity) | A protected connection between network gateways that carries selected traffic between sites. |
+
 ## Places to learn
 
 This is not a complete list, and it is not a prescription to consume everything. Start with the official exam page and course, then choose documentation, labs or alternate instruction that closes measured gaps. Durations are publisher-listed or clearly labeled estimates and can change.

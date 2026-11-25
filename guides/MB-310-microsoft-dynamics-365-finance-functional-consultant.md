@@ -13,7 +13,9 @@ upcoming_change_checked: 2026-10-28
 
 # MB-310 Microsoft Dynamics 365 Finance Functional Consultant Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-04.md#mb-310) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mb-310-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-310) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-05.md#mb-310)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-04.md#mb-310) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mb-310-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-310) is authoritative.
 
 **Current baseline:** Skills measured as of August 14, 2026.<br>
 **Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
@@ -134,6 +136,8 @@ For [ledger settlements](https://learn.microsoft.com/en-us/dynamics365/finance/g
 Create the target legal entity with the financial-consolidation designation, configure its chart, fiscal calendar, accounting/reporting currencies, rate type and exchange rates, then prepare subsidiary account mapping. Choose an elimination company/control design deliberately. A consolidation entity is not a daily operational company. In a synthetic two-subsidiary run, record source dates, account mapping, translation accounts and consolidation history; reconcile source balances before eliminating reciprocals. See [consolidation-company preparation](https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/prepare-company-for-consolidation). **VERIFY CURRENT:** Consolidate online template and preview behavior; a source balance change requires a deliberate rerun/review, not an unexplained plug.
 
 #### Work a tax intersection through settlement
+
+**Practice check.** For a late sales tax transaction, first check how Include corrections is configured. When it is off, the original settlement can run once per interval and a corrections settlement handles later postings. The period-specific feature can move this choice from the whole legal entity to each settlement period. [Create a sales tax payment - Finance | Dynamics 365 | Microsoft Learn](https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/tasks/create-sales-tax-payment)
 
 Set up tax main accounts/posting group, authority and settlement period before linking a code to the period and posting group. Put the appropriate codes in the party sales-tax group and item sales-tax group, then test their intersection on a document. For an invented exclusive-price line of 800, a common 5% code produces 40; an additional code present in only one group does not apply merely because it exists. Review the transaction's calculated tax and any supported documented adjustment, including the configured exemption treatment. See [sales-tax components and calculation](https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/indirect-taxes-overview).
 
@@ -321,7 +325,7 @@ Company A records an intercompany receivable of 40,000; Company B records a paya
 
 - **[Financial tags and reporting](https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2023/04/26/financial-tags-flexible-reporting-and-analytics-capabilities-without-the-overhead-of-dimensions/)** — Kristi Slininger, April 26, 2023. Useful design rationale: compare a reusable cost-center dimension with a high-cardinality purchase reference. Write down posting-control, reporting and retention needs before choosing. Its first-release support and future plans are historical; current tag documentation supplies validation and supported-document details.
 - **[Agentic ERP capabilities](https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/09/23/build-the-future-of-agentic-erp-with-new-microsoft-dynamics-365-capabilities/)** — Sameer Verma, September 23, 2026. Read the Finance section as a mixture of available and planned capabilities through March 2027. Build an exception-review worksheet for an invoice/reconciliation suggestion: evidence, entity, amount, approver and reversal. Do not infer that every announced journal or agent capability is generally available or an MB-310 objective.
-- **[Always-on roadmap transition](https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/)** — Richard Riley, August 25, 2026. New disclosures move to the [AI at Work roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap) from September; [Learn release plans](https://learn.microsoft.com/en-us/dynamics365/release-plans/) remain historical. The announced Release Planner retirement is November 15. Track feature ID, product, status, estimate, region and a confirming product-document link. A roadmap estimate alone does not prove tenant availability.
+- **[Always-on roadmap transition](https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/)** — Richard Riley, August 25, 2026. New disclosures move to the [AI at Work roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap) from September; [Learn release plans](https://learn.microsoft.com/en-us/dynamics365/release-plans/) remain historical. The former Release Planner address redirected to the Microsoft Copilot Roadmap on November 20, 2026. Use that destination for new disclosures and Learn product documentation to confirm supported behavior. Track feature ID, product, status, estimate, region and a confirming product-document link. A roadmap estimate alone does not prove tenant availability.
 
 ## Hands-on labs
 
@@ -411,7 +415,80 @@ Original learning prompts; no recalled exam items. Try each before opening its a
 
 The August 14, 2026 official study guide is the objective authority. Microsoft Learn paths and product documentation support behavior but can include adjacent topics. MicrosoftLearning labs are linked for independent hands-on use under their repository terms, not copied here. Commercial resources are optional perspectives and were not treated as objective authority. All questions in this guide are original and conceptual; no exam dumps or recalled items were used.
 
+## Key terms and phrases
+
+**Implement financial management**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Main account](#design-the-accounting-foundation) | A ledger account that identifies the financial nature of a posting, such as revenue or cash. |
+| [Financial dimension](#design-the-accounting-foundation) | An additional accounting attribute, such as department or cost center, used to classify and analyze postings. |
+| [Chart of accounts](#design-the-accounting-foundation) | The organized set of main accounts used as the foundation for recording and reporting financial activity. |
+| [Account structure](#design-the-accounting-foundation) | The definition of which main-account and dimension combinations are valid for posting. |
+| [Accounting distribution](#design-the-accounting-foundation) | The allocation of a transaction amount across ledger accounts and dimensions before posting. |
+| [Ledger account alias](#turn-a-shortcut-into-a-controlled-account-combination) | A shortcut that expands into a configured main-account and dimension combination while leaving normal validation in effect. |
+| [Fiscal calendar](#configure-ledgers-fiscal-time-and-currency) | The periods and dates used to organize posting, reporting and closing activities. |
+| [Ledger](#configure-ledgers-fiscal-time-and-currency) | The accounting configuration for a legal entity, including its chart, currencies and calendar. |
+| [Accounting currency](#configure-ledgers-fiscal-time-and-currency) | The primary currency in which a legal entity keeps its accounting records. |
+| [Reporting currency](#configure-ledgers-fiscal-time-and-currency) | An additional currency used for reporting ledger activity under the configured accounting model. |
+| [Exchange rate](#configure-ledgers-fiscal-time-and-currency) | The conversion ratio applied between currencies for a specified rate type and date. |
+| [Posting profile](#configure-ledgers-fiscal-time-and-currency) | A mapping that selects ledger accounts for business transactions such as customer or vendor postings. |
+| [Fiscal period](#configure-ledgers-fiscal-time-and-currency) | A subdivision of the fiscal calendar that governs the accounting interval for posting and reporting. |
+| [Journal](#implement-controlled-journals) | A collection of accounting lines prepared, validated and posted together under journal controls. |
+| [Voucher](#implement-controlled-journals) | The identifying reference linking the related accounting entries for a posted transaction. |
+| [Journal approval](#implement-controlled-journals) | A configured authorization step that must be completed before eligible journal lines can be posted. |
+| [Recurring journal](#retrieve-a-recurring-entry-then-validate-the-actual-journal) | A journal arrangement for preparing repeated accounting entries while retaining validation before posting. |
+| [Bank reconciliation](#manage-cash-banks-and-payments) | Matching bank statement activity with book transactions and explaining outstanding differences. |
+| [Payment proposal](#manage-cash-banks-and-payments) | A system-prepared selection of eligible transactions proposed for payment under stated criteria. |
+| [Cash flow forecast](#schedule-forecast-data-and-configure-cross-company-settlement) | An estimate of expected cash inflows and outflows based on selected source transactions and assumptions. |
+| [Settlement](#schedule-forecast-data-and-configure-cross-company-settlement) | Applying a payment, credit or other offset to open transactions to reduce or clear the balance. |
+| [Consolidation](#perform-close-consolidation-and-tax-work) | Combining financial results from multiple legal entities under a common reporting structure. |
+| [Elimination](#perform-close-consolidation-and-tax-work) | Removing intercompany effects from consolidated results so group activity is not counted twice. |
+| [Sales tax group](#work-a-tax-intersection-through-settlement) | A classification associated with a customer or vendor that helps determine applicable tax codes together with the item's tax group. |
+
+**Implement receivables, credit, collections, and subscription billing**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Accounts receivable](#run-order-to-cash-with-explainable-posting) | Customer balances and the processes for invoicing, collecting payment and settling open items. |
+| [Free text invoice](#run-order-to-cash-with-explainable-posting) | A customer invoice for charges entered without requiring an underlying sales order. |
+| [Credit limit](#control-credit-and-collections) | A threshold used with credit rules to decide whether additional customer exposure requires a hold or review. |
+| [Aging period](#control-credit-and-collections) | A defined time band used to group outstanding balances by their age or overdue status. |
+| [Collection letter](#control-credit-and-collections) | A staged communication issued under collections rules to pursue overdue customer balances. |
+| [Deferral](#configure-subscription-billing-and-deferrals) | Spreading recognition of an amount over the periods it benefits. Under equal monthly recognition, a $1,200 annual prepayment becomes $100 of expense per month. |
+| [Billing schedule](#configure-subscription-billing-and-deferrals) | The recurring dates and amounts governing when subscription-related transactions are invoiced. |
+
+**Implement payables and expenses**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Accounts payable](#control-procure-to-pay) | Vendor obligations and the processes for entering invoices, approving payment and settling balances. |
+| [Three-way matching](#control-procure-to-pay) | Comparing the vendor invoice with the purchase order and recorded receipt before payment. |
+| [Payment terms](#control-procure-to-pay) | The rule defining when an invoice becomes due and, where applicable, how discounts are calculated. |
+| [Expense policy](#govern-employee-expenses) | Rules defining acceptable employee expenses, limits, approvals and required supporting information. |
+
+**Implement budgeting**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Budget control](#separate-three-budgeting-capabilities) | The rules that check proposed spending against available budget at the configured dimensions and stages. |
+| [Budget planning](#separate-three-budgeting-capabilities) | Preparing and reviewing proposed financial targets before they become approved budget amounts. |
+| [Budget register entry](#separate-three-budgeting-capabilities) | The transaction recording a budget amount or adjustment for defined accounts, dimensions and periods. |
+
+**Manage fixed assets**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Depreciation book](#configure-books-and-depreciation) | A record of the depreciation rules and transactions applied to a fixed asset for a particular reporting basis. |
+| [Depreciation](#configure-books-and-depreciation) | Systematic allocation of a fixed asset's depreciable cost over its useful life. |
+| [Useful life](#configure-books-and-depreciation) | The period over which an asset is expected to provide benefit for a particular depreciation calculation. |
+| [Depreciation profile](#configure-books-and-depreciation) | The calculation method and conventions governing an asset book's depreciation schedule. |
+| [Acquisition](#process-the-asset-lifecycle) | The transaction that recognizes an asset's initial capitalized value in its book. |
+| [Disposal](#process-the-asset-lifecycle) | Removing an asset's value from the books and recognizing the applicable gain or loss. |
+
 ## Places to learn
+
+**Suggested practice.** Trace a voucher from its source to the split entries, compare the accounts and amounts and check the reconciliation total. About 20–35 minutes to trace the example voucher and reconcile the resulting amounts in an available training environment (editorial estimate). [Lab 3: Breakdown of voucher](https://microsoftlearning.github.io/MB-310-Microsoft-Dynamics-365-Finance/Instructions/Labs/LP3%20Lab%20-%20Breakdown%20of%20voucher.html)
 
 This is not a complete list and is not meant to be consumed in full. Choose one primary route, build several source-document-to-ledger journeys, and add another resource only for a measured gap.
 

@@ -331,6 +331,85 @@ After a node update, an applet stops forwarding logs. Compare versions/health, s
 - [ ] I can answer all original checks and complete the labs with inventories, config, events, tests, failures and rollback.
 - [ ] I rechecked the live page, datasheet, handbook, current XDR/CIE documentation, compatibility matrices, entitlements and registration.
 
+## Key terms and phrases
+
+**Planning and installation**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Authorization](#11-deployment-process-objectives-and-resources) | Determining whether a given identity may perform a specific action on the particular resource requested. |
+| [Cloud Identity Engine (CIE)](#11-deployment-process-objectives-and-resources) | A Palo Alto Networks service that supplies identity context for supported authentication and policy integrations. |
+| [Vulnerability](#11-deployment-process-objectives-and-resources) | A weakness in a system or process that could permit harm. The associated risk depends on exposure, likelihood and impact. |
+| [Cortex XDR](#12-cortex-xdr-components) | A platform for correlating endpoint and other telemetry to detect suspicious activity, support investigation and apply authorized response actions. |
+| [Extended detection and response (XDR)](#12-cortex-xdr-components) | Correlating evidence across endpoints and additional sources to support detection, investigation and response in a common operational context. |
+| [Telemetry](#12-cortex-xdr-components) | Records of activity from endpoints, networks or other systems that investigators can correlate into a timeline. |
+| [Tenant](#12-cortex-xdr-components) | An administrative or customer boundary in a shared service. Data, identities, configurations and actions must stay within the intended tenant. |
+| [Identity provider (IdP)](#13-roles-permissions-and-access) | The service that authenticates a user and supplies identity information to the relying access service. |
+| [Multifactor authentication (MFA)](#13-roles-permissions-and-access) | Verifying a user through at least two distinct factor types, such as a password and possession of a security key. |
+| [Retention](#14-data-retention-and-compute-units) | The time that collected records remain available. It determines how far back an investigation can search a given dataset. |
+| [Alert](#14-data-retention-and-compute-units) | A notification that an observed condition met a detection criterion. An analyst needs context before treating it as an incident. |
+| [Dataset](#14-data-retention-and-compute-units) | A named collection of records queried in XQL. Its schema and available time range limit what an investigation can establish. |
+
+**Cortex XDR agent configuration**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Prevention profile](#21-endpoint-prevention-profiles-and-policies) | A collection of endpoint protection settings referenced by policy to determine which behavior an agent detects or blocks. |
+| [Business continuity plan (BCP)](#21-endpoint-prevention-profiles-and-policies) | The arrangements for maintaining essential business functions through disruption, including people, suppliers and alternate work methods. |
+| [Containment](#21-endpoint-prevention-profiles-and-policies) | Limiting the scope or ongoing effects of an incident, such as isolating the affected device under an approved response plan. |
+| [Threshold](#21-endpoint-prevention-profiles-and-policies) | The value or condition that triggers a rule or changes an operational decision, such as five matching events in a ten-minute interval. |
+| [Extension profile](#22-endpoint-extension-profiles-and-policies) | A Cortex XDR collection of endpoint settings for supported features beyond the core prevention profile, assigned through policy. |
+| [Endpoint group](#23-endpoint-groups) | A set of devices selected as a target for policy. A missing or misclassified host may receive different settings. |
+
+**Ingestion and automation**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Data freshness](#31-onboard-data-sources) | How recently the data needed for a decision was observed or updated. A successful query against stale records can give a misleading view of current state. |
+| [Entity](#31-onboard-data-sources) | An identifiable resource such as a user, workload or host whose activities and relationships can be investigated. |
+| [Schema](#31-onboard-data-sources) | A definition of expected data structure, field types and constraints. A syntactically valid payload may still fail schema or business validation. |
+| [Enrichment](#32-simple-automation-rules) | Adding context, such as asset criticality or previous sightings, to an indicator or event so an analyst can interpret it. |
+| [Evidence preservation](#32-simple-automation-rules) | Maintaining the integrity and provenance of information needed for investigation, including original timestamps, collection method and access history. |
+| [Workflow trigger](#32-simple-automation-rules) | The event or condition that starts a workflow, such as creation of an incident matching specified criteria. |
+| [Broker VM](#33-broker-vm-applets-and-clusters) | A virtual appliance that hosts supported applets and connects data sources or services to the Cortex tenant. |
+| [Broker applet](#33-broker-vm-applets-and-clusters) | A component on a Broker VM that performs a defined integration or collection function with its own configuration and dependencies. |
+| [Virtual machine (VM)](#33-broker-vm-applets-and-clusters) | An isolated software-defined computer with a guest operating system and virtual hardware allocated from a host. |
+| [XDR Collector](#34-xdr-collectors) | A component that collects and forwards supported source logs for ingestion, distinct from endpoint prevention software. |
+| [Least privilege](#34-xdr-collectors) | Limiting permissions to the tasks, resources and duration an identity actually requires. |
+| [Parsing rule](#35-parsing-rules) | A rule that extracts structured fields from incoming records so later queries and detections can use them. |
+| [Parsing](#35-parsing-rules) | Extracting structured values from an incoming record. Correct parsing must preserve the distinction between a missing value and a value of zero. |
+| [Raw event](#35-parsing-rules) | The original source observation before a parser or normalization rule transforms its fields. It provides a reference for checking a derived result. |
+| [Timestamp](#35-parsing-rules) | A recorded time associated with an event. Distinguish source event time from collection or indexing time when building a timeline. |
+
+**Detection and reporting**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Correlation rule](#41-detection-rules) | A detection that evaluates related events or conditions together, often within a defined time window. |
+| [Custom prevention](#41-detection-rules) | A configured prevention condition used for a defined endpoint behavior or indicator, with testing required to understand what would be blocked. |
+| [Detection rule](#41-detection-rules) | An expression of the observed conditions that should produce a detection. Its quality depends on source coverage and tested behavior. |
+| [False positive](#41-detection-rules) | An alert that classifies benign activity as a target condition. Repeated benign alerts can distort operational priorities. |
+| [Behavioral indicator of compromise (BIOC)](#41-detection-rules) | A detection condition based on a pattern of activity, which can match even when a particular file hash is unfamiliar. |
+| [Exception](#42-exceptions-and-exclusions) | A scoped adjustment to a protection or detection rule for a justified case. Its scope and expiry affect the resulting coverage. |
+| [Telemetry gap](#42-exceptions-and-exclusions) | A portion of the expected population, time period or activity for which the system lacks observations. Silence in that gap does not establish normal behavior. |
+| [Dashboard](#43-dashboards-and-reports) | A set of visual summaries for a defined operational question. Filters, coverage and collection delays determine what the displayed totals represent. |
+| [Ingestion](#43-dashboards-and-reports) | Bringing source records into the security platform for analysis. Missing input limits what a dashboard can show. |
+| [Ingestion time](#43-dashboards-and-reports) | When a downstream system received or indexed the record, which may be substantially later than the event itself. |
+
+**Maintenance and troubleshooting**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Canary group](#51-software-component-updates) | A small representative group that receives an update early so an engineer can observe its effects before wider deployment. |
+| [Domain Name System (DNS)](#52-data-management-issues) | The Domain Name System, which resolves names to records such as IP addresses so clients can locate services. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Failover](#broker-cluster-upgrade-incident) | Moving work to an alternate system or location when the primary cannot serve it. The switch must preserve usable dependencies and adequate capacity. |
+| [Incident](#broker-cluster-upgrade-incident) | A case that groups related alerts and evidence so an analyst can assess scope and coordinate a response. |
+
 ## Places to learn
 
 This is a selective starting set, not a complete list and not a prescription to consume everything. Pick and choose official documentation, structured training, data/detection references and labs that close your gaps. Times are planning estimates unless a provider publishes duration; access, entitlements, versions and prices can change.

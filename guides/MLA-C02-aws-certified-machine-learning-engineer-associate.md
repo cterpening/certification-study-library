@@ -457,6 +457,90 @@ These are original blueprint-aligned prompts, not recalled beta questions.
 
 ---
 
+## Key terms and phrases
+
+**Data Preparation for ML and AI**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Lineage](#build-a-versioned-data-and-rights-contract) | A record of the sources and transformations that produced data or model artifacts, useful when tracing an error back to a changed input. |
+| [Checkpoint](#build-a-versioned-data-and-rights-contract) | Saved progress or state from which processing can resume after a failure. A replay design must also control duplicate downstream effects. |
+| [Amazon SageMaker](#build-a-versioned-data-and-rights-contract) | AWS's platform for tasks such as preparing data, training models and hosting inference. Choose the component around the stage of the ML lifecycle. |
+| [Label](#build-a-versioned-data-and-rights-contract) | The target value a supervised model learns to predict. A refund outcome known next month can label training data without being an available input today. |
+| [Amazon S3](#build-a-versioned-data-and-rights-contract) | Object storage organized into buckets and keys. Retrieving a named object and mounting a block device are different access patterns. |
+| [Feature store](#build-a-versioned-data-and-rights-contract) | A service for publishing and reusing model input features. Historical values for training must match what would have been available at prediction time. |
+| [Backpressure](#build-a-versioned-data-and-rights-contract) | A downstream stage forcing producers to slow or pause. If 120 events arrive per second and only 100 leave, backlog initially grows by 20 per second. |
+| [S3 versioning](#build-a-versioned-data-and-rights-contract) | Retains distinct versions of objects in a bucket. A recovery plan must also account for retention and access to older versions. |
+| [Throughput](#build-a-versioned-data-and-rights-contract) | The volume of work completed per unit time, such as predictions per second. A high rate can coexist with long waits for individual requests. |
+| [Columnar format](#build-a-versioned-data-and-rights-contract) | A format that stores values by column so an analytical query can read only the fields it needs. Parquet is one example. |
+| [Chunking](#engineer-features-chunks-and-embeddings-deliberately) | Dividing a source into retrievable passages. Boundaries affect whether the system can fetch a complete answer with enough context. |
+| [Embedding model](#engineer-features-chunks-and-embeddings-deliberately) | A model that represents items as numeric vectors for comparison. Queries and indexed passages need compatible representations. |
+| [Retrieval precision](#engineer-features-chunks-and-embeddings-deliberately) | The fraction of returned items that are relevant. If the first five passages contain three useful ones, precision at five is 3 ÷ 5 = 60%. |
+| [Vector database](#engineer-features-chunks-and-embeddings-deliberately) | A store that indexes numeric representations for similarity retrieval. Metadata can restrict which documents are eligible. |
+| [Deduplication](#engineer-features-chunks-and-embeddings-deliberately) | Identifying repeated representations of one logical event and retaining or applying it according to an explicit identity rule. |
+| [Hybrid search](#engineer-features-chunks-and-embeddings-deliberately) | Combining lexical matching and semantic retrieval. Exact product codes can benefit from the lexical component. |
+| [Tokenization](#engineer-features-chunks-and-embeddings-deliberately) | Converting text into model-specific units and identifiers. An unfamiliar word may be split into several tokens. |
+| [Data provenance](#engineer-features-chunks-and-embeddings-deliberately) | Evidence of a dataset's origin, ownership and transformation history. It supports decisions about permitted use and reproducibility. |
+| [Supervised learning](#engineer-features-chunks-and-embeddings-deliberately) | Training on examples that pair inputs with known target values. Predicting an invoice's category from past labeled invoices is one example. |
+| [Bias](#validate-quality-and-bias-across-modalities) | A systematic distortion in data, model behavior or decisions. Unequal error rates across groups warrant investigation of the data and intended use. |
+
+**ML Model and Foundation Model Development**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Foundation model](#2-ml-model-and-foundation-model-development-24) | A model trained on broad data that can support multiple downstream tasks through prompting or additional training. |
+| [Regression](#choose-the-solution-class-before-the-product) | Predicting a numeric outcome, such as delivery time in minutes. The size of the error matters, not only whether the prediction is exact. |
+| [Amazon Bedrock](#choose-the-solution-class-before-the-product) | A managed service for building applications with foundation models. Model access and application tools are separate authorization decisions. |
+| [Clustering](#choose-the-solution-class-before-the-product) | Grouping observations by similarity without predefined class labels. A team still needs to interpret and validate the groups. |
+| [Fine-tuning](#train-and-customize-reproducibly) | Training a base model further on selected examples to change its weights and task behavior. |
+| [Hyperparameter](#train-and-customize-reproducibly) | A training setting chosen by the practitioner or tuning process, such as learning rate. The model learns its weights from data. |
+| [Ground truth](#train-and-customize-reproducibly) | The reference outcome used to evaluate a prediction. A label may arrive later or carry uncertainty that limits the evaluation. |
+| [Groundedness](#evaluate-the-complete-system) | The degree to which claims in an answer are supported by the evidence supplied to the model. |
+| [Latency](#evaluate-the-complete-system) | Elapsed time between a request and the result of interest. Specify whether it measures the first token, the completed response or the full business action. |
+| [Confusion matrix](#evaluate-the-complete-system) | A table comparing predicted and actual classes. Counts in its cells let a team distinguish misses from false alarms. |
+| [Human evaluation](#evaluate-the-complete-system) | People score representative outputs against a defined rubric. Keeping the rubric and disagreement records makes comparisons interpretable. |
+
+**Deployment and Orchestration of ML and AI Workflows**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Inference](#select-inference-model-and-capacity-mode) | Running a trained model on new input, for example scoring one loan application or generating text for a request. |
+| [Provisioned throughput](#select-inference-model-and-capacity-mode) | Inference capacity allocated ahead of time under specified service terms. Compare sustained demand, latency needs and utilization before selecting it. |
+| [Batch transform](#select-inference-model-and-capacity-mode) | A SageMaker inference job for processing a dataset without maintaining a continuously serving endpoint. |
+| [Model artifact](#select-inference-model-and-capacity-mode) | The files required to load trained model behavior, such as weights and preprocessing assets. Pair them with the compatible serving runtime. |
+| [Least privilege](#engineer-rag-and-agents-as-production-systems) | Limiting an identity to the actions and resources required for its work. A read-only reporting job needs no permission to modify its source. |
+| [Idempotency](#engineer-rag-and-agents-as-production-systems) | The property that retrying the same intended operation does not apply its effect twice. An order API can remember the request identifier. |
+| [AWS CloudFormation](#provision-and-deliver-repeatably) | Creates or updates a group of resources from a template so infrastructure changes can be reviewed and repeated. |
+| [AWS Step Functions](#provision-and-deliver-repeatably) | Coordinates a sequence of application steps as a state machine, with explicit choices, retries and failure paths. |
+| [Model registry](#provision-and-deliver-repeatably) | A catalog of model versions and their metadata. A deployment can reference a reviewed version with known training and evaluation records. |
+| [Amazon CloudWatch](#verify-new-account-monitoring-and-evaluation-paths) | Collects operational measurements and logs. An operator can graph request latency or alarm on error rates. |
+
+**Operating, Monitoring, and Securing ML and AI Solutions**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Model drift](#observe-data-retrieval-model-and-agent-separately) | A change over time in model behavior or the relationship between inputs and the desired outcome. Compare performance against representative labeled cases. |
+| [AWS CloudTrail](#observe-data-retrieval-model-and-agent-separately) | Records supported AWS API activity so an investigator can trace who called an operation, when and against which resource. |
+| [Escalation](#observe-data-retrieval-model-and-agent-separately) | Routing a case to an accountable person or process when confidence, authority or risk falls outside the automation's limits. |
+| [Cost per successful task](#manage-unit-economics-and-capacity) | Total serving cost divided by tasks that meet the acceptance criteria. A $30 run producing 75 acceptable results costs $0.40 per successful task, including failed attempts. |
+| [Prompt injection](#protect-identities-data-models-prompts-and-actions) | Untrusted input that attempts to change the instructions followed by a model. Applications should separate content from authority and constrain tool permissions. |
+| [Guardrail](#protect-identities-data-models-prompts-and-actions) | A check or rule that screens model inputs, outputs or proposed actions against policy. Authorization for the underlying action still belongs in the executing service. |
+| [Identity policy](#protect-identities-data-models-prompts-and-actions) | An IAM policy attached to an identity that describes which actions it can take on which resources, subject to other applicable controls. |
+| [Human in the loop](#protect-identities-data-models-prompts-and-actions) | A design in which a person reviews or authorizes specified model-assisted decisions, with time, authority and evidence to intervene. |
+| [False positive](#protect-identities-data-models-prompts-and-actions) | A negative case incorrectly labeled positive. A legitimate payment blocked as fraudulent is a false positive. |
+| [System instruction](#protect-identities-data-models-prompts-and-actions) | A high-level instruction that guides a model's behavior across a request. An application still needs to enforce its security rules outside the prompt. |
+| [VPC endpoint](#protect-identities-data-models-prompts-and-actions) | A connection from a VPC to a supported service using private connectivity. Access policies and network configuration still apply. |
+| [Encryption in transit](#protect-identities-data-models-prompts-and-actions) | Protecting information while it travels between endpoints, typically through an authenticated encrypted connection. |
+| [Amazon Inspector](#protect-identities-data-models-prompts-and-actions) | Inspects supported workloads for software vulnerabilities or exposure that owners can prioritize and remediate. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Retrieval recall](#example-1-retrieval-quality-depends-on-the-authorized-denominator) | The share of relevant, authorized items that retrieval returns for a query. Missing evidence here can limit the answer even when generation works as intended. |
+| [Idempotency key](#example-3-tool-success-and-business-success-differ) | An identifier for one intended operation that a backend can recognize on retry, preventing a repeated tool call from applying a second change. |
+| [Release compatibility](#example-5-restore-compatible-artifacts) | The requirement that the model, prompt, embedding index and tool contracts work together. Restoring only one component can leave the earlier release unusable. |
+
 ## Places to learn
 
 This is **not a complete list**, and it is not meant to be consumed in full. Pick one primary path, build the scenarios that expose your gaps, and use legitimate practice for remediation. MLA-C02 preparation is still early: verify that a provider maps the September 1 detailed skills—not merely the four familiar C01 domain headings. Times are provider-stated where stable and otherwise transparent estimates.

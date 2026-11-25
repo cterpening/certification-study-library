@@ -13,7 +13,9 @@ upcoming_change_checked: 2026-10-28
 
 # MD-102 Managing and Securing Microsoft 365 Endpoints by Using Intune Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-02.md#md-102) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#md-102-coverage-record). Source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/md-102) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-04.md#md-102)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-02.md#md-102) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#md-102-coverage-record). Source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/md-102) is authoritative.
 
 **Current baseline:** Skills measured as of October 27, 2026.<br>
 **Blueprint reconciliation (October 28, 2026):** The October 27, 2026 English outline is the accepted current scope. The revision clarifies Android work-profile ownership and current Windows Backup, Microsoft Tunnel VPN Gateway, Microsoft 365 apps, Apple Business Manager, Managed Google Play and Remediations wording. It corrects local-administrator-password terminology; weights are unchanged. Historical objective bytes and dated reviews are preserved. Recheck localized appointment timing separately.<br>
@@ -248,6 +250,8 @@ For each workflow retain resolved targets, effective setting, user action, log/r
 [Creating elevation rules with Endpoint Privilege Management](https://learn.microsoft.com/en-us/intune/epm/create-elevation-rules) · [Add an Enterprise App Catalog App to Microsoft Intune](https://learn.microsoft.com/en-us/intune/intune-service/apps/apps-add-enterprise-app) · [Microsoft Cloud PKI deployment for Microsoft Intune](https://learn.microsoft.com/en-us/intune/cloud-pki/deployment-models) · [Microsoft Tunnel for Mobile Application Management for Android](https://learn.microsoft.com/en-us/intune/intune-service/protect/microsoft-tunnel-mam-android)
 
 ### Remote actions and support evidence
+
+**Practice check.** The November 16 Intune service release describes sharing diagnostics during an attended Windows Remote Help session. The user can review and stop sharing the information. If the user declines, the helper can continue the session without those diagnostics. [What's new in Microsoft Intune - Microsoft Intune | Microsoft Learn](https://learn.microsoft.com/en-us/intune/whats-new/)
 
 Choose a remote action from lifecycle intent:
 
@@ -621,7 +625,80 @@ Build a backup/restore matrix for version, join, account, policy and OOBE/first-
 - I completed or tabletop-tested all ten labs and can prove both allowed and denied outcomes.
 - I passed an independent readiness check without relying on recalled live-exam content.
 
+## Key terms and phrases
+
+**Prepare infrastructure for devices**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Entra join](#device-identity-registered-joined-and-hybrid-joined) | A device identity state in which the device joins the organization's cloud directory and users can sign in with organizational identities. |
+| [Entra registration](#device-identity-registered-joined-and-hybrid-joined) | A device identity state often associated with personally owned devices accessing organizational resources. |
+| [Hybrid join](#device-identity-registered-joined-and-hybrid-joined) | A device state joining an on-premises Active Directory domain while also establishing a corresponding Entra device identity. |
+| [Primary user](#device-identity-registered-joined-and-hybrid-joined) | The person associated with a managed device for supported administrative and user-facing experiences. |
+| [Enrollment](#intune-enrollment-and-platform-choices) | Establishing the management relationship through which Intune can deliver policies and receive device status. |
+| [Mobile device management (MDM)](#intune-enrollment-and-platform-choices) | Management of enrolled devices through policies, settings and compliance reporting. |
+| [Mobile application management (MAM)](#intune-enrollment-and-platform-choices) | Protection and configuration of managed applications and their corporate data, including supported unenrolled-device scenarios. |
+| [Enrollment restriction](#intune-enrollment-and-platform-choices) | A rule controlling which device types, platforms or ownership categories may enroll. |
+| [Scope tag](#roles-scope-tags-and-multi-admin-approval) | A label used with Intune role assignments to limit which managed objects an administrator can see or manage. |
+| [Scope group](#roles-scope-tags-and-multi-admin-approval) | The set of users or devices within an Intune administrator's delegated area of management. |
+| [Multi-admin approval](#roles-scope-tags-and-multi-admin-approval) | A control requiring a second authorized administrator to review supported high-impact actions. |
+| [Compliance policy](#compliance-and-conditional-access) | A set of checks Intune uses to report whether a device meets organizational requirements. |
+| [Conditional Access](#compliance-and-conditional-access) | An access decision system that can use the device's reported compliance as one input. |
+| [Grace period](#compliance-and-conditional-access) | A configured interval allowing a device time to remediate an issue before certain noncompliance actions take effect. |
+| [Multifactor authentication (MFA)](#compliance-and-conditional-access) | Requiring evidence from more than one type of authentication factor, such as a password and a possession factor. |
+| [Windows Hello for Business](#windows-hello-laps-and-local-groups) | A device-bound sign-in method using a key protected by a gesture such as a PIN or biometric. |
+| [Windows LAPS](#windows-hello-laps-and-local-groups) | Windows Local Administrator Password Solution manages and backs up local administrator account passwords under policy. |
+| [Local administrator group](#windows-hello-laps-and-local-groups) | The device-local group whose members receive administrative control of the machine. |
+
+**Manage and maintain devices**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Windows Autopilot](#windows-autopilot-versus-device-preparation) | A provisioning approach that configures an eligible Windows device for organizational use during setup. |
+| [Enrollment Status Page](#windows-autopilot-versus-device-preparation) | A provisioning status screen that reports setup progress and can hold user access while required configurations are applied. |
+| [Cloud PC](#windows-11-upgrades-backuprestore-and-cloud-pcs) | A remotely accessed Windows desktop provisioned as an organizational cloud service. |
+| [Configuration profile](#configuration-profiles-and-targeting) | A targeted collection of settings that Intune delivers to devices or users. |
+| [Assignment filter](#configuration-profiles-and-targeting) | A rule that refines an Intune assignment by selecting eligible devices with matching properties. |
+| [Settings catalog](#configuration-profiles-and-targeting) | The collection of supported Intune settings from which administrators can compose configuration policies. |
+| [Configuration conflict](#configuration-profiles-and-targeting) | A state in which different applicable settings request incompatible values, requiring inspection of effective assignment and policy. |
+| [Endpoint Privilege Management](#intune-suite-capabilities) | An Intune capability for controlling selected elevation of approved tasks under defined rules. |
+| [Device inventory](#distinguish-live-device-queries-from-fleet-inventory) | Collected information about device hardware, software or configuration that reflects its collection time. |
+| [Live device query](#distinguish-live-device-queries-from-fleet-inventory) | A request for current information from a supported device, dependent on reachability and authorization. |
+
+**Protect devices**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Security baseline](#endpoint-security-policy-stack) | An approved collection of configuration settings used to harden a system and assess drift. |
+| [Endpoint detection and response (EDR)](#endpoint-security-policy-stack) | Endpoint telemetry and investigation capabilities that help operators detect suspicious activity and take supported response actions. |
+| [Attack surface reduction (ASR) rule](#endpoint-security-policy-stack) | An endpoint control that restricts a class of risky behavior under a configured enforcement mode. |
+| [Update ring](#update-design-across-platforms) | A group of Windows update settings controlling how and when assigned devices receive eligible updates. |
+| [Feature update](#update-design-across-platforms) | A Windows release that changes the operating-system version and feature baseline. |
+| [Quality update](#update-design-across-platforms) | A servicing update delivering cumulative reliability or security fixes for an installed Windows version. |
+| [Expedited update](#update-design-across-platforms) | A policy route for accelerating installation of an eligible quality update on supported devices. |
+
+**Manage and secure applications**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Deployment plan](#stage-a-payload-with-deployment-plans) | A staged configuration defining which devices receive a payload and when progression should occur. |
+| [Update channel](#microsoft-365-apps-lifecycle) | The servicing stream controlling when a device receives eligible Microsoft 365 Apps feature updates. |
+| [App protection policy](#app-protection-and-app-configuration) | Rules applied to organizational data inside supported apps, including restrictions on moving data to other apps. |
+| [App configuration policy](#app-protection-and-app-configuration) | Settings delivered to a supported application to configure its organizational behavior. |
+| [Conditional launch](#app-protection-and-app-configuration) | App protection conditions checked when protected apps are opened, with actions determined by policy. |
+
+**Optimize endpoint operations with automation, monitoring, and reporting**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Microsoft Graph](#powershell-and-microsoft-graph-automation) | Microsoft's API surface for authorized access to organizational data and management operations, including supported Intune resources. |
+| [Endpoint Analytics](#reporting-endpoint-analytics-and-remediations) | Intune reporting on device performance and user experience signals that can guide investigation. |
+| [Remediation](#reporting-endpoint-analytics-and-remediations) | A paired detection-and-correction approach for identifying and addressing targeted endpoint conditions. |
+| [Remediation detection script](#reporting-endpoint-analytics-and-remediations) | The script that identifies whether a targeted endpoint condition needs a corrective action. |
+
 ## Places to learn
+
+**Suggested practice.** Select an endpoint observation, identify the read permission required and define a measurable result before proposing an automated change. About 20–40 minutes to read the selected sections and produce the suggested comparison or checklist (editorial estimate; full path duration was not verified). [Automate and optimize endpoint management using Microsoft Intune](https://learn.microsoft.com/en-us/training/paths/automate-optimize-endpoint-management-intune/)
 
 ### October 28 learning route and evidence task
 

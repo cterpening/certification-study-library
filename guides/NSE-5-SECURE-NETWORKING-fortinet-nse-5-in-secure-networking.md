@@ -206,6 +206,80 @@ Build two lab transports, relevant health probes, members/zones, routing and a b
 34. Baseline/version, topology/config, exact action, expected result, observed state/log/capture, negative test, rollback, and cleanup.
 35. Active NSE 4, eligible exam/version/status, topics, contract, language, delivery, policy, cost, and renewal requirements.
 
+## Key terms and phrases
+These terms span several electives. Use the linked sections to find the ones that apply to your chosen exam.
+
+**Common secure-networking foundations**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Authentication](#1-common-secure-networking-foundations) | The check that establishes who a user or device is. Authorization determines what that identity may do next. |
+| [Authorization](#1-common-secure-networking-foundations) | Determining whether a given identity may perform a specific action on the particular resource requested. |
+| [FortiAP](#1-common-secure-networking-foundations) | A Fortinet wireless access point. Radio settings, management connectivity and the client data path are distinct parts of its deployment. |
+| [FortiGate](#1-common-secure-networking-foundations) | The Fortinet firewall platform that applies routing, access policy and security inspection to traffic traversing its interfaces. |
+| [Least privilege](#1-common-secure-networking-foundations) | Giving an identity only the permissions needed for its task, for as long as it needs them. |
+| [Multifactor authentication (MFA)](#1-common-secure-networking-foundations) | Authentication using factors from two or more categories. A password and a second password both use the same knowledge factor. |
+| [Subnet](#1-common-secure-networking-foundations) | A portion of an IP address space sharing a network prefix. Hosts use the prefix to distinguish local delivery from traffic requiring a router. |
+| [Telemetry](#1-common-secure-networking-foundations) | Logs, events and measurements supplied by managed systems. Customer attribution and collection health determine whether the records are usable. |
+| [Trunk port](#1-common-secure-networking-foundations) | A switch link that can carry multiple VLANs. Tagging and native-VLAN treatment must agree at both ends. |
+
+**FortiSwitch route**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Virtual LAN (VLAN)](#switching-vlans-and-loop-prevention) | A logical Layer 2 broadcast domain. A frame moving between VLANs normally crosses a routing boundary. |
+| [Spanning Tree Protocol (STP)](#switching-vlans-and-loop-prevention) | A switching protocol that prevents forwarding loops by keeping selected redundant paths out of the active topology. |
+| [Bridge protocol data unit (BPDU)](#switching-vlans-and-loop-prevention) | A control frame exchanged by spanning tree participants. Unexpected BPDUs on an edge port can signal the wrong device or topology. |
+| [Broadcast domain](#switching-vlans-and-loop-prevention) | The set of interfaces that receive a Layer 2 broadcast. A VLAN divides a switched network into separate broadcast domains. |
+| [Frame](#switching-vlans-and-loop-prevention) | A link-layer unit of transmission carrying a payload and addressing information for one local hop. Routers build a new link-layer frame for the next hop. |
+| [Link aggregation](#switching-vlans-and-loop-prevention) | Treating compatible links as one logical interface for redundancy and load distribution. A single flow may still use only one physical member. |
+| [Native VLAN](#switching-vlans-and-loop-prevention) | The VLAN associated with untagged traffic on an 802.1Q trunk under the applicable configuration. A mismatch can place traffic in different VLANs at each end. |
+| [Quality of service (QoS)](#switching-vlans-and-loop-prevention) | Classifying and treating traffic differently under contention, such as protecting voice delay while bulk transfers share the link. |
+| [Split brain](#switching-vlans-and-loop-prevention) | A failure in which peers lose coordination and more than one behaves as active, risking inconsistent state or conflicting forwarding. |
+| [Link Aggregation Control Protocol (LACP)](#switching-vlans-and-loop-prevention) | A negotiation protocol that checks which links and peers can participate in the same aggregated connection. |
+| [FortiLink](#fortilink-management-modes-and-tenancy) | The connection over which a FortiGate manages authorized FortiSwitch devices. |
+| [Administrative domain (ADOM)](#fortilink-management-modes-and-tenancy) | A FortiManager boundary for managing a selected set of devices, policies and administrative permissions. |
+| [FortiSwitch](#fortilink-management-modes-and-tenancy) | A Fortinet Ethernet switch that provides local Layer 2 connectivity and can use supported management arrangements such as FortiLink. |
+| [Tenant](#fortilink-management-modes-and-tenancy) | An administrative or customer boundary in a shared service. Data, identities, configurations and actions must stay within the intended tenant. |
+| [DHCP snooping](#layer-2-security-and-troubleshooting) | A switch feature that distinguishes trusted server-facing ports from untrusted ones and can maintain address bindings from observed DHCP traffic. |
+| [Layer 2](#layer-2-security-and-troubleshooting) | The data-link layer, where local delivery uses frames and link-layer addressing, such as Ethernet switching within a VLAN. |
+| [Security profile](#layer-2-security-and-troubleshooting) | A collection of threat or content inspection settings associated with a matching firewall policy, such as web filtering or intrusion prevention. |
+
+**Secure Wireless LAN route**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Signal-to-noise ratio (SNR)](#rf-and-deployment-fundamentals) | Signal power relative to noise power. A received signal at −60 dBm and noise at −90 dBm give an SNR of −60 − (−90) = 30 dB. |
+| [Channel width](#rf-and-deployment-fundamentals) | The amount of radio spectrum assigned to a wireless channel. Increasing width can increase capacity but leave fewer independent neighboring channels. |
+| [Firewall policy](#rf-and-deployment-fundamentals) | A rule that identifies matching traffic and determines its treatment. Rule order can change which action applies. |
+| [FortiOS](#rf-and-deployment-fundamentals) | The operating system used by FortiGate. Its configuration determines such behaviors as routing, policy matching, inspection and logging. |
+| [Roaming](#rf-and-deployment-fundamentals) | A wireless client moving its association from one access point to another while using the network. |
+| [Service set identifier (SSID)](#access-and-segmentation) | The name of a wireless network. Its configuration associates arriving clients with authentication and network access policies. |
+| [Enterprise wireless authentication](#access-and-segmentation) | A Wi-Fi access model that verifies individual users or devices through an authentication service, commonly RADIUS. |
+| [Network access control (NAC)](#access-and-segmentation) | A way to decide what connectivity a device receives using its identity, profile and applicable policy. |
+| [Remote Authentication Dial-In User Service (RADIUS)](#access-and-segmentation) | A protocol used by network access equipment to consult a central authentication and authorization service and record accounting events. |
+| [IEEE 802.1X port-based access control](#access-and-segmentation) | Port-based access control involving a supplicant, an authenticator such as a switch and an authentication server. |
+| [Containment](#monitoring-threats-and-diagnostics) | Limiting the scope or ongoing effects of an incident, such as isolating the affected device under an approved response plan. |
+| [Dynamic Host Configuration Protocol (DHCP)](#monitoring-threats-and-diagnostics) | The protocol clients use to obtain settings such as an IP address, gateway and DNS servers, typically for a bounded lease. |
+| [Network address translation (NAT)](#monitoring-threats-and-diagnostics) | Rewriting source or destination addressing as traffic crosses a boundary. The translation and the permission to pass traffic are distinct decisions. |
+| [Packet](#monitoring-threats-and-diagnostics) | A network-layer unit carrying a source and destination IP address. Routers use the destination and their forwarding tables to send it onward. |
+| [Packet capture](#monitoring-threats-and-diagnostics) | An observation of traffic visible at a particular interface or tap. Position, direction and capture filters determine what it can show. |
+
+**SD-WAN route readiness**
+
+| Term or phrase | Meaning |
+|---|---|
+| [SD-WAN member](#4-sd-wan-route-readiness) | A network interface or connection made available to SD-WAN as a candidate path. |
+| [Performance SLA](#4-sd-wan-route-readiness) | A measurement of member quality, such as latency or loss, that a steering rule can use to qualify paths. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Rollback](#resilient-branch-lan) | Returning a change to a known acceptable state when results do not meet defined conditions. A valid rollback also accounts for data changed in the meantime. |
+| [East-west traffic](#secure-office-wi-fi) | Traffic among peer systems or workloads within an environment, such as a service calling its database. |
+| [Software-defined WAN (SD-WAN)](#new-sd-wan-candidate-path) | A way to steer traffic among network connections according to policy and measured link conditions. |
+
 ## Places to learn
 
 This is a selective starting set, not a complete list and not a prescription to consume everything. Choose the one exam route you intend to take, then use only resources that close measured gaps. Times are publisher-listed or planning estimates.

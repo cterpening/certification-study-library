@@ -212,6 +212,84 @@ These are original prompts, not Fortinet exam questions.
 - Practice explaining identity, posture, steering, route, inspection, logging, service health, failure, and rollback in one packet story.
 - Treat FortiSASE 25 courses or screenshots as historical unless current documentation confirms the behavior.
 
+## Key terms and phrases
+
+**SD-WAN architecture and deployment (10–20%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Overlay](#design-the-branch-and-regional-topology) | A logical network formed over underlying links, commonly using tunnels between branches and hubs. |
+| [Direct internet access (DIA)](#design-the-branch-and-regional-topology) | An arrangement in which branch internet traffic exits locally instead of traveling through a central site first. |
+| [FortiSASE](#design-the-branch-and-regional-topology) | Fortinet’s cloud-delivered access and security service for supported users and sites, with different traffic paths for internet, SaaS and private access. |
+| [Tenant isolation](#design-the-branch-and-regional-topology) | Separation of each customer’s identities, records, policies and actions so that one customer cannot access or affect another. |
+| [Underlay](#design-the-branch-and-regional-topology) | The network that provides basic connectivity between sites. An overlay tunnel still depends on that path. |
+| [Performance SLA](#deploy-and-measure-sd-wan) | A path-quality check that compares measurements such as latency and loss with required thresholds. |
+| [FortiAnalyzer](#deploy-and-measure-sd-wan) | A platform for collecting and analyzing supported Fortinet telemetry, including searching logs, generating reports and handling security events. |
+| [FortiGate](#deploy-and-measure-sd-wan) | The Fortinet firewall platform that applies routing, access policy and security inspection to traffic traversing its interfaces. |
+| [FortiManager](#deploy-and-measure-sd-wan) | A platform for centrally managing Fortinet device configurations and policy. A change staged in its database must reach the intended devices to affect traffic. |
+| [Software-defined WAN (SD-WAN)](#deploy-and-measure-sd-wan) | A way to steer traffic among network connections according to policy and measured link conditions. |
+
+**SD-WAN traffic control and IPsec (20–30%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Session](#derive-rules-routes-and-sessions) | The state the firewall keeps for an established flow. Existing traffic can behave differently from a new connection after a route change. |
+| [Border Gateway Protocol (BGP)](#derive-rules-routes-and-sessions) | A routing protocol that exchanges reachability between peers and uses policy and path attributes to select routes. |
+| [SD-WAN rule](#derive-rules-routes-and-sessions) | A policy that identifies a class of traffic and chooses among eligible links using its configured strategy. |
+| [Source NAT (SNAT)](#derive-rules-routes-and-sessions) | Rewriting the source address of a packet, commonly so internal hosts can use a shared external address. |
+| [Static route](#derive-rules-routes-and-sessions) | A route installed by configuration, specifying a prefix and next hop or interface. It changes only through configuration or an associated tracking mechanism. |
+| [Auto Discovery VPN (ADVPN)](#build-scalable-overlays) | A Fortinet overlay design that supports on-demand shortcut tunnels between eligible spokes, subject to routing and security association state. |
+| [Internet Key Exchange (IKE)](#build-scalable-overlays) | The protocol peers use to authenticate and negotiate the keys and settings for IPsec protection. |
+| [Route reflection](#build-scalable-overlays) | A BGP mechanism that lets a designated router distribute routes among internal peers without a full mesh of peer sessions. |
+
+**FortiSASE architecture and integration (15–25%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Secure internet access (SIA)](#select-the-correct-access-service) | Inspection and policy enforcement for users or sites reaching internet destinations. |
+| [Secure SaaS access (SSA)](#select-the-correct-access-service) | Visibility and control of activity in supported software-as-a-service applications. |
+| [Secure private access (SPA)](#select-the-correct-access-service) | Policy-controlled connectivity from authorized users or sites to private applications. |
+| [Data residency](#select-the-correct-access-service) | The geographic location in which data is stored or processed. Copies, support access and backups can affect the answer. |
+| [Data sovereignty](#select-the-correct-access-service) | The effect of jurisdiction and legal authority on who may control or obtain data. A storage-region label alone is insufficient evidence. |
+| [FortiAP](#select-the-correct-access-service) | A Fortinet wireless access point. Radio settings, management connectivity and the client data path are distinct parts of its deployment. |
+| [FortiClient](#select-the-correct-access-service) | Endpoint software used for supported connectivity and security functions, with effective capabilities determined by the deployment and assigned configuration. |
+| [Offboarding](#select-the-correct-access-service) | Ending a customer’s service by revoking access, resolving data retention or transfer and confirming that collection and automation have stopped. |
+| [Point of presence (PoP)](#select-the-correct-access-service) | A service location where users or networks connect to a provider. The selected location affects latency and the traffic path. |
+| [Encryption](#integrate-hybrid-networks) | A reversible transformation that protects readable data using a key. Someone with the appropriate key can recover the original. |
+| [Log retention](#integrate-hybrid-networks) | The period for which records remain available for an investigation or other defined purpose. Missing results outside that period cannot establish inactivity. |
+| [Next-generation firewall (NGFW)](#integrate-hybrid-networks) | A firewall that can use application and threat information as well as addresses, ports and session state to control traffic. |
+
+**FortiSASE deployment and secure access (20–30%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Normalization](#onboard-administrators-users-and-edges-safely) | Converting fields from different sources to a common representation so that the records can be compared. |
+| [Security assertion markup language (SAML)](#onboard-administrators-users-and-edges-safely) | A federation standard in which an identity provider issues signed assertions to a relying service, often for browser-based single sign-on. |
+| [Tenant](#onboard-administrators-users-and-edges-safely) | An administrative or customer boundary in a shared service. Data, identities, configurations and actions must stay within the intended tenant. |
+| [Device posture](#enforce-posture-and-least-privilege) | Evidence about an endpoint’s current condition that helps decide whether it meets an application’s access policy. |
+| [Endpoint profile](#enforce-posture-and-least-privilege) | A set of managed configuration or protection settings assigned to selected endpoints. Group membership and precedence affect the effective settings. |
+| [Least privilege](#enforce-posture-and-least-privilege) | Giving an identity only the permissions needed for its task, for as long as it needs them. |
+| [Access proxy](#deliver-sia-spa-ssa-and-ztna) | A component that checks the access request and forwards authorized traffic to its private application. |
+| [Fortinet Security Fabric](#deliver-sia-spa-ssa-and-ztna) | Fortinet’s framework for integrating products so they can exchange context and coordinate visibility or policy-driven actions. |
+| [High availability (HA)](#deliver-sia-spa-ssa-and-ztna) | A deployment that lets a peer take over when a device fails. The peer still needs working network paths and a valid configuration. |
+| [Subnet](#deliver-sia-spa-ssa-and-ztna) | A portion of an IP address space sharing a network prefix. Hosts use the prefix to distinguish local delivery from traffic requiring a router. |
+| [Zero trust network access (ZTNA)](#deliver-sia-spa-ssa-and-ztna) | Access to a named application based on identity and other policy checks such as device posture. |
+
+**Centralized management, visibility and troubleshooting (10–20%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Rollback](#govern-management-changes) | Returning a change to a known acceptable state when results do not meet defined conditions. A valid rollback also accounts for data changed in the meantime. |
+| [Security operations center (SOC)](#govern-management-changes) | The people, processes and technology responsible for monitoring, investigating and coordinating response to security events. |
+| [Authentication](#troubleshoot-from-evidence) | The check that establishes who a user or device is. Authorization determines what that identity may do next. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Packet](#intermittent-remote-user-failures) | A network-layer unit carrying a source and destination IP address. Routers use the destination and their forwarding tables to send it onward. |
+| [Packet capture](#intermittent-remote-user-failures) | An observation of traffic visible at a particular interface or tap. Position, direction and capture filters determine what it can show. |
+
 ## Places to learn
 
 This is not a complete list, and it is not a prescription to consume everything. Begin with the official exam page, then choose the current course, documentation, or labs that close measured gaps. Times are publisher-listed where visible or clearly labeled estimates.

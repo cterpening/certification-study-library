@@ -230,6 +230,88 @@ Use only synthetic events and owned or explicitly authorized nonproduction syste
 31. Match real responsibilities, data/product access, current baseline, lab feasibility, experience, and downstream track.
 32. Dumps, leaked/recalled/“real” questions, guaranteed matches, and unauthorized collections.
 
+## Key terms and phrases
+These terms span several electives. Use the linked sections to find the ones that apply to your chosen exam.
+
+**Credential and shared SecOps foundation**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Encryption](#1-credential-and-shared-secops-foundation) | A reversible transformation that protects readable data using a key. Someone with the appropriate key can recover the original. |
+| [Normalization](#1-credential-and-shared-secops-foundation) | Converting fields from different sources to a common representation so that the records can be compared. |
+| [Offboarding](#1-credential-and-shared-secops-foundation) | Ending a customer’s service by revoking access, resolving data retention or transfer and confirming that collection and automation have stopped. |
+| [Telemetry](#1-credential-and-shared-secops-foundation) | Logs, events and measurements supplied by managed systems. Customer attribution and collection health determine whether the records are usable. |
+
+**FortiSIEM Analyst lane**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Event enrichment](#queries-enrichment-and-analytics) | Adding context such as asset owner, identity or criticality to an observed event to make it easier to interpret. |
+| [Aggregation](#queries-enrichment-and-analytics) | Combining events by a key such as account or host to compute a count or other measure for a time window. |
+| [Deduplication](#queries-enrichment-and-analytics) | Recognizing and handling repeated copies of the same observation or request so duplication does not inflate counts or repeat an action. |
+| [FortiSIEM](#queries-enrichment-and-analytics) | A platform that collects and correlates events across infrastructure and security products to help identify and investigate incidents. |
+| [Correlation rule](#rules-subpatterns-and-incidents) | Logic that groups matching observations within conditions such as a time window to identify activity worth investigating. |
+| [Escalation](#rules-subpatterns-and-incidents) | Passing a case to the person or team with authority or expertise to make the next decision when defined conditions are met. |
+| [Incident](#rules-subpatterns-and-incidents) | A case representing a security event or set of related events requiring coordinated investigation and response. |
+| [Least privilege](#rules-subpatterns-and-incidents) | Giving an identity only the permissions needed for its task, for as long as it needs them. |
+| [Threshold](#rules-subpatterns-and-incidents) | The value or condition that triggers a rule or changes an operational decision, such as five matching events in a ten-minute interval. |
+| [User and entity behavior analytics (UEBA)](#ml-ueba-and-ztna) | Analysis that compares activity by users or devices with a behavioral baseline to highlight unusual patterns. |
+| [Endpoint Management Server (EMS)](#ml-ueba-and-ztna) | The FortiClient management service that enrolls endpoints, assigns configuration and collects endpoint status. |
+| [FortiGate](#ml-ueba-and-ztna) | The Fortinet firewall platform that applies routing, access policy and security inspection to traffic traversing its interfaces. |
+| [Zero trust network access (ZTNA)](#ml-ueba-and-ztna) | Access to a named application based on identity and other policy checks such as device posture. |
+
+**FortiNDR Cloud Analyst lane**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Network sensor](#architecture-sensors-and-event-fields) | A component that observes traffic at a particular point. Its placement determines which communications it can report. |
+| [Packet](#architecture-sensors-and-event-fields) | A network-layer unit carrying a source and destination IP address. Routers use the destination and their forwarding tables to send it onward. |
+| [Packet loss](#architecture-sensors-and-event-fields) | The fraction of packets that fail to reach the measurement endpoint. It is a different quality signal from delay. |
+| [Timestamp](#architecture-sensors-and-event-fields) | A recorded time associated with an event. Distinguish source event time from collection or indexing time when building a timeline. |
+| [FortiNDR](#architecture-sensors-and-event-fields) | Fortinet network detection and response technology that uses network observations to identify activity for analyst investigation. |
+| [Investigation query](#iql-detections-and-investigation) | A targeted search over collected records that tests a question about entities, activity or timing. |
+| [Case disposition](#iql-detections-and-investigation) | The recorded conclusion of an investigation and the evidence supporting it, such as verified benign activity or confirmed unauthorized access. |
+| [Raw event](#iql-detections-and-investigation) | The original source observation before a parser or normalization rule transforms its fields. It provides a reference for checking a derived result. |
+| [Threat hunting](#iql-detections-and-investigation) | A proactive investigation that tests a specific hypothesis against available telemetry and records evidence, including important coverage gaps. |
+
+**FortiSOAR Analyst lane**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Dashboard](#architecture-data-models-and-access) | A set of visual summaries for a defined operational question. Filters, coverage and collection delays determine what the displayed totals represent. |
+| [Data model](#architecture-data-models-and-access) | A defined set of entities, fields and relationships used to organize information consistently across integrations or cases. |
+| [Tenant](#architecture-data-models-and-access) | An administrative or customer boundary in a shared service. Data, identities, configurations and actions must stay within the intended tenant. |
+| [FortiSOAR](#architecture-data-models-and-access) | A platform for handling cases and orchestrating investigation and response workflows across connected security tools. |
+| [Playbook](#playbooks-and-data-manipulation) | A sequence of automated and manual tasks that transforms case data, requests decisions and records response actions. |
+| [Approval gate](#playbooks-and-data-manipulation) | A point where an authorized person must review available evidence before a workflow performs a sensitive or high-impact action. |
+| [Rate limiting](#playbooks-and-data-manipulation) | Restricting the number or rate of operations in a defined interval to protect capacity. A limit applied per identity behaves differently from one applied per IP address. |
+| [Workflow trigger](#playbooks-and-data-manipulation) | The event or condition that starts a workflow, such as creation of an incident matching specified criteria. |
+| [Authentication](#incident-handling-apis-connectors-and-troubleshooting) | The check that establishes who a user or device is. Authorization determines what that identity may do next. |
+| [Authorization](#incident-handling-apis-connectors-and-troubleshooting) | Determining whether a given identity may perform a specific action on the particular resource requested. |
+| [FortiManager](#incident-handling-apis-connectors-and-troubleshooting) | A platform for centrally managing Fortinet device configurations and policy. A change staged in its database must reach the intended devices to affect traffic. |
+
+**FortiRecon 26 Analyst and FortiDeceptor 6.2 Administrator**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Attack surface management (ASM)](#fortirecon-26-analyst) | Discovery and tracking of externally visible assets and exposures so their owners can assess and address them. |
+| [FortiRecon](#fortirecon-26-analyst) | A platform that helps analysts identify external exposure and contextual intelligence, such as internet-facing assets requiring ownership verification. |
+| [Attack surface](#fortirecon-26-analyst) | The set of reachable services, interfaces, identities and other points that expose a system to interaction or harm. |
+| [Security operations center (SOC)](#fortirecon-26-analyst) | The people, processes and technology responsible for monitoring, investigating and coordinating response to security events. |
+| [Triage](#fortirecon-26-analyst) | The first assessment of urgency, reliability, affected scope and next action for an alert or case. |
+| [Decoy](#fortideceptor-62-administrator) | An intentionally instrumented asset that resembles a real resource and generates evidence when someone interacts with it. |
+| [Alert](#fortideceptor-62-administrator) | A notification that an observed condition met a detection criterion. An analyst needs context before treating it as an incident. |
+| [Control plane](#fortideceptor-62-administrator) | The part of a network system that determines how traffic should be forwarded. The data plane applies those decisions to packets. |
+| [FortiDeceptor](#fortideceptor-62-administrator) | A platform for managing decoys and lures and reporting interactions with those deception resources. |
+| [Lure](#fortideceptor-62-administrator) | A planted reference or artifact that draws attention toward an instrumented decoy and helps reveal unexpected activity. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Ransomware](#scenario-2-ransomware-like-network-behavior) | Malware used to extort a victim, often by making files unusable. A tested backup helps recover the data. |
+| [Phishing](#scenario-3-phishing-response-automation) | An impersonation attempt that tries to induce an unsafe action or disclosure. Message appearance alone cannot establish the sender’s identity. |
+
 ## Places to learn
 
 This is a selective starting set, not a complete list and not a prescription to consume everything. Pick the chosen lane's official pages, documentation, and labs. Durations are estimates unless publisher-listed.

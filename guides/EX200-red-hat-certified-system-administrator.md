@@ -363,6 +363,97 @@ The live Red Hat exam page is the objective and product-version contract. RHEL 1
 This guide uses no recalled exam tasks or restricted course content. The scenarios, labs and checks are original and test only public objectives and product behavior.
 
 
+## Key terms and phrases
+
+**Understand and use essential tools**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Standard error](#shell-redirection-text-and-local-documentation) | The output stream programs use for diagnostics. It can be redirected independently of ordinary output. |
+| [Exit status](#shell-redirection-text-and-local-documentation) | A numeric result returned when a command finishes. Shell scripts commonly use zero to indicate success. |
+| [Authentication](#shell-redirection-text-and-local-documentation) | Checking that a claimant controls an authenticator bound to the claimed identity. It precedes the separate decision about permitted actions. |
+| [Hard link](#shell-redirection-text-and-local-documentation) | Another directory entry for the same underlying filesystem object. Removing one name does not remove the data while another link remains. |
+| [Inode](#shell-redirection-text-and-local-documentation) | Filesystem metadata identifying an object and recording properties such as ownership and data references. Directory entries map names to inode numbers. |
+| [Quoting](#shell-redirection-text-and-local-documentation) | Controlling how a shell treats spaces, glob patterns and variable expansions so arguments retain their intended boundaries. |
+| [Redirection](#shell-redirection-text-and-local-documentation) | Connecting a process stream to a different destination or source, such as sending its output to a file. |
+| [Regular expression](#shell-redirection-text-and-local-documentation) | A pattern describing strings of interest, used for matching or extraction. Its syntax and anchoring rules depend on the engine. |
+| [Shell](#shell-redirection-text-and-local-documentation) | A command interpreter that parses input, expands variables and launches programs. Syntax can differ among shells. |
+| [Standard input](#shell-redirection-text-and-local-documentation) | The input stream from which a process can read, usually file descriptor 0. A shell can attach it to a terminal, file or pipe. |
+| [Symbolic link](#shell-redirection-text-and-local-documentation) | A directory entry containing a path to another object. It can cross filesystems and still exist when the target no longer does. |
+
+**Manage software**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Repository](#2-manage-software) | A source of software packages and metadata that a package manager uses to resolve versions and dependencies. |
+| [DNF](#2-manage-software) | A package manager used on RHEL-family systems to resolve packages and dependencies from configured repositories. |
+| [RPM Package Manager (RPM)](#2-manage-software) | The package format and low-level package tooling used by RHEL-family systems to identify, install and query packaged software. |
+
+**Create simple shell scripts**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Idempotence](#3-create-simple-shell-scripts) | Applying the same desired configuration repeatedly leaves an already-correct system unchanged. A successful second run should avoid unnecessary side effects. |
+
+**Operate running systems**
+
+| Term or phrase | Meaning |
+|---|---|
+| [systemd target](#boot-targets-processes-tuning-and-services) | A named group of units used to bring the system to a particular operating state, such as multi-user operation. |
+| [Bootloader](#boot-targets-processes-tuning-and-services) | Software that selects and loads a kernel and supporting boot data before the operating system takes over. |
+| [Initramfs](#boot-targets-processes-tuning-and-services) | An initial filesystem loaded during boot with the drivers and tools needed to locate and mount the real root filesystem. |
+| [Journal](#boot-targets-processes-tuning-and-services) | The systemd event log used to examine service and boot messages. Filters such as unit and boot narrow the investigation. |
+| [Kernel](#boot-targets-processes-tuning-and-services) | The privileged core of the operating system that manages processors, memory, devices and system calls for user-space programs. |
+| [Process](#boot-targets-processes-tuning-and-services) | A running program instance with its own identifier, credentials and execution state. |
+| [Process ID (PID)](#boot-targets-processes-tuning-and-services) | The number identifying a process while it exists. A PID can later be reused, so time and executable identity matter in investigations. |
+| [systemd](#boot-targets-processes-tuning-and-services) | A Linux init and service manager that starts and supervises units according to dependencies and configuration. |
+
+**Configure local storage**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Volume group](#5-configure-local-storage) | A storage pool assembled from physical volumes by the Logical Volume Manager. |
+| [Logical volume](#5-configure-local-storage) | A block device allocated from a volume group. Increasing its capacity and growing its filesystem are separate operations. |
+| [Filesystem](#5-configure-local-storage) | The structures that organize files and directories on storage or expose a virtual hierarchy. A larger block device alone does not always enlarge its filesystem. |
+| [Partition](#5-configure-local-storage) | A defined range of blocks on a storage device, which may hold a filesystem, swap space or an LVM physical volume. |
+| [Persistent mount](#5-configure-local-storage) | A mount defined to survive restart, often through /etc/fstab. The source identifier and mount dependencies must be valid at boot. |
+| [Physical volume (PV)](#5-configure-local-storage) | A disk or partition initialized for use by LVM as a contributor of capacity to a volume group. |
+| [Swap](#5-configure-local-storage) | Disk-backed space the kernel can use for eligible memory pages. Excessive use can produce severe latency even when a process stays alive. |
+| [Timeout](#5-configure-local-storage) | The time after which an operation stops waiting and reports failure. A caller timing out does not prove the remote system made no change. |
+
+**Create and configure file systems**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Mount point](#6-create-and-configure-file-systems) | A directory where a filesystem is attached to the running directory tree. |
+| [Universally unique identifier (UUID)](#6-create-and-configure-file-systems) | A persistent identifier commonly used in mount configuration to recognize a filesystem even when device enumeration changes. |
+| [Access control list (ACL)](#6-create-and-configure-file-systems) | Additional file permissions for named users or groups beyond the owner, group and other mode bits. |
+| [Automount](#6-create-and-configure-file-systems) | Mounting a filesystem when a path is accessed rather than keeping it mounted continuously. |
+| [Network File System (NFS)](#6-create-and-configure-file-systems) | A protocol for accessing remote files through a filesystem interface. Mount, export, network reachability and identity mapping all affect access. |
+
+**Deploy, configure, and maintain systems**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Cron](#7-deploy-configure-and-maintain-systems) | A time-based scheduler that runs commands according to configured entries. Scheduled jobs may inherit a different environment from an interactive shell. |
+| [Service enablement](#7-deploy-configure-and-maintain-systems) | Configuration that lets a service be pulled in at boot or by a target. It does not establish that the service is running now. |
+| [systemd timer](#pair-a-timer-with-a-service-and-inspect-both) | A unit that schedules activation of another unit, commonly a service that performs the actual work. |
+| [Daemon](#pair-a-timer-with-a-service-and-inspect-both) | A background process providing a service, often supervised by an init or service manager. |
+| [Network Time Protocol (NTP)](#pair-a-timer-with-a-service-and-inspect-both) | A protocol for synchronizing clocks to time sources. Clock agreement helps validate certificates and align records from multiple systems. |
+| [Virtual machine (VM)](#pair-a-timer-with-a-service-and-inspect-both) | An isolated software-defined computer with a guest operating system and virtual hardware allocated from a host. |
+
+**Manage security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [SELinux context](#permissions-ssh-firewalld-and-selinux-as-layers) | A security label assigned to an object or process that policy uses when deciding whether an operation is permitted. |
+| [Discretionary access control (DAC)](#permissions-ssh-firewalld-and-selinux-as-layers) | Access determined through file ownership, permission bits and related mechanisms controlled by authorized owners or administrators. |
+| [firewalld](#permissions-ssh-firewalld-and-selinux-as-layers) | A Linux firewall-management service that organizes policy using zones and services. Runtime state and persistent configuration can differ. |
+| [Permissive mode](#permissions-ssh-firewalld-and-selinux-as-layers) | SELinux mode that records policy denials but does not enforce those denials for the permissive scope. |
+| [Security-Enhanced Linux (SELinux)](#permissions-ssh-firewalld-and-selinux-as-layers) | A Linux mandatory access control system that applies policy to labeled subjects and objects in addition to ordinary file permissions. |
+| [Secure Shell (SSH)](#permissions-ssh-firewalld-and-selinux-as-layers) | An encrypted protocol for remote login and related operations. Host keys authenticate the server, while user credentials establish the client’s identity. |
+| [umask](#permissions-ssh-firewalld-and-selinux-as-layers) | A process setting that removes permission bits from the requested creation mode. A requested 0666 with umask 0022 normally creates mode 0644. |
+
 ## Places to learn
 
 This is **not a complete list**, and it is not meant to be consumed in full. Select one primary RHEL 10 route, use current documentation for gaps, and spend at least as much time performing and recovering tasks as watching or reading. Public metadata was checked September 28, 2026. Both O'Reilly book/video pages blocked automated access, so their previously observed editions and runtimes below were not reverified. Sign-in-only lessons were not reviewed. Other totals are planning estimates.

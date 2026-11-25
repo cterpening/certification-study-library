@@ -419,6 +419,85 @@ These original exercises explain operational choices; they are not vendor exam q
 - [ ] I can calibrate SMEs with anchored rubrics, reconcile disagreement and version adjudicated evaluation cases.
 - [ ] I can run issue→trace→label→change→regression→stage→monitor→rollback as an auditable improvement loop.
 
+## Key terms and phrases
+
+**Design Applications**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Model monitoring](#convert-a-business-request-into-an-evaluable-contract) | Collecting operational and quality signals after deployment, with enough context to identify changes and investigate their effects. |
+| [Abstention](#convert-a-business-request-into-an-evaluable-contract) | Withholding an answer or action when the available evidence or authorization is insufficient. |
+| [Prompt template](#design-prompts-as-versioned-interfaces) | A versionable instruction structure with designated places for request-specific inputs or retrieved context. |
+| [Null value](#design-prompts-as-versioned-interfaces) | A marker for a missing or unknown value. Count and comparison operations may treat it differently from a supplied zero. |
+| [Baseline model](#design-prompts-as-versioned-interfaces) | A simple reference approach used to judge whether the added complexity and cost of a candidate model produce worthwhile improvement. |
+| [Idempotence](#choose-chains-tools-agents-and-agent-bricks-deliberately) | Repeatedly applying the same logical input leaves the same intended state as applying it once, which makes retry and replay safer. |
+
+**Data Preparation**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Access label](#select-and-govern-sources-before-tuning-retrieval) | Metadata associating content with an access category. The retrieval system must enforce the caller’s permissions before passing matching content into the prompt. |
+| [Unity Catalog](#select-and-govern-sources-before-tuning-retrieval) | Databricks’ governance layer for organizing data and AI assets and managing permissions, lineage and discoverability across supported workloads. |
+| [Delta table](#select-and-govern-sources-before-tuning-retrieval) | A table backed by data files and a transaction log that records committed versions and supports consistent reads. |
+| [Chunk](#extract-clean-and-chunk-according-to-structure) | A portion of source material indexed as one retrieval unit. Its boundaries affect whether a returned passage contains a complete answer. |
+| [Chunk overlap](#extract-clean-and-chunk-according-to-structure) | Sharing part of neighboring text segments during indexing to preserve context across a boundary, at the cost of repeated material. |
+| [Embedding](#build-and-evaluate-retrieval-as-its-own-system) | A vector representation used to compare a query with indexed passages by similarity. |
+| [Data freshness](#build-and-evaluate-retrieval-as-its-own-system) | The age or lag of data visible to a consumer relative to the agreed source time or publication expectation. |
+| [Latency](#build-and-evaluate-retrieval-as-its-own-system) | Elapsed time from accepting a request to delivering the defined response, often assessed at a percentile to expose slow cases. |
+| [Reranker](#build-and-evaluate-retrieval-as-its-own-system) | A component that reorders retrieved candidates using an additional estimate of relevance before selecting context. |
+| [Vector search](#build-and-evaluate-retrieval-as-its-own-system) | Retrieval that finds nearby vector representations for a query under a chosen similarity measure. |
+| [Recall at k](#measure-retrieval-without-hiding-missing-evidence) | The fraction of known relevant passages returned among the first k results. Finding three of four relevant passages in the top five gives recall@5 = 3 ÷ 4 = 75%. |
+| [Experiment](#measure-retrieval-without-hiding-missing-evidence) | A grouping of runs used to compare alternative configurations on consistent data, metrics and evaluation conditions. |
+
+**Application Development**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Retrieval-augmented generation (RAG)](#improve-prompts-and-rag-behavior-with-controlled-experiments) | Generating an answer using evidence fetched for the current request and included in the model’s context. |
+| [Citation support](#improve-prompts-and-rag-behavior-with-controlled-experiments) | Whether the referenced passage actually supports the corresponding generated claim, assessed separately from having a link. |
+| [Guardrail](#apply-guardrails-in-layers) | A control that checks or restricts inputs, outputs or actions against a stated policy. |
+| [Output schema validation](#apply-guardrails-in-layers) | Checking that a model response contains the required fields and value types before sending it to downstream code. Valid structure alone cannot establish factual accuracy. |
+| [Hallucination](#apply-guardrails-in-layers) | A plausible-looking output containing claims unsupported by the evidence or inconsistent with known facts. |
+| [Data retention](#develop-single-and-multi-agent-systems-with-observable-state) | How long data or recoverable history is kept before removal under an explicit operational or governance policy. |
+
+**Assembling and Deploying Apps**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Data lineage](#package-the-whole-inference-contract) | The chain of sources and transformations that produced a dataset or model input, useful for explaining a result or assessing change impact. |
+| [Model artifact](#package-the-whole-inference-contract) | A saved item associated with a model run or release, such as fitted weights, preprocessing code or evaluation output. |
+| [Model alias](#package-the-whole-inference-contract) | A movable name referencing a model version, allowing consumers to use a stable label while promotion changes its target. |
+| [Schema](#assemble-rag-ai-search-and-inference-paths) | The declared structure and types expected for stored data. Compare producer and consumer expectations before accepting a changed field. |
+| [Volume](#assemble-rag-ai-search-and-inference-paths) | A Unity Catalog object providing governed file access for non-tabular data, such as source documents or model artifacts. |
+| [Batch inference](#assemble-rag-ai-search-and-inference-paths) | Running a model over a bounded collection and writing results for later consumption. |
+| [Checkpoint](#treat-memory-and-persistent-state-as-governed-data) | Persisted progress or state that lets a job recover from an interruption with a known starting point. |
+| [Model Context Protocol (MCP)](#integrate-mcp-according-to-ownership-and-trust) | A protocol that lets an application connect model-driven workflows to tools and resources exposed by servers. |
+| [Service principal](#choose-a-secure-user-facing-interface) | A nonhuman identity that can own or run scheduled jobs, applications or deployment workflows under explicitly granted permissions. |
+
+**Governance**
+
+| Term or phrase | Meaning |
+|---|---|
+| [View](#protect-data-and-actions-with-controls-outside-the-model) | A named query through which consumers see data in a defined shape. A conventional logical view reads its inputs when queried. |
+| [Inference endpoint](#protect-data-and-actions-with-controls-outside-the-model) | A service interface through which a client submits model inputs and receives predictions or generated content. |
+| [Row filter](#protect-data-and-actions-with-controls-outside-the-model) | An access rule determining which records a querying identity may see. |
+| [Column mask](#protect-data-and-actions-with-controls-outside-the-model) | A rule that changes the value visible in a column according to policy or user context while leaving the source value intact. |
+| [Quarantine](#preserve-source-provenance-and-usage-rights) | Retaining rejected records and rejection reasons separately so they can be investigated without contaminating trusted outputs. |
+| [Fine-tuning](#preserve-source-provenance-and-usage-rights) | Continuing training on selected examples to adapt a model’s behavior or style. |
+
+**Evaluation and Monitoring**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Groundedness](#evaluate-components-and-end-to-end-behavior) | The degree to which an answer’s claims are supported by the evidence supplied to the model. |
+| [Token](#monitor-production-quality-operations-safety-and-cost) | A unit produced by a model’s tokenizer. Word boundaries and token boundaries need not coincide. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Aggregate evaluation score](#governance-evaluation-and-operations) | A summary of per-example scores. A high overall mean can hide poor results for a small group, so examine relevant slices as well. |
+
 ## Places to learn
 
 This is **not a complete list**, and it is not meant to be consumed in full. Pick the resources that match your gaps and learning style; prioritize building and evaluating a working agent over passively watching every course. Public metadata was checked September 28, 2026. LinkedIn exposes a 1-hour-11-minute total; Academy lessons require sign-in. Udemy and O'Reilly pages blocked automated access, so older course dates/totals below were not reverified. Other durations are planning estimates, not vendor guarantees.

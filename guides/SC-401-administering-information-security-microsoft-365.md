@@ -13,7 +13,9 @@ upcoming_change_checked: 2026-10-28
 
 # SC-401 Administering Information Security in Microsoft 365 Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-02.md#sc-401) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sc-401-coverage-record). Source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-401) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-04.md#sc-401)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-02.md#sc-401) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sc-401-coverage-record). Source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-401) is authoritative.
 
 **Current baseline:** Skills measured as of October 28, 2026.<br>
 **Exam state:** Active; the credential page lists no retirement date.<br>
@@ -169,6 +171,8 @@ Defender for Cloud Apps file policies can inspect files in connected application
 > **Related item:** A policy tip is a control interaction, not proof of prevention. Capture whether the user saw it, could override it, supplied justification, completed the action, and produced an alert.
 
 ### Implement and monitor Endpoint DLP
+
+**Practice check.** Just-in-time Endpoint DLP can protect a monitored file while its policy evaluation is pending. Deploy the intended Endpoint DLP policies first, then evaluate whether pending actions should be blocked. The documented device list includes Windows 10, Windows 11, and the three most recent macOS versions. [Get started with Endpoint DLP Just-in-time protection | Microsoft Learn](https://learn.microsoft.com/en-us/purview/endpoint-dlp-get-started-jit)
 
 Endpoint DLP requires eligible licensing, supported operating systems, device onboarding, connectivity, and supported browser/client extensions for some activities. Establish device groups, printer and removable-media groups, service domains, network-share groups, unallowed apps, browser restrictions, and evidence before advanced rules. The [Endpoint DLP overview](https://learn.microsoft.com/en-us/purview/endpoint-dlp-learn-about) is the current capability boundary.
 
@@ -375,7 +379,68 @@ Use synthetic records to reproduce the classification arithmetic, label a test P
 
 All knowledge checks and scenarios above are original study material, not recalled exam content. Product and exam names belong to their respective owners.
 
+## Key terms and phrases
+
+**Implement information protection**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Sensitive information type](#translate-a-business-requirement-into-a-classifier) | A classifier that uses evidence such as patterns, keywords and proximity to identify a particular type of sensitive data. |
+| [Exact data match (EDM)](#translate-a-business-requirement-into-a-classifier) | A classifier that compares candidate sensitive data with a prepared reference dataset under configured matching rules. |
+| [Trainable classifier](#translate-a-business-requirement-into-a-classifier) | A classifier trained with examples to recognize a category of content by its characteristics. |
+| [Confidence level](#translate-a-business-requirement-into-a-classifier) | A classifier's evidence threshold reflecting how strongly a candidate match indicates the intended information type. |
+| [Sensitivity label](#design-and-operate-sensitivity-labels) | A classification an organization applies to content or a supported container, with protection settings appropriate to the target. |
+| [Label policy](#design-and-operate-sensitivity-labels) | A policy that publishes selected sensitivity labels and related settings to a defined audience. |
+| [Default label](#design-and-operate-sensitivity-labels) | A classification assigned by default under the configured publishing or workload rules. |
+| [Mandatory labeling](#design-and-operate-sensitivity-labels) | A policy requiring supported items to receive a sensitivity label before certain actions are completed. |
+| [Content marking](#design-and-operate-sensitivity-labels) | A visible label-related marking such as a header, footer or watermark indicating classification. |
+| [Encryption](#design-and-operate-sensitivity-labels) | Protection that controls access to content through cryptographic keys and granted rights. |
+| [Label priority](#design-and-operate-sensitivity-labels) | The ordering of sensitivity labels used when evaluating classification changes and applicable labeling behavior. |
+| [Effective access](#worked-example-a-power-bi-label-is-not-an-access-removal-operation) | The permissions a caller actually has to the content through applicable sharing, item and protection controls. |
+| [Repository scanner](#protect-windows-on-premises-repositories-and-email) | A scanner used to discover or label supported content in configured on-premises repositories. |
+
+**Implement data loss prevention and retention**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Data loss prevention (DLP)](#build-dlp-from-the-attempted-action-backward) | A policy mechanism that detects sensitive information and controls specified actions involving it. |
+| [DLP rule condition](#build-dlp-from-the-attempted-action-backward) | The combination of content, context and activity criteria used to decide whether a DLP rule matches. |
+| [Policy tip](#build-dlp-from-the-attempted-action-backward) | A user-facing explanation supplied by a policy when an action matches configured protection conditions. |
+| [Override](#build-dlp-from-the-attempted-action-backward) | An authorized exception to a control that can require justification and leave an audit record. |
+| [Simulation](#build-dlp-from-the-attempted-action-backward) | Evaluating what policy rules would match before enabling enforcement. |
+| [DLP policy scope](#build-dlp-from-the-attempted-action-backward) | The users, groups, locations or workloads selected for a policy's rules and enforcement. |
+| [Endpoint DLP](#implement-and-monitor-endpoint-dlp) | DLP enforcement and monitoring on onboarded devices for actions such as copying protected content to removable media. |
+| [Device onboarding](#implement-and-monitor-endpoint-dlp) | Connecting eligible endpoints to the management and telemetry services required for endpoint controls. |
+| [Endpoint group](#implement-and-monitor-endpoint-dlp) | A defined set of devices used to scope applicable policy or measurement. |
+| [Device activity](#implement-and-monitor-endpoint-dlp) | An observed endpoint operation such as printing or copying a file to removable media that can qualify for Endpoint DLP evaluation. |
+| [Retention policy](#design-retention-and-recovery-deliberately) | Rules applied across a location or set of locations to retain or delete content on a defined timeline. |
+| [Retention label](#design-retention-and-recovery-deliberately) | A retention setting applied to an item, allowing its lifecycle and, where configured, record status to be managed individually. |
+| [Disposition review](#design-retention-and-recovery-deliberately) | A decision process for eligible retained items at the end of their retention period. |
+| [Record declaration](#design-retention-and-recovery-deliberately) | Classifying an item as a record under lifecycle controls governing changes, retention and disposition. |
+| [Event-based retention](#design-retention-and-recovery-deliberately) | Starting an item's retention period from a specified business event, such as contract termination. |
+| [Retention trigger](#design-retention-and-recovery-deliberately) | The configured event or property from which the retention clock is calculated. |
+| [eDiscovery](#design-retention-and-recovery-deliberately) | A process for finding, preserving and reviewing information needed for a legal or investigative matter. |
+| [Preservation hold](#design-retention-and-recovery-deliberately) | A directive to preserve applicable content for legal or investigative purposes even if normal lifecycle handling would dispose of it. |
+
+**Manage risks, alerts, and activities**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Insider risk indicator](#operate-insider-risk-management-with-privacy-controls) | An observed activity that contributes to a risk assessment and requires context before conclusions about a person are drawn. |
+| [Risk policy](#operate-insider-risk-management-with-privacy-controls) | The configuration defining the activities, indicators and users evaluated for a particular insider-risk scenario. |
+| [Pseudonymization](#operate-insider-risk-management-with-privacy-controls) | Masking user identity during initial investigation so names are revealed only under the authorized procedure. |
+| [Risk alert](#operate-insider-risk-management-with-privacy-controls) | A notification that configured indicators merit review, requiring investigation before any conclusion about intent. |
+| [Case](#operate-insider-risk-management-with-privacy-controls) | A controlled investigation record for collecting evidence and assessing related activity. |
+| [Risk indicator threshold](#operate-insider-risk-management-with-privacy-controls) | The configured level of observed activity required for a policy to consider a particular behavior significant. |
+| [Data Security Posture Management for AI](#protect-data-used-by-ai-services) | A Purview capability used to investigate how AI use interacts with sensitive data and where controls may need improvement. |
+| [Oversharing](#protect-data-used-by-ai-services) | Granting broader access to information than its owners intend, allowing already-authorized users or their tools to discover it. |
+| [Data security posture](#protect-data-used-by-ai-services) | The observed pattern of sensitive data, access and use that helps prioritize protective action. |
+| [Network DLP](#protect-data-used-by-ai-services) | Evaluation of supported data transfers through an integrated network enforcement point. |
+| [AI interaction record](#protect-data-used-by-ai-services) | Evidence of supported AI activity, such as a prompt or response event, retained and accessible under the applicable workload and policy. |
+
 ## Places to learn
+
+**Suggested practice.** Use a document lifecycle to compare label scope with policy scope and identify a separate recovery requirement. About 20–40 minutes to read the selected sections and produce the suggested comparison or checklist (editorial estimate; full path duration was not verified). [Implement and manage Microsoft 365 retention and recovery](https://learn.microsoft.com/en-us/training/paths/purview-implement-retention/)
 
 This is a curated starting set, **not a complete list** and not a recommendation to consume everything. Pick the formats that work for you, map them to the October 28, 2026 blueprint, and spend substantial time in a safe tenant. Durations are provider-listed runtimes where public; lab and reading times are planning estimates and access can change.
 

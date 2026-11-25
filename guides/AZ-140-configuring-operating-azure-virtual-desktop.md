@@ -13,7 +13,9 @@ upcoming_change_checked: 2026-10-28
 
 # AZ-140 Configuring and Operating Microsoft Azure Virtual Desktop Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-03.md#az-140) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-140-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-140) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-03.md#az-140)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-03.md#az-140) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-140-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-140) is authoritative.
 
 **Current baseline:** Skills measured as of July 20, 2026<br>
 **Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
@@ -276,6 +278,8 @@ Conditional Access evaluates AVD service/feed authentication and Windows Cloud L
 Smart cards and passwordless methods have join, client, certificate/Kerberos and redirection dependencies. “MFA succeeded” proves only that policy step, not host sign-in or resource access.
 
 ### Protect the session hosts and data paths
+
+**Practice check.** To restrict clipboard or redirected drives by session trust, map a Conditional Access authentication context to the redirection. Microsoft's Azure Virtual Desktop guidance also covers RemoteApp sessions and lists printers and USB among the supported redirections. [Configure context-based redirection | Microsoft Learn](https://learn.microsoft.com/en-us/windows-365/enterprise/context-based-redirections?tabs=windows-365)
 
 Apply layered controls:
 
@@ -818,7 +822,81 @@ Choose standard or session-host-configuration management before creating the poo
 
 ---
 
+## Key terms and phrases
+
+**Architecture and troubleshooting model**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Azure Virtual Desktop (AVD)](#separate-the-connection-layers) | Microsoft's desktop and app virtualization service that brokers user connections to session hosts. |
+| [Workspace](#separate-the-connection-layers) | The publishing container through which users discover the application groups assigned to them. |
+| [Application group](#separate-the-connection-layers) | A collection of published desktops or applications assigned to users from a host pool. |
+| [Connection broker](#separate-the-connection-layers) | The service component that matches a connection request to an authorized session host. |
+
+**Plan and implement AVD infrastructure (40–45%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [User persona](#assess-personas-workloads-and-capacity) | A group of users with similar applications, usage patterns and resource needs used when sizing session hosts. |
+| [Concurrency](#assess-personas-workloads-and-capacity) | The number of sessions active together, which drives capacity more directly than the total number of licensed users. |
+| [Pooled host pool](#pooled-versus-personal-host-pools) | A collection of session hosts shared among users, with sessions distributed according to the pool's load-balancing policy. |
+| [Personal host pool](#pooled-versus-personal-host-pools) | A host pool in which a particular desktop is assigned to a particular user. |
+| [Breadth-first load balancing](#pooled-versus-personal-host-pools) | Distribute new sessions among eligible hosts to spread utilization. |
+| [Depth-first load balancing](#pooled-versus-personal-host-pools) | Fill eligible hosts toward their configured limits before using additional hosts. |
+| [Drain mode](#pooled-versus-personal-host-pools) | A state that prevents new user sessions from being assigned to a host while existing work can finish. |
+| [Session limit](#pooled-versus-personal-host-pools) | The configured maximum number of sessions a pooled host should receive under its intended operating conditions. |
+| [Round-trip time](#plan-network-capacity-and-paths) | The elapsed time for a network message to reach the other end and its response to return. |
+| [Reverse connect](#reverse-connect-shortpath-and-multipath) | The session host initiates its connection toward the Azure Virtual Desktop service to establish a session path. |
+| [Remote Desktop Protocol (RDP) Shortpath](#reverse-connect-shortpath-and-multipath) | A transport option that can establish a UDP path between a client and session host when network conditions permit. |
+| [Private endpoint](#plan-azure-private-link) | A network interface with a private IP address through which a virtual network reaches a specific supported service resource. |
+| [Profile storage](#plan-profile-and-application-storage) | A shared location holding user profile containers so profile data can follow users between eligible hosts. |
+| [Profile container attachment](#plan-profile-and-application-storage) | Mounting the user's profile disk on the chosen session host at sign-in. |
+| [Session host](#implement-host-pools-and-session-hosts) | A virtual machine that runs the desktop or applications presented to users. |
+| [Host pool](#implement-host-pools-and-session-hosts) | A collection of session hosts that share assignment and connection settings. |
+| [Golden image](#create-and-manage-images) | A maintained base operating-system image containing the applications and configuration needed to build consistent hosts. |
+| [Image version](#create-and-manage-images) | An identified revision of the base image that can be tested and rolled out as a known configuration. |
+
+**Plan and implement identity and security (15–20%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Role assignment](#separate-authorization-layers) | A grant that gives a principal a defined Azure role at a particular scope. |
+| [Single sign-on (SSO)](#configure-sso-and-conditional-access) | Using one authenticated identity flow to reach the desktop or app without a separate interactive prompt at each stage. |
+| [Conditional Access](#configure-sso-and-conditional-access) | The Entra policy system that evaluates signals about sign-in context and decides what access conditions to require. |
+| [Multifactor authentication (MFA)](#configure-sso-and-conditional-access) | Requiring evidence from more than one type of authentication factor, such as a password and a possession factor. |
+| [Conditional Access signal](#configure-sso-and-conditional-access) | A property such as user, device or sign-in risk evaluated when deciding whether a session is permitted. |
+| [Network security group (NSG)](#protect-the-session-hosts-and-data-paths) | A set of prioritized inbound and outbound traffic rules applied to a subnet or network interface. |
+
+**Plan and implement user environments and apps (20–25%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [FSLogix profile container](#design-fslogix-deliberately) | A virtual disk that holds a user's profile and attaches at sign-in so settings can follow the user between hosts. |
+| [VHDX](#design-fslogix-deliberately) | A virtual hard disk file format that can hold user profile data for attachment to a session host. |
+| [RDP property](#configure-experience-and-rdp-properties) | A connection setting controlling behavior such as display, device redirection or session experience. |
+| [Device redirection](#configure-experience-and-rdp-properties) | Making a local client resource, such as a printer or clipboard, available in the remote session under policy. |
+| [Display redirection](#configure-experience-and-rdp-properties) | RDP settings governing which monitors or display characteristics should be available in the remote desktop. |
+| [RemoteApp](#deliver-applications) | An individually published application opened through a remote session without presenting a full desktop. |
+| [Application delivery](#deliver-applications) | Making a supported application available to the target desktop or users with its dependencies and entitlements. |
+| [Shared computer activation](#microsoft-365-apps-onedrive-teams-and-browsers) | An activation arrangement for eligible Microsoft 365 Apps users on shared devices such as session hosts. |
+| [Media optimization](#microsoft-365-apps-onedrive-teams-and-browsers) | A design that moves supported audio or video processing onto the client to reduce unnecessary remote-session processing. |
+
+**Monitor and maintain AVD (10–15%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Log Analytics workspace](#build-end-to-end-observability) | A destination for collected logs where operators can run queries and investigate events. |
+| [Alert rule](#build-end-to-end-observability) | A condition evaluated against monitoring data that creates an alert when its criteria are met. |
+| [Connection diagnostic](#build-end-to-end-observability) | Telemetry for stages of a user's connection that helps distinguish brokering, transport and host sign-in failures. |
+| [Autoscale](#autoscale-and-capacity) | Adjustment of available session-host capacity according to a schedule, demand and scaling rules. |
+| [Scaling plan](#autoscale-and-capacity) | A schedule and set of scaling rules controlling session-host capacity in an assigned host pool. |
+| [Maintenance window](#update-strategy) | A planned interval for updating or replacing hosts while coordinating user sessions and capacity. |
+| [Recovery time objective (RTO)](#backup-and-disaster-recovery) | The target for how long a workload may remain unavailable after a disruption. |
+| [Recovery point objective (RPO)](#backup-and-disaster-recovery) | The target for how far back in time recovered data may be relative to the disruption. |
+
 ## Places to learn
+
+**Suggested practice.** Map the prerequisite host pool, diagnostic data and workspace configuration to the information that appears in Insights. About 25 minutes for the exercise (publisher estimate); provisioning or setup can add time. [Lab - Implement monitoring by using Azure Virtual Desktop Insights](https://microsoftlearning.github.io/AZ-140-Configuring-and-Operating-Microsoft-Azure-Virtual-Desktop/Instructions/Labs_EntraID/03_LAB_41_01_Implement_monitoring_by_using_Azure_Virtual_Desktop_Insights.html)
 
 This is **not a complete list**, and it is not a recommendation to consume everything. Pick the resources and formats that fit you, and use the official July 20, 2026 objectives as the coverage checklist. Estimated times include reasonable note-taking or practice where stated and should be rechecked before purchase.
 

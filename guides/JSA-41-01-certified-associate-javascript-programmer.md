@@ -818,6 +818,64 @@ These eight broader learner activities remain **proposed**. Executing the origin
 - [ ] I have completed the eight labs without copying solutions.
 - [ ] I have rechecked the official JSA-41-01 page and policies.
 
+## Key terms and phrases
+
+**Classless objects**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Property](#object-creation-properties-and-notation) | A named or symbol-keyed association belonging to or accessible on an object. |
+| [for…in](#object-creation-properties-and-notation) | A loop over an object’s enumerable string-keyed properties, including inherited ones. |
+| [Shallow copy](#identity-copying-and-cloning) | A new outer object whose nested object values can still refer to the same objects as the original. |
+| [Object identity](#identity-copying-and-cloning) | Whether two references refer to a single object, independently of whether distinct objects have matching properties. |
+| [Spread syntax](#identity-copying-and-cloning) | Expanding elements or enumerable properties into a new call or literal, without recursively copying nested objects. |
+| [Receiver](#methods-receivers-and-accessors) | The object supplied as this for a method call, depending on how the function is called or bound. |
+| [Arrow function](#methods-receivers-and-accessors) | A compact function expression that captures this from its enclosing context. |
+| [Property accessor](#methods-receivers-and-accessors) | A property implemented with functions that run when a value is read or assigned. |
+| [Property descriptor](#descriptors-and-mutability-controls) | Metadata describing a property’s value or accessors and characteristics such as whether it can be enumerated or reconfigured. |
+| [Prototype chain](#prototypes) | The chain JavaScript consults when a requested property is absent from the object itself. |
+| [Prototype](#prototypes) | The object JavaScript consults as the next step when a property is missing from an object itself. |
+
+**Classes and the class-based approach**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Temporal dead zone](#declarations-fields-and-instances) | The period in a lexical scope before a let, const or class binding is initialized, during which using it raises ReferenceError. |
+| [Method overriding](#inheritance-overriding-and-super) | A derived class supplies its own method under a name inherited from its base class. |
+
+**Built-in objects**
+
+| Term or phrase | Meaning |
+|---|---|
+| [NaN](#number-string-and-date) | The special numeric value representing an invalid numeric result. Equality comparison does not make NaN equal to itself. |
+| [undefined](#arrays-and-functional-methods) | The primitive value used for an uninitialized ordinary variable after declaration or for an absent property lookup. |
+| [Array](#arrays-and-functional-methods) | An object providing an ordered, indexed collection with a length property. Its elements need not share a type. |
+| [Method](#arrays-and-functional-methods) | A function-valued property invoked through an object. The call form can determine which receiver is used. |
+| [Destructuring](#arrays-and-functional-methods) | Binding or assigning values by matching an object’s named properties or an iterable’s positions. |
+| [Map](#set-map-and-plain-dictionaries) | A collection of key-value pairs whose keys may be objects as well as primitive values. |
+| [Map key](#set-map-and-plain-dictionaries) | A key associated with a value in a Map, which may itself be an object compared by identity. |
+| [Set](#set-map-and-plain-dictionaries) | A collection of distinct values useful for membership checks without repeated entries. |
+| [JSON serialization](#json-math-regular-expressions-and-built-in-extension) | Converting supported JavaScript data into JSON text for storage or exchange, with limitations on the value types represented. |
+
+**Advanced functions**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Closure](#parameters-closures-context-and-wrappers) | A function and its access to the lexical bindings visible where it was created. |
+| [Binding](#parameters-closures-context-and-wrappers) | An association between a name and a value in a particular lexical environment. |
+| [Truthiness](#parameters-closures-context-and-wrappers) | How a value behaves in a Boolean context. A nonempty string containing the word false is truthy. |
+| [Function expression](#parameters-closures-context-and-wrappers) | An expression creating a function value that can be stored, passed or returned. |
+| [Lexical scope](#parameters-closures-context-and-wrappers) | The enclosing source structure that determines where a function looks for variable bindings. |
+| [Rest parameter](#parameters-closures-context-and-wrappers) | A function parameter collecting the remaining call arguments into an array. |
+| [Iterator](#generators-and-iteration-protocols) | An object that supplies successive results through next(), indicating when the sequence has finished. |
+| [for…of](#generators-and-iteration-protocols) | A loop that consumes an iterable’s values using its iteration protocol. |
+| [Generator function](#generators-and-iteration-protocols) | A function that returns an iterator and can suspend at yield to produce successive values on demand. |
+| [Promise](#callbacks-promises-and-asyncawait) | An object representing a pending or settled asynchronous result. A settled promise is either fulfilled with a value or rejected with a reason. |
+| [Callback](#callbacks-promises-and-asyncawait) | A function passed to other code to run at a chosen point, either immediately or later. |
+| [Exception](#callbacks-promises-and-asyncawait) | A value thrown to interrupt normal control flow and passed outward until a matching handling context takes control. |
+| [Promise chaining](#callbacks-promises-and-asyncawait) | Linking successive asynchronous operations by returning values or promises from handlers. |
+| [Async function](#callbacks-promises-and-asyncawait) | A function that always returns a promise, enabling await to express pauses for asynchronous completion within the function. |
+
 ## Places to learn
 
 This is not a complete list, and it is not meant to be consumed in full. Pick one primary path, add focused documentation and a second explanation only where useful, and spend at least as much time writing and debugging code as watching. Commercial resources are supplementary; reconcile them with the current official syllabus.

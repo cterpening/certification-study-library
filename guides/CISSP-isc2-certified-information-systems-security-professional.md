@@ -537,6 +537,128 @@ Use these original answered prompts to explain a decision and its evidence. They
 
 A useful readiness standard is being able to defend the decision, identify its owner, produce evidence and explain a failure or recovery path. Memorizing terminology without those connections leaves a gap.
 
+## Key terms and phrases
+
+**Security and Risk Management**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Chain of custody](#1-security-and-risk-management-16) | A record of who collected, possessed or transferred evidence, when it changed hands and how its integrity was protected. |
+| [Maximum tolerable downtime (MTD)](#1-security-and-risk-management-16) | The longest interruption the business can tolerate before the impact becomes unacceptable. Restoration targets need to leave time for business recovery. |
+| [Residual risk](#1-security-and-risk-management-16) | The exposure remaining after safeguards are considered, which an accountable owner must address or accept. |
+| [Security awareness](#1-security-and-risk-management-16) | Activities that help people recognize security situations and act appropriately. Behavioral outcomes give stronger feedback than attendance alone. |
+| [Third-party risk](#1-security-and-risk-management-16) | Exposure arising through a supplier or partner, including its access, dependencies, service continuity and handling of data. |
+| [Due care](#1-security-and-risk-management-16) | Taking reasonable protective action given the circumstances, such as putting an appropriate safeguard into operation. |
+| [Due diligence](#1-security-and-risk-management-16) | The investigation and ongoing verification used to understand obligations, evaluate risk and confirm that safeguards remain suitable. |
+| [Risk owner](#turn-risk-information-into-an-accountable-decision) | The person accountable for deciding how to treat a risk to an organizational objective, within delegated authority. |
+| [Normalization](#turn-risk-information-into-an-accountable-decision) | Mapping source-specific values to a common representation, such as translating different vendor fields into the same source-address field. |
+| [Risk tolerance](#turn-risk-information-into-an-accountable-decision) | The permitted variation around a particular objective or exposure that helps determine when to escalate. |
+| [Risk transfer](#turn-risk-information-into-an-accountable-decision) | Shifting part of a loss or obligation to another party through a contract or insurance. The organization can still face residual loss and accountability. |
+| [Severity](#turn-risk-information-into-an-accountable-decision) | A rating of expected or observed impact. It differs from confidence, which expresses how strongly the evidence supports the assessment. |
+
+**Asset Security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Data classification](#2-asset-security-10) | Assigning a sensitivity or impact category to information so its handling and protection match its value. |
+| [Data lifecycle](#2-asset-security-10) | The stages information passes through, from creation and use to retention and eventual disposal. |
+| [Data retention](#2-asset-security-10) | Keeping records for a defined purpose and period, then disposing of them as authorized, subject to holds or other obligations. |
+| [Least privilege](#2-asset-security-10) | Granting an identity only the access needed for its assigned work. |
+| [Log retention](#2-asset-security-10) | The period for which records remain available for an investigation or other defined purpose. Missing results outside that period cannot establish inactivity. |
+| [Data custodian](#2-asset-security-10) | The role that handles or operates data and applies the controls directed by the accountable owner. |
+
+**Security Architecture and Engineering**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Defense in depth](#3-security-architecture-and-engineering-13) | Coordinating safeguards across multiple layers so the failure of one does not leave the asset entirely exposed. |
+| [Asymmetric cryptography](#3-security-architecture-and-engineering-13) | Cryptography using mathematically related public and private keys, enabling operations such as signature verification or exchange of protected data. |
+| [Confidentiality](#3-security-architecture-and-engineering-13) | Restricting disclosure of information to authorized parties. A file can lose confidentiality even if its contents are unchanged. |
+| [Secure access service edge (SASE)](#3-security-architecture-and-engineering-13) | An architecture that combines wide-area connectivity with cloud-delivered security for distributed users and sites. |
+| [Shared responsibility](#3-security-architecture-and-engineering-13) | The allocation of security duties between the cloud provider and the customer for the service in use. |
+| [Security policy](#separate-a-security-claim-from-its-evidence) | A statement of organizational intent and authority that guides decisions. A procedure describes how to carry out a task. |
+
+**Communication and Network Security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Network segmentation](#4-communication-and-network-security-13) | Establishing boundaries between systems and controlling the paths that cross them. |
+| [API gateway](#4-communication-and-network-security-13) | An entry point that routes API requests and can enforce controls such as authentication, request limits and logging before traffic reaches backends. |
+| [Certificate chain](#4-communication-and-network-security-13) | The certificates that connect a presented certificate to a trusted issuer. Name, validity and other checks still apply. |
+| [Load balancer](#4-communication-and-network-security-13) | A component that sends eligible requests or connections to selected backends using health and distribution policy. |
+| [Telemetry](#4-communication-and-network-security-13) | Observations reported by systems, such as events, logs, metrics or traces. Source coverage and freshness determine which conclusions the data can support. |
+
+**Identity and Access Management**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Separation of duties](#5-identity-and-access-management-13) | Splitting incompatible responsibilities so one person cannot complete a sensitive operation without independent involvement. |
+| [Authentication](#5-identity-and-access-management-13) | Checking that a claimant controls an authenticator bound to the claimed identity. It precedes the separate decision about permitted actions. |
+| [Identity lifecycle](#5-identity-and-access-management-13) | The processes that grant, change and remove access as people join, change duties and leave. A role change should also remove incompatible old permissions. |
+| [Object-level authorization](#5-identity-and-access-management-13) | Checking whether the requester may access the specific object named in a request, even if the requester is authenticated. |
+| [Privileged access management (PAM)](#5-identity-and-access-management-13) | Controls for powerful accounts and sensitive actions, commonly including approval, short-lived access, credential protection and session auditing. |
+| [Federation](#5-identity-and-access-management-13) | An arrangement that lets one security domain rely on identity information issued by another, under agreed trust and validation rules. |
+| [Authorization](#password-policy-phishing-resistance-and-authorization-are-separate) | The decision about what a verified identity may do to a resource under the applicable policy. |
+| [Phishing](#password-policy-phishing-resistance-and-authorization-are-separate) | An impersonation attempt that tries to induce an unsafe action or disclosure. Message appearance alone cannot establish the sender’s identity. |
+| [Phishing-resistant authentication](#password-policy-phishing-resistance-and-authorization-are-separate) | Authentication designed to prevent an impostor service from reusing the proof supplied for a legitimate service, such as a credential bound to the correct origin. |
+| [Rate limiting](#password-policy-phishing-resistance-and-authorization-are-separate) | Restricting the number or rate of operations in a defined interval to protect capacity. A limit applied per identity behaves differently from one applied per IP address. |
+
+**Security Assessment and Testing**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Control assessment](#6-security-assessment-and-testing-12) | An evidence-based examination of whether a control is appropriately designed and works as intended. |
+| [Compensating control](#6-security-assessment-and-testing-12) | An alternative safeguard that addresses the same underlying risk when a preferred control cannot be used. |
+| [False positive](#6-security-assessment-and-testing-12) | An alert that classifies benign activity as a target condition. Repeated benign alerts can distort operational priorities. |
+| [Independence](#6-security-assessment-and-testing-12) | Freedom from responsibilities or influence that would compromise an auditor’s objective judgment. |
+| [Risk-based audit](#6-security-assessment-and-testing-12) | An audit approach that allocates effort according to exposure and business significance so testing addresses the most consequential questions. |
+| [Sampling](#6-security-assessment-and-testing-12) | Examining part of a population to draw a bounded conclusion about it. Selection bias or an incomplete population limits the inference. |
+
+**Security Operations**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Change management](#7-security-operations-13) | The process for assessing, approving, implementing and reviewing changes so risks and outcomes remain accountable. |
+| [Detective control](#7-security-operations-13) | A measure that identifies an event or deviation, such as reconciling transactions against an independent record. |
+| [Integrity](#7-security-operations-13) | Protection against improper changes to data or systems, including accidental alterations. |
+| [Threat intelligence](#7-security-operations-13) | Assessed information about adversary activity or indicators, with source, context and freshness to guide a decision. |
+| [Recovery acceptance](#response-evidence-must-reach-recovery-and-improvement) | Verification by the appropriate owners that a restored service meets operational, integrity and security criteria. |
+| [Containment](#response-evidence-must-reach-recovery-and-improvement) | An incident response action that limits further damage or spread while preserving options for investigation and recovery. |
+| [Incident](#response-evidence-must-reach-recovery-and-improvement) | A case representing a security event or set of related events requiring coordinated investigation and response. |
+| [Ransomware](#response-evidence-must-reach-recovery-and-improvement) | Malicious software associated with extortion, often by denying access to data. The incident can also involve disclosure or destruction. |
+
+**Software Development Security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Threat modeling](#8-software-development-security-10) | Analyzing a software design’s assets, trust boundaries and potential failure or misuse paths to choose suitable controls early. |
+| [Assurance](#8-software-development-security-10) | Confidence derived from relevant evidence that a claim or control objective is supported for a specified scope and period. |
+| [Digital signature](#8-software-development-security-10) | A cryptographic value produced with a private key and checked with its corresponding public key to authenticate signed data and detect alteration. |
+| [Risk acceptance](#8-software-development-security-10) | An authorized decision to retain a specified exposure, with its rationale and review conditions recorded. |
+| [Software bill of materials (SBOM)](#8-software-development-security-10) | An inventory of software components and their relationships. It supports impact analysis but does not establish that a listed component is safely configured. |
+
+**Executed local risk-register workbook**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Risk register](#executed-local-risk-register-workbook) | A record of identified risks, owners, assessments, responses and review status. A completed field is a claim that still needs supporting evidence. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Data owner](#domain-2-asset-security) | The accountable person who determines how an asset should be classified, used and protected on behalf of the organization. |
+| [Encryption at rest](#domain-2-asset-security) | Protecting stored data with encryption, such as files, disks or backups. A caller authorized to decrypt can still access the plaintext. |
+| [Encryption in transit](#domain-2-asset-security) | Protecting data while it travels between endpoints. The endpoints and any termination points can ordinarily access the plaintext. |
+| [Bandwidth](#domain-4-communication-and-network-security) | The nominal data-carrying capacity of a link, usually expressed in bits per second. It does not by itself establish delay or delivered throughput. |
+| [Hardening](#domain-4-communication-and-network-security) | Reducing avoidable exposure by configuring a system for its intended purpose, such as disabling an unused service or removing excess permissions. |
+| [Latency](#domain-4-communication-and-network-security) | Elapsed time for data or a request to travel a defined path. Specify whether the measure is one-way delay or round-trip time. |
+| [Accounting](#domain-5-identity-and-access-management) | Recording access or use so activity can be attributed and reviewed, complementing authentication and authorization. |
+| [False negative](#domain-6-security-assessment-and-testing) | A target condition that occurs without the expected alert or block. Reviewing alerts alone cannot reveal every missed case. |
+| [Population](#domain-6-security-assessment-and-testing) | The full set of items within the defined scope. Measuring only devices that report successfully can systematically omit failures. |
+| [Availability](#domain-7-security-operations) | The ability of authorized users to reach and use a resource when needed. |
+| [Schema validation](#domain-8-software-development-security) | Comparing an incoming record or API message with the expected structure and types before trusting downstream interpretation. |
+
 ## Places to learn
 
 This is not a complete list. Start with the official scope and one teaching route, then use targeted practice and references. Public metadata was checked September 29, 2026; paid interiors, practice questions and completion quality were not inspected. Supplemental study times below are planning estimates, not provider promises.

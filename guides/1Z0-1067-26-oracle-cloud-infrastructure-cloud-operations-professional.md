@@ -110,6 +110,100 @@ Troubleshoot from symptom and timeline through recent changes, identity, quotas,
 - I can define and test monitoring, escalation, backup, recovery, and failback.
 - I can explain the security, availability, and cost consequence of an operational change.
 
+## Key terms and phrases
+
+**Operational identity and account controls**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Compartment quota](#1-operational-identity-and-account-controls) | An administrator-defined limit on resource consumption within a compartment. |
+| [Federation](#1-operational-identity-and-account-controls) | Trusting an external identity provider’s assertions so people can authenticate through their established organization identity. |
+| [Audit log](#1-operational-identity-and-account-controls) | Records of administrative actions that help identify who performed an operation, on what resource and when. |
+| [Secret rotation](#1-operational-identity-and-account-controls) | Replacing a secret under controlled conditions, confirming that its consumers use the replacement before retiring the old credential. |
+| [Tenancy](#1-operational-identity-and-account-controls) | The organization’s root OCI account and administrative boundary in which compartments and resource policies are managed. |
+| [Group](#1-operational-identity-and-account-controls) | A collection of identities to which access can be granted through a policy, reducing the need to manage permissions user by user. |
+| [Resource principal](#1-operational-identity-and-account-controls) | An identity allowing a supported OCI resource to call other services under the permissions assigned to that resource. |
+| [Break-glass access](#1-operational-identity-and-account-controls) | An exceptional, controlled access path for recovery when normal administrative access is unavailable, with auditing and review. |
+| [Service limit](#1-operational-identity-and-account-controls) | A tenancy’s allowed service resource capacity under provider rules, distinct from a compartment quota an administrator sets. |
+| [Cost allocation tag](#1-operational-identity-and-account-controls) | A metadata label used to attribute resources or consumption to an owner, environment or cost center. |
+| [Budget](#1-operational-identity-and-account-controls) | A target for planned spending with alerts that support investigation when spending approaches an agreed threshold. |
+
+**CLI and safe scripting**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Pagination](#2-cli-and-safe-scripting) | Reading a list result in successive pages until the service indicates that no more items remain. |
+| [Work request](#2-cli-and-safe-scripting) | A record exposing progress and errors for an asynchronous operation after the initial API request returns. |
+| [Compartment](#2-cli-and-safe-scripting) | A logical OCI grouping for resources, policy scope, ownership and cost reporting, which can span regions. |
+| [Region](#2-cli-and-safe-scripting) | A geographic area containing OCI infrastructure. Region choice affects service locality, latency, residency and recovery options. |
+
+**Terraform, Resource Manager, and Ansible**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Terraform state](#3-terraform-resource-manager-and-ansible) | The record connecting declared resource addresses to remote objects, used to decide what to change on the next run. |
+| [Resource Manager stack](#3-terraform-resource-manager-and-ansible) | A managed Terraform configuration and associated state on which OCI can run planning or application jobs. |
+| [Terraform provider](#3-terraform-resource-manager-and-ansible) | The component translating Terraform resource definitions into service API operations under its configuration and credentials. |
+| [Plan job](#3-terraform-resource-manager-and-ansible) | An evaluation of proposed infrastructure changes for review before applying them. Its usefulness depends on the state and configuration remaining relevant. |
+
+**Compute, images, and scaling**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Cooldown](#4-compute-images-and-scaling) | A waiting interval between scaling decisions that gives the previous change time to affect measured demand. |
+| [Baseline](#4-compute-images-and-scaling) | An agreed reference configuration or historical measurement used to evaluate change in a comparable environment. |
+| [Metric](#4-compute-images-and-scaling) | A numeric measurement recorded over time, such as failed requests or queue depth, with defined units and dimensions. |
+| [Deployment rollback](#4-compute-images-and-scaling) | Restoring a previously working release or configuration after an unsuccessful change, with separate treatment for state already modified. |
+| [IAM policy](#4-compute-images-and-scaling) | An authorization statement identifying who may perform which class of operations on which resources within a specified scope and conditions. |
+| [Shape](#4-compute-images-and-scaling) | An OCI compute configuration defining available processing, memory and other hardware characteristics. |
+| [Instance configuration](#4-compute-images-and-scaling) | A reusable specification of the settings needed to launch instances consistently, often used by an instance pool. |
+| [Instance pool](#4-compute-images-and-scaling) | A group of instances managed together from a reusable configuration for scaling and availability. |
+| [Autoscaling](#4-compute-images-and-scaling) | Adjusting capacity when a defined condition or schedule warrants it, subject to limits, capacity and application readiness. |
+| [Boot volume](#4-compute-images-and-scaling) | Persistent block storage containing the operating system and startup files used to boot an instance. |
+
+**Network operations and recovery**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Failback](#5-network-operations-and-recovery) | Returning service to its intended primary environment after recovery, while preserving the state accumulated during failover. |
+| [Recovery point objective (RPO)](#5-network-operations-and-recovery) | The largest tolerable amount of lost recent data expressed as time. A 15-minute objective limits how far back recovery may fall. |
+| [Recovery time objective (RTO)](#5-network-operations-and-recovery) | The longest acceptable interval to return the service to usable operation after a disruption, including validation. |
+| [Backup](#5-network-operations-and-recovery) | A retained copy created to support recovery. Validate it by restoring the relevant data and exercising the service that depends on it. |
+| [Health check](#5-network-operations-and-recovery) | A targeted test of a component’s ability to perform a particular task. Its scope determines what a successful result proves. |
+| [DNS](#5-network-operations-and-recovery) | The naming system resolving service names to addresses or other records. Correct resolution alone does not establish reachability. |
+| [Load balancer](#5-network-operations-and-recovery) | A component distributing incoming work among eligible backends under its routing and health policy. |
+| [Virtual cloud network (VCN)](#5-network-operations-and-recovery) | A configurable regional network containing subnets, routes and security controls for OCI resources. |
+| [Security list](#5-network-operations-and-recovery) | A set of traffic rules associated with a subnet and applied to its VNICs under OCI networking rules. |
+| [Network security group (NSG)](#5-network-operations-and-recovery) | Traffic rules applied to chosen VNICs or other supported resource endpoints rather than every VNIC in a subnet. |
+| [Dynamic routing gateway (DRG)](#5-network-operations-and-recovery) | A virtual router joining attached networks or connectivity resources, with route policies determining which paths are available. |
+
+**Observability and troubleshooting**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Correlation identifier](#6-observability-and-troubleshooting) | A value carried across logs or requests so an operator can connect evidence from different components. |
+| [Alert](#6-observability-and-troubleshooting) | A notification that a configured condition was met, requiring interpretation with its time window, source and affected scope. |
+| [Encryption in transit](#6-observability-and-troubleshooting) | Protecting data while it travels between endpoints, commonly through authenticated TLS connections. |
+| [Oracle Kubernetes Engine (OKE)](#6-observability-and-troubleshooting) | OCI’s managed Kubernetes service for running orchestrated container workloads on configured cluster capacity. |
+| [Service-level indicator (SLI)](#6-observability-and-troubleshooting) | A measured aspect of service behavior, such as successful request latency or the percentage of requests returning a valid response. |
+| [Event rule](#6-observability-and-troubleshooting) | A condition matching attributes of a resource event and routing matches to a permitted action. |
+| [Monitoring alarm](#6-observability-and-troubleshooting) | A rule that evaluates a metric query over time and signals a state change when the configured condition is met. |
+| [Distributed trace](#6-observability-and-troubleshooting) | A record linking the timed work of multiple instrumented components for a single request or transaction. |
+
+**Original readiness checks**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Restore](#answer-guide) | Recreating data or a resource from a retained recovery copy, followed by checks that it meets the intended recovery point. |
+| [Runbook](#answer-guide) | A documented response procedure identifying evidence to gather, safe actions, decision owners and verification steps. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Least privilege](#integrated-practice-scenarios) | Granting only the access a specific identity needs for its assigned work, then checking both allowed and denied actions. |
+| [Subnet](#integrated-practice-scenarios) | An address range inside a VCN used to place network interfaces and associate applicable route and security settings. |
+
 ## Places to learn
 
 This is a selective learning path, not a complete list of OCI operations resources.

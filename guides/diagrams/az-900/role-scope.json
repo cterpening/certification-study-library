@@ -1,0 +1,20 @@
+{
+  "exam_code": "AZ-900",
+  "guide_section": "Authentication and authorization",
+  "objective": "Describe Azure role-based access control (RBAC)",
+  "source_ids": ["azure-rbac-overview"],
+  "visual": {
+    "title": "How to read an Azure role assignment",
+    "nodes": [
+      {"id": "assignment", "label": "One role assignment"},
+      {"id": "principal", "label": "Security principal"},
+      {"id": "role", "label": "Role definition"},
+      {"id": "scope", "label": "Scope"}
+    ],
+    "edges": [
+      {"from": "assignment", "to": "principal", "label": "Who gets access?"},
+      {"from": "assignment", "to": "role", "label": "Which permissions?"},
+      {"from": "assignment", "to": "scope", "label": "Which resources?"}
+    ]
+  }
+}

@@ -303,6 +303,91 @@ An ASM finding identifies an exposed cloud service. Validate ownership/DNS/cloud
 - [ ] I can complete all integrated scenarios with evidence, owners, failure paths, and automation guardrails.
 - [ ] I rechecked the live datasheet, product docs, handbook, and registration details before purchase.
 
+## Key terms and phrases
+
+**Cybersecurity**
+
+| Term or phrase | Meaning |
+|---|---|
+| [AAA](#aaa-identity-and-mobileemail-controls) | Authentication verifies identity, authorization determines permitted actions, and accounting records use of the service. |
+| [Authentication](#aaa-identity-and-mobileemail-controls) | Checking that a claimant controls an authenticator bound to the claimed identity. It precedes the separate decision about permitted actions. |
+| [Authorization](#aaa-identity-and-mobileemail-controls) | Determining whether a given identity may perform a specific action on the particular resource requested. |
+| [Identity provider (IdP)](#aaa-identity-and-mobileemail-controls) | The service that authenticates a user and supplies identity information to the relying access service. |
+| [Phishing-resistant authentication](#aaa-identity-and-mobileemail-controls) | Authentication designed to prevent an impostor service from reusing the proof supplied for a legitimate service, such as a credential bound to the correct origin. |
+| [Accounting](#aaa-identity-and-mobileemail-controls) | Recording access or use so activity can be attributed and reviewed, complementing authentication and authorization. |
+| [Zero Trust](#attck-apts-and-zero-trust) | An access model that evaluates the identity, resource and context of a request. Location on an internal network alone grants no trust. |
+| [Least privilege](#attck-apts-and-zero-trust) | Limiting permissions to the tasks, resources and duration an identity actually requires. |
+| [Tactic](#attck-apts-and-zero-trust) | In ATT&CK, the objective an adversary is pursuing. A technique describes a way that objective may be achieved. |
+
+**Network Security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Microsegmentation](#firewalls-microsegmentation-and-inspection) | Restricting communication among individual workloads or small groups to limit unnecessary access. |
+| [Segmentation](#firewalls-microsegmentation-and-inspection) | Dividing resources into security boundaries and specifying the permitted communication between them. |
+| [Stateful inspection](#firewalls-microsegmentation-and-inspection) | Tracking connections so both a packet’s attributes and the state of the flow influence enforcement. |
+| [TLS decryption](#firewalls-microsegmentation-and-inspection) | Opening an encrypted session for permitted inspection, subject to certificate trust and policy. |
+| [URL Filtering](#firewalls-microsegmentation-and-inspection) | Categorization and enforcement based on the web destination or available URL information, subject to policy and encryption visibility. |
+| [Next-generation firewall (NGFW)](#ngfw-deployment-otiot-cdss-and-precision-ai) | A firewall that uses application, user and threat information as well as network attributes to enforce policy. |
+| [Cloud-delivered security services (CDSS)](#ngfw-deployment-otiot-cdss-and-precision-ai) | Threat and content protection services used by a firewall according to the enabled policy and available inspection data. |
+| [High availability (HA)](#ngfw-deployment-otiot-cdss-and-precision-ai) | A design that keeps a site operating through a device or path failure, with enough remaining capacity to serve required traffic. |
+| [Management plane](#ngfw-deployment-otiot-cdss-and-precision-ai) | The part of a system responsible for configuration and administration. Successful management access alone does not test user traffic. |
+| [Operational technology (OT)](#ngfw-deployment-otiot-cdss-and-precision-ai) | Systems that monitor or control physical processes, such as industrial equipment. A failed control change can have immediate operational or safety effects. |
+
+**Secure Access**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Secure access service edge (SASE)](#3-secure-access-14) | An architecture that brings wide-area connectivity and cloud-delivered security together for distributed users and sites. |
+| [Prisma Access](#3-secure-access-14) | A cloud-delivered security service that applies access and inspection policies for connected users and networks. |
+| [Prisma SD-WAN](#3-secure-access-14) | Palo Alto Networks WAN connectivity and application-aware path management for branch and data-center networks. |
+| [Retention](#3-secure-access-14) | The period for which telemetry remains available for investigation. A search outside that period cannot establish inactivity. |
+| [Security service edge (SSE)](#3-secure-access-14) | Cloud-delivered security capabilities for access to the internet, SaaS and private applications. Wide-area connectivity is a separate design element. |
+
+**Cloud Security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Shared responsibility](#architectures-topologies-and-challenge-layers) | The allocation of security duties between a cloud provider and its customer, including who configures access and protects data. |
+| [Agentless scanning](#architectures-topologies-and-challenge-layers) | Inspecting a cloud workload or its artifacts through provider interfaces or snapshots without a continuously running in-guest sensor. |
+| [Container](#architectures-topologies-and-challenge-layers) | An isolated application process and its dependencies that ordinarily shares the host kernel. Its image is the packaged input used to start it. |
+| [Control plane](#architectures-topologies-and-challenge-layers) | The functions that build network state and decide paths or policy. The data plane uses those decisions for actual traffic. |
+| [Runtime security](#architectures-topologies-and-challenge-layers) | Observation and protection of workloads while they execute, including the processes or connections they actually use. |
+| [Cortex Cloud](#cortex-cloud) | Palo Alto Networks cloud security capabilities for relating application, infrastructure posture and runtime risk across cloud environments. |
+| [Remediation](#cortex-cloud) | Action taken to remove or correct the cause of an incident after its immediate effects are contained. |
+| [Security operations center (SOC)](#cortex-cloud) | The people and processes that monitor security signals, investigate incidents and coordinate response. |
+| [Vulnerability](#cortex-cloud) | A weakness in a system or process that could permit harm. The associated risk depends on exposure, likelihood and impact. |
+
+**Endpoint Security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Endpoint detection and response (EDR)](#5-endpoint-security-15) | Recording and analyzing endpoint activity so responders can investigate behavior and take scoped action on a host. |
+| [Application control](#5-endpoint-security-15) | Identifying application traffic and applying the configured action to it, including when multiple applications use the same transport port. |
+| [Indicator of compromise (IOC)](#5-endpoint-security-15) | An observable value associated with suspicious activity, such as a file hash or domain, whose relevance depends on context. |
+| [Patch management](#5-endpoint-security-15) | Identifying applicable fixes, prioritizing and testing them, deploying them to the correct population and verifying the resulting state. |
+| [Threat Prevention](#5-endpoint-security-15) | A security service or profile capability used to recognize and act on threat patterns in traffic visible to the firewall. |
+
+**Security Operations**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Threat hunt](#hunting-and-incident-response) | A proactive search for evidence that tests a specific hypothesis about activity in the environment. |
+| [Enrichment](#hunting-and-incident-response) | Adding context, such as asset criticality or previous sightings, to an indicator or event so an analyst can interpret it. |
+| [Evidence preservation](#hunting-and-incident-response) | Maintaining the integrity and provenance of information needed for investigation, including original timestamps, collection method and access history. |
+| [Incident](#hunting-and-incident-response) | A case that groups related alerts and evidence so an analyst can assess scope and coordinate a response. |
+| [Telemetry](#hunting-and-incident-response) | Records of activity from endpoints, networks or other systems that investigators can correlate into a timeline. |
+| [Attack surface](#exposure-cortex-solutions-and-unit-42) | The set of reachable services, interfaces, identities and other points that expose a system to interaction or harm. |
+| [Attack surface management (ASM)](#exposure-cortex-solutions-and-unit-42) | Discovery and tracking of exposed assets so analysts can verify ownership and prioritize investigation. |
+| [Cortex XSIAM](#exposure-cortex-solutions-and-unit-42) | A security operations platform that brings data, detections, cases and automation together for the SOC. |
+| [Threat intelligence](#exposure-cortex-solutions-and-unit-42) | Assessed information about adversary activity or indicators, with source, context and freshness to guide a decision. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Threat model](#ai-application-launch) | A structured analysis of assets, trust boundaries and plausible failure or misuse paths used to choose design safeguards. |
+
 ## Places to learn
 
 This is not a complete list, and it is not a prescription to consume everything. Start with the blueprint, select the official learning modules that close measured gaps, and use standards/labs for durable concepts. Durations are publisher-listed or clearly labeled estimates and can change.

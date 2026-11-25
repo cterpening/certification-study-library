@@ -13,7 +13,9 @@ upcoming_change_checked: 2026-10-28
 
 # AZ-700 Designing and Implementing Microsoft Azure Networking Solutions Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-03.md#az-700) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-700-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-700) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-03.md#az-700)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-03.md#az-700) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-700-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-700) is authoritative.
 
 **Current baseline:** Skills measured as of July 27, 2026<br>
 **Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
@@ -393,6 +395,8 @@ Inbound NAT rules target administrative or application ports on individual backe
 Traffic Manager routing methods include priority, weighted, performance, geographic, multivalue and subnet patterns. DNS TTL and resolver/client caching affect failover convergence. Monitoring observes endpoints according to configured protocol/port/path; a healthy endpoint may still fail a different user flow.
 
 ### Application Gateway
+
+**Practice check.** Application Gateway v1 reached retirement April 28, 2026. For a surviving legacy deployment, treat migration to v2 as a service-continuity task and verify traffic on the replacement before removing an old route. [Application Gateway V1 retirement and migration to V2 - Azure Application Gateway | Microsoft Learn](https://learn.microsoft.com/en-us/azure/application-gateway/v1-retirement)
 
 Core relationships:
 
@@ -813,7 +817,86 @@ You are approaching readiness when you can:
 
 ---
 
+## Key terms and phrases
+
+**Design and implement core networking infrastructure (25–30%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [CIDR prefix](#ip-addressing-and-segmentation) | An address range expressed with a prefix length, such as /24, that determines how many addresses share the network prefix. |
+| [Subnet](#ip-addressing-and-segmentation) | A subdivision of a virtual network's address space used to place and manage network interfaces. |
+| [Address overlap](#ip-addressing-and-segmentation) | Reuse of the same address range by connected networks, which makes routing to the intended destination ambiguous. |
+| [Public IP prefix](#ip-addressing-and-segmentation) | A reserved contiguous range from which eligible Azure public IP addresses can be allocated. |
+| [Private DNS zone](#name-resolution) | A DNS namespace used to resolve names privately for linked virtual networks. |
+| [DNS forwarding](#name-resolution) | Sending queries for specified names or suffixes to another resolver. |
+| [Conditional forwarder](#name-resolution) | A DNS rule that sends queries for a particular suffix to selected resolvers. |
+| [Inbound endpoint](#resolver-direction-loops-and-negative-answers) | A private resolver endpoint that receives DNS queries from clients such as on-premises DNS servers. |
+| [Outbound endpoint](#resolver-direction-loops-and-negative-answers) | A private resolver endpoint used with forwarding rules to send DNS queries toward other resolvers. |
+| [Gateway transit](#peering-and-gateway-transit) | A peering configuration that allows one virtual network to use a gateway in a peered network. |
+| [Virtual network peering](#peering-and-gateway-transit) | A connection that lets two Azure virtual networks route traffic privately across their address spaces. |
+| [Transitive routing](#peering-and-gateway-transit) | Reachability through an intermediate network, which must be explicitly designed because ordinary VNet peering is not transitive. |
+| [User-defined route](#route-selection) | A route-table entry specifying a destination prefix and next hop for traffic from an associated subnet. |
+| [Forced tunneling](#route-selection) | Routing selected or default traffic through a designated appliance or on-premises path for inspection. |
+| [Longest prefix match](#route-selection) | The route-selection principle that favors the most specific matching destination prefix. |
+| [Effective routes](#route-selection) | The routes actually available to an interface after system, user-defined and propagated routes are considered. |
+| [Network address translation (NAT) gateway](#explicit-egress-and-nat-gateway-capacity) | An Azure service that provides outbound connectivity by translating private source addresses to public addresses. |
+| [SNAT](#explicit-egress-and-nat-gateway-capacity) | Source network address translation replaces an outbound source address and port with a translated mapping. |
+| [SNAT port exhaustion](#explicit-egress-and-nat-gateway-capacity) | A condition in which available outbound translation ports cannot support new connections at the required rate. |
+| [Route Server](#worked-route-server-and-network-policy-deployment) | An Azure service that exchanges routing information with network virtual appliances through BGP. |
+| [Network Watcher](#monitor-and-troubleshoot-networks) | Azure networking diagnostics for inspecting connectivity, routes and traffic behavior. |
+
+**Design, implement, and manage connectivity services (20–25%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Site-to-site virtual private network (VPN)](#site-to-site-vpn) | An encrypted network connection between a site gateway and an Azure virtual network gateway. |
+| [VPN gateway](#site-to-site-vpn) | The managed endpoint terminating encrypted connections between Azure and remote networks or clients. |
+| [IPsec](#site-to-site-vpn) | A suite of protocols used to protect network traffic, such as the traffic carried through a site-to-site VPN. |
+| [Point-to-site VPN](#point-to-site-vpn) | A connection from an individual client device to an Azure network through a configured VPN gateway. |
+| [ExpressRoute](#expressroute) | Private connectivity between an on-premises environment and Microsoft cloud services through a connectivity provider. |
+| [BGP](#expressroute) | Border Gateway Protocol exchanges reachability information between routing peers. |
+| [Private peering](#expressroute) | An ExpressRoute routing relationship used for private connectivity to virtual networks. |
+| [Route advertisement](#expressroute) | A route announced to a peer so it can determine reachability to a prefix. |
+| [Virtual WAN hub](#azure-virtual-wan) | A managed regional connectivity hub that can route traffic among branches, virtual networks and gateways. |
+| [Route propagation](#azure-virtual-wan) | Distribution of learned routes to eligible connection or route tables under their configured associations. |
+
+**Design and implement application delivery services (15–20%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Layer 4 load balancing](#choose-by-scope-layer-and-proxy-behavior) | Distributing transport connections using information such as addresses, ports and protocol. |
+| [Layer 7 routing](#choose-by-scope-layer-and-proxy-behavior) | Directing requests with application information such as an HTTP hostname or URL path. |
+| [Traffic Manager](#azure-load-balancer-and-traffic-manager) | A DNS-based traffic distribution service that directs clients toward eligible endpoints. |
+| [Health probe](#azure-load-balancer-and-traffic-manager) | A periodic test a load balancer uses to determine which backends can receive traffic. |
+| [Application Gateway](#application-gateway) | A regional application-layer proxy for routing web requests to backend pools. |
+| [Backend pool](#application-gateway) | The collection of eligible application endpoints to which a gateway or load balancer sends traffic. |
+| [Listener](#application-gateway) | The gateway configuration that accepts requests for a specified frontend, port, protocol or host. |
+| [HTTP setting](#application-gateway) | Backend connection settings, such as protocol or host handling, used by Application Gateway when forwarding a request. |
+| [Azure Front Door](#azure-front-door) | A global application delivery service that routes web requests from edge locations to healthy origins. |
+| [Origin group](#azure-front-door) | A set of backend origins Front Door evaluates when choosing where to send a request. |
+
+**Design and implement private access to Azure services (10–15%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Private endpoint](#private-endpoint-and-private-link-service) | A private network interface that represents a particular service resource inside a virtual network. |
+| [Private Link service](#private-endpoint-and-private-link-service) | A privately published service that authorized consumers can connect to through private endpoints. |
+| [Service endpoint](#service-endpoints-and-policies) | A subnet configuration that lets a supported Azure service recognize traffic coming from that virtual network. |
+
+**Design and implement Azure network security services (15–20%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Network security group (NSG)](#nsgs-asgs-and-flow-logs) | A set of prioritized inbound and outbound traffic rules applied to a subnet or network interface. |
+| [Application security group (ASG)](#nsgs-asgs-and-flow-logs) | A named grouping of network interfaces used as sources or destinations in NSG rules. |
+| [Azure Firewall](#azure-firewall-and-firewall-manager) | A managed stateful network firewall that enforces centrally configured traffic policies. |
+| [Web application firewall (WAF)](#web-application-firewall) | A control that evaluates HTTP requests against managed or custom rules to protect web applications. |
+| [Detection mode](#web-application-firewall) | A WAF operating mode that records matching requests without blocking them under the managed policy. |
+| [Prevention mode](#web-application-firewall) | A WAF operating mode that can enforce blocking actions for qualifying rule matches. |
+
 ## Places to learn
+
+**Suggested practice.** Sketch the private zone and linked virtual network, then predict which DNS record auto-registration should create and where name resolution can be tested. About 25 minutes for the exercise (publisher estimate); provisioning or setup can add time. [M01 - Unit 6 Configure DNS settings in Azure](https://microsoftlearning.github.io/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/Instructions/Exercises/M01-Unit%206%20Configure%20DNS%20settings%20in%20Azure.html)
 
 This is a curated starting set, not a complete list. Do **not** consume every resource. Pick one structured spine, use current documentation for weak objectives, build and break the labs, and add one assessment source. Time estimates are planning ranges, not guarantees; playback speed, prior networking experience, gateway deployment time, exercises, cleanup, and vendor changes matter. Verify the current blueprint before buying or starting a course.
 

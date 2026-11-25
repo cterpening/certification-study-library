@@ -573,6 +573,74 @@ The [deep review](../docs/research/2026-09-29-google-professional-agentic-archit
 
 The September 3 first-party release entry confirms Workflow Builder’s rename and GA status; it does not make every blueprint tool GA. Product references were read selectively, with prior same-session primary security/retention/blog context reused where stated. No paid training interiors, proprietary assessment labs, recalled beta questions or real customer data were accessed.
 
+## Key terms and phrases
+
+**Low-code agents**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Escalation](#1-low-code-agents-about-13) | Routing a case to an accountable person or process when confidence, authority or risk falls outside the automation's limits. |
+| [System instruction](#1-low-code-agents-about-13) | A high-level instruction that guides a model's behavior across a request. An application still needs to enforce its security rules outside the prompt. |
+| [Few-shot prompting](#1-low-code-agents-about-13) | Providing a small set of example inputs and outputs in the prompt to demonstrate the required task or format. |
+| [Large language model (LLM)](#1-low-code-agents-about-13) | A language model trained at scale to predict tokens in context. Fluent text is not itself evidence that a claim is correct. |
+
+**Coding agents**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Prompt injection](#2-coding-agents-about-17) | Untrusted input that attempts to change the instructions followed by a model. Applications should separate content from authority and constrain tool permissions. |
+| [Least privilege](#2-coding-agents-about-17) | Limiting an identity to the actions and resources required for its work. A read-only reporting job needs no permission to modify its source. |
+| [Tool side effect](#2-coding-agents-about-17) | A change outside the model's response, such as creating a ticket. A retry needs safeguards so it does not create the same ticket twice. |
+| [Google Kubernetes Engine (GKE)](#2-coding-agents-about-17) | A managed Kubernetes environment for running and operating containerized workloads. |
+| [Model Context Protocol (MCP)](#pin-the-protocol-and-sdk-then-prove-the-boundary) | A protocol through which an application can discover and use capabilities offered by a server, such as tools or resources. |
+
+**Custom agents**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Data provenance](#choose-model-and-architecture) | Evidence of a dataset's origin, ownership and transformation history. It supports decisions about permitted use and reproducibility. |
+| [Throughput](#choose-model-and-architecture) | The volume of work completed per unit time, such as predictions per second. A high rate can coexist with long waits for individual requests. |
+| [Time to live (TTL)](#choose-model-and-architecture) | An interval after which an entry expires or must be refreshed. A DNS TTL governs how long its answer can be cached. |
+| [Tool authorization](#retrieval-tools-and-identity) | The decision at the execution boundary that checks whether the acting principal may use a tool on the requested resource. |
+| [Retrieval-augmented generation (RAG)](#retrieval-tools-and-identity) | A design that retrieves relevant material and places it in the model's context before it generates the answer. |
+| [Latency](#blueprint-named-data-model-and-observability-services) | Elapsed time between a request and the result of interest. Specify whether it measures the first token, the completed response or the full business action. |
+| [Failover](#blueprint-named-data-model-and-observability-services) | Moving service to an alternative when the current serving location or component becomes unavailable. |
+| [Cloud Logging](#blueprint-named-data-model-and-observability-services) | Collects log entries that can be searched, retained or routed. A structured entry can expose request IDs and fields for investigation. |
+| [Cloud Storage](#blueprint-named-data-model-and-observability-services) | Stores objects in buckets. A file-like object name does not by itself give an application the behavior of a shared POSIX file system. |
+| [Idempotency](#blueprint-named-data-model-and-observability-services) | The property that retrying the same intended operation does not apply its effect twice. An order API can remember the request identifier. |
+| [Cloud SQL](#blueprint-named-data-model-and-observability-services) | A managed relational database service for supported SQL engines. It suits applications that depend on relational queries and transactions. |
+| [Firestore](#blueprint-named-data-model-and-observability-services) | A managed document database storing records in collections. Document boundaries influence what an application can retrieve efficiently. |
+| [BigQuery](#blueprint-named-data-model-and-observability-services) | Google's managed analytical warehouse for querying large datasets with SQL. Column selection and partition filters help reduce work. |
+| [Service quota](#blueprint-named-data-model-and-observability-services) | A limit on resource use or request volume within a specified scope. Reaching it can block work even when funds are available. |
+| [Identity and Access Management (IAM) role](#blueprint-named-data-model-and-observability-services) | A named collection of permissions. A policy binding grants the role to a principal at a chosen resource scope. |
+| [Agent2Agent (A2A)](#orchestration-and-multi-agent-coordination) | A protocol through which agents exchange tasks, status updates and results. A travel-planning agent could delegate a flight search to a separate agent and receive its findings. |
+| [Handoff](#orchestration-and-multi-agent-coordination) | Transferring responsibility for a task to another agent with enough context and authority to continue it. |
+| [Agent orchestration](#orchestration-and-multi-agent-coordination) | Coordinating agent steps, tool calls and handoffs under a defined control flow, including what stops the workflow. |
+| [Stop condition](#orchestration-and-multi-agent-coordination) | A rule that ends an agent loop, such as a completed task, a step limit or a request for human approval. |
+| [Session state](#state-persistence-is-an-explicit-contract) | Information retained during a conversation or task so later steps can use earlier results. Its lifetime and isolation must be defined. |
+| [Long-term memory](#state-persistence-is-an-explicit-contract) | Information retained across sessions for later retrieval. The design needs rules for access, retention and deletion. |
+| [Agent Development Kit (ADK)](#state-persistence-is-an-explicit-contract) | A framework for defining agents, tools and workflows in code. Checking the written tool contract helps assess what the resulting agent can do. |
+
+**Evaluate and deploy**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Hallucination](#4-evaluate-and-deploy-about-22) | A plausible model output that is unsupported or false, such as a citation to a document that does not contain the claim. |
+| [Cloud Run](#4-evaluate-and-deploy-about-22) | Runs containerized services or jobs on a managed platform. Choose a service for a request endpoint and a job for work that runs to completion. |
+| [Trajectory evaluation](#a-passing-trajectory-metric-can-miss-an-unsafe-extra-action) | Examining the sequence of tool calls and steps taken during a task. A correct final answer can conceal an unauthorized extra action. |
+| [Trajectory](#a-passing-trajectory-metric-can-miss-an-unsafe-extra-action) | The sequence of intermediate agent actions taken for a task. Reviewing it can reveal an unnecessary tool call even when the final result is acceptable. |
+
+**Secure and govern**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Sensitive Data Protection](#5-secure-and-govern-about-15) | Inspects or transforms sensitive information using configured detectors and rules, such as replacing identifiers before analysis. |
+| [False positive](#5-secure-and-govern-about-15) | A negative case incorrectly labeled positive. A legitimate payment blocked as fraudulent is a false positive. |
+| [Human in the loop](#5-secure-and-govern-about-15) | A design in which a person reviews or authorizes specified model-assisted decisions, with time, authority and evidence to intervene. |
+| [Workload identity](#5-secure-and-govern-about-15) | An identity for software such as a service or batch job. It enables permissions to follow the workload itself. |
+| [Reauthorization](#re-check-authority-when-a-paused-action-resumes) | Checking permission again when a paused operation resumes. An earlier approval may have expired or no longer fit the requested action. |
+| [IAM binding](#re-check-authority-when-a-paused-action-resumes) | Associates one role with one or more principals on a resource, optionally subject to a condition. |
+
 ## Places to learn
 
 This is **not a complete list**. Map selected resources to the current PDF and fill gaps through primary documentation and executed original labs. September 29 catalog observations below do not establish paid-content quality or certification readiness.

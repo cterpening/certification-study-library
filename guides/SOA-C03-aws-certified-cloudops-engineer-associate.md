@@ -397,6 +397,90 @@ Have a partner introduce one reversible fault in a disposable monitored workload
 
 ---
 
+## Key terms and phrases
+
+**Monitoring, Logging, Analysis, Remediation, and Performance Optimization**
+
+| Term or phrase | Meaning |
+|---|---|
+| [AWS Systems Manager](#1-monitoring-logging-analysis-remediation-and-performance-optimization-22) | A set of operational tools for managed nodes and AWS resources, including inventory, automation and secure remote access. |
+| [Amazon EventBridge](#1-monitoring-logging-analysis-remediation-and-performance-optimization-22) | Routes events to targets according to rules, connecting services without requiring each producer to know each consumer. |
+| [Metric](#build-an-evidence-chain) | A numeric measurement collected over time, such as request count or latency. Its dimensions identify what was measured. |
+| [Amazon CloudWatch](#build-an-evidence-chain) | Collects operational measurements and logs. An operator can graph request latency or alarm on error rates. |
+| [AWS CloudTrail](#build-an-evidence-chain) | Records supported AWS API activity so an investigator can trace who called an operation, when and against which resource. |
+| [AWS Config](#build-an-evidence-chain) | Records supported resource configurations and can evaluate them against rules, such as whether a required setting is present. |
+| [Period and evaluation periods](#make-alarms-actionable) | The period sets the duration represented by one data point. Evaluation periods sets how many points the alarm examines. With five-minute periods, a two-out-of-three alarm looks for two breaching points in a 15-minute window. |
+| [Amazon SNS](#make-alarms-actionable) | A publish-subscribe notification service. Publishing once to a topic can deliver the message to multiple subscribed destinations. |
+| [Runbook](#automate-bounded-remediation) | A repeatable set of operational steps with a trigger, permissions, expected result and a point at which to stop or escalate. |
+| [Least privilege](#automate-bounded-remediation) | Limiting an identity to the actions and resources required for its work. A read-only reporting job needs no permission to modify its source. |
+| [AWS Lambda](#automate-bounded-remediation) | Runs application code in response to an invocation or event. The function owner selects its code, permissions and resource configuration. |
+| [Amazon RDS](#optimize-from-the-bottleneck) | Runs a managed relational database engine. Schema design, queries and application permissions remain customer decisions. |
+| [S3 lifecycle policy](#optimize-from-the-bottleneck) | Rules that transition eligible objects to other storage classes or expire them according to criteria such as age or prefix. |
+| [Service quota](#optimize-from-the-bottleneck) | A limit on resource use or request volume within a specified scope. Reaching it can block work even when funds are available. |
+| [Amazon S3](#operate-s3-files-with-synchronization-in-mind) | Object storage organized into buckets and keys. Retrieving a named object and mounting a block device are different access patterns. |
+
+**Reliability and Business Continuity**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Health check](#separate-scalability-elasticity-availability-and-recovery) | A test used to decide whether a target can serve traffic. A reachable process can still fail a check for a required dependency. |
+| [Time to live (TTL)](#separate-scalability-elasticity-availability-and-recovery) | An interval after which an entry expires or must be refreshed. A DNS TTL governs how long its answer can be cached. |
+| [Elastic Load Balancing (ELB)](#separate-scalability-elasticity-availability-and-recovery) | Distributes incoming traffic to healthy targets. Health checks and target selection determine which backends can receive a request. |
+| [Amazon CloudFront](#separate-scalability-elasticity-availability-and-recovery) | A content delivery network that serves requests from edge locations and fetches content from an origin when needed. |
+| [Availability zone](#design-failure-domains-deliberately) | An isolated location within a cloud region. Resilience across zones requires healthy copies of each critical dependency. |
+| [Amazon DynamoDB](#design-failure-domains-deliberately) | A managed key-value and document database. Choose keys around the reads and writes an application must perform. |
+| [Recovery point objective (RPO)](#make-recovery-measurable) | How far back the business can afford to go when it restores data after an interruption. A 15-minute target allows up to 15 minutes of lost changes. |
+| [Recovery time objective (RTO)](#make-recovery-measurable) | The longest acceptable interval from service interruption to restoration. Timing a restore helps test that target. |
+| [S3 versioning](#make-recovery-measurable) | Retains distinct versions of objects in a bucket. A recovery plan must also account for retention and access to older versions. |
+| [AWS Backup](#make-recovery-measurable) | Coordinates backup policies and protected recovery points for supported resources. A restore test checks whether a recovery point is usable. |
+| [Warm standby](#make-recovery-measurable) | A scaled-down but functional copy of a workload runs in the recovery location. During failover, increase its capacity and switch traffic while verifying replication and data consistency. |
+
+**Deployment, Provisioning, and Automation**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Container image](#3-deployment-provisioning-and-automation-22) | A packaged file-system and runtime configuration used to start containers. A digest identifies a particular image's contents. |
+| [Amazon EC2](#make-artifacts-reproducible) | Compute service for running virtual machines. The customer chooses the instance configuration and manages the guest operating system. |
+| [CloudFormation stack](#treat-infrastructure-as-reviewed-state) | A group of AWS resources created and managed together from a template. |
+| [AWS CloudFormation](#treat-infrastructure-as-reviewed-state) | Creates or updates a group of resources from a template so infrastructure changes can be reviewed and repeated. |
+| [AWS Cloud Development Kit (CDK)](#treat-infrastructure-as-reviewed-state) | Defines infrastructure with programming-language constructs that synthesize CloudFormation templates. |
+| [Change set](#treat-infrastructure-as-reviewed-state) | A CloudFormation preview of resource changes proposed for a stack. Review operations such as replacement before executing it. |
+| [Idempotency](#automate-operations-not-surprises) | The property that retrying the same intended operation does not apply its effect twice. An order API can remember the request identifier. |
+
+**Security and Compliance**
+
+| Term or phrase | Meaning |
+|---|---|
+| [AWS IAM Identity Center](#4-security-and-compliance-16) | Connects workforce users and groups to AWS accounts or applications and manages the access assigned to them. |
+| [AWS Organizations](#4-security-and-compliance-16) | Groups AWS accounts under common governance so a team can apply policies or consolidate billing across accounts. |
+| [Federation](#4-security-and-compliance-16) | Accepting trusted identity assertions from another provider so users or workloads can access resources without a separate long-lived credential. |
+| [Identity policy](#evaluate-access-systematically) | An IAM policy attached to an identity that describes which actions it can take on which resources, subject to other applicable controls. |
+| [Resource policy](#evaluate-access-systematically) | A policy attached to a resource, such as an S3 bucket, specifying which principals can perform particular actions on it. |
+| [Service control policy (SCP)](#operate-multi-account-guardrails) | An AWS Organizations policy that limits which permissions can be used in member accounts. An applicable identity or resource policy must still supply permission. |
+| [Amazon GuardDuty](#operate-multi-account-guardrails) | Analyzes supported telemetry for indicators of threats and produces findings for investigation. |
+| [Amazon Inspector](#operate-multi-account-guardrails) | Inspects supported workloads for software vulnerabilities or exposure that owners can prioritize and remediate. |
+| [Organizational unit (OU)](#operate-multi-account-guardrails) | A branch of the AWS Organizations hierarchy used to group accounts for common policies. |
+| [AWS Secrets Manager](#protect-data-from-classification-outward) | Stores sensitive values for authorized retrieval and supports rotation workflows, such as replacing a database password. |
+| [Encryption in transit](#protect-data-from-classification-outward) | Protecting information while it travels between endpoints, typically through an authenticated encrypted connection. |
+
+**Networking and Content Delivery**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Longest prefix match](#read-a-packet-path-in-order) | The routing rule that selects the most specific matching destination range. A route for a smaller subnet takes precedence over a default route. |
+| [Amazon VPC](#read-a-packet-path-in-order) | A logically isolated network in an AWS Region, divided into subnets with routes and security controls that shape connectivity. |
+| [Internet gateway](#read-a-packet-path-in-order) | A VPC component that supplies a route to the internet when addressing, routes and security rules permit it. |
+| [AWS Direct Connect](#read-a-packet-path-in-order) | A dedicated connectivity option between a customer network and AWS. Routing, redundancy and encryption are separate design decisions. |
+| [AWS Transit Gateway](#read-a-packet-path-in-order) | A regional routing hub connecting VPCs and other networks. Attachments and route tables determine which networks can communicate. |
+| [VPC endpoint](#read-a-packet-path-in-order) | A connection from a VPC to a supported service using private connectivity. Access policies and network configuration still apply. |
+| [AWS PrivateLink](#read-a-packet-path-in-order) | Provides private access to supported services through endpoints without requiring a routed connection between the entire provider and consumer networks. |
+| [Amazon Route 53](#dns-and-edge-decisions) | AWS's DNS service. Records and routing policies determine how a name resolves for clients. |
+| [Failover](#dns-and-edge-decisions) | Moving service to an alternative when the current serving location or component becomes unavailable. |
+| [Route 53 Resolver](#dns-and-edge-decisions) | Resolves DNS for VPC workloads. Inbound and outbound endpoints connect resolution across network boundaries. |
+| [AWS Network Firewall](#dns-and-edge-decisions) | A managed traffic-inspection service placed in a routed VPC path. Traffic must actually traverse its endpoints for its policy to apply. |
+| [NAT gateway](#dns-and-edge-decisions) | A network address translation service. A public NAT gateway can give private-subnet workloads outbound internet access without making them directly reachable from the internet. |
+| [AWS Shield](#dns-and-edge-decisions) | A service for protecting availability against distributed denial-of-service traffic. Application-level request filtering serves a different purpose. |
+
 ## Places to learn
 
 This is **not a complete list**, and it is not meant to be consumed in full. Choose one primary explanation route, spend substantial time operating and breaking disposable workloads, then use practice results to select remediation. Confirm every course uses the current five-domain SOA-C03—not the retired six-domain SOA-C02—and gap-check newly named agent and service content.

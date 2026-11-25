@@ -839,6 +839,100 @@ Recheck hosted images, action versions, immutable-action behavior, networking op
 
 ---
 
+## Key terms and phrases
+
+**Workflow execution model**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Workflow](#1-workflow-execution-model) | An automated process defined in a repository and started by an event, a schedule or a manual request. |
+| [Step](#1-workflow-execution-model) | One unit within a job that runs a command or calls a reusable action. |
+| [Workflow trigger](#triggers) | An event, schedule or explicit request that starts a workflow run. |
+| [Event payload](#triggers) | The data supplied with a triggering event, such as the pull request and repository that caused a run. |
+| [Event filter](#triggers) | Conditions such as branches, paths or activity types that narrow which events should start a workflow. |
+| [Workflow dispatch](#manual-and-reusable-inputs) | A manual invocation that can accept declared inputs when a workflow is started. |
+| [Workflow call](#manual-and-reusable-inputs) | A trigger that allows another workflow to invoke a reusable workflow through a declared interface. |
+
+**Jobs, steps, expressions, and contexts**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Job](#2-jobs-steps-expressions-and-contexts) | A group of steps assigned to a runner. Dependencies can require another job to finish first. |
+| [Condition](#conditions-and-status-functions) | An expression that decides whether a job or step should run. |
+| [Status function](#conditions-and-status-functions) | An expression such as success() or failure() that tests earlier execution results for conditional steps or jobs. |
+| [Context](#contexts) | A collection of named runtime information available to expressions, such as the event data or matrix values. |
+| [Step output](#workflow-commands-and-environment-files) | A named value emitted by a step so later steps or declared job outputs can consume it. |
+| [Environment file](#workflow-commands-and-environment-files) | A runner-provided file used to communicate supported outputs or settings to later workflow execution. |
+
+**Matrices, services, containers, and YAML reuse**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Matrix strategy](#matrix-strategy) | A job definition expanded across combinations of settings. Two operating systems and three language versions produce six jobs before exclusions. |
+| [Matrix axis](#matrix-strategy) | One dimension of a job matrix, such as operating system, whose values combine with the other axes. |
+| [Fail-fast](#matrix-strategy) | A matrix setting that can cancel remaining work after a qualifying matrix job fails. |
+| [Service container](#service-containers) | A companion container providing a dependency, such as a database, while a job runs. |
+| [Job container](#service-containers) | A container in which the steps of a job execute, distinct from a service container the job communicates with. |
+| [YAML anchor and alias](#yaml-anchors-and-aliases) | A way to define and reuse a YAML node within a document, independent of calling a reusable workflow. |
+
+**Data between steps and jobs**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Artifact](#4-data-between-steps-and-jobs) | A file or bundle saved from a run, such as a test report that another job or reviewer needs. |
+| [Deployment environment](#environments) | A named release target that can attach protection rules and scoped configuration to a deployment job. |
+| [Required reviewer](#environments) | A designated person or team whose approval is needed for a deployment protected by a review rule. |
+
+**Reuse models**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Composite action](#5-reuse-models) | A reusable sequence of steps invoked within a job. |
+| [Workflow template](#5-reuse-models) | A starter definition copied into a repository and then maintained there. |
+| [Reusable workflow](#reusable-workflow) | A callable workflow that packages entire jobs and exposes inputs, secrets or outputs to its caller. |
+| [Workflow rerun](#workflow-troubleshooting) | A new attempt of an existing run or selected failed work, requiring attention to retained inputs and prior side effects. |
+
+**Authoring custom actions**
+
+| Term or phrase | Meaning |
+|---|---|
+| [JavaScript action](#action-types) | A custom action implemented in JavaScript and executed using its declared runtime. |
+| [Container action](#action-types) | An action packaged to run in a container image with the specified runtime dependencies. |
+
+**Enterprise Actions administration**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Runner group](#runners-and-runner-groups) | An administrative grouping that controls which repositories or workflows can use a pool of runners. |
+| [Runner label](#runners-and-runner-groups) | A property used to match a job's requested execution environment to eligible runners. |
+| [Self-hosted runner](#runners-and-runner-groups) | A machine managed by the organization to execute Actions jobs, including the software and network access it needs. |
+| [GitHub-hosted runner](#runners-and-runner-groups) | A job execution environment provisioned and maintained by GitHub. |
+| [Runner group policy](#runners-and-runner-groups) | The access rules deciding which repositories or workflows can send jobs to a runner group. |
+| [Configuration variable](#secrets-and-variables) | A named non-secret setting that workflows can reuse through the variables context. |
+
+**Authentication and security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [GITHUB_TOKEN](#github_token) | The per-job credential GitHub creates for a workflow to make permitted requests against its repository. |
+| [OpenID Connect (OIDC)](#oidc-for-azure) | An identity protocol a workflow can use to exchange signed identity claims for short-lived cloud access. |
+| [Audience claim](#oidc-for-azure) | The token claim identifying the intended recipient in an OIDC token exchange. |
+| [Artifact attestation](#artifact-attestations) | A signed statement linking a build artifact to information about how it was produced. |
+
+**Objective-by-objective workflow deep dive**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Needs dependency](#design-the-dependency-graph-explicitly) | A relationship that makes a job wait for one or more predecessor jobs and exposes their results. |
+| [Least-privilege token](#compute-effective-token-permission) | A job credential whose granted operations are limited to what that job actually needs. |
+| [Continue-on-error](#interpret-matrix-failures) | A configuration that tolerates a qualifying failure at the selected scope while leaving evidence of its actual outcome. |
+| [Artifact handoff](#protect-artifact-handoffs) | Transfer of a produced file to another job or workflow, with provenance and trust checked at the receiving boundary. |
+| [Dependency cache](#design-cache-keys) | Rebuildable files kept under a lookup key to reduce setup time in later runs. |
+| [Cache key](#design-cache-keys) | The identifying value used to look up reusable cached files, often including a hash of a dependency lockfile. |
+| [Commit SHA pin](#release-an-action-safely) | A reference to a specific revision of an action so the selected code does not move when a tag changes. |
+| [Subject claim](#design-an-oidc-subject-narrowly) | The identity statement in an OIDC token used by a relying service to restrict which workflow contexts may authenticate. |
+| [Provenance](#understand-attestations-precisely) | Evidence identifying the source, workflow and build context that produced a particular artifact. |
+
 ## Places to learn
 
 This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Start with the official paths, then pick the explanations, formats, and practice that work for you and close specific blueprint gaps. Times are approximate consumption time at normal speed; labs, note-taking, review, and independent practice add time.

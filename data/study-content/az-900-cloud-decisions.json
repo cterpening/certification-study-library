@@ -1,0 +1,256 @@
+{
+  "schema_version": 1,
+  "exam_code": "AZ-900",
+  "language": "en",
+  "scope_note": "Two decisions in Azure fundamentals: keeping reservations available during a location failure and choosing who maintains a ticketing application. These cases cover selected public objectives.",
+  "units": [
+    {
+      "id": "keep-the-booking-desk-open",
+      "title": "Can the booking desk stay open when a zone goes down?",
+      "guide_sections": [
+        "Regions, availability zones, and datacenters",
+        "Design from geography to resource",
+        "Separate the cloud benefits"
+      ],
+      "objectives": [
+        "Describe availability zones",
+        "Describe Azure datacenters",
+        "Describe the benefits of high availability and scalability in the cloud"
+      ],
+      "source_ids": [
+        "azure-regions-list",
+        "az305-regions",
+        "azure-reliability-documentation"
+      ],
+      "summary": "Follow a customer reserving a bicycle. Two web servers can share a point of failure, and a healthy web page can hide a broken reservation system. Decide what must survive by tracing the customer's whole booking through the affected location.",
+      "key_points": [
+        "A datacenter houses equipment. An availability zone groups one or more datacenters within an Azure region and has independent power, cooling and networking.",
+        "A zonal resource occupies a chosen zone. With a supported zone-redundant configuration, the service distributes or replicates the resource across zones. The application still depends on every service needed to complete a booking.",
+        "Scaling adds capacity. Resilience to a zone outage also depends on where that capacity runs, how customers reach it and where their records are stored.",
+        "A region-wide outage requires a recovery plan that works outside the affected region. Region pairing alone does not replicate an entire workload or route its users.",
+        "VERIFY CURRENT: Check zone support and the reliability guidance for each service, region and deployment configuration."
+      ],
+      "scenario": {
+        "question": "The booking app has capacity for 60 reservations per minute in each of two zones. Demand is 80 per minute. What happens to the capacity target if one zone goes offline? What else must work for customers still to reserve a bike?",
+        "answer": "Only 60 reservations per minute of app capacity remain, leaving a shortfall of 20 per minute. Plan for sufficient surviving capacity, a functioning route and a booking database that can still serve the application. Verify a complete booking under the failure condition."
+      },
+      "visual": {
+        "title": "Trace a reservation through the failure",
+        "nodes": [
+          {
+            "id": "customer",
+            "label": "Customer submits reservation"
+          },
+          {
+            "id": "app",
+            "label": "Reachable app with capacity"
+          },
+          {
+            "id": "data",
+            "label": "Available booking database"
+          },
+          {
+            "id": "done",
+            "label": "Confirmed reservation"
+          }
+        ],
+        "edges": [
+          {
+            "from": "customer",
+            "to": "app",
+            "label": "Route the request"
+          },
+          {
+            "from": "app",
+            "to": "data",
+            "label": "Save the booking"
+          },
+          {
+            "from": "data",
+            "to": "done",
+            "label": "Confirm success"
+          }
+        ]
+      },
+      "dialogue": [
+        {
+          "speaker": "host",
+          "text": "It's Saturday morning at a bicycle rental shop. A customer has picked a blue bike for eleven. She presses Reserve. The team has deployed two copies of its booking app in Azure. Then the power goes out in one availability zone. Before we say whether she gets the bike, what would you ask the team?"
+        },
+        {
+          "speaker": "learner",
+          "text": "Where did you put the two copies? I used to hear “two servers” and assume the second one was a spare. If they share the part that just failed, I could lose both."
+        },
+        {
+          "speaker": "host",
+          "text": "Exactly. A datacenter is a facility that houses equipment. In an Azure region that offers zones, each availability zone is a group of one or more datacenters with its own power, cooling and networking. Both app servers in our example are in the same zone. What did the second server buy the shop?"
+        },
+        {
+          "speaker": "learner",
+          "text": "More room for bookings on a busy morning. It could also keep serving if only one server failed and traffic reached the other. The zone outage is a different problem. Both servers are inside it."
+        },
+        {
+          "speaker": "host",
+          "text": "Let's move one server to another zone and assume customers can reach the healthy copy. Now the home page opens. The customer presses Reserve again, and the page hangs. The only database that can accept a booking was in the first zone. What would count as evidence that the shop is back?"
+        },
+        {
+          "speaker": "learner",
+          "text": "I'd make a test reservation and look it up again. Seeing a bicycle on the screen proves the catalog loaded. Seeing my reservation saved proves the app could reach the database and finish the job."
+        },
+        {
+          "speaker": "host",
+          "text": "Follow the arrows in the companion diagram aloud. A customer submits a request. It reaches an app with capacity. The app saves the booking in the database. Then the customer gets confirmation. For each arrow, ask what happens when that zone disappears. A zonal resource is placed in one zone. For a zone-redundant resource, the service distributes or replicates it across zones. Check what your particular service supports and how you deployed it."
+        },
+        {
+          "speaker": "learner",
+          "text": "Here's a numbers check. We now have a database that can handle a zone failure. Each of the two app servers can take sixty bookings a minute. Eighty customers a minute arrive. One zone goes down. Pause here and work out how many bookings a minute the remaining app can handle, and how far that is from demand."
+        },
+        {
+          "speaker": "host",
+          "text": "Sixty fit. Demand exceeds that by twenty bookings every minute. Separate locations helped keep the app reachable. Serving everyone also takes enough capacity in the surviving location. Test the design under the load that will actually arrive."
+        },
+        {
+          "speaker": "learner",
+          "text": "Now change the promise on the shop door. Bookings must continue even if the whole Azure region goes offline. Would a third zone in that same region meet the new promise? Take a moment to explain where a working copy would have to live."
+        },
+        {
+          "speaker": "host",
+          "text": "All those zones are still inside that region. A recovery location outside it needs an app that works, usable booking data and a way for customers to reach them. Azure pairs some regions, and some services use those pairs. A region appearing beside another on a map tells us nothing about whether this shop has configured its booking database to copy records there. Check the chosen services and rehearse the complete reservation."
+        },
+        {
+          "speaker": "learner",
+          "text": "I can explain the difference to the shop owner now. Adding capacity helps with a busy day. Distributing the work helps with a failed location. I can tell whether either choice worked by trying to reserve a bike."
+        }
+      ]
+    },
+    {
+      "id": "who-patches-the-ticket-counter",
+      "title": "Who patches the ticket counter?",
+      "guide_sections": [
+        "Shared responsibility",
+        "IaaS, PaaS, SaaS, and serverless",
+        "Turn a cloud requirement into a responsibility decision",
+        "Select compute by control, orchestration, and workload shape"
+      ],
+      "objectives": [
+        "Describe the shared responsibility model",
+        "Describe infrastructure as a service (IaaS)",
+        "Describe platform as a service (PaaS)",
+        "Describe software as a service (SaaS)",
+        "Identify appropriate use cases for each cloud service type (IaaS, PaaS, and SaaS)"
+      ],
+      "source_ids": [
+        "azure-shared-responsibility",
+        "azure-compute-decision-guide",
+        "azure-virtual-machines-overview"
+      ],
+      "summary": "A ticket office can buy a finished reservation service, deploy its own web app on a managed platform, or administer a virtual machine. Trace which layer the team needs to control and which jobs stay on its maintenance calendar.",
+      "key_points": [
+        "Software as a service provides a finished application. The customer configures its use, manages its users and protects its data.",
+        "With Azure App Service as a managed platform for application code, Microsoft manages the underlying operating system. The application team remains responsible for its own code, dependencies, data, access and settings.",
+        "An Azure virtual machine provides control over the guest operating system. The customer is responsible for maintaining it and the application, while Microsoft operates the physical host and facility.",
+        "Start with the requirement that forces control of a particular layer. Ask which work can move to the provider and which tasks the team must still own."
+      ],
+      "scenario": {
+        "question": "A theater can deploy its booking code to a supported managed web platform. A new vendor component requires an administrator to install an operating-system driver, and the component must run on the same machine. Which hosting choice now deserves evaluation, and who maintains the operating system?",
+        "answer": "Evaluate an Azure virtual machine with a supported guest operating system and confirm driver compatibility. The theater gains guest-level control and takes responsibility for guest patching, its own application and its data. Microsoft maintains the physical host."
+      },
+      "visual": {
+        "title": "Match the requirement to the layer the theater owns",
+        "nodes": [
+          {
+            "id": "ready",
+            "label": "Use a finished booking app"
+          },
+          {
+            "id": "saas",
+            "label": "Software as a service"
+          },
+          {
+            "id": "code",
+            "label": "Deploy custom booking code"
+          },
+          {
+            "id": "paas",
+            "label": "Managed web platform"
+          },
+          {
+            "id": "driver",
+            "label": "Install a guest OS driver"
+          },
+          {
+            "id": "iaas",
+            "label": "Customer-managed virtual machine"
+          }
+        ],
+        "edges": [
+          {
+            "from": "ready",
+            "to": "saas",
+            "label": "Configure its use"
+          },
+          {
+            "from": "code",
+            "to": "paas",
+            "label": "Bring the code"
+          },
+          {
+            "from": "driver",
+            "to": "iaas",
+            "label": "Administer the OS"
+          }
+        ]
+      },
+      "dialogue": [
+        {
+          "speaker": "host",
+          "text": "The lights go down at seven. At six, the theater's ticket counter is printing seat assignments. The manager tells you, “We're moving ticketing to the cloud, so take patching off the calendar.” Before you erase that appointment, what is the theater actually buying?"
+        },
+        {
+          "speaker": "learner",
+          "text": "I need the order form. Are they buying a ticketing application, a place to run their own application, or a machine to maintain? All three might put tickets on the printer."
+        },
+        {
+          "speaker": "host",
+          "text": "First order form. A provider offers a finished booking application. Staff sign in, enter the seat map, set prices and sell tickets. The theater only needs the features on offer. Which service model does that describe?"
+        },
+        {
+          "speaker": "learner",
+          "text": "Software as a service. The provider operates the finished application. The theater still decides which employees can issue refunds and who should see customer details. When the treasurer leaves, someone at the theater needs to remove that access."
+        },
+        {
+          "speaker": "host",
+          "text": "Second order form. The theater writes a special seating rule that the finished app can't implement. The development team has a web application that runs on a supported Azure App Service runtime. They need to deploy the code. The application has no requirement to administer the operating system. Who takes which job?"
+        },
+        {
+          "speaker": "learner",
+          "text": "I'd consider platform as a service. With App Service hosting our code, Microsoft maintains the underlying operating system. Our developers still maintain the app and the libraries they ship. Our team is also responsible for the data, who can reach it and the settings we choose."
+        },
+        {
+          "speaker": "host",
+          "text": "Here's something the manager can check on a Monday. A library the developers bundled with their ticketing app needs updating. Pause and say whose name belongs on that work item. Then decide who maintains the operating system underneath the managed web platform."
+        },
+        {
+          "speaker": "learner",
+          "text": "The team's name goes on the library. A platform update can't repair a bug in the theater's custom seating code either. Microsoft maintains the underlying operating system. There are still two jobs on the calendar, and different people own them."
+        },
+        {
+          "speaker": "host",
+          "text": "Change one detail. The ticket vendor now requires a special driver installed in the guest operating system on the same machine as the booking application. The vendor supports that arrangement on a suitable Azure virtual machine. Pause and choose a hosting model. What new work comes back to the theater?"
+        },
+        {
+          "speaker": "learner",
+          "text": "Infrastructure as a service is a candidate. An Azure virtual machine gives the theater control inside the guest operating system, so its administrators can install the supported driver. They now own guest maintenance, including arranging patches and testing that ticketing still works after an update. Microsoft still maintains the physical host."
+        },
+        {
+          "speaker": "host",
+          "text": "Picture the three rows of the companion diagram. The first starts with a finished tool and ends with configuring how the theater uses it. The second starts with custom code and ends with deploying it to a managed platform. The third starts with that operating-system driver and ends with a virtual machine the theater administers. In each row, point to the requirement that made you choose it."
+        },
+        {
+          "speaker": "learner",
+          "text": "Here's how I'd answer the manager. If we buy the finished service, keep staff access and customer records on our calendar. If we run our code on App Service, add our code and its dependencies. If we need that driver in our own virtual machine, add the guest operating system too. Now the maintenance schedule can say who actually does each job."
+        }
+      ]
+    }
+  ]
+}

@@ -6,14 +6,16 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: review-required
-last_verified: 2026-10-28
+last_verified: 2026-11-20
 upcoming_change_status: none-announced
 upcoming_change_checked: 2026-10-28
 ---
 
 # SC-500 Microsoft Cloud and AI Security Engineer Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-04.md#sc-500) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sc-500-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-500) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-04.md#sc-500)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-04.md#sc-500) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sc-500-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-500) is authoritative.
 
 **Current baseline:** The official study-guide page was last updated May 13, 2026; Microsoft publishes no separate skills-effective date on that page.<br>
 **Exam state:** Active and no longer labeled beta; the credential page lists no retirement date.<br>
@@ -282,6 +284,8 @@ API Management policies can validate JWTs, restrict IPs, check headers, transfor
 
 ### Turn Defender for Cloud findings into controlled remediation
 
+**Practice check.** For a multicloud assessment, match each workload to a named Defender plan. Microsoft's matrix lists Defender for Servers and Defender for Containers as generally available on AWS and GCP. Azure-specific products such as Defender for Key Vault have separate coverage rows. [Microsoft Defender for Cloud multicloud support matrix - Microsoft Defender for Cloud | Microsoft Learn](https://learn.microsoft.com/en-us/azure/defender-for-cloud/multicloud-support-matrix)
+
 Foundational CSPM provides core posture features such as recommendations and secure score; paid Defender CSPM adds advanced capabilities such as attack-path analysis, Cloud Security Explorer, governance, and data/AI posture features. Cloud workload protection plans detect and protect specific workload types. Turning on Defender CSPM does not turn on every workload plan, and a workload plan does not repair poor configuration.
 
 Use a risk workflow:
@@ -351,7 +355,7 @@ The [Defender for Cloud release notes](https://learn.microsoft.com/en-us/azure/d
 | October 28, 2026 source recheck | The current release-note body no longer includes the earlier October 27 Foundational CSPM opt-in announcement | **Unconfirmed — validation needed:** recheck actual onboarding and current Microsoft guidance. An omitted announcement does not prove either rollout or cancellation. |
 | October 20, 2026, public preview | Cloud security plan management in the Defender portal for Azure commercial environments | The notice describes Defender-owned configuration, Azure view-only configuration and DWU-based billing for migrated subscriptions; verify the actual migration state before changing plans. |
 | October 5, 2026, GA notice | KSPM recommendations move from running-container scope to workload-controller scope | Reconcile changed recommendation populations and Secure Score impact before interpreting a count change as remediation. |
-| November 1, 2026, announced | Defender for Servers billing classification and identification change | **VERIFY CURRENT:** distinguish Plan 1 desktop-device treatment from Plan 1/2 server-count identification; billing classification alone does not establish supported OS or licensing eligibility. |
+| November 1, 2026 | Defender for Servers billing | Effective November 1, 2026, Defender for Servers Plan 1 excludes productivity and desktop client devices from server billing. Plans 1 and 2 apply the updated mechanism for identifying billable servers. Confirm billing counts against usage and configuration separately from OS eligibility. |
 | December 14, 2026, announced | The grouped vulnerability-assessment-solution recommendation is scheduled for removal | Use individual coverage recommendations and verify automation before the date. |
 | August 16, 2027, announced | Classic Defender for SQL VA/ATP APIs retire | Inventory dependent scripts and plan migration; this does not mean SQL threat protection ends. |
 
@@ -562,7 +566,76 @@ These 48 original questions include answers for self-review; they are not recall
 - [ ] I can configure Security Copilot workspaces, roles, plugins, and agents with least privilege, data governance, human oversight, and rollback.
 - [ ] I completed or tabletop-tested all ten labs and can explain both successful and failed tests.
 
+## Key terms and phrases
+
+**Manage identity, access, and governance**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Conditional Access](#treat-identity-as-the-control-plane) | Entra policies that evaluate access context and can require controls such as stronger authentication. |
+| [Multifactor authentication (MFA)](#treat-identity-as-the-control-plane) | Requiring evidence from more than one type of authentication factor, such as a password and a possession factor. |
+| [Privileged Identity Management (PIM)](#treat-identity-as-the-control-plane) | A service for governing privileged roles, including time-limited activation of eligible assignments. |
+| [Access review](#treat-identity-as-the-control-plane) | A recurring or one-time decision process that checks whether assigned access should continue and applies configured outcomes. |
+| [Workload identity](#secure-application-and-workload-identities) | An identity used by an application or service to obtain authorized access independently of a human user. |
+| [Managed identity](#secure-application-and-workload-identities) | An Azure-managed workload identity that obtains tokens without an application storing a secret. |
+| [Service principal](#secure-application-and-workload-identities) | A tenant-local identity representing an application or workload that can receive permissions. |
+| [Delegated permission](#secure-application-and-workload-identities) | A scope that lets an app call an API on behalf of a signed-in user. For Microsoft Graph, the app can act only within both its consented scopes and the user’s own access. |
+| [Application permission](#secure-application-and-workload-identities) | A permission exercised by an application identity without a signed-in user. |
+| [Key Vault](#secure-azure-key-vault-as-a-boundary-not-just-a-container) | An Azure service for holding keys, secrets and certificates behind identity, authorization and network controls. |
+| [Secret](#secure-azure-key-vault-as-a-boundary-not-just-a-container) | A protected value used by a workload, such as a password or API credential. |
+| [Certificate](#secure-azure-key-vault-as-a-boundary-not-just-a-container) | A signed statement binding a public key to an identity, commonly used for transport security or authentication. |
+| [Soft delete](#secure-azure-key-vault-as-a-boundary-not-just-a-container) | Retention of a deleted vault or object for a recovery period. |
+| [Purge protection](#secure-azure-key-vault-as-a-boundary-not-just-a-container) | A setting preventing permanent deletion of eligible soft-deleted vault objects before their recovery interval ends. |
+| [Azure Policy](#enforce-governance-without-confusing-policy-permission-and-protection) | A governance service that evaluates resources against assigned rules and can apply supported enforcement effects. |
+| [Role assignment](#enforce-governance-without-confusing-policy-permission-and-protection) | A grant that gives a principal a defined Azure role at a particular scope. |
+| [Policy initiative](#enforce-governance-without-confusing-policy-permission-and-protection) | A group of related policy definitions assigned and assessed together. |
+| [Resource lock](#enforce-governance-without-confusing-policy-permission-and-protection) | A control that restricts deletion or modification through Azure's management plane. |
+| [Security baseline](#enforce-governance-without-confusing-policy-permission-and-protection) | A documented minimum configuration and set of controls against which a workload is assessed. |
+
+**Secure storage, databases, and networking**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Shared access signature (SAS)](#secure-storage-from-identity-through-recovery) | A signed authorization token that grants scoped and time-limited access to specified Azure Storage resources. |
+| [Blob versioning](#secure-storage-from-identity-through-recovery) | Retention of successive versions of a blob so an earlier state can be identified and recovered. |
+| [Customer-managed key](#secure-storage-from-identity-through-recovery) | An encryption key for which the customer controls key permissions, lifecycle and availability. |
+| [Transparent data encryption (TDE)](#layer-azure-sql-security-and-evidence) | Encryption of database files at rest that is transparent to normal authorized queries. |
+| [Row-level security](#layer-azure-sql-security-and-evidence) | A policy that filters rows or blocks writes according to a predicate evaluated for the caller. |
+| [Private endpoint](#build-segmentation-and-private-access-deliberately) | A network interface with a private IP address used to reach a specific service resource through a virtual network. |
+| [Service endpoint](#build-segmentation-and-private-access-deliberately) | A subnet configuration that lets a supported Azure service recognize traffic coming from that virtual network. |
+| [Network security group (NSG)](#build-segmentation-and-private-access-deliberately) | A set of prioritized inbound and outbound traffic rules applied to a subnet or network interface. |
+| [Application security group (ASG)](#build-segmentation-and-private-access-deliberately) | A named grouping of network interfaces used as sources or destinations in NSG rules. |
+| [Azure Firewall](#build-segmentation-and-private-access-deliberately) | A managed stateful network firewall that enforces centrally configured traffic policies. |
+| [Web application firewall (WAF)](#build-segmentation-and-private-access-deliberately) | A control that evaluates HTTP requests against managed or custom rules to protect web applications. |
+
+**Secure compute**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Security trimming](#secure-ai-as-a-connected-system) | Restricting retrieved results to material the requesting identity is allowed to access. |
+| [Tool allowlist](#secure-ai-as-a-connected-system) | An explicit list of operations an agent may invoke within a defined task. |
+| [Defender for Servers](#harden-servers-and-virtual-machines-across-clouds) | A Defender for Cloud workload-protection plan for eligible server workloads. |
+| [Workload identity federation](#secure-containers-serverless-web-apps-and-apis) | An external workload exchanges a trusted identity token for short-lived Azure access. A Kubernetes service account can use this flow without storing a client secret. |
+| [API authorization](#secure-containers-serverless-web-apps-and-apis) | The check that a caller may use a specific operation and data object after its identity is established. |
+
+**Manage and monitor security posture**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Security posture](#turn-defender-for-cloud-findings-into-controlled-remediation) | The state of a workload's security configuration and exposure, assessed to identify needed improvements. |
+| [Cloud security posture management (CSPM)](#turn-defender-for-cloud-findings-into-controlled-remediation) | Assessment of cloud configurations and exposures to identify and prioritize weaknesses. |
+| [Security recommendation](#turn-defender-for-cloud-findings-into-controlled-remediation) | An assessment finding proposing a change to improve an observed security configuration. |
+| [Attack path](#turn-defender-for-cloud-findings-into-controlled-remediation) | A chain of exposures and access relationships that could lead to an important asset, used to prioritize defensive remediation. |
+| [Data connector](#engineer-microsoft-sentinel-ingestion-before-analytics) | An integration that supplies a particular source of security telemetry to Microsoft Sentinel. |
+| [Data collection rule (DCR)](#engineer-microsoft-sentinel-ingestion-before-analytics) | An Azure Monitor definition that specifies which events to collect and where to send them. |
+| [Analytics rule](#engineer-microsoft-sentinel-ingestion-before-analytics) | A Sentinel detection definition that evaluates ingested data and can produce alerts under specified conditions. |
+| [Automation rule](#engineer-microsoft-sentinel-ingestion-before-analytics) | A Sentinel rule that coordinates incident-handling tasks and can invoke a playbook under configured conditions. |
+| [Playbook](#engineer-microsoft-sentinel-ingestion-before-analytics) | An automated response workflow that can take a defined series of actions when an incident meets specified conditions. |
+| [Control evidence](#operate-microsoft-security-copilot-with-the-same-rigor-as-other-privileged-tooling) | An observable record showing whether a control operated at the intended scope and time. |
+
 ## Places to learn
+
+**Suggested practice.** Separate the Defender setting from the Power Platform administrator’s task and identify the status that would show the connection succeeded. 7 minutes for the unit (publisher page). [Enable protection in Microsoft Defender](https://learn.microsoft.com/en-us/training/modules/enable-protection-copilot-studio-agents/3-enable-protection-microsoft-defender)
 
 This is a curated starting point, **not a complete list**. Do not try to consume every item. Pick the format and depth that work for you, use the official blueprint as the coverage checklist, and spend at least as much effort on implementation and negative testing as on passive watching. Provider runtimes and catalogs change; estimates below use public listings checked September 28, 2026 and include notes where exact current duration was unavailable.
 
@@ -584,7 +657,7 @@ The twelve current official paths are [secure Entra access](https://learn.micros
 | [Udemy SC-500 + AZ-500 course by Alan Rodrigues](https://www.udemy.com/course/exam-azure-2/) | Paid | Public indexed listing: 36h35, 11 sections/460 lectures, September 2026 update; direct fetch blocked, paid coverage unverified |
 | [Udemy SC-500/AZ-500 hands-on course by John Christopher](https://www.udemy.com/course/az-500-microsoft-azure-security-technologies-with-sims/) | Paid | Public indexed listing: 18h31, 17 sections/151 lectures, August 2026; direct fetch blocked, verify current AI/Agent coverage |
 | [Udemy SC-500 practice tests by Scott Duffy and Jordi Koenderink](https://www.udemy.com/course/sc500-tests/) | Paid | Planning estimate: 3–6 hours; public indexed listing shows four tests of 25 questions, August 2026. Direct fetch blocked; questions not accessed |
-| [Pluralsight AZ-500 path](https://www.pluralsight.com/paths/az-500-microsoft-azure-security-technologies) | Paid/trial | Public listing: six course entries 46h27 (including 12h31 practice entry) plus five labs 3h30 = 49h57; rounded header 50h. Retired AZ-500 foundation only |
+| Microsoft Learn, Implement security for AI | Public, nine modules | Allow 20–40 minutes for a selected module and this exercise (editorial estimate). Map an agent identity and its allowed operations to an AI workload protection or monitoring control. [Source notes and publisher link](../docs/research/2026-11-20-microsoft-refresh-group-04.md#sc-500). |
 | [O’Reilly/Pearson AZ-500 video by Tim Warner](https://www.oreilly.com/library/view/exam-az-500-microsoft/9780137702039/) | Paid | Previously listed 8h34/January 2022; direct fetch blocked and current metadata unverified. Legacy foundation only |
 | [John Savill AZ-500 Study Cram](https://www.youtube.com/watch?v=6vISzj-z8k4) | Public | Previously listed 2h54; current fetch is a shell and video was not watched. Older Azure-security foundation only |
 | [Microsoft Reactor channel](https://www.youtube.com/@MicrosoftReactor) | Public | 2–8 hours selectively for current Azure security, Defender, Sentinel, and AI sessions; no exact SC-500 path confirmed |

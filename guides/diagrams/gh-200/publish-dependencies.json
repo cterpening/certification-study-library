@@ -1,0 +1,18 @@
+{
+  "exam_code": "GH-200",
+  "guide_section": "Design the dependency graph explicitly",
+  "objective": "Implement dependencies between jobs",
+  "source_ids": ["github-docs-actions-workflow-syntax"],
+  "visual": {
+    "title": "Why was publish skipped when build passed?",
+    "nodes": [
+      {"id": "publish", "label": "publish: skipped (default condition)"},
+      {"id": "build", "label": "build: passed"},
+      {"id": "test", "label": "test: failed"}
+    ],
+    "edges": [
+      {"from": "build", "to": "publish", "label": "required by"},
+      {"from": "test", "to": "publish", "label": "required by"}
+    ]
+  }
+}

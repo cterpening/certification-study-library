@@ -432,6 +432,100 @@ Volatile: assigned exam version, objectives, APIs, console layout, CLI/tool beha
 
 This guide uses only public objective language and original scenarios, labs, and checks. It does not reproduce or solicit recalled exam tasks.
 
+## Key terms and phrases
+
+**Manage OpenShift Container Platform**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Container](#1-manage-openshift-container-platform) | An isolated application process and its dependencies that ordinarily shares the host kernel. Its image is the packaged input used to start it. |
+| [Label selector](#1-manage-openshift-container-platform) | A filter that selects Kubernetes objects by their labels. A Service can exist with no matching Pods when its selector is wrong. |
+| [Namespace](#1-manage-openshift-container-platform) | A Kubernetes scope for the names of many resources and for controls such as Roles and ResourceQuotas. A namespace alone does not isolate all traffic. |
+| [Service selector](#1-manage-openshift-container-platform) | The set of labels a Service uses to identify the Pods that should receive its traffic. |
+
+**Declarative resource management**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Declarative configuration](#2-declarative-resource-management) | A description of the desired resource state that can be reviewed and applied repeatedly. |
+| [Desired state](#2-declarative-resource-management) | The state declared in an object’s specification, which controllers work to reconcile with observed conditions. |
+| [Secret](#2-declarative-resource-management) | A Kubernetes resource for sensitive values such as credentials. Access controls and encryption configuration matter because encoding alone is not secrecy. |
+| [Version control](#2-declarative-resource-management) | Recording changes to files as identifiable revisions so users can compare, review and recover previous states. |
+| [YAML Ain’t Markup Language (YAML)](#2-declarative-resource-management) | A structured text format commonly used for configuration. Significant indentation and scalar typing can affect the meaning of apparently small edits. |
+| [ConfigMap](#render-a-configuration-change-before-deployment) | A Kubernetes object for nonsecret configuration values supplied to workloads through environment variables or mounted files. |
+| [Hash](#render-a-configuration-change-before-deployment) | A fixed-size digest derived from input data. Comparing a file’s digest to a trusted reference can detect modification without revealing who modified it. |
+| [Kustomization](#render-a-configuration-change-before-deployment) | The configuration that tells Kustomize which resources, patches and transformations to apply when rendering manifests. |
+| [Kustomize](#render-a-configuration-change-before-deployment) | A tool for composing or modifying Kubernetes manifests through bases and overlays without templating the YAML source. |
+
+**Deploy applications**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Deployment](#3-deploy-applications) | A workload controller that manages rollout and replacement of replicated application Pods. |
+| [EndpointSlice](#3-deploy-applications) | A resource grouping endpoint addresses, ports and readiness information used to reach a Service’s eligible backends. |
+| [Environment variable](#3-deploy-applications) | A named value supplied in the environment of a process, such as a search path. Child processes inherit exported variables from their parent. |
+| [Label](#3-deploy-applications) | A key-value attribute attached to an object so selectors can identify related resources, such as all Pods belonging to one application. |
+| [ReplicaSet](#3-deploy-applications) | A controller that maintains a requested number of matching Pod replicas. A Deployment normally manages the ReplicaSets for its revisions. |
+
+**Manage authentication and authorization**
+
+| Term or phrase | Meaning |
+|---|---|
+| [RoleBinding](#4-manage-authentication-and-authorization) | A namespaced association that grants the permissions of a role to specified users, groups or service accounts. |
+| [Authentication](#4-manage-authentication-and-authorization) | Checking that a claimant controls an authenticator bound to the claimed identity. It precedes the separate decision about permitted actions. |
+| [Authorization](#4-manage-authentication-and-authorization) | Determining whether a given identity may perform a specific action on the particular resource requested. |
+| [ClusterRoleBinding](#4-manage-authentication-and-authorization) | An association granting a ClusterRole’s permissions to subjects across the cluster, so scope should be checked carefully. |
+| [Reconciliation](#4-manage-authentication-and-authorization) | The controller loop that compares desired and observed state and acts to bring them into agreement. |
+
+**Configure network security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Certificate chain](#5-configure-network-security) | The sequence of certificates linking a presented identity to a trusted issuer. Trust also depends on checks such as name and validity period. |
+| [Ingress controller](#5-configure-network-security) | The component that watches Ingress resources and provides or configures the proxy that serves actual traffic. |
+| [Load balancer](#5-configure-network-security) | A component that sends eligible requests or connections to selected backends using health and distribution policy. |
+| [Pod](#5-configure-network-security) | The smallest deployable Kubernetes unit. Its containers share a network identity and can share declared volumes for the lifetime of that Pod. |
+| [NetworkPolicy](#prove-selector-scope-and-policy-composition) | A resource that selects Pods and describes permitted traffic. Enforcement depends on the cluster network implementation. |
+| [ClusterIP](#prove-selector-scope-and-policy-composition) | A Service exposure type that provides an internal cluster address for reaching the Service’s backing endpoints. |
+| [Ingress](#prove-selector-scope-and-policy-composition) | A Kubernetes resource declaring HTTP routing rules, such as host and path matches. A compatible controller is needed to implement them. |
+
+**Expose non-HTTP/SNI applications**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Service](#6-expose-non-httpsni-applications) | A stable network endpoint for a group of backends, such as Pods selected by labels. |
+| [LoadBalancer Service](#6-expose-non-httpsni-applications) | A Service requesting an externally reachable load balancer from an available platform integration. The object alone does not guarantee a reachable address. |
+| [NodePort](#6-expose-non-httpsni-applications) | A Service exposure type that opens a selected port on cluster nodes and forwards eligible traffic to the Service’s backends. |
+| [Linux capability](#6-expose-non-httpsni-applications) | A discrete kernel privilege that can be granted or removed from a process without providing all superuser privileges. |
+| [OpenShift Route](#6-expose-non-httpsni-applications) | An OpenShift resource exposing a Service through a supported router using a hostname and applicable TLS or routing settings. |
+| [User Datagram Protocol (UDP)](#6-expose-non-httpsni-applications) | A datagram transport that adds port addressing with no built-in guarantee of delivery or order. Applications decide what reliability they need. |
+
+**Enable developer self-service**
+
+| Term or phrase | Meaning |
+|---|---|
+| [ResourceQuota](#7-enable-developer-self-service) | A limit on aggregate resource consumption in a namespace, such as total requested CPU or object count. |
+| [LimitRange](#7-enable-developer-self-service) | A namespaced policy that sets resource defaults or bounds for individual objects, complementing an aggregate quota. |
+| [OpenShift project](#7-enable-developer-self-service) | An OpenShift unit for organizing related workloads, access and resources, backed by a Kubernetes namespace. |
+| [PersistentVolumeClaim (PVC)](#7-enable-developer-self-service) | A namespaced request for storage by size, access mode and other requirements, which can bind to a matching PersistentVolume. |
+
+**Manage OpenShift Operators**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Operator](#8-manage-openshift-operators) | Software that watches cluster resources and uses application-specific knowledge to reconcile them toward a declared state. |
+| [Custom resource definition (CRD)](#8-manage-openshift-operators) | A declaration extending the Kubernetes API with a new resource type and schema. A controller supplies any reconciliation behavior. |
+
+**Configure application security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Security context constraints (SCCs)](#9-configure-application-security) | OpenShift controls that determine which security settings a Pod may use, including privileges and allowed identities. |
+| [Annotation](#9-configure-application-security) | Kubernetes object metadata intended for descriptive or tool-specific information, unlike labels used by ordinary label selectors. |
+| [CronJob](#9-configure-application-security) | A Kubernetes object that creates Jobs on a schedule. The application should account for execution timing and possible repeated work. |
+| [Security context](#9-configure-application-security) | Settings that govern a Pod’s or container’s execution privileges, such as user identity, Linux capabilities and filesystem restrictions. |
+| [ServiceAccount](#9-configure-application-security) | A namespaced identity that a workload can use for authenticated operations, including access to the Kubernetes API when authorized. |
+
 ## Places to learn
 
 This is not a complete list and is not meant to be consumed in full. Pick the explanation style and lab environment that work for you, then use the assigned objectives as the checklist. Estimated time includes deliberate practice where stated; access, runtimes, course versions, and schedules can change.

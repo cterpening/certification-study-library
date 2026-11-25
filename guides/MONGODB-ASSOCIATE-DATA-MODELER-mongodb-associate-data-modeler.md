@@ -560,6 +560,97 @@ These original prompts are learning checks, not recalled exam items. Answer befo
 
 The issuer’s Associate Data Modeler learning route remains the outline authority; no new objective set was exposed by the current public course shell. MongoDB’s [August 18 certification-path update](https://www.mongodb.com/company/blog/news/introducing-a-more-connected-flexible-path-to-certifications) aligns the Data Modeler certification route with Skill Badges in data modeling, schema patterns, and schema optimization; completion of the full learning path unlocks a stated 50% exam discount, subject to current issuer terms. Current Atlas and Compass context includes a Shell Syntax Mode for document editing, with MongoDB shell syntax and constructors such as `ObjectId()` and `ISODate()`, and per-user Data Explorer controls for date display time zone, read-only mode, default `maxTimeMS`, and legacy UUID formatting. These interface options change how examples are entered or displayed, not the persisted data model. When modeling dates, validate BSON type, UTC/time-zone assumptions, serialization, and application presentation separately. [MongoDB Atlas changelog](https://www.mongodb.com/docs/atlas/release-notes/changelog/).
 
+## Key terms and phrases
+
+**Requirements Gathering**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Data retention](#1-requirements-gathering-10) | How long data or recoverable history is kept before removal under an explicit operational or governance policy. |
+| [Document](#1-requirements-gathering-10) | A record of named fields and typed values that can include nested objects or arrays. |
+| [Embedding](#1-requirements-gathering-10) | Keeping related records inside a parent document to make common reads and single-document updates simpler. |
+| [Workload profile](#turn-requirements-into-a-falsifiable-workload) | A description of important reads and writes, their frequency, data size and performance targets used to evaluate a model. |
+| [Data freshness](#turn-requirements-into-a-falsifiable-workload) | The age or lag of data visible to a consumer relative to the agreed source time or publication expectation. |
+| [Data skew](#turn-requirements-into-a-falsifiable-workload) | An unequal distribution of records or workload across keys or partitions that can produce an overloaded partition or long-running tasks. |
+
+**Entities**
+
+| Term or phrase | Meaning |
+|---|---|
+| [View](#2-entities-13) | A named query through which consumers see data in a defined shape. A conventional logical view reads its inputs when queried. |
+| [Collection](#2-entities-13) | A named group of documents within a database. Documents may vary in shape unless validation rules constrain them. |
+
+**Relationships**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Cardinality](#3-relationships-85) | How many instances can participate on either side of a relationship, such as one customer having many orders. |
+| [Reference](#3-relationships-85) | A link from one document to another by identifier, allowing related data to be stored and updated separately. |
+| [Unbounded array](#skew-changes-the-relationship-decision) | An embedded list that can keep growing with usage, increasing document size and update cost. |
+
+**Workload/Usage**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Aggregation](#4-workloadusage-10) | Combining a group of records into a summary such as count, sum or average, at a declared grouping level. |
+| [Document identifier (_id)](#4-workloadusage-10) | The required identifier field distinguishing documents in a standard collection. |
+| [Aggregation pipeline](#4-workloadusage-10) | A sequence of stages that filter, transform, group or combine input documents to produce a result. |
+| [Computed pattern](#4-workloadusage-10) | Storing a calculated value with the source or aggregate record to speed reads, with an explicit refresh or update rule. |
+
+**Data Model Design**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Selectivity](#5-data-model-design-28) | How narrowly a filter restricts matching rows. A selective condition can reduce work if the access path can use it. |
+| [Working set](#5-data-model-design-28) | The data and index pages receiving regular access. Its size relative to memory affects cache behavior. |
+| [Bucket pattern](#5-data-model-design-28) | Grouping multiple related records into bounded bucket documents, often to reduce per-item overhead or organize time series. |
+| [Extended reference](#5-data-model-design-28) | Duplicating a small chosen subset of a related entity’s fields alongside its reference to avoid frequent extra reads. |
+| [Subset pattern](#give-every-pattern-a-failure-case) | Keeping frequently accessed related items together while placing the less frequently used remainder elsewhere. |
+
+**Modeling for Technical Requirements**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Join](#6-modeling-for-technical-requirements-10) | Combining records from multiple inputs according to a matching condition. A repeated key can yield more rows than either input leads you to expect. |
+| [Constraint](#6-modeling-for-technical-requirements-10) | A stated rule for acceptable records or relationships. Whether a particular constraint is enforced depends on the database and object type. |
+| [Schema enforcement](#6-modeling-for-technical-requirements-10) | Checking incoming records against expected fields, types or constraints before accepting them into a governed dataset. |
+| [Data lineage](#6-modeling-for-technical-requirements-10) | The chain of sources and transformations that produced a dataset or model input, useful for explaining a result or assessing change impact. |
+| [Transaction](#6-modeling-for-technical-requirements-10) | A group of database operations whose changes are committed together or discarded together within the guarantees of the database. |
+| [Write concern](#6-modeling-for-technical-requirements-10) | The level of acknowledgement required from a MongoDB write before the client treats it as successful. |
+| [Shard key](#6-modeling-for-technical-requirements-10) | The specified field or fields MongoDB uses to distribute documents in a sharded collection and target eligible queries. |
+| [Schema validation](#validation-consistency-and-expiry-are-separate-contracts) | Rules that check document structure or values when data is written, subject to the collection’s validation settings. |
+| [Time-to-live (TTL) index](#validation-consistency-and-expiry-are-separate-contracts) | An index used to expire eligible documents in the background. Expiry time does not guarantee immediate removal. |
+| [Schema](#validation-consistency-and-expiry-are-separate-contracts) | The declared structure and types expected for stored data. Compare producer and consumer expectations before accepting a changed field. |
+| [Predicate](#validation-consistency-and-expiry-are-separate-contracts) | A condition used to decide which records match a query or qualify for a transformation. |
+| [Full scan](#validation-consistency-and-expiry-are-separate-contracts) | Examining an entire table or collection to locate relevant records, in contrast with a more selective access path. |
+| [Database](#validation-consistency-and-expiry-are-separate-contracts) | A MongoDB namespace containing collections and associated database-level permissions. |
+| [Schema migration](#validation-consistency-and-expiry-are-separate-contracts) | Moving documents and application readers or writers between data shapes while handling versions that coexist during rollout. |
+
+**Indexing**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Projection](#7-indexing-13) | Selecting the fields or calculated expressions to return from a query. Fewer output fields can reduce data transfer. |
+| [Index](#7-indexing-13) | An auxiliary structure organizing keys for faster lookup or ordered access, with a corresponding cost for maintenance and storage. |
+| [Sort order](#7-indexing-13) | The key sequence and direction used to order returned documents. Include a stable tie-breaker for repeatable pagination. |
+| [Multikey index](#7-indexing-13) | An index containing entries derived from array elements, with restrictions affecting compound keys and query behavior. |
+| [Documents examined](#read-an-execution-plan-without-overclaiming) | The number of documents a query plan inspects. Comparing it with results returned helps reveal excess work. |
+| [Null value](#read-an-execution-plan-without-overclaiming) | A marker for a missing or unknown value. Count and comparison operations may treat it differently from a supplied zero. |
+| [Execution plan](#read-an-execution-plan-without-overclaiming) | A description of the physical or logical steps chosen to answer a query, useful for investigating excess reads or joins. |
+| [Deduplication](#read-an-execution-plan-without-overclaiming) | Recognizing repeated representations of the same event or business entity under a defined key and selection rule. |
+| [Array element match](#read-an-execution-plan-without-overclaiming) | A query condition requiring a single array element to satisfy all specified criteria, avoiding matches split across different elements. |
+| [Unique index](#read-an-execution-plan-without-overclaiming) | An index enforcing uniqueness of its indexed key according to the index definition, useful for preventing duplicate business identifiers. |
+
+**Monitoring and Evolving Data Models**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Idempotence](#8-monitoring-and-evolving-data-models-75) | Repeatedly applying the same logical input leaves the same intended state as applying it once, which makes retry and replay safer. |
+| [Change stream](#8-monitoring-and-evolving-data-models-75) | A cursor-like feed of eligible database changes, consumed by applications that need to react to writes. |
+| [Resume token](#8-monitoring-and-evolving-data-models-75) | A position identifier enabling an eligible change-stream consumer to continue after the last processed change. |
+| [Schema version](#prove-migration-completeness-and-rollback-representability) | A marker identifying the shape and interpretation of a document during a gradual change in the model. |
+| [Reconciliation](#prove-migration-completeness-and-rollback-representability) | Comparing source and target results for the same scope, such as record counts and amounts in a given business day. |
+
 ## Places to learn
 
 This is not a complete list or a prescription to consume everything. Public outlines and metadata do not prove lesson quality or exam completeness. Publisher times are identified; other ranges are study estimates. No paid lesson, practice-question interior, account enrollment or video playback was used in this review.

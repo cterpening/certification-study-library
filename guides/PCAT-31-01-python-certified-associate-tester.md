@@ -1071,6 +1071,68 @@ The workbook executes components of these 12 labs. The complete layered plan, fi
 - Nineteen direct receipts contain 16 successful responses and three errors. Indexed canonical syllabus/credential/policy reading is distinguished from direct network health. Selected chapters and hash-verified reused passages are not whole-manual or enrolled-course audits.
 - The full PDF, 12 broader labs, real integrations, course/BDD plugins, stakeholder discussion and independent human content/accessibility review remain pending. No readiness approval is implied.
 
+## Key terms and phrases
+
+**Testing essentials, automation, and refactoring**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Regression test](#requirements-test-scope-and-automation-decisions) | A repeatable check for behavior that previously worked and must survive a change. |
+| [Requirement](#requirements-test-scope-and-automation-decisions) | A statement of expected behavior or a constraint that provides a basis for designing and judging a test. |
+| [Defect](#requirements-test-scope-and-automation-decisions) | A flaw in a program or specification that can produce an incorrect outcome under particular conditions. |
+| [Verification](#requirements-test-scope-and-automation-decisions) | Checking whether a work product meets its stated requirements, including through review or testing. |
+| [Fake](#requirements-test-scope-and-automation-decisions) | A simplified working implementation of a dependency, such as an in-memory repository used during a test. |
+| [Branch outcome](#observed-coverage-limit) | One possible result of a conditional decision, such as canceling or proceeding when a validation check runs. |
+
+**Assertions, contexts, decorators, and method types**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Context manager](#3-assertions-contexts-decorators-and-method-types-119) | An object that controls entry to and exit from a with block, including cleanup when the block raises an exception. |
+| [Input validation](#3-assertions-contexts-decorators-and-method-types-119) | Checking whether a value satisfies the program’s input contract before using it. Use an explicit check for requirements that must hold when Python assertions are disabled. |
+| [Test decorator](#3-assertions-contexts-decorators-and-method-types-119) | A Python wrapper or transformation applied to a test, for example to mark it for conditional skipping or provide a patched dependency. |
+| [Side effect](#executed-mechanism-contracts) | An outcome beyond a returned value. A mock can be configured to raise an exception or produce successive results to exercise those paths. |
+
+**Unit-testing foundations**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Exception assertion](#4-unit-testing-foundations-286) | A check that executing a particular operation raises the expected exception type. |
+| [Test runner](#4-unit-testing-foundations-286) | The component that executes selected cases, gathers results and reports failures or errors. |
+| [Identity assertion](#assertion-precision-discovery-and-reproducibility) | A check that two references point to the very same object. Two equal values can belong to different objects. |
+| [Subtest](#assertion-precision-discovery-and-reproducibility) | A labeled case within a test method that lets a runner report which input or condition failed. |
+| [Assertion](#assertion-precision-discovery-and-reproducibility) | A check comparing an observed condition or result with an expectation so a mismatch becomes visible. |
+| [Test discovery](#assertion-precision-discovery-and-reproducibility) | Finding runnable tests according to a runner’s naming and layout conventions. |
+| [Flaky test](#assertion-precision-discovery-and-reproducibility) | A test whose result changes without a corresponding behavior change, often because time, ordering or shared state is uncontrolled. |
+| [Parameterized test](#assertion-precision-discovery-and-reproducibility) | Exercising the same behavior with several named input and expected-output combinations. |
+| [Equality assertion](#assertion-precision-discovery-and-reproducibility) | A check that actual and expected values compare equal. Equal values can be stored in separate objects. |
+
+**Advanced unit testing**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Failure](#fixture-lifecycle-and-honest-result-interpretation) | An observed deviation from required behavior during execution, providing evidence for investigating a possible defect. |
+| [Integration test](#fixture-lifecycle-and-honest-result-interpretation) | A test of behavior across real component boundaries, such as a service interacting with a database. |
+| [Test fixture](#fixture-lifecycle-and-honest-result-interpretation) | The initial data, objects, environment and cleanup needed for a repeatable test. |
+| [Setup and teardown](#fixture-lifecycle-and-honest-result-interpretation) | Preparing per-test resources and releasing them afterward so cases start from a controlled state. |
+| [Mutable fixture](#fixture-lifecycle-and-honest-result-interpretation) | Writable setup data that can accidentally carry changes into another test when reused rather than reset. |
+| [Expected exception](#fixture-lifecycle-and-honest-result-interpretation) | An exception type or outcome that a test requires when a particular input or failure path occurs. |
+| [Cleanup](#fixture-lifecycle-and-honest-result-interpretation) | Work that releases resources and restores state after a test, including when setup or the test body fails. |
+| [Test skip](#fixture-lifecycle-and-honest-result-interpretation) | A recorded decision to omit a case under a defined condition. A skipped case supplies no evidence that the behavior passed. |
+| [Mock](#mocks-patching-and-exception-paths) | A test double that records interactions so the test can check calls, arguments or order. |
+| [Patch target](#mocks-patching-and-exception-paths) | The name temporarily replaced during a test. It must be the name the code under test looks up. |
+| [Substitution scope](#mocks-patching-and-exception-paths) | The interval during which a substitute is active. Leaving its context should restore the original binding. |
+
+**TDD and BDD**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Test-driven development (TDD)](#6-tdd-and-bdd-71) | Designing behavior in short cycles by writing a failing test, making it pass and then improving the code. |
+| [Behavior-driven development (BDD)](#6-tdd-and-bdd-71) | Describing expected behavior in concrete examples that give developers and stakeholders a shared acceptance criterion. |
+| [Unit test](#6-tdd-and-bdd-71) | A focused check of a small piece of behavior, normally with dependencies controlled enough to make the result interpretable. |
+| [Refactoring](#recorded-redgreenrefactor-slice) | Restructuring code while preserving its observable behavior, supported by tests that can detect unintended changes. |
+| [Behavior scenario](#recorded-redgreenrefactor-slice) | A concrete example expressing starting conditions, an action and the expected visible outcome. |
+
 ## Places to learn
 
 ### October 29, 2026 source update

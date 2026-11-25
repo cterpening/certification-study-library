@@ -13,7 +13,9 @@ upcoming_change_checked: 2026-10-28
 
 # MB-820 Microsoft Dynamics 365 Business Central Developer Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-04.md#mb-820) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mb-820-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-820) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-05.md#mb-820)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-04.md#mb-820) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mb-820-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-820) is authoritative.
 
 **Current baseline:** Skills measured as of June 10, 2025.<br>
 **Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
@@ -229,6 +231,8 @@ The [testing support matrix](https://learn.microsoft.com/en-us/dynamics365/busin
 **Worked test structure:** declare a [test codeunit](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-test-codeunits-and-test-methods) with `Subtype = Test` and a method marked `[Test]`. Put synthetic setup, the action under test and explicit assertions in that method; put reusable setup in helper methods and expected UI behavior in correctly attributed handlers. Run through the selected test runner and capture method-level success/failure, not merely that the runner opened. A failing test does not prevent the next test method running. For an intentionally invalid quantity, assert the expected error and inspect permitted durable state using the earlier transaction model. **VERIFY CURRENT:** transaction/isolation settings and toolkit compatibility. Runtime18 `TestHandlers` lifecycle hooks are separately documented as preview; do not confuse them with ordinary UI handler methods or make preview hooks a prerequisite for this baseline exercise. No test app, compiler or container run was performed here.
 
 ### Telemetry and performance
+
+**Practice check.** When designing extension telemetry, choose an event ID and dimensions that identify the operation. Session.LogMessage uses TelemetryScope for routing. Search the resulting trace by event and dimensions in Application Insights rather than expecting a TelemetryScope column. [Creating Custom Telemetry Events for Azure Application Insights - Business Central | Microsoft Learn](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-instrument-application-for-telemetry-app-insights)
 
 Configure Application Insights/telemetry using current environment and extension guidance. Correlate environment/tenant, company/user pseudonymous dimensions as permitted, app name/version, operation, duration, result and failure. Platform telemetry provides standard signals; custom telemetry records business/technical milestones that are not otherwise observable. Never emit personal data, secrets or full payloads.
 
@@ -484,7 +488,89 @@ The [Plataan webinar listing](https://app-plataantv-web-prd-euw.azurewebsites.ne
 
 The June 10, 2025 study guide defines exam scope. Current Microsoft Learn paths, AL documentation and public course labs support implementation, but their platform/runtime detail may evolve beyond the older blueprint. Commercial sources are optional supplements and do not define objectives. All scenarios, labs and checks here are original; no dumps or recalled questions were used.
 
+## Key terms and phrases
+
+**Describe Business Central**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Extension](#architecture-and-extension-model) | An installable package of Business Central objects and code that adds or changes application behavior. |
+| [AL](#architecture-and-extension-model) | The Business Central application language used to define objects, business logic and extensions. |
+
+**Install, develop and deploy for Business Central**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Symbol](#configure-the-development-environment) | A compiled description of objects and members that a project can reference through its dependencies. |
+| [Application manifest](#configure-the-development-environment) | The extension metadata identifying the app, version, publisher, target and dependencies. |
+| [Launch configuration](#configure-the-development-environment) | The development settings selecting the target environment and debugging or publication behavior. |
+| [Dependency](#configure-the-development-environment) | A declared relationship on another application or module whose symbols an extension uses. |
+| [Sandbox](#create-debug-and-deploy-extensions) | A nonproduction Business Central environment for development, debugging and testing. |
+
+**Develop by using AL objects**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Table](#tables-enums-and-pages) | An AL object that defines how records are structured, stored and processed. |
+| [Page](#tables-enums-and-pages) | An AL object that presents data and actions through the Business Central user interface. |
+| [Table extension](#tables-enums-and-pages) | An AL object that adds supported fields, keys or triggers to an existing table. |
+| [Page extension](#tables-enums-and-pages) | An AL object that augments the layout, actions or behavior of an existing page. |
+| [Enum](#tables-enums-and-pages) | A named set of allowed values that can express a business category more explicitly than an arbitrary number. |
+| [Field trigger](#tables-enums-and-pages) | AL logic invoked at a defined point in a field operation, such as validation. |
+| [Report dataset](#reports) | The data items and columns supplied to a report layout. |
+| [Report layout](#reports) | The presentation definition controlling how report dataset values appear in the rendered output. |
+| [XMLport](#xmlports-and-queries) | An AL object for importing or exporting structured data according to a defined schema. |
+| [Query object](#xmlports-and-queries) | An AL object that selects and combines table data to return a shaped read-only result. |
+| [Codeunit](#codeunits-events-and-interfaces) | An AL object that organizes executable business logic into callable procedures or event handlers. |
+| [Event subscriber](#codeunits-events-and-interfaces) | A procedure that runs in response to a published event, allowing an extension to participate at a defined point. |
+| [Event publisher](#codeunits-events-and-interfaces) | An object or procedure that raises a defined event to which extension code can subscribe. |
+| [Interface](#codeunits-events-and-interfaces) | An AL contract specifying procedures that implementing codeunits must provide. |
+| [Integration event](#codeunits-events-and-interfaces) | A published application event intended as an extension point for subscribed business logic. |
+| [Permission set](#entitlements-permission-sets-and-queries) | A collection of object permissions that can be assigned to grant a user defined access. |
+| [Entitlement](#entitlements-permission-sets-and-queries) | An application permission boundary associated with a license or plan, checked alongside assigned permissions. |
+
+**Develop by using AL**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Role Center](#ui-experience-and-onboarding) | The role-oriented starting page that presents relevant activities, cues and navigation. |
+| [Record variable](#al-language-and-safe-data-behavior) | An AL variable representing a table record or filtered set for reading and changing data. |
+| [Filter](#al-language-and-safe-data-behavior) | A constraint restricting which records a variable or query will act on. |
+| [Transaction](#al-language-and-safe-data-behavior) | A group of database changes committed together unless an error or explicit boundary changes the outcome. |
+| [Record locking](#al-language-and-safe-data-behavior) | The mechanism that controls concurrent access to records during database operations, affecting contention and consistency. |
+
+**Work with development tools**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Test codeunit](#automated-and-semiautomated-testing) | An AL codeunit containing test methods that exercise application behavior and check expected outcomes. |
+| [Assertion](#automated-and-semiautomated-testing) | A test check that compares an actual result with an expected condition and fails when the condition is false. |
+| [Test isolation](#automated-and-semiautomated-testing) | Control of test state so one test's data and side effects do not invalidate another test. |
+| [Handler method](#automated-and-semiautomated-testing) | A test procedure that supplies or validates an expected interaction, such as a confirmation dialog. |
+| [Telemetry](#telemetry-and-performance) | Diagnostic events and measurements used to identify application errors, latency or usage patterns. |
+| [Correlation identifier](#telemetry-and-performance) | A value used to match related telemetry events during diagnosis of one execution path. |
+
+**Integrate Business Central with other applications**
+
+| Term or phrase | Meaning |
+|---|---|
+| [HTTP client](#call-rest-services-from-al) | The AL client facility used to issue requests to an external HTTP service and inspect its response. |
+| [API page](#implement-business-central-apis) | A versionable application interface that exposes selected Business Central data and operations through a web API. |
+| [API version](#implement-business-central-apis) | An explicit identifier allowing consumers to select a supported interface contract as implementations evolve. |
+| [Entity set name](#implement-business-central-apis) | The collection name an API consumer addresses when requesting records from a published API page. |
+| [Atomic batch](#api-compatibility-atomicity-and-read-consistency) | A group of supported API operations expected to commit together or roll back together within the configured transaction behavior. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Commit](#1-trace-what-an-error-can-still-leave-behind) | The transaction boundary that makes preceding database changes durable, affecting what can be undone after an error. |
+| [Idempotency key](#2-retry-an-external-effect-with-the-same-identity) | An identifier for one intended operation that lets a service recognize a retry and avoid applying the effect twice. |
+| [Join grain](#3-joining-at-the-wrong-grain-doubles-a-report) | The row level at which two datasets match, which determines whether a report join duplicates amounts. |
+
 ## Places to learn
+
+**Suggested practice.** Record the expected rows after a first installation, then identify the field changes that show the subsequent upgrade codeunit ran. About 35–60 minutes to inspect installation and upgrade codeunits and compare their effects in a prepared development sandbox (editorial estimate). [Lab 02 – Implement installation and upgrade code in an extension.](https://microsoftlearning.github.io/MB-820-Business-Central-Developer-Certification/Instructions/Labs/LAB_02_Implement_installation_and_upgrade_code_extension.html)
 
 This is not a complete list and is not meant to be consumed in full. Choose one primary route, build and upgrade one secure extension end to end, and add another resource only for a measured gap.
 

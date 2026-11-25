@@ -228,6 +228,79 @@ Use an authorized nonproduction multi-tenant lab with synthetic customer data.
 31. Formats, schemas, keys, transfer, deadlines, and cost can otherwise trap data or delay a safe exit.
 32. Any “real questions,” dumps, guaranteed matches, or paid exam-specific preparation claiming unpublished objectives.
 
+## Key terms and phrases
+These terms describe managed-service practice. Fortinet has yet to publish exam objectives for this credential.
+
+**Managed-service architecture foundation**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Managed security service provider (MSSP)](#define-the-service-before-selecting-tools) | An organization that operates agreed security services on behalf of customers. Its authority comes from each customer’s service agreement. |
+| [Service-level agreement (SLA)](#define-the-service-before-selecting-tools) | An agreement that defines a measurable service commitment, such as an incident acknowledgment time. |
+| [Administrative domain (ADOM)](#define-the-service-before-selecting-tools) | A management partition in products such as FortiManager or FortiAnalyzer that separates selected devices and associated configuration or analysis. |
+| [Data residency](#define-the-service-before-selecting-tools) | The geographic location in which data is stored or processed. Copies, support access and backups can affect the answer. |
+| [FortiAnalyzer](#define-the-service-before-selecting-tools) | A platform for collecting and analyzing supported Fortinet telemetry, including searching logs, generating reports and handling security events. |
+| [FortiManager](#define-the-service-before-selecting-tools) | A platform for centrally managing Fortinet device configurations and policy. A change staged in its database must reach the intended devices to affect traffic. |
+| [Log retention](#define-the-service-before-selecting-tools) | The period for which records remain available for an investigation or other defined purpose. Missing results outside that period cannot establish inactivity. |
+| [Security information and event management (SIEM)](#define-the-service-before-selecting-tools) | Collecting and correlating records from multiple systems to support detection, search, reporting and investigation. |
+| [Security orchestration, automation and response (SOAR)](#define-the-service-before-selecting-tools) | Coordinating security tools and investigation or response steps using workflows that can include automation, approvals and manual decisions. |
+| [Virtual domain (VDOM)](#define-the-service-before-selecting-tools) | A logical firewall instance on a FortiGate that can have separate routing, policy and administrative boundaries. |
+| [Tenant isolation](#design-tenant-isolation) | Separation of each customer’s identities, records, policies and actions so that one customer cannot access or affect another. |
+| [Detection rule](#design-tenant-isolation) | An expression of the observed conditions that should produce a detection. Its quality depends on source coverage and tested behavior. |
+| [Policy package](#design-tenant-isolation) | A managed set of firewall policy rules and associated objects assigned to installation targets. Editing and installing are separate operations. |
+| [Tenant](#design-tenant-isolation) | An administrative or customer boundary in a shared service. Data, identities, configurations and actions must stay within the intended tenant. |
+
+**Identity, remote administration, and secrets**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Privileged access](#2-identity-remote-administration-and-secrets) | Permission to administer sensitive systems or change security controls. An operator needs authorization for the particular customer and task. |
+| [Alert](#2-identity-remote-administration-and-secrets) | A notification that an observed condition met a detection criterion. An analyst needs context before treating it as an incident. |
+| [Federation](#2-identity-remote-administration-and-secrets) | An arrangement that lets one security domain rely on identity information issued by another, under agreed trust and validation rules. |
+| [Least privilege](#2-identity-remote-administration-and-secrets) | Giving an identity only the permissions needed for its task, for as long as it needs them. |
+| [Multifactor authentication (MFA)](#2-identity-remote-administration-and-secrets) | Authentication using factors from two or more categories. A password and a second password both use the same knowledge factor. |
+| [Rate limiting](#2-identity-remote-administration-and-secrets) | Restricting the number or rate of operations in a defined interval to protect capacity. A limit applied per identity behaves differently from one applied per IP address. |
+| [Service account](#2-identity-remote-administration-and-secrets) | A nonhuman identity used by software or automation. Scope, credential lifecycle and ownership govern what happens when it is compromised or retired. |
+
+**Onboarding, change, and configuration governance**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Authentication](#onboard-with-a-measurable-contract) | The check that establishes who a user or device is. Authorization determines what that identity may do next. |
+| [Authorization](#onboard-with-a-measurable-contract) | Determining whether a given identity may perform a specific action on the particular resource requested. |
+| [Encryption](#onboard-with-a-measurable-contract) | A reversible transformation that protects readable data using a key. Someone with the appropriate key can recover the original. |
+| [Schema](#onboard-with-a-measurable-contract) | A definition of expected data structure, field types and constraints. A syntactically valid payload may still fail schema or business validation. |
+| [Configuration drift](#govern-centralized-changes) | A difference between a managed system’s actual settings and its approved configuration. |
+| [Rollback](#govern-centralized-changes) | Returning a change to a known acceptable state when results do not meet defined conditions. A valid rollback also accounts for data changed in the meantime. |
+
+**Telemetry, detection, incident, and automation operations**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Telemetry](#build-trustworthy-telemetry) | Logs, events and measurements supplied by managed systems. Customer attribution and collection health determine whether the records are usable. |
+| [Network address translation (NAT)](#build-trustworthy-telemetry) | Rewriting source or destination addressing as traffic crosses a boundary. The translation and the permission to pass traffic are distinct decisions. |
+| [Normalization](#build-trustworthy-telemetry) | Converting fields from different sources to a common representation so that the records can be compared. |
+| [Parsing](#build-trustworthy-telemetry) | Breaking a raw log message into named fields, such as source address or action. |
+| [Incident](#operate-detections-and-incidents) | A case representing a security event or set of related events requiring coordinated investigation and response. |
+| [Metrics](#operate-detections-and-incidents) | Numerical time series used to quantify behavior such as latency, error rate or capacity. Aggregation and labels determine what the values represent. |
+| [Severity](#operate-detections-and-incidents) | A rating of expected or observed impact. It differs from confidence, which expresses how strongly the evidence supports the assessment. |
+| [Approval gate](#automate-safely) | A required decision before an automated action may proceed, such as isolating a customer device. |
+| [Playbook](#automate-safely) | A workflow of decisions and tasks for a recurring case. It can combine automated enrichment with human authorization for disruptive actions. |
+| [Containment](#automate-safely) | Limiting the scope or ongoing effects of an incident, such as isolating the affected device under an approved response plan. |
+| [Enrichment](#automate-safely) | Adding context, such as asset criticality or previous sightings, to an indicator or event so an analyst can interpret it. |
+| [Idempotence](#automate-safely) | Making an operation safe to repeat without accumulating unintended effects. A retried request to create one case should still yield one case. |
+| [Retry](#automate-safely) | Repeating an operation after a transient failure. When the first attempt’s outcome is unknown, idempotence matters before retrying a write. |
+
+**Resilience, compliance support, and customer lifecycle**
+
+| Term or phrase | Meaning |
+|---|---|
+| [High availability (HA)](#engineer-platform-resilience) | A deployment that lets a peer take over when a device fails. The peer still needs working network paths and a valid configuration. |
+| [Recovery point objective (RPO)](#engineer-platform-resilience) | The maximum targeted interval of lost data. Recovering to 09:45 after a 10:00 failure represents a 15-minute recovery point gap. |
+| [Recovery time objective (RTO)](#engineer-platform-resilience) | The target elapsed time to restore a usable service after disruption. A two-hour RTO includes getting the dependencies and business workflow working. |
+| [Independence](#supportnot-declarecustomer-compliance) | Freedom from conflicting duties or influence that could impair judgment, such as auditing a control one personally operates. |
+| [Offboarding](#offboard-completely) | Ending a customer’s service by revoking access, resolving data retention or transfer and confirming that collection and automation have stopped. |
+
 ## Places to learn
 
 This is a selective foundation, not a complete list, not a prescription to consume everything, and not an exam plan until Fortinet publishes a blueprint. Choose the sources that close operational gaps. Times are planning estimates unless publisher-listed.

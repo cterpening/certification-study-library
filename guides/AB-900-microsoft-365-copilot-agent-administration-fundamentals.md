@@ -13,6 +13,8 @@ upcoming_change_checked: 2026-10-28
 
 # AB-900 Microsoft 365 Copilot and Agent Administration Fundamentals Study Guide
 
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-01.md#ab-900)
+
 
 > **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 refresh maps all 53 detailed objectives in the October 14, 2026 English outline. See the [current deep-review evidence](../docs/research/2026-10-28-microsoft-wave1-deep-review.md#ab-900) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-900-coverage-record). Microsoft's [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-900) is authoritative. Live product labs and human review remain pending; public-source review does not guarantee correctness.
 
@@ -338,6 +340,8 @@ The supporting [Microsoft 365 Power Platform environment](https://learn.microsof
 
 ### Agent lifecycle
 
+**Practice check.** Sharing an Agent Builder agent grants selected colleagues access and owners can maintain it. For an organization-wide rollout or delivery across other channels, evaluate the Copilot Studio publishing path and the administrator's controls. [Share and manage agents built in Agent Builder | Microsoft Learn](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-builder-share-manage-agents)
+
 Agents may be supplied by Microsoft, built from SharePoint, created in Microsoft 365 Copilot or Copilot Studio, or provided by third parties. Agent creation defines purpose, instructions, knowledge, tools, and user experience under the selected authoring surface; agent administration decides whether and how that artifact enters the tenant and who can use it.
 
 For a fundamentals-level creation path, [Agent Builder in Microsoft 365 Copilot](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-builder-build-agents) provides a no-code route to a declarative agent:
@@ -550,7 +554,77 @@ Use synthetic actors and a read-only/tabletop tenant map. Record a domain-verifi
 
 ---
 
+## Key terms and phrases
+
+**Microsoft 365 administration foundations**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Tenant](#tenant-subscriptions-users-and-groups) | An organization's Microsoft 365 and identity boundary for managing accounts, services and policies. |
+| [Subscription](#tenant-subscriptions-users-and-groups) | A commercial entitlement for a service or product, managed separately from who receives an assigned license. |
+| [Security group](#tenant-subscriptions-users-and-groups) | An Entra group used to grant access or target policies for a set of members. |
+| [Microsoft 365 group](#tenant-subscriptions-users-and-groups) | A group identity and membership that underpins shared collaboration resources such as a team or group mailbox. |
+| [Exchange Online](#exchange-online-sharepoint-and-teams) | The Microsoft 365 service that hosts organizational mailboxes and mail flow. |
+| [SharePoint site](#exchange-online-sharepoint-and-teams) | A collaboration boundary for pages, lists and document libraries with configurable access. |
+| [Teams channel](#exchange-online-sharepoint-and-teams) | A space inside a team for conversations and related files around a topic or working group. |
+| [OneDrive](#follow-a-collaboration-object) | A user's organizational file storage and sharing location within Microsoft 365. |
+
+**Identity and access for Microsoft 365**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Zero Trust](#zero-trust-and-authorization) | An approach that explicitly verifies access, limits privileges and plans for the possibility that a component is compromised. |
+| [Authentication](#zero-trust-and-authorization) | Establishing who or what is making a request, such as verifying a user's identity at sign-in. |
+| [Authorization](#zero-trust-and-authorization) | Deciding which actions an authenticated identity may perform on a resource. |
+| [Least privilege](#zero-trust-and-authorization) | Giving each agent identity only the rights needed for its assigned work. |
+| [Sign-in log](#interpret-identity-posture-and-choose-the-right-activity-log) | A record of an authentication attempt, its context and the result of applicable access checks. |
+| [Directory audit log](#interpret-identity-posture-and-choose-the-right-activity-log) | A record of changes to directory objects or configuration that identifies the actor and target. |
+| [App registration](#app-registrations-enterprise-applications-and-consent) | The application definition in Microsoft Entra ID that describes an app and how it can request authentication. |
+| [Enterprise application](#app-registrations-enterprise-applications-and-consent) | The local service principal representing an application in a particular tenant, where assignments and consent can be managed. |
+| [Consent](#app-registrations-enterprise-applications-and-consent) | Authorization for an application to use specified permissions under the relevant user or administrator authority. |
+
+**Threat protection in Microsoft 365**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Extended detection and response (XDR)](#3-threat-protection-in-microsoft-365) | Correlating detections and response actions across security products, such as endpoint, identity and email protection. |
+| [Incident](#3-threat-protection-in-microsoft-365) | A case that groups related alerts and entities so an analyst can investigate and coordinate a response. |
+
+**Microsoft Purview data protection and governance**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Sensitivity label](#discover-and-classify-data) | A classification applied to content that can also carry protection settings such as encryption. |
+| [Sensitive information type](#discover-and-classify-data) | A classifier that uses evidence such as patterns, keywords and proximity to identify a particular type of sensitive data. |
+| [Data loss prevention (DLP)](#data-loss-prevention) | Policies that recognize sensitive information and govern actions such as sharing or transferring it. |
+| [Policy match](#triage-a-dlp-alert) | An event where content and activity satisfy a configured DLP rule's conditions. |
+| [Retention](#retention-records-and-investigations) | Rules governing how long content is kept and what happens when the retention period ends. |
+| [Retention label](#retention-records-and-investigations) | A retention setting applied to an item, allowing its lifecycle and, where configured, record status to be managed individually. |
+| [Retention policy](#retention-records-and-investigations) | Rules applied across a location or set of locations to retain or delete content on a defined timeline. |
+| [eDiscovery](#retention-records-and-investigations) | A process for finding, preserving and reviewing information needed for a legal or investigative matter. |
+| [Data Security Posture Management for AI](#data-security-posture-management-for-ai) | A Purview capability used to investigate how AI use interacts with sensitive data and where controls may need improvement. |
+
+**Microsoft 365 Copilot architecture and governance**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Grounding](#grounding-and-data-access) | Using relevant information the user is permitted to access as evidence for a Copilot response. |
+| [Security trimming](#grounding-and-data-access) | Restricting retrieved results to material the requesting identity is allowed to access. |
+| [Accountability](#responsible-ai-and-security) | Assigning people responsibility for design decisions, oversight and the consequences of system use. |
+| [Oversharing](#oversharing-controls) | Granting broader access to information than its owners intend, allowing already-authorized users or their tools to discover it. |
+
+**Copilot and agent administration**
+
+| Term or phrase | Meaning |
+|---|---|
+| [License assignment](#licensing-and-consumption) | Granting a user an eligible product entitlement, subject to other access and service controls. |
+| [Agent owner](#agent-lifecycle) | The person or team responsible for maintaining an agent's configuration, access and operational decisions. |
+| [Agent tool](#agent-tools-and-actions) | An operation exposed to an agent, such as retrieving a record or proposing a change, with its own authorization requirements. |
+| [Model Context Protocol (MCP)](#agent-tools-and-actions) | A protocol through which a client can discover and use tools or context supplied by a server. |
+
 ## Places to learn
+
+**Suggested practice.** Use the paired administration modules to separate a tenant-level Copilot setting from an action governing a specific agent. About 20–40 minutes to read the selected sections and produce the suggested comparison or checklist (editorial estimate; full path duration was not verified). [Explore Microsoft 365 Copilot and agent administration](https://learn.microsoft.com/en-us/training/paths/explore-microsoft-365-copilot-agent-administration/)
 
 This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Pick the formats that fit you. Times are approximate consumption time at normal speed; labs, note-taking, review, and independent practice add time.
 

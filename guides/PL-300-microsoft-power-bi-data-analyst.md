@@ -13,7 +13,9 @@ upcoming_change_checked: 2026-10-28
 
 # PL-300 Microsoft Power BI Data Analyst Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-04.md#pl-300) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#pl-300-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-05.md#pl-300)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-04.md#pl-300) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#pl-300-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300) is authoritative.
 
 **Current baseline:** Skills measured as of April 20, 2026<br>
 **Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
@@ -39,7 +41,7 @@ Microsoft's [AI at Work roadmap transition](https://www.microsoft.com/en-us/dyna
 
 Independent Power BI books, courses, blogs, and videos in Places to learn remain useful for DAX and modeling explanations. Validate screenshots, licensing, Copilot features, and service limits; durable star-schema, filter-context, reconciliation, accessibility, and least-privilege reasoning should survive those changes.
 
-The [latest published Power BI feature summary](https://learn.microsoft.com/en-us/power-bi/fundamentals/whats-new) observed in this review is August 2026. It includes Fluent 2 visual defaults/Theme pane GA and new refresh controls. It also announces that, starting in October, Desktop versions from March 2026 or earlier lose the old OneDrive/SharePoint save/share experience. Update and test that route; this notice is not retirement of local PBIX authoring.
+The [November 2026 Power BI feature summary](https://learn.microsoft.com/en-us/power-bi/fundamentals/whats-new) lists OneDrive and SharePoint integration in Power BI Desktop as generally available. Check the Desktop build and test opening, saving and sharing through the location your team uses. Local PBIX authoring is a separate workflow.
 
 **Q&A timeline correction:** Microsoft's [September retirement update](https://community.fabric.microsoft.com/blog/fbc_pbiupdatesblog/power-bi-qa-retirement-reminder-february-2027-timeline-update/5365841) moves retirement to **February 2027**. The [current Q&A limitations](https://learn.microsoft.com/en-us/power-bi/natural-language/q-and-a-limitations) agree; the older [Q&A visual page](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-q-and-a) still says December 2026. Inventory old labs and reports, and test alternatives. Copilot requires supported paid capacity and has no announced direct replacement for embedded Q&A PaaS or sovereign-cloud availability. The April blueprint does not name Q&A configuration as a subobjective.
 
@@ -127,6 +129,8 @@ A role-playing dimension supplies multiple roles such as Order Date, Ship Date, 
 [RLS propagates only through active relationships](https://learn.microsoft.com/en-us/power-bi/guidance/relationships-active-inactive); invoking an inactive relationship in a calculation does not turn on an RLS path through it. When both date roles need secured filtering, evaluate separate active role-playing dimensions. A correct Ship Date total alone is not a security test.
 
 ### Put each calculation in the right layer
+
+**Practice check.** For a running total that belongs to one chart, consider a visual calculation over that visual's aggregated data. For a calculation that multiple visuals must reuse with their own filter contexts, define a measure in the semantic model. [Visual calculations overview - Power BI | Microsoft Learn](https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-visual-calculations-overview) · [Use Calculation Options in Power BI Desktop - Power BI | Microsoft Learn](https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-calculations-options)
 
 [Power BI calculation options](https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-calculations-options) differ in timing, storage, context, and reuse:
 
@@ -401,7 +405,87 @@ Use an appropriate test workspace to compare a visual, export, dashboard alert a
 - I can publish and distribute through workspaces/apps/items with correct gateway, refresh, endorsement, permissions, labels, and RLS.
 - I can prove source reconciliation, totals, refresh, performance, and allowed/denied user behavior before release.
 
+## Key terms and phrases
+
+**Prepare the data**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Import mode](#requirements-sources-and-storage-mode) | Loading a copy of source data into the model so report queries run against stored model data. |
+| [DirectQuery](#requirements-sources-and-storage-mode) | A storage mode in which report interactions send queries through to the underlying source. |
+| [Direct Lake](#requirements-sources-and-storage-mode) | A semantic-model storage mode that reads supported table data in OneLake without a conventional import copy. |
+| [Power Query](#profile-and-clean-before-transforming) | The data preparation engine used to connect to sources, clean records and shape tables before modeling. |
+| [Column profile](#profile-and-clean-before-transforming) | A summary of a column's values, errors and distributions used to identify data quality problems. |
+| [Data type](#profile-and-clean-before-transforming) | The interpretation assigned to a field, determining valid transformations and how the model aggregates or sorts it. |
+| [Null](#profile-and-clean-before-transforming) | An absent or unknown value requiring an explicit handling decision before calculations or joins. |
+| [Column distribution](#profile-and-clean-before-transforming) | The counts and frequency patterns of values in a column, useful for finding unusual categories or repeated keys. |
+| [Grain](#transform-and-load-at-an-explicit-grain) | The business meaning of a single row, which controls whether joins and aggregations produce valid totals. |
+| [Query folding](#transform-and-load-at-an-explicit-grain) | Power Query's ability to translate supported transformation steps into operations executed by the source. |
+| [Merge query](#transform-and-load-at-an-explicit-grain) | A transformation that joins rows from two queries based on selected key columns. |
+| [Append query](#transform-and-load-at-an-explicit-grain) | A transformation that stacks the rows of compatible queries into one result. |
+| [Unpivot](#transform-and-load-at-an-explicit-grain) | Reshape columns into attribute-value rows, such as turning monthly columns into a month field. |
+| [Applied step](#transform-and-load-at-an-explicit-grain) | One named operation in a Power Query transformation sequence that can be inspected and changed independently. |
+
+**Model the data**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Star schema](#build-a-semantic-model-that-explains-itself) | A model with fact tables for events or measurements connected to dimension tables used for filtering and grouping. |
+| [Fact table](#build-a-semantic-model-that-explains-itself) | A table recording measurements or events at a declared grain, linked to descriptive dimensions. |
+| [Dimension table](#build-a-semantic-model-that-explains-itself) | A table describing business entities, such as customers or dates, used for filtering and grouping facts. |
+| [Cardinality](#build-a-semantic-model-that-explains-itself) | The relationship multiplicity between model columns, such as one customer record to many sales records. |
+| [Cross-filter direction](#build-a-semantic-model-that-explains-itself) | The direction in which a relationship allows filters to propagate between tables. |
+| [Date table](#build-a-semantic-model-that-explains-itself) | A table of dates and calendar attributes related to facts for consistent time calculations and reporting. |
+| [Active relationship](#build-a-semantic-model-that-explains-itself) | The relationship Power BI uses by default to propagate filters between its tables. |
+| [Surrogate key](#build-a-semantic-model-that-explains-itself) | A generated identifier used to distinguish dimension rows independently of a changing business identifier. |
+| [Calculated column (Import model)](#put-each-calculation-in-the-right-layer) | A row-by-row value computed at refresh and stored in the model. For example, quantity times unit price gives each order line an amount that other calculations can aggregate. |
+| [Measure](#put-each-calculation-in-the-right-layer) | A Data Analysis Expressions (DAX) calculation evaluated in the current filter context. The same total-sales measure can show one region's sales on a filtered card and all regions' sales on another. |
+| [DAX](#put-each-calculation-in-the-right-layer) | Data Analysis Expressions, the formula language used for semantic-model calculations. |
+| [Row context](#put-each-calculation-in-the-right-layer) | The current model row used while evaluating an expression, such as a calculated column or iterator. |
+| [Filter context](#put-each-calculation-in-the-right-layer) | The filters active for a DAX calculation, coming from report selections, model relationships or expressions. |
+| [CALCULATE](#put-each-calculation-in-the-right-layer) | A DAX function that evaluates an expression in a modified filter context. |
+| [Calculated table](#worked-creation-check-a-column-and-a-table) | A model table defined by a DAX expression and evaluated as part of model processing. |
+| [Quick measure](#worked-calculation-build-explicit-measure-quick-measure-and-group) | A measure produced from a supported calculation template that can be inspected and edited as DAX. |
+| [Calculation group](#worked-calculation-build-explicit-measure-quick-measure-and-group) | A set of reusable calculation items that can apply common transformations to selected measures. |
+| [Performance Analyzer](#optimize-from-evidence) | A report tool for recording visual activity and timings to locate slow interactions. |
+| [High cardinality](#optimize-from-evidence) | A column's property of having many distinct values, often increasing the storage needed for an imported model. |
+
+**Visualize and analyze the data**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Slicer](#select-and-configure-reports-for-a-decision) | A visual control allowing readers to filter report data by selecting one or more values. |
+| [Visual interaction](#select-and-configure-reports-for-a-decision) | The filtering or highlighting effect that selecting one report visual has on another. |
+| [Drilldown](#select-and-configure-reports-for-a-decision) | Moving from a higher level to a lower level within a hierarchy on a visual, such as year to month. |
+| [Bookmark](#usability-storytelling-and-accessibility) | A saved report state that can restore selected filters, visibility settings or navigation context. |
+| [Alt text](#usability-storytelling-and-accessibility) | A description of a visual's meaning for users who cannot see the chart. |
+| [Tab order](#usability-storytelling-and-accessibility) | The sequence report elements receive keyboard focus, which affects accessibility independently of their visible positions. |
+| [Drillthrough](#worked-navigation-product-details-and-tooltip-context) | Navigation to a detail page carrying the selected value as a filter. |
+| [Report page tooltip](#worked-navigation-product-details-and-tooltip-context) | A report page displayed on hover that shows additional visuals in the data point's context. |
+| [Trend](#analyze-patterns-without-overclaiming) | A pattern over time interpreted in light of scale, comparison period and the population included. |
+| [Outlier](#analyze-patterns-without-overclaiming) | An observation far from the expected pattern that warrants checking its data and business context. |
+
+**Manage and secure Power BI**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Workspace](#workspaces-assets-apps-and-distribution) | The collaboration container in the Power BI service where content is created, organized and managed. |
+| [App](#workspaces-assets-apps-and-distribution) | A packaged collection of Power BI content distributed to one or more audiences. |
+| [Dashboard](#workspaces-assets-apps-and-distribution) | A single service canvas displaying pinned tiles that can bring together important indicators. |
+| [Distribution audience](#workspaces-assets-apps-and-distribution) | A group of app consumers given access to a selected collection of published content. |
+| [Gateway](#gateways-and-refresh) | A service that lets the Power BI service reach data sources it cannot access directly. |
+| [Refresh](#gateways-and-refresh) | The process that updates the model's imported data from its sources. |
+| [Scheduled refresh](#gateways-and-refresh) | A configured recurring attempt to update the model's imported data from its sources. |
+| [Incremental refresh](#gateways-and-refresh) | A model refresh strategy that processes selected time partitions instead of reloading all historical data. |
+| [Row-level security (RLS)](#roles-item-permissions-semantic-model-access-and-rls) | Model rules that limit the rows a reader can see according to their role or identity. |
+| [Build permission](#roles-item-permissions-semantic-model-access-and-rls) | Permission to create new content using a shared semantic model under the applicable access and security rules. |
+| [Workspace role](#roles-item-permissions-semantic-model-access-and-rls) | The collection of actions a user can perform within a workspace, such as viewing or editing content. |
+| [Dynamic RLS](#roles-item-permissions-semantic-model-access-and-rls) | Row-level security in which allowed rows depend on the signed-in user's identity or a mapping table. |
+| [Viewer role](#roles-item-permissions-semantic-model-access-and-rls) | A workspace role designed for content consumption, with model permissions and applicable row security governing the data returned. |
+
 ## Places to learn
+
+**Suggested practice.** Build a small matrix comparison on paper, then predict how changing the axis or fiscal-year reset affects a running total. About 30 minutes for the exercise (publisher estimate); provisioning or setup can add time. [Create visual calculations in Power BI Desktop](https://microsoftlearning.github.io/PL-300-Microsoft-Power-BI-Data-Analyst/Instructions/Labs/07-create-visual-calculations.html)
 
 This is a curated starting point, **not a complete list**, and it is not meant to be consumed in full. Choose one primary course or path, build an end-to-end report, and add only resources that close measured gaps. Reconcile every resource with the April 20, 2026 blueprint, especially Direct Lake, calculation groups, DAX query view, Copilot, visual calculations, current usability controls, and workspace/asset changes.
 

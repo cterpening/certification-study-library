@@ -480,6 +480,84 @@ These are independent prompts, not recalled or reconstructed exam items.
 
 ---
 
+## Key terms and phrases
+
+**Data Ingestion and Transformation**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Change data capture (CDC)](#choose-the-ingestion-contract) | Recording inserts, updates and deletes from a source so a downstream system can apply changes incrementally. |
+| [Partition key](#choose-the-ingestion-contract) | The field or expression used to distribute records into partitions. A frequently repeated value may concentrate work on one partition. |
+| [Amazon Kinesis Data Streams](#choose-the-ingestion-contract) | A managed record stream that decouples producers from consumers. Shards and partition keys influence throughput and ordering. |
+| [Amazon Data Firehose](#choose-the-ingestion-contract) | A managed delivery service that buffers and writes streaming records to supported destinations. |
+| [Checkpoint](#choose-the-ingestion-contract) | Saved progress or state from which processing can resume after a failure. A replay design must also control duplicate downstream effects. |
+| [Deduplication](#choose-the-ingestion-contract) | Identifying repeated representations of one logical event and retaining or applying it according to an explicit identity rule. |
+| [Idempotent write](#transform-at-the-appropriate-scale) | A write that can be repeated for the same logical input without applying the change twice. It makes retries safer after an uncertain result. |
+| [Columnar format](#transform-at-the-appropriate-scale) | A format that stores values by column so an analytical query can read only the fields it needs. Parquet is one example. |
+| [Extract, transform, load (ETL)](#transform-at-the-appropriate-scale) | Reading data from sources, transforming it and then loading results into the destination. In ELT, the main transformations happen after loading. |
+| [Data skew](#transform-at-the-appropriate-scale) | Uneven distribution of data or work. One high-volume key can leave a worker overloaded while others finish early. |
+| [Amazon ECS](#transform-at-the-appropriate-scale) | An orchestrator that schedules and maintains container tasks from task definitions. |
+| [Amazon EKS](#transform-at-the-appropriate-scale) | Managed Kubernetes on AWS. A team deploys workloads through the Kubernetes API and chooses how their compute capacity is provided. |
+| [AWS Step Functions](#orchestrate-durable-workflows) | Coordinates a sequence of application steps as a state machine, with explicit choices, retries and failure paths. |
+| [Amazon EventBridge](#orchestrate-durable-workflows) | Routes events to targets according to rules, connecting services without requiring each producer to know each consumer. |
+| [AWS Lambda](#connections-state-and-programming-choices) | Runs application code in response to an invocation or event. The function owner selects its code, permissions and resource configuration. |
+| [Amazon EFS](#connections-state-and-programming-choices) | A managed network file system that multiple compatible clients can mount to share files and directories. |
+| [Infrastructure as code (IaC)](#apply-engineering-practices) | A versioned description of infrastructure that tools can build or update. Reviewing the proposed changes helps catch unintended replacements. |
+| [AWS CloudFormation](#apply-engineering-practices) | Creates or updates a group of resources from a template so infrastructure changes can be reviewed and repeated. |
+| [Data quality rule](#apply-engineering-practices) | A test of an explicit data expectation, for example that daily order IDs are unique or that each record has a valid timestamp. |
+| [AWS Cloud Development Kit (CDK)](#apply-engineering-practices) | Defines infrastructure with programming-language constructs that synthesize CloudFormation templates. |
+
+**Data Store Management**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Amazon Redshift](#select-from-the-access-pattern) | A managed analytical database designed to aggregate and query large datasets. Choose it around reporting and warehouse access patterns. |
+| [Amazon S3](#select-from-the-access-pattern) | Object storage organized into buckets and keys. Retrieving a named object and mounting a block device are different access patterns. |
+| [Partitioning](#select-from-the-access-pattern) | Dividing a dataset into addressable subsets. Filtering on the partition field can let an engine skip unrelated data. |
+| [Amazon DynamoDB](#select-from-the-access-pattern) | A managed key-value and document database. Choose keys around the reads and writes an application must perform. |
+| [Amazon Athena](#select-from-the-access-pattern) | A serverless query service often used to run SQL over data in S3. File format and partition selection affect how much data it reads. |
+| [Failover](#select-from-the-access-pattern) | Moving service to an alternative when the current serving location or component becomes unavailable. |
+| [Amazon RDS](#select-from-the-access-pattern) | Runs a managed relational database engine. Schema design, queries and application permissions remain customer decisions. |
+| [DynamoDB time to live (TTL)](#select-from-the-access-pattern) | A per-item expiry time stored as a Unix timestamp in seconds. Reaching that time makes the item eligible for asynchronous deletion, so a query may still return an expired item unless it filters it out. |
+| [Sort key](#select-from-the-access-pattern) | The second part of a composite DynamoDB primary key. It distinguishes and orders items that share a partition key. |
+| [Partition pruning](#design-lake-data-intentionally) | Skipping data partitions that cannot match a query's filters. A date predicate can spare the engine from reading other days. |
+| [Data catalog](#catalog-technical-and-business-meaning) | An inventory describing datasets, their locations, schemas and partitions so people and query engines can find and interpret them. |
+| [AWS Glue](#catalog-technical-and-business-meaning) | A data integration service whose catalog records table metadata and whose jobs can transform data for downstream use. |
+| [Schema evolution](#evolve-schemas-and-models-safely) | A change to the structure of a dataset over time. Compatibility determines whether existing writers and readers still agree. |
+| [Slowly changing dimension](#evolve-schemas-and-models-safely) | A method for handling changes to descriptive attributes. A type 2 design adds a dated version so past facts can retain their historical meaning. |
+| [S3 lifecycle policy](#manage-lifecycle-and-recovery) | Rules that transition eligible objects to other storage classes or expire them according to criteria such as age or prefix. |
+| [S3 versioning](#manage-lifecycle-and-recovery) | Retains distinct versions of objects in a bucket. A recovery plan must also account for retention and access to older versions. |
+
+**Data Operations and Support**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Freshness](#operate-outcomes-not-job-status) | How up to date the published data is relative to its expected arrival or event time. A pipeline can finish successfully with stale inputs. |
+| [Watermark](#operate-outcomes-not-job-status) | An estimate of progress through event time used to decide when windowed results can be emitted or updated. |
+| [Service quota](#operate-outcomes-not-job-status) | A limit on resource use or request volume within a specified scope. Reaching it can block work even when funds are available. |
+| [Amazon SNS](#operate-outcomes-not-job-status) | A publish-subscribe notification service. Publishing once to a topic can deliver the message to multiple subscribed destinations. |
+| [Completeness](#build-quality-into-the-pipeline) | The degree to which expected records or values are present. Comparing deliveries with a manifest can reveal a missing input. |
+
+**Data Security and Governance**
+
+| Term or phrase | Meaning |
+|---|---|
+| [AWS Lake Formation](#separate-identity-permission-and-path) | Helps govern access to cataloged lake data. Data access must also be compatible with the underlying identity and storage controls. |
+| [AWS Key Management Service (KMS)](#separate-identity-permission-and-path) | Manages cryptographic keys and controls who may use them for operations such as decrypting a protected data key. |
+| [Temporary credentials](#separate-identity-permission-and-path) | Time-limited access keys and a session token. A workload can obtain them by assuming a role. |
+| [Identity policy](#separate-identity-permission-and-path) | An IAM policy attached to an identity that describes which actions it can take on which resources, subject to other applicable controls. |
+| [AWS Secrets Manager](#separate-identity-permission-and-path) | Stores sensitive values for authorized retrieval and supports rotation workflows, such as replacing a database password. |
+| [VPC endpoint](#separate-identity-permission-and-path) | A connection from a VPC to a supported service using private connectivity. Access policies and network configuration still apply. |
+| [Amazon VPC](#separate-identity-permission-and-path) | A logically isolated network in an AWS Region, divided into subnets with routes and security controls that shape connectivity. |
+| [Resource policy](#protect-data-and-keys) | A policy attached to a resource, such as an S3 bucket, specifying which principals can perform particular actions on it. |
+| [Encryption in transit](#protect-data-and-keys) | Protecting information while it travels between endpoints, typically through an authenticated encrypted connection. |
+| [Encryption at rest](#protect-data-and-keys) | Protecting stored data with encryption. Who can use the decryption key is part of the access decision. |
+| [Amazon Macie](#protect-data-and-keys) | Discovers and reports sensitive data in S3, helping owners investigate where protected information is stored. |
+| [AWS CloudTrail](#produce-audit-evidence) | Records supported AWS API activity so an investigator can trace who called an operation, when and against which resource. |
+| [Amazon CloudWatch](#produce-audit-evidence) | Collects operational measurements and logs. An operator can graph request latency or alarm on error rates. |
+| [AWS Config](#produce-audit-evidence) | Records supported resource configurations and can evaluate them against rules, such as whether a required setting is present. |
+| [Data lineage](#govern-sharing-privacy-and-sovereignty) | A record of where data originated and which transformations produced an output. It helps identify downstream consumers affected by a change. |
+
 ## Places to learn
 
 This is **not a complete list** and is not meant to be consumed in full. Pick one structured route, use official documentation for gaps, perform the labs, and add one legitimate practice source. Time estimates combine provider-published runtime where available with clearly labeled library estimates for practice and review. Access, price, duration, and freshness are **VERIFY CURRENT**.

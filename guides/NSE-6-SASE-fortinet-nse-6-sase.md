@@ -217,6 +217,84 @@ Use synthetic content and owned or explicitly authorized nonproduction endpoints
 31. Match actual job responsibilities, lab/tenant access, current version, strongest experience, and intended advanced path.
 32. Dumps, recalled/leaked/“real” questions, guaranteed matches, and any unauthorized exam content.
 
+## Key terms and phrases
+These terms span several electives. Use the linked sections to find the ones that apply to your chosen exam.
+
+**Credential and shared endpoint-data foundation**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Bandwidth](#1-credential-and-shared-endpoint-data-foundation) | The nominal data-carrying capacity of a link, usually expressed in bits per second. It does not by itself establish delay or delivered throughput. |
+| [Rollback](#1-credential-and-shared-endpoint-data-foundation) | Returning a change to a known acceptable state when results do not meet defined conditions. A valid rollback also accounts for data changed in the meantime. |
+
+**FortiClient EMS Administrator lane**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Endpoint Management Server (EMS)](#architecture-and-deployment) | The FortiClient management service that enrolls endpoints, assigns configuration and collects endpoint status. |
+| [FortiClient](#architecture-and-deployment) | Endpoint software used for supported connectivity and security functions, with effective capabilities determined by the deployment and assigned configuration. |
+| [FortiGate](#architecture-and-deployment) | The Fortinet firewall platform that applies routing, access policy and security inspection to traffic traversing its interfaces. |
+| [Fortinet Security Fabric](#architecture-and-deployment) | Fortinet’s framework for integrating products so they can exchange context and coordinate visibility or policy-driven actions. |
+| [Service account](#architecture-and-deployment) | A nonhuman identity used by software or automation. Scope, credential lifecycle and ownership govern what happens when it is compromised or retired. |
+| [Telemetry](#architecture-and-deployment) | Logs, events and measurements supplied by managed systems. Customer attribution and collection health determine whether the records are usable. |
+| [FortiClient EMS](#architecture-and-deployment) | The FortiClient management service used to enroll endpoints, assign profiles and publish device status to participating controls. |
+| [Endpoint profile](#provisioning-profiles-and-endpoint-security) | A collection of settings assigned to a group of devices. Group membership and policy precedence affect which settings take effect. |
+| [Hash](#provisioning-profiles-and-endpoint-security) | A fixed-length value derived from data. Comparing hashes can reveal a change without having to decrypt anything. |
+| [Offboarding](#provisioning-profiles-and-endpoint-security) | Ending a customer’s service by revoking access, resolving data retention or transfer and confirming that collection and automation have stopped. |
+| [Virtual private network (VPN)](#provisioning-profiles-and-endpoint-security) | A protected logical connection over a shared network. Its permitted destinations and traffic depend on routes and access policy. |
+| [Vulnerability](#provisioning-profiles-and-endpoint-security) | A weakness that can expose an asset to harm. Risk also depends on who or what could act on it and the consequences. |
+| [Posture tag](#ztna-quarantine-and-troubleshooting) | A label derived from device conditions that an access policy can evaluate, such as whether a required endpoint control is active. |
+| [Quarantine](#ztna-quarantine-and-troubleshooting) | A containment action that restricts a device’s connectivity while responders investigate or remediate it. |
+| [Access proxy](#ztna-quarantine-and-troubleshooting) | A component that checks the access request and forwards authorized traffic to its private application. |
+| [Containment](#ztna-quarantine-and-troubleshooting) | Limiting the scope or ongoing effects of an incident, such as isolating the affected device under an approved response plan. |
+| [Device posture](#ztna-quarantine-and-troubleshooting) | Evidence of the current condition of an endpoint, such as running protection software or encryption status, used as input to an access decision. |
+| [User authentication](#ztna-quarantine-and-troubleshooting) | Verification of a person's identity before identity-based rules are applied to their traffic. |
+| [Zero trust network access (ZTNA)](#ztna-quarantine-and-troubleshooting) | Access to a named application based on identity and other policy checks such as device posture. |
+
+**FortiEDR Administrator lane**
+
+| Term or phrase | Meaning |
+|---|---|
+| [FortiEDR collector](#system-installation-inventory-and-tenancy) | Endpoint software that observes activity and participates in detection and response according to its assigned policies. |
+| [Data residency](#system-installation-inventory-and-tenancy) | The geographic location in which data is stored or processed. Copies, support access and backups can affect the answer. |
+| [Log retention](#system-installation-inventory-and-tenancy) | The period for which records remain available for an investigation or other defined purpose. Missing results outside that period cannot establish inactivity. |
+| [Tenant](#system-installation-inventory-and-tenancy) | An administrative or customer boundary in a shared service. Data, identities, configurations and actions must stay within the intended tenant. |
+| [FortiEDR](#system-installation-inventory-and-tenancy) | An endpoint detection and response platform that observes endpoint activity and applies configured protection or response actions. |
+| [Communication control](#communication-control-security-policies-and-playbooks) | A policy that governs which processes may communicate, helping distinguish permitted application traffic from unwanted connections. |
+| [Deduplication](#communication-control-security-policies-and-playbooks) | Recognizing and handling repeated copies of the same observation or request so duplication does not inflate counts or repeat an action. |
+| [Idempotence](#communication-control-security-policies-and-playbooks) | Making an operation safe to repeat without accumulating unintended effects. A retried request to create one case should still yield one case. |
+| [Least privilege](#communication-control-security-policies-and-playbooks) | Giving an identity only the permissions needed for its task, for as long as it needs them. |
+| [Playbook](#communication-control-security-policies-and-playbooks) | A workflow of decisions and tasks for a recurring case. It can combine automated enrichment with human authorization for disruptive actions. |
+| [Process](#communication-control-security-policies-and-playbooks) | A running program instance with its own identifier, credentials and execution state. |
+| [Alert](#events-hunting-forensics-and-integrations) | A notification that an observed condition met a detection criterion. An analyst needs context before treating it as an incident. |
+| [Evidence preservation](#events-hunting-forensics-and-integrations) | Maintaining the integrity and provenance of information needed for investigation, including original timestamps, collection method and access history. |
+| [Incident](#events-hunting-forensics-and-integrations) | A case that groups evidence of related activity for investigation, ownership and resolution. |
+| [Schema](#events-hunting-forensics-and-integrations) | A definition of expected data structure, field types and constraints. A syntactically valid payload may still fail schema or business validation. |
+| [Threat hunting](#events-hunting-forensics-and-integrations) | A proactive investigation that tests a specific hypothesis against available telemetry and records evidence, including important coverage gaps. |
+| [Timestamp](#events-hunting-forensics-and-integrations) | A recorded time associated with an event. Distinguish source event time from collection or indexing time when building a timeline. |
+| [Triage](#events-hunting-forensics-and-integrations) | The first assessment of urgency, reliability, affected scope and next action for an alert or case. |
+
+**FortiDLP Administrator lane**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Access token](#architecture-agents-tenants-and-saas-integrations) | A credential presented to a resource service to exercise granted permissions within its audience, scope and validity period. |
+| [Authentication](#architecture-agents-tenants-and-saas-integrations) | The check that establishes who a user or device is. Authorization determines what that identity may do next. |
+| [Retry](#architecture-agents-tenants-and-saas-integrations) | Repeating an operation after a transient failure. When the first attempt’s outcome is unknown, idempotence matters before retrying a write. |
+| [Software as a service (SaaS)](#architecture-agents-tenants-and-saas-integrations) | An application operated by a provider and consumed as a service. The customer still governs tenant settings, access and use of its data. |
+| [Webhook](#architecture-agents-tenants-and-saas-integrations) | An event-driven message sent to a configured receiver. Retries or repeated delivery mean a consumer must recognize duplicate actions. |
+| [FortiDLP](#architecture-agents-tenants-and-saas-integrations) | A data loss prevention platform that identifies sensitive information and applies policy to how that information is used or transferred. |
+| [Data classifier](#data-identification-policy-and-enforcement) | A rule or mechanism that recognizes a category of sensitive information from content or context. |
+| [Data loss prevention (DLP)](#data-identification-policy-and-enforcement) | Policies and controls that identify sensitive data in use or movement and apply actions such as warning or blocking. |
+| [False positive](#data-identification-policy-and-enforcement) | A detection that matches benign activity. Tuning requires understanding which condition made it match. |
+| [User group](#data-identification-policy-and-enforcement) | A collection of identities to which a firewall policy can grant or restrict access. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Ransomware](#scenario-2-suspected-ransomware-behavior) | Malware used to extort a victim, often by making files unusable. A tested backup helps recover the data. |
+
 ## Places to learn
 
 This is a selective starting set, not a complete list and not a prescription to consume everything. Pick and choose the lane-specific official sources and labs that close measured gaps. Durations are estimates unless publisher-listed.

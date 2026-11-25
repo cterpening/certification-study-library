@@ -254,6 +254,90 @@ Trace feed source, indicator type/relationship/verdict/expiry and alert source/g
 - [ ] I reject live/leaked questions and unauthorized public intelligence uploads.
 - [ ] I rechecked the August 2025 datasheet, current docs/course/path, handbook, and registration before purchase.
 
+## Key terms and phrases
+
+**Alerting and detection processes**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Alert](#1-alerting-and-detection-processes-19) | A detection output identifying an event or pattern that warrants assessment. |
+| [Behavioral indicator of compromise (BIOC)](#1-alerting-and-detection-processes-19) | A detection condition based on a pattern of activity, which can match even when a particular file hash is unfamiliar. |
+| [Endpoint agent](#1-alerting-and-detection-processes-19) | Software on a host that supplies activity data and applies configured prevention or response controls. |
+| [Hash](#1-alerting-and-detection-processes-19) | A fixed-size digest derived from input data. Comparing a file’s digest to a trusted reference can detect modification without revealing who modified it. |
+| [Indicator of compromise (IOC)](#1-alerting-and-detection-processes-19) | An observable value associated with suspicious activity, such as a file hash or domain, whose relevance depends on context. |
+| [Severity](#1-alerting-and-detection-processes-19) | A rating of expected or observed impact. It differs from confidence, which expresses how strongly the evidence supports the assessment. |
+| [Workflow trigger](#1-alerting-and-detection-processes-19) | The event or condition that starts a workflow, such as creation of an incident matching specified criteria. |
+
+**Incident handling and response**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Incident](#2-incident-handling-and-response-20) | A case that groups related alerts and evidence so an analyst can assess scope and coordinate a response. |
+| [Data stitching](#2-incident-handling-and-response-20) | Linking events and entities from different sources to enrich the evidence for an investigation. Alert grouping instead brings related alerts into the same case. |
+| [Alert grouping](#2-incident-handling-and-response-20) | Bringing related alerts into one incident according to grouping criteria. The raw observations remain relevant to assessing the case. |
+| [Authentication](#2-incident-handling-and-response-20) | Checking that a claimant controls an authenticator bound to the claimed identity. It precedes the separate decision about permitted actions. |
+| [Causality chain](#2-incident-handling-and-response-20) | A linked sequence of processes and actions that gives an alert context, such as which process launched another. |
+| [Chain of custody](#2-incident-handling-and-response-20) | A record of who collected, possessed or transferred evidence, when it changed hands and how its integrity was protected. |
+| [Context data](#2-incident-handling-and-response-20) | Structured values carried through an investigation or playbook, allowing later tasks to consume earlier outputs. |
+| [Endpoint isolation](#2-incident-handling-and-response-20) | Restricting a selected host’s network communication during containment while retaining supported management access. |
+| [Evidence preservation](#2-incident-handling-and-response-20) | Maintaining the integrity and provenance of information needed for investigation, including original timestamps, collection method and access history. |
+| [Retention](#2-incident-handling-and-response-20) | The period for which telemetry remains available for investigation. A search outside that period cannot establish inactivity. |
+
+**Automation and playbooks**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Playbook](#3-automation-and-playbooks-15) | A workflow that gathers evidence and coordinates actions, including approval when the response could disrupt service. |
+| [Idempotence](#3-automation-and-playbooks-15) | Making an operation safe to repeat without accumulating unintended effects. A retried request to create one case should still yield one case. |
+| [Rate limiting](#3-automation-and-playbooks-15) | Restricting the number or rate of operations in a defined interval to protect capacity. A limit applied per identity behaves differently from one applied per IP address. |
+| [Sub-playbook](#3-automation-and-playbooks-15) | A reusable workflow invoked by another playbook with a defined input/output contract. |
+
+**Data analysis with XQL**
+
+| Term or phrase | Meaning |
+|---|---|
+| [XQL](#4-data-analysis-with-xql-14) | The Cortex query language used to select, filter and summarize records from datasets for an investigation. |
+| [Aggregation](#4-data-analysis-with-xql-14) | Combining records by defined keys to calculate a result such as event count per user or average delay per site. |
+| [Data model](#4-data-analysis-with-xql-14) | A defined set of entities, fields and relationships used to organize information consistently across integrations or cases. |
+| [Dataset](#4-data-analysis-with-xql-14) | A named collection of records queried in XQL. Its schema and available time range limit what an investigation can establish. |
+| [Deduplication](#4-data-analysis-with-xql-14) | Recognizing and handling repeated copies of the same observation or request so duplication does not inflate counts or repeat an action. |
+| [Entity](#4-data-analysis-with-xql-14) | An identifiable resource such as a user, workload or host whose activities and relationships can be investigated. |
+| [Ingestion](#4-data-analysis-with-xql-14) | Bringing source records into the security platform for analysis. Missing input limits what a dashboard can show. |
+| [Normalization](#4-data-analysis-with-xql-14) | Mapping source-specific values to a common representation, such as translating different vendor fields into the same source-address field. |
+
+**Endpoint security management**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Endpoint policy](#5-endpoint-security-management-12) | A collection of protection settings assigned to devices. The effective settings on a particular host govern its behavior. |
+| [Endpoint profile](#5-endpoint-security-management-12) | A set of managed configuration or protection settings assigned to selected endpoints. Group membership and precedence affect the effective settings. |
+| [Least privilege](#5-endpoint-security-management-12) | Limiting permissions to the tasks, resources and duration an identity actually requires. |
+| [Remediation](#5-endpoint-security-management-12) | Action taken to remove or correct the cause of an incident after its immediate effects are contained. |
+| [Tenant](#5-endpoint-security-management-12) | An administrative or customer boundary in a shared service. Data, identities, configurations and actions must stay within the intended tenant. |
+
+**Threat Intelligence Management and ASM**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Threat intelligence management](#6-threat-intelligence-management-and-asm-20) | Evaluation and maintenance of indicators and their source, confidence, relevance and useful lifetime. |
+| [Attack surface management (ASM)](#6-threat-intelligence-management-and-asm-20) | Discovery and tracking of exposed assets so analysts can verify ownership and prioritize investigation. |
+| [Attack surface](#6-threat-intelligence-management-and-asm-20) | The set of reachable services, interfaces, identities and other points that expose a system to interaction or harm. |
+| [Domain Name System (DNS)](#6-threat-intelligence-management-and-asm-20) | The Domain Name System, which resolves names to records such as IP addresses so clients can locate services. |
+| [Indicator](#6-threat-intelligence-management-and-asm-20) | An observable value or pattern used to find potentially relevant activity. A match needs source context and timing before it supports an incident conclusion. |
+| [Pivot](#6-threat-intelligence-management-and-asm-20) | Following an entity from one relevant record to related evidence, such as taking a host from an alert and examining its activity around the same time. |
+| [Reputation](#6-threat-intelligence-management-and-asm-20) | A source’s assessment of an observable such as a domain or file. A previously positive or negative rating may not describe its current use. |
+| [Threat intelligence](#6-threat-intelligence-management-and-asm-20) | Assessed information about adversary activity or indicators, with source, context and freshness to guide a decision. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Cortex Data Model (XDM)](#suspicious-powershell-chain) | A common model used to map source-specific fields into consistent concepts for cross-source analysis. |
+| [False positive](#suspicious-powershell-chain) | An alert that classifies benign activity as a target condition. Repeated benign alerts can distort operational priorities. |
+| [Indicator enrichment](#suspicious-powershell-chain) | Adding source, sightings, reputation or other context to an indicator so its relevance and confidence can be judged. |
+| [Vulnerability](#exposed-remote-management-host) | A weakness in a system or process that could permit harm. The associated risk depends on exposure, likelihood and impact. |
+| [False negative](#feed-driven-alert-storm) | A target condition that occurs without the expected alert or block. Reviewing alerts alone cannot reveal every missed case. |
+
 ## Places to learn
 
 This is not a complete list, and it is not meant to be consumed in full. Start with the blueprint and official XSIAM path/course, then use documentation and synthetic investigations for measured gaps. Record tenant/release because XQL schemas, content, and UI evolve.

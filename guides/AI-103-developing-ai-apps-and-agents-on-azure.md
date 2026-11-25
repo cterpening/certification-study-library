@@ -5,19 +5,23 @@ official_blueprint: https://learn.microsoft.com/en-us/credentials/certifications
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: source-validated
-last_verified: 2026-10-28
+review_status: review-required
+last_verified: 2026-11-20
 upcoming_change_status: none-announced
 upcoming_change_checked: 2026-10-28
 ---
 
 # AI-103 Developing AI Apps and Agents on Azure Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 detailed refresh maps all 64 objectives in the retained teaching baseline and checks current public product evidence. See the [current refresh record](../docs/research/2026-10-28-ab100-gh300-ai103-refresh.md#ai-103) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ai-103-coverage-record). The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-103) is authoritative. Product/tenant execution and human review remain separate; limitations and source conflicts are stated below.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-02.md#ai-103)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 detailed refresh maps all 64 objectives in the retained teaching baseline and checks current public product evidence. See the [October refresh record](../docs/research/2026-10-28-ab100-gh300-ai103-refresh.md#ai-103) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ai-103-coverage-record). The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-103) is authoritative. Product/tenant execution and human review remain separate; limitations and source conflicts are stated below.
 
 **Current baseline:** Skills measured as of April 16, 2026<br>
 **Upcoming blueprint change:** None announced on the official study guide checked October 28, 2026.<br>
 **Official source:** [AI-103 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-103)
+
+**Practice check.** For fields printed on an invoice, start with a standard analyzer. To reconcile a contract and an amendment, the agentic document preview can reason across both when they are in one input file. Use API version 2026-06-01-preview for that exercise. [Agentic mode overview for document analysis (preview) - Foundry Tools | Microsoft Learn](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/agentic-mode)
 
 ## How to use this guide
 
@@ -1157,7 +1161,107 @@ Recheck model versions, deployment types, SDKs, quotas, pricing, regions, previe
 
 ---
 
+## Key terms and phrases
+
+**Build the platform mental model**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Model card](#choose-a-model-with-evidence) | Documentation of a model's intended uses, capabilities, limitations and evaluation evidence. |
+
+**Set up, deploy, secure, and operate Foundry solutions**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Private endpoint](#design-the-azure-infrastructure) | A private IP address through which an application reaches a supported service resource over a virtual network. |
+| [Managed identity](#worked-identity-example-the-same-definition-can-have-different-permissions) | An identity managed by Azure that a workload can use to request access tokens without storing a client secret. |
+| [Model deployment](#treat-deployments-as-versioned-configuration) | A selected model version and serving configuration made available to clients through an endpoint. |
+| [Quota](#manage-quota-scale-rate-limits-and-cost) | The capacity allocated within a service scope that constrains deployment or request volume. |
+| [Rate limit](#manage-quota-scale-rate-limits-and-cost) | A restriction on requests or tokens within a time interval that clients must handle when demand spikes. |
+| [Trace](#observe-the-entire-system) | A linked record of the calls made for one request, useful for locating time or errors in retrieval, generation or tool use. |
+
+**Responsible AI is a lifecycle control**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Content filter](#threat-and-control-map) | A control that evaluates material against configured safety categories at an input or output boundary. |
+| [Human-in-the-loop](#human-oversight-modes) | A workflow design that asks a person to make a decision during execution when authority or judgment is required. |
+
+**Build generative applications and retrieval-augmented generation**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Temperature](#control-generation-deliberately) | A generation parameter that changes how strongly output sampling favors higher-probability tokens. |
+| [Token](#control-generation-deliberately) | A unit of model input or output that may represent part of a word, a whole word or another symbol. |
+| [Context window](#control-generation-deliberately) | The finite amount of input and output a model can handle together in an interaction. |
+| [Retrieval-augmented generation (RAG)](#understand-the-rag-pipeline) | An application retrieves relevant evidence and includes it in the model's input when generating an answer. |
+| [Chunk](#understand-the-rag-pipeline) | A bounded portion of a source document indexed and retrieved as a unit of evidence. |
+| [Embedding](#understand-the-rag-pipeline) | A numeric vector representing content for comparisons such as semantic similarity. |
+| [Vector search](#understand-the-rag-pipeline) | Finding stored representations near a query vector according to a chosen distance or similarity measure. |
+| [Hybrid search](#understand-the-rag-pipeline) | Combining keyword and vector retrieval so a query can match both exact terms and semantic similarity. |
+| [Reranking](#understand-the-rag-pipeline) | Ordering retrieved candidates again using a relevance model or scoring stage before choosing evidence for generation. |
+| [Document index](#understand-the-rag-pipeline) | A searchable collection of records with text, vector and metadata fields used by the retrieval pipeline. |
+| [Groundedness](#evaluate-the-application-not-only-the-model) | How well the claims in a generated answer are supported by the evidence supplied to the model. |
+| [Evaluation slice](#evaluate-the-application-not-only-the-model) | A subset of examples representing a meaningful population, risk category or operating condition. |
+| [Retrieval relevance](#worked-retrieval-example-separate-finding-evidence-from-using-it) | How well the retrieved passages address the request, measured separately from the quality of the generated answer. |
+| [Citation](#worked-retrieval-example-separate-finding-evidence-from-using-it) | An inspectable reference identifying which source record or passage is offered in support of an answer. |
+
+**Build and operate agents**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Tool contract](#design-tools-as-security-sensitive-apis) | The declared inputs, outputs, permissions and failure behavior of an operation an agent can request. |
+| [Function calling](#design-tools-as-security-sensitive-apis) | Allowing a model to propose a named function and arguments for the application to validate and execute. |
+| [Conversation state](#separate-conversation-state-memory-and-knowledge) | The information needed to continue the current interaction, including its prior turns or pending steps. |
+| [Memory](#separate-conversation-state-memory-and-knowledge) | Information retained for later reasoning, such as a preference or a fact learned in a previous session. |
+| [Long-term memory](#separate-conversation-state-memory-and-knowledge) | Selected information retained beyond a single interaction, subject to ownership, access and retention rules. |
+| [Sequential orchestration](#multi-agent-orchestration) | Passing work from one agent to the next when later stages depend on earlier results. |
+| [Parallel orchestration](#multi-agent-orchestration) | Assigning independent tasks to workers concurrently, then reconciling their outputs. |
+| [Tool error](#diagnose-an-agent-failure-by-phase) | A failure returned while validating or executing an agent operation, distinct from a model failing to choose the correct tool. |
+
+**Implement computer vision and multimodal workflows**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Multimodal input](#visual-understanding) | Input combining or selecting among forms such as text, images and audio for a model to interpret. |
+
+**Implement text, speech, and translation solutions**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Named entity recognition](#text-analysis-controls) | Identifying spans of text that refer to entities such as people, places or organizations and assigning their types. |
+| [Sentiment analysis](#text-analysis-controls) | Estimating the opinion expressed in a text passage, such as positive, neutral or negative. |
+| [Structured output](#structured-output-syntax-schema-and-business-meaning) | A model response constrained to an expected format or schema. The values still need business validation. |
+| [Speech recognition](#speech-pipeline) | Converting a spoken utterance to text that a downstream application can interpret or translate. |
+| [Speech synthesis](#speech-pipeline) | Generating spoken audio from text, often as the output stage of a speech application. |
+| [Speech translation](#speech-pipeline) | Converting spoken content in one language into text or speech in another, with recognition and meaning both checked. |
+| [Translation](#worked-speech-example-preserve-intent-across-modalities) | Converting meaning from a source language into a target language while preserving relevant context. |
+
+**Implement information extraction and search**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Indexer](#ingestion-design) | A component that reads source content and prepares records for a searchable index. |
+| [Optical character recognition (OCR)](#ocr-is-a-stage-not-the-finished-answer) | The extraction of readable text from an image or scanned page, before field interpretation or business validation. |
+| [Layout analysis](#ocr-is-a-stage-not-the-finished-answer) | Identifying document structure such as tables, headings or page regions so extracted values retain their context. |
+| [Confidence score](#worked-extraction-example-confidence-is-one-input-to-validation) | A service's estimated confidence in an extracted value that should be tested against representative ground truth. |
+
+**Implementation and operational playbook**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Metadata filter](#engineer-a-retrieval-index) | A condition that restricts eligible search records using attributes such as language, owner or access scope. |
+| [Vector dimension](#engineer-a-retrieval-index) | The number of coordinates produced by an embedding model, which must be compatible with the index definition. |
+
+**Production architecture and incident drills**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Regression case](#design-an-evaluation-set-that-can-reject-a-release) | A previously tested scenario rerun after a change to detect behavior that has deteriorated. |
+
 ## Places to learn
+
+**Suggested practice.** Trace one function call from the agent request to the returned value and identify the cleanup instructions before provisioning anything. About 50 minutes for the exercise (publisher estimate); provisioning or setup can add time. [Use a custom function in an AI agent](https://microsoftlearning.github.io/mslearn-ai-agents/Instructions/Exercises/02-agent-custom-tools.html)
 
 ### Targeted blog reading
 
@@ -1186,7 +1290,6 @@ This is a curated starting point, not a complete list. You are not meant to cons
 | [O'Reilly — Introduction to AI Agents on Azure](https://www.oreilly.com/live-events/introduction-to-ai-agents-on-azure/0642572194079/) | Subscription or event access | 4 hours (published agenda) | Agent concepts and Azure implementation context; the listed live occurrence has ended |
 | [Udemy — AI-103 course by Alan Rodrigues](https://www.udemy.com/course/ai-102-microsoft-certified-azure-ai-engineer-associate-d/) | Purchase or subscription | 32 hours 56 minutes | Long-form course shown as updated July 2026; the listing follows AI-103 despite the legacy URL slug, but does not expose lesson-level Foundry generation, so verify demos against the current-generation signals above |
 | [Udemy — AI-103 course by Luke Ginn](https://www.udemy.com/course/ai-103-azure-ai-app-and-agent-developer-complete-course/) | Purchase or subscription | 30 hours 22 minutes | Deep alternative updated August 2026; includes labs and explicitly marked older lectures—treat those older lectures as **FOUNDRY (CLASSIC)** or adjacent content and follow the current sections |
-| [Pluralsight — Build a Generative AI Solution with Azure](https://www.pluralsight.com/paths/build-a-generative-ai-solution-with-azure) | Subscription | 3 hours across one course and three labs | Current 2026 implementation practice for a secure Azure OpenAI pipeline, rate limits, monitoring, and data services; supports only part of AI-103 |
 | [LinkedIn Learning — Azure AI for Developers: Building AI Agents](https://www.linkedin.com/learning/azure-ai-for-developers-building-ai-agents) | Subscription | 1 hour 53 minutes | **FOUNDRY (CLASSIC):** released February 2025 and teaches Azure AI Foundry with the Assistants API, assistants, threads/runs, and older framework surfaces; use only for legacy comparison or durable agent concepts, not current portal/API steps |
 
 No exact Pluralsight certification path or standalone MeasureUp AI-103 practice-test page was verified during the August 31, 2026 review. Whizlabs announced a 100-question AI-103 bank in August 2026, but the reviewed public listing did not expose a stable exam-specific product URL, so it is not linked yet. The free Microsoft assessment above is available; the listed Pluralsight path supports a subset of the objectives. See the broader [Places to learn catalog](../docs/LEARNING-RESOURCES.md).

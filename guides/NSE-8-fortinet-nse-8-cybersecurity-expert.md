@@ -290,6 +290,96 @@ These are original practice prompts, not Fortinet exam tasks.
 - Rebuild, break, diagnose, and recover a representative Core plus elective environment without relying on copied recipes.
 - Practice preserving management access, secrets, user traffic, evidence, and rollback under time pressure.
 
+## Key terms and phrases
+
+**Part I: Core Practical**
+
+| Term or phrase | Meaning |
+|---|---|
+| [High availability (HA)](#1-infrastructure-27) | Redundant components arranged to preserve service after a failure. Success depends on surviving capacity and synchronized state. |
+| [Control plane](#1-infrastructure-27) | The part of a network system that determines how traffic should be forwarded. The data plane applies those decisions to packets. |
+| [FortiAnalyzer](#1-infrastructure-27) | A platform for collecting and analyzing supported Fortinet telemetry, including searching logs, generating reports and handling security events. |
+| [Policy package](#1-infrastructure-27) | A managed set of firewall policy rules and associated objects assigned to installation targets. Editing and installing are separate operations. |
+| [Virtual routing and forwarding (VRF)](#2-networking-40) | A separate routing table within the same device, allowing distinct forwarding decisions for different network contexts. |
+| [Asymmetric routing](#2-networking-40) | A flow whose forward and return packets take different paths. Stateful inspection can fail if one direction misses the device holding the session. |
+| [Application steering](#2-networking-40) | Selection of a WAN path using traffic classification, policy and the measured condition of eligible links. |
+| [Security profile](#2-networking-40) | A collection of threat or content inspection settings associated with a matching firewall policy, such as web filtering or intrusion prevention. |
+| [Stateful inspection](#2-networking-40) | Tracking connections so both a packet’s attributes and the state of the flow influence enforcement. |
+| [Maximum transmission unit (MTU)](#2-networking-40) | The largest packet size a link or interface can carry under its addressing convention. Tunnel overhead can reduce the usable size of the inner packet. |
+| [Maximum segment size (MSS)](#2-networking-40) | The maximum TCP payload a peer advertises it can receive in a segment. It excludes the TCP and IP headers. |
+| [Authorization mapping](#3-authentication-14) | Translation of authenticated identity or group information into specific roles and permissions. |
+| [Authentication](#3-authentication-14) | The check that establishes who a user or device is. Authorization determines what that identity may do next. |
+| [Failover](#3-authentication-14) | Transfer of service to another HA member after a failure. Some sessions may need to reconnect. |
+| [User authentication](#3-authentication-14) | Verification of a person's identity before identity-based rules are applied to their traffic. |
+| [Security assertion markup language (SAML)](#3-authentication-14) | A federation standard in which an identity provider issues signed assertions to a relying service, often for browser-based single sign-on. |
+| [Automation stitch](#4-fortinet-security-fabric-19) | A trigger and associated actions that connect a detected condition to a response within the Security Fabric. |
+| [Fortinet Security Fabric](#4-fortinet-security-fabric-19) | Fortinet’s framework for integrating products so they can exchange context and coordinate visibility or policy-driven actions. |
+| [FortiView](#4-fortinet-security-fabric-19) | A set of views that summarize activity from available log data and let an analyst narrow a result to its underlying records. |
+
+**Part II: Secure Networking Elective (25/20/30/25)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Underlay and overlay](#secure-sd-wan-25) | The underlay supplies reachability between devices. The overlay uses that connectivity to carry logical paths such as protected branch tunnels. |
+| [FortiOS](#secure-sd-wan-25) | The operating system used by FortiGate. Its configuration determines such behaviors as routing, policy matching, inspection and logging. |
+| [Software-defined WAN (SD-WAN)](#secure-sd-wan-25) | A way to steer traffic among network connections according to policy and measured link conditions. |
+| [FortiClient](#endpoint-security-20) | Endpoint software used for supported connectivity and security functions, with effective capabilities determined by the deployment and assigned configuration. |
+| [FortiClient EMS](#endpoint-security-20) | The FortiClient management service used to enroll endpoints, assign profiles and publish device status to participating controls. |
+| [Posture tag](#endpoint-security-20) | A label derived from device conditions that an access policy can evaluate, such as whether a required endpoint control is active. |
+| [Enforcement point](#threat-mitigation-30) | The switch, wireless controller or other component that actually applies the access decision. |
+| [Vulnerability](#threat-mitigation-30) | A weakness that can expose an asset to harm. Risk also depends on who or what could act on it and the consequences. |
+| [FortiGate](#enterprise-networking-25) | The Fortinet firewall platform that applies routing, access policy and security inspection to traffic traversing its interfaces. |
+| [FortiLink](#enterprise-networking-25) | The management connection that lets a FortiGate authorize and configure downstream FortiSwitch devices. |
+| [Link aggregation](#enterprise-networking-25) | Treating compatible links as one logical interface for redundancy and load distribution. A single flow may still use only one physical member. |
+
+**Part III: Application Security Elective (27/44/12/17)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Quarantine](#email-security-27) | A containment action that restricts a device’s connectivity while responders investigate or remediate it. |
+| [Spam filtering](#email-security-27) | Evaluating a message, sender and delivery context to identify unsolicited or unwanted mail and apply the configured action. |
+| [Session persistence](#application-delivery-44) | A load-balancing choice that keeps related requests assigned to the same backend when the application needs continuity. |
+| [Health check](#application-delivery-44) | A defined test of reachability or service behavior used to decide whether a path or backend remains eligible. A TCP response may test less than an application transaction. |
+| [Health withdrawal](#application-delivery-44) | Removing an unhealthy backend or service site from selection so new traffic can reach a candidate that meets its health conditions. |
+| [TLS termination](#application-delivery-44) | Ending the client’s encrypted session at a proxy or load balancer. The connection onward to the backend has its own protection requirements. |
+| [Sandbox verdict](#threat-detection-12) | The result of analyzing a submitted object in a controlled environment. A downstream policy determines what action to take. |
+| [FortiSandbox](#threat-detection-12) | A platform for analyzing submitted objects in a controlled environment and returning evidence or a verdict to supported integrations. |
+| [Normalization](#threat-detection-12) | Converting fields from different sources to a common representation so that the records can be compared. |
+| [Sandbox](#threat-detection-12) | An isolated environment for observing or restricting a program’s behavior. Its conclusions depend on the inputs, visibility and constraints of the environment. |
+| [Fail closed](#infrastructure-17) | A failure behavior in which access is denied or traffic stops when the enforcing component cannot make the required decision. |
+| [Fail open](#infrastructure-17) | A failure behavior in which traffic can continue when a protective component is unavailable. It trades enforcement assurance for service continuity. |
+
+**Part IV: Security Operations Elective (23/26/29/22)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Canary device](#automation-23) | A representative early target used to validate an intended deployment before it reaches the rest of the fleet. |
+| [FortiSIEM](#automation-23) | A platform that collects and correlates events across infrastructure and security products to help identify and investigate incidents. |
+| [Provisioning template](#automation-23) | Reusable configuration populated with deployment-specific values to create consistent device settings. |
+| [Incident](#analytics-and-reporting-26) | A case that groups evidence of related activity for investigation, ownership and resolution. |
+| [Parsing](#analytics-and-reporting-26) | Extracting structured values from an incoming record. Correct parsing must preserve the distinction between a missing value and a value of zero. |
+| [Entitlement](#threat-handling-29) | The access an identity can exercise under its assigned roles and policies. Effective entitlement may exceed what the owner expects. |
+| [Ransomware](#threat-handling-29) | Malware used to extort a victim, often by making files unusable. A tested backup helps recover the data. |
+| [Telemetry](#threat-handling-29) | Logs, events and measurements supplied by managed systems. Customer attribution and collection health determine whether the records are usable. |
+| [FortiSOAR](#infrastructure-22) | A platform for handling cases and orchestrating investigation and response workflows across connected security tools. |
+| [Tenant isolation](#infrastructure-22) | Separation of each customer’s identities, records, policies and actions so that one customer cannot access or affect another. |
+
+**Safe practical preparation**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Event handler](#safe-practical-preparation) | Logic that recognizes matching log conditions and produces an event for follow-up. |
+| [False positive](#safe-practical-preparation) | A detection that matches benign activity. Tuning requires understanding which condition made it match. |
+| [Out-of-band](#safe-practical-preparation) | Use of a separate communications or management path, such as an independent channel for verifying an unusual request. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Network access control (NAC)](#secure-networking-degraded-branch-fabric) | A way to decide what connectivity a device receives using its identity, profile and applicable policy. |
+| [Containment](#security-operations-high-confidence-containment) | Limiting the scope or ongoing effects of an incident, such as isolating the affected device under an approved response plan. |
+| [Playbook](#security-operations-high-confidence-containment) | A defined sequence of investigative or response steps triggered by an event or an analyst. |
+
 ## Places to learn
 
 This is not a complete list, and it is not a prescription to consume everything. NSE 8 is a practical expert journey: use the official contracts and select current documents and labs for measured gaps. Times are publisher-listed where visible or clearly labeled estimates.

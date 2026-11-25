@@ -385,6 +385,94 @@ These original cases are learning exercises, not vendor exam questions.
 - [ ] I can create a typed/schema-correct Pandas UDF and compare its Arrow boundary to built-ins/scalar UDFs.
 - [ ] I can complete all common API recall exercises without exam-time documentation.
 
+## Key terms and phrases
+
+**Apache Spark Architecture and Components**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Driver](#understand-where-application-code-and-work-execute) | The process coordinating a Spark application, planning its work and communicating with executors. |
+| [Executor](#understand-where-application-code-and-work-execute) | A process that runs tasks for an application and can retain data for later use. |
+| [Task](#understand-where-application-code-and-work-execute) | An individual unit of computation scheduled on an executor, typically processing one partition in a stage. |
+| [Lazy transformation](#follow-the-execution-hierarchy-and-laziness) | An operation that adds to a computation plan. An action requests a result and can trigger execution. |
+| [Idempotence](#follow-the-execution-hierarchy-and-laziness) | Repeatedly applying the same logical input leaves the same intended state as applying it once, which makes retry and replay safer. |
+| [Data lineage](#follow-the-execution-hierarchy-and-laziness) | The chain of sources and transformations that produced a dataset or model input, useful for explaining a result or assessing change impact. |
+| [Stage](#follow-the-execution-hierarchy-and-laziness) | A set of Spark tasks that can run without crossing a shuffle dependency, forming part of the work for a job. |
+| [Action](#follow-the-execution-hierarchy-and-laziness) | An operation that requests a result or output and triggers evaluation of the transformations needed to produce it. |
+| [Narrow transformation](#follow-the-execution-hierarchy-and-laziness) | A transformation where a partition can be computed from a limited set of parent partitions without redistributing the whole dataset. |
+| [Partition](#reason-about-partitions-caching-storage-and-memory) | A slice of a distributed dataset that tasks can process separately. |
+| [Cache](#reason-about-partitions-caching-storage-and-memory) | Retaining computed partitions for potential reuse across actions, trading memory or disk resources for less repeated computation. |
+
+**Using Spark SQL**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Schema](#read-with-known-schemas-and-explicit-source-options) | The declared structure and types expected for stored data. Compare producer and consumer expectations before accepting a changed field. |
+| [Projection](#read-with-known-schemas-and-explicit-source-options) | Selecting the fields or calculated expressions to return from a query. Fewer output fields can reduce data transfer. |
+| [Predicate](#read-with-known-schemas-and-explicit-source-options) | A condition used to decide which records match a query or qualify for a transformation. |
+| [Partition pruning](#read-with-known-schemas-and-explicit-source-options) | Using metadata and predicates to skip partitions that cannot contain relevant records. |
+| [Cardinality](#write-with-deliberate-mode-layout-and-table-semantics) | The number of members in the set being considered, such as distinct values of a field or rows in a query result. |
+| [View](#write-with-deliberate-mode-layout-and-table-semantics) | A named query through which consumers see data in a defined shape. A conventional logical view reads its inputs when queried. |
+
+**Developing DataFrame/Dataset API Applications**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Null value](#manipulate-columns-and-rows-without-losing-semantics) | A marker for a missing or unknown value. Count and comparison operations may treat it differently from a supplied zero. |
+| [Join key](#combine-dataframes-with-correct-key-and-row-semantics) | The column or expression used to match rows. If two left rows and three right rows share one key, an inner equality join returns 2 × 3 = 6 matching pairs for that key. |
+| [Join](#combine-dataframes-with-correct-key-and-row-semantics) | Combining records from multiple inputs according to a matching condition. A repeated key can yield more rows than either input leads you to expect. |
+| [Inner join](#combine-dataframes-with-correct-key-and-row-semantics) | A join retaining only pairs of rows satisfying its matching condition. |
+| [Left outer join](#combine-dataframes-with-correct-key-and-row-semantics) | A join preserving each left-hand row. A missing right-hand match yields nulls in the right-side result columns. |
+| [Quarantine](#execute-an-edge-case-dataframe-fixture) | Retaining rejected records and rejection reasons separately so they can be investigated without contaminating trusted outputs. |
+| [Driver collection](#readwrite-inspect-and-collect-safely) | Bringing distributed rows into driver memory. Large results can overwhelm the driver even when executors have adequate capacity. |
+| [Broadcast variable](#use-udfs-and-shared-variables-only-when-built-ins-cannot-express-the-work) | A read-only value distributed to workers for reuse by tasks. |
+| [Accumulator](#use-udfs-and-shared-variables-only-when-built-ins-cannot-express-the-work) | A shared variable updated by tasks using an associative operation, generally useful for counters or diagnostics. |
+
+**Troubleshooting and Tuning DataFrame Applications**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Shuffle](#tune-the-partitionshuffle-problem-you-actually-observe) | Redistributing records between partitions, often for a join or aggregation that needs matching keys together. |
+| [Data skew](#tune-the-partitionshuffle-problem-you-actually-observe) | An uneven distribution of records or processing cost that leaves a few tasks much slower than the rest. |
+| [Aggregation](#tune-the-partitionshuffle-problem-you-actually-observe) | Combining a group of records into a summary such as count, sum or average, at a declared grouping level. |
+| [Partition key](#tune-the-partitionshuffle-problem-you-actually-observe) | The value or expression used to assign records to partitions, influencing distribution and which work can be skipped. |
+| [Adaptive query execution (AQE)](#tune-the-partitionshuffle-problem-you-actually-observe) | Using runtime information to adjust eligible parts of a Spark SQL execution plan. |
+
+**Structured Streaming**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Micro-batch](#think-of-a-stream-as-an-incrementally-maintained-table) | A small bounded batch used to process a portion of a continuously arriving stream. |
+| [Checkpoint](#think-of-a-stream-as-an-incrementally-maintained-table) | Persisted progress or state that lets a job recover from an interruption with a known starting point. |
+| [Offset](#think-of-a-stream-as-an-incrementally-maintained-table) | A source position used to track progress through an ordered input, such as the last processed position within one partition. |
+| [Watermark](#bound-state-with-event-time-and-watermarks) | An event-time threshold based on observed progress and allowed lateness that a streaming operation can use to bound retained state. |
+| [Event time](#bound-state-with-event-time-and-watermarks) | The timestamp associated with occurrence at the source. It can precede arrival or processing by a significant interval. |
+| [Processing time](#bound-state-with-event-time-and-watermarks) | The time when the pipeline processes a record, which can differ from when the represented event actually happened. |
+| [Deduplication](#bound-state-with-event-time-and-watermarks) | Recognizing repeated representations of the same event or business entity under a defined key and selection rule. |
+| [Reconciliation](#bound-state-with-event-time-and-watermarks) | Comparing source and target results for the same scope, such as record counts and amounts in a given business day. |
+| [Data retention](#bound-state-with-event-time-and-watermarks) | How long data or recoverable history is kept before removal under an explicit operational or governance policy. |
+
+**Spark Connect and Deployment Modes**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Spark Connect](#6-spark-connect-and-deployment-modes-5) | A client-server architecture where a remote client submits logical plans and the server runs the Spark computation. |
+
+**Pandas API on Spark**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Pandas API on Spark](#7-pandas-api-on-spark-5) | A pandas-like DataFrame API whose operations execute through Spark. Operations requiring a global ordering can still move data across partitions. |
+| [Pandas UDF](#7-pandas-api-on-spark-5) | A user-defined function inside a Spark plan that exchanges batches through Arrow and processes them with pandas. Its return values must match the declared Spark schema. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Grain](#worked-decisions-and-answered-checks) | The unit represented by one record or output row, such as an order line. Combining data at incompatible grains can overcount measures. |
+| [Incremental processing](#streaming-connect-and-pandas) | Processing newly arrived or changed records relative to remembered progress instead of recomputing the full dataset. |
+| [Batch processing](#streaming-connect-and-pandas) | Processing a bounded set of inputs as a job, often on a schedule, with results available after the run. |
+
 ## Places to learn
 
 This is **not a complete list**, and it is not meant to be consumed in full. Pick the resources that fit your gaps; spend most time writing, predicting, testing, and diagnosing Spark code. Public metadata was checked September 28, 2026: Pluralsight still lists 11 courses, 5 labs and 9 hours. Academy lessons require sign-in. Both O'Reilly book pages and Udemy blocked automated access, so previously observed editions, dates and durations below were not reverified. Other times are planning estimates.

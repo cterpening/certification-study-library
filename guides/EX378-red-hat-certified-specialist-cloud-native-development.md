@@ -551,6 +551,115 @@ Volatile: objective text, Red Hat BOM/extension support, documentation availabil
 
 This guide uses only public objective language and original scenarios, labs, and checks. It does not reproduce or solicit recalled exam tasks.
 
+## Key terms and phrases
+
+**Configuration and profiles**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Configuration profile](#1-configuration-and-profiles) | A named set of application settings selected for a context such as development or production. |
+| [Environment variable](#1-configuration-and-profiles) | A named value supplied in the environment of a process, such as a search path. Child processes inherit exported variables from their parent. |
+
+**Fault-tolerant microservices**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Circuit breaker](#2-fault-tolerant-microservices) | A fault-tolerance control that temporarily stops calls to a failing dependency and later tests whether it has recovered. |
+| [Bulkhead](#2-fault-tolerant-microservices) | A limit that isolates capacity used by one class of work so a failing dependency cannot consume all available concurrent resources. |
+| [Fallback](#2-fault-tolerant-microservices) | An alternate result or action used when a call fails under the configured rules, such as returning a cached value with known freshness. |
+| [Idempotence](#2-fault-tolerant-microservices) | Applying the same desired configuration repeatedly leaves an already-correct system unchanged. A successful second run should avoid unnecessary side effects. |
+| [Retry](#2-fault-tolerant-microservices) | Trying a failed operation again under a defined policy. For writes, duplication and uncertain completion require special handling. |
+
+**Health checks**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Readiness check](#3-health-checks) | A health signal indicating whether an application can currently serve requests, even while its process remains alive. |
+| [Liveness check](#3-health-checks) | A signal that the process can still function. A platform may use repeated failures to trigger a restart. |
+| [Endpoint](#3-health-checks) | In an HTTP API, a resource or operation reachable using a specified path, method and applicable request contract. |
+| [Health check](#3-health-checks) | A signal about an application’s current condition. Readiness concerns accepting traffic, while liveness concerns whether restarting could restore operation. |
+| [Latency](#3-health-checks) | Elapsed time for data or a request to travel a defined path. Specify whether the measure is one-way delay or round-trip time. |
+
+**Micrometer metrics**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Counter](#4-micrometer-metrics) | A cumulative measurement that increases as events occur and can reset when the process restarts. Moving from 120 to 180 requests in 30 seconds without a reset gives an average of two requests per second. |
+| [Gauge](#4-micrometer-metrics) | A metric representing a current measured value, such as queue depth, which can increase or decrease. |
+| [Metrics](#4-micrometer-metrics) | Numerical time series used to quantify behavior such as latency, error rate or capacity. Aggregation and labels determine what the values represent. |
+| [Micrometer](#4-micrometer-metrics) | A metrics instrumentation facade for Java applications that provides measurement types such as counters, gauges and timers. |
+| [Quarkus](#4-micrometer-metrics) | A Java framework for building applications such as cloud-native services with configuration, dependency injection and supported extensions. |
+| [Timer](#4-micrometer-metrics) | A measurement capturing durations and occurrences of an operation, useful for comparing the latency of application paths. |
+
+**JWT authentication and RBAC**
+
+| Term or phrase | Meaning |
+|---|---|
+| [JSON Web Token (JWT)](#5-jwt-authentication-and-rbac) | A token carrying claims such as identity and roles. A service validates the token before relying on the claims. |
+| [Audience](#5-jwt-authentication-and-rbac) | The intended recipient of a token. Checking it helps ensure that a token issued for one service is not accepted by an unrelated service. |
+| [Authentication](#5-jwt-authentication-and-rbac) | Checking that a claimant controls an authenticator bound to the claimed identity. It precedes the separate decision about permitted actions. |
+| [Authorization](#5-jwt-authentication-and-rbac) | Determining whether a given identity may perform a specific action on the particular resource requested. |
+| [Claim](#5-jwt-authentication-and-rbac) | A statement carried in an identity or authorization token, such as subject, issuer, audience or role, whose reliability depends on validation. |
+| [Container-managed authorization](#5-jwt-authentication-and-rbac) | The Jakarta runtime evaluates declared role requirements for a protected operation. A request can therefore be rejected before the application method executes. |
+| [Encryption](#5-jwt-authentication-and-rbac) | Reversibly transforming data with a key to keep the plaintext unavailable to parties lacking the appropriate decryption capability. |
+| [Issuer](#5-jwt-authentication-and-rbac) | The authority that created a token or certificate. Validation should establish that the issuer is expected for the application’s trust configuration. |
+| [Role-based access control (RBAC)](#5-jwt-authentication-and-rbac) | Assigning permissions to roles and assigning identities to those roles. An inappropriate role assignment can grant every permission the role carries. |
+
+**RESTEasy Reactive and Jakarta REST**
+
+| Term or phrase | Meaning |
+|---|---|
+| [HTTP method](#6-resteasy-reactive-and-jakarta-rest) | The request verb indicating the intended operation on a resource, such as GET for retrieval or POST for resource-specific processing. |
+| [HTTP status code](#6-resteasy-reactive-and-jakarta-rest) | The server’s numeric response classifying the result of a request. The body and API contract often give detail needed to interpret it. |
+| [JavaScript Object Notation (JSON)](#6-resteasy-reactive-and-jakarta-rest) | A text representation for structured data using objects, arrays, numbers, strings, booleans and null. Field names and types matter to consuming software. |
+
+**JPA and Panache**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Persistence context](#7-jpa-and-panache) | The set of entity instances managed by a persistence provider during a unit of work. |
+| [Integration test](#7-jpa-and-panache) | A check that separately implemented components interact correctly, such as an application using its actual database or message contract. |
+| [Jakarta Persistence (JPA)](#7-jpa-and-panache) | A Java persistence specification that maps entities and relationships to stored data and defines operations on managed entity state. |
+| [Panache](#7-jpa-and-panache) | Quarkus support for common persistence operations using entity or repository patterns, reducing repetitive code while preserving transaction requirements. |
+| [Schema](#7-jpa-and-panache) | A definition of expected data structure, field types and constraints. A syntactically valid payload may still fail schema or business validation. |
+| [Transaction](#7-jpa-and-panache) | A unit of database work that commits or rolls back as a group under the database’s consistency and isolation rules. |
+
+**Reactive Messaging**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Acknowledgment](#8-reactive-messaging) | A signal that a message was handled under the channel’s delivery rules. Failure can lead to redelivery. |
+| [Reactive Messaging](#8-reactive-messaging) | A channel-based approach that connects message producers and consumers, with acknowledgment and failure handling governed by the connector and configuration. |
+
+**OpenAPI**
+
+| Term or phrase | Meaning |
+|---|---|
+| [OpenAPI document](#9-openapi) | A machine-readable description of an HTTP API’s paths, operations and data contracts. |
+| [YAML Ain’t Markup Language (YAML)](#9-openapi) | A structured text format commonly used for configuration. Significant indentation and scalar typing can affect the meaning of apparently small edits. |
+
+**REST Client Reactive**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Timeout](#10-rest-client-reactive) | The time after which an operation stops waiting and reports failure. A caller timing out does not prove the remote system made no change. |
+| [Representational State Transfer (REST)](#10-rest-client-reactive) | An architectural style for resource-oriented interactions, commonly using HTTP methods, resource identifiers and representations. |
+
+**OpenTelemetry tracing**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Trace span](#11-opentelemetry-tracing) | The record of a single operation within a distributed trace, related to other spans through trace context. |
+| [OpenTelemetry](#11-opentelemetry-tracing) | A standard and set of components for producing and transporting telemetry such as traces, metrics and logs. |
+| [Process](#11-opentelemetry-tracing) | A running program instance with its own identifier, credentials and execution state. |
+| [Telemetry](#11-opentelemetry-tracing) | Observations reported by systems, such as events, logs, metrics or traces. Source coverage and freshness determine which conclusions the data can support. |
+
+**Original runnable REST and persistence example**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Extensible Markup Language (XML)](#original-runnable-rest-and-persistence-example) | A structured document format using elements and attributes; namespaces and schema rules can affect how an API or parser interprets a document. |
+
 ## Places to learn
 
 This is not a complete list and is not meant to be consumed in full. Pick resources that match your Java background, then implement every public objective in one coherent 3.8 project. Estimated time includes selected reading or coding where stated; access and metadata can change.

@@ -58,7 +58,7 @@ Functions suit bounded event-driven work; API Gateway provides a managed API bou
 
 Treat Terraform configuration, provider constraints, modules, state, plans, policies, and promotion as one delivery system. Pin intentional versions, make inputs and outputs clear, protect remote state, and review saved plans before applying. Separate reusable modules from environment composition and avoid secrets in configuration, state, logs, or outputs.
 
-Resource Manager provides managed Terraform stacks, jobs, state, configuration sources, drift detection, and private endpoints. Give the stack principal only the permissions needed by its resources. A successful apply is not sufficient evidence: verify service behavior, alarms, policy boundaries, and rollback or forward-fix options.
+Resource Manager provides managed Terraform stacks, jobs, state, configuration sources, drift detection, and private endpoints. Check that the identity running the job has permission to operate on the target resources. [Oracle Resource Manager permissions evidence](../docs/research/2026-11-24-key-terms.md#oracle-resource-manager-job-permissions) A successful apply is not sufficient evidence: verify service behavior, alarms, policy boundaries, and rollback or forward-fix options.
 
 Drift requires a decision. Import or codify an approved emergency change, replace an invalid resource, or revert unauthorized state. Do not automatically overwrite production simply to make configuration and reality match.
 
@@ -119,6 +119,94 @@ Close the architecture loop with cost estimates, quotas, budgets, capacity tests
 - I can defend runtime, database, network, security, and recovery choices against credible alternatives.
 - I can deploy repeatably, trace least privilege, and prove failure and recovery behavior.
 - I can explain which facts Oracle publishes and which details remain intentionally unknown.
+
+## Key terms and phrases
+
+**High availability and disaster recovery**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Failure domain](#1-high-availability-and-disaster-recovery) | A group of dependencies vulnerable to the same disruption. Two replicas in one such group can fail together. |
+| [Failover](#1-high-availability-and-disaster-recovery) | Moving service to an alternate environment after failure, including traffic, data and other dependencies needed to serve users. |
+| [Availability](#1-high-availability-and-disaster-recovery) | The ability of a service to remain usable for the intended requests over a specified measurement period. |
+| [High availability (HA)](#1-high-availability-and-disaster-recovery) | Designing across failure boundaries so a service can continue or resume promptly after a component failure. |
+| [Disaster recovery (DR)](#1-high-availability-and-disaster-recovery) | Restoring a usable service after a major disruption, including data, dependencies, access and a tested recovery sequence. |
+| [Recovery point objective (RPO)](#1-high-availability-and-disaster-recovery) | The largest tolerable amount of lost recent data expressed as time. A 15-minute objective limits how far back recovery may fall. |
+| [Recovery time objective (RTO)](#1-high-availability-and-disaster-recovery) | The longest acceptable interval to return the service to usable operation after a disruption, including validation. |
+| [Failback](#1-high-availability-and-disaster-recovery) | Moving service back to the preferred location while preserving changes made during the recovery period. |
+| [Backup](#1-high-availability-and-disaster-recovery) | A retained copy created to support recovery. Validate it by restoring the relevant data and exercising the service that depends on it. |
+| [DNS](#1-high-availability-and-disaster-recovery) | The naming system resolving service names to addresses or other records. Correct resolution alone does not establish reachability. |
+| [Load balancer](#1-high-availability-and-disaster-recovery) | A component distributing incoming work among eligible backends under its routing and health policy. |
+| [Region](#1-high-availability-and-disaster-recovery) | A geographic area containing OCI infrastructure. Region choice affects service locality, latency, residency and recovery options. |
+| [Availability domain](#1-high-availability-and-disaster-recovery) | An infrastructure location isolated from other availability domains in the region, used when planning workload placement. |
+| [Fault domain](#1-high-availability-and-disaster-recovery) | A grouping within an availability domain that separates workloads across hardware and maintenance boundaries. |
+| [Disaster recovery protection group](#1-high-availability-and-disaster-recovery) | An OCI Full Stack Disaster Recovery grouping of resources that participate in a recovery plan. The grouping defines what must move or recover together. |
+| [Artifact](#1-high-availability-and-disaster-recovery) | A versioned deliverable produced from source, such as an image or deployment package, that can be tested and promoted. |
+
+**Cloud-native solutions**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Resource request](#2-cloud-native-solutions) | A Kubernetes workload’s declared CPU or memory need, used when placing it on suitable capacity. |
+| [Authentication](#2-cloud-native-solutions) | Establishing the identity used for a request, for example by validating a credential or identity assertion. |
+| [Instance pool](#2-cloud-native-solutions) | A group of instances managed together from a reusable configuration for scaling and availability. |
+| [Container Registry](#2-cloud-native-solutions) | An OCI repository service for versioned container images and manifests consumed by deployment environments. |
+| [Oracle Kubernetes Engine (OKE)](#2-cloud-native-solutions) | OCI’s managed Kubernetes service for running orchestrated container workloads on configured cluster capacity. |
+| [Function](#2-cloud-native-solutions) | Code invoked through OCI Functions for a bounded task, with runtime capacity and execution managed by the service. |
+| [Container digest](#2-cloud-native-solutions) | A content-derived image identifier used to select the exact artifact that passed previous checks. |
+| [Retry budget](#2-cloud-native-solutions) | A limit on repeated attempts to keep a temporary dependency failure from turning into runaway load. |
+| [Idempotency](#2-cloud-native-solutions) | Designing repeated delivery or repeated requests to yield one intended business effect instead of duplicating the change. |
+
+**Infrastructure as code**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Infrastructure drift](#3-infrastructure-as-code) | A difference between intended infrastructure and the deployed resources, often introduced by changes outside the delivery workflow. |
+| [Resource Manager job](#3-infrastructure-as-code) | An operation on a Terraform stack, such as creating a plan or applying it. The identity submitting an apply needs permission both to run the job and to make the target changes. |
+| [Deployment rollback](#3-infrastructure-as-code) | Restoring a previously working release or configuration after an unsuccessful change, with separate treatment for state already modified. |
+| [IAM policy](#3-infrastructure-as-code) | An authorization statement identifying who may perform which class of operations on which resources within a specified scope and conditions. |
+| [Terraform provider](#3-infrastructure-as-code) | The component translating Terraform resource definitions into service API operations under its configuration and credentials. |
+| [State file](#3-infrastructure-as-code) | Terraform’s mapping between declared resource addresses and remote objects. Protect access because state affects future changes and can contain sensitive values. |
+| [Resource Manager stack](#3-infrastructure-as-code) | A managed Terraform configuration and state on which OCI Resource Manager can run plan or apply jobs. |
+| [Drift detection](#3-infrastructure-as-code) | Checking for differences between deployed infrastructure and the state or configuration expected by its management workflow. |
+
+**Security architecture**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Resource principal](#4-security-architecture) | An identity through which a supported OCI resource can authenticate to another service under scoped policy. |
+| [Authorization](#4-security-architecture) | Evaluating whether the requesting identity may take a particular action on a particular resource within the applicable scope. |
+| [Federation](#4-security-architecture) | Trusting an external identity provider’s assertions so people can authenticate through their established organization identity. |
+| [Network segmentation](#4-security-architecture) | Dividing a network into controlled communication boundaries to limit reachability and the impact of a failure or compromise. |
+| [Secret rotation](#4-security-architecture) | Replacing a secret under controlled conditions, confirming that its consumers use the replacement before retiring the old credential. |
+| [Compartment](#4-security-architecture) | A logical OCI grouping for resources, policy scope, ownership and cost reporting, which can span regions. |
+| [Dynamic group](#4-security-architecture) | An OCI grouping whose membership rules identify resources that can be granted permissions through policy. |
+| [Instance principal](#4-security-architecture) | An OCI identity allowing a compute instance to call services under granted permissions without an embedded user API key. |
+| [Break-glass access](#4-security-architecture) | An exceptional, controlled access path for recovery when normal administrative access is unavailable, with auditing and review. |
+| [Security list](#4-security-architecture) | A set of traffic rules associated with a subnet and applied to its VNICs under OCI networking rules. |
+| [Network security group (NSG)](#4-security-architecture) | Traffic rules applied to chosen VNICs or other supported resource endpoints rather than every VNIC in a subnet. |
+| [Vault](#4-security-architecture) | OCI’s service for centrally managing cryptographic keys and secrets under access policy and lifecycle controls. |
+| [Bastion](#4-security-architecture) | A service for controlled, time-bounded administrative sessions to eligible private resources. |
+| [Web application firewall (WAF)](#4-security-architecture) | An application-layer control inspecting web requests against configured access and protection rules. |
+| [Network Firewall](#4-security-architecture) | A network security service enforcing inspection and traffic policy on routed flows that pass through it. |
+
+**Database architecture**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Restore target](#5-database-architecture) | The environment and recovery point to which a backup must be restored so the application can resume under its recovery objectives. |
+| [Restore](#5-database-architecture) | Recreating data or a resource from a retained recovery copy, followed by checks that it meets the intended recovery point. |
+
+**Observability and architecture governance**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Service-level indicator (SLI)](#6-observability-and-architecture-governance) | A measurement of user-facing behavior, such as the proportion of successful requests, used to evaluate service objectives. |
+| [Audit log](#6-observability-and-architecture-governance) | Records of administrative actions that help identify who performed an operation, on what resource and when. |
+| [Resource quota](#6-observability-and-architecture-governance) | An administrative limit on a resource category within a defined scope, which can prevent creation even when infrastructure is healthy. |
+| [Metric](#6-observability-and-architecture-governance) | A numeric measurement recorded over time, such as failed requests or queue depth, with defined units and dimensions. |
+| [Budget](#6-observability-and-architecture-governance) | A target for planned spending with alerts that support investigation when spending approaches an agreed threshold. |
+| [Monitoring alarm](#6-observability-and-architecture-governance) | A rule that evaluates a metric query over time and signals a state change when the configured condition is met. |
 
 ## Places to learn
 

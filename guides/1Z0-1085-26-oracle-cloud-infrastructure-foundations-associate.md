@@ -107,6 +107,95 @@ Use tags for ownership and allocation, budgets and alerts for visibility, quotas
 - I distinguish preventive controls, detective signals, and recovery evidence.
 - I can complete the labs without retaining broad credentials or unexpected billable resources.
 
+## Key terms and phrases
+
+**OCI structure and responsibility**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Tenancy](#1-oci-structure-and-responsibility) | The top-level OCI account boundary that contains an organization’s cloud resources and identity configuration. |
+| [Compartment](#1-oci-structure-and-responsibility) | A logical grouping of resources used to delegate access, apply policies and track ownership or cost across regions. |
+| [Availability](#1-oci-structure-and-responsibility) | The ability of a service to remain usable for the intended requests over a specified measurement period. |
+| [Latency](#1-oci-structure-and-responsibility) | The time for a request or operation to complete, measured at a specified boundary from the selected start to finish. |
+| [Region](#1-oci-structure-and-responsibility) | A geographic area containing OCI infrastructure. Region choice affects service locality, latency, residency and recovery options. |
+| [Availability domain](#1-oci-structure-and-responsibility) | An infrastructure location isolated from other availability domains in the region, used when planning workload placement. |
+| [Fault domain](#1-oci-structure-and-responsibility) | A grouping within an availability domain that separates workloads across hardware and maintenance boundaries. |
+
+**Identity and access**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Identity domain](#2-identity-and-access) | A boundary for managing identities, applications and authentication settings. |
+| [Authentication](#2-identity-and-access) | Establishing the identity used for a request, for example by validating a credential or identity assertion. |
+| [Least privilege](#2-identity-and-access) | Granting only the access a specific identity needs for its assigned work, then checking both allowed and denied actions. |
+| [Federation](#2-identity-and-access) | Trusting an external identity provider’s assertions so people can authenticate through their established organization identity. |
+| [Resource quota](#2-identity-and-access) | An administrative limit on a resource category within a defined scope, which can prevent creation even when infrastructure is healthy. |
+| [Group](#2-identity-and-access) | A collection of identities to which access can be granted through a policy, reducing the need to manage permissions user by user. |
+| [IAM policy](#2-identity-and-access) | An authorization statement identifying who may perform which class of operations on which resources within a specified scope and conditions. |
+
+**Networking and delivery**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Virtual cloud network (VCN)](#3-networking-and-delivery) | A software-defined regional network in which subnets, addresses and routing connect OCI resources. |
+| [Health check](#3-networking-and-delivery) | A targeted test of a component’s ability to perform a particular task. Its scope determines what a successful result proves. |
+| [Encryption in transit](#3-networking-and-delivery) | Protecting data while it travels between endpoints, commonly through authenticated TLS connections. |
+| [DNS](#3-networking-and-delivery) | The naming system resolving service names to addresses or other records. Correct resolution alone does not establish reachability. |
+| [Load balancer](#3-networking-and-delivery) | A component distributing incoming work among eligible backends under its routing and health policy. |
+| [Subnet](#3-networking-and-delivery) | An address range inside a VCN used to place network interfaces and associate applicable route and security settings. |
+| [Route table](#3-networking-and-delivery) | Rules selecting a next hop based on destination. A matching route supplies a path, while security controls separately determine permitted traffic. |
+| [Security list](#3-networking-and-delivery) | A set of traffic rules associated with a subnet and applied to its VNICs under OCI networking rules. |
+| [Network security group (NSG)](#3-networking-and-delivery) | Traffic rules applied to chosen VNICs or other supported resource endpoints rather than every VNIC in a subnet. |
+| [Internet gateway](#3-networking-and-delivery) | A VCN gateway providing a route for public internet traffic when addressing, routes and security rules allow it. |
+| [NAT gateway](#3-networking-and-delivery) | A gateway enabling eligible private resources to initiate internet connections without assigning them public IP addresses. |
+| [Dynamic routing gateway (DRG)](#3-networking-and-delivery) | A virtual router joining attached networks or connectivity resources, with route policies determining which paths are available. |
+| [Peering](#3-networking-and-delivery) | Connecting separate networks to exchange traffic privately under the applicable routing, address-space and security rules. |
+| [Backend set](#3-networking-and-delivery) | A load balancer’s pool of servers together with the policy and checks used to choose eligible backends. |
+| [Listener](#3-networking-and-delivery) | The load balancer configuration accepting a particular protocol and port and directing matching traffic toward a backend. |
+
+**Compute, containers, and serverless**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Compute shape](#4-compute-containers-and-serverless) | The configuration of processing, memory and related capabilities available to a compute instance. |
+| [Control plane](#4-compute-containers-and-serverless) | The management interfaces and services that configure resources and policies, as distinct from using the configured workload. |
+| [Instance configuration](#4-compute-containers-and-serverless) | A reusable specification of the settings needed to launch instances consistently, often used by an instance pool. |
+| [Instance pool](#4-compute-containers-and-serverless) | A group of instances managed together from a reusable configuration for scaling and availability. |
+| [Autoscaling](#4-compute-containers-and-serverless) | Adjusting capacity when a defined condition or schedule warrants it, subject to limits, capacity and application readiness. |
+| [Oracle Kubernetes Engine (OKE)](#4-compute-containers-and-serverless) | OCI’s managed Kubernetes service for running orchestrated container workloads on configured cluster capacity. |
+| [Function](#4-compute-containers-and-serverless) | Code invoked through OCI Functions for a bounded task, with runtime capacity and execution managed by the service. |
+
+**Storage and databases**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Object storage](#5-storage-and-databases) | Storage that organizes data as individually addressed objects in buckets, accessed through a service interface. |
+| [Block volume](#5-storage-and-databases) | Disk-like storage presented to a compute instance for workloads that read and write blocks. |
+| [Backup](#5-storage-and-databases) | A retained copy created to support recovery. Validate it by restoring the relevant data and exercising the service that depends on it. |
+| [Restore](#5-storage-and-databases) | Recreating data or a resource from a retained recovery copy, followed by checks that it meets the intended recovery point. |
+| [File storage](#5-storage-and-databases) | Shared hierarchical storage enabling multiple eligible clients to work with files and directories through a filesystem protocol. |
+
+**Security and cost**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Budget alert](#6-security-and-cost) | A notification tied to a spending threshold that helps an owner investigate usage and costs. |
+| [Alert](#6-security-and-cost) | A notification that a configured condition was met, requiring interpretation with its time window, source and affected scope. |
+| [Encryption at rest](#6-security-and-cost) | Protecting persisted data through encryption, with access to keys and backups forming part of the protection boundary. |
+| [Network segmentation](#6-security-and-cost) | Dividing a network into controlled communication boundaries to limit reachability and the impact of a failure or compromise. |
+| [Service limit](#6-security-and-cost) | A tenancy’s allowed service resource capacity under provider rules, distinct from a compartment quota an administrator sets. |
+| [Cost allocation tag](#6-security-and-cost) | A metadata label used to attribute resources or consumption to an owner, environment or cost center. |
+| [Vault](#6-security-and-cost) | OCI’s service for centrally managing cryptographic keys and secrets under access policy and lifecycle controls. |
+| [Security Zone](#6-security-and-cost) | An OCI scope in which preventive security policy restricts resource configurations that violate its requirements. |
+| [Cloud Guard](#6-security-and-cost) | OCI’s service for identifying risky activity or configuration and helping operators investigate or respond to detected problems. |
+
+**Original readiness checks**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Service gateway](#original-readiness-checks) | An OCI gateway providing a private route from a VCN to supported services in the Oracle Services Network. |
+| [Metric](#answer-guide) | A numeric measurement recorded over time, such as failed requests or queue depth, with defined units and dimensions. |
+
 ## Places to learn
 
 This is a selective learning path, not a complete list of OCI resources.

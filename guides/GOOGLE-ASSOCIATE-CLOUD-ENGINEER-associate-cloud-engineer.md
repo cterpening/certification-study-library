@@ -474,6 +474,77 @@ These are original concept checks, not recalled exam items. Answer before openin
 
 > **Related items remain contextual:** They help connect exam tasks to architecture, security, reliability, and operations. The published exam guide—not the callout—defines assessable scope.
 
+## Key terms and phrases
+
+**Setting up a cloud solution environment**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Project](#resource-hierarchy-and-guardrails) | The Google Cloud resource that groups workloads and serves as a boundary for many permissions, quotas and billing decisions. |
+| [Resource hierarchy](#resource-hierarchy-and-guardrails) | The organization, folders, projects and resources through which Google Cloud organizes ownership and inherited policies. |
+| [Organization policy](#resource-hierarchy-and-guardrails) | A set of constraints on how resources may be configured within the hierarchy, such as limiting acceptable locations. |
+| [Organization, folder and project](#resource-hierarchy-and-guardrails) | Organization is the top-level ownership boundary, folders group resources, and projects hold workloads. Policies can be inherited down this hierarchy. |
+| [Billing account](#resource-hierarchy-and-guardrails) | The account to which a project's charges are billed. Access to billing information and permission to deploy resources are separate. |
+| [IAM binding](#resource-hierarchy-and-guardrails) | Associates one role with one or more principals on a resource, optionally subject to a condition. |
+| [Subnet](#networking-and-location-foundation) | A regional resource that supplies IP address ranges in a VPC network. A subnet can have a primary range and additional ranges for workloads that need them. |
+| [VPC Network Peering](#networking-and-location-foundation) | Privately connects two VPC networks for eligible routes. Peering alone does not provide a transit path through a third network. |
+| [Shared VPC](#networking-and-location-foundation) | Allows service projects to use networking managed in a host project, separating application ownership from shared network administration. |
+| [Service quota](#observability-assets-quotas-and-ai-assistance) | A limit on resource use or request volume within a specified scope. Reaching it can block work even when funds are available. |
+| [Cloud Monitoring](#observability-assets-quotas-and-ai-assistance) | Tracks time-series measurements and alerts on conditions such as elevated error rate or latency. |
+| [Cloud Logging](#observability-assets-quotas-and-ai-assistance) | Collects log entries that can be searched, retained or routed. A structured entry can expose request IDs and fields for investigation. |
+| [Cloud Audit Logs](#observability-assets-quotas-and-ai-assistance) | Records supported administrative or data-access activity, helping operators establish who performed an action on a resource. |
+| [Budget alert](#billing-configuration) | A notification tied to actual or forecast spending against a budget. Receiving it leaves a separate decision about how to control costs. |
+
+**Planning and implementing a cloud solution**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Managed instance group (MIG)](#choose-compute-by-operating-responsibility) | A group of VM instances managed from an instance template. The group can replace unhealthy instances or scale as configured. |
+| [Cloud Run](#choose-compute-by-operating-responsibility) | Runs containerized services or jobs on a managed platform. Choose a service for a request endpoint and a job for work that runs to completion. |
+| [Compute Engine](#choose-compute-by-operating-responsibility) | Provides virtual machines. Teams choose machine shape, disk and networking and manage the guest operating system. |
+| [Idempotency](#choose-compute-by-operating-responsibility) | The property that retrying the same intended operation does not apply its effect twice. An order API can remember the request identifier. |
+| [Pub/Sub](#choose-compute-by-operating-responsibility) | A messaging service in which publishers send messages to a topic and subscriptions track delivery to consumers independently. |
+| [Google Kubernetes Engine (GKE)](#choose-compute-by-operating-responsibility) | A managed Kubernetes environment for running and operating containerized workloads. |
+| [Cloud Load Balancing](#choose-compute-by-operating-responsibility) | Distributes traffic among configured backends. Protocol, client location and reachability guide the load balancer choice. |
+| [Health check](#choose-compute-by-operating-responsibility) | A test used to decide whether a target can serve traffic. A reachable process can still fail a check for a required dependency. |
+| [Storage class](#data-and-storage-selection) | A Cloud Storage choice that affects the economics of storing and retrieving an object. Access patterns help determine the fit. |
+| [Cloud Storage](#data-and-storage-selection) | Stores objects in buckets. A file-like object name does not by itself give an application the behavior of a shared POSIX file system. |
+| [Cloud SQL](#data-and-storage-selection) | A managed relational database service for supported SQL engines. It suits applications that depend on relational queries and transactions. |
+| [Firestore](#data-and-storage-selection) | A managed document database storing records in collections. Document boundaries influence what an application can retrieve efficiently. |
+| [Bigtable](#data-and-storage-selection) | A wide-column store optimized for high-throughput access by row key and key range. Start the data model with the main read and write paths. |
+| [Dataflow](#data-and-storage-selection) | A managed service for running Apache Beam batch and streaming pipelines, including windowed processing of events. |
+| [Spanner](#data-and-storage-selection) | A distributed relational database for workloads that need transactions and horizontal scale. Schema and key design still shape performance. |
+| [Cloud Interconnect](#network-implementation) | A dedicated or partner-provided network connection into Google Cloud. Connectivity still requires routing and an appropriate redundancy design. |
+| [Cloud NAT](#network-implementation) | Translates addresses for supported outbound connections. It does not make a private VM a publicly addressable server. |
+| [Cloud VPN](#network-implementation) | Connects networks using encrypted IPsec tunnels. Effective availability depends on tunnel, gateway and peer design. |
+| [Infrastructure as code (IaC)](#provision-consistently) | A versioned description of infrastructure that tools can build or update. Reviewing the proposed changes helps catch unintended replacements. |
+
+**Ensuring successful operation**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Artifact Registry](#operate-compute-safely) | Stores versioned build outputs such as container images. A digest identifies the immutable content used in a deployment. |
+| [Backpressure](#operate-compute-safely) | A downstream stage forcing producers to slow or pause. If 120 events arrive per second and only 100 leave, backlog initially grows by 20 per second. |
+| [BigQuery](#operate-data-and-storage) | Google's managed analytical warehouse for querying large datasets with SQL. Column selection and partition filters help reduce work. |
+| [Least privilege](#operate-data-and-storage) | Limiting an identity to the actions and resources required for its work. A read-only reporting job needs no permission to modify its source. |
+| [Customer-managed encryption key (CMEK)](#operate-data-and-storage) | A key the customer manages for a supported service. Key location, service identity access and key availability can all affect the protected workload. |
+| [Cloud DNS](#operate-the-network) | Hosts DNS zones and records. Public and private zones make names visible to different sets of clients. |
+| [Service level indicator (SLI)](#monitoring-logging-and-diagnosis) | A measurement of the service users actually receive, such as successful eligible requests divided by all eligible requests. |
+| [Error budget](#monitoring-logging-and-diagnosis) | The unreliability a service level objective allows. A 99.9% success target over 100,000 eligible requests leaves a budget of 100 failed requests for that window. |
+
+**Configuring access and security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Identity and Access Management (IAM) role](#iam-policies-and-roles) | A named collection of permissions. A policy binding grants the role to a principal at a chosen resource scope. |
+| [Predefined role](#iam-policies-and-roles) | A Google-maintained collection of permissions for a particular kind of work. Check the included permissions before assignment. |
+| [Custom role](#iam-policies-and-roles) | An organization- or project-defined set of supported permissions used when predefined roles do not fit the task. |
+| [Service account](#service-accounts-and-federation) | An identity used by a workload to call services. It can receive its own roles independently of the human who deployed it. |
+| [Workload Identity Federation](#service-accounts-and-federation) | A way to let an external workload exchange trusted identity evidence for short-lived Google Cloud access without distributing a service account key. |
+| [Federation](#service-accounts-and-federation) | Accepting trusted identity assertions from another provider so users or workloads can access resources without a separate long-lived credential. |
+| [Service account impersonation](#service-accounts-and-federation) | Using authorized short-lived credentials to act as a service account. The ability to impersonate it is separate from its own resource permissions. |
+| [Workload identity](#service-accounts-and-federation) | An identity for software such as a service or batch job. It enables permissions to follow the workload itself. |
+
 ## Places to learn
 
 This is intentionally **not a complete list**, and it is not a prescription to consume everything. Pick one coherent teaching route, use first-party documentation to close its version gaps, spend substantial time hands-on, and use assessments only to locate weak objectives. Public metadata was checked October 28, 2026. Distinguish card totals from overall schedule estimates; add lab, note, review and troubleshooting time. Paid course interiors and provider labs were not accessed.

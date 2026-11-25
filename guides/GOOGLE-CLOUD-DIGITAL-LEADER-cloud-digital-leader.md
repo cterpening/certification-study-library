@@ -506,6 +506,84 @@ If a resource predates the launch, verify it covers the new equalized first-five
 
 > **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
 
+## Key terms and phrases
+
+**Digital Transformation with Google Cloud**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Change management](#transformation-starts-with-an-outcome) | The work of preparing people, processes and responsibilities for a new way of working and checking that it is adopted effectively. |
+| [Horizontal scaling](#transformation-starts-with-an-outcome) | Adding instances or workers to serve more work in parallel. A shared database can still limit throughput. |
+| [High availability](#transformation-starts-with-an-outcome) | Designing a service to keep operating through defined faults, such as losing an instance or zone. |
+| [Infrastructure as a service (IaaS)](#deployment-and-service-models-move-boundaries) | Renting compute, networking and storage while retaining responsibility for the guest operating system and applications. |
+| [Software as a service (SaaS)](#deployment-and-service-models-move-boundaries) | Using a provider-operated application. The customer still manages who can use it and what data they put into it. |
+| [Data residency](#network-geography-affects-experience-and-resilience) | A requirement about the locations in which data may be stored or processed. Backups and logs can fall within the same requirement. |
+
+**Exploring Data Transformation with Google Cloud**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Data governance](#govern-the-data-supply-chain) | The responsibilities and rules for who may use data, how it is protected, and how its quality and origin can be checked. |
+| [Data warehouse](#select-a-data-service-from-workload-shape) | A system designed to analyze large datasets across many records. BigQuery is Google's managed warehouse service. |
+| [Cloud Storage](#select-a-data-service-from-workload-shape) | Stores objects in buckets. A file-like object name does not by itself give an application the behavior of a shared POSIX file system. |
+| [Firestore](#select-a-data-service-from-workload-shape) | A managed document database storing records in collections. Document boundaries influence what an application can retrieve efficiently. |
+| [Bigtable](#select-a-data-service-from-workload-shape) | A wide-column store optimized for high-throughput access by row key and key range. Start the data model with the main read and write paths. |
+| [Spanner](#select-a-data-service-from-workload-shape) | A distributed relational database for workloads that need transactions and horizontal scale. Schema and key design still shape performance. |
+| [Dataflow](#turn-data-into-decisions) | A managed service for running Apache Beam batch and streaming pipelines, including windowed processing of events. |
+| [Pub/Sub](#turn-data-into-decisions) | A messaging service in which publishers send messages to a topic and subscriptions track delivery to consumers independently. |
+
+**Innovating with Google Cloud Artificial Intelligence**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Machine learning](#separate-analytics-ml-generative-ai-and-agents) | Learning patterns from example data to make predictions or decisions on new inputs, such as estimating demand. |
+| [Responsible AI](#separate-analytics-ml-generative-ai-and-agents) | Practices for assessing an AI system's safety, fairness, privacy and accountability throughout its use. |
+| [BigQuery](#buy-adapt-or-build) | Google's managed analytical warehouse for querying large datasets with SQL. Column selection and partition filters help reduce work. |
+| [Grounding](#buy-adapt-or-build) | Connecting an answer to evidence the model can use when responding, such as approved product documentation. |
+| [Foundation model](#buy-adapt-or-build) | A model trained broadly enough to support many tasks. Prompts or further training can adapt it to a business use case. |
+| [Retrieval-augmented generation (RAG)](#evaluation-and-safety-are-lifecycle-concerns) | A design that retrieves relevant material and places it in the model's context before it generates the answer. |
+
+**Modernize Infrastructure and Applications**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Rehosting](#select-a-migration-path-per-workload) | Moving an application to new infrastructure with few changes to its design. It can accelerate migration while carrying over operational work. |
+| [Google Kubernetes Engine (GKE)](#compute-choice-is-an-ownership-choice) | A managed Kubernetes environment for running and operating containerized workloads. |
+| [Cloud Run](#compute-choice-is-an-ownership-choice) | Runs containerized services or jobs on a managed platform. Choose a service for a request endpoint and a job for work that runs to completion. |
+| [Cloud SQL](#compute-choice-is-an-ownership-choice) | A managed relational database service for supported SQL engines. It suits applications that depend on relational queries and transactions. |
+| [Virtual machine (VM)](#compute-choice-is-an-ownership-choice) | A software-defined computer with its own operating system. It can run applications requiring control of the OS and installed packages. |
+| [Cloud Load Balancing](#compute-choice-is-an-ownership-choice) | Distributes traffic among configured backends. Protocol, client location and reachability guide the load balancer choice. |
+| [Compute Engine](#compute-choice-is-an-ownership-choice) | Provides virtual machines. Teams choose machine shape, disk and networking and manage the guest operating system. |
+
+**Trust and Security with Google Cloud**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Least privilege](#use-identity-and-defense-in-depth) | Granting people and workloads only the access needed for their tasks, at the narrowest practical scope. |
+| [Security Command Center](#use-identity-and-defense-in-depth) | Collects security findings and posture information so owners can prioritize and investigate affected resources. |
+| [Sensitive Data Protection](#use-identity-and-defense-in-depth) | Inspects or transforms sensitive information using configured detectors and rules, such as replacing identifiers before analysis. |
+| [Organization policy](#use-identity-and-defense-in-depth) | A set of constraints on how resources may be configured within the hierarchy, such as limiting acceptable locations. |
+| [Cloud Interconnect](#use-identity-and-defense-in-depth) | A dedicated or partner-provided network connection into Google Cloud. Connectivity still requires routing and an appropriate redundancy design. |
+| [Cloud Armor](#use-identity-and-defense-in-depth) | Applies security policies at supported Google Cloud application edges, for example filtering incoming web requests. |
+| [Encryption in transit](#use-identity-and-defense-in-depth) | Protecting information while it travels between endpoints, typically through an authenticated encrypted connection. |
+| [Encryption at rest](#use-identity-and-defense-in-depth) | Protecting stored data with encryption. Who can use the decryption key is part of the access decision. |
+| [Workload identity](#use-identity-and-defense-in-depth) | An identity for software such as a service or batch job. It enables permissions to follow the workload itself. |
+| [Identity and Access Management (IAM) role](#use-identity-and-defense-in-depth) | A named collection of permissions. A policy binding grants the role to a principal at a chosen resource scope. |
+
+**Scaling with Google Cloud Operations**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Organization, folder and project](#financial-governance-joins-people-process-and-technology) | Organization is the top-level ownership boundary, folders group resources, and projects hold workloads. Policies can be inherited down this hierarchy. |
+| [Resource hierarchy](#financial-governance-joins-people-process-and-technology) | The organization, folders, projects and resources through which Google Cloud organizes ownership and inherited policies. |
+| [Service quota](#financial-governance-joins-people-process-and-technology) | A limit on resource use or request volume within a specified scope. Reaching it can block work even when funds are available. |
+| [Total cost of ownership (TCO)](#financial-governance-joins-people-process-and-technology) | All costs over the chosen period, including integration, serving, human review, support and change management. |
+| [Service level objective (SLO)](#reliability-is-an-observed-system-property) | A target for a measurable aspect of the user experience, such as the fraction of requests completed successfully over a month. |
+| [Failover](#reliability-is-an-observed-system-property) | Moving service to an alternative when the current serving location or component becomes unavailable. |
+| [Service level agreement (SLA)](#reliability-is-an-observed-system-property) | A service commitment with agreed terms and consequences. Its measurement conditions must be read before comparing it with an internal reliability target. |
+| [Error budget](#reliability-is-an-observed-system-property) | The unreliability a service level objective allows. A 99.9% success target over 100,000 eligible requests leaves a budget of 100 failed requests for that window. |
+| [Service level indicator (SLI)](#decision-worksheet-a-lower-bill-can-conceal-a-worse-outcome) | A measurement of the service users actually receive, such as successful eligible requests divided by all eligible requests. |
+
 ## Places to learn
 
 This is not a complete list and is not meant to be consumed in full. Pick one primary explanation path, use the official guide as the scope boundary, add hands-on decision practice, and use explanation-led questions only to find weak areas. Durations are provider estimates or transparent reading/practice estimates and will change.

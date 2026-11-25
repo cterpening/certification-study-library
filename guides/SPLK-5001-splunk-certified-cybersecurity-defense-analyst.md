@@ -463,6 +463,95 @@ These original explanations correspond to the 40 prompts above. They are study f
 
 The current [Enterprise Security 8.7 release notes](https://help.splunk.com/en/splunk-enterprise-security-8/release-notes-and-resources/8.7/splunk-enterprise-security-release-notes/release-notes-for-splunk-enterprise-security) say 8.7.2 released October 23, 2026 with a bug fix and no listed enhancements. Earlier 8.7 releases add AI SOC Analyst and Connector Builder Agent features whose edition, deployment, and enablement conditions differ. The notes also warn that ES 8.x upgrade is one-way, does not automatically back up app/content/data, and can affect older investigations; confirm the exact version and complete an approved full search-head/KV Store backup before a real upgrade. These are volatile product examples, not SPLK-5001 requirements; no ES instance or entitlement was used.
 
+## Key terms and phrases
+
+**The cyber landscape, frameworks, and standards**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Security operations center (SOC)](#separate-soc-responsibilities) | The people and operating processes responsible for monitoring, investigating and coordinating response to security events. |
+| [Threat intelligence](#separate-soc-responsibilities) | Information about threats assessed for relevance to a decision or environment. Origin, confidence and age affect how it should be used. |
+| [MITRE ATT&CK](#use-frameworks-as-lenses-not-labels) | A knowledge base for describing observed adversary behavior. Analysts use it to name behaviors consistently and examine detection coverage. |
+| [Data retention](#use-frameworks-as-lenses-not-labels) | How long evidence is kept and made available under the applicable business or regulatory purpose. Investigation needs and collection costs inform the policy. |
+| [Residual risk](#reason-about-assurance-and-risk) | The exposure remaining after controls operate. A named decision-maker accepts it or requests further treatment. |
+| [Evidence provenance](#reason-about-assurance-and-risk) | Documentation of the origin and handling of evidence so another reviewer can trace how a conclusion was reached. |
+
+**Threat and attack types, motivations, and tactics**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Tactic](#2-threat-and-attack-types-motivations-and-tactics-20) | In ATT&CK, the objective an adversary is trying to achieve. It groups techniques by purpose. |
+| [Indicator of compromise (IOC)](#connect-intelligence-ttps-and-annotations) | An observable item such as a file hash or domain that can support an investigation when interpreted with time and context. |
+| [Confidence](#connect-intelligence-ttps-and-annotations) | An assessment of how strongly available evidence supports an intelligence judgment. Confidence and business impact answer different questions. |
+| [Intelligence lifecycle](#connect-intelligence-ttps-and-annotations) | A cycle of defining needs, collecting information, analyzing it and delivering intelligence that informs a decision. |
+| [Operational intelligence](#connect-intelligence-ttps-and-annotations) | Intelligence about campaigns or patterns of activity that can guide defensive priorities and preparations. |
+
+**Defenses, data sources, and SIEM best practices**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Security information and event management (SIEM)](#3-defenses-data-sources-and-siem-best-practices-20) | A system for collecting and correlating security telemetry so analysts can detect, investigate and report activity across sources. |
+| [Source](#match-evidence-to-the-question) | The file, stream or other input from which data came. Different sources can share a sourcetype when their records use the same format. |
+| [Schema](#match-evidence-to-the-question) | The expected fields and types of an event or dataset. Changing a field name can silently break a dependent detection. |
+| [Host](#match-evidence-to-the-question) | Metadata identifying the host associated with an event. Check how it was assigned before using it as a device identity. |
+| [Common Information Model (CIM)](#understand-cim-data-models-and-acceleration) | Splunk's shared vocabulary of fields, tags and datasets for comparing equivalent activity from different data sources. |
+| [Data model](#understand-cim-data-models-and-acceleration) | A hierarchy of datasets with defined constraints and fields. Pivot and acceleration can use this agreed structure. |
+| [`tstats`](#understand-cim-data-models-and-acceleration) | Computes statistics over indexed fields or eligible accelerated data model summaries, subject to the data and fields available there. |
+| [Index](#understand-cim-data-models-and-acceleration) | A named store for event or metric data, with access and retention settings governing who can search it and for how long. |
+| [Event tag](#understand-cim-data-models-and-acceleration) | A label attached to a field-value pair that can group equivalent events across different formats or source names. |
+| [Technology add-on (TA)](#understand-cim-data-models-and-acceleration) | A package of data onboarding or normalization settings for a technology, often including input, parsing or field definitions. |
+| [Scheduled search](#understand-cim-data-models-and-acceleration) | A saved search run at defined intervals. The schedule and search window together determine which events are examined. |
+| [Data normalization](#understand-cim-data-models-and-acceleration) | Mapping fields, values and units from different sources into a common meaning before correlating them. |
+| [Indexer](#understand-cim-data-models-and-acceleration) | Processes or stores indexed data and runs the portion of a distributed search assigned to its local data. |
+| [Data source coverage](#assess-source-coverage-with-es-and-security-essentials) | The share of relevant systems or activities for which the expected telemetry is available and usable. |
+| [Sourcetype](#assess-source-coverage-with-es-and-security-essentials) | A classification of the data's format that influences parsing and field extraction. Two sources can produce the same sourcetype. |
+| [Detection hypothesis](#assess-source-coverage-with-es-and-security-essentials) | A testable proposition about an observable behavior and the evidence that would support or weaken it. |
+| [Search macro](#assess-source-coverage-with-es-and-security-essentials) | A named SPL fragment expanded when a search runs. Arguments let several searches reuse the same structure. |
+
+**Investigation, event handling, correlation, and risk**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Index-time processing](#keep-investigation-evidence-reproducible) | Processing applied before data is stored, such as timestamp recognition. A mistake here can affect every later search. |
+| [Mean time to detect (MTTD)](#keep-investigation-evidence-reproducible) | The average elapsed time from a defined incident start to detection. A mean over only detected incidents cannot measure undetected cases. |
+| [Disposition](#triage-findings-and-dispositions) | An analyst's recorded conclusion about a finding, with evidence supporting the decision to close or escalate it. |
+| [Triage](#triage-findings-and-dispositions) | Reviewing a finding's evidence, impact and urgency to decide whether it should be escalated, enriched or closed. |
+| [False positive](#triage-findings-and-dispositions) | An alert generated by activity that fails to meet the rule's intended threat condition. |
+| [Correlation search](#triage-findings-and-dispositions) | Detection logic that evaluates related activity to produce findings or risk observations under defined conditions. |
+| [Risk object](#triage-findings-and-dispositions) | The entity to which a detection assigns risk observations, such as a host or user. |
+| [Risk score](#triage-findings-and-dispositions) | A numerical contribution to a risk assessment under configured rules. Interpret it in light of source quality and entity context. |
+| [Incident severity](#triage-findings-and-dispositions) | A rating of impact and urgency that guides escalation and response decisions under agreed criteria. |
+| [Risk-based alerting (RBA)](#reason-about-correlation-and-risk-based-alerting) | Combining risk observations for an entity over time so analysts can investigate a pattern whose individual events might have low significance. |
+| [Correlation](#reason-about-correlation-and-risk-based-alerting) | Connecting events by a defensible relationship, such as a shared user and time interval, to test an investigative hypothesis. |
+| [Time range](#reason-about-correlation-and-risk-based-alerting) | The interval a search covers. Use bounds that match event time and known ingestion delay before treating an empty result as evidence. |
+
+**SPL and efficient searching**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Event](#choose-commands-from-the-evidence-shape) | One occurrence represented in the data, with a timestamp and associated metadata. A multiline log entry can be a single event. |
+| [`stats`](#choose-commands-from-the-evidence-shape) | Turns a result set into aggregate rows. Counting by host produces one row for each host value in the grouping. |
+| [Multivalue field](#choose-commands-from-the-evidence-shape) | One field containing several values in a result. Expanding it changes the row count and can change aggregate totals. |
+| [`eventstats`](#choose-commands-from-the-evidence-shape) | Adds an aggregate to the existing event rows. Each row can then be compared with its group's average. |
+| [Search Processing Language (SPL)](#original-spl-demonstrations-not-executed) | The language Splunk uses to retrieve events and pass results through commands that filter, enrich, group or display them. |
+| [`_time`](#original-spl-demonstrations-not-executed) | The event timestamp used for time-based searching. A parsing error or an unexpected time zone can move an event outside the search range. |
+| [`eval`](#original-spl-demonstrations-not-executed) | Calculates or assigns field values in a search, such as deriving elapsed time from two timestamps. |
+| [`streamstats`](#original-spl-demonstrations-not-executed) | Computes a running or windowed statistic in the current event order. Sort first when the calculation must follow event time. |
+| [`sort`](#original-spl-demonstrations-not-executed) | Orders result rows by the chosen fields. Decide whether a value should be compared numerically or as text. |
+| [Search head](#make-searches-bounded-and-explainable) | Accepts searches, coordinates work across search peers and presents combined results to the user. |
+| [Search job](#make-searches-bounded-and-explainable) | One execution of a search with its own time range, progress and results. Its job details can help explain cost or missing data. |
+
+**Threat hunting and remediation**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Threat hunt](#select-a-hunt-technique) | A hypothesis-led investigation that searches available evidence for behavior existing alerts may have missed. |
+| [Technique](#select-a-hunt-technique) | A described way of achieving an adversary objective. Defenders map relevant telemetry and controls to the behavior. |
+| [Playbook](#govern-response-and-automation) | An orchestration workflow defining actions and decision points for a case. Place approval before consequential actions. |
+| [SOAR](#govern-response-and-automation) | Security orchestration, automation and response. It connects cases, tools and workflows while retaining controls over who can act. |
+| [Enrichment](#govern-response-and-automation) | Adding context such as asset criticality, identity or indicator history to an observation before deciding what it means. |
+| [Containment](#govern-response-and-automation) | Limiting an incident's reach while preserving evidence and keeping the recovery path available. |
+
 ## Places to learn
 
 This is not a complete list, and it is not a prescription to consume everything. Start with the official blueprint, then choose courses, documentation, videos, books or labs that close your measured gaps. Durations are publisher-listed or clearly labeled estimates and can change.

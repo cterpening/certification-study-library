@@ -191,6 +191,81 @@ These are original prompts, not Fortinet exam questions.
 - Practice incident answers that separate facts, hypotheses, confidence, gaps, authority, reversible action, evidence, and learning.
 - Keep FortiSIEM 7.3 and FortiSOAR 7.6 differences explicit when consulting newer documentation.
 
+## Key terms and phrases
+
+**SOC concepts and frameworks**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Tactic](#analyze-incidents-and-adversary-behavior) | An adversary objective, such as obtaining access to protected data. A technique describes a way to pursue that objective. |
+| [Chain of custody](#analyze-incidents-and-adversary-behavior) | A record of who collected, possessed or transferred evidence, when it changed hands and how its integrity was protected. |
+| [Containment](#analyze-incidents-and-adversary-behavior) | Limiting the scope or ongoing effects of an incident, such as isolating the affected device under an approved response plan. |
+| [Eradication](#analyze-incidents-and-adversary-behavior) | Removing the cause and remaining artifacts of an incident before or alongside controlled restoration of normal operation. |
+| [Phishing](#analyze-incidents-and-adversary-behavior) | An impersonation attempt that tries to induce an unsafe action or disclosure. Message appearance alone cannot establish the sender’s identity. |
+| [Encryption](#explain-fortinet-soc-architecture) | A reversible transformation that protects readable data using a key. Someone with the appropriate key can recover the original. |
+| [FortiAnalyzer](#explain-fortinet-soc-architecture) | A platform for collecting and analyzing supported Fortinet telemetry, including searching logs, generating reports and handling security events. |
+| [Normalization](#explain-fortinet-soc-architecture) | Converting fields from different sources to a common representation so that the records can be compared. |
+| [Security operations center (SOC)](#explain-fortinet-soc-architecture) | The people, processes and technology responsible for monitoring, investigating and coordinating response to security events. |
+| [Threat intelligence](#explain-fortinet-soc-architecture) | Assessed information about adversary activity or indicators, with source, context and freshness to guide a decision. |
+| [Vulnerability](#explain-fortinet-soc-architecture) | A weakness that can expose an asset to harm. Risk also depends on who or what could act on it and the consequences. |
+| [FortiSOAR](#explain-fortinet-soc-architecture) | A platform for handling cases and orchestrating investigation and response workflows across connected security tools. |
+
+**Detection capabilities**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Aggregation](#build-useful-fortisiem-queries) | Combining events by a key such as account or host to compute a count or other measure for a time window. |
+| [FortiSIEM](#build-useful-fortisiem-queries) | A platform that collects and correlates events across infrastructure and security products to help identify and investigate incidents. |
+| [Normalized field](#build-useful-fortisiem-queries) | A field mapped to a common name or type across sources. An analyst should preserve the source’s value when checking an unexpected match. |
+| [Raw event](#build-useful-fortisiem-queries) | The original source observation before a parser or normalization rule transforms its fields. It provides a reference for checking a derived result. |
+| [Telemetry](#build-useful-fortisiem-queries) | Logs, events and measurements supplied by managed systems. Customer attribution and collection health determine whether the records are usable. |
+| [Time window](#build-useful-fortisiem-queries) | The interval over which events are selected or grouped. Changing it can split one sequence across windows or merge unrelated activity. |
+| [Correlation window](#engineer-and-validate-incident-rules) | The time span over which a rule considers events together. It affects whether related observations form a single incident. |
+| [False positive](#engineer-and-validate-incident-rules) | A detection that matches benign activity. Tuning requires understanding which condition made it match. |
+| [Deduplication](#engineer-and-validate-incident-rules) | Recognizing and handling repeated copies of the same observation or request so duplication does not inflate counts or repeat an action. |
+| [Grouping key](#engineer-and-validate-incident-rules) | The attribute or combination of attributes used to combine observations, such as user plus hostname. A poor key can merge unrelated activity. |
+| [Incident](#engineer-and-validate-incident-rules) | A case that groups evidence of related activity for investigation, ownership and resolution. |
+| [Intrusion prevention system (IPS)](#engineer-and-validate-incident-rules) | A control that inspects traffic for signs of known or suspicious activity and can block matching traffic. |
+| [Threshold](#engineer-and-validate-incident-rules) | The value or condition that triggers a rule or changes an operational decision, such as five matching events in a ten-minute interval. |
+| [True positive](#engineer-and-validate-incident-rules) | A detection supported by evidence that the condition it was intended to identify really occurred. |
+
+**SOAR incident handling and threat hunting**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Threat-hunting hypothesis](#hunt-from-a-falsifiable-hypothesis) | A testable statement about activity that might be present, with specified evidence that could support or disprove it. |
+| [Pivot](#hunt-from-a-falsifiable-hypothesis) | Following an entity from one relevant record to related evidence, such as taking a host from an alert and examining its activity around the same time. |
+| [Runbook](#hunt-from-a-falsifiable-hypothesis) | Documented operational steps for a defined situation, with roles, expected observations and criteria for escalation or recovery. |
+| [Case disposition](#manage-incidents-as-controlled-cases) | The recorded outcome of an investigation, including the evidence used to classify or close it. |
+| [Availability](#manage-incidents-as-controlled-cases) | Timely and reliable access to a resource by authorized users. A running server may still be unavailable to the business if a required dependency fails. |
+| [Case owner](#manage-incidents-as-controlled-cases) | The person or team accountable for moving an investigation forward, recording its status and arranging escalations. |
+| [Escalation](#manage-incidents-as-controlled-cases) | Passing a case to the person or team with authority or expertise to make the next decision when defined conditions are met. |
+| [Quarantine](#manage-incidents-as-controlled-cases) | A containment action that restricts a device’s connectivity while responders investigate or remediate it. |
+
+**SOAR playbook development**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Idempotent action](#design-playbooks-for-predictable-outcomes) | An action that can be repeated after a retry without producing a second unintended change. |
+| [Health check](#design-playbooks-for-predictable-outcomes) | A defined test of reachability or service behavior used to decide whether a path or backend remains eligible. A TCP response may test less than an application transaction. |
+| [Idempotence](#design-playbooks-for-predictable-outcomes) | Making an operation safe to repeat without accumulating unintended effects. A retried request to create one case should still yield one case. |
+| [Least privilege](#design-playbooks-for-predictable-outcomes) | Giving an identity only the permissions needed for its task, for as long as it needs them. |
+| [Playbook](#design-playbooks-for-predictable-outcomes) | A workflow of decisions and tasks for a recurring case. It can combine automated enrichment with human authorization for disruptive actions. |
+| [Rate limiting](#design-playbooks-for-predictable-outcomes) | Restricting the number or rate of operations in a defined interval to protect capacity. A limit applied per identity behaves differently from one applied per IP address. |
+| [Schema](#design-playbooks-for-predictable-outcomes) | A definition of expected data structure, field types and constraints. A syntactically valid payload may still fail schema or business validation. |
+| [Playbook execution trace](#debug-systematically) | A record of the inputs, branches and outcomes of a run that helps identify where an automated response failed. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Authentication](#suspected-credential-compromise) | The check that establishes who a user or device is. Authorization determines what that identity may do next. |
+| [Indicator](#suspected-credential-compromise) | An observable value or pattern used to find potentially relevant activity. A match needs source context and timing before it supports an incident conclusion. |
+| [Virtual private network (VPN)](#suspected-credential-compromise) | A protected logical connection over a shared network. Its permitted destinations and traffic depend on routes and access policy. |
+| [Evidence preservation](#ransomware-like-endpoint-activity) | Maintaining the integrity and provenance of information needed for investigation, including original timestamps, collection method and access history. |
+| [Ransomware](#ransomware-like-endpoint-activity) | Malware used to extort a victim, often by making files unusable. A tested backup helps recover the data. |
+| [Telemetry gap](#collection-blind-spot) | A portion of the expected population, time period or activity for which the system lacks observations. Silence in that gap does not establish normal behavior. |
+
 ## Places to learn
 
 This is not a complete list, and it is not a prescription to consume everything. Start with the official contract and select the course, documentation, framework, and lab sections that close measured gaps. Times are publisher-listed where visible or clearly labeled estimates.

@@ -612,6 +612,95 @@ Original study prompts with explanatory answers; these are not exam items.
 - **Review:** You know the feature but cannot defend semantics, ownership, failure or cost.
 - **Gap:** You guessed or memorized an item. Return to current documentation and an authorized lab.
 
+## Key terms and phrases
+
+**Source data from data lakes, APIs and on-premises systems**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Source contract](#begin-with-a-source-contract) | An agreement covering schema, keys, ordering, delivery and change behavior so ingestion can detect unexpected input. |
+| [Incremental processing](#begin-with-a-source-contract) | Processing newly arrived or changed records relative to remembered progress instead of recomputing the full dataset. |
+| [Incremental extraction watermark](#begin-with-a-source-contract) | A saved source position from which extraction continues. If a page fails before durable storage, advancing the watermark too soon can skip records on the retry. |
+| [Checkpoint](#begin-with-a-source-contract) | Persisted progress or state that lets a job recover from an interruption with a known starting point. |
+| [Change data capture (CDC)](#begin-with-a-source-contract) | Capturing inserts, updates and deletes so downstream consumers can apply changes rather than reload the entire source. |
+| [Schema evolution](#begin-with-a-source-contract) | Handling changes to data structure over time, such as an added column, while preserving explicit compatibility rules for consumers. |
+| [Data retention](#begin-with-a-source-contract) | How long data or recoverable history is kept before removal under an explicit operational or governance policy. |
+| [OWNERSHIP](#begin-with-a-source-contract) | The object-control privilege held by an owning role, distinct from specific consumption grants such as SELECT. |
+| [COPY INTO](#begin-with-a-source-contract) | The command family used for bulk movement, including loading a table from staged files and unloading query results to a stage. |
+| [Storage integration](#begin-with-a-source-contract) | A Snowflake object that establishes controlled access to external cloud storage without embedding long-lived storage credentials in every stage. |
+| [File format](#begin-with-a-source-contract) | A named or inline specification of how to interpret or generate staged file contents, including type, delimiters or compression settings. |
+| [Snowpipe](#begin-with-a-source-contract) | Snowflake’s service for continuously loading arriving staged files through a pipe. |
+| [Snowpipe Streaming](#begin-with-a-source-contract) | Ingesting rows through streaming channels rather than first treating each input as a staged file. |
+| [Reconciliation](#validate-and-reconcile) | Comparing source and target counts or other controls for the same interval to identify missing or duplicated data. |
+| [Aggregation](#validate-and-reconcile) | Combining a group of records into a summary such as count, sum or average, at a declared grouping level. |
+| [Foreign key](#validate-and-reconcile) | A field or combination of fields referencing a key in a related table, expressing how rows between the tables correspond. |
+
+**Transform, replicate and share data across cloud platforms**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Idempotent transformation](#build-deterministic-transformations) | A transformation designed so that replaying the same input preserves the intended result without double-counting. |
+| [Offset](#build-deterministic-transformations) | A source position used to track progress through an ordered input, such as the last processed position within one partition. |
+| [Task](#build-deterministic-transformations) | A scheduled or triggered Snowflake work unit that executes SQL or a procedure and can participate in a dependency graph. |
+| [Dynamic table](#build-deterministic-transformations) | A table maintained from a defining query under a target-lag policy, subject to refresh capabilities and dependencies. |
+| [FLATTEN](#build-deterministic-transformations) | A table function that turns nested array or object values into rows for relational querying. |
+| [VARIANT](#build-deterministic-transformations) | A Snowflake data type capable of holding nested or semi-structured values, including arrays and objects. |
+| [Replication](#separate-replication-sharing-and-movement) | Maintaining a copy of selected data or objects at another location under defined refresh and recovery rules. |
+| [Current role](#separate-replication-sharing-and-movement) | The role active for a session or operation, which matters when interpreting grants, object creation and access. |
+| [Role hierarchy](#separate-replication-sharing-and-movement) | The graph of role grants through which a parent role can inherit privileges assigned to another role. |
+| [External stage](#separate-replication-sharing-and-movement) | A Snowflake object referring to files in external cloud storage accessed with the configured authorization. |
+| [Data sharing](#separate-replication-sharing-and-movement) | Making selected objects available to authorized consumers through governed access, with provider and consumer responsibilities for visibility and compute. |
+| [Time Travel](#separate-replication-sharing-and-movement) | Accessing eligible earlier object data within the applicable retention period, for example to inspect pre-change values. |
+| [Clone](#separate-replication-sharing-and-movement) | An independent logical copy of eligible objects that can initially share underlying storage while later changes diverge. |
+
+**Design end-to-end near-real-time streams**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Event time](#define-time-and-correctness-first) | The time an event happened at its source, distinct from when a pipeline received or processed it. |
+| [Micro-batch](#define-time-and-correctness-first) | A small bounded batch used to process a portion of a continuously arriving stream. |
+| [Deduplication](#choose-channel-semantics-explicitly) | Recognizing repeated representations of the same event or business entity under a defined key and selection rule. |
+| [Backpressure](#engineer-backpressure-failure-and-replay) | A downstream stage making upstream stages slow their delivery. If input stays at 100 events per second while a consumer handles 80, backlog grows by 20 per second until input slows or capacity increases. |
+| [Replay](#engineer-backpressure-failure-and-replay) | Reprocessing a known interval of source records after a failure or correction while accounting for duplicates and ordering. |
+| [Quarantine](#engineer-backpressure-failure-and-replay) | Retaining rejected records and rejection reasons separately so they can be investigated without contaminating trusted outputs. |
+
+**Design scalable compute for data-engineering workloads**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Data skew](#match-compute-to-the-workload) | An unequal distribution of records or workload across keys or partitions that can produce an overloaded partition or long-running tasks. |
+| [Virtual warehouse](#match-compute-to-the-workload) | An independent compute resource that executes supported workloads against data managed in Snowflake storage. |
+| [Auto-suspend](#match-compute-to-the-workload) | A warehouse policy that stops idle compute after the configured period, trading potential savings against resume and cache effects. |
+| [Auto-resume](#match-compute-to-the-workload) | A warehouse policy allowing eligible work to start a suspended warehouse automatically. |
+| [Scale up](#match-compute-to-the-workload) | Increasing a warehouse’s size to give individual work more compute or memory capacity. |
+| [Scale out](#match-compute-to-the-workload) | Adding concurrent compute capacity, such as additional warehouse clusters, to address contention among workloads. |
+| [Spill](#match-compute-to-the-workload) | Intermediate work exceeding available memory and moving to other storage, often visible as additional I/O and longer runtime. |
+| [Resource monitor](#match-compute-to-the-workload) | A Snowflake control for tracking eligible warehouse credit use and taking configured actions at usage thresholds. |
+| [Transaction](#design-for-elastic-but-bounded-operation) | A group of database operations whose changes are committed together or discarded together within the guarantees of the database. |
+
+**Evaluate performance metrics and operate the pipeline**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Freshness](#build-a-measurement-hierarchy) | The delay between an agreed source event or update and the moment its result becomes available to the consumer. |
+| [Join](#build-a-measurement-hierarchy) | Combining records from multiple inputs according to a matching condition. A repeated key can yield more rows than either input leads you to expect. |
+| [Server-side processing time](#build-a-measurement-hierarchy) | The duration spent processing a request on the server. Compare it with end-to-end elapsed time to distinguish server work from client or network delay. |
+| [USAGE privilege](#build-a-measurement-hierarchy) | Permission enabling use of specified objects such as a database, schema or warehouse, alongside other grants required for the query. |
+| [Query history](#build-a-measurement-hierarchy) | The record identifying statements, execution context and timing, enabling a comparison of the exact queries behind an incident. |
+| [Selectivity](#diagnose-before-optimizing) | How narrowly a filter restricts matching rows. A selective condition can reduce work if the access path can use it. |
+| [Partition pruning](#diagnose-before-optimizing) | Using metadata and predicates to skip partitions that cannot contain relevant records. |
+| [Clustering](#diagnose-before-optimizing) | Organizing related data together according to chosen columns or expressions so selective reads can skip more unrelated storage. |
+| [Materialized view](#diagnose-before-optimizing) | A view with stored query results maintained by refresh, trading refresh and storage work for faster access to results. |
+| [Warehouse size](#diagnose-before-optimizing) | The compute capacity selected for a virtual warehouse, influencing available resources, runtime and credit usage. |
+| [Data lineage](#operate-as-software) | The chain of sources and transformations that produced a dataset or model input, useful for explaining a result or assessing change impact. |
+| [Rollback](#operate-as-software) | Returning to an earlier state after a failed change. For a database transaction, this discards eligible uncommitted work. |
+
+**Executed local CDC workbook**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Primary key](#executed-local-cdc-workbook) | A field or combination of fields chosen to identify an individual record uniquely in the relevant table. |
+
 ## Places to learn
 
 This is not a complete list, and it is not meant to be consumed in full. Public metadata was checked October 28, 2026; no paid lessons, recordings or practice questions were accessed. Provider estimates are separated from this guide's optional study budgets. **VERIFY CURRENT:** Confirm exam alignment, expiry, client versions and booking availability before purchasing or enrolling.

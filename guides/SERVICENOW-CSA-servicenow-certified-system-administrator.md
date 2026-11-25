@@ -522,6 +522,74 @@ These are original explanation prompts, not reconstructed exam items. Answer alo
 
 The live [CSA Mainline Exam Blueprint](https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011554) says **Updated January 2026** and retains the six current weights: 7/10/20/20/30/13 percent. Its listed terms include Workflow Studio, Virtual Agent, CMDB/CSDM, Security Center, and the Shared Responsibility Model; the subskills are not exhaustive. The blueprint describes three to six months of instance experience as recommended preparation, not a formal prerequisite. **Related item:** the Brazil App Engine Studio [release notes](https://www.servicenow.com/docs/r/release-notes/app-engine-studio-rn.html) say PDF Extractor table creation is deprecated in that release and direct users toward Build Agent. Confirm release, application, role, and entitlement before selecting a migration workflow; this product change is not an exam objective.
 
+## Key terms and phrases
+
+**Platform Overview and Navigation**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Instance](#1-platform-overview-and-navigation-7) | A separately managed ServiceNow environment with its own data and configuration, such as development or production. |
+| [Impersonation](#1-platform-overview-and-navigation-7) | Testing a permitted user's experience under that user's identity context. Use the change history and audit controls appropriate to the environment. |
+| [`sys_id`](#1-platform-overview-and-navigation-7) | The platform's unique identifier for a record. A display name may change or be duplicated without changing this identifier. |
+| [Form](#1-platform-overview-and-navigation-7) | The interface for viewing or editing one record. Its fields and actions can vary by view and user context. |
+| [Role](#1-platform-overview-and-navigation-7) | A named grant used by platform features and access rules to decide what a user can do. Group membership can contribute roles. |
+
+**Instance Configuration**
+
+| Term or phrase | Meaning |
+|---|---|
+| [System property](#2-instance-configuration-10) | An instance configuration value that can alter platform or application behavior. Check its scope and transport behavior before moving it between environments. |
+
+**Configuring Applications for Collaboration**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Assignment group](#3-configuring-applications-for-collaboration-20) | The team responsible for a task or set of tasks. Group ownership lets work be routed before a specific assignee takes it. |
+| [List](#3-configuring-applications-for-collaboration-20) | A view of multiple records that can be filtered, sorted or grouped. A visible column layout does not define permission to read the underlying data. |
+| [Notification](#3-configuring-applications-for-collaboration-20) | A configured message triggered by a condition or event. Define both the intended recipients and the information they are allowed to receive. |
+| [Dictionary entry](#3-configuring-applications-for-collaboration-20) | The metadata defining a table field, such as its data type, reference target or default behavior. |
+
+**Self Service and Automation**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Catalog item](#4-self-service-and-automation-20) | A requestable service or product presented with questions and a fulfillment process. |
+| [Knowledge base](#4-self-service-and-automation-20) | An organized collection of articles whose lifecycle and access criteria control when and to whom content is available. |
+| [Catalog variable](#4-self-service-and-automation-20) | A question or input on a catalog request that supplies information for the fulfillment workflow. |
+| [Record producer](#4-self-service-and-automation-20) | A catalog interface that gathers input and creates a target record, such as an incident, using the supplied answers. |
+| [Order guide](#4-self-service-and-automation-20) | A catalog offering that helps a requester select several related items in a single guided request. |
+| [Subflow](#4-self-service-and-automation-20) | A reusable sequence of automation steps with defined inputs and outputs, called by a flow or another supported caller. |
+
+**Database Management and Platform Security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Reference field](#5-database-management-and-platform-security-30) | A field that points to a record in another table. The displayed label can change while the underlying record identity stays the same. |
+| [Import set](#5-database-management-and-platform-security-30) | A staging area for incoming rows before they are mapped into target records. |
+| [Transform map](#5-database-management-and-platform-security-30) | The rules that connect fields on an import-set table to fields on the target table and control how rows are transformed. |
+| [Table](#5-database-management-and-platform-security-30) | A collection of records with a defined set of fields. A child table can inherit fields and behavior from its parent. |
+| [Configuration item (CI)](#5-database-management-and-platform-security-30) | A tracked component or service in the configuration management database, with attributes and relationships to other items. |
+| [Configuration management database (CMDB)](#5-database-management-and-platform-security-30) | The repository of configuration items and their relationships used to understand services and dependencies. |
+| [Common Service Data Model (CSDM)](#5-database-management-and-platform-security-30) | Guidance for organizing service-related records and their relationships consistently in ServiceNow. |
+| [Client script](#5-database-management-and-platform-security-30) | Code running in a user's browser to respond to form events. A server-side check is needed for rules that must hold for all callers. |
+| [Cross-scope privilege](#5-database-management-and-platform-security-30) | Permission for one application scope to perform an operation on another application's resources. The user may still need separate record access. |
+| [Module](#5-database-management-and-platform-security-30) | A navigation entry that opens something in an application, such as a filtered list or form. |
+| [Coalesce](#import-identity-and-access-decisions) | An import setting that matches incoming rows to existing target records. If employee ID is the coalesce field, a matching ID can update the employee's phone number without creating a second record. |
+| [Access control list (ACL) rule](#import-identity-and-access-decisions) | A server-side rule governing an operation on protected data. A user who cannot see a field in one form might still try another access path. |
+
+**Data Migration and Integration**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Business rule](#6-data-migration-and-integration-13) | Server-side logic tied to a record operation. Its timing determines whether it can affect the current write or act on its result. |
+| [UI policy](#6-data-migration-and-integration-13) | A rule that changes form behavior such as making a field mandatory or read-only while the user interacts with it. |
+| [Application scope](#6-data-migration-and-integration-13) | The namespace and boundary associated with an application's artifacts. Cross-scope privileges and user permissions are separate checks. |
+| [Script Include](#6-data-migration-and-integration-13) | Reusable server-side functions or classes that permitted callers can invoke to avoid duplicating application logic. |
+| [IntegrationHub](#6-data-migration-and-integration-13) | ServiceNow's integration capability for connecting workflows to external services using packaged or custom actions. |
+| [Automated Test Framework (ATF)](#6-data-migration-and-integration-13) | ServiceNow's framework for exercising application behavior through repeatable test steps and checking the results after changes. |
+| [Pagination](#6-data-migration-and-integration-13) | Dividing a collection response into pages. A client follows the API's continuation rules so it can process the full result. |
+| [Update set](#logic-and-transport-evidence) | A collection of captured configuration changes that can be moved between instances. Data and other dependencies may require separate transfer. |
+
 ## Places to learn
 
 This is not a complete list. Choose resources to close demonstrated gaps, and keep account-only lessons and practice questions distinct from publicly reviewed metadata. Times below are planning estimates unless a publisher-listed historical value is explicitly identified. No course, exam booking, PDI enrollment, paid lesson or practice-question interior was accessed.

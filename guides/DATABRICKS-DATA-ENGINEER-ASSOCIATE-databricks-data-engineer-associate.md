@@ -443,6 +443,95 @@ Corroborate the design with the [current file-events reference](https://docs.dat
 4. Take one ethical assessment, classify misses by objective and decision error, and return to documentation/labs.
 5. Stop collecting resources when you can explain the mechanism, choose among alternatives, implement safely, and prove the result.
 
+## Key terms and phrases
+
+**Databricks Intelligence Platform**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Control plane](#keep-the-planes-and-responsibilities-separate) | The platform services that coordinate management and orchestration. Compute resources execute the data-processing workload. |
+| [Data lineage](#keep-the-planes-and-responsibilities-separate) | The chain of sources and transformations that produced a dataset or model input, useful for explaining a result or assessing change impact. |
+| [Transaction](#keep-the-planes-and-responsibilities-separate) | A group of database operations whose changes are committed together or discarded together within the guarantees of the database. |
+| [Unity Catalog](#keep-the-planes-and-responsibilities-separate) | Databricks’ governance layer for organizing data and AI assets and managing permissions, lineage and discoverability across supported workloads. |
+| [Delta table](#keep-the-planes-and-responsibilities-separate) | A table backed by data files and a transaction log that records committed versions and supports consistent reads. |
+| [Photon](#select-compute-from-requirements) | A Databricks execution engine that accelerates eligible compute operations. Inspect the actual plan and workload to assess the effect. |
+| [SQL warehouse](#select-compute-from-requirements) | Compute serving SQL queries for clients, notebooks or dashboards. Its sizing and concurrency affect waits and execution. |
+
+**Data Ingestion and Loading**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Incremental processing](#choose-by-source-behavior-and-ownership) | Processing newly arrived or changed records relative to remembered progress instead of recomputing the full dataset. |
+| [Watermark](#choose-by-source-behavior-and-ownership) | An event-time progress threshold used by a streaming design to decide how long to retain certain state or accept late records. |
+| [Offset](#choose-by-source-behavior-and-ownership) | A source position used to track progress through an ordered input, such as the last processed position within one partition. |
+| [Change data capture (CDC)](#choose-by-source-behavior-and-ownership) | Capturing inserts, updates and deletes so downstream consumers can apply changes rather than reload the entire source. |
+| [Idempotence](#choose-by-source-behavior-and-ownership) | Repeatedly applying the same logical input leaves the same intended state as applying it once, which makes retry and replay safer. |
+| [Auto Loader](#implement-file-ingestion-deliberately) | A Databricks ingestion mechanism that discovers new files in cloud storage and processes them incrementally. |
+| [Schema evolution](#implement-file-ingestion-deliberately) | Handling changes to data structure over time, such as an added column, while preserving explicit compatibility rules for consumers. |
+| [Checkpoint](#separate-discovery-triggering-and-schema-recovery) | Durable progress and state that let a streaming query resume after interruption. |
+| [Schema](#separate-discovery-triggering-and-schema-recovery) | The declared structure and types expected for stored data. Compare producer and consumer expectations before accepting a changed field. |
+
+**Data Transformation and Modeling**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Medallion architecture](#make-bronze-silver-and-gold-responsibilities-testable) | A sequence in which bronze keeps source-level data, silver cleans and reconciles records, and gold publishes data for particular uses. |
+| [Aggregation](#make-bronze-silver-and-gold-responsibilities-testable) | Combining a group of records into a summary such as count, sum or average, at a declared grouping level. |
+| [Quarantine](#make-bronze-silver-and-gold-responsibilities-testable) | Retaining rejected records and rejection reasons separately so they can be investigated without contaminating trusted outputs. |
+| [Null value](#transform-in-sql-and-pyspark) | A marker for a missing or unknown value. Count and comparison operations may treat it differently from a supplied zero. |
+| [Join](#transform-in-sql-and-pyspark) | Combining records from multiple inputs according to a matching condition. A repeated key can yield more rows than either input leads you to expect. |
+| [Inner join](#transform-in-sql-and-pyspark) | A join retaining only pairs of rows satisfying its matching condition. |
+| [Left outer join](#transform-in-sql-and-pyspark) | A join preserving each left-hand row. A missing right-hand match yields nulls in the right-side result columns. |
+| [Deduplication](#transform-in-sql-and-pyspark) | Recognizing repeated representations of the same event or business entity under a defined key and selection rule. |
+| [Reconciliation](#transform-in-sql-and-pyspark) | Comparing source and target results for the same scope, such as record counts and amounts in a given business day. |
+| [Broadcast join](#transform-in-sql-and-pyspark) | A join that distributes the smaller side to participating workers to reduce movement of the larger side, subject to memory fit. |
+| [Streaming table](#publish-the-right-object) | A maintained table that applies incremental processing to arriving records and retains the resulting data for readers. |
+| [Materialized view](#publish-the-right-object) | A view with stored query results maintained by refresh, trading refresh and storage work for faster access to results. |
+| [Clustering](#tune-only-after-locating-the-bottleneck) | Organizing related data together according to chosen columns or expressions so selective reads can skip more unrelated storage. |
+| [Managed table](#tune-only-after-locating-the-bottleneck) | A table for which the platform manages both the metadata and the lifecycle of its underlying data. |
+| [Liquid clustering](#tune-only-after-locating-the-bottleneck) | A Delta table layout technique organizing files around chosen keys to reduce scanning for relevant filters. |
+
+**Working with Lakeflow Jobs**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Task dependency](#build-a-graph-with-explicit-contracts) | A link in a job’s execution graph that constrains when one task can run relative to another. |
+| [Service principal](#build-a-graph-with-explicit-contracts) | A nonhuman identity that can own or run scheduled jobs, applications or deployment workflows under explicitly granted permissions. |
+| [Job trigger](#select-a-trigger-from-the-freshness-contract) | The event or schedule that starts a job. The trigger says when work begins, while dependencies decide execution order. |
+
+**Implementing CI/CD**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Bundle](#use-git-folders-for-development-bundles-for-delivery) | A version-controlled description of project files and Databricks resources deployed together into a target environment. |
+| [Git folder](#use-git-folders-for-development-bundles-for-delivery) | A workspace folder linked to a Git repository for interactive development. A successful pull updates the working copy but does not approve a production release. |
+| [Bundle target](#use-git-folders-for-development-bundles-for-delivery) | A named environment configuration for deploying a bundle. The same job definition can use different workspace settings in development and production. |
+
+**Troubleshooting, Monitoring, and Optimization**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Data freshness](#triage-from-outside-inward) | The age or lag of data visible to a consumer relative to the agreed source time or publication expectation. |
+| [Data skew](#triage-from-outside-inward) | An unequal distribution of records or workload across keys or partitions that can produce an overloaded partition or long-running tasks. |
+| [Task graph](#triage-from-outside-inward) | A directed graph of work units and prerequisite relationships, used to plan what can run after an upstream result. |
+
+**Governance and Security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [External table](#choose-managed-versus-external-lifecycle) | A registered table over externally managed storage, requiring separate attention to the object grants and storage location. |
+| [Volume](#choose-managed-versus-external-lifecycle) | A Unity Catalog object providing governed file access for non-tabular data, such as source documents or model artifacts. |
+| [Row filter](#select-the-fine-grained-control) | A rule that determines which rows a query may return for a given user or context. |
+| [Fine-grained access control](#select-the-fine-grained-control) | Restricting access to part of a table. A row filter can restrict which regions a user sees, while a column mask can hide sensitive values. |
+| [Column mask](#select-the-fine-grained-control) | A rule that changes the value visible in a column according to policy or user context while leaving the source value intact. |
+| [Time travel](#select-the-fine-grained-control) | Reading a retained earlier table version or timestamp, useful for reproducing a report or comparing changes. |
+
+**Diagnostic questions with answers**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Rollback](#diagnostic-questions-with-answers) | Returning to an earlier state after a failed change. For a database transaction, this discards eligible uncommitted work. |
+
 ## Places to learn
 
 This is not a complete list and is not meant to be consumed in full. Pick one primary explanation route, use the official objectives as the gap list, build the labs, and add a practice source only for diagnosis. Times below are provider-listed where the page exposes them; otherwise they are clearly labeled planning estimates. Commercial content can lag the May 2026 blueprint, especially where it still says Repos, Delta Live Tables, or Asset Bundles without the current Git folders, Lakeflow Spark Declarative Pipelines, or Declarative Automation Bundles names.

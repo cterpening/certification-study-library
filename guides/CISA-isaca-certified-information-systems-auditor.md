@@ -422,6 +422,104 @@ These original explanations correspond to the 40 prompts above. They are study f
 39. Verify provider/control scope, period, design, operating evidence, dependencies, exceptions and your required complementary controls. Responsibility for assessing applicability remains with the relying organization.
 40. State the business risk and audit objective, confirm authority, identify the evidence gap and choose a proportionate procedure. Investigate conflicting evidence before recommending fixes or accepting unsupported reassurance.
 
+## Key terms and phrases
+
+**Information Systems Auditing Process**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Audit charter](#establish-authority-independence-and-a-risk-based-plan) | The formal authority defining the audit function’s purpose, responsibilities and access. |
+| [Independence](#establish-authority-independence-and-a-risk-based-plan) | Freedom from responsibilities or influence that would compromise an auditor’s objective judgment. |
+| [Audit universe](#establish-authority-independence-and-a-risk-based-plan) | The collection of processes, systems and organizational areas eligible for audit. Risk assessment helps select which to examine first. |
+| [Confidentiality](#establish-authority-independence-and-a-risk-based-plan) | Restricting disclosure of information to authorized parties. A file can lose confidentiality even if its contents are unchanged. |
+| [Inherent risk](#establish-authority-independence-and-a-risk-based-plan) | Exposure assessed before considering the effect of controls. |
+| [Risk-based audit](#establish-authority-independence-and-a-risk-based-plan) | An audit approach that allocates effort according to exposure and business significance so testing addresses the most consequential questions. |
+| [Audit evidence](#execute-procedures-and-evaluate-evidence) | Information used to support a finding. Its relevance, reliability and sufficiency determine how much assurance it provides. |
+| [Operating effectiveness](#execute-procedures-and-evaluate-evidence) | Whether a control worked as designed across the period and population being examined. |
+| [Authenticity](#execute-procedures-and-evaluate-evidence) | Confidence that an entity, message or artifact is what it claims to be, based on an appropriate means of verification. |
+| [Audit test exception](#execute-procedures-and-evaluate-evidence) | A sampled item fails to meet the criterion being tested. If one required approval is missing, investigate its cause and impact before drawing conclusions about the whole population. |
+| [Population](#execute-procedures-and-evaluate-evidence) | The full set of items within the defined scope. Measuring only devices that report successfully can systematically omit failures. |
+| [Procedure](#execute-procedures-and-evaluate-evidence) | An ordered set of instructions for carrying out a defined activity, with enough detail for the responsible person to execute it consistently. |
+| [Sampling](#execute-procedures-and-evaluate-evidence) | Examining part of a population to draw a bounded conclusion about it. Selection bias or an incomplete population limits the inference. |
+| [Materiality](#execute-procedures-and-evaluate-evidence) | The significance of an error or omission to the decisions of a report’s intended users. |
+| [Reperformance](#execute-procedures-and-evaluate-evidence) | Independently repeating a control or calculation to compare the observed result with the result reported by its owner. |
+| [Follow-up audit work](#report-follow-up-and-improve) | Procedures to determine whether management’s corrective action resolved the issue and the supporting evidence is sufficient. |
+| [Metrics](#report-follow-up-and-improve) | Numerical time series used to quantify behavior such as latency, error rate or capacity. Aggregation and labels determine what the values represent. |
+| [Residual risk](#report-follow-up-and-improve) | The exposure remaining after safeguards are considered, which an accountable owner must address or accept. |
+
+**Governance and Management of IT**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Guideline](#connect-enterprise-direction-to-accountable-it-decisions) | Advisory guidance that supports judgment and consistent practice, rather than imposing a mandatory procedure. |
+| [Risk appetite](#connect-enterprise-direction-to-accountable-it-decisions) | The amount and type of risk an organization is willing to take in pursuit of its objectives. |
+| [Segregation of duties](#connect-enterprise-direction-to-accountable-it-decisions) | Dividing incompatible responsibilities, such as requesting and approving payment, so a single person cannot complete the whole sensitive transaction. |
+
+**Information Systems Acquisition, Development, and Implementation**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Availability](#govern-the-investment-and-delivery-lifecycle) | The ability of authorized users to reach and use a resource when needed. |
+| [Business case](#govern-the-investment-and-delivery-lifecycle) | A justification linking a proposed security investment to expected business benefits, costs and risks. |
+| [Change management](#govern-the-investment-and-delivery-lifecycle) | The process for assessing, approving, implementing and reviewing changes so risks and outcomes remain accountable. |
+| [Control objective](#govern-the-investment-and-delivery-lifecycle) | A desired result that one or more safeguards should achieve. A tester needs to establish whether the result was achieved for the assessed scope. |
+| [User acceptance testing (UAT)](#test-migrate-release-and-verify-outcomes) | Evaluation by appropriate business users of whether a system satisfies agreed business requirements before acceptance. |
+| [Authorization](#test-migrate-release-and-verify-outcomes) | The decision about what a verified identity may do to a resource under the applicable policy. |
+| [Rollback](#test-migrate-release-and-verify-outcomes) | Returning a change to a known acceptable state when results do not meet defined conditions. A valid rollback also accounts for data changed in the meantime. |
+| [Severity](#test-migrate-release-and-verify-outcomes) | A rating of expected or observed impact. It differs from confidence, which expresses how strongly the evidence supports the assessment. |
+
+**Information Systems Operations and Business Resilience**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Encryption](#assure-reliable-operations) | Reversibly transforming data with a key to keep the plaintext unavailable to parties lacking the appropriate decryption capability. |
+| [Schema](#assure-reliable-operations) | A definition of expected data structure, field types and constraints. A syntactically valid payload may still fail schema or business validation. |
+| [Third-party risk](#assure-reliable-operations) | Exposure arising through a supplier or partner, including its access, dependencies, service continuity and handling of data. |
+| [Business impact analysis (BIA)](#connect-business-impact-to-continuity-and-recovery) | Assessment of how disruption affects business activities over time, used to establish priorities and recovery needs. |
+| [Business continuity](#connect-business-impact-to-continuity-and-recovery) | Maintaining essential business functions through disruption, including people and workarounds as well as technology. |
+| [Disaster recovery plan (DRP)](#connect-business-impact-to-continuity-and-recovery) | The procedures and resources for restoring technology and data after a major disruption, in an order that supports business priorities. |
+| [Impact](#connect-business-impact-to-continuity-and-recovery) | The consequence of an event for the affected objective, such as patient safety, lost service hours or financial loss. |
+| [Maximum tolerable downtime (MTD)](#connect-business-impact-to-continuity-and-recovery) | The longest interruption the business can tolerate before the impact becomes unacceptable. Restoration targets need to leave time for business recovery. |
+| [Recovery point objective (RPO)](#connect-business-impact-to-continuity-and-recovery) | The targeted maximum loss of recent data, expressed as a period before the disruption. |
+| [Recovery time objective (RTO)](#connect-business-impact-to-continuity-and-recovery) | The targeted time to restore a usable service, including the dependencies that service needs. |
+
+**Protection of Information Assets**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Compensating control](#evaluate-the-layered-control-system) | An alternative safeguard addressing the risk when the preferred control is impractical or unavailable. |
+| [Data classification](#evaluate-the-layered-control-system) | Assigning a sensitivity or impact category to information so its handling and protection match its value. |
+| [Data loss prevention (DLP)](#evaluate-the-layered-control-system) | Controls that identify sensitive information and act on its movement or use, for example warning on an attempted upload that matches a data policy. |
+| [Identity lifecycle](#evaluate-the-layered-control-system) | The processes that grant, change and remove access as people join, change duties and leave. A role change should also remove incompatible old permissions. |
+| [Least privilege](#evaluate-the-layered-control-system) | Granting an identity only the access needed for its assigned work. |
+| [Privileged access management (PAM)](#evaluate-the-layered-control-system) | Controls for powerful accounts and sensitive actions, commonly including approval, short-lived access, credential protection and session auditing. |
+| [Shared responsibility](#evaluate-the-layered-control-system) | The allocation of security duties between the cloud provider and the customer for the service in use. |
+| [Incident](#assess-security-monitoring-and-incident-handling) | A case representing a security event or set of related events requiring coordinated investigation and response. |
+| [Threat intelligence](#assess-security-monitoring-and-incident-handling) | Assessed information about adversary activity or indicators, with source, context and freshness to guide a decision. |
+| [Vulnerability](#assess-security-monitoring-and-incident-handling) | A weakness in design, configuration, process or implementation that can affect a security objective under applicable conditions. |
+| [Vulnerability management](#assess-security-monitoring-and-incident-handling) | A recurring process for finding weaknesses, assessing their relevance, treating them and verifying closure within an agreed scope. |
+
+**Executed offline audit workbook**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Hash](#executed-offline-audit-workbook) | A fixed-size digest derived from input data. Comparing a file’s digest to a trusted reference can detect modification without revealing who modified it. |
+
+**Eight practical labs**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Control assessment](#eight-practical-labs) | An evidence-based examination of whether a control is appropriately designed and works as intended. |
+| [Walkthrough](#eight-practical-labs) | Tracing a transaction or workflow with the people and evidence involved to understand how the process and its controls operate. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Assurance](#scenario-1-payroll-saas-assurance) | Confidence derived from relevant evidence that a claim or control objective is supported for a specified scope and period. |
+| [Software as a service (SaaS)](#scenario-1-payroll-saas-assurance) | An application operated by a provider and consumed as a service. The customer still governs tenant settings, access and use of its data. |
+| [Ransomware](#scenario-2-ransomware-recovery-claim) | Malicious software associated with extortion, often by denying access to data. The incident can also involve disclosure or destruction. |
+
 ## Places to learn
 
 This is not a complete list, and it is not meant to be consumed end to end. Pick the format and chapters that close your measured gaps, practice the decision process, then return to the official outline. Durations are publisher-listed or practical estimates checked September 29, 2026; catalogs, prices and access change.

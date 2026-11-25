@@ -420,6 +420,96 @@ Create one policy-as-code pre-deploy check, one preventive provisioning control,
 
 ---
 
+## Key terms and phrases
+
+**SDLC Automation**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Continuous integration (CI)](#1-sdlc-automation-22) | Frequently combining changes and testing the integrated result automatically so defects are discovered near the change that introduced them. |
+| [Artifact provenance](#design-a-promotion-system-not-a-sequence-of-buttons) | Evidence of where a deployment artifact came from, including source revision, build process and identity that produced it. |
+| [Amazon S3](#design-a-promotion-system-not-a-sequence-of-buttons) | Object storage organized into buckets and keys. Retrieving a named object and mounting a block device are different access patterns. |
+| [Container image](#design-a-promotion-system-not-a-sequence-of-buttons) | A packaged file-system and runtime configuration used to start containers. A digest identifies a particular image's contents. |
+| [AWS Secrets Manager](#design-a-promotion-system-not-a-sequence-of-buttons) | Stores sensitive values for authorized retrieval and supports rotation workflows, such as replacing a database password. |
+| [CodePipeline](#design-a-promotion-system-not-a-sequence-of-buttons) | Orchestrates source, build, test, approval and deployment stages in a release workflow. |
+| [CodeBuild](#design-a-promotion-system-not-a-sequence-of-buttons) | Runs a build or test job from its instructions and input source, producing logs and optionally a deployable artifact. |
+| [AWS Key Management Service (KMS)](#design-a-promotion-system-not-a-sequence-of-buttons) | Manages cryptographic keys and controls who may use them for operations such as decrypting a protected data key. |
+| [Continuous delivery (CD)](#put-the-right-test-at-the-earliest-reliable-gate) | Keeping tested changes ready for release through a repeatable pipeline. Production release may still require a person to approve it. |
+| [Artifact digest](#secure-and-govern-artifacts) | A fingerprint derived from a built artifact's contents. Comparing digests checks whether the tested and deployed bytes match. |
+| [Amazon Machine Image (AMI)](#secure-and-govern-artifacts) | A launch image for EC2 that supplies the operating-system and software baseline along with associated launch information. |
+| [Amazon EC2](#secure-and-govern-artifacts) | Compute service for running virtual machines. The customer chooses the instance configuration and manages the guest operating system. |
+| [Blue/green deployment](#select-deployment-strategy-by-failure-economics) | A release with separate old and new environments in which routing moves traffic to the new version. Shared data must remain compatible for rollback. |
+| [Rollback](#select-deployment-strategy-by-failure-economics) | Returning traffic or software to a previously accepted release after a failed change. Database changes may require a separate recovery plan. |
+| [Rolling deployment](#select-deployment-strategy-by-failure-economics) | Replacing instances or tasks in groups while the service continues to run. Capacity and compatibility matter while versions coexist. |
+| [Amazon ECS](#select-deployment-strategy-by-failure-economics) | An orchestrator that schedules and maintains container tasks from task definitions. |
+| [CodeDeploy](#select-deployment-strategy-by-failure-economics) | Coordinates application rollouts to supported deployment targets, including traffic shifting where the target supports it. |
+| [AWS Lambda](#select-deployment-strategy-by-failure-economics) | Runs application code in response to an invocation or event. The function owner selects its code, permissions and resource configuration. |
+| [Lambda alias](#select-deployment-strategy-by-failure-economics) | A named reference to a published Lambda function version. An alias lets callers use a stable name while the deployment target changes. |
+| [Amazon EKS](#select-deployment-strategy-by-failure-economics) | Managed Kubernetes on AWS. A team deploys workloads through the Kubernetes API and chooses how their compute capacity is provided. |
+
+**Configuration Management and IaC**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Infrastructure as code (IaC)](#2-configuration-management-and-iac-17) | A versioned description of infrastructure that tools can build or update. Reviewing the proposed changes helps catch unintended replacements. |
+| [Configuration drift](#treat-desired-state-as-a-product) | A difference between actual resource configuration and the desired state recorded in code. An out-of-band console change can introduce it. |
+| [AWS CloudFormation](#treat-desired-state-as-a-product) | Creates or updates a group of resources from a template so infrastructure changes can be reviewed and repeated. |
+| [Change set](#treat-desired-state-as-a-product) | A CloudFormation preview of resource changes proposed for a stack. Review operations such as replacement before executing it. |
+| [AWS CloudTrail](#treat-desired-state-as-a-product) | Records supported AWS API activity so an investigator can trace who called an operation, when and against which resource. |
+| [AWS Cloud Development Kit (CDK)](#treat-desired-state-as-a-product) | Defines infrastructure with programming-language constructs that synthesize CloudFormation templates. |
+| [Least privilege](#separate-infrastructure-configuration-and-secrets) | Limiting an identity to the actions and resources required for its work. A read-only reporting job needs no permission to modify its source. |
+| [AWS Organizations](#automate-multi-account-foundations) | Groups AWS accounts under common governance so a team can apply policies or consolidate billing across accounts. |
+| [Organizational unit (OU)](#automate-multi-account-foundations) | A branch of the AWS Organizations hierarchy used to group accounts for common policies. |
+| [AWS IAM Identity Center](#automate-multi-account-foundations) | Connects workforce users and groups to AWS accounts or applications and manages the access assigned to them. |
+| [AWS Control Tower](#automate-multi-account-foundations) | A service for setting up and governing a multi-account landing zone, including common controls as accounts are enrolled. |
+| [Federation](#automate-multi-account-foundations) | Accepting trusted identity assertions from another provider so users or workloads can access resources without a separate long-lived credential. |
+| [Amazon GuardDuty](#automate-multi-account-foundations) | Analyzes supported telemetry for indicators of threats and produces findings for investigation. |
+| [Idempotency](#engineer-large-scale-automation-safely) | The property that repeating an operation with the same intent leaves the same final state. It protects automation that retries after a timeout. |
+| [AWS Step Functions](#engineer-large-scale-automation-safely) | Coordinates a sequence of application steps as a state machine, with explicit choices, retries and failure paths. |
+| [Amazon EventBridge](#engineer-large-scale-automation-safely) | Routes events to targets according to rules, connecting services without requiring each producer to know each consumer. |
+
+**Resilient Cloud Solutions**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Health check](#turn-resilience-into-automated-policy) | A test used to decide whether a target can serve traffic. A reachable process can still fail a check for a required dependency. |
+| [Amazon CloudFront](#turn-resilience-into-automated-policy) | A content delivery network that serves requests from edge locations and fetches content from an origin when needed. |
+| [Amazon Route 53](#turn-resilience-into-automated-policy) | AWS's DNS service. Records and routing policies determine how a name resolves for clients. |
+| [Restore test](#prove-backup-and-disaster-recovery) | A rehearsal that uses a backup to recover data and exercise the dependent service. It measures whether the recovery objectives are achievable. |
+| [AWS Backup](#prove-backup-and-disaster-recovery) | Coordinates backup policies and protected recovery points for supported resources. A restore test checks whether a recovery point is usable. |
+| [S3 versioning](#prove-backup-and-disaster-recovery) | Retains distinct versions of objects in a bucket. A recovery plan must also account for retention and access to older versions. |
+
+**Monitoring and Logging**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Amazon CloudWatch](#build-telemetry-around-questions) | Collects operational measurements and logs. An operator can graph request latency or alarm on error rates. |
+| [Amazon Inspector](#build-telemetry-around-questions) | Inspects supported workloads for software vulnerabilities or exposure that owners can prioritize and remediate. |
+| [Amazon Macie](#build-telemetry-around-questions) | Discovers and reports sensitive data in S3, helping owners investigate where protected information is stored. |
+| [AWS WAF](#make-alarms-and-dashboards-actionable) | A web application firewall that evaluates web requests against rules before they reach a protected application. |
+| [Amazon VPC](#make-alarms-and-dashboards-actionable) | A logically isolated network in an AWS Region, divided into subnets with routes and security controls that shape connectivity. |
+| [Event routing](#automate-event-routing-without-losing-events) | Matching an event to a rule and delivering it to one or more targets. Each target needs a defined response to delivery failure. |
+| [Amazon SNS](#automate-event-routing-without-losing-events) | A publish-subscribe notification service. Publishing once to a topic can deliver the message to multiple subscribed destinations. |
+| [Amazon SQS](#automate-event-routing-without-losing-events) | A queue that buffers messages between producers and consumers. A worker can process a message even after its producer has disconnected. |
+
+**Incident and Event Response**
+
+| Term or phrase | Meaning |
+|---|---|
+| [AWS Systems Manager](#establish-an-evidence-preserving-response-flow) | A set of operational tools for managed nodes and AWS resources, including inventory, automation and secure remote access. |
+| [Service quota](#troubleshoot-by-causal-layer) | A limit on resource use or request volume within a specified scope. Reaching it can block work even when funds are available. |
+| [Resource policy](#troubleshoot-by-causal-layer) | A policy attached to a resource, such as an S3 bucket, specifying which principals can perform particular actions on it. |
+| [Game day](#design-runbooks-and-game-days) | A planned failure exercise in which operators rehearse detection and recovery, record what happens and fix gaps in the runbook. |
+
+**Security and Compliance**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Temporary credentials](#make-pipeline-identity-short-lived-and-scoped) | Time-limited access keys and a session token. A workload can obtain them by assuming a role. |
+| [Detective control](#automate-layered-controls) | A check that identifies a failure or policy violation after it occurs, such as a rule that reports a public resource. |
+| [AWS Config](#automate-layered-controls) | Records supported resource configurations and can evaluate them against rules, such as whether a required setting is present. |
+| [Encryption in transit](#protect-data-and-evidence) | Protecting information while it travels between endpoints, typically through an authenticated encrypted connection. |
+
 ## Places to learn
 
 This is **not a complete list**, and it is not meant to be consumed in full. Choose one current primary route, then spend more time building and failing enterprise-style delivery/operations systems than watching overlapping videos. Use legitimate practice to locate gaps; reject recalled-question or “actual item” claims.

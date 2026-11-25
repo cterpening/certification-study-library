@@ -1822,6 +1822,132 @@ Master that system and GitHub stops being a maze of features. Each feature has a
 
 > **Related item:** GH-900 introduces Copilot as one part of the GitHub platform. Continue with the separate [GH-300 GitHub Copilot guide](GH-300-github-copilot.md) when you need blueprint-level depth on responsible use, prompt context, agents, safeguards, and Copilot administration.
 
+## Key terms and phrases
+
+**Version control, Git, and GitHub**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Commit](#12-gits-snapshot-model) | A saved snapshot in Git history. Staging a change prepares it for the next commit. |
+| [Working tree](#the-four-places-to-keep-straight) | The checked-out files you can edit before choosing what to stage. |
+| [Staging area](#the-four-places-to-keep-straight) | The proposed contents of the next commit. Staging one file leaves other working changes out of that snapshot. |
+| [Repository](#13-core-git-vocabulary) | A project and the Git history used to track changes to its files. |
+| [Remote](#13-core-git-vocabulary) | A named reference to another copy of a repository used for synchronization. |
+| [Origin](#13-core-git-vocabulary) | The conventional name Git gives the remote from which a repository was cloned. |
+| [HEAD](#13-core-git-vocabulary) | Git's reference to the currently checked-out position, usually through the current branch. |
+| [Branch](#branches-are-lightweight-pointers) | A movable name for a line of development. Creating one lets you work from an existing commit. |
+
+**Install, configure, and authenticate**
+
+| Term or phrase | Meaning |
+|---|---|
+| [SSH key](#common-authentication-choices) | A public/private key pair that can authenticate a Git client without sending the private key to GitHub. |
+
+**The essential Git workflow**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Clone](#31-start-or-copy-a-repository) | A local copy of a repository and its Git history that you can work with on your computer. |
+| [Fetch](#35-synchronize-with-github) | Download remote commits and references so they can be inspected before integration. |
+| [Push](#35-synchronize-with-github) | Send local commits and request an update to a remote branch or tag. |
+| [Merge](#36-merge-a-branch) | Integrate histories so the destination includes the changes accepted from another branch. |
+| [Squash merge](#merge-strategies-on-github) | Combine the proposed commits into one new commit on the destination branch. |
+| [Rebase merge](#merge-strategies-on-github) | Replay the proposed commits onto the destination branch, creating new commit identities there. |
+| [Merge conflict](#37-resolve-a-merge-conflict) | A disagreement in changes that Git needs a person to resolve before completing an integration. |
+| [Revert](#38-undo-safely-restore-revert-reset) | Create a new commit undoing the effect of an earlier commit, keeping the intervening history visible. |
+
+**Files Git needs you to understand**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Git ignore pattern](#41-gitignore) | A rule selecting untracked paths that Git should leave out of normal status and staging suggestions. |
+| [Git attributes](#42-gitattributes) | Per-path settings that control handling such as text normalization, diffs or large-file integration. |
+| [README](#43-repository-documentation-and-community-files) | The repository document that introduces the project and helps readers find setup or contribution information. |
+
+**Creating and managing repositories**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Tag](#63-branches-tags-and-releases) | A named reference used to mark a particular point in history, often a version being released. |
+| [Release](#63-branches-tags-and-releases) | A published GitHub entry tied to a tag that can include notes and downloadable assets. |
+
+**GitHub Flow and pull requests**
+
+| Term or phrase | Meaning |
+|---|---|
+| [GitHub Flow](#71-github-flow) | A collaboration pattern that uses short-lived branches, pull requests, review and merges to the default branch. |
+| [Pull request](#72-pull-requests-are-proposals-not-just-diffs) | A proposal to merge changes from one branch into another, with a place to discuss and review the differences. |
+| [Review request](#73-reviews) | An invitation to examine proposed changes and record feedback before a merge decision. |
+| [Fork](#75-fork-based-contribution) | A separate repository on GitHub linked to its source, often used to propose changes across ownership boundaries. |
+
+**Issues, Discussions, notifications, and publishing**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Issue](#81-issues) | A record for tracking a bug, request or piece of work with its discussion and owner. |
+| [Discussion](#82-discussions) | A forum thread for open-ended questions, ideas or community conversation around a project. |
+| [Wiki](#85-gists-wikis-and-pages) | A set of editable repository documentation pages with its own history. |
+| [GitHub Pages](#85-gists-wikis-and-pages) | A service that publishes static website content from a repository under its configured publishing settings. |
+
+**GitHub Actions fundamentals**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Runner](#92-workflow-vocabulary) | The machine that executes an Actions job and its steps. |
+| [Workflow](#92-workflow-vocabulary) | An automated process defined in a repository and started by an event, a schedule or a manual request. |
+| [Job](#92-workflow-vocabulary) | A group of steps assigned to a runner. Dependencies can require another job to finish first. |
+| [Step](#92-workflow-vocabulary) | One unit within a job that runs a command or calls a reusable action. |
+| [Reusable workflow](#reusable-workflows-versus-composite-actions) | A callable workflow that packages entire jobs and exposes inputs, secrets or outputs to its caller. |
+| [Composite action](#reusable-workflows-versus-composite-actions) | A reusable sequence of steps invoked within a job. |
+
+**Development environments**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Codespace](#103-github-codespaces) | A hosted development environment for a repository that includes compute and a configurable toolchain. |
+| [Development container](#104-development-containers) | A specification for the tools and settings needed to recreate a project's development environment. |
+
+**GitHub Copilot in the GitHub platform**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Copilot entitlement](#112-plans-and-policy) | The account or organizational access grant that makes a Copilot experience eligible for use. |
+
+**GitHub Projects**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Project view](#121-views) | A saved presentation of the same project items, such as a board grouped by status or a filtered table. |
+
+**Authentication, privacy, and access security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Passkey](#2fa-and-passkeys) | A cryptographic sign-in credential used by a device or authenticator to prove control of an account. |
+| [Personal access token (PAT)](#132-token-principles) | A credential issued for a user and constrained by its scope, resource access and applicable organization policy. |
+
+**Branch protection, rulesets, and ownership**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Ruleset](#141-branch-protection-versus-rulesets) | A collection of enforceable repository rules that applies to the branches, tags or repositories it targets. |
+| [Code owner](#142-codeowners) | A person or team identified for review when a change affects matching paths in a repository. |
+
+**Repository and supply-chain security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Code scanning](#151-the-main-github-security-capabilities) | Analysis of source code that records potential weaknesses for investigation and remediation. |
+| [Secret scanning](#151-the-main-github-security-capabilities) | Detection of sensitive credential patterns in supported repository content so owners can investigate exposure. |
+| [Dependabot alert](#152-dependabot-concepts) | A notification that a dependency matches a known vulnerability advisory. |
+
+**GitHub community, open source, and InnerSource**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Open-source license](#161-open-source-fundamentals) | The terms that grant permission to use, modify or share code subject to the license's conditions. |
+| [InnerSource](#163-innersource) | Using open-source collaboration practices on projects shared within an organization. |
+
 ## Places to learn
 
 This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Start with the official paths, then pick the explanations, formats, and practice that work for you and close specific blueprint gaps. Times are approximate consumption time at normal speed; labs, note-taking, review, and independent practice add time.

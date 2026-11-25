@@ -456,6 +456,114 @@ Before using older 2.x or newer rolling material, verify against the official 3.
 
 > **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
 
+## Key terms and phrases
+
+**Architecture, projects, and lifecycle**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Least privilege](#1-architecture-projects-and-lifecycle) | Giving an account only the access required for its assigned work. |
+| [Namespace](#1-architecture-projects-and-lifecycle) | A Kubernetes scope for the names of many resources and for controls such as Roles and ResourceQuotas. A namespace alone does not isolate all traffic. |
+| [Observability](#1-architecture-projects-and-lifecycle) | The ability to infer a system’s internal condition from its outputs, often by relating logs, metrics and traces to a particular request or failure. |
+| [OpenShift project](#1-architecture-projects-and-lifecycle) | An OpenShift unit for organizing related workloads, access and resources, backed by a Kubernetes namespace. |
+
+**Workbenches, images, and collaborative development**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Workbench](#2-workbenches-images-and-collaborative-development) | A project-scoped development environment that provides tools and resources for interactive data science work. |
+| [Annotation](#2-workbenches-images-and-collaborative-development) | Kubernetes object metadata intended for descriptive or tool-specific information, unlike labels used by ordinary label selectors. |
+| [Environment variable](#2-workbenches-images-and-collaborative-development) | A named value supplied in the environment of a process, such as a search path. Child processes inherit exported variables from their parent. |
+| [Workbench persistent volume claim](#2-workbenches-images-and-collaborative-development) | A request for persistent storage that the cluster can mount into a workbench. Replacing its running Pod can preserve notebook files when the claim and backing storage are retained. |
+| [Vulnerability](#2-workbenches-images-and-collaborative-development) | A weakness in design, configuration, process or implementation that can affect a security objective under applicable conditions. |
+
+**Data connections and artifact boundaries**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Data connection](#3-data-connections-and-artifact-boundaries) | Configuration that lets a project component reach a data or artifact store with the appropriate endpoint and credentials. |
+| [NetworkPolicy](#3-data-connections-and-artifact-boundaries) | A Kubernetes declaration restricting allowed ingress or egress for selected Pods. Its effect requires enforcement by a supporting network implementation. |
+| [Object storage](#3-data-connections-and-artifact-boundaries) | Storage that addresses data as objects by key, typically through an API. An object is not ordinarily managed as a mounted block device. |
+| [Secret](#3-data-connections-and-artifact-boundaries) | A Kubernetes resource for sensitive values such as credentials. Access controls and encryption configuration matter because encoding alone is not secrecy. |
+| [Service account](#3-data-connections-and-artifact-boundaries) | An identity used by software to access resources. Its permissions, credential handling and lifetime should be scoped to the workload. |
+
+**Resources, scheduling, and accelerator evidence**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Resource request](#4-resources-scheduling-and-accelerator-evidence) | The CPU, memory or other capacity a workload asks the scheduler to account for when placing it. |
+| [Accelerator](#4-resources-scheduling-and-accelerator-evidence) | Specialized hardware such as a GPU for selected computations. Workloads need compatible scheduling, drivers, libraries and capacity to benefit. |
+| [Label selector](#4-resources-scheduling-and-accelerator-evidence) | A filter that selects Kubernetes objects by their labels. A Service can exist with no matching Pods when its selector is wrong. |
+| [Node](#4-resources-scheduling-and-accelerator-evidence) | A cluster machine that runs Pods using a kubelet and container runtime. Readiness of the node and readiness of its Pods are separate signals. |
+| [Toleration](#4-resources-scheduling-and-accelerator-evidence) | A Pod setting that permits it to tolerate a matching node taint. It does not force the scheduler to select that node. |
+
+**Model serving with KServe**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Inference service](#5-model-serving-with-kserve) | A deployed serving resource that accepts prediction requests and connects them to the selected model and runtime. |
+| [Acceptance criteria](#5-model-serving-with-kserve) | Observable conditions used to decide whether a delivered project result meets the agreed need. |
+| [Deployment](#5-model-serving-with-kserve) | A workload controller that manages rollout and replacement of replicated application Pods. |
+| [KServe](#5-model-serving-with-kserve) | A model-serving platform that uses Kubernetes resources and serving runtimes to expose trained model artifacts for inference. |
+| [Pod](#5-model-serving-with-kserve) | The smallest deployable Kubernetes unit. Its containers share a network identity and can share declared volumes for the lifetime of that Pod. |
+| [Rolling update](#5-model-serving-with-kserve) | A rollout that gradually replaces old replicas with new ones under availability and surge limits. |
+| [Serving runtime](#5-model-serving-with-kserve) | The executable environment that loads a compatible model artifact and handles prediction requests. |
+
+**Model Registry and lineage**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Model registry](#6-model-registry-and-lineage) | A catalog of model versions and metadata that helps teams identify which artifact is approved or deployed. |
+| [Lineage](#6-model-registry-and-lineage) | The recorded relationships among training inputs, runs, artifacts and model versions that explain where a model came from. |
+| [Metrics](#6-model-registry-and-lineage) | Numerical time series used to quantify behavior such as latency, error rate or capacity. Aggregation and labels determine what the values represent. |
+| [Model artifact](#6-model-registry-and-lineage) | A stored version of a trained model or supporting files that a serving or evaluation process consumes. |
+
+**Monitoring models and platform performance**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Data drift](#7-monitoring-models-and-platform-performance) | A shift in the distribution of observed inputs compared with a reference period. Its effect on model performance requires evaluation. |
+| [Log retention](#7-monitoring-models-and-platform-performance) | The period for which records remain available for an investigation or other defined purpose. Missing results outside that period cannot establish inactivity. |
+| [Model monitoring](#7-monitoring-models-and-platform-performance) | Observing deployed model behavior, input characteristics and service health over time so changes can be investigated. |
+
+**Data science pipelines and experiments**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Pipeline artifact](#8-data-science-pipelines-and-experiments) | A durable output of a pipeline step, such as a trained model or evaluation report, passed to later steps or retained as evidence. |
+| [Container](#8-data-science-pipelines-and-experiments) | An isolated application process and its dependencies that ordinarily shares the host kernel. Its image is the packaged input used to start it. |
+| [Experiment](#8-data-science-pipelines-and-experiments) | A tracked comparison of runs under specified data, parameters and evaluation conditions so results can be interpreted and reproduced. |
+| [Retry](#8-data-science-pipelines-and-experiments) | Trying a failed operation again under a defined policy. For writes, duplication and uncertain completion require special handling. |
+| [YAML Ain’t Markup Language (YAML)](#8-data-science-pipelines-and-experiments) | A structured text format commonly used for configuration. Significant indentation and scalar typing can affect the meaning of apparently small edits. |
+
+**Model selection, optimization, and evaluation**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Job](#9-model-selection-optimization-and-evaluation) | A controller that runs Pods to complete a finite task, unlike a Deployment that maintains a desired running population. |
+| [Latency](#9-model-selection-optimization-and-evaluation) | Elapsed time for data or a request to travel a defined path. Specify whether the measure is one-way delay or round-trip time. |
+| [Quantization](#9-model-selection-optimization-and-evaluation) | Representing model weights or activations with lower numerical precision to reduce resource use, potentially affecting model quality or hardware support. |
+| [Throughput](#9-model-selection-optimization-and-evaluation) | The rate at which data is successfully delivered over an interval. It can be lower than nominal link capacity because of overhead or congestion. |
+| [Model evaluation](#9-model-selection-optimization-and-evaluation) | Measuring a model on representative data for a defined task and acceptance criterion before or after deployment. |
+
+**Generative, retrieval, agentic, and guardrailed applications**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Retrieval-augmented generation (RAG)](#10-generative-retrieval-agentic-and-guardrailed-applications) | Supplying retrieved reference material to a generative model as context for its response. |
+| [Guardrail](#10-generative-retrieval-agentic-and-guardrailed-applications) | A control that constrains or checks model inputs, retrieval, actions or output according to an application policy, with failures and limits evaluated separately. |
+| [Idempotence](#10-generative-retrieval-agentic-and-guardrailed-applications) | Applying the same desired configuration repeatedly leaves an already-correct system unchanged. A successful second run should avoid unnecessary side effects. |
+| [Precision](#10-generative-retrieval-agentic-and-guardrailed-applications) | Among predictions labeled positive, the fraction actually positive. With 16 true positives and 4 false positives, precision is 16/20 or 80%. |
+| [Timeout](#10-generative-retrieval-agentic-and-guardrailed-applications) | The time after which an operation stops waiting and reports failure. A caller timing out does not prove the remote system made no change. |
+| [Embedding](#10-generative-retrieval-agentic-and-guardrailed-applications) | A numerical representation that places items in a vector space where a chosen similarity measure can support retrieval or comparison. |
+| [Vector store](#10-generative-retrieval-agentic-and-guardrailed-applications) | A system that stores vector representations and retrieves candidates by similarity, often combined with metadata or access filters. |
+
+**Original pipeline artifact and evaluation example**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Hash](#original-pipeline-artifact-and-evaluation-example) | A fixed-size digest derived from input data. Comparing a file’s digest to a trusted reference can detect modification without revealing who modified it. |
+
 ## Places to learn
 
 This is not a complete list and is not meant to be consumed in full. Select the explanation, lab, reference, or assessment format that closes your own gaps; spend most preparation time performing and revalidating the public tasks.

@@ -1,0 +1,18 @@
+{
+  "exam_code": "CLF-C02",
+  "guide_section": "Global infrastructure",
+  "objective": "Content Domain 3: Cloud Technology and Services (34% of scored content)",
+  "source_ids": ["aws-clf-c02-domain-3", "aws-clf-c02-global-infrastructure"],
+  "visual": {
+    "title": "Which failure boundary do these two web servers share?",
+    "nodes": [
+      {"id": "region", "label": "One AWS Region"},
+      {"id": "zone-a", "label": "Availability Zone A: EC2 web server 1"},
+      {"id": "zone-b", "label": "Availability Zone B: EC2 web server 2"}
+    ],
+    "edges": [
+      {"from": "region", "to": "zone-a", "label": "contains"},
+      {"from": "region", "to": "zone-b", "label": "contains"}
+    ]
+  }
+}

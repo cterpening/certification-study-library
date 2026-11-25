@@ -121,6 +121,96 @@ Change one well-supported hypothesis at a time. Record expected observation, act
 - I can migrate with discovery, measurable transfer and cutover plans, transaction validation, and rollback.
 - I troubleshoot from evidence and preserve Oracle's visible 2026/2025 path inconsistency as a verification warning.
 
+## Key terms and phrases
+
+**VCN design and addressing**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Classless Inter-Domain Routing (CIDR) block](#1-vcn-design-and-addressing) | An address range specified by a network prefix. An IPv4 /26 fixes 26 of 32 bits, leaving 2⁶ = 64 addresses before any platform reservations. |
+| [Control plane](#1-vcn-design-and-addressing) | The management interfaces and services that configure resources and policies, as distinct from using the configured workload. |
+| [Data plane](#1-vcn-design-and-addressing) | The path where workload data is actually processed or forwarded under the configuration established through the control plane. |
+| [Availability](#1-vcn-design-and-addressing) | The ability of a service to remain usable for the intended requests over a specified measurement period. |
+| [Availability domain](#1-vcn-design-and-addressing) | An infrastructure location isolated from other availability domains in the region, used when planning workload placement. |
+| [Virtual cloud network (VCN)](#1-vcn-design-and-addressing) | A configurable regional network containing subnets, routes and security controls for OCI resources. |
+| [Subnet](#1-vcn-design-and-addressing) | An address range inside a VCN used to place network interfaces and associate applicable route and security settings. |
+| [Peering](#1-vcn-design-and-addressing) | Connecting separate networks to exchange traffic privately under the applicable routing, address-space and security rules. |
+| [Regional subnet](#1-vcn-design-and-addressing) | A subnet that can host eligible resources in more than one availability domain within an OCI region. |
+| [DNS time to live (TTL)](#1-vcn-design-and-addressing) | The period for which a resolver may cache an answer, relevant to how quickly clients can observe a DNS cutover. |
+
+**Routing, gateways, and service delivery**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Next hop](#2-routing-gateways-and-service-delivery) | The gateway or other target a routing rule selects to forward traffic toward a destination. |
+| [Health check](#2-routing-gateways-and-service-delivery) | A targeted test of a component’s ability to perform a particular task. Its scope determines what a successful result proves. |
+| [Load balancer](#2-routing-gateways-and-service-delivery) | A component distributing incoming work among eligible backends under its routing and health policy. |
+| [Tenancy](#2-routing-gateways-and-service-delivery) | The organization’s root OCI account and administrative boundary in which compartments and resource policies are managed. |
+| [Region](#2-routing-gateways-and-service-delivery) | A geographic area containing OCI infrastructure. Region choice affects service locality, latency, residency and recovery options. |
+| [Internet gateway](#2-routing-gateways-and-service-delivery) | A VCN gateway providing a route for public internet traffic when addressing, routes and security rules allow it. |
+| [NAT gateway](#2-routing-gateways-and-service-delivery) | A gateway enabling eligible private resources to initiate internet connections without assigning them public IP addresses. |
+| [Service gateway](#2-routing-gateways-and-service-delivery) | An OCI gateway providing a private route from a VCN to supported services in the Oracle Services Network. |
+| [Backend set](#2-routing-gateways-and-service-delivery) | A load balancer’s pool of servers together with the policy and checks used to choose eligible backends. |
+| [Listener](#2-routing-gateways-and-service-delivery) | The load balancer configuration accepting a particular protocol and port and directing matching traffic toward a backend. |
+
+**Hybrid and multicloud architectures**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Dynamic routing gateway (DRG)](#3-hybrid-and-multicloud-architectures) | OCI’s virtual router that connects VCNs and other attachments, including VPN and FastConnect connections. |
+| [FastConnect](#3-hybrid-and-multicloud-architectures) | A dedicated connection option linking an external network to OCI, distinct from an IPsec tunnel over the internet. |
+| [Backup network path](#3-hybrid-and-multicloud-architectures) | An alternate route for connectivity when the primary path fails. Test whether routes switch to the VPN and whether the backup can carry the required traffic. |
+| [Network segmentation](#3-hybrid-and-multicloud-architectures) | Dividing a network into controlled communication boundaries to limit reachability and the impact of a failure or compromise. |
+| [Route table](#3-hybrid-and-multicloud-architectures) | Rules selecting a next hop based on destination. A matching route supplies a path, while security controls separately determine permitted traffic. |
+| [Site-to-Site VPN](#3-hybrid-and-multicloud-architectures) | An encrypted network-to-network connection using IPsec tunnels. Both tunnel routing and encryption state affect reachability. |
+| [Route import](#3-hybrid-and-multicloud-architectures) | The policy deciding which routes enter a DRG route table from attached networks. |
+| [Route export](#3-hybrid-and-multicloud-architectures) | A policy controlling which available routes are advertised to a DRG attachment or peer. |
+| [BGP](#3-hybrid-and-multicloud-architectures) | Border Gateway Protocol, used to exchange reachability information and select routes between routing systems. |
+| [Customer premises equipment (CPE)](#3-hybrid-and-multicloud-architectures) | The on-premises edge device terminating or participating in hybrid connectivity to the cloud. |
+
+**Secure network implementation and operations**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Stateful traffic rule](#4-secure-network-implementation-and-operations) | A rule that tracks an allowed connection and permits its corresponding return traffic. |
+| [Stateless traffic rule](#4-secure-network-implementation-and-operations) | A rule that evaluates traffic independently in each direction, requiring appropriate rules for the return path. |
+| [Audit log](#4-secure-network-implementation-and-operations) | Records of administrative actions that help identify who performed an operation, on what resource and when. |
+| [DNS](#4-secure-network-implementation-and-operations) | The naming system resolving service names to addresses or other records. Correct resolution alone does not establish reachability. |
+| [Security list](#4-secure-network-implementation-and-operations) | A set of traffic rules associated with a subnet and applied to its VNICs under OCI networking rules. |
+| [Network security group (NSG)](#4-secure-network-implementation-and-operations) | Traffic rules applied to chosen VNICs or other supported resource endpoints rather than every VNIC in a subnet. |
+| [Bastion](#4-secure-network-implementation-and-operations) | A service for controlled, time-bounded administrative sessions to eligible private resources. |
+| [Network Firewall](#4-secure-network-implementation-and-operations) | A network security service enforcing inspection and traffic policy on routed flows that pass through it. |
+
+**Workload migration**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Cutover](#5-workload-migration) | The planned switch of production traffic or processing to a migrated environment after prerequisites are verified. |
+| [Latency](#5-workload-migration) | The time for a request or operation to complete, measured at a specified boundary from the selected start to finish. |
+| [Throughput](#5-workload-migration) | The amount of useful work completed per unit time, such as bytes transferred or requests served per second. |
+
+**Evidence-led troubleshooting**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Flow log](#6-evidence-led-troubleshooting) | A record describing observed network traffic and its disposition, useful for matching source, destination and time during diagnosis. |
+| [Metric](#6-evidence-led-troubleshooting) | A numeric measurement recorded over time, such as failed requests or queue depth, with defined units and dimensions. |
+| [Encryption in transit](#6-evidence-led-troubleshooting) | Protecting data while it travels between endpoints, commonly through authenticated TLS connections. |
+| [Monitoring alarm](#6-evidence-led-troubleshooting) | A rule that evaluates a metric query over time and signals a state change when the configured condition is met. |
+| [Path analysis](#6-evidence-led-troubleshooting) | Examining the modeled network path and configuration for an expected flow, alongside logs and endpoint evidence of actual traffic. |
+
+**Original readiness checks**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Authorization](#answer-guide) | Evaluating whether the requesting identity may take a particular action on a particular resource within the applicable scope. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Runbook](#hands-on-labs) | A documented response procedure identifying evidence to gather, safe actions, decision owners and verification steps. |
+
 ## Places to learn
 
 This is a selective learning path, not a complete list of OCI networking resources.

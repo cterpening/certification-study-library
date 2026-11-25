@@ -3755,7 +3755,7 @@
       "review_type": "source-validation",
       "reviewed_on": "2026-09-27",
       "outcome": "passed",
-      "blueprint_snapshot_path": "data/objective-snapshots/ab-100-official-objectives.txt",
+      "blueprint_snapshot_path": "data/objective-snapshots/archive/ab-100-3736af21c41a6a8c785e5461d4ba25424a9e6b2205a3c10ae1d18589e16a61e2.txt",
       "blueprint_snapshot_sha256": "3736af21c41a6a8c785e5461d4ba25424a9e6b2205a3c10ae1d18589e16a61e2",
       "objective_coverage": [
         {
@@ -5742,7 +5742,7 @@
       "review_type": "source-validation",
       "reviewed_on": "2026-09-28",
       "outcome": "passed",
-      "blueprint_snapshot_path": "data/objective-snapshots/ms-721-official-objectives.txt",
+      "blueprint_snapshot_path": "data/objective-snapshots/archive/ms-721-5167d7ad28df0c595db0836af19c921bc647da376dd96d029dbdf9f60555c5b0.txt",
       "blueprint_snapshot_sha256": "5167d7ad28df0c595db0836af19c921bc647da376dd96d029dbdf9f60555c5b0",
       "objective_coverage": [
         {
@@ -21011,7 +21011,7 @@
       "review_type": "source-validation",
       "reviewed_on": "2026-10-28",
       "outcome": "blocked",
-      "blueprint_snapshot_path": "data/objective-snapshots/ab-100-official-objectives.txt",
+      "blueprint_snapshot_path": "data/objective-snapshots/archive/ab-100-3736af21c41a6a8c785e5461d4ba25424a9e6b2205a3c10ae1d18589e16a61e2.txt",
       "blueprint_snapshot_sha256": "3736af21c41a6a8c785e5461d4ba25424a9e6b2205a3c10ae1d18589e16a61e2",
       "objective_coverage": [
         {
@@ -21403,7 +21403,7 @@
       "review_type": "source-validation",
       "reviewed_on": "2026-10-28",
       "outcome": "blocked",
-      "blueprint_snapshot_path": "data/objective-snapshots/ai-200-official-objectives.txt",
+      "blueprint_snapshot_path": "data/objective-snapshots/archive/ai-200-ea26ee8b8e99899874fadfd3c728a6cfef05684ef79d5e8c2373ef87a3cf0213.txt",
       "blueprint_snapshot_sha256": "ea26ee8b8e99899874fadfd3c728a6cfef05684ef79d5e8c2373ef87a3cf0213",
       "objective_coverage": [
         {
@@ -21498,7 +21498,7 @@
       "review_type": "source-validation",
       "reviewed_on": "2026-10-28",
       "outcome": "blocked",
-      "blueprint_snapshot_path": "data/objective-snapshots/ab-100-official-objectives.txt",
+      "blueprint_snapshot_path": "data/objective-snapshots/archive/ab-100-3736af21c41a6a8c785e5461d4ba25424a9e6b2205a3c10ae1d18589e16a61e2.txt",
       "blueprint_snapshot_sha256": "3736af21c41a6a8c785e5461d4ba25424a9e6b2205a3c10ae1d18589e16a61e2",
       "objective_coverage": [
         {
@@ -24158,7 +24158,7 @@
       "review_type": "source-validation",
       "reviewed_on": "2026-10-28",
       "outcome": "passed",
-      "blueprint_snapshot_path": "data/objective-snapshots/ms-721-official-objectives.txt",
+      "blueprint_snapshot_path": "data/objective-snapshots/archive/ms-721-5167d7ad28df0c595db0836af19c921bc647da376dd96d029dbdf9f60555c5b0.txt",
       "blueprint_snapshot_sha256": "5167d7ad28df0c595db0836af19c921bc647da376dd96d029dbdf9f60555c5b0",
       "objective_coverage": [
         {
@@ -39573,6 +39573,1161 @@
         "missing_or_error": 0
       },
       "notes": "Opened the current dedicated AZ-401 exam page, credential page and full AZ-401 study-guide objective map on October 29, 2026. The study guide lists five weighted domains and was last updated October 13, 2026; its full objective set is preserved in the bound snapshot. The credential page repeats unrelated AB-100 objectives, so scope uses the AZ-401-specific exam page and study guide that agree. The exam remains beta; observed page shows English, score 700 and delayed beta results, with no formal prerequisite credential, duration or item count identified; the exam page says pricing varies by country or region without giving the local amount. Added a complete guide with domain-level mapping, technical explanations, failure/decision guidance, safe proposed labs, original checks and evaluated resource options. 49 unique guide links are cataloged and source-health checked: 49 reachable, none blocked or broken. Objective-specific practice now includes artifact feeds/views, test-result and coverage publication, reusable pipeline elements, runner diagnostics, token distinctions, GHAS platform coverage, Git recovery commands, Copilot review controls, GitHub Insights limits, and Copilot agent-log surfaces. No product/cloud execution, exam-session material or human review is claimed."
+    },
+    {
+      "id": "ab-100-2026-11-20-effective-outline",
+      "exam_code": "AB-100",
+      "guide_path": "guides/AB-100-agentic-ai-business-solutions-architect.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-11-20",
+      "outcome": "blocked",
+      "blueprint_snapshot_path": "data/objective-snapshots/ab-100-official-objectives.txt",
+      "blueprint_snapshot_sha256": "cbe7ecb510ab59d0da6f89dbc8f22e7ded45b008d0750c13ee07388ca3717526",
+      "objective_coverage": [
+        {
+          "objective_group": "Analyze requirements for AI-powered business solutions",
+          "guide_sections": [
+            "Classify the work before assigning autonomy",
+            "2. Analyze requirements and grounding data",
+            "Evaluate grounding data"
+          ]
+        },
+        {
+          "objective_group": "Design overall AI strategy for business solutions",
+          "guide_sections": [
+            "Apply the Cloud Adoption Framework as a change system",
+            "Create an AI Center of Excellence that enables delivery",
+            "Match platform to the experience and control required",
+            "Design multi-agent responsibility",
+            "Worked platform elimination and shared-tool change",
+            "Orchestrate prebuilt agents and app experiences",
+            "Copilot Studio design",
+            "Apply layered control",
+            "Map the actual governance coverage",
+            "Evaluate grounding data",
+            "Build, buy, or extend",
+            "Extend Microsoft 365 Copilot",
+            "Decide when a customized small language model fits",
+            "Data and model ALM",
+            "Govern a prompt library",
+            "Build a layered test strategy",
+            "Worked boundary: service case resolution",
+            "7. Orchestrate Dynamics 365, Microsoft 365, and Power Platform capabilities"
+          ]
+        },
+        {
+          "objective_group": "Evaluate the costs and benefits of an AI-powered business solution",
+          "guide_sections": [
+            "Establish value before launch",
+            "Worked ROI check with synthetic assumptions",
+            "Build, buy, or extend",
+            "Use model routing deliberately"
+          ]
+        },
+        {
+          "objective_group": "Design AI and agents for business solutions",
+          "guide_sections": [
+            "Customer experience, service, sales, and Contact Center",
+            "Agent pattern catalog",
+            "Event-driven work has a different identity boundary",
+            "Match a Foundry capability to the input and result",
+            "Worked platform elimination and shared-tool change",
+            "Propose code-first generative pages and an agent feed",
+            "Copilot Studio design",
+            "Evaluate grounding data",
+            "Data and model ALM",
+            "Connect Power Apps and business processes",
+            "Natural-language approach selection"
+          ]
+        },
+        {
+          "objective_group": "Design extensibility of AI solutions",
+          "guide_sections": [
+            "Decide when a customized small language model fits",
+            "Data and model ALM",
+            "Extend Microsoft 365 Copilot",
+            "Copilot Studio design",
+            "Model Context Protocol and Agent2Agent",
+            "Map the actual governance coverage",
+            "Worked platform elimination and shared-tool change",
+            "Computer use, reasoning, and voice",
+            "Worked boundary: service case resolution"
+          ]
+        },
+        {
+          "objective_group": "Orchestrate configuration for prebuilt agents and apps",
+          "guide_sections": [
+            "Orchestrate prebuilt agents and app experiences",
+            "Customer experience, service, sales, and Contact Center",
+            "Add finance and operations knowledge safely"
+          ]
+        },
+        {
+          "objective_group": "Analyze, monitor, and tune AI-powered business solutions",
+          "guide_sections": [
+            "Use an operational measurement stack",
+            "Tune the right layer",
+            "Evaluate outcomes and trajectories"
+          ]
+        },
+        {
+          "objective_group": "Manage the testing of AI-powered business solutions",
+          "guide_sections": [
+            "Build a layered test strategy",
+            "Exercise 15: Effective-control and evaluation-identity review",
+            "Govern a prompt library",
+            "Exercise 8: Dynamics 365 cross-workload orchestration"
+          ]
+        },
+        {
+          "objective_group": "Design the ALM process for AI-powered business solutions",
+          "guide_sections": [
+            "Data and model ALM",
+            "Treat the solution as a bundle of versioned artifacts",
+            "Exercise 15: Effective-control and evaluation-identity review",
+            "Foundry versions, endpoints, and identity",
+            "Add finance and operations knowledge safely"
+          ]
+        },
+        {
+          "objective_group": "Design responsible AI, security, governance, risk management, and compliance",
+          "guide_sections": [
+            "Apply layered control",
+            "Defend against prompt manipulation",
+            "Map the actual governance coverage",
+            "Exercise 15: Effective-control and evaluation-identity review",
+            "Use risk tiers",
+            "Data and model ALM",
+            "Validate residency and data movement",
+            "Evaluate grounding data",
+            "Preserve auditability"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": false,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": false,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 83,
+        "reachable": 81,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Effective English outline reconciled to the existing objective map and learner-facing changes. Selected technical and training pages inspected. Full material-claim and guide-wide link verification remains open. Link counts refer to the tracked health baseline."
+    },
+    {
+      "id": "ms-721-2026-11-20-effective-outline",
+      "exam_code": "MS-721",
+      "guide_path": "guides/MS-721-collaboration-communications-systems-engineer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-11-20",
+      "outcome": "blocked",
+      "blueprint_snapshot_path": "data/objective-snapshots/ms-721-official-objectives.txt",
+      "blueprint_snapshot_sha256": "49ebf5eeab3209453f89ef2701f73e2d1e506fa433c0feaaedff8ede8fafd1c1",
+      "objective_coverage": [
+        {
+          "objective_group": "Plan and design Teams meetings",
+          "guide_sections": [
+            "Meeting and event architecture",
+            "Meeting policy stack and advanced experiences",
+            "Create and assign policy packages"
+          ]
+        },
+        {
+          "objective_group": "Plan and design Teams Phone and PSTN connectivity",
+          "guide_sections": [
+            "Teams Phone and PSTN connectivity",
+            "Auto attendants and call queues",
+            "Dynamic emergency calling",
+            "Teams Rooms and certified-device design",
+            "Operations and lifecycle",
+            "Direct Routing, extensions and survivability",
+            "Worked phone-policy matrix",
+            "Choose a certified contact-center integration"
+          ]
+        },
+        {
+          "objective_group": "Plan and design Teams-certified device solutions",
+          "guide_sections": [
+            "Teams Rooms and certified-device design",
+            "Resource accounts, enrollment and secure access",
+            "Room features and flexible workspaces"
+          ]
+        },
+        {
+          "objective_group": "Prepare the network for Teams",
+          "guide_sections": [
+            "Network and media design",
+            "Resource accounts, enrollment and secure access"
+          ]
+        },
+        {
+          "objective_group": "Configure and manage Teams meetings",
+          "guide_sections": [
+            "Meeting policy stack and advanced experiences",
+            "Meeting and event architecture",
+            "Configure avatars with an expiry boundary",
+            "Teams Rooms and certified-device design",
+            "Evaluate Teams Premium in the admin center"
+          ]
+        },
+        {
+          "objective_group": "Configure and manage Audio Conferencing",
+          "guide_sections": [
+            "Audio Conferencing"
+          ]
+        },
+        {
+          "objective_group": "Configure and manage Teams webinars",
+          "guide_sections": [
+            "Webinars and town halls"
+          ]
+        },
+        {
+          "objective_group": "Configure and manage Teams Town halls",
+          "guide_sections": [
+            "Webinars and town halls",
+            "Network and media design",
+            "Town halls across Teams, Viva Engage and recorded video"
+          ]
+        },
+        {
+          "objective_group": "Create and configure Teams Phone policies",
+          "guide_sections": [
+            "Direct Routing, extensions and survivability",
+            "User calling configuration and policies",
+            "Worked phone-policy matrix",
+            "Operations and lifecycle",
+            "Teams Phone and PSTN connectivity"
+          ]
+        },
+        {
+          "objective_group": "Create and configure auto attendants and call queues",
+          "guide_sections": [
+            "Auto attendants and call queues",
+            "Configure queue outbound identity",
+            "Direct Routing, extensions and survivability"
+          ]
+        },
+        {
+          "objective_group": "Configure emergency calling",
+          "guide_sections": [
+            "Dynamic emergency calling"
+          ]
+        },
+        {
+          "objective_group": "Assign Teams Phone licenses, phone numbers, and policies",
+          "guide_sections": [
+            "User calling configuration and policies",
+            "Assign phone numbers in a controlled PowerShell batch",
+            "Meeting policy stack and advanced experiences",
+            "Create and assign policy packages"
+          ]
+        },
+        {
+          "objective_group": "Configure and manage calling features for Teams Phone",
+          "guide_sections": [
+            "User calling configuration and policies",
+            "Worked calling features — recipient and timing",
+            "Audio Conferencing"
+          ]
+        },
+        {
+          "objective_group": "Configure and manage Direct Routing for Teams Phone",
+          "guide_sections": [
+            "Direct Routing, extensions and survivability",
+            "Direct Routing implementation and troubleshooting",
+            "Configure on-network Audio Conferencing",
+            "Dynamic emergency calling",
+            "Teams Phone and PSTN connectivity"
+          ]
+        },
+        {
+          "objective_group": "Manage and maintain Teams Rooms and devices",
+          "guide_sections": [
+            "Operations and lifecycle",
+            "Resource accounts, enrollment and secure access",
+            "Create and manage Teams device tags",
+            "Provision a supported SIP handset",
+            "Device troubleshooting"
+          ]
+        },
+        {
+          "objective_group": "Configure and manage Teams Android devices",
+          "guide_sections": [
+            "Operations and lifecycle",
+            "Enable and verify hotline on a shared phone",
+            "Device troubleshooting",
+            "Configure Android and panel display branding",
+            "Resource accounts, enrollment and secure access"
+          ]
+        },
+        {
+          "objective_group": "Configure and manage Teams Rooms on Windows",
+          "guide_sections": [
+            "Operations and lifecycle",
+            "Keep workstation GPOs off room appliances",
+            "Configure Windows room display branding",
+            "Worked optional-room acceptance matrix"
+          ]
+        },
+        {
+          "objective_group": "Configure optional features for Teams Rooms and devices",
+          "guide_sections": [
+            "Room features and flexible workspaces",
+            "Worked optional-room acceptance matrix",
+            "Teams Rooms and certified-device design"
+          ]
+        },
+        {
+          "objective_group": "Configure BYOD spaces and bookable desks",
+          "guide_sections": [
+            "Room features and flexible workspaces",
+            "Create and publish room types and standards"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": false,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": false,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 84,
+        "reachable": 83,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "Effective English outline reconciled to the existing objective map and learner-facing changes. Selected technical and training pages inspected. Full material-claim and guide-wide link verification remains open. Link counts refer to the tracked health baseline."
+    },
+    {
+      "id": "ai-200-2026-11-20-effective-outline",
+      "exam_code": "AI-200",
+      "guide_path": "guides/AI-200-developing-ai-cloud-solutions-on-azure.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-11-20",
+      "outcome": "blocked",
+      "blueprint_snapshot_path": "data/objective-snapshots/ai-200-official-objectives.txt",
+      "blueprint_snapshot_sha256": "3dc5dfbae796cc5345c92061d04d0e671d5ebc7252ac057038ca61b8b8a6e464",
+      "objective_coverage": [
+        {
+          "objective_group": "Current detailed objective group 1.1",
+          "guide_sections": [
+            "Build an image as an immutable supply-chain artifact",
+            "Build and run with ACR Tasks",
+            "Deploy a custom container to App Service"
+          ]
+        },
+        {
+          "objective_group": "Current detailed objective group 1.2",
+          "guide_sections": [
+            "Deploy and revise Azure Container Apps",
+            "Scale with KEDA",
+            "Deploy and manage AKS with manifests",
+            "Troubleshoot Container Apps and AKS end to end"
+          ]
+        },
+        {
+          "objective_group": "Current detailed objective group 2.1",
+          "guide_sections": [
+            "Implement Cosmos DB for NoSQL access",
+            "Partition, indexing and consistency",
+            "Store embeddings and run Cosmos DB vector search",
+            "Process changes with the Cosmos DB change feed"
+          ]
+        },
+        {
+          "objective_group": "Current detailed objective group 2.2",
+          "guide_sections": [
+            "Implement PostgreSQL and pgvector",
+            "Store and index vectors with pgvector",
+            "Size compute, memory, storage and connections"
+          ]
+        },
+        {
+          "objective_group": "Current detailed objective group 2.3",
+          "guide_sections": [
+            "Integrate Azure Managed Redis",
+            "Match clustering, modules and client"
+          ]
+        },
+        {
+          "objective_group": "Current detailed objective group 3.1",
+          "guide_sections": [
+            "Queue back-end work with Service Bus",
+            "Implement Event Grid workflows"
+          ]
+        },
+        {
+          "objective_group": "Current detailed objective group 3.2",
+          "guide_sections": [
+            "Build serverless APIs and workers with Azure Functions",
+            "Trigger and binding semantics"
+          ]
+        },
+        {
+          "objective_group": "Current detailed objective group 4.1",
+          "guide_sections": [
+            "Retrieve and rotate secrets with Key Vault",
+            "Centralize nonsecret configuration with App Configuration"
+          ]
+        },
+        {
+          "objective_group": "Current detailed objective group 4.2",
+          "guide_sections": [
+            "Instrument with OpenTelemetry",
+            "Query telemetry with KQL"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": false,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": false,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 81,
+        "reachable": 78,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "Effective English outline reconciled to the existing objective map and learner-facing changes. Selected technical and training pages inspected. Full material-claim and guide-wide link verification remains open. Link counts refer to the tracked health baseline."
+    },
+    {
+      "id": "ai-103-2026-11-20-resource-refresh",
+      "exam_code": "AI-103",
+      "guide_path": "guides/AI-103-developing-ai-apps-and-agents-on-azure.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-11-20",
+      "outcome": "blocked",
+      "blueprint_snapshot_path": "data/objective-snapshots/ai-103-official-objectives.txt",
+      "blueprint_snapshot_sha256": "3fbf0ebd6b3d5e591d7354de47f8d87baaea121330a209e9104045447ac70f63",
+      "objective_coverage": [
+        {
+          "objective_group": "Choose the appropriate Foundry services for generative AI and agents",
+          "guide_sections": [
+            "Choose a capability before choosing a product",
+            "Understand the RAG pipeline",
+            "Search relevance loop",
+            "Engineer a retrieval index",
+            "Current SDK and retrieval preflight — October 28, 2026",
+            "5. Build and operate agents"
+          ]
+        },
+        {
+          "objective_group": "Set up AI solutions in Foundry",
+          "guide_sections": [
+            "Design the Azure infrastructure",
+            "Treat deployments as versioned configuration",
+            "Create a deployment manifest",
+            "Worked identity example: the same definition can have different permissions"
+          ]
+        },
+        {
+          "objective_group": "Manage, monitor, and secure AI systems",
+          "guide_sections": [
+            "Manage quota, scale, rate limits, and cost",
+            "Budget latency and cost across the complete call graph",
+            "Observe the entire system",
+            "Create evaluation gates and production feedback",
+            "Design an evaluation set that can reject a release",
+            "Ingestion design",
+            "Debug RAG by separating its quality stages",
+            "Current SDK and retrieval preflight — October 28, 2026",
+            "Design the Azure infrastructure",
+            "Draw trust boundaries before selecting controls"
+          ]
+        },
+        {
+          "objective_group": "Implement responsible AI across generative AI and agentic systems",
+          "guide_sections": [
+            "Threat and control map",
+            "Evaluate the application, not only the model",
+            "Design an evaluation set that can reject a release",
+            "Observe the entire system",
+            "Build a stateful agent as a state machine",
+            "Draw trust boundaries before selecting controls",
+            "Human oversight modes",
+            "Design tools as security-sensitive APIs"
+          ]
+        },
+        {
+          "objective_group": "Build generative applications by using Foundry",
+          "guide_sections": [
+            "Choose a capability before choosing a product",
+            "Treat deployments as versioned configuration",
+            "Design the Python application boundary",
+            "Understand the RAG pipeline",
+            "Engineer a retrieval index",
+            "5. Build and operate agents",
+            "Build a stateful agent as a state machine",
+            "Evaluate the application, not only the model",
+            "Worked tool and evaluation example: a success response can hide a wrong action",
+            "Create evaluation gates and production feedback",
+            "Design an evaluation set that can reject a release",
+            "Current SDK and retrieval preflight — October 28, 2026",
+            "Design the Azure infrastructure"
+          ]
+        },
+        {
+          "objective_group": "Build agents by using Foundry",
+          "guide_sections": [
+            "5. Build and operate agents",
+            "Build a stateful agent as a state machine",
+            "Design tools as security-sensitive APIs",
+            "8. Implement information extraction and search",
+            "Tool contract example",
+            "Multi-agent orchestration",
+            "Orchestrate multiple models, agents, and rules",
+            "Worked tool and evaluation example: a success response can hide a wrong action",
+            "Observe the entire system",
+            "Diagnose an agent failure by phase",
+            "Create evaluation gates and production feedback",
+            "Roll out an agent change as an operational experiment",
+            "Design an evaluation set that can reject a release"
+          ]
+        },
+        {
+          "objective_group": "Optimize and operationalize generative AI systems",
+          "guide_sections": [
+            "Control generation deliberately",
+            "Evaluate reflection and self-critique safely",
+            "Observe the entire system",
+            "Budget latency and cost across the complete call graph",
+            "Orchestrate multiple models, agents, and rules"
+          ]
+        },
+        {
+          "objective_group": "Design and implement image- and video-generation solutions",
+          "guide_sections": [
+            "Generation and editing",
+            "Lab 7: Video remix and Content Understanding mode boundaries",
+            "Implement multimodal and Content Understanding modes",
+            "Version-bounded Sora 2 edit/remix workflow"
+          ]
+        },
+        {
+          "objective_group": "Design and implement multimodal understanding workflows",
+          "guide_sections": [
+            "Visual understanding",
+            "Worked visual example: observable evidence and useful alt text",
+            "Implement multimodal and Content Understanding modes",
+            "Map the blueprint's Content Understanding modes to documented versions",
+            "Lab 7: Video remix and Content Understanding mode boundaries"
+          ]
+        },
+        {
+          "objective_group": "Implement responsible AI for multimodal content",
+          "guide_sections": [
+            "Threat and control map",
+            "Multimodal safety",
+            "Generation and editing",
+            "Implement multimodal and Content Understanding modes",
+            "Enforce visual policy as a release workflow",
+            "Lab 9: Policy, output and speech evidence worksheet"
+          ]
+        },
+        {
+          "objective_group": "Apply language model text analysis",
+          "guide_sections": [
+            "7. Implement text, speech, and translation solutions",
+            "Structured output: syntax, schema and business meaning",
+            "Lab 9: Policy, output and speech evidence worksheet",
+            "Text analysis controls",
+            "Worked speech example: preserve intent across modalities"
+          ]
+        },
+        {
+          "objective_group": "Implement speech solutions",
+          "guide_sections": [
+            "Speech pipeline",
+            "Worked speech example: preserve intent across modalities",
+            "Operate speech as a latency budget",
+            "Choose custom recognition and audio-native reasoning deliberately",
+            "Lab 9: Policy, output and speech evidence worksheet",
+            "Text analysis controls"
+          ]
+        },
+        {
+          "objective_group": "Build retrieval and grounding pipelines",
+          "guide_sections": [
+            "Ingestion design",
+            "Engineer a retrieval index",
+            "Understand the RAG pipeline",
+            "Search relevance loop",
+            "Worked extraction example: confidence is one input to validation",
+            "Design tools as security-sensitive APIs"
+          ]
+        },
+        {
+          "objective_group": "Extract content from documents",
+          "guide_sections": [
+            "Ingestion design",
+            "Worked extraction example: confidence is one input to validation",
+            "Map the blueprint's Content Understanding modes to documented versions",
+            "Lab 6: Document-to-agent pipeline"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": false,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": false,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 58,
+        "reachable": 56,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Rechecked the official outline and the selected technical and learning sources. Removed an unavailable resource from the guide. The earlier full objective map is carried forward. Full material-claim and guide-wide link verification remains open. Link counts use the tracked health baseline."
+    },
+    {
+      "id": "ai-300-2026-11-20-resource-refresh",
+      "exam_code": "AI-300",
+      "guide_path": "guides/AI-300-operationalizing-machine-learning-generative-ai-solutions.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-11-20",
+      "outcome": "blocked",
+      "blueprint_snapshot_path": "data/objective-snapshots/ai-300-official-objectives.txt",
+      "blueprint_snapshot_sha256": "79d7fabcf253e7ac5f5f7629397075867d22c48045c2483c9d03e1b217215f41",
+      "objective_coverage": [
+        {
+          "objective_group": "Create and manage resources in a Machine Learning workspace",
+          "guide_sections": [
+            "Build the Azure Machine Learning resource boundary",
+            "Datastores and data assets",
+            "Compute targets",
+            "Identity and access"
+          ]
+        },
+        {
+          "objective_group": "Create and manage assets in a Machine Learning workspace",
+          "guide_sections": [
+            "Datastores and data assets",
+            "Create reusable workspace assets"
+          ]
+        },
+        {
+          "objective_group": "Implement IaC for Machine Learning",
+          "guide_sections": [
+            "Provision with Bicep, CLI and GitHub Actions",
+            "Worked provisioning step: deploy infrastructure before submitting jobs",
+            "Restrict networking and manage Git"
+          ]
+        },
+        {
+          "objective_group": "Orchestrate model training",
+          "guide_sections": [
+            "Make experiments reproducible with MLflow",
+            "AutoML and hyperparameter tuning",
+            "Worked command job: bind the script to declared assets",
+            "Distributed training",
+            "Build training pipelines"
+          ]
+        },
+        {
+          "objective_group": "Implement model registration and versioning",
+          "guide_sections": [
+            "Build training pipelines",
+            "Register and govern models"
+          ]
+        },
+        {
+          "objective_group": "Deploy machine learning models for production environments",
+          "guide_sections": [
+            "Deploy online and batch endpoints",
+            "Troubleshoot an endpoint from evidence",
+            "Progressive rollout and rollback"
+          ]
+        },
+        {
+          "objective_group": "Monitor and maintain machine learning models in production",
+          "guide_sections": [
+            "Monitor drift and production performance",
+            "Build an actionable production monitor"
+          ]
+        },
+        {
+          "objective_group": "Implement Foundry environments and platform configuration",
+          "guide_sections": [
+            "Provision current Microsoft Foundry environments",
+            "Network mode is part of the release contract",
+            "Worked provisioning step: deploy infrastructure before submitting jobs"
+          ]
+        },
+        {
+          "objective_group": "Deploy and manage foundation models for production workloads",
+          "guide_sections": [
+            "Worked deployment choice: the model card defines the available route",
+            "Select and deploy foundation models"
+          ]
+        },
+        {
+          "objective_group": "Implement prompt versioning and management with source control",
+          "guide_sections": [
+            "Operate prompts and connections",
+            "Version prompts as production artifacts"
+          ]
+        },
+        {
+          "objective_group": "Configure evaluation and validation for generative AI applications and agents",
+          "guide_sections": [
+            "Build evaluation datasets and mappings",
+            "Match the evaluation API and scenario"
+          ]
+        },
+        {
+          "objective_group": "Implement observability for generative AI applications and agents",
+          "guide_sections": [
+            "Observe applications and agents continuously",
+            "Debug agent and RAG traces safely"
+          ]
+        },
+        {
+          "objective_group": "Optimize retrieval-augmented generation (RAG) performance and accuracy",
+          "guide_sections": [
+            "Optimize RAG from a labeled baseline",
+            "Worked embedding adaptation: train retrieval geometry, then rebuild the index"
+          ]
+        },
+        {
+          "objective_group": "Implement advanced fine-tuning and model customization",
+          "guide_sections": [
+            "Fine-tune only for the right problem",
+            "Operate the fine-tuning dataset and checkpoints"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": false,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": false,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 60,
+        "reachable": 58,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Rechecked the official outline and the selected technical and learning sources. Removed an unavailable resource from the guide. The earlier full objective map is carried forward. Full material-claim and guide-wide link verification remains open. Link counts use the tracked health baseline."
+    },
+    {
+      "id": "ai-500-2026-11-20-resource-refresh",
+      "exam_code": "AI-500",
+      "guide_path": "guides/AI-500-designing-implementing-multi-agent-ai-solutions.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-11-20",
+      "outcome": "blocked",
+      "blueprint_snapshot_path": "data/objective-snapshots/ai-500-official-objectives.txt",
+      "blueprint_snapshot_sha256": "498ed5ca3e5f1ac958dedea4b84cb33a34a8ff0f5aa239540fd7283bc41360e8",
+      "objective_coverage": [
+        {
+          "objective_group": "Design logical architecture for multi-agent solutions",
+          "guide_sections": [
+            "Decompose goals into observable work",
+            "Select an orchestration topology",
+            "Design control loops and human-in-the-loop",
+            "Define personas, scope, and autonomy",
+            "Apply Zero Trust per agent",
+            "Design function tools",
+            "Separate coordination protocols from tool protocols",
+            "Use a multi-tier state and memory model",
+            "Match model family to task demand"
+          ]
+        },
+        {
+          "objective_group": "Specify technology components to include in a multi-agent solution",
+          "guide_sections": [
+            "Separate coordination protocols from tool protocols",
+            "Engineer multi-agent RAG",
+            "Apply Zero Trust per agent",
+            "Use a multi-tier state and memory model",
+            "Design compute and developer environments",
+            "Build observability into the design",
+            "Monitor reliability, tokens, and cost"
+          ]
+        },
+        {
+          "objective_group": "Design and implement advanced prompt engineering strategies in multi-agent solutions",
+          "guide_sections": [
+            "Treat prompts as versioned program inputs",
+            "Build context intentionally",
+            "Choose prompting, RAG, memory, or fine-tuning"
+          ]
+        },
+        {
+          "objective_group": "Design and implement agent memory, context management, and knowledge integration",
+          "guide_sections": [
+            "Build context intentionally",
+            "Design secure memory operations",
+            "Engineer multi-agent RAG",
+            "Build and govern MCP integrations"
+          ]
+        },
+        {
+          "objective_group": "Build and integrate tool ecosystems",
+          "guide_sections": [
+            "Design function tools",
+            "Build and govern MCP integrations"
+          ]
+        },
+        {
+          "objective_group": "Implement multi-agent orchestration",
+          "guide_sections": [
+            "Select an orchestration topology",
+            "Make human intervention a workflow state",
+            "Control caching and concurrency",
+            "Connect existing agents through A2A or MCP",
+            "Separate coordination protocols from tool protocols",
+            "Select a framework without surrendering architecture",
+            "Implement a model component behind the orchestration boundary",
+            "Build middleware for cross-cutting policy"
+          ]
+        },
+        {
+          "objective_group": "Design and implement evaluation and validation strategies for multi-agent solutions",
+          "guide_sections": [
+            "Evaluate components and the whole workflow"
+          ]
+        },
+        {
+          "objective_group": "Optimize prompt and model performance for multi-agent solutions",
+          "guide_sections": [
+            "Test execution behavior",
+            "Worked example 1 — Parallel latency still consumes shared capacity",
+            "Diagnose continuity failures",
+            "Create continuous-improvement loops safely"
+          ]
+        },
+        {
+          "objective_group": "Design and implement observability and monitoring for multi-agent solutions",
+          "guide_sections": [
+            "Monitor reliability, tokens, and cost",
+            "Worked example 6 — Compare cost per valid outcome",
+            "Build observability into the design"
+          ]
+        },
+        {
+          "objective_group": "Design and implement security for multi-agent solutions",
+          "guide_sections": [
+            "Build a resource-access matrix",
+            "Apply Zero Trust per agent",
+            "Shift left with adversarial testing"
+          ]
+        },
+        {
+          "objective_group": "Design and implement guardrails for multi-agent solutions",
+          "guide_sections": [
+            "Place guardrails at four intervention points",
+            "Shift left with adversarial testing"
+          ]
+        },
+        {
+          "objective_group": "Deploy multi-agent solutions to Azure",
+          "guide_sections": [
+            "Design environment promotion and release"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": false,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": false,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 41,
+        "reachable": 39,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Rechecked the official outline and the selected technical and learning sources. Removed an unavailable resource from the guide. The earlier full objective map is carried forward. Full material-claim and guide-wide link verification remains open. Link counts use the tracked health baseline."
+    },
+    {
+      "id": "pl-400-2026-11-20-resource-refresh",
+      "exam_code": "PL-400",
+      "guide_path": "guides/PL-400-microsoft-power-platform-developer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-11-20",
+      "outcome": "blocked",
+      "blueprint_snapshot_path": "data/objective-snapshots/pl-400-official-objectives.txt",
+      "blueprint_snapshot_sha256": "facfff59976de5c12e31c20f17ad072c6255f1324c9a55419788d6ee70a825d1",
+      "objective_coverage": [
+        {
+          "objective_group": "Design the technical architecture",
+          "guide_sections": [
+            "Start with requirements and the smallest sufficient extension",
+            "Design identity, authorization, and governance together",
+            "Choose the data access shape",
+            "Environments and operational security",
+            "Choose the experience and the execution contract"
+          ]
+        },
+        {
+          "objective_group": "Design solution components",
+          "guide_sections": [
+            "Design reusable components and integrations",
+            "Choose the experience and the execution contract",
+            "Worked example — generative reuse and flow",
+            "Custom connectors and OpenAPI",
+            "Connect agents through the correct protocol and identity",
+            "Worked example — a proposed update is not a committed update",
+            "Dataverse plug-ins and custom APIs",
+            "Define custom APIs",
+            "Azure Functions and cloud flows",
+            "Publish and consume Dataverse events",
+            "Build and promote a code app",
+            "Diagnose and optimize from measurements",
+            "Worked example — choose an alert that can meet the response time"
+          ]
+        },
+        {
+          "objective_group": "Implement application lifecycle management (ALM)",
+          "guide_sections": [
+            "Solutions, configuration, dependencies, and layers",
+            "Pipelines and CI/CD"
+          ]
+        },
+        {
+          "objective_group": "Apply business logic in model-driven apps by using client scripting",
+          "guide_sections": [
+            "Client API, events, Web API, commands, and navigation"
+          ]
+        },
+        {
+          "objective_group": "Create PCF code components",
+          "guide_sections": [
+            "Power Apps component framework"
+          ]
+        },
+        {
+          "objective_group": "Build Power Apps code apps",
+          "guide_sections": [
+            "Build and promote a code app",
+            "Build code apps against explicit data contracts",
+            "Choose the supported agent client",
+            "Move configuration and code together"
+          ]
+        },
+        {
+          "objective_group": "Deploy and manage Power Apps code apps",
+          "guide_sections": [
+            "Worked example — An empty CSP source list is not a deny-all rule",
+            "Diagnose the browser and telemetry boundaries",
+            "Build and promote a code app",
+            "Move configuration and code together"
+          ]
+        },
+        {
+          "objective_group": "Create a Dataverse plug-in",
+          "guide_sections": [
+            "Dataverse plug-ins and custom APIs",
+            "Worked example — A filtering attribute was supplied but did not change",
+            "Define custom APIs",
+            "Platform APIs, performance, and reliability"
+          ]
+        },
+        {
+          "objective_group": "Perform operations by using platform APIs",
+          "guide_sections": [
+            "Platform APIs, performance, and reliability",
+            "Extend APIs without losing execution limits",
+            "Background processing changes connection lifetime",
+            "Worked example — compare the same operation across two SDKs",
+            "Use the Dataverse SDK for Python deliberately"
+          ]
+        },
+        {
+          "objective_group": "Process workloads by using Microsoft Azure Functions",
+          "guide_sections": [
+            "Azure Functions and cloud flows"
+          ]
+        },
+        {
+          "objective_group": "Configure Power Automate cloud flows and Copilot Studio workflows",
+          "guide_sections": [
+            "Azure Functions and cloud flows"
+          ]
+        },
+        {
+          "objective_group": "Build Microsoft Foundry agents by using code that integrates with the Microsoft Power Platform",
+          "guide_sections": [
+            "Connect agents through the correct protocol and identity",
+            "Worked example — a proposed update is not a committed update",
+            "Integrate custom agents through governed tools",
+            "Choose the supported agent client",
+            "Distinguish the Work IQ integration surfaces"
+          ]
+        },
+        {
+          "objective_group": "Publish and consume Dataverse events",
+          "guide_sections": [
+            "Publish and consume Dataverse events"
+          ]
+        },
+        {
+          "objective_group": "Implement synchronization for Dataverse data",
+          "guide_sections": [
+            "Synchronize Dataverse data",
+            "Worked example — An expired delta token needs reconciliation"
+          ]
+        },
+        {
+          "objective_group": "Create custom connectors",
+          "guide_sections": [
+            "Custom connectors and OpenAPI"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": false,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": false,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 56,
+        "reachable": 55,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "Rechecked the official outline and the selected technical and learning sources. Removed an unavailable resource from the guide. The earlier full objective map is carried forward. Full material-claim and guide-wide link verification remains open. Link counts use the tracked health baseline."
+    },
+    {
+      "id": "sc-500-2026-11-20-resource-refresh",
+      "exam_code": "SC-500",
+      "guide_path": "guides/SC-500-microsoft-cloud-ai-security-engineer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-11-20",
+      "outcome": "blocked",
+      "blueprint_snapshot_path": "data/objective-snapshots/sc-500-official-objectives.txt",
+      "blueprint_snapshot_sha256": "9f832db799678f547b3272c902e5529c77077e2cd4272326cf8ad94ef50cf7c6",
+      "objective_coverage": [
+        {
+          "objective_group": "Secure access to resources by using Microsoft Entra ID",
+          "guide_sections": [
+            "Treat identity as the control plane",
+            "Lab 1: Privileged access and overprivilege review",
+            "Secure application and workload identities",
+            "Lab 2: Application identity and Key Vault boundary"
+          ]
+        },
+        {
+          "objective_group": "Secure secrets and keys by using Azure Key Vault",
+          "guide_sections": [
+            "Secure Azure Key Vault as a boundary, not just a container",
+            "Lab 2: Application identity and Key Vault boundary"
+          ]
+        },
+        {
+          "objective_group": "Implement governance to enforce security and regulatory compliance",
+          "guide_sections": [
+            "Enforce governance without confusing policy, permission, and protection",
+            "Lab 3: Policy, Defender, backup, and IaC",
+            "Lab 1: Privileged access and overprivilege review"
+          ]
+        },
+        {
+          "objective_group": "Implement security for storage accounts",
+          "guide_sections": [
+            "Secure storage from identity through recovery",
+            "Lab 4: Storage and SQL data plane"
+          ]
+        },
+        {
+          "objective_group": "Implement security for databases",
+          "guide_sections": [
+            "Layer Azure SQL security and evidence",
+            "Lab 4: Storage and SQL data plane"
+          ]
+        },
+        {
+          "objective_group": "Implement security for Azure network services",
+          "guide_sections": [
+            "Build segmentation and private access deliberately",
+            "Lab 5: Network path and effective controls"
+          ]
+        },
+        {
+          "objective_group": "Implement security for AI",
+          "guide_sections": [
+            "Secure AI as a connected system",
+            "Lab 6: AI and agent security control chain",
+            "Focused reading and evidence route",
+            "1. Map the caller before assigning a policy",
+            "2. Compute effective access without double counting",
+            "7. Gateway success is not backend authorization"
+          ]
+        },
+        {
+          "objective_group": "Implement security for servers and virtual machines (VMs)",
+          "guide_sections": [
+            "Harden servers and virtual machines across clouds",
+            "Lab 7: Hybrid VM protection and recovery",
+            "4. Separate scanning from live endpoint protection"
+          ]
+        },
+        {
+          "objective_group": "Implement security for application platform services",
+          "guide_sections": [
+            "Secure containers, serverless, web apps, and APIs",
+            "Lab 8: Application platform, Sentinel, and Copilot operations",
+            "7. Gateway success is not backend authorization"
+          ]
+        },
+        {
+          "objective_group": "Manage security posture by using Defender for Cloud",
+          "guide_sections": [
+            "Turn Defender for Cloud findings into controlled remediation",
+            "Harden servers and virtual machines across clouds",
+            "4. Separate scanning from live endpoint protection",
+            "Lab 7: Hybrid VM protection and recovery"
+          ]
+        },
+        {
+          "objective_group": "Implement activity and event collection in Microsoft Sentinel",
+          "guide_sections": [
+            "Engineer Microsoft Sentinel ingestion before analytics",
+            "Current release and onboarding boundaries",
+            "Worked ingestion path: direct Windows events versus WEF"
+          ]
+        },
+        {
+          "objective_group": "Implement Microsoft Security Copilot",
+          "guide_sections": [
+            "Operate Microsoft Security Copilot with the same rigor as other privileged tooling"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": false,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": false,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 65,
+        "reachable": 61,
+        "access_blocked": 4,
+        "missing_or_error": 0
+      },
+      "notes": "Rechecked the official outline and the selected technical and learning sources. Removed an unavailable resource from the guide. The earlier full objective map is carried forward. Full material-claim and guide-wide link verification remains open. Link counts use the tracked health baseline."
     }
 ]
 }

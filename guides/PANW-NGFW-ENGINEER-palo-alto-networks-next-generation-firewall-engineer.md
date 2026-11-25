@@ -322,6 +322,78 @@ Choose VM-Series, Cloud NGFW, CN-Series, or other supported option from insertio
 - [ ] I can answer the original checks without notes and complete the labs with retained evidence.
 - [ ] I rechecked the live official page, datasheet, handbook, PAN-OS release documentation, and registration terms.
 
+## Key terms and phrases
+
+**PAN-OS networking configuration**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Virtual wire](#11-configure-interfaces) | A firewall deployment that transparently inspects traffic between paired interfaces without acting as the routed next hop. |
+| [Asymmetric routing](#11-configure-interfaces) | Forward and return traffic following different network paths. A stateful device may lose visibility of half the flow. |
+| [Packet capture](#11-configure-interfaces) | An observation of traffic visible at a particular interface or tap. Position, direction and capture filters determine what it can show. |
+| [Security zone](#12-configure-zones) | A logical grouping of interfaces referenced by rules that control traffic between network boundaries. |
+| [Security rule](#12-configure-zones) | A rule that matches traffic attributes such as zones, identity, application or service and determines whether the flow is permitted. |
+| [Segmentation](#12-configure-zones) | Dividing resources into security boundaries and specifying the permitted communication between them. |
+| [HA heartbeat](#13-configure-high-availability) | Messages used by high-availability peers to monitor each other. A healthy heartbeat alone does not prove the forwarding path works. |
+| [Active-active](#13-configure-high-availability) | An HA design in which multiple members can perform selected work. The exact distribution of sessions or inspection depends on the implementation. |
+| [Availability](#13-configure-high-availability) | Timely and reliable access to a resource by authorized users. A running server may still be unavailable to the business if a required dependency fails. |
+| [High availability (HA)](#13-configure-high-availability) | A design that keeps a site operating through a device or path failure, with enough remaining capacity to serve required traffic. |
+| [Active-passive](#13-configure-high-availability) | An HA arrangement in which a standby peer is available to take over service from the active peer. |
+| [Virtual router](#14-configure-routing) | A firewall routing instance with its own interfaces and forwarding decisions. |
+| [Dynamic routing](#14-configure-routing) | Learning and updating routes through a protocol rather than maintaining every path manually. |
+| [Policy-based forwarding](#14-configure-routing) | Selection of a forwarding path using configured match criteria in addition to ordinary destination routing. |
+| [GlobalProtect portal](#15-configure-globalprotect) | The service that supplies GlobalProtect clients with configuration, including which gateways they may use. |
+| [GlobalProtect gateway](#15-configure-globalprotect) | The service that accepts client connections and enforces the configured access and tunnel settings. |
+| [Domain Name System (DNS)](#15-configure-globalprotect) | The Domain Name System, which resolves names to records such as IP addresses so clients can locate services. |
+| [GlobalProtect](#15-configure-globalprotect) | Palo Alto Networks endpoint connectivity and access software and services, with portals providing configuration and gateways handling access. |
+| [Integrity](#16-configure-tunnels) | Protection against unauthorized or improper modification or destruction, including the ability to identify that an expected state has changed. |
+| [Security association (SA)](#16-configure-tunnels) | A set of parameters, keys and counters defining how one direction of traffic is protected under IPsec. |
+
+**PAN-OS device-setting configuration**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Authentication](#21-implement-authentication-roles-profiles-and-sequences) | Checking that a claimant controls an authenticator bound to the claimed identity. It precedes the separate decision about permitted actions. |
+| [Identity provider (IdP)](#21-implement-authentication-roles-profiles-and-sequences) | The service that authenticates a user and supplies identity information to the relying access service. |
+| [Service account](#21-implement-authentication-roles-profiles-and-sequences) | A nonhuman identity used by software or automation. Scope, credential lifecycle and ownership govern what happens when it is compromised or retired. |
+| [Virtual system (vsys)](#22-configure-virtual-systems) | A logical firewall instance that separates policy and administrative scope on a shared platform. |
+| [Log forwarding](#23-configure-logging) | Sending selected logs to other systems under configured match and destination rules. A local log and a successfully received remote record are separate observations. |
+| [Strata Logging Service](#23-configure-logging) | A cloud service for storing and making security logs available to authorized management and investigation tools. |
+| [PAN-OS firewall operating system](#24-implement-pan-os-software-updates) | The operating system used by Palo Alto Networks next-generation firewalls. The effective policy and data path determine how a particular flow is treated. |
+| [Virtual private network (VPN)](#24-implement-pan-os-software-updates) | A protected logical connection over a shared network. Its permitted destinations and traffic depend on routes and access policy. |
+| [Decryption policy](#25-configure-certificates) | Rules that decide which encrypted flows receive TLS inspection and which are excluded. |
+| [Decryption profile](#25-configure-certificates) | Settings governing how the firewall handles encrypted sessions selected by a decryption rule. |
+| [SSL Forward Proxy](#25-configure-certificates) | TLS inspection in which the firewall represents a server to the client and establishes a separate upstream TLS connection. |
+| [User-ID](#26-configure-on-premises-and-cloud-identity-engine-user-id) | Association of network addresses or sessions with identities so Security policy can refer to users and groups. |
+| [Cloud Identity Engine (CIE)](#26-configure-on-premises-and-cloud-identity-engine-user-id) | A Palo Alto Networks service that supplies identity context for supported authentication and policy integrations. |
+| [Deduplication](#26-configure-on-premises-and-cloud-identity-engine-user-id) | Recognizing and handling repeated copies of the same observation or request so duplication does not inflate counts or repeat an action. |
+| [Forward proxy](#27-configure-web-proxy-on-pan-os) | An intermediary acting on behalf of a client for outbound connections, often to apply access policy or inspection. |
+| [Mutual TLS (mTLS)](#27-configure-web-proxy-on-pan-os) | TLS in which both peers present certificates and verify one another. Successful authentication still leaves authorization to policy. |
+
+**Integration and automation**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Management plane](#31-install-the-selected-deployment-option) | The part of a system responsible for configuration and administration. Successful management access alone does not test user traffic. |
+| [Next-generation firewall (NGFW)](#31-install-the-selected-deployment-option) | A firewall that uses application, user and threat information as well as network attributes to enforce policy. |
+| [Runtime security](#31-install-the-selected-deployment-option) | Observation and protection of workloads while they execute, including the processes or connections they actually use. |
+| [Idempotence](#32-use-apis-to-automate-deployment) | Making an operation safe to repeat without accumulating unintended effects. A retried request to create one case should still yield one case. |
+| [Schema](#32-use-apis-to-automate-deployment) | A definition of expected data structure, field types and constraints. A syntactically valid payload may still fail schema or business validation. |
+| [Infrastructure as code (IaC)](#33-manage-third-party-deployment-services) | Expressing infrastructure configuration in versionable files so changes can be reviewed, reproduced and applied through automation. |
+| [Security group](#33-manage-third-party-deployment-services) | An access rule set attached to supported cloud resources or interfaces. The platform determines its evaluation and state-tracking rules. |
+| [Device group](#34-use-on-premises-centralized-management) | A Panorama grouping used to manage shared policy and objects for selected firewalls. |
+| [Template](#34-use-on-premises-centralized-management) | A Panorama collection of device and network settings used to configure managed firewalls. |
+| [Panorama](#34-use-on-premises-centralized-management) | Palo Alto Networks centralized management for supported firewalls. Managed policy, device settings and log collection have distinct roles. |
+| [Template stack](#34-use-on-premises-centralized-management) | An ordered collection of Panorama templates that supplies network and device configuration to assigned firewalls, subject to precedence and overrides. |
+| [Data source](#35-build-acc-dashboards-and-custom-reports) | A system supplying records to the analysis platform. Identify the expected event kinds and population before relying on a quiet dashboard. |
+| [Telemetry](#35-build-acc-dashboards-and-custom-reports) | Records of activity from endpoints, networks or other systems that investigators can correlate into a timeline. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Tenant](#multi-tenant-decryption-deployment) | An administrative or customer boundary in a shared service. Data, identities, configurations and actions must stay within the intended tenant. |
+
 ## Places to learn
 
 This is a selective starting set, not a complete list and not a prescription to consume everything. Pick the official documentation, guided training, videos, and labs that close your specific gaps. Times are planning estimates unless the provider publishes a duration; access, titles, versions, and pricing can change.

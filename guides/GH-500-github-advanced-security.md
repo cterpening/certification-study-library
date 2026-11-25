@@ -740,6 +740,90 @@ Recheck suite names, entitlement, feature availability, GHES support, validity c
 
 ---
 
+## Key terms and phrases
+
+**Security Overview, alerts, and campaigns**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Security overview](#2-security-overview-alerts-and-campaigns) | A consolidated view of security posture, coverage and findings across the repositories a viewer may access. |
+| [Alert dismissal](#dismissal-is-a-risk-decision) | Closing a detection with a recorded reason, such as a verified false positive or accepted risk. |
+| [Security campaign](#security-campaigns) | A coordinated effort to remediate a defined group of security alerts and track progress toward a deadline. |
+
+**Secret Protection**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Secret scanning](#detection) | Detection of sensitive credential patterns in supported repository content so owners can investigate exposure. |
+| [Validity check](#detection) | A provider-supported check of whether a detected secret appears active, used as one input to response priority. |
+| [Push protection](#push-protection) | A preventive check that can block a push containing a recognized secret before it enters the remote repository. |
+| [Credential revocation](#correct-incident-response-order) | Invalidating an exposed credential at its issuer so further use is denied. |
+| [Credential rotation](#correct-incident-response-order) | Replacing an exposed or aging credential with a new value and updating authorized consumers. |
+| [Custom secret pattern](#custom-patterns) | A user-defined rule for detecting a secret format that the built-in patterns do not recognize, such as an internal token with a distinctive prefix. |
+| [Secret format](#custom-patterns) | The structure of a credential, including distinctive prefixes or boundaries useful for a targeted detection pattern. |
+
+**Supply Chain Security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Dependency graph](#dependency-graph) | GitHub's view of the packages a project uses and the relationships recorded in dependency data. |
+| [Dependency submission](#dependency-graph) | Providing build-time dependency data to the dependency graph when manifests alone cannot show the resolved components. |
+| [Security advisory](#vulnerability-intelligence) | A published record identifying a vulnerability, affected versions and available remediation information. |
+| [Affected version range](#vulnerability-intelligence) | The dependency versions identified by an advisory as vulnerable, used to compare a package's resolved version with the finding. |
+| [Dependabot alert](#dependabot-alerts-and-updates) | A notification that a dependency matches a known vulnerability advisory. |
+| [Security update](#dependabot-alerts-and-updates) | A proposed dependency change intended to move a vulnerable dependency to a patched version. |
+| [Version update](#dependabot-alerts-and-updates) | A scheduled dependency update that keeps a dependency current independently of a particular vulnerability alert. |
+| [Dependency review](#dependency-review) | A pull-request check that shows dependency changes and the risks those changes introduce. |
+| [Software bill of materials (SBOM)](#sbom) | An inventory of components and their versions that can travel with a software release. |
+
+**Code Security and CodeQL**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Code scanning](#code-scanning-choices) | Analysis of source code that records potential weaknesses for investigation and remediation. |
+| [CodeQL database](#codeql-mental-model) | A structured representation of a codebase that analysis queries examine for patterns and data flows. |
+| [CodeQL query](#codeql-mental-model) | A program that searches a CodeQL database for a specified code pattern or flow. |
+| [Query suite](#codeql-mental-model) | A named collection of analysis queries selected to trade detection breadth against review workload. |
+| [Default setup](#default-versus-advanced-setup) | GitHub-managed CodeQL configuration that selects supported analysis settings with limited manual workflow authoring. |
+| [Advanced setup](#default-versus-advanced-setup) | A workflow-based CodeQL configuration that allows teams to select and maintain analysis settings explicitly. |
+| [Alert location](#triage-and-remediation) | The file and source position associated with a finding, used to start examining the relevant code. |
+| [Analysis coverage](#troubleshooting) | The languages, paths and builds that a scan actually analyzed, which determines what a clean result can support. |
+
+**Security operations and remediation**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Remediation](#risk-based-workflow) | Correcting the underlying issue and verifying that the affected code, dependency or credential is no longer exposed. |
+
+**Administration at scale**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Security configuration](#permissions-and-enforcement) | A reusable set of repository security settings that administrators can apply across eligible repositories. |
+| [GitHub Enterprise Server (GHES)](#ghec-versus-ghes) | GitHub's self-hosted deployment option, whose operators manage upgrades, availability and recovery. |
+| [GitHub Enterprise Cloud (GHEC)](#ghec-versus-ghes) | The GitHub-hosted enterprise offering in which GitHub operates the service infrastructure. |
+
+**Objective-by-objective security deep dive**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Accepted risk](#choose-an-outcome-precisely) | A documented decision by an authorized owner to tolerate a verified risk under specified conditions. |
+| [Precision](#design-custom-patterns-using-precision-and-recall) | Of the results flagged by a detector, the proportion that are genuine matches. |
+| [Recall](#design-custom-patterns-using-precision-and-recall) | Of all genuine cases in the evaluation set, the proportion that the detector flagged. |
+| [False positive](#design-custom-patterns-using-precision-and-recall) | A finding that investigation shows does not represent the condition the detector was meant to identify. |
+| [Direct dependency](#interpret-the-dependency-graph) | A component the project declares or consumes directly. |
+| [Transitive dependency](#interpret-the-dependency-graph) | A component needed by another dependency and included indirectly in the project's dependency tree. |
+| [Provenance](#sbom-provenance-and-signing) | Evidence recording where a component came from and how it was built. |
+| [Build mode](#select-setup-and-build-mode) | The configured method used to prepare the code for analysis, chosen according to language and build requirements. |
+| [Scan event](#design-scan-events) | The event or schedule that runs a security analysis, affecting when new findings can first become visible. |
+| [SARIF](#interpret-sarif-categories) | Static Analysis Results Interchange Format, a structured format for exchanging findings from static analysis tools. |
+| [Analysis category](#interpret-sarif-categories) | An identifier distinguishing result sets so separate analysis configurations do not overwrite one another's results. |
+| [Source](#triage-a-dataflow-alert) | The point where data of interest enters a flow examined by a code analysis query. |
+| [Sink](#triage-a-dataflow-alert) | The operation at which that data could affect a security-sensitive behavior. |
+| [Dataflow path](#triage-a-dataflow-alert) | The chain of program steps linking a source to a sink and showing how the value moved. |
+| [Campaign scope](#use-campaigns-for-bounded-outcomes) | The selected set of findings and repositories a campaign coordinates for remediation. |
+| [Security manager](#separate-duties-and-permissions) | An organization role for supported security administration and visibility without granting all organization-owner powers. |
+
 ## Places to learn
 
 This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Start with the official paths, then pick the explanations, formats, and practice that work for you and close specific blueprint gaps. Times are approximate consumption time at normal speed; labs, note-taking, review, and independent practice add time.

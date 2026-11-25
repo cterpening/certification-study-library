@@ -5,15 +5,17 @@ official_blueprint: https://learn.microsoft.com/en-us/credentials/certifications
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: source-validated
-last_verified: 2026-10-28
+review_status: review-required
+last_verified: 2026-11-20
 upcoming_change_status: none-announced
 upcoming_change_checked: 2026-10-28
 ---
 
 # AI-500 Designing and Implementing Multi-Agent AI Solutions Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-01.md#ai-500) and the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ai-500-coverage-record). Known source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-500) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-02.md#ai-500)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-01.md#ai-500) and the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ai-500-coverage-record). Known source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-500) is authoritative.
 
 **Current baseline:** Official study-guide page last updated July 16, 2026; Microsoft does not publish a separate skills-effective date on that page.<br>
 **Exam state — VERIFY CURRENT:** Current exam and credential headings no longer label the exam beta, as checked October 28, 2026. Recorded as active from those observations; an exact GA date was not established. English remains listed.<br>
@@ -366,6 +368,8 @@ In a multi-agent design, centralize retrieval policy or make every agent enforce
 Evaluate retrieval independently with relevance/precision, recall or coverage, ranking quality, authorization correctness, freshness, and citation resolution. Then evaluate grounded response quality. A good answer can hide poor retrieval, and good retrieval can be ruined by synthesis.
 
 ### Worked example 3 — Filter mode changes recall, not who is authorized
+
+**Practice check.** For a selective metadata predicate, preFilter applies the restriction during vector traversal on each shard. With postFilter, each shard filters its own candidate list after traversal, so a matching item outside that list may be missed. Evaluate recall with representative predicates. [Vector Query Filters - Foundry IQ (Azure AI Search) | Microsoft Learn](https://learn.microsoft.com/en-us/azure/search/vector-search-filters)
 
 [Azure AI Search filter modes](https://learn.microsoft.com/en-us/azure/search/vector-search-filters) differ: `preFilter` filters during traversal, `postFilter` filters shard candidates, and preview `strictPostFilter` filters the global top-k. The latter two can return fewer eligible neighbors or miss eligible matches. None lets a caller choose an unauthorized tenant filter.
 
@@ -852,7 +856,94 @@ Microsoft’s [exam page](https://learn.microsoft.com/en-us/credentials/certific
 - [Foundry agent identity concepts](https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/agent-identity)
 - [Agent ID on-behalf-of flow](https://learn.microsoft.com/en-us/entra/agent-id/agent-on-behalf-of-oauth-flow)
 
+## Key terms and phrases
+
+**Start with an architecture contract**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Task decomposition](#decompose-goals-into-observable-work) | Breaking a goal into bounded pieces with clear owners, dependencies, outputs and acceptance criteria. |
+| [Agent persona](#define-personas-scope-and-autonomy) | The specified role, responsibilities and permitted scope shaping one agent's behavior. |
+| [Identity boundary](#define-personas-scope-and-autonomy) | The line between the credentials and permissions used by one agent and those used by another actor or service. |
+| [Orchestration topology](#select-an-orchestration-topology) | The arrangement of agents and control flow, such as a sequence, parallel branches or handoffs. |
+| [Sequential orchestration](#select-an-orchestration-topology) | Passing work from one agent to the next when later stages depend on earlier results. |
+| [Parallel orchestration](#select-an-orchestration-topology) | Assigning independent tasks to workers concurrently, then reconciling their outputs. |
+| [Handoff](#select-an-orchestration-topology) | The transfer of a bounded task with its inputs, evidence, constraints and expected output to another worker. |
+| [Critical path](#worked-example-1-parallel-latency-still-consumes-shared-capacity) | The dependency chain that determines end-to-end completion time even when independent steps execute concurrently. |
+| [Exit condition](#design-control-loops-and-human-in-the-loop) | An explicit rule that ends a control loop when it succeeds, exceeds a limit or needs a person. |
+| [Retry budget](#design-control-loops-and-human-in-the-loop) | The maximum number of attempts or elapsed time allowed for retrying recoverable work. |
+| [Human-in-the-loop](#design-control-loops-and-human-in-the-loop) | A workflow design that asks a person to make a decision during execution when authority or judgment is required. |
+| [Iteration limit](#design-control-loops-and-human-in-the-loop) | The maximum number of reasoning or tool-use cycles allowed before the orchestration must stop or escalate. |
+
+**Choose protocols, identity, memory, models, and infrastructure**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Agent2Agent (A2A)](#separate-coordination-protocols-from-tool-protocols) | A protocol for delegating work to another agent and tracking the task it undertakes. |
+| [Least privilege](#apply-zero-trust-per-agent) | Giving each agent identity only the rights needed for its assigned work. |
+| [Service principal](#apply-zero-trust-per-agent) | A tenant-local identity representing an application or workload that can receive permissions. |
+| [Durable state](#use-a-multi-tier-state-and-memory-model) | A record of progress that survives process restarts so a workflow can resume from a known step. |
+| [Working context](#use-a-multi-tier-state-and-memory-model) | The immediate information available to reason about the current request, such as a diff or issue. |
+| [Short-term memory](#use-a-multi-tier-state-and-memory-model) | Information retained within a session or task to reuse recent decisions and observations. |
+| [Long-term memory](#use-a-multi-tier-state-and-memory-model) | Facts or preferences retained across tasks, requiring ownership, expiry and access controls. |
+| [Checkpoint](#use-a-multi-tier-state-and-memory-model) | A saved record of progress and outputs used to resume execution without repeating completed work. |
+| [Memory scope](#use-a-multi-tier-state-and-memory-model) | The set of sessions, users or tasks permitted to read and update a retained fact. |
+| [Model routing](#match-model-family-to-task-demand) | Selecting a model for each request or task according to its requirements, such as latency, sensitivity or complexity. |
+| [Distributed trace](#build-observability-into-the-design) | A linked sequence of records showing how one request traversed a workflow, agents, models and tools. |
+| [Span](#build-observability-into-the-design) | The record of one operation within a trace, such as a database query or model call. |
+| [Correlation ID](#build-observability-into-the-design) | An identifier propagated across agents and service calls to reconstruct one end-to-end request. |
+
+**Engineer prompts, context, and memory**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Prompt version](#treat-prompts-as-versioned-program-inputs) | An identifiable revision of the instructions, examples and output constraints used for a particular model call. |
+| [Token](#build-context-intentionally) | A unit of model input or output that may represent part of a word, a whole word or another symbol. |
+| [Context window](#build-context-intentionally) | The finite amount of input and output a model can handle together in an interaction. |
+| [Memory eligibility](#design-secure-memory-operations) | A rule deciding whether an observed fact can enter retained memory given consent, sensitivity and intended use. |
+
+**Build knowledge and tools**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Retrieval-augmented generation (RAG)](#engineer-multi-agent-rag) | An application retrieves relevant evidence and includes it in the model's input when generating an answer. |
+| [Embedding](#engineer-multi-agent-rag) | A numeric vector representing content for comparisons such as semantic similarity. |
+| [Chunk](#engineer-multi-agent-rag) | A bounded portion of a source document indexed and retrieved as a unit of evidence. |
+| [Hybrid search](#engineer-multi-agent-rag) | Combining keyword and vector retrieval so a query can match both exact terms and semantic similarity. |
+| [Filter mode](#worked-example-3-filter-mode-changes-recall-not-who-is-authorized) | The stage at which a query applies a metadata predicate relative to vector candidate selection, affecting recall and cost. |
+| [Tool contract](#design-function-tools) | The declared inputs, outputs, permissions and failure behavior of an operation exposed to the agent. |
+| [Tool schema](#design-function-tools) | The declared operation name, argument shape and output contract used to validate a proposed call. |
+| [Model Context Protocol (MCP)](#build-and-govern-mcp-integrations) | A protocol through which a client can discover a server's capabilities, call tools and read resources. The service that performs an action still checks authorization. |
+
+**Implement orchestration and reusable code**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Approval gate](#make-human-intervention-a-workflow-state) | A persisted pause that binds a human decision to the particular action and parameters proposed. |
+| [Acceptance criterion](#make-human-intervention-a-workflow-state) | An observable condition the receiving worker or reviewer can use to judge whether the handoff is complete. |
+| [Approval scope](#make-human-intervention-a-workflow-state) | The specific operation, parameters and context authorized by a reviewer, which must still match before execution. |
+| [Idempotency key](#worked-example-4-retry-after-an-effect-but-before-acknowledgement) | An identifier for one intended operation that lets a service recognize a retry and avoid applying the effect twice. |
+| [Concurrency limit](#control-caching-and-concurrency) | The maximum number of operations allowed to run simultaneously within a particular resource or workflow boundary. |
+| [Middleware](#build-middleware-for-cross-cutting-policy) | Reusable logic invoked around agent operations to apply shared policy, logging or request processing. |
+
+**Evaluate, optimize, and operate the system**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Evaluation set](#evaluate-components-and-the-whole-workflow) | A collection of representative inputs with expected outcomes or scoring criteria used to compare agent behavior. |
+| [Regression case](#evaluate-components-and-the-whole-workflow) | A previously tested scenario rerun after a change to detect behavior that has deteriorated. |
+| [Replay](#test-execution-behavior) | Running a captured case or resuming from recorded state to inspect behavior under controlled conditions. |
+| [Cost per valid outcome](#monitor-reliability-tokens-and-cost) | Total run cost divided by the number of outputs that actually satisfy the acceptance criteria. |
+
+**Secure, govern, test, and deploy**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Resource-access matrix](#build-a-resource-access-matrix) | A table mapping each agent identity and operation to its permitted resources and required authorization. |
+
 ## Places to learn
+
+**Suggested practice.** Use one proposed agent change to identify its release evidence, identity boundary and post-release governance owner across the path’s four modules. About 20–40 minutes to read the selected sections and produce the suggested comparison or checklist (editorial estimate; full path duration was not verified). [Deploy and govern enterprise agentic AI solutions on Azure](https://learn.microsoft.com/en-us/training/paths/aaai-3-deploy-govern-agentic-ai-solutions-azure/)
 
 ### October 28 learning route and evidence task
 
@@ -900,7 +991,7 @@ The current paths expose **4 + 4 + 4 + 5 = 17 modules**. The former first-three 
 - [Agentic AI with Microsoft Foundry](https://www.oreilly.com/library/view/agentic-ai-with/9781806673957/) — previously cataloged as an April 2026, 360-page book with an 8h 43m reading estimate. The direct listing was access-blocked on September 28; current edition details and paid content were not verified. Check SDK generation and objective coverage before relying on it.
 - [Hands-On Microsoft Foundry](https://www.oreilly.com/live-events/hands-on-microsoft-foundry/0642572231088/0642572231071/) — O’Reilly live course by Razi Rais. The public outline contains four 55-minute blocks plus 20 minutes, totaling four instructional hours before breaks, covering agents, memory, integrations and deployment. No current occurrence date or live teaching was verified; check availability before enrolling.
 - [Building Intelligent Applications with Microsoft Foundry](https://www.pluralsight.com/courses/microsoft-foundry-building-intelligent-applications) — Pluralsight, Clint Bonnett, 1h 02m, published February 13, 2026; public syllabus inspected, paid lessons not viewed. A short current-platform introduction to RAG, agents/workflows, evaluation, and guardrails; it is not a complete AI-500 path.
-- [Microsoft Foundry samples](https://github.com/azure-ai-foundry/foundry-samples) — free official sample repository. Select examples that match the current SDK generation and a lab objective; examples can change faster than conceptual documentation.
+- Use a Foundry evaluation to compare an agent against an explicit release threshold. Record inputs, evaluator and results. [Source notes and publisher link](../docs/research/2026-11-20-microsoft-refresh-group-02.md#ai-500).
 
 No complete, current AI-500-specific Pluralsight path, Whizlabs course, MeasureUp practice test, or official Microsoft Practice Assessment was verified on September 28, 2026. These bounded public searches do not prove absence. Recheck current official availability; historical course/beta observations do not establish today’s delivery.
 

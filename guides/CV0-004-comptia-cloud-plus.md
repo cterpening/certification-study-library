@@ -546,6 +546,95 @@ Do not treat a CV0-003 course as complete V4 coverage. Re-map it to all six curr
 - The objective snapshot is stored at `data/objective-snapshots/cv0-004-official-objectives.txt`; its SHA-256 is `6fb337abbad0ccde4c7a29dceb3c7e3611211edf97a676fe7bd7800406c0a192`.
 - This guide independently synthesizes public scope and product concepts. It does not reproduce proprietary objective PDFs, course content, PBQs or recalled exam items.
 
+## Key terms and phrases
+
+**Cloud architecture**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Shared responsibility](#service-deployment-and-responsibility-models) | The division of operational and security duties between cloud provider and customer, which changes with the service model. |
+| [Private cloud](#service-deployment-and-responsibility-models) | Cloud infrastructure reserved for one organization. It can be operated internally or by a third party. |
+| [Public cloud](#service-deployment-and-responsibility-models) | Provider-operated resources offered to multiple customers using logical isolation. Public cloud does not imply that customer workloads have public access. |
+| [Infrastructure as a service (IaaS)](#service-deployment-and-responsibility-models) | A cloud model providing infrastructure such as virtual machines and networks. The customer typically manages the guest operating system and application. |
+| [Platform as a service (PaaS)](#service-deployment-and-responsibility-models) | A managed platform for deploying applications without operating the underlying hosts. Application code, identities and data still need customer controls. |
+| [Software as a service (SaaS)](#service-deployment-and-responsibility-models) | An application operated by a provider and consumed as a service. The customer still governs tenant settings, access and use of its data. |
+| [Availability zone](#availability-resilience-and-recovery-architecture) | An isolation boundary within a cloud region used to place resources across distinct failure domains. |
+| [Availability](#availability-resilience-and-recovery-architecture) | Timely and reliable access to a resource by authorized users. A running server may still be unavailable to the business if a required dependency fails. |
+| [Load balancer](#availability-resilience-and-recovery-architecture) | A component that sends eligible requests or connections to selected backends using health and distribution policy. |
+| [Failure domain](#availability-resilience-and-recovery-architecture) | A set of components that can fail together, such as workloads sharing a physical host, power source or region. |
+| [Control plane](#original-availability-and-failure-capacity-cases) | The functions that build network state and decide paths or policy. The data plane uses those decisions for actual traffic. |
+| [Container orchestration](#virtualization-containers-and-orchestration) | Scheduling and managing containerized workloads, including placement, replacement and scaling. |
+| [Container](#virtualization-containers-and-orchestration) | An isolated application process and its dependencies that ordinarily shares the host kernel. Its image is the packaged input used to start it. |
+| [Hypervisor](#virtualization-containers-and-orchestration) | The software layer that distributes host hardware resources among virtual machines. |
+| [Least privilege](#cloud-networking) | Assigning only the permissions needed for the user’s task, such as using a standard account for everyday work. |
+| [Security group](#cloud-networking) | An access rule set attached to supported cloud resources or interfaces. The platform determines its evaluation and state-tracking rules. |
+| [Database](#compute-storage-database-and-workload-optimization) | An organized collection of data managed for storage, retrieval and change under defined rules. |
+| [Object storage](#compute-storage-database-and-workload-optimization) | Storage that addresses data as objects by key, typically through an API. An object is not ordinarily managed as a mounted block device. |
+| [Bandwidth](#evolving-technologies-objective-111) | The nominal capacity of a path to carry data per unit of time. Actual throughput can be lower. |
+| [Worker throughput](#original-capacity-throughput-and-cost-cases) | The rate at which a worker completes queued jobs. If each worker finishes one job per second, four equivalent workers can finish about four per second before another bottleneck intervenes. |
+| [Throughput](#original-capacity-throughput-and-cost-cases) | The rate at which data is successfully delivered over an interval. It can be lower than nominal link capacity because of overhead or congestion. |
+
+**Deployment**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Authorization](#requirements-discovery-and-migration) | Deciding which actions an authenticated identity is permitted to take. |
+| [Synchronization](#requirements-discovery-and-migration) | Propagation of changes among copies of data. A deletion may propagate too, which makes independent recovery copies important. |
+| [Infrastructure as code (IaC)](#infrastructure-as-code-and-configuration) | Defining infrastructure in a versionable form that can be reviewed and applied through automation. |
+| [Idempotence](#infrastructure-as-code-and-configuration) | The property that applying the same desired configuration again leaves an already-correct device in the same state. |
+| [Exit status](#validation-planning-and-sensitive-state) | A number returned by a completed process. Shell conditionals conventionally treat zero as success and a nonzero value as failure or another documented result. |
+| [Data plane](#provision-and-configure-resources) | The components and operations that carry and process user traffic according to installed routes and policy. |
+
+**Operations**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Horizontal scaling](#lifecycle-scaling-and-maintenance) | Adding or removing instances to change capacity. Increasing a service from two equal workers to four doubles the worker count, though shared bottlenecks may limit throughput. |
+| [Autoscaling](#lifecycle-scaling-and-maintenance) | Adjusting deployed capacity according to a policy and observed demand, such as adding instances when a sustained load threshold is met. |
+| [Recovery time objective (RTO)](#backup-recovery-and-continuity) | The targeted elapsed time for restoring a service after a disruption. |
+| [Recovery point objective (RPO)](#backup-recovery-and-continuity) | The maximum targeted interval of data loss, measured back from the disruption. |
+| [Backup](#backup-recovery-and-continuity) | A retained copy made for recovery after loss or corruption. Its usefulness depends on successful restoration under the intended conditions. |
+| [Failover](#backup-recovery-and-continuity) | Moving work to an alternate system or location when the primary cannot serve it. The switch must preserve usable dependencies and adequate capacity. |
+| [Deduplication](#observability-performance-and-cost) | Recognizing and handling repeated copies of the same observation or request so duplication does not inflate counts or repeat an action. |
+| [Observability](#observability-performance-and-cost) | The ability to infer a system’s internal condition from its outputs, often by relating logs, metrics and traces to a particular request or failure. |
+
+**Security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Workload identity](#identity-and-access-management) | An identity assigned to an application or service so it can obtain scoped access to cloud resources. |
+| [Authentication](#identity-and-access-management) | Verifying an identity before deciding which resources that identity may access. |
+| [OpenID Connect (OIDC)](#identity-and-access-management) | An identity layer over OAuth that defines an ID token the client can validate to learn about the user’s authentication. |
+| [Encryption in transit](#data-network-and-workload-protection) | Protecting data while it travels between endpoints. The endpoints and any termination points can ordinarily access the plaintext. |
+| [Management plane](#data-network-and-workload-protection) | The interface and services through which administrators configure and monitor devices. Reachability here does not prove that user traffic is working. |
+| [Vulnerability](#vulnerability-compliance-and-evidence) | A weakness in design, configuration, process or implementation that can affect a security objective under applicable conditions. |
+| [Vulnerability management](#vulnerability-compliance-and-evidence) | A recurring process for finding weaknesses, assessing their relevance, treating them and verifying closure within an agreed scope. |
+
+**DevOps fundamentals**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Blue/green deployment](#5-devops-fundamentals-10) | Operating old and new versions in separate environments and switching traffic once the replacement is ready. Data compatibility affects rollback. |
+| [Version control](#5-devops-fundamentals-10) | Recording changes to files as identifiable revisions so users can compare, review and recover previous states. |
+| [Idempotency](#integration-choices-and-retry-boundaries) | The property that repeating a request after an uncertain delivery does not produce another unintended side effect. |
+| [Retry](#integration-choices-and-retry-boundaries) | Repeating an operation after a transient failure. When the first attempt’s outcome is unknown, idempotence matters before retrying a write. |
+
+**Troubleshooting**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Evidence preservation](#method-and-deployment-faults) | Maintaining the integrity and provenance of information needed for investigation, including original timestamps, collection method and access history. |
+| [Federation](#network-identity-and-shared-services) | An arrangement in which a service relies on an external identity provider’s assertions to recognize users. |
+| [Identity provider (IdP)](#network-identity-and-shared-services) | The service that authenticates an identity and makes assertions or issues tokens that a relying service can validate. |
+| [Environment variable](#resources-security-and-configuration) | A named value supplied in the environment of a process, such as a search path. Child processes inherit exported variables from their parent. |
+| [Rate limiting](#resources-security-and-configuration) | Restricting the number or rate of operations in a defined interval to protect capacity. A limit applied per identity behaves differently from one applied per IP address. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Latency](#scenario-2-costs-spike-while-latency-worsens) | The time data takes to travel between two points. A high-capacity link can still have a long delay. |
+
 ## Places to learn
 
 This is not a complete list, and it is not meant to be consumed end to end. Pick the formats that work for you, map them to the six official domains, practice weak areas, and recheck version/date before paying.

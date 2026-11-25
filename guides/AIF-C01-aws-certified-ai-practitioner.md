@@ -470,6 +470,88 @@ Explain why each answer is true and why the nearest alternative is weaker.
 
 ---
 
+## Key terms and phrases
+
+**Fundamentals of AI and ML**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Label](#choose-rules-traditional-ml-genai-or-agents-deliberately) | The target value a supervised model learns to predict. A refund outcome known next month can label training data without being an available input today. |
+| [Hallucination](#choose-rules-traditional-ml-genai-or-agents-deliberately) | A plausible model output that is unsupported or false, such as a citation to a document that does not contain the claim. |
+| [Reinforcement learning](#choose-rules-traditional-ml-genai-or-agents-deliberately) | Learning a policy for choosing actions from rewards or penalties observed during interaction with an environment. |
+| [Unsupervised learning](#choose-rules-traditional-ml-genai-or-agents-deliberately) | Learning structure from data without target labels. Grouping customers with similar activity is a clustering task. |
+| [Supervised learning](#choose-rules-traditional-ml-genai-or-agents-deliberately) | Training on examples that pair inputs with known target values. Predicting an invoice's category from past labeled invoices is one example. |
+| [Classification](#match-problem-data-and-evaluation) | A prediction that assigns a category, such as fraudulent or legitimate. Its errors can be counted by comparing predicted and known labels. |
+| [Regression](#match-problem-data-and-evaluation) | A prediction of a numeric quantity, such as next week's demand. |
+| [False negative](#match-problem-data-and-evaluation) | A positive case the classifier misses. A fraudulent payment allowed through is a false negative. |
+| [False positive](#match-problem-data-and-evaluation) | A negative case incorrectly labeled positive. A legitimate payment blocked as fraudulent is a false positive. |
+| [Clustering](#match-problem-data-and-evaluation) | Grouping observations by similarity without predefined class labels. A team still needs to interpret and validate the groups. |
+| [F1 score](#match-problem-data-and-evaluation) | The harmonic mean of precision and recall. With precision 0.75 and recall 0.60, F1 is 2 × 0.75 × 0.60 ÷ 1.35, or about 0.67. |
+| [Inference](#lifecycle-means-evidence-from-idea-through-retirement) | Running a trained model on new input, for example scoring one loan application or generating text for a request. |
+| [Latency](#lifecycle-means-evidence-from-idea-through-retirement) | Elapsed time between a request and the result of interest. Specify whether it measures the first token, the completed response or the full business action. |
+| [Asynchronous inference](#lifecycle-means-evidence-from-idea-through-retirement) | Submitting an inference request for queued processing and retrieving the output later, useful for larger or slower jobs. |
+| [Real-time endpoint](#lifecycle-means-evidence-from-idea-through-retirement) | A deployed model that handles synchronous requests while clients wait for the response. |
+| [Amazon Bedrock](#lifecycle-means-evidence-from-idea-through-retirement) | A managed service for building applications with foundation models. Model access and application tools are separate authorization decisions. |
+
+**Fundamentals of GenAI**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Token](#tokens-embeddings-context-and-generation) | A unit a model processes when reading or generating content. A single word can occupy several tokens. |
+| [Embedding](#tokens-embeddings-context-and-generation) | A list of numbers representing features of an item. Nearby representations can help a search system find items with similar meanings. |
+| [System instruction](#tokens-embeddings-context-and-generation) | A high-level instruction that guides a model's behavior across a request. An application still needs to enforce its security rules outside the prompt. |
+| [Fine-tuning](#foundation-model-lifecycle-and-adaptation-ladder) | Further training on examples that changes model weights to shape behavior on a task. |
+| [Escalation](#agentic-ai-adds-an-action-boundary) | Routing a case to an accountable person or process when confidence, authority or risk falls outside the automation's limits. |
+
+**Applications of Foundation Models**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Foundation model](#3-applications-of-foundation-models-28) | A model trained on broad data that can support multiple downstream tasks through prompting or additional training. |
+| [Temperature](#select-the-system-not-only-the-model) | A sampling setting affecting how varied generated tokens can be. A low setting can make phrasing more consistent without verifying accuracy. |
+| [Idempotency](#select-the-system-not-only-the-model) | The property that retrying the same intended operation does not apply its effect twice. An order API can remember the request identifier. |
+| [Throughput](#select-the-system-not-only-the-model) | The volume of work completed per unit time, such as predictions per second. A high rate can coexist with long waits for individual requests. |
+| [Retrieval-augmented generation (RAG)](#rag-is-a-retrieval-contract) | A design that finds relevant source material and gives it to a model as context when it generates a response. |
+| [Context window](#rag-is-a-retrieval-contract) | The model's token budget for an interaction. Instructions, source passages and conversation history consume space that could otherwise hold more text. |
+| [Data provenance](#rag-is-a-retrieval-contract) | Evidence of a dataset's origin, ownership and transformation history. It supports decisions about permitted use and reproducibility. |
+| [Amazon RDS](#rag-is-a-retrieval-contract) | Runs a managed relational database engine. Schema design, queries and application permissions remain customer decisions. |
+| [Groundedness](#rag-is-a-retrieval-contract) | The degree to which claims in an answer are supported by the evidence supplied to the model. |
+| [Guardrail](#prompt-engineering-is-a-controlled-artifact) | A check or rule that screens model inputs, outputs or proposed actions against policy. Authorization for the underlying action still belongs in the executing service. |
+| [Prompt injection](#prompt-engineering-is-a-controlled-artifact) | Untrusted input that attempts to change the instructions followed by a model. Applications should separate content from authority and constrain tool permissions. |
+| [Zero-shot prompting](#prompt-engineering-is-a-controlled-artifact) | Asking the model to perform a task using instructions without showing a worked example in the prompt. |
+| [Few-shot prompting](#prompt-engineering-is-a-controlled-artifact) | Providing a small set of example inputs and outputs in the prompt to demonstrate the required task or format. |
+| [Human evaluation](#evaluation-must-connect-quality-to-consequence) | People score representative outputs against a defined rubric. Keeping the rubric and disagreement records makes comparisons interpretable. |
+| [Large language model (LLM)](#evaluation-must-connect-quality-to-consequence) | A language model trained at scale to predict tokens in context. Fluent text is not itself evidence that a claim is correct. |
+
+**Guidelines for Responsible AI**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Explainability](#responsible-ai-becomes-concrete-through-tests-and-ownership) | The ability to give a meaningful account of the factors behind a model's output so a person can assess it. |
+| [Bias](#responsible-ai-becomes-concrete-through-tests-and-ownership) | A systematic distortion in data, model behavior or decisions. Unequal error rates across groups warrant investigation of the data and intended use. |
+| [Human in the loop](#responsible-ai-becomes-concrete-through-tests-and-ownership) | A design in which a person reviews or authorizes specified model-assisted decisions, with time, authority and evidence to intervene. |
+| [Amazon SageMaker](#responsible-ai-becomes-concrete-through-tests-and-ownership) | AWS's platform for tasks such as preparing data, training models and hosting inference. Choose the component around the stage of the ML lifecycle. |
+| [Model card](#responsible-ai-becomes-concrete-through-tests-and-ownership) | Documentation of a model's intended use, evaluation conditions and known limitations, useful when deciding whether to deploy it. |
+| [Overfitting](#responsible-ai-becomes-concrete-through-tests-and-ownership) | Learning patterns specific to training examples that fail to generalize. Low training error alongside much higher validation error is a warning sign. |
+
+**Security, Compliance, and Governance for AI Solutions**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Least privilege](#secure-the-complete-data-and-action-path) | Giving an AI application only the data access and tool permissions it needs for its assigned task. |
+| [Temporary credentials](#secure-the-complete-data-and-action-path) | Time-limited access keys and a session token. A workload can obtain them by assuming a role. |
+| [AWS Secrets Manager](#secure-the-complete-data-and-action-path) | Stores sensitive values for authorized retrieval and supports rotation workflows, such as replacing a database password. |
+| [AWS CloudTrail](#secure-the-complete-data-and-action-path) | Records supported AWS API activity so an investigator can trace who called an operation, when and against which resource. |
+| [Amazon CloudWatch](#secure-the-complete-data-and-action-path) | Collects operational measurements and logs. An operator can graph request latency or alarm on error rates. |
+| [Encryption in transit](#secure-the-complete-data-and-action-path) | Protecting information while it travels between endpoints, typically through an authenticated encrypted connection. |
+| [Amazon Inspector](#secure-the-complete-data-and-action-path) | Inspects supported workloads for software vulnerabilities or exposure that owners can prioritize and remediate. |
+| [Encryption at rest](#secure-the-complete-data-and-action-path) | Protecting stored data with encryption. Who can use the decryption key is part of the access decision. |
+| [Amazon Macie](#secure-the-complete-data-and-action-path) | Discovers and reports sensitive data in S3, helping owners investigate where protected information is stored. |
+| [AWS Key Management Service (KMS)](#secure-the-complete-data-and-action-path) | Manages cryptographic keys and controls who may use them for operations such as decrypting a protected data key. |
+| [Amazon VPC](#secure-the-complete-data-and-action-path) | A logically isolated network in an AWS Region, divided into subnets with routes and security controls that shape connectivity. |
+| [Amazon S3](#secure-the-complete-data-and-action-path) | Object storage organized into buckets and keys. Retrieving a named object and mounting a block device are different access patterns. |
+| [Data lineage](#governance-is-a-decision-system) | A record of where data originated and which transformations produced an output. It helps identify downstream consumers affected by a change. |
+
 ## Places to learn
 
 This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Pick the formats that fit you and use the official March 26, 2026 blueprint to close only your gaps. Times are approximate consumption time at normal speed; labs, notes, assessment review, and independent practice add time.

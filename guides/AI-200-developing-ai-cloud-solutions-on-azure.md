@@ -6,26 +6,28 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: review-required
-last_verified: 2026-10-28
+last_verified: 2026-11-20
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-10-28
+upcoming_change_checked: 2026-11-20
 ---
 
 # AI-200 Developing AI Cloud Solutions on Azure Study Guide
 
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-02.md#ai-200)
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 refresh maps all 27 detailed objectives in the October 7, 2026 English outline. See the [current deep-review evidence](../docs/research/2026-10-28-microsoft-wave1-deep-review.md#ai-200) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ai-200-coverage-record). Microsoft's [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-200) is authoritative. Live product labs and human review remain pending; public-source review does not guarantee correctness.
 
-**Current English baseline:** Skills measured as of October 7, 2026. All 27 detailed objectives remain present; the added audience/date framing and inconsistent weight change are recorded in the accepted snapshot. The former May 5 teaching snapshot is archived.<br>
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 refresh maps all 27 detailed objectives in the October 7, 2026 English outline. See the [October deep-review evidence](../docs/research/2026-10-28-microsoft-wave1-deep-review.md#ai-200) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ai-200-coverage-record). Microsoft's [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-200) is authoritative. Live product labs and human review remain pending; public-source review does not guarantee correctness.
+
+**Current English outline, checked November 20, 2026.** Both the overview and detailed heading give data management 25–30%. All 27 detailed tasks remain. Microsoft shows an October 30 page update and supplies no effective date for this edition.<br>
 **Upcoming blueprint change:** No later revision announced on the official study guide checked October 28, 2026; localized exam updates may lag English.<br>
 **Lifecycle status:** Active; no retirement or replacement was announced on the official pages checked.<br>
 **Exam page:** [Azure AI Cloud Developer Associate](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-cloud-developer-associate/) · 120-minute assessment · 13 languages on the page checked; course-language availability is separate.<br>
 **Official course:** [AI-200T00 Develop AI cloud solutions on Azure](https://learn.microsoft.com/en-us/training/courses/ai-200t00) · five instructor-led days; 12 course languages.<br>
 **Practice (checked October 28, 2026):** The [official study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-200) advertises a Practice Assessment through AI Skills Navigator with sign-in. The assessment itself was not opened or tested. The September 28 observation of unavailability is historical. Use the [exam sandbox](https://aka.ms/examdemo) for interface familiarity.
 
-**October 28 deep review:** All 27 detailed objectives in nine groups were remapped to the current guide. The [review report](../docs/research/2026-10-28-microsoft-wave1-deep-review.md#ai-200) preserves the unresolved official domain-weight conflict and Managed Redis conversion-document conflict. The [September 28 review](../docs/research/2026-09-28-ai-200-deep-review.md) remains historical; its offline results are not new Azure execution. No infrastructure lab was executed in this refresh.
+**October 28 deep review:** All 27 detailed objectives in nine groups were remapped to the current guide. The [review report](../docs/research/2026-10-28-microsoft-wave1-deep-review.md#ai-200) records the former domain-weight discrepancy and Managed Redis conversion-document conflict. The [September 28 review](../docs/research/2026-09-28-ai-200-deep-review.md) remains historical; its offline results are not new Azure execution. No infrastructure lab was executed in this refresh.
 
-> **Official blueprint conflict — October 28, 2026:** The October 7 official page disagrees internally: data management is 30–35% at a glance and 25–30% in the detailed heading. Preserve the conflict and verify with Microsoft; do not silently choose a weight.
+> **Study allocation.** Use 25–30% for Azure data management. The October edition had inconsistent weights. [November source notes](../docs/research/2026-11-20-microsoft-refresh-group-02.md#ai-200).
 
 ## How to use this guide
 
@@ -48,7 +50,7 @@ Use Python for SDK exercises and keep IaC/manifests/configuration in source cont
 | Published domain | Weight | Production question |
 |---|---:|---|
 | Develop containerized solutions on Azure | 20–25% | Can you build an immutable image and run, scale, revise and diagnose it on the appropriate Azure host? |
-| Develop AI solutions by using Azure data management services | **30–35% at a glance; 25–30% detailed heading — official conflict** | Can you choose and implement Cosmos DB, PostgreSQL/pgvector or Managed Redis from data, vector and latency requirements? |
+| Develop AI solutions by using Azure data management services | 25–30% | Can you choose and implement Cosmos DB, PostgreSQL/pgvector or Managed Redis from data, vector and latency requirements? |
 | Connect to and consume Azure services | 20–25% | Can you build idempotent asynchronous flows with Service Bus, Event Grid and Functions? |
 | Secure, monitor, troubleshoot Azure solutions | 20–25% | Can the workload use passwordless secrets/config and produce end-to-end OpenTelemetry/KQL evidence? |
 
@@ -248,7 +250,7 @@ Use [Container Apps logs and monitoring](https://learn.microsoft.com/en-us/azure
 
 ## 3. Develop AI solutions with Azure data management services
 
-**VERIFY CURRENT — official weight conflict:** The October 7 outline lists 30–35% at a glance and 25–30% on this domain's detailed heading. Study all twelve data-service objectives; do not treat either percentage as an independently confirmed correction.
+**Data management accounts for 25–30%.** Practice all twelve data-service objectives, including how to choose storage and retrieval methods for the workload.
 
 ### Choose source of truth, retrieval store and cache separately
 
@@ -360,6 +362,8 @@ For approximate pgvector indexes, a filter can be applied after the ANN candidat
 Use [server parameters](https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/concepts-server-parameters) and [PgBouncer](https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/concepts-pgbouncer). Load test representative vector counts, filters and concurrent application behavior; compare CPU, memory, disk latency/IOPS, connections, plans, recall and p95.
 
 ### Integrate Azure Managed Redis
+
+**Practice check.** When moving a cache to Azure Managed Redis, test the application's client against the destination's clustering configuration. Managed Redis defaults to clustering. For an existing Basic, Standard, or Premium Azure Cache for Redis instance, the published retirement date is September 30, 2028. [Frequently asked questions (FAQ) on the retirement of Azure Cache for Redis - Azure Cache for Redis | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/retirement-faq)
 
 Azure Managed Redis is Microsoft's current fully managed Redis offering with Redis Stack capabilities. Use the [Azure Managed Redis overview](https://learn.microsoft.com/en-us/azure/redis/overview) and current [Python client connection guidance](https://learn.microsoft.com/en-us/azure/redis/python-get-started).
 
@@ -900,7 +904,7 @@ These are original prompts, not recalled exam questions. Answer with requirement
 
 ## 9. Final readiness checklist
 
-- [ ] I can map all 27 October 7, 2026 detailed objectives to a section, lab and evidence artifact, and explain the unresolved official data-domain weight discrepancy.
+- [ ] I can map all 27 detailed objectives to a section, lab and evidence artifact, and allocate data management practice using the published 25–30% range.
 - [ ] I can build, version, store, authenticate, scan and run immutable images with ACR/Tasks.
 - [ ] I can configure and troubleshoot App Service custom containers and runtime settings/secrets.
 - [ ] I can deploy Container Apps environments/apps/revisions, traffic and KEDA scaling.
@@ -919,7 +923,77 @@ These are original prompts, not recalled exam questions. Answer with requirement
 
 ---
 
+## Key terms and phrases
+
+**Develop containerized solutions on Azure (20–25%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Image digest](#build-an-image-as-an-immutable-supply-chain-artifact) | A content-derived identifier that selects a particular container image even if a human-readable tag is later moved. |
+| [Container image](#build-an-image-as-an-immutable-supply-chain-artifact) | A packaged filesystem and runtime configuration used to start instances of an application. |
+| [Image tag](#build-an-image-as-an-immutable-supply-chain-artifact) | A human-readable image reference that can be reassigned to another image version. |
+| [Azure Container Registry (ACR)](#store-and-manage-images-with-azure-container-registry) | A managed registry that stores and distributes container images and related artifacts. |
+| [ACR task](#build-and-run-with-acr-tasks) | A registry-side build or automation operation that can build and publish an image when a configured trigger fires. |
+| [Container App revision](#deploy-and-revise-azure-container-apps) | An immutable version of a container application's configuration to which traffic can be directed. |
+| [Replica](#deploy-and-revise-azure-container-apps) | One running instance of a Container Apps revision handling work. |
+| [KEDA](#scale-with-keda) | Kubernetes Event-driven Autoscaling uses signals such as queued work to drive the number of running replicas. |
+| [Pod](#deploy-and-manage-aks-with-manifests) | The Kubernetes unit that runs one or more closely related containers with a shared network context. |
+| [Deployment](#deploy-and-manage-aks-with-manifests) | A Kubernetes controller that maintains the desired application replicas and coordinates updates. |
+| [Service](#deploy-and-manage-aks-with-manifests) | A Kubernetes networking abstraction that exposes a stable destination for a changing set of backend pods. |
+
+**Develop AI solutions with Azure data management services**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Source of truth](#choose-source-of-truth-retrieval-store-and-cache-separately) | The authoritative store for a record against which derived copies, indexes or caches can be reconciled. |
+| [Partition key](#partition-indexing-and-consistency) | The value Cosmos DB uses to group items into logical partitions, affecting targeted reads and distribution of load. |
+| [Request unit (RU)](#partition-indexing-and-consistency) | Cosmos DB's unit for expressing the resource cost of a database operation. |
+| [Logical partition](#partition-indexing-and-consistency) | The set of items in a container sharing a particular partition-key value. |
+| [Consistency level](#partition-indexing-and-consistency) | The selected guarantees about the order and freshness of distributed reads in Cosmos DB. |
+| [Embedding](#store-embeddings-and-run-cosmos-db-vector-search) | A numeric vector representing content for comparisons such as semantic similarity. |
+| [Vector search](#store-embeddings-and-run-cosmos-db-vector-search) | Finding stored representations near a query vector according to a chosen distance or similarity measure. |
+| [Change feed](#process-changes-with-the-cosmos-db-change-feed) | A persistent record of Cosmos DB changes that consumers can read incrementally. Ordering is guaranteed for changes with the same logical partition-key value. |
+| [pgvector](#implement-postgresql-and-pgvector) | A PostgreSQL extension that adds a vector type and similarity operations for applications using embeddings. |
+| [Vector index](#store-and-index-vectors-with-pgvector) | A structure that accelerates similarity searches over stored vectors with tradeoffs in build cost, memory and recall. |
+| [Cache-aside](#integrate-azure-managed-redis) | An application pattern that reads from a cache first and loads missing data from the authoritative store. |
+| [Cache invalidation](#integrate-azure-managed-redis) | Removing or updating cached content when its source changes so future reads do not rely on stale values. |
+
+**Connect to and consume Azure services (20–25%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Event](#distinguish-commandsmessages-from-events) | A notice that something already happened, which subscribers can use to decide whether to react. |
+| [Command](#distinguish-commandsmessages-from-events) | A request to perform a specific action, normally directed to a consumer that owns that operation. |
+| [Message delivery semantics](#distinguish-commandsmessages-from-events) | The guarantees and possible duplicates a receiver must account for when consuming messages. |
+| [Queue](#queue-topic-and-subscription-design) | A message destination that allows workers to compete to process pending work. |
+| [Topic](#queue-topic-and-subscription-design) | A brokered publish-and-subscribe destination where subscriptions can receive independently filtered copies of messages. |
+| [Subscription filter](#queue-topic-and-subscription-design) | A condition deciding which published messages a Service Bus subscription receives. |
+| [Message lock](#receive-settle-and-retry-correctly) | A temporary claim on a received message that must be settled or allowed to expire. |
+| [Settlement](#receive-settle-and-retry-correctly) | The receiver's decision to complete, abandon, defer or dead-letter a brokered message. |
+| [Peek-lock](#receive-settle-and-retry-correctly) | A receive mode that locks a message temporarily so the receiver can process it before settlement. |
+| [Dead-letter queue](#operate-the-dead-letter-queue) | A holding area for messages that could not be processed or delivered, where an operator can inspect the failure reason. |
+| [Event Grid](#implement-event-grid-workflows) | An event distribution service that routes notifications from event sources to interested handlers. |
+| [Event filter](#filter-deliberately) | A subscription condition that narrows which published events should be delivered. |
+| [Function trigger](#trigger-and-binding-semantics) | The event or request that causes a particular Azure Function to begin running. |
+| [Binding](#trigger-and-binding-semantics) | A configured link between a function and a service for reading input or writing output. |
+
+**Secure, monitor, and troubleshoot Azure solutions (20–25%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Managed identity](#use-workload-identity-before-application-secrets) | An identity managed by Azure that a workload can use to request access tokens without storing a client secret. |
+| [System-assigned managed identity](#use-workload-identity-before-application-secrets) | An Azure-managed identity whose lifecycle is tied to a particular resource. |
+| [User-assigned managed identity](#use-workload-identity-before-application-secrets) | An independently created managed identity that can be associated with eligible resources. |
+| [Key Vault](#retrieve-and-rotate-secrets-with-key-vault) | A managed service for controlling access to secrets, keys and certificates. |
+| [Secret rotation](#retrieve-and-rotate-secrets-with-key-vault) | Replacing a secret with a new version and updating callers so the old value can be retired safely. |
+| [App Configuration](#centralize-nonsecret-configuration-with-app-configuration) | A service for centrally managing nonsecret application settings and feature flags. |
+| [OpenTelemetry](#instrument-with-opentelemetry) | A standard set of APIs, conventions and tools used to collect traces, metrics and logs. |
+| [Span](#instrument-with-opentelemetry) | The record of one operation within a trace, such as a database query or model call. |
+| [Kusto Query Language (KQL)](#query-telemetry-with-kql) | The tabular query language used to filter, join and summarize telemetry for investigation and hunting. |
+
 ## Places to learn
+
+**Suggested practice.** For one AI feature, sketch a cache entry, an event and a vector search input; explain which Redis workload each represents. About 20–40 minutes to read the selected sections and produce the suggested comparison or checklist (editorial estimate; full path duration was not verified). [Enhance AI solutions with Azure Managed Redis](https://learn.microsoft.com/en-us/training/paths/enhance-ai-solutions-azure-managed-redis/)
 
 This is **not a complete list**, and it is not a recommendation to consume everything. Pick one current primary path, build the labs, and use targeted references or practice for gaps. Times are page-published when available; otherwise they are clearly labeled estimates. Catalogs, schedules, access, duration, price and alignment change. Avoid dumps or anything claiming recalled/live exam questions.
 

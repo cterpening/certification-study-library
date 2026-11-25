@@ -711,6 +711,74 @@ These eight broader activities remain **proposed**. The separately recorded orig
 - [ ] I can debug with a minimal reproduction, breakpoints, state, stack, timing, and regression input.
 - [ ] I have rechecked the current official page rather than relying on this dated snapshot.
 
+## Key terms and phrases
+
+**Introduction to JavaScript and computer programming**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Host environment](#language-engine-and-host) | The surroundings that run a JavaScript engine and supply APIs, such as a browser providing dialogs and documents. |
+
+**Variables, data types, and type casting**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Shadowing](#declarations-scope-shadowing-and-hoisting) | An inner declaration uses the same name as an outer binding and hides it within the inner scope. |
+| [Binding](#declarations-scope-shadowing-and-hoisting) | An association between a name and a value in a particular lexical environment. |
+| [Block scope](#declarations-scope-shadowing-and-hoisting) | Visibility limited to the surrounding block, as with declarations made using let or const. |
+| [Hoisting](#declarations-scope-shadowing-and-hoisting) | The observable effect of declarations being processed before ordinary execution reaches their position, with distinct initialization rules by declaration kind. |
+| [Temporal dead zone](#declarations-scope-shadowing-and-hoisting) | The period in a lexical scope before a let, const or class binding is initialized, during which using it raises ReferenceError. |
+| [Lexical scope](#declarations-scope-shadowing-and-hoisting) | The enclosing source structure that determines where a function looks for variable bindings. |
+| [Dynamic typing](#primitive-values-and-dynamic-typing) | Types belong to values. A variable can later hold a value of a different type. |
+| [Primitive](#primitive-values-and-dynamic-typing) | A non-object value such as a number, string, Boolean, symbol, bigint, null or undefined. |
+| [undefined](#primitive-values-and-dynamic-typing) | The primitive value used for an uninitialized ordinary variable after declaration or for an absent property lookup. |
+| [NaN](#primitive-values-and-dynamic-typing) | The special numeric value representing an invalid numeric result. Equality comparison does not make NaN equal to itself. |
+| [TypeError](#primitive-values-and-dynamic-typing) | An exception for an operation inappropriate for the supplied value, such as invoking a noncallable value. |
+| [for…of](#primitive-values-and-dynamic-typing) | A loop that consumes an iterable’s values using its iteration protocol. |
+| [Template literal](#primitive-values-and-dynamic-typing) | A string written between backticks that can insert the value of an expression. For example, an order confirmation can include the current order number without concatenating separate strings. |
+| [BigInt](#primitive-values-and-dynamic-typing) | JavaScript’s integer type for whole numbers beyond the precision of Number. Integer division discards the fractional part, so `7n / 2n` yields `3n`. |
+| [Type coercion](#explicit-conversion-and-coercion) | An implicit conversion performed by an operator or language construct. In JavaScript, `2 + '3'` produces the string `'23'`, while `2 * '3'` produces the number `6`. |
+| [Truthiness](#explicit-conversion-and-coercion) | How a value behaves in a Boolean context. A nonempty string containing the word false is truthy. |
+| [Object reference](#arrays-objects-and-references) | A value that identifies an object. Copying that reference allows two variables to observe changes to the same object. |
+| [Array](#arrays-objects-and-references) | An object providing an ordered, indexed collection with a length property. Its elements need not share a type. |
+| [Property](#arrays-objects-and-references) | A named or symbol-keyed association belonging to or accessible on an object. |
+| [Method](#arrays-objects-and-references) | A function-valued property invoked through an object. The call form can determine which receiver is used. |
+| [Object identity](#arrays-objects-and-references) | Whether two references refer to a single object, independently of whether distinct objects have matching properties. |
+
+**Operators and user interaction**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Strict equality](#operator-families-and-evaluation) | A comparison that does not first coerce operands to a shared type. Objects compare by identity. |
+| [Short-circuit evaluation](#operator-families-and-evaluation) | Stopping evaluation of a logical expression when the left operand determines the result, possibly skipping a function call. |
+| [Prototype](#operator-families-and-evaluation) | The object JavaScript consults as the next step when a property is missing from an object itself. |
+
+**Control flow — conditional execution and loops**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Iteration](#loops-and-iteration-targets) | Stepping through repeated work. A for-of loop takes successive values from an iterable such as an array. |
+| [for…in](#loops-and-iteration-targets) | A loop over an object’s enumerable string-keyed properties, including inherited ones. |
+
+**Functions**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Receiver](#calls-local-state-and-first-class-values) | The object supplied as this for a method call, depending on how the function is called or bound. |
+| [Function expression](#calls-local-state-and-first-class-values) | An expression creating a function value that can be stored, passed or returned. |
+| [Arrow function](#calls-local-state-and-first-class-values) | A compact function expression that captures this from its enclosing context. |
+| [Callback](#recursion-and-callbacks) | A function supplied to other code so that code can invoke it when needed. |
+| [Recursion](#recursion-and-callbacks) | A function invoking itself until a terminating case is reached. |
+
+**Errors, exceptions, debugging, and troubleshooting**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Syntax error](#classify-before-fixing) | A failure to parse source according to the language grammar. Runtime errors occur while otherwise valid code executes. |
+| [ReferenceError](#classify-before-fixing) | An exception indicating an invalid name reference, such as reading an uninitialized lexical binding. |
+| [Exception](#handling-and-throwing) | A value thrown to interrupt normal control flow and passed outward until a matching handling context takes control. |
+| [Debugger breakpoint](#a-reproducible-debugging-loop) | A chosen place for execution to pause so local bindings and the call stack can be inspected. |
+
 ## Places to learn
 
 This is not a complete list, and it is not meant to be consumed in full. Pick one primary path, add a second explanation only where useful, and spend at least as much time predicting, coding, testing, and debugging as watching. Commercial and community resources are supplementary; reconcile them with the current official scope.

@@ -1,0 +1,246 @@
+{
+  "schema_version": 1,
+  "exam_code": "DP-900",
+  "language": "en",
+  "scope_note": "Two county fair stories explore selected Azure Data Fundamentals objectives. Count arrivals across a delayed stream, then reconcile ticket sales across two relational tables.",
+  "units": [
+    {
+      "id": "count-the-gate",
+      "title": "How many people came through the gate?",
+      "guide_sections": [
+        "Batch and streaming",
+        "4. Duplicate and late stream events",
+        "Lab 6: Replay without double counting"
+      ],
+      "objectives": [
+        "Describe the difference between batch and streaming data",
+        "Describe considerations for data ingestion and processing"
+      ],
+      "source_ids": [
+        "microsoft-dp900-stream-processing-module",
+        "dp-750-structured-streaming"
+      ],
+      "summary": "A fairground supervisor needs a running count of admissions. A delayed gate scanner and a retried message change what the team can report about the first five minutes. Work out a provisional count, then decide what would justify revising it.",
+      "key_points": [
+        "Batch processing works on a bounded collection of records. Stream processing keeps responding to arriving events. How soon someone must act helps decide which path fits the work.",
+        "Event time gives the time of the scan. Arrival time gives the time the message reached the receiving system. A network delay can separate the two.",
+        "Related item: Keep the business event's identity across a delivery retry. A separate admission with a new event ID still counts even when it happens at the same time or involves the same ticket.",
+        "Related item: State the window and the late-data rule when publishing a count. A result can be provisional while the system still accepts delayed scans for that interval."
+      ],
+      "scenario": {
+        "question": "Two distinct admissions reach the counter before noon. One is delivered a second time. A third admission was scanned before noon but arrives just after it. The report groups by scan time and accepts that delay. What counts can staff describe before and after the late record?",
+        "answer": "At noon staff know of two distinct admissions. The retry adds zero. The delayed third admission raises the count for the earlier interval to three. Staff can preserve both figures by labeling the first result provisional and the second revised."
+      },
+      "visual": {
+        "title": "Reconcile the gate counter",
+        "nodes": [
+          {
+            "id": "gate",
+            "label": "Two distinct scans received by noon"
+          },
+          {
+            "id": "provisional",
+            "label": "Provisional count of two"
+          },
+          {
+            "id": "retry",
+            "label": "Repeat of the second scan"
+          },
+          {
+            "id": "late",
+            "label": "Third scan arrives after noon"
+          },
+          {
+            "id": "revised",
+            "label": "Revised count of three"
+          }
+        ],
+        "edges": [
+          {
+            "from": "gate",
+            "to": "provisional",
+            "label": "Count each scan once"
+          },
+          {
+            "from": "retry",
+            "to": "provisional",
+            "label": "Same event ID adds zero"
+          },
+          {
+            "from": "late",
+            "to": "revised",
+            "label": "Scan time fits the earlier window"
+          }
+        ]
+      },
+      "dialogue": [
+        {
+          "speaker": "host",
+          "text": "The first band is about to play at the county fair. The supervisor calls from the south gate. She wants to know whether to open another entrance. Meanwhile, the treasurer wants yesterday’s attendance figure for a meeting tomorrow. The same scanners can help both people. Which of them needs an answer while people are still walking through the gate?"
+        },
+        {
+          "speaker": "learner",
+          "text": "The supervisor. A count that arrives tomorrow gives her no chance to move today’s queue. I’d feed incoming admissions into a running calculation. For the treasurer, I could collect yesterday’s records as a set, check them, and issue a daily total."
+        },
+        {
+          "speaker": "host",
+          "text": "That gives us stream processing and batch processing. The stream keeps taking new events. A batch has a boundary, such as all records selected for one day. You can keep the original events and use both approaches. Now let’s listen to exactly one five-minute interval. It starts at eleven fifty-five and ends just before noon."
+        },
+        {
+          "speaker": "learner",
+          "text": "I’ll run the counter. The first admission, Robin, reaches me on time. The second, Wren, also reaches me on time. The scanner didn’t hear the acknowledgment for Wren, so it sends that message again with the same event identifier. Those bird names stand for individual scans in our example."
+        },
+        {
+          "speaker": "host",
+          "text": "It’s noon. Pause here and say two numbers aloud. How many messages reached you? How many distinct admissions do you know about?"
+        },
+        {
+          "speaker": "learner",
+          "text": "Three messages. Two admissions. Robin counts once and Wren counts once. If I counted deliveries, the retry would look like another person. I’d keep the scan identifier with the record so I can recognize the repeat."
+        },
+        {
+          "speaker": "host",
+          "text": "A third scanner was briefly offline. At one minute past noon it delivers Lark, a new scan. Lark happened one minute before noon. For this report, we group by the time people crossed the gate, and our procedure accepts this delay. Which interval gets the extra admission?"
+        },
+        {
+          "speaker": "learner",
+          "text": "The earlier interval. Lark’s event time is eleven fifty-nine. Its arrival time is twelve oh one. At noon I could tell the supervisor we had seen two distinct admissions. Once Lark arrives, I can revise that figure to three and preserve when I made the correction."
+        },
+        {
+          "speaker": "host",
+          "text": "Change one detail. The technician wants to measure the load on the receiver and counts every incoming message in the minute it arrives. Pause and explain where Lark goes now, and whether Wren’s retry matters."
+        },
+        {
+          "speaker": "learner",
+          "text": "Lark goes into the minute starting at twelve oh one. And yes, Wren’s retry matters to the receiver because it had to handle the message again. I'd label one chart admissions by scan time and the other messages by arrival time. Two different answers can both be right when readers know what the counter measures."
+        },
+        {
+          "speaker": "host",
+          "text": "One last call from the gate. A ticket holder leaves and is later admitted again. Staff give the second admission a fresh scan identifier. Our measure is admissions, including reentry. Would keeping only one record per ticket work?"
+        },
+        {
+          "speaker": "learner",
+          "text": "That would erase a genuine admission. Keep one record per admission event. If the treasurer asks for unique ticket holders instead, that is a different calculation. Before I publish either figure I want a sentence that says what counts once, which clock sets the interval, and how we handle a delayed record."
+        }
+      ]
+    },
+    {
+      "id": "orders-and-tickets",
+      "title": "Two paid orders, three tickets, and an extra twenty dollars",
+      "guide_sections": [
+        "Tables, keys, and relationships",
+        "SQL and database objects",
+        "1. Customer identity and the grain of revenue",
+        "2. Run the SQL example and undo an accidental change"
+      ],
+      "objectives": [
+        "Identify features of relational data",
+        "Identify common structured query language (SQL) statements"
+      ],
+      "source_ids": [
+        "dp900-keys",
+        "dp900-groupby",
+        "microsoft-dp900-relational-concepts-module"
+      ],
+      "summary": "The fair’s box office needs one report with money received and tickets issued. A join repeats the amount on a two-ticket order. Work out what one row represents before totaling it, then keep a paid order visible while its tickets are still being issued.",
+      "key_points": [
+        "A primary key identifies an order. Each ticket can carry a foreign key referring to its order, so two distinct tickets can legitimately refer to the same payment.",
+        "An inner join produces each matching pair. When two tickets match one order the result contains two rows for that order, each with the order amount.",
+        "Sum payments at the order level. To report tickets alongside that amount, group tickets by order ID first and count the tickets in each group.",
+        "A left join from orders preserves paid orders with no matching ticket group. Display a missing group’s count as zero when that is the agreed business meaning."
+      ],
+      "scenario": {
+        "question": "Two orders are paid twenty dollars each. One has two issued tickets and the other has one. What goes wrong if a report joins orders to tickets and sums the order amount? How would you keep an order visible before any tickets are issued?",
+        "answer": "The three joined rows each show twenty dollars, producing sixty dollars from forty dollars of payments. Count or group tickets by order ID first. Start with paid orders, left join the per-order ticket counts, and treat a missing count as zero. The payment then appears once per order."
+      },
+      "visual": {
+        "title": "Match the report to one row per order",
+        "nodes": [
+          {
+            "id": "orders",
+            "label": "Two paid orders at $20 each"
+          },
+          {
+            "id": "tickets",
+            "label": "Two tickets on one order, one on the other"
+          },
+          {
+            "id": "grouped",
+            "label": "One ticket count per order ID"
+          },
+          {
+            "id": "report",
+            "label": "Two order rows, $40 paid, three tickets"
+          }
+        ],
+        "edges": [
+          {
+            "from": "tickets",
+            "to": "grouped",
+            "label": "Group and count by order ID"
+          },
+          {
+            "from": "orders",
+            "to": "report",
+            "label": "Preserve each paid order"
+          },
+          {
+            "from": "grouped",
+            "to": "report",
+            "label": "Attach count to its order"
+          }
+        ]
+      },
+      "dialogue": [
+        {
+          "speaker": "learner",
+          "text": "I have a box office mystery. The fair has two paid orders, twenty dollars each. The sales report says we took sixty dollars. I was going to look for a third card payment. The clerk says to look at the tickets first. How could counting tickets create money?"
+        },
+        {
+          "speaker": "host",
+          "text": "Let's retrace the report. There are two tables. The orders table has one row per paid order. On paper you could write two slips, both for twenty dollars. Call the first order Blue and the second order Gold. Every slip has its own order identifier. That identifier is the primary key."
+        },
+        {
+          "speaker": "learner",
+          "text": "And the tickets table has one row per issued ticket. Blue bought two tickets. Gold bought one. Each ticket needs its own identifier, and it also carries the order identifier. The column that points back to the order is a foreign key."
+        },
+        {
+          "speaker": "host",
+          "text": "Exactly. With Structured Query Language, often called SQL, you can select rows from those tables and join them where the order identifiers match. An inner join gives you one row for each matching pair. Say the pairs aloud with me. Blue and its first ticket. Blue and its second ticket. Gold and its only ticket. What amount does each joined row carry?"
+        },
+        {
+          "speaker": "learner",
+          "text": "Twenty, twenty, twenty. There’s my sixty dollars! The same Blue payment appeared on two rows because two tickets matched the order. Nobody charged the card again. A row in the joined result now describes an order paired with a ticket."
+        },
+        {
+          "speaker": "host",
+          "text": "Here’s a tempting fix. Someone says, add each different dollar amount just once. Pause and work out what that would pay into the till."
+        },
+        {
+          "speaker": "learner",
+          "text": "Only twenty dollars. Blue and Gold paid the same price, but both orders count. I need to tell orders apart by their identifiers. To report money alone, I can sum the two paid order rows directly. That gives forty dollars."
+        },
+        {
+          "speaker": "host",
+          "text": "The clerk wants tickets and dollars next to each other on each order. First use a group by clause on the tickets’ order identifier and count the rows in each group. Picture a note for Blue saying two tickets and a note for Gold saying one ticket. How many times will Blue's payment appear when you attach those notes to the orders?"
+        },
+        {
+          "speaker": "learner",
+          "text": "Once. Each note belongs to one order, and each order can match at most one note. Now I can report three issued tickets and forty dollars. I’ll check that the report still contains just two order rows before I add the money."
+        },
+        {
+          "speaker": "host",
+          "text": "Change one fact. Gold has paid, but its ticket hasn’t been issued yet. Blue still has two tickets. Pause here. The clerk wants all paid orders, including paid orders waiting for tickets. Which side of the join must keep its rows? What totals should the clerk expect?"
+        },
+        {
+          "speaker": "learner",
+          "text": "Keep the paid orders on the left and use a left join to the grouped ticket counts. Gold has no matching ticket group yet, but it still has a payment. Here a missing count means zero tickets issued. I expect two paid orders, forty dollars in payments, and two issued tickets. An inner join at this point would hide Gold’s payment."
+        },
+        {
+          "speaker": "host",
+          "text": "That gives the clerk a way to check any new version of this report. Point to one row and finish the sentence: this row stands for one what? If the answer changes between steps, check again before adding money."
+        }
+      ]
+    }
+  ]
+}

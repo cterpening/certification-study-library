@@ -13,7 +13,11 @@ upcoming_change_checked: 2026-10-28
 
 # DP-750 Implementing Data Engineering Solutions Using Azure Databricks Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-01.md#dp-750) and the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-750-coverage-record). Known source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-750) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-02.md#dp-750)
+
+**English outline comparison, November 20, 2026.** The current page displays March 11, while the accepted October 19 outline names Declarative Automation Bundles. Both have 77 tasks and four domains with the same weights. Practice deploying a bundle with the CLI under either name. Explain how deletion vectors mark rows logically before physical files are rewritten. [Compared editions](../docs/research/2026-11-20-microsoft-refresh-group-02.md#dp-750).
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-01.md#dp-750) and the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-750-coverage-record). Known source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-750) is authoritative.
 
 **Current baseline:** Skills measured as of October 19, 2026. The March teaching snapshot is preserved in the objective archive.<br>
 **Blueprint reconciliation (October 28, 2026):** The accepted English revision uses Declarative Automation Bundles and Databricks CLI terminology, and removes deletion vectors from the clustering-strategy objective. Domain weights are unchanged. Deletion vectors remain useful technical context, not a clustering strategy. No later revision is announced on the checked official page.<br>
@@ -21,6 +25,8 @@ upcoming_change_checked: 2026-10-28
 **Exam page:** [Azure Databricks Data Engineer Associate](https://learn.microsoft.com/en-us/credentials/certifications/implementing-data-engineering-solutions-using-azure-databricks/) · 120-minute assessment · ten listed languages: English, Japanese, Simplified and Traditional Chinese, Korean, German, French, Italian, Brazilian Portuguese and Spanish. Recheck language-specific revision timing when booking.<br>
 **Official course:** [DP-750T00 Implement data engineering solutions using Azure Databricks](https://learn.microsoft.com/en-us/training/courses/dp-750t00) · four instructor-led days.<br>
 **Practice:** Microsoft’s Practice Assessment is on [AI Skills Navigator](https://aiskillsnavigator.microsoft.com/en-us/certifications/microsoft-certified-associate/azure-databricks-data-engineer); sign-in is required to launch it.
+
+**Practice check.** On November 9 Microsoft documented Auto as the new UI default for newly created jobs compute. It usually chooses Standard. Machine learning runtimes, GPU instances, and runtimes below 14.3 are exceptions, and an enforced cluster policy takes precedence. Existing jobs keep their settings. Microsoft scheduled the compliance security profile rollout for December. [Source notes and publisher link](../docs/research/2026-11-20-microsoft-refresh-group-02.md#dp-750)
 
 ## How to use this guide
 
@@ -951,7 +957,77 @@ These are original prompts, not recalled exam questions. Answer with decision, d
 
 ---
 
+## Key terms and phrases
+
+**Set up and configure an Azure Databricks environment (15–20%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Job compute](#select-compute-from-workload-and-governance-requirements) | Compute provisioned for a job's execution and governed by the job's runtime and termination settings. |
+| [SQL warehouse](#select-compute-from-workload-and-governance-requirements) | Databricks compute designed to serve SQL queries independently of the stored table data. |
+| [Unity Catalog](#organize-unity-catalog-objects) | The governance layer for organizing data assets and managing privileges, discovery and lineage. |
+| [Catalog](#organize-unity-catalog-objects) | The top-level namespace organizing schemas and their governed data objects within a Unity Catalog metastore. |
+| [Schema](#organize-unity-catalog-objects) | A namespace below a catalog that groups related tables, views and other objects. |
+| [Metastore](#naming-and-isolation) | The governance boundary containing Unity Catalog catalogs and controlling assignments to workspaces. |
+| [Volume](#create-catalogs-schemas-and-volumes) | A governed location in Unity Catalog for non-tabular files used by data workloads. |
+| [Managed table](#managed-versus-external-tables) | A table for which Unity Catalog manages both the table metadata and the data lifecycle. |
+| [External table](#managed-versus-external-tables) | A table registered over a specified storage location whose files have a lifecycle separate from the table registration. |
+| [View](#tables-views-and-materialized-views) | A named query exposing a result without persisting the result as an independently maintained table. |
+| [Materialized view](#tables-views-and-materialized-views) | A persisted query result refreshed according to its supported semantics to accelerate repeated consumption. |
+| [Foreign catalog](#foreign-catalogs-and-connections) | A catalog that exposes objects from an external system through a configured federation connection. |
+
+**Secure and govern Unity Catalog objects (15–20%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Privilege](#apply-least-privilege-through-the-hierarchy) | An authorization such as SELECT or USE SCHEMA granted to a principal at a specific governed object. |
+| [Row filter](#choose-fine-grained-controls) | A policy or expression restricting which table rows a caller may see. |
+| [Column mask](#choose-fine-grained-controls) | A policy returning a transformed column value according to the caller or applicable rule. |
+| [Governed tag](#governed-tags-and-abac) | A managed classification attached to supported objects and usable in attribute-based access policies. |
+| [Retention period](#retention) | The interval during which table history or files are retained for supported access and recovery operations. |
+| [Lineage](#lineage) | A record of how data travels between upstream sources, transformations and downstream assets. |
+| [Audit event](#audit-activity) | A record of activity, actor and target that helps reconstruct access or changes to the data platform. |
+| [Delta Sharing](#design-secure-delta-sharing) | A protocol and platform capability for sharing datasets with authorized recipients. |
+
+**Prepare and process data (30–35%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Slowly changing dimension (SCD)](#model-grain-scd-and-temporal-history) | A way to handle changes in descriptive attributes, such as overwriting a customer address or retaining dated versions. |
+| [Grain](#model-grain-scd-and-temporal-history) | What one row represents, such as one sales order line. It determines which aggregations are meaningful. |
+| [Surrogate key](#model-grain-scd-and-temporal-history) | A generated identifier used to distinguish dimension rows independently of a changing business identifier. |
+| [Type 1 dimension change](#model-grain-scd-and-temporal-history) | Overwriting a descriptive dimension attribute to retain the current value without maintaining its old state. |
+| [Type 2 dimension change](#model-grain-scd-and-temporal-history) | Creating a new version of a dimension row so historical facts retain the attributes effective at the time. |
+| [Liquid clustering](#partitioning-liquid-clustering-z-order-and-deletion-vectors) | A table layout technique that groups related data using selected clustering keys to improve data skipping. |
+| [Deletion vector](#partitioning-liquid-clustering-z-order-and-deletion-vectors) | Metadata identifying deleted rows in data files without requiring an immediate rewrite of each affected file. |
+| [Change data capture (CDC)](#full-incremental-and-cdc-extraction) | A mechanism that makes captured row changes available for downstream consumers to process. |
+| [Full load](#full-incremental-and-cdc-extraction) | Replacing or populating the target from the complete relevant source data set. |
+| [Incremental load](#full-incremental-and-cdc-extraction) | A load that processes data added or changed since an established boundary, such as a saved watermark. |
+| [Watermark](#full-incremental-and-cdc-extraction) | A persisted value, such as a timestamp or sequence number, that marks the boundary for the next incremental load. |
+| [Batch processing](#batch-versus-streaming) | Collecting data and processing it together in bounded groups, often on a schedule. |
+| [Stream processing](#batch-versus-streaming) | Processing arriving events continuously, often producing results for moving time windows. |
+| [Auto Loader](#auto-loader) | A file-ingestion capability that discovers arriving files and tracks progress for incremental processing. |
+| [AUTO CDC](#lakeflow-pipeline-ingestion-and-auto-cdc) | A declarative processing mechanism for applying ordered change records to a target using defined keys and sequencing. |
+| [Change sequence](#lakeflow-pipeline-ingestion-and-auto-cdc) | The ordering value that tells a change-processing pipeline which operation represents a later state for the same business key. |
+| [Deduplication](#handle-duplicates-missing-and-null) | Identifying records representing the same business event and retaining the intended version according to a declared key. |
+| [MERGE](#load-with-append-insert-and-merge) | A conditional operation that matches source and target rows and applies configured inserts, updates or deletes. |
+| [Schema enforcement](#enforce-schema-and-data-quality) | Rejecting writes that do not satisfy the expected table schema unless the configuration explicitly permits evolution. |
+| [Schema evolution](#enforce-schema-and-data-quality) | A managed change to a table's schema, such as adding a column when a source format changes. |
+| [Expectation](#validation-mechanisms) | A declared data quality predicate applied to records in a pipeline, with a configured response to violations. |
+
+**Deploy and maintain pipelines and workloads (30–35%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Task dependency](#implement-lakeflow-jobs) | A declared relationship controlling when a job task can start relative to other tasks. |
+| [Retry policy](#alerts-retries-and-restart) | The limits and timing for repeating failed job tasks, paired with checks that downstream writes are safe to repeat. |
+| [Regression test](#testing-strategy) | A repeatable check that a change preserves expected behavior on known input and output cases. |
+| [Declarative Automation Bundle](#package-and-deploy-bundles) | A project that packages Databricks resources, code and deployment settings so the same project can be deployed to different targets. |
+| [Data skipping](#optimize-delta-tables) | Avoiding reads of files whose recorded statistics show they cannot contain qualifying rows. |
+
 ## Places to learn
+
+**Suggested practice.** Separate the notebook test result, the bundle validation and the deployment plan into three distinct pieces of release evidence. About 35–60 minutes for the notebook and bundle walkthrough on paper (editorial estimate); setup and deployment add time. [Lab 12: Implement Development Lifecycle Processes in Azure Databricks](https://microsoftlearning.github.io/DP-750T00-Implement-Data-Engineering-Solutions-using-Azure-Databricks/Instructions/Labs/12-implement-development-lifecycle-processes-in-azure-databricks.html)
 
 ### October 28 learning route and evidence task
 
@@ -961,7 +1037,7 @@ The [official DP-750 exercises](https://microsoftlearning.github.io/DP-750T00-Im
 
 **Answer checkpoint:** A valid bundle and a job with the expected task graph prove configuration/deployment state. They do not prove that placeholder code performs the required transformation or that production permissions and data contracts work.
 
-This is **not a complete list**, and it is not a recommendation to consume everything. Pick a current primary path, build the labs, and use targeted references/practice for gaps. Times are page-published when available; otherwise they are clearly labeled estimates. Catalogs, access, duration, price and alignment change. DP-750 is new enough that several vendors had no dedicated current course on the pages found; broad Databricks material must be mapped to the current October 19 outline; March-only coverage remains historical. Avoid dumps or anything claiming real exam questions.
+This is **not a complete list**, and it is not a recommendation to consume everything. Pick a current primary path, build the labs, and use targeted references/practice for gaps. Times are page-published when available; otherwise they are clearly labeled estimates. Catalogs, access, duration, price and alignment change. DP-750 is new enough that several vendors had no dedicated current course on the pages found; broad Databricks material must be mapped to the retained October 19 outline and the March edition currently shown by Microsoft. Avoid dumps or anything claiming real exam questions.
 
 ### Start with Microsoft and Databricks
 

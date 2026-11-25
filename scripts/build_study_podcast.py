@@ -95,17 +95,26 @@ def split_parts(units: list[dict], target_minutes: float | None) -> list[list[di
     return parts
 
 
-def episode_script(manifest: dict, units: list[dict], part: int, total: int) -> dict:
-    baseline = manifest.get("baseline", "See the accepted objective snapshot")
-    checked = manifest.get("blueprint_last_checked", "not recorded")
-    intro = (
-        f"Welcome to our {manifest['exam_code']} study conversation, part {part} of {total}. "
-        "This is an independent, AI-assisted study resource with synthetic voices. "
-        "Human review is pending. The official exam blueprint is authoritative. "
-        f"Our source package uses this baseline: {baseline}. "
-        f"Its recorded blueprint check was {checked}; preparing this episode does not renew that review. "
-        f"Today's scope: {manifest['scope_note']}"
-    )
+def episode_script(manifest: dict, units: list[dict], part: int, total: int, *, version: int = 1) -> dict:
+    if version == 2:
+        titles = [unit["title"].rstrip() for unit in units]
+        topics = " ".join(title if title.endswith((".", "?", "!")) else title + "." for title in titles)
+        intro = (
+            f"Welcome to part {part} of {total} of our {manifest['exam_code']} study conversation. "
+            f"{topics} Both voices are synthetic. This independent, AI-assisted material is awaiting human review. "
+            "The show notes link to the official exam blueprint and list the dates used for this episode."
+        )
+    else:
+        baseline = manifest.get("baseline", "See the accepted objective snapshot")
+        checked = manifest.get("blueprint_last_checked", "not recorded")
+        intro = (
+            f"Welcome to our {manifest['exam_code']} study conversation, part {part} of {total}. "
+            "This is an independent, AI-assisted study resource with synthetic voices. "
+            "Human review is pending. The official exam blueprint is authoritative. "
+            f"Our source package uses this baseline: {baseline}. "
+            f"Its recorded blueprint check was {checked}; preparing this episode does not renew that review. "
+            f"Today's scope: {manifest['scope_note']}"
+        )
     sections = [{"unit_id": "introduction", "title": "Introduction", "turns": [
         {"speaker": "host", "text": spoken_text(intro)},
         {"speaker": "learner", "text": "We will work through the ideas, compare common choices, and pause for recall. The linked guide and show notes contain the sources and visual aids."},
@@ -123,7 +132,7 @@ def episode_script(manifest: dict, units: list[dict], part: int, total: int) -> 
         {"speaker": "learner", "text": "Before moving on, explain the distinctions from this episode without looking at your notes. Use the original practice questions in the study pack to find gaps."},
         {"speaker": "host", "text": "Then check the current official sources and complete the relevant hands-on work. This conversation covers selected objectives; listening alone is not evidence of readiness or complete exam coverage."},
     ]})
-    return {"schema_version": 1, "exam_code": manifest["exam_code"], "language": manifest["language"],
+    return {"schema_version": version, "exam_code": manifest["exam_code"], "language": manifest["language"],
             "part": part, "total_parts": total, "unit_ids": [unit["id"] for unit in units],
             "sections": sections}
 
@@ -133,7 +142,7 @@ def transcript(script: dict, package_manifest: dict, units: list[dict], sources:
     lines = [f"# {package_manifest['exam_code']} study conversation — Part {script['part']}", "",
              "> Independent AI-assisted resource — AI-GENERATED DRAFT; HUMAN REVIEW PENDING.", "",
              f"The [official blueprint]({package_manifest['blueprint_url']}) is authoritative.", "",
-             f"Scope: {package_manifest['scope_note']}", "",
+             f"{'Series scope' if script['schema_version'] == 2 else 'Scope'}: {package_manifest['scope_note']}", "",
              f"Baseline: {package_manifest.get('baseline', 'See accepted snapshot')}. "
              f"Recorded blueprint check: {package_manifest.get('blueprint_last_checked', 'not recorded')}.", "",
              "This is a production script, not an assertion that audio has been generated or listened to.", ""]
@@ -160,7 +169,7 @@ def prepare(package: Path, output: Path, target_minutes: float | None = None, ro
     content = read_json(package / "units.json")
     parts = split_parts(content["units"], target_minutes)
     # Validate every part before creating the output directory.
-    scripts = [episode_script(package_manifest, part, index, len(parts))
+    scripts = [episode_script(package_manifest, part, index, len(parts), version=2 if len(parts) > 1 else 1)
                for index, part in enumerate(parts, 1)]
     output = safe_path(root, repository_relative(output, root))
     if output.exists() or output.is_symlink():
@@ -221,7 +230,10 @@ def load_episode(episode: Path, root: Path = ROOT) -> tuple[dict, dict, dict]:
     part, total = script.get("part"), script.get("total_parts")
     if type(part) is not int or type(total) is not int or not 1 <= part <= total <= 100:
         raise ValueError("Invalid episode part numbers")
-    expected = episode_script(package_manifest, selected, part, total)
+    version = script.get("schema_version")
+    if type(version) is not int or version not in {1, 2}:
+        raise ValueError("Unsupported podcast script version")
+    expected = episode_script(package_manifest, selected, part, total, version=version)
     sources = {row["id"]: row for row in read_json(safe_path(root, "data/sources.json"))["sources"]}
     companion_path = os.path.relpath(package / "study-guide.md", episode).replace("\\", "/")
     guide_path = os.path.relpath(safe_path(root, package_manifest["guide_path"]), episode).replace("\\", "/")
@@ -441,10 +453,11 @@ def main() -> int:
             result = render(args.episode_dir, max_new_requests=args.max_new_requests)
         else:
             metadata, script, _ = load_episode(args.episode_dir)
+            receipt_path = "recording.json" if (args.episode_dir / "recording.json").is_file() else "audio/render.json"
             result = {"status": "current", "estimated_minutes": metadata["estimated_minutes"],
                       "service_requests": len(audio_chunks(script)),
                       "characters": sum(len(turn["text"]) for section in script["sections"] for turn in section["turns"]),
-                      "audio_checked": False, "note": "Plan/check makes no network calls; inspect audio/render.json for actual production state"}
+                      "audio_checked": False, "note": f"Inspect {receipt_path} for the recording's production state."}
         print(json_text(result), end="")
         return 0
     except (ValueError, KeyError, OSError, TypeError) as error:

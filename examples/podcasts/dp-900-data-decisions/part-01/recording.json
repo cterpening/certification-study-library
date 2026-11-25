@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "audio_file": "episode.mp3",
+  "mp3_sha256": "900376f9eef48300a7447e9ca64b68738e9782ea9e50ba399657a72b95f611be",
+  "package_manifest_sha256": "6447cef1c74ac17c97c44be7d9bd7b188e92517025613dee4fa2b71df9dbc76c",
+  "script_sha256": "6de74c826eb667126c7e4707265c68656ddd92583de35e010a4dbd7bcbbcdcc6",
+  "transcript_sha256": "cc0ed9c8fd1947b5a3abfcacddbf8e467e6e608095ced5ad4e737b7fc931aa97",
+  "duration_seconds": 703.2338,
+  "sample_rate": 44100,
+  "channels": 1,
+  "format": "MPEG_LAYER_III",
+  "voices": {
+    "host": "F1",
+    "learner": "M1"
+  },
+  "model": "Supertone/supertonic-3",
+  "model_revision": "3cadd1ee6394adea1bd021217a0e650ede09a323",
+  "license_url": "https://huggingface.co/Supertone/supertonic-3/blob/3cadd1ee6394adea1bd021217a0e650ede09a323/LICENSE",
+  "engine": "offline ONNX Runtime CPU",
+  "supertonic_version": "1.3.1",
+  "onnxruntime_version": "1.32.0",
+  "soundfile_version": "0.14.0",
+  "synthesis": {
+    "language": "en",
+    "speed": 1.05,
+    "steps": 8,
+    "global_gain": 1.25735,
+    "mp3_bitrate_mode": "variable",
+    "mp3_compression_level": 0.45
+  },
+  "notice": "The two speakers are synthetic. Independent AI script review is complete. Human content and listening review are pending.",
+  "chapters": [
+    {
+      "title": "Introduction",
+      "start_seconds": 0.16
+    },
+    {
+      "title": "Choose from the workload, not just the file format",
+      "start_seconds": 59.94
+    },
+    {
+      "title": "Match relational design and the Azure SQL management boundary",
+      "start_seconds": 210.5
+    },
+    {
+      "title": "Distinguish objects, shared files, and database documents",
+      "start_seconds": 359.64
+    },
+    {
+      "title": "Trace data from ingestion to a trustworthy visual",
+      "start_seconds": 514.65
+    },
+    {
+      "title": "Next steps",
+      "start_seconds": 677.93
+    }
+  ],
+  "sources_checked_for_recording": [
+    "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-900",
+    "https://learn.microsoft.com/en-us/training/modules/explore-core-data-concepts/",
+    "https://learn.microsoft.com/en-us/training/modules/explore-relational-data-offerings/",
+    "https://learn.microsoft.com/en-us/azure/azure-sql/azure-sql-iaas-vs-paas-what-is-overview",
+    "https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction",
+    "https://learn.microsoft.com/en-us/azure/storage/files/storage-files-introduction",
+    "https://learn.microsoft.com/en-us/azure/cosmos-db/resource-model",
+    "https://learn.microsoft.com/en-us/azure/cosmos-db/partitioning-overview",
+    "https://learn.microsoft.com/en-us/training/modules/examine-components-of-modern-data-warehouse/3-data-ingestion-pipelines",
+    "https://learn.microsoft.com/en-us/training/modules/explore-fundamentals-stream-processing/",
+    "https://learn.microsoft.com/en-us/power-bi/connect-data/service-datasets-understand",
+    "https://learn.microsoft.com/en-us/power-bi/guidance/star-schema",
+    "https://learn.microsoft.com/en-us/training/powerplatform/power-bi",
+    "https://learn.microsoft.com/en-us/training/modules/power-bi-effective-reports/5-report-visuals",
+    "https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-tables"
+  ],
+  "citation_note": "The source package links to the broad Power BI training hub for visual selection. The independent script reviewer also checked the specific Microsoft lesson.",
+  "visual_selection_source": "https://learn.microsoft.com/en-us/training/modules/power-bi-effective-reports/5-report-visuals",
+  "audio_check": {
+    "audio_sha256": "900376f9eef48300a7447e9ca64b68738e9782ea9e50ba399657a72b95f611be",
+    "method": "Full independent CPU English ASR against the reviewed script, final audio-text alignment and editorial inspection of flagged differences. Local algorithmic delivery check only.",
+    "recognizer": "faster-whisper 1.2.1 / CTranslate2 int8, Systran/faster-whisper-base.en@3d3d5dee26484f91867d81cb899cfcf72b96be6c",
+    "reference_word_count_for_alignment": 1712,
+    "word_error_rate_before_adjudication": 0.0315,
+    "opening_and_closing_checked": true,
+    "finding_disposition": "July 21, 2026, October 28, 2026, November 10, 2026, the four topics and the complete closing were recognized. SQL, NoSQL, file-sharing protocols and JSON have phonetic or acronym spelling alternatives in the raw decode. The native segment text preserves 10:00, the three- and five-minute intermediate steps, quarter past, and both 15- and 10-minute delay figures. The first-pass decoder dropped the negative prefix of “unsearchable.” A blind decode of the complete sentence cut from the final MP3, and the retained original WAV, both recovered the complete reference sentence including “unsearchable.” No pickup was required.",
+    "material_omissions_or_number_changes_outstanding": 0,
+    "human_listening_review": "pending"
+  }
+}

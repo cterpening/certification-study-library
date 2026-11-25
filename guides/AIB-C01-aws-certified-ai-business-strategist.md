@@ -394,6 +394,70 @@ The official guide and detailed domain pages define scope. The certification pag
 This guide uses no recalled exam questions or restricted content. The knowledge checks are original and test published concepts rather than reproducing vendor items.
 
 
+## Key terms and phrases
+
+**AI Fundamentals and Literacy**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Retrieval-augmented generation (RAG)](#1-ai-fundamentals-and-literacy-24) | A design that finds relevant source material and gives it to a model as context when it generates a response. |
+| [Fine-tuning](#1-ai-fundamentals-and-literacy-24) | Further training on examples that changes model weights to shape behavior on a task. |
+| [Inference](#explain-ai-as-a-business-system) | Using a trained model to produce an output for a new input, such as forecasting demand from this week's orders. |
+| [Bias](#explain-ai-as-a-business-system) | A systematic distortion in data, model behavior or decisions. Unequal error rates across groups warrant investigation of the data and intended use. |
+| [Regression](#choose-the-least-complex-effective-approach) | Predicting a numeric outcome, such as delivery time in minutes. The size of the error matters, not only whether the prediction is exact. |
+| [Grounding](#understand-practical-genai-choices) | Supplying relevant evidence to anchor a model's response in information the business can check. |
+| [Latency](#understand-practical-genai-choices) | Elapsed time between a request and the result of interest. Specify whether it measures the first token, the completed response or the full business action. |
+
+**AI Strategy and Business Value Creation**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Return on investment (ROI)](#2-ai-strategy-and-business-value-creation-28) | Net benefit divided by investment over the same period. Benefits of $60,000 on $50,000 in costs give a 20% return. |
+| [Baseline](#work-backward-from-outcomes) | The measured starting performance of the existing process. It gives a team a reference for estimating the effect of an AI pilot. |
+| [Operating model](#build-buy-or-partner-is-an-operating-model-choice) | How ownership, decisions, funding and support are organized over the system's life. Assign responsibility for both benefits and failures. |
+| [Build, buy or partner](#build-buy-or-partner-is-an-operating-model-choice) | A choice about who creates and operates a capability. Compare skills, integration, control of data, speed of delivery and ongoing cost. |
+| [Total cost of ownership (TCO)](#build-buy-or-partner-is-an-operating-model-choice) | All costs over the chosen period, including integration, serving, human review, support and change management. |
+| [AWS Pricing Calculator](#build-buy-or-partner-is-an-operating-model-choice) | Estimates the cost of a proposed configuration from usage assumptions, useful before deployment. |
+| [Opportunity cost](#build-buy-or-partner-is-an-operating-model-choice) | The benefit forgone by choosing one option over the best alternative, such as allocating scarce reviewers to a low-value pilot. |
+| [Cost Explorer](#build-buy-or-partner-is-an-operating-model-choice) | Analyzes historical AWS usage and charges by dimensions such as service or account to explain spending patterns. |
+| [Savings Plans](#build-buy-or-partner-is-an-operating-model-choice) | A pricing commitment to eligible compute usage measured as spend per hour over a term. Compare covered usage with the expected baseline. |
+| [Amazon SageMaker](#build-buy-or-partner-is-an-operating-model-choice) | AWS's platform for tasks such as preparing data, training models and hosting inference. Choose the component around the stage of the ML lifecycle. |
+| [Amazon Bedrock](#build-buy-or-partner-is-an-operating-model-choice) | A managed service for building applications with foundation models. Model access and application tools are separate authorization decisions. |
+| [Key performance indicator (KPI)](#make-value-measurable) | A measure tied to a business objective, such as the share of customer requests resolved correctly on first contact. |
+| [Throughput](#make-value-measurable) | The volume of work completed per unit time, such as predictions per second. A high rate can coexist with long waits for individual requests. |
+
+**AI Governance and Responsible AI Leadership**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Responsible AI](#3-ai-governance-and-responsible-ai-leadership-24) | Practices for assessing an AI system's safety, fairness, privacy and accountability throughout its use. |
+| [Hallucination](#3-ai-governance-and-responsible-ai-leadership-24) | A plausible model output that is unsupported or false, such as a citation to a document that does not contain the claim. |
+| [Least privilege](#translate-principles-into-evidence) | Limiting an identity to the actions and resources required for its work. A read-only reporting job needs no permission to modify its source. |
+| [Data provenance](#translate-principles-into-evidence) | Evidence of a dataset's origin, ownership and transformation history. It supports decisions about permitted use and reproducibility. |
+| [Escalation](#create-a-governance-operating-model) | Routing a case to an accountable person or process when confidence, authority or risk falls outside the automation's limits. |
+| [Model drift](#govern-the-lifecycle) | A change over time in model behavior or the relationship between inputs and the desired outcome. Compare performance against representative labeled cases. |
+| [Guardrail](#govern-the-lifecycle) | A check or rule that screens model inputs, outputs or proposed actions against policy. Authorization for the underlying action still belongs in the executing service. |
+
+**Business Readiness, Leadership, and AI Transformation**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Business readiness](#4-business-readiness-leadership-and-ai-transformation-24) | Whether people, data, processes and support can sustain the proposed change after the pilot. |
+| [Proof of concept](#assess-readiness-honestly) | A limited experiment designed to test feasibility, such as whether a model can extract fields accurately from representative forms. |
+| [Adoption rate](#treat-adoption-as-outcome-work) | The proportion of an eligible group that actually uses the capability under a stated definition. Report the time period and what counts as use. |
+| [Change champion](#treat-adoption-as-outcome-work) | A person close to the affected workflow who helps colleagues adopt a change and returns evidence of practical obstacles. |
+| [Executive sponsor](#treat-adoption-as-outcome-work) | A leader accountable for direction, resources and removing organizational obstacles to adoption. |
+| [Pilot exit criteria](#scale-through-evidence-gates) | The evidence a team agrees to require before expanding, revising or stopping a trial, such as a minimum quality level and an acceptable cost per case. |
+| [Center of excellence](#scale-through-evidence-gates) | A team that shares expertise, patterns and training across pilots. Business process owners still need to own outcomes and ongoing operation. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Payback period](#example-1-time-saved-realized-value-and-payback) | The time needed to recover the initial investment. With $12,000 spent up front and steady net savings of $2,000 a month, payback takes six months. |
+| [Human oversight](#example-2-human-oversight-needs-capacity) | A person's authority and practical ability to review, correct or stop an AI-assisted decision. A review queue needs enough capacity for the promised oversight. |
+| [Activation](#example-3-activation-is-not-completed-work) | The share of eligible users who start using a tool. Completing the target workflow is a separate measure of adoption. |
+
 ## Places to learn
 
 This is **not a complete list**, and it is not meant to be consumed end to end. Pick the formats and gaps that work for you, verify dates and live durations, and return to the official blueprint. Because AIB-C01 was announced on September 1, 2026, exact third-party coverage is not mature; adjacent resources below are labeled and should not be mistaken for complete AIB-C01 preparation.

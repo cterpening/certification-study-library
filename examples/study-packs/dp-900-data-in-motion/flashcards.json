@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "exam_code": "DP-900",
+  "content_status": "ai-generated-draft",
+  "cards": [
+    {
+      "id": "count-the-gate",
+      "question": "Two distinct admissions reach the counter before noon. One is delivered a second time. A third admission was scanned before noon but arrives just after it. The report groups by scan time and accepts that delay. What counts can staff describe before and after the late record?",
+      "answer": "At noon staff know of two distinct admissions. The retry adds zero. The delayed third admission raises the count for the earlier interval to three. Staff can preserve both figures by labeling the first result provisional and the second revised.",
+      "objectives": [
+        "Describe the difference between batch and streaming data",
+        "Describe considerations for data ingestion and processing"
+      ],
+      "source_ids": [
+        "microsoft-dp900-stream-processing-module",
+        "dp-750-structured-streaming"
+      ]
+    },
+    {
+      "id": "orders-and-tickets",
+      "question": "Two orders are paid twenty dollars each. One has two issued tickets and the other has one. What goes wrong if a report joins orders to tickets and sums the order amount? How would you keep an order visible before any tickets are issued?",
+      "answer": "The three joined rows each show twenty dollars, producing sixty dollars from forty dollars of payments. Count or group tickets by order ID first. Start with paid orders, left join the per-order ticket counts, and treat a missing count as zero. The payment then appears once per order.",
+      "objectives": [
+        "Identify features of relational data",
+        "Identify common structured query language (SQL) statements"
+      ],
+      "source_ids": [
+        "dp900-keys",
+        "dp900-groupby",
+        "microsoft-dp900-relational-concepts-module"
+      ]
+    }
+  ]
+}

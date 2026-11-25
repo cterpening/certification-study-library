@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "audio_file": "episode.mp3",
+  "mp3_sha256": "d2207ee58bd8ccfc23e7e7ef70f6523ab0cfd97920da2ceb52df3c4bb0fb8543",
+  "package_manifest_sha256": "dce90ca3ef96fe4ddfd6fdf882b4705b40e9c80951b4de764c437af5cc18639a",
+  "script_sha256": "485438c2b0d1514507cdb22c3894993521ebd25a3757daa0571595d55a7127d3",
+  "transcript_sha256": "5f4bf96e58bed8b82451b69026d3860a6e4e67b248c628c66bd554577d3c6d00",
+  "duration_seconds": 248.9251,
+  "sample_rate": 44100,
+  "channels": 1,
+  "format": "MPEG_LAYER_III",
+  "voices": {
+    "host": "F1",
+    "learner": "M1"
+  },
+  "model": "Supertone/supertonic-3",
+  "model_revision": "3cadd1ee6394adea1bd021217a0e650ede09a323",
+  "license_url": "https://huggingface.co/Supertone/supertonic-3/blob/3cadd1ee6394adea1bd021217a0e650ede09a323/LICENSE",
+  "engine": "offline ONNX Runtime CPU",
+  "supertonic_version": "1.3.1",
+  "onnxruntime_version": "1.32.0",
+  "soundfile_version": "0.14.0",
+  "synthesis": {
+    "language": "en",
+    "speed": 1.05,
+    "steps": 8,
+    "global_gain": 1.50329,
+    "mp3_bitrate_mode": "variable",
+    "mp3_compression_level": 0.45
+  },
+  "notice": "The two speakers are synthetic. Independent AI script review is complete. Human content and listening review are pending.",
+  "chapters": [
+    {
+      "title": "Introduction",
+      "start_seconds": 0.16
+    },
+    {
+      "title": "How many people came through the gate?",
+      "start_seconds": 28.39
+    },
+    {
+      "title": "Next steps",
+      "start_seconds": 223.62
+    }
+  ],
+  "sources_checked_for_recording": [
+    "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-900",
+    "https://learn.microsoft.com/en-us/training/modules/explore-fundamentals-stream-processing/",
+    "https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/",
+    "https://learn.microsoft.com/en-us/training/modules/explore-fundamentals-stream-processing/2-batch-stream",
+    "https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/concepts",
+    "https://learn.microsoft.com/en-us/azure/stream-analytics/event-ordering"
+  ],
+  "audio_check": {
+    "audio_sha256": "d2207ee58bd8ccfc23e7e7ef70f6523ab0cfd97920da2ceb52df3c4bb0fb8543",
+    "method": "Full independent CPU English ASR against the reviewed script, final audio-text alignment and editorial inspection of flagged differences. Local algorithmic delivery check only.",
+    "recognizer": "faster-whisper 1.2.1 / CTranslate2 int8, Systran/faster-whisper-base.en@3d3d5dee26484f91867d81cb899cfcf72b96be6c",
+    "reference_word_count_for_alignment": 668,
+    "word_error_rate_before_adjudication": 0.0344,
+    "opening_and_closing_checked": true,
+    "finding_disposition": "Three pronunciation pickups fixed a repeatable mishearing of “retry.” All three now decode correctly, as do 11:59 and 12:01. A complete-file ASR skip at a pause was resolved by a focused independent decode of seconds 99–122.9, which recovered “How many distinct admissions do you know about? Three messages. Two admissions.” Names have ordinary phonetic spelling variants. Disclosure and final sentence are present.",
+    "material_omissions_or_number_changes_outstanding": 0,
+    "human_listening_review": "pending"
+  }
+}

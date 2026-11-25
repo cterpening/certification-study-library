@@ -7,19 +7,23 @@ generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
 last_verified: 2026-10-28
-upcoming_change_status: none-announced
-upcoming_change_checked: 2026-10-28
+upcoming_change_status: scheduled
+upcoming_change_checked: 2026-11-20
 ---
 
 # AB-620 Designing and Building Integrated AI Agent Solutions in Copilot Studio Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-03.md#ab-620) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-620-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-620) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-01.md#ab-620)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-03.md#ab-620) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-620-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-620) is authoritative.
 
 **Current baseline:** The study-guide page shows last updated October 16, 2026; Microsoft publishes no separate skills-effective date. All 44 detailed objective wordings match the accepted baseline checked October 28, 2026. Page metadata is not an effective exam-revision date.<br>
 **Exam state:** Active (no longer labeled beta on the credential page) as verified September 28, 2026.<br>
-**Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
+**Upcoming English outline — December 18, 2026.** Microsoft is updating the exam to the GitHub Copilot harness. The original Standard-harness lessons remain available through Learn search. Use the current objective map for preparation before that date. Check the language and version for your appointment. The [November source notes](../docs/research/2026-11-20-microsoft-refresh-group-01.md#ab-620) identify the announced edition and its domain weights.<br>
 **Training availability:** The official self-paced paths and three-day English AB-620T00-A course page are live as checked October 28, 2026. Provider delivery dates and availability vary; the earlier September 30 scheduled-date note is historical.<br>
 **Official source:** [AB-620 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-620)
+
+**Practice check.** When Copilot Studio changes the default model, the documented temporary option can retain the prior model for up to 30 days. Use that window for representative test sets, regression comparisons and an explicit cutover decision. [Source notes and publisher link](../docs/research/2026-11-20-microsoft-refresh-group-01.md#ab-620)
 
 ## How to use this guide
 
@@ -773,7 +777,91 @@ The [AI Agent Builder Associate credential page](https://learn.microsoft.com/en-
 - [Jason Moore — GitHub Copilot harness, skills and richer context](https://www.microsoft.com/en-us/copilot/blog/copilot-studio/new-and-improved-github-copilot-harness-agent-skills-and-richer-context/) (September 2, 2026). Useful for understanding the current harness and release direction. Build a four-column worksheet: feature, harness, GA/preview status, and current implementation evidence. Include memory, connected agents, Fabric tools and environment telemetry. Treat the blog as discovery and the current feature page as implementation authority; do not transfer capabilities across harnesses.
 - [Efrat Gilboa and Dikla Dotan-Cohen — Custom graders](https://www.microsoft.com/en-us/copilot/blog/copilot-studio/custom-graders-in-copilot-studio-setting-high-standards-for-agent-evals/) (March 26, 2026). Its layers of general quality, expected outputs, organizational policy and behavior help identify missing tests. Write your own mutually exclusive, exhaustive labels, independently label a small synthetic set, then calculate example 5's confusion matrix. A reported vendor benchmark is not a guarantee for your agent, and grading does not enforce access controls.
 
+## Key terms and phrases
+
+**Establish the correct Copilot Studio experience**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Agent harness](#the-current-platform-has-three-harnesses) | The runtime and authoring context that determines how an agent executes and which capabilities apply. |
+
+**Plan identity, channels, governance, and reusable components**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Trust boundary](#plan-enterprise-integration-as-trust-boundaries) | A crossing between identities, owners or systems where access and input assumptions need to be checked again. |
+| [Runtime identity](#choose-the-identity-strategy-before-building-tools) | The identity under which an agent or tool actually executes a request and receives access. |
+| [Delegated access](#choose-the-identity-strategy-before-building-tools) | Access exercised on behalf of a signed-in person within the permissions and consent granted. |
+| [Delegated permission](#choose-the-identity-strategy-before-building-tools) | A scope that lets an app call an API on behalf of a signed-in user. For Microsoft Graph, the app can act only within both its consented scopes and the user’s own access. |
+| [Channel](#design-channels-and-deployment-together) | A supported surface through which users or systems interact with a published agent. |
+| [Reusable component](#plan-reusable-components) | A packaged configuration or capability shared across agents to avoid maintaining separate copies. |
+
+**Implement agent flows, topics, responses, and state**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Agent flow](#create-bounded-agent-flows) | A defined sequence of actions an agent can invoke for a business operation. |
+| [Topic](#use-topics-for-explicit-conversational-control) | A defined conversation path that controls what an agent asks, does or returns for a particular intent. |
+| [Trigger phrase](#use-topics-for-explicit-conversational-control) | An example utterance or phrase that helps identify when a topic should start. |
+| [Adaptive Card](#design-response-formatting-and-adaptive-cards) | A structured message that presents information and, where the channel supports it, can collect input or offer actions. |
+| [Card submission](#design-response-formatting-and-adaptive-cards) | Structured input returned when a user activates an action on a supported interactive card. |
+| [Variable scope](#manage-variables-as-application-state) | The boundary that determines where an agent can read or change a stored value. |
+| [Topic variable](#manage-variables-as-application-state) | A value scoped to a particular topic and passed onward explicitly when other topics need it. |
+| [Global variable](#manage-variables-as-application-state) | A value available across topics within the relevant conversation scope. |
+| [Conversation state](#manage-variables-as-application-state) | The selected facts and pending steps needed to continue one interaction consistently. |
+
+**Connect knowledge and tool ecosystems**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Function calling](#choose-the-integration-pattern-from-the-job) | Allowing a model to propose a named function and arguments for the application to validate and execute. |
+| [Action tool](#choose-the-integration-pattern-from-the-job) | A callable operation intended to change or retrieve a specific external resource as part of an agent task. |
+| [Knowledge source](#connect-enterprise-knowledge-safely) | A collection of information an agent can retrieve to ground an answer, subject to access controls. |
+| [Security trimming](#connect-enterprise-knowledge-safely) | Restricting retrieved results to material the requesting identity is allowed to access. |
+| [Retrieval-augmented generation (RAG)](#connect-enterprise-knowledge-safely) | An application retrieves relevant evidence and includes it in the model's input when generating an answer. |
+| [Retrieval path](#worked-configuration-two-sources-with-different-retrieval-paths) | The sequence from a user's question and identity to the exact permitted source evidence returned for grounding. |
+| [Connector](#configure-connectors-and-rest-apis-as-tools) | An integration that exposes a service's operations for use as agent tools or flow actions. |
+| [REST API](#configure-connectors-and-rest-apis-as-tools) | An HTTP-based interface exposing selected resources or operations to an integration. |
+| [Model Context Protocol (MCP)](#configure-mcp-tools-deliberately) | A protocol through which a client can discover and use tools or context supplied by a server. |
+| [Computer use](#use-computer-use-only-where-its-risk-is-justified) | An agent interaction pattern that operates an application's user interface under constrained permissions and oversight. |
+
+**Design multi-agent and Azure integrations**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Child agent](#choose-child-versus-connected-agents) | A specialized agent defined within a parent agent's solution to handle delegated work. |
+| [Connected agent](#choose-child-versus-connected-agents) | An independently managed agent made available for delegation through a configured connection. |
+| [Handoff](#design-delegation-behavior) | The transfer of a bounded task with its inputs, evidence, constraints and expected output to another worker. |
+| [Stop condition](#design-delegation-behavior) | A stated condition that ends a run, such as a revision limit or unresolved conflict. |
+| [Acceptance criterion](#design-delegation-behavior) | An observable condition the receiving worker or reviewer can use to judge whether the handoff is complete. |
+| [Fabric data agent](#integrate-fabric-data-agents) | An agent configured to answer questions using eligible Fabric data sources under the applicable access model. |
+| [Agent2Agent (A2A)](#integrate-external-agents-with-a2a) | A protocol for systems to cooperate through independently operated agents and exchange task information. |
+
+**Evaluate and monitor agent performance**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Evaluation set](#build-test-sets-from-requirements-and-risks) | A collection of representative inputs with expected outcomes or scoring criteria used to compare agent behavior. |
+| [Regression case](#build-test-sets-from-requirements-and-risks) | A previously tested scenario rerun after a change to detect behavior that has deteriorated. |
+| [Ground truth](#build-test-sets-from-requirements-and-risks) | The expected labels, answers or outcomes used to judge model behavior on the evaluation set. |
+| [Trace](#monitor-with-native-analytics-and-application-insights) | A linked record of the calls made for one request, useful for locating time or errors in retrieval, generation or tool use. |
+| [Telemetry](#monitor-with-native-analytics-and-application-insights) | Recorded signals about calls, failures and timing used to understand what happened during an agent run. |
+
+**Implement ALM with solutions, environment variables, and pipelines**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Solution](#package-the-complete-dependency-graph) | A deployment package containing related Power Platform components and their dependencies. |
+| [Solution dependency](#package-the-complete-dependency-graph) | A component or configuration another solution element needs in order to deploy or execute correctly. |
+| [Environment variable](#separate-configuration-from-solution-logic) | A named deployment setting whose value can differ by environment while the solution logic stays reusable. |
+| [Connection reference](#separate-configuration-from-solution-logic) | A solution component that lets an integration bind to a connection appropriate to the target environment. |
+| [Deployment pipeline](#implement-and-extend-power-platform-pipelines) | A repeatable process for promoting a solution and its target configuration through environments. |
+| [Release gate](#worked-extension-make-an-evaluation-result-a-real-deployment-gate) | A condition a proposed version must satisfy, such as meeting quality and safety thresholds, before deployment. |
+| [Rollback](#design-rollback-for-stateful-integrations) | Returning traffic or deployment configuration to a previously accepted version after a release problem. |
+
 ## Places to learn
+
+**Suggested practice.** Compare responsibility and ownership boundaries between a child agent and an independently maintained connected agent, then identify when cross-platform communication is needed. About 20–40 minutes to read the selected sections and produce the suggested comparison or checklist (editorial estimate; full path duration was not verified). [Design and build multi-agent solutions in Microsoft Copilot Studio](https://learn.microsoft.com/en-us/training/paths/design-build-multi-agent-solutions-copilot-studio/)
 
 This is a curated starting point, not a complete list. Do **not** consume everything. Select the explanations, demonstrations, labs, and assessment signals that close your gaps, and keep the current official blueprint beside third-party material.
 

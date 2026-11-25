@@ -112,6 +112,85 @@ EXPLAIN records optimizer access-path information; statistics describe data dist
 - I diagnose access paths with statistics and runtime evidence.
 - I can complete 60 mixed questions in 90 minutes from an administrator's model.
 
+## Key terms and phrases
+
+**Planning**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Subsystem parameter (zparm)](#1-planning) | A configuration setting controlling part of Db2 subsystem behavior, with its own scope and activation requirements. |
+| [Function level](#1-planning) | An activated level of Db2 capabilities. Installing supporting maintenance and activating a capability are distinct steps. |
+| [Address space](#1-planning) | A z/OS execution and memory boundary used by Db2 components for distinct responsibilities. |
+| [Application compatibility](#1-planning) | The level controlling SQL behavior or features available to an application independently of installed maintenance alone. |
+| [Data sharing](#1-planning) | Multiple Db2 members coordinating access to shared data, with group-wide dependencies affecting availability and locking. |
+
+**Operations**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Utility](#2-operations) | A Db2 maintenance operation such as loading, reorganizing or checking objects, with availability implications during execution. |
+| [Authorization ID](#2-operations) | An identity Db2 uses when evaluating privileges for an operation. |
+
+**Security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Role](#3-security) | A named grouping of privileges used to assign related access consistently. |
+| [Data control language (DCL)](#3-security) | The SQL statements that manage access. GRANT can authorize a user or role to read a table, while REVOKE removes the specified grant. |
+| [Object privilege](#3-security) | Permission to perform a particular operation on a database object. Trace the source of SELECT permission on a table before deciding which grant to revoke. |
+
+**Database design**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Foreign key](#4-database-design) | A constraint that ties referencing values to a key in a related table and enforces the specified relationship. |
+| [Data type](#4-database-design) | The representation and operations a field supports. For example, a text identifier with leading zeros may lose meaning if converted to an integer. |
+| [Predicate](#4-database-design) | A condition used to decide which records match a query or qualify for a transformation. |
+| [View](#4-database-design) | A named query through which consumers see data in a defined shape. A conventional logical view reads its inputs when queried. |
+| [Constraint](#4-database-design) | A stated rule for acceptable records or relationships. Whether a particular constraint is enforced depends on the database and object type. |
+| [Index](#4-database-design) | An auxiliary structure organizing keys for faster lookup or ordered access, with a corresponding cost for maintenance and storage. |
+| [Table space](#4-database-design) | A logical unit for organizing database storage and managing allocation or administration boundaries. |
+| [Index scan](#4-database-design) | An access path using an index to find qualifying data, potentially avoiding a full scan depending on predicates and ordering. |
+
+**Application development**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Stored procedure](#5-application-development) | A callable database routine that encapsulates a sequence of work executed under its configured authority. |
+| [Cardinality](#5-application-development) | The number of members in the set being considered, such as distinct values of a field or rows in a query result. |
+| [Null value](#5-application-development) | A marker for a missing or unknown value. Count and comparison operations may treat it differently from a supplied zero. |
+| [Join](#5-application-development) | Combining records from multiple inputs according to a matching condition. A repeated key can yield more rows than either input leads you to expect. |
+| [Transaction](#5-application-development) | A group of database operations whose changes are committed together or discarded together within the guarantees of the database. |
+| [Package](#5-application-development) | A Db2 object containing bound SQL access information used when an application runs its statements. |
+| [Host variable](#5-application-development) | An application variable used to supply SQL input or receive database output, requiring compatible types and null handling. |
+| [Trigger](#5-application-development) | Database logic invoked automatically in response to defined changes on a table or other supported event. |
+
+**Concurrency**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Isolation level](#6-concurrency) | The consistency rules a unit of work uses when reading data that other transactions may change. |
+| [Deadlock](#6-concurrency) | A cycle in which transactions wait on locks held by each other, requiring Db2 to break the cycle. |
+| [Idempotence](#6-concurrency) | Repeatedly applying the same logical input leaves the same intended state as applying it once, which makes retry and replay safer. |
+| [Commit](#6-concurrency) | Completing a transaction so its changes become durable under the database’s configured guarantees. |
+| [Lock contention](#6-concurrency) | Transactions waiting for incompatible access to a resource, potentially leading to timeouts or deadlocks. |
+| [Timeout](#6-concurrency) | Ending a wait after the configured interval when a requested resource remains unavailable. |
+
+**Performance**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Access path](#7-performance) | The optimizer’s chosen way to retrieve and combine data, including scans, indexes and join methods. |
+| [EXPLAIN](#7-performance) | A facility for recording optimizer access-path information so an administrator can inspect a planned query strategy. |
+| [Execution statistics](#7-performance) | Measurements describing workload execution or data characteristics, interpreted alongside the access plan and observation interval. |
+
+**Original readiness checks**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Rollback](#answer-guide) | Returning to an earlier state after a failed change. For a database transaction, this discards eligible uncommitted work. |
+| [Schema object](#answer-guide) | A named object belonging to a schema, such as a table, view or index. |
+
 ## Places to learn
 
 This is a selective learning path, not a complete list of Db2 for z/OS resources.

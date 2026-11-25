@@ -113,6 +113,74 @@ Measure whether a canary is safe against a declared baseline. A green pipeline p
 - I can implement least privilege, protected state and secrets, image policy, and production approval boundaries.
 - I can diagnose delivery and runtime failure using correlated metrics, logs, and events.
 
+## Key terms and phrases
+
+**Microservices, artifacts, and runtimes**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Artifact digest](#1-microservices-artifacts-and-runtimes) | A content-based identifier used to promote the exact image or artifact that passed earlier checks. |
+| [Autoscaling](#1-microservices-artifacts-and-runtimes) | Adjusting capacity when a defined condition or schedule warrants it, subject to limits, capacity and application readiness. |
+| [Container image](#1-microservices-artifacts-and-runtimes) | A packaged application filesystem and metadata used to start container instances with a known software baseline. |
+| [Container Registry](#1-microservices-artifacts-and-runtimes) | An OCI repository service for versioned container images and manifests consumed by deployment environments. |
+| [Oracle Kubernetes Engine (OKE)](#1-microservices-artifacts-and-runtimes) | OCI’s managed Kubernetes service for running orchestrated container workloads on configured cluster capacity. |
+| [Microservice](#1-microservices-artifacts-and-runtimes) | A separately deployable service responsible for a defined capability and communicating over an explicit interface. |
+| [Artifact](#1-microservices-artifacts-and-runtimes) | A versioned deliverable produced from source, such as an image or deployment package, that can be tested and promoted. |
+| [Retry budget](#1-microservices-artifacts-and-runtimes) | A limit on repeated attempts to keep a temporary dependency failure from turning into runaway load. |
+
+**OCI DevOps continuous integration and delivery**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Build pipeline](#2-oci-devops-continuous-integration-and-delivery) | The sequence that turns a source revision into tested, identifiable artifacts. |
+| [Deployment pipeline](#2-oci-devops-continuous-integration-and-delivery) | The sequence that delivers a chosen artifact to an environment and checks whether it is ready to serve. |
+| [Function](#2-oci-devops-continuous-integration-and-delivery) | Code invoked through OCI Functions for a bounded task, with runtime capacity and execution managed by the service. |
+| [Deployment environment](#2-oci-devops-continuous-integration-and-delivery) | A defined target for a release, including runtime resources, configuration and permissions such as staging or production. |
+| [Build trigger](#2-oci-devops-continuous-integration-and-delivery) | A configured condition, such as a change in a source repository, that starts a build or delivery workflow. |
+| [Blue-green deployment](#2-oci-devops-continuous-integration-and-delivery) | Maintaining two deployment environments and switching traffic to the candidate after validation, with a controlled fallback. |
+| [Canary deployment](#2-oci-devops-continuous-integration-and-delivery) | Sending a limited portion of production traffic to a candidate release so its impact can be observed before wider rollout. |
+
+**Infrastructure as code**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Terraform plan](#3-infrastructure-as-code) | An account of proposed infrastructure changes based on configuration and observed state at planning time. |
+| [Drift detection](#3-infrastructure-as-code) | Comparing deployed resources with the expected infrastructure to identify changes introduced outside the delivery process. |
+| [IAM policy](#3-infrastructure-as-code) | An authorization statement identifying who may perform which class of operations on which resources within a specified scope and conditions. |
+| [Terraform provider](#3-infrastructure-as-code) | The component translating Terraform resource definitions into service API operations under its configuration and credentials. |
+| [State file](#3-infrastructure-as-code) | Terraform’s mapping between declared resource addresses and remote objects. Protect access because state affects future changes and can contain sensitive values. |
+
+**DevSecOps controls**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Workload identity](#4-devsecops-controls) | An identity belonging to an automated component, such as a runner or service, so it can receive narrowly scoped permissions. |
+| [Secret rotation](#4-devsecops-controls) | Replacing a credential and confirming that all consumers have adopted the replacement before retiring the old one. |
+| [Break-glass access](#4-devsecops-controls) | An exceptional, controlled access path for recovery when normal administrative access is unavailable, with auditing and review. |
+| [Vault](#4-devsecops-controls) | OCI’s service for centrally managing cryptographic keys and secrets under access policy and lifecycle controls. |
+
+**Measurement, instrumentation, and automation**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Lead time](#5-measurement-instrumentation-and-automation) | The elapsed time from a defined starting point in a change’s delivery path until it reaches its target environment. |
+| [Availability](#5-measurement-instrumentation-and-automation) | The ability of a service to remain usable for the intended requests over a specified measurement period. |
+| [Latency](#5-measurement-instrumentation-and-automation) | The time for a request or operation to complete, measured at a specified boundary from the selected start to finish. |
+| [Saturation](#5-measurement-instrumentation-and-automation) | The extent to which demand uses up a resource’s available capacity, often becoming visible as queues or increased latency. |
+| [Baseline](#5-measurement-instrumentation-and-automation) | An agreed reference configuration or historical measurement used to evaluate change in a comparable environment. |
+| [Metric](#5-measurement-instrumentation-and-automation) | A numeric measurement recorded over time, such as failed requests or queue depth, with defined units and dimensions. |
+| [Event rule](#5-measurement-instrumentation-and-automation) | A condition matching attributes of a resource event and routing matches to a permitted action. |
+| [Monitoring alarm](#5-measurement-instrumentation-and-automation) | A rule that evaluates a metric query over time and signals a state change when the configured condition is met. |
+| [Structured log](#5-measurement-instrumentation-and-automation) | A record with separately identifiable fields, enabling a search by request ID, service, status or other explicit attributes. |
+| [Idempotency](#5-measurement-instrumentation-and-automation) | Designing repeated delivery or repeated requests to yield one intended business effect instead of duplicating the change. |
+
+**Original readiness checks**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Readiness check](#original-readiness-checks) | A check of whether a deployed workload should receive traffic, including any dependencies essential to serve requests. |
+| [Deployment rollback](#answer-guide) | Restoring a previously working release or configuration after an unsuccessful change, with separate treatment for state already modified. |
+
 ## Places to learn
 
 This is a selective learning path, not a complete list of OCI DevOps resources.

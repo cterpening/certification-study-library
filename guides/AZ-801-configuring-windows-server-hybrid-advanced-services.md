@@ -13,6 +13,8 @@ upcoming_change_checked: 2026-10-28
 
 # AZ-801 Configuring Windows Server Hybrid Advanced Services Study Guide
 
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-03.md#az-801)
+
 > **RETIRED — verified October 28, 2026.** Microsoft explicitly confirms that AZ-801 retired September 30, 2026, at 5:00 PM Central Standard Time. Use [AZ-802](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802) for current exam preparation. This guide preserves historical objectives and useful technical foundations; it is not an available booking route. Earlier technical evidence gaps and unexecuted labs remain.
 
 > **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The full guide, all 115 detailed objectives, citations and learning examples were reviewed on September 27, 2026. This does not establish live lab execution or guarantee future currency. See the [deep-review findings](../docs/research/2026-09-27-az-801-deep-review.md) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-801-coverage-record). The [official AZ-801 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-801) is authoritative.
@@ -878,6 +880,8 @@ Azure Monitor metric alerts evaluate numeric platform or custom metrics. Log sea
 
 #### VM Insights
 
+**Practice check.** Historical monitoring note. Microsoft schedules VM Insights Map and its Dependency Agent to retire June 30, 2028. Identify process and connection visualizations that rely on that agent separately from the rest of VM monitoring. [VM Insights Map and Dependency Agent retirement guidance - Azure Monitor | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/vminsights-maps-retirement)
+
 VM Insights provides curated performance views for Azure VMs and Arc-enabled servers. Its performance monitoring uses AMA and is not affected by the retirement of the separate **VM Insights Map** experience and **Dependency Agent**. Microsoft says those two deprecated components retire and become unsupported after June 30, 2028; new OS/region support stopped June 30, 2025, portal onboarding stopped September 30, 2025, and Microsoft recommends offboarding rather than deploying them to new systems. If process or connection dependency data is required, evaluate a current replacement and preserve old tables only under the workspace retention policy. Enable the necessary agents/DCRs/workspace configuration, verify data collection, and use supported workbooks, platform metrics, and guest logs. Distinguish:
 
 - Azure resource is running;
@@ -1289,7 +1293,83 @@ You are ready to move from broad review to targeted remediation when you can do 
 
 ---
 
+## Key terms and phrases
+
+**Secure Windows Server on-premises and hybrid infrastructures (25–30%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Attack surface](#design-defense-in-depth) | The interfaces, code and privileged paths exposed to potential misuse, reduced through configuration and patching. |
+| [Application control](#windows-defender-application-control) | Rules governing which programs, scripts or drivers may run, based on the chosen trust policy. |
+| [Credential Guard](#credential-guard-and-smartscreen) | A Windows security feature that uses virtualization-based isolation to help protect credential secrets. |
+| [Virtualization-based security (VBS)](#credential-guard-and-smartscreen) | Using hypervisor isolation to protect sensitive operating-system components from the normal kernel environment. |
+| [Security baseline](#group-policy-and-osconfig-baselines) | An approved collection of configuration settings used to harden a system and assess drift. |
+| [Windows LAPS](#windows-laps) | Windows Local Administrator Password Solution manages and backs up local administrator account passwords under policy. |
+| [Protected Users](#protected-users-and-authentication-policy-silos) | An Active Directory group whose members receive specific restrictions on eligible authentication and credential behavior. |
+| [Read-only domain controller (RODC)](#rodc-account-security) | A domain controller with a read-only directory replica and configurable credential caching for sites with limited physical security. |
+| [Active Directory Domain Services (AD DS)](#harden-domain-controllers-and-administrative-groups) | The directory service providing domain identities, authentication, policy and directory replication for Windows domains. |
+| [Domain controller](#harden-domain-controllers-and-administrative-groups) | A server that hosts a domain directory replica and provides domain authentication and directory services. |
+| [Delegation of control](#delegate-without-transferring-the-directory) | Granting narrowly scoped directory administration rights for a specific task or organizational unit. |
+| [Defender for Identity](#defender-for-identity) | A Microsoft security service that analyzes identity signals from directory infrastructure to surface suspicious activity. |
+| [Data collection rule (DCR)](#ingest-windows-server-data-into-microsoft-sentinel) | An Azure Monitor definition that specifies which events to collect and where to send them. |
+| [Defender for Servers](#defender-for-cloud-and-defender-for-servers) | A Defender for Cloud workload-protection plan for eligible server workloads. |
+| [IPsec](#domain-isolation-and-connection-security-rules) | A suite of protocols used to protect network traffic, such as the traffic carried through a site-to-site VPN. |
+| [Network security group (NSG)](#azure-network-security-groups) | A set of prioritized inbound and outbound traffic rules applied to a subnet or network interface. |
+| [BitLocker recovery key](#bitlocker-and-key-recovery) | Recovery information used to unlock an encrypted volume when its normal protector is unavailable. |
+| [Recovery key escrow](#bitlocker-and-key-recovery) | Keeping authorized recovery information in a controlled location so protected volumes can be recovered when normal unlock fails. |
+| [Disk encryption set](#azure-managed-disk-encryption-choices) | An Azure resource linking supported managed disks with the identity and key used for customer-managed encryption. |
+
+**Implement and manage Windows Server high availability (15–20%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Failover cluster](#create-and-validate-a-failover-cluster) | A group of nodes coordinated to keep a clustered role available when a component fails. |
+| [Cluster node](#create-and-validate-a-failover-cluster) | One server participating in the cluster and its membership and workload ownership decisions. |
+| [Quorum](#understand-quorum) | The voting mechanism a failover cluster uses to decide which set of members can continue operating safely. |
+| [Witness](#understand-quorum) | A cloud, file-share or disk witness can supply an extra vote so one cluster partition can retain quorum after nodes lose contact. |
+| [Cluster network](#configure-cluster-networks-and-network-atc) | A network path configured for particular cluster communication or client-access responsibilities. |
+| [Clustered role](#configure-clustered-storage-and-workload-behavior) | An application or service managed as a failover unit with resources and dependencies. |
+| [Scale-Out File Server](#scale-out-file-server) | A clustered file-server role designed to serve supported application data through multiple nodes. |
+| [Storage Spaces Direct](#configure-and-operate-storage-spaces-direct) | Windows Server technology that pools locally attached drives across cluster nodes to create shared, resilient storage. |
+| [Storage pool](#configure-and-operate-storage-spaces-direct) | A collection of eligible disks combined to provide capacity for virtual disks with chosen resiliency. |
+| [Cluster-Aware Updating](#cluster-aware-updating) | An orchestrated process that moves clustered workloads and updates nodes in sequence. |
+| [Node drain](#cluster-aware-updating) | Moving clustered roles away from a node before planned maintenance so remaining nodes continue serving the workloads. |
+
+**Implement disaster recovery (10–15%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Recovery time objective (RTO)](#start-with-recoverability-not-job-success) | The target for how long a workload may remain unavailable after a disruption. |
+| [Recovery point objective (RPO)](#start-with-recoverability-not-job-success) | The target for how far back in time recovered data may be relative to the disruption. |
+| [Recovery vault](#choose-the-correct-azure-backup-mechanism) | A management boundary for supported protected items, policies and recovery points. |
+| [MARS agent](#back-up-files-and-folders-with-mars) | The Microsoft Azure Recovery Services agent used for supported file, folder and system-state backup to Azure. |
+| [MABS](#deploy-and-manage-mabs) | Microsoft Azure Backup Server protects supported workloads through local backup storage and integration with Azure Backup. |
+| [Azure Site Recovery](#implement-azure-site-recovery) | A replication and recovery service for orchestrating test and actual failovers of protected workloads. |
+| [Test failover](#implement-azure-site-recovery) | Starting an isolated recovery copy to validate a disaster-recovery plan without switching normal production traffic. |
+| [Failback](#implement-azure-site-recovery) | Returning workload operation from the recovery environment to the intended primary site after repair and validation. |
+| [Recovery plan](#use-recovery-plans) | An ordered set of failover steps coordinating workload groups, dependencies and manual actions. |
+| [Hyper-V Replica](#protect-vms-with-hyper-v-replica) | Asynchronous replication of a virtual machine to another host for recovery after an outage. |
+
+**Migrate servers and workloads (20–25%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Storage Migration Service](#migrate-storage-with-storage-migration-service) | Windows Server tooling that inventories source file servers, transfers data and can cut over server identity. |
+| [Cutover](#cut-over) | The migration stage when clients and operations switch to the destination and it becomes responsible for the service. |
+| [Azure Migrate](#migrate-servers-with-azure-migrate) | The Azure service used to discover, assess and migrate eligible server workloads and their dependencies. |
+| [Migration assessment](#assess-before-sizing) | An analysis of dependencies, compatibility and sizing used to choose a supported migration target. |
+
+**Monitor and troubleshoot Windows Server environments (15–20%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Performance Monitor](#use-performance-monitor-and-data-collector-sets) | A Windows tool for inspecting live or recorded counters. Compare a counter during the slowdown with its healthy baseline to test a particular performance hypothesis. |
+| [Data Collector Set (DCS)](#use-performance-monitor-and-data-collector-sets) | A reusable Windows monitoring configuration that collects selected counters, traces or configuration on a schedule. It can capture an intermittent spike even when an administrator is away. |
+| [Counter sampling interval](#use-performance-monitor-and-data-collector-sets) | The time between successive measurements. A workload spike lasting ten seconds can fall entirely between one-minute samples. |
+
 ## Places to learn
+
+**Suggested practice.** Draw the source and target of replication and identify a setting or observation needed to verify protection before discussing failover. About 25–45 minutes to identify source, target and verification steps without enabling replication (editorial estimate). [Tutorial: Set up disaster recovery for Azure VMs](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-tutorial-enable-replication)
 
 ### October 28 learning-resource check
 
@@ -1309,9 +1389,9 @@ Time estimates below describe content consumption, not total preparation. Add la
 | Resource | Access | Estimated time | Best use |
 |---|---|---:|---|
 | [Official AZ-801 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-801) | Free | 30–60 min to map; revisit weekly | Authoritative scope, weights, objective checklist, retirement status |
-| [AZ-801T00 self-directed learning and course](https://learn.microsoft.com/en-us/training/courses/az-801t00) | Self-directed modules free; instructor-led varies | Microsoft lists 4 instructor-led days; estimate 30–45 hours self-paced with exercises | Structured first pass across all five domains |
+| [AZ-801T00 self-directed learning and course](https://learn.microsoft.com/en-us/training/courses/az-801t00) | Archived course URL now leads to the training catalog | Former course length was four days | Use the AZ-802 route for current preparation |
 | [MicrosoftLearning AZ-801 labs](https://microsoftlearning.github.io/AZ-801-Configuring-Windows-Server-Hybrid-Advanced-Services/) | Public; infrastructure may cost | Estimate 12–20 hours for seven labs plus setup/cleanup | Guided implementation and troubleshooting practice |
-| [Microsoft Learn practice assessments](https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications) | Free; sign-in may be required | 1–2 hours per attempt plus remediation | Baseline and later diagnostic assessment; Microsoft lists AZ-801 as available |
+| [Microsoft Learn practice assessments](https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications) | Free; sign-in may be required | 1–2 hours per attempt plus remediation | Baseline and later diagnostic assessment; current AZ-801 practice access unverified |
 | [Exam Readiness Zone AZ-801 search](https://learn.microsoft.com/en-us/shows/exam-readiness-zone/?terms=AZ-801) | Free | Estimate 2–4 hours, depending on available sessions | Objective review; confirm recording date against current baseline |
 
 ### Courses, books, and practice providers

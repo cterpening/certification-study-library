@@ -389,6 +389,83 @@ Establish affected sites/users/time and voice SLA; inspect classification, QoS q
 - [ ] I can answer all original checks and complete the labs with diagrams, configuration, test evidence, and rollback.
 - [ ] I rechecked the live page, datasheet, handbook, Prisma SD-WAN/SASE release docs, tenant capabilities, and registration terms.
 
+## Key terms and phrases
+
+**Planning and design**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Encryption](#11-device-selection-criteria) | Reversibly transforming data with a key to keep the plaintext unavailable to parties lacking the appropriate decryption capability. |
+| [Packet](#11-device-selection-criteria) | A network-layer unit carrying a source and destination IP address. Routers use the destination and their forwarding tables to send it onward. |
+| [Instant-On Network (ION)](#11-device-selection-criteria) | The Prisma SD-WAN device or virtual instance that connects a site and participates in application-aware WAN forwarding. |
+| [Bandwidth plan](#12-bandwidth-plan) | An estimate of required path capacity by traffic class and site, including what must still work after a link failure. |
+| [Availability](#12-bandwidth-plan) | Timely and reliable access to a resource by authorized users. A running server may still be unavailable to the business if a required dependency fails. |
+| [Bandwidth](#12-bandwidth-plan) | The nominal data-carrying capacity of a link, usually expressed in bits per second. It does not by itself establish delay or delivered throughput. |
+| [Data center interconnect (DCI)](#15-data-centers-and-dci) | Connectivity between data centers that carries the required traffic and routing information. |
+| [Disaster recovery plan (DRP)](#15-data-centers-and-dci) | The procedures and resources for restoring technology and data after a major disruption, in an order that supports business priorities. |
+| [Traffic symmetry](#15-data-centers-and-dci) | Routing forward and return traffic through the inspection points required to maintain state for a connection. |
+| [GlobalProtect gateway](#16-branch-gateway-configuration) | The GlobalProtect service to which clients connect for access and through which configured tunnel and security policies can apply. |
+| [Retention](#17-security-requirements-and-configuration) | The period for which telemetry remains available for investigation. A search outside that period cannot establish inactivity. |
+| [Vulnerability](#17-security-requirements-and-configuration) | A weakness in a system or process that could permit harm. The associated risk depends on exposure, likelihood and impact. |
+| [High availability (HA)](#18-interconnectivity-and-ha) | A design that keeps a site operating through a device or path failure, with enough remaining capacity to serve required traffic. |
+| [Overlay](#18-interconnectivity-and-ha) | A logical network carried over another network, often using tunnels to create private paths or separate routing contexts. |
+| [Underlay](#18-interconnectivity-and-ha) | The physical or provider network delivering basic reachability between tunnel endpoints. An overlay outage may originate in this underlying path. |
+| [Network address translation (NAT)](#19-policy-design-and-management) | Rewriting source or destination addressing for a connection. A translation rule alone does not grant permission to pass traffic. |
+| [Remediation](#19-policy-design-and-management) | Action taken to remove or correct the cause of an incident after its immediate effects are contained. |
+
+**Deployment and configuration**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Prisma SD-WAN](#21-deploy-and-configure-prisma-sd-wan) | Palo Alto Networks WAN connectivity and application-aware path management for branch and data-center networks. |
+| [Software-defined WAN (SD-WAN)](#21-deploy-and-configure-prisma-sd-wan) | A way to apply policy across WAN links, selecting paths according to traffic needs and measured link conditions. |
+| [Subnet](#22-site-specific-settings) | A portion of an IP address space sharing a network prefix. Hosts use the prefix to distinguish local delivery from traffic requiring a router. |
+| [Configuration template](#23-configuration-templates) | Reusable site or device settings populated with site-specific values to make branch deployments consistent. |
+| [Idempotence](#23-configuration-templates) | Making an operation safe to repeat without accumulating unintended effects. A retried request to create one case should still yield one case. |
+| [Rollback](#23-configuration-templates) | Returning a change to a known acceptable state when results do not meet defined conditions. A valid rollback also accounts for data changed in the meantime. |
+| [Authentication](#24-tune-dynamic-and-static-routing) | Checking that a claimant controls an authenticator bound to the claimed identity. It precedes the separate decision about permitted actions. |
+| [Static route](#24-tune-dynamic-and-static-routing) | A route installed by configuration, specifying a prefix and next hop or interface. It changes only through configuration or an associated tracking mechanism. |
+| [Border Gateway Protocol (BGP)](#24-tune-dynamic-and-static-routing) | A routing protocol that exchanges reachability between peers and uses policy and path attributes to select routes. |
+| [Virtual routing and forwarding (VRF)](#25-implement-vrfs-for-segmentation) | Separate routing tables on the same infrastructure, allowing traffic for different network segments to take independent paths. |
+| [Policy enforcement point (PEP)](#25-implement-vrfs-for-segmentation) | The component that applies an access decision to the requested action or connection. |
+| [Segmentation](#25-implement-vrfs-for-segmentation) | Dividing resources into security boundaries and specifying the permitted communication between them. |
+
+**Operations and monitoring**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Alert](#32-controller-incidents-alerts-statistics-and-audit-logs) | A notification that an observed condition met a detection criterion. An analyst needs context before treating it as an incident. |
+| [Incident](#32-controller-incidents-alerts-statistics-and-audit-logs) | A case representing a security event or set of related events requiring coordinated investigation and response. |
+| [Runbook](#33-alerts-and-notifications) | Documented operational steps for a defined situation, with roles, expected observations and criteria for escalation or recovery. |
+| [WAN Clarity](#34-wan-clarity-reports) | Reporting that helps relate observed WAN performance and path choices to sites and applications. |
+| [Rate limiting](#35-network-monitoring-tools) | Restricting the number or rate of operations in a defined interval to protect capacity. A limit applied per identity behaves differently from one applied per IP address. |
+| [Syslog](#35-network-monitoring-tools) | A mechanism for forwarding timestamped event messages to a collector. Receipt of one message does not show that every expected device is reporting. |
+| [Secure access service edge (SASE)](#36-sase-related-events) | An architecture that brings wide-area connectivity and cloud-delivered security together for distributed users and sites. |
+
+**Unified SASE**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Prisma Access](#41-prisma-access-integration-and-security-policy) | A cloud-delivered security service that applies access and inspection policies for connected users and networks. |
+| [Service connection](#41-prisma-access-integration-and-security-policy) | In Prisma Access, a connection to enterprise network resources or private applications under the deployment’s routing and access design. |
+| [Autonomous Digital Experience Management (ADEM)](#42-adem-application-performance-monitoring) | Monitoring that measures user-to-application experience and helps locate performance problems along the path. |
+| [Digital experience monitoring](#42-adem-application-performance-monitoring) | Measurement of user-to-application experience used to distinguish endpoint, network and application contributions to a poor service result. |
+| [Telemetry](#42-adem-application-performance-monitoring) | Records of activity from endpoints, networks or other systems that investigators can correlate into a timeline. |
+| [Device-ID](#43-device-id-for-iot-connectivity) | Device classification and context used to make policy decisions about assets such as IoT endpoints. |
+| [Quarantine](#43-device-id-for-iot-connectivity) | Restricting the access or use of a device, file or message pending investigation. The quarantine boundary and release authority matter. |
+| [Cloud Identity Engine (CIE)](#44-cloud-identity-engine-integration) | A Palo Alto Networks service that supplies identity context for supported authentication and policy integrations. |
+| [User identification (User-ID)](#44-cloud-identity-engine-integration) | A way to associate network traffic with user and group identity for policy and reporting. |
+
+**Troubleshooting**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Domain Name System (DNS)](#51-connectivity-between-sites) | The Domain Name System, which resolves names to records such as IP addresses so clients can locate services. |
+| [Evidence preservation](#51-connectivity-between-sites) | Maintaining the integrity and provenance of information needed for investigation, including original timestamps, collection method and access history. |
+| [Next hop](#52-routing-and-forwarding) | The adjacent router or forwarding destination selected for the next stage of a packet’s path. |
+| [Jitter](#53-application-performance) | Variation in packet delay that can disrupt real-time applications even when average throughput looks adequate. |
+| [Throughput](#53-application-performance) | The rate at which data is successfully delivered over an interval. It can be lower than nominal link capacity because of overhead or congestion. |
+
 ## Places to learn
 
 This is a selective starting set, not a complete list and not a prescription to consume everything. Pick and choose the official documentation, structured training, demonstrations, and labs that close your gaps. Times are planning estimates unless the provider states a duration; access, licensing, versions, titles, and prices change.

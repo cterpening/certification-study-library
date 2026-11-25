@@ -7,17 +7,19 @@ generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: review-required
 last_verified: 2026-10-28
-upcoming_change_status: none-announced
-upcoming_change_checked: 2026-10-28
+upcoming_change_status: scheduled
+upcoming_change_checked: 2026-11-20
 ---
 
 # AB-210 Accelerating Sales Pipelines with AI in Dynamics 365 Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-01.md#ab-210) and the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-210-coverage-record). Known source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-210) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-01.md#ab-210)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-01.md#ab-210) and the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-210-coverage-record). Known source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-210) is authoritative.
 
 **Current baseline:** Official study guide last updated June 18, 2026; Microsoft publishes no separate skills-effective date.<br>
-**Upcoming blueprint change:** None announced, but the exam remains labeled **beta**; scope and product behavior may change before general availability.<br>
-**Lifecycle:** The [Dynamics 365 Sales AI Consultant Associate credential](https://learn.microsoft.com/en-us/credentials/certifications/d365-sales-ai-consultant-associate/) and 120-minute beta exam are active. As checked September 28, 2026, Microsoft lists English, Chinese (Simplified), French, German, Japanese, Portuguese (Brazil), and Spanish; verify languages during booking because the undated credential page can change. October 28 follow-up: the credential page still includes beta/delayed-results wording, but now advertises a Practice Assessment on AI Skills Navigator with sign-in. Availability and beta messaging are separate observations; no assessment was opened.<br>
+**Upcoming English outline — December 18, 2026.** Use the current objective map for preparation before that date. Check the language and version for your appointment. The [November source notes](../docs/research/2026-11-20-microsoft-refresh-group-01.md#ab-210) identify the announced edition and its domain weights.<br>
+**Lifecycle:** The [Dynamics 365 Sales AI Consultant Associate credential](https://learn.microsoft.com/en-us/credentials/certifications/d365-sales-ai-consultant-associate/) lists a 120-minute exam with scheduling and a delayed beta-scoring notice. General availability and score timing remain unconfirmed. As checked September 28, 2026, Microsoft lists English, Chinese (Simplified), French, German, Japanese, Portuguese (Brazil), and Spanish; verify languages during booking because the undated credential page can change. October 28 follow-up: the credential page still includes beta/delayed-results wording, but now advertises a Practice Assessment on AI Skills Navigator with sign-in. Availability and beta messaging are separate observations; no assessment was opened.<br>
 **Transition:** AB-210 replaced the retired MB-280 credential in [Microsoft partner skilling changes](https://learn.microsoft.com/en-us/partner-center/announcements/2026-july). This partner mapping does not make the objectives identical; use the AB-210 course and blueprint for its current scope.<br>
 **Official source:** [AB-210 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-210)
 
@@ -38,6 +40,8 @@ Build in a trial or nonproduction environment where licensing permits. Use synth
 > **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
 
 ### Living-guide watch — September 28, 2026
+
+**Practice check.** The published Sales Close Agent schedule stopped new instances on September 30 and set October 30, 2026 for removal of existing instances. For a new design, evaluate Sales Development agent and recheck its prerequisites. Rehearse legacy Close configuration only as a historical comparison. [Removed or deprecated features in Dynamics 365 Sales | Microsoft Learn](https://learn.microsoft.com/en-us/dynamics365/sales/deprecations-sales)
 
 The [current Sales agent roster](https://learn.microsoft.com/en-us/dynamics365/sales/ai-agent-overview) is useful for capability discovery but changes faster than the blueprint. Most importantly, Microsoft's [Sales deprecation ledger](https://learn.microsoft.com/en-us/dynamics365/sales/deprecations-sales) says new Sales Close Agent instances stop September 30, 2026 and existing instances are removed October 30, with Sales Development agent named as the migration path. Retain the Close Agent objectives for exam preparation. For a new implementation, evaluate the replacement and its separate prerequisites below; do not assume an automatic configuration or entitlement transfer.
 
@@ -225,7 +229,7 @@ The [current setup](https://learn.microsoft.com/en-us/dynamics365/sales/configur
 
 Assume **hypothetical measured** consumption of 12 credits per initial opportunity and 3 per refresh. An initial scope of 180 opportunities costs `180 × 12 = 2,160`; refreshing 60 opportunities four times adds `60 × 4 × 3 = 720`, for **2,880**. With 3,000 allocated and a 500-credit reserve, the usable budget is 2,500: the plan exceeds it by 380. Another agent consuming 250 raises combined usage to 3,130, exceeding total allocation by 130. Reduce scope/frequency or arrange capacity before expansion. These are sample assumptions, not Microsoft rates or a prediction of billing behavior.
 
-Configure the Sales Close Agent only after opportunity products/pricing, contact data, mailbox, policies and handoff are ready. Understand its actions rather than treating activity as success. Collaborating with the agent means reviewing status, accepting/correcting direction, handling exceptions and preserving accountable approval for commitments.
+As a historical blueprint exercise, map how product and pricing data, contacts, a mailbox, policies and handoff supported Sales Close Agent. For a new deployment evaluate the documented Sales Development agent path and its prerequisites.
 
 For the retiring product, learn the [manual setup](https://learn.microsoft.com/en-us/dynamics365/sales/configure-sales-close-agent) sequence: identity/mailbox, product details, target records, email delivery/content, knowledge, simulation, then activation. Its AI-assisted setup instructions are stale: the deprecation ledger removes that assistant after June 2026. The [processing description](https://learn.microsoft.com/en-us/dynamics365/sales/how-sales-close-agent-engage-mode-works) distinguishes an active/pending run, failure and completed engagement; a completed run is not independent proof of booked revenue. Inspect the record timeline and seller-escalation view. Follow-up behavior can close nonresponding deals as lost, so review it before authorizing a cohort. [Configuration edits](https://learn.microsoft.com/en-us/dynamics365/sales/manage-sales-close-agent) affect new processing and do not replay previously processed records.
 
@@ -319,7 +323,7 @@ Field sellers need mobile updates, Teams calls, quote approval and regional anal
 8. **Extension:** Design a flow, embedded Power Apps interaction and contextual Power BI report; add mobile/calling/SMS prerequisites and an ALM/security test plan.
 
 9. **Assignment and scoring:** Reproduce examples 2–3 offline, then in a permitted test environment inspect rule order, backlog behavior, seller schedules, excluded training records and delayed data arrival. Record actual eligibility rather than changing labels to meet a minimum.
-10. **Evaluation and transition:** Create the blog-derived assessment rubric, compare research-only handoffs with engage-mode gates, reconcile capacity/currency examples, and prepare a September/October Close Agent continuity plan. Keep the Opportunity custom-field contradiction as an unresolved acceptance item.
+10. **Evaluation and transition:** Create the blog-derived assessment rubric, compare research-only handoffs with engage-mode gates, reconcile capacity/currency examples, and review a continuity plan against the published September and October retirement milestones. Keep the Opportunity custom-field contradiction as an unresolved acceptance item.
 
 **Execution record:** This review checked the six synthetic examples and resource arithmetic offline. It did not configure a tenant, send email/SMS, place calls, train a model, run an agent or execute the ten infrastructure labs.
 
@@ -434,7 +438,80 @@ Field sellers need mobile updates, Teams calls, quote approval and regional anal
 - [ ] I can explain the Close Agent retirement and the unresolved Opportunity custom-field support boundary.
 - [ ] I use original practice and source review without seeking live exam content.
 
+## Key terms and phrases
+
+**Configure Dynamics 365 Sales core features for AI**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Server-side synchronization](#configure-mailboxes-and-collaboration) | The service that synchronizes supported email and activity data between Dynamics 365 and a configured mailbox. |
+| [Mailbox approval](#configure-mailboxes-and-collaboration) | Authorization for a mailbox to participate in supported synchronization and email processing under organizational policy. |
+| [Activity](#configure-mailboxes-and-collaboration) | A tracked interaction such as a phone call, email or appointment associated with a sales record. |
+| [Security role](#configure-security-and-seller-processes) | A defined set of privileges controlling allowed actions and access depth in Dataverse. |
+| [Business process flow](#configure-security-and-seller-processes) | A guided sequence of stages and steps that helps users perform a business process consistently. |
+| [Seller access](#configure-security-and-seller-processes) | The records and operations available to a seller through privileges, ownership, team membership and sharing. |
+| [Opportunity sales process](#configure-security-and-seller-processes) | The configured sequence of stages and data sellers use to move a qualified deal toward an outcome. |
+| [Price list](#build-the-product-and-pricing-foundation) | A collection of prices that defines what a seller can quote for products under a given pricing arrangement. |
+| [Product catalog](#build-the-product-and-pricing-foundation) | The maintained products, units and pricing information sellers use when preparing opportunities and quotes. |
+| [Unit group](#build-the-product-and-pricing-foundation) | A collection of related units and conversion quantities used when selling or pricing a product. |
+| [Discount list](#build-the-product-and-pricing-foundation) | A defined set of discounts that applies under specified quantity or pricing conditions. |
+| [Price list item](#build-the-product-and-pricing-foundation) | The entry that connects a product and unit to its pricing method within a particular price list. |
+| [Markup](#worked-example-1-markup-and-margin-are-different-prices) | The amount added to cost divided by cost. A product costing 80 and selling for 100 has 25 percent markup. |
+| [Gross margin](#worked-example-1-markup-and-margin-are-different-prices) | Revenue minus cost, expressed as a share of revenue when stated as a percentage. A sale at 100 with cost 80 has 20 percent margin. |
+
+**Optimize AI-driven sales**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Value baseline](#design-an-ai-first-sales-strategy) | A measurement of current performance against which a pilot's benefit and cost can be compared. |
+| [Grounding](#prepare-copilot-and-agents) | Using relevant information the user is permitted to access as evidence for a Copilot response. |
+| [Sequence](#configure-the-sales-accelerator) | A configured series of seller activities that guides follow-up with assigned leads or opportunities. |
+| [Segment](#configure-the-sales-accelerator) | A group of records meeting specified criteria, used to target sales work or assignment. |
+| [Work list](#configure-the-sales-accelerator) | A seller's prioritized list of assigned records and next actions in the Sales accelerator. |
+| [Assignment rule](#configure-the-sales-accelerator) | Conditions that assign matching sales records to eligible sellers or teams. |
+| [Sales accelerator](#configure-the-sales-accelerator) | The sales workspace and assignment capabilities that guide sellers through prioritized records and activities. |
+| [Seller capacity](#worked-example-2-capacity-and-rule-order) | The amount of additional work a seller can accept under the assignment configuration. |
+| [Predictive scoring](#configure-intelligence-and-insights) | A model-based estimate used to prioritize records according to their likelihood of a defined outcome. |
+| [Relationship analytics](#configure-intelligence-and-insights) | Signals from recorded interactions that help assess engagement and identify relationships needing attention. |
+| [Lead score](#configure-intelligence-and-insights) | An estimate used to rank eligible leads for attention, interpreted alongside customer evidence and model coverage. |
+
+**Qualify and prioritize leads by using AI**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Lead](#configure-the-lead-to-opportunity-experience) | A record of a prospective customer or buying interest awaiting qualification. |
+| [Opportunity](#configure-the-lead-to-opportunity-experience) | A potential sale tracked through its sales process with information such as expected value and close date. |
+| [Qualification](#configure-the-lead-to-opportunity-experience) | The decision that a lead has enough verified fit and interest to advance in the sales process. |
+| [Account](#configure-the-lead-to-opportunity-experience) | A business or organization record around which contacts, opportunities and activities can be organized. |
+| [Contact](#configure-the-lead-to-opportunity-experience) | A person record representing an individual connected to sales activity or a customer organization. |
+| [Eligible training record](#worked-example-3-enough-records-is-not-enough-eligible-records) | A historical record meeting the scoring model's conditions for inclusion, such as the required outcome and period. |
+| [Human handoff](#choose-the-sales-qualification-agent-mode) | Routing a lead and the agent's supporting evidence to the seller responsible for the next decision. |
+| [Handoff rate](#worked-example-4-handoff-measures-depend-on-mode) | The fraction of eligible leads passed to sellers under the defined operating mode and denominator. |
+
+**Develop deals by using intelligent opportunity research**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Sales pipeline](#optimize-opportunity-management) | The collection of open opportunities considered by stage, value and expected timing. |
+| [Forecast](#optimize-opportunity-management) | An estimate of future sales performance assembled from opportunity values, categories and time periods. |
+| [Opportunity stage](#optimize-opportunity-management) | A named point in the sales process used to track a deal's current position and remaining work. |
+| [Opportunity research](#distinguish-opportunity-agents) | Gathering evidence about a customer's situation and competitive context to support a seller's deal decisions. |
+| [Base currency](#worked-example-6-reconcile-currency-before-accepting-a-chart) | The organization's reporting currency used to compare amounts recorded in different transaction currencies. |
+| [Human oversight](#govern-agent-operations) | A named person's responsibility to review an agent's evidence and authorize or correct consequential sales actions. |
+| [Least privilege](#govern-agent-operations) | Giving each agent identity only the rights needed for its assigned work. |
+| [Audit trail](#govern-agent-operations) | A record connecting actions to actors, inputs, decisions and results so a reviewer can reconstruct the run. |
+| [Override](#govern-agent-operations) | A recorded human intervention changing an agent's recommendation or proposed action under the responsible owner's authority. |
+
+**Extend and enhance Sales**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Cloud flow](#extend-with-power-platform) | Automation that runs in the cloud in response to an event, a schedule or a manual trigger. |
+| [Connector](#extend-with-power-platform) | A packaged interface through which an app or flow can interact with a service. |
+
 ## Places to learn
+
+**Suggested practice.** Use the qualification module to write a sample handoff from automated lead research to a seller; identify which evidence warrants the handoff. About 20–40 minutes to read the selected sections and produce the suggested comparison or checklist (editorial estimate; full path duration was not verified). [Generate and qualify leads using AI in Dynamics 365 Sales](https://learn.microsoft.com/en-us/training/paths/generate-qualify-leads-ai-sales/)
 
 ### October 28 learning route and evidence task
 

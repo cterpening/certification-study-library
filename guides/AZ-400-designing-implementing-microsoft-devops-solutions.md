@@ -7,17 +7,19 @@ generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
 last_verified: 2026-10-28
-upcoming_change_status: none-announced
-upcoming_change_checked: 2026-10-28
+upcoming_change_status: retirement-announced
+upcoming_change_checked: 2026-11-20
 ---
 
 # AZ-400 Designing and Implementing Microsoft DevOps Solutions Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-03.md#az-400) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-400-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-400) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-03.md#az-400)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-03.md#az-400) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-400-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-400) is authoritative.
 
 **Current baseline:** Skills measured as of July 27, 2026<br>
 **Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
-**Certification lifecycle:** Active; no retirement or replacement is announced on the [official DevOps Engineer Expert credential page](https://learn.microsoft.com/en-us/credentials/certifications/devops-engineer/) as of September 28, 2026.<br>
+**Certification lifecycle.** AZ-400 and [DevOps Engineer Expert](https://learn.microsoft.com/en-us/credentials/certifications/devops-engineer/) retire February 1, 2027. Microsoft identifies AZ-401 as the successor route for the separate Agentic DevOps Engineer Expert award. Check its additional exam requirement. [November source notes](../docs/research/2026-11-20-microsoft-refresh-group-03.md#az-400).<br>
 **Credential prerequisite — checked October 28, 2026:** The [DevOps Engineer Expert profile](https://learn.microsoft.com/en-us/credentials/certifications/devops-engineer/) still accepts Azure Administrator Associate or Azure Developer Associate. [Azure Developer Associate and its renewal assessment are retired](https://learn.microsoft.com/en-us/credentials/certifications/azure-developer/), with July 31, 2026 recorded in the [retirement list](https://learn.microsoft.com/en-us/credentials/support/credential-retirement). New candidates can use the currently offered Azure Administrator Associate route; holders of an earlier Developer credential should verify its accepted status with Microsoft. Do not infer that an AI/cloud developer replacement is automatically an accepted prerequisite or that this retires AZ-400.
 **Official source:** [AZ-400 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-400)
 
@@ -365,6 +367,8 @@ Setting an Azure Pipelines [custom condition](https://learn.microsoft.com/en-us/
 Resource checks remain outside consuming YAML. In the current [approval/lock documentation](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/approvals?view=azure-devops), approvers are fixed when checks begin; a changed group/list is not dynamically substituted into that pending approval. An exclusive lock with `runLatest` differs from `sequential`: superseded waiting deployments versus every queued deployment in order. Choose deliberately for stateful migrations, and retain the identity/reason for any authorized check bypass.
 
 ### Worked YAML graph, tests and template boundary
+
+**Practice check.** For a pipeline that must block publication when tests fail or when the runner emits no results, make both outcomes explicit. PublishTestResults@2 has separate failTaskOnFailedTests and failTaskOnMissingResultsFile inputs and both default to false. [PublishTestResults@2 - Publish Test Results v2 task | Microsoft Learn](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/publish-test-results-v2?view=azure-pipelines)
 
 For a small GitHub-hosted .NET repository connected through an authorized Azure Pipelines GitHub connection, use branch/path PR and CI triggers appropriate to that source, choose an isolated agent pool and save the pipeline YAML in the repository. The following original **illustrative fragment** assumes tests already produce TRX and Cobertura files in the stated directories; it does not install an SDK, run a complete application build or deploy anything:
 
@@ -966,7 +970,92 @@ Use the promotion blog below as a design exercise. Replace its simulated validat
 
 ---
 
+## Key terms and phrases
+
+**End-to-end delivery model**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Work item](#separate-delivery-objects) | A tracked unit of planned work, such as a feature or defect, that can be linked to implementation and release evidence. |
+| [Build artifact](#separate-delivery-objects) | A versioned output of a build, such as an application package or container image. |
+
+**Processes and communications (10–15%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Traceability](#design-traceability-and-flow-of-work) | The links connecting a work item to the code change, build and deployment that delivered it. |
+| [Lead time for changes](#measure-outcomes-flow-and-reliability) | The elapsed time from committing a change to running it in production. A Monday 10:00 commit deployed Tuesday at 14:00 has a 28-hour lead time. |
+| [Deployment frequency](#measure-outcomes-flow-and-reliability) | How often a team delivers changes to production over a defined period. |
+| [Change failure rate](#measure-outcomes-flow-and-reliability) | The proportion of deployed changes that cause a service failure requiring remediation. |
+| [Recovery time](#measure-outcomes-flow-and-reliability) | The elapsed time needed to restore service after a failed change or incident. |
+| [Cycle time](#measure-outcomes-flow-and-reliability) | The elapsed time between defined start and finish states of a work item, used to assess delivery flow. |
+
+**Source control strategy (10–15%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Pull request policy](#choose-a-branch-and-pull-request-contract) | A rule that a proposed merge must satisfy, such as a required review or passing build. |
+| [Branch](#choose-a-branch-and-pull-request-contract) | A movable name for a line of development. Creating one lets you work from an existing commit. |
+| [Pull request](#choose-a-branch-and-pull-request-contract) | A proposal to merge changes from one branch into another, with a place to discuss and review the differences. |
+| [Merge conflict](#choose-a-branch-and-pull-request-contract) | A disagreement in changes that Git needs a person to resolve before completing an integration. |
+| [Branch policy](#choose-a-branch-and-pull-request-contract) | A repository rule that governs changes to a branch, such as requiring validation before merging. |
+| [Tag](#configure-repositories-permissions-and-tags) | A named reference used to mark a particular point in history, often a version being released. |
+| [Git LFS](#manage-large-repositories-and-files) | Git Large File Storage keeps a small pointer in Git while storing the large file contents separately. |
+| [Revert](#recover-or-remove-data-safely) | Create a new commit undoing the effect of an earlier commit, keeping the intervening history visible. |
+
+**Build and release pipelines (50–55%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Package feed](#41-package-and-dependency-strategy) | A repository that stores versioned packages for controlled publication and consumption. |
+| [Semantic versioning](#41-package-and-dependency-strategy) | A major.minor.patch convention communicating compatibility-breaking changes, compatible features and compatible fixes when the publisher follows that contract. |
+| [Upstream source](#41-package-and-dependency-strategy) | A package source made available through a feed so consumers can obtain selected dependencies through a controlled location. |
+| [Artifact promotion](#promotion-access-and-provenance-are-separate-controls) | Moving the same identified build output through release stages after the required checks. |
+| [Provenance](#promotion-access-and-provenance-are-separate-controls) | Evidence that associates an artifact with its source and the process that built it. |
+| [Immutable artifact](#promotion-access-and-provenance-are-separate-controls) | An identified build output that is promoted unchanged so tested and released content can be matched. |
+| [Quality gate](#42-testing-and-quality-gates) | A set of checks a change or artifact must pass before it advances to the next stage. |
+| [Unit test](#42-testing-and-quality-gates) | A test focused on behavior of a small component in isolation from broader system dependencies. |
+| [Integration test](#42-testing-and-quality-gates) | A test exercising the contract between components or systems together. |
+| [Code coverage](#42-testing-and-quality-gates) | A measure of which code a test suite exercised, separate from whether it asserted the required behavior. |
+| [Workflow](#43-select-and-design-pipeline-automation) | An automated process defined in a repository and started by an event, a schedule or a manual request. |
+| [Self-hosted agent](#hosted-versus-self-hosted-execution) | A build or deployment worker whose environment, updates and access are managed by the organization. |
+| [GitHub-hosted runner](#hosted-versus-self-hosted-execution) | A job execution environment provisioned and maintained by GitHub. |
+| [Pipeline stage](#44-author-reliable-yaml-pipelines) | A major grouping of pipeline jobs, often representing a build, test or deployment phase. |
+| [Step](#44-author-reliable-yaml-pipelines) | One unit within a job that runs a command or calls a reusable action. |
+| [Pipeline template](#44-author-reliable-yaml-pipelines) | A reusable YAML definition of stages, jobs or steps expanded into a consuming pipeline. |
+| [Dependency](#conditions-evaluation-time-and-resource-checks) | A declared relationship that requires an upstream stage or job to finish before a downstream one can run. |
+| [Blue-green deployment](#45-design-deployments-and-exposure) | Maintaining two environments and switching traffic from the current version to a prepared replacement. |
+| [Canary rollout](#45-design-deployments-and-exposure) | An initial release to a limited share of traffic so the new version can be measured before broader use. |
+| [Feature flag](#45-design-deployments-and-exposure) | A configuration switch that controls exposure of a feature independently of deploying its code. |
+| [Deployment ring](#45-design-deployments-and-exposure) | A defined audience or resource group through which a release advances in controlled stages. |
+| [Infrastructure as code (IaC)](#46-infrastructure-as-code-and-configuration-management) | Defining infrastructure in version-controlled files so environments can be deployed consistently. |
+| [Desired state](#46-infrastructure-as-code-and-configuration-management) | The intended system configuration declared for a tool to apply or reconcile. |
+| [Dependency cache](#cache-access-and-evidence-retention) | Rebuildable files kept under a lookup key to reduce setup time in later runs. |
+
+**Security and compliance plan (10–15%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Workload identity federation](#51-authentication-authorization-and-organizational-boundaries) | A trust relationship that lets a pipeline exchange identity evidence for short-lived access without storing a long-lived secret. |
+| [Key Vault](#52-protect-secrets-files-and-logs) | A managed service for controlling access to secrets, keys and certificates. |
+| [Secret scanning](#53-automate-security-and-compliance-scanning) | Detection of credential material in repository content or development workflows so its owners can respond. |
+| [Software composition analysis](#53-automate-security-and-compliance-scanning) | Analysis of third-party components and dependencies for known vulnerabilities or other supply-chain concerns. |
+| [Static application security testing (SAST)](#53-automate-security-and-compliance-scanning) | Analysis of source or compiled code for potential security weaknesses before or independently of running the deployed service. |
+
+**Instrumentation strategy (5–10%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Telemetry](#configure-monitoring-from-code-to-delivery) | Measurements and records emitted by a workload or delivery system for monitoring and diagnosis. |
+| [Trace](#configure-monitoring-from-code-to-delivery) | A linked record of the calls made for one request, useful for locating time or errors in retrieval, generation or tool use. |
+| [Correlation identifier](#configure-monitoring-from-code-to-delivery) | A shared identifier used to trace a request or deployment across records from different systems. |
+| [Service-level indicator (SLI)](#analyze-evidence) | An observed service metric, such as successful requests divided by all eligible requests. |
+| [Service-level objective (SLO)](#analyze-evidence) | A measurable target for an aspect of service quality, such as the percentage of requests completed within a threshold. |
+| [Error budget](#analyze-evidence) | The amount of failure or unavailability a service can tolerate while still meeting its SLO for a measurement period. |
+
 ## Places to learn
+
+**Suggested practice.** Choose one supported language and map the source repository, YAML definition, task and resulting build log. About 20–40 minutes for one language-specific example and a pipeline run review, excluding queue and environment setup (editorial estimate). [Create your first pipeline](https://learn.microsoft.com/en-us/azure/devops/pipelines/create-first-pipeline?view=azure-devops)
 
 This is **not a complete list**, and it is not a recommendation to consume everything. Pick the resources and formats that fit you, and use the official July 27, 2026 objectives as the coverage checklist. Estimated times include reasonable note-taking or practice where stated and should be rechecked before purchase. Older material can still teach durable concepts, but reconcile every product screen, feature, identity method and objective against current documentation.
 

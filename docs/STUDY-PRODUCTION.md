@@ -7,6 +7,11 @@ authored content into a study companion, recall cards, and editable SVG diagrams
 Podcast production consumes a particular study package and creates a two-host
 script, transcript, and parts that can be rendered through a speech service.
 
+The [study podcast library](../examples/podcasts/README.md) includes recordings of
+the two original pilots and four follow-up conversations about cloud reliability,
+hosting responsibilities, delayed event counts and relational joins. The index
+provides audio, measured durations and transcripts.
+
 The first example teaches three AZ-900 governance distinctions: role-based access
 control versus Policy, resource locks versus data protection, and tags versus access
 and cost allocation. It is selected-objective practice, not a replacement for the
@@ -14,8 +19,8 @@ complete [AZ-900 guide](../guides/AZ-900-microsoft-azure-fundamentals.md).
 
 Read the [example visual companion](../examples/study-packs/az-900-governance/study-guide.md)
 and [two-host transcript](../examples/podcasts/az-900-governance/part-01/transcript.md).
-The transcript is approximately nine minutes at the planning rate; no audio runtime
-has been measured. These are dated, reproducible examples. Rebuild from reviewed
+The script was originally estimated at nine minutes. These are dated, reproducible
+examples. Rebuild from reviewed
 inputs when their source binding becomes stale.
 
 The second pilot is [DP-900 data decisions](../examples/study-packs/dp-900-data-decisions/study-guide.md),
@@ -27,6 +32,63 @@ for signup and ready-to-upload source files for either pilot.
 Both processes retain **AI-generated draft; human review pending** status. Reading
 files, matching hashes, rendering diagrams, and synthesizing speech do not establish
 technical correctness. The official exam blueprint remains authoritative.
+
+## Add an inline guide diagram
+
+Use this workflow when a learner needs to **trace a relationship**. In the
+[AZ-900 example](../guides/diagrams/az-900/role-scope.svg), one role assignment
+branches into three questions a learner can ask when inspecting it.
+A side-by-side feature comparison often reads better as a table.
+Use the [visual study brief](templates/VISUAL-STUDY-BRIEF.md) when the task calls
+for a timeline, a scope map, or a separate practice sheet with a withheld answer.
+
+1. **Choose the question and evidence.** Pick one heading in the guide and one
+   objective from its accepted snapshot under `data/objective-snapshots/`. Open the
+   supporting source and check what each arrow will mean. Use the IDs from
+   `data/sources.json` registered for that exam. For the example, see *How Azure
+   RBAC works* and the AZ-900 identity and access objective. [RBAC overview](https://learn.microsoft.com/en-us/azure/role-based-access-control/overview) · [Official AZ-900 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900)
+2. **Describe the figure.** In your checkout, copy
+   `guides/diagrams/az-900/role-scope.json` to
+   `guides/diagrams/<lowercase-exam-code>/<topic>.json`. Use a short lowercase
+   filename with hyphens between words. Set `exam_code` to the catalog code and
+   fill in the exact `guide_section`, `objective`, and `source_ids`. Give the
+   figure a title. Each node has an ID and a visible label. Each edge names a
+   starting node, an ending node, and the relationship between them.
+3. **Build and inspect.** Run the first command below from the repository root.
+   Open the sibling SVG in a browser at the size a learner will see it. Follow
+   each arrow aloud and check that its direction, label, and destination express
+   the sourced claim. Check the equivalent text printed by the command as well.
+4. **Place it beside the explanation.** Paste the printed Markdown image on its
+   own line under the selected heading. Use the accompanying relationship text
+   and source links to write a natural caption, or integrate them into the
+   paragraph if it already explains the figure. For the example, a caption could
+   read “The principal identifies who gets access, the role defines the permissions,
+   and the scope identifies the resources they apply to.” Keep the full-size link
+   so phone readers can open and zoom the SVG. Check that the topic still makes
+   sense with images turned off.
+5. **Check and maintain.** Run the second command, then the normal
+   [contributor checks](../CONTRIBUTING.md#local-validation). Commit the JSON,
+   SVG, and guide edit together. Site preparation checks the diagrams embedded
+   in each guide and copies those SVGs to the published guide path. When a
+   source or explanation changes, revisit the arrows and caption and rerun both
+   commands. Record the source and actual review in the change description.
+   The automated check verifies the guide heading, objective text, source IDs,
+   and rendered SVG. Reviewers check what the arrows teach.
+
+Try both commands on the included AZ-900 example, then substitute your JSON path
+to repeat the process. Building a diagram gives you a local preview. Adding its
+image line to a guide makes it appear in that guide on GitHub and on the site.
+
+```powershell
+python scripts/build_guide_diagram.py guides/diagrams/az-900/role-scope.json
+python scripts/build_guide_diagram.py guides/diagrams/az-900/role-scope.json --check
+```
+
+For a reusable authoring request, fill in the three brackets below.
+
+> In [exam code], help the learner answer [question] under [guide heading].
+> Follow the inline guide diagram workflow. Check each relationship against the
+> registered sources, show the SVG preview and caption, and explain how to rebuild it.
 
 ## Study production
 
@@ -149,9 +211,11 @@ and can incur service charges. Repeat the plan/review/render steps for each part
 
 The initial speech adapter uses ElevenLabs Text to Dialogue. See the
 [service comparison and setup](../adapters/podcast-services.md) for account,
-voice, API, request-size, and cost considerations. No key is committed. Until a
-service account and voices are configured, the transcript is the deliverable;
-it is not represented as a completed podcast recording.
+voice, API, request-size, and cost considerations. The service renderer requires
+an account and two configured voices. The six MP3s in the podcast library were
+produced separately using local Supertonic 3 inference and its stock voices. Each
+episode folder includes a recording record that binds the MP3 to its script and
+transcript. [Narration provenance](../THIRD-PARTY-NOTICES.md#synthetic-narration-for-the-study-podcasts)
 
 After rendering, listen to every part. Check pronunciation, speaker continuity,
 omissions, truncation, spoken uncertainty, and scenario answers. Record that

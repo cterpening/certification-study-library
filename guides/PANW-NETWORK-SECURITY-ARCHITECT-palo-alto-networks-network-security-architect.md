@@ -358,6 +358,118 @@ Compare centralized and decentralized inspection across AWS/Azure/GCP/private cl
 - [ ] I can answer all original checks and complete architecture labs with current primary sources and dated assumptions.
 - [ ] I rechecked the live page, datasheet, handbook, all product/CSP support matrices, licenses, regulations and registration terms.
 
+## Key terms and phrases
+
+**Zero Trust enterprise**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Least privilege](#identity-posture-and-least-privilege) | Limiting permissions to the tasks, resources and duration an identity actually requires. |
+| [Policy enforcement point (PEP)](#identity-posture-and-least-privilege) | The component that applies an access decision to the requested action or connection. |
+| [Zero Trust](#identity-posture-and-least-privilege) | An access model that evaluates the identity, resource and context of a request. Location on an internal network alone grants no trust. |
+| [Device posture](#identity-posture-and-least-privilege) | Evidence of the current condition of an endpoint, such as running protection software or encryption status, used as input to an access decision. |
+| [Segmentation](#segmentation-and-application-access) | Dividing resources into security boundaries and specifying the permitted communication between them. |
+| [Application dependency](#segmentation-and-application-access) | Another application or protocol function needed for the intended application to operate, which may affect policy design. |
+| [Microsegmentation](#segmentation-and-application-access) | Restricting communication among individual workloads or small groups to limit unnecessary access. |
+| [Continuous verification](#continuous-inspection-and-monitoring) | Reassessing access as identity, device condition or other context changes during use. |
+| [Advanced WildFire](#continuous-inspection-and-monitoring) | A Palo Alto Networks malware analysis service that can examine submitted files and supply verdicts to participating controls. |
+| [Threat Prevention](#continuous-inspection-and-monitoring) | A security service or profile capability used to recognize and act on threat patterns in traffic visible to the firewall. |
+
+**AI security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Data residency](#product-roles-and-architecture) | Where security data is stored or processed, a design constraint distinct from how long the data is retained. |
+| [Runtime security](#product-roles-and-architecture) | Observation and protection of workloads while they execute, including the processes or connections they actually use. |
+| [URL Filtering](#product-roles-and-architecture) | Categorization and enforcement based on the web destination or available URL information, subject to policy and encryption visibility. |
+| [Data classification](#application-classification-and-data-controls) | Assigning sensitivity categories to information so access and inspection policy can reflect its handling requirements. |
+| [Retention](#application-classification-and-data-controls) | The period for which telemetry remains available for investigation. A search outside that period cannot establish inactivity. |
+
+**Centralized management and IAM**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Log collector](#panorama-and-log-collectors) | A component that receives security logs from managed devices and supports centralized retention and analysis. |
+| [Device group](#panorama-and-log-collectors) | In Panorama, a grouping through which policy rules and objects are shared or scoped to managed firewalls. |
+| [Panorama](#panorama-and-log-collectors) | Palo Alto Networks centralized management for supported firewalls. Managed policy, device settings and log collection have distinct roles. |
+| [Cloud Identity Engine (CIE)](#scm-strata-logging-service-and-cie) | A Palo Alto Networks service that supplies identity context for supported authentication and policy integrations. |
+| [Strata Cloud Manager (SCM)](#scm-strata-logging-service-and-cie) | A cloud management platform for supported network security deployments, including configuration, monitoring and policy administration. |
+| [Strata Logging Service](#scm-strata-logging-service-and-cie) | A cloud service for storing and making security logs available to authorized management and investigation tools. |
+| [User identification (User-ID)](#scm-strata-logging-service-and-cie) | A way to associate network traffic with user and group identity for policy and reporting. |
+
+**SSE private application access**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Forward proxy](#regionalglobal-design-and-traffic-ramps) | An intermediary acting on behalf of a client for outbound connections, often to apply access policy or inspection. |
+| [Remote network](#regionalglobal-design-and-traffic-ramps) | A branch or site connected to Prisma Access so site traffic can use its security services. |
+| [Private application access](#private-application-methods) | Controlled connectivity to a specified enterprise application through a supported access path. |
+| [Service connection](#private-application-methods) | Connectivity between Prisma Access and an enterprise network, commonly to reach private services or applications. |
+| [Prisma Browser](#private-application-methods) | An enterprise-managed browser that applies policy within browser sessions, including access from supported unmanaged devices. |
+| [Subnet](#private-application-methods) | A portion of an IP address space sharing a network prefix. Hosts use the prefix to distinguish local delivery from traffic requiring a router. |
+
+**Mobile user security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Authentication](#5-mobile-user-security-7) | Checking that a claimant controls an authenticator bound to the claimed identity. It precedes the separate decision about permitted actions. |
+| [GlobalProtect](#5-mobile-user-security-7) | Palo Alto Networks endpoint connectivity and access software and services, with portals providing configuration and gateways handling access. |
+| [Mobile user](#5-mobile-user-security-7) | A user who connects to Prisma Access from an endpoint for policy-controlled access independently of a branch connection. |
+
+**Modernizing branches**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Branch local breakout](#6-modernizing-branches-11) | Sending selected branch traffic directly to the internet or cloud security service instead of first traversing a central data center. |
+| [Prisma Access](#6-modernizing-branches-11) | A cloud-delivered security service that applies access and inspection policies for connected users and networks. |
+| [Prisma SD-WAN](#6-modernizing-branches-11) | Palo Alto Networks WAN connectivity and application-aware path management for branch and data-center networks. |
+| [Telemetry](#6-modernizing-branches-11) | Records of activity from endpoints, networks or other systems that investigators can correlate into a timeline. |
+
+**Data security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Data source](#7-data-security-7) | A system supplying records to the analysis platform. Identify the expected event kinds and population before relying on a quiet dashboard. |
+| [Incident](#7-data-security-7) | A case that groups related alerts and evidence so an analyst can assess scope and coordinate a response. |
+| [Software as a service (SaaS)](#7-data-security-7) | An application operated by a provider and consumed as a service. The customer still governs tenant settings, access and use of its data. |
+
+**Securing IoT environments**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Device profiling](#8-securing-iot-environments-11) | Identifying device type and characteristics from available observations to support risk assessment and policy for IoT assets. |
+| [Device identification (Device-ID)](#8-securing-iot-environments-11) | Identification and classification of devices to supply context for policy, especially where an IoT device has no interactive user. |
+
+**Public cloud**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Traffic symmetry](#common-design) | Routing forward and return traffic through the inspection points required to maintain state for a connection. |
+| [Infrastructure as code (IaC)](#common-design) | Expressing infrastructure configuration in versionable files so changes can be reviewed, reproduced and applied through automation. |
+| [Shared responsibility](#common-design) | The division of security tasks between a cloud customer and provider. The service model determines who operates each layer. |
+| [Vulnerability](#common-design) | A weakness in a system or process that could permit harm. The associated risk depends on exposure, likelihood and impact. |
+| [Autoscaling](#csp-specific-patterns-and-product-choice) | Adjusting deployed capacity according to a policy and observed demand, such as adding instances when a sustained load threshold is met. |
+| [Load balancer](#csp-specific-patterns-and-product-choice) | A component that sends eligible requests or connections to selected backends using health and distribution policy. |
+| [Next-generation firewall (NGFW)](#csp-specific-patterns-and-product-choice) | A firewall that uses application, user and threat information as well as network attributes to enforce policy. |
+
+**Private cloud**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Latency](#scope-placement-and-capacity) | Elapsed time for data or a request to travel a defined path. Specify whether the measure is one-way delay or round-trip time. |
+| [Throughput](#scope-placement-and-capacity) | The rate at which data is successfully delivered over an interval. It can be lower than nominal link capacity because of overhead or congestion. |
+| [TLS decryption](#scope-placement-and-capacity) | Opening an encrypted session for permitted inspection, subject to certificate trust and policy. |
+| [Hypervisor](#hypervisors-and-acceleration) | The layer that supplies and isolates virtual hardware for guest operating systems, allowing multiple virtual machines to share a host. |
+| [High availability (HA)](#decryption-ha-routing-and-management) | A design that keeps a site operating through a device or path failure, with enough remaining capacity to serve required traffic. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Private cloud](#global-manufacturer) | Cloud infrastructure reserved for one organization. It can be operated internally or by a third party. |
+| [Exit strategy](#multicloud-merger) | A way to leave or replace a provider while preserving required data, services, access revocation and evidence of disposal. |
+| [Multicloud](#multicloud-merger) | Use of services from multiple cloud providers. Common objectives can require different identities, APIs or controls in each provider. |
+
 ## Places to learn
 
 This is a selective starting set, not a complete list and not a prescription to consume everything. Pick official reference architectures, specialist refreshers, primary provider/framework sources and hands-on design reviews that close your gaps. Times are planning estimates unless a provider publishes duration; architecture, regulations, features, access and pricing change.

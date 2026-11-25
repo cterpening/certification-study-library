@@ -474,6 +474,87 @@ Older Core 1 material can teach durable concepts, but compare it line by line wi
 
 > **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
 
+## Key terms and phrases
+
+**Mobile devices**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Field-replaceable part](#laptop-and-mobile-hardware) | A component designed to be replaced during service, such as a supported laptop battery or memory module. The exact model determines compatibility. |
+| [Firmware](#laptop-and-mobile-hardware) | Software stored in a device that controls its low-level operation. Updates must match the hardware and preserve a recovery path. |
+| [Lithium-ion battery](#laptop-and-mobile-hardware) | A rechargeable battery chemistry common in mobile devices. Swelling or damage requires stopping use and following the manufacturer’s handling guidance. |
+| [Random-access memory (RAM)](#laptop-and-mobile-hardware) | Working memory used by running programs. Its contents normally disappear when the computer loses power. |
+| [Docking station](#accessories-networks-and-synchronization) | A device that connects a laptop to external displays, peripherals or a network through a host connection. |
+| [Authorization](#accessories-networks-and-synchronization) | Deciding which actions an authenticated identity is permitted to take. |
+| [Least privilege](#accessories-networks-and-synchronization) | Assigning only the permissions needed for the user’s task, such as using a standard account for everyday work. |
+| [Synchronization](#accessories-networks-and-synchronization) | Propagation of changes among copies of data. A deletion may propagate too, which makes independent recovery copies important. |
+| [USB Power Delivery](#accessories-networks-and-synchronization) | A protocol for negotiating supported power delivery over a compatible USB connection. The charger, cable and device must all support the required arrangement. |
+
+**Networking**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Latency](#protocols-ports-and-services) | The time data takes to travel between two points. A high-capacity link can still have a long delay. |
+| [Port number](#protocols-ports-and-services) | A transport-layer identifier used to distinguish application endpoints on a host. |
+| [Transmission Control Protocol (TCP)](#protocols-ports-and-services) | A connection-oriented transport that provides an ordered byte stream and retransmits missing data while the connection can be maintained. |
+| [DNS record](#dns-dhcp-and-host-services) | An entry mapping a name to information such as an address. A DNS problem can break name-based access even when IP routing works. |
+| [DHCP lease](#dns-dhcp-and-host-services) | A temporary assignment of an IP address and associated settings to a client. |
+| [Authentication](#dns-dhcp-and-host-services) | Verifying an identity before deciding which resources that identity may access. |
+| [Domain Name System (DNS)](#dns-dhcp-and-host-services) | The Domain Name System, which resolves names to records such as the addresses a client can use. |
+| [Filesystem permissions](#dns-dhcp-and-host-services) | Rules determining which identities may read, write, execute or traverse an object, alongside any applicable ACLs and mandatory security policy. |
+| [Broadcast domain](#devices-media-and-configuration) | The set of interfaces that receive a Layer 2 broadcast. A VLAN divides a switched network into separate broadcast domains. |
+| [Default gateway](#devices-media-and-configuration) | The next-hop router a host uses for destinations outside its directly connected network when no more specific route applies. |
+| [Ethernet](#devices-media-and-configuration) | A family of link-layer technologies that carries frames identified by source and destination MAC addresses on a local network. |
+| [Switch](#devices-media-and-configuration) | A device that normally forwards Ethernet frames within a Layer 2 network based on destination MAC addresses. |
+| [Bit](#original-ipv4-and-dhcp-planning-example) | A single binary digit, 0 or 1. Network transmission rates are commonly measured in bits per second. |
+| [Dynamic Host Configuration Protocol (DHCP)](#original-ipv4-and-dhcp-planning-example) | The protocol clients use to obtain settings such as an IP address, gateway and DNS servers, typically for a bounded lease. |
+| [Link-local address](#original-ipv4-and-dhcp-planning-example) | An address meant for communication on the local link. IPv6 routers do not forward packets carrying link-local addresses to another link. |
+| [Channel width](#wi-fi-soho-iot-and-tools) | The amount of radio spectrum used by a wireless channel. Wider channels can increase capacity while reducing room for neighboring channels. |
+| [Management plane](#wi-fi-soho-iot-and-tools) | The interface and services through which administrators configure and monitor devices. Reachability here does not prove that user traffic is working. |
+| [Throughput](#wi-fi-soho-iot-and-tools) | The rate at which data is successfully delivered over an interval. It can be lower than nominal link capacity because of overhead or congestion. |
+| [Wi-Fi](#wi-fi-soho-iot-and-tools) | Wireless local networking under the IEEE 802.11 family. Successful association, IP configuration and application access are distinct checks. |
+
+**Hardware**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Native resolution](#display-components-and-measurable-attributes) | The physical pixel dimensions of a display panel. Other input resolutions require scaling. |
+| [Frame rate](#display-components-and-measurable-attributes) | How many distinct images a source produces per second. A game rendering 60 frames per second can supply 60 new images each second even on a display that refreshes more often. |
+| [In-plane switching (IPS)](#display-components-and-measurable-attributes) | An LCD panel technology that rotates liquid crystals in the plane of the display. Its wide viewing angles help when several people view the same screen. |
+| [Refresh rate](#display-components-and-measurable-attributes) | The number of display updates per second, expressed in hertz. It is separate from the number of pixels in the panel. |
+| [Motherboard](#compatibility-before-installation) | The main circuit board connecting the processor, memory, expansion interfaces and other system components. |
+| [Operating system (OS)](#compatibility-before-installation) | Software that manages a computer’s resources and provides common services and isolation for applications. |
+| [Secure Boot](#compatibility-before-installation) | A boot-chain feature that verifies trusted signatures before loading selected components, subject to the platform’s enrolled keys and policy. |
+| [Solid-state drive (SSD)](#cpu-memory-storage-power-and-cooling) | Persistent storage that uses flash memory instead of spinning platters. Its connector and protocol determine compatibility. |
+| [Central processing unit (CPU)](#cpu-memory-storage-power-and-cooling) | The component that executes program instructions. Core count, architecture, thermal limits and memory access can affect observed performance. |
+| [Redundant array of independent disks (RAID)](#cpu-memory-storage-power-and-cooling) | Combining disks for a chosen balance of redundancy, capacity and performance. RAID does not preserve independent historical copies of deleted data. |
+| [Uninterruptible power supply (UPS)](#cpu-memory-storage-power-and-cooling) | A device that supplies temporary power during an input outage so systems can continue briefly or shut down cleanly. |
+| [Serial ATA (SATA)](#cpu-memory-storage-power-and-cooling) | Serial ATA, an interface and protocol family for storage devices. Some M.2 drives use SATA while others use PCIe and NVMe. |
+| [Non-Volatile Memory Express (NVMe)](#cpu-memory-storage-power-and-cooling) | Non-Volatile Memory Express, a protocol designed for nonvolatile storage, commonly carried over PCI Express in personal computers. |
+| [M.2](#cpu-memory-storage-power-and-cooling) | A compact expansion form factor. The keying, length, supported interface and protocol all affect whether a drive works in a slot. |
+| [Error-correcting memory (ECC)](#cpu-memory-storage-power-and-cooling) | Memory capable of detecting and correcting supported classes of bit errors when the rest of the system supports ECC. |
+| [Inkjet](#cables-peripherals-and-specialized-systems) | A printing technology that deposits small drops of liquid ink. Printhead condition and media differ from toner-based printer concerns. |
+| [Optical fiber](#cables-peripherals-and-specialized-systems) | Media that carries light between transceivers. Fiber type, connector, transceiver compatibility and cleanliness can affect link operation. |
+| [Peripheral](#cables-peripherals-and-specialized-systems) | A device adding input, output, storage or other functions to a computer, such as a keyboard, webcam or printer. |
+
+**Virtualization and cloud computing**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Hypervisor](#4-virtualization-and-cloud-computing-11) | The software layer that distributes host hardware resources among virtual machines. |
+| [Backup](#4-virtualization-and-cloud-computing-11) | A retained copy made for recovery after loss or corruption. Its usefulness depends on successful restoration under the intended conditions. |
+| [Network address translation (NAT)](#4-virtualization-and-cloud-computing-11) | Rewriting source or destination addressing as traffic crosses a boundary. The translation and the permission to pass traffic are distinct decisions. |
+| [Shared responsibility](#4-virtualization-and-cloud-computing-11) | The allocation of security duties between a provider and a customer for a particular service. |
+
+**Hardware and network troubleshooting**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Power-on self-test (POST)](#symptom-to-layer-reasoning) | Firmware checks essential hardware at startup. If the machine fails before the operating system begins to load, its diagnostic LEDs or beep pattern can help narrow the fault. |
+| [Display artifacts](#symptom-to-layer-reasoning) | Unintended patterns, lines or distorted pixels on a display. Compare a known-good monitor and cable to help isolate a fault in the display path from one in graphics hardware. |
+| [Print queue](#mobile-printer-and-network-failures) | The list of jobs waiting to be processed by the printing system. A stalled queue and a paper-path fault require different checks. |
+| [Fuser](#mobile-printer-and-network-failures) | The part of a laser printer that uses heat and pressure to bond toner to paper. Toner rubbing off a finished page points to a different stage of printing than a job stuck in the queue. |
+
 ## Places to learn
 
 This is not a complete list and is not meant to be consumed in full. Choose one current V15 path, spend comparable time on a safe hardware/network bench, and use explanation-led practice only to target weak domains.

@@ -13,7 +13,9 @@ upcoming_change_checked: 2026-10-28
 
 # MO-110 Microsoft Word Associate (Microsoft 365 Apps) Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-05.md#mo-110) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mo-110-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/mos-word-associate-m365-apps/) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-06.md#mo-110)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-05.md#mo-110) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mo-110-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/mos-word-associate-m365-apps/) is authoritative.
 
 **Assessment contract:** 50-minute proctored practical assessment. Microsoft recommends about 150 hours of instruction and hands-on use; that is preparation guidance, not a prerequisite.<br>
 **Current scope:** documents; text, paragraphs, and sections; tables and lists; references; graphics; collaboration.<br>
@@ -74,6 +76,8 @@ When inserting a special character, use the symbol dialog rather than a look-ali
 Columns flow within a section. A column break moves subsequent text to the next column; a page break moves it to a new page without creating independent section settings. Place section breaks before and after a landscape insert when the following pages must return to portrait. Check each section's header/footer linkage separately before editing its contents.
 
 ## 3. Tables and lists
+
+**Practice check.** For a long table, select the header rows including the first row and enable repetition. Verify the result across an automatic page break in Print Layout. A manual page break inside the table prevents the repeated header at that break. [Repeat table header on subsequent pages | Microsoft Support](https://support.microsoft.com/en-us/word/repeat-table-header-on-subsequent-pages) · [Update a table of contents | Microsoft Support](https://support.microsoft.com/en-us/word/update-a-table-of-contents)
 
 Create tables from scratch or delimited text; insert/delete rows and columns; merge/split cells; set alignment, margins, height, width, AutoFit, borders, shading, and repeating header rows. Sorting a table depends on the correct header and data type. Converting between text and a table depends on a delimiter that does not also occur inside the data.
 
@@ -175,7 +179,77 @@ Use synthetic text and local practice copies. These are proposed desktop exercis
 - I can deliver both an editable collaboration copy and a clean final copy.
 - I can finish a mixed task set inside 50 minutes with time to inspect the result.
 
+## Key terms and phrases
+
+**Manage documents**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Document Inspector](#1-manage-documents) | Word's tool for finding hidden content and document properties that may need removal before sharing a copy. |
+| [Navigation pane](#1-manage-documents) | A panel for finding text or moving to headings and pages within a document. |
+| [Document property](#1-manage-documents) | Metadata such as title or author that can accompany the file when it is shared. |
+| [Page break](#1-manage-documents) | An instruction to begin the following content on a new page while keeping the same section settings. |
+| [Header](#1-manage-documents) | Content in the top margin that can repeat across pages of a section. |
+| [Footer](#1-manage-documents) | Content in the bottom margin, often a page number or document identifier. |
+| [Orientation](#1-manage-documents) | The page direction, such as portrait for tall pages or landscape for wide tables. |
+
+**Text, paragraphs, and sections**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Paragraph style](#2-text-paragraphs-and-sections) | A named set of formatting choices applied together to a paragraph, such as a heading's type and spacing. |
+| [Section break](#2-text-paragraphs-and-sections) | A boundary that lets part of a document have its own layout settings, such as orientation or columns. |
+| [Direct formatting](#2-text-paragraphs-and-sections) | Formatting applied to selected characters or paragraphs independently of their named style. |
+| [Hanging indent](#2-text-paragraphs-and-sections) | Paragraph formatting that keeps the first line farther left than the following lines, as in a reference list. |
+| [Tab stop](#2-text-paragraphs-and-sections) | A defined horizontal position to which text moves when a tab is inserted. |
+| [Keep with next](#2-text-paragraphs-and-sections) | A paragraph setting that keeps a heading on the same page as the paragraph following it. |
+| [Keep lines together](#2-text-paragraphs-and-sections) | A setting that prevents the lines of one paragraph from splitting across pages. |
+| [Widow/orphan control](#2-text-paragraphs-and-sections) | A pagination setting that helps prevent a single line of a paragraph being stranded on a page. |
+
+**Tables and lists**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Multilevel list](#3-tables-and-lists) | A list with nested levels and numbering or bullets that express a hierarchy. |
+| [List level](#3-tables-and-lists) | The position of an item in a list hierarchy, determining its indentation and associated numbering or bullet. |
+| [Header row](#worked-build-a-table-with-a-predictable-shape) | A table row that identifies column contents and can be set to repeat on later pages. |
+| [Merge cells](#worked-build-a-table-with-a-predictable-shape) | Combine adjacent table cells into one cell, often to create a spanning heading. |
+| [Split cells](#worked-build-a-table-with-a-predictable-shape) | Divide a table cell into a chosen number of rows or columns. |
+
+**References**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Footnote](#4-references) | A numbered or marked note linked to a location in the text and usually displayed at the bottom of the page. |
+| [Table of contents](#4-references) | A navigable list generated from marked headings or entries that can be updated after edits. |
+| [Endnote](#4-references) | A numbered note collected at the end of a section or document. |
+| [Bookmark](#4-references) | A named location or selection that other links or references can target. |
+| [Cross-reference](#4-references) | A field that points to another document element, such as a heading number, and can be updated after edits. |
+| [Hyperlink](#4-references) | Clickable text or an object that opens a destination such as a web page or bookmarked location. |
+
+**Graphic elements**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Inline picture](#5-graphic-elements) | An image positioned as a character within its paragraph, so it moves with the surrounding text. |
+| [Text wrapping](#5-graphic-elements) | The rule that determines how text flows around a floating picture or other object. |
+| [Object anchor](#5-graphic-elements) | The association between a floating object and the paragraph that controls its position in the text flow. |
+| [Alt text](#5-graphic-elements) | A written description conveying the meaning of an informative graphic to readers using assistive technology. |
+| [Crop](#5-graphic-elements) | Hide parts of an image outside a chosen frame while retaining the proportions of the visible subject. |
+
+**Collaboration**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Track Changes](#6-collaboration) | Word's revision feature that marks proposed edits so a reviewer can accept or reject them. |
+| [Comment](#6-collaboration) | A discussion attached to a location in the document that reviewers can reply to or resolve. |
+| [Accept change](#6-collaboration) | Incorporate a tracked edit into the document and remove that edit's revision mark. |
+| [Compare documents](#6-collaboration) | Produce a view of the differences between two versions of a document. |
+| [Combine revisions](#6-collaboration) | Bring tracked edits from separate reviewed copies together for reconciliation. |
+
 ## Places to learn
+
+**Suggested practice.** Rename a heading and add a page break to a sample document; compare both update choices against the same automatic table of contents. About 15–25 minutes to read the article and compare two revisions in a short document (editorial estimate). [Update a table of contents](https://support.microsoft.com/en-us/word/update-a-table-of-contents)
 
 This is a selective learning path, not a complete list of Word resources or a requirement to consume every item.
 

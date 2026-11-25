@@ -423,6 +423,89 @@ Use disposable infrastructure and only systems you own or are authorized to chan
 45. **Does RWO enforce exactly one Pod?** No; it is a single-node mode. Supported RWOP provides the single-Pod constraint.
 46. **What did the offline rendering checks establish?** Client generation, transformations, reference rewriting and selected failures; no server admission, running cluster or traffic behavior.
 
+## Key terms and phrases
+
+**Cluster architecture, installation and configuration**
+
+| Term or phrase | Meaning |
+|---|---|
+| [API server](#architecture-interfaces-and-api-resources) | The control-plane component that accepts Kubernetes API requests and coordinates access to cluster state. |
+| [Container Network Interface (CNI)](#architecture-interfaces-and-api-resources) | An interface used by Kubernetes networking implementations to provide Pod connectivity. Features such as NetworkPolicy enforcement depend on the chosen implementation. |
+| [Container runtime](#architecture-interfaces-and-api-resources) | Software that creates and runs containers using the image and isolation settings supplied by the platform. |
+| [Container Runtime Interface (CRI)](#architecture-interfaces-and-api-resources) | The interface through which the kubelet communicates with a supported container runtime to manage containers and Pod sandboxes. |
+| [Container Storage Interface (CSI)](#architecture-interfaces-and-api-resources) | The interface through which storage drivers provide supported operations such as provisioning and attaching volumes to Kubernetes workloads. |
+| [kubelet](#architecture-interfaces-and-api-resources) | The node agent that works with the container runtime to run and monitor Pods assigned to that node. |
+| [RoleBinding](#rbac-and-administrative-access) | A resource that grants the permissions of a Role or ClusterRole to subjects within a namespace. |
+| [ClusterRole](#rbac-and-administrative-access) | A non-namespaced definition of Kubernetes API permissions. Its binding determines where the permissions apply. |
+| [ClusterRoleBinding](#rbac-and-administrative-access) | An association granting a ClusterRole’s permissions to subjects across the cluster, so scope should be checked carefully. |
+| [Namespace](#rbac-and-administrative-access) | A Kubernetes scope for the names of many resources and for controls such as Roles and ResourceQuotas. A namespace alone does not isolate all traffic. |
+| [Role-based access control (RBAC)](#rbac-and-administrative-access) | Assigning permissions to roles and assigning identities to those roles. An inappropriate role assignment can grant every permission the role carries. |
+| [Failure domain](#prepare-and-create-kubeadm-clusters) | A set of components that can fail together, such as workloads sharing a physical host, power source or region. |
+| [Load balancer](#prepare-and-create-kubeadm-clusters) | A component that sends eligible requests or connections to selected backends using health and distribution policy. |
+| [etcd snapshot](#lifecycle-backup-and-upgrade) | A saved copy of the key-value store holding cluster state, used in control-plane recovery. |
+| [etcd](#lifecycle-backup-and-upgrade) | The distributed key-value store used for Kubernetes control-plane state. Recovering that state requires an appropriate snapshot and recovery procedure. |
+| [DaemonSet](#lifecycle-backup-and-upgrade) | A controller that maintains a copy of a Pod on each eligible node, commonly for node-level agents or networking. |
+| [PodDisruptionBudget](#lifecycle-backup-and-upgrade) | A policy limiting voluntary disruption for a matching application, expressed as a minimum available or maximum unavailable Pod count. |
+| [Snapshot](#lifecycle-backup-and-upgrade) | A point-in-time representation of a resource. Its independence, consistency and recovery scope depend on the underlying service. |
+| [Kustomize](#helm-kustomize-and-operators) | A tool for composing or modifying Kubernetes manifests through bases and overlays without templating the YAML source. |
+| [Operator](#helm-kustomize-and-operators) | A controller with application-specific operational knowledge, often managing custom resources that express the desired state of that application. |
+| [Admission control](#offline-exercise-render-inspect-break-and-repair) | Checks and transformations applied to eligible API requests after authentication and authorization and before the object is stored. |
+| [Service selector](#offline-exercise-render-inspect-break-and-repair) | The set of labels a Service uses to identify the Pods that should receive its traffic. |
+
+**Workloads and scheduling**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Reconciliation](#controllers-configuration-and-self-healing) | The controller loop that works toward the declared state. If a Deployment calls for three replicas and one disappears, its controllers work to bring the count back to three. |
+| [Controller](#controllers-configuration-and-self-healing) | A control loop that watches cluster state and acts to maintain a resource’s intended condition, such as a desired replica count. |
+| [Environment variable](#controllers-configuration-and-self-healing) | A named value supplied in the environment of a process, such as a search path. Child processes inherit exported variables from their parent. |
+| [Horizontal Pod Autoscaler (HPA)](#controllers-configuration-and-self-healing) | A controller that adjusts a workload’s replica count according to configured metrics, subject to valid measurements and capacity. |
+| [Pod](#controllers-configuration-and-self-healing) | The smallest deployable Kubernetes unit. Its containers share a network identity and can share declared volumes for the lifetime of that Pod. |
+| [Taint and toleration](#updates-rollback-admission-and-placement) | A taint expresses a node constraint and a matching toleration permits the Pod to tolerate it. `NoSchedule` prevents new placement without a match, `PreferNoSchedule` is a preference, and `NoExecute` can also evict existing Pods. |
+| [Admission webhook](#updates-rollback-admission-and-placement) | A service the API server calls during admission to evaluate an API request. A mutating webhook can propose changes, and a validating webhook can accept or reject the request. |
+| [Deployment](#updates-rollback-admission-and-placement) | A workload controller that manages rollout and replacement of replicated application Pods. |
+| [LimitRange](#updates-rollback-admission-and-placement) | A namespaced policy that sets resource defaults or bounds for individual objects, complementing an aggregate quota. |
+| [Resource request](#updates-rollback-admission-and-placement) | CPU, memory or other capacity the scheduler accounts for when placing a Pod. A request does not itself impose a maximum. |
+| [Rolling update](#updates-rollback-admission-and-placement) | A rollout that gradually replaces old replicas with new ones under availability and surge limits. |
+
+**Services and networking**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Service](#packet-path-services-and-endpoints) | A stable way to reach a changing set of workload endpoints, usually selected through Pod labels. |
+| [EndpointSlice](#packet-path-services-and-endpoints) | A resource recording a group of backend endpoints for a Service, including their addresses and readiness information. |
+| [ClusterIP](#packet-path-services-and-endpoints) | A Service exposure type that provides an internal cluster address for reaching the Service’s backing endpoints. |
+| [LoadBalancer Service](#packet-path-services-and-endpoints) | A Service requesting an externally reachable load balancer from an available platform integration. The object alone does not guarantee a reachable address. |
+| [Packet](#packet-path-services-and-endpoints) | A network-layer unit carrying a source and destination IP address. Routers use the destination and their forwarding tables to send it onward. |
+| [Gateway API](#networkpolicy-dns-ingress-and-gateway-api) | Kubernetes APIs separating infrastructure ownership from application routing, using resources such as GatewayClass, Gateway and HTTPRoute. |
+| [Ingress](#networkpolicy-dns-ingress-and-gateway-api) | A Kubernetes resource declaring HTTP routing rules, such as host and path matches. A compatible controller is needed to implement them. |
+| [Ingress controller](#networkpolicy-dns-ingress-and-gateway-api) | The component that watches Ingress resources and provides or configures the proxy that serves actual traffic. |
+| [NetworkPolicy](#networkpolicy-dns-ingress-and-gateway-api) | A resource that selects Pods and describes permitted traffic. Enforcement depends on the cluster network implementation. |
+
+**Storage**
+
+| Term or phrase | Meaning |
+|---|---|
+| [PersistentVolumeClaim (PVC)](#volumes-pvs-pvcs-and-dynamic-provisioning) | A namespaced request for storage that binds to a suitable PersistentVolume. |
+| [StorageClass](#volumes-pvs-pvcs-and-dynamic-provisioning) | A cluster resource that describes a storage provisioner and its parameters for dynamically provisioned volumes. |
+| [Access mode](#volumes-pvs-pvcs-and-dynamic-provisioning) | A storage capability indicating supported patterns of mounting a volume, such as use by one node or many nodes. Application-level consistency still matters. |
+| [PersistentVolume (PV)](#volumes-pvs-pvcs-and-dynamic-provisioning) | A cluster storage resource representing a provisioned volume that can be bound to a compatible claim. |
+| [Reclaim policy](#volumes-pvs-pvcs-and-dynamic-provisioning) | The storage policy specifying what should happen to a PersistentVolume after the claim is released, such as retaining or deleting the underlying volume. |
+| [Security context](#volumes-pvs-pvcs-and-dynamic-provisioning) | Settings that govern a Pod’s or container’s execution privileges, such as user identity, Linux capabilities and filesystem restrictions. |
+
+**Troubleshooting**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Journal](#a-disciplined-evidence-ladder) | The systemd event log used to examine service and boot messages. Filters such as unit and boot narrow the investigation. |
+| [Standard error](#a-disciplined-evidence-ladder) | The stream normally used for diagnostics, usually file descriptor 2. Redirecting standard output alone leaves this stream unchanged. |
+| [Standard output](#a-disciplined-evidence-ladder) | The normal output stream of a process, usually file descriptor 1. It can be redirected or piped independently of error output. |
+| [Exit status](#workload-and-scheduling-failures) | A number returned by a completed process. Shell conditionals conventionally treat zero as success and a nonzero value as failure or another documented result. |
+| [Init container](#workload-and-scheduling-failures) | A container run during Pod initialization before normal application startup, commonly to prepare data or check a dependency. |
+| [Control plane](#node-and-control-plane-failures) | The functions that build network state and decide paths or policy. The data plane uses those decisions for actual traffic. |
+| [Inode](#node-and-control-plane-failures) | Filesystem metadata identifying an object and recording properties such as ownership and data references. Directory entries map names to inode numbers. |
+| [Node](#node-and-control-plane-failures) | A cluster machine that runs Pods using a kubelet and container runtime. Readiness of the node and readiness of its Pods are separate signals. |
+
 ## Places to learn
 
 | Resource | Access | Estimated time |

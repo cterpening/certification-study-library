@@ -472,6 +472,80 @@ These eight activities are **proposed**, with author-estimated study time. Only 
 
 The current NVIDIA page still lists the same 38/40/22 percent blueprint, 50 questions, and 60-minute exam. The page now also links sample questions with a Learning Mode that provides immediate feedback; this is preparation material, not a new blueprint. NVIDIA’s October DGX Spark release lists DGX OS 7.6.0, Linux 7.0 kernel support, cloud-init provisioning, support for 64 GB and 128 GB systems, and late-October DGX Spark Skills for appliance troubleshooting, clustering, maintenance, and escalation. Those release notes apply to the Founders Edition and must not be generalized to partner systems or enterprise cluster procedures. [DGX Spark release notes](https://docs.nvidia.com/dgx/dgx-spark/release-notes.html).
 
+## Key terms and phrases
+
+**Essential AI Knowledge**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Graphics processing unit (GPU) parallelism](#12-why-gpus-accelerate-ai) | Executing many similar operations concurrently, useful for the matrix calculations common in AI workloads. |
+| [Control plane](#12-why-gpus-accelerate-ai) | The management interfaces and services that configure resources and policies, as distinct from using the configured workload. |
+| [Bottleneck](#12-why-gpus-accelerate-ai) | The component whose limited capacity constrains end-to-end performance, identified by correlating multiple measurements. |
+| [Graphics processing unit (GPU)](#12-why-gpus-accelerate-ai) | A processor with many parallel execution resources useful for operations such as matrix multiplication, subject to memory and data-delivery limits. |
+| [Central processing unit (CPU)](#12-why-gpus-accelerate-ai) | The general-purpose processor handling tasks such as input preparation and orchestration, which can bottleneck a GPU workload. |
+| [GPU memory](#12-why-gpus-accelerate-ai) | Memory local to the GPU used for weights, activations and intermediate buffers; exhaustion and low utilization require different responses. |
+| [NVLink](#12-why-gpus-accelerate-ai) | NVIDIA’s high-bandwidth interconnect for communicating between supported GPUs or related components. |
+| [NVSwitch](#12-why-gpus-accelerate-ai) | A switching technology connecting supported NVLink endpoints into a GPU communication fabric. |
+| [PCIe](#12-why-gpus-accelerate-ai) | Peripheral Component Interconnect Express, a link used by hosts and attached devices whose topology and bandwidth can affect transfers. |
+| [Collective communication](#12-why-gpus-accelerate-ai) | A coordinated operation across multiple workers, such as combining gradients during distributed training. |
+| [NCCL](#12-why-gpus-accelerate-ai) | NVIDIA Collective Communications Library, supporting communication operations among GPUs within and across nodes. |
+| [Training](#13-training-and-inference-are-different-systems) | Using examples and an optimization procedure to update model parameters. |
+| [Inference](#13-training-and-inference-are-different-systems) | Running a trained model to get predictions or generated outputs, often under latency and throughput targets. |
+| [Availability](#13-training-and-inference-are-different-systems) | The ability of a service to remain usable for the intended requests over a specified measurement period. |
+| [Latency](#13-training-and-inference-are-different-systems) | The time for a request or operation to complete, measured at a specified boundary from the selected start to finish. |
+| [Batch size](#14-nvidia-software-and-solution-stack) | The number of inputs processed together in one execution step, affecting memory, throughput and request delay. |
+| [Container image](#14-nvidia-software-and-solution-stack) | A packaged application filesystem and runtime dependencies. The host still supplies compatible GPU drivers and device access. |
+| [CUDA](#14-nvidia-software-and-solution-stack) | NVIDIA’s parallel computing platform and programming model through which supported workloads use GPU acceleration. |
+| [Slurm](#14-nvidia-software-and-solution-stack) | A cluster workload manager scheduling jobs and resources such as nodes and GPUs under configured partitions and policies. |
+| [Kubernetes](#14-nvidia-software-and-solution-stack) | A platform scheduling and managing containerized workloads through declarative resources and controllers. |
+| [GPU Operator](#14-nvidia-software-and-solution-stack) | A Kubernetes operator automating deployment and management of components needed to use supported NVIDIA GPUs in a cluster. |
+| [Fabric Manager](#14-nvidia-software-and-solution-stack) | The NVIDIA component responsible for managing the applicable NVSwitch fabric on supported systems. |
+
+**AI Infrastructure**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Throughput](#21-size-from-the-workload) | The amount of work completed per unit time, such as training examples or inference requests per second. |
+| [Capacity planning](#21-size-from-the-workload) | Estimating the resources needed for expected demand, growth and failure scenarios against measured workload behavior. |
+| [Virtual GPU (vGPU)](#21-size-from-the-workload) | A virtualization mechanism presenting eligible GPU capacity to virtual machines under supported hardware and software configurations. |
+| [Power budget](#23-power-and-cooling) | The available electrical capacity for the intended configuration, accounting for both normal demand and facility constraints. |
+| [Cooling capacity](#23-power-and-cooling) | The facility’s ability to remove the heat generated by running systems, which constrains sustainable rack density. |
+| [Interconnect](#24-network-and-data-movement) | The link carrying data between processors or nodes. Its bandwidth and latency can limit distributed work. |
+| [DNS](#24-network-and-data-movement) | The naming system resolving service names to addresses or other records. Correct resolution alone does not establish reachability. |
+| [RDMA](#24-network-and-data-movement) | Remote direct memory access enables supported systems to transfer data to or from remote memory with reduced CPU involvement. |
+| [InfiniBand](#24-network-and-data-movement) | A high-performance networking technology used for low-latency communication in some distributed AI clusters. |
+| [Ethernet](#24-network-and-data-movement) | A family of network technologies used for cluster and service communication, with performance dependent on topology, configuration and load. |
+| [Checkpoint](#25-storage-and-data-path) | Saved training state that permits recovery after disruption, with write frequency and size affecting the storage workload. |
+| [Backup](#25-storage-and-data-path) | A retained copy created to support recovery. Validate it by restoring the relevant data and exercising the service that depends on it. |
+| [Restore](#25-storage-and-data-path) | Recreating data or a resource from a retained recovery copy, followed by checks that it meets the intended recovery point. |
+| [Disaster recovery (DR)](#26-on-premises-cloud-and-hybrid) | Restoring a usable service after a major disruption, including data, dependencies, access and a tested recovery sequence. |
+| [Quota](#26-on-premises-cloud-and-hybrid) | An allocation limit restricting the resources a project, user or workload can consume under the scheduler’s policies. |
+
+**AI Operations**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Baseline](#31-provision-and-manage-as-a-lifecycle) | An agreed reference configuration or historical measurement used to evaluate change in a comparable environment. |
+| [Drain](#31-provision-and-manage-as-a-lifecycle) | Preventing new work from being assigned to a node and moving or completing existing work before disruptive maintenance. |
+| [Scheduler](#32-scheduling-and-orchestration) | The component that assigns eligible jobs or workloads to resources according to requests, availability and policy. |
+| [Taint and toleration](#32-scheduling-and-orchestration) | A Kubernetes node taint repels ineligible pods while a matching toleration permits consideration for scheduling there. |
+| [Resource request](#32-scheduling-and-orchestration) | A workload’s declared resource requirement that the scheduler uses to decide placement. |
+| [Metric](#33-monitor-gpus-and-systems) | A numeric measurement recorded over time, such as failed requests or queue depth, with defined units and dimensions. |
+| [GPU utilization](#33-monitor-gpus-and-systems) | A measure of GPU activity over an interval. Low usage can come from slow input or communication as well as insufficient demand. |
+| [Thermal throttling](#33-monitor-gpus-and-systems) | Reducing operating speed because of a thermal or power limit, requiring interpretation alongside clocks, temperature and workload. |
+| [Data Center GPU Manager (DCGM)](#33-monitor-gpus-and-systems) | NVIDIA’s GPU monitoring and management software used to gather telemetry, observe health and run supported diagnostics. |
+| [GPU telemetry](#33-monitor-gpus-and-systems) | Measurements such as utilization, temperature, memory use and errors that can be correlated with job and node identity. |
+| [Multi-Instance GPU (MIG)](#35-virtualization-and-gpu-sharing) | A feature of supported GPUs that partitions hardware resources into isolated instances with defined compute and memory allocations. |
+| [Time slicing](#35-virtualization-and-gpu-sharing) | Sharing GPU execution over time among workloads, with different isolation and predictability from hardware partitioning. |
+| [Allocation](#35-virtualization-and-gpu-sharing) | Resources granted by the scheduler to a job, which can differ from what the running application actually uses. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Alert](#hands-on-evidence-labs) | A notification that a configured condition was met, requiring interpretation with its time window, source and affected scope. |
+| [Storage throughput](#hands-on-evidence-labs) | The amount of data a storage path can deliver per unit time, important when loading training samples or writing checkpoints. |
+
 ## Places to learn
 
 This is not a complete list. Start with the official scope and choose resources for demonstrated gaps. Public metadata was checked September 29, 2026; course interiors and checkout were not accessed. Unless explicitly described as a listed runtime, times below are author estimates for selective study.

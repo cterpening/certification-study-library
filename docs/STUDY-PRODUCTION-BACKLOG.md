@@ -8,6 +8,7 @@ new exam intake continue through the existing [maintenance process](AUTOMATION.m
 | First delivery | Repeatable authoring packets, study companions, recall cards, and visual aids | AZ-900 example, deterministic builds, reference checks, stale-input tests |
 | First delivery | Independent two-host podcast preparation and service adapter | Bound transcripts, flexible parts, mock service tests, accurate partial-failure receipts |
 | Second pilot | DP-900 data decisions | Four visual chapters, 15 selected objective mappings, original recall cards, two-host transcript; AI reviewed, human/audio review pending |
+| Recorded episodes | AZ-900 and DP-900 listening collection | [Four new episodes and recordings of both original pilots](../examples/podcasts/README.md), with two synthetic voices and source-linked transcripts. |
 | Ready for trial | GenFM comparison using the same learning material | Offline source and focus-prompt exports for AZ-900 and DP-900; account setup and generated-script/listening review remain to be performed |
 | Visual pilot | Paired infographic and active-recall exercise | DP-900 data-freshness study/practice sheets, accessible equivalents, reusable visual brief and source binding |
 | Asset foundation | Separate reusable visual library and starter Azure bundle | 14 selected original icons for AZ-900/DP-900, terms/provenance, update scripts and independent offline consumer checks |

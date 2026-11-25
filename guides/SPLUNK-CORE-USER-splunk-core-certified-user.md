@@ -344,6 +344,86 @@ Turn an error report into a schedule and a test alert. Deliberately model schedu
 - [ ] I can answer the original checks without looking at the answer key.
 - [ ] I rechecked the official Core User page, blueprint, handbook, and policies.
 
+## Key terms and phrases
+
+**Splunk basics**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Indexer](#components-and-common-uses) | The Splunk component that processes and stores events and searches its local indexes when asked. |
+| [Search head](#components-and-common-uses) | The component where a user submits a search and receives combined results from the search peers. |
+| [Forwarder](#components-and-common-uses) | A component that collects and sends data to another Splunk tier. Its type determines which parsing tasks it can perform. |
+| [Statistics view](#apps-user-settings-and-navigation) | The table of results returned by a search, often after a transforming command has replaced the original event rows with aggregates. |
+| [Knowledge object](#apps-user-settings-and-navigation) | A saved definition that changes how data is interpreted or presented, such as a lookup, field extraction or saved search. |
+| [Search-time extraction](#apps-user-settings-and-navigation) | Deriving a named field while results are searched, allowing field definitions to evolve without reindexing the original event. |
+
+**Basic searching**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Wildcard](#retrieve-and-refine-events) | A pattern character used to match variable portions of a search term. More specific terms usually make the intended matches easier to verify. |
+| [`_time`](#retrieve-and-refine-events) | The event timestamp used for time-based searching. A parsing error or an unexpected time zone can move an event outside the search range. |
+| [Search Processing Language (SPL)](#retrieve-and-refine-events) | The language Splunk uses to retrieve events and pass results through commands that filter, enrich, group or display them. |
+| [Sourcetype](#retrieve-and-refine-events) | A classification of the data's format that influences parsing and field extraction. Two sources can produce the same sourcetype. |
+| [Host](#retrieve-and-refine-events) | Metadata identifying the host associated with an event. Check how it was assigned before using it as a device identity. |
+| [Index-time processing](#retrieve-and-refine-events) | Processing applied before data is stored, such as timestamp recognition. A mistake here can affect every later search. |
+| [Event](#interpret-results-timeline-and-events) | One recorded occurrence with a timestamp and associated metadata. It may span multiple lines of raw input. |
+| [Timeline](#interpret-results-timeline-and-events) | A chart grouping returned events into time intervals. Selecting an interval narrows the search to investigate a burst or gap. |
+| [Selected field](#interpret-results-timeline-and-events) | A field chosen for display with events. It can help compare a few key values across results without expanding every event. |
+| [`_raw`](#interpret-results-timeline-and-events) | The raw event text retained with an indexed event. Compare it with extracted fields when a value is missing or unexpected. |
+| [Field discovery](#interpret-results-timeline-and-events) | Inspecting available field names and values in search results before deciding what to filter or group by. |
+| [Source](#interpret-results-timeline-and-events) | The file, stream or other input from which data came. Different sources can share a sourcetype when their records use the same format. |
+| [Search job](#control-jobs-and-preserve-results) | A single execution of a search with a time range, progress and results. Saving a report preserves the search logic for later runs. |
+| [Search result export](#control-jobs-and-preserve-results) | A copy of the results as they existed at a particular run. Sharing the exported file does not rerun the original query. |
+
+**Using fields in searches**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Field](#3-using-fields-in-searches-20) | A named value associated with an event, such as a host or status. A field can be absent from some events. |
+| [Time range](#3-using-fields-in-searches-20) | The interval a search covers. Use bounds that match event time and known ingestion delay before treating an empty result as evidence. |
+| [Multivalue field](#3-using-fields-in-searches-20) | One field containing several values in a result. Expanding it changes the row count and can change aggregate totals. |
+
+**Search language fundamentals**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Search pipeline](#pipeline-model-and-index-scope) | A sequence of SPL commands in which the output of one command becomes the input of the next. |
+| [Index](#pipeline-model-and-index-scope) | A named store for event or metric data, with access and retention settings governing who can search it and for how long. |
+| [`sort`](#required-commands) | Orders result rows by the chosen fields. Decide whether a value should be compared numerically or as text. |
+| [`dedup`](#required-commands) | Keeps results according to uniqueness of the selected fields. Search order matters when choosing which duplicate survives. |
+
+**Basic transforming commands**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Transforming command](#5-basic-transforming-commands-15) | A command that turns search results into a new result table, such as counts grouped by host. |
+| [`stats`](#5-basic-transforming-commands-15) | Turns a result set into aggregate rows. Counting by host produces one row for each host value in the grouping. |
+
+**Reports and dashboards**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Report](#6-reports-and-dashboards-12) | A saved search or pivot that can be run again, shared or scheduled as permissions allow. |
+| [Dashboard panel](#6-reports-and-dashboards-12) | An individual visualization or display in a dashboard, backed by a search or another source of results. |
+| [Pivot](#6-reports-and-dashboards-12) | A point-and-click interface for building a report from fields and constraints already exposed through a data model. |
+
+**Lookups**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Lookup](#7-lookups-6) | A way to match a field value against reference data and add information, such as mapping a host ID to its owner. |
+| [Lookup definition](#7-lookups-6) | The named configuration that tells Splunk how to use the reference source and match its fields in a search. |
+| [Automatic lookup](#7-lookups-6) | A lookup configured to add matching reference fields automatically to eligible search results. |
+
+**Scheduled reports and alerts**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Alert](#8-scheduled-reports-and-alerts-5) | A saved search or rule that evaluates a trigger condition and can start a configured action when the condition is met. |
+| [Trigger condition](#8-scheduled-reports-and-alerts-5) | The condition that decides whether a search result creates an alert, such as the count exceeding a specified threshold. |
+| [Throttle](#8-scheduled-reports-and-alerts-5) | Suppressing repeated alerts for a defined interval or key so one continuing condition does not flood responders. |
+
 ## Places to learn
 
 ### October 29, 2026 source update

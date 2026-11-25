@@ -109,6 +109,80 @@ Define triage, severity, containment authority, evidence preservation, communica
 - I distinguish preventive controls, findings, telemetry, automation, and recovery.
 - I can build an incident timeline without destroying or overclaiming evidence.
 
+## Key terms and phrases
+
+**Foundations and secure tenancy design**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Separation of duties](#1-foundations-and-secure-tenancy-design) | Dividing sensitive actions among roles so one person cannot both perform and independently approve or conceal a critical change. |
+| [Authentication](#1-foundations-and-secure-tenancy-design) | Establishing the identity used for a request, for example by validating a credential or identity assertion. |
+| [Least privilege](#1-foundations-and-secure-tenancy-design) | Granting only the access a specific identity needs for its assigned work, then checking both allowed and denied actions. |
+| [Alert](#1-foundations-and-secure-tenancy-design) | A notification that a configured condition was met, requiring interpretation with its time window, source and affected scope. |
+| [Tenancy](#1-foundations-and-secure-tenancy-design) | The organization’s root OCI account and administrative boundary in which compartments and resource policies are managed. |
+| [Compartment](#1-foundations-and-secure-tenancy-design) | A logical OCI grouping for resources, policy scope, ownership and cost reporting, which can span regions. |
+| [Shared responsibility](#1-foundations-and-secure-tenancy-design) | The division of security and operational duties between Oracle and the customer for the service model in use. |
+| [Break-glass access](#1-foundations-and-secure-tenancy-design) | An exceptional, controlled access path for recovery when normal administrative access is unavailable, with auditing and review. |
+
+**Identity and access management**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Federation](#2-identity-and-access-management) | A trust relationship through which OCI can accept a user’s authentication from an external identity provider. |
+| [Identity domain](#2-identity-and-access-management) | An OCI identity boundary managing users, groups, applications and authentication rules. |
+| [Group](#2-identity-and-access-management) | A collection of identities to which access can be granted through a policy, reducing the need to manage permissions user by user. |
+| [IAM policy](#2-identity-and-access-management) | An authorization statement identifying who may perform which class of operations on which resources within a specified scope and conditions. |
+| [Dynamic group](#2-identity-and-access-management) | An OCI grouping whose membership rules identify resources that can be granted permissions through policy. |
+| [Instance principal](#2-identity-and-access-management) | An OCI identity allowing a compute instance to call services under granted permissions without an embedded user API key. |
+| [Resource principal](#2-identity-and-access-management) | An identity allowing a supported OCI resource to call other services under the permissions assigned to that resource. |
+| [Policy inheritance](#2-identity-and-access-management) | The application of permissions granted at a wider scope to eligible resources below it in the compartment hierarchy. |
+
+**Network and infrastructure security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Network security group (NSG)](#3-network-and-infrastructure-security) | A set of traffic rules applied to selected network interfaces or supported resources sharing a security posture. |
+| [Bastion](#3-network-and-infrastructure-security) | A managed access point for controlled administrative sessions to private resources. |
+| [Network segmentation](#3-network-and-infrastructure-security) | Dividing a network into controlled communication boundaries to limit reachability and the impact of a failure or compromise. |
+| [DNS](#3-network-and-infrastructure-security) | The naming system resolving service names to addresses or other records. Correct resolution alone does not establish reachability. |
+| [Route table](#3-network-and-infrastructure-security) | Rules selecting a next hop based on destination. A matching route supplies a path, while security controls separately determine permitted traffic. |
+| [Security list](#3-network-and-infrastructure-security) | A set of traffic rules associated with a subnet and applied to its VNICs under OCI networking rules. |
+| [Dynamic routing gateway (DRG)](#3-network-and-infrastructure-security) | A virtual router joining attached networks or connectivity resources, with route policies determining which paths are available. |
+| [Network Firewall](#3-network-and-infrastructure-security) | A network security service enforcing inspection and traffic policy on routed flows that pass through it. |
+
+**Application and data security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Web application firewall (WAF)](#4-application-and-data-security) | A control that inspects web requests at an application entry point and applies configured protection rules. |
+| [Key rotation](#4-application-and-data-security) | Replacing the active cryptographic key material or key version under a defined lifecycle while maintaining access to data that still needs older versions. |
+| [Encryption in transit](#4-application-and-data-security) | Protecting data while it travels between endpoints, commonly through authenticated TLS connections. |
+| [Load balancer](#4-application-and-data-security) | A component distributing incoming work among eligible backends under its routing and health policy. |
+| [Vault](#4-application-and-data-security) | OCI’s service for centrally managing cryptographic keys and secrets under access policy and lifecycle controls. |
+
+**Posture and vulnerability management**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Cloud Guard](#5-posture-and-vulnerability-management) | OCI’s service for detecting risky activity or configuration and surfacing problems that operators can investigate or remediate. |
+| [Container image](#5-posture-and-vulnerability-management) | A packaged application filesystem and metadata used to start container instances with a known software baseline. |
+| [Security Zone](#5-posture-and-vulnerability-management) | An OCI scope in which preventive security policy restricts resource configurations that violate its requirements. |
+
+**Security operations and evidence**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Audit evidence](#6-security-operations-and-evidence) | Records that connect an identity, action, target and time to support investigation or control review. |
+| [Audit log](#6-security-operations-and-evidence) | Records of administrative actions that help identify who performed an operation, on what resource and when. |
+| [Correlation ID](#6-security-operations-and-evidence) | An identifier used to connect related records from different components when following one operation end to end. |
+| [Virtual cloud network (VCN)](#6-security-operations-and-evidence) | A configurable regional network containing subnets, routes and security controls for OCI resources. |
+
+**Original readiness checks**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Tag-based access control](#answer-guide) | An OCI policy condition can make access depend on a defined tag. Permission to change that tag then matters to the security of the resource. |
+
 ## Places to learn
 
 This is a selective learning path, not a complete list of OCI security resources.

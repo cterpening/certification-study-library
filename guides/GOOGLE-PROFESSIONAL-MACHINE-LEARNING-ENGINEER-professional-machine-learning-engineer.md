@@ -509,6 +509,84 @@ The [deep review](../docs/research/2026-09-29-google-professional-machine-learni
 
 Only public primary documentation and public provider catalog pages were reviewed. No paid course interiors, proprietary assessments, recalled exam content or real customer data were accessed. Public sample-question access reached a form shell; it did not establish question-content coverage. Human review remains pending.
 
+## Key terms and phrases
+
+**Architecting low-code AI solutions**
+
+| Term or phrase | Meaning |
+|---|---|
+| [BigQuery](#1-architecting-low-code-ai-solutions-about-13) | Google's managed analytical warehouse for querying large datasets with SQL. Column selection and partition filters help reduce work. |
+| [Latency](#1-architecting-low-code-ai-solutions-about-13) | Elapsed time between a request and the result of interest. Specify whether it measures the first token, the completed response or the full business action. |
+| [Clustering](#1-architecting-low-code-ai-solutions-about-13) | Grouping observations by similarity without predefined class labels. A team still needs to interpret and validate the groups. |
+| [Data provenance](#1-architecting-low-code-ai-solutions-about-13) | Evidence of a dataset's origin, ownership and transformation history. It supports decisions about permitted use and reproducibility. |
+| [Regression](#1-architecting-low-code-ai-solutions-about-13) | Predicting a numeric outcome, such as delivery time in minutes. The size of the error matters, not only whether the prediction is exact. |
+| [Throughput](#1-architecting-low-code-ai-solutions-about-13) | The volume of work completed per unit time, such as predictions per second. A high rate can coexist with long waits for individual requests. |
+| [Bias](#1-architecting-low-code-ai-solutions-about-13) | A systematic distortion in data, model behavior or decisions. Unequal error rates across groups warrant investigation of the data and intended use. |
+| [Grounding](#1-architecting-low-code-ai-solutions-about-13) | Connecting an answer to evidence the model can use when responding, such as approved product documentation. |
+| [Training-serving skew](#keep-transformations-inside-the-model-contract) | A difference between how training and serving produce inputs. Applying different transformations to the same raw value can change a prediction. |
+| [Validation set](#keep-transformations-inside-the-model-contract) | Held-out examples used to compare candidate models or select settings before final evaluation. |
+| [False negative](#keep-transformations-inside-the-model-contract) | A positive case the classifier misses. A fraudulent payment allowed through is a false negative. |
+| [False positive](#keep-transformations-inside-the-model-contract) | A negative case incorrectly labeled positive. A legitimate payment blocked as fraudulent is a false positive. |
+
+**Collaborating to manage data and models**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Feature](#data-and-features) | An input used to make a prediction, such as purchases in the previous month. It must be available when the prediction will be made. |
+| [Tokenization](#data-and-features) | Converting text into model-specific units and identifiers. An unfamiliar word may be split into several tokens. |
+| [Dataflow](#data-and-features) | A managed service for running Apache Beam batch and streaming pipelines, including windowed processing of events. |
+| [Hyperparameter](#secure-reproducible-notebooks-and-experiments) | A training setting chosen by the practitioner or tuning process, such as learning rate. The model learns its weights from data. |
+| [F1 score](#secure-reproducible-notebooks-and-experiments) | The harmonic mean of precision and recall. With precision 0.75 and recall 0.60, F1 is 2 × 0.75 × 0.60 ÷ 1.35, or about 0.67. |
+| [Point-in-time lookup](#latest-serving-values-and-historical-training-values) | Retrieving the feature value available when a historical prediction would have been made. It prevents later updates from leaking into training. |
+| [Test set](#latest-serving-values-and-historical-training-values) | Examples reserved for the final estimate of performance. Repeatedly choosing models with this set can undermine its independence. |
+| [Slice evaluation](#evaluate-support-as-well-as-a-score) | Measuring performance on a defined subset. A model correct on 95 of 100 cases overall may still be correct on just 2 of 5 cases in one language. Report both the rate and the sample size. |
+
+**Scaling prototypes into ML models**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Hyperparameter tuning](#3-scaling-prototypes-into-ml-models-about-21) | Comparing training runs that vary settings such as learning rate, using validation results to choose a configuration. |
+| [Service quota](#3-scaling-prototypes-into-ml-models-about-21) | A limit on resource use or request volume within a specified scope. Reaching it can block work even when funds are available. |
+| [Foundation model](#3-scaling-prototypes-into-ml-models-about-21) | A model trained on broad data that can support multiple downstream tasks through prompting or additional training. |
+| [Cloud Storage](#3-scaling-prototypes-into-ml-models-about-21) | Stores objects in buckets. A file-like object name does not by itself give an application the behavior of a shared POSIX file system. |
+| [Large language model (LLM)](#3-scaling-prototypes-into-ml-models-about-21) | A language model trained at scale to predict tokens in context. Fluent text is not itself evidence that a claim is correct. |
+| [Google Kubernetes Engine (GKE)](#3-scaling-prototypes-into-ml-models-about-21) | A managed Kubernetes environment for running and operating containerized workloads. |
+
+**Serving and scaling**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Online prediction](#4-serving-and-scaling-about-20) | Serving predictions in response to individual requests under a latency target. Traffic spikes and serving capacity affect whether the target is met. |
+| [Batch prediction](#4-serving-and-scaling-about-20) | Running inference over a collected dataset when results can arrive later. Throughput and completion time drive the design. |
+| [Inference](#4-serving-and-scaling-about-20) | Running a trained model on new input, for example scoring one loan application or generating text for a request. |
+| [Model registry](#4-serving-and-scaling-about-20) | A catalog of model versions and their metadata. A deployment can reference a reviewed version with known training and evaluation records. |
+| [Model card](#4-serving-and-scaling-about-20) | Documentation of a model's intended use, evaluation conditions and known limitations, useful when deciding whether to deploy it. |
+| [Cloud Run](#4-serving-and-scaling-about-20) | Runs containerized services or jobs on a managed platform. Choose a service for a request endpoint and a job for work that runs to completion. |
+| [Guardrail](#4-serving-and-scaling-about-20) | A check or rule that screens model inputs, outputs or proposed actions against policy. Authorization for the underlying action still belongs in the executing service. |
+| [Health check](#container-readiness-and-scaling-evidence) | A test used to decide whether a target can serve traffic. A reachable process can still fail a check for a required dependency. |
+| [Vertical scaling](#container-readiness-and-scaling-evidence) | Giving one machine or service instance more capacity, such as additional memory, instead of adding another worker. |
+
+**Automating and orchestrating pipelines**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Pipeline artifact](#5-automating-and-orchestrating-pipelines-about-18) | A versioned output of a workflow step, such as a transformed dataset or trained model, available for later stages and reproducibility. |
+| [Cloud Build](#5-automating-and-orchestrating-pipelines-about-18) | Runs build steps that turn source and dependencies into tested artifacts suitable for release. |
+| [Idempotency](#5-automating-and-orchestrating-pipelines-about-18) | The property that retrying the same intended operation does not apply its effect twice. An order API can remember the request identifier. |
+| [Time to live (TTL)](#a-cache-hit-is-not-a-freshness-check) | An interval after which an entry expires or must be refreshed. A DNS TTL governs how long its answer can be cached. |
+
+**Monitoring AI solutions**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Drift](#6-monitoring-ai-solutions-about-13) | A shift in production data or prediction patterns relative to a reference. Assessing its effect on model accuracy requires suitable outcome evidence. |
+| [Prompt injection](#6-monitoring-ai-solutions-about-13) | Untrusted input that attempts to change the instructions followed by a model. Applications should separate content from authority and constrain tool permissions. |
+| [Human approval](#6-monitoring-ai-solutions-about-13) | A defined decision point at which an authorized person reviews the proposed action before it changes the external system. |
+| [Concept drift](#6-monitoring-ai-solutions-about-13) | A change in the relationship between inputs and the outcome. The same customer signals can become less predictive of churn even if their overall distribution stays similar. |
+| [Escalation](#6-monitoring-ai-solutions-about-13) | Routing a case to an accountable person or process when confidence, authority or risk falls outside the automation's limits. |
+| [Ground truth](#select-a-monitoring-version-and-a-response) | The reference outcome used to evaluate a prediction. A label may arrive later or carry uncertainty that limits the evaluation. |
+| [Label](#select-a-monitoring-version-and-a-response) | The target value a supervised model learns to predict. A refund outcome known next month can label training data without being an available input today. |
+
 ## Places to learn
 
 This is **not a complete list**. Catalog observations below are from October 28, 2026. Durations are provider metadata unless explicitly described as a suggested practice budget. A certificate/path title does not prove complete June 2026 blueprint coverage.

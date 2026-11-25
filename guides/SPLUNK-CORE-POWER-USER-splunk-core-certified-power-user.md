@@ -314,6 +314,94 @@ Create an argumented macro for a bounded base search, a Search workflow action t
 - [ ] I completed all eight labs with approved data and no production side effects.
 - [ ] I rechecked the current certification page, blueprint, handbook, and policies.
 
+## Key terms and phrases
+
+**Transforming commands for visualizations**
+
+| Term or phrase | Meaning |
+|---|---|
+| [`timechart`](#1-transforming-commands-for-visualizations-5) | A transforming command that groups results into time intervals. `timechart span=1h count` produces an event count for each hourly bin. |
+| [`_time`](#1-transforming-commands-for-visualizations-5) | The event timestamp used for time-based searching. A parsing error or an unexpected time zone can move an event outside the search range. |
+| [Index](#1-transforming-commands-for-visualizations-5) | A named store for event or metric data, with access and retention settings governing who can search it and for how long. |
+| [Time bin](#1-transforming-commands-for-visualizations-5) | An interval used to group observations for aggregation. Smaller bins can show short bursts hidden in wider intervals. |
+| [Search Processing Language (SPL)](#1-transforming-commands-for-visualizations-5) | The language Splunk uses to retrieve events and pass results through commands that filter, enrich, group or display them. |
+| [`chart`](#1-transforming-commands-for-visualizations-5) | Builds a table of grouped statistics using the selected fields as dimensions for visualization. |
+| [Time range](#1-transforming-commands-for-visualizations-5) | The interval a search covers. Use bounds that match event time and known ingestion delay before treating an empty result as evidence. |
+| [Host](#1-transforming-commands-for-visualizations-5) | Metadata identifying the host associated with an event. Check how it was assigned before using it as a device identity. |
+
+**Filtering and formatting results**
+
+| Term or phrase | Meaning |
+|---|---|
+| [`eval`](#2-filtering-and-formatting-results-10) | Calculates or assigns field values in a search, such as deriving elapsed time from two timestamps. |
+| [`where`](#2-filtering-and-formatting-results-10) | Filters results by a Boolean expression, including comparisons between two fields on the same result. |
+| [`fillnull`](#2-filtering-and-formatting-results-10) | Replaces null field values in applicable result fields. Decide whether a missing value really means zero before using it. |
+
+**Correlating events**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Transaction](#3-correlating-events-15) | A group of related events assembled using shared fields, time constraints or start and end conditions, retaining the component events for inspection. |
+| [Event](#3-correlating-events-15) | One occurrence represented in the data, with a timestamp and associated metadata. A multiline log entry can be a single event. |
+| [`stats`](#3-correlating-events-15) | Turns a result set into aggregate rows. Counting by host produces one row for each host value in the grouping. |
+| [Multivalue field](#3-correlating-events-15) | One field containing several values in a result. Expanding it changes the row count and can change aggregate totals. |
+
+**Creating and managing fields**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Field extraction](#4-creating-and-managing-fields-10) | A rule that derives a named field from event data so searches can use it. |
+| [Delimiter-based extraction](#4-creating-and-managing-fields-10) | Splitting a consistently formatted event into fields using separators. Embedded or escaped separators need special attention. |
+| [Field Extractor](#4-creating-and-managing-fields-10) | An interface for defining reusable search-time field extractions from representative events. Test both matching and nonmatching formats. |
+| [Regular expression](#4-creating-and-managing-fields-10) | A pattern for matching or capturing text. Test it against more than one example so a format change is visible. |
+| [Technology add-on (TA)](#4-creating-and-managing-fields-10) | A package of data onboarding or normalization settings for a technology, often including input, parsing or field definitions. |
+| [Source](#4-creating-and-managing-fields-10) | The file, stream or other input from which data came. Different sources can share a sourcetype when their records use the same format. |
+| [Sourcetype](#4-creating-and-managing-fields-10) | A classification of the data's format that influences parsing and field extraction. Two sources can produce the same sourcetype. |
+
+**Field aliases and calculated fields**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Field alias](#5-field-aliases-and-calculated-fields-10) | An additional name for an existing field that lets searches use a common name across data sources. |
+| [Calculated field](#5-field-aliases-and-calculated-fields-10) | A reusable field whose value comes from a search-time expression over existing values. |
+
+**Tags and event types**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Event type](#6-tags-and-event-types-10) | A named search definition that classifies matching events for reuse. |
+| [Event tag](#6-tags-and-event-types-10) | A label attached to a field-value pair that can group equivalent events across different formats or source names. |
+| [Report](#6-tags-and-event-types-10) | A saved search or pivot that others can rerun according to its permissions, possibly on a schedule. |
+
+**Macros**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Search macro](#7-macros-10) | A named, reusable piece of SPL that expands in a search and can accept arguments. |
+| [Macro argument](#7-macros-10) | An input substituted into a saved search macro. Validate the expanded search as well as the caller-supplied value. |
+
+**Workflow actions**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Workflow action](#8-workflow-actions-10) | A configured action that uses field values from search results to start another search or open an external resource. |
+
+**Data models**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Data model](#9-data-models-10) | A structured set of related datasets with constraints and fields that users can explore with tools such as Pivot. |
+| [Dataset constraint](#9-data-models-10) | The condition narrowing a data model dataset to the intended events. A child dataset inherits parent restrictions before adding its own. |
+| [Pivot](#9-data-models-10) | A point-and-click interface for building a report from fields and constraints already exposed through a data model. |
+| [Data model acceleration](#9-data-models-10) | Building summaries for eligible data model datasets to speed repeated searches, with storage and freshness costs. |
+| [Lookup](#9-data-models-10) | A way to match a field value against reference data and add information, such as mapping a host ID to its owner. |
+
+**Common Information Model Add-On**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Common Information Model (CIM)](#10-common-information-model-add-on-10) | Splunk's shared field names, tags and datasets for describing comparable activity from different sources consistently. |
+
 ## Places to learn
 
 ### October 29, 2026 source update

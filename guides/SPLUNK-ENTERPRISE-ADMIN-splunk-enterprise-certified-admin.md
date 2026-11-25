@@ -190,6 +190,86 @@ Compare file monitor, TCP/UDP, script, WMI, and HEC for synthetic sources. Docum
 - [ ] I completed the twelve labs with synthetic data and captured validation plus rollback.
 - [ ] My Core Power User prerequisite is valid and I rechecked current exam/product contracts.
 
+## Key terms and phrases
+
+**Components, licensing, and effective configuration**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Effective configuration](#13-components-licensing-and-effective-configuration-15) | The merged settings Splunk actually uses after resolving configuration precedence. Inspecting one file can give an incomplete answer. |
+| [Deployment client](#13-components-licensing-and-effective-configuration-15) | An instance that checks in with a deployment server and obtains configuration assigned through its server classes. |
+
+**Index structure, integrity, and retention**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Bucket](#4-index-structure-integrity-and-retention-10) | A directory containing indexed data for a period of time. Buckets move through lifecycle stages governed by index settings. |
+| [Index](#4-index-structure-integrity-and-retention-10) | A named store for event or metric data, with access and retention settings governing who can search it and for how long. |
+| [Data retention](#4-index-structure-integrity-and-retention-10) | The policy and capacity governing how long data remains available. A size threshold can affect whether a time-based retention goal is met. |
+| [Data integrity](#4-index-structure-integrity-and-retention-10) | Preserving records so unintended alteration can be detected. Define what is being verified and where authoritative evidence is kept. |
+| [Frozen data](#4-index-structure-integrity-and-retention-10) | Data aged out of searchable index storage under retention or size policy. It can be archived if that path was configured. |
+| [Thawed data](#4-index-structure-integrity-and-retention-10) | Archived data restored to the appropriate index location so it can be searched again. |
+| [Fishbucket](#4-index-structure-integrity-and-retention-10) | State used by file monitoring to track files and read positions, helping a forwarder avoid treating every restart as a new file. |
+| [Cold bucket](#4-index-structure-integrity-and-retention-10) | A searchable bucket moved to the cold location as part of the index's lifecycle. |
+
+**Users, roles, authentication, and MFA**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Capability](#56-users-roles-authentication-and-mfa-10) | A named permission for a platform action. Roles combine capabilities with controls on data visibility. |
+| [Role](#56-users-roles-authentication-and-mfa-10) | A bundle of capabilities and data restrictions assigned to a user. Inherited roles can change the effective access. |
+| [Authentication](#56-users-roles-authentication-and-mfa-10) | Verifying the identity of a user or service. Authorization then determines what that identity can see or change. |
+| [Multi-factor authentication (MFA)](#56-users-roles-authentication-and-mfa-10) | Verifying identity with factors from more than one category, such as a password plus a possession factor. |
+| [Authorization](#56-users-roles-authentication-and-mfa-10) | Determining which operations and data an authenticated identity may access through roles, capabilities and restrictions. |
+| [Single sign-on (SSO)](#56-users-roles-authentication-and-mfa-10) | Using a trusted identity provider to authenticate users for an application. Roles still determine their effective permissions. |
+
+**Getting data in and distributed search**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Search peer](#78-getting-data-in-and-distributed-search-15) | An instance that executes the distributed portion of a search over data it holds and returns results to the search head. |
+| [Search head](#78-getting-data-in-and-distributed-search-15) | Accepts searches, coordinates work across search peers and presents combined results to the user. |
+| [Host](#78-getting-data-in-and-distributed-search-15) | Metadata identifying the host associated with an event. Check how it was assigned before using it as a device identity. |
+| [Forwarder](#78-getting-data-in-and-distributed-search-15) | A component that collects and sends data to another Splunk tier. Its type determines which parsing tasks it can perform. |
+| [Indexer](#78-getting-data-in-and-distributed-search-15) | Processes or stores indexed data and runs the portion of a distributed search assigned to its local data. |
+| [Universal forwarder](#78-getting-data-in-and-distributed-search-15) | A lightweight collection agent that forwards data and performs limited processing compared with a heavy forwarder. |
+| [Indexer cluster](#78-getting-data-in-and-distributed-search-15) | A coordinated set of indexers that maintains configured copies of data and participates in distributed searches. |
+| [Heavy forwarder](#78-getting-data-in-and-distributed-search-15) | A full Splunk Enterprise instance configured to forward data and, where appropriate, perform parsing or routing. |
+| [Knowledge bundle](#78-getting-data-in-and-distributed-search-15) | Search-time knowledge distributed by a search head so peers can apply compatible lookups, extractions and other settings. |
+| [Search concurrency](#78-getting-data-in-and-distributed-search-15) | The number of searches competing to run at the same time. Staggering scheduled reports may reduce peaks. |
+
+**Pipeline, forwarding, and deployment management**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Deployment server](#911-pipeline-forwarding-and-deployment-management-20) | An instance that distributes managed apps and configuration to deployment clients in assigned server classes. |
+| [Server class](#911-pipeline-forwarding-and-deployment-management-20) | A grouping rule that determines which deployment clients receive a particular set of apps. |
+| [Source](#911-pipeline-forwarding-and-deployment-management-20) | The file, stream or other input from which data came. Different sources can share a sourcetype when their records use the same format. |
+| [Indexer acknowledgment](#911-pipeline-forwarding-and-deployment-management-20) | A forwarding mechanism allowing a sender to track whether the receiving tier acknowledged transmitted data according to its settings. |
+| [Index-time processing](#911-pipeline-forwarding-and-deployment-management-20) | Processing applied before data is stored, such as timestamp recognition. A mistake here can affect every later search. |
+| [Index-time timestamp](#911-pipeline-forwarding-and-deployment-management-20) | The time assigned to an event during parsing. The time a forwarder sends a line is not necessarily when the described event occurred. |
+| [Index-time routing](#911-pipeline-forwarding-and-deployment-management-20) | Choosing a destination for events while they are being processed. Verify the result before assuming stored data can be repaired later. |
+
+**Monitor, network, scripted, WMI, and HEC inputs**
+
+| Term or phrase | Meaning |
+|---|---|
+| [HTTP Event Collector (HEC)](#1214-monitor-network-scripted-wmi-and-hec-inputs-15) | A token-authenticated HTTP input for applications or other senders to submit events. |
+| [Input checkpoint](#1214-monitor-network-scripted-wmi-and-hec-inputs-15) | Saved input progress used when collection resumes. Resetting it may replay old data or create a gap. |
+| [Monitor input](#1214-monitor-network-scripted-wmi-and-hec-inputs-15) | A file or directory input that tracks what it has read and forwards new data as configured. |
+| [Configuration stanza](#1214-monitor-network-scripted-wmi-and-hec-inputs-15) | A named section of a Splunk configuration file. Settings from multiple files can contribute to the effective stanza. |
+
+**Fine-tuning, parsing, and raw-data changes**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Sourcetype](#1517-fine-tuning-parsing-and-raw-data-changes-15) | A classification identifying the format of input data, which influences parsing and default field extraction. |
+| [`_raw`](#1517-fine-tuning-parsing-and-raw-data-changes-15) | The raw event text retained with an indexed event. Compare it with extracted fields when a value is missing or unexpected. |
+| [`_time`](#1517-fine-tuning-parsing-and-raw-data-changes-15) | The event timestamp used for time-based searching. A parsing error or an unexpected time zone can move an event outside the search range. |
+| [Event](#1517-fine-tuning-parsing-and-raw-data-changes-15) | One occurrence represented in the data, with a timestamp and associated metadata. A multiline log entry can be a single event. |
+| [Parsing tier](#1517-fine-tuning-parsing-and-raw-data-changes-15) | The component responsible for event boundaries, timestamps or other index-time transformations in a particular ingestion path. |
+| [Search-time knowledge](#1517-fine-tuning-parsing-and-raw-data-changes-15) | Definitions such as calculated fields and lookups applied when a search runs. They can change interpretation without rewriting stored events. |
+
 ## Places to learn
 
 This is not a complete list, and it is not meant to be consumed end to end. Pick the documentation, structured instruction, video, and practice format that addresses your measured gaps. Times are planning estimates, not promises; access, price, release coverage, and availability can change.

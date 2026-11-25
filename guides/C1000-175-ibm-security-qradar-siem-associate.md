@@ -118,6 +118,73 @@ Roles grant capabilities; security profiles scope data. Authentication proves id
 - I understand roles, profiles, network hierarchy, and data scope.
 - I can complete 62 mixed questions in 90 minutes from an evidence-led model.
 
+## Key terms and phrases
+
+**SIEM concepts, architecture, and UI**
+
+| Term or phrase | Meaning |
+|---|---|
+| [SIEM](#1-siem-concepts-architecture-and-ui) | Security information and event management combines security records and context to support monitoring, correlation and investigation. |
+| [Event collector](#1-siem-concepts-architecture-and-ui) | A QRadar deployment component receiving events for forwarding or processing according to the deployment design. |
+| [Event processor](#1-siem-concepts-architecture-and-ui) | A component processing incoming events and performing its configured correlation and storage work. |
+| [Flow collector](#1-siem-concepts-architecture-and-ui) | A component collecting network-flow observations for analysis within the deployment. |
+| [Data Node](#1-siem-concepts-architecture-and-ui) | A QRadar component adding storage and search capacity for event or flow data in a distributed deployment. |
+| [App Host](#1-siem-concepts-architecture-and-ui) | A managed host assigned to running supported applications, with its own resource and health requirements. |
+| [Console](#1-siem-concepts-architecture-and-ui) | The QRadar component providing centralized administration and the analyst interface in a deployment. |
+| [Event normalization](#1-siem-concepts-architecture-and-ui) | Mapping vendor-specific records into common fields and categories so rules and searches can compare them. |
+| [Saved search](#1-siem-concepts-architecture-and-ui) | A reusable query definition with its fields, filters and scope, which can support investigation, reporting or dashboards. |
+| [User role](#1-siem-concepts-architecture-and-ui) | A set of permissions determining which product functions an identity can use, separate from the data scope it can inspect. |
+| [Domain](#1-siem-concepts-architecture-and-ui) | A logical data scope used to associate activity with the appropriate organizational or tenant context. |
+
+**Extensions and flows**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Event](#2-extensions-and-flows) | A discrete record emitted by a source, such as a log entry recording an authentication result. |
+| [Flow](#2-extensions-and-flows) | A summary of a network conversation, describing participants and traffic characteristics across a time interval. |
+| [Throughput](#2-extensions-and-flows) | The amount of useful work completed per unit time, such as bytes transferred or requests served per second. |
+
+**Rules, building blocks, and offenses**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Building block](#3-rules-building-blocks-and-offenses) | Reusable QRadar rule tests that organize common conditions for use in other rules. |
+| [Offense](#3-rules-building-blocks-and-offenses) | A QRadar investigation record grouping related rule activity and supporting context for analyst review. |
+| [Global correlation](#3-rules-building-blocks-and-offenses) | Rule evaluation that can combine qualifying activity across processors. |
+| [Correlation rule](#3-rules-building-blocks-and-offenses) | A rule evaluating activity against conditions and time or scope constraints before triggering a configured response. |
+| [Local correlation](#3-rules-building-blocks-and-offenses) | Evaluating qualifying activity on an individual processor’s local data rather than combining matching activity across processors. |
+| [Offense magnitude](#3-rules-building-blocks-and-offenses) | A QRadar indicator used in prioritizing an offense, interpreted alongside its relevance, credibility, severity and supporting events. |
+| [Relevance](#3-rules-building-blocks-and-offenses) | How applicable security activity is to the affected assets and environment when deciding investigation priority. |
+| [Credibility](#3-rules-building-blocks-and-offenses) | The confidence attributed to the event or offense evidence when QRadar prioritizes potentially related activity. |
+| [Time window](#3-rules-building-blocks-and-offenses) | The interval of records included in a search or correlation decision; widening it can change both results and query cost. |
+| [Offense ownership](#3-rules-building-blocks-and-offenses) | The assignment and status information indicating who is responsible for a correlated investigation. |
+
+**Search, AQL, assets, reports, and dashboards**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Ariel Query Language (AQL)](#4-search-aql-assets-reports-and-dashboards) | The query language used to search, filter and summarize QRadar event and flow data. |
+| [Asset database](#4-search-aql-assets-reports-and-dashboards) | The inventory of observed or configured systems and associated evidence used to enrich investigation. |
+
+**Events, configuration, errors, and access**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Device Support Module (DSM)](#5-events-configuration-errors-and-access) | The parser that maps source-specific log messages to normalized event information QRadar can use. |
+| [Authentication](#5-events-configuration-errors-and-access) | Establishing the identity used for a request, for example by validating a credential or identity assertion. |
+| [Authorization](#5-events-configuration-errors-and-access) | Evaluating whether the requesting identity may take a particular action on a particular resource within the applicable scope. |
+| [Log source](#5-events-configuration-errors-and-access) | A configured source of event messages, identified and parsed according to its protocol and device type. |
+| [QID](#5-events-configuration-errors-and-access) | A QRadar event identifier associated with a normalized event definition after parsing and mapping. |
+| [Custom property](#5-events-configuration-errors-and-access) | A field extracted or calculated from source data to extend what can be filtered, searched or evaluated in a rule. |
+| [Network hierarchy](#5-events-configuration-errors-and-access) | The configured description of local networks used when interpreting direction and applying network context. |
+| [Security profile](#5-events-configuration-errors-and-access) | A user’s data-access scope in QRadar, evaluated alongside role permissions for the actions the user may perform. |
+
+**Original readiness checks**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Rule tuning](#answer-guide) | Adjusting a detection’s logic or context to reduce noise while preserving the behavior it is intended to detect. |
+
 ## Places to learn
 
 This is a selective learning path, not a complete list of QRadar resources.

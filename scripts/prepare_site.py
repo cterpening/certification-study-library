@@ -12,11 +12,27 @@ import re
 import shutil
 from urllib.parse import urlencode
 
+from build_guide_diagram import build_diagram, guide_lines
+from study_material import exam_context
+
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_BUILD_DIR = ROOT / ".site-build"
 
 PUBLIC_DOCUMENTS = (
+    "docs/research/2026-11-24-key-terms.md",
+    "docs/research/2026-11-24-key-terms-evidence.json",
+    "docs/research/2026-11-24-key-terms-depth-evidence.json",
+    "docs/research/2026-11-20-microsoft-beta-certifications.md",
+    "docs/research/2026-11-20-microsoft-beta-certifications-evidence.json",
+    "docs/research/2026-11-20-microsoft-refresh.md",
+    "docs/research/2026-11-20-microsoft-refresh-group-01.md",
+    "docs/research/2026-11-20-microsoft-refresh-group-02.md",
+    "docs/research/2026-11-20-microsoft-refresh-group-03.md",
+    "docs/research/2026-11-20-microsoft-refresh-group-04.md",
+    "docs/research/2026-11-20-microsoft-refresh-group-05.md",
+    "docs/research/2026-11-20-microsoft-refresh-group-06.md",
+    "docs/research/2026-11-20-microsoft-refresh-evidence.json",
     "docs/research/2026-11-10-practice-first-review.md",
     "docs/research/2026-11-10-diagram-expansion.md",
     "examples/visual-exercises/README.md",
@@ -57,6 +73,23 @@ PUBLIC_DOCUMENTS = (
     "examples/visual-exercises/dp-900-data-freshness/study.svg",
     "examples/visual-exercises/dp-900-data-freshness/practice.svg",
     "docs/GENFM-PILOT.md",
+    "examples/podcasts/README.md",
+    "examples/podcasts/az-900-governance/part-01/episode.mp3",
+    "examples/podcasts/dp-900-data-decisions/part-01/episode.mp3",
+    "examples/podcasts/az-900-cloud-decisions/part-01/episode.mp3",
+    "examples/podcasts/az-900-cloud-decisions/part-02/episode.mp3",
+    "examples/podcasts/dp-900-data-in-motion/part-01/episode.mp3",
+    "examples/podcasts/dp-900-data-in-motion/part-02/episode.mp3",
+    "examples/podcasts/az-900-cloud-decisions/part-01/transcript.md",
+    "examples/podcasts/az-900-cloud-decisions/part-02/transcript.md",
+    "examples/podcasts/dp-900-data-in-motion/part-01/transcript.md",
+    "examples/podcasts/dp-900-data-in-motion/part-02/transcript.md",
+    "examples/study-packs/az-900-cloud-decisions/study-guide.md",
+    "examples/study-packs/az-900-cloud-decisions/visuals/keep-the-booking-desk-open.svg",
+    "examples/study-packs/az-900-cloud-decisions/visuals/who-patches-the-ticket-counter.svg",
+    "examples/study-packs/dp-900-data-in-motion/study-guide.md",
+    "examples/study-packs/dp-900-data-in-motion/visuals/count-the-gate.svg",
+    "examples/study-packs/dp-900-data-in-motion/visuals/orders-and-tickets.svg",
     "examples/study-packs/dp-900-data-decisions/study-guide.md",
     "examples/study-packs/dp-900-data-decisions/visuals/data-shapes-and-workloads.svg",
     "examples/study-packs/dp-900-data-decisions/visuals/relational-management.svg",
@@ -70,6 +103,7 @@ PUBLIC_DOCUMENTS = (
     "docs/research/2026-11-10-study-production.md",
     "docs/research/2026-11-10-dp900-study-production.md",
     "docs/STUDY-PRODUCTION.md",
+    "guides/diagrams/az-900/role-scope.svg",
     "docs/STUDY-PRODUCTION-BACKLOG.md",
     "adapters/podcast-services.md",
     "examples/study-packs/az-900-governance/study-guide.md",
@@ -322,6 +356,7 @@ PROJECT_NAV = (
     ("Architecture", "docs/ARCHITECTURE.md"),
     ("Automation", "docs/AUTOMATION.md"),
     ("Study guides, visuals, and podcasts", "docs/STUDY-PRODUCTION.md"),
+    ("Study podcasts", "examples/podcasts/README.md"),
     ("Microsoft review progress", "docs/MICROSOFT-REVIEW-STATUS.md"),
     ("Roadmap", "docs/ROADMAP.md"),
     ("Guide backlog", "docs/BACKLOG.md"),
@@ -527,6 +562,16 @@ def render_guide_start(exam: dict[str, object], markdown: str) -> str:
     issue_url = f"{REPOSITORY_URL}/issues/new?{issue_query}"
     review_status = str(exam["review_status"])
     review_label = REVIEW_LABELS.get(review_status, review_status)
+    podcast_section = {"AZ-900": "azure-fundamentals-az-900", "DP-900": "azure-data-fundamentals-dp-900"}.get(code)
+    podcast_link = (
+        f' <a href="../../examples/podcasts/#{podcast_section}">Listen to the {code} study podcasts.</a>'
+        if podcast_section else ""
+    )
+    terms_link = (
+        ' Review the <a href="#key-terms-and-phrases">key terms and phrases</a>.'
+        if re.search(r"^## Key terms and phrases$", markdown, re.M)
+        else ""
+    )
 
     return f"""<section class="guide-start" aria-labelledby="guide-start-heading">
   <div class="guide-start__heading">
@@ -543,8 +588,8 @@ def render_guide_start(exam: dict[str, object], markdown: str) -> str:
   </div>
   <p><strong>Prerequisites:</strong> {escape(str(exam['study_prerequisites']))}</p>
   <div class="guide-start__paths">
-    <div><strong>Exam essentials</strong><span>Read the objective map, key distinctions, and readiness checklist.</span></div>
-    <div><strong>Deep understanding</strong><span>Work through every domain, including decisions, failure modes, and related items.</span></div>
+    <div><strong>Exam essentials</strong><span>Read the objective map, key distinctions, and readiness checklist.{terms_link}</span></div>
+    <div><strong>Deep understanding</strong><span>Work through every domain, including decisions, failure modes, and related items.{podcast_link}</span></div>
     <div><strong>Hands-on labs</strong><span>Begin with {first_lab}, then use the remaining labs to produce evidence you can inspect and explain.</span></div>
   </div>
   <details class="guide-start__domains">
@@ -590,6 +635,40 @@ def ensure_public_source(root: Path, relative_path: str) -> Path:
     if not source.is_file():
         raise FileNotFoundError(f"Missing public site source: {relative_path}")
     return source
+
+
+def stage_guide_diagrams(
+    root: Path, docs_dir: Path, exam: dict[str, object], markdown: str
+) -> list[str]:
+    """Publish checked SVGs embedded on their own lines in a registered guide."""
+    if "](diagrams/" not in markdown:
+        return []
+
+    exam_code = str(exam["code"]).lower()
+    guide_dir = Path(str(exam["guide_path"])).parent
+    context = None
+    published: list[str] = []
+    for line in guide_lines(markdown):
+        image = re.fullmatch(r" {0,3}!\[((?:\\.|[^\[\]\\])*)\]\((diagrams/[^)]*)\)[ \t]*", line)
+        if not image:
+            continue
+        alt, target = image.groups()
+        if not alt.strip() or not re.fullmatch(
+            rf"diagrams/{re.escape(exam_code)}/[a-z0-9]+(?:-[a-z0-9]+)*\.svg", target
+        ):
+            raise ValueError(f"Invalid diagram embed in {exam['guide_path']}: {line.strip()}")
+        relative_path = (guide_dir / target).as_posix()
+        if relative_path in published:
+            continue
+        if context is None:
+            context = exam_context(exam_code, root)
+        source = root / relative_path
+        build_diagram(source.with_suffix(".json"), check=True, root=root, context=context)
+        destination = docs_dir / relative_path
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(source, destination)
+        published.append(relative_path)
+    return published
 
 
 def render_exam_card(
@@ -996,6 +1075,7 @@ def render_certification_inventory(
         ),
     )
     status_labels = {
+        "announced": "Announced",
         "active": "Active",
         "beta": "Beta",
         "legacy": "Legacy",
@@ -1127,8 +1207,11 @@ def prepare_site(root: Path = ROOT, build_dir: Path | None = None) -> dict[str, 
             prepare_guide_markdown(guide_markdown, exam), encoding="utf-8"
         )
         published_sources.append(relative_path)
+        published_sources.extend(stage_guide_diagrams(root, docs_dir, exam, guide_markdown))
 
     for relative_path in PUBLIC_DOCUMENTS:
+        if relative_path in published_sources:
+            continue
         source = ensure_public_source(root, relative_path)
         destination = docs_dir / relative_path
         destination.parent.mkdir(parents=True, exist_ok=True)

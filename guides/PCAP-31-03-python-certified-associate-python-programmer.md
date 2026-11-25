@@ -719,6 +719,74 @@ Use only your own programs and disposable data. Do not seek, reproduce, or share
 
 **VERIFY CURRENT — scheduled version transition:** the current [issuer exam page](https://pythoninstitute.org/pcap) still marks PCAP-31-03 active and PCAP-31-04 pending, with an announced October 31, 2026 release date. Continue to prepare against the 31-03 syllabus until the issuer marks the new code active; do not assume existing practice content matches 31-04. The official [Python release index](https://www.python.org/doc/versions/) lists Python 3.15.2 (October 25) and the expedited Python 3.14.10 security release (October 25). These are runtime maintenance context only: the PCAP objectives do not prescribe either patch version. Python Essentials 2 remains an issuer-mapped preparation course; see the current [study-resource catalog](https://pythoninstitute.org/study-resources) for course access and time estimates, then follow the 31-03 syllabus for scope.
 
+## Key terms and phrases
+
+**Modules and packages**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Namespace](#imports-are-namespace-operations) | A mapping from names to objects. Importing a module binds a name that can be used to reach its contents. |
+| [Assignment](#imports-are-namespace-operations) | Binding a name to an object. Assigning another name to a list does not create an independent list. |
+| [Local scope](#imports-are-namespace-operations) | The name bindings local to a function invocation. Assigning a local name does not by itself rebind a module-level name. |
+| [Package](#user-defined-modules-and-packages) | A Python module that can contain submodules. A dotted import follows the package hierarchy. |
+| [Module](#user-defined-modules-and-packages) | A named unit of Python code with its own namespace that other code can import. |
+| [Relative import](#user-defined-modules-and-packages) | An import that locates a module relative to the current package, with leading dots specifying the package relationship. |
+| [Integer](#standard-library-modules-in-scope) | A whole-number type. In Python a calculation on integers can grow beyond a fixed machine-word size. |
+| [Floating-point number](#standard-library-modules-in-scope) | A finite-precision representation of a number. Many decimal fractions can only be approximated in binary. |
+| [Tuple](#standard-library-modules-in-scope) | An ordered collection whose element references cannot be reassigned after creation. A mutable object inside it can still change. |
+
+**Exceptions**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Exception propagation](#matching-control-flow-and-propagation) | The search for a matching handler up the active call stack after an exception is raised. |
+| [Context manager](#matching-control-flow-and-propagation) | An object managing entry to and exit from a with block. A file context manager closes the file even if processing raises an exception. |
+
+**Strings**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Code point](#characters-code-points-and-encodings) | A number assigned to a character by Unicode. `ord('A')` returns 65, while encoding that character determines which bytes are stored. |
+| [String](#characters-code-points-and-encodings) | An immutable sequence of Unicode code points. A string read from input must be converted before performing numeric arithmetic. |
+| [Unicode encoding](#characters-code-points-and-encodings) | A rule that turns Unicode text into bytes. Decoding requires a compatible rule to recover the intended text. |
+| [List](#operations-and-methods) | An ordered, mutable sequence. Appending to a list changes the object seen by every name referring to that list. |
+| [Index](#operations-and-methods) | An integer position in a sequence. Python numbers the first position zero and uses negative positions to count from the end. |
+| [Slice](#operations-and-methods) | A selection of sequence positions described by start, exclusive stop and step. A list slice creates a new outer list. |
+
+**Object-oriented programming**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Instance attribute](#state-belongs-either-to-the-class-or-an-instance) | State stored on a particular object. Two instances can keep different values under the same attribute name. |
+| [Mutability](#state-belongs-either-to-the-class-or-an-instance) | Whether an existing object can change. Rebinding a variable and modifying the object already bound to it are separate operations. |
+| [Class attribute](#state-belongs-either-to-the-class-or-an-instance) | An attribute stored on a class that instances can find through attribute lookup unless an instance supplies its own value. |
+| [Name mangling](#state-belongs-either-to-the-class-or-an-instance) | Rewriting certain double-underscore names inside a class to include the class name, reducing accidental name collisions in subclasses. |
+| [Instance method](#state-belongs-either-to-the-class-or-an-instance) | A method that receives the instance when accessed through it, letting the method inspect or change that object’s state. |
+| [Method overriding](#inheritance-overriding-and-polymorphism) | A subclass supplies its own implementation of a method inherited from a base class. |
+| [Inheritance](#inheritance-overriding-and-polymorphism) | Defining a class in terms of one or more base classes so it can reuse or specialize their behavior. |
+| [Polymorphism](#inheritance-overriding-and-polymorphism) | Using a common operation on objects that implement it differently, such as calling the same method on different subclasses. |
+
+**Comprehensions, lambdas, closures, and I/O**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Closure](#compact-transformation-without-hidden-behavior) | A function that can still use bindings from its enclosing function after the enclosing call has returned. |
+| [Default argument](#compact-transformation-without-hidden-behavior) | A parameter value saved when a function is defined and used when the caller omits that argument. A mutable default may be shared across calls. |
+| [Iterable](#compact-transformation-without-hidden-behavior) | An object from which iteration can obtain successive values, such as a string, list or generator. |
+| [Iterator](#compact-transformation-without-hidden-behavior) | An object that supplies one next value at a time and signals exhaustion when none remain. |
+| [List comprehension](#compact-transformation-without-hidden-behavior) | An expression that builds a list by transforming items from an iterable and optionally filtering them. |
+| [Lambda expression](#compact-transformation-without-hidden-behavior) | An expression that creates a function whose result comes from one expression, often supplied briefly to another operation. |
+| [Callback](#compact-transformation-without-hidden-behavior) | A callable supplied to another component to run when a condition or event occurs, such as a button press. |
+| [Binary input/output (I/O)](#text-and-binary-io) | Reading and writing bytes directly. Text I/O adds a character encoding when converting between bytes and strings. |
+| [Text mode](#text-and-binary-io) | Reading or writing strings through a character encoding. The same file opened in binary mode exposes raw bytes. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [CSV](#scenario-1-report-package) | A tabular text format with field separators and quoting rules. A quoted field can contain the separator or an embedded newline. |
+| [Boolean](#scenario-3-reproducible-sampler) | A true or false value used in decisions. Python also allows other objects to be tested for truth. |
+
 ## Places to learn
 
 This is not a complete list and is not meant to be consumed in full. Choose one coherent primary course, build multi-module programs for every section, and use an explanation-led assessment only to locate gaps. Reconcile every resource against the official syllabus, especially during the PCAP-31-04 transition.

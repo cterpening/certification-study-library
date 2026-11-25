@@ -13,7 +13,9 @@ upcoming_change_checked: 2026-10-28
 
 # MO-111 Microsoft Word Expert (Microsoft 365 Apps) Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-05.md#mo-111) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mo-111-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/mos-word-expert-m365-apps/) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-06.md#mo-111)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-05.md#mo-111) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mo-111-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/mos-word-expert-m365-apps/) is authoritative.
 
 **Assessment contract:** 50-minute proctored practical assessment; about 150 hours of advanced hands-on use is Microsoft preparation guidance.<br>
 **Current scope:** document options/settings; advanced editing/formatting; custom elements; advanced Word features.<br>
@@ -186,11 +188,73 @@ These are proposed desktop exercises using synthetic records and disposable copi
 - I can preserve review evidence while producing a clean final document.
 - I complete mixed advanced tasks inside 50 minutes with a field/output inspection pass.
 
+## Key terms and phrases
+
+**Document options and settings**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Document template](#1-document-options-and-settings) | A reusable starting file that supplies document structure, styles and other components for new documents. |
+| [Theme](#1-document-options-and-settings) | Coordinated document colors, fonts and effects used by styles and design elements. |
+| [Document default](#1-document-options-and-settings) | A starting setting that applies when a more specific style or local setting does not override it. |
+| [Link to Previous](#1-document-options-and-settings) | A header or footer setting that connects a section's content to the corresponding one in the preceding section. |
+| [Section break](#1-document-options-and-settings) | A boundary for layout or numbering changes, such as restarting page numbering in the body of a report. |
+| [Compatibility mode](#1-document-options-and-settings) | An editing mode that preserves compatibility with an older Word format and can constrain newer features. |
+| [Hyphenation](#1-document-options-and-settings) | Splitting words at permissible points across lines to adjust line endings and spacing. |
+| [Line numbering](#1-document-options-and-settings) | Adding reference numbers to document lines for tasks such as legal or editorial review. |
+| [Restrict Editing](#worked-document-dependency-and-protection-check) | A document protection feature that limits the kinds of changes users can make, such as permitting only form filling. |
+| [Editing exception](#worked-document-dependency-and-protection-check) | A region for which specified users retain editing rights under an otherwise restricted document. |
+
+**Advanced editing and formatting**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Style set](#2-advanced-editing-and-formatting) | A coordinated collection of style definitions that changes the appearance of styled content consistently. |
+| [Wildcard search](#2-advanced-editing-and-formatting) | A Find operation using pattern characters to match a family of text forms in one operation. |
+| [Replace formatting](#2-advanced-editing-and-formatting) | Find and change text formatting using the search criteria even when the text itself should stay the same. |
+| [Paragraph spacing](#2-advanced-editing-and-formatting) | Space before or after a paragraph, controlled independently of line spacing within it. |
+| [Pagination control](#2-advanced-editing-and-formatting) | A paragraph rule governing how lines and adjacent paragraphs are allowed to break across pages. |
+| [Keep with next](#worked-page-repair) | A setting that carries a paragraph with its successor, commonly keeping a heading and its first paragraph together. |
+
+**Custom document elements**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Attached template](#3-custom-document-elements) | The template associated with a document, which can supply components such as styles or macros. |
+| [Custom style](#3-custom-document-elements) | A named collection of formatting choices created for repeated use in a document or template. |
+| [Cross-reference](#3-custom-document-elements) | An updatable reference to a labeled item or heading, such as a figure number in a paragraph. |
+| [Building block](#worked-reusable-design-pack) | A named, reusable piece of content or layout that can be inserted into documents. |
+| [Quick Parts](#worked-reusable-design-pack) | Word's gallery for storing and inserting reusable document elements. |
+| [AutoText](#worked-reusable-design-pack) | A reusable named item of formatted text or other content stored as a building block. |
+| [Caption](#worked-captions-and-generated-lists) | A labeled and numbered description attached to an object such as a figure or table. |
+| [Table of figures](#worked-captions-and-generated-lists) | A generated list based on captions that can be updated when objects move or captions change. |
+| [Caption label](#worked-captions-and-generated-lists) | The category used to number a caption and select entries for a generated list, such as Figure or Table. |
+| [Sequence field](#worked-captions-and-generated-lists) | A field that generates a number in a named series, as used in automatic captions. |
+| [Content control](#worked-fields-and-fillable-controls) | A structured area for a specific kind of user input, such as a date, text entry or list choice. |
+| [Field code](#worked-fields-and-fillable-controls) | Instructions inside a Word field describing what value to calculate or show. |
+| [Field result](#worked-fields-and-fillable-controls) | The text or value Word displays when it evaluates a field code. |
+| [Drop-down content control](#worked-fields-and-fillable-controls) | A form control that lets the user select from author-defined choices. |
+| [Date picker](#worked-fields-and-fillable-controls) | A content control for entering a date with a configured display format. |
+
+**Advanced features**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Mail merge](#4-advanced-features) | Combining a main document with a data source to produce personalized copies for multiple recipients. |
+| [Main document](#4-advanced-features) | The repeated text, layout and merge fields used to create all records' personalized documents. |
+| [Merge field](#4-advanced-features) | A placeholder replaced with the value of a named column from the current recipient's record. |
+| [Recipient list](#4-advanced-features) | The data source whose records identify which personalized documents the merge should produce. |
+| [Merge rule](#4-advanced-features) | A condition or instruction that changes merge output for particular records, such as varying a greeting. |
+
 ## Places to learn
+
+**Suggested practice.** Import a synthetic postal-code column as text, check that a leading zero survives in Excel, then inspect the corresponding merged field in Word. About 20–35 minutes to prepare a synthetic CSV and inspect a short merged document in a compatible Word/Excel environment (editorial estimate). [Prepare your Excel data source for a Word mail merge](https://support.microsoft.com/en-us/word/prepare-your-excel-data-source-for-a-word-mail-merge)
 
 This is a selective learning path, not a complete list of Word Expert resources or a requirement to consume every item.
 
 ### Focused source-to-evidence route
+
+**Practice check.** For a personalized letter exercise, open the main document in desktop Word to edit the recipient settings, preview records and perform the merge. Word for the web preserves an existing desktop merge configuration when the file is opened there. [Use mail merge for bulk email, letters, labels, and envelopes | Microsoft Support](https://support.microsoft.com/en-us/word/use-mail-merge-for-bulk-email-letters-labels-and-envelopes)
 
 **A merge pack with edge cases — public task references; about 60–90 minutes.** Read [prepare the Excel source](https://support.microsoft.com/en-us/word/prepare-your-excel-data-source-for-a-word-mail-merge), [preview recipients](https://support.microsoft.com/en-us/word/mail-merge-preview-results) and the [mail-merge platform boundary](https://support.microsoft.com/en-us/word/use-mail-merge-for-bulk-email-letters-labels-and-envelopes). Create six synthetic recipients including a leading-zero postal code and a blank optional value. Deliver the source `.xlsx`, main `.docx`, a preview checklist and locally merged letters; do not send mail. Estimate basis: three short references plus original files and recipient-by-recipient inspection. Windows and Mac instructions differ; choose the matching desktop steps. Word for the web preserves existing merge settings but cannot perform or edit the merge. No visible article dates were established. Public text was reviewed October 28, 2026; no merge or paid lesson was executed.
 

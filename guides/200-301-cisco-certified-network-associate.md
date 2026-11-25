@@ -508,6 +508,104 @@ These are original teaching prompts, not recalled exam items. Explain the answer
 
 ---
 
+## Key terms and phrases
+
+**Network Fundamentals**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Bandwidth](#components-and-architectures) | The nominal capacity of a path to carry data per unit of time. Actual throughput can be lower. |
+| [Failure domain](#components-and-architectures) | A set of components that can fail together, such as workloads sharing a physical host, power source or region. |
+| [Transmission Control Protocol (TCP)](#components-and-architectures) | A connection-oriented transport that provides an ordered byte stream and retransmits missing data while the connection can be maintained. |
+| [IPv6 link-local address](#addressing-and-endpoints) | An address valid only on its local link, often used as a next hop between neighboring routers. |
+| [Default route](#addressing-and-endpoints) | The route chosen when no more specific destination prefix matches, commonly represented as 0.0.0.0/0 for IPv4. |
+| [Hypervisor](#addressing-and-endpoints) | The software layer that distributes host hardware resources among virtual machines. |
+| [Link-local address](#addressing-and-endpoints) | An address meant for communication on the local link. IPv6 routers do not forward packets carrying link-local addresses to another link. |
+| [Router](#switching-behavior) | A device that forwards packets between IP networks using destination addresses and routes. |
+
+**Network Access**
+
+| Term or phrase | Meaning |
+|---|---|
+| [802.1Q trunk](#vlans-and-trunks) | An Ethernet link that carries multiple VLANs and tags frames to identify their VLAN, with native-VLAN handling determined by configuration. |
+| [Access port](#vlans-and-trunks) | A switch port that normally connects an endpoint to one data VLAN and carries the endpoint’s ordinary data traffic untagged. |
+| [Native VLAN](#vlans-and-trunks) | The VLAN associated with untagged traffic on an 802.1Q trunk under the applicable configuration. A mismatch can place traffic in different VLANs at each end. |
+| [Virtual LAN (VLAN)](#vlans-and-trunks) | A logical Layer 2 network with its own broadcast scope. Communication with another VLAN ordinarily requires routing and a suitable policy. |
+| [EtherChannel](#etherchannel) | A group of compatible physical links presented as one logical connection for forwarding and redundancy. |
+| [Layer 2](#etherchannel) | The data-link layer, where local delivery uses frames and link-layer addressing, such as Ethernet switching within a VLAN. |
+| [Link Aggregation Control Protocol (LACP)](#etherchannel) | A negotiation protocol that checks which links and peers can participate in the same aggregated connection. |
+| [Trunk](#etherchannel) | A switch link designed to carry multiple VLANs, usually identifying the VLAN with a tag. |
+| [Spanning tree root bridge](#rapid-pvst) | The reference switch used by spanning tree to calculate a loop-free forwarding topology. |
+| [Bridge protocol data unit (BPDU)](#rapid-pvst) | A control frame exchanged by spanning tree participants. Unexpected BPDUs on an edge port can signal the wrong device or topology. |
+| [Layer 2 forwarding loop](#rapid-pvst) | A cycle of active links can let an Ethernet frame circulate repeatedly. Spanning Tree breaks the cycle by placing selected ports in a nonforwarding state. |
+| [Spanning Tree Protocol (STP)](#rapid-pvst) | A switching protocol that chooses a loop-free forwarding topology while retaining redundant links for recovery. |
+| [Least privilege](#wireless-architecture) | Assigning only the permissions needed for the user’s task, such as using a standard account for everyday work. |
+| [Quality of service (QoS)](#wireless-architecture) | Classifying and treating traffic differently under contention, such as protecting voice delay while bulk transfers share the link. |
+| [Remote Authentication Dial-In User Service (RADIUS)](#wireless-architecture) | A protocol used by network access equipment to consult a central authentication and authorization service and record accounting events. |
+
+**IP Connectivity**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Administrative distance](#route-interpretation-and-selection) | A Cisco router’s preference among route sources offering the same prefix. A lower distance is preferred. |
+| [Longest-prefix match](#route-interpretation-and-selection) | Selection of the most specific route whose prefix contains the packet’s destination. |
+| [Routing metric](#route-interpretation-and-selection) | A protocol-specific value for comparing paths to a destination. OSPF compares cumulative cost, with a lower cost preferred between otherwise comparable routes. |
+| [Floating static route](#static-routes) | A static route configured with a higher administrative distance than the preferred route. It can take over when the preferred route for the same prefix disappears. |
+| [Next hop](#static-routes) | The adjacent router or forwarding destination selected for the next stage of a packet’s path. |
+| [Static route](#static-routes) | A route installed by configuration, specifying a prefix and next hop or interface. It changes only through configuration or an associated tracking mechanism. |
+| [OSPF adjacency](#single-area-ospfv2) | A neighbor relationship through which routers can synchronize link-state information for route calculation. |
+| [OSPF link-state database](#single-area-ospfv2) | The router’s collection of link-state advertisements for an OSPF area. Its shortest-path calculation uses the topology described in those advertisements. |
+| [Maximum transmission unit (MTU)](#single-area-ospfv2) | The largest packet size a link or interface can carry under its addressing convention. Tunnel overhead can reduce the usable size of the inner packet. |
+| [Open Shortest Path First (OSPF)](#single-area-ospfv2) | A link-state routing protocol in which routers exchange topology information and calculate paths using link costs. |
+| [First-hop redundancy](#first-hop-redundancy) | A set of routers providing a shared gateway identity so hosts can continue using a gateway after a device failure. |
+| [Default gateway](#first-hop-redundancy) | The next-hop router a host uses for destinations outside its directly connected network when no more specific route applies. |
+
+**IP Services**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Port address translation (PAT)](#nat-time-address-and-name-services) | Address translation that distinguishes simultaneous sessions through transport identifiers so hosts can share an external address. |
+| [Dynamic Host Configuration Protocol (DHCP)](#nat-time-address-and-name-services) | The protocol clients use to obtain settings such as an IP address, gateway and DNS servers, typically for a bounded lease. |
+| [Network address translation (NAT)](#nat-time-address-and-name-services) | Rewriting source or destination addressing as traffic crosses a boundary. The translation and the permission to pass traffic are distinct decisions. |
+| [Source NAT (SNAT)](#nat-time-address-and-name-services) | Rewriting a packet’s source, often so traffic leaving a private network uses an address routable on the external network. |
+| [Network Time Protocol (NTP)](#nat-time-address-and-name-services) | A protocol for synchronizing clocks to time sources. Clock agreement helps validate certificates and align records from multiple systems. |
+| [Observability](#management-and-observability) | The ability to infer a system’s internal condition from its outputs, often by relating logs, metrics and traces to a particular request or failure. |
+| [Policing](#management-and-observability) | Enforcing a rate by dropping or remarking traffic that exceeds a threshold instead of delaying it for later transmission. |
+| [Traffic shaping](#management-and-observability) | Buffering and pacing traffic toward a configured rate. This can smooth bursts while introducing queueing delay. |
+
+**Security Fundamentals**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Authorization](#5-security-fundamentals-15) | Deciding which actions an authenticated identity is permitted to take. |
+| [DHCP snooping](#5-security-fundamentals-15) | A switch feature that distinguishes trusted server-facing ports from untrusted ones and can maintain address bindings from observed DHCP traffic. |
+| [Segmentation](#5-security-fundamentals-15) | Separating systems into network boundaries and controlling which communications can cross them. |
+
+**Automation and Programmability**
+
+| Term or phrase | Meaning |
+|---|---|
+| [REST API](#6-automation-and-programmability-10) | An interface that exposes resources through HTTP methods and structured representations for programmatic access. |
+| [Access token](#6-automation-and-programmability-10) | A credential presented to a resource service to exercise granted permissions within its audience, scope and validity period. |
+| [Authentication](#6-automation-and-programmability-10) | Verifying an identity before deciding which resources that identity may access. |
+| [JavaScript Object Notation (JSON)](#6-automation-and-programmability-10) | A text format that represents values with objects, arrays, strings, numbers, booleans and null. |
+
+**Executed local routing and ACL workbook**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Access control list (ACL)](#executed-local-routing-and-acl-workbook) | An ordered set of rules that matches traffic attributes and permits or denies traffic according to the platform’s evaluation rules. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Wi-Fi](#scenario-2-one-floor-has-intermittent-voice-and-wi-fi) | Wireless local networking under the IEEE 802.11 family. Successful association, IP configuration and application access are distinct checks. |
+| [Switch](#scenario-3-automating-a-standard-access-switch) | A device that normally forwards Ethernet frames within a Layer 2 network based on destination MAC addresses. |
+| [Control plane](#hands-on-evidence-labs) | The functions that build network state and decide paths or policy. The data plane uses those decisions for actual traffic. |
+| [DHCP relay](#hands-on-evidence-labs) | A component that forwards DHCP exchanges between clients and a server on a different subnet. |
+| [DNS record](#hands-on-evidence-labs) | An entry mapping a name to information such as an address. A DNS problem can break name-based access even when IP routing works. |
+
 ## Places to learn
 
 This is not a complete list, and it is not meant to be consumed in full. Pick one primary explanation, one lab route, and one legitimate assessment; use the official versioned PDF to close gaps. Times are provider values where published and otherwise explicit estimates.

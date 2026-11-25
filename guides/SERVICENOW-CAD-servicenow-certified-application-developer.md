@@ -521,6 +521,76 @@ These are original explanation prompts, not reconstructed exam items. Answer, ex
 
 The live [CAD Mainline Exam Blueprint](https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011498) says **Updated January 2026** and retains six domains weighted 20/20/20/20/10/10 percent. It explicitly includes ServiceNow Git integration for source-code management. **Related item:** Brazil documentation distinguishes Build Agent (AI-assisted development), Creator Studio (no-code), App Engine Studio (low-code), and ServiceNow Studio (unified development, tracking, and packaging). Select a builder for the application and team; generated code and artifacts still need scope, ACL, test, review, and promotion checks. Release, role, plugin, and entitlement affect availability, and none of these builders changes the exam scope.
 
+## Key terms and phrases
+
+**Designing and Creating an Application**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Application scope](#1-designing-and-creating-an-application-20) | The namespace and boundary that group an application's files and govern how its APIs and tables interact with other applications. |
+| [Module](#1-designing-and-creating-an-application-20) | A navigation entry that opens something in an application, such as a filtered list or form. |
+| [Table](#1-designing-and-creating-an-application-20) | A collection of records with a defined set of fields. A child table can inherit fields and behavior from its parent. |
+| [Reference field](#1-designing-and-creating-an-application-20) | A field that points to another table's record. Its stored identity can stay the same when the displayed label changes. |
+| [Source control](#1-designing-and-creating-an-application-20) | Version history used to collaborate on application code or configuration. A committed change still needs testing in its target environment. |
+| [Role](#1-designing-and-creating-an-application-20) | A named grant used by platform features and access rules to decide what a user can do. Group membership can contribute roles. |
+| [Instance](#1-designing-and-creating-an-application-20) | A separately managed ServiceNow environment with its own data and configuration, such as development or production. |
+
+**Application User Interface**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Record producer](#2-application-user-interface-20) | A catalog interface that collects answers and creates a record on a target table. |
+| [Form](#2-application-user-interface-20) | The interface for viewing or editing one record. Its fields and actions can vary by view and user context. |
+| [GlideForm (`g_form`)](#2-application-user-interface-20) | The client-side interface to a form, used for tasks such as reading a field or changing how a field is displayed. |
+| [List](#2-application-user-interface-20) | A view of multiple records that can be filtered, sorted or grouped. A visible column layout does not define permission to read the underlying data. |
+| [Client script](#2-application-user-interface-20) | Code running in a user's browser to respond to form events. A server-side check is needed for rules that must hold for all callers. |
+| [Data policy](#2-application-user-interface-20) | A server-side policy for enforcing data requirements across applicable input paths, including writes that bypass interactive forms. |
+| [Order guide](#2-application-user-interface-20) | A catalog offering that helps a requester select several related items in a single guided request. |
+| [UI policy](#2-application-user-interface-20) | A rule that changes form behavior such as making a field mandatory or read-only while the user interacts with it. |
+| [Dictionary entry](#2-application-user-interface-20) | The metadata defining a table field, such as its data type, reference target or default behavior. |
+| [Catalog variable](#2-application-user-interface-20) | A question or input on a catalog request that supplies information for the fulfillment workflow. |
+| [Catalog item](#2-application-user-interface-20) | A requestable service or product presented with questions and a fulfillment process. |
+
+**Security and Restricting Access**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Access control list (ACL) rule](#3-security-and-restricting-access-20) | A server-enforced check governing an operation on data, such as reading a particular field. Hiding it on a form alone cannot secure it. |
+| [Cross-scope privilege](#3-security-and-restricting-access-20) | Permission for one application scope to perform an operation on another application's resources. The user may still need separate record access. |
+| [GlideSystem (`gs`)](#3-security-and-restricting-access-20) | A server-side API for platform utilities such as logging and obtaining information about the current execution context. |
+| [Application menu](#3-security-and-restricting-access-20) | A navigation grouping containing modules that lead users to application functions. |
+| [GlideRecord](#three-access-questions-that-need-separate-answers) | A ServiceNow API for querying and operating on records. Filter intended rows precisely and verify the access behavior of the chosen API. |
+
+**Application Automation**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Business rule](#4-application-automation-20) | Server-side logic that runs at a configured point in a record operation, such as before an update. |
+| [Script Include](#4-application-automation-20) | Reusable server-side code that other permitted scripts can call to share application logic. |
+| [Scheduled job](#4-application-automation-20) | A server-side task run at a chosen time or interval, such as a daily synchronization. |
+| [Flow trigger](#4-application-automation-20) | The event or condition that starts an automated flow, such as a record entering an approved state. |
+| [Notification](#4-application-automation-20) | A configured message triggered by a condition or event. Define both the intended recipients and the information they are allowed to receive. |
+| [Subflow](#4-application-automation-20) | A reusable sequence of automation steps with defined inputs and outputs, called by a flow or another supported caller. |
+
+**Working with External Data**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Representational state transfer (REST) resource](#5-working-with-external-data-10) | An API endpoint exposing an operation or set of records over HTTP under a defined request, response and authorization contract. |
+| [Transform map](#5-working-with-external-data-10) | A mapping that converts staged source rows into target fields and controls how matching target records are updated. |
+| [REST message](#5-working-with-external-data-10) | A configuration for sending an HTTP request to an external service, with defined endpoint, method and authentication. |
+| [Import set](#5-working-with-external-data-10) | A staging table containing incoming rows before a transform applies them to the target table. |
+| [Coalesce field](#5-working-with-external-data-10) | An import match key used to identify an existing target record. Choosing a nonunique display name can update the wrong record. |
+| [Pagination](#pagination-query-validation-and-uncertain-outcomes) | Dividing a collection response into pages. A client follows the API's continuation rules so it can process the full result. |
+
+**Managing Applications**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Application repository](#6-managing-applications-10) | A distribution mechanism for application versions across instances. Preview dependencies and verify the installed version after release. |
+| [Update set](#6-managing-applications-10) | A group of tracked configuration changes for transport between instances. Validate dependencies and handle business data separately. |
+| [Automated Test Framework (ATF)](#version-control-and-tests-are-different-evidence) | ServiceNow's framework for exercising application behavior through repeatable test steps and checking the results after changes. |
+
 ## Places to learn
 
 This is not a complete list. Select resources for demonstrated gaps. Public landing metadata is not a lesson, exam-question or quality audit. Times are planning estimates unless identified as earlier publisher metadata; account-only content, blocked resources and proposed instance work remain distinct.

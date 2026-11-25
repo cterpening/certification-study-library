@@ -628,6 +628,102 @@ Original study prompts and explanatory answers; these are not exam items.
 - **Review:** You recognize the feature but cannot yet make or verify the decision.
 - **Gap:** You guessed or relied on a stale course/question. Return to current official documentation and an authorized lab.
 
+## Key terms and phrases
+
+**Use Snowflake AI Data Cloud architecture**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Cloud services layer](#reason-across-the-three-service-layers) | The Snowflake layer that coordinates activities such as authentication, metadata management and query optimization. |
+| [Virtual warehouse](#reason-across-the-three-service-layers) | An independent compute resource that executes supported workloads against data managed in Snowflake storage. |
+| [View](#understand-hierarchy-objects-and-interfaces) | A named query through which consumers see data in a defined shape. A conventional logical view reads its inputs when queried. |
+| [Role hierarchy](#understand-hierarchy-objects-and-interfaces) | The graph of role grants through which a parent role can inherit privileges assigned to another role. |
+| [Task](#understand-hierarchy-objects-and-interfaces) | A scheduled or triggered Snowflake work unit that executes SQL or a procedure and can participate in a dependency graph. |
+| [VARIANT](#understand-hierarchy-objects-and-interfaces) | A Snowflake data type capable of holding nested or semi-structured values, including arrays and objects. |
+
+**Manage accounts, access and virtual warehouses**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Account](#make-account-and-session-context-explicit) | The Snowflake administrative boundary that contains account objects and controls, including roles, warehouses and databases. |
+| [USAGE privilege](#make-account-and-session-context-explicit) | Permission enabling use of specified objects such as a database, schema or warehouse, alongside other grants required for the query. |
+| [Query history](#make-account-and-session-context-explicit) | The record identifying statements, execution context and timing, enabling a comparison of the exact queries behind an incident. |
+| [Resource monitor](#make-account-and-session-context-explicit) | A Snowflake control for tracking eligible warehouse credit use and taking configured actions at usage thresholds. |
+| [Least privilege](#apply-least-privilege) | Granting each role only the rights needed for its intended actions and object scope. |
+| [Database](#apply-least-privilege) | The namespace containing schemas and their objects; it forms part of a fully qualified Snowflake object name. |
+| [Privilege](#apply-least-privilege) | A grant for a specified action or capability on an object or at an account scope. |
+| [OWNERSHIP](#apply-least-privilege) | The object-control privilege held by an owning role, distinct from specific consumption grants such as SELECT. |
+| [Warehouse size](#operate-compute-deliberately) | The compute capacity selected for a virtual warehouse, influencing available resources, runtime and credit usage. |
+| [Auto-suspend](#operate-compute-deliberately) | A warehouse policy that stops idle compute after the configured period, trading potential savings against resume and cache effects. |
+| [Auto-resume](#operate-compute-deliberately) | A warehouse policy allowing eligible work to start a suspended warehouse automatically. |
+| [Scale up](#operate-compute-deliberately) | Increasing a warehouse’s size to give individual work more compute or memory capacity. |
+| [Scale out](#operate-compute-deliberately) | Adding concurrent compute capacity, such as additional warehouse clusters, to address contention among workloads. |
+
+**Load, unload and transform data**
+
+| Term or phrase | Meaning |
+|---|---|
+| [External stage](#design-a-governed-file-path) | A Snowflake object that refers to a location in external cloud storage for accessing files. |
+| [Deduplication](#design-a-governed-file-path) | Recognizing repeated representations of the same event or business entity under a defined key and selection rule. |
+| [Reconciliation](#design-a-governed-file-path) | Comparing source and target results for the same scope, such as record counts and amounts in a given business day. |
+| [Data freshness](#design-a-governed-file-path) | The age or lag of data visible to a consumer relative to the agreed source time or publication expectation. |
+| [Internal stage](#design-a-governed-file-path) | A Snowflake-managed file location used to stage inputs or outputs for loading and unloading. |
+| [COPY INTO](#design-a-governed-file-path) | The command family used for bulk movement, including loading a table from staged files and unloading query results to a stage. |
+| [Storage integration](#design-a-governed-file-path) | A Snowflake object that establishes controlled access to external cloud storage without embedding long-lived storage credentials in every stage. |
+| [File format](#design-a-governed-file-path) | A named or inline specification of how to interpret or generate staged file contents, including type, delimiters or compression settings. |
+| [Snowpipe](#design-a-governed-file-path) | Snowflake’s service for continuously loading arriving staged files through a pipe. |
+| [Snowpipe Streaming](#design-a-governed-file-path) | Ingesting rows through streaming channels rather than first treating each input as a staged file. |
+| [Stream](#design-a-governed-file-path) | A Snowflake object exposing eligible table changes relative to an offset so downstream processing can consume changes incrementally. |
+| [Dynamic table](#design-a-governed-file-path) | A table maintained from a defining query under a target-lag policy, subject to refresh capabilities and dependencies. |
+| [Aggregation](#unload-and-transform-safely) | Combining a group of records into a summary such as count, sum or average, at a declared grouping level. |
+| [Join](#unload-and-transform-safely) | Combining records from multiple inputs according to a matching condition. A repeated key can yield more rows than either input leads you to expect. |
+
+**Use structured, semi-structured and unstructured data**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Semi-structured data](#choose-types-that-preserve-meaning) | Data with keys, arrays or nested values whose shape may vary across records, such as JSON events. |
+| [Data type](#choose-types-that-preserve-meaning) | The representation and operations a field supports. For example, a text identifier with leading zeros may lose meaning if converted to an integer. |
+| [Null value](#choose-types-that-preserve-meaning) | A marker for a missing or unknown value. Count and comparison operations may treat it differently from a supplied zero. |
+| [FLATTEN](#choose-types-that-preserve-meaning) | A table function that turns nested array or object values into rows for relational querying. |
+| [Directory table](#choose-types-that-preserve-meaning) | Metadata about files on a stage that can be queried to discover and work with staged files. |
+| [Primary key](#select-the-right-tablestorage-boundary) | A field or combination of fields chosen to identify an individual record uniquely in the relevant table. |
+| [Constraint](#select-the-right-tablestorage-boundary) | A stated rule for acceptable records or relationships. Whether a particular constraint is enforced depends on the database and object type. |
+
+**Monitor and optimize performance**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Partition pruning](#start-with-evidence) | Skipping micro-partitions whose metadata rules out a match. A date filter can avoid scanning partitions that contain only earlier dates. |
+| [Selectivity](#start-with-evidence) | How narrowly a filter restricts matching rows. A selective condition can reduce work if the access path can use it. |
+| [Clustering](#start-with-evidence) | Organizing related data together according to chosen columns or expressions so selective reads can skip more unrelated storage. |
+| [Materialized view](#start-with-evidence) | A view with stored query results maintained by refresh, trading refresh and storage work for faster access to results. |
+| [Query Profile](#start-with-evidence) | Snowflake’s view of execution operators and their metrics, used to locate pruning, spills, expensive joins and other work. |
+| [Micro-partition](#start-with-evidence) | A storage unit with metadata Snowflake can use to avoid reading data irrelevant to a filter. |
+| [Result cache](#separate-caches-and-compute-symptoms) | Previously persisted query results that may be reused when eligibility conditions hold, avoiding a fresh execution. |
+| [Spill](#separate-caches-and-compute-symptoms) | Intermediate work exceeding available memory and moving to other storage, often visible as additional I/O and longer runtime. |
+
+**Enable collaboration and protection**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Secure data sharing](#distinguish-collaboration-mechanisms) | Giving a consumer governed access to selected data through a share without delivering a separate copy for it to maintain. |
+| [Zero-copy clone](#protect-govern-and-recover-data) | An independently changeable copy of eligible objects that initially shares underlying storage with its source. |
+| [Projection policy](#protect-govern-and-recover-data) | A Snowflake policy that controls whether a protected column’s value may appear in query output. Its rules can permit use of the column for other parts of a query. |
+| [Data lineage](#protect-govern-and-recover-data) | The chain of sources and transformations that produced a dataset or model input, useful for explaining a result or assessing change impact. |
+| [Data retention](#protect-govern-and-recover-data) | How long data or recoverable history is kept before removal under an explicit operational or governance policy. |
+| [Replication](#protect-govern-and-recover-data) | Maintaining additional copies of data across locations or instances. Replicated errors can propagate, so copies still need a separate recovery strategy. |
+| [Row access policy](#protect-govern-and-recover-data) | A policy controlling which records are returned based on the requesting context or other approved conditions. |
+| [Fail-safe](#protect-govern-and-recover-data) | A Snowflake-managed recovery period for eligible data after Time Travel, with separate purpose and access from ordinary user recovery. |
+| [Time Travel](#protect-govern-and-recover-data) | Accessing eligible earlier object data within the applicable retention period, for example to inspect pre-change values. |
+
+**Establish connectivity**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Parameter binding](#select-and-secure-the-client-path) | Passing values separately from SQL text through the connector. Use the placeholder style supported by the configured connector instead of inserting user input into the statement. |
+| [Connection pooling](#select-and-secure-the-client-path) | Reusing established database connections across requests. An application borrowing a connection must check that its role and session context are appropriate for that work. |
+
 ## Places to learn
 
 This is not a complete list, and it is not meant to be consumed in full. Public metadata was checked October 28, 2026; paid lessons, assessments and recordings were not accessed. Provider durations below are labeled separately from this guide's optional study budgets. **VERIFY CURRENT:** Confirm content version, access expiry and actual booking availability before purchase.

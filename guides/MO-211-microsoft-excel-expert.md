@@ -13,7 +13,9 @@ upcoming_change_checked: 2026-10-28
 
 # MO-211 Microsoft Excel Expert (Microsoft 365 Apps) Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-05.md#mo-211) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mo-211-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-expert-m365-apps/) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-06.md#mo-211)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-05.md#mo-211) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mo-211-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-expert-m365-apps/) is authoritative.
 
 **Assessment:** 50 minutes, proctored; the current page lists seven languages. Approximately 150 hours of instruction and hands-on experience is preparation guidance, not a formal prerequisite. The page has no dedicated Microsoft Learn training collection.<br>
 **Lifecycle:** No retirement or replacement notice found on October 28, 2026. The credential shows a 60-month renewal frequency; read the [current MOS expiration policy](https://learn.microsoft.com/en-us/credentials/support/credential-expiration-policy) for applicability to your award date. Exam retirement and credential expiration are different events.
@@ -84,6 +86,8 @@ Use TODAY for the current date and NOW for date/time; their results change when 
 Use **Consolidate** to summarize multiple ranges: consolidate by position only when layouts align; choose labels/categories when the same items occupy different rows. Identify whether the output links to source data or represents a snapshot. **Goal Seek** adjusts one input to meet one formula target; **Scenario Manager** stores alternative input sets. Sensitivity Data Tables are useful supplementary practice; they are not separately named in this PDF.
 
 ### Worked consolidation and what-if analysis
+
+**Practice check.** To find the one input that produces a target formula result, use Goal Seek. To compare named sets of several assumptions, save scenarios and review a scenario summary. Each saved scenario can hold up to 32 changing values. [Use Goal Seek to find the result you want by adjusting an input value | Microsoft Support](https://support.microsoft.com/en-au/excel/use-goal-seek-to-find-the-result-you-want-by-adjusting-an-input-value) · [Switch between various sets of values by using scenarios | Microsoft Support](https://support.microsoft.com/en-us/excel/switch-between-various-sets-of-values-by-using-scenarios)
 
 On two sheets, create Item/Amount lists: North has **A/10, B/20** and South has **B/7, A/3**. In a clear destination, Data → Consolidate → Sum, add both source ranges including labels and select Top row/Left column. Expect **A 13, B 27, grand total 40**. Without category labels, positional combination would pair unlike rows and produce **17/23**. Choose deliberately whether to create links to source data. Change South's A amount to **5**: expected recomputed results are **A 15, B 27, total 42**; a snapshot requires rerunning consolidation. See [source-range and label configuration](https://support.microsoft.com/en-us/excel/consolidate-data-in-multiple-worksheets).
 
@@ -220,7 +224,72 @@ These ten labs are proposed desktop exercises. Keep before/after copies, expecte
 31. **Why can a classic calculated-field total differ from row products?** It calculates from aggregates, as 300 versus 140 illustrates.
 32. **What does refresh not fix?** Wrong source range, record grain, types, aggregation or business definitions.
 
+## Key terms and phrases
+
+**Workbook options and settings**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Workbook protection](#1-workbook-options-and-settings) | A control that can restrict changes to the workbook's structure, such as adding, renaming or deleting worksheets. |
+| [Calculation mode](#1-workbook-options-and-settings) | The setting controlling when formulas recalculate, such as automatically after edits or on an explicit recalculation. |
+| [Macro-enabled workbook](#1-workbook-options-and-settings) | A workbook format, such as XLSM, that can preserve VBA code when saved. |
+
+**Manage and format data**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Data validation](#2-manage-and-format-data) | A rule for acceptable cell input, such as a list of allowed values or a numeric range. |
+| [Custom number format](#2-manage-and-format-data) | A display pattern for values that can specify separate treatments for positive, negative, zero and text entries. |
+| [Validation alert](#2-manage-and-format-data) | A response shown for invalid direct input, with the selected alert type determining whether an override is allowed. |
+| [Circle Invalid Data](#2-manage-and-format-data) | A command that marks existing values failing validation so they can be located and corrected. |
+| [Outline group](#2-manage-and-format-data) | A collapsible group of rows or columns that hides detail while preserving it in the sheet. |
+| [Subtotal](#2-manage-and-format-data) | A grouped summary inserted for changes in a selected field of an appropriately ordered range. |
+| [Duplicate key](#2-manage-and-format-data) | A repeated combination of selected column values, used to determine which records count as duplicates. |
+| [Stop If True](#2-manage-and-format-data) | A conditional formatting setting that stops lower-priority rules from being considered when its rule is true. |
+
+**Advanced formulas and macros**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Exact-match lookup](#logic-criteria-and-lookup) | A lookup that requires the requested key to match a source value according to the function's matching rules. |
+| [SUMIFS](#logic-criteria-and-lookup) | A function that sums values whose rows meet all supplied criteria. |
+| [COUNTIFS](#logic-criteria-and-lookup) | A function that counts rows satisfying each specified criterion. |
+| [Lookup array](#logic-criteria-and-lookup) | The range in which a lookup function searches for the requested key. |
+| [Return array](#logic-criteria-and-lookup) | The values from which a lookup function returns the item corresponding to the matched key. |
+| [WORKDAY](#dates-analysis-and-arrays) | A function that calculates a date a given number of working days from a start date, with an optional holiday list. |
+| [Spill range](#dates-analysis-and-arrays) | The cells populated by the multiple results of a dynamic-array formula. |
+| [Dynamic array](#worked-consolidation-and-what-if-analysis) | A formula result that can fill multiple neighboring cells from a single formula entered at its starting cell. |
+| [Goal Seek](#worked-consolidation-and-what-if-analysis) | Excel's tool for finding one input that gives a formula a specified result. If revenue equals price × 40 units, targeting $600 finds a price of $15. |
+| [Consolidation](#worked-consolidation-and-what-if-analysis) | Combining values from multiple ranges by their positions or matching category labels. |
+| [Scenario Manager](#worked-consolidation-and-what-if-analysis) | A what-if tool that stores named sets of input values for comparison in the same model. |
+| [Precedent](#audit-and-automate) | A cell that supplies a value to a formula. Tracing precedents follows the calculation back to its inputs. |
+| [Dependent](#audit-and-automate) | A cell whose formula uses a given cell's value directly or indirectly. |
+| [Watch Window](#audit-and-automate) | A view for monitoring selected cells' values and formulas while working elsewhere in the workbook. |
+| [Evaluate Formula](#audit-and-automate) | A tool that steps through a formula's intermediate calculations to locate an unexpected result. |
+
+**Advanced charts and tables**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Combo chart](#4-advanced-charts-and-tables) | A chart that combines different chart types for different series, potentially with a secondary axis. |
+| [Waterfall chart](#worked-advanced-chart-workbook) | A chart that shows how positive and negative changes move a starting amount to an ending amount. |
+| [Histogram](#worked-advanced-chart-workbook) | A chart that groups numeric observations into intervals and counts the observations in each interval. |
+| [Box and whisker chart](#worked-advanced-chart-workbook) | A chart that summarizes a distribution using quartiles, spread and potential outliers. |
+| [PivotTable](#worked-pivottable-and-pivotchart-navigation) | An interactive summary that groups source records by fields and aggregates their values. |
+| [Slicer](#worked-pivottable-and-pivotchart-navigation) | A visual filter that lets a user select which items a connected table or PivotTable displays. |
+| [PivotChart](#worked-pivottable-and-pivotchart-navigation) | A chart linked to a PivotTable whose fields and filters affect the plotted values. |
+| [Value field setting](#worked-pivottable-and-pivotchart-navigation) | The PivotTable choice determining how a field is summarized, such as Sum or Count, and how the result is displayed. |
+| [Date grouping](#worked-pivottable-and-pivotchart-navigation) | Combining date entries into periods such as months or quarters for a PivotTable summary. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Payment period](#4-payment-periods-and-a-feasibility-gate) | The time unit used consistently for the interest rate and number of payments in a loan calculation. |
+
 ## Places to learn
+
+**Suggested practice.** Change the filter on an existing PivotTable and check how the associated chart represents the selected categories. About 20–35 minutes to create a PivotTable and PivotChart from a small dataset and test a filter (editorial estimate). [Create a PivotChart](https://support.microsoft.com/en-us/excel/get-started/create-a-pivotchart)
 
 This is a selective learning path, not a complete list of Excel Expert resources or a requirement to consume every item. All time estimates below are author suggestions.
 

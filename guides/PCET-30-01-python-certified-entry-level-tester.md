@@ -890,6 +890,63 @@ The workbook executes components of these labs with original synthetic fixtures.
 
 The issuer’s syllabus header and alignment still identify active PCET-30-01, but its introductory paragraph and badge image say PCET-30-02; the credential page uses the generic PCET-30-0x label. Preserve the conflict and do not infer that PCET-30-02 is a launched replacement. The official [PT101 course page](https://pythoninstitute.org/python-for-testing-101) lists four modules, 40+ lessons, and a provider estimate of four to five weeks; the separate [Study Resources catalog](https://pythoninstitute.org/study-resources) gives 20–30 hours. Keep both estimates rather than converting one into a guarantee. The page’s duplicated tier comparison does not establish every lab/practice feature’s access tier; the dedicated PCET practice test remains a separate item marked in development. **Related item:** pytest 9.1.1 (June 19, 2026) rejects cache paths escaping its cache root. This optional runner detail complements safe test-workspace handling; PCET’s current examples use `unittest`, and pytest is not an exam requirement.
 
+## Key terms and phrases
+
+**Core testing concepts**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Defect](#1-core-testing-concepts-171) | A flaw in a program or specification that can produce an incorrect outcome under particular conditions. |
+| [Pesticide paradox](#1-core-testing-concepts-171) | Repeating the same tests tends to reveal fewer new defects over time. Vary the cases as the product and its risks change. |
+| [Test oracle](#requirements-risk-and-decision-evidence) | The rule, requirement or independent reference used to decide whether an observed result is correct. |
+| [Requirement](#requirements-risk-and-decision-evidence) | A statement of expected behavior or a constraint that provides a basis for designing and judging a test. |
+| [Failure](#requirements-risk-and-decision-evidence) | An observed deviation from required behavior during execution, providing evidence for investigating a possible defect. |
+| [Validation](#requirements-risk-and-decision-evidence) | Checking whether a system meets its intended use and the needs of its users. |
+| [Test fixture](#requirements-risk-and-decision-evidence) | The initial data, objects, environment and cleanup needed for a repeatable test. |
+| [Side effect](#requirements-risk-and-decision-evidence) | An outcome beyond a returned value. A mock can be configured to raise an exception or produce successive results to exercise those paths. |
+
+**Types, levels, processes, and doubles**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Unit test](#2-types-levels-processes-and-doubles-229) | A focused check of a small piece of behavior, normally with dependencies controlled enough to make the result interpretable. |
+| [Integration test](#2-types-levels-processes-and-doubles-229) | A test of behavior across real component boundaries, such as a service interacting with a database. |
+| [System test](#2-types-levels-processes-and-doubles-229) | An evaluation of a complete system’s behavior against system-level requirements. |
+| [Test double](#2-types-levels-processes-and-doubles-229) | A replacement for a real collaborator used to control inputs, avoid unwanted effects or inspect interactions. |
+| [Test case](#worked-case-and-test-double-choices) | A reproducible check that specifies setup, inputs, actions and the expected result. |
+| [Stub](#worked-case-and-test-double-choices) | A substitute dependency that returns chosen values so a test can exercise a particular path. |
+| [Dummy](#worked-case-and-test-double-choices) | A substitute supplied to satisfy an interface when the scenario should never use that dependency. |
+| [Fake](#worked-case-and-test-double-choices) | A simplified working implementation of a dependency, such as an in-memory repository used during a test. |
+| [Spy](#worked-case-and-test-double-choices) | A substitute or wrapper that records how it was called so the test can later inspect interactions. |
+| [Setup and teardown](#worked-case-and-test-double-choices) | Preparing per-test resources and releasing them afterward so cases start from a controlled state. |
+| [Parameterized test](#worked-case-and-test-double-choices) | Exercising the same behavior with several named input and expected-output combinations. |
+| [Expected exception](#worked-case-and-test-double-choices) | An exception type or outcome that a test requires when a particular input or failure path occurs. |
+| [Cleanup](#worked-case-and-test-double-choices) | Work that releases resources and restores state after a test, including when setup or the test body fails. |
+
+**Static/dynamic testing, coverage, and refactoring**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Static testing](#3-staticdynamic-testing-coverage-and-refactoring-286) | Examining code or requirements without running the program, for example through review or analysis tools. |
+| [Refactoring](#3-staticdynamic-testing-coverage-and-refactoring-286) | Restructuring code while preserving its observable behavior, supported by tests that can detect unintended changes. |
+| [Line coverage](#3-staticdynamic-testing-coverage-and-refactoring-286) | The proportion of measured executable lines or statements exercised. It gives no guarantee that their outputs were checked. |
+| [Branch coverage](#review-lint-and-meaningful-coverage) | The fraction of possible branch outcomes a test suite exercises. Testing only the true outcome of a single two-way decision covers one of its two branches, or 50%. |
+| [State transition](#review-lint-and-meaningful-coverage) | A change from one defined state to another in response to an event, such as moving from available to locked after repeated failures. |
+| [Mutation](#review-lint-and-meaningful-coverage) | A deliberately introduced code change used to see whether the existing tests detect a meaningful behavior difference. |
+
+**Debugging, assertions, and test techniques**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Black-box testing](#4-debugging-assertions-and-test-techniques-314) | Selecting test cases from externally visible inputs and requirements without relying on implementation details. |
+| [White-box testing](#4-debugging-assertions-and-test-techniques-314) | Selecting tests using knowledge of internal decisions, paths or data flow. |
+| [Breakpoint](#4-debugging-assertions-and-test-techniques-314) | A debugger setting that pauses execution at a chosen location so the programmer can inspect state. |
+| [Equivalence partition](#boundary-decision-and-state-evidence) | A group of inputs expected to behave alike, allowing representative cases to stand in for the group. |
+| [Boundary value](#boundary-decision-and-state-evidence) | An input at or immediately beside a limit, chosen to expose mistakes such as accepting one value too many. |
+| [Decision table](#boundary-decision-and-state-evidence) | A table pairing combinations of conditions with expected outcomes, used to design tests for combinations that matter. |
+| [Assertion](#reproducible-diagnosis-and-stable-validation) | A check comparing an observed condition or result with an expectation so a mismatch becomes visible. |
+| [Root cause](#reproducible-diagnosis-and-stable-validation) | The underlying defect or condition that explains a symptom and whose correction addresses the failure. |
+
 ## Places to learn
 
 This is not a complete list and is not intended to be consumed in full. Use one testing foundation, write tests for your own Python project, and use practice to find conceptual gaps.

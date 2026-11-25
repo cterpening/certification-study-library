@@ -214,6 +214,81 @@ Use owned or explicitly authorized FortiAnalyzer/FortiGate labs with synthetic i
 34. Know source/data/health prerequisites to diagnose evidence, but use the Analyst page—not the NSE 6 Administrator course—as exam scope.
 35. Active NSE 4, eligible route/version/status, topics, question/time/language, delivery/price, retake, validity, and renewal.
 
+## Key terms and phrases
+
+**Features and concepts**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Log collector](#security-fabric-and-log-collection) | A component that receives records from devices for storage or forwarding to an analysis system. |
+| [Administrative domain (ADOM)](#security-fabric-and-log-collection) | A FortiManager boundary for managing a selected set of devices, policies and administrative permissions. |
+| [Alert](#security-fabric-and-log-collection) | A notification that an observed condition met a detection criterion. An analyst needs context before treating it as an incident. |
+| [FortiAnalyzer](#security-fabric-and-log-collection) | A platform for collecting and analyzing supported Fortinet telemetry, including searching logs, generating reports and handling security events. |
+| [FortiGate](#security-fabric-and-log-collection) | The Fortinet firewall platform that applies routing, access policy and security inspection to traffic traversing its interfaces. |
+| [Fortinet Security Fabric](#security-fabric-and-log-collection) | Fortinet’s framework for integrating products so they can exchange context and coordinate visibility or policy-driven actions. |
+| [Log retention](#security-fabric-and-log-collection) | The period for which records remain available for an investigation or other defined purpose. Missing results outside that period cannot establish inactivity. |
+| [Network Time Protocol (NTP)](#security-fabric-and-log-collection) | A protocol for synchronizing clocks to time sources. Clock agreement helps validate certificates and align records from multiple systems. |
+| [Tenant](#security-fabric-and-log-collection) | An administrative or customer boundary in a shared service. Data, identities, configurations and actions must stay within the intended tenant. |
+| [Parsing](#parsing-and-normalization) | Breaking a raw log message into named fields, such as source address or action. |
+| [Normalization](#parsing-and-normalization) | Converting fields from different sources to a common representation so that the records can be compared. |
+| [Network address translation (NAT)](#parsing-and-normalization) | Rewriting source or destination addressing as traffic crosses a boundary. The translation and the permission to pass traffic are distinct decisions. |
+| [Raw event](#parsing-and-normalization) | The original source observation before a parser or normalization rule transforms its fields. It provides a reference for checking a derived result. |
+| [Severity](#parsing-and-normalization) | A rating of expected or observed impact. It differs from confidence, which expresses how strongly the evidence supports the assessment. |
+| [Virtual private network (VPN)](#parsing-and-normalization) | A protected logical connection over a shared network. Its permitted destinations and traffic depend on routes and access policy. |
+| [Pivot](#soc-features) | Following an entity from one relevant record to related evidence, such as taking a host from an alert and examining its activity around the same time. |
+| [Security operations center (SOC)](#soc-features) | The people, processes and technology responsible for monitoring, investigating and coordinating response to security events. |
+| [Widget](#soc-features) | An individual dashboard display driven by a query, metric or filter, such as event counts by source for the selected period. |
+
+**Log analysis**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Ingestion time](#search-with-purpose) | When a downstream system received or indexed the record, which may be substantially later than the event itself. |
+| [Normalized field](#search-with-purpose) | A field mapped to a common name or type across sources. An analyst should preserve the source’s value when checking an unexpected match. |
+| [Event time](#search-with-purpose) | When an event occurred according to the originating system. Clock offset or a missing timezone can place it incorrectly on an investigation timeline. |
+| [Log source](#search-with-purpose) | The device, application or service that generates a class of records. Correct source identification matters when attributing events or assessing coverage. |
+| [Incident](#analyze-events-and-incidents) | A case that groups evidence of related activity for investigation, ownership and resolution. |
+| [False positive](#analyze-events-and-incidents) | A detection that matches benign activity. Tuning requires understanding which condition made it match. |
+| [Hash](#analyze-events-and-incidents) | A fixed-length value derived from data. Comparing hashes can reveal a change without having to decrypt anything. |
+| [Threshold](#analyze-events-and-incidents) | The value or condition that triggers a rule or changes an operational decision, such as five matching events in a ten-minute interval. |
+| [FortiView](#fortiview-dashboards-and-troubleshooting-reports) | A set of views that summarize activity from available log data and let an analyst narrow a result to its underlying records. |
+| [Availability](#fortiview-dashboards-and-troubleshooting-reports) | Timely and reliable access to a resource by authorized users. A running server may still be unavailable to the business if a required dependency fails. |
+| [Dashboard](#fortiview-dashboards-and-troubleshooting-reports) | A set of visual summaries for a defined operational question. Filters, coverage and collection delays determine what the displayed totals represent. |
+
+**SOC operation and automation**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Event handler](#events-handlers-incidents-and-indicators) | Logic that recognizes matching log conditions and produces an event for follow-up. |
+| [Clock skew](#events-handlers-incidents-and-indicators) | A difference between clocks that can alter event ordering, token checks or correlation windows. Two time-stamped events can be closer than their recorded times suggest. |
+| [Grouping key](#events-handlers-incidents-and-indicators) | The attribute or combination of attributes used to combine observations, such as user plus hostname. A poor key can merge unrelated activity. |
+| [Indicator](#events-handlers-incidents-and-indicators) | An observable value or pattern used to find potentially relevant activity. A match needs source context and timing before it supports an incident conclusion. |
+| [True positive](#events-handlers-incidents-and-indicators) | A detection supported by evidence that the condition it was intended to identify really occurred. |
+| [Playbook](#playbooks-and-fabric-automation) | A defined sequence of investigative or response steps triggered by an event or an analyst. |
+| [Containment](#playbooks-and-fabric-automation) | Limiting the scope or ongoing effects of an incident, such as isolating the affected device under an approved response plan. |
+| [Enrichment](#playbooks-and-fabric-automation) | Adding context, such as asset criticality or previous sightings, to an indicator or event so an analyst can interpret it. |
+| [Idempotence](#playbooks-and-fabric-automation) | Making an operation safe to repeat without accumulating unintended effects. A retried request to create one case should still yield one case. |
+| [Rate limiting](#playbooks-and-fabric-automation) | Restricting the number or rate of operations in a defined interval to protect capacity. A limit applied per identity behaves differently from one applied per IP address. |
+| [Rollback](#playbooks-and-fabric-automation) | Returning a change to a known acceptable state when results do not meet defined conditions. A valid rollback also accounts for data changed in the meantime. |
+| [Schema](#playbooks-and-fabric-automation) | A definition of expected data structure, field types and constraints. A syntactically valid payload may still fail schema or business validation. |
+| [Workflow trigger](#playbooks-and-fabric-automation) | The event or condition that starts a workflow, such as creation of an incident matching specified criteria. |
+
+**Reports**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Report dataset](#4-reports) | The query-backed collection of results used to populate a report. A time filter or missing source can change its totals. |
+| [Dataset](#4-reports) | A named or scoped body of records used by a query or report. The source population, schema and time range determine the question it can answer. |
+| [Null](#4-reports) | A representation of absent or unknown data. Filtering for a value of zero does not necessarily select records where the field is null. |
+| [Aggregation](#4-reports) | Combining records by defined keys to calculate a result such as event count per user or average delay per site. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Authentication](#suspected-compromised-administrator) | The check that establishes who a user or device is. Authorization determines what that identity may do next. |
+| [Data freshness](#missing-weekly-report) | How recently the data needed for a decision was observed or updated. A successful query against stale records can give a misleading view of current state. |
+
 ## Places to learn
 
 This is a selective starting set, not a complete list and not a prescription to consume everything. Start with the exam page and official Analyst course, then choose references and labs that close measured gaps. Times are publisher-listed or planning estimates.

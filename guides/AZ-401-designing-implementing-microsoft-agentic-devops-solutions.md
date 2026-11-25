@@ -8,14 +8,16 @@ authority: unofficial
 review_status: source-validated
 last_verified: 2026-10-29
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-10-29
+upcoming_change_checked: 2026-11-20
 ---
 
 # AZ-401 Designing and Implementing Microsoft Agentic DevOps Solutions Study Guide
 
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-03.md#az-401)
+
 > **Independent AI-assisted resource — BETA; sources and objectives checked; human review pending.** Microsoft labels the credential and AZ-401 exam beta. The current [dedicated exam page](https://learn.microsoft.com/en-us/credentials/certifications/exams/az-401/) and [official AZ-401 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401) agree on five DevOps domains. The [credential landing page](https://learn.microsoft.com/en-us/credentials/certifications/agentic-devops-engineer-expert/) currently displays unrelated AB-100 objectives in an “Assessed on this exam” block; use AZ-401-specific sources for scope. The vendor source is authoritative. **VERIFY CURRENT** before scheduling or using Preview/AI features.
 
-**Current baseline, checked October 29, 2026:** Credential and exam are beta; the study-guide page says it was updated October 13, 2026. The exam page lists English, a passing score of 700, delayed beta results, and no retirement date. It does not state an exam duration or item count; Microsoft says exam prices vary by country or region, so check the current local amount when scheduling. No formal prerequisite credential was identified. These are observations, not guarantees; see the [coverage record](../docs/SOURCE-VALIDATION.md#az-401-coverage-record).
+**Current baseline, checked October 29, 2026:** Credential and exam are beta; the study-guide page says it was updated October 13, 2026. The exam page lists English, a passing score of 700, delayed beta results, and no retirement date. It does not state an exam duration or item count; Microsoft says exam prices vary by country or region, so check the current local amount when scheduling. To earn the expert credential, pass AZ-401 and either GH-300 or AZ-104. Microsoft states the combination in its launch announcement. [November source notes](../docs/research/2026-11-20-microsoft-refresh-group-03.md#az-401). These are observations, not guarantees; see the [coverage record](../docs/SOURCE-VALIDATION.md#az-401-coverage-record).
 
 ## How to use this guide
 
@@ -166,6 +168,8 @@ For an investigation, align time windows and inspect workflow logs, resource met
 
 ### Use the named AI observability agents carefully
 
+**Practice check.** An SRE agent's review mode asks for approval for Azure infrastructure changes. For an external action such as posting to Teams, assess tool access policies or hooks separately. Check the managed identity's permissions before assuming an approved change can execute. [Run Modes in Azure SRE Agent | Microsoft Learn](https://learn.microsoft.com/en-us/azure/sre-agent/run-modes)
+
 The blueprint names **Azure Copilot Observability Agent** and **Azure SRE Agent**; these are distinct capabilities. Current [Observability Agent documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/aiops/observability-agent-overview) describes natural-language investigation over telemetry. Its background autonomous alert-correlation/issue-creation mode has a separate Preview boundary; do not infer that it restarts resources or changes configuration autonomously. Read the [governance FAQ](https://learn.microsoft.com/en-us/azure/azure-monitor/aiops/observability-agent-governance-faq) and [telemetry best practices](https://learn.microsoft.com/en-us/azure/azure-monitor/aiops/observability-agent-best-practices) before enabling access. Regions, languages, data handling, retention and modes change: **VERIFY CURRENT**.
 
 Azure SRE Agent run modes distinguish review/approval from autonomous execution. Permissions and tool policies still determine what an action can do. Inspect the proposed action/target, validate its explanation against correlated logs/metrics/traces, require approval for consequential changes, and verify afterward. See [SRE Agent run modes](https://learn.microsoft.com/en-us/azure/sre-agent/run-modes). An AI-generated cause is a hypothesis, not a confirmed incident finding.
@@ -230,7 +234,7 @@ For cloud labs that provision resources, estimate cost, set a budget/alert, capt
 22. **What can Copilot agent logs reveal?** Sensitive prompts, outputs, code context and tool activity; define access, redaction and retention.
 23. **What follows an SRE agent action?** Verify target/permission, review or approve, observe, validate recovery and record the outcome.
 24. **How distinguish missing telemetry from health?** Check collection, time range, sampling and expected data volume.
-25. **What is safe beta preparation?** Recheck official scope/assessment availability; do not infer item counts, prerequisites or current Preview steps.
+25. **What is safe beta preparation?** Recheck official scope/assessment availability; confirm the additional GH-300 or AZ-104 exam requirement and current Preview steps.
 26. **When is an upstream package available to ordinary feed readers?** After a collaborator or higher has installed/saved it into the feed; distinguish feed views and reader permissions.
 27. **A test task passed, but the pipeline shows no test results or coverage. What do you inspect?** Agent/task compatibility, result and coverage file creation/format/path, publish-task inputs and run evidence; execution alone does not publish a gate signal.
 28. **Which reusable pipeline elements work in YAML?** Templates and variable templates/groups; Classic task groups are not supported in YAML. Check template provenance/parameters and explicitly authorize protected variable groups.
@@ -238,7 +242,81 @@ For cloud labs that provision resources, estimate cost, set a budget/alert, capt
 30. **Does GitHub Insights natively provide any arbitrary DevOps chart?** No. It exposes specific repository graphs subject to permissions/plan/data limits; derive custom flow metrics from an identified source and define the calculation.
 31. **Which Copilot logs should an incident responder collect?** Identify the client or cloud-agent surface, session/run ID and relevant timestamps/events, redact sensitive content, and avoid treating session logs, IDE diagnostic logs and Azure Monitor telemetry as interchangeable.
 
+## Key terms and phrases
+
+**Design and implement processes and communications**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Feedback loop](#trace-work-and-feedback-end-to-end) | A path that brings build, deployment or production results back to the people and work items that can act on them. |
+| [Work item](#trace-work-and-feedback-end-to-end) | A tracked unit of planned work, such as a feature or defect, that can be linked to implementation and release evidence. |
+| [Traceability](#trace-work-and-feedback-end-to-end) | The links connecting a work item to the code change, build and deployment that delivered it. |
+| [Deployment frequency](#trace-work-and-feedback-end-to-end) | How often a team delivers changes to production over a defined period. |
+| [Lead time for changes](#trace-work-and-feedback-end-to-end) | The elapsed time from a committed change to its deployment in production. |
+| [Tool contract](#document-and-integrate-with-bounded-agent-authority) | The declared inputs, outputs, permissions and failure behavior of an operation exposed to the agent. |
+| [Human-in-the-loop](#document-and-integrate-with-bounded-agent-authority) | A workflow design that asks a person to make a decision during execution when authority or judgment is required. |
+
+**Design and implement a source control strategy**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Branch](#migrate-and-recover-deliberately) | A movable name for a line of development. Creating one lets you work from an existing commit. |
+| [Pull request](#migrate-and-recover-deliberately) | A proposal to merge changes from one branch into another, with a place to discuss and review the differences. |
+| [Merge conflict](#migrate-and-recover-deliberately) | A disagreement in changes that Git needs a person to resolve before completing an integration. |
+| [Revert](#migrate-and-recover-deliberately) | Create a new commit undoing the effect of an earlier commit, keeping the intervening history visible. |
+
+**Design and implement build and release pipelines**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Quality gate](#packages-tests-and-quality-gates) | A set of checks a change or artifact must pass before it advances to the next stage. |
+| [Package feed](#packages-tests-and-quality-gates) | A repository that stores versioned packages for controlled publication and consumption. |
+| [Semantic versioning](#packages-tests-and-quality-gates) | A major.minor.patch convention communicating compatibility-breaking changes, compatible features and compatible fixes when the publisher follows that contract. |
+| [Immutable artifact](#packages-tests-and-quality-gates) | An identified build output that is promoted unchanged so tested and released content can be matched. |
+| [Unit test](#packages-tests-and-quality-gates) | A test focused on behavior of a small component in isolation from broader system dependencies. |
+| [Integration test](#packages-tests-and-quality-gates) | A test exercising the contract between components or systems together. |
+| [Workflow](#azure-pipelines-github-actions-and-agentic-workflows) | An automated sequence of jobs and steps started by a defined event, schedule or manual request. |
+| [Job](#azure-pipelines-github-actions-and-agentic-workflows) | A group of steps assigned to a runner. Dependencies can require another job to finish first. |
+| [Step](#azure-pipelines-github-actions-and-agentic-workflows) | One unit within a job that runs a command or calls a reusable action. |
+| [Reusable workflow](#azure-pipelines-github-actions-and-agentic-workflows) | A callable workflow that packages entire jobs and exposes inputs, secrets or outputs to its caller. |
+| [Agentic workflow](#azure-pipelines-github-actions-and-agentic-workflows) | A workflow that incorporates an AI agent to interpret input or propose changes under declared permissions and checks. |
+| [Infrastructure as code (IaC)](#deployment-iac-and-pipeline-operations) | Version-controlled definitions used to provision and change infrastructure through a repeatable process. |
+| [Pipeline stage](#deployment-iac-and-pipeline-operations) | A major grouping of pipeline jobs, often representing a build, test or deployment phase. |
+| [Blue-green deployment](#deployment-iac-and-pipeline-operations) | Maintaining two environments and switching traffic from the current version to a prepared replacement. |
+| [Feature flag](#deployment-iac-and-pipeline-operations) | A configuration switch that controls exposure of a feature independently of deploying its code. |
+| [Canary rollout](#deployment-iac-and-pipeline-operations) | An initial release to a limited share of traffic so the new version can be measured before broader use. |
+
+**Design and implement a security and compliance plan**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Workload identity federation](#identity-authorization-and-secretless-access) | A trust relationship that lets a pipeline exchange identity evidence for short-lived access without storing a long-lived secret. |
+| [OpenID Connect (OIDC)](#identity-authorization-and-secretless-access) | An identity protocol a workflow can use to exchange signed identity claims for short-lived cloud access. |
+| [Managed identity](#identity-authorization-and-secretless-access) | An identity managed by Azure that a workload can use to request access tokens without storing a client secret. |
+| [Service connection](#identity-authorization-and-secretless-access) | An authorization configuration through which a delivery pipeline authenticates to a target system. |
+| [Secret scanning](#protect-sensitive-information-and-scan) | Detection of credential material in repository content or development workflows so its owners can respond. |
+| [Software composition analysis](#protect-sensitive-information-and-scan) | Analysis of third-party components and dependencies for known vulnerabilities or other supply-chain concerns. |
+
+**Implement an instrumentation strategy**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Trace](#connect-delivery-and-workload-signals) | A linked record of the calls made for one request, useful for locating time or errors in retrieval, generation or tool use. |
+| [Cycle time](#connect-delivery-and-workload-signals) | Elapsed time between starting work and finishing it under a stated workflow definition. |
+| [Service-level indicator (SLI)](#connect-delivery-and-workload-signals) | An observed service metric, such as successful requests divided by all eligible requests. |
+| [Service-level objective (SLO)](#connect-delivery-and-workload-signals) | A measurable target for an aspect of service quality, such as the percentage of requests completed within a threshold. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Agent-assisted pull request](#agent-assisted-pull-request) | A proposed change prepared with an agent that still requires the repository's normal checks and review. |
+| [Progressive deployment](#progressive-deployment-and-sre-investigation) | Releasing a change to a limited audience or traffic share, then expanding it after checking service health. |
+| [Error budget](#progressive-deployment-and-sre-investigation) | The amount of failure or unavailability a service can tolerate while still meeting its SLO for a measurement period. |
+
 ## Places to learn
+
+**Suggested practice.** Use one backlog item to identify which task a coding agent could perform and where a maintainer must judge the result before release. 47 minutes for the module (Microsoft Learn, 7 units). [Introduction to agentic DevOps using Microsoft tools on Azure](https://learn.microsoft.com/en-us/training/modules/introduction-agentic-devops-microsoft-tools-azure/)
 
 This is a curated starting point, not a complete list or a requirement to consume every resource. The official study guide is the scope authority; supporting resources teach parts of the role and do not claim complete AZ-401 coverage.
 

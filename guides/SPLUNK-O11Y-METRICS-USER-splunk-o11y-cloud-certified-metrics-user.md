@@ -142,6 +142,83 @@ Build weekly comparison and population ratio for many ephemeral instances. Test 
 - [ ] I completed all ten labs and tested missing, late, empty, and recovery paths.
 - [ ] I rechecked the live SaaS, exam, and policy contracts.
 
+## Key terms and phrases
+
+**Get metrics in with OpenTelemetry**
+
+| Term or phrase | Meaning |
+|---|---|
+| [OpenTelemetry Collector](#1-get-metrics-in-with-opentelemetry-10) | A process that receives telemetry, processes it and exports it to a destination according to configured pipelines. |
+| [OpenTelemetry](#1-get-metrics-in-with-opentelemetry-10) | A shared set of interfaces, data formats and tools for collecting telemetry and sending it to a backend. |
+| [Processor](#1-get-metrics-in-with-opentelemetry-10) | The Collector component that transforms, filters or batches data before export. Its position can change what reaches the backend. |
+| [Receiver](#1-get-metrics-in-with-opentelemetry-10) | The Collector component that accepts or scrapes telemetry at the beginning of a pipeline. |
+| [Realm](#1-get-metrics-in-with-opentelemetry-10) | The deployment location used to identify the appropriate Splunk Observability Cloud endpoint. A valid token sent to the wrong endpoint may still fail. |
+| [Instrumentation](#1-get-metrics-in-with-opentelemetry-10) | Code or an integration that emits telemetry from a workload. A collector cannot export a measurement that was never produced. |
+| [Access token](#1-get-metrics-in-with-opentelemetry-10) | A credential whose configured scope authorizes requests such as ingesting telemetry. Keep its value out of diagnostic output. |
+| [Exporter](#1-get-metrics-in-with-opentelemetry-10) | The Collector component that sends telemetry to a destination. Verify both its delivery and the backend's receipt of a known metric. |
+
+**Metrics concepts**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Metric time series (MTS)](#2-metrics-concepts-15) | A sequence of timestamped values for a metric with a specific combination of dimensions. |
+| [Dimension](#2-metrics-concepts-15) | A key-value attribute that distinguishes one metric series from another, such as service name or deployment region. |
+| [Cardinality](#2-metrics-concepts-15) | The number of distinct dimension combinations for a metric. If all four services report from each of three regions and there are no other dimensions, the metric has 12 time series. |
+| [Resolution](#2-metrics-concepts-15) | Time granularity used for data points shown or returned. A five-minute rollup can hide a spike visible in one-minute results. |
+| [Delta](#2-metrics-concepts-15) | The change between two values. A cumulative request count moving from 80 to 92 increases by 12, assuming no reset. |
+| [Rate](#2-metrics-concepts-15) | Change divided by elapsed time. Sixty additional requests in 30 seconds means an average of two requests per second. |
+| [Datapoint](#2-metrics-concepts-15) | One measured value at a particular timestamp. Several datapoints sharing a metric and dimensions form a time series. |
+| [Property](#2-metrics-concepts-15) | Metadata associated with monitored entities that can assist exploration or filtering. Dimension sets determine time-series identity. |
+| [Counter](#2-metrics-concepts-15) | A cumulative measurement within a collection period or process lifetime. An increase from 100 to 160 over 30 seconds implies an average of 2 per second if no reset occurred. |
+| [Gauge](#2-metrics-concepts-15) | A measurement of current state, such as queue length. It can rise or fall between successive observations. |
+| [Host dimension](#2-metrics-concepts-15) | A dimension that identifies the host associated with measurements. Grouping a CPU metric by host shows whether one machine accounts for a fleet-wide spike. |
+
+**Built-in content and Kubernetes navigation**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Filter](#3-built-in-content-and-kubernetes-navigation-10) | Restricts the series entering a chart or calculation, such as keeping only the production environment before computing an error rate. |
+| [Navigator](#3-built-in-content-and-kubernetes-navigation-10) | An infrastructure view used to move from a fleet or cluster overview toward a particular workload and its metrics. |
+| [Chart time range](#3-built-in-content-and-kubernetes-navigation-10) | The interval of observations shown on a chart. Changing from one hour to one week gives a longer view and can change the resolution at which measurements are displayed. |
+| [Detector alert](#3-built-in-content-and-kubernetes-navigation-10) | The state raised for a signal when a detector rule triggers. A subscription can notify responders while the chart helps explain which measurements crossed the threshold. |
+
+**Visualizing metrics**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Rollup](#4-visualizing-metrics-15) | A calculation that summarizes the points within a time interval for each series, such as a mean or a maximum. |
+| [Event overlay](#4-visualizing-metrics-15) | Timestamped events displayed on the same chart as a metric. Overlaying a deployment on a latency chart helps determine whether their timing supports further investigation. |
+| [Dashboard group](#4-visualizing-metrics-15) | An organizational container for related dashboards. A service team can group its latency, capacity and dependency dashboards so responders know where to look. |
+
+**Detectors, muting, and efficient operational content**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Detector](#56-detectors-muting-and-efficient-operational-content-20) | A set of rules that evaluates a signal and produces alert events when defined conditions are met. |
+| [Muting rule](#56-detectors-muting-and-efficient-operational-content-20) | A rule that suppresses matching alert notifications for a defined scope or interval, useful during planned maintenance. |
+| [Extrapolation](#56-detectors-muting-and-efficient-operational-content-20) | Estimating values when new observations have not arrived. Check how this affects signals for short-lived or terminated workloads. |
+| [Detector event](#56-detectors-muting-and-efficient-operational-content-20) | A timestamped occurrence a detector records when its alert condition changes state. Compare the event time with the metric that triggered it. |
+
+**Analytics**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Aggregation](#7-analytics-15) | Combining multiple series into fewer results, such as summing request counts across instances grouped by service. |
+| [Calendar window](#7-analytics-15) | An interval aligned to a calendar boundary such as a day in a specified time zone. It need not contain the same observations as the last 24 hours. |
+| [Derived signal](#7-analytics-15) | A signal computed from other signals, such as errors divided by requests for the same population and interval. |
+| [Moving window](#7-analytics-15) | A calculation over the most recent interval as time advances, such as mean latency over the trailing ten minutes. |
+| [Timeshift](#7-analytics-15) | Aligning an earlier time interval with the present signal for comparison, for example comparing this Monday with the previous Monday. |
+| [Grouping](#7-analytics-15) | Keeping separate statistics for selected dimensions. Grouping by service preserves service-level differences a fleet-wide total can hide. |
+
+**Detector patterns**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Missing-data policy](#8-detector-patterns-15) | The rule for interpreting absent measurements. A missing report can mean a failed collector or an intentionally retired instance. |
+| [Detector duration](#8-detector-patterns-15) | How long a condition must persist to trigger. A duration can reduce transient noise at the cost of a later alert. |
+| [Hysteresis](#8-detector-patterns-15) | Using different trigger and clear conditions to prevent rapid alarm state changes near a threshold. |
+| [Percentile](#8-detector-patterns-15) | A value at or below which a given portion of observations falls. The 95th percentile describes the upper tail of latency better than its average alone. |
+
 ## Places to learn
 
 This is not a complete list, and it is not meant to be consumed end to end. Choose resources for measured gaps. Times are planning estimates; access, price, tenant features, and availability change.

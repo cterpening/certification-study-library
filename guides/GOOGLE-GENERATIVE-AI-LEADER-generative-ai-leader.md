@@ -548,6 +548,72 @@ Map older **Vertex AI**, **Vertex AI Agent Builder/Search**, **Vertex AI Studio*
 
 > **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
 
+## Key terms and phrases
+
+**Fundamentals of generative AI**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Foundation model](#a-connected-mental-model) | A model trained broadly enough to support many tasks. Prompts or further training can adapt it to a business use case. |
+| [Inference](#a-connected-mental-model) | Running a trained model on new input, for example scoring one loan application or generating text for a request. |
+| [Large language model (LLM)](#a-connected-mental-model) | A language model trained at scale to predict tokens in context. Fluent text is not itself evidence that a claim is correct. |
+| [Classification](#a-connected-mental-model) | Predicting a category, such as whether a claim needs manual review. A threshold can trade missed cases for extra reviews. |
+| [Reinforcement learning](#a-connected-mental-model) | Learning a policy for choosing actions from rewards or penalties observed during interaction with an environment. |
+| [Unsupervised learning](#a-connected-mental-model) | Learning structure from data without target labels. Grouping customers with similar activity is a clustering task. |
+| [Supervised learning](#a-connected-mental-model) | Training on examples that pair inputs with known target values. Predicting an invoice's category from past labeled invoices is one example. |
+| [Escalation](#create-summarize-discover-and-automate) | Routing a case to an accountable person or process when confidence, authority or risk falls outside the automation's limits. |
+| [Model registry](#data-determines-what-is-possible-and-permissible) | A catalog of model versions and their metadata. A deployment can reference a reviewed version with known training and evaluation records. |
+| [Data provenance](#data-determines-what-is-possible-and-permissible) | Evidence of a dataset's origin, ownership and transformation history. It supports decisions about permitted use and reproducibility. |
+| [Feature](#data-determines-what-is-possible-and-permissible) | An input used to make a prediction, such as purchases in the previous month. It must be available when the prediction will be made. |
+| [Multimodal model](#choose-model-and-layer-deliberately) | A model that can work with more than one kind of input or output, such as images and text. |
+| [Latency](#choose-model-and-layer-deliberately) | Elapsed time between a request and the result of interest. Specify whether it measures the first token, the completed response or the full business action. |
+| [Context window](#choose-model-and-layer-deliberately) | The model's token budget for an interaction. Instructions, source passages and conversation history consume space that could otherwise hold more text. |
+| [Clustering](#choose-model-and-layer-deliberately) | Grouping observations by similarity without predefined class labels. A team still needs to interpret and validate the groups. |
+| [Throughput](#choose-model-and-layer-deliberately) | The volume of work completed per unit time, such as predictions per second. A high rate can coexist with long waits for individual requests. |
+| [Bias](#choose-model-and-layer-deliberately) | A systematic distortion in data, model behavior or decisions. Unequal error rates across groups warrant investigation of the data and intended use. |
+
+**Google Cloud's generative AI offerings**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Service quota](#select-the-consumption-surface-first) | A limit on resource use or request volume within a specified scope. Reaching it can block work even when funds are available. |
+| [Cloud Storage](#search-grounding-rag-and-customer-experience) | Stores objects in buckets. A file-like object name does not by itself give an application the behavior of a shared POSIX file system. |
+| [Federated search](#search-grounding-rag-and-customer-experience) | Retrieving content from a connected external source at query time. Source availability and access permissions can therefore affect which results a user receives. |
+| [BigQuery](#search-grounding-rag-and-customer-experience) | Google's managed analytical warehouse for querying large datasets with SQL. Column selection and partition filters help reduce work. |
+| [Agent](#agents-and-tools) | A system that uses a model to select steps or call tools toward a goal. Its tool permissions determine which actions it can take. |
+| [Cloud Run](#agents-and-tools) | Runs containerized services or jobs on a managed platform. Choose a service for a request endpoint and a job for work that runs to completion. |
+| [Tool schema](#agents-and-tools) | The names, types and constraints used to describe a tool's input or output. Passing schema validation does not grant permission to act. |
+| [Idempotency](#agents-and-tools) | The property that retrying the same intended operation does not apply its effect twice. An order API can remember the request identifier. |
+| [Workload identity](#agents-and-tools) | An identity for software such as a service or batch job. It enables permissions to follow the workload itself. |
+
+**Techniques to improve model output**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Human in the loop](#diagnose-before-choosing-a-technique) | A design in which a person reviews or authorizes specified model-assisted decisions, with time, authority and evidence to intervene. |
+| [Few-shot prompting](#prompting-is-interface-design) | Including a small set of input-and-output examples in a prompt to show the model the desired pattern. |
+| [Prompt injection](#prompting-is-interface-design) | Untrusted input that attempts to change the instructions followed by a model. Applications should separate content from authority and constrain tool permissions. |
+| [Zero-shot prompting](#prompting-is-interface-design) | Asking the model to perform a task using instructions without showing a worked example in the prompt. |
+| [Grounding](#grounding-and-rag-boundaries) | Connecting an answer to evidence the model can use when responding, such as approved product documentation. |
+| [Retrieval-augmented generation (RAG)](#grounding-and-rag-boundaries) | A design that retrieves relevant material and places it in the model's context before it generates the answer. |
+| [Temperature](#sampling-and-limits) | A sampling setting that influences variation among generated outputs. Lowering it does not verify the claims in an answer. |
+| [Top-p sampling](#sampling-and-limits) | Sampling from the smallest set of likely next tokens whose combined probability meets a chosen threshold. |
+| [Guardrail](#continuous-evaluation-and-change-control) | A check or rule that screens model inputs, outputs or proposed actions against policy. Authorization for the underlying action still belongs in the executing service. |
+
+**Business strategies for successful gen AI**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Cost per successful outcome](#measure-impact-honestly) | The cost of running and reviewing a workflow divided by accepted outcomes. If a pilot costs $120 and produces 80 acceptable results, each successful outcome costs $1.50. |
+| [Change management](#measure-impact-honestly) | The work of preparing people, processes and responsibilities for a new way of working and checking that it is adopted effectively. |
+| [Security Command Center](#secure-ai-with-saif-and-defense-in-depth) | Collects security findings and posture information so owners can prioritize and investigate affected resources. |
+| [Least privilege](#secure-ai-with-saif-and-defense-in-depth) | Limiting an identity to the actions and resources required for its work. A read-only reporting job needs no permission to modify its source. |
+| [Responsible AI](#responsible-ai-is-operating-governance) | Practices for assessing an AI system's safety, fairness, privacy and accountability throughout its use. |
+| [Model card](#responsible-ai-is-operating-governance) | Documentation of a model's intended use, evaluation conditions and known limitations, useful when deciding whether to deploy it. |
+| [Pilot](#local-evidence-worksheet-access-evaluation-and-value) | A bounded trial in a real workflow with named users, measurable outcomes and conditions for expansion or rollback. |
+| [Evaluation rubric](#local-evidence-worksheet-access-evaluation-and-value) | The criteria used to judge an output or sequence of actions. Set them before comparing changes so passing results have a consistent meaning. |
+| [Identity and Access Management (IAM) role](#local-evidence-worksheet-access-evaluation-and-value) | A named collection of permissions. A policy binding grants the role to a principal at a chosen resource scope. |
+
 ## Places to learn
 
 This is not a complete list and is not meant to be consumed in full. Choose one current primary path, add the official guide/workbook and sample questions, and spend additional time on use-case, evaluation, agent-control and responsible-AI exercises. Provider estimates, catalogs, names and access terms change.

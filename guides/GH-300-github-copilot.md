@@ -1843,6 +1843,91 @@ Because Copilot changes quickly, recheck the official GH-300 outline and live Gi
 
 ---
 
+## Key terms and phrases
+
+**Complete blueprint coverage**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Fairness](#responsible-ai) | Assessing and addressing differences in how an AI system affects people or groups. |
+| [Transparency](#responsible-ai) | Making a system's use, capabilities and limitations understandable to the people affected by it. |
+| [Accountability](#responsible-ai) | Assigning people responsibility for design decisions, oversight and the consequences of system use. |
+| [Hallucination](#risks-and-limitations) | A plausible-sounding generated claim that the underlying source material does not support. |
+| [Prompt](#prompt-and-context-data) | The request and supporting instructions a user supplies to the model for one interaction. |
+| [Context](#prompt-and-context-data) | The code, conversation and selected supporting material available to the model for the current request. |
+| [Context window](#limitations-of-finite-context) | The token budget available to the model for a request. Instructions, conversation history and selected code compete for space, so a file open in the editor may supply only part of its contents. |
+| [Token](#limitations-of-finite-context) | A unit of model input or output that may represent part of a word, a whole word or another symbol. |
+| [Output constraint](#prompt-engineering-and-context-crafting) | A stated requirement for the shape or limits of a response, such as returning a short patch with tests. |
+| [Zero-shot prompting](#zero-shot-and-few-shot-prompting) | Requesting a task with instructions but without supplying an example of the expected result. |
+| [Few-shot prompting](#zero-shot-and-few-shot-prompting) | Including a small number of examples to show the expected pattern or output. |
+| [Prompt iteration](#iterative-prompt-flow) | Revising a request after inspecting its output, changing one instruction or piece of context to test its effect. |
+| [Verification](#iterative-prompt-flow) | Checking a suggestion against the real code, requirements and execution evidence before using it. |
+| [Refactoring](#refactoring-and-modernization) | Changing the structure of existing code while preserving its intended external behavior. |
+| [Assertion](#tests-and-assertions) | A test statement checking an expected property or result, such as the value returned for an edge case. |
+| [Acceptance criterion](#example-1-write-the-acceptance-criteria-before-asking-for-code) | An observable condition the receiving worker or reviewer can use to judge whether the handoff is complete. |
+| [Grounding](#example-2-supply-a-small-relevant-context-packet) | Supplying relevant source material so the assistant can base its response on inspectable evidence. |
+
+**GitHub foundations**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Pull request](#6-pull-requests) | A proposal to merge changes from one branch into another, with a place to discuss and review the differences. |
+| [Draft pull request](#draft-pull-requests) | A proposed change marked as work in progress so reviewers can see it before it is ready for final approval. |
+| [Team](#team) | An organization-level group used to manage repository access and coordinate work across members. |
+| [Code owner](#11-codeowners) | A person or team identified for review when a change affects matching paths in a repository. |
+| [Ruleset](#12-rulesets-and-branch-protection) | A collection of enforceable repository rules that applies to the branches, tags or repositories it targets. |
+| [Required status check](#12-rulesets-and-branch-protection) | A configured result that must succeed before a change can merge into a protected branch. |
+| [Deployment environment](#13-environments-and-deployment-approvals) | A named release target that can attach protection rules and scoped configuration to a deployment job. |
+
+**How organizational standards work**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Copilot policy](#15-copilot-policy) | An administrative setting that determines which Copilot capabilities are permitted within its scope. |
+| [Repository instructions](#repository-wide-instructions) | Persistent guidance that gives Copilot project conventions when it works in a repository. |
+| [Path-specific instructions](#path-specific-instructions) | Guidance selected for matching files, such as different coding conventions for frontend and backend paths. |
+| [Organization instructions](#organization-instructions) | Shared natural-language guidance that supplies organizational conventions to supported Copilot experiences. |
+| [Prompt file](#prompt-files) | A saved request template a developer can invoke for a recurring task. |
+| [Custom agent](#custom-agents) | A specialized assistant configuration with instructions and a chosen set of tools. |
+| [Agent skill](#agent-skills) | A package of instructions and supporting material for a particular task that an agent can use when relevant. |
+| [Model Context Protocol (MCP)](#mcp) | A protocol through which a client can discover and use tools or context supplied by a server. |
+
+**Current GitHub Copilot CLI**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Tool approval](#21-trust-and-permissions) | A decision permitting a specific class of operations or a particular tool invocation within the current execution context. |
+| [Plan mode](#23-plan-mode) | A working mode for analyzing a request and proposing steps before the user authorizes implementation. |
+| [Session](#24-sessions-and-context-management) | A particular conversation or work context whose messages and tool activity help interpret later requests. |
+| [Inline suggestion](#enable-ide-assistance-use-chat-and-diagnose-a-missing-suggestion) | A proposed code completion shown in the editor for the developer to inspect, accept or discard. |
+
+**Agent modes, sessions, sub-agents, and MCP**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Agent mode](#agent-mode) | An interactive editing workflow in which the assistant can plan changes, use tools and revise work in the development environment. |
+| [Copilot cloud agent](#copilot-cloud-agent) | A delegated agent that works in a remote environment and can propose changes through a pull request for review. |
+| [Sub-agent](#29-custom-agents-versus-sub-agents) | A delegated assistant tasked with a bounded portion of work and expected to return findings or a result. |
+| [Tool allowlist](#31-mcp-threat-model) | An explicit list of operations an agent may invoke within a defined task. |
+| [Copilot Space](#spaces) | A curated set of sources used as shared context for Copilot work on a particular subject. |
+| [GitHub Spark](#spark) | A GitHub experience for creating and iterating on applications using natural-language instructions. |
+| [Pull request summary](#pull-request-summaries) | An AI-generated description of proposed changes that a reviewer can check against the actual diff. |
+
+**Privacy, exclusions, public code, and safeguards**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Content exclusion](#34-content-exclusion) | A setting that excludes specified paths from supported Copilot features. **VERIFY CURRENT** for the client and feature in use. |
+| [Public code match](#35-suggestions-matching-public-code) | A suggestion resembling publicly available code, which may require reviewing references and licensing. |
+
+**Copilot administration, audit, and REST APIs**
+
+| Term or phrase | Meaning |
+|---|---|
+| [AI code review](#40-copilot-code-review-policy-and-standards) | Automated suggestions on a proposed change that reviewers evaluate alongside tests and human review. |
+| [Copilot seat](#41-seat-management-rest-api) | An assigned Copilot entitlement whose billing, activity and policy settings are separate administrative concerns. |
+| [Adoption metric](#43-usage-and-activity) | A measurement of use, such as active users in a period, which requires separate evidence of quality or business impact. |
+
 ## Places to learn
 
 ### Targeted blog reading

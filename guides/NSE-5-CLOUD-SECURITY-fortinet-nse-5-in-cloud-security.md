@@ -206,6 +206,76 @@ Trace authoritative DNS/GSLB answer, TTL/cache/ECS, synthetic and real health, c
 34. Authorized target, synthetic data/traffic, exact version/config, expected/negative tests, captured evidence, rollback, and cleanup.
 35. Active NSE 4, route eligibility/status/version, blueprint, contract/language, delivery/price, retake, validity, and renewal.
 
+## Key terms and phrases
+These terms span several electives. Use the linked sections to find the ones that apply to your chosen exam.
+
+**Common application-security foundations**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Origin server](#1-common-application-security-foundations) | The backend server that supplies the application response behind a protective proxy or delivery service. |
+| [Reverse proxy](#1-common-application-security-foundations) | A system that receives requests on an application's behalf and opens a separate connection to an origin. |
+| [Authentication](#1-common-application-security-foundations) | The check that establishes who a user or device is. Authorization determines what that identity may do next. |
+| [Federation](#1-common-application-security-foundations) | An arrangement that lets one security domain rely on identity information issued by another, under agreed trust and validation rules. |
+| [Least privilege](#1-common-application-security-foundations) | Giving an identity only the permissions needed for its task, for as long as it needs them. |
+| [Multifactor authentication (MFA)](#1-common-application-security-foundations) | Authentication using factors from two or more categories. A password and a second password both use the same knowledge factor. |
+| [Traffic baseline](#1-common-application-security-foundations) | A measured range of ordinary service traffic used to distinguish a material change from expected demand. |
+
+**FortiWeb 8.0 route**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Deployment mode](#deploy-and-configure) | How a security service is positioned relative to the traffic it observes or controls. Inline and out-of-path placement offer different enforcement options. |
+| [Encryption](#deploy-and-configure) | A reversible transformation that protects readable data using a key. Someone with the appropriate key can recover the original. |
+| [Fail closed](#deploy-and-configure) | A failure behavior in which access is denied or traffic stops when the enforcing component cannot make the required decision. |
+| [Fail open](#deploy-and-configure) | A failure behavior in which traffic can continue when a protective component is unavailable. It trades enforcement assurance for service continuity. |
+| [Failover](#deploy-and-configure) | Transfer of service to another HA member after a failure. Some sessions may need to reconnect. |
+| [Health check](#deploy-and-configure) | A defined test of reachability or service behavior used to decide whether a path or backend remains eligible. A TCP response may test less than an application transaction. |
+| [High availability (HA)](#deploy-and-configure) | A deployment that lets a peer take over when a device fails. The peer still needs working network paths and a valid configuration. |
+| [Web application firewall (WAF)](#protect-web-applications-and-apis) | A control that inspects web requests and responses and applies application-specific rules. |
+| [False positive](#protect-web-applications-and-apis) | An alert that classifies benign activity as a target condition. Repeated benign alerts can distort operational priorities. |
+| [Schema](#protect-web-applications-and-apis) | A definition of expected data structure, field types and constraints. A syntactically valid payload may still fail schema or business validation. |
+| [Authorization](#deliver-monitor-and-troubleshoot) | Determining whether a given identity may perform a specific action on the particular resource requested. |
+| [Load balancer](#deliver-monitor-and-troubleshoot) | A component that sends eligible requests or connections to selected backends using health and distribution policy. |
+| [Server pool](#deliver-monitor-and-troubleshoot) | A set of backends eligible to receive traffic for a virtual service after applying health checks, capacity and selection policy. |
+| [Session persistence](#deliver-monitor-and-troubleshoot) | A load-balancing choice that keeps related requests assigned to the same backend when the application needs continuity. |
+| [Source NAT (SNAT)](#deliver-monitor-and-troubleshoot) | Rewriting the source address of a packet, commonly so internal hosts can use a shared external address. |
+| [Vulnerability](#deliver-monitor-and-troubleshoot) | A weakness that can expose an asset to harm. Risk also depends on who or what could act on it and the consequences. |
+
+**FortiAppSec Cloud 26 route**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Anycast](#platform-architecture-and-onboarding-1020) | Addressing in which multiple locations advertise the same address and routing delivers a packet to one reachable instance. |
+| [Fortinet Security Fabric](#platform-architecture-and-onboarding-1020) | Fortinet’s framework for integrating products so they can exchange context and coordinate visibility or policy-driven actions. |
+| [Region](#platform-architecture-and-onboarding-1020) | A provider-defined geographical area containing cloud infrastructure. An application’s recovery design must account for dependencies in the selected region. |
+| [Rollback](#platform-architecture-and-onboarding-1020) | Returning a change to a known acceptable state when results do not meet defined conditions. A valid rollback also accounts for data changed in the meantime. |
+| [Tenant](#platform-architecture-and-onboarding-1020) | An administrative or customer boundary in a shared service. Data, identities, configurations and actions must stay within the intended tenant. |
+| [Webhook](#platform-architecture-and-onboarding-1020) | An event-driven message sent to a configured receiver. Retries or repeated delivery mean a consumer must recognize duplicate actions. |
+| [Schema validation](#web-application-and-api-protection-3040) | Checking an API message against its expected structure, field types and allowed values. |
+| [Content Security Policy (CSP)](#web-application-and-api-protection-3040) | Instructions from a web application that constrain which resources the browser may load or execute. |
+| [OpenAPI](#web-application-and-api-protection-3040) | A machine-readable description of an HTTP API’s paths, operations and schemas, useful for checking that observed requests match the published contract. |
+| [JavaScript Object Notation (JSON)](#web-application-and-api-protection-3040) | A text representation for structured data using objects, arrays, numbers, strings, booleans and null. Field names and types matter to consuming software. |
+| [Bot management](#bot-protection-and-traffic-management-3040) | The process of distinguishing legitimate automated clients from unwanted automation and applying a suitable response. |
+| [Global server load balancing (GSLB)](#bot-protection-and-traffic-management-3040) | Selection among application sites through DNS using criteria such as health or location. |
+| [DNS time to live (TTL)](#bot-protection-and-traffic-management-3040) | The period for which a resolver may cache an answer. It affects how quickly clients see a changed site selection. |
+| [Network address translation (NAT)](#bot-protection-and-traffic-management-3040) | Rewriting source or destination addressing as traffic crosses a boundary. The translation and the permission to pass traffic are distinct decisions. |
+| [Bot protection](#bot-protection-and-traffic-management-3040) | Distinguishing authorized automated clients from unwanted automated activity and applying a response appropriate to the application. |
+| [Enrichment](#monitoring-and-analytics-1020) | Adding context, such as asset criticality or previous sightings, to an indicator or event so an analyst can interpret it. |
+| [FortiAnalyzer](#monitoring-and-analytics-1020) | A platform for collecting and analyzing supported Fortinet telemetry, including searching logs, generating reports and handling security events. |
+| [FortiSIEM](#monitoring-and-analytics-1020) | A platform that collects and correlates events across infrastructure and security products to help identify and investigate incidents. |
+| [Log retention](#monitoring-and-analytics-1020) | The period for which records remain available for an investigation or other defined purpose. Missing results outside that period cannot establish inactivity. |
+| [Timestamp](#monitoring-and-analytics-1020) | A recorded time associated with an event. Distinguish source event time from collection or indexing time when building a timeline. |
+| [Triage](#monitoring-and-analytics-1020) | The first assessment of urgency, reliability, affected scope and next action for an alert or case. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Containment](#api-abuse-investigation) | Limiting the scope or ongoing effects of an incident, such as isolating the affected device under an approved response plan. |
+| [Evidence preservation](#api-abuse-investigation) | Maintaining the integrity and provenance of information needed for investigation, including original timestamps, collection method and access history. |
+| [Authoritative DNS](#regional-application-outage) | The service that publishes the records for a DNS zone. A recursive resolver may hold an older cached copy until its TTL expires. |
+
 ## Places to learn
 
 This is a selective starting set, not a complete list and not a prescription to consume everything. Choose one available route, then pick only resources that close its measured gaps. Times are publisher-listed or planning estimates.

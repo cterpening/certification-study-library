@@ -1,0 +1,2175 @@
+{
+  "date": "2026-11-24",
+  "scope": "Key terms and phrases and the directly related Oracle Resource Manager teaching correction. Scoped author and fresh-context AI review. No full-guide audit, human review or live lab.",
+  "rubric": "docs/AI-AUDIT.md (rubric 2, applied to the changes only)",
+  "packets": [
+    {
+      "packet": "01-python",
+      "guides": [
+        {
+          "exam": "PCEP-30-02",
+          "guide": "guides/PCEP-30-02-python-certified-entry-level-programmer.md",
+          "guide_sha256_utf8_lf": "325c1d0d5b0948daef413a20750bc72d2d36f1dc711877820eb7461881c88278",
+          "objective_snapshot": "data/objective-snapshots/pcep-30-02-official-objectives.txt",
+          "objective_sha256_bytes": "fc0a0b67b1f15a4430075b889978a82e162d98642f0b822768bc3796c322ca57",
+          "canonical_url": "https://pythoninstitute.org/pcep-exam-syllabus/",
+          "entry_count": 9
+        },
+        {
+          "exam": "PCAP-31-03",
+          "guide": "guides/PCAP-31-03-python-certified-associate-python-programmer.md",
+          "guide_sha256_utf8_lf": "4f84843e157dc37b01bf5b0dfe96aa12cc29d1e499b0a873b6effb1cea0e76ba",
+          "objective_snapshot": "data/objective-snapshots/pcap-31-03-official-objectives.txt",
+          "objective_sha256_bytes": "49589f9a3aaa766a2b2c1a640ac5dbbf7842c01d2517397519ab35ac86a060b0",
+          "canonical_url": "https://pythoninstitute.org/pcap-exam-syllabus",
+          "entry_count": 8
+        },
+        {
+          "exam": "PCPP-32-101",
+          "guide": "guides/PCPP-32-101-python-certified-professional-programmer-level-1.md",
+          "guide_sha256_utf8_lf": "3c1df704260c733af902122accd6cfe53c152dc9bc95c4b1644160b5acbd9e83",
+          "objective_snapshot": "data/objective-snapshots/pcpp-32-101-official-objectives.txt",
+          "objective_sha256_bytes": "899426a902f78aba1471211f0c1eeace8016a66eb8dac3407d013d97cdaafcd6",
+          "canonical_url": "https://pythoninstitute.org/pcpp1-exam-syllabus",
+          "entry_count": 8
+        },
+        {
+          "exam": "PCED-30-02",
+          "guide": "guides/PCED-30-02-python-certified-entry-level-data-analyst.md",
+          "guide_sha256_utf8_lf": "c2c67603628a73838d9b186125f5b1a30033d09cc4641726a15b6c2c2136338c",
+          "objective_snapshot": "data/objective-snapshots/pced-30-02-official-objectives.txt",
+          "objective_sha256_bytes": "27c6f07ec4b1e1063e5cbb6effd00e13406e15d8ee54a2e748c50dff86c24b90",
+          "canonical_url": "https://pythoninstitute.org/pced-exam-syllabus",
+          "entry_count": 8
+        },
+        {
+          "exam": "PCAD-31-02",
+          "guide": "guides/PCAD-31-02-python-certified-associate-data-analyst.md",
+          "guide_sha256_utf8_lf": "d7b88eced60e3363c8583efa308c4957aee3042c37b3bceff148ed6d08f9ab9e",
+          "objective_snapshot": "data/objective-snapshots/pcad-31-02-official-objectives.txt",
+          "objective_sha256_bytes": "c0e03d205f2bb78e1902508ab699839dee11825423eebe0da9a68832ca657275",
+          "canonical_url": "https://pythoninstitute.org/pcad-exam-syllabus",
+          "entry_count": 8
+        },
+        {
+          "exam": "PCET-30-01",
+          "guide": "guides/PCET-30-01-python-certified-entry-level-tester.md",
+          "guide_sha256_utf8_lf": "5ef21904b7729b76194bb5f4d102e18eb1bc99c9ac45201ebed19ddce096b9a2",
+          "objective_snapshot": "data/objective-snapshots/pcet-30-01-official-objectives.txt",
+          "objective_sha256_bytes": "2ba098e2104bb457258687cdcd07afcc3a531ab146c27b0022a9bebb5d793aec",
+          "canonical_url": "https://pythoninstitute.org/pcet-exam-syllabus",
+          "entry_count": 8
+        },
+        {
+          "exam": "PCAT-31-01",
+          "guide": "guides/PCAT-31-01-python-certified-associate-tester.md",
+          "guide_sha256_utf8_lf": "0828dfc20bc801dfe535106b005af4fe756b6fc6149a01b380bcfd8157c558c0",
+          "objective_snapshot": "data/objective-snapshots/pcat-31-01-official-objectives.txt",
+          "objective_sha256_bytes": "d93b7e4da42b76c0263e9ea2964b023f65d3aa2ac20d43384e0686e0dca7b724",
+          "canonical_url": "https://pythoninstitute.org/pcat-exam-syllabus",
+          "entry_count": 8
+        },
+        {
+          "exam": "PCES-30-01",
+          "guide": "guides/PCES-30-01-python-certified-entry-level-security-specialist.md",
+          "guide_sha256_utf8_lf": "7bd3bc737ebaafbefb62a042c6bb20b67c055694927915841fc66b7f00c097a3",
+          "objective_snapshot": "data/objective-snapshots/pces-30-01-official-objectives.txt",
+          "objective_sha256_bytes": "20acb805135538b41982013c936788e9324272472a840145161037a56ef6f38f",
+          "canonical_url": "https://pythoninstitute.org/pces-exam-syllabus",
+          "entry_count": 8
+        },
+        {
+          "exam": "PCEA-30-01",
+          "guide": "guides/PCEA-30-01-python-certified-entry-level-automation-specialist.md",
+          "guide_sha256_utf8_lf": "6aa52de50168348d886533ae0d51748daa7e697e209cf2cd97ba813caa6b481a",
+          "objective_snapshot": "data/objective-snapshots/pcea-30-01-official-objectives.txt",
+          "objective_sha256_bytes": "979e1a08fc3b397566e6549bae8cbfc70238b37d5652f54fadde55f1011c3598",
+          "canonical_url": "https://pythoninstitute.org/pcea-exam-syllabus",
+          "entry_count": 8
+        },
+        {
+          "exam": "PCEI-30-01",
+          "guide": "guides/PCEI-30-01-python-certified-entry-level-ai-specialist.md",
+          "guide_sha256_utf8_lf": "b5e1a8e898cef68eddada7c22af3ad9bd6faa3787e6db7545da69c6e0d479a02",
+          "objective_snapshot": "data/objective-snapshots/pcei-30-01-official-objectives.txt",
+          "objective_sha256_bytes": "e5fdda2adf0c6e0b035be96b13269a63f7ca7aaf52183c123a3d2af3a9a1301e",
+          "canonical_url": "https://pythoninstitute.org/pcei-exam-syllabus",
+          "entry_count": 8
+        }
+      ]
+    },
+    {
+      "packet": "02-language-web",
+      "guides": [
+        {
+          "exam": "CPE-20-01",
+          "guide": "guides/CPE-20-01-cpp-certified-entry-level-programmer.md",
+          "guide_sha256_utf8_lf": "016d6404fd14fcee86337fbb5cc2e9141bb0011a772caf20e32b878689f87d73",
+          "objective_snapshot": "data/objective-snapshots/cpe-20-01-official-objectives.txt",
+          "objective_sha256_bytes": "faf4501642933ecdc38efb270dda58a7db3a7c95a0028bda125b61544a34f60d",
+          "canonical_url": "https://cppinstitute.org/cpe",
+          "entry_count": 8
+        },
+        {
+          "exam": "CLE-10-01",
+          "guide": "guides/CLE-10-01-c-certified-entry-level-programmer.md",
+          "guide_sha256_utf8_lf": "77889a2f7308c30423698e0c56d6c66144d74676bc6928002ea4b0a3223004a8",
+          "objective_snapshot": "data/objective-snapshots/cle-10-01-official-objectives.txt",
+          "objective_sha256_bytes": "f21493c90c62aa1fb1ad68ccdd416655ddee8b9f5206a9b992f8829ddf5ee2dd",
+          "canonical_url": "https://cppinstitute.org/cle",
+          "entry_count": 9
+        },
+        {
+          "exam": "CLA-11-03",
+          "guide": "guides/CLA-11-03-c-certified-associate-programmer.md",
+          "guide_sha256_utf8_lf": "78ab437f13c0b8ea036e354eadd9d5f51be8a95f72f20ac48072e7820ea43ee4",
+          "objective_snapshot": "data/objective-snapshots/cla-11-03-official-objectives.txt",
+          "objective_sha256_bytes": "1fd3f2da7fd14a60373b645a0cc8bce7e56f0c09e3e4154cd0e5f99cf231f983",
+          "canonical_url": "https://cppinstitute.org/cla",
+          "entry_count": 8
+        },
+        {
+          "exam": "CLP-12-01",
+          "guide": "guides/CLP-12-01-c-certified-professional-programmer.md",
+          "guide_sha256_utf8_lf": "3b5c4d2d3c123235644117f7d9099fbc11157a1a4ec75fc3acb238f66d534fac",
+          "objective_snapshot": "data/objective-snapshots/clp-12-01-official-objectives.txt",
+          "objective_sha256_bytes": "8136ac8d71a73622dd2068d08b9c18d513c25adaefddbc64e42ea1e63f402091",
+          "canonical_url": "https://cppinstitute.org/clp",
+          "entry_count": 8
+        },
+        {
+          "exam": "CPA-21-02",
+          "guide": "guides/CPA-21-02-cpp-certified-associate-programmer.md",
+          "guide_sha256_utf8_lf": "4c8b3b4a582a495652e6ce77529d65c670a701edc3e9b7127faf029df039fb74",
+          "objective_snapshot": "data/objective-snapshots/cpa-21-02-official-objectives.txt",
+          "objective_sha256_bytes": "d0a9b639d54f64ab17900bdcd919f934945cba6d3b69efacd110611c861c6fdc",
+          "canonical_url": "https://cppinstitute.org/cpa",
+          "entry_count": 8
+        },
+        {
+          "exam": "CPP-22-02",
+          "guide": "guides/CPP-22-02-cpp-certified-professional-programmer.md",
+          "guide_sha256_utf8_lf": "adb16dd77329056f094c01bc6df6b408e17ae4ccdc95f0ba9dc38bb819e582f8",
+          "objective_snapshot": "data/objective-snapshots/cpp-22-02-official-objectives.txt",
+          "objective_sha256_bytes": "5869a199ee4632f40f020426475c4df284e614660e7ac83ca8595bb8709b6c7d",
+          "canonical_url": "https://cppinstitute.org/cpp",
+          "entry_count": 8
+        },
+        {
+          "exam": "JSE-40-01",
+          "guide": "guides/JSE-40-01-certified-entry-level-javascript-programmer.md",
+          "guide_sha256_utf8_lf": "37fc5ed985f190202b23673eb8835dcf50a6aac755115b627788f6b2236e7732",
+          "objective_snapshot": "data/objective-snapshots/jse-40-01-official-objectives.txt",
+          "objective_sha256_bytes": "8e693613dc23a1fcc95ab41c1675897253aa341764d5d9127ff7fc48aeb29e46",
+          "canonical_url": "https://jsinstitute.org/jse-certification",
+          "entry_count": 8
+        },
+        {
+          "exam": "JSA-41-01",
+          "guide": "guides/JSA-41-01-certified-associate-javascript-programmer.md",
+          "guide_sha256_utf8_lf": "1a53dfea813f769971ab1a06ef2165893e3adeba04cbb244d066fd32b5087482",
+          "objective_snapshot": "data/objective-snapshots/jsa-41-01-official-objectives.txt",
+          "objective_sha256_bytes": "1e5c9dc2e1613250bf36e64705be4635f57b864c5acc99d16b88d1b73e975fc3",
+          "canonical_url": "https://jsinstitute.org/jsa-exam-syllabus",
+          "entry_count": 8
+        },
+        {
+          "exam": "WDE-40-01",
+          "guide": "guides/WDE-40-01-certified-entry-level-web-developer.md",
+          "guide_sha256_utf8_lf": "2f865e71d12091523fdbfd6bb1f6a05938de4e560245adc531b7510e1a6b5729",
+          "objective_snapshot": "data/objective-snapshots/wde-40-01-official-objectives.txt",
+          "objective_sha256_bytes": "52a8efac1190c7d5b3e863705d0a0b7d4ea88ad72834aff4990051f21a9a7521",
+          "canonical_url": "https://jsinstitute.org/wde-exam-syllabus",
+          "entry_count": 8
+        },
+        {
+          "exam": "WDA-41-01",
+          "guide": "guides/WDA-41-01-certified-associate-web-developer.md",
+          "guide_sha256_utf8_lf": "5377cf76154448aa5a56c1fc99b157074a63102db877ce61370a6177858be836",
+          "objective_snapshot": "data/objective-snapshots/wda-41-01-official-objectives.txt",
+          "objective_sha256_bytes": "747cb21a7c881c08b2b1107feb22733528ec25faab300998abb8ac499af07c5d",
+          "canonical_url": "https://jsinstitute.org/wda-exam-syllabus",
+          "entry_count": 9
+        }
+      ]
+    },
+    {
+      "packet": "03-lakehouse-document",
+      "guides": [
+        {
+          "exam": "DATABRICKS-DATA-ANALYST-ASSOCIATE",
+          "guide": "guides/DATABRICKS-DATA-ANALYST-ASSOCIATE-databricks-data-analyst-associate.md",
+          "guide_sha256_utf8_lf": "e109911f50a8a8db6c50ae32c659dfd1dca6661aa5d6420eb2c65f62d04407ef",
+          "objective_snapshot": "data/objective-snapshots/databricks-data-analyst-associate-official-objectives.txt",
+          "objective_sha256_bytes": "84145c88ff4e5f780829aa1d29cf42da67b9a93e2be247338804daca37c7c6f4",
+          "canonical_url": "https://www.databricks.com/learn/certification/data-analyst-associate",
+          "entry_count": 8
+        },
+        {
+          "exam": "DATABRICKS-DATA-ENGINEER-ASSOCIATE",
+          "guide": "guides/DATABRICKS-DATA-ENGINEER-ASSOCIATE-databricks-data-engineer-associate.md",
+          "guide_sha256_utf8_lf": "bc34edd64ef5d59e7eb0d3a279775e441039ec77bb7effb7ac9d9d29310cfe8b",
+          "objective_snapshot": "data/objective-snapshots/databricks-data-engineer-associate-official-objectives.txt",
+          "objective_sha256_bytes": "b2dca1b253c3174ca4d8a4f5bdf9d7e16ef624a5f34f717476a12dd460853081",
+          "canonical_url": "https://www.databricks.com/learn/certification/data-engineer-associate",
+          "entry_count": 8
+        },
+        {
+          "exam": "DATABRICKS-DATA-ENGINEER-PROFESSIONAL",
+          "guide": "guides/DATABRICKS-DATA-ENGINEER-PROFESSIONAL-databricks-data-engineer-professional.md",
+          "guide_sha256_utf8_lf": "7595bbf4051403aadcb0a3f5d1fd2697a97b420c8b03de66532843bc84e31d03",
+          "objective_snapshot": "data/objective-snapshots/databricks-data-engineer-professional-official-objectives.txt",
+          "objective_sha256_bytes": "5c0abb75889e84a3f4b06c9ccf1d0598cf18b5e5edfaaa10e0b41b198fdd8c08",
+          "canonical_url": "https://www.databricks.com/learn/certification/data-engineer-professional",
+          "entry_count": 8
+        },
+        {
+          "exam": "DATABRICKS-MACHINE-LEARNING-ASSOCIATE",
+          "guide": "guides/DATABRICKS-MACHINE-LEARNING-ASSOCIATE-databricks-machine-learning-associate.md",
+          "guide_sha256_utf8_lf": "9e14a17b35a83e754e4c7b81e9c0030189f5867ee765fc7813a35ba02c041075",
+          "objective_snapshot": "data/objective-snapshots/databricks-machine-learning-associate-official-objectives.txt",
+          "objective_sha256_bytes": "2b414caebf75aedc46dc20a956d95c12d8f8b46213655d78768a1a7da9d56346",
+          "canonical_url": "https://www.databricks.com/learn/certification/machine-learning-associate",
+          "entry_count": 8
+        },
+        {
+          "exam": "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL",
+          "guide": "guides/DATABRICKS-MACHINE-LEARNING-PROFESSIONAL-databricks-machine-learning-professional.md",
+          "guide_sha256_utf8_lf": "8be917a4cbcc74a8b14fb24d506fbf2737b40d146efce859fc2c5e6995a46703",
+          "objective_snapshot": "data/objective-snapshots/databricks-machine-learning-professional-official-objectives.txt",
+          "objective_sha256_bytes": "90c1a98f80cb5fb4bf172563055256b49ba45f967caa4bbe4a0d5a9b88d124f7",
+          "canonical_url": "https://www.databricks.com/learn/certification/machine-learning-professional",
+          "entry_count": 8
+        },
+        {
+          "exam": "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE",
+          "guide": "guides/DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE-databricks-generative-ai-engineer-associate.md",
+          "guide_sha256_utf8_lf": "52e4860206bad95645a53da2a78996bd247b35e9b02188f5288f6d681e4b0847",
+          "objective_snapshot": "data/objective-snapshots/databricks-generative-ai-engineer-associate-official-objectives-2026-10-28.txt",
+          "objective_sha256_bytes": "a47e863fa23c1ae501d227ee36016714d90205d29a737e257cc8b63ca7d893dc",
+          "canonical_url": "https://www.databricks.com/learn/certification/genai-engineer-associate",
+          "entry_count": 8
+        },
+        {
+          "exam": "DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK",
+          "guide": "guides/DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK-databricks-associate-developer-apache-spark.md",
+          "guide_sha256_utf8_lf": "1f14a69e243057fbc2fe826f1343eec5a0b4b6845152b0f7a07b59108c252edd",
+          "objective_snapshot": "data/objective-snapshots/databricks-associate-developer-apache-spark-official-objectives.txt",
+          "objective_sha256_bytes": "b99b2c70f389d4626fa92d378fddd8caf10253dd24357b6bb5040e7f8a61430f",
+          "canonical_url": "https://www.databricks.com/learn/certification/apache-spark-developer-associate",
+          "entry_count": 8
+        },
+        {
+          "exam": "MONGODB-ASSOCIATE-DEVELOPER",
+          "guide": "guides/MONGODB-ASSOCIATE-DEVELOPER-mongodb-associate-developer.md",
+          "guide_sha256_utf8_lf": "07c410c80798c66269969fa4cb7f09ce5e58671e932e9f7e2d507345fa43baa3",
+          "objective_snapshot": "data/objective-snapshots/mongodb-associate-developer-official-objectives.txt",
+          "objective_sha256_bytes": "7b8ee2749e9fe5f87fefc15268c82cd74a50ee45e682d1c6c83a552568fc25d6",
+          "canonical_url": "https://learn.mongodb.com/courses/mongodb-associate-developer-exam-study-guide",
+          "entry_count": 8
+        },
+        {
+          "exam": "MONGODB-ASSOCIATE-DATA-MODELER",
+          "guide": "guides/MONGODB-ASSOCIATE-DATA-MODELER-mongodb-associate-data-modeler.md",
+          "guide_sha256_utf8_lf": "3ff54102804fb48ead66732126940f135b8a866850a2c76c96888e521c139a08",
+          "objective_snapshot": "data/objective-snapshots/mongodb-associate-data-modeler-official-objectives.txt",
+          "objective_sha256_bytes": "e3b9632a8ab5b80cdb74a5ccd557cdc482917c1aca71f116b804b9fd6f92fd10",
+          "canonical_url": "https://learn.mongodb.com/courses/associate-data-modeler-exam-study-guide",
+          "entry_count": 8
+        },
+        {
+          "exam": "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR",
+          "guide": "guides/MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR-mongodb-associate-atlas-administrator.md",
+          "guide_sha256_utf8_lf": "6049190c2c034cab9c87fd7389207075fffa65b98f2aaadab542e5804bf7a941",
+          "objective_snapshot": "data/objective-snapshots/mongodb-associate-atlas-administrator-official-objectives.txt",
+          "objective_sha256_bytes": "7aa8a437967e8cbf16e95913b1aeb5854e8acff22fd223793292aa2774d6a273",
+          "canonical_url": "https://learn.mongodb.com/courses/mongodb-associate-atlas-administrator-exam-study-guide",
+          "entry_count": 8
+        }
+      ]
+    },
+    {
+      "packet": "04-oci",
+      "guides": [
+        {
+          "exam": "1Z0-1085-26",
+          "guide": "guides/1Z0-1085-26-oracle-cloud-infrastructure-foundations-associate.md",
+          "guide_sha256_utf8_lf": "39b9147b10ae8cbbbccd7bf39fd919dc0a4c008244eb85670f858c27c02300af",
+          "objective_snapshot": "data/objective-snapshots/1z0-1085-26-official-objectives.txt",
+          "objective_sha256_bytes": "5aec5199922193f9bc9fd118e974eb73f0000ac5ea0e613899dd4d262e7ffd44",
+          "canonical_url": "https://mylearn.oracle.com/ou/learning-path/-become-an-oci-foundations-associate-2026/163541",
+          "entry_count": 8
+        },
+        {
+          "exam": "1Z0-1072-26",
+          "guide": "guides/1Z0-1072-26-oracle-cloud-infrastructure-architect-associate.md",
+          "guide_sha256_utf8_lf": "26381918c5ce61f9eb103bf29aa7d66136608a7363a6b57c855c0572d622c32f",
+          "objective_snapshot": "data/objective-snapshots/1z0-1072-26-official-objectives.txt",
+          "objective_sha256_bytes": "6caee9398656f4de4f4fe669606e1f9862380e061c8fcf9ca417e6516bec14a6",
+          "canonical_url": "https://mylearn.oracle.com/ou/learning-path/become-an-oci-architect-associate-2026/162234",
+          "entry_count": 8
+        },
+        {
+          "exam": "1Z0-1067-26",
+          "guide": "guides/1Z0-1067-26-oracle-cloud-infrastructure-cloud-operations-professional.md",
+          "guide_sha256_utf8_lf": "c5623c4ba5e950795f281a2efdc7accf695294c36f3d03e95b8abbaa2533f958",
+          "objective_snapshot": "data/objective-snapshots/1z0-1067-26-official-objectives.txt",
+          "objective_sha256_bytes": "317af1108a35b43d611bee316d39d933ccc8fa1ce00ecbb39336b2fb6c28260b",
+          "canonical_url": "https://mylearn.oracle.com/ou/learning-path/become-an-oci-cloud-operations-professional-2026/163390",
+          "entry_count": 8
+        },
+        {
+          "exam": "1Z0-1104-26",
+          "guide": "guides/1Z0-1104-26-oracle-cloud-infrastructure-security-professional.md",
+          "guide_sha256_utf8_lf": "d75958082ca8498522fbe8907968fa3360f942056f9a86e8bf4cc06be7d4f3c3",
+          "objective_snapshot": "data/objective-snapshots/1z0-1104-26-official-objectives.txt",
+          "objective_sha256_bytes": "1b662cc0bff386cddd4440bde7696ba376a37ebe61b18778b26ac4b9e1c5c7d8",
+          "canonical_url": "https://mylearn.oracle.com/ou/learning-path/become-a-cloud-security-professional-2026/163254",
+          "entry_count": 8
+        },
+        {
+          "exam": "1Z0-997-26",
+          "guide": "guides/1Z0-997-26-oracle-cloud-infrastructure-architect-professional.md",
+          "guide_sha256_utf8_lf": "8bdce0c1e10460e478d73b1b48f11ee7e8b09cb06e269f054e7e1a1fac40f6d6",
+          "objective_snapshot": "data/objective-snapshots/1z0-997-26-official-objectives-2026-10-28.txt",
+          "objective_sha256_bytes": "b4c394dda5d89f27be21c751719fec56f4dfea024de4c8484f57f7f8f016713b",
+          "canonical_url": "https://mylearn.oracle.com/ou/learning-path/become-an-oci-architect-professional-2026/163270",
+          "entry_count": 8
+        },
+        {
+          "exam": "1Z0-1084-26",
+          "guide": "guides/1Z0-1084-26-oracle-cloud-infrastructure-developer-professional.md",
+          "guide_sha256_utf8_lf": "264c61baa2902007bc5d69d3cfac2cc0eb772c1d5f4ecccd052e1b3b5cb09cb2",
+          "objective_snapshot": "data/objective-snapshots/1z0-1084-26-official-objectives.txt",
+          "objective_sha256_bytes": "c706ea7ed83d4723ad60bf7448bc9d3b722855607a38bbfb8dc0e425ce00b396",
+          "canonical_url": "https://mylearn.oracle.com/ou/learning-path/become-an-oci-developer-professional-2026/162926",
+          "entry_count": 8
+        },
+        {
+          "exam": "1Z0-1109-26",
+          "guide": "guides/1Z0-1109-26-oracle-cloud-infrastructure-devops-professional.md",
+          "guide_sha256_utf8_lf": "427b05958aa9d0b854f6e3d62379a8b6e5bc522656bd89b58fc64c100633b572",
+          "objective_snapshot": "data/objective-snapshots/1z0-1109-26-official-objectives-2026-10-28.txt",
+          "objective_sha256_bytes": "612091fa8f4d1b3e4ae3308cebefc426376bca96ab30c1904f089fa003ec7334",
+          "canonical_url": "https://mylearn.oracle.com/ou/learning-path/become-an-oci-devops-professional-2026/162852",
+          "entry_count": 8
+        },
+        {
+          "exam": "1Z0-1124-26",
+          "guide": "guides/1Z0-1124-26-oracle-cloud-infrastructure-networking-professional.md",
+          "guide_sha256_utf8_lf": "c32154ff8b6a0cdd50a3ec4db704dbfa68a8e70f73a19c1505aac9ef5f667dfe",
+          "objective_snapshot": "data/objective-snapshots/1z0-1124-26-official-objectives-2026-10-28.txt",
+          "objective_sha256_bytes": "eadc92b5507d0cdf761761716bb0a0a7f2da5ed8e01586a4f66b9f9d8277b324",
+          "canonical_url": "https://mylearn.oracle.com/ou/learning-path/become-an-oracle-cloud-infrastructure-networking-professional-2026/163340",
+          "entry_count": 8
+        },
+        {
+          "exam": "1Z0-1111-26",
+          "guide": "guides/1Z0-1111-26-oracle-cloud-infrastructure-observability-professional.md",
+          "guide_sha256_utf8_lf": "d04cc6834e4b9d8e818c4e0a82f8a3180a4887507eb58e4cd3e0ac3f31c5fcfb",
+          "objective_snapshot": "data/objective-snapshots/1z0-1111-26-official-objectives-2026-10-28.txt",
+          "objective_sha256_bytes": "8a7b952012b87ce70fe579d72120228e2ae5a167c8cedb1a407cbfee15548ccb",
+          "canonical_url": "https://mylearn.oracle.com/ou/learning-path/become-an-oracle-cloud-infrastructure-observability-professional-2026/162237",
+          "entry_count": 8
+        }
+      ]
+    },
+    {
+      "packet": "05-enterprise-software",
+      "guides": [
+        {
+          "exam": "1Z0-830",
+          "guide": "guides/1Z0-830-oracle-java-se-21-developer-professional.md",
+          "guide_sha256_utf8_lf": "1484e8bdf78ec0b0fe549ca2bbdaea06f1bcf18e58d24eaa68d5679cb21a0c9c",
+          "objective_snapshot": "data/objective-snapshots/1z0-830-official-objectives-2026-10-28.txt",
+          "objective_sha256_bytes": "bd1fd340edd5c2332449ae18f3dbc5e812b996519d91990f19aedd72b3b673a1",
+          "canonical_url": "https://learn.oracle.com/ols/learning-path/become-a-java-se-21-developer/117252/138845",
+          "entry_count": 8
+        },
+        {
+          "exam": "1Z0-171",
+          "guide": "guides/1Z0-171-oracle-ai-database-sql-associate.md",
+          "guide_sha256_utf8_lf": "bd1fe4259c4adfcf572037dc15eb61b3898ff22954e0b19eb06497b03c0b5aff",
+          "objective_snapshot": "data/objective-snapshots/1z0-171-official-objectives.txt",
+          "objective_sha256_bytes": "173476c88e31d3b1dc6a17d4b9b14a08cef4001a4cbb338b2f2edfa392e19dd7",
+          "canonical_url": "https://mylearn.oracle.com/ou/learning-path/earn-the-oracle-ai-database-sql-associate-credential/140075",
+          "entry_count": 8
+        },
+        {
+          "exam": "1Z0-182",
+          "guide": "guides/1Z0-182-oracle-ai-database-administration-associate.md",
+          "guide_sha256_utf8_lf": "f8ab529032d62e4874a72080c0bcaa8bd8e9ce3fb215f42110f4c154bba5e9ad",
+          "objective_snapshot": "data/objective-snapshots/1z0-182-official-objectives.txt",
+          "objective_sha256_bytes": "a845bcc5712adc0f0c6791a142ab1a9158f3ae269e346478d9d5f9bd31bf8a22",
+          "canonical_url": "https://mylearn.oracle.com/ou/learning-path/earn-the-oracle-ai-database-administration-associate-credential/140076",
+          "entry_count": 8
+        },
+        {
+          "exam": "C1000-206",
+          "guide": "guides/C1000-206-ibm-artificial-intelligence-associate.md",
+          "guide_sha256_utf8_lf": "3523977533a4d7420ecc40ef91ae30d3e9d6012d507f304c4d4751ccc8978d13",
+          "objective_snapshot": "data/objective-snapshots/c1000-206-official-objectives.txt",
+          "objective_sha256_bytes": "c239552411fb1fa7c111d883745dc679667e93a653190f33da114a7c6593acd2",
+          "canonical_url": "https://www.ibm.com/training/credentials/getExam/C1000-206",
+          "entry_count": 8
+        },
+        {
+          "exam": "C1000-185",
+          "guide": "guides/C1000-185-ibm-watsonx-generative-ai-engineer.md",
+          "guide_sha256_utf8_lf": "40171e9ca656e2f5507eb30c9866b74d983e9810c3790782ab56e184bf9a6bc1",
+          "objective_snapshot": "data/objective-snapshots/c1000-185-official-objectives.txt",
+          "objective_sha256_bytes": "51dcebdb7703b1489f09d109556e81d4d443d67976ecc562646859fd07fb350b",
+          "canonical_url": "https://www.ibm.com/training/credentials/getExam/C1000-185",
+          "entry_count": 8
+        },
+        {
+          "exam": "C1000-175",
+          "guide": "guides/C1000-175-ibm-security-qradar-siem-associate.md",
+          "guide_sha256_utf8_lf": "a76c73270156b80fa568b8376f51f1e0eca88f50bf5414bd8d2166cdc27ae32d",
+          "objective_snapshot": "data/objective-snapshots/c1000-175-official-objectives.txt",
+          "objective_sha256_bytes": "8dac7e2540d973f15e452b531615c21ca6c57cd568f83451e3727b13499577a6",
+          "canonical_url": "https://www.ibm.com/training/credentials/getExam/C1000-175",
+          "entry_count": 8
+        },
+        {
+          "exam": "C1000-156",
+          "guide": "guides/C1000-156-ibm-security-qradar-siem-administrator.md",
+          "guide_sha256_utf8_lf": "115e85669ef8991e2f4d9f8f6a2fc3e9445cbe403dfa982ceaf9d24e8b1157f1",
+          "objective_snapshot": "data/objective-snapshots/c1000-156-official-objectives.txt",
+          "objective_sha256_bytes": "ec021d4137eda41679372d22546464a274d70fc0de757b012c23a0b47582c43a",
+          "canonical_url": "https://www.ibm.com/training/credentials/getExam/C1000-156",
+          "entry_count": 8
+        },
+        {
+          "exam": "C1000-197",
+          "guide": "guides/C1000-197-ibm-guardium-data-protection-administrator.md",
+          "guide_sha256_utf8_lf": "0e437885d9ffe145a8e402fafbe8b3f68974f5414b8511a9dcda9c7d8d094510",
+          "objective_snapshot": "data/objective-snapshots/c1000-197-official-objectives.txt",
+          "objective_sha256_bytes": "8a4394d8553ab8134540536ffd7ffe37fdfecfc31cc1d06a4372bb511d6b473f",
+          "canonical_url": "https://www.ibm.com/training/credentials/getExam/C1000-197",
+          "entry_count": 8
+        },
+        {
+          "exam": "C1000-184",
+          "guide": "guides/C1000-184-ibm-db2-13-zos-database-administrator.md",
+          "guide_sha256_utf8_lf": "fb3fa0bd256e182aaff617ecce03d4d7d18b33e36721a5d908e753ee60d82461",
+          "objective_snapshot": "data/objective-snapshots/c1000-184-official-objectives.txt",
+          "objective_sha256_bytes": "05ab6453b1927d388a6a219430bfb8c479264dda8d81c62903a90955f439c47e",
+          "canonical_url": "https://www.ibm.com/training/credentials/getExam/C1000-184",
+          "entry_count": 8
+        },
+        {
+          "exam": "C3000-006",
+          "guide": "guides/C3000-006-ibm-bob-v2-developer-associate.md",
+          "guide_sha256_utf8_lf": "bd48f0c3168d3f9e0e7e5a9b04758bd08bdf63b1d14549c5268576c7c278d1c0",
+          "objective_snapshot": "data/objective-snapshots/c3000-006-official-objectives.txt",
+          "objective_sha256_bytes": "d4573e943742dfca30eb28ace0a1953957e412b90b8c4165c315cf9e617db5e3",
+          "canonical_url": "https://www.ibm.com/training/credentials/getExam/C3000-006",
+          "entry_count": 8
+        }
+      ]
+    },
+    {
+      "packet": "06-analytics-accelerated",
+      "guides": [
+        {
+          "exam": "SOL-C01",
+          "guide": "guides/SOL-C01-snowpro-associate-platform.md",
+          "guide_sha256_utf8_lf": "ad0f490c979620825eee258cb817fa1791047e66c69bcf228f9a436198f171b2",
+          "objective_snapshot": "data/objective-snapshots/SOL-C01-official-objectives.txt",
+          "objective_sha256_bytes": "a930a723415ca1b8dfead2cf60a3d27b6c7eaf3d336fefc301421adee9123d57",
+          "canonical_url": "https://publish-p93462-e887935.adobeaemcloud.com/content/dam/SnowProAssociateCertificationTransitionSnowflakeUniversityPlatformSkillsBadgeFAQs.pdf",
+          "entry_count": 8
+        },
+        {
+          "exam": "COF-C03",
+          "guide": "guides/COF-C03-snowpro-core.md",
+          "guide_sha256_utf8_lf": "6130bd2eef28b0130357c9268a73125f911c748f9c78fb3dc34bed567dcf7f7f",
+          "objective_snapshot": "data/objective-snapshots/COF-C03-official-objectives.txt",
+          "objective_sha256_bytes": "fc6ba90a44c29eb3380a41bd9609357c29247bbe81be8003dcbe89ad71a8063c",
+          "canonical_url": "https://learn.snowflake.com/en/certifications/snowpro-core-c03/",
+          "entry_count": 8
+        },
+        {
+          "exam": "DEA-C02",
+          "guide": "guides/DEA-C02-snowpro-advanced-data-engineer.md",
+          "guide_sha256_utf8_lf": "f5fd5a593de5969436c9b8b18b0e01bd1b6935f738244b429cb496ebb0b9fb07",
+          "objective_snapshot": "data/objective-snapshots/DEA-C02-official-objectives.txt",
+          "objective_sha256_bytes": "5d27aac73433eb775a5d5b4ff7af013755ab26751154413fa84c363d200909c0",
+          "canonical_url": "https://learn.snowflake.com/en/certifications/snowpro-advanced-dataengineer-C02/",
+          "entry_count": 8
+        },
+        {
+          "exam": "GES-C02",
+          "guide": "guides/GES-C02-snowpro-specialty-gen-ai.md",
+          "guide_sha256_utf8_lf": "9af2b0897062ac98051db63af23cd27c7c3c1297b38db0396fe4cbd108e89fe3",
+          "objective_snapshot": "data/objective-snapshots/GES-C02-official-objectives.txt",
+          "objective_sha256_bytes": "c6dcc5ab29e74f1ba7c2778039589727d42e249a5b732ff57bbbd323cf002a25",
+          "canonical_url": "https://learn.snowflake.com/en/certifications/snowpro-GenAI-C02/",
+          "entry_count": 9
+        },
+        {
+          "exam": "NCA-GENL",
+          "guide": "guides/NCA-GENL-nvidia-generative-ai-llms-associate.md",
+          "guide_sha256_utf8_lf": "48cb05d190725471db3ae78a52bfff3ac4e710a39183632baea09fc9098c2b77",
+          "objective_snapshot": "data/objective-snapshots/nca-genl-official-objectives.txt",
+          "objective_sha256_bytes": "58fd36ca6afda349885c81062a5a802dc3c11fd8b09c1eeb21dc98b5bc4f2b9d",
+          "canonical_url": "https://www.nvidia.com/en-us/learn/certification/generative-ai-llm-associate/",
+          "entry_count": 8
+        },
+        {
+          "exam": "NCA-AIIO",
+          "guide": "guides/NCA-AIIO-nvidia-ai-infrastructure-operations-associate.md",
+          "guide_sha256_utf8_lf": "87470731ed734461e108470f4d3a31ed76803bf8dea16000e6664696d4af0932",
+          "objective_snapshot": "data/objective-snapshots/nca-aiio-official-objectives.txt",
+          "objective_sha256_bytes": "99feae0bb9bd6c7ade80eddfb848aaddde0582ee7a739302e65411babb367ed7",
+          "canonical_url": "https://www.nvidia.com/en-us/learn/certification/ai-infrastructure-operations-associate/",
+          "entry_count": 8
+        },
+        {
+          "exam": "NCP-AIO",
+          "guide": "guides/NCP-AIO-nvidia-ai-operations-professional.md",
+          "guide_sha256_utf8_lf": "f54af722a6342342c9f8840a36e77daadc9262eb607a07ffdd0b916b7ecb5669",
+          "objective_snapshot": "data/objective-snapshots/ncp-aio-official-objectives.txt",
+          "objective_sha256_bytes": "3d4312635eed1b9a05823d40d95a8a8e75dd8852e7b971bee7a799b301c86abf",
+          "canonical_url": "https://www.nvidia.com/en-us/learn/certification/ai-operations-professional/",
+          "entry_count": 8
+        }
+      ]
+    },
+    {
+      "packet": "aws-architecture-specialty",
+      "guides": [
+        {
+          "exam": "SAA-C03",
+          "guide": "guides/SAA-C03-aws-certified-solutions-architect-associate.md",
+          "guide_sha256_utf8_lf": "9f9280aa8b5f0bcc91589be041c99209a1bce5d99e574ceacb65d9a3afcaa07b",
+          "objective_snapshot": "data/objective-snapshots/saa-c03-official-objectives.txt",
+          "objective_sha256_bytes": "1bc3fe0024229545cd208ae873b0d02844ef3553bbc94eb99fea07be60b717ce",
+          "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/solutions-architect-associate-03.html",
+          "entry_count": 8
+        },
+        {
+          "exam": "DOP-C02",
+          "guide": "guides/DOP-C02-aws-certified-devops-engineer-professional.md",
+          "guide_sha256_utf8_lf": "6b67ecd2cb7259a9bb7c5328c9c418222389a4b4e2c4e1d3764f4256ca502efb",
+          "objective_snapshot": "data/objective-snapshots/dop-c02-official-objectives.txt",
+          "objective_sha256_bytes": "b9484c48770968d736ef141383ef32e85b8f372496e29adeedb9d2d7b4a9f1d9",
+          "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02.html",
+          "entry_count": 8
+        },
+        {
+          "exam": "AIP-C01",
+          "guide": "guides/AIP-C01-aws-certified-generative-ai-developer-professional.md",
+          "guide_sha256_utf8_lf": "ae0969d387e1d22db66082658c45267aa311a738d04d50b3827042a08816b2e4",
+          "objective_snapshot": "data/objective-snapshots/aip-c01-official-objectives.txt",
+          "objective_sha256_bytes": "b5654086954cdac1322092486e79c2b90267a3848117954fd153f40b490597cf",
+          "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/ai-professional-01.html",
+          "entry_count": 8
+        },
+        {
+          "exam": "SAP-C02",
+          "guide": "guides/SAP-C02-aws-certified-solutions-architect-professional.md",
+          "guide_sha256_utf8_lf": "bc3142a5a8448af34c116e601a4add7e7086898ecbb49c07b456d360e036d0fa",
+          "objective_snapshot": "data/objective-snapshots/sap-c02-official-objectives.txt",
+          "objective_sha256_bytes": "a26c57062d9b296a68c6977a3eccb000e1dd64d57c67ffff43a4776da813588d",
+          "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-professional-02/solutions-architect-professional-02.html",
+          "entry_count": 8
+        },
+        {
+          "exam": "ANS-C01",
+          "guide": "guides/ANS-C01-aws-certified-advanced-networking-specialty.md",
+          "guide_sha256_utf8_lf": "3cb404c1abf6d30fa09d1eea8591608efe261cc3de0fe7e30cffc0950a0897d6",
+          "objective_snapshot": "data/objective-snapshots/ans-c01-official-objectives.txt",
+          "objective_sha256_bytes": "6e641ee1f39d66f182de5da5a84b2664cae1c119bc4377faa184f6de05d64e01",
+          "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/advanced-networking-specialty-01.html",
+          "entry_count": 8
+        },
+        {
+          "exam": "SCS-C03",
+          "guide": "guides/SCS-C03-aws-certified-security-specialty.md",
+          "guide_sha256_utf8_lf": "de106f7da48918c6f7e0c605a5b7e92646bbf0c1d2fae366a8c37aed546f1cfc",
+          "objective_snapshot": "data/objective-snapshots/scs-c03-official-objectives.txt",
+          "objective_sha256_bytes": "aa33d827db1d7b239d34aca34ad3c1a6be21faf2d0d6b34d03d329f4d46d177f",
+          "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03.html",
+          "entry_count": 8
+        }
+      ]
+    },
+    {
+      "packet": "aws-foundations-associate",
+      "guides": [
+        {
+          "exam": "CLF-C02",
+          "guide": "guides/CLF-C02-aws-certified-cloud-practitioner.md",
+          "guide_sha256_utf8_lf": "d98cfdead6ee1d9d2718e928227859f0f998a5f4cf4f3f7f1a318a54d3e66775",
+          "objective_snapshot": "data/objective-snapshots/clf-c02-official-objectives.txt",
+          "objective_sha256_bytes": "f7672b5ced01847d85eb6909ef171881785be1263868286068422231d7b7a5da",
+          "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02.html",
+          "entry_count": 8
+        },
+        {
+          "exam": "AIF-C01",
+          "guide": "guides/AIF-C01-aws-certified-ai-practitioner.md",
+          "guide_sha256_utf8_lf": "faa69c7d124b956195cbdc599304a6790a23b937877ba9adeadbd2f4fb93cdec",
+          "objective_snapshot": "data/objective-snapshots/aif-c01-official-objectives.txt",
+          "objective_sha256_bytes": "7ff78e9b2aac28fcc1440e8465c85e881dca3010fdb837e51de552f6ae5118f6",
+          "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html",
+          "entry_count": 8
+        },
+        {
+          "exam": "AIB-C01",
+          "guide": "guides/AIB-C01-aws-certified-ai-business-strategist.md",
+          "guide_sha256_utf8_lf": "5161e5a06c7291cd36e393341e9d275af210276dccd898b49b0594823a5faecc",
+          "objective_snapshot": "data/objective-snapshots/aib-c01-official-objectives.txt",
+          "objective_sha256_bytes": "84365cfe2180906cec213c48075b2823a10204c07eb9b01f983fb0817a58255d",
+          "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01.html",
+          "entry_count": 8
+        },
+        {
+          "exam": "SOA-C03",
+          "guide": "guides/SOA-C03-aws-certified-cloudops-engineer-associate.md",
+          "guide_sha256_utf8_lf": "b260646a0d1d51fa5b27df60d0e8b72b5bddc3e1fe6971be2efbe160e4c97da7",
+          "objective_snapshot": "data/objective-snapshots/soa-c03-official-objectives.txt",
+          "objective_sha256_bytes": "0ad821a84709cd5d39eb724aa1b3c040d14f67e4e705ac3fdc7f129021cec466",
+          "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/sysops-administrator-associate-03.html",
+          "entry_count": 8
+        },
+        {
+          "exam": "DEA-C01",
+          "guide": "guides/DEA-C01-aws-certified-data-engineer-associate.md",
+          "guide_sha256_utf8_lf": "64c978f6ebf230015ea5e179b75f12201b77929da1c7eb0a618fc8d7b5e8859a",
+          "objective_snapshot": "data/objective-snapshots/dea-c01-official-objectives.txt",
+          "objective_sha256_bytes": "5a5952f0c845f8757499fade268fd25b2689663589c2734d82379d2a49c0196f",
+          "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/data-engineer-associate-01.html",
+          "entry_count": 8
+        },
+        {
+          "exam": "DVA-C02",
+          "guide": "guides/DVA-C02-aws-certified-developer-associate.md",
+          "guide_sha256_utf8_lf": "c24e078f9f775cbd401343414d4bde7142bbf7c6f3236b45d044841236b2958e",
+          "objective_snapshot": "data/objective-snapshots/dva-c02-official-objectives.txt",
+          "objective_sha256_bytes": "8fbdbecdbab1931b6307b0afcf33b5bf3cc81937d40563ea4209c4eb18db8b0c",
+          "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02.html",
+          "entry_count": 8
+        },
+        {
+          "exam": "MLA-C01",
+          "guide": "guides/MLA-C01-aws-certified-machine-learning-engineer-associate.md",
+          "guide_sha256_utf8_lf": "6c25199f5056699545e5961a3f19e1daf307679ff3339b25cbbc3c90a5536168",
+          "objective_snapshot": "data/objective-snapshots/mla-c01-official-objectives.txt",
+          "objective_sha256_bytes": "91c5a0ed3fae7d2606bfed410b968599e65b38d058eb0047ef72d7b03e0ab4b7",
+          "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-01/machine-learning-engineer-associate-01.html",
+          "entry_count": 8
+        },
+        {
+          "exam": "MLA-C02",
+          "guide": "guides/MLA-C02-aws-certified-machine-learning-engineer-associate.md",
+          "guide_sha256_utf8_lf": "03bb7526c4f1136913754aff92444d81836d24f43580a637a16e202e0f7e15ab",
+          "objective_snapshot": "data/objective-snapshots/mla-c02-official-objectives.txt",
+          "objective_sha256_bytes": "81bd9db7252f56b633e9666c692b98ad8806a21b3602497b82600522070299d7",
+          "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02.html",
+          "entry_count": 8
+        }
+      ]
+    },
+    {
+      "packet": "fortinet-advanced",
+      "guides": [
+        {
+          "exam": "NSE-6-SECURE-NETWORKING",
+          "guide": "guides/NSE-6-SECURE-NETWORKING-fortinet-nse-6-secure-networking.md",
+          "guide_sha256_utf8_lf": "0434c232940d7dea74b25dd859270d5ff0bb12566a94550b109db252f4063463",
+          "objective_snapshot": "data/objective-snapshots/nse-6-secure-networking-official-objectives.txt",
+          "objective_sha256_bytes": "590e6c7dcd2829ce07adf647aa99c5edaa7039cf28bfbe0a4784c8be312151a3",
+          "canonical_url": "https://training.fortinet.com/local/staticpage/view.php?page=nse_6_secure_networking",
+          "entry_count": 8
+        },
+        {
+          "exam": "NSE-6-SASE",
+          "guide": "guides/NSE-6-SASE-fortinet-nse-6-sase.md",
+          "guide_sha256_utf8_lf": "3d4543c6acbb508ce23bb8d6c0b7a6c0f4ec1504ef142d8d2fb806aa44ce4ee3",
+          "objective_snapshot": "data/objective-snapshots/nse-6-sase-official-objectives.txt",
+          "objective_sha256_bytes": "ba1e06514a146c4221881b88534a5d0df0ab56482d0207b0777f2996c7078249",
+          "canonical_url": "https://training.fortinet.com/local/staticpage/view.php?page=nse_6_sase",
+          "entry_count": 8
+        },
+        {
+          "exam": "NSE-6-CLOUD-SECURITY",
+          "guide": "guides/NSE-6-CLOUD-SECURITY-fortinet-nse-6-cloud-security.md",
+          "guide_sha256_utf8_lf": "444e845afaa0e95428e7ea41cd43c49e827fccf878f17f00d41f83d9402d6dbe",
+          "objective_snapshot": "data/objective-snapshots/nse-6-cloud-security-official-objectives.txt",
+          "objective_sha256_bytes": "a8935c5b12491b416808caecccd7a584c8196fe004fc81aab36fd4683504c13d",
+          "canonical_url": "https://training.fortinet.com/local/staticpage/view.php?page=nse_6_cloud_security",
+          "entry_count": 8
+        },
+        {
+          "exam": "NSE-6-SECURITY-OPERATIONS",
+          "guide": "guides/NSE-6-SECURITY-OPERATIONS-fortinet-nse-6-security-operations.md",
+          "guide_sha256_utf8_lf": "576fdf94b86e15b21e4f818256db52ab8e209e9cf835011045aee079c85fc4f1",
+          "objective_snapshot": "data/objective-snapshots/nse-6-security-operations-official-objectives.txt",
+          "objective_sha256_bytes": "386ab01206c22c4a33a8c1f7c38ea5ddf34a814606c3f1cf56c772a0d4a7ecab",
+          "canonical_url": "https://training.fortinet.com/local/staticpage/view.php?page=nse_6_security_operations",
+          "entry_count": 8
+        },
+        {
+          "exam": "NSE-7-SECURE-NETWORKING",
+          "guide": "guides/NSE-7-SECURE-NETWORKING-fortinet-nse-7-secure-networking.md",
+          "guide_sha256_utf8_lf": "8e7b306ab9ddc17952fe016dc22406665da246b801cb0348a5949b1228587bfa",
+          "objective_snapshot": "data/objective-snapshots/nse-7-secure-networking-official-objectives.txt",
+          "objective_sha256_bytes": "efd3f0187c4e4561e7eef93b46cfa08fe8082fe5261beff0e9e763c85bda60ca",
+          "canonical_url": "https://training.fortinet.com/local/staticpage/view.php?page=secure_networking_architect_exam",
+          "entry_count": 9
+        },
+        {
+          "exam": "NSE-7-SASE",
+          "guide": "guides/NSE-7-SASE-fortinet-nse-7-sase.md",
+          "guide_sha256_utf8_lf": "bf8cfa4b30bc36c671f872ef24d7fcaf2b5aaf4dc1fc928640d8043bb5f08460",
+          "objective_snapshot": "data/objective-snapshots/nse-7-sase-official-objectives.txt",
+          "objective_sha256_bytes": "d16c69aa3a18263d75937cc625556bbd11a697b6bf12d7d70906adac4f181a68",
+          "canonical_url": "https://training.fortinet.com/local/staticpage/view.php?page=fortisase_architect_exam",
+          "entry_count": 8
+        },
+        {
+          "exam": "NSE-7-CLOUD-SECURITY",
+          "guide": "guides/NSE-7-CLOUD-SECURITY-fortinet-nse-7-cloud-security.md",
+          "guide_sha256_utf8_lf": "54301b2ae50e19b4abb14c1f6b4b1c0c9c6f03c3e7db7aac2181704fa5596a69",
+          "objective_snapshot": "data/objective-snapshots/nse-7-cloud-security-official-objectives.txt",
+          "objective_sha256_bytes": "22927de9215a1c05ce16cec640852c25dc4d17a071a791dcd2c5a87ff1d3ba72",
+          "canonical_url": "https://training.fortinet.com/local/staticpage/view.php?page=public_cloud_security_architect_exam",
+          "entry_count": 8
+        },
+        {
+          "exam": "NSE-7-SECURITY-OPERATIONS",
+          "guide": "guides/NSE-7-SECURITY-OPERATIONS-fortinet-nse-7-security-operations.md",
+          "guide_sha256_utf8_lf": "1e2a5098611b21a4d63089997534a34c449733d0420cf0e1678937f86a683362",
+          "objective_snapshot": "data/objective-snapshots/nse-7-security-operations-official-objectives.txt",
+          "objective_sha256_bytes": "8eff12fa2587ffee934184ef4a675da3458ab62158286a2537edba75e286e39c",
+          "canonical_url": "https://training.fortinet.com/local/staticpage/view.php?page=security_operations_architect_exam",
+          "entry_count": 8
+        },
+        {
+          "exam": "NSE-8",
+          "guide": "guides/NSE-8-fortinet-nse-8-cybersecurity-expert.md",
+          "guide_sha256_utf8_lf": "52e934defbf0e5e2746cabde6b69541f305fcf861cb8f575382107e75f48de27",
+          "objective_snapshot": "data/objective-snapshots/nse-8-official-objectives-2026-10-28.txt",
+          "objective_sha256_bytes": "6767d315d7b635b37789c7309b04eac13b11288bc14a069fb6de98036dc78be1",
+          "canonical_url": "https://training.fortinet.com/local/staticpage/view.php?page=nse_8",
+          "entry_count": 9
+        }
+      ]
+    },
+    {
+      "packet": "fortinet-foundations-administration",
+      "guides": [
+        {
+          "exam": "NSE-1-CYBERSECURITY",
+          "guide": "guides/NSE-1-CYBERSECURITY-fortinet-nse-1-in-cybersecurity.md",
+          "guide_sha256_utf8_lf": "4b1b51de22725d022bafbf3e76cd4fe90d647f94419fac43ddbe0bf3caef5924",
+          "objective_snapshot": "data/objective-snapshots/nse-1-cybersecurity-official-objectives.txt",
+          "objective_sha256_bytes": "43efb7dbce9188ebb6c2048f955015564de7bec3e07a0530788fe4821284967c",
+          "canonical_url": "https://training.fortinet.com/local/staticpage/view.php?page=nse_1",
+          "entry_count": 8
+        },
+        {
+          "exam": "NSE-2-CYBERSECURITY",
+          "guide": "guides/NSE-2-CYBERSECURITY-fortinet-nse-2-in-cybersecurity.md",
+          "guide_sha256_utf8_lf": "ecf98caad934e9d792f97c5f5ad2c2a9f4824f11243c8e7025ac77d27e3d2f8b",
+          "objective_snapshot": "data/objective-snapshots/nse-2-cybersecurity-official-objectives.txt",
+          "objective_sha256_bytes": "6a8c018a66d7d93364d14a95c107186a205d5d0e7d042ab76cd9989806212ede",
+          "canonical_url": "https://training.fortinet.com/local/staticpage/view.php?page=nse_2",
+          "entry_count": 9
+        },
+        {
+          "exam": "NSE-3-CYBERSECURITY",
+          "guide": "guides/NSE-3-CYBERSECURITY-fortinet-nse-3-in-cybersecurity.md",
+          "guide_sha256_utf8_lf": "77c2ca53c7d1a707623ee845e3dde2f8214c7ce09abda6e630045d6588556fc2",
+          "objective_snapshot": "data/objective-snapshots/nse-3-cybersecurity-official-objectives.txt",
+          "objective_sha256_bytes": "920241b7c63ba868fa041e18036e1c337e144f4128f166c1e663298890b1eaae",
+          "canonical_url": "https://training.fortinet.com/local/staticpage/view.php?page=nse_3",
+          "entry_count": 8
+        },
+        {
+          "exam": "NSE-4-FORTIOS",
+          "guide": "guides/NSE-4-FORTIOS-fortinet-nse-4-fortios.md",
+          "guide_sha256_utf8_lf": "9d205ab8db858424d3d84bee56683e9212e348a0686a35720ecdf74624651630",
+          "objective_snapshot": "data/objective-snapshots/nse-4-fortios-official-objectives.txt",
+          "objective_sha256_bytes": "a1bc779b760e1373ce480549181be9cfcace6b1ab081a3eb5c6832d98160ea5b",
+          "canonical_url": "https://training.fortinet.com/local/staticpage/view.php?page=fortios_administrator_exam",
+          "entry_count": 10
+        },
+        {
+          "exam": "NSE-5-SECURE-NETWORKING",
+          "guide": "guides/NSE-5-SECURE-NETWORKING-fortinet-nse-5-in-secure-networking.md",
+          "guide_sha256_utf8_lf": "a828814937cddbc29dc286cc19b28a10d39193281a92e6956f981a29e4c95a86",
+          "objective_snapshot": "data/objective-snapshots/nse-5-secure-networking-official-objectives.txt",
+          "objective_sha256_bytes": "4e484d47f37076fb725c46a4361b7149b6f80b0a962f240f06da53c2b7f344ee",
+          "canonical_url": "https://training.fortinet.com/local/staticpage/view.php?page=nse_5_secure_networking",
+          "entry_count": 8
+        },
+        {
+          "exam": "NSE-5-SASE",
+          "guide": "guides/NSE-5-SASE-fortinet-nse-5-in-sase.md",
+          "guide_sha256_utf8_lf": "450dbd822b5a3008442beb9ece3bd867d532d51bf7c09b89402a3a98e3d5e85f",
+          "objective_snapshot": "data/objective-snapshots/nse-5-sase-official-objectives.txt",
+          "objective_sha256_bytes": "5da7fcd14dcb7c1c88edac3c997cc168fd4194e3a385ec1f30b460e5bdeb52cd",
+          "canonical_url": "https://training.fortinet.com/local/staticpage/view.php?page=fortisase_and_sd-wan_core_administrator_exam",
+          "entry_count": 9
+        },
+        {
+          "exam": "NSE-5-CLOUD-SECURITY",
+          "guide": "guides/NSE-5-CLOUD-SECURITY-fortinet-nse-5-in-cloud-security.md",
+          "guide_sha256_utf8_lf": "cb07f0551260773b78fb5dd5cec19eb9b4bebba15026036d84ae52c3f5dface6",
+          "objective_snapshot": "data/objective-snapshots/nse-5-cloud-security-official-objectives.txt",
+          "objective_sha256_bytes": "058569ef0acb8d185e004a1b7100f56d5cb3088f369add4bf28d3d2693b61755",
+          "canonical_url": "https://training.fortinet.com/local/staticpage/view.php?page=nse_5_cloud_security",
+          "entry_count": 8
+        },
+        {
+          "exam": "NSE-5-SECURITY-OPERATIONS",
+          "guide": "guides/NSE-5-SECURITY-OPERATIONS-fortinet-nse-5-in-security-operations.md",
+          "guide_sha256_utf8_lf": "5428ebc0680c7f95814e0c0ebf43054c23b52e31e284c1c2e9f1d1ebfb088899",
+          "objective_snapshot": "data/objective-snapshots/nse-5-security-operations-official-objectives.txt",
+          "objective_sha256_bytes": "f78670ac5a8264c35f041c6505263af3c1d6037302f66ce33bbf225a8b0c96f7",
+          "canonical_url": "https://training.fortinet.com/local/staticpage/view.php?page=fortianalyzer_analyst_exam",
+          "entry_count": 8
+        },
+        {
+          "exam": "NSE-I-MSSP-SECURITY",
+          "guide": "guides/NSE-I-MSSP-SECURITY-fortinet-industry-mssp-security.md",
+          "guide_sha256_utf8_lf": "ad5cc6b90db3d443087d1f3577c40cabdb79574e39b8a06d7585428f41c7f369",
+          "objective_snapshot": "data/objective-snapshots/nse-i-mssp-security-official-objectives-2026-10-28.txt",
+          "objective_sha256_bytes": "4a35c3f24de8f8c65ed725fc42f5f9e9b3ffcc26d83928f2f09d961658cf94ac",
+          "canonical_url": "https://training.fortinet.com/local/staticpage/view.php?page=nse_industry_mssp_security",
+          "entry_count": 8
+        },
+        {
+          "exam": "NSE-I-OT-SECURITY",
+          "guide": "guides/NSE-I-OT-SECURITY-fortinet-industry-ot-security.md",
+          "guide_sha256_utf8_lf": "67f512deb52411d8da49b9893d91aabcf8cb6e7abf632eed5d7bcf0a0d7b3cdd",
+          "objective_snapshot": "data/objective-snapshots/nse-i-ot-security-official-objectives.txt",
+          "objective_sha256_bytes": "57b6b7679dd8d5c82e3bcb3f7d98594c5db06ded2baca2e01fc814fb72368066",
+          "canonical_url": "https://training.fortinet.com/local/staticpage/view.php?page=nse_industry_ot_security",
+          "entry_count": 8
+        }
+      ]
+    },
+    {
+      "packet": "google-cloud",
+      "guides": [
+        {
+          "exam": "GOOGLE-CLOUD-DIGITAL-LEADER",
+          "guide": "guides/GOOGLE-CLOUD-DIGITAL-LEADER-cloud-digital-leader.md",
+          "guide_sha256_utf8_lf": "e68d73f23fbe3782c9d093b8702f08dfd991948e3764bb3324b89eb409bd3c58",
+          "objective_snapshot": "data/objective-snapshots/google-cloud-digital-leader-official-objectives.txt",
+          "objective_sha256_bytes": "998892823a5a1a3cf2b508e3145f723c4c9e17181d62f59ec78d2e633f4eca8d",
+          "canonical_url": "https://cloud.google.com/learn/certification/cloud-digital-leader",
+          "entry_count": 8
+        },
+        {
+          "exam": "GOOGLE-GENERATIVE-AI-LEADER",
+          "guide": "guides/GOOGLE-GENERATIVE-AI-LEADER-generative-ai-leader.md",
+          "guide_sha256_utf8_lf": "5ccb65430d0a213cf5f3a8bd5b1a4a7b54c6682aea29cbd9cce27dac030cbda2",
+          "objective_snapshot": "data/objective-snapshots/google-generative-ai-leader-official-objectives.txt",
+          "objective_sha256_bytes": "d5154002a04c5a259a6d825a4ba3b84dcc9ee0e2fb075a012e510f17f641c324",
+          "canonical_url": "https://cloud.google.com/learn/certification/generative-ai-leader",
+          "entry_count": 8
+        },
+        {
+          "exam": "GOOGLE-ASSOCIATE-CLOUD-ENGINEER",
+          "guide": "guides/GOOGLE-ASSOCIATE-CLOUD-ENGINEER-associate-cloud-engineer.md",
+          "guide_sha256_utf8_lf": "85d0f9737f32fd694b42993d66d347a1e66e1dbbcfeffc9223c39d7e857d8c95",
+          "objective_snapshot": "data/objective-snapshots/google-associate-cloud-engineer-official-objectives.txt",
+          "objective_sha256_bytes": "1c26e61d687b69b9e2b0b00e59d537b271eae0647d525dd9d40284ea28c11d74",
+          "canonical_url": "https://cloud.google.com/learn/certification/cloud-engineer",
+          "entry_count": 8
+        },
+        {
+          "exam": "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT",
+          "guide": "guides/GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT-professional-cloud-architect.md",
+          "guide_sha256_utf8_lf": "30f5fb76700f4825717db9fec9f7789a9caebbdc9071e61a689a08630fadcce1",
+          "objective_snapshot": "data/objective-snapshots/google-professional-cloud-architect-official-objectives.txt",
+          "objective_sha256_bytes": "fceaa0587ed0fa26fcf66a037a2abb7e4103231cccb6ad9052153ca3cb328ec2",
+          "canonical_url": "https://cloud.google.com/learn/certification/cloud-architect",
+          "entry_count": 8
+        },
+        {
+          "exam": "GOOGLE-PROFESSIONAL-DATA-ENGINEER",
+          "guide": "guides/GOOGLE-PROFESSIONAL-DATA-ENGINEER-professional-data-engineer.md",
+          "guide_sha256_utf8_lf": "0ed7382463996c1e7c78068cafa136dd3e9ae110300748edc457fcf77d5ed927",
+          "objective_snapshot": "data/objective-snapshots/google-professional-data-engineer-official-objectives.txt",
+          "objective_sha256_bytes": "d9fc9ddb90e3c6f965fb09311b060710a297ba36f18025518dca3d5154d785bc",
+          "canonical_url": "https://cloud.google.com/learn/certification/data-engineer",
+          "entry_count": 8
+        },
+        {
+          "exam": "GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER",
+          "guide": "guides/GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER-professional-cloud-security-engineer.md",
+          "guide_sha256_utf8_lf": "5dbcdc5ed8881a90f0dc7d36a45d61868b61eab00b0ef78c89a54a2c7df47766",
+          "objective_snapshot": "data/objective-snapshots/google-professional-cloud-security-engineer-official-objectives.txt",
+          "objective_sha256_bytes": "356877767ac663f5102c9f398ba61909d074668c92d54e0e09584341f5a48166",
+          "canonical_url": "https://cloud.google.com/learn/certification/cloud-security-engineer",
+          "entry_count": 8
+        },
+        {
+          "exam": "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER",
+          "guide": "guides/GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER-professional-machine-learning-engineer.md",
+          "guide_sha256_utf8_lf": "3be02e8fb020649ffcaf13d56ee156527d492d58dd0074f3692de8ab71f6024c",
+          "objective_snapshot": "data/objective-snapshots/google-professional-machine-learning-engineer-official-objectives.txt",
+          "objective_sha256_bytes": "14f8953554d4c9762d0ac1fc7b0b4449d624895b2e1c3c9d4670009726c5bd5c",
+          "canonical_url": "https://cloud.google.com/learn/certification/machine-learning-engineer",
+          "entry_count": 8
+        },
+        {
+          "exam": "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT",
+          "guide": "guides/GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT-professional-agentic-architect.md",
+          "guide_sha256_utf8_lf": "1d36e797d1315bb7acd5b8e49e409bf3eae2810dffce833ba07d411cf2d67b86",
+          "objective_snapshot": "data/objective-snapshots/google-professional-agentic-architect-official-objectives.txt",
+          "objective_sha256_bytes": "116a4f1d0a6ee037866c312dc554b8f132248f1cbaddaf837fdce48c0116d454",
+          "canonical_url": "https://cloud.google.com/learn/certification/agentic-architect/",
+          "entry_count": 8
+        }
+      ]
+    },
+    {
+      "packet": "linux-openshift-kubernetes",
+      "guides": [
+        {
+          "exam": "EX200",
+          "guide": "guides/EX200-red-hat-certified-system-administrator.md",
+          "guide_sha256_utf8_lf": "cccb0682cb92bf17a2339124f321b4b8fbc176af3aa01bfe58f8a900d3e55427",
+          "objective_snapshot": "data/objective-snapshots/ex200-official-objectives.txt",
+          "objective_sha256_bytes": "69fa2bc5a08fc6c1cf183b89d6123a1564edab0d8e0e3ca12f80bc70b45916d4",
+          "canonical_url": "https://www.redhat.com/en/services/training/ex200-red-hat-certified-system-administrator-rhcsa-exam",
+          "entry_count": 9
+        },
+        {
+          "exam": "EX280",
+          "guide": "guides/EX280-red-hat-certified-system-administrator-openshift.md",
+          "guide_sha256_utf8_lf": "52467288d42069ae098deb31b777f5120a2cb88651b69df10901d252bddf89e8",
+          "objective_snapshot": "data/objective-snapshots/ex280-official-objectives.txt",
+          "objective_sha256_bytes": "7f06f83b3e8c273d4c24065c54ad45411416e25aa528a8651e7e74016c724040",
+          "canonical_url": "https://www.redhat.com/en/services/training/red-hat-certified-openshift-administrator-exam",
+          "entry_count": 8
+        },
+        {
+          "exam": "EX294",
+          "guide": "guides/EX294-red-hat-certified-advanced-system-administrator-ansible.md",
+          "guide_sha256_utf8_lf": "fde99431aa8b7d330b910986bdd97786bea1389ffc6eeb6655e942bbd580bf7b",
+          "objective_snapshot": "data/objective-snapshots/ex294-official-objectives.txt",
+          "objective_sha256_bytes": "e95d8682f731a4bd566b4bac9f0695ee8c46977a595f1eb99402a041cafd0376",
+          "canonical_url": "https://www.redhat.com/en/services/training/ex294-red-hat-certified-engineer-rhce-exam-red-hat-enterprise-linux",
+          "entry_count": 9
+        },
+        {
+          "exam": "EX378",
+          "guide": "guides/EX378-red-hat-certified-specialist-cloud-native-development.md",
+          "guide_sha256_utf8_lf": "5d581c07f1d1e6a8d1f726cdc9f05b5c892be8402fec4d8ff38eb64e16ab2e69",
+          "objective_snapshot": "data/objective-snapshots/ex378-official-objectives.txt",
+          "objective_sha256_bytes": "32e199f02055ec50b3c82c71f5abcfa09a1f7d598c97c552656ef37623cda239",
+          "canonical_url": "https://www.redhat.com/en/services/training/ex378-red-hat-certified-specialist-in-cloud-native-developer-exam",
+          "entry_count": 10
+        },
+        {
+          "exam": "EX267",
+          "guide": "guides/EX267-red-hat-certified-developer-in-ai.md",
+          "guide_sha256_utf8_lf": "3465afb3c3a2bdcf462cb0253d03249e4ac1f6f248fe2af25a35a8a1bbdd42d5",
+          "objective_snapshot": "data/objective-snapshots/ex267-official-objectives.txt",
+          "objective_sha256_bytes": "b741b76b2ba6259872d38449c397048d494185090c80d53064aa5d9ab32208fe",
+          "canonical_url": "https://www.redhat.com/en/services/training/ex267-red-hat-certified-developer-in-ai",
+          "entry_count": 9
+        },
+        {
+          "exam": "LFCA",
+          "guide": "guides/LFCA-linux-foundation-certified-it-associate.md",
+          "guide_sha256_utf8_lf": "410d132adb2a40a7b907b1c2b03b207a5969f38ce4bc9078f76e5325e5c32d28",
+          "objective_snapshot": "data/objective-snapshots/lfca-official-objectives.txt",
+          "objective_sha256_bytes": "fd4278c4b59fa86cc2c014f67f60263670b72193b2f83354fa3712b0f97a77cf",
+          "canonical_url": "https://training.linuxfoundation.org/certification/certified-it-associate/",
+          "entry_count": 9
+        },
+        {
+          "exam": "LFCS",
+          "guide": "guides/LFCS-linux-foundation-certified-system-administrator.md",
+          "guide_sha256_utf8_lf": "315e9992a005c6ef93fa6901e1c1400f65fbb8c119741e802389699241620af6",
+          "objective_snapshot": "data/objective-snapshots/lfcs-official-objectives.txt",
+          "objective_sha256_bytes": "7e81f913990e564ad0238c7842735843375ec30d94f036f88e194dcbfe77cb63",
+          "canonical_url": "https://training.linuxfoundation.org/certification/linux-foundation-certified-sysadmin-lfcs/",
+          "entry_count": 9
+        },
+        {
+          "exam": "CKA",
+          "guide": "guides/CKA-certified-kubernetes-administrator.md",
+          "guide_sha256_utf8_lf": "206cda672355bf3e2324f58670b95c171ddb4ba5fde6d31ffa28f3bb67f551f1",
+          "objective_snapshot": "data/objective-snapshots/cka-official-objectives.txt",
+          "objective_sha256_bytes": "e4b196b215d9a8a74203f309fa7b755633fe99955e638e541b3a6eac147d2857",
+          "canonical_url": "https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/",
+          "entry_count": 9
+        },
+        {
+          "exam": "CKAD",
+          "guide": "guides/CKAD-certified-kubernetes-application-developer.md",
+          "guide_sha256_utf8_lf": "ded4bec58bbac3dbbc9ee8adad3026eae41045b68f9a24f4d96cc8b3b24b1322",
+          "objective_snapshot": "data/objective-snapshots/ckad-official-objectives.txt",
+          "objective_sha256_bytes": "58b0290b61ba14ad68c02e06bcd2fbec14d23c4e555e69eb67a5615047e02ca1",
+          "canonical_url": "https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/",
+          "entry_count": 10
+        },
+        {
+          "exam": "CKS",
+          "guide": "guides/CKS-certified-kubernetes-security-specialist.md",
+          "guide_sha256_utf8_lf": "56f1ac2a4eb5b7c572a0a2e855623fa77d979895c5c5f5fa4334944ae5ee665c",
+          "objective_snapshot": "data/objective-snapshots/cks-official-objectives.txt",
+          "objective_sha256_bytes": "26ca4b0afc590f0df1dbf0ed60a435ce420efc6ac6d4ae95ec41dac302925c98",
+          "canonical_url": "https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/",
+          "entry_count": 9
+        }
+      ]
+    },
+    {
+      "packet": "networking-it-operations",
+      "guides": [
+        {
+          "exam": "FC0-U71",
+          "guide": "guides/FC0-U71-comptia-tech-plus.md",
+          "guide_sha256_utf8_lf": "81a17720106e06b0f8a4535d1e6a0a77ac68334d56b3f87427661dca31519b75",
+          "objective_snapshot": "data/objective-snapshots/fc0-u71-official-objectives.txt",
+          "objective_sha256_bytes": "ae1e3de08f84f5e8042cc58522867fa14f85cfe2285e456fbc969df9bba4c168",
+          "canonical_url": "https://www.comptia.org/en-us/certifications/tech/",
+          "entry_count": 8
+        },
+        {
+          "exam": "220-1201",
+          "guide": "guides/220-1201-comptia-a-plus-core-1.md",
+          "guide_sha256_utf8_lf": "ded817f0da07bc1a6e17caf7d0f097cf5e2a77ddad3d6a634790a7a465092539",
+          "objective_snapshot": "data/objective-snapshots/220-1201-official-objectives.txt",
+          "objective_sha256_bytes": "81a5721116c570f081c1abbd75b494a05e2cfdf4185d4e1051a03981d1565448",
+          "canonical_url": "https://www.comptia.org/en-us/certifications/a/core-1-v15/",
+          "entry_count": 8
+        },
+        {
+          "exam": "220-1202",
+          "guide": "guides/220-1202-comptia-a-plus-core-2.md",
+          "guide_sha256_utf8_lf": "6b81726383ee3f5a0632df732d4acdb184198995e0c59e7de2a22447147635a8",
+          "objective_snapshot": "data/objective-snapshots/220-1202-official-objectives.txt",
+          "objective_sha256_bytes": "802af49e1791f2aca4dd6fa98b272100badecd2be659ab001325bfb8cb5503c9",
+          "canonical_url": "https://www.comptia.org/en-us/certifications/a/core-2-v15/",
+          "entry_count": 8
+        },
+        {
+          "exam": "N10-009",
+          "guide": "guides/N10-009-comptia-network-plus.md",
+          "guide_sha256_utf8_lf": "62c7e870d209f32a7a7684c08242282e28464ef56c9300883520883ab7d7f3b6",
+          "objective_snapshot": "data/objective-snapshots/n10-009-official-objectives.txt",
+          "objective_sha256_bytes": "4adac368c0ccb2f7118d1b3118032de4825bb122f3b678fba28615aa28a72820",
+          "canonical_url": "https://www.comptia.org/en-us/certifications/network/",
+          "entry_count": 9
+        },
+        {
+          "exam": "SY0-701",
+          "guide": "guides/SY0-701-comptia-security-plus.md",
+          "guide_sha256_utf8_lf": "68971c2ac10104f6a0afe1a3a09cb0db7f341b781baec0989039ccb5cd002627",
+          "objective_snapshot": "data/objective-snapshots/sy0-701-official-objectives.txt",
+          "objective_sha256_bytes": "152af64f7b23ff8a264ea9aa465c610cc797fcdd6b771d8f7dfe15cdab6b9040",
+          "canonical_url": "https://www.comptia.org/en-us/certifications/security/v7/",
+          "entry_count": 9
+        },
+        {
+          "exam": "XK0-006",
+          "guide": "guides/XK0-006-comptia-linux-plus.md",
+          "guide_sha256_utf8_lf": "c444ff7d0ec7fc4c832fb8353bf18dcb86b2bc9afae2e2c021af5b37cfd008e9",
+          "objective_snapshot": "data/objective-snapshots/xk0-006-official-objectives.txt",
+          "objective_sha256_bytes": "7092fafe78142df3f4be33e42aea257143769cc6268b90a4e1059f994c00496e",
+          "canonical_url": "https://www.comptia.org/en-us/certifications/linux/",
+          "entry_count": 9
+        },
+        {
+          "exam": "CV0-004",
+          "guide": "guides/CV0-004-comptia-cloud-plus.md",
+          "guide_sha256_utf8_lf": "ad3bab6d021407613ea14b2f26fd260ed29b73317ed9ee368c7786be744dcabb",
+          "objective_snapshot": "data/objective-snapshots/cv0-004-official-objectives.txt",
+          "objective_sha256_bytes": "6fb337abbad0ccde4c7a29dceb3c7e3611211edf97a676fe7bd7800406c0a192",
+          "canonical_url": "https://www.comptia.org/en-us/certifications/cloud/",
+          "entry_count": 9
+        },
+        {
+          "exam": "100-150",
+          "guide": "guides/100-150-cisco-certified-support-technician-networking.md",
+          "guide_sha256_utf8_lf": "7111fc7e0bcfba9c7249048cbb1c438abf5577ad765c63aa1b97c35c64d7b479",
+          "objective_snapshot": "data/objective-snapshots/100-150-official-objectives.txt",
+          "objective_sha256_bytes": "06e3901b4e9a03657e2111d7a02b484c1a8629ab595f54b32e03f1197680d194",
+          "canonical_url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccst-networking.html",
+          "entry_count": 9
+        },
+        {
+          "exam": "100-160",
+          "guide": "guides/100-160-cisco-certified-support-technician-cybersecurity.md",
+          "guide_sha256_utf8_lf": "9dfc489b980f04deaf4248d34a16a6685996b10f0b5e625c00ba44e2983fa72f",
+          "objective_snapshot": "data/objective-snapshots/100-160-official-objectives.txt",
+          "objective_sha256_bytes": "8c759c20e7564e89bf453d83dd80b60b78716c3c06790073e531065e5d891418",
+          "canonical_url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccst-cybersecurity.html",
+          "entry_count": 9
+        },
+        {
+          "exam": "200-301",
+          "guide": "guides/200-301-cisco-certified-network-associate.md",
+          "guide_sha256_utf8_lf": "ee7fa257224b073af2b04acb24ae435c2d874f13efb09292facdba8237c964c3",
+          "objective_snapshot": "data/objective-snapshots/200-301-official-objectives.txt",
+          "objective_sha256_bytes": "7e724022313d176cc7c5a8d20523c794536952194691a62dabaed9c7727ae759",
+          "canonical_url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccna.html",
+          "entry_count": 9
+        },
+        {
+          "exam": "200-901",
+          "guide": "guides/200-901-cisco-certified-network-associate-automation.md",
+          "guide_sha256_utf8_lf": "2b6077288cdbb83afa919596f725d786bb90f364869d941abf3302aa0e3078cf",
+          "objective_snapshot": "data/objective-snapshots/200-901-official-objectives.txt",
+          "objective_sha256_bytes": "4fcbdbd0e06859440fb4065e2427af07c4ee5db1e62f66caf0900685974b7cd6",
+          "canonical_url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccnaauto.html",
+          "entry_count": 9
+        }
+      ]
+    },
+    {
+      "packet": "packet-1",
+      "guides": [
+        {
+          "exam": "GH-900",
+          "guide": "guides/GH-900-github-foundations.md",
+          "guide_sha256_utf8_lf": "fb46a4845d770f8b57f942fb6696ed86f308bf25599d12cb330da647a78b3da7",
+          "objective_snapshot": "data/objective-snapshots/gh-900-official-objectives.txt",
+          "objective_sha256_bytes": "bd1c323a21723f8479a7b79ec41a576044ebe6afbc5bf57715acf431fe90828b",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-900",
+          "entry_count": 8
+        },
+        {
+          "exam": "GH-100",
+          "guide": "guides/GH-100-github-enterprise-administration.md",
+          "guide_sha256_utf8_lf": "330e336bcb0e42698e25e01129a16fb8e89f78de94d1753160987654a8f0b4ba",
+          "objective_snapshot": "data/objective-snapshots/gh-100-official-objectives.txt",
+          "objective_sha256_bytes": "9e671c9dd3ce7ac8914e989a0090422d6f0490fe19f3c9b11de73010453d44b6",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-100",
+          "entry_count": 8
+        },
+        {
+          "exam": "GH-200",
+          "guide": "guides/GH-200-github-actions.md",
+          "guide_sha256_utf8_lf": "84ad8bc6a9408cbdbf115c30a2e576d793feb987143a1d9850df31470aa16a27",
+          "objective_snapshot": "data/objective-snapshots/gh-200-official-objectives.txt",
+          "objective_sha256_bytes": "b41c6a6832e14bf4b6c222d0b6162cff81e9ef4683480f89e89b3e0406fdf941",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-200",
+          "entry_count": 8
+        },
+        {
+          "exam": "GH-300",
+          "guide": "guides/GH-300-github-copilot.md",
+          "guide_sha256_utf8_lf": "2d51d22eedd70183dedd7a8721992ad460d92e8da2ab2619e5d99a9d873a64c5",
+          "objective_snapshot": "data/objective-snapshots/gh-300-official-objectives.txt",
+          "objective_sha256_bytes": "2043edf29c68926236ec3a6e417058609e4e6cfec55e1e201e48e57c1b4fff9b",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-300",
+          "entry_count": 10
+        },
+        {
+          "exam": "GH-500",
+          "guide": "guides/GH-500-github-advanced-security.md",
+          "guide_sha256_utf8_lf": "7b18385a776b2f2e6374d2fc1f92615ccdc28e981beaf92529b11eaf577d900f",
+          "objective_snapshot": "data/objective-snapshots/gh-500-official-objectives.txt",
+          "objective_sha256_bytes": "a935dc15cfa929c01d402424f0edc39bb018b4c600ce734bd7cf10e1446ae102",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-500",
+          "entry_count": 8
+        },
+        {
+          "exam": "GH-600",
+          "guide": "guides/GH-600-developing-agentic-ai-systems.md",
+          "guide_sha256_utf8_lf": "8ad1d26ae95f8e0a505fc55ef691c3c50e434d9dd1afe1214d6632a9c2d65983",
+          "objective_snapshot": "data/objective-snapshots/gh-600-official-objectives.txt",
+          "objective_sha256_bytes": "aec7750e2180662b00b676c42477e968c4286eb023ade65d68b3936951df0830",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-600",
+          "entry_count": 8
+        },
+        {
+          "exam": "GH-700",
+          "guide": "guides/GH-700-agentic-ai-business-professional.md",
+          "guide_sha256_utf8_lf": "27b4f24db9488818e20e7547ffcb7f2ad28506976792b96befb76c4b0d456491",
+          "objective_snapshot": "data/objective-snapshots/gh-700-official-objectives.txt",
+          "objective_sha256_bytes": "ef8c302478ef66e800269d30d8983fbe0d14e45301e27f9e5268f5cc6b302449",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-700",
+          "entry_count": 8
+        }
+      ]
+    },
+    {
+      "packet": "packet-2",
+      "guides": [
+        {
+          "exam": "AB-100",
+          "guide": "guides/AB-100-agentic-ai-business-solutions-architect.md",
+          "guide_sha256_utf8_lf": "2001f531fd6bed3fedb31db9b5e9d0a88c41bca29a0635c43106109cac1488aa",
+          "objective_snapshot": "data/objective-snapshots/ab-100-official-objectives.txt",
+          "objective_sha256_bytes": "cbe7ecb510ab59d0da6f89dbc8f22e7ded45b008d0750c13ee07388ca3717526",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100",
+          "entry_count": 8
+        },
+        {
+          "exam": "AI-103",
+          "guide": "guides/AI-103-developing-ai-apps-and-agents-on-azure.md",
+          "guide_sha256_utf8_lf": "59dfc811b66db18d320a5e143e207d9b2f5ac0f034a8e266ad05133c8f4c9393",
+          "objective_snapshot": "data/objective-snapshots/ai-103-official-objectives.txt",
+          "objective_sha256_bytes": "3fbf0ebd6b3d5e591d7354de47f8d87baaea121330a209e9104045447ac70f63",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-103",
+          "entry_count": 8
+        },
+        {
+          "exam": "AI-200",
+          "guide": "guides/AI-200-developing-ai-cloud-solutions-on-azure.md",
+          "guide_sha256_utf8_lf": "c6cb5f1c51743213c149be81cb37f701b06658eaefcf58c7987bece0e2c79dc4",
+          "objective_snapshot": "data/objective-snapshots/ai-200-official-objectives.txt",
+          "objective_sha256_bytes": "3dc5dfbae796cc5345c92061d04d0e671d5ebc7252ac057038ca61b8b8a6e464",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-200",
+          "entry_count": 8
+        },
+        {
+          "exam": "AI-300",
+          "guide": "guides/AI-300-operationalizing-machine-learning-generative-ai-solutions.md",
+          "guide_sha256_utf8_lf": "0d264528456ca78c89cc9eeb4309ab4c7408e56a73ece211530d85227b7b6cb8",
+          "objective_snapshot": "data/objective-snapshots/ai-300-official-objectives.txt",
+          "objective_sha256_bytes": "79d7fabcf253e7ac5f5f7629397075867d22c48045c2483c9d03e1b217215f41",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-300",
+          "entry_count": 8
+        },
+        {
+          "exam": "AI-500",
+          "guide": "guides/AI-500-designing-implementing-multi-agent-ai-solutions.md",
+          "guide_sha256_utf8_lf": "ec102e6e20f37c64394dd4fb7e38d2bfdd2af0b7038558180f237b093ff31719",
+          "objective_snapshot": "data/objective-snapshots/ai-500-official-objectives.txt",
+          "objective_sha256_bytes": "498ed5ca3e5f1ac958dedea4b84cb33a34a8ff0f5aa239540fd7283bc41360e8",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-500",
+          "entry_count": 8
+        },
+        {
+          "exam": "AI-901",
+          "guide": "guides/AI-901-microsoft-azure-ai-fundamentals.md",
+          "guide_sha256_utf8_lf": "535102d98730eb082f88c0bacbae0aefb7eddf63c8c1b67f08e4346e93a8269b",
+          "objective_snapshot": "data/objective-snapshots/ai-901-official-objectives.txt",
+          "objective_sha256_bytes": "8b1c05a7a2258d69e43d47d75c0adeae2a5a7660e12e4d46627014d1ff9bedd1",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-901",
+          "entry_count": 8
+        },
+        {
+          "exam": "AB-410",
+          "guide": "guides/AB-410-building-intelligent-applications.md",
+          "guide_sha256_utf8_lf": "0db50cb07c6d03060bca3f42200eadb45d64d3948b9844befff95f0b871fc2f6",
+          "objective_snapshot": "data/objective-snapshots/ab-410-official-objectives.txt",
+          "objective_sha256_bytes": "390c1040388541915573525f59b9f2f28753f65d0a3a50e9221dd7ab11c68142",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-410",
+          "entry_count": 8
+        },
+        {
+          "exam": "AB-620",
+          "guide": "guides/AB-620-designing-building-integrated-ai-agent-solutions.md",
+          "guide_sha256_utf8_lf": "3e657a3c753d8f9832212f2cc280eb03d7bf6a03a0b0291dbd10f9787f4558bf",
+          "objective_snapshot": "data/objective-snapshots/ab-620-official-objectives.txt",
+          "objective_sha256_bytes": "8b9f6ca0601cf631a000763ce7a0cca802a0177c66d7a4e3cc29d84d52188dfc",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-620",
+          "entry_count": 8
+        },
+        {
+          "exam": "AB-730",
+          "guide": "guides/AB-730-ai-business-professional.md",
+          "guide_sha256_utf8_lf": "52566c95245316e22c852514570cfb6fd2160c13275a6b526b52acee450a003d",
+          "objective_snapshot": "data/objective-snapshots/ab-730-official-objectives.txt",
+          "objective_sha256_bytes": "2511f7222a02bef9fe9fd9ca6014393ce425720ecdc1a717cd7d27c907f13db4",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-730",
+          "entry_count": 8
+        },
+        {
+          "exam": "AB-731",
+          "guide": "guides/AB-731-ai-transformation-leader.md",
+          "guide_sha256_utf8_lf": "b86522775fb217b459ebb48afb53558f9787bc673661bed1567e4f4c548482c9",
+          "objective_snapshot": "data/objective-snapshots/ab-731-official-objectives.txt",
+          "objective_sha256_bytes": "dbb6d89a150d8e1ca630380839f190f05e89b2688a862c3987f14a1df48ea7e7",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-731",
+          "entry_count": 8
+        }
+      ]
+    },
+    {
+      "packet": "packet-3",
+      "guides": [
+        {
+          "exam": "AZ-900",
+          "guide": "guides/AZ-900-microsoft-azure-fundamentals.md",
+          "guide_sha256_utf8_lf": "82890bfef5ca22dbb890273e970f22b96902f5bfb575361fba0ce47db903e4c0",
+          "objective_snapshot": "data/objective-snapshots/az-900-official-objectives.txt",
+          "objective_sha256_bytes": "8b4c89d325b3ce339eb881aa2dc4b251888e6d7a07d6351d81bcc2123b1c4449",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900",
+          "entry_count": 10
+        },
+        {
+          "exam": "AZ-104",
+          "guide": "guides/AZ-104-microsoft-azure-administrator.md",
+          "guide_sha256_utf8_lf": "92c8462308ef098c8002a4d2877637acbb7857fe5fc91c0703039d0802d63f3f",
+          "objective_snapshot": "data/objective-snapshots/az-104-official-objectives.txt",
+          "objective_sha256_bytes": "7d2330fbafdd4981b54e6aa8f9ba371f0bbad1edf521fa8d2fa591e2bf8d2ae1",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104",
+          "entry_count": 8
+        },
+        {
+          "exam": "AZ-305",
+          "guide": "guides/AZ-305-designing-microsoft-azure-infrastructure-solutions.md",
+          "guide_sha256_utf8_lf": "68320cb62e23cf29239159d8b91ca5f8af036b11480790243e8b4f2fdd48ff86",
+          "objective_snapshot": "data/objective-snapshots/az-305-official-objectives.txt",
+          "objective_sha256_bytes": "7e5e8671b6ba67938e71f71261f92e0d9798f27ec94f79c75e3ea6310f917df2",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-305",
+          "entry_count": 8
+        },
+        {
+          "exam": "AZ-700",
+          "guide": "guides/AZ-700-designing-implementing-azure-networking-solutions.md",
+          "guide_sha256_utf8_lf": "9cc1104246de76495efea169f51895caf7ef80107d6d3fbe129ce84ca397a046",
+          "objective_snapshot": "data/objective-snapshots/az-700-official-objectives.txt",
+          "objective_sha256_bytes": "949dcb2d1b4bbde19b6f41b69fdf59cf33b52391d4b8010e2a46d6a0c94a98dd",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-700",
+          "entry_count": 8
+        },
+        {
+          "exam": "AZ-120",
+          "guide": "guides/AZ-120-planning-administering-azure-sap-workloads.md",
+          "guide_sha256_utf8_lf": "1df9d00c4cb79552fb92d42b8dd7503ca69ab61b3611032df66a7df580ecc768",
+          "objective_snapshot": "data/objective-snapshots/az-120-official-objectives.txt",
+          "objective_sha256_bytes": "9ef2824a901a8ba33075de4315d56f6bd0c7e9b5887028f27c16e6645e6eb3ff",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-120",
+          "entry_count": 8
+        },
+        {
+          "exam": "AZ-140",
+          "guide": "guides/AZ-140-configuring-operating-azure-virtual-desktop.md",
+          "guide_sha256_utf8_lf": "0fe22515d74b037629008bd64090dc8900a3eaede8b6352584cd071f0270da7f",
+          "objective_snapshot": "data/objective-snapshots/az-140-official-objectives.txt",
+          "objective_sha256_bytes": "d40f010042124a6e28c81a7f783b6127e3b7ebf7bb99d9b3ddfccdd40dcede84",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-140",
+          "entry_count": 8
+        },
+        {
+          "exam": "AZ-400",
+          "guide": "guides/AZ-400-designing-implementing-microsoft-devops-solutions.md",
+          "guide_sha256_utf8_lf": "e59ecebed6fa86899e733b35c3bf14a4d1e4424e6b224d803684da9848f8039f",
+          "objective_snapshot": "data/objective-snapshots/az-400-official-objectives.txt",
+          "objective_sha256_bytes": "2daece89f2a2ef131293e7299b41532985afbe955aed913bb86dc42bb8650460",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-400",
+          "entry_count": 8
+        },
+        {
+          "exam": "AZ-401",
+          "guide": "guides/AZ-401-designing-implementing-microsoft-agentic-devops-solutions.md",
+          "guide_sha256_utf8_lf": "54ce6912b18d4f1275b0a30d340a670843a7921e7905e986d682052064d71340",
+          "objective_snapshot": "data/objective-snapshots/az-401-official-objectives.txt",
+          "objective_sha256_bytes": "b74fe4beb2509bb4fd6a13d19783c0ad97ad102abe7bda0d6eefae429dbe4337",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-401",
+          "entry_count": 8
+        },
+        {
+          "exam": "AZ-800",
+          "guide": "guides/AZ-800-administering-windows-server-hybrid-core-infrastructure.md",
+          "guide_sha256_utf8_lf": "81e56c93e9d252445a37ae4ef71e7aef661205b762e0f1cdf7d1263f4f28c3aa",
+          "objective_snapshot": "data/objective-snapshots/az-800-official-objectives.txt",
+          "objective_sha256_bytes": "03c6f4e0c73f383ada8c4ddf43a91fa28ec513a732b40abae0a38b1b6ac4f7bc",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-800",
+          "entry_count": 8
+        },
+        {
+          "exam": "AZ-801",
+          "guide": "guides/AZ-801-configuring-windows-server-hybrid-advanced-services.md",
+          "guide_sha256_utf8_lf": "ae2b72777e3ab24788937f5839dc849c26015bbc7a4b0ef548104b4148b65851",
+          "objective_snapshot": "data/objective-snapshots/az-801-official-objectives.txt",
+          "objective_sha256_bytes": "c279fe648d4e3a6c67df9e119c95335e042937b93b83ffbf6a07d7f0ce51a76f",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-801",
+          "entry_count": 8
+        },
+        {
+          "exam": "AZ-802",
+          "guide": "guides/AZ-802-administering-windows-server.md",
+          "guide_sha256_utf8_lf": "ebae026909abbfe3f7ed0ab53975fafb6173adb4a052683972b95cdea376845e",
+          "objective_snapshot": "data/objective-snapshots/az-802-official-objectives.txt",
+          "objective_sha256_bytes": "ec584efe0ea08ae5ad6bbcef992c1b4a4e6b18826193ece06a76114757c8f65d",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802",
+          "entry_count": 8
+        }
+      ]
+    },
+    {
+      "packet": "packet-4",
+      "guides": [
+        {
+          "exam": "DP-900",
+          "guide": "guides/DP-900-microsoft-azure-data-fundamentals.md",
+          "guide_sha256_utf8_lf": "1a8a5b2d36131ef6e7dcb850e11175ff8f8861b026b08716a9377421cc2d19c2",
+          "objective_snapshot": "data/objective-snapshots/dp-900-official-objectives.txt",
+          "objective_sha256_bytes": "7cef780d1a9e8e88b587fba89acb994985c4aedbd491710e814686ce5dc6559f",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-900",
+          "entry_count": 8
+        },
+        {
+          "exam": "DP-300",
+          "guide": "guides/DP-300-administering-microsoft-azure-sql-solutions.md",
+          "guide_sha256_utf8_lf": "a1cd8c0855af8e1149914b02e1bdd656b9c6b8ef6431eef10d589371f4c2cc7a",
+          "objective_snapshot": "data/objective-snapshots/dp-300-official-objectives.txt",
+          "objective_sha256_bytes": "f9f0c06f1a6e639035fd75d0db063dd6edcb30f50079e5a5157255ed4408ae57",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300",
+          "entry_count": 8
+        },
+        {
+          "exam": "DP-420",
+          "guide": "guides/DP-420-designing-and-implementing-cloud-native-applications-using-microsoft-azure-cosmos-db.md",
+          "guide_sha256_utf8_lf": "8113533e6f1a0c86a34ec6f39a549e08de99515bd4f7a1137253c9abdd5e594b",
+          "objective_snapshot": "data/objective-snapshots/dp-420-official-objectives.txt",
+          "objective_sha256_bytes": "f796c1974699f0196b5e60e449409ceb3ccf9cf17b99e92206a1913d220ae351",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-420",
+          "entry_count": 8
+        },
+        {
+          "exam": "DP-600",
+          "guide": "guides/DP-600-implementing-analytics-solutions-microsoft-fabric.md",
+          "guide_sha256_utf8_lf": "750fd459e332fd7472b3e29bfce19e7d39bc454f99784b598da355b575aebb60",
+          "objective_snapshot": "data/objective-snapshots/dp-600-official-objectives.txt",
+          "objective_sha256_bytes": "43cf6ad72e66be7ce72a39c58f1e2fcd40b66f4768ca14a399b2e99846449fff",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-600",
+          "entry_count": 8
+        },
+        {
+          "exam": "DP-700",
+          "guide": "guides/DP-700-implementing-data-engineering-solutions-microsoft-fabric.md",
+          "guide_sha256_utf8_lf": "86dad567ebbadf3231f94f3bf74c98dbfa2f979089fca91af30e312b2ada3922",
+          "objective_snapshot": "data/objective-snapshots/dp-700-official-objectives.txt",
+          "objective_sha256_bytes": "536a8f75830b0951502232b8b1a811524d000a7edf7a745613f46462f7dd3fc5",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-700",
+          "entry_count": 10
+        },
+        {
+          "exam": "DP-750",
+          "guide": "guides/DP-750-implementing-data-engineering-solutions-using-azure-databricks.md",
+          "guide_sha256_utf8_lf": "c2b3a772482f39b3265889ca63c8a3cdebf37f069de5ae11e794f63e00df469f",
+          "objective_snapshot": "data/objective-snapshots/dp-750-official-objectives.txt",
+          "objective_sha256_bytes": "d44f3f814718f33dd69dd72f48381609f4cde30d0b5c9fe1656380223fb2571e",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-750",
+          "entry_count": 8
+        },
+        {
+          "exam": "DP-800",
+          "guide": "guides/DP-800-developing-ai-enabled-database-solutions.md",
+          "guide_sha256_utf8_lf": "bb9c4bff165ddc14531d8fdef2c60ecea3bc4745643e5a5ec621f49fbe71b0c5",
+          "objective_snapshot": "data/objective-snapshots/dp-800-official-objectives.txt",
+          "objective_sha256_bytes": "6e54b91dfcc48967be9eec6efffdc43262d965d8a66a01d467c5ccb9c283d862",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-800",
+          "entry_count": 8
+        },
+        {
+          "exam": "PL-300",
+          "guide": "guides/PL-300-microsoft-power-bi-data-analyst.md",
+          "guide_sha256_utf8_lf": "c10a3b8eeb49277f24556f6234a6012a0b8fb787f91ae86ca0ac6ad5c136141c",
+          "objective_snapshot": "data/objective-snapshots/pl-300-official-objectives.txt",
+          "objective_sha256_bytes": "c1c6a25ab5e6285ba4cce3603f6e2624f482ff1d6f237d68e6fa79da93d9e8d9",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300",
+          "entry_count": 8
+        },
+        {
+          "exam": "PL-400",
+          "guide": "guides/PL-400-microsoft-power-platform-developer.md",
+          "guide_sha256_utf8_lf": "583f0942e8ee81957c259eddda9b04fa703065ede8609492f26dee2523de2f49",
+          "objective_snapshot": "data/objective-snapshots/pl-400-official-objectives.txt",
+          "objective_sha256_bytes": "facfff59976de5c12e31c20f17ad072c6255f1324c9a55419788d6ee70a825d1",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-400",
+          "entry_count": 8
+        },
+        {
+          "exam": "PL-900",
+          "guide": "guides/PL-900-microsoft-power-platform-fundamentals.md",
+          "guide_sha256_utf8_lf": "8c451874a9b787e55504ebf4831ddb8bdf05579ed57410642f061cb4a130753b",
+          "objective_snapshot": "data/objective-snapshots/pl-900-official-objectives.txt",
+          "objective_sha256_bytes": "959c63326efa3e74735cd2abc1cb28246d816506296b218428802240f9f99bd0",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-900",
+          "entry_count": 8
+        }
+      ]
+    },
+    {
+      "packet": "packet-5",
+      "guides": [
+        {
+          "exam": "AB-900",
+          "guide": "guides/AB-900-microsoft-365-copilot-agent-administration-fundamentals.md",
+          "guide_sha256_utf8_lf": "166dcbd6978f5de7fb059b31aea0379dc65bb52f8272404d5a169ee292064948",
+          "objective_snapshot": "data/objective-snapshots/ab-900-official-objectives.txt",
+          "objective_sha256_bytes": "018108511a1adc2906066d50ff9d8a3459e702b1b61f4e973653d6d75ed591ba",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-900",
+          "entry_count": 8
+        },
+        {
+          "exam": "SC-900",
+          "guide": "guides/SC-900-microsoft-security-compliance-identity-fundamentals.md",
+          "guide_sha256_utf8_lf": "68ff6bf4398e2ffe141d8761011ec91dd2cc8c252ee2c3aac906ae984f6fe017",
+          "objective_snapshot": "data/objective-snapshots/sc-900-official-objectives.txt",
+          "objective_sha256_bytes": "63bf7e483cb07e30a23c192e3f41319ea3987492ab5a1066177dfb4a8eb16a81",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900",
+          "entry_count": 8
+        },
+        {
+          "exam": "SC-100",
+          "guide": "guides/SC-100-microsoft-cybersecurity-architect.md",
+          "guide_sha256_utf8_lf": "8085e15b8a9a794a480c12fc15de55b09783e611ac8d970cc16bf864da689969",
+          "objective_snapshot": "data/objective-snapshots/sc-100-official-objectives.txt",
+          "objective_sha256_bytes": "ff060882f7f464b9154a8d4b96c581f995ef217fbeb1b9138336690bc4a75ef9",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-100",
+          "entry_count": 8
+        },
+        {
+          "exam": "SC-200",
+          "guide": "guides/SC-200-microsoft-security-operations-analyst.md",
+          "guide_sha256_utf8_lf": "68f16c57e5f2d408e6e8eb3c28d7cfe00141b3e103d6a4a8a06f82945a9f21e5",
+          "objective_snapshot": "data/objective-snapshots/sc-200-official-objectives.txt",
+          "objective_sha256_bytes": "b03a3ed9dfac76ede2eceb81987d4b208c20eee1376f8bba7de1039015fd5bc4",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200",
+          "entry_count": 8
+        },
+        {
+          "exam": "SC-300",
+          "guide": "guides/SC-300-microsoft-identity-access-administrator.md",
+          "guide_sha256_utf8_lf": "e5948f6502a0438973b36b6f5fc28afe48dfc391100fd756bc4c51990a11b744",
+          "objective_snapshot": "data/objective-snapshots/sc-300-official-objectives.txt",
+          "objective_sha256_bytes": "acdea1bdef69bcf46191872ee09a1b309e9e50b1cc8f1a7b739d416af6bb2263",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-300",
+          "entry_count": 8
+        },
+        {
+          "exam": "SC-401",
+          "guide": "guides/SC-401-administering-information-security-microsoft-365.md",
+          "guide_sha256_utf8_lf": "b82d67358a23c1d5e4a9289cc7eff3467df3837d4fc2ce10020f9c3aaaa03406",
+          "objective_snapshot": "data/objective-snapshots/sc-401-official-objectives.txt",
+          "objective_sha256_bytes": "3a429460a42a21f18a3156812052e4704a06f828f1beb4e9eaea1d75c74938c6",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-401",
+          "entry_count": 8
+        },
+        {
+          "exam": "SC-500",
+          "guide": "guides/SC-500-microsoft-cloud-ai-security-engineer.md",
+          "guide_sha256_utf8_lf": "596308712139390f954a9220f6c845b3ec97ff3a0fd8a62f976ad9d9803b8a0f",
+          "objective_snapshot": "data/objective-snapshots/sc-500-official-objectives.txt",
+          "objective_sha256_bytes": "9f832db799678f547b3272c902e5529c77077e2cd4272326cf8ad94ef50cf7c6",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-500",
+          "entry_count": 9
+        },
+        {
+          "exam": "AB-650",
+          "guide": "guides/AB-650-ai-services-administrator-associate.md",
+          "guide_sha256_utf8_lf": "ef5ccd5b098bf1f5ae8a0f968c2f26d4b1bc79ccba14c684ad09c246fe3b4b09",
+          "objective_snapshot": "data/objective-snapshots/ab-650-official-objectives.txt",
+          "objective_sha256_bytes": "e70d10682f078cb6887f7dde679f56661e63dfeabb221779f6b0ff4ab08bdf1a",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-650",
+          "entry_count": 8
+        },
+        {
+          "exam": "MS-102",
+          "guide": "guides/MS-102-microsoft-365-administrator.md",
+          "guide_sha256_utf8_lf": "a850aa51d2b86c71cbfe199a16f02a00b224eaee6a33452b4f80abe4aabf6e7d",
+          "objective_snapshot": "data/objective-snapshots/ms-102-official-objectives.txt",
+          "objective_sha256_bytes": "97ce6b34e98fb43947409e8b7997f3de72e6cae7a62102dfdea849bfb177c92a",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-102",
+          "entry_count": 8
+        },
+        {
+          "exam": "MD-102",
+          "guide": "guides/MD-102-managing-securing-microsoft-365-endpoints-intune.md",
+          "guide_sha256_utf8_lf": "a121a3106d70db5cc649ed9f36391d076f1410119a1ce044df9246ca018aae16",
+          "objective_snapshot": "data/objective-snapshots/md-102-official-objectives.txt",
+          "objective_sha256_bytes": "26e8777b5fae7deaf934748583696fb4b08c54c06a361b6c31c96d3e5f05f8e3",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/md-102",
+          "entry_count": 8
+        },
+        {
+          "exam": "MS-700",
+          "guide": "guides/MS-700-managing-microsoft-teams.md",
+          "guide_sha256_utf8_lf": "69b2dbe29241c0048af1e4e9b72cefcb5070edfe39d81397e3cb3d4fc638985f",
+          "objective_snapshot": "data/objective-snapshots/ms-700-official-objectives.txt",
+          "objective_sha256_bytes": "4b6fdf9cefc58cdaa8fda057e3f654711ee5f70741c9e819fa6c1f62b2a186fe",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-700",
+          "entry_count": 8
+        },
+        {
+          "exam": "MS-721",
+          "guide": "guides/MS-721-collaboration-communications-systems-engineer.md",
+          "guide_sha256_utf8_lf": "f94f0bc6e977026e4ef66290dba85b1448f268340e8beb7bef5eef3142de47f1",
+          "objective_snapshot": "data/objective-snapshots/ms-721-official-objectives.txt",
+          "objective_sha256_bytes": "49ebf5eeab3209453f89ef2701f73e2d1e506fa433c0feaaedff8ede8fafd1c1",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-721",
+          "entry_count": 8
+        }
+      ]
+    },
+    {
+      "packet": "packet-6",
+      "guides": [
+        {
+          "exam": "AB-210",
+          "guide": "guides/AB-210-accelerating-sales-pipelines-ai-dynamics-365.md",
+          "guide_sha256_utf8_lf": "ed1aeac3610207c80d4961b4250c28671716cb1496960e9f7f52f05983946f03",
+          "objective_snapshot": "data/objective-snapshots/ab-210-official-objectives.txt",
+          "objective_sha256_bytes": "2595badf528595419ed8da12bf5aed577d899ee8772123a0b1e40d1c2eac0f83",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-210",
+          "entry_count": 8
+        },
+        {
+          "exam": "AB-250",
+          "guide": "guides/AB-250-transforming-contact-center-experiences-ai-dynamics-365.md",
+          "guide_sha256_utf8_lf": "420ae2cd05415573f7e1638377e103cb599ac80e28878247e820df5b0a013955",
+          "objective_snapshot": "data/objective-snapshots/ab-250-official-objectives.txt",
+          "objective_sha256_bytes": "852f325868be15013f6b67d2fe5e0152744d4e1d8c1f86a82874b2eecaca5e11",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-250",
+          "entry_count": 8
+        },
+        {
+          "exam": "AB-330",
+          "guide": "guides/AB-330-supply-chain-management-ai-consultant.md",
+          "guide_sha256_utf8_lf": "bfb9eb44a6db949a689c9b00c91bb371661c623bb808f17782bd5e5a02cbf0bb",
+          "objective_snapshot": "data/objective-snapshots/ab-330-official-objectives.txt",
+          "objective_sha256_bytes": "bfb0109c1fc2f5207655af720a502336d45c1062cf3954a5abb336b91748a4be",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-330",
+          "entry_count": 8
+        },
+        {
+          "exam": "MB-230",
+          "guide": "guides/MB-230-microsoft-dynamics-365-customer-service-functional-consultant.md",
+          "guide_sha256_utf8_lf": "0ac06b2419380f1a95b65bc0bd839cd83f9f766ebc0cd430d46726a4ecf1842c",
+          "objective_snapshot": "data/objective-snapshots/mb-230-official-objectives.txt",
+          "objective_sha256_bytes": "e5925c65c9de7fad2e0d1d921564490a83ce02092b95ad95382775abd6352b38",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-230",
+          "entry_count": 8
+        },
+        {
+          "exam": "MB-310",
+          "guide": "guides/MB-310-microsoft-dynamics-365-finance-functional-consultant.md",
+          "guide_sha256_utf8_lf": "7c53a9d4586875879d6b4ac310d8e15fcf8028ff94aa023a4468536ab701f5fe",
+          "objective_snapshot": "data/objective-snapshots/mb-310-official-objectives.txt",
+          "objective_sha256_bytes": "d5bbe85cad214566f2ba0cc7b266af0ff612664ba199a5c8ed948e28474d2284",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-310",
+          "entry_count": 8
+        },
+        {
+          "exam": "MB-330",
+          "guide": "guides/MB-330-microsoft-dynamics-365-supply-chain-management-functional-consultant.md",
+          "guide_sha256_utf8_lf": "4dd1ea71d86f07e09b14d148cafeb171ecff1785a3809fbfacd84c5069f8dc4f",
+          "objective_snapshot": "data/objective-snapshots/mb-330-official-objectives.txt",
+          "objective_sha256_bytes": "5878ae23ebaad7d65dc7e9d36f2e305fdfee592a5975c15eb9673ad3ae1f9e65",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-330",
+          "entry_count": 8
+        },
+        {
+          "exam": "MB-500",
+          "guide": "guides/MB-500-microsoft-dynamics-365-finance-operations-apps-developer.md",
+          "guide_sha256_utf8_lf": "a17818b230a7d592fe05cce2d43b313355d2fcdf6152e078d6bd58fe4fa63dcc",
+          "objective_snapshot": "data/objective-snapshots/mb-500-official-objectives.txt",
+          "objective_sha256_bytes": "30b2b8913d63724b60099adcd9090a67bf818e3b0b42e7e57382a5ab240134cd",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-500",
+          "entry_count": 8
+        },
+        {
+          "exam": "MB-800",
+          "guide": "guides/MB-800-microsoft-dynamics-365-business-central-functional-consultant.md",
+          "guide_sha256_utf8_lf": "fb13dad39ac6e4f4d9eeb90f8401c8c354b02cd93053084fb5c45d1e5d293ffd",
+          "objective_snapshot": "data/objective-snapshots/mb-800-official-objectives.txt",
+          "objective_sha256_bytes": "36a7035403d51e3f1558e097e03f5cd4da0949d205420aeb46a8bd2b4ff30a9d",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-800",
+          "entry_count": 8
+        },
+        {
+          "exam": "MB-820",
+          "guide": "guides/MB-820-microsoft-dynamics-365-business-central-developer.md",
+          "guide_sha256_utf8_lf": "556181760077d3ad2e8f6fdc4723f83a9a713309482a5ea8f95366a0cacdc38d",
+          "objective_snapshot": "data/objective-snapshots/mb-820-official-objectives.txt",
+          "objective_sha256_bytes": "1e1a344d7da21661343df954d830f847f10aa2e3742893e8fab5381666dca108",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-820",
+          "entry_count": 8
+        }
+      ]
+    },
+    {
+      "packet": "packet-7",
+      "guides": [
+        {
+          "exam": "MO-110",
+          "guide": "guides/MO-110-microsoft-word-microsoft-365-apps.md",
+          "guide_sha256_utf8_lf": "1d46ee7f71b14cb3d3919d81e81ab351f01c67bfef6867beb442f36e66c55db4",
+          "objective_snapshot": "data/objective-snapshots/mo-110-official-objectives.txt",
+          "objective_sha256_bytes": "c5016d0c2a76187324de57865fcad9858aa02d49353a61ffc479e64430ee233a",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-associate-m365-apps/",
+          "entry_count": 8
+        },
+        {
+          "exam": "MO-111",
+          "guide": "guides/MO-111-microsoft-word-expert-microsoft-365-apps.md",
+          "guide_sha256_utf8_lf": "4671e41ea979874ebd74db5c531dbaff890f8753e7d943fd2bcdabbb07784ae6",
+          "objective_snapshot": "data/objective-snapshots/mo-111-official-objectives.txt",
+          "objective_sha256_bytes": "0db958488191b514b8598df0288463d19a4cc9b1f7fa81b3855850e6945c8fbc",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-expert-m365-apps/",
+          "entry_count": 8
+        },
+        {
+          "exam": "MO-210",
+          "guide": "guides/MO-210-microsoft-excel-microsoft-365-apps.md",
+          "guide_sha256_utf8_lf": "942f97cc1bd34acbf549e8ca2b3419ff0ca1708dcae10f83ed0a04105235690d",
+          "objective_snapshot": "data/objective-snapshots/mo-210-official-objectives.txt",
+          "objective_sha256_bytes": "71db2aebfc9e02978f17b80207c9b0bd180775ad9c8486050965a27a5fadc0d7",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-associate-m365-apps/",
+          "entry_count": 8
+        },
+        {
+          "exam": "MO-211",
+          "guide": "guides/MO-211-microsoft-excel-expert.md",
+          "guide_sha256_utf8_lf": "b4f2998f2671275378e270ca3382064702c5c6eabb709dc9bb006f14789faf39",
+          "objective_snapshot": "data/objective-snapshots/mo-211-official-objectives.txt",
+          "objective_sha256_bytes": "174e46cb264079c29287f88c0b16eafdeac46dfb7f746bb6323aeec315944e34",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-expert-m365-apps/",
+          "entry_count": 8
+        },
+        {
+          "exam": "MO-310",
+          "guide": "guides/MO-310-microsoft-powerpoint-microsoft-365-apps.md",
+          "guide_sha256_utf8_lf": "7121a752c2453bd9c5fd8b5d210a53f3c8bc4459cf4bb7e387623abebad6a5d9",
+          "objective_snapshot": "data/objective-snapshots/mo-310-official-objectives.txt",
+          "objective_sha256_bytes": "9ce732345e113b5587ccd794bdfa12dfbb2e95feda7c178566a8132c2f015570",
+          "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-powerpoint-associate-m365-apps/",
+          "entry_count": 8
+        }
+      ]
+    },
+    {
+      "packet": "palo-engineering-architecture",
+      "guides": [
+        {
+          "exam": "PANW-CLOUD-SECURITY-ENGINEER",
+          "guide": "guides/PANW-CLOUD-SECURITY-ENGINEER-palo-alto-networks-cloud-security-engineer.md",
+          "guide_sha256_utf8_lf": "b743c22cb43a817a26f79f7126c5f2e46c1d3568db3711753623c14119f77839",
+          "objective_snapshot": "data/objective-snapshots/panw-cloud-security-engineer-official-objectives.txt",
+          "objective_sha256_bytes": "8a226a5c7f86018cb4d6767ded061b772eeabe8c0bcff84e9fb4371970f8f0d1",
+          "canonical_url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/palo-alto-networks-cloudsec-engineer.pdf",
+          "entry_count": 10
+        },
+        {
+          "exam": "PANW-NGFW-ENGINEER",
+          "guide": "guides/PANW-NGFW-ENGINEER-palo-alto-networks-next-generation-firewall-engineer.md",
+          "guide_sha256_utf8_lf": "af58574c9cc0f26c4dad1f732f41bd11dc68ad790e08d7dc043199eee9624127",
+          "objective_snapshot": "data/objective-snapshots/panw-ngfw-engineer-official-objectives.txt",
+          "objective_sha256_bytes": "e6d1470d49b1d63602c5021bf347751e6b64443817cdda1e9700bd4a10486806",
+          "canonical_url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/ngfw-engineer-datasheet.pdf",
+          "entry_count": 10
+        },
+        {
+          "exam": "PANW-SD-WAN-ENGINEER",
+          "guide": "guides/PANW-SD-WAN-ENGINEER-palo-alto-networks-sd-wan-engineer.md",
+          "guide_sha256_utf8_lf": "3c7630e5b092aa2e39645d09596b54d81b6cc551183438d071232be7b7c0e56b",
+          "objective_snapshot": "data/objective-snapshots/panw-sd-wan-engineer-official-objectives.txt",
+          "objective_sha256_bytes": "4975bd40c58863097d6c0a49ff6a56601f4351ce8b0f44c0b6b1e41a5a1bf123",
+          "canonical_url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/sd-wan-engineer-datasheet.pdf",
+          "entry_count": 9
+        },
+        {
+          "exam": "PANW-SSE-ENGINEER",
+          "guide": "guides/PANW-SSE-ENGINEER-palo-alto-networks-security-service-edge-engineer.md",
+          "guide_sha256_utf8_lf": "d8bc9dd046d958ee518c63c58373adb2b22a441fcbaae20fc083c6cd569d0a6c",
+          "objective_snapshot": "data/objective-snapshots/panw-sse-engineer-official-objectives.txt",
+          "objective_sha256_bytes": "3bdbefeb8ab8230ee70c124ad888afdde4739714b7f11f5e53d5ee446597e722",
+          "canonical_url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/sse-engineer-datasheet.pdf",
+          "entry_count": 9
+        },
+        {
+          "exam": "PANW-XDR-ENGINEER",
+          "guide": "guides/PANW-XDR-ENGINEER-palo-alto-networks-xdr-engineer.md",
+          "guide_sha256_utf8_lf": "0250589ef35582fba2416409205e8f71f9efdf1eddce22365ffbda29b25bf42d",
+          "objective_snapshot": "data/objective-snapshots/panw-xdr-engineer-official-objectives.txt",
+          "objective_sha256_bytes": "12d92e0024c93b533cecb01a55b53e8e5c667ec75b2fbbeca2db183b75451a26",
+          "canonical_url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/xdr-engineer-datasheet.pdf",
+          "entry_count": 9
+        },
+        {
+          "exam": "PANW-XSIAM-ENGINEER",
+          "guide": "guides/PANW-XSIAM-ENGINEER-palo-alto-networks-xsiam-engineer.md",
+          "guide_sha256_utf8_lf": "6332295393c979e4248e06b4744fedcdcc6937439acbf58062d308b98b6f9b85",
+          "objective_snapshot": "data/objective-snapshots/panw-xsiam-engineer-official-objectives.txt",
+          "objective_sha256_bytes": "01fcfc3a45ecdf45cdd41d9dfa6e33f6d30360991d2be20807fe2d9fcf6130ca",
+          "canonical_url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/xsiam-engineer-datasheet.pdf",
+          "entry_count": 9
+        },
+        {
+          "exam": "PANW-XSOAR-ENGINEER",
+          "guide": "guides/PANW-XSOAR-ENGINEER-palo-alto-networks-xsoar-engineer.md",
+          "guide_sha256_utf8_lf": "df091ee5bc7d2ee97f9adb3fc6c6ad7537f01ec04ddc9a19d18a5ae77ea8aee1",
+          "objective_snapshot": "data/objective-snapshots/panw-xsoar-engineer-official-objectives.txt",
+          "objective_sha256_bytes": "43a17a64086c63ac3a769b6279b2c31cb3eec4e85f69fe62f8f88dae4a8c504c",
+          "canonical_url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/xsoar-engineer-datasheet.pdf",
+          "entry_count": 9
+        },
+        {
+          "exam": "PANW-NETWORK-SECURITY-ARCHITECT",
+          "guide": "guides/PANW-NETWORK-SECURITY-ARCHITECT-palo-alto-networks-network-security-architect.md",
+          "guide_sha256_utf8_lf": "81563e7574d23ac134f2d96fd14863fc65252536ab8b2a94a38b5273b3042f5a",
+          "objective_snapshot": "data/objective-snapshots/panw-network-security-architect-official-objectives.txt",
+          "objective_sha256_bytes": "28444ec9fc48dbee66d43c27ab1d3c60bc56ab51b323e887152a18b21306eda2",
+          "canonical_url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/netsec-architect-datasheet.pdf",
+          "entry_count": 9
+        },
+        {
+          "exam": "PANW-SECURITY-OPERATIONS-ARCHITECT",
+          "guide": "guides/PANW-SECURITY-OPERATIONS-ARCHITECT-palo-alto-networks-security-operations-architect.md",
+          "guide_sha256_utf8_lf": "703f2f918c6bfbef4206b8d15a586a37c0295efc960e6696147ad7758460f245",
+          "objective_snapshot": "data/objective-snapshots/panw-security-operations-architect-official-objectives.txt",
+          "objective_sha256_bytes": "1b4c3dc91c145dd25409e6ddef72d2580f6b964f3b1dd6dab4136e728788c4e5",
+          "canonical_url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/secops-architect-datasheet.pdf",
+          "entry_count": 10
+        }
+      ]
+    },
+    {
+      "packet": "palo-foundations-analysts",
+      "guides": [
+        {
+          "exam": "PANW-CYBERSECURITY-APPRENTICE",
+          "guide": "guides/PANW-CYBERSECURITY-APPRENTICE-palo-alto-networks-cybersecurity-apprentice.md",
+          "guide_sha256_utf8_lf": "2bca98c8a87a03b73d5e2d23d1825bb9a50582719d22a442b1ee29d9f117427e",
+          "objective_snapshot": "data/objective-snapshots/panw-cybersecurity-apprentice-official-objectives.txt",
+          "objective_sha256_bytes": "fbd3b8491d4f5a04b8592653652089dcb6e1fe7f7e1948a974dd37469f1673b7",
+          "canonical_url": "https://www.paloaltonetworks.com/services/education/panw-cybersecurity-apprentice",
+          "entry_count": 8
+        },
+        {
+          "exam": "PANW-CYBERSECURITY-PRACTITIONER",
+          "guide": "guides/PANW-CYBERSECURITY-PRACTITIONER-palo-alto-networks-cybersecurity-practitioner.md",
+          "guide_sha256_utf8_lf": "3c47f95a8d9fa59813c3746bd732ad35663338f4b32e7cbcf816f9095949f693",
+          "objective_snapshot": "data/objective-snapshots/panw-cybersecurity-practitioner-official-objectives.txt",
+          "objective_sha256_bytes": "600eac4ecbdddea9b5ce0e0dba159accac70b13b677dbcfdeaa0e19926dcd34b",
+          "canonical_url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/practitioner-datasheet.pdf",
+          "entry_count": 8
+        },
+        {
+          "exam": "PANW-CLOUD-SECURITY-PROFESSIONAL",
+          "guide": "guides/PANW-CLOUD-SECURITY-PROFESSIONAL-palo-alto-networks-cloud-security-professional.md",
+          "guide_sha256_utf8_lf": "a23f34f3396d8136ab81c1d63ebb8c7c697e74ea9b138b6573a2dfe1c34e9317",
+          "objective_snapshot": "data/objective-snapshots/panw-cloud-security-professional-official-objectives.txt",
+          "objective_sha256_bytes": "85d843c3d92c883b854add6b05c2bae20e18c18da44ce42d9f62ec7d9f8a89ae",
+          "canonical_url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/cloudsec-professional-datasheet.pdf",
+          "entry_count": 8
+        },
+        {
+          "exam": "PANW-NETWORK-SECURITY-PROFESSIONAL",
+          "guide": "guides/PANW-NETWORK-SECURITY-PROFESSIONAL-palo-alto-networks-network-security-professional.md",
+          "guide_sha256_utf8_lf": "19baeb600e8fb811dee88088bf1eb2cb81476eb5773c29393f87c28185c25d0e",
+          "objective_snapshot": "data/objective-snapshots/panw-network-security-professional-official-objectives.txt",
+          "objective_sha256_bytes": "682be74c10edf47fb23e61e21cb7544cf34fa962a9926b3b5265758bb66c6483",
+          "canonical_url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/netsec-professional-datasheet.pdf",
+          "entry_count": 8
+        },
+        {
+          "exam": "PANW-SECURITY-OPERATIONS-PROFESSIONAL",
+          "guide": "guides/PANW-SECURITY-OPERATIONS-PROFESSIONAL-palo-alto-networks-security-operations-professional.md",
+          "guide_sha256_utf8_lf": "0bffa7cda23ad3d7ef0986b0d42d1f9bf72cd55baf0dbb935f24fb0b2797355f",
+          "objective_snapshot": "data/objective-snapshots/panw-security-operations-professional-official-objectives.txt",
+          "objective_sha256_bytes": "4b118e221e1a6158afc9f749efc6e977b60f8e1a012f89efd5c512cdd2211acd",
+          "canonical_url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/secops-professional-datasheet.pdf",
+          "entry_count": 8
+        },
+        {
+          "exam": "PANW-NETWORK-SECURITY-ANALYST",
+          "guide": "guides/PANW-NETWORK-SECURITY-ANALYST-palo-alto-networks-network-security-analyst.md",
+          "guide_sha256_utf8_lf": "1968bc4147685a1a137fc7c6641f07c3ab6925704e8ac9a3d04efb6cf5425ead",
+          "objective_snapshot": "data/objective-snapshots/panw-network-security-analyst-official-objectives.txt",
+          "objective_sha256_bytes": "10b40a968bc62f35505e71b5972b161cedebdc723bf0f12bd31a90942d657ece",
+          "canonical_url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/netsec-analyst-datasheet.pdf",
+          "entry_count": 8
+        },
+        {
+          "exam": "PANW-XSIAM-ANALYST",
+          "guide": "guides/PANW-XSIAM-ANALYST-palo-alto-networks-xsiam-analyst.md",
+          "guide_sha256_utf8_lf": "d9a7f174ea8c81a38edd66128143f29b5fbd48d2c7660274f07c5bb206fc0f1d",
+          "objective_snapshot": "data/objective-snapshots/panw-xsiam-analyst-official-objectives.txt",
+          "objective_sha256_bytes": "c1f175c79813c8b994e1a1d61270ef393a4162a9e9b0f674399d5b7969c80137",
+          "canonical_url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/XSIAMAnalyst-datasheet.pdf",
+          "entry_count": 8
+        },
+        {
+          "exam": "PANW-XDR-ANALYST",
+          "guide": "guides/PANW-XDR-ANALYST-palo-alto-networks-xdr-analyst.md",
+          "guide_sha256_utf8_lf": "9ae4ae181eea3e851b31fb89ecfa8552d7c996cf714f18d6e55d861a8bff6252",
+          "objective_snapshot": "data/objective-snapshots/panw-xdr-analyst-official-objectives.txt",
+          "objective_sha256_bytes": "3c06e6862b0b7301795c65038b2313ba160aea3d244bef736cb252585ee42f44",
+          "canonical_url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/xdr-analyst-datasheet.pdf",
+          "entry_count": 8
+        }
+      ]
+    },
+    {
+      "packet": "platforms-and-infrastructure",
+      "guides": [
+        {
+          "exam": "TERRAFORM-ASSOCIATE-004",
+          "guide": "guides/TERRAFORM-ASSOCIATE-004-hashicorp-terraform-associate.md",
+          "guide_sha256_utf8_lf": "3c2b7ae7250f65c20ff478fd1fecc246a043123701718beebf003ecb4723f0d8",
+          "objective_snapshot": "data/objective-snapshots/terraform-associate-004-official-objectives.txt",
+          "objective_sha256_bytes": "41390d0d2fbb8b1cfbfb7349ada41f4cf13dc65815827b802ad082fd2c1bf53b",
+          "canonical_url": "https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-review-004",
+          "entry_count": 8
+        },
+        {
+          "exam": "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL",
+          "guide": "guides/TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL-hashicorp-terraform-professional.md",
+          "guide_sha256_utf8_lf": "e63d83aeb0e421d36efd5b2ba4afae40306a53415d1612c1eb1bea685e3a2f22",
+          "objective_snapshot": "data/objective-snapshots/terraform-authoring-operations-professional-official-objectives.txt",
+          "objective_sha256_bytes": "bffbb1760b01378fc12777096f010256534f6177a4247520f6a0db1c08c56c68",
+          "canonical_url": "https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-review",
+          "entry_count": 8
+        },
+        {
+          "exam": "VAULT-ASSOCIATE-003",
+          "guide": "guides/VAULT-ASSOCIATE-003-hashicorp-vault-associate.md",
+          "guide_sha256_utf8_lf": "c895e0e514ea8c13c7b681b809167b36ea6cd172aad0eaa152e7ba4bada4d454",
+          "objective_snapshot": "data/objective-snapshots/vault-associate-003-official-objectives.txt",
+          "objective_sha256_bytes": "2322b0085fb020f4cd83226d6c3e660412ae71e6de790e3e5716e17504818f0a",
+          "canonical_url": "https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-review-003",
+          "entry_count": 8
+        },
+        {
+          "exam": "VAULT-OPERATIONS-PROFESSIONAL",
+          "guide": "guides/VAULT-OPERATIONS-PROFESSIONAL-hashicorp-vault-operations-professional.md",
+          "guide_sha256_utf8_lf": "63ed46fa5bba8323083f2f42b3f6ca019a9f9c2e59b73d62b822312c4ef62397",
+          "objective_snapshot": "data/objective-snapshots/vault-operations-professional-official-objectives.txt",
+          "objective_sha256_bytes": "9144a3107d050f893b0c845664fbe4ca07e8edff7f4830f8dc89fefea3d291d6",
+          "canonical_url": "https://developer.hashicorp.com/vault/tutorials/ops-pro-cert/ops-advanced-review",
+          "entry_count": 8
+        },
+        {
+          "exam": "SALESFORCE-PLATFORM-ADMINISTRATOR",
+          "guide": "guides/SALESFORCE-PLATFORM-ADMINISTRATOR-salesforce-certified-platform-administrator.md",
+          "guide_sha256_utf8_lf": "14b8b820e97ce24ed817fee31e7617a3e3fcee395c2ba814436ead111804f3e0",
+          "objective_snapshot": "data/objective-snapshots/salesforce-platform-administrator-official-objectives.txt",
+          "objective_sha256_bytes": "b2f9f40f925247562d8d19eed5ad7a33a4b5c10e03b705d2fe34ec88678b7c97",
+          "canonical_url": "https://trailhead.salesforce.com/content/learn/modules/administrator-certification-prep-setup-and-objects/get-started-with-administrator-certification-prep",
+          "entry_count": 8
+        },
+        {
+          "exam": "SALESFORCE-PLATFORM-APP-BUILDER",
+          "guide": "guides/SALESFORCE-PLATFORM-APP-BUILDER-salesforce-certified-platform-app-builder.md",
+          "guide_sha256_utf8_lf": "260391598e46539a658c73f01665c8688157f2d83f182c149a52008b29da3154",
+          "objective_snapshot": "data/objective-snapshots/salesforce-platform-app-builder-official-objectives.txt",
+          "objective_sha256_bytes": "5365cb37f260db38aa6b4a306dd826258e3d85f058b8111352e56a065a965f14",
+          "canonical_url": "https://help.salesforce.com/s/articleView?id=005298964&language=en_US&type=1",
+          "entry_count": 8
+        },
+        {
+          "exam": "SALESFORCE-PLATFORM-DEVELOPER",
+          "guide": "guides/SALESFORCE-PLATFORM-DEVELOPER-salesforce-certified-platform-developer.md",
+          "guide_sha256_utf8_lf": "77b24eb858048027206d7441b64502e8d18ddff42bc1b8ff049dd42117f4ad23",
+          "objective_snapshot": "data/objective-snapshots/salesforce-platform-developer-official-objectives.txt",
+          "objective_sha256_bytes": "4843c3b24a93a1c4da79e50db00e79c38fa5921c6127df89e37a6754c5cddbfe",
+          "canonical_url": "https://help.salesforce.com/s/articleView?id=005298965&language=en_US&type=1",
+          "entry_count": 8
+        },
+        {
+          "exam": "SALESFORCE-AGENTFORCE-SPECIALIST",
+          "guide": "guides/SALESFORCE-AGENTFORCE-SPECIALIST-salesforce-certified-agentforce-specialist.md",
+          "guide_sha256_utf8_lf": "aa1ed621584a86157b7994fb09a0ef2dc0b536902e5e3e78c842602904486156",
+          "objective_snapshot": "data/objective-snapshots/salesforce-agentforce-specialist-official-objectives.txt",
+          "objective_sha256_bytes": "a633fd73b5f733d78426c5c66eebf566a7867d80a36ddadd505dbd8ef29b5664",
+          "canonical_url": "https://help.salesforce.com/s/articleView?id=005298924&language=en_US&type=1",
+          "entry_count": 8
+        },
+        {
+          "exam": "SERVICENOW-CSA",
+          "guide": "guides/SERVICENOW-CSA-servicenow-certified-system-administrator.md",
+          "guide_sha256_utf8_lf": "7456d5faf482f89750332bc4cbaea79ad93270a9e53a03bdf6b89e4c1cacceb8",
+          "objective_snapshot": "data/objective-snapshots/servicenow-csa-official-objectives.txt",
+          "objective_sha256_bytes": "7b94b0c2b2f331a2e878694c8b9aaa6db8e998bfc0424d75dca80e6cdbe1d553",
+          "canonical_url": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011554",
+          "entry_count": 8
+        },
+        {
+          "exam": "SERVICENOW-CAD",
+          "guide": "guides/SERVICENOW-CAD-servicenow-certified-application-developer.md",
+          "guide_sha256_utf8_lf": "adb4738910890240619795d45616e26f8863e7058768fece3236b2b3d1acc3f9",
+          "objective_snapshot": "data/objective-snapshots/servicenow-cad-official-objectives.txt",
+          "objective_sha256_bytes": "f71371fc8583ec438fbdde805d2e69d8034607333e1bc033ccc74ae5a261b59a",
+          "canonical_url": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011498",
+          "entry_count": 8
+        }
+      ]
+    },
+    {
+      "packet": "security-governance-assurance",
+      "guides": [
+        {
+          "exam": "CC",
+          "guide": "guides/CC-isc2-certified-in-cybersecurity.md",
+          "guide_sha256_utf8_lf": "db6b6071495dc2e73b977090f6a8238ca2e68a747064e0908aa7f205f961b8dd",
+          "objective_snapshot": "data/objective-snapshots/cc-official-objectives.txt",
+          "objective_sha256_bytes": "22b7660fa9b289c32f902cae087070762cc492978e2ce949b092fe363e279adb",
+          "canonical_url": "https://www.isc2.org/certifications/cc/cc-certification-exam-outline",
+          "entry_count": 9
+        },
+        {
+          "exam": "SSCP",
+          "guide": "guides/SSCP-isc2-systems-security-certified-practitioner.md",
+          "guide_sha256_utf8_lf": "63c7d2989c389c6f3a2189abcd594896ffd80ec5f1adc279369b692961f8a575",
+          "objective_snapshot": "data/objective-snapshots/sscp-official-objectives.txt",
+          "objective_sha256_bytes": "5b6e5e57f166741802957b515a7ec737606e5d43ca796a3691127de083d0a6d4",
+          "canonical_url": "https://www.isc2.org/certifications/sscp/sscp-certification-exam-outline",
+          "entry_count": 8
+        },
+        {
+          "exam": "CCSP",
+          "guide": "guides/CCSP-isc2-certified-cloud-security-professional.md",
+          "guide_sha256_utf8_lf": "26f4737a176f351e0db6299baa9699d8936208a2204dd51bead4815d987ba76c",
+          "objective_snapshot": "data/objective-snapshots/ccsp-official-objectives.txt",
+          "objective_sha256_bytes": "fef10f6e4d4ddf5249d19f5b8ab4b70700473671d5435ffea008fa8e3db84ed1",
+          "canonical_url": "https://www.isc2.org/certifications/ccsp/ccsp-certification-exam-outline",
+          "entry_count": 8
+        },
+        {
+          "exam": "CISSP",
+          "guide": "guides/CISSP-isc2-certified-information-systems-security-professional.md",
+          "guide_sha256_utf8_lf": "e6a02ccfaaa82a3b66319b2c4c8430f1f6465ff585e0baf3f50c9d619551428d",
+          "objective_snapshot": "data/objective-snapshots/cissp-official-objectives.txt",
+          "objective_sha256_bytes": "6a66cbffa4cbd4c4a75f7a09f831886f52335b6020dc54ff7cb2da5a9544a22c",
+          "canonical_url": "https://www.isc2.org/certifications/cissp/cissp-certification-exam-outline",
+          "entry_count": 8
+        },
+        {
+          "exam": "CISA",
+          "guide": "guides/CISA-isaca-certified-information-systems-auditor.md",
+          "guide_sha256_utf8_lf": "c0ce3274dfaa079faf51188769c5199d35e651c29a846303c635b97e9a19cf89",
+          "objective_snapshot": "data/objective-snapshots/cisa-official-objectives.txt",
+          "objective_sha256_bytes": "1b6d14e1c7adfd585869f75f8ea1fb822dcb73a696cabca5c6dc7e7c9ea9d25e",
+          "canonical_url": "https://www.isaca.org/credentialing/cisa/cisa-exam-content-outline",
+          "entry_count": 8
+        },
+        {
+          "exam": "CISM",
+          "guide": "guides/CISM-isaca-certified-information-security-manager.md",
+          "guide_sha256_utf8_lf": "d8c1d84e73eff2f675e7e0293100b2e1767145b5af1cdfd5dc6cbf82778f2f16",
+          "objective_snapshot": "data/objective-snapshots/cism-official-objectives.txt",
+          "objective_sha256_bytes": "4e9e04334324b59c3a0c64acb24760b722d7319b15ffa7ab7b81ec9c21cbff46",
+          "canonical_url": "https://www.isaca.org/credentialing/cism/cism-exam-content-outline",
+          "entry_count": 9
+        },
+        {
+          "exam": "CRISC",
+          "guide": "guides/CRISC-isaca-certified-risk-information-systems-control.md",
+          "guide_sha256_utf8_lf": "a64aea2c53940ce100ac68bb06db94b77a844398426b4bd656566436710a27c4",
+          "objective_snapshot": "data/objective-snapshots/crisc-official-objectives.txt",
+          "objective_sha256_bytes": "8a607e350fc322e463cf56ebad620f53e5c2826017f3235aab6f04baf97bd614",
+          "canonical_url": "https://www.isaca.org/credentialing/crisc/crisc-exam-content-outline",
+          "entry_count": 9
+        }
+      ]
+    },
+    {
+      "packet": "splunk",
+      "guides": [
+        {
+          "exam": "SPLUNK-CORE-USER",
+          "guide": "guides/SPLUNK-CORE-USER-splunk-core-certified-user.md",
+          "guide_sha256_utf8_lf": "98568dbbcc39f5c0b28b11cbd55bbf6379333e49dfe54135f3368bcaaa9f4683",
+          "objective_snapshot": "data/objective-snapshots/splunk-core-user-official-objectives.txt",
+          "objective_sha256_bytes": "12b7fe480f890afd5f9bab87a17cd67eb1952d32720b92f86d57b9e5fae42c77",
+          "canonical_url": "https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-user.pdf",
+          "entry_count": 8
+        },
+        {
+          "exam": "SPLUNK-CORE-POWER-USER",
+          "guide": "guides/SPLUNK-CORE-POWER-USER-splunk-core-certified-power-user.md",
+          "guide_sha256_utf8_lf": "4b94ddaf09b5019a25df02e336c6944c3f2fc8e158d1abd5d8e4a0f34c63b4a4",
+          "objective_snapshot": "data/objective-snapshots/splunk-core-power-user-official-objectives.txt",
+          "objective_sha256_bytes": "e5715fa538ca2139d8472fd5aa4122ddf4651abe8f41794ddb6347760aa5f1d1",
+          "canonical_url": "https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-power-user.pdf",
+          "entry_count": 8
+        },
+        {
+          "exam": "SPLUNK-ADVANCED-POWER-USER",
+          "guide": "guides/SPLUNK-ADVANCED-POWER-USER-splunk-core-certified-advanced-power-user.md",
+          "guide_sha256_utf8_lf": "5e643e20d2b97c26e1484688b39b1960731981390ca087af22bb6b7ebf50850b",
+          "objective_snapshot": "data/objective-snapshots/splunk-advanced-power-user-official-objectives.txt",
+          "objective_sha256_bytes": "88bf95c61b865a715feb43849ff3ba24a64fff0218c4c17d8f7cd589b2232815",
+          "canonical_url": "https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-advanced-power-user.pdf",
+          "entry_count": 8
+        },
+        {
+          "exam": "SPLUNK-CLOUD-ADMIN",
+          "guide": "guides/SPLUNK-CLOUD-ADMIN-splunk-cloud-certified-admin.md",
+          "guide_sha256_utf8_lf": "5b31d1f332a35bdfa2485b01dd4771622a3b6d32abcd3f507cf6eb7a562ba289",
+          "objective_snapshot": "data/objective-snapshots/splunk-cloud-admin-official-objectives.txt",
+          "objective_sha256_bytes": "ef925e6aab94980171d47b8162c03c13e5c3800eabc87783f58807030e2b4955",
+          "canonical_url": "https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-cloud-admin.pdf",
+          "entry_count": 8
+        },
+        {
+          "exam": "SPLUNK-ENTERPRISE-ADMIN",
+          "guide": "guides/SPLUNK-ENTERPRISE-ADMIN-splunk-enterprise-certified-admin.md",
+          "guide_sha256_utf8_lf": "3dbd874c2ebf581ca4022dc4e5f75508d869f199f973488ee8fe4139cb5ae26e",
+          "objective_snapshot": "data/objective-snapshots/splunk-enterprise-admin-official-objectives.txt",
+          "objective_sha256_bytes": "5d446f18d95406a4a21e6b7f3ead1530c6bd7b7faa89719d8ecaa3593c179c5c",
+          "canonical_url": "https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-enterprise-admin.pdf",
+          "entry_count": 8
+        },
+        {
+          "exam": "SPLUNK-ENTERPRISE-ARCHITECT",
+          "guide": "guides/SPLUNK-ENTERPRISE-ARCHITECT-splunk-enterprise-certified-architect.md",
+          "guide_sha256_utf8_lf": "822234d0a02fdfa553ff7f85d30f8a2c1c7e5710ed3500b954c5cc4fbe5eda8d",
+          "objective_snapshot": "data/objective-snapshots/splunk-enterprise-architect-official-objectives.txt",
+          "objective_sha256_bytes": "0c28e1dbc996a44c1bfad21e83bfcea0bd69645bbee8432a0a93e23262d102f4",
+          "canonical_url": "https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-architect.pdf",
+          "entry_count": 8
+        },
+        {
+          "exam": "SPLUNK-CORE-CONSULTANT",
+          "guide": "guides/SPLUNK-CORE-CONSULTANT-splunk-core-certified-consultant.md",
+          "guide_sha256_utf8_lf": "44ecc021379904dc006de1cb59c8bf7f86ea21f7ba20e6b28293e74d50305b4a",
+          "objective_snapshot": "data/objective-snapshots/splunk-core-consultant-official-objectives.txt",
+          "objective_sha256_bytes": "4fe612b351b9c761b9032259a223155b6e4e3c3773d9edd2fac17d5b0731ea73",
+          "canonical_url": "https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-consultant.pdf",
+          "entry_count": 8
+        },
+        {
+          "exam": "SPLUNK-O11Y-METRICS-USER",
+          "guide": "guides/SPLUNK-O11Y-METRICS-USER-splunk-o11y-cloud-certified-metrics-user.md",
+          "guide_sha256_utf8_lf": "9c1dc58fe1d3e8e76f20a855f66d2e69d1b1fbbd25786d5e9b20f9695df3bbe4",
+          "objective_snapshot": "data/objective-snapshots/splunk-o11y-metrics-user-official-objectives.txt",
+          "objective_sha256_bytes": "53592e027c6e076c752a7fdbda7be355bcc4cde7d02c379d87ff5bb0b85faa01",
+          "canonical_url": "https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-o11y-cloud-metrics-user.pdf",
+          "entry_count": 8
+        },
+        {
+          "exam": "SPLK-5001",
+          "guide": "guides/SPLK-5001-splunk-certified-cybersecurity-defense-analyst.md",
+          "guide_sha256_utf8_lf": "122725bf947d86f7d6d09038fc284046d45cee76288c60084874c3fb20852611",
+          "objective_snapshot": "data/objective-snapshots/splk-5001-official-objectives.txt",
+          "objective_sha256_bytes": "a2bd1aa1350f373525e5d2f66cfc38f7023f6b84cf9275f594421412fbd704f5",
+          "canonical_url": "https://www.splunk.com/en_us/training/certification-track/splunk-certified-cybersecurity-defense-analyst.html",
+          "entry_count": 8
+        },
+        {
+          "exam": "SPLK-5002",
+          "guide": "guides/SPLK-5002-splunk-certified-cybersecurity-defense-engineer.md",
+          "guide_sha256_utf8_lf": "cc890bc6f1537bd1ae414df6eff66f28446b6dd61ed3ff32dcca1b6bbc8463c7",
+          "objective_snapshot": "data/objective-snapshots/splk-5002-official-objectives.txt",
+          "objective_sha256_bytes": "8c0b091c2e53985d8ccfd27c19ff36fe4379d18e43fcdfb93c04a0847f18c751",
+          "canonical_url": "https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-cybersecurity-defense-engineer.pdf",
+          "entry_count": 8
+        },
+        {
+          "exam": "SPLK-5003",
+          "guide": "guides/SPLK-5003-splunk-certified-cybersecurity-defense-architect.md",
+          "guide_sha256_utf8_lf": "0e519646c4a932bd324acf8560597a041f46e02a9ffd7d38a75d4be65e6a3afd",
+          "objective_snapshot": "data/objective-snapshots/splk-5003-official-objectives.txt",
+          "objective_sha256_bytes": "10121cd48a63fb12ca9073996c56aa52248a86bbcf124729f358798ba7331161",
+          "canonical_url": "https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-cybersecurity-defense-architect.pdf",
+          "entry_count": 8
+        }
+      ]
+    }
+  ]
+}

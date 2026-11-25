@@ -462,6 +462,92 @@ Do not use an older LFCA route without remapping it. The current six domain name
 
 The official LFCA page and its September 2025 program-change notice were checked again. The six-domain blueprint, 90-minute multiple-choice format, two-year validity, and competencies remain the current published version; no newer exam change or retirement date was posted. The current upstream stable kernel index lists 6.18.59 (October 26) and 6.12.114 (October 21). Use these only as examples for reading release/version and security-maintenance notes: distributions select and backport their own kernels, and upstream version numbers are not an LFCA target. A useful practice loop is identify the running kernel, inspect package/advisory state, read the change record, plan reboot impact, and verify service health after maintenance. [Linux kernel stable releases](https://www.kernel.org/pub/linux/kernel/v6.x/).
 
+## Key terms and phrases
+
+**Linux fundamentals**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Linux distribution](#operating-system-and-distribution-model) | A packaged operating system combining a Linux kernel with system tools, software repositories and a maintenance policy. |
+| [Filesystem](#operating-system-and-distribution-model) | The structures that organize files and directories on storage or expose a virtual hierarchy. A larger block device alone does not always enlarge its filesystem. |
+| [Kernel](#operating-system-and-distribution-model) | The privileged core of the operating system that manages processors, memory, devices and system calls for user-space programs. |
+| [Process](#operating-system-and-distribution-model) | A running program instance with its own identifier, credentials and execution state. |
+| [Pipe](#command-line-literacy) | A connection that sends one command's standard output to the next command's standard input. Piping the output of `printf hello` into `wc -c` counts the five bytes and prints `5`. |
+| [Hard link](#command-line-literacy) | Another directory entry for the same underlying filesystem object. Removing one name does not remove the data while another link remains. |
+| [Standard error](#command-line-literacy) | The output stream programs use for diagnostics. It can be redirected independently of ordinary output. |
+| [Standard output](#command-line-literacy) | The normal output stream of a process, usually file descriptor 1. It can be redirected or piped independently of error output. |
+| [Symbolic link](#command-line-literacy) | A directory entry containing a path to another object. It can cross filesystems and still exist when the target no longer does. |
+| [Standard input](#command-line-literacy) | The input stream from which a process can read, usually file descriptor 0. A shell can attach it to a terminal, file or pipe. |
+| [Exit status](#original-stream-and-exit-status-exercise) | A numeric result returned when a command finishes. Shell scripts commonly use zero to indicate success. |
+| [Redirection](#original-stream-and-exit-status-exercise) | Connecting a process stream to a different destination or source, such as sending its output to a file. |
+| [Execute permission](#permissions-and-evidence-before-modification) | Permission to run a file as a program or traverse a directory, subject to other access controls. |
+| [Access control list (ACL)](#permissions-and-evidence-before-modification) | Additional file permissions for named users or groups beyond the owner, group and other mode bits. |
+
+**System administration fundamentals**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Service](#identities-software-services-and-storage) | A managed background function, such as a web server. Being configured to start at boot and currently running are different states. |
+| [Package manager](#identities-software-services-and-storage) | Software that installs, updates and removes packages while tracking metadata and dependencies. |
+| [Listening port](#identities-software-services-and-storage) | A network socket waiting for incoming traffic on a protocol, address and port. A listening service may still be unreachable through an intervening firewall. |
+| [Logical volume (LV)](#identities-software-services-and-storage) | An LVM block device allocated from a volume group. Resizing the LV and resizing the filesystem it contains are distinct operations. |
+| [Repository metadata](#identities-software-services-and-storage) | The catalog of packages, versions and related information a package manager uses to resolve installation requests. |
+| [Shell](#identities-software-services-and-storage) | A command interpreter that parses input, expands variables and launches programs. Syntax can differ among shells. |
+| [Timestamp](#service-state-and-a-beginner-troubleshooting-record) | A recorded time associated with an event. Distinguish source event time from collection or indexing time when building a timeline. |
+| [Default gateway](#networking) | The next hop a host uses for destinations that have no more specific route. |
+| [DNS resolver](#networking) | A service that answers a client’s DNS query, consulting cached entries or querying other DNS servers as needed. |
+| [MAC address](#networking) | A link-layer identifier used to deliver frames on the local network. Knowing a MAC address alone does not identify the authenticated user. |
+| [Neighbor Discovery](#networking) | The IPv6 mechanisms for learning neighbors and routers and resolving link-layer addresses on the local link. |
+| [Network address translation (NAT)](#networking) | Rewriting source or destination addresses as traffic crosses a network boundary. |
+
+**Cloud computing fundamentals**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Virtual machine](#3-cloud-computing-fundamentals-18) | A software-defined computer with its own operating system running on resources provided by a hypervisor. |
+| [Availability zone](#3-cloud-computing-fundamentals-18) | An isolated location within a provider region used to reduce correlated failures when resources are placed across zones. |
+| [Elasticity](#3-cloud-computing-fundamentals-18) | The ability to expand and contract resources in response to demand. It depends on available capacity, policy and workload design. |
+| [Failure domain](#3-cloud-computing-fundamentals-18) | A set of components that can fail together, such as workloads sharing a physical host, power source or region. |
+| [Horizontal scaling](#3-cloud-computing-fundamentals-18) | Changing the number of service instances. The workload and its dependencies must support distributing requests among them. |
+| [Serverless](#3-cloud-computing-fundamentals-18) | A cloud execution model in which the provider handles much of the runtime provisioning and scaling. The customer still owns its code, permissions and data. |
+| [Vertical scaling](#3-cloud-computing-fundamentals-18) | Changing the resources of an individual instance, such as increasing memory. This can require a restart or hit an instance-size limit. |
+| [Container image](#original-cloud-decision-and-budget-cases) | A packaged filesystem and metadata used to launch containers. An image digest identifies particular contents more precisely than a mutable tag. |
+
+**Security fundamentals**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Least privilege](#4-security-fundamentals-14) | Giving an account only the access required for its assigned work. |
+| [Defense in depth](#4-security-fundamentals-14) | Coordinating complementary safeguards so that one failed control does not expose the entire service or dataset. |
+| [Digital signature](#4-security-fundamentals-14) | A cryptographic value produced with a private key and checked with its corresponding public key to authenticate signed data and detect alteration. |
+| [Encryption](#4-security-fundamentals-14) | Reversibly transforming data with a key to keep the plaintext unavailable to parties lacking the appropriate decryption capability. |
+| [Vulnerability](#4-security-fundamentals-14) | A weakness in design, configuration, process or implementation that can affect a security objective under applicable conditions. |
+
+**DevOps fundamentals**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Merge](#5-devops-fundamentals-12) | Combining histories or changes from separate branches. Overlapping edits can require an explicit conflict resolution. |
+| [Metrics](#5-devops-fundamentals-12) | Numerical time series used to quantify behavior such as latency, error rate or capacity. Aggregation and labels determine what the values represent. |
+| [Version control](#5-devops-fundamentals-12) | Recording changes to files as identifiable revisions so users can compare, review and recover previous states. |
+| [Commit](#git-snapshots-and-original-conflict-recovery-exercise) | A recorded Git snapshot with identifying metadata and links to its history. |
+| [Branch](#git-snapshots-and-original-conflict-recovery-exercise) | A movable Git reference to a line of development. The reference advances as new commits are made on that branch. |
+| [Snapshot](#git-snapshots-and-original-conflict-recovery-exercise) | A point-in-time representation of a resource. Its independence, consistency and recovery scope depend on the underlying service. |
+
+**IT project management fundamentals**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Acceptance criteria](#6-it-project-management-fundamentals-10) | Observable conditions used to decide whether a delivered project result meets the agreed need. |
+| [Observability](#6-it-project-management-fundamentals-10) | The ability to infer a system’s internal condition from its outputs, often by relating logs, metrics and traces to a particular request or failure. |
+| [Retry](#original-functional-analysis-and-project-worksheet) | Trying a failed operation again under a defined policy. For writes, duplication and uncertain completion require special handling. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Repository](#scenario-3-lost-laptop-and-exposed-repository-token) | A source of software packages and metadata that a package manager uses to resolve versions and dependencies. |
+
 ## Places to learn
 
 This is not a complete list and is not meant to be consumed in full. Choose one primary route, add hands-on Linux/network/Git/container labs, and close the September 2025 project-management/licensing gap explicitly.

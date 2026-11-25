@@ -531,6 +531,82 @@ All eight complete Linux labs remain proposed. The executed certificate and loop
 
 The current LFCS issuer page still describes a two-hour, performance-based command-line exam; the published objective snapshot and delivery contract remain unchanged. The upstream kernel stable index now lists Linux 6.18.59 (October 26) and 6.12.114 (October 21). For administration practice, use current release notes to rehearse package/update planning, kernel-log inspection, reboot scheduling, and post-update service checks, while following the chosen distribution’s supported kernel and backport policy rather than installing upstream kernels solely to match a version number. [Linux kernel stable releases](https://www.kernel.org/pub/linux/kernel/v6.x/).
 
+## Key terms and phrases
+
+**Operations deployment**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Journal](#kernel-processes-services-and-jobs) | The systemd event log used to examine service and boot messages. Filters such as unit and boot narrow the investigation. |
+| [Kernel](#kernel-processes-services-and-jobs) | The privileged core of the operating system that manages processors, memory, devices and system calls for user-space programs. |
+| [Process](#kernel-processes-services-and-jobs) | A running program instance with its own identifier, credentials and execution state. |
+| [systemd unit](#unit-state-scheduling-and-effective-constraints) | An object managed by systemd, such as a service, mount or timer, with a defined state and dependencies. |
+| [Quoting](#unit-state-scheduling-and-effective-constraints) | Controlling how a shell treats spaces, glob patterns and variable expansions so arguments retain their intended boundaries. |
+| [systemd](#unit-state-scheduling-and-effective-constraints) | A Linux init and service manager that starts and supervises units according to dependencies and configuration. |
+| [Unit file](#unit-state-scheduling-and-effective-constraints) | The configuration describing a systemd unit, such as a service or timer, including its behavior and dependencies. |
+| [Initramfs](#packages-failure-recovery-and-boot) | An initial filesystem loaded during boot with the drivers and tools needed to locate and mount the real root filesystem. |
+| [Repository](#packages-failure-recovery-and-boot) | A source of software packages and metadata that a package manager uses to resolve versions and dependencies. |
+| [systemd target](#packages-failure-recovery-and-boot) | A named group of units used to bring the system to a particular operating state, such as multi-user operation. |
+| [Container](#virtual-machines-containers-and-selinux) | An isolated application process and its dependencies that ordinarily shares the host kernel. Its image is the packaged input used to start it. |
+| [Discretionary access control (DAC)](#virtual-machines-containers-and-selinux) | Access determined through file ownership, permission bits and related mechanisms controlled by authorized owners or administrators. |
+| [Security-Enhanced Linux (SELinux)](#virtual-machines-containers-and-selinux) | A Linux mandatory access control system that applies policy to labeled subjects and objects in addition to ordinary file permissions. |
+| [Extensible Markup Language (XML)](#persistent-definitions-and-selinux-repair-evidence) | A structured document format using elements and attributes; namespaces and schema rules can affect how an API or parser interprets a document. |
+
+**Networking**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Routing table](#addresses-names-routes-and-time) | The set of destination prefixes, interfaces, next hops and related information used to choose a packet’s path. |
+| [Packet capture](#addresses-names-routes-and-time) | An observation of traffic visible at a particular interface or tap. Position, direction and capture filters determine what it can show. |
+| [Service enablement](#addresses-names-routes-and-time) | Configuration that lets a service be pulled in at boot or by a target. It does not establish that the service is running now. |
+| [Static route](#addresses-names-routes-and-time) | A route installed by configuration, specifying a prefix and next hop or interface. It changes only through configuration or an associated tracking mechanism. |
+| [Network address translation (NAT)](#ssh-filtering-nat-and-forwarding) | Rewriting source or destination addresses as traffic crosses a network boundary. |
+| [firewalld](#ssh-filtering-nat-and-forwarding) | A Linux firewall-management service that organizes policy using zones and services. Runtime state and persistent configuration can differ. |
+| [Port redirection](#ssh-filtering-nat-and-forwarding) | A destination NAT rule rewrites the destination address or port of matching packets. Trace the translated destination and return path to explain which service receives the connection. |
+| [Superuser](#ssh-filtering-nat-and-forwarding) | The highly privileged Unix identity traditionally assigned UID 0. Namespaces and additional security policy can constrain what it may do. |
+| [Secure Shell (SSH)](#ssh-filtering-nat-and-forwarding) | An encrypted protocol for remote login and related operations. Host keys authenticate the server, while user credentials establish the client’s identity. |
+| [Network bridge](#bridges-bonds-reverse-proxies-and-load-balancers) | A Layer 2 device or software interface that forwards frames among attached network interfaces. |
+| [Bond](#bridges-bonds-reverse-proxies-and-load-balancers) | A logical interface that groups physical network links for a configured redundancy or load-distribution mode. |
+| [Health check](#bridges-bonds-reverse-proxies-and-load-balancers) | A signal about an application’s current condition. Readiness concerns accepting traffic, while liveness concerns whether restarting could restore operation. |
+| [Load balancer](#bridges-bonds-reverse-proxies-and-load-balancers) | A component that sends eligible requests or connections to selected backends using health and distribution policy. |
+| [Reverse proxy](#bridges-bonds-reverse-proxies-and-load-balancers) | A service that receives requests on behalf of an application and makes a separate connection to the origin. |
+| [Sandbox](#original-route-ssh-and-proxy-diagnosis-worksheet) | An isolated environment for observing or restricting a program’s behavior. Its conclusions depend on the inputs, visibility and constraints of the environment. |
+
+**Storage**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Logical volume](#lvm-filesystems-and-virtual-filesystem) | A block device allocated from an LVM volume group that can host a filesystem or other data. |
+| [Filesystem](#lvm-filesystems-and-virtual-filesystem) | The structures that organize files and directories on storage or expose a virtual hierarchy. A larger block device alone does not always enlarge its filesystem. |
+| [Physical volume (PV)](#lvm-filesystems-and-virtual-filesystem) | A disk or partition initialized for use by LVM as a contributor of capacity to a volume group. |
+| [Swap](#lvm-filesystems-and-virtual-filesystem) | Disk-backed space the kernel can use for eligible memory pages. Excessive use can produce severe latency even when a process stays alive. |
+| [Volume group (VG)](#lvm-filesystems-and-virtual-filesystem) | An LVM storage pool composed of one or more physical volumes, from which logical volumes receive space. |
+| [Automount](#remote-filesystems-network-block-devices-and-automount) | A mechanism that mounts a filesystem when its path is accessed instead of requiring it to be mounted continuously. |
+| [Network File System (NFS)](#remote-filesystems-network-block-devices-and-automount) | A protocol for accessing remote files through a filesystem interface. Mount, export, network reachability and identity mapping all affect access. |
+| [Throughput](#remote-filesystems-network-block-devices-and-automount) | The rate at which data is successfully delivered over an interval. It can be lower than nominal link capacity because of overhead or congestion. |
+
+**Essential commands**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Certificate chain](#git-files-and-certificates) | The sequence of certificates linking a presented identity to a trusted issuer. Trust also depends on checks such as name and validity period. |
+| [Branch](#git-files-and-certificates) | A movable Git reference to a line of development. The reference advances as new commits are made on that branch. |
+| [Merge](#git-files-and-certificates) | Combining histories or changes from separate branches. Overlapping edits can require an explicit conflict resolution. |
+| [Certificate authority (CA)](#original-certificate-inspection-and-validation-exercise) | A trusted issuer that signs certificates linking subjects to public keys under a stated policy. |
+| [umask](#original-certificate-inspection-and-validation-exercise) | A process setting that removes permission bits from the requested creation mode. A requested 0666 with umask 0022 normally creates mode 0644. |
+| [Inode](#services-constraints-and-performance) | Filesystem metadata identifying an object and recording properties such as ownership and data references. Directory entries map names to inode numbers. |
+| [Mount point](#services-constraints-and-performance) | A directory at which a filesystem is attached to the visible directory tree. |
+
+**Users and groups**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Shell](#5-users-and-groups-10) | A command interpreter that parses input, expands variables and launches programs. Syntax can differ among shells. |
+| [Access control list (ACL)](#acl-decisions-and-identity-versus-authentication) | Additional file permissions for named users or groups beyond the owner, group and other mode bits. |
+| [Authentication](#acl-decisions-and-identity-versus-authentication) | Checking that a claimant controls an authenticator bound to the claimed identity. It precedes the separate decision about permitted actions. |
+| [Authorization](#acl-decisions-and-identity-versus-authentication) | Determining whether a given identity may perform a specific action on the particular resource requested. |
+| [File access control list](#acl-decisions-and-identity-versus-authentication) | Permissions on a file or directory for additional named users or groups beyond the basic owner/group/other bits. A mask can limit effective entries. |
+
 ## Places to learn
 
 This is not a complete list and is not meant to be consumed in full. Choose one current structured path, spend more time completing and verifying tasks than watching, use the included simulator for environment practice, and close every gap against the live five-domain map.

@@ -13,6 +13,8 @@ upcoming_change_checked: 2026-10-28
 
 # AZ-800 Administering Windows Server Hybrid Core Infrastructure Study Guide
 
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-03.md#az-800)
+
 > **RETIRED — verified October 28, 2026.** Microsoft explicitly confirms that AZ-800 retired September 30, 2026, at 5:00 PM Central Standard Time. Use [AZ-802](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802) for current exam preparation. This guide preserves historical objectives and useful technical foundations; it is not an available booking route. Earlier technical evidence gaps and unexecuted labs remain.
 
 > **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The full guide, detailed objective mapping, citations and learning examples were reviewed on September 27, 2026. SSH Direct support evidence and conflicting Entra Conditional Access guidance remain unresolved; this is not a clean source-validation pass. See the [deep-review findings](../docs/research/2026-09-27-az-800-deep-review.md) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-800-coverage-record). The [official AZ-800 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-800) is authoritative.
@@ -26,6 +28,8 @@ upcoming_change_checked: 2026-10-28
 > **Living-guide watch — September 7, 2026:** Use [Windows Server release health](https://learn.microsoft.com/en-us/windows/release-health/) for servicing and known-issue decisions and [What's new in Windows Server 2025](https://learn.microsoft.com/en-us/windows-server/get-started/whats-new-windows-server-2025) as a feature-generation cross-check; neither changes the January 2026 exam blueprint by itself. SSH Direct remains a documented evidence gap rather than a reason to omit the objective. Microsoft confirms the Hyper-V/VSOCK transport and Microsoft-owned lab code demonstrates one older Debian composition. Ubuntu, Red Hat-family, SUSE/openSUSE, Oracle Linux, systemd, libvirt, Microsoft Press, and expert sources add useful version-specific evidence, cataloged in the [dated evidence review](../docs/SSH-DIRECT-EVIDENCE.md). They do **not** establish a universal support matrix. Learn the bounded model, record the distribution/version gaps, and validate only in an authorized disposable lab.
 
 ## October 28 implementation notes
+
+**Practice check.** Historical Windows Server note. On covered Windows Server 2025 devices with Credential Guard disabled and BlockNtlmv1SSO unset, the October 13, 2026 security update changed the implicit NTLMv1-derived SSO behavior from Audit to Enforce. Scope any legacy dependency review to that configuration. [Manage NTLMv1 changes and prevent network authentication issues in Windows | Microsoft Support](https://support.microsoft.com/en-us/servicing/os/windows/docs/2025/08/upcoming-changes-to-ntlmv1-in-windows-11-version-24h2-and-windows-server-2025)
 
 **Related item:** **Confirmed — VERIFY CURRENT (October 28, 2026).** On applicable Windows 11/Server 2025 systems with Credential Guard disabled, October 13 updates make an absent BlockNtlmv1SSO value enforce blocking of NTLMv1-derived SSO credentials. Check Wi-Fi/Ethernet/VPN MS-CHAPv2 dependencies and NTLM Operational events 4024/4025. An absent key no longer means audit-only, and manual credential entry may still work. Migrate toward supported certificate authentication; any temporary audit exception needs a scoped owner and removal date. [Windows message center](https://learn.microsoft.com/en-us/windows/release-health/windows-message-center) · [Manage NTLMv1 changes and prevent network authentication issues in Windows](https://support.microsoft.com/en-us/servicing/os/windows/docs/2025/08/upcoming-changes-to-ntlmv1-in-windows-11-version-24h2-and-windows-server-2025)
 
@@ -1027,7 +1031,86 @@ Start with a tabletop worksheet: list the initiating identity, target identity, 
 
 ---
 
+## Key terms and phrases
+
+**Build the hybrid mental model**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Active Directory Domain Services (AD DS)](#distinguish-the-three-directory-services) | The directory service providing domain identities, authentication, policy and directory replication for Windows domains. |
+| [Microsoft Entra ID](#distinguish-the-three-directory-services) | Microsoft's cloud identity and access management service for users, applications and workloads. |
+| [Entra Domain Services](#distinguish-the-three-directory-services) | A managed domain service offering capabilities such as domain join and LDAP for supported workloads. |
+| [Domain join](#distinguish-the-three-directory-services) | Creating a computer relationship with a directory domain so supported centralized authentication and management can apply. |
+
+**Deploy and manage AD DS (30–35%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Domain controller](#design-and-deploy-domain-controllers) | A server that hosts a domain directory replica and provides domain authentication and directory services. |
+| [Global catalog](#design-and-deploy-domain-controllers) | A domain controller role holding a searchable representation of objects across the Active Directory forest. |
+| [FSMO role](#understand-fsmo-roles) | A specialized directory operation assigned to one domain controller to coordinate work requiring a single owner. |
+| [Read-only domain controller (RODC)](#choose-writable-dc-or-rodc) | A domain controller with a read-only directory replica and configurable credential caching for sites with limited physical security. |
+| [Forest](#design-forests-domains-and-trusts) | The top-level Active Directory boundary containing one or more domains with a shared schema and configuration. |
+| [Domain](#design-forests-domains-and-trusts) | A directory namespace and replication boundary for a set of accounts and other directory objects. |
+| [Trust](#design-forests-domains-and-trusts) | A relationship allowing principals in one domain or forest to be recognized for access decisions in another. |
+| [Active Directory site](#map-sites-subnets-and-replication) | A representation of connected IP subnets that helps clients locate services and helps administrators control replication. |
+| [Site link](#map-sites-subnets-and-replication) | An AD object defining connectivity, cost and schedules used for replication between sites. |
+| [Security group](#manage-users-groups-and-service-accounts) | A collection of principals that can be used to assign rights or resource permissions together. |
+| [Group managed service account (gMSA)](#service-account-choice) | A domain service identity whose password Active Directory manages and that authorized hosts can use. |
+| [Service principal name (SPN)](#service-account-choice) | The name associating a service instance with its account for Kerberos authentication. |
+| [Directory synchronization](#implement-hybrid-identity) | Copying selected identities and attributes between directory environments under specified authority and filtering rules. |
+| [Group Policy Object (GPO)](#implement-group-policy-and-preferences) | A collection of policy settings linked to directory scopes to manage users or computers. |
+| [Group Policy preference](#implement-group-policy-and-preferences) | A user or computer configuration item delivered through Group Policy with its own targeting and application behavior. |
+| [Organizational unit (OU)](#implement-group-policy-and-preferences) | A directory container used to group objects, delegate administration and link Group Policy. |
+
+**Manage Windows Servers in a hybrid environment (10–15%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Just Enough Administration (JEA)](#powershell-remoting-second-hop-and-jea) | A PowerShell remoting arrangement that delegates a restricted set of administrative commands. |
+| [PowerShell remoting](#powershell-remoting-second-hop-and-jea) | Executing PowerShell commands in a session on another computer through a configured transport and authorization boundary. |
+| [Second-hop problem](#powershell-remoting-second-hop-and-jea) | The inability of an initial remote session to automatically reuse a caller's credentials to reach a third system. |
+| [Azure Arc-enabled server](#connect-and-manage-servers-with-azure-arc) | A machine outside Azure connected to Azure management through an installed agent and a corresponding Azure resource. |
+| [Azure VM extension](#apply-configuration-updates-and-automation) | A managed component installed on a supported machine to perform tasks such as monitoring or configuration. |
+
+**Manage virtual machines and containers (15–20%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Hyper-V](#configure-hyper-v-hosts-and-guests) | The Windows virtualization platform that runs and manages virtual machines on a host. |
+| [Virtual hard disk](#manage-virtual-disks-checkpoints-and-availability) | A disk image file presented as storage to a virtual machine. |
+| [Checkpoint](#manage-virtual-disks-checkpoints-and-availability) | A retained point in a Hyper-V VM's state used to return the VM to an earlier configuration. |
+| [Live migration](#manage-virtual-disks-checkpoints-and-availability) | Moving a running virtual machine between eligible hosts while limiting interruption. |
+| [Windows container](#manage-windows-containers) | An isolated Windows application environment that uses a matching runtime and image compatibility model. |
+
+**Implement on-premises and hybrid networking (15–20%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [DNS zone](#design-name-resolution) | An administrative portion of the DNS namespace containing the authoritative records for its names. |
+| [DNS forwarding](#build-hybrid-dns-with-azure-private-resolver) | Sending queries for specified names or suffixes to another resolver. |
+| [DHCP scope](#manage-dhcp-and-ipam) | A defined range of addresses and options a DHCP server can offer to clients on a network. |
+| [DHCP reservation](#manage-dhcp-and-ipam) | A binding that consistently leases a selected address to a particular client identifier. |
+| [DHCP lease](#manage-dhcp-and-ipam) | An address assignment granted to a client for a bounded time, subject to renewal or release. |
+
+**Manage storage and file services (15–20%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Share permission](#model-file-access-as-layered-authorization) | Access granted at the SMB share boundary, evaluated alongside underlying file-system permissions. |
+| [NTFS permission](#model-file-access-as-layered-authorization) | A filesystem access rule applied to a Windows file or directory for a principal. |
+| [Cloud tiering](#design-azure-file-sync) | An Azure File Sync feature that can keep often-used content locally and retrieve tiered content from the cloud when needed. |
+| [Sync group](#design-azure-file-sync) | A set of Azure File Sync endpoints kept in sync through a shared cloud endpoint. |
+| [Server endpoint](#design-azure-file-sync) | A path on a registered Windows Server participating in an Azure File Sync sync group. |
+| [Distributed File System (DFS) Namespace](#configure-windows-server-shares-fsrm-and-dfs) | A logical folder tree that gives users consistent paths to shares hosted on one or more servers. |
+| [File screening](#configure-windows-server-shares-fsrm-and-dfs) | An FSRM control used to monitor or prevent selected file types from being saved in defined paths. |
+| [SMB](#compare-smb-transport-and-performance-features) | Server Message Block, the protocol Windows commonly uses for shared access to files over a network. |
+| [Storage Spaces](#configure-disks-volumes-and-filesystems) | Windows storage virtualization that uses pooled disks to create virtual disks with selected resiliency. |
+| [ReFS](#configure-disks-volumes-and-filesystems) | Resilient File System, a Windows filesystem whose integrity and workload capabilities differ from NTFS. |
+
 ## Places to learn
+
+**Suggested practice.** Use the AZ-802 syllabus to crosswalk current server administration topics against the historical AZ-800 guide before selecting a module. 5 days of instructor-led training (publisher listing); provider scheduling and fees vary. [Administer Windows Server](https://learn.microsoft.com/en-us/training/courses/az-802t00)
 
 ### October 28 learning-resource check
 
@@ -1042,9 +1125,9 @@ This is **not a complete list**, and it is not a recommendation to consume every
 
 | Resource | Access | Estimated time |
 |---|---|---:|
-| [Official AZ-800 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-800) | Free; authoritative AZ-800 scope and retirement notice | 45–75 min initially; 10–15 min before exam |
+| [Official AZ-800 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-800) | Free; authoritative AZ-800 scope and retirement notice | 45–75 min initially; 10–15 min to compare with AZ-802 |
 | [AZ-802 replacement blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802) | Free; compare for the current single-exam path | 60–90 min for a scope diff |
-| [Microsoft Learn AZ-800 exam/training collection](https://learn.microsoft.com/en-us/credentials/certifications/exams/az-800/) | Free self-paced paths; official instructor-led AZ-800T00 duration is 4 days | Plan 35–55 hr self-paced with labs, or 4 instructor-led days plus review |
+| [Microsoft Learn AZ-800 exam/training collection](https://learn.microsoft.com/en-us/credentials/certifications/exams/az-800/) | Historical course listing. Use AZ-802 for current preparation | Former course length was four instructor-led days |
 | [Microsoft free AZ-800 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/exams/az-800/practice/assessment?assessment-type=practice&assessmentId=67) | Free; use explanations for remediation, not question memorization | 45–90 min per attempt; plan 3–5 hr with remediation |
 | [Official MicrosoftLearning AZ-800 lab instructions](https://microsoftlearning.github.io/AZ-800-Administering-Windows-Server-Hybrid-Core-Infrastructure/) | Free public hands-on course labs; Azure/VM costs may apply | Plan 15–25 hr including setup, evidence and cleanup |
 | [Microsoft Exam Readiness Zone AZ-800](https://learn.microsoft.com/en-us/shows/exam-readiness-zone/?terms=AZ-800) | Free objective-review videos; reconcile recording age with January 2026 scope | About 2–3 hr video; plan 3–5 hr with notes/diffs |

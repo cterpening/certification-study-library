@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "audio_file": "episode.mp3",
+  "mp3_sha256": "180760ff3afe3dc5ca127f01a619763cf49946d9b5ffdcfffdd2cadb64392742",
+  "package_manifest_sha256": "dce90ca3ef96fe4ddfd6fdf882b4705b40e9c80951b4de764c437af5cc18639a",
+  "script_sha256": "e3f1df827ba4f55a4e707e8c5095b81992fcfc9e991f4f5f8884b2560d487f28",
+  "transcript_sha256": "e3a3211f84f196cf3b4f0c31bd37360a6f5cea1a7503d05d79073402c15376b2",
+  "duration_seconds": 248.8392,
+  "sample_rate": 44100,
+  "channels": 1,
+  "format": "MPEG_LAYER_III",
+  "voices": {
+    "host": "F1",
+    "learner": "M1"
+  },
+  "model": "Supertone/supertonic-3",
+  "model_revision": "3cadd1ee6394adea1bd021217a0e650ede09a323",
+  "license_url": "https://huggingface.co/Supertone/supertonic-3/blob/3cadd1ee6394adea1bd021217a0e650ede09a323/LICENSE",
+  "engine": "offline ONNX Runtime CPU",
+  "supertonic_version": "1.3.1",
+  "onnxruntime_version": "1.32.0",
+  "soundfile_version": "0.14.0",
+  "synthesis": {
+    "language": "en",
+    "speed": 1.05,
+    "steps": 8,
+    "global_gain": 1.52312,
+    "mp3_bitrate_mode": "variable",
+    "mp3_compression_level": 0.45
+  },
+  "notice": "The two speakers are synthetic. Independent AI script review is complete. Human content and listening review are pending.",
+  "chapters": [
+    {
+      "title": "Introduction",
+      "start_seconds": 0.16
+    },
+    {
+      "title": "Two paid orders, three tickets, and an extra twenty dollars",
+      "start_seconds": 30.28
+    },
+    {
+      "title": "Next steps",
+      "start_seconds": 223.54
+    }
+  ],
+  "sources_checked_for_recording": [
+    "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-900",
+    "https://learn.microsoft.com/en-us/sql/relational-databases/tables/primary-and-foreign-key-constraints?view=sql-server-ver17",
+    "https://learn.microsoft.com/en-us/sql/t-sql/queries/select-group-by-transact-sql?view=sql-server-ver17",
+    "https://learn.microsoft.com/en-us/training/modules/explore-relational-data-offerings/",
+    "https://learn.microsoft.com/en-us/sql/relational-databases/performance/joins?view=sql-server-ver17"
+  ],
+  "audio_check": {
+    "audio_sha256": "180760ff3afe3dc5ca127f01a619763cf49946d9b5ffdcfffdd2cadb64392742",
+    "method": "Full independent CPU English ASR against the reviewed script, final audio-text alignment and editorial inspection of flagged differences. Local algorithmic delivery check only.",
+    "recognizer": "faster-whisper 1.2.1 / CTranslate2 int8, Systran/faster-whisper-base.en@3d3d5dee26484f91867d81cb899cfcf72b96be6c",
+    "reference_word_count_for_alignment": 691,
+    "word_error_rate_before_adjudication": 0.0333,
+    "opening_and_closing_checked": true,
+    "finding_disposition": "All ticket/order counts, the $20/$40/$60 amounts, both join outcomes, disclosure and complete ending are present. The recognizer formatted spoken dollars as currency symbols. Focused decode and independent local Windows SAPI recovered “part two of two” in the opening.",
+    "material_omissions_or_number_changes_outstanding": 0,
+    "human_listening_review": "pending"
+  }
+}

@@ -983,6 +983,66 @@ if __name__ == "__main__":
 - [Official PCES page](https://pythoninstitute.org/pces) controls live status/delivery and contains practice-test timing that should be rechecked.
 - Use current primary documentation for [Python](https://docs.python.org/3/), [psutil](https://psutil.readthedocs.io/en/latest/), [cryptography](https://cryptography.io/en/latest/), and [Paramiko](https://docs.paramiko.org/).
 
+## Key terms and phrases
+
+**Security essentials**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Confidentiality](#1-security-essentials-22) | Limiting disclosure of information to authorized parties. |
+| [Integrity](#1-security-essentials-22) | Preserving the correctness and completeness of information and detecting unauthorized changes. |
+| [Availability](#1-security-essentials-22) | Keeping a service or data accessible when authorized users need it. |
+| [Threat](#1-security-essentials-22) | A potential cause of harm to an asset, such as accidental destruction or unauthorized disclosure. |
+| [Vulnerability](#1-security-essentials-22) | A weakness in a system or control that could allow a threat to cause harm. |
+| [Defense in depth](#1-security-essentials-22) | Using multiple complementary safeguards so failure of one control does not expose an asset on its own. |
+| [Asset](#assets-consequences-and-escalation) | Something worth protecting, such as a dataset, service or credential whose loss would cause harm. |
+| [Risk](#assets-consequences-and-escalation) | The potential for harm when a threat can act on a weakness, considered in terms of likelihood and consequence. |
+| [Credential](#assets-consequences-and-escalation) | Evidence used to authenticate, such as a key or token. Credentials should stay out of command output and logs. |
+| [Accountability](#assets-consequences-and-escalation) | The ability to connect an action with a responsible identity and preserve evidence to review that action. |
+
+**IT systems security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Authentication](#2-it-systems-security-27) | Checking the identity presented by a person, device or process. |
+| [Authorization](#2-it-systems-security-27) | Deciding what an authenticated identity or other requesting principal is allowed to do. |
+| [Multifactor authentication (MFA)](#2-it-systems-security-27) | An identity check using evidence from more than one factor category, such as possession of a device and knowledge of a secret. |
+| [Baseline](#2-it-systems-security-27) | A documented expected condition or reference measurement used to interpret a later observation. |
+| [Access control](#2-it-systems-security-27) | Rules and enforcement mechanisms governing which identities can perform specified actions on resources. |
+| [Least privilege](#controls-and-verification) | Giving a person or process only the access needed for its assigned work. |
+| [Control](#controls-and-verification) | A measure used to reduce risk by preventing, detecting or responding to an undesirable event. |
+| [Hardening](#controls-and-verification) | Reducing exposure by configuring secure defaults, limiting services and access, and checking the resulting state. |
+
+**Python for security operations**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Timeout](#3-python-for-security-operations-29) | A limit on how long an operation waits before reporting a failure, allowing the caller to choose a bounded response. |
+| [Retry](#3-python-for-security-operations-29) | A new attempt after a failure, appropriate when the cause may be temporary and repetition is safe. |
+| [Backup](#assessment-monitoring-and-recovery-evidence) | A retained copy that can be used to recover data after loss. A successful restore is stronger evidence than a completed copy job. |
+| [TLS](#assessment-monitoring-and-recovery-evidence) | A protocol that protects data in transit and can authenticate peers when identities and certificates are validated. |
+| [Working directory](#assessment-monitoring-and-recovery-evidence) | The directory a process uses to resolve relative paths, which may change between an interactive run and a scheduled task. |
+| [Scheduler overlap](#assessment-monitoring-and-recovery-evidence) | A new scheduled invocation starting while an earlier one is still running, potentially repeating actions or competing for the same resources. |
+| [Event correlation](#assessment-monitoring-and-recovery-evidence) | Connecting observations using time, identity and context to investigate related activity. |
+| [Digital certificate](#assessment-monitoring-and-recovery-evidence) | A signed binding between an identity and a public key under a stated trust chain and validity interval. |
+
+**Secure development and implementation**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Parameterized SQL](#4-secure-development-and-implementation-22) | Passing data values separately from SQL structure so the database driver treats them as values. |
+| [Output encoding](#4-secure-development-and-implementation-22) | Representing untrusted text correctly for the destination format so that data is interpreted as text in that context. |
+| [Authenticated encryption](#4-secure-development-and-implementation-22) | Encryption that also checks authenticity and integrity of protected content when the correct key and protocol are used. |
+| [Host key](#4-secure-development-and-implementation-22) | The key that identifies an SSH server. Comparing it with a trusted expected key helps establish the server’s identity. |
+| [Integrity check](#validation-trust-and-document-boundaries) | Comparing a file or message with a trusted reference to determine whether its contents have changed. |
+| [Input validation](#validation-trust-and-document-boundaries) | Checking external data against expected types, lengths and allowed values before using it. |
+| [Trust boundary](#validation-trust-and-document-boundaries) | A point where data or control crosses between parties or components with different privileges or assumptions. |
+| [Encryption](#validation-trust-and-document-boundaries) | Transforming data with a key to protect its contents from unauthorized reading. |
+| [Hash digest](#validation-trust-and-document-boundaries) | A fixed-size fingerprint derived from input bytes. An integrity decision requires an independently trusted expected value. |
+| [Environment variable](#validation-trust-and-document-boundaries) | A named value inherited by a process from its environment. Its value and availability may differ under a scheduler. |
+| [Serialization](#validation-trust-and-document-boundaries) | Converting structured data into a representation that can be stored or sent and later interpreted by a reader. |
+| [Static analysis](#validation-trust-and-document-boundaries) | Examining source or configuration without executing it to flag patterns requiring review. |
+
 ## Places to learn
 
 ### October 29, 2026 source update

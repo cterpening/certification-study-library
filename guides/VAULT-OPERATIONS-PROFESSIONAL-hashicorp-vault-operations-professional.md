@@ -554,6 +554,92 @@ Introduce one failure—bad TLS name, sealed node, lost leader, wrong namespace,
 - [Vault replication](https://developer.hashicorp.com/vault/docs/enterprise/replication)
 - [Vault Agent auto-auth](https://developer.hashicorp.com/vault/docs/agent-and-proxy/autoauth)
 
+## Key terms and phrases
+
+**Create a working Vault server configuration**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Secrets engine](#enable-auth-methods-and-secrets-engines-deliberately) | A mounted component that stores, generates or transforms secrets. The engine type determines the operations at its API paths. |
+| [Auth method](#enable-auth-methods-and-secrets-engines-deliberately) | A plugin that verifies a login using an external or local identity mechanism, then maps the successful login to a Vault token and policies. |
+| [Revocation](#enable-auth-methods-and-secrets-engines-deliberately) | Ending a token or leased credential's validity. For dynamic secrets, the engine may need to revoke a credential in the external system as well. |
+| [Auth mount accessor](#enable-auth-methods-and-secrets-engines-deliberately) | An identifier for a particular auth method mount. Vault uses the mount accessor to distinguish aliases associated with different authentication sources. |
+| [Raft quorum](#integrated-storage-and-ha) | The majority of voting storage nodes needed to commit entries. A five-voter cluster requires three votes and can lose two voters while retaining quorum. |
+| [Integrated Storage (Raft)](#integrated-storage-and-ha) | A storage backend that replicates Vault data across voting nodes using consensus. The cluster needs a majority to commit writes. |
+| [Unseal](#initialization-unseal-rekey-and-rotate) | Making Vault's protected key material available so the server can decrypt its stored data after startup. |
+| [Rekey](#initialization-unseal-rekey-and-rotate) | Changing the shares or threshold used to protect access to Vault's keys. Rotating the encryption key used for storage is a separate operation. |
+| [Key rotation](#initialization-unseal-rekey-and-rotate) | Starting a new key version for future operations. Earlier ciphertext can still depend on the older version until it is migrated or retired. |
+| [Barrier encryption](#initialization-unseal-rekey-and-rotate) | Vault's encryption layer protecting data before it is written to the configured storage backend. |
+| [Shamir shares](#initialization-unseal-rekey-and-rotate) | Parts used with a configured threshold to reconstruct the unseal key. A three-of-five threshold requires three distinct valid shares. |
+| [Auto unseal](#auto-unseal) | Using an external key-management or hardware-backed service to unlock Vault's protected key material at startup. |
+| [Recovery key](#auto-unseal) | Key material used to authorize certain privileged operations in an auto-unseal deployment. Losing the external seal mechanism is a separate recovery problem. |
+
+**Monitor a Vault environment**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Telemetry](#telemetry) | Measurements of Vault operation such as latency or saturation. Metrics complement the request history captured by audit devices. |
+| [Audit device](#audit-devices) | A configured destination for Vault's audit records. Operators need to monitor its ability to accept records as part of service health. |
+| [Audit log](#audit-devices) | A record of Vault requests and responses emitted by configured audit devices, with sensitive values protected according to audit behavior. |
+| [Active node](#interpret-health-by-role) | The Vault node currently coordinating active operations in an HA cluster. A reachable standby can have a different service role. |
+| [Seal](#interpret-health-by-role) | The state in which Vault cannot use the encryption key material needed to access protected storage. |
+
+**Employ the Vault security model**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Response wrapping](#secure-client-introduction) | Returning a short-lived, single-use wrapping token in place of a sensitive response so the intended recipient can unwrap it separately. |
+| [AppRole](#secure-client-introduction) | An auth method for machines. A role ID identifies the role, and configurations can require a secret ID as an additional login credential. |
+| [Standby node](#vault-on-kubernetes) | A node ready to take over the active role in a high-availability cluster. Request handling depends on its standby type. |
+
+**Build fault-tolerant Vault environments**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Disaster recovery replication](#dr-replication) | Maintaining a secondary Vault cluster that can be promoted after a primary-cluster disaster. The recovery procedure must account for replication lag. |
+| [Disaster recovery secondary](#dr-replication) | A replicated cluster kept for recovery after a primary disaster. Promotion is a distinct operational decision. |
+
+**Understand HSM integration**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Hardware security module (HSM)](#5-understand-hsm-integration) | A device that protects key material and performs supported cryptographic operations within its security boundary. |
+
+**Scale Vault for performance**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Batch token](#batch-tokens) | A lightweight Vault token with a fixed lifetime and different lifecycle behavior from service tokens. It suits some high-volume machine workflows. |
+| [Service token](#batch-tokens) | A stored Vault token with lifecycle features such as renewal and revocation when policy and token settings permit. |
+| [Performance standby](#performance-standbys) | A standby node able to serve eligible read requests locally while forwarding operations requiring the active node. |
+| [Performance replication](#performance-replication-and-path-filters) | Replicating supported Vault data to serve workloads across clusters. Its purpose and failover procedure differ from disaster recovery replication. |
+
+**Configure access control**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Vault policy](#identity-and-acl-policies) | An access-control document granting capabilities at matching API paths. Evaluate both the path and requested operation when diagnosing a denial. |
+| [Entity](#identity-and-acl-policies) | Vault's identity record for a person or workload. Aliases from different auth methods can refer to the same entity. |
+| [Capability](#identity-and-acl-policies) | A permitted operation on a Vault API path, such as reading a value or updating it. Policies associate paths with capabilities. |
+| [Namespace](#namespaces) | An administrative boundary for delegating Vault resources such as auth methods, secrets engines and policies to a tenant. |
+| [Control group](#sentinel-and-control-groups) | A Vault mechanism that requires designated approvals before a governed request can complete. |
+
+**Configure Vault Agent**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Vault Agent](#8-configure-vault-agent) | A client-side process that can automate login, maintain a token and render secret-backed configuration for an application. |
+| [Auto-auth](#auto-auth-and-sinks) | Vault Agent's mechanism for authenticating with a configured method and maintaining the resulting token for an application. |
+| [Token sink](#auto-auth-and-sinks) | The destination to which a Vault Agent auth workflow writes its resulting token. Its permissions affect who can act as the authenticated client. |
+| [Lease renewal](#auto-auth-and-sinks) | A request to extend the current lease or token lifetime. Whether Vault grants the request and for how long depends on the applicable limits. |
+| [Agent template](#templates) | A Vault Agent template that renders secret values into application-readable configuration and can update output as values change. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Raft snapshot](#lab-4-snapshot-and-isolated-restore) | A point-in-time backup of integrated storage data. Restoration also depends on having the correct seal configuration and access. |
+
 ## Places to learn
 
 This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Pick the official material and hands-on scenarios that match your gaps. Times are approximate consumption time at normal speed; repeated cluster builds, failure injection, troubleshooting, and prerequisite repair add substantial time.

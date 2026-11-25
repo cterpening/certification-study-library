@@ -13,7 +13,9 @@ upcoming_change_checked: 2026-10-28
 
 # AZ-900 Microsoft Azure Fundamentals Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-03.md#az-900) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-900-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-03.md#az-900)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-03.md#az-900) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-900-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900) is authoritative.
 
 **Current baseline:** Skills measured as of July 20, 2026<br>
 **Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
@@ -257,6 +259,8 @@ Major cost drivers include resource type and size, running time, storage tier/ca
 A tag is not a security boundary and not every resource automatically inherits tags. A budget notifies; it does not normally stop resources. Reservations and savings plans exchange commitments for eligible discounts, while Azure Hybrid Benefit applies eligible existing licenses. Their scopes and billing units differ; they are not all compute-only offers. **VERIFY CURRENT:** prices, eligible services, terms, and benefits.
 
 #### Budgets, limits, commitments and tags
+
+**Practice check.** For a service with variable eligible usage, model the savings plan hour by hour. Eligible usage draws down the hourly commitment, excess usage is charged at the applicable pay-as-you-go rate, and unused commitment expires at the end of the hour. [What are savings plans? - Microsoft Cost Management | Microsoft Learn](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/savings-plan-overview)
 
 [Cost Management budgets](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-acm-create-budgets) can alert on actual or forecast cost. They do not stop consumption by themselves. Cost data commonly arrives 8–24 hours later, budgets evaluate every 24 hours, and notification follows evaluation. Treat the result as delayed financial evidence, not a real-time cutoff. An action group can invoke separately designed automation; a shutdown still requires the right scope, permissions and failure handling.
 
@@ -641,7 +645,74 @@ Use the three blog exercises to create a claim/source/date table. Compare the ch
 
 ---
 
+## Key terms and phrases
+
+**Cloud concepts**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Consumption-based pricing](#cloud-computing-and-the-consumption-model) | Paying for measured resource use, such as stored data or compute time, according to the selected service. |
+| [Capital expenditure (CapEx)](#cloud-computing-and-the-consumption-model) | Upfront spending to acquire assets, such as purchasing servers before demand is known. |
+| [Operating expenditure (OpEx)](#cloud-computing-and-the-consumption-model) | Ongoing spending to operate services, such as paying a recurring cloud usage bill. |
+| [Public cloud](#public-private-and-hybrid-cloud) | Cloud services offered by a provider to multiple customers using provider-managed infrastructure. |
+| [Private cloud](#public-private-and-hybrid-cloud) | Cloud infrastructure dedicated to one organization with resources managed for its needs. |
+| [Hybrid cloud](#public-private-and-hybrid-cloud) | An environment that connects private or on-premises resources with public cloud services. |
+| [Shared responsibility](#shared-responsibility) | The division of security and operational duties between the cloud provider and the customer for a chosen service. |
+| [Infrastructure as a service (IaaS)](#iaas-paas-saas-and-serverless) | A model in which the provider runs the underlying infrastructure and the customer manages the operating system and applications. |
+| [Platform as a service (PaaS)](#iaas-paas-saas-and-serverless) | A model in which the provider manages the platform and runtime so the customer can deploy applications and manage their data. |
+| [Software as a service (SaaS)](#iaas-paas-saas-and-serverless) | An application the provider runs for its users. With hosted email, for example, the customer manages accounts and data while the provider maintains the application. |
+| [Serverless computing](#iaas-paas-saas-and-serverless) | An execution model where the platform manages servers and scaling while the customer supplies code or workload logic. |
+
+**Core Azure architecture**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Availability zone](#regions-availability-zones-and-datacenters) | A physically separate location within an Azure region designed to isolate failures in power, cooling and networking. |
+| [Region](#regions-availability-zones-and-datacenters) | A geographic area containing Azure datacenters where supported resources can be deployed. |
+| [Resource group](#resource-hierarchy-and-scope) | A container for related Azure resources that can share a management lifecycle. A role assigned at resource-group scope can grant access to resources inside it. |
+| [Subscription](#resource-hierarchy-and-scope) | An Azure billing and management boundary in which resources are deployed. |
+| [Management group](#resource-hierarchy-and-scope) | A governance scope above subscriptions where inherited access and policy can be organized. |
+| [Virtual machine (VM)](#compute-choices) | A software-defined computer whose guest operating system, applications and configuration the customer controls. |
+| [Container](#compute-choices) | An application package that isolates its process and dependencies while sharing a host operating-system kernel. |
+| [Virtual network (VNet)](#networking) | A private addressing and routing boundary used to connect Azure resources. |
+| [Subnet](#networking) | A subdivision of a virtual network's address space used to place and manage network interfaces. |
+| [Blob storage](#storage-services-and-redundancy) | Object storage for content such as images, logs or backups accessed by name within a container. |
+| [Redundancy](#storage-services-and-redundancy) | Keeping additional copies of data or components to protect against defined failure scenarios. |
+
+**Identity, access, and security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Authentication](#authentication-and-authorization) | Establishing who or what is making a request, such as verifying a user's identity at sign-in. |
+| [Authorization](#authentication-and-authorization) | Deciding which actions an authenticated identity may perform on a resource. |
+| [Multifactor authentication (MFA)](#authentication-and-authorization) | Requiring evidence from more than one type of authentication factor, such as a password and a possession factor. |
+| [Conditional Access](#authentication-and-authorization) | The Entra policy system that evaluates signals about sign-in context and decides what access conditions to require. |
+| [Zero Trust](#zero-trust-and-defense-in-depth) | An approach that explicitly verifies access, limits privileges and plans for the possibility that a component is compromised. |
+| [Defense in depth](#zero-trust-and-defense-in-depth) | Using multiple layers of controls so a failure at one layer leaves other protections in place. |
+
+**Cost, governance, and resource management**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Cost analysis](#cost-management) | A view for examining incurred cloud charges by dimensions such as service, subscription or tag. |
+| [Budget](#budgets-limits-commitments-and-tags) | A target used to monitor spending. With a $1,000 monthly budget, an alert set at 80% of actual cost is due at $800. The alert itself does not stop resources. |
+| [Tag](#budgets-limits-commitments-and-tags) | A key-value label attached to resources or scopes to organize ownership, environment or cost reporting. |
+| [Azure Policy](#governance-controls) | A governance service that evaluates whether resources meet assigned rules and can enforce supported effects. |
+| [Resource lock](#governance-controls) | A control that restricts deletion or modification through Azure's management plane. |
+| [Role assignment](#governance-controls) | A grant that gives a principal a defined Azure role at a particular scope. |
+| [Infrastructure as code (IaC)](#deployment-and-management-tools) | Defining infrastructure in version-controlled files so environments can be deployed consistently. |
+| [Azure Monitor](#monitoring-and-service-health) | The Azure service family for collecting and analyzing resource metrics, logs and alerts. |
+| [Service Health](#monitoring-and-service-health) | Azure's view of service events, maintenance and advisories relevant to a customer's resources. |
+
+**Objective-by-objective decision guide**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Elasticity](#separate-the-cloud-benefits) | The ability to add and release capacity as demand changes. |
+
 ## Places to learn
+
+**Suggested practice.** Classify a steady workload, a predictable spend commitment and an interruption-tolerant batch job before consulting the unit’s decision guide. 4 minutes for the unit (publisher page). [Describe cost optimization options in Azure](https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/7a-describe-cost-optimization-options)
 
 This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Pick the formats that fit you. Times are approximate consumption time at normal speed; labs, note-taking, review, and independent practice add time.
 

@@ -881,6 +881,81 @@ These nine activities remain proposed end-to-end work with a permitted external 
 
 The Python Institute currently identifies PCAD-31-02 as active; its page still labels PD101 “in development,” while the live [PD101 course page](https://edube.org/study/pd101) offers a PCED-aligned path (free Core lessons/tests; paid Pro adds labs/projects; about five weeks at one hour daily). It can build foundations but is not represented as full PCAD coverage. For reproducible analyst environments, the official [NumPy release notes](https://numpy.org/doc/2.5/release/2.5.0-notes.html) say NumPy 2.5 supports Python 3.12–3.14 and dropped Python 3.11; [pandas 3.0 migration guidance](https://pandas.pydata.org/pandas-docs/version/3.0/whatsnew/v3.0.0.html) documents default string dtype and Copy-on-Write changes, and [pandas 3.1.0 notes](https://pandas.pydata.org/docs/whatsnew/v3.1.0.html) describe ongoing datetime-resolution adjustments. Pin and record library versions, then test dtype, missing-value, and datetime assumptions before reusing a notebook. These are current tool behavior, not new exam objectives.
 
+## Key terms and phrases
+
+**Data acquisition and preprocessing**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Preprocessing](#1-data-acquisition-and-preprocessing-292) | The transformations that turn acquired records into analysis inputs, including cleaning, type conversion and handling missing values. |
+| [Unicode encoding](#1-data-acquisition-and-preprocessing-292) | A rule that turns Unicode text into bytes. Decoding requires a compatible rule to recover the intended text. |
+| [CSV](#1-data-acquisition-and-preprocessing-292) | A tabular text format with field separators and quoting rules. A quoted field can contain the separator or an embedded newline. |
+| [XML](#1-data-acquisition-and-preprocessing-292) | A structured text format representing nested elements and attributes. Readers must check the expected structure and source. |
+| [Nominal variable](#1-data-acquisition-and-preprocessing-292) | A category label without an intrinsic numerical ordering, such as a region name. |
+| [Missing value](#1-data-acquisition-and-preprocessing-292) | An unavailable measurement. A missing duration and an observed duration of zero have different meanings in an average. |
+| [Normalization](#1-data-acquisition-and-preprocessing-292) | Rescaling a value relative to a reference minimum and maximum. A zero reference range requires an explicit handling rule. |
+| [Standardization](#1-data-acquisition-and-preprocessing-292) | Centering a measurement around a reference mean and scaling by a reference standard deviation. |
+| [One-hot encoding](#1-data-acquisition-and-preprocessing-292) | Representing categories as indicator columns so an arbitrary numeric ordering is not imposed on them. |
+| [Deduplication](#1-data-acquisition-and-preprocessing-292) | Applying an explicit identity and tie-breaking rule to repeated records. A conflicting duplicate may require investigation instead of deletion. |
+| [Data provenance](#worked-preprocessing-and-acquisition-decisions) | A record of where data originated and what happened to it before it reached the analysis. |
+| [JSON](#worked-preprocessing-and-acquisition-decisions) | A text format for objects, arrays and primitive values. Parsing it recovers data structure, while application validation checks the expected fields and meaning. |
+| [Observation](#worked-preprocessing-and-acquisition-decisions) | One recorded case at the chosen unit of analysis, such as one order rather than one customer. |
+| [Classification](#worked-preprocessing-and-acquisition-decisions) | Assigning an observation to a category according to input features and a decision rule. |
+| [Aggregation grain](#worked-preprocessing-and-acquisition-decisions) | What one summarized row represents. A monthly total cannot safely be joined directly to every order line without accounting for repetition. |
+
+**Programming and database skills**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Database transaction](#2-programming-and-database-skills-333) | A unit of work whose changes can be committed together or undone together. |
+| [Parameterized query](#2-programming-and-database-skills-333) | A query that passes values separately from SQL structure, letting the database driver bind them safely. |
+| [Inheritance](#2-programming-and-database-skills-333) | Defining a class in terms of one or more base classes so it can reuse or specialize their behavior. |
+| [Polymorphism](#2-programming-and-database-skills-333) | Using a common operation on objects that implement it differently, such as calling the same method on different subclasses. |
+| [Name mangling](#2-programming-and-database-skills-333) | Rewriting certain double-underscore names inside a class to include the class name, reducing accidental name collisions in subclasses. |
+| [PEP 8](#2-programming-and-database-skills-333) | The Python style guide covering conventions such as naming, imports and layout to make code easier to read consistently. |
+| [PEP 257](#2-programming-and-database-skills-333) | Python’s guidance on writing and formatting docstrings so a reader can understand an object’s interface. |
+| [Rollback](#2-programming-and-database-skills-333) | Discarding uncommitted transaction changes after a failure or deliberate cancellation. |
+| [Database join](#2-programming-and-database-skills-333) | Combining rows from inputs according to a matching condition. Repeated keys can multiply the number of result rows. |
+| [Commit](#worked-database-and-object-boundaries) | Making a database transaction’s pending changes permanent under the database’s transaction guarantees. |
+| [Foreign key](#worked-database-and-object-boundaries) | A constraint connecting a referencing row to a corresponding key in a related table. |
+
+**Statistical analysis**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Bootstrap resampling](#3-statistical-analysis-83) | Drawing samples with replacement from the observed data to estimate how a statistic varies. From three records A, B and C, one valid size-three resample is A, C, C. |
+| [Outlier](#3-statistical-analysis-83) | An observation unusually far from the rest under a chosen criterion. It can represent bad data or a genuinely rare case. |
+| [Scatterplot](#3-statistical-analysis-83) | A plot placing each paired observation at its two numeric coordinates to reveal patterns, deviations or nonlinear relationships. |
+| [Regression](#3-statistical-analysis-83) | Modeling a numeric response as a function of input variables, such as estimating delivery time from distance. |
+| [Confidence interval](#worked-inference-and-model-interpretation) | An uncertainty range produced by a method with a stated long-run coverage rate under its assumptions. |
+| [Population](#worked-inference-and-model-interpretation) | The entire set of cases an analyst wants a conclusion to describe. |
+| [Sample](#worked-inference-and-model-interpretation) | The subset of observations actually collected or analyzed. Its selection influences which conclusions generalize. |
+| [Arithmetic mean](#worked-inference-and-model-interpretation) | The sum of observed values divided by their count. The result can shift substantially when one observation is extreme. |
+| [Variance](#worked-inference-and-model-interpretation) | A measure based on squared deviations from the mean. Its units are squared, unlike standard deviation. |
+| [Train/test split](#worked-inference-and-model-interpretation) | Separating model-building observations from observations reserved to estimate performance on unseen cases. |
+| [Confusion matrix](#worked-inference-and-model-interpretation) | Counts of predicted versus actual classes, exposing the types of errors that an overall accuracy percentage may hide. |
+| [Mean absolute error (MAE)](#worked-inference-and-model-interpretation) | The average absolute difference between predictions and actual values, measured in the units of the response. |
+
+**Data analysis and modeling**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Data leakage](#pandas-semantics-and-leakage-checks) | Information from validation, test or future observations entering model development and making measured performance look better than it should. |
+| [Cross-validation](#pandas-semantics-and-leakage-checks) | Repeating fits on training subsets and evaluating each fit on its corresponding held-out subset. |
+
+**Communication and visualization**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Stakeholder finding](#a-traceable-stakeholder-finding) | A conclusion tied to the audience’s decision, supported by a defined metric and accompanied by a limitation that affects its interpretation. |
+| [Histogram](#a-traceable-stakeholder-finding) | A distribution display that counts observations in numeric intervals. Changing interval boundaries can change the apparent shape. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Precision of an estimate](#original-knowledge-checks) | How tightly an estimate is determined by the sample. At the same confidence level, a narrower bootstrap interval indicates greater precision. |
+
 ## Places to learn
 
 This is not a complete list and is not meant to be consumed in full. Times labeled author budget are planning suggestions, not provider runtimes or observed course completion. Public outlines do not establish enrolled content quality or complete PCAD alignment.

@@ -413,6 +413,95 @@ This guide uses no recalled exam questions or restricted content. The knowledge 
 
 ---
 
+## Key terms and phrases
+
+**Design Solutions for Organizational Complexity**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Amazon VPC](#11-architect-connectivity-as-a-governed-system) | A logically isolated network in an AWS Region, divided into subnets with routes and security controls that shape connectivity. |
+| [AWS Transit Gateway](#11-architect-connectivity-as-a-governed-system) | A regional routing hub connecting VPCs and other networks. Attachments and route tables determine which networks can communicate. |
+| [AWS Direct Connect](#11-architect-connectivity-as-a-governed-system) | A dedicated connectivity option between a customer network and AWS. Routing, redundancy and encryption are separate design decisions. |
+| [Route 53 Resolver](#11-architect-connectivity-as-a-governed-system) | Resolves DNS for VPC workloads. Inbound and outbound endpoints connect resolution across network boundaries. |
+| [AWS Network Firewall](#11-architect-connectivity-as-a-governed-system) | A managed traffic-inspection service placed in a routed VPC path. Traffic must actually traverse its endpoints for its policy to apply. |
+| [AWS PrivateLink](#11-architect-connectivity-as-a-governed-system) | Provides private access to supported services through endpoints without requiring a routed connection between the entire provider and consumer networks. |
+| [Resource policy](#12-prescribe-security-controls-across-accounts) | A policy attached to a resource, such as an S3 bucket, specifying which principals can perform particular actions on it. |
+| [Temporary credentials](#12-prescribe-security-controls-across-accounts) | Time-limited access keys and a session token. A workload can obtain them by assuming a role. |
+| [AWS IAM Identity Center](#12-prescribe-security-controls-across-accounts) | Connects workforce users and groups to AWS accounts or applications and manages the access assigned to them. |
+| [AWS Secrets Manager](#12-prescribe-security-controls-across-accounts) | Stores sensitive values for authorized retrieval and supports rotation workflows, such as replacing a database password. |
+| [Identity policy](#12-prescribe-security-controls-across-accounts) | An IAM policy attached to an identity that describes which actions it can take on which resources, subject to other applicable controls. |
+| [AWS Control Tower](#12-prescribe-security-controls-across-accounts) | A service for setting up and governing a multi-account landing zone, including common controls as accounts are enrolled. |
+| [AWS Organizations](#12-prescribe-security-controls-across-accounts) | Groups AWS accounts under common governance so a team can apply policies or consolidate billing across accounts. |
+| [AWS CloudTrail](#12-prescribe-security-controls-across-accounts) | Records supported AWS API activity so an investigator can trace who called an operation, when and against which resource. |
+| [Recovery point objective (RPO)](#13-design-reliability-and-resilience-from-business-impact) | The maximum acceptable loss of recent changes, measured by the age of the recovered data at the disruption. |
+| [Recovery time objective (RTO)](#13-design-reliability-and-resilience-from-business-impact) | The longest acceptable interval from disruption until the service is usable. Include dependency recovery and client reconnection in the test. |
+| [Organizational unit (OU)](#14-design-a-multi-account-environment) | A group of AWS accounts within an organization to which policies can be applied. Its position in the hierarchy affects inherited restrictions. |
+| [Blast radius](#14-design-a-multi-account-environment) | The set of workloads, accounts or users that one failure or mistaken change can affect. |
+| [Landing zone](#14-design-a-multi-account-environment) | A prepared cloud foundation with account or project structure, networking, identity and controls on which teams can deploy workloads. |
+| [Federation](#14-design-a-multi-account-environment) | Accepting trusted identity assertions from another provider so users or workloads can access resources without a separate long-lived credential. |
+| [Cost allocation](#15-make-cost-visible-and-governable) | Assigning spending to owners, products or tenants through account structure, tags or other rules so teams can explain their share. |
+| [Tag](#15-make-cost-visible-and-governable) | A resource label used to group or track items, for example to allocate costs by application or owner. |
+| [Reserved Instance](#15-make-cost-visible-and-governable) | A billing commitment that discounts eligible matching usage. Capacity reservation benefits depend on the reservation type and scope. |
+| [Cost Explorer](#15-make-cost-visible-and-governable) | Analyzes historical AWS usage and charges by dimensions such as service or account to explain spending patterns. |
+| [Savings Plans](#15-make-cost-visible-and-governable) | A pricing commitment to eligible compute usage measured as spend per hour over a term. Compare covered usage with the expected baseline. |
+
+**Design for New Solutions**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Infrastructure as code (IaC)](#21-start-from-a-deployment-and-ownership-contract) | A versioned description of infrastructure that tools can build or update. Reviewing the proposed changes helps catch unintended replacements. |
+| [AWS CloudFormation](#21-start-from-a-deployment-and-ownership-contract) | Creates or updates a group of resources from a template so infrastructure changes can be reviewed and repeated. |
+| [AWS Cloud Development Kit (CDK)](#21-start-from-a-deployment-and-ownership-contract) | Defines infrastructure with programming-language constructs that synthesize CloudFormation templates. |
+| [Failback](#22-design-business-continuity-end-to-end) | Returning service from a recovery environment to the intended primary environment. Data changes made during recovery must be accounted for. |
+| [Amazon CloudFront](#22-design-business-continuity-end-to-end) | A content delivery network that serves requests from edge locations and fetches content from an origin when needed. |
+| [Amazon DynamoDB](#22-design-business-continuity-end-to-end) | A managed key-value and document database. Choose keys around the reads and writes an application must perform. |
+| [Service quota](#22-design-business-continuity-end-to-end) | A limit on resource use or request volume within a specified scope. Reaching it can block work even when funds are available. |
+| [Amazon EFS](#22-design-business-continuity-end-to-end) | A managed network file system that multiple compatible clients can mount to share files and directories. |
+| [Amazon RDS](#22-design-business-continuity-end-to-end) | Runs a managed relational database engine. Schema design, queries and application permissions remain customer decisions. |
+| [Time to live (TTL)](#22-design-business-continuity-end-to-end) | An interval after which an entry expires or must be refreshed. A DNS TTL governs how long its answer can be cached. |
+| [Amazon S3](#22-design-business-continuity-end-to-end) | Object storage organized into buckets and keys. Retrieving a named object and mounting a block device are different access patterns. |
+| [Least privilege](#23-place-security-at-every-trust-transition) | Limiting an identity to the actions and resources required for its work. A read-only reporting job needs no permission to modify its source. |
+| [Envelope encryption](#23-place-security-at-every-trust-transition) | Encrypting data with a data key and protecting that key with another key. Access to the stored ciphertext alone is insufficient to read the data. |
+| [Loose coupling](#24-design-distributed-reliability-not-bigger-instances) | A design in which one component can slow down or fail without immediately stopping its peers, for example by handing work to a queue. |
+| [AWS Step Functions](#24-design-distributed-reliability-not-bigger-instances) | Coordinates a sequence of application steps as a state machine, with explicit choices, retries and failure paths. |
+| [Backpressure](#24-design-distributed-reliability-not-bigger-instances) | A downstream stage forcing producers to slow or pause. If 120 events arrive per second and only 100 leave, backlog initially grows by 20 per second. |
+| [Amazon EventBridge](#24-design-distributed-reliability-not-bigger-instances) | Routes events to targets according to rules, connecting services without requiring each producer to know each consumer. |
+| [Idempotency](#24-design-distributed-reliability-not-bigger-instances) | The property that retrying the same intended operation does not apply its effect twice. An order API can remember the request identifier. |
+| [Amazon SNS](#24-design-distributed-reliability-not-bigger-instances) | A publish-subscribe notification service. Publishing once to a topic can deliver the message to multiple subscribed destinations. |
+| [Amazon SQS](#24-design-distributed-reliability-not-bigger-instances) | A queue that buffers messages between producers and consumers. A worker can process a message even after its producer has disconnected. |
+| [Amazon Redshift](#25-select-performance-by-access-pattern) | A managed analytical database designed to aggregate and query large datasets. Choose it around reporting and warehouse access patterns. |
+| [Amazon EBS](#25-select-performance-by-access-pattern) | Block storage volumes for EC2. A disk-oriented workload can put its file system or database files on a volume. |
+| [NAT gateway](#26-optimize-cost-without-violating-requirements) | A network address translation service. A public NAT gateway can give private-subnet workloads outbound internet access without making them directly reachable from the internet. |
+
+**Continuous Improvement for Existing Solutions**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Service-level objective (SLO)](#31-establish-an-evidence-led-improvement-loop) | A measurable target for a service over a defined period. For example, a target that 99% of requests finish within 500 ms gives an improvement project a user-facing measure. |
+| [Game day](#31-establish-an-evidence-led-improvement-loop) | A planned exercise that tests how a workload and its operators respond to a failure. Record detection and recovery times and assign the fixes the exercise reveals. |
+| [Mean time to contain](#32-improve-security-from-evidence-and-threat) | The average elapsed time between the chosen incident starting point and containment. If two incidents took 20 and 40 minutes from detection to containment, the mean for those incidents is 30 minutes. |
+| [Latency percentile](#33-improve-performance-scientifically) | A response-time threshold at or below which a stated percentage of requests complete. The 99th percentile exposes delays an average can hide. |
+| [Latency budget](#33-improve-performance-scientifically) | The time available to complete an end-to-end request. Tracing explains which dependencies consume that budget and helps target the change most likely to improve user-visible latency. |
+| [Quota headroom](#34-improve-reliability-through-failure-learning) | The unused capacity below a service quota. If failover doubles demand from 60 to 120 units against a quota of 100, normal operations fit but recovery needs 20 more units. |
+| [Unit cost](#35-optimize-cost-continuously) | Cost divided by the amount of useful work. Spending $2,400 on 800,000 successful transactions is $0.003 per successful transaction over that interval. |
+
+**Accelerate Workload Migration and Modernization**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Migration wave](#41-assess-a-portfolio-before-moving-it) | A group of workloads scheduled to move together, chosen with dependencies, cutover risk and business timing in mind. |
+| [Refactor](#41-assess-a-portfolio-before-moving-it) | Changing an application's design or code to exploit a different architecture, generally with more delivery work than rehosting. |
+| [Replatform](#41-assess-a-portfolio-before-moving-it) | Moving a workload while changing selected platform components, such as moving its database to a managed relational service. |
+| [Rehost](#41-assess-a-portfolio-before-moving-it) | Moving an application with minimal architectural change, such as moving an existing server workload to a VM. |
+| [Total cost of ownership (TCO)](#41-assess-a-portfolio-before-moving-it) | Lifecycle cost over an agreed period, including people, migration, operation, recovery and maintenance as well as resource charges. |
+| [Change data capture (CDC)](#42-choose-transfer-and-migration-mechanisms) | Capturing ongoing source changes so a target can apply them and catch up before cutover. Changes can accumulate during the initial copy. |
+| [Amazon ECS](#43-choose-a-target-platform-from-constraints) | An orchestrator that schedules and maintains container tasks from task definitions. |
+| [AWS Fargate](#43-choose-a-target-platform-from-constraints) | A compute option for ECS tasks or EKS Pods that removes the need to administer the underlying worker servers. |
+| [AWS Lambda](#43-choose-a-target-platform-from-constraints) | Runs application code in response to an invocation or event. The function owner selects its code, permissions and resource configuration. |
+| [Amazon EC2](#43-choose-a-target-platform-from-constraints) | Compute service for running virtual machines. The customer chooses the instance configuration and manages the guest operating system. |
+| [Amazon EKS](#43-choose-a-target-platform-from-constraints) | Managed Kubernetes on AWS. A team deploys workloads through the Kubernetes API and chooses how their compute capacity is provided. |
+| [Strangler pattern](#44-modernize-around-business-and-operational-value) | Replacing parts of an existing application gradually by directing selected requests to new components until the old implementation can be retired. |
+
 ## Places to learn
 
 This is **not a complete list**, and it is not meant to be consumed in full. Public catalog pages were checked on September 28; paid lessons were not reviewed. O'Reilly/Udemy were access-blocked, and Skill Builder/Whizlabs returned limited shells. Treat unverified runtimes and update dates as historical, not newly confirmed. Pick one current primary route, use references to close measured gaps, complete production-shaped labs, and treat legitimate practice as diagnosis—not as content to memorize.

@@ -422,6 +422,89 @@ The live EX294 page defines public tasks and says they represent the most recent
 
 This guide uses no recalled exam tasks or restricted course content. Its scenarios, labs and checks are original transformations of public objectives.
 
+## Key terms and phrases
+
+**RHCSA capability is the automation substrate**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Filesystem](#1-rhcsa-capability-is-the-automation-substrate) | The structures that organize files and directories on storage or expose a virtual hierarchy. A larger block device alone does not always enlarge its filesystem. |
+| [firewalld](#1-rhcsa-capability-is-the-automation-substrate) | A Linux firewall-management service that organizes policy using zones and services. Runtime state and persistent configuration can differ. |
+| [Persistent mount](#1-rhcsa-capability-is-the-automation-substrate) | A mount defined to survive restart, often through /etc/fstab. The source identifier and mount dependencies must be valid at boot. |
+| [Quoting](#1-rhcsa-capability-is-the-automation-substrate) | Controlling how a shell treats spaces, glob patterns and variable expansions so arguments retain their intended boundaries. |
+| [Repository](#1-rhcsa-capability-is-the-automation-substrate) | A source of software packages and metadata that a package manager uses to resolve versions and dependencies. |
+| [Security-Enhanced Linux (SELinux)](#1-rhcsa-capability-is-the-automation-substrate) | A Linux mandatory access control system that applies policy to labeled subjects and objects in addition to ordinary file permissions. |
+| [Shell](#1-rhcsa-capability-is-the-automation-substrate) | A command interpreter that parses input, expands variables and launches programs. Syntax can differ among shells. |
+| [systemd](#1-rhcsa-capability-is-the-automation-substrate) | A Linux init and service manager that starts and supervises units according to dependencies and configuration. |
+
+**Core Ansible components**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Inventory](#inventory-configuration-plays-modules-and-data) | The hosts Ansible manages, their group memberships and associated variables. |
+| [Play](#inventory-configuration-plays-modules-and-data) | The part of a playbook that targets an inventory group or hosts and specifies which tasks or roles apply. |
+| [Module](#inventory-configuration-plays-modules-and-data) | A unit of Ansible functionality that performs a task on a target, such as ensuring a package is present. |
+| [Facts](#inventory-configuration-plays-modules-and-data) | Values collected about a managed node, such as OS family or interfaces, that can guide a play’s decisions. |
+| [Privilege escalation](#inventory-configuration-plays-modules-and-data) | Running a permitted operation with different privileges, as when an Ansible task uses a configured become method for administration. |
+| [Task](#inventory-configuration-plays-modules-and-data) | In Ansible, a named unit of work that invokes a module or action with parameters for the selected hosts. |
+| [Variable precedence](#inventory-configuration-plays-modules-and-data) | The ordering Ansible uses when more than one source sets the same variable. Inspecting the effective value matters more than locating a single definition. |
+| [Control node](#inventory-configuration-plays-modules-and-data) | The machine from which Ansible runs and coordinates work on managed nodes, using the configured inventories and connection methods. |
+
+**Configure control and managed nodes**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Container](#3-configure-control-and-managed-nodes) | An isolated application process and its dependencies that ordinarily shares the host kernel. Its image is the packaged input used to start it. |
+| [Host key](#3-configure-control-and-managed-nodes) | The key used by an SSH server to establish its identity to clients. An unexpected change needs verification through a trusted source. |
+| [Least privilege](#3-configure-control-and-managed-nodes) | Giving an account only the access required for its assigned work. |
+| [Managed node](#3-configure-control-and-managed-nodes) | A target system against which Ansible executes work under the configured connection identity and privileges. |
+| [SELinux context](#3-configure-control-and-managed-nodes) | A security label assigned to an object or process that policy uses when deciding whether an operation is permitted. |
+| [Secure Shell (SSH)](#3-configure-control-and-managed-nodes) | An encrypted protocol for remote login and related operations. Host keys authenticate the server, while user credentials establish the client’s identity. |
+| [YAML Ain’t Markup Language (YAML)](#3-configure-control-and-managed-nodes) | A structured text format commonly used for configuration. Significant indentation and scalar typing can affect the meaning of apparently small edits. |
+
+**Run and develop playbooks**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Check mode](#4-run-and-develop-playbooks) | An Ansible mode that predicts changes for modules that support it. Predictions do not prove every task or remote side effect will succeed. |
+| [Playbook](#4-run-and-develop-playbooks) | An Ansible YAML document containing plays that map host selections to tasks, roles and execution settings. |
+| [Standard output](#4-run-and-develop-playbooks) | The normal output stream of a process, usually file descriptor 1. It can be redirected or piped independently of error output. |
+
+**Create resilient plays and playbooks**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Handler](#failures-recovery-and-handlers-are-separate-outcomes) | A task queued when another task reports a change and notifies it, such as restarting a service after a configuration update. |
+| [Rescue block](#failures-recovery-and-handlers-are-separate-outcomes) | Tasks that run after an eligible task failure in an Ansible block so the play can handle the failure explicitly. |
+| [Block](#failures-recovery-and-handlers-are-separate-outcomes) | In Ansible, a grouping of tasks that shares settings and can provide structured failure handling with rescue and always sections. |
+| [Always](#failures-recovery-and-handlers-are-separate-outcomes) | The Ansible block section intended to run after the main tasks and rescue handling under normal eligible execution conditions. |
+| [Exit status](#failures-recovery-and-handlers-are-separate-outcomes) | A number returned by a completed process. Shell conditionals conventionally treat zero as success and a nonzero value as failure or another documented result. |
+
+**Roles and Content Collections**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Idempotence](#6-roles-and-content-collections) | The property that rerunning automation against an already-correct system produces no unnecessary change. |
+| [Role](#6-roles-and-content-collections) | A reusable arrangement of tasks, handlers, defaults and supporting files for a particular configuration purpose. |
+| [Collection](#6-roles-and-content-collections) | A versioned distribution of Ansible content under a namespace, potentially containing modules, roles, plugins and documentation. |
+| [Fully qualified collection name (FQCN)](#6-roles-and-content-collections) | An Ansible content name including its namespace and collection, which makes the intended module or plugin unambiguous. |
+
+**Automate standard RHEL administration**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Group ID (GID)](#7-automate-standard-rhel-administration) | A numeric group identity used in ownership and permission checks. A process can carry one primary and multiple supplementary groups. |
+| [Partition](#7-automate-standard-rhel-administration) | A defined range of blocks on a storage device, which may hold a filesystem, swap space or an LVM physical volume. |
+| [Service enablement](#7-automate-standard-rhel-administration) | Configuration that lets a service be pulled in at boot or by a target. It does not establish that the service is running now. |
+| [Swap](#7-automate-standard-rhel-administration) | Disk-backed space the kernel can use for eligible memory pages. Excessive use can produce severe latency even when a process stays alive. |
+
+**Templates and Vault**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Jinja template](#8-templates-and-vault) | A text template that uses variables and expressions to render a configuration for a particular target. |
+| [Ansible Vault](#8-templates-and-vault) | A mechanism for encrypting sensitive Ansible data at rest. A run still needs authorized access to use the decrypted value. |
+
 ## Places to learn
 
 This is **not a complete list**, and it is not meant to be consumed in full. Choose one current version-aligned course, use official docs for exact modules and navigator behavior, and spend most preparation time building repeatable playbooks against fresh RHEL 10 hosts.

@@ -7,16 +7,18 @@ generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
 last_verified: 2026-10-28
-upcoming_change_status: none-announced
-upcoming_change_checked: 2026-10-28
+upcoming_change_status: scheduled
+upcoming_change_checked: 2026-11-20
 ---
 
 # MB-500 Microsoft Dynamics 365 Finance and Operations Apps Developer Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-04.md#mb-500) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mb-500-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-500) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-05.md#mb-500)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-04.md#mb-500) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mb-500-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-500) is authoritative.
 
 **Current baseline:** Skills measured as of January 30, 2026.<br>
-**Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
+**Upcoming English outline — December 18, 2026.** Microsoft will rename the exam *Developing Finance and Operations Apps with Dynamics 365* on that date. Use the current objective map for preparation before that date. Check the language and version for your appointment. The [November source notes](../docs/research/2026-11-20-microsoft-refresh-group-05.md#mb-500) identify the announced edition and its domain weights.<br>
 **Lifecycle:** The [Finance and Operations Apps Developer Associate credential](https://learn.microsoft.com/en-us/credentials/certifications/d365-finance-and-operations-apps-developer-associate/) is active. The exam is 100 minutes, offered in English and Japanese, lists no retirement date, and links a free Practice Assessment. Renewal is every 12 months; the direct practice endpoint returned no substantive body during this review.<br>
 **Platform transition:** Current objectives explicitly include Unified Developer Experience (UDE) environments in Power Platform admin center and the Implementation portal. Treat older LCS/VM-only instructions as context and verify current ownership for each environment action.<br>
 **Official source:** [MB-500 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-500)
@@ -244,6 +246,8 @@ For the [data-management package API](https://learn.microsoft.com/en-us/dynamics
 
 #### Work outbound calls and entity shapes separately
 
+**Practice check.** For incremental Dataverse synchronization of a finance and operations data entity, identify every participating table that needs row version change tracking. SQL Server updates the database-wide counter on inserts and updates. Treat the rowversion as a change marker, distinct from a timestamp or business sequence. [Row version change tracking for tables and data entities - Finance & Operations | Dynamics 365 | Microsoft Learn](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/rowversion-change-track)
+
 For a proposed outbound shipping-rate lookup, generate/use the appropriate supported REST or SOAP client contract, configure endpoint/authentication and secret references, serialize only approved fields, then classify response status or SOAP faults before deserializing. Test timeout, malformed response, denied credentials and rate change. Keep a slow external call outside database locks; record a correlation ID and bound retry only where the remote operation is safe to repeat. The [external-service procedure](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/consume-external-web-service) uses a referenced class library/service proxy and a fictional SOAP URL; adapt the contract rather than invoking that sample URL. A WSDL-generated proxy does not remove authorization, certificate or error-handling work. See also [integration-pattern guidance](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/integration-overview); no endpoint was invoked here.
 
 A composite entity packages related parent/child entities such as an order and its lines through Data management XML import/export; it is not a synchronous OData entity or a directly programmable X++ composite API. Build the component entities/relations and composite root, build/synchronize as required and test the data-project mapping/sequence. See [composite entity implementation](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/develop-composite-data-entities). An aggregate entity represents grouped analytical results, such as sales by customer/month; it is not a bulk-import synonym for that parent/child package. For an original test, a missing parent must produce an explainable reject, while the analytical output must reconcile to source totals at the chosen grain.
@@ -397,7 +401,7 @@ A page makes one header query plus one line query for each of 200 headers: 201 c
 
 - **[Unified trial and developer environments](https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2023/09/15/announcing-unified-trial-and-developer-environments-for-dynamics-365-finance-and-operations-apps/)** — Lane Swenka, September 15, 2023. Useful architectural history: local tooling, cloud runtime and shared Power Platform administration. Draw the tool/runtime/data boundaries, then check today's setup and environment-type docs. Its preview, trial, capacity and add-in examples are historical, not a current provisioning checklist.
 - **[UDE TechTalk article](https://learn.microsoft.com/en-us/dynamics365/guidance/techtalks/unified-developer-experience)** — Microsoft FastTrack. Read the sections on local tools, cloud execution and debugging; map an extension from source to sandbox. This is X++ Finance/SCM context, not Business Central development. The article was read; its video was not watched, and general productivity claims are not measured evidence.
-- **[Roadmap transition](https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/)** — Richard Riley, August 25, 2026. Use the linked AI at Work roadmap for new disclosures, current product docs for supported behavior and the study guide for exam scope. Historical release-wave pages alone no longer cover new announcements. Recheck the planned November 15 Release Planner retirement after its date.
+- **[Roadmap transition](https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/)** — Richard Riley, August 25, 2026. Use the linked AI at Work roadmap for new disclosures, current product docs for supported behavior and the study guide for exam scope. Historical release-wave pages alone no longer cover new announcements. The former Release Planner address redirected to the Microsoft Copilot Roadmap on November 20, 2026. Use that destination for new disclosures and Learn product documentation to confirm supported behavior.
 
 ## Hands-on labs
 
@@ -485,7 +489,83 @@ Original conceptual prompts, not recalled exam items. Answer first, then compare
 
 The January 30, 2026 study guide defines scope. Microsoft Learn, developer docs and MIT course labs support behavior but may include adjacent or transitioning portal content. Commercial material is supplemental and does not define objectives. All questions and labs here are original; no dumps or recalled items were used.
 
+## Key terms and phrases
+
+**Apply developer tools**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Extension model](#2-apply-developer-tools) | A group of custom code and metadata with explicit dependencies used to extend finance and operations apps. |
+| [Package](#2-apply-developer-tools) | A deployable compilation boundary containing application models and their metadata or code. |
+| [Model reference](#2-apply-developer-tools) | A declared dependency allowing one application model to use types or metadata from another. |
+
+**Design and develop AOT elements**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Form extension](#ui-and-navigation) | An extension that adds supported controls or behavior to an existing application form. |
+| [Menu item](#ui-and-navigation) | An application entry point that opens a display, invokes an action or produces output under security controls. |
+| [Form pattern](#ui-and-navigation) | A supported design structure for a form that determines appropriate layout and interaction behavior. |
+| [Table extension](#data-model) | A supported addition to an existing table's metadata, such as a new field, index or relation. |
+| [Extended data type (EDT)](#data-model) | A reusable definition of a field's underlying type and business properties. |
+| [Table relation](#data-model) | Metadata describing how records from two tables are associated. |
+| [Table index](#data-model) | A defined access path on table fields that can improve queries and enforce uniqueness when configured accordingly. |
+| [Table map](#model-one-common-field-without-merging-table-identities) | An X++ abstraction that exposes common fields or behavior across mapped tables while retaining their separate identities. |
+| [Chain of Command](#classes-and-extensibility) | An extension mechanism that wraps an eligible method so custom logic can participate in its execution. |
+| [Event handler](#classes-and-extensibility) | An extension method attached to a published event to run custom behavior at the event boundary. |
+| [Attribute](#classes-and-extensibility) | X++ metadata attached to supported program elements so frameworks can discover and apply declared behavior. |
+
+**Develop and test code**
+
+| Term or phrase | Meaning |
+|---|---|
+| [X++](#4-develop-and-test-code) | The application language for finance and operations business logic, including database operations, classes and transactions. |
+| [Exception](#build-three-small-x-contracts) | A runtime failure or explicit condition that interrupts normal execution and requires defined handling. |
+| [Transaction scope](#transaction-and-retry-failures-to-rehearse) | The boundary within which a set of database changes must complete together or be rolled back. |
+| [Transaction level](#transaction-and-retry-failures-to-rehearse) | The nesting level of an X++ transaction, relevant to selecting and updating records safely. |
+| [Optimistic concurrency](#transaction-and-retry-failures-to-rehearse) | Detecting that a record changed between reading and updating it, then handling the conflict deliberately. |
+| [Workflow approval](#implement-a-workflow-and-a-linked-table-extension-deliberately) | A configured review step that routes a business document to an authorized decision maker and records the outcome. |
+
+**Implement reporting**
+
+| Term or phrase | Meaning |
+|---|---|
+| [SSRS](#5-implement-reporting) | SQL Server Reporting Services, used for formatted and paginated operational reports. |
+| [Electronic reporting](#5-implement-reporting) | A configuration-driven framework for transforming business data into required electronic documents or messages. |
+| [Entity store](#trace-a-report-from-source-to-deployed-output) | An analytical store that stages aggregate measurements for reporting separately from transactional processing. |
+| [Aggregate measurement](#trace-a-report-from-source-to-deployed-output) | An analytical definition of grouped measures and dimensions used to support reporting workloads. |
+
+**Integrate and manage data solutions**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Synchronous integration](#select-the-pattern) | A request-response exchange in which the caller waits for the destination to finish or return a result. |
+| [Business event](#select-the-pattern) | A notification of a business operation intended to inform downstream systems of a meaningful state change. |
+| [Batch integration](#select-the-pattern) | Transferring or processing a group of records asynchronously under a scheduled or queued operation. |
+| [Data entity](#manage-data-through-entities) | A business-oriented representation that exposes related application data for import, export or integration. |
+| [OData](#manage-data-through-entities) | A standardized HTTP protocol through which supported public data entities expose query and data operations. |
+| [Data package](#manage-data-through-entities) | A collection of files and metadata used to import or export entity data through data management. |
+| [Staging table](#manage-data-through-entities) | An intermediate table used by supported import or export processes to validate and transform entity data. |
+| [Dual-write](#connect-the-ecosystem) | Synchronization of mapped data between finance and operations apps and Dataverse. |
+| [Dataverse](#connect-the-ecosystem) | Microsoft's business data platform used in this context as an integration partner for mapped finance and operations data. |
+| [Key Vault](#configure-a-vault-reference-and-test-failure) | A managed service for controlling access to secrets, keys and certificates. |
+
+**Implement security and optimize performance**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Privilege](#7-implement-security-and-optimize-performance) | A security definition granting access to specific entry points that can be assembled into duties and roles. |
+| [Security role](#7-implement-security-and-optimize-performance) | A set of duties or privileges assigned to users to authorize a business responsibility. |
+| [Duty](#7-implement-security-and-optimize-performance) | A security grouping of privileges representing an area of responsibility such as maintaining vendor records. |
+| [Entry point](#7-implement-security-and-optimize-performance) | The menu item or service operation at which application access can be controlled. |
+| [Entity privilege](#security-boundaries-and-performance-semantics) | Authorization to perform specified operations on a data entity at the relevant integration boundary. |
+| [Data security policy](#security-boundaries-and-performance-semantics) | A configured constraint on which records users may access in addition to the entry-point permissions their roles grant. |
+| [Singleton](#distinguish-cache-lifetime-from-asynchronous-execution) | A design in which a class controls access to one instance within its defined lifetime and execution scope. |
+| [Asynchronous execution](#distinguish-cache-lifetime-from-asynchronous-execution) | Queuing work to complete later so the caller does not wait for the entire operation. |
+
 ## Places to learn
+
+**Suggested practice.** Record one business action and a start/end boundary, then compare its trace with the result shown in Trace Parser. About 25–45 minutes to inspect a trace and document a reproducible finding in a prepared development environment (editorial estimate). [Lab 1: Work with trace and import it into the Trace Parser tool](https://microsoftlearning.github.io/MB-500-Microsoft-Dynamics-365-Finance-and-Operations-Apps-Developer/Instructions/Labs/Lab%20-%201%20-%20Work%20with%20trace%20and%20import%20it%20to%20Trace%20Parser.html)
 
 This is not a complete list and is not meant to be consumed in full. Choose one primary route, build and deploy a secure extension end to end, and add another resource only for a measured gap.
 

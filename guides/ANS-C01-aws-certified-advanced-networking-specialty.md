@@ -417,6 +417,72 @@ This guide uses no recalled exam questions or restricted content. The knowledge 
 
 ---
 
+## Key terms and phrases
+
+**Network Design**
+
+| Term or phrase | Meaning |
+|---|---|
+| [DNS time to live (TTL)](#11-design-global-ingress-and-edge-behavior) | The interval a DNS answer may remain cached. Lowering a TTL after an answer was cached does not recall the old answer. |
+| [Failover](#11-design-global-ingress-and-edge-behavior) | Moving service to an alternative when the current serving location or component becomes unavailable. |
+| [AWS WAF](#11-design-global-ingress-and-edge-behavior) | A web application firewall that evaluates web requests against rules before they reach a protected application. |
+| [Health check](#11-design-global-ingress-and-edge-behavior) | A test used to decide whether a target can serve traffic. A reachable process can still fail a check for a required dependency. |
+| [Amazon CloudFront](#11-design-global-ingress-and-edge-behavior) | A content delivery network that serves requests from edge locations and fetches content from an origin when needed. |
+| [Amazon Route 53](#11-design-global-ingress-and-edge-behavior) | AWS's DNS service. Records and routing policies determine how a name resolves for clients. |
+| [Split-horizon Domain Name System (DNS)](#12-design-public-private-and-hybrid-dns) | Serving different DNS answers for the same name depending on the client's network or resolver context. |
+| [DNS delegation](#12-design-public-private-and-hybrid-dns) | An authoritative parent zone assigning a child zone to designated name servers. Check delegation when a resolver cannot find the right authority. |
+| [Application Load Balancer (ALB)](#13-design-load-balancing-and-service-insertion) | An HTTP-aware load balancer that can route by properties such as host name or URL path. |
+| [Network Load Balancer (NLB)](#13-design-load-balancing-and-service-insertion) | A transport-layer load balancer for connections such as TCP flows. Routing a request by HTTP path requires an application-layer decision. |
+| [AWS Lambda](#13-design-load-balancing-and-service-insertion) | Runs application code in response to an invocation or event. The function owner selects its code, permissions and resource configuration. |
+| [AWS CloudTrail](#14-design-visibility-before-incidents) | Records supported AWS API activity so an investigator can trace who called an operation, when and against which resource. |
+| [Service quota](#14-design-visibility-before-incidents) | A limit on resource use or request volume within a specified scope. Reaching it can block work even when funds are available. |
+| [Infrastructure as code (IaC)](#14-design-visibility-before-incidents) | A versioned description of infrastructure that tools can build or update. Reviewing the proposed changes helps catch unintended replacements. |
+| [Border Gateway Protocol (BGP)](#15-design-hybrid-connectivity-and-bgp-behavior) | The protocol neighboring routers use to advertise reachable prefixes and exchange information used to select paths. |
+| [AWS Direct Connect](#15-design-hybrid-connectivity-and-bgp-behavior) | A dedicated connectivity option between a customer network and AWS. Routing, redundancy and encryption are separate design decisions. |
+| [Direct Connect gateway](#15-design-hybrid-connectivity-and-bgp-behavior) | Links supported virtual interfaces and gateways for private routing to VPC or transit gateway networks. |
+| [Longest-prefix match](#15-design-hybrid-connectivity-and-bgp-behavior) | The rule favoring the most specific route containing a destination address. A matching /24 beats a /16 for that destination. |
+| [Transit virtual interface](#15-design-hybrid-connectivity-and-bgp-behavior) | A Direct Connect virtual interface type used with a Direct Connect gateway for connectivity to transit gateways. |
+| [Virtual interface (VIF)](#15-design-hybrid-connectivity-and-bgp-behavior) | A logical interface over an AWS Direct Connect connection, used to establish a particular routing relationship. |
+| [Autonomous system number (ASN)](#15-design-hybrid-connectivity-and-bgp-behavior) | A number identifying a routing domain in BGP. Peers use it when establishing and evaluating routing relationships. |
+| [Customer gateway](#15-design-hybrid-connectivity-and-bgp-behavior) | The AWS-side representation of the customer device at the far end of a Site-to-Site VPN. |
+| [Virtual private cloud (VPC) peering](#16-design-multi-vpc-account-and-region-topology) | A direct routing relationship between two VPCs. Adding a second peering connection does not turn the middle VPC into a transit router. |
+| [Amazon VPC](#16-design-multi-vpc-account-and-region-topology) | A logically isolated network in an AWS Region, divided into subnets with routes and security controls that shape connectivity. |
+| [AWS PrivateLink](#16-design-multi-vpc-account-and-region-topology) | Provides private access to supported services through endpoints without requiring a routed connection between the entire provider and consumer networks. |
+
+**Network Implementation**
+
+| Term or phrase | Meaning |
+|---|---|
+| [VLAN](#21-implement-and-validate-hybrid-paths) | A logical Layer 2 separation using a VLAN identifier. The provider and customer ends must agree on the relevant tag for a virtual interface. |
+| [Transit gateway route-table association](#22-implement-multi-account-and-multi-region-paths) | The choice of route table consulted for traffic arriving from an attachment. |
+| [Route propagation](#22-implement-multi-account-and-multi-region-paths) | Adding routes learned from an attachment to selected transit gateway route tables. The table consulted on arrival is chosen separately. |
+| [AWS Transit Gateway](#22-implement-multi-account-and-multi-region-paths) | A regional routing hub connecting VPCs and other networks. Attachments and route tables determine which networks can communicate. |
+| [Route 53 Resolver](#23-implement-dns-without-loops-or-hidden-coupling) | Resolves DNS for VPC workloads. Inbound and outbound endpoints connect resolution across network boundaries. |
+| [Security group](#23-implement-dns-without-loops-or-hidden-coupling) | A stateful network filter associated with resources such as network interfaces. Return traffic for an allowed connection is handled automatically. |
+| [AWS CloudFormation](#24-automate-network-infrastructure-safely) | Creates or updates a group of resources from a template so infrastructure changes can be reviewed and repeated. |
+| [Idempotency](#24-automate-network-infrastructure-safely) | The property that retrying the same intended operation does not apply its effect twice. An order API can remember the request identifier. |
+| [AWS Cloud Development Kit (CDK)](#24-automate-network-infrastructure-safely) | Defines infrastructure with programming-language constructs that synthesize CloudFormation templates. |
+
+**Network Management and Operation**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Route convergence](#31-maintain-route-intent-and-convergence) | The time and process needed for routers to agree on usable paths after a change, such as losing a hybrid link. |
+| [Return path](#32-troubleshoot-in-layers-with-evidence) | The route traffic follows back to its sender. Both directions must work, especially when a stateful inspection device expects both halves of a connection. |
+| [Traffic mirroring](#32-troubleshoot-in-layers-with-evidence) | Sending a copy of selected network traffic to an inspection target. It provides different evidence from summarized flow records. |
+| [Maximum transmission unit (MTU)](#33-optimize-throughput-reliability-and-cost) | The largest network-layer packet a link can carry in one piece. A smaller limit on one hop can explain why only large transfers fail. |
+| [Availability Zone (AZ)](#33-optimize-throughput-reliability-and-cost) | An isolated location within a Region that contains one or more data centers. Placing copies in different zones can help a workload survive a local failure. |
+
+**Network Security, Compliance, and Governance**
+
+| Term or phrase | Meaning |
+|---|---|
+| [AWS Network Firewall](#41-build-controls-from-flows-and-threats) | A managed traffic-inspection service placed in a routed VPC path. Traffic must actually traverse its endpoints for its policy to apply. |
+| [AWS Shield](#41-build-controls-from-flows-and-threats) | A service for protecting availability against distributed denial-of-service traffic. Application-level request filtering serves a different purpose. |
+| [VPC Flow Logs](#42-audit-configuration-and-traffic-centrally) | Records describing IP traffic seen at network interfaces. They help establish which endpoints communicated and whether traffic was accepted or rejected. |
+| [Encryption in transit](#43-protect-confidentiality-in-transit) | Protecting information while it travels between endpoints, typically through an authenticated encrypted connection. |
+| [TLS in transit](#43-protect-confidentiality-in-transit) | Transport Layer Security encrypts a connection between its two endpoints. Trace where TLS terminates and whether the next hop to a service such as Amazon S3 also uses TLS. |
+
 ## Places to learn
 
 This is **not a complete list**, and it is not meant to be consumed in full. Because ANS-C01 retires December 31, only start an exam-specific plan if the remaining schedule is realistic. The technical content remains useful after certification retirement. Public catalogs were checked September 28; paid lessons were not reviewed. O'Reilly/Udemy were blocked and Skill Builder/Whizlabs returned shells, so their precise runtimes, update dates and entitlements are not newly verified.

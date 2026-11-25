@@ -7,16 +7,18 @@ generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
 last_verified: 2026-10-28
-upcoming_change_status: none-announced
-upcoming_change_checked: 2026-10-28
+upcoming_change_status: scheduled
+upcoming_change_checked: 2026-11-20
 ---
 
 # AB-731 AI Transformation Leader Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-03.md#ab-731) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-731-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-731) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-01.md#ab-731)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-03.md#ab-731) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-731-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-731) is authoritative.
 
 **Current baseline:** Skills measured as of July 22, 2026.<br>
-**Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
+**Upcoming English outline — January 11, 2027.** Use the current objective map for preparation before that date. Check the language and version for your appointment. The [November source notes](../docs/research/2026-11-20-microsoft-refresh-group-01.md#ab-731) identify the announced edition and its domain weights.<br>
 **Lifecycle:** The [AI Transformation Leader credential](https://learn.microsoft.com/en-us/credentials/certifications/ai-transformation-leader/) and 45-minute exam are active.<br>
 **Official source:** [AB-731 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-731)
 
@@ -329,6 +331,8 @@ Measure active use and repeat use, task completion, time to acceptable result, a
 
 ### Interpret adoption and impact measures honestly
 
+**Practice check.** The Copilot impact report aggregates active use, actions and assisted hours after the predefined Viva Insights query runs. Pair those usage measures with an independently measured business outcome, such as verified time per completed case, before attributing savings. [Microsoft Copilot impact report | Microsoft Learn](https://learn.microsoft.com/en-us/viva/insights/advanced/analyst/templates/microsoft-365-copilot-impact)
+
 The [AI adoption score](https://learn.microsoft.com/en-us/microsoft-365/admin/adoption/ai-adoption-score) measures usage habit across licensed users over the prior 28 days, using 12 active days as its full-score target. It is not a measure of saved money, output correctness or whether a particular employee performs well. Use role-appropriate aggregated analysis and investigate barriers rather than rewarding meaningless interactions.
 
 **Worked example 4 — keep the denominator.** Of 100 licensed users, 50 use Copilot on 12 days, 25 on six days and 25 on no days in the 28-day period. The average score in this example is **(50 × 100 + 25 × 50 + 25 × 0) / 100 = 62.5**. The share with any use is **75%**. Neither number tells you how many tasks were completed correctly. Reporting only the 75 active users hides unused license assignments and changes the denominator.
@@ -503,7 +507,62 @@ These are artifact-based learning labs. This review validated the worked arithme
 - [ ] I verify current licensing, consumption, product packaging and regional availability.
 - [ ] I use assessments to find knowledge gaps, never to reproduce live exam content.
 
+## Key terms and phrases
+
+**Identify the business value of generative AI solutions**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Generative AI](#distinguish-generation-machine-learning-and-automation) | Models that produce new text, images or other content in response to input. |
+| [Machine learning](#distinguish-generation-machine-learning-and-automation) | Learning predictive patterns from examples, such as forecasting demand from prior sales. |
+| [Deterministic automation](#distinguish-generation-machine-learning-and-automation) | A fixed sequence of rules or operations suitable when the required action can be prescribed in advance. |
+| [Fine-tuning](#select-a-model-and-adaptation-method) | Further training on examples to teach a model a desired behavior or style. |
+| [Foundation model](#select-a-model-and-adaptation-method) | A model trained broadly enough to be adapted or prompted for multiple downstream tasks. |
+| [Small language model (SLM)](#select-a-model-and-adaptation-method) | A model with fewer parameters than larger alternatives that can suit narrower tasks where its tested quality meets requirements. |
+| [Retrieval-augmented generation (RAG)](#ground-solutions-and-understand-rag) | Retrieving relevant external material at request time and using it as evidence for a generated answer. |
+| [Embedding](#ground-solutions-and-understand-rag) | A numeric vector representing content for comparisons such as semantic similarity. |
+| [Vector search](#ground-solutions-and-understand-rag) | Finding stored representations near a query vector according to a chosen distance or similarity measure. |
+| [Chunk](#ground-solutions-and-understand-rag) | A bounded portion of a source document indexed and retrieved as a unit of evidence. |
+| [Groundedness](#ground-solutions-and-understand-rag) | How well the claims in a generated answer are supported by the evidence supplied to the model. |
+| [Zero-shot prompting](#engineer-prompts-as-testable-instructions) | Requesting a task with instructions but without supplying an example of the expected result. |
+| [Few-shot prompting](#engineer-prompts-as-testable-instructions) | Including a small number of examples to show the expected pattern or output. |
+| [Data readiness](#evaluate-data-readiness) | The extent to which business data is accurate, accessible to the intended users and suitable for the proposed use. |
+| [Training data](#understand-the-ml-lifecycle) | Examples used to fit model parameters during development. |
+| [Test set](#understand-the-ml-lifecycle) | Examples held out from training and tuning to estimate performance on unseen cases. |
+| [Model drift](#understand-the-ml-lifecycle) | A deterioration or change in deployed model behavior that warrants investigation using current outcomes and inputs. |
+| [Value baseline](#build-a-credible-value-case) | A measurement of current performance against which a pilot's benefit and cost can be compared. |
+| [Total cost of ownership (TCO)](#build-a-credible-value-case) | The full cost of building and running a solution, including integration, operations and human review. |
+| [Return on investment (ROI)](#build-a-credible-value-case) | The net benefit of an investment divided by its cost, using benefits and costs from the same period. |
+| [Data residency](#keep-protection-claims-tied-to-the-actual-data-path) | The geographic location in which specified information is stored or processed under the service arrangement. |
+
+**Identify benefits, capabilities and opportunities for Microsoft AI apps and services**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Copilot Chat](#map-microsoft-copilot-experiences-to-work) | A conversational interface for asking questions, drafting content and refining an answer with follow-up prompts. |
+| [Build, buy or extend](#decide-whether-to-buy-build-or-extend) | A choice among creating a solution, adopting an existing product or adding capabilities to an existing platform. |
+| [Model catalog](#understand-microsoft-foundry-and-foundry-tools) | A collection of model candidates and documentation for comparing capabilities, deployment fit and usage conditions. |
+| [Latency](#match-models-and-services-to-requirements) | The elapsed time between a user's request and a usable response. |
+
+**Identify an implementation and adoption strategy**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Responsible AI control](#turn-responsible-ai-principles-into-controls) | A concrete safeguard with an owner and a way to check it, such as review of high-impact decisions. |
+| [Fairness](#turn-responsible-ai-principles-into-controls) | Assessing and addressing differences in how an AI system affects people or groups. |
+| [Transparency](#turn-responsible-ai-principles-into-controls) | Making a system's use, capabilities and limitations understandable to the people affected by it. |
+| [Accountability](#turn-responsible-ai-principles-into-controls) | Assigning people responsibility for design decisions, oversight and the consequences of system use. |
+| [Operating model](#define-an-operating-model) | The division of responsibilities for funding, deploying, governing and supporting an AI solution. |
+| [Center of Excellence (CoE)](#define-an-operating-model) | A cross-functional group that maintains shared guidance, governance and reusable patterns while supporting delivery teams. |
+| [Change champion](#plan-adoption-and-change) | A person who helps peers adopt a new work practice, collects feedback and surfaces training needs. |
+| [Pilot](#pilot-measure-and-scale) | A bounded deployment with a defined audience, success measures and a decision about whether to expand. |
+| [Adoption measure](#interpret-adoption-and-impact-measures-honestly) | A measure of who uses a tool for the intended work. If 45 of 60 eligible staff complete a target workflow this month, adoption on that measure is 75%. |
+| [Active usage](#interpret-adoption-and-impact-measures-honestly) | Use of the service by a defined group within a stated period, requiring a clear denominator for comparisons. |
+| [Business impact](#interpret-adoption-and-impact-measures-honestly) | A measurable change in outcomes, such as reduced rework or shorter cycle time, compared with the baseline. |
+
 ## Places to learn
+
+**Suggested practice.** Pick a business problem and define a baseline, outcome measure and owner before estimating return on investment. 3 minutes for the unit (publisher page). [Business strategy](https://learn.microsoft.com/en-us/training/modules/create-business-value/2-business-strategy)
 
 This is not a complete list and is not meant to be consumed in full. Choose one primary route, build the decision artifacts and labs, and add another resource only when it closes a measured gap.
 

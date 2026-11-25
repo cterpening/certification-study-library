@@ -54,6 +54,10 @@ These are navigation aids, not separate review states. Within a guide, use `Rela
 
 ## Heading structure
 
+Give each guide a level-two **Key terms and phrases** section immediately before **Places to learn**. Work through the published domains and their teaching sections when choosing terms. Include the concepts, product features, mechanisms and measurements a learner will encounter across the guide. Around 35–60 entries suits many guides. Broader outlines may need more. Organize entries in short tables by topic and keep closely related concepts together so readers can compare them.
+
+Link each term to the passage that teaches it. Explain its meaning in this certification's context and expand unfamiliar acronyms. Use a short example for a decision or behavior. For a quantity, a calculation with units and a clear denominator can supply the definition. For elective paths, supporting knowledge or unpublished objectives, preserve the scope stated in the teaching passage.
+
 Every guide has exactly one level-one heading for its title. Major guide parts use level-two headings, with level three and level four reserved for nested topics. The website limits the visible right-side table of contents to major level-two sections; search and in-page headings still expose the full detail.
 
 ## Depth review

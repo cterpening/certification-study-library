@@ -140,6 +140,68 @@ Use Job Inspector, internal logs/indexes, cluster health, bundle status, storage
 - [ ] I completed the twelve labs and can defend decisions with evidence and rollback.
 - [ ] Both prerequisite certifications and all four required course/lab records are complete.
 
+## Key terms and phrases
+
+**Requirements, indexes, resources, and deployment planning**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Ingest volume](#14-requirements-indexes-resources-and-deployment-planning-19) | The amount of data entering the platform over a period. Along with retention, search load and copy requirements, it informs capacity planning. |
+| [Data retention](#14-requirements-indexes-resources-and-deployment-planning-19) | The policy and capacity governing how long data remains available. A size threshold can affect whether a time-based retention goal is met. |
+| [Index](#14-requirements-indexes-resources-and-deployment-planning-19) | A named store for event or metric data, with access and retention settings governing who can search it and for how long. |
+| [Scheduled search](#14-requirements-indexes-resources-and-deployment-planning-19) | A saved search run at defined intervals. The schedule and search window together determine which events are examined. |
+| [Knowledge bundle](#14-requirements-indexes-resources-and-deployment-planning-19) | Search-time knowledge distributed by a search head so peers can apply compatible lookups, extractions and other settings. |
+| [Data integrity](#14-requirements-indexes-resources-and-deployment-planning-19) | Preserving records so unintended alteration can be detected. Define what is being verified and where authoritative evidence is kept. |
+| [Thawed data](#14-requirements-indexes-resources-and-deployment-planning-19) | Archived data restored to the appropriate index location so it can be searched again. |
+
+**Cluster and deployment foundations**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Failure domain](#56-cluster-and-deployment-foundations-11) | A set of components that could become unavailable together, such as peers sharing one site or power source. |
+| [Deployment server](#56-cluster-and-deployment-foundations-11) | Distributes managed applications and configuration to assigned deployment clients. |
+| [Forwarder](#56-cluster-and-deployment-foundations-11) | A component that collects and sends data to another Splunk tier. Its type determines which parsing tasks it can perform. |
+
+**Performance and evidence-led troubleshooting**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Job Inspector](#713-performance-and-evidence-led-troubleshooting-35) | A search diagnostic view that exposes execution timing and work performed, useful for separating a slow search from wider platform pressure. |
+| [Search concurrency](#713-performance-and-evidence-led-troubleshooting-35) | The number of searches competing to run at the same time. Staggering scheduled reports may reduce peaks. |
+| [Server class](#713-performance-and-evidence-led-troubleshooting-35) | A rule grouping deployment clients so selected applications or settings reach the intended instances. |
+| [Parsing tier](#713-performance-and-evidence-led-troubleshooting-35) | The component responsible for event boundaries, timestamps or other index-time transformations in a particular ingestion path. |
+| [Time range](#713-performance-and-evidence-led-troubleshooting-35) | The interval a search covers. Use bounds that match event time and known ingestion delay before treating an empty result as evidence. |
+| [Input checkpoint](#713-performance-and-evidence-led-troubleshooting-35) | Saved input progress used when collection resumes. Resetting it may replay old data or create a gap. |
+| [Index-time routing](#713-performance-and-evidence-led-troubleshooting-35) | Choosing a destination for events while they are being processed. Verify the result before assuming stored data can be repaired later. |
+| [Search Processing Language (SPL)](#713-performance-and-evidence-led-troubleshooting-35) | The language Splunk uses to retrieve events and pass results through commands that filter, enrich, group or display them. |
+| [Effective configuration](#713-performance-and-evidence-led-troubleshooting-35) | The merged settings Splunk actually uses after resolving configuration precedence. Inspecting one file can give an incomplete answer. |
+
+**Large-scale and indexer-cluster architecture**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Replication factor](#1417-large-scale-and-indexer-cluster-architecture-22) | The required number of copies of clustered bucket data. In a single-site cluster, a factor of three calls for a bucket’s data on three peers. |
+| [Search factor](#1417-large-scale-and-indexer-cluster-architecture-22) | The required number of searchable copies of clustered bucket data, which affects search availability after peer loss. |
+| [Manager node](#1417-large-scale-and-indexer-cluster-architecture-22) | The component that coordinates indexer cluster peers, bucket-copy health and distribution of cluster configuration. |
+| [Indexer cluster](#1417-large-scale-and-indexer-cluster-architecture-22) | A coordinated set of indexers that maintains configured copies of data and participates in distributed searches. |
+| [Indexer](#1417-large-scale-and-indexer-cluster-architecture-22) | Processes or stores indexed data and runs the portion of a distributed search assigned to its local data. |
+| [Monitoring Console](#1417-large-scale-and-indexer-cluster-architecture-22) | Dashboards and diagnostics for the Splunk deployment itself, such as search concurrency, indexing load or component health. |
+| [License manager](#1417-large-scale-and-indexer-cluster-architecture-22) | The Splunk role that administers applicable licenses and monitors usage across the deployment. |
+| [SmartStore](#1417-large-scale-and-indexer-cluster-architecture-22) | An index storage architecture that keeps eligible bucket data in a remote object store and uses local cache for active access. |
+| [Rolling restart](#1417-large-scale-and-indexer-cluster-architecture-22) | Restarting or updating members in controlled stages so sufficient capacity and clustered data remain available during maintenance. |
+| [Search affinity](#1417-large-scale-and-indexer-cluster-architecture-22) | Preference for satisfying searches from suitable local-site copies in a multisite deployment, reducing cross-site traffic when possible. |
+| [Bucket](#1417-large-scale-and-indexer-cluster-architecture-22) | A directory containing indexed data for a period of time. Buckets move through lifecycle stages governed by index settings. |
+
+**Search-head clusters and KV Store**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Search head cluster captain](#1820-search-head-clusters-and-kv-store-13) | The member elected to coordinate tasks such as scheduling across a search head cluster. |
+| [Deployer](#1820-search-head-clusters-and-kv-store-13) | The instance used to distribute managed apps and configuration to search head cluster members. |
+| [Search head](#1820-search-head-clusters-and-kv-store-13) | Accepts searches, coordinates work across search peers and presents combined results to the user. |
+| [Search head cluster (SHC)](#1820-search-head-clusters-and-kv-store-13) | A group of coordinated search heads sharing supported knowledge and scheduling responsibilities for availability. |
+| [Search peer](#1820-search-head-clusters-and-kv-store-13) | An instance that searches its local data for a distributed search and sends results back to the coordinating search head. |
+
 ## Places to learn
 
 This is not a complete list, and it is not meant to be consumed end to end. Pick resources for measured gaps. Times are planning estimates; access, price, version, and schedules change.

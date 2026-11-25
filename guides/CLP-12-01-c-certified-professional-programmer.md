@@ -898,6 +898,83 @@ The eight activities below remain learner assignments, with partial evidence sup
 - [ ] I distinguish undefined, unspecified, and implementation-defined behavior and audit lifetimes/sequencing.
 - [ ] I rechecked the live official page immediately before purchase.
 
+## Key terms and phrases
+
+**Applied evolution of C**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Language dialect](#standards-and-feature-eras) | The C standard and extensions selected for a translation. A feature accepted in one mode may be unavailable in another. |
+| [Compiler](#standards-and-feature-eras) | The program translating a translation unit and checking that it meets the selected language rules. |
+| [Definition](#reading-old-source-under-an-explicit-mode) | A declaration that supplies the actual entity, such as a function body or an object with storage. |
+| [Identifier](#reading-old-source-under-an-explicit-mode) | A name used to refer to a declared entity such as a variable, function or type. |
+| [Function parameter](#reading-old-source-under-an-explicit-mode) | A declared input to a function, bound to a supplied argument when the function is called. |
+
+**Variadic functions and macros**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Implicit conversion](#2-variadic-functions-and-macros-9) | A type conversion performed by the language rules, for example promoting a smaller integer before arithmetic. |
+| [Undefined behavior](#2-variadic-functions-and-macros-9) | An operation for which the language imposes no requirements, such as accessing an array outside its valid range. |
+| [Format specifier](#2-variadic-functions-and-macros-9) | A conversion instruction in a formatted I/O string. The corresponding argument must have the expected type. |
+| [Variadic argument list](#2-variadic-functions-and-macros-9) | A representation used to traverse the unnamed arguments of a variadic function according to its agreed calling convention. |
+| [Variadic function](#calling-convention-and-list-ownership) | A function that accepts additional arguments beyond its named parameters. Their types must follow the caller and callee’s agreed convention. |
+| [Buffer capacity](#calling-convention-and-list-ownership) | The number of elements a buffer can hold under its allocation. Appending data requires room within that bound. |
+
+**Fundamentals of low-level I/O**
+
+| Term or phrase | Meaning |
+|---|---|
+| [File descriptor](#3-fundamentals-of-low-level-io-13) | An integer handle used by low-level system calls to refer to an open file, pipe, socket or another I/O endpoint. |
+| [Short read](#progress-ownership-and-platform-differences) | A successful read returning fewer bytes than requested. A consumer must account for the bytes received before requesting more. |
+| [End of file (EOF)](#progress-ownership-and-platform-differences) | An indication that a read reached the end of available input. Check the read result before processing the next value. |
+| [Object representation](#progress-ownership-and-platform-differences) | The bytes making up an object in memory. A raw byte copy does not define a portable file format for arbitrary structures. |
+
+**Memory and string handling**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Overlapping regions](#allocation-and-byte-operations) | Memory ranges that share bytes. A move operation designed for overlap preserves the intended bytes during copying. |
+| [Object lifetime](#allocation-and-byte-operations) | The period during which a particular object exists and access to it is permitted under the language rules. |
+| [Static storage duration](#allocation-and-byte-operations) | Storage that lasts for the entire execution of the program, independently of the name’s scope. |
+| [Reallocation](#allocation-and-byte-operations) | Changing an allocation’s size, potentially moving it. Losing the original pointer on failure can prevent its later release. |
+| [Buffer overlap](#allocation-and-byte-operations) | Two source and destination byte ranges sharing storage. Use an operation defined for overlap when that can occur. |
+| [Comparator](#sorting-and-searching) | A function that describes relative ordering. Sorting and binary search must agree on that ordering. |
+| [Structure member](#choosing-storage-and-a-text-contract) | A named component of a structure or class instance, such as the quantity field in an inventory record. |
+| [Locale](#choosing-storage-and-a-text-contract) | The active conventions for text and numeric processing, relevant to character classification and conversions. |
+
+**Processes and threads**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Shared-state invariant](#5-processes-and-threads-9) | A condition that related values must satisfy when another thread can observe them. A mutex can protect the whole update so another thread never sees it half finished. |
+| [Mutex](#5-processes-and-threads-9) | A mutual-exclusion object that serializes access to shared state when all participants follow the same locking discipline. |
+| [Condition variable](#5-processes-and-threads-9) | A primitive letting a thread wait for shared state to satisfy a predicate, rechecking it after waking. |
+| [Data race](#state-shared-by-threads) | Conflicting accesses to one memory location by different threads, with at least one write and at least one non-atomic access, where neither access happens before the other. A C data race gives undefined behavior. |
+
+**Numerical types and computations**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Floating-point tolerance](#a-bounded-numerical-comparison) | A declared threshold for treating approximate numeric results as sufficiently close for a calculation. |
+
+**Network socket programming**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Byte order](#7-network-socket-programming-13) | The order of bytes in a multi-byte value, which communicating systems must agree on for interchange. |
+| [Message framing](#separate-transport-setup-from-frame-decoding) | A protocol convention, such as a length field, that identifies application messages inside a stream of bytes. |
+| [Frame header](#separate-transport-setup-from-frame-decoding) | The leading fields of a protocol frame tell the decoder how to interpret the bytes that follow. A length field can tell it to wait for more input before reading a payload. |
+
+**Specialized considerations**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Scope](#8-specialized-considerations-145) | The part of the program in which a declaration can be found by name. Visibility and object lifetime can differ. |
+| [Array bound](#8-specialized-considerations-145) | The limits of valid element positions. For an array of length n, valid indices run from zero through n minus one. |
+| [Function pointer](#8-specialized-considerations-145) | A pointer to a function with a compatible type, often used to supply callbacks such as comparison functions. |
+| [Cast](#declarations-and-jumps-you-can-reason-about) | An explicit request to convert an expression to a specified type. The requested change may lose information. |
+
 ## Places to learn
 
 This is not a complete list, and it is not meant to be consumed in full. Use one aligned primary path, then select platform documentation and labs for the interfaces you are practicing. Reconcile older courses with the current official CLP-12-01 syllabus and label every language/platform version.

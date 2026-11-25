@@ -192,6 +192,103 @@ Correlate user, endpoint, URL category, certificate/decryption mode, application
 29. Agent, identity provider, DNS, tunnel, service edge/PoP, connector, control plane, logging, and emergency path.
 30. Technical Introduction to Cybersecurity retired July 15, 2026; NSE 2 now uses Introduction to the Next Generation Firewall.
 
+## Key terms and phrases
+
+**What an NGFW does**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Next-generation firewall (NGFW)](#1-what-an-ngfw-does) | A firewall that can use application and threat information as well as addresses, ports and session state to control traffic. |
+| [Stateful inspection](#1-what-an-ngfw-does) | Tracking connections so both a packet’s attributes and the state of the flow influence enforcement. |
+
+**Firewall policies**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Firewall policy](#2-firewall-policies) | A rule that identifies matching traffic and determines its treatment. Rule order can change which action applies. |
+| [Least privilege](#2-firewall-policies) | Giving an identity only the permissions needed for its task, for as long as it needs them. |
+| [Network address translation (NAT)](#2-firewall-policies) | Rewriting source or destination addressing as traffic crosses a boundary. The translation and the permission to pass traffic are distinct decisions. |
+
+**User authentication**
+
+| Term or phrase | Meaning |
+|---|---|
+| [User authentication](#3-user-authentication) | Verification of a person's identity before identity-based rules are applied to their traffic. |
+| [Authentication](#3-user-authentication) | The check that establishes who a user or device is. Authorization determines what that identity may do next. |
+| [Authorization](#3-user-authentication) | Determining whether a given identity may perform a specific action on the particular resource requested. |
+| [Multifactor authentication (MFA)](#3-user-authentication) | Authentication using factors from two or more categories. A password and a second password both use the same knowledge factor. |
+| [Phishing](#3-user-authentication) | An impersonation attempt that tries to induce an unsafe action or disclosure. Message appearance alone cannot establish the sender’s identity. |
+| [Phishing-resistant authentication](#3-user-authentication) | Authentication designed to prevent an impostor service from reusing the proof supplied for a legitimate service, such as a credential bound to the correct origin. |
+| [Remote Authentication Dial-In User Service (RADIUS)](#3-user-authentication) | A protocol used by network access equipment to consult a central authentication and authorization service and record accounting events. |
+| [Single sign-on (SSO)](#3-user-authentication) | An arrangement in which an authenticated session can be reused to access multiple authorized applications without a fresh sign-in at each. |
+
+**Blocking malware**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Antimalware inspection](#4-blocking-malware) | Inspection that uses evidence such as signatures, reputation or behavior to identify potentially malicious content and apply the configured action. |
+| [Encryption](#4-blocking-malware) | A reversible transformation that protects readable data using a key. Someone with the appropriate key can recover the original. |
+| [False positive](#4-blocking-malware) | An alert that classifies benign activity as a target condition. Repeated benign alerts can distort operational priorities. |
+| [Patch management](#4-blocking-malware) | Identifying applicable fixes, prioritizing and testing them, deploying them to the correct population and verifying the resulting state. |
+
+**Web filtering**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Web filtering](#5-web-filtering) | A control that allows or blocks web access according to a URL, category or other policy criterion. |
+
+**IPS and application control**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Intrusion prevention system (IPS)](#6-ips-and-application-control) | A control that inspects traffic for signs of known or suspicious activity and can block matching traffic. |
+| [Application control](#6-ips-and-application-control) | A control that identifies the application using a connection and applies policy to it, even when several applications share a port. |
+| [Vulnerability](#6-ips-and-application-control) | A weakness that can expose an asset to harm. Risk also depends on who or what could act on it and the consequences. |
+
+**Connecting multiple locations securely**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Internet Key Exchange (IKE)](#7-connecting-multiple-locations-securely) | The protocol peers use to authenticate and negotiate the keys and settings for IPsec protection. |
+| [Internet Protocol Security (IPsec)](#7-connecting-multiple-locations-securely) | A set of IP-layer protocols that protect traffic between negotiated peers, with defined security associations and traffic selectors. |
+| [IPsec VPN](#7-connecting-multiple-locations-securely) | A protected network path in which peers authenticate and use negotiated keys to protect IP traffic. |
+| [Security association (SA)](#7-connecting-multiple-locations-securely) | A set of parameters, keys and counters defining how one direction of traffic is protected under IPsec. |
+| [Subnet](#7-connecting-multiple-locations-securely) | A portion of an IP address space sharing a network prefix. Hosts use the prefix to distinguish local delivery from traffic requiring a router. |
+| [Virtual private network (VPN)](#7-connecting-multiple-locations-securely) | A protected logical connection over a shared network. Its permitted destinations and traffic depend on routes and access policy. |
+
+**Secure SD-WAN**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Software-defined WAN (SD-WAN)](#8-secure-sd-wan) | A way to steer traffic among network connections according to policy and measured link conditions. |
+| [Failback](#8-secure-sd-wan) | Returning service from a recovery environment to the intended primary after checking data consistency and readiness. |
+| [Failover](#8-secure-sd-wan) | Transfer of service to another HA member after a failure. Some sessions may need to reconnect. |
+| [Health check](#8-secure-sd-wan) | A defined test of reachability or service behavior used to decide whether a path or backend remains eligible. A TCP response may test less than an application transaction. |
+| [Jitter](#8-secure-sd-wan) | Variation in packet delay. A link with acceptable average latency can still deliver poor real-time voice quality. |
+| [Latency](#8-secure-sd-wan) | Elapsed time for data or a request to travel a defined path. Specify whether the measure is one-way delay or round-trip time. |
+| [Packet](#8-secure-sd-wan) | A network-layer unit carrying a source and destination IP address. Routers use the destination and their forwarding tables to send it onward. |
+
+**SASE**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Secure access service edge (SASE)](#9-sase) | An architecture that combines wide-area connectivity and cloud-delivered security for users and branches. |
+| [Cloud access security broker (CASB)](#9-sase) | A control between users and cloud services, or integrated through service APIs, that provides visibility and enforces policies on cloud application use. |
+| [Data loss prevention (DLP)](#9-sase) | Policies and controls that identify sensitive data in use or movement and apply actions such as warning or blocking. |
+| [Device posture](#9-sase) | Evidence of the current condition of an endpoint, such as running protection software or encryption status, used as input to an access decision. |
+| [Zero Trust](#9-sase) | An access model that evaluates requests using identity, resource and context without assuming access is safe solely because it originated on an internal network. |
+| [Zero trust network access (ZTNA)](#9-sase) | Access to a named application based on identity and other policy checks such as device posture. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Identity provider (IdP)](#remote-worker-accessing-saas-and-a-private-application) | The service that authenticates an identity and makes assertions or issues tokens that a relying service can validate. |
+| [Software as a service (SaaS)](#remote-worker-accessing-saas-and-a-private-application) | An application operated by a provider and consumed as a service. The customer still governs tenant settings, access and use of its data. |
+| [Containment](#suspected-malicious-download) | Limiting the scope or ongoing effects of an incident, such as isolating the affected device under an approved response plan. |
+| [Evidence preservation](#suspected-malicious-download) | Maintaining the integrity and provenance of information needed for investigation, including original timestamps, collection method and access history. |
+| [Telemetry](#suspected-malicious-download) | Logs, events and measurements supplied by managed systems. Customer attribution and collection health determine whether the records are usable. |
+
 ## Places to learn
 
 This is a selective starting set, not a complete list and not a prescription to consume everything. Start with the required course, then pick only the references and labs that address your gaps. Times are publisher-listed or planning estimates.

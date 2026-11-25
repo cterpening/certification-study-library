@@ -243,6 +243,79 @@ A report shows no alerts for one department. Compare expected inventory, agent o
 - [ ] I reject leaked/live exam material and protect retrieved/uploaded evidence.
 - [ ] I rechecked the August 2025 datasheet, current XDR docs/path, handbook, and registration before purchase.
 
+## Key terms and phrases
+
+**Alerting and detection processes**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Behavioral indicator of compromise (BIOC)](#1-alerting-and-detection-processes-23) | A detection condition based on a pattern of activity, which can match even when a particular file hash is unfamiliar. |
+| [Alert grouping](#1-alerting-and-detection-processes-23) | Bringing related alerts into one incident according to grouping criteria. The raw observations remain relevant to assessing the case. |
+| [Data stitching](#1-alerting-and-detection-processes-23) | Linking events and entities from different sources to enrich the evidence for an investigation. Alert grouping instead brings related alerts into the same case. |
+| [Entity](#1-alerting-and-detection-processes-23) | An identifiable resource such as a user, workload or host whose activities and relationships can be investigated. |
+| [Incident](#1-alerting-and-detection-processes-23) | A case that groups related alerts and evidence so an analyst can assess scope and coordinate a response. |
+| [Indicator of compromise (IOC)](#1-alerting-and-detection-processes-23) | An observable value associated with suspicious activity, such as a file hash or domain, whose relevance depends on context. |
+| [Normalization](#1-alerting-and-detection-processes-23) | Mapping source-specific values to a common representation, such as translating different vendor fields into the same source-address field. |
+| [Parsing](#1-alerting-and-detection-processes-23) | Extracting structured values from an incoming record. Correct parsing must preserve the distinction between a missing value and a value of zero. |
+| [Severity](#1-alerting-and-detection-processes-23) | A rating of expected or observed impact. It differs from confidence, which expresses how strongly the evidence supports the assessment. |
+| [Telemetry](#1-alerting-and-detection-processes-23) | Records of activity from endpoints, networks or other systems that investigators can correlate into a timeline. |
+| [Workflow trigger](#1-alerting-and-detection-processes-23) | The event or condition that starts a workflow, such as creation of an incident matching specified criteria. |
+
+**Incident handling and response**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Causality chain](#evidence-and-analysis) | A linked sequence of processes and actions that gives an alert context, such as which process launched another. |
+| [Authentication](#evidence-and-analysis) | Checking that a claimant controls an authenticator bound to the claimed identity. It precedes the separate decision about permitted actions. |
+| [False negative](#evidence-and-analysis) | A target condition that occurs without the expected alert or block. Reviewing alerts alone cannot reveal every missed case. |
+| [False positive](#evidence-and-analysis) | An alert that classifies benign activity as a target condition. Repeated benign alerts can distort operational priorities. |
+| [Hash](#evidence-and-analysis) | A fixed-size digest derived from input data. Comparing a file’s digest to a trusted reference can detect modification without revealing who modified it. |
+| [True positive](#evidence-and-analysis) | A detection supported by evidence that the condition it was intended to identify really occurred. |
+| [Endpoint isolation](#response-remediation-and-automation) | Restricting a host’s network communication to contain an incident while retaining supported management access. |
+| [Remediation](#response-remediation-and-automation) | Action taken to remove or correct the cause of an incident after its immediate effects are contained. |
+| [Authorization](#response-remediation-and-automation) | Determining whether a given identity may perform a specific action on the particular resource requested. |
+| [Containment](#response-remediation-and-automation) | Limiting the scope or ongoing effects of an incident, such as isolating the affected device under an approved response plan. |
+| [Evidence preservation](#response-remediation-and-automation) | Maintaining the integrity and provenance of information needed for investigation, including original timestamps, collection method and access history. |
+| [Quarantine](#response-remediation-and-automation) | Restricting the access or use of a device, file or message pending investigation. The quarantine boundary and release authority matter. |
+| [Alert exclusion](#exclusions-and-exceptions) | A scoped instruction to suppress specified alerts. Its scope affects which future evidence analysts will see. |
+
+**Data analysis**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Dataset](#xql-and-data-structures) | A named collection of records queried in XQL. Its schema and available time range limit what an investigation can establish. |
+| [Aggregation](#xql-and-data-structures) | Combining records by defined keys to calculate a result such as event count per user or average delay per site. |
+| [Deduplication](#xql-and-data-structures) | Recognizing and handling repeated copies of the same observation or request so duplication does not inflate counts or repeat an action. |
+| [Event time](#xql-and-data-structures) | When an event occurred according to the originating system. Clock offset or a missing timezone can place it incorrectly on an investigation timeline. |
+| [Ingestion](#xql-and-data-structures) | Bringing source records into the security platform for analysis. Missing input limits what a dashboard can show. |
+| [Ingestion time](#xql-and-data-structures) | When a downstream system received or indexed the record, which may be substantially later than the event itself. |
+| [Pivot](#xql-and-data-structures) | Following an entity from one relevant record to related evidence, such as taking a host from an alert and examining its activity around the same time. |
+| [Schema](#xql-and-data-structures) | A definition of expected data structure, field types and constraints. A syntactically valid payload may still fail schema or business validation. |
+| [Cortex Query Language (XQL)](#xql-and-data-structures) | The Cortex query language used to select, filter and summarize records from datasets for an investigation. |
+| [Retention](#hunting-dashboards-retention-and-host-insights) | The period for which telemetry remains available for investigation. A search outside that period cannot establish inactivity. |
+| [Dashboard](#hunting-dashboards-retention-and-host-insights) | A set of visual summaries for a defined operational question. Filters, coverage and collection delays determine what the displayed totals represent. |
+| [Extended detection and response (XDR)](#hunting-dashboards-retention-and-host-insights) | Correlating evidence across endpoints and additional sources to support detection, investigation and response in a common operational context. |
+| [Host Insights](#hunting-dashboards-retention-and-host-insights) | Cortex endpoint visibility into supported host inventory or exposure data, which should be interpreted against collection coverage and freshness. |
+| [Snapshot](#hunting-dashboards-retention-and-host-insights) | A point-in-time representation of a resource. Its independence, consistency and recovery scope depend on the underlying service. |
+| [Vulnerability](#hunting-dashboards-retention-and-host-insights) | A weakness in design, configuration, process or implementation that can affect a security objective under applicable conditions. |
+
+**Endpoint security management**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Endpoint group](#4-endpoint-security-management-15) | A collection of devices used to target management or protection settings. |
+| [Bandwidth](#4-endpoint-security-management-15) | The nominal data-carrying capacity of a link, usually expressed in bits per second. It does not by itself establish delay or delivered throughput. |
+| [Extension profile](#4-endpoint-security-management-15) | A Cortex XDR collection of endpoint settings for supported features beyond the core prevention profile, assigned through policy. |
+| [Prevention profile](#4-endpoint-security-management-15) | A set of endpoint protection settings referenced by a policy to determine how specified activity should be detected or blocked. |
+| [Rollback](#4-endpoint-security-management-15) | Returning a change to a known acceptable state when results do not meet defined conditions. A valid rollback also accounts for data changed in the meantime. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Alert](#signed-admin-tool-alert) | A detection output identifying an event or pattern that warrants assessment. |
+| [Triage](#signed-admin-tool-alert) | Initial assessment of a case to determine its urgency, scope and next investigative step. |
+
 ## Places to learn
 
 This is not a complete list, and it is not meant to be consumed in full. Use the blueprint and official XDR path as the spine, then select query, endpoint, forensics, and incident resources for measured gaps. Record tenant/release because schemas, profiles, actions, and UI evolve.

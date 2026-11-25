@@ -13,10 +13,14 @@ upcoming_change_checked: 2026-10-28
 
 # AZ-104 Microsoft Azure Administrator Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-03.md#az-104) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-104-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-03.md#az-104)
+
+**English outline comparison, November 20, 2026.** The current page displays the October 26, 2023 edition. The library retains the later April 17, 2026 outline and its 82 tasks. Practice blob and container soft delete separately from Azure Files recovery. Distinguish VM encryption at host from legacy Azure Disk Encryption. [Compared editions](../docs/research/2026-11-20-microsoft-refresh-group-03.md#az-104).
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-03.md#az-104) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-104-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104) is authoritative.
 
 **Current baseline:** Skills measured as of April 17, 2026<br>
-**Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
+**Version check.** Microsoft provides no confirmed delivery transition date to explain the older edition currently displayed.<br>
 **Official source:** [AZ-104 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104)
 
 The September 28 [deep review](../docs/research/2026-09-28-az-104-deep-review.md) maps all **82 detailed objectives in 15 groups**. This edition has seven worked examples, ten labs and 48 explained original checks. The calculations were verified locally; no tenant, cloud resource, deployment, paid lesson or practice assessment was exercised.
@@ -182,6 +186,8 @@ Storage access options include Microsoft Entra authorization with Azure RBAC, ac
 Regenerate keys deliberately: identify every consumer, move consumers to the alternate key, rotate the old key, and verify. Rotating a key invalidates SAS tokens signed with that key.
 
 #### Identity-based Azure Files access
+
+**Practice check.** For an application running on a VM that reads an SMB Azure file share, identify the VM's managed identity and authorize it to the share. The same storage account can support end-user identities. The two principals authenticate independently, so success as one does not validate the other's permissions. [Use Managed Identities with Azure Files | Microsoft Learn](https://learn.microsoft.com/en-us/azure/storage/files/files-managed-identities)
 
 [Azure Files SMB identity authentication](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-active-directory-overview) needs a supported identity source, share-level permissions, file/directory permissions, a prepared client and network/DNS reachability. The user identity sources are AD DS, Microsoft Entra Domain Services and Microsoft Entra Kerberos; select one per storage account. Client/identity support differs, including preview combinations. This SMB design is not NFS identity authorization. A successful mount or a share role alone does not prove access to every file. Diagnose ticket acquisition, share permissions and directory ACLs separately.
 
@@ -750,7 +756,84 @@ You are approaching readiness when you can:
 
 ---
 
+## Key terms and phrases
+
+**Manage Azure identities and governance (20–25%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Security principal](#microsoft-entra-identities) | An identity, such as a user, group or service principal, that can receive permissions. |
+| [Managed identity](#microsoft-entra-identities) | An identity managed by Azure that a workload can use to request access tokens without storing a client secret. |
+| [Role assignment](#azure-rbac) | A grant that gives a principal a defined Azure role at a particular scope. |
+| [Role definition](#azure-rbac) | The list of allowed and excluded operations that can be granted through an Azure role assignment. |
+| [Scope](#azure-rbac) | The management group, subscription, resource group or resource at which an Azure access grant applies. |
+| [Inheritance](#azure-rbac) | The effect by which access granted on a parent Azure scope also applies to resources below it. |
+| [Resource lock](#policy-locks-tags-and-hierarchy) | A control that restricts deletion or modification through Azure's management plane. |
+| [Azure Policy](#policy-locks-tags-and-hierarchy) | A governance service that evaluates whether resources meet assigned rules and can enforce supported effects. |
+| [Tag](#policy-locks-tags-and-hierarchy) | A key-value label attached to resources or scopes to organize ownership, environment or cost reporting. |
+| [Resource group](#policy-locks-tags-and-hierarchy) | A management container in a subscription for related resources that can share lifecycle and access controls. |
+| [Policy initiative](#policy-locks-tags-and-hierarchy) | A group of related policy definitions assigned and assessed together. |
+| [Management group](#subscriptions-costs-and-management-groups) | A governance scope above subscriptions where inherited access and policy can be organized. |
+| [Subscription](#subscriptions-costs-and-management-groups) | An Azure billing and management boundary in which resources are deployed. |
+| [Budget](#subscriptions-costs-and-management-groups) | A spending threshold used to track costs and trigger alerts when actual or forecast costs reach it. |
+
+**Implement and manage storage (15–20%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Shared access signature (SAS)](#authorization-and-network-access-are-separate-gates) | A signed authorization token that grants scoped and time-limited access to specified Azure Storage resources. |
+| [Private endpoint](#firewalls-service-endpoints-and-private-endpoints) | A network interface with a private IP address through which a virtual network reaches a specific supported service resource. |
+| [Service endpoint](#firewalls-service-endpoints-and-private-endpoints) | A subnet configuration that lets a supported Azure service recognize traffic coming from that virtual network. |
+| [Locally redundant storage (LRS)](#accounts-redundancy-encryption-and-replication) | Replication across multiple storage copies in one physical location within the primary region. |
+| [Zone-redundant storage (ZRS)](#accounts-redundancy-encryption-and-replication) | Replication of storage data across availability zones within the primary region. |
+| [Geo-redundant storage (GRS)](#accounts-redundancy-encryption-and-replication) | Replication to a secondary region in addition to local copies in the primary region. |
+| [Blob versioning](#blob-and-file-data-protection) | Retention of successive versions of a blob so an earlier state can be identified and recovered. |
+| [Soft delete](#blob-and-file-data-protection) | Retention of deleted items for a recovery interval so eligible deletions can be reversed. |
+| [Blob lifecycle policy](#blob-and-file-data-protection) | Rules that transition or delete eligible blobs based on conditions such as age or access tier. |
+
+**Deploy and manage compute resources (20–25%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Bicep](#arm-templates-and-bicep) | A declarative language for describing Azure resources and their dependencies in repeatable deployments. |
+| [ARM template](#arm-templates-and-bicep) | A JSON declaration of Azure resources and their intended configuration for Resource Manager deployment. |
+| [Parameter](#arm-templates-and-bicep) | A value supplied at deployment time so the same template can be reused with different settings. |
+| [Incremental deployment](#incremental-deployment-is-not-a-property-patch) | An ARM deployment mode that creates or updates declared resources while generally retaining undeclared resources. |
+| [Availability set](#virtual-machines) | A grouping that distributes virtual machines across fault and update domains for resilience within a datacenter deployment. |
+| [VM scale set](#virtual-machines) | A set of similarly configured virtual machines that can be managed and scaled together. |
+| [Managed disk](#virtual-machines) | An Azure-managed block storage resource attached to a VM as an operating system or data disk. |
+| [App Service plan](#containers-and-application-platforms) | The compute resources and capacity settings that host one or more App Service apps. |
+| [Deployment slot](#app-service-boundaries-worth-testing) | A separately addressable App Service environment used to stage and validate a version before swapping traffic. |
+
+**Implement and manage virtual networking (15–20%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Virtual network peering](#addressing-subnets-peering-and-routes) | A connection that lets two Azure virtual networks route traffic privately across their address spaces. |
+| [Subnet](#addressing-subnets-peering-and-routes) | A subdivision of a virtual network's address space used to place and manage network interfaces. |
+| [User-defined route](#addressing-subnets-peering-and-routes) | A route-table entry specifying a destination prefix and next hop for traffic from an associated subnet. |
+| [Network security group (NSG)](#nsgs-and-application-security-groups) | A set of prioritized inbound and outbound traffic rules applied to a subnet or network interface. |
+| [Application security group (ASG)](#nsgs-and-application-security-groups) | A named grouping of network interfaces used as sources or destinations in NSG rules. |
+| [Azure Bastion](#bastion-service-endpoints-and-private-endpoints) | A managed service for reaching virtual machines over RDP or SSH without assigning public IP addresses to the guests. |
+| [DNS record](#dns-and-load-balancing) | An entry associating a name with data, such as an address or another canonical name. |
+| [Health probe](#dns-and-load-balancing) | A periodic test a load balancer uses to determine which backends can receive traffic. |
+
+**Monitor and maintain Azure resources (10–15%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Metric](#metrics-logs-alerts-and-insights) | A numerical time series, such as CPU usage, that can be graphed or evaluated against alert criteria. |
+| [Activity log](#metrics-logs-alerts-and-insights) | The subscription-level record of Azure management operations and related events. |
+| [Log Analytics workspace](#metrics-logs-alerts-and-insights) | A destination for collected logs where operators can run queries and investigate events. |
+| [Alert rule](#metrics-logs-alerts-and-insights) | A condition evaluated against monitoring data that creates an alert when its criteria are met. |
+| [Action group](#metrics-logs-alerts-and-insights) | A reusable set of notification or automation responses attached to Azure Monitor alerts. |
+| [Recovery point](#backup-and-recovery) | A retained state from which a protected workload or file can be restored. |
+| [Recovery time objective (RTO)](#backup-and-recovery) | The target for how long a workload may remain unavailable after a disruption. |
+| [Recovery point objective (RPO)](#backup-and-recovery) | The target for how far back in time recovered data may be relative to the disruption. |
+
 ## Places to learn
+
+**Suggested practice.** Predict how a tagging policy treats a resource at the assignment scope, then distinguish an existing-resource check from the result of a new deployment. About 30 minutes for the exercise (publisher estimate); provisioning or setup can add time. [Lab 02b - Manage Governance via Azure Policy](https://microsoftlearning.github.io/AZ-104-MicrosoftAzureAdministrator/Instructions/Labs/LAB_02b-Manage_Governance_via_Azure_Policy.html)
 
 This is a curated starting set, not a complete list. Do **not** consume every resource. Pick one structured spine, use documentation for weak objectives, do the labs, and add one assessment source. Time estimates are planning ranges, not guarantees; playback speed, prior experience, exercises, lab cleanup, and vendor changes matter. Verify the current blueprint before buying or starting a course.
 

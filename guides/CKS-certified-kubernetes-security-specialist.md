@@ -530,6 +530,92 @@ Use only disposable or explicitly authorized environments; snapshots and console
 45. **Does enabling at-rest encryption rewrite every existing Secret?** No; existing stored data must be migrated and verified before retiring old recovery keys.
 46. **Can a Deployment exist in an enforcing namespace while its Pods are denied?** Yes; enforce acts on resulting Pods, while audit/warn also check workload templates.
 
+## Key terms and phrases
+
+**Cluster setup**
+
+| Term or phrase | Meaning |
+|---|---|
+| [NetworkPolicy](#network-isolation-and-secure-cluster-paths) | A declaration of which ingress or egress connections are allowed for selected Pods, enforced by a supporting network implementation. |
+| [Label selector](#network-isolation-and-secure-cluster-paths) | A filter that selects Kubernetes objects by their labels. A Service can exist with no matching Pods when its selector is wrong. |
+| [Node](#network-isolation-and-secure-cluster-paths) | A cluster machine that runs Pods using a kubelet and container runtime. Readiness of the node and readiness of its Pods are separate signals. |
+| [etcd](#cis-benchmark-review) | The distributed key-value store used for Kubernetes control-plane state. Recovering that state requires an appropriate snapshot and recovery procedure. |
+| [Scheduler](#cis-benchmark-review) | The control-plane component that assigns unscheduled Pods to suitable nodes using resource needs, constraints and scheduling policy. |
+| [Controller](#ingress-tls-and-platform-integrity) | A control loop that watches cluster state and acts to maintain a resource’s intended condition, such as a desired replica count. |
+| [Ingress](#ingress-tls-and-platform-integrity) | A Kubernetes resource declaring HTTP routing rules, such as host and path matches. A compatible controller is needed to implement them. |
+| [Repository metadata](#ingress-tls-and-platform-integrity) | The catalog of packages, versions and related information a package manager uses to resolve installation requests. |
+
+**Cluster hardening**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Least privilege](#rbac-with-escalation-awareness) | Restricting a workload to the permissions its task needs. A service that reads one ConfigMap can have that named read permission without rights to read Secrets. |
+| [ClusterRole](#rbac-with-escalation-awareness) | A non-namespaced definition of Kubernetes API permissions. Its binding determines where the permissions apply. |
+| [Role-based access control (RBAC)](#rbac-with-escalation-awareness) | Assigning permissions to roles and assigning identities to those roles. An inappropriate role assignment can grant every permission the role carries. |
+| [ServiceAccount](#serviceaccounts-and-api-exposure) | A namespaced identity a workload can use to authenticate to the Kubernetes API. |
+| [API server](#serviceaccounts-and-api-exposure) | The control-plane component that accepts Kubernetes API requests and coordinates access to cluster state. |
+| [Authentication](#serviceaccounts-and-api-exposure) | Checking that a claimant controls an authenticator bound to the claimed identity. It precedes the separate decision about permitted actions. |
+| [Authorization](#serviceaccounts-and-api-exposure) | Determining whether a given identity may perform a specific action on the particular resource requested. |
+| [Image digest](#upgrade-to-remove-known-vulnerabilities) | A cryptographic identifier bound to image contents. Pinning a digest selects a specific artifact even if a tag later changes. |
+
+**System hardening**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Attack surface](#reduce-host-and-identity-attack-surface) | The set of reachable services, interfaces, identities and other points that expose a system to interaction or harm. |
+| [Kernel module](#reduce-host-and-identity-attack-surface) | Code that extends the running kernel, often to supply a hardware driver or filesystem implementation. |
+| [seccomp](#apparmor-and-seccomp) | A Linux mechanism that filters which system calls a process may make. |
+| [AppArmor](#apparmor-and-seccomp) | A Linux security mechanism that applies profiles constraining the permitted operations of a program, including access to files and capabilities. |
+| [Kernel](#apparmor-and-seccomp) | The privileged core of the operating system that manages processors, memory, devices and system calls for user-space programs. |
+| [kubelet](#apparmor-and-seccomp) | The node agent that works with the container runtime to run and monitor Pods assigned to that node. |
+
+**Minimize microservice vulnerabilities**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Pod Security Standards](#pod-security-standards-and-workload-security) | Defined security profiles that specify which Pod settings are allowed at different levels of restriction. |
+| [Namespace](#pod-security-standards-and-workload-security) | A Kubernetes scope for the names of many resources and for controls such as Roles and ResourceQuotas. A namespace alone does not isolate all traffic. |
+| [Pod](#pod-security-standards-and-workload-security) | The smallest deployable Kubernetes unit. Its containers share a network identity and can share declared volumes for the lifetime of that Pod. |
+| [Pod Security Admission](#pod-security-standards-and-workload-security) | The built-in mechanism for applying Pod Security Standards at the namespace level through enforcement, audit or warning. |
+| [Encryption at rest](#secrets) | Protecting stored data with encryption, such as files, disks or backups. A caller authorized to decrypt can still access the plaintext. |
+| [Environment variable](#secrets) | A named value supplied in the environment of a process, such as a search path. Child processes inherit exported variables from their parent. |
+| [Secret](#secrets) | A Kubernetes resource for sensitive values such as credentials. Access controls and encryption configuration matter because encoding alone is not secrecy. |
+| [Sandbox](#multi-tenancy-and-sandboxing) | An isolated environment for observing or restricting a program’s behavior. Its conclusions depend on the inputs, visibility and constraints of the environment. |
+| [Tenant](#multi-tenancy-and-sandboxing) | An administrative or customer boundary in a shared service. Data, identities, configurations and actions must stay within the intended tenant. |
+| [Encryption](#pod-to-pod-encryption) | Reversibly transforming data with a key to keep the plaintext unavailable to parties lacking the appropriate decryption capability. |
+| [Mutual TLS (mTLS)](#pod-to-pod-encryption) | TLS in which both peers present certificates and verify one another. Successful authentication still leaves authorization to policy. |
+
+**Supply chain security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Build provenance](#minimal-images-and-build-provenance) | Evidence connecting a built artifact to its source, build process and inputs. |
+| [Package manager](#minimal-images-and-build-provenance) | Software that installs, updates and removes packages while tracking metadata and dependencies. |
+| [Pull request](#minimal-images-and-build-provenance) | A proposed change submitted for review before integration. Review can consider both the diff and automated verification results. |
+| [Image signature](#registries-signatures-and-admission) | Cryptographic evidence binding a signer to a particular image digest. Trust depends on verifying the expected signer and artifact. |
+| [Admission control](#registries-signatures-and-admission) | Checks or transformations applied to eligible API requests after authorization and before objects are persisted. |
+| [Container registry](#registries-signatures-and-admission) | A service that stores and distributes container images, with access and integrity controls for publishing and pulling content. |
+| [Log retention](#registries-signatures-and-admission) | The period for which records remain available for an investigation or other defined purpose. Missing results outside that period cannot establish inactivity. |
+| [Schema](#offline-exercise-signature-artifact-and-approval-are-separate) | A definition of expected data structure, field types and constraints. A syntactically valid payload may still fail schema or business validation. |
+| [False positive](#static-analysis-and-vulnerability-decisions) | An alert that classifies benign activity as a target condition. Repeated benign alerts can distort operational priorities. |
+| [Static analysis](#static-analysis-and-vulnerability-decisions) | Examining code or configuration without executing it to identify potential defects or policy violations. |
+| [Vulnerability](#static-analysis-and-vulnerability-decisions) | A weakness in design, configuration, process or implementation that can affect a security objective under applicable conditions. |
+
+**Monitoring, logging and runtime security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [DaemonSet](#behavioral-analytics-and-threat-detection) | A controller that maintains a copy of a Pod on each eligible node, commonly for node-level agents or networking. |
+| [Process](#behavioral-analytics-and-threat-detection) | A running program instance with its own identifier, credentials and execution state. |
+| [Eradication](#investigation-and-attack-phases) | Removing the cause and remaining artifacts of an incident before or alongside controlled restoration of normal operation. |
+| [Incident](#investigation-and-attack-phases) | A case representing a security event or set of related events requiring coordinated investigation and response. |
+| [Container](#runtime-immutability) | An isolated application process and its dependencies that ordinarily shares the host kernel. Its image is the packaged input used to start it. |
+| [Filesystem](#runtime-immutability) | The structures that organize files and directories on storage or expose a virtual hierarchy. A larger block device alone does not always enlarge its filesystem. |
+| [Audit event](#kubernetes-audit-logging) | A record of an API request produced according to the cluster audit policy, useful for reconstructing who did what and when. |
+| [Audit policy](#kubernetes-audit-logging) | Kubernetes rules determining which API events are logged and at what level. Rule order and scope affect what evidence is retained. |
+| [Webhook](#kubernetes-audit-logging) | An event-driven message sent to a configured receiver. Retries or repeated delivery mean a consumer must recognize duplicate actions. |
+| [ConfigMap](#offline-exercise-audit-rule-order) | A Kubernetes object for nonsecret configuration values supplied to workloads through environment variables or mounted files. |
+
 ## Places to learn
 
 | Resource | Access | Estimated time |

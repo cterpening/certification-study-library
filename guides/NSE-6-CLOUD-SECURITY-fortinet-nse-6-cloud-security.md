@@ -219,6 +219,83 @@ Use only owned or authorized nonproduction cloud accounts, mail domains, endpoin
 31. Match job, available lab/service, current exam/version, experience, and intended NSE 7 track.
 32. Dumps, leaked/recalled/“real” questions, guaranteed matches, and unauthorized collections.
 
+## Key terms and phrases
+These terms span several electives. Use the linked sections to find the ones that apply to your chosen exam.
+
+**Credential and shared cloud-service foundation**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Rollback](#1-credential-and-shared-cloud-service-foundation) | Returning a change to a known acceptable state when results do not meet defined conditions. A valid rollback also accounts for data changed in the meantime. |
+| [Telemetry](#1-credential-and-shared-cloud-service-foundation) | Logs, events and measurements supplied by managed systems. Customer attribution and collection health determine whether the records are usable. |
+| [Tenant](#1-credential-and-shared-cloud-service-foundation) | An administrative or customer boundary in a shared service. Data, identities, configurations and actions must stay within the intended tenant. |
+
+**FortiCNAPP Analyst lane**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Fortinet Security Fabric](#architecture-and-onboarding) | Fortinet’s framework for integrating products so they can exchange context and coordinate visibility or policy-driven actions. |
+| [Process](#architecture-and-onboarding) | A running program instance with its own identifier, credentials and execution state. |
+| [Service account](#architecture-and-onboarding) | A nonhuman identity used by software or automation. Scope, credential lifecycle and ownership govern what happens when it is compromised or retired. |
+| [Cloud security posture management (CSPM)](#end-to-end-risk-management) | Assessment of cloud configuration and exposure against expected security settings. |
+| [Cloud infrastructure entitlement management (CIEM)](#end-to-end-risk-management) | Analysis of which cloud identities can perform which actions and where permissions are excessive. |
+| [Cloud workload protection platform (CWPP)](#end-to-end-risk-management) | Protection and monitoring focused on running workloads, such as virtual machines and containers. |
+| [Cloud-native application protection platform (CNAPP)](#end-to-end-risk-management) | A set of integrated cloud security capabilities that relates build-time, configuration, entitlement and runtime findings for prioritization. |
+| [Attack path](#end-to-end-risk-management) | A sequence of exposures and permissions that could connect an initial access point to a valuable resource. Each link needs validation before prioritization. |
+| [Entitlement](#end-to-end-risk-management) | The access an identity can exercise under its assigned roles and policies. Effective entitlement may exceed what the owner expects. |
+| [Least privilege](#end-to-end-risk-management) | Giving an identity only the permissions needed for its task, for as long as it needs them. |
+| [Vulnerability](#end-to-end-risk-management) | A weakness that can expose an asset to harm. Risk also depends on who or what could act on it and the consequences. |
+| [Kubernetes security posture management (KSPM)](#end-to-end-risk-management) | Assessment of Kubernetes configuration and policy against expected security conditions. |
+| [Shift left](#shift-left-detection-and-response) | Moving a security check earlier in delivery, such as checking a proposed infrastructure change before deployment. |
+| [Alert](#shift-left-detection-and-response) | A notification that an observed condition met a detection criterion. An analyst needs context before treating it as an incident. |
+| [Container](#shift-left-detection-and-response) | An isolated application process and its dependencies that ordinarily shares the host kernel. Its image is the packaged input used to start it. |
+| [Idempotence](#shift-left-detection-and-response) | Making an operation safe to repeat without accumulating unintended effects. A retried request to create one case should still yield one case. |
+| [Software composition analysis (SCA)](#shift-left-detection-and-response) | Identifying third-party components and assessing risks attached to resolved dependencies, such as known vulnerabilities or license restrictions. |
+
+**FortiMail Administrator lane**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Mail transfer agent (MTA)](#smtp-flow-and-deployment-modes) | A system that accepts and forwards email using SMTP. A message can pass through several MTAs before delivery. |
+| [Deployment mode](#smtp-flow-and-deployment-modes) | How a security service is positioned relative to the traffic it observes or controls. Inline and out-of-path placement offer different enforcement options. |
+| [High availability (HA)](#smtp-flow-and-deployment-modes) | A deployment that lets a peer take over when a device fails. The peer still needs working network paths and a valid configuration. |
+| [Quarantine](#smtp-flow-and-deployment-modes) | A containment action that restricts a device’s connectivity while responders investigate or remediate it. |
+| [Simple Mail Transfer Protocol (SMTP)](#smtp-flow-and-deployment-modes) | The protocol used to submit or relay mail between systems. Accepting an SMTP connection differs from successfully delivering the message. |
+| [FortiMail](#smtp-flow-and-deployment-modes) | An email security platform that inspects and applies policy to messages in its configured delivery path. |
+| [Open relay](#authentication-policy-and-filtering) | A mail server that allows unauthorized senders to relay messages to external recipients. |
+| [Authentication](#authentication-policy-and-filtering) | The check that establishes who a user or device is. Authorization determines what that identity may do next. |
+| [Domain authentication](#authentication-policy-and-filtering) | Evidence that a sender or message is associated with an authorized domain. Passing a domain check alone cannot establish that the message is benign. |
+| [Latency](#authentication-policy-and-filtering) | Elapsed time for data or a request to travel a defined path. Specify whether the measure is one-way delay or round-trip time. |
+| [Recipient verification](#authentication-policy-and-filtering) | Checking whether a mail recipient is valid before accepting or relaying the message, under the delivery policy in use. |
+| [Sender identity](#authentication-policy-and-filtering) | The identity claimed by an email sender. The visible From address, SMTP envelope sender and authenticated domain can differ. |
+| [Spam filtering](#authentication-policy-and-filtering) | Evaluating a message, sender and delivery context to identify unsolicited or unwanted mail and apply the configured action. |
+| [Encryption](#encryption-and-operations) | A reversible transformation that protects readable data using a key. Someone with the appropriate key can recover the original. |
+
+**FortiDDoS Administrator lane**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Traffic baseline](#attack-concepts-and-traffic-baselines) | A measured range of ordinary service traffic used to distinguish a material change from expected demand. |
+| [Rate limiting](#attack-concepts-and-traffic-baselines) | Restricting traffic or requests over a time interval to protect capacity. An overly broad limit can also affect legitimate users. |
+| [Application-layer attack](#attack-concepts-and-traffic-baselines) | Activity that exhausts or disrupts a service through application requests, which may be costly even when raw traffic volume is modest. |
+| [Failover](#attack-concepts-and-traffic-baselines) | Transfer of service to another HA member after a failure. Some sessions may need to reconnect. |
+| [State exhaustion](#attack-concepts-and-traffic-baselines) | A denial-of-service condition in which a device or service runs out of finite tracking capacity, such as connection-state entries. |
+| [Volumetric attack](#attack-concepts-and-traffic-baselines) | A denial-of-service condition driven by traffic volume consuming finite capacity, such as an upstream link. |
+| [FortiDDoS](#attack-concepts-and-traffic-baselines) | A platform that monitors and mitigates traffic patterns associated with denial of service. Service-specific baselines help distinguish ordinary surges. |
+| [Access control list (ACL)](#deployment-and-mitigation-policy) | An ordered set of rules that matches traffic attributes and permits or denies traffic according to the platform’s evaluation rules. |
+| [Mitigation policy](#deployment-and-mitigation-policy) | Rules defining which protection actions apply to which traffic under specified conditions, with scope chosen to limit disruption to legitimate service. |
+| [Single point of failure](#deployment-and-mitigation-policy) | A component or dependency whose loss alone can interrupt the service, even when other layers have redundant capacity. |
+| [Change management](#monitoring-and-post-attack-analysis) | The process for assessing, approving, implementing and reviewing changes so risks and outcomes remain accountable. |
+| [False positive](#monitoring-and-post-attack-analysis) | A detection that matches benign activity. Tuning requires understanding which condition made it match. |
+| [FortiView](#monitoring-and-post-attack-analysis) | A set of views that summarize activity from available log data and let an analyst narrow a result to its underlying records. |
+| [Post-attack analysis](#monitoring-and-post-attack-analysis) | Reviewing traffic, service condition and mitigation outcomes after a disruption to explain impact and improve the baseline or response. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Multicloud](#scenario-1-multicloud-exposed-workload) | Use of services from multiple cloud providers. Common objectives can require different identities, APIs or controls in each provider. |
+
 ## Places to learn
 
 This is a selective starting set, not a complete list and not a prescription to consume everything. Choose the selected lane's official blueprint, documentation, and hands-on work. Times are planning estimates unless the publisher lists them.

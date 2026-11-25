@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "audio_file": "episode.mp3",
+  "mp3_sha256": "298f7ba2c663c17fb4f2f2a9c085ea1885c1e66cb0f9cfecb98e9c53f5ca39ea",
+  "package_manifest_sha256": "0128dce7ca20366139a6bf667c7f5dfde2bf3091537f23a903e3de8625a42791",
+  "script_sha256": "714fc8f3d91ce333dd8aa57bd5578ff0840d49114c6625c6a29e969c4af0583c",
+  "transcript_sha256": "626da85d12025c5fa270bff6f04f9046cffd88bfa3394267b4e9eefdba7ff9e3",
+  "duration_seconds": 260.102,
+  "sample_rate": 44100,
+  "channels": 1,
+  "format": "MPEG_LAYER_III",
+  "voices": {
+    "host": "F1",
+    "learner": "M1"
+  },
+  "model": "Supertone/supertonic-3",
+  "model_revision": "3cadd1ee6394adea1bd021217a0e650ede09a323",
+  "license_url": "https://huggingface.co/Supertone/supertonic-3/blob/3cadd1ee6394adea1bd021217a0e650ede09a323/LICENSE",
+  "engine": "offline ONNX Runtime CPU",
+  "supertonic_version": "1.3.1",
+  "onnxruntime_version": "1.32.0",
+  "soundfile_version": "0.14.0",
+  "synthesis": {
+    "language": "en",
+    "speed": 1.05,
+    "steps": 8,
+    "global_gain": 1.45781,
+    "mp3_bitrate_mode": "variable",
+    "mp3_compression_level": 0.45
+  },
+  "notice": "The two speakers are synthetic. Independent AI script review is complete. Human content and listening review are pending.",
+  "chapters": [
+    {
+      "title": "Introduction",
+      "start_seconds": 0.16
+    },
+    {
+      "title": "Who patches the ticket counter?",
+      "start_seconds": 27.98
+    },
+    {
+      "title": "Next steps",
+      "start_seconds": 234.8
+    }
+  ],
+  "sources_checked_for_recording": [
+    "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900",
+    "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility",
+    "https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/compute-decision-tree",
+    "https://learn.microsoft.com/en-us/azure/virtual-machines/overview"
+  ],
+  "audio_check": {
+    "audio_sha256": "298f7ba2c663c17fb4f2f2a9c085ea1885c1e66cb0f9cfecb98e9c53f5ca39ea",
+    "method": "Full independent CPU English ASR against the reviewed script, final audio-text alignment and editorial inspection of flagged differences. Local algorithmic delivery check only.",
+    "recognizer": "faster-whisper 1.2.1 / CTranslate2 int8, Systran/faster-whisper-base.en@3d3d5dee26484f91867d81cb899cfcf72b96be6c",
+    "reference_word_count_for_alignment": 687,
+    "word_error_rate_before_adjudication": 0.0131,
+    "opening_and_closing_checked": true,
+    "finding_disposition": "The finished application, managed platform and guest-maintained machine scenarios, duties, disclosure and complete ending are present. Full-episode ASR shortened the part count; independent local Windows SAPI recovered “part two of two” from the exact opening waveform.",
+    "material_omissions_or_number_changes_outstanding": 0,
+    "human_listening_review": "pending"
+  }
+}

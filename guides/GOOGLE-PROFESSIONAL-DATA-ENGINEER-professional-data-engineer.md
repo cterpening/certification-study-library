@@ -484,6 +484,73 @@ if __name__ == '__main__':
 - **PRACTICAL DEPTH:** Forty exact public-code checks ran locally. Eight cloud labs, provider course/lab interiors and independent human review remain pending. Public titles and release dates cannot prove a paid lesson's depth or accuracy.
 - This is original public-source synthesis. No recalled exam item, proprietary question bank, dump, private data or paid course content was used. Official sample questions were observed only through their public form landing page.
 
+## Key terms and phrases
+
+**Designing data processing systems**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Data contract](#establish-the-data-contract-and-trust-boundaries) | An agreement on a dataset's meaning, schema, ownership and delivery expectations so producers and consumers can evolve it safely. |
+| [Encryption in transit](#establish-the-data-contract-and-trust-boundaries) | Protecting information while it travels between endpoints, typically through an authenticated encrypted connection. |
+| [VPC Service Controls](#establish-the-data-contract-and-trust-boundaries) | Sets a perimeter for supported Google services to reduce unauthorized data movement. IAM permission and the perimeter decision are distinct. |
+| [Organization policy](#establish-the-data-contract-and-trust-boundaries) | A set of constraints on how resources may be configured within the hierarchy, such as limiting acceptable locations. |
+| [Organization, folder and project](#establish-the-data-contract-and-trust-boundaries) | Organization is the top-level ownership boundary, folders group resources, and projects hold workloads. Policies can be inherited down this hierarchy. |
+| [Schema evolution](#establish-the-data-contract-and-trust-boundaries) | Changing a dataset's structure over time. Adding an optional field and renaming a required field have different effects on existing readers. |
+| [Encryption at rest](#establish-the-data-contract-and-trust-boundaries) | Protecting stored data with encryption. Who can use the decryption key is part of the access decision. |
+| [Lineage](#establish-the-data-contract-and-trust-boundaries) | A record of the sources and transformations that produced data or model artifacts, useful when tracing an error back to a changed input. |
+| [Customer-managed encryption key (CMEK)](#establish-the-data-contract-and-trust-boundaries) | A key the customer manages for a supported service. Key location, service identity access and key availability can all affect the protected workload. |
+| [Identity and Access Management (IAM) role](#establish-the-data-contract-and-trust-boundaries) | A named collection of permissions. A policy binding grants the role to a principal at a chosen resource scope. |
+| [Stream processing](#design-for-fidelity-reliability-and-portability) | Processing events as they arrive, usually with explicit decisions about event time, windows and late records. |
+| [Data quality rule](#design-for-fidelity-reliability-and-portability) | A test of an explicit data expectation, for example that daily order IDs are unique or that each record has a valid timestamp. |
+| [Backpressure](#design-for-fidelity-reliability-and-portability) | A downstream stage forcing producers to slow or pause. If 120 events arrive per second and only 100 leave, backlog initially grows by 20 per second. |
+| [Idempotency](#design-for-fidelity-reliability-and-portability) | The property that retrying the same intended operation does not apply its effect twice. An order API can remember the request identifier. |
+| [Dataflow](#design-for-fidelity-reliability-and-portability) | A managed service for running Apache Beam batch and streaming pipelines, including windowed processing of events. |
+| [Dataproc](#design-for-fidelity-reliability-and-portability) | A managed platform for Spark and Hadoop workloads, useful for moving existing distributed data processing jobs. |
+| [Replay](#define-what-a-replay-is-allowed-to-change) | Processing previously seen input again, for example to recover from failure. The design must specify which outputs may be written a second time. |
+| [Schema registry](#plan-migrations) | A catalog of versioned record definitions that producers and consumers can use to check compatibility. |
+
+**Ingesting and processing**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Change data capture (CDC)](#select-the-ingestion-pattern) | Ingesting the changes committed at a source so a downstream dataset can track updates and deletions after an initial load. |
+| [Pub/Sub](#select-the-ingestion-pattern) | A messaging service in which publishers send messages to a topic and subscriptions track delivery to consumers independently. |
+| [Service quota](#select-the-ingestion-pattern) | A limit on resource use or request volume within a specified scope. Reaching it can block work even when funds are available. |
+| [Workload identity](#select-the-ingestion-pattern) | An identity for software such as a service or batch job. It enables permissions to follow the workload itself. |
+| [Event time](#build-batch-and-stream-pipelines) | When an event actually occurred. A delayed event may be processed much later and still belong in an earlier reporting window. |
+| [Watermark](#build-batch-and-stream-pipelines) | An estimate of progress in event time that a streaming system uses when deciding when to emit windowed results. |
+| [Deduplication](#build-batch-and-stream-pipelines) | Identifying repeated representations of one logical event and retaining or applying it according to an explicit identity rule. |
+| [BigQuery](#distinguish-processing-commit-and-business-effects) | Google's managed analytical warehouse for querying large datasets with SQL. Column selection and partition filters help reduce work. |
+
+**Storing data**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Cloud Storage](#choose-from-requirements-not-product-familiarity) | Stores objects in buckets. A file-like object name does not by itself give an application the behavior of a shared POSIX file system. |
+| [Cloud SQL](#choose-from-requirements-not-product-familiarity) | A managed relational database service for supported SQL engines. It suits applications that depend on relational queries and transactions. |
+| [Firestore](#choose-from-requirements-not-product-familiarity) | A managed document database storing records in collections. Document boundaries influence what an application can retrieve efficiently. |
+| [Bigtable](#choose-from-requirements-not-product-familiarity) | A wide-column store optimized for high-throughput access by row key and key range. Start the data model with the main read and write paths. |
+| [Spanner](#choose-from-requirements-not-product-familiarity) | A distributed relational database for workloads that need transactions and horizontal scale. Schema and key design still shape performance. |
+| [Grain](#prove-the-key-and-the-grain) | What one row represents. An order with three lines can occupy three rows at line-item grain. Counting those rows as orders would triple-count that purchase. |
+
+**Preparing and using data for analysis**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Partition pruning](#bi-and-query-performance) | Using a filter on the partitioning field to skip irrelevant partitions and reduce the data scanned by a query. |
+| [Sensitive Data Protection](#bi-and-query-performance) | Inspects or transforms sensitive information using configured detectors and rules, such as replacing identifiers before analysis. |
+| [Retrieval-augmented generation (RAG)](#aiml-and-rag-preparation) | A design that retrieves relevant material and places it in the model's context before it generates the answer. |
+
+**Maintaining and automating workloads**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Cloud Monitoring](#repeatability-and-operations) | Tracks time-series measurements and alerts on conditions such as elevated error rate or latency. |
+| [Checkpoint](#repeatability-and-operations) | Saved progress or state from which processing can resume after a failure. A replay design must also control duplicate downstream effects. |
+| [Service level agreement (SLA)](#repeatability-and-operations) | A service commitment with agreed terms and consequences. Its measurement conditions must be read before comparing it with an internal reliability target. |
+| [Point-in-time recovery](#separate-corruption-recovery-from-regional-continuity) | Restoring data to a selected earlier state after a damaging change. Regional failover addresses a different failure. |
+| [Failover](#separate-corruption-recovery-from-regional-continuity) | Moving service to an alternative when the current serving location or component becomes unavailable. |
+
 ## Places to learn
 
 This is **not a complete list**, and it is not meant to be consumed in full. Select one route, map it to the five standard-exam domains, and use first-party docs/labs for gaps. Public metadata was checked October 28, 2026. Suggested reading/practice budgets are planning estimates, not measured completion times.

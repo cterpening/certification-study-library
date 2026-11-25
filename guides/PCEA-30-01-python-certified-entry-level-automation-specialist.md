@@ -951,6 +951,74 @@ if __name__ == "__main__":
 - [Official PCEA credential page](https://pythoninstitute.org/pcea) currently lists PCEA-30-01 as active and contains no limited-availability/small-market-trial/beta claim; this dated status replaces the stale September wording.
 - Technical behavior: [Python stdlib](https://docs.python.org/3/library/), [Requests](https://requests.readthedocs.io/en/latest/), [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/), and [schedule](https://schedule.readthedocs.io/en/stable/).
 
+## Key terms and phrases
+
+**Automation fundamentals**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Return on investment (ROI)](#selecting-work-and-calculating-value) | Net benefit divided by cost over a stated period. Count implementation, operation and maintenance when comparing the script with manual work. |
+| [Orchestration](#selecting-work-and-calculating-value) | Coordinating workflow order, dependencies, failure handling and reporting across tasks or tools. |
+
+**Command-line automation**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Environment variable](#2-command-line-automation-195) | A named value inherited by a process from its environment. Its value and availability may differ under a scheduler. |
+| [Standard output](#2-command-line-automation-195) | The conventional stream for a command’s primary results, which other programs can capture or pipe onward. |
+| [Exit status](#a-reproducible-command-contract) | A value a process returns to its caller to signal how the command finished. Automation can branch on it. |
+| [Standard error](#a-reproducible-command-contract) | A separate output stream for diagnostics, allowing normal results to remain usable by the next tool. |
+| [Credential](#a-reproducible-command-contract) | Evidence used to authenticate, such as a key or token. Credentials should stay out of command output and logs. |
+| [Timeout](#a-reproducible-command-contract) | A limit on how long an operation waits before reporting a failure, allowing the caller to choose a bounded response. |
+| [Working directory](#a-reproducible-command-contract) | The directory a process uses to resolve relative paths, which may change between an interactive run and a scheduled task. |
+| [Virtual environment](#a-reproducible-command-contract) | An isolated Python environment with its own interpreter entry point and package installation location. |
+| [Script](#a-reproducible-command-contract) | A program carrying out a sequence of operations, such as reading one input file and producing one output report. |
+| [Shebang](#a-reproducible-command-contract) | A first line identifying the interpreter an operating system should use to launch an executable script on systems that support it. |
+| [Subprocess](#a-reproducible-command-contract) | A separate process started by the script. Its exit status and captured streams supply different evidence about the result. |
+
+**Logging and monitoring**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Freshness](#3-logging-and-monitoring-15) | How recent a job’s input or published output is relative to the expected schedule. |
+| [Log level](#logs-that-describe-an-outcome) | A severity assigned to a message so an operator can filter routine progress separately from warnings and errors. |
+| [Logging handler](#logs-that-describe-an-outcome) | A logging component that sends records to a destination such as a file or console. |
+| [Workflow](#logs-that-describe-an-outcome) | A series of dependent tasks with a defined result, such as validating records before combining and publishing them. |
+
+**File and data automation**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Idempotence](#4-file-and-data-automation-175) | The property that running an operation again produces the same intended state without duplicating its effects. |
+| [Atomic replacement](#data-validation-and-one-file-recovery) | Publishing a finished file by replacing the old name in one filesystem operation, so readers avoid partially written output. |
+| [Backup](#data-validation-and-one-file-recovery) | A retained copy that can be used to recover data after loss. A successful restore is stronger evidence than a completed copy job. |
+| [Serialization](#data-validation-and-one-file-recovery) | Converting structured data into a representation that can be stored or sent and later interpreted by a reader. |
+| [CSV dialect](#data-validation-and-one-file-recovery) | The field delimiter, quoting and other conventions needed to interpret a CSV file consistently. |
+| [JSON document](#data-validation-and-one-file-recovery) | A structured text value made from objects, arrays or primitives. Successful decoding does not prove it satisfies the application’s expected schema. |
+
+**Web and API automation**
+
+| Term or phrase | Meaning |
+|---|---|
+| [HTTP method](#5-web-and-api-automation-175) | The part of an HTTP request that describes the intended operation on the target resource, such as retrieving a representation with GET. |
+| [Selector](#5-web-and-api-automation-175) | A pattern identifying HTML elements to extract. A layout change can leave a previously valid selector with no matches. |
+| [Rate limit](#5-web-and-api-automation-175) | A cap on requests over a period. A client may need to wait before issuing further requests. |
+| [HTTP status code](#http-responses-and-static-html-have-different-contracts) | A numeric response that indicates how a server handled a request. The response body still needs validation before use. |
+| [TLS](#http-responses-and-static-html-have-different-contracts) | A protocol that protects data in transit and can authenticate peers when identities and certificates are validated. |
+| [Retry](#http-responses-and-static-html-have-different-contracts) | A new attempt after a failure, appropriate when the cause may be temporary and repetition is safe. |
+| [API response](#http-responses-and-static-html-have-different-contracts) | The status, headers and optional content returned by a service. A successful transport exchange does not guarantee a valid application result. |
+
+**Scheduling, notifications, and reporting**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Scheduler](#6-scheduling-notifications-and-reporting-175) | A service that starts work when a time rule or other trigger fires. Successful scheduling alone does not prove completion. |
+| [Notification](#scheduling-and-delivery-remain-separate-work) | A message sent about an automation outcome. Its delivery can fail independently of the underlying job. |
+| [Scheduler overlap](#scheduling-and-delivery-remain-separate-work) | A new scheduled invocation starting while an earlier one is still running, potentially repeating actions or competing for the same resources. |
+| [cron](#scheduling-and-delivery-remain-separate-work) | A time-based job scheduler common on Unix-like systems whose jobs run with a specified schedule and launch environment. |
+| [Task Scheduler](#scheduling-and-delivery-remain-separate-work) | The Windows facility for starting a task under selected triggers, user identity and execution conditions. |
+| [SMTP](#scheduling-and-delivery-remain-separate-work) | The mail transfer protocol used to hand a message to a mail server. Server acceptance does not establish delivery to the recipient. |
+
 ## Places to learn
 
 ### October 29, 2026 source update

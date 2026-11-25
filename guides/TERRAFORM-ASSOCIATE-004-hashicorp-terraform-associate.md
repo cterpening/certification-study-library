@@ -633,6 +633,96 @@ If you use the live service, **VERIFY CURRENT** plan availability and destroy al
 - [Terraform modules](https://developer.hashicorp.com/terraform/language/modules)
 - [HCP Terraform workspaces](https://developer.hashicorp.com/terraform/cloud-docs/workspaces)
 
+## Key terms and phrases
+
+**Infrastructure as Code with Terraform**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Infrastructure as code (IaC)](#1-infrastructure-as-code-with-terraform) | Describing desired infrastructure in versioned configuration that can be reviewed, planned and applied repeatably. |
+| [Dependency graph](#the-operating-model) | The ordering constraints Terraform derives between operations. Referencing another resource's attribute usually creates an implicit dependency. |
+| [Declarative configuration](#the-operating-model) | Describes the intended end state. Terraform compares configuration, state and provider observations to propose actions. |
+
+**Terraform fundamentals**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Provider](#terraform-cli-providers-and-provider-configurations) | A plugin that lets Terraform read and manage a particular API. Its configuration supplies details such as the target region. |
+| [Required providers](#terraform-cli-providers-and-provider-configurations) | A declaration of a module's provider dependencies, their source addresses and any version constraints. |
+| [Provider alias](#terraform-cli-providers-and-provider-configurations) | A second named configuration for a provider, such as the same cloud provider pointed at a different region. |
+| [Dependency lock file](#version-constraints-and-the-dependency-lock-file) | A record of selected provider versions and checksums that helps a team install the same provider builds. |
+| [Version constraint](#version-constraints-and-the-dependency-lock-file) | An expression limiting which dependency versions are acceptable. A dependency lock file can record a selected provider version within that range. |
+| [State](#why-state-exists) | Terraform's record tying a resource instance in configuration to an actual remote object. It lets later plans identify what Terraform already manages. |
+| [Resource address](#why-state-exists) | Identifies a managed resource or one of its instances. Module paths and instance keys distinguish resources that otherwise share a name. |
+
+**Core Terraform workflow**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Validation (`terraform validate`)](#3-core-terraform-workflow) | Checks configuration syntax and internal consistency. A successful validation alone does not establish provider authorization or successful deployment. |
+| [Formatting (`terraform fmt`)](#3-core-terraform-workflow) | Rewrites Terraform files into conventional formatting so reviews can focus on substantive changes. |
+| [Initialization (`terraform init`)](#initialization) | Prepares the working directory by configuring the backend and obtaining required providers and modules. |
+| [Plan](#plan-review) | A proposal showing the resource changes Terraform expects to make. Reviewing it gives the operator a chance to catch an unexpected replacement. |
+| [Saved plan](#plan-review) | A file containing reviewed proposed changes and associated inputs. Protect it as sensitive and apply it against the expected state. |
+
+**Terraform configuration**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Data source](#resources-data-sources-and-references) | A configuration block that reads information for use elsewhere, such as the ID of an existing network. |
+| [Unknown value](#resources-data-sources-and-references) | A value unavailable during planning, often because a provider assigns it when the object is created. |
+| [Explicit dependency (`depends_on`)](#resources-data-sources-and-references) | Declares an ordering dependency that Terraform cannot infer from a value reference. Use it when a hidden dependency genuinely affects readiness. |
+| [Output value](#inputs-locals-and-outputs) | A value a module exposes to its caller, such as an endpoint from a newly created service. |
+| [Local value](#inputs-locals-and-outputs) | A name for an expression calculated inside a module. A local can simplify repeated logic without becoming a caller input. |
+| [Input variable](#inputs-locals-and-outputs) | A value supplied to a module from its caller or its execution context. Its type and validation state what callers may provide. |
+| [Type constraint](#inputs-locals-and-outputs) | Declares what shape an input may take, such as a list of strings or an object with named attributes. |
+| [Module interface](#inputs-locals-and-outputs) | The inputs, outputs and assumptions callers rely on. Changing their meaning can break a caller even if the module still validates. |
+| [Resource block](#expressions-functions-and-repeated-resources) | Declares a remote object Terraform should manage, such as a network or instance. Its address connects it to state. |
+| [`for_each`](#expressions-functions-and-repeated-resources) | Creates instances addressed by map keys or strings in a set. A stable key such as a service name preserves identity when the input order changes. |
+| [`dynamic` block](#expressions-functions-and-repeated-resources) | Generates repeated nested blocks from a collection. It changes configuration structure rather than creating independently addressed resource instances. |
+| [Conditional expression](#expressions-functions-and-repeated-resources) | Selects one of two values based on a condition. Both outcomes need compatible types for the expression to work as intended. |
+| [Lifecycle rule](#lifecycle-and-custom-conditions) | A configuration rule that changes how Terraform plans a resource's creation, update or destruction. |
+| [`create_before_destroy`](#lifecycle-and-custom-conditions) | Requests that a replacement be created before the original is removed. Names, quotas and dependencies must permit both to exist briefly. |
+| [`prevent_destroy`](#lifecycle-and-custom-conditions) | Blocks a planned destruction while the lifecycle rule applies. Removing the resource configuration also removes this guard. |
+| [Postcondition](#lifecycle-and-custom-conditions) | An assertion about the observed result that can stop dependent work when a resource or data source violates the expected contract. |
+| [Precondition](#lifecycle-and-custom-conditions) | An assertion checked before the operation it protects, for example requiring an approved deployment region. |
+| [Write-only argument](#sensitive-ephemeral-and-write-only-data) | A supported provider argument designed to accept a value without storing it in Terraform state. |
+| [Sensitive value](#sensitive-ephemeral-and-write-only-data) | A value marked for redaction in ordinary output. Its presence in state or plan files still requires appropriate protection. |
+| [Ephemeral value](#sensitive-ephemeral-and-write-only-data) | A value with operation-scoped lifetime that Terraform can omit from state and plan files in supported contexts. |
+
+**Terraform modules**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Module](#5-terraform-modules) | A set of Terraform configuration files in one directory. A caller can supply inputs and consume its outputs. |
+| [Child module](#5-terraform-modules) | A module invoked from another module. Inputs and outputs form its interface with the caller. |
+| [Root module](#5-terraform-modules) | The configuration Terraform starts from in the working directory. It can call child modules to compose a larger deployment. |
+| [Module source](#5-terraform-modules) | The location Terraform uses to obtain a module, such as a local directory or registry address. |
+
+**Terraform state management**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Remote state](#local-and-remote-state) | State stored outside the operator's local working directory. Secure access and coordination matter when multiple operators share it. |
+| [Backend](#local-and-remote-state) | The component that determines where Terraform state is stored. Backend capabilities, including locking, depend on the selected type. |
+| [State locking](#locking-and-concurrency) | Coordinating writers so two operations cannot update the same state at once, when the backend supports locking. |
+| [Drift](#drift-refresh-only-and-address-changes) | A difference between observed infrastructure and the recorded or desired state. If a console edit raises a VM's size, the next refreshed plan can show whether Terraform would change it back. |
+| [Refresh-only plan](#drift-refresh-only-and-address-changes) | Proposes updating Terraform's records to match observed remote changes without trying to bring infrastructure back to the declared configuration. |
+| [`moved` block](#drift-refresh-only-and-address-changes) | Records a change of resource address so Terraform can preserve a binding during a rename or module refactor. |
+
+**Maintain infrastructure with Terraform**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Import](#import-existing-objects) | Brings an existing object's identity into Terraform management at a specified resource address. Review the resulting plan against the desired configuration. |
+
+**HCP Terraform**
+
+| Term or phrase | Meaning |
+|---|---|
+| [HCP Terraform workspace](#collaboration-and-governance-features) | A unit in HCP Terraform that holds configuration settings, variables, state and run history for a managed deployment. |
+| [Sentinel policy](#collaboration-and-governance-features) | A policy-as-code rule used to evaluate Terraform work, such as rejecting proposed resources that lack required tags. |
+
 ## Places to learn
 
 This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Pick the official material, instructor, format, labs, and assessment that fit your gaps. Times are approximate consumption time at normal speed; labs, pausing, note-taking, troubleshooting, review, and prerequisite work add time.

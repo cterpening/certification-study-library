@@ -777,6 +777,87 @@ These eight broader activities remain **proposed**. Remote execution of worked e
 - [ ] I can build and search a vector of structures and handle whole-line strings.
 - [ ] I have rechecked the live official page rather than relying on this dated snapshot.
 
+## Key terms and phrases
+
+**Syntax, literals, and operators**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Translation unit](#translation-structure-and-names) | The source seen by the compiler after preprocessing one source file and the headers it includes. |
+| [Compiler](#translation-structure-and-names) | The program translating a translation unit and checking that it meets the selected language rules. |
+| [Linker](#translation-structure-and-names) | The build component that combines translated units and libraries and resolves references between them. |
+| [Header](#translation-structure-and-names) | A file included during preprocessing to make declarations, type definitions or templates available to a translation unit. |
+| [Definition](#translation-structure-and-names) | A declaration that supplies the actual entity, such as a function body or an object with storage. |
+| [Identifier](#translation-structure-and-names) | A name used to refer to a declared entity such as a variable, function or type. |
+| [Preprocessor directive](#translation-structure-and-names) | An instruction acted on before compilation, for example including a header or defining a macro. |
+| [Command-line argument](#translation-structure-and-names) | Text passed to a program at startup. Numeric-looking arguments require parsing and validation before numeric use. |
+| [Integer literal](#types-and-literals) | A whole number written in source. Its spelling and any suffix help determine its type. |
+| [Integer division](#types-and-literals) | Dividing integer operands yields an integer quotient with the fractional part discarded. Dividing 7 by 2 gives 3. |
+| [Remainder](#types-and-literals) | The integer part left after division. For positive operands, 17 divided by 5 has quotient 3 and remainder 2. |
+| [Implicit conversion](#types-and-literals) | A type conversion performed by the language rules, for example promoting a smaller integer before arithmetic. |
+| [Cast](#types-and-literals) | An explicit request to convert an expression to a specified type. The requested change may lose information. |
+| [Undefined behavior](#types-and-literals) | An operation for which the language imposes no requirements, such as accessing an array outside its valid range. |
+| [Character array](#types-and-literals) | A contiguous sequence of characters. It represents a C string only when a terminating null character occurs within bounds. |
+| [Operator precedence](#operators-and-expression-tracing) | The rules that group operators in an expression. Grouping an expression does not determine the evaluation order of every operand. |
+| [Short-circuit evaluation](#operators-and-expression-tracing) | Evaluating the right operand of logical AND or OR only when the left operand leaves the result undecided. |
+| [Bitwise operator](#operators-and-expression-tracing) | An operator working on individual bits, such as combining flag masks with OR or testing selected bits with AND. |
+| [End of file (EOF)](#streams-and-formatting) | An indication that a read reached the end of available input. Check the read result before processing the next value. |
+
+**Flow control and functions**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Loop condition](#selection-and-repetition) | The expression that decides whether iteration continues. A do-while loop tests it after the body has run once. |
+| [Switch statement](#selection-and-repetition) | Selection among case labels using an expression. Control can continue into a later case unless an intervening operation leaves the switch. |
+| [Pass by reference](#functions-and-parameter-mechanisms) | Binding a parameter directly to an existing object so that changes through a writable reference affect the caller’s object. |
+| [Scope](#functions-and-parameter-mechanisms) | The part of the program in which a declaration can be found by name. Visibility and object lifetime can differ. |
+| [Automatic storage duration](#functions-and-parameter-mechanisms) | Storage associated with entering and leaving a block or call, as for many local variables. |
+| [Function parameter](#functions-and-parameter-mechanisms) | A declared input to a function, bound to a supplied argument when the function is called. |
+| [Return value](#functions-and-parameter-mechanisms) | The value a function provides to its caller through its return operation under the declared return type. |
+| [Reference](#functions-and-parameter-mechanisms) | An alias bound to an existing object or function. Updating a writable reference changes its referent. |
+| [Recursion](#recursion) | A function calling itself, normally on a smaller instance of the problem with a terminating case. |
+
+**Vectors and pointers**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Vector](#arrays-vectors-and-dimensions) | A standard container holding a resizable sequence of elements of one type. |
+| [Array bound](#arrays-vectors-and-dimensions) | The limits of valid element positions. For an array of length n, valid indices run from zero through n minus one. |
+| [Buffer capacity](#arrays-vectors-and-dimensions) | The number of elements a buffer can hold under its allocation. Appending data requires room within that bound. |
+| [Iterator](#arrays-vectors-and-dimensions) | A position-like object through which an algorithm can traverse elements within the operations its category permits. |
+| [Container capacity](#arrays-vectors-and-dimensions) | The number of elements a container such as a vector can hold before it needs to obtain more storage. |
+| [Reallocation](#arrays-vectors-and-dimensions) | Replacing a container’s storage with a different allocation, which can invalidate pointers, references and iterators into the old storage. |
+| [Pointer](#pointers-references-and-addresses) | An object that holds an address or a null value. Dereferencing requires a valid target. |
+| [Pointer dereference](#pointers-references-and-addresses) | Using a pointer to access its target. The target must still exist and be valid for the attempted access. |
+| [Null pointer](#pointers-references-and-addresses) | A pointer value designating no object or function. It may serve as a marker but cannot be dereferenced. |
+| [Object lifetime](#pointers-references-and-addresses) | The period during which a particular object exists and access to it is permitted under the language rules. |
+| [Const qualification](#pointers-references-and-addresses) | A restriction on modification through the qualified expression or access path. |
+| [Dangling pointer](#named-conversions) | A pointer referring to storage whose lifetime has ended, such as memory already released. |
+| [Destructor](#named-conversions) | A special member function run when an object is destroyed, often releasing resources it owns. |
+| [Dynamic storage](#dynamic-storage) | Storage requested during execution whose lifetime must be managed independently of the block that requested it. |
+| [Memory leak](#dynamic-storage) | Allocated storage that is never released when it is no longer needed, often because its owning reference was lost. |
+
+**Structures and strings**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Structure](#structures-and-records) | A user-defined type that groups related members, such as an item’s name, quantity and price, into one record. |
+| [Structure member](#structures-and-records) | A named component of a structure or class instance, such as the quantity field in an inventory record. |
+| [Sentinel](#stdstring) | A distinguished value or end marker signaling completion. It must be distinguishable from legitimate data in that use. |
+| [Input stream](#stdstring) | A source from which a program extracts data. A failed read must be distinguished from a valid value. |
+
+**Executed trace workbook**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Exception handler](#executed-trace-workbook) | A catch clause selected for a compatible thrown exception. Cleanup of scopes left by the throw happens during unwinding. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Compound assignment](#hands-on-labs) | An operation such as += that updates the object on the left using its prior value and the right operand. |
+
 ## Places to learn
 
 This is not a complete list, and it is not meant to be consumed in full. Pick one primary path, use another source only where its explanation fits you better, and spend at least as much time predicting, coding, testing, and debugging as watching. All third-party material is supplementary; reconcile it with the current official syllabus.

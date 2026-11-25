@@ -552,6 +552,89 @@ Map older material line by line to V9 rather than assuming continuity. Verify cu
 
 The official N10-009 page still lists V9 (N10-009), a 90-minute exam, and an estimated 2027 retirement window; no exact retirement date or replacement exam was posted. A current wireless example for the wireless standards and troubleshooting objectives is Wi-Fi 7 / 802.11be multi-link operation (MLO): clients and access points may use multiple links, but support depends on device capabilities, channel/regulatory availability, and implementation. Treat 320 MHz and other feature claims as capability-dependent; troubleshoot negotiated bands, channel width, interference, and client/AP support rather than using theoretical peak throughput as observed performance. This is current standards context, not an asserted N10-009 objective change. [Android Wi-Fi 7 implementation notes](https://source.android.com/docs/core/connect/wifi-7).
 
+## Key terms and phrases
+
+**Networking concepts**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Load balancer](#layers-encapsulation-devices-and-traffic) | A component that sends eligible requests or connections to selected backends using health and distribution policy. |
+| [MAC address](#layers-encapsulation-devices-and-traffic) | A link-layer identifier used to deliver frames on the local network. Knowing a MAC address alone does not identify the authenticated user. |
+| [Default gateway](#protocol-and-service-decisions) | The next-hop router a host uses for destinations outside its directly connected network when no more specific route applies. |
+| [Secure Shell (SSH)](#protocol-and-service-decisions) | An encrypted protocol for remote login and related operations. Host keys authenticate the server, while user credentials establish the client’s identity. |
+| [Transmission Control Protocol (TCP)](#protocol-and-service-decisions) | A connection-oriented transport that provides an ordered byte stream and retransmits missing data while the connection can be maintained. |
+| [Classless Inter-Domain Routing (CIDR) prefix](#addressing-and-subnetting) | An address range identified by its leading network bits. In `192.0.2.0/26`, the network address is `192.0.2.0` and the prefix length is 26. The remaining six IPv4 bits give 2⁶ = 64 addresses. |
+| [Neighbor Discovery](#addressing-and-subnetting) | The IPv6 mechanisms for learning neighbors and routers and resolving link-layer addresses on the local link. |
+| [Subnet](#addressing-and-subnetting) | A portion of an IP address space sharing a network prefix. Hosts use the prefix to distinguish local delivery from traffic requiring a router. |
+| [Port number](#ports-and-protocol-boundaries) | A transport-layer identifier used to distinguish application endpoints on a host. |
+| [Security association (SA)](#ports-and-protocol-boundaries) | A set of parameters, keys and counters defining how one direction of traffic is protected under IPsec. |
+| [Variable-length subnet masking (VLSM)](#original-vlsm-and-forwarding-exercise) | Choosing a different prefix length for each subnet's needs. For ordinary IPv4 LANs, a /26 has 62 usable host addresses and a /28 has 14, so a 50-host LAN needs the larger block. |
+| [Dynamic routing](#original-vlsm-and-forwarding-exercise) | Learning and updating routes through a protocol rather than maintaining every path manually. |
+| [Infrastructure as code (IaC)](#media-connectors-topology-and-cloud) | Defining infrastructure in a versionable form that can be reviewed and applied through automation. |
+| [Virtual private cloud (VPC)](#media-connectors-topology-and-cloud) | A logically isolated cloud network with customer-defined addressing, subnets and routing boundaries. |
+| [Elasticity](#modern-environments-objective-18) | The ability to expand and contract resources in response to demand. It depends on available capacity, policy and workload design. |
+| [Zero Trust](#modern-environments-objective-18) | An access model that evaluates requests using identity, resource and context without assuming access is safe solely because it originated on an internal network. |
+
+**Network implementation**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Longest-prefix match](#routing-and-boundary-behavior) | Selection of the most specific route whose prefix contains the packet’s destination. |
+| [Default route](#routing-and-boundary-behavior) | The route chosen when no more specific destination prefix matches, commonly represented as 0.0.0.0/0 for IPv4. |
+| [First-hop redundancy](#routing-and-boundary-behavior) | A set of routers providing a shared gateway identity so hosts can continue using a gateway after a device failure. |
+| [Equal-cost multipath (ECMP)](#routing-and-boundary-behavior) | Forwarding over multiple eligible paths with equal route preference and cost. The way traffic is distributed depends on the implementation. |
+| [Trunk](#switching-and-vlans) | A switch link designed to carry multiple VLANs, usually identifying the VLAN with a tag. |
+| [Broadcast domain](#switching-and-vlans) | The set of interfaces that receive a Layer 2 broadcast. A VLAN divides a switched network into separate broadcast domains. |
+| [Ethernet](#switching-and-vlans) | A family of link-layer technologies that carries frames identified by source and destination MAC addresses on a local network. |
+| [Virtual LAN (VLAN)](#switching-and-vlans) | A logical Layer 2 network with its own broadcast scope. Communication with another VLAN ordinarily requires routing and a suitable policy. |
+| [Spanning Tree Protocol (STP)](#switching-and-vlans) | A switching protocol that chooses a loop-free forwarding topology while retaining redundant links for recovery. |
+| [Channel width](#wireless-and-physical-installation) | The amount of radio spectrum used by a wireless channel. Wider channels can increase capacity while reducing room for neighboring channels. |
+| [Encryption](#wireless-and-physical-installation) | Reversibly transforming data with a key to keep the plaintext unavailable to parties lacking the appropriate decryption capability. |
+| [Service set identifier (SSID)](#wireless-and-physical-installation) | The name identifying a wireless network offered to clients. Authentication and access policy determine what joining it permits. |
+
+**Network operations**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Backup](#documentation-lifecycle-configuration-and-change) | A retained copy made for recovery after loss or corruption. Its usefulness depends on successful restoration under the intended conditions. |
+| [Firmware](#documentation-lifecycle-configuration-and-change) | Software stored in a device that controls its low-level operation. Updates must match the hardware and preserve a recovery path. |
+| [Baseline](#monitoring-and-observability) | A record of expected network behavior used to identify changes such as unusual latency or interface errors. |
+| [Configuration drift](#monitoring-and-observability) | A difference between an environment’s actual configuration and its approved desired state. Out-of-band changes are one possible cause. |
+| [Observability](#monitoring-and-observability) | The ability to infer a system’s internal condition from its outputs, often by relating logs, metrics and traces to a particular request or failure. |
+| [Packet capture](#monitoring-and-observability) | An observation of traffic visible at a particular interface or tap. Position, direction and capture filters determine what it can show. |
+| [Availability](#availability-disaster-recovery-and-services) | Timely and reliable access to a resource by authorized users. A running server may still be unavailable to the business if a required dependency fails. |
+| [Disaster recovery plan (DRP)](#availability-disaster-recovery-and-services) | The procedures and resources for restoring technology and data after a major disruption, in an order that supports business priorities. |
+| [Recovery time objective (RTO)](#availability-disaster-recovery-and-services) | The targeted elapsed time for restoring a service after a disruption. |
+| [DHCP relay](#dhcp-dns-and-time-boundaries) | A component that forwards DHCP exchanges between clients and a server on a different subnet. |
+| [Domain Name System (DNS)](#dhcp-dns-and-time-boundaries) | The Domain Name System, which resolves names to records such as the addresses a client can use. |
+| [Dynamic Host Configuration Protocol (DHCP)](#dhcp-dns-and-time-boundaries) | The protocol clients use to obtain settings such as an IP address, gateway and DNS servers, typically for a bounded lease. |
+| [Link-local address](#dhcp-dns-and-time-boundaries) | An address meant for communication on the local link. IPv6 routers do not forward packets carrying link-local addresses to another link. |
+| [NXDOMAIN](#original-dns-exercise-on-loopback) | A DNS response indicating that the queried name does not exist. An existing name that lacks the requested record type instead yields a no-data response. |
+
+**Network security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Authentication](#control-model-and-identity) | Verifying an identity before deciding which resources that identity may access. |
+| [Authorization](#control-model-and-identity) | Deciding which actions an authenticated identity is permitted to take. |
+| [Segmentation](#segmentation-attacks-and-hardening) | Separating systems into network boundaries and controlling which communications can cross them. |
+| [Access control list (ACL)](#segmentation-attacks-and-hardening) | An ordered set of rules that matches traffic attributes and permits or denies traffic according to the platform’s evaluation rules. |
+| [Hardening](#segmentation-attacks-and-hardening) | Reducing avoidable exposure by configuring a system securely, such as removing unused services. |
+
+**Network troubleshooting**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Jitter](#performance-wireless-and-service-faults) | Variation in packet delay, particularly important to real-time traffic such as voice. |
+| [Packet loss](#performance-wireless-and-service-faults) | The fraction of expected packets that do not reach the chosen observation point. Losing 10 of 1,000 equally counted probes is 1% loss. |
+| [Throughput](#select-a-tool-by-the-unresolved-question) | The rate at which data is successfully delivered over an interval. It can be lower than nominal link capacity because of overhead or congestion. |
+
+**N10-008-to-N10-009 gap checklist**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Federation](#n10-008-to-n10-009-gap-checklist) | An arrangement in which a service relies on an external identity provider’s assertions to recognize users. |
+
 ## Places to learn
 
 This is not a complete list and is not meant to be consumed in full. Choose one coherent N10-009 course or book, build an authorized lab, and use one explanation-led practice source to target weak domains.

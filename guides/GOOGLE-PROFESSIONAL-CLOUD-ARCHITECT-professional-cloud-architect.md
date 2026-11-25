@@ -437,6 +437,90 @@ The quicker recovery scenario changes only the database task and yields 53 minut
 
 > **Related items remain contextual:** The official guide defines scope; related explanations connect it to sound architecture and operation.
 
+## Key terms and phrases
+
+**Designing and planning**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Nonfunctional requirement](#begin-with-an-architecture-contract) | A measurable constraint on how a system performs, such as tail latency, availability or data residency, that can rule out a design. |
+| [Replatform](#begin-with-an-architecture-contract) | Moving a workload while changing selected platform components, such as moving its database to a managed relational service. |
+| [Refactor](#begin-with-an-architecture-contract) | Changing an application's design or code to exploit a different architecture, generally with more delivery work than rehosting. |
+| [Rehost](#begin-with-an-architecture-contract) | Moving an application with minimal architectural change, such as moving an existing server workload to a VM. |
+| [Key performance indicator (KPI)](#begin-with-an-architecture-contract) | A measure tied to a specific business or operational outcome. Define the baseline, target and measurement window before comparing architectures. |
+| [High availability](#design-reliability-and-continuity-from-failure-modes) | Designing a service to keep operating through defined faults, such as losing an instance or zone. |
+| [Disaster recovery](#design-reliability-and-continuity-from-failure-modes) | The people, data and procedures needed to restore a workload after a major disruption. Recovery includes dependencies and traffic redirection. |
+| [Recovery point objective (RPO)](#design-reliability-and-continuity-from-failure-modes) | The maximum acceptable loss of recent changes, measured by the age of the recovered data at the disruption. |
+| [Recovery time objective (RTO)](#design-reliability-and-continuity-from-failure-modes) | The longest acceptable interval from disruption until the service is usable. Include dependency recovery and client reconnection in the test. |
+| [Failover](#design-reliability-and-continuity-from-failure-modes) | Moving service to an alternative when the current serving location or component becomes unavailable. |
+| [Cloud SQL](#design-reliability-and-continuity-from-failure-modes) | A managed relational database service for supported SQL engines. It suits applications that depend on relational queries and transactions. |
+| [Cloud Run](#choose-platform-components-by-contract) | Runs containerized services or jobs on a managed platform. Choose a service for a request endpoint and a job for work that runs to completion. |
+| [Google Kubernetes Engine (GKE)](#choose-platform-components-by-contract) | A managed Kubernetes environment for running and operating containerized workloads. |
+| [Private Service Connect](#choose-platform-components-by-contract) | Exposes supported services privately using producer and consumer endpoints rather than requiring broad connectivity between their networks. |
+| [Least privilege](#choose-platform-components-by-contract) | Limiting an identity to the actions and resources required for its work. A read-only reporting job needs no permission to modify its source. |
+| [Cloud Load Balancing](#choose-platform-components-by-contract) | Distributes traffic among configured backends. Protocol, client location and reachability guide the load balancer choice. |
+| [Compute Engine](#choose-platform-components-by-contract) | Provides virtual machines. Teams choose machine shape, disk and networking and manage the guest operating system. |
+| [Cloud Storage](#choose-platform-components-by-contract) | Stores objects in buckets. A file-like object name does not by itself give an application the behavior of a shared POSIX file system. |
+| [Cloud Interconnect](#choose-platform-components-by-contract) | A dedicated or partner-provided network connection into Google Cloud. Connectivity still requires routing and an appropriate redundancy design. |
+| [VPC Network Peering](#choose-platform-components-by-contract) | Privately connects two VPC networks for eligible routes. Peering alone does not provide a transit path through a third network. |
+| [Shared VPC](#choose-platform-components-by-contract) | Allows service projects to use networking managed in a host project, separating application ownership from shared network administration. |
+| [Cloud NAT](#choose-platform-components-by-contract) | Translates addresses for supported outbound connections. It does not make a private VM a publicly addressable server. |
+| [Firestore](#choose-platform-components-by-contract) | A managed document database storing records in collections. Document boundaries influence what an application can retrieve efficiently. |
+| [BigQuery](#choose-platform-components-by-contract) | Google's managed analytical warehouse for querying large datasets with SQL. Column selection and partition filters help reduce work. |
+| [Migration dependency](#migration-is-a-program-not-a-copy-operation) | A service, data flow or identity relationship that affects which workloads can move independently and in what order. |
+| [Landing zone](#migration-is-a-program-not-a-copy-operation) | A prepared cloud foundation with account or project structure, networking, identity and controls on which teams can deploy workloads. |
+
+**Managing and provisioning infrastructure**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Infrastructure as code (IaC)](#provision-networks-storage-and-compute-as-products) | A versioned description of infrastructure that tools can build or update. Reviewing the proposed changes helps catch unintended replacements. |
+| [Idempotency](#provision-aiml-and-agents-as-governed-systems) | The property that retrying the same intended operation does not apply its effect twice. An order API can remember the request identifier. |
+| [Data contract](#provision-aiml-and-agents-as-governed-systems) | An agreement on a dataset's meaning, schema, ownership and delivery expectations so producers and consumers can evolve it safely. |
+
+**Security and compliance**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Trust boundary](#identity-first-layered-design) | A point where a request crosses between parties or systems with different privileges and needs a fresh authorization decision. |
+| [Federation](#identity-first-layered-design) | Accepting trusted identity assertions from another provider so users or workloads can access resources without a separate long-lived credential. |
+| [Service account impersonation](#identity-first-layered-design) | Using authorized short-lived credentials to act as a service account. The ability to impersonate it is separate from its own resource permissions. |
+| [Customer-managed encryption key (CMEK)](#identity-first-layered-design) | A key the customer manages for a supported service. Key location, service identity access and key availability can all affect the protected workload. |
+| [Sensitive Data Protection](#identity-first-layered-design) | Inspects or transforms sensitive information using configured detectors and rules, such as replacing identifiers before analysis. |
+| [Organization policy](#identity-first-layered-design) | A set of constraints on how resources may be configured within the hierarchy, such as limiting acceptable locations. |
+| [Organization, folder and project](#identity-first-layered-design) | Organization is the top-level ownership boundary, folders group resources, and projects hold workloads. Policies can be inherited down this hierarchy. |
+| [Secret Manager](#identity-first-layered-design) | Stores and versions secrets for authorized consumers. An application using a rotated value must still reload it successfully. |
+| [Cloud Key Management Service (Cloud KMS)](#identity-first-layered-design) | Manages cryptographic keys and versions. Separating permission to use a key from permission to administer it limits access. |
+| [Workload Identity Federation](#identity-first-layered-design) | A way to let an external workload exchange trusted identity evidence for short-lived Google Cloud access without distributing a service account key. |
+| [Workload identity](#identity-first-layered-design) | An identity for software such as a service or batch job. It enables permissions to follow the workload itself. |
+| [Service account](#identity-first-layered-design) | An identity used by a workload to call services. It can receive its own roles independently of the human who deployed it. |
+| [Identity and Access Management (IAM) role](#identity-first-layered-design) | A named collection of permissions. A policy binding grants the role to a principal at a chosen resource scope. |
+| [Data residency](#turn-compliance-obligations-into-controls-and-evidence) | A requirement about the locations in which data may be stored or processed. Backups and logs can fall within the same requirement. |
+| [VPC Service Controls](#turn-compliance-obligations-into-controls-and-evidence) | Sets a perimeter for supported Google services to reduce unauthorized data movement. IAM permission and the perimeter decision are distinct. |
+| [Cloud Audit Logs](#turn-compliance-obligations-into-controls-and-evidence) | Records supported administrative or data-access activity, helping operators establish who performed an action on a resource. |
+
+**Optimize technical and business processes**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Canary release](#technical-process) | Exposing a new version to a limited share of real traffic before expanding it, using observed behavior to decide whether to proceed. |
+| [Stakeholder](#business-process) | A person or group whose objectives or constraints shape the design. Business owners and operators may require different evidence from the same pilot. |
+
+**Managing implementation**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Runbook](#5-managing-implementation-about-125) | A documented operating procedure with prerequisites, verification and escalation points, such as the steps for a regional failover. |
+| [Service quota](#5-managing-implementation-about-125) | A limit on resource use or request volume within a specified scope. Reaching it can block work even when funds are available. |
+
+**Solution and operations excellence**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Error budget](#6-solution-and-operations-excellence-about-125) | The unreliability a service level objective allows. A 99.9% success target over 100,000 eligible requests leaves a budget of 100 failed requests for that window. |
+| [Postmortem](#6-solution-and-operations-excellence-about-125) | A review of an incident's timeline, contributing conditions and corrective actions. Assign owners so the lessons change future behavior. |
+| [Service level objective (SLO)](#6-solution-and-operations-excellence-about-125) | A target for a measurable aspect of the user experience, such as the fraction of requests completed successfully over a month. |
+
 ## Places to learn
 
 This is **not a complete list**, and it is not meant to be consumed in full. Pick a coherent route, use the blueprint/case studies as the checklist, and select labs/readings for weak decisions. Public metadata was checked October 28, 2026; paid lessons/labs were not accessed. Separate visible content totals from schedule estimates, then add practice, design, troubleshooting and review time.

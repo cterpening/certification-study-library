@@ -108,6 +108,81 @@ Integration patterns include batch scoring, synchronous APIs, event-driven proce
 - I treat responsible AI, security, and governance as operating controls.
 - I can answer 44 mixed questions in 60 minutes without relying on memorized slogans.
 
+## Key terms and phrases
+
+**AI foundations**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Machine learning](#1-ai-foundations) | Developing a model from examples or feedback so it can perform a task on new inputs. |
+| [Label](#1-ai-foundations) | The reference outcome paired with an example for supervised training or evaluation. |
+| [Foundation model](#1-ai-foundations) | A broadly pretrained model adapted to particular tasks through prompting, retrieval or additional training. |
+
+**Machine learning and deep learning**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Classification](#2-machine-learning-and-deep-learning) | Predicting a category, such as a request type, using patterns learned from labeled examples. |
+| [Regression](#2-machine-learning-and-deep-learning) | Predicting a numeric quantity, such as expected demand or processing time. |
+| [Clustering](#2-machine-learning-and-deep-learning) | Grouping examples by similarity without requiring a predefined class label for each example. |
+| [Supervised learning](#2-machine-learning-and-deep-learning) | Learning a prediction rule from examples that include known outcomes. |
+| [Unsupervised learning](#2-machine-learning-and-deep-learning) | Learning structure in inputs without outcome labels, such as clustering similar examples. |
+| [Overfitting](#2-machine-learning-and-deep-learning) | Learning training-specific details that reduce performance on new examples, often visible as a gap between training and held-out scores. |
+| [Underfitting](#2-machine-learning-and-deep-learning) | A model or training procedure missing useful structure, resulting in poor performance even on training examples. |
+| [Precision](#2-machine-learning-and-deep-learning) | For a binary positive class, true positives divided by all predicted positives. It answers how often a positive prediction is correct. |
+| [Recall](#2-machine-learning-and-deep-learning) | For a binary positive class, true positives divided by all actual positives. Missing a positive case reduces recall. |
+| [F1 score](#2-machine-learning-and-deep-learning) | The harmonic mean of precision and recall, useful when both false positives and missed positives matter. |
+| [Model monitoring](#2-machine-learning-and-deep-learning) | Collecting operational and quality signals after deployment, with enough context to identify changes and investigate their effects. |
+| [Deep learning](#2-machine-learning-and-deep-learning) | Machine learning using multiple layers of learned transformations to represent patterns in data. |
+| [Reinforcement learning](#2-machine-learning-and-deep-learning) | Learning a policy from interactions and rewards rather than a fixed target label for every example. |
+
+**Generative and applied AI**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Embedding](#3-generative-and-applied-ai) | A numeric vector representing content so that relationships such as similarity can be compared. |
+| [Retrieval-augmented generation (RAG)](#3-generative-and-applied-ai) | Supplying relevant retrieved evidence in a model’s context to help it generate an answer grounded in that information. |
+| [Token](#3-generative-and-applied-ai) | A unit produced by a model’s tokenizer. Word boundaries and token boundaries need not coincide. |
+| [Grounding](#3-generative-and-applied-ai) | Tying generated claims to supplied evidence that supports them, then evaluating whether the answer stays within that evidence. |
+| [Fine-tuning](#3-generative-and-applied-ai) | Continuing training on selected examples to adapt a model’s behavior or style. |
+| [Vector database](#3-generative-and-applied-ai) | A system storing vector representations and associated metadata so similar items can be retrieved. |
+| [Temperature](#3-generative-and-applied-ai) | A decoding parameter affecting how strongly sampling favors higher-probability next tokens. |
+| [Tool use](#3-generative-and-applied-ai) | Letting an application call a defined external capability under explicit permissions and validate its result before using it. |
+
+**Responsible AI, ethics, security, and governance**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Explainability](#4-responsible-ai-ethics-security-and-governance) | The ability to give a meaningful account of the factors or reasoning behind a model output. |
+| [Training set](#4-responsible-ai-ethics-security-and-governance) | Examples used to learn a model’s parameters and any data-dependent preprocessing. |
+| [Human oversight](#4-responsible-ai-ethics-security-and-governance) | Giving an accountable person a way to inspect, intervene in or overturn a model-assisted decision. |
+| [Fairness](#4-responsible-ai-ethics-security-and-governance) | Evaluating how a system’s outcomes and errors affect different groups in the particular use context. |
+| [Robustness](#4-responsible-ai-ethics-security-and-governance) | The ability to maintain acceptable behavior under plausible variation, errors or changes in inputs. |
+| [Prompt injection](#4-responsible-ai-ethics-security-and-governance) | Untrusted text attempting to redirect a model-driven application’s decisions, requiring controls on data access and external actions. |
+
+**Use cases and integration**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Batch scoring](#5-use-cases-and-integration) | Generating predictions for a collection of inputs together, useful when users can wait for a scheduled result. |
+| [Feature](#5-use-cases-and-integration) | An input variable available when a model makes its prediction. Time of availability matters as much as the value. |
+| [Latency](#5-use-cases-and-integration) | Elapsed time from accepting a request to delivering the defined response, often assessed at a percentile to expose slow cases. |
+
+**Original readiness checks**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Holdout set](#answer-guide) | Examples reserved to assess the completed procedure on unseen cases, without selecting improvements from their results. |
+| [Data leakage](#answer-guide) | Information unavailable at the time of a real prediction influencing training or evaluation, often producing overly optimistic results. |
+| [Parameter](#answer-guide) | A value learned as part of fitting a model, such as a regression coefficient or neural-network weight. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Baseline model](#integrated-practice-scenarios) | A simple reference approach used to judge whether the added complexity and cost of a candidate model produce worthwhile improvement. |
+| [Confusion matrix](#hands-on-labs) | A table counting predicted classes against actual classes, revealing how errors are distributed. |
+
 ## Places to learn
 
 This is a selective learning path, not a complete list of AI resources.

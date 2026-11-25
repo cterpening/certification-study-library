@@ -111,6 +111,87 @@ Maintain appliances and agents with compatibility checks, backups, prechecks, co
 - I use health trends and dependency tracing to troubleshoot.
 - I can complete 60 mixed questions in 90 minutes from an operator's model.
 
+## Key terms and phrases
+
+**Architecture and planning**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Collector](#1-architecture-and-planning) | A Guardium appliance role that receives monitored database activity and processes it for policy and reporting. |
+| [Aggregator](#1-architecture-and-planning) | An appliance role that consolidates information from collectors for broader reporting and analysis. |
+| [Retention](#1-architecture-and-planning) | The period for which collected evidence must remain available, influencing storage, archival and purge decisions. |
+| [Capacity planning](#1-architecture-and-planning) | Estimating the resources needed for expected demand, growth and failure scenarios against measured workload behavior. |
+| [Latency](#1-architecture-and-planning) | The time for a request or operation to complete, measured at a specified boundary from the selected start to finish. |
+| [Baseline](#1-architecture-and-planning) | An agreed reference configuration or historical measurement used to evaluate change in a comparable environment. |
+| [Central manager](#1-architecture-and-planning) | The Guardium management role used to administer multiple managed units consistently. |
+| [Managed unit](#1-architecture-and-planning) | A Guardium appliance enrolled under central administration for coordinated policy and monitoring. |
+| [Archive](#1-architecture-and-planning) | Moving retained monitoring data to storage intended for longer-term preservation under the applicable recovery and access rules. |
+| [Purge](#1-architecture-and-planning) | Removing eligible data according to approved retention rules after validating any archival requirements. |
+
+**Deploy and configure**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Data source](#2-deploy-and-configure) | The database connection definition used by a Guardium function to reach the intended system with the appropriate identity. |
+| [Least privilege](#2-deploy-and-configure) | Granting only the access a specific identity needs for its assigned work, then checking both allowed and denied actions. |
+| [Failover](#2-deploy-and-configure) | Transferring service to an alternate component or location when the primary cannot serve the workload. |
+| [Backup](#2-deploy-and-configure) | A retained copy created to support recovery. Validate it by restoring the relevant data and exercising the service that depends on it. |
+| [DNS](#2-deploy-and-configure) | The naming system resolving service names to addresses or other records. Correct resolution alone does not establish reachability. |
+| [Data source group](#2-deploy-and-configure) | A logical group used to apply policies, assessments or reports to intended data sources under a defined membership rule. |
+
+**Discover, assess, and harden**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Sensitive-data discovery](#3-discover-assess-and-harden) | Examining data stores for candidate protected data so findings can be classified and reviewed. |
+| [Vulnerability assessment](#3-discover-assess-and-harden) | Checking a database against a defined set of security tests and recording findings for remediation. |
+| [Configuration Auditing System (CAS)](#3-discover-assess-and-harden) | A Guardium capability that tracks changes to selected configuration files or settings against a baseline. |
+| [Authorization](#3-discover-assess-and-harden) | Evaluating whether the requesting identity may take a particular action on a particular resource within the applicable scope. |
+| [Classification](#3-discover-assess-and-harden) | Assigning sensitivity categories to discovered data based on rules and reviewed evidence. |
+| [Database discovery](#3-discover-assess-and-harden) | Finding candidate database systems before separately determining what sensitive data they hold. |
+| [Assessment finding](#3-discover-assess-and-harden) | A recorded result identifying an observed condition, the affected asset, evidence and the action or review needed. |
+
+**Policy management**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Policy rule](#4-policy-management) | An ordered condition and action applied to monitored activity, such as recording or alerting on a matching event. |
+| [Policy action](#4-policy-management) | The response attached to a matching activity policy rule, such as logging, notification or an eligible enforcement action. |
+| [Rule order](#4-policy-management) | The sequence in which policy conditions are evaluated, which can change which event handling takes effect. |
+| [Redaction](#4-policy-management) | Suppressing or obscuring selected sensitive values in an output while retaining the permitted context. |
+| [False positive](#4-policy-management) | A detection or policy finding that flags activity outside the intended risk case. |
+| [False negative](#4-policy-management) | Relevant risky activity that remains undetected by the configured controls. |
+
+**Reports, alerts, and investigations**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Alert](#5-reports-alerts-and-investigations) | A notification that a configured condition was met, requiring interpretation with its time window, source and affected scope. |
+| [Report filter](#5-reports-alerts-and-investigations) | A condition selecting which records a report includes, such as database, time interval or activity type. |
+| [Aggregation](#5-reports-alerts-and-investigations) | Combining activity records into summaries for reporting, with counts interpreted against the chosen scope and time. |
+| [Alert routing](#5-reports-alerts-and-investigations) | Directing a detected condition and its supporting evidence to the person or system responsible for investigation. |
+
+**Health, maintenance, and troubleshooting**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Monitoring agent](#6-health-maintenance-and-troubleshooting) | Software collecting eligible database activity from a protected host or data path and forwarding it to the monitoring system. |
+| [Alert Builder](#6-health-maintenance-and-troubleshooting) | The Guardium facility for defining alerts from observed conditions. Test whether the alert reaches its destination as well as whether the monitored condition occurred. |
+| [Upgrade precheck](#6-health-maintenance-and-troubleshooting) | A check performed before maintenance to confirm that the current system can take the planned change. An incompatible appliance or agent version can stop the upgrade. |
+| [Support bundle](#6-health-maintenance-and-troubleshooting) | A collection of diagnostics gathered for an investigation. Preserve the relevant time window and protect any sensitive configuration or activity records it contains. |
+
+**Original readiness checks**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Secret rotation](#answer-guide) | Replacing a secret under controlled conditions, confirming that its consumers use the replacement before retiring the old credential. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Audit log](#integrated-practice-scenarios) | Records of administrative actions that help identify who performed an operation, on what resource and when. |
+
 ## Places to learn
 
 This is a selective learning path, not a complete list of Guardium resources.

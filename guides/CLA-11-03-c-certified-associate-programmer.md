@@ -715,6 +715,81 @@ These eight broader learner activities remain proposed; the bounded runs above s
 - [ ] I completed the integrated projects under warnings and runtime diagnostics.
 - [ ] I rechecked the live official page immediately before purchase.
 
+## Key terms and phrases
+
+**Language and structures**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Declaration](#declarations-definitions-and-lexical-structure) | Introduces a name and its type. `extern int count;` declares an integer defined elsewhere. `int count = 0;` also defines the object and provides storage. |
+| [Source file](#declarations-definitions-and-lexical-structure) | A text file containing program declarations and statements to translate as part of a build. |
+| [Header](#declarations-definitions-and-lexical-structure) | A file included during preprocessing to make declarations, type definitions or templates available to a translation unit. |
+| [Definition](#declarations-definitions-and-lexical-structure) | A declaration that supplies the actual entity, such as a function body or an object with storage. |
+| [Identifier](#declarations-definitions-and-lexical-structure) | A name used to refer to a declared entity such as a variable, function or type. |
+| [Translation unit](#declarations-definitions-and-lexical-structure) | One source file after preprocessing, including the declarations and definitions brought in by its headers. |
+| [External linkage](#declarations-definitions-and-lexical-structure) | A property allowing compatible declarations in different translation units to identify the same object or function. |
+| [Structure member](#arrays-and-structures) | A named component of a structure or class instance, such as the quantity field in an inventory record. |
+| [Storage duration](#storage-classes-and-duration) | The period during which an object’s storage exists. A name’s visibility is a separate question. |
+| [Linkage](#storage-classes-and-duration) | The rule determining whether declarations of an identifier in different scopes or files refer to the same entity. |
+| [Scope](#storage-classes-and-duration) | The part of the program in which a declaration can be found by name. Visibility and object lifetime can differ. |
+| [Automatic storage duration](#storage-classes-and-duration) | Storage associated with entering and leaving a block or call, as for many local variables. |
+| [Static storage duration](#storage-classes-and-duration) | Storage that lasts for the entire execution of the program, independently of the name’s scope. |
+| [Internal linkage](#storage-classes-and-duration) | A property restricting the identity of a declared object or function to a single translation unit. |
+
+**Expressions, pointers, and storage**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Operator precedence](#expressions-and-conversions) | The rules that group operators in an expression. Grouping an expression does not determine the evaluation order of every operand. |
+| [Bitwise operator](#expressions-and-conversions) | An operator working on individual bits, such as combining flag masks with OR or testing selected bits with AND. |
+| [Implicit conversion](#expressions-and-conversions) | A type conversion performed by the language rules, for example promoting a smaller integer before arithmetic. |
+| [Cast](#expressions-and-conversions) | An explicit request to convert an expression to a specified type. The requested change may lose information. |
+| [Pointer arithmetic](#pointer-model-and-arithmetic) | Moving between elements of an array in units of the pointed-to type. A one-past-the-end pointer can mark a boundary. |
+| [Array bound](#pointer-model-and-arithmetic) | The limits of valid element positions. For an array of length n, valid indices run from zero through n minus one. |
+| [Pointer offset](#pointer-model-and-arithmetic) | A displacement measured in elements of the pointed-to type when moving within the same array. |
+| [Allocated storage](#memory-layout-allocation-and-duration) | Memory obtained at run time that remains allocated until the program releases it or a reallocation ends its lifetime. |
+| [Null pointer](#memory-layout-allocation-and-duration) | A pointer value designating no object or function. It may serve as a marker but cannot be dereferenced. |
+| [Object lifetime](#memory-layout-allocation-and-duration) | The period during which a particular object exists and access to it is permitted under the language rules. |
+| [Buffer capacity](#memory-layout-allocation-and-duration) | The number of elements a buffer can hold under its allocation. Appending data requires room within that bound. |
+| [Dynamic allocation](#memory-layout-allocation-and-duration) | Requesting storage during execution. The caller must check the result and manage the storage until it is released. |
+| [Reallocation](#memory-layout-allocation-and-duration) | Changing an allocation’s size, potentially moving it. Losing the original pointer on failure can prevent its later release. |
+| [Object representation](#memory-layout-allocation-and-duration) | The bytes making up an object in memory. A raw byte copy does not define a portable file format for arbitrary structures. |
+
+**Control flow and functions**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Switch statement](#3-control-flow-and-functions-25) | Selection among case labels using an expression. Control can continue into a later case unless an intervening operation leaves the switch. |
+| [Loop invariant](#3-control-flow-and-functions-25) | A condition that should remain true across iterations, such as knowing that all elements preceding the current position have been checked. |
+| [Pass by value](#functions-and-parameter-behavior) | A function receives a copy of each argument. A copied pointer can still be used to modify the object it points to. |
+| [Function parameter](#functions-and-parameter-behavior) | A declared input to a function, bound to a supplied argument when the function is called. |
+| [Recursion](#functions-and-parameter-behavior) | A function calling itself, normally on a smaller instance of the problem with a terminating case. |
+
+**Preprocessor and stream I/O**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Function-like macro](#directives-and-macros) | A preprocessor substitution written with parameters. An argument may be evaluated multiple times after expansion. |
+| [Preprocessor directive](#directives-and-macros) | An instruction acted on before compilation, for example including a header or defining a macro. |
+| [Stream](#files-and-formatted-streams) | C’s abstraction for input or output through a FILE object, with its own buffering, position and error state. |
+| [End of file (EOF)](#files-and-formatted-streams) | An indication that a read reached the end of available input. Check the read result before processing the next value. |
+| [Format specifier](#files-and-formatted-streams) | A conversion instruction in a formatted I/O string. The corresponding argument must have the expected type. |
+
+**Original readiness checks**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Return value](#original-readiness-checks) | The value a function provides to its caller through its return operation under the declared return type. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Locale](#multi-file-inventory-library-and-record-loader) | The active conventions for text and numeric processing, relevant to character classification and conversions. |
+| [Compiler](#cmakeliststxt) | The program translating a translation unit and checking that it meets the selected language rules. |
+| [Linker](#hands-on-labs) | The build component that combines translated units and libraries and resolves references between them. |
+| [Short-circuit evaluation](#hands-on-labs) | Evaluating the right operand of logical AND or OR only when the left operand leaves the result undecided. |
+
 ## Places to learn
 
 The public CE1 and CE2 landings each list 42 hours and seven hours/week: CE1 covers modules 0–5; CE2 covers functions/structures, files/streams and preprocessor/declarations. CE2 lists both historical CLA-11-02 and active CLA-11-03 alignment; course labeling does not reactivate an old exam. CE1 has inconsistent Basics/Intermediate wording and overbroad array/pointer shorthand; the language contracts above govern. No enrolled lessons or assessments were reviewed.

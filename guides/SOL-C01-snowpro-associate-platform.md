@@ -469,6 +469,96 @@ Explain each answer before uncovering it, then produce the relevant evidence. Th
 
 SOL-C01 remains a retired reference; the Platform Skills badge and current Platform On-Demand Training are educational replacements, not a new proctored certification. Snowflake’s September 3 [Restricted Session Scope for agents](https://docs.snowflake.com/en/release-notes/2026/other/2026-09-03-restricted-session-scope) release is useful current least-privilege context: the administrator-set agent scope acts as a privilege ceiling intersecting with the invoking user’s RBAC grants. It does not grant an agent rights the user lacks and applies while an agent is active. This feature is **Related item** product context only; it does not revise the retired exam map. Check current account/session-policy availability before practice.
 
+## Key terms and phrases
+
+**Preserved public scope map**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Current role](#preserved-public-scope-map) | The role active for a session or operation, which matters when interpreting grants, object creation and access. |
+
+**Navigate Snowflake, notebooks and architecture**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Micro-partition](#know-the-layers-and-current-context) | A storage unit into which Snowflake organizes table data. Its metadata helps avoid scanning irrelevant data. |
+| [Database](#know-the-layers-and-current-context) | The namespace containing schemas and their objects; it forms part of a fully qualified Snowflake object name. |
+| [Schema](#account-and-object-hierarchy) | A namespace within a database that contains objects such as tables and views. |
+| [Account](#account-and-object-hierarchy) | The Snowflake administrative boundary that contains account objects and controls, including roles, warehouses and databases. |
+
+**Create data objects, stages and compute**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Stage](#tables-views-and-stages) | A location where Snowflake can read or write files for loading or unloading. A user or table has an implicit stage. A named stage can reference Snowflake-managed storage or an external storage location. |
+| [Data type](#tables-views-and-stages) | The representation and operations a field supports. For example, a text identifier with leading zeros may lose meaning if converted to an integer. |
+| [View](#tables-views-and-stages) | A named query through which consumers see data in a defined shape. A conventional logical view reads its inputs when queried. |
+| [Internal stage](#tables-views-and-stages) | A Snowflake-managed file location used to stage inputs or outputs for loading and unloading. |
+| [External stage](#tables-views-and-stages) | A Snowflake object referring to files in external cloud storage accessed with the configured authorization. |
+| [Storage integration](#tables-views-and-stages) | A Snowflake object that establishes controlled access to external cloud storage without embedding long-lived storage credentials in every stage. |
+| [Virtual warehouse](#virtual-warehouses) | An independent compute resource used to execute queries and other supported workloads against stored data. |
+| [USAGE privilege](#virtual-warehouses) | Permission enabling use of specified objects such as a database, schema or warehouse, alongside other grants required for the query. |
+| [Auto-suspend](#virtual-warehouses) | A warehouse policy that stops idle compute after the configured period, trading potential savings against resume and cache effects. |
+| [Auto-resume](#virtual-warehouses) | A warehouse policy allowing eligible work to start a suspended warehouse automatically. |
+| [Query history](#virtual-warehouses) | The record identifying statements, execution context and timing, enabling a comparison of the exact queries behind an incident. |
+| [Resource monitor](#virtual-warehouses) | A Snowflake control for tracking eligible warehouse credit use and taking configured actions at usage thresholds. |
+
+**Load and use structured, semi-structured and unstructured data**
+
+| Term or phrase | Meaning |
+|---|---|
+| [File format](#choose-the-path) | A definition describing how to interpret staged files, such as the delimiter, quoting or type of a data file. |
+| [Reconciliation](#choose-the-path) | Comparing source and target results for the same scope, such as record counts and amounts in a given business day. |
+| [COPY INTO](#choose-the-path) | The command family used for bulk movement, including loading a table from staged files and unloading query results to a stage. |
+| [Snowpipe](#choose-the-path) | Snowflake’s service for continuously loading arriving staged files through a pipe. |
+| [Snowpipe Streaming](#choose-the-path) | Ingesting rows through streaming channels rather than first treating each input as a staged file. |
+| [VARIANT](#query-and-transform-safely) | A Snowflake type that can hold semi-structured values, including nested objects and arrays. |
+| [Null value](#query-and-transform-safely) | A marker for a missing or unknown value. Count and comparison operations may treat it differently from a supplied zero. |
+| [Partition pruning](#query-and-transform-safely) | Using metadata and predicates to skip partitions that cannot contain relevant records. |
+| [Clustering](#query-and-transform-safely) | Organizing related data together according to chosen columns or expressions so selective reads can skip more unrelated storage. |
+| [FLATTEN](#query-and-transform-safely) | A table function that turns nested array or object values into rows for relational querying. |
+
+**Roles, privileges and data access**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Role](#trace-effective-authorization) | A collection of privileges that can be granted to users or other roles, determining which actions are authorized. |
+| [Role-derived privileges](#trace-effective-authorization) | The privileges available through active roles and the roles they inherit. Trace the grant chain to explain what a role allows the session to do. |
+| [Privilege](#trace-effective-authorization) | A grant for a specified action or capability on an object or at an account scope. |
+| [Role hierarchy](#trace-effective-authorization) | The graph of role grants through which a parent role can inherit privileges assigned to another role. |
+| [OWNERSHIP](#trace-effective-authorization) | The object-control privilege held by an owning role, distinct from specific consumption grants such as SELECT. |
+
+**Data protection and collaboration**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Time Travel](#5-data-protection-and-collaboration) | Access to eligible earlier table data or object states within the applicable retention period. |
+| [Data retention](#5-data-protection-and-collaboration) | How long data or recoverable history is kept before removal under an explicit operational or governance policy. |
+| [Replication](#5-data-protection-and-collaboration) | Maintaining additional copies of data across locations or instances. Replicated errors can propagate, so copies still need a separate recovery strategy. |
+| [Data sharing](#5-data-protection-and-collaboration) | Making selected objects available to authorized consumers through governed access, with provider and consumer responsibilities for visibility and compute. |
+| [Fail-safe](#5-data-protection-and-collaboration) | A Snowflake-managed recovery period for eligible data after Time Travel, with separate purpose and access from ordinary user recovery. |
+| [Clone](#5-data-protection-and-collaboration) | An independent logical copy of eligible objects that can initially share underlying storage while later changes diverge. |
+
+**Cortex AI functions**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Cortex AI function](#6-cortex-ai-functions) | A SQL-callable Snowflake function that applies a model to a task such as summarizing text. Review the output against representative examples before using it for a business decision. |
+| [Output schema](#6-cortex-ai-functions) | The fields and types an application expects from a model response. A result can fit that structure yet contain a fact unsupported by the source text. |
+
+**Executed local loading workbook**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Primary key](#executed-local-loading-workbook) | A field or combination of fields chosen to identify an individual record uniquely in the relevant table. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Quarantine](#scenario-2-semi-structured-support-events) | Retaining rejected records and rejection reasons separately so they can be investigated without contaminating trusted outputs. |
+| [Warehouse size](#hands-on-evidence-labs) | The compute capacity selected for a virtual warehouse, influencing available resources, runtime and credit usage. |
+
 ## Places to learn
 
 This is not a complete list. Use the current replacement course and measured practice gaps to choose additional resources. Public information was checked September 29, 2026. Study budgets are estimates; public course descriptions do not establish lesson quality or completion.

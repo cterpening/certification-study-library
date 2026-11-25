@@ -402,6 +402,86 @@ A high-volume feed publishes stale shared-cloud IPs. Stop automated enforcement,
 - [ ] I can answer all original checks and complete the labs with fixtures, versions, evidence, failures and rollback.
 - [ ] I rechecked the live page, datasheet, handbook, deployed XSOAR model/version docs, Marketplace dependencies and registration terms.
 
+## Key terms and phrases
+
+**Planning, installation, and maintenance**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Authentication](#11-system-authentication-and-authorization) | Checking that a claimant controls an authenticator bound to the claimed identity. It precedes the separate decision about permitted actions. |
+| [Authorization](#11-system-authentication-and-authorization) | Determining whether a given identity may perform a specific action on the particular resource requested. |
+| [Engine](#12-engines) | A component deployed near a target service so XSOAR integrations can communicate with systems in that network. |
+| [Service account](#12-engines) | A nonhuman identity used by software or automation. Scope, credential lifecycle and ownership govern what happens when it is compromised or retired. |
+| [Promotion](#13-devprod-deployment) | Moving reviewed and tested content from development to production with controlled scope and a recovery path. |
+| [Version control](#13-devprod-deployment) | Recording changes to files as identifiable revisions so users can compare, review and recover previous states. |
+| [Retention](#14-marketplace-packs) | The period for which telemetry remains available for investigation. A search outside that period cannot establish inactivity. |
+| [Content pack](#14-marketplace-packs) | A versioned package of integrations, playbooks or other content with dependencies that should be tested before rollout. |
+| [Integration instance](#15-integration-instances) | A configured connection to a particular service, including its credentials, scope and permitted operations. |
+| [Certificate authority (CA)](#15-integration-instances) | A trusted issuer that signs certificates linking subjects to public keys under a stated policy. |
+| [Retry](#15-integration-instances) | Repeating an operation after a transient failure. When the first attempt’s outcome is unknown, idempotence matters before retrying a write. |
+
+**Use-case planning and development**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Incident](#21-incident-and-indicator-lifecycles) | A case that groups related alerts and evidence so an analyst can assess scope and coordinate a response. |
+| [Indicator](#21-incident-and-indicator-lifecycles) | An observable value or pattern used to find potentially relevant activity. A match needs source context and timing before it supports an incident conclusion. |
+| [Classifier](#23-classifiers-and-mappers) | Logic that assigns incoming data to an incident type so it receives the appropriate handling workflow. |
+| [Mapper](#23-classifiers-and-mappers) | Logic that copies or transforms incoming values into the incident fields expected by the workflow. |
+| [Null](#23-classifiers-and-mappers) | A representation of absent or unknown data. Filtering for a value of zero does not necessarily select records where the field is null. |
+| [Severity](#23-classifiers-and-mappers) | A rating of expected or observed impact. It differs from confidence, which expresses how strongly the evidence supports the assessment. |
+| [Webhook](#24-incident-creation) | An event-driven message sent to a configured endpoint, such as a repository notification that triggers a scan. |
+| [Metrics](#25-preprocessing-and-postprocessing) | Numerical time series used to quantify behavior such as latency, error rate or capacity. Aggregation and labels determine what the values represent. |
+| [Escalation](#26-incident-type-playbooks-layouts-and-slas) | Passing a case to the person or team with authority or expertise to make the next decision when defined conditions are met. |
+| [Incident type](#26-incident-type-playbooks-layouts-and-slas) | A classification that associates a case with its expected fields, layouts, handling rules or playbook. |
+| [Allowlist](#27-lists) | An explicit set of approved identities, applications or actions, with other cases subject to the applicable default policy. |
+| [Threshold](#27-lists) | The value or condition that triggers a rule or changes an operational decision, such as five matching events in a ten-minute interval. |
+
+**Playbook development**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Context data](#32-context-data) | Structured information carried through a playbook run, such as an extracted domain or an enrichment result. |
+| [Idempotence](#33-task-types) | Making an operation safe to repeat without accumulating unintended effects. A retried request to create one case should still yield one case. |
+| [Sub-playbook](#34-sub-playbooks) | A reusable playbook invoked as a task with defined inputs and outputs. |
+| [Entity](#34-sub-playbooks) | An identifiable resource such as a user, workload or host whose activities and relationships can be investigated. |
+| [Rate limiting](#34-sub-playbooks) | Restricting the number or rate of operations in a defined interval to protect capacity. A limit applied per identity behaves differently from one applied per IP address. |
+| [Transformer](#35-filters-and-transformers) | An operation that reshapes a task input or output, such as extracting a field from each item in a list. |
+| [Playbook](#36-playbook-debugger) | A defined workflow for handling a type of case, including inputs, decisions, actions and evidence. |
+| [Playbook debugger](#36-playbook-debugger) | A tool for observing task inputs, outputs and branching during a playbook run so unexpected behavior can be located. |
+| [Deduplication](#39-jobs) | Recognizing and handling repeated copies of the same observation or request so duplication does not inflate counts or repeat an action. |
+
+**Incident interactions and reporting**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Alert](#41-incident-states-and-actions) | A detection output identifying an event or pattern that warrants assessment. |
+| [Case disposition](#41-incident-states-and-actions) | The recorded conclusion of an investigation and the evidence supporting it, such as verified benign activity or confirmed unauthorized access. |
+| [War Room](#42-war-room) | The case workspace that records commands, results, notes and investigation activity. |
+| [Dashboard](#44-dashboards-and-reports) | A set of visual summaries for a defined operational question. Filters, coverage and collection delays determine what the displayed totals represent. |
+| [Widget](#44-dashboards-and-reports) | An individual dashboard display driven by a query, metric or filter, such as event counts by source for the selected period. |
+
+**Threat intelligence management**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Threat Intelligence Management (TIM)](#51-features) | Management of indicators and intelligence context, including source reliability, enrichment, expiry and sharing policy. |
+| [Hash](#52-indicator-creation) | A fixed-size digest derived from input data. Comparing a file’s digest to a trusted reference can detect modification without revealing who modified it. |
+| [Indicator enrichment](#55-enrichment-and-source-reliability) | Adding facts such as source, sightings and reputation to an observable so its relevance can be assessed. |
+| [Enrichment](#55-enrichment-and-source-reliability) | Adding context, such as asset criticality or previous sightings, to an indicator or event so an analyst can interpret it. |
+| [Reputation](#55-enrichment-and-source-reliability) | A source’s assessment of an observable such as a domain or file. A previously positive or negative rating may not describe its current use. |
+| [Pagination](#56-external-sharing) | Splitting a response into multiple pages. A consumer that stops after the first page can silently report an incomplete inventory. |
+| [Schema](#56-external-sharing) | A definition of expected data structure, field types and constraints. A syntactically valid payload may still fail schema or business validation. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Phishing](#phishing-automation) | An impersonation attempt that tries to induce an unsafe action or disclosure. Message appearance alone cannot establish the sender’s identity. |
+| [Quarantine](#phishing-automation) | Restricting the access or use of a device, file or message pending investigation. The quarantine boundary and release authority matter. |
+| [Containment](#dev-to-prod-containment-workflow) | Limiting the scope or ongoing effects of an incident, such as isolating the affected device under an approved response plan. |
+| [Threat intelligence](#threat-feed-quality-failure) | Assessed information about adversary activity or indicators, with source, context and freshness to guide a decision. |
+
 ## Places to learn
 
 This is a selective starting set, not a complete list and not a prescription to consume everything. Pick and choose official documentation, structured training, secure-development references and labs that close your gaps. Times are planning estimates unless a provider publishes duration; access, model/version, packs and prices can change.

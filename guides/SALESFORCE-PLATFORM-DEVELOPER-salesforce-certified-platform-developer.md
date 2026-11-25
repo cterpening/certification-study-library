@@ -500,6 +500,68 @@ print(json.dumps({'passed': len(checks), 'checks': checks,
 
 **Related item — Winter ’27 developer context:** Salesforce's [developer release guide](https://developer.salesforce.com/blogs/2026/10/developers-guide-to-the-winter-27-release) says API 68.0 raises Apex heap limits to 10 MB synchronous/25 MB asynchronous and removes the `SF_TEMP_SHOW_SECRETS=true` CLI workaround on October 28; CLI output now redacts credentials by default. It also describes LWC complex template expressions as GA, with API/version boundaries. Verify org rollout and the cited feature-level notes before using these in a lab; they are current platform behavior, not evidence that the exam's stale Summer ’25 version label has changed. Salesforce's four-step [Platform Developer exam-prep trail](https://trailhead.salesforce.com/content/learn/trails/platform-developer-i-certification-study-guide) is listed at about 1 hr 15 min (10/35/10/20 minutes across its four badges) and uses interactive scenarios/flashcards. Use it as structured review while preserving the official objective map and testing examples in a scratch org you control.
 
+## Key terms and phrases
+
+**Developer Fundamentals**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Governor limit](#1-developer-fundamentals-27) | A platform constraint on resources a transaction can consume, such as the number of queries. Shared infrastructure makes efficient use important. |
+| [Asynchronous Apex](#1-developer-fundamentals-27) | Apex work queued for another execution context. The initiating transaction may finish before the queued work runs. |
+| [Metadata](#1-developer-fundamentals-27) | Configuration that defines how the org behaves, such as objects, fields, flows or layouts. Moving the configuration does not also move every business record. |
+| [Custom object](#1-developer-fundamentals-27) | An object an organization defines to store records for its own business process. |
+| [Master-detail relationship](#1-developer-fundamentals-27) | A parent-child relationship in which the detail inherits important ownership and sharing behavior from the master. |
+| [External ID](#1-developer-fundamentals-27) | A field used to match Salesforce records to identifiers in another system, for example during a controlled upsert. |
+| [Object](#1-developer-fundamentals-27) | A Salesforce data-model entity, comparable to a table. An Account object holds account records and defines the fields each can have. |
+| [Field](#1-developer-fundamentals-27) | A named data element on an object, such as an Opportunity's Close Date. Its type determines which values it can store. |
+| [Upsert](#1-developer-fundamentals-27) | An operation that updates an existing record when the supplied matching key finds it and inserts when no match is found. |
+| [Record sharing](#version-access-and-development-assistant-boundaries) | The rules determining which individual records an identity may see or edit after object permissions are considered. |
+| [`stripInaccessible()`](#version-access-and-development-assistant-boundaries) | An Apex security operation that removes fields inaccessible for a specified access type from records before further use. |
+| [User mode](#version-access-and-development-assistant-boundaries) | An execution mode that enforces the acting user's access for the specified data operation. Its guarantees depend on the operation and API version. |
+| [`with sharing`](#version-access-and-development-assistant-boundaries) | An Apex class declaration that applies record-level sharing in its execution context. Object and field access require their own enforcement. |
+
+**Process Automation and Logic**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Trigger](#2-process-automation-and-logic-28) | Apex logic that runs before or after specified changes to records. A single invocation can receive many records. |
+| [Callout](#2-process-automation-and-logic-28) | An outbound request from Salesforce to an external service. A test mock can reproduce success and failure without contacting the live endpoint. |
+| [Apex](#2-process-automation-and-logic-28) | Salesforce's server-side programming language for custom logic, such as a trigger or service class running within platform limits. |
+| [Data manipulation language (DML)](#2-process-automation-and-logic-28) | Operations that insert, update or delete Salesforce records in a transaction. Bulk DML applies one operation to a collection. |
+| [Order of execution](#2-process-automation-and-logic-28) | The sequence of platform validation and automation during a save. One record change can invoke several layers of logic. |
+| [Batch Apex](#2-process-automation-and-logic-28) | An asynchronous mechanism that processes large sets of records in multiple batches, each with its own execution context. |
+| [Invocable method](#2-process-automation-and-logic-28) | An Apex entry point exposed to automation such as Flow. Its input and output contract must handle the collection of requests it receives. |
+| [Queueable Apex](#2-process-automation-and-logic-28) | An Apex job submitted for asynchronous execution in a separate transaction, useful when work can finish after the current request. |
+| [Salesforce Object Query Language (SOQL)](#2-process-automation-and-logic-28) | Retrieves records and related fields from Salesforce objects. A bulk query can serve all records in a trigger batch. |
+| [Salesforce Object Search Language (SOSL)](#2-process-automation-and-logic-28) | Searches text across multiple Salesforce objects, useful when the user has a term but does not know which object holds the match. |
+| [Bulkification](#bulk-work-repeat-behavior-and-commit-boundaries) | Designing logic to process a collection of records together, for example by querying related data once and writing changes in batches. |
+| [Transaction](#bulk-work-repeat-behavior-and-commit-boundaries) | A unit of work whose changes are committed together or rolled back. Asynchronous work can begin a separate transaction. |
+| [Trigger context](#bulk-work-repeat-behavior-and-commit-boundaries) | Information about the operation that fired a trigger, including the affected records and, for supported events, their previous values. |
+
+**User Interface**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Lightning Web Component (LWC)](#3-user-interface-25) | A reusable web component for the Salesforce interface that can display data and communicate with other components. |
+| [Controller](#3-user-interface-25) | The code behind a user interface that supplies data or handles actions. It must enforce the relevant access rules for data it exposes. |
+| [Lightning Data Service (LDS)](#3-user-interface-25) | A client-facing service for accessing Salesforce record data in Lightning components while applying platform access controls. |
+| [Visualforce](#3-user-interface-25) | Salesforce's page framework that can bind markup to a controller. An existing Visualforce page may depend on controller logic and page access. |
+| [Wire service](#3-user-interface-25) | Delivers reactive data to a Lightning Web Component. A change in a reactive parameter can cause it to receive new data. |
+| [Field-level security](#a-secure-browser-does-not-make-an-unrestricted-query-safe) | A user's permission to read or edit a particular field. Record visibility alone does not establish access to every field on it. |
+| [Static resource](#a-secure-browser-does-not-make-an-unrestricted-query-safe) | A file packaged as Salesforce metadata for use by an application, such as a client-side asset. |
+
+**Testing, Debugging, and Deployment**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Callout mock](#4-testing-debugging-and-deployment-20) | A test substitute that supplies a controlled response to an external request, making error paths repeatable. |
+| [`Test.startTest()` and `Test.stopTest()`](#4-testing-debugging-and-deployment-20) | Delimit the part of an Apex test under examination and provide a fresh governor-limit context. Assert the resulting records or side effects afterward. |
+| [`@testSetup`](#4-testing-debugging-and-deployment-20) | Creates shared starting test records for methods in an Apex test class, reducing repeated setup while keeping tests isolated. |
+| [Sandbox](#4-testing-debugging-and-deployment-20) | A separate Salesforce environment used for development, testing or training. Choose its data and configuration fidelity around the test. |
+| [Test data factory](#4-testing-debugging-and-deployment-20) | Reusable test setup that creates controlled records with known relationships so assertions do not depend on live organization data. |
+| [Assertion](#evidence-that-exposes-the-wrong-implementation) | A test check that compares an observed outcome with the expected result. It can expose incorrect behavior even when the relevant lines executed. |
+| [Code coverage](#evidence-that-exposes-the-wrong-implementation) | The share of executable code reached by tests. Executing a line alone does not prove that the outcome was correct. |
+
 ## Places to learn
 
 This is **not a complete list** and is not meant to be consumed in full. Choose resources for identified gaps. Current public catalog metadata is distinguished from earlier observations and our planning estimates; paid interiors and practice quality were not verified.

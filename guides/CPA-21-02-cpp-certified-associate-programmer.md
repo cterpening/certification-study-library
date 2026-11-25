@@ -866,6 +866,88 @@ These eight broader learner labs remain proposed. The bounded workbook above exe
 - [ ] I recognize legacy `throw()` while using current RAII/`noexcept` context appropriately.
 - [ ] I rechecked the live official page immediately before purchase.
 
+## Key terms and phrases
+
+**Types and operators**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Narrowing conversion](#types-literals-and-conversions) | Converting to a type that cannot represent every source value exactly, such as converting a floating-point value to an integer. |
+| [Implicit conversion](#types-literals-and-conversions) | A type conversion performed by the language rules, for example promoting a smaller integer before arithmetic. |
+| [Cast](#types-literals-and-conversions) | An explicit request to convert an expression to a specified type. The requested change may lose information. |
+| [Object lifetime](#types-literals-and-conversions) | The period during which a particular object exists and access to it is permitted under the language rules. |
+| [Operator precedence](#operators-and-expression-tracing) | The rules that group operators in an expression. Grouping an expression does not determine the evaluation order of every operand. |
+| [Short-circuit evaluation](#operators-and-expression-tracing) | Evaluating the right operand of logical AND or OR only when the left operand leaves the result undecided. |
+| [Bitwise operator](#operators-and-expression-tracing) | An operator working on individual bits, such as combining flag masks with OR or testing selected bits with AND. |
+| [Compiler](#boundary-cases-worth-predicting) | The program translating a translation unit and checking that it meets the selected language rules. |
+| [Remainder](#boundary-cases-worth-predicting) | The integer part left after division. For positive operands, 17 divided by 5 has quotient 3 and remainder 2. |
+| [Pointer dereference](#boundary-cases-worth-predicting) | Using a pointer to access its target. The target must still exist and be valid for the attempted access. |
+| [Buffer capacity](#boundary-cases-worth-predicting) | The number of elements a buffer can hold under its allocation. Appending data requires room within that bound. |
+| [Reference](#boundary-cases-worth-predicting) | An alias bound to an existing object or function. Updating a writable reference changes its referent. |
+| [Iterator](#boundary-cases-worth-predicting) | A position-like object through which an algorithm can traverse elements within the operations its category permits. |
+| [Container capacity](#boundary-cases-worth-predicting) | The number of elements a container such as a vector can hold before it needs to obtain more storage. |
+| [Reallocation](#boundary-cases-worth-predicting) | Replacing a container’s storage with a different allocation, which can invalidate pointers, references and iterators into the old storage. |
+
+**Control and exceptions**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Switch statement](#2-control-and-exceptions-18) | Selection among case labels using an expression. Control can continue into a later case unless an intervening operation leaves the switch. |
+| [Automatic storage duration](#2-control-and-exceptions-18) | Storage associated with entering and leaving a block or call, as for many local variables. |
+| [Object slicing](#2-control-and-exceptions-18) | Copying a derived object into a base object by value, retaining only the base part. |
+| [Exception handler](#2-control-and-exceptions-18) | A catch clause selected for a compatible thrown exception. Cleanup of scopes left by the throw happens during unwinding. |
+| [Stack unwinding](#unwinding-matching-and-language-versions) | When an exception leaves a scope, C++ destroys the fully constructed automatic objects in that scope. |
+| [Destructor](#unwinding-matching-and-language-versions) | A special member function run when an object is destroyed, often releasing resources it owns. |
+| [RAII](#unwinding-matching-and-language-versions) | Resource Acquisition Is Initialization ties resource ownership to an object’s lifetime so its destructor performs cleanup. |
+
+**Functions and preprocessor**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Overload resolution](#calls-overloads-defaults-and-recursion) | Selecting a function from same-name candidates using the argument types and permitted conversions. |
+| [Definition](#calls-overloads-defaults-and-recursion) | A declaration that supplies the actual entity, such as a function body or an object with storage. |
+| [Function parameter](#calls-overloads-defaults-and-recursion) | A declared input to a function, bound to a supplied argument when the function is called. |
+| [Return value](#calls-overloads-defaults-and-recursion) | The value a function provides to its caller through its return operation under the declared return type. |
+| [Recursion](#calls-overloads-defaults-and-recursion) | A function calling itself, normally on a smaller instance of the problem with a terminating case. |
+| [Overload](#calls-overloads-defaults-and-recursion) | A same-name function with a distinct parameter list. The compiler selects a viable candidate for a given call. |
+| [Include guard](#preprocessing) | A preprocessor condition that prevents a header’s contents from being processed repeatedly within one translation unit. |
+| [Preprocessor directive](#preprocessing) | An instruction acted on before compilation, for example including a header or defining a macro. |
+| [Command-line argument](#resolving-a-call-before-predicting-its-body) | Text passed to a program at startup. Numeric-looking arguments require parsing and validation before numeric use. |
+
+**Pointers**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Null pointer](#4-pointers-11) | A pointer value designating no object or function. It may serve as a marker but cannot be dereferenced. |
+| [Memory leak](#4-pointers-11) | Allocated storage that is never released when it is no longer needed, often because its owning reference was lost. |
+| [Dynamic allocation](#allocation-is-a-construction-operation) | Obtaining storage during execution. A new-expression also initializes the object created there. |
+| [Array bound](#allocation-is-a-construction-operation) | The limits of valid element positions. For an array of length n, valid indices run from zero through n minus one. |
+| [Undefined behavior](#allocation-is-a-construction-operation) | An operation for which the language imposes no requirements, such as accessing an array outside its valid range. |
+
+**Classes and namespaces**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Copy constructor](#encapsulation-construction-and-copying) | A constructor that initializes a new object from an existing object of its class. |
+| [Class invariant](#encapsulation-construction-and-copying) | A condition each usable instance must satisfy. Constructors establish it, and operations such as assignment must preserve it. |
+| [Structure member](#encapsulation-construction-and-copying) | A named component of a structure or class instance, such as the quantity field in an inventory record. |
+| [Object constructor](#encapsulation-construction-and-copying) | A function used to initialize an object of a class, including the members needed for a valid initial state. |
+| [Virtual dispatch](#inheritance-and-polymorphism) | Selecting an overridden virtual function at run time according to the object’s actual type. |
+| [Inheritance](#inheritance-and-polymorphism) | Defining a derived class using a base class as part of its structure and behavior. |
+| [Virtual function](#inheritance-and-polymorphism) | A member function supporting run-time choice of the override when called through a suitable base pointer or reference. |
+| [Namespace](#namespaces) | A scope that groups declarations. If two named namespaces each declare `count`, `team::count` selects the one in `team`. A namespace can also be unnamed. |
+| [Header](#namespaces) | A file included during preprocessing to make declarations, type definitions or templates available to a translation unit. |
+| [Scope](#namespaces) | The part of the program in which a declaration can be found by name. Visibility and object lifetime can differ. |
+| [Translation unit](#namespaces) | One source file after preprocessing, including the declarations and definitions brought in by its headers. |
+| [Namespace qualification](#namespaces) | Identifying a name with its enclosing namespace, for example selecting a standard library entity using std. |
+| [Const qualification](#invariants-across-copying-construction-and-access) | A restriction on modification through the qualified expression or access path. |
+
+**Original readiness checks**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Base class](#original-readiness-checks) | A class supplying inherited members or an interface to derived classes. |
+
 ## Places to learn
 
 This is not a complete list, and it is not meant to be consumed in full. Pick one aligned primary path, then use current references for difficult language rules and write substantial class/exception projects. Reconcile third-party examples with the active CPA-21-02 outline and their declared C++ version.

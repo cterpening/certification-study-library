@@ -333,6 +333,90 @@ Correlate identity, cloud control, endpoint, network and asset/vulnerability con
 - [ ] I can answer all original checks and complete architecture labs with current sources, dated assumptions and defended tradeoffs.
 - [ ] I rechecked the live page, datasheet, handbook, product/pipeline support, licenses, privacy/regulatory obligations and registration terms.
 
+## Key terms and phrases
+
+**Business alignment and strategy**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Data residency](#11-data-residency-retention-and-access-control-models) | Where security data is stored or processed, a design constraint distinct from how long the data is retained. |
+| [Authentication](#11-data-residency-retention-and-access-control-models) | Checking that a claimant controls an authenticator bound to the claimed identity. It precedes the separate decision about permitted actions. |
+| [Incident](#11-data-residency-retention-and-access-control-models) | A case that groups related alerts and evidence so an analyst can assess scope and coordinate a response. |
+| [Retention](#11-data-residency-retention-and-access-control-models) | The period for which telemetry remains available for investigation. A search outside that period cannot establish inactivity. |
+| [Threat intelligence](#11-data-residency-retention-and-access-control-models) | Assessed information about adversary activity or indicators, with source, context and freshness to guide a decision. |
+| [Indicator](#12-architecture-aligned-to-licenses) | An observable value or pattern used to find potentially relevant activity. A match needs source context and timing before it supports an incident conclusion. |
+| [Threat Intelligence Management (TIM)](#12-architecture-aligned-to-licenses) | Management of indicators and intelligence context, including source reliability, enrichment, expiry and sharing policy. |
+| [Mean time to detect (MTTD)](#13-soc-performance-metrics-and-reporting) | The average interval from a defined incident start to detection. Detection delays of 5, 10 and 30 minutes give an MTTD of (5 + 10 + 30) ÷ 3 = 15 minutes. |
+| [Containment](#13-soc-performance-metrics-and-reporting) | Limiting the scope or ongoing effects of an incident, such as isolating the affected device under an approved response plan. |
+| [Ingestion](#13-soc-performance-metrics-and-reporting) | Bringing source records into the security platform for analysis. Missing input limits what a dashboard can show. |
+| [Metrics](#13-soc-performance-metrics-and-reporting) | Numerical time series used to quantify behavior such as latency, error rate or capacity. Aggregation and labels determine what the values represent. |
+| [Security operations center (SOC)](#13-soc-performance-metrics-and-reporting) | The people and processes that monitor security signals, investigate incidents and coordinate response. |
+
+**Platform and data architecture**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Data pipeline](#21-data-pipeline-architecture) | The stages that move source evidence through collection, parsing, normalization and storage into analytics. |
+| [Dataset](#21-data-pipeline-architecture) | A named collection of records queried in XQL. Its schema and available time range limit what an investigation can establish. |
+| [Deduplication](#21-data-pipeline-architecture) | Recognizing and handling repeated copies of the same observation or request so duplication does not inflate counts or repeat an action. |
+| [Disaster recovery plan (DRP)](#21-data-pipeline-architecture) | The procedures and resources for restoring technology and data after a major disruption, in an order that supports business priorities. |
+| [Load balancer](#21-data-pipeline-architecture) | A component that sends eligible requests or connections to selected backends using health and distribution policy. |
+| [Ingestion lag](#21-data-pipeline-architecture) | The elapsed time between an event’s occurrence and its availability to queries or rules. Delayed records can cause apparently quiet recent periods. |
+| [Tenant isolation](#22-tenant-structure-multitenancy-and-component-placement) | Separation of data, identities, administrative rights and response actions across customer or organizational boundaries. |
+| [Aggregation](#22-tenant-structure-multitenancy-and-component-placement) | Combining records by defined keys to calculate a result such as event count per user or average delay per site. |
+| [Entity](#22-tenant-structure-multitenancy-and-component-placement) | An identifiable resource such as a user, workload or host whose activities and relationships can be investigated. |
+| [Failure domain](#22-tenant-structure-multitenancy-and-component-placement) | A set of components that can fail together, such as workloads sharing a physical host, power source or region. |
+| [Tenant](#22-tenant-structure-multitenancy-and-component-placement) | An administrative or customer boundary in a shared service. Data, identities, configurations and actions must stay within the intended tenant. |
+| [Broker VM](#broker-vm-architecture) | An intermediary appliance that connects supported data sources and applets to Cortex across a defined network boundary. |
+| [Virtual machine (VM)](#broker-vm-architecture) | An isolated software-defined computer with a guest operating system and virtual hardware allocated from a host. |
+| [Extended detection and response (XDR)](#xdr-collector-deployment) | Correlating evidence across endpoints and additional sources to support detection, investigation and response in a common operational context. |
+| [XDR Collector](#xdr-collector-deployment) | A component that collects and forwards supported source logs for ingestion, distinct from endpoint prevention software. |
+| [Endpoint detection and response (EDR)](#engine-deployment) | Collection and analysis of endpoint activity to detect suspicious behavior, investigate it and support a response. |
+| [Hardening](#engine-deployment) | Reducing avoidable exposure by configuring a system for its intended purpose, such as disabling an unused service or removing excess permissions. |
+| [Heartbeat](#engine-deployment) | An exchange that lets HA peers monitor one another. A working heartbeat alone does not establish that an application data path works. |
+| [Threat intelligence feed](#23-data-source-integration-and-feed-strategy) | A recurring supply of indicators or contextual intelligence whose provenance, freshness and reliability must be assessed. |
+| [Data source](#23-data-source-integration-and-feed-strategy) | A system supplying records to the analysis platform. Identify the expected event kinds and population before relying on a quiet dashboard. |
+| [Schema](#23-data-source-integration-and-feed-strategy) | A definition of expected data structure, field types and constraints. A syntactically valid payload may still fail schema or business validation. |
+| [Vulnerability](#23-data-source-integration-and-feed-strategy) | A weakness in a system or process that could permit harm. The associated risk depends on exposure, likelihood and impact. |
+| [Workload identity](#23-data-source-integration-and-feed-strategy) | An identity used by software, such as a service account, to authenticate and access resources without acting as a human user. |
+
+**Automation and detection strategy**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Custom prevention](#31-strategy-from-data-business-and-best-practice) | A configured prevention condition used for a defined endpoint behavior or indicator, with testing required to understand what would be blocked. |
+| [Data freshness](#31-strategy-from-data-business-and-best-practice) | How recently the data needed for a decision was observed or updated. A successful query against stale records can give a misleading view of current state. |
+| [Escalation](#31-strategy-from-data-business-and-best-practice) | Passing a case to the person or team with authority or expertise to make the next decision when defined conditions are met. |
+| [Severity](#31-strategy-from-data-business-and-best-practice) | A rating of expected or observed impact. It differs from confidence, which expresses how strongly the evidence supports the assessment. |
+| [Detection parity](#32-legacy-siem-detection-and-automation-migration) | Evidence that a migrated detection still covers the behavior and data its predecessor was intended to detect. |
+| [Context data](#32-legacy-siem-detection-and-automation-migration) | Structured information carried through a playbook run, such as an extracted domain or an enrichment result. |
+| [Data model](#32-legacy-siem-detection-and-automation-migration) | A defined set of entities, fields and relationships used to organize information consistently across integrations or cases. |
+| [False positive](#32-legacy-siem-detection-and-automation-migration) | An alert that classifies benign activity as a target condition. Repeated benign alerts can distort operational priorities. |
+| [Security information and event management (SIEM)](#32-legacy-siem-detection-and-automation-migration) | Collection and analysis of security records from multiple systems to support detection and investigation. |
+| [Promotion](#33-development-and-production-tenants) | Moving reviewed and tested content from development to production with controlled scope and a recovery path. |
+| [Content pack](#33-development-and-production-tenants) | A versioned bundle of components such as integrations, playbooks or detection content with dependencies to validate before deployment. |
+| [Incident type](#33-development-and-production-tenants) | A classification that associates a case with its expected fields, layouts, handling rules or playbook. |
+| [Integration instance](#33-development-and-production-tenants) | A configured connection to a particular service, including its credentials, scope and permitted operations. |
+| [Playbook automation](#34-agentic-versus-playbook-automation) | Execution of predefined steps and decision branches using case data and integrations. |
+| [Agentic automation](#34-agentic-versus-playbook-automation) | Automation in which a model selects some intermediate actions dynamically within its assigned tools, permissions and approval boundaries. |
+| [Approval gate](#34-agentic-versus-playbook-automation) | A point where an authorized person must review available evidence before a workflow performs a sensitive or high-impact action. |
+| [Playbook](#34-agentic-versus-playbook-automation) | A defined workflow for handling a type of case, including inputs, decisions, actions and evidence. |
+
+**Cross-domain architecture patterns**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Evidence preservation](#agentic-phishing-response) | Maintaining the integrity and provenance of information needed for investigation, including original timestamps, collection method and access history. |
+| [Phishing](#agentic-phishing-response) | An impersonation attempt that tries to induce an unsafe action or disclosure. Message appearance alone cannot establish the sender’s identity. |
+| [Schema validation](#agentic-phishing-response) | Comparing an incoming record or API message with the expected structure and types before trusting downstream interpretation. |
+| [Multicloud](#multicloud-credential-compromise) | Use of services from multiple cloud providers. Common objectives can require different identities, APIs or controls in each provider. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Data lifecycle](#hands-on-architecture-labs) | The stages data passes through from creation and use to retention and disposal. Required safeguards can change between stages. |
+
 ## Places to learn
 
 This is a selective starting set, not a complete list and not a prescription to consume everything. Pick official reference architectures, engineering refreshers, primary frameworks and architecture exercises that close your gaps. Times are planning estimates unless a provider publishes duration; features, licenses, laws, access and pricing change.

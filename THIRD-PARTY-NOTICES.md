@@ -2,6 +2,14 @@
 
 This file records third-party material that materially influenced the structure, examples, or coverage of original content in this repository. Links and citations elsewhere remain governed by their source publishers.
 
+## Synthetic narration for the study podcasts
+
+The six recordings in [Study podcasts](examples/podcasts/README.md) use the
+built-in F1 and M1 voices from Supertone’s Supertonic 3. The introduction identifies
+both voices as synthetic. Each recording has a production record with the script
+and audio fingerprints. The model and voice files are available from their
+publisher. [Model and voice presets](https://huggingface.co/Supertone/supertonic-3/tree/3cadd1ee6394adea1bd021217a0e650ede09a323/voice_styles) · [Model license and output terms](https://huggingface.co/Supertone/supertonic-3/blob/3cadd1ee6394adea1bd021217a0e650ede09a323/LICENSE)
+
 ## Microsoft Azure architecture icons
 
 The selected original SVGs under `website/assets/study-icons/assets/` are Microsoft

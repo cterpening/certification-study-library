@@ -866,6 +866,78 @@ if __name__ == "__main__":
 - [Official PCEI page](https://pythoninstitute.org/pcei) controls status/delivery but contains conflicting practice-release dates and stale PCAI text; verify current availability.
 - Technical grounding: [scikit-learn user guide](https://scikit-learn.org/stable/user_guide.html), [Pandas](https://pandas.pydata.org/docs/), [NumPy](https://numpy.org/doc/stable/), and [NIST AI RMF](https://www.nist.gov/itl/ai-risk-management-framework).
 
+## Key terms and phrases
+
+**AI fundamentals**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Supervised learning](#1-ai-fundamentals-140) | Training from examples that pair input features with a known outcome. |
+
+**Machine-learning fundamentals**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Overfitting](#2-machine-learning-fundamentals-165) | Learning patterns peculiar to the training examples so that performance drops on new data. |
+| [Train/test split](#2-machine-learning-fundamentals-165) | Separating model-building observations from observations reserved to estimate performance on unseen cases. |
+| [Precision](#2-machine-learning-fundamentals-165) | For classification, the fraction of predicted positives that are correct. With eight true positives and two false positives, precision is 80%. |
+| [Confusion matrix](#2-machine-learning-fundamentals-165) | Counts of predicted versus actual classes, exposing the types of errors that an overall accuracy percentage may hide. |
+| [Classification](#2-machine-learning-fundamentals-165) | Assigning an observation to a category according to input features and a decision rule. |
+| [Unsupervised learning](#2-machine-learning-fundamentals-165) | Finding structure in examples without a provided target label, as when grouping similar records. |
+| [Reinforcement learning](#2-machine-learning-fundamentals-165) | Learning a policy for choosing actions from the rewards obtained by interacting with an environment. |
+| [Decision tree](#2-machine-learning-fundamentals-165) | A model that routes an observation through successive feature tests to a leaf prediction. |
+| [k-nearest neighbors (k-NN)](#2-machine-learning-fundamentals-165) | Predicting from the outcomes of nearby training examples, with the distance rule and number of neighbors affecting the result. |
+| [Underfitting](#2-machine-learning-fundamentals-165) | A model’s inability to capture useful structure even in the training data, often visible as poor performance across multiple splits. |
+| [Feature](#fit-evaluate-and-compare-like-with-like) | An input measurement supplied to a model, such as the age of a request at the time a prediction is made. |
+| [Label](#fit-evaluate-and-compare-like-with-like) | The known outcome paired with an example for supervised learning and evaluation. |
+| [Outlier](#fit-evaluate-and-compare-like-with-like) | An observation unusually far from the rest under a chosen criterion. It can represent bad data or a genuinely rare case. |
+| [k-means](#fit-evaluate-and-compare-like-with-like) | A clustering method that alternates between assigning examples to nearby centers and updating the centers. |
+| [Training set](#fit-evaluate-and-compare-like-with-like) | Examples used to fit model parameters and learn data-dependent preprocessing. |
+| [Validation set](#fit-evaluate-and-compare-like-with-like) | A separate collection used to choose settings or thresholds before final evaluation. |
+| [Accuracy](#fit-evaluate-and-compare-like-with-like) | The fraction of evaluated predictions that match their labels. It can hide repeated errors on a minority class. |
+| [Recall](#fit-evaluate-and-compare-like-with-like) | The fraction of actual positive cases identified, so missed positives reduce the score. |
+
+**Data handling, analysis, and visualization**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Sampling bias](#3-data-handling-analysis-and-visualization-165) | Systematic distortion caused by how observations enter a sample, which can persist even with many observations. |
+| [Missing value](#3-data-handling-analysis-and-visualization-165) | An unavailable measurement. A missing duration and an observed duration of zero have different meanings in an average. |
+| [Normalization](#3-data-handling-analysis-and-visualization-165) | Rescaling a value relative to a reference minimum and maximum. A zero reference range requires an explicit handling rule. |
+| [Deduplication](#3-data-handling-analysis-and-visualization-165) | Applying an explicit identity and tie-breaking rule to repeated records. A conflicting duplicate may require investigation instead of deletion. |
+| [Fairness](#3-data-handling-analysis-and-visualization-165) | Assessing and addressing how outcomes or errors differ across groups in light of the intended decision and its consequences. |
+| [Array shape](#data-contracts-shape-and-interpretation) | The size of each dimension of an array. It lets you check that each row of features lines up with one observation. |
+| [Sample](#data-contracts-shape-and-interpretation) | The subset of observations actually collected or analyzed. Its selection influences which conclusions generalize. |
+| [Arithmetic mean](#data-contracts-shape-and-interpretation) | The sum of observed values divided by their count. The result can shift substantially when one observation is extreme. |
+| [Histogram](#data-contracts-shape-and-interpretation) | A distribution display that counts observations in numeric intervals. Changing interval boundaries can change the apparent shape. |
+| [Axis](#data-contracts-shape-and-interpretation) | The dimension along which an array operation aggregates. For a two-dimensional array, reducing axis 0 produces one result per column. |
+
+**Neural networks, deep learning, and generative AI**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Token](#4-neural-networks-deep-learning-and-generative-ai-225) | A unit of encoded model input or output, which can be a whole word, part of a word or another symbol. |
+| [Hallucination](#4-neural-networks-deep-learning-and-generative-ai-225) | A plausible-looking model output that is unsupported or wrong, requiring checks against evidence. |
+| [Activation function](#one-neuron-and-a-bounded-language-task) | A transformation of a neuron’s weighted input and bias that determines the signal passed on to the next stage. |
+| [Generative model](#one-neuron-and-a-bounded-language-task) | A model that produces new content from learned patterns. A fluent answer still needs verification against the task evidence. |
+| [Weight](#one-neuron-and-a-bounded-language-task) | A learned or assigned coefficient that controls the contribution of an input to a model’s calculation. |
+
+**Responsible AI, ethics, and critical thinking**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Accountability](#5-responsible-ai-ethics-and-critical-thinking-165) | Assigning people responsibility for the model’s use, decisions and remediation when problems arise. |
+| [Human oversight](#evidence-responsibility-and-recourse) | An assigned person’s ability to inspect, challenge and correct a system’s decision when its consequences matter. |
+| [Population](#evidence-responsibility-and-recourse) | The entire set of cases an analyst wants a conclusion to describe. |
+
+**Projects, collaboration, and communication**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Baseline](#an-original-project-card-to-challenge) | A simple reference approach used to judge whether a more complex model adds enough value. |
+| [Data feasibility](#an-original-project-card-to-challenge) | Whether permitted, suitable data and labels are available when the project needs them. A feature recorded only after a decision cannot support that decision in production. |
+| [Lifecycle cost](#an-original-project-card-to-challenge) | The cost of preparing, running, maintaining and retiring a system. A model with low inference costs can still require substantial labeling and human-review time. |
+
 ## Places to learn
 
 ### October 29, 2026 source update

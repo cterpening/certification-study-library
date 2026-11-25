@@ -15,6 +15,9 @@ An independent, AI-assisted, source-driven library of certification study guides
 The [study production process](docs/STUDY-PRODUCTION.md) turns the existing guides
 into focused study companions, visual aids, and recall cards. A separate process
 prepares two-host podcasts, with episode length and parts determined by the content.
+Listen to the [study podcasts](examples/podcasts/README.md) for Azure Fundamentals
+and Azure Data Fundamentals. Each recording includes a transcript and a question
+you can answer while listening.
 Start with the [AZ-900 visual companion](examples/study-packs/az-900-governance/study-guide.md)
 and its [two-host transcript](examples/podcasts/az-900-governance/part-01/transcript.md).
 The second pilot is [DP-900 data decisions](examples/study-packs/dp-900-data-decisions/study-guide.md).

@@ -388,6 +388,84 @@ Readiness means being able to explain a decision, implement the relevant compone
 
 The current NCA-GENL page continues to define the exam contract and public preparation topics; this refresh found no revised objective weights or exam version. As current model-development context, NVIDIA’s October 15 technical blog introduces Nemotron 3.5 Super VL, a multimodal open model, and describes customization with NeMo. The current NeMo Framework documentation covers custom language, multimodal, vision, and speech model workflows. Use these as optional examples for comparing modality, prompting, adaptation, evaluation, and deployment choices; the blog’s performance claims are vendor-reported and neither source adds exam requirements. [Nemotron 3.5 Super VL announcement](https://developer.nvidia.com/blog/nvidia-nemotron-3-5-super-vl-powers-specialized-agents-with-multimodal-reasoning/) · [NeMo Framework documentation](https://docs.nvidia.com/nemo-framework/).
 
+## Key terms and phrases
+
+**Core Machine Learning and AI Knowledge**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Feature](#1-core-machine-learning-and-ai-knowledge-30) | An input variable available when a model makes its prediction. Time of availability matters as much as the value. |
+| [Supervised learning](#1-core-machine-learning-and-ai-knowledge-30) | Learning a prediction rule from examples that include known outcomes. |
+| [Unsupervised learning](#1-core-machine-learning-and-ai-knowledge-30) | Learning structure in inputs without outcome labels, such as clustering similar examples. |
+| [Overfitting](#1-core-machine-learning-and-ai-knowledge-30) | Learning training-specific details that reduce performance on new examples, often visible as a gap between training and held-out scores. |
+| [Underfitting](#1-core-machine-learning-and-ai-knowledge-30) | A model or training procedure missing useful structure, resulting in poor performance even on training examples. |
+| [Embedding](#1-core-machine-learning-and-ai-knowledge-30) | A numeric vector representation used to compare or retrieve items according to relationships learned by a model. |
+| [Token](#1-core-machine-learning-and-ai-knowledge-30) | A unit produced by a model’s tokenizer. Word boundaries and token boundaries need not coincide. |
+| [Tokenization](#1-core-machine-learning-and-ai-knowledge-30) | Converting input text into the units expected by a language model, affecting sequence length, memory use and context limits. |
+| [Transformer](#1-core-machine-learning-and-ai-knowledge-30) | A neural-network architecture relying on attention-based layers to represent relationships in sequences. |
+| [Pretraining](#1-core-machine-learning-and-ai-knowledge-30) | Training a model on a broad initial objective before adapting it for narrower applications. |
+| [Batch dimension](#1-core-machine-learning-and-ai-knowledge-30) | The tensor dimension indexing the examples processed together, which must be distinguished from feature and sequence dimensions. |
+| [Provenance](#1-core-machine-learning-and-ai-knowledge-30) | Information tracing training data, retrieved evidence or generated artifacts back to their origin and processing history. |
+| [Parameter](#learning-a-model-adapting-a-model-and-retrieving-evidence) | A value learned during fitting, such as a model weight. |
+| [Hyperparameter](#learning-a-model-adapting-a-model-and-retrieving-evidence) | A choice governing the model or learning procedure, such as the learning rate, that is set or tuned outside the fitting step. |
+| [Fine-tuning](#learning-a-model-adapting-a-model-and-retrieving-evidence) | Continuing training on selected examples to adapt a pretrained model’s behavior. |
+| [Retrieval-augmented generation (RAG)](#learning-a-model-adapting-a-model-and-retrieving-evidence) | Fetching evidence at request time and giving it to a model as context for generating an answer. |
+| [Baseline model](#learning-a-model-adapting-a-model-and-retrieving-evidence) | A simple reference approach used to judge whether the added complexity and cost of a candidate model produce worthwhile improvement. |
+
+**Software Development**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Inference](#2-software-development-24) | Using an already trained model to produce an output for an input. |
+| [Precision](#2-software-development-24) | For a binary positive class, true positives divided by all predicted positives. It answers how often a positive prediction is correct. |
+| [Grounding](#2-software-development-24) | Tying generated claims to supplied evidence that supports them, then evaluating whether the answer stays within that evidence. |
+| [Latency](#2-software-development-24) | Elapsed time from accepting a request to delivering the defined response, often assessed at a percentile to expose slow cases. |
+
+**Experimentation**
+
+| Term or phrase | Meaning |
+|---|---|
+| [F1 score](#3-experimentation-22) | The harmonic mean of precision and recall, useful when both false positives and missed positives matter. |
+| [Model artifact](#3-experimentation-22) | A saved item associated with a model run or release, such as fitted weights, preprocessing code or evaluation output. |
+| [Model monitoring](#3-experimentation-22) | Collecting operational and quality signals after deployment, with enough context to identify changes and investigate their effects. |
+| [Guardrail](#3-experimentation-22) | An application control checking inputs, outputs or actions against a defined policy, evaluated through both allowed and blocked cases. |
+| [Data leakage](#evaluation-must-keep-the-data-and-decision-boundaries-intact) | Information unavailable at prediction time influencing training or evaluation, producing a misleading estimate of performance. |
+| [Training set](#evaluation-must-keep-the-data-and-decision-boundaries-intact) | Examples used to learn a model’s parameters and any data-dependent preprocessing. |
+| [Holdout set](#evaluation-must-keep-the-data-and-decision-boundaries-intact) | Examples reserved to assess the completed procedure on unseen cases, without selecting improvements from their results. |
+| [Cross-validation](#evaluation-must-keep-the-data-and-decision-boundaries-intact) | Repeated fitting and evaluation across controlled data splits to estimate variability or choose a procedure. |
+| [Validation fold](#evaluation-must-keep-the-data-and-decision-boundaries-intact) | The portion left aside for one evaluation round while preprocessing and model fitting use that round’s training portion. |
+
+**Data Analysis**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Class imbalance](#4-data-analysis-14) | A class distribution in which some labels are much rarer than others, making overall accuracy a potentially misleading summary. |
+| [Tensor shape](#shapes-and-data-lineage-affect-the-result) | The size of each indexed dimension in a numeric array, used to check how inputs, batches and model outputs align. |
+| [Confusion matrix](#shapes-and-data-lineage-affect-the-result) | A table counting predicted classes against actual classes, revealing how errors are distributed. |
+
+**Trustworthy AI**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Human oversight](#5-trustworthy-ai-10) | Assigning people authority to review, intervene in or override model-driven decisions according to the risk. |
+| [Hallucination](#5-trustworthy-ai-10) | A plausible-looking output containing claims unsupported by the evidence or inconsistent with known facts. |
+
+**Executed local NumPy workbook**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Cosine similarity](#executed-local-numpy-workbook) | A comparison based on the angle between nonzero vectors, useful for ranking the direction of their representations. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Accuracy](#integrated-scenarios) | For classification, the fraction of predictions matching their reference labels. A majority-class predictor can score highly on imbalanced data. |
+| [Attention](#core-machine-learning-and-ai) | A mechanism computing context-sensitive combinations of token representations so positions can use information from other positions. |
+| [Inference server](#software-development) | A service accepting requests, managing model instances and returning predictions, with throughput and latency depending on deployment settings. |
+| [Recall](#experimentation) | For a binary positive class, true positives divided by all actual positives. Missing a positive case reduces recall. |
+| [Label](#data-analysis) | The reference outcome paired with an example for supervised training or evaluation. |
+
 ## Places to learn
 
 This is not a complete list. Start with the current topic list and one teaching route, then select targeted practice. Public availability was checked September 29, 2026. Planning estimates are original suggestions; a reachable URL does not prove that its course metadata or paid content was accessible.

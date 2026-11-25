@@ -448,6 +448,78 @@ This guide is an original synthesis of public objectives and documentation. It c
 
 ---
 
+## Key terms and phrases
+
+**Development with AWS Services**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Amazon DynamoDB](#1-development-with-aws-services-32) | A managed key-value and document database. Choose keys around the reads and writes an application must perform. |
+| [Dead-letter queue (DLQ)](#choose-the-interaction-pattern) | A destination for messages that exhaust the configured delivery or processing attempts. It preserves them for investigation and controlled replay. |
+| [Circuit breaker](#choose-the-interaction-pattern) | Stops an unhealthy operation from being repeatedly attempted, for example pausing a failed rollout under its configured deployment conditions. |
+| [Idempotency](#choose-the-interaction-pattern) | The property that retrying the same intended operation does not apply its effect twice. An order API can remember the request identifier. |
+| [Visibility timeout](#choose-the-interaction-pattern) | The interval during which a received SQS message is hidden from other consumers. If processing outlasts it, the message can be delivered again. |
+| [AWS Step Functions](#choose-the-interaction-pattern) | Coordinates a sequence of application steps as a state machine, with explicit choices, retries and failure paths. |
+| [Service quota](#choose-the-interaction-pattern) | A limit on resource use or request volume within a specified scope. Reaching it can block work even when funds are available. |
+| [FIFO queue](#choose-the-interaction-pattern) | A first-in, first-out queue that preserves order within each message group. Choose the group key to match the ordering requirement. |
+| [Amazon SNS](#choose-the-interaction-pattern) | A publish-subscribe notification service. Publishing once to a topic can deliver the message to multiple subscribed destinations. |
+| [Concurrency](#develop-and-tune-lambda-functions) | The number of invocations running at once. At a steady 40 requests per second with mean duration 0.25 seconds, average concurrency is about 40 × 0.25 = 10. |
+| [AWS Lambda](#develop-and-tune-lambda-functions) | Runs application code in response to an invocation or event. The function owner selects its code, permissions and resource configuration. |
+| [Amazon SQS](#develop-and-tune-lambda-functions) | A queue that buffers messages between producers and consumers. A worker can process a message even after its producer has disconnected. |
+| [Amazon VPC](#develop-and-tune-lambda-functions) | A logically isolated network in an AWS Region, divided into subnets with routes and security controls that shape connectivity. |
+| [Container image](#develop-and-tune-lambda-functions) | A packaged file-system and runtime configuration used to start containers. A digest identifies a particular image's contents. |
+| [Backpressure](#develop-and-tune-lambda-functions) | A downstream stage forcing producers to slow or pause. If 120 events arrive per second and only 100 leave, backlog initially grows by 20 per second. |
+| [Amazon EventBridge](#build-apis-and-event-contracts) | Routes events to targets according to rules, connecting services without requiring each producer to know each consumer. |
+| [Partition key](#use-data-stores-from-access-patterns) | The DynamoDB attribute used to distribute items and locate them for key-based operations. Skewed values can concentrate traffic. |
+| [Sort key](#use-data-stores-from-access-patterns) | The second part of a composite DynamoDB primary key. It distinguishes and orders items that share a partition key. |
+| [DynamoDB time to live (TTL)](#use-data-stores-from-access-patterns) | A numeric attribute can specify when a DynamoDB item expires, in Unix epoch seconds. Because deletion happens asynchronously, check the expiry at read time if an expired session must immediately stop working. |
+| [Amazon CloudFront](#use-data-stores-from-access-patterns) | A content delivery network that serves requests from edge locations and fetches content from an origin when needed. |
+| [Amazon RDS](#use-data-stores-from-access-patterns) | Runs a managed relational database engine. Schema design, queries and application permissions remain customer decisions. |
+| [Amazon S3](#use-data-stores-from-access-patterns) | Object storage organized into buckets and keys. Retrieving a named object and mounting a block device are different access patterns. |
+| [Least privilege](#use-amazon-q-developer-safely) | Limiting an identity to the actions and resources required for its work. A read-only reporting job needs no permission to modify its source. |
+
+**Security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Federation](#2-security-26) | Accepting trusted identity assertions from another provider so users or workloads can access resources without a separate long-lived credential. |
+| [Execution role](#authenticate-and-authorize-deliberately) | The IAM role a service such as Lambda assumes on behalf of running application code. Its permissions govern what the code can access. |
+| [Resource policy](#authenticate-and-authorize-deliberately) | A policy attached to a resource, such as an S3 bucket, specifying which principals can perform particular actions on it. |
+| [AWS Key Management Service (KMS)](#encrypt-data-with-usable-key-controls) | Manages cryptographic keys and controls who may use them for operations such as decrypting a protected data key. |
+| [Encryption in transit](#encrypt-data-with-usable-key-controls) | Protecting information while it travels between endpoints, typically through an authenticated encrypted connection. |
+| [Encryption at rest](#encrypt-data-with-usable-key-controls) | Protecting stored data with encryption. Who can use the decryption key is part of the access decision. |
+| [Envelope encryption](#encrypt-data-with-usable-key-controls) | Encrypting data with a data key and protecting that key with another key. Access to the stored ciphertext alone is insufficient to read the data. |
+| [AWS Secrets Manager](#keep-sensitive-data-out-of-code-and-telemetry) | Stores sensitive values for authorized retrieval and supports rotation workflows, such as replacing a database password. |
+| [AWS Systems Manager](#keep-sensitive-data-out-of-code-and-telemetry) | A set of operational tools for managed nodes and AWS resources, including inventory, automation and secure remote access. |
+
+**Deployment**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Continuous integration (CI)](#3-deployment-24) | Frequently combining changes and testing the integrated result automatically so defects are discovered near the change that introduced them. |
+| [Infrastructure as code (IaC)](#3-deployment-24) | A versioned description of infrastructure that tools can build or update. Reviewing the proposed changes helps catch unintended replacements. |
+| [Immutable artifact](#build-immutable-reproducible-artifacts) | A built package or image kept unchanged as it moves between environments. A digest identifies exactly what was deployed. |
+| [Rollback](#build-immutable-reproducible-artifacts) | Returning traffic or software to a previously accepted release after a failed change. Database changes may require a separate recovery plan. |
+| [Artifact provenance](#build-immutable-reproducible-artifacts) | Evidence of where a deployment artifact came from, including source revision, build process and identity that produced it. |
+| [AWS CloudFormation](#build-immutable-reproducible-artifacts) | Creates or updates a group of resources from a template so infrastructure changes can be reviewed and repeated. |
+| [Change set](#build-immutable-reproducible-artifacts) | A CloudFormation preview of resource changes proposed for a stack. Review operations such as replacement before executing it. |
+| [Canary deployment](#use-an-existing-pipeline-safely) | A rollout that sends a small portion of traffic to a new version first so the team can observe real behavior before expanding it. |
+| [Continuous delivery (CD)](#use-an-existing-pipeline-safely) | Keeping tested changes ready for release through a repeatable pipeline. Production release may still require a person to approve it. |
+| [Rolling deployment](#use-an-existing-pipeline-safely) | Replacing instances or tasks in groups while the service continues to run. Capacity and compatibility matter while versions coexist. |
+| [CodePipeline](#use-an-existing-pipeline-safely) | Orchestrates source, build, test, approval and deployment stages in a release workflow. |
+| [CodeDeploy](#use-an-existing-pipeline-safely) | Coordinates application rollouts to supported deployment targets, including traffic shifting where the target supports it. |
+| [CodeBuild](#use-an-existing-pipeline-safely) | Runs a build or test job from its instructions and input source, producing logs and optionally a deployable artifact. |
+| [Lambda alias](#use-an-existing-pipeline-safely) | A named reference to a published Lambda function version. An alias lets callers use a stable name while the deployment target changes. |
+
+**Troubleshooting and Optimization**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Distributed trace](#instrument-an-evidence-chain) | A record linking the steps of one request across services. It helps locate the dependency where a delay or error began. |
+| [Health check](#instrument-an-evidence-chain) | A test used to decide whether a target can serve traffic. A reachable process can still fail a check for a required dependency. |
+| [AWS CloudTrail](#instrument-an-evidence-chain) | Records supported AWS API activity so an investigator can trace who called an operation, when and against which resource. |
+| [Amazon CloudWatch](#instrument-an-evidence-chain) | Collects operational measurements and logs. An operator can graph request latency or alarm on error rates. |
+
 ## Places to learn
 
 This is **not a complete list** and is not meant to be consumed in full. Choose one structured route, build the labs, use official documentation to close version 2.1 and emerging-topic gaps, and add one ethical practice source. Times below are planning estimates unless explicitly identified as currently observed public metadata. Paid lesson contents were not reviewed; Skill Builder and Whizlabs returned shells, and O'Reilly/Udemy access was blocked. Access and metadata are **VERIFY CURRENT**.

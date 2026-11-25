@@ -13,7 +13,9 @@ upcoming_change_checked: 2026-10-28
 
 # MO-310 Microsoft PowerPoint Associate (Microsoft 365 Apps) Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-05.md#mo-310) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mo-310-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/mos-powerpoint-associate-m365-apps/) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-06.md#mo-310)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-05.md#mo-310) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mo-310-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/mos-powerpoint-associate-m365-apps/) is authoritative.
 
 **Assessment:** 50 minutes, proctored. Microsoft recommends about 150 hours of instruction and hands-on experience; this is preparation guidance, not a formal prerequisite. The page lists 15 distinct languages (Dutch is duplicated) and no dedicated Learn training collection.<br>
 **Lifecycle:** No retirement or replacement notice found October 28, 2026. The credential shows a 60-month renewal frequency; check the [MOS expiration policy](https://learn.microsoft.com/en-us/credentials/support/credential-expiration-policy) for your award date. Expiration of an earned credential and retirement of an exam are separate events.
@@ -186,11 +188,83 @@ Keep the starting deck, saved result, expected/actual outcome and environment/bu
 31. **Why use Add Animation?** To add another effect without unintentionally replacing the selected one.
 32. **Does a good editing view prove delivery readiness?** No; test Slide Show, navigation, media and each final output.
 
+## Key terms and phrases
+
+**Presentations, masters and delivery**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Slide master](#1-presentations-masters-and-delivery) | The top-level design governing shared formatting and placeholders across its associated layouts. |
+| [Slide layout](#1-presentations-masters-and-delivery) | An arrangement of placeholders and formatting used by slides based on that layout. |
+| [Handout master](#1-presentations-masters-and-delivery) | The master controlling the arrangement and recurring content of printed audience handouts. |
+| [Notes master](#1-presentations-masters-and-delivery) | The master controlling printed notes-page layout, including slide image and speaker notes placeholders. |
+| [Placeholder](#1-presentations-masters-and-delivery) | A layout-defined area for a title, text, picture or other content that participates in layout inheritance. |
+| [Reset slide](#1-presentations-masters-and-delivery) | Restore placeholders to the positions and formatting specified by the slide's layout. |
+| [Theme](#1-presentations-masters-and-delivery) | A coordinated set of colors, fonts and effects governing the deck's overall design. |
+| [Slide size](#1-presentations-masters-and-delivery) | The dimensions and aspect ratio of the presentation canvas. |
+| [Speaker notes](#1-presentations-masters-and-delivery) | Presenter-only supporting text stored with a slide and available in notes-oriented views or outputs. |
+| [Hidden slide](#1-presentations-masters-and-delivery) | A slide retained in the file but skipped during normal sequential playback. |
+
+**Slides and navigation**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Section](#2-slides-and-navigation) | A named grouping of slides that helps organize and rearrange parts of a presentation. |
+| [Outline import](#2-slides-and-navigation) | Building slides from structured source headings so heading levels determine titles and bullet content. |
+
+**Text, shapes, images and reading order**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Reading order](#3-text-shapes-images-and-reading-order) | The sequence in which assistive technology encounters the objects on a slide. |
+| [Selection pane](#3-text-shapes-images-and-reading-order) | A list of slide objects used to select, rename and manage them when they overlap. |
+| [Alt text](#3-text-shapes-images-and-reading-order) | A description that conveys the meaning of an informative object to someone who cannot see it. |
+| [Screen clipping](#3-text-shapes-images-and-reading-order) | An image captured from a selected part of a window rather than the entire window. |
+| [Aspect ratio](#3-text-shapes-images-and-reading-order) | The proportion of width to height. Preserving it while resizing prevents distortion. |
+| [Crop](#3-text-shapes-images-and-reading-order) | Change the visible region of a picture to fit a frame while controlling which content remains visible. |
+| [Shape fill](#worked-text-shape-screenshot-and-ink-pass) | The color, texture or picture displayed inside a shape, distinct from its outline. |
+| [Shape outline](#worked-text-shape-screenshot-and-ink-pass) | The border around a shape, with settings such as color and line weight. |
+
+**Tables, charts, diagrams, 3D models and media**
+
+| Term or phrase | Meaning |
+|---|---|
+| [SmartArt](#4-tables-charts-diagrams-3d-models-and-media) | A structured graphic for representing relationships, processes or hierarchies without drawing every element separately. |
+| [Data series](#4-tables-charts-diagrams-3d-models-and-media) | A set of related data values plotted together on a chart. |
+| [Data label](#4-tables-charts-diagrams-3d-models-and-media) | A value or description placed beside a plotted data point. |
+| [Legend](#4-tables-charts-diagrams-3d-models-and-media) | The key that associates chart markers or colors with their series. |
+| [Media trim](#4-tables-charts-diagrams-3d-models-and-media) | Setting playback start and end points so a presentation plays only part of an audio or video clip. |
+
+**Transitions and animations**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Transition](#5-transitions-and-animations) | The visual effect that occurs when the presentation moves from one slide to the next. |
+| [Animation](#5-transitions-and-animations) | An effect applied to an individual slide object, with timing that determines when and how it plays. |
+| [Animation pane](#5-transitions-and-animations) | The list of a slide's effects used to inspect their order and timing. |
+| [Motion path](#5-transitions-and-animations) | An animation that moves an object along a specified route. |
+| [Effect duration](#5-transitions-and-animations) | The amount of time an animation or transition takes after it starts. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Zoom](#2-design-a-return-route) | An interactive link to a slide or section that can be configured to return to its starting point after the destination is shown. |
+| [On Click](#4-predict-an-animation-sequence) | An animation start setting that waits for the next click in the playback sequence. |
+| [With Previous](#4-predict-an-animation-sequence) | An animation start setting tied to the start of the preceding effect, with any configured delay. |
+| [After Previous](#4-predict-an-animation-sequence) | An animation start setting tied to the end of the preceding effect, with any configured delay. |
+| [Animation delay](#4-predict-an-animation-sequence) | The time added between the selected start trigger and the effect beginning. |
+| [Relative growth](#5-match-chart-meaning-to-the-data) | The change divided by the original value. An increase from 120 to 180 is 50 percent. |
+
 ## Places to learn
+
+**Suggested practice.** Apply two layouts to copies of one slide, then identify which placeholders and design elements came from the layout and which are direct slide edits. About 15–25 minutes to compare two layouts on a small sample deck and inspect their placeholders in Slide Master view (editorial estimate). [What is a slide layout?](https://support.microsoft.com/en-us/powerpoint/what-is-a-slide-layout)
 
 This is a selective learning path, not a complete list of PowerPoint resources or a requirement to consume every item. Times are author suggestions, not provider runtimes or an exam-readiness guarantee.
 
 ### Focused source-to-evidence route
+
+**Practice check.** When every project slide needs the same content placeholder, edit its layout in Slide Master view. Return to Normal view, select the existing slides that use the revised layout, and reapply that layout to pick up the change. [Add, edit, or remove a placeholder on a slide layout | Microsoft Support](https://support.microsoft.com/en-us/powerpoint/add-edit-or-remove-a-placeholder-on-a-slide-layout)
 
 **A reusable layout, not repeated manual formatting — public references; about 60–90 minutes.** Read [slide-layout concepts](https://support.microsoft.com/en-us/powerpoint/what-is-a-slide-layout) and [editing layout placeholders](https://support.microsoft.com/en-us/powerpoint/add-edit-or-remove-a-placeholder-on-a-slide-layout). In your own five-slide deck, duplicate a layout, add a picture placeholder and change its prompt text; apply it to two slides, revise it, then reapply it. Deliver the `.pptx` and a checklist distinguishing layout changes from individual-slide edits. Estimate basis: two articles, an original deck and a revision pass. **VERIFY CURRENT:** use the matching Windows or Mac desktop steps; PowerPoint for the web cannot edit layout definitions in Slide Master view. These references do not establish SmartArt preview availability or media support. No visible article dates were established; no PowerPoint operation or embedded video was executed.
 

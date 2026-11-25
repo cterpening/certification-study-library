@@ -264,6 +264,86 @@ Inventory model/API, prompts, retrieval data, vector store, service identities, 
 - [ ] I reject leaked exam content and unauthorized scanning/data uploads.
 - [ ] I rechecked the August 2025 datasheet, current Cortex Cloud docs, handbook, and registration before purchase.
 
+## Key terms and phrases
+
+**Security Operations Center fundamentals**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Authorization](#1-security-operations-center-fundamentals-10) | Determining whether a given identity may perform a specific action on the particular resource requested. |
+| [Incident](#1-security-operations-center-fundamentals-10) | A case representing a security event or set of related events requiring coordinated investigation and response. |
+| [Security operations center (SOC)](#1-security-operations-center-fundamentals-10) | The people and processes that monitor security signals, investigate incidents and coordinate response. |
+| [Threat intelligence](#1-security-operations-center-fundamentals-10) | Assessed information about adversary activity or indicators, with source, context and freshness to guide a decision. |
+| [Triage](#1-security-operations-center-fundamentals-10) | Initial assessment of a case to determine its urgency, scope and next investigative step. |
+| [Workload identity](#1-security-operations-center-fundamentals-10) | An identity used by software, such as a service account, to authenticate and access resources without acting as a human user. |
+
+**Cortex fundamentals**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Entity](#access-entities-indicators-and-data) | An identifiable resource such as a user, workload or host whose activities and relationships can be investigated. |
+| [Least privilege](#access-entities-indicators-and-data) | Limiting permissions to the tasks, resources and duration an identity actually requires. |
+| [Normalization](#access-entities-indicators-and-data) | Mapping source-specific values to a common representation, such as translating different vendor fields into the same source-address field. |
+| [Retention](#access-entities-indicators-and-data) | The period for which telemetry remains available for investigation. A search outside that period cannot establish inactivity. |
+| [Severity](#access-entities-indicators-and-data) | A rating of expected or observed impact. It differs from confidence, which expresses how strongly the evidence supports the assessment. |
+| [Snapshot](#access-entities-indicators-and-data) | A point-in-time representation of a resource. Its independence, consistency and recovery scope depend on the underlying service. |
+| [Telemetry](#access-entities-indicators-and-data) | Records of activity from endpoints, networks or other systems that investigators can correlate into a timeline. |
+| [Ingestion](#ingestion-dashboards-and-reports) | Bringing source records into the security platform for analysis. Missing input limits what a dashboard can show. |
+| [Data source](#ingestion-dashboards-and-reports) | A system supplying records to the analysis platform. Identify the expected event kinds and population before relying on a quiet dashboard. |
+| [Encryption](#ingestion-dashboards-and-reports) | Reversibly transforming data with a key to keep the plaintext unavailable to parties lacking the appropriate decryption capability. |
+| [Metrics](#ingestion-dashboards-and-reports) | Numerical time series used to quantify behavior such as latency, error rate or capacity. Aggregation and labels determine what the values represent. |
+| [Tenant](#ingestion-dashboards-and-reports) | An administrative or customer boundary in a shared service. Data, identities, configurations and actions must stay within the intended tenant. |
+
+**Cloud posture security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Cloud security posture management (CSPM)](#posture-domains) | Evaluation of cloud settings and exposed assets to identify configuration risks. |
+| [Cloud infrastructure entitlement management (CIEM)](#posture-domains) | Analysis of the permissions available to cloud identities, including unnecessarily broad access. |
+| [Control plane](#posture-domains) | The functions that build network state and decide paths or policy. The data plane uses those decisions for actual traffic. |
+| [Federation](#posture-domains) | An arrangement that lets one security domain rely on identity information issued by another, under agreed trust and validation rules. |
+| [Role-based access control (RBAC)](#posture-domains) | Assigning permissions through roles so each operator can perform only the tasks authorized for their scope. |
+| [Vulnerability management](#posture-domains) | A recurring process for finding weaknesses, assessing their relevance, treating them and verifying closure within an agreed scope. |
+| [XQL dataset](#posture-domains) | A named collection of records that XQL can query. Schema, retention and ingestion health shape which results are meaningful. |
+| [Cloud-native application protection platform (CNAPP)](#posture-domains) | A platform combining multiple cloud security capabilities across development, posture and runtime so related risks can be assessed together. |
+| [Agentless scanning](#agentless-scanning-compliance-and-modules) | Inspection through a cloud provider’s interfaces or snapshots without placing a continuously running security agent inside the workload. |
+| [Cortex Cloud](#agentless-scanning-compliance-and-modules) | Palo Alto Networks cloud security capabilities for relating application, infrastructure posture and runtime risk across cloud environments. |
+| [Remediation](#agentless-scanning-compliance-and-modules) | Action taken to remove or correct the cause of an incident after its immediate effects are contained. |
+| [Runtime agent](#agentless-scanning-compliance-and-modules) | Software deployed on a workload to observe execution and apply supported prevention controls. |
+| [Vulnerability](#agentless-scanning-compliance-and-modules) | A weakness in a system or process that could permit harm. The associated risk depends on exposure, likelihood and impact. |
+
+**Cloud runtime security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Runtime security](#4-cloud-runtime-security-26) | Observation and protection of workloads while they execute, including the processes or connections they actually use. |
+| [Authentication](#4-cloud-runtime-security-26) | Checking that a claimant controls an authenticator bound to the claimed identity. It precedes the separate decision about permitted actions. |
+| [Patch management](#4-cloud-runtime-security-26) | Identifying applicable fixes, prioritizing and testing them, deploying them to the correct population and verifying the resulting state. |
+| [Quarantine](#4-cloud-runtime-security-26) | Restricting the access or use of a device, file or message pending investigation. The quarantine boundary and release authority matter. |
+| [Schema](#4-cloud-runtime-security-26) | A definition of expected data structure, field types and constraints. A syntactically valid payload may still fail schema or business validation. |
+| [Serverless](#4-cloud-runtime-security-26) | A cloud execution model in which the provider handles much of the runtime provisioning and scaling. The customer still owns its code, permissions and data. |
+| [Virtual patching](#4-cloud-runtime-security-26) | Applying a compensating protection at another layer to reduce exposure while a change to the affected system is pending. |
+| [Workload agent](#agent-deployment-and-management) | Software deployed with a workload to report activity and apply supported runtime protection policies. |
+| [Rollback](#agent-deployment-and-management) | Returning a change to a known acceptable state when results do not meet defined conditions. A valid rollback also accounts for data changed in the meantime. |
+
+**Application security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Software composition analysis (SCA)](#5-application-security-20) | Identification of third-party components in an application to assess risks such as known vulnerabilities. |
+| [Application security posture management (ASPM)](#5-application-security-20) | Bringing findings from code, builds and deployments into application context so owners can prioritize risk. |
+| [Build provenance](#5-application-security-20) | Evidence about where an artifact originated, which inputs and process produced it and who or what performed the build. |
+| [Data retention](#5-application-security-20) | Keeping records for a defined purpose and period, then disposing of them as authorized, subject to holds or other obligations. |
+| [Deduplication](#5-application-security-20) | Recognizing and handling repeated copies of the same observation or request so duplication does not inflate counts or repeat an action. |
+| [Infrastructure as code (IaC)](#5-application-security-20) | Expressing infrastructure configuration in versionable files so changes can be reviewed, reproduced and applied through automation. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Container](#public-container-api) | An isolated application process and its dependencies that ordinarily shares the host kernel. Its image is the packaged input used to start it. |
+| [Evidence preservation](#exposed-cloud-key) | Maintaining the integrity and provenance of information needed for investigation, including original timestamps, collection method and access history. |
+
 ## Places to learn
 
 This is not a complete list, and it is not meant to be consumed in full. Start with the blueprint and official path, then select standards, provider docs, and labs for measured gaps. Cloud/product interfaces change; record the tenant, module, provider, and date used.

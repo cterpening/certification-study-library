@@ -13,7 +13,9 @@ upcoming_change_checked: 2026-10-28
 
 # DP-300 Administering Microsoft Azure SQL Solutions Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-01.md#dp-300) and the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-300-coverage-record). Known source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-06.md#dp-300)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-01.md#dp-300) and the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-300-coverage-record). Known source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300) is authoritative.
 
 **Current baseline:** Skills measured as of October 27, 2026.<br>
 **Blueprint reconciliation (October 28, 2026):** The October 27 English outline is now the accepted teaching baseline. Its Always Encrypted objective says secure enclaves rather than specifically VBS enclaves; domain weights are unchanged. Compare the enclave, attestation, driver and migration options supported by the actual SQL platform. Earlier April objective bytes and dated reviews remain archived. No later revision is announced on the checked official page.<br>
@@ -761,6 +763,8 @@ Back up to Azure Blob Storage using supported `BACKUP TO URL`, credential/manage
 
 #### Azure SQL Database and Managed Instance automated backup
 
+**Practice check.** On supported Azure SQL Database tiers and Managed Instance update policies, default immutability protects up to the latest seven days of point-in-time restore backups. SQL Database Hyperscale and Managed Instance on the SQL Server 2022 update policy are excluded. High volumes of Managed Instance management operations can also affect coverage. The optional retention-aligned lock is in preview and permanent. [Automatic backup immutability for Azure SQL Database and Azure SQL Managed Instance - Azure SQL | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-sql/automatic-backup-immutability?view=azuresql)
+
 Azure SQL creates automated backups for PITR according to platform. Restore produces a new database; account for name/server, tier, network, identity, jobs and application cutover. Configure short-term retention and backup storage redundancy. LTR copies selected full backups under weekly/monthly/yearly policy for longer retention and restores a new database.
 
 Do not memorize limits from an old course. As of validation, current docs describe SQL Database short-term retention up to 35 days for applicable tiers and LTR up to ten years, but exact tier/platform/immutability/API behavior is volatile. Verify [automated backups](https://learn.microsoft.com/en-us/azure/azure-sql/database/automated-backups-overview?view=azuresql) and [LTR](https://learn.microsoft.com/en-us/azure/azure-sql/database/long-term-retention-overview?view=azuresql) before design.
@@ -1040,7 +1044,88 @@ These are original reasoning checks based on public objectives, not recalled exa
 
 ---
 
+## Key terms and phrases
+
+**Build an Azure SQL operating model**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Platform responsibility](#separate-platform-responsibility-from-database-responsibility) | The operational duties retained by the service provider, which differ across SQL Database, Managed Instance and SQL Server on a VM. |
+
+**Plan and implement data platform resources (15–20%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Managed instance](#choose-the-database-offering-from-workload-constraints) | An Azure SQL deployment with instance-level SQL Server capabilities where Microsoft manages the underlying platform. |
+| [Azure SQL Database](#choose-the-database-offering-from-workload-constraints) | A managed relational database service in which Azure handles the underlying infrastructure and many database operations. |
+| [Vertical scaling](#azure-sql-database) | Changing the compute capacity allocated to a database, instance or machine to alter its workload capacity. |
+| [Elastic pool](#azure-sql-database) | A shared pool of Azure SQL Database compute resources across databases with differing demand. |
+| [SQL Server on Azure VM](#sql-server-on-azure-vms) | A SQL Server installation hosted on an Azure virtual machine, with guest operating-system and SQL instance management under customer control. |
+| [Migration assessment](#discover-and-assess) | A review of dependencies, compatibility and capacity requirements used to select a destination and migration path. |
+| [Online migration](#choose-online-versus-offline) | A migration that synchronizes ongoing changes before cutover to reduce downtime. |
+| [Offline migration](#choose-online-versus-offline) | A migration using a bounded period during which production changes are stopped while the transfer completes. |
+
+**Implement a secure environment (20–25%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Control plane](#trace-identity-through-two-authorization-planes) | The operations used to provision and configure resources, such as creating a storage account. |
+| [Data plane](#trace-identity-through-two-authorization-planes) | The path used to interact with the workload's actual data, such as reading a stored blob. |
+| [Database role](#model-sql-authorization) | A named collection of database permissions that can be assigned to database principals. |
+| [Database principal](#model-sql-authorization) | A database user, role or other identity to which permissions can be granted or denied. |
+| [Transparent data encryption (TDE)](#choose-the-correct-encryption-boundary) | Encryption of database files at rest that is transparent to normal authorized queries. |
+| [Always Encrypted](#choose-the-correct-encryption-boundary) | Protection in which a supported client driver encrypts and decrypts selected column values using authorized keys. |
+| [Secure enclave](#select-the-enclave-and-client-together) | A protected execution area that enables supported operations on Always Encrypted data under the configured client and platform requirements. |
+| [SQL auditing](#classification-and-auditing) | Recording configured database activity so investigators can trace who performed selected actions and when. |
+| [Change data capture (CDC)](#change-tracking-and-change-data-capture) | A mechanism that makes captured row changes available for downstream consumers to process. |
+| [Change tracking](#change-tracking-and-change-data-capture) | A lightweight mechanism identifying rows changed since a synchronization point so consumers can retrieve current values. |
+| [Dynamic data masking](#dynamic-data-masking) | Presentation of obscured column values to callers lacking unmasking privileges while retaining the underlying stored values. |
+| [Row-level security](#row-level-security) | A database policy that determines which rows a caller may read or modify. |
+| [Ledger](#ledger) | A database feature that provides cryptographic evidence for detecting tampering with recorded history. |
+
+**Monitor, configure, and optimize database resources (20–25%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Performance baseline](#start-with-an-operational-baseline) | A representative record of normal workload behavior used to evaluate a slowdown or tuning change. |
+| [Wait statistic](#start-with-an-operational-baseline) | Accumulated evidence of what tasks waited for, interpreted with workload context and the measurement interval. |
+| [Extended Events](#use-extended-events-with-narrow-intent) | A configurable diagnostic mechanism for collecting selected SQL Server events with controlled scope and overhead. |
+| [Query Store](#configure-and-interpret-query-store) | A database feature that retains query plans and runtime history so changes in performance can be investigated. |
+| [Plan regression](#configure-and-interpret-query-store) | A change to an execution plan that causes a query to perform worse under a comparable workload. |
+| [Execution plan](#read-execution-plans-and-improve-query-constructs) | The operators and access paths the database engine chooses to satisfy a query. |
+| [Cardinality estimate](#read-execution-plans-and-improve-query-constructs) | The optimizer's estimate of how many rows an operation will process, which influences plan selection. |
+| [Index seek](#read-execution-plans-and-improve-query-constructs) | An execution-plan operation that uses index key values to locate a limited range of rows. |
+| [Index scan](#read-execution-plans-and-improve-query-constructs) | An operation reading a larger portion of an index, potentially efficient where many rows are required. |
+| [Columnstore index](#index-decisions) | An index that stores values by column in compressed segments, which can reduce the work needed for large analytical scans. |
+| [Statistics](#index-decisions) | Information about data values and distributions used by the optimizer to estimate row counts. |
+| [Integrity check](#configure-maintenance-and-integrity-checks) | An examination of database structures for consistency and corruption, distinct from demonstrating that an application works. |
+
+**Configure and manage automation of tasks (15–20%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [SQL Server Agent job](#create-and-manage-sql-server-agent-jobs) | A scheduled or on-demand sequence of database or operating tasks managed by SQL Server Agent where supported. |
+| [Elastic job](#build-elastic-jobs) | A centrally managed mechanism for running T-SQL tasks against groups of Azure SQL databases. |
+
+**Plan and configure high availability and disaster recovery (20–25%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Recovery time objective (RTO)](#translate-business-objectives-into-mechanisms) | The target for how long a workload may remain unavailable after a disruption. |
+| [Recovery point objective (RPO)](#translate-business-objectives-into-mechanisms) | The target for how far back in time recovered data may be relative to the disruption. |
+| [Failover group](#compare-azure-sql-database-continuity-options) | A grouping for managing replication and failover of databases to a partner server or instance. |
+| [Active geo-replication](#compare-azure-sql-database-continuity-options) | Asynchronous replication from a primary database to a secondary in another location for recovery or read access. |
+| [Geo-restore](#compare-azure-sql-database-continuity-options) | Restoring a database from a geographically replicated backup to a supported target. |
+| [Availability group](#plan-sql-managed-instance-and-sql-server-hadr) | A coordinated set of databases whose changes are replicated to other SQL Server replicas for failover. |
+| [Failover cluster instance](#plan-sql-managed-instance-and-sql-server-hadr) | A clustered SQL Server instance that transfers ownership between nodes while preserving the instance identity. |
+| [Transaction log backup](#sql-server-native-backup) | A backup of logged changes that extends a supported restore chain toward a chosen recovery time. |
+| [Restore chain](#sql-server-native-backup) | The compatible sequence of backups and logs needed to reconstruct a particular recovery point. |
+| [Point-in-time restore](#azure-sql-database-and-managed-instance-automated-backup) | Recovery of a database to a selected time using backups within the available retention window. |
+| [Log shipping](#configure-and-operate-ags-fcis-geo-replication-and-log-shipping) | Periodically backing up a primary database's log, copying the files and restoring them on a secondary server. |
+
 ## Places to learn
+
+**Suggested practice.** Use one database workload to identify which administrative tasks remain with the team on a SQL Server VM and which change for a managed Azure SQL service. 4 days of instructor-led training (publisher listing); provider scheduling and fees vary. [Implement scalable database solutions using Azure SQL](https://learn.microsoft.com/en-us/training/courses/dp-300t00)
 
 ### October 28 learning route and evidence task
 

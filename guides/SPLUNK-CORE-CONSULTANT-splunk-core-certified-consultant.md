@@ -151,6 +151,89 @@ Correlate server-class/app rollout with Job Inspector, MC, peer/SHC health, bund
 - [ ] I completed all labs and can produce a clear consultant handoff.
 - [ ] Every required exam, course, and lab is recorded complete.
 
+## Key terms and phrases
+
+**Deployment evolution, SVA, HA, and DR**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Splunk Validated Architecture (SVA)](#1-deployment-evolution-sva-ha-and-dr-5) | A documented reference design used to compare deployment options against a customer's scale, availability and operating constraints. |
+
+**Monitoring Console**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Monitoring Console](#2-monitoring-console-8) | Splunk's collection of operational dashboards for examining the health and performance of the deployment and its components. |
+| [Alert](#2-monitoring-console-8) | A saved search or rule that evaluates a trigger condition and can start a configured action when the condition is met. |
+| [Search peer](#2-monitoring-console-8) | An instance that searches its local data for a distributed search and sends results back to the coordinating search head. |
+
+**Access and roles**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Role inheritance](#3-access-and-roles-8) | A role receiving capabilities or access through another role. Effective access must account for inherited permissions. |
+| [Role](#3-access-and-roles-8) | A bundle of capabilities and data restrictions assigned to a user. Inherited roles can change the effective access. |
+| [Single sign-on (SSO)](#3-access-and-roles-8) | Using a trusted identity provider to authenticate users for an application. Roles still determine their effective permissions. |
+| [Authentication](#3-access-and-roles-8) | Verifying the identity of a user or service. Authorization then determines what that identity can see or change. |
+
+**Collection, S2S, indexing, and retention**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Retention](#45-collection-s2s-indexing-and-retention-29) | The period for which indexed data remains available under the configured lifecycle. Volume limits can cause data to age out sooner than expected. |
+| [Input checkpoint](#45-collection-s2s-indexing-and-retention-29) | Saved input progress used when collection resumes. Resetting it may replay old data or create a gap. |
+| [Index-time routing](#45-collection-s2s-indexing-and-retention-29) | Choosing a destination for events while they are being processed. Verify the result before assuming stored data can be repaired later. |
+| [Frozen data](#45-collection-s2s-indexing-and-retention-29) | Data aged out of searchable index storage under retention or size policy. It can be archived if that path was configured. |
+| [Index](#45-collection-s2s-indexing-and-retention-29) | A named store for event or metric data, with access and retention settings governing who can search it and for how long. |
+| [Cold bucket](#45-collection-s2s-indexing-and-retention-29) | A searchable bucket moved to the cold location as part of the index's lifecycle. |
+| [Hot bucket](#45-collection-s2s-indexing-and-retention-29) | A bucket currently accepting writes. It rolls to warm as indexing and lifecycle conditions are met. |
+| [Warm bucket](#45-collection-s2s-indexing-and-retention-29) | An index bucket closed for writing but still searchable in the warm storage location. |
+| [Parsing tier](#45-collection-s2s-indexing-and-retention-29) | The component responsible for event boundaries, timestamps or other index-time transformations in a particular ingestion path. |
+| [Search-time knowledge](#45-collection-s2s-indexing-and-retention-29) | Definitions such as calculated fields and lookups applied when a search runs. They can change interpretation without rewriting stored events. |
+| [Fishbucket](#45-collection-s2s-indexing-and-retention-29) | State used by file monitoring to track files and read positions, helping a forwarder avoid treating every restart as a new file. |
+| [Forwarder](#45-collection-s2s-indexing-and-retention-29) | A component that collects and sends data to another Splunk tier. Its type determines which parsing tasks it can perform. |
+| [Index-time timestamp](#45-collection-s2s-indexing-and-retention-29) | The time assigned to an event during parsing. The time a forwarder sends a line is not necessarily when the described event occurred. |
+| [Event](#45-collection-s2s-indexing-and-retention-29) | One occurrence represented in the data, with a timestamp and associated metadata. A multiline log entry can be a single event. |
+
+**Search internals and efficiency**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Search concurrency](#6-search-internals-and-efficiency-14) | The number of searches running at once. Overlapping schedules can create contention even when individual searches are fast. |
+| [Knowledge bundle](#6-search-internals-and-efficiency-14) | Search-time knowledge distributed by a search head so peers can apply compatible lookups, extractions and other settings. |
+
+**Configuration management**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Configuration precedence](#7-configuration-management-8) | The order that resolves overlapping settings from apps and system files into the effective configuration. |
+| [Deployment server](#7-configuration-management-8) | Distributes managed applications and configuration to assigned deployment clients. |
+| [Deployment client](#7-configuration-management-8) | An instance that checks in with a deployment server and obtains configuration assigned through its server classes. |
+| [Server class](#7-configuration-management-8) | A rule grouping deployment clients so selected applications or settings reach the intended instances. |
+| [`btool`](#7-configuration-management-8) | A diagnostic utility for inspecting merged configuration and where settings originated on an instance the operator controls. |
+
+**Indexer clustering**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Bucket fix-up](#8-indexer-clustering-18) | Cluster work that restores required bucket copies or their searchability after a peer or other component changes state. |
+| [Indexer cluster](#8-indexer-clustering-18) | A coordinated set of indexers that maintains configured copies of data and participates in distributed searches. |
+| [Indexer](#8-indexer-clustering-18) | Processes or stores indexed data and runs the portion of a distributed search assigned to its local data. |
+| [Replication factor](#8-indexer-clustering-18) | The required number of bucket data copies in an indexer cluster. Not every copy is necessarily searchable. |
+| [Search factor](#8-indexer-clustering-18) | The required number of searchable bucket copies. It determines how many stored copies must include the structures needed for search. |
+| [Search affinity](#8-indexer-clustering-18) | Preference for satisfying searches from suitable local-site copies in a multisite deployment, reducing cross-site traffic when possible. |
+| [Manager node](#8-indexer-clustering-18) | Coordinates indexer-cluster peers, bucket replication and cluster configuration distribution. |
+| [Bucket](#8-indexer-clustering-18) | A directory containing indexed data for a period of time. Buckets move through lifecycle stages governed by index settings. |
+
+**Search-head clustering**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Search head cluster (SHC)](#9-search-head-clustering-10) | A coordinated group of search heads that shares supported knowledge and scheduling responsibilities to improve search-tier availability. |
+| [Search head](#9-search-head-clustering-10) | Accepts searches, coordinates work across search peers and presents combined results to the user. |
+| [Captain](#9-search-head-clustering-10) | The elected search head cluster member that coordinates duties such as search scheduling. |
+| [Deployer](#9-search-head-clustering-10) | The component that distributes managed apps and configuration to search head cluster members. |
+
 ## Places to learn
 
 This is not a complete list, and it is not meant to be consumed end to end. Choose resources for measured gaps. Times are planning estimates; access, price, version, and schedules change.

@@ -91,6 +91,27 @@ class StudyPackTests(unittest.TestCase):
         path.write_bytes(path.read_bytes().replace(b"\n", b"\r\n"))
         material.load_package(package, self.root)
 
+    def test_manifest_records_the_spelling_of_the_accepted_snapshot(self):
+        directory = self.root / "data/objective-snapshots"
+        lower = directory / "ex-100-official-objectives.txt"
+        upper = directory / "EX-100-official-objectives.txt"
+        lower.rename(directory / "original.txt").rename(upper)
+        package = self.build()
+        manifest = material.load_package(package, self.root)
+        relative = upper.relative_to(self.root).as_posix()
+        self.assertEqual(manifest["objective_path"], relative)
+        self.assertIn(relative, manifest["input_fingerprints"])
+        # A package created before canonical casing was preserved remains verifiable.
+        legacy = relative.lower()
+        manifest["objective_path"] = legacy
+        hashes = manifest["input_fingerprints"]
+        hashes[legacy] = hashes.pop(relative)
+        (package / "manifest.json").write_text(material.json_text(manifest), encoding="utf-8")
+        self.assertEqual(material.load_package(package, self.root), manifest)
+        upper.write_bytes(upper.read_bytes() + b"\n")
+        with self.assertRaisesRegex(ValueError, "stale"):
+            material.load_package(package, self.root)
+
     def test_changed_artifact_cannot_be_resealed_by_editing_manifest(self):
         package = self.build()
         guide = package / "study-guide.md"

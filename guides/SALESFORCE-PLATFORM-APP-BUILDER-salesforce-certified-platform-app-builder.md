@@ -400,6 +400,70 @@ Original prompts and answer notes for explanation and demonstration, not live ex
 
 The currently published [Summer ’26 exam guide](https://help.salesforce.com/s/articleView?id=005298964&language=en_US&type=1) states 60 multiple-choice items plus up to five unscored, 105 minutes, 73% passing, no prerequisite, and objective weights of Fundamentals 18%, Data Modeling 20%, Business Logic and Process Automation 32%, User Interface 17%, and App Deployment 13%. Its updated tasks explicitly include AgentExchange, external data sources, Agentforce business-process automation, and flow maintenance/troubleshooting. Align practice to that current outline. The official [Platform App Builder preparation trailmix](https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-platform-app-builder-credential) is a broader curated route; the indexed Spanish equivalent lists about 39 hr 20 min, while English-path duration was not confirmed. Use only the current exam guide to decide scope, and verify locale/access and the credential-assigned maintenance requirement.
 
+## Key terms and phrases
+
+**Salesforce Fundamentals**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Organization-wide defaults (OWD)](#1-salesforce-fundamentals-18) | The baseline level of access a user has to records owned by others. Sharing mechanisms can open access further. |
+| [Permission set group](#1-salesforce-fundamentals-18) | A bundle of permission sets assigned together for a job role. Evaluate the user's complete grants when troubleshooting access. |
+| [Sharing rule](#1-salesforce-fundamentals-18) | An automatic grant extending record access to selected users or groups when ownership or record criteria match. |
+| [Page layout](#1-salesforce-fundamentals-18) | Configures which fields, buttons and related lists a user sees in a record interface. Access permissions still apply through other entry points. |
+| [Report type](#1-salesforce-fundamentals-18) | Defines the records, relationships and fields a report can use. A missing record may reflect both report design and user access. |
+| [Dashboard](#1-salesforce-fundamentals-18) | An arrangement of report-driven components that visualizes measures. The running user's context can affect what data appears. |
+| [Sandbox](#1-salesforce-fundamentals-18) | A separate Salesforce environment used for development, testing or training. Choose its data and configuration fidelity around the test. |
+| [Queue](#1-salesforce-fundamentals-18) | A shared owner or work pool for supported records, such as unassigned cases waiting for an agent. |
+| [Apex](#1-salesforce-fundamentals-18) | Salesforce's server-side programming language for custom logic, such as a trigger or service class running within platform limits. |
+| [Permission set](#1-salesforce-fundamentals-18) | A collection of permissions assigned to users to grant access needed for particular work. |
+
+**Data Modeling and Management**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Lookup relationship](#2-data-modeling-and-management-20) | A link from one record to another that allows the linked records to have separate ownership and sharing behavior. |
+| [Master-detail relationship](#2-data-modeling-and-management-20) | A parent-child relationship in which the detail record depends on the master for ownership and sharing. |
+| [Roll-up summary field](#2-data-modeling-and-management-20) | A field on a master record that aggregates qualifying detail records. Two qualifying expenses of $30 and $45 produce a $75 sum on the master. |
+| [Object](#2-data-modeling-and-management-20) | A Salesforce data-model entity, comparable to a table. An Account object holds account records and defines the fields each can have. |
+| [Standard object](#2-data-modeling-and-management-20) | An object supplied by Salesforce for a common business entity, such as an account or case. |
+| [Junction object](#2-data-modeling-and-management-20) | A record representing the relationship between two other records. One enrollment can connect a single student to one of many courses. |
+| [Custom object](#2-data-modeling-and-management-20) | An object an organization defines to store records for its own business process. |
+| [External ID](#2-data-modeling-and-management-20) | A field used to match Salesforce records to identifiers in another system, for example during a controlled upsert. |
+| [Upsert](#2-data-modeling-and-management-20) | An operation that updates an existing record when the supplied matching key finds it and inserts when no match is found. |
+
+**Business Logic and Process Automation**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Formula field](#3-business-logic-and-process-automation-32) | A field whose value is calculated from an expression. It can display a derived value without a flow writing it to the record. |
+| [Validation rule](#3-business-logic-and-process-automation-32) | A rule that rejects a save when its error condition evaluates to true and explains what the user must correct. |
+| [Before-save flow](#3-business-logic-and-process-automation-32) | A record-triggered flow that can update the triggering record's fields before Salesforce writes it. |
+| [Approval process](#3-business-logic-and-process-automation-32) | Routes a proposed record change through designated approvers and defines the actions taken on approval or rejection. |
+| [Autolaunched flow](#3-business-logic-and-process-automation-32) | A flow invoked without interactive screens, for example as a reusable action from another workflow. |
+| [Flow trigger](#3-business-logic-and-process-automation-32) | The event that starts a flow, such as creation or update of a qualifying record. Entry conditions narrow when it runs. |
+| [Screen flow](#3-business-logic-and-process-automation-32) | A flow that presents screens to collect or display information while guiding a user through a task. |
+| [Order of execution](#3-business-logic-and-process-automation-32) | The sequence of platform validation and automation during a save. One record change can invoke several layers of logic. |
+
+**User Interface**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Lightning record page](#4-user-interface-17) | A configurable arrangement of components shown when a user views a record. Component visibility and underlying data access are separate concerns. |
+| [Field](#4-user-interface-17) | A named data element on an object, such as an Opportunity's Close Date. Its type determines which values it can store. |
+| [Record type](#4-user-interface-17) | Selects a business process and available picklist values and helps determine the page layout a user sees for a given kind of record. |
+| [Profile](#4-user-interface-17) | A user's baseline configuration for permissions and settings. Additional permissions can come from permission sets. |
+| [Object-specific action](#4-user-interface-17) | An action launched in the context of a particular object or record, which can supply values or relationships for the new work. |
+
+**App Deployment**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Change set](#5-app-deployment-13) | A collection of eligible configuration changes sent between connected Salesforce organizations. Its dependencies must be included and checked. |
+| [Metadata](#5-app-deployment-13) | Configuration that defines how the org behaves, such as objects, fields, flows or layouts. Moving the configuration does not also move every business record. |
+| [Unmanaged package](#5-app-deployment-13) | An editable distribution of components installed into an org. Recipients cannot rely on publisher-managed upgrades in the same way as a managed package. |
+| [Unlocked package](#5-app-deployment-13) | A versioned set of metadata used to build and deploy modular Salesforce applications, commonly within an organization's own development process. |
+| [Managed package](#5-app-deployment-13) | A bundle of components maintained by its publisher for distribution and upgrades under defined packaging rules. |
+
 ## Places to learn
 
 This is not a complete list. Select resources by the gaps you can demonstrate. Current scope is **18/20/32/17/13**; reconcile any older course map. Public metadata does not establish paid lesson quality or complete blueprint coverage. “Planning” times are our estimates.

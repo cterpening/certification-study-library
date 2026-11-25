@@ -348,6 +348,84 @@ The following original cases are learning exercises, not exam items.
 - [ ] I can split traffic with measurable canary assignment/outcomes and rollback.
 - [ ] I can record prediction-to-model/run/data lineage and remove temporary endpoints/artifacts.
 
+## Key terms and phrases
+
+**Databricks Machine Learning**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Accuracy](#treat-mlops-as-a-controlled-lifecycle) | For classification, the fraction of predictions matching their reference labels. A majority-class predictor can score highly on imbalanced data. |
+| [Model monitoring](#treat-mlops-as-a-controlled-lifecycle) | Collecting operational and quality signals after deployment, with enough context to identify changes and investigate their effects. |
+| [Experiment](#treat-mlops-as-a-controlled-lifecycle) | A grouping of runs used to compare alternative configurations on consistent data, metrics and evaluation conditions. |
+| [Retraining trigger](#treat-mlops-as-a-controlled-lifecycle) | A schedule or detected condition that starts fitting a new candidate model. Promotion should still depend on separate evaluation. |
+| [AutoML](#use-automl-as-transparent-acceleration) | A workflow that builds and compares candidate models and exposes the resulting experiments for inspection. |
+| [Feature table](#create-governed-feature-tables) | A governed collection of model inputs keyed so that examples can be joined to the correct entity. |
+| [Join](#create-governed-feature-tables) | Combining records from multiple inputs according to a matching condition. A repeated key can yield more rows than either input leads you to expect. |
+| [Primary key](#create-governed-feature-tables) | A field or combination of fields chosen to identify an individual record uniquely in the relevant table. |
+| [Data lineage](#create-governed-feature-tables) | The chain of sources and transformations that produced a dataset or model input, useful for explaining a result or assessing change impact. |
+| [Data freshness](#create-governed-feature-tables) | The age or lag of data visible to a consumer relative to the agreed source time or publication expectation. |
+| [Delta table](#create-governed-feature-tables) | A table backed by data files and a transaction log that records committed versions and supports consistent reads. |
+| [Feature lookup](#create-governed-feature-tables) | Connecting an example to its model input values by entity key and, for time-dependent features, the appropriate point in time. |
+| [MLflow run](#track-experiments-with-mlflow) | A record of one execution that can associate parameters, metrics and artifacts with a model-building attempt. |
+| [Parameter](#track-experiments-with-mlflow) | A value learned as part of fitting a model, such as a regression coefficient or neural-network weight. |
+| [Unity Catalog schema](#govern-models-in-unity-catalog) | The namespace between the catalog and the object name. For the registered model prod.risk.churn, risk is the schema. |
+| [Batch processing](#govern-models-in-unity-catalog) | Processing a bounded set of inputs as a job, often on a schedule, with results available after the run. |
+| [Inference endpoint](#govern-models-in-unity-catalog) | A service interface through which a client submits model inputs and receives predictions or generated content. |
+| [Model artifact](#govern-models-in-unity-catalog) | A saved item associated with a model run or release, such as fitted weights, preprocessing code or evaluation output. |
+| [Unity Catalog](#govern-models-in-unity-catalog) | Databricks’ governance layer for organizing data and AI assets and managing permissions, lineage and discoverability across supported workloads. |
+| [Model registry](#govern-models-in-unity-catalog) | A system that records model identities and versions alongside information needed to govern, evaluate and deploy them. |
+| [Model alias](#govern-models-in-unity-catalog) | A movable name referencing a model version, allowing consumers to use a stable label while promotion changes its target. |
+| [Model version](#govern-models-in-unity-catalog) | An individually identifiable revision of a model that can be evaluated, served and traced back to its training inputs. |
+| [Champion and challenger](#govern-models-in-unity-catalog) | The deployed or reference model and a candidate evaluated against it on comparable evidence before replacement. |
+
+**ML workflows: data processing and feature engineering**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Cardinality](#profile-distributions-before-choosing-a-repair) | The number of members in the set being considered, such as distinct values of a field or rows in a query result. |
+| [Null value](#profile-distributions-before-choosing-a-repair) | A marker for a missing or unknown value. Count and comparison operations may treat it differently from a supplied zero. |
+| [Data leakage](#profile-distributions-before-choosing-a-repair) | Information unavailable at the time of a real prediction influencing training or evaluation, often producing overly optimistic results. |
+| [Class imbalance](#profile-distributions-before-choosing-a-repair) | A class distribution in which some labels are much rarer than others, making overall accuracy a potentially misleading summary. |
+| [Training set](#handle-outliers-from-domain-and-model-behavior) | Examples used to learn a model’s parameters and any data-dependent preprocessing. |
+| [Imputation](#impute-with-a-pipeline) | Learning or specifying how to fill missing inputs and applying that same rule consistently during prediction. |
+| [Skewed feature distribution](#impute-with-a-pipeline) | A feature has an asymmetric distribution when one tail extends farther than the other. Extreme values can pull the mean away from the median, which matters when filling missing values. |
+| [Feature](#impute-with-a-pipeline) | An input variable available when a model makes its prediction. Time of availability matters as much as the value. |
+
+**Model development**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Label](#start-from-target-data-and-error-costs) | The reference outcome paired with an example for supervised training or evaluation. |
+| [Baseline model](#start-from-target-data-and-error-costs) | A simple reference approach used to judge whether the added complexity and cost of a candidate model produce worthwhile improvement. |
+| [Estimator](#understand-estimators-transformers-and-pipelines) | A trainable Spark ML stage. Fitting it on data produces a transformer with the learned parameters. |
+| [Transformer](#understand-estimators-transformers-and-pipelines) | A Spark ML stage that applies a transformation to a dataset, such as adding a prediction column. |
+| [Cross-validation](#tune-without-multiplying-work-blindly) | Repeated fitting and evaluation across controlled data splits to estimate variability or choose a procedure. |
+| [F1 score](#tune-without-multiplying-work-blindly) | The harmonic mean of precision and recall, useful when both false positives and missed positives matter. |
+| [Recall](#choose-metrics-from-the-decision) | Of all actual positives, the fraction a model detects. Catching 18 of 24 actual cases gives recall of 18 ÷ 24 = 75%. |
+| [Validation set](#choose-metrics-from-the-decision) | A separate group of examples used to choose model settings or thresholds before estimating final performance. |
+| [Holdout set](#choose-metrics-from-the-decision) | Examples reserved to assess the completed procedure on unseen cases, without selecting improvements from their results. |
+| [Precision](#choose-metrics-from-the-decision) | For a binary positive class, true positives divided by all predicted positives. It answers how often a positive prediction is correct. |
+| [Overfitting](#diagnose-bias-and-variance) | Learning training-specific details that reduce performance on new examples, often visible as a gap between training and held-out scores. |
+| [Underfitting](#diagnose-bias-and-variance) | A model or training procedure missing useful structure, resulting in poor performance even on training examples. |
+
+**Model deployment**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Batch inference](#select-an-inference-mode-from-the-service-contract) | Scoring a collection of records as a job where predictions can be delivered together after processing. |
+| [Watermark](#select-an-inference-mode-from-the-service-contract) | An event-time progress threshold used by a streaming design to decide how long to retain certain state or accept late records. |
+| [Checkpoint](#select-an-inference-mode-from-the-service-contract) | Persisted progress or state that lets a job recover from an interruption with a known starting point. |
+| [Latency](#select-an-inference-mode-from-the-service-contract) | Elapsed time from accepting a request to delivering the defined response, often assessed at a percentile to expose slow cases. |
+| [Canary release](#select-an-inference-mode-from-the-service-contract) | Sending a limited portion of live requests to a candidate release to measure its effects before expansion. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Decision threshold](#hands-on-lab-sequence) | The cutoff translating a score into an action or label. Changing it generally trades false positives against false negatives. |
+| [Training-serving skew](#databricks-ml-and-workflows) | A difference between how features are generated during training and how they are generated or retrieved during prediction. |
+| [Online inference](#development-and-deployment) | Producing a prediction in response to an individual request under a response-time and availability target. |
+
 ## Places to learn
 
 This is **not a complete list**, and it is not meant to be consumed in full. Choose a primary path, then spend at least equal time producing and testing feature, experiment, registry and deployment evidence. Public resource availability was checked September 28, 2026; runtimes are editorial planning estimates. Signed-in Academy and paid lessons were not inspected. Udemy access was blocked and Whizlabs returned no usable body.

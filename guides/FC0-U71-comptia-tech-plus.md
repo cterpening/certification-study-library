@@ -481,6 +481,87 @@ Use only your own or explicitly authorized devices, accounts, networks, and test
 
 > **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
 
+## Key terms and phrases
+
+**Tech concepts and terminology**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Bit and byte](#notation-and-measurement) | A bit holds one binary value. Eight bits make a byte. An 80-megabit-per-second link can carry at most 10 megabytes per second before protocol overhead. |
+| [Bandwidth](#notation-and-measurement) | The nominal capacity of a path to carry data per unit of time. Actual throughput can be lower. |
+| [Binary](#notation-and-measurement) | A number system using two digits, 0 and 1. Each position represents a power of two. |
+| [Bit](#notation-and-measurement) | A single binary digit, 0 or 1. Network transmission rates are commonly measured in bits per second. |
+| [Latency](#notation-and-measurement) | The time data takes to travel between two points. A high-capacity link can still have a long delay. |
+| [Byte](#notation-and-measurement) | A unit of eight bits. A theoretical 80 megabits per second equals 10 megabytes per second before transport overhead. |
+| [Hexadecimal](#notation-and-measurement) | A base-16 number system using 0–9 and A–F. Two hexadecimal digits represent one byte. |
+
+**Infrastructure**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Random-access memory (RAM)](#devices-and-components) | Working memory used by running programs. Its contents normally disappear when the computer loses power. |
+| [Backup](#devices-and-components) | A retained copy made for recovery after loss or corruption. Its usefulness depends on successful restoration under the intended conditions. |
+| [Firmware](#devices-and-components) | Software stored in a device that controls its low-level operation. Updates must match the hardware and preserve a recovery path. |
+| [Solid-state drive (SSD)](#devices-and-components) | Persistent storage that uses flash memory instead of spinning platters. Its connector and protocol determine compatibility. |
+| [Device driver](#interfaces-peripherals-and-drivers) | Software that lets an operating system communicate with a particular kind of hardware. |
+| [DisplayPort](#interfaces-peripherals-and-drivers) | A digital interface used to carry display signals. Supported resolution and refresh rate depend on the endpoints, cable and connection mode. |
+| [Ethernet](#interfaces-peripherals-and-drivers) | A family of link-layer technologies that carries frames identified by source and destination MAC addresses on a local network. |
+| [High-Definition Multimedia Interface (HDMI)](#interfaces-peripherals-and-drivers) | A digital interface carrying video and typically audio between compatible devices. Connector fit alone does not guarantee a required resolution or refresh rate. |
+| [Peripheral](#interfaces-peripherals-and-drivers) | A device adding input, output, storage or other functions to a computer, such as a keyboard, webcam or printer. |
+| [Virtual machine](#virtualization-and-cloud) | A software-defined computer that runs its own operating system on a host’s shared hardware. |
+| [Container](#virtualization-and-cloud) | An isolated application process and its dependencies that ordinarily shares the host kernel. Its image is the packaged input used to start it. |
+| [Hypervisor](#virtualization-and-cloud) | The software layer that distributes host hardware resources among virtual machines. |
+| [Public cloud](#virtualization-and-cloud) | Provider-operated resources offered to multiple customers using logical isolation. Public cloud does not imply that customer workloads have public access. |
+| [Router](#networking-fundamentals) | A device that forwards packets between IP networks using destination addresses and routes. |
+| [Domain Name System (DNS)](#networking-fundamentals) | The Domain Name System, which resolves names to records such as the addresses a client can use. |
+| [MAC address](#networking-fundamentals) | A link-layer identifier used to deliver frames on the local network. Knowing a MAC address alone does not identify the authenticated user. |
+| [Port number](#networking-fundamentals) | A transport-layer identifier used to distinguish application endpoints on a host. |
+| [Wi-Fi](#networking-fundamentals) | Wireless local networking under the IEEE 802.11 family. Successful association, IP configuration and application access are distinct checks. |
+
+**Applications and software**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Filesystem](#operating-systems-and-files) | The structures that organize files and directories on storage or expose a virtual hierarchy. A larger block device alone does not always enlarge its filesystem. |
+| [Operating system (OS)](#operating-systems-and-files) | Software that manages a computer’s resources and provides common services and isolation for applications. |
+| [Process](#operating-systems-and-files) | A running program instance with its own identifier, credentials and execution state. |
+
+**Software development concepts**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Loop](#4-software-development-concepts-13) | A programming structure that repeats instructions for a set of items or while a condition holds. |
+| [Central processing unit (CPU)](#4-software-development-concepts-13) | The component that executes program instructions. Core count, architecture, thermal limits and memory access can affect observed performance. |
+| [Conditional](#4-software-development-concepts-13) | A decision in a program that selects which instructions run according to a condition. |
+| [Variable](#4-software-development-concepts-13) | A named reference used to hold or access a value that a program or script can read or update. |
+
+**Data and database fundamentals**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Primary key](#5-data-and-database-fundamentals-13) | A field or combination of fields that uniquely identifies each row in a database table. |
+| [Database](#5-data-and-database-fundamentals-13) | An organized collection of data managed for storage, retrieval and change under defined rules. |
+| [Foreign key](#5-data-and-database-fundamentals-13) | A field or set of fields constrained to reference a key in a related table, helping maintain referential integrity. |
+| [Synchronization](#5-data-and-database-fundamentals-13) | Propagation of changes between locations or devices. A deletion can synchronize too, so synchronization alone does not preserve earlier copies. |
+| [Log retention](#original-relational-data-and-restore-exercise) | The period for which records remain available for an investigation or other defined purpose. Missing results outside that period cannot establish inactivity. |
+| [Relational database](#original-relational-data-and-restore-exercise) | A database model organizing records into tables with fields and relationships supported by keys and constraints. |
+
+**Security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Authentication](#principles-and-identity) | Verifying an identity before deciding which resources that identity may access. |
+| [Authorization](#principles-and-identity) | Deciding which actions an authenticated identity is permitted to take. |
+| [Integrity](#principles-and-identity) | Confidence that data and systems have been protected from unauthorized changes. |
+| [Least privilege](#principles-and-identity) | Assigning only the permissions needed for the user’s task, such as using a standard account for everyday work. |
+| [Segregation of duties](#principles-and-identity) | Dividing incompatible responsibilities, such as requesting and approving payment, so a single person cannot complete the whole sensitive transaction. |
+| [Encryption](#device-and-user-hygiene) | Reversibly transforming data with a key to keep the plaintext unavailable to parties lacking the appropriate decryption capability. |
+| [Encryption in transit](#device-and-user-hygiene) | Protecting data while it travels between endpoints. The endpoints and any termination points can ordinarily access the plaintext. |
+| [Multifactor authentication (MFA)](#device-and-user-hygiene) | Authentication using factors from two or more categories. A password and a second password both use the same knowledge factor. |
+| [Recovery key](#device-and-user-hygiene) | Information that permits authorized recovery of encrypted data when the normal unlock method is unavailable. |
+| [Rollback](#configure-a-small-wireless-network) | Returning a change to a known acceptable state when results do not meet defined conditions. A valid rollback also accounts for data changed in the meantime. |
+| [Service set identifier (SSID)](#configure-a-small-wireless-network) | The name identifying a wireless network offered to clients. Authentication and access policy determine what joining it permits. |
+
 ## Places to learn
 
 This is not a complete list and is not meant to be consumed in full. Choose one coherent primary course or book, add hands-on practice and one explanation-led assessment, and use the official objectives as the final scope checklist.

@@ -88,6 +88,7 @@ class PodcastTests(unittest.TestCase):
         self.content["units"][0]["dialogue"][0]["text"] = "Explain this important concept. " * 70
         second = copy.deepcopy(self.content["units"][0])
         second["id"] = "permissions-second"
+        second["title"] = "Who may approve a request?"
         self.content["units"].append(second)
         result = self.prepare(1)
         self.assertEqual(2, len(result["episodes"]))
@@ -95,6 +96,24 @@ class PodcastTests(unittest.TestCase):
         _, script, _ = podcast.load_episode(self.episode, self.root)
         self.assertEqual(["permissions"], script["unit_ids"])
         self.assertEqual(70, script["sections"][1]["turns"][0]["text"].count("Explain"))
+        self.assertNotIn(second["title"], script["sections"][0]["turns"][0]["text"])
+        _, second_script, _ = podcast.load_episode(self.output / "part-02", self.root)
+        self.assertIn(second["title"], second_script["sections"][0]["turns"][0]["text"])
+
+    def test_legacy_multipart_script_still_validates(self):
+        second = copy.deepcopy(self.content["units"][0])
+        second["id"] = "another-permission"
+        self.content["units"].append(second)
+        make_script = podcast.episode_script
+
+        def legacy_script(manifest, units, part, total, **_):
+            return make_script(manifest, units, part, total, version=1)
+
+        with patch.object(podcast, "episode_script", side_effect=legacy_script):
+            self.prepare(0.1)
+        _, script, _ = podcast.load_episode(self.output / "part-02", self.root)
+        self.assertEqual(1, script["schema_version"])
+        self.assertEqual(2, script["total_parts"])
 
     def test_invalid_targets_and_existing_output_are_refused(self):
         for target in (0, -1, float("inf"), float("nan")):

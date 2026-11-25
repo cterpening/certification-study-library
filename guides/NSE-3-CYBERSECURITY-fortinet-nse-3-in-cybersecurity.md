@@ -201,6 +201,110 @@ Use an entitled VM, lab service, or nonproduction appliance that you own or are 
 29. Baseline, authorized setup, expected allow, expected deny, broken dependency, observable evidence, rollback, and cleanup.
 30. FortiOS 7.6 on the current FortiGate Operator course page as verified September 2, 2026.
 
+## Key terms and phrases
+
+**FortiGate access and baseline**
+
+| Term or phrase | Meaning |
+|---|---|
+| [FortiGate](#1-fortigate-access-and-baseline) | The Fortinet firewall platform that applies routing, access policy and security inspection to traffic traversing its interfaces. |
+| [FortiOS](#1-fortigate-access-and-baseline) | The operating system used by FortiGate. Its configuration determines such behaviors as routing, policy matching, inspection and logging. |
+| [Least privilege](#1-fortigate-access-and-baseline) | Giving an identity only the permissions needed for its task, for as long as it needs them. |
+| [Management plane](#1-fortigate-access-and-baseline) | The interface and services through which administrators configure and monitor devices. Reachability here does not prove that user traffic is working. |
+
+**System settings and basic networking**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Default route](#2-system-settings-and-basic-networking) | The forwarding entry used when the routing table has no more specific match for a destination. |
+| [Dynamic Host Configuration Protocol (DHCP)](#2-system-settings-and-basic-networking) | The protocol clients use to obtain settings such as an IP address, gateway and DNS servers, typically for a bounded lease. |
+| [Packet](#2-system-settings-and-basic-networking) | A network-layer unit carrying a source and destination IP address. Routers use the destination and their forwarding tables to send it onward. |
+| [Static route](#2-system-settings-and-basic-networking) | A route installed by configuration, specifying a prefix and next hop or interface. It changes only through configuration or an associated tracking mechanism. |
+| [Virtual LAN (VLAN)](#2-system-settings-and-basic-networking) | A logical Layer 2 broadcast domain. A frame moving between VLANs normally crosses a routing boundary. |
+
+**Firewall policies and logs**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Traffic log](#3-firewall-policies-and-logs) | A record of how the firewall handled a session. Its policy identifier helps explain which rule matched. |
+| [Network address translation (NAT)](#3-firewall-policies-and-logs) | Rewriting source or destination addressing as traffic crosses a boundary. The translation and the permission to pass traffic are distinct decisions. |
+
+**Network users and authentication**
+
+| Term or phrase | Meaning |
+|---|---|
+| [User group](#4-network-users-and-authentication) | A collection of identities to which a firewall policy can grant or restrict access. |
+| [Authentication](#4-network-users-and-authentication) | The check that establishes who a user or device is. Authorization determines what that identity may do next. |
+| [Remote Authentication Dial-In User Service (RADIUS)](#4-network-users-and-authentication) | A protocol used by network access equipment to consult a central authentication and authorization service and record accounting events. |
+| [Source interface](#4-network-users-and-authentication) | The interface on which traffic enters a firewall. Its zone and context can affect which routes and policies apply. |
+
+**Security inspection**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Security profile](#5-security-inspection) | A set of inspection settings attached to a policy, such as antivirus or web filtering for allowed traffic. |
+| [Application control](#5-security-inspection) | A control that identifies the application using a connection and applies policy to it, even when several applications share a port. |
+| [Certificate inspection](#5-security-inspection) | Examining available TLS negotiation and certificate information without decrypting the application payload. |
+| [Intrusion prevention system (IPS)](#5-security-inspection) | A control that inspects traffic for signs of known or suspicious activity and can block matching traffic. |
+| [Web filtering](#5-security-inspection) | A control that allows or blocks web access according to a URL, category or other policy criterion. |
+
+**ZTNA and remote access**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Zero trust network access (ZTNA)](#6-ztna-and-remote-access) | Access to a named application based on identity and other policy checks such as device posture. |
+| [Access proxy](#6-ztna-and-remote-access) | A component that checks the access request and forwards authorized traffic to its private application. |
+| [Device posture](#6-ztna-and-remote-access) | Evidence about an endpoint’s current condition that helps decide whether it meets an application’s access policy. |
+| [FortiClient](#6-ztna-and-remote-access) | Endpoint software used for supported connectivity and security functions, with effective capabilities determined by the deployment and assigned configuration. |
+| [FortiClient EMS](#6-ztna-and-remote-access) | The FortiClient management service used to enroll endpoints, assign profiles and publish device status to participating controls. |
+| [Identity provider (IdP)](#6-ztna-and-remote-access) | The service that authenticates an identity and makes assertions or issues tokens that a relying service can validate. |
+| [Zero Trust](#6-ztna-and-remote-access) | An access model that evaluates requests using identity, resource and context without assuming access is safe solely because it originated on an internal network. |
+
+**IPsec VPNs**
+
+| Term or phrase | Meaning |
+|---|---|
+| [IPsec VPN](#7-ipsec-vpns) | A protected network path in which peers authenticate and use negotiated keys to protect IP traffic. |
+| [Internet Key Exchange (IKE)](#7-ipsec-vpns) | The protocol peers use to authenticate and negotiate the keys and settings for IPsec protection. |
+| [Internet Protocol Security (IPsec)](#7-ipsec-vpns) | A set of IP-layer protocols that protect traffic between negotiated peers, with defined security associations and traffic selectors. |
+| [Site-to-site VPN](#7-ipsec-vpns) | A protected connection between network gateways that carries selected traffic between sites. |
+| [Subnet](#7-ipsec-vpns) | A portion of an IP address space sharing a network prefix. Hosts use the prefix to distinguish local delivery from traffic requiring a router. |
+| [Virtual private network (VPN)](#7-ipsec-vpns) | A protected logical connection over a shared network. Its permitted destinations and traffic depend on routes and access policy. |
+
+**Maintenance and monitoring**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Packet capture](#8-maintenance-and-monitoring) | An observation of traffic visible at a particular interface or tap. Position, direction and capture filters determine what it can show. |
+| [Rollback](#8-maintenance-and-monitoring) | Returning a change to a known acceptable state when results do not meet defined conditions. A valid rollback also accounts for data changed in the meantime. |
+
+**Security Fabric and HA**
+
+| Term or phrase | Meaning |
+|---|---|
+| [High availability (HA)](#9-security-fabric-and-ha) | A deployment that lets a peer take over when a device fails. The peer still needs working network paths and a valid configuration. |
+| [Fortinet Security Fabric](#9-security-fabric-and-ha) | Fortinet’s framework for integrating products so they can exchange context and coordinate visibility or policy-driven actions. |
+| [Heartbeat](#9-security-fabric-and-ha) | An exchange that lets HA peers monitor one another. A working heartbeat alone does not establish that an application data path works. |
+| [Session synchronization](#9-security-fabric-and-ha) | Sharing selected connection state with a peer so that it can continue eligible sessions after a failure. |
+| [Split brain](#9-security-fabric-and-ha) | A failure in which peers lose coordination and more than one behaves as active, risking inconsistent state or conflicting forwarding. |
+| [Telemetry](#9-security-fabric-and-ha) | Logs, events and measurements supplied by managed systems. Customer attribution and collection health determine whether the records are usable. |
+
+**FortiLink, cloud, FortiCare, and FortiCloud**
+
+| Term or phrase | Meaning |
+|---|---|
+| [FortiLink](#10-fortilink-cloud-forticare-and-forticloud) | The management connection that lets a FortiGate authorize and configure downstream FortiSwitch devices. |
+| [Authorization](#10-fortilink-cloud-forticare-and-forticloud) | Determining whether a given identity may perform a specific action on the particular resource requested. |
+| [Availability](#10-fortilink-cloud-forticare-and-forticloud) | Timely and reliable access to a resource by authorized users. A running server may still be unavailable to the business if a required dependency fails. |
+| [Availability zone](#10-fortilink-cloud-forticare-and-forticloud) | An isolated location within a provider region used to reduce correlated failures when resources are placed across zones. |
+| [FortiSwitch](#10-fortilink-cloud-forticare-and-forticloud) | A Fortinet Ethernet switch that provides local Layer 2 connectivity and can use supported management arrangements such as FortiLink. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Evidence preservation](#suspected-infected-endpoint) | Maintaining the integrity and provenance of information needed for investigation, including original timestamps, collection method and access history. |
+
 ## Places to learn
 
 This is a selective starting set, not a complete list and not a prescription to consume everything. Complete the official course, then pick references or labs that address measured gaps. Times are publisher-listed or planning estimates.

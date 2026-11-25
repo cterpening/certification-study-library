@@ -13,7 +13,9 @@ upcoming_change_checked: 2026-10-28
 
 # AZ-305 Designing Microsoft Azure Infrastructure Solutions Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-03.md#az-305) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-305-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-305) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-03.md#az-305)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-03.md#az-305) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-305-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-305) is authoritative.
 
 **Current baseline:** Skills measured as of April 17, 2026<br>
 **Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
@@ -411,6 +413,8 @@ Classic [Premium multi-region deployment](https://learn.microsoft.com/en-us/azur
 
 #### Caching and configuration
 
+**Practice check.** When planning a cache migration, capture the legacy tier first. Microsoft publishes March 31, 2027 for Enterprise and Enterprise Flash and September 30, 2028 for Basic, Standard, and Premium. Size the destination and test the client's cluster behavior before assigning a cutover window. [Frequently asked questions (FAQ) on the retirement of Azure Cache for Redis - Azure Cache for Redis | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/retirement-faq)
+
 Cache only when access pattern and invalidation behavior are understood. Define source of truth, key, TTL, eviction, stampede protection, consistency tolerance, warm-up, failure behavior, and sensitive-data handling. A cache-aside consumer must tolerate a miss and usually tolerate stale data within a defined bound.
 
 Central configuration services separate deployable code from environment settings. Use managed identity and least privilege, label/version configuration, treat secrets separately, and design application behavior when the configuration service is unavailable. Feature flags need ownership, expiry, telemetry, and removal—not just a toggle.
@@ -804,7 +808,85 @@ You are approaching readiness when you can:
 
 ---
 
+## Key terms and phrases
+
+**Architect decision method**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Functional requirement](#translate-narrative-into-constraints) | A capability the solution must deliver, such as accepting orders or sharing reports. |
+| [Nonfunctional requirement](#translate-narrative-into-constraints) | A measurable quality or constraint, such as response time, availability, cost or residency. |
+| [Well-Architected Framework](#apply-the-well-architected-lenses) | Azure guidance for assessing design decisions across reliability, security, cost, operational excellence and performance. |
+| [Control plane](#separate-control-data-and-management-responsibilities) | The operations used to provision and configure resources, such as creating a storage account. |
+| [Data plane](#separate-control-data-and-management-responsibilities) | The path used to interact with the workload's actual data, such as reading a stored blob. |
+
+**Design identity, governance, and monitoring solutions (25–30%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Metric](#logging-and-monitoring) | A numerical time series, such as CPU usage, that can be graphed or evaluated against alert criteria. |
+| [Log Analytics workspace](#logging-and-monitoring) | A destination for collected logs where operators can run queries and investigate events. |
+| [Alert rule](#logging-and-monitoring) | A condition evaluated against monitoring data that creates an alert when its criteria are met. |
+| [Action group](#build-a-signal-routing-design) | A reusable set of notification or automation responses attached to Azure Monitor alerts. |
+| [Managed identity](#authentication-and-authorization) | An Azure-managed identity that lets a workload authenticate to other services without managing a credential itself. |
+| [Authentication](#authentication-and-authorization) | Establishing who or what is making a request, such as verifying a user's identity at sign-in. |
+| [Authorization](#authentication-and-authorization) | Deciding which actions an authenticated identity may perform on a resource. |
+| [Conditional Access](#authentication-and-authorization) | The Entra policy system that evaluates signals about sign-in context and decides what access conditions to require. |
+| [Key Vault](#secrets-certificates-and-keys) | A managed service for controlling access to secrets, keys and certificates. |
+| [Secret](#secrets-certificates-and-keys) | A protected value used by a workload, such as a password or API credential. |
+| [Certificate](#secrets-certificates-and-keys) | A signed statement binding a public key to an identity, commonly used for transport security or authentication. |
+| [Management group](#governance-and-identity-governance) | A governance scope above subscriptions where inherited access and policy can be organized. |
+| [Role assignment](#governance-and-identity-governance) | A grant that gives a principal a defined Azure role at a particular scope. |
+| [Policy initiative](#governance-and-identity-governance) | A group of related policy definitions assigned and assessed together. |
+
+**Design data storage solutions (20–25%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Access pattern](#start-with-access-patterns-not-product-names) | The expected shapes, frequency and latency of reads and writes that guide the choice of data store. |
+| [Online transaction processing (OLTP)](#relational-data) | A workload that records and updates individual business events, such as accepting an order. |
+| [Online analytical processing (OLAP)](#relational-data) | A workload that aggregates and compares data across many records to answer questions about patterns or performance. |
+| [Blob storage](#semi-structured-and-unstructured-data) | Object storage for content such as images, logs or backups accessed by name within a container. |
+| [Logical partition](#semi-structured-and-unstructured-data) | The set of items sharing a partition-key value within a Cosmos DB container. |
+| [Extract, transform, load (ETL)](#data-integration-and-analysis) | A pipeline pattern that reshapes source data before loading it into the destination. |
+
+**Design business continuity solutions (15–20%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Recovery time objective (RTO)](#convert-business-impact-into-engineering-targets) | The longest acceptable interruption. If an outage starts at 09:00 and the RTO is two hours, service is due back by 11:00. |
+| [Recovery point objective (RPO)](#convert-business-impact-into-engineering-targets) | The greatest acceptable loss of recent data, measured in time. For a 09:00 outage and a 15-minute RPO, the recovered data must reach at least 08:45. |
+| [Service-level objective (SLO)](#convert-business-impact-into-engineering-targets) | A measurable target for an aspect of service quality, such as the percentage of requests completed within a threshold. |
+| [Disaster recovery](#backup-and-disaster-recovery) | The plan and mechanisms for restoring a workload after a major disruption, including its data and dependencies. |
+| [Recovery point](#backup-and-disaster-recovery) | A retained state from which a protected workload or file can be restored. |
+| [High availability](#high-availability-by-workload-type) | A design that keeps a service usable through component failures by distributing or failing over work. |
+| [Availability zone](#compute) | A physically separate location within an Azure region designed to isolate failures in power, cooling and networking. |
+| [Region pair](#region-pairs-and-recovery-ownership) | A relationship Microsoft designates between certain regions for particular service behaviors that must be checked per workload. |
+| [Fault domain](#availability-mathematics-and-dependency-design) | A group of components that share a potential point of failure, such as a power source. |
+
+**Design infrastructure solutions (30–35%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [VM scale set](#compute-selection) | A set of similarly configured virtual machines that can be managed and scaled together. |
+| [App Service plan](#compute-selection) | The compute resources and capacity settings that host one or more App Service apps. |
+| [Message queue](#messaging-and-event-driven-designs) | A durable intermediary that holds work for consumers and decouples the producer's timing from processing. |
+| [Loose coupling](#messaging-and-event-driven-designs) | A design in which components depend on explicit contracts and can operate or change with limited coordination. |
+| [Event](#messaging-and-event-driven-designs) | A notice that something already happened, which subscribers can use to decide whether to react. |
+| [Topic](#messaging-and-event-driven-designs) | A brokered publish-and-subscribe destination where subscriptions can receive independently filtered copies of messages. |
+| [Publish-subscribe](#messaging-and-event-driven-designs) | A communication pattern in which a publisher emits notifications and interested subscribers consume them independently. |
+| [Dead-letter queue](#select-the-service-bus-recovery-feature-deliberately) | A holding area for messages that could not be processed or delivered, where an operator can inspect the failure reason. |
+| [Cache](#caching-and-configuration) | A faster copy of frequently needed data whose freshness and replacement rules must fit the application. |
+| [Cache-aside](#caching-and-configuration) | An application pattern that reads from a cache first and loads missing data from the authoritative store. |
+| [Infrastructure as code (IaC)](#automated-deployment) | Defining infrastructure in version-controlled files so environments can be deployed consistently. |
+| [Rehost](#migration-design) | Moving a workload to a new hosting environment with minimal changes to its architecture. |
+| [Refactor](#migration-design) | Changing some implementation or hosting components to better use the target platform while retaining the intended business function. |
+| [Site-to-site VPN](#internet-and-hybrid-connectivity) | An encrypted network connection between a site gateway and an Azure virtual network gateway. |
+| [ExpressRoute](#internet-and-hybrid-connectivity) | Private connectivity between an on-premises environment and Microsoft cloud services through a connectivity provider. |
+
 ## Places to learn
+
+**Suggested practice.** For one critical flow, document a dependency failure, its observable signal, the design mitigation and the residual risk. About 25–40 minutes to read the method and draft a failure-mode worksheet for one critical flow (editorial estimate). [Architecture strategies for performing failure mode analysis](https://learn.microsoft.com/en-us/azure/well-architected/reliability/failure-mode-analysis)
 
 This is a curated starting set, not a complete list. Do **not** consume every resource. Pick one structured spine, use documentation and architecture case studies for weak objectives, complete design/lab work, and add one assessment source. Time estimates are planning ranges, not guarantees; playback speed, prior Azure experience, exercises, lab cleanup, and vendor changes matter. Verify the current blueprint before buying or starting a course.
 

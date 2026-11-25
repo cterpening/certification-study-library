@@ -13,7 +13,9 @@ upcoming_change_checked: 2026-10-28
 
 # DP-600 Implementing Analytics Solutions Using Microsoft Fabric Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-01.md#dp-600) and the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-600-coverage-record). Known source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-600) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-06.md#dp-600)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-01.md#dp-600) and the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-600-coverage-record). Known source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-600) is authoritative.
 
 **Current baseline:** Skills measured as of October 19, 2026<br>
 **Blueprint reconciliation (October 28, 2026):** The October 19 English outline is now accepted. The revision capitalizes Visual query editor differently; domain weights and the other extracted objectives are unchanged. Earlier July bytes and dated reviews remain archived. No later revision is announced on the checked official page.<br>
@@ -69,6 +71,8 @@ Apply sensitivity labels to supported items to communicate and enforce informati
 > **Related item:** A semantic model can correctly enforce RLS while a user with direct lakehouse or warehouse access reads the underlying rows. Secure every path, including SQL, OneLake, Spark, XMLA, Analyze in Excel and export where applicable.
 
 ### Worked example — A narrow OneLake role does not remove a broad grant
+
+**Practice check.** When a Direct Lake connection has both SSO and a fixed identity, identify the operation being authorized. Queries check the current user while refresh framing and transcoding use the fixed identity. With SSO disabled the fixed identity determines source access at query time too. [Integrate Direct Lake Security - Microsoft Fabric | Microsoft Learn](https://learn.microsoft.com/en-us/fabric/fundamentals/direct-lake-security-integration)
 
 A manager belongs to an East-only role but also qualifies for the lakehouse's `DefaultReader` role through `ReadAll`. The narrow role does not cancel the broader grant. [OneLake roles](https://learn.microsoft.com/en-us/fabric/onelake/security/data-access-control-model) grant access; they are not deny rules. Inspect direct, group and virtual membership before changing a role. Follow the [role-management guidance](https://learn.microsoft.com/en-us/fabric/onelake/security/create-manage-roles) to remove the unwanted broad access, then retest as the manager. Workspace Admin, Member and Contributor access is broader still.
 
@@ -401,7 +405,73 @@ Compare KQL ingestion, Eventhouse OneLake availability, model framing and report
 - I can prepare governed semantics for AI without treating an ontology or generated answer as proof of correctness.
 - I can explain additive OneLake grants, unenforced Warehouse keys, model framing, cache evidence and the cloud/gateway driver distinction.
 
+## Key terms and phrases
+
+**Maintain a data analytics solution**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Workspace role](#security-and-governance-layers) | A bundle of permissions determining what a user or group can do within a Fabric workspace. |
+| [Item permission](#security-and-governance-layers) | A permission granted on a particular Fabric item that works alongside workspace and other applicable access controls. |
+| [Object-level security (OLS)](#security-and-governance-layers) | Restrictions that hide specified model tables or columns from a role rather than filtering their rows. |
+| [OneLake](#security-and-governance-layers) | Fabric's shared organizational data lake that supplies storage for supported analytics items. |
+| [Effective permission](#worked-example-a-narrow-onelake-role-does-not-remove-a-broad-grant) | The access a principal actually receives after relevant workspace, item, model and storage permissions are evaluated. |
+| [Deployment pipeline](#analytics-development-lifecycle) | A repeatable process for promoting a solution and its target configuration through environments. |
+| [Git integration](#analytics-development-lifecycle) | Connecting supported workspace item definitions to a repository for version control and coordinated change. |
+| [Endorsement](#analytics-development-lifecycle) | A signal attached to an analytical item to help consumers identify promoted or certified content under organizational governance. |
+
+**Prepare data**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Lakehouse](#choose-and-connect-to-the-data-store) | A Fabric item for storing files and tables in OneLake and working with them through supported compute engines. |
+| [Warehouse](#choose-and-connect-to-the-data-store) | A relational analytics store aimed at structured tables and SQL-based data loading and querying. |
+| [SQL analytics endpoint](#choose-and-connect-to-the-data-store) | A SQL query surface over supported lakehouse table data, with capabilities distinct from a warehouse. |
+| [Eventhouse](#choose-and-connect-to-the-data-store) | A Fabric environment for ingesting and querying event-oriented and time-series data using KQL. |
+| [Semantic model](#choose-and-connect-to-the-data-store) | A governed analytical layer defining metrics, relationships and access rules for reports and other consumers. |
+| [OneLake shortcut](#onelake-integration-has-a-source-specific-freshness-contract) | A reference that makes data at another location accessible through OneLake without a separate copy managed by the shortcut. |
+| [Mirroring](#onelake-integration-has-a-source-specific-freshness-contract) | Maintaining an analytical replica of source data by applying source changes to the destination. |
+| [Grain](#transform-to-an-analytical-contract) | What one row represents, such as one sales order line. It determines which aggregations are meaningful. |
+| [Normalization](#transform-to-an-analytical-contract) | Organizing related facts in separate tables to limit repetition and inconsistent updates. |
+| [Fact table](#transform-to-an-analytical-contract) | A table recording measurements or events at a declared grain, linked to descriptive dimensions. |
+| [Dimension table](#transform-to-an-analytical-contract) | A table describing business entities, such as customers or dates, used for filtering and grouping facts. |
+| [Surrogate key](#transform-to-an-analytical-contract) | A generated identifier used to distinguish dimension rows independently of a changing business identifier. |
+| [Slowly changing dimension (SCD)](#transform-to-an-analytical-contract) | A way to handle changes in descriptive attributes, such as overwriting a customer address or retaining dated versions. |
+| [Factless fact table](#transform-to-an-analytical-contract) | A table recording the occurrence of a relationship or event without requiring a numeric measurement. |
+| [T-SQL](#query-and-analyze-with-the-right-language) | Microsoft's SQL dialect used for relational queries, transformations and supported database operations. |
+| [Kusto Query Language (KQL)](#query-and-analyze-with-the-right-language) | A tabular language for filtering and aggregating event or telemetry records. |
+| [DAX](#query-and-analyze-with-the-right-language) | Data Analysis Expressions, the formula language used for semantic-model calculations. |
+
+**Implement and manage semantic models**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Direct Lake](#model-design-and-storage-mode) | A semantic-model storage mode that reads supported table data in OneLake without a conventional import copy. |
+| [DirectQuery](#model-design-and-storage-mode) | A storage mode in which report interactions send queries through to the underlying source. |
+| [Star schema](#model-design-and-storage-mode) | A model with fact tables for events or measurements connected to dimension tables used for filtering and grouping. |
+| [Calculated column](#model-design-and-storage-mode) | A value computed for each row and stored in the model, often used to classify or group data. |
+| [Import mode](#model-design-and-storage-mode) | Loading a copy of source data into the model so report queries run against stored model data. |
+| [Composite model](#model-design-and-storage-mode) | A semantic model combining more than one source group or supported storage mode. |
+| [Cardinality](#model-design-and-storage-mode) | The relationship multiplicity between model columns, such as one customer record to many sales records. |
+| [Cross-filter direction](#model-design-and-storage-mode) | The direction in which a relationship allows filters to propagate between tables. |
+| [Many-to-many relationship](#model-design-and-storage-mode) | A model relationship in which both sides can contain repeated keys and filter behavior must be designed deliberately. |
+| [Bridge table](#model-design-and-storage-mode) | A table recording associations between entities, often used to resolve a many-to-many analytical relationship. |
+| [Framing](#worked-example-a-source-write-is-not-a-completed-model-refresh) | In Direct Lake, establishing the set of table versions the model should use for subsequent queries. |
+| [Measure](#dax-and-reusable-calculation-design) | A Data Analysis Expressions (DAX) calculation evaluated in the report's current filter context. One sales measure can return the store total on a filtered page and the company total across stores. |
+| [Filter context](#dax-and-reusable-calculation-design) | The filters active for a DAX calculation, coming from report selections, model relationships or expressions. |
+| [Row context](#dax-and-reusable-calculation-design) | The current model row used while evaluating an expression, such as a calculated column or iterator. |
+| [Calculation group](#dax-and-reusable-calculation-design) | A set of reusable calculation items that can apply common transformations to selected measures. |
+| [Iterator](#dax-and-reusable-calculation-design) | A DAX function that evaluates an expression for successive rows of a table before combining results. |
+| [Context transition](#dax-and-reusable-calculation-design) | The conversion of row context into filter context in the applicable DAX calculation. |
+| [Nonadditive measure](#worked-example-a-percentage-total-must-be-recalculated) | A result such as margin percentage that must be recalculated from its components at each total level. |
+| [Row-level security (RLS)](#security-and-performance-at-enterprise-scale) | Rules that filter which rows a given reader may see when querying a model. |
+| [Incremental refresh](#security-and-performance-at-enterprise-scale) | A model refresh strategy that processes selected time partitions instead of reloading all historical data. |
+| [Partition](#security-and-performance-at-enterprise-scale) | A separately managed segment of model data that can be processed or refreshed under a defined policy. |
+| [AI data schema](#ai-ready-analytics-data) | A curated selection of model objects and descriptions intended to guide AI-assisted analysis toward relevant business meaning. |
+
 ## Places to learn
+
+**Suggested practice.** Build an access matrix for the two users before comparing what each can see at workspace, item and data level. About 45 minutes for the exercise (publisher estimate); provisioning or setup can add time. [Secure data access in Microsoft Fabric](https://microsoftlearning.github.io/mslearn-fabric/Instructions/Labs/19-secure-data-access.html)
 
 ### October 28 learning route and evidence task
 

@@ -13,7 +13,9 @@ upcoming_change_checked: 2026-10-28
 
 # MB-230 Microsoft Dynamics 365 Customer Service Functional Consultant Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-04.md#mb-230) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mb-230-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-230) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-05.md#mb-230)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-04.md#mb-230) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mb-230-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-230) is authoritative.
 
 **Current baseline:** Skills measured as of March 11, 2026.<br>
 **Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
@@ -170,6 +172,8 @@ Test rule order, stop conditions, ties, unavailable queues, full capacity, no ma
 > **Related item:** Routing chooses where work goes; security determines whether the assignee can open and act on it; SLAs measure the service commitment. Validate all three together.
 
 #### Capacity and current evidence choices
+
+**Practice check.** For case or conversation volume forecasting, evaluate forecast scenarios in workforce engagement management. Microsoft set October 30, 2026 as the end of support for the older Customer Service forecasting feature and identifies the workforce feature for capacity planning and scheduling. [Deprecations in Dynamics 365 Customer Service | Microsoft Learn](https://learn.microsoft.com/en-us/dynamics365/customer-service/implement/deprecations-customer-service)
 
 [Capacity profiles](https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/capacity-profiles) define work limits and reset behavior. Microsoft recommends profiles or unit-based capacity rather than mixing them. Users must be bookable resources. With assignment blocking enabled, reaching the profile limit blocks additional automatic assignments even if another profile has room. Supervisors/manual picks can override capacity and produce negative remaining capacity.
 
@@ -527,7 +531,70 @@ The local arithmetic/calendar checks were executed during this review. The tenan
 
 The March 11, 2026 official study guide is the objective authority. The credential surface retains older October 3, 2025/future-tense update text, so this guide does not use those banners as the baseline. Microsoft Learn and product documentation support product behavior; commercial resources are optional perspectives and were not treated as objective authority. All practice questions in this guide are original and conceptual; no exam dumps or recalled items were used.
 
+## Key terms and phrases
+
+**Manage cases in Customer Service**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Case](#model-the-case-lifecycle) | The durable record of a customer's service request, its owner, work performed and resolution. |
+| [Case origin](#model-the-case-lifecycle) | The channel or source from which a service request was created. |
+| [Case owner](#model-the-case-lifecycle) | The user or team responsible for a case record and its progression. |
+| [Case resolution](#model-the-case-lifecycle) | The recorded outcome closing a case with relevant resolution details. |
+| [Entitlement](#model-the-case-lifecycle) | A customer's service allowance or support terms, distinct from the SLA timer tracking a particular target. |
+| [Timeline](#secure-records-and-shape-the-timeline) | A chronological view of activities, notes and interactions related to the service record. |
+| [Security role](#secure-records-and-shape-the-timeline) | A defined set of privileges controlling allowed actions and access depth in Dataverse. |
+| [Record sharing](#secure-records-and-shape-the-timeline) | Granting another user or team access to a specific record within the applicable security model. |
+| [Knowledge article](#govern-knowledge-from-authoring-to-use) | Versioned service guidance that can be reviewed, published and reused by representatives handling cases. |
+| [Article lifecycle](#govern-knowledge-from-authoring-to-use) | The progression of service guidance through authoring, review, publication, revision and retirement. |
+| [Published article](#govern-knowledge-from-authoring-to-use) | An approved knowledge version made available for its configured audiences and channels. |
+| [Article translation](#enable-a-record-type-and-maintain-a-translation) | A language-specific version of a knowledge article managed and published for its intended readers. |
+| [Suggested contact](#work-a-suggested-contact-rule) | A person identified by a configured relationship or rule as potentially useful for a case. |
+| [Grounding](#configure-copilot-and-service-agents) | Using relevant information the user is permitted to access as evidence for a Copilot response. |
+| [Automation level](#configure-an-automation-level-then-verify-the-action-path) | The configured degree of autonomy granted to a service agent for a particular operation. |
+| [Service-level agreement (SLA)](#design-enforceable-slas) | A service commitment with conditions and time targets against which work such as a first response is measured. |
+| [SLA key performance indicator (KPI) instance](#design-enforceable-slas) | A timer record that tracks one service target for a case, such as a first response due within two business hours. |
+| [SLA item](#design-enforceable-slas) | The definition of when a service target applies and which warning or failure conditions govern its KPI. |
+| [First-response target](#design-enforceable-slas) | The maximum elapsed service time allowed before an initial response is due under the agreement. |
+| [Business hours](#read-the-clock-configuration-in-order) | The service calendar used to calculate time commitments, excluding configured nonworking periods. |
+| [Pause condition](#read-the-clock-configuration-in-order) | A case state or condition that suspends an applicable SLA timer until work resumes. |
+
+**Configure representative experience and routing**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Workstream](#trace-the-unified-routing-pipeline) | The intake and distribution configuration for a type of record or customer channel. |
+| [Queue](#trace-the-unified-routing-pipeline) | A destination for incoming work that can be matched with eligible representatives. |
+| [Classification](#trace-the-unified-routing-pipeline) | Applying rules or predictions to incoming work so it carries the attributes needed for routing. |
+| [Route-to-queue rule](#trace-the-unified-routing-pipeline) | A condition that selects a destination queue for a classified work item. |
+| [Assignment](#trace-the-unified-routing-pipeline) | The step that chooses an eligible representative for an item already routed to a queue. |
+| [Presence](#trace-the-unified-routing-pipeline) | A representative's current availability state used when deciding whether work can be assigned. |
+| [Capacity profile](#trace-the-unified-routing-pipeline) | A definition of how work consumes a representative's available capacity for assignment. |
+| [Fallback queue](#trace-the-unified-routing-pipeline) | The configured destination for work that cannot be classified or matched to an intended route. |
+| [Skill](#train-a-skill-model-before-using-its-classification) | A representative capability used as a matching criterion when classifying and assigning service work. |
+| [Agent script](#configure-scripts-slugs-and-macros) | A guided sequence of steps shown to a representative during a service interaction. |
+| [Macro](#configure-scripts-slugs-and-macros) | A reusable sequence of automated actions that a representative can invoke for routine service work. |
+| [Slug](#configure-scripts-slugs-and-macros) | A placeholder that is replaced with context-specific data when a script or productivity action runs. |
+| [Productivity pane](#configure-scripts-slugs-and-macros) | The workspace area exposing configured tools, scripts or guidance to a representative during a session. |
+| [Session](#shape-copilot-service-workspace) | The representative's work context for handling one interaction and its related information. |
+| [Session template](#shape-copilot-service-workspace) | A workspace configuration defining how a particular kind of service session opens and which associated tabs appear. |
+| [Application tab template](#shape-copilot-service-workspace) | A definition of the pages or records opened as tabs in a configured service-workspace session. |
+| [Inbox view](#build-one-inbox-view-for-a-persona) | A filtered presentation of assigned or eligible work tailored to a representative's role. |
+
+**Extend Customer Service**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Dataverse table](#configure-dataverse-data-and-ui-components) | A definition of a business entity's records, columns and relationships. |
+| [Form](#configure-dataverse-data-and-ui-components) | The layout and controls used to view or edit an individual Dataverse record. |
+| [View](#configure-dataverse-data-and-ui-components) | A saved selection of table columns, filters and sorting for a list of records. |
+| [Lookup column](#configure-dataverse-data-and-ui-components) | A column that refers to a row in another table, such as a request's assigned customer. |
+| [Customer Voice survey](#close-the-loop-with-customer-voice) | A feedback instrument used to gather customer responses about a service interaction or its outcome. |
+| [Survey response](#close-the-loop-with-customer-voice) | The recorded answers from a recipient, tied to the service context for interpreting satisfaction or follow-up needs. |
+
 ## Places to learn
+
+**Suggested practice.** Trace an example case through the conditions and predict which SLA item applies, when the timer pauses and which action a breach should trigger. 9 minutes for the unit (publisher page). [Define SLA items](https://learn.microsoft.com/en-us/training/modules/service-level-agreements/define-service-level-agreement)
 
 This is not a complete list and is not meant to be consumed in full. Choose one primary route, build complete case/SLA/routing/workspace journeys, and add another resource only for a measured gap.
 

@@ -467,6 +467,77 @@ Map older content line by line to V15. Verify current Windows editions/features/
 
 > **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
 
+## Key terms and phrases
+
+**Operating systems**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Clean installation](#choose-and-install-the-right-os) | Installing an operating system as a fresh environment. Preserving user data and restoring applications require separate preparation. |
+| [Distribution](#choose-and-install-the-right-os) | An operating system assembled around a Linux kernel with maintained packages, tools and release policies. |
+| [Firmware](#choose-and-install-the-right-os) | Software stored in a device that controls its low-level operation. Updates must match the hardware and preserve a recovery path. |
+| [Operating system (OS)](#choose-and-install-the-right-os) | Software that manages a computer’s resources and provides common services and isolation for applications. |
+| [Availability](#editions-support-and-storage-decisions) | Timely and reliable access to a resource by authorized users. A running server may still be unavailable to the business if a required dependency fails. |
+| [Random-access memory (RAM)](#editions-support-and-storage-decisions) | Working memory used by running programs. Its contents normally disappear when the computer loses power. |
+| [User acceptance testing (UAT)](#editions-support-and-storage-decisions) | Evaluation by business users that a system performs the agreed work before it is accepted for use. |
+| [Event Viewer](#windows-tools-and-configuration) | A Windows tool for inspecting system and application events, including errors around the time a problem occurred. |
+| [File extension](#windows-tools-and-configuration) | A filename suffix commonly associated with a format or application. It does not prove the underlying contents are safe or valid. |
+| [Filesystem](#windows-tools-and-configuration) | The structures that organize files and directories on storage or expose a virtual hierarchy. A larger block device alone does not always enlarge its filesystem. |
+| [Wi-Fi](#windows-tools-and-configuration) | Wireless local networking under the IEEE 802.11 family. Successful association, IP configuration and application access are distinct checks. |
+| [Shell](#command-intent-and-shell-context) | A command interpreter that parses input, expands variables and launches programs. Syntax can differ among shells. |
+| [Filesystem permissions](#macos-linux-and-mobile-basics) | Rules determining which identities may read, write, execute or traverse an object, alongside any applicable ACLs and mandatory security policy. |
+| [Package manager](#macos-linux-and-mobile-basics) | Software that installs, updates and removes packages while tracking metadata and dependencies. |
+| [Process](#macos-linux-and-mobile-basics) | A running program instance with its own identifier, credentials and execution state. |
+| [Synchronization](#cloud-productivity-support-objective-111) | Propagation of changes among copies of data. A deletion may propagate too, which makes independent recovery copies important. |
+| [Digital licensing](#cloud-productivity-support-objective-111) | The grant and assignment of rights to use software or a service. Installing an application is distinct from having the necessary entitlement. |
+| [Tenant](#cloud-productivity-support-objective-111) | An administrative or customer boundary in a shared service. Data, identities, configurations and actions must stay within the intended tenant. |
+
+**Security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Phishing](#threats-vulnerabilities-and-social-engineering) | An impersonation attempt that tries to persuade a recipient to reveal information or take an unsafe action. |
+| [Ransomware](#threats-vulnerabilities-and-social-engineering) | Malicious software associated with extortion, often by denying access to data. The incident can also involve disclosure or destruction. |
+| [Vulnerability](#threats-vulnerabilities-and-social-engineering) | A weakness in design, configuration, process or implementation that can affect a security objective under applicable conditions. |
+| [Least privilege](#identity-permissions-encryption-and-hardening) | Assigning only the permissions needed for the user’s task, such as using a standard account for everyday work. |
+| [Encryption](#identity-permissions-encryption-and-hardening) | Reversibly transforming data with a key to keep the plaintext unavailable to parties lacking the appropriate decryption capability. |
+| [Encryption in transit](#identity-permissions-encryption-and-hardening) | Protecting data while it travels between endpoints. The endpoints and any termination points can ordinarily access the plaintext. |
+| [Hardening](#identity-permissions-encryption-and-hardening) | Reducing avoidable exposure by configuring a system securely, such as removing unused services. |
+| [Disk encryption](#identity-permissions-encryption-and-hardening) | Protecting stored disk contents with encryption, with authorized recovery material needed if normal unlock fails. |
+| [Recovery key](#controls-and-recovery-are-separate-checks) | Information that permits authorized recovery of encrypted data when the normal unlock method is unavailable. |
+| [Authentication](#controls-and-recovery-are-separate-checks) | Verifying an identity before deciding which resources that identity may access. |
+| [Endpoint detection and response (EDR)](#controls-and-recovery-are-separate-checks) | Collecting and analyzing endpoint activity so analysts can investigate suspicious behavior and take scoped response actions. |
+| [Evidence preservation](#malware-response-and-disposal) | Maintaining the integrity and provenance of information needed for investigation, including original timestamps, collection method and access history. |
+| [Restore point](#malware-response-and-disposal) | A recorded state used to restore selected system settings or components. Its scope differs from a full independent backup of user data. |
+| [Solid-state drive (SSD)](#malware-response-and-disposal) | Persistent storage that uses flash memory instead of spinning platters. Its connector and protocol determine compatibility. |
+
+**Software troubleshooting**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Bootloader](#3-software-troubleshooting-23) | Software that selects and loads a kernel and supporting boot data before the operating system takes over. |
+| [Alert](#mobile-and-security-symptoms) | A notification that an observed condition met a detection criterion. An analyst needs context before treating it as an incident. |
+
+**Operational procedures**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Rollback plan](#tickets-documentation-and-change) | A documented way to restore a known working state if a proposed change causes a problem. |
+| [Asset](#tickets-documentation-and-change) | Something of value that the organization needs to protect, such as a device, identity, service or dataset. |
+| [Change management](#tickets-documentation-and-change) | The process for assessing, approving, implementing and reviewing changes so risks and outcomes remain accountable. |
+| [Ticket](#tickets-documentation-and-change) | A support record documenting the issue, its scope, observations, actions, ownership and resolution so the work can be followed or escalated. |
+| [Incremental backup](#backup-recovery-safety-and-environment) | A backup containing changes since the preceding relevant backup. Restoration may require the full backup and a chain of increments. |
+| [Backup](#backup-recovery-safety-and-environment) | A retained copy made for recovery after loss or corruption. Its usefulness depends on successful restoration under the intended conditions. |
+| [Chain of custody](#backup-recovery-safety-and-environment) | A record of how evidence was collected, handled, transferred and stored. |
+| [Failure domain](#backup-recovery-safety-and-environment) | A set of components that can fail together, such as workloads sharing a physical host, power source or region. |
+| [Full backup](#backup-recovery-safety-and-environment) | A backup covering all selected data within its scope. Restore viability also depends on consistency, keys, permissions and dependencies. |
+| [Differential backup](#backup-recovery-safety-and-environment) | A backup of changes since the last full backup. Recovery generally needs that full backup and the selected differential. |
+| [Environment variable](#communication-scripting-and-remote-support) | A named value supplied in the environment of a process, such as a search path. Child processes inherit exported variables from their parent. |
+| [Secure Shell (SSH)](#communication-scripting-and-remote-support) | An encrypted protocol for remote login and related operations. Host keys authenticate the server, while user credentials establish the client’s identity. |
+| [Virtual private network (VPN)](#communication-scripting-and-remote-support) | A protected logical connection over a shared network. Its permitted destinations and traffic depend on routes and access policy. |
+| [Log retention](#ai-in-support-work-objective-410) | The period for which records remain available for an investigation or other defined purpose. Missing results outside that period cannot establish inactivity. |
+| [Eradication](#local-powershell-copy-and-restore-exercise) | Removing the cause and remaining artifacts of an incident before or alongside controlled restoration of normal operation. |
+
 ## Places to learn
 
 This is not a complete list and is not meant to be consumed in full. Select one V15 path, practice on disposable multi-OS systems, and use one explanation-led assessment to guide remediation.

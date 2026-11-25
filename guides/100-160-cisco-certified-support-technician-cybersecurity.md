@@ -696,6 +696,88 @@ These 48 original prompts include answer guidance and are not recalled exam item
 
 ---
 
+## Key terms and phrases
+
+**Security principles**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Asset](#assets-events-and-risk) | Something of value that the organization needs to protect, such as a device, identity, service or dataset. |
+| [False negative](#assets-events-and-risk) | A target condition that occurs without the expected alert or block. Reviewing alerts alone cannot reveal every missed case. |
+| [False positive](#assets-events-and-risk) | An alert that classifies benign activity as a target condition. Repeated benign alerts can distort operational priorities. |
+| [Incident](#assets-events-and-risk) | A case representing a security event or set of related events requiring coordinated investigation and response. |
+| [Integrity](#security-objectives-and-control-types) | Confidence that data and systems have been protected from unauthorized changes. |
+| [Compensating control](#security-objectives-and-control-types) | A substitute safeguard that reduces the specific exposure when the primary safeguard cannot yet be used. |
+| [Defense in depth](#security-objectives-and-control-types) | Coordinating complementary safeguards so that one failed control does not expose the entire service or dataset. |
+| [Authorization](#identity-and-access-management) | Deciding which actions an authenticated identity is permitted to take. |
+| [Accounting](#identity-and-access-management) | Recording access or use so activity can be attributed and reviewed, complementing authentication and authorization. |
+| [Authentication](#identity-and-access-management) | Verifying an identity before deciding which resources that identity may access. |
+| [Multifactor authentication (MFA)](#password-and-mfa-claims-need-precise-scope) | Authentication using at least two distinct types of factor, such as knowledge of a password and possession of a security key. |
+| [Phishing](#password-and-mfa-claims-need-precise-scope) | An impersonation attempt that tries to persuade a recipient to reveal information or take an unsafe action. |
+| [Phishing-resistant authentication](#password-and-mfa-claims-need-precise-scope) | Authentication designed to prevent an impostor service from reusing the proof supplied for a legitimate service, such as a credential bound to the correct origin. |
+| [Hash](#cryptography-with-the-right-purpose) | A fixed-length value derived from data that can help detect changes when compared with a trusted reference. |
+| [Asymmetric cryptography](#cryptography-with-the-right-purpose) | Cryptography using mathematically related public and private keys, enabling operations such as signature verification or exchange of protected data. |
+| [Encryption](#cryptography-with-the-right-purpose) | Reversibly transforming data with a key to keep the plaintext unavailable to parties lacking the appropriate decryption capability. |
+| [Symmetric encryption](#cryptography-with-the-right-purpose) | Encryption in which the same secret key is used to encrypt and decrypt. Secure sharing and storage of the key are essential. |
+
+**Network security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [MAC address](#tcpip-exposure-and-network-evidence) | A link-layer identifier used to deliver frames on the local network. Knowing a MAC address alone does not identify the authenticated user. |
+| [Transmission Control Protocol (TCP)](#tcpip-exposure-and-network-evidence) | A connection-oriented transport that provides an ordered byte stream and retransmits missing data while the connection can be maintained. |
+| [Segmentation](#infrastructure-and-boundary-controls) | Separating network areas and restricting traffic between them to reduce unnecessary access. |
+| [Containment](#infrastructure-and-boundary-controls) | Limiting the scope or ongoing effects of an incident, such as isolating the affected device under an approved response plan. |
+| [Router](#infrastructure-and-boundary-controls) | A device that forwards packets between IP networks using destination addresses and routes. |
+| [Intrusion detection system (IDS)](#infrastructure-and-boundary-controls) | A control that observes activity and reports patterns that may indicate an intrusion. A detection alone does not establish compromise. |
+| [Intrusion prevention system (IPS)](#infrastructure-and-boundary-controls) | An inspection control able to take preventive action on matching traffic or behavior, subject to visibility and configured policy. |
+| [IEEE 802.1X port-based access control](#secure-wireless-and-small-office-design) | Port-based access control involving a supplicant, an authenticator such as a switch and an authentication server. |
+| [Firmware](#secure-wireless-and-small-office-design) | Software stored in a device that controls its low-level operation. Updates must match the hardware and preserve a recovery path. |
+| [Log retention](#monitoring-without-overclaiming) | The period for which records remain available for an investigation or other defined purpose. Missing results outside that period cannot establish inactivity. |
+| [Packet capture](#monitoring-without-overclaiming) | An observation of traffic visible at a particular interface or tap. Position, direction and capture filters determine what it can show. |
+
+**Endpoint security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Hardening](#hardening-and-policy-validation) | Reducing avoidable exposure by configuring a system securely, such as removing unused services. |
+| [Attack surface](#hardening-and-policy-validation) | The set of exposed interfaces, identities and other points through which a system can be reached or affected. |
+| [Event Viewer](#hardening-and-policy-validation) | A Windows tool for inspecting system and application events, including errors around the time a problem occurred. |
+| [Rollback](#updating-safely) | Returning a change to a known acceptable state when results do not meet defined conditions. A valid rollback also accounts for data changed in the meantime. |
+| [Procedure](#suspected-malware) | An ordered set of instructions for carrying out a defined activity, with enough detail for the responsible person to execute it consistently. |
+| [Quarantine](#suspected-malware) | Restricting the access or use of a device, file or message pending investigation. The quarantine boundary and release authority matter. |
+
+**Vulnerability assessment and risk management**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Threat intelligence](#4-vulnerability-assessment-and-risk-management) | Assessed information about adversary activity or indicators, with source, context and freshness to guide a decision. |
+| [Vulnerability](#4-vulnerability-assessment-and-risk-management) | A weakness in design, configuration, process or implementation that can affect a security objective under applicable conditions. |
+| [Vulnerability severity](#severity-observed-exploitation-and-forecast-are-different-inputs) | A measure of technical impact and exploit conditions. It is one input into a decision that also considers exposure and business context. |
+| [Severity](#severity-observed-exploitation-and-forecast-are-different-inputs) | A rating of expected or observed impact. It differs from confidence, which expresses how strongly the evidence supports the assessment. |
+| [Business impact analysis (BIA)](#continuity-and-recovery) | A study of disruption across business functions and over time. Its results help set recovery priorities and identify dependencies. |
+| [Recovery point objective (RPO)](#continuity-and-recovery) | The maximum targeted interval of data loss, measured back from the disruption. |
+| [Recovery time objective (RTO)](#continuity-and-recovery) | The targeted elapsed time for restoring a service after a disruption. |
+
+**Incident handling**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Eradication](#event-triage-and-escalation) | Removing the cause and remaining artifacts of an incident before or alongside controlled restoration of normal operation. |
+| [Triage](#event-triage-and-escalation) | The first assessment of urgency, reliability, affected scope and next action for an alert or case. |
+| [Playbook](#reconcile-the-exam-reference-with-current-nist-guidance) | A workflow of decisions and tasks for a recurring case. It can combine automated enrichment with human authorization for disruptive actions. |
+| [Security information and event management (SIEM)](#reconcile-the-exam-reference-with-current-nist-guidance) | Collecting and correlating records from multiple systems to support detection, search, reporting and investigation. |
+| [Chain of custody](#evidence-and-forensics) | A record of who handled evidence, when it moved and how its integrity was maintained. |
+| [Normalization](#communication-and-documentation) | Mapping source-specific values to a common representation, such as translating different vendor fields into the same source-address field. |
+| [Out-of-band](#communication-and-documentation) | Use of a separate communications or management path, such as an independent channel for verifying an unusual request. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Tenant](#hands-on-evidence-labs) | An administrative or customer boundary in a shared service. Data, identities, configurations and actions must stay within the intended tenant. |
+| [Timestamp](#executed-local-evidence-workbook) | A recorded time associated with an event. Distinguish source event time from collection or indexing time when building a timeline. |
+
 ## Places to learn
 
 This is **not a complete list**. Choose resources for demonstrated gaps and use Cisco's actual objectives for scope. Public catalog evidence was reviewed September 29, 2026; provider estimates and editorial planning budgets are distinguished below. No paid lessons, book interiors, provider lab instructions or proprietary questions were accessed.

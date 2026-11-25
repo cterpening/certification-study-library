@@ -262,6 +262,95 @@ Design an event index and role, document identity mapping, install a compatible 
 - [ ] I completed the ten labs without touching real production data or destructive controls.
 - [ ] My Power User prerequisite is valid and I rechecked the live exam/service contracts.
 
+## Key terms and phrases
+
+**Splunk Cloud overview**
+
+| Term or phrase | Meaning |
+|---|---|
+| [App vetting](#1-splunk-cloud-overview-5) | Reviewing a packaged app for suitability in Splunk Cloud. Installation rights and the need for support depend on the app and environment. |
+| [Indexer](#1-splunk-cloud-overview-5) | Processes or stores indexed data and runs the portion of a distributed search assigned to its local data. |
+| [Admin Config Service (ACS)](#1-splunk-cloud-overview-5) | A supported interface for administering eligible aspects of a Splunk Cloud deployment without direct service-tier file access. |
+
+**Index management**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Index](#2-index-management-5) | A named store for event or metric data with its own access and retention settings. |
+| [Data retention](#2-index-management-5) | The policy and capacity governing how long data remains available. A size threshold can affect whether a time-based retention goal is met. |
+
+**Authentication and authorization**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Role](#3-authentication-and-authorization-5) | A collection of capabilities and data access settings assigned to users, including which indexes they can search. |
+| [Authentication](#3-authentication-and-authorization-5) | Verifying the identity of a user or service. Authorization then determines what that identity can see or change. |
+| [Authorization](#3-authentication-and-authorization-5) | Determining which operations and data an authenticated identity may access through roles, capabilities and restrictions. |
+| [Single sign-on (SSO)](#3-authentication-and-authorization-5) | Using a trusted identity provider to authenticate users for an application. Roles still determine their effective permissions. |
+
+**Configuration files and processing**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Configuration precedence](#4-configuration-files-and-processing-5) | The rules that determine which setting takes effect when several Splunk configuration files define the same property. |
+| [Search-time knowledge](#4-configuration-files-and-processing-5) | Definitions such as calculated fields and lookups applied when a search runs. They can change interpretation without rewriting stored events. |
+| [Index-time processing](#4-configuration-files-and-processing-5) | Processing applied before data is stored, such as timestamp recognition. A mistake here can affect every later search. |
+| [Data routing](#4-configuration-files-and-processing-5) | Choosing where incoming data should be sent based on its source or characteristics, often at a tier capable of parsing it. |
+| [Event](#4-configuration-files-and-processing-5) | One occurrence represented in the data, with a timestamp and associated metadata. A multiline log entry can be a single event. |
+| [Configuration stanza](#4-configuration-files-and-processing-5) | A named section of a Splunk configuration file. Settings from multiple files can contribute to the effective stanza. |
+| [`btool`](#4-configuration-files-and-processing-5) | A diagnostic utility for inspecting merged configuration and where settings originated on an instance the operator controls. |
+
+**Forwarding and forwarder management**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Universal forwarder](#56-forwarding-and-forwarder-management-20) | A lightweight component installed near a data source to collect and send data to a receiving tier. |
+| [Heavy forwarder](#56-forwarding-and-forwarder-management-20) | A full Splunk Enterprise instance configured to forward data that can also parse or transform supported inputs. |
+| [Forwarder](#56-forwarding-and-forwarder-management-20) | A component that collects and sends data to another Splunk tier. Its type determines which parsing tasks it can perform. |
+| [Deployment server](#56-forwarding-and-forwarder-management-20) | Distributes managed applications and configuration to assigned deployment clients. |
+| [Deployment client](#56-forwarding-and-forwarder-management-20) | An instance that checks in with a deployment server and obtains configuration assigned through its server classes. |
+| [Server class](#56-forwarding-and-forwarder-management-20) | A rule grouping deployment clients so selected applications or settings reach the intended instances. |
+
+**Monitor inputs**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Monitor input](#7-monitor-inputs-15) | An input that watches files or directories and tracks its reading position as it collects data. |
+| [Input checkpoint](#7-monitor-inputs-15) | Saved input progress used when collection resumes. Resetting it may replay old data or create a gap. |
+| [Host](#7-monitor-inputs-15) | Metadata identifying the host associated with an event. Check how it was assigned before using it as a device identity. |
+
+**Network and other inputs**
+
+| Term or phrase | Meaning |
+|---|---|
+| [HTTP Event Collector (HEC)](#8-network-and-other-inputs-10) | An HTTP input that accepts events from applications using a configured token. |
+| [Source](#8-network-and-other-inputs-10) | The file, stream or other input from which data came. Different sources can share a sourcetype when their records use the same format. |
+
+**Input, parsing, and raw transformation**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Line breaking](#911-input-parsing-and-raw-transformation-25) | The parsing step that determines where one event ends and the next begins, especially important for multiline logs. |
+| [`_raw`](#911-input-parsing-and-raw-transformation-25) | The raw event text retained with an indexed event. Compare it with extracted fields when a value is missing or unexpected. |
+| [`_time`](#911-input-parsing-and-raw-transformation-25) | The event timestamp used for time-based searching. A parsing error or an unexpected time zone can move an event outside the search range. |
+| [Sourcetype](#911-input-parsing-and-raw-transformation-25) | A classification of the data's format that influences parsing and field extraction. Two sources can produce the same sourcetype. |
+| [Index-time routing](#911-input-parsing-and-raw-transformation-25) | Choosing a destination for events while they are being processed. Verify the result before assuming stored data can be repaired later. |
+| [Index-time timestamp](#911-input-parsing-and-raw-transformation-25) | The time assigned to an event during parsing. The time a forwarder sends a line is not necessarily when the described event occurred. |
+
+**Installing and managing apps**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Private app](#12-installing-and-managing-apps-5) | An app packaged for a particular customer or deployment. Compatibility, permissions and installation requirements still need review. |
+| [Splunkbase](#12-installing-and-managing-apps-5) | Splunk's catalog of apps and add-ons. Check a particular package's publisher, supported versions and dependencies before rollout. |
+
+**Working with Splunk Cloud Support**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Support case severity](#13-working-with-splunk-cloud-support-5) | A rating of the operational impact of a support issue. Include the affected users or data sources and the timeline so Support can triage it. |
+| [Cloud Monitoring Console (CMC)](#13-working-with-splunk-cloud-support-5) | A customer-visible view of Splunk Cloud health and usage that can supply evidence for troubleshooting or a support case. |
+
 ## Places to learn
 
 This is not a complete list, and it is not meant to be consumed in full. Pick the official administration course or a documentation-led lab as the primary path. Cloud service behavior changes; verify every third-party explanation against the current service description, Admin/ACS manuals, and your tenant.

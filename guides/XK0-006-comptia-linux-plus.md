@@ -485,6 +485,83 @@ Map older material line by line to V8 and current distributions. Verify current 
 
 The [upstream kernel archive](https://www.kernel.org/pub/linux/kernel/v7.x/) listed mainline 7.3 dated October 18 and stable 7.2.13 dated October 26. These are upstream release examples, not Linux+ objectives or a promise about a distribution’s supported kernel. When investigating a host, record `uname -r`, identify the distribution package/build, then check that vendor’s security advisory and backport status before calling a finding fixed or vulnerable. **Related item:** the Linux Foundation’s free [Introduction to Linux (LFS101)](https://training.linuxfoundation.org/training/introduction-to-linux/) is a broad foundations refresher, not a complete XK0-006 path; the page publishes no duration, so any study time is an author estimate.
 
+## Key terms and phrases
+
+**System management**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Initramfs](#boot-kernel-hardware-and-filesystems) | An initial filesystem loaded during boot to supply the drivers and tools needed to locate and mount the real root filesystem. |
+| [Filesystem](#boot-kernel-hardware-and-filesystems) | The structures that organize files and directories on storage or expose a virtual hierarchy. A larger block device alone does not always enlarge its filesystem. |
+| [Firmware](#boot-kernel-hardware-and-filesystems) | Software stored in a device that controls its low-level operation. Updates must match the hardware and preserve a recovery path. |
+| [Kernel](#boot-kernel-hardware-and-filesystems) | The privileged core of the operating system that manages processors, memory, devices and system calls for user-space programs. |
+| [Logical volume](#storage-and-recovery) | A resizable block device allocated from an LVM storage pool. Filesystem capacity is managed separately. |
+| [Backup](#storage-and-recovery) | A retained copy made for recovery after loss or corruption. Its usefulness depends on successful restoration under the intended conditions. |
+| [Swap](#storage-and-recovery) | Disk-backed space the kernel can use for eligible memory pages. Excessive use can produce severe latency even when a process stays alive. |
+| [Synchronization](#storage-and-recovery) | Propagation of changes among copies of data. A deletion may propagate too, which makes independent recovery copies important. |
+| [Shell](#network-shell-and-virtualization) | A command interpreter that parses input, expands variables and launches programs. Syntax can differ among shells. |
+| [Shell variable](#network-shell-and-virtualization) | A named value in the current shell. Exporting it makes it available in subsequently launched child processes. |
+| [Snapshot](#network-shell-and-virtualization) | A point-in-time representation of a resource. Its independence, consistency and recovery scope depend on the underlying service. |
+
+**Services and user management**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Symbolic link](#files-permissions-links-and-special-files) | A filesystem object that points to another path and can remain present even if that path disappears. |
+| [Discretionary access control (DAC)](#files-permissions-links-and-special-files) | Access determined through file ownership, permission bits and related mechanisms controlled by authorized owners or administrators. |
+| [Hard link](#files-permissions-links-and-special-files) | Another directory entry for the same underlying filesystem object. Removing one name does not remove the data while another link remains. |
+| [umask](#creation-modes-and-acl-masks) | A mask that clears permission bits when a file is created. If a program requests `0666`, a `0022` mask clears group and other write access, yielding `0644`. |
+| [File access control list](#creation-modes-and-acl-masks) | Permissions on a file or directory for additional named users or groups beyond the basic owner/group/other bits. A mask can limit effective entries. |
+| [Database](#accounts-processes-jobs-and-software) | An organized collection of data managed for storage, retrieval and change under defined rules. |
+| [Process](#accounts-processes-jobs-and-software) | A running program instance with its own identifier, credentials and execution state. |
+| [Package manager](#accounts-processes-jobs-and-software) | Software that installs, updates and removes packages while tracking metadata and dependencies. |
+| [Container](#services-logs-timers-and-containers) | An isolated application process and its dependencies that ordinarily shares the host kernel. Its image is the packaged input used to start it. |
+| [Container runtime](#services-logs-timers-and-containers) | Software that creates and runs containers using the image and isolation settings supplied by the platform. |
+| [Unit file](#services-logs-timers-and-containers) | The configuration describing a systemd unit, such as a service or timer, including its behavior and dependencies. |
+| [Enabled service](#unit-state-timers-and-boot-evidence) | A service configured to be activated through a boot target or other dependency. Its current running state is a separate check. |
+| [Timer unit](#unit-state-timers-and-boot-evidence) | A systemd unit that schedules another unit, usually a service. A working schedule and a successful service result are separate checks. |
+
+**Security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Pluggable Authentication Modules (PAM)](#authentication-authorization-and-accounting) | A framework through which Linux services use configured stacks of authentication and account checks. |
+| [Accounting](#authentication-authorization-and-accounting) | Recording access or use so activity can be attributed and reviewed, complementing authentication and authorization. |
+| [Authentication](#authentication-authorization-and-accounting) | Verifying an identity before deciding which resources that identity may access. |
+| [Authorization](#authentication-authorization-and-accounting) | Deciding which actions an authenticated identity is permitted to take. |
+| [AppArmor](#firewalls-hardening-cryptography-and-compliance) | A Linux security mechanism that applies profiles constraining the permitted operations of a program, including access to files and capabilities. |
+| [Disk encryption](#firewalls-hardening-cryptography-and-compliance) | Protecting stored disk contents with encryption, with authorized recovery material needed if normal unlock fails. |
+| [Hardening](#firewalls-hardening-cryptography-and-compliance) | Reducing avoidable exposure by configuring a system securely, such as removing unused services. |
+| [Security-Enhanced Linux (SELinux)](#firewalls-hardening-cryptography-and-compliance) | A Linux mandatory access control system that applies policy to labeled subjects and objects in addition to ordinary file permissions. |
+| [Backport](#backports-integrity-and-sanitization-limits) | A fix applied to a distribution’s existing package version without adopting the entire newer upstream release. |
+| [Block storage](#backports-integrity-and-sanitization-limits) | Storage exposed as addressable blocks, such as a volume attached to a virtual machine. A filesystem can be created on that volume. |
+| [False positive](#backports-integrity-and-sanitization-limits) | An alert that classifies benign activity as a target condition. Repeated benign alerts can distort operational priorities. |
+| [Integrity](#backports-integrity-and-sanitization-limits) | Confidence that data and systems have been protected from unauthorized changes. |
+
+**Automation, orchestration, and scripting**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Idempotent configuration](#configuration-automation-and-delivery) | A configuration operation that brings a system to the desired state and makes no further change on a second successful run. |
+| [Continuous integration (CI)](#configuration-automation-and-delivery) | Automatically building or checking proposed changes so problems are detected before or during integration. |
+| [Idempotence](#configuration-automation-and-delivery) | The property that applying the same desired configuration again leaves an already-correct device in the same state. |
+| [Exit status](#bash-and-python) | A number returned by a completed process. Shell conditionals conventionally treat zero as success and a nonzero value as failure or another documented result. |
+| [Loop](#bash-and-python) | A program structure that repeats instructions while a condition holds or for each item in a collection. |
+| [Full backup](#original-restore-comparison) | A backup covering all selected data within its scope. Restore viability also depends on consistency, keys, permissions and dependencies. |
+| [Sandbox](#original-restore-comparison) | An isolated environment for observing or restricting a program’s behavior. Its conclusions depend on the inputs, visibility and constraints of the environment. |
+
+**Troubleshooting**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Service-level indicator (SLI)](#monitoring-objective-51) | A measured aspect of service performance, such as the fraction of successful requests. The service-level objective sets its target. |
+| [Health check](#monitoring-objective-51) | A defined test of reachability or service behavior used to decide whether a path or backend remains eligible. A TCP response may test less than an application transaction. |
+| [Webhook](#monitoring-objective-51) | An event-driven request sent to a registered receiver so the consumer can respond without repeatedly polling. |
+| [Kernel module](#boot-hardware-storage-and-application) | Code that extends the running kernel, often to supply a hardware driver or filesystem implementation. |
+| [Target](#boot-hardware-storage-and-application) | A systemd unit that groups other units into a desired operating state, such as a multi-user system after boot. |
+| [Latency](#network-security-and-performance) | The time data takes to travel between two points. A high-capacity link can still have a long delay. |
+| [Listening port](#network-security-and-performance) | A network socket waiting for incoming traffic on a protocol, address and port. A listening service may still be unreachable through an intervening firewall. |
+
 ## Places to learn
 
 This is not a complete list and is not meant to be consumed in full. Choose one current XK0-006 path, spend at least as much time operating and breaking/fixing disposable Linux systems as watching, and use one explanation-led assessment for remediation.

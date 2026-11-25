@@ -13,11 +13,13 @@ upcoming_change_checked: 2026-10-28
 
 # AZ-802 Administering Windows Server Study Guide
 
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-03.md#az-802)
+
 > **Delivery status checked September 27, 2026:** The [Windows Server Administrator Associate page](https://learn.microsoft.com/en-us/credentials/certifications/windows-server-administrator-associate/) and exam listing no longer label AZ-802 beta. The credential page lists a 120-minute English assessment. This guide now records active delivery; verify current appointment and practice availability before scheduling.
 
 > **REPLACEMENT PATH:** AZ-800 and AZ-801 retired on **September 30, 2026**. The [credential page](https://learn.microsoft.com/en-us/credentials/certifications/windows-server-administrator-associate/) identifies AZ-802 as the replacement exam. AZ-802 is one consolidated exam; do not assume a partial pass in the old two-exam route transfers automatically.
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-05.md#az-802) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-802-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802) is authoritative.
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-05.md#az-802) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-802-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802) is authoritative.
 
 **Current baseline:** Official study-guide page last updated October 19, 2026; Microsoft does not publish a separate “skills measured as of” date on that page. The 115 detailed objectives match the accepted objective wording.<br>
 **Upcoming blueprint change:** No separate future objective revision was found in the September 27 check.<br>
@@ -27,6 +29,8 @@ upcoming_change_checked: 2026-10-28
 **Official sources:** [AZ-802 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802) · [credential and exam page](https://learn.microsoft.com/en-us/credentials/certifications/windows-server-administrator-associate/) · [AZ-802T00 course](https://learn.microsoft.com/en-us/training/courses/az-802t00) · [old-exam retirement list](https://learn.microsoft.com/en-us/credentials/support/retired-certification-exams)
 
 > **Living-guide watch — updated September 27, 2026:** Recheck the blueprint, course, practice availability, and [Windows Server release health](https://learn.microsoft.com/en-us/windows/release-health/) before each study cycle. [What's new in Windows Server 2025](https://learn.microsoft.com/en-us/windows-server/get-started/whats-new-windows-server-2025) helps identify version-specific behavior but is broader than exam scope. SSH Direct remains a documented evidence gap rather than omitted content: Microsoft confirms the Hyper-V/VSOCK substrate and Microsoft-owned code demonstrates an older Debian setup, while Ubuntu, Red Hat-family, SUSE/openSUSE, Oracle Linux, systemd, libvirt, Microsoft Press, and expert evidence show useful but version-bound components. The [dated evidence review](../docs/SSH-DIRECT-EVIDENCE.md) labels each proposition and missing proof. Do not infer a universal supported recipe or compatibility matrix; validate the exact host, guest, kernel, systemd/OpenSSH, authentication, and rollback combination in a disposable authorized lab.
+
+**Practice check.** For an isolated Hyper-V guest, distinguish a host-to-guest socket from a connection through the guest's IP network. Hyper-V sockets provide a local host-to-VM communication path without depending on the guest's virtual network. [Source notes and publisher link](../docs/research/2026-11-20-microsoft-refresh-group-03.md#az-802)
 
 ## How to use this guide
 
@@ -1048,7 +1052,96 @@ These original checks test reasoning from the public objectives. Answer from the
 
 ---
 
+## Key terms and phrases
+
+**Deploy and manage AD DS (20–25%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Active Directory Domain Services (AD DS)](#deploy-domain-controllers-locally-and-in-azure) | The directory service providing domain identities, authentication, policy and directory replication for Windows domains. |
+| [Domain controller](#deploy-domain-controllers-locally-and-in-azure) | A server that hosts a domain directory replica and provides domain authentication and directory services. |
+| [Read-only domain controller (RODC)](#deploy-and-secure-rodcs) | A domain controller with a read-only directory replica and configurable credential caching for sites with limited physical security. |
+| [FSMO role](#manage-fsmo-roles) | A Flexible Single Master Operations role assigns a particular directory operation to one domain controller to avoid conflicting changes. |
+| [Active Directory site](#configure-sites-and-replication) | A representation of connected IP subnets that helps clients locate services and helps administrators control replication. |
+| [Site link](#configure-sites-and-replication) | An AD object defining connectivity, cost and schedules used for replication between sites. |
+| [Forest](#configure-trusts-and-multiple-forestsdomains) | The top-level Active Directory boundary containing one or more domains with a shared schema and configuration. |
+| [Domain](#configure-trusts-and-multiple-forestsdomains) | A directory namespace and replication boundary for a set of accounts and other directory objects. |
+| [Trust](#configure-trusts-and-multiple-forestsdomains) | A relationship allowing principals in one domain or forest to be recognized for access decisions in another. |
+| [Group managed service account (gMSA)](#choose-service-accounts) | A service account whose password Active Directory maintains for authorized hosts running the service. |
+| [Group Policy Object (GPO)](#implement-group-policy-and-preferences) | A collection of policy settings linked to directory scopes to manage users or computers. |
+| [Group Policy preference](#implement-group-policy-and-preferences) | A user or computer configuration item delivered through Group Policy with its own targeting and application behavior. |
+| [Organizational unit (OU)](#implement-group-policy-and-preferences) | A directory container used to group objects, delegate administration and link Group Policy. |
+
+**Manage Windows Server instances and workloads in a hybrid environment (10–15%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Just Enough Administration (JEA)](#configure-powershell-remoting-second-hop-and-jea) | A constrained PowerShell endpoint that gives an operator access to the commands needed for a delegated task. |
+| [PowerShell remoting](#configure-powershell-remoting-second-hop-and-jea) | Executing PowerShell commands in a session on another computer through a configured transport and authorization boundary. |
+| [Second-hop problem](#configure-powershell-remoting-second-hop-and-jea) | The inability of an initial remote session to automatically reuse a caller's credentials to reach a third system. |
+| [Azure Arc-enabled server](#connect-non-azure-servers-through-azure-arc) | A non-Azure machine represented as an Azure resource so administrators can apply supported management services. |
+| [Automation runbook](#manage-updates-and-automation-runbooks) | A stored and scheduled automation procedure for supported management tasks under an assigned identity. |
+
+**Manage virtual machines (10–15%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Hyper-V](#configure-hyper-v-guests-and-management-paths) | The Windows virtualization platform that runs and manages virtual machines on a host. |
+| [Hyper-V checkpoint](#manage-checkpoints-availability-disks-and-adapters) | A saved point in a virtual machine's state used to return to an earlier configuration or disk state. |
+| [Virtual hard disk](#manage-checkpoints-availability-disks-and-adapters) | A disk image file presented as storage to a virtual machine. |
+| [Hyper-V Replica](#configure-hyper-v-switches-and-replica) | Asynchronous replication of a virtual machine to another host for recovery after an outage. |
+| [Virtual switch](#configure-hyper-v-switches-and-replica) | A Hyper-V networking component connecting virtual network adapters to each other and eligible external networks. |
+
+**Implement and manage on-premises and hybrid networking (10–15%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [DNS zone](#design-name-resolution-from-authority-outward) | An administrative portion of the DNS namespace containing the authoritative records for its names. |
+| [DNS forwarding](#resolve-names-across-hybrid-networks) | Sending queries for specified names or suffixes to another resolver. |
+| [DNSSEC](#use-dns-policies-and-dnssec) | DNS Security Extensions add verifiable signatures to DNS data so validating resolvers can check its integrity. |
+| [Dynamic Host Configuration Protocol (DHCP) reservation](#configure-dhcp-scopes-reservations-and-options) | A binding that repeatedly assigns a chosen IP address to a specific DHCP client identifier. |
+| [DHCP scope](#configure-dhcp-scopes-reservations-and-options) | A defined range of addresses and options a DHCP server can offer to clients on a network. |
+| [DHCP failover](#implement-dhcp-high-availability) | Coordination between eligible DHCP servers to provide address-leasing continuity for a scope. |
+
+**Manage storage and file services (15–20%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Share permission](#model-file-access-as-layered-authorization) | Access granted at the SMB share boundary, evaluated alongside underlying file-system permissions. |
+| [NTFS permission](#model-file-access-as-layered-authorization) | A filesystem access rule applied to a Windows file or directory for a principal. |
+| [Azure File Sync](#configure-and-monitor-azure-file-sync) | A service that synchronizes Windows Server file endpoints with an Azure file share. |
+| [Cloud tiering](#configure-and-monitor-azure-file-sync) | An Azure File Sync feature that can keep often-used content locally and retrieve tiered content from the cloud when needed. |
+| [Sync group](#configure-and-monitor-azure-file-sync) | A set of Azure File Sync endpoints kept in sync through a shared cloud endpoint. |
+| [Server endpoint](#configure-and-monitor-azure-file-sync) | A path on a registered Windows Server participating in an Azure File Sync sync group. |
+| [DFS Namespace](#configure-windows-file-shares-fsrm-and-dfs) | A logical folder tree that gives users consistent paths to shares hosted on one or more servers. |
+| [File screening](#configure-windows-file-shares-fsrm-and-dfs) | An FSRM control used to monitor or prevent selected file types from being saved in defined paths. |
+| [SMB over QUIC](#configure-smb-over-quic-and-smb-settings) | An SMB transport that uses QUIC and TLS to protect supported file-sharing connections. |
+| [Storage Spaces](#configure-disks-volumes-file-systems-and-storage-spaces) | Windows storage virtualization that uses pooled disks to create virtual disks with selected resiliency. |
+| [BitLocker recovery key](#protect-storage-with-bitlocker) | Recovery information used to unlock an encrypted volume when its normal protector is unavailable. |
+
+**Secure Windows Server infrastructure (10–15%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Windows LAPS](#implement-windows-laps) | Windows Local Administrator Password Solution manages and backs up local administrator account passwords under policy. |
+| [Defender for Servers](#configure-defender-for-servers-and-windows-firewall) | A Defender for Cloud workload-protection plan for eligible server workloads. |
+| [Multifactor authentication (MFA)](#secure-ad-ds-accounts-and-authentication) | Requiring evidence from more than one type of authentication factor, such as a password and a possession factor. |
+
+**Monitor and troubleshoot Windows Server environments (15–20%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Performance counter](#use-performance-monitor-and-data-collector-sets) | A sampled numeric measure of a system resource or application component used to investigate behavior over time. |
+| [Data Collector Set](#use-performance-monitor-and-data-collector-sets) | A configuration for collecting performance counters, events and other diagnostic information on a schedule. |
+| [System Insights](#use-windows-admin-center-system-insights-and-event-logs) | Windows Server predictive analytics based on local system data for selected capacity and operational forecasts. |
+| [Data collection rule](#configure-azure-monitor-data-collection-and-alerts) | A definition that tells Azure Monitor which data to collect, how to process it and where to send it. |
+| [Log Analytics workspace](#configure-azure-monitor-data-collection-and-alerts) | A destination for collected logs where operators can run queries and investigate events. |
+| [Alert rule](#configure-azure-monitor-data-collection-and-alerts) | A condition evaluated against monitoring data that creates an alert when its criteria are met. |
+| [Action group](#configure-azure-monitor-data-collection-and-alerts) | A reusable set of notification or automation responses attached to Azure Monitor alerts. |
+
 ## Places to learn
+
+**Suggested practice.** Compare a baseline collector set with a later workload capture and state which counter would justify investigating a particular bottleneck. About 40 minutes for the exercise (publisher estimate); provisioning or setup can add time. [Lab: Monitoring and troubleshooting Windows Server](https://microsoftlearning.github.io/AZ-802-Windows-Server-Administrator-Associate/Instructions/Labs/LAB_08_Monitoring_and_troubleshooting_Windows_Server.html)
 
 This is **not a complete list**, and it is not meant to be consumed end to end. Pick the resources and formats that work for your experience, access, learning style, and weakest objectives. A strong plan is usually the official blueprint and documentation, one primary structured resource, hands-on practice, and a legitimate assessment used diagnostically—not every course from every vendor.
 

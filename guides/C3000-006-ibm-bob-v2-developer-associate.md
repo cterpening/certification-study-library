@@ -292,6 +292,82 @@ These independently written checks are not IBM assessment items.
 - I can review a diff, interpret a finding, test a change and describe evidence limits honestly.
 - I have compared all six domains with the current official objectives and identified where more hands-on practice is needed.
 
+## Key terms and phrases
+
+**Concepts**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Prompt](#effective-prompts-and-project-initialization) | A task request specifying the desired outcome, relevant context, constraints and success evidence. |
+| [Project initialization](#effective-prompts-and-project-initialization) | Inspecting the repository and recording useful project conventions before asking the assistant to make changes. |
+| [Model Context Protocol (MCP)](#mcp-and-skill-structure) | The protocol Bob uses to communicate with servers exposing tools or resources beyond its built-in capabilities. |
+| [Skill](#mcp-and-skill-structure) | A packaged set of task-specific instructions and supporting material that Bob can load for applicable work. |
+| [MCP client](#mcp-and-skill-structure) | The part of Bob’s host that connects to an MCP server and exchanges protocol messages for available capabilities. |
+
+**Bob core features**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Mode](#files-tools-and-default-modes) | A working configuration that shapes the instructions and tools Bob uses for a task. |
+| [Harness](#architecture-model-routing-and-deployment) | The surrounding services providing facilities such as authentication, telemetry and feature controls to the agent. |
+| [Client](#architecture-model-routing-and-deployment) | The interface through which a developer interacts with Bob, such as the IDE or shell. |
+| [Model routing](#architecture-model-routing-and-deployment) | Choosing which model handles a task or operation according to the application’s supported routing behavior. |
+| [IDE](#architecture-model-routing-and-deployment) | An integrated development environment providing code navigation, editing and visual review around Bob’s actions. |
+| [Premium package](#premium-packages-and-sdlc-work) | A collection of additional capabilities for a specialized workflow, whose entitlement and available operations need to be checked for the specific installation. |
+| [Bob Shell](#bob-shell-and-code-functions) | The terminal client used for interactive agent-assisted development and appropriately bounded non-interactive automation. |
+| [Interactive session](#bob-shell-and-code-functions) | A session in which a developer can inspect intermediate results and steer subsequent actions. |
+| [Non-interactive run](#bob-shell-and-code-functions) | An unattended invocation that needs explicit inputs, limits and outputs because the operator cannot steer each intermediate action. |
+| [Diff](#bob-shell-and-code-functions) | A comparison showing what changed between two versions, used to check whether an edit or review matches the requested scope. |
+| [Context window](#context-rules-and-usage) | The token budget available to the model for one interaction. Instructions, conversation history and tool results consume part of it, leaving less room for additional material and the response. |
+| [System instructions](#context-rules-and-usage) | Standing instructions placed in the model’s active context by its host, separate from the latest user message. |
+| [Compaction](#context-rules-and-usage) | Summarizing older context to fit a limited window, potentially losing details needed to reproduce a decision. |
+| [Rule](#context-rules-and-usage) | A standing instruction shaping project or task behavior, unlike a callable tool or a reusable procedural skill. |
+| [Bobalytics](#context-rules-and-usage) | IBM Bob’s usage analytics view for interpreting adoption, contribution or spending under the available access scope. |
+| [Tool definition](#context-rules-and-usage) | A description of a callable capability and its interface that helps the assistant select and invoke it within the granted permissions. |
+| [Context transcript](#context-rules-and-usage) | The sequence of messages and tool results influencing the active task, which can include much more than the most recent prompt. |
+
+**Bob use cases**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Custom mode](#choose-the-right-customization) | A tailored configuration of purpose, instructions and permitted tool groups for a type of work. |
+| [Agent](#specialized-tools-agents-and-delegated-work) | The component reasoning about the task, generating code and proposing actions through the surrounding tool interface. |
+| [Tool schema](#specialized-tools-agents-and-delegated-work) | The declared structure and types accepted by a tool, which the runtime should validate before acting. |
+| [Subtask](#specialized-tools-agents-and-delegated-work) | A bounded piece of work assigned separately, with explicit inputs, expected evidence and a result to reconcile. |
+| [Comparison base](#code-review-and-bob-findings) | The revision or branch against which changes are reviewed. Choosing a different base can change the reported findings. |
+| [Bob Findings](#code-review-and-bob-findings) | The review output identifying potential issues in the selected comparison for a developer to inspect and validate. |
+
+**Bob configuration**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Tool group](#tool-groups-task-limits-mentions-and-extensions) | A category of operations, such as reading or executing, whose availability can be controlled for a task or mode. |
+| [Mention](#tool-groups-task-limits-mentions-and-extensions) | A way to bring selected files, symbols or other referenced material into the task context. |
+| [Task limit](#tool-groups-task-limits-mentions-and-extensions) | A configured bound on what an individual run can consume or do, useful when delegating or automating work. |
+| [Pull request](#pull-requests) | A proposal to merge branch changes into a chosen base, accompanied by a description and review evidence. |
+
+**Bob accounts**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Spending limit](#bobalytics-and-enterprise-administration) | A configured boundary on consumption intended to constrain usage at the applicable account or team scope. |
+| [Bobcoin](#bobcoins-tokens-and-spending-controls) | IBM’s consumption unit for Bob usage. A token measures a unit of model input or output. |
+| [Token](#bobcoins-tokens-and-spending-controls) | A unit of encoded model input or output that contributes to context use and inference consumption. |
+
+**Bob security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Approval scope](#permissions-and-approval-scope) | The specific action or group of actions an approval authorizes, with task-level and broader settings having different reach. |
+| [Context poisoning](#context-poisoning-and-secure-development) | Wrong, stale or irrelevant information continuing to influence later reasoning or edits. |
+| [Rollback](#rollback-and-recovery) | Restoring captured task-related file versions after an unwanted edit. External actions require their own recovery process. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Command prefix](#hands-on-labs) | An approval pattern covering commands matching a defined beginning, requiring attention to how broadly the pattern applies. |
+
 ## Places to learn
 
 This is a curated starting point, not a complete list or a requirement to consume every resource. Times are **author estimates** based on reading scope and proposed practice unless explicitly stated otherwise; they are not IBM-published runtimes. **VERIFY CURRENT:** access, versions, downloads and plan entitlements can change.

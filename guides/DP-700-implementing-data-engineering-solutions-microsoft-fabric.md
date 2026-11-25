@@ -13,12 +13,16 @@ upcoming_change_checked: 2026-10-28
 
 # DP-700 Implementing Data Engineering Solutions Using Microsoft Fabric Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-01.md#dp-700) and the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-700-coverage-record). Known source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-700) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-06.md#dp-700)
+
+**English outline comparison, November 20, 2026.** The live page now displays 49 tasks without a skills-effective date. The accepted October 19 outline has 54 and the same three 30–35% domain ranges. Five October items lack explicit counterparts on the live page: Fabric audit logs, OneLake security, native Real-Time Intelligence tables versus shortcuts, accelerated versus standard shortcuts, and diagnosing shortcut errors. Keep those exercises for the October scope and verify the edition for your appointment. [Compared editions](../docs/research/2026-11-20-microsoft-refresh-group-06.md#dp-700).
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-01.md#dp-700) and the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-700-coverage-record). Known source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-700) is authoritative.
 
 **Current baseline:** Skills measured as of October 19, 2026<br>
 **Blueprint reconciliation (October 28, 2026):** The October 19 English outline is now accepted. The revision uses Eventstream/Eventhouse terminology; domain weights and the other extracted objectives are unchanged. Earlier July bytes and dated reviews remain archived. No later revision is announced on the checked official page.<br>
 **Official source:** [DP-700 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-700)
-**Practice routing — VERIFY CURRENT (October 28, 2026):** The [credential page](https://learn.microsoft.com/en-us/credentials/certifications/fabric-data-engineer-associate/) routes Practice Assessment to AI Skills Navigator with sign-in. No assessment was launched or its question content inspected. Recheck the vendor launch route before relying on an older direct link below; a practice result does not establish coverage of another exam code.<br>
+**Practice routing, checked November 20, 2026.** The [credential page](https://learn.microsoft.com/en-us/credentials/certifications/fabric-data-engineer-associate/) routes Practice Assessment to AI Skills Navigator with sign-in. No assessment was launched or its question content inspected. Microsoft labels the older Learn assessment legacy and no longer updates it; a practice result does not establish coverage of another exam code.<br>
 
 ## How to use this guide
 
@@ -54,6 +58,8 @@ Build one end-to-end solution and keep an evidence notebook: configuration scree
 A workspace is both a collaboration boundary and a configuration/deployment boundary. Before changing a setting, identify whether it belongs at tenant, capacity, domain, workspace, item, Spark environment or data level; similar labels do not make those scopes interchangeable.
 
 #### Spark workspace settings
+
+**Practice check.** For a Fabric Spark runtime change, use the early access channel in a development or staging environment to compare existing jobs against the next runtime update. Workloads stay on the default channel unless opted in. Record the channel alongside the runtime version when investigating a regression. [Fabric runtime release channels - Microsoft Fabric | Microsoft Learn](https://learn.microsoft.com/en-us/fabric/data-engineering/release-channels)
 
 Set the default Spark pool and environment from workload evidence. Pool size, node family, autoscale bounds, dynamic allocation, executor settings and runtime/library versions affect startup time, concurrency, cost and reproducibility. An environment can centralize libraries and Spark properties; pin dependencies and promote them with code so a notebook does not work only in one developer's session.
 
@@ -507,7 +513,71 @@ These are learning exercises to run in an appropriate sandbox. This review used 
 - I can monitor ingestion, transformation, semantic refresh and alerts, then isolate pipeline, dataflow, notebook, Eventhouse, Eventstream, T-SQL and shortcut failures.
 - I can optimize lakehouse files, pipeline movement, warehouse queries, Spark execution and real-time workloads from before/after evidence without changing correctness or security.
 
+## Key terms and phrases
+
+**Implement and manage an analytics solution**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Fabric workspace](#configure-workspace-settings) | A collaboration and permission boundary containing related Fabric items. |
+| [OneLake](#domains-and-onelake) | Fabric's shared organizational data lake that supplies storage for supported analytics items. |
+| [Domain](#domains-and-onelake) | A governance grouping for organizing business-owned data and delegated responsibilities across workspaces. |
+| [Directed acyclic graph (DAG)](#apache-airflow-workspace-settings) | A graph of tasks and dependencies with no cycles, used in Airflow to define execution order. |
+| [Git integration](#implement-lifecycle-management) | Connecting supported workspace item definitions to a repository for version control and coordinated change. |
+| [Deployment pipeline](#implement-lifecycle-management) | A repeatable process for promoting a solution and its target configuration through environments. |
+| [Workspace role](#configure-security-and-governance) | A role that grants a set of permissions across a Fabric workspace. Giving someone access to one shared item can be narrower than granting a workspace role. |
+| [Pipeline activity](#orchestrate-processes) | An individual unit of work in an orchestration, such as copying data or running a notebook. |
+| [Trigger](#orchestrate-processes) | The event, schedule or explicit request that starts a pipeline. |
+
+**Ingest and transform data**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Incremental load](#full-and-incremental-loads) | A load that processes data added or changed since an established boundary, such as a saved watermark. |
+| [Full load](#full-and-incremental-loads) | Replacing or populating the target from the complete relevant source data set. |
+| [Watermark](#full-and-incremental-loads) | A persisted value, such as a timestamp or sequence number, that marks the boundary for the next incremental load. |
+| [Replay](#full-and-incremental-loads) | Processing retained input again after a failure or correction while preserving the intended downstream state. |
+| [Fact table](#prepare-a-dimensional-load) | A table recording measurements or events at a declared grain, linked to descriptive dimensions. |
+| [Dimension table](#prepare-a-dimensional-load) | A table describing business entities, such as customers or dates, used for filtering and grouping facts. |
+| [Surrogate key](#prepare-a-dimensional-load) | A generated identifier used to distinguish dimension rows independently of a changing business identifier. |
+| [Slowly changing dimension (SCD)](#prepare-a-dimensional-load) | A way to handle changes in descriptive attributes, such as overwriting a customer address or retaining dated versions. |
+| [Business key](#prepare-a-dimensional-load) | A source-system identifier for a real-world entity, such as a customer number. |
+| [Checkpoint](#streaming-loads) | A saved processing position or state used to resume work and investigate which data has already been handled. |
+| [Medallion architecture](#streaming-loads) | Related item: A design that separates raw, cleaned and consumer-ready data into layers often called bronze, silver and gold. Each layer makes a different promise about the data ready for its consumers. |
+| [Lakehouse](#choose-a-data-store-and-access-pattern) | A Fabric item for storing files and tables in OneLake and working with them through supported compute engines. |
+| [Warehouse](#choose-a-data-store-and-access-pattern) | A relational analytics store aimed at structured tables and SQL-based data loading and querying. |
+| [Dataflow Gen2](#select-the-transformation-engine) | A Fabric data preparation item that uses Power Query transformations to load data into supported destinations. |
+| [OneLake shortcut](#shortcuts-mirroring-and-pipelines) | A reference that makes data at another location accessible through OneLake without a separate copy managed by the shortcut. |
+| [Mirroring](#shortcuts-mirroring-and-pipelines) | Maintaining an analytical replica of source data by applying source changes to the destination. |
+| [Copy activity](#shortcuts-mirroring-and-pipelines) | A pipeline operation that reads from a source and writes data into a destination using configured mappings. |
+| [Deduplication](#shape-trustworthy-data) | Identifying records representing the same business event and retaining the intended version according to a declared key. |
+| [Data quality rule](#shape-trustworthy-data) | A declared test for required properties such as uniqueness, acceptable values or referential integrity. |
+| [Eventstream](#choose-the-streaming-engine) | A Fabric item for receiving, transforming and routing event data to downstream destinations. |
+| [Eventhouse](#choose-the-streaming-engine) | A Fabric environment for ingesting and querying event-oriented and time-series data using KQL. |
+| [Spark Structured Streaming](#choose-the-streaming-engine) | Spark's streaming processing engine for executing incremental transformations over incoming data. |
+| [Event time](#windows-and-late-events) | When an event happened. A purchase at 09:59 that reaches the pipeline at 10:03 belongs in the 09:00–10:00 event-time window if the lateness policy admits it. |
+| [Window](#windows-and-late-events) | A bounded grouping of streaming events used to compute a result over a time interval. |
+| [Processing time](#windows-and-late-events) | The time the processing system handles an event, which may be later than the event's own timestamp. |
+| [Tumbling window](#windows-and-late-events) | A series of fixed, nonoverlapping time intervals, each event contributing to its applicable interval. |
+| [Late event](#windows-and-late-events) | An event that arrives after the system has advanced beyond the time window expected for it. |
+| [Watermark for late events](#windows-and-late-events) | A stream-processing rule for expected event-time progress that bounds how long late records can update state. |
+
+**Monitor and optimize an analytics solution**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Monitoring hub](#monitor-fabric-items) | A Fabric view for inspecting the status and history of runs visible to the operator. Use it to find a failed pipeline run before opening the activity details. |
+| [Run ID](#monitor-fabric-items) | An identifier tying activity results and logs to a particular pipeline or notebook execution. |
+| [Bottleneck](#optimize-performance) | The resource or stage limiting a workload's overall throughput, identified through observed timing and utilization. |
+| [Delta table](#lakehouse-tables) | A table backed by data files and a transaction log that records consistent versions of those files. |
+| [Small-file problem](#lakehouse-tables) | A large number of tiny files that increases metadata and scan overhead even when total data volume is modest. |
+| [Query plan](#warehouse-and-query-performance) | The operations selected to execute a query, useful for finding expensive scans, movement or joins. |
+| [Data skew](#spark) | An uneven distribution of records across processing partitions that leaves some tasks much slower than others. |
+| [Shuffle](#spark) | Redistribution of records between Spark partitions, often required by joins or aggregations and potentially expensive. |
+
 ## Places to learn
+
+**Suggested practice.** Compare a dataflow run with a notebook run and note how the chosen item filter and the viewer’s permissions affect the visible history. About 30 minutes for the exercise (publisher estimate); provisioning or setup can add time. [Monitor Fabric activity in the monitoring hub](https://microsoftlearning.github.io/mslearn-fabric/Instructions/Labs/18-monitor-hub.html)
 
 ### October 28 learning route and evidence task
 
@@ -526,7 +596,7 @@ The five official paths below retain the **September 1 duration estimates**; Sep
 | [Official DP-700 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-700) and [credential page](https://learn.microsoft.com/en-us/credentials/certifications/fabric-data-engineer-associate/) | Public | 1–2 hours initially; 15 minutes per recheck |
 | Five official paths from [DP-700T00](https://learn.microsoft.com/en-us/training/courses/dp-700t00) | Public | 27h49 historical estimate; allow 50–90 hours with exercises/notes |
 | DP-700T00 instructor-led course | Paid/partner delivery | 4 days listed |
-| [Microsoft DP-700 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/fabric-data-engineer-associate/practice/assessment?assessment-type=practice&assessmentId=1704375541&practice-assessment-type=certification) | Public | 45–75 minutes per attempt plus source review |
+| [Microsoft DP-700 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/fabric-data-engineer-associate/practice/assessment?assessment-type=practice&assessmentId=1704375541&practice-assessment-type=certification) | Legacy version, no longer updated. Use the credential page for current signed-in practice. | Allow 45–75 minutes for an attempt and review (editorial estimate). |
 | [Pluralsight DP-700 path](https://www.pluralsight.com/paths/implementing-data-engineering-solutions-using-microsoft-fabric-dp-700) | Paid | 6h15 across 3 courses plus practice exam; 2025 content; supplement the current October outline |
 | [O’Reilly DP-700 bootcamp](https://www.oreilly.com/live-events/microsoft-fabric-data-engineer-associate-bootcamp-dp-700/0642572016304/) with Nikola Ilic | Paid/live | Two sessions; about 8 hours from the public agenda; verify current availability and dates |
 | [O’Reilly DP-700 Study Guide early release](https://www.oreilly.com/library/view/microsoft-fabric-data/0642572319250/) by Michael John Pena | Paid/early release | Earlier listing: 400 pages / 3h22 and December 2027 publication; access blocked on recheck, contents not final |

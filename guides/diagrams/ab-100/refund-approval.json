@@ -1,0 +1,20 @@
+{
+  "exam_code": "AB-100",
+  "guide_section": "Design human intervention as a real control",
+  "objective": "Design governance for agents",
+  "source_ids": ["ab100-ai-agent-orchestration-patterns"],
+  "visual": {
+    "title": "When may the agent submit a refund?",
+    "nodes": [
+      {"id": "review", "label": "Refund proposal awaits human review"},
+      {"id": "submit", "label": "Submit the approved refund request"},
+      {"id": "revise", "label": "Revise the proposal and request approval again"},
+      {"id": "close", "label": "Close the request without issuing a refund"}
+    ],
+    "edges": [
+      {"from": "review", "to": "submit", "label": "Approved"},
+      {"from": "review", "to": "revise", "label": "Changes requested"},
+      {"from": "review", "to": "close", "label": "Declined"}
+    ]
+  }
+}

@@ -124,6 +124,89 @@ Build alerts from user impact and actionable failure conditions. A dashboard sho
 - I test retries, duplicates, unhealthy rollout, poison messages, lag, secret rotation, and dependency failure.
 - I keep Oracle's published capability groups separate from supporting development knowledge.
 
+## Key terms and phrases
+
+**Cloud-native and microservice design**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Idempotent request](#1-cloud-native-and-microservice-design) | A request designed so that repeated attempts have the same intended effect, allowing safer retries after ambiguous failures. |
+| [Availability](#1-cloud-native-and-microservice-design) | The ability of a service to remain usable for the intended requests over a specified measurement period. |
+| [Latency](#1-cloud-native-and-microservice-design) | The time for a request or operation to complete, measured at a specified boundary from the selected start to finish. |
+| [Microservice](#1-cloud-native-and-microservice-design) | A separately deployable service responsible for a defined capability and communicating over an explicit interface. |
+
+**Containers, Container Registry, and OKE**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Container image digest](#2-containers-container-registry-and-oke) | A content-derived identifier used to select the exact image that was built and tested. |
+| [Deployment rollback](#2-containers-container-registry-and-oke) | Restoring a previously working release or configuration after an unsuccessful change, with separate treatment for state already modified. |
+| [Service identity](#2-containers-container-registry-and-oke) | An identity assigned to software or a managed service so automated work can receive its own scoped rights. |
+| [Pod disruption budget](#2-containers-container-registry-and-oke) | A Kubernetes policy limiting how many selected Pods may be unavailable during voluntary disruptions such as a node drain. It can require a minimum number of available replicas. |
+| [Autoscaling](#2-containers-container-registry-and-oke) | Adjusting capacity when a defined condition or schedule warrants it, subject to limits, capacity and application readiness. |
+| [Container image](#2-containers-container-registry-and-oke) | A packaged application filesystem and metadata used to start container instances with a known software baseline. |
+| [Container Registry](#2-containers-container-registry-and-oke) | An OCI repository service for versioned container images and manifests consumed by deployment environments. |
+| [Oracle Kubernetes Engine (OKE)](#2-containers-container-registry-and-oke) | OCI’s managed Kubernetes service for running orchestrated container workloads on configured cluster capacity. |
+| [Pod](#2-containers-container-registry-and-oke) | The Kubernetes scheduling unit that groups one or more containers sharing the pod’s networking and specified storage. |
+| [Resource request](#2-containers-container-registry-and-oke) | A Kubernetes workload’s requested capacity, used by the scheduler when placing it on nodes. |
+| [Namespace](#2-containers-container-registry-and-oke) | A Kubernetes scope for organizing and separating namespaced objects such as application workloads and services. |
+
+**Functions and API Gateway**
+
+| Term or phrase | Meaning |
+|---|---|
+| [API Gateway route](#3-functions-and-api-gateway) | A rule that maps incoming requests for a path and method to a configured backend and processing policy. |
+| [Authentication](#3-functions-and-api-gateway) | Establishing the identity used for a request, for example by validating a credential or identity assertion. |
+| [Authorization](#3-functions-and-api-gateway) | Evaluating whether the requesting identity may take a particular action on a particular resource within the applicable scope. |
+| [Function](#3-functions-and-api-gateway) | Code invoked through OCI Functions for a bounded task, with runtime capacity and execution managed by the service. |
+| [Retry budget](#3-functions-and-api-gateway) | A limit on repeated attempts to keep a temporary dependency failure from turning into runaway load. |
+
+**Events, Queue, and Streaming**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Dead-letter queue](#4-events-queue-and-streaming) | A separate queue for messages that have exhausted their permitted delivery attempts and need investigation. |
+| [Visibility timeout](#4-events-queue-and-streaming) | The period during which a retrieved queue message is hidden from other consumers while processing is attempted. |
+| [Event rule](#4-events-queue-and-streaming) | A condition matching attributes of a resource event and routing matches to a permitted action. |
+| [Queue](#4-events-queue-and-streaming) | A buffer of messages decoupling producers and consumers so work can continue asynchronously. |
+| [Acknowledgment](#4-events-queue-and-streaming) | A consumer’s indication that a message was successfully handled, affecting whether that work can be redelivered. |
+| [Poison message](#4-events-queue-and-streaming) | An input that repeatedly fails processing, requiring isolation and investigation rather than endless retries. |
+
+**OCI Streaming with Apache Kafka**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Streaming partition](#5-oci-streaming-with-apache-kafka) | An ordered subdivision of a stream that provides a unit for parallel processing and consumer assignment. |
+| [Consumer group](#5-oci-streaming-with-apache-kafka) | A set of stream consumers coordinating partition assignments and processing progress for a shared workload. |
+
+**Testing and application security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Contract test](#6-testing-and-application-security) | A check that a service still accepts and returns data in the form its consumers expect. |
+| [Least privilege](#6-testing-and-application-security) | Granting only the access a specific identity needs for its assigned work, then checking both allowed and denied actions. |
+| [Secret rotation](#6-testing-and-application-security) | Replacing a secret under controlled conditions, confirming that its consumers use the replacement before retiring the old credential. |
+| [Vault](#6-testing-and-application-security) | OCI’s service for centrally managing cryptographic keys and secrets under access policy and lifecycle controls. |
+| [Integration test](#6-testing-and-application-security) | A test across real component boundaries, often used to verify wiring, identity and access as well as application logic. |
+
+**Application observability**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Consumer lag](#7-application-observability) | How far a consumer’s progress trails newly available records, indicating a possible processing backlog. |
+| [Saturation](#7-application-observability) | The extent to which demand uses up a resource’s available capacity, often becoming visible as queues or increased latency. |
+| [Alert](#7-application-observability) | A notification that a configured condition was met, requiring interpretation with its time window, source and affected scope. |
+| [Encryption in transit](#7-application-observability) | Protecting data while it travels between endpoints, commonly through authenticated TLS connections. |
+| [Load balancer shape](#7-application-observability) | The bandwidth capacity configured for an OCI load balancer. When diagnosing latency or throughput limits, compare measured traffic with the configured capacity. |
+| [Distributed trace](#7-application-observability) | A record linking the timed work of multiple instrumented components for a single request or transaction. |
+| [Structured log](#7-application-observability) | A record with separately identifiable fields, enabling a search by request ID, service, status or other explicit attributes. |
+
+**Original readiness checks**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Readiness check](#original-readiness-checks) | A check of whether a deployed workload should receive traffic, including any dependencies essential to serve requests. |
+
 ## Places to learn
 
 This is a selective learning path, not a complete list of OCI development resources.

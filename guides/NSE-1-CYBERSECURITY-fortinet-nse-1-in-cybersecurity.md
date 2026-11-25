@@ -201,6 +201,110 @@ Classify data, choose IaaS/PaaS/SaaS, map provider/customer responsibilities, co
 29. Data governance, identities, configuration, allowed access, legal obligations, and validation remain customer concerns in every model.
 30. A known positive and negative test, current telemetry/logs, measured coverage, owner, and recovery or correction evidence.
 
+## Key terms and phrases
+
+**Cybersecurity and the threat landscape**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Vulnerability](#1-cybersecurity-and-the-threat-landscape) | A weakness that can expose an asset to harm. Risk also depends on who or what could act on it and the consequences. |
+| [Defense in depth](#1-cybersecurity-and-the-threat-landscape) | Coordinating complementary safeguards so that one failed control does not expose the entire service or dataset. |
+| [Likelihood](#1-cybersecurity-and-the-threat-landscape) | An estimate of how probable a defined event is within a stated period and set of assumptions. |
+| [Tactic](#1-cybersecurity-and-the-threat-landscape) | In ATT&CK, the objective an adversary is pursuing. A technique describes a way that objective may be achieved. |
+
+**Social engineering**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Social engineering](#2-social-engineering) | Manipulation that persuades a person to disclose information or take an unsafe action. A convincing message can still come from an impersonator. |
+| [Phishing](#2-social-engineering) | An impersonation attempt that tries to induce an unsafe action or disclosure. Message appearance alone cannot establish the sender’s identity. |
+
+**Malware and common attacks**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Ransomware](#3-malware-and-common-attacks) | Malware used to extort a victim, often by making files unusable. A tested backup helps recover the data. |
+| [Allowlist](#3-malware-and-common-attacks) | An explicit set of approved identities, applications or actions, with other cases subject to the applicable default policy. |
+| [Evidence preservation](#3-malware-and-common-attacks) | Maintaining the integrity and provenance of information needed for investigation, including original timestamps, collection method and access history. |
+| [Immutable backup](#3-malware-and-common-attacks) | A recovery copy protected against modification or deletion for a defined period. A restore test still determines whether the service can use it. |
+| [Incident](#3-malware-and-common-attacks) | A case that groups evidence of related activity for investigation, ownership and resolution. |
+
+**Cryptography and public-key infrastructure**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Encryption](#4-cryptography-and-public-key-infrastructure) | A reversible transformation that protects readable data using a key. Someone with the appropriate key can recover the original. |
+| [Hash](#4-cryptography-and-public-key-infrastructure) | A fixed-length value derived from data. Comparing hashes can reveal a change without having to decrypt anything. |
+| [Asymmetric cryptography](#4-cryptography-and-public-key-infrastructure) | Cryptography using mathematically related public and private keys, enabling operations such as signature verification or exchange of protected data. |
+| [Confidentiality](#4-cryptography-and-public-key-infrastructure) | Preserving authorized restrictions on disclosure. A record can lose confidentiality even when no one changes or deletes it. |
+| [Digital signature](#4-cryptography-and-public-key-infrastructure) | A cryptographic value produced with a private key and checked with its corresponding public key to authenticate signed data and detect alteration. |
+| [Encryption in transit](#4-cryptography-and-public-key-infrastructure) | Protecting data while it travels between endpoints. The endpoints and any termination points can ordinarily access the plaintext. |
+| [Public key infrastructure (PKI)](#4-cryptography-and-public-key-infrastructure) | The roles, policies and services used to issue, validate, renew and revoke certificates that bind identities to public keys. |
+| [Symmetric encryption](#4-cryptography-and-public-key-infrastructure) | Encryption in which the same secret key is used to encrypt and decrypt. Secure sharing and storage of the key are essential. |
+
+**Secure networking**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Intrusion detection system (IDS)](#5-secure-networking) | A control that observes activity and reports patterns that may indicate an intrusion. A detection alone does not establish compromise. |
+| [Intrusion prevention system (IPS)](#5-secure-networking) | A control that inspects traffic for signs of known or suspicious activity and can block matching traffic. |
+| [Network access control (NAC)](#5-secure-networking) | A way to decide what connectivity a device receives using its identity, profile and applicable policy. |
+| [Next-generation firewall (NGFW)](#5-secure-networking) | A firewall that can use application and threat information as well as addresses, ports and session state to control traffic. |
+
+**Authentication and access control**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Authentication](#6-authentication-and-access-control) | The check that establishes who a user or device is. Authorization determines what that identity may do next. |
+| [Least privilege](#6-authentication-and-access-control) | Giving an identity only the permissions needed for its task, for as long as it needs them. |
+| [Authorization](#6-authentication-and-access-control) | Determining whether a given identity may perform a specific action on the particular resource requested. |
+| [Identity lifecycle](#6-authentication-and-access-control) | The processes that grant, change and remove access as people join, change duties and leave. A role change should also remove incompatible old permissions. |
+| [Multifactor authentication (MFA)](#6-authentication-and-access-control) | Authentication using factors from two or more categories. A password and a second password both use the same knowledge factor. |
+| [Privileged access](#6-authentication-and-access-control) | Permission to administer sensitive systems or change security controls. An operator needs authorization for the particular customer and task. |
+| [Segregation of duties](#6-authentication-and-access-control) | Dividing incompatible responsibilities, such as requesting and approving payment, so a single person cannot complete the whole sensitive transaction. |
+| [Zero Trust](#6-authentication-and-access-control) | An access model that evaluates requests using identity, resource and context without assuming access is safe solely because it originated on an internal network. |
+
+**Endpoint security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Backup](#7-endpoint-security) | A retained copy made for recovery after loss or corruption. Its usefulness depends on successful restoration under the intended conditions. |
+| [Disk encryption](#7-endpoint-security) | Protecting stored disk contents with encryption, with authorized recovery material needed if normal unlock fails. |
+| [Endpoint detection and response (EDR)](#7-endpoint-security) | Collecting and analyzing endpoint activity so analysts can investigate suspicious behavior and take scoped response actions. |
+| [Telemetry](#7-endpoint-security) | Logs, events and measurements supplied by managed systems. Customer attribution and collection health determine whether the records are usable. |
+
+**Data and application security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Availability](#8-data-and-application-security) | Timely and reliable access to a resource by authorized users. A running server may still be unavailable to the business if a required dependency fails. |
+| [Log retention](#8-data-and-application-security) | The period for which records remain available for an investigation or other defined purpose. Missing results outside that period cannot establish inactivity. |
+| [Threat model](#8-data-and-application-security) | A structured analysis of assets, trust boundaries and plausible failure or misuse paths used to choose design safeguards. |
+| [Web application firewall (WAF)](#8-data-and-application-security) | A control that inspects web requests and responses and applies application-specific rules. |
+
+**Cloud security and virtualization**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Shared responsibility](#9-cloud-security-and-virtualization) | The division of security duties between a cloud provider and its customer. Which party manages a component depends on the service. |
+| [Container](#9-cloud-security-and-virtualization) | An isolated application process and its dependencies that ordinarily shares the host kernel. Its image is the packaged input used to start it. |
+| [Hypervisor](#9-cloud-security-and-virtualization) | The layer that supplies and isolates virtual hardware for guest operating systems, allowing multiple virtual machines to share a host. |
+| [Infrastructure as a service (IaaS)](#9-cloud-security-and-virtualization) | A cloud model providing infrastructure such as virtual machines and networks. The customer typically manages the guest operating system and application. |
+| [Public cloud](#9-cloud-security-and-virtualization) | Provider-operated resources offered to multiple customers using logical isolation. Public cloud does not imply that customer workloads have public access. |
+
+**Safe practice activities**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Phishing-resistant authentication](#safe-practice-activities) | Authentication designed to prevent an impostor service from reusing the proof supplied for a legitimate service, such as a credential bound to the correct origin. |
+| [Residual risk](#safe-practice-activities) | The risk that remains after controls are applied, including their limitations and possible effects on the physical process. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Containment](#ransomware-at-a-small-business) | Limiting the scope or ongoing effects of an incident, such as isolating the affected device under an approved response plan. |
+
 ## Places to learn
 
 This is a selective starting set, not a complete list and not a prescription to consume everything. Pick and choose what closes your gaps. Times are publisher-listed or labeled estimates; access and content can change.

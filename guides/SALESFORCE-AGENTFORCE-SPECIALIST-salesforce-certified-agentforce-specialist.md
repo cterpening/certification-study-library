@@ -521,6 +521,75 @@ print(json.dumps({'passed': len(checks), 'checks': checks,
 
 **Related item — Winter ’27 platform context:** Salesforce says the release rollout completed by October 9, with instance schedules varying. Its [developer update](https://developer.salesforce.com/blogs/2026/10/developers-guide-to-the-winter-27-release) documents new Agent Script functions and `else if`, multi-agent orchestration GA, and bidirectional MCP: agents can call MCP tools, while external MCP clients can invoke agents built with the new Agent Script Builder. Calls run as the authenticated user and retain sharing, field-level security, and Trust Layer policies. Test these behaviors only in an eligible org and check the current release notes; monthly product updates do not automatically revise this exam's Spring ’26 objective map. For applied follow-up, Trailhead's [Agentblazer Legend 2026 trail](https://trailhead.salesforce.com/content/learn/trails/become-an-agentblazer-legend-2026) lists about 17 hr 28 min and requires earlier trail completion; account tracking and some exercises may need an org. Use its current lessons as extended practice, then return to the exam guide for what is scored.
 
+## Key terms and phrases
+
+**Prompt Engineering**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Prompt template](#1-prompt-engineering-20) | A reusable definition that combines instructions with fields or other context to generate a task-specific prompt. |
+| [Prompt injection](#1-prompt-engineering-20) | Untrusted content that tries to influence the agent's instructions. Retrieved records do not gain authority simply by entering the prompt. |
+| [Least privilege](#1-prompt-engineering-20) | Giving an agent or action only the permissions needed for its approved task. A read-only lookup does not require a record-update permission. |
+| [Prompt Builder](#1-prompt-engineering-20) | The Salesforce authoring surface for defining and testing reusable prompt templates with business context. |
+| [Merge field](#1-prompt-engineering-20) | A placeholder replaced at runtime with a value from the applicable record or resource. The effective user must be allowed to access it. |
+| [Field](#1-prompt-engineering-20) | A named data element on an object, such as an Opportunity's Close Date. Its type determines which values it can store. |
+| [Retention](#separate-template-permissions-masking-and-retention) | How long prompts, responses, logs or related data are kept. State which component and record type a retention claim applies to. |
+| [Masking](#separate-template-permissions-masking-and-retention) | Replacing sensitive values with protected representations before data crosses an AI processing boundary according to the configured controls. |
+
+**Data 360 Fundamentals**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Retriever](#2-data-360-fundamentals-20) | A configured way to select relevant data for an agent or prompt. Permissions and filtering determine which evidence is eligible. |
+| [Data 360](#2-data-360-fundamentals-20) | Salesforce's data platform used to ingest, harmonize and make eligible business data available to applications and AI workloads. |
+| [Chunking](#2-data-360-fundamentals-20) | Breaking source material into smaller pieces for indexing and retrieval. A boundary between a rule and its exception can change the answer. |
+| [Retrieval relevance](#2-data-360-fundamentals-20) | How well returned content addresses the question. A relevant answer also needs evidence the current user is authorized to see. |
+| [Metadata](#2-data-360-fundamentals-20) | Configuration that defines how the org behaves, such as objects, fields, flows or layouts. Moving the configuration does not also move every business record. |
+| [Grounding](#readiness-retrieval-eligibility-and-grounded-evidence) | Supplying retrieved or record-based evidence so an agent can answer using authorized business data. |
+| [Data library](#readiness-retrieval-eligibility-and-grounded-evidence) | A collection of approved knowledge sources that can ground agent responses. Eligibility, freshness and permissions influence what an agent can retrieve. |
+| [Search index](#readiness-retrieval-eligibility-and-grounded-evidence) | A structure built over eligible source data to support retrieval. Newly ingested records may still need indexing before an agent can find them. |
+
+**AI Agents**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Agent action](#3-ai-agents-35) | A capability an agent can invoke to do work, such as looking up an order or calling a flow. |
+| [Reasoning engine](#3-ai-agents-35) | The agent component that interprets context and selects a next step. Permissions and deterministic rules constrain the possible effects. |
+| [Idempotency](#3-ai-agents-35) | Ensuring that repeating the same intended business action does not repeat its effect, such as issuing a second refund. |
+| [Handoff](#3-ai-agents-35) | Transferring a conversation or task to another agent or person with the context needed to continue safely. |
+| [Topic classification](#3-ai-agents-35) | The decision that assigns a request to the relevant area of agent work, using the declared scope and description. |
+| [Action input](#3-ai-agents-35) | Data required by an action, such as an order ID. A valid input format still leaves a separate decision about authority to act on that order. |
+| [Deterministic action](#3-ai-agents-35) | An operation governed by defined inputs and rules, such as updating one verified record after approval. |
+| [Agent Script](#3-ai-agents-35) | A way to specify deterministic steps and conditions alongside model-driven behavior in a Salesforce agent. |
+| [Execution identity](#resolve-identity-at-the-channel-and-action-boundary) | The identity whose access is checked when an action runs. It depends on the configured channel and action. |
+| [Subagent](#distinguish-script-resolution-from-model-reasoning) | A bounded area of agent responsibility with its own instructions and permitted actions, such as handling a returns request. |
+| [Session](#treat-an-api-conversation-as-a-stateful-client-contract) | The conversation context that connects successive client messages to the same agent interaction. |
+| [Agent API](#treat-an-api-conversation-as-a-stateful-client-contract) | An interface through which a client starts a conversation, exchanges messages and handles the lifecycle of an agent session. |
+
+**Testing, Deployment, and Maintenance**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Evaluation case](#4-testing-deployment-and-maintenance-10) | A repeatable input paired with expected behavior that can be run against an agent configuration before rollout. |
+| [Testing Center](#4-testing-deployment-and-maintenance-10) | A Salesforce facility for evaluating agent behavior against test cases and expected outcomes. Scope tests so an action cannot unintentionally change business data. |
+| [Evaluation metric](#4-testing-deployment-and-maintenance-10) | A measurement of one aspect of agent performance, such as successful resolution or an unwanted action rate, over a stated set of cases. |
+| [Dashboard](#4-testing-deployment-and-maintenance-10) | An arrangement of report-driven components that visualizes measures. The running user's context can affect what data appears. |
+| [Sandbox](#4-testing-deployment-and-maintenance-10) | A separate Salesforce environment used for development, testing or training. Choose its data and configuration fidelity around the test. |
+
+**Governance and Observability**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Trace](#5-governance-and-observability-10) | An ordered record of an interaction that helps an operator inspect reasoning steps, retrieved context and actions when diagnosing an unexpected result. |
+| [Observability](#5-governance-and-observability-10) | The ability to use traces, events and outcomes to understand an agent's behavior, such as locating the first step that selected the wrong order. |
+
+**Multi-Agent Orchestration**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Agent2Agent (A2A)](#6-multi-agent-orchestration-5) | A protocol used for communication and task exchange between agents. Define the trust relationship before passing work or data to another agent. |
+| [Model Context Protocol (MCP)](#6-multi-agent-orchestration-5) | A protocol for discovering tools or context offered by a server. A successful discovery does not give an agent permission to execute every tool. |
+
 ## Places to learn
 
 This is **not a complete list** and is not meant to be consumed in full. Select material for identified gaps and reconcile it with the six-domain Spring ’26 outline. Public catalog metadata, earlier observations and our study estimates are distinguished below; paid interiors and question quality were not verified.

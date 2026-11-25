@@ -245,6 +245,81 @@ Validate device identity and owner, observed behavior, IoT profile/policy, Secur
 - [ ] I reject leaked questions and do not test against assets I do not own.
 - [ ] I rechecked the August 2025 datasheet, current docs/path, handbook, and registration before purchase.
 
+## Key terms and phrases
+
+**Object configuration creation and application**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Security profile](#security-and-decryption-profiles) | Threat-inspection settings attached to a security policy rule that allows traffic. An Antivirus profile can scan downloads that the rule permits. |
+| [Decryption profile](#security-and-decryption-profiles) | Settings governing how the firewall handles encrypted sessions selected by a decryption rule. |
+| [Advanced WildFire](#security-and-decryption-profiles) | A Palo Alto Networks malware analysis service that can examine submitted files and supply verdicts to participating controls. |
+| [Packet](#security-and-decryption-profiles) | A network-layer unit carrying a source and destination IP address. Routers use the destination and their forwarding tables to send it onward. |
+| [Vulnerability](#security-and-decryption-profiles) | A weakness in design, configuration, process or implementation that can affect a security objective under applicable conditions. |
+| [Security profile group](#security-and-decryption-profiles) | A collection of inspection profiles attached together to eligible Security policy rules so protection settings can be reused consistently. |
+| [Dynamic address group](#dynamic-and-custom-objects) | An address group whose membership is selected by tags, allowing membership to change without editing every policy reference. |
+| [External dynamic list](#dynamic-and-custom-objects) | An externally maintained list of values the firewall can use in policy, subject to retrieval and update health. |
+| [Authenticity](#dynamic-and-custom-objects) | Confidence that an entity, message or artifact is what it claims to be, based on an appropriate means of verification. |
+| [Availability](#dynamic-and-custom-objects) | Timely and reliable access to a resource by authorized users. A running server may still be unavailable to the business if a required dependency fails. |
+| [Bandwidth](#dynamic-and-custom-objects) | The nominal data-carrying capacity of a link, usually expressed in bits per second. It does not by itself establish delay or delivered throughput. |
+| [Data classification](#dynamic-and-custom-objects) | Assigning sensitivity categories to information so access and inspection policy can reflect its handling requirements. |
+| [False positive](#dynamic-and-custom-objects) | An alert that classifies benign activity as a target condition. Repeated benign alerts can distort operational priorities. |
+| [Log forwarding](#dynamic-and-custom-objects) | Sending selected logs to other systems under configured match and destination rules. A local log and a successfully received remote record are separate observations. |
+| [Parsing](#dynamic-and-custom-objects) | Extracting structured values from an incoming record. Correct parsing must preserve the distinction between a missing value and a value of zero. |
+| [Retention](#dynamic-and-custom-objects) | The period for which telemetry remains available for investigation. A search outside that period cannot establish inactivity. |
+
+**Policy creation and application**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Network address translation (NAT)](#security-nat-and-decryption) | Rewriting source or destination addressing for a connection. A translation rule alone does not grant permission to pass traffic. |
+| [Decryption policy](#security-nat-and-decryption) | Rules that decide which encrypted flows receive TLS inspection and which are excluded. |
+| [Application identification (App-ID)](#security-nat-and-decryption) | Palo Alto Networks application identification, which classifies traffic using attributes beyond the port number. |
+| [Content-ID](#security-nat-and-decryption) | Content inspection capabilities used to evaluate allowed traffic for threats, files or sensitive data according to the enabled profiles. |
+| [Device identification (Device-ID)](#security-nat-and-decryption) | Device classification and context used to make policy decisions about assets such as IoT endpoints. |
+| [Entity](#security-nat-and-decryption) | An identifiable resource such as a user, workload or host whose activities and relationships can be investigated. |
+| [Forward proxy](#security-nat-and-decryption) | An intermediary acting on behalf of a client for outbound connections, often to apply access policy or inspection. |
+| [SSL Inbound Inspection](#security-nat-and-decryption) | Inspection of eligible encrypted traffic arriving at a protected server using the configured server-side certificate and key material. |
+| [User identification (User-ID)](#security-nat-and-decryption) | A way to associate network traffic with user and group identity for policy and reporting. |
+| [Policy-based forwarding](#override-forwarding-and-sd-wan-policy) | Selection of a forwarding path using configured match criteria in addition to ordinary destination routing. |
+| [Application override](#override-forwarding-and-sd-wan-policy) | A policy mechanism that classifies matching traffic as a specified application under defined conditions. Its effect on inspection must be understood before use. |
+| [Asymmetric routing](#override-forwarding-and-sd-wan-policy) | Forward and return traffic following different network paths. A stateful device may lose visibility of half the flow. |
+| [Jitter](#override-forwarding-and-sd-wan-policy) | Variation in packet delay that can disrupt real-time applications even when average throughput looks adequate. |
+| [Latency](#override-forwarding-and-sd-wan-policy) | Elapsed time for data or a request to travel a defined path. Specify whether the measure is one-way delay or round-trip time. |
+| [Next hop](#override-forwarding-and-sd-wan-policy) | The adjacent router or forwarding destination selected for the next stage of a packet’s path. |
+| [Software-defined WAN (SD-WAN)](#override-forwarding-and-sd-wan-policy) | A way to apply policy across WAN links, selecting paths according to traffic needs and measured link conditions. |
+
+**Management and operations**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Configuration scope](#scm-hierarchy-and-deployment) | The set of devices or locations that receive a setting, including inherited settings and narrower overrides. |
+| [Commit](#scm-hierarchy-and-deployment) | Validating and applying a candidate configuration on the relevant management system. Distributing a centrally managed change to devices is a separate step. |
+| [Ingestion](#scm-hierarchy-and-deployment) | Bringing source records into the security platform for analysis. Missing input limits what a dashboard can show. |
+| [Secure access service edge (SASE)](#scm-hierarchy-and-deployment) | An architecture that brings wide-area connectivity and cloud-delivered security together for distributed users and sites. |
+| [Strata Cloud Manager (SCM)](#scm-hierarchy-and-deployment) | A cloud management platform for supported network security deployments, including configuration, monitoring and policy administration. |
+| [Strata Logging Service](#scm-hierarchy-and-deployment) | A cloud service for storing and making security logs available to authorized management and investigation tools. |
+| [Tenant](#scm-hierarchy-and-deployment) | An administrative or customer boundary in a shared service. Data, identities, configurations and actions must stay within the intended tenant. |
+| [Policy optimization](#posture-policy-optimization-and-incidents) | Review of observed applications and rule usage to narrow or improve policy while preserving needed access. |
+| [Authorization](#posture-policy-optimization-and-incidents) | Determining whether a given identity may perform a specific action on the particular resource requested. |
+| [Incident](#posture-policy-optimization-and-incidents) | A case representing a security event or set of related events requiring coordinated investigation and response. |
+| [Remediation](#posture-policy-optimization-and-incidents) | Action taken to remove or correct the cause of an incident after its immediate effects are contained. |
+| [Severity](#posture-policy-optimization-and-incidents) | A rating of expected or observed impact. It differs from confidence, which expresses how strongly the evidence supports the assessment. |
+
+**Troubleshooting**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Evidence preservation](#4-troubleshooting-14) | Maintaining the integrity and provenance of information needed for investigation, including original timestamps, collection method and access history. |
+| [Telemetry](#4-troubleshooting-14) | Records of activity from endpoints, networks or other systems that investigators can correlate into a timeline. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Software as a service (SaaS)](#saas-data-control-rollout) | An application operated by a provider and consumed as a service. The customer still governs tenant settings, access and use of its data. |
+| [Alert](#unknown-iot-alert) | A detection output identifying an event or pattern that warrants assessment. |
+
 ## Places to learn
 
 This is not a complete list, and it is not meant to be consumed in full. Start with the blueprint and page-linked official path, then choose current SCM/PAN-OS documentation and authorized labs for gaps. Record platform/version because interfaces and feature support change.

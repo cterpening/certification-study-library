@@ -13,12 +13,16 @@ upcoming_change_checked: 2026-10-28
 
 # MO-210 Microsoft Excel Associate (Microsoft 365 Apps) Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-05.md#mo-210) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mo-210-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-associate-m365-apps/) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-06.md#mo-210)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-05.md#mo-210) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mo-210-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-associate-m365-apps/) is authoritative.
 
 **Assessment contract:** 50-minute proctored practical assessment; about 150 hours of instruction and hands-on use is Microsoft preparation guidance, not a prerequisite.<br>
 **Current scope:** workbooks and worksheets; cells and ranges; tables; formulas and functions; charts.<br>
 **Change watch:** No retirement or replacement is listed on the credential page, checked October 28, 2026. Current [Microsoft policy](https://learn.microsoft.com/en-us/credentials/support/credential-expiration-policy) gives MOS a five-year lifetime; check your earned credential's dates.<br>
 **Detailed coverage:** The [officially linked PDF](https://arch-center.azureedge.net/Learning/Credentials/microsoft-certified-security-operations-analyst-skills-measured.pdf) currently contains the MO-210 outline despite its misleading filename. All 65 tasks are mapped in the [review report](../docs/research/2026-09-28-mo-210-deep-review.md); the automatic page monitor compares five broad domains. No Excel desktop lab was executed during this review.
+
+**Practice check.** For a sales table that grows weekly, refer to the table and its named columns. Insert a row and verify that the reference covers the added data. A calculated column can fill its formula down the table while adjusting each row's reference. [Using structured references with Excel tables | Microsoft Support](https://support.microsoft.com/en-us/excel/using-structured-references-with-excel-tables)
 
 ## How to use this guide
 
@@ -181,7 +185,72 @@ Use synthetic data and preserve inputs. Expected results below are proposed desk
 - I can diagnose common formula errors instead of masking them.
 - I complete a mixed practical set inside 50 minutes and reconcile the result.
 
+## Key terms and phrases
+
+**Worksheets and workbooks**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Workbook](#1-worksheets-and-workbooks) | An Excel file containing worksheets and workbook-level objects such as defined names. |
+| [Worksheet](#1-worksheets-and-workbooks) | A sheet within a workbook where cells are arranged in rows and columns. |
+| [Print area](#1-worksheets-and-workbooks) | The range designated for printing on a worksheet. |
+| [Print titles](#1-worksheets-and-workbooks) | Rows or columns repeated on each printed page, such as a table heading. |
+| [Page break](#1-worksheets-and-workbooks) | A boundary controlling where a printed worksheet moves to another page. |
+| [Worksheet tab](#1-worksheets-and-workbooks) | The named control used to select, rename, move or group worksheets. |
+| [Freeze panes](#worked-navigation-and-presentation-pass) | Keep selected rows or columns visible while scrolling through the rest of a worksheet. |
+| [Hyperlink](#worked-navigation-and-presentation-pass) | A navigable link from a cell or object to another location, sheet, file or web destination. |
+
+**Cells and ranges**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Named range](#2-cells-and-ranges) | A readable identifier assigned to a cell or range for navigation or use in formulas. |
+| [Cell address](#2-cells-and-ranges) | A cell's column letter and row number, such as C5. |
+| [Range](#2-cells-and-ranges) | A selection of one or more cells treated together for formatting, calculation or analysis. |
+| [Fill handle](#2-cells-and-ranges) | The control used to extend a formula, copy a value or continue a recognized series into adjacent cells. |
+| [Number format](#2-cells-and-ranges) | A display rule such as percentage, date or currency that changes appearance while preserving the underlying value. |
+| [Wrap text](#2-cells-and-ranges) | Display a cell's content on several lines within the same cell. |
+| [Conditional formatting](#worked-built-in-conditional-rule) | A rule that changes a cell's appearance when its value or a formula satisfies a condition. |
+| [Highlight cells rule](#worked-built-in-conditional-rule) | A conditional format that applies when a cell meets a comparison such as exceeding a chosen threshold. |
+| [Applies to range](#worked-built-in-conditional-rule) | The cells covered by a conditional formatting rule. A correct comparison still gives misleading results when the range omits records. |
+
+**Tables**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Excel table](#3-tables) | A structured range with named columns and built-in filtering whose references can expand with its data. |
+| [Header row](#3-tables) | The table's column names, used for filters and structured references. |
+| [Total row](#3-tables) | An optional table row that calculates summaries such as the sum of a selected column. |
+| [Sort](#3-tables) | Reorder records according to one or more fields while keeping each record's cells together. |
+| [Filter](#3-tables) | Show records that meet criteria while keeping other rows in the source data. |
+| [Structured reference](#worked-names-structured-references-and-branch-checks) | A formula reference that uses a table or column name to identify data. |
+| [Defined name](#worked-names-structured-references-and-branch-checks) | A workbook or worksheet name that refers to a cell, range, constant or formula. |
+
+**Formulas and functions**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Absolute reference](#4-formulas-and-functions) | A reference whose column and row stay fixed when a formula is copied. Fill `=A2*$B$1` down one row and it becomes `=A3*$B$1`. |
+| [Relative reference](#4-formulas-and-functions) | A reference such as A2 that shifts by the same offset when its formula is copied. |
+| [Mixed reference](#4-formulas-and-functions) | A reference with only the row or column fixed, such as $A2 or A$2. |
+| [SUM](#4-formulas-and-functions) | A function that adds numeric values in the specified arguments or ranges. |
+| [AVERAGE](#4-formulas-and-functions) | A function that returns the arithmetic mean of the numeric values in its inputs. |
+| [COUNT](#4-formulas-and-functions) | A function that counts numeric entries within its arguments or referenced cells. |
+| [COUNTA](#4-formulas-and-functions) | A function that counts nonempty entries, including text. |
+| [IF](#4-formulas-and-functions) | A function that returns one result when a test is true and another when it is false. |
+
+**Charts**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Data series](#5-charts) | A related set of values plotted together in a chart, such as one region's sales across several months. |
+| [Chart axis](#5-charts) | A scale or set of categories against which plotted values are read. |
+| [Legend](#5-charts) | The chart key that identifies the series associated with each color, line or symbol. |
+| [Data label](#5-charts) | A value, category or other label displayed next to a plotted point. |
+
 ## Places to learn
+
+**Suggested practice.** Use a synthetic identifier beginning with zeros and a separate long identifier; compare the imported value, visible format and exported text. About 15–30 minutes to compare an import as text with display-only formatting and inspect the underlying values (editorial estimate). [Keeping leading zeros and large numbers](https://support.microsoft.com/en-us/excel/keeping-leading-zeros-and-large-numbers)
 
 This is a selective learning path, not a complete list of Excel resources or a requirement to consume every item.
 

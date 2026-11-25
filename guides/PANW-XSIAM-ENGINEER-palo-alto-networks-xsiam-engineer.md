@@ -326,6 +326,81 @@ Detect increased failed tasks after content/pack update; compare versions/diff, 
 - [ ] I can answer every original check and complete all labs with source samples, configuration, tests, failures and rollback.
 - [ ] I rechecked the live page, datasheet, handbook, current XSIAM/XDR/XSOAR documentation, Marketplace dependencies and registration.
 
+## Key terms and phrases
+
+**Planning and installation**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Threat intelligence](#11-existing-infrastructure-and-posture) | Assessed information about adversary activity or indicators, with source, context and freshness to guide a decision. |
+| [Vulnerability](#11-existing-infrastructure-and-posture) | A weakness in a system or process that could permit harm. The associated risk depends on exposure, likelihood and impact. |
+| [High availability (HA)](#12-deployment-requirements-objectives-and-resources) | A design that keeps a site operating through a device or path failure, with enough remaining capacity to serve required traffic. |
+| [Playbook](#12-deployment-requirements-objectives-and-resources) | A defined workflow for handling a type of case, including inputs, decisions, actions and evidence. |
+| [Communication requirement](#13-communication-requirements) | A dependency such as DNS, certificate trust or outbound reachability that a component needs to exchange data with the tenant. |
+| [Authentication](#13-communication-requirements) | Checking that a claimant controls an authenticator bound to the claimed identity. It precedes the separate decision about permitted actions. |
+| [Data freshness](#13-communication-requirements) | How recently the data needed for a decision was observed or updated. A successful query against stale records can give a misleading view of current state. |
+| [Domain Name System (DNS)](#13-communication-requirements) | The Domain Name System, which resolves names to records such as IP addresses so clients can locate services. |
+| [Tenant](#14-install-and-configure-components) | An administrative or customer boundary in a shared service. Data, identities, configurations and actions must stay within the intended tenant. |
+| [Federation](#15-roles-permissions-and-access-controls) | An arrangement that lets one security domain rely on identity information issued by another, under agreed trust and validation rules. |
+| [Multifactor authentication (MFA)](#15-roles-permissions-and-access-controls) | Verifying a user through at least two distinct factor types, such as a password and possession of a security key. |
+
+**Integration and automation**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Data ingestion](#21-onboard-data-sources) | Receiving records from a source. A successful connection does not establish that every expected event arrived. |
+| [Entity](#21-onboard-data-sources) | An identifiable resource such as a user, workload or host whose activities and relationships can be investigated. |
+| [Retention](#21-onboard-data-sources) | The period for which telemetry remains available for investigation. A search outside that period cannot establish inactivity. |
+| [Deduplication](#22-automation-and-feed-integrations) | Recognizing and handling repeated copies of the same observation or request so duplication does not inflate counts or repeat an action. |
+| [False positive](#22-automation-and-feed-integrations) | An alert that classifies benign activity as a target condition. Repeated benign alerts can distort operational priorities. |
+| [Content pack](#23-marketplace-content-packs) | A versioned bundle of components such as integrations, playbooks or detection content with dependencies to validate before deployment. |
+| [Data retention](#23-marketplace-content-packs) | Keeping records for a defined purpose and period, then disposing of them as authorized, subject to holds or other obligations. |
+| [Incident type](#23-marketplace-content-packs) | A classification that associates a case with its expected fields, layouts, handling rules or playbook. |
+| [Automation workflow](#24-automation-workflow) | An ordered set of tasks and decisions that uses case data to coordinate tools and response actions. |
+| [Context data](#24-automation-workflow) | Structured information carried through a playbook run, such as an extracted domain or an enrichment result. |
+| [Sub-playbook](#24-automation-workflow) | A reusable workflow invoked by another playbook with a defined input/output contract. |
+
+**Content optimization**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Parsing rule](#31-parsing-rules) | Logic that extracts typed or named fields from a source record while retaining a path back to the original evidence. |
+| [Parsing](#31-parsing-rules) | Extracting structured values from an incoming record. Correct parsing must preserve the distinction between a missing value and a value of zero. |
+| [Raw event](#31-parsing-rules) | The original source observation before a parser or normalization rule transforms its fields. It provides a reference for checking a derived result. |
+| [Data-modeling rule](#32-data-modeling-rules) | A mapping from source-specific fields to common meanings so analytics can compare equivalent events from different sources. |
+| [Cortex Data Model (XDM)](#32-data-modeling-rules) | A common model used to map source-specific fields into consistent concepts for cross-source analysis. |
+| [Normalized field](#32-data-modeling-rules) | A field mapped to a common name or type across sources. An analyst should preserve the source’s value when checking an unexpected match. |
+| [Detection rule](#33-detection-rules) | A condition that evaluates available data and produces an alert when its criteria are met. |
+| [Attack surface management (ASM)](#33-detection-rules) | Discovery and tracking of exposed assets so analysts can verify ownership and prioritize investigation. |
+| [Correlation rule](#33-detection-rules) | Logic that relates events using keys, thresholds or a time window, such as repeated failures for one account followed by a success. |
+| [Incident layout](#34-incident-and-alert-layout) | The fields and views presented to an investigator when working a case. It changes how evidence is displayed. |
+| [Alert](#34-incident-and-alert-layout) | A detection output identifying an event or pattern that warrants assessment. |
+| [Evidence preservation](#34-incident-and-alert-layout) | Maintaining the integrity and provenance of information needed for investigation, including original timestamps, collection method and access history. |
+| [Incident](#34-incident-and-alert-layout) | A case that groups related alerts and evidence so an analyst can assess scope and coordinate a response. |
+| [Dashboard](#35-dashboards-and-reporting-templates) | A set of visual summaries for a defined operational question. Filters, coverage and collection delays determine what the displayed totals represent. |
+| [Ingestion](#35-dashboards-and-reporting-templates) | Bringing source records into the security platform for analysis. Missing input limits what a dashboard can show. |
+| [Ingestion time](#35-dashboards-and-reporting-templates) | When a downstream system received or indexed the record, which may be substantially later than the event itself. |
+
+**Maintenance and troubleshooting**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Asset group](#41-exceptions-and-exclusions) | A named selection of cloud resources used to scope policies, views or access. |
+| [Telemetry gap](#41-exceptions-and-exclusions) | A portion of the expected population, time period or activity for which the system lacks observations. Silence in that gap does not establish normal behavior. |
+| [Cortex XDR endpoint agent](#42-software-component-updates) | Software on a supported endpoint that supplies telemetry and applies its effective protection settings. |
+| [XDR Collector](#42-software-component-updates) | A component that collects and forwards supported logs for Cortex ingestion. It serves a different purpose from the endpoint prevention agent. |
+| [Ingestion lag](#43-data-management-issues) | The delay between an event occurring and its record becoming available to the detection or query pipeline. |
+| [Container](#44-component-issues) | An isolated application process and its dependencies that ordinarily shares the host kernel. Its image is the packaged input used to start it. |
+| [Integration instance](#44-component-issues) | A configured connection to a particular service, including its credentials, scope and permitted operations. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Security information and event management (SIEM)](#siem-migration-with-duplicate-telemetry) | Collection and analysis of security records from multiple systems to support detection and investigation. |
+| [Telemetry](#siem-migration-with-duplicate-telemetry) | Records of activity from endpoints, networks or other systems that investigators can correlate into a timeline. |
+| [Indicator of compromise (IOC)](#custom-identity-source-and-risky-login-detection) | An observable value associated with suspicious activity, such as a file hash or domain, whose relevance depends on context. |
+
 ## Places to learn
 
 This is a selective starting set, not a complete list and not a prescription to consume everything. Pick and choose the official documentation, structured training, videos, data-engineering references, and labs that close your gaps. Times are planning estimates unless the provider states a duration; access, entitlements, versions and prices can change.

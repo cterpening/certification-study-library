@@ -160,6 +160,77 @@ Compare ES-native automation with a SOAR playbook for account disablement. Defin
 - [ ] I completed all twelve labs using synthetic defensive data and safe mock actions.
 - [ ] I rechecked current ES/SOAR terminology, versions, exam, and policy details.
 
+## Key terms and phrases
+
+**Data engineering**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Normalization](#1-data-engineering-10) | Mapping source-specific events into common fields and meanings so detections can be reused across sources. |
+| [Data retention](#1-data-engineering-10) | How long evidence is kept and made available under the applicable business or regulatory purpose. Investigation needs and collection costs inform the policy. |
+| [Index](#1-data-engineering-10) | A named store for event or metric data, with access and retention settings governing who can search it and for how long. |
+| [Index-time processing](#1-data-engineering-10) | Processing applied before data is stored, such as timestamp recognition. A mistake here can affect every later search. |
+| [Event](#1-data-engineering-10) | One occurrence represented in the data, with a timestamp and associated metadata. A multiline log entry can be a single event. |
+| [Event tag](#1-data-engineering-10) | A label attached to a field-value pair that can group equivalent events across different formats or source names. |
+| [Common Information Model (CIM)](#1-data-engineering-10) | A shared set of fields, tags and datasets that makes comparable activity searchable across different vendors' data. |
+| [Correlation search](#1-data-engineering-10) | Detection logic that evaluates related activity to produce findings or risk observations under defined conditions. |
+| [Data minimization](#1-data-engineering-10) | Limiting collected, retained or shared security data to what is needed for an approved purpose. |
+| [Data model](#1-data-engineering-10) | A hierarchy of datasets with defined constraints and fields. Pivot and acceleration can use this agreed structure. |
+| [Event type](#1-data-engineering-10) | A named set of events defined by matching search criteria that users can reference in other searches. |
+| [Sourcetype](#1-data-engineering-10) | A classification of the data's format that influences parsing and field extraction. Two sources can produce the same sourcetype. |
+
+**Detection engineering**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Detection engineering](#2-detection-engineering-40) | Designing, testing, deploying and maintaining logic that identifies a defined security behavior in telemetry. |
+| [False positive](#2-detection-engineering-40) | A detection firing on activity that does not meet its intended threat condition. Investigating the cause can improve the rule. |
+| [Risk object](#2-detection-engineering-40) | An entity, such as a system or user, to which risk observations are assigned for correlation. |
+| [Incident severity](#2-detection-engineering-40) | A rating of impact and urgency that guides escalation and response decisions under agreed criteria. |
+| [Throttle](#2-detection-engineering-40) | Suppressing repeated alerts for a defined interval or key so one continuing condition does not flood responders. |
+| [Detection hypothesis](#2-detection-engineering-40) | A testable proposition about an observable behavior and the evidence that would support or weaken it. |
+| [Drilldown](#2-detection-engineering-40) | An action that uses a selected value in a visualization to open or update more detailed results. |
+| [Technique](#2-detection-engineering-40) | A described way of achieving an adversary objective. Defenders map relevant telemetry and controls to the behavior. |
+| [Search Processing Language (SPL)](#2-detection-engineering-40) | The language Splunk uses to retrieve events and pass results through commands that filter, enrich, group or display them. |
+| [Risk-based alerting (RBA)](#2-detection-engineering-40) | Combining risk observations associated with an entity over time to identify a pattern worth investigating. |
+| [Threat intelligence](#2-detection-engineering-40) | Information about threats assessed for relevance to a decision or environment. Origin, confidence and age affect how it should be used. |
+| [Source](#2-detection-engineering-40) | The file, stream or other input from which data came. Different sources can share a sourcetype when their records use the same format. |
+| [Confidence](#2-detection-engineering-40) | An assessment of how strongly available evidence supports an intelligence judgment. Confidence and business impact answer different questions. |
+| [Enrichment](#2-detection-engineering-40) | Adding context such as asset criticality, identity or indicator history to an observation before deciding what it means. |
+| [Triage](#2-detection-engineering-40) | Reviewing a finding's evidence, impact and urgency to decide whether it should be escalated, enriched or closed. |
+| [Indicator of compromise (IOC)](#2-detection-engineering-40) | An observable item, such as a hash or domain, that can support an investigation when assessed in context. |
+
+**Security processes and programs**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Runbook](#3-security-processes-and-programs-20) | A documented response procedure specifying responsibilities, decisions and expected evidence. |
+| [Containment](#3-security-processes-and-programs-20) | Limiting an incident's reach while preserving evidence and keeping the recovery path available. |
+| [Business impact analysis (BIA)](#3-security-processes-and-programs-20) | Identifies important business functions, their dependencies and the consequences of disruption, helping set recovery and investment priorities. |
+| [Operational intelligence](#3-security-processes-and-programs-20) | Intelligence about campaigns or patterns of activity that can guide defensive priorities and preparations. |
+| [Evidence provenance](#3-security-processes-and-programs-20) | Documentation of the origin and handling of evidence so another reviewer can trace how a conclusion was reached. |
+
+**Automation, cases, REST APIs, and SOAR**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Playbook](#4-automation-cases-rest-apis-and-soar-20) | An orchestration workflow that links case data, actions and decisions. An approval step can reserve consequential actions for a person. |
+| [Idempotency](#4-automation-cases-rest-apis-and-soar-20) | The ability to retry the same requested action without creating a second effect, such as opening a duplicate case. |
+| [SOAR](#4-automation-cases-rest-apis-and-soar-20) | Security orchestration, automation and response. It connects cases, tools and workflows while retaining controls over who can act. |
+| [Automation approval](#4-automation-cases-rest-apis-and-soar-20) | Explicit authorization to take an action within defined scope, for example disabling an account during containment. |
+| [Disposition](#4-automation-cases-rest-apis-and-soar-20) | The recorded outcome of a finding or investigation, together with the evidence that supports it. |
+| [Schema](#4-automation-cases-rest-apis-and-soar-20) | The expected fields and types of an event or dataset. Changing a field name can silently break a dependent detection. |
+| [Case management](#4-automation-cases-rest-apis-and-soar-20) | Maintaining the evidence, decisions, tasks and ownership of an investigation across analysts and handoffs. |
+
+**Audit, metrics, reports, and dashboards**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Detection coverage](#5-audit-metrics-reports-and-dashboards-10) | The set of intended behaviors and environments for which a detection has usable data and tested logic. Counting deployed rules alone can overstate it. |
+| [Report](#5-audit-metrics-reports-and-dashboards-10) | A saved search or pivot that others can rerun according to its permissions, possibly on a schedule. |
+| [Time range](#5-audit-metrics-reports-and-dashboards-10) | The interval a search covers. Use bounds that match event time and known ingestion delay before treating an empty result as evidence. |
+| [Detection tuning](#5-audit-metrics-reports-and-dashboards-10) | Adjusting a detection using observed outcomes, tested exclusions and representative data to improve its signal without concealing real cases. |
+
 ## Places to learn
 
 This is not a complete list, and it is not meant to be consumed end to end. Choose resources for measured gaps. Times are planning estimates; access, price, product releases, and availability change.

@@ -430,6 +430,84 @@ These original prompts and answer notes support explanation, not recall of live 
 
 The current official Trailhead prep unit assigns Agentforce 8% and retains the other seven weights shown above; it is a five-minute orientation that links three scenario/flashcard modules in the [Administrator exam-prep trail](https://trailhead.salesforce.com/content/learn/trails/administrator-certification-prep) (listed total about 1 hr 20 min). Keep that current learning outline separate from the Help exam-guide page, which still shows a Summer ’25 label; its current logistics/version remain a source discrepancy to verify at booking. For current administrative-security context, Salesforce's [Winter ’27 overview](https://developer.salesforce.com/blogs/2026/10/developers-guide-to-the-winter-27-release) and [security release notes](https://help.salesforce.com/s/articleView?id=release-notes.rn_security_enhancements_upcoming.htm&language=en_US&release=262&type=5) describe MFA and connected-app/API changes with org, license, and effective-date conditions. Check the exact release note and org configuration before applying; product updates are not by themselves exam-objective changes.
 
+## Key terms and phrases
+
+**Configuration and Setup**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Permission set](#1-configuration-and-setup-15) | A collection of permissions assigned to users to grant access needed for particular work. |
+| [Organization-wide defaults](#1-configuration-and-setup-15) | The baseline level of record access for an object. Sharing mechanisms can open access further where appropriate. |
+| [Profile](#1-configuration-and-setup-15) | A user's baseline configuration for permissions and settings. Additional permissions can come from permission sets. |
+| [Queue](#1-configuration-and-setup-15) | A shared owner or work pool for supported records, such as unassigned cases waiting for an agent. |
+| [Field-level security (FLS)](#1-configuration-and-setup-15) | Controls a user's ability to see or edit a field. Removing it from one page layout is insufficient to enforce that restriction. |
+| [Role hierarchy](#1-configuration-and-setup-15) | A record-sharing mechanism that can extend access up a management hierarchy, subject to the object's sharing settings. |
+| [Sharing rule](#1-configuration-and-setup-15) | An automatic grant extending record access to selected users or groups when ownership or record criteria match. |
+
+**Object Manager and Lightning App Builder**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Record type](#2-object-manager-and-lightning-app-builder-15) | A configuration that offers different business processes, available picklist values and page layout assignments for records of the same object. |
+| [Field](#2-object-manager-and-lightning-app-builder-15) | A named data element on an object, such as an Opportunity's Close Date. Its type determines which values it can store. |
+| [Object](#2-object-manager-and-lightning-app-builder-15) | A Salesforce data-model entity, comparable to a table. An Account object holds account records and defines the fields each can have. |
+| [Junction object](#2-object-manager-and-lightning-app-builder-15) | A record representing the relationship between two other records. One enrollment can connect a single student to one of many courses. |
+| [Standard object](#2-object-manager-and-lightning-app-builder-15) | An object supplied by Salesforce for a common business entity, such as an account or case. |
+| [Master-detail relationship](#2-object-manager-and-lightning-app-builder-15) | A parent-child relationship in which the detail inherits important ownership and sharing behavior from the master. |
+| [Page layout](#2-object-manager-and-lightning-app-builder-15) | Configures which fields, buttons and related lists a user sees in a record interface. Access permissions still apply through other entry points. |
+
+**Sales and Marketing Applications**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Opportunity](#3-sales-and-marketing-applications-10) | A record of a potential sale that progresses through stages and can contribute to a sales forecast. |
+| [Campaign](#3-sales-and-marketing-applications-10) | A record for organizing a marketing initiative and relating members or responses to it. |
+| [Lead](#3-sales-and-marketing-applications-10) | A record for an unqualified prospective customer. Conversion can produce or link to account and contact records and optionally an opportunity. |
+
+**Service and Support Applications**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Case](#4-service-and-support-applications-10) | A record of a customer issue or request that a service team can route, track and resolve. |
+
+**Productivity and Collaboration**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Activity](#5-productivity-and-collaboration-10) | A record of work or an interaction, such as a follow-up task or scheduled meeting, linked to relevant Salesforce records. |
+| [Chatter](#5-productivity-and-collaboration-10) | Salesforce's collaboration feature for posts, groups and record discussions. Access to a conversation must respect underlying record visibility. |
+| [Page activation](#5-productivity-and-collaboration-10) | Choosing the circumstances under which a Lightning page is presented, such as a particular app, record type or user profile. |
+| [Sandbox](#5-productivity-and-collaboration-10) | A separate Salesforce environment used for development, testing or training. Choose its data and configuration fidelity around the test. |
+
+**Data and Analytics Management**
+
+| Term or phrase | Meaning |
+|---|---|
+| [External ID](#6-data-and-analytics-management-17) | A field used as an identifier from another system. During an upsert it can match incoming rows to existing Salesforce records. |
+| [Upsert](#6-data-and-analytics-management-17) | An operation that updates an existing record when the supplied matching key finds it and inserts when no match is found. |
+| [Duplicate rule](#6-data-and-analytics-management-17) | Chooses the response to a potential duplicate identified by matching logic, such as warning a user or blocking a save. |
+| [Matching rule](#6-data-and-analytics-management-17) | Defines how field values are compared to identify records that might represent the same person, company or entity. |
+| [Report type](#6-data-and-analytics-management-17) | Defines the records, relationships and fields a report can use. A missing record may reflect both report design and user access. |
+| [Dashboard](#6-data-and-analytics-management-17) | An arrangement of report-driven components that visualizes measures. The running user's context can affect what data appears. |
+
+**Automation**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Record-triggered flow](#7-automation-15) | Declarative automation that runs in response to a qualifying record change, with timing chosen for the work it performs. |
+| [Flow trigger](#7-automation-15) | The event that starts a flow, such as creation or update of a qualifying record. Entry conditions narrow when it runs. |
+| [Fault path](#7-automation-15) | A branch that handles an automation error. It can record which record and operation failed and direct the user toward recovery. |
+| [Approval process](#7-automation-15) | Routes a proposed record change through designated approvers and defines the actions taken on approval or rejection. |
+| [Autolaunched flow](#7-automation-15) | A flow invoked without interactive screens, for example as a reusable action from another workflow. |
+| [Escalation rule](#7-automation-15) | A time- and criteria-based rule that escalates a case when the defined service conditions are met. |
+| [Screen flow](#7-automation-15) | A flow that presents screens to collect or display information while guiding a user through a task. |
+
+**Agentforce**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Agent action](#8-agentforce-8) | An operation made available to an Agentforce agent, such as invoking a flow. The executing identity's permissions constrain what it can accomplish. |
+
 ## Places to learn
 
 This is not a complete list. Choose material that fills a demonstrated gap, then practice in an authorized org. Public listing metadata does not establish lesson quality or complete current blueprint coverage. Estimates explicitly marked “planning” are ours.

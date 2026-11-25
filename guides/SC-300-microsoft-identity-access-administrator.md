@@ -13,7 +13,9 @@ upcoming_change_checked: 2026-10-28
 
 # SC-300 Microsoft Identity and Access Administrator Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-02.md#sc-300) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sc-300-coverage-record). Source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-300) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-04.md#sc-300)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-02.md#sc-300) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sc-300-coverage-record). Source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-300) is authoritative.
 
 **Current baseline:** Skills measured as of October 28, 2026.<br>
 **Exam state:** Active; the official credential page lists no retirement date.<br>
@@ -142,7 +144,7 @@ Choose groups by workload and authorization behavior. Security groups govern acc
 
 [Role-assignable groups](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/groups-concept) must be created with the immutable role-assignable setting; an existing group cannot be converted. They use assigned membership and have stronger membership/credential administration controls. Keep these distinct from ordinary PIM-enabled groups, which do not all need to be role-assignable.
 
-Audit [memberOf-based rules before November 3](https://learn.microsoft.com/en-us/entra/identity/users/groups-dynamic-rule-member-of). Affected dynamic groups, dynamic AUs and entitlement auto-assignment policies stop updating and keep their last state. Replace them with supported rules or explicit assignment, then test membership and downstream authorization; frozen membership can preserve excessive access.
+The original memberOf preview ended November 3. Dynamic groups, administrative units and entitlement auto-assignment policies still using that preview retain their last known state. For eligible groups, evaluate MemberOf Next (preview), which needs Microsoft Entra ID Governance and Standard priority and processes changes twice daily. Review other affected assignments separately and validate membership and effective access after migration. [memberOf-based rules before November 3](https://learn.microsoft.com/en-us/entra/identity/users/groups-dynamic-rule-member-of)
 
 Custom security attributes are typed, tenant-defined key/value data assigned to supported Entra objects. Their attribute-definition and attribute-assignment roles are deliberately separate, and their values can support filtering or attribute-based access scenarios. They are not the same as directory extensions or dynamic-group attributes. Define an owner, allowed values, sensitivity, deactivation/change procedure, and permitted consumers before using them. Microsoft's [custom-security-attributes overview](https://learn.microsoft.com/en-us/entra/fundamentals/custom-security-attributes-overview) explains the separate definition and assignment control planes.
 
@@ -193,9 +195,9 @@ Connect Health and synchronization/provisioning logs reveal agent health, export
 
 ### Current hybrid maintenance boundaries
 
-[Connect Sync and Health hardening](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/security-updates-pks) requires Connect Sync **2.5.79.0 or later by September 30**, with a separate Health-agent minimum **4.5.2466.0**. Old Sync versions lose synchronization; old Health agents lose specified alerts. Neither absence of alerts nor a green agent proves every object is synchronized.
+The Connect hardening guidance lists Connect Sync 2.6.84.0 or later. Connect Health agents for Sync, AD DS and AD FS have their own minimum of 4.5.2466.0. Microsoft also requires application-based authentication for Connect Sync by April 7, 2027. Verify version, authentication and synchronization health independently. [Connect Sync and Health hardening](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/security-updates-pks)
 
-The [current release history](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/reference-connect-version-history) lists 2.6.92.0 (September 23), fixing PTA registration in 2.6.91.0; the minimum 2.5.79.0 reaches its listed support end on October 23. Download through the Entra admin center and validate staging, compatibility, app-scoped CA and rollback. Minimum enforcement and supported release selection are separate decisions.
+The prior 2.5.79.0 release reached its support end October 23. Version 2.6.92.0 fixes the 2.6.91.0 PTA-agent registration issue. Use release history and the Entra admin-center download to select a supported build, then validate staging and rollback. [current release history](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/reference-connect-version-history)
 
 [Application authentication](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/authenticate-application-id) also has its own lifecycle: new installations configure it; existing legacy-account servers are not automatically converted by background sync. Managed certificates depend on the Connect scheduler for rotation; BYOC makes the operator responsible for certificates, while BYOA adds app/permission ownership. Verify configured app ID, certificate expiry, key protection, scheduler and rotation rather than inferring success from a version number.
 
@@ -274,6 +276,8 @@ Device-enforced restrictions depend on the consuming application and device sign
 > **Related item:** Conditional Access is a policy engine after first-factor authentication, not a firewall and not an entitlement system. It cannot repair excessive app permissions, stale group membership, or an unauthenticated network path by itself.
 
 ### Manage identity risk and registration
+
+**Practice check.** Create separate Conditional Access policies for user risk and sign-in risk. When a policy expects self-remediation, verify the user has registered the required authentication method. For hybrid password changes, verify password writeback before enforcement. [Risk policies - Microsoft Entra ID Protection | Microsoft Learn](https://learn.microsoft.com/en-us/entra/id-protection/howto-identity-protection-configure-risk-policies)
 
 Microsoft Entra ID Protection produces risk detections and calculates sign-in risk (likelihood this authentication is not legitimate) and user risk (likelihood the identity is compromised). Workload identity risk covers service principals. Use risk-based Conditional Access for user self-remediation where appropriate, and investigate the underlying detections, sign-in context, device, application, and correlated security evidence.
 
@@ -723,7 +727,78 @@ You are close to ready when you can:
 - complete the labs safely or produce credible table-top evidence where licensing prevents deployment;
 - score consistently on the official Practice Assessment while explaining every incorrect option from current documentation.
 
+## Key terms and phrases
+
+**Implement and manage user identities**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Tenant](#model-the-tenant-and-administrative-boundary-first) | An organization's Microsoft 365 and identity boundary for managing accounts, services and policies. |
+| [Administrative unit](#model-the-tenant-and-administrative-boundary-first) | An Entra container that can scope selected administrative responsibilities to a subset of directory objects. |
+| [Dynamic group](#create-and-govern-workforce-identities) | A group whose membership is calculated from configured rules over supported identity properties. |
+| [Lifecycle workflow](#create-and-govern-workforce-identities) | An identity governance workflow that automates tasks when employees join, move within or leave an organization. |
+| [Guest user](#implement-external-and-cross-tenant-identity-deliberately) | A user represented with the Guest user type in the resource tenant. An external guest typically authenticates through a home identity provider before accessing a shared resource. |
+| [B2B collaboration](#implement-external-and-cross-tenant-identity-deliberately) | A model that lets external organizational identities access invited resources under the host tenant's governance. |
+| [Cross-tenant access settings](#implement-external-and-cross-tenant-identity-deliberately) | Policies governing how identities and trust signals are accepted or restricted between Entra tenants. |
+| [Hybrid identity](#select-and-operate-hybrid-identity) | An identity arrangement that connects an on-premises directory with Microsoft Entra ID for cloud access. |
+| [Password hash synchronization](#select-and-operate-hybrid-identity) | Sending a derived password hash from the on-premises directory to enable supported cloud authentication. |
+| [Pass-through authentication](#select-and-operate-hybrid-identity) | Validating cloud sign-in credentials through configured on-premises authentication agents. |
+| [Federation](#select-and-operate-hybrid-identity) | Trusting an external identity provider to authenticate users and issue claims accepted by the relying service. |
+| [Password writeback](#select-and-operate-hybrid-identity) | A supported hybrid configuration that sends eligible cloud password changes back to the on-premises directory. |
+
+**Implement authentication and access management**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Multifactor authentication (MFA)](#build-an-authentication-method-strategy) | Requiring evidence from more than one type of authentication factor, such as a password and a possession factor. |
+| [Passwordless authentication](#build-an-authentication-method-strategy) | Proving identity through supported methods such as a passkey or security key without entering a password. |
+| [Temporary Access Pass](#build-an-authentication-method-strategy) | A time-limited credential that can bootstrap registration or recovery of supported authentication methods. |
+| [Authentication strength](#build-an-authentication-method-strategy) | A named requirement specifying which combinations of authentication methods satisfy a particular access policy. |
+| [FIDO2 security key](#build-an-authentication-method-strategy) | A hardware authenticator using public-key credentials for supported phishing-resistant sign-in. |
+| [Conditional Access](#design-test-and-troubleshoot-conditional-access) | The Entra policy system that evaluates signals about sign-in context and decides what access conditions to require. |
+| [Report-only mode](#design-test-and-troubleshoot-conditional-access) | A policy evaluation mode that records anticipated outcomes without enforcing the access decision. |
+| [Authentication context](#design-test-and-troubleshoot-conditional-access) | A named policy context applications can request for a sensitive action to trigger applicable Conditional Access requirements. |
+| [Sign-in risk](#manage-identity-risk-and-registration) | An assessment of the likelihood that a particular authentication request came from someone other than the legitimate user. |
+| [User risk](#manage-identity-risk-and-registration) | An assessment of the likelihood that a user's identity itself has been compromised. |
+| [Private Access](#implement-global-secure-access-as-identity-aware-networking) | The Entra network access capability for connecting authorized users to defined private resources. |
+| [Traffic forwarding profile](#implement-global-secure-access-as-identity-aware-networking) | A configuration determining which traffic is routed through an authorized Global Secure Access service path. |
+
+**Plan and implement workload identities**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Managed identity](#select-the-correct-nonhuman-identity) | An Azure-managed workload identity that obtains tokens without an application storing a secret. |
+| [Service principal](#select-the-correct-nonhuman-identity) | A tenant-local identity representing an application or workload that can receive permissions. |
+| [System-assigned managed identity](#select-the-correct-nonhuman-identity) | An Azure-managed identity whose lifecycle is tied to a particular resource. |
+| [User-assigned managed identity](#select-the-correct-nonhuman-identity) | An independently created managed identity that can be associated with eligible resources. |
+| [Workload identity federation](#select-the-correct-nonhuman-identity) | A trust arrangement allowing an external workload to exchange signed identity evidence for an access token without a stored secret. |
+| [Enterprise application](#integrate-and-govern-enterprise-applications) | The local service principal representing an application in a particular tenant, where assignments and consent can be managed. |
+| [Consent](#integrate-and-govern-enterprise-applications) | Authorization for an application to use specified permissions under the relevant user or administrator authority. |
+| [App registration](#register-applications-securely) | The application's identity definition, distinct from the service principal created in each tenant that uses it. |
+| [Delegated permission](#register-applications-securely) | A scope that lets an app call an API on behalf of a signed-in user. For Microsoft Graph, the app can act only within both its consented scopes and the user’s own access. |
+| [Application permission](#register-applications-securely) | A permission exercised by an application identity without a signed-in user. |
+| [Redirect URI](#register-applications-securely) | The registered destination to which an identity provider returns a response after an interactive authorization request. |
+
+**Plan and automate identity governance**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Access package](#design-entitlement-management-as-a-lifecycle) | A bundle of resources and assignment policies that a user can request through entitlement management. |
+| [Catalog](#design-entitlement-management-as-a-lifecycle) | The governance container that organizes resources and access packages for entitlement management. |
+| [Entitlement assignment policy](#design-entitlement-management-as-a-lifecycle) | The eligibility, approval, duration and review rules under which people receive an access package. |
+| [Access package assignment](#design-entitlement-management-as-a-lifecycle) | The actual grant of resources through an access package to a user under a specified policy and duration. |
+| [Access review](#implement-access-reviews-that-actually-remove-stale-access) | A recurring or one-time decision process that checks whether assigned access should continue and applies configured outcomes. |
+| [Privileged Identity Management (PIM)](#implement-privileged-access-and-emergency-recovery) | A service for governing privileged roles, including time-limited activation of eligible assignments. |
+| [Eligible assignment](#implement-privileged-access-and-emergency-recovery) | A privileged role assignment that requires activation before its permissions can be used. |
+| [Active assignment](#implement-privileged-access-and-emergency-recovery) | A role assignment that currently grants its permissions without a separate activation step. |
+| [Break-glass access](#implement-privileged-access-and-emergency-recovery) | A separately controlled emergency path for restoring administrative access after ordinary authentication fails. |
+| [Activation approval](#implement-privileged-access-and-emergency-recovery) | A check requiring a designated reviewer to approve an eligible privileged assignment before it becomes active. |
+| [Sign-in log](#monitor-identity-activity-and-prove-control-effectiveness) | A record of an authentication attempt, its context and the result of applicable access checks. |
+| [Directory audit log](#monitor-identity-activity-and-prove-control-effectiveness) | A record of changes to directory objects or configuration that identifies the actor and target. |
+
 ## Places to learn
+
+**Suggested practice.** Follow an access grant from request to periodic review and removal, naming the owner and evidence for each stage. About 20–40 minutes to read the selected sections and produce the suggested comparison or checklist (editorial estimate; full path duration was not verified). [Plan and implement an identity governance strategy](https://learn.microsoft.com/en-us/training/paths/plan-implement-identity-governance-strategy/)
 
 This is a curated list, not a complete list. Do **not** try to consume every resource. Pick the format that works for you, use the official blueprint and documentation to resolve disagreements, and spend substantial time practicing. Commercial durations and catalogs can change; estimates below are planning aids, not promises.
 

@@ -10,6 +10,11 @@ CentOS Stream 9 package-index URL below now returns missing; its earlier observa
 historical evidence only. The other component-level evidence still does not establish a
 current end-to-end Microsoft SSH Direct support contract. No Hyper-V/Linux lab was executed.
 
+On November 20 the CentOS Stream 9 BaseOS x86_64 repository file list identified
+`hv_sock.ko.xz` in `kernel-modules-core-5.14.0-765.el9`. This establishes
+package contents. Guest configuration and a successful Hyper-V connection still
+require separate evidence. [Official repository metadata](https://mirror.stream.centos.org/9-stream/BaseOS/x86_64/os/repodata/repomd.xml) · [November source check](research/2026-11-20-microsoft-refresh-group-03.md#az-802)
+
 ## What the evidence supports
 
 The AZ-800 and AZ-802 blueprints establish that candidates should understand SSH Direct

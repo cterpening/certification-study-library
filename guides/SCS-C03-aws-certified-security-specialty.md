@@ -313,6 +313,98 @@ AWS began SCS-C03 delivery December 2, 2025. Before using SCS-C02 material, conf
 
 The comparison also lists removals and recategorizations. Do not over-index on deleted C02 detail merely because an older course spends time on it; foundational TCP/IP, TLS, policy structure, and host hardening can remain useful prerequisite knowledge even when no longer named as task detail.
 
+## Key terms and phrases
+
+**Detection**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Finding](#11-design-monitoring-and-alerting-around-decisions) | A report of a suspected security condition, with a resource, time and evidence an analyst can use to decide whether to act. |
+| [Amazon GuardDuty](#11-design-monitoring-and-alerting-around-decisions) | Analyzes supported telemetry for indicators of threats and produces findings for investigation. |
+| [Amazon Inspector](#11-design-monitoring-and-alerting-around-decisions) | Inspects supported workloads for software vulnerabilities or exposure that owners can prioritize and remediate. |
+| [Amazon Macie](#11-design-monitoring-and-alerting-around-decisions) | Discovers and reports sensitive data in S3, helping owners investigate where protected information is stored. |
+| [Amazon CloudWatch](#12-build-a-trustworthy-logging-pipeline) | Collects operational measurements and logs. An operator can graph request latency or alarm on error rates. |
+| [Amazon VPC](#12-build-a-trustworthy-logging-pipeline) | A logically isolated network in an AWS Region, divided into subnets with routes and security controls that shape connectivity. |
+| [Amazon S3](#12-build-a-trustworthy-logging-pipeline) | Object storage organized into buckets and keys. Retrieving a named object and mounting a block device are different access patterns. |
+| [Route 53 Resolver](#12-build-a-trustworthy-logging-pipeline) | Resolves DNS for VPC workloads. Inbound and outbound endpoints connect resolution across network boundaries. |
+| [AWS Transit Gateway](#12-build-a-trustworthy-logging-pipeline) | A regional routing hub connecting VPCs and other networks. Attachments and route tables determine which networks can communicate. |
+| [Amazon Data Firehose](#12-build-a-trustworthy-logging-pipeline) | A managed delivery service that buffers and writes streaming records to supported destinations. |
+| [Amazon EventBridge](#12-build-a-trustworthy-logging-pipeline) | Routes events to targets according to rules, connecting services without requiring each producer to know each consumer. |
+| [Amazon Route 53](#12-build-a-trustworthy-logging-pipeline) | AWS's DNS service. Records and routing policies determine how a name resolves for clients. |
+| [AWS Lambda](#12-build-a-trustworthy-logging-pipeline) | Runs application code in response to an invocation or event. The function owner selects its code, permissions and resource configuration. |
+| [Amazon Athena](#12-build-a-trustworthy-logging-pipeline) | A serverless query service often used to run SQL over data in S3. File format and partition selection affect how much data it reads. |
+
+**Incident Response**
+
+| Term or phrase | Meaning |
+|---|---|
+| [AWS Systems Manager](#21-prepare-and-test-before-the-alert) | A set of operational tools for managed nodes and AWS resources, including inventory, automation and secure remote access. |
+| [AWS Step Functions](#21-prepare-and-test-before-the-alert) | Coordinates a sequence of application steps as a state machine, with explicit choices, retries and failure paths. |
+| [Containment](#22-respond-without-destroying-the-evidence) | Limiting an incident's reach while preserving evidence. Isolating a workload can give investigators time to determine what happened. |
+| [AWS CloudTrail](#22-respond-without-destroying-the-evidence) | Records supported AWS API activity so an investigator can trace who called an operation, when and against which resource. |
+| [Idempotency](#22-respond-without-destroying-the-evidence) | The property that retrying the same intended operation does not apply its effect twice. An order API can remember the request identifier. |
+
+**Infrastructure Security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [AWS WAF](#31-secure-edge-and-application-ingress) | A web application firewall that evaluates web requests against rules before they reach a protected application. |
+| [Amazon CloudFront](#31-secure-edge-and-application-ingress) | A content delivery network that serves requests from edge locations and fetches content from an origin when needed. |
+| [AWS Shield](#31-secure-edge-and-application-ingress) | A service for protecting availability against distributed denial-of-service traffic. Application-level request filtering serves a different purpose. |
+| [Application Load Balancer (ALB)](#31-secure-edge-and-application-ingress) | An HTTP-aware load balancer that can route by properties such as host name or URL path. |
+| [Network Load Balancer (NLB)](#31-secure-edge-and-application-ingress) | A transport-layer load balancer for connections such as TCP flows. Routing a request by HTTP path requires an application-layer decision. |
+| [Container image](#32-harden-compute-containers-serverless-and-genai-workloads) | A packaged file-system and runtime configuration used to start containers. A digest identifies a particular image's contents. |
+| [Least privilege](#32-harden-compute-containers-serverless-and-genai-workloads) | Limiting an identity to the actions and resources required for its work. A read-only reporting job needs no permission to modify its source. |
+| [Amazon Machine Image (AMI)](#32-harden-compute-containers-serverless-and-genai-workloads) | A launch image for EC2 that supplies the operating-system and software baseline along with associated launch information. |
+| [Amazon EC2](#32-harden-compute-containers-serverless-and-genai-workloads) | Compute service for running virtual machines. The customer chooses the instance configuration and manages the guest operating system. |
+| [Amazon ECS](#32-harden-compute-containers-serverless-and-genai-workloads) | An orchestrator that schedules and maintains container tasks from task definitions. |
+| [Amazon EKS](#32-harden-compute-containers-serverless-and-genai-workloads) | Managed Kubernetes on AWS. A team deploys workloads through the Kubernetes API and chooses how their compute capacity is provided. |
+| [Security group](#33-design-and-troubleshoot-network-security-controls) | A stateful network filter associated with resources such as network interfaces. Return traffic for an allowed connection is handled automatically. |
+| [Network access control list (network ACL)](#33-design-and-troubleshoot-network-security-controls) | A stateless subnet filter with ordered rules. The return direction needs its own matching permission. |
+| [AWS Network Firewall](#33-design-and-troubleshoot-network-security-controls) | A managed traffic-inspection service placed in a routed VPC path. Traffic must actually traverse its endpoints for its policy to apply. |
+| [Identity policy](#33-design-and-troubleshoot-network-security-controls) | An IAM policy attached to an identity that describes which actions it can take on which resources, subject to other applicable controls. |
+| [AWS Direct Connect](#33-design-and-troubleshoot-network-security-controls) | A dedicated connectivity option between a customer network and AWS. Routing, redundancy and encryption are separate design decisions. |
+| [VPC endpoint](#33-design-and-troubleshoot-network-security-controls) | A connection from a VPC to a supported service using private connectivity. Access policies and network configuration still apply. |
+| [AWS PrivateLink](#33-design-and-troubleshoot-network-security-controls) | Provides private access to supported services through endpoints without requiring a routed connection between the entire provider and consumer networks. |
+
+**Identity and Access Management**
+
+| Term or phrase | Meaning |
+|---|---|
+| [AWS IAM Identity Center](#41-authenticate-humans-and-workloads) | Connects workforce users and groups to AWS accounts or applications and manages the access assigned to them. |
+| [Federation](#41-authenticate-humans-and-workloads) | Accepting trusted identity assertions from another provider so users or workloads can access resources without a separate long-lived credential. |
+| [Permissions boundary](#42-evaluate-authorization-with-principal-and-policy-context) | An IAM policy that caps the permissions identity-based policies can grant to a user or role. Setting the ceiling does not grant access. |
+| [Role trust policy](#42-evaluate-authorization-with-principal-and-policy-context) | The resource-based policy on a role that specifies which principals may assume it and under which conditions. |
+| [Resource policy](#42-evaluate-authorization-with-principal-and-policy-context) | A policy attached to a resource, such as an S3 bucket, specifying which principals can perform particular actions on it. |
+| [AWS Organizations](#42-evaluate-authorization-with-principal-and-policy-context) | Groups AWS accounts under common governance so a team can apply policies or consolidate billing across accounts. |
+| [AWS Key Management Service (KMS)](#42-evaluate-authorization-with-principal-and-policy-context) | Manages cryptographic keys and controls who may use them for operations such as decrypting a protected data key. |
+| [Service control policy (SCP)](#42-evaluate-authorization-with-principal-and-policy-context) | An AWS Organizations policy that limits which permissions can be used in member accounts. An applicable identity or resource policy must still supply permission. |
+
+**Data Protection**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Encryption in transit](#51-protect-data-in-transit-and-private-paths) | Protecting information while it travels between endpoints, typically through an authenticated encrypted connection. |
+| [Envelope encryption](#52-choose-at-rest-encryption-integrity-retention-and-recovery-controls) | Encrypting data with a data key and protecting that key with another key. Access to the stored ciphertext alone is insufficient to read the data. |
+| [Encryption at rest](#52-choose-at-rest-encryption-integrity-retention-and-recovery-controls) | Protecting stored data with encryption. Who can use the decryption key is part of the access decision. |
+| [S3 lifecycle policy](#52-choose-at-rest-encryption-integrity-retention-and-recovery-controls) | Rules that transition eligible objects to other storage classes or expire them according to criteria such as age or prefix. |
+| [S3 versioning](#52-choose-at-rest-encryption-integrity-retention-and-recovery-controls) | Retains distinct versions of objects in a bucket. A recovery plan must also account for retention and access to older versions. |
+| [AWS Secrets Manager](#53-manage-keys-secrets-certificates-and-sensitive-data) | Stores sensitive values for authorized retrieval and supports rotation workflows, such as replacing a database password. |
+| [Amazon SNS](#53-manage-keys-secrets-certificates-and-sensitive-data) | A publish-subscribe notification service. Publishing once to a topic can deliver the message to multiple subscribed destinations. |
+
+**Security Foundations and Governance**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Organizational unit (OU)](#61-govern-accounts-and-central-security-services) | A branch of the AWS Organizations hierarchy used to group accounts for common policies. |
+| [AWS Control Tower](#61-govern-accounts-and-central-security-services) | A service for setting up and governing a multi-account landing zone, including common controls as accounts are enrolled. |
+| [Service quota](#61-govern-accounts-and-central-security-services) | A limit on resource use or request volume within a specified scope. Reaching it can block work even when funds are available. |
+| [AWS CloudFormation](#62-make-secure-deployment-repeatable) | Creates or updates a group of resources from a template so infrastructure changes can be reviewed and repeated. |
+| [Infrastructure as code (IaC)](#62-make-secure-deployment-repeatable) | A versioned description of infrastructure that tools can build or update. Reviewing the proposed changes helps catch unintended replacements. |
+| [AWS Cloud Development Kit (CDK)](#62-make-secure-deployment-repeatable) | Defines infrastructure with programming-language constructs that synthesize CloudFormation templates. |
+| [AWS Config rule](#63-prove-compliance-with-evidence) | A check that evaluates recorded resource configuration against a condition and reports compliance, giving an owner evidence to investigate. |
+| [AWS Config](#63-prove-compliance-with-evidence) | Records supported resource configurations and can evaluate them against rules, such as whether a required setting is present. |
+
 ## Places to learn
 
 This is **not a complete list**, and it is not meant to be consumed in full. Choose one coherent current path, use first-party documentation to close objective gaps, build the labs, and add one explanation-led practice source. Durations are provider-listed where available and otherwise labeled estimates; verify price, access, runtime, and SCS-C03 alignment before enrolling.

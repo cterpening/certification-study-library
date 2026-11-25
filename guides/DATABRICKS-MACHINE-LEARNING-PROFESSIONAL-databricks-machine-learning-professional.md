@@ -302,6 +302,68 @@ An inference table records request features, model version, probability, decisio
 - [ ] I can load-test latency/error/throughput and attribute canary outcomes.
 - [ ] I can remove endpoints/online tables/test data and retain audit evidence.
 
+## Key terms and phrases
+
+**Model Development**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Latency](#choose-spark-ml-only-when-distribution-helps) | Elapsed time from accepting a request to delivering the defined response, often assessed at a percentile to expose slow cases. |
+| [Data skew](#scale-from-the-limiting-resource) | An unequal distribution of records or workload across keys or partitions that can produce an overloaded partition or long-running tasks. |
+| [Hyperparameter](#scale-from-the-limiting-resource) | A configurable choice outside the fitted parameters, such as a learning rate, selected using a validation process. |
+| [Hyperparameter trial](#tune-with-optuna-or-ray-without-losing-reproducibility) | One evaluation of a chosen training configuration against a defined objective during model tuning. |
+| [Aggregation](#tune-with-optuna-or-ray-without-losing-reproducibility) | Combining a group of records into a summary such as count, sum or average, at a declared grouping level. |
+| [Trial pruning](#tune-with-optuna-or-ray-without-losing-reproducibility) | Stopping an unpromising hyperparameter trial early based on intermediate results so the remaining tuning budget can go to other trials. |
+| [Data leakage](#tune-with-optuna-or-ray-without-losing-reproducibility) | Information unavailable at the time of a real prediction influencing training or evaluation, often producing overly optimistic results. |
+| [Cross-validation](#tune-with-optuna-or-ray-without-losing-reproducibility) | Repeated fitting and evaluation across controlled data splits to estimate variability or choose a procedure. |
+| [Model lineage](#use-advanced-mlflow-records-as-lineage-not-decoration) | The links connecting a model version to the run, data, code and artifacts used to build it. |
+| [Parameter](#use-advanced-mlflow-records-as-lineage-not-decoration) | A value learned as part of fitting a model, such as a regression coefficient or neural-network weight. |
+| [Point-in-time join](#make-features-point-in-time-correct-and-production-consistent) | A feature lookup that selects the latest eligible value at or before the example’s timestamp, preventing use of future values. |
+| [Join](#make-features-point-in-time-correct-and-production-consistent) | Combining records from multiple inputs according to a matching condition. A repeated key can yield more rows than either input leads you to expect. |
+| [Feature](#make-features-point-in-time-correct-and-production-consistent) | An input variable available when a model makes its prediction. Time of availability matters as much as the value. |
+| [Training-serving skew](#make-features-point-in-time-correct-and-production-consistent) | A difference between how features are generated during training and how they are generated or retrieved during prediction. |
+
+**ML Ops**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Deploy-code approach](#prefer-deploy-code-when-environments-own-data-and-controls) | Promoting the training and deployment code so each target environment can create and govern its own model artifacts. |
+| [Data lineage](#prefer-deploy-code-when-environments-own-data-and-controls) | The chain of sources and transformations that produced a dataset or model input, useful for explaining a result or assessing change impact. |
+| [Training set](#prefer-deploy-code-when-environments-own-data-and-controls) | Examples used to learn a model’s parameters and any data-dependent preprocessing. |
+| [Model artifact](#prefer-deploy-code-when-environments-own-data-and-controls) | A saved item associated with a model run or release, such as fitted weights, preprocessing code or evaluation output. |
+| [Unity Catalog](#prefer-deploy-code-when-environments-own-data-and-controls) | Databricks’ governance layer for organizing data and AI assets and managing permissions, lineage and discoverability across supported workloads. |
+| [Catalog](#prefer-deploy-code-when-environments-own-data-and-controls) | The top-level Unity Catalog namespace containing schemas and helping administrators group assets and privileges. |
+| [Experiment](#prefer-deploy-code-when-environments-own-data-and-controls) | A grouping of runs used to compare alternative configurations on consistent data, metrics and evaluation conditions. |
+| [Model registry](#prefer-deploy-code-when-environments-own-data-and-controls) | A system that records model identities and versions alongside information needed to govern, evaluate and deploy them. |
+| [Promotion gate](#automate-retraining-without-automating-approval-away) | A decision point where a candidate model must satisfy predefined checks before it can move toward production. |
+| [Model alias](#automate-retraining-without-automating-approval-away) | A movable name referencing a model version, allowing consumers to use a stable label while promotion changes its target. |
+| [Retraining trigger](#automate-retraining-without-automating-approval-away) | A schedule or detected condition that starts fitting a new candidate model. Promotion should still depend on separate evaluation. |
+| [Champion and challenger](#automate-retraining-without-automating-approval-away) | The deployed or reference model and a candidate evaluated against it on comparable evidence before replacement. |
+| [Data drift](#monitor-data-predictions-outcomes-and-infrastructure) | A change in the distribution of live inputs relative to a reference population. Its effect on model accuracy needs separate evidence. |
+| [Schema](#monitor-data-predictions-outcomes-and-infrastructure) | The declared structure and types expected for stored data. Compare producer and consumer expectations before accepting a changed field. |
+| [Null value](#monitor-data-predictions-outcomes-and-infrastructure) | A marker for a missing or unknown value. Count and comparison operations may treat it differently from a supplied zero. |
+| [Data freshness](#monitor-data-predictions-outcomes-and-infrastructure) | The age or lag of data visible to a consumer relative to the agreed source time or publication expectation. |
+| [Label](#monitor-data-predictions-outcomes-and-infrastructure) | The reference outcome paired with an example for supervised training or evaluation. |
+| [Monitoring baseline](#monitor-data-predictions-outcomes-and-infrastructure) | A reference dataset or time window used for comparison. A shift in current feature values relative to the baseline can prompt investigation before delayed outcome labels arrive. |
+| [Model monitoring](#monitor-data-predictions-outcomes-and-infrastructure) | Collecting operational and quality signals after deployment, with enough context to identify changes and investigate their effects. |
+| [Model version](#monitor-data-predictions-outcomes-and-infrastructure) | An individually identifiable revision of a model that can be evaluated, served and traced back to its training inputs. |
+| [Alert deduplication](#alert-with-an-owner-and-response-path) | Grouping repeated alerts for one continuing model or endpoint condition so responders can track a single incident. |
+
+**Model Deployment**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Canary release](#compare-blue-green-and-canary-releases) | Routing a limited share of live traffic to a candidate model so its behavior can be compared before wider release. |
+| [Blue-green deployment](#compare-blue-green-and-canary-releases) | Maintaining two serving environments and switching traffic between them, retaining a known fallback during rollout. |
+| [Model signature](#make-a-custom-models-input-contract-explicit) | A declared input and output schema used to describe and check the contract a served model expects. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Accuracy](#worked-operational-decisions-and-answers) | For classification, the fraction of predictions matching their reference labels. A majority-class predictor can score highly on imbalanced data. |
+| [Feature lookup](#development) | Connecting an example to its model input values by entity key and, for time-dependent features, the appropriate point in time. |
+
 ## Places to learn
 
 This is **not a complete list**, and it is not meant to be consumed in full. Select the material that closes measured gaps and spend most effort building an observable, tested release system. Public resource availability was checked September 28, 2026. Durations are editorial planning estimates; signed-in Academy and paid lessons were not inspected. O'Reilly access was blocked, and Whizlabs returned an empty body.

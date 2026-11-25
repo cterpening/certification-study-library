@@ -74,7 +74,7 @@
             }
           },
           "official_url": { "type": "string", "format": "uri" },
-          "status": { "enum": ["active", "beta", "legacy", "retirement-announced", "retired"] },
+          "status": { "enum": ["announced", "active", "beta", "legacy", "retirement-announced", "retired"] },
           "retirement_date": { "type": "string", "format": "date" },
           "retirement_scope": { "type": "string", "minLength": 1 },
           "retirement_source_url": { "type": "string", "format": "uri" },

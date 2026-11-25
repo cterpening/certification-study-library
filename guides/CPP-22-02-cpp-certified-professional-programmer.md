@@ -847,6 +847,101 @@ These eight broader learner labs remain proposed. The workbook supplies bounded 
 - [ ] I define, instantiate, specialize, nest, and diagnose function/class templates.
 - [ ] I rechecked the live official page immediately before purchase.
 
+## Key terms and phrases
+
+**Sequence containers and adapters**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Buffer capacity](#choosing-a-sequence) | The number of elements a buffer can hold under its allocation. Appending data requires room within that bound. |
+| [Container capacity](#choosing-a-sequence) | The number of elements a container such as a vector can hold before it needs to obtain more storage. |
+| [Reallocation](#choosing-a-sequence) | Replacing a container’s storage with a different allocation, which can invalidate pointers, references and iterators into the old storage. |
+| [List container](#choosing-a-sequence) | A linked sequence supporting insertion or removal at known positions without shifting other elements. |
+| [Iterator invalidation](#invalidation-is-operation-specific) | A container operation makes a previously obtained iterator unusable. Which iterators are affected depends on the operation and container. |
+| [Reference](#invalidation-is-operation-specific) | An alias bound to an existing object or function. Updating a writable reference changes its referent. |
+| [Iterator](#invalidation-is-operation-specific) | A position-like object through which an algorithm can traverse elements within the operations its category permits. |
+| [Deque](#invalidation-is-operation-specific) | A double-ended sequence that supports efficient insertion or removal at either end. |
+| [Container adapter](#adapters) | An interface such as a stack or queue that restricts how callers access an underlying container. |
+| [Stack](#adapters) | An adapter where the most recently added item is the next accessible item. |
+| [Queue](#adapters) | An adapter that inserts at the back and removes from the front, preserving arrival order. |
+| [Priority queue](#adapters) | An adapter that exposes the element with highest priority according to its ordering rule. |
+
+**Associative containers**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Associative container](#2-associative-containers-1325) | A container organized for key-based access, such as a set of keys or a map from keys to values. |
+| [Pointer dereference](#2-associative-containers-1325) | Using a pointer to access its target. The target must still exist and be valid for the attempted access. |
+| [Const qualification](#2-associative-containers-1325) | A restriction on modification through the qualified expression or access path. |
+| [Map](#2-associative-containers-1325) | An associative container mapping unique keys to values according to its comparison rule. |
+| [Multiset](#2-associative-containers-1325) | An ordered associative container that can retain several equivalent keys. |
+
+**Non-modifying sequence algorithms**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Predicate](#3-non-modifying-sequence-algorithms-1325) | A callable that tests elements against a condition, for example to find the first record meeting a threshold. |
+| [Return value](#3-non-modifying-sequence-algorithms-1325) | The value a function provides to its caller through its return operation under the declared return type. |
+| [Range](#3-non-modifying-sequence-algorithms-1325) | A pair of positions delimiting elements from the first through the one before the last. |
+
+**Modifying sequence algorithms**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Logical end](#4-modifying-sequence-algorithms-1325) | The iterator returned by an algorithm such as remove to delimit retained elements. Erasing the remaining suffix changes the container’s size. |
+| [Partition](#4-modifying-sequence-algorithms-1325) | Rearranging a range into elements satisfying a predicate and elements that do not. |
+
+**Sorting and binary search**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Lower bound](#5-sorting-and-binary-search-165) | The first position in an appropriately ordered range whose element does not precede the search value. |
+| [Ordering predicate](#5-sorting-and-binary-search-165) | A comparison rule that must give consistent ordering for sorting and ordered containers, including a sound definition of equivalent values. |
+| [Stable sort](#5-sorting-and-binary-search-165) | Sorting that retains the input order of elements equivalent under the comparison rule. |
+| [Upper bound](#5-sorting-and-binary-search-165) | The first position in an appropriately ordered range whose element follows the search value. |
+
+**Merge, set, and min/max algorithms**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Set intersection](#6-merge-set-and-minmax-algorithms-165) | An algorithm that reads two sorted ranges and emits their common elements, preserving the smaller multiplicity for equivalent values. |
+| [Sorted merge](#6-merge-set-and-minmax-algorithms-165) | Combining two sorted input ranges into one sorted output. Equal elements from both inputs remain in the result. |
+| [Set difference](#6-merge-set-and-minmax-algorithms-165) | Keeping the sorted left input’s occurrences that the right input does not match. Three copies on the left and one on the right leave two in the result. |
+
+**STL function objects and utilities**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Compiler](#7-stl-function-objects-and-utilities-7) | The program translating a translation unit and checking that it meets the selected language rules. |
+| [Function object](#7-stl-function-objects-and-utilities-7) | An object callable with function-call syntax, often carrying state used by an algorithm. |
+
+**Advanced I/O**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Stream formatting flags](#8-advanced-io-7) | Settings such as the numeric base govern how a stream prints later values. A helper that temporarily switches to hexadecimal should restore the caller’s flags. |
+| [Input stream](#8-advanced-io-7) | A source from which a program extracts data. A failed read must be distinguished from a valid value. |
+| [Destructor](#8-advanced-io-7) | A special member function run when an object is destroyed, often releasing resources it owns. |
+| [Stream state](#8-advanced-io-7) | Flags recording conditions such as end-of-input or a failed extraction so code can decide whether to continue. |
+
+**Templates**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Template](#9-templates-7) | A description from which the compiler can form functions or classes for particular template arguments. |
+| [Header](#9-templates-7) | A file included during preprocessing to make declarations, type definitions or templates available to a translation unit. |
+| [Definition](#9-templates-7) | A declaration that supplies the actual entity, such as a function body or an object with storage. |
+| [Structure member](#9-templates-7) | A named component of a structure or class instance, such as the quantity field in an inventory record. |
+| [Overload](#9-templates-7) | A same-name function with a distinct parameter list. The compiler selects a viable candidate for a given call. |
+| [Namespace qualification](#9-templates-7) | Identifying a name with its enclosing namespace, for example selecting a standard library entity using std. |
+| [Template specialization](#9-templates-7) | An implementation supplied for a particular template argument or qualifying set of arguments. |
+
+**Original executable workbook**
+
+| Term or phrase | Meaning |
+|---|---|
+| [End of file (EOF)](#original-executable-workbook) | An indication that a read reached the end of available input. Check the read result before processing the next value. |
+
 ## Places to learn
 
 This is not a complete list, and it is not meant to be consumed in full. Pick one aligned primary path, then use a current reference while writing algorithm-heavy programs. Always reconcile a resource's C++ version with the active CPP-22-02 blueprint, particularly for removed `ptr_fun` examples.

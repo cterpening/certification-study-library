@@ -201,6 +201,79 @@ These are original prompts, not Fortinet exam questions.
 - Re-run IaC from clean state, review the proposed changes, prove application/security outcomes, and tear down safely.
 - Practice diagnosing route, health, IAM/API, SDN-connector, state/symmetry, and application failures without broad bypasses.
 
+## Key terms and phrases
+
+**Security solutions deployment**
+
+| Term or phrase | Meaning |
+|---|---|
+| [East-west traffic](#protect-iaas-with-deliberate-insertion) | Traffic between workloads or network segments within an environment, such as an application tier calling a database. |
+| [Service insertion](#protect-iaas-with-deliberate-insertion) | Placing inspection in a traffic path so the intended flows actually pass through the security service. |
+| [Symmetric routing](#protect-iaas-with-deliberate-insertion) | A design in which both directions of a connection cross the required stateful inspection point. |
+| [Availability](#protect-iaas-with-deliberate-insertion) | Timely and reliable access to a resource by authorized users. A running server may still be unavailable to the business if a required dependency fails. |
+| [Availability zone](#protect-iaas-with-deliberate-insertion) | An isolated location within a provider region used to reduce correlated failures when resources are placed across zones. |
+| [FortiGate](#protect-iaas-with-deliberate-insertion) | The Fortinet firewall platform that applies routing, access policy and security inspection to traffic traversing its interfaces. |
+| [Infrastructure as a service (IaaS)](#protect-iaas-with-deliberate-insertion) | A cloud model providing infrastructure such as virtual machines and networks. The customer typically manages the guest operating system and application. |
+| [Load balancer](#protect-iaas-with-deliberate-insertion) | A component that sends eligible requests or connections to selected backends using health and distribution policy. |
+| [TLS termination](#protect-applications-and-caas) | Ending the client’s encrypted session at a proxy or load balancer. The connection onward to the backend has its own protection requirements. |
+| [Cloud-native application protection platform (CNAPP)](#protect-applications-and-caas) | A set of integrated cloud security capabilities that relates build-time, configuration, entitlement and runtime findings for prioritization. |
+| [Control plane](#protect-applications-and-caas) | The part of a network system that determines how traffic should be forwarded. The data plane applies those decisions to packets. |
+| [Deployment mode](#protect-applications-and-caas) | How a security service is positioned relative to the traffic it observes or controls. Inline and out-of-path placement offer different enforcement options. |
+| [Fail closed](#protect-applications-and-caas) | A failure behavior in which access is denied or traffic stops when the enforcing component cannot make the required decision. |
+| [Least privilege](#protect-applications-and-caas) | Giving an identity only the permissions needed for its task, for as long as it needs them. |
+| [Offboarding](#protect-applications-and-caas) | Ending a customer’s service by revoking access, resolving data retention or transfer and confirming that collection and automation have stopped. |
+| [Web application firewall (WAF)](#protect-applications-and-caas) | A control that examines HTTP traffic against application-specific rules and can block or flag suspicious requests. |
+| [High availability (HA)](#integrate-cloud-native-tools) | A deployment that lets a peer take over when a device fails. The peer still needs working network paths and a valid configuration. |
+| [Region](#integrate-cloud-native-tools) | A provider-defined geographical area containing cloud infrastructure. An application’s recovery design must account for dependencies in the selected region. |
+| [Service account](#integrate-cloud-native-tools) | A nonhuman identity used by software or automation. Scope, credential lifecycle and ownership govern what happens when it is compromised or retired. |
+| [Tenant](#integrate-cloud-native-tools) | An administrative or customer boundary in a shared service. Data, identities, configurations and actions must stay within the intended tenant. |
+
+**Automation tools**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Infrastructure as code (IaC)](#use-infrastructure-as-code-as-a-controlled-system) | A versionable description of infrastructure that tooling uses to provision or change resources. |
+| [Idempotence](#use-infrastructure-as-code-as-a-controlled-system) | Making an operation safe to repeat without accumulating unintended effects. A retried request to create one case should still yield one case. |
+| [Rollback](#use-infrastructure-as-code-as-a-controlled-system) | Returning a change to a known acceptable state when results do not meet defined conditions. A valid rollback also accounts for data changed in the meantime. |
+| [Azure Resource Manager (ARM)](#use-native-templates-appropriately) | Azure’s management and deployment layer, including declarative templates for provisioning related resources. |
+| [Build provenance](#use-native-templates-appropriately) | Evidence about where an artifact originated, which inputs and process produced it and who or what performed the build. |
+| [Canary deployment](#use-native-templates-appropriately) | Deploying a change to a limited, representative population first and evaluating its behavior before expanding exposure. |
+| [CloudFormation](#use-native-templates-appropriately) | AWS’s service for describing and provisioning related cloud resources as stacks from versionable templates. |
+
+**Cloud infrastructure monitoring**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Flow log](#correlate-aws-and-azure-signals) | Metadata summarizing network exchanges, such as endpoints and a recorded disposition. It does not contain full packet contents. |
+| [CloudTrail](#correlate-aws-and-azure-signals) | AWS records of account and API activity used to investigate who requested a management action and how it was processed. |
+| [CloudWatch](#correlate-aws-and-azure-signals) | An AWS service for collecting and working with metrics, logs and alarms from resources or applications. |
+| [Encryption](#correlate-aws-and-azure-signals) | A reversible transformation that protects readable data using a key. Someone with the appropriate key can recover the original. |
+| [VPC flow logs](#correlate-aws-and-azure-signals) | Network flow metadata for monitored cloud interfaces or networks. The summary does not include an entire packet payload. |
+| [Telemetry](#turn-telemetry-into-service-evidence) | Logs, events and measurements supplied by managed systems. Customer attribution and collection health determine whether the records are usable. |
+
+**Troubleshooting**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Firewall policy](#isolate-aws-connectivity-problems) | A rule that identifies matching traffic and determines its treatment. Rule order can change which action applies. |
+| [Longest-prefix match](#isolate-aws-connectivity-problems) | The forwarding rule that selects the most specific matching destination prefix. For 10.2.3.4, a matching /24 wins over a /16. |
+| [Packet capture](#isolate-aws-connectivity-problems) | An observation of traffic visible at a particular interface or tap. Position, direction and capture filters determine what it can show. |
+| [Security group](#isolate-aws-connectivity-problems) | An access rule set attached to supported cloud resources or interfaces. The platform determines its evaluation and state-tracking rules. |
+| [Health probe](#isolate-azure-connectivity-problems) | A periodic check used to decide whether a service instance is fit to receive traffic. |
+| [Next hop](#isolate-azure-connectivity-problems) | The adjacent router or forwarding destination selected for the next stage of a packet’s path. |
+| [Peering](#isolate-azure-connectivity-problems) | A connection between otherwise distinct networks that permits configured traffic to flow using their routing and security controls. |
+| [Dynamic address object](#diagnose-sdn-connectors) | A policy object whose membership follows discovered cloud resources or tags. Stale discovery can leave the firewall with the wrong membership. |
+| [Authentication](#diagnose-sdn-connectors) | The check that establishes who a user or device is. Authorization determines what that identity may do next. |
+| [Authorization](#diagnose-sdn-connectors) | Determining whether a given identity may perform a specific action on the particular resource requested. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Failover](#dual-cloud-application) | Transfer of service to another HA member after a failure. Some sessions may need to reconnect. |
+| [Autoscaling](#autoscaling-brownout) | Adjusting deployed capacity according to a policy and observed demand, such as adding instances when a sustained load threshold is met. |
+| [Horizontal scaling](#autoscaling-brownout) | Changing the number of service instances. The workload and its dependencies must support distributing requests among them. |
+
 ## Places to learn
 
 This is not a complete list, and it is not a prescription to consume everything. Start with the official exam contract; then select only current documentation, cloud guidance, and labs that close measured gaps. Times are publisher-listed where visible or clearly labeled estimates.

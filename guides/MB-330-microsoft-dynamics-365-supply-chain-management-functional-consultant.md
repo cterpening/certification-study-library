@@ -7,17 +7,19 @@ generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
 last_verified: 2026-10-28
-upcoming_change_status: none-announced
-upcoming_change_checked: 2026-10-28
+upcoming_change_status: retirement-announced
+upcoming_change_checked: 2026-11-20
 ---
 
 # MB-330 Microsoft Dynamics 365 Supply Chain Management Functional Consultant Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-02.md#mb-330) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mb-330-coverage-record). Source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-330) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-05.md#mb-330)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-02.md#mb-330) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mb-330-coverage-record). Source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-330) is authoritative.
 
 **Current baseline:** Skills measured as of October 21, 2026.<br>
 **Blueprint reconciliation (October 28, 2026):** The October 21, 2026 English outline is the accepted current scope. The current exact outline is mapped to the teaching, including Planning Optimization. The earlier June snapshot used condensed manual wording; a larger extracted bullet count does not by itself prove every bullet is a newly added capability. Domain weights remain unchanged. Historical objective bytes and dated reviews are preserved. Recheck localized appointment timing separately.<br>
-**Lifecycle:** The [Dynamics 365 Supply Chain Management Functional Consultant Associate credential](https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-supply-chain-management/) is active. The exam is 100 minutes, offered in English and Japanese, has no announced retirement date, and offers a free Practice Assessment.<br>
+**Lifecycle.** The [Dynamics 365 Supply Chain Management Functional Consultant Associate credential](https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-supply-chain-management/) and MB-330 retire February 1, 2027. The successor, AB-330, currently has its own beta outline and scheduling. [November source notes](../docs/research/2026-11-20-microsoft-refresh-group-05.md#mb-330).<br>
 **Freshness note:** The current October 21 outline governs preparation; June 2025 scope and earlier appointment guidance are historical. Recheck current Planning Optimization, warehouse mobile, Copilot and product-specific behavior independently of the exam-date change.<br>
 **Official source:** [MB-330 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-330)
 
@@ -206,6 +208,8 @@ Mobile-device menu items define tasks and work-creation behavior; menus expose t
 Test scanning, GS1 parsing, wrong item/location/license plate, short pick, damaged stock, offline/network interruption, duplicate submit and session recovery. A clean desktop transaction is not evidence the handheld flow works on the warehouse floor.
 
 ### Keep mobile identity and software support current
+
+**Practice check.** The November 9 Warehouse Management mobile app release 4.2.3.0 fixed Android shared-device sign-out so a new worker is not automatically signed in as the previous worker. In a device-handoff exercise, capture the installed build and verify the second worker's identity. [What's new or changed in the Warehouse Management mobile app - Supply Chain Management | Dynamics 365 | Microsoft Learn](https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-app-whats-new)
 
 Use current [installation and connection guidance](https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/install-configure-warehouse-management-app) and the [user-based authentication FAQ](https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-app-user-based-auth-faq). Microsoft recommends the interactive username/password authentication option; it is not an instruction to embed passwords in connection JSON. Microsoft-managed app registration can avoid a custom registration in the supported flow. Service-based authentication for this mobile app is deprecated. Device-code flow remains available for existing deployments but is not the recommended default; do not weaken tenant security to make an older tutorial work.
 
@@ -417,7 +421,81 @@ These ten labs require an appropriate nonproduction environment and permissions.
 
 The June 20, 2025 snapshot is historical; the current October 21 outline is accepted after full mapping. Earlier future-scope work is preserved in the [deep-review record](../docs/research/2026-09-27-mb-330-deep-review.md). Microsoft Learn paths, product docs and MIT-licensed course labs support behavior but may include adjacent content or UI drift. Commercial assessment/training is optional and never defines scope. All questions here are original and conceptual; no exam dumps or recalled items were used.
 
+## Key terms and phrases
+
+**Implement product information management**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Product variant](#model-products-and-variants) | A specific combination of a product master's dimensions, such as size and color, that can be stocked and sold. |
+| [Product master](#model-products-and-variants) | The shared product definition from which variants are generated using product dimensions. |
+| [Released product](#model-products-and-variants) | A product made available for use and configuration in a specific legal entity. |
+| [BOM version](#model-products-and-variants) | The applicable component structure for a particular item and set of conditions, such as date or quantity. |
+| [Product dimension](#model-products-and-variants) | An attribute such as configuration, size, color or style that differentiates variants of a product master. |
+| [Reservation](#configure-inventory-behavior) | The allocation of inventory or expected supply to a demand so competing orders cannot freely consume it. |
+| [Tracking dimension](#configure-inventory-behavior) | An attribute such as batch or serial number used to trace identifiable stock through inventory transactions. |
+| [Storage dimension](#configure-inventory-behavior) | An attribute such as site, warehouse or location specifying where stock is held. |
+| [Inventory status](#configure-inventory-behavior) | A dimension indicating a stock condition that may affect reservation, picking and availability. |
+| [Inventory costing method](#manage-cost-and-commercial-price) | The rule used to value receipts, issues and remaining stock, such as FIFO or weighted average. |
+| [Trade agreement](#manage-cost-and-commercial-price) | A pricing or discount arrangement that applies to eligible purchases or sales under defined conditions. |
+| [Cost calculation](#manage-cost-and-commercial-price) | An evaluation of applicable materials, operations and costing data to determine a product's estimated cost. |
+
+**Implement inventory, quality, and asset management**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Transfer order](#process-and-reconcile-inventory) | A document tracking inventory sent between warehouses, including shipment and receipt. |
+| [Cycle counting](#process-and-reconcile-inventory) | Counting selected stock and comparing it with the inventory record so discrepancies can be investigated. |
+| [Quality order](#govern-quality) | A record of the tests, sample and results used to decide how inspected inventory should be handled. |
+| [Sample plan](#govern-quality) | The configured rule determining what quantity is selected for quality testing. |
+| [Inventory blocking](#separate-the-inspected-quantity-from-the-blocked-quantity) | Restricting the use of a quantity of stock, for example while inspection results are pending. |
+| [Blocked quantity](#separate-the-inspected-quantity-from-the-blocked-quantity) | The amount of inventory restricted from use, which can differ from the physical sample tested. |
+| [Maintenance work order](#configure-and-operate-asset-maintenance) | A record defining and tracking maintenance activity on an asset, including required tasks and resources. |
+
+**Implement and manage supply chain processes**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Purchase requisition](#run-procure-to-receive) | An internal request for goods or services that can be reviewed before a purchase order goes to a supplier. |
+| [Request for quotation (RFQ)](#run-procure-to-receive) | A request for suppliers to submit offers so a buyer can compare commercial and delivery terms. |
+| [Purchase agreement](#run-procure-to-receive) | Terms negotiated with a vendor for purchases over time, from which individual orders can be placed. |
+| [Purchase order (PO)](#run-procure-to-receive) | The document specifying goods or services, quantities, prices and delivery terms for a particular supplier transaction. |
+| [Product receipt](#run-procure-to-receive) | The posted record of the quantity actually received against a purchase order. |
+| [Landed cost](#implement-landed-cost) | The purchase price plus costs allocated to bringing goods to their destination. A $500 shipment with $50 freight allocated equally across 100 identical units lands at $5.50 per unit. |
+| [Voyage](#implement-landed-cost) | A grouping used in landed cost to track goods, shipping legs and associated costs during transit. |
+| [Goods in transit](#implement-landed-cost) | Inventory moving under a shipment or voyage whose financial and physical status must be reconciled. |
+| [Sales order](#run-order-to-delivery) | The transaction recording customer demand, quantities, prices and delivery requirements. |
+| [Delivery promise](#run-order-to-delivery) | The date communicated for fulfilling customer demand based on the selected availability or capacity calculation. |
+
+**Implement warehouse and transportation management**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Work template](#build-the-warehouse-control-stack) | A configuration that determines which warehouse work steps are created and in what sequence. |
+| [Location directive](#build-the-warehouse-control-stack) | A rule used to find eligible warehouse locations for a particular work operation. |
+| [Wave](#build-the-warehouse-control-stack) | A grouping and processing step that releases eligible warehouse demand into executable work. |
+| [Load](#build-the-warehouse-control-stack) | A grouping of goods planned to travel together on a transportation movement. |
+| [Warehouse work](#build-the-warehouse-control-stack) | The executable pick, put or related tasks generated for workers from the warehouse configuration. |
+| [Mobile device menu item](#configure-the-mobile-execution-contract) | A configured work entry point controlling the task a warehouse worker can perform on the mobile interface. |
+| [Freight reconciliation](#plan-transportation-and-reconcile-freight) | Comparing carrier charges or invoices with expected shipment costs and resolving discrepancies. |
+
+**Implement master planning**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Action message](#configure-coverage-and-planning-behavior) | A planning suggestion to change existing supply, such as moving a date or modifying a quantity. |
+| [Planned order](#interpret-and-firm-a-plan) | A proposed supply order calculated by planning to cover demand within the planning assumptions. |
+| [Firming](#interpret-and-firm-a-plan) | Converting selected planned supply into an actual purchase, production or transfer order. |
+| [Pegging](#interpret-and-firm-a-plan) | The planning relationship that connects a demand quantity to the supply expected to cover it. |
+| [Item coverage](#interpret-and-firm-a-plan) | Planning settings that determine how supply is proposed for an item at the relevant dimensions. |
+| [Time fence](#interpret-and-firm-a-plan) | A planning horizon within which specified calculations or planning behaviors apply. |
+| [Lead time](#interpret-and-firm-a-plan) | The elapsed time assumed for procuring, producing or moving the item before it is available. |
+| [Safety stock](#interpret-and-firm-a-plan) | An inventory buffer used in planning to address demand or supply uncertainty. |
+| [Freeze time fence](#protect-confirmed-promises-without-freezing-everything) | A planning horizon that limits eligible changes to existing planned supply to preserve short-term stability. |
+
 ## Places to learn
+
+**Suggested practice.** Use one receipt to trace where warehouse setup gives way to inbound work and connect that work to the later outbound process. About 20–40 minutes to read the selected sections and produce the suggested comparison or checklist (editorial estimate; full path duration was not verified). [Configure and work with warehouse management in Dynamics 365 Supply Chain Management](https://learn.microsoft.com/en-us/training/paths/configure-work-warehouse-management-dyn365-supply-chain-mgmt/)
 
 This is not a complete list and is not meant to be consumed in full. Choose one primary route, build complete product-to-plan and order-to-warehouse journeys, and add another resource only for a measured gap.
 

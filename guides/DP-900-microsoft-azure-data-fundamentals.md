@@ -13,7 +13,9 @@ upcoming_change_checked: 2026-10-28
 
 # DP-900 Microsoft Azure Data Fundamentals Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-04.md#dp-900) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-900-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-900) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-02.md#dp-900)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles this complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-04.md#dp-900) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-900-coverage-record). Source limits and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-900) is authoritative.
 
 **Current baseline:** Skills measured as of July 21, 2026<br>
 **Upcoming blueprint change:** None announced on the official study guide as checked October 28, 2026. Current detailed objective text is unchanged.<br>
@@ -289,6 +291,8 @@ The APIs support different programming models. At fundamentals level, recognize 
 ---
 
 #### Keep API names and product families separate
+
+**Practice check.** Interpret Azure Cosmos DB for MongoDB (vCore) in older material as the service now named Azure DocumentDB with MongoDB compatibility. When a scenario names the request-unit-based service, keep its product name and throughput model separate. [Service release notes - Azure DocumentDB | Microsoft Learn](https://learn.microsoft.com/en-us/azure/documentdb/release-notes)
 
 | Cosmos DB API | Familiar data/access model |
 |---|---|
@@ -768,7 +772,67 @@ The local SQLite exercise was executed during this review. Azure/Fabric deployme
 
 The [credential page](https://learn.microsoft.com/en-us/credentials/certifications/azure-data-fundamentals/) lists a 45-minute assessment and 13 languages at this review. Fundamentals certifications do not expire under the [expiration policy](https://learn.microsoft.com/en-us/credentials/support/certification-expiration-policy). Course completion is distinct from earning the certification.
 
+## Key terms and phrases
+
+**Core data concepts**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Semi-structured data](#data-representation) | Data with recognizable fields or tags whose shape can vary from record to record, such as JSON documents. |
+| [Structured data](#data-representation) | Data arranged in a predefined schema, such as rows of orders with consistently typed columns. |
+| [Unstructured data](#data-representation) | Content whose meaning is not organized into a fixed set of fields, such as photographs or recorded conversations. |
+| [Online transaction processing (OLTP)](#operational-and-analytical-workloads) | A workload that records individual business transactions. Checking stock and recording a new order are typical operations. |
+| [Online analytical processing (OLAP)](#operational-and-analytical-workloads) | A workload that summarizes many records to answer questions. Comparing monthly sales totals by store uses the orders recorded by the transactional system. |
+| [Transaction](#operational-and-analytical-workloads) | One or more related operations processed as a unit to preserve a business rule. |
+| [Database administrator](#data-roles) | The role responsible for database operation, access, performance, protection and recovery. |
+| [Data engineer](#data-roles) | The role that builds and operates pipelines and data stores used for analysis. |
+| [Data analyst](#data-roles) | The role that models business data and interprets it through reports, visualizations and measures. |
+
+**Relational data**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Primary key](#tables-keys-and-relationships) | The column or combination of columns that uniquely identifies each row in a table. |
+| [Foreign key](#tables-keys-and-relationships) | A column or set of columns that refers to a key in another table or the same table. |
+| [Relational table](#tables-keys-and-relationships) | A collection of rows structured by the same column definitions and constraints. |
+| [Normalization](#tables-keys-and-relationships) | Organizing related facts in separate tables to limit repetition and inconsistent updates. |
+| [View](#sql-and-database-objects) | A named query that exposes its result in a table-like form. |
+| [Index](#sql-and-database-objects) | A structure that provides an access path to data, potentially improving reads at a cost to storage and writes. |
+| [SQL](#sql-and-database-objects) | Structured Query Language, used to define, query and change data in relational systems. |
+| [Azure SQL Database](#azure-relational-services) | A managed relational database service in which Azure handles the underlying infrastructure and many database operations. |
+| [Managed instance](#azure-relational-services) | An Azure SQL deployment with instance-level SQL Server capabilities where Microsoft manages the underlying platform. |
+
+**Non-relational data**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Blob storage](#azure-storage-options) | Object storage for content such as images, logs or backups accessed by name within a container. |
+| [Azure Files](#azure-storage-options) | A managed file-share service that applications and users can access through supported file-sharing protocols. |
+| [Queue storage](#azure-storage-options) | A service that holds messages so a producer and a consuming worker can operate independently. |
+| [Document database](#azure-cosmos-db) | A database that stores records as documents whose fields can represent nested structures. |
+| [Partition key](#cosmos-db-decisions-that-explain-the-service) | The value Cosmos DB uses to group items into logical partitions, affecting targeted reads and distribution of load. |
+| [Request unit (RU)](#cosmos-db-decisions-that-explain-the-service) | Cosmos DB's unit for expressing the resource cost of a database operation. |
+
+**Analytics workloads**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Data pipeline](#the-analytics-pipeline) | A coordinated sequence that moves, transforms or loads data from source systems to consumers. |
+| [Extract, transform, load (ETL)](#the-analytics-pipeline) | A pipeline pattern that reshapes source data before loading it into the destination. |
+| [Batch processing](#batch-and-streaming) | Collecting data and processing it together in bounded groups, often on a schedule. |
+| [Stream processing](#batch-and-streaming) | Processing arriving events continuously, often producing results for moving time windows. |
+| [Data warehouse](#analytical-stores-and-microsoft-services) | A store organized for analytical queries over integrated, structured data. |
+| [Data lake](#analytical-stores-and-microsoft-services) | A storage environment for retaining data in multiple formats, often before its final analytical structure is known. |
+| [Lakehouse](#analytical-stores-and-microsoft-services) | An environment combining file-based data lake storage with table and analytical capabilities. |
+| [Power BI report](#power-bi-concepts) | An interactive collection of pages and visuals built on a semantic model. |
+| [Dashboard](#power-bi-concepts) | A single canvas in the Power BI service that presents pinned tiles for monitoring selected indicators. |
+| [Star schema](#model-before-decorating) | A model with fact tables for events or measurements connected to dimension tables used for filtering and grouping. |
+| [Measure](#model-before-decorating) | A DAX expression calculated when a query runs, using the filters in effect at that moment. |
+| [Semantic model](#create-and-govern-the-semantic-model-explicitly) | An analytical representation of tables, relationships and calculations that gives reports consistent business meanings. |
+
 ## Places to learn
+
+**Suggested practice.** Give a reason to choose an Azure SQL option and a reason to choose a managed open-source database for the same broad relational workload. 35 minutes for the module (Microsoft Learn, 6 units). [Explore relational database services in Azure](https://learn.microsoft.com/en-us/training/modules/explore-provision-deploy-relational-database-offerings-azure/)
 
 This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Pick the formats that fit you. Times are approximate consumption time at normal speed; labs, note-taking, review, and independent practice add time.
 

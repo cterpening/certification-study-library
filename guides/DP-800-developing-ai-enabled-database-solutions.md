@@ -13,7 +13,11 @@ upcoming_change_checked: 2026-10-28
 
 # DP-800 Developing AI-Enabled Database Solutions Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-02.md#dp-800) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-800-coverage-record). Source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-800) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-02.md#dp-800)
+
+**English outline comparison, November 20, 2026.** The current page displays March 12, while the accepted October 19 outline uses different nearest-neighbor terminology. Both have 73 tasks. KNN describes the neighbors requested. Compare exact exhaustive and approximate indexed retrieval over the same eligible rows using recall and latency. The March edition also names change event streaming for maintaining embeddings. [Compared editions](../docs/research/2026-11-20-microsoft-refresh-group-02.md#dp-800).
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-02.md#dp-800) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-800-coverage-record). Source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-800) is authoritative.
 
 **Current baseline:** Skills measured as of October 19, 2026.<br>
 **Blueprint reconciliation (October 28, 2026):** The October 19, 2026 English outline is the accepted current scope. The revised outline uses columnstore and Copilot naming and ANN versus KNN terminology. CES remains in the general data-change objective but is omitted from the embedding-maintenance-method bullet; these are separate scope observations. Domain weights are unchanged. Historical objective bytes and dated reviews are preserved. Recheck localized appointment timing separately.<br>
@@ -21,6 +25,8 @@ upcoming_change_checked: 2026-10-28
 **Exam page:** [Microsoft Certified: SQL AI Developer Associate](https://learn.microsoft.com/en-us/credentials/certifications/developing-ai-enabled-database-solutions/) · 120-minute assessment · ten listed languages: English, Japanese, Simplified and Traditional Chinese, Korean, German, French, Italian, Brazilian Portuguese and Spanish. Check language-specific revision timing when booking.<br>
 **Official course:** [DP-800T00 Develop AI-enabled database solutions](https://learn.microsoft.com/en-us/training/courses/dp-800t00) · three instructor-led days.<br>
 **Practice:** Microsoft's free Practice Assessment is on [AI Skills Navigator](https://aiskillsnavigator.microsoft.com/credentials/cert-f7c226fff388981b97e2bafd239786aba2d62e74bf8e3d50b04d341899bd55f4); sign-in is required to launch it.
+
+**Practice check.** For an Azure SQL Managed Instance vector design, record the update policy before promising approximate indexes. Microsoft lists vector indexes as generally available on Always up to date and in preview on the SQL Server 2025 policy. Exact distance search offers a reference for assessing approximate recall. [Source notes and publisher link](../docs/research/2026-11-20-microsoft-refresh-group-02.md#dp-800)
 
 ## How to use this guide
 
@@ -1152,9 +1158,74 @@ These are original prompts, not recalled exam questions. Answer each with requir
 
 ---
 
+## Key terms and phrases
+
+**Design and develop database solutions (35–40%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Data type](#choose-data-types-and-row-shape) | The permitted representation and operations for a column, such as an integer, decimal value or date. |
+| [Columnstore index](#choose-rowstore-columnstore-and-memory-optimized-structures) | An index that stores values by column in compressed segments, which can reduce the work needed for large analytical scans. |
+| [Rowstore](#choose-rowstore-columnstore-and-memory-optimized-structures) | A storage organization that keeps row values together and often fits selective transactional reads and writes. |
+| [Memory-optimized table](#choose-rowstore-columnstore-and-memory-optimized-structures) | A table designed for in-memory processing under supported platform, durability and concurrency rules. |
+| [Primary key](#enforce-domain-and-relationship-integrity) | The column or combination of columns that uniquely identifies each row in a table. |
+| [Foreign key](#enforce-domain-and-relationship-integrity) | A column or set of columns that refers to a key in another table or the same table. |
+| [Check constraint](#enforce-domain-and-relationship-integrity) | A predicate enforced when data is written to reject values or combinations that violate a business rule. |
+| [Partitioning](#partition-for-management-not-automatic-speed) | Dividing a table or index into defined ranges or groups for management and eligible query elimination. |
+| [Temporal table](#temporal-tables) | A system-versioned table that maintains row history so earlier states can be queried by time. |
+| [Ledger table](#ledger-tables) | A table with cryptographic evidence that lets a verifier check for tampering with its recorded history. |
+| [Digest](#ledger-tables) | A cryptographic summary used by ledger verification to check records against an independently retained reference. |
+| [Graph edge](#graph-tables) | A record that represents a relationship between node records in a graph model. |
+| [External table](#external-tables) | A relational definition that exposes data held outside the database's local table storage. |
+| [JSON document](#design-native-json-storage-and-access) | A structured text or native JSON value made from objects, arrays and scalar values that can be queried by path. |
+| [View](#views-and-functions) | A named query that exposes a relational result without requiring each caller to repeat its SQL. |
+| [Stored procedure](#stored-procedures-and-triggers) | A named executable database routine that accepts parameters and can encapsulate queries or changes. |
+| [Trigger](#stored-procedures-and-triggers) | Code invoked automatically in response to a supported database event, such as a data modification. |
+| [Common table expression (CTE)](#common-table-expressions) | A named query expression used within a statement, including recursive forms for eligible hierarchies. |
+| [Window function](#window-functions) | A calculation over a related set of rows that preserves individual result rows, such as a running total. |
+| [Window frame](#window-functions) | The subset of rows within an ordered partition used by a window calculation for the current row. |
+
+**Secure, optimize, and deploy database solutions (35–40%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Dynamic data masking](#dynamic-data-masking) | Presentation of obscured column values to callers lacking unmasking privileges while retaining the underlying stored values. |
+| [Row-level security](#row-level-security) | A policy that filters rows or blocks writes according to a predicate evaluated for the caller. |
+| [Filter predicate](#row-level-security) | A row-level security condition controlling which existing rows are visible to a caller. |
+| [Block predicate](#row-level-security) | A row-level security condition preventing writes that would violate a defined access policy. |
+| [Isolation level](#isolation-and-versioning) | A transaction setting that governs the effects one transaction can observe from concurrent work. |
+| [Execution plan](#read-execution-plans-as-explanations) | The operators and access paths the database engine chooses to satisfy a query. |
+| [Cardinality estimate](#read-execution-plans-as-explanations) | The optimizer's estimate of how many rows an operation will process, which influences plan selection. |
+| [Database project](#deliver-schema-through-sql-database-projects) | A source-controlled representation of database objects used to build and deploy a defined schema. |
+| [Schema drift](#detect-drift-and-deploy-safely) | A difference between the deployed database structure and the expected version defined by the project. |
+| [Deployment plan](#detect-drift-and-deploy-safely) | The proposed changes needed to bring a target database into line with the project definition. |
+| [Data API builder](#configure-and-expose-data-api-builder) | A service that exposes configured database entities through REST or GraphQL endpoints with defined authorization. |
+| [GraphQL](#rest-graphql-relationships-and-query-behavior) | An API query language that lets clients request selected fields and related entities through a defined schema. |
+| [Change data capture (CDC)](#select-a-change-mechanism-from-semantics) | A mechanism that makes captured row changes available for downstream consumers to process. |
+| [Change tracking](#select-a-change-mechanism-from-semantics) | A lightweight mechanism identifying rows changed since a synchronization point so consumers can retrieve current values. |
+
+**Implement AI capabilities in database solutions (25–30%)**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Embedding](#chunk-and-generate-embeddings) | A vector representation of content produced by a model for comparisons such as semantic similarity. |
+| [Chunk](#chunk-and-generate-embeddings) | A bounded portion of a source document indexed and retrieved as a unit of evidence. |
+| [Embedding dimension](#chunk-and-generate-embeddings) | The number of numeric components in a vector, which must be compatible with its model and index. |
+| [Distance metric](#store-vectors-with-an-explicit-contract) | A mathematical rule for comparing vectors, such as cosine distance, chosen to match the embedding model. |
+| [Approximate nearest-neighbor search](#choose-exact-or-approximate-vector-search) | A search strategy that reduces the work of finding nearby vectors by accepting that some exact nearest matches may be missed. |
+| [Exact nearest-neighbor search](#choose-exact-or-approximate-vector-search) | Comparing the eligible vectors to identify the actual closest results under the chosen metric. |
+| [Recall at k](#choose-exact-or-approximate-vector-search) | The fraction of true top-k neighbors recovered by a candidate search, measured against an exact baseline. |
+| [Top-k](#choose-exact-or-approximate-vector-search) | The requested number of nearest or highest-ranked search results, distinct from how the index finds candidates. |
+| [Full-text search](#combine-full-text-vector-and-relational-filtering) | Retrieval based on indexed linguistic terms and matching rules rather than vector distance. |
+| [Hybrid search](#combine-full-text-vector-and-relational-filtering) | Combining keyword and vector retrieval so a query can match both exact terms and semantic similarity. |
+| [Retrieval-augmented generation (RAG)](#build-retrieval-augmented-generation-as-a-controlled-pipeline) | An application retrieves relevant evidence and includes it in the model's input when generating an answer. |
+| [Groundedness](#build-retrieval-augmented-generation-as-a-controlled-pipeline) | How well the claims in a generated answer are supported by the evidence supplied to the model. |
+
 ## Places to learn
 
-This is **not a complete list**, and it is not a recommendation to consume everything. Pick one current primary path, build the labs, and use targeted references or practice for gaps. Times are page-published when available; otherwise they are clearly labeled estimates. Catalogs, access, duration, price and alignment change. DP-800 is new, so several established vendors did not yet have a dedicated full certification path on the pages found; map broader SQL Server 2025 material to the current October 19 outline; March-only coverage is historical. Avoid dumps or products claiming recalled/live exam questions.
+**Suggested practice.** Use one search question to predict how exact terms, vector similarity and combined ranking could change the returned rows before considering an index. 84 minutes for the module (Microsoft Learn, 9 units). [Design and implement intelligent search with SQL](https://learn.microsoft.com/en-us/training/modules/design-implement-intelligent-search-with-sql/)
+
+This is **not a complete list**, and it is not a recommendation to consume everything. Pick one current primary path, build the labs, and use targeted references or practice for gaps. Times are page-published when available; otherwise they are clearly labeled estimates. Catalogs, access, duration, price and alignment change. DP-800 is new, so several established vendors did not yet have a dedicated full certification path on the pages found; map broader SQL Server 2025 material to the retained October 19 outline and the March edition currently shown by Microsoft. Avoid dumps or products claiming recalled/live exam questions.
 
 ### October 28 learning route and evidence task
 

@@ -460,6 +460,102 @@ These are original teaching prompts, not recalled or predicted exam items. Cover
 
 The current [SSCP outline](https://www.isc2.org/certifications/sscp/sscp-certification-exam-outline) still uses the October 1, 2025 seven-domain version; no newer outline or retirement notice was found. **Related item:** NIST’s [SP 800-63-4 implementation hub](https://pages.nist.gov/800-63-4/) now links the separate proofing/enrollment (63A), authentication/authenticator (63B), and federation/assertion (63C) volumes. Its overview highlights changes such as syncable authenticators and passkeys, but FAQs and conformance criteria remain marked “Coming Soon”; it is a navigation aid, not proof of conformance. The free [SSCP flash cards](https://cloud.connect.isc2.org/sscp-flashcards) publicly cover all seven domains and offer immediate feedback; use them for recall, not as a substitute for the outline, experience, or practical work.
 
+## Key terms and phrases
+
+**Security Concepts and Practices**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Confidentiality](#1-security-concepts-and-practices-16) | Restricting disclosure of information to authorized parties. A file can lose confidentiality even if its contents are unchanged. |
+| [Least privilege](#1-security-concepts-and-practices-16) | Granting an identity only the access needed for its assigned work. |
+| [Separation of duties](#1-security-concepts-and-practices-16) | Splitting incompatible responsibilities so one person cannot complete a sensitive operation without independent involvement. |
+| [Operating effectiveness](#from-control-statement-to-operating-evidence) | How consistently a control worked for its intended population during the period reviewed. Dated records of completed access reviews can provide evidence. |
+| [Data custodian](#from-control-statement-to-operating-evidence) | The role that handles or operates data and applies the controls directed by the accountable owner. |
+
+**Access Controls**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Identity provider (IdP)](#2-access-controls-15) | The service that authenticates an identity and makes assertions or issues tokens that a relying service can validate. |
+| [OpenID Connect (OIDC)](#2-access-controls-15) | An identity layer over OAuth that defines an ID token the client can validate to learn about the user’s authentication. |
+| [Privileged access management (PAM)](#2-access-controls-15) | Controls for powerful accounts and sensitive actions, commonly including approval, short-lived access, credential protection and session auditing. |
+| [Role-based access control (RBAC)](#2-access-controls-15) | Assigning permissions to roles and assigning identities to those roles. An inappropriate role assignment can grant every permission the role carries. |
+| [Authorization](#authentication-does-not-finish-the-access-decision) | The decision about what a verified identity may do to a resource under the applicable policy. |
+| [Authentication](#authentication-does-not-finish-the-access-decision) | Checking that a claimant controls an authenticator bound to the claimed identity. It precedes the separate decision about permitted actions. |
+| [Deprovisioning](#authentication-does-not-finish-the-access-decision) | Removing accounts or entitlements when a person leaves or their duties change. |
+| [Phishing-resistant authentication](#authentication-does-not-finish-the-access-decision) | Authentication designed to prevent an impostor service from reusing the proof supplied for a legitimate service, such as a credential bound to the correct origin. |
+
+**Risk Identification, Monitoring and Analysis**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Threat intelligence](#3-risk-identification-monitoring-and-analysis-15) | Assessed information about adversary activity or indicators, with source, context and freshness to guide a decision. |
+| [Vulnerability](#3-risk-identification-monitoring-and-analysis-15) | A weakness in design, configuration, process or implementation that can affect a security objective under applicable conditions. |
+| [Residual risk](#correlation-and-risk-decisions-need-denominators) | The exposure remaining after safeguards are considered, which an accountable owner must address or accept. |
+| [Alert](#correlation-and-risk-decisions-need-denominators) | A notification that an observed condition met a detection criterion. An analyst needs context before treating it as an incident. |
+| [Compensating control](#correlation-and-risk-decisions-need-denominators) | An alternative safeguard that addresses the same underlying risk when a preferred control cannot be used. |
+| [True positive](#correlation-and-risk-decisions-need-denominators) | A detection supported by evidence that the condition it was intended to identify really occurred. |
+
+**Incident Response and Recovery**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Containment](#4-incident-response-and-recovery-14) | An incident response action that limits further damage or spread while preserving options for investigation and recovery. |
+| [Chain of custody](#4-incident-response-and-recovery-14) | A record of who collected, possessed or transferred evidence, when it changed hands and how its integrity was protected. |
+| [Incident](#4-incident-response-and-recovery-14) | A case representing a security event or set of related events requiring coordinated investigation and response. |
+| [Maximum tolerable downtime (MTD)](#4-incident-response-and-recovery-14) | The longest interruption the business can tolerate before the impact becomes unacceptable. Restoration targets need to leave time for business recovery. |
+| [Walkthrough](#4-incident-response-and-recovery-14) | Tracing a transaction or workflow with the people and evidence involved to understand how the process and its controls operate. |
+| [Recovery acceptance](#current-response-guidance-and-recovery-acceptance) | A decision that the restored service meets agreed operational and security criteria. |
+
+**Cryptography**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Asymmetric cryptography](#5-cryptography-9) | Cryptography using mathematically related public and private keys, enabling operations such as signature verification or exchange of protected data. |
+| [Encryption](#5-cryptography-9) | Reversibly transforming data with a key to keep the plaintext unavailable to parties lacking the appropriate decryption capability. |
+| [Symmetric encryption](#5-cryptography-9) | Encryption in which the same secret key is used to encrypt and decrypt. Secure sharing and storage of the key are essential. |
+| [Certificate chain](#separate-the-certificate-checks) | The certificates that connect a presented certificate to a trusted issuer. Name, validity and other checks still apply. |
+| [Digital signature](#separate-the-certificate-checks) | A cryptographic value produced with a private key and checked with its corresponding public key to authenticate signed data and detect alteration. |
+| [Certificate revocation](#separate-the-certificate-checks) | Marking a certificate as no longer trustworthy before its expiry, with status distributed through a mechanism such as a revocation list or online responder. |
+
+**Network and Communications Security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Load balancer](#6-network-and-communications-security-16) | A component that sends eligible requests or connections to selected backends using health and distribution policy. |
+| [Network Time Protocol (NTP)](#6-network-and-communications-security-16) | A protocol for synchronizing clocks to time sources. Clock agreement helps validate certificates and align records from multiple systems. |
+| [Subnet](#6-network-and-communications-security-16) | A portion of an IP address space sharing a network prefix. Hosts use the prefix to distinguish local delivery from traffic requiring a router. |
+| [Stateful inspection](#a-complete-packet-path-includes-management-and-return-traffic) | Evaluation of packets using tracked connection state as well as the packet’s own headers. |
+| [Network segmentation](#a-complete-packet-path-includes-management-and-return-traffic) | Establishing boundaries between systems and controlling the paths that cross them. |
+| [Packet](#a-complete-packet-path-includes-management-and-return-traffic) | A network-layer unit carrying a source and destination IP address. Routers use the destination and their forwarding tables to send it onward. |
+
+**Systems and Application Security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Hardening baseline](#7-systems-and-application-security-15) | An approved minimum configuration for a class of system, used to deploy consistently and detect unintended changes. |
+| [Shared responsibility](#7-systems-and-application-security-15) | The allocation of security duties between the cloud provider and the customer for the service in use. |
+| [Threat modeling](#7-systems-and-application-security-15) | Analyzing a software design’s assets, trust boundaries and potential failure or misuse paths to choose suitable controls early. |
+| [Virtual private cloud (VPC)](#7-systems-and-application-security-15) | A logically isolated cloud network with customer-defined addressing, subnets and routing boundaries. |
+| [Detection rule](#ai-context-belongs-within-the-seven-existing-domains) | An expression of the observed conditions that should produce a detection. Its quality depends on source coverage and tested behavior. |
+| [Triage](#ai-context-belongs-within-the-seven-existing-domains) | The first assessment of urgency, reliability, affected scope and next action for an alert or case. |
+
+**Executed local TLS workbook**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Mutual TLS (mTLS)](#executed-local-tls-workbook) | TLS in which both peers present certificates and verify one another. Successful authentication still leaves authorization to policy. |
+| [Socket](#executed-local-tls-workbook) | A communication endpoint identified by protocol and addressing information such as an IP address and port. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Identity lifecycle](#scenario-1-joiner-to-leaver-operations) | The processes that grant, change and remove access as people join, change duties and leave. A role change should also remove incompatible old permissions. |
+| [Ransomware](#scenario-2-endpoint-ransomware-incident) | Malicious software associated with extortion, often by denying access to data. The incident can also involve disclosure or destruction. |
+| [Data classification](#hands-on-evidence-labs) | Assigning a sensitivity or impact category to information so its handling and protection match its value. |
+| [Virtual machine (VM)](#hands-on-evidence-labs) | An isolated software-defined computer with a guest operating system and virtual hardware allocated from a host. |
+
 ## Places to learn
 
 This is not a complete list. Choose a route, map it against the current outline, and use targeted references and practical work for gaps. Catalog observations below were checked September 29, 2026; paid lessons, books and question banks were not accessed. Estimates labeled planning are this guide's suggestions, not provider runtimes or guarantees.

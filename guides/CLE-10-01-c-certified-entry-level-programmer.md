@@ -774,6 +774,101 @@ These eight learner activities remain proposed. The executed programs and bounde
 - [ ] I have completed the integrated scenarios without relying only on happy paths.
 - [ ] I rechecked the live official page immediately before purchase.
 
+## Key terms and phrases
+
+**Basic concepts**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Preprocessor](#translation-and-program-structure) | The translation stage that expands directives such as header inclusion and macros before compilation. |
+| [Source file](#translation-and-program-structure) | A text file containing program declarations and statements to translate as part of a build. |
+| [Linker](#translation-and-program-structure) | The build component that combines translated units and libraries and resolves references between them. |
+| [Definition](#translation-and-program-structure) | A declaration that supplies the actual entity, such as a function body or an object with storage. |
+| [Identifier](#translation-and-program-structure) | A name used to refer to a declared entity such as a variable, function or type. |
+| [Null pointer](#translation-and-program-structure) | A pointer value designating no object or function. It may serve as a marker but cannot be dereferenced. |
+| [Translation unit](#translation-and-program-structure) | One source file after preprocessing, including the declarations and definitions brought in by its headers. |
+| [Preprocessor directive](#translation-and-program-structure) | An instruction acted on before compilation, for example including a header or defining a macro. |
+| [Command-line argument](#translation-and-program-structure) | Text passed to a program at startup. Numeric-looking arguments require parsing and validation before numeric use. |
+| [Literal](#literals-variables-arithmetic-and-numeral-systems) | A value written directly in C source, such as a character constant or an integer. |
+| [Compiler](#literals-variables-arithmetic-and-numeral-systems) | The program translating a translation unit and checking that it meets the selected language rules. |
+| [Integer division](#literals-variables-arithmetic-and-numeral-systems) | Dividing integer operands yields an integer quotient with the fractional part discarded. Dividing 7 by 2 gives 3. |
+| [Remainder](#literals-variables-arithmetic-and-numeral-systems) | The integer part left after division. For positive operands, 17 divided by 5 has quotient 3 and remainder 2. |
+
+**Data types, conversions, and basic I/O**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Type conversion](#2-data-types-conversions-and-basic-io-1325) | Changing a value’s representation to another type, which can discard information, as when a fraction becomes an integer. |
+| [Scope](#2-data-types-conversions-and-basic-io-1325) | The part of the program in which a declaration can be found by name. Visibility and object lifetime can differ. |
+| [Implicit conversion](#2-data-types-conversions-and-basic-io-1325) | A type conversion performed by the language rules, for example promoting a smaller integer before arithmetic. |
+| [Cast](#2-data-types-conversions-and-basic-io-1325) | An explicit request to convert an expression to a specified type. The requested change may lose information. |
+| [End of file (EOF)](#2-data-types-conversions-and-basic-io-1325) | An indication that a read reached the end of available input. Check the read result before processing the next value. |
+| [Format specifier](#2-data-types-conversions-and-basic-io-1325) | A conversion instruction in a formatted I/O string. The corresponding argument must have the expected type. |
+
+**Operators**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Operator precedence](#3-operators-1325) | The rules that group operators in an expression. Grouping an expression does not determine the evaluation order of every operand. |
+| [Short-circuit evaluation](#3-operators-1325) | Evaluating the right operand of logical AND or OR only when the left operand leaves the result undecided. |
+| [Bitwise operator](#3-operators-1325) | An operator working on individual bits, such as combining flag masks with OR or testing selected bits with AND. |
+
+**Decision-making**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Selection](#4-decision-making-1325) | Choosing which statements to run based on a condition or switch value. |
+| [Switch statement](#4-decision-making-1325) | Selection among case labels using an expression. Control can continue into a later case unless an intervening operation leaves the switch. |
+
+**Loops**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Iteration](#5-loops-1650) | Repeating a block under a loop’s control. The placement of the test determines whether the body can run zero times. |
+| [Loop invariant](#5-loops-1650) | A condition that should remain true across iterations, such as knowing that all elements preceding the current position have been checked. |
+
+**Arrays, pointers, and memory**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Array](#6-arrays-pointers-and-memory-1650) | A fixed sequence of same-type elements stored next to one another and indexed starting at zero. |
+| [Pointer](#6-arrays-pointers-and-memory-1650) | A value used to refer to an object or function. An object pointer must identify valid storage before the program accesses the object through it. |
+| [Array bound](#6-arrays-pointers-and-memory-1650) | The limits of valid element positions. For an array of length n, valid indices run from zero through n minus one. |
+| [Dangling pointer](#6-arrays-pointers-and-memory-1650) | A pointer referring to storage whose lifetime has ended, such as memory already released. |
+| [Memory leak](#6-arrays-pointers-and-memory-1650) | Allocated storage that is never released when it is no longer needed, often because its owning reference was lost. |
+| [Pointer offset](#6-arrays-pointers-and-memory-1650) | A displacement measured in elements of the pointed-to type when moving within the same array. |
+| [Dynamic allocation](#6-arrays-pointers-and-memory-1650) | Requesting storage during execution. The caller must check the result and manage the storage until it is released. |
+
+**Strings**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Null terminator](#7-strings-7) | The zero-valued character marking the end of a C string. A character array needs space for that final character. |
+| [Buffer capacity](#7-strings-7) | A buffer of 16 bytes holds at most 15 bytes of C string content plus its terminating null character. Check the remaining capacity before appending. |
+| [Locale](#7-strings-7) | The active conventions for text and numeric processing, relevant to character classification and conversions. |
+| [Buffer overlap](#7-strings-7) | Two source and destination byte ranges sharing storage. Use an operation defined for overlap when that can occur. |
+
+**Functions**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Function prototype](#8-functions-7) | A declaration that describes a function’s return and parameter types so calls can be checked. |
+| [Pointer dereference](#8-functions-7) | Using a pointer to access its target. The target must still exist and be valid for the attempted access. |
+| [Function parameter](#8-functions-7) | A declared input to a function, bound to a supplied argument when the function is called. |
+| [Return value](#8-functions-7) | The value a function provides to its caller through its return operation under the declared return type. |
+
+**Executed core workbook**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Object lifetime](#executed-core-workbook) | The period during which a particular object exists and access to it is permitted under the language rules. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Undefined behavior](#hands-on-labs) | An operation for which the language imposes no requirements, such as accessing an array outside its valid range. |
+
 ## Places to learn
 
 This is not a complete list, and it is not meant to be consumed in full. Pick one primary path, add targeted references where they explain a difficult objective better, and spend at least as much time writing, tracing, testing, and debugging as watching. Reconcile third-party material with the current official syllabus.

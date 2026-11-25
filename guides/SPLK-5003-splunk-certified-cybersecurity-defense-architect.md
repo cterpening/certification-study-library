@@ -163,6 +163,88 @@ Create CI/CD templates for data contracts, detections, tests, SBOM, signed artif
 - [ ] I completed all twelve architecture artifacts and can defend assumptions/residual risk.
 - [ ] I rechecked and reconciled the credential's beta/public scheduling status.
 
+## Key terms and phrases
+
+**Advanced threat intelligence and analysis**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Intelligence requirement](#1-advanced-threat-intelligence-and-analysis-5) | A question a decision-maker needs threat intelligence to answer, used to guide collection, analysis and distribution. |
+| [Threat intelligence](#1-advanced-threat-intelligence-and-analysis-5) | Information about threats assessed for relevance to a decision or environment. Origin, confidence and age affect how it should be used. |
+| [Threat model](#1-advanced-threat-intelligence-and-analysis-5) | A structured examination of assets, trust boundaries and possible harm used to choose and place defenses. |
+| [Confidence](#1-advanced-threat-intelligence-and-analysis-5) | An assessment of how strongly available evidence supports an intelligence judgment. Confidence and business impact answer different questions. |
+| [Evidence provenance](#1-advanced-threat-intelligence-and-analysis-5) | Documentation of the origin and handling of evidence so another reviewer can trace how a conclusion was reached. |
+| [Intelligence lifecycle](#1-advanced-threat-intelligence-and-analysis-5) | A cycle of defining needs, collecting information, analyzing it and delivering intelligence that informs a decision. |
+| [Preventive control](#1-advanced-threat-intelligence-and-analysis-5) | A control intended to stop an unwanted action before its effect, such as an access rule blocking an unauthorized change. |
+| [Technique](#1-advanced-threat-intelligence-and-analysis-5) | A described way of achieving an adversary objective. Defenders map relevant telemetry and controls to the behavior. |
+| [Tactic](#1-advanced-threat-intelligence-and-analysis-5) | In ATT&CK, the objective an adversary is trying to achieve. It groups techniques by purpose. |
+| [Indicator of compromise (IOC)](#1-advanced-threat-intelligence-and-analysis-5) | An observable item, such as a hash or domain, that can support an investigation when assessed in context. |
+
+**Security data management**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Data lineage](#2-security-data-management-20) | A record of a security dataset's origin, transformations and destinations that helps establish whether the evidence can be trusted. |
+| [Data normalization](#2-security-data-management-20) | Mapping fields, values and units from different sources into a common meaning before correlating them. |
+| [Data sovereignty](#2-security-data-management-20) | The relationship between data and the laws or authorities that govern it. Copying logs to another region can introduce new obligations. |
+| [Data residency](#2-security-data-management-20) | A requirement governing where information may be stored or processed, including archived or replicated security telemetry. |
+| [Data retention](#2-security-data-management-20) | How long evidence is kept and made available under the applicable business or regulatory purpose. Investigation needs and collection costs inform the policy. |
+| [Schema](#2-security-data-management-20) | The expected fields and types of an event or dataset. Changing a field name can silently break a dependent detection. |
+| [Federated search](#2-security-data-management-20) | Querying data across separate environments without first putting all raw records in one central index. Access and query semantics must remain consistent. |
+| [Data minimization](#2-security-data-management-20) | Limiting collected, retained or shared security data to what is needed for an approved purpose. |
+| [Out-of-band communication](#2-security-data-management-20) | A separate communication path available when the primary identity or collaboration service is affected. |
+| [Detection hypothesis](#2-security-data-management-20) | A testable proposition about an observable behavior and the evidence that would support or weaken it. |
+| [Security information and event management (SIEM)](#2-security-data-management-20) | A system for collecting and correlating security telemetry so analysts can detect, investigate and report activity across sources. |
+| [Common Information Model (CIM)](#2-security-data-management-20) | A shared set of fields, tags and datasets that makes comparable activity searchable across different vendors' data. |
+
+**Advanced incident response and management**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Chain of custody](#3-advanced-incident-response-and-management-10) | A record of who collected, possessed, transferred or accessed evidence and when, supporting its integrity through an investigation. |
+| [Forensic readiness](#3-advanced-incident-response-and-management-10) | Preparing telemetry, clocks, retention, roles and evidence-handling processes before an incident so a later investigation can reconstruct it. |
+| [Incident commander](#3-advanced-incident-response-and-management-10) | The person coordinating objectives, priorities and communication during a major incident while technical teams carry out their work. |
+| [Containment](#3-advanced-incident-response-and-management-10) | Limiting an incident's reach while preserving evidence and keeping the recovery path available. |
+| [Incident severity](#3-advanced-incident-response-and-management-10) | A rating of impact and urgency that guides escalation and response decisions under agreed criteria. |
+| [Security operations center (SOC)](#3-advanced-incident-response-and-management-10) | The people and operating processes responsible for monitoring, investigating and coordinating response to security events. |
+
+**Advanced automation and orchestration**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Compensating action](#4-advanced-automation-and-orchestration-10) | A step that counteracts an earlier change after a later stage of an automated workflow fails. |
+| [Automation approval](#4-advanced-automation-and-orchestration-10) | Explicit authorization to take an action within defined scope, for example disabling an account during containment. |
+
+**DevSecOps and scalable defense**
+
+| Term or phrase | Meaning |
+|---|---|
+| [DevSecOps](#5-devsecops-and-scalable-defense-15) | Integrating security checks and responsibilities into development, release and operation so weaknesses can be addressed throughout delivery. |
+| [Detection as code](#5-devsecops-and-scalable-defense-15) | Managing detection definitions, tests and release history in version control so changes can be checked before deployment. |
+| [Control exception](#5-devsecops-and-scalable-defense-15) | A documented departure from an approved control, with rationale, owner, expiration and any compensating measures. |
+| [Policy as code](#5-devsecops-and-scalable-defense-15) | An executable expression of an organizational control that can be tested and versioned alongside deployment changes. |
+| [Canary rollout](#5-devsecops-and-scalable-defense-15) | Releasing a change to a small, representative part of the environment before wider deployment. Review impact as well as technical success. |
+| [Compensating control](#5-devsecops-and-scalable-defense-15) | An alternative safeguard that reduces a specified risk when the preferred control cannot be used. Record what residual exposure remains. |
+
+**Governance, risk, compliance**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Residual risk](#6-governance-risk-compliance-10) | The exposure remaining after controls have been applied. An accountable owner decides whether to accept it or require further treatment. |
+
+**Measuring and improving effectiveness**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Program effectiveness](#7-measuring-and-improving-effectiveness-15) | How well the security program achieves the outcomes it was designed for, assessed against defined measures and meaningful denominators. |
+
+**Capability selection, placement, and resilience**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Control placement](#8-capability-selection-placement-and-resilience-15) | The decision about where a safeguard should sit so it can observe or affect the intended activity under normal and failure conditions. |
+| [Detection tuning](#8-capability-selection-placement-and-resilience-15) | Adjusting a detection using observed outcomes, tested exclusions and representative data to improve its signal without concealing real cases. |
+
 ## Places to learn
 
 This is not a complete list, and it is not meant to be consumed end to end. Choose resources for measured gaps. Times are planning estimates; access, law/framework versions, product releases, and availability change.

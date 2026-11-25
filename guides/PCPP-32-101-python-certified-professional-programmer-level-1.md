@@ -1572,6 +1572,78 @@ if __name__ == "__main__":
 
 **VERIFY CURRENT — scheduled version transition:** the issuer page continues to mark PCPP-32-101 active and PCPP-32-102 pending, with an October 31, 2026 planned release. Keep this guide tied to the current 32-101 objectives until the issuer changes the active status; the next-version syllabus must be checked separately. The [Python release index](https://www.python.org/doc/versions/) lists Python 3.15.2 and 3.14.10 as October 25 releases, but the certification objectives say Python 3.x and do not mandate either patch. For structured learning, the issuer's [PCPP1 course catalog](https://pythoninstitute.org/study-resources) includes free English courses in advanced OOP, conventions, GUI, REST, and file processing; course time estimates are learning guidance, not exam weighting.
 
+## Key terms and phrases
+
+**Advanced object-oriented programming**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Composition](#model-behavior-and-relationships) | Building a class that delegates part of its work to another object it holds. |
+| [Inheritance](#model-behavior-and-relationships) | Defining a class in terms of one or more base classes so it can reuse or specialize their behavior. |
+| [Decorator](#decorators-callable-objects-and-method-types) | A callable applied when a function or class is defined. Its return value becomes the object bound to the original name. |
+| [Mutability](#decorators-callable-objects-and-method-types) | Whether an existing object can change. Rebinding a variable and modifying the object already bound to it are separate operations. |
+| [Class attribute](#decorators-callable-objects-and-method-types) | An attribute stored on a class that instances can find through attribute lookup unless an instance supplies its own value. |
+| [Instance method](#decorators-callable-objects-and-method-types) | A method that receives the instance when accessed through it, letting the method inspect or change that object’s state. |
+| [Class method](#decorators-callable-objects-and-method-types) | A method bound to the class through which it was called, useful for constructors that respect subclasses. |
+| [Static method](#decorators-callable-objects-and-method-types) | A method placed in a class namespace that receives neither the instance nor the class automatically. |
+| [Abstract base class](#decorators-callable-objects-and-method-types) | A class that can define required operations for subclasses, allowing code to express and check an interface. |
+| [Deep copy](#exceptions-copying-persistence-and-metaclasses) | A copy that recursively copies nested objects, tracking objects it has already visited to handle shared references and cycles. |
+| [Metaclass](#exceptions-copying-persistence-and-metaclasses) | The class of a class object. It can control how Python creates classes and equips them with attributes. |
+| [Context manager](#exceptions-copying-persistence-and-metaclasses) | An object managing entry to and exit from a with block. A file context manager closes the file even if processing raises an exception. |
+| [Pickle](#exceptions-copying-persistence-and-metaclasses) | Python’s object serialization format. Loading a pickle can execute code, so its source must be trusted. |
+| [Shelve](#exceptions-copying-persistence-and-metaclasses) | A persistent mapping that stores pickled Python values under string keys. |
+
+**Conventions, best practices, and standardization**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Docstring](#2-conventions-best-practices-and-standardization-12) | A string literal that is the first statement in a module, class or function and provides its documentation. Tools such as `help()` can display it. |
+| [PEP 8](#2-conventions-best-practices-and-standardization-12) | The Python style guide covering conventions such as naming, imports and layout to make code easier to read consistently. |
+| [PEP 257](#2-conventions-best-practices-and-standardization-12) | Python’s guidance on writing and formatting docstrings so a reader can understand an object’s interface. |
+
+**GUI programming**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Event loop](#3-gui-programming-20) | The GUI mechanism that waits for events and dispatches callbacks. A slow callback delays other interface updates. |
+| [Widget](#3-gui-programming-20) | An interface element such as a button, label or input field, configured and managed by the GUI toolkit. |
+| [Callback](#3-gui-programming-20) | A callable supplied to another component to run when a condition or event occurs, such as a button press. |
+
+**Network programming**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Socket](#4-network-programming-18) | An endpoint a program uses to communicate over a network. For TCP, the application must decide how to separate messages in the byte stream. |
+| [Unicode encoding](#4-network-programming-18) | A rule that turns Unicode text into bytes. Decoding requires a compatible rule to recover the intended text. |
+| [TCP](#4-network-programming-18) | A transport presenting an ordered byte stream between connected endpoints. Applications supply their own message boundaries. |
+| [JSON](#4-network-programming-18) | A text format for objects, arrays and primitive values. Parsing it recovers data structure, while application validation checks the expected fields and meaning. |
+| [XML](#4-network-programming-18) | A structured text format representing nested elements and attributes. Readers must check the expected structure and source. |
+
+**File processing and environment**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Transaction](#sqlite-and-transactions) | A group of database operations committed together or rolled back so partial changes do not become permanent. |
+| [Commit](#sqlite-and-transactions) | Making a database transaction’s pending changes permanent under the database’s transaction guarantees. |
+| [Rollback](#sqlite-and-transactions) | Discarding uncommitted transaction changes after a failure or deliberate cancellation. |
+| [Truth value](#xml-csv-logs-and-configuration) | Whether an object counts as true in a condition. Zero and empty collections count as false, while a nonempty string like "False" counts as true. |
+| [Configuration default](#xml-csv-logs-and-configuration) | A value in ConfigParser’s DEFAULT section is available to other sections unless the section supplies its own value. This lets several sections share one setting. |
+| [Serialization](#xml-csv-logs-and-configuration) | Representing an object as data suitable for storage or transfer. A decoder must understand the format and its trust assumptions. |
+| [CSV](#xml-csv-logs-and-configuration) | A tabular text format with field separators and quoting rules. A quoted field can contain the separator or an embedded newline. |
+
+**Original executable workbook**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Interpreter](#original-executable-workbook) | Software that executes a Python program. The interpreter used for a command also determines which installed packages it can import. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [HTTP request](#integrated-build-and-labs) | A client message identifying a method, target and optional content to ask a server to perform an operation. |
+| [Shallow copy](#original-knowledge-checks) | An independent outer container that retains references to the same nested elements. A change inside a shared nested list can appear in both copies. |
+
 ## Places to learn
 
 This is not a complete list and should not be consumed in full. Use the five official advanced courses as the aligned spine, then fill documented gaps with primary references and one substantial build.

@@ -109,6 +109,87 @@ Use watsonx.ai APIs/SDKs and orchestration services through least-privilege serv
 - I version and monitor the complete application, not only the model.
 - I can complete 62 mixed questions in 90 minutes from engineering principles.
 
+## Key terms and phrases
+
+**Analyze and design**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Orchestrator](#1-analyze-and-design) | The application component coordinating prompts, model calls, retrieval and tools to complete a defined workflow. |
+| [Prompt template](#1-analyze-and-design) | A versioned instruction format with designated places for request data, examples or retrieved evidence. |
+| [Inference endpoint](#1-analyze-and-design) | A service interface through which a client submits model inputs and receives predictions or generated content. |
+| [Model monitoring](#1-analyze-and-design) | Collecting operational and quality signals after deployment, with enough context to identify changes and investigate their effects. |
+| [Classification](#1-analyze-and-design) | Predicting a category from input features, such as identifying the intent of a support request. |
+| [Guardrail](#1-analyze-and-design) | A control that checks inputs, outputs or actions against defined requirements, such as access or content constraints. |
+| [Human oversight](#1-analyze-and-design) | Giving an accountable person a way to inspect, intervene in or overturn a model-assisted decision. |
+| [Tool use](#1-analyze-and-design) | Letting an application call a defined external capability under explicit permissions and validate its result before using it. |
+| [Prompt injection](#1-analyze-and-design) | Untrusted text attempting to redirect a model-driven application’s decisions, requiring controls on data access and external actions. |
+
+**Prompt engineering**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Few-shot prompting](#2-prompt-engineering) | Including selected examples in the prompt to illustrate the intended task or output format. |
+| [Temperature](#2-prompt-engineering) | A decoding parameter that affects how strongly generation favors higher-probability tokens when sampling. |
+| [Zero-shot prompting](#2-prompt-engineering) | Giving a model instructions for the task without providing solved examples in the request. |
+| [Output schema](#2-prompt-engineering) | A declaration of the fields and value types an output must satisfy before another component consumes it. |
+| [Token limit](#2-prompt-engineering) | A bound on the token count for a request or generated response that must be considered when assembling context or consuming output. |
+
+**Fine-tuning and adaptation**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Soft prompt](#3-fine-tuning-and-adaptation) | A learned set of continuous values used to steer a model without expressing the entire instruction as ordinary text. |
+| [Low-rank adaptation (LoRA)](#3-fine-tuning-and-adaptation) | A parameter-efficient approach that trains smaller low-rank updates while keeping the underlying model weights fixed. |
+| [Fine-tuning](#3-fine-tuning-and-adaptation) | Continuing training on selected examples to adapt a model’s behavior or style. |
+| [Baseline model](#3-fine-tuning-and-adaptation) | A simple reference approach used to judge whether the added complexity and cost of a candidate model produce worthwhile improvement. |
+| [Provenance](#3-fine-tuning-and-adaptation) | Information recording where data or evidence came from and how it was transformed before use. |
+| [Hard prompt](#3-fine-tuning-and-adaptation) | An instruction expressed as discrete input text, unlike a soft prompt learned as continuous model inputs. |
+| [Evaluation split](#3-fine-tuning-and-adaptation) | Separating examples for development, tuning and final assessment so repeatedly seen cases do not inflate measured quality. |
+
+**Retrieval-augmented generation**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Reranking](#4-retrieval-augmented-generation) | Reordering retrieved candidates with an additional relevance estimate before selecting evidence for the prompt. |
+| [Embedding](#4-retrieval-augmented-generation) | A numeric vector representation used to compare or retrieve items according to relationships learned by a model. |
+| [Grounding](#4-retrieval-augmented-generation) | Tying generated claims to supplied evidence that supports them, then evaluating whether the answer stays within that evidence. |
+| [Latency](#4-retrieval-augmented-generation) | Elapsed time from accepting a request to delivering the defined response, often assessed at a percentile to expose slow cases. |
+| [Vector database](#4-retrieval-augmented-generation) | A system storing vector representations and associated metadata so similar items can be retrieved. |
+| [Chunking](#4-retrieval-augmented-generation) | Dividing documents into retrievable passages that retain enough context to support a useful answer. |
+| [Retrieval recall](#4-retrieval-augmented-generation) | The proportion of known relevant evidence retrieved for a request, assessed before judging the generated answer. |
+| [Embedding model](#4-retrieval-augmented-generation) | The model converting content and queries into compatible vector representations for similarity retrieval. |
+
+**Deployment**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Deployment artifact](#5-deployment) | A versioned item needed to reproduce a release, such as the model, adapter, prompt, index or serving code. |
+| [Data drift](#5-deployment) | A shift in the distribution of incoming features relative to a reference, which can require investigation even before outcomes are known. |
+| [Release bundle](#5-deployment) | The connected model, prompt, index, code and evaluation versions needed to recreate an application release and diagnose a regression. |
+
+**Integration and orchestration**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Tool contract](#6-integration-and-orchestration) | A description of a tool’s allowed inputs, outputs, permissions and failure behavior that the calling application enforces. |
+| [Service identity](#6-integration-and-orchestration) | An identity assigned to an application or automation so it can access model, retrieval or tool services with bounded privileges. |
+| [Circuit breaker](#6-integration-and-orchestration) | A control temporarily stopping calls to a repeatedly failing dependency so the application can degrade predictably. |
+
+**Original readiness checks**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Data leakage](#answer-guide) | Information unavailable at the time of a real prediction influencing training or evaluation, often producing overly optimistic results. |
+| [Token](#answer-guide) | A unit produced by a model’s tokenizer. Word boundaries and token boundaries need not coincide. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Holdout set](#integrated-practice-scenarios) | Examples reserved to assess the completed procedure on unseen cases, without selecting improvements from their results. |
+| [Batch scoring](#integrated-practice-scenarios) | Producing model outputs for a collection of inputs as a job rather than serving each prediction interactively. |
+
 ## Places to learn
 
 This is a selective learning path, not a complete list of watsonx resources.

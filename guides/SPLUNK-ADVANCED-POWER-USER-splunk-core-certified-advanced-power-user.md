@@ -295,6 +295,91 @@ Contributors can add fixes with the product version/framework, minimal public or
 - [ ] I completed all ten labs with approved data and regression evidence.
 - [ ] My required Power User credential is current, and I rechecked the exam/framework contract.
 
+## Key terms and phrases
+
+**Statistical commands and eval functions**
+
+| Term or phrase | Meaning |
+|---|---|
+| [`eventstats`](#12-statistical-commands-and-eval-functions-8) | Calculates an aggregate for a group and adds it to the corresponding event rows, preserving those rows for further analysis. |
+| [`streamstats`](#12-statistical-commands-and-eval-functions-8) | Calculates running or windowed statistics as events pass through the pipeline. Event order changes the result. |
+| [`eval`](#12-statistical-commands-and-eval-functions-8) | Calculates or assigns field values in a search, such as deriving elapsed time from two timestamps. |
+| [Search Processing Language (SPL)](#12-statistical-commands-and-eval-functions-8) | The language Splunk uses to retrieve events and pass results through commands that filter, enrich, group or display them. |
+| [`stats`](#12-statistical-commands-and-eval-functions-8) | Turns a result set into aggregate rows. Counting by host produces one row for each host value in the grouping. |
+
+**Advanced lookups and alert actions**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Time-bounded lookup](#34-advanced-lookups-and-alert-actions-8) | A lookup that considers an event's time when selecting a reference record, useful when an assignment changes over time. |
+| [Alert action](#34-advanced-lookups-and-alert-actions-8) | A configured operation such as sending a notification when a search triggers. Distinguish alert generation from successful action delivery. |
+| [Field mapping](#34-advanced-lookups-and-alert-actions-8) | The correspondence between an event's field names and lookup or model fields. Verify names as well as the semantics of the values. |
+| [Lookup](#34-advanced-lookups-and-alert-actions-8) | A way to match a field value against reference data and add information, such as mapping a host ID to its owner. |
+
+**Advanced fields, structured data, and macros**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Structured extraction](#57-advanced-fields-structured-data-and-macros-10) | Reading named values from an organized format such as JSON or XML, for example by following a path to a nested field. |
+| [Search macro](#57-advanced-fields-structured-data-and-macros-10) | A named SPL fragment expanded when a search runs. Arguments let several searches reuse the same structure. |
+| [Regular expression](#57-advanced-fields-structured-data-and-macros-10) | A pattern for matching or capturing text. Test it against more than one example so a format change is visible. |
+| [Macro argument](#57-advanced-fields-structured-data-and-macros-10) | An input substituted into a saved search macro. Validate the expanded search as well as the caller-supplied value. |
+| [`spath`](#57-advanced-fields-structured-data-and-macros-10) | Extracts values from structured data such as JSON by following a path to the desired element. |
+| [Event](#57-advanced-fields-structured-data-and-macros-10) | One occurrence represented in the data, with a timestamp and associated metadata. A multiline log entry can be a single event. |
+| [Knowledge object](#57-advanced-fields-structured-data-and-macros-10) | A saved definition that changes how data is interpreted or presented, such as a lookup, field extraction or saved search. |
+| [Technology add-on (TA)](#57-advanced-fields-structured-data-and-macros-10) | A package of data onboarding or normalization settings for a technology, often including input, parsing or field definitions. |
+| [`rex`](#57-advanced-fields-structured-data-and-macros-10) | Uses a regular expression to extract or transform text at search time. Test the pattern on representative variants of the data. |
+
+**Acceleration and summaries**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Data model acceleration](#89-acceleration-and-summaries-8) | Building summaries for eligible data model datasets to speed repeated searches, with storage and freshness costs. |
+| [Dataset constraint](#89-acceleration-and-summaries-8) | The condition narrowing a data model dataset to the intended events. A child dataset inherits parent restrictions before adding its own. |
+| [Data model](#89-acceleration-and-summaries-8) | A hierarchy of datasets with defined constraints and fields. Pivot and acceleration can use this agreed structure. |
+| [Report](#89-acceleration-and-summaries-8) | A saved search or pivot that others can rerun according to its permissions, possibly on a schedule. |
+| [`tstats`](#89-acceleration-and-summaries-8) | Computes statistics over indexed fields or eligible accelerated data model summaries, subject to the data and fields available there. |
+| [Index](#89-acceleration-and-summaries-8) | A named store for event or metric data, with access and retention settings governing who can search it and for how long. |
+
+**Efficient search and tuning**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Search head](#1011-efficient-search-and-tuning-7) | Accepts searches, coordinates work across search peers and presents combined results to the user. |
+| [Forwarder](#1011-efficient-search-and-tuning-7) | A component that collects and sends data to another Splunk tier. Its type determines which parsing tasks it can perform. |
+| [Indexer](#1011-efficient-search-and-tuning-7) | Processes or stores indexed data and runs the portion of a distributed search assigned to its local data. |
+
+**Manipulating data and multivalue fields**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Multivalue field](#1213-manipulating-data-and-multivalue-fields-13) | A field that holds several values in one result. Expanding it can turn one input row into several output rows. |
+| [Delimiter-based extraction](#1213-manipulating-data-and-multivalue-fields-13) | Splitting a consistently formatted event into fields using separators. Embedded or escaped separators need special attention. |
+
+**Transactions, time, and subsearches**
+
+| Term or phrase | Meaning |
+|---|---|
+| [`_time`](#1416-transactions-time-and-subsearches-13) | The event timestamp used for time-based searching. A parsing error or an unexpected time zone can move an event outside the search range. |
+| [Subsearch](#1416-transactions-time-and-subsearches-13) | A nested search whose results become input to an outer search. Check execution limits and result shape before relying on it. |
+| [Time range](#1416-transactions-time-and-subsearches-13) | The interval a search covers. Use bounds that match event time and known ingestion delay before treating an empty result as evidence. |
+| [Time bin](#1416-transactions-time-and-subsearches-13) | An interval used to group observations for aggregation. Smaller bins can show short bursts hidden in wider intervals. |
+
+**Simple XML prototypes and forms**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Dashboard token](#1718-simple-xml-prototypes-and-forms-9) | A named value passed between dashboard inputs, searches or visualizations, such as the time range selected in a form. |
+| [Search job](#1718-simple-xml-prototypes-and-forms-9) | One execution of a search with its own time range, progress and results. Its job details can help explain cost or missing data. |
+
+**Performance, customization, drilldowns, and behavior**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Drilldown](#1922-performance-customization-drilldowns-and-behavior-24) | An interaction that uses a selected chart element or table row to update another search, view or dashboard. |
+| [Dashboard panel](#1922-performance-customization-drilldowns-and-behavior-24) | An individual visualization or display in a dashboard, backed by a search or another source of results. |
+| [Role](#1922-performance-customization-drilldowns-and-behavior-24) | A bundle of capabilities and data restrictions assigned to a user. Inherited roles can change the effective access. |
+
 ## Places to learn
 
 ### October 29, 2026 source update

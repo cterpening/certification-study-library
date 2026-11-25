@@ -8,16 +8,18 @@ authority: unofficial
 review_status: review-required
 last_verified: 2026-10-28
 upcoming_change_status: retirement-announced
-upcoming_change_checked: 2026-10-28
+upcoming_change_checked: 2026-11-20
 ---
 
 # MS-102 Microsoft 365 Administrator Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-01.md#ms-102) and the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ms-102-coverage-record). Known source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-102) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-04.md#ms-102)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-01.md#ms-102) and the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ms-102-coverage-record). Known source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-102) is authoritative.
 
 **Current baseline:** Skills measured as of April 28, 2026.<br>
 **Retirement:** The exam and Microsoft 365 Certified: Administrator Expert certification retire November 30, 2026, at 11:59 PM Central Standard Time. They cannot be earned or renewed after that date.<br>
-**Replacement:** Microsoft had not named a direct replacement on the official blueprint, credential page, or retirement page as rechecked October 28, 2026. Do not infer one from a neighboring certification.<br>
+**Transition.** Microsoft pairs the retiring expert certification with AB-650, the Microsoft 365 and AI Services Administrator Associate credential. Partner Center names AB-650 for the Modern Work skilling metric. The expert and associate awards have different requirements. [November source notes](../docs/research/2026-11-20-microsoft-refresh-group-04.md#ms-102).<br>
 **Upcoming blueprint change:** Retirement is announced; no separate pre-retirement objective revision is announced.<br>
 **Practice Assessment:** A free Microsoft Practice Assessment is available.<br>
 **Official source:** [MS-102 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-102)
@@ -53,6 +55,8 @@ This credential also requires one qualifying associate certification: Endpoint A
 The [course retirement table](https://learn.microsoft.com/en-us/credentials/certifications/retired-courses) lists **AB-650T00** as the replacement for MS-102T00 training on November 30. A replacement course does not establish a direct replacement expert credential or waive the associate prerequisite. The credential page's empty training collection also does not invalidate the separately available five-day course and nine direct Learn paths below.
 
 ### Living-guide watch — September 28, 2026
+
+**Practice check.** For a hybrid identity maintenance plan, record both the installed Entra Connect Sync version and how the connector authenticates. Microsoft requires version 2.6.84.0 or later and application-based authentication by April 7, 2027. Verify both before declaring the migration complete. [Microsoft Entra Connect: Version release history - Microsoft Entra ID | Microsoft Learn](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/reference-connect-version-history) · [Authenticate to Microsoft Entra ID by Using Application Identity - Microsoft Entra ID | Microsoft Learn](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/authenticate-application-id)
 
 The November 30, 2026 retirement remains the controlling lifecycle fact. Before practicing hybrid identity, check the [Entra Connect version history](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/reference-connect-version-history), including the September 30, 2026 minimum-version enforcement boundary. Do not turn a current operational prerequisite into an invented blueprint revision.
 
@@ -153,7 +157,7 @@ A licensed group contains 50 direct users and a nested group with 20 additional 
 
 When moving between licensed groups, add the destination membership, wait for and verify successful license application, then remove the old membership. Group processing is asynchronous. Removing the source first can interrupt service.
 
-The [memberOf preview ends November 3, 2026](https://learn.microsoft.com/en-us/entra/identity/users/groups-dynamic-rule-member-of). Affected dynamic groups, dynamic administrative units and entitlement auto-assignment rules stop updating and retain their last state. Inventory the rules and downstream licensing/access dependencies; replace with supported attribute rules or assigned membership, then validate membership, delegation and access. This is not removal of all dynamic groups, and stale membership does not mean access was revoked.
+The original memberOf preview ended November 3. Dynamic groups, administrative units and entitlement auto-assignment policies still using that preview retain their last known state. For eligible groups, evaluate MemberOf Next (preview), which needs Microsoft Entra ID Governance and Standard priority and processes changes twice daily. Review other affected assignments separately and validate membership and effective access after migration. [memberOf preview ends November 3, 2026](https://learn.microsoft.com/en-us/entra/identity/users/groups-dynamic-rule-member-of)
 
 Bulk administration should be repeatable, scoped, logged, and idempotent. Prefer the current Microsoft Graph PowerShell SDK for new cross-service automation, request only required scopes, validate a small batch, record per-object results, and handle throttling and partial failures. The [Graph PowerShell overview](https://learn.microsoft.com/en-us/powershell/microsoftgraph/overview?view=graph-powershell-1.0) explains its authentication and command model. A successful command is not the same as successful service provisioning; query the resulting object and workload state.
 
@@ -522,7 +526,7 @@ These are original study questions, not recalled or reconstructed exam items. An
 ## Final readiness checklist
 
 - [ ] I checked the official MS-102 page for retirement, blueprint, prerequisite, language, and scheduling changes.
-- [ ] I understand that November 30, 2026 is the final earning and renewal date and that no direct replacement was officially named at this review.
+- [ ] I understand that November 30, 2026 is the final earning and renewal date and can distinguish AB-650 associate requirements from MS-102 expert requirements.
 - [ ] I can map every objective to its authoritative admin plane, least-privilege role, configuration, negative test, evidence, and rollback.
 - [ ] I can operate domains, organization settings, Service Health, network insights, Apps updates, usage, and Backup as one tenant lifecycle.
 - [ ] I can manage cloud, synchronized, and external users plus contacts, groups, shared mailboxes, licenses, and bulk changes.
@@ -536,7 +540,83 @@ These are original study questions, not recalled or reconstructed exam items. An
 - [ ] I completed or tabletop-tested all ten labs and can explain both allowed and denied outcomes.
 - [ ] I passed an independent readiness check without relying on recalled live-exam content.
 
+## Key terms and phrases
+
+**Deploy and manage a Microsoft 365 tenant**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Tenant](#establish-the-tenant-boundary-before-configuring-workloads) | The Microsoft 365 organization boundary in which domains, identities, workloads and administrative settings are managed. |
+| [Custom domain](#establish-the-tenant-boundary-before-configuring-workloads) | An organizational domain verified for use with a Microsoft 365 tenant. |
+| [Service health incident](#establish-the-tenant-boundary-before-configuring-workloads) | A provider-reported service disruption whose affected services and tenant impact should be checked before local remediation. |
+| [Tenant health dashboard](#establish-the-tenant-boundary-before-configuring-workloads) | The administrative view used to distinguish a service-wide incident from a local access or configuration problem. |
+| [Recovery point](#worked-example-1-choose-the-recovery-operation-before-promising-an-rpo) | A retained state from which a protected workload or file can be restored. |
+| [Recovery time objective (RTO)](#worked-example-1-choose-the-recovery-operation-before-promising-an-rpo) | The target for how long a workload may remain unavailable after a disruption. |
+| [Recovery point objective (RPO)](#worked-example-1-choose-the-recovery-operation-before-promising-an-rpo) | The target for how far back in time recovered data may be relative to the disruption. |
+| [Group-based licensing](#manage-identities-collaboration-objects-and-licenses-as-lifecycles) | Assigning licenses through group membership so eligible users inherit the configured entitlements. |
+| [Security group](#manage-identities-collaboration-objects-and-licenses-as-lifecycles) | An Entra group used to grant access or target policies for a set of members. |
+| [Microsoft 365 group](#manage-identities-collaboration-objects-and-licenses-as-lifecycles) | A group identity and membership that underpins shared collaboration resources such as a team or group mailbox. |
+| [Dynamic group](#manage-identities-collaboration-objects-and-licenses-as-lifecycles) | A group whose membership is calculated from configured rules over supported identity properties. |
+| [Guest user](#manage-identities-collaboration-objects-and-licenses-as-lifecycles) | An external identity represented in the resource tenant so it can receive access to shared resources. |
+| [License service plan](#manage-identities-collaboration-objects-and-licenses-as-lifecycles) | An individual service entitlement within a product license that may be enabled or disabled for eligible users. |
+| [Administrative unit](#delegate-control-without-creating-hidden-global-administrators) | An Entra container that can scope selected administrative responsibilities to a subset of directory objects. |
+| [Role-based access control (RBAC)](#delegate-control-without-creating-hidden-global-administrators) | Assigning permissions through roles instead of granting each operation independently to every person. |
+| [Privileged Identity Management (PIM)](#delegate-control-without-creating-hidden-global-administrators) | A service for governing privileged roles, including time-limited activation of eligible assignments. |
+| [Break-glass access](#delegate-control-without-creating-hidden-global-administrators) | A separately controlled emergency path for restoring administrative access after ordinary authentication fails. |
+
+**Implement and manage Microsoft Entra identity and access**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Source of authority](#treat-synchronization-as-a-data-pipeline-with-authority-and-recovery) | The system that controls a synchronized identity attribute and from which its intended value should be changed. |
+| [Hybrid identity](#treat-synchronization-as-a-data-pipeline-with-authority-and-recovery) | An identity arrangement that connects an on-premises directory with Microsoft Entra ID for cloud access. |
+| [Password hash synchronization](#treat-synchronization-as-a-data-pipeline-with-authority-and-recovery) | Sending a derived password hash from the on-premises directory to enable supported cloud authentication. |
+| [Pass-through authentication](#treat-synchronization-as-a-data-pipeline-with-authority-and-recovery) | Validating cloud sign-in credentials through configured on-premises authentication agents. |
+| [Federation](#treat-synchronization-as-a-data-pipeline-with-authority-and-recovery) | Trusting an external identity provider to authenticate users and issue claims accepted by the relying service. |
+| [Directory attribute mapping](#treat-synchronization-as-a-data-pipeline-with-authority-and-recovery) | The rule assigning a source attribute to a target field during synchronization. |
+| [Multifactor authentication (MFA)](#build-authentication-as-registration-policy-recovery-and-evidence) | Requiring evidence from more than one type of authentication factor, such as a password and a possession factor. |
+| [Passwordless authentication](#build-authentication-as-registration-policy-recovery-and-evidence) | Proving identity through supported methods such as a passkey or security key without entering a password. |
+| [Temporary Access Pass](#build-authentication-as-registration-policy-recovery-and-evidence) | A time-limited credential that can bootstrap registration or recovery of supported authentication methods. |
+| [Authentication strength](#build-authentication-as-registration-policy-recovery-and-evidence) | A named requirement specifying which combinations of authentication methods satisfy a particular access policy. |
+| [Conditional Access](#convert-identity-risk-into-controlled-access-decisions) | Entra policies that combine signals about an access request with a decision to block or require specific controls. |
+| [Sign-in risk](#convert-identity-risk-into-controlled-access-decisions) | An assessment of the likelihood that a particular authentication request came from someone other than the legitimate user. |
+| [User risk](#convert-identity-risk-into-controlled-access-decisions) | An assessment of the likelihood that a user's identity itself has been compromised. |
+| [Report-only mode](#convert-identity-risk-into-controlled-access-decisions) | A policy evaluation mode that records anticipated outcomes without enforcing the access decision. |
+
+**Manage security and threats with Microsoft Defender XDR**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Incident](#operate-from-exposure-to-incident-and-verified-remediation) | A unified investigation record that brings related security alerts, affected entities and response actions together. |
+| [Extended detection and response (XDR)](#operate-from-exposure-to-incident-and-verified-remediation) | Correlating detections and response actions across security products, such as endpoint, identity and email protection. |
+| [Alert](#operate-from-exposure-to-incident-and-verified-remediation) | A detection signal requiring investigation, which may contribute to a wider incident. |
+| [Exposure assessment](#operate-from-exposure-to-incident-and-verified-remediation) | The evaluation of configuration gaps and asset relationships used to prioritize security improvement. |
+| [Quarantine](#protect-email-and-collaboration-with-layered-policy) | A controlled location for messages held by a mail protection policy pending authorized review or release. |
+| [Safe Links](#protect-email-and-collaboration-with-layered-policy) | A Defender for Office 365 capability that evaluates eligible URLs under policy, including certain checks at time of click. |
+| [Safe Attachments](#protect-email-and-collaboration-with-layered-policy) | A Defender for Office 365 capability that evaluates eligible attachments under policy to identify harmful content. |
+| [Anti-phishing policy](#protect-email-and-collaboration-with-layered-policy) | Mail protection rules addressing threats such as impersonation and spoofing. |
+| [Policy precedence](#protect-email-and-collaboration-with-layered-policy) | The evaluation order that determines which eligible mail policy applies when configurations overlap. |
+
+**Manage compliance with Microsoft Purview**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Sensitivity label](#separate-detection-labeling-protection-retention-and-investigation) | A classification for information that can carry protection or handling settings. |
+| [Sensitive information type](#separate-detection-labeling-protection-retention-and-investigation) | A classifier that uses evidence such as patterns, keywords and proximity to identify a particular type of sensitive data. |
+| [Retention label](#separate-detection-labeling-protection-retention-and-investigation) | A retention setting applied to an item, allowing its lifecycle and, where configured, record status to be managed individually. |
+| [Retention policy](#separate-detection-labeling-protection-retention-and-investigation) | Rules applied across a location or set of locations to retain or delete content on a defined timeline. |
+| [eDiscovery](#separate-detection-labeling-protection-retention-and-investigation) | A process for finding, preserving and reviewing information needed for a legal or investigative matter. |
+| [Exact data match (EDM)](#separate-detection-labeling-protection-retention-and-investigation) | A classifier that compares candidate sensitive data with a prepared reference dataset under configured matching rules. |
+| [Data loss prevention (DLP)](#design-dlp-from-data-path-to-response) | Policies that evaluate sensitive information in context and govern actions such as sending, copying or sharing it. |
+| [DLP rule condition](#design-dlp-from-data-path-to-response) | The combination of content, context and activity criteria used to decide whether a DLP rule matches. |
+| [Policy tip](#design-dlp-from-data-path-to-response) | A user-facing explanation supplied by a policy when an action matches configured protection conditions. |
+| [Override](#design-dlp-from-data-path-to-response) | An authorized exception to a control that can require justification and leave an audit record. |
+| [Endpoint DLP](#design-dlp-from-data-path-to-response) | DLP enforcement and monitoring on onboarded devices for actions such as copying protected content to removable media. |
+| [Simulation](#design-dlp-from-data-path-to-response) | Evaluating what policy rules would match before enabling enforcement. |
+
 ## Places to learn
+
+**Suggested practice.** Trace one identity from its authoritative source to Microsoft 365, then identify where a mistaken attribute should be corrected and where to verify synchronization. About 20–40 minutes to read the selected sections and produce the suggested comparison or checklist (editorial estimate; full path duration was not verified). [MS-102 Implement identity synchronization](https://learn.microsoft.com/en-us/training/paths/implement-identity-synchronization/)
 
 ### October 28 learning route and evidence task
 
@@ -553,7 +633,7 @@ This is a curated starting point, **not a complete list**. Do not try to consume
 | Reading | Learning task | Limits |
 |---|---|---|
 | [Microsoft 365 Backup granular restore now generally available](https://techcommunity.microsoft.com/blog/microsoft_365blog/microsoft-365-backup-granular-restore-now-generally-available/4515936), Microsoft author `diksha050`, April 29, 2026 | Spend an estimated 20–30 minutes comparing one damaged file with a compromised site: choose operation, point, destination and permission checks. | Main article reviewed. Its future in-place wording is historical; current restore instructions document that option. It does not promise the same recovery-point cadence for full and granular restore. |
-| [What's new in Microsoft Entra: September 2026](https://techcommunity.microsoft.com/blog/microsoft-entra-blog/what%E2%80%99s-new-in-microsoft-entra-september-2026/4545179), Yina Arenas, September 1, 2026 | Spend an estimated 20–30 minutes drawing `memberOf` dependencies from membership through licensing, delegated scope and CA. Plan migration and negative tests before November 3. | Main article reviewed; the linked product documentation confirms the retirement. Cloud-to-AD provisioning and MCP firewall are labelled preview in the article and remain adjacent context, not assumed blueprint additions or universal tenant availability. |
+| [What's new in Microsoft Entra: September 2026](https://techcommunity.microsoft.com/blog/microsoft-entra-blog/what%E2%80%99s-new-in-microsoft-entra-september-2026/4545179), Yina Arenas, September 1, 2026 | Spend an estimated 20–30 minutes drawing `memberOf` dependencies from membership through licensing, delegated scope and CA. For rules still frozen after November 3, choose a supported migration and validate both required and removed memberships. | Main article reviewed; the linked product documentation confirms the retirement. Cloud-to-AD provisioning and MCP firewall are labelled preview in the article and remain adjacent context, not assumed blueprint additions or universal tenant availability. |
 
 Public catalogs and module outlines were checked; paid lessons/questions and tenant demonstrations were not consumed. O'Reilly book/video and Udemy retrievals were blocked, so their historical dates and runtimes below are unverified current metadata. Partner and video-channel shells do not establish a current course schedule or content coverage.
 

@@ -50,6 +50,16 @@ Write original questions that test the documented concepts. Do not reconstruct, 
 - [ ] I checked every **VERIFY CURRENT** item against current official documentation.
 - [ ] I reviewed the current official exam blueprint.
 
+## Key terms and phrases
+
+**Name of an objective or teaching topic**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Term from this guide](#study-notes) | Explain the term in this guide's context. Use an example or worked calculation when it makes the meaning clearer. |
+
+Repeat the topic tables across the guide's domains. The guide quality standard gives a typical range of 35–60 terms, with room for more when the objectives warrant it.
+
 ## Places to learn
 
 Keep this as the final public section. State that it is a curated starting point, not a complete list, and that learners should pick what works rather than consume everything. List the official learning path first, then current official video and hands-on resources, followed by individually reviewed third-party courses, books, or creators. Label access requirements, approximate consumption time, freshness concerns, and known coverage gaps. Explain that labs, note-taking, review, and independent practice add time.

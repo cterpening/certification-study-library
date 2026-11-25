@@ -131,6 +131,84 @@ The module descriptor can require modules, export packages, open packages for re
 - I manage resources, encodings, locales, modules, services, and deployment artifacts explicitly.
 - I can sustain code analysis for 120 minutes and still verify uncertain assumptions against the current Oracle scope before the exam.
 
+## Key terms and phrases
+
+**Values, expressions, and flow**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Short-circuit evaluation](#1-values-expressions-and-flow) | Evaluating a logical expression only as far as needed to determine its result. A right-hand expression with side effects may never execute. |
+| [Primitive type](#1-values-expressions-and-flow) | A built-in value type such as int or boolean, with different nullability and identity behavior from reference types. |
+| [Wrapper type](#1-values-expressions-and-flow) | An object type corresponding to a primitive, such as Integer for int, usable where a generic type argument requires an object type. |
+| [Widening conversion](#1-values-expressions-and-flow) | Converting a primitive value to an allowed wider type. A wider numeric range does not always preserve every digit exactly. |
+| [Narrowing conversion](#1-values-expressions-and-flow) | Converting a value to a narrower type, potentially losing magnitude or precision and often requiring an explicit cast. |
+| [Integer overflow](#1-values-expressions-and-flow) | A calculation outside the representable range of an integral type, which can yield a wrapped result rather than the mathematical answer. |
+| [Local variable inference](#1-values-expressions-and-flow) | Using var for a local declaration whose initializer supplies a compile-time type. |
+| [Definite assignment](#1-values-expressions-and-flow) | The compile-time rule requiring a local variable to have a value on every path that reaches its use. |
+
+**Object-oriented design and Java 21 language features**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Sealed class](#2-object-oriented-design-and-java-21-language-features) | A class that restricts which classes may directly extend it, making the permitted hierarchy explicit. |
+| [Pattern matching](#2-object-oriented-design-and-java-21-language-features) | Testing a value against a pattern and making a matched value available through a binding in its permitted scope. |
+| [Constructor](#2-object-oriented-design-and-java-21-language-features) | The initialization procedure invoked when creating an instance, which can delegate construction to another constructor. |
+| [Method overloading](#2-object-oriented-design-and-java-21-language-features) | Declaring multiple methods under one name with distinct parameter signatures, resolved from the call at compile time. |
+| [Method overriding](#2-object-oriented-design-and-java-21-language-features) | Providing an instance method implementation in a subtype that replaces inherited behavior for dynamic dispatch. |
+| [Record](#2-object-oriented-design-and-java-21-language-features) | A Java class form declaring named components with generated accessors, equality and construction machinery. |
+| [Interface](#2-object-oriented-design-and-java-21-language-features) | A type describing methods and other members that implementing classes can provide under Java’s interface rules. |
+
+**Generics, arrays, and collections**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Type erasure](#3-generics-arrays-and-collections) | Java’s translation of most generic type information into ordinary runtime classes after compile-time checks. |
+| [Generic invariance](#3-generics-arrays-and-collections) | A generic collection of a subtype is not automatically a collection of its supertype. Wildcards express more flexible access. |
+| [Array covariance](#3-generics-arrays-and-collections) | An array of a reference subtype can be assigned to an array reference of its supertype, with incompatible writes caught at runtime. |
+| [Wildcard](#3-generics-arrays-and-collections) | A question-mark type argument standing for an unknown type, optionally bounded to control which values can be read or written. |
+| [List](#3-generics-arrays-and-collections) | An ordered collection accessed by position that may contain repeated values. |
+| [Set](#3-generics-arrays-and-collections) | A collection preventing duplicate elements according to its equality contract. |
+| [Map](#3-generics-arrays-and-collections) | A collection of key-value associations where each key maps to at most one current value. |
+
+**Lambdas and streams**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Functional interface](#4-lambdas-and-streams) | An interface with one abstract-method contract that can be implemented by a compatible lambda or method reference. |
+| [Terminal operation](#4-lambdas-and-streams) | An operation such as count or collect that starts evaluating a stream pipeline and produces a result or side effect. |
+| [Method reference](#4-lambdas-and-streams) | A compact reference to an existing method or constructor used where its signature fits a functional interface. |
+| [Effectively final](#4-lambdas-and-streams) | A local binding that is never reassigned after initialization and may therefore be captured by a lambda when other rules are met. |
+| [Intermediate operation](#4-lambdas-and-streams) | A stream step that describes a transformation or filter, evaluated only as needed for a terminal operation. |
+| [Reduction](#4-lambdas-and-streams) | Combining a stream’s elements into a result using an accumulator operation with the required ordering and associativity properties. |
+| [Checked exception](#4-lambdas-and-streams) | An exception type that must be handled or declared under Java’s compile-time checking rules. |
+
+**Exceptions and resources**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Suppressed exception](#5-exceptions-and-resources) | An exception retained alongside the primary exception, such as a resource-close failure when a try body has already thrown. |
+| [Try-with-resources](#5-exceptions-and-resources) | A statement that closes eligible resources automatically in reverse declaration order when the block exits. |
+
+**Concurrency and parallelism**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Virtual thread](#6-concurrency-and-parallelism) | A lightweight thread managed by the Java runtime, useful for coordinating many tasks that spend much of their time waiting. |
+| [Executor](#6-concurrency-and-parallelism) | An abstraction accepting tasks for execution while separating task submission from how their threads are scheduled. |
+| [Future](#6-concurrency-and-parallelism) | A handle representing a task’s eventual result or failure that can be queried, awaited or canceled under its contract. |
+| [Deadlock](#6-concurrency-and-parallelism) | A cycle of tasks each waiting for a resource or action held by another task in the cycle. |
+| [Atomicity](#6-concurrency-and-parallelism) | The guarantee that an operation appears indivisible to other participants under its synchronization contract. |
+
+**I/O, localization, JDBC, modules, and deployment**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Resource bundle](#7-io-localization-jdbc-modules-and-deployment) | A set of locale-specific resources an application looks up through a common name to select appropriate messages or values. |
+| [Character encoding](#7-io-localization-jdbc-modules-and-deployment) | The rule converting between characters and bytes in text input and output. |
+| [Locale](#7-io-localization-jdbc-modules-and-deployment) | A representation of regional or linguistic conventions used to select resources and format dates, numbers or messages. |
+| [Module](#7-io-localization-jdbc-modules-and-deployment) | A named unit declaring dependencies and exposing designated packages through its module descriptor. |
+| [JDBC](#7-io-localization-jdbc-modules-and-deployment) | Java Database Connectivity, the standard API for opening database connections, executing statements and processing results. |
+
 ## Places to learn
 
 This is a selective learning path, not a complete list of Java resources.

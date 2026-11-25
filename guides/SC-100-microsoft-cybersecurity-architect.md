@@ -13,7 +13,9 @@ upcoming_change_checked: 2026-10-28
 
 # SC-100 Microsoft Cybersecurity Architect Study Guide
 
-> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [current group report](../docs/research/2026-10-28-microsoft-refresh-group-02.md#sc-100) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sc-100-coverage-record). Source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-100) is authoritative.
+[November 20 source check and study resources](../docs/research/2026-11-20-microsoft-refresh-group-04.md#sc-100)
+
+> **Independent AI-assisted resource — HUMAN REVIEW PENDING.** The October 28, 2026 team refresh reconciles the complete guide and detailed objectives with current public exam, product and learning evidence. See the [October group report](../docs/research/2026-10-28-microsoft-refresh-group-02.md#sc-100) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sc-100-coverage-record). Source conflicts and unexecuted exercises remain explicit. This is not human review or live product validation. The [official blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-100) is authoritative.
 
 **Current baseline:** Skills measured as of October 21, 2026.<br>
 **Exam state:** Active; the official exam page lists no retirement date.<br>
@@ -332,6 +334,8 @@ Current [CIEM guidance](https://learn.microsoft.com/en-us/azure/defender-for-clo
 > **Related item:** Attack-surface reduction usually means changing exposure or behavior at an endpoint/workload. Attack-path management reasons across relationships. EASM finds externally observable assets. These are related but not synonyms.
 
 ### Specify server, client, mobile, IoT, and OT controls
+
+**Practice check.** In an IoT architecture inventory, distinguish the legacy agent under IoT Hub from the later Defender for IoT micro agent. Microsoft's support page lists June 1, 2027 as the planned retirement of the micro agent. Review device dependencies and support dates for the specific component. [Microsoft Defender for IoT Feature Support and Retirement - Microsoft Defender for IoT | Microsoft Learn](https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/edge-security-module-deprecation)
 
 For servers and clients, set platform-specific baselines for supported OS, secure boot/hardware trust, encryption, local firewall, endpoint detection/protection, application control, vulnerability/configuration management, patching, logging, identity, remote administration, and recovery. Manage drift and explicitly retire unsupported systems.
 
@@ -659,7 +663,92 @@ These are original study questions, not recalled exam content.
 
 
 
+## Key terms and phrases
+
+**Align architecture with security priorities**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Threat model](#start-with-mission-assets-threats-and-accountability) | A structured account of assets, trust boundaries, plausible threats and controls used to guide design. |
+| [Risk owner](#start-with-mission-assets-threats-and-accountability) | The person accountable for deciding how to address a particular business risk. |
+| [Ransomware resilience](#design-ransomware-resilience-as-an-end-to-end-capability) | The ability to limit the impact of destructive activity and restore trusted business operations after an incident. |
+| [Recovery authority](#design-ransomware-resilience-as-an-end-to-end-capability) | The identity or team able to authorize restoration, kept independent where needed from compromised production administration. |
+| [Recovery time objective (RTO)](#prove-the-recovery-boundary) | The target for how long a workload may remain unavailable after a disruption. |
+| [Recovery point objective (RPO)](#prove-the-recovery-boundary) | The target for how far back in time recovered data may be relative to the disruption. |
+| [Immutable backup](#prove-the-recovery-boundary) | A recovery copy protected against modification or deletion for a defined enforcement period. |
+| [Zero Trust](#use-mcra-mcsb-and-zero-trust-for-different-jobs) | An approach that explicitly verifies access, limits privileges and plans for the possibility that a component is compromised. |
+| [Microsoft Cybersecurity Reference Architectures (MCRA)](#use-mcra-mcsb-and-zero-trust-for-different-jobs) | Microsoft reference diagrams and guidance for mapping security capabilities and design relationships. |
+| [Microsoft cloud security benchmark (MCSB)](#use-mcra-mcsb-and-zero-trust-for-different-jobs) | A control framework used to assess security configuration and control coverage across cloud workloads. |
+| [Landing zone](#connect-caf-waf-landing-zones-and-workload-architecture) | A prepared Azure environment that establishes shared identity, networking, management and governance foundations for workloads. |
+| [Cloud Adoption Framework (CAF)](#connect-caf-waf-landing-zones-and-workload-architecture) | Microsoft guidance for organizing cloud strategy, adoption, governance and management activities. |
+| [Well-Architected Framework](#connect-caf-waf-landing-zones-and-workload-architecture) | Azure guidance for assessing design decisions across reliability, security, cost, operational excellence and performance. |
+| [DevSecOps](#design-secure-ai-adoption-and-devsecops) | Integrating security responsibilities and checks into software planning, development, release and operations. |
+
+**Design operations, identity, privilege, and compliance**
+
+| Term or phrase | Meaning |
+|---|---|
+| [SOAR](#integrate-xdr-siem-soar-and-audit-without-duplicating-everything) | Security orchestration, automation and response connects investigation and response tools through controlled workflows. |
+| [Security information and event management (SIEM)](#integrate-xdr-siem-soar-and-audit-without-duplicating-everything) | Collecting and analyzing logs across systems to detect and investigate security events. |
+| [Extended detection and response (XDR)](#integrate-xdr-siem-soar-and-audit-without-duplicating-everything) | Correlating detections and response actions across security products, such as endpoint, identity and email protection. |
+| [Playbook](#integrate-xdr-siem-soar-and-audit-without-duplicating-everything) | An automated response workflow that can take a defined series of actions when an incident meets specified conditions. |
+| [Incident](#design-incident-and-hunting-workflows) | A case that groups related alerts and entities so an analyst can investigate and coordinate a response. |
+| [Hunting hypothesis](#design-incident-and-hunting-workflows) | A testable explanation for activity that might have escaped existing detections. Identify the evidence that would support or contradict it before deciding whether to open an incident. |
+| [Detection coverage](#design-incident-and-hunting-workflows) | The extent to which expected activity produces usable telemetry and a tested detection for a stated threat scenario. |
+| [Conditional Access](#make-identity-the-control-plane) | The Entra policy system that evaluates signals about sign-in context and decides what access conditions to require. |
+| [Multifactor authentication (MFA)](#make-identity-the-control-plane) | Requiring evidence from more than one type of authentication factor, such as a password and a possession factor. |
+| [Sign-in risk](#make-identity-the-control-plane) | An assessment of the likelihood that a particular authentication request came from someone other than the legitimate user. |
+| [User risk](#make-identity-the-control-plane) | An assessment of the likelihood that a user's identity itself has been compromised. |
+| [Continuous access evaluation](#make-identity-the-control-plane) | Supported access enforcement that responds to specified changes in session or identity conditions. |
+| [Agent identity](#include-agents-as-first-class-identities) | The identity used to recognize an agent and evaluate its authorized access to resources. |
+| [Workload identity](#include-agents-as-first-class-identities) | An identity used by an application or service to obtain authorized access independently of a human user. |
+| [Key Vault](#secure-secrets-keys-and-certificates) | A managed service for controlling access to secrets, keys and certificates. |
+| [Secret](#secure-secrets-keys-and-certificates) | A protected value used by a workload, such as a password or API credential. |
+| [Certificate](#secure-secrets-keys-and-certificates) | A signed statement binding a public key to an identity, commonly used for transport security or authentication. |
+| [Privileged access](#apply-the-enterprise-access-model-to-privilege) | Authority to perform high-impact administrative actions, requiring stronger controls over identity, device and session. |
+| [Privileged Identity Management (PIM)](#apply-the-enterprise-access-model-to-privilege) | A service for governing privileged roles, including time-limited activation of eligible assignments. |
+| [Separation of duties](#apply-the-enterprise-access-model-to-privilege) | Dividing conflicting responsibilities among different people or roles so one actor cannot both perform and independently approve a high-risk change. |
+| [Just-in-time privilege](#apply-the-enterprise-access-model-to-privilege) | Providing elevated access only for a bounded, authorized interval instead of permanently assigning the role. |
+
+**Design infrastructure security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Cloud security posture management (CSPM)](#separate-posture-management-from-workload-protection) | Assessment of cloud configurations and exposures to identify and prioritize weaknesses. |
+| [Workload protection](#separate-posture-management-from-workload-protection) | Detection and protection directed at running workloads, such as servers, containers or databases. |
+| [Security recommendation](#separate-posture-management-from-workload-protection) | An assessment finding proposing a change to improve an observed security configuration. |
+| [Attack path](#use-exposure-context-to-prioritize-paths-not-isolated-findings) | A chain of exposures and access relationships that could lead to an important asset, used to prioritize defensive remediation. |
+| [Exposure management](#use-exposure-context-to-prioritize-paths-not-isolated-findings) | Identifying and prioritizing interconnected weaknesses by considering assets, paths and likely business impact. |
+| [Operational technology (OT)](#specify-server-client-mobile-iot-and-ot-controls) | Systems that monitor or control physical processes, where safety and availability constraints shape security changes. |
+| [Security baseline](#design-baselines-by-service-model-and-workload) | A documented minimum configuration and set of controls against which a workload is assessed. |
+| [Security Service Edge (SSE)](#evaluate-network-design-and-security-service-edge) | Cloud-delivered security controls that evaluate access to internet, SaaS and private resources. |
+| [Segmentation](#evaluate-network-design-and-security-service-edge) | Dividing networks or workloads into bounded zones so access and incident impact can be controlled. |
+
+**Design application, Microsoft 365, and data security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Software composition analysis](#secure-the-full-application-portfolio-and-lifecycle) | Analysis of third-party components and dependencies for known vulnerabilities or other supply-chain concerns. |
+| [Secret scanning](#secure-the-full-application-portfolio-and-lifecycle) | Detection of sensitive credential patterns in supported repository content so owners can investigate exposure. |
+| [Web application firewall (WAF)](#design-api-and-web-application-protection) | A control that evaluates HTTP requests against managed or custom rules to protect web applications. |
+| [API authorization](#design-api-and-web-application-protection) | The check that a caller may use a specific operation and data object after its identity is established. |
+| [API gateway](#design-api-and-web-application-protection) | A managed entry point that applies policies such as authentication checks, rate limits and routing before requests reach backend APIs. |
+| [Data classification](#design-data-security-from-classification-to-recovery) | Assigning information a category based on sensitivity or business value so handling and recovery requirements can be chosen. |
+| [Sensitivity label](#design-data-security-from-classification-to-recovery) | A classification applied to content that can also carry protection settings such as encryption. |
+| [Data loss prevention (DLP)](#design-data-security-from-classification-to-recovery) | Policies that recognize sensitive information and govern actions such as sharing or transferring it. |
+| [Retention](#design-data-security-from-classification-to-recovery) | Rules governing how long content is kept and what happens when the retention period ends. |
+| [Information lifecycle](#design-data-security-from-classification-to-recovery) | The path from creating and classifying information through use, retention, recovery and authorized disposal. |
+| [Version recovery](#protect-the-operation-and-the-data-version) | Restoring a protected version from before an unwanted change and checking that it is usable. |
+
+**Apply an architect's decision method**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Control evidence](#use-requirement-to-control-traceability) | An observable record showing whether a control operated at the intended scope and time. |
+
 ## Places to learn
+
+**Suggested practice.** For one workload, map a design decision to a framework principle and a measurable recovery objective, then explain what evidence would support it. About 20–40 minutes to read the selected sections and produce the suggested comparison or checklist (editorial estimate; full path duration was not verified). [Design solutions that align with security best practices and priorities](https://learn.microsoft.com/en-us/training/paths/sc-100-design-solutions-best-practices-priorities/)
 
 This is a curated starting point, not a complete list. Do **not** try to consume every resource. Pick a primary path that fits how you learn, use documentation and labs for weak areas, and use assessments to decide what to revisit. Verify every course against the October 21, 2026 blueprint—especially AI security, Entra Agent ID, Exposure Management, Copilot, and current SSE objectives.
 

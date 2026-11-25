@@ -733,6 +733,82 @@ Analyze a public, non-sensitive CSV of service requests:
 
 The issuer's current PCED page lists [Python for Data Analytics 101](https://edube.org/study/pd101), an English self-paced path the provider estimates at five weeks/about one hour daily: free Core offers lessons and module tests; paid Pro adds quizzes, labs, projects, and a diploma. Its public course page calls it PCED-aligned. The separate PCAD page still labels it “in development,” so treat it as PCED preparation and a possible foundation—not verified coverage of PCAD's full blueprint. For reproducibility, NumPy 2.5 documents supported Python versions as 3.12–3.14 and drops 3.11; Pandas 3.0 changes string inference and copy-on-write semantics, while Pandas 3.1.0 continues datetime-resolution fixes. See [NumPy 2.5 notes](https://numpy.org/doc/2.5/release/2.5.0-notes.html), [Pandas 3.0 upgrade notes](https://pandas.pydata.org/pandas-docs/version/3.0/whatsnew/v3.0.0.html), and [Pandas 3.1.0 changes](https://pandas.pydata.org/docs/whatsnew/v3.1.0.html). Record library versions and check dtype, selection, and datetime assumptions in notebooks. These are tool-version examples, not additional exam objectives.
 
+## Key terms and phrases
+
+**Data and data-analysis concepts**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Metadata](#1-data-and-data-analysis-concepts-225) | Information about a dataset, such as its units, origin and collection dates, that gives the recorded values meaning. |
+| [Selection bias](#1-data-and-data-analysis-concepts-225) | A systematic difference between the population of interest and the observations collected, such as an online-only survey missing people without access. |
+| [CSV](#1-data-and-data-analysis-concepts-225) | A tabular text format with field separators and quoting rules. A quoted field can contain the separator or an embedded newline. |
+| [Observation](#1-data-and-data-analysis-concepts-225) | One recorded case at the chosen unit of analysis, such as one order rather than one customer. |
+| [Quantitative data](#1-data-and-data-analysis-concepts-225) | Measurements or counts with numeric meaning, such as elapsed minutes or number of orders. |
+| [Structured data](#1-data-and-data-analysis-concepts-225) | Records organized by a defined schema, such as rows with specified columns and data types. |
+| [Semi-structured data](#1-data-and-data-analysis-concepts-225) | Data containing labels or nested structure while permitting variation in record shape, as in JSON. |
+
+**Python basics for analysis**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Array shape](#2-python-basics-for-analysis-325) | The lengths of a NumPy array’s dimensions. A shape of (4, 3) describes four rows and three columns. |
+| [Interpreter](#2-python-basics-for-analysis-325) | Software that executes a Python program. The interpreter used for a command also determines which installed packages it can import. |
+| [Integer](#2-python-basics-for-analysis-325) | A whole-number type. In Python a calculation on integers can grow beyond a fixed machine-word size. |
+| [Boolean](#2-python-basics-for-analysis-325) | A true or false value used in decisions. Python also allows other objects to be tested for truth. |
+| [String](#2-python-basics-for-analysis-325) | An immutable sequence of Unicode code points. A string read from input must be converted before performing numeric arithmetic. |
+| [Assignment](#2-python-basics-for-analysis-325) | Binding a name to an object. Assigning another name to a list does not create an independent list. |
+| [break](#2-python-basics-for-analysis-325) | A loop statement that immediately leaves the nearest enclosing loop and skips that loop’s else clause. |
+| [continue](#2-python-basics-for-analysis-325) | A loop statement that skips the rest of the current iteration and proceeds with the next test or item. |
+| [List](#2-python-basics-for-analysis-325) | An ordered, mutable sequence. Appending to a list changes the object seen by every name referring to that list. |
+| [Tuple](#2-python-basics-for-analysis-325) | An ordered collection whose element references cannot be reassigned after creation. A mutable object inside it can still change. |
+| [Set](#2-python-basics-for-analysis-325) | A collection of distinct hashable elements, useful for membership tests or removing repeated values when order is unimportant. |
+| [Index](#2-python-basics-for-analysis-325) | An integer position in a sequence. Python numbers the first position zero and uses negative positions to count from the end. |
+| [Slice](#2-python-basics-for-analysis-325) | A selection of sequence positions described by start, exclusive stop and step. A list slice creates a new outer list. |
+| [Mutability](#2-python-basics-for-analysis-325) | Whether an existing object can change. Rebinding a variable and modifying the object already bound to it are separate operations. |
+| [Default argument](#2-python-basics-for-analysis-325) | A parameter value saved when a function is defined and used when the caller omits that argument. A mutable default may be shared across calls. |
+| [Local scope](#2-python-basics-for-analysis-325) | The name bindings local to a function invocation. Assigning a local name does not by itself rebind a module-level name. |
+| [Return value](#2-python-basics-for-analysis-325) | The value a call gives back to its caller. Reaching the end of a Python function without a return statement gives None. |
+| [Module](#2-python-basics-for-analysis-325) | A named unit of Python code with its own namespace that other code can import. |
+| [List comprehension](#2-python-basics-for-analysis-325) | An expression that builds a list by transforming items from an iterable and optionally filtering them. |
+| [Data type (dtype)](#2-python-basics-for-analysis-325) | The representation used for array elements, which affects valid operations, precision and how missing values can be represented. |
+| [Axis](#2-python-basics-for-analysis-325) | The dimension along which an array operation aggregates. For a two-dimensional array, reducing axis 0 produces one result per column. |
+| [Deduplication](#2-python-basics-for-analysis-325) | Applying an explicit identity and tie-breaking rule to repeated records. A conflicting duplicate may require investigation instead of deletion. |
+
+**Working with data and simple analyses**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Imputation](#3-working-with-data-and-simple-analyses-325) | Replacing a missing measurement using a declared rule. Filling in a value changes the assumptions behind later statistics. |
+| [Median](#3-working-with-data-and-simple-analyses-325) | The middle of sorted data. For 2, 3, 7 and 20, average the two middle values: (3 + 7) ÷ 2 = 5. A large final value can move the mean much more than the median. |
+| [Standard deviation](#3-working-with-data-and-simple-analyses-325) | A measure of spread in the same units as the observations. A sample estimate and a whole-population calculation use different denominators. |
+| [Pearson correlation](#3-working-with-data-and-simple-analyses-325) | A measure of the direction and strength of a linear relationship between paired observations. A curved relationship may have near-zero correlation. |
+| [Floating-point number](#3-working-with-data-and-simple-analyses-325) | A finite-precision representation of a number. Many decimal fractions can only be approximated in binary. |
+| [Value range check](#3-working-with-data-and-simple-analyses-325) | Testing whether an observation falls within the limits allowed by its data definition. A percentage above 100 merits investigation when the field represents a share of a whole. |
+| [Unicode encoding](#3-working-with-data-and-simple-analyses-325) | A rule that turns Unicode text into bytes. Decoding requires a compatible rule to recover the intended text. |
+| [Context manager](#3-working-with-data-and-simple-analyses-325) | An object managing entry to and exit from a with block. A file context manager closes the file even if processing raises an exception. |
+| [Population](#3-working-with-data-and-simple-analyses-325) | The entire set of cases an analyst wants a conclusion to describe. |
+| [Sample](#3-working-with-data-and-simple-analyses-325) | The subset of observations actually collected or analyzed. Its selection influences which conclusions generalize. |
+| [Missing value](#3-working-with-data-and-simple-analyses-325) | An unavailable measurement. A missing duration and an observed duration of zero have different meanings in an average. |
+| [Normalization](#3-working-with-data-and-simple-analyses-325) | Rescaling a value relative to a reference minimum and maximum. A zero reference range requires an explicit handling rule. |
+| [Outlier](#3-working-with-data-and-simple-analyses-325) | An observation unusually far from the rest under a chosen criterion. It can represent bad data or a genuinely rare case. |
+| [Exploratory data analysis (EDA)](#3-working-with-data-and-simple-analyses-325) | Examining distributions, relationships and unusual observations to uncover quality issues and form questions before drawing conclusions. |
+| [Arithmetic mean](#3-working-with-data-and-simple-analyses-325) | The sum of observed values divided by their count. The result can shift substantially when one observation is extreme. |
+| [Variance](#3-working-with-data-and-simple-analyses-325) | A measure based on squared deviations from the mean. Its units are squared, unlike standard deviation. |
+
+**Communicating insights**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Part-to-whole chart](#4-communicating-insights-125) | A display of how categories divide one total. A pie chart needs categories with a meaningful common denominator. |
+| [Bar chart](#4-communicating-insights-125) | A graph comparing values across discrete categories. The units and the common comparison scale need clear labels. |
+| [Line chart](#4-communicating-insights-125) | A graph joining observations in an intentional order, commonly time, to show change across that order. |
+
+**Original executable workbook**
+
+| Term or phrase | Meaning |
+|---|---|
+| [JSON](#chartps1) | A text format for objects, arrays and primitive values. Parsing it recovers data structure, while application validation checks the expected fields and meaning. |
+
 ## Places to learn
 
 This is not a complete list. Choose one foundation path, reproduce the workbook, then use targeted references to close gaps. Author planning budgets below are not provider runtimes or evidence of course completion.

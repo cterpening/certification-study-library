@@ -241,6 +241,85 @@ Use a simulator, cyber range, spare equipment, or explicitly authorized nonprodu
 35. Live prerequisite wording/status, exact exam version/domains, count/time/language, delivery/price, retake, renewal, and course versions.
 36. Dumps, leaked/recalled/“real” questions, guaranteed matches, and any unapproved production testing source.
 
+## Key terms and phrases
+
+**Credential architecture and OT principles**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Operational technology (OT)](#put-safety-and-availability-into-every-control) | Hardware and software that monitor or control physical processes, where interruption can have immediate safety consequences. |
+| [Authorization](#put-safety-and-availability-into-every-control) | Determining whether a given identity may perform a specific action on the particular resource requested. |
+| [Availability](#put-safety-and-availability-into-every-control) | Timely and reliable access to a resource by authorized users. A running server may still be unavailable to the business if a required dependency fails. |
+| [Industrial process](#put-safety-and-availability-into-every-control) | A physical operation monitored or controlled by an OT system. For example, a pump loop maintains pressure, so a security change must account for what happens to pressure if control is interrupted. |
+| [Rollback](#put-safety-and-availability-into-every-control) | Returning a change to a known acceptable state when results do not meet defined conditions. A valid rollback also accounts for data changed in the meantime. |
+
+**Asset management**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Industrial control system (ICS)](#apply-standards-as-context) | A system of controllers, sensors, software and networks that operates or monitors an industrial process. |
+| [FortiAnalyzer](#design-the-fortinet-security-fabric-for-ot) | A platform for collecting and analyzing supported Fortinet telemetry, including searching logs, generating reports and handling security events. |
+| [FortiGate](#design-the-fortinet-security-fabric-for-ot) | The Fortinet firewall platform that applies routing, access policy and security inspection to traffic traversing its interfaces. |
+| [FortiNAC](#design-the-fortinet-security-fabric-for-ot) | A network access control platform that discovers and profiles devices and coordinates enforcement with network infrastructure. |
+| [Fortinet Security Fabric](#design-the-fortinet-security-fabric-for-ot) | Fortinet’s framework for integrating products so they can exchange context and coordinate visibility or policy-driven actions. |
+| [FortiSIEM](#design-the-fortinet-security-fabric-for-ot) | A platform that collects and correlates events across infrastructure and security products to help identify and investigate incidents. |
+| [Passive discovery](#discover-and-govern-assets) | Identifying industrial devices by observing existing communications, which avoids adding probe traffic to a sensitive process network. |
+| [Address Resolution Protocol (ARP)](#discover-and-govern-assets) | The IPv4 local-link protocol that resolves a next-hop IP address to a link-layer address so a host can send a frame. |
+| [Dynamic Host Configuration Protocol (DHCP)](#discover-and-govern-assets) | The protocol clients use to obtain settings such as an IP address, gateway and DNS servers, typically for a bounded lease. |
+| [Network address translation (NAT)](#discover-and-govern-assets) | Rewriting source or destination addressing as traffic crosses a boundary. The translation and the permission to pass traffic are distinct decisions. |
+
+**Network access control**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Zone](#design-segmentation-schemas) | A group of assets with similar security requirements, such as controllers supporting one production process. |
+| [Conduit](#design-segmentation-schemas) | An authorized communications path between zones, with defined traffic and protection requirements. |
+| [Failover](#design-segmentation-schemas) | Transfer of service to another HA member after a failure. Some sessions may need to reconnect. |
+| [Jitter](#design-segmentation-schemas) | Variation in packet delay. A link with acceptable average latency can still deliver poor real-time voice quality. |
+| [Least privilege](#design-segmentation-schemas) | Giving an identity only the permissions needed for its task, for as long as it needs them. |
+| [Multicast](#design-segmentation-schemas) | Delivery to an address representing a group of interested receivers, with the network replicating traffic where needed. |
+| [Network access control (NAC)](#authenticate-users-and-devices-proportionately) | A way to decide what connectivity a device receives using its identity, profile and applicable policy. |
+| [Authentication](#authenticate-users-and-devices-proportionately) | The check that establishes who a user or device is. Authorization determines what that identity may do next. |
+| [Privileged access](#authenticate-users-and-devices-proportionately) | Permission to administer sensitive systems or change security controls. An operator needs authorization for the particular customer and task. |
+| [Service account](#authenticate-users-and-devices-proportionately) | A nonhuman identity used by software or automation. Scope, credential lifecycle and ownership govern what happens when it is compromised or retired. |
+| [Network redundancy](#understand-industrial-ethernet-and-redundancy) | Provision of an alternative path or component to maintain communications when a single element fails. |
+| [Ethernet](#understand-industrial-ethernet-and-redundancy) | A family of link-layer technologies that carries frames identified by source and destination MAC addresses on a local network. |
+| [Maximum transmission unit (MTU)](#understand-industrial-ethernet-and-redundancy) | The largest packet size a link or interface can carry under its addressing convention. Tunnel overhead can reduce the usable size of the inner packet. |
+| [Quality of service (QoS)](#understand-industrial-ethernet-and-redundancy) | Classifying and treating traffic differently under contention, such as protecting voice delay while bulk transfers share the link. |
+| [Virtual LAN (VLAN)](#understand-industrial-ethernet-and-redundancy) | A logical Layer 2 network with its own broadcast scope. Communication with another VLAN ordinarily requires routing and a suitable policy. |
+
+**Network security**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Application control](#inspect-industrial-protocols-safely) | A control that identifies the application using a connection and applies policy to it, even when several applications share a port. |
+| [Virtual patching](#use-virtual-patching-as-a-bridge) | Using an external protective control to restrict exposure to a vulnerability while the affected device awaits a suitable fix. |
+| [Assurance](#use-virtual-patching-as-a-bridge) | Confidence derived from relevant evidence that a claim or control objective is supported for a specified scope and period. |
+| [False positive](#use-virtual-patching-as-a-bridge) | A detection that matches benign activity. Tuning requires understanding which condition made it match. |
+| [Intrusion prevention system (IPS)](#use-virtual-patching-as-a-bridge) | A control that inspects traffic for signs of known or suspicious activity and can block matching traffic. |
+| [Patch management](#use-virtual-patching-as-a-bridge) | Identifying applicable fixes, prioritizing and testing them, deploying them to the correct population and verifying the resulting state. |
+| [Approval gate](#bound-automation) | A point where an authorized person must review available evidence before a workflow performs a sensitive or high-impact action. |
+
+**Monitoring and risk assessment**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Administrative domain (ADOM)](#build-the-evidence-pipeline) | A FortiManager boundary for managing a selected set of devices, policies and administrative permissions. |
+| [Enrichment](#build-the-evidence-pipeline) | Adding context, such as asset criticality or previous sightings, to an indicator or event so an analyst can interpret it. |
+| [Event handler](#build-the-evidence-pipeline) | FortiAnalyzer logic that identifies matching log conditions and produces an event for further analysis or response. |
+| [Parsing](#build-the-evidence-pipeline) | Breaking a raw log message into named fields, such as source address or action. |
+| [Residual risk](#assess-and-communicate-risk) | The risk that remains after controls are applied, including their limitations and possible effects on the physical process. |
+| [Likelihood](#assess-and-communicate-risk) | An estimate of how probable a defined event is within a stated period and set of assumptions. |
+| [Risk treatment plan](#assess-and-communicate-risk) | A record of the response, accountable owner, resources, target outcome and due date for addressing a risk. |
+| [Containment](#investigate-without-causing-a-second-incident) | Limiting the scope or ongoing effects of an incident, such as isolating the affected device under an approved response plan. |
+| [Incident](#investigate-without-causing-a-second-incident) | A case that groups evidence of related activity for investigation, ownership and resolution. |
+
+**Worked examples and practice**
+
+| Term or phrase | Meaning |
+|---|---|
+| [Vulnerability](#scenario-2-unpatchable-controller-vulnerability) | A weakness that can expose an asset to harm. Risk also depends on who or what could act on it and the consequences. |
+
 ## Places to learn
 
 This is a selective starting set, not a complete list and not a prescription to consume everything. Choose official baseline documents, standards context, and authorized hands-on work that close measured gaps. Times are estimates unless publisher-listed.
